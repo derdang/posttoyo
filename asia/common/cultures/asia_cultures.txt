@@ -1,0 +1,293 @@
+japonic = {
+
+	graphical_cultures = { chinesefx }
+
+	togoku = {
+		graphical_cultures = { chinesegfx }
+		
+		dynasty_name_first = yes
+		
+		color = { 0.1 0.9 0.1 }
+		
+		male_names = {
+			Someimaru Fudomaru Onimushamaru Ushiwakamaru Oniwakamaru Komaomaru Shojumaru Tamonmaru Senjuo Kidomaru Takechiyo Manchiyo Chofukumaru Turuchiyo Kamechiyo Inuchiyo Saematsumaru Ryuomaru Hogikumaru Shojumaru Katsuchiyo Torachiyo
+			Tsurumatsumaru Tsurumaru Toramaru Kamemaru Toraomaru Kipposhi Hiyoshimaru Tensaimaru Kimyomaru Bontenmaru Hiroimaru Sutemaru Haruomaru Harutoramaru Senzaimaru Kikudomaru Kameomaru Chachamaru Ranmaru Senjumaru Turujumaru Tokujumaru Chojumaru
+			Taromaru Jiromaru Saburomaru Shiromaru Goromaru Rokuromaru Shichiromaru Hachiromaru Kuromaru Juromaru Kongo Nabenosuke Yoshimatsu Hansuke Chachamaro Sanboshi
+
+			Taro Jiro Saburo Shiro Goro Rokuro Shichiro Hachiro Kuro Juro Yoichi Yoni Yogo
+			Yataro Yajiro Yasaburo Yashiro Yagoro Yarokuro Yashichiro Yahachiro Yakuro Yajuro
+			Jirota Saburota Shirota Gorota Rokurota Shichirota Hachirota Kurota Jurota
+			Gentaro Genjiro Genzaburo Genshiro Gengoro Genrokuro Genshichiro Genhachiro Genkuro Genjuro
+			Totaro Tojiro Tosaburo Toshiro Togoro Torokuro Toshichiro Tohachiro Tokuro Tojuro
+			Matataro Matajiro Matasaburo Matashiro Matagoro Matarokuro Matashichiro Matahachiro Matakuro Matajuro
+			Kotaro Kojiro Kosaburo Koshiro Kogoro
+			Magotaro Magojiro Magosaburo Magoshiro Magogoro
+			Hikotaro Hikojiro Hikosaburo Hikoshiro Hikogoro
+			Yotaro Yojiro Yosaburo Yoshiro Yogoro
+			Genta Genji Genzo Gengo Genroku Genhachi
+			Heita Heiji Heizo Heigo Heiroku Heishichi Heihachi
+			Tota Toji Tozo
+			Kitta Kichiji Kichizo Kichishi Kichigo
+			Tanzo
+			Shinta Shinji Shinzo Shingo Shinroku Shinhachi
+			Kiroku
+			Yata Yaji Yazo
+			Koroku
+			Magoroku
+			
+			Torao Chiyomaru Iseomaru Takeomaru Senchiyomaru
+		}
+		female_names = { # placeholder
+			Sai Fuse Tomoe Uta Uta Uta Mai Tsukasa Fumi Yume Nozomi Nozomi Mitsu Sakae Akira Megumi Yoshi Kotobuki Fuku
+			Sachi Yui Shinobu Shizuka Sei Tomo Haruka Yuu Hide Yuu Aya Miyabi Tae Rei Yoshi Yoshi Sato Miyako Miyako Shiori
+			Suzu Koto Yumi Nishiki Kinu Mari Takara Tama Tama Tamaki Madoka Hitomi Hikari Hikaru Hoshi Tsuki Cho Hotaru
+			Tsuru Mio Migiwa Ushio Nami Nagisa Tsuyu Kiri Kasumi Yuki Fuu Kaoru Moe Kozue Hana Hana Satsuki Tsuta Asa Yuzu
+			An Ran Shino Azusa Kiri Katsura Kaede Tsuabaki Aoi Tachibana Fuji Kiku Momo Sakura Aya Midori Midori Ao Ai Akane
+			Murasaki Kurenai
+			Aki Fue Fuyu Haru Hibiki Izumi Minami Mutsumi Natsu Ren Sen Shizuku Sumire Toku Yukari
+		}
+
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0		
+		
+		modifier = default_culture_modifier
+	}
+
+	saigoku = {
+		graphical_cultures = { chinesefx }
+		
+		dynasty_name_first = yes
+		
+		color = { 0.4 0.7 0.4 }
+		
+		male_names = {
+			Someimaru Fudomaru Onimushamaru Ushiwakamaru Oniwakamaru Komaomaru Shojumaru Tamonmaru Senjuo Kidomaru Takechiyo Manchiyo Chofukumaru Turuchiyo Kamechiyo Inuchiyo Saematsumaru Ryuomaru Hogikumaru Shojumaru Katsuchiyo Torachiyo
+			Tsurumatsumaru Tsurumaru Toramaru Kamemaru Toraomaru Kipposhi Hiyoshimaru Tensaimaru Kimyomaru Bontenmaru Hiroimaru Sutemaru Haruomaru Harutoramaru Senzaimaru Kikudomaru Kameomaru Chachamaru Ranmaru Senjumaru Turujumaru Tokujumaru Chojumaru
+			Taromaru Jiromaru Saburomaru Shiromaru Goromaru Rokuromaru Shichiromaru Hachiromaru Kuromaru Juromaru Kongo Nabenosuke Yoshimatsu Hansuke Chachamaro Sanboshi
+
+			Taro Jiro Saburo Shiro Goro Rokuro Shichiro Hachiro Kuro Juro Yoichi Yoni Yogo
+			Yataro Yajiro Yasaburo Yashiro Yagoro Yarokuro Yashichiro Yahachiro Yakuro Yajuro
+			Jirota Saburota Shirota Gorota Rokurota Shichirota Hachirota Kurota Jurota
+			Gentaro Genjiro Genzaburo Genshiro Gengoro Genrokuro Genshichiro Genhachiro Genkuro Genjuro
+			Totaro Tojiro Tosaburo Toshiro Togoro Torokuro Toshichiro Tohachiro Tokuro Tojuro
+			Matataro Matajiro Matasaburo Matashiro Matagoro Matarokuro Matashichiro Matahachiro Matakuro Matajuro
+			Kotaro Kojiro Kosaburo Koshiro Kogoro
+			Magotaro Magojiro Magosaburo Magoshiro Magogoro
+			Hikotaro Hikojiro Hikosaburo Hikoshiro Hikogoro
+			Yotaro Yojiro Yosaburo Yoshiro Yogoro
+			Genta Genji Genzo Gengo Genroku Genhachi
+			Heita Heiji Heizo Heigo Heiroku Heishichi Heihachi
+			Tota Toji Tozo
+			Kitta Kichiji Kichizo Kichishi Kichigo
+			Tanzo
+			Shinta Shinji Shinzo Shingo Shinroku Shinhachi
+			Kiroku
+			Yata Yaji Yazo
+			Koroku
+			Magoroku
+		}
+		female_names = { # placeholder
+			Sai Fuse Tomoe Uta Uta Uta Mai Tsukasa Fumi Yume Nozomi Nozomi Mitsu Sakae Akira Megumi Yoshi Kotobuki Fuku
+			Sachi Yui Shinobu Shizuka Sei Tomo Haruka Yuu Hide Yuu Aya Miyabi Tae Rei Yoshi Yoshi Sato Miyako Miyako Shiori
+			Suzu Koto Yumi Nishiki Kinu Mari Takara Tama Tama Tamaki Madoka Hitomi Hikari Hikaru Hoshi Tsuki Cho Hotaru
+			Tsuru Mio Migiwa Ushio Nami Nagisa Tsuyu Kiri Kasumi Yuki Fuu Kaoru Moe Kozue Hana Hana Satsuki Tsuta Asa Yuzu
+			An Ran Shino Azusa Kiri Katsura Kaede Tsuabaki Aoi Tachibana Fuji Kiku Momo Sakura Aya Midori Midori Ao Ai Akane
+			Murasaki Kurenai
+			Aki Fue Fuyu Haru Hibiki Izumi Minami Mutsumi Natsu Ren Sen Shizuku Sumire Toku Yukari
+		}
+
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0	
+		
+		modifier = default_culture_modifier
+	}
+
+	kyushuan = {
+		graphical_cultures = { chinesefx }
+		
+		dynasty_name_first = yes
+		
+		color = { 0.1 0.8 0.6 }
+		
+		male_names = {
+			Someimaru Fudomaru Onimushamaru Ushiwakamaru Oniwakamaru Komaomaru Shojumaru Tamonmaru Senjuo Kidomaru Takechiyo Manchiyo Chofukumaru Turuchiyo Kamechiyo Inuchiyo Saematsumaru Ryuomaru Hogikumaru Shojumaru Katsuchiyo Torachiyo
+			Tsurumatsumaru Tsurumaru Toramaru Kamemaru Toraomaru Kipposhi Hiyoshimaru Tensaimaru Kimyomaru Bontenmaru Hiroimaru Sutemaru Haruomaru Harutoramaru Senzaimaru Kikudomaru Kameomaru Chachamaru Ranmaru Senjumaru Turujumaru Tokujumaru Chojumaru
+			Taromaru Jiromaru Saburomaru Shiromaru Goromaru Rokuromaru Shichiromaru Hachiromaru Kuromaru Juromaru Kongo Nabenosuke Yoshimatsu Hansuke Chachamaro Sanboshi
+
+			Taro Jiro Saburo Shiro Goro Rokuro Shichiro Hachiro Kuro Juro Yoichi Yoni Yogo
+			Yataro Yajiro Yasaburo Yashiro Yagoro Yarokuro Yashichiro Yahachiro Yakuro Yajuro
+			Jirota Saburota Shirota Gorota Rokurota Shichirota Hachirota Kurota Jurota
+			Gentaro Genjiro Genzaburo Genshiro Gengoro Genrokuro Genshichiro Genhachiro Genkuro Genjuro
+			Totaro Tojiro Tosaburo Toshiro Togoro Torokuro Toshichiro Tohachiro Tokuro Tojuro
+			Matataro Matajiro Matasaburo Matashiro Matagoro Matarokuro Matashichiro Matahachiro Matakuro Matajuro
+			Kotaro Kojiro Kosaburo Koshiro Kogoro
+			Magotaro Magojiro Magosaburo Magoshiro Magogoro
+			Hikotaro Hikojiro Hikosaburo Hikoshiro Hikogoro
+			Yotaro Yojiro Yosaburo Yoshiro Yogoro
+			Genta Genji Genzo Gengo Genroku Genhachi
+			Heita Heiji Heizo Heigo Heiroku Heishichi Heihachi
+			Tota Toji Tozo
+			Kitta Kichiji Kichizo Kichishi Kichigo
+			Tanzo
+			Shinta Shinji Shinzo Shingo Shinroku Shinhachi
+			Kiroku
+			Yata Yaji Yazo
+			Koroku
+			Magoroku
+		}
+		female_names = { # placeholder
+			Sai Fuse Tomoe Uta Uta Uta Mai Tsukasa Fumi Yume Nozomi Nozomi Mitsu Sakae Akira Megumi Yoshi Kotobuki Fuku
+			Sachi Yui Shinobu Shizuka Sei Tomo Haruka Yuu Hide Yuu Aya Miyabi Tae Rei Yoshi Yoshi Sato Miyako Miyako Shiori
+			Suzu Koto Yumi Nishiki Kinu Mari Takara Tama Tama Tamaki Madoka Hitomi Hikari Hikaru Hoshi Tsuki Cho Hotaru
+			Tsuru Mio Migiwa Ushio Nami Nagisa Tsuyu Kiri Kasumi Yuki Fuu Kaoru Moe Kozue Hana Hana Satsuki Tsuta Asa Yuzu
+			An Ran Shino Azusa Kiri Katsura Kaede Tsuabaki Aoi Tachibana Fuji Kiku Momo Sakura Aya Midori Midori Ao Ai Akane
+			Murasaki Kurenai
+			Aki Fue Fuyu Haru Hibiki Izumi Minami Mutsumi Natsu Ren Sen Shizuku Sumire Toku Yukari
+		}
+
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0	
+		
+		modifier = default_culture_modifier
+	}
+
+	ezo = {
+		graphical_cultures = { chinesefx }
+		
+		dynasty_name_first = yes
+		
+		color = { 0.3 0.3 0.1 }
+		
+		male_names = {
+			Someimaru Fudomaru Onimushamaru Ushiwakamaru Oniwakamaru Komaomaru Shojumaru Tamonmaru Senjuo Kidomaru Takechiyo Manchiyo Chofukumaru Turuchiyo Kamechiyo Inuchiyo Saematsumaru Ryuomaru Hogikumaru Shojumaru Katsuchiyo Torachiyo
+			Tsurumatsumaru Tsurumaru Toramaru Kamemaru Toraomaru Kipposhi Hiyoshimaru Tensaimaru Kimyomaru Bontenmaru Hiroimaru Sutemaru Haruomaru Harutoramaru Senzaimaru Kikudomaru Kameomaru Chachamaru Ranmaru Senjumaru Turujumaru Tokujumaru Chojumaru
+			Taromaru Jiromaru Saburomaru Shiromaru Goromaru Rokuromaru Shichiromaru Hachiromaru Kuromaru Juromaru Kongo Nabenosuke Yoshimatsu Hansuke Chachamaro Sanboshi
+
+			Taro Jiro Saburo Shiro Goro Rokuro Shichiro Hachiro Kuro Juro Yoichi Yoni Yogo
+			Yataro Yajiro Yasaburo Yashiro Yagoro Yarokuro Yashichiro Yahachiro Yakuro Yajuro
+			Jirota Saburota Shirota Gorota Rokurota Shichirota Hachirota Kurota Jurota
+			Gentaro Genjiro Genzaburo Genshiro Gengoro Genrokuro Genshichiro Genhachiro Genkuro Genjuro
+			Totaro Tojiro Tosaburo Toshiro Togoro Torokuro Toshichiro Tohachiro Tokuro Tojuro
+			Matataro Matajiro Matasaburo Matashiro Matagoro Matarokuro Matashichiro Matahachiro Matakuro Matajuro
+			Kotaro Kojiro Kosaburo Koshiro Kogoro
+			Magotaro Magojiro Magosaburo Magoshiro Magogoro
+			Hikotaro Hikojiro Hikosaburo Hikoshiro Hikogoro
+			Yotaro Yojiro Yosaburo Yoshiro Yogoro
+			Genta Genji Genzo Gengo Genroku Genhachi
+			Heita Heiji Heizo Heigo Heiroku Heishichi Heihachi
+			Tota Toji Tozo
+			Kitta Kichiji Kichizo Kichishi Kichigo
+			Tanzo
+			Shinta Shinji Shinzo Shingo Shinroku Shinhachi
+			Kiroku
+			Yata Yaji Yazo
+			Koroku
+			Magoroku
+		}
+		female_names = { # placeholder
+			Sai Fuse Tomoe Uta Uta Uta Mai Tsukasa Fumi Yume Nozomi Nozomi Mitsu Sakae Akira Megumi Yoshi Kotobuki Fuku
+			Sachi Yui Shinobu Shizuka Sei Tomo Haruka Yuu Hide Yuu Aya Miyabi Tae Rei Yoshi Yoshi Sato Miyako Miyako Shiori
+			Suzu Koto Yumi Nishiki Kinu Mari Takara Tama Tama Tamaki Madoka Hitomi Hikari Hikaru Hoshi Tsuki Cho Hotaru
+			Tsuru Mio Migiwa Ushio Nami Nagisa Tsuyu Kiri Kasumi Yuki Fuu Kaoru Moe Kozue Hana Hana Satsuki Tsuta Asa Yuzu
+			An Ran Shino Azusa Kiri Katsura Kaede Tsuabaki Aoi Tachibana Fuji Kiku Momo Sakura Aya Midori Midori Ao Ai Akane
+			Murasaki Kurenai
+			Aki Fue Fuyu Haru Hibiki Izumi Minami Mutsumi Natsu Ren Sen Shizuku Sumire Toku Yukari
+		}
+
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+		
+		modifier = default_culture_modifier
+	}
+
+	ryukyuan = {
+		graphical_cultures = { chinesegfx }
+		
+		dynasty_name_first = yes
+		
+		color = { 0.45 0.70 0.45 }
+		
+		male_names = {
+			Yoshimori Yoshisada Yoshiatsu Yoshitatsu Yoshikiyo Mitsuuji Yoshiaki Yorimune Mitsuie Mitsunao 
+			Naoie Kaneyori Mitsumoto Yoshimitsu Yoshitoki Yoshiyasu # Mogami Clan
+			Moriyoshi Sadayoshi Atsuyoshi Tatsuyoshi Kiyoyoshi Ujimitsu Akiyoshi Muneyori Iemitsu Naomitsu 
+			Ienao Yorikane Motomistu Mitsuyoshi Tokiyoshi Yasuyoshi # Mogami Clan (Reversed Names)
+			Yoshitaka Yoshihisa # Shimizu Clan
+			Takayoshi Hisayoshi # Shimizu Clan (Reversed Names)
+			Yorinaga Yorisada Yorimichi # Tendo Clan
+			Nagayori Sadayori Michiyori # Tendo Clan (Reversed Names)
+			Yoshimasu Yoshiuji Yoshioki # Daihoji Clan
+			Masuyoshi Ujiyoshi Okiyoshi # Daihoji Clan (Reversed Names)
+			Noriyori Norisuke Katsuyori # Asari Clan
+			Yorinori Sukenori Yorikatsu # Asari Clan (Reversed Names)
+			Tanemichi Terumichi Kagemichi Yoshimichi Harumichi Yasumichi Shigemichi # Onodera Clan
+			Michitane Michiteru Michikage Michiyoshi Michiharu Michiyasu Michishige # Onodera Clan (Reversed Names)
+			Masamori Tadamori Hidemori Michimori Yorimori Moriyasu Ujimori Toyomori Nagamori Hisamori # Tozawa Clan
+			Morimasa Moritada Morihide Morimichi Moriyori Yasumori Moriuji Moritoyo Morinaga Morihisa # Tozawa Clan (Reversed Names)
+			Morisue Yasusue Yoshisue Masasue Tadasue Hirosue Kiyosue Chikasue Sanesue # Ando Clan
+			Suemori Sueyasu Sueyoshi Suemasa Suetada Suehiro Suekiyo Suechika Suezane # Ando Clan (Reversed Names)
+		}
+		female_names = { # placeholder
+			Sai Fuse Tomoe Uta Uta Uta Mai Tsukasa Fumi Yume Nozomi Nozomi Mitsu Sakae Akira Megumi Yoshi Kotobuki Fuku
+			Sachi Yui Shinobu Shizuka Sei Tomo Haruka Yuu Hide Yuu Aya Miyabi Tae Rei Yoshi Yoshi Sato Miyako Miyako Shiori
+			Suzu Koto Yumi Nishiki Kinu Mari Takara Tama Tama Tamaki Madoka Hitomi Hikari Hikaru Hoshi Tsuki Cho Hotaru
+			Tsuru Mio Migiwa Ushio Nami Nagisa Tsuyu Kiri Kasumi Yuki Fuu Kaoru Moe Kozue Hana Hana Satsuki Tsuta Asa Yuzu
+			An Ran Shino Azusa Kiri Katsura Kaede Tsuabaki Aoi Tachibana Fuji Kiku Momo Sakura Aya Midori Midori Ao Ai Akane
+			Murasaki Kurenai
+			Aki Fue Fuyu Haru Hibiki Izumi Minami Mutsumi Natsu Ren Sen Shizuku Sumire Toku Yukari
+		}
+
+		prefix = no # The patronym is added as a suffix
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+
+		dynasty_title_names = yes		
+		
+		modifier = default_culture_modifier
+	}
+	
+}
