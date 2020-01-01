@@ -1,0 +1,810 @@
+###### AUTO GENERATED CONTENT (c) CKTools v19 ######
+
+
+
+e_japan = {
+	color={ 208 233 94 }
+	color2={ 255 255 20 }
+	
+	capital = 1 # c_oshima
+	culture = togoku
+	
+	k_hokkaido = {
+		color={ 198 243 89 }
+		color2={ 255 255 255 }
+		
+		capital = 1 # c_oshima
+		culture = togoku
+		
+		d_oshima = {
+			color={ 178 7 79 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1 province_id = 2 province_id = 3 } }
+				}
+			}
+			capital = 1 # c_oshima
+			
+			c_oshima = { # 1
+				color={ 168 17 74 }
+				color2={ 255 255 255 }
+				
+				b_hakodate = {
+				}
+				b_hokuto = {
+				}
+				b_nanae = {
+				}
+				b_mori = {
+				}
+				b_kikonai = {
+				}
+				b_shinriuchi = {
+				}
+				b_shikabe = {
+				}
+			}
+			c_hiyama = { # 2
+				color={ 129 13 57 }
+				color2={ 255 255 255 }
+				
+				b_esahi = {
+				}
+				b_mastumae = {
+				}
+				b_kaminokuni = {
+				}
+				b_otobe = {
+				}
+				b_assabu = {
+				}
+				b_kumaishi = {
+				}
+				b_nishi = {
+				}
+			}
+			c_setana = { # 3
+				color={ 202 61 114 }
+				color2={ 255 255 255 }
+				
+				b_yakumo = {
+				}
+				b_imakane = {
+				}
+				b_kitahiyama = {
+				}
+				b_okushiri = {
+				}
+				b_futami = {
+				}
+				b_setana = {
+				}
+				b_taisei = {
+				}
+			}
+		}
+		d_akan = {
+			color={ 173 31 92 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 17 province_id = 18 province_id = 19 } }
+				}
+			}
+			capital = 17 # c_kushiro
+			
+			c_kushiro = { # 17
+				color={ 163 41 87 }
+				color2={ 255 255 255 }
+				
+				b_kushiro = {
+				}
+				b_akkeshi = {
+				}
+				b_shiranuka = {
+				}
+				b_shibecha = {
+				}
+				b_hamanaka = {
+				}
+				b_tsurui = {
+				}
+				b_teshikaga = {
+				}
+			}
+			c_obihiro = { # 18
+				color={ 135 58 87 }
+				color2={ 255 255 255 }
+				
+				b_obihiro = {
+				}
+				b_makubetsu = {
+				}
+				b_honbetsu = {
+				}
+				b_hiroo = {
+				}
+				b_asohoro = {
+				}
+				b_taiki = {
+				}
+				b_urahoro = {
+				}
+			}
+			c_tokachi = { # 19
+				color={ 174 15 75 }
+				color2={ 255 255 255 }
+				
+				b_otofuke = {
+				}
+				b_memuro = {
+				}
+				b_shimizu = {
+				}
+				b_shihoro = {
+				}
+				b_shintoku = {
+				}
+				b_kamishihoro = {
+				}
+				b_nakasatsunai = {
+				}
+			}
+		}
+		d_mashike = {
+			color={ 173 105 123 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 4 province_id = 5 province_id = 6 province_id = 7 province_id = 8 } }
+				}
+			}
+			capital = 4 # c_shiribeshi
+			
+			c_shiribeshi = { # 4
+				color={ 183 95 128 }
+				color2={ 255 255 255 }
+				
+				b_otaru = {
+				}
+				b_iwanai = {
+				}
+				b_yoichi = {
+				}
+				b_kyowa = {
+				}
+				b_niseko = {
+				}
+				b_rankoshi = {
+				}
+				b_furubira = {
+				}
+			}
+			c_hidaka = { # 8
+				color={ 244 60 129 }
+				color2={ 255 255 255 }
+				
+				b_shinhidaka = {
+				}
+				b_urakawa = {
+				}
+				b_hidaka = {
+				}
+				b_niikappu = {
+				}
+				b_biratori = {
+				}
+				b_erimo = {
+				}
+				b_samani = {
+				}
+			}
+			c_iburi = { # 7
+				color={ 244 126 171 }
+				color2={ 255 255 255 }
+				
+				b_muroran = {
+				}
+				b_tomakomai = {
+				}
+				b_noboribetsu = {
+				}
+				b_mukawa = {
+				}
+				b_date = {
+				}
+				b_abira = {
+				}
+				b_atsuma = {
+				}
+			}
+			c_ishikari = { # 5
+				color={ 156 65 99 }
+				color2={ 255 255 255 }
+				
+				b_sapporo = {
+				}
+				b_ebetsu = {
+				}
+				b_chitose = {
+				}
+				b_eniwa = {
+				}
+				b_ishikari = {
+				}
+				b_kitahiroshima = {
+				}
+				b_tobetsu = {
+				}
+			}
+			c_sorachi = { # 6
+				color={ 152 31 76 }
+				color2={ 255 255 255 }
+				
+				b_iwamizawa = {
+				}
+				b_fukagawa = {
+				}
+				b_ashibetsu = {
+				}
+				b_takikawa = {
+				}
+				b_bibai = {
+				}
+				b_akabira = {
+				}
+				b_kuriyama = {
+				}
+			}
+		}
+		d_shiretoko = {
+			color={ 150 0 64 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 13 province_id = 14 province_id = 15 province_id = 16 } }
+				}
+			}
+			capital = 13 # c_monbetsu
+			
+			c_monbetsu = { # 13
+				color={ 140 10 59 }
+				color2={ 255 255 255 }
+				
+				b_monbetsu = {
+				}
+				b_engaru = {
+				}
+				b_yubetsu = {
+				}
+				b_omu = {
+				}
+				b_okoppe = {
+				}
+				b_takinoue = {
+				}
+				b_nishiokoppe = {
+				}
+			}
+			c_kuriru = { # 16
+				color={ 209 73 124 }
+				color2={ 255 255 255 }
+				
+				b_kurilsk = {
+				}
+				b_kunashiri = {
+				}
+				b_shana = {
+				}
+				b_shikotan = {
+				}
+				b_rubetsu = {
+				}
+				b_anama = {
+				}
+				b_tomari = {
+				}
+			}
+			c_nemuro = { # 15
+				color={ 241 74 137 }
+				color2={ 255 255 255 }
+				
+				b_nemuro = {
+				}
+				b_rausu = {
+				}
+				b_betsukai = {
+				}
+				b_nakashibetsu = {
+				}
+				b_shibetsu_2 = {
+				}
+				b_menashi = {
+				}
+				b_notsuke = {
+				}
+			}
+			c_okhotsk = { # 14
+				color={ 186 37 93 }
+				color2={ 255 255 255 }
+				
+				b_abashiri = {
+				}
+				b_kitami = {
+				}
+				b_bihoro = {
+				}
+				b_shari = {
+				}
+				b_ozora = {
+				}
+				b_tsubetsu = {
+				}
+				b_saroma = {
+				}
+			}
+		}
+		d_tomuraushi = {
+			color={ 113 3 52 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 9 province_id = 10 province_id = 11 province_id = 12 } }
+				}
+			}
+			capital = 9 # c_rumoi
+			
+			c_rumoi = { # 9
+				color={ 103 13 47 }
+				color2={ 255 255 255 }
+				
+				b_rumoi = {
+				}
+				b_haboro = {
+				}
+				b_mashike = {
+				}
+				b_obira = {
+				}
+				b_teshio = {
+				}
+				b_tomamae = {
+				}
+				b_enbetsu = {
+				}
+			}
+			c_kamikawa = { # 12
+				color={ 104 44 67 }
+				color2={ 255 255 255 }
+				
+				b_asahikawa = {
+				}
+				b_furano = {
+				}
+				b_biei = {
+				}
+				b_kamifurano = {
+				}
+				b_higashikagura = {
+				}
+				b_higashikawa = {
+				}
+				b_takasu = {
+				}
+			}
+			c_nakagawa = { # 11
+				color={ 215 91 138 }
+				color2={ 255 255 255 }
+				
+				b_nayoro = {
+				}
+				b_shibetsu = {
+				}
+				b_bifuka = {
+				}
+				b_shimokawa = {
+				}
+				b_wassamu = {
+				}
+				b_kenbuchi = {
+				}
+				b_horokanai = {
+				}
+			}
+			c_soya = { # 10
+				color={ 171 34 85 }
+				color2={ 255 255 255 }
+				
+				b_wakkanai = {
+				}
+				b_esahi_2 = {
+				}
+				b_toyotomi = {
+				}
+				b_hamatonbetsu = {
+				}
+				b_rebun = {
+				}
+				b_sarufutsu = {
+				}
+				b_horonobe = {
+				}
+			}
+		}
+	}
+	k_tohoku = {
+		color={ 195 17 0 }
+		color2={ 255 255 255 }
+		
+		capital = 20 # c_tsugaru
+		culture = togoku
+		
+		d_aomori = {
+			color={ 215 253 10 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 20 province_id = 21 province_id = 22 } }
+				}
+			}
+			capital = 20 # c_tsugaru
+			
+			c_tsugaru = { # 20
+				color={ 225 243 15 }
+				color2={ 255 255 255 }
+				
+				b_hirosaki = {
+				}
+				b_goshogawara = {
+				}
+				b_tsugaru = {
+				}
+				b_fujisaki = {
+				}
+				b_itayanagi = {
+				}
+				b_tsuruta = {
+				}
+				b_nakadomari = {
+				}
+			}
+			c_aomori = { # 21
+				color={ 230 242 93 }
+				color2={ 255 255 255 }
+				
+				b_aomori = {
+				}
+				b_towada = {
+				}
+				b_kuroishi = {
+				}
+				b_hirakawa = {
+				}
+				b_hiranai = {
+				}
+				b_owani = {
+				}
+				b_inakadate = {
+				}
+			}
+			c_shimokita = { # 22
+				color={ 207 224 8 }
+				color2={ 255 255 255 }
+				
+				b_hachinohe = {
+				}
+				b_towada_2 = {
+				}
+				b_mutsu = {
+				}
+				b_misawa = {
+				}
+				b_oirase = {
+				}
+				b_gonohe = {
+				}
+				b_shichinohe = {
+				}
+			}
+		}
+		d_dewa = {
+			color={ 186 182 14 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 23 province_id = 24 province_id = 25 province_id = 26 province_id = 27 } }
+				}
+			}
+			capital = 23 # c_ugo
+			
+			c_ugo = { # 23
+				color={ 176 192 9 }
+				color2={ 255 255 255 }
+				
+				b_odate = {
+				}
+				b_noshiro = {
+				}
+				b_katagami = {
+				}
+				b_kitaakita = {
+				}
+				b_kazuno = {
+				}
+				b_oga = {
+				}
+				b_mitane = {
+				}
+			}
+			c_akita = { # 24
+				color={ 188 198 82 }
+				color2={ 255 255 255 }
+				
+				b_akita = {
+				}
+				b_yokote = {
+				}
+				b_daisen = {
+				}
+				b_yurihonjo = {
+				}
+				b_yuzawa = {
+				}
+				b_semboku = {
+				}
+				b_nikaho = {
+				}
+			}
+			c_akumi = { # 25
+				color={ 228 246 38 }
+				color2={ 255 255 255 }
+				
+				b_sakata = {
+				}
+				b_shinjo = {
+				}
+				b_yuza = {
+				}
+				b_mogami = {
+				}
+				b_mamurogawa = {
+				}
+				b_kaneyama = {
+				}
+				b_sakegawa = {
+				}
+			}
+			c_tsuruoka = { # 26
+				color={ 217 230 53 }
+				color2={ 255 255 255 }
+				
+				b_tsuruoka = {
+				}
+				b_tendo = {
+				}
+				b_higashine = {
+				}
+				b_sagae = {
+				}
+				b_murayama = {
+				}
+				b_shonai = {
+				}
+				b_kahoku = {
+				}
+			}
+			c_yamagata = { # 27
+				color={ 232 236 45 }
+				color2={ 255 255 255 }
+				
+				b_yamagata = {
+				}
+				b_yonezawa = {
+				}
+				b_nanyo = {
+				}
+				b_kaminoyama = {
+				}
+				b_nagai = {
+				}
+				b_takahata = {
+				}
+				b_kawanishi = {
+				}
+			}
+		}
+		d_fukushima = {
+			color={ 203 223 16 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 33 province_id = 34 province_id = 35 } }
+				}
+			}
+			capital = 33 # c_aizu
+			
+			c_aizu = { # 33
+				color={ 213 213 21 }
+				color2={ 255 255 255 }
+				
+				b_aizuwakamatsu = {
+				}
+				b_kitakata = {
+				}
+				b_aizumisato = {
+				}
+				b_aizubange = {
+				}
+				b_minamiaizu = {
+				}
+				b_inawashiro = {
+				}
+				b_shimogo = {
+				}
+			}
+			c_hamadori = { # 35
+				color={ 234 255 0 }
+				color2={ 255 255 255 }
+				
+				b_iwaki = {
+				}
+				b_minamisouma = {
+				}
+				b_souma = {
+				}
+				b_namie = {
+				}
+				b_tomioka = {
+				}
+				b_oukuma = {
+				}
+				b_shinchi = {
+				}
+			}
+			c_nakadori = { # 34
+				color={ 223 224 37 }
+				color2={ 255 255 255 }
+				
+				b_koriyama = {
+				}
+				b_fukushima = {
+				}
+				b_sukagawa = {
+				}
+				b_date_2 = {
+				}
+				b_shirakawa = {
+				}
+				b_nihonmatsu = {
+				}
+				b_tamura = {
+				}
+			}
+		}
+		d_oshu = {
+			color={ 179 215 15 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 28 province_id = 29 province_id = 30 province_id = 31 province_id = 32 } }
+				}
+			}
+			capital = 28 # c_kunohe
+			
+			c_kunohe = { # 28
+				color={ 189 205 20 }
+				color2={ 255 255 255 }
+				
+				b_kuji = {
+				}
+				b_ninohe = {
+				}
+				b_hachimantai = {
+				}
+				b_hirono = {
+				}
+				b_karumai = {
+				}
+				b_iwaizumi = {
+				}
+				b_kunohe = {
+				}
+			}
+			c_iwate = { # 29
+				color={ 155 165 49 }
+				color2={ 255 255 255 }
+				
+				b_morioka = {
+				}
+				b_hanamaki = {
+				}
+				b_miyako = {
+				}
+				b_takizawa = {
+				}
+				b_tono = {
+				}
+				b_shiwa = {
+				}
+				b_yahaba = {
+				}
+			}
+			c_miyagi = { # 31
+				color={ 209 227 18 }
+				color2={ 255 255 255 }
+				
+				b_ishinomaki = {
+				}
+				b_osaki = {
+				}
+				b_tome = {
+				}
+				b_kurihara = {
+				}
+				b_tagajo = {
+				}
+				b_kesennuma = {
+				}
+				b_shiogama = {
+				}
+			}
+			c_nishiiwai = { # 30
+				color={ 173 185 50 }
+				color2={ 255 255 255 }
+				
+				b_ichinoseki = {
+				}
+				b_oshu = {
+				}
+				b_ofunato = {
+				}
+				b_kamaishi = {
+				}
+				b_rikuzentakata = {
+				}
+				b_kanegasaki = {
+				}
+				b_hiraizumi = {
+				}
+			}
+			c_sendai = { # 32
+				color={ 195 212 17 }
+				color2={ 255 255 255 }
+				
+				b_sendai = {
+				}
+				b_natori = {
+				}
+				b_iwanuma = {
+				}
+				b_shiroishi = {
+				}
+				b_kakuda = {
+				}
+				b_shibata = {
+				}
+				b_watari = {
+				}
+			}
+		}
+	}
+}
