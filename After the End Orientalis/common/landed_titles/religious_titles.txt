@@ -1,0 +1,24 @@
+d_cao_dai_papacy = {
+	color = { 51 134 236 }
+	
+	capital = 183
+	
+	title = "HEAD_CAO_DAI"
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = cao_dai
+	
+	religion = berith
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}

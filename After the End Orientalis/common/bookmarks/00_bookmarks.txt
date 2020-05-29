@@ -1,0 +1,58 @@
+bm_terra_nullius = {
+	name = "BM_TERRA_NULLIUS"
+	desc = "BM_TERRA_NULLIUS_DESC"
+	date = 2605.5.28
+	
+	era = yes
+	picture = GFX_pick_era_image_5
+	custom_start = yes
+	
+	selectable_character = {
+		id = 1 #Nguyen Hoang
+		age = 25
+		name = ERA_CHAR_NAME_1
+		title = k_tonkin
+		title_name = k_tonkin
+		
+		character = {
+			dna = cfimkolbecc
+			properties = aj00bc00000
+			religion="buddhist"
+			culture="tonkinese"
+			government = feudal_government
+			dynasty=5000
+		}
+	}
+	selectable_character = {
+		id = 8 #Nguyen Minh Mac
+		age = 25
+		name = ERA_CHAR_NAME_2
+		title = k_annam
+		title_name = k_annam
+		
+		character = {
+			dna = bfimkolbecc
+			properties = bj00bc00000
+			religion="catholic"
+			culture="cochinchinese"
+			government = feudal_government
+			dynasty=5007
+		}
+	}
+	selectable_character = {
+		id = 13 #Nguyen Minh Mac
+		age = 25
+		name = ERA_CHAR_NAME_3
+		title = k_cochinchina
+		title_name = k_cochinchina
+		
+		character = {
+			dna = afimkolbecc
+			properties = cj00bc00000
+			religion="cao_dai"
+			culture="cochinchinese"
+			government = feudal_government
+			dynasty=5012
+		}
+	}
+}

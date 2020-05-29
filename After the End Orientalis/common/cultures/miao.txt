@@ -1,0 +1,73 @@
+miao = {
+
+	graphical_cultures = { chinesegfx }
+		
+	hmong = {
+		graphical_cultures = { tibetangfx }
+		unit_graphical_cultures = { chinesegfx }
+	
+		dynasty_name_first = yes
+
+		color = { 0.1 0.5 0.1 }
+
+		male_names = {
+			Alang
+			Bee
+			Cai Cawv Ceeb Chai Cherzong Choj Chue Ci Cy
+			Daus Dro
+			Ekam Es
+			Fong Foom Foung Fue Fuechy Fwam
+			Gish "Gum Nga" 
+			Hang Hawj H "Hmoov Zoo" Huas Hong Han
+			Jin
+			Ka Kaim Kaub Kaus Keej Kevin Khais Khan Kian Kim Kohng "Kohng Koy" Kong "Koob Hmoov" "Koob Meej" Koy Kou Kuam Kub
+			Lauj Lee Leej Lis "Lis Nus" Long Looj Lormong Lan
+			Mas Meej Mel Moos "Mos Tsuj Kim" Moshuki Muas Meng
+			Nchai Ned Neeb "Nkauj Xwb" Nor Norm Norrarak Npis Nplooj Nruas Ntaj Ntxaij Ntxawg Ntxhees Ntxhw "Nuj Qeeg" "Nuj Tee" Nyiaj
+			Pao Pheej Pheng Phiab Pobtsuas Pobzeb Pov 
+			Ranj Riam
+			Sawm Shizeng Shua Somnouk Soob Suav Sukhman Song
+			Tee Teeb Teev Ted Teng Thai Thaiv Thangyang Thao Thavi Thavisouk Thoj Thoob Tong Toog Tooj Tou Toua Tsab Tsawb Tsheej Tshua Tsu Tswb "Tswj Hwm" Tuam Tub Txhiaj Txhim Txoov
+			"Va Meng" Vaag Vaaj "Vam Meej" Vang Vichay Voos Vwj
+			
+			Xab Xais Xang Xao Xauv Xeeb Xob Xub Xyoob Xyooj 
+			Yaj Yang Yeeb Yeej Yeng Yias Yis
+			Zaj Zeb Zha "Zha Blong" Zoov Zhao Zhong }
+
+	female_names = {
+			Ab Ahney 
+			Bao Bette Bingbing Bo 
+			Catzie Chue Ci "Cia Saib" Cua
+			Dawb Daya Dayana Dia Dib Doualy Duabntxoo
+			Eve
+			"Gao Jer"
+			Hli Hnu Hnub Houa "Houa Vue" Huab
+			Iab "Ib Tiam"
+			"Jai Lia" 
+			Ka "Ka Nawg" "Ka Siab Lug" Kab "Kab Zuag" Kaia Kaj "Kaj Siab" Kajsiab Kalia Kao "Kao Kalia" Kawm Kayi "Khuv Xim" Kia Kiab Kim Kongjai Kulap
+			Laoma Lias Lig Lina Luna Luv
+			"Ma Lee" Mai "Mai Neng" "Mai Vue" Maiv Mali Malichansouk May "May Ia" Maya Me Mee Mim "Mim Muas" Mimi Minh Mos
+			Naag Neng Nkauj Npaim Npauj "Npauj Npaim" Nplhaib Nplias "Nplooj Siab Zoo" Nstoosli Ntaub Ntsais Ntsuab Ntuj Ntxawm Ntxhais Ntxheb "Ntxhee Yees" Ntxhi Ntxhiav Ntxhoo
+			Pa Paj "Paj Nyiag" "Paj Tawg" "Paj Tshuab" Pajielly Pajntaub Panuclue Pao Pavour Phuab
+			Rae 
+			Saw Say Saymoukda See Seevyees Shouade Shua Sua Suab 
+			Tai Taub Tawb Tid "Tid Pao" Tong "Tou Zer" Tshaus Tshiab "Tsim Nou" Tukta Txiab
+			Vue
+			
+			Xi Xia Xis "Xiv Xi" Xov
+			Yeeb Yeev Yeng Yi Ying Yiv Youa "Yum Lias"
+			Zeb "Zoo Ntsia" "Zoo Ntxim Nyiam" Zuag }
+
+	from_dynasty_prefix = ""
+
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+		
+		used_for_random = no
+	}
+}

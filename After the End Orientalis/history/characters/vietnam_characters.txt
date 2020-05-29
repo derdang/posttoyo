@@ -1,0 +1,1216 @@
+###########Vietnam Region Characters###########
+
+#Vietnamese
+#2875 - Tonkinese
+#2876 - Annamese 
+#2877 - Cochinchinese
+#2878 - Muong
+#2879 - Hoa
+
+#Chamic
+#1177 - Cham
+#1178 - Jarai
+
+#Miao-Hmong
+
+###########Vietnamese Dynasties###########
+
+#Nguyen Hoang: The Dynasty of The Post-Event Emperors
+2875000={
+	name="Quang-Trung"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	occluded=yes
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+	trait=fortune_builder
+	trait=administrator
+	trait=physician
+	trait=genius
+	trait=shrewd
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=deceitful
+	trait=poet
+	give_nickname=nick_the_restorer
+	2120.1.1={birth=yes}
+	2190.1.1={death=yes}
+}
+2875001={
+	name="Gia Quang"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	occluded=yes
+	father=2875000
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+	trait=brilliant_strategist
+	trait=gamer
+	trait=shrewd
+	trait=groomed
+	trait=sturdy
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	trait=falconer
+	2170.1.1={birth=yes}
+	2230.1.1={death=yes}
+}
+2875002={
+	name="Mang Le"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	occluded=yes
+	father=2875001
+	martial=1
+	diplomacy=3
+	stewardship=3
+	intrigue=1
+	learning=5
+	trait=scholarly_theologian
+	trait=cruel
+	trait=shrewd
+	trait=groomed
+	trait=sturdy
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	trait=zealous
+	2210.1.1={birth=yes}
+	2270.1.1={death=yes}
+}
+2875003={
+	name="Thieu Minh"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	occluded=yes
+	father=2875002
+	martial=1
+	diplomacy=5
+	stewardship=2
+	intrigue=1
+	learning=4
+	trait=scholarly_theologian
+	trait=charitable
+	trait=shrewd
+	trait=groomed
+	trait=sturdy
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	trait=temperate
+	secret_religion=catholic
+	2270.1.1={birth=yes}
+	2330.1.1={death=yes}
+}
+2875004={
+	name="Giang Minh"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="edlopnlacbb"
+	father=2875003
+	martial=1
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=3
+	trait=scholarly_theologian
+	trait=administrator
+	trait=shrewd
+	trait=groomed
+	trait=weak
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	trait=slothful
+	2290.1.1={birth=yes}
+	2340.1.1={death=yes}
+}
+2875005={
+	name="Loc"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="abmmqolbacc"
+	father=2875004
+	martial=1
+	diplomacy=2
+	stewardship=5
+	intrigue=1
+	learning=2
+	trait=thrifty_clerk
+	trait=administrator
+	trait=shrewd
+	trait=groomed
+	trait=frail
+	trait=shy
+	trait=patient
+	trait=proud
+	trait=just
+	trait=slothful
+	give_nickname=nick_the_feeble
+	2320.1.1={birth=yes}
+	2370.1.1={death={death_reason=death_murder_unknown}}
+}
+2875006={
+	name="Vo Tinh"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="abooqohdaaa"
+	father=2875004
+	martial=1
+	diplomacy=2
+	stewardship=5
+	intrigue=1
+	learning=2
+	trait=elusive_shadow
+	trait=impaler
+	trait=cruel
+	trait=groomed
+	trait=drunkard
+	trait=gluttonous
+	trait=envious
+	trait=proud
+	trait=just
+	trait=giant
+	trait=fat
+	give_nickname=nick_the_wicked
+	2330.1.1={birth=yes}
+	2380.1.1={death={death_reason=death_battle}}
+}
+2875007={
+	name="Minh"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="adnmrolbaee"
+	father=2875005
+	martial=1
+	diplomacy=2
+	stewardship=5
+	intrigue=1
+	learning=2
+	trait=thrifty_clerk
+	trait=administrator
+	trait=shrewd
+	trait=groomed
+	trait=frail
+	trait=shy
+	trait=patient
+	trait=proud
+	trait=just
+	trait=slothful
+	give_nickname=nick_the_unready
+	2360.1.1={birth=yes}
+	2410.1.1={death=yes}
+}
+2875008={
+	name="Sinh Cung"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="camnooafaee"
+	father=2875007
+	martial=7
+	diplomacy=2
+	stewardship=3
+	intrigue=1
+	learning=2
+	trait=brilliant_strategist
+	trait=hunter
+	trait=shrewd
+	trait=scarred_mid
+	trait=brave
+	trait=strong
+	trait=patient
+	trait=proud
+	trait=just
+	trait=robust
+	give_nickname=nick_the_fearless
+	2400.1.1={birth=yes}
+	2440.1.1={death={death_reason=death_battle}}
+}
+2875009={
+	name="Xuan Khu"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="cadajjafade"
+	father=2875007
+	martial=1
+	diplomacy=3
+	stewardship=5
+	intrigue=1
+	learning=2
+	trait=thrifty_clerk
+	trait=administrator
+	trait=shrewd
+	trait=diligent
+	trait=brave
+	trait=content
+	trait=patient
+	trait=proud
+	trait=just
+	trait=humble
+	2400.1.1={birth=yes}
+	2460.1.1={death=yes}
+}
+2875010={
+	name="Hung Yen"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="ebdbaaefada"
+	father=2875009
+	martial=1
+	diplomacy=3
+	stewardship=5
+	intrigue=1
+	learning=2
+	trait=fortune_builder
+	trait=administrator
+	trait=shrewd
+	trait=diligent
+	trait=brave
+	trait=content
+	trait=patient
+	trait=groomed
+	trait=just
+	trait=honest
+	give_nickname=nick_the_lawgiver
+	2440.1.1={birth=yes}
+	2500.1.1={death=yes}
+}
+2875011={
+	name="Ngo"
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="facceedfada"
+	father=2875010
+	martial=3
+	diplomacy=3
+	stewardship=5
+	intrigue=1
+	learning=3
+	trait=tough_soldier
+	trait=strategist
+	trait=shrewd
+	trait=diligent
+	trait=brave
+	trait=content
+	trait=patient
+	trait=groomed
+	trait=just
+	trait=unyielding_leader
+	2490.1.1={birth=yes}
+	2550.1.1={death={death_reason=death_battle}}
+}
+2875012={
+	name="Thai Tong" #Father to the Current Head
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="facceedfada"
+	father=2875011
+	martial=3
+	diplomacy=5
+	stewardship=5
+	intrigue=1
+	learning=3
+	trait=charismatic_negotiator
+	trait=shrewd
+	trait=diligent
+	trait=brave
+	trait=content
+	trait=patient
+	trait=groomed
+	trait=just
+	2540.1.1={birth=yes}
+	2570.1.1={add_spouse=2875013}
+	2610.1.1={death=yes}
+}
+2875013={
+	name="Van" #Mother to the Current Head
+	dynasty=2875004 #Nguyen Hoang Wife/Consort to Thai Tong
+	culture=tonkinese
+	religion=mahayana
+	dna="facceedfada"
+	female=yes
+	martial=3
+	diplomacy=5
+	stewardship=5
+	intrigue=1
+	learning=3
+	trait=charismatic_negotiator
+	trait=shrewd
+	trait=diligent
+	trait=brave
+	trait=content
+	trait=patient
+	trait=groomed
+	trait=just
+	2540.1.1={birth=yes}
+	2570.1.1={add_spouse=2875012}
+	2610.1.1={death=yes}
+}
+2875014={
+	name="Manh Lai" #2605 Start Character
+	dynasty=2875000 #Nguyen Hoang
+	culture=tonkinese
+	religion=mahayana
+	dna="cfimkolbecc"
+	father=2875012
+	mother=2875013
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+#Minor Tonkinese Lords
+2875015={ #Duke of Nam Dinh
+	name="Minh"
+	dynasty=2875001
+	culture=tonkinese
+	religion=mahayana
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2875016={ #Duke of Hai Phoung
+	name="Doang"
+	dynasty=2875002
+	culture=tonkinese
+	religion=mahayana
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2875017={ #Duke of Ha Long
+	name="Duc"
+	dynasty=2875003
+	culture=tonkinese
+	religion=mahayana
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+#Minor Annamese Lords
+2876000={
+	name="Vinh" #Duke of Nghe Tinh
+	dynasty=2876000
+	culture=annamese
+	religion=mahayana
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2876001={
+	name="Phuc" #Sleezy Merchant Man of Da Nang
+	dynasty=2876001
+	culture=annamese
+	religion=mahayana
+	martial=3
+	diplomacy=3
+	stewardship=8
+	intrigue=5
+	learning=5
+	trait=fortune_builder
+	trait=scholar
+	trait=shrewd
+	trait=content
+	trait=trusting
+	trait=administrator
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2876002={ 
+	name="Giang" #Count of Quang Nam
+	culture=annamese
+	dynasty=2876002
+	religion=mahayana
+	martial=3
+	diplomacy=3
+	stewardship=8
+	intrigue=5
+	learning=5
+	trait=martial_cleric
+	trait=shy
+	trait=humble
+	trait=content
+	trait=trusting
+	trait=just
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2876003={
+	name="Xuan" #Count of Quang Ngai
+	culture=annamese
+	dynasty=2876003
+	religion=mahayana
+	martial=3
+	diplomacy=3
+	stewardship=8
+	intrigue=5
+	learning=5
+	trait=martial_cleric
+	trait=shy
+	trait=kind
+	trait=content
+	trait=trusting
+	trait=just
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+#The Sons of Martyrs and Saints: Nguyen Minh
+2877000={
+	name="Lac"
+	dynasty=2877000 #Nguyen Minh
+	culture=cochinchinese
+	religion=catholic
+	occluded=yes
+	martial=10
+	diplomacy=3
+	stewardship=2
+	intrigue=3
+	learning=10
+	trait=misguided_warrior
+	trait=peasant_leader
+	trait=theologian
+	trait=erudite
+	trait=brave
+	trait=zealous
+	give_nickname=nick_the_martyr
+	2270.1.1={birth=yes}
+	2325.1.1={death={death_reason=death_battle}}
+}
+2877001={
+	name="Dung"
+	dynasty=2877000 #Nguyen Minh
+	culture=cochinchinese
+	religion=catholic
+	occluded=yes
+	father=2877000
+	martial=3
+	diplomacy=3
+	stewardship=2
+	intrigue=3
+	learning=3
+	trait=misguided_warrior
+	trait=dull
+	trait=theologian
+	trait=erudite
+	trait=craven
+	trait=shy
+	2320.1.1={birth=yes}
+	2370.1.1={death=yes}
+}
+2877002={
+	name="Mang"
+	dynasty=2877000 #Nguyen Minh
+	culture=cochinchinese
+	religion=catholic
+	dna="bcimknlbeca"
+	father=2877001
+	martial=10
+	diplomacy=3
+	stewardship=2
+	intrigue=3
+	learning=7
+	trait=martial_cleric
+	trait=peasant_leader
+	trait=theologian
+	trait=strong
+	trait=sturdy
+	trait=erudite
+	trait=brave
+	trait=zealous
+	2350.1.1={birth=yes}
+	2410.1.1={death=yes}
+}
+2877003={
+	name="Xuan"
+	dynasty=2877000 #Nguyen Minh
+	culture=cochinchinese
+	religion=catholic
+	dna="ecimknmadca"
+	father=2877002
+	martial=3
+	diplomacy=10
+	stewardship=2
+	intrigue=3
+	learning=7
+	trait=scholarly_theologian
+	trait=architect
+	trait=theologian
+	trait=strong
+	trait=sturdy
+	trait=kind
+	trait=charitable
+	trait=temperate
+	give_nickname=nick_the_saint
+	2390.1.1={birth=yes}
+	2460.12.25={death=yes}
+}
+2877004={
+	name="Dao"
+	dynasty=2877000 #Nguyen Minh
+	culture=cochinchinese
+	religion=catholic
+	dna="echmkoladae"
+	father=2877003
+	martial=3
+	diplomacy=3
+	stewardship=2
+	intrigue=3
+	learning=3
+	trait=charismatic_negotiator
+	trait=theologian
+	trait=diligent
+	trait=humble
+	trait=sturdy
+	trait=erudite
+	trait=content
+	trait=zealous
+	2440.1.1={birth=yes}
+	2500.1.1={death=yes}
+}
+2877005={
+	name="Lanh"
+	dynasty=2877000 #Nguyen Minh
+	culture=cochinchinese
+	religion=catholic
+	dna="bcjmiolcdcb"
+	father=2877004
+	martial=0
+	diplomacy=0
+	stewardship=0
+	intrigue=3
+	learning=3
+	trait=naive_appeaser
+	trait=chaste
+	trait=stutter
+	trait=humble
+	trait=sturdy
+	trait=arbitrary
+	trait=cruel
+	trait=content
+	trait=zealous
+	2485.1.1={birth=yes}
+	2555.1.1={death=yes}
+}
+2877006={
+	name="Cong Tho"
+	dynasty=2877000 #Nguyen Minh
+	culture=cochinchinese
+	religion=catholic
+	dna="acfgiolaaaa"
+	father=2877005
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+	trait=detached_priest
+	trait=uncouth
+	trait=stutter
+	trait=slothful
+	trait=wroth
+	trait=arbitrary
+	trait=cruel
+	trait=content
+	trait=zealous
+	2525.1.1={birth=yes}
+	2550.1.1={add_spouse=2877009}
+	2580.6.15={death={death_reason=death_execution killer=287713}}
+}
+2877007={
+	name="Mac" #2605 Start Character
+	dynasty=2877000 #Nguyen Minh
+	culture=cochinchinese
+	religion=catholic
+	dna="bfimkolbecc"
+	add_friend=2877012
+	father=2877006
+	mother=2877009
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=naive_appeaser
+	trait=scholar
+	trait=brave
+	trait=shrewd
+	trait=patient
+	trait=ambitious
+	trait=paranoid
+	trait=stubborn
+	trait=honest
+	trait=zealous
+	add_claim=k_cochinchina
+	2575.1.1={birth=yes}
+	2650.1.1={death=yes}
+}
+2877008={ #The Family Left Behind during the Fall of Saigon to Cao Dai
+	name="Qui"
+	dynasty=2877010 #Nguyen Minh Wife/Consort Family (Dad)
+	culture=cochinchinese
+	religion=catholic
+	dna="acfginlabab"
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+	trait=naive_appeaser
+	trait=depressed
+	trait=scarred_high
+	trait=poet
+	trait=patient
+	trait=kind
+	trait=paranoid
+	trait=content
+	trait=zealous
+	2500.1.1={birth=yes}
+	2570.1.1={death=yes}
+}
+2877009={
+	name="Thi Diep" #consort/wife of Nguyen Minh Cong Tho
+	dynasty=2877010 #Recently died on Christmas Eve
+	culture=cochinchinese
+	religion=catholic
+	dna="acfginlabab"
+	father=2877008
+	female=yes
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+	trait=charismatic_negotiator
+	trait=socializer
+	trait=depressed
+	trait=scarred
+	trait=poet
+	trait=patient
+	trait=kind
+	trait=paranoid
+	trait=content
+	trait=zealous
+	2525.1.1={birth=yes}
+	2550.1.1={add_spouse=2877006}
+	2604.12.25={death=yes}
+}
+2877010={
+	name="Hao" #Nguyen Minh Wife/Consort Family (Brother)
+	dynasty=2877010
+	culture=cochinchinese
+	religion=catholic
+	dna="acfginlabab"
+	father=2877008
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+	trait=naive_appeaser
+	trait=depressed
+	trait=twin
+	trait=scarred
+	trait=poet
+	trait=patient
+	trait=kind
+	trait=paranoid
+	trait=content
+	trait=zealous
+	2570.1.1={birth=yes}
+	2650.1.1={death=yes}
+}
+2877011={
+	name="Hieu" #Nguyen Minh Wife/Consort Family (Brother)
+	dynasty=2877010
+	culture=cochinchinese
+	religion=catholic
+	dna="acfginlabab"
+	father=2877008
+	martial=3
+	diplomacy=3
+	stewardship=3
+	intrigue=3
+	learning=3
+	trait=naive_appeaser
+	trait=depressed
+	trait=twin
+	trait=scarred
+	trait=poet
+	trait=patient
+	trait=kind
+	trait=paranoid
+	trait=content
+	trait=zealous
+	2570.1.1={birth=yes}
+	2650.1.1={death=yes}
+}
+2877012={
+	name="Dac" #General of the Southern Marches
+	dynasty=2877009
+	culture=cochinchinese
+	religion=catholic
+	martial=8
+	diplomacy=5
+	stewardship=4
+	intrigue=5
+	learning=5
+	give_job_title=job_marshal
+	add_friend=2877007
+	trait=tough_soldier
+	trait=robust
+	trait=brave
+	trait=scarred_mid
+	trait=duelist
+	trait=wroth
+	trait=just
+	trait=zealous
+	trait=defensive_leader
+	give_nickname=nick_the_dragon
+	2560.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2877013={
+	name="Loc" #Surveyor of the Frontier
+	culture=cochinchinese
+	dynasty=2877009
+	religion=catholic
+	martial=3
+	diplomacy=3
+	stewardship=8
+	intrigue=5
+	learning=5
+	trait=skilled_tactician
+	trait=lefthanded
+	trait=strategist
+	trait=ambitious
+	trait=patient
+	trait=brave
+	2550.1.1={birth=yes}
+	2600.1.1={death=yes}
+}
+2877014={
+	name="Chan" #Twin Princes of the Champa Marches
+	culture=cochinchinese
+	dynasty=2877009
+	religion=catholic
+	father=2877013
+	martial=3
+	diplomacy=3
+	stewardship=8
+	intrigue=5
+	learning=5
+	father=24
+	trait=tough_soldier
+	trait=lefthanded
+	trait=duelist
+	trait=content
+	trait=patient
+	trait=brave
+	trait=twin
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2877015={
+	name="Cong" #Twin Princes of the Champa Marches
+	culture=cochinchinese
+	dynasty=2877009
+	religion=catholic
+	father=2877013
+	martial=3
+	diplomacy=3
+	stewardship=8
+	intrigue=5
+	learning=5
+	father=24
+	trait=tough_soldier
+	trait=duelist
+	trait=kind
+	trait=content
+	trait=patient
+	trait=brave
+	trait=twin
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+
+#Heavenly Guardian of Saigon, Cao Dai Kingdom: Nguyen Van
+2877016={
+	name="Trang" #2605 Starting Character
+	dynasty=2877003 #Nguyen Van
+	culture=cochinchinese
+	religion=cao_dai
+	dna="afimkolbecc"
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2560.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2877017={
+	name="Le" #Cao Dai Pope
+	dynasty=2877004
+	culture=cochinchinese
+	religion=cao_dai
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+#Minor Cochinchinese Lords
+2877018={
+	name="Chi" #Duke of Tay Ninh
+	dynasty=2877005
+	culture=cochinchinese
+	religion=cao_dai
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2877019={
+	name="Due" #Duke of Dong Thap
+	dynasty=2877006
+	culture=cochinchinese
+	religion=cao_dai
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	secret_religion=mahayana
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2877020={
+	name="Binh" #Duke of Ben Tre
+	dynasty=2877007
+	culture=cochinchinese
+	religion=cao_dai
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2877021={ #Duke of Can Tho
+	name="Koa"
+	dynasty=2877008
+	culture=cochinchinese
+	religion=cao_dai
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+2877022={ #Strange Prince of Rach Goi(Reference)
+	name="Van Duc"
+	dynasty=2877011
+	culture=cochinchinese
+	religion=cao_dai
+	martial=3
+	diplomacy=2
+	stewardship=4
+	intrigue=3
+	learning=5
+	trait=charismatic_negotiator
+	trait=socializer
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=robust
+	trait=kind
+	trait=just
+	trait=sympathy_christendom
+	give_nickname=nick_the_stranger
+	secret_religion=catholic
+	2580.1.1={birth=yes}
+	2660.1.1={death=yes}
+}
+2877023={ #Strange Prince of Rach Goi(Daughther)
+	name="Karin"
+	dynasty=2877011
+	culture=cochinchinese
+	religion=catholic
+	father=2877022
+	female=yes
+	2600.1.1={birth=yes}
+	2660.1.1={death=yes}
+}
+#Muong Prince
+2878000={ #Muong Prince
+	name="Chinh"
+	dynasty=2878000
+	culture=muong
+	religion=mahayana
+	martial=3
+	diplomacy=3
+	stewardship=8
+	intrigue=5
+	learning=5
+	trait=thrifty_clerk
+	trait=wroth
+	trait=shrewd
+	trait=content
+	trait=trusting
+	trait=administrator
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+#Chamic Lords
+1177000={ #Cham Lord
+	name="Jaya"
+	dynasty=1177000
+	culture=cham
+	religion=senthang
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+1178000={ #Jarai Lord
+	name="Jarai"
+	dynasty=1178000
+	culture=jarai
+	religion=dharmayuttika
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+###########PLACEHOLDER- For Lords part of larger undefined groups###########
+5000={ #Hmong Lord
+	name="Alang"
+	dynasty=5000
+	culture=hmong
+	religion=ua_dab
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+5001={ #Tai Lord
+	name="Chakrii"
+	dynasty=5001
+	culture=tai
+	religion=dharmayuttika
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+5002={ #Tay-Nung Lord
+	name="Tayin"
+	dynasty=5002
+	culture=tay_nung
+	religion=dharmayuttika
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+5003={
+	name="Danh" #Northern Khmer Khrom Prince
+	dynasty=5003
+	culture=khrom
+	religion=dharmayuttika
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
+5004={
+	name="Boran" #Southern Khmer Khrom Prince
+	dynasty=5004
+	culture=khrom
+	religion=dharmayuttika
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=master_theologian
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	2678.1.1={death=yes}
+}
