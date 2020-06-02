@@ -1,0 +1,299 @@
+decisions = {
+	form_champa = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = kingdom_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = champa_formed }
+			independent = yes
+			culture = cham
+			OR = {
+				has_landed_title = d_cua_han
+				has_landed_title = d_ninh_thuan
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 500
+			scaled_wealth = 2.5
+			war = no
+			primary_title = { lower_tier_than = KING }
+			completely_controls = d_cua_han
+			completely_controls = d_dhak_lak
+			completely_controls = d_gia_lai
+			completely_controls = d_ninh_thuan
+		}
+		effect = {
+			activate_title = { title = k_champa status = yes }
+			primary_title = {
+				k_champa = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			scaled_wealth = -2.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			d_cua_han = {
+				de_jure_liege = k_champa
+			}
+			d_dhak_lak = {
+				de_jure_liege = k_champa
+			}
+			d_gia_lai = {
+				de_jure_liege = k_champa
+			}
+			d_ninh_thuan = {
+				de_jure_liege = k_champa
+			}
+			set_global_flag = champa_formed
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_sedang = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = kingdom_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = sedang_formed }
+			independent = yes
+			culture = jarai
+			OR = {
+				has_landed_title = d_dhak_lak
+				has_landed_title = d_gia_lai
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 400
+			scaled_wealth = 2.5
+			war = no
+			primary_title = { lower_tier_than = KING }
+			completely_controls = d_dhak_lak
+			completely_controls = d_gia_lai
+		}
+		effect = {
+			activate_title = { title = k_sedang status = yes }
+			primary_title = {
+				k_sedang = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			scaled_wealth = -2.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_liberator
+			}
+			d_dhak_lak = {
+				de_jure_liege = k_sedang
+			}
+			d_gia_lai = {
+				de_jure_liege = k_sedang
+			}
+			set_global_flag = sedang_formed
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_hmong = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = kingdom_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = hmong_formed }
+			independent = yes
+			culture = hmong
+			OR = {
+				has_landed_title = d_son_la
+				has_landed_title = d_yen_bai
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 400
+			scaled_wealth = 2.5
+			war = no
+			primary_title = { lower_tier_than = KING }
+			completely_controls = d_son_la
+			completely_controls = d_yen_bai
+		}
+		effect = {
+			activate_title = { title = k_hmong status = yes }
+			primary_title = {
+				k_hmong = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			scaled_wealth = -2.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			d_son_la = {
+				de_jure_liege = k_hmong
+			}
+			d_yen_bai = {
+				de_jure_liege = k_hmong
+			}
+			set_global_flag = hmong_formed
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_tai_confederacy = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = kingdom_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = tai_confederacy_formed }
+			independent = yes
+			culture = tai
+			OR = {
+				has_landed_title = d_yen_bai
+				has_landed_title = d_son_la
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 400
+			scaled_wealth = 2.5
+			war = no
+			primary_title = { lower_tier_than = KING }
+			completely_controls = d_yen_bai
+			completely_controls = d_son_la
+		}
+		effect = {
+			activate_title = { title = k_sip_song_chau_tai status = yes }
+			primary_title = {
+				k_sip_song_chau_tai = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			scaled_wealth = -2.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			d_yen_bai = {
+				de_jure_liege = k_sip_song_chau_tai
+			}
+			d_son_la = {
+				de_jure_liege = k_sip_song_chau_tai
+			}
+			set_global_flag = tai_confederacy_formed
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_tay_nung_state = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = kingdom_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = tay_nung_state_formed }
+			independent = yes
+			culture = tay_nung
+			AND = {
+				has_landed_title = d_ha_giang
+				has_landed_title = d_phu_tho
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 400
+			scaled_wealth = 2.5
+			war = no
+			primary_title = { lower_tier_than = KING }
+			completely_controls = d_ha_giang
+			completely_controls = d_phu_tho
+			completely_controls = d_ha_long
+		}
+		effect = {
+			activate_title = { title = k_tay_nung status = yes }
+			primary_title = {
+				k_tay_nung = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			scaled_wealth = -2.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			d_ha_giang = {
+				de_jure_liege = k_tay_nung
+			}
+			d_phu_tho = {
+				de_jure_liege = k_tay_nung
+			}
+			d_ha_long = {
+				de_jure_liege = k_tay_nung
+			}
+			set_global_flag = tay_nung_state_formed
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
