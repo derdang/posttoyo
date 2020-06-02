@@ -39,6 +39,11 @@
 	trait=poet
 	give_nickname=nick_the_restorer
 	2120.1.1={birth=yes}
+	2150.1.1={
+		create_bloodline = {
+			type = dragon_son_of_vietnam
+		}
+	}
 	2190.1.1={death=yes}
 }
 2875001={
@@ -219,7 +224,7 @@
 	trait=slothful
 	give_nickname=nick_the_unready
 	2360.1.1={birth=yes}
-	2410.1.1={death=yes}
+	2410.1.1={death={death_reason=death_as_a_beggar}}
 }
 2875008={
 	name="Sinh Cung"
@@ -696,7 +701,6 @@
 	culture=cochinchinese
 	religion=catholic
 	dna="bfimkolbecc"
-	add_friend=2877012
 	father=2877006
 	mother=2877009
 	martial=3
@@ -820,7 +824,7 @@
 }
 2877012={
 	name="Dac" #General of the Southern Marches
-	dynasty=2877009
+	dynasty=2877001
 	culture=cochinchinese
 	religion=catholic
 	martial=8
@@ -1079,24 +1083,54 @@
 	2580.1.1={birth=yes}
 	2678.1.1={death=yes}
 }
-#Chamic Lords
-1177000={ #Cham Lord
-	name="Jaya"
+#The Phoenix of Champa: The Princes of Panduranga
+1177000={ #Panduranga Start Character
+	name="Pham Van"
 	dynasty=1177000
 	culture=cham
 	religion=senthang
-	martial=3
-	diplomacy=3
-	stewardship=4
-	intrigue=5
+	dna="banooabcaaa"
+	martial=1
+	diplomacy=5
+	stewardship=5
+	intrigue=2
 	learning=5
 	trait=master_theologian
 	trait=scholar
-	trait=brave
+	trait=zealous
+	trait=honest
 	trait=content
 	trait=trusting
-	trait=lustful
-	2580.1.1={birth=yes}
+	trait=chaste
+	trait=temperate
+	trait=humble
+	trait=erudite
+	2550.1.1={birth=yes}
+	2648.1.1={death=yes}
+}
+1177001={ #Son of the Panduranga Prince
+	name="Katip"
+	dynasty=1177000
+	culture=cham
+	religion=senthang
+	dna="banooabcaaa"
+	father=1177000
+	martial=5
+	diplomacy=2
+	stewardship=5
+	intrigue=2
+	learning=3
+	trait=martial_cleric
+	trait=strategist
+	trait=zealous
+	trait=groomed
+	trait=envious
+	trait=brave
+	trait=ambitious
+	trait=stubborn
+	trait=humble
+	trait=diligent
+	2585.1.1={birth=yes}
 	2678.1.1={death=yes}
 }
 1178000={ #Jarai Lord
