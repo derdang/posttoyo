@@ -4,55 +4,71 @@ bm_terra_nullius = {
 	date = 2605.5.28
 	
 	era = yes
-	picture = GFX_pick_era_image_5
+	picture = GFX_pick_era_image_1
 	custom_start = yes
 	
 	selectable_character = {
-		id = 1 #Nguyen Hoang
+		id = 2875014 #Nguyen Hoang
 		age = 25
 		name = ERA_CHAR_NAME_1
-		title = k_tonkin
-		title_name = k_tonkin
+		title = k_thang_long
+		title_name = k_thang_long
 		
 		character = {
 			dna = cfimkolbecc
-			properties = aj00bc00000
-			religion="buddhist"
+			properties = ac00bc00000
+			religion="mahayana"
 			culture="tonkinese"
 			government = feudal_government
-			dynasty=5000
+			dynasty=2875000
 		}
 	}
 	selectable_character = {
-		id = 8 #Nguyen Minh Mac
+		id = 2877007 #Nguyen Minh Mac
 		age = 25
 		name = ERA_CHAR_NAME_2
-		title = k_annam
-		title_name = k_annam
+		title = k_thuan_hoa
+		title_name = k_thuan_hoa
 		
 		character = {
 			dna = bfimkolbecc
-			properties = bj00bc00000
+			properties = bb00bc00000
 			religion="catholic"
 			culture="cochinchinese"
 			government = feudal_government
-			dynasty=5007
+			dynasty=2877000
 		}
 	}
 	selectable_character = {
-		id = 13 #Nguyen Minh Mac
+		id = 2877016 #Nguyen Van Trang
 		age = 25
 		name = ERA_CHAR_NAME_3
-		title = k_cochinchina
-		title_name = k_cochinchina
+		title = k_gia_dhinh
+		title_name = k_gia_dhinh
 		
 		character = {
 			dna = afimkolbecc
-			properties = cj00bc00000
+			properties = ca00bc00000
 			religion="cao_dai"
 			culture="cochinchinese"
 			government = feudal_government
-			dynasty=5012
+			dynasty=2877003
+		}
+	}
+	selectable_character = {
+		id = 1177000 #Pham Van Che
+		age = 55
+		name = ERA_CHAR_NAME_4
+		title = d_ninh_thuan
+		title_name = d_ninh_thuan
+		
+		character = {
+			dna = banooabcaaa
+			properties = da00de00000
+			religion="senthang"
+			culture="cham"
+			government = feudal_government
+			dynasty=1177000
 		}
 	}
 }
