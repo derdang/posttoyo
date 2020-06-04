@@ -1,0 +1,6888 @@
+###### AUTO GENERATED CONTENT (c) CKTools v19 ######
+
+
+
+e_japan = {
+	color={ 208 233 94 }
+	color2={ 255 255 20 }
+	
+	capital = 1 # c_oshima
+	culture = togoku
+	
+	k_hokkaido = {
+		color={ 198 243 89 }
+		color2={ 255 255 255 }
+		
+		capital = 1 # c_oshima
+		culture = togoku
+		
+		d_oshima = {
+			color={ 178 7 79 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1 province_id = 2 province_id = 3 } }
+				}
+			}
+			capital = 1 # c_oshima
+			
+			c_oshima = { # 1
+				color={ 168 17 74 }
+				color2={ 255 255 255 }
+				
+				b_hakodate = {
+				}
+				b_hokuto = {
+				}
+				b_nanae = {
+				}
+				b_mori = {
+				}
+				b_kikonai = {
+				}
+				b_shinriuchi = {
+				}
+				b_shikabe = {
+				}
+			}
+			c_hiyama = { # 2
+				color={ 129 13 57 }
+				color2={ 255 255 255 }
+				
+				b_esahi = {
+				}
+				b_mastumae = {
+				}
+				b_kaminokuni = {
+				}
+				b_otobe = {
+				}
+				b_assabu = {
+				}
+				b_kumaishi = {
+				}
+				b_nishi = {
+				}
+			}
+			c_setana = { # 3
+				color={ 202 61 114 }
+				color2={ 255 255 255 }
+				
+				b_yakumo = {
+				}
+				b_imakane = {
+				}
+				b_kitahiyama = {
+				}
+				b_okushiri = {
+				}
+				b_futami = {
+				}
+				b_setana = {
+				}
+				b_taisei = {
+				}
+			}
+		}
+		d_akan = {
+			color={ 173 31 92 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 17 province_id = 18 province_id = 19 } }
+				}
+			}
+			capital = 17 # c_kushiro
+			
+			c_kushiro = { # 17
+				color={ 163 41 87 }
+				color2={ 255 255 255 }
+				
+				b_kushiro = {
+				}
+				b_akkeshi = {
+				}
+				b_shiranuka = {
+				}
+				b_shibecha = {
+				}
+				b_hamanaka = {
+				}
+				b_tsurui = {
+				}
+				b_teshikaga = {
+				}
+			}
+			c_obihiro = { # 18
+				color={ 135 58 87 }
+				color2={ 255 255 255 }
+				
+				b_obihiro = {
+				}
+				b_makubetsu = {
+				}
+				b_honbetsu = {
+				}
+				b_hiroo = {
+				}
+				b_asohoro = {
+				}
+				b_taiki = {
+				}
+				b_urahoro = {
+				}
+			}
+			c_tokachi = { # 19
+				color={ 174 15 75 }
+				color2={ 255 255 255 }
+				
+				b_otofuke = {
+				}
+				b_memuro = {
+				}
+				b_shimizu = {
+				}
+				b_shihoro = {
+				}
+				b_shintoku = {
+				}
+				b_kamishihoro = {
+				}
+				b_nakasatsunai = {
+				}
+			}
+		}
+		d_mashike = {
+			color={ 173 105 123 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 4 province_id = 5 province_id = 6 province_id = 7 province_id = 8 } }
+				}
+			}
+			capital = 4 # c_shiribeshi
+			
+			c_shiribeshi = { # 4
+				color={ 183 95 128 }
+				color2={ 255 255 255 }
+				
+				b_otaru = {
+				}
+				b_iwanai = {
+				}
+				b_yoichi = {
+				}
+				b_kyowa = {
+				}
+				b_niseko = {
+				}
+				b_rankoshi = {
+				}
+				b_furubira = {
+				}
+			}
+			c_hidaka = { # 8
+				color={ 244 60 129 }
+				color2={ 255 255 255 }
+				
+				b_shinhidaka = {
+				}
+				b_urakawa = {
+				}
+				b_hidaka = {
+				}
+				b_niikappu = {
+				}
+				b_biratori = {
+				}
+				b_erimo = {
+				}
+				b_samani = {
+				}
+			}
+			c_iburi = { # 7
+				color={ 244 126 171 }
+				color2={ 255 255 255 }
+				
+				b_muroran = {
+				}
+				b_tomakomai = {
+				}
+				b_noboribetsu = {
+				}
+				b_mukawa = {
+				}
+				b_date = {
+				}
+				b_abira = {
+				}
+				b_atsuma = {
+				}
+			}
+			c_ishikari = { # 5
+				color={ 156 65 99 }
+				color2={ 255 255 255 }
+				
+				b_sapporo = {
+				}
+				b_ebetsu = {
+				}
+				b_chitose = {
+				}
+				b_eniwa = {
+				}
+				b_ishikari = {
+				}
+				b_kitahiroshima = {
+				}
+				b_tobetsu = {
+				}
+			}
+			c_sorachi = { # 6
+				color={ 152 31 76 }
+				color2={ 255 255 255 }
+				
+				b_iwamizawa = {
+				}
+				b_fukagawa = {
+				}
+				b_ashibetsu = {
+				}
+				b_takikawa = {
+				}
+				b_bibai = {
+				}
+				b_akabira = {
+				}
+				b_kuriyama = {
+				}
+			}
+		}
+		d_shiretoko = {
+			color={ 150 0 64 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 13 province_id = 14 province_id = 15 province_id = 16 } }
+				}
+			}
+			capital = 13 # c_monbetsu
+			
+			c_monbetsu = { # 13
+				color={ 140 10 59 }
+				color2={ 255 255 255 }
+				
+				b_monbetsu = {
+				}
+				b_engaru = {
+				}
+				b_yubetsu = {
+				}
+				b_omu = {
+				}
+				b_okoppe = {
+				}
+				b_takinoue = {
+				}
+				b_nishiokoppe = {
+				}
+			}
+			c_kuriru = { # 16
+				color={ 209 73 124 }
+				color2={ 255 255 255 }
+				
+				b_kurilsk = {
+				}
+				b_kunashiri = {
+				}
+				b_shana = {
+				}
+				b_shikotan = {
+				}
+				b_rubetsu = {
+				}
+				b_anama = {
+				}
+				b_tomari = {
+				}
+			}
+			c_nemuro = { # 15
+				color={ 241 74 137 }
+				color2={ 255 255 255 }
+				
+				b_nemuro = {
+				}
+				b_rausu = {
+				}
+				b_betsukai = {
+				}
+				b_nakashibetsu = {
+				}
+				b_shibetsu_2 = {
+				}
+				b_menashi = {
+				}
+				b_notsuke = {
+				}
+			}
+			c_ohotsuku = { # 14
+				color={ 186 37 93 }
+				color2={ 255 255 255 }
+				
+				b_abashiri = {
+				}
+				b_kitami = {
+				}
+				b_bihoro = {
+				}
+				b_shari = {
+				}
+				b_ozora = {
+				}
+				b_tsubetsu = {
+				}
+				b_saroma = {
+				}
+			}
+		}
+		d_tomuraushi = {
+			color={ 113 3 52 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 9 province_id = 10 province_id = 11 province_id = 12 } }
+				}
+			}
+			capital = 9 # c_rumoi
+			
+			c_rumoi = { # 9
+				color={ 103 13 47 }
+				color2={ 255 255 255 }
+				
+				b_rumoi = {
+				}
+				b_haboro = {
+				}
+				b_mashike = {
+				}
+				b_obira = {
+				}
+				b_teshio = {
+				}
+				b_tomamae = {
+				}
+				b_enbetsu = {
+				}
+			}
+			c_kamikawa = { # 12
+				color={ 104 44 67 }
+				color2={ 255 255 255 }
+				
+				b_asahikawa = {
+				}
+				b_furano = {
+				}
+				b_biei = {
+				}
+				b_kamifurano = {
+				}
+				b_higashikagura = {
+				}
+				b_higashikawa = {
+				}
+				b_takasu = {
+				}
+			}
+			c_nakagawa = { # 11
+				color={ 215 91 138 }
+				color2={ 255 255 255 }
+				
+				b_nayoro = {
+				}
+				b_shibetsu = {
+				}
+				b_bifuka = {
+				}
+				b_shimokawa = {
+				}
+				b_wassamu = {
+				}
+				b_kenbuchi = {
+				}
+				b_horokanai = {
+				}
+			}
+			c_soya = { # 10
+				color={ 171 34 85 }
+				color2={ 255 255 255 }
+				
+				b_wakkanai = {
+				}
+				b_esahi_2 = {
+				}
+				b_toyotomi = {
+				}
+				b_hamatonbetsu = {
+				}
+				b_rebun = {
+				}
+				b_sarufutsu = {
+				}
+				b_horonobe = {
+				}
+			}
+		}
+	}
+	k_chubu = {
+		color={ 46 128 30 }
+		color2={ 255 255 255 }
+		
+		capital = 56 # c_niigata
+		culture = togoku
+		
+		d_niigata = {
+			color={ 26 148 20 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 56 province_id = 57 province_id = 58 province_id = 59 } }
+				}
+			}
+			capital = 56 # c_niigata
+			
+			c_niigata = { # 56
+				color={ 16 158 15 }
+				color2={ 255 255 255 }
+				
+				b_niigata = {
+				}
+				b_shibata_2 = {
+				}
+				b_niitsu = {
+				}
+				b_gosen = {
+				}
+				b_murakami = {
+				}
+				b_toyosaka = {
+				}
+				b_agano = {
+				}
+			}
+			c_kasugayama = { # 58
+				color={ 11 112 10 }
+				color2={ 255 255 255 }
+				
+				b_joetsu = {
+				}
+				b_kashiwazaki = {
+				}
+				b_minamiuonuma = {
+				}
+				b_tokamachi = {
+				}
+				b_itoigawa = {
+				}
+				b_myoko = {
+				}
+				b_tsunan = {
+				}
+			}
+			c_sado = { # 59
+				color={ 81 170 80 }
+				color2={ 255 255 255 }
+				
+				b_ryotsu = {
+				}
+				b_aikawa = {
+				}
+				b_sawata = {
+				}
+				b_hatano = {
+				}
+				b_mano = {
+				}
+				b_hamochi = {
+				}
+				b_niibo = {
+				}
+			}
+			c_shinano = { # 57
+				color={ 8 130 7 }
+				color2={ 255 255 255 }
+				
+				b_nagaoka = {
+				}
+				b_sanjo = {
+				}
+				b_tsubame = {
+				}
+				b_mitsuke = {
+				}
+				b_uonuma = {
+				}
+				b_ojiya = {
+				}
+				b_tochio = {
+				}
+			}
+		}
+		d_aichi = {
+			color={ 34 167 26 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 69 province_id = 70 } }
+				}
+			}
+			capital = 69 # c_nagoya
+			
+			c_nagoya = { # 69
+				color={ 24 177 21 }
+				color2={ 255 255 255 }
+				
+				b_nagoya = {
+				}
+				b_ichinomiya_2 = {
+				}
+				b_kasugai = {
+				}
+				b_kariya = {
+				}
+				b_komaki = {
+				}
+				b_inazawa = {
+				}
+				b_seto = {
+				}
+			}
+			c_toyota = { # 70
+				color={ 115 230 112 }
+				color2={ 255 255 255 }
+				
+				b_toyota = {
+				}
+				b_okazaki = {
+				}
+				b_toyohashi = {
+				}
+				b_anjo = {
+				}
+				b_nishio = {
+				}
+				b_gamagori = {
+				}
+				b_owariasahi = {
+				}
+			}
+		}
+		d_gifu = {
+			color={ 109 215 112 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 66 province_id = 67 province_id = 68 } }
+				}
+			}
+			capital = 66 # c_takayama
+			
+			c_takayama = { # 66
+				color={ 119 205 117 }
+				color2={ 255 255 255 }
+				
+				b_takayama = {
+				}
+				b_hida = {
+				}
+				b_kuguno = {
+				}
+				b_kokufu = {
+				}
+				b_nyukawa = {
+				}
+				b_kamitakara = {
+				}
+				b_shirakawa_2 = {
+				}
+			}
+			c_gifu = { # 68
+				color={ 159 204 158 }
+				color2={ 255 255 255 }
+				
+				b_gifu = {
+				}
+				b_ogaki = {
+				}
+				b_kakamigahara = {
+				}
+				b_seki = {
+				}
+				b_hashima = {
+				}
+				b_mizuho = {
+				}
+				b_kaizu = {
+				}
+			}
+			c_toki = { # 67
+				color={ 93 156 92 }
+				color2={ 255 255 255 }
+				
+				b_tajimi = {
+				}
+				b_kani = {
+				}
+				b_nakatsugawa = {
+				}
+				b_toki = {
+				}
+				b_minokamo = {
+				}
+				b_ena = {
+				}
+				b_gujo = {
+				}
+			}
+		}
+		d_hokuriku = {
+			color={ 78 95 72 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 71 province_id = 72 province_id = 73 province_id = 74 province_id = 75 } }
+				}
+			}
+			capital = 71 # c_toyama
+			
+			c_toyama = { # 71
+				color={ 68 105 67 }
+				color2={ 255 255 255 }
+				
+				b_toyama = {
+				}
+				b_takaoka = {
+				}
+				b_shinminato = {
+				}
+				b_nanto = {
+				}
+				b_tonami = {
+				}
+				b_himi = {
+				}
+				b_uozu = {
+				}
+			}
+			c_fukui = { # 74
+				color={ 40 145 39 }
+				color2={ 255 255 255 }
+				
+				b_fukui = {
+				}
+				b_sakai = {
+				}
+				b_takefu = {
+				}
+				b_sabae = {
+				}
+				b_ono = {
+				}
+				b_awara = {
+				}
+				b_katsuyama = {
+				}
+			}
+			c_kaga = { # 73
+				color={ 106 151 105 }
+				color2={ 255 255 255 }
+				
+				b_kanazawa = {
+				}
+				b_hakusan = {
+				}
+				b_komatsu = {
+				}
+				b_kaga = {
+				}
+				b_nonoichi = {
+				}
+				b_nomi = {
+				}
+				b_kawakita = {
+				}
+			}
+			c_noto = { # 72
+				color={ 93 192 91 }
+				color2={ 255 255 255 }
+				
+				b_nanao = {
+				}
+				b_tsubata = {
+				}
+				b_kahoku_2 = {
+				}
+				b_wajima = {
+				}
+				b_uchinada = {
+				}
+				b_hakui = {
+				}
+				b_shika = {
+				}
+			}
+			c_wakasa = { # 75
+				color={ 72 162 70 }
+				color2={ 255 255 255 }
+				
+				b_tsuruga = {
+				}
+				b_obama = {
+				}
+				b_mikata = {
+				}
+				b_nanjo = {
+				}
+				b_takahama = {
+				}
+				b_mihama = {
+				}
+				b_oi = {
+				}
+			}
+		}
+		d_nagano = {
+			color={ 33 166 26 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 60 province_id = 61 province_id = 62 province_id = 63 } }
+				}
+			}
+			capital = 60 # c_nagano
+			
+			c_nagano = { # 60
+				color={ 23 176 21 }
+				color2={ 255 255 255 }
+				
+				b_nagano = {
+				}
+				b_ueda = {
+				}
+				b_azumino = {
+				}
+				b_chikuma = {
+				}
+				b_chino = {
+				}
+				b_suzaka = {
+				}
+				b_nakano = {
+				}
+			}
+			c_matsumoto = { # 61
+				color={ 31 116 30 }
+				color2={ 255 255 255 }
+				
+				b_matsumoto = {
+				}
+				b_saku = {
+				}
+				b_shiojiri = {
+				}
+				b_suwa = {
+				}
+				b_okaya = {
+				}
+				b_komoro = {
+				}
+				b_tomi = {
+				}
+			}
+			c_shimoina = { # 62
+				color={ 46 88 45 }
+				color2={ 255 255 255 }
+				
+				b_iida = {
+				}
+				b_ina = {
+				}
+				b_komagane = {
+				}
+				b_takamori = {
+				}
+				b_kiso = {
+				}
+				b_iijima = {
+				}
+				b_toyooka = {
+				}
+			}
+			c_yamanashi = { # 63
+				color={ 136 213 135 }
+				color2={ 255 255 255 }
+				
+				b_kofu = {
+				}
+				b_kai = {
+				}
+				b_kosai = {
+				}
+				b_fuefuki = {
+				}
+				b_fujiyoshida = {
+				}
+				b_yamanashi = {
+				}
+				b_tsuru = {
+				}
+			}
+		}
+		d_shizuoka = {
+			color={ 28 109 21 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 64 province_id = 65 } }
+				}
+			}
+			capital = 64 # c_hamana
+			
+			c_hamana = { # 64
+				color={ 18 119 16 }
+				color2={ 255 255 255 }
+				
+				b_hamamatsu = {
+				}
+				b_iwata = {
+				}
+				b_fujieda = {
+				}
+				b_yaizu = {
+				}
+				b_kakegawa = {
+				}
+				b_shimada = {
+				}
+				b_fukuroi = {
+				}
+			}
+			c_sunpu = { # 65
+				color={ 94 144 93 }
+				color2={ 255 255 255 }
+				
+				b_shizuoka = {
+				}
+				b_fuji = {
+				}
+				b_fujinomiya = {
+				}
+				b_numazu = {
+				}
+				b_mishima = {
+				}
+				b_gotemba = {
+				}
+				b_ito = {
+				}
+			}
+		}
+	}
+	k_chugoku = {
+		color={ 152 77 37 }
+		color2={ 255 255 255 }
+		
+		capital = 100 # c_oki
+		culture = saigoku
+		
+		d_sanin = {
+			color={ 132 97 27 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 100 province_id = 101 province_id = 102 province_id = 103 province_id = 104 } }
+				}
+			}
+			capital = 100 # c_oki
+			
+			c_oki = { # 100
+				color={ 122 107 22 }
+				color2={ 255 255 255 }
+				
+				b_saigo = {
+				}
+				b_nishinoshima = {
+				}
+				b_ama = {
+				}
+				b_tsuma = {
+				}
+				b_goka = {
+				}
+				b_chibu = {
+				}
+				b_fuse = {
+				}
+			}
+			c_hamada = { # 104
+				color={ 235 215 97 }
+				color2={ 255 255 255 }
+				
+				b_hamada = {
+				}
+				b_masuda = {
+				}
+				b_tsuwano = {
+				}
+				b_misumi = {
+				}
+				b_muikaichi = {
+				}
+				b_kanagi = {
+				}
+				b_nichihara = {
+				}
+			}
+			c_iwami = { # 103
+				color={ 211 193 89 }
+				color2={ 255 255 255 }
+				
+				b_oda = {
+				}
+				b_gotsu = {
+				}
+				b_iwami = {
+				}
+				b_mizuho_2 = {
+				}
+				b_ochi = {
+				}
+				b_akagi = {
+				}
+				b_kawamoto = {
+				}
+			}
+			c_shimane = { # 102
+				color={ 189 177 108 }
+				color2={ 255 255 255 }
+				
+				b_matsue = {
+				}
+				b_izumo = {
+				}
+				b_yasugi = {
+				}
+				b_daito = {
+				}
+				b_kisuki = {
+				}
+				b_mitoya = {
+				}
+				b_kamo = {
+				}
+			}
+			c_tottori = { # 101
+				color={ 229 176 14 }
+				color2={ 255 255 255 }
+				
+				b_tottori = {
+				}
+				b_yonago = {
+				}
+				b_kurayoshi = {
+				}
+				b_sakaiminato = {
+				}
+				b_tohaku = {
+				}
+				b_hawai = {
+				}
+				b_chizu = {
+				}
+			}
+		}
+		d_hiroshima = {
+			color={ 174 152 37 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 108 province_id = 109 province_id = 110 } }
+				}
+			}
+			capital = 108 # c_miyoshi
+			
+			c_miyoshi = { # 108
+				color={ 164 162 32 }
+				color2={ 255 255 255 }
+				
+				b_miyoshi = {
+				}
+				b_shobara = {
+				}
+				b_takata = {
+				}
+				b_sera = {
+				}
+				b_yoshida = {
+				}
+				b_sanwa = {
+				}
+				b_kozan = {
+				}
+			}
+			c_aki = { # 109
+				color={ 136 134 45 }
+				color2={ 255 255 255 }
+				
+				b_kure = {
+				}
+				b_fukuyama = {
+				}
+				b_saijo_2 = {
+				}
+				b_onomichi = {
+				}
+				b_mihara_2 = {
+				}
+				b_takehara = {
+				}
+				b_fuchu_2 = {
+				}
+			}
+			c_hiroshima = { # 110
+				color={ 185 183 86 }
+				color2={ 255 255 255 }
+				
+				b_hiroshima = {
+				}
+				b_fuchu_3 = {
+				}
+				b_hatsukaichi = {
+				}
+				b_kaita = {
+				}
+				b_otake = {
+				}
+				b_ono_3 = {
+				}
+				b_kumano_2 = {
+				}
+			}
+		}
+		d_okayama = {
+			color={ 151 153 86 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 105 province_id = 106 province_id = 107 } }
+				}
+			}
+			capital = 105 # c_tsuyama
+			
+			c_tsuyama = { # 105
+				color={ 161 143 91 }
+				color2={ 255 255 255 }
+				
+				b_tsuyama = {
+				}
+				b_ochiai = {
+				}
+				b_kuse = {
+				}
+				b_mimasaka = {
+				}
+				b_yanahara = {
+				}
+				b_okutsu = {
+				}
+				b_nagi = {
+				}
+			}
+			c_kurashiki = { # 107
+				color={ 206 178 94 }
+				color2={ 255 255 255 }
+				
+				b_kurashiki = {
+				}
+				b_soja = {
+				}
+				b_kasaoka = {
+				}
+				b_ibara = {
+				}
+				b_takahashi = {
+				}
+				b_asakuchi = {
+				}
+				b_niimi = {
+				}
+			}
+			c_okayama = { # 106
+				color={ 190 151 34 }
+				color2={ 255 255 255 }
+				
+				b_okayama = {
+				}
+				b_tamano = {
+				}
+				b_bizen = {
+				}
+				b_wake = {
+				}
+				b_akaiwa = {
+				}
+				b_oku = {
+				}
+				b_osafune = {
+				}
+			}
+		}
+		d_yamaguchi = {
+			color={ 166 144 42 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 111 province_id = 112 province_id = 113 } }
+				}
+			}
+			capital = 111 # c_nishiki
+			
+			c_nishiki = { # 111
+				color={ 156 154 37 }
+				color2={ 255 255 255 }
+				
+				b_iwakuni = {
+				}
+				b_tokuyama = {
+				}
+				b_kudamatsu = {
+				}
+				b_hikari = {
+				}
+				b_yanai = {
+				}
+				b_shinnanyo = {
+				}
+				b_tabuse = {
+				}
+			}
+			c_nagato = { # 113
+				color={ 237 234 27 }
+				color2={ 255 255 255 }
+				
+				b_hagi = {
+				}
+				b_shimonoseki = {
+				}
+				b_nagato = {
+				}
+				b_mine = {
+				}
+				b_toyoura = {
+				}
+				b_hohoku = {
+				}
+				b_misumi_2 = {
+				}
+			}
+			c_yamaguchi = { # 112
+				color={ 186 183 41 }
+				color2={ 255 255 255 }
+				
+				b_yamaguchi = {
+				}
+				b_ogori = {
+				}
+				b_ube = {
+				}
+				b_hofu = {
+				}
+				b_onoda = {
+				}
+				b_sanyo = {
+				}
+				b_ajisu = {
+				}
+			}
+		}
+	}
+	k_kansai = {
+		color={ 58 190 183 }
+		color2={ 255 255 255 }
+		
+		capital = 76 # c_shiga
+		culture = saigoku
+		
+		d_omi = {
+			color={ 78 170 193 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 76 province_id = 77 province_id = 78 province_id = 79 } }
+				}
+			}
+			capital = 76 # c_shiga
+			
+			c_shiga = { # 76
+				color={ 88 160 198 }
+				color2={ 255 255 255 }
+				
+				b_otsu = {
+				}
+				b_kusatsu_2 = {
+				}
+				b_nagahama = {
+				}
+				b_takashima = {
+				}
+				b_maibara = {
+				}
+				b_shiga = {
+				}
+				b_azai = {
+				}
+			}
+			c_hikone = { # 77
+				color={ 133 169 188 }
+				color2={ 255 255 255 }
+				
+				b_hikone = {
+				}
+				b_yokaichi = {
+				}
+				b_koka = {
+				}
+				b_omihachiman = {
+				}
+				b_moriyama = {
+				}
+				b_ritto = {
+				}
+				b_kosei = {
+				}
+			}
+			c_ise = { # 79
+				color={ 24 73 99 }
+				color2={ 255 255 255 }
+				
+				b_shima = {
+				}
+				b_meiwa = {
+				}
+				b_ise = {
+				}
+				b_toba = {
+				}
+				b_owase = {
+				}
+				b_kumano = {
+				}
+				b_kihoku = {
+				}
+			}
+			c_mie = { # 78
+				color={ 58 99 121 }
+				color2={ 255 255 255 }
+				
+				b_yokkaichi = {
+				}
+				b_tsu = {
+				}
+				b_suzuka = {
+				}
+				b_matsusaka = {
+				}
+				b_kuwana = {
+				}
+				b_iga = {
+				}
+				b_nabari = {
+				}
+			}
+		}
+		d_asuka = {
+			color={ 20 111 157 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 80 province_id = 81 province_id = 82 province_id = 83 } }
+				}
+			}
+			capital = 80 # c_tango
+			
+			c_tango = { # 80
+				color={ 10 121 152 }
+				color2={ 255 255 255 }
+				
+				b_kameoka = {
+				}
+				b_maizuru = {
+				}
+				b_fukuchiyama = {
+				}
+				b_ayabe = {
+				}
+				b_nantan = {
+				}
+				b_yosano = {
+				}
+				b_kyotamba = {
+				}
+			}
+			c_kyoto = { # 81
+				color={ 19 139 172 }
+				color2={ 255 255 255 }
+				
+				b_kyoto = {
+				}
+				b_uji = {
+				}
+				b_nagaokakyo = {
+				}
+				b_joyo = {
+				}
+				b_kizugawa = {
+				}
+				b_yawata = {
+				}
+				b_kyotanabe = {
+				}
+			}
+			c_nara = { # 82
+				color={ 71 161 161 }
+				color2={ 255 255 255 }
+				
+				b_nara = {
+				}
+				b_kashihara = {
+				}
+				b_ikoma = {
+				}
+				b_tenri = {
+				}
+				b_yamatokoriyama = {
+				}
+				b_kashiba = {
+				}
+				b_yamatotakada = {
+				}
+			}
+			c_yoshino = { # 83
+				color={ 40 197 197 }
+				color2={ 255 255 255 }
+				
+				b_oyodo = {
+				}
+				b_takatori = {
+				}
+				b_shimoichi = {
+				}
+				b_asuka = {
+				}
+				b_yoshino = {
+				}
+				b_uda = {
+				}
+				b_yamabe = {
+				}
+			}
+		}
+		d_hyogo = {
+			color={ 78 191 207 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 84 province_id = 85 province_id = 86 } }
+				}
+			}
+			capital = 84 # c_tajima
+			
+			c_tajima = { # 84
+				color={ 88 181 212 }
+				color2={ 255 255 255 }
+				
+				b_toyooka_2 = {
+				}
+				b_hikami = {
+				}
+				b_asago = {
+				}
+				b_yabu = {
+				}
+				b_kasumi = {
+				}
+				b_onsen = {
+				}
+				b_izushi = {
+				}
+			}
+			c_himeji = { # 85
+				color={ 23 186 240 }
+				color2={ 255 255 255 }
+				
+				b_himeji = {
+				}
+				b_ono_2 = {
+				}
+				b_ako = {
+				}
+				b_kasai = {
+				}
+				b_shiso = {
+				}
+				b_taishi = {
+				}
+				b_aioi = {
+				}
+			}
+			c_kobe = { # 86
+				color={ 51 156 191 }
+				color2={ 255 255 255 }
+				
+				b_kobe = {
+				}
+				b_nishinomiya = {
+				}
+				b_amagasaki = {
+				}
+				b_akashi = {
+				}
+				b_kakogawa = {
+				}
+				b_takarazuka = {
+				}
+				b_itami = {
+				}
+			}
+		}
+		d_osaka = {
+			color={ 40 100 141 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 87 province_id = 88 province_id = 89 } }
+				}
+			}
+			capital = 87 # c_hirakata
+			
+			c_hirakata = { # 87
+				color={ 30 110 136 }
+				color2={ 255 255 255 }
+				
+				b_hirakata = {
+				}
+				b_toyonaka = {
+				}
+				b_suita = {
+				}
+				b_takatsuki = {
+				}
+				b_ibaraki = {
+				}
+				b_neyagawa = {
+				}
+				b_moriguchi = {
+				}
+			}
+			c_awaji = { # 89
+				color={ 50 96 111 }
+				color2={ 255 255 255 }
+				
+				b_awaji = {
+				}
+				b_sumoto = {
+				}
+				b_nandan = {
+				}
+				b_mihara = {
+				}
+				b_seidan = {
+				}
+				b_tsuna = {
+				}
+				b_hokudan = {
+				}
+			}
+			c_osaka = { # 88
+				color={ 14 85 109 }
+				color2={ 255 255 255 }
+				
+				b_osaka = {
+				}
+				b_sakai_2 = {
+				}
+				b_higashiosaka = {
+				}
+				b_yao = {
+				}
+				b_kishiwada = {
+				}
+				b_izumi = {
+				}
+				b_matsubara = {
+				}
+			}
+		}
+		d_wakayama = {
+			color={ 27 144 184 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 90 province_id = 91 province_id = 92 } }
+				}
+			}
+			capital = 90 # c_wakayama
+			
+			c_wakayama = { # 90
+				color={ 17 154 179 }
+				color2={ 255 255 255 }
+				
+				b_wakayama = {
+				}
+				b_hashimoto = {
+				}
+				b_naga = {
+				}
+				b_iwade = {
+				}
+				b_kainan = {
+				}
+				b_arida = {
+				}
+				b_kibi = {
+				}
+			}
+			c_kii = { # 92
+				color={ 76 155 169 }
+				color2={ 255 255 255 }
+				
+				b_shingu = {
+				}
+				b_shirahama = {
+				}
+				b_kushimoto = {
+				}
+				b_nachikatsuura = {
+				}
+				b_kamitonda = {
+				}
+				b_hikigawa = {
+				}
+				b_koza = {
+				}
+			}
+			c_tanabe = { # 91
+				color={ 34 125 141 }
+				color2={ 255 255 255 }
+				
+				b_tanabe = {
+				}
+				b_gobo = {
+				}
+				b_minabe = {
+				}
+				b_inami = {
+				}
+				b_mihama_2 = {
+				}
+				b_ryujin = {
+				}
+				b_manabegawa = {
+				}
+			}
+		}
+	}
+	k_kanto = {
+		color={ 191 49 94 }
+		color2={ 255 255 255 }
+		
+		capital = 36 # c_myogi
+		culture = togoku
+		
+		d_gunma = {
+			color={ 171 69 84 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 36 province_id = 37 province_id = 38 } }
+				}
+			}
+			capital = 36 # c_myogi
+			
+			c_myogi = { # 36
+				color={ 161 79 79 }
+				color2={ 255 255 255 }
+				
+				b_maebashi = {
+				}
+				b_ota = {
+				}
+				b_isesaki = {
+				}
+				b_kiryu = {
+				}
+				b_tatebayashi = {
+				}
+				b_midori = {
+				}
+				b_numata = {
+				}
+			}
+			c_agatsuma = { # 37
+				color={ 172 30 30 }
+				color2={ 255 255 255 }
+				
+				b_shibukawa = {
+				}
+				b_yoshioka = {
+				}
+				b_nakanojo = {
+				}
+				b_higashiagatsuma = {
+				}
+				b_tsumagoi = {
+				}
+				b_kusatsu = {
+				}
+				b_kurabuchi = {
+				}
+			}
+			c_takasaki = { # 38
+				color={ 133 34 34 }
+				color2={ 255 255 255 }
+				
+				b_takasaki = {
+				}
+				b_fujioka = {
+				}
+				b_annaka = {
+				}
+				b_tomioka_2 = {
+				}
+				b_kanra = {
+				}
+				b_shimonita = {
+				}
+				b_nanmoku = {
+				}
+			}
+		}
+		d_chiba = {
+			color={ 167 0 15 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 44 province_id = 45 province_id = 46 } }
+				}
+			}
+			capital = 44 # c_shimosa
+			
+			c_shimosa = { # 44
+				color={ 157 10 10 }
+				color2={ 255 255 255 }
+				
+				b_funabashi = {
+				}
+				b_ichikawa = {
+				}
+				b_matsudo = {
+				}
+				b_sakura_2 = {
+				}
+				b_kashiwa = {
+				}
+				b_yachiyo = {
+				}
+				b_narita = {
+				}
+			}
+			c_chiba = { # 45
+				color={ 145 51 51 }
+				color2={ 255 255 255 }
+				
+				b_chiba = {
+				}
+				b_ichihara = {
+				}
+				b_kisarazu = {
+				}
+				b_kimitsu = {
+				}
+				b_tateyama = {
+				}
+				b_futtsu = {
+				}
+				b_minamiboso = {
+				}
+			}
+			c_sotobo = { # 46
+				color={ 231 29 29 }
+				color2={ 255 255 255 }
+				
+				b_mobara = {
+				}
+				b_isumi = {
+				}
+				b_katsuura = {
+				}
+				b_kujukuri = {
+				}
+				b_chosei = {
+				}
+				b_ichinomiya = {
+				}
+				b_shirako = {
+				}
+			}
+		}
+		d_ibaraki = {
+			color={ 207 56 71 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 42 province_id = 43 } }
+				}
+			}
+			capital = 42 # c_mito
+			
+			c_mito = { # 42
+				color={ 197 66 66 }
+				color2={ 255 255 255 }
+				
+				b_mito = {
+				}
+				b_hitachi = {
+				}
+				b_hitachinaka = {
+				}
+				b_kasama = {
+				}
+				b_naka = {
+				}
+				b_hitachiota = {
+				}
+				b_kitaibaraki = {
+				}
+			}
+			c_tsukuba = { # 43
+				color={ 159 43 43 }
+				color2={ 255 255 255 }
+				
+				b_tsukuba = {
+				}
+				b_koga = {
+				}
+				b_tsuchiura = {
+				}
+				b_toride = {
+				}
+				b_chikusei = {
+				}
+				b_kamisu = {
+				}
+				b_ushiku = {
+				}
+			}
+		}
+		d_izu = {
+			color={ 209 140 125 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 47 province_id = 48 province_id = 49 } }
+				}
+			}
+			capital = 47 # c_izu
+			
+			c_izu = { # 47
+				color={ 219 130 130 }
+				color2={ 255 255 255 }
+				
+				b_okada = {
+				}
+				b_niijima = {
+				}
+				b_kozushima = {
+				}
+				b_toshima = {
+				}
+				b_motomura = {
+				}
+				b_senzu = {
+				}
+				b_nomashi = {
+				}
+			}
+			c_hachijo = { # 48
+				color={ 164 96 96 }
+				color2={ 255 255 255 }
+				
+				b_mitsune = {
+				}
+				b_miyake = {
+				}
+				b_mikurajima = {
+				}
+				b_aogashima = {
+				}
+				b_nakanogo = {
+				}
+				b_kashitate = {
+				}
+				b_sueyoshi = {
+				}
+			}
+			c_ogasawara = { # 49
+				color={ 234 94 94 }
+				color2={ 255 255 255 }
+				
+				b_omura = {
+				}
+				b_ogimura = {
+				}
+				b_kitamura = {
+				}
+				b_okimura = {
+				}
+				b_ioto = {
+				}
+				b_ishinomura = {
+				}
+				b_ataria = {
+				}
+			}
+		}
+		d_kanagawa = {
+			color={ 125 37 52 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 54 province_id = 55 } }
+				}
+			}
+			capital = 54 # c_hakone
+			
+			c_hakone = { # 54
+				color={ 115 47 47 }
+				color2={ 255 255 255 }
+				
+				b_sagamihara = {
+				}
+				b_fujisawa = {
+				}
+				b_hakone = {
+				}
+				b_hiratsuka = {
+				}
+				b_chigasaki = {
+				}
+				b_yamato = {
+				}
+				b_atsugi = {
+				}
+			}
+			c_sagami = { # 55
+				color={ 216 68 68 }
+				color2={ 255 255 255 }
+				
+				b_yokosuka = {
+				}
+				b_yokohama = {
+				}
+				b_kawasaki = {
+				}
+				b_kamakura = {
+				}
+				b_zushi = {
+				}
+				b_miura = {
+				}
+				b_hayama = {
+				}
+			}
+		}
+		d_saitama = {
+			color={ 231 41 56 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 50 province_id = 51 } }
+				}
+			}
+			capital = 50 # c_buko
+			
+			c_buko = { # 50
+				color={ 221 51 51 }
+				color2={ 255 255 255 }
+				
+				b_kumagaya = {
+				}
+				b_iruma = {
+				}
+				b_fukaya = {
+				}
+				b_sakado = {
+				}
+				b_higashimatsuyama = {
+				}
+				b_hanno = {
+				}
+				b_honjo = {
+				}
+			}
+			c_omiya = { # 51
+				color={ 188 27 27 }
+				color2={ 255 255 255 }
+				
+				b_urawa = {
+				}
+				b_omiya = {
+				}
+				b_kawaguchi = {
+				}
+				b_kawagoe = {
+				}
+				b_tokorozawa = {
+				}
+				b_koshigaya = {
+				}
+				b_kasukabe = {
+				}
+			}
+		}
+		d_tochigi = {
+			color={ 251 44 59 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 39 province_id = 40 province_id = 41 } }
+				}
+			}
+			capital = 39 # c_shiobara
+			
+			c_shiobara = { # 39
+				color={ 241 54 54 }
+				color2={ 255 255 255 }
+				
+				b_nasushiobara = {
+				}
+				b_kuroiso = {
+				}
+				b_nikko = {
+				}
+				b_otawara = {
+				}
+				b_yaita = {
+				}
+				b_nasu = {
+				}
+				b_shioya = {
+				}
+			}
+			c_omoi = { # 41
+				color={ 219 85 85 }
+				color2={ 255 255 255 }
+				
+				b_oyama = {
+				}
+				b_tochigi = {
+				}
+				b_ashikaga = {
+				}
+				b_sano = {
+				}
+				b_kanuma = {
+				}
+				b_mooka = {
+				}
+				b_shimotsuke = {
+				}
+			}
+			c_oya = { # 40
+				color={ 180 100 100 }
+				color2={ 255 255 255 }
+				
+				b_utsunomiya = {
+				}
+				b_sakura = {
+				}
+				b_nasukarasuyama = {
+				}
+				b_takanezawa = {
+				}
+				b_mashiko = {
+				}
+				b_nakagawa = {
+				}
+				b_haga = {
+				}
+			}
+		}
+		d_tokyo = {
+			color={ 160 47 62 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 52 province_id = 53 } }
+				}
+			}
+			capital = 52 # c_tama
+			
+			c_tama = { # 52
+				color={ 150 57 57 }
+				color2={ 255 255 255 }
+				
+				b_hachinoji = {
+				}
+				b_tachikawa = {
+				}
+				b_ome = {
+				}
+				b_fuchu = {
+				}
+				b_machida = {
+				}
+				b_chofu = {
+				}
+				b_mitaka = {
+				}
+			}
+			c_tokyo = { # 53
+				color={ 219 6 6 }
+				color2={ 255 255 255 }
+				
+				b_shinjuku = {
+				}
+				b_chuo = {
+				}
+				b_chiyoda = {
+				}
+				b_minato = {
+				}
+				b_bunkyo = {
+				}
+				b_asakusa = {
+				}
+				b_shibuya = {
+				}
+			}
+		}
+	}
+	k_kyushu = {
+		color={ 199 142 185 }
+		color2={ 255 255 255 }
+		
+		capital = 114 # c_fukuoka
+		culture = kyushuan
+		
+		d_kitakyushu = {
+			color={ 219 122 195 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 114 province_id = 115 province_id = 116 province_id = 117 } }
+				}
+			}
+			capital = 114 # c_fukuoka
+			
+			c_fukuoka = { # 114
+				color={ 229 112 200 }
+				color2={ 255 255 255 }
+				
+				b_fukuoka = {
+				}
+				b_kitakyushu = {
+				}
+				b_iizuka = {
+				}
+				b_kasuga = {
+				}
+				b_chikushino = {
+				}
+				b_onojo = {
+				}
+				b_munakata = {
+				}
+			}
+			c_beppu = { # 116
+				color={ 231 71 159 }
+				color2={ 255 255 255 }
+				
+				b_nakatsu = {
+				}
+				b_beppu = {
+				}
+				b_usa = {
+				}
+				b_hita = {
+				}
+				b_hiji = {
+				}
+				b_kitsuki = {
+				}
+				b_yufuin = {
+				}
+			}
+			c_kurume = { # 115
+				color={ 135 85 123 }
+				color2={ 255 255 255 }
+				
+				b_kurume = {
+				}
+				b_omuta = {
+				}
+				b_yanagawa = {
+				}
+				b_ogori_2 = {
+				}
+				b_chikugo = {
+				}
+				b_yame = {
+				}
+				b_okawa_2 = {
+				}
+			}
+			c_oita = { # 117
+				color={ 199 72 141 }
+				color2={ 255 255 255 }
+				
+				b_oita = {
+				}
+				b_mie = {
+				}
+				b_usuki = {
+				}
+				b_tsukumi = {
+				}
+				b_saganoseki = {
+				}
+				b_kamae = {
+				}
+				b_yayoi = {
+				}
+			}
+		}
+		d_kagoshima = {
+			color={ 135 97 148 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 129 province_id = 130 province_id = 131 province_id = 132 } }
+				}
+			}
+			capital = 129 # c_kirishima
+			
+			c_kirishima = { # 129
+				color={ 145 87 153 }
+				color2={ 255 255 255 }
+				
+				b_izumi_2 = {
+				}
+				b_kokubu = {
+				}
+				b_aira = {
+				}
+				b_hayato = {
+				}
+				b_isa = {
+				}
+				b_kushikino = {
+				}
+				b_akune = {
+				}
+			}
+			c_osumi = { # 131
+				color={ 180 126 188 }
+				color2={ 255 255 255 }
+				
+				b_kanoya = {
+				}
+				b_sueyoshi_2 = {
+				}
+				b_osaki_2 = {
+				}
+				b_tarumizu = {
+				}
+				b_koyama = {
+				}
+				b_kushira = {
+				}
+				b_osumi = {
+				}
+			}
+			c_satsuma = { # 130
+				color={ 121 44 132 }
+				color2={ 255 255 255 }
+				
+				b_kagoshima = {
+				}
+				b_ibusuki = {
+				}
+				b_ijuin = {
+				}
+				b_makurazaki = {
+				}
+				b_higashiichiki = {
+				}
+				b_kawanabe = {
+				}
+				b_chiran = {
+				}
+			}
+			c_tanegashima = { # 132
+				color={ 166 121 172 }
+				color2={ 255 255 255 }
+				
+				b_nishinoomote = {
+				}
+				b_yakushima = {
+				}
+				b_nakatane = {
+				}
+				b_minamitane = {
+				}
+				b_mishima_2 = {
+				}
+				b_mageshima = {
+				}
+				b_kuroshima = {
+				}
+			}
+		}
+		d_kumamoto = {
+			color={ 162 125 165 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 124 province_id = 125 province_id = 126 } }
+				}
+			}
+			capital = 124 # c_kumamoto
+			
+			c_kumamoto = { # 124
+				color={ 172 115 170 }
+				color2={ 255 255 255 }
+				
+				b_kumamoto = {
+				}
+				b_tamana = {
+				}
+				b_arao = {
+				}
+				b_yamaga = {
+				}
+				b_kikuchi = {
+				}
+				b_kikuyo = {
+				}
+				b_ozu_2 = {
+				}
+			}
+			c_amakusa = { # 126
+				color={ 174 102 172 }
+				color2={ 255 255 255 }
+				
+				b_hondo = {
+				}
+				b_ushibuka = {
+				}
+				b_oyano = {
+				}
+				b_itsuwa = {
+				}
+				b_matsushima = {
+				}
+				b_reihoku = {
+				}
+				b_kawaura = {
+				}
+			}
+			c_yatsushiro = { # 125
+				color={ 191 133 186 }
+				color2={ 255 255 255 }
+				
+				b_yatsushiro = {
+				}
+				b_uto = {
+				}
+				b_hitoyoshi = {
+				}
+				b_minamata = {
+				}
+				b_matsubase = {
+				}
+				b_ashikita = {
+				}
+				b_ogawa = {
+				}
+			}
+		}
+		d_miyazaki = {
+			color={ 121 39 125 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 127 province_id = 128 } }
+				}
+			}
+			capital = 127 # c_hyuga
+			
+			c_hyuga = { # 127
+				color={ 111 49 120 }
+				color2={ 255 255 255 }
+				
+				b_nobeoka = {
+				}
+				b_hyuga = {
+				}
+				b_saito = {
+				}
+				b_takanabe = {
+				}
+				b_kadogawa = {
+				}
+				b_shintomi = {
+				}
+				b_kawaminami = {
+				}
+			}
+			c_miyazaki = { # 128
+				color={ 65 14 72 }
+				color2={ 255 255 255 }
+				
+				b_miyazaki = {
+				}
+				b_miyakonojo = {
+				}
+				b_nichinan = {
+				}
+				b_kobayashi = {
+				}
+				b_sadowara = {
+				}
+				b_mimata = {
+				}
+				b_kunitomi = {
+				}
+			}
+		}
+		d_nagasaki = {
+			color={ 161 65 137 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 121 province_id = 122 province_id = 123 } }
+				}
+			}
+			capital = 121 # c_nagasaki
+			
+			c_nagasaki = { # 121
+				color={ 151 75 132 }
+				color2={ 255 255 255 }
+				
+				b_nagasaki = {
+				}
+				b_sasebo = {
+				}
+				b_omura_2 = {
+				}
+				b_nagayo = {
+				}
+				b_hirado = {
+				}
+				b_togitsu = {
+				}
+				b_saikai = {
+				}
+			}
+			c_goto = { # 122
+				color={ 187 128 172 }
+				color2={ 255 255 255 }
+				
+				b_fukue = {
+				}
+				b_arikawa = {
+				}
+				b_kitauonome = {
+				}
+				b_tomie = {
+				}
+				b_uonome = {
+				}
+				b_wakamatsu = {
+				}
+				b_kishiku = {
+				}
+			}
+			c_shimabara = { # 123
+				color={ 165 100 149 }
+				color2={ 255 255 255 }
+				
+				b_shimabara = {
+				}
+				b_isahaya = {
+				}
+				b_tarami = {
+				}
+				b_ariake = {
+				}
+				b_kunimi = {
+				}
+				b_takaki = {
+				}
+				b_arie = {
+				}
+			}
+		}
+		d_ryukyu = {
+			color={ 198 142 179 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 133 province_id = 134 province_id = 135 } }
+				}
+			}
+			capital = 133 # c_amami
+			
+			c_amami = { # 133
+				color={ 208 132 184 }
+				color2={ 255 255 255 }
+				
+				b_naze = {
+				}
+				b_tokunoshima = {
+				}
+				b_setouchi = {
+				}
+				b_kikai = {
+				}
+				b_wadomari = {
+				}
+				b_kasari = {
+				}
+				b_isen = {
+				}
+			}
+			c_miyae = { # 135
+				color={ 237 62 220 }
+				color2={ 255 255 255 }
+				
+				b_ishigaki = {
+				}
+				b_hirara = {
+				}
+				b_gusukube = {
+				}
+				b_irabu = {
+				}
+				b_taketomi = {
+				}
+				b_yonaguni = {
+				}
+				b_tarama = {
+				}
+			}
+			c_okinawa = { # 134
+				color={ 179 91 151 }
+				color2={ 255 255 255 }
+				
+				b_naha = {
+				}
+				b_okinawa = {
+				}
+				b_urasoe = {
+				}
+				b_uruma = {
+				}
+				b_ginowan = {
+				}
+				b_nago = {
+				}
+				b_tomigusuku = {
+				}
+			}
+		}
+		d_saga = {
+			color={ 169 114 155 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 118 province_id = 119 province_id = 120 } }
+				}
+			}
+			capital = 118 # c_saga
+			
+			c_saga = { # 118
+				color={ 179 104 160 }
+				color2={ 255 255 255 }
+				
+				b_saga = {
+				}
+				b_karatsu = {
+				}
+				b_tosu = {
+				}
+				b_imari = {
+				}
+				b_takeo = {
+				}
+				b_kashima = {
+				}
+				b_ogi = {
+				}
+			}
+			c_iki = { # 119
+				color={ 179 79 154 }
+				color2={ 255 255 255 }
+				
+				b_gonoura = {
+				}
+				b_takefusui = {
+				}
+				b_katsumoto = {
+				}
+				b_tagawa = {
+				}
+				b_ashibecho = {
+				}
+				b_ishida = {
+				}
+				b_shiwara = {
+				}
+			}
+			c_tsushima = { # 120
+				color={ 209 122 187 }
+				color2={ 255 255 255 }
+				
+				b_izuhara = {
+				}
+				b_mitsushima = {
+				}
+				b_kamitsushima = {
+				}
+				b_kamiagata = {
+				}
+				b_toyotama = {
+				}
+				b_itsukihara = {
+				}
+				b_mine_2 = {
+				}
+			}
+		}
+	}
+	k_shikoku = {
+		color={ 90 30 230 }
+		color2={ 255 255 255 }
+		
+		capital = 93 # c_shodo
+		culture = saigoku
+		
+		d_seto = {
+			color={ 70 50 220 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 93 province_id = 94 province_id = 95 province_id = 96 } }
+				}
+			}
+			capital = 93 # c_shodo
+			
+			c_shodo = { # 93
+				color={ 60 60 215 }
+				color2={ 255 255 255 }
+				
+				b_shozu = {
+				}
+				b_tonosho = {
+				}
+				b_shodoshima = {
+				}
+				b_teshima = {
+				}
+				b_kusakabe = {
+				}
+				b_denpo = {
+				}
+				b_choshi = {
+				}
+			}
+			c_ehime = { # 95
+				color={ 44 44 130 }
+				color2={ 255 255 255 }
+				
+				b_matsuyama = {
+				}
+				b_imabari = {
+				}
+				b_niihama = {
+				}
+				b_saijo = {
+				}
+				b_shikokuchuo = {
+				}
+				b_toyo = {
+				}
+				b_shigenobu = {
+				}
+			}
+			c_kagawa = { # 94
+				color={ 0 0 206 }
+				color2={ 255 255 255 }
+				
+				b_takamatsu = {
+				}
+				b_marugame = {
+				}
+				b_mitoyo = {
+				}
+				b_sakaide = {
+				}
+				b_onohara = {
+				}
+				b_okawa = {
+				}
+				b_zentsuji = {
+				}
+			}
+			c_nanyo = { # 96
+				color={ 85 85 219 }
+				color2={ 255 255 255 }
+				
+				b_uwajima = {
+				}
+				b_ozu = {
+				}
+				b_seiyo = {
+				}
+				b_iyo = {
+				}
+				b_yawatahama = {
+				}
+				b_masaki = {
+				}
+				b_tobe = {
+				}
+			}
+		}
+		d_kochi = {
+			color={ 88 68 157 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 97 province_id = 98 province_id = 99 } }
+				}
+			}
+			capital = 97 # c_tokushima
+			
+			c_tokushima = { # 97
+				color={ 78 78 152 }
+				color2={ 255 255 255 }
+				
+				b_tokushima = {
+				}
+				b_anan = {
+				}
+				b_naruto = {
+				}
+				b_kamojima = {
+				}
+				b_komatsushima = {
+				}
+				b_awa = {
+				}
+				b_aizumi = {
+				}
+			}
+			c_kochi = { # 98
+				color={ 62 62 126 }
+				color2={ 255 255 255 }
+				
+				b_kochi = {
+				}
+				b_nankoku = {
+				}
+				b_kami = {
+				}
+				b_tosa = {
+				}
+				b_ino = {
+				}
+				b_aki = {
+				}
+				b_muroto = {
+				}
+			}
+			c_shimanto = { # 99
+				color={ 31 31 136 }
+				color2={ 255 255 255 }
+				
+				b_shimanto = {
+				}
+				b_susaki = {
+				}
+				b_sukumo = {
+				}
+				b_kubokawa = {
+				}
+				b_tosashimizu = {
+				}
+				b_ogata = {
+				}
+				b_nakatosa = {
+				}
+			}
+		}
+	}
+	k_tohoku = {
+		color={ 195 17 0 }
+		color2={ 255 255 255 }
+		
+		capital = 20 # c_tsugaru
+		culture = togoku
+		
+		d_aomori = {
+			color={ 215 253 10 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 20 province_id = 21 province_id = 22 } }
+				}
+			}
+			capital = 20 # c_tsugaru
+			
+			c_tsugaru = { # 20
+				color={ 225 243 15 }
+				color2={ 255 255 255 }
+				
+				b_hirosaki = {
+				}
+				b_goshogawara = {
+				}
+				b_tsugaru = {
+				}
+				b_fujisaki = {
+				}
+				b_itayanagi = {
+				}
+				b_tsuruta = {
+				}
+				b_nakadomari = {
+				}
+			}
+			c_aomori = { # 21
+				color={ 230 242 93 }
+				color2={ 255 255 255 }
+				
+				b_aomori = {
+				}
+				b_towada = {
+				}
+				b_kuroishi = {
+				}
+				b_hirakawa = {
+				}
+				b_hiranai = {
+				}
+				b_owani = {
+				}
+				b_inakadate = {
+				}
+			}
+			c_shimokita = { # 22
+				color={ 207 224 8 }
+				color2={ 255 255 255 }
+				
+				b_hachinohe = {
+				}
+				b_towada_2 = {
+				}
+				b_mutsu = {
+				}
+				b_misawa = {
+				}
+				b_oirase = {
+				}
+				b_gonohe = {
+				}
+				b_shichinohe = {
+				}
+			}
+		}
+		d_dewa = {
+			color={ 186 182 14 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 23 province_id = 24 province_id = 25 province_id = 26 province_id = 27 } }
+				}
+			}
+			capital = 23 # c_ugo
+			
+			c_ugo = { # 23
+				color={ 176 192 9 }
+				color2={ 255 255 255 }
+				
+				b_odate = {
+				}
+				b_noshiro = {
+				}
+				b_katagami = {
+				}
+				b_kitaakita = {
+				}
+				b_kazuno = {
+				}
+				b_oga = {
+				}
+				b_mitane = {
+				}
+			}
+			c_akita = { # 24
+				color={ 188 198 82 }
+				color2={ 255 255 255 }
+				
+				b_akita = {
+				}
+				b_yokote = {
+				}
+				b_daisen = {
+				}
+				b_yurihonjo = {
+				}
+				b_yuzawa = {
+				}
+				b_semboku = {
+				}
+				b_nikaho = {
+				}
+			}
+			c_akumi = { # 25
+				color={ 228 246 38 }
+				color2={ 255 255 255 }
+				
+				b_sakata = {
+				}
+				b_shinjo = {
+				}
+				b_yuza = {
+				}
+				b_mogami = {
+				}
+				b_mamurogawa = {
+				}
+				b_kaneyama = {
+				}
+				b_sakegawa = {
+				}
+			}
+			c_tsuruoka = { # 26
+				color={ 217 230 53 }
+				color2={ 255 255 255 }
+				
+				b_tsuruoka = {
+				}
+				b_tendo = {
+				}
+				b_higashine = {
+				}
+				b_sagae = {
+				}
+				b_murayama = {
+				}
+				b_shonai = {
+				}
+				b_kahoku = {
+				}
+			}
+			c_yamagata = { # 27
+				color={ 232 236 45 }
+				color2={ 255 255 255 }
+				
+				b_yamagata = {
+				}
+				b_yonezawa = {
+				}
+				b_nanyo = {
+				}
+				b_kaminoyama = {
+				}
+				b_nagai = {
+				}
+				b_takahata = {
+				}
+				b_kawanishi = {
+				}
+			}
+		}
+		d_fukushima = {
+			color={ 203 223 16 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 33 province_id = 34 province_id = 35 } }
+				}
+			}
+			capital = 33 # c_aizu
+			
+			c_aizu = { # 33
+				color={ 213 213 21 }
+				color2={ 255 255 255 }
+				
+				b_aizuwakamatsu = {
+				}
+				b_kitakata = {
+				}
+				b_aizumisato = {
+				}
+				b_aizubange = {
+				}
+				b_minamiaizu = {
+				}
+				b_inawashiro = {
+				}
+				b_shimogo = {
+				}
+			}
+			c_hamadori = { # 35
+				color={ 234 255 0 }
+				color2={ 255 255 255 }
+				
+				b_iwaki = {
+				}
+				b_minamisouma = {
+				}
+				b_souma = {
+				}
+				b_namie = {
+				}
+				b_tomioka = {
+				}
+				b_oukuma = {
+				}
+				b_shinchi = {
+				}
+			}
+			c_nakadori = { # 34
+				color={ 223 224 37 }
+				color2={ 255 255 255 }
+				
+				b_koriyama = {
+				}
+				b_fukushima = {
+				}
+				b_sukagawa = {
+				}
+				b_date_2 = {
+				}
+				b_shirakawa = {
+				}
+				b_nihonmatsu = {
+				}
+				b_tamura = {
+				}
+			}
+		}
+		d_oshu = {
+			color={ 179 215 15 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 28 province_id = 29 province_id = 30 province_id = 31 province_id = 32 } }
+				}
+			}
+			capital = 28 # c_kunohe
+			
+			c_kunohe = { # 28
+				color={ 189 205 20 }
+				color2={ 255 255 255 }
+				
+				b_kuji = {
+				}
+				b_ninohe = {
+				}
+				b_hachimantai = {
+				}
+				b_hirono = {
+				}
+				b_karumai = {
+				}
+				b_iwaizumi = {
+				}
+				b_kunohe = {
+				}
+			}
+			c_iwate = { # 29
+				color={ 155 165 49 }
+				color2={ 255 255 255 }
+				
+				b_morioka = {
+				}
+				b_hanamaki = {
+				}
+				b_miyako = {
+				}
+				b_takizawa = {
+				}
+				b_tono = {
+				}
+				b_shiwa = {
+				}
+				b_yahaba = {
+				}
+			}
+			c_miyagi = { # 31
+				color={ 209 227 18 }
+				color2={ 255 255 255 }
+				
+				b_ishinomaki = {
+				}
+				b_osaki = {
+				}
+				b_tome = {
+				}
+				b_kurihara = {
+				}
+				b_tagajo = {
+				}
+				b_kesennuma = {
+				}
+				b_shiogama = {
+				}
+			}
+			c_nishiiwai = { # 30
+				color={ 173 185 50 }
+				color2={ 255 255 255 }
+				
+				b_ichinoseki = {
+				}
+				b_oshu = {
+				}
+				b_ofunato = {
+				}
+				b_kamaishi = {
+				}
+				b_rikuzentakata = {
+				}
+				b_kanegasaki = {
+				}
+				b_hiraizumi = {
+				}
+			}
+			c_sendai = { # 32
+				color={ 195 212 17 }
+				color2={ 255 255 255 }
+				
+				b_sendai = {
+				}
+				b_natori = {
+				}
+				b_iwanuma = {
+				}
+				b_shiroishi = {
+				}
+				b_kakuda = {
+				}
+				b_shibata = {
+				}
+				b_watari = {
+				}
+			}
+		}
+	}
+}
+e_the_philippines = {
+	color={ 32 34 113 }
+	color2={ 255 255 20 }
+	
+	capital = 254 # c_cavite
+	culture = tagalog
+	
+	k_katagalugan = {
+		color={ 42 24 118 }
+		color2={ 255 255 255 }
+		
+		capital = 254 # c_cavite
+		culture = tagalog
+		
+		d_katagalugan = {
+			color={ 62 4 128 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 254 province_id = 255 } }
+				}
+			}
+			capital = 254 # c_cavite
+			
+			c_cavite = { # 254
+				color={ 72 250 133 }
+				color2={ 255 255 255 }
+				
+				b_dasmarinas = {
+				}
+				b_bacoor = {
+				}
+				b_imus = {
+				}
+				b_general_trias = {
+				}
+				b_silang = {
+				}
+				b_tanza = {
+				}
+				b_general_mariano_alvarez = {
+				}
+			}
+			c_batangas = { # 255
+				color={ 9 171 65 }
+				color2={ 255 255 255 }
+				
+				b_batangas = {
+				}
+				b_lipa = {
+				}
+				b_tanauan = {
+				}
+				b_santo_tomas = {
+				}
+				b_nasugbu = {
+				}
+				b_rosario = {
+				}
+				b_san_juan = {
+				}
+			}
+		}
+		d_de_bay = {
+			color={ 69 181 109 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 257 province_id = 258 } }
+				}
+			}
+			capital = 257 # c_rizal
+			
+			c_rizal = { # 257
+				color={ 59 191 104 }
+				color2={ 255 255 255 }
+				
+				b_antipolo = {
+				}
+				b_cainta = {
+				}
+				b_taytay = {
+				}
+				b_rodriguez = {
+				}
+				b_binangonan = {
+				}
+				b_san_mateo = {
+				}
+				b_angono = {
+				}
+			}
+			c_laguna = { # 258
+				color={ 2 241 83 }
+				color2={ 255 255 255 }
+				
+				b_calamba = {
+				}
+				b_san_pedro = {
+				}
+				b_santa_rosa = {
+				}
+				b_binan = {
+				}
+				b_san_pablo = {
+				}
+				b_cabuyao = {
+				}
+				b_santa_cruz = {
+				}
+			}
+		}
+		d_manila = {
+			color={ 110 197 138 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 256 } }
+				}
+			}
+			capital = 256 # c_manila
+			
+			c_manila = { # 256
+				color={ 120 187 143 }
+				color2={ 255 255 255 }
+				
+				b_manila = {
+				}
+				b_quezon_city = {
+				}
+				b_caloocan = {
+				}
+				b_taguig = {
+				}
+				b_pasig = {
+				}
+				b_paranaque = {
+				}
+				b_valenzuela = {
+				}
+			}
+		}
+		d_quezon = {
+			color={ 166 157 39 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 262 province_id = 263 } }
+				}
+			}
+			capital = 262 # c_quezon
+			
+			c_quezon = { # 262
+				color={ 156 167 34 }
+				color2={ 255 255 255 }
+				
+				b_lopez = {
+				}
+				b_gumaca = {
+				}
+				b_calauag = {
+				}
+				b_catanauan = {
+				}
+				b_san_francisco = {
+				}
+				b_tagkawayan = {
+				}
+				b_mulanay = {
+				}
+			}
+			c_camarines_norte = { # 263
+				color={ 54 133 85 }
+				color2={ 255 255 255 }
+				
+				b_daet = {
+				}
+				b_labo = {
+				}
+				b_jose_panganiban = {
+				}
+				b_paracale = {
+				}
+				b_mercedes = {
+				}
+				b_vinzons = {
+				}
+				b_santa_elena = {
+				}
+			}
+		}
+		d_tayabas = {
+			color={ 179 216 9 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 259 province_id = 260 province_id = 261 } }
+				}
+			}
+			capital = 259 # c_tayabas
+			
+			c_tayabas = { # 259
+				color={ 189 206 14 }
+				color2={ 255 255 255 }
+				
+				b_tayabas = {
+				}
+				b_lucena = {
+				}
+				b_sariaya = {
+				}
+				b_candelaria = {
+				}
+				b_tiaong = {
+				}
+				b_pagbilao = {
+				}
+				b_infanta = {
+				}
+			}
+			c_marinduque = { # 261
+				color={ 177 209 57 }
+				color2={ 255 255 255 }
+				
+				b_santa_cruz_2 = {
+				}
+				b_boac = {
+				}
+				b_gasan = {
+				}
+				b_mogpog = {
+				}
+				b_torrijos = {
+				}
+				b_buenavista = {
+				}
+				b_maniwaya = {
+				}
+			}
+			c_polillo = { # 260
+				color={ 167 181 95 }
+				color2={ 255 255 255 }
+				
+				b_polillo = {
+				}
+				b_burdeos = {
+				}
+				b_patnanungan = {
+				}
+				b_panukulan = {
+				}
+				b_jomalig = {
+				}
+				b_balesin = {
+				}
+				b_palasan = {
+				}
+			}
+		}
+	}
+	k_davao = {
+		color={ 110 154 124 }
+		color2={ 255 255 255 }
+		
+		capital = 310 # c_davao
+		culture = dumagat
+		
+		d_davao = {
+			color={ 90 174 114 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 310 province_id = 311 province_id = 312 } }
+				}
+			}
+			capital = 310 # c_davao
+			
+			c_davao = { # 310
+				color={ 80 184 109 }
+				color2={ 255 255 255 }
+				
+				b_ptoblacion = {
+				}
+				b_tibungco = {
+				}
+				b_tigatto = {
+				}
+				b_tamugan = {
+				}
+				b_tamayong = {
+				}
+				b_talomo_river = {
+				}
+				b_tambobong = {
+				}
+			}
+			c_davao_del_norte = { # 311
+				color={ 63 146 86 }
+				color2={ 255 255 255 }
+				
+				b_tagum = {
+				}
+				b_panabo = {
+				}
+				b_santo_tomas_2 = {
+				}
+				b_samal = {
+				}
+				b_carmen_2 = {
+				}
+				b_kapalong = {
+				}
+				b_asuncion = {
+				}
+			}
+			c_davao_del_sur = { # 312
+				color={ 139 225 163 }
+				color2={ 255 255 255 }
+				
+				b_digos = {
+				}
+				b_santa_cruz_6 = {
+				}
+				b_bansalan = {
+				}
+				b_matanao = {
+				}
+				b_magsaysay_3 = {
+				}
+				b_hagonoy = {
+				}
+				b_kiblawan = {
+				}
+			}
+		}
+		d_agusan = {
+			color={ 10 76 28 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 321 province_id = 322 province_id = 323 } }
+				}
+			}
+			capital = 321 # c_san_francisco
+			
+			c_san_francisco = { # 321
+				color={ 0 86 23 }
+				color2={ 255 255 255 }
+				
+				b_san_francisco_2 = {
+				}
+				b_bislig = {
+				}
+				b_trento = {
+				}
+				b_barobo = {
+				}
+				b_veruela = {
+				}
+				b_loreto = {
+				}
+				b_hinatuan = {
+				}
+			}
+			c_bayugan = { # 322
+				color={ 20 233 78 }
+				color2={ 255 255 255 }
+				
+				b_bayugan = {
+				}
+				b_prosperidad = {
+				}
+				b_esperanza = {
+				}
+				b_san_luis_2 = {
+				}
+				b_sibagat = {
+				}
+				b_taglatawan = {
+				}
+				b_patin_ay = {
+				}
+			}
+			c_butuan = { # 323
+				color={ 38 166 87 }
+				color2={ 255 255 255 }
+				
+				b_butuan = {
+				}
+				b_buenavista_2 = {
+				}
+				b_nasipit = {
+				}
+				b_las_nieves = {
+				}
+				b_carmen_3 = {
+				}
+				b_libertad = {
+				}
+				b_doongan = {
+				}
+			}
+		}
+		d_davao_oriental = {
+			color={ 36 142 13 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 313 province_id = 314 province_id = 315 } }
+				}
+			}
+			capital = 313 # c_mati
+			
+			c_mati = { # 313
+				color={ 26 152 8 }
+				color2={ 255 255 255 }
+				
+				b_mati = {
+				}
+				b_lupon = {
+				}
+				b_governor_generoso = {
+				}
+				b_banaybanay = {
+				}
+				b_san_isidro = {
+				}
+				b_matiao = {
+				}
+				b_dahican = {
+				}
+			}
+			c_baganga = { # 314
+				color={ 3 198 56 }
+				color2={ 255 255 255 }
+				
+				b_baganga = {
+				}
+				b_manay = {
+				}
+				b_cateel = {
+				}
+				b_caraga = {
+				}
+				b_tarragona = {
+				}
+				b_boston = {
+				}
+				b_kinablangan = {
+				}
+			}
+			c_davao_de_oro = { # 315
+				color={ 61 232 107 }
+				color2={ 255 255 255 }
+				
+				b_monkayo = {
+				}
+				b_compostela = {
+				}
+				b_pantukan = {
+				}
+				b_nabunturan = {
+				}
+				b_maco = {
+				}
+				b_laak = {
+				}
+				b_maragusan = {
+				}
+			}
+		}
+		d_sarangani = {
+			color={ 90 142 244 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 316 province_id = 317 province_id = 318 province_id = 319 province_id = 320 } }
+				}
+			}
+			capital = 316 # c_general_santos
+			
+			c_general_santos = { # 316
+				color={ 100 132 249 }
+				color2={ 255 255 255 }
+				
+				b_labangal = {
+				}
+				b_lagao = {
+				}
+				b_san_isidro_2 = {
+				}
+				b_bula = {
+				}
+				b_mabuhay = {
+				}
+				b_katangawan = {
+				}
+				b_sinawal = {
+				}
+			}
+			c_davao_occidental = { # 317
+				color={ 63 246 113 }
+				color2={ 255 255 255 }
+				
+				b_malita = {
+				}
+				b_jose_abad_santos = {
+				}
+				b_santa_maria_2 = {
+				}
+				b_don_marcelino = {
+				}
+				b_sarangani = {
+				}
+				b_little_baguio = {
+				}
+				b_demoloc = {
+				}
+			}
+			c_glan = { # 318
+				color={ 36 75 216 }
+				color2={ 255 255 255 }
+				
+				b_glan = {
+				}
+				b_malungon = {
+				}
+				b_alabel = {
+				}
+				b_malapatan = {
+				}
+				b_taluya = {
+				}
+				b_malandag = {
+				}
+				b_alegria = {
+				}
+			}
+			c_kiamba = { # 319
+				color={ 41 81 225 }
+				color2={ 255 255 255 }
+				
+				b_kiamba = {
+				}
+				b_tboli = {
+				}
+				b_lake_sebu = {
+				}
+				b_maasim = {
+				}
+				b_maitum = {
+				}
+				b_laconon = {
+				}
+				b_lamdalag = {
+				}
+			}
+			c_koronadal = { # 320
+				color={ 26 73 254 }
+				color2={ 255 255 255 }
+				
+				b_koronadal = {
+				}
+				b_polomolok = {
+				}
+				b_banga_2 = {
+				}
+				b_surallah = {
+				}
+				b_tupi = {
+				}
+				b_norala = {
+				}
+				b_tantangan = {
+				}
+			}
+		}
+		d_surigao = {
+			color={ 94 9 157 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 324 province_id = 325 province_id = 326 } }
+				}
+			}
+			capital = 324 # c_surigao_del_norte
+			
+			c_surigao_del_norte = { # 324
+				color={ 104 255 162 }
+				color2={ 255 255 255 }
+				
+				b_tandag = {
+				}
+				b_san_miguel_4 = {
+				}
+				b_tago = {
+				}
+				b_cantilan = {
+				}
+				b_lianga = {
+				}
+				b_san_agustin_2 = {
+				}
+				b_cagwait = {
+				}
+			}
+			c_cabadbaran = { # 326
+				color={ 1 125 48 }
+				color2={ 255 255 255 }
+				
+				b_cabadbaran = {
+				}
+				b_jabonga = {
+				}
+				b_magallanes = {
+				}
+				b_santiago_2 = {
+				}
+				b_tubay = {
+				}
+				b_kitcharao = {
+				}
+				b_remedios_t_romualdez = {
+				}
+			}
+			c_surigao_del_sur = { # 325
+				color={ 17 209 90 }
+				color2={ 255 255 255 }
+				
+				b_surigao_city = {
+				}
+				b_mainit = {
+				}
+				b_placer_2 = {
+				}
+				b_claver = {
+				}
+				b_dapa = {
+				}
+				b_socorro = {
+				}
+				b_gigaquit = {
+				}
+			}
+		}
+	}
+	k_east_visayas = {
+		color={ 161 214 62 }
+		color2={ 255 255 255 }
+		
+		capital = 286 # c_cebu
+		culture = bisaya
+		
+		d_kabisay_an = {
+			color={ 181 194 72 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 286 province_id = 287 province_id = 288 province_id = 289 } }
+				}
+			}
+			capital = 286 # c_cebu
+			
+			c_cebu = { # 286
+				color={ 191 184 77 }
+				color2={ 255 255 255 }
+				
+				b_cebu_city = {
+				}
+				b_lapu_lapu = {
+				}
+				b_mandaue = {
+				}
+				b_talisay = {
+				}
+				b_toledo = {
+				}
+				b_danao = {
+				}
+				b_minglanilla = {
+				}
+			}
+			c_bohol = { # 287
+				color={ 228 216 32 }
+				color2={ 255 255 255 }
+				
+				b_tagbilaran = {
+				}
+				b_ubay = {
+				}
+				b_talibon = {
+				}
+				b_tubigon = {
+				}
+				b_carmen = {
+				}
+				b_inabanga = {
+				}
+				b_loon = {
+				}
+			}
+			c_negros_occidental = { # 289
+				color={ 203 192 10 }
+				color2={ 255 255 255 }
+				
+				b_bacolod = {
+				}
+				b_kabankalan = {
+				}
+				b_bago = {
+				}
+				b_cadiz = {
+				}
+				b_sagay = {
+				}
+				b_san_carlos_2 = {
+				}
+				b_silay = {
+				}
+			}
+			c_negros_oriental = { # 288
+				color={ 220 208 0 }
+				color2={ 255 255 255 }
+				
+				b_dumaguete = {
+				}
+				b_bayawan = {
+				}
+				b_guihulngan = {
+				}
+				b_tanjay = {
+				}
+				b_bais = {
+				}
+				b_mabinay = {
+				}
+				b_santa_catalina = {
+				}
+			}
+		}
+		d_bicol = {
+			color={ 91 178 122 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 295 province_id = 296 province_id = 297 province_id = 298 } }
+				}
+			}
+			capital = 295 # c_camarines_sur
+			
+			c_camarines_sur = { # 295
+				color={ 101 168 127 }
+				color2={ 255 255 255 }
+				
+				b_naga_2 = {
+				}
+				b_iriga = {
+				}
+				b_libmanan = {
+				}
+				b_pili = {
+				}
+				b_nabua = {
+				}
+				b_calabanga = {
+				}
+				b_buhi = {
+				}
+			}
+			c_albay = { # 296
+				color={ 84 194 127 }
+				color2={ 255 255 255 }
+				
+				b_legazpi = {
+				}
+				b_tabaco = {
+				}
+				b_daraga = {
+				}
+				b_ligao = {
+				}
+				b_polangui = {
+				}
+				b_guinobatan = {
+				}
+				b_libon = {
+				}
+			}
+			c_catanduanes = { # 298
+				color={ 36 228 17 }
+				color2={ 255 255 255 }
+				
+				b_virac = {
+				}
+				b_san_andres = {
+				}
+				b_caramoran = {
+				}
+				b_viga = {
+				}
+				b_bato = {
+				}
+				b_pandan = {
+				}
+				b_san_miguel_2 = {
+				}
+			}
+			c_masbate = { # 297
+				color={ 89 233 145 }
+				color2={ 255 255 255 }
+				
+				b_masbate_city = {
+				}
+				b_aroroy = {
+				}
+				b_cawayan = {
+				}
+				b_placer = {
+				}
+				b_uson = {
+				}
+				b_milagros = {
+				}
+				b_cataingan = {
+				}
+			}
+		}
+		d_leyte = {
+			color={ 10 177 76 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 293 province_id = 294 } }
+				}
+			}
+			capital = 293 # c_leyte
+			
+			c_leyte = { # 293
+				color={ 0 187 71 }
+				color2={ 255 255 255 }
+				
+				b_tacloban = {
+				}
+				b_ormoc = {
+				}
+				b_baybay = {
+				}
+				b_palo = {
+				}
+				b_abuyog = {
+				}
+				b_hilongos = {
+				}
+				b_palompon = {
+				}
+			}
+			c_southern_leyte = { # 294
+				color={ 24 210 154 }
+				color2={ 255 255 255 }
+				
+				b_maasin = {
+				}
+				b_sogod = {
+				}
+				b_hinunangan = {
+				}
+				b_bontoc_2 = {
+				}
+				b_macrohon = {
+				}
+				b_saint_bernard = {
+				}
+				b_liloan = {
+				}
+			}
+		}
+		d_samar = {
+			color={ 10 214 91 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 290 province_id = 291 province_id = 292 } }
+				}
+			}
+			capital = 290 # c_samar
+			
+			c_samar = { # 290
+				color={ 0 224 86 }
+				color2={ 255 255 255 }
+				
+				b_calbayog = {
+				}
+				b_catbalogan = {
+				}
+				b_basey = {
+				}
+				b_daram = {
+				}
+				b_santa_rita = {
+				}
+				b_gandara = {
+				}
+				b_paranas = {
+				}
+			}
+			c_eastern_samar = { # 292
+				color={ 1 174 174 }
+				color2={ 255 255 255 }
+				
+				b_borongan = {
+				}
+				b_guiuan = {
+				}
+				b_dolores_2 = {
+				}
+				b_oras = {
+				}
+				b_salcedo = {
+				}
+				b_can_avid = {
+				}
+				b_llorente = {
+				}
+			}
+			c_northern_samar = { # 291
+				color={ 14 193 161 }
+				color2={ 255 255 255 }
+				
+				b_catarman = {
+				}
+				b_laoang = {
+				}
+				b_las_navas = {
+				}
+				b_mondragon = {
+				}
+				b_palapag = {
+				}
+				b_catubig = {
+				}
+				b_pambujan = {
+				}
+			}
+		}
+	}
+	k_luzon = {
+		color={ 176 236 25 }
+		color2={ 255 255 255 }
+		
+		capital = 264 # c_benguet
+		culture = igorot
+		
+		d_ilocos = {
+			color={ 156 0 15 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 264 province_id = 265 province_id = 266 province_id = 267 province_id = 268 } }
+				}
+			}
+			capital = 264 # c_benguet
+			
+			c_benguet = { # 264
+				color={ 146 10 10 }
+				color2={ 255 255 255 }
+				
+				b_baguio = {
+				}
+				b_la_trinidad = {
+				}
+				b_itogon = {
+				}
+				b_tuba = {
+				}
+				b_buguias = {
+				}
+				b_mankayan = {
+				}
+				b_kapangan = {
+				}
+			}
+			c_abra = { # 268
+				color={ 143 58 58 }
+				color2={ 255 255 255 }
+				
+				b_bangued = {
+				}
+				b_bucay = {
+				}
+				b_la_paz = {
+				}
+				b_tayum = {
+				}
+				b_lagangilang = {
+				}
+				b_pidigan = {
+				}
+				b_dolores = {
+				}
+			}
+			c_ilocos_norte = { # 266
+				color={ 149 36 36 }
+				color2={ 255 255 255 }
+				
+				b_laoag = {
+				}
+				b_batac = {
+				}
+				b_dingras = {
+				}
+				b_san_nicolas = {
+				}
+				b_bacarra = {
+				}
+				b_vintar = {
+				}
+				b_badoc = {
+				}
+			}
+			c_ilocos_sur = { # 265
+				color={ 170 97 97 }
+				color2={ 255 255 255 }
+				
+				b_candon = {
+				}
+				b_vigan = {
+				}
+				b_narvacan = {
+				}
+				b_tagudin = {
+				}
+				b_santa_cruz_3 = {
+				}
+				b_cabugao = {
+				}
+				b_bantay = {
+				}
+			}
+			c_la_union = { # 267
+				color={ 255 168 168 }
+				color2={ 255 255 255 }
+				
+				b_san_fernando = {
+				}
+				b_bauang = {
+				}
+				b_agoo = {
+				}
+				b_rosario_2 = {
+				}
+				b_naguilian = {
+				}
+				b_aringay = {
+				}
+				b_bacnotan = {
+				}
+			}
+		}
+		d_cagayan = {
+			color={ 214 117 102 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 279 province_id = 280 province_id = 281 province_id = 282 } }
+				}
+			}
+			capital = 279 # c_cagayan
+			
+			c_cagayan = { # 279
+				color={ 224 107 107 }
+				color2={ 255 255 255 }
+				
+				b_tuguegarao_city = {
+				}
+				b_baggao = {
+				}
+				b_solana = {
+				}
+				b_tuao = {
+				}
+				b_gattaran = {
+				}
+				b_amulung = {
+				}
+				b_piat = {
+				}
+			}
+			c_apayao = { # 281
+				color={ 243 51 51 }
+				color2={ 255 255 255 }
+				
+				b_luna = {
+				}
+				b_conner = {
+				}
+				b_flora = {
+				}
+				b_kabugao = {
+				}
+				b_pudtol = {
+				}
+				b_santa_marcela = {
+				}
+				b_calanasan = {
+				}
+			}
+			c_batanes = { # 282
+				color={ 160 65 65 }
+				color2={ 255 255 255 }
+				
+				b_basco = {
+				}
+				b_aparri = {
+				}
+				b_calayan = {
+				}
+				b_itbayat = {
+				}
+				b_sabtang = {
+				}
+				b_mahatao = {
+				}
+				b_ivana = {
+				}
+			}
+			c_isabela = { # 280
+				color={ 220 16 16 }
+				color2={ 255 255 255 }
+				
+				b_ilagan = {
+				}
+				b_santiago = {
+				}
+				b_cauayan = {
+				}
+				b_echague = {
+				}
+				b_alicia = {
+				}
+				b_san_mateo_2 = {
+				}
+				b_tumauini = {
+				}
+			}
+		}
+		d_central_luzon = {
+			color={ 212 27 42 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 269 province_id = 270 province_id = 271 province_id = 272 province_id = 273 province_id = 274 province_id = 275 } }
+				}
+			}
+			capital = 269 # c_bulacan
+			
+			c_bulacan = { # 269
+				color={ 202 37 37 }
+				color2={ 255 255 255 }
+				
+				b_san_jose_del_monte = {
+				}
+				b_malolos = {
+				}
+				b_santa_maria = {
+				}
+				b_meycauayan = {
+				}
+				b_marilao = {
+				}
+				b_baliuag = {
+				}
+				b_san_miguel = {
+				}
+			}
+			c_bataan = { # 272
+				color={ 202 0 0 }
+				color2={ 255 255 255 }
+				
+				b_mariveles = {
+				}
+				b_dinalupihan = {
+				}
+				b_balanga = {
+				}
+				b_orani = {
+				}
+				b_limay = {
+				}
+				b_hermosa = {
+				}
+				b_orion = {
+				}
+			}
+			c_nueva_ecija = { # 275
+				color={ 151 19 19 }
+				color2={ 255 255 255 }
+				
+				b_cabanatuan = {
+				}
+				b_san_jose = {
+				}
+				b_talavera = {
+				}
+				b_guimba = {
+				}
+				b_gapan = {
+				}
+				b_munoz = {
+				}
+				b_san_antonio = {
+				}
+			}
+			c_pampanga = { # 271
+				color={ 113 48 48 }
+				color2={ 255 255 255 }
+				
+				b_angeles = {
+				}
+				b_san_fernando_2 = {
+				}
+				b_mabalacat = {
+				}
+				b_lubao = {
+				}
+				b_mexico = {
+				}
+				b_arayat = {
+				}
+				b_porac = {
+				}
+			}
+			c_pangasinan = { # 270
+				color={ 86 14 14 }
+				color2={ 255 255 255 }
+				
+				b_san_carlos = {
+				}
+				b_dagupan = {
+				}
+				b_urdaneta = {
+				}
+				b_malasiqui = {
+				}
+				b_bayambang = {
+				}
+				b_mangaldan = {
+				}
+				b_lingayen = {
+				}
+			}
+			c_tarlac = { # 274
+				color={ 226 130 130 }
+				color2={ 255 255 255 }
+				
+				b_tarlac_city = {
+				}
+				b_concepcion = {
+				}
+				b_capas = {
+				}
+				b_paniqui = {
+				}
+				b_gerona = {
+				}
+				b_camiling = {
+				}
+				b_bamban = {
+				}
+			}
+			c_zambales = { # 273
+				color={ 192 91 91 }
+				color2={ 255 255 255 }
+				
+				b_olongapo = {
+				}
+				b_subic = {
+				}
+				b_botolan = {
+				}
+				b_santa_cruz_4 = {
+				}
+				b_castillejos = {
+				}
+				b_iba = {
+				}
+				b_masinloc = {
+				}
+			}
+		}
+		d_cordillera = {
+			color={ 125 31 46 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 283 province_id = 284 province_id = 285 } }
+				}
+			}
+			capital = 283 # c_kalinga
+			
+			c_kalinga = { # 283
+				color={ 115 41 41 }
+				color2={ 255 255 255 }
+				
+				b_tabuk = {
+				}
+				b_pinukpuk = {
+				}
+				b_rizal = {
+				}
+				b_tinglayan = {
+				}
+				b_balbalan = {
+				}
+				b_pasil = {
+				}
+				b_lubuagan = {
+				}
+			}
+			c_ifugao = { # 285
+				color={ 118 77 77 }
+				color2={ 255 255 255 }
+				
+				b_alfonso_lista = {
+				}
+				b_lamut = {
+				}
+				b_banaue = {
+				}
+				b_aguinaldo = {
+				}
+				b_lagawe = {
+				}
+				b_mayoyao = {
+				}
+				b_kiangan = {
+				}
+			}
+			c_mt_province = { # 284
+				color={ 135 94 94 }
+				color2={ 255 255 255 }
+				
+				b_bauko = {
+				}
+				b_paracelis = {
+				}
+				b_bontoc = {
+				}
+				b_tadian = {
+				}
+				b_sagada = {
+				}
+				b_natonin = {
+				}
+				b_sadanga = {
+				}
+			}
+		}
+		d_sierra_madre = {
+			color={ 235 86 71 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 276 province_id = 277 province_id = 278 } }
+				}
+			}
+			capital = 276 # c_nueva_vizcaya
+			
+			c_nueva_vizcaya = { # 276
+				color={ 245 76 76 }
+				color2={ 255 255 255 }
+				
+				b_bayombong = {
+				}
+				b_solano = {
+				}
+				b_bambang = {
+				}
+				b_aritao = {
+				}
+				b_bagabag = {
+				}
+				b_kasibu = {
+				}
+				b_dupax_del_norte = {
+				}
+			}
+			c_aurora = { # 277
+				color={ 197 94 94 }
+				color2={ 255 255 255 }
+				
+				b_maria_aurora = {
+				}
+				b_baler = {
+				}
+				b_dipaculao = {
+				}
+				b_san_luis = {
+				}
+				b_casiguran = {
+				}
+				b_dingalan = {
+				}
+				b_dilasag = {
+				}
+			}
+			c_quirino = { # 278
+				color={ 158 18 18 }
+				color2={ 255 255 255 }
+				
+				b_diffun = {
+				}
+				b_maddela = {
+				}
+				b_cabarroguis = {
+				}
+				b_aglipay = {
+				}
+				b_nagtipunan = {
+				}
+				b_saguday = {
+				}
+				b_burgos = {
+				}
+			}
+		}
+	}
+	k_west_visayas = {
+		color={ 157 217 30 }
+		color2={ 255 255 255 }
+		
+		capital = 299 # c_iloilo
+		culture = bisaya
+		
+		d_panay = {
+			color={ 177 197 40 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 299 province_id = 300 province_id = 301 province_id = 302 } }
+				}
+			}
+			capital = 299 # c_iloilo
+			
+			c_iloilo = { # 299
+				color={ 187 187 45 }
+				color2={ 255 255 255 }
+				
+				b_iloilo_city = {
+				}
+				b_oton = {
+				}
+				b_passi = {
+				}
+				b_pototan = {
+				}
+				b_lambunao = {
+				}
+				b_dumangas = {
+				}
+				b_miagao = {
+				}
+			}
+			c_aklan = { # 300
+				color={ 247 198 43 }
+				color2={ 255 255 255 }
+				
+				b_kalibo = {
+				}
+				b_malay = {
+				}
+				b_ibajay = {
+				}
+				b_new_washington = {
+				}
+				b_banga = {
+				}
+				b_nabas = {
+				}
+				b_batan = {
+				}
+			}
+			c_antique = { # 302
+				color={ 243 243 119 }
+				color2={ 255 255 255 }
+				
+				b_san_jose_de_buenavista = {
+				}
+				b_sibalom = {
+				}
+				b_hamtic = {
+				}
+				b_culasi = {
+				}
+				b_patnongon = {
+				}
+				b_pandan_2 = {
+				}
+				b_bugasong = {
+				}
+			}
+			c_capiz = { # 301
+				color={ 218 145 45 }
+				color2={ 255 255 255 }
+				
+				b_roxas_city = {
+				}
+				b_tapaz = {
+				}
+				b_dumarao = {
+				}
+				b_pontevedra = {
+				}
+				b_panay = {
+				}
+				b_pilar = {
+				}
+				b_panitan = {
+				}
+			}
+		}
+		d_mimaropa = {
+			color={ 173 193 15 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 307 province_id = 308 province_id = 309 } }
+				}
+			}
+			capital = 307 # c_oriental_mindoro
+			
+			c_oriental_mindoro = { # 307
+				color={ 183 183 20 }
+				color2={ 255 255 255 }
+				
+				b_calapan = {
+				}
+				b_naujan = {
+				}
+				b_pinamalayan = {
+				}
+				b_bongabong = {
+				}
+				b_mansalay = {
+				}
+				b_roxas_2 = {
+				}
+				b_victoria = {
+				}
+			}
+			c_occidental_mindoro = { # 308
+				color={ 214 214 0 }
+				color2={ 255 255 255 }
+				
+				b_san_jose_3 = {
+				}
+				b_sablayan = {
+				}
+				b_mamburao = {
+				}
+				b_santa_cruz_5 = {
+				}
+				b_rizal_3 = {
+				}
+				b_magsaysay_2 = {
+				}
+				b_abra_de_ilog = {
+				}
+			}
+			c_romblon = { # 309
+				color={ 232 232 5 }
+				color2={ 255 255 255 }
+				
+				b_odiongan = {
+				}
+				b_romblon = {
+				}
+				b_san_fernando_3 = {
+				}
+				b_san_agustin = {
+				}
+				b_looc = {
+				}
+				b_cajidiocan = {
+				}
+				b_santa_fe = {
+				}
+			}
+		}
+		d_palawan = {
+			color={ 145 125 64 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 303 province_id = 304 province_id = 305 province_id = 306 } }
+				}
+			}
+			capital = 303 # c_puerto_princesa
+			
+			c_puerto_princesa = { # 303
+				color={ 135 135 59 }
+				color2={ 255 255 255 }
+				
+				b_san_pedro_2 = {
+				}
+				b_san_miguel_3 = {
+				}
+				b_santa_monica = {
+				}
+				b_san_jose_2 = {
+				}
+				b_tiniguiban = {
+				}
+				b_bancao_bancao = {
+				}
+				b_sicsican = {
+				}
+			}
+			c_coron = { # 306
+				color={ 237 237 133 }
+				color2={ 255 255 255 }
+				
+				b_coron = {
+				}
+				b_cuyo = {
+				}
+				b_busuanga = {
+				}
+				b_culion = {
+				}
+				b_linapacan = {
+				}
+				b_magsaysay = {
+				}
+				b_agutaya = {
+				}
+			}
+			c_narra = { # 305
+				color={ 247 247 96 }
+				color2={ 255 255 255 }
+				
+				b_narra = {
+				}
+				b_bataraza = {
+				}
+				b_brookes_point = {
+				}
+				b_quezon = {
+				}
+				b_rizal_2 = {
+				}
+				b_balabac = {
+				}
+				b_aborlan = {
+				}
+			}
+			c_taytay = { # 304
+				color={ 243 243 39 }
+				color2={ 255 255 255 }
+				
+				b_taytay_2 = {
+				}
+				b_roxas = {
+				}
+				b_el_nido = {
+				}
+				b_san_vicente = {
+				}
+				b_dumaran = {
+				}
+				b_araceli = {
+				}
+				b_cagayancillo = {
+				}
+			}
+		}
+	}
+	k_zamboanga = {
+		color={ 71 55 6 }
+		color2={ 255 255 255 }
+		
+		capital = 327 # c_zamboanga
+		culture = chavacano
+		
+		d_zamboanga = {
+			color={ 51 75 252 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 327 province_id = 328 province_id = 329 province_id = 330 } }
+				}
+			}
+			capital = 327 # c_zamboanga
+			
+			c_zamboanga = { # 327
+				color={ 41 85 247 }
+				color2={ 255 255 255 }
+				
+				b_talon_talon = {
+				}
+				b_tetuan = {
+				}
+				b_pasonanca = {
+				}
+				b_baliwasan = {
+				}
+				b_san_roque = {
+				}
+				b_calarian = {
+				}
+				b_tumaga = {
+				}
+			}
+			c_misamis_occidental = { # 330
+				color={ 42 71 179 }
+				color2={ 255 255 255 }
+				
+				b_ozamiz = {
+				}
+				b_oroquieta = {
+				}
+				b_tangub = {
+				}
+				b_clarin = {
+				}
+				b_plaridel = {
+				}
+				b_bonifacio = {
+				}
+				b_tudela = {
+				}
+			}
+			c_zamboanga_del_sur = { # 329
+				color={ 97 123 219 }
+				color2={ 255 255 255 }
+				
+				b_pagadian = {
+				}
+				b_molave = {
+				}
+				b_aurora = {
+				}
+				b_dumingag = {
+				}
+				b_mahayag = {
+				}
+				b_labangan = {
+				}
+				b_tukuran = {
+				}
+			}
+			c_zamboanga_sibugay = { # 328
+				color={ 17 61 224 }
+				color2={ 255 255 255 }
+				
+				b_ipil = {
+				}
+				b_titay = {
+				}
+				b_kabasalan = {
+				}
+				b_tungawan = {
+				}
+				b_siay = {
+				}
+				b_naga_3 = {
+				}
+				b_roseller_lim = {
+				}
+			}
+		}
+		d_bukidnon = {
+			color={ 109 146 192 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 337 province_id = 338 province_id = 339 province_id = 340 } }
+				}
+			}
+			capital = 337 # c_malaybalay
+			
+			c_malaybalay = { # 337
+				color={ 119 136 197 }
+				color2={ 255 255 255 }
+				
+				b_malaybalay = {
+				}
+				b_manolo_fortich = {
+				}
+				b_talakag = {
+				}
+				b_lantapan = {
+				}
+				b_impasugong = {
+				}
+				b_libona = {
+				}
+				b_baungon = {
+				}
+			}
+			c_iligan = { # 339
+				color={ 79 90 130 }
+				color2={ 255 255 255 }
+				
+				b_tubod_2 = {
+				}
+				b_dalipuga = {
+				}
+				b_suarez = {
+				}
+				b_tambacan = {
+				}
+				b_hinaplanon = {
+				}
+				b_buru_un = {
+				}
+				b_tipanoy = {
+				}
+			}
+			c_misamis_oriental = { # 340
+				color={ 143 237 179 }
+				color2={ 255 255 255 }
+				
+				b_cagayan_de_oro = {
+				}
+				b_gingoog = {
+				}
+				b_balingasag = {
+				}
+				b_tagoloan = {
+				}
+				b_opol = {
+				}
+				b_jasaan = {
+				}
+				b_el_salvador = {
+				}
+			}
+			c_valencia = { # 338
+				color={ 174 189 242 }
+				color2={ 255 255 255 }
+				
+				b_valencia = {
+				}
+				b_quezon_2 = {
+				}
+				b_maramag = {
+				}
+				b_don_carlos = {
+				}
+				b_san_fernando_4 = {
+				}
+				b_kitaotao = {
+				}
+				b_pangantucan = {
+				}
+			}
+		}
+		d_cotabato = {
+			color={ 22 33 165 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 341 province_id = 342 province_id = 343 province_id = 344 } }
+				}
+			}
+			capital = 341 # c_cotabato
+			
+			c_cotabato = { # 341
+				color={ 12 43 160 }
+				color2={ 255 255 255 }
+				
+				b_cotabato_city = {
+				}
+				b_sultan_kudarat = {
+				}
+				b_parang = {
+				}
+				b_buldon = {
+				}
+				b_matanog = {
+				}
+				b_sultan_mastura = {
+				}
+				b_barira = {
+				}
+			}
+			c_kidapawan = { # 344
+				color={ 82 117 249 }
+				color2={ 255 255 255 }
+				
+				b_midsayap = {
+				}
+				b_kidapawan = {
+				}
+				b_pikit = {
+				}
+				b_mlang = {
+				}
+				b_carmen_4 = {
+				}
+				b_kabacan = {
+				}
+				b_makilala = {
+				}
+			}
+			c_maguindanao = { # 342
+				color={ 56 87 207 }
+				color2={ 255 255 255 }
+				
+				b_datu_odin_sinsuat = {
+				}
+				b_upi = {
+				}
+				b_buluan = {
+				}
+				b_south_upi = {
+				}
+				b_shariff_aguak = {
+				}
+				b_pagalungan = {
+				}
+				b_pagagawan = {
+				}
+			}
+			c_sultan_kudarat = { # 343
+				color={ 66 89 170 }
+				color2={ 255 255 255 }
+				
+				b_tacurong = {
+				}
+				b_isulan = {
+				}
+				b_lebak = {
+				}
+				b_palimbang = {
+				}
+				b_lambayong = {
+				}
+				b_bagumbayan = {
+				}
+				b_esperanza_2 = {
+				}
+			}
+		}
+		d_lanao = {
+			color={ 10 19 139 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 335 province_id = 336 } }
+				}
+			}
+			capital = 335 # c_lanao_del_norte
+			
+			c_lanao_del_norte = { # 335
+				color={ 0 29 134 }
+				color2={ 255 255 255 }
+				
+				b_lala = {
+				}
+				b_kapatagan = {
+				}
+				b_sultan_naga_dimaporo = {
+				}
+				b_baloi = {
+				}
+				b_tubod = {
+				}
+				b_munai = {
+				}
+				b_salvador = {
+				}
+			}
+			c_lanao_del_sur = { # 336
+				color={ 135 155 228 }
+				color2={ 255 255 255 }
+				
+				b_marawi = {
+				}
+				b_wao = {
+				}
+				b_malabang = {
+				}
+				b_lumba_bayabao = {
+				}
+				b_marantao = {
+				}
+				b_balindong = {
+				}
+				b_masiu = {
+				}
+			}
+		}
+		d_sulu = {
+			color={ 99 134 175 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 345 province_id = 346 province_id = 347 } }
+				}
+			}
+			capital = 345 # c_sulu
+			
+			c_sulu = { # 345
+				color={ 109 124 180 }
+				color2={ 255 255 255 }
+				
+				b_jolo = {
+				}
+				b_talipao = {
+				}
+				b_indanan = {
+				}
+				b_siasi = {
+				}
+				b_parang_2 = {
+				}
+				b_patikul = {
+				}
+				b_old_panamao = {
+				}
+			}
+			c_basilan = { # 346
+				color={ 54 72 135 }
+				color2={ 255 255 255 }
+				
+				b_isabela = {
+				}
+				b_lamitan = {
+				}
+				b_sumisip = {
+				}
+				b_maluso = {
+				}
+				b_lantawan = {
+				}
+				b_al_barka = {
+				}
+				b_tuburan = {
+				}
+			}
+			c_tawi_tawi = { # 347
+				color={ 145 169 255 }
+				color2={ 255 255 255 }
+				
+				b_bongao = {
+				}
+				b_languyan = {
+				}
+				b_panglima_sugala = {
+				}
+				b_simunul = {
+				}
+				b_sitangkai = {
+				}
+				b_sapa_sapa = {
+				}
+				b_sibutu = {
+				}
+			}
+		}
+		d_zamboanga_del_norte = {
+			color={ 96 84 246 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 331 province_id = 332 province_id = 333 province_id = 334 } }
+				}
+			}
+			capital = 331 # c_dipolog
+			
+			c_dipolog = { # 331
+				color={ 106 74 251 }
+				color2={ 255 255 255 }
+				
+				b_dipolog = {
+				}
+				b_dapitan = {
+				}
+				b_katipunan = {
+				}
+				b_president_manuel_a_roxas = {
+				}
+				b_polanco = {
+				}
+				b_manukan = {
+				}
+				b_sergio_osmena_sr_ = {
+				}
+			}
+			c_labason = { # 333
+				color={ 105 86 192 }
+				color2={ 255 255 255 }
+				
+				b_labason = {
+				}
+				b_liloy = {
+				}
+				b_gutalac = {
+				}
+				b_tampisilan = {
+				}
+				b_kalawit = {
+				}
+				b_baliguian = {
+				}
+				b_osukan = {
+				}
+			}
+			c_sindangan = { # 332
+				color={ 61 22 236 }
+				color2={ 255 255 255 }
+				
+				b_sindangan = {
+				}
+				b_siayan = {
+				}
+				b_salug = {
+				}
+				b_bacungan = {
+				}
+				b_godod = {
+				}
+				b_mandi = {
+				}
+				b_guibo = {
+				}
+			}
+			c_siocon = { # 334
+				color={ 115 143 249 }
+				color2={ 255 255 255 }
+				
+				b_siocon = {
+				}
+				b_sibuco = {
+				}
+				b_sirawai = {
+				}
+				b_bucana = {
+				}
+				b_jose_p_brillantes_sr_ = {
+				}
+				b_cawit_cawit = {
+				}
+				b_dona_cecilia = {
+				}
+			}
+		}
+	}
+}
+e_viet_nam = {
+	color={ 254 216 20 }
+	color2={ 255 255 20 }
+	
+	capital = 136 # c_ha_noi
+	culture = tonkinese
+	
+	k_thang_long = {
+		color={ 244 226 15 }
+		color2={ 255 255 255 }
+		
+		capital = 136 # c_ha_noi
+		culture = tonkinese
+		
+		d_ha_noi = {
+			color={ 224 246 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 136 province_id = 137 province_id = 138 province_id = 139 } }
+				}
+			}
+			capital = 136 # c_ha_noi
+			
+			c_ha_noi = { # 136
+				color={ 214 0 0 }
+				color2={ 255 255 255 }
+				
+				b_ha_noi = {
+				}
+				b_dhong_dha = {
+				}
+				b_hoang_mai = {
+				}
+				b_tu_liem = {
+				}
+				b_ha_dhong = {
+				}
+				b_hai_ba_trung = {
+				}
+				b_long_bien = {
+				}
+			}
+			c_bac_ninh = { # 138
+				color={ 225 51 25 }
+				color2={ 255 255 255 }
+				
+				b_bac_ninh = {
+				}
+				b_tu_son = {
+				}
+				b_pho_moi = {
+				}
+				b_cho = {
+				}
+				b_ho = {
+				}
+				b_lim = {
+				}
+				b_thua = {
+				}
+			}
+			c_hung_yen = { # 139
+				color={ 255 17 39 }
+				color2={ 255 255 255 }
+				
+				b_hung_yen = {
+				}
+				b_my_hao = {
+				}
+				b_khoai_chau = {
+				}
+				b_luong_bang = {
+				}
+				b_an_thi = {
+				}
+				b_yen_my = {
+				}
+				b_vuong = {
+				}
+			}
+			c_vinh_phuc = { # 137
+				color={ 197 0 0 }
+				color2={ 255 255 255 }
+				
+				b_vinh_yen = {
+				}
+				b_phuc_yen = {
+				}
+				b_vinh_tuong = {
+				}
+				b_tho_tang = {
+				}
+				b_huong_canh = {
+				}
+				b_lap_thach = {
+				}
+				b_hop_hoa = {
+				}
+			}
+		}
+		d_ha_giang = {
+			color={ 245 192 251 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 149 province_id = 150 province_id = 151 } }
+				}
+			}
+			capital = 149 # c_ha_giang
+			
+			c_ha_giang = { # 149
+				color={ 255 182 0 }
+				color2={ 255 255 255 }
+				
+				b_ha_giang = {
+				}
+				b_vinh_tuy = {
+				}
+				b_viet_quang = {
+				}
+				b_vinh_quang = {
+				}
+				b_vi_xuyen = {
+				}
+				b_yen_minh = {
+				}
+				b_yen_binh = {
+				}
+			}
+			c_bac_kan = { # 151
+				color={ 255 121 0 }
+				color2={ 255 255 255 }
+				
+				b_bac_kan = {
+				}
+				b_cho_ra = {
+				}
+				b_bang_lung = {
+				}
+				b_yen_lac = {
+				}
+				b_cho_moi = {
+				}
+				b_phu_thong = {
+				}
+				b_ba_be = {
+				}
+			}
+			c_cao_bang = { # 150
+				color={ 255 138 0 }
+				color2={ 255 255 255 }
+				
+				b_cao_bang = {
+				}
+				b_bao_lac = {
+				}
+				b_nguyen_binh = {
+				}
+				b_quang_uyen = {
+				}
+				b_trung_khanh = {
+				}
+				b_xuan_hoa = {
+				}
+				b_mong_an = {
+				}
+			}
+		}
+		d_ha_long = {
+			color={ 237 35 29 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 146 province_id = 147 province_id = 148 } }
+				}
+			}
+			capital = 146 # c_quang_ninh
+			
+			c_quang_ninh = { # 146
+				color={ 227 45 24 }
+				color2={ 255 255 255 }
+				
+				b_ha_long = {
+				}
+				b_mong_cai = {
+				}
+				b_cam_pha = {
+				}
+				b_uong_bi = {
+				}
+				b_quang_yen = {
+				}
+				b_dhong_trieu = {
+				}
+				b_quang_ha = {
+				}
+			}
+			c_bac_giang = { # 148
+				color={ 206 53 0 }
+				color2={ 255 255 255 }
+				
+				b_bac_giang = {
+				}
+				b_thang = {
+				}
+				b_dhoi_ngo = {
+				}
+				b_chu = {
+				}
+				b_bich_dhong = {
+				}
+				b_cao_thuong = {
+				}
+				b_kep = {
+				}
+			}
+			c_lang_son = { # 147
+				color={ 255 75 0 }
+				color2={ 255 255 255 }
+				
+				b_lang_son = {
+				}
+				b_huu_lung = {
+				}
+				b_loc_binh = {
+				}
+				b_cao_loc = {
+				}
+				b_dhong_mo = {
+				}
+				b_bac_son = {
+				}
+				b_binh_gia = {
+				}
+			}
+		}
+		d_hai_phong = {
+			color={ 233 52 48 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 140 province_id = 141 province_id = 142 } }
+				}
+			}
+			capital = 140 # c_hai_phong
+			
+			c_hai_phong = { # 140
+				color={ 223 62 43 }
+				color2={ 255 255 255 }
+				
+				b_hai_phong = {
+				}
+				b_ngo_quyen = {
+				}
+				b_le_chan = {
+				}
+				b_hai_an = {
+				}
+				b_hong_bang = {
+				}
+				b_kien_an = {
+				}
+				b_duong_kinh = {
+				}
+			}
+			c_hai_duong = { # 141
+				color={ 209 17 24 }
+				color2={ 255 255 255 }
+				
+				b_hai_duong = {
+				}
+				b_chi_linh = {
+				}
+				b_tu_ky = {
+				}
+				b_thanh_ha = {
+				}
+				b_an_luu = {
+				}
+				b_thanh_mien = {
+				}
+				b_dhu = {
+				}
+			}
+			c_thai_binh = { # 142
+				color={ 165 0 0 }
+				color2={ 255 255 255 }
+				
+				b_thai_binh = {
+				}
+				b_diem_dhien = {
+				}
+				b_dhong_hung = {
+				}
+				b_hung_ha = {
+				}
+				b_quynh_coi = {
+				}
+				b_thanh_ne = {
+				}
+				b_vu_thu = {
+				}
+			}
+		}
+		d_nam_dhinh = {
+			color={ 234 50 37 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 143 province_id = 144 province_id = 145 } }
+				}
+			}
+			capital = 143 # c_nam_dhinh
+			
+			c_nam_dhinh = { # 143
+				color={ 224 60 32 }
+				color2={ 255 255 255 }
+				
+				b_nam_dhinh = {
+				}
+				b_yen_dhinh = {
+				}
+				b_lam = {
+				}
+				b_ngo_dhong = {
+				}
+				b_nam_giang = {
+				}
+				b_lieu_dhe = {
+				}
+				b_co_le = {
+				}
+			}
+			c_ha_nam = { # 144
+				color={ 255 0 0 }
+				color2={ 255 255 255 }
+				
+				b_phu_ly = {
+				}
+				b_duy_tien = {
+				}
+				b_hoa_mac = {
+				}
+				b_vinh_tru = {
+				}
+				b_binh_my = {
+				}
+				b_tan_thanh = {
+				}
+				b_que = {
+				}
+			}
+			c_ninh_binh = { # 145
+				color={ 234 41 18 }
+				color2={ 255 255 255 }
+				
+				b_ninh_binh = {
+				}
+				b_tam_dhiep = {
+				}
+				b_phat_diem = {
+				}
+				b_nho_quan = {
+				}
+				b_yen_ninh = {
+				}
+				b_yen_thinh = {
+				}
+				b_me = {
+				}
+			}
+		}
+		d_phu_tho = {
+			color={ 245 165 251 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 152 province_id = 153 province_id = 154 } }
+				}
+			}
+			capital = 152 # c_phu_tho
+			
+			c_phu_tho = { # 152
+				color={ 255 155 0 }
+				color2={ 255 255 255 }
+				
+				b_viet_tri = {
+				}
+				b_phu_tho = {
+				}
+				b_thanh_son = {
+				}
+				b_thanh_ba = {
+				}
+				b_phong_chau = {
+				}
+				b_ha_hoa = {
+				}
+				b_thanh_thuy = {
+				}
+			}
+			c_thai_nguyen = { # 154
+				color={ 255 56 0 }
+				color2={ 255 255 255 }
+				
+				b_thai_nguyen = {
+				}
+				b_song_cong = {
+				}
+				b_chua_hang = {
+				}
+				b_quan_chu = {
+				}
+				b_huong_son = {
+				}
+				b_ba_hang = {
+				}
+				b_dhu_2 = {
+				}
+			}
+			c_tuyen_quang = { # 153
+				color={ 255 192 0 }
+				color2={ 255 255 255 }
+				
+				b_tuyen_quang = {
+				}
+				b_vinh_loc = {
+				}
+				b_tan_yen = {
+				}
+				b_tan_binh = {
+				}
+				b_dhoi_binh = {
+				}
+				b_son_duong = {
+				}
+				b_na_hang = {
+				}
+			}
+		}
+		d_son_la = {
+			color={ 243 226 251 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 155 province_id = 156 province_id = 157 } }
+				}
+			}
+			capital = 155 # c_son_la
+			
+			c_son_la = { # 155
+				color={ 253 216 0 }
+				color2={ 255 255 255 }
+				
+				b_son_la = {
+				}
+				b_bac_yen = {
+				}
+				b_phu_yen = {
+				}
+				b_hat_lot = {
+				}
+				b_moc_chau = {
+				}
+				b_it_ong = {
+				}
+				b_quynh_nhai = {
+				}
+			}
+			c_dhien_bien = { # 157
+				color={ 255 255 0 }
+				color2={ 255 255 255 }
+				
+				b_dhien_bien_phu = {
+				}
+				b_muong_lay = {
+				}
+				b_muong_than = {
+				}
+				b_muong_ang = {
+				}
+				b_muong_cha = {
+				}
+				b_muong_nhe = {
+				}
+				b_na_hy = {
+				}
+			}
+			c_hoa_binh = { # 156
+				color={ 240 235 92 }
+				color2={ 255 255 255 }
+				
+				b_hoa_binh = {
+				}
+				b_bo = {
+				}
+				b_vu_ban = {
+				}
+				b_luong_son = {
+				}
+				b_mai_chau = {
+				}
+				b_hang_tram = {
+				}
+				b_muong_khen = {
+				}
+			}
+		}
+		d_yen_bai = {
+			color={ 240 241 90 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 158 province_id = 159 province_id = 160 } }
+				}
+			}
+			capital = 158 # c_yen_bai
+			
+			c_yen_bai = { # 158
+				color={ 250 231 95 }
+				color2={ 255 255 255 }
+				
+				b_yen_bai = {
+				}
+				b_nghia_lo = {
+				}
+				b_yen_the = {
+				}
+				b_tran_phu = {
+				}
+				b_co_phuc = {
+				}
+				b_thac_ba = {
+				}
+				b_mau_a = {
+				}
+			}
+			c_lai_chau = { # 159
+				color={ 220 231 58 }
+				color2={ 255 255 255 }
+				
+				b_lai_chau = {
+				}
+				b_muong_te = {
+				}
+				b_nam_nhun = {
+				}
+				b_phong_tho = {
+				}
+				b_sin_ho = {
+				}
+				b_tam_dhuong = {
+				}
+				b_than_uyen = {
+				}
+			}
+			c_lao_cai = { # 160
+				color={ 250 231 0 }
+				color2={ 255 255 255 }
+				
+				b_lao_cai = {
+				}
+				b_bac_ha = {
+				}
+				b_sa_pa = {
+				}
+				b_pho_lu = {
+				}
+				b_pho_rang = {
+				}
+				b_bat_xat = {
+				}
+				b_muong_khuong = {
+				}
+			}
+		}
+	}
+	k_gia_dhinh = {
+		color={ 149 226 185 }
+		color2={ 255 255 255 }
+		
+		capital = 180 # c_sai_gon
+		culture = cochinchinese
+		
+		d_sai_gon = {
+			color={ 129 246 175 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 180 province_id = 181 province_id = 182 } }
+				}
+			}
+			capital = 180 # c_sai_gon
+			
+			c_sai_gon = { # 180
+				color={ 119 0 170 }
+				color2={ 255 255 255 }
+				
+				b_sai_gon = {
+				}
+				b_go_vap = {
+				}
+				b_binh_thanh = {
+				}
+				b_binh_tan = {
+				}
+				b_tan_phu = {
+				}
+				b_thu_dhuc = {
+				}
+				b_binh_chanh = {
+				}
+			}
+			c_dhong_nai = { # 181
+				color={ 182 0 236 }
+				color2={ 255 255 255 }
+				
+				b_bien_hoa = {
+				}
+				b_long_khanh = {
+				}
+				b_long_thanh = {
+				}
+				b_phu_hoi = {
+				}
+				b_gia_ray = {
+				}
+				b_tan_phu_2 = {
+				}
+				b_vinh_an = {
+				}
+			}
+			c_phuoc_tuy = { # 182
+				color={ 141 0 236 }
+				color2={ 255 255 255 }
+				
+				b_ba_ria = {
+				}
+				b_vung_tau = {
+				}
+				b_phu_my_2 = {
+				}
+				b_ngai_giao = {
+				}
+				b_phuoc_buu = {
+				}
+				b_long_dhien = {
+				}
+				b_dhat_dho = {
+				}
+			}
+		}
+		d_ben_tre = {
+			color={ 213 10 194 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 189 province_id = 190 province_id = 191 province_id = 192 } }
+				}
+			}
+			capital = 189 # c_ben_tre
+			
+			c_ben_tre = { # 189
+				color={ 223 0 199 }
+				color2={ 255 255 255 }
+				
+				b_ben_tre = {
+				}
+				b_thanh_phu = {
+				}
+				b_giong_trom = {
+				}
+				b_ba_tri = {
+				}
+				b_cho_lach = {
+				}
+				b_chau_thanh = {
+				}
+				b_binh_dhai = {
+				}
+			}
+			c_soc_trang = { # 190
+				color={ 255 54 117 }
+				color2={ 255 255 255 }
+				
+				b_soc_trang = {
+				}
+				b_vinh_chau = {
+				}
+				b_nga_nam = {
+				}
+				b_my_xuyen = {
+				}
+				b_huynh_huu_nghia = {
+				}
+				b_long_phu = {
+				}
+				b_ke_sach = {
+				}
+			}
+			c_tra_vinh = { # 192
+				color={ 255 0 148 }
+				color2={ 255 255 255 }
+				
+				b_tra_vinh = {
+				}
+				b_duyen_hai = {
+				}
+				b_cang_long = {
+				}
+				b_tra_cu = {
+				}
+				b_chau_thanh_2 = {
+				}
+				b_cau_ke = {
+				}
+				b_tieu_can = {
+				}
+			}
+			c_vinh_long = { # 191
+				color={ 223 0 255 }
+				color2={ 255 255 255 }
+				
+				b_vinh_long = {
+				}
+				b_binh_minh = {
+				}
+				b_vung_liem = {
+				}
+				b_tam_binh = {
+				}
+				b_long_ho = {
+				}
+				b_tra_on = {
+				}
+				b_cai_nhum = {
+				}
+			}
+		}
+		d_can_tho = {
+			color={ 245 10 250 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 193 province_id = 194 province_id = 195 province_id = 196 } }
+				}
+			}
+			capital = 193 # c_can_tho
+			
+			c_can_tho = { # 193
+				color={ 255 0 255 }
+				color2={ 255 255 255 }
+				
+				b_can_tho = {
+				}
+				b_vinh_thanh = {
+				}
+				b_co_dho = {
+				}
+				b_phong_dhien_2 = {
+				}
+				b_thoi_lai = {
+				}
+				b_thot_not = {
+				}
+				b_binh_thuy = {
+				}
+			}
+			c_an_giang = { # 194
+				color={ 223 61 177 }
+				color2={ 255 255 255 }
+				
+				b_long_xuyen = {
+				}
+				b_chau_dhoc = {
+				}
+				b_tan_chau_2 = {
+				}
+				b_cho_moi_2 = {
+				}
+				b_cai_dau = {
+				}
+				b_phu_my_3 = {
+				}
+				b_an_phu = {
+				}
+			}
+			c_hau_giang = { # 195
+				color={ 255 54 216 }
+				color2={ 255 255 255 }
+				
+				b_vi_thanh = {
+				}
+				b_nga_bay = {
+				}
+				b_long_my = {
+				}
+				b_phung_hiep = {
+				}
+				b_vi_thuy = {
+				}
+				b_vinh_vien = {
+				}
+				b_dhong_phuoc = {
+				}
+			}
+			c_sa_dhec = { # 196
+				color={ 240 61 226 }
+				color2={ 255 255 255 }
+				
+				b_sa_dhec = {
+				}
+				b_lap_vo = {
+				}
+				b_lai_vung = {
+				}
+				b_cai_tau_ha = {
+				}
+				b_tan_loc = {
+				}
+				b_an_hoa = {
+				}
+				b_tan_an_2 = {
+				}
+			}
+		}
+		d_dhong_thap = {
+			color={ 230 71 109 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 186 province_id = 187 province_id = 188 } }
+				}
+			}
+			capital = 186 # c_dhong_thap
+			
+			c_dhong_thap = { # 186
+				color={ 240 61 114 }
+				color2={ 255 255 255 }
+				
+				b_cao_lanh = {
+				}
+				b_hong_ngu = {
+				}
+				b_thuong_thoi_tien = {
+				}
+				b_tram_chim = {
+				}
+				b_phong_my = {
+				}
+				b_my_tay = {
+				}
+				b_le_an = {
+				}
+			}
+			c_long_an = { # 187
+				color={ 209 28 138 }
+				color2={ 255 255 255 }
+				
+				b_tan_an = {
+				}
+				b_kien_tuong = {
+				}
+				b_can_dhuoc = {
+				}
+				b_hau_nghia = {
+				}
+				b_thu_thua = {
+				}
+				b_ben_luc = {
+				}
+				b_can_giuoc = {
+				}
+			}
+			c_tien_giang = { # 188
+				color={ 240 61 197 }
+				color2={ 255 255 255 }
+				
+				b_my_tho = {
+				}
+				b_go_cong = {
+				}
+				b_tan_hiep = {
+				}
+				b_cai_lay = {
+				}
+				b_cai_be = {
+				}
+				b_tan_hoa = {
+				}
+				b_vinh_binh = {
+				}
+			}
+		}
+		d_ha_tien = {
+			color={ 218 38 187 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 197 province_id = 198 province_id = 199 } }
+				}
+			}
+			capital = 197 # c_kien_giang
+			
+			c_kien_giang = { # 197
+				color={ 228 28 192 }
+				color2={ 255 255 255 }
+				
+				b_rach_gia = {
+				}
+				b_ha_tien = {
+				}
+				b_giong_rieng = {
+				}
+				b_minh_luong = {
+				}
+				b_thu_muoi_mot = {
+				}
+				b_hon_dhat = {
+				}
+				b_tan_hiep_2 = {
+				}
+			}
+			c_bac_lieu = { # 199
+				color={ 255 54 151 }
+				color2={ 255 255 255 }
+				
+				b_bac_lieu = {
+				}
+				b_gia_rai = {
+				}
+				b_ganh_hao = {
+				}
+				b_chau_hung = {
+				}
+				b_ngan_dua = {
+				}
+				b_phuoc_long_2 = {
+				}
+				b_hoa_binh_2 = {
+				}
+			}
+			c_ca_mau = { # 198
+				color={ 231 0 129 }
+				color2={ 255 255 255 }
+				
+				b_ca_mau = {
+				}
+				b_tran_van_thoi = {
+				}
+				b_dham_doi = {
+				}
+				b_thoi_binh = {
+				}
+				b_cai_nuoc = {
+				}
+				b_phu_tan = {
+				}
+				b_nam_can = {
+				}
+			}
+		}
+		d_tay_ninh = {
+			color={ 129 246 207 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 183 province_id = 184 province_id = 185 } }
+				}
+			}
+			capital = 183 # c_tay_ninh
+			
+			c_tay_ninh = { # 183
+				color={ 119 0 202 }
+				color2={ 255 255 255 }
+				
+				b_tay_ninh = {
+				}
+				b_trang_bang = {
+				}
+				b_hoa_thanh = {
+				}
+				b_go_dau = {
+				}
+				b_duong_minh_chau = {
+				}
+				b_tan_chau = {
+				}
+				b_tan_bien = {
+				}
+			}
+			c_binh_duong = { # 185
+				color={ 153 0 177 }
+				color2={ 255 255 255 }
+				
+				b_thu_dau_mot = {
+				}
+				b_thuan_an = {
+				}
+				b_di_an = {
+				}
+				b_ben_cat = {
+				}
+				b_tan_uyen = {
+				}
+				b_dau_tieng = {
+				}
+				b_lai_uyen = {
+				}
+			}
+			c_binh_phuoc = { # 184
+				color={ 153 0 223 }
+				color2={ 255 255 255 }
+				
+				b_dhong_xoai = {
+				}
+				b_binh_long = {
+				}
+				b_phuoc_long = {
+				}
+				b_dhuc_phong = {
+				}
+				b_loc_ninh = {
+				}
+				b_tan_phu_3 = {
+				}
+				b_thanh_binh = {
+				}
+			}
+		}
+	}
+	k_thuan_hoa = {
+		color={ 81 181 129 }
+		color2={ 255 255 255 }
+		
+		capital = 161 # c_hue
+		culture = annamese
+		
+		d_thua_thien = {
+			color={ 61 201 119 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 161 province_id = 162 province_id = 163 } }
+				}
+			}
+			capital = 161 # c_hue
+			
+			c_hue = { # 161
+				color={ 51 211 114 }
+				color2={ 255 255 255 }
+				
+				b_hue = {
+				}
+				b_huong_thuy = {
+				}
+				b_huong_tra = {
+				}
+				b_phu_da = {
+				}
+				b_phu_loc = {
+				}
+				b_phong_dhien = {
+				}
+				b_sia = {
+				}
+			}
+			c_quang_binh = { # 162
+				color={ 135 179 130 }
+				color2={ 255 255 255 }
+				
+				b_dhong_hoi = {
+				}
+				b_ba_dhon = {
+				}
+				b_hoan_lao = {
+				}
+				b_kien_giang = {
+				}
+				b_quang_ninh = {
+				}
+				b_dhong_le = {
+				}
+				b_quy_dhat = {
+				}
+			}
+			c_quang_tri = { # 163
+				color={ 51 192 78 }
+				color2={ 255 255 255 }
+				
+				b_dhong_ha = {
+				}
+				b_quang_tri = {
+				}
+				b_ai_tu = {
+				}
+				b_hai_lang = {
+				}
+				b_ho_xa = {
+				}
+				b_gio_linh = {
+				}
+				b_khe_sanh = {
+				}
+			}
+		}
+		d_cua_han = {
+			color={ 41 9 250 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 167 province_id = 168 province_id = 169 province_id = 170 } }
+				}
+			}
+			capital = 167 # c_dha_nang
+			
+			c_dha_nang = { # 167
+				color={ 51 255 255 }
+				color2={ 255 255 255 }
+				
+				b_dha_nang = {
+				}
+				b_thanh_khe = {
+				}
+				b_hai_chau = {
+				}
+				b_hoa_vang = {
+				}
+				b_son_tra = {
+				}
+				b_lien_chieu = {
+				}
+				b_cam_le = {
+				}
+			}
+			c_binh_dhinh = { # 170
+				color={ 51 219 216 }
+				color2={ 255 255 255 }
+				
+				b_quy_nhon = {
+				}
+				b_binh_dhinh = {
+				}
+				b_bong_son = {
+				}
+				b_tuy_phuoc = {
+				}
+				b_phu_my = {
+				}
+				b_ngo_may = {
+				}
+				b_phu_phong = {
+				}
+			}
+			c_quang_nam = { # 168
+				color={ 51 226 197 }
+				color2={ 255 255 255 }
+				
+				b_tam_ky = {
+				}
+				b_hoi_an = {
+				}
+				b_dhien_ban = {
+				}
+				b_ha_lam = {
+				}
+				b_ai_nghia = {
+				}
+				b_dhong_phu = {
+				}
+				b_nam_phuoc = {
+				}
+			}
+			c_quang_ngai = { # 169
+				color={ 0 228 255 }
+				color2={ 255 255 255 }
+				
+				b_quang_ngai = {
+				}
+				b_dhuc_pho = {
+				}
+				b_truong_quang_trong = {
+				}
+				b_la_ha = {
+				}
+				b_chau_o = {
+				}
+				b_mo_dhuc = {
+				}
+				b_cho_chua = {
+				}
+			}
+		}
+		d_dhak_lak = {
+			color={ 10 97 4 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 177 province_id = 178 province_id = 179 } }
+				}
+			}
+			capital = 177 # c_dhak_lak
+			
+			c_dhak_lak = { # 177
+				color={ 0 107 255 }
+				color2={ 255 255 255 }
+				
+				b_buon_ma_thuot = {
+				}
+				b_buon_ho = {
+				}
+				b_phuoc_an = {
+				}
+				b_buon_trap = {
+				}
+				b_quang_phu = {
+				}
+				b_ea_dhrang = {
+				}
+				b_ea_wer = {
+				}
+			}
+			c_dhak_nong = { # 178
+				color={ 32 66 250 }
+				color2={ 255 255 255 }
+				
+				b_gia_nghia = {
+				}
+				b_dhak_mil = {
+				}
+				b_kien_dhuc = {
+				}
+				b_ea_tling = {
+				}
+				b_dhak_mam = {
+				}
+				b_dhak_song = {
+				}
+				b_dhak_ru = {
+				}
+			}
+			c_lam_dhong = { # 179
+				color={ 32 100 255 }
+				color2={ 255 255 255 }
+				
+				b_dha_lat = {
+				}
+				b_bao_loc = {
+				}
+				b_thanh_my = {
+				}
+				b_lien_nghia = {
+				}
+				b_di_linh = {
+				}
+				b_dhinh_van = {
+				}
+				b_ma_dha_guoi = {
+				}
+			}
+		}
+		d_gia_lai = {
+			color={ 10 58 4 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 175 province_id = 176 } }
+				}
+			}
+			capital = 175 # c_gia_lai
+			
+			c_gia_lai = { # 175
+				color={ 0 68 255 }
+				color2={ 255 255 255 }
+				
+				b_pleiku = {
+				}
+				b_an_khe = {
+				}
+				b_ayun_pa = {
+				}
+				b_chu_se = {
+				}
+				b_dhak_dhoa = {
+				}
+				b_chu_prong = {
+				}
+				b_phu_tuc = {
+				}
+			}
+			c_kon_tum = { # 176
+				color={ 0 97 255 }
+				color2={ 255 255 255 }
+				
+				b_kon_tum = {
+				}
+				b_dhak_ha = {
+				}
+				b_sa_thay = {
+				}
+				b_mang_dhen = {
+				}
+				b_dhak_glei = {
+				}
+				b_plei_kan = {
+				}
+				b_dhak_rve = {
+				}
+			}
+		}
+		d_nghe_tinh = {
+			color={ 10 175 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 164 province_id = 165 province_id = 166 } }
+				}
+			}
+			capital = 164 # c_thanh_hoa
+			
+			c_thanh_hoa = { # 164
+				color={ 0 185 0 }
+				color2={ 255 255 255 }
+				
+				b_thanh_hoa = {
+				}
+				b_sam_son = {
+				}
+				b_bim_son = {
+				}
+				b_but_son = {
+				}
+				b_tinh_gia = {
+				}
+				b_nong_cong = {
+				}
+				b_quan_lao = {
+				}
+			}
+			c_ha_tinh = { # 166
+				color={ 64 105 61 }
+				color2={ 255 255 255 }
+				
+				b_ha_tinh = {
+				}
+				b_hong_linh = {
+				}
+				b_nghen = {
+				}
+				b_ky_anh = {
+				}
+				b_thach_ha = {
+				}
+				b_cam_xuyen = {
+				}
+				b_pho_chau = {
+				}
+			}
+			c_nghe_an = { # 165
+				color={ 89 183 71 }
+				color2={ 255 255 255 }
+				
+				b_vinh = {
+				}
+				b_cua_lo = {
+				}
+				b_thai_hoa = {
+				}
+				b_hoang_mai_2 = {
+				}
+				b_cau_giat = {
+				}
+				b_yen_thanh = {
+				}
+				b_dien_chau = {
+				}
+			}
+		}
+		d_ninh_thuan = {
+			color={ 76 216 228 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 171 province_id = 172 province_id = 173 province_id = 174 } }
+				}
+			}
+			capital = 171 # c_ninh_thuan
+			
+			c_ninh_thuan = { # 171
+				color={ 86 206 233 }
+				color2={ 255 255 255 }
+				
+				b_thap_cham = {
+				}
+				b_tan_son = {
+				}
+				b_phu_quy = {
+				}
+				b_phuoc_dhai = {
+				}
+				b_phuoc_lap = {
+				}
+				b_binh_nghia = {
+				}
+				b_an_nhon = {
+				}
+			}
+			c_binh_thuan = { # 172
+				color={ 86 146 197 }
+				color2={ 255 255 255 }
+				
+				b_phan_thiet = {
+				}
+				b_la_gi = {
+				}
+				b_tan_nghia = {
+				}
+				b_ma_lam = {
+				}
+				b_vo_xu = {
+				}
+				b_cho_lau = {
+				}
+				b_tanh_linh = {
+				}
+			}
+			c_khanh_hoa = { # 174
+				color={ 86 155 243 }
+				color2={ 255 255 255 }
+				
+				b_nha_trang = {
+				}
+				b_cam_ranh = {
+				}
+				b_ninh_hoa = {
+				}
+				b_dien_khanh = {
+				}
+				b_van_gia = {
+				}
+				b_khanh_vinh = {
+				}
+				b_to_hap = {
+				}
+			}
+			c_phu_yen = { # 173
+				color={ 51 177 216 }
+				color2={ 255 255 255 }
+				
+				b_tuy_hoa = {
+				}
+				b_song_cau = {
+				}
+				b_hai_rieng = {
+				}
+				b_phu_hoa = {
+				}
+				b_hoa_vinh = {
+				}
+				b_la_hai = {
+				}
+				b_cung_son = {
+				}
+			}
+		}
+	}
+}
