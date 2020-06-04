@@ -3176,14 +3176,14 @@ e_the_philippines = {
 	color={ 32 34 113 }
 	color2={ 255 255 20 }
 	
-	capital = 254 # c_cavite
+	capital = 200 # c_cavite
 	culture = tagalog
 	
 	k_katagalugan = {
 		color={ 42 24 118 }
 		color2={ 255 255 255 }
 		
-		capital = 254 # c_cavite
+		capital = 200 # c_cavite
 		culture = tagalog
 		
 		d_katagalugan = {
@@ -3193,12 +3193,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 254 province_id = 255 } }
+					any_demesne_province = { OR = { province_id = 200 province_id = 201 } }
 				}
 			}
-			capital = 254 # c_cavite
+			capital = 200 # c_cavite
 			
-			c_cavite = { # 254
+			c_cavite = { # 200
 				color={ 72 250 133 }
 				color2={ 255 255 255 }
 				
@@ -3217,7 +3217,7 @@ e_the_philippines = {
 				b_general_mariano_alvarez = {
 				}
 			}
-			c_batangas = { # 255
+			c_batangas = { # 201
 				color={ 9 171 65 }
 				color2={ 255 255 255 }
 				
@@ -3244,12 +3244,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 257 province_id = 258 } }
+					any_demesne_province = { OR = { province_id = 203 province_id = 204 } }
 				}
 			}
-			capital = 257 # c_rizal
+			capital = 203 # c_rizal
 			
-			c_rizal = { # 257
+			c_rizal = { # 203
 				color={ 59 191 104 }
 				color2={ 255 255 255 }
 				
@@ -3268,7 +3268,7 @@ e_the_philippines = {
 				b_angono = {
 				}
 			}
-			c_laguna = { # 258
+			c_laguna = { # 204
 				color={ 2 241 83 }
 				color2={ 255 255 255 }
 				
@@ -3295,16 +3295,14 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 256 } }
+					any_demesne_province = { OR = { province_id = 202 } }
 				}
 			}
-			capital = 256 # c_manila
+			capital = 202 # c_manila
 			
-			c_manila = { # 256
+			c_manila = { # 202
 				color={ 120 187 143 }
 				color2={ 255 255 255 }
-				
-				holy_site = catholic
 				
 				b_manila = {
 				}
@@ -3329,12 +3327,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 262 province_id = 263 } }
+					any_demesne_province = { OR = { province_id = 208 province_id = 209 } }
 				}
 			}
-			capital = 262 # c_quezon
+			capital = 208 # c_quezon
 			
-			c_quezon = { # 262
+			c_quezon = { # 208
 				color={ 156 167 34 }
 				color2={ 255 255 255 }
 				
@@ -3353,7 +3351,7 @@ e_the_philippines = {
 				b_mulanay = {
 				}
 			}
-			c_camarines_norte = { # 263
+			c_camarines_norte = { # 209
 				color={ 54 133 85 }
 				color2={ 255 255 255 }
 				
@@ -3380,12 +3378,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 259 province_id = 260 province_id = 261 } }
+					any_demesne_province = { OR = { province_id = 205 province_id = 206 province_id = 207 } }
 				}
 			}
-			capital = 259 # c_tayabas
+			capital = 205 # c_tayabas
 			
-			c_tayabas = { # 259
+			c_tayabas = { # 205
 				color={ 189 206 14 }
 				color2={ 255 255 255 }
 				
@@ -3404,7 +3402,7 @@ e_the_philippines = {
 				b_infanta = {
 				}
 			}
-			c_marinduque = { # 261
+			c_marinduque = { # 207
 				color={ 177 209 57 }
 				color2={ 255 255 255 }
 				
@@ -3423,7 +3421,7 @@ e_the_philippines = {
 				b_maniwaya = {
 				}
 			}
-			c_polillo = { # 260
+			c_polillo = { # 206
 				color={ 167 181 95 }
 				color2={ 255 255 255 }
 				
@@ -3448,7 +3446,7 @@ e_the_philippines = {
 		color={ 110 154 124 }
 		color2={ 255 255 255 }
 		
-		capital = 310 # c_davao
+		capital = 256 # c_davao
 		culture = dumagat
 		
 		d_davao = {
@@ -3458,12 +3456,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 310 province_id = 311 province_id = 312 } }
+					any_demesne_province = { OR = { province_id = 256 province_id = 257 province_id = 258 } }
 				}
 			}
-			capital = 310 # c_davao
+			capital = 256 # c_davao
 			
-			c_davao = { # 310
+			c_davao = { # 256
 				color={ 80 184 109 }
 				color2={ 255 255 255 }
 				
@@ -3482,7 +3480,7 @@ e_the_philippines = {
 				b_tambobong = {
 				}
 			}
-			c_davao_del_norte = { # 311
+			c_davao_del_norte = { # 257
 				color={ 63 146 86 }
 				color2={ 255 255 255 }
 				
@@ -3501,7 +3499,7 @@ e_the_philippines = {
 				b_asuncion = {
 				}
 			}
-			c_davao_del_sur = { # 312
+			c_davao_del_sur = { # 258
 				color={ 139 225 163 }
 				color2={ 255 255 255 }
 				
@@ -3528,12 +3526,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 321 province_id = 322 province_id = 323 } }
+					any_demesne_province = { OR = { province_id = 267 province_id = 268 province_id = 269 } }
 				}
 			}
-			capital = 321 # c_san_francisco
+			capital = 267 # c_san_francisco
 			
-			c_san_francisco = { # 321
+			c_san_francisco = { # 267
 				color={ 0 86 23 }
 				color2={ 255 255 255 }
 				
@@ -3552,7 +3550,7 @@ e_the_philippines = {
 				b_hinatuan = {
 				}
 			}
-			c_bayugan = { # 322
+			c_bayugan = { # 268
 				color={ 20 233 78 }
 				color2={ 255 255 255 }
 				
@@ -3571,7 +3569,7 @@ e_the_philippines = {
 				b_patin_ay = {
 				}
 			}
-			c_butuan = { # 323
+			c_butuan = { # 269
 				color={ 38 166 87 }
 				color2={ 255 255 255 }
 				
@@ -3598,12 +3596,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 313 province_id = 314 province_id = 315 } }
+					any_demesne_province = { OR = { province_id = 259 province_id = 260 province_id = 261 } }
 				}
 			}
-			capital = 313 # c_mati
+			capital = 259 # c_mati
 			
-			c_mati = { # 313
+			c_mati = { # 259
 				color={ 26 152 8 }
 				color2={ 255 255 255 }
 				
@@ -3622,7 +3620,7 @@ e_the_philippines = {
 				b_dahican = {
 				}
 			}
-			c_baganga = { # 314
+			c_baganga = { # 260
 				color={ 3 198 56 }
 				color2={ 255 255 255 }
 				
@@ -3641,7 +3639,7 @@ e_the_philippines = {
 				b_kinablangan = {
 				}
 			}
-			c_davao_de_oro = { # 315
+			c_davao_de_oro = { # 261
 				color={ 61 232 107 }
 				color2={ 255 255 255 }
 				
@@ -3668,12 +3666,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 316 province_id = 317 province_id = 318 province_id = 319 province_id = 320 } }
+					any_demesne_province = { OR = { province_id = 262 province_id = 263 province_id = 264 province_id = 265 province_id = 266 } }
 				}
 			}
-			capital = 316 # c_general_santos
+			capital = 262 # c_general_santos
 			
-			c_general_santos = { # 316
+			c_general_santos = { # 262
 				color={ 100 132 249 }
 				color2={ 255 255 255 }
 				
@@ -3692,7 +3690,7 @@ e_the_philippines = {
 				b_sinawal = {
 				}
 			}
-			c_davao_occidental = { # 317
+			c_davao_occidental = { # 263
 				color={ 63 246 113 }
 				color2={ 255 255 255 }
 				
@@ -3711,7 +3709,7 @@ e_the_philippines = {
 				b_demoloc = {
 				}
 			}
-			c_glan = { # 318
+			c_glan = { # 264
 				color={ 36 75 216 }
 				color2={ 255 255 255 }
 				
@@ -3730,7 +3728,7 @@ e_the_philippines = {
 				b_alegria = {
 				}
 			}
-			c_kiamba = { # 319
+			c_kiamba = { # 265
 				color={ 41 81 225 }
 				color2={ 255 255 255 }
 				
@@ -3749,7 +3747,7 @@ e_the_philippines = {
 				b_lamdalag = {
 				}
 			}
-			c_koronadal = { # 320
+			c_koronadal = { # 266
 				color={ 26 73 254 }
 				color2={ 255 255 255 }
 				
@@ -3776,12 +3774,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 324 province_id = 325 province_id = 326 } }
+					any_demesne_province = { OR = { province_id = 270 province_id = 271 province_id = 272 } }
 				}
 			}
-			capital = 324 # c_surigao_del_norte
+			capital = 270 # c_surigao_del_norte
 			
-			c_surigao_del_norte = { # 324
+			c_surigao_del_norte = { # 270
 				color={ 104 255 162 }
 				color2={ 255 255 255 }
 				
@@ -3800,7 +3798,7 @@ e_the_philippines = {
 				b_cagwait = {
 				}
 			}
-			c_cabadbaran = { # 326
+			c_cabadbaran = { # 272
 				color={ 1 125 48 }
 				color2={ 255 255 255 }
 				
@@ -3819,7 +3817,7 @@ e_the_philippines = {
 				b_remedios_t_romualdez = {
 				}
 			}
-			c_surigao_del_sur = { # 325
+			c_surigao_del_sur = { # 271
 				color={ 17 209 90 }
 				color2={ 255 255 255 }
 				
@@ -3844,7 +3842,7 @@ e_the_philippines = {
 		color={ 161 214 62 }
 		color2={ 255 255 255 }
 		
-		capital = 286 # c_cebu
+		capital = 232 # c_cebu
 		culture = bisaya
 		
 		d_kabisay_an = {
@@ -3854,12 +3852,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 286 province_id = 287 province_id = 288 province_id = 289 } }
+					any_demesne_province = { OR = { province_id = 232 province_id = 233 province_id = 234 province_id = 235 } }
 				}
 			}
-			capital = 286 # c_cebu
+			capital = 232 # c_cebu
 			
-			c_cebu = { # 286
+			c_cebu = { # 232
 				color={ 191 184 77 }
 				color2={ 255 255 255 }
 				
@@ -3878,7 +3876,7 @@ e_the_philippines = {
 				b_minglanilla = {
 				}
 			}
-			c_bohol = { # 287
+			c_bohol = { # 233
 				color={ 228 216 32 }
 				color2={ 255 255 255 }
 				
@@ -3897,7 +3895,7 @@ e_the_philippines = {
 				b_loon = {
 				}
 			}
-			c_negros_occidental = { # 289
+			c_negros_occidental = { # 235
 				color={ 203 192 10 }
 				color2={ 255 255 255 }
 				
@@ -3916,7 +3914,7 @@ e_the_philippines = {
 				b_silay = {
 				}
 			}
-			c_negros_oriental = { # 288
+			c_negros_oriental = { # 234
 				color={ 220 208 0 }
 				color2={ 255 255 255 }
 				
@@ -3943,12 +3941,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 295 province_id = 296 province_id = 297 province_id = 298 } }
+					any_demesne_province = { OR = { province_id = 241 province_id = 242 province_id = 243 province_id = 244 } }
 				}
 			}
-			capital = 295 # c_camarines_sur
+			capital = 241 # c_camarines_sur
 			
-			c_camarines_sur = { # 295
+			c_camarines_sur = { # 241
 				color={ 101 168 127 }
 				color2={ 255 255 255 }
 				
@@ -3967,7 +3965,7 @@ e_the_philippines = {
 				b_buhi = {
 				}
 			}
-			c_albay = { # 296
+			c_albay = { # 242
 				color={ 84 194 127 }
 				color2={ 255 255 255 }
 				
@@ -3986,7 +3984,7 @@ e_the_philippines = {
 				b_libon = {
 				}
 			}
-			c_catanduanes = { # 298
+			c_catanduanes = { # 244
 				color={ 36 228 17 }
 				color2={ 255 255 255 }
 				
@@ -4005,7 +4003,7 @@ e_the_philippines = {
 				b_san_miguel_2 = {
 				}
 			}
-			c_masbate = { # 297
+			c_masbate = { # 243
 				color={ 89 233 145 }
 				color2={ 255 255 255 }
 				
@@ -4032,12 +4030,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 293 province_id = 294 } }
+					any_demesne_province = { OR = { province_id = 239 province_id = 240 } }
 				}
 			}
-			capital = 293 # c_leyte
+			capital = 239 # c_leyte
 			
-			c_leyte = { # 293
+			c_leyte = { # 239
 				color={ 0 187 71 }
 				color2={ 255 255 255 }
 				
@@ -4056,7 +4054,7 @@ e_the_philippines = {
 				b_palompon = {
 				}
 			}
-			c_southern_leyte = { # 294
+			c_southern_leyte = { # 240
 				color={ 24 210 154 }
 				color2={ 255 255 255 }
 				
@@ -4083,12 +4081,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 290 province_id = 291 province_id = 292 } }
+					any_demesne_province = { OR = { province_id = 236 province_id = 237 province_id = 238 } }
 				}
 			}
-			capital = 290 # c_samar
+			capital = 236 # c_samar
 			
-			c_samar = { # 290
+			c_samar = { # 236
 				color={ 0 224 86 }
 				color2={ 255 255 255 }
 				
@@ -4107,7 +4105,7 @@ e_the_philippines = {
 				b_paranas = {
 				}
 			}
-			c_eastern_samar = { # 292
+			c_eastern_samar = { # 238
 				color={ 1 174 174 }
 				color2={ 255 255 255 }
 				
@@ -4126,7 +4124,7 @@ e_the_philippines = {
 				b_llorente = {
 				}
 			}
-			c_northern_samar = { # 291
+			c_northern_samar = { # 237
 				color={ 14 193 161 }
 				color2={ 255 255 255 }
 				
@@ -4151,8 +4149,8 @@ e_the_philippines = {
 		color={ 176 236 25 }
 		color2={ 255 255 255 }
 		
-		capital = 264 # c_benguet
-		culture = ifugao
+		capital = 210 # c_benguet
+		culture = igorot
 		
 		d_ilocos = {
 			color={ 156 0 15 }
@@ -4161,12 +4159,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 264 province_id = 265 province_id = 266 province_id = 267 province_id = 268 } }
+					any_demesne_province = { OR = { province_id = 210 province_id = 211 province_id = 212 province_id = 213 province_id = 214 } }
 				}
 			}
-			capital = 264 # c_benguet
+			capital = 210 # c_benguet
 			
-			c_benguet = { # 264
+			c_benguet = { # 210
 				color={ 146 10 10 }
 				color2={ 255 255 255 }
 				
@@ -4185,7 +4183,7 @@ e_the_philippines = {
 				b_kapangan = {
 				}
 			}
-			c_abra = { # 268
+			c_abra = { # 214
 				color={ 143 58 58 }
 				color2={ 255 255 255 }
 				
@@ -4204,7 +4202,7 @@ e_the_philippines = {
 				b_dolores = {
 				}
 			}
-			c_ilocos_norte = { # 266
+			c_ilocos_norte = { # 212
 				color={ 149 36 36 }
 				color2={ 255 255 255 }
 				
@@ -4223,7 +4221,7 @@ e_the_philippines = {
 				b_badoc = {
 				}
 			}
-			c_ilocos_sur = { # 265
+			c_ilocos_sur = { # 211
 				color={ 170 97 97 }
 				color2={ 255 255 255 }
 				
@@ -4242,7 +4240,7 @@ e_the_philippines = {
 				b_bantay = {
 				}
 			}
-			c_la_union = { # 267
+			c_la_union = { # 213
 				color={ 255 168 168 }
 				color2={ 255 255 255 }
 				
@@ -4269,12 +4267,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 279 province_id = 280 province_id = 281 province_id = 282 } }
+					any_demesne_province = { OR = { province_id = 225 province_id = 226 province_id = 227 province_id = 228 } }
 				}
 			}
-			capital = 279 # c_cagayan
+			capital = 225 # c_cagayan
 			
-			c_cagayan = { # 279
+			c_cagayan = { # 225
 				color={ 224 107 107 }
 				color2={ 255 255 255 }
 				
@@ -4293,7 +4291,7 @@ e_the_philippines = {
 				b_piat = {
 				}
 			}
-			c_apayao = { # 281
+			c_apayao = { # 227
 				color={ 243 51 51 }
 				color2={ 255 255 255 }
 				
@@ -4312,7 +4310,7 @@ e_the_philippines = {
 				b_calanasan = {
 				}
 			}
-			c_batanes = { # 282
+			c_batanes = { # 228
 				color={ 160 65 65 }
 				color2={ 255 255 255 }
 				
@@ -4331,7 +4329,7 @@ e_the_philippines = {
 				b_ivana = {
 				}
 			}
-			c_isabela = { # 280
+			c_isabela = { # 226
 				color={ 220 16 16 }
 				color2={ 255 255 255 }
 				
@@ -4358,12 +4356,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 269 province_id = 270 province_id = 271 province_id = 272 province_id = 273 province_id = 274 province_id = 275 } }
+					any_demesne_province = { OR = { province_id = 215 province_id = 216 province_id = 217 province_id = 218 province_id = 219 province_id = 220 province_id = 221 } }
 				}
 			}
-			capital = 269 # c_bulacan
+			capital = 215 # c_bulacan
 			
-			c_bulacan = { # 269
+			c_bulacan = { # 215
 				color={ 202 37 37 }
 				color2={ 255 255 255 }
 				
@@ -4382,7 +4380,7 @@ e_the_philippines = {
 				b_san_miguel = {
 				}
 			}
-			c_bataan = { # 272
+			c_bataan = { # 218
 				color={ 202 0 0 }
 				color2={ 255 255 255 }
 				
@@ -4401,7 +4399,7 @@ e_the_philippines = {
 				b_orion = {
 				}
 			}
-			c_nueva_ecija = { # 275
+			c_nueva_ecija = { # 221
 				color={ 151 19 19 }
 				color2={ 255 255 255 }
 				
@@ -4420,7 +4418,7 @@ e_the_philippines = {
 				b_san_antonio = {
 				}
 			}
-			c_pampanga = { # 271
+			c_pampanga = { # 217
 				color={ 113 48 48 }
 				color2={ 255 255 255 }
 				
@@ -4439,7 +4437,7 @@ e_the_philippines = {
 				b_porac = {
 				}
 			}
-			c_pangasinan = { # 270
+			c_pangasinan = { # 216
 				color={ 86 14 14 }
 				color2={ 255 255 255 }
 				
@@ -4458,7 +4456,7 @@ e_the_philippines = {
 				b_lingayen = {
 				}
 			}
-			c_tarlac = { # 274
+			c_tarlac = { # 220
 				color={ 226 130 130 }
 				color2={ 255 255 255 }
 				
@@ -4477,7 +4475,7 @@ e_the_philippines = {
 				b_bamban = {
 				}
 			}
-			c_zambales = { # 273
+			c_zambales = { # 219
 				color={ 192 91 91 }
 				color2={ 255 255 255 }
 				
@@ -4504,12 +4502,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 283 province_id = 284 province_id = 285 } }
+					any_demesne_province = { OR = { province_id = 229 province_id = 230 province_id = 231 } }
 				}
 			}
-			capital = 283 # c_kalinga
+			capital = 229 # c_kalinga
 			
-			c_kalinga = { # 283
+			c_kalinga = { # 229
 				color={ 115 41 41 }
 				color2={ 255 255 255 }
 				
@@ -4528,7 +4526,7 @@ e_the_philippines = {
 				b_lubuagan = {
 				}
 			}
-			c_ifugao = { # 285
+			c_ifugao = { # 231
 				color={ 118 77 77 }
 				color2={ 255 255 255 }
 				
@@ -4547,7 +4545,7 @@ e_the_philippines = {
 				b_kiangan = {
 				}
 			}
-			c_mt_province = { # 284
+			c_mt_province = { # 230
 				color={ 135 94 94 }
 				color2={ 255 255 255 }
 				
@@ -4574,12 +4572,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 276 province_id = 277 province_id = 278 } }
+					any_demesne_province = { OR = { province_id = 222 province_id = 223 province_id = 224 } }
 				}
 			}
-			capital = 276 # c_nueva_vizcaya
+			capital = 222 # c_nueva_vizcaya
 			
-			c_nueva_vizcaya = { # 276
+			c_nueva_vizcaya = { # 222
 				color={ 245 76 76 }
 				color2={ 255 255 255 }
 				
@@ -4598,7 +4596,7 @@ e_the_philippines = {
 				b_dupax_del_norte = {
 				}
 			}
-			c_aurora = { # 277
+			c_aurora = { # 223
 				color={ 197 94 94 }
 				color2={ 255 255 255 }
 				
@@ -4617,7 +4615,7 @@ e_the_philippines = {
 				b_dilasag = {
 				}
 			}
-			c_quirino = { # 278
+			c_quirino = { # 224
 				color={ 158 18 18 }
 				color2={ 255 255 255 }
 				
@@ -4642,7 +4640,7 @@ e_the_philippines = {
 		color={ 157 217 30 }
 		color2={ 255 255 255 }
 		
-		capital = 299 # c_iloilo
+		capital = 245 # c_iloilo
 		culture = bisaya
 		
 		d_panay = {
@@ -4652,12 +4650,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 299 province_id = 300 province_id = 301 province_id = 302 } }
+					any_demesne_province = { OR = { province_id = 245 province_id = 246 province_id = 247 province_id = 248 } }
 				}
 			}
-			capital = 299 # c_iloilo
+			capital = 245 # c_iloilo
 			
-			c_iloilo = { # 299
+			c_iloilo = { # 245
 				color={ 187 187 45 }
 				color2={ 255 255 255 }
 				
@@ -4676,7 +4674,7 @@ e_the_philippines = {
 				b_miagao = {
 				}
 			}
-			c_aklan = { # 300
+			c_aklan = { # 246
 				color={ 247 198 43 }
 				color2={ 255 255 255 }
 				
@@ -4695,7 +4693,7 @@ e_the_philippines = {
 				b_batan = {
 				}
 			}
-			c_antique = { # 302
+			c_antique = { # 248
 				color={ 243 243 119 }
 				color2={ 255 255 255 }
 				
@@ -4714,7 +4712,7 @@ e_the_philippines = {
 				b_bugasong = {
 				}
 			}
-			c_capiz = { # 301
+			c_capiz = { # 247
 				color={ 218 145 45 }
 				color2={ 255 255 255 }
 				
@@ -4741,12 +4739,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 307 province_id = 308 province_id = 309 } }
+					any_demesne_province = { OR = { province_id = 253 province_id = 254 province_id = 255 } }
 				}
 			}
-			capital = 307 # c_oriental_mindoro
+			capital = 253 # c_oriental_mindoro
 			
-			c_oriental_mindoro = { # 307
+			c_oriental_mindoro = { # 253
 				color={ 183 183 20 }
 				color2={ 255 255 255 }
 				
@@ -4765,7 +4763,7 @@ e_the_philippines = {
 				b_victoria = {
 				}
 			}
-			c_occidental_mindoro = { # 308
+			c_occidental_mindoro = { # 254
 				color={ 214 214 0 }
 				color2={ 255 255 255 }
 				
@@ -4784,7 +4782,7 @@ e_the_philippines = {
 				b_abra_de_ilog = {
 				}
 			}
-			c_romblon = { # 309
+			c_romblon = { # 255
 				color={ 232 232 5 }
 				color2={ 255 255 255 }
 				
@@ -4811,12 +4809,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 303 province_id = 304 province_id = 305 province_id = 306 } }
+					any_demesne_province = { OR = { province_id = 249 province_id = 250 province_id = 251 province_id = 252 } }
 				}
 			}
-			capital = 303 # c_puerto_princesa
+			capital = 249 # c_puerto_princesa
 			
-			c_puerto_princesa = { # 303
+			c_puerto_princesa = { # 249
 				color={ 135 135 59 }
 				color2={ 255 255 255 }
 				
@@ -4835,7 +4833,7 @@ e_the_philippines = {
 				b_sicsican = {
 				}
 			}
-			c_coron = { # 306
+			c_coron = { # 252
 				color={ 237 237 133 }
 				color2={ 255 255 255 }
 				
@@ -4854,7 +4852,7 @@ e_the_philippines = {
 				b_agutaya = {
 				}
 			}
-			c_narra = { # 305
+			c_narra = { # 251
 				color={ 247 247 96 }
 				color2={ 255 255 255 }
 				
@@ -4873,7 +4871,7 @@ e_the_philippines = {
 				b_aborlan = {
 				}
 			}
-			c_taytay = { # 304
+			c_taytay = { # 250
 				color={ 243 243 39 }
 				color2={ 255 255 255 }
 				
@@ -4898,7 +4896,7 @@ e_the_philippines = {
 		color={ 71 55 6 }
 		color2={ 255 255 255 }
 		
-		capital = 327 # c_zamboanga
+		capital = 273 # c_zamboanga
 		culture = chavacano
 		
 		d_zamboanga = {
@@ -4908,12 +4906,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 327 province_id = 328 province_id = 329 province_id = 330 } }
+					any_demesne_province = { OR = { province_id = 273 province_id = 274 province_id = 275 province_id = 276 } }
 				}
 			}
-			capital = 327 # c_zamboanga
+			capital = 273 # c_zamboanga
 			
-			c_zamboanga = { # 327
+			c_zamboanga = { # 273
 				color={ 41 85 247 }
 				color2={ 255 255 255 }
 				
@@ -4932,7 +4930,7 @@ e_the_philippines = {
 				b_tumaga = {
 				}
 			}
-			c_misamis_occidental = { # 330
+			c_misamis_occidental = { # 276
 				color={ 42 71 179 }
 				color2={ 255 255 255 }
 				
@@ -4951,7 +4949,7 @@ e_the_philippines = {
 				b_tudela = {
 				}
 			}
-			c_zamboanga_del_sur = { # 329
+			c_zamboanga_del_sur = { # 275
 				color={ 97 123 219 }
 				color2={ 255 255 255 }
 				
@@ -4970,7 +4968,7 @@ e_the_philippines = {
 				b_tukuran = {
 				}
 			}
-			c_zamboanga_sibugay = { # 328
+			c_zamboanga_sibugay = { # 274
 				color={ 17 61 224 }
 				color2={ 255 255 255 }
 				
@@ -4997,12 +4995,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 337 province_id = 338 province_id = 339 province_id = 340 } }
+					any_demesne_province = { OR = { province_id = 283 province_id = 284 province_id = 285 province_id = 286 } }
 				}
 			}
-			capital = 337 # c_malaybalay
+			capital = 283 # c_malaybalay
 			
-			c_malaybalay = { # 337
+			c_malaybalay = { # 283
 				color={ 119 136 197 }
 				color2={ 255 255 255 }
 				
@@ -5021,7 +5019,7 @@ e_the_philippines = {
 				b_baungon = {
 				}
 			}
-			c_iligan = { # 339
+			c_iligan = { # 285
 				color={ 79 90 130 }
 				color2={ 255 255 255 }
 				
@@ -5040,7 +5038,7 @@ e_the_philippines = {
 				b_tipanoy = {
 				}
 			}
-			c_misamis_oriental = { # 340
+			c_misamis_oriental = { # 286
 				color={ 143 237 179 }
 				color2={ 255 255 255 }
 				
@@ -5059,7 +5057,7 @@ e_the_philippines = {
 				b_el_salvador = {
 				}
 			}
-			c_valencia = { # 338
+			c_valencia = { # 284
 				color={ 174 189 242 }
 				color2={ 255 255 255 }
 				
@@ -5086,12 +5084,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 341 province_id = 342 province_id = 343 province_id = 344 } }
+					any_demesne_province = { OR = { province_id = 287 province_id = 288 province_id = 289 province_id = 290 } }
 				}
 			}
-			capital = 341 # c_cotabato
+			capital = 287 # c_cotabato
 			
-			c_cotabato = { # 341
+			c_cotabato = { # 287
 				color={ 12 43 160 }
 				color2={ 255 255 255 }
 				
@@ -5110,7 +5108,7 @@ e_the_philippines = {
 				b_barira = {
 				}
 			}
-			c_kidapawan = { # 344
+			c_kidapawan = { # 290
 				color={ 82 117 249 }
 				color2={ 255 255 255 }
 				
@@ -5129,7 +5127,7 @@ e_the_philippines = {
 				b_makilala = {
 				}
 			}
-			c_maguindanao = { # 342
+			c_maguindanao = { # 288
 				color={ 56 87 207 }
 				color2={ 255 255 255 }
 				
@@ -5148,7 +5146,7 @@ e_the_philippines = {
 				b_pagagawan = {
 				}
 			}
-			c_sultan_kudarat = { # 343
+			c_sultan_kudarat = { # 289
 				color={ 66 89 170 }
 				color2={ 255 255 255 }
 				
@@ -5175,12 +5173,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 335 province_id = 336 } }
+					any_demesne_province = { OR = { province_id = 281 province_id = 282 } }
 				}
 			}
-			capital = 335 # c_lanao_del_norte
+			capital = 281 # c_lanao_del_norte
 			
-			c_lanao_del_norte = { # 335
+			c_lanao_del_norte = { # 281
 				color={ 0 29 134 }
 				color2={ 255 255 255 }
 				
@@ -5199,7 +5197,7 @@ e_the_philippines = {
 				b_salvador = {
 				}
 			}
-			c_lanao_del_sur = { # 336
+			c_lanao_del_sur = { # 282
 				color={ 135 155 228 }
 				color2={ 255 255 255 }
 				
@@ -5226,12 +5224,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 345 province_id = 346 province_id = 347 } }
+					any_demesne_province = { OR = { province_id = 291 province_id = 292 province_id = 293 } }
 				}
 			}
-			capital = 345 # c_sulu
+			capital = 291 # c_sulu
 			
-			c_sulu = { # 345
+			c_sulu = { # 291
 				color={ 109 124 180 }
 				color2={ 255 255 255 }
 				
@@ -5250,7 +5248,7 @@ e_the_philippines = {
 				b_old_panamao = {
 				}
 			}
-			c_basilan = { # 346
+			c_basilan = { # 292
 				color={ 54 72 135 }
 				color2={ 255 255 255 }
 				
@@ -5269,7 +5267,7 @@ e_the_philippines = {
 				b_tuburan = {
 				}
 			}
-			c_tawi_tawi = { # 347
+			c_tawi_tawi = { # 293
 				color={ 145 169 255 }
 				color2={ 255 255 255 }
 				
@@ -5296,12 +5294,12 @@ e_the_philippines = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 331 province_id = 332 province_id = 333 province_id = 334 } }
+					any_demesne_province = { OR = { province_id = 277 province_id = 278 province_id = 279 province_id = 280 } }
 				}
 			}
-			capital = 331 # c_dipolog
+			capital = 277 # c_dipolog
 			
-			c_dipolog = { # 331
+			c_dipolog = { # 277
 				color={ 106 74 251 }
 				color2={ 255 255 255 }
 				
@@ -5320,7 +5318,7 @@ e_the_philippines = {
 				b_sergio_osmena_sr_ = {
 				}
 			}
-			c_labason = { # 333
+			c_labason = { # 279
 				color={ 105 86 192 }
 				color2={ 255 255 255 }
 				
@@ -5339,7 +5337,7 @@ e_the_philippines = {
 				b_osukan = {
 				}
 			}
-			c_sindangan = { # 332
+			c_sindangan = { # 278
 				color={ 61 22 236 }
 				color2={ 255 255 255 }
 				
@@ -5358,7 +5356,7 @@ e_the_philippines = {
 				b_guibo = {
 				}
 			}
-			c_siocon = { # 334
+			c_siocon = { # 280
 				color={ 115 143 249 }
 				color2={ 255 255 255 }
 				
