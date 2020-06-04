@@ -75,6 +75,40 @@ christian = {
 		religious_clothing_priest = 1
 
 	}
+	restorationists = { #placeholder
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 2
+		
+		color = { 0.8 0.8 0.6 }
+		parent = catholic
+		
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		can_call_crusade = yes
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		rel_head_defense = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+
+	}
 }
 
 muslim = {
@@ -126,6 +160,41 @@ muslim = {
 		
 		can_call_crusade = yes
 		priests_can_marry = yes
+		psc_marriage = no # Disallow uncle-niece and aunt-nephew marriages
+		max_wives = 4
+		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
+
+		intermarry = shiite
+	}
+	
+	salafi = { #placeholder
+		graphical_culture = muslimgfx
+
+		icon = 3
+		heresy_icon = 4
+		
+		color = { 0 0.3 0 }
+		parent = sunni
+		
+		scripture_name = THE_KORAN
+		priest_title = IMAM_PRIEST
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
+		
+		priests_can_marry = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
 		matrilineal_marriages = no
@@ -137,6 +206,7 @@ muslim = {
 
 		intermarry = shiite
 	}
+	
 	shiite = {
 		graphical_culture = muslimgfx
 
@@ -145,7 +215,6 @@ muslim = {
 		
 		color = { 0 0.8 0 }
 		
-		crusade_name = JIHAD
 		scripture_name = THE_KORAN
 		priest_title = MULLAH
 		
@@ -158,7 +227,40 @@ muslim = {
 			IBLIS SHAYTAN
 		}
 		
-		can_call_crusade = yes
+		priests_can_marry = yes
+		psc_marriage = no
+		max_wives = 4
+		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
+		
+		intermarry = sunni
+	}
+	
+	nizari = { #placeholder
+		graphical_culture = muslimgfx
+
+		icon = 5
+		heresy_icon = 6
+		
+		color = { 0 0.7 0 }
+		parent = shiite
+		
+		scripture_name = THE_KORAN
+		priest_title = MULLAH
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
+		
 		priests_can_marry = yes
 		psc_marriage = no
 		max_wives = 4
