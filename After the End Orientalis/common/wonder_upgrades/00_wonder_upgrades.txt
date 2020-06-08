@@ -141,14 +141,6 @@
 # Quadriga Statue ................. upgrade_quadriga_statue
 # Keeper of the Dead .............. upgrade_keeper_of_the_dead
 
-#### AMPHITHEATER
-# Naval Spectacle ................. upgrade_naval_spectacle
-# Animal Cages .................... upgrade_animal_cages
-# Hippodrome/Circus ............... upgrade_hippodrome
-# Training Academy ................ upgrade_training_academy
-# Theater Stage ................... upgrade_theater_stage
-# Master of the Game .............. upgrade_master_of_the_games
-
 #### GARDENS
 # Fountains ....................... upgrade_fountains
 # Fountain of youth ............... upgrade_fountain_of_youth
@@ -213,15 +205,6 @@
 # Math and Philosophy Collection .. upgrade_collection_math
 # Scribe Room ..................... upgrade_scribe_room
 # Keeper of the Tomes ............. upgrade_keeper_of_tomes
-
-#### PYRAMID
-# Extra Pyramids .................. upgrade_extra_pyramids
-# Sphinx/Beast .................... upgrade_mythological_beast
-# Hidden Room ..................... upgrade_hidden_room
-# Necropolis ...................... upgrade_necropolis
-# Lime Stone Casing ............... upgrade_lime_stone_casing
-# Traps ........................... upgrade_traps
-# Overseer of Rites ............... upgrade_overseer_of_rites
 
 ###################################################################
 
@@ -440,9 +423,9 @@ upgrade_torture_chamber = {
 upgrade_brewery = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { NOT = { religion_group = latter_day_saints } }
-	allow = { NOT = { religion_group = latter_day_saints } }
-	active = { NOT = { religion_group = latter_day_saints } }
+	potential = {}
+	allow = {}
+	active = {}
 
 	flags = {
 		is_singular
@@ -481,9 +464,9 @@ upgrade_brewery = {
 upgrade_vineyard = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { NOT = { religion_group = latter_day_saints } }
-	allow = { NOT = { religion_group = latter_day_saints } }
-	active = { NOT = { religion_group = latter_day_saints } }
+	potential = {}
+	allow = {}
+	active = {}
 
 	flags = {
 		is_singular
@@ -550,22 +533,8 @@ upgrade_road_tolls = {
 upgrade_tavern = {
 	picture = GFX_upgrade_icon_crates
 	potential = { }
-	allow = {
-		trigger_if = {
-			limit = {
-				religion_group = latter_day_saints
-			}
-			NOT = { trait = zealous }
-		}
-	}
-	active = {
-		trigger_if = {
-			limit = {
-				religion_group = latter_day_saints
-			}
-			NOT = { trait = zealous }
-		}
-	}
+	allow = {}
+	active = {}
 
 	flags = {
 		air_bnb
@@ -593,8 +562,6 @@ upgrade_gargoyles = {
 	potential = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 	allow = {
@@ -602,22 +569,16 @@ upgrade_gargoyles = {
 			limit = {
 				NOR = {
 					religion_group = christian
-					religion_group = cult_of_saints
-					religion_group = latter_day_saints
 				}
 			}
 			OR = {
 				religion_group = christian
-				religion_group = cult_of_saints
-				religion_group = latter_day_saints
 			}
 		}
 	}
 	active = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 
@@ -642,8 +603,6 @@ upgrade_bells = {
 	potential = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 	allow = {
@@ -651,14 +610,10 @@ upgrade_bells = {
 			limit = {
 				NOR = {
 					religion_group = christian
-					religion_group = cult_of_saints
-					religion_group = latter_day_saints
 				}
 			}
 			OR = {
 				religion_group = christian
-				religion_group = cult_of_saints
-				religion_group = latter_day_saints
 			}
 		}
 	}
@@ -683,8 +638,6 @@ upgrade_stained_glass_window = {
 	potential = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 	allow = {
@@ -692,22 +645,16 @@ upgrade_stained_glass_window = {
 			limit = {
 				NOR = {
 					religion_group = christian
-					religion_group = cult_of_saints
-					religion_group = latter_day_saints
 				}
 			}
 			OR = {
 				religion_group = christian
-				religion_group = cult_of_saints
-				religion_group = latter_day_saints
 			}
 		}
 	}
 	active = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 
@@ -730,8 +677,6 @@ upgrade_relic_tomb = {
 	potential = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 	allow = {
@@ -739,22 +684,16 @@ upgrade_relic_tomb = {
 			limit = {
 				NOR = {
 					religion_group = christian
-					religion_group = cult_of_saints
-					religion_group = latter_day_saints
 				}
 			}
 			OR = {
 				religion_group = christian
-				religion_group = cult_of_saints
-				religion_group = latter_day_saints
 			}
 		}
 	}
 	active = { 
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 		hidden_tooltip = {
 			FROMFROM = { is_active = yes }
@@ -794,8 +733,6 @@ upgrade_grand_basilica = {
 	potential = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 	allow = {
@@ -803,22 +740,16 @@ upgrade_grand_basilica = {
 			limit = {
 				NOR = {
 					religion_group = christian
-					religion_group = cult_of_saints
-					religion_group = latter_day_saints
 				}
 			}
 			OR = {
 				religion_group = christian
-				religion_group = cult_of_saints
-				religion_group = latter_day_saints
 			}
 		}
 	}
 	active = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 
@@ -840,8 +771,6 @@ upgrade_catacombs = {
 	potential = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 	allow = {
@@ -849,22 +778,16 @@ upgrade_catacombs = {
 			limit = {
 				NOR = {
 					religion_group = christian
-					religion_group = cult_of_saints
-					religion_group = latter_day_saints
 				}
 			}
 			OR = {
 				religion_group = christian
-				religion_group = cult_of_saints
-				religion_group = latter_day_saints
 			}
 		}
 	}
 	active = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 
@@ -889,8 +812,6 @@ upgrade_giant_cross = {
 	potential = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 	allow = {
@@ -898,22 +819,16 @@ upgrade_giant_cross = {
 			limit = {
 				NOR = {
 					religion_group = christian
-					religion_group = cult_of_saints
-					religion_group = latter_day_saints
 				}
 			}
 			OR = {
 				religion_group = christian
-				religion_group = cult_of_saints
-				religion_group = latter_day_saints
 			}
 		}
 	}
 	active = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 
@@ -936,8 +851,6 @@ upgrade_bells_golden = {
 	potential = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 	allow = {
@@ -945,22 +858,16 @@ upgrade_bells_golden = {
 			limit = {
 				NOR = {
 					religion_group = christian
-					religion_group = cult_of_saints
-					religion_group = latter_day_saints
 				}
 			}
 			OR = {
 				religion_group = christian
-				religion_group = cult_of_saints
-				religion_group = latter_day_saints
 			}
 		}
 	}
 	active = {
 		OR = {
 			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
 		}
 	}
 
@@ -1061,37 +968,6 @@ upgrade_temple_guards = {
 	gold_cost_ticking = 1
 	local_modifier = {
 		local_revolt_risk = -0.1
-	}
-}
-
-upgrade_sacrificial_altar = { 
-	picture = GFX_upgrade_icon_skulls
-
-	potential = {
-		OR = {
-			religion = mictlantec
-			has_religion_feature = religion_ritual_sacrifice
-		}
-	}
-	allow = { }
-	active = {
-		OR = {
-			religion = mictlantec
-			has_religion_feature = religion_ritual_sacrifice
-		}
-	}
-
-	flags = {
-		is_singular
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	local_modifier = {
-		local_revolt_risk = -0.05
-	}
-	owner_modifier = {
-		zealous_opinion = 5
 	}
 }
 
@@ -1608,14 +1484,14 @@ upgrade_school_synagogue = {
 upgrade_chaitya-grihas = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist_group }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist_group } }
-			religion = buddhist_group
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist_group }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_plural
@@ -1636,11 +1512,11 @@ upgrade_chaitya-grihas = {
 upgrade_gompa= {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist_group }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist_group } }
-			religion = buddhist_group
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
 	active = {  } #active even if owner not of the same religion
@@ -1663,14 +1539,14 @@ upgrade_gompa= {
 upgrade_bodhi_tree = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist_group }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist_group } }
-			religion = buddhist_group
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist_group }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_singular
@@ -1690,14 +1566,14 @@ upgrade_bodhi_tree = {
 upgrade_cave_complex = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist_group }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
 			limit = { NOT = { religion = buddhist_group } }
-			religion = buddhist_group
+			religion_group = buddhist_group
 		}
 	}
-	active = { } # active even if owner is not a Budhist?
+	active = { } # active even if owner is not a Budhhist?
 
 	flags = {
 		is_singular
@@ -1717,14 +1593,14 @@ upgrade_cave_complex = {
 upgrade_vihara = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist_group }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist_group } }
-			religion = buddhist_group
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist_group }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_singular
@@ -1742,14 +1618,14 @@ upgrade_vihara = {
 upgrade_school_buddhist = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist_group }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist_group } }
-			religion = buddhist_group
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist_group }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		culture_conversion_faster
@@ -1771,15 +1647,15 @@ upgrade_school_buddhist = {
 upgrade_relic_stupa = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist_group }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist_group } }
-			religion = buddhist_group
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
 	active = { 
-		religion = buddhist_group
+		religion_group = buddhist_group
 		hidden_tooltip = {
 			FROMFROM = { is_active = yes }
 		}
@@ -1818,14 +1694,14 @@ upgrade_relic_stupa = {
 upgrade_commerative_stupa = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist_group }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist_group } }
-			religion = buddhist_group
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist_group }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_singular
@@ -1845,14 +1721,14 @@ upgrade_commerative_stupa = {
 upgrade_symbolic_stupa = {
 	picture = GFX_upgrade_icon_crates
 	
-	potential = { religion = buddhist_group }
+	potential = { religion_group = buddhist_group }
 	allow = {
 		trigger_if = {
-			limit = { NOT = { religion = buddhist_group } }
-			religion = buddhist_group
+			limit = { NOT = { religion_group = buddhist_group } }
+			religion_group = buddhist_group
 		}
 	}
-	active = { religion = buddhist_group }
+	active = { religion_group = buddhist_group }
 
 	flags = {
 		is_singular
@@ -2734,127 +2610,6 @@ upgrade_keeper_of_the_dead = {
 	}
 	owner_modifier = {
 		custom_modifier_text = kepper_of_dead_custom_modifier_tt
-	}
-}
-
-##########################################
-############## Amphitheater ##############
-##########################################
-upgrade_naval_spectacle = { # Naval Spectacle
-	picture = GFX_upgrade_icon_anchor
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_singular
-		entertainment
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	local_modifier = {
-		local_tax_modifier = 0.025
-	}
-	owner_modifier = {
-		monthly_character_prestige = 0.1
-	}
-}
-
-upgrade_animal_cages = { # Animal Cages
-	picture = GFX_upgrade_icon_crates
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		animal_cages
-		is_plural
-		entertainment
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		monthly_character_prestige = 0.1
-		hunter_opinion = 5
-	}
-}
-
-upgrade_hippodrome = { # Hippodrome/Circus
-	picture = GFX_upgrade_icon_crates
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_singular
-		entertainment
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		command_modifier = {
-			cavalry = 0.05
-		}
-	}
-}
-
-upgrade_training_academy = { # Training Academy 
-	picture = GFX_upgrade_icon_guards
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		summon_commander
-		is_singular
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		custom_modifier_text = recruit_gladiator_modifier_tt #Allows you to summon a warrior every year or so
-	}
-}
-
-upgrade_theater_stage = { # Theater Stage
-	picture = GFX_upgrade_icon_crates
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_singular
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		monthly_character_prestige = 0.05
-		poet_opinion = 5
-	}
-}
-
-upgrade_master_of_the_games = {
-	picture = GFX_upgrade_icon_key
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_singular
-		unlocks_minor_title
-	}
-	build_time = 12
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	local_modifier = {
-		
-	}
-	owner_modifier = {
-		custom_modifier_text = game_master_custom_modifier_tt
 	}
 }
 
@@ -3853,7 +3608,7 @@ upgrade_royal_custodian = {
 }
 
 ##########################################
-############### Pagan Stones ###############
+############ Pagan Stones ################
 ##########################################
 
 upgrade_runestones = {
@@ -4048,143 +3803,6 @@ upgrade_keeper_of_tomes = {
 }
 
 ##########################################
-################ Pyramids ################
-##########################################
-
-upgrade_extra_pyramids = { #for relatives, etc	
-	picture = GFX_upgrade_icon_stones
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_plural
-	}
-	build_time = 120
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		dynasty_opinion = 3
-		monthly_character_prestige = 0.05
-	}
-}
-
-upgrade_mythological_beast = { #think sphinx
-	picture = GFX_upgrade_icon_crates
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_singular
-	}
-	build_time = 60
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		proud_opinion = 5
-		same_religion_opinion = 2
-	}
-}
-
-upgrade_hidden_room = {
-	#A hidden room to hide loot
-	picture = GFX_upgrade_icon_key
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		room
-		is_singular
-		artifact_protection
-		secluded
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		custom_modifier_text = less_likely_to_be_looted_modifier_tt
-		custom_modifier_text = private_talk_possible_modifier_tt
-	}
-}
-
-upgrade_necropolis = {
-	picture = GFX_upgrade_icon_skulls
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_singular
-		artifact_protection
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		custom_modifier_text = less_likely_to_be_looted_modifier_tt
-	}
-}
-
-upgrade_traps = {	
-	picture = GFX_upgrade_icon_crates
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_plural
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		#LT.60401 that has a high chance of killing members of the new court.
-		custom_modifier_text = traps_custom_modifier_tt
-	}
-}
-
-upgrade_lime_stone_casing = { #For pyramids
-	picture = GFX_upgrade_icon_stones
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_singular
-	}
-	build_time = 24
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	owner_modifier = {
-		monthly_character_piety = 0.01
-		monthly_character_prestige = 0.05
-	}
-}
-
-upgrade_overseer_of_rites = {
-	picture = GFX_upgrade_icon_key
-	potential = { }
-	allow = { }
-	active = { }
-
-	flags = {
-		is_singular
-		unlocks_minor_title
-	}
-	build_time = 12
-	gold_cost_flat = 450
-	gold_cost_ticking = 1
-	local_modifier = {
-		
-	}
-	owner_modifier = {
-		custom_modifier_text = overseer_of_rites_custom_modifier_tt
-	}
-}
-
-##########################################
 ############ Temple of Solomon ###########
 ##########################################
 
@@ -4357,7 +3975,9 @@ upgrade_earthquake_damage_large = {
 	}
 }
 
-##Unique Upgrade##
+##########################################
+######## ATE:O Unique Upgrades ###########
+##########################################
 upgrade_statue_lord_buddha = {
 	picture = GFX_upgrade_icon_statue
 
