@@ -15,7 +15,55 @@ d_cao_dai_papacy = {
 	# Controls a religion
 	controls_religion = cao_dai
 	
-	religion = berith
+	religion = cao_dai
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+k_tenno = {
+	color = { 190 030 030 }
+	
+	capital = 53
+	
+	title = "HEAD_SHINTO"
+	foa = "TENNO_FOA"
+	
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = shinto
+	
+	religion = shinto
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+k_soka_gakkai = {
+	color = { 055 030 200 }
+	
+	capital = 98
+	
+	title = "HEAD_SOKA_GAKKAI"
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = soka_gakkai
+	
+	religion = soka_gakkai
 	
 	# Cannot be held as a secondary title
 	primary = yes
