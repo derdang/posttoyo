@@ -22,7 +22,6 @@ christian = {
 	ai_convert_same_group = 2 # always try to convert
 	ai_convert_other_group = 2 # always try to convert
 	
-	color = { 0.8 0.8 0.6 }
 	
 	# Names given only to Christian characters (base names)
 	male_names = {
@@ -122,7 +121,6 @@ muslim = {
 	ai_convert_other_group = 1 # try to convert if ai_zeal is high
 	ai_fabricate_claims = no
 	
-	color = { 0 0.6 0 }
 	
 	interface_skin = { muslim_interface }
 	
@@ -285,7 +283,6 @@ pagan_group = {
 	ai_convert_other_group = 0	# never try to convert
 	ai_fabricate_claims = no
 	
-	color = { 0.6 0.0 0.0 }
 	
 	interface_skin = { pagan_interface }
 	
@@ -298,7 +295,7 @@ pagan_group = {
 	female_names = {
 		Aslaug Bothild Björg Freja Grima Gytha Kráka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
 	}
-		pagan = { # Use for misc other pagans
+	pagan = { # Use for misc other pagans
 		graphical_culture = pagangfx
 		alternate_start = { always = no }
 
@@ -333,8 +330,7 @@ pagan_group = {
 		dynamic_cult = no
 		secret_religion = no
 	}
-	
-		ua_dab = { #Unreformed Hmong Shamanism
+	ua_dab = { #Unreformed Hmong Shamanism
 		graphical_culture = pagangfx
 		alternate_start = { always = no }
 
@@ -395,6 +391,69 @@ pagan_group = {
 		religious_clothing_head = 14
 		religious_clothing_priest = 10
 	}
+	seirei = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 31
+		heresy_icon = 33
+		
+		color = { 190 200 050 }
+		
+		high_god_name = GOD_DAINICHI_AMATERASU
+		
+		god_names = {
+			GOD_AMIDA_KIRISUTO GOD_ISUKURI GOD_MARIA_KANNON
+		}
+		evil_god_names = {
+			SETAN AKUMA
+		}
+		scripture_name = THE_SEISHOKYO
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = japonic
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = seirei_reformed
+	}
+	seirei_reformed = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 32
+		heresy_icon = 33
+		
+		color = { 220 230 055 }
+		
+		high_god_name = GOD_DAINICHI_AMATERASU
+		
+		god_names = {
+			GOD_AMIDA_KIRISUTO GOD_ISUKURI GOD_MARIA_KANNON
+		}
+		evil_god_names = {
+			SETAN AKUMA
+		}
+		scripture_name = THE_SEISHOKYO
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = japonic
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
 }
 
 
@@ -408,7 +467,6 @@ jewish_group = {
 	ai_convert_same_group = 2 # always try to convert
 	ai_convert_other_group = 1	# try to convert if ai_zeal is high
 	
-	color = { 0.1 0.7 1.0 }
 	
 	interface_skin = { jews_interface }
 	
@@ -467,7 +525,6 @@ indian_group = {
 	ai_convert_same_group = 1 # try to convert if ai_zeal is high
 	ai_convert_other_group = 2	# always try to convert
 	
-	color = { 0.8 0.4 0.0 }
 	
 	interface_skin = { indian_interface muslim_interface }
 	
@@ -633,7 +690,6 @@ eastern = {
 	graphical_culture = indiangfx
 	playable = yes
 	
-	color = { 0.6 0.8 0.7 }
 	
 	
 	cao_dai = {
@@ -686,8 +742,7 @@ buddhist_group = {
 	graphical_culture = indiangfx
 	playable = yes
 	
-	color = { 0.6 0.8 0.7 }
-	
+	interface_skin = { indian_interface muslim_interface }
 	
 	mahayana = {
 		graphical_culture = chinesegfx
@@ -707,7 +762,7 @@ buddhist_group = {
 		}
 		
 		evil_god_names = {
-			NARAKA
+			NARAKA MARA
 		}
 		
 		piety_name = KARMA
@@ -746,7 +801,7 @@ buddhist_group = {
 		}
 		
 		evil_god_names = {
-			NARAKA
+			NARAKA MARA
 		}
 		
 		piety_name = KARMA
@@ -810,6 +865,8 @@ buddhist_group = {
 		icon = 16
 		heresy_icon = 17
 		
+		interface_skin = { muslim_interface }
+		
 		color = { 200 200 200 }
 		parent = dharmayuttika
 		
@@ -842,6 +899,237 @@ buddhist_group = {
 		priests_can_inherit = no
 		
 		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	soka_gakkai = {
+		graphical_culture = buddhistgfx
+
+		icon = 24
+		heresy_icon = 25
+		
+		color = { 055 030 200 }
+		
+		scripture_name = MYOHO_RENGE_KYO
+		priest_title = B_MONK
+		
+		high_god_name = GOD_DHARMA
+		
+		god_names = {
+			 GOD_SHAKA GOD_NICHIREN GOD_MONJU GOD_IKEDA
+		}
+		
+		evil_god_names = {
+			MARA
+		}
+		
+		piety_name = SOKA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = eastern
+		intermarry = japonic
+		intermarry = seirei
+		intermarry = seirei_reformed
+		
+		feminist = no
+		female_temple_holders = no
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	shingon_shu = {
+		graphical_culture = buddhistgfx
+
+		icon = 24
+		heresy_icon = 25
+		
+		color = { 020 155 180 }
+		parent = soka_gakkai
+		
+		scripture_name = DAINICHI_KYO
+		priest_title = B_MONK
+		
+		high_god_name = DAINICHI
+		
+		god_names = {
+			 GOD_FUDO_MYO_O GOD_SHAKA GOD_MONJU GOD_JIZO GOD_AMIDA GOD_YAKUSHI GOD_MIROKU
+		}
+		
+		evil_god_names = {
+			MARA
+		}
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = eastern
+		intermarry = japonic
+		intermarry = seirei
+		intermarry = seirei_reformed
+		
+		feminist = no
+		female_temple_holders = no
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+}
+japonic = {
+	has_coa_on_barony_only = yes
+	graphical_culture = indiangfx
+	playable = yes
+	
+	
+	shinto = {
+		graphical_culture = chinesegfx
+
+
+		icon = 29
+		heresy_icon = 29
+		
+		color = { 190 030 030 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_THE_EMPEROR
+
+		god_names = {
+			GOD_THE_EMPEROR GOD_AMATERASU GOD_TSUKUYOMI GOD_SUSANOO GOD_UZUME GOD_INARI GOD_TENJIN GOD_EBISU GOD_RYUJIN GOD_JIZO
+		}
+		
+		evil_god_names = {
+			AKUMA
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		can_grant_invasion_cb = invasion
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		rel_head_defense = yes
+		max_consorts = 3 #can take concubines
+
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_KOJIKI
+		priest_title = PRIEST
+		piety_name = PURITY
+		
+		intermarry = seirei
+		intermarry = seirei_reformed
+		intermarry = buddhist_group
+		intermarry = eastern
+	}
+	tenrikyo = {
+		graphical_culture = chinesegfx
+
+
+		icon = 30
+		heresy_icon = 30
+		
+		color = { 120 1560 040 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_TENRI_O_NO_MIKOTO
+
+		god_names = {
+			GOD_OYAGAMISAMA GOD_TSUKIHI
+		}
+		
+		evil_god_names = {
+			ASHIKI
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_SANGENTEN
+		priest_title = PRIEST
+		piety_name = INNEN
+		
+		intermarry = seirei
+		intermarry = seirei_reformed
+		intermarry = buddhist_group
+		intermarry = eastern
+	}
+	chinomi = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 26
+		heresy_icon = 28
+		
+		color = { 170 100 085 }
+		
+		high_god_name = GOD_KIMUN_KAMUY
+		
+		god_names = {
+			GOD_IRESU_KAMUY GOD_TOKAPUCHUPU_KAMUY GOD_REPUN_KAMUY GOD_KOTANKOR_KAMUY
+		}
+		evil_god_names = {
+			WEN_KAMUY PAUCHI_KAMUY
+		}
+		scripture_name = THE_YUKAR
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = seirei
+		intermarry = seirei_reformed
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = chinomi_reformed
+	}
+	chinomi_reformed = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 27
+		heresy_icon = 28
+		
+		color = { 230 135 115 }
+		
+		high_god_name = GOD_KIMUN_KAMUY
+		
+		god_names = {
+			GOD_IRESU_KAMUY GOD_TOKAPUCHUPU_KAMUY GOD_REPUN_KAMUY GOD_KOTANKOR_KAMUY
+		}
+		evil_god_names = {
+			WEN_KAMUY PAUCHI_KAMUY
+		}
+		scripture_name = THE_YUKAR
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = seirei
+		intermarry = seirei_reformed
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		religious_clothing_head = 14
 		religious_clothing_priest = 10
 	}
 }
