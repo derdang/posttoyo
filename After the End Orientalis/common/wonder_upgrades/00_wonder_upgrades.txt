@@ -2867,7 +2867,6 @@ upgrade_moat_pit = { # Pit Moat
 	gold_cost_flat = 450
 	gold_cost_ticking = 1
 	owner_modifier = {
-		custom_modifier_text = execution_possible_modifier_tt
 	}
 	local_modifier = {
 		siege_defence = 0.05
@@ -2917,7 +2916,6 @@ upgrade_moat_water = { # Water Moat
 	gold_cost_flat = 450
 	gold_cost_ticking = 1
 	owner_modifier = {
-		custom_modifier_text = execution_possible_modifier_tt
 	}
 	local_modifier = {
 		siege_defence = 0.05
@@ -4072,5 +4070,53 @@ upgrade_perfume_cauldron = {
 	owner_modifier = {
 		monthly_character_prestige = 0.05
 		poet_opinion = 5
+	}
+}
+upgrade_tenshu = { # Tenshu Fortification
+	#The Grand Central Keep that rises above all others in the Castle Complex, standing upon a foundation of dry stone.
+	#Construct massive individual fortresses within the wider network.
+	picture = GFX_upgrade_icon_stones
+
+	potential = {
+	
+	}
+	allow = {
+
+	}
+	
+	build_time = 60
+	gold_cost_flat = 500
+	gold_cost_ticking = 1
+
+	owner_modifier = {
+	}
+	
+	local_modifier = {
+		heavy_infantry = 100
+		siege_defence = 0.05
+	}
+	flags = {
+		towering
+	}
+	active = {
+		#always
+	}
+}
+upgrade_cherry_blossom_orchard = {
+	picture = GFX_upgrade_icon_roses_white
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_plural
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 0.15
+		gardener_opinion = 5
+		japonic_opinion = 5
 	}
 }
