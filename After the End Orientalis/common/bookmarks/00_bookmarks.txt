@@ -1,10 +1,10 @@
-bm_terra_nullius = {
-	name = "BM_TERRA_NULLIUS"
-	desc = "BM_TERRA_NULLIUS_DESC"
+bm_feuding_dragons = { #Vietnam Region
+	name = "BM_FEUDING_DRAGONS"
+	desc = "BM_FEUDING_DRAGONS_DESC"
 	date = 2605.5.28
 	
 	era = yes
-	picture = GFX_pick_era_image_1
+	picture = GFX_pick_era_image_2
 	custom_start = yes
 	
 	selectable_character = {
@@ -72,3 +72,42 @@ bm_terra_nullius = {
 		}
 	}
 }
+
+bm_the_land_of_stupas = { #Thailand, Burma/Myanmar, Laos, and Cambodia
+	name = "BM_THE_LAND_OF_STUPAS"
+	desc = "BM_THE_LAND_OF_STUPAS_DESC"
+	date = 2605.5.28
+	
+	era = yes
+	picture = GFX_pick_era_image_5
+	custom_start = yes
+}
+bm_the_rising_sun = { #Japan and The Russian Far East
+	name = "BM_THE_RISING_SUN"
+	desc = "BM_THE_RISING_SUN_DESC"
+	date = 2605.5.28
+	
+	era = yes
+	picture = GFX_pick_era_image_1
+	custom_start = yes
+}
+bm_the_warring_states = { #China, Korea, Tibet
+	name = "BM_THE_WARRING_STATES"
+	desc = "BM_THE_WARRING_STATES_DESC"
+	date = 2605.5.28
+	
+	era = yes
+	picture = GFX_pick_era_image_4
+	custom_start = yes
+}
+bm_at_the_crossroads = { #Maritime SEA (Malaysia, Indonesia and the Phillipines)
+	name = "BM_AT_THE_CROSSROADS"
+	desc = "BM_AT_THE_CROSSROADS_DESC"
+	date = 2605.5.28
+	
+	era = yes
+	picture = GFX_pick_era_image_3
+	custom_start = yes
+}
+
+#Micronesia and Papua New Guinea are not in the era focus
