@@ -1,10 +1,37 @@
-bm_feuding_dragons = { #Vietnam Region
-	name = "BM_FEUDING_DRAGONS"
-	desc = "BM_FEUDING_DRAGONS_DESC"
+bm_the_warring_states = { #China, Tibet, and Mongolia
+	name = "BM_THE_WARRING_STATES"
+	desc = "BM_THE_WARRING_STATES_DESC"
 	date = 2605.5.28
 	
 	era = yes
 	picture = GFX_pick_era_image_1
+	custom_start = yes
+}
+bm_the_rising_sun = { #Japan, Taiwan and Korea
+	name = "BM_THE_RISING_SUN"
+	desc = "BM_THE_RISING_SUN_DESC"
+	date = 2605.5.28
+	
+	era = yes
+	picture = GFX_pick_era_image_2
+	custom_start = yes
+}
+bm_the_frozen_north = { #Far East Russia
+	name = "BM_THE_FROZEN_NORTH"
+	desc = "BM_THE_FROZEN_NORTH_DESC"
+	date = 2605.5.28
+	
+	era = yes
+	picture = GFX_pick_era_image_3
+	custom_start = yes
+}
+bm_the_land_of_stupas = { #Indochina Region: Vietnam, Laos, and Cambodia
+	name = "BM_THE_LAND_OF_STUPAS"
+	desc = "BM_THE_LAND_OF_STUPAS_DESC"
+	date = 2605.5.28
+	
+	era = yes
+	picture = GFX_pick_era_image_4
 	custom_start = yes
 	
 	selectable_character = {
@@ -23,10 +50,41 @@ bm_feuding_dragons = { #Vietnam Region
 			dynasty=2875000
 		}
 	}
+}
+bm_at_the_crossroads = { #Maritime SEA (Malaysia, Indonesia and the Phillipines)
+	name = "BM_AT_THE_CROSSROADS"
+	desc = "BM_AT_THE_CROSSROADS_DESC"
+	date = 2605.5.28
+	
+	era = yes
+	picture = GFX_pick_era_image_5
+	custom_start = yes
+}
+
+bm_feuding_dragons = { #Vietnam Region
+	name = "BM_FEUDING_DRAGONS"
+	desc = "BM_FEUDING_DRAGONS_DESC"
+	date = 2605.5.28
+	custom_start = yes
+	
+	selectable_character = {
+		id = 2875014 #Nguyen Hoang
+		age = 25
+		title = k_thang_long
+		title_name = k_thang_long
+		
+		character = {
+			dna = cfimkolbecc
+			properties = ac00bc00000
+			religion="mahayana"
+			culture="tonkinese"
+			government = feudal_government
+			dynasty=2875000
+		}
+	}
 	selectable_character = {
 		id = 2877007 #Nguyen Minh Mac
 		age = 25
-		name = ERA_CHAR_NAME_2
 		title = k_thuan_hoa
 		title_name = k_thuan_hoa
 		
@@ -42,7 +100,6 @@ bm_feuding_dragons = { #Vietnam Region
 	selectable_character = {
 		id = 2877016 #Nguyen Van Trang
 		age = 25
-		name = ERA_CHAR_NAME_3
 		title = k_gia_dhinh
 		title_name = k_gia_dhinh
 		
@@ -58,7 +115,6 @@ bm_feuding_dragons = { #Vietnam Region
 	selectable_character = {
 		id = 1177000 #Pham Van Che
 		age = 55
-		name = ERA_CHAR_NAME_4
 		title = d_ninh_thuan
 		title_name = d_ninh_thuan
 		
@@ -72,42 +128,3 @@ bm_feuding_dragons = { #Vietnam Region
 		}
 	}
 }
-
-bm_the_land_of_stupas = { #Thailand, Burma/Myanmar, Laos, and Cambodia
-	name = "BM_THE_LAND_OF_STUPAS"
-	desc = "BM_THE_LAND_OF_STUPAS_DESC"
-	date = 2605.5.28
-	
-	era = yes
-	picture = GFX_pick_era_image_2
-	custom_start = yes
-}
-bm_the_rising_sun = { #Japan and The Russian Far East
-	name = "BM_THE_RISING_SUN"
-	desc = "BM_THE_RISING_SUN_DESC"
-	date = 2605.5.28
-	
-	era = yes
-	picture = GFX_pick_era_image_3
-	custom_start = yes
-}
-bm_the_warring_states = { #China, Korea, Tibet
-	name = "BM_THE_WARRING_STATES"
-	desc = "BM_THE_WARRING_STATES_DESC"
-	date = 2605.5.28
-	
-	era = yes
-	picture = GFX_pick_era_image_4
-	custom_start = yes
-}
-bm_at_the_crossroads = { #Maritime SEA (Malaysia, Indonesia and the Phillipines)
-	name = "BM_AT_THE_CROSSROADS"
-	desc = "BM_AT_THE_CROSSROADS_DESC"
-	date = 2605.5.28
-	
-	era = yes
-	picture = GFX_pick_era_image_5
-	custom_start = yes
-}
-
-#Micronesia and Papua New Guinea are not in the era focus
