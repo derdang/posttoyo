@@ -2,6 +2,7 @@ name = "After the End Orientalis"
 path = "mod/After the End Orientalis"
 user_dir = "After the End Orientalis"
 
+replace_path = "common/dynasties"
 replace_path = "history/provinces"
 replace_path = "history/titles"
 replace_path = "history/wars"
