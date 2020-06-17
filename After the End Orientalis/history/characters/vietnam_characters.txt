@@ -1224,6 +1224,7 @@
 	trait=quick
 	2582.1.1={birth=yes}
 }
+###########Non-Vietnamese Lords###########
 #The Phoenix of Champa: The Princes of Panduranga
 1177000={ #Panduranga Start Character
 	name="Pham Van"
@@ -1291,30 +1292,68 @@
 	trait=lustful
 	2580.1.1={birth=yes}
 }
+
+1022000={ #Tai Lord Father
+	name="Sing"
+	dynasty=1022000
+	culture=tai
+	religion=dharmayuttika
+	martial=3
+	diplomacy=4
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=misguided_warrior
+	trait=strategist
+	trait=chaste
+	trait=content
+	trait=trusting
+	trait=stubborn
+	add_claim = d_son_la
+	2540.1.1={birth=yes}
+}
+
+1022001={ #Tai Lord
+	name="Hum"
+	dynasty=1022000
+	culture=tai
+	religion=dharmayuttika
+	father = 1022000
+	martial=6
+	diplomacy=2
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=brilliant_strategist
+	trait=gamer
+	trait=brave
+	trait=ambitious
+	trait=paranoid
+	trait=just
+	add_claim = d_son_la
+	2570.1.1={birth=yes}
+}
+1022002={ #Tai Lord Son
+	name="Leung"
+	dynasty=1022000
+	culture=tai
+	religion=dharmayuttika
+	father = 1022001
+	martial=3
+	diplomacy=2
+	stewardship=2
+	intrigue=2
+	learning=2
+	trait=willful
+	trait=idolizer
+	2600.1.1={birth=yes}
+}
 ###########PLACEHOLDER- For Lords part of larger undefined groups###########
 2500000={ #Hmong Lord
 	name="Alang"
 	dynasty=2500000
 	culture=hmong
 	religion=ua_dab
-	martial=3
-	diplomacy=3
-	stewardship=4
-	intrigue=5
-	learning=5
-	trait=charismatic_negotiator
-	trait=scholar
-	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
-	2580.1.1={birth=yes}
-}
-1022000={ #Tai Lord
-	name="Chakrii"
-	dynasty=1022000
-	culture=tai
-	religion=dharmayuttika
 	martial=3
 	diplomacy=3
 	stewardship=4

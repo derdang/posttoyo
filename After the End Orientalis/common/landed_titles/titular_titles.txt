@@ -11,6 +11,9 @@ k_champa = {
 	
 	capital = 167 #Da Nang
 	culture = cham
+	allow = {
+		culture = cham
+	}
 }
 k_sedang = {
 	color = { 0 0 139 }
@@ -18,13 +21,21 @@ k_sedang = {
 	
 	capital = 175 #Gia Lai
 	culture = jarai
+	allow = {
+		culture = jarai
+	}
 }
 k_hmong = {
 	color = { 50 100 139 }
 	color2={ 255 255 255 }
 	
+	hmong = "A hua va"
+	
 	capital = 155 #Son La
 	culture = hmong
+	allow = {
+		culture = hmong
+	}
 }
 k_sip_song_chau_tai = {
 	color = { 0 38 84 }
@@ -32,6 +43,9 @@ k_sip_song_chau_tai = {
 	
 	capital = 155 #Son La
 	culture = tai
+	allow = {
+		culture = tai
+	}
 }
 k_tay_nung = {
 	color = { 18 14 31 }
@@ -39,6 +53,9 @@ k_tay_nung = {
 	
 	capital = 149 #Ha Giang
 	culture = tay_nung
+	allow = {
+		culture = tay_nung
+	}
 }
 d_republic_of_danang = {
 	color = { 51 134 236 }

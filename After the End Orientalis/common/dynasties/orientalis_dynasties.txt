@@ -5,7 +5,20 @@
 5003 = { name="Pham" culture=khrom } #Khmer Khrom North
 5004 = { name="Khiev" culture=khrom } #Khmer Khrom South
 
-1022000 = { name="Saeueng" culture=tai }
+1022000 = { name="Kham" culture=tai 
+	coat_of_arms = {
+		religion = dharmayuttika
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1025000 = { name="Zheung" culture=tay_nung }
 
