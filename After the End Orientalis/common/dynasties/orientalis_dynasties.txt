@@ -1782,8 +1782,21 @@ coat_of_arms = {
 2875002 = { name="Thuy" culture=tonkinese } #Duke of Hai Phoung
 2875003 = { name="Dang" culture=tonkinese } #Duke of Ha Long
 2875004 = { name="Ngoc" culture=tonkinese } #Nguyen Hoang Consort
-2875005 = { name="Bui" culture=tonkinese } #start of the random characters
-2875006 = { name="Do" culture=tonkinese }
+2875005 = { name="Bui" culture=tonkinese } 
+2875006 = { name="Phan" culture=tonkinese #BIDV
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2875007 = { name="Ho" culture=tonkinese }
 2875008 = { name="Ngo" culture=tonkinese }
 2875009 = { name="Lieu" culture=tonkinese } #shared with central
@@ -1982,10 +1995,24 @@ coat_of_arms = {
 2875202 = { name="Hac" culture=tonkinese }
 2875203 = { name="Hua" culture=tonkinese }
 2875204 = { name="Sài" culture=tonkinese }
+2875205 = { name="Do" culture=tonkinese }
 
 
 2876000 = { name="Vo" culture=annamese } #Duke of Nghe Tinh
-2876001 = { name="Kim" culture=annamese } #Merchant of Da Nang
+2876001 = { name="Ðang Lê" culture=annamese #Merchant of Da Nang
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2876002 = { name="Huynh" culture=annamese } #Count of Quang Nam
 2876003 = { name="Dinh Sang" culture=annamese } #Count of Quang Ngai
 2876004 = { name="Lieu" culture=annamese } #shared with north
@@ -2188,6 +2215,7 @@ coat_of_arms = {
 2876202 = { name="Do" culture=annamese }
 2876203 = { name="Ho" culture=annamese }
 2876204 = { name="Ngo" culture=annamese }
+2876205 = { name="Ngo" culture=annamese }
 
 
 2877000 = { name="Nguyen Minh" culture=cochinchinese
@@ -2241,9 +2269,35 @@ coat_of_arms = {
 2877010 = { name = "Le" culture =cochinchinese } #Nguyen Minh Consort
 2877011 = { name="Nguyen" culture=cochinchinese } #Strange Prince of Rach Goi
 2877012 = { name="Dang-Thái" culture=cochinchinese } #Wonder who this could be?
-2877013 = { name="Canh" culture=cochinchinese }
-2877014 = { name="Cao" culture=cochinchinese }
-2877015 = { name="Chan" culture=cochinchinese }
+2877013 = { name="To Van" culture=cochinchinese #Paris By Night Director
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2877014 = { name="Mai Kieu" culture=cochinchinese #Vinamilk
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2877015 = { name="Hiep" culture=cochinchinese } #Vinamilk husband
 2877016 = { name="Kanh" culture=cochinchinese }
 2877017 = { name="Lang" culture=cochinchinese }
 2877018 = { name="Trinh" culture=cochinchinese }
@@ -2441,6 +2495,9 @@ coat_of_arms = {
 2877211 = { name="Bach" culture=cochinchinese }
 2877212 = { name="Banh" culture=cochinchinese }
 2877213 = { name="Cam" culture=cochinchinese }
+2877214 = { name="Canh" culture=cochinchinese }
+2877215 = { name="Cao" culture=cochinchinese }
+2877216 = { name="Chan" culture=cochinchinese }
 
 
 2878000 = { name="Mau" culture=muong }
@@ -2461,7 +2518,7 @@ coat_of_arms = {
 2878015 = { name="Phuoc" culture=muong }
 
 
-2879000 = { name="Le Bui" culture=hoa } #Sino-Viet Names
+2879000 = { name="Quat" culture=hoa } #Chuism founder
 2879001 = { name="Du Ninh" culture=hoa }
 2879002 = { name="Hong" culture=hoa }
 2879003 = { name="Ngo" culture=hoa }
@@ -2661,6 +2718,7 @@ coat_of_arms = {
 2879197 = { name="Vu Van" culture=hoa }
 2879199 = { name="Úc" culture=hoa }
 2879200 = { name="Uat" culture=hoa }
+2879201 = { name="Le Bui" culture=hoa } #Sino-Viet Names
 
 #Tagalog Dynasties
 3900000 = { name="Tan" culture=tagalog }

@@ -456,6 +456,26 @@
 	trait=lustful
 	2580.1.1={birth=yes}
 }
+2875018={ #Chair of BIDV
+	name="Lâm"
+	dynasty=2875006
+	culture=tonkinese
+	religion=mahayana
+	martial=1
+	diplomacy=2
+	stewardship=7
+	intrigue=1
+	learning=6
+	trait=thrifty_clerk
+	trait=administrator
+	trait=shrewd
+	trait=slothful
+	trait=stubborn
+	trait=cruel
+	trait=ambitious
+	trait=quick
+	2582.1.1={birth=yes}
+}
 #Minor Annamese Lords
 2876000={
 	name="Vinh" #Duke of Nghe Tinh
@@ -476,20 +496,21 @@
 	2580.1.1={birth=yes}
 }
 2876001={
-	name="Phuc" #Sleezy Merchant Man of Da Nang
+	name="Vu" #Coffee King of Da Nang
 	dynasty=2876001
 	culture=annamese
 	religion=mahayana
 	martial=3
 	diplomacy=3
 	stewardship=8
-	intrigue=5
-	learning=5
+	intrigue=2
+	learning=2
 	trait=fortune_builder
 	trait=scholar
 	trait=shrewd
 	trait=content
 	trait=trusting
+	trait=diligent
 	trait=administrator
 	2580.1.1={birth=yes}
 }
@@ -1070,6 +1091,100 @@
 	trait=feeble
 	2582.1.1={birth=yes}
 }
+2877025={ #Paris by Night Producer
+	name="Lai"
+	dynasty=2877013
+	culture=cochinchinese
+	religion=catholic
+	martial=0
+	diplomacy=7
+	stewardship=5
+	intrigue=2
+	learning=6
+	trait=thrifty_clerk
+	trait=socializer
+	trait=diligent
+	trait=erudite
+	trait=uncouth
+	trait=poet
+	trait=patient
+	trait=content
+	trait=trusting
+	2582.1.1={birth=yes}
+}
+2877026={ #Vinamilk Queen
+	name="Lien"
+	dynasty=2877014
+	culture=cochinchinese
+	religion=cao_dai
+	dna="bgacbhgbaba"
+	female = yes
+	martial=1
+	diplomacy=5
+	stewardship=5
+	intrigue=2
+	learning=6
+	trait=thrifty_clerk
+	trait=gardener
+	trait=diligent
+	trait=erudite
+	trait=shrewd
+	trait=poet
+	trait=patient
+	trait=kind
+	trait=trusting
+	2540.1.1={birth=yes}
+	2570.1.1={add_matrilineal_spouse=2877027}
+	2600.1.1 ={death=yes}
+}
+2877027={ #Vinamilk Queen Husband
+	name="Nguyen"
+	dynasty=2877015
+	culture=cochinchinese
+	religion=mahayana
+	dna="bgacbhgbaba"
+	martial=1
+	diplomacy=5
+	stewardship=5
+	intrigue=2
+	learning=6
+	trait=naive_appeaser
+	trait=seducer
+	trait=diligent
+	trait=erudite
+	trait=shrewd
+	trait=poet
+	trait=patient
+	trait=kind
+	trait=trusting
+	2530.1.1={birth=yes}
+	2570.1.1={add_matrilineal_spouse=2877027}
+	2605.1.1 ={death=yes}
+}
+2877028={ #Vinamilk Queen Son
+	name="Minh"
+	dynasty=2877014
+	culture=cochinchinese
+	religion=mahayana
+	mother = 2877026
+	father = 2877027
+	martial=1
+	diplomacy=1
+	stewardship=1
+	intrigue=6
+	learning=1
+	secret_religion = cao_dai
+	trait=intricate_webweaver
+	trait=schemer
+	trait=diligent
+	trait=erudite
+	trait=shrewd
+	trait=wroth
+	trait=proud
+	trait=kind
+	trait=cynical
+	2575.1.1={birth=yes}
+}
 #Muong Prince
 2878000={ #Muong Prince
 	name="Chinh"
@@ -1088,6 +1203,26 @@
 	trait=trusting
 	trait=administrator
 	2580.1.1={birth=yes}
+}
+2879000={ #Founder of Chuism
+	name="Li"
+	dynasty=2879000
+	culture=hoa
+	religion=mahayana
+	martial=6
+	diplomacy=3
+	stewardship=7
+	intrigue=2
+	learning=6
+	trait=thrifty_clerk
+	trait=administrator
+	trait=diligent
+	trait=erudite
+	trait=poet
+	trait=cruel
+	trait=ambitious
+	trait=quick
+	2582.1.1={birth=yes}
 }
 #The Phoenix of Champa: The Princes of Panduranga
 1177000={ #Panduranga Start Character
