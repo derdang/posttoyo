@@ -1,0 +1,87 @@
+###########Cambodian Characters###########
+
+# Khmer
+
+#Chamic
+#1177 - Cham
+#1178 - Jarai
+
+#Hmong-Mien
+# 2498 Mien
+# 2499 Hmu
+# 2500 Hmong
+
+#Northern Tai
+# 1022 Tai
+# 1023 Bouyei
+# 1024 Zhuang
+# 1025 Tay-Nung
+
+###########Cambodian Dynasties###########
+
+#Important Characters go here
+
+###########Non-Cambodian Dynasties###########
+
+#Rival Clan of Hmong
+2500001={ #Hmong Lord
+	name="Cai"
+	dynasty=2500001
+	culture=hmong
+	religion=catholic
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+	add_rival = 2500000
+}
+
+1022003={ #Tai Count under Luang Prabang
+	name="Haw"
+	dynasty=1022001
+	culture=tai
+	religion=dharmayuttika
+	martial=2
+	diplomacy=2
+	stewardship=2
+	intrigue=2
+	learning=2
+	trait=misguided_warrior
+	trait=zealous
+	trait=content
+	trait=paranoid
+	trait=just
+	2570.1.1={birth=yes}
+}
+
+1177003={ #Kampong Cham Lord
+	name="Sri Mara"
+	dynasty=1177001
+	culture=cham
+	religion=senthang
+	martial=1
+	diplomacy=2
+	stewardship=2
+	intrigue=2
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=zealous
+	trait=honest
+	trait=content
+	trait=trusting
+	trait=chaste
+	trait=temperate
+	trait=humble
+	trait=erudite
+	2550.1.1={birth=yes}
+	2648.1.1={death=yes}
+}
