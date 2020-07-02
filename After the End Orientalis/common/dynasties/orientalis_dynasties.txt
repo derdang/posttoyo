@@ -3003,7 +3003,20 @@
 
 
 2879000 = { name="Quat" culture=hoa } #Chuism founder
-2879001 = { name="Du Ninh" culture=hoa }
+2879001 = { name="Bà" culture=hoa #Holy Mother of the Realm, a big time local goddess worshipped in the Mekong, (potentially a Vietnamese incarnation of the Chinese Mazu)
+coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2879002 = { name="Hong" culture=hoa }
 2879003 = { name="Ngo" culture=hoa }
 2879004 = { name="Wu" culture=hoa }
@@ -3203,6 +3216,7 @@
 2879199 = { name="Úc" culture=hoa }
 2879200 = { name="Uat" culture=hoa }
 2879201 = { name="Le Bui" culture=hoa } #Sino-Viet Names
+2879202 = { name="Du Ninh" culture=hoa }
 
 #Tagalog Dynasties
 3900000 = { name="Tan" culture=tagalog }
