@@ -18,6 +18,26 @@ character_event = {
 			add_province_modifier = { name = landmark_hoan_kiem_lake duration = -1 }
 			add_province_modifier = { name = landmark_hcm_mausoleum duration = -1 }
 		}
+		146 = {
+			add_province_modifier = { name = landmark_ha_long_bay duration = -1 }
+		}
+		161 = {
+			add_province_modifier = { name = landmark_forbidden_city_vn duration = -1 }
+			add_province_modifier = { name = landmark_phu_cam_cathedral duration = -1 }
+		}
+		168 = {
+			add_province_modifier = { name = landmark_my_son_ruins duration = -1 }
+			add_province_modifier = { name = landmark_ngu_hanh_son duration = -1 }
+		}
+		180 = {
+			add_province_modifier = { name = landmark_saigon_cathedral duration = -1 }
+		}
+		183 = {
+			add_province_modifier = { name = landmark_tay_ninh_cathedral duration = -1 }
+		}
+		194 = {
+			add_province_modifier = { name = landmark_sam_mountain duration = -1 }
+		}
 		set_global_flag = landmarks_set
 	}
 }
