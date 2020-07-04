@@ -1,0 +1,94 @@
+###########Cao Dai Pilgrimage Events###########
+cd_pilgrimage;Go On a [cao_dai.GetName] Pilgrimage;;;;;;;;;;;;;x
+cd_pilgrimage_desc;You are ready to embark on a Pilgrimage to the Holy See of Cao Dai and to Seance with the Spirits!;;;;;;;;;;;;;x
+
+doing_seance;Doing Seance;;;;;;;;;;;;;x
+doing_seance_desc;This character is doing a Seance;;;;;;;;;;;;;x
+
+EVTNAME_cd_pilgrim_prep;Pilgrimage Preparation;;;;;;;;;;;;;x
+EVTDESC_cd_pilgrim_prep;The time has come for you to undertake the holy pilgrimage to Tay Ninh to recieve your blessing before the Heavenly Lord, [cao_dai.GetName]. \n\nBut first, you must prepare for the journey.;;;;;;;;;;;;;x
+EVTOPT_cd_pilgrim_prep_cancel;On second thought, now is a bad time to travel.;;;;;;;;;;;;;x
+EVTOPT_cd_pilgrim_prep_humble;I need nothing beyond the clothes on my back.;;;;;;;;;;;;;x
+EVTOPT_cd_pilgrim_prep_carriage;I shall travel in a splendid carriage.;;;;;;;;;;;;;x
+EVTOPT_cd_pilgrim_prep_retinue;I will bring a retinue of bodyguards for protection.;;;;;;;;;;;;;x
+
+EVTNAME_pilgrim_tay_ninh;The Holy City of Tay Ninh;;;;;;;;;;;;;x
+EVTDESC_pilgrim_tay_ninh;As you approach the city of Tay Ninh, the colorful red, blue, and yellow banner guard welcomes you, blessing you for your stay in the holy city. It has been said that upon this city the Holy Prophet, Chieu Minh, saw the visage of the one true god. His raidiance bringing forth the great redemption of humanity! The Colors of each guard representing the great unification of Buddhist, Confuciuist, and Daoist thought under the mercy of [cao_dai.GetName]. This example the [HEAD_CAO_DAI.GetName] hopes will be which all the corners of the earth can unite in devotion to the one true lord of the universe.;;;;;;;;;;;;;x
+EVTOPT_pilgrim_approach;The Holy Cathedral, I must go!;;;;;;;;;;;;;
+
+EVTNAME_viewing_the_one_god;The Lord, [cao_dai.GetName];;;;;;;;;;;;;x
+EVTDESC_viewing_the_one_god;You enter the holy cathedral bowing before the assortment of clergymen whom watch the disciples dispense the holy sacraments to devotees. You are awed by the open eye of [cao_dai.GetName], his still tranquility you could see the Enlightment of the Buddha, the Grand Harmony of Laozi, the Supreme Order of Kongzhi, and the devotion of Christ emunating through [cao_dai.GetName]. You lower yourself to the ground to bow before his might.;;;;;;;;;;;;;x
+EVTOPT_heavenly_father;Heavenly Father, I plea your mercy!;;;;;;;;;;;;;
+
+EVTNAME_seance_name;Communing with the Saints;;;;;;;;;;;;;x
+EVTDESC_seance_cao_dai;After completing your trip to the Altar of [cao_dai.GetName], you come across a medium who lays upon the ground on a velvet cloth thier sage brush and urn. They offer you a chance to read your destiny by communing with the saints on your behalf. It is a tradition that every being under the grace of The Lord, commune with the saintly spirits blessed by him. You may reject this offer but doing so will leave you without the ability to know which saints blessed you in the name of the Supreme. You watch intently as the medium brushes the sage upon the urn. The Medium convulses as the saint enters their body... The Medium slumps over.;;;;;;;;;;;;;x
+EVTOPT_seance_opt;"Oh Saints, come forth from the infinite expanse!";;;;;;;;;;;;;
+EVTOPT_rejected_seance_opt;I do not require a Seance...;;;;;;;;;;;;;
+
+EVTNAME_seance_ends;[cao_dai.GetName]'s Verdict;;;;;;;;;;;;;x
+EVTDESC_seance_ends;You stand quivering as you wait for the medium to let go of the soul of the saint, so that you may recieve their judgement on the whims of the Supreme. It appears that through your interactions with the saint, you were able to learn much about yourself and your place in the grand scheme of existence. The Medium said unto you "Truly [cao_dai.GetName]'s Verdict is all-knowing and most merciful!" You smile as you say...;;;;;;;;;;;;;x
+EVTOPT_plan_faith;"Oh Lord, I place my faith in the Supreme!";;;;;;;;;;;;;x
+EVTOPT_plan_wisdom;"Oh Lord Supreme, I seek your divine wisdom!";;;;;;;;;;;;;x
+EVTOPT_plan_power;"May I be your sword of redemption!";;;;;;;;;;;;;x
+EVTOPT_plan_balance;"I hold my center for you to guide.";;;;;;;;;;;;;x
+
+EVTNAME_seance_faith;A Faithful Deliverance;;;;;;;;;;;;;x
+EVTDESC_seance_faith;The Lord through your medium has made it clear that you are a character whose faith and belief in the all-merciful justice of [cao_dai.GetName] is a sign of true devotion. Much like how Quan Am sought to alleivate the suffering of all as she was instructed, Joan D'Arc died in her devotion to the lord, and Moses never bending survived his trials to set his people free against those that wish to divide us so. Of course, this is only what the medium tells you, you are free to choice whether this seance is the plan, [cao_dai.GetName] choose for you...;;;;;;;;;;;;;x
+EVTOPT_seance_faith;I will devout myself to [cao_dai.GetName]'s Divine Plan;;;;;;;;;;;;;x
+EVTOPT_reject_seance_faith;I place my faith on my own merits.;;;;;;;;;;;;;x
+
+EVTNAME_seance_wisdom;A Sage Advice;;;;;;;;;;;;;x
+EVTDESC_seance_wisdom;The Lord through your medium has made it clear that you are a character whose wise mentoring has placed you closer to understanding why the all-merciful justice of [cao_dai.GetName] is a sign of true devotion. Much like how Ly Bach sought to emulate the timeless nature of the Lord, Understanding Humanity through its nature like Shakespeare, and Lord Hugo whom pierces the allusion of many to the one true order of the Supreme. Of course, this is only what the medium tells you, you are free to choice whether this seance is the plan, [cao_dai.GetName] choose for you...;;;;;;;;;;;;;x
+EVTOPT_seance_wisdom;I must study [cao_dai.GetName]'s Divine Plan;;;;;;;;;;;;;x
+EVTOPT_reject_seance_wisdom;I am wisdom on my own merits.;;;;;;;;;;;;;x
+
+EVTNAME_seance_power;A Warrior's Honor;;;;;;;;;;;;;x
+EVTDESC_seance_power;The Lord through your medium has made it clear that you are a character whose power has placed you closer to understanding the overwhelming majesty of [cao_dai.GetName] as a sign of true devotion. Much like how Muhammad lead his people as a mighty leader and warrior of the faith, Lord Quan Yu fought honorably to slay demons which set upon people to spread ailment and despair, and Lenin's fiery spirit for the world revolution to dismantle all divides and break all chains. Of course, this is only what the medium tells you, you are free to choice whether this seance is the plan, [cao_dai.GetName] choose for you...;;;;;;;;;;;;;x
+EVTOPT_seance_power;My might for [cao_dai.GetName]'s Divine Plan;;;;;;;;;;;;;x
+EVTOPT_reject_seance_power;I will stand mighty on my own.;;;;;;;;;;;;;x
+
+EVTNAME_seance_balance;A Balanced Repose;;;;;;;;;;;;;x
+EVTDESC_seance_balance;The Lord through your medium has made it clear that you are a character whose seeks balance in their life and it to is the divine plan of the Supreme for which you believe has brought you closer to understanding and devoted to his divine plan. Such that principles of Sun Yat-Sen are not to be forgotten, casting Lord Bien Khiem's Foresight to guide steady anchor upon the shore mooring you to an existence which Pasteur ordains as the true balance between the divine and material. Of course, this is only what the medium tells you, you are free to choice whether this seance is the plan, [cao_dai.GetName] choose for you...;;;;;;;;;;;;;x
+EVTOPT_seance_balance;I seek to center myself to [cao_dai.GetName]'s Divine Plan;;;;;;;;;;;;;x
+EVTOPT_reject_seance_balance;I will find a balance worth my merit.;;;;;;;;;;;;;x
+
+EVTNAME_cao_dai_pilgrim_success;Successful Pilgrimage;;;;;;;;;;;;;x
+EVTDESC_cao_dai_pilgrim_success;You return home from your pilgrimage, weary from the road but wiser for the journey. The Time in Tay Ninh was a once in a life time experience and for that you have gained much to contemplate, as well as knowledge that may aid you in the coming years.;;;;;;;;;;;;;x
+EVTOPT_cao_dai_pilgrim_success;I feel closer to the Supreme...;;;;;;;;;;;;;x
+
+###########Cao Dai Seances###########
+EVTNAME_saint_joan;The Saint Joan d'Arc;;;;;;;;;;;;;x
+EVTDESC_saint_joan;Jerking awake with fiery fervor, Emunating from their body is a young girl. Her voice seering in flames spoke much about faith in the lord, and how his mercy made her sacrifice for her country worth the pain she endured upon the pyre. "You must devote yourself to the Supreme Order, and it shall grant you entrance to the paradise you seek"...;;;;;;;;;;;;;x
+
+EVTNAME_saint_moses;The Saint Moses;;;;;;;;;;;;;x
+EVTDESC_saint_moses;Jerking awake with wisen stupor, Emunating from their body is a wise sage. His voice washes over you like a splitting tide. he spoke much about the lord, and how his suffering for the lord was for th redemption of his people. "You must devote yourself to the Supreme, and he shall grant you entrance to the paradise you seek"...;;;;;;;;;;;;;x
+
+EVTNAME_saint_quanam;The Saint Quân Am;;;;;;;;;;;;;x
+EVTDESC_saint_quanam;Jerking awake with soft touch of a lotus, Emunating from their body is a Buddha. Her voice soft as a mother's coo spoke much about her mission to allievate all the suffering in the world as did the Buddha before her and the Lord before both. "You must devote yourself to allievate suffering, so you and all the children of the world may find paradise"...;;;;;;;;;;;;;x
+
+EVTNAME_saint_taibai;The Saint Ly Bach;;;;;;;;;;;;;x
+EVTDESC_saint_taibai;Jerking awake with contemplative aura, Emunating from their body is a wise poet. His voice singing with a candence, regarding you as a peer in the great pursuit of wisdom in the endless dimension of timelessness for which the Supreme resides above all. He sings "Lift my head and see the moon; Lower my head and I miss my home."...;;;;;;;;;;;;;x
+
+EVTNAME_saint_shakespeare;The Saint Shakespeare;;;;;;;;;;;;;x
+EVTDESC_saint_shakespeare;Jerking awake with spirited jest, Emunating from their body is a gallavanting poet. His voice tinged in tragedies, regarding you as a peer in the great pursuit of wisdom in trying to understands humanity's true nature. He sings to a distant lyre "To be, or not to be, that is the question, that you should be asking...";;;;;;;;;;;;;x
+
+EVTNAME_saint_victor_hugo;The Saint Victor Hugo;;;;;;;;;;;;;x
+EVTDESC_saint_victor_hugo;Jerking awake with spirited jest, Emunating from their body is a romanticist preacher. His voice trembles with sweet nectar as he espouses the divine beauty of the world, casting out the dark abyss that seeks to divide by calling upon the world to unifying stating "Religions pass away, but God remains", untold wisdom held sacred to you...;;;;;;;;;;;;;x
+
+EVTNAME_saint_muhammad;The Saint Muhammad;;;;;;;;;;;;;x
+EVTDESC_saint_muhammad;Jerking awake with clairvoyance, Emunating from their body is a wise and powerful leader. His voice in kind demonstrates his wisdom and commanding presence, He speaks about the Lord's clear message and implores you to take note and memorize that message onto your heart. For through devotion alone can you unlock the means to redeem humanity.;;;;;;;;;;;;;x
+
+EVTNAME_saint_quan_vu;The Saint Quan Vu;;;;;;;;;;;;;x
+EVTDESC_saint_quan_vu;Jerking awake is the martial spirit of honor incarnate, Emunating from their body is a man whom exemplifies the perfection of form and vanquisher of demons, his stalwart defense for the honor of his fellow brothers have earned him the respect of all before the Celestial Heavens. A truer servant to the Lord than any other.;;;;;;;;;;;;;x
+
+EVTNAME_saint_lenin;The Saint Lenin;;;;;;;;;;;;;x
+EVTDESC_saint_lenin;Jerking awake with the spirit of the red fever, Emunating from their body is a man whom who saw the end of history, He beckons forth the ending of the chains that seperate the world and its people, to revolutionize the world in the image of the One Goal, One People, under no form of suffering, fully redeemed and a paradise on Earth.;;;;;;;;;;;;;x
+
+EVTNAME_saint_sun_yatsen;The Saint Sun Yat-Sen;;;;;;;;;;;;;x
+EVTDESC_saint_sun_yatsen;Jerking awake is an individualist color, Emunating from their body is a man whom built the nation anew to restore balance to an unfair situation, The three principles he laid to form a better society in emulation of the Supremes grand redemption of humanity.;;;;;;;;;;;;;x
+
+EVTNAME_saint_bien_khiem;The Saint Binh Khiêm;;;;;;;;;;;;;x
+EVTDESC_saint_bien_khiem;Jerking awake is a tired but stalwart soul, Emunating from their body is a man whom held a country together through planning, with more still believing him a man with the claryovant foresight to see into the future. As you strive to emulate his sight you are reminded about the all knowing Lord, for he must have given the man his visions.;;;;;;;;;;;;;x
+
+EVTNAME_saint_pasteur;The Saint Louis Pasteur;;;;;;;;;;;;;x
+EVTDESC_saint_pasteur;Jerking awake is a man devoted to the internal understanding of the body. Emunating from their body is a man whom saw the divine touch of the Supreme through his research to balance the spirit of humanity with the weakening flesh wrought with disease. He speaks about how all life sprung from a pot and thus all life should be held holy and divine under god.;;;;;;;;;;;;;x

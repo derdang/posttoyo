@@ -1,0 +1,654 @@
+####################Cao Dai Pilgrimage Events#######################
+#	By; Derrick
+
+# 1		Make preparations for the journey
+# 2		Visit Tay Ninh [183]
+# 3		Stand before the Altar to Cao Dai
+# 4		Seance Quest Start up (A truncated Vision Quest from ATE)
+# 5		Seance Quest -Event Selection-
+# 6		Seance Quest Ends
+# 7		Seance Result: Faith
+# 8		Seance Result: Wisdom
+# 9		Seance Result: Power
+# 10	Seance Result: Balance
+# 20	The pilgrimage has ended
+# 21	Clean up flags
+
+#Space for Saints for Seance (seance.x)
+
+#100	Joan d'Arc (Saint of Faith and Feminity)
+#101	Moses (Saint of Faith and Trials)
+#102	Quan Am (Saint of Faith and Mercy)
+#103	Ly Bach/Taibai (Saint of Wisdom and Contemplation)
+#104	Shakespeare (Saint of Wisdom and Humanity)
+#105	Victor Hugo (Very Important Cao Dai Figure, Wise Sage)*
+#106	Muhammad (Saint of Power and Devotion)
+#107	Quang Vu (Saint of Power and Fiery)
+#108	Lenin (Saint of Power and Liberation)
+#109	Sun Yat-Sen (Saint of Balance and Determination)
+#110	Nguyen Bien Khiem (Saint of Balance and Divination)
+#111	Louis Pasteur (Saint of Balance and Soul)
+
+###############################################################
+namespace = cd_pilgrim
+
+narrative_event = {
+	id = cd_pilgrim.1
+	title = EVTNAME_cd_pilgrim_prep
+	desc = EVTDESC_cd_pilgrim_prep
+	picture = GFX_evt_pilgrims_epic_journey
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPT_cd_pilgrim_prep_cancel
+		piety = -10
+		remove_trait = on_pilgrimage
+	}
+	
+	option = {
+		name = EVTOPT_cd_pilgrim_prep_humble
+		piety = 20
+		random_list = {
+			20 = { add_trait = humble }
+			10 = { add_trait = trusting }
+			70 = { }
+		}	
+		narrative_event = { id = cd_pilgrim.2 days = 7 random = 10 }
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = EVTOPT_cd_pilgrim_prep_carriage
+		trigger = { wealth = 10 }
+		prestige = 20
+		wealth = -10
+		set_character_flag = pilgrim_carriage
+		random_list = {
+			20 = { add_trait = proud }
+			10 = { add_trait = shy }
+			70 = { }
+		}
+		narrative_event = { id = cd_pilgrim.2 days = 12 random = 10 }
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_cd_pilgrim_prep_retinue
+		trigger = { wealth = 25 }
+		prestige = 20
+		wealth = -25
+		set_character_flag = pilgrim_bodyguards
+		random = { chance = 20 add_trait = paranoid }
+		narrative_event = { id = cd_pilgrim.2 days = 15 random = 10 }
+		ai_chance = { factor = 20 }
+	}
+}
+
+narrative_event = {
+	id = cd_pilgrim.2
+	title = EVTNAME_pilgrim_tay_ninh
+	desc = EVTDESC_pilgrim_tay_ninh
+	picture = GFX_evt_tay_ninh_cathedral
+
+	is_triggered_only = yes
+	trigger = { trait = on_pilgrimage }
+	immediate = {
+		set_character_flag = on_pilgrimage_tay_ninh
+	}
+	
+	option = {
+		name = EVTOPT_pilgrim_approach
+		prestige = 20
+		narrative_event = { id = cd_pilgrim.3 days = 2}
+	}
+}
+narrative_event = {
+	id = cd_pilgrim.3
+	title = EVTNAME_viewing_the_one_god
+	desc = EVTDESC_viewing_the_one_god
+	picture = GFX_evt_cao_dai
+
+	is_triggered_only = yes
+	trigger = { trait = on_pilgrimage }
+	immediate = {
+		add_trait = zealous
+	}
+	
+	option = {
+		name = EVTOPT_heavenly_father
+		piety = 20
+		narrative_event = { id = cd_pilgrim.4 days = 2}
+	}
+}
+narrative_event = {
+	id = cd_pilgrim.4
+	title = EVTNAME_seance_name
+	desc = EVTDESC_seance_cao_dai
+	picture = GFX_evt_cao_dai
+	
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPT_seance_opt
+		add_character_modifier = { name = doing_seance duration = -1 } 
+	}
+	option = {
+		name = EVTOPT_rejected_seance_opt
+		narrative_event = { id = cd_pilgrim.20 days = 2}
+	}
+}
+character_event = {
+	id = cd_pilgrim.5
+	desc = EVTDESC_bounce
+	picture = GFX_evt_cao_dai
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { has_character_modifier = doing_seance }
+	immediate = {
+		random_list = {
+			# potential seances of Saints
+			10 = { character_event = { id = seance.100 } }
+			10 = { character_event = { id = seance.101 } }
+			10 = { character_event = { id = seance.102 } }
+			10 = { character_event = { id = seance.103 } }
+			10 = { character_event = { id = seance.104 } }
+			10 = { character_event = { id = seance.105 } }
+			10 = { character_event = { id = seance.106 } }
+			10 = { character_event = { id = seance.107 } }
+			10 = { character_event = { id = seance.108 } }
+			#10 = { character_event = { id = seance.109 } }
+			#10 = { character_event = { id = seance.110 } }
+			#10 = { character_event = { id = seance.111 } }
+		}
+	}
+	option = {}
+}
+
+narrative_event = {
+	id = cd_pilgrim.6
+	title = EVTNAME_seance_ends
+	desc = EVTDESC_seance_ends
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = { has_character_modifier = doing_seance }
+
+	immediate = {
+		remove_character_modifier = doing_seance
+		set_character_flag = done_seance
+	}
+	option = {
+		name = EVTOPT_plan_faith
+		trigger = {
+			OR = {
+				has_character_flag = vis_saint_joan
+				has_character_flag = vis_saint_moses
+				has_character_flag = vis_saint_quanam
+			}
+		}
+		character_event = { id = cd_pilgrim.7 }
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = EVTOPT_plan_wisdom
+		trigger = {
+			OR = {
+				has_character_flag = vis_saint_taibai
+				has_character_flag = vis_saint_shakespeare
+				has_character_flag = vis_saint_victor_hugo
+			}
+		}
+		character_event = { id = cd_pilgrim.8 }
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = EVTOPT_plan_power
+		trigger = {
+			OR = {
+				has_character_flag = vis_saint_muhammad
+				has_character_flag = vis_saint_quan_vu
+				has_character_flag = vis_saint_lenin
+			}
+		}
+		character_event = { id = cd_pilgrim.9 }
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = EVTOPT_plan_balance
+		trigger = {
+			OR = {
+				has_character_flag = vis_saint_sun_yatsen
+				has_character_flag = vis_saint_bien_khiem
+				has_character_flag = vis_saint_pasteur
+			}
+		}
+		character_event = { id = cd_pilgrim.10 }
+		ai_chance = { factor = 50 }
+	}
+}
+narrative_event = {
+	id = cd_pilgrim.7
+	title = EVTNAME_seance_faith
+	desc = EVTDESC_seance_faith
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPT_seance_faith
+		piety = 50
+		change_learning = 1
+		change_diplomacy = 1
+		if = {
+			has_character_flag = vis_saint_joan
+			
+			random list = {
+			
+			20 = {change_martial = 1}
+			80 = {}
+			
+			}
+		}
+		random_list = {
+		
+		20 = {add_trait = erudite}
+		30 = {add_trait = just}
+		50 = {add_trait = zealous}
+		
+		}
+		
+		narrative_event = { id = cd_pilgrim.20 days = 2 }
+	}
+	
+	option = {
+		name = EVTOPT_reject_seance_faith
+		prestige = 50
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = cynical }
+			
+			narrative_event = { id = cd_pilgrim.20 days = 2 }
+		}
+	}
+}
+narrative_event = {
+	id = cd_pilgrim.8
+	title = EVTNAME_seance_wisdom
+	desc = EVTDESC_seance_wisdom
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPT_seance_wisdom
+		piety = 50
+		change_learning = 2
+		random_list = {
+		
+		20 = {add_trait = erudite}
+		30 = {add_trait = poet}
+		50 = {add_trait = gregarious}
+		
+		}
+		
+		narrative_event = { id = cd_pilgrim.20 days = 2 }
+	}
+	
+	option = {
+		name = EVTOPT_reject_seance_wisdom
+		prestige = 50
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = cynical }
+			
+			narrative_event = { id = cd_pilgrim.20 days = 2 }
+		}
+	}
+}
+narrative_event = {
+	id = cd_pilgrim.9
+	title = EVTNAME_seance_power
+	desc = EVTDESC_seance_power
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPT_seance_power
+		piety = 50
+		change_martial = 2
+		random_list = {
+		
+		20 = {add_trait = brave}
+		30 = {add_trait = ambitious}
+		50 = {add_trait = just}
+		
+		}
+		
+		narrative_event = { id = cd_pilgrim.20 days = 2 }
+	}
+	
+	option = {
+		name = EVTOPT_reject_seance_power
+		prestige = 50
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = cynical }
+			
+			narrative_event = { id = cd_pilgrim.20 days = 2 }
+		}
+	}
+}
+narrative_event = {
+	id = cd_pilgrim.10
+	title = EVTNAME_seance_balance
+	desc = EVTDESC_seance_balance
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPT_seance_balance
+		piety = 50
+		change_stewardship = 2
+		random_list = {
+		
+		20 = {add_trait = just}
+		30 = {add_trait = charitable}
+		50 = {add_trait = patient}
+		
+		}
+		
+		narrative_event = { id = cd_pilgrim.20 days = 2 }
+	}
+	
+	option = {
+		name = EVTOPT_reject_seance_balance
+		prestige = 50
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = cynical }
+			
+			narrative_event = { id = cd_pilgrim.20 days = 2 }
+		}
+	}
+}
+
+# ************************* Final Results ************************
+
+narrative_event = {
+	id = cd_pilgrim.20
+	title = EVTNAME_cao_dai_pilgrim_success
+	desc = EVTDESC_cao_dai_pilgrim_success
+	picture = GFX_evt_carriage
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+	trigger = { trait = on_pilgrimage }
+	immediate = {
+		character_event = { id = cd_pilgrim.21 days = 2 }
+	}
+	
+	option = {
+		name = EVTOPT_cao_dai_pilgrim_success
+		piety = 50
+		prestige = 50
+		add_trait = pilgrim
+		remove_trait = on_pilgrimage
+		if = {
+			limit = { higher_tier_than = BARON }
+			religion_authority = { modifier = ruler_pilgrimage }
+		}
+	}
+}
+
+character_event = {
+	id = cd_pilgrim.21
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = pilgrim_carriage
+		clr_character_flag = pilgrim_bodyguards
+		clr_character_flag = pilgrim_entry_retried
+		clr_character_flag = on_pilgrimage_tay_ninh
+	}
+}
+
+# ************************* Saint Encounter ************************
+character_event = {
+	id = seance.100
+	title = EVTNAME_saint_joan
+	desc = EVTDESC_saint_joan
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_joan }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_joan
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.101
+	title = EVTNAME_saint_moses
+	desc = EVTDESC_saint_moses
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_moses }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_moses
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.102
+	title = EVTNAME_saint_quanam
+	desc = EVTDESC_saint_quanam
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_quanam }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_quanam
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.103
+	title = EVTNAME_saint_taibai
+	desc = EVTDESC_saint_taibai
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_taibai }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_taibai
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.104
+	title = EVTNAME_saint_shakespeare
+	desc = EVTDESC_saint_shakespeare
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_shakespeare }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_shakespeare
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.105
+	title = EVTNAME_saint_victor_hugo
+	desc = EVTDESC_saint_victor_hugo
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_victor_hugo }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_victor_hugo
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.106
+	title = EVTNAME_saint_muhammad
+	desc = EVTDESC_saint_muhammad
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_muhammad }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_muhammad
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.107
+	title = EVTNAME_saint_quan_vu
+	desc = EVTDESC_saint_quan_vu
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_quan_vu }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_quan_vu
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.108
+	title = EVTNAME_saint_lenin
+	desc = EVTDESC_saint_lenin
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_lenin }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_lenin
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.109
+	title = EVTNAME_saint_sun_yatsen
+	desc = EVTDESC_saint_sun_yatsen
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_sun_yatsen }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_sun_yatsen
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.110
+	title = EVTNAME_saint_bien_khiem
+	desc = EVTDESC_saint_bien_khiem
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_bien_khiem }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_bien_khiem
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+character_event = {
+	id = seance.111
+	title = EVTNAME_saint_pasteur
+	desc = EVTDESC_saint_pasteur
+	picture = GFX_evt_cao_dai
+	is_triggered_only = yes
+	trigger = {
+		has_character_modifier = doing_seance
+	AND = {
+		NOT = { has_character_flag = vis_saint_pasteur }
+		}
+	}
+	immediate = {
+		set_character_flag = vis_saint_pasteur
+	}
+	option = { 
+		name = OK
+		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
