@@ -718,7 +718,20 @@
 
 
 1602000 = { name="Komatsu" culture=kyushuan }
-1602001 = { name="Tanezaki" culture=kyushuan }
+1602001 = { name="Tanezaki" culture=kyushuan 
+	coat_of_arms = {
+		religion = soka_gakkai
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1602002 = { name="Agano" culture=kyushuan }
 1602003 = { name="Agari" culture=kyushuan }
 1602004 = { name="Ageno" culture=kyushuan }
