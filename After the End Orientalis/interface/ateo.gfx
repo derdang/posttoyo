@@ -10,6 +10,37 @@ spriteTypes = {
 		name = "GFX_evt_cao_dai"
 		texturefile = "gfx\\event_pictures\\cao_dai.dds"
 	}
+	
+#cao dai traits
+
+	spriteType = {
+		name = "GFX_trait_saint_faith"
+		texturefile = "gfx/traits/saint_faith.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_saint_wisdom"
+		texturefile = "gfx/traits/saint_wisdom.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_saint_power"
+		texturefile = "gfx/traits/saint_power.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_saint_balance"
+		texturefile = "gfx/traits/saint_balance.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 
 #decisions icons
 	spriteType = {

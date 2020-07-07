@@ -236,6 +236,7 @@ narrative_event = {
 	option = {
 		name = EVTOPT_seance_faith
 		piety = 50
+		add_trait = saint_faith
 		change_learning = 1
 		change_diplomacy = 1
 		if = {
@@ -280,6 +281,7 @@ narrative_event = {
 	option = {
 		name = EVTOPT_seance_wisdom
 		piety = 50
+		add_trait = saint_wisdom
 		change_learning = 2
 		random_list = {
 		
@@ -313,6 +315,7 @@ narrative_event = {
 	option = {
 		name = EVTOPT_seance_power
 		piety = 50
+		add_trait = saint_power
 		change_martial = 2
 		random_list = {
 		
@@ -346,6 +349,7 @@ narrative_event = {
 	option = {
 		name = EVTOPT_seance_balance
 		piety = 50
+		add_trait = saint_balance
 		change_stewardship = 2
 		random_list = {
 		
