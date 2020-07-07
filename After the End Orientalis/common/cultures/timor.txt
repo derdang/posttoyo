@@ -1,0 +1,215 @@
+timor = {
+	graphical_cultures = { javanesegfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+
+	sumba_flores = { 
+	#Latin version of western names
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.2 0.6 0.4 }
+		male_names = {
+			Adrianus_Adrian Agas Agustinus_Augustus Alexander Alfian Alfonsius_Alfonso Aloisius_Louis Andreas_Andrew Ansgerius Antonius_Anthony Apolos Ariston 
+			Bartholomeus_Bartholomew Bastian Benediktus_Benedict Benyamin Bernadus_Bernard Buang 
+			Charles Christian  
+			Damianus_Damian Daniel Datus Dede Deno Djaga Dominicus_Dominic Donatus "Don Bosco" Dula 
+			Edmund Eduardus_Edward Elias Eliaser Emanuel_Emmanuel 
+			Felix Fernandus_Ferdinand Fidelis Filfridus Frans_Francis Fransiskus_Francis Frenademetz 
+			Gaspar Gerardus_Gerard Gerulfus Gidion_Gideon Gorgonius Gregorius Grimaldus 
+			Haharu Haramburu Hendrikus_Henry Hermanus_Herman Hilarion Hubertus 
+			Ifonsus Ignas_Ignatius Isidorus 
+			Jacobus_James Joakim_Joachim Johanes_John Julius 
+			Kalixtus_Callixtus Karolus_Charles Kasianus Kristian_Christian Kunda Kunradus_Conrad 
+			Ladgerus Lambertus_Lambert Landoaldus Lapoe Laurensius_Lawrence Lazarus Leonardus_Leonard Lexi Linus Longinus Lu Lucius Lukas 
+			Majela Marianus Marius Markus_Mark Marselinus Marthinus Matius Mauritus Maximus Mehang Melkior Mikael_Michael 
+			Ndara Nikodemus Nimrot Nixon 
+			Obaldus Oktofianus_Octavian 
+			Pancratius Parang Paulinus Paulus_Paul Philipus Piet_Peter Pieter_Peter Pius Polikarpus 
+			Richardus_Richard Robertus_Robert Rofinus Romanus Ruben 
+			Sales Samuel Sappi Sebastianus_Sebastian Silvester Simon Sosimus Stefanus_Stephen 
+			Thadeus Theodorus_Theodore Thimotius Thomas Tipuk Titus 
+			Umbu Urbanus 
+			Valentinus Valerianus Victor Viktus Vincentius 
+			Wilbrodus Wilhelmus_William 
+			Yanuarius Yohanes_John Yoseph_Joseph 
+		}
+		female_names = {
+			Adinda Anastasia Anna "Anna Maria" Arlene Aurelia 
+			Beatriks_Beatrice 
+			Donata 
+			Eufonia 
+			Firda Florensia Frederika 
+			Gaudensia Gertrudis Gladilia Grace 
+			Ina 
+			Januaria Jeanne Julie 
+			Konga 
+			Lusia 
+			Magdalena_Magdalene Maria Matilda Mayela Melania Modesta 
+			Oktaviani Orpha 
+			Rambu Regina 
+			Siane Silmeta Sylvia 
+			Theresia Tridia 
+			Viktoria_Victoria 
+			Yosefina 
+			Zeruya 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	west_timor = { 
+	#Latin version of western names
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.2 0.6 0.4 }
+		male_names = {
+			Abraham Adrianus Adriel Agustinus_Augustus Alberth_Albert Alexander Alfonsius_Alfonso Aloysius_Louis Ancelmus_Anselm Anderias_Andrew Angky Anisitus Anoldus Anton_Anthony Arkipus Ayub 
+			Barnabas Benediktus_Benedict Benyamin_Benjamin Bernardinus_Bernard Bernadus_Bernard Blasius Bungtilu 
+			Cornelius 
+			Daniel 
+			Edu Efraim El_Elias Elias Eliazer_Eliaser Emanuel_Emmanuel Endi 
+			Fransiskus_Francis 
+			Gabriel 
+			Hendrikus_Henry Herison Hermanus_Herman 
+			Ignasius_Ignatius Izaac_Isaac 
+			Jackson Jefri Jermias Jerry Joachim John_John Jonas Jopie Jupiter Juventius 
+			Khristian_Christian Korinus 
+			Laurensius_Lawrence Lazarus Leonard Luther 
+			Malyanto Marellus Markus_Mark Marthen_Martin "Marthen Luther" Marsel Melkias 
+			Nataniel_Nathaniel Nehemia Nikodemus 
+			Obed Oktovianus_Octavian Onfinis 
+			Paulus_Paul Petrus_Peter "Petrus Paulus" Pit_Peter 
+			Raymundus_Raymond Ridhon Robert Rolland Ruben 
+			Sau Semuel_Samuel Servarius Servatius Stefanus_Stephen 
+			Thobias_Tobias Thomas Titus 
+			Viktor_Victor  
+			Wens Willybrodus_Wilbrodus 
+			Yakobus_James Yanuarius Yulius_Julius Yusak_Isaac Yustinus_Justin 
+		}
+		female_names = {
+			Anastasia Anna "Anna Maria" Arlene Aurelia 
+			Beadrys_Beatrice 
+			Donata 
+			Eufonia 
+			Firda Florensia Frederika 
+			Gaudensia Gertrudis Gladilia Grace 
+			Ina 
+			Januaria Jeanne Julie 
+			Konga 
+			Lusia 
+			Magdalena_Magdalene Maria Matilda Mayela Melania Modesta 
+			Oktaviani Orpha 
+			Paulina 
+			Rambu Regina 
+			Siane Silmeta Sylvia 
+			Theresia 
+			Viktoria_Victoria 
+			Yosefina Yunesis 
+			Zeruya 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	east_timor = { 
+	#Mainly Spanish and Portuguese names, add some native nicknames (resistance names)
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.2 0.6 0.4 }
+		male_names = {
+			Abílio Abrão_Abraham Adelino Adérito Adriano Afonso_Alfonso Albano Alberto_Albert Aleixo Alexandre_Alexander Alfredo_Alfred Aniceto Anggisu Antóninho_Antony António_Anthony Arão_Aaron Armindo Arnaldo_Arnold Arsénio Assanami Augusto_Augustus Avelino 
+			Barreto Basilio_Basil Bento_Benedict Bernardino_Bernard Bernardo_Bernard Busa 
+			Calisto_Callixtus Carlos_Charles Casimiro_Casimir Chiquito Cipriano Cláudio_Claudius Constâncio_Constantius Cornelio Cristovão_Christopher 
+			Daitula Daniel Demétrio_Demetrius Diamantino Dionísio Domingos_Dominic Duarte_Edward Dusae 
+			Eduardo_Edward Elías_Elias Emílio Estanislau_Stanislaus Estêvão_Stephen Eugenio Eurico Eusebio 
+			Faustino Fernando_Ferdinand Filipe_Philip Francisco_Francis 
+			Gastão_Gaston Gil Guido_Guy Guilherme_William Guilhermino_William 
+			Hermenegildo Hermenio Hernâni Horácio Hugo_Hugh 
+			Inácio_Ignatius Isílio 
+			João_John "João María" Joaquim_Joachim Jorge_George José_Joseph "José Alexandre" "José João" "José Luís" "José María" Júlio_Julius 
+			"Kay Olok" "Kay Rala"
+			Lasama "Lere Anan" Longuinhos_Longinus Loro Luís_Louis Lú-Olo 
+			Manelito_Emmanuel Manuel_Emmanuel Mari Máriano Mário_Marius Martinho_Martin Matías_Matthew "Mau Siri" Miro Moisés_Moses 
+			Napoleão_Napoleon Natan Nicolau Nilo Nino Noé_Noah Norberto 
+			Octavio_Octavian Oleguero Olímpio Omar Oscar Ovídio 
+			Paulo_Paul Paulino_Paul Pedro_Peter "Pedro Gastão" "Pedro Paulo" 
+			Ricardo_Richard Rogério_Roger Ronaldo Rui "Rui María"
+			Saka'onar Sérgio Silveiro Silverio Soro 
+			Tanesib Tara Teófilo Tiago_James Tito_Titus Tomás_Thomas 
+			Vicente_Vincent Vidal Virgílio Vítor_Victor 
+			Xanana Xavier 
+			Zacarias_Zachary 
+		}
+		female_names = {
+			Adaljíza Adozinda Águeda Aicha Albertina Aliança Alicia Ana_Anna "Anabela" "Ana Isabel" "Ana María" Anástacia Ângela Angélica Antónia Aurora 
+			Baptista Beatriz Bella Berengária "Beta Mau" Bimali Branca Brigida "By Mally"
+			Celeste Cidália Clarinha Constança_Constance Cristina_Christina 
+			Delfina Dulce 
+			Élia Elvira Emília Ermelinda Esmeralda Estevainha_Stephania 
+			Fátima Felicita Fernanda Filomena Flotilda Francelina 
+			Gabriela Genoveva Guilhermina Guida 
+			Helena_Helen 
+			Idelta Ilda Imelda Inês_Agnes Irene Isabel_Elizabeth 
+			Jacinta Joana_Joan "Joana María" Josefa Josefina Júlieta Juventina 
+			"Lalo Imin" Laura Leonor_Eleanor Lígia Lola Lúcia Lurdes 
+			Madalena_Magdalene Mafalda_Matilda Mana Margarida_Margaret María_Maria "María Ângela" "María Madalena" Mariana "María Rosa" Marinha_Marine Merita Mesquita Mikato Milena Muki 
+			Natália Nelia Noémia 
+			Odete Olandina Olinda 
+			Pascoela 
+			Rosa Rosária 
+			Sancha_Sancha Santina Sara Sofia 
+			Tamarisa Teresa_Teresa Terezinha_Teresa 
+			Urraca 
+			Virgínia Vitória 
+			Wairaha 
+		}
+		from_dynasty_prefix = "de "
+		male_patronym = "es"
+		female_patronym = "es"
+		grammar_transform = spanish
+		
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+}

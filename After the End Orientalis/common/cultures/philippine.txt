@@ -1356,4 +1356,139 @@ philippine = {
 
 		modifier = default_culture_modifier
 	}
+	
+	minahasan = { 
+	#Dutch, German, French and English names
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.2 0.6 0.4 }
+		male_names = {
+			Adolf Adrian Alaric Albert Alexander Alexius Alfred_Alfred Andries_Andrew Anton_Anthony Arie Arnoldus_Arnold Arthur August_Augustus Avram_Abraham 
+			Bartolomeus Benedictus_Benedict Benjamin Bernardus_Bernard
+			Christian Christoffer_Christopher Constantijn_Constantine Cornelis_Cornelius 
+			Damianus_Damian Daan_Daniel David Dirk 
+			Edwin Elias Engelbert Erik Ernest Erwin Estevanus_Stephen Evert Ezra 
+			Franciscus_Francis Franklin Frans_Francis Frederik_Frederick Frits_Frederick 
+			George Geraldi_Gerald Gerardus_Gerard Gilbert Glen Guntur Gustaaf_Gustavus 
+			Hanny Helmud Hendrik_Henry Herkules_Hercules Herman Hironimus Hosea 
+			Ignasius Imanuel_Emmanuel Isaac 
+			Jacob Jacques James Jan_John Jeconiah Jeffry Jeremia Joel Johan_John Jonas Joseph Joshua Jouke Jozias Julian Julius
+			Karel_Charles Kevin 
+			Lambertus_Lambert Laurens Lionil Leopold Lodewijk_Louis 
+			Maurits_Maurice Markus_Mark Marten_Martin Martinus_Martin Max Maximiliaan_Maximilian Michael 
+			Nicodemus Nicolas
+			Octavian Otto 
+			Paul Petrus_Peter Philip Pierre_Peter
+			Reinhard Reynold Richard Robert Ronald Royke Ruben Rudolf_Rudolf
+			Samuel Saul Simon Stefanus_Stephen Sylvanus 
+			Theodorus_Theodore Thomas 
+			Verke Vincent 
+			Wilhelm Wolter_Walter 
+			Zacharias 
+		}
+		female_names = {
+			Adeline Adriana Agustina Aisabella_Isabella Agnesia_Agnes Alexandra Alice Alicia_Alice Amalia Amanda Anabel Angela Angelica Angelina Anna Anneke Antje_Anna 
+			Bianca Brigitta 
+			Caroline Catharina_Catherine Clara Claudia Charlotte Christiany Christina Constantia Cynthia 
+			Deasy_Daisy Debi Devi
+			Elizabeth Emilia Emmy Estelle Ester_Esther Eugenia Evangeline Everdina 
+			Francina 
+			Geertruida_Gertrude Glady Gloria Grace Gresya 
+			Hannah Helen 
+			Imelda Ines_Agnes Irene Ivonne 
+			Jaclyn Jacoba Jenifer Jenny Jessica Joan Johanna Jolene Josephine Joulanda_Yolanda Julia Julita 
+			Katrien Keren 
+			Lady Lieneke Liesbet_Elizabeth Louisa_Louise Lucy Ludwina Lydia 
+			Magdalena Maggy Maharani Margareta Maria Marianne Marjolien Martha Maya Mona Monita 
+			Natasya Nicole Noortje_Eleanor 
+			Oktavia_Octavia Olivia 
+			Pamela Patricia Paula Petronella Prisilia Putri 
+			Rachel Rebecca Regina Rita Rose Roweina Ruth 
+			Sarah Sharon Sonita Stefanie 
+			Thelma Theresia_Theresa 
+			Vonnie 
+			Yulisa 
+			Wilhelmina 
+			Xaviera 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	gorontalo = { 
+	#Mix of Arabic, Malay, Javanese and outside names
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.3 0.8 0.2 }
+		male_names = {
+			"Abdul Jalil" "Abdul Kadir" "Abdul Karim" "Abdul Rahman" Abdulhalim Abdullah Abdurahim Adhan Ahmad_Ahmad Adhyaksa Adnan Akbar Alamsyah Ali Amir Amiruddin Amran Amrullah Anas Anuar Arif Arifuddin Arsyad Arudji Awaluddin Azamuddin
+			Bacharuddin Bachtiar Basri 
+			Darwis Daud_David Depri Djamaludin 
+			Effendi 
+			Fadel Faisyal Fajruddin Falahuddin Fatih Firdaus Firman 
+			Gunawan 
+			Hamid Hamim Hamdan Hardi Hasan Hasanuddin Hisyam_Hisham Hussein
+			Ibrahim_Abraham Idris Ilham Imam Indra Iqbal Irsyad Iskandar_Alexander Ismail Iwan 
+			Jambat Jusuf_Joseph
+			Kaharuddin Kandoli Karim Kemal 
+			Lahmudin Lukman 
+			Mahmud Mansyur Medi Mochtar Muhammad Muhyiddin Musa Muslimin 
+			Nadjamudin Nani Nurlan 
+			Rachmat Ramadhansyah Ramlan Rasyid_Rashid Razak Riza Rizal Rusdi 
+			Saad Said Salim Sallehuddin_Saladin Sarifuddin Sehan Sirajuddin Sofyan Sulaiman_Solomon Suriansyah Syaiful Syamsidar Syamsudin_Symasuddin Syamsul Syamsuri Syarif Syariefuddin 
+			Tajuddin Taufik Thariq Thayeb
+			Umar Umaruddin_Oemaruddin 
+			Wahid 
+			Yahya Yamin Yasin Yunus
+			Zainuddin Zikrullah Zulkarnaen_Zulkarnain Zulkifli 
+		}
+		female_names = {
+			Aisyah Alessia Amalia Aminah Amirra Angka Asiah Asnah Asty Athalia Athya Aura Azizah 
+			Chairani Chunda Clara Cynthia 
+			Dewi Dian Dina 
+			Emma Emmy Erna Eva Evi 
+			Fakhira Fathimah Fauziah Fitrah
+			Hadidjah Halilah Hamidah Hamsinah Hannah 
+			Imandara Indah Indira Indrawati Iskandariah_Alexandra Ismiyati 
+			Jenifer 
+			Lia Lusi 
+			Machica Maria Mariam Mariana Marini Marlina Meirayni  Meutya Mirasari Moha Musdalifah Mutiara 
+			Nabila Nadya Nasywa Natassya Nike Nina Nurbani Nurhayati Nurhilda Nurtiaty  
+			Paramitha Putri 
+			Rahmawati Raihaanun Rien Rini Roidah Rosalina Rose Roziana
+			Safazia Santi Saridjah Sarwana Savia Shabrina Soraya Surya Syarifah 
+			Yuanita 
+			Zam'iyah Zohra 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
 }

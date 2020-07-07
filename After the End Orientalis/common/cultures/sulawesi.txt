@@ -1,0 +1,147 @@
+sulawesi = {
+	graphical_cultures = { melayugfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+
+	buginese = { 
+	#Mostly Arabic, but include some foreign names
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.5 0.1 0.9 }
+		male_names = {
+			"Abdul Jalil" Abdul Rachman_Abdul Rahman Abdullah Achmad_Ahmad Adam Adnan Agus Akbar Aksa Alamsyah Alfian Ali Alwi Amir Amiruddin Amrullah Ananta Anuar Aras Arief Arifin Arifuddin Arnold Arwien Assyahid Athallah Awaluddin Azamuddin
+			Bacharuddin Bachtiar Bahrum Basmin Basri 
+			Charles 
+			Dachlan Daud Dharius_Darius Djemma 
+			Effendi Elfonda Erdin 
+			Faisyal Fajruddin Falahuddin Farid Fatih Firdaus 
+			Gunawan 
+			Habil Hamid Harifin Hasan Hasanuddin Hatta Hendra Herry Hisyam_Hisham Hussein
+			Ibrahim_Abraham Ichsan Idris Ilham Ilyas Iqbal Irsyad Ishak_Isaac Iskandar_Alexander Ismail Isnan
+			Jahir Jamal Junda Jusuf_Joseph
+			Kaharuddin Kamaluddin Kamrul Karim Kasim Kemal 
+			"LaBejo" "La Nyalla" Lukman Luthfi 
+			Maddusila Mahmud Majid Manohara Mansyur Masmun Masri Mattawang Maulwi Mochtar Muallim Mubara Mudzakkar Muhammad Muhyiddin Muin Mujirin Mukmin Mulyani Mursalin Musa Muslimin 
+			Nego Nurdin Nurhadi
+			Obed
+			Palakka Patedungi Permana 
+			Rachmat Ramadhansyah Ramang Ramlan Rasyid_Rashid Razak Riza Rizal Ronald Ruslan Rusli Rusyaedi Ryaas 
+			Saad Sabulassalam Said Saldy Salim Sallehuddin_Saladin Salman Samad Sarifuddin Saruman Senfri Setiawan Sirajuddin Sjafrie Sofyan Solihin Suhardi Sulaiman_Solomon Sunar Syaiful Syamsidar Syamsuddin Syamsul Syamsuri Syarief Syariefuddin Syukur 
+			Tajuddin Tamam Tanribali Taufan Taufik Taufikgurahman Thahar Thoriq Triani 
+			Wahid 
+			Yahya Yamin Yasin Yulianus Yunus
+			Zikrullah Zulkarnaen_Zulkarnain Zulkifli 
+		}
+		female_names = {
+			Aisyah Alessia Amalia Aminah Amirra Angka Asiah Asnah Asty Athalia Athya Aura Azizah 
+			Chairani Chunda 
+			Dewi Dian 
+			Emmy Erna Eva Evi 
+			Fathimah_Fatima Fauziah Fitrah
+			Hadidjah Halilah Hamidah Hamsinah Hannah 
+			Imandara Indah Indira Iskandariah_Alexandra Ismiyati 
+			Lia Lusi 
+			Machica Maria Marini Meirayni Meriem Meutya Mirasari Musdalifah Mutiara 
+			Nabila Nafsiah Nakicah Natassya Nike Nina Nurbani Nurhayati Nurhilda Nurtiaty 
+			Olle 
+			Paramitha Putri 
+			Rahmatiah Rahmawati Raihaanun Rien Rini Roidah Rosalina Rose Roziana
+			Safazia Santi Saridjah Sarwana Savia Shabrina Sonda Soraya Surya Syarifah 
+			Titien Thita
+			Yuanita 
+			Zam'iyah Zohra 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	sulawesi = { 
+	#Stands for all the Celebic people in Sulawesi, include some reference names 
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.8 0.1 0.2 }
+		male_names = {
+			"Abdul Aziz" "Abdul Latif" "Abdul Muin" "Abdul Muthalib" "Abdul Rahman" Abram_Abraham Abubakar Abukasim Achlan Adam Adidjoyo Adriatma Agustinus_Augustus Aidil Ali Alimuddin Amir Amran Anop Anton Anwar Aptripel Ardiansyah Ardin Ardjad Arfan Arief Aries Ariyanto Arlius Arnaldo Arsalim Ashrawi Asmir Asrul Aswadin Atikurahman Azikin 
+			Badrun Baduddin Baharuddin Bakri Bandjela Bartolomeus Basri Bastian Berkat Bhakti Burhan 
+			Chairil Constantijn_Constantine 
+			Daeng Damsik Darma Darmin Daryono Datlin Desmon Djafar_Jafar Djaliman 
+			Eddy Edison Ehud Ernawati 
+			Faisal Frederik_Frederick Furqanuddin 
+			Galib Gideon 
+			Habir Halaka Hamzah Harmin Harsono Harun Hasan Hasrat Hasyim Helton Hermansyah Hermawan Herry Herwin Hidayat 
+			Ikbar Imran Irawan 
+			Jalil Joksan 
+			Kahar Kasman Kasim Kasmuddin Kemal 
+			Ibrahim_Abraham Ichsan Ilham Ilyas Intja Irianto Irpadin Irvanoff Irwan Irwanto Iskandar_Alexander Iswanto 
+			Jasman Jeri Johanis_John Jonli Jusrin 
+			Kaharuddin Kamaruddin 
+			Lania Laode Lasjkar Legolas Leo Leonard Livingstone Longki Lukman 
+			Machsun Mahar Mahrawi Malik Ma'mun Ma'ruf Markus Marto Masmuddin Masyhur Mawardin Milhar Muamar Muhaimin Muhammad Mullis Mulyadi Mursidin Musakkir Musdalim Musdar Mustafa Mustari 
+			Naim Najamuddin Najib Nasron Nicolas Nophan 
+			Oldy Olumsyah_Alamsyah 
+			Qowwam 
+			Parmin Piet_Peter Prabu Pratama 
+			Rahmudin Rais Rajawali Rasyid_Rashid Raup Razak Reza Richard Ridwan Riznu Rofiqoh Rolex Ruben Ruksamin Rusman 
+			Saemu Sahrir Saleh Samsuri Samsurizal Saripudin Sarjun Sawerigading Sigus Silfatman Sin Sjahrun Sofhian_Sufyan Starlim Suarling Subhan Su'dan Sudara Sudirman Sugeng Sulaiman_Solomon Sulkarnain_Zulkarnain Sumisi Sumitro Sunarto Surahman Surunuddin Sutoarjo Sutrisno Syachbuddin Syafruddin Syahril Syaifullah Syasu Syamsuar Syarifudin 
+			Tafdil Tamrin Tareami Taslim Tasman Teguh Thahir Thamrin Tjatjo Tony Toto Tuty 
+			Umar Usman 
+			Wenny 
+			Yahya Yakub Yonto Yudi Yunus Yusran Yusuf_Joseph 
+			Zaenuri Zainal Zainudin Zakaria 
+		}
+		female_names = {
+			Aayizah Aisyah Aminah Andhika Ani Arniwaty Asmawati 
+			Bahiyah Bariah Budriah
+			Dany Darmawati Devi Dhia Diana 
+			Elena Ellen Emmy Ester 
+			Fatima 
+			Gladies 
+			Hajar Hasmah Henrita Heny Herlina Humaira 
+			Idiawaty Indah Isnawaty Itoh 
+			Jihan 
+			Karina Khadija Kristina_Christina  
+			Liliana 
+			Maasra Mahdiani Mahtriansyah Maimunah Maliha Maola Mardawiyah Margaret Maria Merry Merya Muzwin 
+			Nadhirah Nafisa Najihah Nathania Nirmawati Noor Norma Nur Nurmala 
+			Ondi 
+			Paulina 
+			Rafidah Rahmah Ramlah Ratna Rosdiana Rosya 
+			Saleha Shinta Siska Siti Sofiah Sultriany Suhariah 
+			Tuty 
+			Ulfiandani 
+			Vera Verna 
+			Wachida 
+			Yastin Yati Yenny Yus 
+			Zahirah Zahra Zalila Zalzumida Zanariah Zara Zarith Zatashah Zerafina Zubaidah 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+}

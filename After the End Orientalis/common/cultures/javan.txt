@@ -1,0 +1,327 @@
+nusantaran = {
+	graphical_cultures = { melayugfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+
+	javanese = {
+		graphical_cultures = { javanesegfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.15 0.67 0.78 }
+		male_names = {
+			Adianto Affandi Agus Ahmad Airlangga Ali Amangkurat Amien Anas Andik Ardi Ardiyanto Arga Argo Ari
+			Bambang Baskoro Batman "Bima Sakti" Boediono Boedianto Budiharto Budiman 
+			Cahyono 
+			Dahlan Diponegoro Dorodjatun 
+			Elangsyah Endriartono Erodikromo 
+			Gatot Gerego Gesang Goenawan Guruh 
+			Hangabehi Harjo Hartarto Haryono Hendarso "Herjuno Darpito" Hidayat Hutomo 
+			Icuk Indra Iwan 
+			Joko Jotaro Junus Jusuf_Joseph 
+			Kamarusaman Katamso Khabib_Habib Koentjaraningrat Krisna Kurniawan Kusumo Kuwat 
+			Laksono
+			Martoredjo Mat_Muhammad Mokamat_Muhammad Muammar Mulyono Munawar Munir Murtejo Musso Mustojo
+			Ngabdurohman_Abdul Rahman Nirwanto Notonegoro Nuryono 
+			Omar_Umar
+			Poerbatjaraka Prabowo Pramoedya Prasetyo Prastowo Prijono Purnomo Purwanto 
+			Raharjo Rudianto
+			Sarip_Sharif Senopati Setiawan Slamet Soedarma Soedarsono Soekarno Soekotjo Soemardjan Soepono Soeprapto Soewardi Subagio Subroto Sudarto Sudirman Sugiarto Sumarsono Sunario Suparman Supriyono Suryawan Susilo Sutanto Syamsuri 
+			Tangkasiang Taufan Tedjowulan Tirtodarmo Tjipto Tjokroaminoto Tjokronegoro Tripuna Triyatno Tukul 
+			Virgiawan 
+			Wahyudi Wartono Wibisono Widiyanto Widjojo Widodo Wijiastanto Wijoseno Wilopo Winarno Wiranto Wironegoro Wisnu 
+			Yani Yanuar_Januarius Yudhokulon Yuwono 
+		}
+		female_names = {
+			Ainur Aisara Anggun Anindya Aprilia Aqeela Ariffah Arkadewi Arya Asmiati Athiyyah Ayu 
+			Bendara Bethari 
+			Candra Citra Condrokirono 
+			Dewi Diandra 
+			Fadilah Farida Fathina 
+			Galih Galuh 
+			Handayani Hardiyanti Hartinah Hayu Hemas Herrawati 
+			Ika Indria Indriyani Iriana 
+			Jasmina Jumiah 
+			Kahiyang Kartini Kasmah Khodijah_Khadija "Kris Dayanti" 
+			Maduretno Mangkubumi Maria Mardiyah Marini Megawati Mulyani Mursiyem 
+			Nafa Najma Ningsih 
+			Paramita Pratiwi Priansari Pujilestari Putri 
+			Rachmawati Rahayu Retno Retnowati Rina Rini Roqayah 
+			Sinta Sudjiatmi Sukmawati Susi Sutiawati Susamtilah Suwuh 
+			Triyaningsih Tuti 
+			Utari 
+			Waleefa Widyawati Winarni Wulan Wulandari 
+			Yayuk 
+		}
+		male_patronym = "putra"
+		female_patronym = "putri"
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	madurese = {
+		graphical_cultures = { javanesegfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.1 0.7 0.35 }
+		male_names = {
+			Abdullah "Abdul Hadi" "Abdul Halim" "Abdul Khaliq" Abdussukur Achsanul Afifuddin Agusdiansyah Ahmad Alawy Alkostar Ali Aliransyah Amal Aminullah Anwar Arie Arifin Arswendo Artidjo Astrosemitro Atmonegoro Awang Aziz 
+			Banurusman 
+			Darmawan Djojonegoro Dorodjatun 
+			Ehsan 
+			Fannan Fuad 
+			Hakim Hanafie Harun Harsoedin Hartono Hasyim_Hashim 
+			Ichlasul Ilyas Imawan Inang Iskandar_Alexander Ismail Ismunarso Iswanti Iwan Iwang 
+			Ja'far Jamaluddin Jayamedho Jazil 
+			Kamil Kholilurrohman Kurniawan 
+			Lukman 
+			Mabruroh Madjid Mahfud Mahmud Makmun Maisyaroh Marukan Mien Muhammad Muslim 
+			Naufal Nono Nurcholis 
+			Poenormo 
+			Rachimoellah Rachmat Rajudin Riko Riswandha Roostien Rusmanhadi
+			Sakera Said Saifurrizal Shalehoddin_Saladin Subagio Sudarman Sudarso Sudjono Sulaiman Sultan Syafiuddin Syamlan Syarif
+			Tajussalam
+			Wardiman Widyananda Windu Wiratama 
+			Yasin Yunus Yusuf_Joseph 
+			Zawawi
+		}
+		female_names = {
+			Aan Aida Aisyah Amaniah Aziseh 
+			Emmy 
+			Faida Fatim_Fatima 
+			Habibah Hamsatun Holiyah Hozaimah 
+			"Ida Saina" Imaniar Isma’itu 
+			Kamidia Khatimah Komariyah Kulsum 
+			Lailawanti Lisa Lutfiyah Lydia 
+			Maisarah Marissa Mas'adah Milah 
+			Najma Najwa Ninis Noor Nurul 
+			Paosiyah 
+			Rasidah Rini Rismiati Rukmini 
+			Sanina Sisca Subaidah "Sulas Tutik" Supatmi Suhriyah Sutiah Syafa Syehah 
+			Tantriana 
+			Ulfa "Uswatun Hasanah" 
+			Wasilah 
+			Yulis 
+			Zen 
+		}
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	sundanese = {
+		graphical_cultures = { javanesegfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.6 0.4 0.8 }
+		male_names = {
+			Aa Aam Achdiat Adiningkusuma Agum Agus Ahmad Ajip Ali Amir Amirudin Anies Anom Aria Arudji Asep Ateng 
+			Baduga Burdah 
+			Cakrabuana Cecep 
+			Dadang Da'i Daradjatun Dewata Diwangkara Djuanda 
+			Ebet Eka Entis 
+			Gilan Ginandjar Gorbacep Gugum Gunungjati 
+			Hasbullah Hassan
+			Irama Iskandar_Alexander Iwan 
+			Jajang Jayadewata Jayawikarta
+			Kamidia Kancana Kaprabon Kawasa "Kian Santang" Kurnia
+			Laksamana 
+			Machjar Machmud_Mahmud Maman Mamat_Muhammad Ma'ruf Martawijaya Mochamad_Muhammad Mochtar Muljadi Mulyana Mustapa
+			Naser Natiningrat Nayaga Nilakendra Niskala Nurbuat
+			Prabu Priya
+			Rachmat Rajaningrat Rangga Rasyid_Rashid Ratudewata Ridwan 
+			Sengara Sepuh Sudrajat Suharna Sunandar Sundalana Surawisesa Suriadiwangsa Sutarma Suwarga
+			Tatang Tirtayasa
+			Ujang Umar
+			Walangsungsang Wastu 
+			Yayan Yudi Yusup_Joseph
+		}
+		female_names = {
+			Aciputih Adhisty Andini Airan Ambetkasih Arti Arya Asmirandah Asyifa 
+			Betti Bentang
+			Devina Dewi Diah Dinda 
+			Elvy Endang
+			Fatimah_Fatima
+			Galih Galuh
+			Herfiza 
+			Imas Indah Inten
+			Kania
+			Meriam_Mary Meutya Muharam
+			Nastiti Ningsih Nining Nur 
+			Pakungwati Paramitha Pia Pingkan Pitaloka
+			Qory
+			Rara Ratna Rianti Roekiah Rossa 
+			Sannaha Sastaviyana Singamurti Srie "Subang Larang" Suhara Svida
+			Tejakencana Thalita Trie 
+			Widya  
+			Yulianti Yunita 
+		}
+		from_dynasty_suffix = "wijaya"
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	balinese = {
+		graphical_cultures = { javanesegfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.3 0.4 0.1 }
+		male_names = {
+			Agung Alit Andhika Anggungan Anglurah Anom Antara Ardhika Argawa Ariana Ariawan Artha Astawa 
+			Balawan Bandem Bangbang Baturenggong Bayu Beratha Budi Budjana Bukian 
+			Cantiasa Cawu 
+			Dian Dunia 
+			Gangga Geredeg Gianyar Gobiah 
+			Jelantik Jeruk Juni 
+			Kalanganyar Kedung Ketut Komang Kompyang Kresna 
+			Landra Layang Lempad Limbak 
+			Mahendra Manila Martha Maruti Masputra Masriadi Mendra Midhio 
+			Negara Nesa Ngendon Nginte Ngurah Nuarta 
+			Pacekan Pambahyun Pande Pasek Pastika Pedanda Perdana Perwira Putra 
+			Raharja Rai Rampih Rembang Rudana 
+			Sakti Samprangan Santoso Seganing Setiadi Sidemen Sidia Soki Suardana Suardika Subandi Sudihartawan Sugianyar Suharya Sukadana Sukarja Sukawati Sulaba Sulastra Sulendra Sumantara Sumertha Sunartha Suranta Suteja Sutha Suweca Swajaya 
+			Talabah Tampwagan Tisna Togog Trisnajaya 
+			Untung 
+			Wahyu Warmadewa Warsa Wiana Widana Wijaya Wim Winasa Windha Wirahadi Wirawan Wiswantanu 
+			Yudane 
+		}
+		female_names = {
+			Adnya Adnyani Amandari Ariani Arini Ariastini Atmi 
+			Bulan Bulantrisna 
+			Cahyani Chandra Ciptasari 
+			Desi Devi Dewi Dhinda Diandri Dwijayanti 
+			Eka Ening Erviani 
+			Faradynawati 
+			Galuh Ginanti Giri 
+			Istarani 
+			Jelantik 
+			Kurniani Kurniati 
+			Laskmi Laksmiyani 
+			Mahadewi Maharani Mahaswi Melati Mertaniasih Muriati Murniasih 
+			Natih Nurining Nyoman 
+			Pacekan Padmadewi Peling Pemayun Pitriyani Prami Pratiwi Pupuh Purnama Purnamawati Purwani Puspaningsih Putri 
+			Ramayanti 
+			Sani Sari Sawitri Selat Sinta Suasti Suciarmi Suntri Supari Supasti Supini Suriati Suryani Syahrini 
+			Tangkeban Tanjung Trisnasari 
+			Vania 
+			Wahyuni Wardani Warini Warti Westny Widani Widanti Widiasih Widiastuti Wiryastuti 
+			Yeni Yuliani Yuniarti Yuniawati 
+		}
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	sasak_sumbawa = {
+		graphical_cultures = { javanesegfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.3 0.4 0.1 }
+		male_names = {
+			Abduh "Abdul Aziz" "Abdul Kadir" "Abdul Kasim" "Abdul Latif" "Abdul Rachman" "Abdul Samad" Abidin Abubakar Adi Ahmad Ahsanul Ahyar Alam Alfian Ali Anggrat Arahim Ariffudin Asrul Atmodjo 
+			Bacharudin Badrut Bagiartha Bahri Bambang Bulkiyah 
+			Dachlan Djafar Djibril_Gabriel Djohan 
+			Egaryan 
+			Fadhil Faisol Farhan Fathul Fauzan Ferry 
+			Gunawan 
+			Haerul Halim Haroen_Aaron Haryanto Hasan Hasyim Hidayat Humaidi Husni 
+			Ibrahim_Abraham Imam Indrawirawan Ishaka_Isaac Iskandar_Alexander Islam Iswan Izzul 
+			Jamaluddin Juaini Juliansyah 
+			Kamaluddin Khalid Khalik Komaruddin 
+			Latief Lukmanuddin Lutfi 
+			Machfud Madilaoe Maemun Mahmud Majid Makki Malik Mangku Ma'sud Mohammad_Muhammad Mohan Muchtar Mudjitahid Muhammad Mujiharta Munir Musannip Muslihin Musyafirin 
+			Najmul Nazaruddin Nikman Nukrah Nursiah 
+			Qurais 
+			Radhi Rahadi Rahmat Rajabul Ramadhani Ramdhan Ratmadji Roesdi Rumaksi Ruslan 
+			Safari Salman Sani Saparwadi Sarifuddin Setiawan Siradip Soebekti Soempeno Soerjo Soeroso Soesanto Soewarno Sofiyan Suardi Sudarli Suhaili Suharmadji Sukiman Sudirman Sugiyo Surianto Surayad Suryaman Suryata Syaifuddin Syafrudin Syaifurrahman Syahdan Syamsudin Syamsul Syamsurih Syarif Syukur 
+			Takdir Taman Taufik Thohir Tjipto 
+			Umar Usman 
+			Wardoyo Warisin 
+			Yakub Yasin Yusuf Yuwaid 
+			Zaenuddin Zulfan Zulkarnain Zulfikar Zulkieflimansyah 
+		}
+		female_names = {
+			Ahla Amaliah Aulia 
+			Danar Dhamayanti 
+			Fadliana Fatima Ferra 
+			Galuh 
+			Handayani Hilda 
+			Indah 
+			Khairatun 
+			Mardianah Murni 
+			Nanik Noviani Nurdiyah Nurjannah 
+			Pradianti Putri 
+			Rahma Rahmi 
+			Selly Shopia Sumiatun Supinah Surciyanti Suryani 
+			Zia 
+		}
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+}

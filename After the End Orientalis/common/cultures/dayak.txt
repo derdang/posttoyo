@@ -1,0 +1,62 @@
+dayak = {
+	graphical_cultures = { melayugfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+
+	dayak = {
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.8 0.2 0.2 }
+		male_names = {
+			Ahar Alue Anding Anggen Angli Anyang Awang 
+			Barieng Batu Batur 
+			Chuat 
+			Demang Dinar 
+			Elphi Empam Enchana Entering Erong 
+			Irok Iyul 
+			Jaem Jawong Jubang Jugah 
+			Kanang Katib Kaya Ketit Koh Kujat Kumbong 
+			Labih Lakak Langkau Lapok Layang Leman Libau 
+			Made Manggil Masir Munan 
+			Nanta Ningkan 
+			Penguang Pijar 
+			Raweng Rentap Resa 
+			Sapok 
+			Tawi Tekwan Tjilik 
+			Ugak 
+			Yapan 
+			Wangkang 
+		}
+		female_names = {
+			Anchang 
+			Balot Biang 
+			Goreti 
+			Hopia 
+			Imbong 
+			Lawai Liang Likan 
+			Piling 
+			Sani 
+			Tambong 
+			Undang 
+		}
+		male_patronym = "anak "
+		female_patronym = "anak "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+}

@@ -1,0 +1,131 @@
+maluku = {
+	graphical_cultures = { melayugfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+
+	maluku = { 
+	#Moluccan Muslims
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.1 0.4 0.3 }
+		male_names = {
+			"Abdul Aziz" "Abdul Gani" "Abdul Hamid" "Abdul Haris" "Abdul Rahim" Abdullah Abjan Abraham Adam Adolf Agustinus_Augustus Ahmad Alexander Alham Ali Aliong Aman Amas Ambrosius Amustofa_Mustafa Anas Anderias Angelus Arief Arifin Arkalis Armyn Asrun Augustinus_Augustus Ayub 
+			Bahrain Bakri Barnabas Bitzael Burhan 
+			Chris Christ 
+			Daniel Djaidun Djalil_Jalil Djidon Djunaidi 
+			Edi Ellyas_Elias 
+			Fahri Fandy Frans_Francis 
+			Gahral Gerrit Gotlief 
+			Habib Hairuddin Halid Hamid Hasan Hein Hendrata Herman Huraihah Husen Husnie 
+			"Ibnu Saud" Ibrahim_Abraham Idrus_Idris Iksan Ilyaas_Elias Immanuel_Emmanuel Isaac Isaias Iskandar_Alexander 
+			Jacob Jamaluddin Johanes_John Jopie Joseph 
+			Lukas 
+			Mahmud Maks Marcus Marlatu Marthen_Martin Matheos Maurits Melchior Mochtar Muhammad Muhclis Muin Musa Muslim 
+			Nathaniel Nuku 
+			Paulus_Paul Petrus_Peter "Petrus Paulus" 
+			Ramli Rasmin Richard Ridwan Ronald Rudolf Rusman Rustam 
+			Said Saifuddin Salahuddin_Saladin Saleh Salomon_Solomon Samuel Silvester Sofyan Solichin Syahran Syamsir Syarif 
+			Tagop Taufan Thaher Theddy Thomas Timotius_Timothy Tuasikal 
+			Ubay Ujir Umar Umra 
+			Wahid Wahyudin 
+			Yahya_John Yasin Yosep Yunus Yusran Yusuf_Joseph 
+			Zakir Zulfahri 
+		}
+		female_names = {
+			Adriana 
+			Beatrixs_Beatrice 
+			Carolina Cherly 
+			Dolfina 
+			Erny Evelin 
+			Genyawati Godeliva 
+			Hatija Helena Henny Henriette 
+			Juliche 
+			Katerina_Catherine 
+			Leberina Louisa 
+			Maharani Magdalena Maria 
+			Nur 
+			Rostika 
+			Umuria 
+			Sitti 
+			Yosina 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	ternate = { 
+	#north Halmahera
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.1 0.4 0.3 }
+		male_names = {
+			"Abdul Aziz" "Abdul Gani" "Abdul Hamid" "Abdul Haris" "Abdul Rahim" Abdullah Abjan Adam Adolf Ahmad Alexander Alham Ali Aliong Aman Amas Ambrosius Amustofa_Mustafa Anas Anderias Angelus Arief Arifin Arkalis Armyn Asrun Augustinus_Augustus Ayub 
+			Bahrain Bakri Burhan 
+			Chris Christ 
+			Daniel Djaidun Djalil_Jalil Djidon Djunaidi 
+			Edi Ellyas_Elias 
+			Fahri Fandy Frans_Francis 
+			Gahral Gerrit Gotlief 
+			Habib Hairuddin Halid Hamid Hasan Hein Hendrata Huraihah Husen Husnie 
+			"Ibnu Saud" Ibrahim Idrus Iksan Ilyaas_Elias Immanuel_Emmanuel Isaac Isaias Iskandar_Alexander 
+			Jacob Jamaluddin Johanes_John Jopie  
+			Mahmud Maks Marcus Marlatu Marthin Matheos Maurits Melchior Mochtar Muhammad Muhclis Muin Musa Muslim 
+			Nuku 
+			Petrus_Peter 
+			Ramli Rasmin Richard Ridwan Ronald Rudolf Rusman Rustam 
+			Said Saifuddin Salahuddin_Saladin Saleh Samuel Sofyan Solichin Syahran Syamsir Syarif 
+			Tagop Taufan Thaher Theddy Thomas Timotius_Timothy Tuasikal 
+			Ubay Ujir Umar Umra 
+			Wahid Wahyudin 
+			Yahya_John Yasin Yosep Yunus Yusran Yusuf_Joseph 
+			Zakir Zulfahri 
+		}
+		female_names = {
+			Adriana 
+			Beatrixs_Beatrice 
+			Carolina Cherly 
+			Dolfina 
+			Erny Evelin 
+			Genyawati Godeliva 
+			Hatija Helena Henny Henriette 
+			Juliche 
+			Katerina_Catherine 
+			Leberina Louisa 
+			Maharani Magdalena Maria 
+			Nur 
+			Rostika 
+			Umuria 
+			Sitti 
+			Yosina 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+}

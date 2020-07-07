@@ -1,0 +1,400 @@
+malayan = {
+	graphical_cultures = { melayugfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+
+	melayu = {
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.8 0.2 0.2 }
+		male_names = {
+			Aaron Abbas "Abdul Aziz" "Abdul Djafar" "Abdul Hamid" "Abdul Jalil" "Abdul Majid" "Abdul Rahman" Abdullah Abu Bakar_Abu-Bakr Ahmad Adam Adnan Akmal Aidan Alam Alauddin Ali Amar Amrullah Anas Andak Antah Aqil Arifin Ashraf Ataullah Azlan_Arslan
+			Badlishah Badrul Burhanuddin 
+			Daniel Danish Darwish Daud_David Dziaddin 
+			Ethan 
+			Faisal Faizuddin Farish Firmansyah 
+			Ghiatuddin 
+			Hafizuddin Halim Hamzah Haris Hasbullah Hashim Hassan Hassanal Haziq Hussain 
+			Karim Kassim
+			Ibrahim_Abraham Iskandar_Alexander Idris Iman Imansyah Irfan Ishak_Isaac Ismail Izzuddin 
+			Ja'afar_Jafar Jamaluddin Jamil Jasin Jayden
+			Kamaluddin Khalil Khalish
+			Lucas
+			Mahmud Mansur Ma'sud Mazlan Mikhail_Michael Mizan Mohd_Muhammad Mu'adzam Muhammad Muhriz Muhyiddin Mukarram Munawir Musa Muzaffar Muzzil
+			Najwan Naquiyuddin Nasrullah Naufal Nazrin Noah
+			Osman 
+			Putra
+			Rafi'i Rashid Rasmansyah Rayyan Riayat Riayatuddin
+			Safruddin Sahril Sahruddin Salahuddin_Saladin Samsuddin Samsul Sarafuddin Sirajuddin Sulaiman_Solomon Syahrial Syarif 
+			Tajuddin Tahir Taufik Tayeb Thamrin Thaqif 
+			Umar 
+			Yahya_John Yunus Yusniarsyah Yusransyah Yusuf_Joseph 
+			"Zainal Abidin" "Zainal Arifin" Zarif Zikri
+		}
+		female_names = {
+			Aayizah	Afzan Aisyah Alya Amara Aminah Arianna Arissa Asma Atbah Auliya Aura Azizah 
+			Badariah Bahiyah Bariah Budriah
+			Dhia
+			Fatima Fatimatuz Fauziah Fazira 
+			Hairiah Hannah Hasmah Humaira 
+			Ilisha Ilma Iman Indaryani Intan Isabel 
+			Jihan Johana 
+			Keisha Khadija 
+			Lusyanah 
+			Maimunah Maliha Marina Marissa Maryam_Mary Maya Muazah Muzwin
+			Nadhirah Najihah Najwan Noor Norashikin Nuha Nurhidayah Nurr Nurul 
+			Orked 
+			Petri Puteri 
+			Rafidah Raisya Rensina Rohana Ros Rosdiah Rozita Ruggyah 
+			Safya Sakinah Saloma Sara Siti Sofiah Tiara 
+			Yufida 
+			Zahirah Zahra Zainab Zalila Zanariah Zara Zarith Zatashah Zerafina Zubaidah
+		}
+		male_patronym = "ibni "
+		female_patronym = "binti "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	sarawak = {
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.1 0.5 0.6 }
+		male_names = {
+			Alexander 
+		}
+		female_names = {
+			Angelina 
+			Celestine 
+		}
+		male_patronym = "anak "
+		female_patronym = "anak "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	kelantanese = {
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.9 0.55 0.4 }
+		male_names = {
+			Aaron Abbas "Abdul Aziz" "Abdul Djafar" "Abdul Hamid" "Abdul Jalil" "Abdul Majid" "Abdul Rahman" Abdullah Abu Bakar_Abu-Bakr Ahmad Adam Adnan Akmal Aidan Alam Alauddin Ali Amar Amrullah Anas Andak Antah Aqil Arifin Ashraf Ataullah Azlan_Arslan
+			Badlishah Badrul Burhanuddin 
+			Daniel Danish Darwish Daud_David Dziaddin 
+			Ethan 
+			Faisal Faizuddin Farish Firmansyah 
+			Ghiatuddin 
+			Hafizuddin Haikal Halim Hamzah Haris Hashim Hassan Hassanal Haziq Hussain 
+			Karim Kassim
+			Ibrahim_Abraham Iskandar_Alexander Idris Iman Irfan Ishak_Isaac Ismail Izzuddin 
+			Ja'afar_Jafar Jamaluddin Jamil Jasin Jayden
+			Kamaluddin Khalil Khalish
+			Lucas
+			Mahmud Mansur Ma'sud Mazlan Mikhail_Michael Mizan Mohd_Muhammad Mu'adzam Muhammad Muhriz Muhyiddin Mukarram Munawir Musa Muzaffar Muzzil
+			Najwan Naquiyuddin Nasrullah Naufal Nazrin Noah
+			Osman 
+			Putra
+			Rafi'i Rashid Rasmansyah Rayyan Riayat Riayatuddin
+			Safruddin Sahril Sahruddin Salahuddin_Saladin Samsuddin Samsul Sarafuddin Sirajuddin Sulaiman_Solomon Syahrial Syarif 
+			Tajuddin Tahir Taufik Tayeb Thamrin Thaqif
+			Umar 
+			Yahya_John Yunus Yusniarsyah Yusransyah Yusuf_Joseph 
+			"Zainal Abidin" "Zainal Arifin" Zarif Zikri
+		}
+		female_names = {
+			Aayizah	Afzan Aisyah Alya Amara Aminah Arianna Arissa Asma Atbah Auliya Aura Azizah 
+			Badariah Bahiyah Bariah Budriah
+			Dhia
+			Fatima Fatimatuz Fauziah Fazira 
+			Hairiah Hannah Hasmah Humaira 
+			Ilisha Ilma Iman Indaryani Intan Isabel 
+			Jihan Johana 
+			Keisha Khadija 
+			Lusyanah 
+			Maimunah Maliha Marina Marissa Maryam_Mary Maya Muazah Muzwin
+			Nadhirah Najihah Najwan Noor Norashikin Nuha Nurhidayah Nurr Nurul 
+			Orked 
+			Petri Puteri 
+			Rafidah Raisya Rensina Rohana Ros Rosdiah Rozita Ruggyah 
+			Safya Sakinah Saloma Sara Siti Sofiah Tiara 
+			Yufida 
+			Zahirah Zahra Zainab Zalila Zanariah Zara Zarith Zatashah Zerafina Zubaidah
+		}
+		male_patronym = "ibni "
+		female_patronym = "binti "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}	
+
+	acehnese = {
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.6 0.2 0.6 }
+		male_names = {
+			Abubakar_Abu-Bakr "Abdul Jalil" "Abdul Karim" Abdul Madjid_Abdul Majid "Abdul Razak" "Abdul Wahab" Abdullah Adnan Ahmad Alauddin Alam Ali Aminullah Arif Asyem Azwar
+			Bachtiar Bidin
+			Daud_David Diraja Djamal
+			Éseukanda_Alexander
+			Fadhlullah Firman
+			Ghori
+			Hamzah Hasan Hasballah Hasyim Husain
+			Ibrahim_Abraham Iskandar_Alexander Ismail Ismed
+			Jamaluddin Jauhar Johan Jusman
+			Kivlan
+			Maharaja Mahmud Malik Mansor_Mansur Muda Mughal Mughayat Muhammad Mustafa Muzaffar
+			Nuruddin
+			Perkasa
+			Umar
+			Riayat
+			Safiatuddin Saifannur Salahuddin_Saladin Sofyan Sulaiman_Solomon Suriansyah Syamsudin 
+			Teuku
+			Yahya Yazid Yusuf
+			Zainatuddin "Zainal Abidin" Zakaria 
+		}
+		female_names = {
+			Baginda Buleuën
+			Ceudah
+			Dhien Dina
+			Gambang
+			Kamalat Keumala Khana
+			Inayat Inderabangsa
+			Jeumpa
+			Mariyam Meuligoë Meutia
+			Para Puteri Putroë
+			Setia "Sitt Hur" Sjak Sofiah
+			"Tajul-’Alam" Teungoh
+		}
+		male_patronym = "bin "
+		female_patronym = "binti "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}	
+
+	sumatran = {
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.4 0.25 0.8 }
+		male_names = {
+			Abbas Abdullah "Abdul Halim"  "Abdul Jalil" "Abdul Karim" "Abdul Malik" "Abdul Muis" "Abdul Rahman" Abubakar_Abu-Bakr Adam Adnan Ahmad Akbar Alam Ali Amaluddin Amarullah Amin Ansharullah Anwar Arifin Arizal Asrul Azmy Azyumardi
+			Bachrum Bachtiar Bagagar Bahder Bagindo Basrief Basrizal Budi Busro
+			Chairul
+			Dahlan Deliar Djamaluddin_Jamaluddin Djauharsjah
+			Erry
+			Fahmi Firmansyah
+			Hakim Hariro Harun Hasan Hasyim_Hashim Hasnul Hengky Husain
+			Ibrahim_Abraham Idrus_Idris Inderma Indra Irdinansyah Irsan Irsyad Ishak_Isaac Iskandar_Alexander Ismail
+			Kamaluddin Kamarudin Karno Kasim Kivlan
+			Mahmud Mahyeldi Ma'moen Marah Meranun Misbach Mochtar Mohammad_Muhammad Mokhzani Moreno Mukhriz_Muhriz Muning Mursini Mursyd
+			Nadiem Nahar Natsir
+			Omar_Umar
+			Razali Rais Rizal Rustam
+			Said Salman Sofyan Sutan Syafruddin Syahril Syahrir Syamsir
+			Taher Taufiq_Taufik Tifatul
+			Usman_Osman Usmar
+			Wildan
+			Yahya Yamin Yatim Yunizar Yusuf_Joseph
+			Zahrain "Zainal Abidin" Zubir
+		}
+		female_names = {
+			Aishah Anindia Atika
+			Badi'ah
+			Camelia Chadijah_Khadija Cita
+			Derliana Desi Dewi
+			Eva
+			Farida Fatimah_Fatima Fatmawati
+			Gita
+			Hasmah Huriah
+			Isbandiyah Ismailia
+			Jelita Juwita
+			Laksmi Laila
+			Marshanda Matayam Meutia Mira
+			Nordiana Norsiha Nurbijak Nurjannah
+			Rasimah Rasuna Resi Revalina Roehana Roesma
+			Sadarijah Sariamin Shafiyah Sherina Shireen
+			Whulandary
+			Zakiah Zaskia
+		}
+		male_patronym = "bin "
+		female_patronym = "binti "
+		prefix = yes
+		founder_named_dynasties = no
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	banjarese = {
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.4 0.25 0.8 }
+		male_names = {
+			Abbas Abdul "Abdul Azis" "Abdul Gaffar" "Abdul Gais" "Abdul Ghani" "Abdul Hafiz" "Abdul Wahab" Abdurrahman Aberanie Abu Bakar_Abu-Bakr Adam Adzikro Ahmad Akbar  Ali Aliansyah Alibasah Aliuddin Almaruf Alvin Aminullah Amir Amrullah Andarun Anom Antasari Ardiansyah Ariadi Arifin Arul Arsyad Aslan Azhar 
+			Baharuddin Bardiansyah 
+			Dafik Darmansyah Dilaga Djohan_John 
+			Effendi 
+			Fadillah Fakhriansyah Faisal Faiz Fajar Farid Farry Firmansyah 
+			Gazali 
+			Hamidullah Hasan Hasanuddin Helmi Hermansyah Hidayatullah Hikmatullah Husaini 
+			Iandika Ibrahim_Abraham "Ibnu Sina" Idham Idris Ifansyah Ilham Ilhamidullah Inayatullah Indra Iqbal Irfani Irwan Iskandar_Alexander Ismail Iwan 
+			Jamal Johansyah 
+			Kasuma Khairul Khalilullah Khalilurrahman Khatib Kuning 
+			Mahyudin Mashud_Ma'sud Mawardi Midfai Miradipa Mohd_Muhammad Mu'arif Mubramsyah Mudzaffar Muhammad Muhammadillah Muhidin Mursjid Mustainbillah 
+			Nadzimuddin Nata 
+			Osama Osman_Usman 
+			Rahmatullah Ramadhan Ramlan Raymullan Ri'ayatullah Riswan Rudy Rusdiansyah Ruzaidin 
+			Saadillah Saidullah Sasirangan Sasra Setiawan Sjachriel Sjerief Sofyan Solihin Subarkah Sulaiman_Solomon Surapati Suriansyah "Surya Alam" Suryanata Syafiq Syamsuddin Syamsul Syarifuddin 
+			Tahalidullah Tahmidullah Tamjidullah Taufiq 
+			Ubaidillah Umar 
+			Wahyuni 
+			Yudhi Yuliansyah 
+			Zaki Zaini 
+		}
+		female_names = {
+			Adistya Aditya Aisyah Alimah Aminah Ampit Ardella Arni Arpiah Arufah Assarah 
+			Banun Bandara Basariah Bintang Bulan 
+			Diyanoor Djariah 
+			Emita Emma Etjech 
+			Fardah Fathul Fatimah Fatimatuzahra Fauziah Faza Febiolla Fitri 
+			Hapsah Hasiah Hayatun 
+			Ida Idjah Intan Ismina Izzati 
+			Jamedah Jasmaniah Jasmin 
+			Kaidah Kasoema Khadijah 
+			Lailah 
+			Mariam Masliah 
+			Najihah Noerain Noormiliyani Noorsiana Noraina Noraziah Nosi Nur Nurhayati Nurmaningsih 
+			Pragustia Putih 
+			Rahamah Rahmiani Ratna Risni Roni 
+			Saadah Saleha Salmah Saloma Sari Sarimah Semarang Siti Syarifah Sofia 
+			Umpay 
+			Wahyuniati Wandarie Wasilah Wira 
+			Yasminda Yuriawati 
+			Zahra Zai Zannah Zawawi Zubaidah Zulaikha Zuraida 
+		}
+		male_patronym = "bin "
+		female_patronym = "binti "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+	
+	singaporean = {
+		graphical_cultures = { chinesegfx }
+		unit_graphical_cultures = { chinesegfx mongolgfx indiangfx muslimgfx }
+
+		color = { 0.5 0.5 0.7 }
+		
+		male_names = {
+			Aaron Aasima Aatifa Abdul Abdullah Adhraaa Adiputri Adnan Adrian Afaaf Agu Ah-Mee Ahmad Aishah Aisyah Albert Alex Aloysius Amal Ameerul Amos Andre Andrew Aneesa Antony Awaatif Ayden Azura Bak-Chye Benedict Benjamin Bo-Seng Boon-Hui Boon-Keng Boon-Wan Bunga Cahaya Cai-Chengjun Carlson Cempaka Chahaya Chalise Chee-Hean Chee-Keong Cheng-Bock Cheong-Ming Chin-Chye Cho-Yaw Chok-Tong Chong-Tee Choon-Seng Chun-Leong Chun-Sing Cik Cy Damien Daniel Dara Daren Darren Darryl David Davinder Dean Declan Delima Desmond Devan Dewi Dian Don Douglas Dray Eng-Hen Erfi Eric Esah Fandi Faraah Franklin George Gerald Gerard Ghaada Ghazaala Gordon Gurmit Hadeel Hairie Halim Han-Qin Hanaaa Hanoona Hans Haryati Hawraa Hayati Herman Hijau Hock-Kim Hock-Siew Hoi-Kim Horng-Siong How-Doong Howe-Liang Hsien-Loong Hsien-Yang Ian Indah Ishak Ivan Izzati Jase Jason Jasra Jay Jaya Jee-Say Jeffrey Jenab Jeremy Jiaming Jie Jithu Jonathan Joseph Joshua Julien Jun Jun-Jie Junlong Justin Juwita Kah-Kee Kameela Kan-Seng Kartika Kartini Kc Keith Kelvin Kembang Kemboja Ken-Lim Keng-Swee Keng-Yam Keng-Yong Kenneth Kenny Kevin Khaleela Kiah-Hong Kim-Heng Kim-Lai Kim-San Kim-Wee Kin-Lian Kirito Kong Kong-Chian Koseki Kris Kuan-Yew Kuning Kuntum Lark-Sye Latipah Lavinya Lawrence Lee Leng-Beng Leon Lex Ling-Fung Lionel Lou Louis Lubna Maariya Madeeha Mahsuri Mahura Maimoona Maleeha Manaahil Manjalara Manull Marcus Mariah Mariam Mark Marshall Mas Masayu Matt Matthew Mawar Maya Mayang Melati Mike Mumtaaza Murni Muzzammil Naadiya Naaifa Nadeera Najaat Najma Najwa Nakheel Naqiyya Nicholas Nikkori Nilam Nishant Oscar Peng-Boon Peng-Siong Peng-Soon Peter Phil Philip Phung-Kim Ping-Tjin Puteri Putih Qamraaa Rafeeqa Raheema Raja Rajesh Rasheeda Ravyu Richard Rodney Rohan Ronald Russell Ruwan Ryan Saadong Sabeeka Sabiyya Sabriyya Safwa Sagnwook Sahheeda Sameera Samuel Saul See-Tong Sellapan Seng-Song Seng-Wee Ser-Cher Ser-Miang Seri Shaahira Shafee'a Shahaama Shakoora Shamsul Shane Shunmugam Siddeeqa Siew-Choh Silver Simon Sinnathamby Soon-Hong Soon-Yong Sri Steve Steven Subhas Sui-Sen Sumaita Sumbula Suppiah Suria Suriawati Surintan Swee-Keat Swie-Hian Syamim Sylvester Tamanna Tan-Huang Tasneem Tat-Chuan Taufik Tawfeeqa Tawheeda Teck-Puat Teng-Cheong Teng-Fong Teratai Thaabita Thia-Khiang Thye-Poh Timothy Tock-Seng Tony Tze-Law Ulyaa Umaima Ungu Vijaya Vincent Vishva Vivian Waajida Wadee'a Waleeda Walter Wangi Wei Wei-Jie Wei-Lian Winston Xiaoyu Yaasmeen Yati Yeck-Joo Yeow-Soon Yew-Hock Yi-Jung Yip-Yan Yong-Boon Yusof Zaahira Zack Zaitoona Zeena Zuhra 
+		}
+		
+		female_names = {
+			Aaisha Aamina Aatika Adhraaa Adi Adiputeri Adiputri Adlina Afiqah Afraah Agnes Ain Aishah Alexis Alicia Alvira Amanda Amaya Ameera Amelia Amniyya Angeline Annabel Aseela Ashley Barbara Beth Biru Bulat Cahaya Catherine Cathy Cempaka Chahaya Charmaine Cherilyn Chermaine Cheryl Chin-Siow Ching Chloe Christie Christina Christine Cik Claire Claudia Corrinne Dayang Denise Dorothy Dwy Ee-Tze Elaine Ellyza Embun Emma Esther Eunice Faith Fang Fareeda Farhat Fatin Fawqiyya Fawzaana Felicia Feuer Fikra Fiona Foon-Ling Gayathri Gemmie Geok-Choo Ghuzaila Gina Grace Haajara Haala Haaniya Hafizah Haibaa Haifaaa Hapsah Haryati Hazlina Heng-Chee Hilmiyya Himma Huei-Min Hujja Idranee Intan Izzati Jamie Jane Jannat Jasmine Jeanette Jenab Jiawei Jing Joelle Joey Jolene Judy Jumaana Jun Junhong Juwita Kaatima Kartika Kartini Katijah Keerthi Kelly Kembang Kemuning Ker-Wey Khaira Khairiya Khatijah Kimberly Kit-Chan Kulthum Kuning Laaiqa Latipah Lauren Leah Leanna Lee Leong Li Lim Lina Linda Lulu Ma Maazina Madeeha Mahura Maia Manaahil Manaara Manjalara Mardiyya Mariah Mariam Mas Masayu Mastoora Mavis Mawar Mawhiba May Maya Mayang Mazeeda Meifeng Melati Melur Meriam Michelle Min Min-Lee Mindy Miska Mitchie Miyuki Molly Mubeena Mujaahida Muna Murni Mushtaaqa Mutee'a Naaifa Nabilah Nadeera Najaat Naseeba Nasuha Natalie Nawar Nicole Ning Nur Nurul Olivia Ou-Xuan Pavani Pei-Ling Pertiwi Poh-Imm Puspa Puspawangi Puteh Raadiya Raaniya Rachel Raihaana Rebecca Regina Rena Rihaab Rin Rui-En Sa'adong Saadong Sabaaha Sadeeda Sadeeqa Safiyya Sai-Por Samraa Sanaaa Sarah Seiriene Sepiah Shaakira Shabeeba Shadhaa Shafaaa Shafee'a Shasha Sherilyn Sheryl Shu-Ying Siddeeqa Sri Stefanie Suchen Sumiko Suria Suriawati Syiqah Sylvia Tameema Tan Tanya Tayyiba Teratai Thaamira Tijah Turfa Umaima Valerie Vanessa Vicky Waajida Wan-Er Waneesa Wong Woon-Fong Yaasmeen Yanmei Yanzi Yi-Ling Yip Yujia Yvonne Zamrud Zena Zeth Ziqian Zoe 
+		}
+		
+		from_dynasty_prefix = ""
+
+		pat_grf_name_chance = 20
+		mat_grf_name_chance = 10
+		father_name_chance = 20
+
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 20
+		mother_name_chance = 10
+		
+		used_for_random = no
+		
+		seafarer = yes
+		modifier = default_culture_modifier
+	}
+}
