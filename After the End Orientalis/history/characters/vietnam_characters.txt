@@ -7,6 +7,9 @@
 #2878 - Muong
 #2879 - Hoa
 
+# Lowland Khmer
+#1182 - Khrom
+
 #Chamic
 #1177 - Cham
 #1178 - Jarai
@@ -1369,6 +1372,83 @@
 	trait=idolizer
 	2600.1.1={birth=yes}
 }
+# The Sons of Angkor
+1182000={
+	name="Mean" #Northern Khmer Prince's Grandfather
+	dynasty=1182000
+	culture=khrom
+	religion=dharmayuttika
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=tough_soldier
+	trait=scarred_mid
+	trait=brave
+	trait=ambitious
+	trait=just
+	trait=lustful
+	2500.1.1={birth=yes}
+	2574.1.1={death=yes}
+}
+1182001={
+	name="Sok" #Northern Khmer Prince Father
+	dynasty=1182000
+	father = 1182000
+	culture=khrom
+	religion=dharmayuttika
+	martial=1
+	diplomacy=1
+	stewardship=4
+	intrigue=5
+	learning=6
+	trait=scholarly_theologian
+	trait=theologian
+	trait=paranoid
+	trait=content
+	trait=trusting
+	trait=lustful
+	2540.1.1={birth=yes}
+}
+1182002={
+	name="Duon" #Northern Khmer Prince
+	dynasty=1182000
+	father = 1182001
+	culture=khrom
+	religion=dharmayuttika
+	martial=3
+	diplomacy=1
+	stewardship=5
+	intrigue=1
+	learning=1
+	trait=martial_cleric
+	trait=strategist
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=humble
+	add_weak_claim = c_can_tho
+	2580.1.1={birth=yes}
+}
+1182003={
+	name="Boran" #Southern Khmer Khrom Prince
+	dynasty=1182001
+	culture=khrom
+	religion=dharmayuttika
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+}
 ###########PLACEHOLDER- For Lords part of larger undefined groups###########
 2500000={ #Hmong Lord
 	name="Alang"
@@ -1392,42 +1472,6 @@
 	name="Tayin"
 	dynasty=1025000
 	culture=tay_nung
-	religion=dharmayuttika
-	martial=3
-	diplomacy=3
-	stewardship=4
-	intrigue=5
-	learning=5
-	trait=charismatic_negotiator
-	trait=scholar
-	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
-	2580.1.1={birth=yes}
-}
-5003={
-	name="Danh" #Northern Khmer Khrom Prince
-	dynasty=5003
-	culture=khrom
-	religion=dharmayuttika
-	martial=3
-	diplomacy=3
-	stewardship=4
-	intrigue=5
-	learning=5
-	trait=charismatic_negotiator
-	trait=scholar
-	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
-	2580.1.1={birth=yes}
-}
-5004={
-	name="Boran" #Southern Khmer Khrom Prince
-	dynasty=5004
-	culture=khrom
 	religion=dharmayuttika
 	martial=3
 	diplomacy=3
