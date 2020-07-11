@@ -3215,37 +3215,468 @@ e_japan = {
 		}
 	}
 }
-e_kampuchea = {
-	color={ 145 248 127 }
+e_mekong = {
+	color={ 180 159 175 }
 	color2={ 255 255 20 }
 	
-	capital = 313 # c_phnom_penh
-	culture = khmer
+	capital = 294 # c_nakhon_viangchan
+	
+	laotian = "Lan Xang"
+	khmer = "Kampuchea"
 	
 	allow = {
-	culture_group = lowland_austroasiatic
-	completely_controls = k_kampuchea
-	completely_controls = k_gia_dhinh
-	primary_title = { higher_tier_than = DUKE }
-	}
-	
-	gain_effect = {
-	if = {
-			limit = {
-				k_gia_dhinh = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_kampuchea
-					}
-				}
-			}
-			k_gia_dhinh = {
-				show_scope_change = no
-				de_jure_liege = e_kampuchea
+	OR = {
+		AND = {
+			culture_group = lowland_austroasiatic
+			completely_controls = k_kampuchea
+			completely_controls = k_gia_dhinh
+			primary_title = { higher_tier_than = DUKE }
+		}
+		OR = { 
+			AND = {
+				culture = laotian
+				completely_controls = k_lan_xang
+				completely_controls = k_kampuchea
+				primary_title = { higher_tier_than = DUKE }
 			}
 		}
 	}
+}
 	
+	k_lan_xang = {
+		color={ 190 149 180 }
+		color2={ 255 255 255 }
+		
+		capital = 294 # c_nakhon_viangchan
+		culture = laotian
+		
+		d_vientiane = {
+			color={ 210 129 190 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 294 province_id = 295 province_id = 296 province_id = 297 } }
+				}
+			}
+			capital = 294 # c_nakhon_viangchan
+			
+			c_nakhon_viangchan = { # 294
+				color={ 220 119 195 }
+				color2={ 255 255 255 }
+				
+				b_sikhottabong = {
+				}
+				b_xaysetha = {
+				}
+				b_chanthabuly = {
+				}
+				b_hadxayfong = {
+				}
+				b_sisattanak = {
+				}
+				b_xaythany = {
+				}
+				b_sisattanak_2 = {
+				}
+			}
+			c_khwaeng_viangchan = { # 295
+				color={ 236 135 211 }
+				color2={ 255 255 255 }
+				
+				b_phonhong = {
+				}
+				b_thoulakhom = {
+				}
+				b_vangvieng = {
+				}
+				b_keo_oudom = {
+				}
+				b_mad = {
+				}
+				b_kasy = {
+				}
+				b_feuang = {
+				}
+			}
+			c_sainyabuli = { # 296
+				color={ 212 145 195 }
+				color2={ 255 255 255 }
+				
+				b_xayabury = {
+				}
+				b_parklai = {
+				}
+				b_phiang = {
+				}
+				b_kenethao = {
+				}
+				b_hongsa = {
+				}
+				b_ngeun = {
+				}
+				b_xienghone = {
+				}
+			}
+			c_xaisomboun = { # 297
+				color={ 195 116 176 }
+				color2={ 255 255 255 }
+				
+				b_xaysomboun = {
+				}
+				b_anouvong = {
+				}
+				b_longchaeng = {
+				}
+				b_longxan = {
+				}
+				b_hom = {
+				}
+				b_thathom = {
+				}
+				b_phu_kham = {
+				}
+			}
+		}
+		d_champasak = {
+			color={ 188 90 158 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 308 province_id = 309 province_id = 310 province_id = 311 province_id = 312 } }
+				}
+			}
+			capital = 308 # c_champasak
+			
+			c_champasak = { # 308
+				color={ 198 80 163 }
+				color2={ 255 255 255 }
+				
+				b_phonthong = {
+				}
+				b_champasak = {
+				}
+				b_soukhouma = {
+				}
+				b_mounlapamok = {
+				}
+				b_west_siphandon = {
+				}
+				b_ban_mouang = {
+				}
+				b_ban_nong_deng = {
+				}
+			}
+			c_attapeu = { # 310
+				color={ 104 78 131 }
+				color2={ 255 255 255 }
+				
+				b_xaysetha_2 = {
+				}
+				b_chanthabuly_2 = {
+				}
+				b_hadxayfong_2 = {
+				}
+				b_samakkhixay = {
+				}
+				b_xaythany_2 = {
+				}
+				b_sisattanak_3 = {
+				}
+				b_naxaithong = {
+				}
+			}
+			c_pakse = { # 309
+				color={ 136 89 180 }
+				color2={ 255 255 255 }
+				
+				b_pak_se = {
+				}
+				b_sanasomboun = {
+				}
+				b_bachiangchaleunsouk = {
+				}
+				b_paksong = {
+				}
+				b_pathoumphone = {
+				}
+				b_east_siphandon = {
+				}
+				b_xe_pian = {
+				}
+			}
+			c_salavan = { # 312
+				color={ 141 117 164 }
+				color2={ 255 255 255 }
+				
+				b_ta_oy = {
+				}
+				b_toomlarn = {
+				}
+				b_lakhonepheng = {
+				}
+				b_vapy = {
+				}
+				b_khongsedone = {
+				}
+				b_lao_ngarm = {
+				}
+				b_samuoi = {
+				}
+			}
+			c_sekong = { # 311
+				color={ 121 78 162 }
+				color2={ 255 255 255 }
+				
+				b_sekong = {
+				}
+				b_lamam = {
+				}
+				b_kaleum = {
+				}
+				b_dakcheung = {
+				}
+				b_thateng = {
+				}
+				b_dakchung = {
+				}
+				b_bolaven = {
+				}
+			}
+		}
+		d_luang_prabang = {
+			color={ 141 108 148 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 299 province_id = 300 province_id = 301 province_id = 302 province_id = 303 province_id = 304 } }
+				}
+			}
+			capital = 299 # c_luang_prabang
+			
+			c_luang_prabang = { # 299
+				color={ 151 98 153 }
+				color2={ 255 255 255 }
+				
+				b_louangphrabang = {
+				}
+				b_nam_bak = {
+				}
+				b_xiengngeun = {
+				}
+				b_ngoy = {
+				}
+				b_phonxay = {
+				}
+				b_chomphet = {
+				}
+				b_viengkham = {
+				}
+			}
+			c_bokeo = { # 304
+				color={ 176 138 184 }
+				color2={ 255 255 255 }
+				
+				b_ban_huayxay = {
+				}
+				b_houaixai = {
+				}
+				b_tonpheung = {
+				}
+				b_meung = {
+				}
+				b_pha = {
+				}
+				b_paktha = {
+				}
+				b_nam_kan = {
+				}
+			}
+			c_houaphan = { # 301
+				color={ 175 89 179 }
+				color2={ 255 255 255 }
+				
+				b_xamneua = {
+				}
+				b_xiengkhor = {
+				}
+				b_viengthong = {
+				}
+				b_viengxay = {
+				}
+				b_huameuang = {
+				}
+				b_xamtay = {
+				}
+				b_sop_bao = {
+				}
+			}
+			c_luang_namtha = { # 303
+				color={ 135 95 137 }
+				color2={ 255 255 255 }
+				
+				b_luang_namtha = {
+				}
+				b_namtha = {
+				}
+				b_mueang_sing = {
+				}
+				b_long = {
+				}
+				b_viengphoukha = {
+				}
+				b_nale = {
+				}
+				b_nam_ha = {
+				}
+			}
+			c_oudomxay = { # 300
+				color={ 148 111 156 }
+				color2={ 255 255 255 }
+				
+				b_xay = {
+				}
+				b_houne = {
+				}
+				b_namo = {
+				}
+				b_nga = {
+				}
+				b_beng = {
+				}
+				b_pakbeng = {
+				}
+				b_la = {
+				}
+			}
+			c_phongsali = { # 302
+				color={ 170 131 172 }
+				color2={ 255 255 255 }
+				
+				b_phongsaly = {
+				}
+				b_may = {
+				}
+				b_khoua = {
+				}
+				b_samphanh = {
+				}
+				b_boun_neua = {
+				}
+				b_yot_ou = {
+				}
+				b_boun_tay = {
+				}
+			}
+		}
+		d_savannakhet = {
+			color={ 160 132 171 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 305 province_id = 306 province_id = 307 } }
+				}
+			}
+			capital = 305 # c_khammouane
+			
+			c_khammouane = { # 305
+				color={ 170 122 176 }
+				color2={ 255 255 255 }
+				
+				b_thakhek = {
+				}
+				b_mahaxay = {
+				}
+				b_nongbouk = {
+				}
+				b_hinboun = {
+				}
+				b_nhommalath = {
+				}
+				b_boulapha = {
+				}
+				b_nakai = {
+				}
+			}
+			c_bolikhamsai = { # 306
+				color={ 199 122 202 }
+				color2={ 255 255 255 }
+				
+				b_paksan = {
+				}
+				b_thaphabath = {
+				}
+				b_pakkading = {
+				}
+				b_bolikhanh = {
+				}
+				b_khamkeut = {
+				}
+				b_viengthong_2 = {
+				}
+				b_xaichamphon = {
+				}
+			}
+			c_savannakhet = { # 307
+				color={ 156 123 187 }
+				color2={ 255 255 255 }
+				
+				b_kaysone_phomvihane = {
+				}
+				b_outhoumphone = {
+				}
+				b_atsaphangthong = {
+				}
+				b_phine = {
+				}
+				b_sepone = {
+				}
+				b_nong = {
+				}
+				b_thapangthong = {
+				}
+			}
+		}
+		d_xiangkhouang = {
+			color={ 164 120 171 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 298 } }
+				}
+			}
+			capital = 298 # c_xiangkhouang
+			
+			c_xiangkhouang = { # 298
+				color={ 174 110 176 }
+				color2={ 255 255 255 }
+				
+				b_phonsavan = {
+				}
+				b_kham = {
+				}
+				b_nong_het = {
+				}
+				b_khoune = {
+				}
+				b_mok_may = {
+				}
+				b_phou_kout = {
+				}
+				b_phaxay = {
+				}
+			}
+		}
+	}
 	k_kampuchea = {
 		color={ 155 238 132 }
 		color2={ 255 255 255 }
@@ -3784,472 +4215,6 @@ e_kampuchea = {
 				b_rovieng = {
 				}
 				b_sangkom_thmei = {
-				}
-			}
-		}
-	}
-}
-e_lan_xang = {
-	color={ 180 159 175 }
-	color2={ 255 255 20 }
-	
-	capital = 294 # c_nakhon_viangchan
-	culture = laotian
-	
-	allow = {
-	culture = laotian
-	completely_controls = k_lan_xang
-	completely_controls = k_kampuchea
-	primary_title = { higher_tier_than = DUKE }
-	}
-	
-	gain_effect = {
-	if = {
-			limit = {
-				k_kampuchea = {
-					is_titular = no
-					NOT = {
-						de_jure_liege = e_lan_xang
-					}
-				}
-			}
-			k_kampuchea = {
-				show_scope_change = no
-				de_jure_liege = e_lan_xang
-			}
-		}
-	}
-	
-	k_lan_xang = {
-		color={ 190 149 180 }
-		color2={ 255 255 255 }
-		
-		capital = 294 # c_nakhon_viangchan
-		culture = laotian
-		
-		d_vientiane = {
-			color={ 210 129 190 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 294 province_id = 295 province_id = 296 province_id = 297 } }
-				}
-			}
-			capital = 294 # c_nakhon_viangchan
-			
-			c_nakhon_viangchan = { # 294
-				color={ 220 119 195 }
-				color2={ 255 255 255 }
-				
-				b_sikhottabong = {
-				}
-				b_xaysetha = {
-				}
-				b_chanthabuly = {
-				}
-				b_hadxayfong = {
-				}
-				b_sisattanak = {
-				}
-				b_xaythany = {
-				}
-				b_sisattanak_2 = {
-				}
-			}
-			c_khwaeng_viangchan = { # 295
-				color={ 236 135 211 }
-				color2={ 255 255 255 }
-				
-				b_phonhong = {
-				}
-				b_thoulakhom = {
-				}
-				b_vangvieng = {
-				}
-				b_keo_oudom = {
-				}
-				b_mad = {
-				}
-				b_kasy = {
-				}
-				b_feuang = {
-				}
-			}
-			c_sainyabuli = { # 296
-				color={ 212 145 195 }
-				color2={ 255 255 255 }
-				
-				b_xayabury = {
-				}
-				b_parklai = {
-				}
-				b_phiang = {
-				}
-				b_kenethao = {
-				}
-				b_hongsa = {
-				}
-				b_ngeun = {
-				}
-				b_xienghone = {
-				}
-			}
-			c_xaisomboun = { # 297
-				color={ 195 116 176 }
-				color2={ 255 255 255 }
-				
-				b_xaysomboun = {
-				}
-				b_anouvong = {
-				}
-				b_longchaeng = {
-				}
-				b_longxan = {
-				}
-				b_hom = {
-				}
-				b_thathom = {
-				}
-				b_phu_kham = {
-				}
-			}
-		}
-		d_champasak = {
-			color={ 188 90 158 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 308 province_id = 309 province_id = 310 province_id = 311 province_id = 312 } }
-				}
-			}
-			capital = 308 # c_champasak
-			
-			c_champasak = { # 308
-				color={ 198 80 163 }
-				color2={ 255 255 255 }
-				
-				b_phonthong = {
-				}
-				b_champasak = {
-				}
-				b_soukhouma = {
-				}
-				b_mounlapamok = {
-				}
-				b_west_siphandon = {
-				}
-				b_ban_mouang = {
-				}
-				b_ban_nong_deng = {
-				}
-			}
-			c_attapeu = { # 310
-				color={ 104 78 131 }
-				color2={ 255 255 255 }
-				
-				b_xaysetha_2 = {
-				}
-				b_chanthabuly_2 = {
-				}
-				b_hadxayfong_2 = {
-				}
-				b_samakkhixay = {
-				}
-				b_xaythany_2 = {
-				}
-				b_sisattanak_3 = {
-				}
-				b_naxaithong = {
-				}
-			}
-			c_pakse = { # 309
-				color={ 136 89 180 }
-				color2={ 255 255 255 }
-				
-				b_pak_se = {
-				}
-				b_sanasomboun = {
-				}
-				b_bachiangchaleunsouk = {
-				}
-				b_paksong = {
-				}
-				b_pathoumphone = {
-				}
-				b_east_siphandon = {
-				}
-				b_xe_pian = {
-				}
-			}
-			c_salavan = { # 312
-				color={ 141 117 164 }
-				color2={ 255 255 255 }
-				
-				b_ta_oy = {
-				}
-				b_toomlarn = {
-				}
-				b_lakhonepheng = {
-				}
-				b_vapy = {
-				}
-				b_khongsedone = {
-				}
-				b_lao_ngarm = {
-				}
-				b_samuoi = {
-				}
-			}
-			c_sekong = { # 311
-				color={ 121 78 162 }
-				color2={ 255 255 255 }
-				
-				b_sekong = {
-				}
-				b_lamam = {
-				}
-				b_kaleum = {
-				}
-				b_dakcheung = {
-				}
-				b_thateng = {
-				}
-				b_dakchung = {
-				}
-				b_bolaven = {
-				}
-			}
-		}
-		d_luang_prabang = {
-			color={ 141 108 148 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 299 province_id = 300 province_id = 301 province_id = 302 province_id = 303 province_id = 304 } }
-				}
-			}
-			capital = 299 # c_luang_prabang
-			
-			c_luang_prabang = { # 299
-				color={ 151 98 153 }
-				color2={ 255 255 255 }
-				
-				b_louangphrabang = {
-				}
-				b_nam_bak = {
-				}
-				b_xiengngeun = {
-				}
-				b_ngoy = {
-				}
-				b_phonxay = {
-				}
-				b_chomphet = {
-				}
-				b_viengkham = {
-				}
-			}
-			c_bokeo = { # 304
-				color={ 176 138 184 }
-				color2={ 255 255 255 }
-				
-				b_ban_huayxay = {
-				}
-				b_houaixai = {
-				}
-				b_tonpheung = {
-				}
-				b_meung = {
-				}
-				b_pha = {
-				}
-				b_paktha = {
-				}
-				b_nam_kan = {
-				}
-			}
-			c_houaphan = { # 301
-				color={ 175 89 179 }
-				color2={ 255 255 255 }
-				
-				b_xamneua = {
-				}
-				b_xiengkhor = {
-				}
-				b_viengthong = {
-				}
-				b_viengxay = {
-				}
-				b_huameuang = {
-				}
-				b_xamtay = {
-				}
-				b_sop_bao = {
-				}
-			}
-			c_luang_namtha = { # 303
-				color={ 135 95 137 }
-				color2={ 255 255 255 }
-				
-				b_luang_namtha = {
-				}
-				b_namtha = {
-				}
-				b_mueang_sing = {
-				}
-				b_long = {
-				}
-				b_viengphoukha = {
-				}
-				b_nale = {
-				}
-				b_nam_ha = {
-				}
-			}
-			c_oudomxay = { # 300
-				color={ 148 111 156 }
-				color2={ 255 255 255 }
-				
-				b_xay = {
-				}
-				b_houne = {
-				}
-				b_namo = {
-				}
-				b_nga = {
-				}
-				b_beng = {
-				}
-				b_pakbeng = {
-				}
-				b_la = {
-				}
-			}
-			c_phongsali = { # 302
-				color={ 170 131 172 }
-				color2={ 255 255 255 }
-				
-				b_phongsaly = {
-				}
-				b_may = {
-				}
-				b_khoua = {
-				}
-				b_samphanh = {
-				}
-				b_boun_neua = {
-				}
-				b_yot_ou = {
-				}
-				b_boun_tay = {
-				}
-			}
-		}
-		d_savannakhet = {
-			color={ 160 132 171 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 305 province_id = 306 province_id = 307 } }
-				}
-			}
-			capital = 305 # c_khammouane
-			
-			c_khammouane = { # 305
-				color={ 170 122 176 }
-				color2={ 255 255 255 }
-				
-				b_thakhek = {
-				}
-				b_mahaxay = {
-				}
-				b_nongbouk = {
-				}
-				b_hinboun = {
-				}
-				b_nhommalath = {
-				}
-				b_boulapha = {
-				}
-				b_nakai = {
-				}
-			}
-			c_bolikhamsai = { # 306
-				color={ 199 122 202 }
-				color2={ 255 255 255 }
-				
-				b_paksan = {
-				}
-				b_thaphabath = {
-				}
-				b_pakkading = {
-				}
-				b_bolikhanh = {
-				}
-				b_khamkeut = {
-				}
-				b_viengthong_2 = {
-				}
-				b_xaichamphon = {
-				}
-			}
-			c_savannakhet = { # 307
-				color={ 156 123 187 }
-				color2={ 255 255 255 }
-				
-				b_kaysone_phomvihane = {
-				}
-				b_outhoumphone = {
-				}
-				b_atsaphangthong = {
-				}
-				b_phine = {
-				}
-				b_sepone = {
-				}
-				b_nong = {
-				}
-				b_thapangthong = {
-				}
-			}
-		}
-		d_xiangkhouang = {
-			color={ 164 120 171 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 298 } }
-				}
-			}
-			capital = 298 # c_xiangkhouang
-			
-			c_xiangkhouang = { # 298
-				color={ 174 110 176 }
-				color2={ 255 255 255 }
-				
-				b_phonsavan = {
-				}
-				b_kham = {
-				}
-				b_nong_het = {
-				}
-				b_khoune = {
-				}
-				b_mok_may = {
-				}
-				b_phou_kout = {
-				}
-				b_phaxay = {
 				}
 			}
 		}
