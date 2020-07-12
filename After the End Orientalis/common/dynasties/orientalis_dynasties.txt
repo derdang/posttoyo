@@ -49,7 +49,20 @@
 
 #Khmer Dynasties
 
-1182000 = { name="Son Tou" culture=khrom } #Khmer Khrom North
+1182000 = { name="Son Tou" culture=khrom #Khmer Khrom North
+	coat_of_arms = {
+		religion = dharmayuttika
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1182001 = { name="Khiev" culture=khrom } #Khmer Khrom South
 1182002 = { name="Pham" culture=khrom }
 
