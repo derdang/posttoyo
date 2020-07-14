@@ -14,7 +14,7 @@
 # 20	The pilgrimage has ended
 # 21	Clean up flags
 
-#Space for Saints for Seance (seance.x)
+#Space for Saints for Seance (cd_pilgrim.x)
 
 #100	Joan d'Arc (Saint of Faith and Feminity)
 #101	Moses (Saint of Faith and Trials)
@@ -132,6 +132,7 @@ narrative_event = {
 	option = {
 		name = EVTOPT_seance_opt
 		add_character_modifier = { name = doing_seance duration = -1 } 
+		character_event = { id = cd_pilgrim.5}
 	}
 	option = {
 		name = EVTOPT_rejected_seance_opt
@@ -144,22 +145,21 @@ character_event = {
 	picture = GFX_evt_cao_dai
 	hide_window = yes
 	is_triggered_only = yes
-	trigger = { has_character_modifier = doing_seance }
 	immediate = {
 		random_list = {
 			# potential seances of Saints
-			10 = { character_event = { id = seance.100 } }
-			10 = { character_event = { id = seance.101 } }
-			10 = { character_event = { id = seance.102 } }
-			10 = { character_event = { id = seance.103 } }
-			10 = { character_event = { id = seance.104 } }
-			10 = { character_event = { id = seance.105 } }
-			10 = { character_event = { id = seance.106 } }
-			10 = { character_event = { id = seance.107 } }
-			10 = { character_event = { id = seance.108 } }
-			#10 = { character_event = { id = seance.109 } }
-			#10 = { character_event = { id = seance.110 } }
-			#10 = { character_event = { id = seance.111 } }
+			10 = { character_event = { id = cd_pilgrim.100 } }
+			10 = { character_event = { id = cd_pilgrim.101 } }
+			10 = { character_event = { id = cd_pilgrim.102 } }
+			10 = { character_event = { id = cd_pilgrim.103 } }
+			10 = { character_event = { id = cd_pilgrim.104 } }
+			10 = { character_event = { id = cd_pilgrim.105 } }
+			10 = { character_event = { id = cd_pilgrim.106 } }
+			10 = { character_event = { id = cd_pilgrim.107 } }
+			10 = { character_event = { id = cd_pilgrim.108 } }
+			10 = { character_event = { id = cd_pilgrim.109 } }
+			10 = { character_event = { id = cd_pilgrim.110 } }
+			10 = { character_event = { id = cd_pilgrim.111 } }
 		}
 	}
 	option = {}
@@ -171,7 +171,6 @@ narrative_event = {
 	desc = EVTDESC_seance_ends
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = { has_character_modifier = doing_seance }
 
 	immediate = {
 		remove_character_modifier = doing_seance
@@ -417,17 +416,12 @@ character_event = {
 
 # ************************* Saint Encounter ************************
 character_event = {
-	id = seance.100
+	id = cd_pilgrim.100
 	title = EVTNAME_saint_joan
 	desc = EVTDESC_saint_joan
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_joan }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_joan
 	}
@@ -437,17 +431,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.101
+	id = cd_pilgrim.101
 	title = EVTNAME_saint_moses
 	desc = EVTDESC_saint_moses
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_moses }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_moses
 	}
@@ -457,17 +446,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.102
+	id = cd_pilgrim.102
 	title = EVTNAME_saint_quanam
 	desc = EVTDESC_saint_quanam
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_quanam }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_quanam
 	}
@@ -477,17 +461,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.103
+	id = cd_pilgrim.103
 	title = EVTNAME_saint_taibai
 	desc = EVTDESC_saint_taibai
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_taibai }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_taibai
 	}
@@ -497,17 +476,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.104
+	id = cd_pilgrim.104
 	title = EVTNAME_saint_shakespeare
 	desc = EVTDESC_saint_shakespeare
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_shakespeare }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_shakespeare
 	}
@@ -517,17 +491,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.105
+	id = cd_pilgrim.105
 	title = EVTNAME_saint_victor_hugo
 	desc = EVTDESC_saint_victor_hugo
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_victor_hugo }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_victor_hugo
 	}
@@ -537,17 +506,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.106
+	id = cd_pilgrim.106
 	title = EVTNAME_saint_muhammad
 	desc = EVTDESC_saint_muhammad
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_muhammad }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_muhammad
 	}
@@ -557,17 +521,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.107
+	id = cd_pilgrim.107
 	title = EVTNAME_saint_quan_vu
 	desc = EVTDESC_saint_quan_vu
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_quan_vu }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_quan_vu
 	}
@@ -577,17 +536,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.108
+	id = cd_pilgrim.108
 	title = EVTNAME_saint_lenin
 	desc = EVTDESC_saint_lenin
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_lenin }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_lenin
 	}
@@ -597,17 +551,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.109
+	id = cd_pilgrim.109
 	title = EVTNAME_saint_sun_yatsen
 	desc = EVTDESC_saint_sun_yatsen
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_sun_yatsen }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_sun_yatsen
 	}
@@ -617,17 +566,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.110
+	id = cd_pilgrim.110
 	title = EVTNAME_saint_bien_khiem
 	desc = EVTDESC_saint_bien_khiem
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_bien_khiem }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_bien_khiem
 	}
@@ -637,17 +581,12 @@ character_event = {
 	}	
 }
 character_event = {
-	id = seance.111
+	id = cd_pilgrim.111
 	title = EVTNAME_saint_pasteur
 	desc = EVTDESC_saint_pasteur
 	picture = GFX_evt_cao_dai
 	is_triggered_only = yes
-	trigger = {
-		has_character_modifier = doing_seance
-	AND = {
-		NOT = { has_character_flag = vis_saint_pasteur }
-		}
-	}
+
 	immediate = {
 		set_character_flag = vis_saint_pasteur
 	}
