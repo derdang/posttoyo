@@ -147,6 +147,7 @@ christian = {
 		intermarry = miaphysite
 		intermarry = nestorian
 		intermarry = iconoclast
+		intermarry = concordanist
 	}
 	iconoclast = {
 		graphical_culture = westerngfx
@@ -176,6 +177,69 @@ christian = {
 		intermarry = orthodox
 		intermarry = miaphysite
 		intermarry = nestorian
+
+	}
+	concordanist = {
+		graphical_culture = westerngfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 1
+		heresy_icon = 2
+		
+		color = { 0.8 0.2 0.4 }
+		
+		crusade_name = CRUSADE
+
+		autocephaly = yes
+		pentarchy = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_call_crusade = no
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = orthodox
+		intermarry = miaphysite
+		intermarry = nestorian
+		intermarry = restorationists
+
+	}
+	baptist = {
+		graphical_culture = westerngfx
+		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 1
+		heresy_icon = 2
+		
+		color = { 0.8 0.2 0.4 }
+		
+		crusade_name = CRUSADE
+		
+		parent = concordanist
+
+		autocephaly = yes
+		pentarchy = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_call_crusade = no
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+		
+		intermarry = catholic
+		intermarry = orthodox
+		intermarry = miaphysite
+		intermarry = nestorian
+		intermarry = restorationists
+		intermarry = concordanist
 
 	}
 }
@@ -365,7 +429,6 @@ pagan_group = {
 	female_names = {
 		Aslaug Bothild Björg Freja Grima Gytha Kráka Malmfrid Thora Thordis Thyra Ragnfrid Ragnhild Svanhild Ulvhilde
 	}
-	
 	pagan = { # Use for misc other pagans
 		graphical_culture = pagangfx
 		alternate_start = { always = no }
@@ -401,7 +464,6 @@ pagan_group = {
 		dynamic_cult = no
 		secret_religion = no
 	}
-	
 	ua_dab = { #Unreformed Hmong Shamanism
 		graphical_culture = pagangfx
 		alternate_start = { always = no }
