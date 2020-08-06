@@ -1,4 +1,24 @@
 spriteTypes = {
+
+###########################
+# After the End FF Traits #
+###########################
+
+	spriteType = {
+		name = "GFX_trait_musician"
+		texturefile = "gfx/traits/musician.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_bisexual"
+		texturefile = "gfx/traits/bisexual.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
 ############################
 # A Game of Thrones Traits #
 ############################
@@ -83,7 +103,7 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\\cao_dai.dds"
 	}
 	
-#cao dai traits
+#Cao Dai Traits
 
 	spriteType = {
 		name = "GFX_trait_saint_faith"
@@ -114,7 +134,7 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
-#decisions icons
+#Decisions Icons
 	spriteType = {
 		name = "GFX_cd_pilgrimage"
 		texturefile = "gfx\\interface\\decision_icon_catholic_pilgrimage.dds"

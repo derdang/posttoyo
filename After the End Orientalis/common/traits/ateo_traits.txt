@@ -1,3 +1,16 @@
+ SPECIAL TRAIT FLAGS
+#
+# pilgrimage = yes		- The character is away and will need a regent, but does not lose any wards, etc
+# incapacitating = yes	- The character is essentially a vegetable
+# immortal = yes		- The character will not die of age or poor health, but can be executed (and killed by event effects)
+# inherit_chance = X	- Chance of passing on the trait to children
+# birth = X				- How many characters out of 10000 are born with this trait (when not inherited)
+# religious = yes		- Will be lost if the character changes religion
+
+########################################################################################################
+# WARNING: IF YOU DON'T ADD NEW TRAITS LAST (IN THE LAST READ TRAIT FILE), IT WILL BREAK OLD SAVE GAMES!
+########################################################################################################
+
 #Cao Dai Saint Traits
 saint_faith = {
 	
