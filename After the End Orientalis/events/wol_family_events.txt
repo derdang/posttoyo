@@ -23,18 +23,31 @@ character_event = {
 	hide_window = yes
 	
 	is_triggered_only = yes
+	has_dlc = "Way of Life"
 	
 	trigger = {
-		has_dlc = "Way of Life"
+		
 	}
 	
 	immediate = {
-		
 		# Chance of trait adjustments
+		if = {
+			limit = {
+				NOT = { trait = familyperson }
+				NOT = { trait = selfish }
+				NOT = { personality_traits = 6 }
+			}
+			random = {
+				chance = 50
+				add_trait = familyperson
+				character_event = { id = trait_notification.16 } # notification
+			}	
+		}
 		if = {
 			limit = {
 				NOT = { trait = proud }
 				NOT = { trait = humble }
+				NOT = { personality_traits = 6 }
 				random = 85 # 15% chance
 			}
 			add_trait = proud
@@ -49,7 +62,6 @@ character_event = {
 			remove_trait = humble
 			character_event = { id = 38312 } # Humble loss notification
 		}
-		
 		# Chance of Diplo boosters
 		character_event = { id = WoL.3001 days = 7 } 
 		
@@ -280,7 +292,204 @@ character_event = {
 ###################################################
 # RANDOM FAMILY EVENTS
 ###################################################
-
+# Relations with the relative improved
+character_event = {
+	id = WoL.3019
+	is_triggered_only = yes
+	only_playable = yes
+	prisoner = no
+	only_capable = yes
+	in_command = no
+	hide_window = yes
+	
+	trigger = {
+		has_focus = focus_family
+		has_regent = no
+		in_command = no
+		is_ill = no
+	}
+	
+	weight_multiplier = {
+		factor = 1
+		
+		modifier = {
+			factor = 0.5
+			trait = selfish
+		}
+		modifier = {
+			factor = 2
+			trait = familyperson
+		}
+		modifier = {
+			factor = 0.66
+			trait = cruel
+		}
+		modifier = {
+			factor = 1.33
+			trait = kind
+		}
+	}
+	
+	immediate = {
+		random_list = {
+			10 = {
+				modifier = {
+					factor = 0
+					OR = {
+						is_married = no
+						NOT = {
+							any_spouse = {
+								NOT = { is_lover = ROOT }
+								NOT = { is_rival = ROOT }
+								NOT = { war_with = ROOT }
+								NOT = { trait = incapable }
+								prisoner = no
+								is_alive = yes
+								opinion = { who = ROOT value = -50 } #have to at least not hate
+								reverse_opinion = { who = ROOT value = -50 }
+							}
+						}	
+					}
+				}
+				modifier = {
+					factor = 1.25
+					has_character_modifier = wol_seducer_1
+				}
+				modifier = {
+					factor = 1.5
+					has_character_modifier = wol_seducer_2
+				}
+				modifier = {
+					factor = 2
+					OR = {
+						trait = seducer
+						trait = seductress
+					}
+				}
+				character_event = { id = WoL.3010 } #spouse
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						any_sibling = {
+							is_alive = yes
+							NOT = { is_friend = ROOT }
+							NOT = { war_with = ROOT }
+							NOT = { trait = incapable }
+							NOT = { trait = inbred }
+							NOT = { trait = imbecile }
+							prisoner = no
+							OR = {
+								age = 13
+								AND = {
+									age = 4
+									host = { character = ROOT }
+								}
+							}
+							NOT_mythical_creature_trigger = yes
+							opinion = { who = ROOT value = -50 } #have to at least not hate
+							reverse_opinion = { who = ROOT value = -50 }
+						}
+					}
+				}
+				character_event = { id = WoL.3020 } #sibling
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOR = {
+						father = {
+							is_alive = yes
+							prisoner = no
+							NOT = { war_with = ROOT }
+							NOT = { trait = incapable }
+							NOT = {
+								personal_opinion = {
+									who = ROOT
+									value = 50
+								}
+							}
+							opinion = { who = ROOT value = -50 } #have to at least not hate
+							reverse_opinion = { who = ROOT value = -50 }
+						}
+						mother = {
+							is_alive = yes
+							prisoner = no
+							NOT = { war_with = ROOT }
+							NOT = { trait = incapable }
+							NOT = {
+								personal_opinion = {
+									who = ROOT
+									value = 50
+								}
+							}
+							opinion = { who = ROOT value = -50 } #have to at least not hate
+							reverse_opinion = { who = ROOT value = -50 }
+						}
+					}
+				}
+				character_event = { id = WoL.3030 } #parent
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOR = {
+						any_child = {
+							is_alive = yes
+							NOT = { trait = incapable }
+							NOT = { trait = inbred }
+							NOT = { trait = imbecile }
+							NOT_mythical_creature_trigger = yes
+							NOT = { war_with = ROOT }
+							prisoner = no
+							OR = {
+								age = 13
+								AND = {
+									age = 4
+									host = { character = ROOT }
+								}
+							}
+							NOT = {
+								personal_opinion = {
+									who = ROOT
+									value = 50
+								}
+							}
+							opinion = { who = ROOT value = -50 } #have to at least not hate
+							reverse_opinion = { who = ROOT value = -50 }
+						}
+					}
+				}
+				character_event = { id = WoL.3040 } #child
+			}
+			10 = {
+				character_event = { id = WoL.3048 } #two family members
+			}
+			10 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						any_child = {
+							count = 2
+							age = 5
+							is_adult = no
+							is_alive = yes	
+							NOT_mythical_creature_trigger = yes
+							host = { character = ROOT }							
+						}
+					}	
+				}
+				character_event = { id = WoL.3059 } #two children
+			}
+		}
+	}
+	
+	option = {
+		name = OK
+	}
+}
+	
 # Relations with the spouse improved
 character_event = {
 	id = WoL.3010
@@ -291,65 +500,17 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	prisoner = no
-	only_capable = yes
-	in_command = no
-	is_married = yes
-
-	
-	trigger = {
-		has_focus = focus_family
-		has_regent = no
-		in_command = no
-		is_ill = no
-		any_spouse = {
-			is_alive = yes
-			NOT = { is_lover = ROOT }
-			NOT = { is_rival = ROOT }
-			NOT = { trait = incapable }
-			prisoner = no
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-		modifier = {
-			factor = 1.33
-			has_character_modifier = wol_seducer_1
-		}
-		modifier = {
-			factor = 2.0
-			has_character_modifier = wol_seducer_2
-		}
-		modifier = {
-			factor = 4.0
-			OR = {
-				trait = seducer
-				trait = seductress
-			}
-		}
-		modifier = {
-			factor = 0.66
-			trait = cruel
-		}
-		modifier = {
-			factor = 1.33
-			trait = kind
-		}
-		modifier = {
-			factor = 1.33
-			has_fair_trait_trigger = yes
-		}
-	}
-	
 	immediate = {
 		random_spouse = {
 			limit = {
-				is_alive = yes
 				NOT = { is_lover = ROOT }
 				NOT = { is_rival = ROOT }
+				NOT = { war_with = ROOT }
 				NOT = { trait = incapable }
 				prisoner = no
+				is_alive = yes
+				opinion = { who = ROOT value = -50 } #have to at least not hate
+				reverse_opinion = { who = ROOT value = -50 }
 			}
 			save_event_target_as = target_spouse
 		}
@@ -361,6 +522,21 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_WOL_3010
+		event_target:target_spouse = { show_portrait = yes }
+		if = {
+			limit = {
+				personal_opinion = {
+					who = event_target:target_spouse
+					value = 40
+				}
+				reverse_personal_opinion = {
+					who = event_target:target_spouse
+					value = 40
+				}
+			}
+			add_lover = event_target:target_spouse
+#			log = "WoL.3010: [Root.GetTitledName] falls in love with spouse."
+		}
 		
 		if = {
 			limit = {
@@ -394,22 +570,7 @@ character_event = {
 				who = event_target:target_spouse
 				modifier = opinion_marital_love
 			}
-		}
-		
-		if = {
-			limit = {
-				personal_opinion = {
-					who = event_target:target_spouse
-					value = 40
-				}
-				reverse_personal_opinion = {
-					who = event_target:target_spouse
-					value = 40
-				}
-			}
-			add_lover = event_target:target_spouse
-#			log = "WoL.3010: [Root.GetTitledName] falls in love with spouse."
-		}
+		}		
 	}
 }
 
@@ -420,49 +581,12 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	prisoner = no
-	in_command = no
-	only_capable = yes
-	
-	trigger = {
-		has_focus = focus_family
-		has_regent = no
-		in_command = no
-		is_ill = no
-		any_sibling = {
-			is_alive = yes
-			NOT = { is_friend = ROOT }
-			NOT = { trait = incapable }
-			NOT = { trait = inbred }
-			NOT = { trait = imbecile }
-			prisoner = no
-			OR = {
-				age = 13
-				AND = {
-					age = 4
-					host = { character = ROOT }
-				}
-			}
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-		modifier = {
-			factor = 0.66
-			trait = cruel
-		}
-		modifier = {
-			factor = 1.33
-			trait = kind
-		}
-	}
-	
 	immediate = {
 		random_sibling = {
 			limit = {
 				is_alive = yes
 				NOT = { is_friend = ROOT }
+				NOT = { war_with = ROOT }
 				NOT = { trait = incapable }
 				NOT = { trait = inbred }
 				NOT = { trait = imbecile }
@@ -474,6 +598,9 @@ character_event = {
 						host = { character = ROOT }
 					}
 				}
+				NOT_mythical_creature_trigger = yes
+				opinion = { who = ROOT value = -50 } #have to at least not hate
+				reverse_opinion = { who = ROOT value = -50 }
 			}
 			character_event = { id = WoL.3021 }
 		}
@@ -506,6 +633,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
+	
+	trigger = { FROM = { is_alive = yes } }
 	
 	desc = {
 		text = EVTDESC_WOL_3022
@@ -606,53 +735,6 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	prisoner = no
-	in_command = no
-	only_capable = yes
-	
-	trigger = {
-		has_focus = focus_family
-		has_regent = no
-		in_command = no
-		is_ill = no
-		OR = {
-			father = {
-				is_alive = yes
-				prisoner = no
-				NOT = { trait = incapable }
-				NOT = {
-					personal_opinion = {
-						who = ROOT
-						value = 50
-					}
-				}
-			}
-			mother = {
-				is_alive = yes
-				prisoner = no
-				NOT = { trait = incapable }
-				NOT = {
-					personal_opinion = {
-						who = ROOT
-						value = 50
-					}
-				}
-			}
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-		modifier = {
-			factor = 0.66
-			trait = cruel
-		}
-		modifier = {
-			factor = 1.33
-			trait = kind
-		}
-	}
-	
 	immediate = {
 		random = {
 			chance = 50
@@ -664,6 +746,7 @@ character_event = {
 				father = {
 					is_alive = yes
 					prisoner = no
+					NOT = { war_with = ROOT }
 					NOT = { trait = incapable }
 					NOT = {
 						personal_opinion = {
@@ -671,6 +754,8 @@ character_event = {
 							value = 50
 						}
 					}
+					opinion = { who = ROOT value = -50 } #have to at least not hate
+					reverse_opinion = { who = ROOT value = -50 }
 				}
 			}
 			father = { character_event = { id = WoL.3031 } }
@@ -682,6 +767,7 @@ character_event = {
 				mother = {
 					is_alive = yes
 					prisoner = no
+					NOT = { war_with = ROOT }
 					NOT = { trait = incapable }
 					NOT = {
 						personal_opinion = {
@@ -689,6 +775,8 @@ character_event = {
 							value = 50
 						}
 					}
+					opinion = { who = ROOT value = -50 } #have to at least not hate
+					reverse_opinion = { who = ROOT value = -50 }
 				}
 			}
 			mother = { character_event = { id = WoL.3031 } }
@@ -725,6 +813,8 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
+	
+	trigger = { FROM = { is_alive = yes } }
 	
 	desc = EVTDESC_WOL_3032
 	
@@ -781,10 +871,31 @@ character_event = {
 character_event = {
 	id = WoL.3033
 	
-	picture = GFX_evt_son_asking_father
+	picture = { 
+		trigger = { 
+			is_female = yes
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_mother
+	}
+	picture = { 
+		trigger = { 
+			is_female = no
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_father
+	}
+	picture = { 
+		trigger = { 
+			FROM = { is_female = no }
+		} 
+		picture = GFX_evt_son_asking_father
+	}
 	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
+	
+	trigger = { FROM = { is_alive = yes } }
 	
 	desc = EVTDESC_WOL_3032
 	
@@ -844,49 +955,6 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	prisoner = no
-	in_command = no
-	only_capable = yes
-	
-	trigger = {
-		has_focus = focus_family
-		has_regent = no
-		in_command = no
-		is_ill = no
-		any_child = {
-			is_alive = yes
-			NOT = { trait = incapable }
-			NOT = { trait = inbred }
-			NOT = { trait = imbecile }
-			prisoner = no
-			OR = {
-				age = 13
-				AND = {
-					age = 4
-					host = { character = ROOT }
-				}
-			}
-			NOT = {
-				personal_opinion = {
-					who = ROOT
-					value = 50
-				}
-			}
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-		modifier = {
-			factor = 0.66
-			trait = cruel
-		}
-		modifier = {
-			factor = 1.33
-			trait = kind
-		}
-	}
-	
 	immediate = {
 		random_child = {
 			limit = {
@@ -894,6 +962,8 @@ character_event = {
 				NOT = { trait = incapable }
 				NOT = { trait = inbred }
 				NOT = { trait = imbecile }
+				NOT_mythical_creature_trigger = yes
+				NOT = { war_with = ROOT }
 				prisoner = no
 				OR = {
 					age = 13
@@ -908,6 +978,8 @@ character_event = {
 						value = 50
 					}
 				}
+				opinion = { who = ROOT value = -50 } #have to at least not hate
+				reverse_opinion = { who = ROOT value = -50 }
 			}
 			character_event = { id = WoL.3041 }
 		}
@@ -936,10 +1008,31 @@ character_event = {
 character_event = {
 	id = WoL.3042
 	
-	picture = GFX_evt_son_asking_father
+	picture = { 
+		trigger = { 
+			is_female = yes
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_mother
+	}
+	picture = { 
+		trigger = { 
+			is_female = no
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_father
+	}
+	picture = { 
+		trigger = { 
+			FROM = { is_female = no }
+		} 
+		picture = GFX_evt_son_asking_father
+	}
 	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
+	
+	trigger = { FROM = { is_alive = yes } }
 	
 	desc = {
 		text = EVTDESC_WOL_3042
@@ -1025,33 +1118,10 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	prisoner = no
-	only_capable = yes
-	
-	trigger = {
-		has_focus = focus_family
-		has_regent = no
-		in_command = no
-		is_ill = no
-	}
-	
-	weight_multiplier = {
-		factor = 1
-		modifier = {
-			factor = 0.66
-			trait = cruel
-		}
-		modifier = {
-			factor = 1.33
-			trait = kind
-		}
-	}
-	
 	immediate = {
 		save_event_target_as = target_initiator
 		random_dynasty_member = {
 			limit = {
-				is_offmap_ruler = no
 				is_adult = yes
 				is_alive = yes
 				NOT = { trait = incapable }
@@ -1059,6 +1129,7 @@ character_event = {
 				NOT = { trait = imbecile }
 				prisoner = no
 				is_close_relative = ROOT
+				NOT = { war_with = ROOT }
 				OR = {
 					AND = {				
 						is_female = no
@@ -1081,6 +1152,7 @@ character_event = {
 					ROOT = { has_law = true_cognatic_succession }
 					is_primary_heir = ROOT
 				}
+				NOT_mythical_creature_trigger = yes
 			}
 			save_event_target_as = target_second
 			character_event = { id = WoL.3049 }
@@ -1097,9 +1169,8 @@ character_event = {
 	immediate = {
 		random_dynasty_member = {
 			limit = {
-				is_offmap_ruler = no
-				is_adult = yes
 				is_alive = yes
+				is_adult = yes
 				NOT = { trait = incapable }
 				NOT = { trait = inbred }
 				NOT = { trait = imbecile }
@@ -1107,6 +1178,8 @@ character_event = {
 				NOT = { character = FROM }
 				is_close_relative = FROM
 				NOT = { is_friend = ROOT }
+				NOT = { war_with = ROOT }
+				NOT = { war_with = FROM }
 				OR = {
 					AND = {				
 						is_female = no
@@ -1129,6 +1202,9 @@ character_event = {
 					ROOT = { has_law = true_cognatic_succession }
 					is_primary_heir = ROOT
 				}
+				NOT_mythical_creature_trigger = yes
+				opinion = { who = ROOT value = -50 } #have to at least not hate
+				reverse_opinion = { who = ROOT value = -50 }
 			}
 			save_event_target_as = target_first
 			FROM = { character_event = { id = WoL.3050 } }
@@ -1146,19 +1222,21 @@ character_event = {
 	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
-	
-	immediate = {
+		
+	option = {
+		name = EVTOPTA_WOL_3022
 		event_target:target_first = {
-			character_event = { id = WoL.3051 }
+			show_portrait = yes
 		}
-		random = {
-			chance = 50
-			character_event = { id = WoL.3000 } # Chance to "level up"
+		event_target:target_second = {
+			show_portrait = yes
 		}
 	}
 	
-	option = {
-		name = EVTOPTA_WOL_3022
+	after = {
+		event_target:target_first = {
+			character_event = { id = WoL.3051 }
+		}
 	}
 }
 
@@ -1176,12 +1254,82 @@ character_event = {
 	option = {
 		name = EVTOPTA_WOL_3051 # Good idea
 		ai_chance = {
-			factor = 100
+			factor = 75
+			
+			modifier = {
+				factor = 0.33
+				is_rival = event_target:target_second
+			}
+			modifier = {
+				factor = 0.33
+				is_foe = event_target:target_second
+			}		
+			modifier = {
+				factor = 1.5
+				opinion = { who = event_target:target_second value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = event_target:target_second value = 25 }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = event_target:target_second value = 0 } }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = event_target:target_second value = -24 } }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = event_target:target_second value = -49 } }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = event_target:target_second value = -74 } }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = event_target:target_second value = -99 } }
+			}
+			
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = familyperson
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = selfish
+			}
+			modifier = {
+				factor = 0.5
+				trait = ruthless
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
 		}
 		
 		hidden_tooltip = {
 			event_target:target_second = {
-				character_event = { id = WoL.3052 days = 7 }
+				character_event = { id = WoL.3052 days = 1 }
 			}
 		}
 	}
@@ -1189,14 +1337,14 @@ character_event = {
 	option = {
 		name = EVTOPTB_WOL_3051 # I have no wish to see that idiot
 		ai_chance = {
-			factor = 0
+			factor = 25
 		}
 		hidden_tooltip = {
 			FROM = {
-				character_event = { id = WoL.3053 days = 7 }
+				character_event = { id = WoL.3053 days = 1 }
 			}
 			event_target:target_second = {
-				character_event = { id = WoL.3055 days = 7 }
+				character_event = { id = WoL.3055 days = 1 }
 			}
 		}
 	}
@@ -1206,7 +1354,26 @@ character_event = {
 character_event = {
 	id = WoL.3052
 	
-	picture = GFX_evt_son_asking_father
+	picture = { 
+		trigger = { 
+			is_female = yes
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_mother
+	}
+	picture = { 
+		trigger = { 
+			is_female = no
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_father
+	}
+	picture = { 
+		trigger = { 
+			FROM = { is_female = no }
+		} 
+		picture = GFX_evt_son_asking_father
+	}
 	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
@@ -1218,7 +1385,77 @@ character_event = {
 	option = {
 		name = EVTOPTA_WOL_3051 # Good idea
 		ai_chance = {
-			factor = 100
+			factor = 75
+			
+			modifier = {
+				factor = 0.33
+				is_rival = FROM
+			}
+			modifier = {
+				factor = 0.33
+				is_foe = FROM
+			}		
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROM value = 50 }
+			}
+			modifier = {
+				factor = 1.5
+				opinion = { who = FROM value = 25 }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = FROM value = 0 } }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = FROM value = -24 } }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = FROM value = -49 } }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = FROM value = -74 } }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { opinion = { who = FROM value = -99 } }
+			}
+			
+			modifier = {
+				factor = 2
+				trait = patient
+			}
+			modifier = {
+				factor = 2
+				trait = familyperson
+			}
+			modifier = {
+				factor = 2
+				trait = honorable
+			}
+			modifier = {
+				factor = 2
+				trait = kind
+			}
+			modifier = {
+				factor = 0.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 0.5
+				trait = selfish
+			}
+			modifier = {
+				factor = 0.5
+				trait = ruthless
+			}
+			modifier = {
+				factor = 0.5
+				trait = cruel
+			}
 		}
 		
 		if = {
@@ -1265,7 +1502,7 @@ character_event = {
 	option = {
 		name = EVTOPTB_WOL_3051 # I have no wish to see that idiot
 		ai_chance = {
-			factor = 0
+			factor = 25
 		}
 		hidden_tooltip = {
 			FROM = {
@@ -1282,7 +1519,26 @@ character_event = {
 character_event = {
 	id = WoL.3053
 	
-	picture = GFX_evt_son_asking_father
+	picture = { 
+		trigger = { 
+			is_female = yes
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_mother
+	}
+	picture = { 
+		trigger = { 
+			is_female = no
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_father
+	}
+	picture = { 
+		trigger = { 
+			FROM = { is_female = no }
+		} 
+		picture = GFX_evt_son_asking_father
+	}
 	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
@@ -1303,7 +1559,26 @@ character_event = {
 character_event = {
 	id = WoL.3054
 	
-	picture = GFX_evt_son_asking_father
+	picture = { 
+		trigger = { 
+			is_female = yes
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_mother
+	}
+	picture = { 
+		trigger = { 
+			is_female = no
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_father
+	}
+	picture = { 
+		trigger = { 
+			FROM = { is_female = no }
+		} 
+		picture = GFX_evt_son_asking_father
+	}
 	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
@@ -1324,7 +1599,26 @@ character_event = {
 character_event = {
 	id = WoL.3055
 	
-	picture = GFX_evt_son_asking_father
+	picture = { 
+		trigger = { 
+			is_female = yes
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_mother
+	}
+	picture = { 
+		trigger = { 
+			is_female = no
+			FROM = { is_female = yes }
+		} 
+		picture = GFX_evt_daughter_asking_father
+	}
+	picture = { 
+		trigger = { 
+			FROM = { is_female = no }
+		} 
+		picture = GFX_evt_son_asking_father
+	}
 	border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
@@ -1406,6 +1700,13 @@ character_event = {
 	
 	desc = EVTDESC_WOL_3057
 	
+	immediate = {
+		random = {
+			chance = 50
+			character_event = { id = WoL.3000 } # Chance to "level up"
+		}
+	}
+	
 	option = {
 		name = EVTOPTA_WOL_3022
 	}
@@ -1418,36 +1719,6 @@ character_event = {
 	hide_window = yes
 	
 	is_triggered_only = yes
-	prisoner = no
-	only_capable = yes
-	
-	trigger = {
-		has_focus = focus_family
-		has_regent = no
-		in_command = no
-		is_ill = no
-		num_of_children = 2
-		any_child = {
-			age = 5
-			is_adult = no
-			is_alive = yes
-		}
-	}
-	
-	weight_multiplier = {
-		factor = 1
-		modifier = {
-			factor = 2.0
-		}
-		modifier = {
-			factor = 0.66
-			trait = cruel
-		}
-		modifier = {
-			factor = 1.33
-			trait = kind
-		}
-	}
 	
 	immediate = {
 		random_child = {
@@ -1458,8 +1729,10 @@ character_event = {
 				NOT = { trait = incapable }
 				NOT = { trait = inbred }
 				NOT = { trait = imbecile }
+				NOT_mythical_creature_trigger = yes
 				prisoner = no
 				host = { character = ROOT }
+				NOT = { war_with = ROOT }
 				OR = {
 					AND = {
 						is_female = no
@@ -1484,7 +1757,6 @@ character_event = {
 				}
 			}
 			
-			ROOT = { set_character_flag = found_second }
 			save_event_target_as = target_second
 			
 			ROOT = {
@@ -1496,9 +1768,11 @@ character_event = {
 						NOT = { trait = incapable }
 						NOT = { trait = inbred }
 						NOT = { trait = imbecile }
+						NOT_mythical_creature_trigger = yes
 						prisoner = no
 						NOT = { character = PREVPREV }
 						host = { character = ROOT }
+						NOT = { war_with = ROOT }
 						OR = {
 							AND = {				
 								is_female = no
@@ -1522,26 +1796,25 @@ character_event = {
 							is_primary_heir = ROOT
 						}
 						NOT = { is_friend = PREVPREV }
+						NOT = { war_with = PREVPREV }
 						NOT = {
 							personal_opinion = {
 								who = PREVPREV
 								value = 50
 							}
 						}
+						opinion = { who = PREVPREV value = -50 } #have to at least not hate
+						reverse_opinion = { who = PREVPREV value = -50 }
 					}
-					ROOT = { set_character_flag = found_first }
+					ROOT = { set_character_flag = found_children }
 					save_event_target_as = target_first
 				}
 			}
 		}
 		
 		if = {
-			limit = {
-				has_character_flag = found_second
-				has_character_flag = found_first
-			}
-			clr_character_flag = found_second
-			clr_character_flag = found_first
+			limit = { has_character_flag = found_children }
+			clr_character_flag = found_children
 			random = {
 				chance = 33
 				character_event = { id = WoL.3000 } # Chance to "level up"
@@ -1568,6 +1841,7 @@ character_event = {
 #		log = "WoL.3060: Fires, valid for [target_second.GetTitledName] and [target_first.GetTitledName]."
 		
 		event_target:target_second = {
+			show_portrait = yes
 			if = {
 				limit = {
 					NOT = {
@@ -1586,6 +1860,7 @@ character_event = {
 		}
 		
 		event_target:target_first = {
+			show_portrait = yes
 			if = {
 				limit = {
 					NOT = {
