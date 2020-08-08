@@ -1,0 +1,94 @@
+# Define mercenary types here now instead of in the static_composition.txt file
+
+# Also remember to tell the landed title to use this mercenary type instead.
+
+# Several titles can refer to the same type as well now.
+
+
+
+d_biwa_band_composition = {
+	levy_size = 1
+	archers = 100
+	light_infantry = 600
+	heavy_infantry = 100
+	light_cavalry = 200
+}
+
+d_blue_company_composition = {
+	levy_size = 1
+	pikemen = 800
+	light_cavalry = 400
+	knights = 400
+	archers = 200
+}
+
+d_grand_lion_company_composition = {
+	levy_size = 1
+	heavy_infantry = 800
+	knights = 800
+	archers = 200
+}
+
+d_hanshin_tigers_composition = {
+	levy_size = 1
+	archers = 200
+	light_infantry = 600
+	heavy_infantry = 200
+}
+
+d_orient_brigade_composition = {
+	levy_size = 1
+	archers = 300
+	light_infantry = 200
+	heavy_infantry = 600
+	knights = 50
+}
+
+d_trung_sisterhood_composition = {
+	levy_size = 1	
+	heavy_infantry = 500	
+	light_infantry = 100
+	archers = 100
+	knights = 50
+}
+
+d_dragon_lords_composition = {
+	levy_size = 1
+	knights = 300
+	pikemen = 700
+	heavy_infantry = 400
+}
+
+d_golden_star_dragons_composition = {
+	levy_size = 1
+	knights = 200
+	archers = 300
+	light_infantry = 200
+	heavy_infantry = 300
+}
+
+
+## Must exist or else dynamic mercenary band might fail for nomads!
+default_culture_band_composition = {
+	levy_size = 1
+	light_infantry = 100
+}
+
+#altaic_culture_band_composition = {
+#	levy_size = 1
+#	light_cavalry = 60
+#	horse_archers = 40
+#}
+
+#magyar_culture_band_composition = {
+#	levy_size = 1
+#	light_cavalry = 70
+#	horse_archers = 30
+#}
+
+#alan_culture_band_composition = {
+#	levy_size = 1
+#	light_cavalry = 70
+#	horse_archers = 30
+#}
+

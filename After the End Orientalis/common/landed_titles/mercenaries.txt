@@ -1,0 +1,212 @@
+#### MERCS ####
+
+d_biwa_band = {
+	color={ 34 177 76 }
+	color2={ 255 255 255 }
+
+	capital = 76 # Shiga
+	
+		allow = {
+		OR = {
+			culture_group = japonic
+		}
+	}
+	
+	religion = shinto
+	culture = saigoku
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = d_biwa_band_composition
+}
+
+d_blue_company = {
+	color={ 200 0 0 }
+	color2={ 255 255 255 }
+
+	capital = 53 # Tokyo
+	
+		allow = {
+		OR = {
+			culture_group = japonic
+		}
+	}
+	
+	religion = shinto
+	culture = togoku
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = d_blue_company_composition
+}
+
+d_grand_lion_company = {
+	color={ 0 39 88 }
+	color2={ 255 255 255 }
+
+	capital = 61 # Matsumoto
+	
+		allow = {
+		OR = {
+			culture_group = japonic
+		}
+	}
+	
+	religion = shinto
+	culture = togoku
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = d_grand_lion_company_composition
+}
+
+d_hanshin_tigers = {
+	color={ 209 16 26 }
+	color2={ 255 255 255 }
+
+	capital = 86 # Kobe
+	
+		allow = {
+		OR = {
+			culture_group = japonic
+		}
+	}
+	
+	religion = shinto
+	culture = saigoku
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = d_hanshin_tigers_composition
+}
+
+d_orient_brigade = {
+	color={ 255 174 201 }
+	color2={ 255 255 255 }
+
+	capital = 53 # Tokyo
+	
+	allow = {
+		OR = {
+			culture_group = japonic
+		}
+	}
+	
+	religion = shinto	
+	culture = togoku
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = d_orient_brigade_composition
+}
+
+d_trung_sisterhood = {
+	color={ 232 213 7 }
+	color2={ 34 47 181 }
+
+	capital = 136 # Hà Nôi
+
+	culture = tonkinese
+
+	title = "CAPTAIN"
+	title_female = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = d_trung_sisterhood_composition
+}
+
+d_dragon_lords = {
+	color={ 255 174 201 }
+	color2={ 255 255 255 }
+
+	capital = 136 # Hà Nôi
+	
+	allow = {
+		OR = {
+			culture_group = south_anglo
+			culture_group = upland
+		}
+	}
+	
+	culture = tonkinese
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = d_dragon_lords_composition
+}
+
+d_golden_star_dragons = {
+	color={ 21 129 10 }
+	color2={ 255 255 255 }
+		
+	capital = 136 # Hà Nôi
+
+	culture = tonkinese
+	
+	allow = {
+		OR = {
+			religion_group = christian
+			religion = americanist
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_golden_star_dragons_composition
+}
