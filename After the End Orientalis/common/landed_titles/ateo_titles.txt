@@ -8098,6 +8098,1019 @@ e_viet_nam = {
 		}
 	}
 }
+e_korea = {
+	color={ 188 158 175 }
+	color2={ 255 255 20 }
+	
+	capital = 696 # c_rason
+	culture = chosunin
+	
+	k_hamgyong = {
+		color={ 198 148 180 }
+		color2={ 255 255 255 }
+		
+		capital = 696 # c_rason
+		culture = chosunin
+		
+		d_hamgyong = {
+			color={ 218 128 190 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 696 province_id = 697 province_id = 698 province_id = 699 province_id = 700 } }
+				}
+			}
+			capital = 696 # c_rason
+			
+			c_rason = { # 696
+				color={ 228 118 195 }
+				color2={ 255 255 255 }
+				
+				b_rason = {
+				}
+				b_chongjin = {
+				}
+				b_musudan = {
+				}
+				b_kyonghung = {
+				}
+				b_hoeryong = {
+				}
+				b_kyongwon = {
+				}
+				b_musan = {
+				}
+			}
+			c_hyesan = { # 699
+				color={ 124 20 92 }
+				color2={ 255 255 255 }
+				
+				b_hyesan = {
+				}
+				b_pungso = {
+				}
+				b_samsu = {
+				}
+				b_kim_jong_suk = {
+				}
+				b_kim_hyong_gwon = {
+				}
+				b_kim_hyong_jik = {
+				}
+				b_changal = {
+				}
+			}
+			c_kimchaek = { # 697
+				color={ 187 29 139 }
+				color2={ 255 255 255 }
+				
+				b_kimchaek = {
+				}
+				b_mantapsan = {
+				}
+				b_orang = {
+				}
+				b_myonggan = {
+				}
+				b_myongchon = {
+				}
+				b_onsong = {
+				}
+				b_puryong = {
+				}
+			}
+			c_samjiyon = { # 698
+				color={ 76 15 58 }
+				color2={ 255 255 255 }
+				
+				b_paegam = {
+				}
+				b_paektu = {
+				}
+				b_samjiyon = {
+				}
+				b_kapsan = {
+				}
+				b_pochon = {
+				}
+				b_taehongdan = {
+				}
+				b_unhung = {
+				}
+			}
+			c_tanchon = { # 700
+				color={ 216 121 187 }
+				color2={ 255 255 255 }
+				
+				b_tanchon = {
+				}
+				b_hochon = {
+				}
+				b_kumho = {
+				}
+				b_pukchong = {
+				}
+				b_riwon = {
+				}
+				b_toksong = {
+				}
+				b_changnae = {
+				}
+			}
+		}
+		d_wonsan = {
+			color={ 89 250 61 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 701 province_id = 702 province_id = 703 province_id = 704 } }
+				}
+			}
+			capital = 701 # c_sinpo
+			
+			c_sinpo = { # 701
+				color={ 79 4 56 }
+				color2={ 255 255 255 }
+				
+				b_sinpo = {
+				}
+				b_hongwon = {
+				}
+				b_ragwon = {
+				}
+				b_pujon = {
+				}
+				b_sinhung = {
+				}
+				b_poju = {
+				}
+				b_puchang = {
+				}
+			}
+			c_hamhung = { # 702
+				color={ 122 34 96 }
+				color2={ 255 255 255 }
+				
+				b_sudong = {
+				}
+				b_hamhung = {
+				}
+				b_changjin = {
+				}
+				b_chongpyong = {
+				}
+				b_hamju = {
+				}
+				b_yonggwang = {
+				}
+				b_yodok = {
+				}
+			}
+			c_kumgang = { # 704
+				color={ 55 16 44 }
+				color2={ 255 255 255 }
+				
+				b_kumgang = {
+				}
+				b_ichon = {
+				}
+				b_kimhwa = {
+				}
+				b_pyonggang = {
+				}
+				b_sepo = {
+				}
+				b_changdo = {
+				}
+				b_chorwon = {
+				}
+			}
+			c_wonsan = { # 703
+				color={ 198 31 148 }
+				color2={ 255 255 255 }
+				
+				b_wonsan = {
+				}
+				b_chonnae = {
+				}
+				b_anbyon = {
+				}
+				b_munchon = {
+				}
+				b_hoeyang = {
+				}
+				b_kosan = {
+				}
+				b_poptong = {
+				}
+			}
+		}
+	}
+	k_pusan = {
+		color={ 161 224 72 }
+		color2={ 255 255 255 }
+		
+		capital = 734 # c_yeongju
+		culture = hangugin
+		
+		d_taegu = {
+			color={ 181 204 82 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 734 province_id = 735 } }
+				}
+			}
+			capital = 734 # c_yeongju
+			
+			c_yeongju = { # 734
+				color={ 191 194 87 }
+				color2={ 255 255 255 }
+				
+				b_yeongju = {
+				}
+				b_sangju = {
+				}
+				b_andong = {
+				}
+				b_mungyeong = {
+				}
+				b_uljin = {
+				}
+				b_yecheon = {
+				}
+				b_yeongdeok = {
+				}
+			}
+			c_taegu = { # 735
+				color={ 135 139 16 }
+				color2={ 255 255 255 }
+				
+				b_taegu = {
+				}
+				b_pohang = {
+				}
+				b_gumi = {
+				}
+				b_gyeongsan = {
+				}
+				b_yeongju_2 = {
+				}
+				b_yeongcheon = {
+				}
+				b_chilgok = {
+				}
+			}
+		}
+		d_pusan = {
+			color={ 222 244 135 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 736 province_id = 737 province_id = 738 } }
+				}
+			}
+			capital = 736 # c_pusan
+			
+			c_pusan = { # 736
+				color={ 232 234 140 }
+				color2={ 255 255 255 }
+				
+				b_yeongje = {
+				}
+				b_haeundae = {
+				}
+				b_dongnae = {
+				}
+				b_jung = {
+				}
+				b_buk_gu = {
+				}
+				b_busanjin = {
+				}
+				b_dong_gu = {
+				}
+			}
+			c_jinju = { # 738
+				color={ 158 161 59 }
+				color2={ 255 255 255 }
+				
+				b_jinju = {
+				}
+				b_geokju = {
+				}
+				b_sacheon = {
+				}
+				b_tongyeong = {
+				}
+				b_geochang = {
+				}
+				b_goseong = {
+				}
+				b_namhae = {
+				}
+			}
+			c_ulsan = { # 737
+				color={ 198 202 80 }
+				color2={ 255 255 255 }
+				
+				b_ulsan = {
+				}
+				b_changwon = {
+				}
+				b_miryang = {
+				}
+				b_ginhae = {
+				}
+				b_hanam = {
+				}
+				b_yangsan = {
+				}
+				b_changnyeong = {
+				}
+			}
+		}
+	}
+	k_pyongyang = {
+		color={ 43 144 164 }
+		color2={ 255 255 255 }
+		
+		capital = 705 # c_kanggye
+		culture = chosunin
+		
+		d_chagang = {
+			color={ 23 164 154 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 705 province_id = 706 province_id = 707 province_id = 708 } }
+				}
+			}
+			capital = 705 # c_kanggye
+			
+			c_kanggye = { # 705
+				color={ 13 174 149 }
+				color2={ 255 255 255 }
+				
+				b_kanggye = {
+				}
+				b_manpo = {
+				}
+				b_chunggang = {
+				}
+				b_chasong = {
+				}
+				b_changgang = {
+				}
+				b_hwapyong = {
+				}
+				b_rangrim = {
+				}
+			}
+			c_chongju = { # 708
+				color={ 88 202 185 }
+				color2={ 255 255 255 }
+				
+				b_chongju = {
+				}
+				b_sonchon = {
+				}
+				b_kusong = {
+				}
+				b_taechon = {
+				}
+				b_taegwan = {
+				}
+				b_unjon = {
+				}
+				b_unsan = {
+				}
+			}
+			c_huichon = { # 706
+				color={ 62 249 192 }
+				color2={ 255 255 255 }
+				
+				b_huichon = {
+				}
+				b_chonchon = {
+				}
+				b_kopung = {
+				}
+				b_chosan = {
+				}
+				b_songwon = {
+				}
+				b_tongsin = {
+				}
+				b_usi = {
+				}
+			}
+			c_sinuiju = { # 707
+				color={ 120 211 197 }
+				color2={ 255 255 255 }
+				
+				b_sinuiju = {
+				}
+				b_changsong = {
+				}
+				b_cholsan = {
+				}
+				b_chonma = {
+				}
+				b_hyangsan = {
+				}
+				b_kujang = {
+				}
+				b_phihyon = {
+				}
+			}
+		}
+		d_hwanghae = {
+			color={ 19 106 104 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 714 province_id = 715 province_id = 716 province_id = 717 } }
+				}
+			}
+			capital = 714 # c_sariwon
+			
+			c_sariwon = { # 714
+				color={ 9 116 99 }
+				color2={ 255 255 255 }
+				
+				b_sariwon = {
+				}
+				b_songrim = {
+				}
+				b_hwangju = {
+				}
+				b_pyongsan = {
+				}
+				b_rinsan = {
+				}
+				b_sohung = {
+				}
+				b_yontan = {
+				}
+			}
+			c_haeju = { # 717
+				color={ 63 198 178 }
+				color2={ 255 255 255 }
+				
+				b_haeju = {
+				}
+				b_sinwon = {
+				}
+				b_yonan = {
+				}
+				b_chongdan = {
+				}
+				b_kangryong = {
+				}
+				b_ongjin = {
+				}
+				b_pyoksong = {
+				}
+			}
+			c_hwanghae = { # 716
+				color={ 27 178 155 }
+				color2={ 255 255 255 }
+				
+				b_anak = {
+				}
+				b_sorae = {
+				}
+				b_changyon = {
+				}
+				b_kwail = {
+				}
+				b_paechon = {
+				}
+				b_ryongyon = {
+				}
+				b_chaeryong = {
+				}
+			}
+			c_kaesong = { # 715
+				color={ 45 223 196 }
+				color2={ 255 255 255 }
+				
+				b_kaesong = {
+				}
+				b_panmunjom = {
+				}
+				b_kaepung = {
+				}
+				b_manwoldae = {
+				}
+				b_kumchon = {
+				}
+				b_changpung = {
+				}
+				b_sonjuk = {
+				}
+			}
+		}
+		d_pyongyang = {
+			color={ 18 49 56 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 709 province_id = 710 province_id = 711 province_id = 712 province_id = 713 } }
+				}
+			}
+			capital = 709 # c_kaechon
+			
+			c_kaechon = { # 709
+				color={ 8 59 51 }
+				color2={ 255 255 255 }
+				
+				b_kaechon = {
+				}
+				b_tokchon = {
+				}
+				b_maengsan = {
+				}
+				b_nyongwon = {
+				}
+				b_pukchang = {
+				}
+				b_taehung = {
+				}
+				b_tukchang = {
+				}
+			}
+			c_nampo = { # 711
+				color={ 8 133 114 }
+				color2={ 255 255 255 }
+				
+				b_nampo = {
+				}
+				b_chungsan = {
+				}
+				b_onchon = {
+				}
+				b_taedong = {
+				}
+				b_chollima = {
+				}
+				b_kangso = {
+				}
+				b_taean = {
+				}
+			}
+			c_pyongsong = { # 710
+				color={ 13 93 81 }
+				color2={ 255 255 255 }
+				
+				b_hoechang = {
+				}
+				b_sunchon = {
+				}
+				b_sinyang = {
+				}
+				b_songchon = {
+				}
+				b_yangdok = {
+				}
+				b_anju = {
+				}
+				b_mundok = {
+				}
+			}
+			c_pyongyang = { # 712
+				color={ 93 171 159 }
+				color2={ 255 255 255 }
+				
+				b_kumsusan = {
+				}
+				b_moranbong = {
+				}
+				b_kaeson = {
+				}
+				b_munsudae = {
+				}
+				b_pyongchon = {
+				}
+				b_sosong = {
+				}
+				b_songyo = {
+				}
+			}
+			c_sinpyong = { # 713
+				color={ 156 234 222 }
+				color2={ 255 255 255 }
+				
+				b_sinpyong = {
+				}
+				b_koksan = {
+				}
+				b_singye = {
+				}
+				b_suan = {
+				}
+				b_yonsan = {
+				}
+				b_churanjol = {
+				}
+				b_koriso = {
+				}
+			}
+		}
+	}
+	k_seoul = {
+		color={ 90 222 98 }
+		color2={ 255 255 255 }
+		
+		capital = 718 # c_inchon
+		culture = hangugin
+		
+		d_seoul = {
+			color={ 110 202 108 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 718 province_id = 719 province_id = 720 province_id = 721 } }
+				}
+			}
+			capital = 718 # c_inchon
+			
+			c_inchon = { # 718
+				color={ 120 192 113 }
+				color2={ 255 255 255 }
+				
+				b_namdong = {
+				}
+				b_bupyeong = {
+				}
+				b_gyesan = {
+				}
+				b_ganghwa = {
+				}
+				b_yeonsu = {
+				}
+				b_nam_gu = {
+				}
+				b_yeongjong = {
+				}
+			}
+			c_namyangju = { # 720
+				color={ 60 216 45 }
+				color2={ 255 255 255 }
+				
+				b_namyangju = {
+				}
+				b_gapyeong = {
+				}
+				b_uijeongbu = {
+				}
+				b_yangju = {
+				}
+				b_guri = {
+				}
+				b_dongducheon = {
+				}
+				b_paju = {
+				}
+			}
+			c_seoul = { # 719
+				color={ 40 66 37 }
+				color2={ 255 255 255 }
+				
+				b_yongsan = {
+				}
+				b_gangnam = {
+				}
+				b_nowon = {
+				}
+				b_seongnam = {
+				}
+				b_goyang = {
+				}
+				b_bucheon = {
+				}
+				b_ansan = {
+				}
+			}
+			c_suwon = { # 721
+				color={ 73 206 59 }
+				color2={ 255 255 255 }
+				
+				b_suwon = {
+				}
+				b_yongin = {
+				}
+				b_hwaseong = {
+				}
+				b_gwangju = {
+				}
+				b_pyeongtaek = {
+				}
+				b_icheon = {
+				}
+				b_osan = {
+				}
+			}
+		}
+		d_chungcheong = {
+			color={ 21 40 12 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 725 province_id = 726 province_id = 727 } }
+				}
+			}
+			capital = 725 # c_chungju
+			
+			c_chungju = { # 725
+				color={ 11 50 7 }
+				color2={ 255 255 255 }
+				
+				b_chungju = {
+				}
+				b_jecheon = {
+				}
+				b_danyong = {
+				}
+				b_goesan = {
+				}
+				b_uamsan = {
+				}
+				b_beopjusa = {
+				}
+				b_worak = {
+				}
+			}
+			c_chungcheong = { # 726
+				color={ 64 223 48 }
+				color2={ 255 255 255 }
+				
+				b_cheongju = {
+				}
+				b_eumseong = {
+				}
+				b_jincheon = {
+				}
+				b_okcheon = {
+				}
+				b_yeongdong = {
+				}
+				b_jeungpyeong = {
+				}
+				b_boeun = {
+				}
+			}
+			c_daejeon = { # 727
+				color={ 52 158 41 }
+				color2={ 255 255 255 }
+				
+				b_daejeon = {
+				}
+				b_hongseong = {
+				}
+				b_cheonan = {
+				}
+				b_asan = {
+				}
+				b_seosan = {
+				}
+				b_dangjin = {
+				}
+				b_gongju = {
+				}
+			}
+		}
+		d_gangwon = {
+			color={ 21 84 8 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 722 province_id = 723 province_id = 724 } }
+				}
+			}
+			capital = 722 # c_gangwon
+			
+			c_gangwon = { # 722
+				color={ 11 94 3 }
+				color2={ 255 255 255 }
+				
+				b_chuncheon = {
+				}
+				b_sokcho = {
+				}
+				b_seoraksan = {
+				}
+				b_hwacheon = {
+				}
+				b_yanggu = {
+				}
+				b_odaesan = {
+				}
+				b_cheorwon = {
+				}
+			}
+			c_ulleung = { # 724
+				color={ 95 197 85 }
+				color2={ 255 255 255 }
+				
+				b_ulleung = {
+				}
+				b_buk_myeon = {
+				}
+				b_seo_myeon = {
+				}
+				b_jeodong = {
+				}
+				b_sadong = {
+				}
+				b_hyeonpo = {
+				}
+				b_namseo = {
+				}
+			}
+			c_wonju = { # 723
+				color={ 41 82 37 }
+				color2={ 255 255 255 }
+				
+				b_wonju = {
+				}
+				b_jeongsong = {
+				}
+				b_gangneung = {
+				}
+				b_donghae = {
+				}
+				b_samcheok = {
+				}
+				b_taebaek = {
+				}
+				b_hoengseong = {
+				}
+			}
+		}
+		d_jeju = {
+			color={ 103 112 95 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 732 province_id = 733 } }
+				}
+			}
+			capital = 732 # c_jeju
+			
+			c_jeju = { # 732
+				color={ 93 122 90 }
+				color2={ 255 255 255 }
+				
+				b_jeju = {
+				}
+				b_aeweol = {
+				}
+				b_gujwa = {
+				}
+				b_hanrim = {
+				}
+				b_jochin = {
+				}
+				b_chuja = {
+				}
+				b_hangyeong = {
+				}
+			}
+			c_seogwipo = { # 733
+				color={ 168 225 162 }
+				color2={ 255 255 255 }
+				
+				b_seogwipo = {
+				}
+				b_daejong = {
+				}
+				b_hallasan = {
+				}
+				b_namwon_2 = {
+				}
+				b_seongsan = {
+				}
+				b_anduk = {
+				}
+				b_pyoseon = {
+				}
+			}
+		}
+		d_jeolla = {
+			color={ 54 83 44 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 728 province_id = 729 province_id = 730 province_id = 731 } }
+				}
+			}
+			capital = 728 # c_jeonju
+			
+			c_jeonju = { # 728
+				color={ 44 93 39 }
+				color2={ 255 255 255 }
+				
+				b_jeonju = {
+				}
+				b_iksan = {
+				}
+				b_jeongeup = {
+				}
+				b_kunsan = {
+				}
+				b_wanju = {
+				}
+				b_gochang = {
+				}
+				b_gimje = {
+				}
+			}
+			c_gwangju = { # 730
+				color={ 45 146 34 }
+				color2={ 255 255 255 }
+				
+				b_gwangju_2 = {
+				}
+				b_naju = {
+				}
+				b_hwasun = {
+				}
+				b_yeongwang = {
+				}
+				b_damyang = {
+				}
+				b_jangseong = {
+				}
+				b_hampyeong = {
+				}
+			}
+			c_mokpo = { # 731
+				color={ 43 115 35 }
+				color2={ 255 255 255 }
+				
+				b_mokpo = {
+				}
+				b_yeosu = {
+				}
+				b_suncheon = {
+				}
+				b_muan = {
+				}
+				b_gwangyang = {
+				}
+				b_haenam = {
+				}
+				b_goheung = {
+				}
+			}
+			c_namwon = { # 729
+				color={ 37 205 19 }
+				color2={ 255 255 255 }
+				
+				b_namwon = {
+				}
+				b_sunchang = {
+				}
+				b_imsil = {
+				}
+				b_muju = {
+				}
+				b_jinan = {
+				}
+				b_jangsu = {
+				}
+				b_jurisan = {
+				}
+			}
+		}
+	}
+}
 e_malaysia = {
 	color={ 215 202 55 }
 	color2={ 255 255 20 }
