@@ -6865,10 +6865,10 @@
 		}
 	}
 }
-2876002 = { name="Huynh" culture=annamese } #Count of Quang Nam
+2876002 = { name="Sam" culture=annamese } #Count of Quang Nam
 2876003 = { name="Dinh Sang" culture=annamese } #Count of Quang Ngai
 2876004 = { name="Lieu" culture=annamese } #shared with north
-2876005 = { name="Sam" culture=annamese }
+2876005 = { name="Huynh" culture=annamese } #Primate Antoine Dinh Van Huynh (woot!)
 2876006 = { name="Su" culture=annamese }
 2876007 = { name="Tao" culture=annamese }
 2876008 = { name="Tang" culture=annamese }
@@ -8663,8 +8663,21 @@ coat_of_arms = {
 3903247 = { name="Dacanay" culture=pangasinense }
 3903248 = { name="Medrano" culture=pangasinense }
 3903249 = { name="Manalang" culture=pangasinense }
-3903250 = { name="Kinalakihan" culture=pangasinense used_for_random=no }
-
+3903250 = { name="Kinalakihan" culture=pangasinense 
+	used_for_random=no 
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	} #Princess Urduja Reference
+}
 
 3904000 = { name="Tan" culture=kapampangan }
 3904001 = { name="dela Cruz" culture=kapampangan }
