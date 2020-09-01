@@ -1,0 +1,53 @@
+####################Missionary Missions Events#################
+#	Initial Commit by: Derrick
+
+#Christian Missionaries Visit the Petty Kingdom of Jarai
+# 1		Set-up for the Mission (Annam)
+
+###############################################################
+namespace = ateom
+
+#Christian Missionaries Visit the Petty Kingdom of Jarai
+narrative_event = {
+	id = ateom.1
+	title = ateom1
+	desc = ateom1_desc
+	picture = GFX_evt_pilgrims_epic_journey
+
+	is_triggered_only = yes
+	
+	trigger = {
+		c_2877007 = {
+			has_landed_title = k_thuan_hoa
+		}
+	}
+
+	option = {
+		name = ateom1A
+		piety = -20
+		wealth = 100
+		
+		c_1178000 = {
+			has_landed_title = d_gia_lai
+		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {
+		name = ateom1B
+		piety = 20
+		wealth = -50
+		
+		c_1178000 = {
+			has_landed_title = d_gia_lai
+			set_character_flag = recieved_mission
+			#narrative_event = { id = atemo.2 days = 7 random = 10 }
+		}
+		
+		random_list = {
+			20 = { add_trait = zealous }
+			80 = { }
+		}	
+		ai_chance = { factor = 5 }
+	}
+}
