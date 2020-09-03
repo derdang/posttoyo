@@ -20,7 +20,9 @@
 #3916 - Badjao
 #3917 - Mangyan 
 
-###########Manila Patricians###########
+###########Tagalog Characters###########
+
+#Manila Patricians
 
 3900000 = { #The Ongpin Patriarch - Current Kinatawan of Manila - Finance Centric
 	name="Carlos"
@@ -39,7 +41,12 @@
 	trait=paranoid
 	trait=arbitrary
 	trait=humble
-	2557.8.1={birth=yes}
+	2557.8.1={
+		birth=yes
+	}
+	2587.9.28={
+		add_spouse=3900005
+	}
 }
 
 3900001 = { #The Tantoco Patriarch - Entertainment Centric
@@ -59,7 +66,9 @@
 	trait=stubborn
 	trait=gregarious
 	trait=cynical
-	2565.2.16={birth=yes}
+	2565.2.16={
+		birth=yes
+	}
 }
 
 3900002 = { #The Ramos Patriarch - Education Centric
@@ -79,7 +88,9 @@
 	trait=just
 	trait=zealous
 	trait=patient
-	2553.11.28={birth=yes}
+	2553.11.28={
+		birth=yes
+	}
 }
 
 3900003 = { #The Lopez Patriarch - Information Centric
@@ -99,7 +110,9 @@
 	trait=ambitious
 	trait=arbitrary
 	trait=erudite
-	2549.8.15={birth=yes}
+	2549.8.15={
+		birth=yes
+	}
 }
 
 3900004 = { #The Araneta Patriarch - Industrial Centric
@@ -113,13 +126,152 @@
 	intrigue=3
 	learning=3
 	trait=brilliant_strategist
+	trait=unyielding_leader
 	trait=strategist
 	trait=slothful
 	trait=wroth
 	trait=content
 	trait=zealous
 	trait=stubborn
-	2569.12.27={birth=yes}
+	2569.12.27={
+		birth=yes
+	}
+}
+
+#Manila Patrician's Families
+
+#Aranetas
+3900005 = { #The Araneta Matriarch
+	name="Marilou"
+	female=yes
+	culture=tagalog
+	religion=catholic
+	trait=naive_appeaser
+	trait=fair
+	trait=charitable
+	trait=envious
+	trait=honest
+	trait=proud
+	trait=craven
+	2561.12.17={
+		birth=yes
+	}
+	2587.9.28={
+		add_spouse=3900000
+	}
+}
+
+3900006 = { #Eldest child
+	name="Agnes"
+	female=yes
+	dynasty=3900250 #Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	father=3900000
+	mother=3900005
+	2579.4.9={
+		birth=yes
+	}
+	2587.9.15={
+		add_spouse=3904000
+	}
+}
+
+3900007 = {
+	name="Jose"
+	dynasty=3900250 #Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=thrifty_clerk
+	trait=charitable
+	trait=just
+	trait=cruel
+	trait=stubborn
+	trait=zealous
+	father=3900000
+	mother=3900005
+	2581.1.14={
+		birth=yes
+	}
+}
+
+3900008 = {
+	name="Valdemar"
+	dynasty=3900250 #Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=flamboyant_schemer
+	trait=ambitious
+	trait=arbitrary
+	trait=paranoid
+	trait=cynical
+	trait=erudite
+	father=3900000
+	mother=3900005
+	2583.2.13={
+		birth=yes
+	}
+}
+
+3900009 = { #Youngest child
+	name="Larry"
+	dynasty=3900250 #Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=grey_eminence
+	trait=deceitful
+	trait=brave
+	trait=diligent
+	trait=gluttonous
+	trait=gregarious
+	father=3900000
+	mother=3900005
+	2585.2.13={
+		birth=yes
+	}
+}
+
+3900009 = { #Count of Bulacan and Bataan - Francisco Balagtas reference
+	name="Francis"
+	dynasty=3900119 #Baltazar
+	culture=tagalog
+	religion=catholic
+	trait=scholarly_theologian
+	trait=scholar
+	trait=quick
+	trait=poet
+	trait=charitable
+	trait=just
+	trait=humble
+	trait=content
+	trait=gregarious
+	fertility = 0.8
+	2579.4.13={
+		birth=yes
+	}
+}
+
+3900010 = { #Count of Nueva Ecija
+	name="Ramon"
+	dynasty=3900088 #Gamboa
+	culture=tagalog
+	religion=catholic
+	trait=intricate_webweaver
+	trait=deceitful
+	trait=shy
+	trait=arbitrary
+	trait=lustful
+	trait=cruel
+	2575.10.28={
+		birth=yes
+	}
 }
 
 ###########Pangasinense Characters###########
@@ -144,5 +296,57 @@
 	trait=honorable
 	trait=brave
 	trait=kind
-	2577.6.18={birth=yes}
+	2577.6.18={
+		birth=yes
+	}
+}
+
+###########Kapampangan Characters###########
+
+3904000 = { #The very capable ruler of Central Luzon
+	name="Armando"
+	dynasty=3904250 #Kasiple
+	culture=kapampangan
+	religion=catholic
+	diplomacy=5
+	martial=5
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=grey_eminence
+	trait=administrator
+	trait=ambitious
+	trait=honorable
+	trait=just
+	trait=proud
+	trait=trusting
+	2567.8.1={
+		birth=yes
+	}
+	2587.9.15={
+		add_spouse=3900006
+	}
+}
+
+3904001 = { #Eldest child
+	name="Oscar"
+	dynasty=3904250 #Kasiple
+	culture=kapampangan
+	religion=catholic
+	diplomacy=2
+	martial=8
+	stewardship=6
+	intrigue=1
+	learning=4
+	trait=rowdy
+	trait=haughty
+	trait=idolizer
+	father=3904000
+	mother=3900006
+	2567.8.1={
+		birth=yes
+	}
+	2587.9.15={
+		add_spouse=3900006
+	}
 }
