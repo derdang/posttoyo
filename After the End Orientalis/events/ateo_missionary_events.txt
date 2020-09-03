@@ -16,10 +16,13 @@ narrative_event = {
 
 	is_triggered_only = yes
 	
+	
 	trigger = {
-		c_2877007 = {
-			has_landed_title = k_thuan_hoa
-		}
+		character = c_2877007 #Nguyen Minh Mac
+	}
+	
+	mean_time_to_happen = {
+		days = 1
 	}
 
 	option = {
@@ -41,13 +44,72 @@ narrative_event = {
 		c_1178000 = {
 			has_landed_title = d_gia_lai
 			set_character_flag = recieved_mission
-			#narrative_event = { id = atemo.2 days = 7 random = 10 }
+		}
+		
+		random_list = {
+			20 = { add_trait = zealous }
+			80 = { }
+		}
+		set_character_flag = sent_mission
+		narrative_event = { id = atemo.2 days = 7 random = 10 }
+		ai_chance = { factor = 5 }
+	}
+}
+narrative_event = {
+	id = ateom.2
+	title = ateom2
+	desc = ateom1_desc
+	picture = GFX_evt_china_golden_age
+
+	is_triggered_only = yes
+	
+	trigger = {
+		character = c_1178000 #The Fire King
+	}
+
+	option = {
+		name = ateom2A
+		prestige = -100
+		wealth = 100
+		religion = catholic
+		c_2877007 = {
+			has_landed_title = k_thuan_hoa
+			set_character_flag = accepted_mission
+		}
+		ai_chance = { factor = 2 }
+	}
+	
+	option = {
+		name = ateom2B
+		prestige = -100
+		wealth = 50
+		religion = concordanist
+		
+		c_2877007 = {
+			has_landed_title = k_thuan_hoa
+			set_character_flag = accepted_mission
 		}
 		
 		random_list = {
 			20 = { add_trait = zealous }
 			80 = { }
 		}	
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 2 }
+	}
+	option = {
+		name = ateom2C
+		prestige = 100
+		piety = 100
+		
+		c_2877007 = {
+			has_landed_title = k_thuan_hoa
+			set_character_flag = rejected_mission
+		}
+		
+		random_list = {
+			50 = { add_trait = zealous }
+			50 = { }
+		}	
+		ai_chance = { factor = 3 }
 	}
 }
