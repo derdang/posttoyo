@@ -7706,7 +7706,21 @@ coat_of_arms = {
 3900116 = { name="Lazaro" culture=tagalog }
 3900117 = { name="Geronimo" culture=tagalog }
 3900118 = { name="Carpio" culture=tagalog }
-3900119 = { name="Baltazar" culture=tagalog }
+3900119 = { name="Baltazar" culture=tagalog
+	used_for_random=no 
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	} #Francis Baltazar Reference
+}
 3900120 = { name="dela Peña" culture=tagalog }
 3900121 = { name="San Juan" culture=tagalog }
 3900122 = { name="Sales" culture=tagalog }
@@ -8929,7 +8943,21 @@ coat_of_arms = {
 3904247 = { name="Dacanay" culture=kapampangan }
 3904248 = { name="Medrano" culture=kapampangan }
 3904249 = { name="Manalang" culture=kapampangan }
-3904250 = { name="Kasiple" culture=kapampangan }
+3904250 = { name="Kasiple" culture=kapampangan
+	used_for_random=no 
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	} #Baron of Rice
+}
 
 
 3905000 = { name="Tan" culture=bisaya }
