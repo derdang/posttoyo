@@ -990,7 +990,7 @@ buddhist_group = {
 		color = { 200 150 100 }
 		
 		scripture_name = MAHAYANA_SUTRAS
-		priest_title = B_MONK
+		priest_title = B_BHIKSHU
 		
 		high_god_name = GOD_DHAMA
 		
@@ -1015,6 +1015,7 @@ buddhist_group = {
 		can_grant_divorce = yes
 		castes = yes
 		priests_can_inherit = no
+		can_retire_to_monastery = yes 
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
@@ -1031,10 +1032,10 @@ buddhist_group = {
 		scripture_name = MAHAYANA_SUTRAS
 		priest_title = B_MONK
 		
-		high_god_name = GOD_DHAMA
+		high_god_name = GOD_DHARMA
 		
 		god_names = {
-			 GOD_HUYEN GOD_BODDHISATTVA GOD_LOKUTTARA GOD_AMITABHA
+			 GOD_HYUN_PHU_SO GOD_BODDHISATTVA GOD_BUDDHA GOD_THAY_AN
 		}
 		
 		evil_god_names = {
@@ -1067,9 +1068,9 @@ buddhist_group = {
 		color = { 100 200 100 }
 		
 		scripture_name = TIPITAKA
-		priest_title = B_MONK
+		priest_title = B_BHIKKHU
 		
-		high_god_name = GOD_DHAMA
+		high_god_name = GOD_DHAMMA
 		
 		god_names = {
 			 GOD_THE_BUDDHA GOD_THE_ARAHANTS GOD_SAKKAMUNI GOD_METTEYYA
@@ -1088,10 +1089,48 @@ buddhist_group = {
 		intermarry = ua_dab
 		
 		feminist = yes
-		female_temple_holders = yes
+		female_temple_holders = no
 		can_grant_divorce = yes
-		castes = yes
 		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	parimatira = {
+		graphical_culture = buddhistgfx
+
+		icon = 16
+		heresy_icon = 17
+		
+		color = { 100 200 100 }
+		
+		scripture_name = TIPITAKA
+		priest_title = B_BHIKKHU
+		
+		high_god_name = GOD_DHAMA
+		
+		god_names = {
+			 GOD_THE_BUDDHA GOD_THE_ARAHANTS GOD_THE_WEIZZA GOD_METTEYYA GOD_BO_BO_AUNG
+		}
+		
+		evil_god_names = {
+			MARA
+		}
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = christian
+		intermarry = eastern
+		intermarry = ua_dab
+		
+		feminist = yes
+		female_temple_holders = no
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
@@ -1113,7 +1152,7 @@ buddhist_group = {
 		high_god_name = GOD_DHAMA
 		
 		god_names = {
-			 GOD_B_MUHHAMAD GOD_THE_BUDDHA GOD_MAHDI
+			 GOD_B_MUHHAMAD GOD_THE_BUDDHA GOD_MAHDI-MAITREYA
 		}
 		
 		evil_god_names = {
@@ -1147,7 +1186,7 @@ buddhist_group = {
 		color = { 055 030 200 }
 		
 		scripture_name = MYOHO_RENGE_KYO
-		priest_title = B_MONK
+		priest_title = B_LEADER
 		
 		high_god_name = GOD_DHARMA
 		
@@ -1171,7 +1210,7 @@ buddhist_group = {
 		feminist = no
 		female_temple_holders = no
 		can_grant_divorce = yes
-		priests_can_inherit = no
+		priests_can_inherit = yes
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
@@ -1211,6 +1250,7 @@ buddhist_group = {
 		female_temple_holders = no
 		can_grant_divorce = yes
 		priests_can_inherit = no
+		can_retire_to_monastery = yes 
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
