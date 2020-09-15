@@ -15169,6 +15169,1291 @@ e_java = {
 		}
 	}
 }
+e_sumatra = {
+	color={ 52 238 122 }
+	color2={ 255 255 20 }
+	
+	capital = 390 # c_banyuasin
+	culture = melayu
+	
+	k_palembang = {
+		color={ 62 228 127 }
+		color2={ 255 255 255 }
+		
+		capital = 390 # c_banyuasin
+		culture = melayu
+		
+		d_palembang = {
+			color={ 82 208 137 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 390 province_id = 391 province_id = 392 } }
+				}
+			}
+			capital = 390 # c_banyuasin
+			
+			c_banyuasin = { # 390
+				color={ 92 198 142 }
+				color2={ 255 255 255 }
+				
+				b_gedung_siput = {
+				}
+				b_palembang = {
+				}
+				b_mahmud_badaruddin = {
+				}
+				b_pangkalan_balai = {
+				}
+				b_patal_pusri = {
+				}
+				b_talang_kelapa = {
+				}
+				b_plaju = {
+				}
+			}
+			c_musi_banyuasin = { # 391
+				color={ 56 186 115 }
+				color2={ 255 255 255 }
+				
+				b_sekayu = {
+				}
+				b_bayung_lencir = {
+				}
+				b_sungai_lilin = {
+				}
+				b_babat_toman = {
+				}
+				b_lais = {
+				}
+				b_tebing_bulang = {
+				}
+				b_lalan = {
+				}
+			}
+			c_musi_rawas = { # 392
+				color={ 68 179 122 }
+				color2={ 255 255 255 }
+				
+				b_muara_beliti = {
+				}
+				b_lubuklinggau = {
+				}
+				b_megang_sakti = {
+				}
+				b_rupit = {
+				}
+				b_tugumulyo = {
+				}
+				b_rawas = {
+				}
+				b_muara_lakitan = {
+				}
+			}
+		}
+		d_bangka_belitung = {
+			color={ 50 163 150 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 403 province_id = 404 province_id = 405 } }
+				}
+			}
+			capital = 403 # c_pangkal_pinang
+			
+			c_pangkal_pinang = { # 403
+				color={ 40 173 145 }
+				color2={ 255 255 255 }
+				
+				b_sungailiat = {
+				}
+				b_pangkal_pinang = {
+				}
+				b_jamik = {
+				}
+				b_muntok = {
+				}
+				b_belinyu = {
+				}
+				b_jebus = {
+				}
+				b_mendo_barat = {
+				}
+			}
+			c_bangka_selatan = { # 404
+				color={ 33 165 145 }
+				color2={ 255 255 255 }
+				
+				b_toboali = {
+				}
+				b_koba = {
+				}
+				b_air_gegas = {
+				}
+				b_dul = {
+				}
+				b_simpang_rimba = {
+				}
+				b_sungai_selan = {
+				}
+				b_lubuk_besar = {
+				}
+			}
+			c_belitung = { # 405
+				color={ 33 180 161 }
+				color2={ 255 255 255 }
+				
+				b_manggar = {
+				}
+				b_tanjung_pandan = {
+				}
+				b_batu_itam = {
+				}
+				b_membalong = {
+				}
+				b_gantung = {
+				}
+				b_cendil = {
+				}
+				b_badau = {
+				}
+			}
+		}
+		d_bengkulu = {
+			color={ 49 162 132 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 396 province_id = 397 province_id = 398 } }
+				}
+			}
+			capital = 396 # c_bengkulu
+			
+			c_bengkulu = { # 396
+				color={ 39 172 127 }
+				color2={ 255 255 255 }
+				
+				b_benteng_marlborough = {
+				}
+				b_bengkulu = {
+				}
+				b_at_taqwa = {
+				}
+				b_arga_makmur = {
+				}
+				b_curup = {
+				}
+				b_muara_aman = {
+				}
+				b_karang_tinggi = {
+				}
+			}
+			c_lahat = { # 398
+				color={ 51 169 120 }
+				color2={ 255 255 255 }
+				
+				b_lahat = {
+				}
+				b_pagar_alam = {
+				}
+				b_tebing_tinggi_2 = {
+				}
+				b_dempo = {
+				}
+				b_tinggi_hari = {
+				}
+				b_muara_pinang = {
+				}
+				b_tanjung_tebat = {
+				}
+			}
+			c_seluma = { # 397
+				color={ 24 151 135 }
+				color2={ 255 255 255 }
+				
+				b_pasar_tais = {
+				}
+				b_manna = {
+				}
+				b_bintuhan = {
+				}
+				b_sukaraja = {
+				}
+				b_pinoraya = {
+				}
+				b_nasal = {
+				}
+				b_kembang_mumpo = {
+				}
+			}
+		}
+		d_lampung = {
+			color={ 80 197 109 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 399 province_id = 400 province_id = 401 province_id = 402 } }
+				}
+			}
+			capital = 399 # c_lampung
+			
+			c_lampung = { # 399
+				color={ 90 187 114 }
+				color2={ 255 255 255 }
+				
+				b_gunung_sugih = {
+				}
+				b_bandar_lampung = {
+				}
+				b_sukadana = {
+				}
+				b_kalianda = {
+				}
+				b_metro = {
+				}
+				b_gedong_tataan = {
+				}
+				b_pringsewu = {
+				}
+			}
+			c_lampung_barat = { # 402
+				color={ 67 191 126 }
+				color2={ 255 255 255 }
+				
+				b_liwa = {
+				}
+				b_kota_agung_pusat = {
+				}
+				b_krui = {
+				}
+				b_pugung = {
+				}
+				b_suoh = {
+				}
+				b_ngambur = {
+				}
+				b_talang_padang = {
+				}
+			}
+			c_lampung_utara = { # 400
+				color={ 34 209 119 }
+				color2={ 255 255 255 }
+				
+				b_kotabumi = {
+				}
+				b_blambangan_umpu = {
+				}
+				b_taman_jaya = {
+				}
+				b_way_tuba = {
+				}
+				b_abung = {
+				}
+				b_rebang_tangkas = {
+				}
+				b_bunga_mayang = {
+				}
+			}
+			c_tulang_bawang = { # 401
+				color={ 71 186 143 }
+				color2={ 255 255 255 }
+				
+				b_menggala = {
+				}
+				b_mesuji = {
+				}
+				b_panaragan_jaya = {
+				}
+				b_way_serdang = {
+				}
+				b_banjar_margo = {
+				}
+				b_tumi_jajar = {
+				}
+				b_gedung_meneng = {
+				}
+			}
+		}
+		d_ogan_komering = {
+			color={ 70 176 114 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 393 province_id = 394 province_id = 395 } }
+				}
+			}
+			capital = 393 # c_muara_enim
+			
+			c_muara_enim = { # 393
+				color={ 60 186 109 }
+				color2={ 255 255 255 }
+				
+				b_muara_enim = {
+				}
+				b_prabumulih = {
+				}
+				b_indralaya = {
+				}
+				b_talang_ubi = {
+				}
+				b_semende_darat = {
+				}
+				b_pemulutan = {
+				}
+				b_cambai = {
+				}
+			}
+			c_ogan_komering_ilir = { # 394
+				color={ 37 175 123 }
+				color2={ 255 255 255 }
+				
+				b_kayu_agung = {
+				}
+				b_lempuing = {
+				}
+				b_tugu_mulyo = {
+				}
+				b_mesuji_makmur = {
+				}
+				b_sungai_menang = {
+				}
+				b_cengal = {
+				}
+				b_tulung_selapan = {
+				}
+			}
+			c_ogan_komering_ulu = { # 395
+				color={ 55 187 119 }
+				color2={ 255 255 255 }
+				
+				b_baturaja = {
+				}
+				b_martapura = {
+				}
+				b_meunasah = {
+				}
+				b_muara_dua = {
+				}
+				b_buay_madang = {
+				}
+				b_lengkiti = {
+				}
+				b_belitang = {
+				}
+			}
+		}
+	}
+	k_aceh = {
+		color={ 213 39 65 }
+		color2={ 255 255 255 }
+		
+		capital = 406 # c_banda_aceh
+		culture = acehnese
+		
+		d_aceh_utara = {
+			color={ 193 59 55 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 406 province_id = 407 province_id = 408 province_id = 409 } }
+				}
+			}
+			capital = 406 # c_banda_aceh
+			
+			c_banda_aceh = { # 406
+				color={ 183 69 50 }
+				color2={ 255 255 255 }
+				
+				b_banda_aceh = {
+				}
+				b_sigli = {
+				}
+				b_masjid_raya_baiturrahman = {
+				}
+				b_jantho = {
+				}
+				b_meureudu = {
+				}
+				b_darul_imarah = {
+				}
+				b_batee = {
+				}
+			}
+			c_aceh_tengah = { # 409
+				color={ 193 71 39 }
+				color2={ 255 255 255 }
+				
+				b_takengon = {
+				}
+				b_simpang_tiga_redelong = {
+				}
+				b_danau_laut_tawar = {
+				}
+				b_timang_gajah = {
+				}
+				b_linge = {
+				}
+				b_bukit = {
+				}
+				b_atu_lintang = {
+				}
+			}
+			c_aceh_timur = { # 408
+				color={ 197 73 34 }
+				color2={ 255 255 255 }
+				
+				b_idi_rayeuk = {
+				}
+				b_langsa = {
+				}
+				b_peureulak = {
+				}
+				b_karang_baru = {
+				}
+				b_sekerak = {
+				}
+				b_serbajadi = {
+				}
+				b_bendahara = {
+				}
+			}
+			c_bireuen = { # 407
+				color={ 187 70 44 }
+				color2={ 255 255 255 }
+				
+				b_bireuen = {
+				}
+				b_lhokseumawe = {
+				}
+				b_gandapura = {
+				}
+				b_lokhsukon = {
+				}
+				b_langkahan = {
+				}
+				b_baktiya = {
+				}
+				b_cot_girek = {
+				}
+			}
+		}
+		d_aceh_selatan = {
+			color={ 226 67 18 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 410 province_id = 411 province_id = 412 province_id = 413 } }
+				}
+			}
+			capital = 410 # c_subulussalam
+			
+			c_subulussalam = { # 410
+				color={ 216 77 13 }
+				color2={ 255 255 255 }
+				
+				b_tapaktuan = {
+				}
+				b_subulussalam = {
+				}
+				b_singkil = {
+				}
+				b_kutacane = {
+				}
+				b_pasie_raja = {
+				}
+				b_bambel = {
+				}
+				b_alaban = {
+				}
+			}
+			c_aceh_barat = { # 411
+				color={ 204 74 26 }
+				color2={ 255 255 255 }
+				
+				b_meulaboh = {
+				}
+				b_calang = {
+				}
+				b_baitul_makmur = {
+				}
+				b_johan_pahlawan = {
+				}
+				b_teunom = {
+				}
+				b_samatiga = {
+				}
+				b_krueng_sabee = {
+				}
+			}
+			c_nagan_raya = { # 412
+				color={ 211 76 18 }
+				color2={ 255 255 255 }
+				
+				b_suka_makmue = {
+				}
+				b_blangpidie = {
+				}
+				b_blangkejeren = {
+				}
+				b_darul_makmur = {
+				}
+				b_susoh = {
+				}
+				b_krueng_batee = {
+				}
+				b_panto_cut = {
+				}
+			}
+			c_simeulue = { # 413
+				color={ 221 78 8 }
+				color2={ 255 255 255 }
+				
+				b_sinabang = {
+				}
+				b_matanurung = {
+				}
+				b_kariya_vhapi = {
+				}
+				b_latitik = {
+				}
+				b_seuneubok = {
+				}
+				b_ujung_salang = {
+				}
+				b_angkeo = {
+				}
+			}
+		}
+		d_medan = {
+			color={ 172 59 57 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 414 province_id = 415 province_id = 416 } }
+				}
+			}
+			capital = 414 # c_medan
+			
+			c_medan = { # 414
+				color={ 162 69 52 }
+				color2={ 255 255 255 }
+				
+				b_istana_maimun = {
+				}
+				b_medan = {
+				}
+				b_masjid_raya_al_mashun = {
+				}
+				b_stabat = {
+				}
+				b_binjai = {
+				}
+				b_lubuk_pakam = {
+				}
+				b_percut_sei_tuan = {
+				}
+			}
+			c_asahan = { # 416
+				color={ 172 79 45 }
+				color2={ 255 255 255 }
+				
+				b_kisaran = {
+				}
+				b_tanjungbalai = {
+				}
+				b_air_joman = {
+				}
+				b_simpang_empat = {
+				}
+				b_pulau_rakyat = {
+				}
+				b_sei_dadap = {
+				}
+				b_aek_kuasan = {
+				}
+			}
+			c_simalungun = { # 415
+				color={ 167 74 48 }
+				color2={ 255 255 255 }
+				
+				b_raya_2 = {
+				}
+				b_pematangsiantar = {
+				}
+				b_tebing_tinggi_3 = {
+				}
+				b_sei_rampah = {
+				}
+				b_limapuluh = {
+				}
+				b_siantar = {
+				}
+				b_perbaungan = {
+				}
+			}
+		}
+		d_tapanuli = {
+			color={ 191 60 34 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 417 province_id = 418 province_id = 419 } }
+				}
+			}
+			capital = 417 # c_tapanuli
+			
+			c_tapanuli = { # 417
+				color={ 181 70 29 }
+				color2={ 255 255 255 }
+				
+				b_pandan_3 = {
+				}
+				b_sibolga = {
+				}
+				b_tarutung = {
+				}
+				b_dolok_sanggul = {
+				}
+				b_pinangsori = {
+				}
+				b_siborongborong = {
+				}
+				b_lintong_nihuta = {
+				}
+			}
+			c_karo = { # 418
+				color={ 182 69 27 }
+				color2={ 255 255 255 }
+				
+				b_kabanjahe = {
+				}
+				b_sidikalang = {
+				}
+				b_salak = {
+				}
+				b_berastagi = {
+				}
+				b_sumbul = {
+				}
+				b_kerajaan = {
+				}
+				b_tigapanah = {
+				}
+			}
+			c_nias = { # 419
+				color={ 185 65 21 }
+				color2={ 255 255 255 }
+				
+				b_gunungsitoli = {
+				}
+				b_teluk_dalam = {
+				}
+				b_lotu = {
+				}
+				b_gidoe = {
+				}
+				b_lahomi = {
+				}
+				b_lahusa = {
+				}
+				b_alasa = {
+				}
+			}
+		}
+	}
+	k_riau = {
+		color={ 107 219 55 }
+		color2={ 255 255 255 }
+		
+		capital = 420 # c_siak
+		culture = melayu
+		
+		d_siak = {
+			color={ 127 199 65 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 420 province_id = 421 province_id = 422 province_id = 423 } }
+				}
+			}
+			capital = 420 # c_siak
+			
+			c_siak = { # 420
+				color={ 137 189 70 }
+				color2={ 255 255 255 }
+				
+				b_siak_sri_indrapura = {
+				}
+				b_pekanbaru = {
+				}
+				b_an_nur = {
+				}
+				b_tualang = {
+				}
+				b_kandis = {
+				}
+				b_dayun = {
+				}
+				b_minas = {
+				}
+			}
+			c_bengkalis = { # 421
+				color={ 151 183 64 }
+				color2={ 255 255 255 }
+				
+				b_bengkalis = {
+				}
+				b_duri = {
+				}
+				b_pinggir = {
+				}
+				b_bantan = {
+				}
+				b_bukit_batu_2 = {
+				}
+				b_darul_aman = {
+				}
+				b_lubuk_muda = {
+				}
+			}
+			c_kampar = { # 423
+				color={ 145 186 67 }
+				color2={ 255 255 255 }
+				
+				b_bangkinang = {
+				}
+				b_pangkalan_baru = {
+				}
+				b_petapahan = {
+				}
+				b_senama_nenek = {
+				}
+				b_tarai_bangun = {
+				}
+				b_sekijang = {
+				}
+				b_air_tiris = {
+				}
+			}
+			c_meranti = { # 422
+				color={ 141 188 68 }
+				color2={ 255 255 255 }
+				
+				b_selat_panjang = {
+				}
+				b_kuala_merbau = {
+				}
+				b_bagan_melibur = {
+				}
+				b_alah_air = {
+				}
+				b_kundur = {
+				}
+				b_nipah_sendanu = {
+				}
+				b_rangsang = {
+				}
+			}
+		}
+		d_indragiri = {
+			color={ 119 201 67 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 430 province_id = 431 province_id = 432 province_id = 433 } }
+				}
+			}
+			capital = 430 # c_indragiri_hilir
+			
+			c_indragiri_hilir = { # 430
+				color={ 129 191 72 }
+				color2={ 255 255 255 }
+				
+				b_tembilahan = {
+				}
+				b_kuala_indragiri = {
+				}
+				b_gaung = {
+				}
+				b_mandah = {
+				}
+				b_reteh = {
+				}
+				b_sungai_batang = {
+				}
+				b_tempuling = {
+				}
+			}
+			c_indragiri_hulu = { # 431
+				color={ 127 193 74 }
+				color2={ 255 255 255 }
+				
+				b_rengat = {
+				}
+				b_air_molek = {
+				}
+				b_peranap = {
+				}
+				b_banjar_balam = {
+				}
+				b_kelayang = {
+				}
+				b_siberida = {
+				}
+				b_batang_gangsal = {
+				}
+			}
+			c_kuantan_singingi = { # 433
+				color={ 124 196 78 }
+				color2={ 255 255 255 }
+				
+				b_teluk_kuantan = {
+				}
+				b_koto_taluk = {
+				}
+				b_sukamaju = {
+				}
+				b_banjar_benai = {
+				}
+				b_sungai_besar_2 = {
+				}
+				b_muara_lembu = {
+				}
+				b_sungai_serik = {
+				}
+			}
+			c_pelalawan = { # 432
+				color={ 123 196 79 }
+				color2={ 255 255 255 }
+				
+				b_pangkalan_kerinci = {
+				}
+				b_sorek_satu = {
+				}
+				b_ukui_satu = {
+				}
+				b_pangkalan_lesung = {
+				}
+				b_langgam = {
+				}
+				b_sei_kijang = {
+				}
+				b_kerumutan = {
+				}
+			}
+		}
+		d_jambi = {
+			color={ 123 211 83 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 439 province_id = 440 province_id = 441 } }
+				}
+			}
+			capital = 439 # c_muaro_jambi
+			
+			c_muaro_jambi = { # 439
+				color={ 133 201 88 }
+				color2={ 255 255 255 }
+				
+				b_jambi = {
+				}
+				b_sengeti = {
+				}
+				b_candi_gumpung = {
+				}
+				b_muara_bulian = {
+				}
+				b_bahar = {
+				}
+				b_kota_baru = {
+				}
+				b_paalmerah = {
+				}
+			}
+			c_tanjung_jabung = { # 440
+				color={ 132 199 85 }
+				color2={ 255 255 255 }
+				
+				b_kuala_tungkal = {
+				}
+				b_muara_sabak = {
+				}
+				b_renah_mendaluh = {
+				}
+				b_berbak = {
+				}
+				b_batang_asam = {
+				}
+				b_sadu = {
+				}
+				b_nipah_panjang = {
+				}
+			}
+			c_tebo = { # 441
+				color={ 133 202 89 }
+				color2={ 255 255 255 }
+				
+				b_muara_tebo = {
+				}
+				b_wiroto_agung = {
+				}
+				b_karang_dadi = {
+				}
+				b_suka_damai = {
+				}
+				b_sungai_abang = {
+				}
+				b_balai_rajo = {
+				}
+				b_teluk_singkawang = {
+				}
+			}
+		}
+		d_kerinci = {
+			color={ 124 168 83 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 442 province_id = 443 province_id = 444 } }
+				}
+			}
+			capital = 442 # c_sungai_penuh
+			
+			c_sungai_penuh = { # 442
+				color={ 114 178 78 }
+				color2={ 255 255 255 }
+				
+				b_sungai_penuh = {
+				}
+				b_muara_bungo = {
+				}
+				b_kersik_tua = {
+				}
+				b_siulak = {
+				}
+				b_pelepat = {
+				}
+				b_rimbo = {
+				}
+				b_tanah_sepenggal = {
+				}
+			}
+			c_merangin = { # 443
+				color={ 114 179 83 }
+				color2={ 255 255 255 }
+				
+				b_bangko = {
+				}
+				b_sarolangun = {
+				}
+				b_jangkat = {
+				}
+				b_pelawan = {
+				}
+				b_pamenang = {
+				}
+				b_singkut = {
+				}
+				b_tabir = {
+				}
+			}
+			c_mukomuko = { # 444
+				color={ 119 173 64 }
+				color2={ 255 255 255 }
+				
+				b_mukomuko = {
+				}
+				b_penarik = {
+				}
+				b_ipuh = {
+				}
+				b_lubuk_pinang = {
+				}
+				b_pondok_suguh = {
+				}
+				b_air_rami = {
+				}
+				b_teramang_jaya = {
+				}
+			}
+		}
+		d_labuhanbatu = {
+			color={ 123 197 74 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 424 province_id = 425 province_id = 426 } }
+				}
+			}
+			capital = 424 # c_labuhanbatu
+			
+			c_labuhanbatu = { # 424
+				color={ 133 187 79 }
+				color2={ 255 255 255 }
+				
+				b_rantau_prapat = {
+				}
+				b_aek_kanopan = {
+				}
+				b_kota_pinang = {
+				}
+				b_bilah = {
+				}
+				b_kualuh = {
+				}
+				b_torgamba = {
+				}
+				b_panai = {
+				}
+			}
+			c_mandailing_natal = { # 426
+				color={ 130 188 72 }
+				color2={ 255 255 255 }
+				
+				b_panyabungan = {
+				}
+				b_padang_sidempuan = {
+				}
+				b_masjid_raya_al_abror = {
+				}
+				b_siabu = {
+				}
+				b_sitinjak = {
+				}
+				b_natal = {
+				}
+				b_sayur_matinggi = {
+				}
+			}
+			c_padang_lawas = { # 425
+				color={ 128 187 85 }
+				color2={ 255 255 255 }
+				
+				b_sibuhuan = {
+				}
+				b_gunung_tua = {
+				}
+				b_barumun = {
+				}
+				b_huta_raja_tinggi = {
+				}
+				b_langkimat = {
+				}
+				b_sosa = {
+				}
+				b_huristak = {
+				}
+			}
+		}
+		d_rokan = {
+			color={ 126 187 65 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 427 province_id = 428 province_id = 429 } }
+				}
+			}
+			capital = 427 # c_rokan_hilir
+			
+			c_rokan_hilir = { # 427
+				color={ 136 177 70 }
+				color2={ 255 255 255 }
+				
+				b_bagansiapiapi = {
+				}
+				b_panipahan = {
+				}
+				b_al_ikhlas = {
+				}
+				b_pulau_halang = {
+				}
+				b_bagan_batu = {
+				}
+				b_ujung_tanjung = {
+				}
+				b_tanjung_medan = {
+				}
+			}
+			c_dumai = { # 429
+				color={ 134 172 70 }
+				color2={ 255 255 255 }
+				
+				b_bagan_keladi = {
+				}
+				b_buluh_kasap = {
+				}
+				b_makeruh = {
+				}
+				b_pelintung = {
+				}
+				b_tanjung_penyembal = {
+				}
+				b_laksamana = {
+				}
+				b_titi_akar = {
+				}
+			}
+			c_rokan_hulu = { # 428
+				color={ 137 180 71 }
+				color2={ 255 255 255 }
+				
+				b_pasir_pengaraian = {
+				}
+				b_koto_tinggi = {
+				}
+				b_suka_maju = {
+				}
+				b_rambah = {
+				}
+				b_babussalam = {
+				}
+				b_menaming = {
+				}
+				b_pasir_baru = {
+				}
+			}
+		}
+		d_sumbar = {
+			color={ 123 166 77 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 434 province_id = 435 province_id = 436 province_id = 437 province_id = 438 } }
+				}
+			}
+			capital = 434 # c_padang
+			
+			c_padang = { # 434
+				color={ 113 176 72 }
+				color2={ 255 255 255 }
+				
+				b_padang = {
+				}
+				b_padang_panjang = {
+				}
+				b_masjid_muhammadan = {
+				}
+				b_batusangkar = {
+				}
+				b_sawahlunto = {
+				}
+				b_ombilin = {
+				}
+				b_sepuluh_koto = {
+				}
+			}
+			c_agam = { # 435
+				color={ 117 179 71 }
+				color2={ 255 255 255 }
+				
+				b_lubuk_basung = {
+				}
+				b_payakumbuh = {
+				}
+				b_gadang_balai_nan_duo = {
+				}
+				b_bukittinggi = {
+				}
+				b_lubuk_sikaping = {
+				}
+				b_simpang_ampek = {
+				}
+				b_sarilamak = {
+				}
+			}
+			c_mentawai = { # 438
+				color={ 118 180 71 }
+				color2={ 255 255 255 }
+				
+				b_tuapejat = {
+				}
+				b_sikakap = {
+				}
+				b_bulasat = {
+				}
+				b_sioban = {
+				}
+				b_kinikdok = {
+				}
+				b_sirilogui = {
+				}
+				b_sigapokna = {
+				}
+			}
+			c_pesisir_selatan = { # 436
+				color={ 118 179 71 }
+				color2={ 255 255 255 }
+				
+				b_painan = {
+				}
+				b_arosuka = {
+				}
+				b_pasa_kambang = {
+				}
+				b_koto_baru = {
+				}
+				b_kapuh = {
+				}
+				b_alahan_panjang = {
+				}
+				b_amping_parak = {
+				}
+			}
+			c_sijunjung = { # 437
+				color={ 115 177 72 }
+				color2={ 255 255 255 }
+				
+				b_muaro_sijunjung = {
+				}
+				b_pulau_punjung = {
+				}
+				b_padang_aro = {
+				}
+				b_silokek = {
+				}
+				b_koto_besar = {
+				}
+				b_sangir = {
+				}
+				b_sumpur_kudus = {
+				}
+			}
+		}
+	}
+}
 e_borneo = {
 	color={ 32 212 143 }
 	color2={ 255 255 20 }
