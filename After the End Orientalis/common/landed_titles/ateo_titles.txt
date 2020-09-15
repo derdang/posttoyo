@@ -20306,3 +20306,267 @@ e_dongbei = {
 		}
 	}
 }
+e_burma = {
+	color={ 56 37 36 }
+	color2={ 255 255 20 }
+	
+	capital = 830 # c_kawthoung
+	culture = thai_central
+	
+	k_bago = {
+		color={ 46 47 31 }
+		color2={ 255 255 255 }
+		
+		capital = 830 # c_kawthoung
+		culture = thai_central
+		
+		c_kawkereik = { # 835
+			color={ 117 171 124 }
+			color2={ 255 255 255 }
+			
+			b_kawkareik = {
+			}
+			b_kyainseikgyi = {
+			}
+			b_kyondoe = {
+			}
+			b_payathonzu = {
+			}
+			b_kyaikdon = {
+			}
+			b_huthi = {
+			}
+			b_khale = {
+			}
+		}
+		c_mawlamyine = { # 833
+			color={ 210 255 180 }
+			color2={ 255 255 255 }
+			
+			b_moulmein = {
+			}
+			b_kyaikthanlan = {
+			}
+			b_martaban = {
+			}
+			b_muhdeung = {
+			}
+			b_tyaiparo = {
+			}
+			b_takau_khamiung = {
+			}
+			b_rew = {
+			}
+		}
+		d_tenasserim = {
+			color={ 26 67 21 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 830 province_id = 831 province_id = 832 } }
+				}
+			}
+			capital = 830 # c_kawthoung
+			
+			c_kawthoung = { # 830
+				color={ 16 77 16 }
+				color2={ 255 255 255 }
+				
+				b_kawthoung = {
+				}
+				b_pyi_taw_ei = {
+				}
+				b_nangin = {
+				}
+				b_karathuri = {
+				}
+				b_hangapru = {
+				}
+				b_bokpyin = {
+				}
+				b_kahamaukgyi = {
+				}
+			}
+			c_dawei = { # 832
+				color={ 0 116 0 }
+				color2={ 255 255 255 }
+				
+				b_sargara = {
+				}
+				b_shwe_taung_sar = {
+				}
+				b_matamyu = {
+				}
+				b_yebyu = {
+				}
+				b_thatyetchuang = {
+				}
+				b_pyinbugyi = {
+				}
+				b_launglon = {
+				}
+			}
+			c_myiek = { # 831
+				color={ 61 114 61 }
+				color2={ 255 255 255 }
+				
+				b_myeik = {
+				}
+				b_hta_we_su = {
+				}
+				b_thin_taw_ci = {
+				}
+				b_kyunsu = {
+				}
+				b_palaw = {
+				}
+				b_thaninthayi = {
+				}
+				b_palauk = {
+				}
+			}
+		}
+		d_hpa_an = {
+			color={ 107 181 119 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 835 province_id = 836 province_id = 837 province_id = 838 } }
+				}
+			}
+			capital = 835 # c_kawkereik
+			
+			c_kawkereik = { # 835
+				color={ 117 171 124 }
+				color2={ 255 255 255 }
+				
+				b_kawkareik = {
+				}
+				b_kyainseikgyi = {
+				}
+				b_kyondoe = {
+				}
+				b_payathonzu = {
+				}
+				b_kyaikdon = {
+				}
+				b_huthi = {
+				}
+				b_khale = {
+				}
+			}
+			c_hpa_an = { # 836
+				color={ 105 159 112 }
+				color2={ 255 255 255 }
+				
+				b_hpa_an = {
+				}
+				b_kyauk_ka_lat = {
+				}
+				b_myaing_ka_lay = {
+				}
+				b_halingbwe = {
+				}
+				b_thanduanggyi = {
+				}
+				b_kyondoe_2 = {
+				}
+				b_eindu = {
+				}
+			}
+			c_hpapun = { # 838
+				color={ 105 159 112 }
+				color2={ 255 255 255 }
+				
+				b_hpapun = {
+				}
+				b_kamamaung = {
+				}
+				b_payale = {
+				}
+				b_kuzeik = {
+				}
+				b_paohta = {
+				}
+				b_kyawdehta = {
+				}
+				b_okkpho = {
+				}
+			}
+			c_myawaddy = { # 837
+				color={ 110 174 119 }
+				color2={ 255 255 255 }
+				
+				b_myawaddy = {
+				}
+				b_mepale = {
+				}
+				b_khweshan = {
+				}
+				b_thingannyinaung = {
+				}
+				b_su_ka_li = {
+				}
+				b_waw_lay = {
+				}
+				b_swe_koke_ko = {
+				}
+			}
+		}
+		d_thanton = {
+			color={ 200 9 175 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 833 province_id = 834 } }
+				}
+			}
+			capital = 833 # c_mawlamyine
+			
+			c_mawlamyine = { # 833
+				color={ 210 255 180 }
+				color2={ 255 255 255 }
+				
+				b_moulmein = {
+				}
+				b_kyaikthanlan = {
+				}
+				b_martaban = {
+				}
+				b_muhdeung = {
+				}
+				b_tyaiparo = {
+				}
+				b_takau_khamiung = {
+				}
+				b_rew = {
+				}
+			}
+			c_thanton = { # 834
+				color={ 170 222 136 }
+				color2={ 255 255 255 }
+				
+				b_thanton = {
+				}
+				b_kyaikhtisaung = {
+				}
+				b_tyaisiyo = {
+				}
+				b_bilen = {
+				}
+				b_pang = {
+				}
+				b_zinkyaik = {
+				}
+				b_kataik = {
+				}
+			}
+		}
+	}
+}
