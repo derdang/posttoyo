@@ -1411,3 +1411,53 @@ japonic = {
 	}
 }
 #Old World Cultist
+oldworld = {
+	has_coa_on_barony_only = yes
+	graphical_culture = muslimgfx
+	crusade_cb = crusade
+	playable = yes
+	hostile_within_group = yes
+	
+	ai_convert_same_group = 2
+	ai_convert_other_group = 1
+	
+	color = { 0.1 0.7 0.1 }
+	
+	interface_skin = { pagan_interface }
+
+	atomicist = { #temporary
+		graphical_culture = muslimgfx
+		
+		icon = 11
+		
+		color = { 0.3 0.3 0.8 }
+
+		crusade_name = INTERVENTION
+		scripture_name = THE_LEGENDS
+		priest_title = MISSLE
+		piety_name = STAR_POWER
+		
+		high_god_name = GOD_THE_ETERNAL_SUN
+		
+		god_names = {
+			GOD_TSAR_BOMBA GOD_HWASONG GOD_PUKKUKSONG GOD_CHANG_FENG GOD_THE_ATOMIC_SPIRITS
+		}
+		evil_god_names = {
+			CAPITALISM IMPERIALISM
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+}
