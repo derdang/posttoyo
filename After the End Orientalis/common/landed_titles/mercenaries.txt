@@ -208,3 +208,29 @@ d_golden_star_dragons = {
 	
 	mercenary_type = d_golden_star_dragons_composition
 }
+
+d_knights_of_lavang = {
+	color={ 80 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 161 # Huê
+
+	culture = annamese
+	
+	allow = {
+		culture_group = viet
+		religion = catholic
+	}
+		
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
