@@ -1,0 +1,51 @@
+song = {
+	name = "crusaderkings2_maintitle.ogg"
+	song_name = "Bamboo Garden Love Song (Bamboo flute) NCM version"
+	chance = {
+		factor = 1	
+	}
+}
+
+song = {
+	name = "exotic_plains.ogg"
+	song_name = "Exotic Plains"
+	chance = {
+		factor = 1	
+	}
+}
+
+song = {
+	name = "matter_of_perspective.ogg"
+	song_name = "Matter of Perspective"
+	chance = {
+		factor = 1	
+	}
+}
+
+song = {
+	name = "viet_court.ogg"
+	song_name = "Tung Quan and Dang Dan Cung"
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1
+			NOR = {
+				culture_group = viet
+			}
+		}
+	}
+}
+
+song = {
+	name = "lawiswis_kawayan.ogg"
+	song_name = "Lawiswis Kawayan"
+	chance = {
+		factor = 2
+		modifier = {
+			factor = 1
+			NOR = {
+				culture_group = philippine
+			}
+		}
+	}
+}
