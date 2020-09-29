@@ -10643,8 +10643,6 @@ e_siam = {
 				}
 				b_suan_phueng = {
 				}
-				b_lejre = {
-				}
 			}
 			c_kanchanaburi = { # 743
 				color={ 183 179 135 }
@@ -10752,6 +10750,218 @@ e_siam = {
 				b_noen_kham = {
 				}
 				b_sapphaya = {
+				}
+			}
+		}
+	}
+	k_burapha = {
+		color={ 87 224 133 }
+		color2={ 255 255 255 }
+		
+		capital = 755 # c_chachoengsao
+		culture = thai_central
+		
+		d_chachoengsao = {
+			color={ 107 204 143 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 755 } }
+				}
+			}
+			capital = 755 # c_chachoengsao
+			
+			c_chachoengsao = { # 755
+				color={ 117 194 148 }
+				color2={ 255 255 255 }
+				
+				b_chachoengsao = {
+				}
+				b_khlong_khuean = {
+				}
+				b_bang_nam_priao = {
+				}
+				b_bang_pakong = {
+				}
+				b_ban_pho = {
+				}
+				b_pak_nam_ccs = {
+				}
+				b_tha_khai = {
+				}
+			}
+		}
+		d_chantraburi = {
+			color={ 94 233 168 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 759 province_id = 760 } }
+				}
+			}
+			capital = 759 # c_chanthaburi
+			
+			c_chanthaburi = { # 759
+				color={ 104 223 173 }
+				color2={ 255 255 255 }
+				
+				b_chanthaburi = {
+				}
+				b_khlung = {
+				}
+				b_tha_mai = {
+				}
+				b_pong_nam_ron = {
+				}
+				b_makham = {
+				}
+				b_laem_sing = {
+				}
+				b_soi_dao = {
+				}
+			}
+			c_trat = { # 760
+				color={ 96 193 152 }
+				color2={ 255 255 255 }
+				
+				b_trat = {
+				}
+				b_khlong_yai = {
+				}
+				b_khao_saming = {
+				}
+				b_bo_rai = {
+				}
+				b_laem_ngop = {
+				}
+				b_ko_kut = {
+				}
+				b_ko_chang = {
+				}
+			}
+		}
+		d_chonburi = {
+			color={ 120 236 181 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 756 province_id = 757 province_id = 758 } }
+				}
+			}
+			capital = 756 # c_pattaya
+			
+			c_pattaya = { # 756
+				color={ 130 226 186 }
+				color2={ 255 255 255 }
+				
+				b_pattaya = {
+				}
+				b_nong_prue = {
+				}
+				b_jomtien = {
+				}
+				b_pratamnak = {
+				}
+				b_na_kluea = {
+				}
+				b_ko_lan = {
+				}
+				b_ko_phai = {
+				}
+			}
+			c_chonburi = { # 757
+				color={ 108 210 167 }
+				color2={ 255 255 255 }
+				
+				b_chonburi = {
+				}
+				b_si_racha = {
+				}
+				b_phanat_nikhom = {
+				}
+				b_sattahip = {
+				}
+				b_ban_bueng = {
+				}
+				b_bo_thong = {
+				}
+				b_nong_yai = {
+				}
+			}
+			c_rayong = { # 758
+				color={ 83 197 149 }
+				color2={ 255 255 255 }
+				
+				b_rayong = {
+				}
+				b_ban_chang = {
+				}
+				b_klaeng = {
+				}
+				b_wang_chan = {
+				}
+				b_ban_khai = {
+				}
+				b_pluak_daeng = {
+				}
+				b_khao_chamao = {
+				}
+			}
+		}
+		d_prachinburi = {
+			color={ 78 198 141 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 761 province_id = 762 } }
+				}
+			}
+			capital = 761 # c_prachinburi
+			
+			c_prachinburi = { # 761
+				color={ 88 188 146 }
+				color2={ 255 255 255 }
+				
+				b_prachinburi = {
+				}
+				b_kabin_buri = {
+				}
+				b_na_di = {
+				}
+				b_ban_sang = {
+				}
+				b_prachantakham = {
+				}
+				b_si_maha_phot = {
+				}
+				b_si_mahosot = {
+				}
+			}
+			c_sa_kaeo = { # 762
+				color={ 89 183 144 }
+				color2={ 255 255 255 }
+				
+				b_sa_kaeo = {
+				}
+				b_aranyaprathet = {
+				}
+				b_watthana_nakhon = {
+				}
+				b_wang_nam_yen = {
+				}
+				b_khao_chakan = {
+				}
+				b_khok_sung = {
+				}
+				b_wang_sombun = {
 				}
 			}
 		}
@@ -11067,8 +11277,6 @@ e_siam = {
 				}
 				b_na_kae = {
 				}
-				b_laeckoe = {
-				}
 			}
 			c_nong_khai = { # 788
 				color={ 222 171 125 }
@@ -11325,8 +11533,6 @@ e_siam = {
 				}
 				b_wang_chin = {
 				}
-				b_reinosa = {
-				}
 			}
 			c_uttaradit = { # 808
 				color={ 162 80 173 }
@@ -11471,7 +11677,7 @@ e_siam = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 766 province_id = 767 province_id = 769 province_id = 771 province_id = 772 } }
+					any_demesne_province = { OR = { province_id = 766 province_id = 767 province_id = 769 province_id = 771 } }
 				}
 			}
 			capital = 766 # c_nakhon_sri_thammarat
@@ -11533,25 +11739,6 @@ e_siam = {
 				b_si_banphot = {
 				}
 			}
-			c_songkhla = { # 772
-				color={ 89 119 173 }
-				color2={ 255 255 255 }
-				
-				b_songkhla = {
-				}
-				b_hat_yai = {
-				}
-				b_sadao = {
-				}
-				b_sathing_phra = {
-				}
-				b_thepha = {
-				}
-				b_chana = {
-				}
-				b_saba_yoi = {
-				}
-			}
 			c_trang = { # 771
 				color={ 98 188 197 }
 				color2={ 255 255 255 }
@@ -11573,34 +11760,34 @@ e_siam = {
 			}
 		}
 		d_pattani = {
-			color={ 88 139 179 }
+			color={ 99 109 178 }
 			color2={ 255 255 255 }
 			
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 773 province_id = 774 province_id = 775 province_id = 776 } }
+					any_demesne_province = { OR = { province_id = 772 province_id = 773 province_id = 774 province_id = 775 province_id = 776 } }
 				}
 			}
-			capital = 773 # c_pattani
+			capital = 772 # c_songkhla
 			
-			c_pattani = { # 773
-				color={ 98 129 184 }
+			c_songkhla = { # 772
+				color={ 89 119 173 }
 				color2={ 255 255 255 }
 				
-				b_pattani = {
+				b_songkhla = {
 				}
-				b_khok_pho = {
+				b_hat_yai = {
 				}
-				b_nong_chik = {
+				b_sadao = {
 				}
-				b_panare = {
+				b_sathing_phra = {
 				}
-				b_mayo = {
+				b_thepha = {
 				}
-				b_thung_yang_daeng = {
+				b_chana = {
 				}
-				b_sai_buri = {
+				b_saba_yoi = {
 				}
 			}
 			c_narathiwat = { # 775
@@ -11620,6 +11807,25 @@ e_siam = {
 				b_ra_ngae = {
 				}
 				b_rueso = {
+				}
+			}
+			c_pattani = { # 773
+				color={ 98 129 184 }
+				color2={ 255 255 255 }
+				
+				b_pattani = {
+				}
+				b_khok_pho = {
+				}
+				b_nong_chik = {
+				}
+				b_panare = {
+				}
+				b_mayo = {
+				}
+				b_thung_yang_daeng = {
+				}
+				b_sai_buri = {
 				}
 			}
 			c_satun = { # 776
@@ -11793,218 +11999,6 @@ e_siam = {
 				b_phrom_phiram = {
 				}
 				b_noen_maprang = {
-				}
-			}
-		}
-	}
-	k_burapha = {
-		color={ 87 224 133 }
-		color2={ 255 255 255 }
-		
-		capital = 755 # c_chachoengsao
-		culture = thai_central
-		
-		d_chachoengsao = {
-			color={ 107 204 143 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 755 } }
-				}
-			}
-			capital = 755 # c_chachoengsao
-			
-			c_chachoengsao = { # 755
-				color={ 117 194 148 }
-				color2={ 255 255 255 }
-				
-				b_chachoengsao = {
-				}
-				b_khlong_khuean = {
-				}
-				b_bang_nam_priao = {
-				}
-				b_bang_pakong = {
-				}
-				b_ban_pho = {
-				}
-				b_pak_nam_ccs = {
-				}
-				b_tha_khai = {
-				}
-			}
-		}
-		d_chantraburi = {
-			color={ 94 233 168 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 759 province_id = 760 } }
-				}
-			}
-			capital = 759 # c_chanthaburi
-			
-			c_chanthaburi = { # 759
-				color={ 104 223 173 }
-				color2={ 255 255 255 }
-				
-				b_chanthaburi = {
-				}
-				b_khlung = {
-				}
-				b_tha_mai = {
-				}
-				b_pong_nam_ron = {
-				}
-				b_makham = {
-				}
-				b_laem_sing = {
-				}
-				b_soi_dao = {
-				}
-			}
-			c_trat = { # 760
-				color={ 96 193 152 }
-				color2={ 255 255 255 }
-				
-				b_trat = {
-				}
-				b_khlong_yai = {
-				}
-				b_khao_saming = {
-				}
-				b_bo_rai = {
-				}
-				b_laem_ngop = {
-				}
-				b_ko_kut = {
-				}
-				b_ko_chang = {
-				}
-			}
-		}
-		d_chonburi = {
-			color={ 120 236 181 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 756 province_id = 757 province_id = 758 } }
-				}
-			}
-			capital = 756 # c_pattaya
-			
-			c_pattaya = { # 756
-				color={ 130 226 186 }
-				color2={ 255 255 255 }
-				
-				b_pattaya = {
-				}
-				b_nong_prue = {
-				}
-				b_jomtien = {
-				}
-				b_pratamnak = {
-				}
-				b_na_kluea = {
-				}
-				b_ko_lan = {
-				}
-				b_ko_phai = {
-				}
-			}
-			c_chonburi = { # 757
-				color={ 108 210 167 }
-				color2={ 255 255 255 }
-				
-				b_chonburi = {
-				}
-				b_si_racha = {
-				}
-				b_phanat_nikhom = {
-				}
-				b_sattahip = {
-				}
-				b_ban_bueng = {
-				}
-				b_bo_thong = {
-				}
-				b_nong_yai = {
-				}
-			}
-			c_rayong = { # 758
-				color={ 83 197 149 }
-				color2={ 255 255 255 }
-				
-				b_rayong = {
-				}
-				b_ban_chang = {
-				}
-				b_klaeng = {
-				}
-				b_wang_chan = {
-				}
-				b_ban_khai = {
-				}
-				b_pluak_daeng = {
-				}
-				b_khao_chamao = {
-				}
-			}
-		}
-		d_prachinburi = {
-			color={ 78 198 141 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 761 province_id = 762 } }
-				}
-			}
-			capital = 761 # c_prachinburi
-			
-			c_prachinburi = { # 761
-				color={ 88 188 146 }
-				color2={ 255 255 255 }
-				
-				b_prachinburi = {
-				}
-				b_kabin_buri = {
-				}
-				b_na_di = {
-				}
-				b_ban_sang = {
-				}
-				b_prachantakham = {
-				}
-				b_si_maha_phot = {
-				}
-				b_si_mahosot = {
-				}
-			}
-			c_sa_kaeo = { # 762
-				color={ 89 183 144 }
-				color2={ 255 255 255 }
-				
-				b_sa_kaeo = {
-				}
-				b_aranyaprathet = {
-				}
-				b_watthana_nakhon = {
-				}
-				b_wang_nam_yen = {
-				}
-				b_khao_chakan = {
-				}
-				b_khok_sung = {
-				}
-				b_wang_sombun = {
 				}
 			}
 		}
@@ -17609,14 +17603,14 @@ e_new_russia = {
 		}
 	}
 }
-e_new_guinea = {
+e_papua = {
 	color={ 196 97 100 }
 	color2={ 255 255 20 }
 	
 	capital = 631 # c_massim_islands
 	culture = massim
 	
-	k_east_new_guinea = {
+	k_new_guinea = {
 		color={ 186 107 95 }
 		color2={ 255 255 255 }
 		
@@ -18355,7 +18349,7 @@ e_new_guinea = {
 			}
 		}
 	}
-	k_west_new_guinea = {
+	k_west_papua = {
 		color={ 169 89 109 }
 		color2={ 255 255 255 }
 		
