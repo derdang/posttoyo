@@ -1,0 +1,85 @@
+
+#2310 - Central Thai
+#	- 23102xx - Characters in d_ayutthaya and Lopburi
+#	- 23104xx - Characters in de jure Duchy/Kingdom of Sukhothai
+#	- 23107xx - Characters in East Thailand
+#	- 23109xx - Characters in Pattaya MR.
+#2311/2312 - Isan / North  
+#
+#
+#2313 - South Thai (Currently share culture with central Thai)
+#   - 23131xx - d_Surat
+#	- 23132xx - d_nakhon_sri_thammarat
+#	- 23133xx - Songkhla & Phuket
+#	- 23135xx - d_Pattani
+####
+2310001 ={
+	name="Prajao Hao"
+	dynasty=2310004 #Galaxy
+	culture=thai_central
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=martial_cleric
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=stubborn
+	2560.10.1={birth=yes}
+}
+2310930 ={ # Well, Russian to-be patrician in Pattaya.
+	name="Yuriy"
+	dynasty=2310002 #Galaxy
+	culture=pri
+	religion=orthodox
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=tough_warrior
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=wroth
+	2570.10.1={birth=yes}
+}
+
+2313100 ={ # d_Surat
+	name="Bandon"
+	dynasty=2310004 #Galaxy
+	culture=thai_central
+	religion=orthodox
+	martial=4
+	diplomacy=5
+	stewardship=6
+	intrigue=4
+	learning=4
+	trait=tough_warrior
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=wroth
+	2580.10.1={birth=yes}
+}
+
+2313200 ={ # d_nakhon_sri_thammarat
+	name="Si Prat"
+	dynasty=2310006 #Galaxy
+	culture=thai_central
+	religion=dharmayuttika
+	martial=3
+	diplomacy=7
+	stewardship=4
+	intrigue=6
+	learning=7
+	trait=grey_eminence
+	trait=poet
+	trait=shrewd
+	trait=diligent
+	trait=lustful
+	2585.10.1={birth=yes}
+}
