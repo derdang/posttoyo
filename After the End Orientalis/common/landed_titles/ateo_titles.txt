@@ -19879,7 +19879,7 @@ e_burma = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 835 province_id = 836 province_id = 837 province_id = 838 } }
+					any_demesne_province = { OR = { province_id = 835 province_id = 836 province_id = 837 province_id = 838 province_id = 839 } }
 				}
 			}
 			capital = 835 # c_kawkereik
@@ -19923,7 +19923,7 @@ e_burma = {
 				}
 			}
 			c_hpapun = { # 838
-				color={ 105 159 112 }
+				color={ 117 164 124 }
 				color2={ 255 255 255 }
 				
 				b_hpapun = {
@@ -19958,6 +19958,25 @@ e_burma = {
 				b_waw_lay = {
 				}
 				b_swe_koke_ko = {
+				}
+			}
+			c_thandaunggyi = { # 839
+				color={ 113 159 120 }
+				color2={ 255 255 255 }
+				
+				b_thandawngyi = {
+				}
+				b_thandaung = {
+				}
+				b_leik_tho = {
+				}
+				b_kalamuchi = {
+				}
+				b_pawe_doka = {
+				}
+				b_kaleko_atet = {
+				}
+				b_demoso = {
 				}
 			}
 		}

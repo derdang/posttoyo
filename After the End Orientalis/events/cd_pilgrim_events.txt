@@ -39,6 +39,9 @@ narrative_event = {
 	picture = GFX_evt_pilgrims_epic_journey
 
 	is_triggered_only = yes
+	weight_multiplier = {
+		days = 2
+	}
 
 	option = {
 		name = EVTOPT_cd_pilgrim_prep_cancel
