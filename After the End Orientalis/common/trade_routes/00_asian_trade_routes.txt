@@ -139,8 +139,11 @@ royal_thai_road_trade = { #Thai Railways
 	wealth = 100			# Total base wealth of Imperial Thai Road (Thang Luang)
 	trade_post_display_trigger = {
 		OR = {
+			province_id = 746 #Ayutthaya
 			province_id = 763 #Chumphon
 			province_id = 772 #Songkhla
+			province_id = 777 #Korat
+			province_id = 799 #Chiang Mai
 		}
 	}
 
@@ -157,20 +160,36 @@ royal_thai_road_trade = { #Thai Railways
 
 	start = {				# Start provinces of trade route
 		739 #Phra Nakhon (Bangkok)
+		746 #Ayutthaya
 	}
 
-	path = {	#Phra Nakhon (Bangkok) to Songkhla (Southern Railway)
-		739 740 741 742 744 763 764 766 771 767 772
-	}
-	path = {	#Songkhla to Butterworth (International Express Railway to Malaysia)
-		772 371 370 367 368 364
+	path = {	#Phra Nakhon (Bangkok) to Songkhla (Southern Railway) - International Line to Butterworth, Malaysia
+		739 740 741 742 744 763 764 766 771 767 772 371 370 367 368 364
 	}
 	path = {	#Phra Nakhon (Bangkok) to Chonburi (Eastern Railway)
-		739 755 757
+		739 755 757 756 758
 	}
-	path = {	#Chonburi to Rayong (Eastern Railway)
-		757 756 758
+	path = {	#Chachoengsao - Sa Kaeo - Cambodia border (Could enter Banteay Meanchey)
+		755 762 331
 	}
+	path = {	#Phra Nakhon (Bangkok) to Phachi Junction (Ayutthaya)
+		739 748 746
+	}
+	path = {	#Ayutthaya to Korat (Northeast Railway)
+		746 752 777
+	}
+	path = {	#Korat to Ubon (Northeast Railway - Southern Line)
+		777 778 779 780 781
+	}
+	path = {	#Korat to Udon Thani (Northeast Railway - Northern Line) - Nkh.Vientiane
+		777 782 787 788 294
+	}
+	path = {	#Ayutthaya to Chiang Mai (Northern Railway) - Nkh.Vientiane
+		746 751 794 796 798 808 806 803 804 799
+	}
+	#path = {	#Uttaradit to Sukhothai (Northern Railway) - Nkh.Vientiane
+	#	808 793 #idk why it is like this. Can be uncommented if we really wanted better Sukhothai county.
+	#}
 }
 tokaido_trade = {
 	wealth = 100			# Total base wealth of Tokaido (Eastern) route
