@@ -3219,25 +3219,11 @@ e_mekong = {
 	
 	laotian = "Lan Xang"
 	khmer = "Kampuchea"
+	#Move the decisions to form the respective Empires as Part of the Decision Tab "Form Kampuchea"/"Form Lan Xang" Respectively
 	
 	allow = {
-	OR = {
-		AND = {
-			culture_group = lowland_austroasiatic
-			completely_controls = k_kampuchea
-			completely_controls = k_gia_dhinh
-			primary_title = { higher_tier_than = DUKE }
-		}
-		OR = { 
-			AND = {
-				culture = laotian
-				completely_controls = k_lan_xang
-				completely_controls = k_kampuchea
-				primary_title = { higher_tier_than = DUKE }
-			}
-		}
+		always = no
 	}
-}
 	
 	k_lan_xang = {
 		color={ 190 149 180 }
