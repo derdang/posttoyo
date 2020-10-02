@@ -623,6 +623,78 @@ pagan_group = {
 		religious_clothing_head = 14
 		religious_clothing_priest = 10
 	}
+	americanist = { #temporary
+		graphical_culture = muslimgfx
+		
+		icon = 44
+		heresy_icon = 44
+		
+		color = { 0 0 255 }
+
+		crusade_name = INTERVENTION
+		scripture_name = THE_LAW
+		priest_title = CAPTAINS
+		piety_name = PATRIOTISM
+		
+		high_god_name = GOD_PROVIDENCE
+		
+		god_names = {
+			GOD_YUSEEN GOD_MACARTHUR GOD_ROOSEVELT GOD_RANGER_JONES GOD_SHANNON
+		}
+		evil_god_names = {
+			COMMUNISM THE_DYING_SUN THE_CROOKED_EAGLE THE_SLUMBERING_LION
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	americanist_reformed = { #temporary
+		graphical_culture = muslimgfx
+		
+		icon = 44
+		heresy_icon = 44
+		
+		color = { 0 0 255 }
+
+		crusade_name = INTERVENTION
+		scripture_name = THE_LEGENDS
+		priest_title = CAPTAINS
+		piety_name = PATRIOTISM
+		
+		high_god_name = GOD_PROVIDENCE
+		
+		god_names = {
+			GOD_YUSEEN GOD_MACARTHUR GOD_ROOSEVELT GOD_RANGER_JONES GOD_SHANNON
+		}
+		evil_god_names = {
+			COMMUNISM THE_DYING_SUN THE_CROOKED_EAGLE THE_SLUMBERING_LION
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
 }
 
 

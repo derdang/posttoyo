@@ -20134,3 +20134,524 @@ e_burma = {
 		}
 	}
 }
+e_day_begins = {
+	color={ 40 1 143 }
+	color2={ 255 255 20 }
+	
+	capital = 853 # c_guam
+	culture = marianan
+	
+	k_mariana = {
+		color={ 30 11 138 }
+		color2={ 255 255 255 }
+		
+		capital = 853 # c_guam
+		culture = marianan
+		
+		c_guam = { # 853
+			color={ 0 41 123 }
+			color2={ 255 255 255 }
+			
+			b_hagatna = {
+			}
+			b_tamuning = {
+			}
+			b_sinajana = {
+			}
+			b_chalan_pago_ordot = {
+			}
+			b_agat = {
+			}
+			b_mangilao = {
+			}
+			b_barrigada = {
+			}
+		}
+		c_northern_mariana = { # 854
+			color={ 0 113 188 }
+			color2={ 255 255 255 }
+			
+			b_saipan = {
+			}
+			b_tiinian = {
+			}
+			b_rota = {
+			}
+			b_alamagan = {
+			}
+			b_sarigan = {
+			}
+			b_anatahan = {
+			}
+			b_agrihan = {
+			}
+		}
+		d_guam = {
+			color={ 10 31 128 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 853 } }
+				}
+			}
+			capital = 853 # c_guam
+			
+			c_guam = { # 853
+				color={ 0 41 123 }
+				color2={ 255 255 255 }
+				
+				b_hagatna = {
+				}
+				b_tamuning = {
+				}
+				b_sinajana = {
+				}
+				b_chalan_pago_ordot = {
+				}
+				b_agat = {
+				}
+				b_mangilao = {
+				}
+				b_barrigada = {
+				}
+			}
+		}
+		d_mariana = {
+			color={ 10 103 193 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 854 } }
+				}
+			}
+			capital = 854 # c_northern_mariana
+			
+			c_northern_mariana = { # 854
+				color={ 0 113 188 }
+				color2={ 255 255 255 }
+				
+				b_saipan = {
+				}
+				b_tiinian = {
+				}
+				b_rota = {
+				}
+				b_alamagan = {
+				}
+				b_sarigan = {
+				}
+				b_anatahan = {
+				}
+				b_agrihan = {
+				}
+			}
+		}
+	}
+	k_west_caroline = {
+		color={ 42 24 154 }
+		color2={ 255 255 255 }
+		
+		capital = 855 # c_palau
+		culture = palauan
+		
+		c_palau = { # 855
+			color={ 12 54 139 }
+			color2={ 255 255 255 }
+			
+			b_lgerlumud = {
+			}
+			b_koror = {
+			}
+			b_airai = {
+			}
+			b_peleliu = {
+			}
+			b_ngaraard = {
+			}
+			b_aimelik = {
+			}
+			b_ngaremlengui = {
+			}
+		}
+		c_yap_state = { # 856
+			color={ 16 55 133 }
+			color2={ 255 255 255 }
+			
+			b_colonia = {
+			}
+			b_gagil_tamil = {
+			}
+			b_maap = {
+			}
+			b_gilmaan = {
+			}
+			b_fanif = {
+			}
+			b_dalipebenau = {
+			}
+			b_rull = {
+			}
+		}
+		d_palau = {
+			color={ 22 44 144 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 855 } }
+				}
+			}
+			capital = 855 # c_palau
+			
+			c_palau = { # 855
+				color={ 12 54 139 }
+				color2={ 255 255 255 }
+				
+				b_lgerlumud = {
+				}
+				b_koror = {
+				}
+				b_airai = {
+				}
+				b_peleliu = {
+				}
+				b_ngaraard = {
+				}
+				b_aimelik = {
+				}
+				b_ngaremlengui = {
+				}
+			}
+		}
+		d_yap = {
+			color={ 26 45 138 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 856 } }
+				}
+			}
+			capital = 856 # c_yap_state
+			
+			c_yap_state = { # 856
+				color={ 16 55 133 }
+				color2={ 255 255 255 }
+				
+				b_colonia = {
+				}
+				b_gagil_tamil = {
+				}
+				b_maap = {
+				}
+				b_gilmaan = {
+				}
+				b_fanif = {
+				}
+				b_dalipebenau = {
+				}
+				b_rull = {
+				}
+			}
+		}
+	}
+}
+e_maha_andaman = {
+	color={ 215 133 41 }
+	color2={ 255 255 20 }
+	
+	capital = 857 # c_south_andaman
+	culture = andaman
+	
+	k_andaman_nicobar = {
+		color={ 225 123 46 }
+		color2={ 255 255 255 }
+		
+		capital = 857 # c_south_andaman
+		culture = andaman
+		
+		c_south_andaman = { # 857
+			color={ 255 93 61 }
+			color2={ 255 255 255 }
+			so=andaman
+			
+			b_port_blair = {
+			}
+			b_ferrangunj = {
+			}
+			b_herbertabad = {
+			}
+			b_wimberleyganj = {
+			}
+			b_birchganj = {
+			}
+			b_labyrinth = {
+			}
+			b_north_sentinel = {
+			}
+		}
+		c_havelock_island = { # 861
+			color={ 224 100 76 }
+			color2={ 255 255 255 }
+			havelock=island
+			
+			b_havelock = {
+			}
+			b_govinda_nagar = {
+			}
+			b_vejoy_nagar = {
+			}
+			b_shyam_nagar = {
+			}
+			b_krishna_nagar = {
+			}
+			b_radha_nagar = {
+			}
+			b_swaraj = {
+			}
+		}
+		c_little_andaman = { # 860
+			color={ 232 93 28 }
+			color2={ 255 255 255 }
+			little=andaman
+			
+			b_pallalankwe = {
+			}
+			b_chetamale = {
+			}
+			b_north_brother = {
+			}
+			b_south_brother = {
+			}
+			b_hut_bay = {
+			}
+			b_sisters_island = {
+			}
+			b_south_sentinel = {
+			}
+		}
+		c_middle_andaman = { # 859
+			color={ 255 110 81 }
+			color2={ 255 255 255 }
+			mid=andaman
+			
+			b_betapur = {
+			}
+			b_sabri = {
+			}
+			b_katara = {
+			}
+			b_elpihnstone = {
+			}
+			b_elphinstone = {
+			}
+			b_spike_island = {
+			}
+			b_flat_island = {
+			}
+		}
+		c_nicobar = { # 862
+			color={ 229 107 82 }
+			color2={ 255 255 255 }
+			
+			b_great_nicobar = {
+			}
+			b_car_nicobar = {
+			}
+			b_nancowry = {
+			}
+			b_afra_bay = {
+			}
+			b_little_nicobar = {
+			}
+			b_pulo_milo = {
+			}
+			b_man_island = {
+			}
+		}
+		c_north_andaman = { # 858
+			color={ 255 89 56 }
+			color2={ 255 255 255 }
+			nor=andaman
+			
+			b_mayablunder = {
+			}
+			b_digipur = {
+			}
+			b_haringadar = {
+			}
+			b_shibpur = {
+			}
+			b_aves_island = {
+			}
+			b_ram_nagar = {
+			}
+			b_ross_island = {
+			}
+		}
+		d_south_andaman = {
+			color={ 245 103 56 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 857 province_id = 860 province_id = 861 } }
+				}
+			}
+			capital = 857 # c_south_andaman
+			
+			c_south_andaman = { # 857
+				color={ 255 93 61 }
+				color2={ 255 255 255 }
+				so=andaman
+				
+				b_port_blair = {
+				}
+				b_ferrangunj = {
+				}
+				b_herbertabad = {
+				}
+				b_wimberleyganj = {
+				}
+				b_birchganj = {
+				}
+				b_labyrinth = {
+				}
+				b_north_sentinel = {
+				}
+			}
+			c_havelock_island = { # 861
+				color={ 224 100 76 }
+				color2={ 255 255 255 }
+				havelock=island
+				
+				b_havelock = {
+				}
+				b_govinda_nagar = {
+				}
+				b_vejoy_nagar = {
+				}
+				b_shyam_nagar = {
+				}
+				b_krishna_nagar = {
+				}
+				b_radha_nagar = {
+				}
+				b_swaraj = {
+				}
+			}
+			c_little_andaman = { # 860
+				color={ 232 93 28 }
+				color2={ 255 255 255 }
+				little=andaman
+				
+				b_pallalankwe = {
+				}
+				b_chetamale = {
+				}
+				b_north_brother = {
+				}
+				b_south_brother = {
+				}
+				b_hut_bay = {
+				}
+				b_sisters_island = {
+				}
+				b_south_sentinel = {
+				}
+			}
+		}
+		d_nicobar = {
+			color={ 219 117 77 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 862 } }
+				}
+			}
+			capital = 862 # c_nicobar
+			
+			c_nicobar = { # 862
+				color={ 229 107 82 }
+				color2={ 255 255 255 }
+				
+				b_great_nicobar = {
+				}
+				b_car_nicobar = {
+				}
+				b_nancowry = {
+				}
+				b_afra_bay = {
+				}
+				b_little_nicobar = {
+				}
+				b_pulo_milo = {
+				}
+				b_man_island = {
+				}
+			}
+		}
+		d_north_andaman = {
+			color={ 245 99 51 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 858 province_id = 859 } }
+				}
+			}
+			capital = 858 # c_north_andaman
+			
+			c_north_andaman = { # 858
+				color={ 255 89 56 }
+				color2={ 255 255 255 }
+				nor=andaman
+				
+				b_mayablunder = {
+				}
+				b_digipur = {
+				}
+				b_haringadar = {
+				}
+				b_shibpur = {
+				}
+				b_aves_island = {
+				}
+				b_ram_nagar = {
+				}
+				b_ross_island = {
+				}
+			}
+			c_middle_andaman = { # 859
+				color={ 255 110 81 }
+				color2={ 255 255 255 }
+				mid=andaman
+				
+				b_betapur = {
+				}
+				b_sabri = {
+				}
+				b_katara = {
+				}
+				b_elpihnstone = {
+				}
+				b_elphinstone = {
+				}
+				b_spike_island = {
+				}
+				b_flat_island = {
+				}
+			}
+		}
+	}
+}
