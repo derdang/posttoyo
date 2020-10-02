@@ -309,11 +309,10 @@ decisions = {
 			NOT = { has_global_flag = khmer_empire_restored }
 			independent = yes
 			culture = khmer
-		#	AND = {
-		#		has_landed_title = 
-		#		has_landed_title = d_nakhon_ratchasima
-		#		
-		#	}
+			AND = {
+				has_landed_title = k_kampuchea
+				has_landed_title = k_gia_dhinh		
+			}
 		}
 		allow = {
 			is_adult = yes
@@ -331,9 +330,9 @@ decisions = {
 			completely_controls = d_prachinburi
 		}
 		effect = {
-			activate_title = { title = k_tay_nung status = yes }
+			activate_title = { title = e_chakrphup_khmer status = yes }
 			primary_title = {
-				k_tay_nung = {
+				e_chakrphup_khmer = {
 					grant_title = ROOT
 					copy_title_laws = PREV
 				}
@@ -343,14 +342,11 @@ decisions = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great
 			}
-			d_ha_giang = {
-				de_jure_liege = k_tay_nung
+			k_kampuchea = {
+				de_jure_liege = e_chakrphup_khmer
 			}
-			d_phu_tho = {
-				de_jure_liege = k_tay_nung
-			}
-			d_ha_long = {
-				de_jure_liege = k_tay_nung
+			k_gia_dhinh = {
+				de_jure_liege = e_chakrphup_khmer
 			}
 			set_global_flag = khmer_empire_restored
 		}

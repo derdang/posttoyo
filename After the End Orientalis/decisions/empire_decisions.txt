@@ -1,0 +1,62 @@
+decisions = {
+	form_khmer_empire = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = empire_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = khmer_empire_restored }
+			independent = yes
+			culture = khmer
+			AND = {
+				has_landed_title = k_kampuchea	
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 400
+			scaled_wealth = 2.5
+			war = no
+			completely_controls = k_kampuchea
+			completely_controls = k_gia_dhinh
+			completely_controls = d_nakhon_ratchasima
+			completely_controls = d_champasak
+			completely_controls = d_khon_kaen
+			completely_controls = d_lopburi
+			completely_controls = d_prachinburi
+		}
+		effect = {
+			activate_title = { title = e_chakrphup_khmer status = yes }
+			primary_title = {
+				e_chakrphup_khmer = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			scaled_wealth = -2.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			k_kampuchea = {
+				de_jure_liege = e_chakrphup_khmer
+			}
+			k_gia_dhinh = {
+				de_jure_liege = e_chakrphup_khmer
+			}
+			set_global_flag = khmer_empire_restored
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
