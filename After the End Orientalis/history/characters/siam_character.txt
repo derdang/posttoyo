@@ -1,4 +1,3 @@
-
 #2310 - Central Thai
 #	- 2310001 - 2310049 - post-event Ruling family
 #	- 2310050 - 2310199 - Non-royal in Palimonthon
@@ -18,6 +17,7 @@
 #	- 23133xx - Songkhla & Phuket
 #	- 23135xx - d_Pattani
 ####
+# All names, culture and stats in this chart are not final.
 
 ### Central Thai - Thai Kingdom
 2310001 ={
@@ -253,10 +253,24 @@
 	trait=sturdy
 	2580.4.15={birth=yes}
 }
+2310801 ={ # d_chonburi
+	name="Panus"
+	dynasty=2310002 #Galaxy
+	culture=thai_central
+	religion=dharmayuttika
+	martial=3
+	diplomacy=7
+	stewardship=4
+	intrigue=3
+	learning=6
+	trait=charismatic_negotiator
+	trait=sturdy
+	2580.4.15={birth=yes}
+}
 	### Pattaya
 2310910 ={ # Thai patrician in Pattaya.
 	name="Bira"
-	dynasty=2310002 #Galaxy
+	dynasty=2310991 #Phikulavong
 	culture=thai_central
 	religion=dharmayuttika
 	martial=5
@@ -270,9 +284,26 @@
 	trait=diligent
 	2584.7.15={birth=yes}
 }
+2310920 ={ # Russian patrician in Pattaya. currently hold the county
+	name="Ted"
+	dynasty=2310992 #Kenway
+	culture=thai_central
+	religion=catholic
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=tough_warrior
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=wroth
+	2570.4.15={birth=yes}
+}
 2310930 ={ # Russian patrician in Pattaya. currently hold the county
 	name="Yuriy"
-	dynasty=2310002 #Galaxy
+	dynasty=2310993 #Torpedovich
 	culture=primorskiy
 	religion=orthodox
 	martial=6
@@ -286,6 +317,40 @@
 	trait=diligent
 	trait=wroth
 	2570.4.15={birth=yes}
+}
+2310940 ={ # Thai patrician in Pattaya. Subject to change.
+	name="Lek"
+	dynasty=2310994 #Albo
+	culture=primorskiy
+	religion=orthodox
+	martial=3
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=tough_warrior
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=quick
+	2590.4.15={birth=yes}
+}
+2310950 ={ # Thai patrician in Pattaya. Subject to change.
+	name="Jaa"
+	dynasty=2310995 #Wangrong
+	culture=thai_isan
+	religion=orthodox
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=tough_warrior
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=wroth
+	2575.4.15={birth=yes}
 }
 ### Isan - Northeast Thailand
 2311101 ={ # d_nakorn_ratchasima
@@ -408,6 +473,21 @@
 	trait=dutiful_cleric
 	trait=zealous
 	2585.4.15={birth=yes}
+}
+2312401 ={ # c_uttharadit
+	name="Darb"
+	dynasty=2310002 #Galaxy
+	culture=thai_mueang
+	religion=dharmayuttika
+	martial=5
+	diplomacy=6
+	stewardship=5
+	intrigue=5
+	learning=4
+	trait=tough_warrior
+	trait=duelist
+	trait=strong
+	2589.4.15={birth=yes}
 }
 ### South Thailand
 2313100 ={ # d_Surat
