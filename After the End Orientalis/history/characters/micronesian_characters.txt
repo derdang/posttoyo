@@ -1,0 +1,124 @@
+###########Pacific Island Region Characters###########
+
+#Pacific Islander
+#1982 - Chamorro
+#1983 - Palauan
+#1984 - Yapese
+
+###########Micronesian Dynasties###########
+
+#Dukes of the Mariana Islands
+1982000={
+	name="Quipuha"
+	dynasty=1982000 #Hatagna
+	culture=chamorro
+	religion=catholic
+	dna="edlopnlacbb"
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=5
+	trait=martial_cleric
+	trait=duelist
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2530.1.1={birth=yes}
+	2580.1.1={death=yes}
+}
+1982001={
+	name="Matapang"
+	dynasty=1982000 #Hatagna
+	culture=chamorro
+	religion=catholic
+	dna="abmmqolbacc"
+	father=1982000
+	martial=5
+	diplomacy=2
+	stewardship=5
+	intrigue=1
+	learning=2
+	trait=tough_soldier
+	trait=strategist
+	trait=quick
+	trait=robust
+	trait=falconer
+	trait=cynical
+	trait=proud
+	trait=cruel
+	trait=wroth
+	2570.1.1={birth=yes}
+}
+1982002={
+	name="Tasina"
+	dynasty=1982001 #Guerrero
+	culture=chamorro
+	religion=americanist
+	dna="ebddablbacc"
+	martial=5
+	diplomacy=2
+	stewardship=5
+	intrigue=1
+	learning=2
+	trait=tough_soldier
+	trait=strategist
+	trait=quick
+	trait=robust
+	trait=falconer
+	trait=cynical
+	trait=proud
+	trait=cruel
+	trait=wroth
+	2570.1.1={birth=yes}
+}
+
+#Dukes of the Caroline Islands
+1983000={
+	name="A'bua"
+	dynasty=1983000 #Thule
+	culture=palauan
+	religion=americanist
+	dna="aclmancacab"
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=5
+	trait=martial_cleric
+	trait=duelist
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2570.1.1={birth=yes}
+}
+1984000={
+	name="Petrus"
+	dynasty=1984000 #Availfel
+	culture=yapese
+	religion=americanist
+	dna="acddancacab"
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=5
+	trait=martial_cleric
+	trait=duelist
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2570.1.1={birth=yes}
+}
