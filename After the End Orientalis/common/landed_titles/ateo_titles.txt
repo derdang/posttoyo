@@ -10358,20 +10358,20 @@ e_malaysia = {
 }
 e_siam = {
 	color={ 165 199 177 }
-	color2={ 205 30 20 }
+	color2={ 200 50 20 }
 	
 	capital = 739 # c_phra_nakhon
 	culture = thai_central
 	
 	k_mahanakorn = {
-		color={ 170 200 180 }
+		color={ 207 181 59 }
 		color2={ 255 255 255 }
 		
 		capital = 739 # c_phra_nakhon
 		culture = thai_central
 		
 		d_palimonthon = {
-			color={ 238 1 61 }
+			color={ 172 223 125 }
 			color2={ 255 255 255 }
 			
 			allow = {
@@ -11038,7 +11038,7 @@ e_siam = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 782 province_id = 783 province_id = 784 province_id = 785 province_id = 792 } }
+					any_demesne_province = { OR = { province_id = 782 province_id = 783 province_id = 784 province_id = 785 province_id = 786 } }
 				}
 			}
 			capital = 782 # c_khon_kaen
@@ -11119,23 +11119,74 @@ e_siam = {
 				b_phon_thong = {
 				}
 			}
-			c_kalasin = { # 792
-				color={ 172 100 76 }
+			c_yasothon = { # 786
+				color={ 173 98 72 }
 				color2={ 255 255 255 }
 				
-				b_kalasin = {
+				b_yasothon = {
 				}
-				b_na_mon = {
+				b_amnat_charoen = {
 				}
-				b_kamalasai = {
+				b_sai_mun = {
 				}
-				b_rong_kham = {
+				b_kut_chum = {
 				}
-				b_kuchinarai = {
+				b_kham_khuean_kaeo = {
 				}
-				b_khao_wong = {
+				b_chanuman = {
 				}
-				b_yang_talat = {
+				b_pa_tio = {
+				}
+			}
+		}
+		d_ubon = {
+			color={ 130 73 76 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 780 province_id = 781 } }
+				}
+			}
+			capital = 780 # c_si_saket
+			
+			c_si_saket = { # 780
+				color={ 120 83 71 }
+				color2={ 255 255 255 }
+				
+				b_sisaket = {
+				}
+				b_kanthararom = {
+				}
+				b_kantharalak = {
+				}
+				b_khukhan = {
+				}
+				b_khun_han = {
+				}
+				b_rasi_salai = {
+				}
+				b_phrai_bueng = {
+				}
+			}
+			c_ubon_ratchathani = { # 781
+				color={ 159 101 98 }
+				color2={ 255 255 255 }
+				
+				b_ubon_ratchathani = {
+				}
+				b_si_mueang_mai = {
+				}
+				b_khong_chiam = {
+				}
+				b_khueang_nai = {
+				}
+				b_khemarat = {
+				}
+				b_det_udom = {
+				}
+				b_na_chaluai = {
 				}
 			}
 		}
@@ -11146,7 +11197,7 @@ e_siam = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 787 province_id = 788 province_id = 789 province_id = 790 province_id = 791 } }
+					any_demesne_province = { OR = { province_id = 787 province_id = 788 province_id = 789 province_id = 790 province_id = 791 province_id = 792 } }
 				}
 			}
 			capital = 787 # c_udon_thani
@@ -11168,6 +11219,25 @@ e_siam = {
 				b_na_klang = {
 				}
 				b_kumphawapi = {
+				}
+			}
+			c_kalasin = { # 792
+				color={ 172 100 76 }
+				color2={ 255 255 255 }
+				
+				b_kalasin = {
+				}
+				b_na_mon = {
+				}
+				b_kamalasai = {
+				}
+				b_rong_kham = {
+				}
+				b_kuchinarai = {
+				}
+				b_khao_wong = {
+				}
+				b_yang_talat = {
 				}
 			}
 			c_loei = { # 789
@@ -11247,75 +11317,6 @@ e_siam = {
 				}
 			}
 		}
-		d_ubon = {
-			color={ 212 98 150 }
-			color2={ 0 130 55 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 781 province_id = 780 province_id = 786 } }
-				}
-			}
-			capital = 781 # c_ubon_ratchathani
-			c_ubon_ratchathani = { # 781
-				color={ 159 101 98 }
-				color2={ 255 255 255 }
-				
-				b_ubon_ratchathani = {
-				}
-				b_si_mueang_mai = {
-				}
-				b_khong_chiam = {
-				}
-				b_khueang_nai = {
-				}
-				b_khemarat = {
-				}
-				b_det_udom = {
-				}
-				b_na_chaluai = {
-				}
-			}
-			c_yasothon = { # 786
-				color={ 173 98 72 }
-				color2={ 255 255 255 }
-				
-				b_yasothon = {
-				}
-				b_amnat_charoen = {
-				}
-				b_sai_mun = {
-				}
-				b_kut_chum = {
-				}
-				b_kham_khuean_kaeo = {
-				}
-				b_chanuman = {
-				}
-				b_pa_tio = {
-				}
-			}
-			c_si_saket = { # 780
-				color={ 120 83 71 }
-				color2={ 255 255 255 }
-				
-				b_sisaket = {
-				}
-				b_kanthararom = {
-				}
-				b_kantharalak = {
-				}
-				b_khukhan = {
-				}
-				b_khun_han = {
-				}
-				b_rasi_salai = {
-				}
-				b_phrai_bueng = {
-				}
-			}
-		}
 	}
 	k_lanna = {
 		color={ 196 30 240 }
@@ -11323,6 +11324,14 @@ e_siam = {
 		
 		capital = 799 # c_chiang_mai
 		culture = thai_mueang
+		
+		allow = {
+				AND = {
+					NOT = {primary_title = {higher_tier_than = DUKE}}
+					completely_controls = d_chiang_mai
+					has_landed_title = d_chiang_mai
+				}
+			}
 		
 		d_chiang_mai = {
 			color={ 216 10 250 }
@@ -11873,6 +11882,20 @@ e_siam = {
 		
 		capital = 793 # c_sukhothai
 		culture = thai_mueang
+		
+		allow = {
+				AND = {
+					NOT = {primary_title = {higher_tier_than = DUKE}}
+					completely_controls = d_sukhothai
+					has_landed_title = d_sukhothai
+					has_landed_title = c_sukhothai
+					has_landed_title = c_phitsanulok
+					any_demesne_title = {
+						tier = DUKE
+						count = 3
+					}
+				}
+			}
 		
 		d_sukhothai = {
 			color={ 141 98 212 }

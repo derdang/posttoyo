@@ -76,6 +76,13 @@ culture =
 			random = no # Do not use for random CoAs
 		}
 		texture = {
+			file = "gfx\\coats_of_arms\\micronesian_dynasties.tga"
+			size = { x = 4 y = 1 }
+			noOfFrames = 4
+			color = 0
+			random = no # Do not use for random CoAs
+		}
+		texture = {
 			file = "gfx\\coats_of_arms\\pattern.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 47
@@ -466,6 +473,15 @@ culture = {
 
 	# WHEN ADDING NEW, ALWAYS ADD AT THE END
 	textures = {
+	
+		texture = {
+			file = "gfx\\coats_of_arms\\micronesian_dynasties.tga"
+			size = { x = 4 y = 1 }
+			noOfFrames = 4
+			color = 0
+			random = no # Do not use for random CoAs
+		}
+		
 		texture = {
 			file = "gfx\\coats_of_arms\\pattern_pagan.tga"
 			size = { x = 10 y = 4 }
