@@ -73,6 +73,21 @@
 	trait=stubborn
 	2561.4.15={birth=yes}
 }
+2310121 ={ # c_kanchanaburi
+	name="Kwae"
+	dynasty=2310002 #Galaxy
+	culture=thai_central
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=skilled_tactician
+	trait=strong
+	trait=diligent
+	2585.4.15={birth=yes}
+}
 ### Ayutthaya
 2310201 = {
 	name="Phet"
@@ -115,7 +130,7 @@
 	stewardship=5
 	intrigue=1
 	learning=3
-	trait=tough_warrior
+	trait=tough_soldier
 	trait=zealous
 	trait=brave
 	trait=proud
@@ -135,7 +150,7 @@
 	learning=6
 	trait=idolizer
 	trait=proud
-	2696.5.20={birth=yes}
+	2596.5.20={birth=yes}
 }
 2310302 ={ # Konstantyn Falkov?
 	name="Konstantyn"
@@ -147,7 +162,7 @@
 	stewardship=4
 	intrigue=4
 	learning=4
-	trait=tough_warrior
+	trait=tough_soldier
 	trait=brawny
 	trait=shrewd
 	trait=diligent
@@ -175,7 +190,7 @@
 	dynasty=2310004 #Galaxy
 	culture=thai_central
 	religion=dharmayuttika
-	martial=7
+	martial=9
 	diplomacy=5
 	stewardship=8
 	intrigue=4
@@ -254,7 +269,7 @@
 	2580.4.15={birth=yes}
 }
 2310801 ={ # d_chonburi
-	name="Panus"
+	name="Samutra"
 	dynasty=2310002 #Galaxy
 	culture=thai_central
 	religion=dharmayuttika
@@ -278,13 +293,13 @@
 	stewardship=5
 	intrigue=4
 	learning=4
-	trait=tough_warrior
+	trait=tough_soldier
 	trait=sturdy
 	trait=shrewd
 	trait=diligent
 	2584.7.15={birth=yes}
 }
-2310920 ={ # Russian patrician in Pattaya. currently hold the county
+2310920 ={ # Thai patrician in Pattaya. Subject to change.
 	name="Ted"
 	dynasty=2310992 #Kenway
 	culture=thai_central
@@ -294,7 +309,7 @@
 	stewardship=4
 	intrigue=4
 	learning=4
-	trait=tough_warrior
+	trait=tough_soldier
 	trait=sturdy
 	trait=shrewd
 	trait=diligent
@@ -311,7 +326,7 @@
 	stewardship=4
 	intrigue=4
 	learning=4
-	trait=tough_warrior
+	trait=tough_soldier
 	trait=sturdy
 	trait=shrewd
 	trait=diligent
@@ -321,19 +336,18 @@
 2310940 ={ # Thai patrician in Pattaya. Subject to change.
 	name="Lek"
 	dynasty=2310994 #Albo
-	culture=primorskiy
-	religion=orthodox
+	culture=thai_central
+	religion=dharmayuttika
 	martial=3
 	diplomacy=5
 	stewardship=4
 	intrigue=4
 	learning=4
-	trait=tough_warrior
+	trait=thrify_clerk
 	trait=sturdy
-	trait=shrewd
 	trait=diligent
 	trait=quick
-	2590.4.15={birth=yes}
+	2589.4.15={birth=yes}
 }
 2310950 ={ # Thai patrician in Pattaya. Subject to change.
 	name="Jaa"
@@ -341,21 +355,23 @@
 	culture=thai_isan
 	religion=orthodox
 	martial=6
-	diplomacy=5
+	diplomacy=5	
 	stewardship=4
 	intrigue=4
 	learning=4
-	trait=tough_warrior
+	trait=tough_soldier
+	trait=duelist
 	trait=sturdy
+	trait=strong
 	trait=shrewd
 	trait=diligent
-	trait=wroth
 	2575.4.15={birth=yes}
 }
 ### Isan - Northeast Thailand
 2311101 ={ # d_nakorn_ratchasima
 	name="Pongsri"
 	female=yes
+	dna=bcfdfdgeacd # The default DNA don't really give a vibe of martial lady at all.
 	dynasty=2310002 #Galaxy
 	culture=thai_isan
 	religion=dharmayuttika
@@ -415,6 +431,90 @@
 	trait=diligent
 	2585.4.15={birth=yes}
 }
+2311301 ={ # d_udon_ratch/nong khai (Vientiane border)
+	name="Nam"
+	dynasty=2310002 #Galaxy
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrify_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2311401 ={ # d_ubon (Champassak/Cambodia border)
+	name="Chanadai"
+	dynasty=2310002 #Galaxy
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrify_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2311221 ={ # c_chaiyaphum
+	name="Phakdi"
+	dynasty=2310002 #Galaxy
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrify_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2311211 ={ # c_roi_et
+	name="Ton"
+	dynasty=2310002 #Galaxy
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrify_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2311241 ={ # c_kalasin
+	name="Phuparn"
+	dynasty=2310002 #Galaxy
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrify_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2311311 ={ # c_sakon_Nakhon
+	name="Ton"
+	dynasty=2310002 #Galaxy
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrify_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
 ### North
 2312101 ={ # d_lanna
 	name="Cherdchu"
@@ -432,7 +532,7 @@
 	trait=zealous
 	2583.4.15={birth=yes}
 }
-2312201 ={ # d_phrae
+2312201 ={ # d_phayao
 	name="Saeng-la"
 	dynasty=2310002 #Galaxy
 	culture=thai_mueang
@@ -446,7 +546,7 @@
 	trait=zealous
 	2583.4.15={birth=yes}
 }
-2312211 ={ # c_phayao
+2312211 ={ # c_phrae
 	name="Fongkham"
 	dynasty=2310002 #Galaxy
 	culture=thai_mueang
@@ -484,7 +584,7 @@
 	stewardship=5
 	intrigue=5
 	learning=4
-	trait=tough_warrior
+	trait=tough_soldier
 	trait=duelist
 	trait=strong
 	2589.4.15={birth=yes}
@@ -500,14 +600,27 @@
 	stewardship=6
 	intrigue=4
 	learning=4
-	trait=tough_warrior
+	trait=tough_soldier
 	trait=sturdy
 	trait=shrewd
 	trait=diligent
 	trait=wroth
 	2580.4.15={birth=yes}
 }
-
+2313131 ={ # c_chumphon
+	name="Asa"
+	dynasty=2310002 #Galaxy
+	culture=cham
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrify_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
 2313200 ={ # d_nakhon_sri_thammarat
 	name="Si Prat"
 	dynasty=2310006 #Galaxy
@@ -541,7 +654,37 @@
 	trait=diligent
 	2585.4.15={birth=yes}
 }
-
+2313400 ={ # c_phuket
+	name="Chan"
+	female=yes
+	dynasty=2310006 #Galaxy
+	culture=thai_paktai
+	religion=dharmayuttika
+	martial=6
+	diplomacy=4
+	stewardship=4
+	intrigue=6
+	learning=4
+	trait=skilled_tactician
+	trait=brave
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2313410 ={ # c_satun
+	name="Aphai"
+	dynasty=2310006 #Galaxy
+	culture=thai_paktai
+	religion=senthang
+	martial=5
+	diplomacy=4
+	stewardship=4
+	intrigue=6
+	learning=4
+	trait=grey_eminence
+	trait=shrewd
+	trait=diligent
+	2585.4.15={birth=yes}
+}
 2313500 ={ # c_pattani
 	name="Fatimah"
 	female=yes
@@ -563,6 +706,21 @@
 	name="Harn"
 	dynasty=2310006 #Galaxy
 	culture=thai_paktai
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=grey_eminence
+	trait=shrewd
+	trait=diligent
+	2585.4.15={birth=yes}	
+}
+2313520 ={ # c_narathiwat.
+	name="Tiang-Seng"
+	dynasty=2310006 #Galaxy
+	culture=tionghoa #The closest to South Thai-Chinese we got
 	religion=dharmayuttika
 	martial=4
 	diplomacy=5

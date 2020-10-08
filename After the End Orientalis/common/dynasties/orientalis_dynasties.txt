@@ -4615,12 +4615,64 @@
 1961025 = { name="Nasution" culture=sumatran }
 1961026 = { name="Siregar" culture=sumatran }
 
-1982000 = { name="Hatågña" culture=chamorro }
-1982001 = { name="Guerrero" culture=chamorro }
+1982000 = { name="Hatågña" culture=chamorro
+	coat_of_arms = {
+			religion = catholic
+			template = 0
+			layer = {
+			texture = 2
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	} #Chief Quipha
+}
+1982001 = { name="Guerrero" culture=chamorro
+	coat_of_arms = {
+			religion = americanist
+			template = 0
+			layer = {
+			texture = 0
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
-1983000 = { name="Thule" culture=palauan }
+1983000 = { name="Thule" culture=palauan
+	coat_of_arms = {
+			religion = americanist
+			template = 0
+			layer = {
+			texture = 0
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
-1984000 = { name="Availfel" culture=palauan }
+1984000 = { name="Availfel" culture=yapese
+	coat_of_arms = {
+			religion = americanist
+			template = 0
+			layer = {
+			texture = 0
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2000001 = {
 	name="Mbilijora"
