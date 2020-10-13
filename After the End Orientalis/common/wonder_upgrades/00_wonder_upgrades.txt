@@ -4120,3 +4120,44 @@ upgrade_cherry_blossom_orchard = {
 		japonic_opinion = 5
 	}
 }
+upgrade_lingga = {
+	picture = GFX_upgrade_icon_roses_red
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 0.20
+		dayak_opinion = 5
+		javan_opinion = 5
+		sulawesi_opinion = 5
+		timor_opinion = 5
+		sex_appeal_opinion = 5
+	}
+}
+upgrade_yoni = {
+	picture = GFX_upgrade_icon_roses_white
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_piety = 0.20
+		dayak_opinion = 5
+		javan_opinion = 5
+		sulawesi_opinion = 5
+		timor_opinion = 5
+	}
+}

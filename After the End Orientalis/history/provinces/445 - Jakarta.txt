@@ -19,3 +19,27 @@ culture = javanese
 religion = sunni
 
 #History
+1961.8.17{
+	build_wonder=wonder_monas
+}
+1965.8.17{
+	set_wonder_stage=1
+}
+1973.8.17{
+	set_wonder_stage=3
+}
+1975.7.12{
+	set_wonder_stage=3
+	build_wonder_upgrade=upgrade_plating_gold
+	build_wonder_upgrade=upgrade_lingga
+	build_wonder_upgrade=upgrade_yoni
+}
+2200.7.12{
+	set_wonder_stage=2
+	destroy_wonder_upgrade=upgrade_plating_gold
+	destroy_wonder_upgrade=upgrade_lingga
+}
+2300.8.1{
+	set_wonder_stage=1
+	destroy_wonder_upgrade=upgrade_yoni
+}
