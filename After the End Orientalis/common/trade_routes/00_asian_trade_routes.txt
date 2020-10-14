@@ -62,6 +62,8 @@ maritime_silk_trade = {
 			province_id = 373 #Kota Bharu (Kelantan)
 			province_id = 337 #Kuala Lumpur
 			province_id = 363 #George Town (Penang)
+			province_id = 833 #Mawlamyine
+			province_id = 840 #Twante (Yangon)
 		}
 	}
 
@@ -106,6 +108,12 @@ maritime_silk_trade = {
 	}
 	path = {	#Kuala Lumpur to George Town (Penang)
 		337 340 885 363
+	}
+	path = {	#George Town (Penang) to Mawlamyine and Thaton
+		363 966 967 968 833 834
+	}
+	path = {	#Thaton to Yangon
+		834 969 840
 	}
 }
 dragon_road_trade = {
