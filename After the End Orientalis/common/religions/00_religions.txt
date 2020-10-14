@@ -658,6 +658,7 @@ pagan_group = {
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
+		reformed = americanist_reformed
 	}
 	americanist_reformed = { #temporary
 		graphical_culture = muslimgfx
@@ -668,7 +669,7 @@ pagan_group = {
 		color = { 0 0 255 }
 
 		crusade_name = INTERVENTION
-		scripture_name = THE_LEGENDS
+		scripture_name = THE_LAW
 		priest_title = CAPTAINS
 		piety_name = PATRIOTISM
 		
@@ -694,6 +695,79 @@ pagan_group = {
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
+	}
+	muist = { #temporary
+		graphical_culture = pagangfx
+		
+		icon = 54
+		heresy_icon = 54
+		
+		color = { 148 0 211 }
+
+		scripture_name = BON_PURI
+		priest_title = MU
+		piety_name = GUT
+		
+		high_god_name = GOD_HANEULLIM
+		
+		god_names = {
+			GOD_THE_ANCESTORS GOD_THE_SPIRITS GOD_SUNGMO GOD_HANIM GOD_HWANUNG GOD_DANGUN
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+		reformed = muist_reformed
+	}
+	muist_reformed = { #temporary
+		graphical_culture = pagangfx
+		
+		icon = 54
+		heresy_icon = 54
+		
+		color = { 150 0 215 }
+
+		scripture_name = BON_PURI
+		priest_title = MU
+		piety_name = GUT
+		
+		high_god_name = GOD_HANEULLIM
+		
+		god_names = {
+			GOD_THE_ANCESTORS GOD_THE_SPIRITS GOD_SUNGMO GOD_HANIM GOD_HWANUNG GOD_DANGUN
+		}
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
 	}
 }
 
@@ -1005,7 +1079,7 @@ eastern = {
 		icon = 14
 		heresy_icon = 14
 		
-		color = { 200 200 100 }
+		color = { 135 206 235 }
 		
 		interface_skin = { cao_dai_interface }
 		
@@ -1137,7 +1211,7 @@ buddhist_group = {
 		icon = 16
 		heresy_icon = 17
 		
-		color = { 100 200 100 }
+		color = { 244 196 48 }
 		
 		scripture_name = TIPITAKA
 		priest_title = B_BHIKKHU
@@ -1175,7 +1249,7 @@ buddhist_group = {
 		icon = 16
 		heresy_icon = 17
 		
-		color = { 80 100 100 }
+		color = { 128 0 0 }
 		parent = dharmayuttika
 		
 		scripture_name = TIPITAKA
