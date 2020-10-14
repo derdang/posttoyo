@@ -21,8 +21,6 @@
 ###########Cambodian Dynasties###########
 
 #Important Characters go here
-
-#Placeholders characters by Poom. Made to implement de facto status.
 1181001 ={ #Phnom Penh duke
 	name="Many"
 	dynasty=1181001
@@ -48,7 +46,7 @@
 	religion=dharmayuttika
 	martial=6
 	diplomacy=3
-	stewardship=5
+	stewardship=8
 	intrigue=5
 	learning=5
 	trait=skilled_tactician
@@ -57,7 +55,21 @@
 	trait=ambitious
 	trait=paranoid
 	trait=cynical
-	2581.11.13={birth=yes}
+	2581.12.1={birth=yes}
+}
+1181012 ={ #Count of Pursat, take some counties out of Angkor's desmene
+	name="Chhouk"
+	dynasty=1181002 
+	culture=khmer
+	religion=dharmayuttika
+	martial=4
+	diplomacy=3
+	stewardship=5
+	intrigue=5
+	learning=6
+	trait=thrifty_clerk
+	trait=temperate
+	2584.12.1={birth=yes}
 }
 1181021 ={ #Count of Kratie, Vassal of Loeu lord
 	name="Khem"
