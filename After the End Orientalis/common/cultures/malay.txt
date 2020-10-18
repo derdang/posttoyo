@@ -470,4 +470,72 @@ malayan = {
 		seafarer = yes
 		modifier = default_culture_modifier
 	}
+	bruneian = { #placeholder, name copy-pasted from melayu
+		graphical_cultures = { melayugfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.9 0.6 0.2 }
+		male_names = {
+			Aaron Abbas "Abdul Azizi" "Abdul Djafar" "Abdul Hamid" "Abdul Jalil" "Abdul Majid" "Abdul Rahman" Abdullah Abu Bakar_Abu-Bakr Ahmad Adam Adnan Akmal Aidan Alam Alauddin Ali Amar Amrullah Anas Andak Antah Aqil Arifin Ashraf Ataullah Azlan_Arslan
+			Badlishah Badrul Burhanuddin 
+			Daniel Danish Darwish Daud_David Dziaddin 
+			Ethan 
+			Faisal Faizuddin Farish Firmansyah 
+			Ghiatuddin 
+			Hafizuddin Halim Hamzah Haris Hasbullah Hashim Hassan Hassanal Haziq Hussain 
+			Karim Kassim
+			Ibrahim_Abraham Iskandar_Alexander Idris Iman Imansyah Irfan Ishak_Isaac Ismail Izzuddin 
+			Ja'afar_Jafar Jamaluddin Jamil Jasin Jayden
+			Kamaluddin Khalil Khalish
+			Lucas
+			Mahmud Mansur Ma'sud Mazlan Mikhail_Michael Mizan Mohd_Muhammad Mu'adzam Muhammad Muhriz Muhyiddin Mukarram Munawir Musa Muzaffar Muzzil
+			Najwan Naquiyuddin Nasrullah Naufal Nazrin Noah
+			Osman 
+			Putra
+			Rafi'i Rashid Rasmansyah Rayyan Riayat Riayatuddin
+			Safruddin Sahril Sahruddin Salahuddin_Saladin Samsuddin Samsul Sarafuddin Sirajuddin Sulaiman_Solomon Syahrial Syarif 
+			Tajuddin Tahir Taufik Tayeb Thamrin Thaqif 
+			Umar 
+			Yahya_John Yunus Yusniarsyah Yusransyah Yusuf_Joseph 
+			"Zainal Abidin" "Zainal Arifin" Zarif Zikri
+		}
+		female_names = {
+			Aayizah	Afzan Aisyah Alya Amara Aminah Arianna Arissa Asma Atbah Auliya Aura Azizah 
+			Badariah Bahiyah Bariah Budriah
+			Dhia
+			Fatima Fatimatuz Fauziah Fazira 
+			Hairiah Hannah Hasmah Humaira 
+			Ilisha Ilma Iman Indaryani Intan Isabel 
+			Jihan Johana 
+			Keisha Khadija 
+			Lusyanah 
+			Maimunah Maliha Marina Marissa Maryam_Mary Maya Muazah Muzwin
+			Nadhirah Najihah Najwan Noor Norashikin Nuha Nurhidayah Nurr Nurul 
+			Orked 
+			Petri Puteri 
+			Rafidah Raisya Rensina Rohana Ros Rosdiah Rozita Ruggyah 
+			Safya Sakinah Saloma Sara Siti Sofiah Tiara 
+			Yufida 
+			Zahirah Zahra Zainab Zalila Zanariah Zara Zarith Zatashah Zerafina Zubaidah
+		}
+		male_patronym = "ibni "
+		female_patronym = "binti "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
 }

@@ -47,7 +47,7 @@ tai_group = {
 		mat_grm_name_chance = 0
 		mother_name_chance = 0
 		
-        from_dynasty_prefix = "Bang"
+        from_dynasty_prefix = "Bang "
         used_for_random = no
 		dynasty_title_names = no
 		dukes_called_kings = yes
@@ -79,7 +79,7 @@ tai_group = {
 		mat_grm_name_chance = 0
 		mother_name_chance = 0
 		
-        	from_dynasty_prefix = "Ban"
+        	from_dynasty_prefix = "Ban "
         	used_for_random = no
 		dynasty_title_names = no
 		dukes_called_kings = yes
@@ -149,6 +149,63 @@ tai_group = {
 		count_titles_hidden = yes
         
 		modifier = default_culture_modifier
+		
+	}
+	laotian = {
+		graphical_cultures = { tibetangfx bodpagfx }
+		unit_graphical_cultures = { chinesegfx }
+
+		color = { 0.8 0.06 0.17 }
+
+		male_names = {
+			
+			Buavan Bouavan Bunson Bounson Bunta Bounta Buppha Boupha Boualoy
+			Dara
+			Nari Nary	
+			Kamphiu Kamphiou Khamla
+			Thavon Thavone
+			Sunthon Sounthone
+			Uttama Unhuan
+			Vilai Vilay Viangkham Viengkham Vansai Vanthani Vattha Viphat Visith Vong
+			Anan Anolat					
+			Bunkhong Bunkong Bunlap	Bunmak Bunmi Bunnyo Bunpeng	Bunphet	Bunthi	Bunthong	
+			Chaisit	Chan-Op	Chanthon 
+			Khambai	Khamfua	Khamfuan Khamluan Khammuan Khamphet	Khamphui Khim Ku Kukaeo
+			Lian			
+			Mark
+			Nakkhala					
+			Phon Phumi	Phuvong
+			Sa-Nga Siang Singkapo Sisuk	Soek Sombun	Somphon	Somphu	Suban Sunthong	Suphan
+			Thiang Thoeng Thongsing Tubi 
+			Udai Ukaeo
+
+		}
+
+	female_names = {
+			Buavan Bouavan Bunson Bounson Bunta Bounta Buppha Boupha Boualoy
+			Dara
+			Nari Nary	
+			Kamphiu Kamphiou Khamla	
+			Thavon Thavone
+			Sunthon Sounthone
+			Vilai Vilay Viangkham Viengkham
+			Buakhet	Buasi	Buathet	Buavan Bunpeng 
+			Chan-Op	Chansamon Chanthon	Khambai	Khamfua	Khamfuan Khamluan Khammuan	Khamphet Khamphui					
+			Lian				
+			Nakkhala Nyui							
+			Sa-Nga	Siang Singkapo	Sisuk	Soek Somphu
+			Thiang	Thoeng	Tubi	
+			Udai Unpheng
+			}
+
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+		
 		
 	}
     
