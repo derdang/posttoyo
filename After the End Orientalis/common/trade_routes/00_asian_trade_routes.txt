@@ -57,13 +57,13 @@ maritime_silk_trade = {
 			province_id = 167 #Da Nang
 			province_id = 180 #Saigon
 			province_id = 320 #Sihanoukville
-			province_id = 739 #Phra Nakhon (Bangkok)
-			province_id = 773 #Pattani
+			province_id = 763 #Phra Nakhon (Bangkok)
+			province_id = 797 #Pattani
 			province_id = 373 #Kota Bharu (Kelantan)
 			province_id = 337 #Kuala Lumpur
 			province_id = 363 #George Town (Penang)
-			province_id = 833 #Mawlamyine
-			province_id = 840 #Twante (Yangon)
+			province_id = 857 #Mawlamyine
+			province_id = 864 #Twante (Yangon)
 		}
 	}
 
@@ -83,37 +83,37 @@ maritime_silk_trade = {
 	}
 
 	path = {	#Hai Phong to Da Nang
-		140 929 928 167
+		140 953 952 167
 	}
 	path = {	#Da Nang to Sai Gon
-		167 927 926 925 180
+		167 951 950 949 180
 	}
 	path = {	#Sai Gon to Sihanoukville
-		180 197 924 930 320
+		180 197 948 954 320
 	}
 	path = {	#Sihanoukville to Phra Nakhon (Bangkok)
-		320 933 931 739
+		320 957 955 763
 	}
 	path = {	#Phra Nakhon (Bangkok) to Pattani
-		739 931 932 766 773
+		739 955 956 790 797
 	}
 	path = {	#Pattani to Kota Bharu (Kelantan)
-		773 775 373
+		797 799 397
 	}
 	path = {	#Kota Bharu (Kelantan) to Singapore
-		373 892 891 889 888 389
+		397 816 915 913 912 413
 	}
 	path = {	#Singapore to Kuala Lumpur
-		389 886 339 337
+		413 910 339 337
 	}
 	path = {	#Kuala Lumpur to George Town (Penang)
-		337 340 885 363
+		337 340 909 363
 	}
 	path = {	#George Town (Penang) to Mawlamyine and Thaton
-		363 966 967 968 833 834
+		363 990 991 992 857 858
 	}
 	path = {	#Thaton to Yangon
-		834 969 840
+		858 993 864
 	}
 }
 dragon_road_trade = {
@@ -169,39 +169,39 @@ royal_thai_road_trade = { #Thai Railways
 	}
 
 	start = {				# Start provinces of trade route
-		739 #Phra Nakhon (Bangkok)
-		746 #Ayutthaya
+		763 #Phra Nakhon (Bangkok)
+		770 #Ayutthaya
 	}
 
 	path = {	#Phra Nakhon (Bangkok) to Songkhla (Southern Railway) - International Line to Butterworth, Malaysia
-		739 740 741 742 744 763 764 766 771 767 772 371 370 367 368 364
+		763 764 765 766 768 787 788 790 795 791 796 371 370 367 368 364
 	}
 	path = {	#Phra Nakhon (Bangkok) to Chonburi (Eastern Railway)
-		739 755 757 756 758
+		763 779 781 780 782
 	}
 	path = {	#Chachoengsao - Sa Kaeo - Cambodia border (Could enter Banteay Meanchey)
-		755 762 331
+		779 786 331
 	}
 	path = {	#Phra Nakhon (Bangkok) to Phachi Junction (Ayutthaya)
-		739 748 746
+		763 772 770
 	}
 	path = {	#Ayutthaya to Korat (Northeast Railway)
-		746 752 777
+		770 776 801
 	}
 	path = {	#Korat to Ubon (Northeast Railway - Southern Line)
-		777 778 779 780 781
+		801 802 803 804 805
 	}
 	path = {	#Korat to Udon Thani (Northeast Railway - Northern Line) - Nkh.Vientiane
-		777 782 787 788 294
+		801 806 811 812 294
 	}
 	path = {	#Ayutthaya to Chiang Mai (Northern Railway) - Nkh.Vientiane
-		746 751 794 796 798 808 806 803 804 799
+		770 775 818 820 822 832 830 827 828 823
 	}
 	path = {	#Golden Triangle - "Trade center" at Thailand-Laos-Myanmar Shan state. 
-		799 800 304
+		823 824 328
 	}
 	#path = {	#Uttaradit to Sukhothai (Northern Railway) - Nkh.Vientiane
-	#	808 793 #idk why it is like this. Can be uncommented if we really wanted better Sukhothai county.
+	#	832 817 #idk why it is like this. Can be uncommented if we really wanted better Sukhothai county.
 	#}
 }
 tokaido_trade = {
@@ -243,10 +243,10 @@ tokaido_trade = {
 		69 78 82 88
 	}
 	path = {	#Osaka to Hiroshima
-		88 86 962 963 110
+		88 86 986 987 110
 	}
 	path = {	#Osaka to Kochi
-		88 962 950 98
+		88 986 974 98
 	}
 }
 saikaido_trade = {
@@ -280,10 +280,10 @@ saikaido_trade = {
 	}
 
 	path = {	#Nagasaki to Satsuma
-		121 956 952 130
+		121 980 976 130
 	}
 	path = {	#Satsuma to Okinawa
-		130 952 953 134
+		130 976 977 134
 	}
 	path = {	#Satsuma to Miyazaki
 		130 129 128
@@ -331,10 +331,10 @@ higashimawari_trade = {
 		56 26 25 24 23 21
 	}
 	path = {	#Aomori to Ishikari
-		21 939 938 5
+		21 963 962 5
 	}
 	path = {	#Aomori to Sendai
-		21 939 942 943 32
+		21 963 966 967 32
 	}
 	path = {	#Sendai to Tokyo
 		32 35 42 43 44 53

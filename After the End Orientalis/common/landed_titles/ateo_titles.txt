@@ -17004,6 +17004,608 @@ e_borneo = {
 			}
 		}
 	}
+	k_brunei = {
+		color={ 207 205 53 }
+		color2={ 255 255 255 }
+		
+		capital = 604 # c_bandar_brunei
+		culture = bruneian
+		
+		d_brunei = {
+			color={ 227 185 63 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 604 province_id = 605 } }
+				}
+			}
+			capital = 604 # c_bandar_brunei
+			
+			c_bandar_brunei = { # 604
+				color={ 237 175 68 }
+				color2={ 255 255 255 }
+				
+				b_pusat_bandar = {
+				}
+				b_kampong_ayer = {
+				}
+				b_sengkurong = {
+				}
+				b_berakas = {
+				}
+				b_gadong = {
+				}
+				b_tutong = {
+				}
+				b_kuala_belait = {
+				}
+			}
+			c_temburong = { # 605
+				color={ 247 177 64 }
+				color2={ 255 255 255 }
+				
+				b_bangkar = {
+				}
+				b_labu = {
+				}
+				b_batu_apoi = {
+				}
+				b_bukok = {
+				}
+				b_amo = {
+				}
+				b_temburong = {
+				}
+				b_sungai_panduruan = {
+				}
+			}
+		}
+	}
+	k_sarawak = {
+		color={ 96 179 81 }
+		color2={ 255 255 255 }
+		
+		capital = 606 # c_kuching
+		culture = melayu
+		
+		d_kuching = {
+			color={ 76 199 71 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 606 province_id = 607 province_id = 608 province_id = 609 } }
+				}
+			}
+			capital = 606 # c_kuching
+			
+			c_kuching = { # 606
+				color={ 66 209 66 }
+				color2={ 255 255 255 }
+				
+				b_kuching = {
+				}
+				b_kota_padawan = {
+				}
+				b_siburan = {
+				}
+				b_samariang = {
+				}
+				b_bau_2 = {
+				}
+				b_petra_jaya = {
+				}
+				b_padawan = {
+				}
+			}
+			c_lundu = { # 607
+				color={ 108 226 108 }
+				color2={ 255 255 255 }
+				
+				b_lundu = {
+				}
+				b_lundu1 = {
+				}
+				b_lundu2 = {
+				}
+				b_lundu3 = {
+				}
+				b_lundu4 = {
+				}
+				b_lundu5 = {
+				}
+				b_lundu6 = {
+				}
+			}
+			c_samarahan = { # 608
+				color={ 103 224 103 }
+				color2={ 255 255 255 }
+				
+				b_samarahan = {
+				}
+				b_samarahan1 = {
+				}
+				b_samarahan2 = {
+				}
+				b_samarahan3 = {
+				}
+				b_samarahan4 = {
+				}
+				b_samarahan5 = {
+				}
+				b_samarahan6 = {
+				}
+			}
+			c_serian = { # 609
+				color={ 58 178 62 }
+				color2={ 255 255 255 }
+				
+				b_serian = {
+				}
+				b_serian1 = {
+				}
+				b_serian2 = {
+				}
+				b_serian3 = {
+				}
+				b_serian4 = {
+				}
+				b_serian5 = {
+				}
+				b_serian6 = {
+				}
+			}
+		}
+		d_bintulu = {
+			color={ 95 229 102 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 621 province_id = 622 } }
+				}
+			}
+			capital = 621 # c_bintulu
+			
+			c_bintulu = { # 621
+				color={ 105 219 107 }
+				color2={ 255 255 255 }
+				
+				b_bintulu = {
+				}
+				b_bintulu1 = {
+				}
+				b_bintulu2 = {
+				}
+				b_bintulu3 = {
+				}
+				b_bintulu4 = {
+				}
+				b_bintulu5 = {
+				}
+				b_bintulu6 = {
+				}
+			}
+			c_tatau = { # 622
+				color={ 91 191 93 }
+				color2={ 255 255 255 }
+				
+				b_tatau = {
+				}
+				b_tatau1 = {
+				}
+				b_tatau2 = {
+				}
+				b_tatau3 = {
+				}
+				b_tatau4 = {
+				}
+				b_tatau5 = {
+				}
+				b_tatau6 = {
+				}
+			}
+		}
+		d_kapit = {
+			color={ 76 167 76 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 619 province_id = 620 } }
+				}
+			}
+			capital = 619 # c_kapit
+			
+			c_kapit = { # 619
+				color={ 66 177 71 }
+				color2={ 255 255 255 }
+				
+				b_kapit = {
+				}
+				b_kapit1 = {
+				}
+				b_kapit2 = {
+				}
+				b_kapit3 = {
+				}
+				b_kapit4 = {
+				}
+				b_kapit5 = {
+				}
+				b_kapit6 = {
+				}
+			}
+			c_song = { # 620
+				color={ 69 193 73 }
+				color2={ 255 255 255 }
+				
+				b_song = {
+				}
+				b_song1 = {
+				}
+				b_song2 = {
+				}
+				b_song3 = {
+				}
+				b_song4 = {
+				}
+				b_song5 = {
+				}
+				b_song6 = {
+				}
+			}
+		}
+		d_limbang = {
+			color={ 121 198 102 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 626 province_id = 627 } }
+				}
+			}
+			capital = 626 # c_limbang
+			
+			c_limbang = { # 626
+				color={ 131 188 107 }
+				color2={ 255 255 255 }
+				
+				b_limbang = {
+				}
+				b_limbang1 = {
+				}
+				b_limbang2 = {
+				}
+				b_limbang3 = {
+				}
+				b_limbang4 = {
+				}
+				b_limbang5 = {
+				}
+				b_limbang6 = {
+				}
+			}
+			c_lawas = { # 627
+				color={ 101 198 101 }
+				color2={ 255 255 255 }
+				
+				b_lawas = {
+				}
+				b_lawas1 = {
+				}
+				b_lawas2 = {
+				}
+				b_lawas3 = {
+				}
+				b_lawas4 = {
+				}
+				b_lawas5 = {
+				}
+				b_lawas6 = {
+				}
+			}
+		}
+		d_miri = {
+			color={ 70 177 71 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 623 province_id = 624 province_id = 625 } }
+				}
+			}
+			capital = 623 # c_miri
+			
+			c_miri = { # 623
+				color={ 60 187 66 }
+				color2={ 255 255 255 }
+				
+				b_miri = {
+				}
+				b_miri1 = {
+				}
+				b_miri2 = {
+				}
+				b_miri3 = {
+				}
+				b_miri4 = {
+				}
+				b_miri5 = {
+				}
+				b_miri6 = {
+				}
+			}
+			c_beluru = { # 625
+				color={ 66 223 66 }
+				color2={ 255 255 255 }
+				
+				b_beluru = {
+				}
+				b_beluru1 = {
+				}
+				b_beluru2 = {
+				}
+				b_beluru3 = {
+				}
+				b_beluru4 = {
+				}
+				b_beluru5 = {
+				}
+				b_beluru6 = {
+				}
+			}
+			c_marudi = { # 624
+				color={ 61 206 64 }
+				color2={ 255 255 255 }
+				
+				b_marudi = {
+				}
+				b_marudi1 = {
+				}
+				b_marudi2 = {
+				}
+				b_marudi3 = {
+				}
+				b_marudi4 = {
+				}
+				b_marudi5 = {
+				}
+				b_marudi6 = {
+				}
+			}
+		}
+		d_mukah = {
+			color={ 75 176 74 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 616 province_id = 617 province_id = 618 } }
+				}
+			}
+			capital = 616 # c_mukah
+			
+			c_mukah = { # 616
+				color={ 65 186 69 }
+				color2={ 255 255 255 }
+				
+				b_mukah = {
+				}
+				b_mukah1 = {
+				}
+				b_mukah2 = {
+				}
+				b_mukah3 = {
+				}
+				b_mukah4 = {
+				}
+				b_mukah5 = {
+				}
+				b_mukah6 = {
+				}
+			}
+			c_dalat = { # 617
+				color={ 67 178 69 }
+				color2={ 255 255 255 }
+				
+				b_dalat = {
+				}
+				b_dalat1 = {
+				}
+				b_dalat2 = {
+				}
+				b_dalat3 = {
+				}
+				b_dalat4 = {
+				}
+				b_dalat5 = {
+				}
+				b_dalat6 = {
+				}
+			}
+			c_daro = { # 618
+				color={ 86 221 86 }
+				color2={ 255 255 255 }
+				
+				b_daro = {
+				}
+				b_daro1 = {
+				}
+				b_daro2 = {
+				}
+				b_daro3 = {
+				}
+				b_daro4 = {
+				}
+				b_daro5 = {
+				}
+				b_daro6 = {
+				}
+			}
+		}
+		d_sariket = {
+			color={ 102 244 107 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 613 } }
+				}
+			}
+			capital = 613 # c_sarikei
+			
+			c_sarikei = { # 613
+				color={ 112 234 112 }
+				color2={ 255 255 255 }
+				
+				b_sarikei = {
+				}
+				b_meradong = {
+				}
+				b_julau = {
+				}
+				b_pakan = {
+				}
+				b_sarikei4 = {
+				}
+				b_sarikei5 = {
+				}
+				b_sarikei6 = {
+				}
+			}
+		}
+		d_sibu = {
+			color={ 103 165 99 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 614 province_id = 615 } }
+				}
+			}
+			capital = 614 # c_sibu
+			
+			c_sibu = { # 614
+				color={ 93 175 94 }
+				color2={ 255 255 255 }
+				
+				b_sibu = {
+				}
+				b_kanowit = {
+				}
+				b_sibu2 = {
+				}
+				b_sibu3 = {
+				}
+				b_sibu4 = {
+				}
+				b_sibu5 = {
+				}
+				b_sibu6 = {
+				}
+			}
+			c_selangau = { # 615
+				color={ 93 159 88 }
+				color2={ 255 255 255 }
+				
+				b_selangau = {
+				}
+				b_selangau1 = {
+				}
+				b_selangau2 = {
+				}
+				b_selangau3 = {
+				}
+				b_selangau4 = {
+				}
+				b_selangau5 = {
+				}
+				b_selangau6 = {
+				}
+			}
+		}
+		d_sri_aman = {
+			color={ 63 158 60 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 610 province_id = 611 province_id = 612 } }
+				}
+			}
+			capital = 610 # c_sri_aman
+			
+			c_sri_aman = { # 610
+				color={ 53 168 55 }
+				color2={ 255 255 255 }
+				
+				b_sri_aman = {
+				}
+				b_sri_aman1 = {
+				}
+				b_sri_aman2 = {
+				}
+				b_sri_aman3 = {
+				}
+				b_sri_aman4 = {
+				}
+				b_sri_aman5 = {
+				}
+				b_sri_aman6 = {
+				}
+			}
+			c_betong = { # 611
+				color={ 75 193 79 }
+				color2={ 255 255 255 }
+				
+				b_betong = {
+				}
+				b_pusa = {
+				}
+				b_saratok = {
+				}
+				b_betong3 = {
+				}
+				b_betong4 = {
+				}
+				b_betong5 = {
+				}
+				b_betong6 = {
+				}
+			}
+			c_lubok_antu = { # 612
+				color={ 101 216 103 }
+				color2={ 255 255 255 }
+				
+				b_lubok_antu = {
+				}
+				b_lubok_antu1 = {
+				}
+				b_lubok_antu2 = {
+				}
+				b_lubok_antu3 = {
+				}
+				b_lubok_antu4 = {
+				}
+				b_lubok_antu5 = {
+				}
+				b_lubok_antu6 = {
+				}
+			}
+		}
+	}
 }
 e_new_russia = {
 	color={ 252 246 56 }
