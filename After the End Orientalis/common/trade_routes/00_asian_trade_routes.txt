@@ -28,13 +28,13 @@ nutmeg_trade = {
 	}
 
 	path = {	#Jakarta to Palembang 
-		445 899 896 390
+		445 923 920 390
 	}
 	path = {	#Palembang to Singapore 
-		390 895 888 389
+		390 919 912 389
 	}
 	path = {	#Jakarta to Semarang 
-		445 900 456
+		445 924 456
 	}
 	path = {	#Semarang to Yogyakarta 
 		456 459 453
@@ -43,10 +43,10 @@ nutmeg_trade = {
 		456 460 461 463 462
 	}
 	path = {	#Surabaya to Denpasar 
-		462 902 903 556
+		462 926 927 556
 	}
 	path = {	#Yogyakarta to Denpasar 
-		453 901 904 556
+		453 925 928 556
 	}
 }
 maritime_silk_trade = {
@@ -95,16 +95,16 @@ maritime_silk_trade = {
 		320 957 955 763
 	}
 	path = {	#Phra Nakhon (Bangkok) to Pattani
-		739 955 956 790 797
+		763 955 956 790 797
 	}
 	path = {	#Pattani to Kota Bharu (Kelantan)
-		797 799 397
+		797 799 373
 	}
 	path = {	#Kota Bharu (Kelantan) to Singapore
-		397 816 915 913 912 413
+		373 916 915 913 912 389
 	}
 	path = {	#Singapore to Kuala Lumpur
-		413 910 339 337
+		389 910 339 337
 	}
 	path = {	#Kuala Lumpur to George Town (Penang)
 		337 340 909 363
@@ -148,12 +148,12 @@ royal_thai_road_trade = { #Thai Railways
 	trade_post_display_trigger = {
 		OR = {
 			province_id = 294 #Vientiane
-			province_id = 746 #Ayutthaya
-			province_id = 763 #Chumphon
-			province_id = 772 #Songkhla
-			province_id = 777 #Korat
-			province_id = 787 #Udon Thani
-			province_id = 799 #Chiang Mai
+			province_id = 770 #Ayutthaya
+			province_id = 787 #Chumphon
+			province_id = 796 #Songkhla
+			province_id = 801 #Korat
+			province_id = 811 #Udon Thani
+			province_id = 823 #Chiang Mai
 		}
 	}
 
@@ -171,6 +171,7 @@ royal_thai_road_trade = { #Thai Railways
 	start = {				# Start provinces of trade route
 		763 #Phra Nakhon (Bangkok)
 		770 #Ayutthaya
+		832 #Uttaradit
 	}
 
 	path = {	#Phra Nakhon (Bangkok) to Songkhla (Southern Railway) - International Line to Butterworth, Malaysia
@@ -198,11 +199,11 @@ royal_thai_road_trade = { #Thai Railways
 		770 775 818 820 822 832 830 827 828 823
 	}
 	path = {	#Golden Triangle - "Trade center" at Thailand-Laos-Myanmar Shan state. 
-		823 824 328
+		823 824 304
 	}
-	#path = {	#Uttaradit to Sukhothai (Northern Railway) - Nkh.Vientiane
-	#	832 817 #idk why it is like this. Can be uncommented if we really wanted better Sukhothai county.
-	#}
+	path = {	#Uttaradit to Sukhothai (Northern Railway) - Nkh.Vientiane
+		832 817 #idk why it is like this. Can be uncommented if we really wanted better Sukhothai county.
+	}
 }
 tokaido_trade = {
 	wealth = 100			# Total base wealth of Tokaido (Eastern) route
