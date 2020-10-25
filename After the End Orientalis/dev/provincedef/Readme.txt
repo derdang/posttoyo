@@ -1,4 +1,7 @@
 Unfinished Define -- README (by Poom)
+-- 25 October 2020 -- Sabah
+	- NOTE : Placeholder baronies.
+	Culture : Sabahan / Kadazandusun / Bajau / Bruneian / Moro
 -- 17 October 2020 -- Brunei & East Malaya 
 	- NOTE : Only Brunei and Sarawak are defined.
 			 Most of Sarawak baronies are numbered placeholder.
