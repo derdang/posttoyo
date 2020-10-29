@@ -786,7 +786,7 @@ pagan_group = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
-	muist = { #temporary
+	muist = {
 		graphical_culture = pagangfx
 		
 		icon = 54
@@ -823,7 +823,7 @@ pagan_group = {
 		religious_clothing_priest = 10
 		reformed = muist_reformed
 	}
-	muist_reformed = { #temporary
+	muist_reformed = {
 		graphical_culture = pagangfx
 		
 		icon = 54
@@ -831,7 +831,7 @@ pagan_group = {
 		
 		color = { 150 0 215 }
 
-		scripture_name = BON_PURI
+		scripture_name = XIBE_BIBLE
 		priest_title = MU
 		piety_name = GUT
 		
@@ -858,6 +858,73 @@ pagan_group = {
 		
 		religious_clothing_head = 6
 		religious_clothing_priest = 6
+	}
+	eastern_lightning = { #temporary
+		graphical_culture = westerngfx
+		
+		icon = 38
+		heresy_icon = 38
+		
+		color = { 100 20 111 }
+
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_THE_BLESSED_YANG GOD_THE_MESSIAH GOD_CHANGSHOU
+		}
+		
+		evil_god_names = {
+			RED_DRAGON SATAN LUCIFER THE_DEVIL
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		can_call_crusade = yes
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
+		reformed = eastern_lightning_reformed
+	}
+	eastern_lightning_reformed = { #temporary
+		graphical_culture = westerngfx
+		
+		icon = 39
+		heresy_icon = 40
+		
+		color = { 120 0 130 }
+
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_THE_BLESSED_YANG GOD_THE_MESSIAH GOD_CHANGSHOU
+		}
+		
+		evil_god_names = {
+			RED_DRAGON SATAN LUCIFER THE_DEVIL
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		can_call_crusade = yes
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
 	}
 }
 

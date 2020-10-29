@@ -8,7 +8,7 @@ character_event = {
 	only_rulers = yes
  
 	trigger = {
-		has_landed_title = d_cao_dai
+		has_landed_title = d_cao_dai #replaced with the papacy later
 		NOT = { has_global_flag = landmarks_set }
 		has_game_rule = {
 			name = orientalis_landmarks
@@ -18,12 +18,15 @@ character_event = {
 	}
  
 	option = {
-		136 = {
+		136 = {	#Vietnam
 			add_province_modifier = { name = landmark_hoan_kiem_lake duration = -1 }
 			add_province_modifier = { name = landmark_hcm_mausoleum duration = -1 }
 		}
 		146 = {
 			add_province_modifier = { name = landmark_ha_long_bay duration = -1 }
+		}
+		160 = {
+			add_province_modifier = { name = landmark_sa_pa_terrace_farms duration = -1 }
 		}
 		161 = {
 			add_province_modifier = { name = landmark_forbidden_city_vn duration = -1 }
@@ -39,8 +42,20 @@ character_event = {
 		183 = {
 			add_province_modifier = { name = landmark_tay_ninh_cathedral duration = -1 }
 		}
+		191 = {
+			add_province_modifier = { name = landmark_an_binh_island duration = -1 }
+		}
 		194 = {
 			add_province_modifier = { name = landmark_sam_mountain duration = -1 }
+		}
+		785 = { #Thailand
+			add_province_modifier = { name = landmark_old_city_of_ayutthaya duration = -1 }
+		}
+		832 = {
+			add_province_modifier = { name = landmark_old_city_of_sukhothai duration = -1 }
+		}
+		838 = {
+			add_province_modifier = { name = landmark_doi_suthep duration = -1 }
 		}
 		set_global_flag = landmarks_set
 	}
