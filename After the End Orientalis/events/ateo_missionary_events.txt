@@ -16,13 +16,12 @@ narrative_event = {
 
 	is_triggered_only = yes
 	
-	
 	trigger = {
 		character = c_2877007 #Nguyen Minh Mac
 	}
 	
-	mean_time_to_happen = {
-		days = 1
+	weight_multiplier = {
+		days = 2
 	}
 
 	option = {
@@ -65,6 +64,10 @@ narrative_event = {
 	
 	trigger = {
 		character = c_1178000 #The Fire King
+	}
+	
+	weight_multiplier = {
+		days = 2
 	}
 
 	option = {
