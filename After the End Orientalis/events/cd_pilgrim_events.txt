@@ -39,9 +39,6 @@ narrative_event = {
 	picture = GFX_evt_pilgrims_epic_journey
 
 	is_triggered_only = yes
-	weight_multiplier = {
-		days = 2
-	}
 
 	option = {
 		name = EVTOPT_cd_pilgrim_prep_cancel
@@ -144,8 +141,6 @@ narrative_event = {
 }
 character_event = {
 	id = cd_pilgrim.5
-	desc = EVTDESC_bounce
-	picture = GFX_evt_cao_dai
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -188,7 +183,7 @@ narrative_event = {
 				has_character_flag = vis_saint_quanam
 			}
 		}
-		character_event = { id = cd_pilgrim.7 }
+		narrative_event = { id = cd_pilgrim.7 }
 		ai_chance = { factor = 50 }
 	}
 	option = {
@@ -200,7 +195,7 @@ narrative_event = {
 				has_character_flag = vis_saint_victor_hugo
 			}
 		}
-		character_event = { id = cd_pilgrim.8 }
+		narrative_event = { id = cd_pilgrim.8 }
 		ai_chance = { factor = 50 }
 	}
 	option = {
@@ -212,7 +207,7 @@ narrative_event = {
 				has_character_flag = vis_saint_lenin
 			}
 		}
-		character_event = { id = cd_pilgrim.9 }
+		narrative_event = { id = cd_pilgrim.9 }
 		ai_chance = { factor = 50 }
 	}
 	option = {
@@ -224,7 +219,7 @@ narrative_event = {
 				has_character_flag = vis_saint_pasteur
 			}
 		}
-		character_event = { id = cd_pilgrim.10 }
+		narrative_event = { id = cd_pilgrim.10 }
 		ai_chance = { factor = 50 }
 	}
 }
@@ -241,16 +236,7 @@ narrative_event = {
 		add_trait = saint_faith
 		change_learning = 1
 		change_diplomacy = 1
-		if = {
-			has_character_flag = vis_saint_joan
-			
-			random list = {
-			
-			20 = {change_martial = 1}
-			80 = {}
-			
-			}
-		}
+		
 		random_list = {
 		
 		20 = {add_trait = erudite}
@@ -395,7 +381,6 @@ narrative_event = {
 		remove_trait = on_pilgrimage
 		if = {
 			limit = { higher_tier_than = BARON }
-			religion_authority = { modifier = ruler_pilgrimage }
 		}
 	}
 }

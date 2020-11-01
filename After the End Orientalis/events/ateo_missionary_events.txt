@@ -30,7 +30,7 @@ narrative_event = {
 		wealth = 100
 		
 		c_1178000 = {
-			has_landed_title = d_gia_lai
+			set_character_flag = not_recieve_mission
 		}
 		ai_chance = { factor = 1 }
 	}
@@ -41,7 +41,6 @@ narrative_event = {
 		wealth = -50
 		
 		c_1178000 = {
-			has_landed_title = d_gia_lai
 			set_character_flag = recieved_mission
 		}
 		
@@ -50,24 +49,20 @@ narrative_event = {
 			80 = { }
 		}
 		set_character_flag = sent_mission
-		narrative_event = { id = atemo.2 days = 7 random = 10 }
+		narrative_event = { id = ateom.2 }
 		ai_chance = { factor = 5 }
 	}
 }
 narrative_event = {
 	id = ateom.2
 	title = ateom2
-	desc = ateom1_desc
+	desc = ateom2_desc
 	picture = GFX_evt_china_golden_age
 
 	is_triggered_only = yes
 	
 	trigger = {
 		character = c_1178000 #The Fire King
-	}
-	
-	weight_multiplier = {
-		days = 2
 	}
 
 	option = {
@@ -76,7 +71,6 @@ narrative_event = {
 		wealth = 100
 		religion = catholic
 		c_2877007 = {
-			has_landed_title = k_thuan_hoa
 			set_character_flag = accepted_mission
 		}
 		ai_chance = { factor = 2 }
@@ -89,7 +83,6 @@ narrative_event = {
 		religion = concordanist
 		
 		c_2877007 = {
-			has_landed_title = k_thuan_hoa
 			set_character_flag = accepted_mission
 		}
 		
@@ -105,7 +98,6 @@ narrative_event = {
 		piety = 100
 		
 		c_2877007 = {
-			has_landed_title = k_thuan_hoa
 			set_character_flag = rejected_mission
 		}
 		
