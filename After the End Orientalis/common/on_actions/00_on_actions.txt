@@ -1501,7 +1501,6 @@ on_siege_over_winner = {
 		RIP.11702 # Prosperity lost when sieged
 		RIP.11713 # Monument to Glory teardown
 		HL.4813 # Nomads may pillage holdings on siege
-		MNM.6222 # Assassins occupy holding
 		MNM.7111 # Devil Worshipers desecrate holding
 		MNM.9900 # Chance to steal artifact from capital holdings
 		HF.23473 # Destroy Tribal Great Pillar
@@ -1832,9 +1831,6 @@ on_death = {
 		532 #Clears regents if heir has one already
 		RIP.4400 #Nicknames for executions
 		GR.10
-		MNM.6844 #Removes mark of death block for Assassins GM
-		MNM.6991 #Clears any quests targeting this character
-		MNM.6012 #Transfers assassins debt to heir
 		MNM.1415 #Announces hermetics apprentice death
 		#SoA.3091 # The Death of the Demon Child?
 		MNM.9030 # Notify of dead relic hunter
@@ -2642,7 +2638,6 @@ on_reform_religion = {
 on_county_religion_change = {
 	events = {
 		SoA.4121
-		MNM.6206 #Convert province assassin quest
 	}
 }
 
@@ -2720,7 +2715,6 @@ on_new_holder = {
 		RIP.12098 #check if we need to remove in_seclusion.
 		RIP.11715 #Removes crown focus on new holder
 		533
-		MNM.6990 #Makes sure d_hashshashin owner is always shiite & member of the_assassins
 		MNM.1215 # The Hermetics Scrying Power result (for new holder)
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
 		HFP.41053 # Check Beneficiaries
@@ -2752,7 +2746,6 @@ on_new_holder_inheritance = {
 		HL.140 #Landless nomad gains a title.
 		RIP.11715 #Removes crown focus on new holder
 		533
-		MNM.6990 #Makes sure d_hashshashin owner is always shiite & member of the_assassins
 		MNM.1215 # The Hermetics Scrying Power result (for new holder)
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
 		JD.60204 # Rebel General's Empire continues temple names, triggers for any title with the uses_temple_names_by_script title flag
@@ -2784,7 +2777,6 @@ on_new_holder_usurpation = {
 		CM.10022
 		RIP.11715 #Removes crown focus on new holder
 		533
-		MNM.6990 #Makes sure d_hashshashin owner is always shiite & member of the_assassins
 		MNM.1215 # The Hermetics Scrying Power result (for new holder)
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
 #		MNM.6230 # Clearing covert province quest if new owner
@@ -3111,7 +3103,6 @@ on_province_major_modifier = {
 # Fires every two years for characters who are members of any society
 on_society_bi_yearly_pulse = {
 	events = {
-		MNM.6199 # Assassins quest tombola
 		MNM.7200 # Devil Worshipers quest tombola
 		MNM.4000 # Monastic order quest tombola
 		MNM.3000 # Secret religious society quest tombola
