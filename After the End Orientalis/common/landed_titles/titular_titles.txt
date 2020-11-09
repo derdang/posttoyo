@@ -4,6 +4,10 @@ e_lan_xang = {
 	
 	capital = 294 #Vientiane
 	culture = laotian
+	
+	allow = {
+		culture = laotian
+	}
 }
 e_chakrphup_khmer = {
 	color = { 150 25 25 }
@@ -11,6 +15,10 @@ e_chakrphup_khmer = {
 	
 	capital = 328 #Angkor
 	culture = khmer
+	
+	allow = {
+		culture_group = cambodian
+	}
 }
 e_commonwealth = {
 	color = { 0 53 169 }
