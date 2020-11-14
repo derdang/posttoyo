@@ -63,4 +63,34 @@ karenic = {
 
 		modifier = default_culture_modifier
 	}
+	Pa'O = {
+		graphical_cultures = { chinesegfx }
+		unit_graphical_cultures = { chinesegfx  }
+
+		dynasty_name_first = yes
+		
+		color = { 0 200 0 }
+		
+		male_names = { "Ve P'hu"
+		
+		}
+		
+		female_names = { "The Plo"
+		
+		}
+
+		from_dynasty_prefix = ""
+
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+		
+		used_for_random = no
+
+		modifier = default_culture_modifier
+	}
 }
