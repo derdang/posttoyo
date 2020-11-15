@@ -29,6 +29,9 @@
 #110	Nguyen Bien Khiem (Saint of Balance and Divination)
 #111	Louis Pasteur (Saint of Balance and Soul)
 
+AI Only Event
+#200	AI Gets Seance Trait
+
 ###############################################################
 namespace = cd_pilgrim
 
@@ -577,5 +580,31 @@ character_event = {
 	option = { 
 		name = OK
 		narrative_event = { id = cd_pilgrim.6 days = 2 }
+	}	
+}
+
+character_event = {
+	id = cd_pilgrim.200
+	title = EVTNAME_seance_trait_recieved
+	desc = EVTDESC_seance_trait_recieved
+	picture = GFX_evt_cao_dai
+	hide_window = yes
+	
+	trigger = {
+		ai = yes
+		religion = cao_dai
+		age >= 16
+	}
+	immediate = {
+		random_list = {
+			# potential seance traits
+			25 = { add_trait = saint_faith }
+			25 = { add_trait = saint_balance }
+			25 = { add_trait = saint_power }
+			25 = { add_trait = saint_wisdom }
+			}
+		}
+	}
+	option = { 
 	}	
 }
