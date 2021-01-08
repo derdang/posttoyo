@@ -19674,9 +19674,11 @@ e_burma = {
 	thai_central = "Phama"
 	thai_isan = "Phama"
 	thai_paktai = "Phama"
+	
 	k_bago = {
 		color={ 46 47 31 }
 		color2={ 255 255 255 }
+		
 		thai_mueang = "Phako"
 		thai_central = "Hongsawaddi"
 		thai_isan = "Phako"
@@ -19688,10 +19690,18 @@ e_burma = {
 		d_tenasserim = {
 			color={ 26 67 21 }
 			color2={ 255 255 255 }
+			
 			thai_mueang = "Tanao Si"
 			thai_central = "Tanao Si"
 			thai_isan = "Tanao Si"
 			thai_paktai = "Tanao Si"
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 869 province_id = 870 province_id = 871 } }
+				}
+			}
 			capital = 869 # c_kawthoung
 			
 			c_kawthoung = { # 869
@@ -19701,11 +19711,12 @@ e_burma = {
 				thai_central = "Koh Saung"
 				thai_isan = "Koh Saung"
 				thai_paktai = "Koh Saung"
+				
 				b_kawthoung = {
-				thai_mueang = "Koh Saung"
-				thai_central = "Koh Saung"
-				thai_isan = "Koh Saung"
-				thai_paktai = "Koh Saung"
+					thai_mueang = "Koh Saung"
+					thai_central = "Koh Saung"
+					thai_isan = "Koh Saung"
+					thai_paktai = "Koh Saung"
 				}
 				b_pyi_taw_ei = {
 				}
@@ -19723,6 +19734,7 @@ e_burma = {
 			c_dawei = { # 871
 				color={ 0 116 0 }
 				color2={ 255 255 255 }
+				
 				thai_mueang = "Thawai"
 				thai_central = "Thawai"
 				thai_isan = "Thawai"
@@ -19746,10 +19758,12 @@ e_burma = {
 			c_myiek = { # 870
 				color={ 61 114 61 }
 				color2={ 255 255 255 }
+				
 				thai_mueang = "Marit"
 				thai_central = "Marit"
 				thai_isan = "Marit"
 				thai_paktai = "Marit"
+				
 				b_myeik = {
 				}
 				b_hta_we_su = {
@@ -19770,12 +19784,20 @@ e_burma = {
 			color={ 101 184 106 }
 			color2={ 255 255 255 }
 			
-			capital = 887 # c_pathien
 			thai_mueang = "Irrawaddy"
 			thai_central = "Irrawaddy"
 			thai_isan = "Irrawaddy"
 			thai_paktai = "Irrawaddy"
-			c_pathien = { # 887
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 886 province_id = 887 province_id = 888 province_id = 889 province_id = 890 } }
+				}
+			}
+			capital = 886 # c_pathien
+			
+			c_pathien = { # 886
 				color={ 111 174 111 }
 				color2={ 255 255 255 }
 				
@@ -19794,7 +19816,7 @@ e_burma = {
 				b_ngapudaw = {
 				}
 			}
-			c_hinthada = { # 891
+			c_hinthada = { # 890
 				color={ 92 183 92 }
 				color2={ 255 255 255 }
 				
@@ -19813,7 +19835,7 @@ e_burma = {
 				b_ingapu = {
 				}
 			}
-			c_maubin = { # 890
+			c_maubin = { # 889
 				color={ 95 184 95 }
 				color2={ 255 255 255 }
 				
@@ -19832,7 +19854,7 @@ e_burma = {
 				b_wadaw = {
 				}
 			}
-			c_myuangmya = { # 889
+			c_myuangmya = { # 888
 				color={ 48 138 48 }
 				color2={ 255 255 255 }
 				
@@ -19851,7 +19873,7 @@ e_burma = {
 				b_konsa = {
 				}
 			}
-			c_pyapon = { # 888
+			c_pyapon = { # 887
 				color={ 30 111 30 }
 				color2={ 255 255 255 }
 				
@@ -19875,26 +19897,36 @@ e_burma = {
 			color={ 33 78 28 }
 			color2={ 255 255 255 }
 			
-			capital = 883 # c_bago
 			thai_mueang = "Phako"
 			thai_central = "Phako"
 			thai_isan = "Phako"
 			thai_paktai = "Phako"
 			mon = "Phako"
-			c_bago = { # 883
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 882 province_id = 883 province_id = 884 province_id = 885 } }
+				}
+			}
+			capital = 882 # c_bago
+			
+			c_bago = { # 882
 				color={ 23 88 23 }
 				color2={ 255 255 255 }
+				
 				thai_mueang = "Phako"
 				thai_central = "Hongsawaddi"
 				thai_isan = "Phako"
 				thai_paktai = "Phako"
 				mon = "Hongsawatoi"
+				
 				b_hongsawatoi = {
-				thai_mueang = "Phako"
-				thai_central = "Hongsawaddi"
-				thai_isan = "Phako"
-				thai_paktai = "Phako"
-				mon = "Hongsawatoi"
+					thai_mueang = "Phako"
+					thai_central = "Hongsawaddi"
+					thai_isan = "Phako"
+					thai_paktai = "Phako"
+					mon = "Hongsawatoi"
 				}
 				b_kanbawzathadi = {
 				}
@@ -19909,18 +19941,19 @@ e_burma = {
 				b_kyauktaga = {
 				}
 			}
-			c_pyay = { # 885
+			c_pyay = { # 884
 				color={ 23 99 23 }
 				color2={ 255 255 255 }
 				thai_mueang = "Prae"
 				thai_central = "Prae"
 				thai_isan = "Prae"
 				thai_paktai = "Prae"
+				
 				b_pyay = {
-				thai_mueang = "Prae"
-				thai_central = "Prae"
-				thai_isan = "Prae"
-				thai_paktai = "Prae"
+					thai_mueang = "Prae"
+					thai_central = "Prae"
+					thai_isan = "Prae"
+					thai_paktai = "Prae"
 				}
 				b_shwesandaw = {
 				}
@@ -19935,7 +19968,7 @@ e_burma = {
 				b_padaung = {
 				}
 			}
-			c_taungoo = { # 884
+			c_taungoo = { # 883
 				color={ 9 65 9 }
 				color2={ 255 255 255 }
 				
@@ -19954,18 +19987,19 @@ e_burma = {
 				b_yedashe = {
 				}
 			}
-			c_thayarwaddy = { # 886
+			c_thayarwaddy = { # 885
 				color={ 28 95 28 }
 				color2={ 255 255 255 }
 				thai_mueang = "Sarawaddy"
 				thai_central = "Sarawaddy"
 				thai_isan = "Sarawaddy"
 				thai_paktai = "Sarawaddy"
+				
 				b_thayarwaddy = {
-				thai_mueang = "Sarawaddy"
-				thai_central = "Sarawaddy"
-				thai_isan = "Sarawaddy"
-				thai_paktai = "Sarawaddy"
+					thai_mueang = "Sarawaddy"
+					thai_central = "Sarawaddy"
+					thai_isan = "Sarawaddy"
+					thai_paktai = "Sarawaddy"
 				}
 				b_gyobingauk = {
 				}
@@ -19985,11 +20019,19 @@ e_burma = {
 			color={ 107 181 119 }
 			color2={ 255 255 255 }
 			
-			capital = 874 # c_kawkereik
 			thai_mueang = "Pa-an"
 			thai_central = "Pa-an"
 			thai_isan = "Pa-an"
 			thai_paktai = "Pa-an"
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 874 province_id = 875 province_id = 876 province_id = 877 } }
+				}
+			}
+			capital = 874 # c_kawkereik
+			
 			c_kawkereik = { # 874
 				color={ 117 171 124 }
 				color2={ 255 255 255 }
@@ -20016,7 +20058,12 @@ e_burma = {
 				thai_central = "Pa-an"
 				thai_isan = "Pa-an"
 				thai_paktai = "Pa-an"
+				
 				b_hpa_an = {
+					thai_mueang = "Pa-an"
+					thai_central = "Pa-an"
+					thai_isan = "Pa-an"
+					thai_paktai = "Pa-an"
 				}
 				b_kyauk_ka_lat = {
 				}
@@ -20034,10 +20081,7 @@ e_burma = {
 			c_hpapun = { # 877
 				color={ 117 164 124 }
 				color2={ 255 255 255 }
-				thai_mueang = "Pa-pun"
-				thai_central = "Pa-pun"
-				thai_isan = "Pa-pun"
-				thai_paktai = "Pa-pun"
+				
 				b_hpapun = {
 				}
 				b_kamamaung = {
@@ -20056,6 +20100,7 @@ e_burma = {
 			c_myawaddy = { # 876
 				color={ 110 174 119 }
 				color2={ 255 255 255 }
+				
 				b_myawaddy = {
 				}
 				b_mepale = {
@@ -20075,7 +20120,13 @@ e_burma = {
 		d_thanton = {
 			color={ 200 9 175 }
 			color2={ 255 255 255 }
-			thai_central = "Saturm"
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 872 province_id = 873 } }
+				}
+			}
 			capital = 872 # c_mawlamyine
 			
 			c_mawlamyine = { # 872
@@ -20085,11 +20136,12 @@ e_burma = {
 				thai_central = "Mawlamleung"
 				thai_isan = "Mawlamleung"
 				thai_paktai = "Mawlamleung"
+				
 				b_moulmein = {
-				thai_mueang = "Malamaeng"
-				thai_central = "Mawlamleung"
-				thai_isan = "Mawlamleung"
-				thai_paktai = "Mawlamleung"
+					thai_mueang = "Malamaeng"
+					thai_central = "Mawlamleung"
+					thai_isan = "Mawlamleung"
+					thai_paktai = "Mawlamleung"
 				}
 				b_kyaikthanlan = {
 				}
@@ -20108,8 +20160,9 @@ e_burma = {
 				color={ 170 222 136 }
 				color2={ 255 255 255 }
 				thai_central = "Saturm"
+				
 				b_thanton = {
-				thai_central = "Saturm"
+					thai_central = "Saturm"
 				}
 				b_kyaikhtisaung = {
 				}
@@ -20132,9 +20185,16 @@ e_burma = {
 			thai_central = "Yangkung"
 			thai_isan = "Yangkung"
 			thai_paktai = "Yangkung"
-			capital = 879 # c_twante
 			
-			c_twante = { # 879
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 878 province_id = 879 province_id = 880 province_id = 881 } }
+				}
+			}
+			capital = 878 # c_twante
+			
+			c_twante = { # 878
 				color={ 45 70 45 }
 				color2={ 255 255 255 }
 				
@@ -20153,13 +20213,14 @@ e_burma = {
 				b_seng = {
 				}
 			}
-			c_east_yangon = { # 880
+			c_east_yangon = { # 879
 				color={ 48 85 48 }
 				color2={ 255 255 255 }
 				thai_mueang = "East Yangkung"
 				thai_central = "East Yangkung"
 				thai_isan = "East Yangkung"
 				thai_paktai = "East Yangkung"
+				
 				b_new_lagun = {
 				}
 				b_botataung = {
@@ -20175,7 +20236,7 @@ e_burma = {
 				b_dawbon = {
 				}
 			}
-			c_hlaingthaya = { # 882
+			c_hlaingthaya = { # 881
 				color={ 28 47 28 }
 				color2={ 255 255 255 }
 				
@@ -20194,13 +20255,14 @@ e_burma = {
 				b_htantabin = {
 				}
 			}
-			c_west_yangon = { # 881
+			c_west_yangon = { # 880
 				color={ 67 100 67 }
 				color2={ 255 255 255 }
 				thai_mueang = "West Yangkung"
 				thai_central = "West Yangkung"
 				thai_isan = "West Yangkung"
 				thai_paktai = "West Yangkung"
+				
 				b_lagun = {
 				}
 				b_mahavijaya = {
@@ -20223,23 +20285,29 @@ e_west_micronesia = {
 	color={ 40 1 143 }
 	color2={ 255 255 20 }
 	
-	capital = 853 # c_guam
+	capital = 891 # c_guam
 	culture = chamorro
 	
 	k_mariana = {
 		color={ 30 11 138 }
 		color2={ 255 255 255 }
 		
-		capital = 853 # c_guam
+		capital = 891 # c_guam
 		culture = chamorro
 		
 		d_guam = {
 			color={ 10 31 128 }
 			color2={ 255 255 255 }
 			
-			capital = 853 # c_guam
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 891 } }
+				}
+			}
+			capital = 891 # c_guam
 			
-			c_guam = { # 853
+			c_guam = { # 891
 				color={ 0 41 123 }
 				color2={ 255 255 255 }
 				
@@ -20263,9 +20331,15 @@ e_west_micronesia = {
 			color={ 10 103 193 }
 			color2={ 255 255 255 }
 			
-			capital = 854 # c_northern_mariana
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 892 } }
+				}
+			}
+			capital = 892 # c_northern_mariana
 			
-			c_northern_mariana = { # 854
+			c_northern_mariana = { # 892
 				color={ 0 113 188 }
 				color2={ 255 255 255 }
 				
@@ -20290,16 +20364,22 @@ e_west_micronesia = {
 		color={ 42 24 154 }
 		color2={ 255 255 255 }
 		
-		capital = 855 # c_palau
+		capital = 893 # c_palau
 		culture = palauan
 		
 		d_palau = {
 			color={ 22 44 144 }
 			color2={ 255 255 255 }
 			
-			capital = 855 # c_palau
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 893 } }
+				}
+			}
+			capital = 893 # c_palau
 			
-			c_palau = { # 855
+			c_palau = { # 893
 				color={ 12 54 139 }
 				color2={ 255 255 255 }
 				
@@ -20323,9 +20403,15 @@ e_west_micronesia = {
 			color={ 26 45 138 }
 			color2={ 255 255 255 }
 			
-			capital = 856 # c_yap_state
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 894 } }
+				}
+			}
+			capital = 894 # c_yap_state
 			
-			c_yap_state = { # 856
+			c_yap_state = { # 894
 				color={ 16 55 133 }
 				color2={ 255 255 255 }
 				
@@ -20351,23 +20437,29 @@ e_maha_andaman = {
 	color={ 215 133 41 }
 	color2={ 255 255 20 }
 	
-	capital = 896 # c_south_andaman
+	capital = 895 # c_south_andaman
 	culture = andamanese
 	
 	k_andaman_nicobar = {
 		color={ 225 123 46 }
 		color2={ 255 255 255 }
 		
-		capital = 896 # c_south_andaman
+		capital = 895 # c_south_andaman
 		culture = andamanese
 		
 		d_south_andaman = {
 			color={ 245 103 56 }
 			color2={ 255 255 255 }
 			
-			capital = 896 # c_south_andaman
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 895 province_id = 898 province_id = 899 } }
+				}
+			}
+			capital = 895 # c_south_andaman
 			
-			c_south_andaman = { # 896
+			c_south_andaman = { # 895
 				color={ 255 93 61 }
 				color2={ 255 255 255 }
 				
@@ -20386,7 +20478,7 @@ e_maha_andaman = {
 				b_north_sentinel = {
 				}
 			}
-			c_havelock_island = { # 900
+			c_havelock_island = { # 899
 				color={ 224 100 76 }
 				color2={ 255 255 255 }
 				
@@ -20405,7 +20497,7 @@ e_maha_andaman = {
 				b_swaraj = {
 				}
 			}
-			c_little_andaman = { # 899
+			c_little_andaman = { # 898
 				color={ 232 93 28 }
 				color2={ 255 255 255 }
 				
@@ -20429,9 +20521,15 @@ e_maha_andaman = {
 			color={ 219 117 77 }
 			color2={ 255 255 255 }
 			
-			capital = 901 # c_nicobar
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 900 } }
+				}
+			}
+			capital = 900 # c_nicobar
 			
-			c_nicobar = { # 901
+			c_nicobar = { # 900
 				color={ 229 107 82 }
 				color2={ 255 255 255 }
 				
@@ -20455,9 +20553,15 @@ e_maha_andaman = {
 			color={ 245 99 51 }
 			color2={ 255 255 255 }
 			
-			capital = 897 # c_north_andaman
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 896 province_id = 897 } }
+				}
+			}
+			capital = 896 # c_north_andaman
 			
-			c_north_andaman = { # 897
+			c_north_andaman = { # 896
 				color={ 255 89 56 }
 				color2={ 255 255 255 }
 				
@@ -20476,7 +20580,7 @@ e_maha_andaman = {
 				b_ross_island = {
 				}
 			}
-			c_middle_andaman = { # 898
+			c_middle_andaman = { # 897
 				color={ 255 110 81 }
 				color2={ 255 255 255 }
 				
