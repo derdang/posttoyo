@@ -35,6 +35,7 @@ feudal_governments = {
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = mandala_government }
 			NOT = { is_government_potential = malaysian_confederacy }
+			NOT = { is_government_potential = sinic_bureaucracy_government}
 			NAND = { 
 				culture_group = tibetan_group
 				OR = {
@@ -537,7 +538,10 @@ feudal_governments = {
 					culture_group = chamic
 				}
 				OR = {
-					religion_group = buddhist_group
+					AND = {
+						religion_group = buddhist_group
+						NOT = {religion = mahayana}
+					}
 					religion = ua_dab
 					religion = ua_dab_reformed
 					religion_group = indian_group
@@ -633,5 +637,66 @@ feudal_governments = {
 
 		## Modifiers
 		court_size_modifier = 10
+	}
+	sinic_bureaucracy_government = {
+		preferred_holdings = { CASTLE CITY }
+		allowed_holdings = {
+			CASTLE
+			CITY
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			feudal_government
+			ghazi_government
+			bureaucratic_muslim_government
+			theocratic_feudal_government
+		}
+		free_revoke_on_tiers = {
+			duke
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_chineseimperial"
+		potential = {
+			NOT = { is_government_potential = mandala_government }
+			AND = { 
+				OR = {
+					culture_group = viet
+					culture_group = korean
+				}
+				OR = {
+					religion = mahayana
+					religion = ua_dab
+					religion = ua_dab_reformed
+					religion_group = eastern
+				}
+				higher_tier_than = BARON
+			}
+		}
+		
+		color = { 218 37 29 }
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 200
+		
+		can_demand_religious_conversion = no
+		gets_religion_opinion_penalties = no
+		gives_religion_opinion_penalties = no
+		vassal_government_opinion_penalties = no
+		marriage_ignore_religion = yes
+		
+		vassal_limit = 10
+		
+		## Modifiers
+		court_size_modifier = 15
 	}
 }

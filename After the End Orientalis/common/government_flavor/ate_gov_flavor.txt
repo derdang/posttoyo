@@ -1,0 +1,58 @@
+government_flavor = {
+	name = gov_elective_ghazi_state
+	graphics = GFX_evt_battle
+	priority = 2
+	trigger = {
+		government = ghazi_government
+		NOR = { has_law = succ_gavelkind has_law = succ_elective_gavelkind }
+		NOT = { tier = EMPEROR }
+		NOT = { has_landed_title = k_aceh }
+	}
+}
+
+government_flavor = {
+	name = gov_noble_ghazi_state
+	graphics = GFX_evt_battle
+	priority = 2
+	trigger = {
+		government = ghazi_government
+		OR = { has_law = succ_gavelkind has_law = succ_elective_gavelkind }
+		NOT = { tier = EMPEROR }
+		NOT = { has_landed_title = k_aceh }
+	}
+}
+
+government_flavor = {
+	name = gov_exalted_ghazi_state
+	graphics = GFX_evt_emissary_arabic
+	priority = 2
+	trigger = {
+		government = ghazi_government
+		tier = EMPEROR
+		NOT = { has_landed_title = k_aceh }
+	}
+}
+
+government_flavor = {
+	name = gov_islamic_republic
+	graphics = GFX_evt_carriage_arabic
+	priority = 2
+	trigger = {
+		religion_group = muslim
+		OR = {
+			government = merchant_republic_government
+			government = republic_government
+		}
+		NOT = { has_landed_title = k_aceh }
+	}
+}
+
+government_flavor = {
+	name = gov_ghazi_caliphate
+	graphics = GFX_evt_carriage_arabic
+	priority = 2
+	trigger = {
+		government = ghazi_government
+		has_landed_title = k_aceh
+	}
+}

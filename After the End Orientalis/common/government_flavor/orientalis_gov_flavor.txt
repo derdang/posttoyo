@@ -1,0 +1,66 @@
+government_flavor = {
+	name = gov_elective_malaysian_princely_states
+	graphics = GFX_evt_china_golden_age
+	priority = 2
+	trigger = {
+		government = malaysian_confederacy
+		has_law = succ_confederation_elective
+		has_landed_title = e_malaysia
+	}
+}
+government_flavor = {
+	name = gov_mandala_noble_state
+	graphics = GFX_evt_white_elephant
+	priority = 2
+	trigger = {
+		government = mandala_government
+		NOR = { has_law = succ_gavelkind has_law = succ_elective_gavelkind }
+	}
+}
+government_flavor = {
+	name = gov_mandala_princely_state
+	graphics = GFX_evt_white_elephant
+	priority = 2
+	trigger = {
+		government = mandala_government
+		OR = { has_law = succ_gavelkind has_law = succ_elective_gavelkind }
+	}
+}
+government_flavor = {
+	name = gov_mandala_princely_hegemony
+	graphics = GFX_evt_white_elephant
+	priority = 1
+	trigger = {
+		government = mandala_government
+		tier = emperor
+	}
+}
+government_flavor = {
+	name = gov_buddhist_republic
+	graphics = GFX_evt_cathedral_indian_group
+	priority = 2
+	trigger = {
+		religion_group = buddhist_group
+		OR = {
+			government = merchant_republic_government
+			government = republic_government
+		}
+	}
+}
+government_flavor = {
+	name = gov_sinic_bureaucracy_realm
+	graphics = GFX_evt_china_golden_age
+	priority = 1
+	trigger = {
+		government = sinic_bureaucracy_government
+	}
+}
+government_flavor = {
+	name = gov_sinic_bureaucracy_hegemony
+	graphics = GFX_evt_china_golden_age
+	priority = 1
+	trigger = {
+		government = sinic_bureaucracy_government
+		tier = emperor
+	}
+}
