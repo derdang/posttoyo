@@ -127,7 +127,16 @@ categories =  {
 
 		supply_limit = 2
 		bottleneck_chance = 5
-	}	
+	}
+	
+	farm_terrace = {
+		movement_cost = 1.5
+		defence = 1
+		max_attrition = 0.1
+		color = { 213 144 199 }
+		supply_limit = 4
+		bottleneck_chance = 10
+	}
 }
 
 text_0	= { type = plains    color = { 	 0	 } priority = 	0	 }
@@ -152,3 +161,4 @@ text_15	= { type = coastal_desert color = { 	15	 } priority = 	15	 }
 
 # Need to be here to identify forest
 text_16	= { type = forest color = { 	16	 } priority = 	16	 }
+text_17	= { type = farmlands color = { 	17	 } priority = 	17	 }
