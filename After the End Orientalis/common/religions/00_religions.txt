@@ -1811,6 +1811,38 @@ oldworld = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
+	jibenyuanze = { #temporary
+		graphical_culture = muslimgfx
+		
+		icon = 11
+		
+		color = { 0.3 0.3 0.8 }
+
+		scripture_name = THE_SIXTH_CLASSIC
+		
+		high_god_name = GOD_THE_BRILLIANT_STAR
+		
+		god_names = {
+			GOD_GRAND_HARMONIZER THE_PEOPLE THE_NATION GOD_TIAN GOD_KONGFUZI
+		}
+		evil_god_names = {
+			CHINA_AMERICA DAJI_SIX IMPERIALISM
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
 }
 nautical = {
 	has_coa_on_barony_only = yes
