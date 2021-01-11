@@ -10193,6 +10193,7 @@ e_siam = {
 			c_phra_nakhon = { # 778
 				color={ 248 247 66 }
 				color2={ 255 255 255 }
+				holy_site = dharmayuttika
 				
 				tonkinese = "Bang Coc"
 				annamese = "Bang Coc"
@@ -10282,7 +10283,7 @@ e_siam = {
 			color={ 169 177 88 }
 			color2={ 255 255 255 }
 			
-			capital = 784 # c_suphanburi
+			capital = 785 # c_ayutthaya
 			
 			c_suphanburi = { # 784
 				color={ 179 167 93 }
@@ -10306,7 +10307,7 @@ e_siam = {
 			c_ayutthaya = { # 785
 				color={ 242 203 41 }
 				color2={ 255 255 255 }
-				
+				holy_site = dharmayuttika
 				b_nakhon_luang = {
 				}
 				b_phra_nakhon_si_ayutthaya = {
@@ -11087,7 +11088,8 @@ e_siam = {
 			c_chiang_mai = { # 838
 				color={ 226 0 255 }
 				color2={ 255 255 255 }
-				
+				holy_site = dharmayuttika
+				#holy_site = parimatira
 				laotian = "Xiangmai"
 				b_chiang_mai = {
 				laotian = "Xiangmai"
@@ -20722,6 +20724,8 @@ e_burma = {
 				thai_paktai = "Phako"
 				mon = "Hongsawatoi"
 				
+				holy_site = dharmayuttika
+				#holy_site = parimatira
 				b_hongsawatoi = {
 					thai_mueang = "Phako"
 					thai_central = "Hongsawaddi"
@@ -21063,7 +21067,8 @@ e_burma = {
 				thai_central = "West Yangkung"
 				thai_isan = "West Yangkung"
 				thai_paktai = "West Yangkung"
-				
+				holy_site = dharmayuttika
+				#holy_site = parimatira
 				b_lagun = {
 				}
 				b_mahavijaya = {
