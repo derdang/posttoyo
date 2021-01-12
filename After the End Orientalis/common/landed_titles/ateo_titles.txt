@@ -11089,7 +11089,7 @@ e_siam = {
 				color={ 226 0 255 }
 				color2={ 255 255 255 }
 				holy_site = dharmayuttika
-				#holy_site = parimatira
+				holy_site = parimatira
 				laotian = "Xiangmai"
 				b_chiang_mai = {
 				laotian = "Xiangmai"
@@ -20467,6 +20467,1141 @@ e_dongbei = {
 		}
 	}
 }
+e_liangguang = {
+	color={ 163 251 100 }
+	color2={ 255 255 20 }
+	
+	capital = 932 # c_guangzhou
+	culture = cantonese
+	
+	k_guangdong = {
+		color={ 153 5 95 }
+		color2={ 255 255 255 }
+		
+		capital = 932 # c_guangzhou
+		culture = cantonese
+		
+		c_guangzhou = { # 932
+			color={ 123 35 80 }
+			color2={ 255 255 255 }
+			
+			b_guangzhou = {
+			}
+			b_guangzhou_2 = {
+			}
+			b_guangzhou_3 = {
+			}
+			b_guangzhou_4 = {
+			}
+			b_guangzhou_5 = {
+			}
+			b_guangzhou_6 = {
+			}
+			b_guangzhou_7 = {
+			}
+		}
+		c_nansha = { # 934
+			color={ 123 30 78 }
+			color2={ 255 255 255 }
+			
+			b_nansha = {
+			}
+			b_nansha_2 = {
+			}
+			b_nansha_3 = {
+			}
+			b_nansha_4 = {
+			}
+			b_nansha_5 = {
+			}
+			b_nansha_6 = {
+			}
+			b_nansha_7 = {
+			}
+		}
+		d_guangzhou = {
+			color={ 133 25 85 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 932 province_id = 933 province_id = 934 } }
+				}
+			}
+			capital = 932 # c_guangzhou
+			
+			c_guangzhou = { # 932
+				color={ 123 35 80 }
+				color2={ 255 255 255 }
+				
+				b_guangzhou = {
+				}
+				b_guangzhou_2 = {
+				}
+				b_guangzhou_3 = {
+				}
+				b_guangzhou_4 = {
+				}
+				b_guangzhou_5 = {
+				}
+				b_guangzhou_6 = {
+				}
+				b_guangzhou_7 = {
+				}
+			}
+			c_nansha = { # 934
+				color={ 123 30 78 }
+				color2={ 255 255 255 }
+				
+				b_nansha = {
+				}
+				b_nansha_2 = {
+				}
+				b_nansha_3 = {
+				}
+				b_nansha_4 = {
+				}
+				b_nansha_5 = {
+				}
+				b_nansha_6 = {
+				}
+				b_nansha_7 = {
+				}
+			}
+			c_panyu = { # 933
+				color={ 171 73 124 }
+				color2={ 255 255 255 }
+				
+				b_panyu = {
+				}
+				b_panyu_2 = {
+				}
+				b_panyu_3 = {
+				}
+				b_panyu_4 = {
+				}
+				b_panyu_5 = {
+				}
+				b_panyu_6 = {
+				}
+				b_panyu_7 = {
+				}
+			}
+		}
+		d_foshan = {
+			color={ 169 76 129 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 935 province_id = 936 province_id = 937 } }
+				}
+			}
+			capital = 935 # c_foshan
+			
+			c_foshan = { # 935
+				color={ 159 86 124 }
+				color2={ 255 255 255 }
+				
+				b_foshan = {
+				}
+				b_foshan_2 = {
+				}
+				b_foshan_3 = {
+				}
+				b_foshan_4 = {
+				}
+				b_foshan_5 = {
+				}
+				b_foshan_6 = {
+				}
+				b_foshan_7 = {
+				}
+			}
+			c_gaoming = { # 936
+				color={ 219 23 125 }
+				color2={ 255 255 255 }
+				
+				b_gaoming = {
+				}
+				b_gaoming_2 = {
+				}
+				b_gaoming_3 = {
+				}
+				b_gaoming_4 = {
+				}
+				b_gaoming_5 = {
+				}
+				b_gaoming_6 = {
+				}
+				b_gaoming_7 = {
+				}
+			}
+			c_shanshui = { # 937
+				color={ 212 173 193 }
+				color2={ 255 255 255 }
+				
+				b_shanshui = {
+				}
+				b_shanshui_2 = {
+				}
+				b_shanshui_3 = {
+				}
+				b_shanshui_4 = {
+				}
+				b_shanshui_5 = {
+				}
+				b_shanshui_6 = {
+				}
+				b_shanshui_7 = {
+				}
+			}
+		}
+		d_jiangmen = {
+			color={ 160 88 130 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 952 province_id = 953 province_id = 954 province_id = 955 } }
+				}
+			}
+			capital = 952 # c_jiangmen
+			
+			c_jiangmen = { # 952
+				color={ 150 98 125 }
+				color2={ 255 255 255 }
+				
+				b_jiangmen = {
+				}
+				b_jiangmen_2 = {
+				}
+				b_jiangmen_3 = {
+				}
+				b_jiangmen_4 = {
+				}
+				b_jiangmen_5 = {
+				}
+				b_jiangmen_6 = {
+				}
+				b_jiangmen_7 = {
+				}
+			}
+			c_enping = { # 955
+				color={ 231 174 203 }
+				color2={ 255 255 255 }
+				
+				b_enping = {
+				}
+				b_enping_2 = {
+				}
+				b_enping_3 = {
+				}
+				b_enping_4 = {
+				}
+				b_enping_5 = {
+				}
+				b_enping_6 = {
+				}
+				b_enping_7 = {
+				}
+			}
+			c_guanghai = { # 954
+				color={ 220 5 116 }
+				color2={ 255 255 255 }
+				
+				b_guanghai = {
+				}
+				b_guanghai_2 = {
+				}
+				b_guanghai_3 = {
+				}
+				b_guanghai_4 = {
+				}
+				b_guanghai_5 = {
+				}
+				b_guanghai_6 = {
+				}
+				b_guanghai_7 = {
+				}
+			}
+			c_taishan = { # 953
+				color={ 177 70 125 }
+				color2={ 255 255 255 }
+				
+				b_taishan = {
+				}
+				b_taishan_2 = {
+				}
+				b_taishan_3 = {
+				}
+				b_taishan_4 = {
+				}
+				b_taishan_5 = {
+				}
+				b_taishan_6 = {
+				}
+				b_taishan_7 = {
+				}
+			}
+		}
+		d_macau = {
+			color={ 187 246 97 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 938 } }
+				}
+			}
+			capital = 938 # c_macau
+			
+			c_macau = { # 938
+				color={ 177 0 92 }
+				color2={ 255 255 255 }
+				
+				holy_site = catholic
+				
+				b_macau = {
+				}
+				b_macau_2 = {
+				}
+				b_macau_3 = {
+				}
+				b_macau_4 = {
+				}
+				b_macau_5 = {
+				}
+				b_macau_6 = {
+				}
+				b_macau_7 = {
+				}
+			}
+		}
+		d_maoming = {
+			color={ 122 21 78 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 945 province_id = 946 province_id = 947 } }
+				}
+			}
+			capital = 945 # c_maoming
+			
+			c_maoming = { # 945
+				color={ 112 31 73 }
+				color2={ 255 255 255 }
+				
+				b_maoming = {
+				}
+				b_maoming_2 = {
+				}
+				b_maoming_3 = {
+				}
+				b_maoming_4 = {
+				}
+				b_maoming_5 = {
+				}
+				b_maoming_6 = {
+				}
+				b_maoming_7 = {
+				}
+			}
+			c_huazhou = { # 947
+				color={ 227 35 134 }
+				color2={ 255 255 255 }
+				
+				b_huazhou = {
+				}
+				b_huazhou_2 = {
+				}
+				b_huazhou_3 = {
+				}
+				b_huazhou_4 = {
+				}
+				b_huazhou_5 = {
+				}
+				b_huazhou_6 = {
+				}
+				b_huazhou_7 = {
+				}
+			}
+			c_xinyi = { # 946
+				color={ 255 79 170 }
+				color2={ 255 255 255 }
+				
+				b_xinyi = {
+				}
+				b_xinyi_2 = {
+				}
+				b_xinyi_3 = {
+				}
+				b_xinyi_4 = {
+				}
+				b_xinyi_5 = {
+				}
+				b_xinyi_6 = {
+				}
+				b_xinyi_7 = {
+				}
+			}
+		}
+		d_yangjiang = {
+			color={ 165 48 113 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 948 province_id = 949 } }
+				}
+			}
+			capital = 948 # c_yangjiang
+			
+			c_yangjiang = { # 948
+				color={ 155 58 108 }
+				color2={ 255 255 255 }
+				
+				b_yangjiang = {
+				}
+				b_yangjiang_2 = {
+				}
+				b_yangjiang_3 = {
+				}
+				b_yangjiang_4 = {
+				}
+				b_yangjiang_5 = {
+				}
+				b_yangjiang_6 = {
+				}
+				b_yangjiang_7 = {
+				}
+			}
+			c_yangxi = { # 949
+				color={ 255 122 191 }
+				color2={ 255 255 255 }
+				
+				b_yangxi = {
+				}
+				b_yangxi_2 = {
+				}
+				b_yangxi_3 = {
+				}
+				b_yangxi_4 = {
+				}
+				b_yangxi_5 = {
+				}
+				b_yangxi_6 = {
+				}
+				b_yangxi_7 = {
+				}
+			}
+		}
+		d_yunfu = {
+			color={ 243 216 226 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 950 province_id = 951 } }
+				}
+			}
+			capital = 950 # c_yunfu
+			
+			c_yunfu = { # 950
+				color={ 253 206 231 }
+				color2={ 255 255 255 }
+				
+				b_yunfu = {
+				}
+				b_yunfu_2 = {
+				}
+				b_yunfu_3 = {
+				}
+				b_yunfu_4 = {
+				}
+				b_yunfu_5 = {
+				}
+				b_yunfu_6 = {
+				}
+				b_yunfu_7 = {
+				}
+			}
+			c_yuaan_district = { # 951
+				color={ 248 111 182 }
+				color2={ 255 255 255 }
+				
+				b_liudouzhen = {
+				}
+				b_liudouzhen_2 = {
+				}
+				b_liudouzhen_3 = {
+				}
+				b_liudouzhen_4 = {
+				}
+				b_liudouzhen_5 = {
+				}
+				b_liudouzhen_6 = {
+				}
+				b_liudouzhen_7 = {
+				}
+			}
+		}
+		d_zhanjiang = {
+			color={ 165 70 124 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 941 province_id = 942 province_id = 943 province_id = 944 } }
+				}
+			}
+			capital = 941 # c_zhanjiang
+			
+			c_zhanjiang = { # 941
+				color={ 155 80 119 }
+				color2={ 255 255 255 }
+				
+				b_zhanjiang = {
+				}
+				b_zhanjiang_2 = {
+				}
+				b_zhanjiang_3 = {
+				}
+				b_zhanjiang_4 = {
+				}
+				b_zhanjiang_5 = {
+				}
+				b_zhanjiang_6 = {
+				}
+				b_zhanjiang_7 = {
+				}
+			}
+			c_leizhou = { # 943
+				color={ 164 119 142 }
+				color2={ 255 255 255 }
+				
+				b_leizhou = {
+				}
+				b_leizhou_2 = {
+				}
+				b_leizhou_3 = {
+				}
+				b_leizhou_4 = {
+				}
+				b_leizhou_5 = {
+				}
+				b_leizhou_6 = {
+				}
+				b_leizhou_7 = {
+				}
+			}
+			c_suixi = { # 942
+				color={ 124 102 113 }
+				color2={ 255 255 255 }
+				
+				b_suixi = {
+				}
+				b_suixi_2 = {
+				}
+				b_suixi_3 = {
+				}
+				b_suixi_4 = {
+				}
+				b_suixi_5 = {
+				}
+				b_suixi_6 = {
+				}
+				b_suixi_7 = {
+				}
+			}
+			c_xuwen = { # 944
+				color={ 239 153 197 }
+				color2={ 255 255 255 }
+				
+				b_xuwen = {
+				}
+				b_xuwen_2 = {
+				}
+				b_xuwen_3 = {
+				}
+				b_xuwen_4 = {
+				}
+				b_xuwen_5 = {
+				}
+				b_xuwen_6 = {
+				}
+				b_xuwen_7 = {
+				}
+			}
+		}
+		d_zhaoqing = {
+			color={ 72 15 49 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 956 province_id = 957 } }
+				}
+			}
+			capital = 956 # c_xinqiao
+			
+			c_xinqiao = { # 956
+				color={ 62 25 44 }
+				color2={ 255 255 255 }
+				
+				b_xinqiao = {
+				}
+				b_xinqiao_2 = {
+				}
+				b_xinqiao_3 = {
+				}
+				b_xinqiao_4 = {
+				}
+				b_xinqiao_5 = {
+				}
+				b_xinqiao_6 = {
+				}
+				b_xinqiao_7 = {
+				}
+			}
+			c_baituzhen = { # 957
+				color={ 142 77 111 }
+				color2={ 255 255 255 }
+				
+				b_baituzhen = {
+				}
+				b_baituzhen_2 = {
+				}
+				b_baituzhen_3 = {
+				}
+				b_baituzhen_4 = {
+				}
+				b_baituzhen_5 = {
+				}
+				b_baituzhen_6 = {
+				}
+				b_baituzhen_7 = {
+				}
+			}
+		}
+		d_zhuhai = {
+			color={ 162 32 104 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 939 province_id = 940 } }
+				}
+			}
+			capital = 939 # c_zhuhai
+			
+			c_zhuhai = { # 939
+				color={ 152 42 99 }
+				color2={ 255 255 255 }
+				
+				b_zhuhai = {
+				}
+				b_zhuhai_2 = {
+				}
+				b_zhuhai_3 = {
+				}
+				b_zhuhai_4 = {
+				}
+				b_zhuhai_5 = {
+				}
+				b_zhuhai_6 = {
+				}
+				b_zhuhai_7 = {
+				}
+			}
+			c_hongqizhen = { # 940
+				color={ 95 70 83 }
+				color2={ 255 255 255 }
+				
+				b_hongqizhen = {
+				}
+				b_hongqizhen_2 = {
+				}
+				b_hongqizhen_3 = {
+				}
+				b_hongqizhen_4 = {
+				}
+				b_hongqizhen_5 = {
+				}
+				b_hongqizhen_6 = {
+				}
+				b_hongqizhen_7 = {
+				}
+			}
+		}
+	}
+	k_guangxi = {
+		color={ 83 240 207 }
+		color2={ 255 255 255 }
+		
+		capital = 963 # c_nanning
+		culture = zhuang
+		
+		d_nanning = {
+			color={ 103 220 217 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 963 province_id = 964 province_id = 965 province_id = 966 } }
+				}
+			}
+			capital = 963 # c_nanning
+			
+			c_nanning = { # 963
+				color={ 113 210 222 }
+				color2={ 255 255 255 }
+				
+				b_nanning = {
+				}
+				b_nanning_2 = {
+				}
+				b_nanning_3 = {
+				}
+				b_nanning_4 = {
+				}
+				b_nanning_5 = {
+				}
+				b_nanning_6 = {
+				}
+				b_nanning_7 = {
+				}
+			}
+			c_chongzuo = { # 964
+				color={ 21 132 145 }
+				color2={ 255 255 255 }
+				
+				b_chongzuo = {
+				}
+				b_chongzuo_2 = {
+				}
+				b_chongzuo_3 = {
+				}
+				b_chongzuo_4 = {
+				}
+				b_chongzuo_5 = {
+				}
+				b_chongzuo_6 = {
+				}
+				b_chongzuo_7 = {
+				}
+			}
+			c_nanning_2 = { # 965
+				color={ 15 216 240 }
+				color2={ 255 255 255 }
+				
+				b_nanning_8 = {
+				}
+				b_nanning_9 = {
+				}
+				b_nanning_10 = {
+				}
+				b_nanning_11 = {
+				}
+				b_nanning_12 = {
+				}
+				b_nanning_13 = {
+				}
+				b_nanning_14 = {
+				}
+			}
+			c_nanning_3 = { # 966
+				color={ 24 177 197 }
+				color2={ 255 255 255 }
+				
+				b_nanning_15 = {
+				}
+				b_nanning_16 = {
+				}
+				b_nanning_17 = {
+				}
+				b_nanning_18 = {
+				}
+				b_nanning_19 = {
+				}
+				b_nanning_20 = {
+				}
+				b_nanning_21 = {
+				}
+			}
+		}
+		d_baise = {
+			color={ 98 249 250 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 969 province_id = 970 province_id = 971 } }
+				}
+			}
+			capital = 969 # c_baise
+			
+			c_baise = { # 969
+				color={ 108 239 255 }
+				color2={ 255 255 255 }
+				
+				b_baise = {
+				}
+				b_baise_2 = {
+				}
+				b_baise_3 = {
+				}
+				b_baise_4 = {
+				}
+				b_baise_5 = {
+				}
+				b_baise_6 = {
+				}
+				b_baise_7 = {
+				}
+			}
+			c_jingxi = { # 971
+				color={ 0 80 90 }
+				color2={ 255 255 255 }
+				
+				b_jingxi = {
+				}
+				b_jingxi_2 = {
+				}
+				b_jingxi_3 = {
+				}
+				b_jingxi_4 = {
+				}
+				b_jingxi_5 = {
+				}
+				b_jingxi_6 = {
+				}
+				b_jingxi_7 = {
+				}
+			}
+			c_tianlin = { # 970
+				color={ 34 101 109 }
+				color2={ 255 255 255 }
+				
+				b_tianlin = {
+				}
+				b_tianlin_2 = {
+				}
+				b_tianlin_3 = {
+				}
+				b_tianlin_4 = {
+				}
+				b_tianlin_5 = {
+				}
+				b_tianlin_6 = {
+				}
+				b_tianlin_7 = {
+				}
+			}
+		}
+		d_fangchenggang = {
+			color={ 65 200 240 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 967 province_id = 968 } }
+				}
+			}
+			capital = 967 # c_fangcheng
+			
+			c_fangcheng = { # 967
+				color={ 75 190 245 }
+				color2={ 255 255 255 }
+				
+				b_fangcheng = {
+				}
+				b_fangcheng_2 = {
+				}
+				b_fangcheng_3 = {
+				}
+				b_fangcheng_4 = {
+				}
+				b_fangcheng_5 = {
+				}
+				b_fangcheng_6 = {
+				}
+				b_fangcheng_7 = {
+				}
+			}
+			c_dongxing = { # 968
+				color={ 73 175 224 }
+				color2={ 255 255 255 }
+				
+				b_dongxing = {
+				}
+				b_dongxing_2 = {
+				}
+				b_dongxing_3 = {
+				}
+				b_dongxing_4 = {
+				}
+				b_dongxing_5 = {
+				}
+				b_dongxing_6 = {
+				}
+				b_dongxing_7 = {
+				}
+			}
+		}
+		d_qinzhou = {
+			color={ 23 55 76 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 972 province_id = 973 } }
+				}
+			}
+			capital = 972 # c_qinzhou
+			
+			c_qinzhou = { # 972
+				color={ 13 65 71 }
+				color2={ 255 255 255 }
+				
+				b_qinzhou = {
+				}
+				b_qinzhou_2 = {
+				}
+				b_qinzhou_3 = {
+				}
+				b_qinzhou_4 = {
+				}
+				b_qinzhou_5 = {
+				}
+				b_qinzhou_6 = {
+				}
+				b_qinzhou_7 = {
+				}
+			}
+			c_beihai = { # 973
+				color={ 32 105 114 }
+				color2={ 255 255 255 }
+				
+				b_beihai = {
+				}
+				b_beihai_2 = {
+				}
+				b_beihai_3 = {
+				}
+				b_beihai_4 = {
+				}
+				b_beihai_5 = {
+				}
+				b_beihai_6 = {
+				}
+				b_beihai_7 = {
+				}
+			}
+		}
+		d_yulin = {
+			color={ 101 228 226 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 974 province_id = 975 province_id = 976 } }
+				}
+			}
+			capital = 974 # c_yulin
+			
+			c_yulin = { # 974
+				color={ 111 218 231 }
+				color2={ 255 255 255 }
+				
+				b_yulin = {
+				}
+				b_yulin_2 = {
+				}
+				b_yulin_3 = {
+				}
+				b_yulin_4 = {
+				}
+				b_yulin_5 = {
+				}
+				b_yulin_6 = {
+				}
+				b_yulin_7 = {
+				}
+			}
+			c_yulin_2 = { # 975
+				color={ 43 162 176 }
+				color2={ 255 255 255 }
+				
+				b_yulin_8 = {
+				}
+				b_yulin_9 = {
+				}
+				b_yulin_10 = {
+				}
+				b_yulin_11 = {
+				}
+				b_yulin_12 = {
+				}
+				b_yulin_13 = {
+				}
+				b_yulin_14 = {
+				}
+			}
+			c_yulin_3 = { # 976
+				color={ 11 220 245 }
+				color2={ 255 255 255 }
+				
+				b_yulin_15 = {
+				}
+				b_yulin_16 = {
+				}
+				b_yulin_17 = {
+				}
+				b_yulin_18 = {
+				}
+				b_yulin_19 = {
+				}
+				b_yulin_20 = {
+				}
+				b_yulin_21 = {
+				}
+			}
+		}
+	}
+	k_hainan = {
+		color={ 11 254 51 }
+		color2={ 255 255 255 }
+		
+		capital = 958 # c_haikou
+		culture = min
+		
+		d_hainan = {
+			color={ 247 18 41 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 958 province_id = 959 province_id = 960 province_id = 961 province_id = 962 } }
+				}
+			}
+			capital = 958 # c_haikou
+			
+			c_haikou = { # 958
+				color={ 237 28 36 }
+				color2={ 255 255 255 }
+				
+				b_haikou = {
+				}
+				b_haikou_2 = {
+				}
+				b_haikou_3 = {
+				}
+				b_haikou_4 = {
+				}
+				b_haikou_5 = {
+				}
+				b_haikou_6 = {
+				}
+				b_haikou_7 = {
+				}
+			}
+			c_danzhou = { # 959
+				color={ 201 16 26 }
+				color2={ 255 255 255 }
+				
+				b_danzhou = {
+				}
+				b_danzhou_2 = {
+				}
+				b_danzhou_3 = {
+				}
+				b_danzhou_4 = {
+				}
+				b_danzhou_5 = {
+				}
+				b_danzhou_6 = {
+				}
+				b_danzhou_7 = {
+				}
+			}
+			c_dongfang = { # 961
+				color={ 242 94 101 }
+				color2={ 255 255 255 }
+				
+				b_dongfang = {
+				}
+				b_dongfang_2 = {
+				}
+				b_dongfang_3 = {
+				}
+				b_dongfang_4 = {
+				}
+				b_dongfang_5 = {
+				}
+				b_dongfang_6 = {
+				}
+				b_dongfang_7 = {
+				}
+			}
+			c_sanya = { # 960
+				color={ 238 62 70 }
+				color2={ 255 255 255 }
+				
+				b_sanya = {
+				}
+				b_sanya_2 = {
+				}
+				b_sanya_3 = {
+				}
+				b_sanya_4 = {
+				}
+				b_sanya_5 = {
+				}
+				b_sanya_6 = {
+				}
+				b_sanya_7 = {
+				}
+			}
+			c_wanning = { # 962
+				color={ 120 10 15 }
+				color2={ 255 255 255 }
+				
+				b_wanning = {
+				}
+				b_wanning_2 = {
+				}
+				b_wanning_3 = {
+				}
+				b_wanning_4 = {
+				}
+				b_wanning_5 = {
+				}
+				b_wanning_6 = {
+				}
+				b_wanning_7 = {
+				}
+			}
+		}
+	}
+}
 e_burma = {
 	color={ 56 37 36 }
 	color2={ 255 255 20 }
@@ -20725,7 +21860,7 @@ e_burma = {
 				mon = "Hongsawatoi"
 				
 				holy_site = dharmayuttika
-				#holy_site = parimatira
+				holy_site = parimatira
 				b_hongsawatoi = {
 					thai_mueang = "Phako"
 					thai_central = "Hongsawaddi"
@@ -21068,7 +22203,7 @@ e_burma = {
 				thai_isan = "West Yangkung"
 				thai_paktai = "West Yangkung"
 				holy_site = dharmayuttika
-				#holy_site = parimatira
+				holy_site = parimatira
 				b_lagun = {
 				}
 				b_mahavijaya = {
