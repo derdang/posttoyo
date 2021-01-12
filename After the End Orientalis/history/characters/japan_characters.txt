@@ -176,33 +176,686 @@
 	dynasty=1602008 #Saitani
 	culture=kyushuan
 	religion=soka_gakkai
-	2570.1.1={birth=yes}
+	father=16020081
+	martial=3
+	diplomacy=5
+	stewardship=5
+	intrigue=2
+	learning=2
+	trait=fortune_builder	
+	trait=diligent
+	trait=cynical
+	2569.1.1={birth=yes}
+	2591.1.1={add_spouse=160200800}
 }
-1604000={ #Count of Koichi & Shimanto
+160200800={
+	name="Ichiko"
+	culture=kyushuan
+	religion=soka_gakkai
+	female=yes
+	2572.1.1={birth=yes}
+}
+16020080={
+	name="Mitsuyoshi"
+	dynasty=1602008 #Saitani
+	culture=kyushuan
+	religion=soka_gakkai
+	father=16040039
+	mother=160400390
+	2506.1.1={birth=yes}
+	2569.1.1={death=yes}
+}
+16020081={
+	name="Fumio"
+	dynasty=1602008 #Saitani
+	culture=kyushuan
+	religion=soka_gakkai
+	father=16020080
+	2536.1.1={birth=yes}
+	2586.1.1={death=yes}
+}
+16020082={
+	name="Hirooki"
+	dynasty=1602008 #Saitani
+	culture=kyushuan
+	religion=soka_gakkai
+	father=1602008
+	mother=160200800
+	2592.1.1={birth=yes}
+}
+1604000={ #Count of Kochi & Shimanto
 	name="Sueo"
 	dynasty=1604000 #Sakamoto
 	culture=saigoku
 	religion=soka_gakkai
-	2570.1.1={birth=yes}
+	martial=7
+	diplomacy=5
+	stewardship=4
+	intrigue=3
+	learning=4
+	trait=skilled_tactician
+	trait=quick
+	trait=diligent
+	trait=ambitious
+	trait=proud
+	father=16040014000
+	2581.1.1={birth=yes}
+}
+16040000={ #Dragon of Shikoku
+	name="Tatsu"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	martial=7
+	diplomacy=7
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=grey_eminence
+	trait=duelist
+	trait=diligent
+	trait=patient
+	trait=brave
+	trait=just
+	trait=shrewd
+	trait=authoritative
+	father=16040015000
+	mother=16040016000
+	2263.1.1={birth=yes}
+	2273.1.1={add_spouse=160400000}
+	2351.1.1={death=yes}
+}
+160400000={
+	name="Hina"
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	female=yes
+	2265.1.1={birth=yes}
+	2349.1.1={death=yes}
+}
+16040001={
+	name="Shouichi"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040000
+	mother=160400000
+	2287.1.1={birth=yes}
+	2305.1.1={add_spouse=160400010}
+	2357.1.1={death=yes}
+}
+160400010={
+	name="Mari"
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	female=yes
+	2287.1.1={birth=yes}
+	2357.1.1={death=yes}
+}
+16040002={
+	name="Eiji"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040000
+	mother=160400000
+	2289.1.1={birth=yes}
+	2351.1.1={death=yes}
+}
+16040003={
+	name="Daiji"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040000
+	mother=160400000
+	2294.1.1={birth=yes}
+	2362.1.1={death=yes}
+}
+16040004={
+	name="Kenzo"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040001
+	mother=160400010
+	2307.1.1={birth=yes}
+	2356.1.1={death=yes}
+}
+16040005={
+	name="Masashi"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040001
+	mother=160400010
+	2312.1.1={birth=yes}
+	2329.1.1={add_spouse=160400050}
+	2364.1.1={death=yes}
+}
+160400050={
+	name="Emi"
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	female=yes
+	2313.1.1={birth=yes}
+	2372.1.1={death=yes}
+}
+16040006={
+	name="Takeshi"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040005
+	mother=160400050
+	2339.1.1={birth=yes}
+	2387.1.1={death=yes}
+}
+16040007={
+	name="Yuta"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040005
+	mother=160400050
+	2343.1.1={birth=yes}
+	2376.1.1={death=yes}
+}
+16040008={
+	name="Eita"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040006
+	2369.1.1={birth=yes}
+	2438.1.1={death=yes}
+}
+16040009={
+	name="Daisuke"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040008
+	2401.1.1={birth=yes}
+	2485.1.1={death=yes}
+}
+16040010000={
+	name="Musashi"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040009
+	2429.1.1={birth=yes}
+	2511.1.1={death=yes}
+}
+16040011000={
+	name="Naoki"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040010000
+	2465.1.1={birth=yes}
+	2532.1.1={death=yes}
+}
+16040012000={
+	name="Akio"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040011000
+	2498.1.1={birth=yes}
+	2573.1.1={death=yes}
+}
+16040013000={
+	name="Yuya"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	father=16040012000
+	2527.1.1={birth=yes}
+	2588.1.1={death=yes}
+}
+16040014000={
+	name="Kento"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	father=16040013000
+	2555.1.1={birth=yes}
+	2603.1.1={death=yes}
+}
+16040015000={
+	name="Isamu"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	2235.1.1={birth=yes}
+	2257.1.1={add_spouse=16040016000}
+	2283.1.1={death=yes}
+}
+16040016000={
+	name="Sachi"
+	culture=saigoku
+	religion=soka_gakkai
+	female=yes
+	occluded=yes
+	2239.1.1={birth=yes}
+	2291.1.1={death=yes}
 }
 1604001={ #Count of Ehime Kagawa Shodo
 	name="Kiyoshi"
 	dynasty=1604001 #Oka
-	culture=kyushuan
+	culture=saigoku
 	religion=shingon_shu
-	2570.1.1={birth=yes}
+	martial=6
+	diplomacy=5
+	stewardship=2
+	intrigue=3
+	learning=2
+	trait=charismatic_negotiator
+	trait=gregarious
+	father=16040021
+	mother=160400210
+	2557.1.1={birth=yes}
+	2578.1.1={add_spouse=160400100}
+}
+160400100={
+	name="Risa"
+	culture=saigoku
+	religion=shingon_shu
+	female=yes
+	2559.1.1={birth=yes}
+}
+16040010={
+	name="Shinji"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	2263.1.1={birth=yes}
+	2295.1.1={death={death_reason=death_battle}}
+}
+16040011={
+	name="Fujio"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040010
+	2282.1.1={birth=yes}
+	2295.1.1={death=yes}
+}
+16040012={
+	name="Hiromachi"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040011
+	2308.1.1={birth=yes}
+	2366.1.1={death=yes}
+}
+16040013={
+	name="Osamu"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040012
+	2330.1.1={birth=yes}
+	2395.1.1={death=yes}
+}
+16040014={
+	name="Isao"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040013
+	2359.1.1={birth=yes}
+	2423.1.1={death=yes}
+}
+16040015={
+	name="Kenta"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040014
+	2388.1.1={birth=yes}
+	2459.1.1={death=yes}
+}
+16040016={
+	name="Ryuki"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040015
+	2414.1.1={birth=yes}
+	2474.1.1={death=yes}
+}
+16040017={
+	name="Goichi"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040016
+	2437.1.1={birth=yes}
+	2497.1.1={death=yes}
+}
+16040018={
+	name="Yukio"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040017
+	2456.1.1={birth=yes}
+	2515.1.1={death=yes}
+}
+16040019={
+	name="Hajime"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040018
+	2478.1.1={birth=yes}
+	2546.1.1={death=yes}
+}
+16040020={
+	name="Daisuke"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	occluded=yes
+	father=16040019
+	2511.1.1={birth=yes}
+	2563.1.1={death=yes}
+}
+16040021={
+	name="Mitsuaki"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	father=16040020
+	2532.1.1={birth=yes}
+	2554.1.1={add_spouse=160400210}
+	2590.1.1={death=yes}
+}
+160400210={
+	name="Chika"
+	culture=saigoku
+	religion=shingon_shu
+	female=yes
+	2536.1.1={birth=yes}
+	2598.1.1={death=yes}
+}
+16040022={
+	name="Hisato"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	father=16040021
+	mother=160400210
+	2560.1.1={birth=yes}
+	2583.1.1={add_spouse=160400220}
+}
+160400220={
+	name="Noriko"
+	culture=saigoku
+	religion=shingon_shu
+	female=yes
+	2566.1.1={birth=yes}
+}
+16040023={
+	name="Kaito"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	father=16040022
+	mother=160400220
+	2589.1.1={birth=yes}
+}
+16040024={
+	name="Norio"
+	dynasty=1604001 #Oka
+	culture=saigoku
+	religion=shingon_shu
+	martial=6
+	diplomacy=4
+	stewardship=2
+	intrigue=4
+	learning=2
+	trait=skilled_tactician
+	trait=diligent
+	father=1604001
+	mother=160400100
+	2581.1.1={birth=yes}
 }
 1604002={ #Count of Tokushima & Awaji
 	name="Tomi"
 	dynasty=1604002 #Yamauchi
 	culture=saigoku
 	religion=soka_gakkai
-	2570.1.1={birth=yes}
+	martial=6
+	diplomacy=4
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=tough_soldier
+	trait=sturdy
+	trait=familyperson
+	2576.1.1={birth=yes}
+	2597.1.1={add_spouse=160400200}
+}
+160400200={
+	name="Chiyo"
+	culture=saigoku
+	religion=soka_gakkai
+	female=yes
+	martial=3
+	diplomacy=7
+	stewardship=4
+	intrigue=2
+	learning=4
+	trait=charismatic_negotiator
+	trait=quick
+	trait=familyperson
+	trait=diligent
+	2579.1.1={birth=yes}
 }
 1604003={ #Count of Nanyo
+	name="Eikichi"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	martial=6
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=skilled_tactician
+	trait=sturdy
+	trait=lefthanded
+	trait=envious
+	father=16040040
+	2538.1.1={birth=yes}
+	2561.1.1={add_spouse=160400300}
+}
+160400300={
+	name="Kyoko"
+	culture=saigoku
+	religion=soka_gakkai
+	female=yes
+	2544.1.1={birth=yes}
+}
+16040030={
+	name="Naoji"
+	dynasty=1604000 #Sakamoto
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	martial=5
+	diplomacy=4
+	stewardship=4
+	intrigue=8
+	learning=2
+	trait=elusive_shadow
+	trait=schemer
+	trait=shrewd
+	trait=patient
+	trait=zealous
+	father=16040015000
+	mother=16040016000
+	2265.1.1={birth=yes}
+	2283.1.1={add_spouse=1604003000}
+	2295.1.1={death={death_reason=death_battle}}
+}
+1604003000={
+	name="Junko"
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	female=yes
+	2267.1.1={birth=yes}
+	2322.1.1={death=yes}
+}
+16040031={
+	name="Taro"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040030
+	mother=1604003000
+	2284.1.1={birth=yes}
+	2357.1.1={death=yes}
+}
+16040032={
+	name="Naoto"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040030
+	mother=1604003000
+	2288.1.1={birth=yes}
+	2360.1.1={death=yes}
+}
+16040033={
+	name="Kenkichi"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040031
+	2284.1.1={birth=yes}
+	2357.1.1={death=yes}
+}
+16040034={
+	name="Daishi"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040033
+	2348.1.1={birth=yes}
+	2411.1.1={death=yes}
+}
+16040035={
+	name="Giichi"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040034
+	2374.1.1={birth=yes}
+	2426.1.1={death=yes}
+}
+16040036={
+	name="Itsuo"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040035
+	2403.1.1={birth=yes}
+	2459.1.1={death=yes}
+}
+16040037={
+	name="Hideshi"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040036
+	2426.1.1={birth=yes}
+	2498.1.1={death=yes}
+}
+16040038={
+	name="Kinichi"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	occluded=yes
+	father=16040037
+	2452.1.1={birth=yes}
+	2521.1.1={death=yes}
+}
+16040039={
+	name="Junpei"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	father=16040038
+	2482.1.1={birth=yes}
+	2501.1.1={add_spouse=160400390}
+	2550.1.1={death=yes}
+}
+160400390={
+	name="Iyo"
+	culture=saigoku
+	religion=soka_gakkai
+	female=yes
+	2485.1.1={birth=yes}
+	2559.1.1={death=yes}
+}
+16040040={
+	name="Akito"
+	dynasty=1602008 #Saitani
+	culture=saigoku
+	religion=soka_gakkai
+	father=16040039
+	mother=160400390
+	2509.1.1={birth=yes}
+	2580.1.1={death=yes}
+}
+16040041={
 	name="Uichi"
 	dynasty=1602008 #Saitani
 	culture=saigoku
 	religion=soka_gakkai
-	2570.1.1={birth=yes}
+	father=1604003
+	mother=160400300
+	2574.1.1={birth=yes}
 }
