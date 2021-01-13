@@ -1,4 +1,18 @@
 Unfinished Define -- README (by Poom)
+
+-- 13 January 2021 -- Update Liangguang. Now with entire Dali (or most of it. I might missed some) = =w
+- 7 (seven!) cultures. Oh boy. (Zhuang is one of them though. Dont worry)
+	- "Xinan" culture for Southwestern Han/ Mandarin speaker.
+	- Wa, Miao, Yi, Hani, etc. @_@
+- No religions defined yet. (More Hui?)
+- De jure 'Empire' of Dali (i.e. Kingdom of Dali/Nanzhao). Kingdom of Yunnan (i.e. Yunnan province)
+	- The de jure capital is Kunming though. (Formable title could change that to Dali later. I guess) 
+	- Both Kunming and Dali amalgating some surrounding divisions to be viable duchies. 
+		- Both capital have a single county on current map for some reason. :thinking:
+ 
+- Baronies name are still placeholder. All counties and duchies are named though.
+
+-----------
 -- 11 January 2021 -- add southwestern part of Liangguang (Two Guangs), ended at navigable Pearl River
 - Southwestern Guangzhou (+ Macau) and Guangxi. Entire Hainan island.
 - All area have placeholder baronies names
