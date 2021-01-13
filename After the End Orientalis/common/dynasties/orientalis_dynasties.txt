@@ -2904,7 +2904,20 @@
 1602005 = { name="Matsuuma" culture=kyushuan }
 1602006 = { name="Kuramune" culture=kyushuan }
 1602007 = { name="Gosaki" culture=kyushuan }
-1602008 = { name="Saitani" culture=kyushuan }
+1602008 = { name="Saitani" culture=kyushuan
+	coat_of_arms = {
+		religion = soka_gakkai
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1602009 = { name="Ando" culture=kyushuan }
 1602010 = { name="Aoba" culture=kyushuan }
 1602011 = { name="Aragi" culture=kyushuan }
@@ -3591,8 +3604,34 @@
 1603341 = { name="Yoshimura" culture=togoku }
 
 
-1604000 = { name="Sakamoto" culture=saigoku }
-1604001 = { name="Oka" culture=saigoku }
+1604000 = { name="Sakamoto" culture=saigoku
+	coat_of_arms = {
+		religion = soka_gakkai
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1604001 = { name="Oka" culture=saigoku
+	coat_of_arms = {
+		religion = shingon_shu
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1604002 = { name="Yamauchi" culture=saigoku }
 1604003 = { name="Agari" culture=saigoku }
 1604004 = { name="Ageno" culture=saigoku }
