@@ -669,14 +669,9 @@ feudal_governments = {
 					culture_group = viet
 					culture_group = korean
 				}
-				OR = {
-					religion = mahayana
-					religion = ua_dab
-					religion = ua_dab_reformed
-					religion_group = eastern
-				}
 				higher_tier_than = BARON
 			}
+			is_patrician = no
 		}
 		
 		color = { 218 37 29 }
