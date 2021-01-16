@@ -1,4 +1,9 @@
 Unfinished Define -- README (by Poom)
+-- 16-17 January 2021 -- Shan State
+yeah sorry too tired for detailed Readme rn. I fill the barony as best as I could but I might might've place latter baronies in wrong counties. /shrug
+Also by filling, I might use Thai names in tail-end baronies as I can't find any name whatsoever.
+
+Props to Shan language Wikipedia for included IPA and English name in their township links. It helps me filling out some.
 
 -- 13 January 2021 -- Update Liangguang. Now with entire Dali (or most of it. I might missed some) = =w
 - 7 (seven!) cultures. Oh boy. (Zhuang is one of them though. Dont worry)
