@@ -20471,54 +20471,16 @@ e_liangguang = {
 	color={ 163 251 100 }
 	color2={ 255 255 20 }
 	
-	capital = 932 # c_guangzhou
+	capital = 947 # c_guangzhou
 	culture = cantonese
 	
 	k_guangdong = {
 		color={ 153 5 95 }
 		color2={ 255 255 255 }
 		
-		capital = 932 # c_guangzhou
+		capital = 947 # c_guangzhou
 		culture = cantonese
 		
-		c_guangzhou = { # 932
-			color={ 123 35 80 }
-			color2={ 255 255 255 }
-			
-			b_guangzhou = {
-			}
-			b_guangzhou_2 = {
-			}
-			b_guangzhou_3 = {
-			}
-			b_guangzhou_4 = {
-			}
-			b_guangzhou_5 = {
-			}
-			b_guangzhou_6 = {
-			}
-			b_guangzhou_7 = {
-			}
-		}
-		c_nansha = { # 934
-			color={ 123 30 78 }
-			color2={ 255 255 255 }
-			
-			b_nansha = {
-			}
-			b_nansha_2 = {
-			}
-			b_nansha_3 = {
-			}
-			b_nansha_4 = {
-			}
-			b_nansha_5 = {
-			}
-			b_nansha_6 = {
-			}
-			b_nansha_7 = {
-			}
-		}
 		d_guangzhou = {
 			color={ 133 25 85 }
 			color2={ 255 255 255 }
@@ -20526,12 +20488,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 932 province_id = 933 province_id = 934 } }
+					any_demesne_province = { OR = { province_id = 947 province_id = 948 province_id = 949 } }
 				}
 			}
-			capital = 932 # c_guangzhou
+			capital = 947 # c_guangzhou
 			
-			c_guangzhou = { # 932
+			c_guangzhou = { # 947
 				color={ 123 35 80 }
 				color2={ 255 255 255 }
 				
@@ -20550,7 +20512,7 @@ e_liangguang = {
 				b_guangzhou_7 = {
 				}
 			}
-			c_nansha = { # 934
+			c_nansha = { # 949
 				color={ 123 30 78 }
 				color2={ 255 255 255 }
 				
@@ -20569,7 +20531,7 @@ e_liangguang = {
 				b_nansha_7 = {
 				}
 			}
-			c_panyu = { # 933
+			c_panyu = { # 948
 				color={ 171 73 124 }
 				color2={ 255 255 255 }
 				
@@ -20596,12 +20558,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 935 province_id = 936 province_id = 937 } }
+					any_demesne_province = { OR = { province_id = 950 province_id = 951 province_id = 952 } }
 				}
 			}
-			capital = 935 # c_foshan
+			capital = 950 # c_foshan
 			
-			c_foshan = { # 935
+			c_foshan = { # 950
 				color={ 159 86 124 }
 				color2={ 255 255 255 }
 				
@@ -20620,7 +20582,7 @@ e_liangguang = {
 				b_foshan_7 = {
 				}
 			}
-			c_gaoming = { # 936
+			c_gaoming = { # 951
 				color={ 219 23 125 }
 				color2={ 255 255 255 }
 				
@@ -20639,7 +20601,7 @@ e_liangguang = {
 				b_gaoming_7 = {
 				}
 			}
-			c_shanshui = { # 937
+			c_shanshui = { # 952
 				color={ 212 173 193 }
 				color2={ 255 255 255 }
 				
@@ -20666,12 +20628,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 952 province_id = 953 province_id = 954 province_id = 955 } }
+					any_demesne_province = { OR = { province_id = 967 province_id = 968 province_id = 969 province_id = 970 } }
 				}
 			}
-			capital = 952 # c_jiangmen
+			capital = 967 # c_jiangmen
 			
-			c_jiangmen = { # 952
+			c_jiangmen = { # 967
 				color={ 150 98 125 }
 				color2={ 255 255 255 }
 				
@@ -20690,7 +20652,7 @@ e_liangguang = {
 				b_jiangmen_7 = {
 				}
 			}
-			c_enping = { # 955
+			c_enping = { # 970
 				color={ 231 174 203 }
 				color2={ 255 255 255 }
 				
@@ -20709,7 +20671,7 @@ e_liangguang = {
 				b_enping_7 = {
 				}
 			}
-			c_guanghai = { # 954
+			c_guanghai = { # 969
 				color={ 220 5 116 }
 				color2={ 255 255 255 }
 				
@@ -20728,7 +20690,7 @@ e_liangguang = {
 				b_guanghai_7 = {
 				}
 			}
-			c_taishan = { # 953
+			c_taishan = { # 968
 				color={ 177 70 125 }
 				color2={ 255 255 255 }
 				
@@ -20755,16 +20717,14 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 938 } }
+					any_demesne_province = { OR = { province_id = 953 } }
 				}
 			}
-			capital = 938 # c_macau
+			capital = 953 # c_macau
 			
-			c_macau = { # 938
+			c_macau = { # 953
 				color={ 177 0 92 }
 				color2={ 255 255 255 }
-				
-				holy_site = catholic
 				
 				b_macau = {
 				}
@@ -20789,12 +20749,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 945 province_id = 946 province_id = 947 } }
+					any_demesne_province = { OR = { province_id = 960 province_id = 961 province_id = 962 } }
 				}
 			}
-			capital = 945 # c_maoming
+			capital = 960 # c_maoming
 			
-			c_maoming = { # 945
+			c_maoming = { # 960
 				color={ 112 31 73 }
 				color2={ 255 255 255 }
 				
@@ -20813,7 +20773,7 @@ e_liangguang = {
 				b_maoming_7 = {
 				}
 			}
-			c_huazhou = { # 947
+			c_huazhou = { # 962
 				color={ 227 35 134 }
 				color2={ 255 255 255 }
 				
@@ -20832,7 +20792,7 @@ e_liangguang = {
 				b_huazhou_7 = {
 				}
 			}
-			c_xinyi = { # 946
+			c_xinyi = { # 961
 				color={ 255 79 170 }
 				color2={ 255 255 255 }
 				
@@ -20859,12 +20819,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 948 province_id = 949 } }
+					any_demesne_province = { OR = { province_id = 963 province_id = 964 } }
 				}
 			}
-			capital = 948 # c_yangjiang
+			capital = 963 # c_yangjiang
 			
-			c_yangjiang = { # 948
+			c_yangjiang = { # 963
 				color={ 155 58 108 }
 				color2={ 255 255 255 }
 				
@@ -20883,7 +20843,7 @@ e_liangguang = {
 				b_yangjiang_7 = {
 				}
 			}
-			c_yangxi = { # 949
+			c_yangxi = { # 964
 				color={ 255 122 191 }
 				color2={ 255 255 255 }
 				
@@ -20910,12 +20870,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 950 province_id = 951 } }
+					any_demesne_province = { OR = { province_id = 965 province_id = 966 } }
 				}
 			}
-			capital = 950 # c_yunfu
+			capital = 965 # c_yunfu
 			
-			c_yunfu = { # 950
+			c_yunfu = { # 965
 				color={ 253 206 231 }
 				color2={ 255 255 255 }
 				
@@ -20934,7 +20894,7 @@ e_liangguang = {
 				b_yunfu_7 = {
 				}
 			}
-			c_yuaan_district = { # 951
+			c_yuaan_district = { # 966
 				color={ 248 111 182 }
 				color2={ 255 255 255 }
 				
@@ -20966,19 +20926,18 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 941 province_id = 942 province_id = 943 province_id = 944 } }
+					any_demesne_province = { OR = { province_id = 956 province_id = 957 province_id = 958 province_id = 959 } }
 				}
 			}
-			capital = 941 # c_zhanjiang
+			capital = 956 # c_zhanjiang
 			
-			c_zhanjiang = { # 941
+			c_zhanjiang = { # 956
 				color={ 155 80 119 }
 				color2={ 255 255 255 }
-				
 				tonkinese = "Tram Giang"
 				annamese = "Tram Giang"
 				cochinchinese = "Tram Giang"
-				muong = "Tram Giang"	
+				muong = "Tram Giang"
 				
 				b_zhanjiang = {
 					tonkinese = "Tram Giang"
@@ -20999,7 +20958,7 @@ e_liangguang = {
 				b_zhanjiang_7 = {
 				}
 			}
-			c_leizhou = { # 943
+			c_leizhou = { # 958
 				color={ 164 119 142 }
 				color2={ 255 255 255 }
 				
@@ -21023,7 +20982,7 @@ e_liangguang = {
 				b_leizhou_7 = {
 				}
 			}
-			c_suixi = { # 942
+			c_suixi = { # 957
 				color={ 124 102 113 }
 				color2={ 255 255 255 }
 				
@@ -21042,7 +21001,7 @@ e_liangguang = {
 				b_suixi_7 = {
 				}
 			}
-			c_xuwen = { # 944
+			c_xuwen = { # 959
 				color={ 239 153 197 }
 				color2={ 255 255 255 }
 				
@@ -21069,12 +21028,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 956 province_id = 957 } }
+					any_demesne_province = { OR = { province_id = 971 province_id = 972 } }
 				}
 			}
-			capital = 956 # c_xinqiao
+			capital = 971 # c_xinqiao
 			
-			c_xinqiao = { # 956
+			c_xinqiao = { # 971
 				color={ 62 25 44 }
 				color2={ 255 255 255 }
 				
@@ -21093,7 +21052,7 @@ e_liangguang = {
 				b_xinqiao_7 = {
 				}
 			}
-			c_baituzhen = { # 957
+			c_baituzhen = { # 972
 				color={ 142 77 111 }
 				color2={ 255 255 255 }
 				
@@ -21120,12 +21079,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 939 province_id = 940 } }
+					any_demesne_province = { OR = { province_id = 954 province_id = 955 } }
 				}
 			}
-			capital = 939 # c_zhuhai
+			capital = 954 # c_zhuhai
 			
-			c_zhuhai = { # 939
+			c_zhuhai = { # 954
 				color={ 152 42 99 }
 				color2={ 255 255 255 }
 				
@@ -21144,7 +21103,7 @@ e_liangguang = {
 				b_zhuhai_7 = {
 				}
 			}
-			c_hongqizhen = { # 940
+			c_hongqizhen = { # 955
 				color={ 95 70 83 }
 				color2={ 255 255 255 }
 				
@@ -21169,7 +21128,7 @@ e_liangguang = {
 		color={ 83 240 207 }
 		color2={ 255 255 255 }
 		
-		capital = 963 # c_nanning
+		capital = 978 # c_nanning
 		culture = zhuang
 		
 		d_nanning = {
@@ -21179,12 +21138,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 963 province_id = 964 province_id = 965 province_id = 966 } }
+					any_demesne_province = { OR = { province_id = 978 province_id = 979 province_id = 980 province_id = 981 } }
 				}
 			}
-			capital = 963 # c_nanning
+			capital = 978 # c_nanning
 			
-			c_nanning = { # 963
+			c_nanning = { # 978
 				color={ 113 210 222 }
 				color2={ 255 255 255 }
 				
@@ -21203,7 +21162,7 @@ e_liangguang = {
 				b_nanning_7 = {
 				}
 			}
-			c_chongzuo = { # 964
+			c_chongzuo = { # 979
 				color={ 21 132 145 }
 				color2={ 255 255 255 }
 				
@@ -21222,7 +21181,7 @@ e_liangguang = {
 				b_chongzuo_7 = {
 				}
 			}
-			c_nanning_2 = { # 965
+			c_nanning_2 = { # 980
 				color={ 15 216 240 }
 				color2={ 255 255 255 }
 				
@@ -21241,7 +21200,7 @@ e_liangguang = {
 				b_nanning_14 = {
 				}
 			}
-			c_nanning_3 = { # 966
+			c_nanning_3 = { # 981
 				color={ 24 177 197 }
 				color2={ 255 255 255 }
 				
@@ -21268,12 +21227,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 969 province_id = 970 province_id = 971 } }
+					any_demesne_province = { OR = { province_id = 984 province_id = 985 province_id = 986 } }
 				}
 			}
-			capital = 969 # c_baise
+			capital = 984 # c_baise
 			
-			c_baise = { # 969
+			c_baise = { # 984
 				color={ 108 239 255 }
 				color2={ 255 255 255 }
 				
@@ -21292,7 +21251,7 @@ e_liangguang = {
 				b_baise_7 = {
 				}
 			}
-			c_jingxi = { # 971
+			c_jingxi = { # 986
 				color={ 0 80 90 }
 				color2={ 255 255 255 }
 				
@@ -21311,7 +21270,7 @@ e_liangguang = {
 				b_jingxi_7 = {
 				}
 			}
-			c_tianlin = { # 970
+			c_tianlin = { # 985
 				color={ 34 101 109 }
 				color2={ 255 255 255 }
 				
@@ -21338,12 +21297,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 967 province_id = 968 } }
+					any_demesne_province = { OR = { province_id = 982 province_id = 983 } }
 				}
 			}
-			capital = 967 # c_fangcheng
+			capital = 982 # c_fangcheng
 			
-			c_fangcheng = { # 967
+			c_fangcheng = { # 982
 				color={ 75 190 245 }
 				color2={ 255 255 255 }
 				
@@ -21362,7 +21321,7 @@ e_liangguang = {
 				b_fangcheng_7 = {
 				}
 			}
-			c_dongxing = { # 968
+			c_dongxing = { # 983
 				color={ 73 175 224 }
 				color2={ 255 255 255 }
 				
@@ -21389,12 +21348,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 972 province_id = 973 } }
+					any_demesne_province = { OR = { province_id = 987 province_id = 988 } }
 				}
 			}
-			capital = 972 # c_qinzhou
+			capital = 987 # c_qinzhou
 			
-			c_qinzhou = { # 972
+			c_qinzhou = { # 987
 				color={ 13 65 71 }
 				color2={ 255 255 255 }
 				
@@ -21413,7 +21372,7 @@ e_liangguang = {
 				b_qinzhou_7 = {
 				}
 			}
-			c_beihai = { # 973
+			c_beihai = { # 988
 				color={ 32 105 114 }
 				color2={ 255 255 255 }
 				
@@ -21440,12 +21399,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 974 province_id = 975 province_id = 976 } }
+					any_demesne_province = { OR = { province_id = 989 province_id = 990 province_id = 991 } }
 				}
 			}
-			capital = 974 # c_yulin
+			capital = 989 # c_yulin
 			
-			c_yulin = { # 974
+			c_yulin = { # 989
 				color={ 111 218 231 }
 				color2={ 255 255 255 }
 				
@@ -21464,7 +21423,7 @@ e_liangguang = {
 				b_yulin_7 = {
 				}
 			}
-			c_yulin_2 = { # 975
+			c_yulin_2 = { # 990
 				color={ 43 162 176 }
 				color2={ 255 255 255 }
 				
@@ -21483,7 +21442,7 @@ e_liangguang = {
 				b_yulin_14 = {
 				}
 			}
-			c_yulin_3 = { # 976
+			c_yulin_3 = { # 991
 				color={ 11 220 245 }
 				color2={ 255 255 255 }
 				
@@ -21508,7 +21467,7 @@ e_liangguang = {
 		color={ 11 254 51 }
 		color2={ 255 255 255 }
 		
-		capital = 958 # c_haikou
+		capital = 973 # c_haikou
 		culture = min
 		
 		tonkinese = "Hai Nam"
@@ -21528,12 +21487,12 @@ e_liangguang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 958 province_id = 959 province_id = 960 province_id = 961 province_id = 962 } }
+					any_demesne_province = { OR = { province_id = 973 province_id = 974 province_id = 975 province_id = 976 province_id = 977 } }
 				}
 			}
-			capital = 958 # c_haikou
+			capital = 973 # c_haikou
 			
-			c_haikou = { # 958
+			c_haikou = { # 973
 				color={ 237 28 36 }
 				color2={ 255 255 255 }
 				
@@ -21552,7 +21511,7 @@ e_liangguang = {
 				b_haikou_7 = {
 				}
 			}
-			c_danzhou = { # 959
+			c_danzhou = { # 974
 				color={ 201 16 26 }
 				color2={ 255 255 255 }
 				
@@ -21571,7 +21530,7 @@ e_liangguang = {
 				b_danzhou_7 = {
 				}
 			}
-			c_dongfang = { # 961
+			c_dongfang = { # 976
 				color={ 242 94 101 }
 				color2={ 255 255 255 }
 				
@@ -21590,7 +21549,7 @@ e_liangguang = {
 				b_dongfang_7 = {
 				}
 			}
-			c_sanya = { # 960
+			c_sanya = { # 975
 				color={ 238 62 70 }
 				color2={ 255 255 255 }
 				
@@ -21609,7 +21568,7 @@ e_liangguang = {
 				b_sanya_7 = {
 				}
 			}
-			c_wanning = { # 962
+			c_wanning = { # 977
 				color={ 120 10 15 }
 				color2={ 255 255 255 }
 				
@@ -21635,35 +21594,16 @@ e_dali = {
 	color={ 87 238 117 }
 	color2={ 255 255 20 }
 	
-	capital = 977 # c_kunming
+	capital = 992 # c_kunming
 	culture = xinan
 	
 	k_yunnan = {
 		color={ 97 228 122 }
 		color2={ 255 255 255 }
 		
-		capital = 977 # c_kunming
+		capital = 992 # c_kunming
 		culture = xinan
 		
-		c_yuanjiang = { # 1000
-			color={ 173 212 178 }
-			color2={ 255 255 255 }
-			
-			b_yuanjiang = {
-			}
-			b_yuanjiang_2 = {
-			}
-			b_yuanjiang_3 = {
-			}
-			b_yuanjiang_4 = {
-			}
-			b_yuanjiang_5 = {
-			}
-			b_yuanjiang_6 = {
-			}
-			b_yuanjiang_7 = {
-			}
-		}
 		d_kunming = {
 			color={ 117 208 132 }
 			color2={ 255 255 255 }
@@ -21671,12 +21611,12 @@ e_dali = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 977 province_id = 978 province_id = 979 province_id = 980 province_id = 981 province_id = 982 } }
+					any_demesne_province = { OR = { province_id = 992 province_id = 993 province_id = 994 province_id = 995 province_id = 996 province_id = 997 } }
 				}
 			}
-			capital = 977 # c_kunming
+			capital = 992 # c_kunming
 			
-			c_kunming = { # 977
+			c_kunming = { # 992
 				color={ 127 198 137 }
 				color2={ 255 255 255 }
 				
@@ -21695,7 +21635,7 @@ e_dali = {
 				b_kunming_7 = {
 				}
 			}
-			c_fuyuan = { # 982
+			c_fuyuan = { # 997
 				color={ 136 162 140 }
 				color2={ 255 255 255 }
 				
@@ -21714,7 +21654,7 @@ e_dali = {
 				b_fuyuan_7 = {
 				}
 			}
-			c_qujing = { # 978
+			c_qujing = { # 993
 				color={ 49 66 51 }
 				color2={ 255 255 255 }
 				
@@ -21733,7 +21673,7 @@ e_dali = {
 				b_qujing_7 = {
 				}
 			}
-			c_shizong = { # 979
+			c_shizong = { # 994
 				color={ 37 97 45 }
 				color2={ 255 255 255 }
 				
@@ -21752,7 +21692,7 @@ e_dali = {
 				b_shizong_7 = {
 				}
 			}
-			c_xuanwei = { # 980
+			c_xuanwei = { # 995
 				color={ 76 133 84 }
 				color2={ 255 255 255 }
 				
@@ -21771,7 +21711,7 @@ e_dali = {
 				b_xuanwei_7 = {
 				}
 			}
-			c_zhanyi = { # 981
+			c_zhanyi = { # 996
 				color={ 225 234 226 }
 				color2={ 255 255 255 }
 				
@@ -21798,12 +21738,12 @@ e_dali = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 983 province_id = 984 province_id = 985 province_id = 986 province_id = 987 } }
+					any_demesne_province = { OR = { province_id = 998 province_id = 999 province_id = 1000 province_id = 1001 province_id = 1002 } }
 				}
 			}
-			capital = 983 # c_dali
+			capital = 998 # c_dali
 			
-			c_dali = { # 983
+			c_dali = { # 998
 				color={ 68 138 78 }
 				color2={ 255 255 255 }
 				
@@ -21822,7 +21762,7 @@ e_dali = {
 				b_dali_7 = {
 				}
 			}
-			c_baoshan = { # 986
+			c_baoshan = { # 1001
 				color={ 36 128 49 }
 				color2={ 255 255 255 }
 				
@@ -21841,7 +21781,7 @@ e_dali = {
 				b_baoshan_8 = {
 				}
 			}
-			c_chuxiong = { # 984
+			c_chuxiong = { # 999
 				color={ 110 150 116 }
 				color2={ 255 255 255 }
 				
@@ -21860,7 +21800,7 @@ e_dali = {
 				b_chuxiong_7 = {
 				}
 			}
-			c_dehong = { # 987
+			c_dehong = { # 1002
 				color={ 187 201 189 }
 				color2={ 255 255 255 }
 				
@@ -21879,7 +21819,7 @@ e_dali = {
 				b_dehong_7 = {
 				}
 			}
-			c_lincang = { # 985
+			c_lincang = { # 1000
 				color={ 221 243 224 }
 				color2={ 255 255 255 }
 				
@@ -21906,12 +21846,12 @@ e_dali = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 999 province_id = 1000 province_id = 1001 province_id = 1002 province_id = 1003 } }
+					any_demesne_province = { OR = { province_id = 1014 province_id = 1015 province_id = 1016 province_id = 1017 province_id = 1018 } }
 				}
 			}
-			capital = 999 # c_mengzi
+			capital = 1014 # c_mengzi
 			
-			c_mengzi = { # 999
+			c_mengzi = { # 1014
 				color={ 125 147 128 }
 				color2={ 255 255 255 }
 				
@@ -21930,7 +21870,7 @@ e_dali = {
 				b_mengzi_7 = {
 				}
 			}
-			c_jianshui = { # 1003
+			c_jianshui = { # 1018
 				color={ 143 186 149 }
 				color2={ 255 255 255 }
 				
@@ -21949,7 +21889,7 @@ e_dali = {
 				b_jianshui_7 = {
 				}
 			}
-			c_mile = { # 1001
+			c_mile = { # 1016
 				color={ 155 198 161 }
 				color2={ 255 255 255 }
 				
@@ -21968,7 +21908,7 @@ e_dali = {
 				b_mile_7 = {
 				}
 			}
-			c_shiping = { # 1002
+			c_shiping = { # 1017
 				color={ 122 138 124 }
 				color2={ 255 255 255 }
 				
@@ -21987,7 +21927,7 @@ e_dali = {
 				b_shiping_7 = {
 				}
 			}
-			c_yuanjiang = { # 1000
+			c_yuanjiang = { # 1015
 				color={ 173 212 178 }
 				color2={ 255 255 255 }
 				
@@ -22014,12 +21954,12 @@ e_dali = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 988 } }
+					any_demesne_province = { OR = { province_id = 1003 } }
 				}
 			}
-			capital = 988 # c_lijiang
+			capital = 1003 # c_lijiang
 			
-			c_lijiang = { # 988
+			c_lijiang = { # 1003
 				color={ 122 193 132 }
 				color2={ 255 255 255 }
 				
@@ -22046,12 +21986,12 @@ e_dali = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 991 province_id = 992 province_id = 993 province_id = 994 } }
+					any_demesne_province = { OR = { province_id = 1006 province_id = 1007 province_id = 1008 province_id = 1009 } }
 				}
 			}
-			capital = 991 # c_simao
+			capital = 1006 # c_simao
 			
-			c_simao = { # 991
+			c_simao = { # 1006
 				color={ 165 166 165 }
 				color2={ 255 255 255 }
 				
@@ -22070,7 +22010,7 @@ e_dali = {
 				b_simao_7 = {
 				}
 			}
-			c_jingdong = { # 993
+			c_jingdong = { # 1008
 				color={ 97 106 99 }
 				color2={ 255 255 255 }
 				
@@ -22089,7 +22029,7 @@ e_dali = {
 				b_jingdong_7 = {
 				}
 			}
-			c_jinggu = { # 992
+			c_jinggu = { # 1007
 				color={ 34 68 39 }
 				color2={ 255 255 255 }
 				
@@ -22108,7 +22048,7 @@ e_dali = {
 				b_jinggu_7 = {
 				}
 			}
-			c_lancang = { # 994
+			c_lancang = { # 1009
 				color={ 110 116 111 }
 				color2={ 255 255 255 }
 				
@@ -22135,12 +22075,12 @@ e_dali = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 995 province_id = 996 province_id = 997 province_id = 998 } }
+					any_demesne_province = { OR = { province_id = 1010 province_id = 1011 province_id = 1012 province_id = 1013 } }
 				}
 			}
-			capital = 995 # c_wenshan
+			capital = 1010 # c_wenshan
 			
-			c_wenshan = { # 995
+			c_wenshan = { # 1010
 				color={ 48 94 54 }
 				color2={ 255 255 255 }
 				
@@ -22159,7 +22099,7 @@ e_dali = {
 				b_wenshan_7 = {
 				}
 			}
-			c_funing = { # 997
+			c_funing = { # 1012
 				color={ 45 80 50 }
 				color2={ 255 255 255 }
 				
@@ -22178,7 +22118,7 @@ e_dali = {
 				b_funing_7 = {
 				}
 			}
-			c_guangnan = { # 996
+			c_guangnan = { # 1011
 				color={ 112 135 115 }
 				color2={ 255 255 255 }
 				
@@ -22197,7 +22137,7 @@ e_dali = {
 				b_guangnan_7 = {
 				}
 			}
-			c_maguan = { # 998
+			c_maguan = { # 1013
 				color={ 84 97 86 }
 				color2={ 255 255 255 }
 				
@@ -22224,12 +22164,12 @@ e_dali = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 989 province_id = 990 } }
+					any_demesne_province = { OR = { province_id = 1004 province_id = 1005 } }
 				}
 			}
-			capital = 989 # c_west_xishuangbanna
+			capital = 1004 # c_west_xishuangbanna
 			
-			c_west_xishuangbanna = { # 989
+			c_west_xishuangbanna = { # 1004
 				color={ 196 239 202 }
 				color2={ 255 255 255 }
 				
@@ -22248,7 +22188,7 @@ e_dali = {
 				b_west_xishuangbanna_7 = {
 				}
 			}
-			c_east_xishuangbanna = { # 990
+			c_east_xishuangbanna = { # 1005
 				color={ 5 25 8 }
 				color2={ 255 255 255 }
 				
@@ -22275,12 +22215,12 @@ e_dali = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1004 province_id = 1005 province_id = 1006 } }
+					any_demesne_province = { OR = { province_id = 1019 province_id = 1020 province_id = 1021 } }
 				}
 			}
-			capital = 1004 # c_yuxi
+			capital = 1019 # c_yuxi
 			
-			c_yuxi = { # 1004
+			c_yuxi = { # 1019
 				color={ 128 171 134 }
 				color2={ 255 255 255 }
 				
@@ -22299,7 +22239,7 @@ e_dali = {
 				b_yuxi_7 = {
 				}
 			}
-			c_xinping = { # 1005
+			c_xinping = { # 1020
 				color={ 52 73 55 }
 				color2={ 255 255 255 }
 				
@@ -22318,7 +22258,7 @@ e_dali = {
 				b_xinping_7 = {
 				}
 			}
-			c_yuanyang = { # 1006
+			c_yuanyang = { # 1021
 				color={ 157 176 159 }
 				color2={ 255 255 255 }
 				
@@ -22345,12 +22285,12 @@ e_dali = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1007 province_id = 1008 } }
+					any_demesne_province = { OR = { province_id = 1022 province_id = 1023 } }
 				}
 			}
-			capital = 1007 # c_zhaoyang
+			capital = 1022 # c_zhaoyang
 			
-			c_zhaoyang = { # 1007
+			c_zhaoyang = { # 1022
 				color={ 125 128 126 }
 				color2={ 255 255 255 }
 				
@@ -22369,7 +22309,7 @@ e_dali = {
 				b_zhaoyang_7 = {
 				}
 			}
-			c_shuifu = { # 1008
+			c_shuifu = { # 1023
 				color={ 91 154 100 }
 				color2={ 255 255 255 }
 				
@@ -22406,13 +22346,13 @@ e_burma = {
 		color={ 46 47 31 }
 		color2={ 255 255 255 }
 		
+		capital = 900 # c_kawthoung
+		culture = thai_central
 		thai_mueang = "Phako"
 		thai_central = "Hongsawaddi"
 		thai_isan = "Phako"
 		thai_paktai = "Phako"
 		mon = "Hongsawatoi"
-		capital = 900 # c_kawthoung
-		culture = thai_central
 		
 		d_tenasserim = {
 			color={ 26 67 21 }
@@ -22434,6 +22374,7 @@ e_burma = {
 			c_kawthoung = { # 900
 				color={ 16 77 16 }
 				color2={ 255 255 255 }
+				
 				thai_mueang = "Koh Saung"
 				thai_central = "Koh Saung"
 				thai_isan = "Koh Saung"
@@ -22458,7 +22399,7 @@ e_burma = {
 				b_kahamaukgyi = {
 				}
 			}
-			c_dawei = { # 901
+			c_dawei = { # 902
 				color={ 0 116 0 }
 				color2={ 255 255 255 }
 				
@@ -22482,7 +22423,7 @@ e_burma = {
 				b_launglon = {
 				}
 			}
-			c_myiek = { # 902
+			c_myiek = { # 901
 				color={ 61 114 61 }
 				color2={ 255 255 255 }
 				
@@ -22543,7 +22484,7 @@ e_burma = {
 				b_ngapudaw = {
 				}
 			}
-			c_hinthada = { # 918
+			c_hinthada = { # 921
 				color={ 92 183 92 }
 				color2={ 255 255 255 }
 				
@@ -22562,7 +22503,7 @@ e_burma = {
 				b_ingapu = {
 				}
 			}
-			c_maubin = { # 919
+			c_maubin = { # 920
 				color={ 95 184 95 }
 				color2={ 255 255 255 }
 				
@@ -22581,7 +22522,7 @@ e_burma = {
 				b_wadaw = {
 				}
 			}
-			c_myuangmya = { # 920
+			c_myuangmya = { # 919
 				color={ 48 138 48 }
 				color2={ 255 255 255 }
 				
@@ -22600,7 +22541,7 @@ e_burma = {
 				b_konsa = {
 				}
 			}
-			c_pyapon = { # 921
+			c_pyapon = { # 918
 				color={ 30 111 30 }
 				color2={ 255 255 255 }
 				
@@ -22633,7 +22574,7 @@ e_burma = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 913 province_id = 915 province_id = 914 province_id = 916 } }
+					any_demesne_province = { OR = { province_id = 913 province_id = 914 province_id = 915 province_id = 916 } }
 				}
 			}
 			capital = 913 # c_bago
@@ -22642,14 +22583,15 @@ e_burma = {
 				color={ 23 88 23 }
 				color2={ 255 255 255 }
 				
+				holy_site = dharmayuttika
+				holy_site = parimatira
+				
 				thai_mueang = "Phako"
 				thai_central = "Hongsawaddi"
 				thai_isan = "Phako"
 				thai_paktai = "Phako"
 				mon = "Hongsawatoi"
 				
-				holy_site = dharmayuttika
-				holy_site = parimatira
 				b_hongsawatoi = {
 					thai_mueang = "Phako"
 					thai_central = "Hongsawaddi"
@@ -22670,9 +22612,10 @@ e_burma = {
 				b_kyauktaga = {
 				}
 			}
-			c_pyay = { # 914
+			c_pyay = { # 915
 				color={ 23 99 23 }
 				color2={ 255 255 255 }
+				
 				thai_mueang = "Prae"
 				thai_central = "Prae"
 				thai_isan = "Prae"
@@ -22697,7 +22640,7 @@ e_burma = {
 				b_padaung = {
 				}
 			}
-			c_taungoo = { # 915
+			c_taungoo = { # 914
 				color={ 9 65 9 }
 				color2={ 255 255 255 }
 				
@@ -22783,6 +22726,7 @@ e_burma = {
 			c_hpa_an = { # 906
 				color={ 105 159 112 }
 				color2={ 255 255 255 }
+				
 				thai_mueang = "Pa-an"
 				thai_central = "Pa-an"
 				thai_isan = "Pa-an"
@@ -22910,6 +22854,7 @@ e_burma = {
 		d_yangon = {
 			color={ 55 60 50 }
 			color2={ 255 255 255 }
+			
 			thai_mueang = "Yangkung"
 			thai_central = "Yangkung"
 			thai_isan = "Yangkung"
@@ -22945,6 +22890,7 @@ e_burma = {
 			c_east_yangon = { # 910
 				color={ 48 85 48 }
 				color2={ 255 255 255 }
+				
 				thai_mueang = "East Yangkung"
 				thai_central = "East Yangkung"
 				thai_isan = "East Yangkung"
@@ -22987,12 +22933,15 @@ e_burma = {
 			c_west_yangon = { # 911
 				color={ 67 100 67 }
 				color2={ 255 255 255 }
+				
+				holy_site = dharmayuttika
+				holy_site = parimatira
+				
 				thai_mueang = "West Yangkung"
 				thai_central = "West Yangkung"
 				thai_isan = "West Yangkung"
 				thai_paktai = "West Yangkung"
-				holy_site = dharmayuttika
-				holy_site = parimatira
+				
 				b_lagun = {
 				}
 				b_mahavijaya = {
@@ -23010,19 +22959,818 @@ e_burma = {
 			}
 		}
 	}
+	k_shan = {
+		color={ 98 3 205 }
+		color2={ 255 255 255 }
+		
+		capital = 922 # c_taunggyi
+		culture = bamar
+		
+		c_taunggyi = { # 922
+			color={ 128 229 220 }
+			color2={ 255 255 255 }
+			
+			b_taunggyi = {
+			}
+			b_yawnghwe = {
+			}
+			b_shwenyawng = {
+			}
+			b_mongsawk = {
+			}
+			b_haiwo = {
+			}
+			b_nampan = {
+			}
+			b_maing_thauk = {
+			}
+		}
+		c_hopang = { # 932
+			color={ 5 124 105 }
+			color2={ 255 255 255 }
+			
+			b_hopang = {
+			}
+			b_mongmao = {
+			}
+			b_matman = {
+			}
+			b_namtit = {
+			}
+			b_panlong = {
+			}
+			b_pangwaun = {
+			}
+			b_pangsang = {
+			}
+		}
+		c_hsi_hseng = { # 923
+			color={ 2 107 104 }
+			color2={ 255 255 255 }
+			
+			b_hsi_hseng = {
+			}
+			b_hopong = {
+			}
+			b_loi_put = {
+			}
+			b_pawnyang = {
+			}
+			b_htisom = {
+			}
+			b_loisawn = {
+			}
+			b_maihpit = {
+			}
+		}
+		c_kalaw = { # 925
+			color={ 0 251 255 }
+			color2={ 255 255 255 }
+			
+			b_kalaw = {
+			}
+			b_le_gya = {
+			}
+			b_awngban = {
+			}
+			b_hsamong_kham = {
+			}
+			b_kalaw_2 = {
+			}
+			b_kalaw_3 = {
+			}
+			b_kalaw_4 = {
+			}
+		}
+		c_kengtung = { # 927
+			color={ 53 213 221 }
+			color2={ 255 255 255 }
+			
+			b_kengtung = {
+			}
+			b_mong_yang = {
+			}
+			b_mong_khet = {
+			}
+			b_mong_la = {
+			}
+			b_mengla = {
+			}
+			b_nanban = {
+			}
+			b_sele = {
+			}
+		}
+		c_kyaukme = { # 934
+			color={ 4 250 255 }
+			color2={ 255 255 255 }
+			
+			b_kyaukme = {
+			}
+			b_hsipaw = {
+			}
+			b_namty = {
+			}
+			b_nawnghkio = {
+			}
+			b_mongmit = {
+			}
+			b_monglong = {
+			}
+			b_mongngawt = {
+			}
+		}
+		c_lashio = { # 931
+			color={ 7 74 61 }
+			color2={ 255 255 255 }
+			
+			b_hsenwi = {
+			}
+			b_lashio = {
+			}
+			b_mongyai = {
+			}
+			b_tangyan = {
+			}
+			b_mamkanmong = {
+			}
+			b_loi_leng = {
+			}
+			b_saen_wi = {
+			}
+		}
+		c_laukkaing = { # 936
+			color={ 1 250 254 }
+			color2={ 255 255 255 }
+			
+			b_laukkaing = {
+			}
+			b_konkyain = {
+			}
+			b_mongtang = {
+			}
+			b_chinshwehaw = {
+			}
+			b_mawhtike = {
+			}
+			b_laogai = {
+			}
+			b_lao_kai = {
+			}
+		}
+		c_lawksauk = { # 924
+			color={ 5 108 106 }
+			color2={ 255 255 255 }
+			
+			b_lawksauk = {
+			}
+			b_pangtam = {
+			}
+			b_pindaya = {
+			}
+			b_ywangan = {
+			}
+			b_myogyi = {
+			}
+			b_angdaw = {
+			}
+			b_kengkham = {
+			}
+		}
+		c_mong_hpayak = { # 928
+			color={ 5 106 105 }
+			color2={ 255 255 255 }
+			
+			b_mong_hpayak = {
+			}
+			b_mong_yawng = {
+			}
+			b_mongyu = {
+			}
+			b_monglei = {
+			}
+			b_mongwa = {
+			}
+			b_mong_hpayak_2 = {
+			}
+			b_mong_hpayak_3 = {
+			}
+		}
+		c_mong_hsat = { # 930
+			color={ 1 255 253 }
+			color2={ 255 255 255 }
+			
+			b_mong_hsat = {
+			}
+			b_mong_ping = {
+			}
+			b_mong_tong = {
+			}
+			b_mong_pan = {
+			}
+			b_mong_hang = {
+			}
+			b_mong_kyawt = {
+			}
+			b_mong_hta = {
+			}
+		}
+		c_mu_se = { # 933
+			color={ 11 127 105 }
+			color2={ 255 255 255 }
+			
+			b_mu_se = {
+			}
+			b_kutkai = {
+			}
+			b_nanhkan = {
+			}
+			b_manhero = {
+			}
+			b_monekoe = {
+			}
+			b_pansai = {
+			}
+			b_tamoenye = {
+			}
+		}
+		c_pinlaung = { # 926
+			color={ 51 216 218 }
+			color2={ 255 255 255 }
+			
+			b_pinlaung = {
+			}
+			b_namun = {
+			}
+			b_leinli = {
+			}
+			b_naungtayar = {
+			}
+			b_tar_khe = {
+			}
+			b_nam_pam = {
+			}
+			b_phinton = {
+			}
+		}
+		c_tachileik = { # 929
+			color={ 53 216 220 }
+			color2={ 255 255 255 }
+			
+			b_tachileik = {
+			}
+			b_kyaing_lap = {
+			}
+			b_talay = {
+			}
+			b_monglep = {
+			}
+			b_hopoong = {
+			}
+			b_khong_kong = {
+			}
+			b_mong_lap = {
+			}
+		}
+		c_tangyan = { # 935
+			color={ 1 29 28 }
+			color2={ 255 255 255 }
+			
+			b_tangyan_2 = {
+			}
+			b_mongyai_2 = {
+			}
+			b_nawpgleng = {
+			}
+			b_mongdao = {
+			}
+			b_mongdao_2 = {
+			}
+			b_mongma = {
+			}
+			b_man_san = {
+			}
+		}
+		d_south_shan = {
+			color={ 118 239 215 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 922 province_id = 923 province_id = 924 province_id = 925 province_id = 926 } }
+				}
+			}
+			capital = 922 # c_taunggyi
+			
+			c_taunggyi = { # 922
+				color={ 128 229 220 }
+				color2={ 255 255 255 }
+				
+				b_taunggyi = {
+				}
+				b_yawnghwe = {
+				}
+				b_shwenyawng = {
+				}
+				b_mongsawk = {
+				}
+				b_haiwo = {
+				}
+				b_nampan = {
+				}
+				b_maing_thauk = {
+				}
+			}
+			c_hsi_hseng = { # 923
+				color={ 2 107 104 }
+				color2={ 255 255 255 }
+				
+				b_hsi_hseng = {
+				}
+				b_hopong = {
+				}
+				b_loi_put = {
+				}
+				b_pawnyang = {
+				}
+				b_htisom = {
+				}
+				b_loisawn = {
+				}
+				b_maihpit = {
+				}
+			}
+			c_kalaw = { # 925
+				color={ 0 251 255 }
+				color2={ 255 255 255 }
+				
+				b_kalaw = {
+				}
+				b_le_gya = {
+				}
+				b_awngban = {
+				}
+				b_hsamong_kham = {
+				}
+				b_kalaw_2 = {
+				}
+				b_kalaw_3 = {
+				}
+				b_kalaw_4 = {
+				}
+			}
+			c_lawksauk = { # 924
+				color={ 5 108 106 }
+				color2={ 255 255 255 }
+				
+				b_lawksauk = {
+				}
+				b_pangtam = {
+				}
+				b_pindaya = {
+				}
+				b_ywangan = {
+				}
+				b_myogyi = {
+				}
+				b_angdaw = {
+				}
+				b_kengkham = {
+				}
+			}
+			c_pinlaung = { # 926
+				color={ 51 216 218 }
+				color2={ 255 255 255 }
+				
+				b_pinlaung = {
+				}
+				b_namun = {
+				}
+				b_leinli = {
+				}
+				b_naungtayar = {
+				}
+				b_tar_khe = {
+				}
+				b_nam_pam = {
+				}
+				b_phinton = {
+				}
+			}
+		}
+		d_east_shan = {
+			color={ 43 223 216 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 927 province_id = 928 province_id = 929 province_id = 930 } }
+				}
+			}
+			capital = 927 # c_kengtung
+			
+			c_kengtung = { # 927
+				color={ 53 213 221 }
+				color2={ 255 255 255 }
+				
+				b_kengtung = {
+				}
+				b_mong_yang = {
+				}
+				b_mong_khet = {
+				}
+				b_mong_la = {
+				}
+				b_mengla = {
+				}
+				b_nanban = {
+				}
+				b_sele = {
+				}
+			}
+			c_mong_hpayak = { # 928
+				color={ 5 106 105 }
+				color2={ 255 255 255 }
+				
+				b_mong_hpayak = {
+				}
+				b_mong_yawng = {
+				}
+				b_mongyu = {
+				}
+				b_monglei = {
+				}
+				b_mongwa = {
+				}
+				b_mong_hpayak_2 = {
+				}
+				b_mong_hpayak_3 = {
+				}
+			}
+			c_mong_hsat = { # 930
+				color={ 1 255 253 }
+				color2={ 255 255 255 }
+				
+				b_mong_hsat = {
+				}
+				b_mong_ping = {
+				}
+				b_mong_tong = {
+				}
+				b_mong_pan = {
+				}
+				b_mong_hang = {
+				}
+				b_mong_kyawt = {
+				}
+				b_mong_hta = {
+				}
+			}
+			c_tachileik = { # 929
+				color={ 53 216 220 }
+				color2={ 255 255 255 }
+				
+				b_tachileik = {
+				}
+				b_kyaing_lap = {
+				}
+				b_talay = {
+				}
+				b_monglep = {
+				}
+				b_hopoong = {
+				}
+				b_khong_kong = {
+				}
+				b_mong_lap = {
+				}
+			}
+		}
+		d_kokang = {
+			color={ 247 4 249 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 936 } }
+				}
+			}
+			capital = 936 # c_laukkaing
+			
+			c_laukkaing = { # 936
+				color={ 1 250 254 }
+				color2={ 255 255 255 }
+				
+				b_laukkaing = {
+				}
+				b_konkyain = {
+				}
+				b_mongtang = {
+				}
+				b_chinshwehaw = {
+				}
+				b_mawhtike = {
+				}
+				b_laogai = {
+				}
+				b_lao_kai = {
+				}
+			}
+		}
+		d_north_shan = {
+			color={ 17 64 66 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 931 province_id = 932 province_id = 933 province_id = 934 province_id = 935 } }
+				}
+			}
+			capital = 931 # c_lashio
+			
+			c_lashio = { # 931
+				color={ 7 74 61 }
+				color2={ 255 255 255 }
+				
+				b_hsenwi = {
+				}
+				b_lashio = {
+				}
+				b_mongyai = {
+				}
+				b_tangyan = {
+				}
+				b_mamkanmong = {
+				}
+				b_loi_leng = {
+				}
+				b_saen_wi = {
+				}
+			}
+			c_hopang = { # 932
+				color={ 5 124 105 }
+				color2={ 255 255 255 }
+				
+				b_hopang = {
+				}
+				b_mongmao = {
+				}
+				b_matman = {
+				}
+				b_namtit = {
+				}
+				b_panlong = {
+				}
+				b_pangwaun = {
+				}
+				b_pangsang = {
+				}
+			}
+			c_kyaukme = { # 934
+				color={ 4 250 255 }
+				color2={ 255 255 255 }
+				
+				b_kyaukme = {
+				}
+				b_hsipaw = {
+				}
+				b_namty = {
+				}
+				b_nawnghkio = {
+				}
+				b_mongmit = {
+				}
+				b_monglong = {
+				}
+				b_mongngawt = {
+				}
+			}
+			c_mu_se = { # 933
+				color={ 11 127 105 }
+				color2={ 255 255 255 }
+				
+				b_mu_se = {
+				}
+				b_kutkai = {
+				}
+				b_nanhkan = {
+				}
+				b_manhero = {
+				}
+				b_monekoe = {
+				}
+				b_pansai = {
+				}
+				b_tamoenye = {
+				}
+			}
+			c_tangyan = { # 935
+				color={ 1 29 28 }
+				color2={ 255 255 255 }
+				
+				b_tangyan_2 = {
+				}
+				b_mongyai_2 = {
+				}
+				b_nawpgleng = {
+				}
+				b_mongdao = {
+				}
+				b_mongdao_2 = {
+				}
+				b_mongma = {
+				}
+				b_man_san = {
+				}
+			}
+		}
+	}
+}
+e_maha_andaman = {
+	color={ 215 133 41 }
+	color2={ 255 255 20 }
+	
+	capital = 941 # c_south_andaman
+	culture = andamanese
+	
+	k_andaman_nicobar = {
+		color={ 225 123 46 }
+		color2={ 255 255 255 }
+		
+		capital = 941 # c_south_andaman
+		culture = andamanese
+		
+		d_south_andaman = {
+			color={ 245 103 56 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 941 province_id = 944 province_id = 945 } }
+				}
+			}
+			capital = 941 # c_south_andaman
+			
+			c_south_andaman = { # 941
+				color={ 255 93 61 }
+				color2={ 255 255 255 }
+				
+				b_port_blair = {
+				}
+				b_ferrangunj = {
+				}
+				b_herbertabad = {
+				}
+				b_wimberleyganj = {
+				}
+				b_birchganj = {
+				}
+				b_labyrinth = {
+				}
+				b_north_sentinel = {
+				}
+			}
+			c_havelock_island = { # 945
+				color={ 224 100 76 }
+				color2={ 255 255 255 }
+				
+				b_havelock = {
+				}
+				b_govinda_nagar = {
+				}
+				b_vejoy_nagar = {
+				}
+				b_shyam_nagar = {
+				}
+				b_krishna_nagar = {
+				}
+				b_radha_nagar = {
+				}
+				b_swaraj = {
+				}
+			}
+			c_little_andaman = { # 944
+				color={ 232 93 28 }
+				color2={ 255 255 255 }
+				
+				b_pallalankwe = {
+				}
+				b_chetamale = {
+				}
+				b_north_brother = {
+				}
+				b_south_brother = {
+				}
+				b_hut_bay = {
+				}
+				b_sisters_island = {
+				}
+				b_south_sentinel = {
+				}
+			}
+		}
+		d_nicobar = {
+			color={ 219 117 77 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 946 } }
+				}
+			}
+			capital = 946 # c_nicobar
+			
+			c_nicobar = { # 946
+				color={ 229 107 82 }
+				color2={ 255 255 255 }
+				
+				b_great_nicobar = {
+				}
+				b_car_nicobar = {
+				}
+				b_nancowry = {
+				}
+				b_afra_bay = {
+				}
+				b_little_nicobar = {
+				}
+				b_pulo_milo = {
+				}
+				b_man_island = {
+				}
+			}
+		}
+		d_north_andaman = {
+			color={ 245 99 51 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 942 province_id = 943 } }
+				}
+			}
+			capital = 942 # c_north_andaman
+			
+			c_north_andaman = { # 942
+				color={ 255 89 56 }
+				color2={ 255 255 255 }
+				
+				b_mayablunder = {
+				}
+				b_digipur = {
+				}
+				b_haringadar = {
+				}
+				b_shibpur = {
+				}
+				b_aves_island = {
+				}
+				b_ram_nagar = {
+				}
+				b_ross_island = {
+				}
+			}
+			c_middle_andaman = { # 943
+				color={ 255 110 81 }
+				color2={ 255 255 255 }
+				
+				b_betapur = {
+				}
+				b_sabri = {
+				}
+				b_katara = {
+				}
+				b_elpihnstone = {
+				}
+				b_elphinstone = {
+				}
+				b_spike_island = {
+				}
+				b_flat_island = {
+				}
+			}
+		}
+	}
 }
 e_west_micronesia = {
 	color={ 40 1 143 }
 	color2={ 255 255 20 }
 	
-	capital = 891 # c_guam
+	capital = 937 # c_guam
 	culture = chamorro
 	
 	k_mariana = {
 		color={ 30 11 138 }
 		color2={ 255 255 255 }
 		
-		capital = 891 # c_guam
+		capital = 937 # c_guam
 		culture = chamorro
 		
 		d_guam = {
@@ -23032,12 +23780,12 @@ e_west_micronesia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 891 } }
+					any_demesne_province = { OR = { province_id = 937 } }
 				}
 			}
-			capital = 891 # c_guam
+			capital = 937 # c_guam
 			
-			c_guam = { # 891
+			c_guam = { # 937
 				color={ 0 41 123 }
 				color2={ 255 255 255 }
 				
@@ -23064,12 +23812,12 @@ e_west_micronesia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 892 } }
+					any_demesne_province = { OR = { province_id = 938 } }
 				}
 			}
-			capital = 892 # c_northern_mariana
+			capital = 938 # c_northern_mariana
 			
-			c_northern_mariana = { # 892
+			c_northern_mariana = { # 938
 				color={ 0 113 188 }
 				color2={ 255 255 255 }
 				
@@ -23094,7 +23842,7 @@ e_west_micronesia = {
 		color={ 42 24 154 }
 		color2={ 255 255 255 }
 		
-		capital = 893 # c_palau
+		capital = 939 # c_palau
 		culture = palauan
 		
 		d_palau = {
@@ -23104,12 +23852,12 @@ e_west_micronesia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 893 } }
+					any_demesne_province = { OR = { province_id = 939 } }
 				}
 			}
-			capital = 893 # c_palau
+			capital = 939 # c_palau
 			
-			c_palau = { # 893
+			c_palau = { # 939
 				color={ 12 54 139 }
 				color2={ 255 255 255 }
 				
@@ -23136,164 +23884,12 @@ e_west_micronesia = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 894 } }
+					any_demesne_province = { OR = { province_id = 940 } }
 				}
 			}
-			capital = 894 # c_yap_state
+			capital = 940 # c_yap_state
 			
-			c_yap_state = { # 894
-				color={ 16 55 133 }
-				color2={ 255 255 255 }
-				
-				b_colonia = {
-				}
-				b_gagil_tamil = {
-				}
-				b_maap = {
-				}
-				b_gilmaan = {
-				}
-				b_fanif = {
-				}
-				b_dalipebenau = {
-				}
-				b_rull = {
-				}
-			}
-		}
-	}
-}
-e_west_micronesia = {
-	color={ 40 1 143 }
-	color2={ 255 255 20 }
-	
-	capital = 922 # c_guam
-	culture = chamorro
-	
-	k_mariana = {
-		color={ 30 11 138 }
-		color2={ 255 255 255 }
-		
-		capital = 922 # c_guam
-		culture = chamorro
-		
-		d_guam = {
-			color={ 10 31 128 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 922 } }
-				}
-			}
-			capital = 922 # c_guam
-			
-			c_guam = { # 922
-				color={ 0 41 123 }
-				color2={ 255 255 255 }
-				
-				b_hagatna = {
-				}
-				b_tamuning = {
-				}
-				b_sinajana = {
-				}
-				b_chalan_pago_ordot = {
-				}
-				b_agat = {
-				}
-				b_mangilao = {
-				}
-				b_barrigada = {
-				}
-			}
-		}
-		d_mariana = {
-			color={ 10 103 193 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 923 } }
-				}
-			}
-			capital = 923 # c_northern_mariana
-			
-			c_northern_mariana = { # 923
-				color={ 0 113 188 }
-				color2={ 255 255 255 }
-				
-				b_saipan = {
-				}
-				b_tiinian = {
-				}
-				b_rota = {
-				}
-				b_alamagan = {
-				}
-				b_sarigan = {
-				}
-				b_anatahan = {
-				}
-				b_agrihan = {
-				}
-			}
-		}
-	}
-	k_west_caroline = {
-		color={ 42 24 154 }
-		color2={ 255 255 255 }
-		
-		capital = 924 # c_palau
-		culture = palauan
-		
-		d_palau = {
-			color={ 22 44 144 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 924 } }
-				}
-			}
-			capital = 924 # c_palau
-			
-			c_palau = { # 924
-				color={ 12 54 139 }
-				color2={ 255 255 255 }
-				
-				b_lgerlumud = {
-				}
-				b_koror = {
-				}
-				b_airai = {
-				}
-				b_peleliu = {
-				}
-				b_ngaraard = {
-				}
-				b_aimelik = {
-				}
-				b_ngaremlengui = {
-				}
-			}
-		}
-		d_yap = {
-			color={ 26 45 138 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 925 } }
-				}
-			}
-			capital = 925 # c_yap_state
-			
-			c_yap_state = { # 925
+			c_yap_state = { # 940
 				color={ 16 55 133 }
 				color2={ 255 255 255 }
 				
