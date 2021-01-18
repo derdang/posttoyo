@@ -1559,7 +1559,6 @@
 	trait=lustful
 	2580.1.1={birth=yes}
 }
-###########PLACEHOLDER- For Lords part of larger undefined groups###########
 1025000={ #Tay-Nung Lord
 	name="Tayin"
 	dynasty=1025000
@@ -1577,4 +1576,162 @@
 	trait=trusting
 	trait=lustful
 	2580.1.1={birth=yes}
+}
+###########VIETNAMESE PRE-EVENT IMPERIAL HISTORY HIGHLIGHTS###########
+#	-Starts Right after the last Chinese Domination
+#	-Represented by Khúc Thua Du a Jiengshi of Jianghai Circuit (during the 3rd Domination)
+######################################################################
+2875020={ 
+	name="Thua Du"
+	dynasty=2875009 #Khúc
+	culture=tonkinese
+	religion=ruist
+	occluded = yes
+	trait=legendary
+	866.1.1={birth=yes}
+	967.1.1={death=yes}
+}
+2875021={ #First True Emperor
+	name="Hoàn"
+	dynasty=2875008 #Dinh
+	culture=tonkinese
+	religion=mahayana
+	trait=legendary
+	924.3.22={birth=yes}
+	979.1.1={death=yes}
+}
+2875022={ #Dinh Dynasty (Last Emperor)
+	name="Toàn"
+	dynasty=2875008 #Dinh
+	culture=tonkinese
+	religion=mahayana
+	father = 2875021
+	trait=legendary
+	974.1.1={birth=yes}
+	979.1.1={add_spouse = 2875023}
+	1001.1.1={death=yes}
+}
+2875023={ #Famous Early Vietnamese Empress Dowager of the Dinh and Early Le Dynasty
+	name="Vân Nga"
+	dynasty=2875010 #Duong
+	culture=tonkinese
+	religion=mahayana
+	female = yes
+	trait=legendary
+	974.1.1={birth=yes}
+	1000.1.1={death=yes}
+}
+2875024={ #First Le Emperor
+	name="Hoàn"
+	dynasty=2875011 #Lê
+	culture=tonkinese
+	religion=mahayana
+	trait=legendary
+	941.8.10={birth=yes}
+	980.1.1={add_spouse = 2875023}
+	1005.3.18={death=yes}
+}
+2875025={ #Second Le Emperor
+	name="Trung Tông"
+	dynasty=2875011 #Lê
+	culture=tonkinese
+	religion=mahayana
+	father = 2875024
+	occluded = yes
+	trait=legendary
+	983.1.1={birth=yes}
+	1005.10.10={death=yes}
+}
+2875026={ #Third Le Emperor
+	name="Long Ðinh"
+	dynasty=2875011 #Lê
+	culture=tonkinese
+	religion=mahayana
+	father = 2875025
+	trait=legendary
+	986.11.15={birth=yes}
+	1009.11.19={death=yes}
+}
+2875027={ #Later Ly Dynasty (Emperor 1)
+	name="Thái To"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	trait=legendary
+	974.3.8={birth=yes}
+	1028.3.31={death=yes}
+}
+2875028={ #Later Ly Dynasty (Emperor 2)
+	name="Thái Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875027
+	trait=legendary
+	1000.7.29={birth=yes}
+	1054.11.3={death=yes}
+}
+2875029={ #Later Ly Dynasty (Emperor 3)
+	name="Thánh Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875028
+	trait=legendary
+	1023.3.19={birth=yes}
+	1072.2.1={death=yes}
+}
+2875030={ #Later Ly Dynasty (Emperor 4)
+	name="Nhân Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875029
+	trait=legendary
+	1066.2.22={birth=yes}
+	1128.1.15={death=yes}
+}
+2875031={ #Later Ly Dynasty (Emperor 5)
+	name="Than Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875030
+	occluded = yes
+	trait=legendary
+	1116.1.1={birth=yes}
+	1138.10.31={death=yes}
+}
+2875032={ #Later Ly Dynasty (Emperor 6)
+	name="Anh Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875031
+	occluded = yes
+	trait=legendary
+	1136.4.1={birth=yes}
+	1175.8.14={death=yes}
+}
+2875033={ #Later Ly Dynasty (Emperor 7)
+	name="Cao Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875032
+	occluded = yes
+	trait=legendary
+	1173.7.6={birth=yes}
+	1210.11.15={death=yes}
+}
+2875034={ #Later Ly Dynasty (Emperor 8th and Final Ly Emperor)
+	name="Hue Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875033
+	occluded = yes
+	trait=legendary
+	1194.7.1={birth=yes}
+	1226.9.3={death=yes}
 }
