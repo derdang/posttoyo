@@ -3,9 +3,9 @@ southwest_tai = {
 	graphical_cultures = { bodpagfx }
 	alternate_start = { always = no } 
 
-	thai_central = {
+	thai_central = { #aka "Khon Krung"/ Capital people
 		graphical_cultures = { bodpagfx }
-        color = { 0.7 0.6 0.2 }
+        color = { 0.72 0.6 0.2 }
 		
 		male_names = {
 			Somchai Sutlor Adchariya Anan Anon Aroon Anek Amorn Arnon Aphiwat Aphiniharn Achava Achavin Adisorn Adisuan Adirek Atikan Antarai Athit Athorn Anwar Atichar Aphichart Ativan Atiruth Ath AkkhavinAisoon Anurak Anuruth Alex Boonmee Boonchuai Boonnoi Boonluea Boonsong Bunthorn Burin Bandon Buraphon Boonsiri Boonhuai Boonhai Boonthink Chawanwit Chawankanit Chawansilp Amornrath Buraphon Chanon Chananon Chayakorn Chayalop Chonthep Chadathorn Chanthat Chanchanok Chanathip Chonnavi Chavin Chayut Charkrit Chadchai Chaivut Chaiya Chivanon Chutidech Chutiphon Danunan Danudech Donnarit Donnayut Dilek Donsuk Dechakorn DechtatEkkaphop Euakarn Itthikorn Itthimon Itthirith Fahkumkrong Fahpratarn Fahsang Fahthamrong Fahpah Fahlan Hiran Hatsapon Hatsakarn Hatsakorn Harit Harnchai Harn Jirayu Jaturaporn Jarat Jarun Jarin Jarutat Jarudeth Jaruvat Jaruvit Jamrat Jamroon Jinna Jirapat Jit Jitrarin Jetsada Jetsadakorn Kodmep Kodkeng Kodlor Konkeng Konlor Khaosai Khaokor Konchalad Karn Korakot Koravit Korn Krit Katanyu Kanok Kanokpon Kamon Kamonkarn Konthai Koravee Krapan Krongkiat Kritsada Krittatham Krittayot Krittidech Krittin Kavin Kasidech Korbkarn Korbkun Korbku Kanvara Kangvan Kanthara Kantapit Kantayot Kant Kampanat Karj Kayyavut Kaythip Kamthorn Kamhaeng Kitti Kittipon Kittiyot Kittipong Kunlathorn Kunpitha Kuson Korkuson Korkiat Khajorn Khanchai Kanti Kovid Kovit Klerk Klerkvit Klerksak Kliang Kliangchai Kliangsak Koson Kotchasarn Kanin Kamneung Kamnab Kwamwhang Krai KraisornLattapon Larph Larphin Laphas Lomtham Laphis Ming Munint Manfah Meekiat Meesap Meetham Meeham Meepalang Mongkhon Mongkhonruek Mana Mati Mati Matifah Manussavee Nanfah Manoh Monthach Nareth Nith Nivith Naravich Noravut Norarath Nakarint Nontha Nont Neramit Nic Niran Norachat Nonthakorn Nakin Noppadorn Noppadon 
@@ -57,7 +57,7 @@ southwest_tai = {
 		modifier = default_culture_modifier
 		
 	}
-	thai_isan = {
+	thai_isan = { #Northeast Thailand
 		graphical_cultures = { bodpagfx }
         color = { 0.7 0.4 0.3 }
 		
@@ -89,9 +89,106 @@ southwest_tai = {
 		modifier = default_culture_modifier
 		
 	}
+	thai_korat = { #Korat or Khorat / Nakhon Ratchasima
+		graphical_cultures = { bodpagfx }
+        color = { 0.75 0.35 0.32 }
+		
+		male_names = {
+			Thongdee Mana Piti Lee
+		}
+        
+        female_names = {
+            Manee Choojai
+        }
+        
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+        
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+		
+        	from_dynasty_prefix = "Ban "
+        	used_for_random = no
+		dynasty_title_names = no
+		dukes_called_kings = yes
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+        
+		modifier = default_culture_modifier
+		
+	}
+	thai_kui = { Kuy/Kooy, Suai
+		graphical_cultures = { bodpagfx }
+        color = { 0.7 0.4 0.3 }
+		
+		male_names = {
+			Thongdee Mana Piti Lee
+		}
+        
+        female_names = {
+            Manee Choojai
+        }
+        
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+        
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+		
+        	from_dynasty_prefix = "Ban "
+        	used_for_random = no
+		dynasty_title_names = no
+		dukes_called_kings = yes
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+        
+		modifier = default_culture_modifier
+		
+	}
+	##thai_surin (Highland Khmer-speaker in Thailand)
+	
 	thai_mueang = { #north thailand
 		graphical_cultures = { bodpagfx }
-        color = { 0.35 0.3 0.8 }
+        color = { 0.4 0.32 0.8 }
+		
+		male_names = {
+			Kaeo Ket
+		}
+        
+        	female_names = {
+            		Malee Mali Panmaj
+        	}
+        
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+        
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+		
+        	used_for_random = no
+		dynasty_title_names = no
+		dukes_called_kings = yes
+		baron_titles_hidden = yes
+		count_titles_hidden = yes
+        
+		modifier = default_culture_modifier
+		
+	}
+	thai_sukhothai = { #north-central thailand
+		graphical_cultures = { bodpagfx }
+        color = { 0.45 0.3 0.55 }
 		
 		male_names = {
 			Kaeo Ket
@@ -155,7 +252,7 @@ southwest_tai = {
 		graphical_cultures = { tibetangfx bodpagfx }
 		unit_graphical_cultures = { chinesegfx }
 
-		color = { 0.8 0.06 0.17 }
+		color = { 0.8 0.06 0.4 }
 
 		male_names = {
 			
