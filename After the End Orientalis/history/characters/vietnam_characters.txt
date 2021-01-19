@@ -1592,7 +1592,7 @@
 	967.1.1={death=yes}
 }
 2875021={ #First True Emperor
-	name="Hoàn"
+	name="Bo Linh"
 	dynasty=2875008 #Dinh
 	culture=tonkinese
 	religion=mahayana
@@ -1734,4 +1734,272 @@
 	trait=legendary
 	1194.7.1={birth=yes}
 	1226.9.3={death=yes}
+}
+2875035={ #Tran Dynasty
+	name="Canh"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	trait=legendary
+	1218.6.17={birth=yes}
+	1277.5.5={death=yes}
+}
+2875036={
+	name="Hoang"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875035
+	trait=legendary
+	1240.10.12={birth=yes}
+	1290.6.3={death=yes}
+}
+2875037={
+	name="Khâm"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875036
+	trait=legendary
+	1258.12.7={birth=yes}
+	1308.12.16={death=yes}
+}
+2875038={
+	name="Thuyên"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875037
+	trait=legendary
+	1276.9.17={birth=yes}
+	1320.12.12={death=yes}
+}
+2875039={
+	name="Manh"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875038
+	trait=legendary
+	1300.9.4={birth=yes}
+	1357.3.10={death=yes}
+}
+2875040={
+	name="Vuong"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875039
+	occluded = yes
+	trait=legendary
+	1319.5.17={birth=yes}
+	1341.6.11={death=yes}
+}
+2875041={
+	name="Du Tong"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875040
+	trait=legendary
+	1336.11.22={birth=yes}
+	1369.5.25={death=yes}
+}
+2875042={ #Not really a Tran but Hao willed him the Kingdom to spite his grandfather the retired Manh
+	name="Nhat Le"
+	dynasty=2875014 #Hôn
+	culture=tonkinese
+	religion=mahayana
+	father = 2875041
+	trait=legendary
+	give_nickname=nick_the_clueless
+	1350.1.1={birth=yes}
+	1370.12.1={death=yes}
+}
+2875043={
+	name="Phu"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875039
+	trait=legendary
+	1321.12.1={birth=yes}
+	1394.12.15={death=yes}
+}
+2875044={
+	name="Kính"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875039
+	occluded = yes
+	trait=legendary
+	give_nickname=nick_the_ruthless
+	1337.6.30={birth=yes}
+	1377.3.4={death={death_reason=death_battle}}
+}
+2875045={
+	name="Hien"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875044
+	occluded = yes
+	trait=legendary
+	1361.3.6={birth=yes}
+	1388.12.6={death={death_reason=death_suicide}}
+}
+2875046={
+	name="Ngung"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875043
+	occluded = yes
+	trait=legendary
+	1378.1.1={birth=yes}
+	1399.4.1={death=yes}
+}
+2875047={
+	name="Án"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875046
+	occluded = yes
+	trait=legendary
+	give_nickname=nick_the_unready
+	1396.1.1={birth=yes}
+	1400.1.1={death=yes}
+}
+2875048={
+	name="Quı Ly"
+	dynasty=2875015 #Ho
+	culture=tonkinese
+	religion=mahayana
+	occluded = yes
+	trait=legendary
+	1336.1.1={birth=yes}
+	1407.1.1={death=yes} #Death Unknown
+}
+2875049={
+	name="Hán Thuong"
+	dynasty=2875015 #Ho
+	culture=tonkinese
+	religion=mahayana
+	father = 2875048
+	occluded = yes
+	trait=legendary
+	1360.1.1={birth=yes}
+	1426.1.1={death=yes} #Death Unknown
+}
+2875050={ #Later Tran during the 4th Chinese Domination
+	name="Ngoi"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875043
+	occluded = yes
+	trait=legendary
+	1375.1.1={birth=yes}
+	1410.1.1={death=yes} #Death Unknown
+}
+2875051={
+	name="Ngac"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875043
+	occluded = yes
+	trait=legendary
+	1350.1.1={birth=yes}
+	1410.1.1={death=yes} #Death Unknown
+}
+2875052={
+	name="Quı Khoáng"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875051
+	occluded = yes
+	trait=legendary
+	1380.1.1={birth=yes}
+	1414.4.14={death={death_reason=death_battle}} #Death to Ming Forces
+}
+2875053={ # A "Tran" Descendant placed by Le Loi to appease the Ming
+	name="Cao"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875052
+	occluded = yes
+	trait=legendary
+	1380.1.1={birth=yes}
+	1428.1.1={death={death_reason=death_battle}} #Death to Ming Forces
+}
+#######LATER LE###########
+2878001={
+	name="Khoáng"
+	dynasty=2878001 #Lê
+	culture=muong
+	religion=ruist
+	occluded = yes
+	trait=legendary
+	1350.11.10={birth=yes}
+	1400.9.5={death=yes}
+}
+2878002={ #Emperor of Vietnam
+	name="Loi"
+	dynasty=2878001 #Lê
+	culture=muong
+	religion=ruist
+	father = 2878001
+	trait=legendary
+	give_nickname=nick_the_restorer
+	1384.11.10={birth=yes}
+	1433.9.5={death=yes}
+}
+2875054={
+	name="Nguyên Long"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2878002
+	occluded = yes
+	trait=legendary
+	1423.11.20={birth=yes}
+	1442.8.26={death=yes}
+}
+2875055={
+	name="Bang Co"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875054
+	occluded = yes
+	trait=legendary
+	1441.5.28={birth=yes}
+	1459.10.25={death=yes}
+}
+2875056={
+	name="Nghi Dân"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875054
+	occluded = yes
+	trait=legendary
+	1439.6.1={birth=yes}
+	1460.6.6={death=yes}
+}
+2875057={ #Greatest Vietnamese King
+	name="Hao"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875054
+	trait=legendary
+	give_nickname=nick_the_great
+	1442.8.25={birth=yes}
+	1497.3.3={death=yes}
 }
