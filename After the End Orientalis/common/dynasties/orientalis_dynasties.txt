@@ -2890,7 +2890,7 @@
 		religion = tenrikyo
 		template = 0
 		layer = {
-			texture = 1
+			texture = 0
 			texture_internal = 1
 			emblem = 0
 			color = 0
@@ -3260,11 +3260,63 @@
 1602348 = { name="Amano" culture=kyushuan }
 
 
-1603000 = { name="Kakihara" culture=togoku }
+1603000 = { name="Kakihara" culture=togoku
+	coat_of_arms = {
+		religion = tenrikyo
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1603001 = { name="Kari" culture=togoku }
-1603002 = { name="Asahi" culture=togoku }
-1603003 = { name="Kado" culture=togoku }
-1603004 = { name="Kasegi" culture=togoku }
+1603002 = { name="Asahi" culture=togoku
+	coat_of_arms = {
+		religion = tenrikyo
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1603003 = { name="Kado" culture=togoku
+	coat_of_arms = {
+		religion = tenrikyo
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1603004 = { name="Kasegi" culture=togoku
+	coat_of_arms = {
+		religion = tenrikyo
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1603005 = { name="Kishi" culture=togoku }
 1603006 = { name="Horo" culture=togoku }
 1603007 = { name="Ifukube" culture=togoku }
@@ -3631,7 +3683,7 @@
 		religion = shingon_shu
 		template = 0
 		layer = {
-			texture = 1
+			texture = 0
 			texture_internal = 3
 			emblem = 0
 			color = 0
@@ -3640,7 +3692,20 @@
 		}
 	}
 }
-1604002 = { name="Endo" culture=saigoku }
+1604002 = { name="Endo" culture=saigoku
+	coat_of_arms = {
+		religion = tenrikyo
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1604003 = { name="Agari" culture=saigoku }
 1604004 = { name="Ageno" culture=saigoku }
 1604005 = { name="Akimoto" culture=saigoku }
