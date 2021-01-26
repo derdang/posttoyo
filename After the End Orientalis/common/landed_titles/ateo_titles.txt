@@ -10730,6 +10730,14 @@ e_siam = {
 		
 		capital = 816 # c_mueang_korat
 		culture = thai_isan
+		allow = {
+				NOT = {primary_title = {higher_tier_than = KING}} # Neighboring Empire should only allowed to form this title with viceroyalty or higher legalism. (Maybe with event?)
+				completely_controls = c_mueang_korat
+				completely_controls = c_roi_et
+				completely_controls = c_ubon_ratchathani
+				completely_controls = c_udon_thani
+				}
+		}
 		
 		d_nakhon_ratchasima = {
 			color={ 216 152 99 }
@@ -11297,13 +11305,15 @@ e_siam = {
 		}
 	}
 	k_pak_tai = {
-		color={ 155 15 232 }
+		color={ 122 172 215 }
 		color2={ 255 255 255 }
 		
-		capital = 802 # c_chumphon
+		capital = 805 # c_nakhon_sri_thammarat 
 		culture = thai_central
-		
-		d_surat = {
+		allow = {
+			NOT = {primary_title = {higher_tier_than = KING}} # Neighboring Empire should only allowed to form this title with viceroyalty or higher legalism. (Maybe with event?)
+		}
+		d_surat = { #Chumphon did technically have precedent as Monthon. May as well rename it.
 			color={ 175 251 242 }
 			color2={ 255 255 255 }
 			
@@ -22161,6 +22171,11 @@ e_dali = {
 			color={ 186 249 197 }
 			color2={ 255 255 255 }
 			
+				thai_mueang = "Sibsongphanna"
+				thai_central = "Sibsongphanna"
+				thai_isan = "Sibsongphanna"
+				thai_paktai = "Sibsongphanna"
+				laotian = "Sipsong Panna"
 			allow = {
 				OR = {
 					lower_tier_than = KING
@@ -22964,7 +22979,7 @@ e_burma = {
 		color2={ 255 255 255 }
 		
 		capital = 922 # c_taunggyi
-		culture = bamar
+		culture = myr #or shan?
 		
 		c_taunggyi = { # 922
 			color={ 128 229 220 }
@@ -23463,7 +23478,13 @@ e_burma = {
 			c_laukkaing = { # 936
 				color={ 1 250 254 }
 				color2={ 255 255 255 }
-				
+				xinan = "Lao Jie" #standard Pinyin
+				cantonese = "Lou Gaai"
+				thai_central = "Lao Kai"
+				thai_mueang = "Lao Kai"
+				thai_paktai = "Lao Kai"
+				thai_isan = "Lao Kai"
+				laotian = "Lao Kai"
 				b_laukkaing = {
 				}
 				b_konkyain = {
