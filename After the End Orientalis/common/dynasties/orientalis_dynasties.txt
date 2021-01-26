@@ -7132,9 +7132,23 @@
 2875013 = { name="Tran" culture=tonkinese religion = mahayana} #Tran Dynasty Vietnam
 2875014 = { name="Hôn" culture=tonkinese religion = mahayana} #Hon Interloper
 2875015 = { name="Ho" culture=tonkinese religion = mahayana} #Ho Dynasty
-2875016 = { name="Banh" culture=tonkinese }
-2875017 = { name="Cam" culture=tonkinese }
-2875018 = { name="Canh" culture=tonkinese }
+2875016 = { name="Mac" culture=tonkinese } #Mac Lords
+2875017 = { name="Trinh" culture=tonkinese } #Trinh Lords
+#The Historical Nguyen Dynasty
+2875018 = { name="Nguyen" culture=tonkinese
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2875019 = { name="Cao" culture=tonkinese }
 2875020 = { name="Chan" culture=tonkinese }
 2875021 = { name="Kanh" culture=tonkinese }
@@ -7332,6 +7346,9 @@
 2875213 = { name="Tang" culture=tonkinese }
 2875214 = { name="Anh" culture=tonkinese }
 2875215 = { name="Bach" culture=tonkinese }
+2875216 = { name="Banh" culture=tonkinese }
+2875217 = { name="Cam" culture=tonkinese }
+2875218 = { name="Canh" culture=tonkinese }
 
 2876000 = { name="Vo" culture=annamese } #Duke of Nghe Tinh
 2876001 = { name="Ðang Lê" culture=annamese #Merchant of Da Nang
