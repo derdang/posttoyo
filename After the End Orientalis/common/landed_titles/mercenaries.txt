@@ -234,3 +234,102 @@ d_knights_of_lavang = {
 	
 	mercenary_type = d_knights_of_lavang_composition
 }
+d_jaturamitr_green = {
+	color={ 30 150 30 }
+	color2={ 255 255 255 }
+		
+	capital = 778 # Bangkok
+
+	culture = thai_central
+	
+	allow = {
+		culture_group = southwest_tai
+		NOT = { culture = shan }
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_jaturamitr_composition
+}
+d_jaturamitr_white = {
+	color={ 180 50 50 } #because people associate red with smth else. hence the name :P
+	color2={ 255 255 255 }
+		
+	capital = 778 # Bangkok
+
+	culture = thai_central
+	
+	allow = {
+		culture_group = southwest_tai
+		NOT = { culture = shan }
+	}
+	religion = catholic
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_jaturamitr_composition
+}
+d_jaturamitr_gold = {
+	color={ 255 204 51 } #acutually "Purple" order but idk
+	color2={ 255 255 255 }
+		
+	capital = 778 # Bangkok
+
+	culture = thai_central
+	
+	allow = {
+		culture_group = southwest_tai
+		NOT = { culture = shan }
+	}
+	religion = baptist #Uh...what's the best fit for Thai Presbytherian?
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_jaturamitr_composition
+}
+d_samut_prakarn_croc = {
+	color={ 0 108 240 }
+	color2={ 255 255 255 }
+		
+	capital = 778 # Bangkok
+
+	culture = thai_central
+	
+	allow = {
+		culture_group = southwest_tai
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_thai_crocodile_farm_composition
+}
