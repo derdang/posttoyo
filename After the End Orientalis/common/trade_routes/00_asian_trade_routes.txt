@@ -53,6 +53,7 @@ maritime_silk_trade = {
 	wealth = 100			# Total base wealth of Maritime Silk Road route
 	trade_post_display_trigger = {
 		OR = {
+			province_id = 953 #Macau (China)
 			province_id = 140 #Hai Phong
 			province_id = 167 #Da Nang
 			province_id = 180 #Saigon
@@ -79,9 +80,12 @@ maritime_silk_trade = {
 	}
 
 	start = {				# Start provinces of trade route
-		140 #Hai Phong (Actual start point will be Macau)
+		953 #Macau (China)
 	}
-
+	
+	path = {	#Macau to Hai Phong
+		953 1145 1143 1146 1142 1090 140
+	}
 	path = {	#Hai Phong to Da Nang
 		140 1090 1089 167
 	}
