@@ -8,7 +8,7 @@ character_event = {
 	only_rulers = yes
  
 	trigger = {
-		has_landed_title = d_cao_dai #replaced with the papacy later
+		has_landed_title = e_tian #the off-map entity for all PINGS
 		NOT = { has_global_flag = landmarks_set }
 		has_game_rule = {
 			name = orientalis_landmarks
