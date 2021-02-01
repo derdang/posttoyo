@@ -67,6 +67,28 @@ k_champa = {
 		culture = cham
 	}
 }
+###################THE PING LORD########################
+e_tian = {
+	color = { 255 255 255 }
+	color2={ 255 255 255 }
+	
+	capital = 1 #PLACEHOLDER
+	culture = cantonese
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be vassalized
+	independent = yes
+
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	can_be_claimed = no
+	can_be_usurped = no
+	
+}
+########################################################
 k_sedang = {
 	color = { 0 0 139 }
 	color2={ 255 255 255 }
