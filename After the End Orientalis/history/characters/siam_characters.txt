@@ -71,7 +71,7 @@
 	trait=shrewd
 	trait=diligent
 	trait=stubborn
-	2561.4.15={birth=yes}
+	2558.4.15={birth=yes}
 }
 2310121 ={ # c_kanchanaburi
 	name="Kwae"
@@ -102,7 +102,7 @@
 	trait=skilled_tactician
 	trait=zealous
 	trait=proud
-	2568.7.11={birth=yes}
+	2566.7.11={birth=yes}
 }
 2310202 = {
 	name="Suea"
@@ -157,16 +157,17 @@
 	dynasty=2310996 #Falkov-Thaified
 	culture=primorskiy
 	religion=catholic
-	martial=7
-	diplomacy=5
+	martial=6
+	diplomacy=8
 	stewardship=4
 	intrigue=4
-	learning=4
-	trait=tough_soldier
+	learning=8
+	trait=grey_eminence
 	trait=robust
 	trait=shrewd
 	trait=diligent
 	2570.4.15={birth=yes}
+	2597.11.1={employer=2310301}
 }
 2310401 ={ # d_uthaithani
 	name="Wichit"
@@ -208,18 +209,34 @@
 	dynasty=2310502
 	culture=thai_central
 	religion=dharmayuttika
-	martial=8
+	martial=7
 	diplomacy=3
-	stewardship=8
+	stewardship=6
 	intrigue=6
 	learning=8
 	trait=brilliant_strategist
 	trait=duelist
 	trait=shrewd
-	trait=diligent
 	trait=brave
 	trait=quick
-	2588.4.15={birth=yes}
+	2586.4.15={birth=yes}
+}
+2310512 ={
+	name="Kao" # White Prince
+	dynasty=2310502
+	culture=thai_central
+	religion=dharmayuttika
+	martial=4
+	diplomacy=7
+	stewardship=8
+	intrigue=6
+	learning=8
+	trait=charismatic_negotiator
+	trait=duelist
+	trait=shrewd
+	trait=brave
+	trait=quick
+	2589.4.15={birth=yes}
 }
 2310601 ={
 	name="Bang" # c_nakhon_sawan
@@ -516,13 +533,13 @@
 	2585.4.15={birth=yes}
 }
 ### North
-2312101 ={ # d_lanna
+2312101 ={ # d_chiangmai/lanna
 	name="Cherdchu"
 	dynasty=2312002 #Langkapintha
 	culture=thai_mueang
 	religion=dharmayuttika
-	martial=7
-	diplomacy=5
+	martial=8
+	diplomacy=6
 	stewardship=8
 	intrigue=4
 	learning=7
@@ -560,19 +577,20 @@
 	trait=zealous
 	2587.4.15={birth=yes}
 }
-2312301 ={ # d_lampang
+2312301 ={ # d_lampang- rigged to allow Lanna form
 	name="Sa-art"
-	dynasty=2312013 #na Lampang
+	dynasty=2312002 #Langkapintha
 	culture=thai_mueang
 	religion=dharmayuttika
-	martial=4
+	martial=6
 	diplomacy=7
 	stewardship=5
 	intrigue=5
 	learning=7
 	trait=martial_cleric
 	trait=zealous
-	2585.4.15={birth=yes}
+	trait=chaste
+	2567.4.15={birth=yes}
 }
 2312401 ={ # c_uttharadit
 	name="Darb"
