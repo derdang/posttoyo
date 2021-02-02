@@ -1,5 +1,20 @@
 ###ÄNSI
-1 = { name="Wang" culture=cantonese }
+
+#The Ping KING
+1 = { name="Wang" culture=cantonese 
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1022000 = { name="Kham" culture=tai 
 	coat_of_arms = {
