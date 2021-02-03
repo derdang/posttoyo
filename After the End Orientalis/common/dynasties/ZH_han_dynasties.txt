@@ -1,0 +1,102 @@
+#Reduced Chinese and minorities dynasties names based on the file in dev folder.
+# Please keep this separate from main file until we get most of China and their major cultures into the mod.
+#Number scheme (for now) "90xxyyy" 
+# 'xx' generally/loosely followed regional level of PRC's Postal code system
+# 'yyy' is id of the dynasty/surname. Referred to hantemp dynsties.txt 
+#Example - 9001007 = 90 - 01 (Hohhot,Inner Mongolia) - 007 Bao (referred to hantemp)
+#Number outside of hantemp  000-292 may be used when needed for surname without Chinese equivalent in the file. 
+#
+# Note : As of now the names are in Mandarin. Feel free to replace with regional pronounciation as long as it can be referred back to the same id/character.
+#		 I don't sure how to handle multiple pronounciation for a surname yet :S - Poom
+#Resource : 
+#	Surnames in China : www.jstor.org/stable/23767123 (Particularly on minorities in p.9-11)
+#Inner Mongolia :9001
+9001007 = { name="Bao" culture=mengguzu } #""Borjigin""
+9001077 = { name="Guo" culture=mengguzu }
+9001135 = { name="Ma" culture=mengguzu }
+9001159 = { name="Pan" culture=mengguzu }
+9001167 = { name="Qi" culture=mengguzu }
+
+# NE China : 901 (Dongbei)
+#-- Dongbei
+9010077 = { name="Guo" culture=dongbei }
+9010091 = { name="Huang" culture=dongbei }
+9010100 = { name="Jiang" culture=dongbei }
+9010120 = { name="Li" culture=dongbei }
+9010135 = { name="Ma" culture=dongbei }
+9010222 = { name="Wang" culture=dongbei }
+9010258 = { name="Yu" culture=dongbei }
+9010271 = { name="Zhang" culture=dongbei }
+
+9011103 = { name="Jin" culture=chaoxianzu } #Chinese reading of Kim
+9011120 = { name="Li" culture=chaoxianzu } #Lee
+9011500 = { name="Po" culture=chaoxianzu } #Park - don't exist in hantemp_dyn
+9011033 = { name="Cui" culture=chaoxianzu } #Choi
+9011005 = { name="Zheng" culture=chaoxianzu } #Jeong
+
+# South China : 9051
+#-- Guangdong
+9051026 = { name="Chen" culture=cantonese }
+9051091 = { name="Huang" culture=cantonese }
+9051112 = { name="Kuang" culture=cantonese }
+9051120 = { name="Li" culture=cantonese }
+9051125 = { name="Lin" culture=cantonese }
+9051131 = { name="Lu" culture=cantonese }
+9051135 = { name="Ma" culture=cantonese }
+9051229 = { name="Wu" culture=cantonese }
+9051271 = { name="Zhang" culture=cantonese }
+
+#--Guangxi : 9053
+9053026 = { name="Chen" culture=zhuang }
+9053120 = { name="Li" culture=zhuang }
+9053128 = { name="Liu" culture=zhuang }
+9053122 = { name="Liang" culture=zhuang }
+9053131 = { name="Lu" culture=zhuang }
+9053224 = { name="Wei" culture=zhuang }
+9053271 = { name="Zhang" culture=zhuang }
+
+#--Hainan :
+9057120 = { name="Li" culture=hlai }
+9057026 = { name="Chen" culture=hlai }
+
+9058135 = { name="Ma" culture=min }
+9058026 = { name="Chen" culture=min }
+#-- Xinan / Yunnan : 9070
+9070120 = { name="Li" culture=xinan }
+9070128 = { name="Liu" culture=xinan }
+9070072 = { name="Guan" culture=xinan }
+9070082 = { name="He" culture=xinan }
+9070135 = { name="Ma" culture=xinan }
+9070249 = { name="Yang" culture=xinan }
+9070271 = { name="Zhang" culture=xinan }
+9070272 = { name="Zhao" culture=xinan }
+9070283 = { name="Zhuge" culture=xinan }
+
+
+9071002 = { name="An" culture=yi }
+9071026 = { name="Chen" culture=yi }
+9071191 = { name="She" culture=yi }
+9071249 = { name="Yang" culture=yi }
+9071271 = { name="Zhang" culture=yi }
+
+9072222 = { name="Wang" culture=bai }
+9072249 = { name="Yang" culture=bai }
+9072271 = { name="Zhang" culture=bai }
+9072272 = { name="Zhao" culture=bai }
+
+#Dai - part of Sinicized Tai Dam dyns :S
+9073018 = { name="Cao" culture=dai }
+9073082 = { name="He" culture=dai }
+9073205 = { name="Song" culture=dai }
+9073232 = { name="Xia" culture=dai }
+9073287 = { name="Zong" culture=dai }
+
+9074026 = { name="Chen" culture=hani }
+9074120 = { name="Li" culture=hani }
+9074168 = { name="Qian" culture=hani }
+9074272 = { name="Zhao" culture=hani }
+
+9075026 = { name="Chen" culture=miao }
+9075120 = { name="Li" culture=miao }
+9075272 = { name="Zhao" culture=miao }
+9075271 = { name="Zhang" culture=miao }
