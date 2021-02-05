@@ -19207,7 +19207,7 @@ e_dongbei = {
 	color={ 137 43 101 }
 	color2={ 255 255 20 }
 	
-	capital = 869 # c_shenyang
+	capital = 848 # c_changchun
 	culture = dongbei
 	
 	k_jilin = {
@@ -19427,14 +19427,14 @@ e_dongbei = {
 				}
 			}
 		}
-		d_liaoyuan = {
+		d_siping = {
 			color={ 247 18 5 }
 			color2={ 255 255 255 }
 			
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 866 } }
+					any_demesne_province = { OR = { province_id = 866 province_id = 867 province_id = 868 } }
 				}
 			}
 			capital = 866 # c_liaoyuan
@@ -19458,19 +19458,6 @@ e_dongbei = {
 				b_beishou = {
 				}
 			}
-		}
-		d_siping = {
-			color={ 246 51 43 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 867 province_id = 868 } }
-				}
-			}
-			capital = 867 # c_siping
-			
 			c_siping = { # 867
 				color={ 236 61 38 }
 				color2={ 255 255 255 }
