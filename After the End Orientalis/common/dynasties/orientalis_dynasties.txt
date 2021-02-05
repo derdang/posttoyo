@@ -2496,12 +2496,51 @@
 1600268 = { name="Zukeran" culture=ryukyuan }
 
 
-1601000 = { name="Abe" culture=ezo }
-1601001 = { name="Ado" culture=ezo }
-1601002 = { name="Agano" culture=ezo }
-1601003 = { name="Agari" culture=ezo }
-1601004 = { name="Ageno" culture=ezo }
-1601005 = { name="Akimoto" culture=ezo }
+1601000 = { name="Asahi" culture=ezo
+	coat_of_arms = {
+		religion = chinomi
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1601001 = { name="Kado" culture=ezo
+	coat_of_arms = {
+		religion = chinomi
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1601002 = { name="Kasegi" culture=ezo
+	coat_of_arms = {
+		religion = chinomi
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1601003 = { name="Kishi" culture=ezo }
+1601004 = { name="Horo" culture=ezo }
+1601005 = { name="Ifukube" culture=ezo }
 1601006 = { name="Akiyama" culture=ezo }
 1601007 = { name="Amano" culture=ezo }
 1601008 = { name="Anda" culture=ezo }
@@ -2885,6 +2924,12 @@
 1601386 = { name="Urami" culture=ezo }
 1601387 = { name="Yanagita" culture=ezo }
 1601388 = { name="Yanase" culture=ezo }
+1601389 = { name="Abe" culture=ezo }
+1601390 = { name="Ado" culture=ezo }
+1601391 = { name="Agano" culture=ezo }
+1601392 = { name="Agari" culture=ezo }
+1601393 = { name="Ageno" culture=ezo }
+1601394 = { name="Akimoto" culture=ezo }
 
 
 1602000 = { name="Komatsu" culture=kyushuan }
@@ -3279,7 +3324,7 @@
 
 1603000 = { name="Kakihara" culture=togoku
 	coat_of_arms = {
-		religion = tenrikyo
+		religion = seirei
 		template = 0
 		layer = {
 			texture = 0
@@ -3292,51 +3337,12 @@
 	}
 }
 1603001 = { name="Kari" culture=togoku }
-1603002 = { name="Asahi" culture=togoku
-	coat_of_arms = {
-		religion = tenrikyo
-		template = 0
-		layer = {
-			texture = 0
-			texture_internal = 6
-			emblem = 0
-			color = 0
-			color = 0
-			color = 0
-		}
-	}
-}
-1603003 = { name="Kado" culture=togoku
-	coat_of_arms = {
-		religion = tenrikyo
-		template = 0
-		layer = {
-			texture = 0
-			texture_internal = 7
-			emblem = 0
-			color = 0
-			color = 0
-			color = 0
-		}
-	}
-}
-1603004 = { name="Kasegi" culture=togoku
-	coat_of_arms = {
-		religion = tenrikyo
-		template = 0
-		layer = {
-			texture = 0
-			texture_internal = 8
-			emblem = 0
-			color = 0
-			color = 0
-			color = 0
-		}
-	}
-}
-1603005 = { name="Kishi" culture=togoku }
-1603006 = { name="Horo" culture=togoku }
-1603007 = { name="Ifukube" culture=togoku }
+1603002 = { name="Agano" culture=togoku }
+1603003 = { name="Agari" culture=togoku }
+1603004 = { name="Ageno" culture=togoku }
+1603005 = { name="Akimoto" culture=togoku }
+1603006 = { name="Akiyama" culture=togoku }
+1603007 = { name="Amano" culture=togoku }
 1603008 = { name="Anda" culture=togoku }
 1603009 = { name="Ando" culture=togoku }
 1603010 = { name="Aoba" culture=togoku }
