@@ -148,26 +148,27 @@ dragon_road_trade = {
 	}
 }
 royal_thai_road_trade = { #based from Thai Railways, expanded to include border crossing
-	wealth = 100			# Total base wealth of Imperial Thai Road (Thang Luang)
+	wealth = 75			# Total base wealth of Imperial Thai Road (Thang Luang)
 	trade_post_display_trigger = {
 		OR = {
 			province_id = 294 #Vientiane
 			province_id = 784 #Ayutthaya
+			province_id = 778 #Phra Nakhon (Bangkok) may be redundant
 			province_id = 802 #Chumphon
 			province_id = 811 #Songkhla
 			province_id = 816 #Korat
-			province_id = 827 #Udon Thani
+			province_id = 826 #Udon Thani
 			province_id = 838 #Chiang Mai
 		}
 	}
 
 	modifier = {	# How the trade route modifies the provinces it passes
-		castle_tax_modifier = 0.08
-		city_tax_modifier = 0.08
-		temple_tax_modifier = 0.08
-		tribal_tax_modifier = 0.08
+		castle_tax_modifier = 0.07
+		city_tax_modifier = 0.07
+		temple_tax_modifier = 0.07
+		tribal_tax_modifier = 0.07
 		trade_route_value = 10
-		local_movement_speed = 0.20
+		local_movement_speed = 0.15
 		tech_growth_modifier = 0.15
 		icon = 4
 	}
@@ -175,8 +176,7 @@ royal_thai_road_trade = { #based from Thai Railways, expanded to include border 
 	start = {				# Start provinces of trade route
 		778 #Phra Nakhon (Bangkok)
 		784 #Ayutthaya
-		847 #Uttaradit
-		839 #Chiang Rai
+		#839 #Chiang Rai
 	}
 
 	path = {	#Phra Nakhon (Bangkok) to Songkhla (Southern Railway) - International Line to Butterworth, Malaysia
@@ -198,7 +198,7 @@ royal_thai_road_trade = { #based from Thai Railways, expanded to include border 
 		784 791 816
 	}
 	path = {	#Korat to Ubon (Northeast Railway - Southern Line) - Champassak
-		816 817 818 819 820 308 309
+		816 817 818 820 819 308 309
 	}
 	path = {	#Korat to Udon Thani (Northeast Railway - Northern Line) - Nkh.Vientiane
 		816 821 826 827 294
@@ -207,17 +207,58 @@ royal_thai_road_trade = { #based from Thai Railways, expanded to include border 
 		784 790 833 835 837 847 845 842 843 838 839
 	}
 	
-	path = {	#Golden Triangle - Thai-Laos branch "Trade center" at Thailand-Laos-Myanmar Shan state. 
-		839 304
+	#path = {	#Golden Triangle - Thai-Laos branch "Trade center" at Thailand-Laos-Myanmar Shan state. 
+	#	839 304
+	#}
+	#path = {	#Golden Triangle - Thai-Burma (Shan) branch
+	#	839 930
+	#}
+	#path = {	#Golden Triangle - Burma-Laos branch, might be entirely unnecessary but this will make it look like a triangle, so...
+	#	930 304
+	#}
+
+}
+mekong_river_trade = { #Laos, Isan, Cambodia, Cochinchina
+	wealth = 50		# Total base wealth of Mekong trade
+	trade_post_display_trigger = {
+		OR = {
+			province_id = 299 #Luang Prabang
+			#province_id = 294 #Vientiane
+			province_id = 309 #Champassak
+			province_id = 313 #Phnom Penh
+			province_id = 336 #Kampong Cham
+			province_id = 193 #Can Tho
+		}
 	}
-	path = {	#Golden Triangle - Thai-Burma (Shan) branch
-		839 930
+	modifier = {	# How the trade route modifies the provinces it passes
+		castle_tax_modifier = 0.07
+		city_tax_modifier = 0.07
+		temple_tax_modifier = 0.07
+		tribal_tax_modifier = 0.07
+		trade_route_value = 10
+		local_movement_speed = 0.10
+		tech_growth_modifier = 0.15
+		icon = 4
 	}
-	path = {	#Golden Triangle - Burma-Laos branch, might be entirely unnecessary but this will make it look like a triangle, so...
-		930 304
+	start = {	# Start provinces of trade route
+	province_id = 299 #Luang Prabang
+	province_id = 294 #Vientiane
+	province_id = 307 #Savannakhet
 	}
-	path = {	#Uttaradit to Sukhothai (Northern Railway)
-		847 832 #idk why it is like this. Can be uncommented if we really wanted better Sukhothai county.
+	path = {	#Luang Prabang - Vientiane
+		299 295 294
+	}
+	path = { #Vientiane to Champassak - West shore/Isan
+		294 827 830 819 308 309
+	}
+	path = { #Vientiane to Champassak - East shore/Laos
+		294 306 305 307 309
+	}
+	path = { #Savannakhet - (Sepon River) - Quang Tri - Hue
+		307 163 161
+	}
+	path = { #Champassak to Phnom Penh/Kandal - Can Tho
+		309 325 334 336 318 313 314 194 193
 	}
 }
 tokaido_trade = {
