@@ -1,4 +1,17 @@
 Unfinished Define -- README (by Poom)
+-- 06 Feb 2021 - Update Liangguang, Yunnan, Shan++
+- Liangguang
+	- Replace duplicate counties name in Guangxi
+- Yunnan
+	- Rename Xishaungbanna counties to actual conuties name.
+	- Revise cultural setup to be more in line with Shan.
+		- Moved culture around. Bai culture gain a country in expense of Yi.
+		- Dehong become Jingbo
+- Shan++
+	- Added Kayah State and Kachin State
+		- Kayah : Karenni culture. Divided with Parimatira and Concordanist.
+		- Kachin. Jingpo/Lisu/Myr/Shan culture. Majority Parimatira with Concordanist at the extreme north.
+	- County previously defined as Pinlaung is actually part of Kayin State. Those baronies have been merged to another Shan county.
 -- 16-17 January 2021 -- Shan State
 yeah sorry too tired for detailed Readme rn. I fill the barony as best as I could but I might might've place latter baronies in wrong counties. /shrug
 Also by filling, I might use Thai names in tail-end baronies as I can't find any name whatsoever.
