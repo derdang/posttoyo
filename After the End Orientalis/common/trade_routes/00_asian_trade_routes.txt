@@ -28,13 +28,13 @@ nutmeg_trade = {
 	}
 
 	path = {	#Jakarta to Palembang 
-		445 1060 1057 390
+		445 1065 1062 390
 	}
 	path = {	#Palembang to Singapore 
-		390 1056 1049 389
+		390 1061 1054 389
 	}
 	path = {	#Jakarta to Semarang 
-		445 1061 456
+		445 1066 456
 	}
 	path = {	#Semarang to Yogyakarta 
 		456 459 453
@@ -43,17 +43,17 @@ nutmeg_trade = {
 		456 460 461 463 462
 	}
 	path = {	#Surabaya to Denpasar 
-		462 1063 1064 556
+		462 1068 1069 556
 	}
 	path = {	#Yogyakarta to Denpasar 
-		453 1062 1065 556
+		453 1067 1070 556
 	}
 }
 maritime_silk_trade = {
 	wealth = 100			# Total base wealth of Maritime Silk Road route
 	trade_post_display_trigger = {
 		OR = {
-			province_id = 953 #Macau (China)
+			province_id = 958 #Macau (China)
 			province_id = 140 #Hai Phong
 			province_id = 167 #Da Nang
 			province_id = 180 #Saigon
@@ -80,44 +80,44 @@ maritime_silk_trade = {
 	}
 
 	start = {				# Start provinces of trade route
-		953 #Macau (China)
+		958 #Macau (China)
 	}
 	
 	path = {	#Macau to Hai Phong
-		953 1145 1143 1146 1142 1090 140
+		958 1149 1147 1150 1095 140
 	}
 	path = {	#Hai Phong to Da Nang
-		140 1090 1089 167
+		140 1095 1094 167
 	}
 	path = {	#Da Nang to Sai Gon
-		167 1088 1087 1086 180
+		167 1093 1092 1091 180
 	}
 	path = {	#Sai Gon to Sihanoukville
-		180 197 1085 1091 320
+		180 197 1090 1096 320
 	}
 	path = {	#Sihanoukville to Phra Nakhon (Bangkok)
-		320 1094 1092 778
+		320 1099 1097 778
 	}
 	path = {	#Phra Nakhon (Bangkok) to Pattani
-		778 1092 1093 805 812
+		778 1097 1098 805 812
 	}
 	path = {	#Pattani to Kota Bharu (Kelantan)
 		812 814 373
 	}
 	path = {	#Kota Bharu (Kelantan) to Singapore
-		373 1053 1052 1050 1049 389
+		373 1058 1057 1055 1054 389
 	}
 	path = {	#Singapore to Kuala Lumpur
-		389 1047 339 337
+		389 1052 339 337
 	}
 	path = {	#Kuala Lumpur to George Town (Penang)
-		337 340 1046 363
+		337 340 1051 363
 	}
 	path = {	#George Town (Penang) to Mawlamyine and Thaton
-		363 1127 1128 1129 903 904
+		363 1132 1133 1134 903 904
 	}
 	path = {	#Thaton to Yangon
-		904 1130 909
+		904 1135 909
 	}
 }
 dragon_road_trade = {
@@ -176,7 +176,6 @@ royal_thai_road_trade = { #based from Thai Railways, expanded to include border 
 	start = {				# Start provinces of trade route
 		778 #Phra Nakhon (Bangkok)
 		784 #Ayutthaya
-		#839 #Chiang Rai
 	}
 
 	path = {	#Phra Nakhon (Bangkok) to Songkhla (Southern Railway) - International Line to Butterworth, Malaysia
@@ -203,27 +202,15 @@ royal_thai_road_trade = { #based from Thai Railways, expanded to include border 
 	path = {	#Korat to Udon Thani (Northeast Railway - Northern Line) - Nkh.Vientiane
 		816 821 826 827 294
 	}
-	path = {	#Ayutthaya to Chiang Mai (Northern Railway) -
+	path = {	#Ayutthaya to Chiang Mai (Northern Railway)
 		784 790 833 835 837 847 845 842 843 838 839
 	}
-	
-	#path = {	#Golden Triangle - Thai-Laos branch "Trade center" at Thailand-Laos-Myanmar Shan state. 
-	#	839 304
-	#}
-	#path = {	#Golden Triangle - Thai-Burma (Shan) branch
-	#	839 930
-	#}
-	#path = {	#Golden Triangle - Burma-Laos branch, might be entirely unnecessary but this will make it look like a triangle, so...
-	#	930 304
-	#}
-
 }
 mekong_river_trade = { #Laos, Isan, Cambodia, Cochinchina
 	wealth = 50		# Total base wealth of Mekong trade
 	trade_post_display_trigger = {
 		OR = {
 			province_id = 299 #Luang Prabang
-			#province_id = 294 #Vientiane
 			province_id = 309 #Champassak
 			province_id = 313 #Phnom Penh
 			province_id = 336 #Kampong Cham
@@ -241,9 +228,9 @@ mekong_river_trade = { #Laos, Isan, Cambodia, Cochinchina
 		icon = 4
 	}
 	start = {	# Start provinces of trade route
-	province_id = 299 #Luang Prabang
-	province_id = 294 #Vientiane
-	province_id = 307 #Savannakhet
+		299 #Luang Prabang
+		294 #Vientiane
+	    307 #Savannakhet
 	}
 	path = {	#Luang Prabang - Vientiane
 		299 295 294
@@ -300,10 +287,10 @@ tokaido_trade = {
 		69 78 82 88
 	}
 	path = {	#Osaka to Hiroshima
-		88 86 1123 1124 110
+		88 86 1128 1129 110
 	}
 	path = {	#Osaka to Kochi
-		88 1123 1111 98
+		88 1128 1116 98
 	}
 }
 saikaido_trade = {
@@ -337,10 +324,10 @@ saikaido_trade = {
 	}
 
 	path = {	#Nagasaki to Satsuma
-		121 1117 1113 130
+		121 1122 1118 130
 	}
 	path = {	#Satsuma to Okinawa
-		130 1113 1114 134
+		130 1118 1119 134
 	}
 	path = {	#Satsuma to Miyazaki
 		130 129 128
@@ -388,10 +375,10 @@ higashimawari_trade = {
 		56 26 25 24 23 21
 	}
 	path = {	#Aomori to Ishikari
-		21 1100 1099 5
+		21 1105 1104 5
 	}
 	path = {	#Aomori to Sendai
-		21 1100 1103 1104 32
+		21 1105 1108 1109 32
 	}
 	path = {	#Sendai to Tokyo
 		32 35 42 43 44 53
