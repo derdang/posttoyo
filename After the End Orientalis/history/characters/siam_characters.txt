@@ -189,7 +189,7 @@
 2310501 ={
 	name="Klarharn" # Brave, not-Ram khamhaeng
 	dynasty=2310501
-	culture=thai_central
+	culture=thai_sukhothai
 	religion=dharmayuttika
 	martial=9
 	diplomacy=5
@@ -207,7 +207,7 @@
 2310511 ={
 	name="Dam" # Black Prince
 	dynasty=2310502
-	culture=thai_central
+	culture=thai_sukhothai
 	religion=dharmayuttika
 	martial=7
 	diplomacy=3
@@ -224,7 +224,7 @@
 2310512 ={
 	name="Kao" # White Prince
 	dynasty=2310502
-	culture=thai_central
+	culture=thai_sukhothai
 	religion=dharmayuttika
 	martial=4
 	diplomacy=7
@@ -241,7 +241,7 @@
 2310601 ={
 	name="Bang" # c_nakhon_sawan
 	dynasty=2310601
-	culture=thai_central
+	culture=thai_sukhothai
 	religion=dharmayuttika
 	martial=6
 	diplomacy=5
@@ -448,34 +448,6 @@
 	trait=diligent
 	2585.4.15={birth=yes}
 }
-2311301 ={ # d_udon_ratch/nong khai (Vientiane border)
-	name="Nam"
-	dynasty=2311151 #Sangcom
-	culture=thai_isan
-	religion=dharmayuttika
-	martial=4
-	diplomacy=5
-	stewardship=4
-	intrigue=4
-	learning=4
-	trait=thrifty_clerk
-	trait=diligent
-	2585.4.15={birth=yes}
-}
-2311401 ={ # d_ubon (Champassak/Cambodia border)
-	name="Chanadai"
-	dynasty=2311202
-	culture=thai_isan
-	religion=dharmayuttika
-	martial=4
-	diplomacy=5
-	stewardship=4
-	intrigue=4
-	learning=4
-	trait=thrifty_clerk
-	trait=diligent
-	2585.4.15={birth=yes}
-}
 2311221 ={ # c_chaiyaphum
 	name="Phakdi"
 	dynasty=2311006
@@ -518,6 +490,20 @@
 	trait=diligent
 	2585.4.15={birth=yes}
 }
+2311301 ={ # d_udon_thani (Vientiane border)
+	name="Nam"
+	dynasty=2311151 #Sangcom
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
 2311311 ={ # c_sakon_Nakhon
 	name="Ton"
 	dynasty=2311011
@@ -532,6 +518,35 @@
 	trait=diligent
 	2585.4.15={birth=yes}
 }
+2311331 ={ # nong_khai-Loei
+	name="Ken"
+	dynasty=2311153
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=7
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=charismatic_negotiator
+	trait=diligent
+	2583.4.15={birth=yes}
+}
+2311401 ={ # d_ubon (Champassak/Cambodia border)
+	name="Chanadai"
+	dynasty=2311202
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+
 ### North
 2312101 ={ # d_chiangmai/lanna
 	name="Cherdchu"
@@ -593,9 +608,9 @@
 	2567.4.15={birth=yes}
 }
 2312401 ={ # c_uttharadit
-	name="Darb"
+	name="Daab"
 	dynasty=2310651
-	culture=thai_central
+	culture=thai_sukhothai
 	religion=dharmayuttika
 	martial=6
 	diplomacy=6
@@ -630,7 +645,7 @@
 	dynasty=1177019 #Jaya - Cham dynasty
 	culture=cham
 	religion=dharmayuttika
-	martial=6
+	martial=7
 	diplomacy=5
 	stewardship=4
 	intrigue=4
