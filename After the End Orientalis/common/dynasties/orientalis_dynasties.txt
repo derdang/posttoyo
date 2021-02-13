@@ -6982,17 +6982,42 @@
 2310301 = ( name="Banthong" culture=thai_central }
 2310401 = ( name="Takdaet" culture=thai_central }
 #k_sukhothai
-2310501 = ( name="Tungsariem" culture=thai_central }
-2310502 = ( name="Chaiyanupharp" culture=thai_central }
-2310601 = ( name="Takfa" culture=thai_central }
-2310651 = ( name="Laplae" culture=thai_central }
-2310701 = ( name="Khitchakut" culture=thai_central }
-2310711 = ( name="Simahosot" culture=thai_central }
+2310501 = ( name="Tungsariem" culture=thai_sukhothai }
+2310502 = ( name="Chaiyanupharp" culture=thai_sukhothai }
+2310503 = ( name="Khirimat" culture=thai_sukhothai }
+2310504 = ( name="Bankluai" culture=thai_sukhothai }
+2310601 = ( name="Takfa" culture=thai_sukhothai }
+2310651 = ( name="Lap-lae" culture=thai_sukhothai }
+2310701 = ( name="Khitchakut" culture=thai_sukhothai }
+2310711 = ( name="Simahosot" culture=thai_sukhothai }
+#Thai name derived from Chinese clan name/Xing -> "Sae"
+2310800 =  ( name="Saehongsa" culture=thai_central } #Hong
+2310801 =  ( name="Saetang" culture=thai_central } #Chen
+2310802 =  ( name="Saelim" culture=thai_central } #Lin
+2310803 =  ( name="Saeli" culture=thai_central } #Li
+2310804 =  ( name="Saejang" culture=thai_central } #Zhang
+2310805 =  ( name="Sae-ngow" culture=thai_central } #Wu
+2310806 =  ( name="Saetae" culture=thai_central } #Deng
+2310807 =  ( name="Saeliu" culture=thai_central } #Liu
+2310808 =  ( name="Saewang" culture=thai_central } #Wang
+2310809 =  ( name="Sae-ung" culture=thai_central } #Huang
+#Sae/Xing for Sukhothai
+2310850 =  ( name="Saehong" culture=thai_sukhothai }
+2310851 =  ( name="Saetang" culture=thai_sukhothai }
+2310852 =  ( name="Saelim" culture=thai_sukhothai }
+2310853 =  ( name="Saeli" culture=thai_sukhothai }
+2310854 =  ( name="Saejang" culture=thai_sukhothai }
+2310855 =  ( name="Sae-ngow" culture=thai_sukhothai }
+2310856 =  ( name="Saetae" culture=thai_sukhothai }
+2310857 =  ( name="Saeliu" culture=thai_sukhothai }
+2310858 =  ( name="Saewang" culture=thai_sukhothai }
+2310859 =  ( name="Sae-ung" culture=thai_sukhothai }
+##May add more Xing-derived surnames and variant in the future. i.e. Ungphakorn
 #Meme dyn, and Dyn for leaders outside of k_mahanakorn + sukhothai
 2310903 = { name="Niyamdi" culture=thai_central } #Nyabi (the Pokemon) :P
-2310904 = { name="Sumith" culture=thai_central } #Sumith
+2310904 = { name="Sumith" culture=thai_central } #Smith
 2310905 = { name="Damkwan" culture=thai_central }
-2310906 = { name="Banhuaika" culture=thai_central } #Nyabi (the Pokemon) :P
+2310906 = { name="Banhuaika" culture=thai_central }
 #Pattaya Patrician 
 2310991 = { name="Phikulavong" culture=thai_central }
 2310992 = { name="Kenway" culture=thai_central }
@@ -7015,16 +7040,13 @@
 2311011 = { name="Saengtaku" culture=thai_isan } 
 2311012 = { name="Rotchimplee" culture=thai_isan } 
 2311013 = { name="Srichantuek" culture=thai_isan } 
-2311014 = { name="Tiemsilpachai" culture=thai_isan } #one of Sculptor of the Ya Mo's statue
+2311014 = { name="Tiemsilpachai" culture=thai_isan } #Ya Mo's statue
 #Mukdahan
 2311015 = { name="Chandrasakha" culture=thai_isan }
 2311016 = { name="Phitakphanom" culture=thai_isan }
-
 # Surin (placeholder) Took it from paper on Kui/Suai people surname :S
 2311025 = { name="Saiwiset" culture=thai_isan } 
 2311026 = { name="Kularbkulee" culture=thai_isan }
-
-
 #Buriram
 2311040 = { name="Kamlangram" culture=thai_isan }
 2311041 = { name="Padungram" culture=thai_isan }
@@ -7036,14 +7058,16 @@
 #Udon-thani
 2311151 = { name="Sangcom" culture=thai_isan }
 2311152 = { name="Sibunrueang" culture=thai_isan }  
+2311153 = { name="Phonpisai" culture=thai_isan }  
 # na-
 2311201 = ( name="na Nonggai" culture=thai_isan } #Nong Khai 
 2311202 = ( name="na Ubol" culture=thai_isan } #Ubon
 2311203 = ( name="Bhavabhutananda na Mahasaragama" culture=thai_isan } #Mahasarakham... and yep.
 2311204 = ( name="na Sakonnakorn" culture=thai_isan }
-#MPun and placeholders -
+#Pun and placeholders -
 2311300 = ( name="Namdam" culture=thai_isan }
-#THai Mueang.
+
+#Thai Mueang
 2312001 = { name="Dokmai" culture=thai_mueang } 
 2312002 = { name="Langkapintha" culture=thai_mueang } 
 2312003 = { name="Tungkhanakhon" culture=thai_mueang } 
@@ -7065,7 +7089,19 @@
 2312019 = { name="Wangsai" culture=thai_mueang } 
 2312020 = { name="Mahayoddhapanya" culture=thai_mueang } 
 2312021 = { name="Sritisan" culture=thai_mueang } 
-2312022 = { name="Bunpeng" culture=thai_mueang } 
+2312022 = { name="Bunpeng" culture=thai_mueang }
+#Sae/Xing for Mueang
+2310850 =  ( name="Saehong" culture=thai_mueang }
+2310851 =  ( name="Saetang" culture=thai_mueang }
+2310852 =  ( name="Saelim" culture=thai_mueang }
+2310853 =  ( name="Saeli" culture=thai_mueang }
+2310854 =  ( name="Saejang" culture=thai_mueang }
+2310855 =  ( name="Sae-ngow" culture=thai_mueang }
+2310856 =  ( name="Saetae" culture=thai_mueang }
+2310857 =  ( name="Saeliu" culture=thai_mueang }
+2310858 =  ( name="Saewang" culture=thai_mueang }
+2310859 =  ( name="Sae-ung" culture=thai_mueang }
+ 
 # Paktai
 2313001 = { name="Wongchaiya" culture=thai_paktai } #Surat Thani
 2313002 = { name="Chaokon" culture=thai_paktai} #Nakhon Sri Thammarach
@@ -7073,6 +7109,16 @@
 2313004 = { name="Chomrang" culture=thai_paktai } #Phuket
 2313005 = { name="of Patani" culture=thai_paktai } #Pattani (can't think of better name now
 2313006 = { name="Sa-ard" culture=thai_paktai }
+#Chinese descent - referred to thai_central
+2313801 =  ( name="Saetang" culture=thai_paktai }
+2313802 =  ( name="Saelim" culture=thai_paktai }
+2313803 =  ( name="Saeli" culture=thai_paktai }
+2313804 =  ( name="Saejang" culture=thai_paktai }
+2313805 =  ( name="Sae-ngow" culture=thai_paktai }
+2313806 =  ( name="Saetae" culture=thai_paktai }
+2313807 =  ( name="Saeliu" culture=thai_paktai }
+2313808 =  ( name="Saewang" culture=thai_paktai }
+2313809 =  ( name="Sae-ung" culture=thai_paktai }
 
 2500000 = { name="Vwj" culture=hmong }
 2500001 = { name="Tsaab" culture=hmong }
