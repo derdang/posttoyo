@@ -589,12 +589,14 @@ character_event = {
 	desc = EVTDESC_seance_trait_recieved
 	picture = GFX_evt_cao_dai
 	hide_window = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		ai = yes
 		religion = cao_dai
 		age >= 16
 	}
+	
 	immediate = {
 		random_list = {
 			# potential seance traits
