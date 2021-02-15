@@ -10,9 +10,63 @@
 # World Regions
 #	These groups are mutually exclusive on the same tier
 ###########################################################################
+world_indochina = {
+    regions = {
+		custom_old_vietnam custom_old_laos custom_old_cambodia custom_old_siam custom_old_burma
+    }
+}
+custom_old_vietnam = {
+    duchies = {
+		d_ha_noi d_ha_giang d_ha_long d_hai_phong d_nam_dhinh d_phu_tho d_son_la d_yen_bai d_sai_gon d_ben_tre d_can_tho d_dhong_thap d_ha_tien d_tay_ninh d_thua_thien d_cua_han d_dhak_lak d_gia_lai d_nghe_tinh d_ninh_thuan
+    }
+}
+custom_old_cambodia = {
+    duchies = {
+		d_phnom_penh d_koh_trol d_kratie d_oudong d_pursat d_siem_reap
+    }
+}
+custom_old_laos = {
+    duchies = {
+		d_vientiane d_champasak d_luang_prabang d_savannakhet d_xiangkhouang
+    }
+}
+custom_old_siam = {
+    duchies = {
+		d_palimonthon d_ayutthaya d_lopburi d_ratchaburi d_uthaithani d_chachoengsao d_chantraburi d_chonburi d_prachinburi d_nakhon_ratchasima d_khon_kaen d_ubon d_udon_thani d_chiang_mai d_lampang d_phayao d_surat d_nakhon_sri_thammarat d_pattani d_sukhothai
+    }
+}
+custom_old_burma = {
+    duchies = {
+		d_tenasserim d_ayeyarwady d_bago d_hpa_an d_thanton d_yangon d_south_shan d_east_shan d_kayin d_kokang d_north_shan d_kachin
+    }
+}
+custom_pennisular_malaysia = {
+    duchies = {
+		d_klang d_perak_selatan d_selangor_utara d_johor d_batu_pahat d_kepulauan_riau d_melaka d_negeri_sembilan d_kelantan d_pahang_dalaman d_pahang_luar d_terengganu d_penang d_kedah d_perlis 
+    }
+}
+custom_sumatra = {
+    duchies = {
+		d_palembang d_bangka_belitung d_bengkulu d_lampung d_ogan_komering d_aceh_utara d_aceh_selatan d_medan d_tapanuli d_siak d_indragiri d_jambi d_kerinci d_labuhanbatu d_rokan d_sumbar
+    }
+}
+custom_andaman = {
+    duchies = {
+		d_south_andaman d_north_andaman d_nicobar
+    }
+}
+custom_singapura = {
+    duchies = {
+		d_singapore
+    }
+}
 custom_historical_plague_free_zone = {
     duchies = {
 		d_guam d_mariana d_palau d_yap
     }
 }
-
+custom_monsoon_region = {
+    regions = {
+		world_indochina custom_pennisular_malaysia custom_singapura custom_sumatra custom_andaman
+    }
+}
