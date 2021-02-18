@@ -20643,7 +20643,7 @@ e_liangguang = {
 				}
 				b_tseung_kwan_o = {
 				}
-				b_sai_kung = {
+				b_sheung_wan = {
 				}
 				b_stanley = {
 				}
@@ -22702,7 +22702,7 @@ e_burma = {
 				}
 			}
 		}
-		d_bago = {
+		d_pegu = {
 			color={ 33 78 28 }
 			color2={ 255 255 255 }
 			
@@ -22828,7 +22828,7 @@ e_burma = {
 				}
 			}
 		}
-		d_hpa_an = {
+		d_karen = {
 			color={ 107 181 119 }
 			color2={ 255 255 255 }
 			
@@ -22992,7 +22992,7 @@ e_burma = {
 				}
 			}
 		}
-		d_yangon = {
+		d_rangoon = {
 			color={ 55 60 50 }
 			color2={ 255 255 255 }
 			
@@ -23107,7 +23107,7 @@ e_burma = {
 		capital = 922 # c_taunggyi
 		culture = bamar
 		
-		d_south_shan = {
+		d_taungyi = {
 			color={ 118 239 215 }
 			color2={ 255 255 255 }
 			
@@ -23196,7 +23196,96 @@ e_burma = {
 				}
 			}
 		}
-		d_east_shan = {
+		d_hsenwi = {
+			color={ 17 64 66 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 930 province_id = 931 province_id = 932 province_id = 933 } }
+				}
+			}
+			capital = 930 # c_lashio
+			
+			c_lashio = { # 930
+				color={ 7 74 61 }
+				color2={ 255 255 255 }
+				
+				b_hsenwi = {
+				}
+				b_lashio = {
+				}
+				b_mongyai = {
+				}
+				b_tangyan = {
+				}
+				b_mamkanmong = {
+				}
+				b_loi_leng = {
+				}
+				b_saen_wi = {
+				}
+			}
+			c_hopang = { # 931
+				color={ 5 124 105 }
+				color2={ 255 255 255 }
+				
+				b_hopang = {
+				}
+				b_mongmao = {
+				}
+				b_matman = {
+				}
+				b_namtit = {
+				}
+				b_panlong = {
+				}
+				b_pangwaun = {
+				}
+				b_pangsang = {
+				}
+			}
+			c_kyaukme = { # 932
+				color={ 4 250 255 }
+				color2={ 255 255 255 }
+				
+				b_kyaukme = {
+				}
+				b_hsipaw = {
+				}
+				b_namty = {
+				}
+				b_nawnghkio = {
+				}
+				b_mongmit = {
+				}
+				b_monglong = {
+				}
+				b_mongngawt = {
+				}
+			}
+			c_tangyan = { # 933
+				color={ 1 29 28 }
+				color2={ 255 255 255 }
+				
+				b_tangyan_2 = {
+				}
+				b_mongyai_2 = {
+				}
+				b_nawpgleng = {
+				}
+				b_mongdao = {
+				}
+				b_mongdao_2 = {
+				}
+				b_mongma = {
+				}
+				b_man_san = {
+				}
+			}
+		}
+		d_kungtung = {
 			color={ 43 223 216 }
 			color2={ 255 255 255 }
 			
@@ -23285,7 +23374,7 @@ e_burma = {
 				}
 			}
 		}
-		d_kayin = {
+		d_kyebogi = {
 			color={ 41 226 213 }
 			color2={ 255 255 255 }
 			
@@ -23336,18 +23425,37 @@ e_burma = {
 				}
 			}
 		}
-		d_kokang = {
-			color={ 247 4 249 }
+		d_wa = {
+			color={ 11 114 110 }
 			color2={ 255 255 255 }
 			
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 935 } }
+					any_demesne_province = { OR = { province_id = 934 province_id = 935 } }
 				}
 			}
-			capital = 935 # c_laukkaing
+			capital = 934 # c_mu_se
 			
+			c_mu_se = { # 934
+				color={ 1 124 105 }
+				color2={ 255 255 255 }
+				
+				b_mu_se = {
+				}
+				b_kutkai = {
+				}
+				b_nanhkan = {
+				}
+				b_manhero = {
+				}
+				b_monekoe = {
+				}
+				b_pansai = {
+				}
+				b_tamoenye = {
+				}
+			}
 			c_laukkaing = { # 935
 				color={ 1 250 254 }
 				color2={ 255 255 255 }
@@ -23379,114 +23487,6 @@ e_burma = {
 				b_laogai = {
 				}
 				b_lao_kai = {
-				}
-			}
-		}
-		d_north_shan = {
-			color={ 17 64 66 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 930 province_id = 931 province_id = 932 province_id = 933 province_id = 934 } }
-				}
-			}
-			capital = 930 # c_lashio
-			
-			c_lashio = { # 930
-				color={ 7 74 61 }
-				color2={ 255 255 255 }
-				
-				b_hsenwi = {
-				}
-				b_lashio = {
-				}
-				b_mongyai = {
-				}
-				b_tangyan = {
-				}
-				b_mamkanmong = {
-				}
-				b_loi_leng = {
-				}
-				b_saen_wi = {
-				}
-			}
-			c_hopang = { # 931
-				color={ 5 124 105 }
-				color2={ 255 255 255 }
-				
-				b_hopang = {
-				}
-				b_mongmao = {
-				}
-				b_matman = {
-				}
-				b_namtit = {
-				}
-				b_panlong = {
-				}
-				b_pangwaun = {
-				}
-				b_pangsang = {
-				}
-			}
-			c_kyaukme = { # 933
-				color={ 4 250 255 }
-				color2={ 255 255 255 }
-				
-				b_kyaukme = {
-				}
-				b_hsipaw = {
-				}
-				b_namty = {
-				}
-				b_nawnghkio = {
-				}
-				b_mongmit = {
-				}
-				b_monglong = {
-				}
-				b_mongngawt = {
-				}
-			}
-			c_mu_se = { # 932
-				color={ 11 127 105 }
-				color2={ 255 255 255 }
-				
-				b_mu_se = {
-				}
-				b_kutkai = {
-				}
-				b_nanhkan = {
-				}
-				b_manhero = {
-				}
-				b_monekoe = {
-				}
-				b_pansai = {
-				}
-				b_tamoenye = {
-				}
-			}
-			c_tangyan = { # 934
-				color={ 1 29 28 }
-				color2={ 255 255 255 }
-				
-				b_tangyan_2 = {
-				}
-				b_mongyai_2 = {
-				}
-				b_nawpgleng = {
-				}
-				b_mongdao = {
-				}
-				b_mongdao_2 = {
-				}
-				b_mongma = {
-				}
-				b_man_san = {
 				}
 			}
 		}
