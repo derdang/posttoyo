@@ -171,7 +171,7 @@ decisions = {
 		
 		potential = {
 			AND = {
-				religion_group = buddhist.group
+				religion_group = buddhist_group
 				NOT = {religion = soka_gakkai}
 				NOT = {religion = shingon_shu}
 				NOT = {religion = hoa_hao}
@@ -196,7 +196,7 @@ decisions = {
 			add_trait = in_hiding
 			piety = 50
 			hidden_tooltip = {
-				narrative_event = { id = budevents.1 day = 2 }
+				narrative_event = { id = budevents.1 }
 			}
 			set_character_flag = reciting_sutras
 		}

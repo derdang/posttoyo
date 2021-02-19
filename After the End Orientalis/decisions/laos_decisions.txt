@@ -1,0 +1,99 @@
+decisions = {
+	claim_lan_xang = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = empire_decisions
+					value = off
+				}
+			}
+			
+			independent = yes 
+			culture = laotian
+			OR = {
+				has_landed_title = d_luang_prabang
+				has_landed_title = d_vientiane
+				has_landed_title = d_champasak	
+			}
+			NOT = {
+				has_landed_title = k_lan_xang
+			}
+			OR = {
+				k_lan_xang = {
+					has_holder = no
+				}
+				k_lan_xang = {
+					NOT = {culture = laotian}
+				} 
+			}
+			NOT = { has_character_flag = lan_xang_claimant }
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			war = no
+			NOT = { is_incapable = yes }
+			realm_size >= 30 #reduced from 35 for test
+			#To do : add Limit preventing neighbouring kingdom or empire to culture-switch for the claim
+			prestige = 500
+			OR = {
+				completely_controls = c_luang_prabang
+				completely_controls = c_nakhon_viangchan
+			}
+			OR = {
+				completely_controls = c_xiangkhouang
+				completely_controls = c_khammouane
+				AND ={
+					completely_controls = c_champasak
+					completely_controls = c_pakse
+				}
+				
+			}
+
+		}
+		effect = {
+			FROM = { 
+				prestige = -500
+			}
+			if = {
+				limit = {
+					NOT = {has_landed_title = d_luang_prabang}
+				}
+				add_claim = d_luang_prabang
+			}
+			if = {
+				limit = {
+					NOT = {has_landed_title = d_vientiane}
+				}
+				add_claim = d_vientiane
+			}
+			if = {
+				limit = {
+					NOT = {has_landed_title = d_champasak}
+				}
+				add_claim = d_champasak
+			}
+			if = {
+				limit = {
+					NOT = {has_landed_title = c_luang_prabang}
+				}
+				add_claim = c_luang_prabang
+			}
+			if = {
+				limit = {
+					NOT = {has_landed_title = c_nakhon_viangchan}
+				}
+				add_claim = c_nakhon_viangchan
+			}
+			set_character_flag = lan_xang_claimant
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 10 #I hope AI don't bork this decision.
+		}
+	}
+}
