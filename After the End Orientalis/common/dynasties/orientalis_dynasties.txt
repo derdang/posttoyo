@@ -4799,6 +4799,16 @@
 1957029 = { name="Khir" culture=melayu }
 1957030 = { name="Ali" culture=melayu }
 1957031 = { name="Amirudin" culture=melayu }
+#penang MR dyns
+
+#Placeholder historical dyns
+1957801 = { name="Selangor" culture=melayu random=no}
+1957802 = { name="Klang" culture=melayu random=no}
+1957803 = { name="Kedah" culture=melayu random=no}
+1957804 = { name="Perlis" culture=melayu random=no}
+1957805 = { name="Johor" culture=melayu random=no}
+1957806 = { name="Pahang" culture=melayu random=no}
+1957807 = { name="Johor" culture=melayu random=no}
 
 1958000 = { name="Tedja" culture=singaporean }
 1958001 = { name="Latipah" culture=singaporean }
@@ -7112,7 +7122,8 @@
 	culture = east_timor
 }
 
-2310001 = { name="Cheachaophandin" culture=thai_central } #Siamese Imperial Dynasties
+2310001 = { name="Cheachaophandin" culture=thai_central
+			used_for_random=no  } #Siamese Imperial Dynasties
 2310002 = { name="Lookbunmee" culture=thai_central }
 2310003 = { name="Gaiyanghadao" culture=thai_central }
 2310004 = { name="Galaxy" culture=thai_central }
@@ -7129,7 +7140,7 @@
 2310101 = { name="Yangyuen" culture=thai_central } #c_ratchaburi and others
 2310121 = { name="Pakplaek" culture=thai_central } #c_kanchanaburi
 #d_ayutthaya
-2310201 = ( name="Phludang" culture=thai_central }
+2310201 = ( name="Phludang" culture=thai_central used_for_random=no }
 2310202 = ( name="Rachan" culture=thai_central }
 2310301 = ( name="Banthong" culture=thai_central }
 2310401 = ( name="Takdaet" culture=thai_central }
@@ -7139,7 +7150,7 @@
 2310503 = ( name="Khirimat" culture=thai_sukhothai }
 2310504 = ( name="Bankluai" culture=thai_sukhothai }
 2310601 = ( name="Takfa" culture=thai_sukhothai }
-2310651 = ( name="Lap-lae" culture=thai_sukhothai }
+2310651 = ( name="Lap-lae" culture=thai_sukhothai used_for_random=no}
 2310701 = ( name="Khitchakut" culture=thai_sukhothai }
 2310711 = ( name="Simahosot" culture=thai_sukhothai }
 #Thai name derived from Chinese clan name/Xing -> "Sae"
