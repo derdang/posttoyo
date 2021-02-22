@@ -10181,36 +10181,38 @@ e_siam = {
 	muong = "Thái Lan"
 	hoa = "Thái Quoc"
 	laotian = "Prathet Tai"
+	
 	k_mahanakorn = {
 		color={ 207 181 59 }
 		color2={ 255 255 255 }
 		
-		capital = 778 # c_phra_nakhon (Bangkok)
+		capital = 778 # c_phra_nakhon
 		culture = thai_central
 		
 		d_palimonthon = {
 			color={ 238 1 61 }
 			color2={ 255 255 255 }
-
+			
+			tonkinese = "Bang Coc"
+			annamese = "Bang Coc"
+			cochinchinese = "Bang Coc"
+			muong = "Bang Coc"
+			hoa = "Bang Coc"
+			
 			capital = 778 # c_phra_nakhon
 			
 			c_phra_nakhon = { # 778
 				color={ 248 247 66 }
 				color2={ 255 255 255 }
+				
 				holy_site = dharmayuttika
 				
-				tonkinese = "Bang Coc"
-				annamese = "Bang Coc"
-				cochinchinese = "Bang Coc"
-				muong = "Bang Coc"
-				hoa = "Bang Coc"
-				
 				b_phra_nakhon = {
-				tonkinese = "Bang Coc"
-				annamese = "Bang Coc"
-				cochinchinese = "Bang Coc"
-				muong = "Bang Coc"
-				hoa = "Bang Coc"
+					tonkinese = "Bang Coc"
+					annamese = "Bang Coc"
+					cochinchinese = "Bang Coc"
+					muong = "Bang Coc"
+					hoa = "Bang Coc"
 				}
 				b_dusit = {
 				}
@@ -10287,30 +10289,12 @@ e_siam = {
 			color={ 169 177 88 }
 			color2={ 255 255 255 }
 			
-			capital = 785 # c_ayutthaya
+			capital = 784 # c_ayutthaya
 			
-			c_suphanburi = { # 784
-				color={ 179 167 93 }
-				color2={ 255 255 255 }
-				
-				b_suphanburi = {
-				}
-				b_sam_chuk = {
-				}
-				b_don_chedi = {
-				}
-				b_dan_chang = {
-				}
-				b_song_phi_nong = {
-				}
-				b_doi_chedi = {
-				}
-				b_doem_bang = {
-				}
-			}
-			c_ayutthaya = { # 785
+			c_ayutthaya = { # 784
 				color={ 242 203 41 }
 				color2={ 255 255 255 }
+				
 				b_nakhon_luang = {
 				}
 				b_phra_nakhon_si_ayutthaya = {
@@ -10343,6 +10327,25 @@ e_siam = {
 				b_in_buri = {
 				}
 				b_mueang_sing_2 = {
+				}
+			}
+			c_suphanburi = { # 785
+				color={ 179 167 93 }
+				color2={ 255 255 255 }
+				
+				b_suphanburi = {
+				}
+				b_sam_chuk = {
+				}
+				b_don_chedi = {
+				}
+				b_dan_chang = {
+				}
+				b_song_phi_nong = {
+				}
+				b_doi_chedi = {
+				}
+				b_doem_bang = {
 				}
 			}
 		}
@@ -10543,16 +10546,35 @@ e_siam = {
 		color={ 87 224 133 }
 		color2={ 255 255 255 }
 		
-		capital = 794 # c_chachoengsao
+		capital = 794 # c_prachinburi
 		culture = thai_central
 		
-		d_chachoengsao = {
-			color={ 107 204 143 }
+		d_prachinburi = {
+			color={ 78 198 141 }
 			color2={ 255 255 255 }
 			
-			capital = 794 # c_chachoengsao
+			capital = 794 # c_prachinburi
 			
-			c_chachoengsao = { # 794
+			c_prachinburi = { # 794
+				color={ 88 188 146 }
+				color2={ 255 255 255 }
+				
+				b_prachinburi = {
+				}
+				b_kabin_buri = {
+				}
+				b_na_di = {
+				}
+				b_ban_sang = {
+				}
+				b_prachantakham = {
+				}
+				b_si_maha_phot = {
+				}
+				b_si_mahosot = {
+				}
+			}
+			c_chachoengsao = { # 795
 				color={ 117 194 148 }
 				color2={ 255 255 255 }
 				
@@ -10571,14 +10593,33 @@ e_siam = {
 				b_tha_khai = {
 				}
 			}
+			c_sa_kaeo = { # 796
+				color={ 89 183 144 }
+				color2={ 255 255 255 }
+				
+				b_sa_kaeo = {
+				}
+				b_aranyaprathet = {
+				}
+				b_watthana_nakhon = {
+				}
+				b_wang_nam_yen = {
+				}
+				b_khao_chakan = {
+				}
+				b_khok_sung = {
+				}
+				b_wang_sombun = {
+				}
+			}
 		}
 		d_chantraburi = {
 			color={ 94 233 168 }
 			color2={ 255 255 255 }
 			
-			capital = 798 # c_chanthaburi
+			capital = 800 # c_chanthaburi
 			
-			c_chanthaburi = { # 798
+			c_chanthaburi = { # 800
 				color={ 104 223 173 }
 				color2={ 255 255 255 }
 				
@@ -10597,7 +10638,7 @@ e_siam = {
 				b_soi_dao = {
 				}
 			}
-			c_trat = { # 799
+			c_trat = { # 801
 				color={ 96 193 152 }
 				color2={ 255 255 255 }
 				
@@ -10621,9 +10662,9 @@ e_siam = {
 			color={ 120 236 181 }
 			color2={ 255 255 255 }
 			
-			capital = 795 # c_pattaya
+			capital = 797 # c_pattaya
 			
-			c_pattaya = { # 795
+			c_pattaya = { # 797
 				color={ 130 226 186 }
 				color2={ 255 255 255 }
 				
@@ -10642,7 +10683,7 @@ e_siam = {
 				b_ko_phai = {
 				}
 			}
-			c_chonburi = { # 796
+			c_chonburi = { # 798
 				color={ 108 210 167 }
 				color2={ 255 255 255 }
 				
@@ -10661,7 +10702,7 @@ e_siam = {
 				b_nong_yai = {
 				}
 			}
-			c_rayong = { # 797
+			c_rayong = { # 799
 				color={ 83 197 149 }
 				color2={ 255 255 255 }
 				
@@ -10681,58 +10722,14 @@ e_siam = {
 				}
 			}
 		}
-		d_prachinburi = {
-			color={ 78 198 141 }
-			color2={ 255 255 255 }
-			
-			capital = 800 # c_prachinburi
-			
-			c_prachinburi = { # 800
-				color={ 88 188 146 }
-				color2={ 255 255 255 }
-				
-				b_prachinburi = {
-				}
-				b_kabin_buri = {
-				}
-				b_na_di = {
-				}
-				b_ban_sang = {
-				}
-				b_prachantakham = {
-				}
-				b_si_maha_phot = {
-				}
-				b_si_mahosot = {
-				}
-			}
-			c_sa_kaeo = { # 801
-				color={ 89 183 144 }
-				color2={ 255 255 255 }
-				
-				b_sa_kaeo = {
-				}
-				b_aranyaprathet = {
-				}
-				b_watthana_nakhon = {
-				}
-				b_wang_nam_yen = {
-				}
-				b_khao_chakan = {
-				}
-				b_khok_sung = {
-				}
-				b_wang_sombun = {
-				}
-			}
-		}
 	}
 	k_isan = {
-		color={ 191 117 97 }
+		color={ 182 183 117 }
 		color2={ 255 255 255 }
 		
 		capital = 816 # c_mueang_korat
 		culture = thai_isan
+		
 		allow = {
 				NOT = {primary_title = {higher_tier_than = KING}} # Neighboring Empire should only allowed to form this title with viceroyalty or higher legalism. (Maybe with event?)
 				completely_controls = c_mueang_korat
@@ -10740,10 +10737,9 @@ e_siam = {
 				completely_controls = c_ubon_ratchathani
 				completely_controls = c_udon_thani
 			}
-
 		
 		d_nakhon_ratchasima = {
-			color={ 216 152 99 }
+			color={ 202 163 127 }
 			color2={ 255 255 255 }
 			
 			capital = 816 # c_mueang_korat
@@ -10810,9 +10806,9 @@ e_siam = {
 			color={ 192 85 69 }
 			color2={ 255 255 255 }
 			
-			capital = 821 # c_khon_kaen
+			capital = 822 # c_khon_kaen
 			
-			c_khon_kaen = { # 821
+			c_khon_kaen = { # 822
 				color={ 182 95 64 }
 				color2={ 255 255 255 }
 				
@@ -10831,7 +10827,7 @@ e_siam = {
 				b_nam_phong = {
 				}
 			}
-			c_chaiyaphum = { # 822
+			c_chaiyaphum = { # 823
 				color={ 188 118 93 }
 				color2={ 255 255 255 }
 				
@@ -10850,7 +10846,7 @@ e_siam = {
 				b_bamnet_narong = {
 				}
 			}
-			c_kalasin = { # 831
+			c_kalasin = { # 826
 				color={ 172 100 76 }
 				color2={ 255 255 255 }
 				
@@ -10869,7 +10865,7 @@ e_siam = {
 				b_yang_talat = {
 				}
 			}
-			c_maha_sarakham = { # 823
+			c_maha_sarakham = { # 824
 				color={ 174 108 86 }
 				color2={ 255 255 255 }
 				
@@ -10888,7 +10884,7 @@ e_siam = {
 				b_na_chueak = {
 				}
 			}
-			c_roi_et = { # 824
+			c_roi_et = { # 825
 				color={ 187 121 99 }
 				color2={ 255 255 255 }
 				
@@ -10909,7 +10905,7 @@ e_siam = {
 			}
 		}
 		d_ubon = {
-			color={ 164 82 94 }
+			color={ 169 91 103 }
 			color2={ 255 255 255 }
 			
 			capital = 819 # c_ubon_ratchathani
@@ -10952,7 +10948,7 @@ e_siam = {
 				b_phrai_bueng = {
 				}
 			}
-			c_yasothon = { # 825
+			c_yasothon = { # 821
 				color={ 173 98 72 }
 				color2={ 255 255 255 }
 				
@@ -10973,12 +10969,12 @@ e_siam = {
 			}
 		}
 		d_udon_thani = {
-			color={ 187 116 112 }
+			color={ 198 136 92 }
 			color2={ 255 255 255 }
 			
-			capital = 826 # c_udon_thani
+			capital = 827 # c_udon_thani
 			
-			c_udon_thani = { # 826
+			c_udon_thani = { # 827
 				color={ 208 126 97 }
 				color2={ 255 255 255 }
 				
@@ -10997,7 +10993,7 @@ e_siam = {
 				b_kumphawapi = {
 				}
 			}
-			c_loei = { # 828
+			c_loei = { # 829
 				color={ 214 100 60 }
 				color2={ 255 255 255 }
 				
@@ -11016,7 +11012,7 @@ e_siam = {
 				b_na_haeo = {
 				}
 			}
-			c_nakhon_phanom = { # 830
+			c_nakhon_phanom = { # 831
 				color={ 190 110 83 }
 				color2={ 255 255 255 }
 				
@@ -11035,7 +11031,7 @@ e_siam = {
 				b_na_kae = {
 				}
 			}
-			c_nong_khai = { # 827
+			c_nong_khai = { # 828
 				color={ 222 171 125 }
 				color2={ 255 255 255 }
 				
@@ -11054,7 +11050,7 @@ e_siam = {
 				b_so_phisai = {
 				}
 			}
-			c_sakon_nakhon = { # 829
+			c_sakon_nakhon = { # 830
 				color={ 202 143 90 }
 				color2={ 255 255 255 }
 				
@@ -11094,16 +11090,24 @@ e_siam = {
 			color={ 216 10 250 }
 			color2={ 255 255 255 }
 			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 838 province_id = 839 province_id = 840 province_id = 841 } }
+				}
+			}
 			capital = 838 # c_chiang_mai
 			
 			c_chiang_mai = { # 838
 				color={ 226 0 255 }
 				color2={ 255 255 255 }
+				
 				holy_site = dharmayuttika
 				holy_site = parimatira
 				laotian = "Xiangmai"
+				
 				b_chiang_mai = {
-				laotian = "Xiangmai"
+					laotian = "Xiangmai"
 				}
 				b_chom_thong = {
 				}
@@ -11121,14 +11125,15 @@ e_siam = {
 			c_chiang_rai = { # 839
 				color={ 193 38 213 }
 				color2={ 255 255 255 }
+				
 				laotian = "Xiangrai"
+				
 				b_chiang_rai = {
-				laotian = "Xiangrai"
+					laotian = "Xiangrai"
 				}
 				b_mae_sai = {
 				}
 				b_chiang_saen = {
-				laotian = "Xiang Saen"
 				}
 				b_mae_chan = {
 				}
@@ -11311,18 +11316,20 @@ e_siam = {
 		color={ 122 172 215 }
 		color2={ 255 255 255 }
 		
-		capital = 805 # c_nakhon_sri_thammarat 
-		culture = thai_central
+		capital = 802 # c_surat_thani
+		culture = thai_paktai
+		
 		allow = {
 			NOT = {primary_title = {higher_tier_than = KING}} # Neighboring Empire should only allowed to form this title with viceroyalty or higher legalism. (Maybe with event?)
 		}
-		d_surat = { #Chumphon did technically have precedent as Monthon. May as well rename it.
+		
+		d_surat = {
 			color={ 175 251 242 }
 			color2={ 255 255 255 }
 			
-			capital = 802 # c_chumphon
+			capital = 804 # c_chumphon
 			
-			c_chumphon = { # 802
+			c_chumphon = { # 804
 				color={ 185 241 247 }
 				color2={ 255 255 255 }
 				
@@ -11341,64 +11348,7 @@ e_siam = {
 				b_lamae = {
 				}
 			}
-			c_ko_samui = { # 804
-				color={ 133 193 200 }
-				color2={ 255 255 255 }
-				
-				b_ko_samui = {
-				}
-				b_ko_pha_ngan = {
-				}
-				b_ko_tao = {
-				}
-				b_ko_ang_thong = {
-				}
-				b_mae_nam = {
-				}
-				b_ban_tai = {
-				}
-				b_taling_ngam = {
-				}
-			}
-			c_phang_nga = { # 807
-				color={ 165 194 197 }
-				color2={ 255 255 255 }
-				
-				b_phang_nga = {
-				}
-				b_ko_yao = {
-				}
-				b_kapong = {
-				}
-				b_takua_thung = {
-				}
-				b_takua_pa = {
-				}
-				b_khura_buri = {
-				}
-				b_thap_put = {
-				}
-			}
-			c_phuket = { # 809
-				color={ 101 157 163 }
-				color2={ 255 255 255 }
-				
-				b_phuket = {
-				}
-				b_patong = {
-				}
-				b_kathu = {
-				}
-				b_thalang = {
-				}
-				b_karon = {
-				}
-				b_chalong = {
-				}
-				b_mai_kao = {
-				}
-			}
-			c_surat_thani = { # 803
+			c_surat_thani = { # 802
 				color={ 133 210 218 }
 				color2={ 255 255 255 }
 				
@@ -11417,14 +11367,33 @@ e_siam = {
 				b_don_sak = {
 				}
 			}
+			c_ko_samui = { # 803
+				color={ 133 193 200 }
+				color2={ 255 255 255 }
+				
+				b_ko_samui = {
+				}
+				b_ko_pha_ngan = {
+				}
+				b_ko_tao = {
+				}
+				b_ko_ang_thong = {
+				}
+				b_mae_nam = {
+				}
+				b_ban_tai = {
+				}
+				b_taling_ngam = {
+				}
+			}
 		}
 		d_nakhon_sri_thammarat = {
 			color={ 124 213 206 }
 			color2={ 255 255 255 }
 			
-			capital = 805 # c_nakhon_sri_thammarat
+			capital = 813 # c_nakhon_sri_thammarat
 			
-			c_nakhon_sri_thammarat = { # 805
+			c_nakhon_sri_thammarat = { # 813
 				color={ 134 203 211 }
 				color2={ 255 255 255 }
 				
@@ -11443,26 +11412,7 @@ e_siam = {
 				b_ron_phibun = {
 				}
 			}
-			c_krabi = { # 808
-				color={ 117 196 204 }
-				color2={ 255 255 255 }
-				
-				b_krabi = {
-				}
-				b_khao_phanom = {
-				}
-				b_ko_lanta = {
-				}
-				b_khlong_thom = {
-				}
-				b_ao_luek = {
-				}
-				b_plai_phraya = {
-				}
-				b_lam_thap = {
-				}
-			}
-			c_phatthalung = { # 806
+			c_phatthalung = { # 814
 				color={ 123 180 186 }
 				color2={ 255 255 255 }
 				
@@ -11481,7 +11431,7 @@ e_siam = {
 				b_si_banphot = {
 				}
 			}
-			c_trang = { # 810
+			c_trang = { # 815
 				color={ 98 188 197 }
 				color2={ 255 255 255 }
 				
@@ -11504,12 +11454,149 @@ e_siam = {
 		d_pattani = {
 			color={ 99 109 178 }
 			color2={ 255 255 255 }
-
-			capital = 811 # c_songkhla
+			
 			melayu="Patani"
+
+			capital = 808 # c_pattani
+			
+			c_pattani = { # 808
+				color={ 98 129 184 }
+				color2={ 255 255 255 }
+				
+				melayu="Patani"
+				
+				b_pattani = {
+					melayu="Patani"
+				}
+				b_khok_pho = {
+				}
+				b_nong_chik = {
+				}
+				b_panare = {
+				}
+				b_mayo = {
+				}
+				b_thung_yang_daeng = {
+				}
+				b_sai_buri = {
+				}
+			}
+			c_narathiwat = { # 810
+				color={ 66 100 163 }
+				color2={ 255 255 255 }
+				
+				melayu="Menara"
+				
+				b_narathiwat = {
+					melayu="Menara"
+				}
+				b_su_ngai_padi = {
+				}
+				b_tak_bai = {
+				}
+				b_yi_ngo = {
+				}
+				b_su_ngai_kolok = {
+				}
+				b_ra_ngae = {
+				}
+				b_rueso = {
+				}
+			}
+			c_yala = { # 809
+				color={ 81 112 155 }
+				color2={ 255 255 255 }
+				
+				b_yala = {
+				}
+				b_betong_2 = {
+				}
+				b_bannang_sata = {
+				}
+				b_than_to = {
+				}
+				b_yaha = {
+				}
+				b_raman = {
+				}
+				b_kabang = {
+				}
+			}
+		}
+		d_phuket = {
+			color={ 91 167 158 }
+			color2={ 255 255 255 }
+			
+			capital = 805 # c_phuket
+			
+			c_phuket = { # 805
+				color={ 101 157 163 }
+				color2={ 255 255 255 }
+				
+				b_phuket = {
+				}
+				b_patong = {
+				}
+				b_kathu = {
+				}
+				b_thalang = {
+				}
+				b_karon = {
+				}
+				b_chalong = {
+				}
+				b_mai_kao = {
+				}
+			}
+			c_krabi = { # 806
+				color={ 117 196 204 }
+				color2={ 255 255 255 }
+				
+				b_krabi = {
+				}
+				b_khao_phanom = {
+				}
+				b_ko_lanta = {
+				}
+				b_khlong_thom = {
+				}
+				b_ao_luek = {
+				}
+				b_plai_phraya = {
+				}
+				b_lam_thap = {
+				}
+			}
+			c_phang_nga = { # 807
+				color={ 165 194 197 }
+				color2={ 255 255 255 }
+				
+				b_phang_nga = {
+				}
+				b_ko_yao = {
+				}
+				b_kapong = {
+				}
+				b_takua_thung = {
+				}
+				b_takua_pa = {
+				}
+				b_khura_buri = {
+				}
+				b_thap_put = {
+				}
+			}
+		}
+		d_songkhla = {
+			color = { 90 170 110 }
+			color2={ 100 180 100 }
+			
+			capital = 811 # c_songkhla
+			
 			c_songkhla = { # 811
 				color={ 89 119 173 }
 				color2={ 255 255 255 }
+				
 				b_songkhla = {
 				}
 				b_hat_yai = {
@@ -11525,51 +11612,14 @@ e_siam = {
 				b_saba_yoi = {
 				}
 			}
-			c_narathiwat = { # 814
-				color={ 66 100 163 }
-				color2={ 255 255 255 }
-				melayu="Menara"
-				b_narathiwat = {
-				melayu="Menara"
-				}
-				b_su_ngai_padi = {
-				}
-				b_tak_bai = {
-				}
-				b_yi_ngo = {
-				}
-				b_su_ngai_kolok = {
-				}
-				b_ra_ngae = {
-				}
-				b_rueso = {
-				}
-			}
-			c_pattani = { # 812
-				color={ 98 129 184 }
-				color2={ 255 255 255 }
-				melayu="Patani"
-				b_pattani = {
-				melayu="Patani"
-				}
-				b_khok_pho = {
-				}
-				b_nong_chik = {
-				}
-				b_panare = {
-				}
-				b_mayo = {
-				}
-				b_thung_yang_daeng = {
-				}
-				b_sai_buri = {
-				}
-			}
-			c_satun = { # 815
+			c_satun = { # 812
 				color={ 142 168 213 }
 				color2={ 255 255 255 }
+				
 				melayu="Setul"
+				
 				b_satun = {
+					melayu="Setul"
 				}
 				b_khuan_don = {
 				}
@@ -11582,25 +11632,6 @@ e_siam = {
 				b_thung_wa = {
 				}
 				b_manang = {
-				}
-			}
-			c_yala = { # 813
-				color={ 81 112 155 }
-				color2={ 255 255 255 }
-				melayu="Jala"
-				b_yala = {
-				}
-				b_betong_2 = {
-				}
-				b_bannang_sata = {
-				}
-				b_than_to = {
-				}
-				b_yaha = {
-				}
-				b_raman = {
-				}
-				b_kabang = {
 				}
 			}
 		}
@@ -11708,7 +11739,7 @@ e_siam = {
 				b_nong_phai = {
 				}
 			}
-			c_phichit = { # 835
+			c_phichit = { # 837
 				color={ 130 117 192 }
 				color2={ 255 255 255 }
 				
@@ -11727,7 +11758,7 @@ e_siam = {
 				b_sam_ngam = {
 				}
 			}
-			c_phitsanulok = { # 837
+			c_phitsanulok = { # 835
 				color={ 150 142 195 }
 				color2={ 255 255 255 }
 				
