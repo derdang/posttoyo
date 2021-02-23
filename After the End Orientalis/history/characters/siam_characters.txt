@@ -37,6 +37,35 @@
 	trait=stubborn
 	2560.4.15={birth=yes}
 }
+2310002 ={
+	name="Krang"
+	dynasty=2310001 #Cheachaophandin
+	culture=thai_central
+	religion=dharmayuttika
+	2602.1.12={birth=yes}
+	father=2310001
+}
+
+2310091 ={
+	name="Sagat"
+	dynasty=2310006
+	culture=thai_central
+	religion=dharmayuttika
+	martial=7
+	diplomacy=4
+	stewardship=5
+	intrigue=6
+	learning=6
+	trait=thrifty_clerk
+	trait=strong
+	trait=proud
+	trait=brawny
+	trait=stubborn
+	2577.4.1={birth=yes}
+	2589.1.1={
+		employer=2310001
+	}
+}
 2310093 ={
 	name="Poomin"
 	dynasty=2310903
@@ -688,6 +717,22 @@
 	2585.4.15={birth=yes}
 }
 2313400 ={ # c_phuket
+	name="Chom"
+	dynasty=2313004
+	culture=thai_paktai
+	religion=dharmayuttika
+	martial=6
+	diplomacy=4
+	stewardship=5
+	intrigue=6
+	learning=7
+	trait=fortune_builder
+	trait=brave
+	trait=chaste
+	trait=fair
+	2549.4.15={birth=yes}
+}
+2313401 ={ # c_phuket
 	name="Chan"
 	female=yes
 	dynasty=2313004
@@ -702,9 +747,10 @@
 	trait=brave
 	trait=diligent
 	trait=fair
-	2579.4.15={birth=yes}
+	father=2313400
+	2585.4.15={birth=yes}
 }
-2313401 ={ # c_phuket /younger sister of above
+2313402 ={ # c_phuket /younger sister of above
 	name="Mook"
 	female=yes
 	dynasty=2313004
@@ -719,7 +765,8 @@
 	trait=brave
 	trait=diligent
 	trait=quick
-	2583.11.15={birth=yes}
+	father=2313400
+	2589.11.15={birth=yes}
 }
 2313410 ={ # c_satun
 	name="Sa-ngob"
