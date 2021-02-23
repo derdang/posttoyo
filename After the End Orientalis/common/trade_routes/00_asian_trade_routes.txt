@@ -99,10 +99,10 @@ maritime_silk_trade = {
 		320 1109 1107 778
 	}
 	path = {	#Phra Nakhon (Bangkok) to Pattani
-		778 1107 1108 805 812
+		778 1107 1108 813 808
 	}
 	path = {	#Pattani to Kota Bharu (Kelantan)
-		812 814 373
+		808 810 373
 	}
 	path = {	#Kota Bharu (Kelantan) to Singapore
 		373 1068 1067 1065 1064 389
@@ -179,16 +179,16 @@ royal_thai_road_trade = { #based from Thai Railways, expanded to include border 
 	}
 
 	path = {	#Phra Nakhon (Bangkok) to Songkhla (Southern Railway) - International Line to Butterworth, Malaysia
-		778 779 780 781 783 802 803 805 810 806 811 371 370 367 368 364
+		778 779 780 781 783 #802 803 805 810 806 811 371 370 367 368 364 #Disable while rerouting old number :S
 	}
-	path = {	#Phra Nakhon (Bangkok) to Chonburi (Eastern Railway)
-		778 794 796 795 797
+	path = {	#Phra Nakhon (Bangkok) to Rayong (Eastern Railway)
+		778 795 798 797 799
 	}
 	path = {	#Phra Nakhon (Bangkok) to Kanchanaburi (Western line) The railway did not pass Ayutthaya irl.
 		778 786 784 785 782
 	}
 	path = {	#Chachoengsao - Sa Kaeo - Cambodia border (Could enter Banteay Meanchey)
-		794 801 331
+		795 794 796 331
 	}
 	path = {	#Phra Nakhon (Bangkok) to Phachi Junction (Ayutthaya)
 		778 787 784
@@ -203,7 +203,7 @@ royal_thai_road_trade = { #based from Thai Railways, expanded to include border 
 		816 821 826 827 294
 	}
 	path = {	#Ayutthaya to Chiang Mai (Northern Railway)
-		784 790 833 835 837 847 845 842 843 838 839
+		784 790 833 837 835 847 845 842 843 838 839
 	}
 }
 mekong_river_trade = { #Laos, Isan, Cambodia, Cochinchina

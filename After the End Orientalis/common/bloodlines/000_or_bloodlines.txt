@@ -7,3 +7,26 @@ dragon_son_of_vietnam = { #The Dragon Blood of Post-Event Vietnam
 	inheritance = all_descendants
 	picture = GFX_bloodlines_placeholder_symbol
 }
+paramount_ruler_malaysia = { #Bloodline of Yang di-Pertuan Agong
+	malayan_opinion = 5
+	monthly_character_prestige = 0.1
+	inheritance = patrilinial
+	picture = GFX_bloodlines_symbol_sunni
+}
+legendary_ruler_of_singapore = { #...
+	monthly_character_prestige = 0.2
+	stewardship = 2
+	build_cost_modifier = -0.1
+	inheritance = patrilineal
+	active = {
+		custom_tooltip = {
+			text = saintly_bloodline_same_culture_TT
+			FROM = {
+				founder = {
+					culture = ROOT
+				}
+			}
+		}
+	}
+	picture = GFX_bloodlines_placeholder_symbol
+}
