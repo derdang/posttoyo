@@ -12691,7 +12691,12 @@ pagan_county_conquest = {
 			}
 			AND = {
 				ROOT = {
-					religion_group = pagan_group
+					OR = {
+						religion_group = pagan_group
+						religion_group = nautical
+						religion = americanist
+						religion = americanist_reformed
+					}
 					NOT = { same_realm = FROM }
 				}
 				FROM = {
@@ -12729,11 +12734,14 @@ pagan_county_conquest = {
 				OR = {
 					ROOT = { religion = norse_pagan }
 					ROOT = { religion = norse_pagan_reformed }
+					ROOT = { religion = wokou }
+					ROOT = { religion = americanist }
+					ROOT = { religion = americanist_reformed }
 				}
 				location = {
 					port = yes
 				}
-				has_global_flag = viking_age_started
+				#has_global_flag = viking_age_started
 			}
 			location = {
 				any_neighbor_province = {
@@ -12989,7 +12997,7 @@ pagan_county_conquest = {
 					religion = norse_pagan_reformed
 				}
 			}
-			has_global_flag = viking_age_started
+			#has_global_flag = viking_age_started
 			OR = {
 				empire = { title = e_britannia }
 				kingdom = { title = k_brittany }
@@ -13005,7 +13013,7 @@ pagan_county_conquest = {
 					religion = norse_pagan_reformed
 				}
 			}
-			has_global_flag = viking_age_started
+			#has_global_flag = viking_age_started
 			FROM = { NOT = { religion_group = pagan_group } }
 			location = { port = yes }
 		}
