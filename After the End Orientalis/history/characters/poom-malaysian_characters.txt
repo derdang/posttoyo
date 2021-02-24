@@ -57,8 +57,28 @@
 	trait=patient
 	trait=proud
 	trait=just
+	father=1957101
 	2563.1.1={birth=yes}
 }
+1957101={
+	name="Alaeddin"
+	dynasty=1957801 #Selangor
+	culture=melayu
+	religion=sunni
+	trait=grey_eminence
+	trait=strong
+	trait=patient
+	trait=proud
+	trait=just
+	2529.1.1={birth=yes}
+	2540.1.1={
+		create_bloodline = {
+				type = paramount_ruler_malaysia
+			}
+	}
+	2589.9.31={death=yes}
+}
+#--
 1957120={
 	name="Musa"
 	dynasty=1957802 #Klang
@@ -265,6 +285,21 @@
 	trait=just
 	2575.1.1={birth=yes}
 }
+1957440= { #c_kulai
+	name="Kwan-Seng"
+	culture=tionghoa
+	religion=mahayana
+	trait=charismatic_negotiator
+	2578.1.1={birth=yes}
+}
+1957445= { #c_batu_pahat
+	name="Di-Awng"
+	culture=tionghoa
+	religion=dharmayuttika
+	martial=10
+	trait=skilled_tactician
+	2578.1.1={birth=yes}
+}
 1957450= { #d_melaka
 	name="Jaafar"
 	dynasty=1957807 #Johor
@@ -284,6 +319,39 @@
 	trait=proud
 	trait=just
 	2579.1.1={birth=yes}
+}
+
+1957500={ #Pahang
+	name="Ali"
+	dynasty=1957806 #Pahang
+	culture=melayu
+	religion=sunni
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2574.1.1={birth=yes}
+}
+1957550={ #Bentong benchwarmer
+	name="Abdul"
+	culture=melayu
+	religion=sunni
+	2579.1.1={birth=yes}
+}
+1957570={ #Jerantut benchwarmer
+	name="Abdol"
+	culture=melayu
+	religion=sunni
+	2577.1.1={birth=yes}
 }
 #### Singapore
 1958000= { #k_singapore
@@ -411,6 +479,17 @@
 	trait=proud
 	trait=just
 	2574.1.1={birth=yes}
+}
+1959150={ #Gua Musang
+	name="Musang"
+	culture=kelantanese
+	religion=salafi
+	martial=12
+	trait=tough_soldier
+	trait=hunter
+	trait=strong
+	trait=wroth
+	2583.1.1={birth=yes}
 }
 1959200={ #Terengganu
 	name="Ahmad Shah"
