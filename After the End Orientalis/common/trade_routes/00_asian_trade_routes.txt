@@ -31,7 +31,7 @@ nutmeg_trade = {
 		445 1075 1072 390
 	}
 	path = {	#Palembang to Singapore 
-		390 1071 1064 389
+		390 1071 1064 389 347
 	}
 	path = {	#Jakarta to Semarang 
 		445 1076 456
@@ -59,7 +59,8 @@ maritime_silk_trade = {
 			province_id = 180 #Saigon
 			province_id = 320 #Sihanoukville
 			province_id = 778 #Phra Nakhon (Bangkok)
-			province_id = 812 #Pattani
+			province_id = 805 #Phuket
+			province_id = 808 #Pattani
 			province_id = 373 #Kota Bharu (Kelantan)
 			province_id = 337 #Kuala Lumpur
 			province_id = 363 #George Town (Penang)
@@ -113,8 +114,8 @@ maritime_silk_trade = {
 	path = {	#Kuala Lumpur to George Town (Penang)
 		337 340 1061 363
 	}
-	path = {	#George Town (Penang) to Mawlamyine and Thaton
-		363 1142 1143 1144 903 904
+	path = {	#George Town (Penang) to Phuket to Mawlamyine and Thaton
+		363 1142 805 1142 1143 1144 903 904
 	}
 	path = {	#Thaton to Yangon
 		904 1145 909
@@ -153,9 +154,10 @@ royal_thai_road_trade = { #based from Thai Railways, expanded to include border 
 		OR = {
 			province_id = 294 #Vientiane
 			province_id = 784 #Ayutthaya
-			province_id = 778 #Phra Nakhon (Bangkok) may be redundant
-			province_id = 802 #Chumphon
+			province_id = 778 #Phra Nakhon (Bangkok)
+			province_id = 802 #Surat Thani
 			province_id = 811 #Songkhla
+			province_id = 813 #Nkh. Sri Thammarat (Ligore)
 			province_id = 816 #Korat
 			province_id = 826 #Udon Thani
 			province_id = 838 #Chiang Mai
@@ -176,10 +178,17 @@ royal_thai_road_trade = { #based from Thai Railways, expanded to include border 
 	start = {				# Start provinces of trade route
 		778 #Phra Nakhon (Bangkok)
 		784 #Ayutthaya
+		811 #Songkhla
 	}
 
-	path = {	#Phra Nakhon (Bangkok) to Songkhla (Southern Railway) - International Line to Butterworth, Malaysia
-		778 779 780 781 783 #802 803 805 810 806 811 371 370 367 368 364 #Disable while rerouting old number :S
+	path = {	#Phra Nakhon (Bangkok) to Songkhla - to Narathiwat (Southern Railway)
+		778 779 780 781 783 804 802 813 811 808 809 810
+	}
+	path = {	#Songkhla (Southern Railway) - International Line to Butterworth, Penang
+		811 371 370 367 368 364
+	}
+	path = {	#Nkh. Sri Thammarat branch into Trang
+		813 815
 	}
 	path = {	#Phra Nakhon (Bangkok) to Rayong (Eastern Railway)
 		778 795 798 797 799
