@@ -12732,11 +12732,11 @@ pagan_county_conquest = {
 		OR = {
 			AND = {
 				OR = {
-					ROOT = { religion = norse_pagan }
-					ROOT = { religion = norse_pagan_reformed }
-					ROOT = { religion = wokou }
+					#ROOT = { religion = norse_pagan }
+					#ROOT = { religion = norse_pagan_reformed }
 					ROOT = { religion = americanist }
 					ROOT = { religion = americanist_reformed }
+					ROOT = { religion = wokou }
 				}
 				location = {
 					port = yes
@@ -12763,7 +12763,12 @@ pagan_county_conquest = {
 			}
 			AND = {
 				ROOT = {
-					religion_group = pagan_group
+					OR = {
+						religion_group = pagan_group
+						religion_group = nautical
+						religion = americanist
+						religion = americanist_reformed
+					}
 					NOT = { same_realm = FROM }
 				}
 				FROM = {
