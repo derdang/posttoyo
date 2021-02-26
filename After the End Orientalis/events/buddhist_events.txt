@@ -64,7 +64,29 @@ narrative_event = {
 		}
 	}
 	option = {
+		trigger = {
+			OR = {
+				religion = gelugpa
+				religion = rime
+				religion = ligmincha
+				religion = ngocholugspa
+				religion = dorje_shugden
+			}
+		}
 		name = EVTOPTD_budevent1
+		piety = 25
+		hidden_tooltip = {
+			random_list = {
+				25 = {set_character_flag = buddhist_tibetan_sutra_1}
+				25 = {set_character_flag = buddhist_tibetan_sutra_2}
+				25 = {set_character_flag = buddhist_tibetan_sutra_3}
+				25 = {set_character_flag = buddhist_tibetan_sutra_4}
+			}
+			narrative_event = {id = budevents.5 days = 2}
+		}
+	}
+	option = {
+		name = EVTOPTE_budevent1
 		piety = -25
 		remove_trait = in_hiding
 	}
@@ -112,7 +134,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_mahayana_sutra_3 }
 			clr_character_flag = { buddhist_mahayana_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
 		trigger = {
@@ -126,7 +148,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_mahayana_sutra_3 }
 			clr_character_flag = { buddhist_mahayana_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
 		trigger = {
@@ -140,7 +162,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_mahayana_sutra_3 }
 			clr_character_flag = { buddhist_mahayana_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
 		trigger = {
@@ -154,7 +176,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_mahayana_sutra_3 }
 			clr_character_flag = { buddhist_mahayana_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 }
 narrative_event = {
@@ -200,7 +222,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_therevada_sutra_3 }
 			clr_character_flag = { buddhist_therevada_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
 		trigger = {
@@ -214,7 +236,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_therevada_sutra_3 }
 			clr_character_flag = { buddhist_therevada_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
 		trigger = {
@@ -228,7 +250,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_therevada_sutra_3 }
 			clr_character_flag = { buddhist_therevada_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
 		trigger = {
@@ -242,7 +264,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_therevada_sutra_3 }
 			clr_character_flag = { buddhist_therevada_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 }
 narrative_event = {
@@ -288,7 +310,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_buddhislamic_sutra_3 }
 			clr_character_flag = { buddhist_buddhislamic_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
 		trigger = {
@@ -302,7 +324,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_buddhislamic_sutra_3 }
 			clr_character_flag = { buddhist_buddhislamic_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
 		trigger = {
@@ -316,7 +338,7 @@ narrative_event = {
 			clr_character_flag = { buddhist_buddhislamic_sutra_3 }
 			clr_character_flag = { buddhist_buddhislamic_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 	option = {
 		trigger = {
@@ -330,13 +352,101 @@ narrative_event = {
 			clr_character_flag = { buddhist_buddhislamic_sutra_3 }
 			clr_character_flag = { buddhist_buddhislamic_sutra_4 }
 		}
-		narrative_event = { id = budevents.5 days = 2 }
+		narrative_event = { id = budevents.6 days = 2 }
 	}
 }
 narrative_event = {
 	id = budevents.5
 	title = budevent5_title
-	desc = budevent5_desc
+	#Have the Same Intro in the localization just change out the Sutras that you choose to recites
+	desc = {
+		trigger = {
+			has_character_flag = buddhist_tibetan_sutra_1
+		}
+		text = TIBETAN_SUTRA_1
+	}
+	desc = {
+		trigger = {
+			has_character_flag = buddhist_tibetan_sutra_2
+		}
+		text = TIBETAN_SUTRA_2
+	}
+	desc = {
+		trigger = {
+			has_character_flag = buddhist_tibetan_sutra_3
+		}
+		text = TIBETAN_SUTRA_3
+	}
+	desc = {
+		trigger = {
+			has_character_flag = buddhist_tibetan_sutra_4
+		}
+		text = TIBETAN_SUTRA_4
+	}
+	picture = GFX_evt_buddha_teaching
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {
+			has_character_flag = buddhist_tibetan_sutra_1
+		}
+		name = EVTOPT_praise_buddha
+		add_character_modifier = { name = resolute_peace years = 1 }
+		AND = {
+			clr_character_flag = { buddhist_tibetan_sutra_1 }
+			clr_character_flag = { buddhist_tibetan_sutra_2 }
+			clr_character_flag = { buddhist_tibetan_sutra_3 }
+			clr_character_flag = { buddhist_tibetan_sutra_4 }
+		}
+		narrative_event = { id = budevents.6 days = 2 }
+	}
+	option = {
+		trigger = {
+			has_character_flag = buddhist_tibetan_sutra_2
+		}
+		name = EVTOPT_praise_buddha
+		add_character_modifier = { name = wise_sayings years = 1 }
+		AND = {
+			clr_character_flag = { buddhist_tibetan_sutra_1 }
+			clr_character_flag = { buddhist_tibetan_sutra_2 }
+			clr_character_flag = { buddhist_tibetan_sutra_3 }
+			clr_character_flag = { buddhist_tibetan_sutra_4 }
+		}
+		narrative_event = { id = budevents.6 days = 2 }
+	}
+	option = {
+		trigger = {
+			has_character_flag = buddhist_tibetan_sutra_3
+		}
+		name = EVTOPT_praise_buddha
+		add_character_modifier = { name = karmic_fury years = 1 }
+		AND = {
+			clr_character_flag = { buddhist_tibetan_sutra_1 }
+			clr_character_flag = { buddhist_tibetan_sutra_2 }
+			clr_character_flag = { buddhist_tibetan_sutra_3 }
+			clr_character_flag = { buddhist_tibetan_sutra_4 }
+		}
+		narrative_event = { id = budevents.6 days = 2 }
+	}
+	option = {
+		trigger = {
+			has_character_flag = buddhist_tibetan_sutra_4
+		}
+		name = EVTOPT_praise_buddha
+		add_character_modifier = { name = tending_lotus years = 1 }
+		AND = {
+			clr_character_flag = { buddhist_tibetan_sutra_1 }
+			clr_character_flag = { buddhist_tibetan_sutra_2 }
+			clr_character_flag = { buddhist_tibetan_sutra_3 }
+			clr_character_flag = { buddhist_tibetan_sutra_4 }
+		}
+		narrative_event = { id = budevents.6 days = 2 }
+	}
+}
+narrative_event = {
+	id = budevents.6
+	title = budevent6_title
+	desc = budevent6_desc
 	picture = GFX_evt_buddha_teaching
 	
 	is_triggered_only = yes
@@ -349,7 +459,7 @@ narrative_event = {
 		trigger = {
 			religion = mahayana
 		}
-		name = EVTOPTA_budevent5
+		name = EVTOPTA_budevent6
 		piety = 25
 		remove_trait = in_hiding
 	}
@@ -360,7 +470,7 @@ narrative_event = {
 				religion = parimatira
 			}
 		}
-		name = EVTOPTB_budevent5
+		name = EVTOPTB_budevent6
 		piety = 25
 		remove_trait = in_hiding
 	}
@@ -368,7 +478,7 @@ narrative_event = {
 		trigger = {
 			religion = senthang
 		}
-		name = EVTOPTC_budevent5
+		name = EVTOPTC_budevent6
 		piety = 25
 		remove_trait = in_hiding
 	}
