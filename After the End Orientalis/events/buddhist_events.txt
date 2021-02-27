@@ -482,4 +482,18 @@ narrative_event = {
 		piety = 25
 		remove_trait = in_hiding
 	}
+	option = {
+		trigger = {
+			OR = {
+				religion = gelugpa
+				religion = rime
+				religion = ligmincha
+				religion = ngocholugspa
+				religion = dorje_shugden
+			}
+		}
+		name = EVTOPTD_budevent6
+		piety = 25
+		remove_trait = in_hiding
+	}
 }
