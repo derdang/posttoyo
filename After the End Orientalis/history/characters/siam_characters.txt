@@ -1,6 +1,7 @@
 #2310 - Central Thai
 #	- 2310001 - 2310049 - post-event Ruling family
-#	- 2310050 - 2310199 - Non-royal in Palimonthon
+#	- 2310050 - 2310149 - Non-royal in Palimonthon
+#	- 2310150 - 2310199 - Post-event history 
 #	- 23102xx - Characters in d_ayutthaya and Lopburi
 #	- 23105xx - Characters in de jure Duchy/Kingdom of Sukhothai
 #	- 23107xx - Characters in East Thailand
@@ -35,7 +36,7 @@
 	trait=shrewd
 	trait=diligent
 	trait=stubborn
-	2560.4.15={birth=yes}
+	2569.4.15={birth=yes}
 }
 2310002 ={
 	name="Krang"
@@ -117,6 +118,7 @@
 	trait=diligent
 	2585.4.15={birth=yes}
 }
+
 ### Ayutthaya
 2310201 = {
 	name="Phet"
@@ -830,4 +832,97 @@
 	trait=shrewd
 	trait=diligent
 	2585.4.15={birth=yes}	
+}
+
+##History 2310150 - 199
+2310150 ={ # post-event Golden Age
+	name="Yukthong Khong Thai"
+	dynasty=2310121
+	culture=thai_central
+	religion=dharmayuttika
+	martial=40
+	diplomacy=40
+	stewardship=40
+	learning=40
+	trait=legendary #Highly legendary
+	#no-random-trait
+	2070.1.1={birth=yes}
+	2205.12.30={death=yes}
+}
+2310151 ={ # post-event Golden Age
+	name="Siam Devadhiraj"
+	dynasty=2310121
+	culture=thai_central
+	religion=dharmayuttika
+	martial=40
+	diplomacy=40
+	stewardship=40
+	learning=40
+	trait=legendary #Highly legendary
+	#no-random-trait
+	1782.1.1={birth=yes}
+	2282.12.30={death=yes}
+}
+2310152 ={ # post-event reign
+	name="---"
+	dynasty=2310121
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Highly legendary
+	#no-random-trait
+	2265.1.1={birth=yes}
+	2307.12.30={death=yes}
+}
+2310153 ={ # post-event reign
+	name="---"
+	dynasty=2310121
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Highly legendary
+	#no-random-trait
+	2296.1.1={birth=yes}
+	2308.12.30={death=yes}
+}
+##The Chaotic Fall : 2310154 - 170
+
+##The Restoration : 170 - 199
+2310170 ={ # post-event reign
+	name="---"
+	dynasty=2310121
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Highly legendary
+	#no-random-trait
+	2410.1.1={birth=yes}
+	2458.12.30={death=yes}
+}
+2310171 ={ # post-event reign
+	name="Thammaracha"
+	dynasty=2310121
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Highly legendary
+	#no-random-trait
+	2458.1.1={birth=yes}
+	2538.12.30={death=yes}
+}
+2310172 ={ # post-event reign
+	name="---"
+	dynasty=2310121
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary
+	#no-random-trait
+	2458.1.1={birth=yes}
+	2538.12.30={death=yes}
+}
+2310173 ={ # post-event reign
+	name="Phra Hong"
+	dynasty=2310121
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Less legendary now
+	#no-random-trait
+	2516.10.14={birth=yes}
+	2591.4.15={death=yes}
 }
