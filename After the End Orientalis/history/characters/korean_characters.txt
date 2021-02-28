@@ -45,7 +45,7 @@
 }
 
 ### The Eight Kims (or One Kim)
-1598010={ #Pyongyang
+1598010={ #k_pyongyang
 	name="Song Chol"
 	dynasty=1598000 #Kim
 	culture=chosunin
@@ -53,56 +53,58 @@
 	trait=genius
 	2599.1.1={birth=yes}
 }
-1598011={ #Pyongsong
+1598011={ #kaechon
 	name="Yong Sik"
 	dynasty=1598000 #Kim
 	culture=chosunin
 	religion=atomicist
 	2575.1.1={birth=yes}
 }
-1598012={ #Baekdu
+1598012={ #d_wonsan
 	name="Yong Gon"
 	dynasty=1598000 #Kim
 	culture=chosunin
 	religion=atomicist
 	2567.1.1={birth=yes}
 }
-1598013={ #Hamgyoung
+1598013={ #Sinpo
 	name="Ha Il"
 	dynasty=1598000 #Kim
 	culture=chosunin
 	religion=atomicist
-	2592.1.1={birth=yes}
+	2588.1.1={birth=yes}
 }
-1598014={ #E.Chagang
+1598014={ #d_hamgyeong
 	name="Chong Ae"
 	dynasty=1598000 #Kim
 	culture=chosunin
-	femate=yes
+	female=yes
 	religion=atomicist
 	trait=diligent
-	2566.1.1={birth=yes}
+	trait=twin
+	2582.1.1={birth=yes}
 }
-1598015={ #Border
-	name="Hyong Bok"
+1598015={ #Hwanghae
+	name="Chong Bok"
 	dynasty=1598000 #Kim
 	culture=chosunin
 	female=yes
 	religion=atomicist
 	trait=brave
+	trait=twin
 	2587.1.1={birth=yes}
 }
 #Old Kim's wives
-1598016={ #Wonsan
+1598016={ #Chongju
 	name="Mi Hee"
 	dynasty=1598019 #Na
 	culture=chosunin
 	religion=atomicist
 	female=yes
 	trait=ambitious
-	2567.1.1={birth=yes}
+	2547.1.1={birth=yes}
 }
-1598017={ #West Chagang
+1598017={ #Kanggye
 	name="Young Joo"
 	dynasty=1598010 #Shin
 	culture=chosunin
@@ -111,7 +113,13 @@
 	trait=fair
 	2586.1.1={birth=yes}
 }
-
+1598020={ #Sinuiju
+	name="Si Eon"
+	dynasty=1598018 #Ki
+	culture=chosunin
+	religion=atomicist
+	2561.1.1={birth=yes}
+}
 #Theocracy of Yeongju
 1597000={
 	name="Chul"
