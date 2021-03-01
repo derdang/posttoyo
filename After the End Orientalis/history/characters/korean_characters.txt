@@ -4,8 +4,7 @@
 #1597 - Hangugin
 #1598 - Chosunin 
 
-###########Korean Dynasties###########
-
+###########North Korea###########
 #Theocracy of Nampo
 1598000={
 	name="Baram"
@@ -44,7 +43,7 @@
 	2580.1.1={birth=yes}
 }
 
-### The Eight Kims (or One Kim)
+### The Eight Princes of The Eternal Sun
 1598010={ #k_pyongyang
 	name="Song Chol"
 	dynasty=1598000 #Kim
@@ -120,6 +119,7 @@
 	religion=atomicist
 	2561.1.1={birth=yes}
 }
+###########South Korea###########
 #Theocracy of Yeongju
 1597000={
 	name="Chul"
@@ -139,7 +139,6 @@
 	trait=lustful
 	2580.1.1={birth=yes}
 }
-
 #Theocracy of Mokpo
 1597001={
 	name="Syngman"
@@ -214,5 +213,26 @@
 	trait=content
 	trait=trusting
 	trait=lustful
+	2580.1.1={birth=yes}
+}
+#Countess of Wonju
+1597005={
+	name="Raum"
+	dynasty=1597006 #Kang
+	culture=hangugin
+	religion=muist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	female=yes
+	trait=misguided_warrior
+	trait=depressed
+	trait=mystic
+	trait=giant
+	trait=uncouth
+	trait=stubborn
+	trait=proud
 	2580.1.1={birth=yes}
 }
