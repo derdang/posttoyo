@@ -104,3 +104,64 @@ saint_balance = {
 	customizer = no
 	random = no
 }
+senthang_muslim = {
+	potential = {
+		religion = senthang
+	}
+	religious = yes
+
+	muslim_opinion = 10
+	tolerates_muslim = yes
+	
+	opposites = {
+		senthang_muslim
+		senthang_metayya 
+	}
+	monthly_piety = 0.25
+	learning = 1
+
+	customizer = no
+	random = no
+}
+senthang_mettaya = { #Buddha-Mahdi
+	potential = {
+		religion = senthang
+	}
+	religious = yes
+
+	tolerates_buddhist_group = yes
+	buddhist_group_opinion = 10
+
+	opposites = {
+		senthang_muslim
+		senthang_metayya 
+	}
+
+	diplomacy = 1
+	learning = 1
+	
+	customizer = no
+	random = no
+}
+senthang_middle_path = { #Seek common virtue and values in all religion. i.e. Baha'i
+	potential = {
+		religion = senthang
+	}
+	religious = yes
+
+	tolerates_buddhist_group = yes
+	tolerates_muslim = yes
+	tolerates_christian  = yes
+	#tolerates_eastern = yes
+	
+	opposites = {
+		senthang_muslim
+		senthang_metayya 
+	}
+
+	monthly_piety = 0.1
+	diplomacy = 1
+	
+	customizer = no
+	random = no
+}
