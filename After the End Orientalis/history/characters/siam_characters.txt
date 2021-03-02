@@ -26,9 +26,10 @@
 	dynasty=2310001 #Cheachaophandin
 	culture=thai_central
 	religion=dharmayuttika
-	martial=4
+	dna="ngbvjqpaiix"
+	martial=5
 	diplomacy=7
-	stewardship=6
+	stewardship=8
 	intrigue=4
 	learning=5
 	trait=martial_cleric
@@ -846,6 +847,7 @@
 	stewardship=40
 	learning=40
 	trait=legendary #Highly legendary
+	occluded=yes
 	#no-random-trait
 	2070.1.1={birth=yes}
 	2205.12.30={death=yes}
@@ -860,6 +862,7 @@
 	stewardship=40
 	learning=40
 	trait=legendary #Highly legendary
+	occluded=yes
 	#no-random-trait
 	1782.1.1={birth=yes}
 	2282.12.30={death=yes}
@@ -870,9 +873,10 @@
 	culture=thai_central
 	religion=dharmayuttika
 	trait=legendary #Highly legendary
+	occluded=yes
 	#no-random-trait
 	2265.1.1={birth=yes}
-	2307.12.30={death=yes}
+	2307.1.30={death=yes}
 }
 2310153 ={ # post-event reign
 	name="Kalpa-avasarn"
@@ -880,6 +884,7 @@
 	culture=thai_central
 	religion=dharmayuttika
 	trait=legendary #Highly legendary
+	occluded=yes
 	#no-random-trait
 	2296.1.1={birth=yes}
 	2308.12.30={death=yes}
@@ -893,6 +898,7 @@
 	culture=thai_central
 	religion=dharmayuttika
 	trait=legendary #Highly legendary
+	occluded=yes
 	#no-random-trait
 	2410.1.1={birth=yes}
 	2458.12.30={death=yes}
@@ -903,6 +909,8 @@
 	culture=thai_central
 	religion=dharmayuttika
 	trait=legendary #Highly legendary
+	trait=mastermind_theologian
+	occluded=yes
 	#no-random-trait
 	2458.1.1={birth=yes}
 	2538.12.30={death=yes}
@@ -913,12 +921,13 @@
 	culture=thai_central
 	religion=dharmayuttika
 	trait=legendary
+	occluded=yes
 	#no-random-trait
 	2458.1.1={birth=yes}
 	2538.12.30={death=yes}
 }
 2310173 ={ # post-event reign
-	name="Phra Hong"
+	name="Phra-Ek"
 	dynasty=2310001
 	culture=thai_central
 	religion=dharmayuttika

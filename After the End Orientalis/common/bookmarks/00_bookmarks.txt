@@ -52,12 +52,15 @@ bm_the_land_of_stupas = { #Indochina Region: Burma, Thailand, Vietnam, Laos, and
 	}
 	selectable_character = {
 		id = 2310001 #Phra Hao of Siam
-		age = 25
-		name = ERA_CHAR_NAME_1
+		age = 35
+		name = ERA_CHAR_NAME_1 #TODO
 		title = e_siam
 		title_name = e_siam
 		
 		character = {
+			dna="ngbvjqpaiix"
+			properties="ad0000000000000000000b0000000000000000" #why_paradox
+			religion="dharmayuttika"
 			culture="thai_central"
 			dynasty=2310001
 		}
