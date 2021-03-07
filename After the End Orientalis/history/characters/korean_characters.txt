@@ -236,7 +236,7 @@
 	trait=proud
 	2580.1.1={birth=yes}
 }
-1597100={
+1597010={ #d seoul
 	name="Tae Soo"
 	dynasty=1597040 #Min
 	culture=hangugin
@@ -249,11 +249,11 @@
 	trait=misguided_warrior
 	trait=stubborn
 	trait=proud
-	2584.1.1={birth=yes}
+	2578.1.1={birth=yes}
 }
-1597101={
+1597011={
 	name="Dong Geun"
-	#dynasty=1597063 #Yun
+	dynasty=1597063 #Yun
 	culture=hangugin
 	religion=muist
 	martial=3
@@ -264,14 +264,30 @@
 	trait=misguided_warrior
 	trait=stubborn
 	trait=proud
-	2584.1.1={birth=yes}
+	2578.1.1={birth=yes}
 }
-1597111={ #Jeolla
+1597012={ #Jeolla
 	name="Sol"
 	#dynasty=1597035 #Kwak
-	culture=concordanist
-	religion=muist
+	culture=hangugin
+	religion=concordanist
 	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2578.1.1={birth=yes}
+}
+#Pusan
+1597100={ #Pusan
+	name="Eun Sung"
+	#dynasty=1597004 #Choi
+	culture=hangugin
+	religion=unificationist
+	martial=4
 	diplomacy=3
 	stewardship=4
 	intrigue=5
