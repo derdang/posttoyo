@@ -80,7 +80,7 @@
 	female=yes
 	religion=atomicist
 	trait=diligent
-	trait=twin
+	stewardship=7
 	2582.1.1={birth=yes}
 }
 1598015={ #Hwanghae
@@ -90,7 +90,7 @@
 	female=yes
 	religion=atomicist
 	trait=brave
-	trait=twin
+	martial=7
 	2587.1.1={birth=yes}
 }
 #Old Kim's wives
@@ -112,6 +112,7 @@
 	trait=fair
 	2586.1.1={birth=yes}
 }
+##Sinuiju
 1598020={ #Sinuiju
 	name="Si Eon"
 	dynasty=1598018 #Ki
@@ -119,6 +120,10 @@
 	religion=atomicist
 	2561.1.1={birth=yes}
 }
+###### Prince's family #######
+
+###### North Korea History ###########
+
 ###########South Korea###########
 #Theocracy of Yeongju
 1597000={
@@ -202,12 +207,12 @@
 	dynasty=1597061 #Ma
 	culture=hangugin
 	religion=wokou
-	martial=3
+	martial=5
 	diplomacy=3
 	stewardship=4
 	intrigue=5
 	learning=5
-	trait=charismatic_negotiator
+	trait=tough_soldier
 	trait=scholar
 	trait=brave
 	trait=content
@@ -251,7 +256,7 @@
 	trait=proud
 	2578.1.1={birth=yes}
 }
-1597011={
+1597011={ #Suwon
 	name="Dong Geun"
 	dynasty=1597063 #Yun
 	culture=hangugin
@@ -267,8 +272,8 @@
 	2578.1.1={birth=yes}
 }
 1597012={ #Jeolla
-	name="Sol"
-	#dynasty=1597035 #Kwak
+	name="Kwang"
+	dynasty=1597026 #Son
 	culture=hangugin
 	religion=concordanist
 	martial=3
@@ -281,10 +286,25 @@
 	trait=proud
 	2578.1.1={birth=yes}
 }
-#Pusan
+1597014={ #Gangwon
+	name="Jae Seop"
+	dynasty=1597005 #Cho
+	culture=hangugin
+	religion=concordanist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2578.1.1={birth=yes}
+}
+### Pusan
 1597100={ #Pusan
 	name="Eun Sung"
-	#dynasty=1597004 #Choi
+	dynasty=1597004 #Choi
 	culture=hangugin
 	religion=unificationist
 	martial=4
@@ -296,4 +316,34 @@
 	trait=stubborn
 	trait=proud
 	2584.1.1={birth=yes}
+}
+1597101={ #Chungcheong
+	name="Tae Hyun"
+	dynasty=1597000 #s-korea Kim
+	culture=hangugin
+	religion=muist
+	martial=4
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2582.1.1={birth=yes}
+}
+1597102={ #Daejeon
+	name="Dong Woo"
+	dynasty=1597002 #Park
+	culture=hangugin
+	religion=concordanist
+	martial=4
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2582.1.1={birth=yes}
 }
