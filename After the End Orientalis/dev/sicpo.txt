@@ -1,0 +1,32 @@
+namespace = casino
+character_event = {
+	id = casino.1
+	desc = "EVTDESC_casino1"
+	picture = GFX_evt_open_book_hf
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	option = {
+		trigger = {
+			wealth = 50
+		}
+		name = EVTOPTA_casino1 
+		random_list = {
+			300 ={
+					wealth = 50
+				}
+			302 ={
+					wealth = -50
+				}	
+			}
+  	
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
