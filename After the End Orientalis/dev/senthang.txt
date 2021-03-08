@@ -1,4 +1,7 @@
 namespace = senthang
+#
+#
+#Senthang school selection
 character_event = {
 	id = senthang.1
 	desc = "EVTDESC_senthang1"
@@ -16,11 +19,11 @@ character_event = {
 	option = {
 		name = EVTOPTA_senthang1
 		hidden_tooltip = {
-			remove_trait = taoism_qingzhen
-			remove_trait = confucianism_qingzhen
+			remove_trait = senthang_middle_path
+			remove_trait = senthang_metayya
 
 		}
-		add_trait = buddhism_qingzhen
+		add_trait = senthang_muslim
 		ai_chance = {
 			factor = 10
 		}
@@ -29,11 +32,11 @@ character_event = {
 	option = {
 		name = EVTOPTB_senthang1
 		hidden_tooltip = {
-			remove_trait = buddhism_qingzhen
-			remove_trait = confucianism_qingzhen
+			remove_trait = senthang_muslim
+			remove_trait = senthang_metayya
 
 		}
-		add_trait = taoism_qingzhen
+		add_trait = senthang_middle_path
 		ai_chance = {
 			factor = 10
 		}
@@ -42,11 +45,11 @@ character_event = {
 	option = {
 		name = EVTOPTC_senthang1
 		hidden_tooltip = {
-			remove_trait = buddhism_qingzhen
-			remove_trait = taoism_qingzhen
+			remove_trait = senthang_muslim
+			remove_trait = senthang_middle_path
 
 		}
-		add_trait = confucianism_qingzhen
+		add_trait = senthang_mettaya
 		ai_chance = {
 			factor = 10
 		}

@@ -104,6 +104,8 @@ saint_balance = {
 	customizer = no
 	random = no
 }
+## Senthang schools
+
 senthang_muslim = {
 	potential = {
 		religion = senthang
@@ -114,7 +116,7 @@ senthang_muslim = {
 	tolerates_muslim = yes
 	
 	opposites = {
-		senthang_muslim
+		senthang_middle_path
 		senthang_metayya 
 	}
 	monthly_piety = 0.25
@@ -133,8 +135,8 @@ senthang_mettaya = { #Buddha-Mahdi
 	buddhist_group_opinion = 10
 
 	opposites = {
-		senthang_muslim
-		senthang_metayya 
+		senthang_middle_path
+		senthang_muslim 
 	}
 
 	diplomacy = 1
@@ -152,7 +154,7 @@ senthang_middle_path = { #Seek common virtue and values in all religion. i.e. Ba
 	tolerates_buddhist_group = yes
 	tolerates_muslim = yes
 	tolerates_christian  = yes
-	#tolerates_eastern = yes
+	tolerates_eastern = yes
 	
 	opposites = {
 		senthang_muslim

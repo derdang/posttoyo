@@ -30,3 +30,20 @@ legendary_ruler_of_singapore = { #...
 	}
 	picture = GFX_bloodlines_placeholder_symbol
 }
+baekdu_bloodline = { #...
+	monthly_character_prestige = 0.3
+	monthly_character_piety = 0.3
+
+	inheritance = patrilineal
+	active = {
+		custom_tooltip = {
+			text = saintly_bloodline_same_culture_TT
+			FROM = {
+				founder = {
+					culture = ROOT
+				}
+			}
+		}
+	}
+	picture = GFX_bloodlines_placeholder_symbol
+}
