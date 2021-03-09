@@ -49,7 +49,6 @@
 	dynasty=1598000 #Kim
 	culture=chosunin
 	religion=atomicist
-	trait=genius
 	father=1598154
 	2599.1.1={birth=yes}
 }
@@ -59,33 +58,34 @@
 	culture=chosunin
 	religion=atomicist
 	father=1598152
-	2575.1.1={birth=yes}
+	2577.1.1={birth=yes}
 }
 1598012={ #d_wonsan
 	name="Yong Gon"
-	dynasty=1598000 #Kim
+	dynasty=1598400 #Kim
 	culture=chosunin
 	religion=atomicist
 	trait=bastard
 	father=1598152
-	2567.1.1={birth=yes}
+	2570.1.1={birth=yes}
 }
 1598013={ #Sinpo
 	name="Ha Il"
-	dynasty=1598000 #Kim
+	dynasty=1598401 #Kim
 	culture=chosunin
 	religion=atomicist
+	father=1598153
 	2588.1.1={birth=yes}
 }
 1598014={ #d_hamgyeong
 	name="Chong Ae"
-	dynasty=1598000 #Kim
+	dynasty=1598401 #Kim
 	culture=chosunin
 	female=yes
 	religion=atomicist
 	trait=diligent
 	stewardship=7
-	father=1598152
+	father=1598153
 	2582.1.1={birth=yes}
 }
 1598015={ #Hwanghae
@@ -96,7 +96,8 @@
 	religion=atomicist
 	trait=brave
 	martial=7
-	2587.1.1={birth=yes}
+	father=1598152
+	2585.1.1={birth=yes}
 }
 #Old Kim's wives
 1598016={ #Chongju
@@ -132,7 +133,37 @@
 	2561.1.1={birth=yes}
 }
 ###### Prince's family #######
-
+1598030={ #k_pyongyang
+	name="Jong Su"
+	dynasty=1598000 #Kim
+	culture=chosunin
+	religion=atomicist
+	trait=genius
+	father=1598154
+	2601.1.1={birth=yes}
+}
+1598036={ #Chongju
+	name="Jung"
+	dynasty=1598019 #Na
+	culture=chosunin
+	religion=atomicist
+	2552.1.1={birth=yes}
+	2601.12.1={
+		employer = 1598016
+	}
+}
+1598037={ #Kanggye
+	name="Jong I"
+	dynasty=1598010 #Shin
+	culture=chosunin
+	religion=atomicist
+	female=yes
+	trait=quick
+	trait=fair
+	father=1598154
+	mother=1598017
+	2603.9.1={birth=yes}
+}
 ###### North Korea History ###########
 1598150={ #
 	name="Haru"
@@ -140,7 +171,7 @@
 	culture=chosunin
 	religion=atomicist
 	2481.1.1={birth=yes}
-	2519.12.1={
+	2524.12.1={
 		add_spouse = 1598151
 	}
 	2532.6.6={death={
@@ -165,13 +196,13 @@
 	trait=fair
 	father=1598150
 	mother=1598151
-	2520.1.1={birth=yes}
-	2540.1.1={
+	2525.1.1={birth=yes}
+	2535.1.1={
 		create_bloodline = {
 				type = baekdu_bloodline
 			}
 	}
-	2578.6.6={death=yes}
+	2585.6.6={death=yes}
 }
 1598153={ #Pyongyang
 	name="Baek Jang"
@@ -181,8 +212,8 @@
 	trait=fair
 	father=1598150
 	mother=1598151
-	2526.1.1={birth=yes}
-	2688.6.6={death=yes}
+	2540.1.1={birth=yes}
+	2601.6.6={death=yes}
 }
 1598154={ #Pyongyang
 	name="Yong Joo"
