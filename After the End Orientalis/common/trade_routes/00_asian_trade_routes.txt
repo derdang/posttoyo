@@ -28,13 +28,13 @@ nutmeg_trade = {
 	}
 
 	path = {	#Jakarta to Palembang 
-		445 1075 1072 390
+		445 1106 1103 390
 	}
-	path = {	#Palembang to Singapore 
-		390 1071 1064 389 347
+	path = {	#Palembang to Singapore - Johor
+		390 1102 1095 389 347
 	}
 	path = {	#Jakarta to Semarang 
-		445 1076 456
+		445 1107 456
 	}
 	path = {	#Semarang to Yogyakarta 
 		456 459 453
@@ -43,10 +43,10 @@ nutmeg_trade = {
 		456 460 461 463 462
 	}
 	path = {	#Surabaya to Denpasar 
-		462 1078 1079 556
+		462 1109 1110 556
 	}
 	path = {	#Yogyakarta to Denpasar 
-		453 1077 1080 556
+		453 1108 1111 556
 	}
 }
 maritime_silk_trade = {
@@ -81,44 +81,44 @@ maritime_silk_trade = {
 	}
 
 	start = {				# Start provinces of trade route
-		958 #Macau (China)
+		989 #Macau (China)
 	}
 	
 	path = {	#Macau to Hai Phong
-		958 1158 1157 1160 1105 140
+		989 1189 1188 1191 1136 140
 	}
 	path = {	#Hai Phong to Da Nang
-		140 1105 1104 167
+		140 1136 1135 167
 	}
 	path = {	#Da Nang to Sai Gon
-		167 1103 1102 1101 180
+		167 1134 1133 1132 180
 	}
 	path = {	#Sai Gon to Sihanoukville
-		180 197 1100 1106 320
+		180 197 1131 1137 320
 	}
 	path = {	#Sihanoukville to Phra Nakhon (Bangkok)
-		320 1109 1107 778
+		320 1140 1138 778
 	}
 	path = {	#Phra Nakhon (Bangkok) to Pattani
-		778 1107 1108 813 808
+		778 1138 1139 813 808
 	}
 	path = {	#Pattani to Kota Bharu (Kelantan)
 		808 810 373
 	}
 	path = {	#Kota Bharu (Kelantan) to Singapore
-		373 1068 1067 1065 1064 389
+		373 1099 1098 1096 1095 389
 	}
 	path = {	#Singapore to Kuala Lumpur
-		389 1062 339 337
+		389 1093 339 337
 	}
 	path = {	#Kuala Lumpur to George Town (Penang)
-		337 340 1061 363
+		337 340 1092 363
 	}
-	path = {	#George Town (Penang) to Phuket to Mawlamyine and Thaton
-		363 1142 805 1142 1143 1144 903 904
+	path = {	#George Town (Penang) to Phuket - Mawlamyine and Thaton
+		363 1173 805 1173 1174 1175 903 904
 	}
 	path = {	#Thaton to Yangon
-		904 1145 909
+		904 1176 909
 	}
 }
 dragon_road_trade = {
@@ -296,10 +296,10 @@ tokaido_trade = {
 		69 78 82 88
 	}
 	path = {	#Osaka to Hiroshima
-		88 86 1138 1139 110
+		88 86 1169 1170 110
 	}
 	path = {	#Osaka to Kochi
-		88 1138 1126 98
+		88 1169 1157 98
 	}
 }
 saikaido_trade = {
@@ -333,10 +333,10 @@ saikaido_trade = {
 	}
 
 	path = {	#Nagasaki to Satsuma
-		121 1132 1128 130
+		121 1163 1159 130
 	}
 	path = {	#Satsuma to Okinawa
-		130 1128 1129 134
+		130 1159 1160 134
 	}
 	path = {	#Satsuma to Miyazaki
 		130 129 128
@@ -384,10 +384,10 @@ higashimawari_trade = {
 		56 26 25 24 23 21
 	}
 	path = {	#Aomori to Ishikari
-		21 1115 1114 5
+		21 1146 1145 5
 	}
 	path = {	#Aomori to Sendai
-		21 1115 1118 1119 32
+		21 1146 1149 1150 32
 	}
 	path = {	#Sendai to Tokyo
 		32 35 42 43 44 53
