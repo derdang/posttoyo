@@ -864,16 +864,65 @@
 	dynasty=1603000 #Kakihara
 	culture=togoku
 	religion=seirei
-	martial=6
-	diplomacy=3
-	stewardship=4
-	intrigue=3
-	learning=2
-	trait=skilled_tactician
-	trait=sturdy
-	trait=lefthanded
-	trait=envious
-	2538.1.1={birth=yes}
+	father=160300
+	martial=4
+	diplomacy=7
+	stewardship=3
+	intrigue=2
+	learning=3
+	trait=charismatic_negotiator
+	trait=authoritative
+	trait=shrewd
+	trait=proud
+	trait=feeble
+	trait=gregarious
+	2580.1.1={birth=yes}
+}
+160300={ #Father of Katsuaki
+	name="Kenta"
+	dynasty=1603000 #Kakihara
+	culture=togoku
+	religion=seirei
+	father=160301
+	2550.1.1={birth=yes}
+	2600.1.1={death=yes}
+}
+160301={ #Father of Kenta
+	name="Kon"
+	dynasty=1603000 #Kakihara
+	culture=togoku
+	religion=seirei
+	father=160302
+	mother=160303
+	2515.1.1={birth=yes}
+	2575.1.1={death=yes}
+}
+160302={ #Father of Kon
+	name="Shigeaki"
+	dynasty=1603000 #Kakihara
+	culture=togoku
+	religion=seirei
+	2480.1.1={birth=yes}
+	2500.1.1={add_spouse=160303}
+	2540.1.1={death=yes}
+}
+160303={ #Wife of Shigeaki
+	name="Chiaki"
+	culture=togoku
+	religion=seirei
+	female=yes
+	2480.1.1={birth=yes}
+	2550.1.1={death=yes}
+}
+160304={ #Father of Kyoichi
+	name="Eitaro"
+	dynasty=1603000 #Kakihara
+	culture=togoku
+	religion=seirei
+	father=160302
+	mother=160303
+	2517.1.1={birth=yes}
+	2579.1.1={death=yes}
 }
 1603001={ #March lord of Sorachi
 	name="Utaro"
@@ -887,25 +936,30 @@
 	learning=2
 	trait=skilled_tactician
 	trait=sturdy
-	trait=lefthanded
-	trait=envious
-	2538.1.1={birth=yes}
+	trait=strong
+	trait=gluttonous
+	trait=just
+	trait=honorable
+	2571.1.1={birth=yes}
 }
 1603002={ #Count of Iburi
 	name="Kyoichi"
 	dynasty=1603000 #Kakihara
 	culture=togoku
 	religion=seirei
-	martial=6
+	father=160304
+	martial=4
 	diplomacy=3
-	stewardship=4
-	intrigue=3
+	stewardship=3
+	intrigue=6
 	learning=2
-	trait=skilled_tactician
-	trait=sturdy
+	trait=flamboyant_schemer
 	trait=lefthanded
+	trait=ambitious
+	trait=ruthless
+	trait=groomed
 	trait=envious
-	2538.1.1={birth=yes}
+	2559.1.1={birth=yes}
 }
 1601000={ #High Chief of Tomuraushi
 	name="Satoru"
@@ -918,90 +972,88 @@
 	intrigue=3
 	learning=2
 	trait=skilled_tactician
-	trait=sturdy
-	trait=lefthanded
-	trait=envious
-	2538.1.1={birth=yes}
+	trait=strong
+	trait=patient
+	trait=humble
+	trait=lustful
+	trait=stubborn
+	2569.1.1={birth=yes}
 }
 1601001={ #Chief of Soya
 	name="Taka"
 	dynasty=1601001 #Kado
 	culture=ezo
 	religion=chinomi
-	martial=6
+	martial=4
 	diplomacy=3
-	stewardship=4
+	stewardship=2
 	intrigue=3
 	learning=2
-	trait=skilled_tactician
-	trait=sturdy
-	trait=lefthanded
-	trait=envious
-	2538.1.1={birth=yes}
+	trait=tough_soldier
+	trait=diligent
+	trait=brave
+	trait=zealous
+	trait=ruthless
+	2581.1.1={birth=yes}
 }
 1601002={ #Chief of Ohotsuku
 	name="Shou"
 	dynasty=1601002 #Kasegi
 	culture=ezo
 	religion=chinomi
-	martial=6
-	diplomacy=3
-	stewardship=4
-	intrigue=3
+	martial=4
+	diplomacy=6
+	stewardship=2
+	intrigue=1
 	learning=2
-	trait=skilled_tactician
-	trait=sturdy
-	trait=lefthanded
-	trait=envious
-	2538.1.1={birth=yes}
+	trait=charismatic_negotiator
+	trait=giant
+	trait=ambitious
+	trait=familyperson
+	trait=wroth
+	trait=authoritative
+	2579.1.1={birth=yes}
 }
 1601003={ #Chief of Nemuro
 	name="Aoi"
 	dynasty=1601003 #Kishi
 	culture=ezo
 	religion=chinomi
-	martial=6
+	martial=5
 	diplomacy=3
 	stewardship=4
-	intrigue=3
-	learning=2
-	trait=skilled_tactician
-	trait=sturdy
+	intrigue=1
+	learning=4
+	trait=thrifty_clerk
+	trait=honest
 	trait=lefthanded
-	trait=envious
-	2538.1.1={birth=yes}
+	trait=patient
+	2585.1.1={birth=yes}
 }
 1601004={ #Chief of Kuriru
 	name="Jinichi"
 	dynasty=1601004 #Horo
 	culture=ezo
 	religion=chinomi
-	martial=6
-	diplomacy=3
-	stewardship=4
-	intrigue=3
-	learning=2
-	trait=skilled_tactician
-	trait=sturdy
-	trait=lefthanded
-	trait=envious
-	2538.1.1={birth=yes}
+	2582.1.1={birth=yes}
 }
 1601005={ #Chief of Akan
 	name="Kai"
 	dynasty=1601005 #Ifukube
 	culture=ezo
 	religion=chinomi
-	martial=6
-	diplomacy=3
-	stewardship=4
-	intrigue=3
-	learning=2
+	martial=4
+	diplomacy=2
+	stewardship=2
+	intrigue=1
+	learning=3
 	trait=skilled_tactician
-	trait=sturdy
-	trait=lefthanded
+	trait=groomed
+	trait=fair
+	trait=temperate
+	trait=shy
 	trait=envious
-	2538.1.1={birth=yes}
+	2588.1.1={birth=yes}
 }
 1603003={ #Nishi Aomori
 	name="Sueji"
