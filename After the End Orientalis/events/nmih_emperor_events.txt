@@ -1,0 +1,225 @@
+###########################################
+#                                         #
+# NMIH Emperor and Imperial Court events  #
+#                                         #
+###########################################
+
+namespace = EMPEROR
+
+# If Emperor has no child, he gets a new consort
+character_event = {
+	id = EMPEROR.1
+	desc = "EVTDESCEMPEROR.1"
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		ai = yes
+		age = 16
+		is_female = no
+		primary_title = { title = e_japan }
+		NOT = {
+			any_child = {
+				is_female = no
+				has_inheritance_blocker = no
+				NOT = { trait = incapable }
+				NOT = { trait = imbecile }
+				NOT = { trait = inbred }
+				NOT = { trait = lunatic }
+				NOT = { trait = possessed }
+				NOT = { trait = slow }
+				NOT = { trait = weak }
+				NOT = { trait = bastard }
+				NOT = { trait = kinslayer }
+				NOT = { trait = eunuch }
+				NOT = { trait = blinded }
+			}
+		}
+		NOT = {
+			num_of_consorts = 3
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				trait = celibate
+			}
+			remove_trait = celibate
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = culture
+			female = yes
+			age = 20
+			religion = ROOT
+			culture = togoku
+		}
+		new_character = {
+			add_consort = ROOT
+		}
+	}
+}
+
+# If Emperor has no same dynasty heir and passed, a new imperial family member has appear and successed imperial throne
+character_event = {
+	id = EMPEROR.2
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_landed_title = e_japan
+		current_heir = {
+			NOT = { dynasty = ROOT }
+		}
+	}
+
+	immediate = {
+		save_event_target_as = previousEmperor
+		create_character = {
+			random_traits = yes
+			age = 16
+			culture = imperial_family
+			religion = togoku
+			dynasty = 420 #Yamato(imperial family)
+			fertility = 2
+			historical = yes
+			attributes = {
+				diplomacy = 9
+				martial = 9
+				stewardship = 9
+				intrigue = 9
+				learning = 9
+			}
+		}
+		new_character = {
+			dynasty = 420 #Yamato(imperial family)
+			save_event_target_as = displaced_prince
+			if = {
+				limit = {
+					event_target:previousEmperor = {
+						could_be_parent_of = event_target:displaced_prince
+					}
+				}
+				set_father = event_target:previousEmperor
+			}
+			else_if = {
+				limit = {
+					event_target:previousEmperor = {
+						father_even_if_dead = {
+							could_be_parent_of = event_target:displaced_prince
+						}
+					}
+				}
+				event_target:previousEmperor = {
+					father_even_if_dead = {
+						event_target:displaced_prince = {
+							set_father = PREV
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					event_target:previousEmperor = {
+						any_dynasty_member_even_if_dead  = {
+							has_landed_title = e_tenno
+							is_female = no
+							could_be_parent_of = event_target:displaced_prince
+						}
+					}
+				}
+				event_target:previousEmperor = {
+					random_dynasty_member_even_if_dead = {
+						limit = {
+							has_landed_title = e_tenno
+							is_female = no
+							could_be_parent_of = event_target:displaced_prince
+						}
+						event_target:displaced_prince = {
+							set_father = PREV
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					event_target:previousEmperor = {
+						any_dynasty_member_even_if_dead = {
+							is_female = no
+							could_be_parent_of = event_target:displaced_prince
+						}
+					}
+				}
+				event_target:previousEmperor = {
+					random_dynasty_member_even_if_dead = {
+						limit = {
+							is_female = no
+							could_be_parent_of = event_target:displaced_prince
+						}
+						event_target:displaced_prince = {
+							set_father = PREV
+						}
+					}
+				}
+			}
+			event_target:previousEmperor = {
+				abdicate_to = event_target:displaced_prince
+			}
+		}
+	}
+}
+
+#Emperor's nickname remove event
+character_event = {
+	id = EMPEROR.3
+	desc = "EVTDESCEMPEROR.3"
+
+	#is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		any_demesne_title = { title = e_japan }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		clr_character_flag = court_post
+		clr_character_flag = local_post
+		remove_nickname = yes
+		change_imperial_court_opinion_modifier_effect = yes
+		remove_imperial_court_rank_effect = yes
+	}
+}
+
+###############################
+# Leave a Imperial Family Events
+###############################
+#Notice from Emperor to Target
+letter_event = {
+	id = EMPEROR.10
+	desc = "EVTDESCEMPEROR.10"
+	
+	is_triggered_only = yes
+
+	option = { #I accept it.
+		name = "EVTOPTAEMPEROR.10"
+	}
+}
+
+#Notice from Target to Emperor
+letter_event = {
+	id = EMPEROR.11
+	desc = "EVTDESCEMPEROR.11"
+	
+	is_triggered_only = yes
+
+	option = { #I see it.
+		name = "EVTOPTAEMPEROR.11"
+	}
+}
