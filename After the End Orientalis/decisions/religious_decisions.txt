@@ -271,4 +271,109 @@ decisions = {
 			}
 		}
 	}
+	hold_vesak = {
+		only_playable = yes
+		ai_check_interval = 4
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+				is_nomadic = yes
+				is_republic = yes
+			}
+			prisoner = no
+			religion_group = buddhist_group
+			NOT = { trait = incapable }
+			NOT = {
+				has_character_modifier = holding_vessak
+			}
+			NOT = {has_character_flag = recent_minor_decision}
+			NOT = { has_character_flag = do_not_disturb }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			wealth = 25
+			month >= 2#mar
+			month <= 4#may
+			prestige = 50
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			add_character_modifier = {
+				name = celebrating_vesak
+				duration = 365
+			}
+			hidden_tooltip = { 
+				narrative_event = { id = budevents.100 }
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 150
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { diplomacy = 10 }
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}	
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}			
+		}
+	}
 }

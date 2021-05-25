@@ -60,3 +60,25 @@ legendary = {
 	customizer = no
 	random = no
 }
+pious = {					
+	personality = yes
+	opposites = {
+		zealous
+		cynical
+	}
+
+	learning = 2
+	intrigue = -1
+	
+	church_opinion = 5
+
+	ai_honor = 5
+	ai_greed = -10
+	ai_ambition = -10
+	
+	male_compliment = COMPL_SCHOLAR
+	female_compliment = COMPL_SCHOLAR
+	male_insult_adj = INSULT_NAIVE
+	female_insult_adj = INSULT_NAIVE
+
+}

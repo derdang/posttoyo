@@ -65,13 +65,7 @@ narrative_event = {
 	}
 	option = {
 		trigger = {
-			OR = {
-				religion = gelugpa
-				religion = rime
-				religion = ligmincha
-				religion = ngocholugspa
-				religion = dorje_shugden
-			}
+			is_vajrayana = yes
 		}
 		name = EVTOPTD_budevent1
 		piety = 25
@@ -484,16 +478,605 @@ narrative_event = {
 	}
 	option = {
 		trigger = {
-			OR = {
-				religion = gelugpa
-				religion = rime
-				religion = ligmincha
-				religion = ngocholugspa
-				religion = dorje_shugden
-			}
+			is_vajrayana = yes
 		}
 		name = EVTOPTD_budevent6
 		piety = 25
 		remove_trait = in_hiding
+	}
+}
+
+#Vessak events 100 - 120
+
+narrative_event = {
+	id = budevents.100
+	title = budevent100_title
+	is_triggered_only = yes
+	picture = GFX_evt_buddha_teaching
+	desc = budevent100_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#large event
+		trigger = {
+			AND = {
+				is_theravada = yes
+				NOT = {religion = senthang}
+			}
+		}
+		name = EVTOPTA_budevent100
+		add_character_modifier = {name = building_stupa months=6}
+		scaled_wealth = -3
+		prestige = 50
+		narrative_event = { id = budevents.101 days = 2 }
+	}
+	option = {#medium event
+		name = EVTOPTB_budevent100
+		add_character_modifier = {name = glad_bhikku months=6}
+		scaled_wealth = -1.5
+		prestige = 20
+		narrative_event = { id = budevents.101 days = 2 }
+	}
+	option = {#small event
+		name = EVTOPTC_budevent100
+		prestige = -10
+		narrative_event = { id = budevents.101 days = 2 }
+	}
+}
+
+narrative_event = {#do you want to fast
+	id = budevents.101
+	title = budevent101_title
+	desc = budevent101_desc
+	picture = GFX_evt_buddha_teaching
+	is_triggered_only = yes
+	
+	trigger = {religion_group = buddhist_group}
+	
+	immediate = {
+		random_list = {
+			30 = { set_character_flag = experience_hardship }
+			70 = {}
+		}
+	}
+	
+	option = {#yes
+		trigger = {
+			NOT = {trait = vegetarian}
+		}
+		name = EVTOPTA_budevent101
+		custom_tooltip = {
+			text = fast_begins_custom_text
+		}
+		character_event = {id = budevents.102 days=2}
+		add_trait = vegetarian
+		piety = 50
+		
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.2
+				OR = {
+					is_ill = yes
+					num_of_symptoms > 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = gluttonous 
+			}
+			modifier = {
+				factor = 0.5
+				trait = cynical
+			}
+		}
+	}
+	
+	option = {#yes
+		trigger = {
+			trait = vegetarian
+		}
+		name = EVTOPTB_budevent101
+		custom_tooltip = {
+			text = fast_begins_custom_text
+		}
+		character_event = {id = budevents.102 days=2}
+		piety = 50
+		
+		
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0.2
+				OR = {
+					is_ill = yes
+					num_of_symptoms > 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = gluttonous 
+			}
+			modifier = {
+				factor = 0.5
+				trait = cynical
+			}
+		}
+	}
+	
+	option = {#no
+		name = EVTOPTC_budevent101
+		piety = -10
+		
+		character_event = {id = budevents.103 days = 8}
+		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = temperate 
+			}
+			modifier = {
+				factor = 0.1
+				trait = zealous
+			}
+		}
+	}
+}
+
+character_event = {#experience hardships, option to abandon
+	id = budevents.102
+	is_triggered_only = yes
+	picture = GFX_evt_buddha_teaching
+	desc = budevent102_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#abandon the fast
+		name = EVTOPTA_budevent102
+		add_character_modifier = {name = vessak_fast_failed years=3}
+		
+		character_event = { id = budevents.103 days = 4}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.2
+				OR = {
+					is_ill = yes
+					num_of_symptoms > 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				age = 50
+			}
+			modifier = {
+				factor = 0.7
+				trait = craven
+			}
+			modifier = {
+				factor = 0.5
+				trait = gluttonous 
+			}
+			modifier = {
+				factor = 0.5
+				trait = cynical
+			}
+		}
+	}
+	option = {#power through
+		name = EVTOPTB_budevent102
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "Reapers"
+				}
+			}
+			add_trait = ill
+		}
+		else = {
+			add_symptom_effect = yes
+		}
+		character_event = { id = budevents.103 days = 4}
+		custom_tooltip  = {
+			text = fast_sicknesss
+			random = {
+				chance = 10
+				mult_modifier = {
+					factor = 1.5
+					is_ill = yes
+				}
+				mult_modifier = {
+					factor = 1.15
+					health < 6
+				}
+				mult_modifier = {
+					factor = 1.15
+					health < 5
+				}
+				mult_modifier = {
+					factor = 1.15
+					health < 4
+				}
+				mult_modifier = {
+					factor = 1.15
+					health < 3
+				}
+				mult_modifier = {
+					factor = 1.15
+					health < 2
+				}
+				mult_modifier = {
+					factor = 1.15
+					health < 1
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				trait = temperate 
+			}
+			modifier = {
+				factor = 0.1
+				trait = zealous
+			}
+		}
+	}
+}
+
+character_event = {#the fast ends - you successfully did it!
+	id = budevents.103
+	is_triggered_only = yes
+	picture = GFX_evt_buddha_teaching
+	desc = budevent103_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#wooooo!
+		name = EVTOPTA_buddhist103
+		piety = 100
+		prestige = 50
+		narrative_event = { id = budevents.107 days = 4}
+	}
+}
+
+narrative_event = {#Vesak Day Starts!!!
+	id = budevents.107
+	is_triggered_only = yes
+	title = budevent107_title
+	picture = GFX_evt_buddhist_contemplation
+	desc = budevent107_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Response
+		name = EVTOPT_minor_reverence_buddhist
+		character_event = {id = budevents.104}
+	}
+}
+
+character_event = {#setting up the parade
+	id = budevents.104
+	is_triggered_only = yes
+	title = budevent104_title
+	picture = GFX_evt_buddha_parade
+	desc = {
+		trigger = {
+			is_theravada = yes
+		}
+		text = T_PREPARATIONS
+	}
+	desc = {
+		trigger = {
+			is_mahayana_chinese = yes
+		}
+		text = M_PREPARATIONS
+	}
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Large Parade
+		name = EVTOPTA_buddhist104
+		scaled_wealth = -1
+		narrative_event = {id = budevents.106 days = 4}
+	}
+	option = {#modest Parade
+		name = EVTOPTB_buddhist104
+		scaled_wealth = -0.5
+		narrative_event = {id = budevents.105 days = 4}
+	}
+}
+
+narrative_event = {#modest parade
+	id = budevents.105
+	title = budevent105_title
+	is_triggered_only = yes
+	picture = GFX_evt_buddha_parade
+	desc = {
+		trigger = {
+			is_theravada = yes
+		}
+		text = T_MODEST_PARADE
+	}
+	desc = {
+		trigger = {
+			is_mahayana_chinese = yes
+		}
+		text = M_MODEST_PARADE
+	}
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Response
+		name = EVTOPT_praise_buddha
+		narrative_event = {id = budevents.108 days=2}
+		prestige = 20
+	}
+}
+
+narrative_event = {#large parade
+	id = budevents.106
+	title = budevent105_title
+	is_triggered_only = yes
+	picture = GFX_evt_buddha_parade
+	desc = {
+		trigger = {
+			is_theravada = yes
+		}
+		text = T_LARGE_PARADE
+	}
+	desc = {
+		trigger = {
+			is_mahayana_chinese = yes
+		}
+		text = M_LARGE_PARADE
+	}
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Response
+		name = EVTOPT_praise_buddha
+		narrative_event = {id = budevents.108 days=2}
+		prestige = 50
+	}
+}
+
+narrative_event = {#Listen to a good Story?
+	id = budevents.108
+	is_triggered_only = yes
+	title = budevent108_title
+	picture = GFX_evt_buddha_teaching
+	desc = budevent108_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	immediate = {
+		random_list = {
+			33 = {set_character_flag = silanisama}
+			33 = {set_character_flag = vessantara}
+			33 = {set_character_flag = vidurapandita}
+		}
+	}
+	
+	option = {#Listen in
+		trigger = {
+			has_character_flag = silanisama
+		}
+		name = EVTOPTA_budevent108
+		narrative_event = {id = budevents.109 days = 2}
+	}
+	option = {#Listen in
+		trigger = {
+			has_character_flag = vessantara
+		}
+		name = EVTOPTA_budevent108
+		narrative_event = {id = budevents.110 days = 2}
+	}
+	option = {#Listen in
+		trigger = {
+			has_character_flag = vidurapandita
+		}
+		name = EVTOPTA_budevent108
+		narrative_event = {id = budevents.111 days = 2}
+	}
+	option = {#Do not Listen in
+		name = EVTOPTB_budevent108
+		random_list = {
+			90 = 
+			10 = { add_trait = cynical }
+		}
+		narrative_event = {id = budevents.112 days = 2}
+	}
+}
+
+narrative_event = {#Silanisama Jataka
+	id = budevents.109
+	is_triggered_only = yes
+	title = budevent109_title
+	picture = GFX_evt_buddha_teaching
+	desc = budevent109_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Response
+		name = continue
+		random_list = {
+			50 = {}
+			50 = { add_trait = gregarious }
+		}
+		narrative_event = {id = budevents.113 days = 1}
+	}
+}
+
+narrative_event = {#Vessantara Jataka
+	id = budevents.110
+	is_triggered_only = yes
+	title = budevent110_title
+	picture = GFX_evt_buddha_teaching
+	desc = budevent110_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Response
+		name = continue
+		random_list = {
+			50 = {}
+			50 = { add_trait = charitable }
+		}
+		narrative_event = {id = budevents.114 days = 1}
+	}
+}
+
+narrative_event = {#Vidurapandita Jataka
+	id = budevents.111
+	is_triggered_only = yes
+	title = budevent111_title
+	picture = GFX_evt_buddha_teaching
+	desc = budevent111_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Response
+		name = continue
+		random_list = {
+			50 = {}
+			50 = { add_trait = pious }
+		}
+		narrative_event = {id = budevents.115 days = 1}
+	}
+}
+
+#narrative_event = {#End of Vessak
+#	id = budevents.112
+#	is_triggered_only = yes
+#	title = budevent112_title
+#	picture = GFX_evt_buddhist_contemplation
+#	desc = {
+#		trigger = {
+#			trait = vegetarian
+#		}
+#		text = V_LANTERN_SHOW
+#	}
+#	desc = {
+#		trigger = {
+#			NOT = {trait = vegetarian}
+#		}
+#		text = LANTERN_SHOW
+#	}
+#	
+#	trigger = {has_character_flag = holding_vessak}
+#	
+#	option = {#Vegetarian Response (DO NOT CONTINUE)
+#		trigger = {trait = vegetarian}
+#		name = EVTOPTB_budevent112
+#		piety = 20
+#		remove_trait = vegetarian
+#		clr_character_flag = do_not_disturb
+#		remove_character_modifier = { name = celebrating_vesak }
+#	}
+#	option = {#Vegetarian Response (CONTINUE)
+#		trigger = {trait = vegetarian}
+#		name = EVTOPTA_budevent112
+#		piety = 20
+#		clr_character_flag = do_not_disturb
+#		remove_character_modifier = { name = celebrating_vesak }
+#	}
+#	option = {#Non-Vegetarian Response
+#		trigger = {NOT = {trait = vegetarian}}
+#		name = EVTOPTC_budevent112
+#		piety = 20
+#		clr_character_flag = do_not_disturb
+#		remove_character_modifier = { name = celebrating_vesak }
+#	}
+#}
+
+#The Text was too Long so the Part two of the text is dumped here
+
+narrative_event = {#Silanisama Jataka
+	id = budevents.113
+	is_triggered_only = yes
+	title = budevent109_title
+	picture = GFX_evt_buddha_teaching
+	desc = budevent113_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Response
+		name = EVTOPT_wise_words_buddhist
+		random_list = {
+			50 = {}
+			50 = { add_trait = gregarious }
+		}
+		narrative_event = {id = budevents.112 days = 2}
+	}
+}
+
+narrative_event = {#Vessantara Jataka
+	id = budevents.114
+	is_triggered_only = yes
+	title = budevent110_title
+	picture = GFX_evt_buddha_teaching
+	desc = budevent110_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Response
+		name = EVTOPT_wise_words_buddhist
+		random_list = {
+			50 = {}
+			50 = { add_trait = charitable }
+		}
+		narrative_event = {id = budevents.112 days = 2}
+	}
+}
+
+narrative_event = {#Vidurapandita Jataka
+	id = budevents.115
+	is_triggered_only = yes
+	title = budevent111_title
+	picture = GFX_evt_buddha_teaching
+	desc = budevent115_desc
+	
+	trigger = {religion_group = buddhist_group}
+	
+	option = {#Response
+		name = EVTOPT_wise_words_buddhist
+		random_list = {
+			50 = {}
+			50 = { add_trait = pious }
+		}
+		narrative_event = {id = budevents.112 days = 2}
+	}
+}
+
+#Vessak Maintenance Events
+
+# War interrupts Vessak
+character_event = {
+	id = budevents.120
+	desc = budevent120_desc
+	trigger = {
+		AND = {
+			has_character_modifier = celebrating_vesak
+			war = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = OK
+		wealth = 50
+		piety = -50
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		remove_character_modifier = { name = celebrating_vesak }
 	}
 }

@@ -167,3 +167,21 @@ senthang_middle_path = { #Seek common virtue and values in all religion. i.e. Ba
 	customizer = no
 	random = no
 }
+vegetarian = {
+	opposites = {
+		hunter
+	}
+	potential = {
+		OR = {
+			religion_group = indian_group
+			religion_group = buddhist_group
+		}
+	}
+	same_opinion = 5
+	
+	health = 0.5
+	
+	random = no
+	religious = yes
+	ruler_designer_cost = 5
+}

@@ -211,6 +211,14 @@ spriteType = {
 		name = "GFX_evt_buddhist_thai_old_temple"
 		texturefile = "gfx\\event_pictures\\buddhist_thai_old_temple.dds"
 	}
+	spriteType = {
+		name = "GFX_evt_buddha_parade"
+		texturefile = "gfx/event_pictures/buddha_parade.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_buddhist_contemplation"
+		texturefile = "gfx/event_pictures/buddhist_contemplation.dds"
+	}
 
 #Mandala Events
 	spriteType = {
@@ -286,6 +294,22 @@ spriteType = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
+#General Traits
+	spriteType = {
+		name = "GFX_trait_vegetarian"
+		texturefile = "gfx/traits/vegetarian.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pious"
+		texturefile = "gfx/traits/pious.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
 #Decisions Icons
 	spriteType = {
 		name = "GFX_cd_pilgrimage"
@@ -322,6 +346,10 @@ spriteType = {
 	spriteType = {
 		name = "GFX_reciting_sutras"
 		texturefile = "gfx\\interface\\decision_reciting_sutras.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_vesak"
+		texturefile = "gfx\\interface\\hold_vesak.dds"
 	}
 	spriteType = {
 		name = "GFX_claim_lan_xang"

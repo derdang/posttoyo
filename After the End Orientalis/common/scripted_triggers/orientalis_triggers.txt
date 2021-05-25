@@ -1,0 +1,28 @@
+is_vajrayana = {
+	OR = {
+		religion = gelugpa
+		religion = ngocholugspa
+		religion = rime
+		religion = ligmincha
+		religion = dorje_shugden
+	}
+}
+is_theravada = {
+	OR = {
+		religion = dharmayuttika
+		religion = parimatira
+		religion = senthang
+	}
+}
+is_mahayana_chinese = {
+	OR = {
+		religion = mahayana
+		religion = hoa_hao
+	}
+}
+is_mahayana_japanese = {
+	OR = {
+		religion = soka_gakkai
+		religion = shingon_shu
+	}
+}
