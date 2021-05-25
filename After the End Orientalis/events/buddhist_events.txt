@@ -1028,7 +1028,7 @@ narrative_event = {#End of Vessak
 		text = LANTERN_SHOW
 	}
 	
-	trigger = {has_character_flag = holding_vessak}
+	trigger = {religion_group = buddhist_group}
 	
 	option = {#Vegetarian Response (DO NOT CONTINUE)
 		trigger = {trait = vegetarian}
