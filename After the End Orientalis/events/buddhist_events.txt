@@ -951,50 +951,6 @@ narrative_event = {#Vidurapandita Jataka
 	}
 }
 
-#narrative_event = {#End of Vessak
-#	id = budevents.112
-#	is_triggered_only = yes
-#	title = budevent112_title
-#	picture = GFX_evt_buddhist_contemplation
-#	desc = {
-#		trigger = {
-#			trait = vegetarian
-#		}
-#		text = V_LANTERN_SHOW
-#	}
-#	desc = {
-#		trigger = {
-#			NOT = {trait = vegetarian}
-#		}
-#		text = LANTERN_SHOW
-#	}
-#	
-#	trigger = {has_character_flag = holding_vessak}
-#	
-#	option = {#Vegetarian Response (DO NOT CONTINUE)
-#		trigger = {trait = vegetarian}
-#		name = EVTOPTB_budevent112
-#		piety = 20
-#		remove_trait = vegetarian
-#		clr_character_flag = do_not_disturb
-#		remove_character_modifier = { name = celebrating_vesak }
-#	}
-#	option = {#Vegetarian Response (CONTINUE)
-#		trigger = {trait = vegetarian}
-#		name = EVTOPTA_budevent112
-#		piety = 20
-#		clr_character_flag = do_not_disturb
-#		remove_character_modifier = { name = celebrating_vesak }
-#	}
-#	option = {#Non-Vegetarian Response
-#		trigger = {NOT = {trait = vegetarian}}
-#		name = EVTOPTC_budevent112
-#		piety = 20
-#		clr_character_flag = do_not_disturb
-#		remove_character_modifier = { name = celebrating_vesak }
-#	}
-#}
-
 #The Text was too Long so the Part two of the text is dumped here
 
 narrative_event = {#Silanisama Jataka
@@ -1051,6 +1007,50 @@ narrative_event = {#Vidurapandita Jataka
 			50 = { add_trait = pious }
 		}
 		narrative_event = {id = budevents.112 days = 2}
+	}
+}
+
+narrative_event = {#End of Vessak
+	id = budevents.112
+	is_triggered_only = yes
+	title = budevent112_title
+	picture = GFX_evt_buddhist_contemplation
+	desc = {
+		trigger = {
+			trait = vegetarian
+		}
+		text = V_LANTERN_SHOW
+	}
+	desc = {
+		trigger = {
+			NOT = {trait = vegetarian}
+		}
+		text = LANTERN_SHOW
+	}
+	
+	trigger = {has_character_flag = holding_vessak}
+	
+	option = {#Vegetarian Response (DO NOT CONTINUE)
+		trigger = {trait = vegetarian}
+		name = EVTOPTB_budevent112
+		piety = 20
+		remove_trait = vegetarian
+		clr_character_flag = do_not_disturb
+		remove_character_modifier = { name = celebrating_vesak }
+	}
+	option = {#Vegetarian Response (CONTINUE)
+		trigger = {trait = vegetarian}
+		name = EVTOPTA_budevent112
+		piety = 20
+		clr_character_flag = do_not_disturb
+		remove_character_modifier = { name = celebrating_vesak }
+	}
+	option = {#Non-Vegetarian Response
+		trigger = {NOT = {trait = vegetarian}}
+		name = EVTOPTC_budevent112
+		piety = 20
+		clr_character_flag = do_not_disturb
+		remove_character_modifier = { name = celebrating_vesak }
 	}
 }
 
