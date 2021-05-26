@@ -1036,21 +1036,21 @@ narrative_event = {#End of Vessak
 		piety = 20
 		remove_trait = vegetarian
 		clr_character_flag = do_not_disturb
-		remove_character_modifier = { name = celebrating_vesak }
+		remove_character_modifier = celebrating_vesak
 	}
 	option = {#Vegetarian Response (CONTINUE)
 		trigger = {trait = vegetarian}
 		name = EVTOPTA_budevent112
 		piety = 20
 		clr_character_flag = do_not_disturb
-		remove_character_modifier = { name = celebrating_vesak }
+		remove_character_modifier = celebrating_vesak
 	}
 	option = {#Non-Vegetarian Response
 		trigger = {NOT = {trait = vegetarian}}
 		name = EVTOPTC_budevent112
 		piety = 20
 		clr_character_flag = do_not_disturb
-		remove_character_modifier = { name = celebrating_vesak }
+		remove_character_modifier = celebrating_vesak
 	}
 }
 
