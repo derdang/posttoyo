@@ -579,6 +579,97 @@
 	trait=just
 	2580.1.1={birth=yes}
 }
+2876003={
+	name="Tâm" #Courtier in Dak Lak (Reference to Trinh Công Son)
+	culture=annamese
+	dynasty=2876006
+	religion=mahayana
+	martial=1
+	diplomacy=5
+	stewardship=2
+	intrigue=1
+	learning=5
+	trait=grey_eminence
+	trait=musician
+	trait=kind
+	trait=humble
+	trait=trusting
+	trait=just
+	2580.1.1={birth=yes}
+	2600.1.1={
+		employer=1178000
+	}
+	2602.5.1={add_spouse=2876004}
+}
+2876004={
+	name="Ly" #Courtier in Dak Lak (Reference to Trinh Công Son)
+	culture=annamese
+	dynasty=2876007
+	religion=mahayana
+	female=yes
+	martial=1
+	diplomacy=6
+	stewardship=2
+	intrigue=2
+	learning=3
+	trait=grey_eminence
+	trait=fair
+	trait=musician
+	trait=kind
+	trait=humble
+	trait=shy
+	trait=just
+	2580.1.1={birth=yes}
+	2600.1.1={
+		employer=1178000
+	}
+}
+2876004={
+	name="Nhung" #Courtier in Dak Lak (Reference to Trinh Công Son)
+	culture=annamese
+	dynasty=2876008
+	religion=mahayana
+	female=yes
+	martial=1
+	diplomacy=6
+	stewardship=2
+	intrigue=2
+	learning=3
+	trait=grey_eminence
+	trait=fair
+	trait=musician
+	trait=kind
+	trait=groomed
+	trait=ambitious
+	trait=just
+	2580.1.1={birth=yes}
+	2600.1.1={
+		employer=1178000
+	}
+	2602.5.1={effect={add_friend=2876003}}
+}
+2876005={
+	name="Ly" #Courtier in Dak Lak (Reference to Trinh Công Son)
+	culture=annamese
+	dynasty=2876006
+	religion=mahayana
+	martial=1
+	diplomacy=6
+	stewardship=2
+	intrigue=2
+	learning=3
+	trait=grey_eminence
+	trait=fair
+	trait=musician
+	trait=kind
+	trait=humble
+	trait=shy
+	trait=just
+	2580.1.1={birth=yes}
+	2600.1.1={
+		employer=1178000
+	}
+}
 #Vietnamese Archprimate and Succeeding Bishops of Hue
 2876004={
 	name="Van Dinh" #Primate Antoine
@@ -907,6 +998,7 @@
 	trait=defensive_leader
 	give_nickname=nick_the_dragon
 	2560.1.1={birth=yes}
+	2580.5.1={effect={add_friend=2877007}}
 }
 2877013={
 	name="Loc" #Surveyor of the Frontier
@@ -2150,6 +2242,315 @@
 # 					 The Dynasty had two cadets the Tay Son House and the Hue House for which the latter became the progenitures for the Nguyen Dynasty of Nam Viet
 #					 or Viet Nam after 1830 (2875018)
 #
-# The Title history is gonna get so fucked... but thats why this is messy! - Derrick
+# The Title history would have to fucky... so the lineage of the Nguyens will be highlighted and other dynasties glossed over for the time being... - Derrick
 
-#######Nguyen Dynasty (1802-1945) the Empire of Vietnam#######
+#######The Historical Nguyen Dynasty (1802-1945) the Empire of Vietnam#######
+2875070={ #Court Confucian to Emperor Le Loi
+	name="Uc Trai"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	trait=legendary
+	occluded = yes
+	1380.1.1={birth=yes}
+	1442.1.1={death=yes}
+}
+2875071={ #Father of Nguyen Kim (First Lord of Cochinchina)
+	name="Du"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875070
+	trait=legendary
+	occluded = yes
+	1420.1.1={birth=yes}
+	1480.1.1={death=yes}
+}
+2875072={ #Nguyen Kim (First Lord of Cochinchina)
+	name="Kim"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875071
+	trait=legendary
+	occluded = yes
+	1468.1.1={birth=yes}
+	1545.1.1={death=yes}
+}
+2875073={ #Nguyen Hoàng
+	name="Hoàng"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875072
+	trait=legendary
+	occluded = yes
+	1525.8.28={birth=yes}
+	1613.7.20={death=yes}
+}
+2875074={ #Nguyen Phúc Nguyên
+	name="Phúc Nguyên"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875073
+	trait=legendary
+	occluded = yes
+	1563.8.16={birth=yes}
+	1635.11.19={death=yes}
+}
+2875075={ #Nguyen Phúc Lan
+	name="Phúc Lan"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875074
+	trait=legendary
+	occluded = yes
+	1601.8.13={birth=yes}
+	1648.3.19={death=yes}
+}
+2875076={ #Nguyen Phúc Tan
+	name="Phúc Tan"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875075
+	trait=legendary
+	occluded = yes
+	1620.7.18={birth=yes}
+	1687.4.30={death=yes}
+}
+2875077={ #Nguyen Phúc Tran
+	name="Phúc Tran"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875076
+	trait=legendary
+	occluded = yes
+	1650.1.22={birth=yes}
+	1691.2.7={death=yes}
+}
+2875078={ #Nguyen Phúc Chu
+	name="Phúc Chu"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875077
+	trait=legendary
+	occluded = yes
+	1675.6.11={birth=yes}
+	1725.6.2={death=yes}
+}
+2875079={ #Nguyen Phúc Trú
+	name="Phúc Trú"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875078
+	trait=legendary
+	occluded = yes
+	1697.1.14={birth=yes}
+	1738.6.7={death=yes}
+}
+2875080={ #Nguyen Phúc Khoát
+	name="Phúc Khoát"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875079
+	trait=legendary
+	occluded = yes
+	1714.9.26={birth=yes}
+	1765.7.7={death=yes}
+}
+2875081={ #Nguyen Phúc Duong
+	name="Phúc Duong"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875080
+	trait=legendary
+	occluded = yes
+	1740.1.1={birth=yes}
+	1777.1.1={death={death_reason=death_murder_unknown}}#Execution by the Tay Son Rebellion
+}
+2875082={ #Nguyen Phúc Ánh (Emperor Gia Long - First Emperor of the Nguyen Dynasty)
+	name="Phúc Ánh"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875081
+	trait=legendary
+	occluded = yes
+	1762.2.8={birth=yes}
+	1802.7.22={name="Gia Long"}
+	1820.2.3={death=yes}
+}
+2875083={ #Nguyen Phúc Dam (Emperor Minh Mang - Isolationist and persecutor of Christians)
+	name="Phúc Dam"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875082
+	trait=legendary
+	occluded = yes
+	1791.5.25={birth=yes}
+	1820.2.14={name="Minh Mang"}
+	1841.1.20={death=yes}
+}
+2875084={ #Nguyen Phúc Miên Tông (Emperor Thieu Tri - Isolationist and persecutor of Christians)
+	name="Phúc Miên Tông"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875083
+	trait=legendary
+	occluded = yes
+	1807.6.16={birth=yes}
+	1841.2.11={name="Thieu Tri"}
+	1847.10.4={death=yes}
+}
+2875085={ #Nguyen Phúc Thì (Emperor Tu Ðuc - Isolationist and persecutor of Christians)
+	name="Phúc Thì"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875084
+	trait=legendary
+	occluded = yes
+	1829.9.22={birth=yes}
+	1847.10.4={name="Tu Ðuc"}
+	1883.7.19={death=yes}
+}
+2875086={ #Nguyen Phúc Ung (Emperor Duc Ðuc - Isolationist and persecutor of Christians)
+	name="Phúc Ung"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875087
+	trait=legendary
+	occluded = yes
+	1852.2.23={birth=yes}
+	1883.7.20={name="Duc Ðuc"}
+	1883.10.6={death=yes}
+}
+2875087={ #Nguyen Phúc Hong Y
+	name="Phúc Hong Y"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875084
+	trait=legendary
+	occluded = yes
+	1833.9.11={birth=yes}
+	1877.2.23={death=yes}
+}
+2875088={ #Nguyen Phúc Hong Dat (Emperor Hiep Hòa)
+	name="Phúc Hong Dat"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875084
+	trait=legendary
+	occluded = yes
+	1847.11.1={birth=yes}
+	1883.6.30={name="Hiep Hòa"}
+	1883.11.29={death=yes}
+}
+2875089={ #Nguyen Phúc Ung Dang (Emperor Kien Phúc)
+	name="Phúc Ung Dang"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875090
+	trait=legendary
+	occluded = yes
+	1869.2.12={birth=yes}
+	1883.6.30={name="Kien Phúc"}
+	1884.7.31={death=yes}
+}
+2875090={ #Nguyen Phúc Hong Cai
+	name="Phúc Hong Cai"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875084
+	trait=legendary
+	occluded = yes
+	1845.12.13={birth=yes}
+	1876.5.15={death=yes}
+}
+2875091={ #Nguyen Phúc Minh (Emperor Hàm Nghi)
+	name="Phúc Minh"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875090
+	trait=legendary
+	occluded = yes
+	1872.8.3={birth=yes}
+	1884.8.2={name="Hàm Nghi"}
+	1943.1.4={death={death_reason=death_battle}}#Exiled and died in Algeria
+}
+2875092={ #Nguyen Phúc Ung Ky (Emperor Ðong Khánh- French successfully seige the last imperial stronghold and Vietnam becomes a French Protectorate)
+	name="Phúc Ung Ky"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875090
+	trait=legendary
+	occluded = yes
+	1864.2.19={birth=yes}
+	1883.6.30={name="Ðong Khánh"}
+	1889.1.28={death=yes}
+}
+2875093={ #Nguyen Phúc Buu Lân (Emperor Thành Thái)
+	name="Phúc Buu Lân"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875086
+	trait=legendary
+	occluded = yes
+	1879.3.14={birth=yes}
+	1889.2.2={name="Thành Thái"}
+	1954.3.20={death=yes}
+}
+2875094={ #Nguyen Phúc Vinh San (Emperor Duy Tân)
+	name="Phúc Vinh San"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875093
+	trait=legendary
+	occluded = yes
+	1900.9.19={birth=yes}
+	1907.9.5={name="Duy Tân"}
+	1954.12.26={death=yes}
+}
+2875095={ #Nguyen Phúc Buu Ðao (Emperor Khai Ðinh)
+	name="Phúc Buu Ðao"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875092
+	trait=legendary
+	occluded = yes
+	1885.10.8={birth=yes}
+	1916.5.18={name="Khai Ðinh"}
+	1925.11.6={death=yes}
+}
+2875096={ #Nguyen Phúc Vinh Thuy (Emperor Bao Dai - Last Emperor of Vietnam)
+	name="Phúc Vinh Thuy"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=catholic
+	father=2875095
+	trait=legendary
+	occluded = yes
+	1913.10.22={birth=yes}
+	1926.1.8={name="Bao Dai"}
+	1997.7.30={death=yes}
+}
