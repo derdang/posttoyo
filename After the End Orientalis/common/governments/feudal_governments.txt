@@ -12,7 +12,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			ghazi_government
-			bureaucratic_muslim_government
+			diwan_government
 			theocratic_feudal_government
 			chinese_imperial_government
 			mandala_government
@@ -87,9 +87,9 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			feudal_government
-			bureaucratic_muslim_government
+			diwan_government
 			theocratic_feudal_government
-			mandala_government
+			bureaucratic_government
 		}
 		free_revoke_on_tiers = {
 			duke
@@ -97,14 +97,29 @@ feudal_governments = {
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
 		}
-		frame_suffix = "_iqta"
+		frame_suffix = "_ghazwa"
+		title_prefix = "ghazi_government_"
 		potential = {
 			religion_group = muslim
+			OR = {
+				lower_tier_than = KING
+				has_law = muslim_government_slider_0
+				has_law = muslim_government_slider_1
+				has_law = muslim_government_slider_2
+			}
+			NOT = { is_government_potential = romanipen_government }
+			NOT = { is_government_potential = malaysian_confederacy }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = military_governorate }
-			NOT = { is_government_potential = malaysian_confederacy }
 			is_patrician = no
+			NAND = {
+				controls_religion = yes
+				OR = {
+					religion = sunni
+					religion = shiite
+				}
+			}			
 		}
 		
 		color = { 0 204 0 }
@@ -126,8 +141,12 @@ feudal_governments = {
 
 		## Modifiers
 		court_size_modifier = 10
+		commanders = 2
+		min_vassal_tax = -0.5
+		min_vassal_levy = -0.5
+		
 	}
-	bureaucratic_muslim_government = {
+	diwan_government = {
 		preferred_holdings = { CASTLE }
 		allowed_holdings = { 
 			CASTLE
@@ -142,7 +161,7 @@ feudal_governments = {
 			feudal_government
 			ghazi_government
 			theocratic_feudal_government
-			mandala_government
+			bureaucratic_government
 		}
 		free_revoke_on_tiers = {
 			duke
@@ -150,24 +169,40 @@ feudal_governments = {
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
 		}
-		frame_suffix = "_iqta"
+		frame_suffix = "_diwan"
+		title_prefix = "diwan_government_"
 		potential = {
-			religion_group = muslim
+			OR = {
+				religion_group = muslim
+				OR = {
+					has_law = muslim_government_slider_2
+					has_law = muslim_government_slider_3
+					has_law = muslim_government_slider_4
+				}
+				top_liege = {
+					government = diwan_government
+					OR = {
+					tier = COUNT
+					tier = DUKE
+					tier = KING
+					tier = EMPEROR
+					}
+				}
+			}
+			
+			#has_law = succ_ghazi_elective
+			NOT = { is_government_potential = romanipen_government }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = military_governorate }
-			NOT = { is_government_potential = malaysian_confederacy }
-			is_patrician = no
-			OR = {
-				primary_title = {
-					title = e_ottoman_empire #list of imperial-tier realms allowed
-				}
-				top_liege = {
-					government = bureaucratic_muslim_government
-					higher_tier_than = DUKE
-					religion_group = muslim
+			NAND = {
+				controls_religion = yes
+				OR = {
+					religion = sunni
+					religion = shiite
 				}
 			}
+			is_patrician = no
 		}
 		
 		color = { 50 205 50 }
@@ -178,6 +213,7 @@ feudal_governments = {
 		allows_matrilineal_marriage = no
 		free_retract_vassalage = yes
 		marriage_ignore_religion = yes
+		
 
 		free_levies_in_offensive_war = no # Took away the hardcoded stuff for muslims where they could raise levies without pissing off vassals if in an offensive war.
 
@@ -189,6 +225,7 @@ feudal_governments = {
 		gets_religion_opinion_penalties = no
 		gives_religion_opinion_penalties = no
 		can_be_granted_kingdoms_and_empires_by_other_government = no
+		free_retract_vassalage = yes
 		
 		ignore_in_vassal_limit_calculation = {
 			tribal_government
@@ -197,13 +234,14 @@ feudal_governments = {
 
 		## Modifiers
 		court_size_modifier = 20
-		vassal_limit = +15
-		character_modifier = {
-			stewardship = 2
-			learning = 1
-		}
+		vassal_limit = 15
+		min_vassal_tax = -0.4
+		min_vassal_levy = -0.4
+		max_vassal_tax = 0.4
+		max_vassal_levy = 0.4
+		commanders = -2
+
 	}
-	
 	theocratic_feudal_government = {
 		preferred_holdings = { CASTLE TEMPLE }
 		allowed_holdings = { 
@@ -291,7 +329,7 @@ feudal_governments = {
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			feudal_government
 			ghazi_government
-			bureaucratic_muslim_government
+			diwan_government
 			theocratic_feudal_government
 		}
 		free_revoke_on_tiers = {
@@ -354,7 +392,7 @@ feudal_governments = {
 		accepts_liege_governments = {
 			feudal_government
 			ghazi_government
-			bureaucratic_muslim_government
+			diwan_government
 			theocracy_government
 			theocratic_feudal_government
 			chinese_imperial_government
@@ -505,7 +543,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			ghazi_government
-			bureaucratic_muslim_government
+			diwan_government
 			theocracy_government
 			feudal_government
 			chinese_imperial_government
@@ -594,7 +632,7 @@ feudal_governments = {
 		}
 		accepts_liege_governments_culture_and_religion = { # Gets no wrong penalities at all for Culture, Religion, or Government
 			ghazi_government
-			bureaucratic_muslim_government
+			diwan_government
 			theocratic_feudal_government
 			chinese_imperial_government
 			feudal_government
@@ -652,7 +690,7 @@ feudal_governments = {
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			feudal_government
 			ghazi_government
-			bureaucratic_muslim_government
+			diwan_government
 			theocratic_feudal_government
 		}
 		free_revoke_on_tiers = {

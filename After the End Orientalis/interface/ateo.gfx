@@ -98,6 +98,24 @@ spriteTypes = {
 # After the End Orientalis #
 ############################
 
+### Artifacts
+	spriteType = {
+		name = "GFX_quran_small"
+		texturefile = "gfx/interface/artifacts/inventory/quran_small.dds"
+	}
+	spriteType = {
+		name = "GFX_quran"
+		texturefile = "gfx/interface/artifacts/inventory/quran_med.dds"
+	}
+	spriteType = {
+		name = "GFX_prayermat_small"
+		texturefile = "gfx/interface/artifacts/inventory/prayer_mat_small.dds"
+	}
+	spriteType = {
+		name = "GFX_prayermat"
+		texturefile = "gfx/interface/artifacts/inventory/prayer_mat_normal.dds"
+	}
+
 ### Off-Map India Event Pictures
 
 spriteType = {
@@ -232,6 +250,12 @@ spriteType = {
 		texturefile = "gfx\\event_pictures\\monsoon_rains.dds"
 	}
 
+#Muslim Events
+	spriteType = {
+		name = "GFX_travel_muslim"
+		texturefile = "gfx/event_pictures/travel_muslim.dds"
+	}
+
 ### Orientalis Traits
 
 #Cao Dai Traits
@@ -309,6 +333,29 @@ spriteType = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+
+#Muslim Traits
+	spriteType = {
+		name = "GFX_trait_zair"
+		texturefile = "gfx/traits/ziyarat.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_on_ziyara"
+		texturefile = "gfx/traits/ziyarat.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sufi_zahid"
+		texturefile = "gfx/traits/zahid.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 #Decisions Icons
 	spriteType = {
@@ -354,5 +401,17 @@ spriteType = {
 	spriteType = {
 		name = "GFX_claim_lan_xang"
 		texturefile = "gfx\\interface\\decision_claim_lan_xang.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_ashura"
+		texturefile = "gfx\\interface\\decision_icon_celebrate_ashura.dds"
+	}
+	spriteType = {
+		name = "GFX_pilgrimage_to_muslim_shrines"
+		texturefile = "gfx/interface/decision_icon_pilgrimage_to_muslim_shrines.dds"
+	}
+	spriteType = {
+		name = "GFX_hajj_to_mecca"
+		texturefile = "gfx/interface/decision_icon_hajj_to_mecca.dds"
 	}
 }
