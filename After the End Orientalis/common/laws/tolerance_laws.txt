@@ -267,16 +267,15 @@ laws = {
 				value = 10			
 				holder_scope = { 
 					OR = {
-						religion = ruhi
-						religion = neuhumanist
-						religion = haskalah
+						government = sinic_bureaucracy_government
+						government = mandala_government
 					}
 					is_feudal = yes
 				}	
 			}
 			additive_modifier = { 
 				value = 10			
-				title = e_europa
+				title = e_malaysia
 			}
 		}
 		
@@ -336,9 +335,8 @@ laws = {
 				factor = 5
 				holder_scope = {
 					OR = {
-						religion = ruhi
-						religion = haskalah
-						religion = neuhumanist
+						government = sinic_bureaucracy_government
+						government = mandala_government
 					}
 				}
 			}
