@@ -58,6 +58,30 @@ character_event = {
 			}
 		}
 		modifier = {
+			factor = 1000
+			liege = {
+				has_law = religion_tolerance_0
+			}
+		}
+		modifier = {
+			factor = 3
+			liege = {
+				has_law = religion_tolerance_1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_law = religion_tolerance_3
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_law = religion_tolerance_4
+			}
+		}
+		modifier = {
 			factor = 0.6
 			has_religion_feature = religion_proselytizing
 		}
@@ -181,13 +205,13 @@ character_event = {
 				}
 			}
 			liege = {
-		    	any_owned_bloodline = {
-    				has_bloodline_flag = inquisitional_saintly_bloodline
-    				founder = {
-    					religion = ROOT
-    				}
-    			}
-    		}
+				any_owned_bloodline = {
+					has_bloodline_flag = inquisitional_saintly_bloodline
+					founder = {
+						religion = ROOT
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 0.4
@@ -202,9 +226,9 @@ character_event = {
 		modifier = {
 			factor = 0.6
 			religion = hindu
-	    	any_owned_bloodline = {
-    			has_bloodline_flag = bloodline_faster_hindu
-    		}
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_faster_hindu
+			}
 		}
 
 		# Effect of wonder upgrades
@@ -418,7 +442,30 @@ character_event = {
 	
 	mean_time_to_happen = {
 		months = 120
-	
+		modifier = {
+			factor = 1000
+			liege = {
+				has_law = religion_tolerance_0
+			}
+		}
+		modifier = {
+			factor = 3
+			liege = {
+				has_law = religion_tolerance_1
+			}
+		}
+		modifier = {
+			factor = 0.5
+			liege = {
+				has_law = religion_tolerance_3
+			}
+		}
+		modifier = {
+			factor = 0.25
+			liege = {
+				has_law = religion_tolerance_4
+			}
+		}
 		modifier = {
 			factor = 0.75
 			has_religion_feature = religion_proselytizing
@@ -1854,12 +1901,14 @@ character_event = {
 		has_secret_religion = no
 		OR = {
 			religion_group = christian
+			religion_group = muslim
 			religion_group = jewish_group
 		}
 		liege = {
 			is_heretic = no
 			OR = {
 				religion_group = christian
+				religion_group = muslim
 				religion_group = jewish_group
 			}
 		}
@@ -2419,7 +2468,7 @@ character_event = {
 		name = EVTOPTA20218
 		
 		piety = 25
-		hidden_tooltip  = {
+		hidden_tooltip = {
 			liege = { character_event = { id = 20219 } }
 		}
 	}

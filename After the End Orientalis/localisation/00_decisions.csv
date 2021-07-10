@@ -23,3 +23,14 @@ pilgrimage_to_muslim_shrines;Visit the Shrines;;;;;;;;;;;;;x
 pilgrimage_to_muslim_shrines_desc;Perhaps an excellent way to show devotion to my faith would be to visit one of its holy sites.;;;;;;;;;;;;;x
 hajj_to_mecca;Perform the Hajj;;;;;;;;;;;;;x
 hajj_to_mecca_desc;Perhaps an excellent time for you to conduct the Hajj to Mecca and perform the circuit around the Ka'bah.;;;;;;;;;;;;;x
+
+#Demand Religious Conversion
+demand_religious_conversion;Demand Religious Conversion;;;;;;;;;x
+demand_religious_conversion_short;Demand Religious Conversion;;;;;;;;;x
+demand_religious_conversion_desc;Demand that [Root.GetTitledFirstName] convert to [From.Religion.GetName];;;;;;;;;x
+EVTDESC_demand_conversion_1;Dear [Root.GetTitledFirstName],\nAs your liege, I request and require that you convert to the True Faith, [FromFrom.Religion.GetName].\n\n[FromFrom.GetBestName];;;;;;;;;x
+EVTOPTA_demand_conversion_1;I will submit to your will.;;;;;;;;;x
+EVTOPTB_demand_conversion_1;Ridiculous!;;;;;;;;;x
+EVTDESC_demand_conversion_2;Dear [Root.GetTitledName], \n While it brings me great pain that you demand this of me, I will convert to the [Root.Religion] faith as you request.;;;;;;;;;x
+EVTDESC_demand_conversion_3a;Dear [Root.GetTitledName], \n While you are my liege, My first and foremost duty is to serve [From.Religion.GetHighGodName]. You may rule over me in this world, but my faith is more important than whatever punishments you can give me here.;;;;;;;;;;;;;x
+EVTDESC_demand_conversion_3b;Dear [Root.GetTitledName], \n While I am loyal to you as my leige, I must also be loyal to my [From.Religion.GetName] subjects and to [From.Religion.GetHighGodName]. I will not turn from my faith or my people.;;;;;;;;;;;;;x

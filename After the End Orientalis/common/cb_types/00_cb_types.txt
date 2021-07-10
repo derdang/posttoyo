@@ -5828,10 +5828,17 @@ religious = {
 	
 	can_use_gui = {
 		ROOT = {
-			OR = {
-				NOT = { religion = buddhist }
-				piety = 250
+			NOR = {
+				religion_group = buddhist_group
+				religion = cao_dai
+				has_law = religion_tolerance_0
 			}
+			OR = {
+					NOT = { has_character_modifier = holy_war_cooldown }
+					has_game_rule = { name = holy_war_cooldown_rule value = off }
+			}
+			piety = 250
+
 		}
 	}
 	
@@ -5840,7 +5847,7 @@ religious = {
 			show_scope_change = no
 			if = {
 				limit = {
-					religion = buddhist
+					religion_group = buddhist_group
 				}
 				piety = -250
 			}
@@ -6168,31 +6175,8 @@ religious = {
 				}
 			}
 		}
-		if = { # Muslims fighting Non-Muslims preserve vassals
-			show_scope_change = no
-			limit = {
-				ROOT = {
-					religion_group = muslim
-				}
-				FROM = {
-					NOT = {
-						religion_group = muslim
-					}
-				}
-			}
-			custom_tooltip = {
-				text = religious_cb_succ_muslim_tip
-				hidden_tooltip = {
-					ROOT = {
-						vassalize_or_take_under_title = {
-							title = PREV
-							enemy = FROM
-							is_religious = yes
-							type = holy_war
-						}
-					}
-				}
-			}
+		if = { # Preserve Vassals if Tolerant
+			ROOT = { has_law = religion_tolerance_1 }
 		}
 
 		hidden_tooltip = {
@@ -11877,6 +11861,9 @@ pagan_holy_war = {
 		ROOT = {
 			piety = 100
 		}
+		NOT = {
+			has_law = religion_tolerance_0
+		}
 	}
 	
 	on_add = {
@@ -11907,6 +11894,7 @@ pagan_holy_war = {
 				religion = zun_pagan_reformed
 			}
 			NOT = { has_religion_feature = religion_peaceful }
+			NOT = { has_law = religion_tolerance_0 }
 			NOT = { same_realm = FROM }
 			NOT = { religion = FROM }
 			top_liege = {
@@ -14748,7 +14736,7 @@ buddhist_holy_war = {
 	
 	can_use = {
 		ROOT = {
-			religion = buddhist
+			religion_group = buddhist_group
 			NOT = { same_realm = FROM }
 			OR = {
 				NOT = { religion_group = FROM }
@@ -14839,7 +14827,7 @@ buddhist_holy_war = {
 
 	is_valid = {
 		ROOT = {
-			religion = buddhist
+			religion_group = buddhist_group
 			NOT = { same_realm = FROM }
 			OR = {
 				NOT = { religion_group = FROM }
