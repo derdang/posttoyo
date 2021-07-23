@@ -1015,6 +1015,72 @@ pagan_group = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
+	donyi_polo = { #East Indian Indigenous Religion
+		graphical_culture = pagangfx
+
+		icon = 62
+		heresy_icon = 63
+		
+		color = { 190 200 050 }
+
+		high_god_name = GOD_SEDI
+
+		god_names = {
+			GOD_DONYI GOD_POLO GOD_ABOTANI GOD_SONG_BURUI GOD_SONG_BWAI
+		}
+		evil_god_names = {
+			THE_DEVIL
+		}
+		
+		scripture_name = AROJ
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		reformed = adi_reformed
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		can_demand_religious_conversion = no
+		female_temple_holders = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	donyi_polo_reformed = { #East Indian Indigenous Religion
+		graphical_culture = pagangfx
+
+		icon = 64
+		heresy_icon = 63
+		
+		color = { 190 200 050 }
+
+		high_god_name = GOD_SEDI
+
+		god_names = {
+			GOD_DONYI GOD_POLO GOD_ABOTANI GOD_SONG_BURUI GOD_SONG_BWAI
+		}
+		evil_god_names = {
+			THE_DEVIL
+		}
+		
+		scripture_name = AROJ
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
 }
 
 
@@ -1196,7 +1262,6 @@ zoroastrian_group = {
 }
 
 indian_group = {
-	has_coa_on_barony_only = no
 	graphical_culture = indiangfx
 	playable = yes
 	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
@@ -1254,13 +1319,43 @@ indian_group = {
 		priest_title = PUJARI
 		piety_name = KARMA
 		
-		intermarry = jain
-		intermarry = buddhist
-		intermarry = zun_pagan
-		intermarry = zun_pagan_reformed
-		intermarry = bon
-		intermarry = bon_reformed
+		intermarry = buddhist_group
+	}
+	tirthaist = {
+		graphical_culture = hindugfx
+		secondary_event_pictures = sunni
+
+		icon = 51
+		heresy_icon = 51
 		
+		color = { 219 116 35 }
+		
+		high_god_name = GOD_SHWW
+		
+		god_names = {
+			GOD_SIWA GOD_UMA GOD_ISWARA GOD_MAHADEWA GOD_WISNU GOD_BRAHMA GOD_BUDDHA
+		}
+		
+		evil_god_names = {
+			KALA
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_looting = yes
+		max_consorts = 3
+		caste_opinions = yes
+		castes = yes
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = THE_LONTARS
+		priest_title = PUJARI
+		piety_name = KARMA
+		
+		intermarry = buddhist_group
 	}
 }
 eastern = {
@@ -1355,7 +1450,7 @@ eastern = {
 		priest_title = LISHENG
 		piety_name = XIAO
 		
-		intermarry = buddhist
+		intermarry = buddhist_group
 		intermarry = nestorian
 		intermarry = manichean
 		intermarry = zun_pagan
@@ -1404,7 +1499,7 @@ eastern = {
 		priest_title = DAOSHI
 		piety_name = PIETY_TE
 		
-		intermarry = buddhist
+		intermarry = buddhist_group
 		intermarry = nestorian
 		intermarry = manichean
 		intermarry = zun_pagan
@@ -2129,7 +2224,7 @@ oldworld = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
-	jibenyuanze = { #temporary
+	jibenyuanze = { #Religion with Chinese Values
 		graphical_culture = muslimgfx
 		
 		icon = 37
@@ -2146,6 +2241,39 @@ oldworld = {
 		}
 		evil_god_names = {
 			CHINA_AMERICA DAJI_SIX IMPERIALISM
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	jinbenwei = { #Chinese Consumerism
+		graphical_culture = muslimgfx
+		
+		icon = 47
+		heresy_icon = 47
+		
+		color = { 50 218 137 }
+
+		scripture_name = THE_TEACHINGS_OF_BAIJIN
+		
+		high_god_name = GOD_BAIJIN
+		
+		god_names = {
+			GOD_RENMINBI GOD_YUAN GOD_THE_GOLDEN_RULE GOD_CHEN_YUN GOD_CAISHEN GOD_ZHAO_GONGMING GOD_TAOZHOU_GONG GOD_XIAOFEI
+		}
+		evil_god_names = {
+			DAJI_FOUR BOOK_COOKERS STAGNANCY VOID_OF_DESIRE
 		}
 		
 		investiture = yes
@@ -2222,7 +2350,7 @@ nautical = {
 		
 		intermarry = christian
 		intermarry = eastern
-		intermarry = buddhist
+		intermarry = buddhist_group
 		intermarry = pagan
 		intermarry = japonic
 	}

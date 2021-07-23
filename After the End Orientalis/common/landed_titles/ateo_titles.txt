@@ -24653,3 +24653,795 @@ e_west_micronesia = {
 		}
 	}
 }
+e_bengal = {
+	color={ 179 172 135 }
+	color2={ 255 255 20 }
+	
+	capital = 1272 # c_chattogram
+	culture = bengali
+	
+	k_bangladesh = {
+		color={ 189 162 140 }
+		color2={ 255 255 255 }
+		
+		capital = 1272 # c_chattogram
+		culture = bengali
+		
+		d_chattogram = {
+			color={ 209 142 150 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1272 province_id = 1273 } }
+				}
+			}
+			capital = 1272 # c_chattogram
+			
+			c_chattogram = { # 1272
+				color={ 219 132 155 }
+				color2={ 255 255 255 }
+				
+				b_chittagong = {
+				}
+				b_anwara = {
+				}
+				b_harala = {
+				}
+				b_hathazari = {
+				}
+				b_sitakund = {
+				}
+				b_mirsharai = {
+				}
+				b_bhatiari = {
+				}
+			}
+			c_bandarban = { # 1273
+				color={ 249 143 170 }
+				color2={ 255 255 255 }
+				
+				b_rangamati = {
+				}
+				b_khagrachhari = {
+				}
+				b_bandarban = {
+				}
+				b_sajek = {
+				}
+				b_kaptai = {
+				}
+				b_panchari = {
+				}
+				b_dighinala = {
+				}
+			}
+		}
+	}
+	k_arunachal = {
+		color={ 96 27 195 }
+		color2={ 255 255 255 }
+		
+		capital = 1282 # c_kurung_kumey
+		culture = tani
+		
+		d_subansari = {
+			color={ 116 7 205 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1282 province_id = 1283 province_id = 1284 province_id = 1285 } }
+				}
+			}
+			capital = 1282 # c_kurung_kumey
+			
+			c_kurung_kumey = { # 1282
+				color={ 126 253 210 }
+				color2={ 255 255 255 }
+				
+				b_koloriang = {
+				}
+				b_itanagar = {
+				}
+				b_nyapin = {
+				}
+				b_phassang = {
+				}
+				b_sangram = {
+				}
+				b_sarli = {
+				}
+				b_naharlagun = {
+				}
+			}
+			c_kameng = { # 1283
+				color={ 43 241 173 }
+				color2={ 255 255 255 }
+				
+				b_bomdila = {
+				}
+				b_dirang = {
+				}
+				b_tawang = {
+				}
+				b_thembang = {
+				}
+				b_seppa = {
+				}
+				b_jollang = {
+				}
+				b_waii = {
+				}
+			}
+			c_siang = { # 1285
+				color={ 16 112 79 }
+				color2={ 255 255 255 }
+				
+				b_yingkiong = {
+				}
+				b_aalo = {
+				}
+				b_likabali = {
+				}
+				b_geku = {
+				}
+				b_mechuka = {
+				}
+				b_mariyang = {
+				}
+				b_rumgong = {
+				}
+			}
+			c_subansari = { # 1284
+				color={ 71 142 118 }
+				color2={ 255 255 255 }
+				
+				b_daporijo = {
+				}
+				b_basar = {
+				}
+				b_ziro = {
+				}
+				b_raga = {
+				}
+				b_dugi = {
+				}
+				b_tato = {
+				}
+				b_jamin = {
+				}
+			}
+		}
+		d_namsai = {
+			color={ 15 80 66 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1286 province_id = 1287 province_id = 1288 province_id = 1289 province_id = 1290 } }
+				}
+			}
+			capital = 1286 # c_chapakhowa
+			
+			c_chapakhowa = { # 1286
+				color={ 5 90 61 }
+				color2={ 255 255 255 }
+				
+				b_tezu = {
+				}
+				b_namsai = {
+				}
+				b_roing = {
+				}
+				b_bomjir = {
+				}
+				b_lohitpur = {
+				}
+				b_inteya = {
+				}
+				b_kundil = {
+				}
+			}
+			c_anjaw = { # 1288
+				color={ 86 106 99 }
+				color2={ 255 255 255 }
+				
+				b_hawai_2 = {
+				}
+				b_hayuliang = {
+				}
+				b_goiliang = {
+				}
+				b_chaglagam = {
+				}
+				b_manchal = {
+				}
+				b_walong = {
+				}
+				b_kibithoo = {
+				}
+			}
+			c_changlang = { # 1289
+				color={ 154 189 177 }
+				color2={ 255 255 255 }
+				
+				b_diyun = {
+				}
+				b_bordumsa_2 = {
+				}
+				b_miao = {
+				}
+				b_kharsang = {
+				}
+				b_jairampur = {
+				}
+				b_changlang = {
+				}
+				b_manmao = {
+				}
+			}
+			c_dibang = { # 1287
+				color={ 217 255 242 }
+				color2={ 255 255 255 }
+				
+				b_aniani = {
+				}
+				b_etalin = {
+				}
+				b_ithun = {
+				}
+				b_karo = {
+				}
+				b_amuli = {
+				}
+				b_larango = {
+				}
+				b_akunli = {
+				}
+			}
+			c_tirap = { # 1290
+				color={ 69 104 92 }
+				color2={ 255 255 255 }
+				
+				b_khonsa = {
+				}
+				b_longding = {
+				}
+				b_zedua = {
+				}
+				b_laptang = {
+				}
+				b_lazu = {
+				}
+				b_chanu = {
+				}
+				b_sangsatham = {
+				}
+			}
+		}
+	}
+	k_purvottar_pradesh = {
+		color={ 63 22 151 }
+		color2={ 255 255 255 }
+		
+		capital = 1274 # c_agartala
+		culture = tripuri
+		
+		d_tripura = {
+			color={ 83 2 161 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1274 province_id = 1275 } }
+				}
+			}
+			capital = 1274 # c_agartala
+			
+			c_agartala = { # 1274
+				color={ 93 248 166 }
+				color2={ 255 255 255 }
+				
+				b_agartala = {
+				}
+				b_bishalgarh = {
+				}
+				b_belonia = {
+				}
+				b_mohanpur = {
+				}
+				b_bishramganj = {
+				}
+				b_santirbazar = {
+				}
+				b_ranirbazar = {
+				}
+			}
+			c_dharmanagar = { # 1275
+				color={ 92 230 166 }
+				color2={ 255 255 255 }
+				
+				b_udaipur = {
+				}
+				b_dharmanangar = {
+				}
+				b_ambassa = {
+				}
+				b_khowai = {
+				}
+				b_kailashahar = {
+				}
+				b_amarpur = {
+				}
+				b_panisagar = {
+				}
+			}
+		}
+		d_manipur = {
+			color={ 99 9 173 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1278 province_id = 1279 } }
+				}
+			}
+			capital = 1278 # c_imphal
+			
+			c_imphal = { # 1278
+				color={ 109 255 178 }
+				color2={ 255 255 255 }
+				
+				b_lamphelhat = {
+				}
+				b_imphal = {
+				}
+				b_senapati = {
+				}
+				b_ukhrul = {
+				}
+				b_tamenlong = {
+				}
+				b_kamjong = {
+				}
+				b_kangpokpi = {
+				}
+			}
+			c_churachandpur = { # 1279
+				color={ 137 215 174 }
+				color2={ 255 255 255 }
+				
+				b_lamka = {
+				}
+				b_thoubal = {
+				}
+				b_bishnupur = {
+				}
+				b_chandel = {
+				}
+				b_kakching = {
+				}
+				b_pherzawl = {
+				}
+				b_jiribam = {
+				}
+			}
+		}
+		d_mizoram = {
+			color={ 82 2 161 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1276 province_id = 1277 } }
+				}
+			}
+			capital = 1276 # c_aizawl
+			
+			c_aizawl = { # 1276
+				color={ 92 248 166 }
+				color2={ 255 255 255 }
+				
+				b_aizawl = {
+				}
+				b_champhai = {
+				}
+				b_mamit = {
+				}
+				b_kolasib = {
+				}
+				b_serchhip = {
+				}
+				b_saitual = {
+				}
+				b_khawzawl = {
+				}
+			}
+			c_lunglei = { # 1277
+				color={ 93 230 166 }
+				color2={ 255 255 255 }
+				
+				b_lunglei = {
+				}
+				b_lawngtlai = {
+				}
+				b_saiha = {
+				}
+				b_hnahthial = {
+				}
+				b_tlabung = {
+				}
+				b_kamalanagar = {
+				}
+				b_tuipang = {
+				}
+			}
+		}
+		d_nagaland = {
+			color={ 60 237 137 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1280 province_id = 1281 } }
+				}
+			}
+			capital = 1280 # c_kohima
+			
+			c_kohima = { # 1280
+				color={ 70 227 142 }
+				color2={ 255 255 255 }
+				
+				b_kohima = {
+				}
+				b_dimapur = {
+				}
+				b_mokokchung = {
+				}
+				b_tuensang = {
+				}
+				b_wokha = {
+				}
+				b_phek = {
+				}
+				b_zunheboto = {
+				}
+			}
+			c_mon = { # 1281
+				color={ 87 224 109 }
+				color2={ 255 255 255 }
+				
+				b_mon = {
+				}
+				b_tizit = {
+				}
+				b_longwa = {
+				}
+				b_naginimora = {
+				}
+				b_deomali = {
+				}
+				b_bordumsa = {
+				}
+				b_shangnyu = {
+				}
+			}
+		}
+	}
+}
+e_tibet = {
+	color={ 143 224 101 }
+	color2={ 255 255 20 }
+	
+	capital = 1291 # c_thimphu
+	culture = ngalop
+	
+	k_bhutan = {
+		color={ 153 214 106 }
+		color2={ 255 255 255 }
+		
+		capital = 1291 # c_thimphu
+		culture = ngalop
+		
+		c_thimphu = { # 1291
+			color={ 183 184 121 }
+			color2={ 255 255 255 }
+			
+			b_thimphu = {
+			}
+			b_chubachu = {
+			}
+			b_punakha = {
+			}
+			b_semtokha = {
+			}
+			b_yusipang = {
+			}
+			b_hungtsho = {
+			}
+			b_pajo = {
+			}
+		}
+		c_bumthang = { # 1294
+			color={ 91 92 0 }
+			color2={ 255 255 255 }
+			
+			b_jakar = {
+			}
+			b_ura = {
+			}
+			b_nyimalung = {
+			}
+			b_wangchukling = {
+			}
+			b_kurjey = {
+			}
+			b_naspe = {
+			}
+			b_tang = {
+			}
+		}
+		c_gasa = { # 1293
+			color={ 127 128 49 }
+			color2={ 255 255 255 }
+			
+			b_gasa_dzong = {
+			}
+			b_kencho = {
+			}
+			b_lingzhi_yuegyal = {
+			}
+			b_laya = {
+			}
+			b_byaradingka = {
+			}
+			b_thanza = {
+			}
+			b_jangothang = {
+			}
+		}
+		c_paro = { # 1292
+			color={ 232 234 25 }
+			color2={ 255 255 255 }
+			
+			b_paro = {
+			}
+			b_chhukha = {
+			}
+			b_phuntsholing = {
+			}
+			b_ha = {
+			}
+			b_samtse = {
+			}
+			b_dungna = {
+			}
+			b_sangkari = {
+			}
+		}
+		c_sarpang = { # 1297
+			color={ 236 237 115 }
+			color2={ 255 255 255 }
+			
+			b_sarpang = {
+			}
+			b_damphu = {
+			}
+			b_chalaika = {
+			}
+			b_gelephu = {
+			}
+			b_bhurgaon = {
+			}
+			b_bachap = {
+			}
+			b_samkhara = {
+			}
+		}
+		c_trashigang = { # 1296
+			color={ 254 255 23 }
+			color2={ 255 255 255 }
+			
+			b_trashigang = {
+			}
+			b_samdrup_jongkar = {
+			}
+			b_nganglam = {
+			}
+			b_mongar = {
+			}
+			b_pemagatshel = {
+			}
+			b_yangtse = {
+			}
+			b_lhuntse = {
+			}
+		}
+		c_trongsa = { # 1295
+			color={ 200 200 172 }
+			color2={ 255 255 255 }
+			
+			b_trongsa = {
+			}
+			b_wangdue = {
+			}
+			b_karshong = {
+			}
+			b_chemaito = {
+			}
+			b_lung_chen = {
+			}
+			b_manikyangsa = {
+			}
+			b_kungarapten = {
+			}
+		}
+		d_paro = {
+			color={ 173 194 116 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1291 province_id = 1292 province_id = 1293 } }
+				}
+			}
+			capital = 1291 # c_thimphu
+			
+			c_thimphu = { # 1291
+				color={ 183 184 121 }
+				color2={ 255 255 255 }
+				
+				b_thimphu = {
+				}
+				b_chubachu = {
+				}
+				b_punakha = {
+				}
+				b_semtokha = {
+				}
+				b_yusipang = {
+				}
+				b_hungtsho = {
+				}
+				b_pajo = {
+				}
+			}
+			c_gasa = { # 1293
+				color={ 127 128 49 }
+				color2={ 255 255 255 }
+				
+				b_gasa_dzong = {
+				}
+				b_kencho = {
+				}
+				b_lingzhi_yuegyal = {
+				}
+				b_laya = {
+				}
+				b_byaradingka = {
+				}
+				b_thanza = {
+				}
+				b_jangothang = {
+				}
+			}
+			c_paro = { # 1292
+				color={ 232 234 25 }
+				color2={ 255 255 255 }
+				
+				b_paro = {
+				}
+				b_chhukha = {
+				}
+				b_phuntsholing = {
+				}
+				b_ha = {
+				}
+				b_samtse = {
+				}
+				b_dungna = {
+				}
+				b_sangkari = {
+				}
+			}
+		}
+		d_bumthang = {
+			color={ 101 82 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1294 province_id = 1295 province_id = 1296 province_id = 1297 } }
+				}
+			}
+			capital = 1294 # c_bumthang
+			
+			c_bumthang = { # 1294
+				color={ 91 92 0 }
+				color2={ 255 255 255 }
+				
+				b_jakar = {
+				}
+				b_ura = {
+				}
+				b_nyimalung = {
+				}
+				b_wangchukling = {
+				}
+				b_kurjey = {
+				}
+				b_naspe = {
+				}
+				b_tang = {
+				}
+			}
+			c_sarpang = { # 1297
+				color={ 236 237 115 }
+				color2={ 255 255 255 }
+				
+				b_sarpang = {
+				}
+				b_damphu = {
+				}
+				b_chalaika = {
+				}
+				b_gelephu = {
+				}
+				b_bhurgaon = {
+				}
+				b_bachap = {
+				}
+				b_samkhara = {
+				}
+			}
+			c_trashigang = { # 1296
+				color={ 254 255 23 }
+				color2={ 255 255 255 }
+				
+				b_trashigang = {
+				}
+				b_samdrup_jongkar = {
+				}
+				b_nganglam = {
+				}
+				b_mongar = {
+				}
+				b_pemagatshel = {
+				}
+				b_yangtse = {
+				}
+				b_lhuntse = {
+				}
+			}
+			c_trongsa = { # 1295
+				color={ 200 200 172 }
+				color2={ 255 255 255 }
+				
+				b_trongsa = {
+				}
+				b_wangdue = {
+				}
+				b_karshong = {
+				}
+				b_chemaito = {
+				}
+				b_lung_chen = {
+				}
+				b_manikyangsa = {
+				}
+				b_kungarapten = {
+				}
+			}
+		}
+	}
+}
