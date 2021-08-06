@@ -300,8 +300,35 @@ spriteType = {
 		name = "GFX_performance_theater"
 		texturefile = "gfx/event_pictures/performance_theater.dds"
 	}
+	spriteType = {
+		name = "GFX_cherry_blossoms"
+		texturefile = "gfx/event_pictures/cherry_blossoms.dds"
+	}
 	
 ### Orientalis Traits
+
+#Japonic Traits
+	spriteType = {
+		name = "GFX_trait_koshitsu_shinto"
+		texturefile = "gfx/traits/koshitsu_shinto.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_minzoku_shinto"
+		texturefile = "gfx/traits/minzoku_shinto.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_bukka_shinto"
+		texturefile = "gfx/traits/bukka_shinto.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 
 #Cao Dai Traits
 
@@ -401,6 +428,15 @@ spriteType = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+
+#Sympathy Traits
+	spriteType = {
+		name = "GFX_trait_sympathy_japonic"
+		texturefile = "gfx/traits/sympathy_japonic.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 #Decisions Icons
 	spriteType = {
@@ -458,5 +494,17 @@ spriteType = {
 	spriteType = {
 		name = "GFX_hajj_to_mecca"
 		texturefile = "gfx/interface/decision_icon_hajj_to_mecca.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_obon_festival"
+		texturefile = "gfx/interface/decision_icon_obon_festival.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_hanami_festival"
+		texturefile = "gfx/interface/decision_icon_hanami_festival.dds"
+	}
+	spriteType = {
+		name = "GFX_change_shinto_branch"
+		texturefile = "gfx/interface/change_shinto_branch.tga"
 	}
 }
