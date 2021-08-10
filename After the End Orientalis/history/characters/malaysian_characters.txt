@@ -37,10 +37,10 @@
 ###########Malaysia Region Characters###########
 #19570xx reserved for historical and legendary characters
 
-#k_Selangor
+#Selangor
 1957100={
 	name="Mu'adzam"
-	dynasty=1957801 #Selangor
+	dynasty=1957801 #Celak
 	culture=melayu
 	religion=sunni
 	martial=7
@@ -58,11 +58,40 @@
 	trait=proud
 	trait=just
 	father=1957101
-	2563.1.1={birth=yes}
+	2515.1.1={birth=yes}
 }
 1957101={
+	name="Ibrahim"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=sunni
+	trait=skilled_tactician
+	trait=shrewd
+	trait=strong
+	trait=proud
+	trait=falconer
+	father=1957102
+	2455.1.1={birth=yes}
+	2525.5.3={death=yes}
+}
+1957102={
+	name="Shah Alam" #The Crippled
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=sunni
+	trait=tough_soldier
+	trait=ambitious
+	trait=strong
+	trait=proud
+	trait=maimed
+	trait=incapable
+	father=1957103
+	2410.1.1={birth=yes}
+	2460.5.3={death=yes}
+}
+1957103={
 	name="Alaeddin"
-	dynasty=1957801 #Selangor
+	dynasty=1957801 #Celak
 	culture=melayu
 	religion=sunni
 	trait=grey_eminence
@@ -70,13 +99,40 @@
 	trait=patient
 	trait=proud
 	trait=just
-	2529.1.1={birth=yes}
-	2540.1.1={
+	father=1957104
+	2355.1.1={birth=yes}
+	2420.12.1={death=yes}
+}
+1957104={
+	name="Saifullah"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=sunni
+	trait=grey_eminence
+	trait=pious
+	trait=patient
+	trait=humble
+	trait=just
+	2320.1.1={birth=yes}
+	2380.9.31={death=yes}
+}
+1957105={
+	name="Shah Alam" #The Glorious
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=sunni
+	trait=grey_eminence
+	trait=strong
+	trait=patient
+	trait=proud
+	trait=legendary
+	2060.1.1={birth=yes}
+	2100.1.1={
 		create_bloodline = {
 				type = paramount_ruler_malaysia
 			}
 	}
-	2589.9.31={death=yes}
+	2140.1.1={death=yes}
 }
 #--
 1957120={
