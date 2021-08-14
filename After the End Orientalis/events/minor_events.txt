@@ -1,0 +1,186 @@
+namespace = festival
+
+#New Years Festival Event
+narrative_event = {
+	id = festival.1
+	title = NEW_YEARS_FESTIVAL
+	desc = {
+		trigger = {
+			culture_group = japonic
+		}
+		text = festival_japanese1
+	}
+	desc = {
+		trigger = {
+			is_sinic = yes
+		}
+		text = festival_sinic1
+	}
+	desc = {
+		trigger = {
+			OR = {
+				culture = singaporean
+				culture = tionghoa
+			}
+		}
+		text = festival_sinic_expat1
+	}
+	picture = GFX_new_years
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	trigger = {
+		has_character_flag = holding_new_years_festival
+	}
+	
+	option = {
+		trigger = {
+			culture_group = japonic
+		}
+		name = EVTOPTA_festival1
+		piety = 25
+		hidden_tooltip = {
+			character_event = {id = festivals.2 days = 2}
+		}
+	}
+	option = {
+		trigger = {
+			is_sinic = yes
+		}
+		name = EVTOPTB_festival1
+		piety = 25
+		hidden_tooltip = {
+			character_event = {id = festivals.2 days = 2}
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				culture = singaporean
+				culture = tionghoa
+			}
+		}
+		name = EVTOPTC_festival1
+		piety = 25
+		hidden_tooltip = {
+			character_event = {id = festivals.2 days = 2}
+		}
+	}
+}
+
+#Personal Feelings of the New Years
+character_event = {
+	id = festival.2
+	desc = EVTDESC_festival_2
+	picture = GFX_new_years
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Festivity Feeling
+		name = EVTOPTA_festival_2
+		lose_weight_small_effect = yes
+		random_list = {
+			10 = {
+				add_trait = charitable
+			}
+			10 = {
+				add_trait = gluttonous
+			}
+			10 = {
+				add_trait = gregarious
+			}
+			10 = {
+				add_trait = trusting
+			}
+		}
+		prestige = 50
+		hidden_tooltip = {
+			character_event = {id = festivals.3 days = 2}
+		}
+	}
+	option = { #Religious Feeling
+		name = EVTOPTB_festival_2
+		random_list = {
+			10 = {
+				add_trait = temperate
+			}
+			10 = {
+				add_trait = humble
+			}
+			10 = {
+				add_trait = pious
+			}
+			10 = {
+				add_trait = content
+			}
+		}
+		piety = 50
+		hidden_tooltip = {
+			character_event = {id = festivals.3 days = 2}
+		}
+	}	
+	
+}
+
+# Night Festival #More Events I have not done yet...
+#character_event = {
+#	id = festival.11
+#	desc = EVTDESC_festival_11
+#	picture = GFX_new_years
+#	border = GFX_event_normal_frame_religion
+#	
+#	hide_from = yes
+#	
+#	is_triggered_only = yes
+#		
+#	option = { 
+#		name = EVTOPTA_festival_11
+#
+#		piety = 20
+#	}
+#}
+
+# New Years Festival Ends
+character_event = {
+	id = festival.3
+	desc = EVTDESC_festival_3
+	picture = GFX_mountain_calm
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_festival_3
+		add_character_modifier = {
+			name = held_new_years_festival_timer
+			years = 3
+			hidden = yes
+		}
+		prestige = 50
+		piety = 100
+		clr_character_flag = holding_new_years_festival
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+	}
+}
+
+# Safety catch - clears character flags and modifiers
+character_event = {
+	id = festival.13
+
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		clr_character_flag = holding_new_years_festival
+	}
+}

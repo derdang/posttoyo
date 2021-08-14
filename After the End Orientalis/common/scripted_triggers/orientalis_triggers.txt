@@ -26,3 +26,10 @@ is_mahayana_japanese = {
 		religion = shingon_shu
 	}
 }
+is_sinic = {
+	OR = {
+		culture_group = viet
+		culture_group = han
+		culture_group = korean
+	}
+}
