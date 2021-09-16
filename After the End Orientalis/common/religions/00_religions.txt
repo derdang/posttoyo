@@ -741,7 +741,7 @@ pagan_group = {
 		religious_clothing_head = 14
 		religious_clothing_priest = 10
 	}
-	americanist = { #temporary
+	americanist = { #Americans with Pacific Characteristics
 		graphical_culture = muslimgfx
 		
 		icon = 44
@@ -757,7 +757,7 @@ pagan_group = {
 		high_god_name = GOD_PROVIDENCE
 		
 		god_names = {
-			GOD_YUSEEN GOD_MACARTHUR GOD_ROOSEVELT GOD_RANGER_JONES GOD_SHANNON
+			GOD_MACARTHUR GOD_PERRY GOD_NIMITZ GOD_LATMIKAIK GOD_ANDERSON GOD_SMK GOD_ROOSEVELT
 		}
 		evil_god_names = {
 			COMMUNISM THE_DYING_SUN THE_CROOKED_EAGLE THE_SLUMBERING_LION
@@ -778,7 +778,7 @@ pagan_group = {
 		religious_clothing_priest = 10
 		reformed = americanist_reformed
 	}
-	americanist_reformed = { #temporary
+	americanist_reformed = { #Americans with Pacific Characteristics Reformed!
 		graphical_culture = muslimgfx
 		
 		icon = 44
@@ -794,7 +794,7 @@ pagan_group = {
 		high_god_name = GOD_PROVIDENCE
 		
 		god_names = {
-			GOD_YUSEEN GOD_MACARTHUR GOD_ROOSEVELT GOD_RANGER_JONES GOD_SHANNON
+			GOD_MACARTHUR GOD_PERRY GOD_NIMITZ GOD_LATMIKAIK GOD_ANDERSON GOD_SMK GOD_ROOSEVELT
 		}
 		evil_god_names = {
 			COMMUNISM THE_DYING_SUN THE_CROOKED_EAGLE THE_SLUMBERING_LION
@@ -2353,5 +2353,65 @@ nautical = {
 		intermarry = buddhist_group
 		intermarry = pagan
 		intermarry = japonic
+	}
+}
+latter_day_saints = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	crusade_cb = crusade
+	playable = yes
+	
+	ai_convert_same_group = 2
+	ai_convert_other_group = 2 #
+	
+	color = { 0.6 0.3 0.5 }
+
+	# Names given only to Mormon characters (base names)
+	male_names = {
+		Aaric Aaron Abinadi Abinadom Abraham Ahab Ahah Akish Amalickiah Ammah Ammon Amnigaddah Antionah Archeantus Avichen Bethuel Cezoram Chemish Coriantum Cumenihah Elhanan Ethem Ether Euzel Ezias Ezra Gabrien Giddonah Gilead Himni Hyrum Isaiah Ishmael Israel Jeremiah Judah Katriel Kishkumen Kneel Korihor Kumenonhi Lachoneus Lamah Mahah Mahonri Mathonihah Moriancumer Mormon Moron Moses Muloki Nashoba Nehemiah Nephi Nimrah Niniva Noah Omni Orihah Paanchi Pacumeni Riplakish Seezoram Shemnon Shiblom Tabernacle Templer Teomner Tithing Tubaloth Yehoram Yoder Zamaleki Zarahemla Zedekiah Zeezrom Zekiel Zemnarihah Zenephi Zenoa Zerahemnah Zeram Zoram 
+	}
+	
+	# Names given only to Mormon characters (base names)
+	female_names = {
+		Aaronica Abigail Abish Abrah Alemeda Almadon Angelic Ankanna Arabeth Asenath Athaliah Beneth Blessing Celestian Cember Chassia Christina Cleota Cumorah Delilah Deza Diona Esther Geaniel Heneli Isha Itha Izaiha Izola Jelisa Jemima Jesselah Jordana Jubeltine Junean Kaiah Kasiah Klystia Labbaron Lethea Mavia Morona Naamah Nalomi Naoma Nevona Nezla Ninnon Oshira Palmyra Phemia Rhoda Samila Sariah Semiramis Seneth Serah Seviah Shambertine Shanalea Sushelle Talesha Tempalia Xanne Zarinaea Zenobia Zeruah Ziona
+	}
+	
+	#default interface
+	
+	mormon = {
+		graphical_culture = westerngfx
+
+		icon = 65
+		heresy_icon = 65
+		
+		color = { 0.75 0.4 0.55 }
+		
+		crusade_name = EXPEDITION
+		scripture_name = THE_BOOK_OF_MORMON
+		priest_title = PRIEST
+
+		high_god_name = GOD_THE_HEAVENLY_FATHER
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JEHOVAH GOD_JESUS GOD_THE_PROPHET GOD_THE_HEAVENLY_FATHER GOD_THE_GODHEAD
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		max_wives = 1
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 2
 	}
 }

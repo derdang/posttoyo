@@ -6,12 +6,14 @@ dragon_son_of_vietnam = { #The Dragon Blood of Post-Event Vietnam
 	monthly_character_prestige = 0.5
 	inheritance = all_descendants
 	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
 }
 paramount_ruler_malaysia = { #Bloodline of Yang di-Pertuan Agong
 	malayan_opinion = 5
 	monthly_character_prestige = 0.1
 	inheritance = patrilinial
 	picture = GFX_bloodlines_symbol_sunni
+	flags = { historical_bloodline }
 }
 legendary_ruler_of_singapore = { #...
 	monthly_character_prestige = 0.2
@@ -29,6 +31,7 @@ legendary_ruler_of_singapore = { #...
 		}
 	}
 	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
 }
 baekdu_bloodline = { #...
 	monthly_character_prestige = 0.3
@@ -46,4 +49,5 @@ baekdu_bloodline = { #...
 		}
 	}
 	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
 }
