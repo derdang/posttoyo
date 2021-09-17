@@ -771,7 +771,10 @@ title_decisions = {
 			has_dlc = "Holy Fury"
 			is_playable = yes
 			higher_tier_than = BARON
-			religion = americanist
+			OR = {
+				religion = americanist
+				religion = americanist_reformed
+			}
 			NOR = {
 				is_tribal = yes
 				is_nomadic = yes
