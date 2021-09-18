@@ -1,6 +1,88 @@
 
 targetted_decisions = {
 
+	vassal_generic_sacrifice_decision = {
+		only_playable = yes
+		ai_check_interval = 8 #check only once every 8 months.
+		diplomacy_icon = GFX_sacrifice_decision
+	
+		ai_target_filter = home_court
+	
+		from_potential = {
+			show_only_failed_conditions = yes
+			is_playable = yes
+			has_religion_feature = religion_ritual_sacrifice
+		}
+	
+		potential = {
+			prisoner = yes
+			host = { character = FROM }
+		}
+		
+		allow = {
+			ROOT = { 
+				NOT = { religion = FROM } #Only on infidels.
+				NOT = { diplomatic_immunity = yes }
+				prisoner = yes 
+			}
+		}
+		
+		effect = {
+			any_liege = {
+				limit = { 
+					ai = no
+					NOT = { character = FROM }
+					NOT = { religion = FROM }
+				}
+				character_event = { id = HF.23001 }
+			}
+			hidden_tooltip = {
+				FROM = {
+					character_event = { id = HF.23002 }
+				}
+				if = {
+					limit = {
+						controls_religion = yes
+						NOT = {
+							religion = mictlantec
+						}
+						FROM = { ai = no }
+					}
+					FROM = { set_character_flag = achievement_holy_smoke }
+				}
+			}
+			death = {
+				death_reason = death_execution_aztec_sacrifice
+				killer = FROM
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				FROM = { trait = cynical }
+			}
+			modifier = {
+				factor = 1.5
+				FROM = { trait = zealous }
+			}
+			modifier = {
+				factor = 1.5
+				FROM = { trait = bloodthirsty_gods_1 }
+			}
+			modifier = {
+				factor = 1.75
+				FROM = { trait = bloodthirsty_gods_2 }
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = bloodthirsty_gods_3 }
+			}
+		}
+	}
 	stable_attribute_improvement_decision = {
 		only_playable = yes
 		ai_check_interval = 50 #check only once every 50 months.
@@ -371,13 +453,13 @@ decisions = {
 			NOR = {
 				is_incapable = yes
 				trait = sympathy_christendom
-				trait = sympathy_eastern
+				trait = sympathy_cult_of_saints
 				trait = sympathy_latter_day_saints
 				trait = sympathy_pacific
 				trait = sympathy_oldworld
 				trait = sympathy_pagans
 				trait = sympathy_judaism
-				trait = sympathy_japonic
+				trait = sympathy_indian
 				trait = sympathy_islam
 				has_character_flag = flag_picking_sympathy
 			}
@@ -726,20 +808,20 @@ decisions = {
 							}
 						}
 						100 = {
-							add_trait = sympathy_japonic
+							add_trait = sympathy_indian
 	
 							modifier = {
 								factor = 0
-								religion_group = japonic
+								religion_group = indian_group
 							}
 							modifier = { # Prioritize getting a sympathy trait that is useful
 								factor = 100
 								OR = {
 									any_demesne_province = {
-										religion_group = japonic
+										religion_group = indian_group
 									}
 									any_vassal = {
-										religion_group = japonic
+										religion_group = indian_group
 									}
 								}
 							}
@@ -747,19 +829,19 @@ decisions = {
 								factor = 5
 								NOR = {
 									any_demesne_province = {
-										NOT = { religion_group = japonic }
+										NOT = { religion_group = indian_group }
 									}
 									any_vassal = {
-										NOT = { religion_group = japonic }
+										NOT = { religion_group = indian_group }
 									}
 								}
 								any_liege = {
 									OR = {
 										AND = {
-											trait = sympathy_japonic
+											trait = sympathy_indian
 											religion = ROOT
 										}
-										religion_group = japonic
+										religion_group = indian_group
 									}
 								}	
 							}
@@ -769,42 +851,42 @@ decisions = {
 									any_liege = {
 										OR = {
 											AND = {
-												trait = sympathy_japonic
+												trait = sympathy_indian
 												religion = ROOT
 											}
-											religion_group = japonic
+											religion_group = indian_group
 										}
 									}
 									spouse = {
-										religion_group = japonic
+										religion_group = indian_group
 									}
 									any_courtier_or_vassal = {
-										religion_group = japonic
+										religion_group = indian_group
 									}
 									any_neighbor_independent_ruler = {
-										religion_group = japonic
+										religion_group = indian_group
 									}
 									any_demesne_province = {
-										religion_group = japonic
+										religion_group = indian_group
 									}
 								}
 							}
 						}
 						100 = {
-							add_trait = sympathy_eastern
+							add_trait = sympathy_cult_of_saints
 	
 							modifier = {
 								factor = 0
-								religion_group = eastern
+								religion_group = cult_of_saints
 							}
 							modifier = { # Prioritize getting a sympathy trait that is useful
 								factor = 100
 								OR = {
 									any_demesne_province = {
-										religion_group = eastern
+										religion_group = cult_of_saints
 									}
 									any_vassal = {
-										religion_group = eastern
+										religion_group = cult_of_saints
 									}
 								}
 							}
@@ -812,19 +894,19 @@ decisions = {
 								factor = 5
 								NOR = {
 									any_demesne_province = {
-										NOT = { religion_group = eastern }
+										NOT = { religion_group = cult_of_saints }
 									}
 									any_vassal = {
-										NOT = { religion_group = eastern }
+										NOT = { religion_group = cult_of_saints }
 									}
 								}
 								any_liege = {
 									OR = {
 										AND = {
-											trait = sympathy_eastern
+											trait = sympathy_cult_of_saints
 											religion = ROOT
 										}
-										religion_group = eastern
+										religion_group = cult_of_saints
 									}
 								}	
 							}
@@ -834,23 +916,23 @@ decisions = {
 									any_liege = {
 										OR = {
 											AND = {
-												trait = sympathy_eastern
+												trait = sympathy_cult_of_saints
 												religion = ROOT
 											}
-											religion_group = eastern
+											religion_group = cult_of_saints
 										}
 									}
 									spouse = {
-										religion_group = eastern
+										religion_group = cult_of_saints
 									}
 									any_courtier_or_vassal = {
-										religion_group = eastern
+										religion_group = cult_of_saints
 									}
 									any_neighbor_independent_ruler = {
-										religion_group = eastern
+										religion_group = cult_of_saints
 									}
 									any_demesne_province = {
-										religion_group = eastern
+										religion_group = cult_of_saints
 									}
 								}
 							}
@@ -1146,70 +1228,70 @@ decisions = {
 			factor = 0
 		}
 	}
-	determine_zodiac_sign_decision = {
-		#only_playable = yes
-		is_high_prio = yes
-		#ai_check_interval = 200 #check only once every 200 months.
-		ai = no
-		potential = {
-			is_adult = yes
-			NOR = { 
-				trait = zodiac_aquarius
-				trait = zodiac_aries
-				trait = zodiac_cancer
-				trait = zodiac_capricorn
-				trait = zodiac_gemini
-				trait = zodiac_leo
-				trait = zodiac_libra
-				trait = zodiac_pisces
-				trait = zodiac_sagittarius
-				trait = zodiac_scorpio
-				trait = zodiac_taurus
-				trait = zodiac_virgo
-			}
-			OR = {
-				religion = gaian
-				religion = neomayan
-				has_religion_feature = religion_astrology 
-				has_religion_feature = religion_feature_occultist
-				AND = {
-					religion = occultist_reformed
-					has_religion_features = no
-				}
-			}
-			NOT = { has_character_flag = flag_child_forsaken_zodiac }
-		}
-		
-		allow = {
-			prisoner = no
-			NOT = { is_incapable = yes }
-			learning = 6
-		}
-		
-		effect = {
-			custom_tooltip = {
-				text = gain_zodiac_trait_effect_tt
-			}
-			hidden_tooltip = {
-				add_western_zodiac_trait_effect = yes
-				character_event = { id = HFP.23925 }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 1.5
-				trait = zealous
-			}
-			modifier = {
-				factor = 0.1
-				trait = cynical
-			}
-		}
-	}
+	#determine_zodiac_sign_decision = {
+	#	#only_playable = yes
+	#	is_high_prio = yes
+	#	#ai_check_interval = 200 #check only once every 200 months.
+	#	ai = no
+	#	potential = {
+	#		is_adult = yes
+	#		NOR = { 
+	#			trait = zodiac_aquarius
+	#			trait = zodiac_aries
+	#			trait = zodiac_cancer
+	#			trait = zodiac_capricorn
+	#			trait = zodiac_gemini
+	#			trait = zodiac_leo
+	#			trait = zodiac_libra
+	#			trait = zodiac_pisces
+	#			trait = zodiac_sagittarius
+	#			trait = zodiac_scorpio
+	#			trait = zodiac_taurus
+	#			trait = zodiac_virgo
+	#		}
+	#		OR = {
+	#			religion = gaian
+	#			religion = neomayan
+	#			has_religion_feature = religion_astrology 
+	#			has_religion_feature = religion_feature_occultist
+	#			AND = {
+	#				religion = occultist_reformed
+	#				has_religion_features = no
+	#			}
+	#		}
+	#		NOT = { has_character_flag = flag_child_forsaken_zodiac }
+	#	}
+	#	
+	#	allow = {
+	#		prisoner = no
+	#		NOT = { is_incapable = yes }
+	#		learning = 6
+	#	}
+	#	
+	#	effect = {
+	#		custom_tooltip = {
+	#			text = gain_zodiac_trait_effect_tt
+	#		}
+	#		hidden_tooltip = {
+	#			add_western_zodiac_trait_effect = yes
+	#			character_event = { id = HFP.23925 }
+	#		}
+	#	}
+	#	revoke_allowed = {
+	#		always = no
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#		modifier = {
+	#			factor = 1.5
+	#			trait = zealous
+	#		}
+	#		modifier = {
+	#			factor = 0.1
+	#			trait = cynical
+	#		}
+	#	}
+	#}
 
 	delve_into_classics_decision = {
 		only_playable = yes
@@ -1223,10 +1305,10 @@ decisions = {
 				religion_group = latter_day_saints
 			}
 			is_heretic = no #Must belong to a dominant denomination of the faith.
-			OR = { #Must be of the interested cultures.
-				culture_group = mid_atlantic
-				culture_group = south_anglo
-			}
+			
+			#Must be of the interested cultures.
+			culture_group = han
+			
 			OR = { #Must be eccentric or crazy.
 				trait = lunatic 
 				trait = possessed
@@ -1234,32 +1316,26 @@ decisions = {
 				trait = mystic
 				has_focus = focus_scholarship
 			} 
-			OR = { #Must control an hellenic Holy Site.
-				completely_controls = c_washington
-				completely_controls = c_manhattan
-				completely_controls = c_philadelphia
-				completely_controls = c_boston
-				completely_controls = c_rushmore
-			} 
+			#OR = { #Must control an Jibenyuanze Holy Site. (Reactivate Once the Jibenyuanze Holy sites are working)
+			#	completely_controls = c_beijing
+			#	completely_controls = c_manhattan
+			#	completely_controls = c_philadelphia
+			#	completely_controls = c_boston
+			#	completely_controls = c_rushmore
+			#} 
 			NOR = { #Must not have used this decision or be an hellen already.
 				is_theocracy = yes
-				religion = americanist
-				religion = hamiltonian
-				religion = jeffersonian
-				religion = libertarian
-				secret_religion = americanist
-				secret_religion = hamiltonian
-				secret_religion = jeffersonian
-				secret_religion = libertarian
+				religion = jibenyuanze
+				secret_religion = jibenyuanze
 				has_character_modifier = caesars_insight
 				has_character_modifier = ciceros_insight
 				has_character_modifier = justinians_insight
 				has_character_flag = flag_delving_into_classics
 				#has_global_flag = hellenic_reformation #No point in secrecy, there are other ways to convert.
 			}
-			capital_scope = { #Court must also be localized in Italy or Greece.
-				region = custom_usa
-			}
+			#capital_scope = { #Court must also be localized in China.
+			#	region = custom_china
+			#}
 		}
 		
 		allow = {
@@ -1304,10 +1380,10 @@ decisions = {
 			NOT = { has_any_opinion_modifier = opinion_blood_games_guest }
 			NOT = { has_religion_feature = religion_peaceful }
 			OR = { 
-				AND = {
-					religion = mictlantec #they have their own decision
-					NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
-				}
+				#AND = {
+				#	religion = mictlantec #they have their own decision
+				#	NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
+				#}
 				has_religion_feature = religion_ritual_sacrifice
 			}
 		}
@@ -1550,458 +1626,6 @@ title_decisions = {
 			modifier = {
 				factor = 0
 				ruler_has_dedicated_temple_trigger = yes #Better to have the AI only dedicate one per lifetime, otherwise it might leave the player out of options.
-			}
-		}
-	}
-}
-
-settlement_decisions = {
-	tribal_build_great_pillar = {
-		ai_check_interval = 200 #check only once every 200 months.
-		filter = owned
-		ai_target_filter = owned
-		is_high_prio = yes
-		
-		from_potential = {
-			has_dlc = "Holy Fury"
-			is_playable = yes
-			is_tribal = yes
-			higher_tier_than = COUNT 
-			is_reformed_religion = no
-			independent = yes
-			OR = { 
-				religion = norse_pagan
-				religion = revelationist
-				religion = occultist
-				religion = glorian
-				religion = celtic_pagan 
-				religion = aria_de_machete 
-				religion = trailwalker 
-			}
-			NOR = { #Only one Pillar of your own religion per realm. So, the more neighbors you subjugate, the less pillars are going to be built.
-				AND = { 
-					religion = norse_pagan
-					any_realm_province = { has_province_flag = flag_great_pillar_norse } 
-				}
-				AND = { 
-					religion = revelationist
-					any_realm_province = { has_province_flag = flag_great_pillar_revelationist } 
-				}
-				AND = { 
-					religion = occultist
-					any_realm_province = { has_province_flag = flag_great_pillar_occultist } 
-				}
-				AND = { 
-					religion = celtic_pagan
-					any_realm_province = { has_province_flag = flag_great_pillar_celtic_pagan } 
-				}
-				AND = { 
-					religion = aria_de_machete
-					any_realm_province = { has_province_flag = flag_great_pillar_aria_de_machete } 
-				}
-				AND = { 
-					religion = trailwalker
-					any_realm_province = { has_province_flag = flag_great_pillar_trailwalker } 
-				}
-			}
-		}
-		
-		potential = {
-			holder_scope = {
-				character = FROM
-			}
-			holding_type = tribal
-			is_capital = yes
-			capital_scope = { location = { province = ROOT } }
-			dejure_liege_title = {
-				holder_scope = {
-					character = FROM
-				}
-			}
-			location = {
-				FROM = {
-					capital_scope = {
-						province = PREVPREV
-					}
-				}
-			}
-		}
-		allow = { 
-			FROM = { 
-				wealth = 350
-				piety = 150 
-			}
-			location = { religion = FROM } #Locals must already worship your gods.
-			custom_tooltip = { 
-				text = tooltip_province_already_has_great_pillar
-				hidden_tooltip = { 
-					location = { 
-						NOR = { 
-							has_province_flag = flag_great_pillar_norse
-							has_province_flag = flag_great_pillar_revelationist
-							has_province_flag = flag_great_pillar_occultist
-							has_province_flag = flag_great_pillar_celtic_pagan
-							has_province_flag = flag_great_pillar_aria_de_machete
-							has_province_flag = flag_great_pillar_trailwalker
-						}
-					}
-				}
-			}
-			custom_tooltip = { 
-				text = tooltip_ruler_recently_had_pillar_destroyed
-				hidden_tooltip = { 
-					NOT = { 
-						FROM = { 
-							has_character_modifier = recently_destroyed_great_pillar_cooldown
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			FROM = { 
-				show_scope_change = no
-				wealth = -350
-				piety = -150
-				custom_tooltip = { 
-					text = tooltip_celebrate_new_great_pillar
-				}
-				hidden_tooltip = {
-					character_event = { id = HF.23470 }
-				}
-			}
-			hidden_tooltip = { 
-				if = { 
-					limit = { FROM = { religion = norse_pagan } }
-					hidden_tooltip = {
-						location = {
-							set_province_flag = flag_great_pillar_norse
-						}
-					}
-					if = { 
-						limit = { NOT = { has_building = tb_great_pillar_norse } } 
-						add_building = tb_great_pillar_norse
-					}
-				}
-				if = { 
-					limit = { FROM = { religion = revelationist } }
-					hidden_tooltip = {
-						location = {
-							set_province_flag = flag_great_pillar_revelationist
-						}
-					}
-					if = { 
-						limit = { NOT = { has_building = tb_great_pillar_revelationist } } 
-						add_building = tb_great_pillar_revelationist
-					}
-				}
-				if = { 
-					limit = { FROM = { religion = occultist } }
-					hidden_tooltip = {
-						location = {
-							set_province_flag = flag_great_pillar_occultist
-						}
-					}
-					if = { 
-						limit = { NOT = { has_building = tb_great_pillar_occultist } } 
-						add_building = tb_great_pillar_occultist
-					}
-				}
-				if = { 
-					limit = { FROM = { religion = celtic_pagan } }
-					hidden_tooltip = {
-						location = {
-							set_province_flag = flag_great_pillar_celtic_pagan
-						}
-					}
-					if = { 
-						limit = { NOT = { has_building = tb_great_pillar_celtic_pagan } } 
-						add_building = tb_great_pillar_celtic_pagan
-					}
-				}
-				if = { 
-					limit = { FROM = { religion = aria_de_machete } }
-					hidden_tooltip = {
-						location = {
-							set_province_flag = flag_great_pillar_aria_de_machete
-						}
-					}
-					if = { 
-						limit = { NOT = { has_building = tb_great_pillar_aria_de_machete } } 
-						add_building = tb_great_pillar_aria_de_machete
-					}
-				}
-				if = { 
-					limit = { FROM = { religion = trailwalker } }
-					hidden_tooltip = {
-						location = {
-							set_province_flag = flag_great_pillar_trailwalker
-						}
-					}
-					if = { 
-						limit = { NOT = { has_building = tb_great_pillar_trailwalker } } 
-						add_building = tb_great_pillar_trailwalker
-					}
-				}
-			}
-		}
-		
-		revoke_allowed = {
-			always = no
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 2
-				FROM = {
-					trait = zealous
-				}
-			}
-			modifier = {
-				factor = 0
-				FROM = {
-					trait = cynical
-				}
-			}
-			modifier = {
-				factor = 0.25
-				FROM = {
-					trait = greedy
-				}
-			}
-			modifier = {
-				factor = 0.5
-				FROM = {
-					lower_tier_than = KING
-				}
-			}
-		}
-	}
-	destroy_great_pillar = {
-		ai_check_interval = 30 #check only once every 30 months.
-		filter = owned
-		ai_target_filter = owned
-		is_high_prio = yes
-		
-		from_potential = {
-			has_dlc = "Holy Fury"
-			OR = {
-				NOT = { religion_group = pagan_group }
-				is_reformed_religion = yes
-			}
-			is_playable = yes
-			is_tribal = no
-			is_nomadic = no
-		}
-		
-		potential = {
-			holder_scope = {
-				character = FROM
-			}
-			OR = {
-				AND = { 
-					holding_type = tribal 
-					is_capital = yes
-					capital_scope = { location = { province = ROOT } }
-				}
-				AND = { 
-					holding_type = temple #Irminsul 
-					location = { province = 257 }
-				}
-			}
-			location = { 
-				OR = { 
-					has_province_flag = flag_great_pillar_norse
-					has_province_flag = flag_great_pillar_revelationist
-					has_province_flag = flag_great_pillar_occultist
-					has_province_flag = flag_great_pillar_celtic_pagan
-					has_province_flag = flag_great_pillar_aria_de_machete
-					has_province_flag = flag_great_pillar_trailwalker
-				}
-			}
-		}
-		allow = { 
-		}
-		effect = {
-			FROM = { 
-				show_scope_change = no
-				if = {
-					limit = {
-						has_religion_feature = religion_dogmatic
-					}
-					tiered_piety_reward_effect = yes
-				}
-				if = {
-					limit = {
-						OR = {
-							has_religion_feature = religion_cosmopolitan
-	
-						}
-					}
-					tiered_piety_negative_effect = yes
-				}
-				custom_tooltip = { 
-					text = tooltip_celebrate_destroyed_great_pillar
-				}
-				hidden_tooltip = {
-					character_event = { id = HF.23476 }
-				}
-			}
-			if = { 
-				limit = { location = { has_province_flag = flag_great_pillar_norse } }
-				hidden_tooltip = {
-					location = {
-						clr_province_flag = flag_great_pillar_norse
-					}
-					any_realm_character = {
-						limit = { religion = norse_pagan }
-						character_event = { id = HF.23477 }
-					}
-				}
-				norse_pagan = {
-					religion_authority = {
-						modifier = destroyed_great_pillar
-						years = 10
-					}
-				}
-			}
-			if = { 
-				limit = { location = { has_province_flag = flag_great_pillar_revelationist } }
-				hidden_tooltip = {
-					location = {
-						clr_province_flag = flag_great_pillar_revelationist
-					}
-					any_realm_character = {
-						limit = { religion = revelationist }
-						character_event = { id = HF.23477 }
-					}
-				}
-				revelationist = {
-					religion_authority = {
-						modifier = destroyed_great_pillar
-						years = 10
-					}
-				}
-			}
-			if = { 
-				limit = { location = { has_province_flag = flag_great_pillar_occultist } }
-				hidden_tooltip = {
-					location = {
-						clr_province_flag = flag_great_pillar_occultist
-					}
-					any_realm_character = {
-						limit = { religion = occultist }
-						character_event = { id = HF.23477 }
-					}
-				}
-				occultist = {
-					religion_authority = {
-						modifier = destroyed_great_pillar
-						years = 10
-					}
-				}
-			}
-			if = { 
-				limit = { location = { has_province_flag = flag_great_pillar_celtic_pagan } }
-				hidden_tooltip = {
-					location = {
-						clr_province_flag = flag_great_pillar_celtic_pagan
-					}
-					any_realm_character = {
-						limit = { religion = celtic_pagan }
-						character_event = { id = HF.23477 }
-					}
-				}
-				celtic_pagan = {
-					religion_authority = {
-						modifier = destroyed_great_pillar
-						years = 10
-					}
-				}
-			}
-			if = { 
-				limit = { location = { has_province_flag = flag_great_pillar_aria_de_machete } }
-				hidden_tooltip = {
-					location = {
-						clr_province_flag = flag_great_pillar_aria_de_machete
-					}
-					any_realm_character = {
-						limit = { religion = aria_de_machete }
-						character_event = { id = HF.23477 }
-					}
-				}
-				aria_de_machete = {
-					religion_authority = {
-						modifier = destroyed_great_pillar
-						years = 10
-					}
-				}
-			}
-			if = { 
-				limit = { location = { has_province_flag = flag_great_pillar_trailwalker } }
-				hidden_tooltip = {
-					location = {
-						clr_province_flag = flag_great_pillar_trailwalker
-					}
-					any_realm_character = {
-						limit = { religion = trailwalker }
-						character_event = { id = HF.23477 }
-					}
-				}
-				trailwalker = {
-					religion_authority = {
-						modifier = destroyed_great_pillar
-						years = 10
-					}
-				}
-			}
-		}
-		
-		revoke_allowed = {
-			always = no
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 5
-				FROM = {
-					has_religion_feature = religion_dogmatic
-				}
-			}
-			modifier = {
-				factor = 0.25
-				FROM = {
-					OR = {
-						has_religion_feature = religion_cosmopolitan
-
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				FROM = {
-					trait = zealous
-				}
-			}
-			modifier = {
-				factor = 0.5
-				FROM = {
-					trait = cynical
-				}
-			}
-			modifier = {
-				factor = 0.3
-				FROM = {
-					trait = sympathy_pagans
-				}
-			}
-			modifier = {
-				factor = 0.4
-				FROM = {
-					religion_group = pagan_group
-				}
 			}
 		}
 	}

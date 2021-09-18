@@ -1,34 +1,5 @@
 namespace = HFATE
 
-#Assign horoscope traits at startup. (Not sure why this isn't in vanilla)
-character_event = {
-	id = HFATE.100
-	desc = "Assign Horoscope Traits"
-	is_triggered_only = yes
-	hide_window = yes
-	
-	has_dlc = "Holy Fury"
-	
-	trigger = {
-		OR = {
-			AND = {
-				NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
-				OR = {
-					religion = gaian
-					religion = neomayan
-				}
-			}
-			has_religion_feature = religion_astrology
-			has_religion_feature = religion_feature_occultist
-		}
-	}
-	
-	option = {
-		name = DEBUG
-		add_western_zodiac_trait_effect = yes
-	}
-}
-
 #Hellenic Dedicated Temples.
 #Ruler decides whom to dedicate the temple to.
 #First determine which kind of god you are interested in.
