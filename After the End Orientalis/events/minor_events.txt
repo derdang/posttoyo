@@ -41,7 +41,7 @@ narrative_event = {
 		name = EVTOPTA_festival1
 		piety = 25
 		hidden_tooltip = {
-			character_event = {id = festivals.2 days = 2}
+			character_event = {id = festivals.7 days = 2}
 		}
 	}
 	option = {
@@ -69,7 +69,7 @@ narrative_event = {
 	}
 }
 
-#Personal Feelings of the New Years
+#Personal Feelings of the New Years (Sinic)
 character_event = {
 	id = festival.2
 	desc = EVTDESC_festival_2
@@ -126,24 +126,6 @@ character_event = {
 	
 }
 
-# Night Festival #More Events I have not done yet...
-#character_event = {
-#	id = festival.11
-#	desc = EVTDESC_festival_11
-#	picture = GFX_new_years
-#	border = GFX_event_normal_frame_religion
-#	
-#	hide_from = yes
-#	
-#	is_triggered_only = yes
-#		
-#	option = { 
-#		name = EVTOPTA_festival_11
-#
-#		piety = 20
-#	}
-#}
-
 # New Years Festival Ends
 character_event = {
 	id = festival.3
@@ -170,6 +152,234 @@ character_event = {
 	}
 }
 
+#Shogatsu Festival Event (Japanese New Years)
+character_event = {
+	id = festival.4
+	desc = EVTDESC_festival4
+	picture = GFX_east_asian_cities
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	hide_from = yes
+	
+	trigger = {
+		has_character_flag = holding_new_years_festival
+	}
+	
+	option = {
+		name = EVTOPTA_festival4
+		any_vassal = {
+			limit = {
+				religion = ROOT
+				age = 16
+				prisoner = no
+				war = no
+				NOT = { trait = incapable }
+			}
+			character_event = { id = festival.4 days = 2 tooltip = EVTTOOLTIP_jp_1 }
+		}
+		hidden_tooltip = { character_event = { id = festival.7 days = 10 } }
+		hidden_tooltip = { character_event = { id = festival.9 days = 12 } }
+	}
+}
+
+# Invitation Received
+character_event = {
+	id = festival.5
+	desc = EVTDESC_festival5
+	picture = GFX_east_asian_cities
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = { NOT = { is_inaccessible_trigger = yes } }
+	
+	option = {
+		name = EVTOPTA_festival5
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				NOT = {
+					opinion = {
+						who = ROOT
+						value = -20
+					}
+				}
+			}
+		}
+		custom_tooltip = { text = shogatsu_festival_accepted }
+		set_character_flag = attending_shogatsu_festival
+		set_character_flag = do_not_disturb
+		hidden_tooltip = { narrative_event = { id = festival.7 days = 8 } }
+		hidden_tooltip = { character_event = { id = festival.13 days = 20 } } # Safety catch flag clearing
+	}
+	option = {
+		name = EVTOPTB_festival5
+		ai_chance = {
+			factor = 20
+		}
+		FROM = {
+			opinion = {
+				modifier = opinion_dislike
+				who = ROOT
+				years = 2
+			}
+		}
+		custom_tooltip = { text = shogatsu_festival_declined }
+		hidden_tooltip = {
+			FROM = { character_event = { id = festival.6 } }
+		}
+	}
+}
+
+# Invitation Refused
+character_event = {
+	id = festival.6
+	desc = EVTDESC_festival6
+	picture = GFX_east_asian_cities
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_festival6
+		opinion = {
+			modifier = opinion_dislike
+			who = FROM
+			years = 2
+		}
+	}
+}
+
+#Gathering of Compatriots
+narrative_event = {
+	id = festival.7
+	title = SHOGATSU_FESTIVAL
+	desc = EVTDESC_festival7
+	picture = GFX_lanterns
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_festival7
+		lose_weight_small_effect = yes
+		prestige = 50
+		hidden_tooltip = { narrative_event = { id = festival.8 days = 1 } }
+	}	
+	
+}
+
+# A Party for the Night
+narrative_event = {
+	id = festival.8
+	title = SHOGATSU_FESTIVAL
+	desc = EVTDESC_festival8
+	picture = GFX_lanterns
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+		
+	option = { 
+		name = EVTOPTA_festival8
+		piety = 20
+		hidden_tooltip = { narrative_event = { id = festival.11 days = 3 } }
+	}
+	option = { 
+		name = EVTOPTB_festival8
+		prestige = 20
+	}
+
+}
+
+# Shogatsu Party Ends (Host)
+character_event = {
+	id = festival.9
+	desc = EVTDESC_festiva9
+	picture = GFX_japanese_gossip
+	border = GFX_event_normal_frame_religion
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_festiva9
+		any_vassal = {
+			limit = { has_character_flag = attending_shogatsu_festival }
+			opinion = {
+				modifier = opinion_enjoyed_feast
+				who = ROOT
+				years = 2
+			}
+		}
+		hidden_tooltip = {
+			any_vassal = {
+				limit = { has_character_flag = attending_shogatsu_festival }
+				character_event = { id = festival.10 }
+			}
+		}
+		prestige = 50
+		piety = 100
+	}
+}
+
+# Obon Festival Ends (Guest)
+character_event = {
+	id = festival.10
+	desc = EVTDESC_festival0
+	picture = GFX_japanese_gossip
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_festival10
+		clr_character_flag = attending_shogatsu_festival
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+	}
+}
+
+# Visiting the Shrine
+narrative_event = {
+	id = festival.11
+	title = A_FORTUNATE_TRIP
+	desc = EVTDESC_festival11
+	picture = GFX_shinto_shrine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+		
+	option = { 
+		name = EVTOPTA_festival11
+		piety = 20
+		hidden_tooltip = { narrative_event = { id = festival.12 days = 1 } }
+	}
+}
+
+# Arriving to the Holy Center
+narrative_event = {
+	id = festival.12
+	title = A_FORTUNATE_TRIP
+	desc = EVTDESC_festival12
+	picture = GFX_shinto_shrine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+		
+	option = { 
+		name = EVTOPTA_festival12
+		piety = 20
+		hidden_tooltip = { narrative_event = { id = festival.14 days = 1 } }
+	}
+}
+
 # Safety catch - clears character flags and modifiers
 character_event = {
 	id = festival.13
@@ -183,4 +393,85 @@ character_event = {
 		clr_character_flag = recent_minor_decision
 		clr_character_flag = holding_new_years_festival
 	}
+}
+
+# Omikuji (Start)
+narrative_event = {
+	id = festival.14
+	title = A_FORTUNATE_TRIP
+	desc = EVTDESC_festival14
+	picture = GFX_shinto_shrine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+		
+	option = { 
+		name = EVTOPTA_festival14
+		piety = 20
+		hidden_tooltip = {
+			random_list = {
+				50 = { character_event = { id = festival.15 days = 2} }
+				50 = { character_event = { id = festival.16 days = 2} }
+			}
+		}
+	}
+}
+
+# Omikuji (Bad Luck)
+character_event = {
+	id = festival.15
+	desc = EVTDESC_festival15
+	picture = GFX_shinto_shrine
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_festival15
+		prestige = -50
+		add_character_modifier = {
+			name = bad_omikuji
+			years = 1
+			hidden = yes
+		}
+		character_event = { id = festival.17 days = 2 }
+	}	
+}
+
+# Omikuji (Good Luck)
+character_event = {
+	id = festival.16
+	desc = EVTDESC_festival16
+	picture = GFX_shinto_shrine
+	is_triggered_only = yes
+
+	option = { 
+		name = EVTOPTA_festival16
+		prestige = 50
+		add_character_modifier = {
+			name = good_omikuji
+			years = 1
+			hidden = yes
+		}
+		character_event = { id = festival.17 days = 2 }
+	}	
+}
+
+# Japonic New Years End
+character_event = {
+	id = festival.17
+	desc = EVTDESC_festival17
+	picture = GFX_lanterns
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_festival17
+		add_character_modifier = {
+			name = held_new_years_festival_timer
+			years = 3
+			hidden = yes
+		}
+		clr_character_flag = holding_new_years_festival
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+	}	
 }

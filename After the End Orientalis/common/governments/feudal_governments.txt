@@ -100,7 +100,10 @@ feudal_governments = {
 		frame_suffix = "_ghazwa"
 		title_prefix = "ghazi_government_"
 		potential = {
-			religion_group = muslim
+			AND = { 
+				religion_group = muslim
+				NOT = { religion = hui }
+			}
 			OR = {
 				lower_tier_than = KING
 				has_law = muslim_government_slider_0
@@ -119,7 +122,8 @@ feudal_governments = {
 					religion = sunni
 					religion = shiite
 				}
-			}			
+			}
+			NOT = { top_liege = { government = diwan_government }}
 		}
 		
 		color = { 0 204 0 }
@@ -173,7 +177,10 @@ feudal_governments = {
 		title_prefix = "diwan_government_"
 		potential = {
 			OR = {
-				religion_group = muslim
+				AND = { 
+					religion_group = muslim
+					NOT = { religion = hui }
+				}
 				OR = {
 					has_law = muslim_government_slider_2
 					has_law = muslim_government_slider_3
@@ -189,9 +196,6 @@ feudal_governments = {
 					}
 				}
 			}
-			
-			#has_law = succ_ghazi_elective
-			NOT = { is_government_potential = romanipen_government }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = military_governorate }
@@ -706,8 +710,8 @@ feudal_governments = {
 				OR = {
 					culture_group = viet
 					culture_group = korean
+					religion = hui
 				}
-				higher_tier_than = BARON
 			}
 			is_patrician = no
 		}
