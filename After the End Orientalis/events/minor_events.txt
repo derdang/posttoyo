@@ -41,7 +41,7 @@ narrative_event = {
 		name = EVTOPTA_festival1
 		piety = 25
 		hidden_tooltip = {
-			character_event = {id = festivals.7 days = 2}
+			narrative_event = {id = festivals.7 days = 2}
 		}
 	}
 	option = {
@@ -263,6 +263,10 @@ narrative_event = {
 	
 	is_triggered_only = yes
 	
+	trigger = {
+		has_character_flag = holding_new_years_festival
+	}
+	
 	option = {
 		name = EVTOPTA_festival7
 		lose_weight_small_effect = yes
@@ -431,7 +435,6 @@ character_event = {
 		add_character_modifier = {
 			name = bad_omikuji
 			years = 1
-			hidden = yes
 		}
 		character_event = { id = festival.17 days = 2 }
 	}	
@@ -450,7 +453,6 @@ character_event = {
 		add_character_modifier = {
 			name = good_omikuji
 			years = 1
-			hidden = yes
 		}
 		character_event = { id = festival.17 days = 2 }
 	}	
