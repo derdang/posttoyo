@@ -430,10 +430,9 @@ character_event = {
 				war = no
 				NOT = { trait = incapable }
 			}
-			character_event = { id = jp.30 days = 2 tooltip = EVTTOOLTIP_jp_1 }
+			character_event = { id = jp.30 days = 2 tooltip = EVTTOOLTIP_jp_3 }
 		}
 		hidden_tooltip = { character_event = { id = jp.33 days = 12 } }
-		hidden_tooltip = { character_event = { id = jp.35 days = 12 } }
 	}
 }
 
@@ -519,7 +518,7 @@ narrative_event = {
 	option = {
 		name = EVTOPTA_festival7
 		lose_weight_small_effect = yes
-		prestige = 50
+		prestige = 20
 		hidden_tooltip = { narrative_event = { id = jp.34 days = 1 } }
 	}	
 	
@@ -540,10 +539,12 @@ narrative_event = {
 		name = EVTOPTA_festival8
 		piety = 20
 		hidden_tooltip = { narrative_event = { id = jp.37 days = 3 } }
+		hidden_tooltip = { character_event = { id = jp.35 days = 7 } }
 	}
 	option = { 
 		name = EVTOPTB_festival8
 		prestige = 20
+		hidden_tooltip = { character_event = { id = jp.35 days = 2 } }
 	}
 
 }
@@ -575,8 +576,8 @@ character_event = {
 				character_event = { id = jp.36 }
 			}
 		}
-		prestige = 50
-		piety = 100
+		prestige = 20
+		piety = 50
 	}
 }
 
@@ -683,7 +684,7 @@ character_event = {
 
 	option = { 
 		name = EVTOPTA_festival15
-		prestige = 50
+		prestige = 25
 		add_character_modifier = {
 			name = good_omikuji
 			years = 1
@@ -702,7 +703,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_festival16
 		add_character_modifier = {
-			name = held_new_years_festival_timer
+			name = held_shogatsu_festival_timer
 			years = 3
 			hidden = yes
 		}
