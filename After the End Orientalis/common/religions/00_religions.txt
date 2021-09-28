@@ -1571,50 +1571,6 @@ eastern = {
 		intermarry = bon
 		intermarry = bon_reformed
 	}
-	falun_gong = {
-		graphical_culture = chinesegfx
-
-		icon = 41
-		heresy_icon = 41
-		
-		color = { 255 255 0 }
-		
-		interface_skin = { taoist_interface indian_interface muslim_interface }
-		
-		scripture_name = ZHUAN_FALUN
-		
-		high_god_name = GOD_ZHENGFA
-		
-		god_names = {
-			 GOD_KONGLI GOD_ZHEN GOD_SHAN GOD_REN
-		}
-		
-		evil_god_names = {
-			DECAY
-		}
-		
-		piety_name = DEVOTION
-		character_modifier = { learning = 2 }
-		short_reign_opinion_year_mult = 0
-		
-		intermarry = christian
-		intermarry = buddhist_group
-		
-		investiture = yes
-		feminist = yes
-		female_temple_holders = yes
-		can_excommunicate = yes
-		can_grant_divorce = yes
-		can_grant_claim = yes
-		castes = yes
-		can_grant_invasion_cb = invasion
-		can_retire_to_monastery = yes
-		priests_can_inherit = no
-		rel_head_defense = yes
-		
-		religious_clothing_head = 1
-		religious_clothing_priest = 1
-	}
 }
 buddhist_group = {
 	has_coa_on_barony_only = yes
@@ -2353,6 +2309,48 @@ oldworld = {
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
+	}
+	hong_xiu = {
+		graphical_culture = chinesegfx
+
+		icon = 41
+		heresy_icon = 41
+		
+		color = { 218 44 67 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		scripture_name = THE_BOOK_OF_INDUSTRY
+		
+		high_god_name = GOD_GONG
+		
+		god_names = {
+			 GOD_ZHONGXIA GOD_CHEN_YUN GOD_NI_ZHIFU
+		}
+		
+		evil_god_names = {
+			DECAY
+		}
+		
+		piety_name = DEVOTION
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = oldworld
+		
+		investiture = yes
+		feminist = yes
+		female_temple_holders = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		castes = yes
+		can_grant_invasion_cb = invasion
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		rel_head_defense = yes
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
 	}
 }
 nautical = {
