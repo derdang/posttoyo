@@ -2310,7 +2310,7 @@ oldworld = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
-	hong_xiu = {
+	gongye_shenjiao = {
 		graphical_culture = chinesegfx
 
 		icon = 41
@@ -2320,16 +2320,16 @@ oldworld = {
 		
 		interface_skin = { taoist_interface indian_interface muslim_interface }
 		
-		scripture_name = THE_BOOK_OF_INDUSTRY
+		scripture_name = KEJI_SHU
 		
-		high_god_name = GOD_GONG
+		high_god_name = SUPREME_MATERIALISM
 		
 		god_names = {
-			 GOD_ZHONGXIA GOD_CHEN_YUN GOD_NI_ZHIFU
+			 GOD_LIU_CIXIN GOD_OMNISSIAH GOD_MA_QIANZU GOD_ZHONGXIA GOD_CHEN_YUN GOD_NI_ZHIFU
 		}
 		
 		evil_god_names = {
-			DECAY
+			RED_RUST TRISOLIAN
 		}
 		
 		piety_name = DEVOTION
@@ -2337,15 +2337,9 @@ oldworld = {
 		
 		intermarry = oldworld
 		
-		investiture = yes
 		feminist = yes
 		female_temple_holders = yes
-		can_excommunicate = yes
-		can_grant_divorce = yes
-		can_grant_claim = yes
-		castes = yes
 		can_grant_invasion_cb = invasion
-		can_retire_to_monastery = yes
 		priests_can_inherit = no
 		rel_head_defense = yes
 		
