@@ -1831,7 +1831,7 @@ eastern = {
 		intermarry = bon
 		intermarry = bon_reformed
 	}
-	datong = {
+	datong = { #3k Larppppp
 		graphical_culture = chinesegfx
 		secondary_event_pictures = sunni
 		has_coa_on_barony_only = yes
@@ -1844,18 +1844,14 @@ eastern = {
 		
 		interface_skin = { taoist_interface indian_interface muslim_interface }
 		
-		high_god_name = GOD_TIAN
+		high_god_name = GOD_HEAVENLY_HAN
 		
 		god_names = {
-			GOD_DA_HAN GOD_JADE_EMPEROR GOD_ZHUGE_LIANG
+			GOD_GAOZU GOD_SHIZU GOD_LIEZU GOD_ANCESTORS
 		}
 		
 		evil_god_names = {
-			MA
-		}
-
-		character_modifier = {
-			stewardship = 2
+			WANG MANG LIANG_JI DONG_ZHOU CAO_CAO
 		}
 
 		has_heir_designation = yes
@@ -2654,6 +2650,48 @@ oldworld = {
 		
 		religious_clothing_head = 1
 		religious_clothing_priest = 1
+	}
+	nousthreskeia = {
+		graphical_culture = buddhistgfx
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 0.44 0.39 0.33 }
+		
+		interface_skin = { nousthreskeia_interface gaian_interface indian_interface muslim_interface } #placeholder
+		
+		high_god_name = GOD_THE_NOOSPHERE
+		
+		god_names = {
+			GOD_MONOLITH GOD_THE_WISH_GRANTER GOD_THE_GOLDEN_SPHERE
+		}
+		
+		evil_god_names = {
+			DENEB THE_DARK_ONES
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		can_excommunicate = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		
+		max_consorts = 3 #can take concubines
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 14
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = COSMOGENESIS
+		priest_title = PREACHER
+		piety_name = CONSCIOUSNESS
+		
+		intermarry = gaian
+		intermarry = cetic
+		intermarry = shinto
 	}
 }
 nautical = {
