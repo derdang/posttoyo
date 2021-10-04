@@ -1,0 +1,130 @@
+###ÄNSI
+
+turkic = {
+	graphical_cultures = { easterngfx }
+
+	kazakh = {
+		graphical_cultures = { turkishgfx }
+
+		color = { 0.4 0.8 0.9 }
+
+		male_names = {
+			Abai Abat Ábdir Ábdihan Äbdirazaq_Abderraza Ábilhan Ábilqaiyr Abilqasym Ádilbek Ahmet_Ahmed Aidyn Aiqyn Aisultan Aitbai Aldongar Álihan Áljan Almir Almat Altay Amangeldi Amanjol Ámirjan Aqan Aqmyrza Arken Arman Asan Áset Askhat Aslan Asqar 
+			Baitursyn Baizaq Baqyt Baqytjan Baraq Batyrhan Baýyrjan Bekmyrza Bektas Berik Bidahmet Bolat_Bulat Bóshen Buryndyq 
+			Damir Danial Daniyar Darhan Dias Dinmuhamet Duman 
+			Edige Eldar Eljan Erasyl Ermurat Erulan Esengeldin Eset 
+			Farhat Fuat_Fuad 
+			Gabit Gafurjan Gani 
+			Hasen_Hasan 
+			Ibrahim_Abraham Ilyas_Elias Imangali Imantai Isabek Isatai Islam 
+			Jambyl Janabil Janbolat Jánibek Janpeiis Jaqiia Jaqsyly Jarmahan Jenis Jiengali Jumabai 
+			Kárim_Karim Kemel Kenesbek Kenjetai Kerei Kerimbek 
+			Madi Mahmut_Mahmud Mámbet Maqsut Marat Mirjaqyp Mirtemir Moldagazi Momysh Muhambet Muhamet_Muhammad Muhametjan Muhanbetqazy Muhtar_Mukhtar Murat_Murad Muratbek Musa_Moses Musabek Músirbek Mustafa Mynaidar Myrzageldi Mýsahan 
+			Nurbaqyt Nurgali Nurken Nurlan Nurmuhamet Nurmuhanbet Nursultan Nurtas 
+			Oljas Omar_Umar Omarhan Ondassyn Ongarsyn Onlasyn Órentai Oralhan Orazaq Orynbasar Ospan_Osman Ótep Oktyabr_October
+			Qabdylhamit Qaben Qabibolla Qabylanbek Qairat Qajymqan Qalabai Qalila Qalmuhanbet Qanat Qanatjan Qanseiit Qanysh Qapash Qasym_Qassim Qasym-Jomart Qayr Qajyghumar Qojahmet Quljabai Qulmahan Qurmangazy 
+			Rabat Rahat Rahmetolla Raqymjan Rashid Rinat Riskul Riza_Reza Ruslan 
+			Sábit Sagadat Sagidrahman Sagyrbai Sáken Sámet Sársen Seiil Selim Serik Serikbolsyn Serqul Shakarim Sháken Shalbai Shalqar Shámshi Shapyq Shiahmet Shyngys_Genghis Sultan_Sultan Sultanbek_Sultanbek Sultanmahmut 
+			Taimbet Tájibai Talgat Tanat Taýman Temir_Timur Temirhan Temirtai Tulen Turar Turlyhan Turgyn Turgynbek
+			Ularbek 
+			Ybyrai_Abraham Yerlan Ysqaq 
+			Zair Zairolla Zamanbek 
+		}
+
+		female_names = {
+			Aiaýlym Aida Aiday Aigerim Aiman Ainur Aitkul Aiza_Aisha Alfina Áliia Alishya Almagul Altynai Aqmaral Aqtoty Assel Ayman 
+			Baljan Bayan Bibigúl Bibisara Birganym Bulbul 
+			Dániia Dariga Deniza Dilda Dilnaz Dilyara Dina Dinara 
+			Fatima Fariza Feruza 
+			Galya Gayhar Gaziza Guljan Gülmira Gulnafis Gulnara Gúlshara Gúlyshad Gulzat Gulzira 
+			Inna Irina 
+			Jajira Janar Janbota Jansaya Jibek 
+			Kámshat Karina Karlyga Kaziza Khiuaz Korinna Kulyash 
+			Laila Lazzat Linda Liya Luiza 
+			Mádina Mánshúk Maqpal 
+			Nagima Núrken Nurum 
+			Raisa Rima Roza 
+			Sabina Sagat Saida Salidat Sara_Sarah Saule Sharbanu Sharipa Sholpan 
+			Tamara Turar 
+			Venera 
+			Zarina Zauresh Zinaida Zoya Zulfiya 
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "uly"
+		female_patronym = "qyzy"
+		prefix = no
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	uighur = {
+		graphical_cultures = { turkishgfx }
+
+		color = { 0.6 0.8 0.4 }
+
+		male_names = {
+			Abdubaqi Abdulla_Abdullah Abdukerim_Abdulkarim Abdulahat_Abdulahad Abdurashid_Abdulrashid Abduxaliq_Abdulkhaliq Abduweli_Abdulwali Ablajan Ablet Abu Adil Adiljan Alim_Alim Ahdar Ahmad_Ahmad Ahmadjan Alimjan Alptekin Aziz 
+			Bayanchur Bashir Bughraxan Burhan 
+			Cebrail_Gabriel 
+			Dadash Dawut_David Dilmurat 
+			Ehmet_Ahmad Ehmetjan Emin_Amin Erkin Eyüp_Job 
+			Gapur Ghulam
+			Halmurat Hisamudin Hoshur 
+			Ibrahim_Abraham Ilham Ilyas_Elijah Ilzat Isa_Jesus Ishaq_Isaac Islam_Islam Ismail_Ismail 
+			Jahangir 
+			Kahar Kebek Khoja
+			Lutpulla_Lutfullah 
+			Mahinur Mahmudin Mansur_Mansur Maqsud Masud Mehmut_Mahmud Memtimin Merxat Möminjan Muhemmet_Muhammad Murat_Murad Musa_Moses Muxtar_Mukhtar 
+			Nasir Nëghmet_Nigmat Niyaz Nur Nurmemet_Nurmuhammad 
+			Omar_Umar 
+			Perhat_Farhad 
+			Quddus 
+			Raim 
+			Sabir_Sabir Sabit Said_Said Salih Saifuddin_Sayfuddin Shireli_Sherali Shirelijan Shirmemet Shohrat Shoukhrat Skandar_Alexander Sulayman_Solomon
+			Tahir Tashpolat_Toshpo'lat Tilesh Tömür Timur_Timur Turdi Turghun Tursun 
+			Yaqup_James Yasin_Yasin Yulbars Yunus_Jonas Yusup_Joseph 
+			Zakir Ziya Zordun Zunun 
+		}
+
+		female_names = {
+			Alfire Alfiya Ammanisa Arzul Aygül Aynur
+			Bahargul
+			Dilber Dilnaz Dilhumar Dilreba Durnyam
+			Gülbahar Gulmira Gülnezer Gülyar 
+			Ilham Iparxan 
+			Madina Mahire Marhaba Mehbube Mihrigül Meryem_Mary Muslime Muyesser 
+			Najat Nur Nurnisa 
+			Patigül Patime_Fatima Paziliya
+			Reyhan Reyhangül 
+			Shereen
+			Umut
+			Sënëvër
+			Zulfiya Zunun 
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		male_patronym = " oglu"
+		female_patronym = " kizi"
+		prefix = no
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+}

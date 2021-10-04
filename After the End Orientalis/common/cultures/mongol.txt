@@ -60,4 +60,86 @@ mongol = {
 		modifier = default_culture_modifier
 		nomadic_in_alt_start = yes
 	}
+	daur = {
+		graphical_cultures = { newmongolgfx bodpagfx cumangfx }
+		
+		color = { 0.9 0.7 0.4 }
+
+		male_names = {
+			Oktyabr_October Chayan Çayan
+
+		}
+
+		female_names = {
+			Aleksandra_Alexandra 
+		}
+		
+		founder_named_dynasties = yes
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	kalmyk = {
+		graphical_cultures = { newmongolgfx bodpagfx cumangfx }
+		
+		color = { 0.7 0.7 0.6 }
+
+		male_names = {
+			Aduç Adyan Ajhr Akçan Aldar Aleksey_Alexis Angarak Arkad Artur_Arthur Ayn-ämd Ayuka 
+			Baatar Badma_Padma Bair Bakar Bata Batu Bayn Bayr Belek Bembö Bembya 
+			Chimid Chon 
+			Dalai Dandun Dava_David Djimba Dolan Dorzh Dzhav Dzhirgan 
+			Elya Erdni 
+			Harti 
+			Ijl Ivan_John 
+			Jañhr Jaba Jigmid 
+			Khontr Kichik Kirsän 
+			Lavr Lha-bzang Lidzhi Lorya Lubsan 
+			Menko Mergen Mikula_Nicholas Mingiyan 
+			Nikita_Niketas Notan 
+			Ochirtu Oka Oktyabr_October Orluk 
+			Pyurvya 
+			Sanal Sanan Sangadji Sanj Sants Saran Savr Shurguchi 
+			Tschon Tseren Tzatan Tzayatr 
+			Ubashi Ulan 
+			Vazki_Basil 
+			Yagur_George Yarka Yashla 
+			Zurgan 
+		}
+
+		female_names = {
+			Adyana Aga Aguya Altana Altn Altna Aytana 
+			Bata Bayna Bayra Buinta 
+			Chona 
+			Duya Dzhirgana 
+			Elistina Eugenia_Eugenia 
+			Gerel 
+			Marina_Marina 
+			Nogan Notana 
+			Rolma 
+			Seekhe Söökhlö 
+			Tsagan Tzatana Tzetzgö 
+			Ulana 
+			Zurgan
+		}
+		
+		founder_named_dynasties = yes
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
 }
