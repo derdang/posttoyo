@@ -167,24 +167,123 @@ senthang_middle_path = { #Seek common virtue and values in all religion. i.e. Ba
 	customizer = no
 	random = no
 }
-vegetarian = {
-	opposites = {
-		hunter
-	}
+## Mahayana schools
+
+mahayana_chan = {
 	potential = {
-		OR = {
-			religion_group = indian_group
-			religion_group = buddhist_group
-		}
+		religion = mahayana
 	}
-	same_opinion = 5
-	
-	health = 0.5
-	
-	random = no
 	religious = yes
-	ruler_designer_cost = 5
+	
+	opposites = {
+		mahayana_esoteric
+		mahayana_humanist
+		mahayana_lotus
+		mahayana_maitreyan
+		mahayana_pureland
+	}
+	monthly_piety = 0.10
+	diplomacy = 1
+
+	customizer = no
+	random = no
 }
+mahayana_esoteric = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+	
+	opposites = {
+		mahayana_chan
+		mahayana_humanist
+		mahayana_lotus
+		mahayana_maitreyan
+		mahayana_pureland
+	}
+	monthly_piety = 0.50
+	learning = 2
+
+	customizer = no
+	random = no
+}
+mahayana_humanist = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+
+	opposites = {
+		mahayana_chan
+		mahayana_esoteric
+		mahayana_lotus
+		mahayana_maitreyan
+		mahayana_pureland
+	}
+	diplomacy = 1
+	stewardship = 1
+
+	customizer = no
+	random = no
+}
+mahayana_lotus = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+	
+	opposites = {
+		mahayana_chan
+		mahayana_esoteric
+		mahayana_humanist
+		mahayana_maitreyan
+		mahayana_pureland
+	}
+	monthly_piety = 0.30
+
+	customizer = no
+	random = no
+}
+mahayana_maitreyan = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+	
+	opposites = {
+		mahayana_chan
+		mahayana_esoteric
+		mahayana_humanist
+		mahayana_lotus
+		mahayana_pureland
+	}
+	monthly_piety = 0.25
+	learning = 1
+
+	customizer = no
+	random = no
+}
+mahayana_pureland = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+
+	opposites = {
+		mahayana_chan
+		mahayana_esoteric
+		mahayana_humanist
+		mahayana_lotus
+		mahayana_maitreyan
+	}
+	monthly_character_prestige = 0.10
+	monthly_character_piety = 0.10
+
+	customizer = no
+	random = no
+}
+
+##Shinto Schools
 koshitsu_shinto = {
 	opposites = {
 		minzoku_shinto
@@ -235,6 +334,26 @@ bukka_shinto = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+##General Traits
+vegetarian = {
+	opposites = {
+		hunter
+	}
+	potential = {
+		OR = {
+			religion_group = indian_group
+			religion_group = buddhist_group
+		}
+	}
+	same_opinion = 5
+	
+	health = 0.5
+	
+	random = no
+	religious = yes
+	ruler_designer_cost = 5
+}
+
 sympathy_japonic = {
 	opposites = {
 		zealous

@@ -758,4 +758,33 @@ decisions = {
 			always = no
 		}
 	}
+	change_mahayana_schools = {
+		ai = no
+		
+		potential = {
+			religion = mahayana
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedmahayanaschool }
+		}
+		
+		allow = {
+			religion = mahayana
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = budevents.7 }				
+			}
+			custom_tooltip = { text = TXT_change_mahayana_schools }
+			set_character_flag = changedmahayanaschool
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 }

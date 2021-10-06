@@ -485,6 +485,151 @@ narrative_event = {
 		remove_trait = in_hiding
 	}
 }
+#Mahayana Branch Trait Decision
+character_event = {
+	id = budevents.7
+	desc = EVTDESC_budevent7
+	picture = GFX_evt_buddha_teaching
+	religion = mahayana
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_budevent7
+		hidden_tooltip = {
+			remove_trait = mahayana_esoteric
+			remove_trait = mahayana_humanist
+			remove_trait = mahayana_lotus
+			remove_trait = mahayana_maitreyan
+			remove_trait = mahayana_pureland
+
+		}
+		add_trait = mahayana_chan
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = EVTOPTB_budevent7
+		hidden_tooltip = {
+			remove_trait = mahayana_esoteric
+			remove_trait = mahayana_humanist
+			remove_trait = mahayana_lotus
+			remove_trait = mahayana_maitreyan
+			remove_trait = mahayana_chan
+
+		}
+		add_trait = mahayana_pureland
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_budevent7
+		hidden_tooltip = {
+			remove_trait = mahayana_chan
+			remove_trait = mahayana_humanist
+			remove_trait = mahayana_esoteric
+			remove_trait = mahayana_maitreyan
+			remove_trait = mahayana_pureland
+
+		}
+		add_trait = mahayana_lotus
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_budevent7
+		hidden_tooltip = {
+			character_event = {id = budevents.8 days = 1}
+
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+character_event = {
+	id = budevents.8
+	desc = EVTDESC_budevent7
+	picture = GFX_evt_buddha_teaching
+	religion = mahayana
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTE_budevent7
+		hidden_tooltip = {
+			remove_trait = mahayana_chan
+			remove_trait = mahayana_humanist
+			remove_trait = mahayana_lotus
+			remove_trait = mahayana_maitreyan
+			remove_trait = mahayana_pureland
+
+		}
+		add_trait = mahayana_esoteric
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = EVTOPTF_budevent7
+		hidden_tooltip = {
+			remove_trait = mahayana_esoteric
+			remove_trait = mahayana_pureland
+			remove_trait = mahayana_lotus
+			remove_trait = mahayana_maitreyan
+			remove_trait = mahayana_chan
+
+		}
+		add_trait = mahayana_humanist
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTG_budevent7
+		hidden_tooltip = {
+			remove_trait = mahayana_chan
+			remove_trait = mahayana_humanist
+			remove_trait = mahayana_esoteric
+			remove_trait = mahayana_lotus
+			remove_trait = mahayana_pureland
+
+		}
+		add_trait = mahayana_maitreyan
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_budevent7
+		hidden_tooltip = {
+			character_event = {id = budevents.7 days = 1}
+
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
 
 #Vessak events 100 - 120
 

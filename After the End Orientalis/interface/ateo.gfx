@@ -328,6 +328,50 @@ spriteType = {
 	
 ### Orientalis Traits
 
+#Mahayana Traits
+	spriteType = {
+		name = "GFX_trait_mahayana_chan"
+		texturefile = "gfx/traits/mahayana_chan.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_esoteric"
+		texturefile = "gfx/traits/mahayana_esoteric.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_humanist"
+		texturefile = "gfx/traits/mahayana_humanist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_lotus"
+		texturefile = "gfx/traits/mahayana_lotus.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_maitreyan"
+		texturefile = "gfx/traits/mahayana_maitreyan.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_pureland"
+		texturefile = "gfx/traits/mahayana_pureland.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
 #Japonic Traits
 	spriteType = {
 		name = "GFX_trait_koshitsu_shinto"
@@ -562,6 +606,10 @@ spriteType = {
 	spriteType = {
 		name = "GFX_change_shinto_branch"
 		texturefile = "gfx/interface/change_shinto_branch.tga"
+	}
+	spriteType = {
+		name = "GFX_change_mahayana_schools"
+		texturefile = "gfx/interface/change_mahayana_schools.tga"
 	}
 	spriteType = {
 		name = "GFX_hold_new_years_festival"
