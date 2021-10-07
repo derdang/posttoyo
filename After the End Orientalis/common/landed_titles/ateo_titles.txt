@@ -25938,6 +25938,8 @@ e_xinjiang = {
 		capital = 1318 # c_hetian
 		culture = uighur
 		
+		uighur = "Altishahr"
+		
 		d_hotan = {
 			color={ 126 9 95 }
 			color2={ 255 255 255 }
@@ -25996,10 +25998,30 @@ e_xinjiang = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1330 province_id = 1331 } }
+					any_demesne_province = { OR = { province_id = 1332 } }
 				}
 			}
-			capital = 1330 # c_wenu
+			capital = 1332 # c_aksu
+			
+			c_aksu = { # 1332
+				color={ 220 255 209 }
+				color2={ 255 255 255 }
+				
+				b_aksu = {
+				}
+				b_aksu_2 = {
+				}
+				b_aksu_3 = {
+				}
+				b_aksu_4 = {
+				}
+				b_aksu_5 = {
+				}
+				b_aksu_6 = {
+				}
+				b_aksu_7 = {
+				}
+			}
 			
 			c_wenu = { # 1330
 				color={ 131 255 93 }
@@ -26037,38 +26059,6 @@ e_xinjiang = {
 				b_kuqa_6 = {
 				}
 				b_kuqa_7 = {
-				}
-			}
-		}
-		d_alar = {
-			color={ 210 9 204 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1332 } }
-				}
-			}
-			capital = 1332 # c_aksu
-			
-			c_aksu = { # 1332
-				color={ 220 255 209 }
-				color2={ 255 255 255 }
-				
-				b_aksu = {
-				}
-				b_aksu_2 = {
-				}
-				b_aksu_3 = {
-				}
-				b_aksu_4 = {
-				}
-				b_aksu_5 = {
-				}
-				b_aksu_6 = {
-				}
-				b_aksu_7 = {
 				}
 			}
 		}
