@@ -2765,6 +2765,33 @@ oldworld = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
+	sanmin = { #What if Taiwan gets mystical?
+		graphical_culture = chinesegfx
+		
+		icon = 36
+		heresy_icon = 36
+		
+		color = { 0 0 149 }
+
+		scripture_name = THE_SPEECHES
+		
+		high_god_name = THE_TRIAD
+		
+		god_names = {
+			GOD_SUN_YATSEN GOD_KAI_SHEK GOD_MAZU
+		}
+		evil_god_names = {
+			GOD_THE_BRILLIANT_STAR GOD_THE_HAMMERER
+		}
+		
+		allow_viking_invasion = yes
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
 	jinbenwei = { #Chinese Consumerism
 		graphical_culture = muslimgfx
 		
