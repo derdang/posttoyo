@@ -1,0 +1,561 @@
+#######Chinese Characters IDs#######
+
+#
+#
+#
+#
+#3923 - Taiwanese
+
+####Historical Ones - Taiwan####
+
+3923001 = { #Koxinga
+	name = "Sen"
+	dynasty = 3923021 #Zheng
+	culture = taiwanese
+	religion = sanmin
+	trait = legendary
+	occluded = yes
+	
+	1624.8.27 = {
+		birth = yes
+	}
+	1662.6.23 = {
+		death = yes
+	}
+}
+3923002 = {
+	name = "Jing"
+	dynasty = 3923021 #Zheng
+	culture = taiwanese
+	religion = sanmin
+	trait = legendary
+	occluded = yes
+	father = 3923001 #Zheng Sen
+	
+	1642.10.25 = {
+		birth = yes
+	}
+	1681.3.17 = {
+		death = yes
+	}
+}
+3923003 = {
+	name = "Keshuang"
+	dynasty = 3923021 #Zheng
+	culture = taiwanese
+	religion = sanmin
+	trait = legendary
+	occluded = yes
+	father = 3923002 #Zheng Jing
+	
+	1670.8.13 = {
+		birth = yes
+	}	
+	1707.9.22 = {
+		death = yes
+	}
+
+}
+3923004 = {
+	name = "Ching-sung"
+	dynasty = 3923022 #Tang
+	culture = taiwanese
+	religion = sanmin
+	trait = legendary
+	occluded = yes
+	
+	1841.1.1 = {
+		birth = yes
+	}
+	1903.1.1 = {
+		death = yes
+	}
+}		
+3923005 = {
+	name = "Yung-fu"
+	dynasty = 3923023 #Liu
+	culture = taiwanese
+	religion = sanmin
+	trait = legendary
+	occluded = yes
+	
+	1837.10.10 = {
+		birth = yes
+	}
+	1917.1.1 = {
+		death = yes
+	}
+}
+3923006 = { #Sun Yat-Sen
+	name = "Zaizhi"
+	dynasty = 3923024 #Gúofù
+	culture = taiwanese
+	religion = sanmin
+	trait = legendary
+	occluded = yes
+	
+	1866.11.12 = {
+		birth = yes
+	}
+	1925.3.12 = {
+		death = yes
+	}
+}
+3923007 = { #Chiang Kai-shek
+	name = "Jieshi"
+	dynasty = 3923024 #Gúofù
+	culture = taiwanese
+	religion = sanmin
+	trait = legendary
+	occluded = yes
+	father = 3923006 #Gúofù Zaizhi
+	
+	1887.10.31 = {
+		birth = yes
+	}
+	1975.4.5 = {
+		death = yes
+	}
+}
+	
+########Post-Event Characters - Taiwan#########	
+
+###Royal Family###
+
+3923008 = { #1st King of Taiwan
+	name = "Deshen"
+	dynasty = 3923025 #Wu
+	culture = taiwanese
+	religion = sanmin
+	martial = 8
+	diplomacy = 6
+	stewardship = 7
+	intrigue = 6
+	learning = 7
+	disallow_random_traits = yes
+	trait = skilled_tactician
+	trait = strong
+	trait = shrewd
+	trait = diligent
+	trait = ambitious
+	trait = pious
+	
+	2503.2.16 = {
+		birth = yes
+	}
+	2556.10.4 = {
+		death = yes
+	}
+}
+
+3923009 = { #2nd King of Taiwan
+	name = "Yiwang"
+	dynasty = 3923025 #Wu
+	culture = taiwanese
+	religion = sanmin
+	martial = 3
+	diplomacy = 7
+	stewardship = 8
+	intrigue = 3
+	learning = 6
+	disallow_random_traits = yes
+	trait = fortune_builder
+	trait = temperate
+	trait = charitable
+	trait = honorable
+	trait = just
+	trait = pious
+	father = 3923008 #Wu Deshen
+	
+	2526.9.1 = {
+		birth = yes
+	}
+	2591.4.27 = {
+		death = yes
+	}
+}
+
+3923010 = { #3rd King of Taiwan, Current Ruler
+	name = "Wexian"
+	dynasty = 3923025 #Wu
+	culture = taiwanese
+	religion = sanmin
+	martial = 4
+	diplomacy = 9
+	stewardship = 7
+	intrigue = 5
+	learning = 5
+	disallow_random_traits = yes
+	trait = grey_eminence
+	trait = shrewd
+	trait = patient
+	trait = gregarious
+	trait = just
+	trait = content
+	father = 3923009 #Wu Yiwang
+	
+	2551.5.11 = {
+		birth = yes
+	}
+}
+
+3923011 = { #Heir of Taiwan
+	name = "Zhian"
+	dynasty = 3923025 #Wu
+	culture = taiwanese
+	religion = sanmin
+	martial = 3
+	diplomacy = 4
+	stewardship = 7
+	intrigue = 3
+	learning = 4
+	disallow_random_traits = yes
+	trait = midas_touched
+	trait = slothful
+	trait = humble
+	trait = honest
+	trait = cynical
+	trait = trusting
+	father = 3923010 #Wu Wexian
+	
+	2576.12.1 = {
+		birth = yes
+	}
+}
+
+3923012 = { #Son
+	name = "Zhijun"
+	dynasty = 3923025 #Wu
+	culture = taiwanese
+	religion = sanmin
+	martial = 9
+	diplomacy = 7
+	stewardship = 7
+	intrigue = 6
+	learning = 5
+	disallow_random_traits = yes
+	trait = brilliant_strategist
+	trait = shrewd
+	trait = diligent
+	trait = envious
+	trait = ambitious
+	trait = deceitful
+	father = 3923010 #Wu Wexian
+	
+	2580.8.12 = {
+		birth = yes
+	}
+}
+
+3923013 = { #Daughter
+	name = "Zhijia"
+	female = yes
+	dynasty = 3923025 #Wu
+	culture = taiwanese
+	religion = sanmin
+	martial = 3
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 9
+	learning = 5
+	disallow_random_traits = yes
+	trait = elusive_shadow
+	trait = fair
+	trait = shrewd
+	trait = envious
+	trait = ambitious
+	trait = deceitful
+	trait = cynical
+	father = 3923010 #Wu Wexian
+	
+	2582.1.7 = {
+		birth = yes
+	}
+}
+
+###Dukes of Taiwan###
+
+3923014 = { #Duke of Taiwanfu
+	name = "Song"
+	dynasty = 3923026 #Dai
+	culture = taiwanese
+	religion = sanmin
+	martial = 2
+	diplomacy = 6
+	stewardship = 3
+	intrigue = 3
+	learning = 4
+	disallow_random_traits = yes
+	trait = underhanded_rogue
+	trait = humble
+	trait = gregarious
+	trait = honorable
+	
+	2573.3.15 = {
+		birth = yes
+	}
+}
+
+3923015 = { #Heir of Taiwanfu
+	name = "Shi"
+	dynasty = 3923026 #Dai
+	culture = taiwanese
+	religion = sanmin
+	martial = 4
+	diplomacy = 5
+	stewardship = 4
+	intrigue = 4
+	learning = 4
+	trait = playful
+	trait = conscientious
+	father = 3923014 #Dai Song
+
+	2596.10.4 = {
+		birth = yes
+	}
+}
+
+3923016 = { #Daughter
+	name = "Wuhan"
+	female = yes
+	dynasty = 3923026 #Dai
+	culture = taiwanese
+	religion = sanmin
+	martial = 3
+	diplomacy = 4
+	stewardship = 6
+	intrigue = 4
+	learning = 3
+	trait = curious
+	father = 3923014 #Dai Song
+	
+	2599.7.11 = {
+		birth = yes
+	}
+}
+
+3923017 = { #Son
+	name = "Jin"
+	dynasty = 3923026 #Dai
+	culture = taiwanese
+	religion = sanmin
+	martial = 5
+	diplomacy = 2
+	stewardship = 3
+	intrigue = 2
+	learning = 5
+	father = 3923014 #Dai Song
+	
+	2601.2.22 = {
+		birth = yes
+	}
+}
+
+3923018 = { #Duke of Tainan
+	name = "Cai"
+	dynasty = 3923027 #Meng
+	culture = taiwanese
+	religion = mahayana
+	martial = 2
+	diplomacy = 5
+	stewardship = 4
+	intrigue = 7
+	learning = 5
+	disallow_random_traits = yes
+	trait = intricate_webweaver
+	trait = patient
+	trait = deceitful
+	trait = gregarious
+	
+	2554.10.31 = {
+		birth = yes
+	}
+}
+
+3923019 = { #Heir of Tainan
+	name = "Qiang"
+	dynasty = 3923027 #Meng
+	culture = taiwanese
+	religion = mahayana
+	martial = 4
+	diplomacy = 6
+	stewardship = 8
+	intrigue = 5
+	learning = 4
+	disallow_random_traits = yes
+	trait = thrifty_clerk
+	trait = greedy
+	trait = just
+	trait = erudite
+	father = 3923018 #Meng Cai
+	
+	2576.3.11 = {
+		birth = yes
+	}
+}
+
+3923020 = { #Daughter
+	name = "Guanyu"
+	female = yes
+	dynasty = 3923027 #Meng
+	culture = taiwanese
+	religion = mahayana
+	martial = 4
+	diplomacy = 8
+	stewardship = 6
+	intrigue = 4
+	learning = 5
+	disallow_random_traits = yes
+	trait = charismatic_negotiator
+	trait = diligent
+	trait = proud
+	trait = cynical
+	trait = gregarious
+	father = 3923018 #Meng Cai
+	
+	2579.6.23 = {
+		birth = yes
+	}
+}
+
+3923021 = { #Daughter
+	name = "Xun"
+	female = yes
+	dynasty = 3923027 #Meng
+	culture = taiwanese
+	religion = mahayana
+	martial = 2
+	diplomacy = 4
+	stewardship = 6
+	intrigue = 8
+	learning = 3
+	disallow_random_traits = yes
+	trait = flamboyant_schemer
+	trait = greedy
+	trait = envious
+	trait = deceitful
+	trait = stubborn
+	father = 3923018 #Meng Cai
+	
+	2582.12.3 = {
+		birth = yes
+	}
+}
+
+3923022 = { #Son
+	name = "Fen"
+	dynasty = 3923027 #Meng
+	culture = taiwanese
+	religion = mahayana
+	martial = 3
+	diplomacy = 5
+	stewardship = 6
+	intrigue = 5
+	learning = 8
+	disallow_random_traits = yes
+	trait = scholarly_theologian
+	trait = patient
+	trait = humble
+	trait = content
+	trait = erudite
+	father = 3923018 #Meng Cai
+	
+	2584.5.1 = {
+		birth = yes
+	}
+}
+
+3923023 = { #Duke of Taitung
+	name = "Zao"
+	dynasty = 3923028 #Tuwana
+	culture = gaoshan
+	religion = sanmin
+	martial = 4
+	diplomacy = 3
+	stewardship = 5
+	intrigue = 6
+	learning = 4
+	disallow_random_traits = yes
+	trait = midas_touched
+	trait = chaste
+	trait = greedy
+	trait = pious
+	trait = ambitious
+	
+	2560.2.9 = {
+		birth = yes
+	}
+}
+
+3923024 = { #Heiress of Taitung
+	name = "Chun"
+	female = yes
+	dynasty = 3923028 #Tuwana
+	culture = gaoshan
+	religion = sanmin
+	martial = 6
+	diplomacy = 3
+	stewardship = 3
+	intrigue = 3
+	learning = 5
+	disallow_random_traits = yes
+	trait = tough_soldier
+	trait = wroth
+	trait = humble
+	trait = brave
+	trait = pious
+	father = 3923023 #Tuwana Zhao
+	
+	2583.3.6 = {
+		birth = yes
+	}
+}
+
+3923025 = { #Son
+	name = "Yong"
+	dynasty = 3923028 #Tuwana
+	culture = gaoshan
+	religion = sanmin
+	martial = 4
+	diplomacy = 2
+	stewardship = 3
+	intrigue = 3
+	learning = 6
+	disallow_random_traits = yes
+	trait = martial_cleric
+	trait = temperate
+	trait = humble
+	trait = pious
+	trait = erudite
+	father = 3923023 #Tuwana Zhao
+	
+	2585.8.29 = {
+		birth = yes
+	}
+}
+
+3923026 = { #Daughter
+	name = "Yuhan"
+	female = yes
+	dynasty = 3923028 #Tuwana
+	culture = gaoshan
+	religion = sanmin
+	martial = 4
+	diplomacy = 7
+	stewardship = 4
+	intrigue = 3
+	learning = 5
+	disallow_random_traits = yes
+	trait = naive_appeaser
+	trait = patient
+	trait = stubborn
+	trait = honest
+	trait = rude
+	father = 3923023 #Tuwana Zhao
+	
+	2587.12.23 = {
+		birth = yes
+	}
+}
+
+###Counts of Taiwan###
