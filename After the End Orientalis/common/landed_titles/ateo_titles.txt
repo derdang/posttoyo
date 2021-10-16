@@ -21391,6 +21391,8 @@ e_guangxi = {
 				color={ 108 239 255 }
 				color2={ 255 255 255 }
 				
+				zhuang = "Baksaek"
+				
 				b_baise = {
 					zhuang = "Baksaek"
 				}
@@ -21976,9 +21978,15 @@ e_guangdong = {
 		capital = 983 # c_guangzhou
 		culture = hakka
 		
+		hong_konger = "Kwangtung"
+		macanese = "Cantão"
+		
 		d_guangzhou = {
 			color={ 133 25 85 }
 			color2={ 255 255 255 }
+			
+			hong_konger = "Kwangchow"
+			macanese = "Cantão"
 			
 			allow = {
 				OR = {
@@ -21991,6 +21999,9 @@ e_guangdong = {
 			c_guangzhou = { # 983
 				color={ 123 35 80 }
 				color2={ 255 255 255 }
+				
+				hong_konger = "Kwangchow"
+				macanese = "Cantão"
 				
 				b_yuexiu = {
 				}
@@ -22029,6 +22040,8 @@ e_guangdong = {
 			c_nansha = { # 985
 				color={ 123 30 78 }
 				color2={ 255 255 255 }
+				
+				hong_konger = "Punyu"
 				
 				b_nansha = {
 				}
@@ -22438,6 +22451,8 @@ e_guangdong = {
 			color={ 187 246 97 }
 			color2={ 255 255 255 }
 			
+			macanese = "Macao"
+			
 			allow = {
 				OR = {
 					lower_tier_than = KING
@@ -22449,6 +22464,8 @@ e_guangdong = {
 			c_macau = { # 989
 				color={ 177 0 92 }
 				color2={ 255 255 255 }
+				
+				macanese = "Macao"
 				
 				b_nossa_senhora_de_fatima = {
 				}
