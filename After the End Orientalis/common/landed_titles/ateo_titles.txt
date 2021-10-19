@@ -28971,9 +28971,13 @@ e_min_tai = {
 		capital = 1582 # c_fuzhou
 		culture = min
 		
+		min = "Hokkien"
+		
 		d_fuzhou = {
 			color={ 84 173 147 }
 			color2={ 255 255 255 }
+			
+			min = "Foochow"
 			
 			allow = {
 				OR = {
@@ -28986,6 +28990,8 @@ e_min_tai = {
 			c_fuzhou = { # 1582
 				color={ 94 163 152 }
 				color2={ 255 255 255 }
+				
+				min = "Foochow"
 				
 				b_gulou_2 = {
 				}
@@ -29006,6 +29012,8 @@ e_min_tai = {
 				color={ 119 255 234 }
 				color2={ 255 255 255 }
 				
+				min = "Lò-nguòng"
+				
 				b_fengshan = {
 				}
 				b_songshan_2 = {
@@ -29024,6 +29032,8 @@ e_min_tai = {
 			c_mawei = { # 1584
 				color={ 2 106 90 }
 				color2={ 255 255 255 }
+				
+				min = "Ma-muoi"
 				
 				b_mawei = {
 				}
@@ -29045,6 +29055,9 @@ e_min_tai = {
 			color={ 78 197 168 }
 			color2={ 255 255 255 }
 			
+			min = "Lêng-nâ" #Dragon Rock
+			hakka = "Liùng-ngàm"
+			
 			allow = {
 				OR = {
 					lower_tier_than = KING
@@ -29056,6 +29069,8 @@ e_min_tai = {
 			c_xinluo = { # 1600
 				color={ 88 187 173 }
 				color2={ 255 255 255 }
+				
+				hakka = "Sîn-lò-khî"
 				
 				b_dongcheng_4 = {
 				}
@@ -29075,6 +29090,8 @@ e_min_tai = {
 			c_changting = { # 1601
 				color={ 0 119 102 }
 				color2={ 255 255 255 }
+				
+				hakka = "Tshòng-tin"
 				
 				b_tingzhou = {
 				}
@@ -29204,6 +29221,8 @@ e_min_tai = {
 			color={ 126 230 202 }
 			color2={ 255 255 255 }
 			
+			min = "Nìng-dáik"
+			
 			allow = {
 				OR = {
 					lower_tier_than = KING
@@ -29215,6 +29234,8 @@ e_min_tai = {
 			c_jiaocheng = { # 1588
 				color={ 136 220 207 }
 				color2={ 255 255 255 }
+				
+				min = "Cieu-siàng"
 				
 				b_jiaocheng = {
 				}
@@ -29234,6 +29255,8 @@ e_min_tai = {
 			c_fuan = { # 1589
 				color={ 50 123 112 }
 				color2={ 255 255 255 }
+				
+				min = "Hók-ang-chê"
 				
 				b_fuan_2 = {
 				}
@@ -29274,6 +29297,8 @@ e_min_tai = {
 			color={ 104 2 222 }
 			color2={ 255 255 255 }
 			
+			min = "Xinghua"
+			
 			allow = {
 				OR = {
 					lower_tier_than = KING
@@ -29285,6 +29310,8 @@ e_min_tai = {
 			c_putian = { # 1585
 				color={ 114 248 227 }
 				color2={ 255 255 255 }
+				
+				min = "Xinghua"
 				
 				b_chengxiang_3 = {
 				}
@@ -29304,6 +29331,8 @@ e_min_tai = {
 			c_fuqing = { # 1586
 				color={ 61 104 97 }
 				color2={ 255 255 255 }
+				
+				min = "Hók-chiang"
 				
 				b_fuqing = {
 				}
@@ -29394,6 +29423,8 @@ e_min_tai = {
 				color={ 32 213 185 }
 				color2={ 255 255 255 }
 				
+				min = "Éng-chhun"
+				
 				b_taocheng = {
 				}
 				b_xiayang = {
@@ -29413,6 +29444,8 @@ e_min_tai = {
 		d_sanming = {
 			color={ 85 94 105 }
 			color2={ 255 255 255 }
+			
+			min = "Sang-mìng"
 			
 			allow = {
 				OR = {
@@ -32642,6 +32675,624 @@ e_shaanxi = {
 				b_longchi_2 = {
 				}
 				b_sufang = {
+				}
+			}
+		}
+	}
+}
+e_zhejiang = {
+	color={ 39 6 42 }
+	color2={ 255 255 20 }
+	
+	capital = 1609 # c_hangzhou
+	culture = wu
+	
+	k_hang = {
+		color={ 29 16 37 }
+		color2={ 255 255 255 }
+		
+		capital = 1609 # c_hangzhou
+		culture = wu
+	
+		d_hangzhou = {
+			color={ 9 36 27 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1609 province_id = 1610 province_id = 1611 province_id = 1612 } }
+				}
+			}
+			capital = 1609 # c_hangzhou
+			
+			c_hangzhou = { # 1609
+				color={ 255 46 22 }
+				color2={ 255 255 255 }
+				
+				b_jianggan = {
+				}
+				b_shangcheng = {
+				}
+				b_gongshu = {
+				}
+				b_binjiang = {
+				}
+				b_linping = {
+				}
+				b_xiaoshan = {
+				}
+				b_yuhang = {
+				}
+			}
+			c_chunan = { # 1612
+				color={ 255 94 115 }
+				color2={ 255 255 255 }
+				
+				b_qiandaohu = {
+				}
+				b_linqi = {
+				}
+				b_weiping = {
+				}
+				b_jiangjia = {
+				}
+				b_fenkou = {
+				}
+				b_shilin_2 = {
+				}
+				b_dashu = {
+				}
+			}
+			c_fuyang = { # 1610
+				color={ 255 66 63 }
+				color2={ 255 255 255 }
+				
+				b_fuchun = {
+				}
+				b_chunjiang = {
+				}
+				b_dongzhou_3 = {
+				}
+				b_jincheng_2 = {
+				}
+				b_linglong = {
+				}
+				b_shanggan = {
+				}
+				b_qingshanhu = {
+				}
+			}
+			c_jiande = { # 1611
+				color={ 255 80 61 }
+				color2={ 255 255 255 }
+				
+				b_yangxi_8 = {
+				}
+				b_genglou = {
+				}
+				b_xinanjiang = {
+				}
+				b_meicheng_2 = {
+				}
+				b_lijia = {
+				}
+				b_hangtou = {
+				}
+				b_daciyan = {
+				}
+			}
+		}
+		d_jiaxing = {
+			color={ 150 24 37 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1613 province_id = 1614 province_id = 1615 } }
+				}
+			}
+			capital = 1613 # c_jiaxing
+			
+			c_jiaxing = { # 1613
+				color={ 140 34 32 }
+				color2={ 255 255 255 }
+				
+				holy_site = taoist
+				
+				b_nanhu = {
+				}
+				b_pinghu_3 = {
+				}
+				b_haining = {
+				}
+				b_tongxiang = {
+				}
+				b_xiuzhou = {
+				}
+				b_wuyuan = {
+				}
+				b_weitang = {
+				}
+			}
+			c_changxing = { # 1615
+				color={ 140 67 70 }
+				color2={ 255 255 255 }
+				
+				b_zhicheng = {
+				}
+				b_hongqiao = {
+				}
+				b_lincheng = {
+				}
+				b_sian = {
+				}
+				b_xiaopu = {
+				}
+				b_heping_3 = {
+				}
+				b_meishan_2 = {
+				}
+			}
+			c_huzhou = { # 1614
+				color={ 174 19 27 }
+				color2={ 255 255 255 }
+				
+				b_wuxing = {
+				}
+				b_nanxun = {
+				}
+				b_wukang = {
+				}
+				b_qianyuan = {
+				}
+				b_xinshi_2 = {
+				}
+				b_luoshe = {
+				}
+				b_yuyue = {
+				}
+			}
+		}
+		d_ningbo = {
+			color={ 9 64 29 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1619 province_id = 1620 province_id = 1621 } }
+				}
+			}
+			capital = 1619 # c_yinzhou
+			
+			c_yinzhou = { # 1619
+				color={ 255 74 24 }
+				color2={ 255 255 255 }
+				
+				b_yinzhou_3 = {
+				}
+				b_cixi = {
+				}
+				b_yuyao = {
+				}
+				b_fenghua = {
+				}
+				b_beilun = {
+				}
+				b_jiangbei_4 = {
+				}
+				b_haishu = {
+				}
+			}
+			c_ninghai = { # 1620
+				color={ 255 105 51 }
+				color2={ 255 255 255 }
+				
+				b_yuelong = {
+				}
+				b_meilin_2 = {
+				}
+				b_qiaotouhu = {
+				}
+				b_taoyuan_4 = {
+				}
+				b_chalu = {
+				}
+				b_qiantong = {
+				}
+				b_xidian = {
+				}
+			}
+			c_zhoushan = { # 1621
+				color={ 232 74 0 }
+				color2={ 255 255 255 }
+				
+				b_tang_2 = {
+				}
+				b_baiquan = {
+				}
+				b_jintang_2 = {
+				}
+				b_ganlan = {
+				}
+				b_dongji = {
+				}
+				b_liuheng = {
+				}
+				b_caiyuan = {
+				}
+			}
+		}
+		d_shaoxing = {
+			color={ 214 24 79 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1616 province_id = 1617 province_id = 1618 } }
+				}
+			}
+			capital = 1616 # c_yuecheng
+			
+			c_yuecheng = { # 1616
+				color={ 204 34 74 }
+				color2={ 255 255 255 }
+				
+				b_yuecheng = {
+				}
+				b_keqiao = {
+				}
+				b_shangyu = {
+				}
+				b_daoxu = {
+				}
+				b_shangpu = {
+				}
+				b_fenghui = {
+				}
+				b_lihai = {
+				}
+			}
+			c_shengzhou = { # 1618
+				color={ 175 84 84 }
+				color2={ 255 255 255 }
+				
+				b_shengzhou = {
+				}
+				b_yulin = {
+				}
+				b_nanming_2 = {
+				}
+				b_qixing_2 = {
+				}
+				b_shaxi_2 = {
+				}
+				b_ruao = {
+				}
+				b_jingling = {
+				}
+			}
+			c_zhuji = { # 1617
+				color={ 175 29 66 }
+				color2={ 255 255 255 }
+				
+				b_jiyang_2 = {
+				}
+				b_huandong = {
+				}
+				b_taozhu = {
+				}
+				b_datang_2 = {
+				}
+				b_ciwu = {
+				}
+				b_ruanshi = {
+				}
+				b_paitou = {
+				}
+			}
+		}
+	}
+	k_dongou = {
+		color={ 196 150 66 }
+		color2={ 255 255 255 }
+		
+		capital = 1622 # c_wenzhou
+		culture = wu
+		
+		d_wenzhou = {
+			color={ 216 130 76 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1622 province_id = 1623 province_id = 1624 } }
+				}
+			}
+			capital = 1622 # c_wenzhou
+			
+			c_wenzhou = { # 1622
+				color={ 226 120 81 }
+				color2={ 255 255 255 }
+				
+				b_lucheng = {
+				}
+				b_ouhai = {
+				}
+				b_longwan_2 = {
+				}
+				b_hesheng_2 = {
+				}
+				b_yueqing = {
+				}
+				b_beicheng_2 = {
+				}
+				b_dongcheng_5 = {
+				}
+			}
+			c_dongtou = { # 1624
+				color={ 229 104 66 }
+				color2={ 255 255 255 }
+				
+				b_dongtou = {
+				}
+				b_beiao = {
+				}
+				b_yuanyue = {
+				}
+				b_dongping_2 = {
+				}
+				b_niyu = {
+				}
+				b_damen = {
+				}
+				b_luxi = {
+				}
+			}
+			c_ruian = { # 1623
+				color={ 224 83 51 }
+				color2={ 255 255 255 }
+				
+				b_ruian = {
+				}
+				b_longgang_3 = {
+				}
+				b_cangnan = {
+				}
+				b_wencheng = {
+				}
+				b_wuyanling = {
+				}
+				b_kunyang = {
+				}
+				b_aojiang = {
+				}
+			}
+		}
+		d_jinhua = {
+			color={ 234 63 58 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1628 province_id = 1629 } }
+				}
+			}
+			capital = 1628 # c_lanxi
+			
+			c_lanxi = { # 1628
+				color={ 224 73 53 }
+				color2={ 255 255 255 }
+				
+				b_wucheng = {
+				}
+				b_lanxi = {
+				}
+				b_pujiang_2 = {
+				}
+				b_duohu = {
+				}
+				b_dongxiao_2 = {
+				}
+				b_baiyang = {
+				}
+				b_hushan = {
+				}
+			}
+			c_yiwu = { # 1629
+				color={ 224 107 98 }
+				color2={ 255 255 255 }
+				
+				b_yiwu = {
+				}
+				b_yongkang_2 = {
+				}
+				b_dongyang = {
+				}
+				b_anwen_2 = {
+				}
+				b_shanghu = {
+				}
+				b_xinwo = {
+				}
+				b_renchuan = {
+				}
+			}
+		}
+		d_lishui = {
+			color={ 211 160 125 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1632 province_id = 1633 } }
+				}
+			}
+			capital = 1632 # c_liandu
+			
+			c_liandu = { # 1632
+				color={ 221 150 130 }
+				color2={ 255 255 255 }
+				
+				b_liandu = {
+				}
+				b_wuyun = {
+				}
+				b_huzhen_2 = {
+				}
+				b_dayang = {
+				}
+				b_hecheng = {
+				}
+				b_wenxi = {
+				}
+				b_gaohu = {
+				}
+			}
+			c_longquan = { # 1633
+				color={ 219 131 107 }
+				color2={ 255 255 255 }
+				
+				b_longquan = {
+				}
+				b_fuyun_8 = {
+				}
+				b_yuanhe = {
+				}
+				b_hongxing = {
+				}
+				b_xiping_2 = {
+				}
+				b_miaogao = {
+				}
+				b_songyuan_2 = {
+				}
+			}
+		}
+		d_quzhou = {
+			color={ 211 83 85 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1630 province_id = 1631 } }
+				}
+			}
+			capital = 1630 # c_kecheng
+			
+			c_kecheng = { # 1630
+				color={ 221 73 90 }
+				color2={ 255 255 255 }
+				
+				b_kecheng = {
+				}
+				b_quijiang = {
+				}
+				b_donghua = {
+				}
+				b_longzhou = {
+				}
+				b_huzhen = {
+				}
+				b_xikou_2 = {
+				}
+				b_zhanjia = {
+				}
+			}
+			c_jiangshan = { # 1631
+				color={ 221 90 104 }
+				color2={ 255 255 255 }
+				
+				b_jiangshan = {
+				}
+				b_tianma = {
+				}
+				b_zhaoxian = {
+				}
+				b_huibu = {
+				}
+				b_fangcun = {
+				}
+				b_chengguan_6 = {
+				}
+				b_majin = {
+				}
+			}
+		}
+		d_taizhou = {
+			color={ 245 126 84 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 1625 province_id = 1626 province_id = 1627 } }
+				}
+			}
+			capital = 1625 # c_linhai
+			
+			c_linhai = { # 1625
+				color={ 255 116 89 }
+				color2={ 255 255 255 }
+				
+				b_jaojiang = {
+				}
+				b_linhai = {
+				}
+				b_haiyou = {
+				}
+				b_shaliu = {
+				}
+				b_hengdu = {
+				}
+				b_jiantiao = {
+				}
+				b_pubagang = {
+				}
+			}
+			c_tiantai = { # 1627
+				color={ 229 104 0 }
+				color2={ 255 255 255 }
+				
+				b_chicheng = {
+				}
+				b_shifeng = {
+				}
+				b_fuxi_2 = {
+				}
+				b_baihe_2 = {
+				}
+				b_jietou = {
+				}
+				b_hongchou = {
+				}
+				b_tantou_2 = {
+				}
+			}
+			c_yuhuan = { # 1626
+				color={ 255 144 124 }
+				color2={ 255 255 255 }
+				
+				b_yuhuan = {
+				}
+				b_wenling = {
+				}
+				b_luqiao = {
+				}
+				b_huangyan = {
+				}
+				b_hengjie = {
+				}
+				b_jinping_2 = {
+				}
+				b_pengjie = {
 				}
 			}
 		}
