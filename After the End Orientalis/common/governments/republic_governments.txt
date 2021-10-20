@@ -69,6 +69,15 @@ republic_governments = {
 					}
 				}
 			}
+			NOR = { 
+				capital_scope = { has_province_modifier = pirate_outpost }
+				primary_title = {
+					OR = {
+						title = k_singapore
+					}
+				}
+				liege = { government = pirate_government }
+			}
 		}
 		
 		color = { 250 0 0 }
@@ -184,5 +193,110 @@ republic_governments = {
 
 		## Modifiers
 		court_size_modifier = 10
+	}
+	pirate_government = {
+		preferred_holdings = { CITY CASTLE }
+		allowed_holdings = { 
+			CASTLE
+			CITY
+			FAMILY_PALACE			
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			muslim_government
+			theocratic_feudal_government
+			chinese_imperial_government
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_pirate"
+		title_prefix = "pirate_"
+		potential = {
+			OR = { 
+				capital_scope = { has_province_modifier = pirate_outpost }
+				primary_title = {
+					OR = {
+						title = k_singapore
+					}
+				}
+				liege = { government = pirate_government }
+			}
+			controls_religion = no
+			NOT = { is_government_potential = roman_imperial_government }
+			NOT = { is_government_potential = order_government }
+
+			OR = {
+				AND = {
+					is_patrician = yes
+					OR = {
+						liege_before_war = {
+							NOT = { character = PREV }
+							is_merchant_republic = yes
+							NOT = {
+								liege_before_war = {
+									NOT = { character = PREV }
+									is_merchant_republic = yes
+								}
+							}
+						}
+						has_game_started = no
+					}
+				}
+				AND = {
+					OR = {
+						AND = {
+							has_game_started = yes
+							is_merchant_republic = yes
+						}
+						capital_scope = { port = yes }
+					}
+					higher_real_tier_than = count
+					any_demesne_province = {
+						always = yes
+					}
+					NOT = {
+						liege_before_war = {
+							NOT = { character = PREV }
+							is_merchant_republic = yes
+						}
+					}
+				}
+			}
+		}
+		
+		color = { 0 0 0 }
+		
+		merchant_republic = yes
+		have_gender_laws = no
+		max_consorts = 4
+		barons_need_dynasty = yes
+		can_demand_religious_conversion = no
+		can_build_tribal = no
+		ignore_de_jure_laws = yes
+		
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 1000
+
+		## Modifiers
+		court_size_modifier = 10
+		
+		allow_looting = yes
+		
+		character_modifier = {
+			days_of_supply = 60
+			retinuesize_perc = 2.0
+			hidden_effect = {
+				bloodline_effect_reaver = 1
+				trait_effect_capture_commanders = 1
+			}
+		}
 	}
 }

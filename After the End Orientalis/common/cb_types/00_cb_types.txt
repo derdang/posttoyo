@@ -8082,6 +8082,7 @@ coastal_republic = {
 				is_merchant_republic = yes
 				is_patrician = yes
 			}
+			NOT = { government = pirate_government }
 			NOT = { is_liege_or_above = FROM }
 			NOT = { is_vassal_or_below = FROM }
 			NOT = { same_liege = FROM }
@@ -8258,6 +8259,7 @@ coastal_county_republic = {
 				is_merchant_republic = yes
 				is_patrician = yes
 			}
+			NOT = { government = pirate_government }
 			NOT = { is_liege_or_above = FROM }
 			NOT = { is_vassal_or_below = FROM }
 			NOT = { same_liege = FROM }
@@ -9990,6 +9992,7 @@ seize_trade_post = {
 				is_patrician = yes
 			}
 			NOT = { is_liege_or_above = FROM }
+			NOT = { government = pirate_government }
 
 			OR = {
 				NOT = { same_realm = FROM }
@@ -12665,6 +12668,7 @@ pagan_county_conquest = {
 	can_use = {
 		ROOT = {
 			mercenary = no
+			NOT = { government = pirate_government }
 		}
 		OR = {
 			ROOT = {

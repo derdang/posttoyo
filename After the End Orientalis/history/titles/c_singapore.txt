@@ -1,7 +1,9 @@
-# e_malaysia
-2000.1.1={
-	law = agnatic_succession
-	law = succ_gavelkind
+500.1.1 = {
+	effect = {
+		location = {
+			add_province_modifier = { name = pirate_outpost duration = -1 }
+		}
+	}
 }
 2000.1.1={
 	liege=k_singapore

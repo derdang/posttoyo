@@ -1900,6 +1900,9 @@ family_palace = {
 	# Small Stable
 	fp_stable_1 = {
 		desc = fp_stable_1_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 150
 		build_time = 730
@@ -1913,6 +1916,9 @@ family_palace = {
 	# Riding Grounds
 	fp_stable_2 = {
 		desc = fp_stable_2_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 250
 		build_time = 1095
@@ -1928,6 +1934,9 @@ family_palace = {
 	# Horse Breeder
 	fp_stable_3 = {
 		desc = fp_stable_3_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 350
 		build_time = 1460
@@ -2048,6 +2057,9 @@ family_palace = {
 	# Palace Archive
 	fp_warehouse_2 = {
 		desc = fp_warehouse_2_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 250
 		build_time = 1095
@@ -2066,6 +2078,9 @@ family_palace = {
 	# Administrative Office
 	fp_warehouse_3 = {
 		desc = fp_warehouse_3_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 350
 		build_time = 1460
@@ -2084,6 +2099,9 @@ family_palace = {
 	# Palace Garden
 	fp_garden_1 = {
 		desc = fp_garden_1_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 150
 		build_time = 730
@@ -2097,6 +2115,9 @@ family_palace = {
 	# Scenic Pond
 	fp_garden_2 = {
 		desc = fp_garden_2_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 250
 		build_time = 1095
@@ -2114,6 +2135,9 @@ family_palace = {
 	# Hedge Maze
 	fp_garden_3 = {
 		desc = fp_garden_3_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 350
 		build_time = 1460
@@ -2131,6 +2155,9 @@ family_palace = {
 	# Wine Cellar
 	fp_cellar_1 = {
 		desc = fp_cellar_1_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 150
 		build_time = 730
@@ -2144,6 +2171,9 @@ family_palace = {
 	# Catacombs
 	fp_cellar_2 = {
 		desc = fp_cellar_2_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 250
 		build_time = 1095
@@ -2161,6 +2191,9 @@ family_palace = {
 	# Dungeon Complex
 	fp_cellar_3 = {
 		desc = fp_cellar_3_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 350
 		build_time = 1460
@@ -2178,6 +2211,9 @@ family_palace = {
 	# Secluded Shrine
 	fp_shrine_1 = {
 		desc = fp_shrine_1_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 150
 		build_time = 730
@@ -2192,6 +2228,9 @@ family_palace = {
 	# Private Art Collection
 	fp_shrine_2 = {
 		desc = fp_shrine_2_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 250
 		build_time = 1095
@@ -2208,6 +2247,9 @@ family_palace = {
 	# Grand Library
 	fp_shrine_3 = {
 		desc = fp_shrine_3_desc
+		potential = {
+			FROM = { NOT = { government = pirate_government } }
+		}
 		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
 		gold_cost = 350
 		build_time = 1460
@@ -2262,6 +2304,242 @@ family_palace = {
 		
 		tax_income = 6
 		intrigue = 1
+		
+		extra_tech_building_start = 4.0
+	}
+	
+	####UNIQUE PIRATE UPGRADES TO PALACE####
+	
+	# Pirate Cove
+	fp_pirate_harbor_1 = {
+		desc = fp_pirate_harbor_1_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 150
+		build_time = 730
+		ai_creation_factor = 100
+		
+		galleys = 6
+		levy_size = 0.05
+		light_infantry = 100
+		fort_level = 0.1
+		tax_income = 5
+		
+		extra_tech_building_start = 1.0
+	}
+	
+	#  Pirate Den
+	fp_pirate_harbor_2 = {
+		desc = fp_pirate_harbor_2_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 250
+		build_time = 1095
+		upgrades_from = fp_pirate_harbor_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 99
+		
+		galleys = 12
+		levy_size = 0.05
+		light_infantry = 150
+		archers = 50
+		fort_level = 0.2
+		tax_income = 6
+		
+		extra_tech_building_start = 2.5
+	}
+	
+	# Pirate Haven
+	fp_pirate_harbor_3 = {
+		desc = fp_pirate_harbor_3_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 350
+		build_time = 1460
+		upgrades_from = fp_pirate_harbor_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 98
+		
+		galleys = 20
+		levy_size = 0.075
+		light_infantry = 200
+		archers = 200
+		fort_level = 0.4
+		tax_income = 7
+		
+		extra_tech_building_start = 4.0
+	}
+	
+	# Minor Stockpile
+	fp_pirate_supply_depot_1 = {
+		desc = fp_pirate_supply_depot_1_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 150
+		build_time = 730
+		ai_creation_factor = 100
+		
+		days_of_supply = 5
+		galleys = 6
+		levy_reinforce_rate = 0.10
+		
+		extra_tech_building_start = 1.0
+	}
+	
+	#  Major Stockpile
+	fp_pirate_supply_depot_2 = {
+		desc = fp_pirate_supply_depot_2_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 250
+		build_time = 1095
+		upgrades_from = fp_pirate_supply_depot_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 99
+		
+		days_of_supply = 10
+		galleys = 12
+		levy_reinforce_rate = 0.25
+		
+		extra_tech_building_start = 2.5
+	}
+	
+	# Supply Depot
+	fp_pirate_supply_depot_3 = {
+		desc = fp_pirate_supply_depot_3_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 350
+		build_time = 1460
+		upgrades_from = fp_pirate_supply_depot_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 98
+		
+		days_of_supply = 15
+		galleys = 20
+		levy_reinforce_rate = 0.30
+		
+		extra_tech_building_start = 4.0
+	}
+	
+	# Informant Outpost
+	fp_pirate_spy_network_1 = {
+		desc = fp_pirate_spy_network_1_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 150
+		build_time = 730
+		ai_creation_factor = 100
+		
+		intrigue = 1
+		
+		extra_tech_building_start = 1.0
+	}
+	
+	#  Intelligence Network
+	fp_pirate_spy_network_2 = {
+		desc = fp_pirate_spy_network_2_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 250
+		build_time = 1095
+		upgrades_from = fp_pirate_spy_network_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 99
+		
+		intrigue = 1
+		land_morale = 0.1
+		
+		extra_tech_building_start = 2.5
+	}
+	
+	# Informant Center
+	fp_pirate_spy_network_3 = {
+		desc = fp_pirate_spy_network_3_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 350
+		build_time = 1460
+		upgrades_from = fp_pirate_spy_network_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 98
+		
+		intrigue = 2
+		land_morale = 0.2
+		
+		extra_tech_building_start = 4.0
+	}
+	
+	# Gambling Den
+	fp_pirate_pleasure_den_1 = {
+		desc = fp_pirate_pleasure_den_1_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 150
+		build_time = 730
+		ai_creation_factor = 100
+		
+		local_revolt_risk = -0.01
+		
+		extra_tech_building_start = 1.0
+	}
+
+	#  Gambling Hall
+	fp_pirate_pleasure_den_2 = {
+		desc = fp_pirate_pleasure_den_2_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 250
+		build_time = 1095
+		upgrades_from = fp_pirate_pleasure_den_1
+		prerequisites = { fp_mansion_2 }
+		ai_creation_factor = 99
+		
+		stewardship = 1
+		diplomacy = 1
+		local_revolt_risk = -0.05
+		
+		extra_tech_building_start = 2.5
+	}
+	
+	# Pleasure Palace
+	fp_pirate_pleasure_den_3 = {
+		desc = fp_pirate_pleasure_den_3_desc
+		potential = {
+			FROM = { government = pirate_government }
+		}
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		gold_cost = 350
+		build_time = 1460
+		upgrades_from = fp_pirate_pleasure_den_2
+		prerequisites = { fp_mansion_3 }
+		ai_creation_factor = 98
+		
+		diplomacy = 2
+		stewardship = 2
+		local_revolt_risk = -0.10
 		
 		extra_tech_building_start = 4.0
 	}
