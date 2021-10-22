@@ -35335,13 +35335,13 @@ e_hubei = {
 	}
 }
 e_anhui = {
-	color={ 255 204 204 }
+	color={ 97 137 196 }
 	color2={ 255 255 20 }
 	
 	capital = 1727 # c_shushan
 	culture = jianghuai
 	
-	k_wu = {
+	k_huaixi = {
 		color={ 107 127 201 }
 		color2={ 255 255 255 }
 		
@@ -35584,12 +35584,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1740 province_id = 1741 } }
+					any_demesne_province = { OR = { province_id = 1741 province_id = 1742 } }
 				}
 			}
-			capital = 1740 # c_tianjiaan
+			capital = 1741 # c_tianjiaan
 			
-			c_tianjiaan = { # 1740
+			c_tianjiaan = { # 1741
 				color={ 209 116 214 }
 				color2={ 255 255 255 }
 				
@@ -35608,7 +35608,7 @@ e_anhui = {
 				b_guiji = {
 				}
 			}
-			c_shou = { # 1741
+			c_shou = { # 1742
 				color={ 211 105 192 }
 				color2={ 255 255 255 }
 				
@@ -35635,7 +35635,7 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1737 province_id = 1738 province_id = 1739 } }
+					any_demesne_province = { OR = { province_id = 1737 province_id = 1738 province_id = 1739 province_id = 1740 } }
 				}
 			}
 			capital = 1737 # c_jinan
@@ -35648,15 +35648,34 @@ e_anhui = {
 				}
 				b_yuan = {
 				}
+				b_subu = {
+				}
+				b_chengnan_2 = {
+				}
+				b_hanbaidu = {
+				}
+				b_matou = {
+				}
+				b_muchang_2 = {
+				}
+			}
+			c_huoshan = { # 1740
+				color={ 180 148 211 }
+				color2={ 255 255 255 }
+				
 				b_hengshan_4 = {
 				}
 				b_foziling = {
 				}
 				b_luoerling = {
 				}
-				b_chengguan_12 = {
+				b_chengguan_13 = {
 				}
-				b_taoxi = {
+				b_zhufoan = {
+				}
+				b_yuerjie = {
+				}
+				b_heishidu = {
 				}
 			}
 			c_jinzhai = { # 1739
@@ -35686,7 +35705,7 @@ e_anhui = {
 				}
 				b_sanyuan_4 = {
 				}
-				b_chengguan_13 = {
+				b_chengguan_12 = {
 				}
 				b_yaoli_2 = {
 				}
@@ -35703,7 +35722,7 @@ e_anhui = {
 		color={ 186 142 158 }
 		color2={ 255 255 255 }
 		
-		capital = 1742 # c_yongqiao
+		capital = 1743 # c_yongqiao
 		culture = zhongyuan
 		
 		d_suzhou = {
@@ -35713,12 +35732,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1742 province_id = 1743 province_id = 1744 } }
+					any_demesne_province = { OR = { province_id = 1743 province_id = 1744 province_id = 1745 } }
 				}
 			}
-			capital = 1742 # c_yongqiao
+			capital = 1743 # c_yongqiao
 			
-			c_yongqiao = { # 1742
+			c_yongqiao = { # 1743
 				color={ 216 112 173 }
 				color2={ 255 255 255 }
 				
@@ -35737,7 +35756,7 @@ e_anhui = {
 				b_nanguan_3 = {
 				}
 			}
-			c_bengbu = { # 1744
+			c_bengbu = { # 1745
 				color={ 183 104 214 }
 				color2={ 255 255 255 }
 				
@@ -35756,7 +35775,7 @@ e_anhui = {
 				b_hugou = {
 				}
 			}
-			c_si = { # 1743
+			c_si = { # 1744
 				color={ 216 91 204 }
 				color2={ 255 255 255 }
 				
@@ -35783,12 +35802,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1747 province_id = 1748 } }
+					any_demesne_province = { OR = { province_id = 1748 province_id = 1749 } }
 				}
 			}
-			capital = 1747 # c_qiaocheng
+			capital = 1748 # c_qiaocheng
 			
-			c_qiaocheng = { # 1747
+			c_qiaocheng = { # 1748
 				color={ 214 111 210 }
 				color2={ 255 255 255 }
 				
@@ -35807,7 +35826,7 @@ e_anhui = {
 				b_xinxing_3 = {
 				}
 			}
-			c_lixin = { # 1748
+			c_lixin = { # 1749
 				color={ 188 85 214 }
 				color2={ 255 255 255 }
 				
@@ -35834,13 +35853,13 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1749 province_id = 1750 } }
+					any_demesne_province = { OR = { province_id = 1750 province_id = 1751 } }
 				}
 			}
-			capital = 1749 # c_ying
+			capital = 1750 # c_ying
 			
-			c_ying = { # 1749
-				color={ 180 148 211 }
+			c_ying = { # 1750
+				color={ 188 105 214 }
 				color2={ 255 255 255 }
 				
 				b_yingzhou = {
@@ -35858,7 +35877,7 @@ e_anhui = {
 				b_yanghu = {
 				}
 			}
-			c_jieshou = { # 1750
+			c_jieshou = { # 1751
 				color={ 200 114 229 }
 				color2={ 255 255 255 }
 				
@@ -35885,12 +35904,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1745 province_id = 1746 } }
+					any_demesne_province = { OR = { province_id = 1746 province_id = 1747 } }
 				}
 			}
-			capital = 1745 # c_huaibei
+			capital = 1746 # c_huaibei
 			
-			c_huaibei = { # 1745
+			c_huaibei = { # 1746
 				color={ 216 93 174 }
 				color2={ 255 255 255 }
 				
@@ -35909,7 +35928,7 @@ e_anhui = {
 				b_wugou = {
 				}
 			}
-			c_dangshan = { # 1746
+			c_dangshan = { # 1747
 				color={ 216 138 177 }
 				color2={ 255 255 255 }
 				
@@ -35934,7 +35953,7 @@ e_anhui = {
 		color={ 98 134 199 }
 		color2={ 255 255 255 }
 		
-		capital = 1751 # c_wuhu
+		capital = 1752 # c_jiujiang_2
 		culture = jianghuai
 		
 		d_wuhu = {
@@ -35944,12 +35963,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1751 province_id = 1752 } }
+					any_demesne_province = { OR = { province_id = 1752 province_id = 1753 } }
 				}
 			}
-			capital = 1751 # c_wuhu
+			capital = 1752 # c_jiujiang_2
 			
-			c_wuhu = { # 1751
+			c_jiujiang_2 = { # 1752
 				color={ 128 104 214 }
 				color2={ 255 255 255 }
 				
@@ -35968,7 +35987,7 @@ e_anhui = {
 				b_yuxijiang = {
 				}
 			}
-			c_jinghu = { # 1752
+			c_jinghu = { # 1753
 				color={ 95 88 216 }
 				color2={ 255 255 255 }
 				
@@ -35995,12 +36014,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1757 province_id = 1758 } }
+					any_demesne_province = { OR = { province_id = 1758 province_id = 1759 } }
 				}
 			}
-			capital = 1757 # c_guichi
+			capital = 1758 # c_guichi
 			
-			c_guichi = { # 1757
+			c_guichi = { # 1758
 				color={ 204 77 197 }
 				color2={ 255 255 255 }
 				
@@ -36019,7 +36038,7 @@ e_anhui = {
 				b_xiaohe = {
 				}
 			}
-			c_dongzhi = { # 1758
+			c_dongzhi = { # 1759
 				color={ 204 82 151 }
 				color2={ 255 255 255 }
 				
@@ -36046,12 +36065,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1782 province_id = 1783 } }
+					any_demesne_province = { OR = { province_id = 1763 province_id = 1764 } }
 				}
 			}
-			capital = 1782 # c_huangshan
+			capital = 1763 # c_huangshan
 			
-			c_huangshan = { # 1782
+			c_huangshan = { # 1763
 				color={ 242 72 202 }
 				color2={ 255 255 255 }
 				
@@ -36070,7 +36089,7 @@ e_anhui = {
 				b_wushi_2 = {
 				}
 			}
-			c_yi = { # 1783
+			c_yi = { # 1764
 				color={ 204 61 170 }
 				color2={ 255 255 255 }
 				
@@ -36097,12 +36116,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1753 province_id = 1754 } }
+					any_demesne_province = { OR = { province_id = 1754 province_id = 1755 } }
 				}
 			}
-			capital = 1753 # c_yushun
+			capital = 1754 # c_yushun
 			
-			c_yushun = { # 1753
+			c_yushun = { # 1754
 				color={ 168 136 204 }
 				color2={ 255 255 255 }
 				
@@ -36121,7 +36140,7 @@ e_anhui = {
 				b_niandou = {
 				}
 			}
-			c_he = { # 1754
+			c_he = { # 1755
 				color={ 180 146 219 }
 				color2={ 255 255 255 }
 				
@@ -36148,12 +36167,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1755 province_id = 1756 } }
+					any_demesne_province = { OR = { province_id = 1756 province_id = 1757 } }
 				}
 			}
-			capital = 1755 # c_tongguan
+			capital = 1756 # c_tongguan
 			
-			c_tongguan = { # 1755
+			c_tongguan = { # 1756
 				color={ 163 143 226 }
 				color2={ 255 255 255 }
 				
@@ -36172,7 +36191,7 @@ e_anhui = {
 				b_xilian = {
 				}
 			}
-			c_jiao = { # 1756
+			c_jiao = { # 1757
 				color={ 163 124 226 }
 				color2={ 255 255 255 }
 				
@@ -36199,12 +36218,12 @@ e_anhui = {
 			allow = {
 				OR = {
 					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 1759 province_id = 1780 province_id = 1781 } }
+					any_demesne_province = { OR = { province_id = 1760 province_id = 1761 province_id = 1762 } }
 				}
 			}
-			capital = 1759 # c_xuanzhou
+			capital = 1760 # c_xuanzhou
 			
-			c_xuanzhou = { # 1759
+			c_xuanzhou = { # 1760
 				color={ 148 70 204 }
 				color2={ 255 255 255 }
 				
@@ -36223,7 +36242,7 @@ e_anhui = {
 				b_biqiao = {
 				}
 			}
-			c_ji = { # 1781
+			c_ji = { # 1762
 				color={ 183 67 204 }
 				color2={ 255 255 255 }
 				
@@ -36242,7 +36261,7 @@ e_anhui = {
 				b_miaoshou = {
 				}
 			}
-			c_ningguo = { # 1780
+			c_ningguo = { # 1761
 				color={ 148 99 204 }
 				color2={ 255 255 255 }
 				
