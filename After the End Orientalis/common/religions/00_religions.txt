@@ -369,95 +369,72 @@ christian = {
 		intermarry = hanzu
 
 	}
-	hanzu = { #Catholicism with Chinese Characteristics
-		graphical_culture = chinesegfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+	tianzhu = {
+		graphical_culture = westerngfx
 
 		icon = 1
 		heresy_icon = 2
 		
-		color = { 0.7 0.8 0.6 }
+		color = { 227 66 52 }
 		
 		crusade_name = CRUSADE
+		use_new_crusade = yes
+		crusade_cb = new_crusade
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
 		
-		high_god_name = GOD_GOD
+		high_god_name = GOD_TIANZHU
 		
 		god_names = {
-			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+			GOD_TIANZHU GOD_HEAVENLY_FATHER GOD_JIDU GOD_THE_BLESSED_VIRGIN GOD_THE_MARTYRS
 		}
 		
 		evil_god_names = {
 			SATAN LUCIFER THE_DEVIL
 		}
-
-		autocephaly = yes
-		pentarchy = yes
-		can_excommunicate = yes
-		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_call_crusade = no
+		
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
+		defensive_attrition = yes
+		hard_to_convert = yes
+		rel_head_defense = yes
 		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
-		
-		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-		intermarry = restorationists
-		intermarry = concordanist
-		intermarry = unificationist
-		intermarry = fuyin
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+
 	}
-	hanzu_heresy = { #temporary
-		graphical_culture = chinesegfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+	aiguo = { #placeholder
+		graphical_culture = westerngfx
 
 		icon = 1
 		heresy_icon = 2
 		
-		color = { 0.7 0.8 0.6 }
+		color = { 180 86 52 }
+		parent = tianzhu
 		
-		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
 		priest_title = PRIEST
 		
-		high_god_name = GOD_GOD
+		high_god_name = GOD_TIANZHU
 		
 		god_names = {
-			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+			GOD_TIANZHU GOD_HEAVENLY_FATHER GOD_JIDU GOD_THE_BLESSED_VIRGIN GOD_THE_MARTYRS
 		}
 		
 		evil_god_names = {
 			SATAN LUCIFER THE_DEVIL
 		}
 		
-		parent = hanzu
-
-		autocephaly = yes
-		pentarchy = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
-		can_grant_invasion_cb = invasion
-		can_call_crusade = no
+		can_grant_claim = yes
+		can_call_crusade = yes
 		can_retire_to_monastery = yes
 		priests_can_inherit = no
+		rel_head_defense = yes
 		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
-		
-		intermarry = catholic
-		intermarry = orthodox
-		intermarry = miaphysite
-		intermarry = nestorian
-		intermarry = restorationists
-		intermarry = concordanist
-		intermarry = hanzu
-		intermarry = fuyin
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
 
 	}
 }

@@ -70,6 +70,41 @@
 	trait = ambitious
 	2580.3.13 = {birth = yes}
 }
+#Denzhou
+1953000 = { #Duke of Denzhou
+	name = "Chongkai"
+	dynasty = 1953000 #Wen
+	culture = huizhou
+	religion = hui
+	father = 1953002
+	trait = charismatic_negotiator
+	trait = ambitious
+	trait = pious
+	2580.3.13 = {birth = yes}
+}
+1953001 = { #Count Laoling
+	name = "Ruqi"
+	dynasty = 1953001 #An
+	culture = huizhou
+	religion = hui
+	father = 1953002
+	trait = martial_cleric
+	trait = ambitious
+	trait = pious
+	2580.3.13 = {birth = yes}
+}
+1953002 = { #Duke of Denzhou (Paduka Pahala)
+	name = "Batugal"
+	dynasty = 1953000 #Wen
+	culture = huizhou
+	religion = hui
+	add_claim=d_sulu
+	trait = charismatic_negotiator
+	trait = ambitious
+	trait = pious
+	2560.3.13 = {birth = yes}
+	2605.3.13 = {death = yes}
+}
 ####Historical Ones - Taiwan####
 
 3923001 = { #Koxinga
