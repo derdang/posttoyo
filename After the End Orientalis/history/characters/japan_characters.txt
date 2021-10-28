@@ -906,6 +906,7 @@
 	}
 	628.4.15={
 		name="Jomei"
+		add_spouse = 88042
 	}
 	641.11.17={
 		death="641.11.17"
@@ -973,7 +974,7 @@
 		death="654.11.24"
 	}
 }
-
+## ( #mother=88042 (Empress Kogyoku/Saimei) prevents weird lineage breaks)
 88044 = {
 	name="Kazuragi"
 	# Emperor Tenchi
@@ -986,7 +987,7 @@
 	culture=kouzoku
 	add_trait="intricate_webweaver"
 	father=88040
-	mother=88042
+	#mother=88042 (Empress Kogyoku/Saimei)
 	626.1.1={
 		birth="626.1.1"
 	}
@@ -1029,7 +1030,7 @@
 	culture=kouzoku
 	add_trait="midas_touched"
 	father=88040
-	mother=88042
+	#mother=88042 (Empress Kogyoku/Saimei)
 	631.1.1={
 		birth="631.1.1"
 	}
@@ -2551,7 +2552,7 @@
 88122={
 	name="Sanehito"
 	# Father of Emperor Go-Yozei
-	dynasty=420 # Yamato
+	dynasty=888 # Yamato
 	father=88121 # Ohgimachi Emperor
 	religion=mahayana
 	culture=kouzoku
@@ -3020,7 +3021,7 @@
 	name="Minohito"
 	# Emperor Go-Shomu
 	dynasty=888 #Yamato
-	father=88148
+	father=88147
 	religion=shinto
 	culture=kouzoku
 	2223.9.17={

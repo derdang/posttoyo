@@ -18,7 +18,7 @@ character_event = {
 		ai = yes
 		age = 16
 		is_female = no
-		primary_title = { title = e_japan }
+		primary_title = { title = d_tenno }
 		NOT = {
 			any_child = {
 				is_female = no
@@ -54,7 +54,7 @@ character_event = {
 			female = yes
 			age = 20
 			religion = ROOT
-			culture = togoku
+			culture = kouzoku
 		}
 		new_character = {
 			add_consort = ROOT
@@ -70,7 +70,7 @@ character_event = {
 	hide_window = yes
 	
 	trigger = {
-		has_landed_title = e_japan
+		has_landed_title = d_tenno
 		current_heir = {
 			NOT = { dynasty = ROOT }
 		}
@@ -82,8 +82,8 @@ character_event = {
 			random_traits = yes
 			age = 16
 			culture = imperial_family
-			religion = togoku
-			dynasty = 420 #Yamato(imperial family)
+			religion = kouzoku
+			dynasty = 888 #Yamato(imperial family)
 			fertility = 2
 			historical = yes
 			attributes = {
@@ -95,7 +95,7 @@ character_event = {
 			}
 		}
 		new_character = {
-			dynasty = 420 #Yamato(imperial family)
+			dynasty = 888 #Yamato(imperial family)
 			save_event_target_as = displaced_prince
 			if = {
 				limit = {
@@ -125,7 +125,7 @@ character_event = {
 				limit = {
 					event_target:previousEmperor = {
 						any_dynasty_member_even_if_dead  = {
-							has_landed_title = e_tenno
+							has_landed_title = d_tenno
 							is_female = no
 							could_be_parent_of = event_target:displaced_prince
 						}
@@ -134,7 +134,7 @@ character_event = {
 				event_target:previousEmperor = {
 					random_dynasty_member_even_if_dead = {
 						limit = {
-							has_landed_title = e_tenno
+							has_landed_title = d_tenno
 							is_female = no
 							could_be_parent_of = event_target:displaced_prince
 						}
@@ -181,7 +181,7 @@ character_event = {
 	hide_window = yes
 	
 	trigger = {
-		any_demesne_title = { title = e_japan }
+		any_demesne_title = { title = d_tenno }
 	}
 	
 	mean_time_to_happen = {
