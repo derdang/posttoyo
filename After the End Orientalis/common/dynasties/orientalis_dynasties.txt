@@ -16,7 +16,20 @@
 	}
 }
 
-888 = { name="Yamato" culture=kouzoku }
+888 = { name="Yamato" culture=kouzoku
+	coat_of_arms = {
+		religion = shinto
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 52
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1022000 = { name="Kham" culture=tai 
 	coat_of_arms = {
