@@ -2,34 +2,71 @@ mongol = {
 	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
 	graphical_cultures = { turkishgfx mongolgfx muslimgfx }
 
-	khalkha = { #temporary name list
-		graphical_cultures = { chinesegfx muslimgfx }
-		secondary_event_pictures = bedouin_arabic
+	khalkha = {
+		graphical_cultures = { newmongolgfx bodpagfx cumangfx }
 		
-		alternate_start = { has_alternate_start_parameter = { key = culture value = full_random } }
-		horde = yes
-		
-		color = { 0.4 0.4 1.0 }
+		color = { 0.9 0.4 0.4 }
 
 		male_names = {
-			Abagha Achigh Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arkhai Arasen Babur Badai Bagaridai Bala Barghujin Bartan Batu Bedugun Begter Belgutei
-			Belgunutei Bilge Berke Bodonchar Bogen Bogorchu Bolkhadar Borjigidai Boroghul Bughu Bugidai Bugunutei Bujeg Bukha Bulughan Buri Burkhan Burundai Chagatai Chaghagan Chanai Chigu
-			Chidukhul Chilagun Chiledu Chormakhan Chulgetei Dagun Daritai Dayir Dodai Duua Eljigedei Ghazan Ghunan Guchu Gughlug Guyug Harghasun Horkhudagh Hulegu Husun Inalchi Inancha Iturgen 
-			Jajiradai Jamugha Jebe Jochi Jurchedei Khabichi Khachi Khachigun Khadagh Khagatai Khaidu Khal Khorchi Khorilartai Khubilai Khudu Khutula Khuyildar Kogsegu Kokochu Megetu Megujin
-			Menggei Mongke Morokha Munglig Nakhu Narin Nayaga Nogai Odchigin Ogodei Okhotur Oljaitu Oronartai Shiraghul Shirgugetu Subetei Suyiketu Taghai Tamachi Targhutai Temuge Temujin Temur_Timur
-			Todogen Toghoril Toghtoga Tokhtamis Tolui Torolchi Tumen Uighurtai Ukhuna Usun Yedi Yegu Yeke Yesugei Yesunge Yokhunan Kadan Godan
+			Adiyaasambuu Adiyaatömör Agvaanluvsan Agvaantseren Ajvaa Altan Altangerel Altankhuyag Altan-Ochir Amar Amarkhüü Amarsaikhan Anand Ariunaa Ariunbold Artag Artïk Avirmed Aydas Ayuush 
+			Baatar_Baatar Baatarkhüü Baatarsüren Badamdorj Badamgarav Badar-Uugan Badrakh Bagabandi Bakhaavaa Bakhyt Baldorj Balin Baljinnyam Barsbold Batbayar Bat-Erdene Batgerel Batjargal Bakthuyag Batmönkh Batsükh Battulga Bat-Üül Batzorig Bayan Bayanmönkh Bayar Bayarjavkhlan Bayarkhuu Bayarsaikhan Bayartsogt Bazarragchaa Bekhbayar Bileg Birvaa Bold Bor Borkhüü Bulgan Bütekh-Üils Buyadaa Buyandelger Byamba Byambajargal Byambasüren 
+			Chagnaadorj Chanrav Chayan Chimedregzen Chinaag Chinbat Chinges Choibalsan Choidog Choinom Chuluun Chuluunbat 
+			Dagvadorj Dagvasüren Dalanbayar Damba Dambajav Damdin Damdinbazar Damdinsharav Damdinsüren Danzan Danzanravjaa Dash Dashbalbar Dashdavaa Dashdorj Dashjamts Dashtseren Davaa Davaadalai Davaadorj Davaajantsan Davaajargal Davaajav Davaasambuu Davaasükh Davaasüren Dekhlee Delgermörön Dolgorsüren Dorj Dorjbat Dorjgotov Dorjsüren Dorjzovd Dugarsüren Dulduit Dumaa Düvchin 
+			Elbegdorj Enkhbat Enkhbayar Enkhbold Enkhsaikhan Enkhtaivan Enkhtuyaa Erdene Erdenebat Erdenechimeg Erdenechuluun Erdene-Ochir Eregzen Erkhbayar 
+			Gaadan Galbadrakh Galsan Ganbaatar Ganbat Ganbayar Ganbold Gankhuyag Gantogtokh Gantömör Gantulga Ganzorig Gelegjamts Gochoosüren Gombojav Gonchig Gonchigsumlaa Gularans Gürragchaa 
+			Injannash Ishdorj Ivaan_John Ivaanjav 
+			Jambal Jamiyan Jamsran Jantsankhorloo Jantsannorov Jargal Jargalsaikhan Javkhlantögs Jigjid Jigjidjav Jigjidsüren 
+			Khadaa Khajidsüren Khaltar Khaltmaa Khangal Khan-Gerel Khashbaatar Khatanbaatar Khayankhyarvaa Khishigbaatar Khishigbat Khoilogdorj Khürelbaatar Khürelsükh 
+			Lkhagvasüren Lkhamjav Lkhamsüren Lodoidamba Luvsan Luvsandorj Luvsanjamb Luvsannorov Luvsansharav 
+			Magsarjav Mandakhnaran Mart Melschoi Mendbayar Mend-Ooyoo Mönkh Mönkh-Amgalan Mönkhbaatar Mönkhbat Mönkh-Erdene Mönkh-Ochir Mördorj Myagmar 
+			Naidan Namkhaidorj Namnansüren Namshir Namsraijav Naranbaatar Narmandakh Nasanjargal Natsadorj Natsag Nergüi Nyamjantsan Nyamkhagva Nyamkhüü Nyam-Osor Nyantai 
+			Ochirbat Ochirdolgor Ochitbat Odbayar Odkhüü Oidov Oktyabr_October Ölziibayar Ölziisaikhan Ösökhbayar Otgonbaatar Otgonbayar Otryad Övgönkhüü Oyuunbold 
+			Pürev Pürevdorj Pürevjargal Pürevjav 
+			Ragchaa Rentsendorj Rinchen 
+			Saikhan Sambuu Sandagdorj Sangidorj Sanjaasüren Sansargereltekh Sembe Sendoo Serdamba Sereeter Ser-Od Seseer Sharav Shijee Shijirbayar Shirnen Sodnom Soronzonbold Soyan Sükhbaatar Sükhee Süldbayar Suvd 
+			Tadar Temüüjin Temüülen Tögs-Ochir Tömör_Timur Tömörkhüleg Tömörtsog Tsagaan Tsagaanbaatar Tsagaandorj Tsakhia Tseden Tsedenbal Tsedendorj Tsedevdamba Tsedevsüren Tsegmig Tsend Tsend-Ayuush Tsend-Ochir Tsengüün Tserenbaatar Tserendorj Tseveendash Tseyendash Tsogbadrakh Tsogtbaatar Tümen-Od Tungalag Turgun Tüvshinbayar Tüvshinjargal Tüvshintögs Tüvshintör Tyulgyu 
+			Ukhnaa Uuganbaatar 
+			Vaanchig 
+			Yadamsüren Yavuukhulan 
+			Zorigt 
 		}
-		female_names = {
-			Al-Alta Alan Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Doregene Doquz Ebegei Gurbesu Hogelun Holuikhan Ibakha Khadagan Khogaghchin Khojin Khorijin Khugurchin Khulan Khutulun Mandukhai Mongoljin Nomolun Oghul Orbei Sokhatai Sorkhaghatani Tekine Temulun Töregene Yesugun Yesui Hoelun
-		}
-		
-		from_dynasty_prefix = "of "
-		founder_named_dynasties = yes
 
-		allow_looting = yes
+		female_names = {
+			Aldaa-nysh Aleksandra_Alexandra Altantsetseg Altantuyaa Ankhmaa Ankhnyam Ankhtsetseg Anu Ariunaa 
+			Badamsüren Batchimeg Batkhuyag Battögs Battsetseg Bayarmaa Bayartsetseg Bazarsüren Bolor-Erdene Bolormaa Bulgantuya Bundmaa Burmaa Byambasüren Byambatseren 
+			Chadzhakh Chakhayakh Chibek Chokhyray Chyustyuk 
+			Dashdulam Davaajargal Dechinmaa Delgermaa Demberel Dölgöön Dolgormaa Dorjpalam 
+			Engüün Enkhjargal Enkhjin Enkhtaivan Enkhtuya Erdenechimeg Erdenet-Od 
+			Gantuyaa Gereltuyaa Gündegmaa 
+			Ider 
+			Javzandulam 
+			Kara-kis Khozan Kizil-ool Khaliun Khongorzul Khorloo Khulan 
+			Lkhamdegd Lkhamjav 
+			Möngönchimeg Möngöntuul Mönkhbayar Mönkhtsetseg Mönkhtuyaa Mönkhzayaa Mönkhzul 
+			Namjilmaa Namuun Nandinzaya Naranjargal Narantsetseg Nasanburmaa Natsag Nomin Norovbanzad 
+			Ochirsüren Odonchimeg Odtsetseg Orkhon Otgon Otgonbayar Otgonjargal Otgontsetseg Oyuun Oyuunchimeg Oyuundari Oyuungerel Oyuunsüren Oyuuntsetseg Oyuuntülkhüür 
+			Pürevloov 
+			Saintsetseg Sarangerel Sarantuya Selenge Serchmaa Sumiyaa 
+			Togtokhbayar Torgï Tsedevsüren Tserenchimed Tserenkhand Tsetsegjargal Tsolmon Tumen Tuul Tuyaa 
+			Udval Uizenmaa Ulambayar Undraa Urantögs Urantsetseg Urantungalag Urgaatsetseg 
+			Yanjindulam Yanjmaa Yesüi Yzyrga 
+			Zolzayaa Zul 
+		}
 		
+		founder_named_dynasties = yes
+		
+		male_patronym = "iin"
+		female_patronym = "iin"
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
 		modifier = default_culture_modifier
-		nomadic_in_alt_start = yes
 	}
 	mengguzu = { #temporary name list
 		graphical_cultures = { chinesegfx muslimgfx }
@@ -41,15 +78,49 @@ mongol = {
 		color = { 0.3 0.4 1.0 }
 
 		male_names = {
-			Abagha Achigh Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arkhai Arasen Babur Badai Bagaridai Bala Barghujin Bartan Batu Bedugun Begter Belgutei
-			Belgunutei Bilge Berke Bodonchar Bogen Bogorchu Bolkhadar Borjigidai Boroghul Bughu Bugidai Bugunutei Bujeg Bukha Bulughan Buri Burkhan Burundai Chagatai Chaghagan Chanai Chigu
-			Chidukhul Chilagun Chiledu Chormakhan Chulgetei Dagun Daritai Dayir Dodai Duua Eljigedei Ghazan Ghunan Guchu Gughlug Guyug Harghasun Horkhudagh Hulegu Husun Inalchi Inancha Iturgen 
-			Jajiradai Jamugha Jebe Jochi Jurchedei Khabichi Khachi Khachigun Khadagh Khagatai Khaidu Khal Khorchi Khorilartai Khubilai Khudu Khutula Khuyildar Kogsegu Kokochu Megetu Megujin
-			Menggei Mongke Morokha Munglig Nakhu Narin Nayaga Nogai Odchigin Ogodei Okhotur Oljaitu Oronartai Shiraghul Shirgugetu Subetei Suyiketu Taghai Tamachi Targhutai Temuge Temujin Temur_Timur
-			Todogen Toghoril Toghtoga Tokhtamis Tolui Torolchi Tumen Uighurtai Ukhuna Usun Yedi Yegu Yeke Yesugei Yesunge Yokhunan Kadan Godan
+			Adiyaasambuu Adiyaatömör Agvaanluvsan Agvaantseren Ajvaa Altan Altangerel Altankhuyag Altan-Ochir Amar Amarkhüü Amarsaikhan Anand Ariunaa Ariunbold Artag Artïk Avirmed Aydas Ayuush 
+			Baatar_Baatar Baatarkhüü Baatarsüren Badamdorj Badamgarav Badar-Uugan Badrakh Bagabandi Bakhaavaa Bakhyt Baldorj Balin Baljinnyam Barsbold Batbayar Bat-Erdene Batgerel Batjargal Bakthuyag Batmönkh Batsükh Battulga Bat-Üül Batzorig Bayan Bayanmönkh Bayar Bayarjavkhlan Bayarkhuu Bayarsaikhan Bayartsogt Bazarragchaa Bekhbayar Bileg Birvaa Bold Bor Borkhüü Bulgan Bütekh-Üils Buyadaa Buyandelger Byamba Byambajargal Byambasüren 
+			Chagnaadorj Chanrav Chayan Chimedregzen Chinaag Chinbat Chinges Choibalsan Choidog Choinom Chuluun Chuluunbat 
+			Dagvadorj Dagvasüren Dalanbayar Damba Dambajav Damdin Damdinbazar Damdinsharav Damdinsüren Danzan Danzanravjaa Dash Dashbalbar Dashdavaa Dashdorj Dashjamts Dashtseren Davaa Davaadalai Davaadorj Davaajantsan Davaajargal Davaajav Davaasambuu Davaasükh Davaasüren Dekhlee Delgermörön Dolgorsüren Dorj Dorjbat Dorjgotov Dorjsüren Dorjzovd Dugarsüren Dulduit Dumaa Düvchin 
+			Elbegdorj Enkhbat Enkhbayar Enkhbold Enkhsaikhan Enkhtaivan Enkhtuyaa Erdene Erdenebat Erdenechimeg Erdenechuluun Erdene-Ochir Eregzen Erkhbayar 
+			Gaadan Galbadrakh Galsan Ganbaatar Ganbat Ganbayar Ganbold Gankhuyag Gantogtokh Gantömör Gantulga Ganzorig Gelegjamts Gochoosüren Gombojav Gonchig Gonchigsumlaa Gularans Gürragchaa 
+			Injannash Ishdorj Ivaan_John Ivaanjav 
+			Jambal Jamiyan Jamsran Jantsankhorloo Jantsannorov Jargal Jargalsaikhan Javkhlantögs Jigjid Jigjidjav Jigjidsüren 
+			Khadaa Khajidsüren Khaltar Khaltmaa Khangal Khan-Gerel Khashbaatar Khatanbaatar Khayankhyarvaa Khishigbaatar Khishigbat Khoilogdorj Khürelbaatar Khürelsükh 
+			Lkhagvasüren Lkhamjav Lkhamsüren Lodoidamba Luvsan Luvsandorj Luvsanjamb Luvsannorov Luvsansharav 
+			Magsarjav Mandakhnaran Mart Melschoi Mendbayar Mend-Ooyoo Mönkh Mönkh-Amgalan Mönkhbaatar Mönkhbat Mönkh-Erdene Mönkh-Ochir Mördorj Myagmar 
+			Naidan Namkhaidorj Namnansüren Namshir Namsraijav Naranbaatar Narmandakh Nasanjargal Natsadorj Natsag Nergüi Nyamjantsan Nyamkhagva Nyamkhüü Nyam-Osor Nyantai 
+			Ochirbat Ochirdolgor Ochitbat Odbayar Odkhüü Oidov Oktyabr_October Ölziibayar Ölziisaikhan Ösökhbayar Otgonbaatar Otgonbayar Otryad Övgönkhüü Oyuunbold 
+			Pürev Pürevdorj Pürevjargal Pürevjav 
+			Ragchaa Rentsendorj Rinchen 
+			Saikhan Sambuu Sandagdorj Sangidorj Sanjaasüren Sansargereltekh Sembe Sendoo Serdamba Sereeter Ser-Od Seseer Sharav Shijee Shijirbayar Shirnen Sodnom Soronzonbold Soyan Sükhbaatar Sükhee Süldbayar Suvd 
+			Tadar Temüüjin Temüülen Tögs-Ochir Tömör_Timur Tömörkhüleg Tömörtsog Tsagaan Tsagaanbaatar Tsagaandorj Tsakhia Tseden Tsedenbal Tsedendorj Tsedevdamba Tsedevsüren Tsegmig Tsend Tsend-Ayuush Tsend-Ochir Tsengüün Tserenbaatar Tserendorj Tseveendash Tseyendash Tsogbadrakh Tsogtbaatar Tümen-Od Tungalag Turgun Tüvshinbayar Tüvshinjargal Tüvshintögs Tüvshintör Tyulgyu 
+			Ukhnaa Uuganbaatar 
+			Vaanchig 
+			Yadamsüren Yavuukhulan 
+			Zorigt 
 		}
+
 		female_names = {
-			Al-Alta Alan Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Doregene Doquz Ebegei Gurbesu Hogelun Holuikhan Ibakha Khadagan Khogaghchin Khojin Khorijin Khugurchin Khulan Khutulun Mandukhai Mongoljin Nomolun Oghul Orbei Sokhatai Sorkhaghatani Tekine Temulun Töregene Yesugun Yesui Hoelun
+			Aldaa-nysh Aleksandra_Alexandra Altantsetseg Altantuyaa Ankhmaa Ankhnyam Ankhtsetseg Anu Ariunaa 
+			Badamsüren Batchimeg Batkhuyag Battögs Battsetseg Bayarmaa Bayartsetseg Bazarsüren Bolor-Erdene Bolormaa Bulgantuya Bundmaa Burmaa Byambasüren Byambatseren 
+			Chadzhakh Chakhayakh Chibek Chokhyray Chyustyuk 
+			Dashdulam Davaajargal Dechinmaa Delgermaa Demberel Dölgöön Dolgormaa Dorjpalam 
+			Engüün Enkhjargal Enkhjin Enkhtaivan Enkhtuya Erdenechimeg Erdenet-Od 
+			Gantuyaa Gereltuyaa Gündegmaa 
+			Ider 
+			Javzandulam 
+			Kara-kis Khozan Kizil-ool Khaliun Khongorzul Khorloo Khulan 
+			Lkhamdegd Lkhamjav 
+			Möngönchimeg Möngöntuul Mönkhbayar Mönkhtsetseg Mönkhtuyaa Mönkhzayaa Mönkhzul 
+			Namjilmaa Namuun Nandinzaya Naranjargal Narantsetseg Nasanburmaa Natsag Nomin Norovbanzad 
+			Ochirsüren Odonchimeg Odtsetseg Orkhon Otgon Otgonbayar Otgonjargal Otgontsetseg Oyuun Oyuunchimeg Oyuundari Oyuungerel Oyuunsüren Oyuuntsetseg Oyuuntülkhüür 
+			Pürevloov 
+			Saintsetseg Sarangerel Sarantuya Selenge Serchmaa Sumiyaa 
+			Togtokhbayar Torgï Tsedevsüren Tserenchimed Tserenkhand Tsetsegjargal Tsolmon Tumen Tuul Tuyaa 
+			Udval Uizenmaa Ulambayar Undraa Urantögs Urantsetseg Urantungalag Urgaatsetseg 
+			Yanjindulam Yanjmaa Yesüi Yzyrga 
+			Zolzayaa Zul 
 		}
 		
 		from_dynasty_prefix = "of "
@@ -128,6 +199,69 @@ mongol = {
 			Tsagan Tzatana Tzetzgö 
 			Ulana 
 			Zurgan
+		}
+		
+		founder_named_dynasties = yes
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	khorchin = {
+		graphical_cultures = { newmongolgfx bodpagfx cumangfx }
+		
+		color = { 0.7 0.2 0.4 }
+
+		male_names = {
+			Adiyaasambuu Adiyaatömör Agvaanluvsan Agvaantseren Ajvaa Altan Altangerel Altankhuyag Altan-Ochir Amar Amarkhüü Amarsaikhan Anand Ariunaa Ariunbold Artag Artïk Avirmed Aydas Ayuush 
+			Baatar_Baatar Baatarkhüü Baatarsüren Badamdorj Badamgarav Badar-Uugan Badrakh Bakhaavaa Bakhyt Baldorj Balin Baljinnyam Barsbold Batbayar Bat-Erdene Batgerel Batjargal Bakthuyag Batmönkh Batsükh Battulga Bat-Üül Batzorig Bayan Bayanmönkh Bayar Bayarjavkhlan Bayarkhuu Bayarsaikhan Bayartsogt Bazarragchaa Bekhbayar Bileg Birvaa Bold Bor Borkhüü Bulgan Bütekh-Üils Buyadaa Buyandelger Byamba Byambajargal Byambasüren 
+			Chagnaadorj Chanrav Chayan Chimedregzen Chinaag Chinbat Chinges Choibalsan Choidog Choinom Chuluun Chuluunbat 
+			Dagvadorj Dagvasüren Dalanbayar Damba Dambajav Damdin Damdinbazar Damdinsharav Damdinsüren Danzan Danzanravjaa Dash Dashbalbar Dashdavaa Dashdorj Dashjamts Dashtseren Davaa Davaadalai Davaadorj Davaajantsan Davaajargal Davaajav Davaasambuu Davaasükh Davaasüren Dekhlee Delgermörön Dolgorsüren Dorj Dorjbat Dorjgotov Dorjsüren Dorjzovd Dugarsüren Dulduit Dumaa Düvchin 
+			Elbegdorj Enkhbat Enkhbayar Enkhbold Enkhsaikhan Enkhtaivan Enkhtuyaa Erdene Erdenebat Erdenechimeg Erdenechuluun Erdene-Ochir Eregzen Erkhbayar 
+			Gaadan Galbadrakh Galsan Ganbaatar Ganbat Ganbayar Ganbold Gankhuyag Gantogtokh Gantömör Gantulga Ganzorig Gelegjamts Gochoosüren Gombojav Gonchig Gonchigsumlaa Gularans Gürragchaa 
+			Injannash Ishdorj Ivaan_John Ivaanjav 
+			Jambal Jamiyan Jamsran Jantsankhorloo Jantsannorov Jargal Jargalsaikhan Javkhlantögs Jigjid Jigjidjav Jigjidsüren 
+			Khadaa Khajidsüren Khaltar Khaltmaa Khangal Khan-Gerel Khashbaatar Khatanbaatar Khayankhyarvaa Khishigbaatar Khishigbat Khoilogdorj Khürelbaatar Khürelsükh 
+			Lkhagvasüren Lkhamjav Lkhamsüren Lodoidamba Luvsan Luvsandorj Luvsanjamb Luvsannorov Luvsansharav 
+			Magsarjav Mandakhnaran Mart Melschoi Mendbayar Mend-Ooyoo Mönkh Mönkh-Amgalan Mönkhbaatar Mönkhbat Mönkh-Erdene Mönkh-Ochir Mördorj Myagmar 
+			Naidan Namkhaidorj Namnansüren Namshir Namsraijav Naranbaatar Narmandakh Nasanjargal Natsadorj Natsag Nergüi Nyamjantsan Nyamkhagva Nyamkhüü Nyam-Osor Nyantai 
+			Ochirbat Ochirdolgor Ochitbat Odbayar Odkhüü Oidov Oktyabr_October Ölziibayar Ölziisaikhan Ösökhbayar Otgonbaatar Otgonbayar Otryad Övgönkhüü Oyuunbold 
+			Pürev Pürevdorj Pürevjargal Pürevjav 
+			Ragchaa Rentsendorj Rinchen 
+			Saikhan Sambuu Sandagdorj Sangidorj Sanjaasüren Sansargereltekh Sembe Sendoo Serdamba Sereeter Ser-Od Seseer Sharav Shijee Shijirbayar Shirnen Sodnom Soronzonbold Soyan Sükhbaatar Sükhee Süldbayar Suvd 
+			Tadar Temüüjin Temüülen Tögs-Ochir Tömör_Timur Tömörkhüleg Tömörtsog Tsagaan Tsagaanbaatar Tsagaandorj Tsakhia Tseden Tsedenbal Tsedendorj Tsedevdamba Tsedevsüren Tsegmig Tsend Tsend-Ayuush Tsend-Ochir Tsengüün Tserenbaatar Tserendorj Tseveendash Tseyendash Tsogbadrakh Tsogtbaatar Tümen-Od Tungalag Turgun Tüvshinbayar Tüvshinjargal Tüvshintögs Tüvshintör Tyulgyu 
+			Ukhnaa Uuganbaatar 
+			Vaanchig 
+			Yadamsüren Yavuukhulan 
+			Zorigt 
+		}
+
+		female_names = {
+			Aldaa-nysh Aleksandra_Alexandra Altantsetseg Altantuyaa Ankhmaa Ankhnyam Ankhtsetseg Anu Ariunaa 
+			Badamsüren Batchimeg Batkhuyag Battögs Battsetseg Bayarmaa Bayartsetseg Bazarsüren Bolor-Erdene Bolormaa Bulgantuya Bundmaa Burmaa Byambasüren Byambatseren 
+			Chadzhakh Chakhayakh Chibek Chokhyray Chyustyuk 
+			Dashdulam Davaajargal Dechinmaa Delgermaa Demberel Dölgöön Dolgormaa Dorjpalam 
+			Engüün Enkhjargal Enkhjin Enkhtaivan Enkhtuya Erdenechimeg Erdenet-Od 
+			Gantuyaa Gereltuyaa Gündegmaa 
+			Ider 
+			Javzandulam 
+			Kara-kis Khozan Kizil-ool Khaliun Khongorzul Khorloo Khulan 
+			Lkhamdegd Lkhamjav 
+			Möngönchimeg Möngöntuul Mönkhbayar Mönkhtsetseg Mönkhtuyaa Mönkhzayaa Mönkhzul 
+			Namjilmaa Namuun Nandinzaya Naranjargal Narantsetseg Nasanburmaa Natsag Nomin Norovbanzad 
+			Ochirsüren Odonchimeg Odtsetseg Orkhon Otgon Otgonbayar Otgonjargal Otgontsetseg Oyuun Oyuunchimeg Oyuundari Oyuungerel Oyuunsüren Oyuuntsetseg Oyuuntülkhüür 
+			Pürevloov 
+			Saintsetseg Sarangerel Sarantuya Selenge Serchmaa Sumiyaa 
+			Togtokhbayar Torgï Tsedevsüren Tserenchimed Tserenkhand Tsetsegjargal Tsolmon Tumen Tuul Tuyaa 
+			Udval Uizenmaa Ulambayar Undraa Urantögs Urantsetseg Urantungalag Urgaatsetseg 
+			Yanjindulam Yanjmaa Yesüi Yzyrga 
+			Zolzayaa Zul 
 		}
 		
 		founder_named_dynasties = yes

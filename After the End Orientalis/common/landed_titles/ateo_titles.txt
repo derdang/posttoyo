@@ -41233,6 +41233,801 @@ e_shandong = {
 		}
 	}
 }
+e_mongolia = {
+	color={ 27 67 146 }
+	color2={ 255 255 20 }
+	
+	capital = 2023 # c_ulaanbaatar
+	culture = khalkha
+	
+	k_khangai = {
+		color={ 27 67 146 }
+		color2={ 255 255 255 }
+		
+		capital = 2023 # c_ulaanbaatar
+		culture = khalkha
+		
+		d_ulaanbaatar = {
+			color={ 27 67 146 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2023 province_id = 2024 province_id = 2025 } }
+				}
+			}
+			capital = 2023 # c_ulaanbaatar
+			
+			c_ulaanbaatar = { # 2023
+				color={ 22 156 135 }
+				color2={ 255 255 255 }
+				
+				b_ulaanbaatar = {
+				}
+				b_songino_khairkan = {
+				}
+				b_jargalant = {
+				}
+				b_mongonmorit = {
+				}
+				b_erdene = {
+				}
+				b_batsumber = {
+				}
+				b_baganuur = {
+				}
+			}
+			c_darkhan_uul = { # 2024
+				color={ 34 236 204 }
+				color2={ 255 255 255 }
+				
+				b_darkhan = {
+				}
+				b_suekhbaatar = {
+				}
+				b_mandal = {
+				}
+				b_saikhan = {
+				}
+				b_khongor = {
+				}
+				b_orkhontuul = {
+				}
+				b_zuumod = {
+				}
+			}
+			c_orkhon = { # 2025
+				color={ 0 183 159 }
+				color2={ 255 255 255 }
+				
+				b_erdenet = {
+				}
+				b_bulgan = {
+				}
+				b_khutag_ondor = {
+				}
+				b_teshig = {
+				}
+				b_saikhan_2 = {
+				}
+				b_bayan_agt = {
+				}
+				b_ulaantolgoi = {
+				}
+			}
+		}
+		d_dornod = {
+			color={ 55 156 157 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2026 province_id = 2027 province_id = 2028 } }
+				}
+			}
+			capital = 2026 # c_khentii
+			
+			c_khentii = { # 2026
+				color={ 45 166 152 }
+				color2={ 255 255 255 }
+				
+				b_chinggis = {
+				}
+				b_binder = {
+				}
+				b_omnodelger = {
+				}
+				b_batnorov = {
+				}
+				b_delgerkhaan = {
+				}
+				b_moron = {
+				}
+				b_galshar = {
+				}
+			}
+			c_dornod = { # 2027
+				color={ 31 115 106 }
+				color2={ 255 255 255 }
+				
+				b_choibalsan = {
+				}
+				b_bayan_uul = {
+				}
+				b_bayantumen = {
+				}
+				b_bayandun = {
+				}
+				b_dashbalbar = {
+				}
+				b_kholonbuir = {
+				}
+				b_sergelen = {
+				}
+			}
+			c_suekhbaatar = { # 2028
+				color={ 65 240 220 }
+				color2={ 255 255 255 }
+				
+				b_baruun_urt = {
+				}
+				b_monhhaan = {
+				}
+				b_erdenetsagaan = {
+				}
+				b_uulbayan = {
+				}
+				b_tuvshinshiree = {
+				}
+				b_dariganga = {
+				}
+				b_bayandelger = {
+				}
+			}
+		}
+		d_hulunbuir = {
+			color={ 185 180 117 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2029 province_id = 2030 province_id = 2031 province_id = 2032 } }
+				}
+			}
+			capital = 2029 # c_hulunbuir
+			
+			c_hulunbuir = { # 2029
+				color={ 195 170 122 }
+				color2={ 255 255 255 }
+				
+				b_hulunbuir = {
+				}
+				b_bayanhada = {
+				}
+				b_labudalian = {
+				}
+				b_yakeshi = {
+				}
+				b_shengli_5 = {
+				}
+				b_bayankuren = {
+				}
+				b_xinbaolige = {
+				}
+			}
+			c_barag = { # 2030
+				color={ 200 176 130 }
+				color2={ 255 255 255 }
+				
+				b_manzhouli = {
+				}
+				b_jalainur = {
+				}
+				b_amugulang = {
+				}
+				b_alatan_emole = {
+				}
+				b_arihasat = {
+				}
+				b_ciaogang = {
+				}
+				b_hulun = {
+				}
+			}
+			c_hinggan = { # 2032
+				color={ 167 149 115 }
+				color2={ 255 255 255 }
+				
+				b_arxan = {
+				}
+				b_ulanhot = {
+				}
+				b_inder = {
+				}
+				b_bayanhushu = {
+				}
+				b_tuliemaodou = {
+				}
+				b_barenzhelimu = {
+				}
+				b_haoyaosumu = {
+				}
+			}
+			c_oroqen = { # 2031
+				color={ 210 167 83 }
+				color2={ 255 255 255 }
+				
+				b_alihe = {
+				}
+				b_ganhe_2 = {
+				}
+				b_dayangshu = {
+				}
+				b_jiwen = {
+				}
+				b_jiagedaqi = {
+				}
+				b_jiabei = {
+				}
+				b_baihua = {
+				}
+			}
+		}
+		d_khangai = {
+			color={ 246 245 199 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2033 province_id = 2034 province_id = 2035 } }
+				}
+			}
+			capital = 2033 # c_arkhangai
+			
+			c_arkhangai = { # 2033
+				color={ 0 235 204 }
+				color2={ 255 255 255 }
+				
+				b_tsetsereig = {
+				}
+				b_battsengel = {
+				}
+				b_tariat = {
+				}
+				b_tsenkher = {
+				}
+				b_jargalant_2 = {
+				}
+				b_erdenemandal = {
+				}
+				b_ihk_tamir = {
+				}
+			}
+			c_moeroen = { # 2035
+				color={ 0 189 163 }
+				color2={ 255 255 255 }
+				
+				b_moeroen = {
+				}
+				b_badrakh = {
+				}
+				b_ikh_uul_2 = {
+				}
+				b_tsengel = {
+				}
+				b_rashaant = {
+				}
+				b_jargalant_3 = {
+				}
+				b_galt = {
+				}
+			}
+			c_zavkhan = { # 2034
+				color={ 0 117 89 }
+				color2={ 255 255 255 }
+				
+				b_uliastai = {
+				}
+				b_tosontsengel = {
+				}
+				b_bayantes = {
+				}
+				b_ikh_uul = {
+				}
+				b_aldarkhaan = {
+				}
+				b_yaruu = {
+				}
+				b_tes = {
+				}
+			}
+		}
+	}
+	k_altay_sayan = {
+		color={ 62 116 155 }
+		color2={ 255 255 255 }
+		
+		capital = 2055 # c_bayan_olgii
+		culture = khalkha
+		
+		d_altain_nuruu = {
+			color={ 246 231 164 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2055 province_id = 2056 province_id = 2057 } }
+				}
+			}
+			capital = 2055 # c_bayan_olgii
+			
+			c_bayan_olgii = { # 2055
+				color={ 0 221 169 }
+				color2={ 255 255 255 }
+				
+				b_olgii = {
+				}
+				b_sagsai = {
+				}
+				b_deluun = {
+				}
+				b_bayannuur = {
+				}
+				b_ulaankhus = {
+				}
+				b_tsengel_2 = {
+				}
+				b_noegoonsuur = {
+				}
+			}
+			c_baruunturuun = { # 2057
+				color={ 0 140 106 }
+				color2={ 255 255 255 }
+				
+				b_baruunturuun = {
+				}
+				b_boekhmoeroen = {
+				}
+				b_tsagaankhairkhan = {
+				}
+				b_tsalgar = {
+				}
+				b_tes_2 = {
+				}
+				b_zueuenkhangai = {
+				}
+				b_tuergen_2 = {
+				}
+			}
+			c_khovd = { # 2056
+				color={ 0 87 66 }
+				color2={ 255 255 255 }
+				
+				b_khovd = {
+				}
+				b_bulgan_2 = {
+				}
+				b_erdeneburen = {
+				}
+				b_buyant = {
+				}
+				b_darvi = {
+				}
+				b_most = {
+				}
+				b_mankhan = {
+				}
+			}
+		}
+	}
+	k_govi = {
+		color={ 197 245 177 }
+		color2={ 255 255 255 }
+		
+		capital = 2036 # c_hohot
+		culture = khalkha
+		
+		d_suiyuan = {
+			color={ 217 225 187 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2036 province_id = 2037 province_id = 2038 province_id = 2039 province_id = 2040 province_id = 2041 } }
+				}
+			}
+			capital = 2036 # c_hohot
+			
+			c_hohot = { # 2036
+				color={ 227 215 192 }
+				color2={ 255 255 255 }
+				
+				b_xincheng_9 = {
+				}
+				b_huimin_3 = {
+				}
+				b_yuquan_3 = {
+				}
+				b_saihan = {
+				}
+				b_togtoh = {
+				}
+				b_tumed = {
+				}
+				b_horinger = {
+				}
+			}
+			c_baotou = { # 2039
+				color={ 142 114 59 }
+				color2={ 255 255 255 }
+				
+				b_jiuyuan = {
+				}
+				b_kundulin = {
+				}
+				b_bayanobo = {
+				}
+				b_bailingmiao = {
+				}
+				b_jinshan_3 = {
+				}
+				b_xilamuren = {
+				}
+				b_xiguit = {
+				}
+			}
+			c_bayannur = { # 2038
+				color={ 234 227 215 }
+				color2={ 255 255 255 }
+				
+				b_bayannur = {
+				}
+				b_shanba = {
+				}
+				b_bayinbaolige = {
+				}
+				b_longxingchang = {
+				}
+				b_mona_uul = {
+				}
+				b_haliut = {
+				}
+				b_bayangol = {
+				}
+			}
+			c_haibowan = { # 2041
+				color={ 255 181 38 }
+				color2={ 255 255 255 }
+				
+				b_wuhai = {
+				}
+				b_haibowan = {
+				}
+				b_kabuqi = {
+				}
+				b_hainan = {
+				}
+				b_gongwusu = {
+				}
+				b_lasengmiao = {
+				}
+				b_lyhua = {
+				}
+			}
+			c_ordos = { # 2037
+				color={ 166 140 89 }
+				color2={ 255 255 255 }
+				
+				b_kangbashi = {
+				}
+				b_dongsheng_2 = {
+				}
+				b_ejin_horo = {
+				}
+				b_otog = {
+				}
+				b_dalad = {
+				}
+				b_jungar = {
+				}
+				b_uxin = {
+				}
+			}
+			c_ulanqab = { # 2040
+				color={ 255 206 112 }
+				color2={ 255 255 255 }
+				
+				b_jining = {
+				}
+				b_fengzhen = {
+				}
+				b_wulanhua = {
+				}
+				b_jishengtai = {
+				}
+				b_kuluntu = {
+				}
+				b_gongjitang = {
+				}
+				b_baiyinchaoketu = {
+				}
+			}
+		}
+		d_alxa = {
+			color={ 129 84 52 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2053 province_id = 2054 } }
+				}
+			}
+			capital = 2053 # c_alxa
+			
+			c_alxa = { # 2053
+				color={ 119 94 47 }
+				color2={ 255 255 255 }
+				
+				b_badain_jaran = {
+				}
+				b_bayanhot = {
+				}
+				b_yabulai = {
+				}
+				b_alateng_obaoe = {
+				}
+				b_bayingole = {
+				}
+				b_barunbieli = {
+				}
+				b_erkhashhasum = {
+				}
+			}
+			c_ejin = { # 2054
+				color={ 171 145 94 }
+				color2={ 255 255 255 }
+				
+				b_dalaihubu = {
+				}
+				b_hangkong = {
+				}
+				b_dongfeng_5 = {
+				}
+				b_saihan_taolai = {
+				}
+				b_supornur = {
+				}
+				b_mazongshan = {
+				}
+				b_bayintaohai = {
+				}
+			}
+		}
+		d_govi = {
+			color={ 96 224 193 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2042 province_id = 2043 province_id = 2044 province_id = 2045 province_id = 2046 province_id = 2047 } }
+				}
+			}
+			capital = 2042 # c_dundgovi
+			
+			c_dundgovi = { # 2042
+				color={ 106 214 198 }
+				color2={ 255 255 255 }
+				
+				b_mandalgovi = {
+				}
+				b_erdendalai = {
+				}
+				b_saintsaagan = {
+				}
+				b_khuld = {
+				}
+				b_delgerkhangai = {
+				}
+				b_adaatsag = {
+				}
+				b_deren = {
+				}
+			}
+			c_bayankhongor = { # 2044
+				color={ 0 222 192 }
+				color2={ 255 255 255 }
+				
+				b_bayankhongor = {
+				}
+				b_galuut = {
+				}
+				b_jargalant_4 = {
+				}
+				b_olziit = {
+				}
+				b_baatsagaan = {
+				}
+				b_bayanlig = {
+				}
+				b_buutsagaan = {
+				}
+			}
+			c_dornogovi = { # 2047
+				color={ 57 215 197 }
+				color2={ 255 255 255 }
+				
+				b_sainshand = {
+				}
+				b_zamyn_uud = {
+				}
+				b_khatanbulag = {
+				}
+				b_airag = {
+				}
+				b_irhkhet = {
+				}
+				b_erdene_3 = {
+				}
+				b_dalanjargalan = {
+				}
+			}
+			c_govi_altai = { # 2043
+				color={ 2 178 136 }
+				color2={ 255 255 255 }
+				
+				b_yesonbulag = {
+				}
+				b_erdene_2 = {
+				}
+				b_bugat = {
+				}
+				b_khokhmorit = {
+				}
+				b_tsogt = {
+				}
+				b_bayan_uul_2 = {
+				}
+				b_togrog = {
+				}
+			}
+			c_omnoegovi = { # 2046
+				color={ 0 236 204 }
+				color2={ 255 255 255 }
+				
+				b_dalanzadgad = {
+				}
+				b_tsogttsetsii = {
+				}
+				b_gurvantes = {
+				}
+				b_bayandalai = {
+				}
+				b_nomgon = {
+				}
+				b_manlai = {
+				}
+				b_mandal_ovoeo = {
+				}
+			}
+			c_ovoerkhangai = { # 2045
+				color={ 0 141 121 }
+				color2={ 255 255 255 }
+				
+				b_arvaikheer = {
+				}
+				b_kharkhorin = {
+				}
+				b_bayangol_2 = {
+				}
+				b_bogd = {
+				}
+				b_uyanga = {
+				}
+				b_khujirt = {
+				}
+				b_bat_olzii = {
+				}
+			}
+		}
+		d_rehe = {
+			color={ 117 83 70 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2048 province_id = 2050 province_id = 2051 province_id = 2052 } }
+				}
+			}
+			capital = 2048 # c_chifeng
+			
+			c_chifeng = { # 2048
+				color={ 107 93 65 }
+				color2={ 255 255 255 }
+				
+				b_hongshan_5 = {
+				}
+				b_yuanbaoshan = {
+				}
+				b_songshan_3 = {
+				}
+				b_linxi = {
+				}
+				b_hexigten = {
+				}
+				b_chutoulang = {
+				}
+				b_haladaokou = {
+				}
+			}
+			c_sonid = { # 2051
+				color={ 95 70 22 }
+				color2={ 255 255 255 }
+				
+				b_erenhot = {
+				}
+				b_saihantala = {
+				}
+				b_mandulatu = {
+				}
+				b_bayan_ula = {
+				}
+				b_bayannaoer = {
+				}
+				b_wurigentala = {
+				}
+				b_zhurihe = {
+				}
+			}
+			c_tongliao = { # 2050
+				color={ 181 158 113 }
+				color2={ 255 255 255 }
+				
+				b_horqin = {
+				}
+				b_holingol = {
+				}
+				b_kailu = {
+				}
+				b_naiman = {
+				}
+				b_horqin_2 = {
+				}
+				b_hure = {
+				}
+				b_jarud = {
+				}
+			}
+			c_xilinhot = { # 2052
+				color={ 220 200 162 }
+				color2={ 255 255 255 }
+				
+				b_xilinhot = {
+				}
+				b_beilu_gutai = {
+				}
+				b_xiritala = {
+				}
+				b_chugulan = {
+				}
+				b_baoligen = {
+				}
+				b_honggel_goel = {
+				}
+				b_xanadu = {
+				}
+			}
+		}
+	}
+}
 e_zhili = {
 	color={ 227 66 52 }
 	color2={ 255 255 20 }
