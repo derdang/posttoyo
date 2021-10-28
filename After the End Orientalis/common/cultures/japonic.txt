@@ -1,6 +1,60 @@
 japonic = {
 
 	graphical_cultures = { chinesegfx }
+	
+	kouzoku = {
+		graphical_cultures = { chinesegfx }
+		
+		dynasty_name_first = yes
+		
+		color = { 0.73 0.0 0.17 }
+		
+		male_names = {
+			Asahito Ayahito
+			Fusahito
+			Haruhito Hidehito Hikohito Hisahito
+			Iyahito
+			Katahito Katsuhito Kazuhito Kimihito Kinhito Kotohito Kunihito
+			Masuhito Michihito Mihito Misahito Mitsuhito Morihito Morohito Motohito Munehito Mutsuhito
+			Nagahito Naohito Nobuhito Norihito
+			Ohito Okihito Orihito Osahito
+			Sadahito Sanehito Satohito Shigehito Shizuhito Sukehito
+			Tadahito Takahito Takehito Tamehito Tanehito Taruhito Tatsuhito Teruhito Tohito Tokihito Tomihito Tomohito Toshihito Toyohito Tsuguhito Tsunahito
+			Uyahito
+			Yakahito Yasuhito Yorihito Yoshihito Yukihito Yutahito
+
+		}
+		
+		female_names = {
+			Akiko Asako Atsuko
+			Chikako
+			Fujiko Fusako
+			Haruko Hiroko Hideko
+			Isoko Iyako
+			Kaoruko Kimiko Kiyoko Kotoko Kuniko
+			Masako Moriko Motoko Miwako Mutsuko Muneko
+			Naoko Nagako Nakako Nariko Noboruko Nobuko Noriko
+			Okiko
+			Sadako Sakiko Saneko Sachiko Sukeko Sumiko
+			Tadako Takako Tameko Teruko Tokiko Tomoko Toshiko Tsuneko
+			Yasuko Yoshiko
+
+		}
+		
+	from_dynasty_prefix = ""
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0		
+		
+		modifier = default_culture_modifier
+	}
 
 	togoku = {
 		graphical_cultures = { chinesegfx }
