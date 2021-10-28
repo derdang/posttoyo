@@ -1,6 +1,7 @@
 ###########Japan Region Characters###########
 
 # Japanese
+# 8880 Kouzoku (Imperial)
 # 1600 Ryukyuan
 # 1601 Ezo
 # 1602 Kyushuan
@@ -8,6 +9,3063 @@
 # 1604 Saigoku
 
 ###########Japanese Dynasties###########
+
+88000 = {
+	name="Hohodemi"
+	# Emperor Jimmu
+	dynasty=888 #Yamato
+	martial=11
+	diplomacy=8
+	intrigue=9
+	stewardship=7
+	learning=10
+	religion=mahayana
+	culture=kouzoku
+	add_trait="brilliant_strategist"
+	add_trait="proud"
+	add_trait="brave"
+	add_trait="just"
+	1.1.1={
+		birth="1.1.1"
+	}
+	8.2.11={
+		name="Jimmu"
+	}
+	23.3.11={
+		death=yes
+	}
+}
+
+88001 = {
+	name="Kamununakahamimi"
+	# Emperor Suizei
+	dynasty=888 #Yamato
+	father=88000
+	religion=mahayana
+	culture=kouzoku
+	add_trait="brilliant_strategist"
+	add_trait="cruel"
+	add_trait="brave"
+	add_trait="just"
+	19.1.1={
+		birth=yes
+	}
+	27.2.21={
+		name="Suizei"
+	}
+	53.12.30={
+		death=yes
+	}
+}
+
+88002 = {
+	name="Tamatemi"
+	# Emperor Annei
+	dynasty=888 #Yamato
+	father=88001
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	35.1.1={
+		birth=yes
+	}
+	54.1.1={
+		name="Annei"
+	}
+	64.9.21={
+		death=yes
+	}
+}
+
+88003 = {
+	name="Sukitomo"
+	# Emperor Itoku
+	dynasty=888 #Yamato
+	father=88002
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	53.1.1={
+		birth=yes
+	}
+	64.9.21={
+		name="Itoku"
+	}
+	93.12.30={
+		death=yes
+	}
+}
+
+88004 = {
+	name="Kaeshine"
+	# Emperor Kosho
+	dynasty=888 #Yamato
+	father=88003
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	83.1.1={
+		birth=yes
+	}
+	93.3.10={
+		name="Kosho"
+	}
+	119.8.9={
+		death=yes
+	}
+}
+
+88005 = {
+	name="Kunioshihito"
+	# Emperor Koan
+	dynasty=888 #Yamato
+	father=88004
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	100.1.1={
+		birth=yes
+	}
+	119.8.9={
+		name="Koan"
+	}
+	149.5.4={
+		death=yes
+	}
+}
+
+88006 = {
+	name="Futoni"
+	# Emperor Korei
+	dynasty=888 #Yamato
+	father=88005
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	132.1.1={
+		birth=yes
+	}
+	149.5.4={
+		name="Korei"
+	}
+	185.12.30={
+		death=yes
+	}
+}
+
+88007 = {
+	name="Kunikuru"
+	# Emperor Kogen
+	dynasty=888 #Yamato
+	father=88006
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	150.1.1={
+		birth=yes
+	}
+	166.1.1={
+		add_spouse=230009
+	}
+	186.1.1={
+		name="Kogen"
+	}
+	203.9.14={
+		death=yes
+	}
+}
+
+88008 = {
+	name="Ohihi"
+	# Emperor Kaika
+	dynasty=888 #Yamato
+	father=88007
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	180.1.1={
+		birth=yes
+	}
+	200.1.1={
+		add_spouse=230033
+	}
+	203.9.14={
+		name="Kaika"
+	}
+	235.2.19={
+		death=yes
+	}
+}
+
+88009 = {
+	name="Inie"
+	# Emperor Sujin
+	dynasty=888 #Yamato
+	father=88008
+	martial=10
+	diplomacy=13
+	intrigue=10
+	stewardship=12
+	learning=11
+	religion=mahayana
+	culture=kouzoku
+	add_trait="grey_eminence"
+	add_trait="diligent"
+	add_trait="ambitious"
+	add_trait="zealous"
+	202.1.1={
+		birth=yes
+	}
+	236.1.1={
+		name="Sujin"
+	}
+	258.9.9={
+		death=yes
+	}
+}
+
+88010 = {
+	name="Isachi"
+	# Emperor Suinin
+	dynasty=888 #Yamato
+	father=88009
+	martial=6
+	diplomacy=9
+	intrigue=7
+	stewardship=11
+	learning=9
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	add_trait="charitable"
+	add_trait="kind"
+	add_trait="zealous"
+	230.1.1={
+		birth=yes
+	}
+	258.12.6={
+		name="Suinin"
+	}
+	292.5.30={
+		death=yes
+	}
+}
+
+88011 = {
+	name="Oshirowake"
+	# Emperor Keiko
+	dynasty=888 #Yamato
+	father=88010
+	martial=11
+	diplomacy=6
+	intrigue=7
+	stewardship=6
+	learning=5
+	religion=mahayana
+	culture=kouzoku
+	add_trait="brilliant_strategist"
+	add_trait="ambitious"
+	add_trait="proud"
+	270.1.1={
+		birth=yes
+	}
+	292.6.1={
+		name="Keiko"
+	}
+	330.12.18={
+		death=yes
+	}
+}
+
+88012 = {
+	name="Wousu"
+	# Father of Emperor Chuai
+	dynasty=888 #Yamato
+	father=88011
+	religion=mahayana
+	culture=kouzoku
+	martial=15
+	diplomacy=5
+	intrigue=14
+	stewardship=6
+	learning=8
+	add_trait="brilliant_strategist"
+	add_trait="fair"
+	add_trait="twin"
+	add_trait="brave"
+	add_trait="cruel"
+	add_trait="honest"
+	add_trait="poet"
+	290.1.1={
+		birth=yes
+	}
+	306.1.1={
+		name="Yamato Takeru"
+	}
+	319.12.30={
+		death=yes
+	}
+}
+
+88013 = {
+	name="Wakatarashihiko"
+	# Emperor Seimu
+	dynasty=888 #Yamato
+	father=88011
+	religion=mahayana
+	culture=kouzoku
+	martial=6
+	diplomacy=12
+	intrigue=7
+	stewardship=13
+	learning=9
+	add_trait="grey_eminence"
+	add_trait="gregarious"
+	add_trait="diligent"
+	add_trait="brave"
+	295.1.1={
+		birth=yes
+	}
+	330.12.18={
+		name="Seimu"
+	}
+	340.6.28={
+		death=yes
+	}
+}
+
+88014 = {
+	name="Tarashi Nakatsuhiko"
+	# Emperor Chuai
+	dynasty=888 #Yamato
+	father=88012
+	religion=mahayana
+	culture=kouzoku
+	martial=11
+	diplomacy=7
+	intrigue=2
+	stewardship=6
+	learning=6
+	add_trait="naive_appeaser"
+	add_trait="fair"
+	add_trait="brave"
+	add_trait="cynical"
+	310.1.1={
+		birth=yes
+	}
+	340.6.28={
+		name="Chuai"
+	}
+	344.2.5={
+		death=yes
+	}
+}
+
+88015 = {
+	name="Homudawake"
+	# Emperor Ojin
+	dynasty=888 #Yamato
+	father=88014
+	religion=mahayana
+	culture=kouzoku
+	martial=12
+	diplomacy=10
+	intrigue=11
+	stewardship=8
+	learning=7
+	add_trait="brilliant_strategist"
+	add_trait="genius"
+	add_trait="brave"
+	add_trait="ambitious"
+	add_trait="zealous"
+	344.1.1={
+		birth=yes
+	}
+	344.2.5={
+		name="Ojin"
+	}
+	388.11.7={
+		death=yes
+	}
+}
+
+88016 = {
+	name="Osazaki"
+	# Emperor Nintoku
+	dynasty=888 #Yamato
+	father=88015
+	religion=mahayana
+	culture=kouzoku
+	martial=5
+	diplomacy=9
+	intrigue=6
+	stewardship=13
+	learning=11
+	add_trait="midas_touched"
+	add_trait="genius"
+	add_trait="temperate"
+	add_trait="charitable"
+	add_trait="kind"
+	362.1.1={
+		birth=yes
+	}
+	388.11.8={
+		name="Nintoku"
+	}
+	430.2.15={
+		death=yes
+	}
+}
+
+88017 = {
+	name="Izahowake" #Clown prince Izahowake
+	# Emperor Richu
+	dynasty=888 #Yamato
+	father=88016
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="lustful"
+	add_trait="proud"
+	389.1.1={
+		birth=yes
+	}
+	430.3.1={
+		name="Richu"
+	}
+	435.3.23={
+		death=yes
+	}
+}
+
+88018 = {
+	name="Oshiiwa" #Prince Oshiiwa of Ichibe
+	# Father of Emperor Kenzo
+	dynasty=888 #Yamato
+	father=88017
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	430.1.1={
+		birth=yes
+	}
+	463.10.1={
+		death={
+		death_reason=death_murder
+		killer=88022 # Emperor Yuryaku
+		}
+	}
+}
+
+88019 = {
+	name="Mizuhawake" #Prince Mizuhawake of Tajihi
+	# Emperor Hanzei
+	dynasty=888 #Yamato
+	father=88016
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="honest"
+	add_trait="just"
+	395.1.1={
+		birth=yes
+	}
+	435.3.23={
+		name="Hanzei"
+	}
+	440.3.7={
+		death=yes
+	}
+}
+
+88020 = {
+	name="Wakugo" #Oasazuma Wakugo no Sukune, Emperor Ingyo
+	# Emperor Ingyo
+	dynasty=888 #Yamato
+	father=88016
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="just"
+	add_trait="diligent"
+	400.1.1={
+		birth=yes
+	}
+	430.1.1={
+		add_spouse=41191
+	}
+	440.3.7={
+		name="Ingyo"
+	}
+	459.1.23={
+		death=yes
+	}
+}
+
+88021 = {
+	name="Anaho"
+	# Emperor Anko
+	dynasty=888 #Yamato
+	father=88020
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="greedy"
+	add_trait="honest"
+	435.1.1={
+		birth=yes
+	}
+	459.1.23={
+		name="Anko"
+	}
+	463.8.19={
+		death={
+		death_reason=death_murder
+		killer=41202 # Prince Mayowa
+		}
+	}
+}
+
+88022 = {
+	name="Wakatakeru"
+	# Emperor Yuryaku
+	dynasty=888 #Yamato
+	father=88020
+	religion=mahayana
+	culture=kouzoku
+	martial=15
+	diplomacy=8
+	intrigue=14
+	stewardship=6
+	learning=13
+	add_trait="intricate_webweaver"
+	add_trait="strong"
+	add_trait="wroth"
+	add_trait="impaler"
+	add_trait="greedy"
+	add_trait="proud"
+	440.1.1={
+		birth=yes
+	}
+	463.8.19={
+		name="Yuryaku"
+	}
+	489.9.15={
+		death=yes
+	}
+}
+
+88023 = {
+	name="Takehirokuni"
+	# Emperor Seinei
+	dynasty=888 #Yamato
+	father=88022
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="weak"
+	add_trait="kind"
+	add_trait="humble"
+	470.1.1={
+		birth=yes
+	}
+	489.9.15={
+		name="Seinei"
+	}
+	491.1.21={
+		death=yes
+	}
+}
+
+88024 = {
+	name="Woke"
+	# Emperor Kenzo
+	dynasty=888 #Yamato
+	father=88018
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="brave"
+	add_trait="just"
+	add_trait="proud"
+	add_trait="poet"
+	461.1.1={
+		birth=yes
+	}
+	493.8.9={
+		name="Kenzo"
+	}
+	499.5.30={
+		death=yes
+	}
+}
+
+88025 = {
+	name="Oke"
+	# Emperor Ninken
+	dynasty=888 #Yamato
+	father=88018
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="patient"
+	add_trait="proud"
+	add_trait="diligent"
+	460.1.1={
+		birth=yes
+	}
+	499.5.30={
+		name="Ninken"
+	}
+	508.9.16={
+		death=yes
+	}
+}
+
+88026 = {
+	name="Wakasazaki"
+	# Emperor Buretsu
+	dynasty=888 #Yamato
+	father=88025
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="arbitrary"
+	add_trait="wroth"
+	add_trait="proud"
+	add_trait="cruel"
+	498.1.1={
+		birth=yes
+	}
+	508.9.16={
+		name="Buretsu"
+	}
+	517.1.14={
+		death=yes
+	}
+}
+
+# Keitai line
+
+
+88027 = {
+	name="Futamata"
+	# Father of Oiratsuko
+	dynasty=888 #Yamato
+	father=88015
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	370.1.1={
+		birth=yes
+	}
+	419.12.30={
+		death=yes
+	}
+}
+
+88028 = {
+	name="Oiratsuko"
+	# Father of Oi
+	dynasty=888 #Yamato
+	father=88027
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	386.1.1={
+		birth=yes
+	}
+	450.12.30={
+		death=yes
+	}
+}
+
+88029 = {
+	name="Oi"
+	# Father of Ushi
+	dynasty=888 #Yamato
+	father=88028
+	religion=mahayana
+	culture=kouzoku
+	add_trait="elusive_shadow"
+	410.1.1={
+		birth=yes
+	}
+	480.12.30={
+		death=yes
+	}
+}
+
+88030 = {
+	name="Ushi"
+	# Father of Emperor Keitai
+	dynasty=888 #Yamato
+	father=88029
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	430.1.1={
+		birth=yes
+	}
+	500.12.30={
+		death=yes
+	}
+}
+
+88031 = {
+	name="Ohodo"
+	# Emperor Keitai
+	dynasty=888 #Yamato
+	father=88030
+	martial=7
+	diplomacy=8
+	intrigue=6
+	stewardship=7
+	religion=mahayana
+	culture=kouzoku
+	add_trait="charismatic_negotiator"
+	450.1.1={
+		birth="450.1.1"
+	}
+	517.3.3={
+		name="Keitai"
+	}
+	531.3.10={
+		death="531.3.10"
+	}
+}
+
+88032 = {
+	name="Magari"
+	# Emperor Ankan
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88031
+	466.1.1={
+		birth="466.1.1"
+	}
+	531.3.10={
+		name="Ankan"
+	}
+	535.12.17={
+		death="535.12.17"
+	}
+}
+
+88033 = {
+	name="Takata"
+	# Emperor Senka
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88031
+	467.1.1={
+		birth="467.1.1"
+	}
+	535.12.17={
+		name="Senka"
+	}
+	539.3.15={
+		death="539.3.15"
+	}
+}
+
+88034 = {
+	name="Hironiwa"
+	# Emperor Kinmei
+	dynasty=888 #Yamato
+	martial=6
+	diplomacy=7
+	intrigue=5
+	stewardship=6
+	religion=mahayana
+	culture=kouzoku
+	add_trait="underhanded_rogue"
+	father=88031
+	509.1.1={
+		birth="509.1.1"
+	}
+	539.3.15={
+		name="Kinmei"
+	}
+	571.5.24={
+		death="571.5.24"
+	}
+}
+
+88035 = {
+	name="Futotamashiki"
+	# Emperor Bidatsu
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88034
+	538.1.1={
+		birth="538.1.1"
+	}
+	571.4.30={
+		name="Bidatsu"
+	}
+	585.9.14={
+		death="585.9.14"
+	}
+}
+
+88036 = {
+	name="Ikebe"
+	# Emperor Yomei
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88034
+	539.1.1={
+		birth=yes
+	}
+	585.9.5={
+		name="Yomei"
+	}
+	587.4.9={
+		death="587.4.9"
+	}
+}
+
+88037 = {
+	name="Hatsusebe"
+	# Emperor Sushun
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88034
+	553.1.1={
+		birth="553.1.1"
+	}
+	587.4.9={
+		name="Sushun"
+	}
+	592.12.12={
+		death="592.12.12"
+	}
+}
+
+88038 = {
+	name="Nukatabe"
+	# Empress Suiko
+	female = yes
+	dynasty=888 #Yamato
+	martial=3
+	diplomacy=8
+	intrigue=7
+	stewardship=6
+	religion=mahayana
+	culture=kouzoku
+	add_trait="underhanded_rogue"
+	father=88034
+	554.1.1={
+		birth="554.1.1"
+	}
+	592.12.12={
+		name="Suiko"
+	}
+	628.4.15={
+		death="628.4.15"
+	}
+}
+
+88039 = {
+	name="Hikohito"
+	# Father of Emperor Jomei
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88035
+	565.1.1={
+		birth="565.1.1"
+	}
+	606.1.1={
+		death="606.1.1"
+	}
+}
+
+88040 = {
+	name="Tamura"
+	# Emperor Jomei
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88039
+	593.1.1={
+		birth="593.1.1"
+	}
+	628.4.15={
+		name="Jomei"
+	}
+	641.11.17={
+		death="641.11.17"
+	}
+}
+
+88041 = {
+	name="Chinu"
+	# Father of Empress Saimei
+	dynasty=888 #Yamato
+	father=88039
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	580.1.1={
+		birth="580.1.1"
+	}
+	623.1.1={
+		death="623.1.1"
+	}
+}
+
+88042 = {
+	name="Takara"
+	# Empress Kogyoku/Saimei
+	female = yes
+	dynasty=888 #Yamato
+	martial=7
+	diplomacy=7
+	intrigue=6
+	stewardship=6
+	religion=mahayana
+	culture=kouzoku
+	add_trait="flamboyant_schemer"
+	father=88041
+	594.1.1={
+		birth="594.1.1"
+	}
+	641.11.17={
+		name="Kogyoku"
+	}
+	654.11.24={
+		name="Saimei"
+	}
+	661.8.24={
+		death="661.8.24"
+	}
+}
+
+88043 = {
+	name="Karu"
+	# Emperor Kotoku
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88041
+	596.1.1={
+		birth="596.1.1"
+	}
+	645.7.12={
+		name="Kotoku"
+	}
+	654.11.24={
+		death="654.11.24"
+	}
+}
+
+88044 = {
+	name="Kazuragi"
+	# Emperor Tenchi
+	dynasty=888 #Yamato
+	martial=5
+	diplomacy=8
+	intrigue=8
+	stewardship=7
+	religion=mahayana
+	culture=kouzoku
+	add_trait="intricate_webweaver"
+	father=88040
+	mother=88042
+	626.1.1={
+		birth="626.1.1"
+	}
+	661.8.24={
+		name="Tenchi"
+	}
+	672.1.7={
+		death="672.1.7"
+	}
+}
+
+88045 = {
+	name="Otomo"
+	# Emperor Kobun
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88044
+	648.1.1={
+		birth="648.1.1"
+	}
+	672.1.9={
+		name="Kobun"
+	}
+	672.8.21={
+		death="672.8.21"
+	}
+}
+
+88046 = {
+	name="Oama"
+	# Emperor Tenmu
+	dynasty=888 #Yamato
+	martial=9
+	diplomacy=8
+	intrigue=7
+	stewardship=9
+	religion=mahayana
+	culture=kouzoku
+	add_trait="midas_touched"
+	father=88040
+	mother=88042
+	631.1.1={
+		birth="631.1.1"
+	}
+	672.8.21={
+		name = "Tenmu"
+	}
+	686.10.1={
+		death="686.10.1"
+	}
+}
+
+88047 = {
+	name="Sarara"
+	# Empress Jito
+	female = yes
+	dynasty=888 #Yamato
+	martial=5
+	diplomacy=6
+	intrigue=8
+	stewardship=8
+	religion=mahayana
+	culture=kouzoku
+	add_trait="charismatic_negotiator"
+	father=88044
+	645.1.1={
+		birth="645.1.1"
+	}
+	686.10.1={
+		name = "Jito"
+	}
+	703.1.13={
+		death="703.1.13"
+	}
+}
+
+88048 = {
+	name="Kusakabe"
+	# Father of Emperor Monmu
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88046
+	662.1.1={
+		birth="662.1.1"
+	}
+	689.5.7={
+		death="689.5.7"
+	}
+}
+
+88049 = {
+	name="Karu"
+	# Emperor Monmu
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88048
+	683.1.1={
+		birth="683.1.1"
+	}
+	697.8.22={
+		name = "Monmu"
+	}
+	707.7.18={
+		death="707.7.18"
+	}
+}
+
+88050 = {
+	name="Ahe"
+	# Empress Genmei
+	female = yes
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88044
+	661.1.1={
+		birth="661.1.1"
+	}
+	707.7.18={
+		name = "Genmei"
+	}
+	721.12.29={
+		death="721.12.29"
+	}
+}
+
+88051 = {
+	name="Hitaka"
+	# Empress Gensho
+	female = yes
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88048
+	mother=88050
+	680.1.1={
+		birth="680.1.1"
+	}
+	715.10.3={
+		name = "Gensho"
+	}
+	748.5.22={
+		death="748.5.22"
+	}
+}
+
+88052 = {
+	name="Obito"
+	# Emperor Shomu
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="thrifty_clerk"
+	father=88049
+	701.1.1={
+		birth="701.1.1"
+	}
+	721.12.29={
+		name = "Shomu"
+	}
+	756.6.4={
+		death="756.6.4"
+	}
+}
+
+88053 = {
+	name="Takano"
+	# Empress Koken/Shotoku
+	female = yes
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88052
+	718.1.1={
+		birth="718.1.1"
+	}
+	749.8.19={
+		name = "Koken"
+	}
+	764.11.6={
+		name = "Shotoku"
+	}
+	770.8.28={
+		death="770.8.28"
+	}
+}
+
+88054 = {
+	name="Toneri"
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88046
+	676.1.1={
+		birth="676.1.1"
+	}
+	735.12.6={
+		death="735.12.6"
+	}
+}
+
+88055 = {
+	name="Oi"
+	# Emperor Junnin
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88054
+	733.1.1={
+		birth="733.1.1"
+	}
+	758.9.7={
+		name = "Junnin"
+	}
+	765.11.10={
+		death="765.11.10"
+	}
+}
+
+88056 = {
+	name="Shiki"
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88044
+	668.1.1={
+		birth="668.1.1"
+	}
+	716.10.4={
+		death="716.10.4"
+	}
+}
+
+88057 = {
+	name="Shirakabe"
+	# Emperor Konin
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88056
+	709.1.1={
+		birth="709.1.1"
+	}
+	770.8.28={
+		name = "Konin"
+	}
+	782.1.11={
+		death="782.1.11"
+	}
+}
+
+88058 = {
+	name="Yamanobe"
+	# Emperor Kanmu
+	dynasty=888 #Yamato
+	martial=4
+	diplomacy=7
+	intrigue=7
+	stewardship=6
+	religion=mahayana
+	culture=kouzoku
+	add_trait="flamboyant_schemer"
+	father=88057
+	737.1.1={
+		birth="737.1.1"
+	}
+	781.4.30={
+		name = "Kanmu"
+	}
+	806.4.9={
+		death="806.4.9"
+	}
+}
+
+88059 = {
+	name="Ote"
+	# Emperor Heizei
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88058
+	774.9.25={
+		birth="774.9.25"
+	}
+	806.4.9={
+		name = "Heizei"
+	}
+	824.8.5={
+		death="824.8.5"
+	}
+}
+
+88060 = {
+	name="Kamino"
+	# Emperor Saga
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88058
+	786.10.3={
+		birth="786.10.3"
+	}
+	809.5.8={
+		name = "Saga"
+	}
+	842.8.24={
+		death="842.8.24"
+	}
+}
+
+88061 = {
+	name="Otomo"
+	# Emperor Junna
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88058
+	786.12.1={
+		birth="786.12.1"
+	}
+	823.6.9={
+		name = "Junna"
+	}
+	840.6.11={
+		death="840.6.11"
+	}
+}
+
+88062 = {
+	name="Masara"
+	# Emperor Ninmyo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88060
+	810.12.1={
+		birth="810.12.1"
+	}
+	833.3.30={
+		name = "Ninmyo"
+	}
+	850.5.6={
+		death="850.5.6"
+	}
+}
+
+88063 = {
+	name="Michiyasu"
+	# Emperor Montoku
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88062
+	827.1.1={
+		birth="827.1.1"
+	}
+	850.5.6={
+		name = "Montoku"
+	}
+	858.10.7={
+		death="858.10.7"
+	}
+}
+
+88064 = {
+	name="Korehito"
+	# Emperor Seiwa
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88063
+	850.5.10={
+		birth="850.5.10"
+	}
+	858.10.7={
+		name = "Seiwa"
+	}
+	881.1.7={
+		death="881.1.7"
+	}
+}
+
+88065 = {
+	name="Sadaakira"
+	# Emperor Yozei
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88064
+	869.1.2={
+		birth="869.1.2"
+	}
+	876.12.18={
+		name = "Yozei"
+	}
+	949.10.23={
+		death="949.10.23"
+	}
+}
+
+88066 = {
+	name="Tokiyasu"
+	# Emperor Koko
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88062 # Emperor Ninmyo
+	830.1.1={
+		birth="830.1.1"
+	}
+	884.3.23={
+		name = "Koko"
+	}
+	887.9.17={
+		death="887.9.17"
+	}
+}
+
+88067 = {
+	name="Sadami"
+	# Emperor Uda
+	dynasty=888 #Yamato
+	martial=4
+	diplomacy=7
+	intrigue=8
+	stewardship=6
+	religion=mahayana
+	culture=kouzoku
+	add_trait="charismatic_negotiator"
+	father=88066
+	867.6.10={
+		birth="867.6.10"
+	}
+	887.9.17={
+		name = "Uda"
+	}
+	913.9.3={
+		death="913.9.3"
+	}
+}
+
+88068 = {
+	name="Atsuhito"
+	# Emperor Daigo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="flamboyant_schemer"
+	father=88067
+	885.2.6={
+		birth="885.2.6"
+	}
+	897.8.14={
+		name = "Daigo"
+	}
+	930.10.23={
+		death="930.10.23"
+	}
+}
+
+88069 = {
+	name="Yutaakira"
+	# Emperor Suzaku
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88068
+	923.9.7={
+		birth="923.9.7"
+	}
+	930.12.14={
+		name = "Suzaku"
+	}
+	952.9.6={
+		death="952.9.6"
+	}
+}
+
+88070 = {
+	name="Ariakira"
+	# Emperor Murakami
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88068
+	926.7.14={
+		birth="926.7.14"
+	}
+	946.5.31={
+		name = "Murakami"
+	}
+	967.7.5={
+		death="967.7.5"
+	}
+}
+
+88071 = {
+	name="Norihira"
+	# Emperor Reizei
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88070
+	950.6.12={
+		birth="950.6.12"
+	}
+	967.7.5={
+		name = "Reizei"
+	}
+	1011.11.21={
+		death="1011.11.21"
+	}
+}
+
+88072 = {
+	name="Morihira"
+	# Emperor Enyu
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88070
+	959.4.12={
+		birth="959.4.12"
+	}
+	969.11.5={
+		name = "Enyu"
+	}
+	991.3.1={
+		death="991.3.1"
+	}
+}
+
+88073 = {
+	name="Morosada"
+	# Emperor Kazan
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88071
+	968.11.29={
+		birth="968.11.29"
+	}
+	984.11.5={
+		name = "Kazan"
+	}
+	1008.3.17={
+		death="1008.3.17"
+	}
+}
+
+88074 = {
+	name="Yasuhito"
+	# Emperor Ichijo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88072
+	980.7.15={
+		birth="980.7.15"
+	}
+	986.7.31={
+		name = "Ichijo"
+	}
+	1011.7.25={
+		death="1011.7.25"
+	}
+}
+
+88075 = {
+	name="Okisada"
+	# Emperor Sanjo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88071
+	976.2.5={
+		birth="976.2.5"
+	}
+	1011.7.16={
+		name = "Sanjo"
+	}
+	1017.6.15={
+		death="1017.6.15"
+	}
+}
+
+88076 = {
+	name="Atsuhira"
+	# Emperor Go-Ichijo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88074
+	1008.10.12={
+		birth="1008.10.12"
+	}
+	1016.3.24={
+		name = "Go-Ichijo"
+	}
+	1036.5.15={
+		death="1036.5.15"
+	}
+}
+
+88077 = {
+	name="Atsunaga"
+	# Emperor Go-Suzaku
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88074
+	1009.12.14={
+		birth="1009.12.14"
+	}
+	1036.5.15={
+		name = "Go-Suzaku"
+	}
+	1045.2.5={
+		death="1045.2.5"
+	}
+}
+
+88078 = {
+	name="Chikahito"
+	# Emperor Go-Reizei
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88077
+	1025.8.28={
+		birth="1025.8.28"
+	}
+	1045.2.5={
+		name="Go-Reizei"
+	}
+	1068.5.22={
+		death="1068.5.22"
+	}
+}
+
+88079 = {
+	name="Takahito"
+	# Emperor Go-Sanjo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88077
+	1034.9.3={
+		birth="1034.9.3"
+	}
+	1068.5.22={
+		name = "Go-Sanjo"
+	}
+	1073.6.15={
+		death="1073.6.15"
+	}
+}
+
+88080 = {
+	name="Sadahito"
+	# Emperor Shirakawa
+	dynasty=888 #Yamato
+	martial=3
+	diplomacy=8
+	intrigue=7
+	stewardship=6
+	religion=mahayana
+	culture=kouzoku
+	add_trait="elusive_shadow"
+	father=88079
+	1053.7.7={
+		birth="1053.7.7"
+	}
+	1073.1.18={
+		name = "Shirakawa"
+	}
+	1129.7.24={
+		death="1129.7.24"
+	}
+}
+
+88081 = {
+	name="Yoshihito"
+	# Emperor Horikawa
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="poet"
+	father=88080
+	1079.8.8={
+		birth="1079.8.8"
+	}
+	1086.12.16={
+		name = "Horikawa"
+	}
+	1107.8.9={
+		death="1107.8.9"
+	}
+}
+
+88082 = {
+	name="Munehito"
+	# Emperor Toba
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="flamboyant_schemer"
+	add_trait="poet"
+	father=88081
+	1103.2.24={
+		birth="1103.2.24"
+	}
+	1107.8.9={
+		name = "Toba"
+	}
+	1156.7.20={
+		death="1156.7.20"
+	}
+}
+
+88083 = {
+	name="Akihito"
+	# Emperor Sutoku
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	add_trait="poet"
+	add_trait="envious"
+	father=88082
+	1119.7.7={
+		birth="1119.7.7"
+	}
+	1123.2.19={
+		name = "Sutoku"
+	}
+	1164.9.14={
+		death="1164.9.14"
+	}
+}
+
+88084 = {
+	name="Masahito"
+	# Emperor Go-Shirakawa
+	dynasty=888 #Yamato
+	dna="00vg00u0000"
+	properties="aaaaaa"
+	religion=mahayana
+	culture=kouzoku
+	martial=4
+	diplomacy=9
+	intrigue=8
+	stewardship=7
+	health=7
+	add_trait="elusive_shadow"
+	add_trait="quick"
+	father=88082
+	1127.8.23={
+		birth="1127.8.23"
+	}
+	1155.8.23={
+		name = "Go-Shirakawa"
+	}
+	1169.7.13={
+		add_trait="monk"
+		effect = { set_character_flag = has_monk_name }
+	}
+	1192.4.26={
+		death="1192.4.26"
+	}
+}
+
+88085 = {
+	name="Narihito"
+	# Emperor Konoe
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88082 # Empeor Toba
+	1139.6.16={
+		birth="1139.6.16"
+	}
+	1142.1.5={
+		name = "Konoe"
+	}
+	1155.8.22={
+		death="1155.8.22"
+	}
+}
+
+88086 = {
+	name="Morihito"
+	# Emperor Nijo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	add_trait="fair"
+	father=88084
+	1143.7.31={
+		birth="1143.7.31"
+	}
+	1158.9.5={
+		name = "Nijo"
+	}
+	1165.9.5={
+		death="1165.9.5"
+	}
+}
+
+88087 = {
+	name="Nobuhito"
+	# Emperor Rokujo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="indulgent_wastrel"
+	add_trait="fair"
+	father=88086
+	1165.8.3={
+		birth="1165.8.3"
+	}
+	1165.8.3={
+		name = "Rokujo"
+	}
+	1176.8.23={
+		death="1176.8.23"
+	}
+}
+
+88088 = {
+	name="Norihito"
+	# Emperor Takakura
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="fair"
+	father=88084
+	1161.9.23={
+		birth="1161.9.23"
+	}
+	1168.3.30={
+		name = "Takakura"
+	}
+	1180.5.18={
+		add_trait="stressed"
+		add_trait="ill"
+	}
+	1181.2.6={
+		death="1181.2.6"
+	}
+}
+
+88089 = {
+	name="Tokihito"
+	# Emperor Antoku
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88088
+	1178.12.22={
+		birth="1178.12.22"
+	}
+	1180.5.18={
+		name = "Antoku"
+	}
+	1185.4.25={
+		death="1185.4.25"
+	}
+}
+
+88090 = {
+	name="Takanari"
+	# Emperor Go-Toba
+	dynasty=888 #Yamato
+	dna="00vg00f0000"
+	properties="aaaaaa"
+	religion=mahayana
+	culture=kouzoku
+	add_trait="intricate_webweaver"
+	add_trait="poet"
+	add_trait="arbitrary"
+	add_trait="ambitious"
+	add_trait="wroth"
+	father=88088
+	1180.8.6={
+		birth="1180.8.6"
+	}
+	1183.9.8={
+		name = "Go-Toba"
+	}
+	1239.3.28={
+		death="1239.3.28"
+	}
+}
+
+88091 = {
+	name="Tamehito"
+	# Emperor Tsuchimikado
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="content"
+	add_trait="kind"
+	father=88090
+	1196.1.3={
+		birth="1196.1.3"
+	}
+	1198.2.18={
+		name = "Tsuchimikado"
+	}
+	1231.11.16={
+		death="1231.11.16"
+	}
+}
+
+88092 = {
+	name="Morinari"
+	# Emperor Juntoku
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	add_trait="wroth"
+	add_trait="scholar"
+	father=88090
+	1197.10.22={
+		birth="1197.10.22"
+	}
+	1210.12.12={
+		name = "Juntoku"
+	}
+	1242.10.7={
+		death="1242.10.7"
+	}
+}
+
+88093 = {
+	name="Kanenari"
+	# Emperor Chukyo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88092
+	1218.10.30={
+		birth="1218.10.30"
+	}
+	1221.5.13={
+		name = "Chukyo"
+	}
+	1234.6.18={
+		death="1234.6.18"
+	}
+}
+
+88094 = {
+	name="Morisada" #Go-Takakura
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="detached_priest"
+	father=88088
+	1179.4.6={
+		birth="1179.4.6"
+	}
+	1223.6.14={
+		death="1223.6.14"
+	}
+}
+
+88095 = {
+	name="Toyohito"
+	# Emperor Go-Horikawa
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88094
+	1212.3.22={
+		birth="1212.3.22"
+	}
+	1221.7.29={
+		name = "Go-Horikawa"
+	}
+	1234.8.31={
+		death="1234.8.31"
+	}
+}
+
+88096 = {
+	name="Mitsuhito"
+	# Emperor Shijo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88095
+	1231.3.17={
+		birth="1231.3.17"
+	}
+	1232.11.17={
+		name = "Shijo"
+	}
+	1242.2.10={
+		death="1242.2.10"
+	}
+}
+
+88097 = {
+	name="Kunihito"
+	# Emperor Go-Saga
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88091
+	1220.2.26={
+		birth="1220.2.26"
+	}
+	1242.2.21={
+		name = "Go-Saga"
+	}
+	1272.2.17={
+		death="1272.2.17"
+	}
+}
+
+88098 = {
+	name="Hisahito"
+	# Emperor Go-Fukakusa
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88097
+	1243.6.10={
+		birth="1243.6.10"
+	}
+	1246.2.16={
+		name = "Go-Fukakusa"
+	}
+	1304.7.16={
+		death="1304.7.16"
+	}
+}
+
+88099 = {
+	name="Tsunehito"
+	# Emperor Kameyama
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88097
+	1249.7.9={
+		birth="1249.7.9"
+	}
+	1260.1.9={
+		name = "Kameyama"
+	}
+	1305.10.4={
+		death="1305.10.4"
+	}
+}
+
+88100 = {
+	name="Yohito"
+	# Emperor Go-Uda
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88099
+	1267.12.17={
+		birth="1267.12.17"
+	}
+	1274.3.6={
+		name = "Go-Uda"
+	}
+	1324.7.16={
+		death="1324.7.16"
+	}
+}
+
+88101 = {
+	name="Hirohito"
+	# Emperor Fushimi
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	add_trait="poet"
+	father=88098
+	1265.5.10={
+		birth="1265.5.10"
+	}
+	1287.11.27={
+		name = "Fushimi"
+	}
+	1317.10.8={
+		death="1317.10.8"
+	}
+}
+
+88102 = {
+	name="Tanehito"
+	# Emperor Go-Fushimi
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88101
+	1288.4.5={
+		birth="1288.4.5"
+	}
+	1298.8.30={
+		name = "Go-Fushimi"
+	}
+	1336.5.17={
+		death="1336.5.17"
+	}
+}
+
+88103 = {
+	name="Kuniharu"
+	# Emperor Go-Nijo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="naive_appeaser"
+	father=88100
+	1285.3.9={
+		birth="1285.3.9"
+	}
+	1301.3.2={
+		name = "Go-Nijo"
+	}
+	1308.9.10={
+		death="1308.9.10"
+	}
+}
+
+88104 = {
+	name="Tomihito"
+	# Emperor Hanazono
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88101
+	1297.8.14={
+		birth="1297.8.14"
+	}
+	1308.12.28={
+		name = "Hanazono"
+	}
+	1348.12.2={
+		death="1348.12.2"
+	}
+}
+
+88105 = {
+	name="Takaharu"
+	# Emperor Go-Daigo
+	dynasty=888 #Yamato
+	martial=6
+	diplomacy=7
+	intrigue=10
+	stewardship=10
+	learning=7
+	religion=mahayana
+	culture=kouzoku
+	add_trait="charismatic_negotiator"
+	add_trait="ambitious"
+	add_trait="arbitrary"
+	add_trait="diligent"
+	add_trait="proud"
+	add_trait="gregarious"
+	add_trait="hedonist"
+	father=88100
+	1288.11.26={
+		birth="1288.11.26"
+	}
+	1318.4.30={
+		name = "Go-Daigo"
+	}
+	1339.9.19={
+		death="1339.9.19"
+	}
+}
+
+88106 = {
+	name="Kazuhito"
+	# Emperor Kogon
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	add_trait="poet"
+	father=88102
+	1313.8.1={
+		birth="1313.8.1"
+	}
+	1331.10.22={
+		name = "Kogon"
+	}
+	1364.8.5={
+		death="1364.8.5"
+	}
+}
+
+88107 = {
+	name="Noriyoshi"
+	# Emperor Go-Murakami
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88105
+	1328.1.1={
+		birth=yes
+	}
+	1339.11.6={
+		name = "Go-Murakami"
+	}
+	1368.3.29={
+		death=yes
+	}
+}
+
+88108 = {
+	name="Yutanari"
+	# Emperor Chokei
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88107
+	1343.1.1={
+		birth=yes
+	}
+	1368.3.29={
+		name = "Chokei"
+		add_claim = e_japan
+	}
+	1383.3.29={
+		death=yes
+	}
+}
+
+88109 = {
+	name="Hironari"
+	# Emperor Go-Kameyama
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88107
+	1350.1.1={
+		birth=yes
+	}
+	1383.3.29={
+		name = "Go-Kameyama"
+		add_claim = e_japan
+	}
+	1424.5.10={
+		death=yes
+	}
+}
+
+88110 = {
+	name="Yutahito"
+	# Emperor Komyo
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88102
+	1322.1.11={
+		birth=yes
+	}
+	1336.9.20={
+		name = "Komyo"
+	}
+	1380.7.26={
+		death=yes
+	}
+}
+
+88111 = {
+	name="Masuhito"
+	# Emperor Suko
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88106
+	1334.5.25={
+		birth=yes
+	}
+	1348.11.18={
+		name = "Suko"
+	}
+	1398.1.31={
+		death=yes
+	}
+}
+
+88112 = {
+	name="Iyahito"
+	# Emperor Go-Kogon
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88106
+	1338.3.23={
+		birth=yes
+	}
+	1352.9.25={
+		name = "Go-Kogon"
+	}
+	1374.3.12={
+		death=yes
+	}
+}
+
+88113 = {
+	name="Ohito"
+	# Emperor Go-Enyu
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88112
+	1359.1.11={
+		birth=yes
+	}
+	1371.4.9={
+		name = "Go-Enyu"
+	}
+	1393.6.6={
+		death=yes
+	}
+}
+
+88114 = {
+	name="Motohito"
+	# Emperor Go-Komatsu
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88113
+	1377.8.1={
+		birth=yes
+	}
+	1382.5.24={
+		name = "Go-Komatsu"
+	}
+	1433.12.1={
+		death=yes
+	}
+}
+
+88115 = {
+	name="Yoshihito"
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88111
+	1351.1.1={
+		birth=yes
+	}
+	1416.12.9={
+		death=yes
+	}
+}
+
+88116 = {
+	name="Sadafusa"
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88115
+	1372.4.9={
+		birth=yes
+	}
+	1456.9.28={
+		death=yes
+	}
+}
+
+88117 = {
+	name="Mihito"
+	# Emperor Shoko
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88114
+	1401.5.12={
+		birth=yes
+	}
+	1412.10.5={
+		name = "Shoko"
+	}
+	1428.8.20={
+		death=yes
+	}
+}
+
+88118 = {
+	name="Hikohito"
+	# Emperor Go-Hanazono
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88116
+	1419.7.10={
+		birth=yes
+	}
+	1428.9.7={
+		name = "Go-Hanazono"
+	}
+	1471.1.18={
+		death=yes
+	}
+}
+
+88119 = {
+	name="Fusahito"
+	# Emperor Go-Tsuchimikado
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88118
+	1442.7.3={
+		birth=yes
+	}
+	1464.8.21={
+		name = "Go-Tsuchimikado"
+	}
+	1500.10.21={
+		death=yes
+	}
+}
+
+88120 = {
+	name="Katsuhito"
+	# Emperor Go-Kashiwabara
+	dynasty=888 #Yamato
+	religion=mahayana
+	culture=kouzoku
+	add_trait="amateurish_plotter"
+	father=88119
+	1464.11.19={
+		birth=yes
+	}
+	1500.11.16={
+		name = "Go-Kashiwabara"
+	}
+	1526.5.18={
+		death=yes
+	}
+}
+
+88151 = {
+	name="Tomohito"
+	# Emperor Go-Nara
+	dynasty=888 #Yamato
+	father=88120
+	martial=3
+	diplomacy=9
+	intrigue=9
+	stewardship=7
+	learning=12
+	religion=mahayana
+	culture=kouzoku
+	add_trait="thrifty_clerk"
+	add_trait="scholar"
+	add_trait="charitable"
+	add_trait="just"
+	1497.1.26={
+		birth=yes
+	}
+	1526.6.9={
+		name="Go-Nara"
+	}
+	1557.9.27={
+		death=yes
+	}
+}
+
+88121={
+	name="Michihito"
+	# Emperor Oogimachi
+	dynasty=888 #Yamato
+	dna="aavbaafaeea"
+	properties="aaaaaa"
+	father=88151 # Go-Nara Emperor
+	religion=mahayana
+	culture=kouzoku
+	martial=2
+	diplomacy=8
+	intrigue=8
+	stewardship=6
+	learning=13
+	1517.6.18={
+		birth=yes
+	}
+	1557.9.27={
+		name="Oogimachi"
+	}
+	1593.2.6={
+		death=yes
+	}
+}
+
+88122={
+	name="Sanehito"
+	# Father of Emperor Go-Yozei
+	dynasty=420 # Yamato
+	father=88121 # Ohgimachi Emperor
+	religion=mahayana
+	culture=kouzoku
+	martial=1
+	1552.5.16={
+		birth=yes
+	}
+	1593.2.6={
+		death=yes
+	}
+}
+
+88123={
+	name="Katahito"
+	# Emperor Go-Yozei
+	dynasty=888 #Yamato
+	father=88122 # Prince Sanehito(Son of Ohgimachi Emperor)
+	religion=mahayana
+	culture=kouzoku
+	martial=1
+	1571.12.31={
+		birth=yes
+	}
+	1586.12.17={
+		name="Go-Yozei"
+	}
+	1617.9.25={
+		death=yes
+	}
+}
+
+88124={
+	name="Kotohito"
+	# Emperor Go-Mizunoo
+	dynasty=888 #Yamato
+	father=88123 # Go-Yozei Emperor
+	religion=mahayana
+	culture=kouzoku
+	martial=1
+#	diplomacy=
+#	intrigue=
+#	stewardship=
+#	learning=
+	1596.6.29={
+		birth=yes
+	}
+	1611.3.27={
+		name="Go-Mizunoo"
+	}
+	1680.9.11={
+		death=yes
+	}
+}
+
+88125={
+	name="Okiko"
+	# Empress Meisho
+	female = yes
+	dynasty=888 #Yamato
+	father=88124
+	religion=mahayana
+	culture=kouzoku
+	1624.1.9={
+		birth=yes
+	}
+	1629.12.22={
+		name="Meisho"
+	}
+	1696.12.4={
+		death=yes
+	}
+}
+
+88126={
+	name="Tsuguhito"
+	# Emperor Go-Komyo
+	dynasty=888 #Yamato
+	father=88124
+	religion=mahayana
+	culture=kouzoku
+	1633.4.20={
+		birth=yes
+	}
+	1643.11.14={
+		name="Go-Komyo"
+	}
+	1654.10.30={
+		death=yes
+	}
+}
+
+88127={
+	name="Nagahito"
+	# Emperor Go-Sai
+	dynasty=888 #Yamato
+	father=88124
+	religion=mahayana
+	culture=kouzoku
+	1638.1.1={
+		birth=yes
+	}
+	1655.1.5={
+		name="Go-Sai"
+	}
+	1685.3.26={
+		death=yes
+	}
+}
+
+88128={
+	name="Satohito"
+	# Emperor Reigen
+	dynasty=888 #Yamato
+	father=88124
+	religion=mahayana
+	culture=kouzoku
+	1654.7.9={
+		birth=yes
+	}
+	1663.3.5={
+		name="Reigen"
+	}
+	1732.9.24={
+		death=yes
+	}
+}
+
+88129={
+	name="Asahito"
+	# Emperor Higashiyama
+	dynasty=888 #Yamato
+	father=88128
+	religion=mahayana
+	culture=kouzoku
+	1675.10.21={
+		birth=yes
+	}
+	1687.5.6={
+		name="Higashiyama"
+	}
+	1710.1.16={
+		death=yes
+	}
+}
+
+88130={
+	name="Yasuhito"
+	# Emperor Nakamikado
+	dynasty=888 #Yamato
+	father=88129
+	religion=mahayana
+	culture=kouzoku
+	1702.1.14={
+		birth=yes
+	}
+	1709.7.27={
+		name="Nakamikado"
+	}
+	1737.5.10={
+		death=yes
+	}
+}
+
+88131={
+	name="Teruhito"
+	# Emperor Sakuramachi
+	dynasty=888 #Yamato
+	father=88130
+	religion=mahayana
+	culture=kouzoku
+	1720.2.8={
+		birth=yes
+	}
+	1735.4.13={
+		name="Sakuramachi"
+	}
+	1750.5.28={
+		death=yes
+	}
+}
+
+88132={
+	name="Toohito"
+	# Emperor Momozono
+	dynasty=888 #Yamato
+	father=88131
+	religion=mahayana
+	culture=kouzoku
+	1742.4.14={
+		birth=yes
+	}
+	1747.6.9={
+		name="Momozono"
+	}
+	1762.8.31={
+		death=yes
+	}
+}
+
+88133={
+	name="Toshiko"
+	# Empress Go-Sakuramachi
+	female = yes
+	dynasty=888 #Yamato
+	father=88131
+	religion=mahayana
+	culture=kouzoku
+	1740.9.23={
+		birth=yes
+	}
+	1762.9.15={
+		name="Go-Sakuramachi"
+	}
+	1813.12.24={
+		death=yes
+	}
+}
+
+88134={
+	name="Hidehito"
+	# Emperor Go-Momozono
+	dynasty=888 #Yamato
+	father=88132
+	religion=mahayana
+	culture=kouzoku
+	1758.8.5={
+		birth=yes
+	}
+	1771.1.9={
+		name="Go-Momozono"
+	}
+	1779.12.16={
+		death=yes
+	}
+}
+
+88135={
+	name="Naohito"
+	# Father of Sukehito
+	dynasty=888 #Yamato
+	father=88129
+	religion=mahayana
+	culture=kouzoku
+	1704.10.7={
+		birth=yes
+	}
+	1753.7.3={
+		death=yes
+	}
+}
+
+88136={
+	name="Sukehito"
+	# Father of Emperor Kokaku
+	dynasty=888 #Yamato
+	father=88135
+	religion=mahayana
+	culture=kouzoku
+	1733.4.1={
+		birth=yes
+	}
+	1794.8.1={
+		death=yes
+	}
+}
+
+88137={
+	name="Morohito"
+	# Emperor Kokaku
+	dynasty=888 #Yamato
+	father=88136
+	religion=mahayana
+	culture=kouzoku
+	1771.9.23={
+		birth=yes
+	}
+	1780.1.1={
+		name="Kokaku"
+	}
+	1840.12.11={
+		death=yes
+	}
+}
+
+88138={
+	name="Ayahito"
+	# Emperor Ninko
+	dynasty=888 #Yamato
+	father=88137
+	religion=mahayana
+	culture=kouzoku
+	1800.3.16={
+		birth=yes
+	}
+	1817.5.7={
+		name="Ninko"
+	}
+	1846.2.21={
+		death=yes
+	}
+}
+
+88139={
+	name="Osahito"
+	# Emperor Komei
+	dynasty=888 #Yamato
+	father=88138
+	religion=mahayana
+	culture=kouzoku
+	1831.7.22={
+		birth=yes
+	}
+	1846.3.10={
+		name="Komei"
+	}
+	1867.1.30={
+		death=yes
+	}
+}
+
+88140={
+	name="Mutsuhito"
+	# Emperor Meiji
+	dynasty=888 #Yamato
+	father=88139
+	religion=mahayana
+	culture=kouzoku
+	1852.11.3={
+		birth=yes
+	}
+	1867.2.3={
+		name="Meiji"
+	}
+	1912.7.30={
+		death=yes
+	}
+}
+
+88141={
+	name="Yoshihito"
+	# Emperor Taisho
+	dynasty=888 #Yamato
+	father=88140
+	religion=mahayana
+	culture=kouzoku
+	1879.8.31={
+		birth=yes
+	}
+	1912.7.30={
+		name="Taisho"
+	}
+	1926.12.25={
+		death=yes
+	}
+}
+
+88142={
+	name="Hirohito"
+	# Emperor Showa
+	dynasty=888 #Yamato
+	father=88141
+	religion=mahayana
+	culture=kouzoku
+	1901.4.29={
+		birth=yes
+	}
+	1926.12.25={
+		name="Showa"
+	}
+	1989.2.24={
+		death=yes
+	}
+}
+
+88143={
+	name="Akihito"
+	# Emperor Heisei
+	dynasty=888 #Yamato
+	father=88142
+	religion=mahayana
+	culture=kouzoku
+	1933.12.23={
+		birth=yes
+	}
+	1989.1.7={
+		name="Heisei"
+	}
+	2059.4.7={
+		death=yes
+	}
+}
+
+88144={
+	name="Naruhito"
+	# Emperor Reiwa
+	dynasty=888 #Yamato
+	father=88143
+	religion=mahayana
+	culture=kouzoku
+	1960.2.23={
+		birth=yes
+	}
+	2019.5.1={
+		name="Reiwa"
+	}
+	2168.2.24={
+		death=yes
+	}
+}
+
+88145={
+	name="Naruhito"
+	# Emperor Go-Chukyo
+	dynasty=888 #Yamato
+	father=88144
+	religion=mahayana
+	culture=kouzoku
+	2010.3.28={
+		birth=yes
+	}
+	2168.2.25={
+		name="Go-Chukyo"
+	}
+	2211.4.3={
+		death=yes
+	}
+}
+
+88146={
+	name="Tokuhito"
+	# Emperor Go-Oogimachi
+	dynasty=888 #Yamato
+	father=88145
+	religion=mahayana
+	culture=kouzoku
+	2071.2.23={
+		birth=yes
+	}
+	2211.4.4={
+		name="Go-Oogimachi"
+	}
+	2339.1.13={
+		death=yes
+	}
+}
+
+88147={
+	name="Fusahito"
+	# Emperor Go-Chokei
+	dynasty=888 #Yamato
+	father=88146
+	religion=shinto
+	culture=kouzoku
+	2134.7.16={
+		birth=yes
+	}
+	2339.1.14={
+		name="Go-Chokei"
+	}
+	2437.8.1={
+		death=yes
+	}
+}
+
+88148={
+	name="Minohito"
+	# Emperor Go-Shomu
+	dynasty=888 #Yamato
+	father=88148
+	religion=shinto
+	culture=kouzoku
+	2223.9.17={
+		birth=yes
+	}
+	2437.8.2={
+		name="Go-Shomu"
+	}
+	2529.1.13={
+		death=yes
+	}
+}
+
+88149={
+	name="Atsuhito"
+	# Emperor Go-Kasuga
+	dynasty=888 #Yamato
+	father=88148
+	religion=shinto
+	culture=kouzoku
+	2505.10.6={
+		birth=yes
+	}
+	2529.1.14={
+		name="Go-Kasuga"
+	}
+	2573.8.23={
+		death=yes
+	}
+}
+
+88150={
+	name="Taruhito"
+	# Emperor Banwa
+	dynasty=888 #Yamato
+	father=88149
+	religion=shinto
+	culture=kouzoku
+	2556.6.29={
+		birth=yes
+	}
+	2573.8.24={
+		name="Banwa"
+	}
+}
 
 1600000={ #Duke of Ryukyu
 	name="Rui"
