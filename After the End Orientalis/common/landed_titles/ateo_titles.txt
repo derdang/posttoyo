@@ -43249,6 +43249,173 @@ e_novorusskiy = {
 			}
 		}
 	}
+	k_khabarovsk = {
+		color={ 43 185 15 }
+		color2={ 255 255 255 }
+		
+		capital = 2072 # c_khabarovsk
+		culture = primorskiy
+		
+		d_khabarovsk = {
+			color={ 23 205 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2072 province_id = 2073 province_id = 2074 province_id = 2075 } }
+				}
+			}
+			capital = 2072 # c_khabarovsk
+			
+			c_khabarovsk = { # 2072
+				color={ 13 215 0 }
+				color2={ 255 255 255 }
+				
+				b_khabarovsk = {
+				}
+				b_chornaya_rechka = {
+				}
+				b_knyaze_volkonskoye = {
+				}
+				b_anastasyevka = {
+				}
+				b_druzhba = {
+				}
+				b_galkino = {
+				}
+				b_zaozernoye = {
+				}
+			}
+			c_bikinsky = { # 2075
+				color={ 7 123 0 }
+				color2={ 255 255 255 }
+				
+				b_bikin = {
+				}
+				b_lesopilnoe = {
+				}
+				b_boytsovo = {
+				}
+				b_lermontovskoye = {
+				}
+				b_pokrovka_3 = {
+				}
+				b_perelesok = {
+				}
+				b_selskoye = {
+				}
+			}
+			c_imeni_lazo = { # 2073
+				color={ 12 204 0 }
+				color2={ 255 255 255 }
+				
+				b_pereyaslavka = {
+				}
+				b_khor = {
+				}
+				b_obor = {
+				}
+				b_bichevaya = {
+				}
+				b_sidima = {
+				}
+				b_mukhen = {
+				}
+				b_dolmi = {
+				}
+			}
+			c_vyazemsky = { # 2074
+				color={ 8 130 0 }
+				color2={ 255 255 255 }
+				
+				b_vyazemsky = {
+				}
+				b_krasitskoye = {
+				}
+				b_dormidontovka = {
+				}
+				b_kapitonovka = {
+				}
+				b_otradnoye = {
+				}
+				b_venyukovo = {
+				}
+				b_medvezhiy = {
+				}
+			}
+		}
+		d_komsomolsky = {
+			color={ 77 160 73 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2076 province_id = 2077 province_id = 2078 } }
+				}
+			}
+			capital = 2076 # c_komsomolsky
+			
+			c_komsomolsky = { # 2076
+				color={ 67 170 68 }
+				color2={ 255 255 255 }
+				
+				b_komsomolsk_on_amur = {
+				}
+				b_khurba = {
+				}
+				b_molodozhnyy = {
+				}
+				b_galichnyy = {
+				}
+				b_nizhniye_khalby = {
+				}
+				b_boktor = {
+				}
+				b_glk_almir = {
+				}
+			}
+			c_nanaysky = { # 2078
+				color={ 10 171 0 }
+				color2={ 255 255 255 }
+				
+				b_troitskoye = {
+				}
+				b_dayerga = {
+				}
+				b_lidoga = {
+				}
+				b_dzhari = {
+				}
+				b_dubovyy_mys = {
+				}
+				b_mayak = {
+				}
+				b_innokentyevka = {
+				}
+			}
+			c_selikhino = { # 2077
+				color={ 80 203 81 }
+				color2={ 255 255 255 }
+				
+				b_selikhino = {
+				}
+				b_gayter = {
+				}
+				b_nizhnetambovskoye = {
+				}
+				b_dappy = {
+				}
+				b_oktyabrskiy = {
+				}
+				b_shelekhovo = {
+				}
+				b_yagodnyy = {
+				}
+			}
+		}
+	}
 	k_sakhalin = {
 		color={ 130 160 201 }
 		color2={ 255 255 255 }
