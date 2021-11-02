@@ -70,3 +70,27 @@ k_soka_gakkai = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+d_ruist_yansheng = {
+	color = { 30 9 153 }
+	
+	capital = 1902
+	
+	title = "HEAD_RUIST"
+	foa = "TENNO_FOA"
+	
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = ruist
+	
+	religion = ruist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
