@@ -44095,3 +44095,367 @@ e_novorusskiy = {
 		}
 	}
 }
+e_kamchatka = {
+	color={ 187 101 235 }
+	color2={ 255 255 20 }
+	
+	capital = 2102 # c_yelizovsky
+	culture = petropavlovskiy
+	
+	k_kamchatka = {
+		color={ 197 91 240 }
+		color2={ 255 255 255 }
+		
+		capital = 2102 # c_yelizovsky
+		culture = petropavlovskiy
+		
+		d_kamchatsky = {
+			color={ 217 71 250 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2102 province_id = 2103 province_id = 2104 } }
+				}
+			}
+			capital = 2102 # c_yelizovsky
+			
+			c_yelizovsky = { # 2102
+				color={ 227 61 255 }
+				color2={ 255 255 255 }
+				
+				b_petropavlovsk = {
+				}
+				b_vulkanny = {
+				}
+				b_yelizovo = {
+				}
+				b_sokoch = {
+				}
+				b_nikolayevka_3 = {
+				}
+				b_novy = {
+				}
+				b_lesnoy = {
+				}
+			}
+			c_sobolevsky = { # 2104
+				color={ 185 48 209 }
+				color2={ 255 255 255 }
+				
+				b_sobolevo = {
+				}
+				b_krutogorovskii = {
+				}
+				b_ichinskii = {
+				}
+				b_kirovskiy_2 = {
+				}
+				b_mutnovsky = {
+				}
+				b_khangar = {
+				}
+				b_treugolnoye = {
+				}
+			}
+			c_ust_bolsheretsky = { # 2103
+				color={ 197 52 222 }
+				color2={ 255 255 255 }
+				
+				b_ust_bolsheretsk = {
+				}
+				b_oktyabrskii = {
+				}
+				b_ozernovskiy = {
+				}
+				b_pauzhetka = {
+				}
+				b_apacha = {
+				}
+				b_kavalerskoye = {
+				}
+				b_kikhchik = {
+				}
+			}
+		}
+		d_klyuchevskoi = {
+			color={ 183 53 169 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2105 province_id = 2106 province_id = 2107 } }
+				}
+			}
+			capital = 2105 # c_ust_kamchatsky
+			
+			c_ust_kamchatsky = { # 2105
+				color={ 193 43 174 }
+				color2={ 255 255 255 }
+				
+				b_ust_kamchatsk = {
+				}
+				b_krutoberegovo = {
+				}
+				b_mayskoye = {
+				}
+				b_kozyrevsk = {
+				}
+				b_krapivnaja = {
+				}
+				b_kliuchi = {
+				}
+				b_azhabachye = {
+				}
+			}
+			c_bystrinsky = { # 2107
+				color={ 171 44 193 }
+				color2={ 255 255 255 }
+				
+				b_esso = {
+				}
+				b_anavgai = {
+				}
+				b_olengende = {
+				}
+				b_altay_2 = {
+				}
+				b_yuzhnaya = {
+				}
+				b_anavgay = {
+				}
+				b_kamrest = {
+				}
+			}
+			c_milkovsky = { # 2106
+				color={ 146 36 164 }
+				color2={ 255 255 255 }
+				
+				b_milkovo = {
+				}
+				b_taezhnyi = {
+				}
+				b_sharomy = {
+				}
+				b_dolinovka = {
+				}
+				b_atlasovo = {
+				}
+				b_pushchino = {
+				}
+				b_udina_tobachik = {
+				}
+			}
+		}
+		d_komandorski = {
+			color={ 160 21 140 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2112 } }
+				}
+			}
+			capital = 2112 # c_aleutsky
+			
+			c_aleutsky = { # 2112
+				color={ 150 31 135 }
+				color2={ 255 255 255 }
+				
+				b_nikolskoye = {
+				}
+				b_preobrazhenskoye = {
+				}
+				b_glinka = {
+				}
+				b_severnoye = {
+				}
+				b_podutesnaya = {
+				}
+				b_gladkovskaya = {
+				}
+				b_lisennova = {
+				}
+			}
+		}
+		d_koryak = {
+			color={ 173 25 152 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2108 province_id = 2109 province_id = 2110 province_id = 2111 } }
+				}
+			}
+			capital = 2108 # c_tigilsky
+			
+			c_tigilsky = { # 2108
+				color={ 163 35 147 }
+				color2={ 255 255 255 }
+				
+				koriak = "Palana"
+				
+				b_palana = {
+				}
+				b_tigil = {
+				}
+				b_sedanka = {
+				}
+				b_lesnaya = {
+				}
+				b_voyampolka = {
+				}
+				b_khairiuzovo = {
+				}
+				b_ust_khayryuzovo = {
+				}
+			}
+			c_karaginsky = { # 2109
+				color={ 224 51 202 }
+				color2={ 255 255 255 }
+				
+				koriak = "Ossora"
+				
+				b_ossora = {
+				}
+				b_ivashka = {
+				}
+				b_ilpyrskoye = {
+				}
+				b_karaga = {
+				}
+				b_tymlat = {
+				}
+				b_nachikinskoye = {
+				}
+				b_lakhpay = {
+				}
+			}
+			c_olyutorsky = { # 2110
+				color={ 247 58 226 }
+				color2={ 255 255 255 }
+				
+				koriak = "Tilichiki"
+				
+				b_tilichiki = {
+				}
+				b_apuka = {
+				}
+				b_achaivayam = {
+				}
+				b_khailino = {
+				}
+				b_vyvenka = {
+				}
+				b_korf = {
+				}
+				b_pakhachi = {
+				}
+			}
+			c_penzhinsky = { # 2111
+				color={ 199 45 183 }
+				color2={ 255 255 255 }
+				
+				koriak = "Kamens"
+				
+				b_kamenskoye = {
+				}
+				b_manily = {
+				}
+				b_oklan = {
+				}
+				b_talovka = {
+				}
+				b_ayanka = {
+				}
+				b_penzhina = {
+				}
+				b_koryakskiy = {
+				}
+			}
+		}
+		d_severo_kurilsky = {
+			color={ 135 43 150 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2113 } }
+				}
+			}
+			capital = 2113 # c_severo_kurilsky
+			
+			togoku = "Kita-chishima"
+			saigoku = "Kita-chishima"
+			kyushuan = "Kita-chishima"
+			ezo = "Kita-chishima"
+			ryukyuan = "Kita-chishima"
+			
+			c_severo_kurilsky = { # 2113
+				color={ 125 53 145 }
+				color2={ 255 255 255 }
+				
+				togoku = "Kita-chishima"
+				saigoku = "Kita-chishima"
+				kyushuan = "Kita-chishima"
+				ezo = "Kita-chishima"
+				ryukyuan = "Kita-chishima"
+				
+				b_severo_kurilsk = {
+					togoku = "Paramushiro"
+					saigoku = "Paramushiro"
+					kyushuan = "Paramushiro"
+					ezo = "Paramushiro"
+					ryukyuan = "Paramushiro"
+				}
+				b_baikovo = {
+					togoku = "Shumushu"
+					saigoku = "Shumushu"
+					kyushuan = "Shumushu"
+					ezo = "Shumushu"
+					ryukyuan = "Shumushu"
+				}
+				b_alaidskaya = {
+					togoku = "Oyakoba"
+					saigoku = "Oyakoba"
+					kyushuan = "Oyakoba"
+					ezo = "Oyakoba"
+					ryukyuan = "Oyakoba"
+				}
+				b_antsiferov = {
+					togoku = "Shirinki"
+					saigoku = "Shirinki"
+					kyushuan = "Shirinki"
+					ezo = "Shirinki"
+					ryukyuan = "Shirinki"
+				}
+				b_zakat = {
+					togoku = "Makanru"
+					saigoku = "Makanru"
+					kyushuan = "Makanru"
+					ezo = "Makanru"
+					ryukyuan = "Makanru"
+				}
+				b_sunazhma = {
+					togoku = "Harimukotan"
+					saigoku = "Harimukotan"
+					kyushuan = "Harimukotan"
+					ezo = "Harumukotan"
+					ryukyuan = "Harimukotan"
+				}
+				b_makarovka = {
+					togoku = "Shasukotan"
+					saigoku = "Shasukotan"
+					kyushuan = "Shasukotan"
+					ezo = "Shasukotan"
+					ryukyuan = "Shasukotan"
+				}
+			}
+		}
+	}
+}
