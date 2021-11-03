@@ -43414,6 +43414,358 @@ e_novorusskiy = {
 				}
 			}
 		}
+		d_nikolayevsky = {
+			color={ 23 217 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2083 province_id = 2084 } }
+				}
+			}
+			capital = 2083 # c_nikolayevsk
+			
+			c_nikolayevsk = { # 2083
+				color={ 13 227 0 }
+				color2={ 255 255 255 }
+				
+				b_nikolayevsk_on_amur = {
+				}
+				b_mnogovershinny = {
+				}
+				b_chnyrrakh = {
+				}
+				b_mago = {
+				}
+				b_ozerpakh = {
+				}
+				b_vlasyevo = {
+				}
+				b_chlya = {
+				}
+			}
+			c_nivkhy = { # 2084
+				color={ 8 146 2 }
+				color2={ 255 255 255 }
+				
+				b_puir = {
+				}
+				b_dzhaore = {
+				}
+				b_vlasyevo_2 = {
+				}
+				b_aleyevka = {
+				}
+				b_solontsy_3 = {
+				}
+				b_oremif = {
+				}
+				b_bulava = {
+				}
+			}
+		}
+		d_ulchsky = {
+			color={ 16 91 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2081 province_id = 2082 } }
+				}
+			}
+			capital = 2081 # c_bogorodskoye
+			
+			c_bogorodskoye = { # 2081
+				color={ 6 101 0 }
+				color2={ 255 255 255 }
+				
+				b_bogorodskoye = {
+				}
+				b_de_kastri = {
+				}
+				b_tsimmermanovka = {
+				}
+				b_mariinskoye = {
+				}
+				b_bolshiye_sanniki = {
+				}
+				b_tulinskoye = {
+				}
+				b_sofiysk = {
+				}
+			}
+			c_ulch = { # 2082
+				color={ 10 179 2 }
+				color2={ 255 255 255 }
+				
+				b_dudi = {
+				}
+				b_udyly = {
+				}
+				b_solontsy = {
+				}
+				b_solontsy_2 = {
+				}
+				b_takhta = {
+				}
+				b_dali_5 = {
+				}
+				b_chertovo = {
+				}
+			}
+		}
+		d_vaninsky = {
+			color={ 22 173 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2079 province_id = 2080 } }
+				}
+			}
+			capital = 2079 # c_vaninsky
+			
+			c_vaninsky = { # 2079
+				color={ 12 183 0 }
+				color2={ 255 255 255 }
+				
+				b_vanino = {
+				}
+				b_oktyabrskiy_2 = {
+				}
+				b_vysokogorny = {
+				}
+				b_tumnin = {
+				}
+				b_tuluchi = {
+				}
+				b_kenada = {
+				}
+				b_uska_orochskaya = {
+				}
+			}
+			c_sovetsko_gavansky = { # 2080
+				color={ 11 155 0 }
+				color2={ 255 255 255 }
+				
+				b_sovetskaya_gavan = {
+				}
+				b_maiskii = {
+				}
+				b_nelma = {
+				}
+				b_grossevichi = {
+				}
+				b_innokentyevskiy = {
+				}
+				b_gatka = {
+				}
+				b_zavety_ilicha = {
+				}
+			}
+		}
+		d_amursky = {
+			color={ 100 214 66 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2085 province_id = 2086 } }
+				}
+			}
+			capital = 2085 # c_amursky
+			
+			c_amursky = { # 2085
+				color={ 110 204 71 }
+				color2={ 255 255 255 }
+				
+				b_amursk = {
+				}
+				b_elban = {
+				}
+				b_dzhuen = {
+				}
+				b_litovko = {
+				}
+				b_mengon = {
+				}
+				b_bolon = {
+				}
+				b_lesnoi = {
+				}
+			}
+			c_verkhnebureinsky = { # 2086
+				color={ 49 103 3 }
+				color2={ 255 255 255 }
+				
+				b_chegdomyn = {
+				}
+				b_gerbi = {
+				}
+				b_novy_urgal = {
+				}
+				b_etyrken = {
+				}
+				b_sofiisk = {
+				}
+				b_soloni = {
+				}
+				b_tyrma = {
+				}
+			}
+		}
+		d_okhotsky = {
+			color={ 107 238 211 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2089 province_id = 2090 province_id = 2091 province_id = 2092 } }
+				}
+			}
+			capital = 2089 # c_okhotsky
+			
+			c_okhotsky = { # 2089
+				color={ 117 228 216 }
+				color2={ 255 255 255 }
+				
+				b_okhotsk = {
+				}
+				b_inya = {
+				}
+				b_morskoy = {
+				}
+				b_vostretsovo = {
+				}
+				b_arka = {
+				}
+				b_kheydzhan = {
+				}
+				b_selkhozferma = {
+				}
+			}
+			c_chumikansky = { # 2091
+				color={ 85 163 156 }
+				color2={ 255 255 255 }
+				
+				evenks = "Tuguro"
+				
+				b_chumikan = {
+					evenks = "Tuguro"
+				}
+				b_udskoye = {
+					evenks = "Udrom"
+				}
+				b_torom = {
+				}
+				b_tugur = {
+				}
+				b_neran = {
+				}
+				b_algazeya = {
+				}
+				b_lyutsun = {
+				}
+			}
+			c_maysky = { # 2090
+				color={ 71 139 131 }
+				color2={ 255 255 255 }
+				
+				evenks = "Ayano"
+				
+				b_ayan = {
+					evenks = "Ayano"
+				}
+				b_dzhigda = {
+				}
+				b_nelkan = {
+				}
+				b_kekra = {
+				}
+				b_tsipanda = {
+				}
+				b_batomga = {
+				}
+				b_kurun_uryakh = {
+					evenks = "Kurui"
+				}
+			}
+			c_shantar = { # 2092
+				color={ 105 205 195 }
+				color2={ 255 255 255 }
+				
+				b_bolshoy = {
+				}
+				b_feklistova = {
+				}
+				b_malyy = {
+				}
+				b_medvezhy = {
+				}
+				b_belichy = {
+				}
+				b_prokofyeva = {
+				}
+				b_kusova = {
+				}
+			}
+		}
+		d_solnechny = {
+			color={ 127 193 5 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2087 province_id = 2088 } }
+				}
+			}
+			capital = 2087 # c_solnechny
+			
+			c_solnechny = { # 2087
+				color={ 117 203 0 }
+				color2={ 255 255 255 }
+				
+				b_solnechny = {
+				}
+				b_khurmuli = {
+				}
+				b_gorin = {
+				}
+				b_kondon = {
+				}
+				b_dzhamku = {
+				}
+				b_duki = {
+				}
+				b_kharpichan = {
+				}
+			}
+			c_imeni_poliny_osipenko = { # 2088
+				color={ 64 118 41 }
+				color2={ 255 255 255 }
+				
+				b_imeni_poliny_osipenko = {
+				}
+				b_briakan = {
+				}
+				b_oglongi = {
+				}
+				b_upagda = {
+				}
+				b_glavnyi_stan = {
+				}
+				b_kamenka_3 = {
+				}
+				b_udinsk = {
+				}
+			}
+		}
 	}
 	k_sakhalin = {
 		color={ 130 160 201 }
