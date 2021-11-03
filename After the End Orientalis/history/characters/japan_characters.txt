@@ -1,7 +1,7 @@
 ###########Japan Region Characters###########
 
 # Japanese
-# 8880 Kouzoku (Imperial)
+# 8800 Kouzoku (Imperial)
 # 1600 Ryukyuan
 # 1601 Ezo
 # 1602 Kyushuan
@@ -3129,7 +3129,7 @@
 	name="Tobio"
 	dynasty=1602001 #Tanezaki
 	culture=kyushuan
-	religion=soka_gakkai
+	religion=shinto
 	martial=1
 	diplomacy=3
 	stewardship=3
@@ -3144,7 +3144,7 @@
 	name="Kyoji"
 	dynasty=1602002 #Kato
 	culture=kyushuan
-	religion=soka_gakkai
+	religion=shinto
 	martial=5
 	diplomacy=3
 	stewardship=2
@@ -3164,7 +3164,7 @@
 	name="Sei"
 	dynasty=1602003 #Taguro
 	culture=kyushuan
-	religion=tenrikyo
+	religion=shinto
 	martial=1
 	diplomacy=5
 	stewardship=3
@@ -3182,7 +3182,7 @@
 	name="Ryu"
 	dynasty=1602004 #Ieuji
 	culture=kyushuan
-	religion=tenrikyo
+	religion=shinto
 	martial=2
 	diplomacy=5
 	stewardship=5
@@ -3200,7 +3200,7 @@
 	name="Hisashi"
 	dynasty=1602005 #Matsuuma
 	culture=kyushuan
-	religion=tenrikyo
+	religion=shinto
 	martial=2
 	diplomacy=7
 	stewardship=3
@@ -3220,14 +3220,14 @@
 	name="Tasuku"
 	dynasty=1602006 #Kuramune
 	culture=kyushuan
-	religion=tenrikyo
+	religion=shinto
 	2578.1.1={birth=yes}
 }
 1602007={ #Count of Goto, add sympathy for christians trait later
 	name="Hitoshi"
 	dynasty=1602007 #Gosaki
 	culture=kyushuan
-	religion=tenrikyo
+	religion=shinto
 	2570.1.1={birth=yes}
 }
 1602008={ #Count of Oita & Hyuga
@@ -4412,7 +4412,7 @@
 	name="Nobu"
 	dynasty=1603019 #Kobayashi
 	culture=togoku
-	religion=shinto
+	religion=tenrikyo
 	martial=6
 	diplomacy=8
 	stewardship=6
@@ -4429,7 +4429,7 @@
 	name="Soichiro"
 	dynasty=1603020 #Yasuda
 	culture=togoku
-	religion=shinto
+	religion=soka_gakkai
 	martial=7
 	diplomacy=7
 	stewardship=7
@@ -4444,7 +4444,7 @@
 	name="Masayoshi"
 	dynasty=1603021 #Manabe
 	culture=togoku
-	religion=shinto
+	religion=soka_gakkai
 	martial=4
 	diplomacy=6
 	stewardship=5
@@ -4457,7 +4457,7 @@
 	name="Keichi"
 	dynasty=1603022 #Toyama
 	culture=togoku
-	religion=shinto
+	religion=tenrikyo
 	martial=8
 	diplomacy=9
 	stewardship=7
@@ -4474,7 +4474,7 @@
 	name="Banboku"
 	dynasty=1603023 #Akechi
 	culture=togoku
-	religion=shinto
+	religion=tenrikyo
 	martial=11
 	diplomacy=7
 	stewardship=4
@@ -4490,7 +4490,7 @@
 	name="Atsushi"
 	dynasty=1603024 #Honda
 	culture=togoku
-	religion=shinto
+	religion=tenrikyo
 	martial=6
 	diplomacy=7
 	stewardship=4
@@ -4510,7 +4510,7 @@
 	name="Katsushi"
 	dynasty=1604003 #Kinoshita 
 	culture=saigoku
-	religion=shinto
+	religion=soka_gakkai
 	martial=7
 	diplomacy=5
 	stewardship=3
@@ -4566,7 +4566,7 @@
 	name="Sadayuki"
 	dynasty=1604006 #Kinokuniya
 	culture=saigoku
-	religion=shinto
+	religion=soka_gakkai
 	martial=5
 	diplomacy=4
 	stewardship=2
@@ -4578,7 +4578,6 @@
 	trait=brave
 	trait=honest
 	2561.1.1={birth=yes}
-	2605.1.1={effect={add_rival=1604012}}
 }
 1604008={ #Tango
 	name="Kiichi"
@@ -4671,7 +4670,7 @@
 	name="Sadamu"
 	dynasty=1604012 #Inukai
 	culture=saigoku
-	religion=tenrikyo
+	religion=shinto
 	martial=8
 	diplomacy=5
 	stewardship=3
@@ -4687,7 +4686,7 @@
 	name="Kibitaro"
 	dynasty=1604013 #Matsuda
 	culture=saigoku
-	religion=tenrikyo
+	religion=shinto
 	martial=5
 	diplomacy=8
 	stewardship=6
@@ -4704,7 +4703,7 @@
 	name="Junichi"
 	dynasty=1604014 #Furukawa
 	culture=saigoku
-	religion=tenrikyo
+	religion=shinto
 	martial=4
 	diplomacy=6
 	stewardship=5
@@ -4722,7 +4721,7 @@
 	name="Jiro"
 	dynasty=1604015 #Nawa
 	culture=saigoku
-	religion=tenrikyo
+	religion=shinto
 	martial=8
 	diplomacy=4
 	stewardship=3
@@ -4739,7 +4738,7 @@
 	name="Keizo"
 	dynasty=1604016 #Senge
 	culture=saigoku
-	religion=tenrikyo
+	religion=shinto
 	martial=4
 	diplomacy=6
 	stewardship=5
@@ -4757,7 +4756,7 @@
 	name="Masayo"
 	dynasty=1604017 #Fukuba
 	culture=saigoku
-	religion=tenrikyo
+	religion=shinto
 	martial=5
 	diplomacy=7
 	stewardship=5
@@ -4775,7 +4774,7 @@
 	name="Tetsuo"
 	dynasty=1604018 #Oba
 	culture=saigoku
-	religion=tenrikyo
+	religion=shinto
 	martial=4
 	diplomacy=6
 	stewardship=7
@@ -4793,7 +4792,7 @@
 	name="Shunichi"
 	dynasty=1604019 #Ito
 	culture=saigoku
-	religion=tenrikyo
+	religion=shinto
 	martial=5
 	diplomacy=7
 	stewardship=3
@@ -4810,7 +4809,7 @@
 	name="Kyosuke"
 	dynasty=1604020 #Takasugi
 	culture=saigoku
-	religion=tenrikyo
+	religion=soka_gakkai
 	martial=7
 	diplomacy=4
 	stewardship=3
