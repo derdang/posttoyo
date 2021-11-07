@@ -37566,7 +37566,7 @@ e_dongbei = {
 		}
 	}
 	k_songjiang = {
-		color={ 30 138 132 }
+		color={ 119 216 20 }
 		color2={ 255 255 255 }
 		
 		capital = 1457 # c_harbin
@@ -44321,7 +44321,7 @@ e_kamchatka = {
 				color={ 163 35 147 }
 				color2={ 255 255 255 }
 				
-				koriak = "Palana"
+				kamchatkan = "Palana"
 				
 				b_palana = {
 				}
@@ -44342,7 +44342,7 @@ e_kamchatka = {
 				color={ 224 51 202 }
 				color2={ 255 255 255 }
 				
-				koriak = "Ossora"
+				kamchatkan = "Ossora"
 				
 				b_ossora = {
 				}
@@ -44363,7 +44363,7 @@ e_kamchatka = {
 				color={ 247 58 226 }
 				color2={ 255 255 255 }
 				
-				koriak = "Tilichiki"
+				kamchatkan = "Tilichiki"
 				
 				b_tilichiki = {
 				}
@@ -44384,7 +44384,7 @@ e_kamchatka = {
 				color={ 199 45 183 }
 				color2={ 255 255 255 }
 				
-				koriak = "Kamens"
+				kamchatkan = "Kamens"
 				
 				b_kamenskoye = {
 				}
@@ -44478,6 +44478,230 @@ e_kamchatka = {
 					kyushuan = "Shasukotan"
 					ezo = "Shasukotan"
 					ryukyuan = "Shasukotan"
+				}
+			}
+		}
+	}
+	k_magadan = {
+		color={ 102 2 186 }
+		color2={ 255 255 255 }
+		
+		capital = 2114 # c_magadan
+		culture = petropavlovskiy
+		
+		d_magadan = {
+			color={ 82 22 176 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2114 province_id = 2115 province_id = 2116 } }
+				}
+			}
+			capital = 2114 # c_magadan
+			
+			c_magadan = { # 2114
+				color={ 72 32 171 }
+				color2={ 255 255 255 }
+				
+				b_magadan = {
+				}
+				b_uptar = {
+				}
+				b_sokol = {
+				}
+				b_stekolny = {
+				}
+				b_khasyn = {
+				}
+				b_palatka = {
+				}
+				b_karamken = {
+				}
+			}
+			c_ola = { # 2115
+				color={ 68 29 160 }
+				color2={ 255 255 255 }
+				
+				b_ola = {
+				}
+				b_klepka = {
+				}
+				b_takhtoyamsk = {
+				}
+				b_chistoye = {
+				}
+				b_skalistaya = {
+				}
+				b_yam = {
+				}
+				b_zabiyaka = {
+				}
+			}
+			c_tauisk = { # 2116
+				color={ 96 46 228 }
+				color2={ 255 255 255 }
+				
+				b_tauisk = {
+				}
+				b_arman = {
+				}
+				b_balagannoe = {
+				}
+				b_talon = {
+				}
+				b_yana = {
+				}
+				b_glukhoye = {
+				}
+				b_sheltinga = {
+				}
+			}
+		}
+		d_nera = {
+			color={ 127 36 208 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2119 province_id = 2120 province_id = 2121 province_id = 2122 } }
+				}
+			}
+			capital = 2119 # c_srednekansky
+			
+			c_srednekansky = { # 2119
+				color={ 117 46 203 }
+				color2={ 255 255 255 }
+				
+				b_seymchan = {
+				}
+				b_palatka_2 = {
+				}
+				b_srednekan = {
+				}
+				b_stekolny_2 = {
+				}
+				b_sugoy = {
+				}
+				b_atka = {
+				}
+				b_talaya = {
+				}
+			}
+			c_susumansky = { # 2122
+				color={ 122 77 179 }
+				color2={ 255 255 255 }
+				
+				b_susuman = {
+				}
+				b_ust_khakchan = {
+				}
+				b_kadykchan = {
+				}
+				b_maldyak = {
+				}
+				b_kholodnyi = {
+				}
+				b_belichan = {
+				}
+				b_udarnik = {
+				}
+			}
+			c_tenkinsky = { # 2121
+				color={ 91 37 160 }
+				color2={ 255 255 255 }
+				
+				b_ust_omchug = {
+				}
+				b_madaun = {
+				}
+				b_transportnyi = {
+				}
+				b_omchak = {
+				}
+				b_orotuk = {
+				}
+				b_gvardeets = {
+				}
+				b_posolok = {
+				}
+			}
+			c_yagodninsky = { # 2120
+				color={ 131 52 227 }
+				color2={ 255 255 255 }
+				
+				b_yagodnoye = {
+				}
+				b_burkhala = {
+				}
+				b_taskan = {
+				}
+				b_elgen = {
+				}
+				b_spornoe = {
+				}
+				b_orotukan = {
+				}
+				b_debin = {
+				}
+			}
+		}
+		d_severo_evensky = {
+			color={ 113 31 184 }
+			color2={ 255 255 255 }
+			
+			allow = {
+				OR = {
+					lower_tier_than = KING
+					any_demesne_province = { OR = { province_id = 2117 province_id = 2118 } }
+				}
+			}
+			capital = 2117 # c_severo_evensky
+			
+			c_severo_evensky = { # 2117
+				color={ 103 41 179 }
+				color2={ 255 255 255 }
+				
+				evens = "Evensk"
+				evenks = "Evensk"
+				
+				b_evensk = {
+				}
+				b_tserkov = {
+				}
+				b_cajbucha = {
+				}
+				b_garmanda = {
+				}
+				b_gizhiga = {
+				}
+				b_sredniy = {
+				}
+				b_omolon = {
+				}
+			}
+			c_omsukchansky = { # 2118
+				color={ 82 33 144 }
+				color2={ 255 255 255 }
+				
+				evens = "Omchikan"
+				
+				b_omsukchan = {
+					evens = "Omchikan"
+				}
+				b_dukat = {
+				}
+				b_galimy = {
+				}
+				b_merenga = {
+				}
+				b_verkhny_balygychan = {
+				}
+				b_kupka = {
+				}
+				b_trud = {
 				}
 			}
 		}

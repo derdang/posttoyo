@@ -2423,7 +2423,20 @@
 1597150 = { name="Rang" culture=hangugin }
 
 
-1598000 = { name="Kim" culture=chosunin }
+1598000 = { name="Kim" culture=chosunin
+	coat_of_arms = {
+		religion = atomicist
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1598001 = { name="Lee" culture=chosunin }
 1598002 = { name="Park" culture=chosunin }
 1598003 = { name="Jung" culture=chosunin }
@@ -2575,9 +2588,34 @@
 1598149 = { name="Tan" culture=chosunin }
 1598150 = { name="Rang" culture=chosunin }
 ##Extra Kim dynasty's branch
-1598400 = { name="Kim" culture=chosunin }
-1598401 = { name="Kim" culture=chosunin }
-
+1598400 = { name="Kim" culture=chosunin 
+	coat_of_arms = {
+		religion = atomicist
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1598401 = { name="Kim" culture=chosunin 
+	coat_of_arms = {
+		religion = atomicist
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1842000 = { name="Au" culture=hong_konger }
 1842001 = { name="Sek" culture=hong_konger }
 1842002 = { name="Tso" culture=hong_konger }
