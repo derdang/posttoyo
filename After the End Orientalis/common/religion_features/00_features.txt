@@ -28,7 +28,7 @@ religion_nature = {
 				factor = 0.01
 				FROM = {
 					character = yes 
-					NOT = { religion = bon } 
+					NOT = { religion = shamanist } 
 				}
 			}
 			modifier = { #Handles feature randomization in AltStart to make unreformed pagans still have "paganish" features.
@@ -69,7 +69,7 @@ religion_nature = {
 				FROM = { 
 					character = yes
 					OR = { 
-						religion = bon 
+						religion = shamanist 
 						religion = slavic_pagan
 						religion = baltic_pagan
 						religion = finnish_pagan
@@ -81,7 +81,7 @@ religion_nature = {
 				factor = 0.01
 				FROM = { 
 					character = yes
-					religion = bon 
+					religion = shamanist 
 				}
 			}
 			modifier = { 	
@@ -278,7 +278,7 @@ religion_nature = {
 				factor = 0.01
 				FROM = { 
 					character = yes 
-					religion = bon 
+					religion = shamanist 
 				}
 			}
 			modifier = { 	
@@ -380,7 +380,7 @@ religion_nature = {
 				factor = 0.01
 				FROM = { 
 					character = yes 
-					religion = bon 
+					religion = shamanist 
 				}
 			}
 			modifier = { 	
@@ -530,7 +530,6 @@ religion_doctrine = {
 		trigger = {
 			NOR = { 
 				has_selected_religion_feature = religion_feature_zun #Redundant
-				has_selected_religion_feature = religion_feature_bon
 				religion = zoroastrian #Random World.
 				religion = messalian
 			} 
@@ -586,7 +585,7 @@ religion_doctrine = {
 		trigger = {
 			NOR = { 
 				has_selected_religion_feature = religion_feature_hellenic # Redundant Doctrine
-				has_selected_religion_feature = religion_feature_bon # Redundant Doctrine
+				has_selected_religion_feature = religion_feature_shamanist # Redundant Doctrine
 				has_selected_religion_feature = religion_patriarchal # Incompatible
 				has_selected_religion_feature = religion_matriarchal # Incompatible
 			}
@@ -746,8 +745,8 @@ religion_doctrine = {
 				factor = 0.01 
 				FROM = { 
 					character = yes 
-					OR = { #Too Western for them.
-						religion = bon
+					OR = { #No Religiously associated Eurocentric Astrological Tradition
+						religion = shamanist
 						religion = tengri_pagan
 						religion = finnish_pagan
 					}
@@ -762,7 +761,6 @@ religion_doctrine = {
 			NOR = {
 				has_selected_religion_feature = religion_matriarchal
 				has_selected_religion_feature = religion_equal
-				has_selected_religion_feature = religion_feature_bon
 				has_selected_religion_feature = religion_meritocratic
 			}
 		}
@@ -805,7 +803,7 @@ religion_doctrine = {
 			NOR = {
 				has_selected_religion_feature = religion_matriarchal
 				has_selected_religion_feature = religion_patriarchal
-				has_selected_religion_feature = religion_feature_bon
+				has_selected_religion_feature = religion_feature_shamanist
 				trigger_if = {
 					limit = { has_game_started = yes }
 					FROM = { 
@@ -853,7 +851,6 @@ religion_doctrine = {
 			NOR = {
 				has_selected_religion_feature = religion_patriarchal
 				has_selected_religion_feature = religion_equal
-				has_selected_religion_feature = religion_feature_bon
 				has_selected_religion_feature = religion_meritocratic
 				trigger_if = {
 					limit = { has_game_started = yes }
@@ -1348,38 +1345,60 @@ religion_doctrine = {
 			factor = 50
 		}
 	}
-	religion_feature_bon = {
-		picture = GFX_religion_feature_bon
+	religion_feature_shamanist = { #Required to Pick Autonomous Head (Combines Animism with Pacifism and Equal)
+		picture = religion_feature_primitive
 		potential = {
 			has_game_started = yes
-			religion = bon_reformed
+			religion = shamanist_reformed
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 		}
 		trigger = {
-			religion = bon_reformed
+			religion = shamanist_reformed
 			NOR = { 
-				has_selected_religion_feature = religion_holy_family
+				has_selected_religion_feature = religion_animistic
 				has_selected_religion_feature = religion_meritocratic
 				has_selected_religion_feature = religion_equal
-				has_selected_religion_feature = religion_matriarchal
-				has_selected_religion_feature = religion_patriarchal
+				has_selected_religion_feature = religion_peaceful
+				has_selected_religion_feature = religion_temporal_head
+				has_selected_religion_feature = religion_theocratic_head
+				has_selected_religion_feature = religion_autocephaly
 			}
 		}
 		effect = {
-			custom_tooltip = { text = tooltip_religion_feature_no_incest }
+			custom_tooltip = { text = tooltip_religion_feature_land_morale }
+			custom_tooltip = { text = tooltip_religion_feature_adulthood_rite }
 			custom_tooltip = { text = tooltip_religion_feature_meritocratic }
-			custom_tooltip = { text = tooltip_religion_feature_feminist }
 			custom_tooltip = { text = tooltip_religion_feature_cognatic }
+			custom_tooltip = { text = tooltip_religion_feature_feminist }
+			custom_tooltip = { text = tooltip_religion_feature_pacifist }
+			custom_tooltip = { text = tooltip_religion_feature_peace_piety }
+			custom_tooltip = { text = tooltip_religion_feature_no_looting }
+			custom_tooltip = { text = tooltip_religion_feature_no_crusade }
 			hidden_tooltip = { 
-				set_allows_matrilineal_marriage = yes
+				set_unit_modifier = { 
+					land_morale = 0.05
+					key = "ANIMISTIC_RELIGION"
+				}
 				set_heir_designation = yes
+				set_allows_matrilineal_marriage = yes
 				set_feminist = yes
-				set_pc_marriage = no
-				set_bs_marriage = no
-				set_psc_marriage = no
-				set_cousin_marriage = no
+				set_women_can_take_consorts = yes
+				set_men_can_take_consorts = yes
+				set_female_temple_holders = yes
+				set_male_temple_holders = yes
+				set_allow_looting = no
+				set_can_call_crusade = no
+				set_hard_to_convert = no
+				set_pacifist = yes
+				set_raised_vassal_opinion_loss = yes
+				set_peace_prestige_loss = no
+				set_piety_loss_for_attacking_same_religion = no
+				set_peace_piety_gain = 1
+				set_convert_other_groups = 0
+				set_convert_same_group = 0
+				set_ai_aggression = 0.1
 			}
 		}
 		ai_will_do = {
@@ -1721,7 +1740,7 @@ religion_leadership = {
 						character = yes 
 						OR = { 
 							religion = hellenic_pagan
-							religion = bon
+							religion = shamanist
 						}
 					}
 					has_selected_religion_feature = religion_monastic
@@ -1737,7 +1756,7 @@ religion_leadership = {
 						character = yes 
 						OR = { 
 							religion = hellenic_pagan
-							religion = bon
+							religion = shamanist
 						}
 					}
 				}
@@ -1754,7 +1773,7 @@ religion_leadership = {
 				FROM = { 
 					character = yes 
 					NOR = { 
-						religion = bon
+						religion = shamanist
 						religion = west_african_pagan
 					}
 				}

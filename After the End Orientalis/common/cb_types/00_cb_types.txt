@@ -10377,9 +10377,19 @@ pagan_subjugation = {
 	
 	can_use = {
 		ROOT = {
-			religion_group = pagan_group
-			is_reformed_religion = no
-			NOT = { religion = hellenic_pagan }
+			OR = {
+				AND = {
+					religion_group = pagan_group
+					is_reformed_religion = no
+				}
+				AND = {
+					OR = {
+						religion_group = oldworld
+						religion = chinomi
+					}
+					is_tribal = yes
+				}
+			}
 			NOT = { same_realm = FROM }
 			NOT = { is_liege_or_above = FROM }
 			mercenary = no
@@ -10392,14 +10402,14 @@ pagan_subjugation = {
 					NOT = { has_dlc = "Horse Lords" }
 					has_horde_culture = no # Should use tribal invasion instead
 				}
-			}		
+			}
 			OR = {
 				is_tribal = yes
+				has_ambition = obj_become_king
 				primary_title = {
 					has_law = succ_elective_gavelkind
 				}
 			}
-			
 			OR = {
 				NOT = { has_character_modifier = launched_subjugation }
 				AND = {
@@ -10418,27 +10428,57 @@ pagan_subjugation = {
 				}
 			}
 		}
-		
 		OR = {
-			NOT = { ROOT = { religion = aztec } }
-			FROM = { religion = aztec }
-		}
-		
-		FROM = {
-			in_revolt = no
-			religion_group = pagan_group
-			is_nomadic = no
-			NOT = { is_offmap_governor = yes }
-			OR = {
-				is_reformed_religion = no
-				is_reformed_religion = ROOT
-			}
-			NOT = {
-				any_war = {
-					defender = { character = PREVPREV }
+			AND = {
+				ROOT = { religion_group = pagan_group }
+				FROM = {
+					in_revolt = no
+					is_nomadic = no
 					OR = {
-						using_cb = pagan_subjugation
-						using_cb = nomad_subjugation
+						AND = {
+							religion_group = pagan_group
+							OR = {
+								is_reformed_religion = no
+								is_reformed_religion = ROOT
+							}
+						}
+					}
+					NOT = {
+						any_war = {
+							defender = { character = PREVPREV }
+							OR = {
+								using_cb = pagan_subjugation
+								using_cb = nomad_subjugation
+							}	
+						}
+					}
+				}
+			}
+			AND = {
+				ROOT = {
+					OR = {
+						religion_group = oldworld
+						religion = chinomi
+					}
+				}
+				FROM = {
+					in_revolt = no
+					is_nomadic = no
+					AND = {
+						OR = {
+							religion_group = oldworld
+							religion = chinomi
+						}
+						is_tribal = yes
+					}
+					NOT = {
+						any_war = {
+							defender = { character = PREVPREV }
+							OR = {
+								using_cb = pagan_subjugation
+								using_cb = nomad_subjugation
+							}
+						}
 					}
 				}
 			}
@@ -10548,21 +10588,17 @@ pagan_subjugation = {
 		}
 		FROM = {
 			piety = 100
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			#if = {
+			#	limit = { 
+			#		has_dlc = "Legacy of Rome"
+			#		OR = { 
+			#			has_landed_title = e_byzantium
+			#			has_landed_title = e_roman_empire
+			#		}
+			#		religion_group = christian
+			#	}
+			#	hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			#}
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -10596,7 +10632,8 @@ pagan_subjugation = {
 				is_feudal = yes
 				OR = {
 					religion = catholic
-					religion = fraticelli
+					religion = restorationists
+					religion = mormon
 				}
 				NOR = {
 					trait = crowned_by_priest
@@ -12685,9 +12722,12 @@ pagan_county_conquest = {
 				ROOT = {
 					OR = {
 						religion_group = pagan_group
+						AND = { 
+							religion_group = oldworld
+							is_tribal = yes
+						}
 						religion_group = nautical
-						religion = americanist
-						religion = americanist_reformed
+						religion = chinomi
 					}
 					NOT = { same_realm = FROM }
 				}
@@ -12724,11 +12764,10 @@ pagan_county_conquest = {
 		OR = {
 			AND = {
 				OR = {
-					#ROOT = { religion = norse_pagan }
-					#ROOT = { religion = norse_pagan_reformed }
 					ROOT = { religion = americanist }
 					ROOT = { religion = americanist_reformed }
-					ROOT = { religion = wokou }
+					ROOT = { religion_group = nautical }
+					ROOT = { has_religion_feature = religion_seafaring }
 				}
 				location = {
 					port = yes
@@ -12757,9 +12796,12 @@ pagan_county_conquest = {
 				ROOT = {
 					OR = {
 						religion_group = pagan_group
+						AND = { 
+							religion_group = oldworld
+							is_tribal = yes
+						}
 						religion_group = nautical
-						religion = americanist
-						religion = americanist_reformed
+						religion = chinomi
 					}
 					NOT = { same_realm = FROM }
 				}
@@ -12977,53 +13019,42 @@ pagan_county_conquest = {
 			factor = 4.0
 			ROOT = {
 				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
+					religion = americanist
+					religion = americanist_reformed
 				}
 			}
 			OR = {
-				empire = { title = e_scandinavia }
-				kingdom = { title = k_rus }
+				empire = { title = e_the_philippines }
+				kingdom = { title = k_taiwan }
 			}
 		}
 		modifier = {
 			factor = 2.0
 			ROOT = {
 				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
+					religion = americanist
+					religion = americanist_reformed
 				}
 			}
 			#has_global_flag = viking_age_started
 			OR = {
-				empire = { title = e_britannia }
-				kingdom = { title = k_brittany }
-				kingdom = { title = k_france }
-				kingdom = { title = k_frisia }
+				empire = { title = e_japan }
+				empire = { title = e_korea }
+				empire = { title = e_viet_nam }
+				kingdom = { title = k_primorsky }
 			}
 		}
 		modifier = {
 			factor = 2.0
 			ROOT = {
 				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
+					religion = americanist
+					religion = americanist_reformed
 				}
 			}
 			#has_global_flag = viking_age_started
 			FROM = { NOT = { religion_group = pagan_group } }
 			location = { port = yes }
-		}
-		modifier = {
-			factor = 0
-			ROOT = {
-				has_character_flag = is_temujin
-				has_landed_title = e_mongol_empire
-				demesne_size = 1
-			}
-			FROM = {
-				has_landed_title = e_china_west_governor
-			}
 		}
 		modifier = {
 			factor = 0

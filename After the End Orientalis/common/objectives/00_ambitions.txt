@@ -1833,25 +1833,10 @@ obj_become_king = {
 				always = yes
 			}
 		}
-		NAND = {
-			ai = yes
-			kingdom = {
-				OR = {
-					title = k_nenets
-					title = k_sapmi
-					title = k_perm
-				}
-			}
-			OR = {
-				culture = lappish
-				culture = samoyed
-				culture = komi
-			}
-		}
 	}
 	
 	allow = {
-		NOT = { trait = incapable }
+		NOT = { is_incapable = yes }
 	}
 	
 	chance = {
@@ -1904,13 +1889,6 @@ obj_become_king = {
 			factor = 0.1
 			tier = COUNT
 		}
-		modifier = {
-			factor = 0.01
-			OR = {
-				religion = finnish_pagan
-				religion = west_african_pagan
-			}
-		}
 	}
 	
 	success = {
@@ -1930,7 +1908,7 @@ obj_become_king = {
 	
 	abort = {
 		OR = {
-			trait = incapable
+			is_incapable = yes
 			is_playable = no
 			is_landed = no
 			AND = {
@@ -1964,7 +1942,10 @@ obj_buddhist_stop_drinking = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 		trait = drunkard
 	}
 	
@@ -1993,7 +1974,10 @@ obj_buddhist_stop_drinking = {
 		NOT = { trait = drunkard }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
@@ -2081,7 +2065,10 @@ obj_buddhist_abstain_sexual_excess = {
 		NOT = { trait = lustful }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
@@ -2129,7 +2116,10 @@ obj_buddhist_reject_cruelty = {
 		NOT = { trait = cruel }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
@@ -2173,7 +2163,10 @@ obj_buddhist_temperance_food = {
 		NOT = { trait = gluttonous }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
@@ -2217,7 +2210,10 @@ obj_buddhist_reject_greed = {
 		NOT = { trait = greedy }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
@@ -2262,7 +2258,10 @@ obj_buddhist_reject_envy = {
 		NOT = { trait = envious }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
@@ -2306,7 +2305,10 @@ obj_buddhist_reject_hate = {
 		NOT = { trait = wroth }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
@@ -2350,7 +2352,10 @@ obj_buddhist_reject_pride = {
 		NOT = { trait = proud }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
@@ -2399,7 +2404,10 @@ obj_buddhist_defeat_fear = {
 		NOT = { trait = craven }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = {
+			religion_group = buddhist_group
+			religion_group = muslim
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
