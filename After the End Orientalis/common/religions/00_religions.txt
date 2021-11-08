@@ -1554,6 +1554,71 @@ pagan_group = {
 		intermarry = bon
 		intermarry = bon_reformed
 	}
+	chinomi = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 26
+		heresy_icon = 28
+		
+		color = { 170 100 085 }
+		
+		high_god_name = GOD_KIMUN_KAMUY
+		
+		god_names = {
+			GOD_IRESU_KAMUY GOD_TOKAPUCHUPU_KAMUY GOD_REPUN_KAMUY GOD_KOTANKOR_KAMUY
+		}
+		evil_god_names = {
+			WEN_KAMUY PAUCHI_KAMUY
+		}
+		scripture_name = THE_YUKAR
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = seirei
+		intermarry = seirei_reformed
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = chinomi_reformed
+	}
+	chinomi_reformed = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 27
+		heresy_icon = 28
+		
+		color = { 230 135 115 }
+		
+		high_god_name = GOD_KIMUN_KAMUY
+		
+		god_names = {
+			GOD_IRESU_KAMUY GOD_TOKAPUCHUPU_KAMUY GOD_REPUN_KAMUY GOD_KOTANKOR_KAMUY
+		}
+		evil_god_names = {
+			WEN_KAMUY PAUCHI_KAMUY
+		}
+		scripture_name = THE_YUKAR
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = seirei
+		intermarry = seirei_reformed
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
 }
 
 
@@ -2679,71 +2744,6 @@ japonic = {
 		intermarry = seirei_reformed
 		intermarry = buddhist_group
 		intermarry = eastern
-	}
-	chinomi = {
-		graphical_culture = pagangfx
-		alternate_start = { always = no }
-
-		icon = 26
-		heresy_icon = 28
-		
-		color = { 170 100 085 }
-		
-		high_god_name = GOD_KIMUN_KAMUY
-		
-		god_names = {
-			GOD_IRESU_KAMUY GOD_TOKAPUCHUPU_KAMUY GOD_REPUN_KAMUY GOD_KOTANKOR_KAMUY
-		}
-		evil_god_names = {
-			WEN_KAMUY PAUCHI_KAMUY
-		}
-		scripture_name = THE_YUKAR
-		priest_title = PRIEST
-		priests_can_marry = yes
-		max_consorts = 3
-		
-		intermarry = seirei
-		intermarry = seirei_reformed
-		intermarry = buddhist_group
-		intermarry = eastern
-		
-		defensive_attrition = yes
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
-		
-		dislike_tribal_organization = yes
-		reformed = chinomi_reformed
-	}
-	chinomi_reformed = {
-		graphical_culture = pagangfx
-		alternate_start = { always = no }
-
-		icon = 27
-		heresy_icon = 28
-		
-		color = { 230 135 115 }
-		
-		high_god_name = GOD_KIMUN_KAMUY
-		
-		god_names = {
-			GOD_IRESU_KAMUY GOD_TOKAPUCHUPU_KAMUY GOD_REPUN_KAMUY GOD_KOTANKOR_KAMUY
-		}
-		evil_god_names = {
-			WEN_KAMUY PAUCHI_KAMUY
-		}
-		scripture_name = THE_YUKAR
-		priest_title = PRIEST
-		priests_can_marry = yes
-		max_consorts = 3
-		
-		intermarry = seirei
-		intermarry = seirei_reformed
-		intermarry = buddhist_group
-		intermarry = eastern
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
 	}
 }
 #Old World Cultist
