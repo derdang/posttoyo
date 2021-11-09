@@ -160,4 +160,74 @@ turkic = {
 
 		modifier = default_culture_modifier
 	}
+	uzbek = {
+		graphical_cultures = { turkishgfx }
+
+		color = { 0.6 0.8 0.6 }
+
+		male_names = {
+			Abbos_Abbas Abdukodir_Abdulkadir Abdulaziz_Abdulaziz Abdulhamid_Abdulhamid Abdulhoshim_Abdulhashim Abdullo_Abdullah Abdumajid_Abdulmajid Abdumavlon Abduqahhor Abdusalom_Abdulsalam Abdusamat Abulg'ozi_Abdulghazi Abdulhamid_Abdulhamid Abdulrashid_Abdulrashid Abduzuhur Adham_Adam Adhambek Agzam Ahad Ahadjon Ahmad_Ahmad Akbar_Akbar Akrom Ali_Ali Alisher Almat Amin Aminjon Amirsaid Anvar_Anwar Anvarbek Anvarjon Arslon_Arslan Asad_Asad Asadilla_Asadullah Asliddin Asqar Aydar A'zam_Azam Aziz 
+			Bahodir_Baatar Baxtiyor_Bakhtiar Bekjon Bektemir Bekzod Botir Boymirza Buzruk 
+			Chingiz_Genghis 
+			Dadajon Dadaxon Daler Davlatbek Dilshod 
+			Elmar Elyor Ergash Erkin 
+			Farrux_Farrukh Fayzrahmon Fazliddin Fozil_Fazil 
+			G'ayrat G'ofur G'ofurjon G'oyib G'ulom_Ghulam G'ulomiddin G'ulomjon
+			Habib_Habib Hamid_Hamid Hamidulla_Hamidullah Hamza_Hamza Hikmatilla Hasan_Hasan Hasanboy Himmat Hoshim_Hashim Husan_Husayn 
+			Ibrohim_Abraham Ibrohimjon Ilgizar Ilhom_Ilham Ilyos_Elijah Inom Inomjon Isfandiyar_Isfandiyar Iskandar_Alexander Islom_Islam Islomjon Ismat_Ismat Ismatilla_Ismatullah Ismoil_Ismael Isroil_Israel Ixtiyor Izzat_Izzuddin  
+			Jahongir_Jahangir Jamoliddin_Jamaluddin Jamshid_Jamshid Jasur Jasurbek Javohir Jonibek_Janibeg Jo'ra 
+			Karim_Karim Komil_Kamil Kozim_Qasim 
+			Madriddin_Madruddin Mahmud_Mahmud Majit_Majid Malik_Malik Mamarizo Mannon Mansur_Mansur Marasul Mazur Maxsum Melis Minavar Minhojiddin Mirabror Mirahad Mirakbar Mirjalol Miromon Mirsabir Mirtemir Mirzaolim Muborak_Mubarak Muhammad_Muhammad Murod_Murad Muzaffar_Muzaffar Muzaffarbek Muzrob 
+			Nabi Narimon Narmaxonmadi Navruz Nazar_Nazar Nig'mat_Nigmat Nig'matilla_Nigmatullah Nodirbek Nosir_Nasr Nurmat 
+			Obid Odil O'ktam Olim_Alim O'ljaboy Omonulla_Amanullah Oqil Oqilbek Orif Orifjon O'rinboy Otabek O'tkir Ozodbek 
+			Po'lat 
+			Qayum Qirg'izboy Qobul Qo'chqor Qodir Qo'shoq Qutbiddin_Qutbuddin Quvondiq 
+			Radiy Rahim Rahmon_Rahmon Rahmonbek Rashid_Rashid Ravshan Rihsitilla Rufat Ruslan_Ruslan Rustam_Rustam 
+			Sa'dulla Saidabbos Saidmag'ruf Saidqul Salimboy Sa'nat Sarvar Saydullo Sayfiddin Shamsiddin Shamsiddinxon Shavkat_Shawkat Sherzod Sherzodxon Shuhrat Shukrullo_Shukrullah Shukur Siroj Sobiqtegi Sobir Sobirjon Sodiq_Sadiq Sulaymon_Solomon Sulton_Sultan 
+			Taymet Temur_Timur Tohir_Tahir Tojiddin To'lqin Toshpo'lat To'xtamurod To'xtapo'lat Turobjon Tursinxon Tursun 
+			Ubaydulla Ulug'bek_Ulugbek Umar_Umar Umid Usmon_Uthman 
+			Xayriddin_Khayruddin Xayrulla_Khayrullah Xolmuhammad Xonazar Xotam Xurshid Xushnud Xusniddin_Husniddin 
+			Yahyo_John Yo'ldosh_Yuldush Yoqub_James 
+			Zafar Zokir Zokirjon 
+		}
+
+		female_names = {
+			Afifa Akgul Alibina Anora Asal Aziza 
+			Bernora Binafsha 
+			Dilbar Dilfuza Dilnoza Dilobar Dilorom Diyora Durdona 
+			Elmira Elnura Elvina 
+			Farangiz Fazilat Feruza 
+			Gulchehra Guldasta Guli Gulnora Gulora Gulxatsha Gulzoda 
+			Halima Havasxon Hilola 
+			Indira Inoyat Iroda 
+			Karomat 
+			Lina Lola Luiza 
+			Madina Maftuna Mahbuba Malika Mamlakat Matbua Mavluda Mazluma Mehribon Mehriniso Mohira Mohlaroyim Mo'tabar Muattar Muhabbat Munisa Muqaddam 
+			Nargiza Nazokat Nigina Nigora Nilufar Nodira Nozanin Nurxon 
+			Parizoda 
+			Qandolat Qandolatxon Qunduz 
+			Ra'no Ravilya Rayhon Rixsixon 
+			Sakina Salima Sanobar Saodat Sayyora Severa Shahlo Shahnoz Shirin Shohruh Sitora Suyima 
+			Tahmina Tanzila Tursunoy 
+			Umida 
+			Yulduz 
+			Zara Zarina Zilola Zinura Ziyoda Zulfiya Zulxumor 
+		}
+		
+		from_dynasty_suffix = "iy"
+		
+		male_patronym = " o'g'li"
+		female_patronym = " kizi"
+		prefix = no
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
 }
