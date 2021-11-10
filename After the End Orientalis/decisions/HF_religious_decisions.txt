@@ -1,448 +1,3 @@
-
-targetted_decisions = {
-
-	vassal_generic_sacrifice_decision = {
-		only_playable = yes
-		ai_check_interval = 8 #check only once every 8 months.
-		diplomacy_icon = GFX_sacrifice_decision
-	
-		ai_target_filter = home_court
-	
-		from_potential = {
-			show_only_failed_conditions = yes
-			is_playable = yes
-			has_religion_feature = religion_ritual_sacrifice
-		}
-	
-		potential = {
-			prisoner = yes
-			host = { character = FROM }
-		}
-		
-		allow = {
-			ROOT = { 
-				NOT = { religion = FROM } #Only on infidels.
-				NOT = { diplomatic_immunity = yes }
-				prisoner = yes 
-			}
-		}
-		
-		effect = {
-			any_liege = {
-				limit = { 
-					ai = no
-					NOT = { character = FROM }
-					NOT = { religion = FROM }
-				}
-				character_event = { id = HF.23001 }
-			}
-			hidden_tooltip = {
-				FROM = {
-					character_event = { id = HF.23002 }
-				}
-				if = {
-					limit = {
-						controls_religion = yes
-						NOT = {
-							religion = mictlantec
-						}
-						FROM = { ai = no }
-					}
-					FROM = { set_character_flag = achievement_holy_smoke }
-				}
-			}
-			death = {
-				death_reason = death_execution_aztec_sacrifice
-				killer = FROM
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				FROM = { trait = cynical }
-			}
-			modifier = {
-				factor = 1.5
-				FROM = { trait = zealous }
-			}
-			modifier = {
-				factor = 1.5
-				FROM = { trait = bloodthirsty_gods_1 }
-			}
-			modifier = {
-				factor = 1.75
-				FROM = { trait = bloodthirsty_gods_2 }
-			}
-			modifier = {
-				factor = 2
-				FROM = { trait = bloodthirsty_gods_3 }
-			}
-		}
-	}
-	stable_attribute_improvement_decision = {
-		only_playable = yes
-		ai_check_interval = 50 #check only once every 50 months.
-		diplomacy_icon = GFX_stable_prestige_icon_decision
-	
-		filter = court
-		ai_target_filter = court
-	
-		from_potential = {
-			is_playable = yes
-			is_incapable = no
-			prisoner = no
-			is_adult = yes
-			OR = {
-				has_religion_feature = religion_stable
-				has_religion_feature = religion_feature_raven_tales_2
-			}
-			has_dlc = "Holy Fury"
-		}
-	
-		potential = {
-			prisoner = no
-			is_incapable = no
-			is_adult = yes
-			OR = {
-				character = FROM
-				liege = { character = FROM } 
-			}
-		}
-		
-		allow = {
-			FROM = {
-				custom_tooltip = {
-					text = tooltip_stable_attribute_improvement_cooldown
-					NOT = { has_character_modifier = stable_attribute_improvement_cooldown }
-				}
-				piety = 150
-			}
-			ROOT = { 
-				custom_tooltip = { 
-					text = tooltip_attribute_improvement_target_cooldown 
-					NOT = { has_character_modifier = stable_attribute_improvement_target_cooldown }
-				} 
-			}
-			ROOT = { 
-				religion = FROM
-				NOT = { diplomatic_immunity = yes }
-				OR = { 
-					AND = { 
-						is_female = yes 
-						NOT = { has_religion_feature = religion_patriarchal } 
-					}
-					AND = { 
-						is_female = no
-						NOT = { has_religion_feature = religion_matriarchal } 
-					}
-				}
-				custom_tooltip = { 
-					text = tooltip_attribute_requirements_to_improve #Either self-improving, or MUST have +1 point in one of the possible attributes compared to the target.
-					OR = { 
-						FROM = { combat_rating_diff = { who = ROOT value = 1 } }
-						FROM = { attribute_diff = { attribute = diplomacy character = ROOT value = 1 } }
-						FROM = { attribute_diff = { attribute = martial character = ROOT value = 1 } }
-						FROM = { attribute_diff = { attribute = stewardship character = ROOT value = 1 } }
-						FROM = { attribute_diff = { attribute = intrigue character = ROOT value = 1 } }
-						FROM = { attribute_diff = { attribute = learning character = ROOT value = 1 } }
-					} 
-				}
-			}
-		}
-		
-		effect = {
-			FROM = { 
-				piety = -150
-				if = { 
-					limit = { character = ROOT }
-					prestige = -500
-				}
-			}
-			custom_tooltip = { 
-				text = tooltip_stable_attribute_improvement_effect
-			}
-			hidden_tooltip = {
-				FROM = {
-					add_character_modifier = {
-						name = stable_attribute_improvement_cooldown
-						duration = 1825
-						hidden = yes
-					}
-					character_event = { id = HF.23760 } 
-					if = { #Chance for Family Bloodline when using action on councilmembers.
-						limit = { 
-							higher_tier_than = COUNT 
-							ROOT = {
-								is_close_relative = FROM
-								NOT = { character = FROM }
-							}
-							NOT = { check_variable = { which = stable_family_variable value = 8 } } #5 x 8 = 40 years to achieve.
-						}
-						change_variable = { which = stable_family_variable value = 1 }
-					}
-					else_if = { 
-						limit = { 
-							higher_tier_than = COUNT 
-							check_variable = { which = stable_family_variable value = 8 }
-							NOT = { 
-								any_owned_bloodline = { 
-									has_bloodline_flag = created_bloodline
-								}
-							}
-						}
-						narrative_event = { id = HF.23770 days = 15 random = 15 }
-					}
-					else_if = { #Chance for benevolent Bloodline when using action on councilmembers.
-						limit = { 
-							higher_tier_than = COUNT 
-							ROOT = {
-								NOT = { character = FROM }
-								OR = { 
-									has_job_title = job_chancellor
-									has_job_title = job_marshal
-									has_job_title = job_treasurer
-									has_job_title = job_spymaster
-									has_job_title = job_spiritual
-								}
-							}
-							NOT = { check_variable = { which = stable_benevolent_variable value = 8 } } #5 x 8 = 40 years to achieve.
-						}
-						change_variable = { which = stable_benevolent_variable value = 1 }
-					}
-					else_if = { 
-						limit = { 
-							higher_tier_than = COUNT 
-							check_variable = { which = stable_benevolent_variable value = 8 }
-							NOT = { 
-								any_owned_bloodline = { 
-									has_bloodline_flag = created_bloodline
-								}
-							}
-						}
-						narrative_event = { id = HF.23771 days = 15 random = 15 }
-					}
-				}
-				hidden_tooltip = {
-					ROOT = {
-						add_character_modifier = { 		#Other AI shouldn't target a recent target.
-							name = stable_attribute_improvement_target_cooldown
-							duration = 1825
-							hidden = yes
-						}
-						character_event = { id = HF.23772 days = 75 } #Delayed safety flag cleanup.
-					}
-				}
-			}
-
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				FROM = { trait = slothful }
-			}
-			modifier = {
-				factor = 2
-				FROM = { trait = diligent }
-			}
-			modifier = {
-				factor = 2
-				FROM = { trait = ambitious }
-				ROOT = { character = ROOT }
-			}
-			modifier = {
-				factor = 2
-				FROM = { 
-					OR = { 
-						trait = kind 
-						trait = charitable
-						trait = content
-					}
-				}
-				ROOT = { 
-					OR = { 
-						has_job_title = job_chancellor
-						has_job_title = job_marshal
-						has_job_title = job_treasurer
-						has_job_title = job_spymaster
-						has_job_title = job_spiritual
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				FROM = { 
-					OR = { 
-						trait = kind 
-						trait = charitable
-						trait = content
-						has_focus = focus_family
-					}
-				}
-				ROOT = { 
-					is_close_relative = FROM
-				}
-			}
-			modifier = {
-				factor = 2
-				FROM = { 
-					OR = { 
-						trait = ambitious
-						trait = envious
-						trait = wroth
-						has_focus = focus_family
-					}
-				}
-				ROOT = { 
-					is_married = FROM
-				}
-			}
-			modifier = {
-				factor = 0
-				is_rival = FROM
-			}
-			modifier = {
-				factor = 2
-				is_friend = FROM
-			}
-			modifier = {
-				factor = 2
-				is_lover = FROM
-			}
-			modifier = {
-				factor = 2
-				is_primary_heir = FROM
-			}
-			modifier = {
-				factor = 0.5
-				trait = stressed
-			}
-			modifier = {
-				factor = 0.5
-				trait = depressed
-			}
-		}
-	}
-	stable_attribute_improvement_self_decision = {
-		only_playable = yes
-		ai_check_interval = 50 #check only once every 50 months.
-		diplomacy_icon = GFX_stable_prestige_icon_decision
-	
-		filter = self
-		ai_target_filter = self
-	
-		potential = {
-			is_playable = yes
-			is_incapable = no
-			prisoner = no
-			is_adult = yes
-			OR = {
-				has_religion_feature = religion_stable
-				has_religion_feature = religion_feature_raven_tales_2
-			}
-			has_dlc = "Holy Fury"
-		}
-		
-		allow = {
-			FROM = {
-				custom_tooltip = {
-					text = tooltip_stable_attribute_improvement_cooldown
-					NOT = { has_character_modifier = stable_attribute_improvement_cooldown }
-				}
-				piety = 150
-			}
-			ROOT = { 
-				custom_tooltip = { 
-					text = tooltip_attribute_improvement_target_cooldown 
-					NOT = { has_character_modifier = stable_attribute_improvement_target_cooldown }
-				} 
-			}
-			ROOT = { 
-				religion = FROM
-				NOT = { diplomatic_immunity = yes }
-				OR = { 
-					AND = { 
-						is_female = yes 
-						NOT = { has_religion_feature = religion_patriarchal } 
-					}
-					AND = { 
-						is_female = no
-						NOT = { has_religion_feature = religion_matriarchal } 
-					}
-				}
-			}
-		}
-		
-		effect = {
-			ROOT = { 
-				piety = -150
-				if = { 
-					limit = { character = ROOT }
-					prestige = -500
-				}
-			}
-			custom_tooltip = { 
-				text = tooltip_stable_attribute_improvement_effect
-			}
-			hidden_tooltip = {
-				ROOT = {
-					add_character_modifier = {
-						name = stable_attribute_improvement_cooldown
-						duration = 1825
-						hidden = yes
-					}
-					character_event = { id = HF.23760 }
-				}
-				hidden_tooltip = {
-					ROOT = {
-						add_character_modifier = { 		#Other AI shouldn't target a recent target.
-							name = stable_attribute_improvement_target_cooldown
-							duration = 1825
-							hidden = yes
-						}
-					}
-				}
-			}
-
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				FROM = { trait = slothful }
-			}
-			modifier = {
-				factor = 2
-				FROM = { trait = diligent }
-			}
-			modifier = {
-				factor = 2
-				FROM = { trait = ambitious }
-				ROOT = { character = ROOT }
-			}
-			modifier = {
-				factor = 0.5
-				trait = stressed
-			}
-			modifier = {
-				factor = 0.5
-				trait = depressed
-			}
-		}
-	}
-}
-
-
 decisions = {
 	syncretic_sympathy_decision = {
 		only_playable = yes
@@ -453,9 +8,9 @@ decisions = {
 			NOR = {
 				is_incapable = yes
 				trait = sympathy_christendom
-				trait = sympathy_cult_of_saints
+				trait = sympathy_japonic
 				trait = sympathy_latter_day_saints
-				trait = sympathy_pacific
+				trait = sympathy_eastern
 				trait = sympathy_oldworld
 				trait = sympathy_pagans
 				trait = sympathy_judaism
@@ -678,20 +233,20 @@ decisions = {
 							}
 						}
 						100 = {
-							add_trait = sympathy_pacific
+							add_trait = sympathy_eastern
 	
 							modifier = {
 								factor = 0
-								religion_group = pacific
+								religion_group = eastern
 							}
 							modifier = { # Prioritize getting a sympathy trait that is useful
 								factor = 100
 								OR = {
 									any_demesne_province = {
-										religion_group = pacific
+										religion_group = eastern
 									}
 									any_vassal = {
-										religion_group = pacific
+										religion_group = eastern
 									}
 								}
 							}
@@ -699,19 +254,19 @@ decisions = {
 								factor = 5
 								NOR = {
 									any_demesne_province = {
-										NOT = { religion_group = pacific }
+										NOT = { religion_group = eastern }
 									}
 									any_vassal = {
-										NOT = { religion_group = pacific }
+										NOT = { religion_group = eastern }
 									}
 								}
 								any_liege = {
 									OR = {
 										AND = {
-											trait = sympathy_pacific
+											trait = sympathy_eastern
 											religion = ROOT
 										}
-										religion_group = pacific
+										religion_group = eastern
 									}
 								}	
 							}
@@ -721,23 +276,23 @@ decisions = {
 									any_liege = {
 										OR = {
 											AND = {
-												trait = sympathy_pacific
+												trait = sympathy_eastern
 												religion = ROOT
 											}
-											religion_group = pacific
+											religion_group = eastern
 										}
 									}
 									spouse = {
-										religion_group = pacific
+										religion_group = eastern
 									}
 									any_courtier_or_vassal = {
-										religion_group = pacific
+										religion_group = eastern
 									}
 									any_neighbor_independent_ruler = {
-										religion_group = pacific
+										religion_group = eastern
 									}
 									any_demesne_province = {
-										religion_group = pacific
+										religion_group = eastern
 									}
 								}
 							}
@@ -873,20 +428,20 @@ decisions = {
 							}
 						}
 						100 = {
-							add_trait = sympathy_cult_of_saints
+							add_trait = sympathy_japonic
 	
 							modifier = {
 								factor = 0
-								religion_group = cult_of_saints
+								religion_group = japonic
 							}
 							modifier = { # Prioritize getting a sympathy trait that is useful
 								factor = 100
 								OR = {
 									any_demesne_province = {
-										religion_group = cult_of_saints
+										religion_group = japonic
 									}
 									any_vassal = {
-										religion_group = cult_of_saints
+										religion_group = japonic
 									}
 								}
 							}
@@ -894,19 +449,19 @@ decisions = {
 								factor = 5
 								NOR = {
 									any_demesne_province = {
-										NOT = { religion_group = cult_of_saints }
+										NOT = { religion_group = japonic }
 									}
 									any_vassal = {
-										NOT = { religion_group = cult_of_saints }
+										NOT = { religion_group = japonic }
 									}
 								}
 								any_liege = {
 									OR = {
 										AND = {
-											trait = sympathy_cult_of_saints
+											trait = sympathy_japonic
 											religion = ROOT
 										}
-										religion_group = cult_of_saints
+										religion_group = japonic
 									}
 								}	
 							}
@@ -916,23 +471,23 @@ decisions = {
 									any_liege = {
 										OR = {
 											AND = {
-												trait = sympathy_cult_of_saints
+												trait = sympathy_japonic
 												religion = ROOT
 											}
-											religion_group = cult_of_saints
+											religion_group = japonic
 										}
 									}
 									spouse = {
-										religion_group = cult_of_saints
+										religion_group = japonic
 									}
 									any_courtier_or_vassal = {
-										religion_group = cult_of_saints
+										religion_group = japonic
 									}
 									any_neighbor_independent_ruler = {
-										religion_group = cult_of_saints
+										religion_group = japonic
 									}
 									any_demesne_province = {
-										religion_group = cult_of_saints
+										religion_group = japonic
 									}
 								}
 							}
@@ -1126,172 +681,6 @@ decisions = {
 			}
 		}
 	}
-	pagan_branch_decision = {
-		is_high_prio = yes
-		ai_check_interval = 70 #check only once every 70 months.
-		potential = {
-			is_adult = yes
-
-			NOT = { trait = pagan_branch_1 }
-			NOT = { trait = pagan_branch_2 }
-			NOT = { trait = pagan_branch_3 }
-			NOT = { trait = pagan_branch_4 }
-			NOT = { has_character_flag = flag_picking_branch }
-			OR = {
-				AND = {
-					religion_group = pagan_group
-					is_reformed_religion = yes
-					has_religion_feature = religion_no_leader
-					NOT = { religion = occultist_reformed }
-				}
-				AND = {
-					religion_group = american_native
-					is_reformed_religion = yes
-					has_religion_feature = religion_no_leader
-				}
-			}
-		}
-		
-		allow = {
-			prisoner = no
-			NOT = { is_incapable = yes }
-		}
-		
-		effect = {
-			custom_tooltip = {
-				text = tooltip_pick_pagan_branch
-			}
-			hidden_tooltip = {
-				set_character_flag = flag_picking_branch
-				character_event = { id = HF.23016 }
-				add_character_modifier = { modifier = picked_pagan_branch_cooldown years = 5 hidden = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 1.5
-				trait = zealous
-			}
-		}
-	}
-	change_pagan_branch_decision = {
-		only_playable = yes
-		ai = no
-
-		potential = {
-			is_adult = yes
-			NOR = { #still use existing branch traits
-				religion = occultist
-				religion = occultist_reformed
-			}
-			OR = { 
-				trait = pagan_branch_1
-				trait = pagan_branch_2
-				trait = pagan_branch_3 
-				trait = pagan_branch_4
-			}
-			NOT = { has_character_flag = flag_picking_branch }
-			NOT = { has_character_flag = flag_changed_branch }
-			OR = {
-				religion_group = pagan_group
-				religion_group = american_native
-			}
-		}
-		
-		allow = {
-			prisoner = no
-			NOT = { is_incapable = yes }
-			custom_tooltip = { text = pagan_branch_timer 
-				hidden_tooltip = { NOT = { has_character_modifier = picked_pagan_branch_cooldown } } 
-			}
-		}
-		
-		effect = {
-			custom_tooltip = {
-				text = tooltip_change_pagan_branch
-			}
-			hidden_tooltip = {
-				set_character_flag = flag_picking_branch
-				set_character_flag = flag_changed_branch
-				character_event = { id = HF.23017 }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	#determine_zodiac_sign_decision = {
-	#	#only_playable = yes
-	#	is_high_prio = yes
-	#	#ai_check_interval = 200 #check only once every 200 months.
-	#	ai = no
-	#	potential = {
-	#		is_adult = yes
-	#		NOR = { 
-	#			trait = zodiac_aquarius
-	#			trait = zodiac_aries
-	#			trait = zodiac_cancer
-	#			trait = zodiac_capricorn
-	#			trait = zodiac_gemini
-	#			trait = zodiac_leo
-	#			trait = zodiac_libra
-	#			trait = zodiac_pisces
-	#			trait = zodiac_sagittarius
-	#			trait = zodiac_scorpio
-	#			trait = zodiac_taurus
-	#			trait = zodiac_virgo
-	#		}
-	#		OR = {
-	#			religion = gaian
-	#			religion = neomayan
-	#			has_religion_feature = religion_astrology 
-	#			has_religion_feature = religion_feature_occultist
-	#			AND = {
-	#				religion = occultist_reformed
-	#				has_religion_features = no
-	#			}
-	#		}
-	#		NOT = { has_character_flag = flag_child_forsaken_zodiac }
-	#	}
-	#	
-	#	allow = {
-	#		prisoner = no
-	#		NOT = { is_incapable = yes }
-	#		learning = 6
-	#	}
-	#	
-	#	effect = {
-	#		custom_tooltip = {
-	#			text = gain_zodiac_trait_effect_tt
-	#		}
-	#		hidden_tooltip = {
-	#			add_western_zodiac_trait_effect = yes
-	#			character_event = { id = HFP.23925 }
-	#		}
-	#	}
-	#	revoke_allowed = {
-	#		always = no
-	#	}
-	#	ai_will_do = {
-	#		factor = 1
-	#		modifier = {
-	#			factor = 1.5
-	#			trait = zealous
-	#		}
-	#		modifier = {
-	#			factor = 0.1
-	#			trait = cynical
-	#		}
-	#	}
-	#}
 
 	delve_into_classics_decision = {
 		only_playable = yes
@@ -1316,20 +705,20 @@ decisions = {
 				trait = mystic
 				has_focus = focus_scholarship
 			} 
-			#OR = { #Must control an Jibenyuanze Holy Site. (Reactivate Once the Jibenyuanze Holy sites are working)
-			#	completely_controls = c_beijing
-			#	completely_controls = c_manhattan
-			#	completely_controls = c_philadelphia
-			#	completely_controls = c_boston
-			#	completely_controls = c_rushmore
-			#} 
+			OR = { #Must control an Jibenyuanze Holy Site. (Reactivate Once the Jibenyuanze Holy sites are working)
+				completely_controls = c_beijing
+				completely_controls = c_nansha
+				completely_controls = c_ruijin
+				completely_controls = c_xuanwu
+				completely_controls = c_shanghai
+			} 
 			NOR = { #Must not have used this decision or be an hellen already.
 				is_theocracy = yes
 				religion = jibenyuanze
 				secret_religion = jibenyuanze
-				has_character_modifier = caesars_insight
-				has_character_modifier = ciceros_insight
-				has_character_modifier = justinians_insight
+				#has_character_modifier = caesars_insight
+				#has_character_modifier = ciceros_insight
+				#has_character_modifier = justinians_insight
 				has_character_flag = flag_delving_into_classics
 				#has_global_flag = hellenic_reformation #No point in secrecy, there are other ways to convert.
 			}
@@ -1361,187 +750,6 @@ decisions = {
 			modifier = {
 				factor = 0
 				trait = zealous
-			}
-		}
-	}
-	
-	bloodthirsty_games_decision = {
-		is_high_prio = yes
-		ai_check_interval = 240 #check only once every 240 months.
-		potential = {
-			has_dlc = "Holy Fury"
-			is_adult = yes
-			is_inaccessible_trigger = no
-			NOT = { is_incapable = yes }
-			higher_real_tier_than = COUNT
-			is_ruler = yes
-			is_landed = yes
-			independent = yes
-			NOT = { has_any_opinion_modifier = opinion_blood_games_guest }
-			NOT = { has_religion_feature = religion_peaceful }
-			OR = { 
-				#AND = {
-				#	religion = mictlantec #they have their own decision
-				#	NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
-				#}
-				has_religion_feature = religion_ritual_sacrifice
-			}
-		}
-		
-		allow = {
-			prisoner = no
-			OR = { 
-				trait = bloodthirsty_gods_1
-				trait = bloodthirsty_gods_2
-				trait = bloodthirsty_gods_3
-		
-			}
-			piety = 100
-			custom_tooltip = { 
-				text = tooltip_bloodthirsty_games_cooldown
-				hidden_tooltip = {
-					NOT = { has_character_modifier = bloodthirsty_games_cooldown }
-				}
-			}
-		}
-		
-		effect = {
-			piety = -100
-			custom_tooltip = {
-				text = tooltip_start_bloodthirsty_games
-			}
-			hidden_tooltip = {
-				character_event = { id = HF.23440 }
-				add_character_modifier = { modifier = bloodthirsty_games_cooldown years = 5 hidden = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-
-			modifier = { #No valid free candidates.
-				factor = 0
-				NOR = { 
-					any_realm_character = {
-						host = { character = ROOT }
-						prisoner = yes
-						OR = { #Sex laws check
-							AND = { 
-								is_female = no
-								male_can_hold_minor_title_trigger = yes
-							}
-							AND = { 
-								is_female = yes
-								female_can_hold_minor_title_trigger = yes
-							}
-						}
-						count = 5
-					}
-					any_courtier = {
-						is_ruler = no
-						has_minor_title = title_commander
-						count = 2
-					}
-				}
-			}
-			modifier = { #Not enough contender to make it interesting.
-				factor = 0
-				NOT = { num_of_vassals = 6 }
-			}
-			modifier = {
-				factor = 0
-				trait = cynical
-			}
-			modifier = {
-				factor = 1.5
-				trait = zealous
-			}
-			modifier = {
-				factor = 1.25
-				trait = bloodthirsty_gods_2
-			}
-			modifier = {
-				factor = 1.5
-				trait = bloodthirsty_gods_3
-			}
-		}
-	}
-	bloodthirsty_mass_sacrifice_decision = {
-		is_high_prio = yes
-		ai_check_interval = 150 #check only once every 150 months.
-		potential = {
-			has_dlc = "Holy Fury"
-			is_adult = yes
-			is_inaccessible_trigger = no
-			NOT = { is_incapable = yes }
-			higher_real_tier_than = COUNT
-			is_ruler = yes
-			is_landed = yes
-			independent = yes
-			NOT = { has_religion_feature = religion_peaceful } #Aztecs could reform as Peaceful.
-			has_religion_feature = religion_ritual_sacrifice
-		}
-		
-		allow = {
-			prisoner = no
-			war = yes
-			NOT = { trait = cynical }
-			OR = { 
-				trait = bloodthirsty_gods_2
-				trait = bloodthirsty_gods_3
-			}
-			piety = 200
-			custom_tooltip = { 
-				text = tooltip_bloodthirsty_mass_sacrifice_cooldown
-				hidden_tooltip = {
-					NOT = { has_character_modifier = bloodthirsty_mass_sacrifice_cooldown }
-				}
-			}
-		}
-		
-		effect = {
-			piety = -200
-			custom_tooltip = {
-				text = tooltip_start_bloodthirsty_mass_sacrifice
-			}
-			hidden_tooltip = {
-				character_event = { id = HF.23462 }
-				add_character_modifier = { modifier = bloodthirsty_mass_sacrifice_cooldown years = 100 hidden = yes }
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 1.5
-				trait = zealous
-			}
-			modifier = {
-				factor = 1.5
-				trait = bloodthirsty_gods_3
-			}
-			modifier = { #I am losing the war, help!
-				factor = 10
-				any_war = {
-					defender = { character = ROOT }
-					attacker = {
-						war_score = -50
-					}
-				}
-			}
-			modifier = { #I am winning the war, no need!
-				factor = 0
-				any_war = {
-					defender = { character = ROOT }
-					attacker = {
-						war_score = 50
-					}
-				}
 			}
 		}
 	}
