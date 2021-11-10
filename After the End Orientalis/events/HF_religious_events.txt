@@ -458,8 +458,8 @@ character_event = {
 	trigger = { 
 		OR = { 
 			has_religion_feature = religion_haruspicy 
-			religion = hellenic_pagan
-			religion = hellenic_pagan_reformed
+			religion = seirei
+			religion = seirei_reformed
 		} 
 		NOR = {
 			has_character_modifier = divination_crit_success
@@ -530,8 +530,8 @@ character_event = {
 	trigger = { 
 		OR = { 
 			has_religion_feature = religion_haruspicy 
-			religion = hellenic_pagan
-			religion = hellenic_pagan_reformed
+			religion = seirei
+			religion = seirei_reformed
 		} 
 		NOR = {
 			has_character_modifier = divination_crit_success
@@ -572,8 +572,8 @@ character_event = {
 		war = yes
 		OR = { 
 			has_religion_feature = religion_haruspicy 
-			religion = hellenic_pagan
-			religion = hellenic_pagan_reformed
+			religion = seirei
+			religion = seirei_reformed
 		} 
 		NOR = {
 			has_character_modifier = divination_crit_success
@@ -5091,8 +5091,8 @@ character_event = {
 			}
 			OR = { 
 				has_religion_feature = religion_haruspicy
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
+				religion = seirei
+				religion = seirei_reformed
 			}
 		}
 	}

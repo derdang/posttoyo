@@ -10,11 +10,6 @@
 # World Regions
 #	These groups are mutually exclusive on the same tier
 ###########################################################################
-world_indochina = {
-    regions = {
-		custom_old_vietnam custom_old_laos custom_old_cambodia custom_old_siam custom_old_burma
-    }
-}
 custom_old_vietnam = {
     duchies = {
 		d_ha_noi d_ha_giang d_ha_long d_hai_phong d_nam_dhinh d_phu_tho d_son_la d_yen_bai d_sai_gon d_ben_tre d_can_tho d_dhong_thap d_ha_tien d_tay_ninh d_thua_thien d_cua_han d_dhak_lak d_gia_lai d_nghe_tinh d_ninh_thuan
@@ -32,12 +27,12 @@ custom_old_laos = {
 }
 custom_old_siam = {
     duchies = {
-		d_palimonthon d_ayutthaya d_lopburi d_ratchaburi d_uthaithani d_chachoengsao d_chantraburi d_chonburi d_prachinburi d_nakhon_ratchasima d_khon_kaen d_ubon d_udon_thani d_chiang_mai d_lampang d_phayao d_surat d_nakhon_sri_thammarat d_pattani d_sukhothai
+		d_palimonthon d_ayutthaya d_lopburi d_ratchaburi d_uthaithani d_prachinburi d_chantraburi d_chonburi d_nakhon_ratchasima d_khon_kaen d_ubon d_udon_thani d_chiang_mai d_lampang d_phayao d_surat d_nakhon_sri_thammarat d_pattani d_phuket d_songkhla d_sukhothai
     }
 }
 custom_old_burma = {
     duchies = {
-		d_tenasserim d_ayeyarwady d_pegu d_karen d_thanton d_rangoon d_taungyi d_kungtung d_kyebogi d_wa d_hsenwi d_kachin
+		d_tenasserim d_ayeyarwady d_bago d_hpa_an d_thanton d_yangon d_mandalay d_chin d_magwe d_pyinmana d_sagaing d_rakhine d_taungyi d_hsenwi d_kungtung d_kyebogi d_wa d_chindwinn d_wunpawng
     }
 }
 custom_pennisular_malaysia = {
@@ -58,6 +53,11 @@ custom_andaman = {
 custom_singapura = {
     duchies = {
 		d_singapore
+    }
+}
+world_indochina = {
+    regions = {
+		custom_old_vietnam custom_old_laos custom_old_cambodia custom_old_siam custom_old_burma
     }
 }
 custom_historical_plague_free_zone = {

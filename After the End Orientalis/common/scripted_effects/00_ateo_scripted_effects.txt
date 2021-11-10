@@ -1,0 +1,32 @@
+fire_haruspicy_event_effect = {
+	hidden_tooltip = { #Divination.
+		if = {
+			limit = { 
+				attacker = { 
+					OR = { 
+						religion = seirei 
+						religion = seirei_reformed
+						has_religion_feature = religion_haruspicy 
+					} 
+				} 
+			}
+			attacker = {  
+				character_event = { id = HF.23005 }
+			}
+		}
+		if = {
+			limit = { 
+				defender = { 
+					OR = { 
+						religion = seirei 
+						religion = seirei_reformed
+						has_religion_feature = religion_haruspicy 
+					} 
+				} 
+			}
+			defender = {  
+				character_event = { id = HF.23005 }
+			}
+		}
+	}
+}

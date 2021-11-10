@@ -73,7 +73,6 @@ religion_nature = {
 						religion = slavic_pagan
 						religion = baltic_pagan
 						religion = finnish_pagan
-						religion = west_african_pagan
 					}
 				}
 			}
@@ -183,11 +182,9 @@ religion_nature = {
 				FROM = { 
 					character = yes 
 					OR = { 
-						religion = norse_pagan
-						religion = tengri_pagan
-						religion = zun_pagan
+						religion = americanist
+						religion = tengri_pagan						
 						religion = hellenic_pagan
-						religion = west_african_pagan
 					}
 				}
 			}
@@ -263,17 +260,6 @@ religion_nature = {
 		}
 		ai_will_do = {
 			factor = 80
-			modifier = { 	
-				factor = 0.1
-				FROM = { 
-					character = yes 
-					NOR = { 
-						religion = zun_pagan
-						religion = hellenic_pagan
-						religion = west_african_pagan
-					}
-				}
-			}
 			modifier = { 	
 				factor = 0.01
 				FROM = { 
@@ -367,16 +353,6 @@ religion_nature = {
 		ai_will_do = {
 			factor = 50
 			modifier = { 	
-				factor = 0.1
-				FROM = { 
-					character = yes 
-					NOR = { 
-						religion = zun_pagan
-						religion = west_african_pagan
-					}
-				}
-			}
-			modifier = { 	
 				factor = 0.01
 				FROM = { 
 					character = yes 
@@ -448,24 +424,6 @@ religion_nature = {
 				factor = 0.1
 				FROM = { 
 					character = yes 
-					NOR = { 
-						religion = hellenic_pagan
-						religion = west_african_pagan
-						religion = slavic_pagan
-					}
-				}
-			}
-			modifier = { 	
-				factor = 2
-				FROM = { 
-					character = yes 
-					religion = hellenic_pagan 
-				}
-			}
-			modifier = { 	
-				factor = 0.1
-				FROM = { 
-					character = yes 
 					trait = paranoid 
 				}
 			}
@@ -529,7 +487,6 @@ religion_doctrine = {
 		picture = GFX_religion_feature_holy_family
 		trigger = {
 			NOR = { 
-				has_selected_religion_feature = religion_feature_zun #Redundant
 				religion = zoroastrian #Random World.
 				religion = messalian
 			} 
@@ -552,7 +509,7 @@ religion_doctrine = {
 				FROM = { 
 					character = yes 
 					NOT = { 
-						religion = zun_pagan
+						
 					}
 				}
 			}
@@ -568,7 +525,6 @@ religion_doctrine = {
 		trigger = {
 			NOR = { 
 				has_selected_religion_feature = religion_matriarchal #Incompatible
-				has_selected_religion_feature = religion_feature_zun #Redundant
 				has_selected_religion_feature = religion_feature_tengri
 			} 
 		}
@@ -609,7 +565,7 @@ religion_doctrine = {
 		picture = GFX_religion_feature_stable
 		trigger = {
 			NOR = { 
-				has_selected_religion_feature = religion_feature_slavic # Redundant Doctrine
+				has_selected_religion_feature = religion_feature_seirei # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_finnish # Redundant Doctrine
 			}
 		}
@@ -634,7 +590,6 @@ religion_doctrine = {
 		trigger = {
 			NOR = {
 				has_selected_religion_feature = religion_syncretic
-				has_selected_religion_feature = religion_feature_west_african
 			}
 		}
 		effect = {
@@ -656,7 +611,7 @@ religion_doctrine = {
 		picture = GFX_religion_feature_monastic
 		trigger = {
 			NOT = {
-				has_selected_religion_feature = religion_feature_west_african
+				has_selected_religion_feature = religion_feature_seirei
 			}
 		}
 		effect = {
@@ -717,8 +672,8 @@ religion_doctrine = {
 	religion_haruspicy = { #Gives option to divinate the future before waging a war.
 		picture = GFX_religion_feature_haruspicy
 		potential = {
-			NOT = { religion = hellenic_pagan } #Core feature of the religion itself.
-			NOT = { religion = hellenic_pagan_reformed } #Core feature of the religion itself.
+			NOT = { religion = seirei } #Core feature of the religion itself.
+			NOT = { religion = seirei_reformed } #Core feature of the religion itself.
 		}
 
 		effect = {
@@ -923,9 +878,10 @@ religion_doctrine = {
 	religion_adventuring = {
 		picture = GFX_religion_feature_adventuring
 		trigger = {
-			NOT = {
+			NOR = {
 				has_selected_religion_feature = religion_peaceful
-				has_selected_religion_feature = religion_feature_norse
+				has_selected_religion_feature = religion_feature_americanist
+				has_selected_religion_feature = religion_feature_seirei
 			}
 		}
 		effect = {
@@ -939,7 +895,7 @@ religion_doctrine = {
 				factor = 1.5
 				FROM = { 	
 					character = yes 
-					religion = norse_pagan
+					religion = americanist
 				}
 			}
 			modifier = { 	
@@ -954,9 +910,9 @@ religion_doctrine = {
 	religion_seafaring = {
 		picture = GFX_religion_feature_seafaring
 		trigger = {
-			NOT = {
+			NOR = {
 				has_selected_religion_feature = religion_peaceful
-				has_selected_religion_feature = religion_feature_norse #Redundant
+				has_selected_religion_feature = religion_feature_americanist #Redundant
 				has_selected_religion_feature = religion_feature_aztec
 			}
 		}
@@ -974,7 +930,6 @@ religion_doctrine = {
 							NOT = { has_selected_religion_feature = religion_peaceful }
 							OR = { 
 								religion = pagan 
-								religion = zun_pagan
 								religion = aztec
 								religion = hellenic_pagan
 							}
@@ -990,7 +945,7 @@ religion_doctrine = {
 				factor = 1.5
 				FROM = { 
 					character = yes 
-					religion = norse_pagan
+					religion = americanist
 				}
 			}
 			modifier = { 	
@@ -1070,10 +1025,9 @@ religion_doctrine = {
 	}
 	religion_animistic = {
 		picture = GFX_religion_feature_animistic
-		potential = {
-			NOR = {
-				religion = west_african_pagan #Redundant
-				religion = west_african_pagan_reformed #Redundant
+		trigger = {
+			NOT = {
+				has_selected_religion_feature = religion_feature_chinomi
 			}
 		}
 		effect = {
@@ -1109,6 +1063,7 @@ religion_doctrine = {
 		trigger = {
 			NOR = {
 				has_selected_religion_feature = religion_no_leader
+				has_selected_religion_feature = religion_feature_chinomi
 				religion_group = christian #Random World redundancy.
 			}
 		}
@@ -1125,17 +1080,17 @@ religion_doctrine = {
 			}
 		}
 	}
-	religion_feature_norse = {
-		picture = GFX_religion_feature_norse
+	religion_feature_americanist = {
+		picture = GFX_religion_feature_americanist
 		potential = {
 			has_game_started = yes
-			religion = norse_pagan_reformed
+			religion = americanist_reformed
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 		}
 		trigger = {
-			religion = norse_pagan_reformed
+			religion = americanist_reformed
 			NOR = { 
 				has_selected_religion_feature = religion_adventuring
 				has_selected_religion_feature = religion_seafaring
@@ -1280,65 +1235,81 @@ religion_doctrine = {
 			factor = 50
 		}
 	}
-	religion_feature_west_african = {
-		picture = GFX_religion_feature_west_african
+	religion_feature_seirei = {
+		picture = GFX_religion_feature_seirei
 		potential = {
 			has_game_started = yes
-			religion = west_african_pagan_reformed
+			religion = seirei_reformed
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 		}
 		trigger = {
-			religion = west_african_pagan_reformed
+			religion = seirei_reformed
 			NOR = { 
 				has_selected_religion_feature = religion_monastic
-				has_selected_religion_feature = religion_jizya
+				has_selected_religion_feature = religion_stable
+				has_selected_religion_feature = religion_adventuring
 			}
 		}
 		effect = {
 			custom_tooltip = { text = tooltip_religion_feature_monastic }
-			custom_tooltip = { text = tooltip_religion_feature_jizya }
+			custom_tooltip = { text = tooltip_religion_feature_stable }
+			custom_tooltip = { text = tooltip_religion_feature_meliorism }
 			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			custom_tooltip = { text = tooltip_religion_feature_adventuring }
+			custom_tooltip = { text = tooltip_religion_feature_pirating }
 			hidden_tooltip = { 
 				set_priests_can_marry = no
 				set_priests_can_inherit = no
-				set_jizya_tax = yes
+				set_short_reign_opinion_year_mult = 0
 				set_can_retire_to_monastery = yes
+				enable_prepared_invasion = ROOT
 			}
 		}
 		ai_will_do = {
-			factor = 50
+			factor = 1
+			modifier = { #Handles feature randomization in AltStart to make unreformed pagans still have "paganish" features.
+				factor = 0
+				has_game_started = no
+				religion_group = pagan_group
+			}
+			modifier = { 	
+				factor = 1.5
+				FROM = { 	
+					character = yes 
+					religion = americanist
+				}
+			}
 		}
 	}
-	religion_feature_zun = {
-		picture = GFX_religion_feature_zun
+	religion_feature_chinomi = {
+		picture = GFX_religion_feature_chinomi
 		potential = {
 			has_game_started = yes
-			religion = zun_pagan_reformed
+			religion = chinomi_reformed
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 		}
 		trigger = {
-			religion = zun_pagan_reformed
+			religion = chinomi_reformed
 			NOR = { 
-				has_selected_religion_feature = religion_harems
-				has_selected_religion_feature = religion_holy_family
+				has_selected_religion_feature = religion_no_leader
+				has_selected_religion_feature = religion_animistic
+				has_selected_religion_feature = religion_beatification
 			}
 		}
 		effect = {
-			custom_tooltip = { text = tooltip_religion_feature_harems }
-			custom_tooltip = { text = tooltip_religion_feature_incest }
-			custom_tooltip = { text = tooltip_religion_feature_holy_family }
+			custom_tooltip = { text = tooltip_religion_feature_land_morale }
+			custom_tooltip = { text = tooltip_religion_feature_adulthood_rite }
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
 			hidden_tooltip = { 
-				set_max_consorts = 0
-				set_max_wives = 4
-				set_pc_marriage = yes
-				set_bs_marriage = yes
-				set_psc_marriage = yes
-				set_cousin_marriage = yes
-				set_divine_blood = yes
+				set_unit_modifier = { 
+					land_morale = 0.05
+					key = "ANIMISTIC_RELIGION"
+				}
 			}
 		}
 		ai_will_do = {
@@ -1346,7 +1317,7 @@ religion_doctrine = {
 		}
 	}
 	religion_feature_shamanist = { #Required to Pick Autonomous Head (Combines Animism with Pacifism and Equal)
-		picture = religion_feature_primitive
+		picture = GFX_religion_feature_primitive
 		potential = {
 			has_game_started = yes
 			religion = shamanist_reformed
@@ -1504,9 +1475,7 @@ religion_leadership = {
 			has_game_started = yes
 		}
 		trigger = {
-			FROM = {
-				character = yes
-			}
+			NOT = { has_selected_religion_feature = religion_feature_shamanist }
 		}
 		effect = {
 			custom_tooltip = { text = tooltip_religion_feature_temporal_head }
@@ -1523,7 +1492,7 @@ religion_leadership = {
 				factor = 0.1
 				FROM = { 
 					NOR = { 
-						religion = norse_pagan
+						religion = americanist
 						religion = aztec
 					}
 				}
@@ -1534,6 +1503,9 @@ religion_leadership = {
 		picture = GFX_religion_feature_theocratic_head
 		potential = {
 			has_game_started = yes
+		}
+		trigger = {
+			NOT = { has_selected_religion_feature = religion_feature_shamanist }
 		}
 		effect = {
 			custom_tooltip = { text = tooltip_religion_feature_theocratic_head }
@@ -1552,7 +1524,7 @@ religion_leadership = {
 					character = yes 
 					NOR = { 
 						religion = tengri_pagan
-						religion = zun_pagan
+						
 					}
 				}
 			}
@@ -1562,6 +1534,9 @@ religion_leadership = {
 		picture = GFX_religion_feature_autocephaly
 		potential = {
 			has_game_started = yes
+		}
+		trigger = {
+			NOT = { has_selected_religion_feature = religion_feature_shamanist }
 		}
 		effect = {
 			custom_tooltip = { text = tooltip_religion_feature_autocephaly }
@@ -1596,9 +1571,10 @@ religion_leadership = {
 			has_game_started = yes
 		}
 		trigger = {
-			NOT = {
+			NOR = {
 				has_selected_religion_feature = religion_dogmatic
 				has_selected_religion_feature = religion_beatification
+				has_selected_religion_feature = religion_feature_chinomi
 			}
 		}
 		effect = {
@@ -1617,7 +1593,7 @@ religion_leadership = {
 					FROM = { 
 						character = yes 
 						OR = { 
-							religion = norse_pagan 
+							religion = americanist 
 							religion = tengri_pagan 
 						} 
 					}
@@ -1634,7 +1610,7 @@ religion_leadership = {
 					FROM = { 
 						character = yes 
 						OR = { 
-							religion = norse_pagan 
+							religion = americanist 
 							religion = tengri_pagan 
 						} 
 					} 
@@ -1704,13 +1680,6 @@ religion_leadership = {
 			}
 			if = { 
 				limit = { 
-					FROM = { 
-						character = yes 
-						OR = { 
-							religion = west_african_pagan
-							religion = zun_pagan
-						}
-					}
 					has_selected_religion_feature = religion_monastic
 				}
 				set_character_modifier = {
@@ -1720,15 +1689,6 @@ religion_leadership = {
 				}
 			}
 			else_if = { 
-				limit = { 
-					FROM = { 
-						character = yes 
-						OR = { 
-							religion = west_african_pagan
-							religion = zun_pagan
-						}
-					}
-				}
 				set_character_modifier = {
 					stewardship = 2
 					key = "AUTONOMOUS_ATTR_RELIGION"
@@ -1772,24 +1732,21 @@ religion_leadership = {
 				factor = 0.1
 				FROM = { 
 					character = yes 
-					NOR = { 
-						religion = shamanist
-						religion = west_african_pagan
-					}
+					NOT = {religion = shamanist}
 				}
 			}
 			modifier = { 	
 				factor = 0.1
 				FROM = { 
 					character = yes 
-					religion = zun_pagan 
+					 
 				}
 			}
 			modifier = { 	
 				factor = 0.1
 				FROM = { 
 					character = yes 
-					religion = norse_pagan 
+					religion = americanist 
 				}
 			}
 			modifier = { 	
