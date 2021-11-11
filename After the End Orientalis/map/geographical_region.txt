@@ -265,6 +265,21 @@ custom_okinawa = {
 		d_ryukyu
     }
 }
+custom_luzon = {
+	duchies = {
+		d_katagalugan d_la_laguna d_manila d_mimaro d_quezon d_cordillera d_cagayan d_central_luzon d_ilocos d_pangasinan d_sierra_madre 
+    }
+}
+custom_visaya = {
+	duchies = {
+		d_kabisay_an d_bicol d_leyte d_samar d_panay d_negros d_palawan 
+    }
+}
+custom_mindanao = {
+	duchies = {
+		d_davao d_agusan d_davao_oriental d_sarangani d_surigao d_zamboanga d_bukidnon d_cotabato d_lanao d_zamboanga_del_norte 
+    }
+}
 custom_china_core = {
 	regions = {
 		custom_xibei custom_zhongnan custom_huadong custom_xinan custom_dongbei custom_huabei
@@ -274,6 +289,14 @@ world_old_japan = {
 	regions = {
 		custom_honshu custom_shikoku custom_kyushu custom_hokkaido custom_okinawa
     }
+}
+world_the_philippines = {
+	regions = {
+		custom_mindanao custom_visaya custom_luzon
+    }
+	duchies = {
+		d_sulu
+	}
 }
 world_old_china = {
 	regions = {
@@ -292,7 +315,7 @@ custom_historical_plague_free_zone = {
 }
 custom_monsoon_region = {
     regions = {
-		world_indochina custom_pennisular_malaysia custom_singapura custom_sumatra custom_andaman custom_xinan custom_zhongnan custom_taiwan custom_fujian custom_anhui custom_zhejiang custom_jiangxi custom_jiangsu world_old_japan
+		world_indochina world_the_philippines custom_pennisular_malaysia custom_singapura custom_sumatra custom_andaman custom_xinan custom_zhongnan custom_taiwan custom_fujian custom_anhui custom_zhejiang custom_jiangxi custom_jiangsu custom_kyushu custom_shikoku custom_honshu custom_okinawa
     }
 	duchies = {
 		d_guam d_mariana d_palau d_yap
@@ -300,6 +323,6 @@ custom_monsoon_region = {
 }
 custom_earthquake_region = {
 	regions = {
-		world_old_japan
+		world_old_japan world_the_philippines custom_taiwan
     }
 }
