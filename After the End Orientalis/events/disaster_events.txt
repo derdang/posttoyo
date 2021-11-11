@@ -1,0 +1,1045 @@
+# 1 	choose sea provinces for typhoon
+# 2 	handle flag to keep typhoons at less than one per year
+# 4		debug message so player can see when a typhoon hits
+# 5		debug message so player can see when a typhoon hits
+# 10	typhoon hits a land province
+# 11	character is at risk of getting killed in typhoon
+# 12	character is safe from harm in the typhoon
+# 20 	opportunists appear in a typhoon damaged area
+
+# 30	[hidden] prov: triggers potential for quake, or other quake related things
+# 31	narr: the "big one" has struck the province of FROM
+# 32	char: minor quake or aftershock
+# 33	prov: fire spreads in a city
+# 34	char: choose how to prepare for next quake
+# 35	char: hit by the "big one"
+# 36	char: hit by a tremor/aftershock
+# 37	prov: decide whether to maintain quake-proof buildings in a specific prov
+
+namespace = disaster
+
+# ******************************* Hurricanes! ***************************
+# choose a set of sea provinces to start in, cause province_event in each neighboring land prov
+# adapted from ATE
+province_event = {
+	id = disaster.1
+	hide_window = yes
+	
+	trigger = {
+		province = 10
+		NOT = { has_global_flag = recent_typhoon }
+		month = 4	# typhoon season is May through December
+		NOT = { month = 12 }
+	}
+	
+	mean_time_to_happen = {
+		months = 42
+		modifier = {
+			factor = 2	# peak season between July and September 
+			month = 6
+			NOT = { month = 9 }
+		}
+	}
+	
+	immediate = {
+		set_global_flag = recent_typhoon
+		province_event = { id = disaster.2 days = 380 }
+		
+		random_list = { #wow this sucks
+			10 = { 
+				973 = { # Storm from the Pacific Ocean Hits Guam
+					random_neighbor_province = { province_event = { id = disaster.4 } }
+					any_neighbor_province = { province_event = { id = disaster.10 } } }
+				974 = { any_neighbor_province = { province_event = { id = disaster.10 } } }
+				975 = { any_neighbor_province = { province_event = { id = disaster.10 } } }
+				976 = { any_neighbor_province = { province_event = { id = disaster.10 } } }
+			} 
+			10 = { 
+				235 = { # Eastern Typhoons Strike the Phillipines (East Visaya)
+					random_neighbor_province = { province_event = { id = disaster.4 } }
+					any_neighbor_province = { province_event = { id = disaster.10 } } }
+				237 = { any_neighbor_province = { province_event = { id = disaster.10 } } }
+				240 = { any_neighbor_province = { province_event = { id = disaster.10 } } }
+				242 = { any_neighbor_province = { province_event = { id = disaster.10 } } }
+			}
+			10 = { 
+				231 = { # Eastern Typhoons Strike the Phillipines (Luzon)
+					random_neighbor_province = { province_event = { id = disaster.4 } }
+					any_neighbor_province = { province_event = { id = disaster.10 } } }
+				221 = { any_neighbor_province = { province_event = { id = disaster.10 } } }
+				227 = { any_neighbor_province = { province_event = { id = disaster.10 } } }
+			}
+		}
+	}
+
+	option = { }
+}
+
+province_event = {
+	id = disaster.2
+	desc = EVTDESC_bounce
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { clr_global_flag = recent_typhoon }
+	option = { }
+}
+
+province_event = {
+	id = disaster.4
+	desc = EVTNAME_bounce
+	picture = GFX_evt_kraken
+
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		any_playable_ruler = {
+			limit = {
+				NOT = { distance = { who = ROOT distance = 750 } }
+			}
+			narrative_event = { id = disaster.5 days = 5 random = 5 }
+		}
+	}
+	
+	option = { }
+}
+
+narrative_event = {
+	id = disaster.5
+	title = EVTNAME_typhoon_sighted_inform
+	desc = EVTDESC_typhoon_sighted_inform
+	picture = GFX_evt_kraken
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { any_demesne_province = { has_province_modifier = typhoon_damage } }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_sighted_inform
+	}
+}
+
+province_event = {
+	id = disaster.10
+	title = EVTNAME_typhoon_landfall
+	desc = EVTDESC_typhoon_landfall
+	picture = GFX_evt_kraken
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_province_modifier = typhoon_damage }
+	}
+	
+	immediate = {
+		add_province_modifier = { name = typhoon_damage duration = 360 } 
+		random_province_holding = {
+			limit = {
+				holding_type = city
+			}
+			destroy_random_building = yes
+		}
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_landfall_defender
+		trigger = {
+			holder_scope = { stewardship = 10 }
+			holder_scope = { wealth = 25 }
+		}
+		tooltip_info = stewardship
+		holder_scope = { wealth = -25 }
+		custom_tooltip = { text = TXT_typhoon_landfall_protected }
+		hidden_tooltip = { any_province_character = { narrative_event = { id = disaster.12 } } }
+		add_province_modifier = { name = peasants_protected duration = 180 } 
+		holder_scope = { add_character_modifier = { name = protector_in_the_storm duration = 180 } }
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_landfall_defender
+		trigger = {
+			NOT = { holder_scope = { stewardship = 10 } }
+			holder_scope = { wealth = 100 }
+		}
+		holder_scope = { wealth = -100 }
+		custom_tooltip = { text = TXT_typhoon_landfall_protected }
+		hidden_tooltip = { any_province_character = { narrative_event = { id = disaster.12 } } }
+		add_province_modifier = { name = peasants_protected duration = 180 } 
+		holder_scope = { add_character_modifier = { name = protector_in_the_storm duration = 180 } }
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_landfall_savenobles
+		custom_tooltip = { text = TXT_typhoon_landfall_protected }
+		hidden_tooltip = { any_province_character = { narrative_event = { id = disaster.12 } } }
+		add_province_modifier = { name = typhoon_flooded_farmland duration = 180 } 
+		holder_scope = { add_character_modifier = { name = protector_in_the_storm duration = 180 } }
+		ai_chance = { factor = 30 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_landfall_savepeasants
+		custom_tooltip = { text = TXT_typhoon_landfall_riskdeath }
+		hidden_tooltip = { any_province_character = { narrative_event = { id = disaster.11 } } }
+		add_province_modifier = { name = typhoon_ruined_roads duration = 180 }
+		add_province_modifier = { name = peasants_protected duration = 180 }
+		if = { 
+			limit = { has_trade_post = yes }
+			random = { 
+				chance = 25
+				add_province_modifier = { name = typhoon_damaged_trade_post duration = 180 } 
+			} 
+		}
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_landfall_seizetradepost
+		trigger = {
+			has_trade_post = yes
+			holder_scope = { intrigue = 8 }
+		}
+		tooltip_info = intrigue
+		holder_scope = { wealth = 50 }
+		custom_tooltip = { text = TXT_typhoon_landfall_riskdeath }
+		hidden_tooltip = { any_province_character = { narrative_event = { id = disaster.11 } } }
+		add_province_modifier = { name = typhoon_flooded_farmland duration = 180 }
+		add_province_modifier = { name = typhoon_ruined_roads duration = 180 }
+		add_province_modifier = { name = typhoon_damaged_trade_post duration = 180 } 	
+		hidden_tooltip = { random = {
+				chance = 25
+				holder_scope = { add_character_modifier = { name = discovered_opportunist duration = 180 } }
+			}
+		}	
+		ai_chance = { factor = 10 }		
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_landfall_slothful
+		trigger = {
+			NOT = { holder_scope = { intrigue = 8 } }
+		}
+		custom_tooltip = { text = TXT_typhoon_landfall_riskdeath }
+		hidden_tooltip = { any_province_character = { narrative_event = { id = disaster.11 } } }
+		add_province_modifier = { name = typhoon_flooded_farmland duration = 180 }
+		add_province_modifier = { name = typhoon_ruined_roads duration = 180 } 
+		if = { 
+			limit = { has_trade_post = yes }
+			random = { 
+				chance = 50
+				add_province_modifier = { name = typhoon_damaged_trade_post duration = 180 } 
+			} 
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+
+narrative_event = {
+	id = disaster.11
+	title = EVTNAME_typhoon_hitsyou
+	desc = EVTDESC_typhoon_riskdeath
+	picture = GFX_evt_kraken
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_typhoon_riskdeath_sick
+		trigger = {
+			OR = {
+				is_incapable = yes
+				trait = infirm
+				trait = pneumonic
+				trait = depressed
+				trait = slow
+				trait = imbecile
+				trait = inbred
+			}
+		}
+		random_list = {
+			10 = { death = { death_reason = death_accident } }
+			30 = { add_maimed_trait_effect = yes }
+			60 = { add_trait = wounded }
+		}
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_riskdeath_healthy
+		trigger = {
+			NOT = { OR = {
+					is_incapable = yes
+					trait = infirm
+					trait = pneumonic
+					trait = depressed
+					trait = slow
+					trait = imbecile
+					trait = inbred
+					stewardship = 12
+					learning = 12
+					intrigue = 12
+					trait = strong
+					trait = quick
+					trait = genius
+					trait = diligent
+					trait = patient
+				}
+			}
+		}
+		random_list = {
+			1 = { death = { death_reason = death_accident } }
+			1 = { add_maimed_trait_effect = yes }
+			2 = { add_trait = wounded }
+			2 = { add_trait = ill }
+			4 = { add_trait = stressed }
+			90 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_riskdeath_skilled
+		trigger = {
+			NOT = { OR = {
+					is_incapable = yes
+					trait = infirm
+					trait = pneumonic
+					trait = depressed
+					trait = slow
+					trait = imbecile
+					trait = inbred
+				}	
+			}
+			OR = {
+				stewardship = 12
+				learning = 12
+				intrigue = 12
+				trait = strong
+				trait = quick
+				trait = genius
+				trait = diligent
+				trait = patient
+			}
+		}
+		prestige = 10
+	}
+}
+
+narrative_event = {
+	id = disaster.12
+	title = EVTNAME_typhoon_hitsyou
+	desc = EVTDESC_typhoon_protected
+	picture = GFX_evt_kraken
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_typhoon_protected_normal
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_protected_brave
+		trigger = {
+			NOT = { trait = craven }
+			NOT = { trait = slothful }
+			NOT = { trait = cruel }
+		}
+		random_list = {
+			10 = { add_trait = brave }
+			10 = { add_trait = kind }
+			5 = { add_trait = wounded }
+			75 = { }
+		}
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_protected_pious
+		trigger = {
+			NOT = { trait = cynical }
+		}
+		piety = 5
+		random = { chance = 10 add_trait = zealous }
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_protected_greedy
+		trigger = {
+			NOT = { trait = kind }
+			NOT = { trait = honest }
+			NOT = { trait = charitable }
+			NOT = { trait = just }
+			NOT = { trait = humble }
+		}
+		piety = -5
+		random_list = {
+			10 = {
+				wealth = 50
+				add_trait = greedy
+			}
+			20 = {
+				wealth = 25
+				add_trait = deceitful
+			}
+			70 = { wealth = 10 }
+		}
+		hidden_tooltip = { random = {
+				chance = 25
+				add_character_modifier = { name = discovered_opportunist duration = 180 }
+			}
+		}
+		ai_chance = { factor = 5 }
+	}
+}
+
+province_event = {
+	id = disaster.20
+	desc = EVTDESC_disaster_opportunists
+	picture = GFX_evt_bandits
+
+	trigger = {
+		OR = {
+			has_province_modifier = typhoon_damage
+			has_province_modifier = quake_damage
+		}
+		NOT = { has_province_modifier = highway_robber_band }
+		NOT = { has_province_modifier = public_execution }
+		OR = {
+			NOT = { holder_scope = { martial = 6 } }
+			has_province_modifier = typhoon_ruined_roads
+			has_province_modifier = quake_castle_damage
+		}
+		NOT = { holder_scope = { martial = 12 } }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 2
+			holder_scope = { stewardship = 8 }
+		}
+		modifier = {
+			factor = 0.5
+			OR = { 
+				has_province_modifier = typhoon_flooded_farmland
+				has_province_modifier = typhoon_ruined_roads
+				has_province_modifier = quake_castle_damage
+				has_province_modifier = fire_damage
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_opportunists_powerless
+		add_province_modifier = { name = highway_robber_band duration = 365 }
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_opportunists_bounty
+		trigger = {
+			holder_scope = { wealth = 5 }
+		}
+		holder_scope = { wealth = -5 }
+		ai_chance = { factor = 25 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_opportunists_intrigue
+		trigger = {
+			holder_scope = { intrigue = 8 }
+		}
+		tooltip_info = intrigue
+		add_province_modifier = { name = public_execution duration = 180 }
+		random = { chance = 10 holder_scope = { add_trait = wroth } }
+		ai_chance = {
+			factor = 100
+			modifier = { factor = 0 holder_scope = { trait = kind } }
+			modifier = { factor = 0 holder_scope = { trait = patient } }
+		}
+	}
+}
+
+# ******************************* Earthquakes! *********************************
+province_event = {
+	id = disaster.30
+	desc = EVTDESC_bounce
+	picture = GFX_evt_siege
+	hide_window = yes
+
+	trigger = {
+		region = custom_earthquake_region
+	}
+
+	mean_time_to_happen = {
+		years = 100
+	}
+ 
+	immediate = {
+		random_list = {
+			10 = {
+				set_variable = { which = iterator value = 3 }
+				while = {
+					limit = {
+						check_variable = {
+							which = iterator
+							value >= 1
+						}
+					}
+					subtract_variable = {
+						which = iterator
+						value = 1
+					}
+					any_province_holding = {
+						destroy_random_building = yes
+					}
+				}
+				holder_scope = { narrative_event = { id = disaster.31 } }
+				any_province_character = {
+					narrative_event = { id = disaster.35 }
+				}
+			}
+			90 = {
+				holder_scope = { character_event = { id = disaster.32 } }
+				any_province_character = {
+					narrative_event = { id = disaster.36 }
+				}
+				any_province_holding = {
+					destroy_random_building = yes
+				}
+			}
+		}
+		holder_scope = { character_event = { id = disaster.34 days = 30 random = 20 } }
+	}
+	
+	option = {
+		name = OK
+	}
+}
+
+narrative_event = {
+	id = disaster.31
+	title = EVTNAME_quake_bigone
+	desc = EVTDESC_quake_bigone
+	picture = GFX_evt_siege
+	is_triggered_only = yes
+	
+	immediate = {
+		random = {
+			chance = 90
+			FROM = { province_event = { id = disaster.30 days = 2 random = 5 } }
+		}
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_codes
+		trigger = {
+			FROM = { has_province_modifier = quake_building_codes }
+		}
+		custom_tooltip = { text = TXT_quake_build_codes }
+		prestige = 25
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 180 }
+		}
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_rebuild
+		trigger = {
+			NOT = { FROM = { has_province_modifier = quake_building_codes } }
+			martial = 8
+		}
+		tooltip_info = martial
+		random = { chance = 20 add_trait = paranoid }
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 720 }
+			add_province_modifier = { name = fire_damage duration = 350 }
+			hidden_tooltip = {
+				random = {
+					chance = 80
+					province_event = { id = disaster.33 days = 2 random = 3 }
+				}
+			}
+		}
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_firefight
+		trigger = {
+			NOT = { FROM = { has_province_modifier = quake_building_codes } }
+			stewardship = 8
+		}
+		tooltip_info = stewardship
+		random = { chance = 20 add_trait = diligent }
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 720 }
+			add_province_modifier = { name = quake_castle_damage duration = 350 }
+		}
+		ai_chance = { factor = 50 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_people
+		trigger = {
+			NOT = { FROM = { has_province_modifier = quake_building_codes } }
+			diplomacy = 8
+		}
+		tooltip_info = diplomacy
+		random = { chance = 20 add_trait = kind }
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 720 }
+			add_province_modifier = { name = peasants_protected duration = 350 } 
+			add_province_modifier = { name = quake_castle_damage duration = 350 }
+			add_province_modifier = { name = fire_damage duration = 350 }
+			hidden_tooltip = {
+				random = {
+					chance = 80
+					province_event = { id = disaster.33 days = 2 random = 3 }
+				}
+			}
+		}
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_pray
+		trigger = {
+			NOT = { FROM = { has_province_modifier = quake_building_codes } }
+		}
+		piety = 10
+		random = { chance = 20 add_trait = zealous }
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 1000 }
+			add_province_modifier = { name = quake_castle_damage duration = 350 }
+			add_province_modifier = { name = fire_damage duration = 350 }
+			hidden_tooltip = {
+				random = {
+					chance = 90
+					province_event = { id = disaster.33 days = 2 random = 3 }
+				}
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+character_event = {
+	id = disaster.32
+	desc = {
+		text = EVTDESC_quake_tremor
+		trigger = {
+			FROM = {
+				NOT = { has_province_modifier = quake_damage }
+			}
+		}
+	}
+	desc = {
+		text = EVTDESC_quake_aftershock
+		trigger = {
+			FROM = {
+				has_province_modifier = quake_damage
+			}
+		}
+	}
+	picture = GFX_evt_siege
+	is_triggered_only = yes
+	
+	immediate = {
+		random = {
+			chance = 25
+			FROM = { province_event = { id = disaster.30 days = 2 random = 5 } }
+		}
+		any_demesne_province = {
+			destroy_random_building = yes
+		}
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_codes
+		trigger = {
+			FROM = { has_province_modifier = quake_building_codes }
+		}
+		custom_tooltip = { text = TXT_quake_build_codes }
+		prestige = 10
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 30 }
+		}
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_rebuild
+		trigger = {
+			NOT = { FROM = { has_province_modifier = quake_building_codes } }
+			martial = 8
+		}
+		tooltip_info = martial
+		random = { chance = 20 add_trait = paranoid }
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 350 }
+			add_province_modifier = { name = fire_damage duration = 180 }
+			hidden_tooltip = {
+				random = {
+					chance = 40
+					province_event = { id = disaster.33 days = 2 random = 3 }
+				}
+			}
+		}
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_firefight
+		trigger = {
+			NOT = { FROM = { has_province_modifier = quake_building_codes } }
+			stewardship = 8
+		}
+		tooltip_info = stewardship
+		random = { chance = 20 add_trait = diligent }
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 350 }
+			add_province_modifier = { name = quake_castle_damage duration = 180 }
+		}
+		ai_chance = { factor = 50 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_people
+		trigger = {
+			NOT = { FROM = { has_province_modifier = quake_building_codes } }
+			diplomacy = 8
+		}
+		tooltip_info = diplomacy
+		random = { chance = 20 add_trait = kind }
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 350 }
+			add_province_modifier = { name = peasants_protected duration = 180 } 
+			add_province_modifier = { name = quake_castle_damage duration = 180 }
+			add_province_modifier = { name = fire_damage duration = 180 }
+			hidden_tooltip = {
+				random = {
+					chance = 40
+					province_event = { id = disaster.33 days = 2 random = 3 }
+				}
+			}
+		}
+		ai_chance = { factor = 20 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_bigone_pray
+		trigger = {
+			NOT = { FROM = { has_province_modifier = quake_building_codes } }
+		}
+		piety = 5
+		random = { chance = 20 add_trait = zealous }
+		FROM = {
+			add_province_modifier = { name = quake_damage duration = 350 }
+			add_province_modifier = { name = quake_castle_damage duration = 180 }
+			add_province_modifier = { name = fire_damage duration = 180 }
+			hidden_tooltip = {
+				random = {
+					chance = 50
+					province_event = { id = disaster.33 days = 2 random = 3 }
+				}
+			}
+		}
+		ai_chance = { factor = 1 }
+	}
+}
+
+province_event = {
+	id = disaster.33
+	desc = EVTDESC_disaster_fire
+	picture = GFX_evt_burning_house
+	is_triggered_only = yes
+	
+	trigger = {
+		any_province_holding = { holding_type = city }
+	}
+	
+	option = {
+		name = EVTOPT_fire_save
+		holder_scope = {
+			wealth = -150
+			prestige = 10
+		}
+		ai_chance = { factor = 10 }
+	}
+
+	option = {
+		name = EVTOPT_fire_lazy
+		random_province_holding = {
+			limit = {
+				holding_type = city
+			}
+			destroy_random_building = yes
+		}
+		ai_chance = { factor = 10 }
+	}
+}
+
+character_event = {
+	id = disaster.34
+	desc = EVTDESC_quake_prepare
+	picture = GFX_evt_siege
+	is_triggered_only = yes
+	hide_from = yes
+	
+	trigger = {
+		NOT = { FROM = { has_province_modifier = quake_building_codes } }
+	}
+	
+	option = {
+		name = EVTOPT_quake_prep_realm
+		scaled_wealth = -0.2
+		any_realm_province = {
+			add_province_modifier = { name = quake_building_codes duration = -1 }
+		}
+		ai_chance = { factor = 5 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_prep_prov
+		FROM = {
+			add_province_modifier = { name = quake_building_codes duration = -1 }
+		}
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_prep_lazy
+		random = { chance = 20 add_trait = slothful }
+		ai_chance = { factor = 1 }
+	}
+}
+
+narrative_event = {
+	id = disaster.35
+	title = EVTNAME_quake_hitsyou
+	desc = EVTDESC_quake_hits_bigone
+	picture = GFX_evt_siege
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_typhoon_riskdeath_sick
+		trigger = {
+			OR = {
+				is_incapable = yes
+				trait = infirm
+				trait = pneumonic
+				trait = depressed
+				trait = slow
+				trait = imbecile
+				trait = inbred
+			}
+		}
+		random_list = {
+			20 = { death = { death_reason = death_accident } }
+			30 = { add_maimed_trait_effect = yes }
+			50 = { add_trait = wounded }
+		}
+		add_character_modifier = { name = survived_the_big_one duration = -1 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_riskdeath_healthy
+		trigger = {
+			NOT = { OR = {
+					is_incapable = yes
+					trait = infirm
+					trait = pneumonic
+					trait = depressed
+					trait = slow
+					trait = imbecile
+					trait = inbred
+					stewardship = 12
+					learning = 12
+					intrigue = 12
+					trait = strong
+					trait = quick
+					trait = genius
+					trait = diligent
+					trait = patient
+				}
+			}
+		}
+		random_list = {
+			2 = { death = { death_reason = death_accident } }
+			3 = { add_maimed_trait_effect = yes }
+			5 = { add_trait = stressed }
+			10 = { add_trait = wounded }
+			80 = { }
+		}
+		add_character_modifier = { name = survived_the_big_one duration = -1 }
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_riskdeath_skilled
+		trigger = {
+			NOT = { OR = {
+					is_incapable = yes
+					trait = infirm
+					trait = pneumonic
+					trait = depressed
+					trait = slow
+					trait = imbecile
+					trait = inbred
+				}	
+			}
+			OR = {
+				stewardship = 12
+				learning = 12
+				intrigue = 12
+				trait = strong
+				trait = quick
+				trait = genius
+				trait = diligent
+				trait = patient
+			}
+		}
+		random_list = {
+			10 = { add_trait = wounded }
+			90 = { }
+		}
+		add_character_modifier = { name = survived_the_big_one duration = -1 }
+	}
+}
+
+narrative_event = {
+	id = disaster.36
+	title = EVTNAME_quake_hitsyou
+	desc = EVTDESC_quake_hits_tremor
+	picture = GFX_evt_siege
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPT_typhoon_riskdeath_sick
+		trigger = {
+			OR = {
+				is_incapable = yes
+				trait = infirm
+				trait = pneumonic
+				trait = depressed
+				trait = slow
+				trait = imbecile
+				trait = inbred
+			}
+		}
+		random_list = {
+			10 = { death = { death_reason = death_accident } }
+			15 = { add_maimed_trait_effect = yes }
+			25 = { add_trait = wounded }
+			50 = { add_trait = stressed }
+		}
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_riskdeath_healthy
+		trigger = {
+			NOT = { OR = {
+					is_incapable = yes
+					trait = infirm
+					trait = pneumonic
+					trait = depressed
+					trait = slow
+					trait = imbecile
+					trait = inbred
+					stewardship = 12
+					learning = 12
+					intrigue = 12
+					trait = strong
+					trait = quick
+					trait = genius
+					trait = diligent
+					trait = patient
+				}
+			}
+		}
+		random_list = {
+			1 = { death = { death_reason = death_accident } }
+			2 = { add_maimed_trait_effect = yes }
+			3 = { add_trait = stressed }
+			4 = { add_trait = wounded }
+			90 = { }
+		}
+	}
+	
+	option = {
+		name = EVTOPT_typhoon_riskdeath_skilled
+		trigger = {
+			NOT = { OR = {
+					is_incapable = yes
+					trait = infirm
+					trait = pneumonic
+					trait = depressed
+					trait = slow
+					trait = imbecile
+					trait = inbred
+				}	
+			}
+			OR = {
+				stewardship = 12
+				learning = 12
+				intrigue = 12
+				trait = strong
+				trait = quick
+				trait = genius
+				trait = diligent
+				trait = patient
+			}
+		}
+		prestige = 10
+	}
+}
+
+province_event = {
+	id = disaster.37
+	desc = EVTDESC_quake_remove_codes
+	picture = GFX_evt_castle_construction
+
+	trigger = {
+		NOT = { has_province_modifier = quake_damage }
+		has_province_modifier = quake_building_codes
+		holder_scope = {
+			NOT = { has_character_modifier = survived_the_big_one }
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 50
+	}
+	
+	option = {
+		name = EVTOPT_quake_remove_codes_greed
+		trigger = {
+			holder_scope = {
+				trait = greedy
+			}
+		}
+		tooltip_info = greedy
+		holder_scope = {
+			wealth = 25
+		}
+		remove_province_modifier = quake_building_codes
+		ai_chance = { factor = 50 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_remove_codes_yes
+		remove_province_modifier = quake_building_codes
+		ai_chance = { factor = 10 }
+	}
+	
+	option = {
+		name = EVTOPT_quake_remove_codes_no
+		ai_chance = { factor = 20 }
+	}
+}
