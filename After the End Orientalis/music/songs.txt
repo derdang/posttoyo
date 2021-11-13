@@ -1,6 +1,6 @@
 song = {
 	name = "crusaderkings2_maintitle.ogg"
-	song_name = "Bamboo Garden Love Song (Bamboo flute) NCM version"
+	song_name = "Dream of the Hexi Corridor"
 	chance = {
 		factor = 1	
 	}
@@ -28,8 +28,8 @@ song = {
 	chance = {
 		factor = 2
 		modifier = {
-			factor = 1
-			NOR = {
+			factor = 0
+			NOT = {
 				culture_group = viet
 			}
 		}
@@ -42,8 +42,8 @@ song = {
 	chance = {
 		factor = 2
 		modifier = {
-			factor = 1
-			NOR = {
+			factor = 0
+			NOT = {
 				culture_group = philippine
 			}
 		}
@@ -102,4 +102,12 @@ song = {
 	chance = {
 		factor = 1	
 	}
-}	
+}
+
+song = {
+	name = "erquan_spring.ogg"
+	song_name = "Erquan Spring Reflecting the Moon"
+	chance = {
+		factor = 1	
+	}
+}		
