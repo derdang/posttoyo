@@ -19387,7 +19387,16 @@ e_guangdong = {
 	color2={ 255 255 20 }
 	
 	capital = 983 # c_guangzhou
-	culture = hakka
+	culture = cantonese
+	cantonese = "Yue"
+	hakka = "Yue"
+	tonkinese = "Nam Viet"
+	annamese = "Nam Viet"
+	cochinchinese = "Nam Viet"
+	thai_central = "Gwangtung"
+	thai_paktai = "Gwangtung"
+	tionghoa = "Gwangtung"
+	singaporean = "Gwangtung"
 	
 	k_dawanqu = {
 		color={ 153 5 95 }
@@ -20088,7 +20097,7 @@ e_guangdong = {
 		}
 	}
 	k_beijiang = {
-		color={ 225 88 145 }
+		color={ 100 5 67 }
 		color2={ 255 255 255 }
 		
 		capital = 1388 # c_qingcheng
@@ -20274,7 +20283,7 @@ e_guangdong = {
 		}
 	}
 	k_dongjiang = {
-		color={ 99 3 67 }
+		color={ 225 88 145 }
 		color2={ 255 255 255 }
 		
 		capital = 1399 # c_yuancheng
@@ -20989,7 +20998,7 @@ e_burma = {
 	color={ 56 37 36 }
 	color2={ 255 255 20 }
 	
-	capital = 950 # c_pyinmana
+	capital = 900 # c_kawthaung
 	culture = myr
 	
 	thai_mueang = "Phama"
@@ -21003,6 +21012,8 @@ e_burma = {
 		
 		capital = 914 # c_bago
 		culture = mon
+		capital = 900 # c_kawthaung
+		culture = thai_central
 		
 		thai_mueang = "Phako"
 		thai_central = "Hongsawaddi"
@@ -21020,7 +21031,7 @@ e_burma = {
 					any_demesne_province = { OR = { province_id = 900 province_id = 901 province_id = 902 } }
 				}
 			}
-			capital = 902 # c_dawei
+			capital = 900 # c_kawthaung
 			
 			thai_mueang = "Tanao Si"
 			thai_central = "Tanao Si"
