@@ -4837,3 +4837,83 @@
 	trait=craven
 	2570.1.1={birth=yes}
 }
+1604023={ #Hachijo
+	name="Kazuya"
+	dynasty=1603362 #Mishima
+	father=1604024
+	culture=togoku
+	religion=shinto
+	martial=7
+	diplomacy=3
+	stewardship=2
+	intrigue=4
+	learning=5
+	trait=tough_soldier
+	trait=sturdy
+	trait=cruel
+	trait=possessed
+	2570.1.1={birth=yes}
+}
+1604024={ #Hachijo
+	name="Heihachi"
+	dynasty=1603362 #Mishima
+	culture=togoku
+	religion=shinto
+	martial=7
+	diplomacy=3
+	stewardship=2
+	intrigue=4
+	learning=5
+	trait=brilliant_strategist
+	trait=genius
+	trait=strong
+	trait=robust
+	trait=just
+	trait=stubborn
+	2540.1.1={birth=yes}
+}
+1604025={ #Hachijo
+	name="Jin"
+	dynasty=1603362 #Mishima
+	father=1604023
+	culture=togoku
+	religion=shinto
+	martial=7
+	diplomacy=3
+	stewardship=2
+	intrigue=4
+	learning=5
+	trait=robust
+	trait=quick
+	2585.1.1={birth=yes}
+}
+1604026={ #Ogasawara
+	name="Hikaru"
+	dynasty=1603363 #Ichijyo
+	culture=togoku
+	religion=concordanist
+	martial=7
+	diplomacy=3
+	stewardship=2
+	intrigue=4
+	learning=5
+	trait=robust
+	trait=quick
+	2585.1.1={birth=yes}
+	2600.1.1={effect = { add_lover = 1604027 }}
+}
+1604027={ #Ogasawara
+	name="Rin"
+	dynasty=1603364 #Minmei
+	culture=togoku
+	religion=concordanist
+	martial=7
+	diplomacy=3
+	stewardship=2
+	intrigue=4
+	learning=5
+	female=yes
+	trait=robust
+	trait=quick
+	2585.1.1={birth=yes}
+}
