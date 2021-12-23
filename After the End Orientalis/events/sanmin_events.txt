@@ -1,0 +1,55 @@
+namespace = taiwan
+
+#Sanmin Branch Trait Decision
+character_event = {
+	id = taiwan.1	
+	desc = EVTDESC_sanmin1
+	picture = GFX_evt_chinese_thinkers
+	religion = sanmin
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_sanmin1
+		hidden_tooltip = {
+			remove_trait = minsheng_sanmin
+			remove_trait = minquan_sanmin
+
+		}
+		add_trait = minzu_sanmin
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = EVTOPTB_sanmin1
+		hidden_tooltip = {
+			remove_trait = minzu_sanmin
+			remove_trait = minsheng_sanmin
+
+		}
+		add_trait = minquan_sanmin
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_sanmin1
+		hidden_tooltip = {
+			remove_trait = minzu_sanmin
+			remove_trait = minquan_sanmin
+
+		}
+		add_trait = minsheng_sanmin
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

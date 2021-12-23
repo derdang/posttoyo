@@ -325,6 +325,11 @@ spriteType = {
 		name = "GFX_shinto_shrine"
 		texturefile = "gfx/event_pictures/shinto_shrine.dds"
 	}
+#Chinese Art
+	spriteType = {
+		name = "GFX_evt_chinese_thinkers"
+		texturefile = "gfx\\event_pictures\\chinese_thinkers.dds"
+	}
 	
 ### Orientalis Traits
 
@@ -390,6 +395,29 @@ spriteType = {
 	spriteType = {
 		name = "GFX_trait_bukka_shinto"
 		texturefile = "gfx/traits/bukka_shinto.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+#Sanmin Traits
+	spriteType = {
+		name = "GFX_trait_minzu_sanmin"
+		texturefile = "gfx/traits/minzu_sanmin.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_minquan_sanmin"
+		texturefile = "gfx/traits/minquan_sanmin.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_minsheng_sanmin"
+		texturefile = "gfx/traits/minsheng_sanmin.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -610,6 +638,10 @@ spriteType = {
 	spriteType = {
 		name = "GFX_change_mahayana_schools"
 		texturefile = "gfx/interface/change_mahayana_schools.tga"
+	}
+	spriteType = {
+		name = "GFX_change_sanmin_branch"
+		texturefile = "gfx/interface/change_sanmin_branch.dds"
 	}
 	spriteType = {
 		name = "GFX_hold_new_years_festival"

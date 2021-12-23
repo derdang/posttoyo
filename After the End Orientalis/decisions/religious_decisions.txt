@@ -787,4 +787,33 @@ decisions = {
 			always = no
 		}
 	}
+	change_sanmin_branch = {
+		ai = no
+		
+		potential = {
+			religion = sanmin
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedsanminbranch }
+		}
+		
+		allow = {
+			religion = sanmin
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = taiwan.1 }				
+			}
+			custom_tooltip = { text = TXT_change_sanmin_branch }
+			set_character_flag = changedsanminbranch
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 }

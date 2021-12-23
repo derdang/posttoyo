@@ -119,7 +119,7 @@ senthang_muslim = {
 		senthang_middle_path
 		senthang_mettaya 
 	}
-	monthly_piety = 0.25
+	monthly_character_piety = 0.25
 	learning = 1
 
 	customizer = no
@@ -161,7 +161,7 @@ senthang_middle_path = { #Seek common virtue and values in all religion. i.e. Ba
 		senthang_mettaya 
 	}
 
-	monthly_piety = 0.1
+	monthly_character_piety = 0.1
 	diplomacy = 1
 	
 	customizer = no
@@ -182,7 +182,7 @@ mahayana_chan = {
 		mahayana_maitreyan
 		mahayana_pureland
 	}
-	monthly_piety = 0.10
+	monthly_character_piety = 0.10
 	diplomacy = 1
 
 	customizer = no
@@ -201,7 +201,7 @@ mahayana_esoteric = {
 		mahayana_maitreyan
 		mahayana_pureland
 	}
-	monthly_piety = 0.50
+	monthly_character_piety = 0.50
 	learning = 2
 
 	customizer = no
@@ -239,7 +239,7 @@ mahayana_lotus = {
 		mahayana_maitreyan
 		mahayana_pureland
 	}
-	monthly_piety = 0.30
+	monthly_character_piety = 0.30
 
 	customizer = no
 	random = no
@@ -257,7 +257,7 @@ mahayana_maitreyan = {
 		mahayana_lotus
 		mahayana_pureland
 	}
-	monthly_piety = 0.25
+	monthly_character_piety = 0.25
 	learning = 1
 
 	customizer = no
@@ -330,6 +330,57 @@ bukka_shinto = {
 
 	potential = { religion = shinto }
 	religious_branch = shinto
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+##Sanmin Schools
+minzu_sanmin = {
+	opposites = {
+		minquan_sanmin
+		minsheng_sanmin
+	}
+
+	diplomacy = 2
+	vassal_opinion = 5
+	general_opinion = 5
+	
+	potential = { religion = sanmin }
+	religious_branch = sanmin
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+minquan_sanmin = {
+	opposites = {
+		minzu_sanmin
+		minsheng_sanmin
+	}
+	
+	stewardship = 2
+	health = 0.5
+	monthly_character_prestige = 0.5
+
+	potential = { religion = sanmin }
+	religious_branch = sanmin
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+minsheng_sanmin = {
+	opposites = {
+		minzu_sanmin
+		minquan_sanmin
+	}
+
+	learning = 2
+	vassal_opinion = 10
+	monthly_character_piety = 0.5
+
+	potential = { religion = sanmin }
+	religious_branch = sanmin
 	random = no
 	religious = yes
 	ruler_designer_cost = 0
