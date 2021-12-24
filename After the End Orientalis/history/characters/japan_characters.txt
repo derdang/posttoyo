@@ -4841,6 +4841,7 @@
 	name="Kazuya"
 	dynasty=1603362 #Mishima
 	father=1604024
+	mother=1604028
 	culture=togoku
 	religion=shinto
 	martial=7
@@ -4853,12 +4854,15 @@
 	trait=cruel
 	trait=possessed
 	2570.1.1={birth=yes}
+	2588.1.1={add_spouse=1604029}
+	2600.1.1={effect = { add_rival = 1604025 }}
 }
 1604024={ #Hachijo
 	name="Heihachi"
 	dynasty=1603362 #Mishima
 	culture=togoku
 	religion=shinto
+	father=1604030
 	martial=7
 	diplomacy=3
 	stewardship=2
@@ -4871,10 +4875,11 @@
 	trait=just
 	trait=stubborn
 	2540.1.1={birth=yes}
+	2569.1.1={add_spouse=1604028}
 }
 1604025={ #Hachijo
 	name="Jin"
-	dynasty=1603362 #Mishima
+	dynasty=1603365 #Kazama
 	father=1604023
 	culture=togoku
 	religion=shinto
@@ -4885,7 +4890,8 @@
 	learning=5
 	trait=robust
 	trait=quick
-	2585.1.1={birth=yes}
+	2589.1.1={birth=yes}
+	2600.1.1={effect = { add_rival = 1604023 }}
 }
 1604026={ #Ogasawara
 	name="Hikaru"
@@ -4916,4 +4922,62 @@
 	trait=robust
 	trait=quick
 	2585.1.1={birth=yes}
+}
+1604028={ #Hachijo
+	name="Kazumi"
+	dynasty=0
+	culture=togoku
+	religion=shinto
+	martial=7
+	diplomacy=3
+	stewardship=2
+	intrigue=4
+	learning=5
+	female=yes
+	trait=brilliant_strategist
+	trait=genius
+	trait=strong
+	trait=robust
+	trait=just
+	trait=stubborn
+	2540.1.1={birth=yes}
+	2580.1.1={death=yes}
+}
+1604029={ #Hachijo
+	name="Jun"
+	dynasty=1603365 #Kazama
+	culture=togoku
+	religion=shinto
+	martial=7
+	diplomacy=3
+	stewardship=2
+	intrigue=4
+	learning=5
+	female=yes
+	trait=brilliant_strategist
+	trait=genius
+	trait=strong
+	trait=robust
+	trait=just
+	trait=stubborn
+	2570.1.1={birth=yes}
+}
+1604030={ #Hachijo
+	name="Jinpachi"
+	dynasty=1603362 #Mishima
+	culture=togoku
+	religion=shinto
+	martial=7
+	diplomacy=3
+	stewardship=2
+	intrigue=4
+	learning=5
+	trait=brilliant_strategist
+	trait=genius
+	trait=strong
+	trait=robust
+	trait=just
+	trait=stubborn
+	2520.1.1={birth=yes}
+	2580.1.1={death=yes}
 }
