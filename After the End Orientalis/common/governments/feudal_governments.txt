@@ -724,6 +724,16 @@ feudal_governments = {
 					religion = aiguo
 					religion = hui
 					religion = sanmin
+					
+					top_liege = {
+						government = sinic_bureaucracy_government
+						OR = {
+							tier = COUNT
+							tier = DUKE
+							tier = KING
+							tier = EMPEROR
+						}
+					}
 				}
 			}
 			is_patrician = no
