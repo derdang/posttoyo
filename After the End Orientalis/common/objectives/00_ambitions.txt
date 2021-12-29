@@ -1945,6 +1945,10 @@ obj_buddhist_stop_drinking = {
 		OR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 		trait = drunkard
 	}
@@ -1977,6 +1981,10 @@ obj_buddhist_stop_drinking = {
 		NOR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 	}
 	abort_effect = {
@@ -1992,7 +2000,13 @@ obj_buddhist_reject_empty_pleasures = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 		trait = hedonist
 	}
 	
@@ -2021,7 +2035,13 @@ obj_buddhist_reject_empty_pleasures = {
 		NOT = { trait = hedonist }
 	}
 	abort = {
-		NOT = { religion_group = buddhist_group }
+		NOR = { 
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 	}
 	abort_effect = {
 		clr_character_flag = guru_helped_ambition
@@ -2036,7 +2056,13 @@ obj_buddhist_abstain_sexual_excess = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 		trait = lustful
 	}
 	
@@ -2068,6 +2094,10 @@ obj_buddhist_abstain_sexual_excess = {
 		NOR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 	}
 	abort_effect = {
@@ -2083,7 +2113,13 @@ obj_buddhist_reject_cruelty = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 		OR = {
 			trait = impaler
 			trait = cruel
@@ -2119,6 +2155,10 @@ obj_buddhist_reject_cruelty = {
 		NOR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 	}
 	abort_effect = {
@@ -2134,7 +2174,13 @@ obj_buddhist_temperance_food = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 		trait = gluttonous
 	}
 	
@@ -2166,6 +2212,10 @@ obj_buddhist_temperance_food = {
 		NOR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 	}
 	abort_effect = {
@@ -2181,7 +2231,13 @@ obj_buddhist_reject_greed = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 		trait = greedy
 	}
 	
@@ -2213,6 +2269,10 @@ obj_buddhist_reject_greed = {
 		NOR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 	}
 	abort_effect = {
@@ -2228,7 +2288,13 @@ obj_buddhist_reject_envy = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 		trait = envious
 	}
 	
@@ -2261,6 +2327,10 @@ obj_buddhist_reject_envy = {
 		NOR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 	}
 	abort_effect = {
@@ -2276,7 +2346,13 @@ obj_buddhist_reject_hate = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 		trait = wroth
 	}
 	
@@ -2308,6 +2384,10 @@ obj_buddhist_reject_hate = {
 		NOR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 	}
 	abort_effect = {
@@ -2323,7 +2403,13 @@ obj_buddhist_reject_pride = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 		trait = proud
 	}
 	
@@ -2355,6 +2441,10 @@ obj_buddhist_reject_pride = {
 		NOR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 	}
 	abort_effect = {
@@ -2370,7 +2460,13 @@ obj_buddhist_defeat_fear = {
 	type = character
 	
 	potential = {
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
+		}
 		OR = {
 			trait = paranoid
 			trait = craven
@@ -2407,6 +2503,10 @@ obj_buddhist_defeat_fear = {
 		NOR = {
 			religion_group = buddhist_group
 			religion_group = muslim
+			AND = {
+				religion = sanmin
+				trait = minsheng_sanmin
+			}
 		}
 	}
 	abort_effect = {
@@ -2422,7 +2522,10 @@ obj_become_paragon_of_enlightenment = {
 	type = character
 	
 	potential = {
-		religion_group = indian_group
+		OR = {
+			religion_group = indian_group
+			religion = sanmin
+		}
 	}
 	
 	allow = {
