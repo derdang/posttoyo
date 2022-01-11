@@ -2201,6 +2201,45 @@ buddhist_group = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
+	dhamsoc = {
+		graphical_culture = buddhistgfx
+
+		icon = 16
+		heresy_icon = 17
+		
+		color = { 200 32 37 }
+		parent = dharmayuttika
+		
+		scripture_name = TIPITAKA
+		priest_title = B_BHIKKHU
+		
+		high_god_name = GOD_DHAMMA
+		
+		god_names = {
+			 GOD_THE_BUDDHA GOD_SANGHA GOD_DHAMMA GOD_THE_ARAHANTS GOD_PACCEKABUDDHA GOD_SAKKAMUNI
+		}
+		
+		evil_god_names = {
+			MARA
+		}
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = christian
+		intermarry = eastern
+		intermarry = ua_dab
+		
+		feminist = yes
+		female_temple_holders = no
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
 	parimatira = {
 		graphical_culture = buddhistgfx
 
