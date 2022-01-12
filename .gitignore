@@ -28,15 +28,13 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-#Ignore main AtE mod and other mod files
-/After the End Fan Fork
-/After the End Fan Fork - Chinese Faces DLC
-/After the End Fan Fork - East African Faces DLC
-/After the End Fan Fork - English and German Faces DLC
-/After the End Fan Fork - Holy Fury DLC
-/After the End Fan Fork - Mongol Faces DLC
-/After the End Fan Fork - Sunset Invasion DLC
-/After the End Fan Fork - West African Faces DLC
-*.mod
-*.zip
-!After the End Orientalis.mod
+#Ignore everything
+*
+
+#But not these files...
+!.gitignore
+!README.md
+
+#And AtE Orientalis as well
+!*/After the End Orientalis
+!*.After the End Orientalis.mod
