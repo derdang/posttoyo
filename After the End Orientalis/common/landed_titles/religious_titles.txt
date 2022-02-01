@@ -94,3 +94,105 @@ d_ruist_yansheng = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+k_conferentia = {
+	color = { 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 202 #Manila
+	
+	title_prefix = "ARCHPRIMATE_PREFIX"	
+	title = "ARCHPRIMATE"
+	foa = "ARCHPRIMATE_FOA"
+	
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Controls a religion
+	controls_religion = catholic
+	
+	religion = catholic
+	
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_dili_primate = {
+	color = { 241 255 86 }
+	color2={ 220 220 0 }
+	
+	capital = 570 #Dili
+	
+	title_prefix = "PRIMATE_PREFIX"
+	title = "PRIMATE"
+	foa = "PRIMATE_FOA"
+	
+	location_ruler_title = yes
+	
+	culture = east_timor
+	religion = catholic
+	pentarchy = catholic
+	
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_hue_primate = {
+	color = { 51 211 114 }
+	color2={ 220 220 0 }
+	
+	capital = 161 #Hue
+	
+	title_prefix = "PRIMATE_PREFIX"
+	title = "PRIMATE"
+	foa = "PRIMATE_FOA"
+	
+	location_ruler_title = yes
+	
+	culture = annamese
+	religion = catholic
+	pentarchy = catholic
+	
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_macau_primate = {
+	color = { 177 0 92 }
+	color2={ 220 220 0 }
+	
+	capital = 989 #Macau
+	
+	title_prefix = "PRIMATE_PREFIX"
+	title = "PRIMATE"
+	foa = "PRIMATE_FOA"
+	
+	location_ruler_title = yes
+	
+	culture = macanese
+	religion = catholic
+	pentarchy = catholic
+	
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_nagasaki_primate = {
+	color = { 213 20 75 }
+	color2={ 220 220 0 }
+	
+	capital = 121
+	
+	title_prefix = "PRIMATE_PREFIX"
+	title = "PRIMATE"
+	foa = "PRIMATE_FOA"
+	
+	location_ruler_title = yes
+	
+	culture = kyushuan
+	religion = catholic
+	pentarchy = catholic
+	
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
