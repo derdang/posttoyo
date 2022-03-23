@@ -5831,6 +5831,7 @@ religious = {
 			NOR = {
 				religion_group = buddhist_group
 				religion = cao_dai
+				religion = atomicist
 				has_law = religion_tolerance_0
 			}
 			OR = {
@@ -5868,6 +5869,7 @@ religious = {
 			NOT = { religion_group = pagan_group }
 			NOT = { pacifist = yes }
 			NOT = { religion = taoist }
+			NOT = { religion = atomicist }
 			NAND = {
 				OR = {
 					has_landed_title = k_teutonic_state
@@ -6031,6 +6033,7 @@ religious = {
 		ROOT = {
 			NOT = { religion_group = pagan_group }
 			NOT = { pacifist = yes }
+			NOT = { religion = atomicist }
 			NOT = { same_realm = FROM }
 			OR = {
 				NOT = { religion_group = FROM }
@@ -10384,7 +10387,10 @@ pagan_subjugation = {
 				}
 				AND = {
 					OR = {
-						religion_group = oldworld
+						AND = { 
+							religion_group = oldworld
+							NOT = {religion = atomicist}
+						}
 						religion = chinomi
 					}
 					is_tribal = yes

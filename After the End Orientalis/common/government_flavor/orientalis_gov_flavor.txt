@@ -72,3 +72,11 @@ government_flavor = {
 		religion = hui
 	}
 }
+government_flavor = {
+	name = gov_herder
+	graphics = GFX_reindeer_herders
+	priority = 1
+	trigger = {
+		government = nomadic_tribal_government
+	}
+}

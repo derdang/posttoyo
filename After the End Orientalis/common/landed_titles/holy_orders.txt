@@ -19,3 +19,24 @@ d_knights_of_lavang = {
 	
 	mercenary_type = d_knights_of_lavang_composition
 }
+d_chollima_riders = {
+	color={ 255 0 0 }
+	color2={ 255 255 255 }
+		
+	capital = 748 # Pyongyang
+
+	culture = chosunin
+	religion = atomicist
+		
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_chollima_riders_composition
+}

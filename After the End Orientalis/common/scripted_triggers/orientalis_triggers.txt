@@ -33,3 +33,26 @@ is_sinic = {
 		culture_group = korean
 	}
 }
+is_historical_nomad_culture = { #Cultures with historical pastoralist cultures (i.e. Tauregs and Siberian Tribes)
+	OR = {
+		culture_group = siberian
+		culture_group = sibero_turkic
+	}
+}
+
+is_historical_hordes_culture = { #Cultures with histories of nomadic steppe history (i.e. Mongols and Turks)
+	OR = {
+		culture_group = tungusic
+		culture_group = mongol
+		#culture = neo_jin
+	}
+}
+is_nomadic_tribal_culture = {
+	OR = {
+		culture_group = siberian
+		culture_group = sibero_turkic
+		culture_group = tungusic
+		culture_group = mongol
+		#culture = neo_jin
+	}
+}
