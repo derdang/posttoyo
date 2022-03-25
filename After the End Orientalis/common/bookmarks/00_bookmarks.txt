@@ -15,6 +15,55 @@ bm_the_rising_sun = { #Japan and Korea
 	era = yes
 	picture = GFX_pick_era_image_2
 	custom_start = yes
+	
+	selectable_character = {
+		id = 1603016 #King Satoru Fukuzawa of Kanto
+		age = 25
+		name = ERA_CHAR_NAME_3
+		title = k_kanto
+		title_name = k_kanto
+		
+		character = {
+			dna = imrqauqjrlb
+			properties ="al000c0000000000000000000000000000000"
+			religion="shinto"
+			culture="togoku"
+			government = feudal_government
+			dynasty=1603015
+		}
+	}
+	selectable_character = {
+		id = 1604012 #King Hiroto Kusunoki of Kansai
+		age = 35
+		name = ERA_CHAR_NAME_4
+		title = k_kansai
+		title_name = k_kansai
+		
+		character = {
+			dna="enjbqcsuaqa"
+			properties="aj000a0000000000000000000000000000000"
+			religion="shinto"
+			culture="saigoku"
+			government = feudal_government
+			dynasty=1604011
+		}
+	}
+	selectable_character = {
+		id = 1603007 #Duke Sunao Tsuji “the One-Eyed Demon” of Oshu
+		age = 35
+		name = ERA_CHAR_NAME_5
+		title = d_oshu
+		title_name = d_oshu
+		
+		character = {
+			dna="ywdyidsxhbq"
+			properties="ti0c0d0000000a00000000000000000000000"
+			religion="seirei"
+			culture="togoku"
+			government = feudal_government
+			dynasty=1603006
+		}
+	}
 }
 bm_the_frozen_north = { #Far East Russia
 	name = "BM_THE_FROZEN_NORTH"
@@ -53,7 +102,7 @@ bm_the_land_of_stupas = { #Indochina Region: Burma, Thailand, Vietnam, Laos, and
 	selectable_character = {
 		id = 2310001 #Phra Hao of Siam
 		age = 35
-		name = ERA_CHAR_NAME_1 #TODO
+		name = ERA_CHAR_NAME_2
 		title = e_siam
 		title_name = e_siam
 		
