@@ -41,7 +41,7 @@ bm_the_rising_sun = { #Japan and Korea
 		
 		character = {
 			dna="enjbqcsuaqa"
-			properties="aj000a0000000000000000000000000000000"
+			properties="aj000a00000000000000000000000000000000"
 			religion="shinto"
 			culture="saigoku"
 			government = feudal_government
@@ -57,11 +57,43 @@ bm_the_rising_sun = { #Japan and Korea
 		
 		character = {
 			dna="ywdyidsxhbq"
-			properties="ti0c0d0000000a00000000000000000000000"
+			properties="ti0c0d0000000a000000000000000000000000"
 			religion="seirei"
 			culture="togoku"
 			government = feudal_government
 			dynasty=1603006
+		}
+	}
+	selectable_character = {
+		id = 1598010 #King Kim Song-Chol of Pyongyang
+		age = 6
+		name = ERA_CHAR_NAME_6
+		title = k_pyongyang
+		title_name = k_pyongyang
+		
+		character = {
+			dna="mppytasaoaf"
+			properties="al000c00000000000000000000000000000000"
+			religion="atomicist"
+			culture="chosunin"
+			government = feudal_government
+			dynasty=1598000
+		}
+	}
+	selectable_character = {
+		id = 1597100 #King Choi Eun-Sung of Pusan
+		age = 35
+		name = ERA_CHAR_NAME_7
+		title = k_pusan
+		title_name = k_pusan
+		
+		character = {
+			dna="jzumwbfuugh"
+			properties="aci00c00000000000000000000000000000000"
+			religion="unificationist"
+			culture="hangugin"
+			government = feudal_government
+			dynasty=1597004
 		}
 	}
 }
