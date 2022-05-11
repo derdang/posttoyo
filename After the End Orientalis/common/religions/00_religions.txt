@@ -462,47 +462,10 @@ muslim = {
 		Ayesha Abrar Afifah Anabia Hijrah Hind Hareem Iqra Judi Karida Khadijah Khalidah Khawlah Madeeha Maryam Mariyah Maymunah Mariam Mina Nuwwarrah Qismah Ruqayyah Saba Safaa Safiyyah Salma Shahrazad Sirin Sumaiyah Thuwaibah Umamah Zainab Zubaidah Zainab 
 	}
 	
-	sunni = {
+	salafi = { #reflavored ATEFF Traditionalist
 		graphical_culture = muslimgfx
 
-		icon = 3
-		heresy_icon = 4
-		
-		color = { 0 0.6 0 }
-		
-		crusade_name = JIHAD
-		scripture_name = THE_KORAN
-		priest_title = IMAM_PRIEST
-		
-		high_god_name = GOD_ALLAH
-		
-		god_names = {
-			GOD_ALLAH GOD_THE_GREATEST
-		}
-		
-		evil_god_names = {
-			IBLIS SHAYTAN
-		}
-		
-		can_call_crusade = yes
-		priests_can_marry = yes
-		psc_marriage = no # Disallow uncle-niece and aunt-nephew marriages
-		max_wives = 4
-		matrilineal_marriages = no
-		
-		landed_kin_prestige_bonus = yes
-		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
-		uses_jizya_tax = yes
-
-		intermarry = shiite
-	}
-	
-	salafi = { #placeholder
-		graphical_culture = muslimgfx
-
-		icon = 3
-		heresy_icon = 4
+		icon = 5
 		
 		color = { 0 0.3 0 }
 		parent = sunni
@@ -530,31 +493,31 @@ muslim = {
 		uses_decadence = yes
 		uses_jizya_tax = yes
 
-		intermarry = shiite
 	}
 	
-	shiite = {
+	wahabbi = { #angry 
 		graphical_culture = muslimgfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 6
 		
-		color = { 0 0.8 0 }
+		color = { 0 0 0 }
+		parent = sunni
 		
 		scripture_name = THE_KORAN
-		priest_title = MULLAH
+		priest_title = IMAM_PRIEST
 		
 		high_god_name = GOD_ALLAH
 		
 		god_names = {
 			GOD_ALLAH GOD_THE_GREATEST
 		}
+		
 		evil_god_names = {
 			IBLIS SHAYTAN
 		}
 		
 		priests_can_marry = yes
-		psc_marriage = no
+		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
 		matrilineal_marriages = no
 		
@@ -562,46 +525,13 @@ muslim = {
 		attacking_same_religion_piety_loss = yes
 		uses_decadence = yes
 		uses_jizya_tax = yes
-		
-		intermarry = sunni
-	}
-	
-	nizari = { #placeholder
-		graphical_culture = muslimgfx
 
-		icon = 5
-		heresy_icon = 6
-		
-		color = { 0 0.7 0 }
-		parent = shiite
-		
-		scripture_name = THE_KORAN
-		priest_title = MULLAH
-		
-		high_god_name = GOD_ALLAH
-		
-		god_names = {
-			GOD_ALLAH GOD_THE_GREATEST
-		}
-		evil_god_names = {
-			IBLIS SHAYTAN
-		}
-		
-		priests_can_marry = yes
-		psc_marriage = no
-		max_wives = 4
-		matrilineal_marriages = no
-		
-		attacking_same_religion_piety_loss = yes
-		
-		intermarry = sunni
 	}
 	
-	hui = { #Islam with Chinese Characteristics
+	hui = { #Islam with Chinese Characteristics (Does not have a heresy)
 		graphical_culture = muslimgfx
 
 		icon = 7
-		heresy_icon = 8
 		
 		color = { 192 192 192 }
 		
@@ -626,6 +556,39 @@ muslim = {
 		attacking_same_religion_piety_loss = yes
 		
 		intermarry = sunni
+	}
+	
+	nusantara = { #Islam with Nunsantara Characteristics
+		graphical_culture = muslimgfx
+
+		icon = 9
+		
+		color = { 237 28 36 }
+		
+		scripture_name = THE_KORAN
+		priest_title = KYAI
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
+		
+		priests_can_marry = yes
+		psc_marriage = no
+		max_wives = 4
+		matrilineal_marriages = no
+		female_temple_holders = yes
+		
+		attacking_same_religion_piety_loss = yes
+		
+		intermarry = sunni
+		intermarry = hui
+		intermarry = buddhist_group
+		intermarry = indian_group
 	}
 }
 
@@ -1755,7 +1718,7 @@ indian_group = {
 		icon = 51
 		heresy_icon = 51
 		
-		color = { 219 116 35 }
+		color = { 173 216 230 }
 		
 		high_god_name = GOD_SHWW
 		
@@ -2926,6 +2889,48 @@ oldworld = {
 		heresy_icon = 13
 		
 		color = { 0.44 0.39 0.33 }
+		
+		interface_skin = { nousthreskeia_interface gaian_interface indian_interface muslim_interface } #placeholder
+		
+		high_god_name = GOD_THE_NOOSPHERE
+		
+		god_names = {
+			GOD_MONOLITH GOD_THE_WISH_GRANTER GOD_THE_GOLDEN_SPHERE
+		}
+		
+		evil_god_names = {
+			DENEB THE_DARK_ONES
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		can_excommunicate = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		
+		max_consorts = 3 #can take concubines
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 14
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = COSMOGENESIS
+		priest_title = PREACHER
+		piety_name = CONSCIOUSNESS
+		
+		intermarry = gaian
+		intermarry = cetic
+		intermarry = shinto
+	}
+	pancasila = {
+		graphical_culture = buddhistgfx
+
+		icon = 10
+		heresy_icon = 10
+		
+		color = { 130 219 90 }
 		
 		interface_skin = { nousthreskeia_interface gaian_interface indian_interface muslim_interface } #placeholder
 		
