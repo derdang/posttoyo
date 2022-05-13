@@ -385,6 +385,77 @@ minsheng_sanmin = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+##Nusantara 
+kejawen = {
+	opposites = {
+		sunda_wiwitan
+		nusantara_traditionalist
+		tomanurung
+	}
+
+	general_opinion = 5
+	diplomacy = 1
+	tolerates_buddhist_group = yes
+	tolerates_indian_group = yes
+	
+	potential = { religion = nusantara }
+	religious_branch = nusantara
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+sunda_wiwitan = {
+	opposites = {
+		kejawen
+		nusantara_traditionalist
+		tomanurung
+	}
+
+	stewardship = 2
+	monthly_character_prestige = 0.15
+
+	potential = { religion = nusantara }
+	religious_branch = nusantara
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+nusantara_traditionalist = {
+	opposites = {
+		kejawen
+		sunda_wiwitan
+		tomanurung
+	}
+
+	learning = 2
+	monthly_character_piety = 0.5
+
+	potential = { religion = nusantara }
+	religious_branch = nusantara
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+tomanurung = {
+	opposites = {
+		kejawen
+		sunda_wiwitan
+		nusantara_traditionalist
+	}
+
+	monthly_character_prestige = 0.5
+	martial = 2
+	tolerates_pagan_group = yes
+
+	potential = { religion = nusantara }
+	religious_branch = nusantara
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
 ##General Traits
 vegetarian = {
 	opposites = {
