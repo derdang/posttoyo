@@ -10205,6 +10205,8 @@ e_siam = {
 		capital = 778 # c_phra_nakhon
 		culture = thai_central
 		
+		
+		
 		d_palimonthon = {
 			color={ 238 1 61 }
 			color2={ 255 255 255 }
@@ -10215,6 +10217,7 @@ e_siam = {
 			muong = "Bang Coc"
 			hoa = "Bang Coc"
 			
+			
 			capital = 778 # c_phra_nakhon
 			
 			c_phra_nakhon = { # 778
@@ -10223,20 +10226,25 @@ e_siam = {
 				
 				holy_site = dharmayuttika
 				
+				myr = "Maha Nagara"
+				
 				b_phra_nakhon = {
 					tonkinese = "Bang Coc"
 					annamese = "Bang Coc"
 					cochinchinese = "Bang Coc"
 					muong = "Bang Coc"
 					hoa = "Bang Coc"
+					myr = "Maha Nagara"
 				}
 				b_dusit = {
 				}
 				b_bangkok_yai = {
 				}
 				b_thonburi = {
+				myr = "Danapuri"
 				}
 				b_pathum_wan = {
+				myr = "Padomawana"
 				}
 				b_pak_nam_sprk = {
 				}
@@ -10247,7 +10255,10 @@ e_siam = {
 				color={ 212 194 85 }
 				color2={ 255 255 255 }
 				
+				myr = "Nagara Patahma"
+				
 				b_nakhon_pathom = {
+				myr = "Nagara Patahma"
 				}
 				b_kamphaeng_saen = {
 				}
@@ -10266,9 +10277,13 @@ e_siam = {
 				color={ 188 176 104 }
 				color2={ 255 255 255 }
 				
+				myr = "Padumtani"
+				
 				b_pathum_thani = {
+				myr = "Padumtani"
 				}
 				b_thanyaburi = {
+				myr = "Thanyapuri"
 				}
 				b_lam_luk_ka = {
 				}
@@ -10285,9 +10300,13 @@ e_siam = {
 				color={ 207 206 100 }
 				color2={ 255 255 255 }
 				
+				myr = "Thamudda Pakara"
+				
 				b_samut_sakhon = {
+				myr = "Thamudda Pakara"
 				}
 				b_samut_songkhram = {
+				myr = "Thamudda Theingama"
 				}
 				b_amphawa = {
 				}
@@ -10307,13 +10326,19 @@ e_siam = {
 			
 			capital = 784 # c_ayutthaya
 			
+			myr = "Ayodya"
+			
 			c_ayutthaya = { # 784
 				color={ 242 203 41 }
 				color2={ 255 255 255 }
 				
+				myr = "Ayodya"
+				
 				b_nakhon_luang = {
+				myr = "Nagara Raza"
 				}
 				b_phra_nakhon_si_ayutthaya = {
+				myr = "Nagara Si Ayodya"
 				}
 				b_bang_pa_in = {
 				}
@@ -10330,7 +10355,10 @@ e_siam = {
 				color={ 233 210 115 }
 				color2={ 255 255 255 }
 				
+				myr = "Thihapuri"
+				
 				b_mueang_sing_buri = {
+				myr = "Thihapuri"
 				}
 				b_bang_rachan = {
 				}
@@ -10348,8 +10376,10 @@ e_siam = {
 			c_suphanburi = { # 785
 				color={ 179 167 93 }
 				color2={ 255 255 255 }
+				myr = "Thuwannapuri"
 				
 				b_suphanburi = {
+				myr = "Thuwannapuri"
 				}
 				b_sam_chuk = {
 				}
@@ -10371,11 +10401,15 @@ e_siam = {
 			
 			capital = 790 # c_lopburi
 			
+			myr = "Lawapuri"
+			
 			c_lopburi = { # 790
 				color={ 156 129 17 }
 				color2={ 255 255 255 }
+				myr = "Lawapuri"
 				
 				b_lopburi = {
+				myr = "Lawapuri"
 				}
 				b_phatthana_nikhom = {
 				}
@@ -10394,7 +10428,10 @@ e_siam = {
 				color={ 75 129 106 }
 				color2={ 255 255 255 }
 				
+				myr = "Nagara Nayaka"
+				
 				b_nakhon_nayok = {
+				myr = "Nagara Nayaka"
 				}
 				b_pak_phli = {
 				}
@@ -10413,7 +10450,10 @@ e_siam = {
 				color={ 215 177 14 }
 				color2={ 255 255 255 }
 				
+				myr = "Tharapuri"
+				
 				b_saraburi = {
+				myr = "Tharapuri"
 				}
 				b_muak_lek = {
 				}
@@ -10435,11 +10475,16 @@ e_siam = {
 			
 			capital = 780 # c_ratchaburi
 			
+			myr = "Ratchburi"
+			
 			c_ratchaburi = { # 780
 				color={ 191 190 108 }
 				color2={ 255 255 255 }
 				
+				myr = "Ratchburi"
+				
 				b_ratchaburi = {
+				myr = "Ratchburi"
 				}
 				b_damnoen_saduak = {
 				}
@@ -10477,7 +10522,10 @@ e_siam = {
 				color={ 223 222 147 }
 				color2={ 255 255 255 }
 				
+				myr = "Wazirapuri"
+				
 				b_phetchaburi = {
+				myr = "Wazirapuri"
 				}
 				b_cha_am = {
 				}
@@ -10518,11 +10566,16 @@ e_siam = {
 			
 			capital = 788 # c_uthai_thani
 			
+			myr = "Udaya Htani"
+			
 			c_uthai_thani = { # 788
 				color={ 151 135 38 }
 				color2={ 255 255 255 }
 				
+				myr = "Udaya Htani"
+				
 				b_uthai_thani = {
+				myr = "Udaya Htani"
 				}
 				b_thap_than = {
 				}
@@ -10541,7 +10594,10 @@ e_siam = {
 				color={ 175 155 33 }
 				color2={ 255 255 255 }
 				
+				myr = "Zeyanada"
+				
 				b_chai_nat = {
+				myr = "Zeyanada"
 				}
 				b_manorom = {
 				}
@@ -10571,11 +10627,16 @@ e_siam = {
 			
 			capital = 794 # c_prachinburi
 			
+			myr = "Pazinpuri"
+			
 			c_prachinburi = { # 794
 				color={ 88 188 146 }
 				color2={ 255 255 255 }
 				
+				myr = "Pazinpuri"
+				
 				b_prachinburi = {
+				myr = "Pazinpuri"
 				}
 				b_kabin_buri = {
 				}
@@ -10635,11 +10696,16 @@ e_siam = {
 			
 			capital = 800 # c_chanthaburi
 			
+			myr = "Sandapuri"
+			
 			c_chanthaburi = { # 800
 				color={ 104 223 173 }
 				color2={ 255 255 255 }
 				
+				myr = "Sandapuri"
+				
 				b_chanthaburi = {
+				myr = "Sandapuri"
 				}
 				b_khlung = {
 				}
@@ -10680,6 +10746,8 @@ e_siam = {
 			
 			capital = 797 # c_pattaya
 			
+			myr = "Zalapuri"
+			
 			c_pattaya = { # 797
 				color={ 130 226 186 }
 				color2={ 255 255 255 }
@@ -10703,7 +10771,10 @@ e_siam = {
 				color={ 108 210 167 }
 				color2={ 255 255 255 }
 				
+				myr = "Zalapuri"
+				
 				b_chonburi = {
+				myr = "Zalapuri"
 				}
 				b_si_racha = {
 				}
@@ -10760,11 +10831,14 @@ e_siam = {
 			
 			capital = 816 # c_mueang_korat
 			
+			myr = "Nagara Razathima"
+			
 			c_mueang_korat = { # 816
 				color={ 212 153 132 }
 				color2={ 255 255 255 }
 				
 				b_nakhon_ratchasima = {
+				myr = "Nagara Razathima"
 				}
 				b_khon_buri = {
 				}
@@ -10783,7 +10857,10 @@ e_siam = {
 				color={ 185 129 110 }
 				color2={ 255 255 255 }
 				
+				myr = "Puriramma"
+				
 				b_buriram = {
+				myr = "Puriramma"
 				}
 				b_khu_mueang = {
 				}
@@ -10802,7 +10879,10 @@ e_siam = {
 				color={ 159 103 84 }
 				color2={ 255 255 255 }
 				
+				myr = "Thureinda"
+				
 				b_surin = {
+				myr = "Thureinda"
 				}
 				b_chumphon_buri = {
 				}
@@ -10847,7 +10927,10 @@ e_siam = {
 				color={ 188 118 93 }
 				color2={ 255 255 255 }
 				
+				myr = "Zeyabumi"
+				
 				b_chaiyaphum = {
+				myr = "Zeyabumi"
 				}
 				b_ban_khwao = {
 				}
@@ -10866,7 +10949,10 @@ e_siam = {
 				color={ 172 100 76 }
 				color2={ 255 255 255 }
 				
+				myr = "Kaletheindu"
+				
 				b_kalasin = {
+				myr = "Kaletheindu"
 				}
 				b_na_mon = {
 				}
@@ -10885,7 +10971,10 @@ e_siam = {
 				color={ 174 108 86 }
 				color2={ 255 255 255 }
 				
+				myr = "Maha Tharagama"
+				
 				b_maha_sarakham = {
+				myr = "Maha Tharagama"
 				}
 				b_kae_dam = {
 				}
@@ -10926,11 +11015,16 @@ e_siam = {
 			
 			capital = 819 # c_ubon_ratchathani
 			
+			myr = "Oppala"
+			
 			c_ubon_ratchathani = { # 819
 				color={ 159 101 98 }
 				color2={ 255 255 255 }
 				
+				myr = "Oppala Razathani"
+				
 				b_ubon_ratchathani = {
+				myr = "Oppala Razathani"
 				}
 				b_si_mueang_mai = {
 				}
@@ -10949,7 +11043,10 @@ e_siam = {
 				color={ 120 83 71 }
 				color2={ 255 255 255 }
 				
+				myr = "Thirithaketha"
+				
 				b_sisaket = {
+				myr = "Thirithaketha"
 				}
 				b_kanthararom = {
 				}
@@ -10968,7 +11065,10 @@ e_siam = {
 				color={ 173 98 72 }
 				color2={ 255 255 255 }
 				
+				myr = "Yathawdara"
+				
 				b_yasothon = {
+				myr = "Yathawdara"
 				}
 				b_amnat_charoen = {
 				}
@@ -10990,11 +11090,16 @@ e_siam = {
 			
 			capital = 827 # c_udon_thani
 			
+			myr = "Oddara"
+			
 			c_udon_thani = { # 827
 				color={ 208 126 97 }
 				color2={ 255 255 255 }
 				
+				myr = "Oddara Htani"
+				
 				b_udon_thani = {
+				myr = "Oddara Htani"
 				}
 				b_nong_han = {
 				}
@@ -11070,7 +11175,10 @@ e_siam = {
 				color={ 202 143 90 }
 				color2={ 255 255 255 }
 				
+				myr = "Thakala Nagara"
+				
 				b_sakon_nakhon = {
+				myr = "Thakala Nagara"
 				}
 				b_kusuman = {
 				}
@@ -11121,9 +11229,11 @@ e_siam = {
 				holy_site = dharmayuttika
 				holy_site = parimatira
 				laotian = "Xiangmai"
+				myr = "Zinme"
 				
 				b_chiang_mai = {
 					laotian = "Xiangmai"
+					myr = "Zinme"
 				}
 				b_chom_thong = {
 				}
@@ -11409,11 +11519,15 @@ e_siam = {
 			
 			capital = 813 # c_nakhon_sri_thammarat
 			
+			myr = "Nagara Sihtamara"
+			
 			c_nakhon_sri_thammarat = { # 813
 				color={ 134 203 211 }
 				color2={ 255 255 255 }
+				myr = "Nakhun Sihtamara"
 				
 				b_nakhon_sri_thammarat = {
+				myr = "Nakhun Sihtamara"
 				}
 				b_thung_song = {
 				}
@@ -11676,17 +11790,24 @@ e_siam = {
 			}
 		}
 		
+		myr = "Thukhawdaya"
+		
 		d_sukhothai = {
 			color={ 141 98 212 }
 			color2={ 255 255 255 }
 			
 			capital = 832 # c_sukhothai
 			
+			myr = "Sukhodaya"
+			
 			c_sukhothai = { # 832
 				color={ 151 88 217 }
 				color2={ 255 255 255 }
 				
+				myr = "Thaukkate"
+				
 				b_sukhothai = {
+				myr = "Sukhodaya"
 				}
 				b_sawankhalok = {
 				}
@@ -11724,7 +11845,10 @@ e_siam = {
 				color={ 114 103 167 }
 				color2={ 255 255 255 }
 				
+				myr = "Nagara Thegga"
+				
 				b_nakhon_sawan = {
+				myr = "Nagara Thegga"
 				}
 				b_krok_phra = {
 				}
@@ -11742,8 +11866,10 @@ e_siam = {
 			c_phetchabun = { # 836
 				color={ 97 76 197 }
 				color2={ 255 255 255 }
+				myr = "Wazirapura"
 				
 				b_phetchabun = {
+				myr = "Wazirapura"
 				}
 				b_chon_daen = {
 				}
@@ -11761,8 +11887,10 @@ e_siam = {
 			c_phichit = { # 837
 				color={ 130 117 192 }
 				color2={ 255 255 255 }
+				myr = "Wizitta"
 				
 				b_phichit = {
+				myr = "Wizitta"
 				}
 				b_wang_sai_phun = {
 				}
@@ -11780,8 +11908,10 @@ e_siam = {
 			c_phitsanulok = { # 835
 				color={ 150 142 195 }
 				color2={ 255 255 255 }
+				myr = "Wathulawka"
 				
 				b_phitsanulok = {
+				myr = "Wathulawka"
 				}
 				b_nakhon_thai = {
 				}
