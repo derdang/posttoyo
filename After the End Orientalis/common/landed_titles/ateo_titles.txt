@@ -22351,6 +22351,11 @@ e_burma = {
 		capital = 923 # c_taunggyi
 		culture = myr
 		
+		thai_central = "Tong Chi"
+		thai_paktai = "Tong Chi"
+		thai_mueang = "Tong Chi"
+		thai_isan = "Tong Chi"
+		
 		d_taungyi = {
 			color={ 118 239 215 }
 			color2={ 255 255 255 }
@@ -22363,17 +22368,35 @@ e_burma = {
 			}
 			capital = 923 # c_taunggyi
 			
+		thai_central = "Tong Chi"
+		thai_paktai = "Tong Chi"
+		thai_mueang = "Tong Chi"
+		thai_isan = "Tong Chi"
+			
 			c_taunggyi = { # 923
 				color={ 128 229 220 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Tong Chi"
+			thai_paktai = "Tong Chi"
+			thai_mueang = "Tong Chi"
+			thai_isan = "Tong Chi"
+				
 				b_taunggyi = {
+				thai_central = "Tong Chi"
+			thai_paktai = "Tong Chi"
+			thai_mueang = "Tong Chi"
+			thai_isan = "Tong Chi"
 				}
 				b_yawnghwe = {
 				}
 				b_shwenyawng = {
 				}
 				b_mongsawk = {
+			thai_central = "Mueang Chok"
+			thai_paktai = "Mueang Chok"
+			thai_mueang = "Mueang Chok"
+			thai_isan = "Mueang Chok"
 				}
 				b_haiwo = {
 				}
@@ -22386,7 +22409,16 @@ e_burma = {
 				color={ 2 107 104 }
 				color2={ 255 255 255 }
 				
+				thai_central = "Si Saeng"
+			thai_paktai = "Si Saeng"
+			thai_mueang = "Si Saeng"
+			thai_isan = "Si Saeng"
+				
 				b_hsi_hseng = {
+				thai_central = "Si Saeng"
+			thai_paktai = "Si Saeng"
+			thai_mueang = "Si Saeng"
+			thai_isan = "Si Saeng"
 				}
 				b_hopong = {
 				}
@@ -22405,7 +22437,16 @@ e_burma = {
 				color={ 0 251 255 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Kat Lo"
+			thai_paktai = "Kat Lo"
+			thai_mueang = "Kat Lo"
+			thai_isan = "Kat Lo"
+				
 				b_kalaw = {
+				thai_central = "Kat Lo"
+			thai_paktai = "Kat Lo"
+			thai_mueang = "Kat Lo"
+			thai_isan = "Kat Lo"
 				}
 				b_le_gya = {
 				}
@@ -22424,7 +22465,16 @@ e_burma = {
 				color={ 5 108 106 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Lokchok"
+			thai_paktai = "Lokchok"
+			thai_mueang = "Lokchok"
+			thai_isan = "Lokchok"
+				
 				b_lawksauk = {
+			thai_central = "Lokchok"
+			thai_paktai = "Lokchok"
+			thai_mueang = "Lokchok"
+			thai_isan = "Lokchok"
 				}
 				b_pangtam = {
 				}
@@ -22452,11 +22502,25 @@ e_burma = {
 			}
 			capital = 931 # c_lashio
 			
+			thai_central = "Saenwi"
+			thai_paktai = "Saenwi"
+			thai_mueang = "Saenwi"
+			thai_isan = "Saenwi"
+			
 			c_lashio = { # 931
 				color={ 7 74 61 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Laseow"
+			thai_paktai = "Laseow"
+			thai_mueang = "Laseow"
+			thai_isan = "Laseow"
+				
 				b_hsenwi = {
+			thai_central = "Saenwi"
+			thai_paktai = "Saenwi"
+			thai_mueang = "Saenwi"
+			thai_isan = "Saenwi"
 				}
 				b_lashio = {
 				}
@@ -22474,6 +22538,7 @@ e_burma = {
 			c_hopang = { # 932
 				color={ 5 124 105 }
 				color2={ 255 255 255 }
+				
 				
 				b_hopang = {
 				}
@@ -22494,7 +22559,16 @@ e_burma = {
 				color={ 4 250 255 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Chaome"
+			thai_paktai = "Chaome"
+			thai_mueang = "Chaome"
+			thai_isan = "Chaome"
+				
 				b_kyaukme = {
+			thai_central = "Chaome"
+			thai_paktai = "Chaome"
+			thai_mueang = "Chaome"
+			thai_isan = "Chaome"
 				}
 				b_hsipaw = {
 				}
@@ -22513,7 +22587,16 @@ e_burma = {
 				color={ 1 29 28 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Thangyan"
+			thai_paktai = "Thangyan"
+			thai_mueang = "Thangyan"
+			thai_isan = "Thangyan"
+				
 				b_tangyan_2 = {
+			thai_central = "Thangyan"
+			thai_paktai = "Thangyan"
+			thai_mueang = "Thangyan"
+			thai_isan = "Thangyan"
 				}
 				b_mongyai_2 = {
 				}
@@ -22539,21 +22622,52 @@ e_burma = {
 					any_demesne_province = { OR = { province_id = 927 province_id = 928 province_id = 929 province_id = 930 } }
 				}
 			}
+			
+					thai_central = "Chiangtung"
+		thai_paktai = "Chiangtung"
+		thai_mueang = "Chiangtung"
+		thai_isan = "Chiangtung"
+			
 			capital = 927 # c_kengtung
 			
 			c_kengtung = { # 927
 				color={ 53 213 221 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Chiangtung"
+			thai_paktai = "Chiangtung"
+			thai_mueang = "Chiangtung"
+			thai_isan = "Chiangtung"
+				
 				b_kengtung = {
+			thai_central = "Chiangtung"
+			thai_paktai = "Chiangtung"
+			thai_mueang = "Chiangtung"
+			thai_isan = "Chiangtung"
 				}
 				b_mong_yang = {
+			thai_central = "Mueang Yang"
+			thai_paktai = "Mueang Yang"
+			thai_mueang = "Mueang Yang"
+			thai_isan = "Mueang Yang"
 				}
 				b_mong_khet = {
+			thai_central = "Mueang Khak"
+			thai_paktai = "Mueang Khak"
+			thai_mueang = "Mueang Khak"
+			thai_isan = "Mueang Khak"
 				}
 				b_mong_la = {
+			thai_central = "Mueang La"
+			thai_paktai = "Mueang La"
+			thai_mueang = "Mueang La"
+			thai_isan = "Mueang La"
 				}
 				b_mengla = {
+			thai_central = "Mong La"
+			thai_paktai = "Mong La"
+			thai_mueang = "Mong La"
+			thai_isan = "Mong La"
 				}
 				b_nanban = {
 				}
@@ -22564,15 +22678,40 @@ e_burma = {
 				color={ 5 106 105 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Mueang Phayak"
+			thai_paktai = "Mueang Phayak"
+			thai_mueang = "Mueang Phayak"
+			thai_isan = "Mueang Phayak"
+				
 				b_mong_hpayak = {
+			thai_central = "Mueang Phayak"
+			thai_paktai = "Mueang Phayak"
+			thai_mueang = "Mueang Phayak"
+			thai_isan = "Mueang Phayak"
 				}
 				b_mong_yawng = {
+			thai_central = "Mueang Yong"
+			thai_paktai = "Mueang Yong"
+			thai_mueang = "Mueang Yong"
+			thai_isan = "Mueang Yong"
 				}
 				b_mongyu = {
+			thai_central = "Mueang Yu"
+			thai_paktai = "Mueang Yu"
+			thai_mueang = "Mueang Yu"
+			thai_isan = "Mueang Yu"
 				}
 				b_monglei = {
+			thai_central = "Mueang Loei"
+			thai_paktai = "Mueang Loei"
+			thai_mueang = "Mueang Loei"
+			thai_isan = "Mueang Loei"
 				}
 				b_mongwa = {
+			thai_central = "Mueang Wa"
+			thai_paktai = "Mueang Wa"
+			thai_mueang = "Mueang Wa"
+			thai_isan = "Mueang Wa"
 				}
 				b_mong_hpayak_2 = {
 				}
@@ -22583,38 +22722,88 @@ e_burma = {
 				color={ 1 255 253 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Mueang Sat"
+			thai_paktai = "Mueang Sat"
+			thai_mueang = "Mueang Sat"
+			thai_isan = "Mueang Sat"
+				
 				b_mong_hsat = {
+			thai_central = "Mueang Sat"
+			thai_paktai = "Mueang Sat"
+			thai_mueang = "Mueang Sat"
+			thai_isan = "Mueang Sat"
 				}
 				b_mong_ping = {
+			thai_central = "Mueang Peng"
+			thai_paktai = "Mueang Peng"
+			thai_mueang = "Mueang Peng"
+			thai_isan = "Mueang Peng"
 				}
 				b_mong_tong = {
+			thai_central = "Mueang Thong"
+			thai_paktai = "Mueang Thong"
+			thai_mueang = "Mueang Thong"
+			thai_isan = "Mueang Thong"
 				}
 				b_mong_pan = {
+			thai_central = "Mueang Phan"
+			thai_paktai = "Mueang Phan"
+			thai_mueang = "Mueang Phan"
+			thai_isan = "Mueang Phan"
 				}
 				b_mong_hang = {
+			thai_central = "Mueang Hang"
+			thai_paktai = "Mueang Hang"
+			thai_mueang = "Mueang Hang"
+			thai_isan = "Mueang Hang"
 				}
 				b_mong_kyawt = {
+			thai_central = "Mueang Chot"
+			thai_paktai = "Mueang Chot"
+			thai_mueang = "Mueang Chot"
+			thai_isan = "Mueang Chot"
 				}
 				b_mong_hta = {
+			thai_central = "Mueang Ta"
+			thai_paktai = "Mueang Ta"
+			thai_mueang = "Mueang Ta"
+			thai_isan = "Mueang Ta"
 				}
 			}
 			c_tachileik = { # 929
 				color={ 53 216 220 }
 				color2={ 255 255 255 }
 				
+			thai_central = "Takhilek"
+			thai_paktai = "Takhilek"
+			thai_mueang = "Takhilek"
+			thai_isan = "Takhilek"
+				
 				b_tachileik = {
+			thai_central = "Takhilek"
+			thai_paktai = "Takhilek"
+			thai_mueang = "Takhilek"
+			thai_isan = "Takhilek"
 				}
 				b_kyaing_lap = {
 				}
 				b_talay = {
 				}
 				b_monglep = {
+			thai_central = "Mueang Lep"
+			thai_paktai = "Mueang Lep"
+			thai_mueang = "Mueang Lep"
+			thai_isan = "Mueang Lep"
 				}
 				b_hopoong = {
 				}
 				b_khong_kong = {
 				}
 				b_mong_lap = {
+			thai_central = "Mueang Lap"
+			thai_paktai = "Mueang Lap"
+			thai_mueang = "Mueang Lap"
+			thai_isan = "Mueang Lap"
 				}
 			}
 		}
