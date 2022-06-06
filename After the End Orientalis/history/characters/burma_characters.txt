@@ -23,7 +23,7 @@
 ##Chin
 
 1552001 ={ #d_chin
-	#name="Guder"
+	name="Guder"
 	culture=chin
 	religion=parimatira
 	#no-random-trait
@@ -31,7 +31,7 @@
 }
 
 1552002 ={ #c_bhamo
-	#name="Guder"
+	name="Guder"
 	culture=chin
 	religion=parimatira
 	#no-random-trait
@@ -44,7 +44,7 @@
 	name="Suleiman"
 	dynasty=1551000
 	culture=rakhine
-	religion=sunni
+	religion=salafi
 	2576.10.14={birth=yes}
 }
 
@@ -103,4 +103,17 @@
 	religion=parimatira
 	#no-random-trait
 	2581.10.14={birth=yes}
+}
+## Indian Empire characters
+1557004 ={ #Indian governor
+	name="Ruhul"
+	dynasty=4000027 #Malakar
+	culture=bengali
+	religion=hindu
+	trait=shy
+	trait=kind
+	trait=shrewd
+	trait=administrator
+	trait=thrifty_clerk
+	2560.03.07={birth=yes}
 }
