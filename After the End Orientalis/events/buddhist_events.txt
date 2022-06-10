@@ -1032,7 +1032,7 @@ narrative_event = {#Listen to a good Story?
 	option = {#Do not Listen in
 		name = EVTOPTB_budevent108
 		random_list = {
-			90 = 
+			90 = {}
 			10 = { add_trait = cynical }
 		}
 		narrative_event = {id = budevents.112 days = 2}
