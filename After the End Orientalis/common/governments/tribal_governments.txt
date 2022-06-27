@@ -1,0 +1,195 @@
+tribal_governments = {
+
+	tribal_government = {
+		preferred_holdings = { TRIBAL }
+		allowed_holdings = {
+			TRIBAL
+			FORT
+		}
+		accepts_liege_governments_culture = { # Tribals have no opinion penalty towards their liege if of the same culture
+			feudal_government
+			republic_government
+			merchant_republic_government
+			theocracy_government
+			diwan_government
+			ghazi_government
+			theocratic_feudal_government
+			chinese_imperial_government
+		}
+		accepts_liege_governments_culture_and_religion = { 	# Tribals have no opinion penalty towards their liege if of the same culture and religion
+			order_government
+		}
+		vassal_call_to_arms = {
+			tribal_government
+		}
+		no_vassal_tax = {
+			tribal_government
+		}
+		builds_with_prestige = {
+			TRIBAL
+		}
+		frame_suffix = "_tribal"
+		title_prefix = "tribal_"
+		potential = {
+			OR = {
+				is_feudal = no
+				has_game_started = no
+			}
+			OR = {
+				controls_religion = no
+				religion_group = muslim
+				has_religion_feature = religion_temporal_head
+				AND = {
+					religion = norse_pagan_reformed
+					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
+				}
+			}
+			is_patrician = no
+			mercenary = no
+			holy_order = no
+			NOT = { is_government_potential = order_government }
+			NOT = { is_government_potential = nomadic_tribal_government }
+		}
+		
+		color = { 92 31 23 }
+		
+		dukes_called_kings = yes
+		
+		uses_decadence = yes
+		
+		allow_looting = yes
+		max_consorts = 3
+		ignores_de_jure_laws = yes
+		can_build_castle = no
+		can_build_city = no
+		can_build_temple = yes
+		can_build_tribal = yes
+		can_build_hospitals = no
+		can_change_to_nomad_on_start = yes
+		
+		demesne_size = 2
+		vassal_limit = -10
+		
+		capital_move_delay = 600
+	}
+	nomadic_tribal_government = {
+		preferred_holdings = { TRIBAL }
+		allowed_holdings = {
+			TRIBAL
+			FORT
+		}
+		# accepts_liege_governments_culture_and_religion = { 	# Tribals have no opinion penalty towards their liege if of the same culture and religion
+			# order_government
+		# }
+		vassal_call_to_arms = {
+			tribal_government
+			nomadic_tribal_government
+		}
+		no_vassal_tax = {
+			tribal_government
+			nomadic_tribal_government
+		}
+		builds_with_prestige = {
+			TRIBAL
+		}
+		frame_suffix = "_nomadic"
+		title_prefix = "herder_"
+		potential = {
+            has_dlc = "Horse Lords"
+			OR = {
+				is_feudal = no
+				has_game_started = no
+			}
+			OR = {
+				controls_religion = no
+				has_religion_feature = religion_temporal_head
+			}
+			OR = {
+				OR = {
+                    OR = {
+                        government = nomadic_tribal_government
+                        has_law = succ_nomadic_elective
+                    }
+					# government = nomadic_tribal_government
+                    AND = { 
+                        liege = { government = nomadic_tribal_government }
+                        OR = {
+                            AND = {
+                                liege = {
+                                    is_historical_nomad_culture = yes
+                                }
+                                ROOT = {
+                                    is_historical_nomad_culture = yes
+                                }
+                            }
+                            AND = {
+                                liege = {
+                                    is_historical_hordes_culture = yes
+                                }
+                                ROOT = {
+                                    is_historical_hordes_culture = yes
+                                }
+                            }
+                        }
+                    }
+				}
+				AND = {
+					has_game_started = no
+					primary_title = {
+						OR = {
+							title = d_koryak
+							#other titles as they are for this government
+						}
+					}
+					OR = {
+						culture_group = siberian
+						culture_group = sibero_turkic
+						culture_group = tungusic
+						culture_group = mongol
+						#culture = neo_jin
+					}
+				}
+			}
+			is_patrician = no
+			mercenary = no
+			holy_order = no
+			NOT = { is_government_potential = order_government }
+		}
+		
+		# color = { 255 94 0 }
+		color = { 200 250 250 }
+		
+		dukes_called_kings = yes
+		
+		uses_decadence = yes
+		
+		allow_looting = yes
+		max_consorts = 3
+		women_can_take_consorts = yes
+		ignores_de_jure_laws = yes
+		can_build_castle = no
+		can_build_city = no
+		can_build_temple = yes
+		can_build_tribal = yes
+		can_build_hospitals = no
+
+        can_grant_kingdoms_and_empires_to_other_government = no
+        can_be_granted_kingdoms_and_empires_by_other_government = no
+
+		
+		demesne_size = 4
+		vassal_limit = -20
+		aggression = 3
+		
+		capital_move_delay = 200
+
+		## Modifiers
+		court_size_modifier = 10
+		character_modifier = {
+			martial = 1
+			combat_rating = 10
+			retinuesize = 100
+			short_reign_length = 5
+		}
+	}
+}
