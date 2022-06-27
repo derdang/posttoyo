@@ -176,4 +176,64 @@ sibero_turkic = {
 
 		modifier = default_culture_modifier
 	}
+	yakut = {
+		graphical_cultures = { newmongolgfx bodpagfx cumangfx }
+
+		color = { 0 0.31 0.52 }
+
+		male_names = {
+			Adigži Adyg-Tulush Adyg-Ty Adyg-Tyulyush Aldar Aldïn-caa Aldyn-ool Anatoli Anay Anay-kis Anay-ool Artiš Ay-daš Ay-demir Ayan Ayan-ool Aydiñ Aydyn 
+			Bady-Dorzhu Bay-Kara Baygay-ool Belek Bežen-ool Bilek-ool Bištak Borbak-xüreñ Brat-ool Buyan 
+			Çayan Chanchy-khöö Chayan Chechen-ool Chimit-Dorzhu Coygan-ool 
+			Dalay-ool Daš-demir Daš-mir Donduk 
+			Galsan Gendos Gennadi Grigoriy_Gregory 
+			Igor Irgit Ivan_John 
+			Kaadyr-ool Kaigal-ool Kañ-demir Kañ-ool Kang-Huler Kenden Kezhik Kežik Khüzhüget Kidispey Kizil-ool Kongar-ool Koñgar-ool Kövey-maadir Kušaš-ool Kuškaš-ool Kyzyl-ool 
+			Maadïr-ool Maady Maadyr-ool Mai-ool Makhmud Mañnay-ool Maxim_Maximus Meñgi Mergen Mikhail_Michael Mongun-ool Mongush 
+			Nachyn Nikolay_Nicholas 
+			Ochutai Oktyabr_October Omak Ondar Öpey-ool Örgeleer Orlan Orus-pay Oyun 
+			Polat 
+			Radik 
+			Saidash Sailyk Salchak Sarig-ool Saryg-Donggak Sat Sayan Sergey_Sergius Shagdyr Shamir Sherig-ool Shinikay Sholban Sildis Sodnam Šolban Šooca Soruktu Soyan Su-xem Tanchai 
+			Tay-mir_Timur Tovariš-tay 
+			Uin-ool Uyanmas 
+			Vladimir_Vladimir Xirlig-ool 
+			Xündüs Xüreñ-ool Xureš-ool 
+ 
+		}
+
+		female_names = {
+			Aidysmaa Ailanmaa Ak-kis Anay-kis Aržaana Arzhaana Ayana Aydiñ 
+			Belek Belek-maa Borbak-kis Buyana 
+			Çayana Chayana Choduraa Choldak-Kara Coduraa Cudur 
+			Dañ-xayaa 
+			Kara-kat Kara-kis Kara-Kys Khertek Kök-kis 
+			Maya 
+			Nadezhda 
+			Öškü-saar Oyu-maa 
+			Sainkho Samdar Sayana Sayin-khöö Saylykmaa Sholbana Shoraana 
+			Taraa 
+			Ucastak Urana Uynung-maa Uzun-kaday 
+			Valentina 
+			Xayana 
+			Xoptak 
+			Xoveñ-mey 
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		male_patronym = " oglu"
+		female_patronym = " uruu"
+		prefix = no
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
 }
