@@ -146,10 +146,80 @@ dal_nevostochnyy = {
 		modifier = default_culture_modifier
 	}
 	
-	amursky = { #Russian People of the Amur Region
+	amursky = { #Russian People of the Amur Region (Tungistic Name Influences)
 		graphical_cultures = { westernslavicgfx }
 		
 		color = { 1 0.5 0.15 } 
+		
+		male_names = {
+			Abram Adrian Afanas Agafon Alexander_Alexander Alexei Alyosha Anatoli Anatoliy Androniy Antoniy Arkadiy Arseniy Artemiy Avgust
+			Basiliy Bogomil Bohdan Boris
+			Damian David Denis Denys Dionisiy Demitriy
+			Chekhov
+			Edik Ermolai
+			Fedir Feliks Flaviy 
+			Gennadiy Gera Gerasim German Grigori Georgi Gavril			
+			Ignatiy Igor Illariy Innokentiy Ioakim Ioann Iosif Ippolit Irakliy Ivan Isaak Isidor
+			Jenya Juliy
+			Kir Kirill Klavdiy Kliment Konstantin Krasimir Kuzmas Kvetoslav
+			Larion Larya Lavrentiy Lazar Leonid Lev Levi Longiy Luka Lukyan
+			Makariy Mark Martyn Maximilian Mefodiy Mikhail Milan Miron Mitrofan Mitay Mstislav
+			Nazariy Nikanor Nikita Nikodim Nikofor Nikolay
+			Pankratiy Panteley Pavel Pyotr Polikarp Pribislav Prokhor Phylyp
+			Radoslav Rasim Rodion Roman Ruslan Rustem
+			Semyon Serhiy Shustryi Spartak Spiridon Stanimir Stanislav Stepan Symon
+			Tarasyos Timofey Titus Theodor
+			Vadik Vademiy Valentin Valerian Vaniamin Vasya Velimir Vering Vikentiy Viktor Vitali Vladimir Vladislav Vsevolod
+			Yakov_Jacob Yakiv Yaroslav Yefim Yelisey Yeremei Yevheniy Yevstigney Yosef_Joseph Yosyp
+			Zakhar Zakharik Zinoviy
+		}
+		
+		female_names = {
+			Adriana Agata Agrippina Aksinya Albina Alexandra Alina Amalia Anastasia Anastasiya Anfisa Angelika Anna Antonia
+			Bogdana Bohuslava Barbara
+			Daria Dariya Diana Dominika Doroteya
+			Edita Ekaterina Elena Elektra Elisaveta Elvira Emiliya Eudokia Evelina Evgenia
+			Feodora Flaviya
+			Gertruda Glasha Grusha
+			Halyna Hanna Helena
+			Ida Iryna
+			Janna Jannochka Jenya
+			Kalina Kalyna Kapitolina Karina Kateryna Khrystyna Klara Klavdia 
+			Lara Larisa Larissa Larysa Lera Lesya Lilia Liliya Lilya Lisa Livia Luba Ludmila Luiza Lyuba Lyubov Lyuda Lyudmyla
+			Madgalina Makariya Marfa Marianna Marina Mariya Marta Matrona Maya Miriam_Mary Miroslava Mykhaila
+			Nadezhda Nataliya Nymphadora
+			Odarka Oksenia Olena 
+			Pelageya Polina
+			Radmila Raina Raisa Ruslana
+			Sara Selena Serafima Slavena Snezana Sofiya Stanislava Stefania Stella 
+			Tamara Tamarochka Tanya Tatiana Tereza Tonya
+			Urania 
+			Valentina Valeriya Varvara Varya Vasilisa Vera Veronika Viktoria Viktoriya Viola Vira Vitaliya
+			Yaroslava Yekaterina Yeva Yulia Yuliana
+			Zina Zinaida Zoe
+		}
+	
+		male_patronym = "in"
+		female_patronym = "ina"
+		prefix = no
+		founder_named_dynasties	= yes
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 70
+		mother_name_chance = 0
+		
+		used_for_random = no
+		modifier = default_culture_modifier
+	}
+	sibiri = { #Russian Descendants of the Siberian Federal District (Turkic Name Influence)
+		graphical_cultures = { westernslavicgfx newmongolgfx}
+		
+		color = { 0.16 0.25 0.55 } 
 		
 		male_names = {
 			Abram Adrian Afanas Agafon Alexander_Alexander Alexei Alyosha Anatoli Anatoliy Androniy Antoniy Arkadiy Arseniy Artemiy Avgust
