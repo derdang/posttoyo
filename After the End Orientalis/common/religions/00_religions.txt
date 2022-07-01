@@ -146,10 +146,10 @@ christian = {
 		intermarry = catholic
 		intermarry = miaphysite
 		intermarry = nestorian
-		intermarry = iconoclast
+		intermarry = old_believer
 		intermarry = concordanist
 	}
-	iconoclast = {
+	old_believer = {
 		graphical_culture = westerngfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
@@ -1503,6 +1503,70 @@ pagan_group = {
 		intermarry = zun_pagan_reformed
 		intermarry = bon
 		intermarry = bon_reformed
+	}
+	ak_jeng_reformed = {
+		graphical_culture = norsegfx
+
+		icon = 72
+		heresy_icon = 73
+		
+		color = { 190 200 50 }
+
+		high_god_name = GOD_AK_BURKHAN
+
+		god_names = {
+			GOD_GESAR GOD_JAJYK GOD_UMAL GOD_OT_EN GOD_ALTAI_KUDAI GOD_ULGAN GOD_AMURSANA GOD_SHUNU GOD_MANAS
+		}
+		evil_god_names = {
+			GOD_ERLIK
+		}
+		
+		scripture_name = THE_QAIS
+		priest_title = JARLYKCHY
+		priests_can_marry = yes
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	ak_jeng = {
+		graphical_culture = norsegfx
+
+		icon = 71
+		heresy_icon = 73
+		
+		color = { 190 200 50 }
+
+		high_god_name = GOD_AK_BURKHAN
+
+		god_names = {
+			GOD_GESAR GOD_JAJYK GOD_UMAL GOD_OT_EN GOD_ALTAI_KUDAI GOD_ULGAN GOD_AMURSANA GOD_SHUNU GOD_MANAS
+		}
+		evil_god_names = {
+			GOD_ERLIK
+		}
+		
+		scripture_name = THE_QAIS
+		priest_title = JARLYKCHY
+		priests_can_marry = yes
+		reformed = ak_jeng_reformed
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		can_demand_religious_conversion = no
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
 	}
 }
 
