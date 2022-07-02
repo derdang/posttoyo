@@ -19,6 +19,37 @@
 9001159 = { name="Pan" culture=mengguzu }
 9001167 = { name="Qi" culture=mengguzu }
 
+#Shanxi Jin : 9003
+9003000 = { name="Guo" culture=jin }
+9003001 = { name="Huang" culture=jin }
+9003002 = { name="Jiang" culture=jin }
+9003003 = { name="Li" culture=jin }
+9003004 = { name="Ma" culture=jin }
+9003005 = { name="Wang" culture=jin }
+9003006 = { name="Yu" culture=jin }
+9003007 = { name="Zhang" culture=jin }
+9003008 = { name="Ai" culture=jin } 
+9003009 = { name="Shi" culture=jin }
+9003010 = { name="Gao" culture=jin }
+9003011 = { name="Gan" culture=jin }
+9003012 = { name="Jin" culture=jin }
+9003013 = { name="Zhao" culture=jin }
+9003014 = { name="Sima" culture=jin }
+9003015 = { name="Jia" culture=jin }
+
+#Hebei/Zhili: 9006 
+### NOTE : Shandong and Hebei/Zhili were already covered by chinese_dynasties.txt. To merge or remove later
+
+9005120 = { name="Li" culture=pekingese }
+9010128 = { name="Liu" culture=pekingese }
+9005222 = { name="Wang" culture=pekingese }
+9005271 = { name="Zhang" culture=pekingese }
+
+9006120 = { name="Li" culture=tianjinese }
+9006128 = { name="Liu" culture=tianjinese }
+9006222 = { name="Wang" culture=tianjinese }
+9006271 = { name="Zhang" culture=tianjinese }
+
 # NE China : 901 (Dongbei)
 #-- Dongbei
 9010016 = { name="Cai" culture=dongbei }
@@ -43,37 +74,117 @@
 
 9020016 = { name="Cai" culture=shanghainese }
 9020026 = { name="Chen" culture=shanghainese }
+9020087 = { name="Hu" culture=shanghainese }
+9020091 = { name="Huang" culture=shanghainese }
 9020120 = { name="Li" culture=shanghainese }
+9020128 = { name="Liu" culture=shanghainese }
 9020222 = { name="Wang" culture=shanghainese }
+9020229 = { name="Wu" culture=shanghainese }
 9020243 = { name="Xu" culture=shanghainese }
 9020249 = { name="Yang" culture=shanghainese }
+9020259 = { name="Yuan" culture=shanghainese }
 9020271 = { name="Zhang" culture=shanghainese }
 9020279 = { name="Zhou" culture=shanghainese }
 9020280 = { name="Zhu" culture=shanghainese }
+9020000 = { name="Lü" culture=shanghainese }
 
+9021016 = { name="Cai" culture=jianghuai }
 9021026 = { name="Chen" culture=jianghuai }
+9021087 = { name="Hu" culture=jianghuai }
+9021091 = { name="Huang" culture=jianghuai }
+9022100 = { name="Jiang" culture=jianghuai }
 9021120 = { name="Li" culture=jianghuai }
 9021125 = { name="Lin" culture=jianghuai }
+9021128 = { name="Liu" culture=jianghuai }
+9021137 = { name="Mao" culture=jianghuai }
 9021222 = { name="Wang" culture=jianghuai }
+9021229 = { name="Wu" culture=jianghuai }
 9021243 = { name="Xu" culture=jianghuai }
+9021259 = { name="Yuan" culture=jianghuai }
 9021271 = { name="Zhang" culture=jianghuai }
 9021279 = { name="Zhou" culture=jianghuai }
 9021280 = { name="Zhu" culture=jianghuai }
+9021000 = { name="Lü" culture=jianghuai }
 
 9022016 = { name="Cai" culture=wu }
 9022026 = { name="Chen" culture=wu }
+9022087 = { name="Hu" culture=wu }
+9022091 = { name="Huang" culture=wu }
+9022100 = { name="Jiang" culture=wu }
 9022120 = { name="Li" culture=wu }
+9021125 = { name="Lin" culture=wu }
+9021128 = { name="Liu" culture=wu }
+9022137 = { name="Mao" culture=wu }
+9022192 = { name="Shen" culture=wu }
+9022208 = { name="Sun" culture=wu }
 9022222 = { name="Wang" culture=wu }
+9022229 = { name="Wu" culture=wu }
+9022259 = { name="Yuan" culture=wu }
 9022243 = { name="Xu" culture=wu }
 9022271 = { name="Zhang" culture=wu }
 9022279 = { name="Zhou" culture=wu }
 9022280 = { name="Zhu" culture=wu }
+9022000 = { name="Lü" culture=wu }
 
-9023120 = { name="Li" culture=huizhou }
 9023087 = { name="Hu" culture=huizhou }
+9023120 = { name="Li" culture=huizhou }
+9023128 = { name="Liu" culture=huizhou }
 9023091 = { name="Huang" culture=huizhou }
 9023222 = { name="Wang" culture=huizhou }
 9023243 = { name="Xu" culture=huizhou }
+9023271 = { name="Zhang" culture=huizhou }
+
+# Min-Hakka
+
+9033016 = { name="Cai" culture=min }
+9033026 = { name="Chen" culture=min }
+9033087 = { name="Hu" culture=min }
+9033091 = { name="Huang" culture=min }
+9033120 = { name="Li" culture=min }
+9033125 = { name="Lin" culture=min }
+9033135 = { name="Ma" culture=min }
+9033222 = { name="Wang" culture=min }
+9033238 = { name="Xie" culture=min }
+9033271 = { name="Zhang" culture=min }
+9033274 = { name="Zheng" culture=min }
+
+9034026 = { name="Chen" culture=hakka }
+9034091 = { name="Huang" culture=hakka }
+9034120 = { name="Li" culture=hakka }
+9034125 = { name="Lin" culture=hakka }
+9034128 = { name="Liu" culture=hakka }
+9034135 = { name="Ma" culture=hakka }
+9034222 = { name="Wang" culture=hakka }
+9034238 = { name="Xie" culture=hakka }
+9034271 = { name="Zhang" culture=hakka }
+9034274 = { name="Zheng" culture=hakka }
+
+9035016 = { name="Cai" culture=gan }
+9035026 = { name="Chen" culture=gan }
+9035091 = { name="Huang" culture=gan }
+9035120 = { name="Li" culture=gan }
+9035125 = { name="Lin" culture=gan }
+9035128 = { name="Liu" culture=gan }
+9035135 = { name="Ma" culture=gan }
+9035222 = { name="Wang" culture=gan }
+9035238 = { name="Xie" culture=gan }
+9035271 = { name="Zhang" culture=gan }
+9035274 = { name="Zheng" culture=gan }
+
+# Central China : 904
+
+9043091 = { name="Huang" culture=chu }
+9043100 = { name="Jiang" culture=chu }
+9043120 = { name="Li" culture=chu }
+9043125 = { name="Lin" culture=chu }
+9043137 = { name="Mao" culture=chu }
+9043222 = { name="Wang" culture=chu }
+9043229 = { name="Wu" culture=chu }
+9043243 = { name="Xu" culture=chu }
+9043271 = { name="Zhang" culture=chu }
+9043279 = { name="Zhou" culture=chu }
+9043280 = { name="Zhu" culture=chu }
+9043000 = { name="Lü" culture=chu }
 
 # South China : 9051
 #-- Guangdong
@@ -204,6 +315,8 @@
 9081011 = { name="Gan" culture=zhongyuan }
 9081012 = { name="Jin" culture=zhongyuan }
 9081013 = { name="Zhao" culture=zhongyuan }
+9081014 = { name="Cao" culture=zhongyuan }
+9081015 = { name="Wei" culture=zhongyuan }
 
 #Huizu
 
