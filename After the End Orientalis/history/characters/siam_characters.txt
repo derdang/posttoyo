@@ -106,7 +106,7 @@
 	2558.4.15={birth=yes}
 }
 2310121 ={ # c_kanchanaburi
-	name="Kwae"
+	name="Sena"
 	dynasty=2310121
 	culture=thai_central
 	religion=dharmayuttika
@@ -230,16 +230,29 @@
 	intrigue=4
 	learning=7
 	trait=midas_touched
-	trait=sturdy
 	trait=diligent
 	trait=just
-	trait=brave
 	trait=quick
 	2567.4.15={birth=yes}
+}
+2310508 ={
+	name="Thong" # Kraithong
+	dynasty=2310505
+	culture=thai_sukhothai
+	religion=dharmayuttika
+	martial=9
+	trait=tough_soldier
+	trait=sturdy
+	trait=strong
+	trait=cruel
+	trait=brave
+	trait=quick
+	2570.4.15={birth=yes}
 }
 2310511 ={
 	name="Dam" # Black Prince
 	dynasty=2310502
+	father=2310513
 	culture=thai_sukhothai
 	religion=dharmayuttika
 	martial=7
@@ -257,6 +270,7 @@
 2310512 ={
 	name="Kao" # White Prince
 	dynasty=2310502
+	father=2310513
 	culture=thai_sukhothai
 	religion=dharmayuttika
 	martial=4
@@ -270,6 +284,19 @@
 	trait=brave
 	trait=quick
 	2589.4.15={birth=yes}
+}
+2310513 ={
+	name="Thamma" # Pious Father
+	dynasty=2310502
+	culture=thai_sukhothai
+	religion=dharmayuttika
+	trait=martial_cleric
+	trait=zealous
+	trait=kind
+	trait=craven
+	trait=quick
+	2550.4.15={birth=yes}
+	2600.4.13={death=yes}
 }
 2310601 ={
 	name="Bang" # c_nakhon_sawan
@@ -293,7 +320,8 @@
 	name="Gabriel"
 	dynasty=2310701 
 	culture=thai_central
-	religion=catholic
+	religion=dharmayuttika
+	secret_religion=catholic
 	martial=3
 	diplomacy=7
 	stewardship=4
