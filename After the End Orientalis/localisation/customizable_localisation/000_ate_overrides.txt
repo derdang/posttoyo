@@ -1,0 +1,25 @@
+defined_text = {
+	name = GetBaksuMudang
+
+	text = {
+		trigger = { is_female = no }
+		localisation_key = baksu
+	}
+	text = {
+		trigger = { is_female = yes }
+		localisation_key = mudang
+	}	
+}
+
+defined_text = {
+	name = GetBaksuMudangCap
+
+	text = {
+		trigger = { is_female = no }
+		localisation_key = BAKSU
+	}
+	text = {
+		trigger = { is_female = yes }
+		localisation_key = MUDANG
+	}
+}
