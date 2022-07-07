@@ -25623,6 +25623,11 @@ e_gansu = {
 	color={ 0 163 108 }
 	color2={ 255 255 20 }
 	
+	guanzhong = "Xiliang"
+	lanyin = "Liang"
+	sichuanese = "Xiliang"
+	zhongyuan = "Liang"
+	
 	capital = 1339 # c_lanzhou
 	culture = lanyin
 	
@@ -28665,6 +28670,9 @@ e_chongqing = {
 	capital = 1515 # c_yuzhong
 	culture = xinan
 	
+	sichuanese = "Ba"
+	xinan = "Yu"
+	
 	k_chongqing = {
 		color={ 216 41 178 }
 		color2={ 255 255 255 }
@@ -29326,6 +29334,9 @@ e_shaanxi = {
 	capital = 1556 # c_weiyang
 	culture = zhongyuan
 	
+	zhongyuan = "Qin"
+	guanzhong = "Qin"
+	sichuanese = "Xiliang"
 	k_qin = {
 		color={ 38 137 34 }
 		color2={ 255 255 255 }
@@ -29910,6 +29921,10 @@ e_zhejiang = {
 	capital = 1609 # c_hangzhou
 	culture = wu
 	
+	wu = "Yuyue"
+	jianghuai = "Yuyue"
+	zhongyuan = "Yuyue"
+	
 	k_hang = {
 		color={ 29 16 37 }
 		color2={ 255 255 255 }
@@ -30473,6 +30488,7 @@ e_jiangxi = {
 	
 	capital = 1634 # c_honggutan
 	culture = gan
+	gan = "Gan"
 	
 	k_jiujiang = {
 		color={ 74 118 59 }
@@ -31712,6 +31728,10 @@ e_hunan = {
 e_hubei = {
 	color={ 50 80 200 }
 	color2={ 255 255 20 }
+	
+	zhongyuan = "Chu"
+	chu = "Chu"
+	xinan = "Chu"
 	
 	capital = 1698 # c_qianjiang_2
 	culture = chu
@@ -33221,6 +33241,11 @@ e_jiangsu = {
 	
 	capital = 1765 # c_xuanwu
 	culture = huizhou
+	jiao_liao = "Wu"
+	jianghuai = "Ming"
+	wu = "Wu"
+	zhongyuan = "Wu"
+
 	
 	k_wu = {
 		color={ 135 158 106 }
@@ -36878,6 +36903,9 @@ e_henan = {
 	capital = 1813 # c_zhongyuan
 	culture = zhongyuan
 	
+	sichuanese = "Wei"
+	zhongyuan = "Wei"
+	
 	k_zheng = {
 		color={ 139 97 136 }
 		color2={ 255 255 255 }
@@ -37834,6 +37862,8 @@ e_shanxi = {
 	
 	capital = 1855 # c_taiyuan
 	culture = jin
+	jin = "Jin"
+	zhongyuan = "Jin"
 	
 	k_jin = {
 		color={ 190 226 15 }
@@ -38390,6 +38420,9 @@ e_shandong = {
 	
 	capital = 1880 # c_lixia
 	culture = jilu
+	
+	jilu = "Lu"
+	jiao_liao = "Qi"
 	
 	k_qi = {
 		color={ 54 71 164 }
