@@ -73,8 +73,6 @@ religion_nature = {
 					character = yes
 					OR = { 
 						religion = shamanist 
-						religion = slavic_pagan
-						religion = baltic_pagan
 					}
 				}
 			}
@@ -674,6 +672,8 @@ religion_doctrine = {
 			NOT = { religion = hellenic_pagan_reformed } #Core feature of the religion itself.
 			NOT = { religion = mo } #Core feature of the religion itself.
 			NOT = { religion = mo_reformed } #Core feature of the religion itself.
+			NOT = { religion = ak_jeng } #Core feature of the religion itself.
+			NOT = { religion = ak_jeng_reformed } #Core feature of the religion itself.
 		}
 
 		effect = {
@@ -894,13 +894,6 @@ religion_doctrine = {
 					religion = americanist
 				}
 			}
-			modifier = { 	
-				factor = 1.5
-				FROM = { 	
-					character = yes 
-					religion = baltic_pagan
-				}
-			}
 		}
 	}
 	religion_seafaring = {
@@ -970,6 +963,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_peaceful
 				has_selected_religion_feature = religion_defensive
 				has_selected_religion_feature = religion_feature_ua_dab
+				has_selected_religion_feature = religion_feature_khanist
 			}
 		}
 		effect = {
@@ -1033,6 +1027,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_no_leader
 				has_selected_religion_feature = religion_feature_chinomi
 				has_selected_religion_feature = religion_feature_mo
+				has_selected_religion_feature = religion_feature_ak_jeng
 				religion_group = christian #Random World redundancy.
 			}
 		}
@@ -1129,27 +1124,43 @@ religion_doctrine = {
 			}
 		}
 	}
-	religion_feature_baltic = {
-		picture = GFX_religion_feature_baltic
+	religion_feature_khanist = {
+		picture = GFX_religion_feature_khanist
 		potential = {
 			has_game_started = yes
-			religion = baltic_pagan_reformed
+			religion = khanist_reformed
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 		}
 		trigger = {
-			religion = baltic_pagan_reformed
+			religion = khanist_reformed
 			NOR = { 
-				has_selected_religion_feature = religion_meritocratic
+				has_selected_religion_feature = religion_relentless
+				has_selected_religion_feature = religion_adventuring
 			}
 		}
 		effect = {
-			custom_tooltip = { text = tooltip_religion_feature_hard_conversion }
-			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			custom_tooltip = { text = tooltip_religion_feature_anti_attrition }
+			custom_tooltip = { text = tooltip_religion_feature_offensive }
 			hidden_tooltip = { 
-				set_hard_to_convert = yes
+				set_ignores_defensive_attrition = yes
+				set_unit_modifier = { 
+					light_infantry_offensive = 0.1
+					heavy_infantry_offensive = 0.1
+					light_cavalry_offensive = 0.1 
+					knights_offensive = 0.1 
+					pikemen_offensive = 0.1 
+					archers_offensive = 0.1
+					horse_archers_offensive = 0.1
+					camel_cavalry_offensive = 0.1
+					war_elephants_offensive = 0.1
+					key = "RELENTLESS_RELIGION"
+				}
 			}
+			custom_tooltip = { text = tooltip_religion_feature_adventuring }
+			custom_tooltip = { text = tooltip_religion_feature_pirating }
+			hidden_tooltip = { enable_prepared_invasion = ROOT }
 		}
 		ai_will_do = {
 			factor = 1
@@ -1160,29 +1171,26 @@ religion_doctrine = {
 			}
 		}
 	}
-	religion_feature_slavic = {
-		picture = GFX_religion_feature_slavic
+	religion_feature_ak_jeng = {
+		picture = GFX_religion_feature_ak_jeng
 		potential = {
 			has_game_started = yes
-			religion = slavic_pagan_reformed
+			religion = ak_jeng_reformed
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 		}
 		trigger = {
-			religion = slavic_pagan_reformed
+			religion = ak_jeng_reformed
 			NOR = { 
-				has_selected_religion_feature = religion_stable
+				has_selected_religion_feature = religion_haruspicy
+				has_selected_religion_feature = religion_beatification
 			}
 		}
 		effect = {
-			custom_tooltip = { text = tooltip_religion_feature_rivermovement }
-			custom_tooltip = { text = tooltip_religion_feature_stable }
-			custom_tooltip = { text = tooltip_religion_feature_meliorism } 
-			hidden_tooltip = {
-				set_short_reign_opinion_year_mult = 0
-				set_allow_rivermovement = yes
-			}
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			custom_tooltip = { text = tooltip_religion_feature_haruspicy }
 		}
 		ai_will_do = {
 			factor = 1
@@ -1574,8 +1582,6 @@ religion_leadership = {
 				FROM = { 
 					character = yes 
 					NOR = { 
-						religion = slavic_pagan
-						religion = baltic_pagan
 						religion = hellenic_pagan
 					}
 				}
@@ -1642,7 +1648,6 @@ religion_leadership = {
 						character = yes 
 						OR = { 
 							religion = chinomi 
-							religion = slavic_pagan 
 						} 
 					}
 					has_selected_religion_feature = religion_monastic
@@ -1659,7 +1664,6 @@ religion_leadership = {
 						character = yes 
 						OR = { 
 							religion = chinomi 
-							religion = slavic_pagan 
 						} 
 					}
 				}
