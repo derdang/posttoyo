@@ -1,0 +1,172 @@
+## File name to be changed or merged with another file later.
+# 2603 - Jin
+2610001 = {  #Hong
+	name="Zhiyuan"
+	dynasty=9005801 #imperial Hong
+	culture=pekingese
+	religion=jibenyuanze
+	martial=8
+	diplomacy=6
+	stewardship=8
+	intrigue=10
+	learning=6
+	trait=intricate_webweaver
+	trait=chaste
+	trait=ambitious
+	trait=kinslayer
+	2582.9.1={birth=yes}
+}
+2610002 = {  #Hong
+	name="Zhiming"
+	dynasty=9005801 #imperial Hong
+	culture=pekingese
+	religion=jibenyuanze
+	martial=10
+	diplomacy=10
+	stewardship=8
+	intrigue=8
+	learning=6
+	trait=grey_eminence
+	trait=humble
+	trait=kind
+	trait=quick
+	2576.1.1={birth=yes}
+	2599.1.1={
+		death={
+			death_reason=death_execution
+			killer=2610001
+		}
+	}
+}
+2603001 ={ # Emperor of Jin
+	name="Huayi"
+	dynasty=9003001 #Huang
+	culture=jin
+	religion=ruist
+	martial=7
+	diplomacy=10
+	stewardship=8
+	intrigue=9
+	learning=6
+	trait=skilled_tactician
+	trait=ambitious
+	2578.1.1={birth=yes}
+	2600.1.1={capital = c_luolong}
+}
+2621001 ={ # kShanghai ruler
+	name="Zhugong"
+	dynasty=9020100 #Jiang
+	culture=shanghainese
+	religion=gongye_shenjiao
+	martial=9
+	diplomacy=8
+	stewardship=8
+	intrigue=9
+	learning=8
+	trait=midas_touched
+	trait=diligent
+	2577.8.1={birth=yes}
+}
+2621002 ={ # xu ruler
+	name="Zixi"
+	dynasty=9020243 #xu
+	culture=shanghainese
+	religion=catholic
+	martial=9
+	diplomacy=8
+	stewardship=9
+	intrigue=9
+	learning=8
+	trait=martial_cleric
+	trait=kind
+	2582.8.1={birth=yes}
+}
+2621003 ={ # yuan ruler
+	name="Chong"
+	dynasty=9020259 #yuan
+	culture=shanghainese
+	religion=ruist
+	martial=9
+	diplomacy=8
+	stewardship=9
+	intrigue=9
+	learning=8
+	trait=scholarly_theologian
+	trait=wroth
+	2580.6.1={birth=yes}
+}
+2621006 ={ # inland ruler
+	name="Beifeng"
+	dynasty=9020097 #Jia
+	culture=shanghainese
+	religion=gongye_shenjiao
+	female = yes
+	martial=8
+	diplomacy=8
+	stewardship=10
+	intrigue=9
+	learning=8
+	trait=midas_touched
+	trait=kind
+	2581.12.10={birth=yes}
+}
+# Xu
+2622001 ={ # King of Xu
+	name="Anguo"
+	dynasty=9022241 #Xing
+	culture=zhongyuan
+	religion=jibenyuanze
+	martial=6
+	diplomacy=8
+	stewardship=8
+	intrigue=9
+	learning=8
+	trait=tough_soldier
+	2580.10.1={birth=yes}
+}
+# Chu
+2643001 ={ # Emperor of Chu
+	name="Yongli"
+	dynasty=9043242 # Xiong
+	culture=chu
+	religion=ruist
+	martial=7
+	diplomacy=8
+	stewardship=8
+	intrigue=9
+	learning=11
+	trait=fortune_builder
+	trait=quick
+	2567.5.1={birth=yes}
+}
+
+2655001 ={ # Kong
+	name="Chunwen"
+	dynasty=9025551 #Kong
+	culture=jilu
+	religion=ruist
+	martial=6
+	diplomacy=10
+	stewardship=8
+	intrigue=7
+	learning=11
+	trait=mastermind_theologian
+	trait=quick
+	2581.8.9={birth=yes}
+}
+
+# Qin
+2671001 ={ # Emperor of Qin
+	name="Wanzheng"
+	dynasty=9087255 #Ying
+	culture=guanzhong
+	religion=quanzhen
+	martial=7
+	diplomacy=10
+	stewardship=10
+	intrigue=7
+	learning=8
+	trait=grey_eminence
+	2566.5.1={birth=yes}
+}
+	
