@@ -24,12 +24,28 @@ e_china = { #Unified China
 	color = { 238 28 37 }
 	color2={ 255 255 255 }
 	
-	capital = 1 #Beijing
+	capital = 1923 #Beijing
 	culture_group = han
 	
 	allow = {
 		culture_group = han
 	}
+}
+e_hong = {
+	color = { 226 66 0 }
+	color2={ 255 255 255 }
+	
+	capital = 1923 #Beijing
+	culture_group = han
+	
+	allow = {
+		culture_group = han
+	}
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	can_be_claimed = no
+	can_be_usurped = no
 }
 e_commonwealth = {
 	color = { 0 53 169 }
