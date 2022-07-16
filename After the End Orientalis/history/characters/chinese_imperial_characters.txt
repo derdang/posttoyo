@@ -38,6 +38,7 @@
 		}
 	}
 }
+
 2603001 ={ # Emperor of Jin
 	name="Huayi"
 	dynasty=9003001 #Huang
@@ -53,9 +54,25 @@
 	2578.1.1={birth=yes}
 	2600.1.1={capital = c_luolong}
 }
+2603101 = {  #Dai, Hong vassal
+	name="Dongqi"
+	dynasty=9003007 #Zhang
+	culture=jin
+	religion=ruist
+	martial=6
+	diplomacy=8
+	stewardship=8
+	intrigue=5
+	learning=9
+	trait=scholarly_theologian
+	trait=humble
+	trait=content
+	trait=sympathy_oldworld
+	2579.1.1={birth=yes}
+}
 2621001 ={ # kShanghai ruler
 	name="Zhugong"
-	dynasty=9020100 #Jiang
+	dynasty=9020901 #Jiang
 	culture=shanghainese
 	religion=gongye_shenjiao
 	martial=9
@@ -69,7 +86,7 @@
 }
 2621002 ={ # xu ruler
 	name="Zixi"
-	dynasty=9020243 #xu
+	dynasty=9020902 #xu
 	culture=shanghainese
 	religion=catholic
 	martial=9
@@ -77,13 +94,13 @@
 	stewardship=9
 	intrigue=9
 	learning=8
-	trait=martial_cleric
+	trait=mastermind_theologian
 	trait=kind
 	2582.8.1={birth=yes}
 }
 2621003 ={ # yuan ruler
 	name="Chong"
-	dynasty=9020259 #yuan
+	dynasty=9020903 #yuan
 	culture=shanghainese
 	religion=ruist
 	martial=9
@@ -94,6 +111,29 @@
 	trait=scholarly_theologian
 	trait=wroth
 	2580.6.1={birth=yes}
+}
+2621004 ={ # Sun ruler
+	name="Like"
+	dynasty=9020904 #Sun
+	culture=jianghuai
+	religion=gongye_shenjiao
+	martial=9
+	diplomacy=8
+	stewardship=9
+	intrigue=9
+	learning=8
+	trait=skilled_tactician
+	trait=brave
+	2580.6.1={birth=yes}
+}
+2621005 ={ # Zhou ruler
+	name="Nande"
+	dynasty=9020905 #Zhou
+	culture=shanghainese
+	religion=gongye_shenjiao
+	trait=midas_touched
+	trait=brave
+	2574.6.1={birth=yes}
 }
 2621006 ={ # inland ruler
 	name="Beifeng"
@@ -122,6 +162,42 @@
 	intrigue=9
 	learning=8
 	trait=tough_soldier
+	2580.10.1={birth=yes}
+}
+
+2625001 ={ # Shijiazhuang
+	name="Laohu"
+	dynasty=9025205 #Song
+	culture=jilu
+	religion=jibenyuanze
+	martial=10
+	trait=skilled_tactician
+	trait=brave
+	2583.8.9={birth=yes}
+}
+2625002 ={ # Shijiazhuang
+	name="Zhentao"
+	dynasty=9025205 #Song
+	culture=jilu
+	religion=jibenyuanze
+	martial=10
+	trait=skilled_tactician
+	trait=wroth
+	2587.2.1={birth=yes}
+}
+
+2633001 ={ # Xiamen
+	name="Xiangle"
+	dynasty=9033222 #Wang
+	culture=min
+	religion=mahayana
+	martial=10
+	diplomacy=11
+	stewardship=9
+	intrigue=9
+	learning=8
+	trait=mastermind_theologian
+	trait=genius
 	2580.10.1={birth=yes}
 }
 # Chu
