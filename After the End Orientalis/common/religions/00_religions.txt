@@ -1201,8 +1201,8 @@ pagan_group = {
 	mo = {
 		graphical_culture = chinesegfx
 
-		icon = 13
-		heresy_icon = 13
+		icon = 75
+		heresy_icon = 75
 		
 		color = { 214 211 202 }
 
@@ -3029,6 +3029,41 @@ oldworld = {
 		intermarry = gaian
 		intermarry = cetic
 		intermarry = shinto
+	}
+	quinto = {
+		graphical_culture = westerngfx
+
+		icon = 74
+		heresy_icon = 74
+		
+		color = { 0 153 51 }
+
+		high_god_name = GOD_DIVINO
+
+		god_names = {
+			THE_DESIRED QUEEN_TEARS VASCO_CAMOES
+		}
+		evil_god_names = {
+			BACCHUS ADAMASTOR CUCA
+		}
+		
+		scripture_name = THE_LUSIADS
+		priest_title = BUTLER
+		priests_can_marry = yes
+		
+		aggression = 0.5
+		allow_looting = yes
+		can_demand_religious_conversion = yes
+		female_temple_holders = yes
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		allow_viking_invasion = yes
+		
+		intermarry = folketro
+		intermarry = fornsed
+		intermarry = nysed
+		intermarry = sun_king_cultist
+		
 	}
 }
 nautical = {
