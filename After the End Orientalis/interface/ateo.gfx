@@ -18,6 +18,13 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_legendary"
+		texturefile = "gfx/traits/legendary.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 ############################
 # A Game of Thrones Traits #
@@ -91,6 +98,116 @@ spriteTypes = {
 # After the End Orientalis #
 ############################
 
+### Artifacts
+	spriteType = {
+		name = "GFX_quran_small"
+		texturefile = "gfx/interface/artifacts/inventory/quran_small.dds"
+	}
+	spriteType = {
+		name = "GFX_quran"
+		texturefile = "gfx/interface/artifacts/inventory/quran_med.dds"
+	}
+	spriteType = {
+		name = "GFX_prayermat_small"
+		texturefile = "gfx/interface/artifacts/inventory/prayer_mat_small.dds"
+	}
+	spriteType = {
+		name = "GFX_prayermat"
+		texturefile = "gfx/interface/artifacts/inventory/prayer_mat_normal.dds"
+	}
+
+### Off-Map India Event Pictures
+
+spriteType = {
+		name = "GFX_indian_civil_war"
+		texturefile = "gfx\\event_pictures\india_civil_war.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_devastating_plague"
+		texturefile = "gfx\\event_pictures\india_devastating_plague.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_famine"
+		texturefile = "gfx\\event_pictures\india_famine.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_golden_age"
+		texturefile = "gfx\\event_pictures\india_golden_age.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_stable"
+		texturefile = "gfx\\event_pictures\india_stable.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_isolationist"
+		texturefile = "gfx\\event_pictures\india_turns_inward.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_open"
+		texturefile = "gfx\\event_pictures\india_turns_open.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_unrest"
+		texturefile = "gfx\\event_pictures\india_unrest.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_arabs_invade"
+		texturefile = "gfx\\event_pictures\arabs_invades.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_rebel_general"
+		texturefile = "gfx\\event_pictures\rebel_prince.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_expansionist"
+		texturefile = "gfx\\event_pictures\india_expansionist.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_diplomatic_success"
+		texturefile = "gfx\\event_pictures\india_diplomatic_success.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_diplomatic_incident"
+		texturefile = "gfx\\event_pictures\india_diplomatic_incident.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_evt_indian_bureaucrat"
+		texturefile = "gfx\\event_pictures\indian_bureaucrat.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_india_invades"
+		texturefile = "gfx\\event_pictures\india_invades.dds"
+		allwaystransparent = yes
+	}
+
 ### custom event pictures
 
 #Cao Dai Pilgrimage
@@ -103,6 +220,244 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\\cao_dai.dds"
 	}
 	
+#Buddhist Events
+	spriteType = {
+		name = "GFX_evt_buddha_teaching"
+		texturefile = "gfx\\event_pictures\\buddha_teaching.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_buddhist_thai_old_temple"
+		texturefile = "gfx\\event_pictures\\buddhist_thai_old_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_buddha_parade"
+		texturefile = "gfx/event_pictures/buddha_parade.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_buddhist_contemplation"
+		texturefile = "gfx/event_pictures/buddhist_contemplation.dds"
+	}
+
+#Mandala Events
+	spriteType = {
+		name = "GFX_evt_white_elephant"
+		texturefile = "gfx\\event_pictures\\white_elephant.dds"
+	}
+
+#Weather Events
+	spriteType = {
+		name = "GFX_evt_monsoon"
+		texturefile = "gfx\\event_pictures\\monsoon_rains.dds"
+	}
+
+#Muslim Events
+	spriteType = {
+		name = "GFX_travel_muslim"
+		texturefile = "gfx/event_pictures/travel_muslim.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_zheng_he"
+		texturefile = "gfx/event_pictures/zheng_he.dds"
+	}
+#General Events
+	spriteType = {
+		name = "GFX_new_years"
+		texturefile = "gfx/event_pictures/new_years.dds"
+	}
+	spriteType = {
+		name = "GFX_polynesian_temples"
+		texturefile = "gfx/event_pictures/polynesian_temples.dds"
+	}
+	spriteType = {
+		name = "GFX_lanterns"
+		texturefile = "gfx/event_pictures/lanterns.dds"
+	}
+#Herder
+	spriteType = {
+		name = "GFX_reindeer_herders"
+		texturefile = "gfx/event_pictures/reindeer_herders.dds"
+	}
+#Japanese Postcard Pictures used for Various Events courtesy of Siosal
+	spriteType = {
+		name = "GFX_seirei_revelation"
+		texturefile = "gfx/event_pictures/seirei_revelation.dds"
+	}
+	spriteType = {
+		name = "GFX_japanese_palace"
+		texturefile = "gfx/event_pictures/japanese_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_east_asian_cities"
+		texturefile = "gfx/event_pictures/east_asian_cities.dds"
+	}
+	spriteType = {
+		name = "GFX_japanese_gossip"
+		texturefile = "gfx/event_pictures/japanese_gossip.dds"
+	}
+	spriteType = {
+		name = "GFX_hunting_deer"
+		texturefile = "gfx/event_pictures/hunting_deer.dds"
+	}
+	spriteType = {
+		name = "GFX_artic_hunting"
+		texturefile = "gfx/event_pictures/artic_hunting.dds"
+	}
+	spriteType = {
+		name = "GFX_mountain_calm"
+		texturefile = "gfx/event_pictures/mountain_calm.dds"
+	}
+	spriteType = {
+		name = "GFX_horseback"
+		texturefile = "gfx/event_pictures/horseback.dds"
+	}
+	spriteType = {
+		name = "GFX_baseball"
+		texturefile = "gfx/event_pictures/baseball.dds"
+	}
+	spriteType = {
+		name = "GFX_small_camp"
+		texturefile = "gfx/event_pictures/small_camp.dds"
+	}
+	spriteType = {
+		name = "GFX_performance_theater"
+		texturefile = "gfx/event_pictures/performance_theater.dds"
+	}
+	spriteType = {
+		name = "GFX_cherry_blossoms"
+		texturefile = "gfx/event_pictures/cherry_blossoms.dds"
+	}
+	spriteType = {
+		name = "GFX_shinto_shrine"
+		texturefile = "gfx/event_pictures/shinto_shrine.dds"
+	}
+#Chinese Art
+	spriteType = {
+		name = "GFX_evt_chinese_thinkers"
+		texturefile = "gfx\\event_pictures\\chinese_thinkers.dds"
+	}
+	
+### Orientalis Traits
+
+#Mahayana Traits
+	spriteType = {
+		name = "GFX_trait_mahayana_chan"
+		texturefile = "gfx/traits/mahayana_chan.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_esoteric"
+		texturefile = "gfx/traits/mahayana_esoteric.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_humanist"
+		texturefile = "gfx/traits/mahayana_humanist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_lotus"
+		texturefile = "gfx/traits/mahayana_lotus.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_maitreyan"
+		texturefile = "gfx/traits/mahayana_maitreyan.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mahayana_pureland"
+		texturefile = "gfx/traits/mahayana_pureland.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+#Japonic Traits
+	spriteType = {
+		name = "GFX_trait_koshitsu_shinto"
+		texturefile = "gfx/traits/koshitsu_shinto.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_minzoku_shinto"
+		texturefile = "gfx/traits/minzoku_shinto.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_bukka_shinto"
+		texturefile = "gfx/traits/bukka_shinto.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+#Sanmin Traits
+	spriteType = {
+		name = "GFX_trait_minzu_sanmin"
+		texturefile = "gfx/traits/minzu_sanmin.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_minquan_sanmin"
+		texturefile = "gfx/traits/minquan_sanmin.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_minsheng_sanmin"
+		texturefile = "gfx/traits/minsheng_sanmin.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+#Nusantara Traits
+	spriteType = {
+		name = "GFX_trait_kejawen"
+		texturefile = "gfx/traits/kejawen.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sunda_wiwitan"
+		texturefile = "gfx/traits/sunda_wiwitan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_tomanurung"
+		texturefile = "gfx/traits/tomanurung.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_nusantara_traditionalist"
+		texturefile = "gfx/traits/nusantara_traditionalist.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
 #Cao Dai Traits
 
 	spriteType = {
@@ -133,7 +488,119 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+		spriteType = {
+		name = "GFX_trait_saint_faith"
+		texturefile = "gfx/traits/saint_faith.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_senthang_muslim"
+		texturefile = "gfx/traits/senthang_muslim.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_senthang_middle_path"
+		texturefile = "gfx/traits/senthang_middle_path.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_senthang_metayya"
+		texturefile = "gfx/traits/senthang_metayya.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 
+#General Traits
+	spriteType = {
+		name = "GFX_trait_vegetarian"
+		texturefile = "gfx/traits/vegetarian.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_pious"
+		texturefile = "gfx/traits/pious.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+#Muslim Traits
+	spriteType = {
+		name = "GFX_trait_zair"
+		texturefile = "gfx/traits/ziyarat.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_on_ziyara"
+		texturefile = "gfx/traits/ziyarat.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sufi_zahid"
+		texturefile = "gfx/traits/zahid.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+#Sympathy Traits
+	spriteType = {
+		name = "GFX_trait_sympathy_japonic"
+		texturefile = "gfx/traits/sympathy_japonic.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_eastern"
+		texturefile = "gfx/traits/sympathy_eastern.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_latter_day_saints"
+		texturefile = "gfx/traits/sympathy_latter_day_saints.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_pagan_group"
+		texturefile = "gfx/traits/sympathy_pagan_group.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_nautical"
+		texturefile = "gfx/traits/sympathy_pirate.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sympathy_oldworld"
+		texturefile = "gfx/traits/sympathy_oldworld.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
 #Decisions Icons
 	spriteType = {
 		name = "GFX_cd_pilgrimage"
@@ -166,5 +633,61 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_form_khmer_empire"
 		texturefile = "gfx\\interface\\decision_form_khmer_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_reciting_sutras"
+		texturefile = "gfx\\interface\\decision_reciting_sutras.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_vesak"
+		texturefile = "gfx\\interface\\hold_vesak.dds"
+	}
+	spriteType = {
+		name = "GFX_claim_lan_xang"
+		texturefile = "gfx\\interface\\decision_claim_lan_xang.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_ashura"
+		texturefile = "gfx\\interface\\decision_icon_celebrate_ashura.dds"
+	}
+	spriteType = {
+		name = "GFX_pilgrimage_to_muslim_shrines"
+		texturefile = "gfx/interface/decision_icon_pilgrimage_to_muslim_shrines.dds"
+	}
+	spriteType = {
+		name = "GFX_hajj_to_mecca"
+		texturefile = "gfx/interface/decision_icon_hajj_to_mecca.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_obon_festival"
+		texturefile = "gfx/interface/decision_icon_obon_festival.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_hanami_festival"
+		texturefile = "gfx/interface/decision_icon_hanami_festival.dds"
+	}
+	spriteType = {
+		name = "GFX_change_shinto_branch"
+		texturefile = "gfx/interface/change_shinto_branch.tga"
+	}
+	spriteType = {
+		name = "GFX_change_mahayana_schools"
+		texturefile = "gfx/interface/change_mahayana_schools.tga"
+	}
+	spriteType = {
+		name = "GFX_change_sanmin_branch"
+		texturefile = "gfx/interface/change_sanmin_branch.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_new_years_festival"
+		texturefile = "gfx/interface/decision_icon_hold_new_years_festival.dds"
+	}
+	spriteType = {
+		name = "GFX_hold_shogatsu_festival"
+		texturefile = "gfx/interface/decision_icon_shogatsu_festival.dds"
+	}
+	spriteType = {
+		name = "GFX_hunt_for_whale"
+		texturefile = "gfx\\interface\\decision_icon_whale_hunt.dds"
 	}
 }

@@ -1,6 +1,6 @@
-max_provinces = 1056
-# stats:  1055 provinces
-# unused:
+max_provinces = 2263
+# stats:  2259 provinces
+# unused: 1888 2049
 definitions = "definition.csv"
 provinces = "provinces.bmp"
 positions = "positions.txt"
@@ -19,10 +19,14 @@ seasons = "seasons.txt"
 externals = {
 }
 
-sea_zones = { 924 1055 }
+sea_zones = { 1092 1277 }
+sea_zones = { 1544 1547 }
+sea_zones = { 1689 1697 }
+sea_zones = { 2058 2061 }
+sea_zones = { 2093 2101 }
 
 ocean_region = {	# Pacific Ocean
-	sea_zones = { 1 }
+	sea_zones = { 1 2 3 4 5 }
 }
 
 # Define which indices in trees.bmp palette which should count as trees for automatic terrain assignment
@@ -31,7 +35,11 @@ tree = { 3 4 7 10 }
 major_rivers = 
 {
 	# Pacific Ocean
-	1032 1033 1034 1035 1036 1037  #Irrawaddy River
-	1026 1027 1028 1029 1030 1031  #Mekong River
+	2058 2059 2060 2061  #Amur
+	1546 1547 1694 1695 1696 1697  #Huangde
+	1246 1247 1248 1249 1250 1251  #Irrawaddy River
+	1240 1241 1242 1243 1244 1245  #Mekong River
+	1252 1253 1254 1255 1256  #Xi
+	1257 1544 1545 1689 1690 1691 1692 1693  #Yangtze
 
 }

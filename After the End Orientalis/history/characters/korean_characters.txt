@@ -1,0 +1,521 @@
+###########Korean Pennisula Region Characters###########
+
+#Korean
+#1597 - Hangugin
+#1598 - Chosunin 
+
+###########North Korea###########
+#Theocracy of Nampo
+1598000={
+	name="Baram"
+	dynasty=1598003 #Jung
+	culture=chosunin
+	religion=concordanist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+}
+1598001={
+	name="Taegon"
+	dynasty=1598129 #Chong
+	culture=chosunin
+	religion=catholic
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+}
+1598002={
+	name="Yi-seo"
+	dynasty=1598152 #Goo
+	culture=chosunin
+	religion=atomicist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+}
+
+### The Eight Princes of The Eternal Sun
+1598010={ #k_pyongyang
+	name="Song Chol"
+	dynasty=1598000 #Kim
+	culture=chosunin
+	religion=atomicist
+	father=1598154
+	2599.1.1={birth=yes}
+}
+1598011={ #kaechon
+	name="Yong Sik"
+	dynasty=1598000 #Kim
+	culture=chosunin
+	religion=atomicist
+	father=1598152
+	2577.1.1={birth=yes}
+}
+1598012={ #d_wonsan
+	name="Yong Gon"
+	dynasty=1598400 #Kim
+	culture=chosunin
+	religion=atomicist
+	trait=bastard
+	father=1598152
+	2570.1.1={birth=yes}
+}
+1598013={ #Sinpo
+	name="Ha Il"
+	dynasty=1598401 #Kim
+	culture=chosunin
+	religion=atomicist
+	father=1598153
+	2588.1.1={birth=yes}
+}
+1598014={ #d_hamgyeong
+	name="Chong Ae"
+	dynasty=1598401 #Kim
+	culture=chosunin
+	female=yes
+	religion=atomicist
+	trait=diligent
+	stewardship=7
+	father=1598153
+	2582.1.1={birth=yes}
+}
+1598015={ #Hwanghae
+	name="Chong Bok"
+	dynasty=1598000 #Kim
+	culture=chosunin
+	female=yes
+	religion=atomicist
+	trait=brave
+	martial=7
+	father=1598152
+	2585.1.1={birth=yes}
+}
+#Old Kim's wives
+1598016={ #Chongju
+	name="Mi Hee"
+	dynasty=1598019 #Na
+	culture=chosunin
+	religion=atomicist
+	female=yes
+	trait=ambitious
+	2547.1.1={birth=yes}
+	2567.12.1={
+		add_spouse = 1598152
+	}
+}
+1598017={ #Kanggye
+	name="Young Joo"
+	dynasty=1598010 #Shin
+	culture=chosunin
+	religion=atomicist
+	female=yes
+	trait=fair
+	2586.1.1={birth=yes}
+	2599.12.1={
+		add_spouse = 1598154
+	}
+}
+##Sinuiju
+1598020={ #Sinuiju
+	name="Song Gun"
+	dynasty=1598018 #Ki
+	culture=chosunin
+	religion=atomicist
+	2561.1.1={birth=yes}
+}
+###### Prince's family #######
+1598030={ #k_pyongyang
+	name="Jong Su"
+	dynasty=1598000 #Kim
+	culture=chosunin
+	religion=atomicist
+	trait=genius
+	father=1598154
+	2601.1.1={birth=yes}
+}
+1598036={ #Chongju
+	name="Jung"
+	dynasty=1598019 #Na
+	culture=chosunin
+	religion=atomicist
+	2552.1.1={birth=yes}
+	2601.12.1={
+		employer = 1598016
+	}
+}
+1598037={ #Kanggye
+	name="Jong I"
+	dynasty=1598010 #Shin
+	culture=chosunin
+	religion=atomicist
+	female=yes
+	trait=quick
+	trait=fair
+	father=1598154
+	mother=1598017
+	2603.9.1={birth=yes}
+}
+###### North Korea History ###########
+1598150={ #
+	name="Haru"
+	dynasty=1598104 #Ho
+	culture=chosunin
+	religion=atomicist
+	2481.1.1={birth=yes}
+	2524.12.1={
+		add_spouse = 1598151
+	}
+	2532.6.6={death={
+			death_reason=death_murder_unknown #Murdered.
+		}
+	}
+}
+1598151={ #
+	name="Sang Ae"
+	dynasty=1598000 #Kim
+	culture=chosunin
+	religion=atomicist
+	female=yes
+	2472.1.1={birth=yes}
+	2570.6.6={death=yes}
+}
+1598152={ #Pyongyang
+	name="Baek Du"
+	dynasty=1598000 #Kim
+	culture=chosunin
+	religion=atomicist
+	trait=fair
+	father=1598150
+	mother=1598151
+	2525.1.1={birth=yes}
+	2535.1.1={
+		create_bloodline = {
+				type = baekdu_bloodline
+			}
+	}
+	2585.6.6={death=yes}
+}
+1598153={ #Pyongyang
+	name="Baek Jang"
+	dynasty=1598000 #Kim
+	culture=chosunin
+	religion=atomicist
+	trait=fair
+	father=1598150
+	mother=1598151
+	2540.1.1={birth=yes}
+	2601.6.6={death=yes}
+}
+1598154={ #Pyongyang
+	name="Yong Joo"
+	dynasty=1598000 #Kim
+	culture=chosunin
+	religion=atomicist
+	trait=fair
+	father=1598152
+	2563.1.1={birth=yes}
+	2603.6.6={death=yes}
+}
+#Grandmaster of the Chollima Riders
+1598155={
+	name="Beom-soo"
+	dynasty=1598151 #Man
+	culture=chosunin
+	religion=atomicist
+	martial=5
+	diplomacy=3
+	stewardship=5
+	intrigue=1
+	learning=6
+	trait=mastermind_theologian
+	trait=theologian
+	trait=diligent
+	trait=humble
+	trait=erudite
+	trait=brave
+	trait=genius
+	trait=physician
+	trait=strong
+	2550.1.1={birth=yes}
+}
+###########South Korea###########
+#Theocracy of Yeongju
+1597000={
+	name="Chul"
+	dynasty=1597006 #Kang
+	culture=hangugin
+	religion=concordanist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+}
+#Theocracy of Mokpo
+1597001={
+	name="Syngman"
+	dynasty=1597010 #Shin
+	culture=hangugin
+	religion=fuyin
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+}
+#Theocracy of Seogwipo
+1597002={
+	name="Garam"
+	dynasty=1597035 #Kwak
+	culture=hangugin
+	religion=fuyin
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+}
+#Count of Jeju
+1597003={
+	name="Noori"
+	dynasty=1597066 #Myung
+	culture=hangugin
+	religion=fuyin
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+}
+#Captaincy of Ulleung
+1597004={
+	name="Ho Seok"
+	dynasty=1597061 #Ma
+	culture=hangugin
+	religion=wokou
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=tough_soldier
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2580.1.1={birth=yes}
+}
+#Countess of Wonju
+1597005={
+	name="Raum"
+	dynasty=1597006 #Kang
+	culture=hangugin
+	religion=muist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	female=yes
+	trait=misguided_warrior
+	trait=depressed
+	trait=mystic
+	trait=giant
+	trait=uncouth
+	trait=stubborn
+	trait=proud
+	2580.1.1={birth=yes}
+}
+1597010={ #d seoul
+	name="Tae Soo"
+	dynasty=1597040 #Min
+	culture=hangugin
+	religion=muist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2578.1.1={birth=yes}
+}
+1597011={ #Suwon
+	name="Dong Geun"
+	dynasty=1597063 #Yun
+	culture=hangugin
+	religion=muist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2578.1.1={birth=yes}
+}
+1597012={ #Jeolla
+	name="Kwang"
+	dynasty=1597026 #Son
+	culture=hangugin
+	religion=concordanist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2578.1.1={birth=yes}
+}
+1597014={ #Gangwon
+	name="Jae Seop"
+	dynasty=1597005 #Cho
+	culture=hangugin
+	religion=concordanist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2578.1.1={birth=yes}
+}
+### Pusan
+1597100={ #Pusan
+	name="Eun Sung"
+	dynasty=1597004 #Choi
+	culture=hangugin
+	religion=unificationist
+	martial=4
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2584.1.1={birth=yes}
+}
+1597101={ #Chungcheong
+	name="Tae Hyun"
+	dynasty=1597000 #South Korean Kim
+	culture=hangugin
+	religion=muist
+	martial=4
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2582.1.1={birth=yes}
+}
+1597102={ #Daejeon
+	name="Dong Woo"
+	dynasty=1597002 #Park
+	culture=hangugin
+	religion=concordanist
+	martial=4
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	2582.1.1={birth=yes}
+}
+1597103={ #Choe Bu
+	name="Geumnam"
+	dynasty=1597151 #Choe
+	culture=hangugin
+	religion=muist
+	martial=4
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=grey_eminence
+	trait=gregarious
+	trait=proud
+	2582.1.1={birth=yes}
+}
+1597104={ #Jeong Mong-ju
+	name="Poeun"
+	dynasty=1597152 #Jeong
+	culture=hangugin
+	religion=mahayana
+	martial=4
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=grey_eminence
+	trait=gregarious
+	trait=shrewd
+	trait=honest
+	2582.1.1={birth=yes}
+}

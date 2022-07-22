@@ -8,7 +8,7 @@ character_event = {
 	only_rulers = yes
  
 	trigger = {
-		has_landed_title = d_cao_dai #replaced with the papacy later
+		has_landed_title = e_tian #the off-map entity for all PINGS
 		NOT = { has_global_flag = landmarks_set }
 		has_game_rule = {
 			name = orientalis_landmarks
@@ -44,6 +44,9 @@ character_event = {
 		183 = {
 			add_province_modifier = { name = landmark_tay_ninh_cathedral duration = -1 }
 		}
+		189 = {
+			add_province_modifier = { name = landmark_the_coconut_estate duration = -1 }
+		}
 		191 = {
 			add_province_modifier = { name = landmark_an_binh_island duration = -1 }
 		}
@@ -60,6 +63,11 @@ character_event = {
 		}
 		838 = {
 			add_province_modifier = { name = landmark_doi_suthep duration = -1 }
+		}
+		
+	#Micronesia
+		976 = {
+			add_province_modifier = { name = landmark_nan_madol duration  = -1 }
 		}
 		set_global_flag = landmarks_set
 	}

@@ -1,2 +1,328 @@
-#empty
+# Geographical regions
+# Regions can be declared with one or more of the following fields:
+#	duchies = { }, takes duchy title names declared in landed_titles.txt
+#	counties = { }, takes county title names declared in landed_titles.txt
+#	provinces = { }, takes province id numbers declared in /history/provinces
+#	regions = { }, a region can also include other regions, however the subregions needs to be declared before the parent region. 
+#		E.g. If the region world_europe contains the region world_europe_west then world_europe_west needs to be declared as a region before (i.e. higher up in this file) world_europe.
 
+###########################################################################
+# World Regions
+#	These groups are mutually exclusive on the same tier
+###########################################################################
+custom_old_vietnam = {
+    duchies = {
+		d_ha_noi d_ha_giang d_ha_long d_hai_phong d_nam_dhinh d_phu_tho d_son_la d_yen_bai d_sai_gon d_ben_tre d_can_tho d_dhong_thap d_ha_tien d_tay_ninh d_thua_thien d_cua_han d_dhak_lak d_gia_lai d_nghe_tinh d_ninh_thuan
+    }
+}
+custom_old_cambodia = {
+    duchies = {
+		d_phnom_penh d_koh_trol d_kratie d_oudong d_pursat d_siem_reap
+    }
+}
+custom_old_laos = {
+    duchies = {
+		d_vientiane d_champasak d_luang_prabang d_savannakhet d_xiangkhouang
+    }
+}
+custom_old_siam = {
+    duchies = {
+		d_palimonthon d_ayutthaya d_lopburi d_ratchaburi d_uthaithani d_prachinburi d_chantraburi d_chonburi d_nakhon_ratchasima d_khon_kaen d_ubon d_udon_thani d_chiang_mai d_lampang d_phayao d_surat d_nakhon_sri_thammarat d_pattani d_phuket d_songkhla d_sukhothai
+    }
+}
+custom_old_burma = {
+    duchies = {
+		d_tenasserim d_ayeyarwady d_bago d_hpa_an d_thanton d_yangon d_mandalay d_chin d_magwe d_pyinmana d_sagaing d_rakhine d_taungyi d_hsenwi d_kungtung d_kyebogi d_wa d_chindwinn d_wunpawng
+    }
+}
+custom_pennisular_malaysia = {
+    duchies = {
+		d_klang d_perak_selatan d_selangor_utara d_johor d_batu_pahat d_kepulauan_riau d_melaka d_negeri_sembilan d_kelantan d_pahang_dalaman d_pahang_luar d_terengganu d_penang d_kedah d_perlis 
+    }
+}
+custom_sumatra = {
+    duchies = {
+		d_palembang d_bangka_belitung d_bengkulu d_lampung d_ogan_komering d_aceh_utara d_aceh_selatan d_medan d_tapanuli d_siak d_indragiri d_jambi d_kerinci d_labuhanbatu d_rokan d_sumbar
+    }
+}
+custom_andaman = {
+    duchies = {
+		d_south_andaman d_north_andaman d_nicobar
+    }
+}
+custom_singapura = {
+    duchies = {
+		d_singapore
+    }
+}
+custom_turkistan = {
+	duchies = {
+		d_changji d_altay d_botala d_karamay d_tacheng d_turpan d_yili d_hotan d_aksu d_bayingolin d_kashgar d_kezilesu
+    }
+}
+custom_bhutan = {
+	duchies = {
+		d_paro d_bumthang
+    }
+}
+custom_tibet = {
+	duchies = {
+		d_garze d_chamdo d_ngawa d_nyingchi d_qinghai d_qaidam d_sanjiangyuan d_lhasa d_lhoka d_nagqu d_ngari d_xigaze  
+    }
+}
+custom_taiwan = {
+	duchies = {
+		d_taipeh d_tainan d_taitung d_taiwanfu
+    }
+}
+custom_fujian = {
+	duchies = {
+		d_fuzhou d_nanping d_ningde d_putian d_zhangzhou d_longyan d_quanzhou d_sanming d_xiamen
+    }
+}
+custom_inner_mongolia = {
+	duchies = {
+		d_suiyuan d_alxa d_chahar d_hulunbuir
+    }
+}
+custom_guangxi = {
+	duchies = {
+		d_nanning d_baise d_fangchenggang d_qinzhou d_watlam d_guilin d_hechi d_laibin d_wuzhou
+    }
+}
+custom_guangdong = {
+	duchies = {
+		d_guangzhou d_foshan d_gaoyao d_hong_kong d_huizhou d_jiangmen d_macau d_shenzhen d_zhaoqing d_zhuhai d_qingyuan d_shaoguan d_heyuan d_meizhou d_shantou d_shanwei d_zhanjiang d_maoming d_yangjiang d_yunfu
+    }
+}
+custom_yunnan = {
+	duchies = {
+		d_kunming d_yuxi d_zhaotong d_dali d_lijiang d_xishuangbanna d_honghe d_puer d_wenshan 
+    }
+}
+custom_sichuan = {
+	duchies = {
+		d_chengdu d_dayi d_deyang d_leshan d_liangshan d_mianyang d_panzhihua d_yaan d_luzhou d_dazhou d_lizhou d_neijiang d_suining d_yibin
+    }
+}
+custom_guizhou = {
+	duchies = {
+		d_guiyang d_bijie d_liupanshui d_tongren d_zunyi d_qiannan d_qianxinan
+    }
+}
+custom_chongqing = {
+	duchies = {
+		d_chongqing d_dazu d_jiangyang d_fu d_zhi d_nan d_shizhu d_quren d_juren d_kai
+    }
+}
+custom_gansu = {
+	duchies = {
+		d_lanzhou d_gannan d_longnan d_qingyang d_jiuquan d_wuwei d_zhangye
+    }
+}
+custom_ningxia = {
+	duchies = {
+		d_yinchuan d_zhongwei
+    }
+}
+custom_hunan = {
+	duchies = {
+		d_changsha d_changde d_huaihua d_xiangxi d_yiyang d_yueyang d_zhangjiajie d_hengyang d_chenzhou d_loudi d_shaoyang d_yongzhou
+    }
+}
+custom_hubei = {
+	duchies = {
+		d_wuhan d_huanggang d_huangshi d_jingmen d_shiyan d_wuchang d_xiangyang d_yichang d_enshi d_jingzhou
+    }
+}
+custom_anhui = {
+	duchies = {
+		d_hebei d_anqing d_chuzhou d_huainan d_luan d_suzhou d_bozhou d_fuyang d_huabei d_wuhu d_chizhou d_huangshan d_maanshan d_tongling d_xuancheng
+    }
+}
+custom_shaanxi = {
+	duchies = {
+		d_xian d_baoji d_hanzhong d_xianyang d_xicheng d_yanan d_yulin d_tongchuan d_weinan
+    }
+}
+custom_henan = {
+	duchies = {
+		d_zhengzhou d_kaifeng d_luoyang d_sanmenxia d_shangqiu d_zhumadian d_nanyang d_xinyang d_zhoukou d_pingdingshan d_xuchang d_anyang d_jiaozuo d_puyang d_xinxiang 
+    }
+}
+custom_jilin = {
+	duchies = {
+		d_changchun d_baishan d_jilin d_siping d_songyuan d_tonghua d_yanbian
+    }
+}
+custom_liaoning = {
+	duchies = {
+		d_dalian d_anshan d_benxi d_dandong d_fushun d_liaoyang d_yingkou d_shenyang d_chaoyang d_huludao d_jinzhou d_tieling
+    }
+}
+custom_heilongjiang = {
+	duchies = {
+		custom_jilin d_qiqihar d_zhongwei d_xian d_baoji d_daqing d_heihe d_suihua d_harbin d_jiamusi d_jixi d_mudanjiang d_shuangyashan d_yichun 
+    }
+}
+custom_hainan = {
+	duchies = {
+		d_hainan
+    }
+}
+custom_shanxi = {
+	duchies = {
+		d_taiyuan d_changzhi d_jinzhong d_linfen d_lueliang d_yuncheng d_datong d_xinzhou
+    }
+}
+custom_zhili = {
+	duchies = {
+		d_beijing d_chengde d_langfang d_qinhuangdao d_tangshan d_tianjin d_yizhou d_zhangjiakou d_handan d_baozhou d_cangzhou d_hengshui d_shijiazhuang d_xingtai 
+    }
+}
+custom_zhejiang = {
+	duchies = {
+		d_hangzhou d_jiaxing d_ningbo d_shaoxing d_wenzhou d_jinhua d_lishui d_quzhou d_taichow
+    }
+}
+custom_jiangxi = {
+	duchies = {
+		d_nanchang d_jingdezhen d_jiujiang d_shangrao d_xinyu d_yingtan d_ganzhou d_jian d_linchuan
+    }
+}
+custom_jiangsu = {
+	duchies = {
+		d_nanzhou d_changzhou d_soochow d_wuxi d_huaian d_nantong d_rugao d_taizhou d_yancheng d_yangzhou d_shanghai d_fengxian d_pudong d_songjiang d_xuzhou d_lianyungang d_suqian
+    }
+}
+custom_shandong = {
+	duchies = {
+		d_jinan d_dezhou d_dongying d_weifang d_zibo d_yantai d_dongyi d_qingdao d_weihai d_heze d_jining d_linyi d_rizhao d_lanling 
+    }
+}
+custom_liangguang = {
+	regions = {
+		custom_guangxi custom_guangdong custom_hainan
+    }
+}
+custom_xibei = { #Northwest China
+	regions = {
+		custom_gansu custom_ningxia custom_shaanxi
+    }
+}
+custom_dongbei = { #Northeast China
+	regions = {
+		custom_jilin custom_heilongjiang custom_liaoning
+    }
+}
+custom_xinan = { #Southwest China
+	regions = {
+		custom_yunnan custom_sichuan custom_guizhou custom_chongqing
+	}
+}
+custom_zhongnan = { #South-Central China
+	regions = {
+		custom_liangguang custom_hunan custom_hubei custom_henan
+	}
+}
+custom_huadong = { #East China
+	regions = {
+		custom_fujian custom_anhui custom_zhejiang custom_jiangxi custom_jiangsu custom_shandong
+	}
+}
+custom_huabei = { #North China
+	regions = {
+		custom_zhili custom_shanxi 
+    }
+}
+custom_hokkaido = {
+	duchies = {
+		d_oshima d_akan d_mashike d_shiretoko d_tomuraushi
+    }
+}
+custom_honshu = {
+	duchies = {
+		d_niigata d_aichi d_gifu d_hokuriku d_nagano d_shizuoka d_sanin d_hiroshima d_okayama d_yamaguchi d_omi d_asuka d_hyogo d_osaka d_wakayama d_gunma d_chiba d_ibaraki d_izu d_kanagawa d_saitama d_tochigi d_tokyo d_aomori d_dewa d_fukushima d_oshu
+    }
+}
+custom_shikoku = {
+	duchies = {
+		d_seto d_kochi 
+    }
+}
+custom_kyushu = {
+	duchies = {
+		d_kitakyushu d_kagoshima d_kumamoto d_miyazaki d_nagasaki d_saga
+    }
+}
+custom_okinawa = {
+	duchies = {
+		d_ryukyu
+    }
+}
+custom_luzon = {
+	duchies = {
+		d_katagalugan d_la_laguna d_manila d_mimaro d_quezon d_cordillera d_cagayan d_central_luzon d_ilocos d_pangasinan d_sierra_madre 
+    }
+}
+custom_visaya = {
+	duchies = {
+		d_kabisay_an d_bicol d_leyte d_samar d_panay d_negros d_palawan 
+    }
+}
+custom_mindanao = {
+	duchies = {
+		d_davao d_agusan d_davao_oriental d_sarangani d_surigao d_zamboanga d_bukidnon d_cotabato d_lanao d_zamboanga_del_norte 
+    }
+}
+custom_korea = {
+	duchies = {
+		d_hamgyong d_wonsan d_taegu d_pusan d_chagang d_hwanghae d_pyongyang d_seoul d_chungcheong d_gangwon d_jeju d_jeolla 
+    }
+}
+custom_china_core = {
+	regions = {
+		custom_xibei custom_zhongnan custom_huadong custom_xinan custom_dongbei custom_huabei
+    }
+}
+world_old_japan = {
+	regions = {
+		custom_honshu custom_shikoku custom_kyushu custom_hokkaido custom_okinawa
+    }
+}
+world_the_philippines = {
+	regions = {
+		custom_mindanao custom_visaya custom_luzon
+    }
+	duchies = {
+		d_sulu
+	}
+}
+world_old_china = {
+	regions = {
+		custom_turkistan custom_tibet custom_china_core custom_taiwan custom_inner_mongolia
+    }
+}
+world_indochina = {
+    regions = {
+		custom_old_vietnam custom_old_laos custom_old_cambodia custom_old_siam custom_old_burma
+    }
+}
+custom_historical_plague_free_zone = {
+    duchies = {
+		d_guam d_mariana d_palau d_yap
+    }
+}
+custom_monsoon_region = {
+    regions = {
+		world_indochina world_the_philippines custom_pennisular_malaysia custom_singapura custom_sumatra custom_andaman custom_xinan custom_zhongnan custom_taiwan custom_fujian custom_anhui custom_zhejiang custom_jiangxi custom_jiangsu custom_kyushu custom_shikoku custom_honshu custom_okinawa
+    }
+	duchies = {
+		d_guam d_mariana d_palau d_yap
+    }
+}
+custom_earthquake_region = {
+	regions = {
+		world_old_japan world_the_philippines custom_taiwan
+    }
+}

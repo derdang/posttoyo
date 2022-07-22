@@ -209,19 +209,44 @@ d_golden_star_dragons = {
 	mercenary_type = d_golden_star_dragons_composition
 }
 
-d_knights_of_lavang = {
-	color={ 80 100 90 }
+d_jaturamitr_green = {
+	color={ 30 150 30 }
 	color2={ 255 255 255 }
 		
-	capital = 161 # Huê
+	capital = 778 # Bangkok
 
-	culture = annamese
+	culture = thai_central
 	
 	allow = {
-		culture_group = viet
-		religion = catholic
+		culture_group = southwest_tai
+		NOT = { culture = shan }
 	}
 		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_jaturamitr_composition
+}
+d_jaturamitr_white = {
+	color={ 180 50 50 } #because people associate red with smth else. hence the name :P
+	color2={ 255 255 255 }
+		
+	capital = 778 # Bangkok
+
+	culture = thai_central
+	
+	allow = {
+		culture_group = southwest_tai
+		NOT = { culture = shan }
+	}
+	religion = catholic
 	title = "GRANDMASTER"
 	foa = "GRANDMASTER_FOA"
 		
@@ -232,5 +257,80 @@ d_knights_of_lavang = {
 	independent = yes
 	strength_growth_per_century = 1.0
 	
-	mercenary_type = d_knights_of_lavang_composition
+	mercenary_type = d_jaturamitr_composition
+}
+d_jaturamitr_gold = {
+	color={ 255 204 51 } #acutually "Purple" order but idk
+	color2={ 255 255 255 }
+		
+	capital = 778 # Bangkok
+
+	culture = thai_central
+	
+	allow = {
+		culture_group = southwest_tai
+		NOT = { culture = shan }
+	}
+	religion = baptist #Uh...what's the best fit for Thai Presbytherian?
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_jaturamitr_composition
+}
+d_samut_prakarn_croc = {
+	color={ 0 108 240 }
+	color2={ 255 255 255 }
+		
+	capital = 778 # Bangkok
+
+	culture = thai_central
+	
+	allow = {
+		culture_group = southwest_tai
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_thai_crocodile_farm_composition
+}
+
+d_asa_cham = {
+	color={ 0 155 255 }
+	color2={ 255 255 255 }
+		
+	capital = 804 # Chumphon
+
+	religion = senthang
+	culture = cham
+	
+	allow = {
+		culture_group = southwest_tai
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_asa_cham_composition
 }

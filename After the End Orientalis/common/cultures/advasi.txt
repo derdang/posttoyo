@@ -1,0 +1,357 @@
+advasi = {
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	graphical_cultures = { indiangfx muslimgfx }
+	
+	chin = { # Indo-Aryan
+		graphical_cultures = { indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+		
+		color = { 0.45 0.0 0.0 }
+	
+		male_names = {
+			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran 
+			Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran 
+			Chandrasen Chandranarayan Chaturanan Chilarai 
+			Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan 
+			Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha 
+			Gajnarayan Gopala Govindachandra Govindapala 
+			Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan 
+			Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan 
+			Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy 
+			Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada 
+			Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan 
+			Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan 
+			Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa 
+			Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala 
+			Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan 
+			Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala 
+			Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra 
+			Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala 
+			Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha
+			"Bhairav Singh" "Bhavesh" "Bhogishwar" "Dev Singh" "Dhir Singh" Dhireshwar 
+			"Ganeshwar Singh" "Gang Dev" Harasimhadeva "Hari Singh" "Hemant Sen" 
+			"Kameshwar" "Kirti Singh" Jyotirishwar "Laxman Sen" "Laxminath Singh Dev" Madanpal 
+			"Nanya Dev" "Nar Singh" "Narsingh Dev" "Padma Singh" "Rambhadra Singh Dev" Rameshwar 
+			"Samant Sen" "Shakrasingh Dev" "Shiv Singh"  "Vallal Sen" "Vijay Sen"
+			Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal 
+			Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra 
+			Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+		}
+		female_names = {
+			Amrapali Amritakala Asima Bhavashankari "Bishwas Devi" Bhogavati Bibibai Dattadevi Devavati "Devi Ahiylya" Gandharavati
+			Gayatri Himadrija Hira Jira Kanchani Mahendrani Malavyadevi Nayanadevi Rani Ratnadevi Suvrata
+			Syamadevi Vijnayavati Vina Yajnavati
+		}
+		
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+		
+		
+		modifier = default_culture_modifier
+	}
+	
+	meitei = { # Indo-Aryan
+		graphical_cultures = { indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+		
+		color = { 0.45 0.0 0.0 }
+	
+		male_names = {
+			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran 
+			Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran 
+			Chandrasen Chandranarayan Chaturanan Chilarai 
+			Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan 
+			Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha 
+			Gajnarayan Gopala Govindachandra Govindapala 
+			Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan 
+			Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan 
+			Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy 
+			Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada 
+			Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan 
+			Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan 
+			Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa 
+			Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala 
+			Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan 
+			Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala 
+			Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra 
+			Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala 
+			Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha
+			"Bhairav Singh" "Bhavesh" "Bhogishwar" "Dev Singh" "Dhir Singh" Dhireshwar 
+			"Ganeshwar Singh" "Gang Dev" Harasimhadeva "Hari Singh" "Hemant Sen" 
+			"Kameshwar" "Kirti Singh" Jyotirishwar "Laxman Sen" "Laxminath Singh Dev" Madanpal 
+			"Nanya Dev" "Nar Singh" "Narsingh Dev" "Padma Singh" "Rambhadra Singh Dev" Rameshwar 
+			"Samant Sen" "Shakrasingh Dev" "Shiv Singh"  "Vallal Sen" "Vijay Sen"
+			Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal 
+			Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra 
+			Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+		}
+		female_names = {
+			Amrapali Amritakala Asima Bhavashankari "Bishwas Devi" Bhogavati Bibibai Dattadevi Devavati "Devi Ahiylya" Gandharavati
+			Gayatri Himadrija Hira Jira Kanchani Mahendrani Malavyadevi Nayanadevi Rani Ratnadevi Suvrata
+			Syamadevi Vijnayavati Vina Yajnavati
+		}
+		
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+		
+		
+		modifier = default_culture_modifier
+	}
+	
+	naga = { # Indo-Aryan
+		graphical_cultures = { indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+		
+		color = { 0.45 0.0 0.0 }
+	
+		male_names = {
+			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran 
+			Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran 
+			Chandrasen Chandranarayan Chaturanan Chilarai 
+			Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan 
+			Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha 
+			Gajnarayan Gopala Govindachandra Govindapala 
+			Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan 
+			Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan 
+			Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy 
+			Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada 
+			Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan 
+			Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan 
+			Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa 
+			Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala 
+			Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan 
+			Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala 
+			Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra 
+			Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala 
+			Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha
+			"Bhairav Singh" "Bhavesh" "Bhogishwar" "Dev Singh" "Dhir Singh" Dhireshwar 
+			"Ganeshwar Singh" "Gang Dev" Harasimhadeva "Hari Singh" "Hemant Sen" 
+			"Kameshwar" "Kirti Singh" Jyotirishwar "Laxman Sen" "Laxminath Singh Dev" Madanpal 
+			"Nanya Dev" "Nar Singh" "Narsingh Dev" "Padma Singh" "Rambhadra Singh Dev" Rameshwar 
+			"Samant Sen" "Shakrasingh Dev" "Shiv Singh"  "Vallal Sen" "Vijay Sen"
+			Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal 
+			Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra 
+			Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+		}
+		female_names = {
+			Amrapali Amritakala Asima Bhavashankari "Bishwas Devi" Bhogavati Bibibai Dattadevi Devavati "Devi Ahiylya" Gandharavati
+			Gayatri Himadrija Hira Jira Kanchani Mahendrani Malavyadevi Nayanadevi Rani Ratnadevi Suvrata
+			Syamadevi Vijnayavati Vina Yajnavati
+		}
+		
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+		
+		
+		modifier = default_culture_modifier
+	}
+	
+	zo = { # Indo-Aryan
+		graphical_cultures = { indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+		
+		color = { 0.45 0.2 0.11 }
+	
+		male_names = {
+			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran 
+			Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran 
+			Chandrasen Chandranarayan Chaturanan Chilarai 
+			Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan 
+			Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha 
+			Gajnarayan Gopala Govindachandra Govindapala 
+			Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan 
+			Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan 
+			Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy 
+			Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada 
+			Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan 
+			Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan 
+			Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa 
+			Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala 
+			Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan 
+			Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala 
+			Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra 
+			Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala 
+			Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha
+			"Bhairav Singh" "Bhavesh" "Bhogishwar" "Dev Singh" "Dhir Singh" Dhireshwar 
+			"Ganeshwar Singh" "Gang Dev" Harasimhadeva "Hari Singh" "Hemant Sen" 
+			"Kameshwar" "Kirti Singh" Jyotirishwar "Laxman Sen" "Laxminath Singh Dev" Madanpal 
+			"Nanya Dev" "Nar Singh" "Narsingh Dev" "Padma Singh" "Rambhadra Singh Dev" Rameshwar 
+			"Samant Sen" "Shakrasingh Dev" "Shiv Singh"  "Vallal Sen" "Vijay Sen"
+			Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal 
+			Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra 
+			Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+		}
+		female_names = {
+			Amrapali Amritakala Asima Bhavashankari "Bishwas Devi" Bhogavati Bibibai Dattadevi Devavati "Devi Ahiylya" Gandharavati
+			Gayatri Himadrija Hira Jira Kanchani Mahendrani Malavyadevi Nayanadevi Rani Ratnadevi Suvrata
+			Syamadevi Vijnayavati Vina Yajnavati
+		}
+		
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+		
+		
+		modifier = default_culture_modifier
+	}
+	jumma = { # Indo-Aryan
+		graphical_cultures = { indiangfx muslimgfx }
+		secondary_event_pictures = bedouin_arabic
+		
+		color = { 0.23 0.21 0.51 }
+	
+		male_names = {
+			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran 
+			Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran 
+			Chandrasen Chandranarayan Chaturanan Chilarai 
+			Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan 
+			Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha 
+			Gajnarayan Gopala Govindachandra Govindapala 
+			Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan 
+			Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan 
+			Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy 
+			Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada 
+			Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan 
+			Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan 
+			Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa 
+			Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala 
+			Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan 
+			Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala 
+			Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra 
+			Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala 
+			Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha
+			"Bhairav Singh" "Bhavesh" "Bhogishwar" "Dev Singh" "Dhir Singh" Dhireshwar 
+			"Ganeshwar Singh" "Gang Dev" Harasimhadeva "Hari Singh" "Hemant Sen" 
+			"Kameshwar" "Kirti Singh" Jyotirishwar "Laxman Sen" "Laxminath Singh Dev" Madanpal 
+			"Nanya Dev" "Nar Singh" "Narsingh Dev" "Padma Singh" "Rambhadra Singh Dev" Rameshwar 
+			"Samant Sen" "Shakrasingh Dev" "Shiv Singh"  "Vallal Sen" "Vijay Sen"
+			Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal 
+			Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra 
+			Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+		}
+		female_names = {
+			Amrapali Amritakala Asima Bhavashankari "Bishwas Devi" Bhogavati Bibibai Dattadevi Devavati "Devi Ahiylya" Gandharavati
+			Gayatri Himadrija Hira Jira Kanchani Mahendrani Malavyadevi Nayanadevi Rani Ratnadevi Suvrata
+			Syamadevi Vijnayavati Vina Yajnavati
+		}
+		
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+		
+		
+		modifier = default_culture_modifier
+	}
+	tripuri = {
+		graphical_cultures = { bodpagfx }
+		
+		color = { 0.30 0.77 0.65 }
+
+		male_names = {
+		}
+		female_names = { 
+		}
+
+		from_dynasty_prefix = "of "
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
+	mizo = { #Mizo-Zozo-Kaki
+		graphical_cultures = { bodpagfx }
+		unit_graphical_cultures = { chinesegfx  }
+
+		dynasty_name_first = yes
+		
+		color = { 120 182 193 }
+		
+		male_names = {
+			Beichhua Biakmawia 
+			Challianchana 
+			Daniel_Daniel Darchhawna Dengchhunga 
+			Francis_Francis 
+			Gilbert_Gilbert 
+			Henry_Henry Hiphei Hlunthuama Hmartawnphunga Hmingsanga Hrangthatfieng Hriatpuia Hunthara
+			Jacob_James John_John Joseph_Joseph 
+			Kenneth 
+			Lalbiakthanga Lalbuaia Lalchamliana Lalchhanhima Lalchhantluanga Laldailova Laldenga Laldinliana Lalduhoma Lalhmangaiha Lalhming Lalhmingthanga Lalhuma Lallungmuana Lalmanzuala Lalnghinglova Lalnunmawia Lalpekhlua Lalrinawma Lalrindika Lalrinenga Lalrinliana Lalrosanga Lalsanga Lalsangliana Lalsangzuala Lalsawia Lalsawma Lalsawta Lalsiamliana Lalthangfala Lalthangkima Lalthangliana Lalthanhawla Lalthanliana Lalthantluanga Lalthlamuong Laltlanzova Laltluangliana Lalzarliana Lalzirliana Lalzova Lalzuia Langlura Liansailova Liantlira Luke_Luke 
+			Malsawma Malsawmfela Malsawmzela Malsawmtluanga 
+			Ngurhlunchhunga Ngursangliana Ngurzidinga 
+			Pahlira Peter_Peter 
+			Ramhluna Robert_Robert Robula Rokunga Romawia Rothangpuia Rothansiama Rothuama Rotluanga Rualkhuma 
+			Sangkhuma Sangliana Sangthankima Satkunga Sena Silvera Stephen_Stephen 
+			Tawnluia Thacho Thanga Thangchuanga Thangrimawia Thanzinga Thenphunga Thuama Tlanghmingthanga 
+			Vaisanga Vanchheuva Vanchhunga Vankhama Vanlalauva Vanlalthlana Vanlalvena Vanlalzawma 
+			Zirsangzela Zodintluanga Zomuanpuia Zoramthanga 
+		}
+		female_names = { 
+			Agnes_Agnes 
+			Bernadet_Bernadette 
+			Chawngnunmawii 
+			Darchhungi Darhmingliani Dari Darneihkimi Darngeni Dokungi 
+			Esther Evelyn 
+			Germanthangi 
+			Joy 
+			Kaichhingi Kawlramthangi Khawtinhnieng 
+			Lalbiakdiki Lalbiakveli Laldingliani Lalduhawmi Lalhmangaihi Lalhmingmawii Lalhmingthangi Lalhrimi Lalhuapzauvi Lallawmzuali Lalnuntluangi Lalramhluni Lalrengpuii Lalriliani Lalsangzeli Lalsawmliani Lalsangzuali Lalthakimi Lalthangmawii Lalthangpuii Lalthlamuani Lalvenhimi Liansailovi Lucy_Lucy 
+			Malsawmtluangi Margaret_Margaret Milari 
+			Ngurzikpuii Nuchhungi Nunthari 
+			Remtluangi Roneihsangi 
+			Saichhungi Sangkhumi Sathlie 
+			Thangpuii Thangzawni Thansiami 
+			Vanhlupuii Vanlalnunpari Vanlalruati 
+			Zathiangi Zochhuanawmin Zorinzuali 
+		}
+		
+		from_dynasty_prefix = ""
+
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+		
+		used_for_random = no
+
+		modifier = default_culture_modifier
+	}
+	tani = { #Indo-Aryan
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.5 0.7 0.3 }
+		
+		male_names = { 
+			Ogni_Agni Orjuna_Arjuna Omit_Amita Obixek_Abisheka Ojoy
+			Bissax_Vishvasa
+			Esh_Esha
+			Sondro_Chandra
+		}
+		
+		female_names = { 
+			Omia_Amrita 
+		}
+	}
+	rohingya = { #Indo-Aryan
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.3 0.23 0.3 }
+		
+		male_names = { 
+			Ogni_Agni Orjuna_Arjuna Omit_Amita Obixek_Abisheka Ojoy
+			Bissax_Vishvasa
+			Esh_Esha
+			Sondro_Chandra
+		}
+		
+		female_names = { 
+			Omia_Amrita 
+		}
+	}
+}

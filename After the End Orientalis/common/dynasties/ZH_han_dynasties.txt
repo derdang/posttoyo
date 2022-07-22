@@ -1,0 +1,508 @@
+#Reduced Chinese and minorities dynasties names based on the file in dev folder.
+# Please keep this separate from main file until we get most of China and their major cultures into the mod.
+#Number scheme (for now) "90xxyyy" 
+# 'xx' generally/loosely followed regional level of PRC's Postal code system
+# 'yyy' is id of the dynasty/surname. Referred to hantemp dynsties.txt 
+#Example - 9001007 = 90 - 01 (Hohhot,Inner Mongolia) - 007 Bao (referred to hantemp)
+#Number outside of hantemp  000-292 may be used when needed for surname without Chinese equivalent in the file. 
+#
+# Note : As of now the names are in Mandarin. Feel free to replace with regional pronounciation as long as it can be referred back to the same id/character.
+#		 I don't sure how to handle multiple pronounciation for a surname yet :S - Poom
+#Resource : 
+#	Surnames in China : www.jstor.org/stable/23767123 (Particularly on minorities in p.9-11)
+
+### NOTE : Shandong and Hebei/Zhili were already covered by chinese_dynasties.txt. To merge later
+#Inner Mongolia :9001
+9001007 = { name="Bao" culture=mengguzu } #""Borjigin""
+9001077 = { name="Guo" culture=mengguzu }
+9001135 = { name="Ma" culture=mengguzu }
+9001159 = { name="Pan" culture=mengguzu }
+9001167 = { name="Qi" culture=mengguzu }
+
+#Shanxi Jin : 9003
+9003000 = { name="Guo" culture=jin }
+9003001 = { name="Huang" culture=jin used_for_random=no}
+9003002 = { name="Jiang" culture=jin }
+9003003 = { name="Li" culture=jin }
+9003004 = { name="Ma" culture=jin }
+9003005 = { name="Wang" culture=jin }
+9003006 = { name="Yu" culture=jin }
+9003007 = { name="Zhang" culture=jin }
+9003008 = { name="Ai" culture=jin } 
+9003009 = { name="Shi" culture=jin }
+9003010 = { name="Gao" culture=jin }
+9003011 = { name="Gan" culture=jin }
+9003012 = { name="Jin" culture=jin }
+9003013 = { name="Zhao" culture=jin }
+9003014 = { name="Sima" culture=jin }
+9003015 = { name="Jia" culture=jin }
+9003016 = { name="Dong" culture=jin }
+
+#Hebei/Zhili: 9006 
+
+### Hebei
+
+9005026 = { name="Chen" culture=pekingese }
+9005061 = { name="Gao" culture=pekingese }
+9005077 = { name="Guo" culture=pekingese }
+9005091 = { name="Huang" culture=pekingese }
+9005120 = { name="Li" culture=pekingese }
+9005128 = { name="Liu" culture=pekingese }
+9005135 = { name="Ma" culture=pekingese }
+9005222 = { name="Wang" culture=pekingese }
+9005243 = { name="Xu" culture=pekingese }
+9005258 = { name="Yu" culture=pekingese }
+9005271 = { name="Zhang" culture=pekingese }
+
+9005801 = { name="Zhao" culture=pekingese used_for_random = no }  #imperial
+
+9006026 = { name="Chen" culture=tianjinese }
+9006061 = { name="Gao" culture=tianjinese }
+9006077 = { name="Guo" culture=tianjinese }
+9006091 = { name="Huang" culture=tianjinese }
+9006120 = { name="Li" culture=tianjinese }
+9006128 = { name="Liu" culture=tianjinese }
+9006135 = { name="Ma" culture=tianjinese }
+9006222 = { name="Wang" culture=tianjinese }
+9006243 = { name="Xu" culture=tianjinese }
+9006258 = { name="Yu" culture=tianjinese }
+9006271 = { name="Zhang" culture=tianjinese }
+
+# NE China : 901 (Dongbei)
+#-- Dongbei
+9010016 = { name="Cai" culture=dongbei }
+9010061 = { name="Gao" culture=dongbei }
+9010077 = { name="Guo" culture=dongbei }
+9010091 = { name="Huang" culture=dongbei }
+9010100 = { name="Jiang" culture=dongbei }
+9010120 = { name="Li" culture=dongbei }
+9010135 = { name="Ma" culture=dongbei }
+9010222 = { name="Wang" culture=dongbei }
+9010258 = { name="Yu" culture=dongbei }
+9010271 = { name="Zhang" culture=dongbei }
+
+9011103 = { name="Jin" culture=chaoxianzu } #Chinese reading of Kim
+9011120 = { name="Li" culture=chaoxianzu } #Lee
+9011500 = { name="Po" culture=chaoxianzu } #Park - don't exist in hantemp_dyn
+9011033 = { name="Cui" culture=chaoxianzu } #Choi
+9011005 = { name="Zheng" culture=chaoxianzu } #Jeong
+9011222 = { name="Wang" culture=chaoxianzu }
+9011271 = { name="Zhang" culture=chaoxianzu }
+
+# Jiangsu + Shanghai : 902
+
+9020016 = { name="Cai" culture=shanghainese }
+9020026 = { name="Chen" culture=shanghainese }
+9020061 = { name="Gao" culture=shanghainese }
+9020064 = { name="Gong" culture=shanghainese }
+9020066 = { name="Gongsun" culture=shanghainese }
+9020069 = { name="Gongye" culture=shanghainese }
+9020077 = { name="Guo" culture=shanghainese }
+9020087 = { name="Hu" culture=shanghainese }
+9020091 = { name="Huang" culture=shanghainese }
+9020097 = { name="Jia" culture=shanghainese }
+9020100 = { name="Jiang" culture=shanghainese }
+9020120 = { name="Li" culture=shanghainese }
+9020125 = { name="Lin" culture=shanghainese }
+9020128 = { name="Liu" culture=shanghainese }
+9020207 = { name="Su" culture=shanghainese }
+9020208 = { name="Sun" culture=shanghainese }
+9020222 = { name="Wang" culture=shanghainese }
+9020229 = { name="Wu" culture=shanghainese }
+9020243 = { name="Xu" culture=shanghainese }
+9020249 = { name="Yang" culture=shanghainese }
+9020259 = { name="Yuan" culture=shanghainese }
+9020271 = { name="Zhang" culture=shanghainese }
+9020272 = { name="Zhao" culture=shanghainese }
+9020279 = { name="Zhou" culture=shanghainese }
+9020280 = { name="Zhu" culture=shanghainese }
+9020000 = { name="Lyu" culture=shanghainese }
+
+#Shanghai patrician dynasties
+9020901 = { name="Jiang" culture=shanghainese used_for_random=no }
+9020902 = { name="Xu" culture=shanghainese used_for_random=no }
+9020903 = { name="Yuan" culture=shanghainese used_for_random=no }
+9020904 = { name="Sun" culture=shanghainese used_for_random=no }
+9020905 = { name="Zhou" culture=shanghainese used_for_random=no }
+
+9021016 = { name="Cai" culture=jianghuai }
+9021026 = { name="Chen" culture=jianghuai }
+9021077 = { name="Guo" culture=jianghuai }
+9021079 = { name="Han" culture=jianghuai }
+9021087 = { name="Hu" culture=jianghuai }
+9021091 = { name="Huang" culture=jianghuai }
+9021097 = { name="Jia" culture=jianghuai }
+9022100 = { name="Jiang" culture=jianghuai }
+9021120 = { name="Li" culture=jianghuai }
+9021125 = { name="Lin" culture=jianghuai }
+9021128 = { name="Liu" culture=jianghuai }
+9021137 = { name="Mao" culture=jianghuai }
+9021207 = { name="Su" culture=jianghuai }
+9021208 = { name="Sun" culture=jianghuai }
+9021222 = { name="Wang" culture=jianghuai }
+9021226 = { name="Wen" culture=jianghuai }
+9021229 = { name="Wu" culture=jianghuai }
+9021243 = { name="Xu" culture=jianghuai }
+9021249 = { name="Yang" culture=jianghuai }
+9021259 = { name="Yuan" culture=jianghuai }
+9021268 = { name="Zeng" culture=jianghuai }
+9021271 = { name="Zhang" culture=jianghuai }
+9021272 = { name="Zhao" culture=jianghuai }
+9021279 = { name="Zhou" culture=jianghuai }
+9021280 = { name="Zhu" culture=jianghuai }
+9021000 = { name="Lyu" culture=jianghuai }
+
+9022016 = { name="Cai" culture=wu }
+9022026 = { name="Chen" culture=wu }
+9022077 = { name="Guo" culture=wu }
+9022079 = { name="Han" culture=wu }
+9022087 = { name="Hu" culture=wu }
+9022091 = { name="Huang" culture=wu }
+9022097 = { name="Jia" culture=wu }
+9022100 = { name="Jiang" culture=wu }
+9022120 = { name="Li" culture=wu }
+9021125 = { name="Lin" culture=wu }
+9021128 = { name="Liu" culture=wu }
+9022137 = { name="Mao" culture=wu }
+9022192 = { name="Shen" culture=wu }
+9022208 = { name="Sun" culture=wu }
+9022222 = { name="Wang" culture=wu }
+9021226 = { name="Wen" culture=wu }
+9022229 = { name="Wu" culture=wu }
+9022249 = { name="Yang" culture=wu }
+9022259 = { name="Yuan" culture=wu }
+9022243 = { name="Xu" culture=wu }
+9022268 = { name="Zeng" culture=wu }
+9022271 = { name="Zhang" culture=wu }
+9022272 = { name="Zhao" culture=wu }
+9022279 = { name="Zhou" culture=wu }
+9022280 = { name="Zhu" culture=wu }
+9022000 = { name="Lyu" culture=wu }
+9022241 = { name="Xing" culture=wu used_for_random=no }
+
+9023087 = { name="Hu" culture=huizhou }
+9023120 = { name="Li" culture=huizhou }
+9023128 = { name="Liu" culture=huizhou }
+9023091 = { name="Huang" culture=huizhou }
+9023222 = { name="Wang" culture=huizhou }
+9023243 = { name="Xu" culture=huizhou }
+9023249 = { name="Yang" culture=huizhou }
+9023271 = { name="Zhang" culture=huizhou }
+
+## Shandong
+9025077 = { name="Guo" culture=jilu }
+9025097 = { name="Jia" culture=jilu }
+9025109 = { name="Kong" culture = jilu }
+9025120 = { name="Li" culture=jilu }
+9025205 = { name="Song" culture=jilu }
+9025208 = { name="Sun" culture=jilu }
+9025222 = { name="Wang" culture=jilu }
+9025258 = { name="Yu" culture=jilu }
+9025271 = { name="Zhang" culture=jilu }
+9025272 = { name="Zhao" culture=jilu }
+9025280 = { name="Zhu" culture=jilu }
+
+9025551 = { name="Kong" culture = jilu religion = ruist used_for_random = no} #Confucius
+
+9025026 = { name="Chen" culture=jiao_liao }
+9025077 = { name="Guo" culture=jiao_liao }
+9025109 = { name="Kong" culture = jiao_liao }
+9025120 = { name="Li" culture=jiao_liao }
+9025125 = { name="Lin" culture=jiao_liao }
+9025128 = { name="Liu" culture=jiao_liao }
+9025208 = { name="Sun" culture=jiao_liao }
+9025222 = { name="Wang" culture=jiao_liao }
+9025258 = { name="Yu" culture=jiao_liao }
+9025271 = { name="Zhang" culture=jiao_liao }
+9025272 = { name="Zhao" culture=jiao_liao }
+9026271 = { name="Zhang" culture=jiao_liao }
+9026279 = { name="Zhou" culture=jiao_liao }
+9026280 = { name="Zhu" culture=jiao_liao }
+
+# Min-Hakka
+
+9033016 = { name="Cai" culture=min }
+9033026 = { name="Chen" culture=min }
+9033077 = { name="Guo" culture=min }
+9033087 = { name="Hu" culture=min }
+9033091 = { name="Huang" culture=min }
+9033120 = { name="Li" culture=min }
+9033125 = { name="Lin" culture=min }
+9033135 = { name="Ma" culture=min }
+9033222 = { name="Wang" culture=min }
+9033238 = { name="Xie" culture=min }
+9033258 = { name="Yu" culture=min }
+9033271 = { name="Zhang" culture=min }
+9033274 = { name="Zheng" culture=min }
+
+9034026 = { name="Chen" culture=hakka }
+9034077 = { name="Guo" culture=hakka }
+9034091 = { name="Huang" culture=hakka }
+9034120 = { name="Li" culture=hakka }
+9034125 = { name="Lin" culture=hakka }
+9034128 = { name="Liu" culture=hakka }
+9034135 = { name="Ma" culture=hakka }
+9034222 = { name="Wang" culture=hakka }
+9034238 = { name="Xie" culture=hakka }
+9034249 = { name="Yang" culture=hakka }
+9034258 = { name="Yu" culture=hakka }
+9034271 = { name="Zhang" culture=hakka }
+9034274 = { name="Zheng" culture=hakka }
+
+9035016 = { name="Cai" culture=gan }
+9035026 = { name="Chen" culture=gan }
+9035077 = { name="Guo" culture=gan }
+9035091 = { name="Huang" culture=gan }
+9035120 = { name="Li" culture=gan }
+9035125 = { name="Lin" culture=gan }
+9035128 = { name="Liu" culture=gan }
+9035135 = { name="Ma" culture=gan }
+9035222 = { name="Wang" culture=gan }
+9035238 = { name="Xie" culture=gan }
+9035249 = { name="Yang" culture=gan }
+9035258 = { name="Yu" culture=gan }
+9035271 = { name="Zhang" culture=gan }
+9035274 = { name="Zheng" culture=gan }
+
+# Central China : 904
+
+
+9041026 = { name="Chen" culture=xiang }
+9041077 = { name="Guo" culture=xiang }
+9041091 = { name="Huang" culture=xiang }
+9041100 = { name="Jiang" culture=xiang }
+9041120 = { name="Li" culture=xiang }
+9041125 = { name="Lin" culture=xiang }
+9041137 = { name="Mao" culture=xiang }
+9041222 = { name="Wang" culture=xiang }
+9041226 = { name="Wen" culture=xiang }
+9041229 = { name="Wu" culture=xiang }
+9041238 = { name="Xie" culture=xiang }
+9041243 = { name="Xu" culture=xiang }
+9041249 = { name="Yang" culture=xiang }
+9041258 = { name="Yu" culture=xiang }
+9041271 = { name="Zhang" culture=xiang }
+9041274 = { name="Zheng" culture=xiang }
+9041279 = { name="Zhou" culture=xiang }
+9041280 = { name="Zhu" culture=xiang }
+9041274 = { name="Zheng" culture=xiang }
+9041000 = { name="Lyu" culture=xiang }
+
+9043026 = { name="Chen" culture=chu }
+9043077 = { name="Guo" culture=chu }
+9043087 = { name="Hu" culture=chu }
+9043091 = { name="Huang" culture=chu }
+9043100 = { name="Jiang" culture=chu }
+9043120 = { name="Li" culture=chu }
+9043125 = { name="Lin" culture=chu }
+9043137 = { name="Mao" culture=chu }
+9043222 = { name="Wang" culture=chu }
+9043226 = { name="Wen" culture=chu }
+9043229 = { name="Wu" culture=chu }
+9043238 = { name="Xie" culture=chu }
+9043243 = { name="Xu" culture=chu }
+9043249 = { name="Yang" culture=chu }
+9043258 = { name="Yu" culture=chu }
+9043271 = { name="Zhang" culture=chu }
+9043274 = { name="Zheng" culture=chu }
+9043279 = { name="Zhou" culture=chu }
+9043280 = { name="Zhu" culture=chu }
+9043000 = { name="Lyu" culture=chu }
+9043242 = { name="Xiong" culture=chu used_for_random=no}
+
+# South China : 9051
+#-- Guangdong
+9051016 = { name="Cai" culture=cantonese }
+9051026 = { name="Chen" culture=cantonese }
+9051077 = { name="Guo" culture=cantonese }
+9051091 = { name="Huang" culture=cantonese }
+9051112 = { name="Kuang" culture=cantonese }
+9051120 = { name="Li" culture=cantonese }
+9051125 = { name="Lin" culture=cantonese }
+9051131 = { name="Lu" culture=cantonese }
+9051135 = { name="Ma" culture=cantonese }
+9051222 = { name="Wang" culture=cantonese }
+9051229 = { name="Wu" culture=cantonese }
+9051238 = { name="Xie" culture=cantonese }
+9051243 = { name="Xu" culture=cantonese }
+9051249 = { name="Yang" culture=cantonese }
+9051258 = { name="Yu" culture=cantonese }
+9051271 = { name="Zhang" culture=cantonese }
+9051274 = { name="Zheng" culture=cantonese }
+9051279 = { name="Zhou" culture=cantonese }
+
+#--Guangxi : 9053
+9053026 = { name="Chen" culture=zhuang }
+9053077 = { name="Guo" culture=zhuang }
+9053091 = { name="Huang" culture=zhuang }
+9053120 = { name="Li" culture=zhuang }
+9053125 = { name="Lin" culture=zhuang }
+9053128 = { name="Liu" culture=zhuang }
+9053122 = { name="Liang" culture=zhuang }
+9053131 = { name="Lu" culture=zhuang }
+9053222 = { name="Wang" culture=zhuang }
+9053224 = { name="Wei" culture=zhuang }
+9053249 = { name="Yang" culture=zhuang }
+9053258 = { name="Yu" culture=zhuang }
+9053271 = { name="Zhang" culture=zhuang }
+9053274 = { name="Zheng" culture=zhuang }
+9053279 = { name="Zhou" culture=zhuang }
+
+#--Hainan :
+
+9057026 = { name="Chen" culture=hlai }
+9057120 = { name="Li" culture=hlai }
+9051125 = { name="Lin" culture=hlai }
+9057229 = { name="Wu" culture=hlai }
+9057238 = { name="Xie" culture=hlai }
+9057271 = { name="Zhang" culture=hlai }
+
+# Min-Hakka
+
+9058016 = { name="Cai" culture=min }
+9058026 = { name="Chen" culture=min }
+9058077 = { name="Guo" culture=min }
+9058091 = { name="Huang" culture=min }
+9058120 = { name="Li" culture=min }
+9058125 = { name="Lin" culture=min }
+9058135 = { name="Ma" culture=min }
+9058222 = { name="Wang" culture=min }
+9058229 = { name="Wu" culture=min }
+9058238 = { name="Xie" culture=min }
+9058249 = { name="Yang" culture=min }
+9058271 = { name="Zhang" culture=min }
+9058274 = { name="Zheng" culture=min }
+
+9059026 = { name="Chen" culture=hakka }
+9059077 = { name="Guo" culture=hakka }
+9059091 = { name="Huang" culture=hakka }
+9059120 = { name="Li" culture=hakka }
+9059125 = { name="Lin" culture=hakka }
+9059135 = { name="Ma" culture=hakka }
+9059222 = { name="Wang" culture=hakka }
+9059249 = { name="Yang" culture=hakka }
+9059229 = { name="Wu" culture=hakka }
+9059238 = { name="Xie" culture=hakka }
+9059271 = { name="Zhang" culture=hakka }
+9059274 = { name="Zheng" culture=hakka }
+
+
+# Sichuan
+
+9061007 = { name="Bao" culture=sichuanese }
+9061038 = { name="Deng" culture=sichuanese }
+9061120 = { name="Li" culture=sichuanese }
+9061128 = { name="Liu" culture=sichuanese }
+9061072 = { name="Guan" culture=sichuanese }
+9061082 = { name="He" culture=sichuanese }
+9061135 = { name="Ma" culture=sichuanese }
+9061222 = { name="Wang" culture=sichuanese }
+9061229 = { name="Wu" culture=sichuanese }
+9061249 = { name="Yang" culture=sichuanese }
+9061268 = { name="Zeng" culture=sichuanese }
+9061271 = { name="Zhang" culture=sichuanese }
+9061272 = { name="Zhao" culture=sichuanese }
+9061283 = { name="Zhuge" culture=sichuanese }
+
+#-- Xinan / Yunnan : 9070
+
+9070026 = { name="Chen" culture=xinan }
+9070038 = { name="Deng" culture=xinan }
+9070120 = { name="Li" culture=xinan }
+9070128 = { name="Liu" culture=xinan }
+9070082 = { name="He" culture=xinan }
+9070135 = { name="Ma" culture=xinan }
+9070222 = { name="Wang" culture=xinan }
+9070249 = { name="Yang" culture=xinan }
+9070271 = { name="Zhang" culture=xinan }
+9070272 = { name="Zhao" culture=xinan }
+9070284 = { name="Ngwe" culture=xinan used_for_random=no}
+
+9071002 = { name="An" culture=yi }
+9071026 = { name="Chen" culture=yi }
+9071191 = { name="She" culture=yi }
+9071249 = { name="Yang" culture=yi }
+9071271 = { name="Zhang" culture=yi }
+
+9072222 = { name="Wang" culture=bai }
+9072249 = { name="Yang" culture=bai }
+9072271 = { name="Zhang" culture=bai }
+9072272 = { name="Zhao" culture=bai }
+
+#Dai - part of Sinicized Tai Dam dyns :S
+9073018 = { name="Cao" culture=dai }
+9073082 = { name="He" culture=dai }
+9074077 = { name="Guo" culture=dai }
+9073205 = { name="Song" culture=dai }
+9073232 = { name="Xia" culture=dai }
+9073287 = { name="Zong" culture=dai }
+
+9074026 = { name="Chen" culture=hani }
+9074077 = { name="Guo" culture=hani }
+9074120 = { name="Li" culture=hani }
+9074168 = { name="Qian" culture=hani }
+9074272 = { name="Zhao" culture=hani }
+
+9075026 = { name="Chen" culture=miao }
+9075120 = { name="Li" culture=miao }
+9075205 = { name="Song" culture=miao }
+9075272 = { name="Zhao" culture=miao }
+9075271 = { name="Zhang" culture=miao }
+
+#Northwest China: 9080
+9080000 = { name="Guo" culture=lanyin }
+9080001 = { name="Huang" culture=lanyin }
+9080002 = { name="Jiang" culture=lanyin }
+9080003 = { name="Li" culture=lanyin }
+9080004 = { name="Ma" culture=lanyin }
+9080005 = { name="Wang" culture=lanyin }
+9080006 = { name="Yu" culture=lanyin }
+9080007 = { name="Zhang" culture=lanyin }
+
+#Central Han People: Zhongyuan
+9081000 = { name="Guo" culture=zhongyuan }
+9081001 = { name="Huang" culture=zhongyuan }
+9081002 = { name="Jiang" culture=zhongyuan }
+9081003 = { name="Li" culture=zhongyuan }
+9081004 = { name="Ma" culture=zhongyuan }
+9081005 = { name="Wang" culture=zhongyuan }
+9081006 = { name="Yu" culture=zhongyuan }
+9081007 = { name="Zhang" culture=zhongyuan }
+9081008 = { name="Ai" culture=zhongyuan } 
+9081009 = { name="Shi" culture=zhongyuan }
+9081010 = { name="Gao" culture=zhongyuan }
+9081011 = { name="Gan" culture=zhongyuan }
+9081012 = { name="Jin" culture=zhongyuan }
+9081013 = { name="Zhao" culture=zhongyuan }
+9081014 = { name="Cao" culture=zhongyuan }
+9081015 = { name="Dong" culture=zhongyuan }
+9081016 = { name="Xun" culture=zhongyuan }
+9081017 = { name="Jia" culture=zhongyuan }
+
+9087007 = { name="Bao" culture=guanzhong }
+9087043 = { name="Dong" culture=guanzhong }
+9087072 = { name="Guan" culture=guanzhong }
+9087077 = { name="Guo" culture=guanzhong }
+9087091 = { name="Huang" culture=guanzhong }
+9087082 = { name="He" culture=guanzhong }
+9087120 = { name="Li" culture=guanzhong }
+9087128 = { name="Liu" culture=guanzhong }
+9087135 = { name="Ma" culture=guanzhong }
+9087205 = { name="Song" culture=guanzhong }
+9087207 = { name="Su" culture=guanzhong }
+9087222 = { name="Wang" culture=guanzhong }
+9087229 = { name="Wu" culture=guanzhong }
+9087249 = { name="Yang" culture=guanzhong }
+9087255 = { name="Ying" culture=guanzhong used_for_random = no }
+9087268 = { name="Zeng" culture=guanzhong }
+9087271 = { name="Zhang" culture=guanzhong }
+9087272 = { name="Zhao" culture=guanzhong }
+
+#Huizu
+
+9910006 = { name="Bai" culture=huizu }
+9919077 = { name="Guo" culture=huizu }
+9910087 = { name="Hu" culture=huizu }
+9910135 = { name="Ma" culture=huizu }
+9910146 = { name="Mu" culture=huizu }
+9910274 = { name="Zheng" culture=huizu }

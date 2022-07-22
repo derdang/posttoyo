@@ -87,3 +87,6 @@ NDefines.NLearningScenario.START_YEAR = 2605
 NDefines.NLearningScenario.START_MONTH = 5
 NDefines.NLearningScenario.START_DAY = 28
 NDefines.NLearningScenario.START_CHARACTER = 1788001
+
+NDefines.NDiplomacy.DEMAND_RELIGIOUS_CONVERSION_INTERACTION_ENABLED = 0
+NDefines.NCharacter.MUSLIM_NUM_WIVES_MONTHLY_PRESTIGE_PENALTY = 0.0

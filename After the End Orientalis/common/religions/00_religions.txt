@@ -146,10 +146,10 @@ christian = {
 		intermarry = catholic
 		intermarry = miaphysite
 		intermarry = nestorian
-		intermarry = iconoclast
+		intermarry = old_believer
 		intermarry = concordanist
 	}
-	iconoclast = {
+	old_believer = {
 		graphical_culture = westerngfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
@@ -278,14 +278,14 @@ christian = {
 		intermarry = concordanist
 
 	}
-	fuyin = { #temporary
+	fuyin = { #Protestantism with Chinese Characteristics
 		graphical_culture = chinesegfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
 		icon = 55
 		heresy_icon = 56
 		
-		color = { 178 34 34 }
+		color = { 15 82 186 }
 		
 		crusade_name = CRUSADE
 		scripture_name = THE_BIBLE
@@ -320,7 +320,7 @@ christian = {
 		intermarry = restorationists
 		intermarry = concordanist
 		intermarry = unificationist
-
+		intermarry = tianzhu
 	}
 	unificationist = { #temporary
 		graphical_culture = chinesegfx
@@ -338,7 +338,7 @@ christian = {
 		high_god_name = GOD_GOD
 		
 		god_names = {
-			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_SUN_MYUNG GOD_THE_BLESSED_VIRGIN
 		}
 		
 		evil_god_names = {
@@ -366,6 +366,75 @@ christian = {
 		intermarry = restorationists
 		intermarry = concordanist
 		intermarry = fuyin
+		intermarry = tianzhu
+
+	}
+	tianzhu = {
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 2
+		
+		color = { 227 66 52 }
+		
+		crusade_name = CRUSADE
+		use_new_crusade = yes
+		crusade_cb = new_crusade
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_TIANZHU
+		
+		god_names = {
+			GOD_TIANZHU GOD_HEAVENLY_FATHER GOD_JIDU GOD_THE_BLESSED_VIRGIN GOD_THE_MARTYRS
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		defensive_attrition = yes
+		hard_to_convert = yes
+		rel_head_defense = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
+
+	}
+	aiguo = { #placeholder
+		graphical_culture = westerngfx
+
+		icon = 1
+		heresy_icon = 2
+		
+		color = { 180 86 52 }
+		parent = tianzhu
+		
+		scripture_name = THE_BIBLE
+		priest_title = PRIEST
+		
+		high_god_name = GOD_TIANZHU
+		
+		god_names = {
+			GOD_TIANZHU GOD_HEAVENLY_FATHER GOD_JIDU GOD_THE_BLESSED_VIRGIN GOD_THE_MARTYRS
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		can_call_crusade = yes
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		rel_head_defense = yes
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 1
 
 	}
 }
@@ -393,47 +462,10 @@ muslim = {
 		Ayesha Abrar Afifah Anabia Hijrah Hind Hareem Iqra Judi Karida Khadijah Khalidah Khawlah Madeeha Maryam Mariyah Maymunah Mariam Mina Nuwwarrah Qismah Ruqayyah Saba Safaa Safiyyah Salma Shahrazad Sirin Sumaiyah Thuwaibah Umamah Zainab Zubaidah Zainab 
 	}
 	
-	sunni = {
+	salafi = { #reflavored ATEFF Traditionalist
 		graphical_culture = muslimgfx
 
-		icon = 3
-		heresy_icon = 4
-		
-		color = { 0 0.6 0 }
-		
-		crusade_name = JIHAD
-		scripture_name = THE_KORAN
-		priest_title = IMAM_PRIEST
-		
-		high_god_name = GOD_ALLAH
-		
-		god_names = {
-			GOD_ALLAH GOD_THE_GREATEST
-		}
-		
-		evil_god_names = {
-			IBLIS SHAYTAN
-		}
-		
-		can_call_crusade = yes
-		priests_can_marry = yes
-		psc_marriage = no # Disallow uncle-niece and aunt-nephew marriages
-		max_wives = 4
-		matrilineal_marriages = no
-		
-		landed_kin_prestige_bonus = yes
-		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
-		uses_jizya_tax = yes
-
-		intermarry = shiite
-	}
-	
-	salafi = { #placeholder
-		graphical_culture = muslimgfx
-
-		icon = 3
-		heresy_icon = 4
+		icon = 5
 		
 		color = { 0 0.3 0 }
 		parent = sunni
@@ -461,16 +493,47 @@ muslim = {
 		uses_decadence = yes
 		uses_jizya_tax = yes
 
-		intermarry = shiite
 	}
 	
-	shiite = {
+	wahabbi = { #angry 
 		graphical_culture = muslimgfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 6
 		
-		color = { 0 0.8 0 }
+		color = { 0 0 0 }
+		parent = sunni
+		
+		scripture_name = THE_KORAN
+		priest_title = IMAM_PRIEST
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
+		
+		priests_can_marry = yes
+		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
+		max_wives = 4
+		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes
+
+	}
+	
+	hui = { #Islam with Chinese Characteristics (Does not have a heresy)
+		graphical_culture = muslimgfx
+
+		icon = 7
+		
+		color = { 192 192 192 }
 		
 		scripture_name = THE_KORAN
 		priest_title = MULLAH
@@ -488,26 +551,22 @@ muslim = {
 		psc_marriage = no
 		max_wives = 4
 		matrilineal_marriages = no
+		female_temple_holders = yes
 		
-		landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
-		uses_jizya_tax = yes
 		
 		intermarry = sunni
 	}
 	
-	nizari = { #placeholder
+	nusantara = { #Islam with Nunsantara Characteristics
 		graphical_culture = muslimgfx
 
-		icon = 5
-		heresy_icon = 6
+		icon = 9
 		
-		color = { 0 0.7 0 }
-		parent = shiite
+		color = { 237 28 36 }
 		
 		scripture_name = THE_KORAN
-		priest_title = MULLAH
+		priest_title = KYAI
 		
 		high_god_name = GOD_ALLAH
 		
@@ -522,13 +581,14 @@ muslim = {
 		psc_marriage = no
 		max_wives = 4
 		matrilineal_marriages = no
+		female_temple_holders = yes
 		
-		landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
-		uses_decadence = yes
-		uses_jizya_tax = yes
 		
 		intermarry = sunni
+		intermarry = hui
+		intermarry = buddhist_group
+		intermarry = indian_group
 	}
 }
 
@@ -589,6 +649,34 @@ pagan_group = {
 		dynamic_cult = no
 		secret_religion = no
 	}
+	ua_dab_reformed = { #Reformed Hmong Shamanism
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 15
+		
+		color = { 0.6 0.2 0.0 }
+		
+		high_god_name = GOD_SAU
+		
+		god_names = {
+			GOD_NKAU_HNU GOD_NRAU_HLI GOD_XO GOD_KA GOD_YUA GOD_TXI_YAW
+		}
+		evil_god_names = {
+			NTWX_NYU NYU VA TUA TEE
+		}
+		scripture_name = THE_RITUALS
+		priest_title = SIYI
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = christian
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
 	ua_dab = { #Unreformed Hmong Shamanism
 		graphical_culture = pagangfx
 		alternate_start = { always = no }
@@ -622,28 +710,29 @@ pagan_group = {
 		dislike_tribal_organization = yes
 		reformed = ua_dab_reformed
 	}
-	ua_dab_reformed = { #Reformed Hmong Shamanism
+	seirei_reformed = {
 		graphical_culture = pagangfx
 		alternate_start = { always = no }
 
-		icon = 15
+		icon = 32
+		heresy_icon = 33
 		
-		color = { 0.6 0.2 0.0 }
+		color = { 220 230 055 }
 		
-		high_god_name = GOD_SAU
+		high_god_name = GOD_DAINICHI_AMATERASU
 		
 		god_names = {
-			GOD_NKAU_HNU GOD_NRAU_HLI GOD_XO GOD_KA GOD_YUA GOD_TXI_YAW
+			GOD_AMIDA_KIRISUTO GOD_ISUKURI GOD_MARIA_KANNON
 		}
 		evil_god_names = {
-			NTWX_NYU NYU VA TUA TEE
+			SETAN AKUMA
 		}
-		scripture_name = THE_RITUALS
-		priest_title = SIYI
+		scripture_name = THE_SEISHOKYO
+		priest_title = PRIEST
 		priests_can_marry = yes
 		max_consorts = 3
 		
-		intermarry = christian
+		intermarry = japonic
 		intermarry = buddhist_group
 		intermarry = eastern
 		
@@ -684,44 +773,14 @@ pagan_group = {
 		dislike_tribal_organization = yes
 		reformed = seirei_reformed
 	}
-	seirei_reformed = {
-		graphical_culture = pagangfx
-		alternate_start = { always = no }
-
-		icon = 32
-		heresy_icon = 33
-		
-		color = { 220 230 055 }
-		
-		high_god_name = GOD_DAINICHI_AMATERASU
-		
-		god_names = {
-			GOD_AMIDA_KIRISUTO GOD_ISUKURI GOD_MARIA_KANNON
-		}
-		evil_god_names = {
-			SETAN AKUMA
-		}
-		scripture_name = THE_SEISHOKYO
-		priest_title = PRIEST
-		priests_can_marry = yes
-		max_consorts = 3
-		
-		intermarry = japonic
-		intermarry = buddhist_group
-		intermarry = eastern
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
-	}
-	americanist = { #temporary
+	americanist_reformed = { #Americans with Pacific Characteristics Reformed!
 		graphical_culture = muslimgfx
 		
 		icon = 44
 		heresy_icon = 44
 		
-		color = { 0 0 255 }
+		color = { 0 20 255 }
 
-		crusade_name = INTERVENTION
 		scripture_name = THE_LAW
 		priest_title = CAPTAINS
 		piety_name = PATRIOTISM
@@ -729,47 +788,70 @@ pagan_group = {
 		high_god_name = GOD_PROVIDENCE
 		
 		god_names = {
-			GOD_YUSEEN GOD_MACARTHUR GOD_ROOSEVELT GOD_RANGER_JONES GOD_SHANNON
+			GOD_MACARTHUR GOD_PERRY GOD_NIMITZ GOD_LATMIKAIK GOD_ANDERSON GOD_SMK GOD_ROOSEVELT
 		}
 		evil_god_names = {
 			COMMUNISM THE_DYING_SUN THE_CROOKED_EAGLE THE_SLUMBERING_LION
 		}
 		
-		investiture = yes
-		can_excommunicate = yes
-		can_grant_claim = yes
-		can_grant_divorce = yes
-		allow_viking_invasion = yes
-		can_call_crusade = yes
 		can_grant_invasion_cb = invasion
-		allow_rivermovement = yes
-		
+		female_temple_holders = yes
 		priests_can_marry = yes
+		defensive_attrition = yes
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
+	}
+	americanist = { #Americans with Pacific Characteristics
+		graphical_culture = muslimgfx
+		
+		icon = 44
+		heresy_icon = 44
+		
+		color = { 0 0 255 }
+
+		scripture_name = THE_LAW
+		priest_title = CAPTAINS
+		piety_name = PATRIOTISM
+		
+		high_god_name = GOD_PROVIDENCE
+		
+		god_names = {
+			GOD_MACARTHUR GOD_PERRY GOD_NIMITZ GOD_LATMIKAIK GOD_ANDERSON GOD_SMK GOD_ROOSEVELT
+		}
+		evil_god_names = {
+			COMMUNISM THE_DYING_SUN THE_CROOKED_EAGLE THE_SLUMBERING_LION
+		}
+		
+		can_grant_invasion_cb = invasion
+		female_temple_holders = yes
+		priests_can_marry = yes
+		defensive_attrition = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+		
 		reformed = americanist_reformed
 	}
-	americanist_reformed = { #temporary
-		graphical_culture = muslimgfx
+	muist_reformed = {
+		graphical_culture = pagangfx
 		
-		icon = 44
-		heresy_icon = 44
+		icon = 54
+		heresy_icon = 54
 		
-		color = { 0 0 255 }
+		color = { 150 0 215 }
 
-		crusade_name = INTERVENTION
-		scripture_name = THE_LAW
-		priest_title = CAPTAINS
-		piety_name = PATRIOTISM
+		scripture_name = BON_PURI
+		priest_title = BAKSU
+		piety_name = GUT
 		
-		high_god_name = GOD_PROVIDENCE
+		high_god_name = GOD_HANEULLIM
 		
 		god_names = {
-			GOD_YUSEEN GOD_MACARTHUR GOD_ROOSEVELT GOD_RANGER_JONES GOD_SHANNON
+			GOD_THE_ANCESTORS GOD_THE_SPIRITS GOD_SUNGMO GOD_HANIM GOD_HWANUNG GOD_DANGUN
 		}
 		evil_god_names = {
-			COMMUNISM THE_DYING_SUN THE_CROOKED_EAGLE THE_SLUMBERING_LION
+			THE_DARK_SPIRITS
 		}
 		
 		investiture = yes
@@ -782,9 +864,10 @@ pagan_group = {
 		allow_rivermovement = yes
 		
 		priests_can_marry = yes
+		female_temple_holders = yes
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
 	}
 	muist = {
 		graphical_culture = pagangfx
@@ -795,7 +878,7 @@ pagan_group = {
 		color = { 148 0 211 }
 
 		scripture_name = BON_PURI
-		priest_title = MU
+		priest_title = BAKSU
 		piety_name = GUT
 		
 		high_god_name = GOD_HANEULLIM
@@ -823,41 +906,38 @@ pagan_group = {
 		religious_clothing_priest = 10
 		reformed = muist_reformed
 	}
-	muist_reformed = {
-		graphical_culture = pagangfx
+	eastern_lightning_reformed = { #temporary
+		graphical_culture = westerngfx
 		
-		icon = 54
-		heresy_icon = 54
+		icon = 39
+		heresy_icon = 40
 		
-		color = { 150 0 215 }
+		color = { 120 0 130 }
 
-		scripture_name = BON_PURI
-		priest_title = MU
-		piety_name = GUT
+		scripture_name = XIBE_BIBLE
+		priest_title = PRIEST
 		
-		high_god_name = GOD_HANEULLIM
+		high_god_name = GOD_GOD
 		
 		god_names = {
-			GOD_THE_ANCESTORS GOD_THE_SPIRITS GOD_SUNGMO GOD_HANIM GOD_HWANUNG GOD_DANGUN
+			GOD_GOD GOD_THE_LORD GOD_THE_BLESSED_YANG GOD_THE_MESSIAH GOD_CHANGSHOU
 		}
+		
 		evil_god_names = {
-			THE_DARK_SPIRITS
+			RED_DRAGON SATAN LUCIFER THE_DEVIL
 		}
 		
 		investiture = yes
 		can_excommunicate = yes
 		can_grant_claim = yes
 		can_grant_divorce = yes
-		allow_viking_invasion = yes
 		can_call_crusade = yes
-		can_grant_invasion_cb = invasion
-		allow_rivermovement = yes
 		
 		priests_can_marry = yes
 		female_temple_holders = yes
 		
-		religious_clothing_head = 6
-		religious_clothing_priest = 6
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
 	}
 	eastern_lightning = { #temporary
 		graphical_culture = westerngfx
@@ -893,42 +973,602 @@ pagan_group = {
 		religious_clothing_priest = 1
 		reformed = eastern_lightning_reformed
 	}
-	eastern_lightning_reformed = { #temporary
-		graphical_culture = westerngfx
-		
-		icon = 39
-		heresy_icon = 40
-		
-		color = { 120 0 130 }
+	shenist_reformed = { #Reformed Chinese Folk Religion
+		graphical_culture = chinesegfx
+		alternate_start = { always = no }
 
-		scripture_name = XIBE_BIBLE
-		priest_title = PRIEST
+		icon = 60
+		heresy_icon = 61
 		
-		high_god_name = GOD_GOD
+		color = { 255 230 128 }
+		
+		high_god_name = GOD_TIAN
 		
 		god_names = {
-			GOD_GOD GOD_THE_LORD GOD_THE_BLESSED_YANG GOD_THE_MESSIAH GOD_CHANGSHOU
+			GOD_JADE_EMPEROR GOD_DOUMU GOD_XIWANGMU GOD_SANHUANG GOD_WUDI GOD_HUANGDI
+		}
+		evil_god_names = {
+			MA
+		}
+		scripture_name = THE_CLASSICS
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = christian
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	shenist = { #Unreformed Chinese Folk Religion
+		graphical_culture = chinesegfx
+		alternate_start = { always = no }
+
+		icon = 59
+		heresy_icon = 61
+		
+		color = { 229 210 140 }
+		
+		high_god_name = GOD_SHANGDI
+		
+		god_names = {
+			GOD_HUANGDI GOD_JADE_EMPEROR GOD_XIWANGMU GOD_DOUMU GOD_GUANYU GOD_BUDAI GOD_YANWANG GOD_SUN_WUKONG
+		}
+		evil_god_names = {
+			YAOGUAI
+		}
+		scripture_name = DIANJI
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = christian
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = shenist_reformed
+	}
+	donyi_polo_reformed = { #East Indian Indigenous Religion
+		graphical_culture = pagangfx
+
+		icon = 64
+		heresy_icon = 63
+		
+		color = { 190 200 050 }
+
+		high_god_name = GOD_SEDI
+
+		god_names = {
+			GOD_DONYI GOD_POLO GOD_ABOTANI GOD_SONG_BURUI GOD_SONG_BWAI
+		}
+		evil_god_names = {
+			THE_DEVIL
+		}
+		
+		scripture_name = AROJ
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	donyi_polo = { #East Indian Indigenous Religion
+		graphical_culture = pagangfx
+
+		icon = 62
+		heresy_icon = 63
+		
+		color = { 190 200 050 }
+
+		high_god_name = GOD_SEDI
+
+		god_names = {
+			GOD_DONYI GOD_POLO GOD_ABOTANI GOD_SONG_BURUI GOD_SONG_BWAI
+		}
+		evil_god_names = {
+			THE_DEVIL
+		}
+		
+		scripture_name = AROJ
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		reformed = donyi_polo_reformed
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		can_demand_religious_conversion = no
+		female_temple_holders = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	khanist_reformed = {
+		graphical_culture = norsegfx
+
+		icon = 67
+		heresy_icon = 68
+		
+		color = { 0 102 179 }
+
+		high_god_name = GOD_CHINGGIS
+
+		god_names = {
+			GOD_KISAYA GOD_ZAARIN GOD_DAICHIN GOD_AJARAI_BUHE GOD_USAN GOD_SETSEN GOD_MONGKE
+		}
+		evil_god_names = {
+			GOD_ELIYE
+		}
+		
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	khanist = {
+		graphical_culture = norsegfx
+
+		icon = 66
+		heresy_icon = 68
+		
+		color = { 27 67 146 }
+
+		high_god_name = GOD_CHINGGIS
+
+		god_names = {
+			GOD_KISAYA GOD_ZAARIN GOD_DAICHIN GOD_AJARAI_BUHE GOD_USAN GOD_SETSEN GOD_MONGKE
+		}
+		evil_god_names = {
+			GOD_ELIYE
+		}
+		
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		reformed = khanist_reformed
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		can_demand_religious_conversion = no
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	
+	mo_reformed = {
+		graphical_culture = chinesegfx
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 214 211 202 }
+
+		high_god_name = GOD_BAEUQLOXDOH
+
+		god_names = {
+			GOD_NGWEG GOD_MOLUJIA GOD_GYAJ GOD_HANVUENG GOD_NUNGZ_CIQGAOH GOD_ZOANONGZ GOD_ZOACHU GOD_MIH_MAIX
+		}
+		evil_god_names = {
+			GUAI
+		}
+		
+		scripture_name = THE_BULUOTUO
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		
+		
+		feminist = yes
+		female_temple_holders = yes
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	mo = {
+		graphical_culture = chinesegfx
+
+		icon = 75
+		heresy_icon = 75
+		
+		color = { 214 211 202 }
+
+		high_god_name = GOD_BAEUQLOXDOH
+
+		god_names = {
+			GOD_NGWEG GOD_MOLUJIA GOD_GYAJ GOD_HANVUENG GOD_NUNGZ_CIQGAOH GOD_ZOANONGZ GOD_ZOACHU GOD_MIH_MAIX
+		}
+		evil_god_names = {
+			GUAI
+		}
+		
+		scripture_name = THE_BULUOTUO
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		reformed = mo_reformed
+		
+		
+		feminist = yes
+		female_temple_holders = yes
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	chuma_reformed = { #Manchu Mysticism (Qing Daji)
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 145 40 111 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_HU_XIAN
+		
+		god_names = {
+			GOD_HU_XIAN GOD_HUANG_XIAN GOD_BAI_XIAN GOD_LIU_XIAN GOD_HUI_XIAN GOD_HEI_LAOTAITAI GOD_YING_SHEN GOD_SUN_XIAN GOD_ERLANG_SHEN GOD_GUANDI GOD_THE_ANCESTORS
 		}
 		
 		evil_god_names = {
-			RED_DRAGON SATAN LUCIFER THE_DEVIL
+			XIELING EGUI JIANG_SHI
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = THE_LEGENDS
+		piety_name = DEVOTION
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	chuma = { #Manchu Mysticism (Qing Daji)
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 145 40 111 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_HU_XIAN
+		
+		god_names = {
+			GOD_HU_XIAN GOD_HUANG_XIAN GOD_BAI_XIAN GOD_LIU_XIAN GOD_HUI_XIAN GOD_HEI_LAOTAITAI GOD_YING_SHEN GOD_SUN_XIAN GOD_ERLANG_SHEN GOD_GUANDI GOD_THE_ANCESTORS
 		}
 		
-		investiture = yes
-		can_excommunicate = yes
-		can_grant_claim = yes
+		evil_god_names = {
+			XIELING EGUI JIANG_SHI
+		}
+
+		has_heir_designation = yes
 		can_grant_divorce = yes
-		can_call_crusade = yes
+		priests_can_inherit = no
+		max_consorts = 3
 		
+		reformed = chuma_reformed
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = THE_LEGENDS
+		piety_name = DEVOTION
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	heilong_reformed = { #Dragon Cult
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 243 246 251 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_TIAN
+		
+		god_names = {
+			GOD_BLACK_DRAGON GOD_YUHUANG_DADI GOD_THE_ANCESTORS
+		}
+		
+		evil_god_names = {
+			WHITE_DRAGON
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		reformed = heilong_reformed
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = THE_LEGENDS
+		priest_title = DAOSHI
+		piety_name = PIETY_TE
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	heilong = { #Dragon Cult
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 243 246 251 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_TIAN
+		
+		god_names = {
+			GOD_BLACK_DRAGON GOD_YUHUANG_DADI GOD_THE_ANCESTORS
+		}
+		
+		evil_god_names = {
+			WHITE_DRAGON
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		reformed = heilong_reformed
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = THE_LEGENDS
+		priest_title = DAOSHI
+		piety_name = PIETY_TE
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	shamanist_reformed = { #Tungustic Shamanism
+		graphical_culture = pagangfx
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 49
+		heresy_icon = 50
+		
+		color = { 0.1 0.3 0.85 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_THE_ANCESTORS
+		
+		god_names = {
+			GOD_THE_ANCESTORS
+		}
+		
+		evil_god_names = {
+			DISHARMONY
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		reformed = heilong_reformed
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = THE_LEGENDS
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	shamanist = { #Tungustic Shamanism
+		graphical_culture = pagangfx
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 48
+		heresy_icon = 50
+		
+		color = { 0.0 0.2 0.8 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_THE_ANCESTORS
+		
+		god_names = {
+			GOD_THE_ANCESTORS
+		}
+		
+		evil_god_names = {
+			DISHARMONY
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		reformed = shamanist_reformed
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = THE_LEGENDS
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	ak_jeng_reformed = {
+		graphical_culture = norsegfx
+
+		icon = 72
+		heresy_icon = 73
+		
+		color = { 190 200 50 }
+
+		high_god_name = GOD_AK_BURKHAN
+
+		god_names = {
+			GOD_GESAR GOD_JAJYK GOD_UMAL GOD_OT_EN GOD_ALTAI_KUDAI GOD_ULGAN GOD_AMURSANA GOD_SHUNU GOD_MANAS
+		}
+		evil_god_names = {
+			GOD_ERLIK
+		}
+		
+		scripture_name = THE_QAIS
+		priest_title = JARLYKCHY
 		priests_can_marry = yes
-		female_temple_holders = yes
 		
-		religious_clothing_head = 1
-		religious_clothing_priest = 1
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	ak_jeng = {
+		graphical_culture = norsegfx
+
+		icon = 71
+		heresy_icon = 73
+		
+		color = { 190 200 50 }
+
+		high_god_name = GOD_AK_BURKHAN
+
+		god_names = {
+			GOD_GESAR GOD_JAJYK GOD_UMAL GOD_OT_EN GOD_ALTAI_KUDAI GOD_ULGAN GOD_AMURSANA GOD_SHUNU GOD_MANAS
+		}
+		evil_god_names = {
+			GOD_ERLIK
+		}
+		
+		scripture_name = THE_QAIS
+		priest_title = JARLYKCHY
+		priests_can_marry = yes
+		reformed = ak_jeng_reformed
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		can_demand_religious_conversion = no
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
 	}
 }
-
-
 
 jewish_group = {
 	graphical_culture = jewishgfx
@@ -953,18 +1593,18 @@ jewish_group = {
 	jewish = {
 		graphical_culture = jewishgfx
 		
-		icon = 13
-		heresy_icon = 13
+		icon = 70
+		heresy_icon = 70
 		
 		color = { 0.1 0.7 1.0 }
 		crusade_name = GREAT_HOLY_WAR
 		scripture_name = THE_TORAH
-		priest_title = RABBI
+		priest_title = MULLAH
 		
 		high_god_name = GOD_GOD
 		
 		god_names = {
-			GOD_GOD GOD_THE_LORD ADONAI
+			GOD_GOD GOD_THE_LORD GOD_HASHEM ADONAI
 		}
 		evil_god_names = {
 			SATAN
@@ -979,37 +1619,6 @@ jewish_group = {
 		
 		religious_clothing_head = 7
 		religious_clothing_priest = 7
-		
-		expel_modifier = expelled_jewish
-
-		intermarry = karaite
-	}
-	karaite = {
-		graphical_culture = jewishgfx
-		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
-		
-		icon = 13
-		heresy_icon = 13
-		
-		color = { 0.1 0.5 0.9 }
-		
-		parent = jewish
-		
-		crusade_name = GREAT_HOLY_WAR
-
-		can_grant_divorce = yes
-		can_call_crusade = yes
-		join_crusade_if_bordering_hostile = yes
-		can_grant_invasion_cb = invasion
-		
-		priests_can_marry = yes
-		
-		religious_clothing_head = 7
-		religious_clothing_priest = 7
-		
-		expel_modifier = expelled_jewish
-
-		intermarry = jewish
 	}
 }
 zoroastrian_group = {
@@ -1107,7 +1716,6 @@ zoroastrian_group = {
 }
 
 indian_group = {
-	has_coa_on_barony_only = no
 	graphical_culture = indiangfx
 	playable = yes
 	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
@@ -1129,19 +1737,19 @@ indian_group = {
 		graphical_culture = hindugfx
 		secondary_event_pictures = sunni
 
-		icon = 13
-		heresy_icon = 13
+		icon = 52
+		heresy_icon = 52
 		
 		color = { 1.0 0.0 0.0 }
 		
-		high_god_name = GOD_BRAHMA
+		high_god_name = GOD_BRAHMAN
 		
 		god_names = {
-			GOD_SHIVA GOD_THE_LORD GOD_THE_SUPREME GOD_BRAHMA
+			GOD_SHIVA GOD_SHAKTI GOD_VISHNU GOD_RAMA GOD_KRISHNA GOD_KALI GOD_DURGA GOD_RADHA GOD_LAKSHMI GOD_MURUGAN GOD_MARIAMMAN
 		}
 		
 		evil_god_names = {
-			THE_VINAYAKAS
+			RAKSHASAS
 		}
 		
 		can_grant_divorce = yes
@@ -1161,66 +1769,47 @@ indian_group = {
 		religious_clothing_head = 8
 		religious_clothing_priest = 8
 
-		scripture_name = THE_MAHABHARATA
+		scripture_name = THE_VEDAS
 		priest_title = PUJARI
 		piety_name = KARMA
 		
-		intermarry = jain
-		intermarry = buddhist
-		intermarry = zun_pagan
-		intermarry = zun_pagan_reformed
-		intermarry = bon
-		intermarry = bon_reformed
-		
+		intermarry = buddhist_group
 	}
-	taoist = {
-		graphical_culture = chinesegfx
+	tirthaist = {
+		graphical_culture = hindugfx
 		secondary_event_pictures = sunni
-		has_coa_on_barony_only = yes
-		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
-		icon = 13
-		heresy_icon = 13
+		icon = 51
+		heresy_icon = 51
 		
-		color = { 226 241 182 }
+		color = { 173 216 230 }
 		
-		interface_skin = { taoist_interface indian_interface muslim_interface }
-		
-		high_god_name = GOD_HEAVENLY_ORDER
+		high_god_name = GOD_SHWW
 		
 		god_names = {
-			THE_THREE_PURITIES THE_ANCESTORS GOD_YANSHIH_TIENTSUN
+			GOD_SIWA GOD_UMA GOD_ISWARA GOD_MAHADEWA GOD_WISNU GOD_BRAHMA GOD_BUDDHA
 		}
 		
 		evil_god_names = {
-			KING_YAN YANLUO
+			KALA
 		}
-
-		character_modifier = {
-			stewardship = 2
-		}
-
-		has_heir_designation = yes
+		
 		can_grant_divorce = yes
 		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_looting = yes
 		max_consorts = 3
+		caste_opinions = yes
+		castes = yes
 		
-		short_reign_opinion_year_mult = 0 # No short reign penalty
-		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
 
-		scripture_name = TAO_TE_CHING
-		priest_title = DAOSHI
-		piety_name = PIETY_TE
+		scripture_name = THE_LONTARS
+		priest_title = PUJARI
+		piety_name = KARMA
 		
-		intermarry = buddhist
-		intermarry = nestorian
-		intermarry = manichean
-		intermarry = zun_pagan
-		intermarry = zun_pagan_reformed
-		intermarry = bon
-		intermarry = bon_reformed
+		intermarry = buddhist_group
 	}
 }
 eastern = {
@@ -1274,6 +1863,247 @@ eastern = {
 		religious_clothing_head = 1
 		religious_clothing_priest = 1
 	}
+	ruist = { 
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 42
+		heresy_icon = 42
+		
+		color = { 135 206 235 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_TIAN
+		
+		god_names = {
+			GOD_YUDI THE_ANCESTORS GOD_HUANGDI GOD_KONGFUZI GOD_MENGZI
+		}
+		
+		evil_god_names = {
+			MA
+		}
+
+		character_modifier = {
+			stewardship = 2
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = WUJING
+		priest_title = LISHENG
+		piety_name = XIAO
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	taoist = { #Zhengyi
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 58
+		heresy_icon = 58
+		
+		color = { 226 241 182 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_DAO
+		
+		god_names = {
+			GOD_YUANSHI GOD_DAODE GOD_LINGBAO GOD_HUANGDI GOD_BEIDOU GOD_XIWANGMU
+		}
+		
+		evil_god_names = {
+			MA
+		}
+
+		character_modifier = {
+			stewardship = 2
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = DAODEJING
+		priest_title = DAOSHI
+		piety_name = PIETY_TE
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	quanzhen = {
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 69
+		heresy_icon = 69
+		
+		color = { 200 241 122 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_DAO
+		
+		god_names = {
+			GOD_YUANSHI GOD_DAODE GOD_LINGBAO GOD_HUANGDI GOD_BEIDOU GOD_XIWANGMU
+		}
+		
+		evil_god_names = {
+			MA
+		}
+
+		character_modifier = {
+			stewardship = 2
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = DAODEJING
+		priest_title = DAOSHI
+		piety_name = PIETY_TE
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	shanrendao = {
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 58
+		heresy_icon = 58
+		
+		color = { 200 200 200 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_DAO
+		
+		god_names = {
+			GOD_FENGYI_WANG GOD_JIANGFUZI GOD_KONG_DEJENG GOD_KANG_YOUWEI
+		}
+		
+		evil_god_names = {
+			MA
+		}
+
+		character_modifier = {
+			stewardship = 2
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = DAODEJING
+		priest_title = DAOSHI
+		piety_name = PIETY_TE
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
+	datong = { #3k Larppppp
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 43
+		heresy_icon = 43
+		
+		color = { 176 28 175 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_HEAVENLY_HAN
+		
+		god_names = {
+			GOD_GAOZU GOD_SHIZU GOD_LIEZU GOD_ANCESTORS
+		}
+		
+		evil_god_names = {
+			WANG MANG LIANG_JI DONG_ZHOU CAO_CAO
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = MA_QIAN_KE
+		priest_title = DAOSHI
+		piety_name = PIETY_TE
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+		intermarry = zun_pagan
+		intermarry = zun_pagan_reformed
+		intermarry = bon
+		intermarry = bon_reformed
+	}
 }
 buddhist_group = {
 	has_coa_on_barony_only = yes
@@ -1288,7 +2118,7 @@ buddhist_group = {
 		icon = 18
 		heresy_icon = 19
 		
-		color = { 128 0 0 }
+		color = { 248 219 65 }
 		
 		scripture_name = MAHAYANA_SUTRAS
 		priest_title = B_BHIKSHU
@@ -1366,7 +2196,7 @@ buddhist_group = {
 		icon = 16
 		heresy_icon = 17
 		
-		color = { 244 196 48 }
+		color = { 200 112 6 }
 		
 		scripture_name = TIPITAKA
 		priest_title = B_BHIKKHU
@@ -1375,6 +2205,45 @@ buddhist_group = {
 		
 		god_names = {
 			 GOD_THE_BUDDHA GOD_THE_ARAHANTS GOD_SAKKAMUNI GOD_METTEYYA
+		}
+		
+		evil_god_names = {
+			MARA
+		}
+		
+		piety_name = RAJADHAMMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = christian
+		intermarry = eastern
+		intermarry = ua_dab
+		
+		feminist = yes
+		female_temple_holders = no
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	dhamsoc = {
+		graphical_culture = buddhistgfx
+
+		icon = 16
+		heresy_icon = 17
+		
+		color = { 200 32 37 }
+		parent = dharmayuttika
+		
+		scripture_name = TIPITAKA
+		priest_title = B_BHIKKHU
+		
+		high_god_name = GOD_DHAMMA
+		
+		god_names = {
+			 GOD_THE_BUDDHA GOD_SANGHA GOD_DHAMMA GOD_THE_ARAHANTS GOD_PACCEKABUDDHA GOD_SAKKAMUNI
 		}
 		
 		evil_god_names = {
@@ -1529,7 +2398,7 @@ buddhist_group = {
 		scripture_name = DAINICHI_KYO
 		priest_title = B_MONK
 		
-		high_god_name = DAINICHI
+		high_god_name = GOD_DAINICHI
 		
 		god_names = {
 			 GOD_FUDO_MYO_O GOD_SHAKA GOD_MONJU GOD_JIZO GOD_AMIDA GOD_YAKUSHI GOD_MIROKU
@@ -1551,6 +2420,191 @@ buddhist_group = {
 		feminist = no
 		female_temple_holders = no
 		can_grant_divorce = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	gelugpa = {
+		graphical_culture = tibetangfx
+
+		icon = 22
+		heresy_icon = 23
+		
+		color = { 255 152 0 }
+		
+		scripture_name = KANGYUR
+		priest_title = LAMA
+		
+		high_god_name = GOD_DHAMA
+		
+		god_names = {
+			 GOD_BUDDHA GOD_BODDHISATTVA GOD_AVALOKITESHVARA GOD_AMITABHA
+		}
+		
+		evil_god_names = {
+			NARAKA MARA
+		}
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = eastern
+		
+		can_grant_divorce = yes
+		castes = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	rime = {
+		graphical_culture = tibetangfx
+
+		icon = 22
+		heresy_icon = 23
+		
+		color = { 180 2 16 }
+		
+		scripture_name = KANGYUR
+		priest_title = LAMA
+		
+		high_god_name = GOD_DHAMA
+		
+		god_names = {
+			 GOD_BUDDHA GOD_BODDHISATTVA GOD_AVALOKITESHVARA GOD_AMITABHA
+		}
+		
+		evil_god_names = {
+			NARAKA MARA
+		}
+		
+		parent = gelugpa
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = eastern
+		
+		can_grant_divorce = yes
+		castes = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	ligmincha = {
+		graphical_culture = tibetangfx
+
+		icon = 22
+		heresy_icon = 23
+		
+		color = { 8 150 131 }
+		
+		scripture_name = KANGYUR
+		priest_title = LAMA
+		
+		high_god_name = GOD_DHAMA
+		
+		god_names = {
+			 GOD_BUDDHA GOD_BON GOD_AVALOKITESHVARA GOD_AMITABHA
+		}
+		
+		evil_god_names = {
+			NARAKA MARA
+		}
+		
+		parent = gelugpa
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = eastern
+		
+		can_grant_divorce = yes
+		castes = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	ngocholugspa = {
+		graphical_culture = tibetangfx
+
+		icon = 20
+		heresy_icon = 21
+		
+		color = { 54 70 86 }
+		
+		scripture_name = KANGYUR
+		priest_title = LAMA
+		
+		high_god_name = GOD_DHAMA
+		
+		god_names = {
+			 GOD_BUDDHA GOD_BODDHISATTVA GOD_AVALOKITESHVARA GOD_AMITABHA
+		}
+		
+		evil_god_names = {
+			NARAKA MARA
+		}
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = eastern
+		
+		feminist = yes
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		castes = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	dorje_shugden = {
+		graphical_culture = tibetangfx
+
+		icon = 20
+		heresy_icon = 21
+		
+		color = { 153 0 0 }
+		
+		scripture_name = KANGYUR
+		priest_title = LAMA
+		
+		high_god_name = GOD_DHAMA
+		
+		god_names = {
+			 GOD_BUDDHA GOD_BODDHISATTVA GOD_AVALOKITESHVARA GOD_AMITABHA
+		}
+		
+		evil_god_names = {
+			NARAKA MARA
+		}
+		
+		parent = ngocholugspa
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = eastern
+		
+		feminist = yes
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		castes = yes
 		priests_can_inherit = no
 		can_retire_to_monastery = yes 
 		
@@ -1646,6 +2700,36 @@ japonic = {
 		intermarry = buddhist_group
 		intermarry = eastern
 	}
+	chinomi_reformed = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 27
+		heresy_icon = 28
+		
+		color = { 230 135 115 }
+		
+		high_god_name = GOD_KIMUN_KAMUY
+		
+		god_names = {
+			GOD_IRESU_KAMUY GOD_TOKAPUCHUPU_KAMUY GOD_REPUN_KAMUY GOD_KOTANKOR_KAMUY
+		}
+		evil_god_names = {
+			WEN_KAMUY PAUCHI_KAMUY
+		}
+		scripture_name = THE_YUKAR
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = seirei
+		intermarry = seirei_reformed
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
 	chinomi = {
 		graphical_culture = pagangfx
 		alternate_start = { always = no }
@@ -1681,36 +2765,6 @@ japonic = {
 		dislike_tribal_organization = yes
 		reformed = chinomi_reformed
 	}
-	chinomi_reformed = {
-		graphical_culture = pagangfx
-		alternate_start = { always = no }
-
-		icon = 27
-		heresy_icon = 28
-		
-		color = { 230 135 115 }
-		
-		high_god_name = GOD_KIMUN_KAMUY
-		
-		god_names = {
-			GOD_IRESU_KAMUY GOD_TOKAPUCHUPU_KAMUY GOD_REPUN_KAMUY GOD_KOTANKOR_KAMUY
-		}
-		evil_god_names = {
-			WEN_KAMUY PAUCHI_KAMUY
-		}
-		scripture_name = THE_YUKAR
-		priest_title = PRIEST
-		priests_can_marry = yes
-		max_consorts = 3
-		
-		intermarry = seirei
-		intermarry = seirei_reformed
-		intermarry = buddhist_group
-		intermarry = eastern
-		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
-	}
 }
 #Old World Cultist
 oldworld = {
@@ -1742,10 +2796,44 @@ oldworld = {
 		high_god_name = GOD_THE_ETERNAL_SUN
 		
 		god_names = {
-			GOD_TSAR_BOMBA GOD_HWASONG GOD_PUKKUKSONG GOD_CHANG_FENG GOD_THE_ATOMIC_SPIRITS
+			GOD_TSAR_BOMBA GOD_HWASONG GOD_PUKKUKSONG GOD_CHANG_FENG GOD_CHOLLIMA GOD_THE_ATOMIC_SPIRITS
 		}
 		evil_god_names = {
 			CAPITALISM IMPERIALISM
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		defensive_attrition = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	jibenyuanze = { #Religion with Chinese Values
+		graphical_culture = muslimgfx
+		
+		icon = 37
+		heresy_icon = 37
+		
+		color = { 238 28 37 }
+
+		scripture_name = THE_SIXTH_CLASSIC
+		
+		high_god_name = GOD_THE_BRILLIANT_STAR
+		
+		god_names = {
+			GOD_GRAND_HARMONIZER THE_PEOPLE THE_NATION GOD_TIAN GOD_KONGFUZI
+		}
+		evil_god_names = {
+			CHINA_AMERICA DAJI_SIX IMPERIALISM
 		}
 		
 		investiture = yes
@@ -1761,6 +2849,221 @@ oldworld = {
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
+	}
+	sanmin = { #What if Taiwan gets mystical?
+		graphical_culture = chinesegfx
+		
+		icon = 36
+		heresy_icon = 36
+		
+		color = { 0 0 149 }
+
+		scripture_name = THE_SPEECHES
+		
+		high_god_name = THE_TRIAD
+		
+		god_names = {
+			GOD_SUN_YATSEN GOD_KAI_SHEK GOD_MAZU
+		}
+		evil_god_names = {
+			GOD_THE_BRILLIANT_STAR GOD_THE_HAMMERER
+		}
+		
+		allow_viking_invasion = yes
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	jinbenwei = { #Chinese Consumerism
+		graphical_culture = muslimgfx
+		
+		icon = 47
+		heresy_icon = 47
+		
+		color = { 50 218 137 }
+
+		scripture_name = THE_TEACHINGS_OF_BAIJIN
+		
+		high_god_name = GOD_BAIJIN
+		
+		god_names = {
+			GOD_RENMINBI GOD_YUAN GOD_THE_GOLDEN_RULE GOD_CHEN_YUN GOD_CAISHEN GOD_ZHAO_GONGMING GOD_TAOZHOU_GONG GOD_XIAOFEI
+		}
+		evil_god_names = {
+			DAJI_FOUR BOOK_COOKERS STAGNANCY VOID_OF_DESIRE
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_claim = yes
+		can_grant_divorce = yes
+		allow_viking_invasion = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = invasion
+		allow_rivermovement = yes
+		
+		priests_can_marry = yes
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	gongye_shenjiao = {
+		graphical_culture = chinesegfx
+
+		icon = 41
+		heresy_icon = 41
+		
+		color = { 218 44 67 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		scripture_name = KEJI_SHU
+		
+		high_god_name = SUPREME_MATERIALISM
+		
+		god_names = {
+			 GOD_LIU_CIXIN GOD_OMNISSIAH GOD_MA_QIANZU GOD_ZHONGXIA GOD_CHEN_YUN GOD_NI_ZHIFU
+		}
+		
+		evil_god_names = {
+			RED_RUST TRISOLIAN
+		}
+		
+		piety_name = DEVOTION
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = oldworld
+		
+		feminist = yes
+		female_temple_holders = yes
+		can_grant_invasion_cb = invasion
+		priests_can_inherit = no
+		rel_head_defense = yes
+		
+		religious_clothing_head = 1
+		religious_clothing_priest = 1
+	}
+	nousthreskeia = {
+		graphical_culture = buddhistgfx
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 0.44 0.39 0.33 }
+		
+		interface_skin = { nousthreskeia_interface gaian_interface indian_interface muslim_interface } #placeholder
+		
+		high_god_name = GOD_THE_NOOSPHERE
+		
+		god_names = {
+			GOD_MONOLITH GOD_THE_WISH_GRANTER GOD_THE_GOLDEN_SPHERE
+		}
+		
+		evil_god_names = {
+			DENEB THE_DARK_ONES
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		can_excommunicate = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		
+		max_consorts = 3 #can take concubines
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 14
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = COSMOGENESIS
+		priest_title = PREACHER
+		piety_name = CONSCIOUSNESS
+		
+		intermarry = gaian
+		intermarry = cetic
+		intermarry = shinto
+	}
+	pancasila = {
+		graphical_culture = buddhistgfx
+
+		icon = 10
+		heresy_icon = 10
+		
+		color = { 130 219 90 }
+		
+		interface_skin = { nousthreskeia_interface gaian_interface indian_interface muslim_interface } #placeholder
+		
+		high_god_name = GOD_THE_NOOSPHERE
+		
+		god_names = {
+			GOD_MONOLITH GOD_THE_WISH_GRANTER GOD_THE_GOLDEN_SPHERE
+		}
+		
+		evil_god_names = {
+			DENEB THE_DARK_ONES
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		can_excommunicate = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		
+		max_consorts = 3 #can take concubines
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 14
+		
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = COSMOGENESIS
+		priest_title = PREACHER
+		piety_name = CONSCIOUSNESS
+		
+		intermarry = gaian
+		intermarry = cetic
+		intermarry = shinto
+	}
+	quinto = {
+		graphical_culture = westerngfx
+
+		icon = 74
+		heresy_icon = 74
+		
+		color = { 0 153 51 }
+
+		high_god_name = GOD_DIVINO
+
+		god_names = {
+			THE_DESIRED QUEEN_TEARS VASCO_CAMOES
+		}
+		evil_god_names = {
+			BACCHUS ADAMASTOR CUCA
+		}
+		
+		scripture_name = THE_LUSIADS
+		priest_title = BUTLER
+		priests_can_marry = yes
+		
+		aggression = 0.5
+		allow_looting = yes
+		can_demand_religious_conversion = yes
+		female_temple_holders = yes
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		allow_viking_invasion = yes
+		
+		intermarry = folketro
+		intermarry = fornsed
+		intermarry = nysed
+		intermarry = sun_king_cultist
+		
 	}
 }
 nautical = {
@@ -1822,8 +3125,68 @@ nautical = {
 		
 		intermarry = christian
 		intermarry = eastern
-		intermarry = buddhist
+		intermarry = buddhist_group
 		intermarry = pagan
 		intermarry = japonic
+	}
+}
+latter_day_saints = {
+	has_coa_on_barony_only = yes
+	graphical_culture = westerngfx
+	crusade_cb = crusade
+	playable = yes
+	
+	ai_convert_same_group = 2
+	ai_convert_other_group = 2 #
+	
+	color = { 0.6 0.3 0.5 }
+
+	# Names given only to Mormon characters (base names)
+	male_names = {
+		Aaric Aaron Abinadi Abinadom Abraham Ahab Ahah Akish Amalickiah Ammah Ammon Amnigaddah Antionah Archeantus Avichen Bethuel Cezoram Chemish Coriantum Cumenihah Elhanan Ethem Ether Euzel Ezias Ezra Gabrien Giddonah Gilead Himni Hyrum Isaiah Ishmael Israel Jeremiah Judah Katriel Kishkumen Kneel Korihor Kumenonhi Lachoneus Lamah Mahah Mahonri Mathonihah Moriancumer Mormon Moron Moses Muloki Nashoba Nehemiah Nephi Nimrah Niniva Noah Omni Orihah Paanchi Pacumeni Riplakish Seezoram Shemnon Shiblom Tabernacle Templer Teomner Tithing Tubaloth Yehoram Yoder Zamaleki Zarahemla Zedekiah Zeezrom Zekiel Zemnarihah Zenephi Zenoa Zerahemnah Zeram Zoram 
+	}
+	
+	# Names given only to Mormon characters (base names)
+	female_names = {
+		Aaronica Abigail Abish Abrah Alemeda Almadon Angelic Ankanna Arabeth Asenath Athaliah Beneth Blessing Celestian Cember Chassia Christina Cleota Cumorah Delilah Deza Diona Esther Geaniel Heneli Isha Itha Izaiha Izola Jelisa Jemima Jesselah Jordana Jubeltine Junean Kaiah Kasiah Klystia Labbaron Lethea Mavia Morona Naamah Nalomi Naoma Nevona Nezla Ninnon Oshira Palmyra Phemia Rhoda Samila Sariah Semiramis Seneth Serah Seviah Shambertine Shanalea Sushelle Talesha Tempalia Xanne Zarinaea Zenobia Zeruah Ziona
+	}
+	
+	#default interface
+	
+	mormon = {
+		graphical_culture = westerngfx
+
+		icon = 65
+		heresy_icon = 65
+		
+		color = { 0.75 0.4 0.55 }
+		
+		crusade_name = EXPEDITION
+		scripture_name = THE_BOOK_OF_MORMON
+		priest_title = PRIEST
+
+		high_god_name = GOD_THE_HEAVENLY_FATHER
+		
+		god_names = {
+			GOD_GOD GOD_THE_LORD GOD_JEHOVAH GOD_JESUS GOD_THE_PROPHET GOD_THE_HEAVENLY_FATHER GOD_THE_GODHEAD
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		max_wives = 1
+		
+		religious_clothing_head = 0
+		religious_clothing_priest = 2
 	}
 }

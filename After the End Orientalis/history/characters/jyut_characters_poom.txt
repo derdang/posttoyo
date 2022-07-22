@@ -1,0 +1,143 @@
+## Cantonese and Guangzhou in general.
+## File name to be changed or merged with another file later.
+# 2620 - Guangdong
+
+### Hao line and family
+### Ge line and family
+2620001 ={ #  Ge1
+	name="Ge"
+	dynasty=1972116 # Hao-Macanese
+	culture=highlander
+	religion=jibenyuanze #ruist/secret JBYZ
+	martial=19
+	diplomacy=15
+	stewardship=16
+	intrigue=20
+	learning=15
+	trait=brilliant_strategist
+	trait=ambitious
+	trait=genius
+	trait=legendary
+	#occluded=yes
+	random_trait=no
+	2001.1.1={birth=yes}
+	2016.2.15={culture=cantonese}
+	2101.1.1={death=yes}
+}
+2620002 ={ # papa Ge2
+	name="Ge"
+	dynasty=1972116 # Hao-Macanese
+	culture=highlander
+	religion=ruist #ruist/secret JBYZ
+	martial=9
+	diplomacy=9
+	stewardship=5
+	intrigue=6
+	learning=11
+	trait=skilled_tactician
+	trait=shrewd
+	trait=ambitious
+	2577.2.15={birth=yes}
+	2595.2.15={culture=cantonese}
+	2598.12.1={
+		add_spouse = 2620012
+	}
+}
+2620003 ={ # baby Ge3
+	name="Ge"
+	dynasty=1972116 # Hao-Macanese
+	culture=highlander
+	religion=ruist #ruist/secret JBYZ
+	martial=5
+	diplomacy=6
+	stewardship=7
+	intrigue=6
+	learning=5
+	trait=quick
+	father=2620002
+	mother=2620012
+	2600.1.21={birth=yes}
+	2601.2.15={culture=cantonese}
+}
+2620012 ={ # mom Ge2
+	name="Girle"
+	culture=highlander
+	female=yes
+	religion=ruist #ruist/secret JBYZ
+	martial=5
+	diplomacy=9
+	stewardship=10
+	intrigue=8
+	learning=8
+	trait=quick
+	2580.1.15={birth=yes}
+}
+2620101 ={ # Chen of Dongjiang
+	name="Tairen"
+	dynasty=9051026
+	culture=cantonese
+	religion=ruist
+	martial=8
+	diplomacy=11
+	stewardship=10
+	intrigue=9
+	learning=9
+	trait=grey_eminance
+	trait=wroth
+	trait=zealous
+	2584.1.9={birth=yes}
+}
+2620102 ={ # Chen of Beijiang
+	name="Yuan"
+	dynasty=9051026
+	culture=cantonese
+	religion=ruist
+	martial=6
+	diplomacy=8
+	stewardship=9
+	intrigue=5
+	learning=6
+	trait=thrifty_clerk
+	trait=charitable
+	trait=content
+	2582.8.5={birth=yes}
+}
+2620103 ={ #Shenzhen Li
+	name="Jingshu"
+	dynasty=9051120
+	culture=cantonese
+	religion=taoist
+	female=yes
+	martial=7
+	diplomacy=10
+	stewardship=8
+	intrigue=7
+	learning=8
+	trait=scholarly_theologian
+	trait=charitable
+	trait=quick
+	2588.9.1={birth=yes}
+	2600.1.1={capital = c_shenzhen}
+}
+2620104 ={ # 
+	name="Wenyu"
+	dynasty=9051238
+	culture=cantonese
+	religion=ruist
+	2584.8.5={birth=yes}
+}
+2620201 ={ #Foshan
+	name="Ming"
+	dynasty=9051258
+	culture=cantonese
+	religion=shenist
+	martial=10
+	diplomacy=8
+	stewardship=9
+	intrigue=7
+	learning=10
+	trait=brilliant_strategist
+	trait=quick
+	2588.9.1={birth=yes}
+}
+## To do : Two Shen-chen (pun intended)

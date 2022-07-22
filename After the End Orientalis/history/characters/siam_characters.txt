@@ -1,0 +1,966 @@
+#2310 - Central Thai
+#	- 2310001 - 2310049 - post-event Ruling family
+#	- 2310050 - 2310149 - Non-royal in Palimonthon
+#	- 2310150 - 2310199 - Post-event history 
+#	- 23102xx - Characters in d_ayutthaya and Lopburi
+#	- 23105xx - Characters in de jure Duchy/Kingdom of Sukhothai
+#	- 23107xx - Characters in East Thailand
+#	- 23109xx - Characters in Pattaya MR.
+#2311/2312 - Isan : Northeast Thai
+#	- 23111xx - Characters in d_nakhon ratchasima
+#
+#2312 - North Thai
+#	- 23121xx - Characters in Chiang Mai/Chiang Rai
+#	- 23124xx - Characters in Phrae/Nan
+#2313 - South Thai (Currently share culture with central Thai)
+#   - 23131xx - d_Surat
+#	- 23132xx - d_nakhon_sri_thammarat
+#	- 23133xx - Songkhla & Phuket
+#	- 23135xx - d_Pattani
+####
+# All names, culture and stats in this chart are not final.
+
+### Central Thai - Thai Kingdom
+2310001 ={
+	name="Phra Hao"
+	dynasty=2310001 #Cheachaophandin
+	culture=thai_central
+	religion=dharmayuttika
+	dna="ngbvjqpaiix"
+	martial=5
+	diplomacy=7
+	stewardship=8
+	intrigue=4
+	learning=5
+	trait=martial_cleric
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=stubborn
+	father=2310173
+	2570.4.15={birth=yes}
+}
+2310002 ={
+	name="Krang"
+	dynasty=2310001 #Cheachaophandin
+	culture=thai_central
+	religion=dharmayuttika
+	2602.1.12={birth=yes}
+	father=2310001
+}
+
+2310091 ={
+	name="Sagat"
+	dynasty=2310006
+	culture=thai_central
+	religion=dharmayuttika
+	martial=7
+	diplomacy=4
+	stewardship=5
+	intrigue=6
+	learning=6
+	trait=thrifty_clerk
+	trait=strong
+	trait=proud
+	trait=brawny
+	trait=stubborn
+	2577.4.1={birth=yes}
+	2589.1.1={
+		employer=2310001
+	}
+}
+2310093 ={
+	name="Poomin"
+	dynasty=2310903
+	culture=thai_central
+	religion=dharmayuttika
+	martial=4
+	diplomacy=2
+	stewardship=7
+	intrigue=4
+	learning=6
+	trait=thrifty_clerk
+	trait=feeble
+	trait=shrewd
+	trait=proud
+	trait=slothful
+	trait=lefthanded
+	trait=stubborn
+	2589.11.1={birth=yes}
+}
+2310101 ={ #c_ratchaburi and others
+	name="Youyen"
+	dynasty=2310101
+	culture=thai_central
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=7
+	intrigue=4
+	learning=4
+	trait=midas_touched
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=stubborn
+	2558.4.15={birth=yes}
+}
+2310121 ={ # c_kanchanaburi
+	name="Sena"
+	dynasty=2310121
+	culture=thai_central
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=skilled_tactician
+	trait=strong
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+
+### Ayutthaya
+2310201 = {
+	name="Phet"
+	dynasty=2310201 #Phludang
+	culture=thai_central
+	religion=dharmayuttika
+	martial=5
+	diplomacy=6
+	stewardship=5
+	intrigue=4
+	learning=6
+	trait=skilled_tactician
+	trait=zealous
+	trait=proud
+	2566.7.11={birth=yes}
+}
+2310202 = {
+	name="Suea"
+	dynasty=2310201 #Phludang
+	culture=thai_central
+	religion=dharmayuttika
+	martial=5
+	diplomacy=6
+	stewardship=5
+	intrigue=1
+	learning=6
+	trait=skilled_tactician
+	trait=zealous
+	trait=proud
+	2589.2.5={birth=yes}
+	father=2310201
+}
+2310210 = {
+	name="Kiaeo Chantra"
+	dynasty=2310202 
+	culture=thai_central
+	religion=dharmayuttika
+	martial=8
+	diplomacy=6
+	stewardship=5
+	intrigue=1
+	learning=3
+	trait=tough_soldier
+	trait=zealous
+	trait=brave
+	trait=proud
+	trait=peasant_leader
+	2569.2.5={birth=yes}
+}
+	### Lopburi
+2310301 = {
+	name="Pinya"
+	dynasty=2310301
+	culture=thai_central
+	religion=dharmayuttika
+	martial=5
+	diplomacy=6
+	stewardship=5
+	intrigue=1
+	learning=6
+	trait=idolizer
+	trait=proud
+	2596.5.20={birth=yes}
+}
+2310302 ={ # Konstantyn Falkov?
+	name="Konstantyn"
+	dynasty=2310996 #Falkov-Thaified
+	culture=primorskiy
+	religion=catholic
+	martial=6
+	diplomacy=8
+	stewardship=4
+	intrigue=4
+	learning=8
+	trait=grey_eminence
+	trait=robust
+	trait=shrewd
+	trait=diligent
+	2570.4.15={birth=yes}
+	2604.4.1={employer=2310301}
+}
+2310401 ={ # d_uthaithani
+	name="Wichit"
+	dynasty=2310003 #Galaxy
+	culture=thai_central
+	religion=dharmayuttika
+	martial=3
+	diplomacy=8
+	stewardship=4
+	intrigue=6
+	learning=8
+	trait=mastermind_theologian
+	trait=zealous
+	trait=scholar
+	trait=diligent
+	2580.4.15={birth=yes}
+}
+### Sukhothai
+2310501 ={
+	name="Klarharn" # Brave, not-Ram khamhaeng
+	dynasty=2310501
+	culture=thai_sukhothai
+	religion=dharmayuttika
+	martial=9
+	diplomacy=5
+	stewardship=8
+	intrigue=4
+	learning=7
+	trait=midas_touched
+	trait=diligent
+	trait=just
+	trait=quick
+	2567.4.15={birth=yes}
+}
+2310508 ={
+	name="Thong" # Kraithong
+	dynasty=2310505
+	culture=thai_sukhothai
+	religion=dharmayuttika
+	martial=9
+	trait=tough_soldier
+	trait=sturdy
+	trait=strong
+	trait=cruel
+	trait=brave
+	trait=quick
+	2570.4.15={birth=yes}
+}
+2310511 ={
+	name="Dam" # Black Prince
+	dynasty=2310502
+	father=2310513
+	culture=thai_sukhothai
+	religion=dharmayuttika
+	martial=7
+	diplomacy=3
+	stewardship=6
+	intrigue=6
+	learning=8
+	trait=brilliant_strategist
+	trait=duelist
+	trait=shrewd
+	trait=brave
+	trait=quick
+	2586.4.15={birth=yes}
+}
+2310512 ={
+	name="Kao" # White Prince
+	dynasty=2310502
+	father=2310513
+	culture=thai_sukhothai
+	religion=dharmayuttika
+	martial=4
+	diplomacy=7
+	stewardship=8
+	intrigue=6
+	learning=8
+	trait=charismatic_negotiator
+	trait=duelist
+	trait=shrewd
+	trait=brave
+	trait=quick
+	2589.4.15={birth=yes}
+}
+2310513 ={
+	name="Thamma" # Pious Father
+	dynasty=2310502
+	culture=thai_sukhothai
+	religion=dharmayuttika
+	trait=martial_cleric
+	trait=zealous
+	trait=kind
+	trait=craven
+	trait=quick
+	2550.4.15={birth=yes}
+	2600.4.13={death=yes}
+}
+2310601 ={
+	name="Bang" # c_nakhon_sawan
+	dynasty=2310601
+	culture=thai_sukhothai
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=7
+	intrigue=4
+	learning=5
+	trait=brilliant_strategist
+	trait=sturdy
+	trait=diligent
+	trait=just
+	trait=quick
+	2567.4.15={birth=yes}
+}
+### East Thailand
+2310701 ={ # d_chantraburi
+	name="Gabriel"
+	dynasty=2310701 
+	culture=thai_central
+	religion=dharmayuttika
+	secret_religion=catholic
+	martial=3
+	diplomacy=7
+	stewardship=4
+	intrigue=3
+	learning=6
+	trait=charismatic_negotiator
+	trait=theologian
+	trait=sturdy
+	2580.4.15={birth=yes}
+}
+2310711 ={ # d_prachinburi
+	name="John"
+	dynasty=2310711
+	culture=thai_central
+	religion=dharmayuttika
+	martial=3
+	diplomacy=7
+	stewardship=4
+	intrigue=3
+	learning=6
+	trait=charismatic_negotiator
+	trait=sturdy
+	2580.4.15={birth=yes}
+}
+2310801 ={ # d_chonburi
+	name="Samutra"
+	dynasty=2310010
+	culture=thai_central
+	religion=dharmayuttika
+	martial=3
+	diplomacy=7
+	stewardship=4
+	intrigue=3
+	learning=6
+	trait=charismatic_negotiator
+	trait=sturdy
+	2580.4.15={birth=yes}
+}
+	### Pattaya
+2310910 ={ # Thai patrician in Pattaya.
+	name="Bira"
+	dynasty=2310991 #Phikulavong
+	culture=thai_central
+	religion=dharmayuttika
+	martial=5
+	diplomacy=6
+	stewardship=5
+	intrigue=4
+	learning=4
+	trait=tough_soldier
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	2584.7.15={birth=yes}
+}
+2310920 ={ # Thai patrician in Pattaya. Subject to change.
+	name="Ted"
+	dynasty=2310992 #Kenway
+	culture=thai_central
+	religion=catholic
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=tough_soldier
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=wroth
+	2570.4.15={birth=yes}
+}
+2310930 ={ # Russian patrician in Pattaya. currently hold the county
+	name="Yuriy"
+	dynasty=2310993 #Torpedovich
+	culture=primorskiy
+	religion=orthodox
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=tough_soldier
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=wroth
+	2570.4.15={birth=yes}
+}
+2310940 ={ # Thai patrician in Pattaya. Subject to change.
+	name="Lek"
+	dynasty=2310994 #Albo
+	culture=thai_central
+	religion=dharmayuttika
+	martial=3
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=sturdy
+	trait=diligent
+	trait=quick
+	2589.4.15={birth=yes}
+}
+2310950 ={ # Thai patrician in Pattaya. Subject to change.
+	name="Jaa"
+	dynasty=2310995 #Wangrong
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5	
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=tough_soldier
+	trait=duelist
+	trait=sturdy
+	trait=strong
+	trait=shrewd
+	trait=diligent
+	2575.4.15={birth=yes}
+}
+### Isan - Northeast Thailand
+2311101 ={ # d_nakorn_ratchasima
+	name="Pongsri"
+	female=yes
+	dna=bcfdfdgeacd # The default DNA don't really give a vibe of martial lady at all.
+	dynasty=2311003 #Ngam-naimueang
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=skilled_tactician
+	trait=duelist
+	trait=strong
+	trait=diligent
+	trait=shieldmaiden
+	2585.4.15={birth=yes}
+}
+2311111 ={ # c_surin Khmer
+	name="Sray"
+	dynasty=2311025
+	culture=khmer
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=skilled_tactician
+	trait=shrewd
+	trait=diligent
+	2583.4.15={birth=yes}
+}
+2311121 ={ # c_buriram
+	name="Champ"
+	dynasty=2311041 #Padungram
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=shrewd
+	trait=diligent
+	2583.4.15={birth=yes}
+}
+2311201 ={ # d_khonkaen
+	name="Pan"
+	dynasty=2311016 
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2311221 ={ # c_chaiyaphum
+	name="Phakdi"
+	dynasty=2311006
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2311211 ={ # c_roi_et
+	name="Ton"
+	dynasty=2311101
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=content
+	2585.4.15={birth=yes}
+}
+2311241 ={ # c_kalasin
+	name="Phuparn"
+	dynasty=2311300
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=tough_soldier
+	trait=ambitious
+	2585.4.15={birth=yes}
+}
+2311301 ={ # d_udon_thani (Vientiane border)
+	name="Nam"
+	dynasty=2311151 #Sangcom
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2311311 ={ # c_sakon_Nakhon
+	name="Ton"
+	dynasty=2311011
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2311331 ={ # nong_khai-Loei
+	name="Ken"
+	dynasty=2311153
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=6
+	diplomacy=7
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=charismatic_negotiator
+	trait=diligent
+	2583.4.15={birth=yes}
+}
+2311401 ={ # d_ubon (Champassak/Cambodia border)
+	name="Chanadai"
+	dynasty=2311202
+	culture=thai_isan
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=thrifty_clerk
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+
+### North
+2312101 ={ # d_chiangmai/lanna
+	name="Cherdchu"
+	dynasty=2312002 #Langkapintha
+	culture=thai_mueang
+	religion=dharmayuttika
+	martial=8
+	diplomacy=6
+	stewardship=8
+	intrigue=4
+	learning=7
+	trait=thrifty_clerk
+	trait=ambitious
+	trait=just
+	trait=zealous
+	2583.4.15={birth=yes}
+}
+2312201 ={ # d_phayao
+	name="Saeng-la"
+	dynasty=2312021 #Sritisan
+	culture=thai_mueang
+	religion=dharmayuttika
+	martial=4
+	diplomacy=7
+	stewardship=8
+	intrigue=5
+	learning=6
+	trait=thrifty_clerk
+	trait=zealous
+	2583.4.15={birth=yes}
+}
+2312211 ={ # c_phrae
+	name="Fongkham"
+	dynasty=2312016 #Kaenhom
+	culture=thai_mueang
+	religion=dharmayuttika
+	martial=4
+	diplomacy=7
+	stewardship=8
+	intrigue=5
+	learning=6
+	trait=thrifty_clerk
+	trait=zealous
+	2587.4.15={birth=yes}
+}
+2312301 ={ # d_lampang- rigged to allow Lanna form
+	name="Sa-art"
+	dynasty=2312002 #Langkapintha
+	culture=thai_mueang
+	religion=dharmayuttika
+	martial=6
+	diplomacy=7
+	stewardship=5
+	intrigue=5
+	learning=7
+	trait=martial_cleric
+	trait=zealous
+	trait=chaste
+	2567.4.15={birth=yes}
+}
+2312401 ={ # c_uttharadit
+	name="Daab"
+	dynasty=2310651
+	culture=thai_sukhothai
+	religion=dharmayuttika
+	martial=6
+	diplomacy=6
+	stewardship=5
+	intrigue=5
+	learning=4
+	trait=tough_soldier
+	trait=duelist
+	trait=strong
+	2589.4.15={birth=yes}
+}
+### South Thailand
+2313100 ={ # d_Surat
+	name="Bandon"
+	dynasty=2313001
+	culture=thai_paktai
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=6
+	intrigue=4
+	learning=4
+	trait=tough_soldier
+	trait=sturdy
+	trait=shrewd
+	trait=diligent
+	trait=wroth
+	2580.4.15={birth=yes}
+}
+2313131 ={ # Asa Cham
+	name="Asa"
+	dynasty=1177019 #Jaya - Cham dynasty
+	culture=cham
+	religion=senthang
+	martial=7
+	diplomacy=5
+	stewardship=4
+	intrigue=4
+	learning=4
+	trait=tough_soldier
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2313200 ={ # d_nakhon_sri_thammarat
+	name="Si Prat"
+	dynasty=2313002
+	culture=thai_central
+	religion=dharmayuttika
+	martial=3
+	diplomacy=7
+	stewardship=4
+	intrigue=6
+	learning=7
+	trait=grey_eminence
+	trait=poet
+	trait=shrewd
+	trait=diligent
+	trait=lustful
+	2585.4.15={birth=yes}
+}
+
+2313300 ={ # d_songkhla
+	name="Sulayman"
+	dynasty=2313003
+	culture=thai_paktai
+	religion=senthang
+	martial=5
+	diplomacy=4
+	stewardship=4
+	intrigue=6
+	learning=7
+	trait=grey_eminence
+	trait=shrewd
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2313400 ={ # c_phuket
+	name="Chom"
+	dynasty=2313004
+	culture=thai_paktai
+	religion=dharmayuttika
+	martial=6
+	diplomacy=4
+	stewardship=5
+	intrigue=6
+	learning=7
+	trait=fortune_builder
+	trait=brave
+	trait=chaste
+	trait=fair
+	2549.4.15={birth=yes}
+}
+2313401 ={ # c_phuket
+	name="Chan"
+	female=yes
+	dynasty=2313004
+	culture=thai_paktai
+	religion=dharmayuttika
+	martial=6
+	diplomacy=4
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=skilled_tactician
+	trait=brave
+	trait=diligent
+	trait=fair
+	father=2313400
+	2585.4.15={birth=yes}
+}
+2313402 ={ # c_phuket /younger sister of above
+	name="Mook"
+	female=yes
+	dynasty=2313004
+	culture=thai_paktai
+	religion=dharmayuttika
+	martial=5
+	diplomacy=6
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=skilled_tactician
+	trait=brave
+	trait=diligent
+	trait=quick
+	father=2313400
+	2589.11.15={birth=yes}
+}
+2313410 ={ # c_satun
+	name="Sa-ngob"
+	dynasty=2313006
+	culture=thai_paktai
+	religion=senthang
+	martial=5
+	diplomacy=4
+	stewardship=4
+	intrigue=6
+	learning=4
+	trait=grey_eminence
+	trait=shrewd
+	trait=diligent
+	2585.4.15={birth=yes}
+}
+2313500 ={ # c_pattani
+	name="Fatimah"
+	female=yes
+	dynasty=2313005
+	culture=thai_paktai
+	religion=senthang
+	martial=4
+	diplomacy=6
+	stewardship=4
+	intrigue=6
+	learning=7
+	trait=grey_eminence
+	trait=shrewd
+	trait=diligent
+	2587.4.15={birth=yes}
+	
+}
+2313510 ={ # c_yala
+	name="Harn"
+	dynasty=2310905 #Damkwan
+	culture=thai_paktai
+	religion=dharmayuttika
+	martial=7
+	diplomacy=5
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=grey_eminence
+	trait=shrewd
+	trait=brave
+	trait=ambitious
+	2585.4.15={birth=yes}	
+}
+2313520 ={ # c_narathiwat.
+	name="Phitak"
+	dynasty=2315010 #Saetan.
+	culture=sinotai
+	religion=dharmayuttika
+	martial=4
+	diplomacy=5
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=grey_eminence
+	trait=shrewd
+	trait=diligent
+	2585.4.15={birth=yes}	
+}
+
+##History 2310150 - 199
+2310150 ={ # post-event Golden Age
+	name="Yukthong Khong Thai"
+	dynasty=2310199
+	culture=thai_central
+	religion=dharmayuttika
+	martial=40
+	diplomacy=40
+	stewardship=40
+	learning=40
+	trait=legendary #Highly legendary
+	occluded=yes
+	#no-random-trait
+	2070.1.1={birth=yes}
+	2205.12.30={death=yes}
+}
+2310151 ={ # post-event Golden Age
+	name="Siam Devadhiraj"
+	dynasty=2310199
+	culture=thai_central
+	religion=dharmayuttika
+	martial=40
+	diplomacy=40
+	stewardship=40
+	learning=40
+	trait=legendary #Highly legendary
+	occluded=yes
+	#no-random-trait
+	1782.1.1={birth=yes}
+	2282.12.30={death=yes}
+}
+2310152 ={ # post-event reign
+	name="---"
+	dynasty=2310199
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Highly legendary
+	occluded=yes
+	#no-random-trait
+	2265.1.1={birth=yes}
+	2307.1.30={death=yes}
+}
+2310153 ={ # post-event reign
+	name="Kalpa-avasarn"
+	dynasty=2310199
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Highly legendary
+	occluded=yes
+	#no-random-trait
+	2296.1.1={birth=yes}
+	2310.12.29={death=yes}
+}
+##The Chaotic Fall : 2310154 - 170
+
+##The Restoration : 170 - 199
+2310170 ={ # post-event reign
+	name="---"
+	dynasty=2310199
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Highly legendary
+	occluded=yes
+	#no-random-trait
+	2410.1.1={birth=yes}
+	2458.12.30={death=yes}
+}
+2310171 ={ # post-event reign
+	name="Thammaracha"
+	dynasty=2310199
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Highly legendary
+	trait=mastermind_theologian
+	occluded=yes
+	#no-random-trait
+	2458.1.1={birth=yes}
+	2538.12.30={death=yes}
+}
+2310172 ={ # post-event reign
+	name="---"
+	dynasty=2310001
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary
+	occluded=yes
+	#no-random-trait
+	2458.1.1={birth=yes}
+	2538.12.30={death=yes}
+}
+2310173 ={ # post-event reign
+	name="Phra-Ek"
+	dynasty=2310001
+	culture=thai_central
+	religion=dharmayuttika
+	trait=legendary #Less legendary now
+	#no-random-trait
+	2516.10.14={birth=yes}
+	2591.4.15={death=yes}
+}

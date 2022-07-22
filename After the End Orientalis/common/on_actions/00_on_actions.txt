@@ -2,39 +2,26 @@
 on_startup = {
 	events = {
 		GR.13 #True cognatic for rule gender = all
-		JD.10006 #Save game fix for setting the name of the Chinese empire
+		MNM.10025 #Save game conversion of secret_traits to secret religions
+		JD.10006#Save game fix for setting the name of the Chinese empire
 		JD.60005 #Convert prosthetics event modifiers into artifacts
 		JD.50401 # Set correct value of the Silk Road
 		JD.30504 # Clean up living members of the chinese dynasty
-		#HF.20372 # Apply Crowned_by_traits
 		HFP.30031 # Set up freckles
-		#HF.1 # Set up Great Conquerors for Shattered World
-		#HF.2 # Set up Primogeniture in Shattered World
-		#HF.5 # Alternate Start General maintenance
-		#HF.23205 # Altstart Dogmatic/Cosmopolitan effects.
-		#HF.23035 #Status of Women cleanup for customized religions on Random Start.
-		#HF.25070 #Add Tattoos to landless starting Warrior Lodge members of high ranks.
 		HFP.40028 # Remove child traits
 		689 # scripted default elective token setup
 		HFP.24025 #Enable Eldership for appropriate religions/Doctrines.
 		GR.30 # Generate random families for characters without
-		# HF.15099 # Setup rain in Vanilla African regions (Eventually for Southeast Asia)
-		HF.23776 #Assign African tattoos.
-		HFP.20804 #Clear Byzantine commander variables on the Emperor.
+		HF.15099 # Setup rain in the "Indochina" region
 		HF.23778 #Setting up god-emperors on Altstart.
 		HFP.24120 #Setup Princely Elector Titles.
 		HFP.11051 # Hidden event to give commanders (who do not have it already) the commander bonus
-		#LT.32000 # Adding the historical flag to wonders.
-		
-		ateo_landmarks.0 # Landmark event
-		ateom.1 #Annamese Christian Mission to the Kingdom of Jarai
 	}
 }
 
 #character
 on_yearly_pulse = {
 	events = {
-		#HL.1030 # Wolf Child growing older, rumors of real mother being a wolf
 		63106 # (Safety flag clearance check event)
 		ZE.1100 # Disobedient daughter is unhappy
 		ZE.9000 # Ally not contributing in war
@@ -45,27 +32,30 @@ on_yearly_pulse = {
 		RIP.30316 # clean up immortal crisis 
 		RIP.30317 # immortal crisis spreads
 		# MNM.4430 # Passive nice trait gain for buddhist/jain monastic societies ### now only triggered upon succeeding in missions
+		MNM.9815 # Seal of Solomon artifact makes you immune to possession
 		MNM.70030 # Secret society visibility reduction
 		JD.20041 # Chinese commander teaching other commanders their leadership trait
 		JD.4000 # Character raiding China result events
 		bear.7 # Secret bear generation
 		bear.1 # Secret bear discovery. Called here and in bear.7, as bear.1 can be temporarily precluded
 		GR.23 # Repeat exclave purge for AI's every year if they are at war
-		#HF.20405 #Ticking negative opinion modifier for uncrowned Catholic
 		HF.21999 #Main Appease hidden event, no further pulses are required.
 		HF.22999 #Main Antagonize hidden event, no further pulses are required.
-		#HF.3 # Activate GHW's and holy orders when running randomized rel names
 		8306
 		8400
 		8410
 		HF.304 # Child of Destiny gains bloodline if above Duke tier
+		62933
+		62934
 		HFP.44002 # Holy Orders check if their liege, if any, is still fit to rule them
-		#HF.49100 # Check if to start Northern Crusade
-		#HF.49116 # Check if Northern Crusade has succeeded
-		#HF.49120 # Flavor event tombola Northern Crusade
 		HF.49460 # Reconquista Adventurer
 		HF.49470 # Reconquista flavor tombola
 		HFP.24001 # Elder has too much to live for.
+		# Court maintenance events
+		LT.61001 #Add/remove stats
+		LT.61002 #Add relationship
+		LT.61003 #Add modifiers
+		LT.61004 #Add nicknames
 	}
 	
 	random_events = {
@@ -177,9 +167,9 @@ on_yearly_pulse = {
 		10 = 69052 
 		10 = 69054 
 		10 = 69056 
-		10 = 69058 
-		10 = 69060 
-		10 = 69063 
+		10 = 69058  
+		10 = 69060  
+		10 = 69063  
 		10 = 69070
 		10 = 69073
 		10 = 69100
@@ -257,28 +247,28 @@ on_yearly_pulse = {
 		100 = RoI.3400
 		
 		# Indian ascetics and yogis
-		#20 = RoI.203
-		#20 = RoI.206
-		#20 = RoI.209
-		#20 = RoI.193
+		20 = RoI.203
+		20 = RoI.206
+		20 = RoI.209
+		20 = RoI.193
 		
 		# Indian story events
-		#20 = RoI.215
-		#20 = RoI.20147
-		#20 = RoI.20164
+		20 = RoI.215
+		20 = RoI.20147
+		20 = RoI.20164
 		
 		# Indian minor events
-		#100 = RoI.157
-		#100 = RoI.158
-		#100 = RoI.163
-		#100 = RoI.180
-		#100 = RoI.190
-		#50 = RoI.401
-		#100 = RoI.403
+		100 = RoI.157
+		100 = RoI.158
+		100 = RoI.163
+		100 = RoI.180
+		100 = RoI.190
+		50 = RoI.401
+		100 = RoI.403
 		100 = RoI.410
-		#100 = RoI.411
-		#200 = RoI.412
-		#500 = RoI.500 #I gotta remember to do the Long Wang expedition stuff...
+		100 = RoI.411
+		200 = RoI.412
+		500 = RoI.500
 		
 		# Indian low religious authority events
 		50 = RoI.3500
@@ -321,14 +311,14 @@ on_yearly_pulse = {
 		100 = CM.6132
 		
 		# Meddling mother events
-		#100 = CM.1150
-		#100 = CM.1160
-		#100 = CM.1170
-		#100 = CM.1180
-		#100 = CM.1190
+		100 = CM.1150
+		100 = CM.1160
+		100 = CM.1170
+		100 = CM.1180
+		100 = CM.1190
 		
 		# Other Charlemagne/Carloman
-		#100 = CM.1130
+		100 = CM.1130
 		
 		# Horse Lords Mercenary Events
 		300 = HL.10100
@@ -529,18 +519,28 @@ on_yearly_pulse = {
 		150 = HF.43300 # Frenzied zealots at your capital
 		150 = HF.43400 # Monk Society helping out
 		
+		# Trans-Saharan Trade Post Events
+		75 = HFP.80000 # Gold Rush!
+		100 = HFP.80010 # Gold mine depleted
+		100 = HFP.80020 # Gold inflation in province
+		
 		# Former MTTH Events
+		100 = TOG.3109 # Child wants to join the Varangians (Son) - Formerly 200 month MTTH
 		# Varangian events moved to tombola in HFP.19102...
 		
 		50 = SoA.5219 # Donate to local monastery - Formerly 2000 month MTTH
 
 		#Wonder Flavor Events 
 		100 = LT.20001 # Lost Book event chain, 
-		100 = LT.60101 #Library lets you write cooler book
-		100 = LT.60301 #Tavern lets you blow off stress
-		100 = LT.60501 #Opinion boost from your liege if you have a wonder in your province
-		100 = LT.60601 #A part of the wonder has fallen off!
-		100 = LT.60701 #Chance to pick some cool herbs
+		100 = LT.60101 # Library lets you write cooler book
+		100 = LT.60301 # Tavern lets you blow off stress
+		100 = LT.60501 # Opinion boost from your liege if you have a wonder in your province
+		100 = LT.60601 # A part of the wonder has fallen off!
+		100 = LT.60701 # Chance to pick some cool herbs
+
+		# Court events
+		100 = LT.61006 # Decide nickname (court maintenance)
+		150 = LT.10103 # Courtiers praise your hospitality
 		
 		5000 = 0 # Chance of no yearly event
 		
@@ -567,13 +567,13 @@ on_yearly_pulse = {
 			750 = 100260 # My friend is a scholar - Formerly 200 month MTTH
 			750 = 100400 # My friend's rival tried to kill/maim/wound him/her! - Formerly 200 month MTTH
 			750 = 100420 # Accuse rival of cheating in tournament - Formerly 200 month MTTH
-			500 = 100150 # My friend's friend is my friend - Formerly 240 month MTTH
+			500 = 100170 # My friend's friend is my friend - Formerly 240 month MTTH
 			350 = 100440 # Your fierce rival has embraced heretical ways - Formerly 300 month MTTH
 			350 = 100450 # Make your liege distrust your rival - Formerly 300 month MTTH
 			350 = 100460 # My rival is homosexual! - Formerly 300 month MTTH
 			350 = 100470 # A rival of yours is so much beneath you that it seems a bit silly of you to hold him as an enemy - Formerly 300 month MTTH
-			350 = 100480 # Your rivalry to your liege is straining your commitment to your feudal duties - Formerly 300 month MTTH
-			350 = 100510 # Root tries to wound rival during hunt - Formerly 300 month MTTH
+			350 = 100480 # Your rivalry to your liege is straining your commitment to your feudal duties  - Formerly 300 month MTTH
+			350 = 100510 # Root tries to wound rival during hunt  - Formerly 300 month MTTH
 			100 = 100530 # Revenge seeker seeks revenge - Formerly 500 month MTTH
 			100 = 100540 # Son seeks revenge for his father - Formerly 500 month MTTH
 			50 = 100350 # I don't recognize my friend anymore, I don't know if we really are friends... - Formerly 1000 month MTTH
@@ -689,14 +689,9 @@ on_yearly_pulse = {
 #character
 on_bi_yearly_pulse = {
 	events = {
-		TOG.3005 # Lose Berserker Trait when too old
-		#SoA.5300 # Christian becoming a wicked priest
-		#SoA.5301 # Americanist becoming a wicked caliph	
-		#SoA.5302 # Norse becoming an unworthy priest
-		#SoA.5303 # Mormon becoming an unworthy priest
-		#SoA.5305 # Aztec becoming an unworthy priest
-		#HF.15098 # African Rain/Drought delayed weather change event (HF.15120 is the actual tombola)
+		HF.15098 # South-East Asian Rain/Drought delayed weather change event (HF.15120 is the actual tombola)
 	}
+	
 	
 	random_events = {
 
@@ -906,14 +901,7 @@ on_bi_yearly_pulse = {
 		
 		20 = TOG.3009
 		
-		#100 = SUFI.3260 # Sufi Orders: Advising a Poet
-		#100 = SUFI.4200 # Sufi Orders: Learning about Roses
-		#100 = SUFI.4210 # Sufi Orders: Fellow member drowsing off
-		#100 = SUFI.4435 # Sufi Orders: Friendship & Love
-		#100 = SUFI.4217 # Sufi Order: Burn heretical books
-		#50 = SUFI.4610 # Sufi Orders: Monastery has Artifact
-		
-		2000 = 0 # Chance of no bi-yearly event	
+		2000 = 0 # Chance of no bi-yearly event
 	}
 }
 
@@ -922,8 +910,7 @@ on_five_year_pulse = {
 	events = {
 		GR.1
 		MNM.10030 # Have AI characters join societies
-		#JD.1000 # Muslim Adventurers targeting India
-		#HF.20375 # Catholic Kings/Emperors who have not been crowned will receive random negative events.
+		JD.1000 # Muslim Adventurers targeting India
 		HFP.20604 # Hidden check for physique_variable.
 		HF.99 # Legendary warrior arrives		
 		HF.10050 # Warrior Lodges: Maintenance: AIs joins available warrior lodges
@@ -932,11 +919,11 @@ on_five_year_pulse = {
 		HF.24129 # Knights and Bards arrive.
 		HF.24132 # Lady seeks protection.
 		HF.24236 # Artists arrive.
-		#HF.15100 # Rain/Drought status changes in most of Africa
+		HF.15100 # Rain/Drought status changes in most of South-East Asia
 	}
 	
 	random_events = {
-		#---- misc traits needing revision below...
+		#----  misc traits needing revision below...
 
 		
 		
@@ -1057,6 +1044,10 @@ on_five_year_pulse = {
 		#10 = 3264 this was moved into 3260
 		10 = 3730
 		10 = 3735
+		
+		#Crown events.
+		10 = HF.20399
+		10 = HF.20400
 
 		#Physical shape events.
 		5 = HFP.20605 #Character is getting fat
@@ -1080,17 +1071,18 @@ on_decade_pulse = {
 	}
 	
 	random_events = {
+		500 = 60500 #Mongol Horde starts forming.
 		100 = 63050 #former MTTH event
 		40 = SoA.4020 #former MTTH event
 		100 = 0
 		#Late life health complications
 		200 = HFP.20661
 		200 = HFP.20662
-		100 = HF.23404 # Astrology + Haruspicy + No Religious Head: Court Chaplain occasionally reads the signs.
+		100 = HF.23404 #  Astrology + Haruspicy + No Religious Head: Court Chaplain occasionally reads the signs.
 
 		forged_bloodlines = {
 			15 = HF.24200 # Chance to claim Alexander the Great's Bloodline.
-			#15 = HF.24220 # Chance to claim Ashoka's Bloodline.
+			15 = HF.24220 # Chance to claim Ashoka's Bloodline.
 			7900 = 0
 		}
 
@@ -1119,8 +1111,6 @@ on_yearly_childhood_pulse = {
 	events = {
 		HFP.20057 # Hollow Child nickname.
 		HF.302 # Child of Destiny gets extra stats
-		
-		#SUFI.4300 # Monastic Order childhood education event
 	}
 
 	random_events = {
@@ -1218,7 +1208,7 @@ on_yearly_childhood_pulse = {
 
 		bloodline_events = {
 			100 = HF.24100 #Child is bored with his guardian.
-			#50 = HF.24230 # Depressed heir of Alexander/Ashoka.
+			50 = HF.24230 # Depressed heir of Alexander/Ashoka.
 			1000 = 0
 		}
 
@@ -1369,6 +1359,7 @@ on_battle_won = {
 		10 = 260 # Heroism shown
 		10 = 261 # Soldier Distinguish himself.
 		100 = 8310 # Crusader becomes zealous
+		50 = CM.1054 # Death of Roland
 	}
 }
 
@@ -1383,7 +1374,6 @@ on_major_battle_won = {
 on_battle_won_leader = {
 	events = {
 		HFP.41085
-		#HF.49121 # Northern Crusade Flavor Randomizer
 		HF.49471 # Reconquista Flavor Randomizer
 	}
 }
@@ -1393,7 +1383,6 @@ on_major_battle_won_leader = {
 	events = {
 		CM.10031
 		HFP.41085
-		#HF.49121 # Northern Crusade Flavor Randomizer
 		HF.49471 # Reconquista Flavor Randomizer
 	}
 }
@@ -1411,7 +1400,7 @@ on_battle_lost = {
 		700 = 0
 		50 = 250 # Imprisoned by the enemy
 		50 = 8320 # Crusader becomes cynical
-		#200 = CM.1056 # Death of Roland
+		200 = CM.1056 # Death of Roland
 	}
 }
 
@@ -1444,14 +1433,15 @@ on_battle_lost_owner = {
 on_siege_won_leader = {
 	events = {
 		8330 # Conquers the crusade target
+		88005 # Mongols sack city near the Hashshashin
 		CM.10033 # Chronicle for certain major locations
 		CM.10034 # Chronicle for certain major locations
-		#HF.49121 # Northern Crusade flavor tombola
+		HF.49121 # Northern Crusade flavor tombola
 		HF.49471 # Reconquista flavor tombola
 	}
 	random_events = {
 		300 = 0
-		100 = 8340 # Finds the Papal Tiara
+		100 = 8340 # Finds the Spear of Destiny / Holy Lance
 		100 = 8342 # Finds the Holy Grail
 		500 = 8345 # Sack of Jerusalem
 		5 = LT.21000 # After a Siege, things might get out of control and a sack occur.
@@ -1501,7 +1491,6 @@ on_siege_over_winner = {
 		RIP.11702 # Prosperity lost when sieged
 		RIP.11713 # Monument to Glory teardown
 		HL.4813 # Nomads may pillage holdings on siege
-		MNM.6222 # Assassins occupy holding
 		MNM.7111 # Devil Worshipers desecrate holding
 		MNM.9900 # Chance to steal artifact from capital holdings
 		HF.23473 # Destroy Tribal Great Pillar
@@ -1535,7 +1524,6 @@ on_siege_over_loc_chars = {
  		1000 = 0 # Nothing happens
  		100 = 62100 # Character imprisoned
  		200 = TOG.1190 # Rebels kill character
-		
  	}
 }
 
@@ -1591,9 +1579,12 @@ on_birth = {
 		318 # A Bastard is born, but is not recognized as such by the mother's spouse (cuckoo!)
 		335 # Hidden utility event for all children born
 		TOG.3206 # Child Perceived to be Demon Born
+		706 # Full House achievement
+		707 # Keeping it in the Family achievement
 		CM.10011 # Chronicle entry
-		#HL.1000 # Child born with Wolf's Blood
-		#HL.1700 # Wolf's Blood inheritance
+		HL.1000 # Child born with Wolf's Blood
+		HL.1700 # Wolf's Blood inheritance
+		TOG.6001 # Children gains Saoshyant Descendant trait from Saoshyant
 		RIP.11064 # Babies born in seclusion get seclusion modifier
 		MNM.7508 # DW Demon child
 		HFP.20403 # Remove pregnancy_finishing trait, check all special circumstances for child's birth.
@@ -1610,7 +1601,6 @@ on_birth = {
 		5 = RoI.10000 # Reincarnation?
 		1 = RIP.29805 # Reincarnation for non west_african
 		
-		
 		child_of_destiny_chance = { # Chance of a newborn child becoming a Child of Destiny
 			15000 = 0
 			1 = HF.200
@@ -1621,7 +1611,7 @@ on_birth = {
 # character
 on_adulthood = {
 	events = {
-		#HL.1040 # Wolf Child reaches maturity
+		HL.1040 # Wolf Child reaches maturity
 		ZE.13998 # Clear adolescence trait event chain flags on adulthood
 		
 		# Childhood Traits mature if they haven't yet
@@ -1677,6 +1667,12 @@ on_adolescence = { # Checked on 12th birthday.
 on_post_birth = {
 	events = {
 		313 # Possible complications for the mother and child
+	}
+}
+
+# mother scope
+on_post_birth_stillbirth = {
+	events = {
 		314 # Possible complications for the mother after stillbirth
 	}
 }
@@ -1697,17 +1693,18 @@ on_pregnancy = {
 #character
 on_crusade_creation = {
 	events = {
- 		#200 # Christian Crusade against OWC
+ 		#200 # Christian Crusade against Muslims
  		#201 # Christian Crusade against Pagans
  		#321 # Christian Crusade against Heretics
- 		#320 # Jihad against Christians
- 		#322 # Jihad against Pagans
- 		#323 # Jihad against Heretics
+ 		320 # Jihad against Christians
+ 		322 # Jihad against Pagans
+ 		323 # Jihad against Heretics
  		324 # Pagan Holy War against Christians
+ 		325 # Pagan Holy War against Muslims
  		326 # Pagan Holy War against other Pagans
+		327 # Zoroastrian Great Holy War
 		328 # Jewish Great Holy War
-			
-		CM.10015 # Chronicle entry
+		CM.10015  # Chronicle entry
  	}
 }
 
@@ -1715,8 +1712,11 @@ on_crusade_creation = {
 on_marriage = {
 	events = {
  		500 # Royal Marriage Aid Duty
+ 		501 # Zoroastrian "Xwedodah" marriage
+ 		502 # Messalian close kin marriage
  		HF.23777 # Doctrine close kin marriage
-		CM.10023 # Chronicle entry
+		708 # Marriage Game achievement
+		CM.10023  # Chronicle entry
 		CM.10036 # Chronicle entry - primary heir
 		ZE.1015 # Disobedient daughter is unhappy with marriage
 		GBC.199 # Game book event, falling in love with someone else at marriage feast
@@ -1736,8 +1736,9 @@ on_become_imprisoned_any_reason = {
 		MNM.9033 # Imprisoned councillor cannot hunt for relics
 		685 # Remove in-hiding trait on imprisonment
 		JD.10022 # Chinese councilor visiting is imprisoned - cancels visit
-		#HF.25803 # Childrens' Crusade leader has been captured, disband everything.
-		#HFP.23024 # Stop pilgrimage when arrested.
+		86867 # Cleanup event for Hajj.
+		HF.25803 # Childrens' Crusade leader has been captured, disband everything.
+		HFP.23024 # Stop pilgrimage when arrested.
 		HF.12305 # Legendary Hero has been imprisoned - notifies society members
 		HFP.24024 # Elder imprisoned without reason, other Elders upset.
 	}
@@ -1754,7 +1755,8 @@ on_avoided_imprison_started_war = {
 on_became_imprisoned = {
 	events = {
  		151 # Was imprisoned
-		CM.10024 # Chronicle entry
+		CM.10024  # Chronicle entry
+		86867 # Cleanup event for Hajj.
  	}
 }
 
@@ -1769,9 +1771,10 @@ on_avoided_imprison_fled_country = {
 on_released_from_prison = {
 	events = {
  		153
-		CM.10025 # Chronicle entry
-		ZE.12219 # Released from dungeon must choose whether to leave pet rat behind
-		HF.23446 # Prisoner about to be put through blood games is released before the games start. His jailer has no champion left.
+		CM.10025  # Chronicle entry
+		CM.15002  # Free anyone thrown into the desert
+		ZE.12219  # Released from dungeon must choose whether to leave pet rat behind
+		HF.23446  # Prisoner about to be put through blood games is released before the games start. His jailer has no champion left.
  	}
 }
 
@@ -1786,7 +1789,6 @@ on_executed = {
 on_exiled = {
 	events = {
  		155
-		#merchant.52		# consumerist merchant banished
  	}
 }
 
@@ -1821,14 +1823,24 @@ on_death = {
 		24500
 		24502
 		70041
+		88291
+		SoA.5306
+		705
+		CM.1068 # Carloman dies
+		CM.1069 # Charlemagne dies
 		CM.10010 # Chronicle entry
 		CM.6185 # Dies of other causes while assassination is in progress - clear flags
+		LT.21100 # # check to see if Henry I of England dies without male son
 		WoL.6335 # Owner of Necronomicon dies...
+		722 # Until Death Do Us Part achievement check
 		HLF.8001 # Sky Burial
 		HL.12
 		HL.4998
 		ZE.1030 # Daughter becomes disobedient - killed lover
-		ZE.1040 # Daughter becomes disobedient - killed friend	
+		ZE.1040 # Daughter becomes disobedient - killed friend
+		731 #Achievement Eternity Denied
+		732 #Achievement Papal Mache
+		734 #Achievement Aptly Named	
 		532 #Clears regents if heir has one already
 		RIP.4400 #Nicknames for executions
 		GR.10
@@ -1836,7 +1848,9 @@ on_death = {
 		MNM.6991 #Clears any quests targeting this character
 		MNM.6012 #Transfers assassins debt to heir
 		MNM.1415 #Announces hermetics apprentice death
-		#SoA.3091 # The Death of the Demon Child?
+		SoA.3091 # The Death of the Demon Child?
+		RoI.248 # clearing inventory of cursed diamond
+		740 # Achievement Unwelcome Visitors
 		MNM.9030 # Notify of dead relic hunter
 		MNM.1611 # Clears Apprentice minor titles
 		JD.60210 # Destroy Pretender Chinese Empire if heir is not same dynasty and chinese
@@ -1847,15 +1861,31 @@ on_death = {
 		JD.10080 # Your Chinese Prince/Princess has died (for children or spouse - must be read before JD.60310!)
 		JD.60310 # Courtier from China dies
 		JD.10022 # Chinese councilor visiting dies and cancels visit
+		HF.20014 	# On death of sponsor before baptism
+		HF.20016 	# On death of converter before baptism
+		HF.20022	# On death of sponsor after baptism
+		HF.20095	# On death of converter after baptism
+		HF.20034	# True believer vassal dies before ceremony, heir chooses what to do
 		GR.14 # Lose disconnected exclaves if not at war (Limited)
 		GR.15 # Lose disconnected exclaves if not at war (Significant)
 		GR.16 # Lose disconnected exclaves if not at war (Harsh)
 		GR.17 # Lose disconnected exclaves if not at war (Total)
 		GR.18 # Lose disconnected exclaves if not at war (Limited Naval)
+		HF.20227 # Character flag inheritance during wars for Coronation
+		HF.20228 # Character flag inheritance during wars for Coronation
+		HF.20229 # Character flag inheritance during wars for Coronation
+		HF.20231 # Notification if priest dies before the end of the Coronation Ceremony
+		HF.20374 # Set uncrowned trait to handle real uncrowned Kings not gaining a crown after death.
+		HF.20393 # On death of vassal, heir prompted to pay homage to crowned liege.
+		HF.20415 # Add hidden traits to make dead kings wear special crowns after the artifact has been transferred.
+		HF.20406 # Artifact inheritance for special crowns.
 		HF.21001 # Clear swayed target on his death.
 		HF.22119 # Clear swayed target on his death.
+		HF.40000 # Potential Beatification
+		HF.40090 # Potential bad Papal beatification
 		HF.40100 # Potential Ancestor Worship
 		HF.21152 # Clear special interest Sway/Antagonize characters on_death of Swayer/Antagonizer.
+		LoR.47 # Augustus trait cleanup
 		HFP.10997 #For logging purposes: how many of my commanders died during my lifetime
 		HFP.41002 # Change the Official Crusade Recipient if the current one dies
 		HFP.41053 # Change Beneficiary when a Beneficiary dies
@@ -1866,17 +1896,18 @@ on_death = {
 		HF.23801 #Host of a great tribal festival dies, end the event chain.
 		HF.10502 #Clears quest target for: Warrior Lodge duel-, wage war-, and recruit child-missions
 		WoL.4801 #Clear DND on your Carousing guests
-		#HF.25801 #Leader of Childrens' Crusade died before war, disband everything.
+		HF.25801 #Leader of Childrens' Crusade died before war, disband everything.
 		HFP.41170 # Check Crusade Dynasty Modifier
 		HF.560 # Notify Lodge Members that die in duels
 		HF.25071 #Clear Warriors of Ukko event troops.
 		HF.24017 #Murder points for Forge Bloodline Ambition.
-		#HF.24232 #Dragon Blood.
+		HF.24232 #Dragon Blood.
 		HF.12304 #Legendary Journey: Notify current heir and other warrior lodge members of your untimely demise
 		HF.49201 # Reconquista Death
 		HF.49208 # Clean up event troops at an old ex-Reconquistadors death
 		HF.50107 # Clean up for Warrior Lodge war aid
 		HFP.24019 # Elder has been killed, other Elders hate the killer.
+		HFP.19101 # Varangian guards return home upon becoming players
 		LT.20501 # Sucessor must decide on Burial if it has wonders with burial_ground flag
 	}
 	random_events = {
@@ -1981,8 +2012,9 @@ on_loot_province = {
 DEMAND_RELIGIOUS_CONVERSION_INTERACTION_ACCEPT_EVENT = {
 	events = {
 		202
-		
+
 		# RTT
+		LT.62002
 	}
 }
 
@@ -2007,6 +2039,7 @@ REVOKE_TITLE_INTERACTION_DECLINE_EVENT = {
 OFFER_PEACE_INTERACTION_ACCEPT_EVENT = {
 	events = {
 		206
+		CM.1407 # Charlemagne in Spain
 	}
 }
 
@@ -2334,6 +2367,7 @@ ASK_TO_RANSOM_CHARACTER_INTERACTION_DECLINE_EVENT = {
 SETTLE_ADVENTURER_INTERACTION_ACCEPT_EVENT = {
 	events = {
 		288
+		725
 	}
 }
 
@@ -2605,7 +2639,7 @@ on_defect_from_rebels = {
 on_crusade_success = {
 	events = {
 		620
-		CM.10016 # Chronicle entry
+		CM.10016  # Chronicle entry
 	}
 }
 
@@ -2613,7 +2647,7 @@ on_crusade_success = {
 on_crusade_failure = {
 	events = {
 		621
-		CM.10017 # Chronicle entry
+		CM.10017  # Chronicle entry
 	}
 }
 
@@ -2650,7 +2684,7 @@ on_county_religion_change = {
 # FROMFROM is the demander. FROM is the vassal. ROOT is the character. Fires for the vassal and each of his courtiers and vassals.
 on_vassal_accepts_religious_conversion = {
 	events = { 
-		#39700 # Hidden event actually changing the religion
+		39700 # Hidden event actually changing the religion
 	}
 }
 
@@ -2664,6 +2698,7 @@ on_heresy_takeover = {
 # Fires for a newly elected Doge. FROM is the previous (dying or abdicating) doge.
 on_become_doge = {
 	events = {
+		701
 	}
 }
 
@@ -2676,6 +2711,7 @@ on_elective_gavelkind_succession = {
 # Fires when a navy moves into a port. Starts in unit scope, FROM is the owner.
 on_entering_port = {
 	events = {
+		700
 	}
 }
 
@@ -2686,6 +2722,7 @@ on_rel_elector_chosen = {
 # Fires when a Pope is elected. SoA only! FROM is the previous Religious Head
 on_rel_head_chosen = {
 	events = {
+		704
 	}
 }
 
@@ -2704,6 +2741,8 @@ on_navy_returns_with_loot = {
 on_create_title = {
 	events = {
 		CM.10021
+		CM.1501
+		739 # Got Land achievement
 	}
 }
 
@@ -2715,31 +2754,38 @@ on_new_holder = {
 		HL.4812 #Clear nomadic pillage holding modifiers upon succession/conquest
 		HL.4811 #Clear the 'Rampaging Nomads'-Modifier when conquered by a non-nomad
 		HL.140 #Landless nomad gains a title.
+		60504 #Landless status clean-up for e_mongol_empire.
 		ZE.7000 #Check for Gain Any Title ambition.
 		ZE.6010 #ambition event for unlanded son.
 		RIP.12098 #check if we need to remove in_seclusion.
 		RIP.11715 #Removes crown focus on new holder
 		533
 		MNM.6990 #Makes sure d_hashshashin owner is always shiite & member of the_assassins
+		738 # Black Pope achievement
 		MNM.1215 # The Hermetics Scrying Power result (for new holder)
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
+		LoR.45 #Apply augustus trait.
 		HFP.41053 # Check Beneficiaries
 		HFP.42002 # Check titular Crusader titles
 		HF.23700 # Apply proper succession laws tied to gender Doctrines when creating a new vassal.
 		HF.25510 # Clear loot province mission if province has fallen under your control.
+
+		# Clean up zoroastrian pets on province modifiers in case capital lost
+		ZP.7
 
 		JD.60204 # Rebel General's Empire continues temple names, triggers for any title with the uses_temple_names_by_script title flag
 		
 		539 # Fix adventurers turning Tribal land Feudal
 
 		HF.49205 # Reconquista Beneficiary	
+		HFP.40033 # Romagna / Papacy check	
 		HF.23779 #Setting up next god-emperor.
-		#HFP.19100 #Make sure the Varangian guard handles its inheritance if not male-lead
+		HFP.19100 #Make sure the Varangian guard handles its inheritance if not male-lead
 	}
 	random_events = {
 		delayed_hagia_sophia_conversion = {
 			delay = 7
-			100 = LT.20900 
+			100 = LT.20900
 		}
 	}
 }
@@ -2750,9 +2796,11 @@ on_new_holder_inheritance = {
 		HL.4812 #Clear nomadic pillage holding modifiers upon succession/conquest
 		CM.10039 #Chronicle entry
 		HL.140 #Landless nomad gains a title.
+		60504 #Landless status clean-up for e_mongol_empire.
 		RIP.11715 #Removes crown focus on new holder
 		533
 		MNM.6990 #Makes sure d_hashshashin owner is always shiite & member of the_assassins
+		738 # Black Pope achievement
 		MNM.1215 # The Hermetics Scrying Power result (for new holder)
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
 		JD.60204 # Rebel General's Empire continues temple names, triggers for any title with the uses_temple_names_by_script title flag
@@ -2763,7 +2811,9 @@ on_new_holder_inheritance = {
 		HF.25510 # Clear loot province mission if province has fallen under your control.
 
 		HF.49205 # Reconquista Beneficiary
-		HF.23779 #Setting up next god-emperor
+		HFP.40033 # Romagna / Papacy check
+		HF.23779 #Setting up next god-emperor.
+		HFP.19100 #Make sure the Varangian guard handles its inheritance if not male-lead
 	}
 	random_events = {
 		delayed_hagia_sophia_conversion = {
@@ -2771,6 +2821,7 @@ on_new_holder_inheritance = {
 			100 = LT.20900
 		}
 	}
+
 }
 
 # ROOT is the character, FROM is the title, FROMFROM is the old holder
@@ -2782,20 +2833,26 @@ on_new_holder_usurpation = {
 		HL.4811 #Clear the 'Rampaging Nomads'-Modifier when conquered by a non-nomad
 		HL.140 #Landless nomad gains a title.
 		CM.10022
+		60504 #Landless status clean-up for e_mongol_empire.
 		RIP.11715 #Removes crown focus on new holder
 		533
 		MNM.6990 #Makes sure d_hashshashin owner is always shiite & member of the_assassins
+		738 # Black Pope achievement
 		MNM.1215 # The Hermetics Scrying Power result (for new holder)
 		MNM.1216 # The Hermetics Scrying Power result (for old holder)
 #		MNM.6230 # Clearing covert province quest if new owner
 		JD.60204 # Rebel General's Empire continues temple names, triggers for any title with the uses_temple_names_by_script title flag
-		#HF.20414 # Hidden check to move special crowns to holder of the title they are tied to.
-		#HFP.42002 # Check titular Crusader titles
+		HF.20414 # Hidden check to move special crowns to holder of the title they are tied to.
+		HFP.42002 # Check titular Crusader titles
 		
 		539 # Fix adventurers turning Tribal land Feudal
+		LoR.48 # Augustus trait cleanup.
 		HF.25510 # Clear loot province mission if province has fallen under your control.
 
 		HF.49205 # Reconquista Beneficiary
+		HFP.40033 # Romagna / Papacy check
+		HF.20417 # Clear uncrowned modifier.
+		HFP.19100 #Make sure the Varangian guard handles its inheritance if not male-lead
 	}
 	random_events = {
 		delayed_hagia_sophia_conversion = {
@@ -2803,11 +2860,14 @@ on_new_holder_usurpation = {
 			100 = LT.20900
 		}
 	}
+
 }
 
 on_unlanded = {
 	events = {
-		HL.130 #Landless nomad clean-up
+		HL.130 #Landless nomad clean-up.
+		HFP.44008 # Livonian Order disappears
+		HFP.44009 # Teutonic State reverts to Teutonic Order
 	}
 }
 
@@ -2852,13 +2912,35 @@ on_chronicle_start = {
 on_character_convert_religion = {
 	events = {
 		CM.10026
+		671 #set rival conversion flag if eligible
+		63105
 		TOG.7101 #Removes main deity for defensive pagans
+		39804 # Remove Bön patron dieties
+		39805 # Remove Kurmazta patron dieties
+		39806 # Remove Taoist Schools
+
+		# If switched religion then trait is gone and we need to clean up modifiers for zoroastrian pets
+		ZP.6
+
+		# Baptism - Mass Conversion checks
+		HF.20012 	# On conversion of sponsor during baptism
+		HF.20018 	# On conversion of converter after baptism
+		HF.20020	# On conversion of sponsor after baptism
+		HF.20027	# On baptism of deceitful player, maintain previous faith
+		HF.20408	# Ruler has converted in the middle of coronation, stop everything.
+		HF.20416	# Cleanup uncrowned modifiers when converting away from Catholicism/Fraticelli.
+		HF.23033	# Acquire Pagan religious branch when converting to a religion that has No Head.
+		HF.23034	# Acquire Gender law when converting to Matriarchal/Equal/Patriarchal religion.
+		HF.23458	# Host of Blood Games converts to non-Bloodthirsty religion in the middle of the tournament.
 
 		# Crusades
 		HFP.41001	# Checks if Official Crusade Recipient is still a valid target
 
 		# Reconquista
-		HF.49202
+		HF.49202 
+
+		# RTT
+		LT.62001		
 	}
 }
 
@@ -2906,8 +2988,11 @@ on_war_started = {
 on_war_ended_victory = {
 	events = {
 		CM.10038
+		729
 		JD.30051 # Offmap China end of war clean-up
 		HF.23012 # Clean-up haruspicy modifiers
+		HF.24010 # Teuta bloodline applied.
+		HF.24250 # Matilda bloodline applied.
 		HF.25002 # Clear warriors of Ukko cooldown.
 		HF.25035 # Clear Call to Glory effects.
 		HF.24018 # Won Wars Bloodline counter.
@@ -2935,6 +3020,7 @@ on_war_ended_whitepeace = {
 on_war_ended_defeat = {
 	events = {
 		CM.10041
+		730
 		JD.30052 # Offmap China end of war clean-up
 		HF.23012 # Clean-up haruspicy modifiers
 		HF.25002 # Clear warriors of Ukko cooldown.
@@ -2944,7 +3030,7 @@ on_war_ended_defeat = {
 		HF.10517 # Completes Wage War mission for Warrior Lodge members
 		HFP.23026 # Remove stolen spouse from concubinage.
 		HF.50102 # Warrior Lodge War Aid conclusion 
-		#cetic.306 #Imperial Authority loss for losing
+		LT.41002 #Rename Hamaland to Gelre
 	}
 }
 
@@ -2962,6 +3048,7 @@ on_war_ended_invalid = {
 # From = Divorcer, Root = Spouse, New = Religious head if applicable
 on_divorce = {
 	events = {
+		717 # Achievement
 		CM.10037
 	}
 }
@@ -3019,6 +3106,7 @@ on_fort_construction_completed = {
 # ROOT = Builder, FROM = Province
 on_hospital_construction_completed = {
 	events = {
+		733 # Achievement Hospitable
 	}
 }
 
@@ -3026,6 +3114,8 @@ on_hospital_construction_completed = {
 on_holding_building_start = {
 	events = {
 		RIP.30100
+		LT.41004 #Rename Toxandria to Brabant
+		LT.41006 #Rename Hattuaria to Kleve
 	}
 }
 
@@ -3079,11 +3169,13 @@ on_enforce_peace_start = {
 
 on_enforce_peace_six_vassals = {
 	events = {
+		727
 	}
 }
 
 on_law_vote_passed = {
 	events = {
+		726
 	}
 }
 
@@ -3092,6 +3184,7 @@ on_law_vote_failed = {
 
 on_player_mercenary_income = {
 	events = {
+		728
 	}
 }
 
@@ -3183,6 +3276,9 @@ on_character_switch_society_interest = {
 # From = Society
 on_character_society_rank_up = {
 	events = {
+		735 # Dark Lord achievement
+		736 # Birthright achievement
+		737 # Jihad Sultan achievement
 		MNM.1750 # Grandmaster notification event
 	}
 }
@@ -3318,6 +3414,7 @@ on_offmap_policy_changed = {
 		JD.30501 # Print policy update to logs
 		JD.50020 # News from China about Policy Change
 		JD.50400 # Update Silk Road values
+		JD.32298 # Abandon kowtow when China goes Isolationist
 	}
 }
 
@@ -3502,10 +3599,12 @@ on_society_progress_full = {
 on_unit_entering_province = {
 	events = {
 		8300
+		8301
 		8468
 		8469
 		8305
 		HFP.42320
+		HF.49121 # Northern Crusade flavor
 	}
 }
 
@@ -3514,6 +3613,7 @@ on_unit_entering_province = {
 on_command_unit = {
 	events = {
 		8300
+		8301
 		8468
 		8469
 		8305
@@ -3525,6 +3625,7 @@ on_command_unit = {
 on_command_sub_unit = {
 	events = {
 		8300
+		8301
 		8468
 		8469
 		8305
@@ -3543,6 +3644,7 @@ on_crusade_preparation_starts = {
 		HFP.41070
 		HFP.41080
 		HFP.41081
+		HF.49000
 	}
 }
 
@@ -3554,6 +3656,8 @@ on_crusade_launches = {
 		HFP.41083
 		HFP.41130
 		HFP.41140
+		HF.49006
+		HFP.49122 # For dealing with pesky NAP breakers...
 	}
 }
 

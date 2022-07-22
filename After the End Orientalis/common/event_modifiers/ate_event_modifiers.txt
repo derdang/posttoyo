@@ -1,0 +1,52 @@
+typhoon_damage = {
+	supply_limit = -1
+	castle_levy_size = -0.10
+	city_levy_size = -0.10
+	temple_levy_size = -0.10
+	local_tax_modifier = -0.10
+	icon = 30
+}
+
+typhoon_flooded_farmland = {
+	disease_defence = -0.1
+	local_tax_modifier = -0.40
+	icon = 24
+}
+
+typhoon_ruined_roads = {
+	supply_limit = -4
+	levy_reinforce_rate = -0.75
+	icon = 31
+}
+
+typhoon_damaged_trade_post = {
+	city_tax_modifier = -0.20
+	icon = 24
+}
+
+quake_damage = {
+	supply_limit = -1
+	castle_levy_size = -0.10
+	city_levy_size = -0.10
+	temple_levy_size = -0.10
+	local_tax_modifier = -0.10
+	icon = 30
+}
+
+quake_castle_damage = {
+	castle_levy_size = -0.50
+	local_tax_modifier = -0.10
+	icon = 31
+}
+
+fire_damage = {
+	supply_limit = -1
+	local_tax_modifier = -0.30
+	icon = 24
+}
+
+quake_building_codes = {
+	local_build_time_modifier = 0.05
+	local_build_cost_modifier = 0.05
+	icon = 4
+}

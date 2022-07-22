@@ -4,6 +4,10 @@ e_lan_xang = {
 	
 	capital = 294 #Vientiane
 	culture = laotian
+	
+	allow = {
+		culture = laotian
+	}
 }
 e_chakrphup_khmer = {
 	color = { 150 25 25 }
@@ -11,6 +15,37 @@ e_chakrphup_khmer = {
 	
 	capital = 328 #Angkor
 	culture = khmer
+	
+	allow = {
+		culture_group = cambodian
+	}
+}
+e_china = { #Unified China
+	color = { 238 28 37 }
+	color2={ 255 255 255 }
+	
+	capital = 1923 #Beijing
+	culture_group = han
+	
+	allow = {
+		culture_group = han
+	}
+}
+e_hong = {
+	color = { 226 66 0 }
+	color2={ 255 255 255 }
+	
+	capital = 1923 #Beijing
+	culture_group = han
+	
+	allow = {
+		culture_group = han
+	}
+	# Cannot be held as a secondary title
+	primary = yes
+	short_name = yes
+	can_be_claimed = no
+	can_be_usurped = no
 }
 e_commonwealth = {
 	color = { 0 53 169 }
@@ -18,6 +53,36 @@ e_commonwealth = {
 	
 	capital = 202 #Manila
 	culture = tagalog
+}
+e_india_east_governor = { #placeholder for the Indian Empire Eastern Governor
+	color={ 245 240 10 }
+	color2={ 220 220 0 }
+	
+	capital = 1 #PLACEHOLDER
+	
+	assimilate = no # Duchies cannot de jure drift IN or OUT of this title
+	
+	title_female = "WESTERN_GOVERNOR_FEMALE"
+	title = "WESTERN_GOVERNOR_MALE"
+	foa = "WESTERN_GOVERNOR_TITLE_FOA"
+	short_name = yes
+	#location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be vassalized
+	independent = yes
+
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	can_be_claimed = no
+	can_be_usurped = no
+	
+	extra_ai_eval_troops = 7500
 }
 k_champa = {
 	color = { 153 50 204 }
@@ -29,6 +94,28 @@ k_champa = {
 		culture = cham
 	}
 }
+###################THE PING LORD########################
+e_tian = {
+	color = { 255 255 255 }
+	color2={ 255 255 255 }
+	
+	capital = 1 #PLACEHOLDER
+	culture = cantonese
+	
+	# Always exists
+	landless = yes
+	
+	# Cannot be vassalized
+	independent = yes
+
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	can_be_claimed = no
+	can_be_usurped = no
+	
+}
+########################################################
 k_sedang = {
 	color = { 0 0 139 }
 	color2={ 255 255 255 }
@@ -67,6 +154,7 @@ k_tay_nung = {
 	
 	capital = 149 #Ha Giang
 	culture = tay_nung
+	short_name= yes
 	allow = {
 		culture = tay_nung
 	}
@@ -96,17 +184,17 @@ d_cebu = {
 	capital = 235 #Cebu
 	culture = bisaya
 }
-d_songkhla = {
-	color = { 90 170 110 }
-	color2={ 100 180 100 }
+d_kokang = {
+	color={ 247 4 249 }
+	color2={ 255 255 255 }
 	
-	capital = 772 #Songkhla
-	culture = thai_paktai
+	capital = 935 # Laukkaing
+	culture = xinan
 }
 d_pattaya = {
 	color = { 181 145 201 }
 	color2={ 240 0 0 }
-	capital = 756 #Pattaya
+	capital = 797 #Pattaya
 	allow = { is_republic = yes }
 	culture = thai_central
 }
@@ -116,4 +204,13 @@ d_phitsanulok = {
 	
 	capital = 798 #Phitsanulok
 	culture = thai_central
+}
+k_fujian = {
+	color={ 64 193 137 }
+	color2={ 255 255 255 }
+		
+	capital = 1582 #Fuzhou
+	culture = min
+		
+	min = "Hokkien"
 }

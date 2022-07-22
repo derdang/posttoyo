@@ -2,3 +2,124 @@ doing_seance = {
 	general_opinion = 5
 	icon = 2
 }
+resolute_peace = {
+	health = 1
+	icon = 79
+}
+wise_sayings = {
+	learning = 1
+	icon = 101
+}
+karmic_fury = {
+	martial = 1
+	icon = 13
+}
+tending_lotus = {
+	stewardship = 1
+	icon = 87
+}
+celebrating_vesak = {
+	icon = 43
+}
+glad_bhikku = {
+	icon = 101
+	buddhist_group_opinion = 10
+	monthly_character_piety = 1
+	months = 6
+}
+building_stupa = {
+	icon = 101
+	temple_opinion = 5
+	monthly_character_piety = 0.5
+	months = 6
+}
+vessak_fast_failed = {
+	buddhist_group_opinion = -5
+	icon = 102
+}
+ashura_timer = {
+	icon = 3
+	muslim_opinion = 10
+}
+pacifist_province = {
+	icon = 11
+	religion_flex = -0.75
+}
+tolerant_province = {
+	icon = 11
+	religion_flex = -0.5
+}
+dogmatic_province = {
+	icon = 29
+	religion_flex = 1.0
+}
+inquisitional_province = {
+	icon = 29
+	religion_flex = 2.0
+}
+autonomous_province = {
+	icon = 11
+	culture_flex = -0.5
+}
+assimilationist_province = {
+	icon = 29
+	culture_flex = 1.0
+}
+held_obon_festival_timer = {
+	icon = 101
+}
+held_hanami_festival_timer = {
+	icon = 87
+}
+held_new_years_festival_timer = {
+	icon = 101
+}
+held_shogatsu_festival_timer = {
+	icon = 101
+}
+dedicated_to_macarthur = {
+	icon = 61
+	learning = 1
+	combat_rating = 5
+	monthly_character_prestige = 0.03
+}
+
+dedicated_to_roosevelt = {
+	icon = 61
+	martial = 2
+}
+
+dedicated_to_perry = {
+	icon = 61
+	intrigue = 2
+	build_cost_modifier = -0.05
+	build_time_modifier = -0.05
+}
+
+dedicated_to_latmikaik = {
+	icon = 61
+	global_revolt_risk = -0.1
+}
+
+recent_whaling = {
+	monthly_character_prestige = 0.5
+	icon = 8
+}
+
+good_omikuji = {
+	monthly_character_prestige = 0.05
+	icon = 97
+}
+
+bad_omikuji = {
+	monthly_character_prestige = -0.05
+	icon = 98
+}
+pirate_outpost = {
+	icon = 117
+}
+preparing_pirate_invasion = {
+	icon = 1
+	levy_size = 0.10
+	levy_reinforce_rate = 0.25
+}

@@ -70,3 +70,259 @@ k_soka_gakkai = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+d_ruist_yansheng = {
+	color = { 30 9 153 }
+	
+	capital = 1902
+	
+	title = "HEAD_RUIST"
+	foa = "TENNO_FOA"
+	
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = ruist
+	
+	religion = ruist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+k_conferentia = {
+	color = { 255 249 198 }
+	color2={ 220 220 0 }
+	
+	capital = 202
+	
+	title = "ARCHPRIMATE"
+	foa = "ARCHPRIMATE_FOA"
+	
+	short_name = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = catholic
+	
+	religion = catholic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	dignity = 200
+	
+	# Regnal names
+	male_names = {
+		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
+		Benedictus Bonifatius 
+		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Damasus Damianus Dominicus 
+		Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Gelasius Gregorius 
+		Hadrianus Honorius 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
+		Nicolaus 
+		Paschalis Paulus Pelagius Pius 
+		Sarbelius Sergius Silvester Sixtus Stanislaus Stephanus 
+		Theodorus Thomas Titus 
+		Urbanus 
+		Victor 
+		Xavierus
+	}
+}
+d_dili_archbishopric = {
+	color = { 241 255 86 }
+	color2={ 220 220 0 }
+	
+	capital = 570
+	
+	title_prefix = "ARCHBISHOP_PREFIX"
+	title = "ARCHBISHOP"
+	foa = "ARCHBISHOP_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	culture = east_timor
+	religion = catholic
+	pentarchy = catholic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	dignity = 200
+	
+	# Regnal names
+	male_names = {
+		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
+		Benedictus Bonifatius 
+		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Damasus Damianus Dominicus 
+		Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Gelasius Gregorius 
+		Hadrianus Honorius 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
+		Nicolaus 
+		Paschalis Paulus Pelagius Pius 
+		Sarbelius Sergius Silvester Sixtus Stanislaus Stephanus 
+		Theodorus Thomas Titus 
+		Urbanus 
+		Victor 
+		Xavierus
+	}
+}
+d_hue_archbishopric = {
+	color = { 244 226 15 }
+	color2={ 220 220 0 }
+	
+	capital = 161
+	
+	title_prefix = "ARCHBISHOP_PREFIX"
+	title = "ARCHBISHOP"
+	foa = "ARCHBISHOP_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	culture = annamese
+	religion = catholic
+	pentarchy = catholic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	dignity = 200
+	
+	# Regnal names
+	male_names = {
+		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
+		Benedictus Bonifatius 
+		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Damasus Damianus Dominicus 
+		Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Gelasius Gregorius 
+		Hadrianus Honorius 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
+		Nicolaus 
+		Paschalis Paulus Pelagius Pius 
+		Sarbelius Sergius Silvester Sixtus Stanislaus Stephanus 
+		Theodorus Thomas Titus 
+		Urbanus 
+		Victor 
+		Xavierus
+	}
+}
+d_macau_archbishopric = {
+	color = { 153 5 95 }
+	color2={ 220 220 0 }
+	
+	capital = 989
+	
+	title_prefix = "ARCHBISHOP_PREFIX"
+	title = "ARCHBISHOP"
+	foa = "ARCHBISHOP_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	culture = macanese
+	religion = catholic
+	pentarchy = catholic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	dignity = 200
+	
+	# Regnal names
+	male_names = {
+		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
+		Benedictus Bonifatius 
+		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Damasus Damianus Dominicus 
+		Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Gelasius Gregorius 
+		Hadrianus Honorius 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
+		Nicolaus 
+		Paschalis Paulus Pelagius Pius 
+		Sarbelius Sergius Silvester Sixtus Stanislaus Stephanus 
+		Theodorus Thomas Titus 
+		Urbanus 
+		Victor 
+		Xavierus
+	}
+}
+d_nagasaki_archbishopric = {
+	color = { 241 255 86 }
+	color2={ 220 220 0 }
+	
+	capital = 121
+	
+	title_prefix = "ARCHBISHOP_PREFIX"
+	title = "ARCHBISHOP"
+	foa = "ARCHBISHOP_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	culture = kyushuan
+	religion = catholic
+	pentarchy = catholic
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	dignity = 200
+	
+	# Regnal names
+	male_names = {
+		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
+		Benedictus Bonifatius 
+		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Damasus Damianus Dominicus 
+		Eduardus Engelmarus Eugenius 
+		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Gelasius Gregorius 
+		Hadrianus Honorius 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Julius 
+		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
+		Nicolaus 
+		Paschalis Paulus Pelagius Pius 
+		Sarbelius Sergius Silvester Sixtus Stanislaus Stephanus 
+		Theodorus Thomas Titus 
+		Urbanus 
+		Victor 
+		Xavierus
+	}
+}

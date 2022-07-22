@@ -1,0 +1,351 @@
+
+laws = {
+# muslim_government_slider
+
+	#Autocrat: Military Strongman
+	muslim_government_slider_0 = {
+		show_as_title = yes
+		group = muslim_government_slider
+		
+		default_selection = {
+			factor = 0
+			additive_modifier = { 
+				value = 10			
+				holder_scope = { 
+					government = ghazi_government
+					lower_tier_than = DUKE
+				}	
+			}
+		}
+		
+		potential = {
+			holder_scope = {
+				AND = {
+					OR = {
+						government = ghazi_government
+						government = diwan_government
+					}
+				}			
+			}
+		}
+		allow = {
+			holder_scope = { 
+				government = ghazi_government
+				lower_tier_than = DUKE
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}			
+		
+		effect = {
+			hidden_tooltip = {
+				revoke_law = muslim_government_slider_0
+				revoke_law = muslim_government_slider_1
+				revoke_law = muslim_government_slider_2
+				revoke_law = muslim_government_slider_3
+				revoke_law = muslim_government_slider_4
+			}
+			set_government = ghazi_government
+
+		}
+				
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 5
+				holder_scope = {
+					OR = {
+						is_salafi_religion = yes
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				holder_scope = {
+					trait = zealous
+				}
+			}
+			modifier = {
+				factor = 20
+				holder_scope = {
+					trait = misguided_warrior
+					trait = tough_soldier
+					trait = skilled_tactician
+					trait = brilliant_strategist
+				}
+			}
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+	}
+	
+	#Tribunal Formation
+	muslim_government_slider_1 = {
+		show_as_title = yes
+		group = muslim_government_slider
+		
+		default_selection = {
+			factor = 0
+			additive_modifier = { 
+				value = 10			
+				holder_scope = { 
+					government = ghazi_government
+					tier = DUKE
+				}	
+			}
+		}
+		
+		potential = {
+			holder_scope = {
+				AND = {
+					OR = {
+						government = ghazi_government
+						government = diwan_government
+					}
+				}			
+			}
+		}
+		allow = {	
+			holder_scope = { 
+				government = ghazi_government
+				tier = DUKE
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}			
+		
+		effect = {
+			hidden_tooltip = {
+				revoke_law = muslim_government_slider_0
+				revoke_law = muslim_government_slider_1
+				revoke_law = muslim_government_slider_2
+				revoke_law = muslim_government_slider_3
+				revoke_law = muslim_government_slider_4
+			}
+			set_government = ghazi_government
+
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 10
+				holder_scope = {
+					trait = misguided_warrior
+					trait = tough_soldier
+					trait = skilled_tactician
+					trait = brilliant_strategist
+				}
+			}
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+	}
+
+	#Transition
+	muslim_government_slider_2 = {
+		show_as_title = yes
+		group = muslim_government_slider
+		default = yes
+			
+		potential = {
+			holder_scope = {
+				OR = {
+					government = ghazi_government
+					government = diwan_government
+				}
+				higher_tier_than = DUKE
+			}
+		}
+		allow = {
+			holder_scope = {
+				AND = {
+					OR = {
+						government = ghazi_government
+						government = diwan_government
+					}
+				}			
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+			}
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		effect = {
+			hidden_tooltip = {
+				revoke_law = muslim_government_slider_0
+				revoke_law = muslim_government_slider_1
+				revoke_law = muslim_government_slider_2
+				revoke_law = muslim_government_slider_3
+				revoke_law = muslim_government_slider_4
+			}
+			if = {
+				limit = {
+					holder_scope = {
+						lower_tier_than = KING
+					}
+				}
+				set_government = ghazi_government
+			}
+			else_if = {
+				limit = {
+					holder_scope = {
+						higher_tier_than = DUKE
+					}
+				}
+				set_government = diwan_government
+			}
+		}
+	}
+	
+	#Expansion of Office
+	muslim_government_slider_3 = {
+		show_as_title = yes
+		group = muslim_government_slider
+		
+		default_selection = {
+			factor = 0
+			additive_modifier = { 
+				value = 10			
+				holder_scope = { 
+					government = diwan_government
+					tier = KING
+				}	
+			}
+		}
+		potential = {
+			holder_scope = {
+				AND = {
+					OR = {
+						government = ghazi_government
+						government = diwan_government
+					}
+				}			
+			}
+		}		
+		allow = {
+			holder_scope = {
+				government = diwan_government
+				tier = KING
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 10
+				holder_scope = {
+					trait = indulgent_wastrel
+					trait = thrifty_clerk
+					trait = fortune_builder
+					trait = midas_touched
+				}
+			}
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				revoke_law = muslim_government_slider_0
+				revoke_law = muslim_government_slider_1
+				revoke_law = muslim_government_slider_2
+				revoke_law = muslim_government_slider_3
+				revoke_law = muslim_government_slider_4
+			}
+
+		}
+	}
+	
+	#Court Dominated
+	muslim_government_slider_4 = {
+		show_as_title = yes
+		group = muslim_government_slider
+		
+		default_selection = {
+			factor = 0
+			additive_modifier = { 
+				value = 10			
+				holder_scope = { 
+					government = diwan_government
+					tier = EMPEROR
+				}	
+			}
+		}
+		potential = {
+			holder_scope = {
+				AND = {
+					OR = {
+						government = ghazi_government
+						government = diwan_government
+					}
+				}			
+			}
+		}	
+		allow = {
+			holder_scope = {
+				government = diwan_government
+				tier = EMPEROR
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				revoke_law = muslim_government_slider_0
+				revoke_law = muslim_government_slider_1
+				revoke_law = muslim_government_slider_2
+				revoke_law = muslim_government_slider_3
+				revoke_law = muslim_government_slider_4
+			}
+		
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.01
+			}
+			modifier = {
+				factor = 20
+				holder_scope = {
+					trait = indulgent_wastrel
+					trait = thrifty_clerk
+					trait = fortune_builder
+					trait = midas_touched
+				}
+			}
+		}
+		ai_will_revoke = {
+			factor = 0
+		}
+	}
+}

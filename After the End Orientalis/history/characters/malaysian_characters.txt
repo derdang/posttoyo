@@ -1,0 +1,569 @@
+###########Malaysia Dynasties###########
+#Characters can be revised later. Preferably not by me :S - Poom
+
+#1956 - Tionghua
+
+#1957 - Melayu
+#1958 - Singaporean
+#1959 - Kelantanese
+
+#Education Reference
+#
+#naive_appeaser
+#underhanded_rogue
+#charismatic_negotiator
+#grey_eminence
+#
+#misguided_warrior
+#tough_soldier
+#skilled_tactician
+#brilliant_strategist
+#
+#indulgent_wastrel
+#thrifty_clerk
+#fortune_builder
+#midas_touched
+#
+#amateurish_plotter
+#flamboyant_schemer
+#intricate_webweaver
+#elusive_shadow
+#
+#detached_priest
+#martial_cleric	
+#scholarly_theologian
+#mastermind_theologian
+#
+###########Malaysia Region Characters###########
+#19570xx reserved for historical and legendary characters
+
+#Selangor
+1957100={
+	name="Mu'adzam"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=salafi
+	martial=7
+	diplomacy=5
+	stewardship=3
+	intrigue=3
+	learning=3
+	trait=tough_soldier
+	trait=duelist
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	father=1957101
+	2515.1.1={birth=yes}
+}
+1957101={
+	name="Ibrahim"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=salafi
+	trait=skilled_tactician
+	trait=shrewd
+	trait=strong
+	trait=proud
+	trait=falconer
+	father=1957102
+	2455.1.1={birth=yes}
+	2525.5.3={death=yes}
+}
+1957102={
+	name="Shah Alam" #The Crippled
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=salafi
+	trait=tough_soldier
+	trait=ambitious
+	trait=strong
+	trait=proud
+	trait=maimed
+	trait=incapable
+	father=1957103
+	2410.1.1={birth=yes}
+	2460.5.3={death=yes}
+}
+1957103={
+	name="Alaeddin"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=salafi
+	trait=grey_eminence
+	trait=strong
+	trait=patient
+	trait=proud
+	trait=just
+	father=1957104
+	2355.1.1={birth=yes}
+	2420.12.1={death=yes}
+}
+1957104={
+	name="Saifullah"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=salafi
+	trait=grey_eminence
+	trait=pious
+	trait=patient
+	trait=humble
+	trait=just
+	2320.1.1={birth=yes}
+	2380.9.31={death=yes}
+}
+1957105={
+	name="Shah Alam" #The Glorious
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=salafi
+	trait=grey_eminence
+	trait=strong
+	trait=patient
+	trait=proud
+	trait=legendary
+	2060.1.1={birth=yes}
+	2100.1.1={
+		create_bloodline = {
+				type = paramount_ruler_malaysia
+			}
+	}
+	2140.1.1={death=yes}
+}
+#--
+1957120={
+	name="Musa"
+	dynasty=1957802 #Klang
+	culture=melayu
+	religion=salafi
+	martial=2
+	diplomacy=4
+	stewardship=6
+	intrigue=8
+	learning=5
+	trait=thrifty_clerk
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2572.1.1={birth=yes}
+}
+1957150={
+	name="Hua-Seng"
+	dynasty=1956024 
+	culture=tionghoa
+	religion=mahayana
+	martial=7
+	diplomacy=3
+	stewardship=8
+	intrigue=2
+	learning=3
+	trait=thrifty_clerk
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2572.1.1={birth=yes}
+}
+
+#Penang Besar
+#Republic of Penang
+1957200={ #d_penang
+	name="Wang"
+	dynasty=1956027 #Ng
+	culture=tionghoa
+	religion=mahayana
+	martial=5
+	diplomacy=5
+	stewardship=8
+	intrigue=2
+	learning=1
+	trait=brilliant_strategist
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2577.1.1={birth=yes}
+}
+1957201={ #penang patrician
+	name="Rahul"
+	dynasty=1958071 #Rajagukguk
+	culture=tamil
+	religion=salafi
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2588.1.1={birth=yes}
+}
+1957202={ #penang patrician
+	name="Wong"
+	dynasty=1956002 #Nga
+	culture=tionghoa
+	religion=salafi
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2587.1.1={birth=yes}
+}
+1957203={ #penang patrician
+	name="Eng"
+	dynasty=1956003 #Ngeh
+	culture=tionghoa
+	religion=dharmayuttika
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2588.1.1={birth=yes}
+}
+1957204={ #penang patrician
+	name="Muzaffar"
+	dynasty=1957027 #Razali
+	culture=melayu
+	religion=salafi
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	trait=ambitious
+	2579.1.1={birth=yes}
+}
+#Kedah + Perlis
+1957300={
+	name="Mahmud"
+	dynasty=1957803 #Kedah
+	culture=melayu
+	religion=salafi
+	martial=4
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2574.1.1={birth=yes}
+}
+1957340={
+	name="Ismail"
+	dynasty=1957804 #Perlis
+	culture=melayu
+	religion=salafi
+	martial=6
+	diplomacy=6
+	stewardship=3
+	intrigue=3
+	learning=7
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2575.1.1={birth=yes}
+}
+#Johor
+1957400= {
+	name="Ibrahim"
+	dynasty=1957805 #Johor
+	culture=melayu
+	religion=salafi
+	martial=6
+	diplomacy=3
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2575.1.1={birth=yes}
+}
+1957440= { #c_kulai
+	name="Kwan-Seng"
+	culture=tionghoa
+	religion=mahayana
+	trait=charismatic_negotiator
+	2578.1.1={birth=yes}
+}
+1957445= { #c_batu_pahat
+	name="Di-Awng"
+	culture=tionghoa
+	religion=wokou
+	martial=10
+	trait=skilled_tactician
+	2582.1.1={birth=yes}
+}
+1957450= { #d_melaka
+	name="Jaafar"
+	dynasty=1957805 #Johor
+	culture=melayu
+	religion=salafi
+	martial=5
+	diplomacy=4
+	stewardship=5
+	intrigue=3
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2579.1.1={birth=yes}
+}
+
+1957500={ #Pahang
+	name="Ali"
+	dynasty=1957806 #Pahang
+	culture=melayu
+	religion=salafi
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2574.1.1={birth=yes}
+}
+1957550={ #Bentong benchwarmer
+	name="Abdul"
+	culture=melayu
+	religion=salafi
+	2579.1.1={birth=yes}
+}
+1957570={ #Jerantut benchwarmer
+	name="Abdol"
+	culture=melayu
+	religion=salafi
+	2577.1.1={birth=yes}
+}
+#### Singapore
+1958000= { #k_singapore
+	name="Cheong-Ming"
+	dynasty=1956011 #Lee
+	culture=singaporean
+	religion=mahayana
+	martial=5
+	diplomacy=8
+	stewardship=8
+	intrigue=2
+	learning=7
+	trait=thrifty_clerk
+	trait=shrewd
+	trait=patient
+	father=1958010
+	2570.1.1={birth=yes}
+}
+1958001= { #SGP patrician
+	name="Muzzammil"
+	dynasty=1958001 #Latipah
+	culture=singaporean
+	religion=salafi
+	trait=shrewd
+	trait=patient
+	2575.1.1={birth=yes}
+}
+1958002= { #SGP patrician
+	name="Soon-Hong"
+	dynasty=1958002 #Dai
+	culture=singaporean
+	religion=wokou
+	trait=shrewd
+	trait=patient
+	2584.1.1={birth=yes}
+}
+1958003= { #SGP patrician
+	name="Oscar"
+	dynasty=1958003 #Ngo
+	culture=singaporean
+	religion=catholic
+	martial=4
+	diplomacy=7
+	stewardship=5
+	intrigue=3
+	learning=5
+	trait=grey_eminence
+	trait=groomed
+	trait=just
+	2587.1.1={birth=yes}
+}
+1958004= { #SGP patrician
+	name="Sabeeka"
+	dynasty=1958004 #Tahaani
+	culture=singaporean
+	religion=hindu
+	race=bengali
+	martial=6
+	diplomacy=4
+	stewardship=5
+	intrigue=3
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=just
+	2578.1.1={birth=yes}
+}
+1958010= { #k_singapore - dad
+	name="Yew-Hock"
+	dynasty=1956011 #Lee
+	culture=singaporean
+	religion=ruist
+	martial=6
+	diplomacy=4
+	stewardship=5
+	intrigue=3
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=patient
+	2537.1.1={birth=yes}
+	2540.1.1={
+		create_bloodline = {
+				type = legendary_ruler_of_singapore
+			}
+	}
+	2590.1.1={death=yes}
+}
+1958011= { #k_singapore - brother and heir
+	name="Cheong-Tee"
+	dynasty=1956011 #Lee
+	culture=singaporean
+	religion=ruist
+	martial=8
+	diplomacy=1
+	stewardship=7
+	intrigue=8
+	learning=2
+	trait=brilliant_strategist
+	trait=scholar
+	trait=shrewd
+	father=1958010
+	2574.1.1={birth=yes}
+}
+
+## k_kelantan
+#Kelantan
+1959100={
+	name="Yunus"
+	dynasty=1959000 #Long
+	culture=kelantanese
+	religion=salafi
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2574.1.1={birth=yes}
+}
+1959150={ #Gua Musang
+	name="Musang"
+	culture=kelantanese
+	religion=salafi
+	martial=12
+	trait=tough_soldier
+	trait=hunter
+	trait=strong
+	trait=wroth
+	2583.1.1={birth=yes}
+}
+1959200={ #Terengganu
+	name="Ahmad Shah"
+	dynasty=1959003 #Zainal
+	culture=kelantanese
+	religion=wahabbi
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2574.1.1={birth=yes}
+}

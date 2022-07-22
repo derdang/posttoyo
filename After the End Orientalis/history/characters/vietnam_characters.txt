@@ -39,6 +39,7 @@
 	stewardship=3
 	intrigue=3
 	learning=3
+	trait=legendary
 	trait=fortune_builder
 	trait=administrator
 	trait=physician
@@ -70,6 +71,7 @@
 	stewardship=3
 	intrigue=3
 	learning=3
+	trait=legendary
 	trait=brilliant_strategist
 	trait=gamer
 	trait=shrewd
@@ -95,6 +97,7 @@
 	stewardship=3
 	intrigue=1
 	learning=5
+	trait=legendary
 	trait=scholarly_theologian
 	trait=cruel
 	trait=shrewd
@@ -120,6 +123,7 @@
 	stewardship=2
 	intrigue=1
 	learning=4
+	trait=legendary
 	trait=scholarly_theologian
 	trait=charitable
 	trait=shrewd
@@ -388,7 +392,8 @@
 	dynasty=2875000 #Nguyen Hoang
 	culture=tonkinese
 	religion=mahayana
-	dna="cfimkolbecc"
+	dna = "cfimkolbecc"
+	properties = "ac00bc00000000000000000000000000000000"
 	father=2875012
 	mother=2875013
 	martial=3
@@ -402,6 +407,7 @@
 	trait=content
 	trait=trusting
 	trait=lustful
+	trait=mahayana_pureland
 	2580.1.1={birth=yes}
 }
 #Minor Tonkinese Lords
@@ -574,6 +580,97 @@
 	trait=trusting
 	trait=just
 	2580.1.1={birth=yes}
+}
+2876003={
+	name="Tâm" #Courtier in Dak Lak (Reference to Trinh Công Son)
+	culture=annamese
+	dynasty=2876006
+	religion=mahayana
+	martial=1
+	diplomacy=5
+	stewardship=2
+	intrigue=1
+	learning=5
+	trait=grey_eminence
+	trait=musician
+	trait=kind
+	trait=humble
+	trait=trusting
+	trait=just
+	2580.1.1={birth=yes}
+	2600.1.1={
+		employer=1178000
+	}
+	2602.5.1={add_spouse=2876004}
+}
+2876004={
+	name="Ly" #Courtier in Dak Lak (Reference to Trinh Công Son)
+	culture=annamese
+	dynasty=2876007
+	religion=mahayana
+	female=yes
+	martial=1
+	diplomacy=6
+	stewardship=2
+	intrigue=2
+	learning=3
+	trait=grey_eminence
+	trait=fair
+	trait=musician
+	trait=kind
+	trait=humble
+	trait=shy
+	trait=just
+	2580.1.1={birth=yes}
+	2600.1.1={
+		employer=1178000
+	}
+}
+2876004={
+	name="Nhung" #Courtier in Dak Lak (Reference to Trinh Công Son)
+	culture=annamese
+	dynasty=2876008
+	religion=mahayana
+	female=yes
+	martial=1
+	diplomacy=6
+	stewardship=2
+	intrigue=2
+	learning=3
+	trait=grey_eminence
+	trait=fair
+	trait=musician
+	trait=kind
+	trait=groomed
+	trait=ambitious
+	trait=just
+	2580.1.1={birth=yes}
+	2600.1.1={
+		employer=1178000
+	}
+	2602.5.1={effect={add_friend=2876003}}
+}
+2876005={
+	name="Ly" #Courtier in Dak Lak (Reference to Trinh Công Son)
+	culture=annamese
+	dynasty=2876006
+	religion=mahayana
+	martial=1
+	diplomacy=6
+	stewardship=2
+	intrigue=2
+	learning=3
+	trait=grey_eminence
+	trait=fair
+	trait=musician
+	trait=kind
+	trait=humble
+	trait=shy
+	trait=just
+	2580.1.1={birth=yes}
+	2600.1.1={
+		employer=1178000
+	}
 }
 #Vietnamese Archprimate and Succeeding Bishops of Hue
 2876004={
@@ -903,6 +1000,7 @@
 	trait=defensive_leader
 	give_nickname=nick_the_dragon
 	2560.1.1={birth=yes}
+	2580.5.1={effect={add_friend=2877007}}
 }
 2877013={
 	name="Loc" #Surveyor of the Frontier
@@ -934,7 +1032,6 @@
 	stewardship=8
 	intrigue=5
 	learning=5
-	father=24
 	trait=tough_soldier
 	trait=lefthanded
 	trait=duelist
@@ -955,7 +1052,6 @@
 	stewardship=8
 	intrigue=5
 	learning=5
-	father=24
 	trait=tough_soldier
 	trait=duelist
 	trait=kind
@@ -1081,7 +1177,7 @@
 2877022={ #Strange Prince of Rach Goi(Reference)
 	name="Van Duc"
 	dynasty=2877011
-	culture=cochinchinese
+	culture=german
 	religion=cao_dai
 	martial=3
 	diplomacy=2
@@ -1099,7 +1195,7 @@
 	trait=sympathy_christendom
 	give_nickname=nick_the_stranger
 	secret_religion=catholic
-	2580.1.1={birth=yes}
+	2580.1.1={birth=yes culture=cochinchinese}
 }
 2877023={ #Strange Prince of Rach Goi(Daughther)
 	name="Karin"
@@ -1139,6 +1235,7 @@
 		employer=2875014
 	}
 }
+# Da Nang Patricians and Courtiers
 2877025={ #Paris by Night Producer
 	name="Lai"
 	dynasty=2877013
@@ -1232,6 +1329,51 @@
 	trait=kind
 	trait=cynical
 	2575.1.1={birth=yes}
+}
+2877029={ #Hello Vietnam Singer
+	name="Anh Pham"
+	dynasty=2877016
+	culture=cochinchinese
+	religion=catholic
+	martial=0
+	diplomacy=7
+	stewardship=5
+	intrigue=2
+	learning=6
+	female = yes
+	trait=thrifty_clerk
+	trait=socializer
+	trait=diligent
+	trait=erudite
+	trait=uncouth
+	trait=musician
+	trait=patient
+	trait=content
+	trait=trusting
+	2582.1.1={birth=yes}
+	2600.1.2={employer=2877025}
+}
+2877030={ #Tien Quân Ca Composer
+	name="Nguyen"
+	dynasty=2877017
+	culture=cochinchinese
+	religion=mahayana
+	martial=0
+	diplomacy=7
+	stewardship=5
+	intrigue=2
+	learning=6
+	trait=thrifty_clerk
+	trait=socializer
+	trait=diligent
+	trait=erudite
+	trait=uncouth
+	trait=musician
+	trait=patient
+	trait=content
+	trait=trusting
+	2582.1.1={birth=yes}
+	2600.1.2={employer=2877025}
 }
 #Muong Prince
 2878000={ #Muong Prince
@@ -1511,7 +1653,6 @@
 	trait=lustful
 	2580.1.1={birth=yes}
 }
-###########PLACEHOLDER- For Lords part of larger undefined groups###########
 1025000={ #Tay-Nung Lord
 	name="Tayin"
 	dynasty=1025000
@@ -1529,4 +1670,889 @@
 	trait=trusting
 	trait=lustful
 	2580.1.1={birth=yes}
+}
+###########VIETNAMESE PRE-EVENT IMPERIAL HISTORY HIGHLIGHTS###########
+#	-Starts Right after the last Chinese Domination
+#	-Represented by Khúc Thua Du a Jiengshi of Jianghai Circuit (during the 3rd Domination)
+######################################################################
+2875020={ 
+	name="Thua Du"
+	dynasty=2875009 #Khúc
+	culture=tonkinese
+	religion=ruist
+	occluded = yes
+	trait=legendary
+	866.1.1={birth=yes}
+	967.1.1={death=yes}
+}
+2875021={ #First True Emperor
+	name="Bo Linh"
+	dynasty=2875008 #Dinh
+	culture=tonkinese
+	religion=mahayana
+	trait=legendary
+	924.3.22={birth=yes}
+	979.1.1={death=yes}
+}
+2875022={ #Dinh Dynasty (Last Emperor)
+	name="Toàn"
+	dynasty=2875008 #Dinh
+	culture=tonkinese
+	religion=mahayana
+	father = 2875021
+	trait=legendary
+	974.1.1={birth=yes}
+	979.1.1={add_spouse = 2875023}
+	1001.1.1={death=yes}
+}
+2875023={ #Famous Early Vietnamese Empress Dowager of the Dinh and Early Le Dynasty
+	name="Vân Nga"
+	dynasty=2875010 #Duong
+	culture=tonkinese
+	religion=mahayana
+	female = yes
+	trait=legendary
+	974.1.1={birth=yes}
+	1000.1.1={death=yes}
+}
+2875024={ #First Le Emperor
+	name="Hoàn"
+	dynasty=2875011 #Lê
+	culture=tonkinese
+	religion=mahayana
+	trait=legendary
+	941.8.10={birth=yes}
+	980.1.1={add_spouse = 2875023}
+	1005.3.18={death=yes}
+}
+2875025={ #Second Le Emperor
+	name="Trung Tông"
+	dynasty=2875011 #Lê
+	culture=tonkinese
+	religion=mahayana
+	father = 2875024
+	occluded = yes
+	trait=legendary
+	983.1.1={birth=yes}
+	1005.10.10={death=yes}
+}
+2875026={ #Third Le Emperor
+	name="Long Ðinh"
+	dynasty=2875011 #Lê
+	culture=tonkinese
+	religion=mahayana
+	father = 2875025
+	trait=legendary
+	986.11.15={birth=yes}
+	1009.11.19={death=yes}
+}
+2875027={ #Later Ly Dynasty (Emperor 1)
+	name="Thái To"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	trait=legendary
+	974.3.8={birth=yes}
+	1028.3.31={death=yes}
+}
+2875028={ #Later Ly Dynasty (Emperor 2)
+	name="Thái Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875027
+	trait=legendary
+	1000.7.29={birth=yes}
+	1054.11.3={death=yes}
+}
+2875029={ #Later Ly Dynasty (Emperor 3)
+	name="Thánh Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875028
+	trait=legendary
+	1023.3.19={birth=yes}
+	1072.2.1={death=yes}
+}
+2875030={ #Later Ly Dynasty (Emperor 4)
+	name="Nhân Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875029
+	trait=legendary
+	1066.2.22={birth=yes}
+	1128.1.15={death=yes}
+}
+2875031={ #Later Ly Dynasty (Emperor 5)
+	name="Than Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875030
+	occluded = yes
+	trait=legendary
+	1116.1.1={birth=yes}
+	1138.10.31={death=yes}
+}
+2875032={ #Later Ly Dynasty (Emperor 6)
+	name="Anh Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875031
+	occluded = yes
+	trait=legendary
+	1136.4.1={birth=yes}
+	1175.8.14={death=yes}
+}
+2875033={ #Later Ly Dynasty (Emperor 7)
+	name="Cao Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875032
+	occluded = yes
+	trait=legendary
+	1173.7.6={birth=yes}
+	1210.11.15={death=yes}
+}
+2875034={ #Later Ly Dynasty (Emperor 8th and Final Ly Emperor)
+	name="Hue Tông"
+	dynasty=2875012 #Lý
+	culture=tonkinese
+	religion=mahayana
+	father = 2875033
+	occluded = yes
+	trait=legendary
+	1194.7.1={birth=yes}
+	1226.9.3={death=yes}
+}
+2875035={ #Tran Dynasty
+	name="Canh"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	trait=legendary
+	1218.6.17={birth=yes}
+	1277.5.5={death=yes}
+}
+2875036={
+	name="Hoang"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875035
+	trait=legendary
+	1240.10.12={birth=yes}
+	1290.6.3={death=yes}
+}
+2875037={
+	name="Khâm"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875036
+	trait=legendary
+	1258.12.7={birth=yes}
+	1308.12.16={death=yes}
+}
+2875038={
+	name="Thuyên"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875037
+	trait=legendary
+	1276.9.17={birth=yes}
+	1320.12.12={death=yes}
+}
+2875039={
+	name="Manh"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875038
+	trait=legendary
+	1300.9.4={birth=yes}
+	1357.3.10={death=yes}
+}
+2875040={
+	name="Vuong"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875039
+	occluded = yes
+	trait=legendary
+	1319.5.17={birth=yes}
+	1341.6.11={death=yes}
+}
+2875041={
+	name="Du Tong"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875040
+	trait=legendary
+	1336.11.22={birth=yes}
+	1369.5.25={death=yes}
+}
+2875042={ #Not really a Tran but Hao willed him the Kingdom to spite his grandfather the retired Manh
+	name="Nhat Le"
+	dynasty=2875014 #Hôn
+	culture=tonkinese
+	religion=mahayana
+	father = 2875041
+	trait=legendary
+	give_nickname=nick_the_clueless
+	1350.1.1={birth=yes}
+	1370.12.1={death=yes}
+}
+2875043={
+	name="Phu"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875039
+	trait=legendary
+	1321.12.1={birth=yes}
+	1394.12.15={death=yes}
+}
+2875044={
+	name="Kính"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875039
+	occluded = yes
+	trait=legendary
+	give_nickname=nick_the_ruthless
+	1337.6.30={birth=yes}
+	1377.3.4={death={death_reason=death_battle}}
+}
+2875045={
+	name="Hien"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875044
+	occluded = yes
+	trait=legendary
+	1361.3.6={birth=yes}
+	1388.12.6={death={death_reason=death_suicide}}
+}
+2875046={
+	name="Ngung"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875043
+	occluded = yes
+	trait=legendary
+	1378.1.1={birth=yes}
+	1399.4.1={death=yes}
+}
+2875047={
+	name="Án"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875046
+	occluded = yes
+	trait=legendary
+	give_nickname=nick_the_unready
+	1396.1.1={birth=yes}
+	1400.1.1={death=yes}
+}
+2875048={
+	name="Quý Ly"
+	dynasty=2875015 #Ho
+	culture=tonkinese
+	religion=mahayana
+	occluded = yes
+	trait=legendary
+	1336.1.1={birth=yes}
+	1407.1.1={death=yes} #Death Unknown
+}
+2875049={
+	name="Hán Thuong"
+	dynasty=2875015 #Ho
+	culture=tonkinese
+	religion=mahayana
+	father = 2875048
+	occluded = yes
+	trait=legendary
+	1360.1.1={birth=yes}
+	1426.1.1={death=yes} #Death Unknown
+}
+2875050={ #Later Tran during the 4th Chinese Domination
+	name="Ngoi"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875043
+	occluded = yes
+	trait=legendary
+	1375.1.1={birth=yes}
+	1410.1.1={death=yes} #Death Unknown
+}
+2875051={
+	name="Ngac"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875043
+	occluded = yes
+	trait=legendary
+	1350.1.1={birth=yes}
+	1410.1.1={death=yes} #Death Unknown
+}
+2875052={
+	name="Quý Khoáng"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875051
+	occluded = yes
+	trait=legendary
+	1370.1.1={birth=yes}
+	1414.4.14={death={death_reason=death_battle}} #Death to Ming Forces
+}
+2875053={ # A "Tran" Descendant placed by Le Loi to appease the Ming
+	name="Cao"
+	dynasty=2875013 #Tran
+	culture=tonkinese
+	religion=mahayana
+	father = 2875052
+	occluded = yes
+	trait=legendary
+	1390.1.1={birth=yes}
+	1428.1.1={death={death_reason=death_battle}} #Death to Ming Forces
+}
+#######LATER LE###########
+2878001={
+	name="Khoáng"
+	dynasty=2878001 #Lê
+	culture=muong
+	religion=ruist
+	occluded = yes
+	trait=legendary
+	1350.11.10={birth=yes}
+	1400.9.5={death=yes}
+}
+2878002={ #Emperor of Vietnam
+	name="Loi"
+	dynasty=2878001 #Lê
+	culture=muong
+	religion=ruist
+	father = 2878001
+	trait=legendary
+	give_nickname=nick_the_restorer
+	1384.11.10={birth=yes}
+	1433.9.5={death=yes}
+}
+2875054={
+	name="Nguyên Long"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2878002
+	occluded = yes
+	trait=legendary
+	1423.11.20={birth=yes}
+	1442.8.26={death=yes}
+}
+2875055={
+	name="Bang Co"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875054
+	occluded = yes
+	trait=legendary
+	1441.5.28={birth=yes}
+	1459.10.25={death=yes}
+}
+2875056={
+	name="Nghi Dân"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875054
+	occluded = yes
+	trait=legendary
+	1439.6.1={birth=yes}
+	1460.6.6={death=yes}
+}
+2875057={ #Greatest Vietnamese King
+	name="Hao"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875054
+	trait=legendary
+	trait=erudite
+	give_nickname=nick_the_great
+	1442.8.25={birth=yes}
+	1497.3.3={death=yes}
+}
+2875058={ 
+	name="Tranh"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875057
+	trait=legendary
+	trait=erudite
+	1461.8.10={birth=yes}
+	1504.5.24={death=yes}
+}
+2875059={ 
+	name="Thuan"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875058
+	trait=legendary
+	occluded = yes
+	1488.9.6={birth=yes}
+	1504.12.30={death=yes}
+}
+2875060={ 
+	name="Tuan"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875059
+	trait=legendary
+	trait=ruthless
+	occluded = yes
+	give_nickname=nick_the_demon_king
+	1488.10.5={birth=yes}
+	1509.12.1={death={death_reason=death_battle}}
+}
+2875061={ 
+	name="Tan"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875058
+	trait=legendary
+	occluded = yes
+	1488.5.5={birth=yes}
+	1509.12.1={death=yes}
+}
+2875062={ 
+	name="Oanh"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875061
+	trait=legendary
+	occluded = yes
+	1495.7.16={birth=yes}
+	1516.5.8={death=yes}
+}
+2875063={ 
+	name="Doanh"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875058
+	trait=legendary
+	occluded = yes
+	1488.5.5={birth=yes}
+	1509.12.1={death=yes}
+}
+2875064={ #Hier apparent killed in a coup by the Mac Family
+	name="Quang Tri"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875063
+	trait=legendary
+	occluded = yes
+	1495.7.16={birth=yes}
+	1516.6.8={death={death_reason=death_murder_unknown}}
+}
+2875065={ 
+	name="Sùng"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875058
+	trait=legendary
+	occluded = yes
+	1495.7.16={birth=yes}
+	1516.5.8={death=yes}
+}
+2875066={ 
+	name="Y"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875065
+	trait=legendary
+	occluded = yes
+	1506.10.4={birth=yes}
+	1526.12.18={death={death_reason=death_murder_unknown}}
+}
+2875067={ #Emperors Claimants never offically named Emperor
+	name="Bang"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875065
+	trait=legendary
+	occluded = yes
+	1506.10.4={birth=yes}
+	1519.11.1={death={death_reason=death_murder_unknown}}
+}
+2875068={ #Emperors Claimants never offically named Emperor
+	name="Do"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875065
+	trait=legendary
+	occluded = yes
+	1506.10.4={birth=yes}
+	1519.12.1={death={death_reason=death_murder_unknown}}
+}
+2875069={ #Last Lê Emperor before the Warlord Era
+	name="Xuân"
+	dynasty=2878001 #Lê
+	culture=tonkinese
+	religion=ruist
+	father = 2875065
+	trait=legendary
+	occluded = yes
+	give_nickname=nick_the_unready
+	1507.7.26={birth=yes}
+	1527.6.15={death=yes}
+}
+#########Fragmentation Period (1527-1802)############
+
+# The Major Players:
+# The Mac Family: A line of brilliant generals whom seized control of Thang Long and Hanoi from Emperor Uy Duc who fled south with the Trinh Lords (2875016)
+# The Trinh Family: A line of scholars turned warriors whom seized the Tonkin following the fall of the Mac Primacy of the Northern Dynasties, following the
+#				    12 Petty Warlord Era when the Mac Family fell in 1592... was fighting with the Lê Family til both tired themselves out (2875017)
+# The Later Lê Restoration: The Lê Family was able to hold Hanoi again after the fall of the Mac Family but rule only by name of the dead empire
+# The Nguyen Family: A Southern Dynasty based in the recent Vietnamese conquest of the Cham Kingdom of Pandaruga descendant from governors of the frontier
+# 					 The Dynasty had two cadets the Tay Son House and the Hue House for which the latter became the progenitures for the Nguyen Dynasty of Nam Viet
+#					 or Viet Nam after 1830 (2875018)
+#
+# The Title history would have to fucky... so the lineage of the Nguyens will be highlighted and other dynasties glossed over for the time being... - Derrick
+
+#######The Historical Nguyen Dynasty (1802-1945) the Empire of Vietnam#######
+2875070={ #Court Confucian to Emperor Le Loi
+	name="Uc Trai"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	trait=legendary
+	occluded = yes
+	1380.1.1={birth=yes}
+	1442.1.1={death=yes}
+}
+2875071={ #Father of Nguyen Kim (First Lord of Cochinchina)
+	name="Du"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875070
+	trait=legendary
+	occluded = yes
+	1420.1.1={birth=yes}
+	1480.1.1={death=yes}
+}
+2875072={ #Nguyen Kim (First Lord of Cochinchina)
+	name="Kim"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875071
+	trait=legendary
+	occluded = yes
+	1468.1.1={birth=yes}
+	1545.1.1={death=yes}
+}
+2875073={ #Nguyen Hoàng
+	name="Hoàng"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875072
+	trait=legendary
+	occluded = yes
+	1525.8.28={birth=yes}
+	1613.7.20={death=yes}
+}
+2875074={ #Nguyen Phúc Nguyên
+	name="Phúc Nguyên"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875073
+	trait=legendary
+	occluded = yes
+	1563.8.16={birth=yes}
+	1635.11.19={death=yes}
+}
+2875075={ #Nguyen Phúc Lan
+	name="Phúc Lan"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875074
+	trait=legendary
+	occluded = yes
+	1601.8.13={birth=yes}
+	1648.3.19={death=yes}
+}
+2875076={ #Nguyen Phúc Tan
+	name="Phúc Tan"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875075
+	trait=legendary
+	occluded = yes
+	1620.7.18={birth=yes}
+	1687.4.30={death=yes}
+}
+2875077={ #Nguyen Phúc Tran
+	name="Phúc Tran"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875076
+	trait=legendary
+	occluded = yes
+	1650.1.22={birth=yes}
+	1691.2.7={death=yes}
+}
+2875078={ #Nguyen Phúc Chu
+	name="Phúc Chu"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875077
+	trait=legendary
+	occluded = yes
+	1675.6.11={birth=yes}
+	1725.6.2={death=yes}
+}
+2875079={ #Nguyen Phúc Trú
+	name="Phúc Trú"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875078
+	trait=legendary
+	occluded = yes
+	1697.1.14={birth=yes}
+	1738.6.7={death=yes}
+}
+2875080={ #Nguyen Phúc Khoát
+	name="Phúc Khoát"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875079
+	trait=legendary
+	occluded = yes
+	1714.9.26={birth=yes}
+	1765.7.7={death=yes}
+}
+2875081={ #Nguyen Phúc Duong
+	name="Phúc Duong"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875080
+	trait=legendary
+	occluded = yes
+	1740.1.1={birth=yes}
+	1777.1.1={death={death_reason=death_murder_unknown}}#Execution by the Tay Son Rebellion
+}
+2875082={ #Nguyen Phúc Ánh (Emperor Gia Long - First Emperor of the Nguyen Dynasty)
+	name="Phúc Ánh"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875081
+	trait=legendary
+	occluded = yes
+	1762.2.8={birth=yes}
+	1802.7.22={name="Gia Long"}
+	1820.2.3={death=yes}
+}
+2875083={ #Nguyen Phúc Dam (Emperor Minh Mang - Isolationist and persecutor of Christians)
+	name="Phúc Dam"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875082
+	trait=legendary
+	occluded = yes
+	1791.5.25={birth=yes}
+	1820.2.14={name="Minh Mang"}
+	1841.1.20={death=yes}
+}
+2875084={ #Nguyen Phúc Miên Tông (Emperor Thieu Tri - Isolationist and persecutor of Christians)
+	name="Phúc Miên Tông"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875083
+	trait=legendary
+	occluded = yes
+	1807.6.16={birth=yes}
+	1841.2.11={name="Thieu Tri"}
+	1847.10.4={death=yes}
+}
+2875085={ #Nguyen Phúc Thì (Emperor Tu Ðuc - Isolationist and persecutor of Christians)
+	name="Phúc Thì"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875084
+	trait=legendary
+	occluded = yes
+	1829.9.22={birth=yes}
+	1847.10.4={name="Tu Ðuc"}
+	1883.7.19={death=yes}
+}
+2875086={ #Nguyen Phúc Ung (Emperor Duc Ðuc - Isolationist and persecutor of Christians)
+	name="Phúc Ung"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875087
+	trait=legendary
+	occluded = yes
+	1852.2.23={birth=yes}
+	1883.7.20={name="Duc Ðuc"}
+	1883.10.6={death=yes}
+}
+2875087={ #Nguyen Phúc Hong Y
+	name="Phúc Hong Y"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875084
+	trait=legendary
+	occluded = yes
+	1833.9.11={birth=yes}
+	1877.2.23={death=yes}
+}
+2875088={ #Nguyen Phúc Hong Dat (Emperor Hiep Hòa)
+	name="Phúc Hong Dat"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875084
+	trait=legendary
+	occluded = yes
+	1847.11.1={birth=yes}
+	1883.6.30={name="Hiep Hòa"}
+	1883.11.29={death=yes}
+}
+2875089={ #Nguyen Phúc Ung Dang (Emperor Kien Phúc)
+	name="Phúc Ung Dang"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875090
+	trait=legendary
+	occluded = yes
+	1869.2.12={birth=yes}
+	1883.6.30={name="Kien Phúc"}
+	1884.7.31={death=yes}
+}
+2875090={ #Nguyen Phúc Hong Cai
+	name="Phúc Hong Cai"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875084
+	trait=legendary
+	occluded = yes
+	1845.12.13={birth=yes}
+	1876.5.15={death=yes}
+}
+2875091={ #Nguyen Phúc Minh (Emperor Hàm Nghi)
+	name="Phúc Minh"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875090
+	trait=legendary
+	occluded = yes
+	1872.8.3={birth=yes}
+	1884.8.2={name="Hàm Nghi"}
+	1943.1.4={death={death_reason=death_battle}}#Exiled and died in Algeria
+}
+2875092={ #Nguyen Phúc Ung Ky (Emperor Ðong Khánh- French successfully seige the last imperial stronghold and Vietnam becomes a French Protectorate)
+	name="Phúc Ung Ky"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875090
+	trait=legendary
+	occluded = yes
+	1864.2.19={birth=yes}
+	1883.6.30={name="Ðong Khánh"}
+	1889.1.28={death=yes}
+}
+2875093={ #Nguyen Phúc Buu Lân (Emperor Thành Thái)
+	name="Phúc Buu Lân"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=ruist
+	father=2875086
+	trait=legendary
+	occluded = yes
+	1879.3.14={birth=yes}
+	1889.2.2={name="Thành Thái"}
+	1954.3.20={death=yes}
+}
+2875094={ #Nguyen Phúc Vinh San (Emperor Duy Tân)
+	name="Phúc Vinh San"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875093
+	trait=legendary
+	occluded = yes
+	1900.9.19={birth=yes}
+	1907.9.5={name="Duy Tân"}
+	1954.12.26={death=yes}
+}
+2875095={ #Nguyen Phúc Buu Ðao (Emperor Khai Ðinh)
+	name="Phúc Buu Ðao"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=mahayana
+	father=2875092
+	trait=legendary
+	occluded = yes
+	1885.10.8={birth=yes}
+	1916.5.18={name="Khai Ðinh"}
+	1925.11.6={death=yes}
+}
+2875096={ #Nguyen Phúc Vinh Thuy (Emperor Bao Dai - Last Emperor of Vietnam)
+	name="Phúc Vinh Thuy"
+	dynasty=2875018 #Nguyen
+	culture=tonkinese
+	religion=catholic
+	father=2875095
+	trait=legendary
+	occluded = yes
+	1913.10.22={birth=yes}
+	1926.1.8={name="Bao Dai"}
+	1997.7.30={death=yes}
 }

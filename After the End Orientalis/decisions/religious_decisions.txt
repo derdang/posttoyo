@@ -165,4 +165,655 @@ decisions = {
 			modifier = { factor = 0 NOT = { wealth = 250 } }
 		}
 	}
+	reciting_sutras = {
+		only_playable = yes
+		ai_check_interval = 60
+		
+		potential = {
+			AND = {
+				religion_group = buddhist_group
+				NOT = {religion = soka_gakkai}
+				NOT = {religion = shingon_shu}
+				NOT = {religion = hoa_hao}
+			}
+			age = 16
+			prisoner = no
+			in_seclusion = no
+			NOT = { is_incapable = yes }
+			NOT = { trait = legendary }
+			NOT = { #immersion-breaking
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			has_focus = focus_scholarship
+			NOT = {has_character_flag = reciting_sutras}
+		}
+		allow = {
+			learning >= 5
+			war = no
+			NOT = {trait = cynical}
+		}
+		effect = {
+			add_trait = in_hiding
+			piety = 50
+			hidden_tooltip = {
+				narrative_event = { id = budevents.1 }
+			}
+			set_character_flag = reciting_sutras
+		}
+	}
+	senthang_paths = {
+		only_playable = yes
+		ai_check_interval = 60
+		
+		potential = {
+			religion = senthang
+			NOT = { trait = legendary }
+			in_seclusion = no
+			NOT = { #immersion-breaking
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = senthang_paths_chosen }
+		}
+		allow = {
+			OR = {
+				has_focus = focus_theology
+				piety = 250
+			}
+			age = 16
+			war = no
+			prisoner = no
+			NOT = { is_incapable = yes }
+		}
+		effect = {
+			hidden_tooltip = {
+				narrative_event = { id = senthang.1 }
+			}
+			set_character_flag = senthang_paths_chosen
+		}
+	}
+	wokou_gamble = {
+		only_playable = yes
+		ai_check_interval = 60
+		
+		potential = {
+			religion = wokou
+			in_seclusion = no
+			NOT = { is_incapable = yes }
+			NOT = { trait = legendary }
+			NOT = { #immersion-breaking
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			wealth = 9999999999 #No_poor
+			age = 20
+			war = no
+			prisoner = no
+			num_of_holy_sites = 1
+		}
+		effect = {
+			hidden_tooltip = {
+				#narrative_event = { id = casino.1 }
+				wealth = -40 # Soft-disable it
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 2 }
+						}
+					}
+				}
+			}
+		}
+	}
+	hold_vesak = {
+		only_playable = yes
+		ai_check_interval = 4
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+				is_nomadic = yes
+				is_republic = yes
+			}
+			prisoner = no
+			religion_group = buddhist_group
+			NOT = { trait = incapable }
+			NOT = {
+				has_character_modifier = holding_vessak
+			}
+			NOT = {has_character_flag = recent_minor_decision}
+			NOT = { has_character_flag = do_not_disturb }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			wealth = 25
+			month >= 2#mar
+			month <= 4#may
+			prestige = 50
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			add_character_modifier = {
+				name = celebrating_vesak
+				duration = 365
+			}
+			hidden_tooltip = { 
+				narrative_event = { id = budevents.100 }
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 150
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { diplomacy = 10 }
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}	
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}			
+		}
+	}
+	pilgrimage_to_muslim_shrines = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		potential = {
+			is_playable = yes
+			religion_group = muslim
+			NOT = { trait = zair }
+			NOT = { trait = on_ziyara }
+			NOT = { trait = on_hajj }
+			NOT = {	has_character_flag = preparing_ziyara }
+			NOT = {	has_character_flag = ramadan }
+			NOT = {	has_character_flag = activated_ziyara }	
+			NOT = {	has_character_flag = preparing_hajj_mecca }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			age = 16
+			prisoner = no
+			scaled_wealth = 0.2
+			war = no
+			in_command = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = health_travel_condition
+				hidden_tooltip = {
+					NOT = {	is_incapable = yes }
+					NOT = {	trait = blinded }
+				}
+			}
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			scaled_wealth = -0.2
+			hidden_tooltip = {
+				narrative_event = { id = hajj.200 }
+			}
+			set_character_flag = activated_ziyara
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 300 }
+			}
+			modifier = { # Monthly randomizer for when AI takes decision (1% chance)
+				factor = 0
+				random = 1
+			}
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}
+		}
+	}
+	hajj_to_mecca = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		potential = {
+			is_playable = yes
+			religion_group = muslim
+			NOT = { trait = on_hajj }
+			NOT = { trait = on_ziyara }
+			NOT = { trait = hajjaj }
+			NOT = {	has_character_flag = preparing_ziyara }	
+			NOT = {	has_character_flag = activated_hajj_mecca }
+			NOT = {	has_character_flag = ramadan }
+			NOT = {	has_character_flag = preparing_hajj_mecca }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			age = 16
+			prisoner = no
+			scaled_wealth = 0.2
+			war = no
+			in_command = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = health_travel_condition
+				hidden_tooltip = {
+					NOT = {	is_incapable = yes }
+					NOT = {	trait = blinded }
+				}
+			}
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			scaled_wealth = -0.2
+			hidden_tooltip = {
+				narrative_event = { id = hajj.201 }
+			}
+			set_character_flag = activated_hajj_mecca
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = cynical
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 300 }
+			}
+			modifier = { # Monthly randomizer for when AI takes decision (1% chance)
+				factor = 0
+				random = 1
+			}
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}
+		}
+	}
+	celebrate_ashura = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 3
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			religion = shiite
+			NOT = { has_character_modifier = ashura_timer }
+			NOT = {	has_character_flag = ashura_in_progress }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			OR = {
+				month = 8
+				month = 9
+			}
+			wealth = 100
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			wealth = -100
+			piety = 50
+			set_character_flag = ashura_in_progress
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { character_event = { id = islamate.26 days = 60 } } # Safety catch flag clearing
+			custom_tooltip = {
+				text = ashura_decision
+				hidden_tooltip = { 
+					character_event = { id = islamate.20 } 
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 200
+				}
+			}
+			modifier = {
+				factor = 0
+				trait = cynical
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+		}
+	}
+	hold_obon_festival = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 3
+		potential = {
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			religion = shinto
+			NOT = { has_character_modifier = held_obon_festival_timer }
+			NOT = {	has_character_flag = holding_obon_festival }
+			NOT = {	has_character_flag = attending_obon_festival }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			month = 7
+			NOT = {
+				month = 9
+			}
+			wealth = 30
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			wealth = -30
+			piety = 30
+			set_character_flag = holding_obon_festival
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { character_event = { id = jp.8 days = 150 } } # Safety catch flag clearing
+			custom_tooltip = {
+				text = obon_festival
+				hidden_tooltip = {
+					character_event = { id = jp.1 } 
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 4 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					wealth = 100
+				}
+			}
+			modifier = {
+				factor = 0
+				trait = shy
+			}
+			modifier = {
+				factor = 0
+				NOT = { diplomacy = 10 }
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+		}
+	}
+	change_shinto_branch = {
+		ai = no
+		
+		potential = {
+			religion = shinto
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedshintobranch }
+		}
+		
+		allow = {
+			religion = shinto
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = jp.25 }				
+			}
+			custom_tooltip = { text = TXT_change_shinto_branch }
+			set_character_flag = changedshintobranch
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
+	change_mahayana_schools = {
+		ai = no
+		
+		potential = {
+			religion = mahayana
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedmahayanaschool }
+		}
+		
+		allow = {
+			religion = mahayana
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = budevents.7 }				
+			}
+			custom_tooltip = { text = TXT_change_mahayana_schools }
+			set_character_flag = changedmahayanaschool
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
+	change_sanmin_branch = {
+		ai = no
+		
+		potential = {
+			religion = sanmin
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedsanminbranch }
+		}
+		
+		allow = {
+			religion = sanmin
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = taiwan.1 }				
+			}
+			custom_tooltip = { text = TXT_change_sanmin_branch }
+			set_character_flag = changedsanminbranch
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 }

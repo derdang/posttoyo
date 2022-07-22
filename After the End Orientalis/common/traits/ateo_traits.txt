@@ -104,3 +104,420 @@ saint_balance = {
 	customizer = no
 	random = no
 }
+## Senthang schools
+
+senthang_muslim = {
+	potential = {
+		religion = senthang
+	}
+	religious = yes
+
+	muslim_opinion = 10
+	tolerates_muslim = yes
+	
+	opposites = {
+		senthang_middle_path
+		senthang_mettaya 
+	}
+	monthly_character_piety = 0.25
+	learning = 1
+
+	customizer = no
+	random = no
+}
+senthang_mettaya = { #Buddha-Mahdi
+	potential = {
+		religion = senthang
+	}
+	religious = yes
+
+	tolerates_buddhist_group = yes
+	buddhist_group_opinion = 10
+
+	opposites = {
+		senthang_middle_path
+		senthang_muslim 
+	}
+
+	diplomacy = 1
+	learning = 1
+	
+	customizer = no
+	random = no
+}
+senthang_middle_path = { #Seek common virtue and values in all religion. i.e. Baha'i
+	potential = {
+		religion = senthang
+	}
+	religious = yes
+
+	tolerates_buddhist_group = yes
+	tolerates_muslim = yes
+	tolerates_christian  = yes
+	tolerates_eastern = yes
+	
+	opposites = {
+		senthang_muslim
+		senthang_mettaya 
+	}
+
+	monthly_character_piety = 0.1
+	diplomacy = 1
+	
+	customizer = no
+	random = no
+}
+## Mahayana schools
+
+mahayana_chan = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+	
+	opposites = {
+		mahayana_esoteric
+		mahayana_humanist
+		mahayana_lotus
+		mahayana_maitreyan
+		mahayana_pureland
+	}
+	monthly_character_piety = 0.10
+	diplomacy = 1
+
+	customizer = no
+	random = no
+}
+mahayana_esoteric = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+	
+	opposites = {
+		mahayana_chan
+		mahayana_humanist
+		mahayana_lotus
+		mahayana_maitreyan
+		mahayana_pureland
+	}
+	monthly_character_piety = 0.50
+	learning = 2
+
+	customizer = no
+	random = no
+}
+mahayana_humanist = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+
+	opposites = {
+		mahayana_chan
+		mahayana_esoteric
+		mahayana_lotus
+		mahayana_maitreyan
+		mahayana_pureland
+	}
+	diplomacy = 1
+	stewardship = 1
+
+	customizer = no
+	random = no
+}
+mahayana_lotus = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+	
+	opposites = {
+		mahayana_chan
+		mahayana_esoteric
+		mahayana_humanist
+		mahayana_maitreyan
+		mahayana_pureland
+	}
+	monthly_character_piety = 0.30
+
+	customizer = no
+	random = no
+}
+mahayana_maitreyan = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+	
+	opposites = {
+		mahayana_chan
+		mahayana_esoteric
+		mahayana_humanist
+		mahayana_lotus
+		mahayana_pureland
+	}
+	monthly_character_piety = 0.25
+	learning = 1
+
+	customizer = no
+	random = no
+}
+mahayana_pureland = {
+	potential = {
+		religion = mahayana
+	}
+	religious = yes
+
+	opposites = {
+		mahayana_chan
+		mahayana_esoteric
+		mahayana_humanist
+		mahayana_lotus
+		mahayana_maitreyan
+	}
+	monthly_character_prestige = 0.10
+	monthly_character_piety = 0.10
+
+	customizer = no
+	random = no
+}
+
+##Shinto Schools
+koshitsu_shinto = {
+	opposites = {
+		minzoku_shinto
+		bukka_shinto
+	}
+
+	opposite_opinion = -5
+	
+	vassal_opinion = 5
+	
+	potential = { religion = shinto }
+	religious_branch = shinto
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+minzoku_shinto = {
+	opposites = {
+		koshitsu_shinto
+		bukka_shinto
+	}
+
+	opposite_opinion = -5
+	
+	monthly_character_prestige = 0.5
+
+	potential = { religion = shinto }
+	religious_branch = shinto
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+bukka_shinto = {
+	opposites = {
+		koshitsu_shinto
+		minzoku_shinto
+	}
+
+	opposite_opinion = -5
+	
+	monthly_character_piety = 0.5
+
+	potential = { religion = shinto }
+	religious_branch = shinto
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+##Sanmin Schools
+minzu_sanmin = {
+	opposites = {
+		minquan_sanmin
+		minsheng_sanmin
+	}
+
+	diplomacy = 2
+	vassal_opinion = 5
+	general_opinion = 5
+	
+	potential = { religion = sanmin }
+	religious_branch = sanmin
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+minquan_sanmin = {
+	opposites = {
+		minzu_sanmin
+		minsheng_sanmin
+	}
+	
+	stewardship = 2
+	health = 0.5
+	monthly_character_prestige = 0.5
+
+	potential = { religion = sanmin }
+	religious_branch = sanmin
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+minsheng_sanmin = {
+	opposites = {
+		minzu_sanmin
+		minquan_sanmin
+	}
+
+	learning = 2
+	vassal_opinion = 10
+	monthly_character_piety = 0.5
+
+	potential = { religion = sanmin }
+	religious_branch = sanmin
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+##Nusantara 
+kejawen = {
+	opposites = {
+		sunda_wiwitan
+		nusantara_traditionalist
+		tomanurung
+	}
+
+	general_opinion = 5
+	diplomacy = 1
+	tolerates_buddhist_group = yes
+	tolerates_indian_group = yes
+	
+	potential = { religion = nusantara }
+	religious_branch = nusantara
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+sunda_wiwitan = {
+	opposites = {
+		kejawen
+		nusantara_traditionalist
+		tomanurung
+	}
+
+	stewardship = 2
+	monthly_character_prestige = 0.15
+
+	potential = { religion = nusantara }
+	religious_branch = nusantara
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+nusantara_traditionalist = {
+	opposites = {
+		kejawen
+		sunda_wiwitan
+		tomanurung
+	}
+
+	learning = 2
+	monthly_character_piety = 0.5
+
+	potential = { religion = nusantara }
+	religious_branch = nusantara
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+tomanurung = {
+	opposites = {
+		kejawen
+		sunda_wiwitan
+		nusantara_traditionalist
+	}
+
+	monthly_character_prestige = 0.5
+	martial = 2
+	tolerates_pagan_group = yes
+
+	potential = { religion = nusantara }
+	religious_branch = nusantara
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+##General Traits
+vegetarian = {
+	opposites = {
+		hunter
+	}
+	potential = {
+		OR = {
+			religion_group = indian_group
+			religion_group = buddhist_group
+		}
+	}
+	same_opinion = 5
+	
+	health = 0.5
+	
+	random = no
+	religious = yes
+	ruler_designer_cost = 5
+}
+
+sympathy_japonic = {
+	opposites = {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = japonic }
+	}
+
+	tolerates_japonic = yes		# Tolerates and is tolerated by Japonic Religions
+	
+	same_opinion_if_same_religion = 10
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+
+sympathy_eastern = {
+	opposites = {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = eastern }
+	}
+
+	tolerates_eastern = yes		# Tolerates and is tolerated by Eastern (Chinese) Religions
+	
+	same_opinion_if_same_religion = 10
+
+	customizer = no
+	random = no
+	
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}

@@ -1,6 +1,6 @@
 song = {
 	name = "crusaderkings2_maintitle.ogg"
-	song_name = "Bamboo Garden Love Song (Bamboo flute) NCM version"
+	song_name = "Dream of the Hexi Corridor"
 	chance = {
 		factor = 1	
 	}
@@ -28,8 +28,8 @@ song = {
 	chance = {
 		factor = 2
 		modifier = {
-			factor = 1
-			NOR = {
+			factor = 0
+			NOT = {
 				culture_group = viet
 			}
 		}
@@ -42,10 +42,72 @@ song = {
 	chance = {
 		factor = 2
 		modifier = {
-			factor = 1
-			NOR = {
+			factor = 0
+			NOT = {
 				culture_group = philippine
 			}
 		}
 	}
 }
+
+song = {
+	name = "battle_steeds.ogg"
+	song_name = "Battle Steeds Galloping Ahead"
+	chance = {
+		modifier = {
+			factor = 0
+			war = no
+		}	
+		modifier = {
+			factor = 1
+			war = yes
+		}		
+	}
+}
+
+song = {
+	name = "temujin.ogg"
+	song_name = "Temujin"
+	chance = {
+		modifier = {
+			factor = 0
+			war = no
+		}	
+		modifier = {
+			factor = 1
+			war = yes
+		}		
+	}
+}
+	
+song = {
+	name = "golden_sun.ogg"
+	song_name = "There Is a Golden Sun in Beijing"
+	chance = {
+		factor = 1	
+	}
+}
+
+song = {
+	name = "grassland.ogg"
+	song_name = "On The Grassland"
+	chance = {
+		factor = 1	
+	}
+}
+
+song = {
+	name = "guzheng.ogg"
+	song_name = "Guzheng City"
+	chance = {
+		factor = 1	
+	}
+}
+
+song = {
+	name = "erquan_spring.ogg"
+	song_name = "Erquan Spring Reflecting the Moon"
+	chance = {
+		factor = 1	
+	}
+}		

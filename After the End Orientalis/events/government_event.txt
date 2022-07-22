@@ -1,0 +1,95 @@
+###########################################
+#										 #
+# Government Events						 #
+#										 #
+# 										 #
+#										 #
+###########################################
+
+namespace = gov
+
+#Remove Ghazi Elective if you are no longer Muslim
+character_event = {
+	id = gov.1
+	hide_window = yes
+	
+	trigger = {
+		NOT = {religion_group = muslim}
+		has_law = succ_imamate_elective
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		primary_title = { add_law = { law = succ_gavelkind opinion_effect = no } }
+	}
+}
+
+#AI ONLY: Convert from GHAZI to Muslim Bureaucracy
+character_event = {
+	id = gov.2
+	hide_window = yes
+	
+	trigger = {
+		ai = yes
+		higher_real_tier_than = DUKE
+		government = ghazi_government
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_government_type = diwan_government
+	}
+}
+#AI ONLY: Convert from Muslim Bureaucracy to GHAZI
+character_event = {
+	id = gov.3
+	hide_window = yes
+	
+	trigger = {
+		ai = yes
+		lower_tier_than = KING
+		government = diwan_government
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_government_type = ghazi_government
+	}
+}
+#Setting Muslim Governments (AI)
+character_event = {
+	id = gov.4
+	hide_window = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		ai = yes
+		OR = {
+			AND = {
+				government = diwan_government
+				NOT = { has_law = succ_ghazi_elective }
+			}
+			AND = {
+				government = ghazi_government
+				NOT = { has_law = succ_ghazi_elective }
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { government = diwan_government }
+			primary_title = { add_law = { law = succ_ghazi_elective opinion_effect = no } }
+		}
+		if = {
+			limit = { government = ghazi_government }
+			primary_title = { add_law = { law = succ_ghazi_elective opinion_effect = no } }
+		}
+	}
+}

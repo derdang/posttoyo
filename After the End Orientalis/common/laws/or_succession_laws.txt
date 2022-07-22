@@ -1,0 +1,128 @@
+	
+succession_laws = {	
+	succ_ghazi_elective = {
+		oldest_child_opinion = -5
+		child_opinion = -5
+		dynasty_opinion = -5
+		feudal_opinion = -5
+		potential = {
+			holder_scope = {
+				OR = {
+					government = ghazi_government
+					government = diwan_government
+				}
+			}
+			NOT = { holder_scope = { government = confucian_bureaucracy } }
+			NOT = { holder_scope = { government = chinese_imperial_government } }
+
+		}
+		allow = {
+			AND = {
+				religion_group = muslim
+				NOT = {religion = hui}
+			}
+			custom_tooltip = {
+				text = not_forced_tt
+				hidden_tooltip = {
+					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+				}
+			}
+		}
+		effect = {
+			succession = {
+				base_type = feudal_elective
+				voting_rules = ghazi_elective
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	succ_confederation_elective = {
+		potential = {
+			holder_scope = {
+				government = malaysian_confederacy
+				is_nomadic = no
+				is_merchant_republic = no
+				is_patrician = no
+			}
+			#is_primary_type_title = no
+			NOT = { holder_scope = { government = confucian_bureaucracy } }
+			NOT = { holder_scope = { government = chinese_imperial_government } }
+
+		}
+		default_selection = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					holder_scope = {
+						government = malaysian_confederacy
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 100
+				holder_scope = {
+					government = malaysian_confederacy
+				}
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = not_forced_tt
+				hidden_tooltip = {
+					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+				}
+			}
+		}
+		effect = {
+			succession = {
+				base_type = feudal_elective
+				voting_rules = confederation_elective
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+	succ_nomadic_elective = {
+		oldest_child_opinion = -15
+		child_opinion = -5
+		dynasty_opinion = -5
+		potential = {
+			holder_scope = {
+				government = nomadic_tribal_government
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}			
+		}
+		allow = {
+			custom_tooltip = {
+				text = not_forced_tt
+				hidden_tooltip = {
+					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+				}
+			}
+			holder_scope = {
+				in_revolt = no
+			}
+			
+		}
+		effect = {
+			succession = {
+				base_type = feudal_elective
+				voting_rules = nomadic_elective 
+			}
+			elective_voting_rules = nomadic_elective
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+}

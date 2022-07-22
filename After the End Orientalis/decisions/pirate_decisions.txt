@@ -1,0 +1,273 @@
+# decisions = {
+	# become_pirate = {
+		# is_high_prio = yes
+		# filter = self
+		# ai_target_filter = self
+		
+		# potential = {
+			# NOT = { government = pirate_government }
+			# war = no
+			# is_feudal = yes
+			# pirate_island_trigger = yes
+			# religion_group = pirate
+			# OR = {
+				# tier = COUNT
+				# tier = DUKE
+			# }
+			# independent = yes
+			# OR = {
+				# controls_religion = no
+				# religion_group = muslim
+				# has_religion_feature = religion_temporal_head
+				# AND = {
+					# religion = norse_pagan_reformed
+					# has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
+				# }
+			# }
+			# #NOT = { religion_group = muslim }
+			# NOT = { is_government_potential = roman_imperial_government }
+			# NOT = { is_government_potential = order_government }
+			# NAND = { 
+				# culture_group = tibetan_group
+				# OR = {
+					# religion = bon
+					# religion = bon_reformed
+					# religion = buddhist
+				# }
+				# higher_tier_than = BARON
+			# }
+			# NAND = { 
+				# tier = EMPEROR
+				# primary_title = { has_title_flag = pretender_chinese_empire }
+				# OR = {
+					# culture_group = chinese_group
+					# culture = khitan
+					# culture = tangut
+					# culture = jurchen
+					# has_character_flag = chinese_imperial_government_preserve
+				# }
+			# }
+			# is_patrician = no
+		# }
+		
+		# allow = {
+			# has_regent = no
+			# capital_holding_shipyard_trigger = yes
+		# }
+		
+		# effect = {
+			# set_government_type = pirate_government
+		# }
+		
+		# revoke_allowed = {
+			# always = no
+		# }
+		
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# ai_pirate_trigger = no
+			# }
+		# }
+	# }
+	# become_feudal = {
+		# is_high_prio = no
+		# filter = self
+		# ai_target_filter = self
+		# ai_check_interval = 60
+		
+		# potential = {
+			# government = pirate_government
+			# war = no
+			# is_feudal = yes
+			# independent = yes
+			# NOT = { 
+				# religion_group = pirate
+			# }
+			# OR = {
+				# controls_religion = no
+				# religion_group = muslim
+				# has_religion_feature = religion_temporal_head
+				# AND = {
+					# religion = norse_pagan_reformed
+					# has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
+				# }
+			# }
+			# #NOT = { religion_group = muslim }
+			# NOT = { is_government_potential = roman_imperial_government }
+			# NOT = { is_government_potential = order_government }
+			# NAND = { 
+				# culture_group = tibetan_group
+				# OR = {
+					# religion = bon
+					# religion = bon_reformed
+					# religion = buddhist
+				# }
+				# higher_tier_than = BARON
+			# }
+			# NAND = { 
+				# tier = EMPEROR
+				# primary_title = { has_title_flag = pretender_chinese_empire }
+				# OR = {
+					# culture_group = chinese_group
+					# culture = khitan
+					# culture = tangut
+					# culture = jurchen
+					# has_character_flag = chinese_imperial_government_preserve
+				# }
+			# }
+			# is_patrician = no
+		# }
+		
+		# allow = {
+			# has_regent = no
+			# prestige = 500
+		# }
+		
+		# effect = {
+			# prestige = -500
+			# if = {
+				# limit = { religion_group = muslim }
+				# set_government_type = muslim_government
+			# }
+			# else = { set_government_type = feudal_government }
+		# }
+		
+		# revoke_allowed = {
+			# always = no
+		# }
+		
+		# ai_will_do = {
+			# factor = 0.01
+			# modifier = {
+				# factor = 0
+				# ai_pirate_trigger = yes
+			# }
+			# modifier = {
+				# factor = 3
+				# ai_pirate_trigger = no
+			# }
+		# }
+	# }
+# }
+targetted_decisions = {
+	call_grand_expedition = {
+		only_playable = yes
+		filter = independent_rulers
+		ai_target_filter = independent_rulers
+		ai_check_interval = 24
+		
+		from_potential = {
+			prestige = 500
+			government = pirate_government
+			NOT = { has_character_flag = pirate_invader }
+			NOT = { has_character_modifer = preparing_pirate_invasion }
+		}
+		
+		potential = {
+			realm_size >= 75 
+			NOT = { government = pirate_government }
+			NOT = { government = nomadic_government }
+			NOT = { government = herder_government }
+			NOT = { religion = FROM }
+		}
+		allow = {
+			FROM = {
+				prestige = 2000
+				wealth = 200
+				war = no
+			}
+		}
+		effect = {
+			FROM = {
+				add_character_modifier = {
+					name = preparing_pirate_invasion
+					years = 3
+				}
+				wealth = -200
+				character_event = { id = pirate.003 }
+			}
+			set_character_flag = pirate_invasion_target
+			character_event = { id = pirate.002 }
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				OR = {
+					reverse_opinion = { who = FROM value = 0 }
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = { trait = kind }
+			}
+			modifier = {
+				factor = 0.5 # Less likely to do it
+			}
+		}
+	} 
+	pirate_decide_fate = {
+		only_playable = yes
+		filter = court
+		ai_target_filter = court
+		ai_check_interval = 6
+	
+		from_potential = {
+			is_playable = yes
+			OR = {
+				government = pirate_government
+				trait = pirate
+			}
+		}
+	
+		potential = {
+			host = { character = FROM }
+			prisoner = yes
+			NOT = { has_character_flag = fate_being_decided }
+		}
+		allow = {
+			prisoner = yes
+		}
+		effect = {
+			FROM = {
+				character_event = { id = gov.010 }
+			}
+			set_character_flag = fate_being_decided
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				OR = {
+					reverse_opinion = { who = FROM value = 40 }
+					FROM = { NOT = { piety = 100 } }
+					FROM = { LIEGE = { dynasty = ROOT } }
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = { trait = kind }
+			}
+			modifier = {
+				factor = 0.5 # Less likely to do it
+			}
+			modifier = {
+				factor = 2
+				is_pretender = yes
+				FROM = {
+					OR = {
+						is_pretender = yes
+						is_primary_heir = yes
+					}
+				}
+			}
+		}
+	}
+}
