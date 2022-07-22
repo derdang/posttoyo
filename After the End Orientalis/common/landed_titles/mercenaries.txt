@@ -308,3 +308,29 @@ d_samut_prakarn_croc = {
 	
 	mercenary_type = d_thai_crocodile_farm_composition
 }
+
+d_asa_cham = {
+	color={ 0 155 255 }
+	color2={ 255 255 255 }
+		
+	capital = 804 # Chumphon
+
+	religion = senthang
+	culture = cham
+	
+	allow = {
+		culture_group = southwest_tai
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_asa_cham_composition
+}
