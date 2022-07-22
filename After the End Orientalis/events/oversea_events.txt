@@ -1,0 +1,195 @@
+namespace = OSE
+
+#Khon Jiin Administrator Appears at Court
+character_event = {
+	id = OSE.1
+	desc = EVTDESC_OSE_1
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 16
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	only_independent = yes
+	
+	trigger = {
+		capital_scope = {
+				OR = {
+			region = custom_old_laos
+			region = custom_old_siam
+			}
+			}
+		NOT = { trait = incapable }
+		NOT = { is_inaccessible_trigger = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 750
+	}
+	
+	immediate = {
+		create_character = {
+			random_traits = yes
+			culture = sinotai 
+			dynasty = culture
+			religion = dharmayuttika
+			female = no
+			age = 30
+			trait = fortune_builder
+			attributes = {
+				stewardship = 10
+			}
+		}
+		new_character = {
+			remove_lifestyle_trait_effect = yes
+			random_list = {
+				70 = {
+					add_trait = administrator
+				}
+				30 = {
+					add_trait = administrator
+					add_trait = shrewd
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SoA_200
+		custom_tooltip = {
+			text = jewish_courtier_tooltip
+		}
+	}
+}
+
+#Hoa Administrator Appears at Court
+character_event = {
+	id = OSE.2
+	desc = EVTDESC_OSE_2
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 16
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	only_independent = yes
+	
+	trigger = {
+		capital_scope = {
+				OR = {
+			region = custom_old_vietnam
+			region = custom_old_cambodia
+			}
+			}
+		NOT = { trait = incapable }
+		NOT = { is_inaccessible_trigger = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 750
+	}
+	
+	immediate = {
+		create_character = {
+			random_traits = yes
+			culture = hoa 
+			dynasty = culture
+			religion = hoa_hao
+			female = no
+			age = 30
+			trait = fortune_builder
+			attributes = {
+				stewardship = 10
+			}
+		}
+		new_character = {
+			remove_lifestyle_trait_effect = yes
+			random_list = {
+				70 = {
+					add_trait = administrator
+				}
+				30 = {
+					add_trait = administrator
+					add_trait = shrewd
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SoA_200
+		custom_tooltip = {
+			text = jewish_courtier_tooltip
+		}
+	}
+}
+
+#Tionghoa Administrator Appears at Court
+character_event = {
+	id = OSE.3
+	desc = EVTDESC_OSE_3
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	
+	min_age = 16
+	prisoner = no
+	only_playable = yes
+	capable_only = yes
+	only_independent = yes
+	
+	trigger = {
+		capital_scope = {
+				OR = {
+			region = custom_pennisular_malaysia
+			region = custom_sumatra
+			region = custom_singapura
+			region = custom_mindanao
+			region = custom_visaya
+			region = custom_luzon
+			}
+			}
+		NOT = { trait = incapable }
+		NOT = { is_inaccessible_trigger = yes }
+	}
+	
+	mean_time_to_happen = {
+		months = 750
+	}
+	
+	immediate = {
+		create_character = {
+			random_traits = yes
+			culture = tionghoa 
+			dynasty = culture
+			religion = mahayana
+			female = no
+			age = 30
+			trait = fortune_builder
+			attributes = {
+				stewardship = 10
+			}
+			flag = ai_flag_refuse_conversion
+		}
+		new_character = {
+			remove_lifestyle_trait_effect = yes
+			random_list = {
+				70 = {
+					add_trait = administrator
+				}
+				30 = {
+					add_trait = administrator
+					add_trait = shrewd
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SoA_200
+		custom_tooltip = {
+			text = jewish_courtier_tooltip
+		}
+	}
+}
