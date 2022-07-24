@@ -1,0 +1,844 @@
+e_java = {
+	color={ 215 202 55 }
+	color2={ 255 255 20 }
+	
+	capital = 445 # c_jakarta
+	culture = javanese
+	
+	k_banten = {
+		color={ 30 56 156 }
+		color2={ 255 255 255 }
+		
+		capital = 445 # c_jakarta
+		culture = javanese
+		
+		d_banten = {
+			color={ 10 76 146 }
+			color2={ 255 255 255 }
+			
+			capital = 445 # c_jakarta
+			
+			c_jakarta = { # 445
+				color={ 0 86 141 }
+				color2={ 255 255 255 }
+				
+				holy_site = concordanist
+				holy_site = sunni
+				
+				b_istana_gambir = {}
+				b_jakarta = {}
+				b_masjid_istiqlal = {}
+				b_bogor = {}
+				b_depok = {}
+				b_tangerang = {}
+				b_bekasi = {}
+			}
+			c_lebak = { # 447
+				color={ 22 107 133 }
+				color2={ 255 255 255 }
+				
+				b_rangkasbitung = {}
+				b_pandeglang = {}
+				b_malingping = {}
+				b_cimarga = {}
+				b_labuan = {}
+				b_cibadak = {}
+				b_cikeusik = {}
+			}
+			c_serang = { # 446
+				color={ 0 100 142 }
+				color2={ 255 255 255 }
+				
+				b_ciruas = {}
+				b_serang = {}
+				b_citangkil = {}
+				b_cipocok_jaya = {}
+				b_cilegon = {}
+				b_cikande = {}
+				b_kramatwatu = {}
+			}
+		}
+		d_jawa_kulon = {
+			color={ 49 82 130 }
+			color2={ 255 255 255 }
+			
+			capital = 448 # c_bandung
+			
+			c_bandung = { # 448
+				color={ 39 92 125 }
+				color2={ 255 255 255 }
+				
+				b_gedung_sate = {}
+				b_bandung = {}
+				b_masjid_raya_bandung = {}
+				b_soreang = {}
+				b_cimahi = {}
+				b_ngamprah = {}
+				b_tarogong = {}
+			}
+			c_cirebon = { # 452
+				color={ 49 100 109 }
+				color2={ 255 255 255 }
+				
+				b_kraton_kacirebonan = {}
+				b_cirebon = {}
+				b_sang_cipta_rasa = {}
+				b_sumber = {}
+				b_indramayu = {}
+				b_sumedang = {}
+				b_majalengka = {}
+			}
+			c_karawang = { # 451
+				color={ 21 102 122 }
+				color2={ 255 255 255 }
+				
+				b_karangpawitan = {}
+				b_subang = {}
+				b_purwakarta = {}
+				b_klari = {}
+				b_ciasem = {}
+				b_plered = {}
+				b_telukjambe = {}
+			}
+			c_sukabumi = { # 450
+				color={ 25 89 128 }
+				color2={ 255 255 255 }
+				
+				b_pelabuhan_ratu = {}
+				b_sukabumi = {}
+				b_ciamis_2 = {}
+				b_cicurug = {}
+				b_banjarsari = {}
+				b_cisaat = {}
+				b_pamarican = {}
+			}
+			c_tasikmalaya = { # 449
+				color={ 36 102 119 }
+				color2={ 255 255 255 }
+				
+				b_singaparna = {}
+				b_tasikmalaya = {}
+				b_manonjaya = {}
+				b_ciamis = {}
+				b_banjar = {}
+				b_parigi = {}
+				b_cipatujah = {}
+			}
+		}
+	}
+	k_nusa_tenggara = {
+		color={ 225 181 52 }
+		color2={ 255 255 255 }
+		
+		capital = 554 # c_mataram
+		culture = sasak_sumbawa
+		
+		d_lombok = {
+			color={ 245 161 62 }
+			color2={ 255 255 255 }
+			
+			capital = 554 # c_mataram
+			
+			c_mataram = { # 554
+				color={ 255 151 67 }
+				color2={ 255 255 255 }
+				
+				b_gerung = {}
+				b_mataram = {}
+				b_narmada = {}
+				b_tanjung = {}
+				b_cakranegara = {}
+				b_gunung_sari = {}
+				b_bayan = {}
+			}
+			c_selong = { # 555
+				color={ 243 155 60 }
+				color2={ 255 255 255 }
+				
+				b_selong = {}
+				b_praya = {}
+				b_masbagik = {}
+				b_pujut = {}
+				b_aikmel = {}
+				b_jonggat = {}
+				b_pringgabaya = {}
+			}
+		}
+		d_bali = {
+			color={ 199 171 90 }
+			color2={ 255 255 255 }
+			
+			capital = 556 # c_denpasar
+			
+			c_denpasar = { # 556
+				color={ 209 161 95 }
+				color2={ 255 255 255 }
+				
+				b_mangupura = {}
+				b_denpasar = {}
+				b_jagatnatha = {}
+				b_ubud = {}
+				b_karangasem = {}
+				b_bangli = {}
+				b_semarapura = {}
+			}
+			c_buleleng = { # 557
+				color={ 204 154 93 }
+				color2={ 255 255 255 }
+				
+				b_buleleng = {}
+				b_singaraja = {}
+				b_tabanan = {}
+				b_negara = {}
+				b_gerokgak = {}
+				b_kediri_2 = {}
+				b_mendoyo = {}
+			}
+		}
+		d_flores = {
+			color={ 240 199 60 }
+			color2={ 255 255 255 }
+			
+			capital = 563 # c_komodo
+			
+			c_komodo = { # 563
+				color={ 250 189 65 }
+				color2={ 255 255 255 }
+				
+				b_wae_kelambu = {}
+				b_labuan_bajo = {}
+				b_tangge = {}
+				b_golo_ruu = {}
+				b_nanga_kantor = {}
+				b_sano_nggoang = {}
+				b_welak = {}
+			}
+			c_ende = { # 566
+				color={ 252 194 51 }
+				color2={ 255 255 255 }
+				
+				b_onekore = {}
+				b_ende = {}
+				b_ndorurea = {}
+				b_rewarangga = {}
+				b_kota_ratu = {}
+				b_wewaria = {}
+				b_bokasape = {}
+			}
+			c_manggarai = { # 564
+				color={ 249 183 33 }
+				color2={ 255 255 255 }
+				
+				b_ruteng = {}
+				b_borong = {}
+				b_langke_rembong = {}
+				b_mandosawu = {}
+				b_kota_komba = {}
+				b_pagal = {}
+				b_lamba_leda = {}
+			}
+			c_ngada = { # 565
+				color={ 249 198 67 }
+				color2={ 255 255 255 }
+				
+				b_bajawa = {}
+				b_mbay = {}
+				b_mangulewa = {}
+				b_danga = {}
+				b_wuliwalo = {}
+				b_nangaroro = {}
+				b_aimere = {}
+			}
+		}
+		d_maumere = {
+			color={ 242 201 44 }
+			color2={ 255 255 255 }
+			
+			capital = 567 # c_sikka
+			
+			c_sikka = { # 567
+				color={ 252 191 49 }
+				color2={ 255 255 255 }
+				
+				b_maumere = {}
+				b_larantuka = {}
+				b_uneng = {}
+				b_beru = {}
+				b_waigete = {}
+				b_nita = {}
+				b_boru = {}
+			}
+			c_alor = { # 568
+				color={ 242 194 68 }
+				color2={ 255 255 255 }
+				
+				b_kalabahi = {}
+				b_moru = {}
+				b_adang = {}
+				b_kelaisi_timur = {}
+				b_kabir = {}
+				b_kolana_utara = {}
+				b_kabola = {}
+			}
+			c_lembata = { # 569
+				color={ 250 182 51 }
+				color2={ 255 255 255 }
+				
+				b_lewoleba = {}
+				b_waiwerang = {}
+				b_buyasari = {}
+				b_balauring = {}
+				b_witihama = {}
+				b_senadan = {}
+				b_menanga = {}
+			}
+		}
+		d_sumba = {
+			color={ 241 190 65 }
+			color2={ 255 255 255 }
+			
+			capital = 561 # c_tambolaka
+			
+			c_tambolaka = { # 561
+				color={ 251 180 70 }
+				color2={ 255 255 255 }
+				
+				b_tambolaka = {}
+				b_wewewa = {}
+				b_waikabubak = {}
+				b_waibakul = {}
+				b_kodi = {}
+				b_loura = {}
+				b_loli = {}
+			}
+			c_waingapu = { # 562
+				color={ 249 176 47 }
+				color2={ 255 255 255 }
+				
+				b_waingapu = {}
+				b_prailiu = {}
+				b_umalulu = {}
+				b_lewa_paku = {}
+				b_kawangu = {}
+				b_pahunga_lodu = {}
+				b_rindi = {}
+			}
+		}
+		d_sumbawa = {
+			color={ 229 161 56 }
+			color2={ 255 255 255 }
+			
+			capital = 558 # c_bima
+			
+			c_bima = { # 558
+				color={ 239 151 61 }
+				color2={ 255 255 255 }
+				
+				b_woha = {}
+				b_bima = {}
+				b_sape = {}
+				b_rabangodu = {}
+				b_bolo = {}
+				b_lambu = {}
+				b_monta = {}
+			}
+			c_sumbawa = { # 560
+				color={ 242 169 60 }
+				color2={ 255 255 255 }
+				
+				b_sumbawa_besar = {}
+				b_taliwang = {}
+				b_labuhan_badas = {}
+				b_utan = {}
+				b_labuhan_alas = {}
+				b_plampang = {}
+				b_seteluk = {}
+			}
+			c_tambora = { # 559
+				color={ 242 172 57 }
+				color2={ 255 255 255 }
+				
+				b_kawinda = {}
+				b_dompu = {}
+				b_tambora = {}
+				b_kandai = {}
+				b_pekat = {}
+				b_manggelewa = {}
+				b_sanggar = {}
+			}
+		}
+	}
+	k_surabaya = {
+		color={ 231 203 212 }
+		color2={ 255 255 255 }
+		
+		capital = 462 # c_surabaya
+		culture = javanese
+		
+		d_surabaya = {
+			color={ 251 183 222 }
+			color2={ 255 255 255 }
+			
+			capital = 462 # c_surabaya
+			
+			c_surabaya = { # 462
+				color={ 5 173 227 }
+				color2={ 255 255 255 }
+				
+				b_gresik = {}
+				b_surabaya = {}
+				b_al_akbar = {}
+				b_sidoarjo = {}
+				b_mojokerto = {}
+				b_lamongan = {}
+				b_jombang = {}
+			}
+			c_bojonegoro = { # 463
+				color={ 5 174 215 }
+				color2={ 255 255 255 }
+				
+				b_bojonegoro = {}
+				b_tuban = {}
+				b_margomulyo = {}
+				b_bancar = {}
+				b_ngraho = {}
+				b_sokosari = {}
+				b_tambakrejo = {}
+			}
+			c_kangean = { # 466
+				color={ 13 150 187 }
+				color2={ 255 255 255 }
+				
+				b_arjasa = {}
+				b_pabean = {}
+				b_kalikatak = {}
+				b_kangayan = {}
+				b_sapeken = {}
+				b_kaliksangka = {}
+				b_buddhi = {}
+			}
+			c_madiun = { # 465
+				color={ 8 178 228 }
+				color2={ 255 255 255 }
+				
+				b_mejayan = {}
+				b_madiun = {}
+				b_nganjuk = {}
+				b_ngawi = {}
+				b_magetan = {}
+				b_rejoso = {}
+				b_karangjati = {}
+			}
+			c_madura = { # 464
+				color={ 5 162 200 }
+				color2={ 255 255 255 }
+				
+				b_bangkalan = {}
+				b_pamekasan = {}
+				b_sumenep = {}
+				b_sampang = {}
+				b_pragaan = {}
+				b_galis = {}
+				b_ketapang = {}
+			}
+		}
+		d_malang = {
+			color={ 12 186 203 }
+			color2={ 255 255 255 }
+			
+			capital = 467 # c_malang
+			
+			c_malang = { # 467
+				color={ 22 176 208 }
+				color2={ 255 255 255 }
+				
+				b_batu = {}
+				b_malang = {}
+				b_kepanjen = {}
+				b_lowokwaru = {}
+				b_singosari = {}
+				b_pakis = {}
+				b_dampit = {}
+			}
+			c_kediri = { # 469
+				color={ 25 171 179 }
+				color2={ 255 255 255 }
+				
+				b_blitar = {}
+				b_kediri = {}
+				b_trenggalek_2 = {}
+				b_ngasem = {}
+				b_kanigoro = {}
+				b_sutojayan = {}
+				b_purwoasri = {}
+			}
+			c_ponorogo = { # 468
+				color={ 5 161 199 }
+				color2={ 255 255 255 }
+				
+				b_ponorogo = {}
+				b_trenggalek = {}
+				b_pacitan = {}
+				b_slahung = {}
+				b_panggul = {}
+				b_kebonagung = {}
+				b_balong = {}
+			}
+		}
+		d_probolinggo = {
+			color={ 7 179 205 }
+			color2={ 255 255 255 }
+			
+			capital = 470 # c_probolinggo
+			
+			c_probolinggo = { # 470
+				color={ 17 169 210 }
+				color2={ 255 255 255 }
+				
+				b_kraksaan = {}
+				b_probolinggo = {}
+				b_jabung = {}
+				b_bangil = {}
+				b_pasuruan = {}
+				b_pandaan = {}
+				b_gempol = {}
+			}
+			c_banyuwangi = { # 473
+				color={ 15 178 212 }
+				color2={ 255 255 255 }
+				
+				b_banyuwangi = {}
+				b_rogojampi = {}
+				b_blambangan = {}
+				b_rogojampi_2 = {}
+				b_bagorejo = {}
+				b_gentengkulon = {}
+				b_glenmore = {}
+			}
+			c_bondowoso = { # 471
+				color={ 62 185 176 }
+				color2={ 255 255 255 }
+				
+				b_bondowoso = {}
+				b_situbondo = {}
+				b_cermee = {}
+				b_panji = {}
+				b_wringin = {}
+				b_besuki = {}
+				b_wonosari = {}
+			}
+			c_jember = { # 472
+				color={ 43 172 182 }
+				color2={ 255 255 255 }
+				
+				b_jember = {}
+				b_lumajang = {}
+				b_bangsalsari = {}
+				b_pasirian = {}
+				b_lojejer = {}
+				b_puger = {}
+				b_tempeh = {}
+			}
+		}
+	}
+	k_timor = {
+		color={ 241 255 86 }
+		color2={ 255 255 255 }
+		
+		capital = 570 # c_dili
+		culture = east_timor
+		
+		d_lorosae = {
+			color={ 221 19 76 }
+			color2={ 255 255 255 }
+			
+			capital = 570 # c_dili
+			
+			c_dili = { # 570
+				color={ 211 29 71 }
+				color2={ 255 255 255 }
+				
+				holy_site = catholic
+				
+				b_dom_aleixo = {}
+				b_dili = {}
+				b_gleno = {}
+				b_maliana = {}
+				b_likisa = {}
+				b_aileu = {}
+				b_cristo_rei = {}
+			}
+			c_baukau = { # 571
+				color={ 255 0 51 }
+				color2={ 255 255 255 }
+				
+				b_baukau = {}
+				b_lospalos = {}
+				b_bagia = {}
+				b_iliomar = {}
+				b_laga = {}
+				b_luru = {}
+				b_vemasi = {}
+			}
+			c_kovalima = { # 573
+				color={ 210 40 60 }
+				color2={ 255 255 255 }
+				
+				b_suai = {}
+				b_ainaru = {}
+				b_same = {}
+				b_zumalai = {}
+				b_maubise = {}
+				b_alas = {}
+				b_kasabauk = {}
+			}
+			c_vikeke = { # 572
+				color={ 222 22 53 }
+				color2={ 255 255 255 }
+				
+				b_watulari = {}
+				b_vikeke = {}
+				b_manatutu = {}
+				b_laline = {}
+				b_laklubar = {}
+				b_watucarbau = {}
+				b_laklo = {}
+			}
+		}
+		d_malada = {
+			color={ 230 12 54 }
+			color2={ 255 255 255 }
+			
+			capital = 579 # c_tanimbar
+			
+			c_tanimbar = { # 579
+				color={ 220 22 49 }
+				color2={ 255 255 255 }
+				
+				b_saumlaki = {}
+				b_larat = {}
+				b_adaut = {}
+				b_seira = {}
+				b_wunlah = {}
+				b_lorulun = {}
+				b_tutukembong = {}
+			}
+			c_wetar = { # 580
+				color={ 224 14 36 }
+				color2={ 255 255 255 }
+				
+				b_tiakur = {}
+				b_wonreli = {}
+				b_letwurung = {}
+				b_weet = {}
+				b_ilwaki = {}
+				b_tepa = {}
+				b_serwaru = {}
+			}
+		}
+		d_timbar = {
+			color={ 228 15 65 }
+			color2={ 255 255 255 }
+			
+			capital = 574 # c_kupang
+			
+			c_kupang = { # 574
+				color={ 218 25 60 }
+				color2={ 255 255 255 }
+				
+				b_oelmasi = {}
+				b_kupang_2 = {}
+				b_oebobo = {}
+				b_naibonat = {}
+				b_kelapa_lima = {}
+				b_tarus = {}
+				b_maulafa = {}
+			}
+			c_oekusi = { # 576
+				color={ 200 28 57 }
+				color2={ 255 255 255 }
+				
+				b_pante_makasar = {}
+				b_atambua = {}
+				b_kefamenanu = {}
+				b_nanaet = {}
+				b_insana = {}
+				b_pasabe = {}
+				b_ponu = {}
+			}
+			c_rote = { # 577
+				color={ 216 35 48 }
+				color2={ 255 255 255 }
+				
+				b_baa = {}
+				b_busalangga = {}
+				b_londalusi = {}
+				b_ndao = {}
+				b_olafulihaa = {}
+				b_onatali = {}
+				b_usu = {}
+			}
+			c_sabu = { # 578
+				color={ 218 37 29 }
+				color2={ 255 255 255 }
+				
+				b_menia = {}
+				b_mebba = {}
+				b_daieko = {}
+				b_waduwalla = {}
+				b_ledeke = {}
+				b_bolou = {}
+				b_eimadake = {}
+			}
+			c_soe = { # 575
+				color={ 213 38 66 }
+				color2={ 255 255 255 }
+				
+				b_amanuban = {}
+				b_soe = {}
+				b_betun = {}
+				b_mollo = {}
+				b_kie = {}
+				b_kualin = {}
+				b_wewiku = {}
+			}
+		}
+	}
+	k_yogyakarta = {
+		color={ 122 244 54 }
+		color2={ 255 255 255 }
+		
+		capital = 453 # c_yogyakarta
+		culture = javanese
+		
+		d_yogyakarta = {
+			color={ 102 8 44 }
+			color2={ 255 255 255 }
+		
+			capital = 453 # c_yogyakarta
+			
+			c_yogyakarta = { # 453
+				color={ 92 18 39 }
+				color2={ 255 255 255 }
+				
+				b_kraton_ngayogyakarta_hadiningrat = {}
+				b_yogyakarta = {}
+				b_gunung_merapi = {}
+				b_pakualam = {}
+				b_wonogiri = {}
+				b_kauman = {}
+				b_sleman = {}
+			}
+			c_cilacap = { # 455
+				color={ 102 27 51 }
+				color2={ 255 255 255 }
+				
+				b_purwokerto = {}
+				b_cilacap = {}
+				b_purbalingga = {}
+				b_majenang = {}
+				b_cilongok = {}
+				b_bukateja = {}
+				b_kesugihan = {}
+			}
+			c_magelang = { # 454
+				color={ 106 26 44 }
+				color2={ 255 255 255 }
+				
+				b_mungkid = {}
+				b_magelang = {}
+				b_banjarnegara = {}
+				b_kebumen = {}
+				b_purworejo = {}
+				b_temanggung = {}
+				b_wonosobo = {}
+			}
+		}
+		d_semarang = {
+			color={ 110 18 50 }
+			color2={ 255 255 255 }
+			
+			capital = 456 # c_semarang
+			
+			c_semarang = { # 456
+				color={ 100 28 45 }
+				color2={ 255 255 255 }
+				
+				b_lawang_sewu = {}
+				b_semarang = {}
+				b_blenduk = {}
+				b_ungaran = {}
+				b_salatiga = {}
+				b_avalokitesvara = {}
+				b_demak = {}
+			}
+			c_pekalongan = { # 457
+				color={ 93 22 41 }
+				color2={ 255 255 255 }
+				
+				b_kajen = {}
+				b_pekalongan = {}
+				b_batang = {}
+				b_kendal = {}
+				b_kasen = {}
+				b_warungasem = {}
+				b_kaliwungu = {}
+			}
+			c_tegal = { # 458
+				color={ 99 17 39 }
+				color2={ 255 255 255 }
+				
+				b_slawi = {}
+				b_tegal = {}
+				b_brebes = {}
+				b_pemalang = {}
+				b_kedungbanteng = {}
+				b_bulakamba = {}
+				b_taman = {}
+			}
+		}
+		d_solo = {
+			color={ 107 13 48 }
+			color2={ 255 255 255 }
+			
+			capital = 459 # c_surakarta
+			
+			c_surakarta = { # 459
+				color={ 97 23 43 }
+				color2={ 255 255 255 }
+				
+				b_kraton_surakarta_hadiningrat = {}
+				b_surakarta = {}
+				b_klaten = {}
+				b_boyolali = {}
+				b_sragen = {}
+				b_sukoharjo = {}
+				b_karanganyar = {}
+			}
+			c_blora = { # 461
+				color={ 109 25 47 }
+				color2={ 255 255 255 }
+				
+				b_blora = {}
+				b_rembang = {}
+				b_ngawen = {}
+				b_kragan = {}
+				b_kunduran = {}
+				b_pamotan = {}
+				b_todanan = {}
+			}
+			c_grobogan = { # 460
+				color={ 102 19 41 }
+				color2={ 255 255 255 }
+				
+				b_purwodadi = {}
+				b_pati = {}
+				b_jepara = {}
+				b_kudus = {}
+				b_godong = {}
+				b_winong = {}
+				b_kedungmalang = {}
+			}
+		}
+	}
+}

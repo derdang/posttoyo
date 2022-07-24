@@ -1,0 +1,1177 @@
+e_mekong = {
+	color={ 180 159 175 }
+	color2={ 255 255 20 }
+	
+	capital = 294 # c_nakhon_viangchan
+	
+	laotian = "Lan Xang"
+	khmer = "Kampuchea"
+	tonkinese = "Cuu Long"
+	annamese = "Cuu Long"
+	cochinchinese = "Mê Kông"
+	muong = "Cuu Long"
+	hoa = "Mê Kông"
+	
+	allow = {
+		always = no # Only created through decision
+	}
+	
+	#Move the decisions to form the respective Empires as Part of the Decision Tab "Form Kampuchea"/"Form Lan Xang" Respectively
+	
+	allow = {
+		always = no
+	}
+	
+	k_lan_xang = {
+		color={ 190 149 180 }
+		color2={ 255 255 255 }
+		
+		capital = 294 # c_nakhon_viangchan
+		culture = laotian
+		
+		tonkinese = "Lào"
+		annamese = "Lào"
+		cochinchinese = "Lào"
+		muong = "Lào"
+		hoa = "Làou"
+		thai_mueang = "Lao"
+		thai_central = "Lao"
+		thai_isan = "Lao"
+		thai_paktai = "Lao"
+		khmer = "Lao"
+		khrom = "Lao"
+		d_vientiane = {
+			color={ 210 129 190 }
+			color2={ 255 255 255 }
+			
+			tonkinese = "Viêng Chan"
+			annamese = "Viêng Chan"
+			cochinchinese = "Viêng Chan"
+			muong = "Viêng Chan"
+			hoa = "Viêng Chan"
+			thai_mueang = "Viang Chann"
+			thai_central = "Viang Chann"
+			thai_isan = "Viang Chann"
+			thai_paktai = "Viang Chann"
+			khmer = "Viang Chann"
+			khrom = "Viang Chann"
+			
+			capital = 294 # c_nakhon_viangchan
+			
+			c_nakhon_viangchan = { # 294 - Vientiane city
+				color={ 220 119 195 }
+				color2={ 255 255 255 }
+				holy_site = dharmayuttika
+				tonkinese = "Viêng Chan"
+				annamese = "Viêng Chan"
+				cochinchinese = "Viêng Chan"
+				muong = "Viêng Chan"
+				hoa = "Viêng Chan"
+				thai_mueang = "Nakhon Viang Chann"
+				thai_central = "Nakhon Viang Chann"
+				thai_isan = "Nakhon Viang Chann"
+				thai_paktai = "Nakhon Viang Chann"
+				khmer = "Nakhon Viang Chann"
+				khrom = "Nakhon Viang Chann"
+				b_sikhottabong = {}
+				b_xaysetha = {}
+				b_chanthabuly = {}
+				b_hadxayfong = {}
+				b_sisattanak = {}
+				b_xaythany = {}
+				b_sisattanak_2 = {}
+			}
+			c_khwaeng_viangchan = { # 295 - Vientiane Outer Area
+				color={ 236 135 211 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Khang Viêng Chan"
+				annamese = "Khang Viêng Chan"
+				cochinchinese = "Khang Viêng Chan"
+				muong = "Khang Viêng Chan"
+				hoa = "Khang Viêng Chan"
+				thai_mueang = "Khwaeng Viang Chann"
+				thai_central = "Khwaeng Viang Chann"
+				thai_isan = "Khwaeng Viang Chann"
+				thai_paktai = "Khwaeng Viang Chann"
+				khmer = "Khwaeng Viang Chann"
+				khrom = "Khwaeng Viang Chann"
+				b_phonhong = {}
+				b_thoulakhom = {}
+				b_vangvieng = {}
+				b_keo_oudom = {}
+				b_mad = {}
+				b_kasy = {}
+				b_feuang = {}
+			}
+			c_sainyabuli = { # 296
+				color={ 212 145 195 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Xayabury"
+				annamese = "Xayabury"
+				cochinchinese = "Xayabury"
+				muong = "Xayabury"
+				hoa = "Xayabury"
+				thai_mueang = "Saiyaburi"
+				thai_central = "Chaiyaburi"
+				thai_isan = "Saiyaburi"
+				thai_paktai = "Saiyaburi"
+				
+				b_xayabury = {
+				thai_mueang = "Saiyaburi"
+				thai_central = "Chaiyaburi"
+				thai_isan = "Saiyaburi"
+				thai_paktai = "Saiyaburi"
+				}
+				b_parklai = {}
+				b_phiang = {}
+				b_kenethao = {}
+				b_hongsa = {}
+				b_ngeun = {}
+				b_xienghone = {}
+			}
+			c_xaisomboun = { # 297
+				color={ 195 116 176 }
+				color2={ 255 255 255 }
+				thai_mueang = "Chaisomboun"
+				thai_central = "Chaisomboun"
+				thai_isan = "Chaisomboun"
+				thai_paktai = "Chaisomboun"
+				b_xaysomboun = {
+				thai_mueang = "Chaisomboun"
+				thai_central = "Chaisomboun"
+				thai_isan = "Chaisomboun"
+				thai_paktai = "Chaisomboun"
+				}
+				b_anouvong = {}
+				b_longchaeng = {}
+				b_longxan = {}
+				b_hom = {}
+				b_thathom = {}
+				b_phu_kham = {}
+			}
+		}
+		d_champasak = {
+			color={ 188 90 158 }
+			color2={ 255 255 255 }
+		
+			tonkinese = "Champasack"
+			annamese = "Champasack"
+			cochinchinese = "Champasack"
+			muong = "Champasack"
+			hoa = "Champasack"
+			
+			capital = 308 # c_champasak
+			
+			c_champasak = { # 308
+				color={ 198 80 163 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Champasack"
+				annamese = "Champasack"
+				cochinchinese = "Champasack"
+				muong = "Champasack"
+				hoa = "Champasack"
+				
+				b_phonthong = {}
+				b_champasak = {
+				tonkinese = "Champasack"
+				annamese = "Champasack"
+				cochinchinese = "Champasack"
+				muong = "Champasack"
+				hoa = "Champasack"
+				}
+				b_soukhouma = {}
+				b_mounlapamok = {}
+				b_west_siphandon = {}
+				b_ban_mouang = {}
+				b_ban_nong_deng = {}
+			}
+			c_attapeu = { # 310
+				color={ 104 78 131 }
+				color2={ 255 255 255 }
+				
+				b_xaysetha_2 = {}
+				b_chanthabuly_2 = {}
+				b_hadxayfong_2 = {}
+				b_samakkhixay = {}
+				b_xaythany_2 = {}
+				b_sisattanak_3 = {}
+				b_naxaithong = {}
+			}
+			c_pakse = { # 309
+				color={ 136 89 180 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Pakxe"
+				annamese = "Pakxe"
+				cochinchinese = "Pakxe"
+				muong = "Pakxe"
+				hoa = "Pakxe"
+				
+				b_pak_se = {
+				tonkinese = "Pakxe"
+				annamese = "Pakxe"
+				cochinchinese = "Pakxe"
+				muong = "Pakxe"
+				hoa = "Pakxe"
+				}
+				b_sanasomboun = {}
+				b_bachiangchaleunsouk = {}
+				b_paksong = {}
+				b_pathoumphone = {}
+				b_east_siphandon = {}
+				b_xe_pian = {}
+			}
+			c_salavan = { # 312
+				color={ 141 117 164 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Saravane"
+				annamese = "Saravane"
+				cochinchinese = "Saravane"
+				muong = "Saravane"
+				hoa = "Saravane"
+				
+				b_ta_oy = {}
+				b_toomlarn = {}
+				b_lakhonepheng = {}
+				b_vapy = {}
+				b_khongsedone = {}
+				b_lao_ngarm = {}
+				b_samuoi = {}
+			}
+			c_sekong = { # 311
+				color={ 121 78 162 }
+				color2={ 255 255 255 }
+				
+				hoa = "Xe Kong"
+				
+				b_sekong = {}
+				b_lamam = {}
+				b_kaleum = {}
+				b_dakcheung = {}
+				b_thateng = {}
+				b_dakchung = {}
+				b_bolaven = {}
+			}
+		}
+		d_luang_prabang = {
+			color={ 141 108 148 }
+			color2={ 255 255 255 }
+			
+			cochinchinese = "Luang Phabang"
+			thai_mueang = "Luang Phrabang"
+			thai_central = "Luang Phrabang"
+			thai_isan = "Luang Phrabang"
+			thai_paktai = "Luang Phrabang"
+			capital = 299 # c_luang_prabang
+			
+			c_luang_prabang = { # 299
+				color={ 151 98 153 }
+				color2={ 255 255 255 }
+				
+				cochinchinese = "Luang Phabang"
+				thai_mueang = "Luang Phrabang"
+				thai_central = "Luang Phrabang"
+				thai_isan = "Luang Phrabang"
+				thai_paktai = "Luang Phrabang"
+				b_louangphrabang = {
+				cochinchinese = "Luang Phabang"
+				thai_mueang = "Luang Phrabang"
+				thai_central = "Luang Phrabang"
+				thai_isan = "Luang Phrabang"
+				thai_paktai = "Luang Phrabang"
+				}
+				b_nam_bak = {}
+				b_xiengngeun = {}
+				b_ngoy = {}
+				b_phonxay = {}
+				b_chomphet = {}
+				b_viengkham = {}
+			}
+			c_bokeo = { # 304
+				color={ 176 138 184 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Bò Keo"
+				annamese = "Bò Keo"
+				cochinchinese = "Bò Keo"
+				muong = "Bò Keo"
+				hoa = "Bò Keo"
+				thai_mueang = "Bo Kaeo"
+				thai_central = "Bo Kaeo"
+				thai_isan = "Bo Kaeo"
+				thai_paktai = "Bo Kaeo"
+				
+				b_ban_huayxay = {}
+				b_houaixai = {}
+				b_tonpheung = {}
+				b_meung = {}
+				b_pha = {}
+				b_paktha = {}
+				b_nam_kan = {}
+			}
+			c_houaphan = { # 301
+				color={ 175 89 179 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Huaphanh"
+				annamese = "Huaphanh"
+				cochinchinese = "Huaphanh"
+				muong = "Huaphanh"
+				hoa = "Huaphanh"
+				thai_mueang = "Huaphan"
+				thai_central = "Huaphan"
+				thai_isan = "Huaphan"
+				thai_paktai = "Huaphan"
+				b_xamneua = {}
+				b_xiengkhor = {}
+				b_viengthong = {}
+				b_viengxay = {}
+				b_huameuang = {}
+				b_xamtay = {}
+				b_sop_bao = {}
+			}
+			c_luang_namtha = { # 303
+				color={ 135 95 137 }
+				color2={ 255 255 255 }
+				
+				b_luang_namtha = {}
+				b_namtha = {}
+				b_mueang_sing = {}
+				b_long = {}
+				b_viengphoukha = {}
+				b_nale = {}
+				b_nam_ha = {}
+			}
+			c_oudomxay = { # 300
+				color={ 148 111 156 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Oudômxai"
+				annamese = "Oudômxai"
+				cochinchinese = "Oudômxai"
+				muong = "Oudômxai"
+				hoa = "Muang Xai"
+				thai_mueang = "Udomsai"
+				thai_central = "Udomsai"
+				thai_isan = "Udomsai"
+				thai_paktai = "Udomsai"
+				b_xay = {}
+				b_houne = {}
+				b_namo = {}
+				b_nga = {}
+				b_beng = {}
+				b_pakbeng = {}
+				b_la = {}
+			}
+			c_phongsali = { # 302
+				color={ 170 131 172 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Phôngsali"
+				annamese = "Phôngsali"
+				cochinchinese = "Phôngsali"
+				muong = "Phôngsali"
+				hoa = "Phôngsali"
+				
+				b_phongsaly = {}
+				b_may = {}
+				b_khoua = {}
+				b_samphanh = {}
+				b_boun_neua = {}
+				b_yot_ou = {}
+				b_boun_tay = {}
+			}
+		}
+		d_savannakhet = {
+			color={ 160 132 171 }
+			color2={ 255 255 255 }
+			
+			tonkinese = "Xa Vannaket"
+			annamese = "Xa Vannaket"
+			cochinchinese = "Xa Vannaket"
+			muong = "Xa Vannaket"
+			hoa = "Xa Vannaket"
+			
+			capital = 305 # c_khammouane
+			
+			c_khammouane = { # 305
+				color={ 170 122 176 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Kham Muon"
+				annamese = "Kham Muon"
+				cochinchinese = "Kham Muon"
+				muong = "Kham Muon"
+				hoa = "Kham Muon"
+				thai_mueang = "Khammouan"
+				thai_central = "Khammouan"
+				thai_isan = "Khammouan"
+				thai_paktai = "Khammouan"
+				
+				b_thakhek = {
+				thai_mueang = "Thakaek"
+				thai_central = "Thakaek"
+				thai_isan = "Thakaek"
+				thai_paktai = "Thakaek"
+				}
+				b_mahaxay = {}
+				b_nongbouk = {}
+				b_hinboun = {}
+				b_nhommalath = {}
+				b_boulapha = {}
+				b_nakai = {}
+			}
+			c_bolikhamsai = { # 306
+				color={ 199 122 202 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Borikhamxay"
+				annamese = "Borikhamxay"
+				cochinchinese = "Borikhamxay"
+				muong = "Borikhamxay"
+				hoa = "Borikhamxay"
+				
+				b_paksan = {}
+				b_thaphabath = {}
+				b_pakkading = {}
+				b_bolikhanh = {}
+				b_khamkeut = {}
+				b_viengthong_2 = {}
+				b_xaichamphon = {}
+			}
+			c_savannakhet = { # 307
+				color={ 156 123 187 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Xa Vannaket"
+				annamese = "Xa Vannaket"
+				cochinchinese = "Xa Vannaket"
+				muong = "Xa Vannaket"
+				hoa = "Xa Vannaket"
+				
+				b_kaysone_phomvihane = {}
+				b_outhoumphone = {}
+				b_atsaphangthong = {}
+				b_phine = {}
+				b_sepone = {}
+				b_nong = {}
+				b_thapangthong = {}
+			}
+		}
+		d_xiangkhouang = {
+			color={ 164 120 171 }
+			color2={ 255 255 255 }
+			
+			tonkinese = "Xiêng-khoang"
+			annamese = "Xiêng-khoang"
+			cochinchinese = "Xiêng-khoang"
+			muong = "Xiêng-khoang"
+			hoa = "Xiêng-khoang"
+			thai_mueang = "Chiang Khwang"
+			thai_central = "Chiang Khwang"
+			thai_isan = "Chiang Khwang"
+			thai_paktai = "Chiang Khwang"
+			capital = 298 # c_xiangkhouang
+			
+			c_xiangkhouang = { # 298
+				color={ 174 110 176 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Xiêng-khoang"
+				annamese = "Xiêng-khoang"
+				cochinchinese = "Xiêng-khoang"
+				muong = "Xiêng-khoang"
+				hoa = "Xiêng-khoang"
+				thai_mueang = "Chiang Khwang"
+				thai_central = "Chiang Khwang"
+				thai_isan = "Chiang Khwang"
+				thai_paktai = "Chiang Khwang"
+				b_phonsavan = {}
+				b_kham = {}
+				b_nong_het = {}
+				b_khoune = {}
+				b_mok_may = {}
+				b_phou_kout = {}
+				b_phaxay = {}
+			}
+		}
+	}
+	k_kampuchea = {
+		color={ 155 238 132 }
+		color2={ 255 255 255 }
+		
+		capital = 313 # c_phnom_penh
+		culture = khmer
+		
+		tonkinese = "Campuchia"
+		annamese = "Campuchia"
+		cochinchinese = "Campuchia"
+		muong = "Campuchia"
+		hoa = "Cao Miên"
+		thai_central = "Kampucha"
+		thai_paktai = "Kampucha"
+		thai_isan = "Kampucha"
+		
+		d_phnom_penh = {
+			color={ 175 218 142 }
+			color2={ 255 255 255 }
+			
+			tonkinese = "Nam Vang"
+			annamese = "Nam Vang"
+			cochinchinese = "Nam Vinh"
+			muong = "Phnôm Pênh"
+			hoa = "Kim Biên"
+			thai_central = "Phanom Pen"
+			
+			capital = 313 # c_phnom_penh
+			
+			c_phnom_penh = { # 313
+				color={ 185 208 147 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Nam Vang"
+				annamese = "Nam Vang"
+				cochinchinese = "Nam Vinh"
+				muong = "Phnôm Pênh"
+				hoa = "Kim Biên"
+				laotian = "Phanom Pen"
+				thai_central = "Phanom Phen"
+				thai_paktai = "Phanom Phen"
+				thai_isan = "Phanom Phen"
+				
+				
+				b_dangkao = {}
+				b_russey_keo = {}
+				b_por_senchey = {}
+				b_chamkar_mon = {}
+				b_tuol_kork = {}
+				b_sen_sok = {}
+				b_doun_penh = {}
+			}
+			c_prey_veng = { # 315
+				color={ 158 167 144 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Nam Ninh"
+				annamese = "Nam Ninh"
+				cochinchinese = "Nam Ninh"
+				laotian = "Prey Viang"
+				thai_central = "Prai Vang"
+				thai_paktai = "Prai Vang"
+				thai_isan = "Prai Vang"
+				
+				b_prey_veng = {}
+				b_kamchay_mear = {}
+				b_ba_phnum = {}
+				b_kanhchriech = {}
+				b_preah_sdach = {}
+				b_me_sang = {}
+				b_peam_chor = {}
+			}
+			c_south_kandal = { # 314
+				color={ 163 183 130 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Ky Tô"
+				annamese = "Ky Tô"
+				cochinchinese = "Ky Tô"
+				muong = "Ky Tô"
+				hoa = "Ky Tô"
+				laotian = "Kandarn"
+				thai_central = "Kandarn"
+				thai_paktai = "Kandarn"
+				thai_isan = "Kandarn"
+				b_kandal = {}
+				b_ta_khmau = {}
+				b_steung_kandal = {}
+				b_sang = {}
+				b_koh_thom = {}
+				b_leuk_daek = {}
+				b_kien_sway = {}
+			}
+			c_sway_rieng = { # 316
+				color={ 148 152 99 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Tuy Lap"
+				annamese = "Xvây Riêng"
+				cochinchinese = "Xoài Riêng"
+				muong = "Xvây Riêng"
+				hoa = "Tuy Lap"
+				laotian = "Sway Riang"
+				thai_central = "Sway Riang"
+				thai_paktai = "Sway Riang"
+				thai_isan = "Sway Riang"
+				
+				b_svay_rieng = {
+				tonkinese = "Tuy Lap"
+				annamese = "Xvây Riêng"
+				cochinchinese = "Xoài Riêng"
+				muong = "Xvây Riêng"
+				hoa = "Tuy Lap"
+				}
+				b_bavet = {}
+				b_chanthrea = {}
+				b_kampong_rou = {}
+				b_romdoul = {}
+				b_romeas_haek = {}
+				b_svay_chrom = {}
+			}
+			c_tbong_khmum = { # 317
+				color={ 114 118 96 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Bình Xiêm"
+				hoa = "Bình Xiêm"
+				laotian = "Tabong Khamum"
+				thai_central = "Tabong Khamum"
+				thai_paktai = "Tabong Khamum"
+				thai_isan = "Tabong Khamum"
+				
+				
+				b_tboung_khmum = {
+				laotian = "Tabong Khamum"
+				thai_central = "Tabong Khamum"
+				thai_paktai = "Tabong Khamum"
+				thai_isan = "Tabong Khamum"
+				}
+				b_suong = {}
+				b_memot = {}
+				b_ou_reang_ov = {}
+				b_ponhea_kraek = {}
+				b_dambae = {}
+				b_krouch_chhmar = {}
+			}
+		}
+		d_koh_trol = {
+			color={ 94 73 46 }
+			color2={ 255 255 255 }
+			
+			tonkinese = "Phú Quoc"
+			annamese = "Phú Quoc"
+			cochinchinese = "Phú Quoc"
+			muong = "Ðao Ngoc"
+			hoa = "Phú Quoc"
+			
+			capital = 323 # c_phu_quoc
+			
+			c_phu_quoc = { # 323
+				color={ 84 83 41 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Phú Quoc"
+				annamese = "Phú Quoc"
+				cochinchinese = "Phú Quoc"
+				muong = "Ðao Ngoc"
+				hoa = "Phú Quoc"
+				
+				b_duong_dhong = {}
+				b_cua_can = {}
+				b_an_thoi = {}
+				b_duong_to = {}
+				b_tho_chau = {}
+				b_bai_thom = {}
+				b_ham_ninh = {}
+			}
+		}
+		d_kratie = {
+			color={ 131 115 94 }
+			color2={ 255 255 255 }
+			
+			tonkinese = "Can Ché"
+			annamese = "Can Ché"
+			cochinchinese = "Kratié"
+			muong = "Can Ché"
+			hoa = "Can Ché"
+			laotian = "Kajae"
+			thai_central = "Krajae"
+			thai_paktai = "Krajae"
+			thai_isan = "Krajae"
+			
+			capital = 324 # c_kratie
+			
+			c_kratie = { # 324
+				color={ 121 125 89 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Can Ché"
+				annamese = "Can Ché"
+				cochinchinese = "Kratié"
+				muong = "Can Ché"
+				hoa = "Can Ché"
+				laotian = "Kajae"
+				thai_central = "Krajae"
+				thai_paktai = "Krajae"
+				thai_isan = "Krajae"
+				
+				b_kratie = {
+				tonkinese = "Can Ché"
+				annamese = "Can Ché"
+				cochinchinese = "Kratié"
+				muong = "Can Ché"
+				laotian = "Kraje"
+				thai_central = "Krajae"
+				thai_paktai = "Krajae"
+				thai_isan = "Krajae"
+				hoa = "Can Ché"
+				}
+				b_chhloung = {}
+				b_prek_prasab = {}
+				b_sambour = {}
+				b_snuol = {}
+				b_chet_borey = {}
+				b_ou_ruessei = {}
+			}
+			c_mondulkiri = { # 326
+				color={ 144 161 95 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Ngoc Bài"
+				annamese = "Ngoc Bài"
+				cochinchinese = "Ngoc Bài"
+				muong = "Ngoc Bài"
+				hoa = "Ngoc Bài"
+				thai_central = "Monthonkiri"
+				thai_paktai = "Monthonkiri"
+				thai_isan = "Monthonkiri"
+				
+				b_senmonorom = {}
+				b_kaev_seima = {}
+				b_kaoh_nheaek = {}
+				b_ou_reang = {}
+				b_pechr_chenda = {}
+				b_phnom_nam_lyr = {}
+				b_bou_sra = {}
+			}
+			c_ratanakiri = { # 327
+				color={ 144 155 113 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Vong Van"
+				annamese = "Vong Van"
+				cochinchinese = "Vong Van"
+				muong = "Vong Van"
+				hoa = "Vong Van"
+				laotian = "Rattanakiri"
+				thai_central = "Rattanakiri"
+				thai_paktai = "Rattanakiri"
+				thai_isan = "Rattanakiri"
+				
+				b_banlung_municipality = {}
+				b_bar_kaev = {}
+				b_koun_mom = {}
+				b_lumphat = {}
+				b_ou_chum = {}
+				b_ou_ya_dav = {}
+				b_veun_sai = {}
+			}
+			c_stung_treng = { # 325
+				color={ 159 165 115 }
+				color2={ 255 255 255 }
+				
+				hoa = "Xieng Teng"
+				laotian = "Xieng Tang"
+				thai_central = "Chiang Tang"
+				thai_paktai = "Chiang Tang"
+				thai_isan = "Chiang Tang"
+				b_stung_treng = {}
+				b_sesan = {}
+				b_siem_bouk = {}
+				b_siem_pang = {}
+				b_thala_barivat = {}
+				b_borei_osvay_sen_chey = {}
+				b_samakki = {}
+			}
+		}
+		d_oudong = {
+			color={ 135 114 94 }
+			color2={ 255 255 255 }
+			
+			tonkinese = "Ô Ðông"
+			annamese = "Ô Ðông"
+			cochinchinese = "Ô Ðông"
+			muong = "Ô Ðông"
+			hoa = "Ô Ðông"
+			laotian = "Udong"
+			thai_central = "Udorn Michai"
+			thai_paktai = "Udorn Michai"
+			thai_isan = "Udorn Michai"
+			
+			capital = 318 # c_kampong_speu
+			
+			c_kampong_speu = { # 318
+				color={ 125 124 89 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Tam Vu"
+				annamese = "Tam Vu"
+				cochinchinese = "Tam Vu"
+				muong = "Tam Vu"
+				hoa = "Tam Vu"
+				laotian = "Kampong Sepi"
+				thai_central = "Kampong Spue"
+				thai_paktai = "Kampong Spue"
+				thai_isan = "Kampong Spue"
+				
+				b_chbar_mon = {}
+				b_basedth = {}
+				b_oudong = {}
+				b_phnom_sruoch = {}
+				b_kong_pisei = {}
+				b_aoral = {}
+				b_thpong = {}
+			}
+			c_kampong_som = { # 320
+				color={ 157 155 65 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Xihanúcvin"
+				annamese = "Xihanúcvin"
+				cochinchinese = "Xihanúcvin"
+				muong = "Xihanúcvin"
+				hoa = "Xihanúcvin"
+				
+				b_sihanoukville = {
+				tonkinese = "Xihanúcvin"
+				annamese = "Xihanúcvin"
+				cochinchinese = "Xihanúcvin"
+				muong = "Xihanúcvin"
+				hoa = "Xihanúcvin"
+				}
+				b_mittakpheap = {}
+				b_prey_nob = {}
+				b_stueng_hav = {}
+				b_kampong_seila = {}
+				b_koh_russei = {}
+				b_koh_rong = {}
+			}
+			c_kampot = { # 321
+				color={ 173 171 88 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Can Bot"
+				annamese = "Can Bot"
+				cochinchinese = "Can Bot"
+				muong = "Can Bot"
+				hoa = "Can Bot"
+				thai_central = "Kamport"
+				thai_paktai = "Kamport"
+				thai_isan = "Kamport"
+				b_kampot = {
+				tonkinese = "Can Bot"
+				annamese = "Can Bot"
+				cochinchinese = "Can Bot"
+				muong = "Can Bot"
+				hoa = "Can Bot"
+				thai_central = "Kamport"
+				thai_paktai = "Kamport"
+				thai_isan = "Kamport"
+				}
+				b_tuek_chhou = {}
+				b_ket = {}
+				b_banteay_meas = {}
+				b_chhouk = {}
+				b_angkor_chey = {}
+				b_dang_tong = {}
+			}
+			c_koh_kong = { # 319
+				color={ 136 135 90 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Khai Biên"
+				annamese = "Kaôh Kong"
+				cochinchinese = "Kaôh Kong"
+				muong = "Kaôh Kong"
+				hoa = "Khai Biên"
+				thai_central = "Patchan Khiri Khet"
+				b_khemarak_phoumin = {}
+				b_thma_bang = {}
+				b_koh_kong = {
+				thai_central = "Patchan Khiri Khet"
+				}
+				b_mondol_seima = {}
+				b_srae_ambel = {}
+				b_botum_sakor = {}
+				b_kiri_sakor = {}
+			}
+			c_takeo = { # 322
+				color={ 111 110 62 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Truc Sam"
+				annamese = "Tà Kéo"
+				cochinchinese = "Tà Kéo"
+				muong = "Tà Kéo"
+				hoa = "Truc Sam"
+				laotian = "Ta Kaeo"
+				thai_central = "Ta Kaeo"
+				thai_paktai = "Ta Kaeo"
+				thai_isan = "Ta Kaeo"
+				
+				b_doun_kaev = {}
+				b_tram_kak = {}
+				b_angkor_borei = {}
+				b_bati = {}
+				b_kiri_vong = {}
+				b_prey_kabbas = {}
+				b_treang = {}
+			}
+		}
+		d_pursat = {
+			color={ 156 171 111 }
+			color2={ 255 255 255 }
+			
+			tonkinese = "Gò Sat"
+			annamese = "Puoc-xát"
+			cochinchinese = "Phúc-túc"
+			muong = "Phúc-túc"
+			hoa = "Gò Sat"
+			laotian = "Phosat"
+			thai_central = "Pothisat"
+			thai_paktai = "Pothisat"
+			thai_isan = "Pothisat"
+			
+			capital = 333 # c_pursat
+			
+			c_pursat = { # 333
+				color={ 166 161 116 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Gò Sat"
+				annamese = "Puoc-xát"
+				cochinchinese = "Phúc-túc"
+				muong = "Phúc-túc"
+				hoa = "Gò Sat"
+				laotian = "Phosat"
+				thai_central = "Pothisat"
+				thai_paktai = "Pothisat"
+				thai_isan = "Pothisat"
+				b_pursat = {
+				tonkinese = "Gò Sat"
+				annamese = "Puoc-xát"
+				cochinchinese = "Phúc-túc"
+				muong = "Phúc-túc"
+				hoa = "Gò Sat"
+				laotian = "Phosat"
+				thai_central = "Pothisat"
+				thai_paktai = "Pothisat"
+				thai_isan = "Pothisat"
+				}
+				b_bakan = {}
+				b_kandieng = {}
+				b_veal_veang = {}
+				b_krakor = {}
+				b_phnum_kravanh = {}
+				b_talou_senchey = {}
+			}
+			c_kampong_cham = { # 336
+				color={ 153 173 66 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Lu An"
+				hoa = "Lee Anh"
+				
+				b_kampong_cham = {
+				tonkinese = "Lu An"
+				hoa = "Lee Anh"
+				}
+				b_cheung_prey = {}
+				b_kang_meas = {}
+				b_kampong_siem = {}
+				b_prey_chhor = {}
+				b_chamkar_leu = {}
+				b_steung_trang = {}
+			}
+			c_kampong_chhang = { # 335
+				color={ 145 151 98 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Ý Di"
+				hoa = "Yi De"
+				laotian = "Kampong Chabang"
+				thai_central = "Kampong Chabang"
+				thai_paktai = "Kampong Chabang"
+				thai_isan = "Kampong Chabang"
+				
+				b_kampong_chhnang = {
+				laotian = "Kampong Chabang"
+				thai_central = "Kampong Chabang"
+				thai_paktai = "Kampong Chabang"
+				thai_isan = "Kampong Chabang"
+				}
+				b_kampong_leng = {}
+				b_kampong_tralach = {}
+				b_samakki_meanchey = {}
+				b_teuk_phos = {}
+				b_rolea_bier = {}
+				b_baribo = {}
+			}
+			c_kampong_thom = { # 334
+				color={ 129 134 90 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Hai Ðông"
+				hoa = "Hai Ðông"
+				
+				b_steung_saen = {}
+				b_prasat_balangk = {}
+				b_prasat_sambour = {}
+				b_kampong_svay = {}
+				b_baray = {}
+				b_sandaan = {}
+				b_santuk = {}
+			}
+		}
+		d_siem_reap = {
+			color={ 217 247 147 }
+			color2={ 255 255 255 }
+			
+			tonkinese = "Xiêm Riep"
+			annamese = "Xiêm Riep"
+			cochinchinese = "Xiêm Riep"
+			muong = "Xiêm Riep"
+			hoa = "Xiêm Riep"
+			laotian = "Xiem Riap"
+			thai_mueang = "Siemmarat"
+			thai_central = "Siam Nakhon"
+			thai_paktai = "Siemmarat"
+			thai_isan = "Siemmarat"
+			
+			capital = 328 # c_siem_reap
+			
+			c_siem_reap = { # 328
+				color={ 227 237 152 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Xiêm Riep"
+				annamese = "Xiêm Riep"
+				cochinchinese = "Xiêm Riep"
+				muong = "Xiêm Riep"
+				hoa = "Xiêm Riep"
+				laotian = "Xiem Riap"
+				thai_mueang = "Siemmarat"
+				thai_central = "Siam Nakhon"
+				thai_paktai = "Siemmarat"
+				thai_isan = "Siemmarat"
+				
+				b_siem_reap = {
+				tonkinese = "Xiêm Riep"
+				annamese = "Xiêm Riep"
+				cochinchinese = "Xiêm Riep"
+				muong = "Xiêm Riep"
+				hoa = "Xiêm Riep"
+				laotian = "Xiem Riap"
+				thai_mueang = "Siemmarat"
+				thai_central = "Siam Nakhon"
+				thai_paktai = "Siemmarat"
+				thai_isan = "Siemmarat"
+				}
+				b_angkor_thom = {}
+				b_prasat_bakong = {}
+				b_chi_kraeng = {}
+				b_banteay_srei = {}
+				b_sout_nikom = {}
+				b_chi_kraeng_2 = {}
+			}
+			c_banteay_meanchey = { # 331
+				color={ 192 202 120 }
+				color2={ 255 255 255 }
+				thai_mueang = "Bantay Meechai"
+				thai_central = "Bantay Meechai"
+				thai_paktai = "Bantay Meechai"
+				thai_isan = "Bantay Meechai"
+				b_poipet = {}
+				b_serei_saophoan = {}
+				b_ou_chrov = {}
+				b_mongkol_borey = {}
+				b_svay_chek = {}
+				b_malai = {}
+				b_phnom_srok = {}
+			}
+			c_battambang = { # 332
+				color={ 213 228 100 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Hai Tây"
+				hoa = "Hai Tây"
+				laotian = "Battambong"
+				thai_mueang = "Phra Tabong"
+				thai_central = "Phra Tabong"
+				thai_paktai = "Phra Tabong"
+				thai_isan = "Phra Tabong"
+				
+				b_battambang = {
+				tonkinese = "Hai Tây"
+				hoa = "Hai Tây"
+				laotian = "Battambong"
+				thai_mueang = "Phra Tabong"
+				thai_central = "Phra Tabong"
+				thai_paktai = "Phra Tabong"
+				thai_isan = "Phra Tabong"
+				}
+				b_phnom_proek = {}
+				b_banan = {}
+				b_pailin = {}
+				b_thma_koul = {}
+				b_bavel = {}
+				b_aek_phnom = {}
+			}
+			c_oddar_meanchey = { # 330
+				color={ 200 214 97 }
+				color2={ 255 255 255 }
+				thai_mueang = "Udorn Michai"
+				thai_central = "Udorn Michai"
+				thai_paktai = "Udorn Michai"
+				thai_isan = "Udorn Michai"
+				b_samraong = {
+				thai_mueang = "Samrong"
+				thai_central = "Samrong"
+				thai_paktai = "Samrong"
+				thai_isan = "Samrong"
+				}
+				b_anlong_veng = {}
+				b_banteay_ampil = {}
+				b_chong_kal = {}
+				b_trapeang_prasat = {}
+				b_o_smach = {}
+				b_samraong_saenchey = {}
+			}
+			c_preah_vihear = { # 329
+				color={ 203 212 138 }
+				color2={ 255 255 255 }
+				
+				tonkinese = "Pret Vi-hia"
+				annamese = "Pret Vi-hia"
+				cochinchinese = "Pret Vi-hia"
+				muong = "Pret Vi-hia"
+				hoa = "Pret Vi-hia"
+				thai_mueang = "Phra Viharn"
+				thai_central = "Phra Viharn"
+				thai_paktai = "Phra Viharn"
+				thai_isan = "Phra Viharn"
+				
+				b_preah_vihear = {
+				tonkinese = "Pret Vi-hia"
+				annamese = "Pret Vi-hia"
+				cochinchinese = "Pret Vi-hia"
+				muong = "Pret Vi-hia"
+				hoa = "Pret Vi-hia"
+				thai_mueang = "Phra Viharn"
+				thai_central = "Phra Viharn"
+				thai_paktai = "Phra Viharn"
+				thai_isan = "Phra Viharn"
+				}
+				b_choam_khsant = {}
+				b_chhaeb = {}
+				b_chey_saen = {}
+				b_kuleaen = {}
+				b_rovieng = {}
+				b_sangkom_thmei = {}
+			}
+		}
+	}
+}

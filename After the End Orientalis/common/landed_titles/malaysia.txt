@@ -1,0 +1,810 @@
+e_malaysia = {
+	color={ 40 46 161 }
+	color2={ 255 255 20 }
+	
+	capital = 337 # c_kuala_lumpur
+	culture = melayu
+	
+	k_selangor = {
+		color={ 225 192 60 }
+		color2={ 255 255 255 }
+		
+		capital = 337 # c_kuala_lumpur
+		culture = melayu
+		
+		d_klang = {
+			color={ 245 172 70 }
+			color2={ 255 255 255 }
+
+			capital = 337 # c_kuala_lumpur
+			
+			c_kuala_lumpur = { # 337
+				color={ 255 162 75 }
+				color2={ 255 255 255 }
+				holy_site = sunni
+				b_istana_negara = {}
+				b_petaling_jaya = {}
+				b_masjid_negara = {}
+				b_hulu_langat = {}
+				b_bandar_baru_bangi = {}
+				b_masjid_jamek = {}
+				b_shah_alam = {}
+			}
+			c_klang = { # 338
+				color={ 236 130 31 }
+				color2={ 255 255 255 }
+				
+				b_klang = {}
+				b_pelabuhan_klang = {}
+				b_masjid_bandar_diraja_klang = {}
+				b_pandamaran = {}
+				b_kapar = {}
+				b_meru = {}
+				b_bandar_sultan_sulaiman = {}
+			}
+			c_sepang = { # 339
+				color={ 238 140 48 }
+				color2={ 255 255 255 }
+				
+				b_selak_tinggi = {}
+				b_putrajaya = {}
+				b_sepang = {}
+				b_cyberjaya = {}
+				b_dengkil = {}
+				b_pulau_meranti = {}
+				b_puchong = {}
+			}
+		}
+		d_perak_selatan = {
+			color={ 208 156 60 }
+			color2={ 255 255 255 }
+
+			capital = 343 # c_kinta
+			
+			c_kinta = { # 343
+				color={ 218 146 65 }
+				color2={ 255 255 255 }
+				
+				b_batu_gajah = {}
+				b_ipoh = {}
+				b_masjid_sultan_idris_shah = {}
+				b_simpang_pulai = {}
+				b_tanjung_tualang = {}
+				b_kampar = {}
+				b_teja = {}
+			}
+			c_batang_padang = { # 344
+				color={ 210 137 63 }
+				color2={ 255 255 255 }
+				
+				b_tapah = {}
+				b_bidor = {}
+				b_sungkai = {}
+				b_tanjung_malim = {}
+				b_chenderiang = {}
+				b_proton = {}
+				b_slim = {}
+			}
+			c_hilir_perak = { # 345
+				color={ 213 150 73 }
+				color2={ 255 255 255 }
+				
+				b_teluk_intan = {}
+				b_bagan_datuk = {}
+				b_langkap = {}
+				b_sungai_durian = {}
+				b_hutan_melintang = {}
+				b_sungai_manik = {}
+				b_rungkup = {}
+			}
+			c_manjung = { # 346
+				color={ 224 139 52 }
+				color2={ 255 255 255 }
+				
+				b_seri_manjung = {}
+				b_sitiawan = {}
+				b_seri_iskandar = {}
+				b_lumut = {}
+				b_parit = {}
+				b_ayer_tawar = {}
+				b_pantai_remis = {}
+			}
+		}
+		d_selangor_utara = {
+			color={ 230 168 78 }
+			color2={ 255 255 255 }
+		
+			capital = 340 # c_kuala_selangor
+			
+			c_kuala_selangor = { # 340
+				color={ 240 158 83 }
+				color2={ 255 255 255 }
+				
+				b_kuala_selangor = {}
+				b_tanjung_karang = {}
+				b_bestari_jaya = {}
+				b_ijok = {}
+				b_kampung_kuantan = {}
+				b_jeram = {}
+				b_api_api = {}
+			}
+			c_hulu_selangor = { # 342
+				color={ 241 164 94 }
+				color2={ 255 255 255 }
+				
+				b_kuala_kubu_bharu = {}
+				b_ampang_pechah = {}
+				b_batang_kali = {}
+				b_rasa = {}
+				b_kerling = {}
+				b_kalumpang = {}
+				b_ulu_yam = {}
+			}
+			c_sabak_bernam = { # 341
+				color={ 242 170 106 }
+				color2={ 255 255 255 }
+				
+				b_sabak = {}
+				b_sungai_besar = {}
+				b_sekinchan = {}
+				b_bagan_nakhoda_omar = {}
+				b_sungai_panjang = {}
+				b_panchang_bendena = {}
+				b_pasir_panjang = {}
+			}
+		}
+	}
+	k_johor = {
+		color={ 139 253 94 }
+		color2={ 255 255 255 }
+		
+		capital = 347 # c_johor_bahru
+		culture = melayu
+		thai_central = "Yahor"
+		thai_isan = "Yahor"
+		d_johor = {
+			color={ 119 17 84 }
+			color2={ 255 255 255 }
+			
+			capital = 347 # c_johor_bahru
+			thai_central = "Yahor"
+			thai_isan = "Yahor"
+			c_johor_bahru = { # 347
+				color={ 109 27 79 }
+				color2={ 255 255 255 }
+				
+				b_iskandar_puteri = {}
+				b_johor_bahru = {}
+				b_pulai = {}
+				b_tebrau = {}
+				b_plentong = {}
+				b_jelutong = {}
+				b_pasir_gudang = {}
+			}
+			c_kota_tinggi = { # 348
+				color={ 113 32 83 }
+				color2={ 255 255 255 }
+				
+				b_kota_tinggi = {}
+				b_pengerang = {}
+				b_johor_lama = {}
+				b_penawar = {}
+				b_tenggara = {}
+				b_desaru = {}
+				b_sungai_rengit = {}
+			}
+			c_kulai = { # 350
+				color={ 123 49 96 }
+				color2={ 255 255 255 }
+				
+				b_kulai = {}
+				b_pontian_kechil = {}
+				b_senai = {}
+				b_bukit_batu = {}
+				b_saleng = {}
+				b_teluk_kerang = {}
+				b_pekan_nanas = {}
+			}
+			c_mersing = { # 349
+				color={ 116 38 88 }
+				color2={ 255 255 255 }
+				
+				b_mersing = {}
+				b_jemaluang = {}
+				b_endau = {}
+				b_tenggaroh = {}
+				b_lenggor = {}
+				b_penyabong = {}
+				b_tenglu = {}
+			}
+		}
+		d_batu_pahat = {
+			color={ 152 68 123 }
+			color2={ 255 255 255 }
+			
+			capital = 351 # c_batu_pahat
+			
+			c_batu_pahat = { # 351
+				color={ 142 78 118 }
+				color2={ 255 255 255 }
+				
+				b_batu_pahat = {}
+				b_yong_peng = {}
+				b_rengit = {}
+				b_sri_gading = {}
+				b_senggarang = {}
+				b_semerah = {}
+				b_sri_medan = {}
+			}
+			c_kluang = { # 352
+				color={ 131 61 105 }
+				color2={ 255 255 255 }
+				
+				b_kluang = {}
+				b_renggam = {}
+				b_ayer_hitam = {}
+				b_kahang = {}
+				b_paloh = {}
+				b_layang_layang = {}
+				b_machap = {}
+			}
+			c_muar = { # 353
+				color={ 156 63 121 }
+				color2={ 255 255 255 }
+				
+				b_muar = {}
+				b_tangkak = {}
+				b_parit_jawa = {}
+				b_segamat = {}
+				b_labis = {}
+				b_pogoh = {}
+				b_bukit_kepong = {}
+			}
+		}
+		d_kepulauan_riau = {
+			color={ 117 40 90 }
+			color2={ 255 255 255 }
+			
+			capital = 359 # c_batam
+			
+			c_batam = { # 359
+				color={ 107 50 85 }
+				color2={ 255 255 255 }
+				
+				b_sagulung = {}
+				b_batam = {}
+				b_tanjung_balai = {}
+				b_tanjung_pinang = {}
+				b_bandar_seri_bentan = {}
+				b_batu_aji = {}
+				b_sekupang = {}
+			}
+			c_kepulauan_anambas = { # 361
+				color={ 101 60 109 }
+				color2={ 255 255 255 }
+				
+				b_tarempa = {}
+				b_palmatak = {}
+				b_jemaja = {}
+				b_mubur = {}
+				b_kiabu = {}
+				b_letung = {}
+				b_nyamuk = {}
+			}
+			c_lingga = { # 360
+				color={ 114 51 86 }
+				color2={ 255 255 255 }
+				
+				b_daik = {}
+				b_dabo = {}
+				b_senayang = {}
+				b_limas = {}
+				b_jago = {}
+				b_raya = {}
+				b_pancur = {}
+			}
+			c_natuna = { # 362
+				color={ 110 63 78 }
+				color2={ 255 255 255 }
+				
+				b_ranai = {}
+				b_bandarsyah = {}
+				b_sedanau = {}
+				b_sabang_barat = {}
+				b_pulau_tiga = {}
+				b_serasan = {}
+				b_pengadah = {}
+			}
+		}
+		d_melaka = {
+			color={ 148 65 93 }
+			color2={ 255 255 255 }
+			
+			capital = 354 # c_melaka
+			
+			thai_central = "Malaka"
+			thai_isan = "Malaka"
+			c_melaka = { # 354
+				color={ 138 75 88 }
+				color2={ 255 255 255 }
+				thai_central = "Malaka"
+				thai_isan = "Malaka"
+				b_melaka = {
+				thai_central = "Malaka"
+				thai_isan = "Malaka"
+				}
+				b_ayer_keroh = {}
+				b_masjid_al_azim = {}
+				b_sungai_udang = {}
+				b_tanjung_kling = {}
+				b_cheng = {}
+				b_jasin = {}
+			}
+			c_alor_gajah = { # 355
+				color={ 135 69 93 }
+				color2={ 255 255 255 }
+				
+				b_alor_gajah = {}
+				b_kuala_sungai = {}
+				b_masjid_tanah = {}
+				b_pulau_sebang = {}
+				b_durian_tunggal = {}
+				b_melaka_pindah = {}
+				b_hang_tuah = {}
+			}
+		}
+		d_negeri_sembilan = {
+			color={ 147 51 87 }
+			color2={ 255 255 255 }
+			
+			capital = 356 # c_seremban
+			
+			c_seremban = { # 356
+				color={ 137 61 82 }
+				color2={ 255 255 255 }
+				
+				b_seremban = {}
+				b_nilai = {}
+				b_senawang = {}
+				b_port_dickson = {}
+				b_rembau = {}
+				b_jimah = {}
+				b_lenggeng = {}
+			}
+			c_kuala_pilah = { # 357
+				color={ 134 63 93 }
+				color2={ 255 255 255 }
+				
+				b_seri_menanti = {}
+				b_kuala_pilah = {}
+				b_kuala_klawang = {}
+				b_juasseh = {}
+				b_simpang_pertang = {}
+				b_johol = {}
+				b_kepis = {}
+			}
+			c_tampin = { # 358
+				color={ 129 50 84 }
+				color2={ 255 255 255 }
+				
+				b_bandar_seri_jempol = {}
+				b_tampin = {}
+				b_bahau = {}
+				b_parit_sulong = {}
+				b_rompin = {}
+				b_serting_ulu = {}
+				b_gemencheh = {}
+			}
+		}
+	}
+	k_kelantan = {
+		color={ 176 154 105 }
+		color2={ 255 255 255 }
+		
+		capital = 373 # c_kota_bharu
+		culture = kelantanese
+		thai_central = "Kalantan"
+		thai_isan = "Kalantan"
+		d_kelantan = {
+			color={ 196 134 115 }
+			color2={ 255 255 255 }
+			
+			capital = 373 # c_kota_bharu
+			thai_central = "Kalantan"
+			thai_isan = "Kalantan"
+			c_kota_bharu = { # 373
+				color={ 206 124 120 }
+				color2={ 255 255 255 }
+				
+				b_istana_jahar = {}
+				b_kota_bharu = {}
+				b_masjid_kampung_laut = {}
+				b_tumpat = {}
+				b_pasir_mas = {}
+				b_wakaf_bharu = {}
+				b_rantau_pajang = {}
+			}
+			c_bachok = { # 374
+				color={ 219 143 152 }
+				color2={ 255 255 255 }
+				
+				b_bachok = {}
+				b_pasir_puteh = {}
+				b_perupok = {}
+				b_semerak = {}
+				b_gunong = {}
+				b_bukit_jawa = {}
+				b_bator = {}
+			}
+			c_gua_musang = { # 376
+				color={ 238 143 145 }
+				color2={ 255 255 255 }
+				
+				b_gua_musang = {}
+				b_lojing = {}
+				b_galas = {}
+				b_chiku = {}
+				b_bertam = {}
+				b_nenggiri = {}
+				b_paloh_2 = {}
+			}
+			c_tanah_merah = { # 375
+				color={ 206 143 120 }
+				color2={ 255 255 255 }
+				
+				b_tanah_merah = {}
+				b_machang = {}
+				b_masjid_bandar_machang = {}
+				b_kuala_krai = {}
+				b_manek_urai = {}
+				b_jeli = {}
+				b_kuala_balah = {}
+			}
+		}
+		d_pahang_dalaman = {
+			color={ 207 150 125 }
+			color2={ 255 255 255 }
+			
+			capital = 377 # c_raub
+			
+			c_raub = { # 377
+				color={ 217 140 130 }
+				color2={ 255 255 255 }
+				
+				b_raub = {}
+				b_kuala_lipis = {}
+				b_gunung_tahan = {}
+				b_tanah_rata = {}
+				b_batu_talam = {}
+				b_sempalit = {}
+				b_hulu_jelai = {}
+			}
+			c_bentong = { # 378
+				color={ 210 140 132 }
+				color2={ 255 255 255 }
+				
+				b_bentong = {}
+				b_bandar_bera = {}
+				b_sabai = {}
+				b_telemong = {}
+				b_pelangai = {}
+				b_kemayan = {}
+				b_mengkarak = {}
+			}
+			c_jerantut = { # 380
+				color={ 202 141 135 }
+				color2={ 255 255 255 }
+				
+				b_jerantut = {}
+				b_pulau_tawar = {}
+				b_kuala_tembeling = {}
+				b_hulu_tembeling = {}
+				b_tebing_tinggi = {}
+				b_hulu_cheka = {}
+				b_burau = {}
+			}
+			c_maran = { # 379
+				color={ 193 143 139 }
+				color2={ 255 255 255 }
+				
+				b_maran = {}
+				b_chenor = {}
+				b_kuala_sentul = {}
+				b_temerloh = {}
+				b_kerdau = {}
+				b_mentakab = {}
+				b_lipat_kajang = {}
+			}
+		}
+		d_pahang_luar = {
+			color={ 191 152 131 }
+			color2={ 255 255 255 }
+			
+			capital = 381 # c_kuantan
+			
+			c_kuantan = { # 381
+				color={ 201 142 136 }
+				color2={ 255 255 255 }
+				
+				b_kuantan = {}
+				b_bandar_indera_mahkota = {}
+				b_masjid_sultan_ahmad_shah = {}
+				b_sungai_lembing = {}
+				b_gambang = {}
+				b_beserah = {}
+				b_panching = {}
+			}
+			c_pekan = { # 382
+				color={ 198 142 137 }
+				color2={ 255 255 255 }
+				
+				b_pekan = {}
+				b_masjid_abdullah = {}
+				b_kuala_pahang = {}
+				b_temai = {}
+				b_langgar_2 = {}
+				b_masjid_diraja_abu_bakar = {}
+				b_penyor = {}
+			}
+			c_rompin = { # 383
+				color={ 204 141 135 }
+				color2={ 255 255 255 }
+				
+				b_kuala_rompin = {}
+				b_bandar_muadzam_shah = {}
+				b_keratong = {}
+				b_pulau_tioman = {}
+				b_pontian = {}
+				b_leban_chondong = {}
+				b_nenasi = {}
+			}
+		}
+		d_terengganu = {
+			color={ 222 156 131 }
+			color2={ 255 255 255 }
+			
+			capital = 384 # c_kuala_terengganu
+			thai_central = "Trangganu"
+			thai_isan = "Trangganu"
+			c_kuala_terengganu = { # 384
+				color={ 232 146 136 }
+				color2={ 255 255 255 }
+				thai_central = "Trangganu"
+				thai_isan = "Trangganu"
+				holy_site = sunni
+				b_istana_maziah = {}
+				b_kuala_terengganu = {}
+				b_masjid_abidin = {}
+				b_marang = {}
+				b_kuala_berang = {}
+				b_masjid_terapung = {}
+				b_bukit_payong = {}
+			}
+			c_besut = { # 385
+				color={ 215 124 117 }
+				color2={ 255 255 255 }
+				
+				b_kampung_raja = {}
+				b_kuala_besut = {}
+				b_jabi = {}
+				b_pasir_akar = {}
+				b_tembila = {}
+				b_apal = {}
+				b_hulu_besut = {}
+			}
+			c_dungun = { # 387
+				color={ 224 146 143 }
+				color2={ 255 255 255 }
+				
+				b_kuala_dungun = {}
+				b_jerangau = {}
+				b_pasir_raja = {}
+				b_paka = {}
+				b_abang = {}
+				b_rasau = {}
+				b_kumpal = {}
+			}
+			c_kemaman = { # 388
+				color={ 223 140 140 }
+				color2={ 255 255 255 }
+				
+				b_chukai = {}
+				b_kijal = {}
+				b_kerteh = {}
+				b_kemasik = {}
+				b_teluk_kalong = {}
+				b_banggul = {}
+				b_hulu_jabur = {}
+			}
+			c_kuala_nerus = { # 386
+				color={ 217 122 128 }
+				color2={ 255 255 255 }
+				
+				b_kuala_nerus = {}
+				b_bandar_permaisuri = {}
+				b_seberang_takir = {}
+				b_batu_rakit = {}
+				b_chalok = {}
+				b_sungai_tong = {}
+				b_gong_badak = {}
+			}
+		}
+	}
+	k_penang_besar = {
+		color={ 85 212 96 }
+		color2={ 255 255 255 }
+		
+		capital = 363 # c_george_town
+		culture = tionghoa
+		thai_central = "Pinang"
+		thai_isan = "Pinang"
+		d_penang = {
+			color={ 105 192 106 }
+			color2={ 255 255 255 }
+			
+			capital = 363 # c_george_town
+			
+			c_george_town = { # 363
+				color={ 115 182 111 }
+				color2={ 255 255 255 }
+				
+				b_george_town = {}
+				b_seri_mutiara = {}
+				b_masjid_kapitan_keling = {}
+				b_batu_ferringhi = {}
+				b_balik_pulau = {}
+				b_kuan_yin_teng = {}
+				b_bayan_lepas = {}
+			}
+			c_kuala_kangsar = { # 366
+				color={ 105 153 78 }
+				color2={ 255 255 255 }
+				
+				b_istana_iskandariah = {}
+				b_kuala_kangsar = {}
+				b_masjid_ubudiah = {}
+				b_gerik = {}
+				b_pengkalan_hulu = {}
+				b_lenggong = {}
+				b_kota_lama_kanan = {}
+			}
+			c_seberang_perai = { # 364
+				color={ 94 174 97 }
+				color2={ 255 255 255 }
+				
+				b_bukit_mertajam = {}
+				b_butterworth = {}
+				b_batu_kawan = {}
+				b_kulim = {}
+				b_seberang_jaya = {}
+				b_mahang = {}
+				b_perai = {}
+			}
+			c_taiping = { # 365
+				color={ 99 161 80 }
+				color2={ 255 255 255 }
+				
+				b_taiping = {}
+				b_parit_buntar = {}
+				b_kuala_sepatang = {}
+				b_selama = {}
+				b_matang = {}
+				b_bukit_gantang = {}
+				b_kuala_kurau = {}
+			}
+		}
+		d_kedah = {
+			color={ 116 162 89 }
+			color2={ 255 255 255 }
+			
+			capital = 367 # c_kota_setar
+			
+			c_kota_setar = { # 367
+				color={ 106 172 84 }
+				color2={ 255 255 255 }
+				
+				b_anak_bukit = {}
+				b_alor_setar = {}
+				b_masjid_zahir = {}
+				b_pendang = {}
+				b_bukit_pinang = {}
+				b_langgar = {}
+				b_ayer_puteh = {}
+			}
+			c_baling = { # 369
+				color={ 117 168 69 }
+				color2={ 255 255 255 }
+				
+				b_baling = {}
+				b_sik = {}
+				b_kampung_jering = {}
+				b_kuala_ketil = {}
+				b_kupang = {}
+				b_kuala_pegang = {}
+				b_kampung_tupai = {}
+			}
+			c_kuala_muda = { # 368
+				color={ 110 171 79 }
+				color2={ 255 255 255 }
+				
+				b_merbok = {}
+				b_sungai_petani = {}
+				b_gunung_jerai = {}
+				b_gurun = {}
+				b_yan_besar = {}
+				b_semeling = {}
+				b_bedong = {}
+			}
+			c_kubang_pasu = { # 370
+				color={ 127 165 56 }
+				color2={ 255 255 255 }
+				
+				b_jitra = {}
+				b_kuala_nerang = {}
+				b_padang_perahu = {}
+				b_bukit_kayu_hitam = {}
+				b_pedu = {}
+				b_putat = {}
+				b_belimbing_kanan = {}
+			}
+		}
+		d_perlis = {
+			color={ 111 158 92 }
+			color2={ 255 255 255 }
+			
+			capital = 371 # c_perlis
+			
+			c_perlis = { # 371
+				color={ 101 168 87 }
+				color2={ 255 255 255 }
+				
+				b_arau = {}
+				b_kangar = {}
+				b_masjid_alwi = {}
+				b_padang_besar = {}
+				b_kuala_perlis = {}
+				b_chuping = {}
+				b_kaki_bukit = {}
+			}
+			c_langkawi = { # 372
+				color={ 95 156 98 }
+				color2={ 255 255 255 }
+				
+				b_kuah = {}
+				b_pentai_cenang = {}
+				b_masjid_al_hana = {}
+				b_ayer_hangat = {}
+				b_padang_matsirat = {}
+				b_bohor = {}
+				b_kedawang = {}
+			}
+		}
+	}
+	k_singapore = {
+		color={ 237 41 57 }
+		color2={ 255 255 255 }
+		
+		capital = 389 # c_singapore
+		culture = singaporean
+		
+		d_singapore = {
+			color={ 247 26 59 }
+			color2={ 255 255 255 }
+			
+			capital = 389 # c_singapore
+			
+			c_singapore = { # 389
+				color={ 237 36 54 }
+				color2={ 255 255 255 }
+				
+				b_the_istana = {}
+				b_jurong = {}
+				b_sri_mariamman = {}
+				b_bedok = {}
+				b_woodlands = {}
+				b_masjid_sultan = {}
+				b_yishun = {}
+			}
+		}
+	}
+}

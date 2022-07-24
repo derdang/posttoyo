@@ -1,0 +1,360 @@
+
+e_sakha = {
+	color={ 40 103 74 }
+	color2={ 255 255 20 }
+	
+	capital = 2167 # c_yakutsk
+	culture = yakut
+	
+	k_yakutia = {
+		color={ 30 113 69 }
+		color2={ 255 255 255 }
+		
+		capital = 2167 # c_yakutsk
+		culture = yakut
+		
+		d_zhatay = {
+			color={ 10 133 59 }
+			color2={ 255 255 255 }
+			
+			capital = 2167 # c_yakutsk
+			
+			c_yakutsk = { # 2167
+				color={ 0 143 54 }
+				color2={ 255 255 255 }
+				
+				yakut = "Sakha"
+				
+				b_yakutsk = {}
+				b_zhatai = {}
+				b_khatassy = {}
+				b_pokrovsk = {}
+				b_markha = {}
+				b_odununskiy_nasleg = {}
+				b_syrdakh = {}
+			}
+			c_gorny = { # 2168
+				color={ 171 255 203 }
+				color2={ 255 255 255 }
+				
+				yakut = "Gornay"
+				
+				b_berdigestyakh = {}
+				b_dikimdya = {}
+				b_keptin = {}
+				b_kirovsky = {}
+				b_atamaysky = {}
+				b_odununsky = {}
+				b_shologonsky = {}
+			}
+			c_namsky = { # 2169
+				color={ 41 255 122 }
+				color2={ 255 255 255 }
+				
+				yakut = "Nam"
+				
+				b_namtsy = {}
+				b_tumul = {}
+				b_ymyyakhtakh = {}
+				b_appany = {}
+				b_partizan = {}
+				b_bulus = {}
+				b_frunze = {}
+			}
+		}
+		d_aldansky = {
+			color={ 46 179 98 }
+			color2={ 255 255 255 }
+			
+			capital = 2173 # c_tattinsky
+			
+			yakut = "Aldan"
+			
+			c_tattinsky = { # 2173
+				color={ 36 189 93 }
+				color2={ 255 255 255 }
+				
+				yakut = "Taatta"
+				
+				b_ytyk_kyuyol = {}
+				b_bulun = {}
+				b_chychymakh = {}
+				b_tomtor = {}
+				b_daya_amgata = {}
+				b_borobul = {}
+				b_debdirge = {}
+			}
+			c_churapchinsky = { # 2175
+				color={ 0 94 35 }
+				color2={ 255 255 255 }
+				
+				yakut = "Churapchy"
+				
+				b_churapcha = {
+					yakut = "Churapchy"
+				}
+				b_chyappara = {}
+				b_arylakh = {}
+				b_tolon = {}
+				b_maralayy = {}
+				b_diring = {}
+				b_myryla = {}
+			}
+			c_ust_aldansky = { # 2174
+				color={ 0 196 74 }
+				color2={ 255 255 255 }
+				
+				yakut = "Uus-Aldan"
+				
+				b_borogontsy = {}
+				b_khomustakh = {}
+				b_tanda = {}
+				b_syrdakh_2 = {}
+				b_byariye = {}
+				b_dyupsya = {}
+				b_kepteni = {}
+			}
+		}
+		d_khangalas = {
+			color={ 96 172 122 }
+			color2={ 255 255 255 }
+			
+			capital = 2170 # c_khangalassky
+			
+			c_khangalassky = { # 2170
+				color={ 106 162 127 }
+				color2={ 255 255 255 }
+				
+				yakut = "Khangalas"
+				
+				b_pokrovsk_2 = {}
+				b_mokhsogollokh = {}
+				b_bestyakh = {}
+				b_kerdyom = {}
+				b_tit_ebya = {}
+				b_isit = {}
+				b_ulakh_an = {}
+			}
+			c_amginsky = { # 2172
+				color={ 58 169 100 }
+				color2={ 255 255 255 }
+				
+				yakut = "Amma"
+				
+				b_amga = {
+					yakut = "Amma"
+				}
+				b_abaga = {}
+				b_altantsy = {
+					yakut = "Altaani"
+				}
+				b_onnyos = {}
+				b_bolugur = {}
+				b_myandigi = {}
+				b_emissy = {}
+			}
+			c_megino = { # 2171
+				color={ 99 243 153 }
+				color2={ 255 255 255 }
+				
+				yakut = "Menge"
+				
+				b_mayya = {}
+				b_yelechey = {}
+				b_tarat = {}
+				b_byokyo = {}
+				b_bedemyo = {}
+				b_nuoranga = {}
+				b_matta = {}
+			}
+		}
+		d_maysky = {
+			color={ 22 166 79 }
+			color2={ 255 255 255 }
+			
+			capital = 2176 # c_ust_maysky
+			
+			c_ust_maysky = { # 2176
+				color={ 12 176 74 }
+				color2={ 255 255 255 }
+				
+				b_solnechny_2 = {}
+				b_ust_maya = {}
+				b_zvyozdochka = {}
+				b_eldikan = {}
+				b_yugoryonok = {}
+				b_kyuptsy = {}
+				b_ezhantsy = {}
+			}
+			c_oymyakonsky = { # 2177
+				color={ 11 255 103 }
+				color2={ 255 255 255 }
+				
+				yakut = "Öymököön"
+				
+				b_ust_nera = {}
+				b_artyk = {}
+				b_oymyakon = {}
+				b_orto_balagan = {}
+				b_teryut = {}
+				b_yuchyugey = {}
+				b_kyubeme = {}
+			}
+			c_tomponsky = { # 2178
+				color={ 154 232 183 }
+				color2={ 255 255 255 }
+				
+				yakut = "Tompo"
+				
+				b_khandyga = {}
+				b_dzhebariki_khaya = {}
+				b_krest_khaldzhan = {}
+				b_okhotsky_perevoz = {}
+				b_keskil = {}
+				b_novy_2 = {}
+				b_megino_aldan = {}
+			}
+		}
+		d_vilyuy = {
+			color={ 70 92 81 }
+			color2={ 255 255 255 }
+			
+			capital = 2179 # c_vilyuysky
+			
+			c_vilyuysky = { # 2179
+				color={ 60 102 76 }
+				color2={ 255 255 255 }
+				
+				yakut = "Bülüü"
+				
+				b_vilyuysk = {}
+				b_kysyl_syr = {}
+				b_khampa = {}
+				b_ilbenge = {}
+				b_betyung = {}
+				b_chay = {}
+				b_ebya = {}
+			}
+			c_mirninsky = { # 2182
+				color={ 83 241 143 }
+				color2={ 255 255 255 }
+				
+				yakut = "Mirney"
+				
+				b_mirny = {}
+				b_udachny = {}
+				b_aykhal = {}
+				b_almazny = {}
+				b_chernyshevsky = {}
+				b_svetly = {}
+				b_syuldyukar = {}
+			}
+			c_suntarsky = { # 2181
+				color={ 84 188 123 }
+				color2={ 255 255 255 }
+				
+				yakut = "Suntaar"
+				
+				b_suntar = {}
+				b_allaga = {}
+				b_usun_kyuyol = {}
+				b_sardanga = {}
+				b_arylakh_2 = {}
+				b_ilimnir = {}
+				b_kempendyay = {}
+			}
+			c_verkhnevilyuysky = { # 2180
+				color={ 42 135 77 }
+				color2={ 255 255 255 }
+				
+				yakut = "Üöhee Bülüü"
+				
+				b_verkhnevilyuysk = {}
+				b_balagannakh = {}
+				b_botulu = {}
+				b_byrakan = {}
+				b_dalyr = {}
+				b_dyullyukyu = {}
+				b_andreyevsky = {}
+			}
+			c_nyurbinsky = { # 2183
+				color={ 112 229 156 }
+				color2={ 255 255 255 }
+				
+				yakut = "Nyurba"
+				
+				b_nyurba = {}
+				b_akana = {}
+				b_malykay = {}
+				b_dikimdya_2 = {}
+				b_yedey = {}
+				b_zharkhan = {}
+				b_kyundyade = {}
+			}
+		}
+		d_lena = {
+			color={ 79 125 99 }
+			color2={ 255 255 255 }
+			
+			capital = 2184 # c_lensky
+			
+			
+			c_lensky = { # 2184
+				color={ 69 135 94 }
+				color2={ 255 255 255 }
+				
+				yakut = "Lyenskey"
+				
+				b_lensk = {}
+				b_vitim = {}
+				b_peleduy = {}
+				b_bechencha = {}
+				b_dorozhny = {}
+				b_natora = {}
+				b_murya = {}
+			}
+			c_aldansky = { # 2186
+				color={ 34 200 96 }
+				color2={ 255 255 255 }
+				
+				yakut = "Aldan"
+				
+				b_aldan = {}
+				b_tommot = {}
+				b_leninsky = {}
+				b_nizhny_kuranakh = {}
+				b_kutana = {}
+				b_chagda = {}
+				b_khatystyr = {}
+			}
+			c_neryungrinsky = { # 2187
+				color={ 85 255 149 }
+				color2={ 255 255 255 }
+				
+				yakut = "Nüörünggürü"
+				
+				b_neryungri = {}
+				b_berkakit = {}
+				b_zolotinka = {}
+				b_khani = {}
+				b_chulman = {}
+				b_iyengra = {}
+				b_serebryany_bor = {}
+			}
+			c_olyokminsky = { # 2185
+				color={ 68 130 91 }
+				color2={ 255 255 255 }
+				
+				yakut = "Ölüökhüme"
+				
+				b_olyokminsk = {}
+				b_torgo = {}
+				b_abaga_2 = {}
+				b_daban = {}
+				b_delgey = {}
+				b_tokko = {}
+				b_kyllakh = {}
+			}
+		}
+	}
+}

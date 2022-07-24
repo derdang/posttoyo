@@ -1,0 +1,110 @@
+
+e_west_micronesia = {
+	color={ 40 1 143 }
+	color2={ 255 255 20 }
+	
+	capital = 973 # c_guam
+	culture = chamorro
+	
+	k_mariana = {
+		color={ 30 11 138 }
+		color2={ 255 255 255 }
+		
+		capital = 973 # c_guam
+		culture = chamorro
+		
+		d_guam = {
+			color={ 10 31 128 }
+			color2={ 255 255 255 }
+			
+			capital = 973 # c_guam
+			
+			c_guam = { # 973
+				color={ 0 41 123 }
+				color2={ 255 255 255 }
+				
+				holy_site = americanist_reformed
+				holy_site = americanist
+				
+				b_hagatna = {}
+				b_tamuning = {}
+				b_sinajana = {}
+				b_chalan_pago_ordot = {}
+				b_agat = {}
+				b_mangilao = {}
+				b_barrigada = {}
+			}
+		}
+		d_mariana = {
+			color={ 10 103 193 }
+			color2={ 255 255 255 }
+			
+			capital = 974 # c_northern_mariana
+			
+			c_northern_mariana = { # 974
+				color={ 0 113 188 }
+				color2={ 255 255 255 }
+				
+				b_saipan = {}
+				b_tiinian = {}
+				b_rota = {}
+				b_alamagan = {}
+				b_sarigan = {}
+				b_anatahan = {}
+				b_agrihan = {}
+			}
+		}
+	}
+	k_west_caroline = {
+		color={ 42 24 154 }
+		color2={ 255 255 255 }
+		
+		capital = 975 # c_palau
+		culture = palauan
+		
+		d_palau = {
+			color={ 22 44 144 }
+			color2={ 255 255 255 }
+			
+			capital = 975 # c_palau
+			
+			c_palau = { # 975
+				color={ 12 54 139 }
+				color2={ 255 255 255 }
+				
+				holy_site = americanist_reformed
+				holy_site = americanist
+				
+				b_lgerlumud = {}
+				b_koror = {}
+				b_airai = {}
+				b_peleliu = {}
+				b_ngaraard = {}
+				b_aimelik = {}
+				b_ngaremlengui = {}
+			}
+		}
+		d_yap = {
+			color={ 26 45 138 }
+			color2={ 255 255 255 }
+			
+			capital = 976 # c_yap_state
+			
+			c_yap_state = { # 976
+				color={ 16 55 133 }
+				color2={ 255 255 255 }
+				
+				holy_site = americanist_reformed
+				holy_site = americanist
+				
+				b_colonia = {}
+				b_gagil_tamil = {}
+				b_maap = {}
+				b_gilmaan = {}
+				b_fanif = {}
+				b_dalipebenau = {}
+				b_rull = {}
+			}
+		}
+	}
+}
