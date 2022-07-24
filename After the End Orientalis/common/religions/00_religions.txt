@@ -1201,8 +1201,8 @@ pagan_group = {
 	mo = {
 		graphical_culture = chinesegfx
 
-		icon = 75
-		heresy_icon = 75
+		icon = 10
+		heresy_icon = 10
 		
 		color = { 214 211 202 }
 
@@ -2989,23 +2989,23 @@ oldworld = {
 		intermarry = shinto
 	}
 	pancasila = {
-		graphical_culture = buddhistgfx
+		graphical_culture = muslimgfx
 
-		icon = 10
-		heresy_icon = 10
+		icon = 75
+		heresy_icon = 75
 		
 		color = { 130 219 90 }
 		
-		interface_skin = { nousthreskeia_interface gaian_interface indian_interface muslim_interface } #placeholder
+		interface_skin = { indian_interface muslim_interface } 
 		
-		high_god_name = GOD_THE_NOOSPHERE
+		high_god_name = TUHAN_MAHAESA
 		
 		god_names = {
-			GOD_MONOLITH GOD_THE_WISH_GRANTER GOD_THE_GOLDEN_SPHERE
+			GOD_GARUDA GOD_SUKARNO GOD_IBU_PERTIWI
 		}
 		
 		evil_god_names = {
-			DENEB THE_DARK_ONES
+			SARA
 		}
 		
 		can_grant_divorce = yes
@@ -3021,14 +3021,12 @@ oldworld = {
 		religious_clothing_head = 14
 		religious_clothing_priest = 14
 		
-		crusade_name = GREAT_HOLY_WAR
-		scripture_name = COSMOGENESIS
-		priest_title = PREACHER
-		piety_name = CONSCIOUSNESS
+		scripture_name = UNDANG_UNDANG
+		piety_name = HARMONY
 		
-		intermarry = gaian
-		intermarry = cetic
-		intermarry = shinto
+		intermarry = nusantara
+		intermarry = sunni
+		intermarry = wahabbi
 	}
 	quinto = {
 		graphical_culture = westerngfx
