@@ -25,6 +25,90 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_not_evaluated"
+		texturefile = "gfx/traits/not_evaluated.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_failed_exam"
+		texturefile = "gfx/traits/failed_exam.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_imp_ex1"
+		texturefile = "gfx/traits/imp_ex1.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_imp_ex2"
+		texturefile = "gfx/traits/imp_ex2.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_imp_ex3"
+		texturefile = "gfx/traits/imp_ex3.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_imp_ex4"
+		texturefile = "gfx/traits/imp_ex4.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_weak_emperor"
+		texturefile = "gfx/traits/weakemperor.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_china_emperor"
+		texturefile = "gfx/traits/emperor.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_strong_emperor"
+		texturefile = "gfx/traits/strongemperor.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_grand_secretary"
+		texturefile = "gfx/traits/governator.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_grand_secretary_heir"
+		texturefile = "gfx/traits/governator_heir.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_sanctioned_grand_secretary"
+		texturefile = "gfx/traits/sanctioned_governator.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 ############################
 # A Game of Thrones Traits #
@@ -689,5 +773,41 @@ spriteType = {
 	spriteType = {
 		name = "GFX_hunt_for_whale"
 		texturefile = "gfx\\interface\\decision_icon_whale_hunt.dds"
+	}
+	spriteType = {
+		name = "GFX_take_imp_exam"
+		texturefile = "gfx\\interface\\decision_icon_issue_declaration_of_repentance.dds"
+	}
+	spriteType = {
+		name = "GFX_failed_exam_abdicate"
+		texturefile = "gfx/interface/writing2.dds"
+	}
+	spriteType = {
+		name = "GFX_claim_realm_exam"
+		texturefile = "gfx\\interface\\decision_icon_faction_claimant_ultimatum.dds"
+	}
+	spriteType = {
+		name = "GFX_grain_to_masses"
+		texturefile = "gfx\\interface\\decision_icon_donate_charity.dds"
+	}
+	spriteType = {
+		name = "GFX_grain_to_masses_humble"
+		texturefile = "gfx\\interface\\decision_icon_donate_to_liege.dds"
+	}
+	spriteType = {
+		name = "GFX_defer_powers"
+		texturefile = "gfx\\interface\\decision_icon_form_new_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_bureaucratic_reform"
+		texturefile = "gfx\\interface\\decision_icon_write_theory_paper.dds"
+	}
+	spriteType = {
+		name = "GFX_sell_positions"
+		texturefile = "gfx\\interface\\decision_icon_tributary_break_free_normal.dds"
+	}
+	spriteType = {
+		name = "GFX_bureaucratic_building"
+		texturefile = "gfx\\interface\\decision_icon_adopt_republicanism.dds"
 	}
 }
