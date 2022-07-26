@@ -590,6 +590,38 @@ muslim = {
 		intermarry = buddhist_group
 		intermarry = indian_group
 	}
+	
+	shiite = { #Placeholder Shia
+		graphical_culture = muslim
+		
+		icon = 3 #5?
+		
+		color = { 0 0.8 0 }
+		
+		crusade_name = JIHAD
+		scripture_name = THE_KORAN
+		priest_title = MULLAH
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
+		
+		can_call_crusade = yes
+		priests_can_marry = yes
+		psc_marriage = no
+		max_wives = 4
+		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
+		attacking_same_religion_piety_loss = yes
+		uses_decadence = yes
+		uses_jizya_tax = yes		
+	}
 }
 
 pagan_group = {
