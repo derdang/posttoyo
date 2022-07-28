@@ -4,13 +4,9 @@ malayan = {
 
 	melayu = {
 		graphical_cultures = { melayugfx }
-		alternate_start = {
-			OR = {
-				year >= 1100
-				has_alternate_start_parameter = { key = culture value = full_random }
-			}
-		}
+		
 		color = { 0.8 0.2 0.2 }
+		
 		male_names = {
 			Aaron Abbas "Abdul Aziz" "Abdul Djafar" "Abdul Hamid" "Abdul Jalil" "Abdul Majid" "Abdul Rahman" Abdullah Abu Bakar_Abu-Bakr Ahmad Adam Adnan Akmal Aidan Alam Alauddin Ali Amar Amrullah Anas Andak Antah Aqil Arifin Ashraf Ataullah Azlan_Arslan
 			Badlishah Badrul Burhanuddin 
@@ -71,15 +67,69 @@ malayan = {
 		mother_name_chance = 5
 	}
 
+	gayo = {
+		graphical_cultures = { melayugfx }
+		
+		color = { 0.3 0.6 0.22 }
+		
+		male_names = {
+			Abdul Aziz_Abdulaziz Abdul Ghani_Abdulghani Abdul Hamid_Abdulhamid Abdul Kadir_Abdulqadir Abdul Rajab Abdul Rasad Abdul Wahab_Abdulwahhab Abdullah_Abdullah Abdussalam_Abdulsalam Abu Bakar_Abu-Bakr Adam_Adam Adisyah Afdal Ahmad_Ahmad Ahmadi Aji Ajuarsyah Ajwar Akbar_Akbar Akhiruddin Alamsyah Aldiansyah Ali_Ali Alikasim Alvin Aman_Aman Amin_Amin Ansari Anwar Aril Arizal Arizky Aryanto 
+			Buniyamin 
+			Dailami Darmansyah Darmawan 
+			Efrianza Ervan 
+			Faisal_Faisal Fauzan Fazri Fikar Firdaus_Firdaus Furqan 
+			Halidin Hamid_Hamid Hamsidar Harun_Aaron Hasan_Hasan Hasanuddin Hasyim_Hashim Hendra Husni 
+			Ibrahim_Abraham Idris_Idris Ihsan Iklil Ilham Ilyas_Ilyas Imam_Imam Irmansyah Irza Iskandar_Alexander Islah Ismail_Ismail Ismid Iwan 
+			Jafar_Jafar Jali Jamal_Jamal Jamaluddin Jamil_Jamil Jauhari Jufri Junaid Juriandi 
+			Kamaruddin Karim_Karim Karismanto Kasim_Qasim Kasimsyah Khaidir Khairandi Khalisuddin 
+			Maharadi Mahmud_Mahmud Mahram Malik_Malik Marwan_Marwan Marwansyah Maulidin Mirwandi Muammar_Muammar Muhammad Ali Muhammad Amin Muhammad_Muhammad Muhtar Mukad Mukhlis Mukhtar_Mukhtar Munawardi Muse_Musa Muslim_Muslim Mustafa_Mustafa Muzakir 
+			Nafis Nasaruddin Naufal Nurdiansyah Nurdin_Nuruddin 
+			Rabudin Rahman_Rahman Rajab_Rajab Rajudin Ramadhan_Ramadan Ramli Rashid_Rashid Rasyid_Rashid Rasyidin Raziq Relawansyah Ridha_Riza Ridwan_Ridwan Rijal Rijaluddin Rikal Rizki Ruslan_Ruslan Rusli Rustam_Rustam 
+			Saad Sabri Said_Said Saiful Bahri Saiful Hadi Saleh Salid Salihin Salman_Salman Samsaleh Saparudin Sarkawi Shabela Shirat Sofyan_Sufyan Suhardinsyah Sukran Sulaiman_Solomon Sultan_Sultan Syaifuddin Syamsuar Syarif_Sharif Syukri_Shukri 
+			Taufik Tawaruddin Thalib_Talib 
+			Usman_Uthman 
+			Wahyu 
+			Yudhi Yusuf_Joseph 
+			Zainal Abidin Zulhamuddin Zulkarnain 
+		}
+		female_names = {
+			Addini Afraghassani Aisyah_Aisha Aqila Arbiata Ardiana Arlina Arni Asmara Asrawati 
+			Dahlia Deknong 
+			Fahmi Fitriana 
+			Halida Hamidah Harbiyah Hartati Hazijah Hidayah 
+			Ine Iranda Irma Ismayani 
+			Julita 
+			Kemala Khairunnisa Khalda 
+			Maimunah Maryam_Mary Maskawani Murniati 
+			Nabila Nashila 
+			Pendi 
+			Qory 
+			Raisya Raya Rifqah Rihadatul Ais Rohana Rosa Rudiyah 
+			Salama Salamiah Salawati Selenawati Sudilah Sulastri Sunarti Suriyani Susilawati Syakira Syarifah 
+			Zahra Zettarenggali Zubaidah Zuhra Zuliana 
+		}
+		male_patronym = "ibni "
+		female_patronym = "binti "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
 	melanau = {
 		graphical_cultures = { melayugfx }
-		alternate_start = {
-			OR = {
-				year >= 1100
-				has_alternate_start_parameter = { key = culture value = full_random }
-			}
-		}
+		
 		color = { 0.1 0.5 0.6 }
+		
 		male_names = {
 			Alexander 
 		}
@@ -106,13 +156,9 @@ malayan = {
 	
 	sarawak = {
 		graphical_cultures = { melayugfx }
-		alternate_start = {
-			OR = {
-				year >= 1100
-				has_alternate_start_parameter = { key = culture value = full_random }
-			}
-		}
+		
 		color = { 0.1 0.5 0.6 }
+		
 		male_names = {
 			Alexander 
 		}
@@ -139,13 +185,9 @@ malayan = {
 
 	kelantanese = {
 		graphical_cultures = { melayugfx }
-		alternate_start = {
-			OR = {
-				year >= 1100
-				has_alternate_start_parameter = { key = culture value = full_random }
-			}
-		}
+		
 		color = { 0.9 0.55 0.4 }
+		
 		male_names = {
 			Aaron Abbas "Abdul Aziz" "Abdul Djafar" "Abdul Hamid" "Abdul Jalil" "Abdul Majid" "Abdul Rahman" Abdullah Abu Bakar_Abu-Bakr Ahmad Adam Adnan Akmal Aidan Alam Alauddin Ali Amar Amrullah Anas Andak Antah Aqil Arifin Ashraf Ataullah Azlan_Arslan
 			Badlishah Badrul Burhanuddin 
@@ -208,13 +250,9 @@ malayan = {
 
 	sumatran = {
 		graphical_cultures = { melayugfx }
-		alternate_start = {
-			OR = {
-				year >= 1100
-				has_alternate_start_parameter = { key = culture value = full_random }
-			}
-		}
+		
 		color = { 0.4 0.25 0.8 }
+		
 		male_names = {
 			Abbas Abdullah "Abdul Halim"  "Abdul Jalil" "Abdul Karim" "Abdul Malik" "Abdul Muis" "Abdul Rahman" Abubakar_Abu-Bakr Adam Adnan Ahmad Akbar Alam Ali Amaluddin Amarullah Amin Ansharullah Anwar Arifin Arizal Asrul Azmy Azyumardi
 			Bachrum Bachtiar Bagagar Bahder Bagindo Basrief Basrizal Budi Busro
@@ -274,13 +312,9 @@ malayan = {
 
 	banjarese = {
 		graphical_cultures = { melayugfx }
-		alternate_start = {
-			OR = {
-				year >= 1100
-				has_alternate_start_parameter = { key = culture value = full_random }
-			}
-		}
+		
 		color = { 0.4 0.25 0.8 }
+		
 		male_names = {
 			Abbas Abdul "Abdul Azis" "Abdul Gaffar" "Abdul Gais" "Abdul Ghani" "Abdul Hafiz" "Abdul Wahab" Abdurrahman Aberanie Abu Bakar_Abu-Bakr Adam Adzikro Ahmad Akbar  Ali Aliansyah Alibasah Aliuddin Almaruf Alvin Aminullah Amir Amrullah Andarun Anom Antasari Ardiansyah Ariadi Arifin Arul Arsyad Aslan Azhar 
 			Baharuddin Bardiansyah 
@@ -445,13 +479,9 @@ malayan = {
 	}
 	bruneian = { #placeholder, name copy-pasted from melayu
 		graphical_cultures = { melayugfx }
-		alternate_start = {
-			OR = {
-				year >= 1100
-				has_alternate_start_parameter = { key = culture value = full_random }
-			}
-		}
+		
 		color = { 0.9 0.6 0.2 }
+		
 		male_names = {
 			Aaron Abbas "Abdul Azizi" "Abdul Djafar" "Abdul Hamid" "Abdul Jalil" "Abdul Majid" "Abdul Rahman" Abdullah Abu Bakar_Abu-Bakr Ahmad Adam Adnan Akmal Aidan Alam Alauddin Ali Amar Amrullah Anas Andak Antah Aqil Arifin Ashraf Ataullah Azlan_Arslan
 			Badlishah Badrul Burhanuddin 
@@ -513,13 +543,9 @@ malayan = {
 	}
 	sabahan = { #placeholder, name copy-pasted from melayu
 		graphical_cultures = { melayugfx }
-		alternate_start = {
-			OR = {
-				year >= 1100
-				has_alternate_start_parameter = { key = culture value = full_random }
-			}
-		}
+		
 		color = { 120 100 220 }
+		
 		male_names = {
 			Aaron Abbas "Abdul Azizi" "Abdul Djafar" "Abdul Hamid" "Abdul Jalil" "Abdul Majid" "Abdul Rahman" Abdullah Abu Bakar_Abu-Bakr Ahmad Adam Adnan Akmal Aidan Alam Alauddin Ali Amar Amrullah Anas Andak Antah Aqil Arifin Ashraf Ataullah Azlan_Arslan
 			Badlishah Badrul Burhanuddin 
