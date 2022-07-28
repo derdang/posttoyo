@@ -1,0 +1,71 @@
+narrative_event = {
+	id = SH.1
+   	title = REALM_IS_DESTROYED_BY_SHATTER_CB
+	desc = EVTDESC_SHTR_1
+	picture = GFX_evt_large_army
+	border = GFX_event_narrative_frame_war
+	is_triggered_only = yes
+
+    option = {
+        name = EVT_OPTA_EVTDESC_SHTR_1_A
+		trigger = { ROOT = { character = FROM } } 
+	}
+
+    option = {
+       name = EVT_OPTA_EVTDESC_SHTR_1_B
+		trigger = { ROOT = { character = FROMFROM } }
+	}
+	
+    option = {
+        name = EVT_OPTA_EVTDESC_SHTR_1_C
+	trigger = {
+		ROOT = { has_character_modifier = used_shatter_realm_cb } 
+		NOT = { ROOT = { character = FROMFROM } }
+		NOT = { ROOT = { character = FROM } } 
+		}
+	}
+    option = {
+        name = EVT_OPTA_EVTDESC_SHTR_1_D
+	trigger = {
+		NOT = { ROOT = { has_character_modifier = used_shatter_realm_cb } }
+		NOT = { ROOT = { character = FROMFROM } }
+		NOT = { ROOT = { character = FROM } } 
+		}
+	}
+}
+
+narrative_event = {
+	id = SH.2
+    	title = REALM_IS_THREATEN_BY_SHATTER_CB
+	desc = EVTDESC_SHTR_2
+	picture = GFX_evt_large_army
+	border = GFX_event_narrative_frame_war
+	is_triggered_only = yes
+
+    option = {
+        name = EVT_OPTA_EVTDESC_SHTR_2_A
+	trigger = { ROOT = { character = FROM } } 
+	}
+
+    option = {
+       name = EVT_OPTA_EVTDESC_SHTR_2_B
+	trigger = { ROOT = { character = FROMFROM } }
+	}
+	
+    option = {
+        name = EVT_OPTA_EVTDESC_SHTR_2_C
+	trigger = {
+		ROOT = { has_character_modifier = used_shatter_realm_cb } 
+		NOT = { ROOT = { character = FROMFROM } }
+		NOT = { ROOT = { character = FROM } } 
+		}
+	}
+    option = {
+        name = EVT_OPTA_EVTDESC_SHTR_2_D
+	trigger = {
+		NOT = { ROOT = { has_character_modifier = used_shatter_realm_cb } }
+		NOT = { ROOT = { character = FROMFROM } }
+		NOT = { ROOT = { character = FROM } } 
+		}
+	}
+}

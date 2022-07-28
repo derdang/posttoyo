@@ -227,67 +227,6 @@ e_priamurye = {
 				b_kupriyanovka = {}
 			}
 		}
-		d_bureya = {
-			color={ 194 212 49 }
-			color2={ 255 255 255 }
-			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 2127 province_id = 2128 province_id = 2129 province_id = 2130 } }
-				}
-			}
-			capital = 2127 # c_raychikhinsk
-			
-			c_raychikhinsk = { # 2127
-				color={ 204 202 54 }
-				color2={ 255 255 255 }
-				
-				b_raychikhinsk = {}
-				b_progress = {}
-				b_shirokii = {}
-				b_uspenovka = {}
-				b_staraya_raichikha = {}
-				b_vinnikovo = {}
-				b_kalinino = {}
-			}
-			c_arkharinsky = { # 2129
-				color={ 226 224 59 }
-				color2={ 255 255 255 }
-				
-				b_arkhara = {}
-				b_innokentevka_2 = {}
-				b_otvazhnoe = {}
-				b_chernigovka_2 = {}
-				b_novospassk = {}
-				b_domikan = {}
-				b_khingano = {}
-			}
-			c_bureysky = { # 2130
-				color={ 255 252 67 }
-				color2={ 255 255 255 }
-				
-				b_novobureiskii = {}
-				b_bureya = {}
-				b_malinovka = {}
-				b_doldykan = {}
-				b_rodionovka = {}
-				b_talakan = {}
-				b_arkharinskiy = {}
-			}
-			c_zavitinsky = { # 2128
-				color={ 243 240 64 }
-				color2={ 255 255 255 }
-				
-				b_zavitinsk = {}
-				b_valuyevo = {}
-				b_innokentyevka_2 = {}
-				b_boldyrevka = {}
-				b_ivanovka_2 = {}
-				b_fedorovka = {}
-				b_kupriyanovka = {}
-			}
-		}
 		d_selemdzha = {
 			color={ 186 205 15 }
 			color2={ 255 255 255 }
