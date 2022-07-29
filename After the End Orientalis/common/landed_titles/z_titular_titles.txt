@@ -47,6 +47,22 @@ e_hong = {
 	can_be_claimed = no
 	can_be_usurped = no
 }
+k_ice_city = {
+	color = { 140 220 200 }
+	color2={ 255 255 255 }
+	
+	capital = 1457 #Harbin
+	culture = dongbei
+	
+	allow = {
+		culture = dongbei
+	}
+	# Cannot be held as a secondary title
+	primary = yes
+	short_name = yes
+	can_be_claimed = no
+	can_be_usurped = no
+}
 e_commonwealth = {
 	color = { 0 53 169 }
 	color2={ 255 255 255 }
