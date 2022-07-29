@@ -1,5 +1,7 @@
+namespace = mandala
+
 narrative_event = {
-	id = SH.1
+	id = mandala.1
    	title = REALM_IS_DESTROYED_BY_SHATTER_CB
 	desc = EVTDESC_SHTR_1
 	picture = GFX_evt_large_army
@@ -35,8 +37,8 @@ narrative_event = {
 }
 
 narrative_event = {
-	id = SH.2
-    	title = REALM_IS_THREATEN_BY_SHATTER_CB
+	id = mandala.2
+    title = REALM_IS_THREATEN_BY_SHATTER_CB
 	desc = EVTDESC_SHTR_2
 	picture = GFX_evt_large_army
 	border = GFX_event_narrative_frame_war
@@ -66,6 +68,103 @@ narrative_event = {
 		NOT = { ROOT = { has_character_modifier = used_shatter_realm_cb } }
 		NOT = { ROOT = { character = FROMFROM } }
 		NOT = { ROOT = { character = FROM } } 
+		}
+	}
+}
+
+narrative_event = {
+	id = mandala.3
+	title = succession_crisis_mandala_1
+	desc = succession_crisis_mandala_1_desc
+	picture = GFX_evt_mandala_court
+	border = GFX_event_narrative_frame_war
+	is_triggered_only = yes
+	
+	trigger = {
+		ROOT = {government = mandala_government}
+		ROOT = { character = FROMFROM }
+	}
+	
+	option = { #Rule is Challenged
+		name = EVT_OPTA_MANDALA3
+		trigger = {
+			AND = {
+				martial <= 10
+				prestige <= 2000
+			}
+		}
+		narrative_event = {id = mandala.4}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	option = { #Escapes Succession Crisis
+		name = EVT_OPTB_MANDALA3
+		trigger = {
+			AND = {
+				martial = 10
+				prestige = 2000
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+narrative_event = {
+	id = mandala.4
+	title = succession_crisis_mandala_2
+	desc = succession_crisis_mandala_2_desc
+	picture = GFX_evt_mandala_court
+	border = GFX_event_narrative_frame_war
+	is_triggered_only = yes
+	
+	trigger = {
+		government = mandala_government
+	}
+	
+	option = { #Vassals Break Free
+		name = EVT_OPTA_MANDALA4
+		prestige = -100
+		narrative_event = {id = mandala.5}
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 5 trait = honest }
+		}
+	}
+	option = { #Spend Prestige to keep them in line
+		name = EVT_OPTB_MANDALA4
+		prestige = -1000
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 5 trait = arbitrary }
+		}
+	}
+}
+
+narrative_event = {
+	id = mandala.5
+	title = succession_crisis_mandala_3
+	desc = succession_crisis_mandala_3_desc
+	picture = GFX_evt_mandala_court
+	border = GFX_event_narrative_frame_war
+	is_triggered_only = yes
+	
+	trigger = {
+		government = mandala_government
+	}
+	
+	immediate = {	
+		log = "This is the end, no more options for [Root.GetTitledName]"
+		destroy_landed_title = FROM
+	}
+	
+	option = { #Vassals Break Free
+		name = EVT_OPTA_MANDALA5
+		prestige = -100
+		ai_chance = {
+			factor = 10
 		}
 	}
 }

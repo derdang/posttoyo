@@ -1803,33 +1803,33 @@ shatter_realm_mod_cb = {
 					FROM = { realm_size = 50}
 					FROM = { realm_size < 100 }
 					} }
-				ROOT = { prestige = 4000 piety = 2000 }
+				ROOT = { prestige = 400 piety = 200 }
 		}
 		conditional_tooltip = {
 			trigger = { AND = {
 				FROM = { realm_size = 100 }
 				FROM = { realm_size < 200 }
 					} }
-				ROOT = { prestige = 6000 piety = 3000 }
+				ROOT = { prestige = 600 piety = 300 }
 			}
 		conditional_tooltip = {
 			trigger = { AND = {
 				FROM = { realm_size = 200 }
 				FROM = { realm_size < 500 }
 					} }
-					ROOT = { prestige = 8000 piety = 4000 }
+					ROOT = { prestige = 800 piety = 400 }
 			}
 		conditional_tooltip = {
 				trigger = { 
 				FROM = { realm_size = 500 }
 					}
-					ROOT = { prestige = 10000 piety = 5000 }
+					ROOT = { prestige = 1000 piety = 500 }
 			}
 	}
 
 	on_add = {
 		FROM = {
-		hidden_effect = { any_player = { narrative_event = { id = SH.2 } } }
+		hidden_effect = { any_player = { narrative_event = { id = mandala.2 } } }
 		custom_tooltip = {
 			text = shatter_war_2
 		}
@@ -1839,8 +1839,8 @@ shatter_realm_mod_cb = {
 				realm_size < 100
 				}
 					ROOT = {
-					prestige = -4000
-					piety = -2000
+					prestige = -400
+					piety = -200
 					}
 			}
 			if = {
@@ -1849,8 +1849,8 @@ shatter_realm_mod_cb = {
 				realm_size < 200
 				}
 					ROOT = {
-					prestige = -6000
-					piety = -3000
+					prestige = -600
+					piety = -300
 					}
 			}
 			if = {
@@ -1860,8 +1860,8 @@ shatter_realm_mod_cb = {
 				}
 					ROOT = {
 					show_scope_change = no
-					prestige = -8000
-					piety = -4000
+					prestige = -800
+					piety = -400
 					}
 			}
 			if = {
@@ -1870,8 +1870,8 @@ shatter_realm_mod_cb = {
 				}
 					ROOT = {
 					show_scope_change = no
-					prestige = -10000
-					piety = -5000
+					prestige = -1000
+					piety = -500
 					}
 				}
 		}
@@ -1886,7 +1886,7 @@ shatter_realm_mod_cb = {
 			custom_tooltip = {
 				text = shatter_war_1
 				hidden_effect = {
-					hidden_effect = { any_player = { narrative_event = { id = SH.1 } } }
+					hidden_effect = { any_player = { narrative_event = { id = mandala.1 } } }
 					any_demesne_title = {
 						limit = {
 							higher_tier_than = DUKE
@@ -1921,7 +1921,7 @@ shatter_realm_mod_cb = {
 
 	on_reverse_demand = {
 		ROOT = {
-			piety = -1000
+			piety = -100
 			transfer_scaled_wealth = {
 				to = FROM
 				value = 15.0
@@ -1941,8 +1941,8 @@ shatter_realm_mod_cb = {
 	on_invalidation = {
 		ROOT =	{
 			remove_character_modifier =  used_shatter_realm_cb
-			prestige = 4000
-			piety = 2000
+			prestige = 400
+			piety = 200
 		}
 	}
 
