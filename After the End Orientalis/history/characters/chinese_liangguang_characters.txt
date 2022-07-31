@@ -1,6 +1,7 @@
 ## Cantonese and Guangzhou in general.
 ## File name to be changed or merged with another file later.
 # 2620 - Guangdong
+# 2653 - Nanning
 
 ### Hao line and family
 ### Ge line and family
@@ -8,7 +9,7 @@
 	name="Ge"
 	dynasty=1972116 # Hao-Macanese
 	culture=highlander
-	religion=jibenyuanze #ruist/secret JBYZ
+	religion=jibenyuanze
 	martial=19
 	diplomacy=15
 	stewardship=16
@@ -29,6 +30,7 @@
 	dynasty=1972116 # Hao-Macanese
 	culture=highlander
 	religion=ruist #ruist/secret JBYZ
+	secret_religion=jibenyuanze
 	martial=9
 	diplomacy=9
 	stewardship=5
@@ -64,6 +66,7 @@
 	culture=highlander
 	female=yes
 	religion=ruist #ruist/secret JBYZ
+	secret_religion=jibenyuanze
 	martial=5
 	diplomacy=9
 	stewardship=10
@@ -157,3 +160,27 @@
 	2600.1.1={capital = c_mazhang}
 }
 ## To do : Two Shen-chen (pun intended)
+
+##
+2653001 ={ #nanning
+	name="Huanghuang"
+	dynasty=9053125
+	culture=cantonese
+	religion=mo
+	martial=8
+	diplomacy=9
+	stewardship=9
+	intrigue=7
+	learning=10
+	trait=grey_eminance
+	trait=quick
+	female=yes
+	2587.1.1={birth=yes}
+}
+2653011 ={ #qinzhou
+	name="Yong"
+	dynasty=9058238
+	culture=min
+	religion=shenist
+	2589.1.1={birth=yes}
+}
