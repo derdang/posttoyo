@@ -1,0 +1,349 @@
+barrier_batak = {
+	graphical_cultures = { melayugfx }
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	
+	gayo = {
+		graphical_cultures = { melayugfx }
+		
+		color = { 0.3 0.6 0.22 }
+		
+		male_names = {
+			Abdul Aziz_Abdulaziz Abdul Ghani_Abdulghani Abdul Hamid_Abdulhamid Abdul Kadir_Abdulqadir Abdul Rajab Abdul Rasad Abdul Wahab_Abdulwahhab Abdullah_Abdullah Abdussalam_Abdulsalam Abu Bakar_Abu-Bakr Adam_Adam Adisyah Afdal Ahmad_Ahmad Ahmadi Aji Ajuarsyah Ajwar Akbar_Akbar Akhiruddin Alamsyah Aldiansyah Ali_Ali Alikasim Alvin Aman_Aman Amin_Amin Ansari Anwar Aril Arizal Arizky Aryanto 
+			Buniyamin 
+			Dailami Darmansyah Darmawan 
+			Efrianza Ervan 
+			Faisal_Faisal Fauzan Fazri Fikar Firdaus_Firdaus Furqan 
+			Halidin Hamid_Hamid Hamsidar Harun_Aaron Hasan_Hasan Hasanuddin Hasyim_Hashim Hendra Husni 
+			Ibrahim_Abraham Idris_Idris Ihsan Iklil Ilham Ilyas_Ilyas Imam_Imam Irmansyah Irza Iskandar_Alexander Islah Ismail_Ismail Ismid Iwan 
+			Jafar_Jafar Jali Jamal_Jamal Jamaluddin Jamil_Jamil Jauhari Jufri Junaid Juriandi 
+			Kamaruddin Karim_Karim Karismanto Kasim_Qasim Kasimsyah Khaidir Khairandi Khalisuddin 
+			Maharadi Mahmud_Mahmud Mahram Malik_Malik Marwan_Marwan Marwansyah Maulidin Mirwandi Muammar_Muammar Muhammad Ali Muhammad Amin Muhammad_Muhammad Muhtar Mukad Mukhlis Mukhtar_Mukhtar Munawardi Muse_Musa Muslim_Muslim Mustafa_Mustafa Muzakir 
+			Nafis Nasaruddin Naufal Nurdiansyah Nurdin_Nuruddin 
+			Rabudin Rahman_Rahman Rajab_Rajab Rajudin Ramadhan_Ramadan Ramli Rashid_Rashid Rasyid_Rashid Rasyidin Raziq Relawansyah Ridha_Riza Ridwan_Ridwan Rijal Rijaluddin Rikal Rizki Ruslan_Ruslan Rusli Rustam_Rustam 
+			Saad Sabri Said_Said Saiful Bahri Saiful Hadi Saleh Salid Salihin Salman_Salman Samsaleh Saparudin Sarkawi Shabela Shirat Sofyan_Sufyan Suhardinsyah Sukran Sulaiman_Solomon Sultan_Sultan Syaifuddin Syamsuar Syarif_Sharif Syukri_Shukri 
+			Taufik Tawaruddin Thalib_Talib 
+			Usman_Uthman 
+			Wahyu 
+			Yudhi Yusuf_Joseph 
+			Zainal Abidin Zulhamuddin Zulkarnain 
+		}
+		female_names = {
+			Addini Afraghassani Aisyah_Aisha Aqila Arbiata Ardiana Arlina Arni Asmara Asrawati 
+			Dahlia Deknong 
+			Fahmi Fitriana 
+			Halida Hamidah Harbiyah Hartati Hazijah Hidayah 
+			Ine Iranda Irma Ismayani 
+			Julita 
+			Kemala Khairunnisa Khalda 
+			Maimunah Maryam_Mary Maskawani Murniati 
+			Nabila Nashila 
+			Pendi 
+			Qory 
+			Raisya Raya Rifqah Rihadatul Ais Rohana Rosa Rudiyah 
+			Salama Salamiah Salawati Selenawati Sudilah Sulastri Sunarti Suriyani Susilawati Syakira Syarifah 
+			Zahra Zettarenggali Zubaidah Zuhra Zuliana 
+		}
+		male_patronym = "ibni "
+		female_patronym = "binti "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+	simeulue = {
+		graphical_cultures = { melayugfx }
+		
+		color = { 0.93 0.26 0.62 }
+		
+		male_names = {
+			Abbas Abubakar_Abu-Bakr Adriman Ahardi Ahmadi Ahmadlyah Akmal Alafan Alamin Alamsyar Ali_Ali Aliasnudin Almahirsyah Amin_Amin Amran Amsal Amsarudin Andi Ardimartha Arif Arminsyah Asludin Asmanudin Asmirudin Astamudin Azharudin Azis_Aziz 
+			Bayu Bustanuddin 
+			Chairuzzaman 
+			Darmili Daud_David Dermawan 
+			Erli 
+			Fadhlurrahman Farib Firdaus Firmanudin 
+			Gunawan 
+			Hamsipar Hamsyah Hanif Hari Hasan_Hasan Hasbi Hasrat Hasrul Edyar Hasyim_Hashim Heriansyah Hidayat 
+			Ihya Ikhsan Ilyas_Elijah Indra Iqbal Irawan Irwan Iskandar_Alexander Ismail_Ismail Israk 
+			Jafar_Jafar Jamirul Saleh Jatmiko Jufniar Juliadin Juliardi Jupri 
+			Kalimubin Khairuddin Khalil Kiro Kusmayadi 
+			Mahdan Mahmud_Mahmud Mardhatillah Mardian Mauluddin Misrahudin Mizanul Haq Muchlis_Muhlis Muchsin_Muhsin Muhammad Arif Muhammad_Muhammad Muhayatsyah Mulyawan 
+			Narmiadin Naskah Nasrul Nasrun Nirwanudin Nurdin_Nuruddin Nuril Haq Nurman Nusar 
+			Raduin Rahmad Rajian Ramadhan_Ramadan Ramanudin Rasyid_Rashid Rasyidin Riswan Riyanto Rizal Rohani Rosnidar Rosnidar Rustam_Rustam 
+			Safrinudin Sahirman Saifullah Saleh Salman Samsuar Sardinsyah Sarman Sayuti Suhardin Sukirno Sunardi Supriadi Syahrian Syahril Syamsardin Syamsuddin_Shamsuddin Syamsuir Syamsul Arif Syarif 
+			Taqdirullah Taqwallah 
+			Ugek Ulumuddin Umar_Umar Uzar 
+			Wahyu Widji 
+			Yazid Yunus_Jonah Yusuf_Joseph 
+			Zubir Zulfadli Zulfikar Zulkarnaen_Zulkarnain Zulmufti Zulmufti  
+		}
+		female_names = {
+			Afridawati Aisyah_Aisha Alya Amiratul Jannah 
+			Cindriani 
+			Diana 
+			Efrida Erni Ernita 
+			Fani Fatima 
+			Hanafiah Hasanah 
+			Idawati Inda Isdawati 
+			Katijah_Khadija 
+			Lasminidar Luthfia 
+			May Mery Meulu Miftahul Jannah Misdawati Murniati Muthmainnah 
+			Nanik Norasantri Nurniha Nurnihayati Nurul Husna 
+			Primananda 
+			Rasyida_Rashida Rita 
+			Sahyuni Sara Saryena Suryani Syarifah_Sharifa 
+			Yurna Yurnawati Yusmalinar 
+			Zulfiya Zulfihayati 
+		}
+		male_patronym = "ibni "
+		female_patronym = "binti "
+		prefix = yes
+		founder_named_dynasties = yes
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+	nias = {
+		graphical_cultures = { melayugfx }
+		
+		color = { 0.23 0.16 0.92 }
+		
+		male_names = {
+			Abdi Abdiman Agusman Agusnaldo Aguswarman Alperes Amizaro Andy Angandowa Aprianto Ariantoro Arman Arosandre Arosokhi Arozawato Aroziduhu Atisama Augusman 
+			Bahagia Batasi Bawazato Bazamati Bazisokhi Berkat Berkatman Bernand Binahati Bowonama Citra 
+			Dalimano Damai Darman Dedy Deskariawan Dezaro Diyurman Djulpikarya Dwi 
+			Eka Eliaman Elis Elwendi Emosi Erreano 
+			Faahakhododo Faatulo Faduhusi Faebuadodo Fakhili Fangenano Faogö'aro Faogõnasõkhi Faowanolo Faozatulo Fatizanolo Fauluaro Hamonangan Hanati Harapan Hardin Harianto Harlan Hasatulo Hendra Herdinata Hidayat Hilman 
+			Iman Indra Ingatan Irlan 
+			Juang Juara 
+			Karmajaya Karöröwa Karuniawan Kasih Khenoki Kriscahyadi Krisman Kurniaman Kurniawan 
+			Lakhömizaro Libezaro Lotoliwanto 
+			Manunggal Matatias Megawarman Meiman Meziwa Mosinema Murni Musiman 
+			Noferiman Noperwira Notarisman Noveriman Nurcahaya 
+			Ononama Orani Orawan Orysvan 
+			Perdamaian Prory Putra Putriyanti Repelita 
+			Ridho Roos Rudianto 
+			Saharman Sakti Sanongoni Sawato Serasi Setiaman Setiawan Sohahau Sokhiatulo Sonataalui Sonitehe Sonny Suahasil Suriaman 
+			Taliziduhu Tanobadodo Thevi Tirtajaya Triswan Tuhozaro 
+			Walfrik 
+			Ya'aro Yakno Yamamotona Yaman Yamitema Yasato Yaserman Yasonna Yataniat Yorint Yuliman Yuniman Yurman 
+			
+			###Christian
+			Agustinus_Augustine-christian Albert_Albert-christian Alfred_Alfred-christian Andrian_Adrian-christian Anthonius_Anthony-christian Aprianus_Aprianus-christian April_April-christian 
+			Benediktus_Benedict-christian 
+			Christian_Christian-christian 
+			David_David-christian Domini_Dominic-christian 
+			Edison_Edison-christian Ekaristi_Eucharist-christian Elison_Elison-christian Elwin_Alwin-christian Eudes_Odo-christian 
+			Ferdinand_Ferdinand-christian Fidelis_Fidelis-christian Fileanus_Fileanus-christian Firmatus_Firmatus-christian 
+			Gilbert_Gilbert-christian 
+			Hekinus_Hekinus-christian Herman_Herman-christian Hezekieli_Ezekiel-christian Hilarius_Hilarius-christian Historis_Historis-christian 
+			Ikhmatius_Ikhmatius-christian 
+			Javier_Xavier-christian Johnny_John-christian Jonathan_Jonathan-christian Juan_John-christian Junius_Junius-christian 
+			Karnius_Karnius-christian Kornelius_Cornelius-christian 
+			Leonardo_Leonard-christian Luther_Luther-christian 
+			Marinus_Marinus-christian Martin_Martin-christian Melvin_Melvin-christian Miseri_Miseri-christian 
+			Oktalinus_Oktalinus-christian Oktavianus_Octavian-christian 
+			Peniel_Peniel-christian 
+			Romy_Romy-christian Ronald_Ronald-christian Rudolf_Rudolf-christian 
+			Samuel_Samuel-christian Septinus_Septimus-christian 
+			Verdinand_Ferdinand-christian Veritas_Veritas-christian Vitalis_Vitalius-christian 
+			Wendelinus_Wendelinus-christian Wienfried_Winfrid-christian Willfried_Wilfrid-christian 
+			Yanuari_Juanuarius-christian Yosua_Joshua-christian Yulianus_Julian-christian Yustin_Justin-christian 
+		}
+		female_names = {
+			Amonita Andani Aprilina Aprilyani Arismanwati Aronia Askari Asnawati Asnizar 
+			Barasi Berlianti Binsavat Borni Buanati 
+			Cahaya 
+			Deli Desti Devi 
+			Ekawati Elviliana Elvina Elvivian Erli Ermina 
+			Faridanikmatwati Feriana Fitriani Florinawati 
+			Gusti 
+			Hasrat Hotna 
+			Intan 
+			Juwita 
+			Kartini Kasihani Kenisah 
+			Lisiawati 
+			Maranatha Margareta Masdiana Matranita Megawati Mei Melianti Morini 
+			Nella Novrida Nuriati 
+			Otilie 
+			Priztina Putri 
+			Ramina Reka Reni Rosmeni 
+			Satria Seniwati Seruyati Setiawati Sevenia Sukartini 
+			Thesa Tikna Tuti 
+			Veberwati Ventarina Viera 
+			Yamitema Yanawua Yasminta Yeni Yermin Yulidar Yuni Yusnita 
+			
+			###Christian names
+			Christin_Christina-christian 
+			Elisabeth_Elisabeth-christian Elisye_Elisa-christian Emilia_Emily-christian Estetis_Estetis-christian Eva_Eve-christian 
+			Florensi_Florence-christian Fransisca_Frances-christian 
+			Isabella_Isabella-christian 
+			Julita_Juliet-christian 
+			Klementia_Clementia-christian 
+			Lenny_Lenny-christian Lisa_Lisa-christian 
+			Magdalena_Magdalena-christian Mariana_Marian-christian Marissa_Marissa-christian 
+			Natalia_Nathalie-christian 
+			Oktavia_Octavia-christian 
+			Pascalia_Pascalia-christian 
+			Silvya_Sylvia-christian Stephanie_Stephanie-christian 
+			Valentine_Valentina-christian
+			Yulia_Julia-christian Yustina_Justina-christian 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	batak = {
+		graphical_cultures = { melayugfx }
+		
+		color = { 0.18 0.86 0.92 }
+		
+		male_names = {
+			Adam_Adam Andar Aulia 
+			Bakri Bakti Batara Bihelman Binahar Binsar Binsar Bistok Bonar Bongsu 
+			Chairal Chairul 
+			Darmin Depriwanto Djamin Djisman Dogma 
+			Edi 
+			Gonti 
+			Halomoan Hendra Hotasi Hotman Hotmangaraja 
+			Igyralo Inal Irianto Iskandar_Alexander Iwan 
+			Jamilin Japarlin Jaulung 
+			Karimuda 
+			Laba Laban Lintong Lumban 
+			Mahadun Mahamel Mahyadi Malem Malim Malontige Managom Manahan Manampin Manumpan Maraden Margomgom Marolop Martua Maruarar Maruli Merari Minola Mulia 
+			Nelson 
+			Oloan 
+			Panda Pandapotan Panoboi Pantur Parasian Pardame Pardamean Parlindungan Parulian Pitra Polindo Porsea Putra 
+			Radja Rajakin Ramlan Raplan Riko Rondahaim Rony Ruslan 
+			Sabam Sahala Sahat Saktiawan Salomon_Solomon Sambat Saur Sembiring Simar Sindartua Soritua Sudin Suman Sumuntul Suranta 
+			Tahan Tahi Tenang Todung Togar Tondo Trimedya Tumpal Tunggul 
+			Uli Untung Usu 
+			Welman Wijaya 
+			Yuriandi 
+			
+			###Christian names
+			Adrianus_Adrian-christian Adventus_Adventus-christian Albert_Albert-christian Alexander_Alexander-christian Alfoncius_Alfonso-christian Alfred_Alfred-christian Alvaro_Oliver-christian Anthony_Anthony-christian Antonius_Anthony-christian Armijn_Herman-christian Arminius_Herman-christian 
+			Berlin_Berlin-christian Bigman_Bigman-christian Bill_William-christian Bismarck_Bismarck-christian Bonifacio_Bonifacio-christian 
+			Cyrellus_Cyril-christian 
+			Daniel_Daniel-christian Danton_Danton-christian Darwin_Darwin-christian David_David-christian Diosdado_Diosdado-christian Donald_Donald-christian 
+			Elieser_Eleazar-christian Ephraim_Ephraim-christian Erikson_Erikson-christian Ernst_Ernest-christian Errol_Errol-christian Erwin_Erwin-christian 
+			Fabian_Fabian-christian Felix_Felix-christian Ferdinand_Ferdinand-christian Frank_Francis-christian Frederick_Frederick-christian Fredore_Fredore-christian Friedrich_Frederick-christian Fritz_Frederick-christian 
+			Gabriel_Gabriel-christian Gustav_Gustav-christian 
+			Harry_Henry-christian Heini_Heini-christian 
+			Imanuel_Emmanuel-christian Isaac_Isaac-christian Israel_Israel-christian 
+			James_James-christian Jerome_Hieronymus-christian Jesse_Jesse-christian Jetro_Jethro-christian Joel_Joel-christian Johan_John-christian Johnson_Johnson-christian Jonas_Jonah-christian Jonathan_Jonathan-christian Joseph_Joseph-christian Juan_John-christian Jubil_Jubil-christian Justin_Justin-christian 
+			Kasianus_Cassian-christian 
+			Leonard_Leonard-christian Lucius_Lucius-christian 
+			Marcello_Marcel-christian Marianus_Marianus-christian Mario_Marius-christian Martin_Martin-christian Melanchton_Melanchton-christian Mercy_Mercy-christian 
+			Nathan_Nathan-christian Noah_Noah-christian 
+			Otto_Otto-christian 
+			Paris_Paris-christian Paulus_Paul-christian Petrus_Peter-christian Pius_Pius-christian 
+			Robinson_Robinson-christian 
+			Samson_Samson-christian 
+			Tommy_Thomas-christian Truman_Truman-christian 
+			Victor_Victor-christian 
+			Wilfritz_Wilfrid-christian Willem_William-christian Wilson_Wilson-christian 
+			Yohanes_John-christian 
+			
+			###Muslim names
+			Abdul Ghafar_Abdulghaffar-muslim Abdul Hakim_Abdulhakim-muslim Abdul Haris_Abdulharis-muslim Abdul Mun'im_Abdulmunim-muslim Abdul Mutalib_Abdulmuttalib-muslim Abdul Qadir_Abdulqadir-muslim Abdul Somad_Abdulsamad-muslim Achmad_Ahmad-muslim Adnan_Adnan-muslim Akbar_Akbar-muslim Alam_Alam-muslim Ali_Ali-muslim Amin_Amin-muslim Amir_Amir-muslim Amirsjah_Amirshah-muslim Anwar_Anwar-muslim Arifin_Arifin-muslim 
+			Burhanuddin_Burhanuddin-muslim 
+			Fahmi_Fahmi-muslim Farhan_Farhan-muslim Farouk_Faruk-muslim Feisal_Faysal-muslim Fuad_Fuad-muslim 
+			Hamzah_Hamza-muslim Harun_Harun-muslim Husin_Husayn-muslim 
+			Ibrahim_Ibrahim-muslim Ismail_Ismail-muslim 
+			Johar_Jawhar-muslim Junaid_Junayd-muslim 
+			Kasim_Qasim-muslim 
+			Mahmud_Mahmud-muslim Masri_Masri-muslim Mochtar_Mukhtar-muslim Muhammad_Muhammad-muslim Musa_Musa-muslim 
+			Nadjamuddin_Najmuddin-muslim Nasib_Nasib-muslim Nuddin_Nuruddin-muslim 
+			Rahmat_Rahmat-muslim Ramali_Ramali-muslim 
+			Saifuddin_Sayfuddin-muslim Selamat_Salamat-muslim Sholeh_Sholeh-muslim Sjarif_Sharif-muslim Sjarifuddin_Sharifuddin-muslim Sultan_Sultan-muslim 
+			Yasser_Yasser-muslim Yusnar_Yusnar-muslim Yusuf_Yusuf-muslim 
+			Zainul Arifin_Zainalarifin-muslim 
+		}
+		female_names = {
+			Ade Adiati Aida Alida Arestina Astrid Ayu 
+			Baiyah Bara Basari Basunu Budiasri Bumbunan 
+			Devi Dewana Dhita Dina Djaenah Dora Dumaris Dumasi 
+			Erna 
+			Faye 
+			Hendriyanti Hotmaria 
+			Ida Ika Indahsari Irma Izry 
+			Jovita 
+			Kamarati Kartini 
+			Langgam Lersiani Likas Lyodra 
+			Mantasia Mardani Masa Masrowida Meida Mutiara 
+			Nadya Nenny Nitawati Norhayati Novita Nunut Nurmala 
+			Omas 
+			Pandang Purada Putri_Putri 
+			Ratna Rawani Revina Ria Riana Riny Riri Risnalu Roggainim Rosalya Rotua Rugun Rusmina 
+			Saharah Seimima Shinta Sinta Sondang Sulastri Susi 
+			Tanda Tarapul Tindoan Tiur Tiurma Turumun Tuthy 
+			Yulita Yuniar 
+			
+			###Christian names
+			Agustianne_Augusta-christian Amy_Amy-christian Anita_Anita-christian Anna_Anna-christian Aubriel_Aubriel-christian 
+			Cara_Cara-christian Catherine_Catherine-christian 
+			Debora_Deborah-christian Destiny_Destiny-christian Diana_Diana-christian Dolorosa_Dolores-christian 
+			Emely_Emily-christian Eva_Eve-christian 
+			Felicia_Felicia-christian Flora_Flora-christian Frida_Frida-christian 
+			Gloria_Gloria-christian Gracia_Grace-christian 
+			Imanensia_Imanensia-christian 
+			Jessica_Jessica-christian Johanna_Joan-christian Joy_Joy-christian Julia_Julia-christian Juliana_Juliana-christian Junita_Junita-christian 
+			Katharina_Catherine-christian Kerri_Kerri-christian 
+			Letisha_Laetitia-christian Lientje_Lientje-christian 
+			Magdalena_Magdalena-christian Margareta_Margaret-christian Maria_Mary-christian Marieke_Mary-christian Marion_Marion-christian Mary_Mary-christian Mira_Mira-christian Miranda_Miranda-christian Monica_Monica-christian 
+			Naomi_Naomi-christian Natalia_Nathalie-christian Natalina_Natalina-christian Natasya_Natasha-christian 
+			Octavia_Octaveni-christian 
+			Paulina_Paulina-christian 
+			Regina_Regina-christian Ria_Ria-christian Rian_Rian-christian Rita_Margaret-christian Rosalina_Rosalina-christian Rose_Rose-christian Rosianna_Rosianna-christian Ruth_Ruth-christian 
+			Sarah_Sarah-christian Sharena_Sharena-christian Sharon_Sharon-christian Stefani_Stephanie-christian Suzana_Susan-christian 
+			Theresia_Theresa-christian 
+			Vera_Vera-christian 
+			Zivanna_Zivanna-christian 
+			
+			###Muslim names
+			Atiqah_Atiqa-muslim 
+			Farida_Fatin-muslim Fatin_Fatin-muslim 
+			Habibah_Habiba-muslim Hajar_Hajar-muslim Halimah_Halima-muslim 
+			Rafiah_Rafia-muslim Rokiyah_Ruqayya-muslim 
+			Sakinah_Sakina-muslim Salmah_Salma-muslim Sariyah_Sariya-muslim 
+		}
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+}
