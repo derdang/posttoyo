@@ -3102,6 +3102,7 @@ title_court_physician = {
 			is_patrician = yes
 		}
 		has_dlc = "Reapers"
+		NOT = { religion = parimatira }
 	}
 	
 	allowed_to_hold = {
@@ -3139,6 +3140,79 @@ title_court_physician = {
 		OR = {
 			NOT = { religion = hindu }
 			trait = brahmin
+		}
+		is_adult = yes
+
+		prisoner = no
+		NOT = { trait = in_hiding }
+		NOT = { trait = incapable }
+	}
+
+	revoke_trigger = {
+		custom_tooltip = {
+			text = revoke_court_physician_being_treated_tt
+			NOT = { FROM = { has_character_flag = being_treated } }
+		}
+	}
+	
+	gain_effect = {
+	}
+	lose_effect = {
+	}
+	retire_effect = {
+	}
+
+	message = yes
+}
+title_court_weizza = {
+	is_high_prio = yes
+	attribute = learning
+    dignity = 5
+    realm_in_name = yes
+	grant_limit = 1
+	opinion_effect = 10
+	monthly_salary = 0.2
+	monthly_prestige = 0.5
+	
+	allowed_to_grant = {
+		OR = {
+			higher_tier_than = BARON
+			is_patrician = yes
+		}
+		religion = parimatira
+		has_dlc = "Reapers"
+	}
+	
+	allowed_to_hold = {
+		custom_tooltip = {
+			text = court_physician_tooltip_1
+			NOT = {
+				primary_title = { temporary = yes } 
+			}
+		}
+		custom_tooltip = {
+			text = court_physician_tooltip_2
+			OR = {
+				male_can_hold_minor_title_trigger = yes
+				female_can_hold_minor_title_trigger = yes
+			}
+		}
+		OR = {
+			learning = 15
+			AND = {
+				learning = 10
+				OR = {
+					trait = physician
+					trait = scholar
+					trait = mystic
+				}
+			}
+			custom_tooltip = { 
+				text = educated_court_physician
+				hidden_tooltip = {
+					has_character_flag = is_court_physician
+				}
+			}
 		}
 		is_adult = yes
 
@@ -3245,7 +3319,85 @@ title_hermetics_apprentice = {
 
 	message = yes
 }
+title_weizza_society_apprentice = {
+	is_high_prio = yes
+	attribute = learning
+    dignity = 1
+    realm_in_name = no
+	grant_limit = 1
+	opinion_effect = 10
+	monthly_salary = 0.1
+	monthly_prestige = 0.1
+	revoke_allowed = no
+	
+	allowed_to_grant = {
+		has_dlc = "Mystics"
+		society_member_of = weizza_society
+		ai = no
+	}
+	
+	allowed_to_hold = {
+		custom_tooltip = {
+			text = court_physician_tooltip_1
+			NOT = {
+				primary_title = { temporary = yes } 
+			}
+		}
+		is_adult = yes
+		OR = {
+			society_member_of = weizza_society
+			is_in_society = no
+		}
 
+		NOT = { trait = in_hiding }
+		NOT = { trait = incapable }
+		prisoner = no
+		
+		hidden_trigger = {
+			liege = { society_member_of = weizza_society }
+			ai = yes
+			NOT = { has_character_flag = completed_apprenticeship }
+			OR = {
+				FROM = { ai = no }
+				learning = 10
+				is_smart_trigger = yes
+				trait = gardener
+				trait = scholar
+				trait = mystic
+			}
+		}
+	}
+	
+	gain_effect = {
+		if = {
+			limit = { NOT = { society_member_of = weizza_society } }
+			join_society = weizza_society
+		}
+		character_event = { id = wizard.1413 days = 4500 random = 1000 }  #Some years later, the apprenticeship ends
+
+		opinion = { 
+			modifier = opinion_hermetic_apprentice
+			who = FROM
+			years = 100
+		}
+		FROM = {
+			if = {
+				limit = { has_quest = quest_hermetics_find_apprentice }
+				character_event = { id = wizard.1409 }
+			}
+		}
+	}
+	lose_effect = {
+		remove_opinion = { 
+			modifier = opinion_hermetic_apprentice
+			who = FROM
+		}
+	}
+	retire_effect = {
+	}
+
+	message = yes
+}
 
 ###JADE DRAGON MINOR TITLES###
 

@@ -1199,31 +1199,151 @@ narrative_event = {#End of Vessak
 	}
 }
 
-#Vessak Maintenance Events
+#Court Weizza Event
 
-# War interrupts Vessak
 character_event = {
-	id = budevents.120
-	desc = budevent120_desc
-	trigger = {
-		AND = {
-			has_character_modifier = celebrating_vesak
-			war = yes
+	id = budevents.200
+	picture = GFX_evt_courier
+	desc = EVTDESC_BUDDHISTEVENT_200
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_character_flag = looking_for_court_physician
+	}
+
+	option = {
+		name = EVTOPTA_BUDDHISTEVENT_200
+		hidden_tooltip = { character_event = { id = budevents.201 days = 10 random = 10 } }
+	}
+}
+
+#Found a Court Weizza
+character_event = {
+	id = budevents.201
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = looking_for_court_physician
+		set_character_flag = found_court_physician
+		random_list = {
+			4 = { # Drunk Village Physician (Unschooled, 18+ Learning)
+				modifier = {
+					factor = 0
+					AND = {
+						has_character_flag = got_weizza_1
+						NOT = { had_character_flag = { flag = got_weizza_1 days = 3650 } }
+					}
+				}
+				# Same Religion & Culture as ROOT
+				create_character = {
+					religion = ROOT
+					culture = ROOT
+					dynasty = none
+					age = 35
+					random_traits = yes
+					female = no
+					attributes = {
+						learning = 20
+					}
+					health = 6
+					trait = mystic
+					trait = mastermind_theologian
+					set_character_flag = is_court_physician
+					set_character_flag = weizza_1
+				}
+				new_character = {
+					random_list = { # Is the Physician a Quack?
+						90 = {}
+						10 = {set_character_flag = physician_is_quack}
+					}
+					save_event_target_as = recruited_physician_target
+					character_event = { id = budevents.202 }
+				}
+			}
 		}
 	}
+}
+
+character_event = {
+	id = budevents.202
+
+	hide_window = yes
+	hide_new = yes
+	is_triggered_only = yes
+
+	immediate = {
+		FROM = { character_event = { id = budevents.203 } }
+	}
+}
+
+# Notify player of Court Physician
+character_event = {
+	id = budevents.203
+	picture = GFX_evt_buddha_teaching
+	border = GFX_event_normal_frame_religion
+	desc = EVTDESC_BUDDHISTEVENT_203
+
+	hide_new = yes
 	
+	portrait = event_target:recruited_physician_target
+
 	is_triggered_only = yes
 	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
 	option = {
-		name = OK
-		wealth = 50
-		piety = -50
-		clr_character_flag = do_not_disturb
-		clr_character_flag = recent_minor_decision
-		remove_character_modifier = { name = celebrating_vesak }
+		name = EVTOPTB_RIP_11053
+		trigger = {
+			event_target:recruited_physician_target = { has_character_flag = weizza_1 }
+		}
+		hidden_tooltip = {
+			set_character_flag = got_weizza_1
+			if = {
+				limit = {
+					any_courtier_or_vassal = {
+						liege = { character = ROOT }
+						has_minor_title = title_court_weizza
+					}
+				}
+				any_courtier_or_vassal = {
+					limit = {
+						liege = { character = ROOT }
+						has_minor_title = title_court_weizza
+					}
+					remove_title = title_court_weizza
+				}
+			}
+		}
+		transfer_scaled_wealth = {
+			to = event_target:recruited_physician_target
+			min = 10
+			value = 0.05
+		}
+		event_target:recruited_physician_target = {
+			show_scope_change = no
+			opinion = {
+				modifier = opinion_glad
+				who = ROOT
+				years = 5
+			}
+			give_minor_title = title_court_weizza
+		}
+	}
+	option = {
+		name = EVTOPTA_BUDDHISTEVENT_203
+		
+		ai_chance = {
+			factor = 0
+		}
+		
+		hidden_tooltip = {
+			event_target:recruited_physician_target = { 
+				death = {
+					death_reason = death_missing
+				}
+			}
+		}
 	}
 }

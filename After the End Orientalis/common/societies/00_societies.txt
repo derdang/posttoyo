@@ -634,14 +634,6 @@ monastic_order_mormon = { #NOTE: treated as a Christian holy order in the code d
 		age = 16
 		OR = {
 			religion = mormon
-			AND = {
-				is_heretic = no
-				OR = {
-					religion = neogodbeite
-					religion = woolleyite
-					religion = strangite
-				}
-			}
 		}
 		NOT = { trait = excommunicated }
 		custom_tooltip = {
@@ -657,14 +649,6 @@ monastic_order_mormon = { #NOTE: treated as a Christian holy order in the code d
 	show_society = {
 		OR = {
 			religion = mormon
-			AND = {
-				is_heretic = no
-				OR = {
-					religion = neogodbeite
-					religion = woolleyite
-					religion = strangite
-				}
-			}
 			society_member_of = monastic_order_mormon
 		}
 	}
@@ -672,14 +656,6 @@ monastic_order_mormon = { #NOTE: treated as a Christian holy order in the code d
 	potential = {
 		OR = {
 			religion = mormon
-			AND = {
-				is_heretic = no
-				OR = {
-					religion = neogodbeite
-					religion = woolleyite
-					religion = strangite
-				}
-			}
 		}
 	}
 
@@ -883,7 +859,7 @@ monastic_order_hindu = {
 			}
 		}
 		age = 16
-		religion = hindu
+		religion_group = indian_group
 		custom_tooltip = {
 			text = did_not_betray_society
 			NOT = { has_character_flag = betrayed_monastic_order_hindu }
@@ -896,12 +872,12 @@ monastic_order_hindu = {
 
 	show_society = {
 		OR = {
-			religion = hindu
+			religion_group = indian_group
 			society_member_of = monastic_order_hindu
 		}
 	}
 
-	potential = { religion = hindu }
+	potential = { religion_group = indian_group }
 
 	society_rank = {
 		level = 1
@@ -1087,7 +1063,7 @@ monastic_order_hindu = {
 		trigger = {
 			ai = yes
 			controls_religion = no
-				religion = hindu
+			religion_group = indian_group
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -1137,11 +1113,7 @@ monastic_order_jewish = {
 			}
 		}
 		age = 16
-		OR = {
-			religion = jewish
-			religion = reform
-			religion = meshichist
-		}
+		jewish
 		custom_tooltip = {
 			text = did_not_betray_society
 			NOT = { has_character_flag = monastic_order_jewish }
@@ -1155,18 +1127,12 @@ monastic_order_jewish = {
 	show_society = {
 		OR = {
 			religion = jewish
-			religion = reform
-			religion = meshichist
 			society_member_of = monastic_order_jewish
 		}
 	}
 
 	potential = {
-		OR = {
-			religion = jewish
-			religion = reform
-			religion = meshichist
-		}
+		religion = jewish
 	}
 
 	society_rank = {
@@ -1223,7 +1189,7 @@ monastic_order_jewish = {
 			fertility = 0.30
 		}
 		decisions = {
-			chabad_convert_yiddish
+			#chabad_convert_yiddish
 		}
 	}
 
@@ -1451,21 +1417,12 @@ hermetics = {
 			has_religion_feature = religion_astrology
 			religion_group = christian
 			religion_group = muslim
-			religion_group = cult_of_saints
 			religion_group = latter_day_saints
 			religion_group = oldworld
 			religion_group = jewish_group
-			religion_group = pacific
-			custom_tooltip = {
-				text = zunist_hermetic_join_tooltip
-				hidden_trigger = {
-					OR = {
-						religion = occultist
-						religion = occultist_reformed
-					}
-				}
-			}
-			religion = hindu
+			religion_group = eastern
+			religion_group = indian_group
+			religion = mahayana
 		}
 		NOR = {
 			is_nomadic = yes
@@ -1483,14 +1440,12 @@ hermetics = {
 			has_religion_feature = religion_astrology
 			religion_group = christian
 			religion_group = muslim
-			religion_group = cult_of_saints
 			religion_group = latter_day_saints
 			religion_group = oldworld
 			religion_group = jewish_group
-			religion_group = pacific
-			religion = occultist
-			religion = occultist_reformed
-			religion = hindu
+			religion_group = eastern
+			religion_group = indian_group
+			religion = mahayana
 			society_member_of = hermetics
 		}
 	}
@@ -1704,16 +1659,273 @@ hermetics = {
 			OR = {
 				religion_group = christian
 				religion_group = muslim
-				religion_group = cult_of_saints
 				religion_group = latter_day_saints
 				religion_group = oldworld
 				religion_group = jewish_group
-				religion_group = pacific
-				religion_group = afro_syncretic
-				religion = occultist
-				religion = occultist_reformed
-				religion = hindu
+				religion_group = eastern
+				religion_group = indian_group
+				religion = mahayana
 			}
+		}
+	}
+}
+
+weizza_society = {
+	primary_attribute = learning
+	society_ranks_gfx = generic_ranks
+	opinion_to_other_members = +10
+	opinion_per_rank_above = +5
+	sound = hermetic_society_interface
+	society_influence = no
+	non_interference = {
+		always = yes
+	}
+	
+	active = {
+		has_dlc = "Mystics"
+	}
+	indestructible = yes
+	
+	can_join_society = {
+		hidden_trigger = {
+			NAND = {
+				ai = yes
+				is_society_rank_full = { 
+					society = weizza_society
+					rank = 1
+				}
+			}
+			OR = {
+				is_landed = yes
+				is_patrician = yes
+			}
+		}
+		learning = 10
+		religion = parimatira
+		NOR = {
+			is_nomadic = yes
+			is_tribal = yes
+		}
+		hidden_trigger = { mercenary = no }
+		age = 18
+		hidden_trigger = {
+			NOT = { has_character_flag = society_join_block }
+		}
+	}
+
+	show_society = {
+		OR = {
+			religion = parimatira
+			society_member_of = weizza_society
+		}
+	}
+	
+	potential = {
+		#If something is added here, it could break apprenticeship. Create an event if they can get kicked out. title_hermetics_apprentice
+	}
+	
+	society_rank = {
+		level = 1
+		limit = 200
+		startup_limit = 10
+		modifier = {
+			learning = 1
+		}
+		decisions = {
+			hermetics_write_theory_paper # Enables you to write an essay
+		}
+	}
+	
+	society_rank = {
+		level = 2
+		limit = 100
+		startup_limit = 6
+		modifier = { 
+			learning = 1
+			stewardship = 1
+		}
+		decisions = {
+			hermetics_perform_scrying # Enables you to psychologically profile yourself to predict the future
+			brew_happiness_potion # Enables you to make a solution
+		}
+	}
+	
+	society_rank = {
+		level = 3
+		limit = 50
+		startup_limit = 4
+		modifier = {
+			learning = 2
+			stewardship = 2
+		}
+		decisions = {
+			hermetics_make_horoscope # Enables you to give your kids standardized tests to predict their future
+		}
+	}
+
+	society_rank = {
+		level = 4
+		limit = 20
+		startup_limit = 2
+		modifier = { 
+			learning = 4
+			stewardship = 2
+		}
+		decisions = {
+			choose_hermetic_art # Enables you to pick/change your lifestyle trait
+			hermetics_write_magnum_opus # Write an "enciphered" master's thesis (artifact)
+		}
+	}
+	
+	plots = {
+	}
+	
+	monthly_currency_gain = {
+		name = currency_name_weizza
+		
+		per_attribute = {
+			name = learning
+			value = 0.5
+		}
+		has_trait = {
+			value = 2
+			trait = diligent
+		}
+		has_trait = {
+			value = 1
+			trait = scholar
+		}
+		has_trait = {
+			value = 1
+			trait = faqih
+		}
+		has_trait = {
+			value = 1
+			trait = mystic
+		}
+		has_trait = {
+			value = 1
+			trait = erudite
+		}
+		has_trait = {
+			value = 1
+			trait = stubborn
+		}
+		has_trait = {
+			value = 1
+			trait = patient
+		}
+		has_trait = {
+			value = 1
+			trait = genius
+		}
+		has_trait = {
+			value = 1
+			trait = quick
+		}
+		has_trait = {
+			value = 1
+			trait = shrewd
+		}
+		has_trait = {
+			value = 1
+			trait = just
+		}
+		society_rank = {
+			rank = 4
+			value = 10
+		}
+	}
+
+	member_score_per_attribute = 3
+	member_score_per_rank = 100
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			factor = 2
+			trait = diligent
+		}
+		modifier = {
+			factor = 1.5
+			trait = scholar
+		}
+		modifier = {
+			factor = 1.5
+			trait = faqih
+		}
+		modifier = {
+			factor = 1.5
+			trait = mystic
+		}
+		modifier = {
+			factor = 1.5
+			trait = erudite
+		}
+		modifier = {
+			factor = 1.5
+			trait = stubborn
+		}
+		modifier = {
+			factor = 1.5
+			trait = patient
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				trait = genius
+				trait = quick
+				trait = shrewd
+			}
+		}
+		modifier = {
+			factor = 1.5
+			trait = just
+		}
+	}
+	
+	startup_populate = {
+		trigger = {
+			ai = yes
+			controls_religion = no
+			age = 18
+			is_in_society = no
+			is_dumb_trigger = no
+			OR = {
+				NOT = { is_priest = yes }
+				OR = {
+					trait = mystic
+					trait = scholar
+					trait = faqih
+					trait = cynical
+				}
+			}
+			OR = {
+				AND = {
+					is_landed = yes
+					OR = { 
+						learning = 14
+						trait = scholar
+						trait = faqih
+						trait = erudite
+						trait = genius
+						trait = mystic
+					}
+				}
+				AND = {
+					learning = 18
+					OR = {
+						trait = scholar
+						trait = faqih
+						trait = erudite
+						trait = genius
+						trait = mystic
+						learning = 20
+					}
+				}
+			}
+			religion = parimatira
 		}
 	}
 }
@@ -2365,8 +2577,9 @@ the_cult_of_kali = {
 		}
 		age = 16
 		OR = {
-			religion = hindu
+			religion_group = indian_group
 			secret_religion = hindu
+			secret_religion = tirthaist
 			society_member_of = the_cult_of_kali
 		}
 	}
@@ -3250,7 +3463,6 @@ warrior_lodge_americanist = {
 	
 	active = {
 		has_dlc = "Holy Fury"
-		#has_global_flag = flag_restored_warrior_lodge_hellenic #Must be formed by decision.
 	}
 	indestructible = yes
 	
@@ -3278,7 +3490,8 @@ warrior_lodge_americanist = {
 			prisoner = no
 		}
 		OR = {
-			religion_openly_americanist_or_heresy_trigger = yes
+			religion = americanist
+			religion = americanist_reformed
 			AND = {
 				custom_tooltip = {
 					text = society_has_at_least_10_members_tt
@@ -3292,13 +3505,15 @@ warrior_lodge_americanist = {
 				NOT = { trait = zealous }
 			}
 		}
-		NOT = { has_landed_title = d_electoral_college }
 	}
 
 	show_society = {
 		OR = {
 			#You are this religion: will show only this lodge (the other "show_society"'s will make sure)
-			religion_openly_americanist_or_heresy_trigger = yes
+			OR = {
+				religion = americanist
+				religion = americanist_reformed
+			}
 			AND = {
 				#You are of a religion that doesn't match *any* warrior lodge
 				has_religion_matching_available_warrior_lodge_trigger = no
@@ -3306,18 +3521,30 @@ warrior_lodge_americanist = {
 				OR = {
 					#You have neighbors, etc, of the correct religion...
 					any_vassal = {
-						religion_openly_americanist_or_heresy_trigger = yes
+						OR = {
+							religion = americanist
+							religion = americanist_reformed
+						}
 					}
 					any_liege = {
-						religion_openly_americanist_or_heresy_trigger = yes
+						OR = {
+							religion = americanist
+							religion = americanist_reformed
+						}
 					}
 					any_neighbor_independent_ruler = {
-						religion_openly_americanist_or_heresy_trigger = yes
+						OR = {
+							religion = americanist
+							religion = americanist_reformed
+						}
 					}
 				}
 			}
 			NOT = { #Hide if: you don't have a religion that corresponds to this lodge, but there is another society available to you already
-				religion_openly_americanist_or_heresy_trigger = no
+				NOR = {
+					religion = americanist
+					religion = americanist_reformed
+				}
 				has_religion_matching_available_warrior_lodge_trigger = yes
 			}
 			#Always show if: You are already a member. Duh.
@@ -3325,15 +3552,11 @@ warrior_lodge_americanist = {
 		}
 	}
 
-	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
+	potential = {
 		OR = {
-			religion_openly_americanist_or_heresy_trigger = yes
-			AND = {
-				religion_openly_americanist_or_heresy_trigger = no
-				NOT = { trait = zealous }
-			}
+			religion = americanist
+			religion = americanist_reformed
 		}
-		NOT = { has_landed_title = d_electoral_college }
 	}
 
 	society_rank = { #"Fledgling"
@@ -3506,78 +3729,6 @@ warrior_lodge_americanist = {
 			value = 1
 		}
 		has_trait = {
-			trait = viking
-			value = 1
-		}
-		has_trait = {
-			trait = pirate
-			value = 1
-		}
-		has_trait = {
-			trait = ravager
-			value = 2
-		}
-		has_trait = {
-			trait = seaking
-			value = 3
-		}
-		has_trait = {
-			trait = sea_queen
-			value = 3
-		}
-		has_trait = {
-			trait = shieldmaiden
-			value = 1
-		}
-		has_trait = {
-			trait = berserker
-			value = 1
-		}
-		has_trait = {
-			trait = varangian
-			value = 1
-		}
-		has_trait = {
-			trait = valhalla_bound
-			value = 1
-		}
-		has_trait = {
-			trait = fords_striker
-			value = 1
-		}
-		has_trait = {
-			trait = sword_of_the_lamb
-			value = 1
-		}
-		has_trait = {
-			trait = knight_templar
-			value = 1
-		}
-		has_trait = {
-			trait = order_of_the_garter
-			value = 1
-		}
-		has_trait = {
-			trait = lughs_own
-			value = 1
-		}
-		has_trait = {
-			trait = cavalier
-			value = 1
-		}
-		has_trait = {
-			trait = hivernant
-			value = 1
-		}
-		has_trait = {
-			trait = joropo_cantor
-			value = 1
-		}
-		has_trait = {
-			trait = medal_of_honor
-			value = 1
-		}
-		has_trait = {
 			trait = patriota
 			value = 1
 		}
@@ -3731,42 +3882,6 @@ warrior_lodge_americanist = {
 			trait = adventurer
 			factor = 1.1
 		}
-		modifier = {
-			trait = viking
-			factor = 1.1
-		}
-		modifier = {
-			trait = pirate
-			factor = 1.1
-		}
-		modifier = {
-			trait = ravager
-			factor = 1.1
-		}
-		modifier = {
-			trait = seaking
-			factor = 1.1
-		}
-		modifier = {
-			trait = sea_queen
-			factor = 1.1
-		}
-		modifier = {
-			trait = shieldmaiden
-			factor = 1.1
-		}
-		modifier = {
-			trait = berserker
-			factor = 1.1
-		}
-		modifier = {
-			trait = varangian
-			factor = 1.1
-		}
-		#modifier = {
-		#	trait = ares_own
-		#	factor = 1.1
-		#}
 		#NEGATIVE modifiers
 		modifier = {
 			trait = craven
@@ -3806,11 +3921,9 @@ warrior_lodge_americanist = {
 		trigger = {
 			ai = yes
 			controls_religion = no
-				OR = {
+			OR = {
 				religion = americanist
-				religion = hamiltonian
-				religion = jeffersonian
-				religion = libertarian
+				religion = americanist_reformed
 			}
 			is_adult = yes
 			is_in_society = no
