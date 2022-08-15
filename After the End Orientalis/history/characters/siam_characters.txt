@@ -23,7 +23,7 @@
 ### Central Thai - Thai Kingdom
 2310001 ={
 	name="Phra Hao"
-	dynasty=2310001 #Cheachaophandin
+	dynasty=2310001 #Kattiyawongse
 	culture=thai_central
 	religion=dharmayuttika
 	dna="ngbvjqpaiix"
@@ -42,11 +42,11 @@
 }
 2310002 ={
 	name="Krang"
-	dynasty=2310001 #Cheachaophandin
+	dynasty=2310001 #Kattiyawongse
+	father=2310001
 	culture=thai_central
 	religion=dharmayuttika
 	2602.1.12={birth=yes}
-	father=2310001
 }
 
 2310091 ={
@@ -140,6 +140,7 @@
 2310202 = {
 	name="Suea"
 	dynasty=2310201 #Phludang
+	father=2310201
 	culture=thai_central
 	religion=dharmayuttika
 	martial=5
@@ -151,7 +152,6 @@
 	trait=zealous
 	trait=proud
 	2589.2.5={birth=yes}
-	father=2310201
 }
 2310210 = {
 	name="Kiaeo Chantra"
@@ -609,6 +609,15 @@
 }
 
 ### North
+2312001 ={ # Mengrai daddy
+	name="Mengrai"
+	dynasty=2312002 #Langkapintha
+	culture=thai_mueang
+	religion=dharmayuttika
+	trait=midas_touched
+	2543.10.8={birth=yes}
+	2588.4.15={death=yes}
+}
 2312101 ={ # d_chiangmai/lanna
 	name="Cherdchu"
 	dynasty=2312002 #Langkapintha
@@ -624,6 +633,7 @@
 	trait=just
 	trait=zealous
 	2583.4.15={birth=yes}
+	father=2312001
 }
 2312201 ={ # d_phayao
 	name="Saeng-la"
@@ -667,6 +677,7 @@
 	trait=zealous
 	trait=chaste
 	2567.4.15={birth=yes}
+	father=2312001
 }
 2312401 ={ # c_uttharadit
 	name="Daab"
@@ -909,6 +920,7 @@
 2310153 ={ # post-event reign
 	name="Kalpa-avasarn"
 	dynasty=2310199
+	father=2310152
 	culture=thai_central
 	religion=dharmayuttika
 	trait=legendary #Highly legendary
@@ -933,19 +945,19 @@
 }
 2310171 ={ # post-event reign
 	name="Thammaracha"
-	dynasty=2310199
+	dynasty=2310001
 	culture=thai_central
 	religion=dharmayuttika
 	trait=legendary #Highly legendary
 	trait=mastermind_theologian
-	occluded=yes
+	#occluded=yes
 	#no-random-trait
 	2458.1.1={birth=yes}
 	2538.12.30={death=yes}
 }
 2310172 ={ # post-event reign
 	name="---"
-	dynasty=2310001
+	dynasty=2310199
 	culture=thai_central
 	religion=dharmayuttika
 	trait=legendary
@@ -957,6 +969,7 @@
 2310173 ={ # post-event reign
 	name="Phra-Ek"
 	dynasty=2310001
+	father=2310171
 	culture=thai_central
 	religion=dharmayuttika
 	trait=legendary #Less legendary now
