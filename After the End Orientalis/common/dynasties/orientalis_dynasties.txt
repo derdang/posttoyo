@@ -11231,10 +11231,49 @@ coat_of_arms = {
 2310905 = { name="Damkwan" culture=thai_central }
 2310906 = { name="Banhuaika" culture=thai_central }
 #Pattaya Patrician 
-2310991 = { name="Phikulavong" culture=thai_central }
-2310992 = { name="Kenway" culture=thai_central }
+2310991 = { name="Abhaiwongse" culture=thai_central 
+	coat_of_arms = {
+		religion = dharmayuttika
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2310992 = { name="Sityodtong" culture=thai_central 
+	coat_of_arms = {
+		religion = dharmayuttika
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2310993 = { name="Torpedovich" culture=primorskiy }
-2310994 = { name="Ansusingh" culture=thai_central }
+2310994 = { name="Saetan" culture=sinotai 
+	coat_of_arms = {
+		religion = dharmayuttika
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2310995 = { name="Wangrong" culture=thai_isan }
 2310996 = { name="Falkonivatha" culture=thai_central }
 
@@ -11290,7 +11329,20 @@ coat_of_arms = {
 2311203 = { name="Bhavabhutananda na Mahasaragama" culture=thai_isan } #Mahasarakham... and yep.
 2311204 = { name="na Sakonnakorn" culture=thai_isan }
 #Pun and placeholders -
-2311300 = { name="Namdam" culture=thai_isan }
+2311300 = { name="Namdam" culture=thai_isan 
+	coat_of_arms = {
+		religion = dharmayuttika
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 #Thai Mueang
 2312001 = { name="Dokmai" culture=thai_mueang } 
