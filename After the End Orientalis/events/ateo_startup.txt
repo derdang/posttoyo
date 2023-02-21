@@ -1,0 +1,111 @@
+namespace = ateo_landmarks
+
+character_event = {
+	id = ateo_landmarks.0
+	hide_window = yes
+	is_triggered_only = yes
+ 
+	only_rulers = yes
+ 
+	trigger = {
+		has_landed_title = e_tian #the off-map entity for all PINGS
+		NOT = { has_global_flag = landmarks_set }
+		has_game_rule = {
+			name = orientalis_landmarks
+			value = on
+		}
+		is_alternate_start = no
+	}
+ 
+	option = {
+	
+	#Vietnam
+		136 = {
+			add_province_modifier = { name = landmark_hoan_kiem_lake duration = -1 }
+			add_province_modifier = { name = landmark_hcm_mausoleum duration = -1 }
+		}
+		146 = {
+			add_province_modifier = { name = landmark_ha_long_bay duration = -1 }
+		}
+		160 = {
+			add_province_modifier = { name = landmark_sa_pa_terrace_farms duration = -1 }
+		}
+		161 = {
+			add_province_modifier = { name = landmark_forbidden_city_vn duration = -1 }
+			add_province_modifier = { name = landmark_phu_cam_cathedral duration = -1 }
+		}
+		168 = {
+			add_province_modifier = { name = landmark_my_son_ruins duration = -1 }
+			add_province_modifier = { name = landmark_ngu_hanh_son duration = -1 }
+		}
+		180 = {
+			add_province_modifier = { name = landmark_saigon_cathedral duration = -1 }
+		}
+		183 = {
+			add_province_modifier = { name = landmark_tay_ninh_cathedral duration = -1 }
+		}
+		189 = {
+			add_province_modifier = { name = landmark_the_coconut_estate duration = -1 }
+		}
+		191 = {
+			add_province_modifier = { name = landmark_an_binh_island duration = -1 }
+		}
+		194 = {
+			add_province_modifier = { name = landmark_sam_mountain duration = -1 }
+		}
+		
+	#Thailand
+		785 = {
+			add_province_modifier = { name = landmark_old_city_of_ayutthaya duration = -1 }
+		}
+		832 = {
+			add_province_modifier = { name = landmark_old_city_of_sukhothai duration = -1 }
+		}
+		838 = {
+			add_province_modifier = { name = landmark_doi_suthep duration = -1 }
+		}
+		
+	#Micronesia
+		976 = {
+			add_province_modifier = { name = landmark_nan_madol duration  = -1 }
+		}
+		set_global_flag = landmarks_set
+	}
+}
+
+character_event = {
+	id = ateo_startup.0
+	hide_window = yes
+	is_triggered_only = yes
+	
+	only_rulers = yes
+	
+	trigger = {
+		has_landed_title = e_tian #the off-map entity for all PINGS
+		NOT = { has_global_flag = pirate_havens_set }
+		is_alternate_start = no
+	}
+	
+	option = {
+		
+		#Maritime SEA
+		
+		360 = { #Lingga
+			add_province_modifier = { name = pirate_outpost duration = -1 }
+		}
+		
+		361 = { #Natuna
+			add_province_modifier = { name = pirate_outpost duration = -1 }
+		}
+		
+		362 = { #Kepulauan Anambas
+			add_province_modifier = { name = pirate_outpost duration = -1 }
+		}
+		
+		466 = { #Kanggean
+			add_province_modifier = { name = pirate_outpost duration = -1 }
+		}
+		
+		set_global_flag = pirate_havens_set
+	}
+}
