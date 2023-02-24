@@ -21,33 +21,352 @@
 # All names, culture and stats in this chart are not final.
 
 ### Central Thai - Thai Kingdom
+#Historical Thaioid
 2310001 ={
-	name="Phra Hao"
-	dynasty=2310001 #Kattiyawongse
-	culture=thai_central
-	religion=dharmayuttika
-	dna="ngbvjqpaiix"
-	martial=5
-	diplomacy=7
-	stewardship=8
-	intrigue=4
-	learning=5
-	trait=martial_cleric
-	trait=sturdy
-	trait=shrewd
-	trait=diligent
-	trait=stubborn
-	father=2310173
-	2570.4.15={birth=yes}
-}
+         name = "Wit" #Prawit Wongsuwan
+         dynasty = 2310013#Wongsuwan 
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "misguided_warrior" 
+         trait = "greedy" 
+         trait = "is_fat" 
+         trait = "uncouth" 
+         trait = "wroth" 
+         trait = "cruel" 
+         trait = "just"
+         disallow_random_traits=yes 
+         1945.8.11 = { 
+                 birth = yes 
+                 create_bloodline = { 
+                         type = wongsuwan_bloodline 
+                         has_dlc = "Holy Fury" 
+                 } 
+         } 
+         2030.6.20 = { 
+                 death = yes 
+         } 
+         }
 2310002 ={
-	name="Krang"
-	dynasty=2310001 #Kattiyawongse
-	father=2310001
+         name = "Yuth" #Yuth of Ayutthaya
+
+         dynasty = 2310013#Wongsuwan 
+         father = 2310001#Phra Wit
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "skilled_tactician" 
+         trait = "feeble" 
+         trait = "humble" 
+         trait = "erudite" 
+         trait = "zealous" 
+         trait = "groomed" 
+         trait = "brave"
+         disallow_random_traits=yes 
+         1980.8.21 = { 
+                 birth = yes
+         } 
+         2050.6.20 = { 
+                 death = yes 
+         } 
+         }
+2310003 ={
+         name = "Sith" #Sith the Lawgiver
+
+         dynasty = 2310013#Wongsuwan 
+         father = 2310002#Phra Yuth
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "elusive_shadow" 
+         trait = "proud" 
+         trait = "humble" 
+         trait = "gregarious" 
+         trait = "kind" 
+         trait = "deceitful" 
+         trait = "brave"
+         disallow_random_traits=yes 
+         2010.8.21 = { 
+                 birth = yes
+         } 
+         2090.6.20 = { 
+                 death = yes 
+         } 
+         }
+2310004 ={
+         name = "Bunmee" #Bunmee “Merry-Giver”
+
+         dynasty = 2310013#Wongsuwan 
+         father = 2310003#Phra Sith
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "martial_cleric" 
+         trait = "slothful" 
+         trait = "lustful" 
+         trait = "gregarious" 
+         trait = "kind" 
+         trait = "zealous" 
+         trait = "charitable"
+         disallow_random_traits=yes 
+         2076.8.21 = { 
+                 birth = yes
+         } 
+         2120.6.20 = { 
+                 death = yes 
+         } 
+         }
+2310005 ={
+         name = "Bunma" #Bunmee “Lord of The North”
+
+         dynasty = 2310014#Bunpanyama 
+         father = 2310004#Bunmee
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "naive_appeaser" 
+         trait = "diligent" 
+         trait = "patient" 
+         trait = "genius" 
+         trait = "kind" 
+         trait = "charitable" 
+         trait = "legit_bastard"
+         disallow_random_traits=yes 
+         2100.8.21 = { 
+                 birth = yes
+         } 
+         2164.6.20 = { 
+                 death = yes 
+         } 
+         }
+2310006 ={
+         name = "Petch" #Petch the Wealthy
+
+         dynasty = 2310013#Wongsuwan
+         father = 2310004#Bunmee
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "midas_touched" 
+         trait = "diligent" 
+         trait = "greedy" 
+         trait = "honest" 
+         trait = "envious" 
+         trait = "drunkard" 
+         trait = "slothful"
+         disallow_random_traits=yes 
+         2117.8.21 = { 
+                 birth = yes
+         } 
+         2160.6.20 = { 
+                 death = yes 
+         } 
+         }
+2310007 ={
+         name = "Mana" #Mana the Mage
+
+         dynasty = 2310013#Wongsuwan
+         father = 2310004#Bunmee
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "grey_eminence" 
+         trait = "sturdy" 
+         trait = "mystic" 
+         trait = "ambitious" 
+         trait = "envious" 
+         trait = "deceitful" 
+         trait = "lustful"
+         disallow_random_traits=yes 
+         2119.1.21 = { 
+                 birth = yes
+         } 
+         2190.1.20 = { 
+                 death = yes 
+         } 
+         }
+2310008 ={
+         name = "Bunrot" #Bunrot “Merit-Maker”
+
+         dynasty = 2310014#Bunpanyama 
+         father = 2310005#Bunma
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "mastermind_theologian" 
+         trait = "diligent" 
+         trait = "patient" 
+         trait = "zealous" 
+         trait = "kind" 
+         trait = "charitable" 
+         trait = "scholar"
+         disallow_random_traits=yes 
+         2140.8.21 = { 
+                 birth = yes
+         } 
+         2200.6.20 = { 
+                 death = yes 
+         } 
+         }
+2310009 ={
+         name = "Panya" #Panya the Protestant
+         dynasty = 2310014#Bunpanyama
+         father = 2310008#Bunrot
+         culture=thai_central
+         religion=parimatira
+         trait = "detached_priest"
+         trait = "paranoid"
+         trait = "patient"
+         trait = "zealous"
+         trait = "stubborn"
+         trait = "dull"
+         trait = "temperate"
+         disallow_random_traits=yes
+         2180.8.21 = {
+                 birth = yes
+         }
+         2240.6.20 = {
+                 death = yes 
+         }
+         }
+2310010 ={
+         name = "Phrom" #Phra Phrom
+         dynasty = 2310014#Bunpanyama
+         father = 2310009#Panya
+         culture=thai_central
+         religion=dharmayuttika
+         trait = "detached_priest"
+         trait = "deceitful"
+         trait = "patient"
+         trait = "kind"
+         trait = "trusting"
+         trait = "greedy"
+         trait = "temperate"
+         disallow_random_traits=yes 
+         2230.8.21 = { 
+                 birth = yes
+         } 
+         2260.6.20 = { 
+                 death = yes 
+         }
+         }
+2310011 ={
+         name = "Suchart" #Suchart the Soldier
+
+         dynasty = 2310014#Bunpanyama 
+         father = 2310010#Phrom
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "skilled_tactician" 
+         trait = "brave" 
+         trait = "kind" 
+         trait = "just" 
+         trait = "ambitious" 
+         trait = "shrewd" 
+         trait = "temperate"
+         disallow_random_traits=yes 
+         2250.8.21 = { 
+                 birth = yes
+         } 
+         2300.6.20 = { 
+                 death = yes 
+         } 
+         }
+2310012 ={
+         name = "Somchai" #Somchai
+
+         dynasty = 2310014#Bunpanyama 
+         father = 2310011#Suchart
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "misguided_warrior" 
+         trait = "paranoid" 
+         trait = "honest" 
+         trait = "slothful" 
+         trait = "stubborn" 
+         trait = "frail" 
+         trait = "depressed"
+         disallow_random_traits=yes 
+         2289.8.21 = { 
+                 birth = yes
+         } 
+         2330.6.20 = { 
+                 death = yes 
+         } 
+         }
+2310013 ={
+         name = "Langwang" #Langwang
+
+         dynasty = 2310014#Bunpanyama 
+         father = 2310012#Somchai
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "grey_eminence" 
+         trait = "gluttonous" 
+         trait = "honest" 
+         trait = "brave" 
+         trait = "stubborn" 
+         trait = "frail" 
+         trait = "is_fat"
+         disallow_random_traits=yes 
+         2310.8.21 = { 
+                 birth = yes
+         } 
+         2360.6.20 = { 
+                 death = yes 
+         }
+         }
+2310014 ={
+         name = "Suwan" #Suwan the Restorer
+
+         dynasty = 2310014#Bunpanyama 
+         father = 2310012#Somchai
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "misguided_warrior" 
+         trait = "brave" 
+         trait = "ambitious" 
+         trait = "diligence" 
+         trait = "patient" 
+         trait = "humble" 
+         trait = "just"
+         disallow_random_traits=yes 
+         2330.1.21 = { 
+                 birth = yes
+         } 
+         2358.6.20 = { 
+                 death = yes 
+         } 
+         }
+2310015 ={
+         name = "Keo" #Keo, wife of Khmer
+
+         dynasty = 2310014#Bunpanyama 
+         father = 2310013#Langwang
+         culture=thai_central 
+         religion=dharmayuttika
+         trait = "grey_eminence" 
+         trait = "ambitious" 
+         trait = "envious" 
+         trait = "brave" 
+         trait = "stubborn" 
+         trait = "deceitful" 
+         trait = "just"
+         female = yes
+         disallow_random_traits=yes 
+         2350.8.21 = { 
+                 birth = yes
+         } 
+         2415.6.20 = { 
+                 death = yes 
+         } 
+         }
+
+#Krung Thep Oligarch
+2310050 ={ # Old Money
+	name="Ahmad"
+	dynasty=2310015 #Bunnag
 	culture=thai_central
-	religion=dharmayuttika
-	2602.1.12={birth=yes}
+	religion=senthang
+	trait=charismatic_negotiator
+	trait=just
+	trait=shrewd
+	trait=mystic
+	2576.7.15={birth=yes}
 }
+
 
 2310091 ={
 	name="Sagat"
@@ -65,9 +384,6 @@
 	trait=brawny
 	trait=stubborn
 	2577.4.1={birth=yes}
-	2589.1.1={
-		employer=2310001
-	}
 }
 2310093 ={
 	name="Poomin"
@@ -861,107 +1177,4 @@
 	trait=shrewd
 	trait=diligent
 	2585.4.15={birth=yes}	
-}
-
-##History 2310150 - 199
-2310150 ={ # post-event Golden Age
-	name="Yukthong Khong Thai"
-	dynasty=2310199
-	culture=thai_central
-	religion=dharmayuttika
-	martial=40
-	diplomacy=40
-	stewardship=40
-	learning=40
-	trait=legendary #Highly legendary
-	occluded=yes
-	#no-random-trait
-	2070.1.1={birth=yes}
-	2205.12.30={death=yes}
-}
-2310151 ={ # post-event Golden Age
-	name="Siam Devadhiraj"
-	dynasty=2310199
-	culture=thai_central
-	religion=dharmayuttika
-	martial=40
-	diplomacy=40
-	stewardship=40
-	learning=40
-	trait=legendary #Highly legendary
-	occluded=yes
-	#no-random-trait
-	1782.1.1={birth=yes}
-	2282.12.30={death=yes}
-}
-2310152 ={ # post-event reign
-	name="---"
-	dynasty=2310199
-	culture=thai_central
-	religion=dharmayuttika
-	trait=legendary #Highly legendary
-	occluded=yes
-	#no-random-trait
-	2265.1.1={birth=yes}
-	2307.1.30={death=yes}
-}
-2310153 ={ # post-event reign
-	name="Kalpa-avasarn"
-	dynasty=2310199
-	father=2310152
-	culture=thai_central
-	religion=dharmayuttika
-	trait=legendary #Highly legendary
-	occluded=yes
-	#no-random-trait
-	2296.1.1={birth=yes}
-	2310.12.29={death=yes}
-}
-##The Chaotic Fall : 2310154 - 170
-
-##The Restoration : 170 - 199
-2310170 ={ # post-event reign
-	name="---"
-	dynasty=2310199
-	culture=thai_central
-	religion=dharmayuttika
-	trait=legendary #Highly legendary
-	occluded=yes
-	#no-random-trait
-	2410.1.1={birth=yes}
-	2458.12.30={death=yes}
-}
-2310171 ={ # post-event reign
-	name="Thammaracha"
-	dynasty=2310001
-	culture=thai_central
-	religion=dharmayuttika
-	trait=legendary #Highly legendary
-	trait=mastermind_theologian
-	#occluded=yes
-	#no-random-trait
-	2458.1.1={birth=yes}
-	2538.12.30={death=yes}
-}
-2310172 ={ # post-event reign
-	name="---"
-	dynasty=2310199
-	culture=thai_central
-	religion=dharmayuttika
-	trait=legendary
-	occluded=yes
-	#no-random-trait
-	2458.1.1={birth=yes}
-	2538.12.30={death=yes}
-}
-2310173 ={ # post-event reign
-	name="Phra-Ek"
-	dynasty=2310001
-	father=2310171
-	culture=thai_central
-	religion=dharmayuttika
-	trait=legendary #Less legendary now
-	#no-random-trait
-	2516.10.14={birth=yes}
-	2591.4.15={death=yes}
 }
