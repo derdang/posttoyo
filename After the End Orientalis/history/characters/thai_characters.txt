@@ -348,10 +348,148 @@
          disallow_random_traits=yes 
          2350.8.21 = { 
                  birth = yes
-         } 
+         }
+		 2380.12.29 = {
+				add_spouse=2310016
+		}
          2415.6.20 = { 
                  death = yes 
          } 
+         }
+2310016 ={
+         name = "Baen" #Khmer husband
+         dynasty = 2310001#Kattiyawongse 
+         culture=khmer
+         religion=dharmayuttika
+         trait = "misguided_warrior" 
+         trait = "ambitious" 
+         trait = "lustful" 
+         trait = "brave" 
+         trait = "stubborn" 
+         trait = "wroth" 
+         trait = "just"
+         disallow_random_traits=yes 
+         2342.8.21 = { 
+                 birth = yes
+				 culture=thai_central
+         }
+		 2380.12.29 = {
+				add_spouse=2310015
+		}
+         2400.6.20 = { 
+                 death = yes 
+         }
+         }
+2310017 ={
+         name = "Burin" #Burin the Based
+         dynasty = 2310001#Kattiyawongse
+		 father=2310016#Baen
+		 mother=2310015#Keo
+         culture=khmer
+         religion=dharmayuttika
+         trait = "skilled_tactician" 
+         trait = "shrewd" 
+         trait = "strong" 
+         trait = "brave" 
+         trait = "stubborn" 
+         trait = "ambitious" 
+         trait = "deceitful"
+         disallow_random_traits=yes 
+         2400.1.1 = { 
+                 birth = yes
+				 culture=thai_central
+         }
+         2425.6.20 = { 
+                 death = yes 
+         }
+         }
+2310018 ={
+         name = "Buruth" #Buruth the Kid
+         dynasty = 2310001#Kattiyawongse
+		 father=2310017#Burin
+         culture=khmer
+         religion=dharmayuttika
+         trait = "tough_soldier" 
+         trait = "genius" 
+         trait = "wroth" 
+         trait = "brave" 
+         trait = "stubborn" 
+         trait = "ambitious" 
+         trait = "sturdy"
+         disallow_random_traits=yes 
+         2419.1.1 = { 
+                 birth = yes
+				 culture=thai_central
+         }
+         2487.6.20 = { 
+                 death = yes 
+         }
+         }
+2310019 ={
+         name = "Kamhaeng" #Kamhaeng the Knight
+         dynasty = 2310001#Kattiyawongse
+		 father=2310018#Buruth
+         culture=khmer
+         religion=dharmayuttika
+         trait = "misguided_warrior" 
+         trait = "lustful" 
+         trait = "deceitful" 
+         trait = "paranoid" 
+         trait = "stubborn" 
+         trait = "ambitious" 
+         trait = "sturdy"
+         disallow_random_traits=yes 
+         2470.1.1 = { 
+                 birth = yes
+				 culture=thai_central
+         }
+         2530.6.20 = { 
+                 death = yes 
+         }
+         }
+2310020 ={
+         name = "Chadchai" #Chadchai the Chariot
+         dynasty = 2310001#Kattiyawongse
+		 father=2310019#Kamhaeng
+         culture=khmer
+         religion=dharmayuttika
+         trait = "misguided_warrior" 
+         trait = "quick" 
+         trait = "deceitful" 
+         trait = "cruel" 
+         trait = "stubborn" 
+         trait = "ambitious" 
+         trait = "sturdy"
+         disallow_random_traits=yes 
+         2510.1.1 = { 
+                 birth = yes
+				 culture=thai_central
+         }
+         2560.6.20 = { 
+                 death = yes 
+         }
+         }
+2310021 ={
+         name = "Chaiya" #Chaiya the Commander
+         dynasty = 2310001#Kattiyawongse
+		 father=2310019#Kamhaeng
+         culture=khmer
+         religion=dharmayuttika
+         trait = "brilliant_strategist" 
+         trait = "maimed"
+         trait = "content"
+         trait = "lefthanded"
+         trait = "stubborn"
+         trait = "kind"
+         trait = "groomed"
+         disallow_random_traits=yes 
+         2530.1.1 = { 
+                 birth = yes
+				 culture=thai_central
+         }
+         2590.6.20 = { 
+                 death = yes 
+         }
          }
 
 #Krung Thep Oligarch
@@ -366,6 +504,30 @@
 	trait=mystic
 	2576.7.15={birth=yes}
 }
+
+#Ruler of Suvanabhum
+2310069 ={
+         name = "Konthai" #Konthai the King
+         dynasty = 2310001#Kattiyawongse
+		 father=2310021#Chaiya
+         culture=khmer
+         religion=dharmayuttika
+         trait = "underhanded_rogue" 
+         trait = "feeble"
+         trait = "ambitious"
+         trait = "lefthanded"
+         trait = "lunatic"
+         trait = "scholar"
+         trait = "dull"
+         disallow_random_traits=yes 
+         2575.1.1 = { 
+                 birth = yes
+				 culture=thai_central
+         }
+         2690.6.20 = { 
+                 death = yes 
+         }
+         }
 
 
 2310091 ={

@@ -51,3 +51,44 @@ baekdu_bloodline = { #...
 	picture = GFX_bloodlines_placeholder_symbol
 	flags = { historical_bloodline }
 }
+wongsuwan_bloodline = { #...
+	monthly_character_prestige = 0.1
+	thai_central_opinion = 5
+
+	inheritance = patrilineal
+	active = {
+		custom_tooltip = {
+			text = saintly_bloodline_same_culture_TT
+			FROM = {
+				founder = {
+					culture = ROOT
+				}
+			}
+		}
+	}
+	flags = { historical_bloodline }
+}
+bunnag_bloodline = {
+	city_vassal_tax_modifier = 0.05
+	town_opinion = 5
+	build_cost_city_modifier = -0.05
+	build_time_city_modifier = -0.05
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_buddhist
+	flags = { historical_bloodline }
+}
+varman_bloodline = {
+	picture = GFX_bloodlines_symbol_buddhist
+	monthly_character_prestige=0.1
+	monthly_character_piety = 0.25
+	buddhist_group_opinion = 5
+	cambodian_opinion = 10
+	build_time_temple_modifier = -0.25
+	build_cost_temple_modifier = -0.25
+	active = {
+		religion_group = buddhist_group
+	}
+	inheritance = patrilineal
+	flags = { historical_bloodline bloodline_cambodian }
+}
