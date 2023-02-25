@@ -502,7 +502,25 @@
 	trait=just
 	trait=shrewd
 	trait=mystic
-	2576.7.15={birth=yes}
+	2576.7.15={birth=yes
+	 create_bloodline = { 
+                         type = bunnag_bloodline 
+                         has_dlc = "Holy Fury" 
+                 }
+	}
+}
+
+2310055 ={ # Old Mon-ey
+	name="Charta"
+	dynasty=2310016 #Bunnag
+	culture=thai_central
+	religion=dharmayuttika
+	trait=thrifty_clerk
+	trait=kind
+	trait=paranoid
+	trait=craven
+	2569.7.15={birth=yes
+	}
 }
 
 #Ruler of Suvanabhum
@@ -663,7 +681,7 @@
 	trait=proud
 	2596.5.20={birth=yes}
 }
-2310302 ={ # Konstantyn Falkov?
+2310302 ={ # Phet's Greek lover
 	name="Konstantyn"
 	dynasty=2310996 #Falkov-Thaified
 	culture=primorskiy
@@ -678,7 +696,7 @@
 	trait=shrewd
 	trait=diligent
 	2570.4.15={birth=yes}
-	2604.4.1={employer=2310301}
+	2604.4.1={employer=2310201}
 }
 2310401 ={ # d_uthaithani
 	name="Wichit"

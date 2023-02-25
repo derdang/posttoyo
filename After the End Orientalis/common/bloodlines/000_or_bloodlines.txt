@@ -54,18 +54,7 @@ baekdu_bloodline = { #...
 wongsuwan_bloodline = { #...
 	monthly_character_prestige = 0.1
 	thai_central_opinion = 5
-
-	inheritance = patrilineal
-	active = {
-		custom_tooltip = {
-			text = saintly_bloodline_same_culture_TT
-			FROM = {
-				founder = {
-					culture = ROOT
-				}
-			}
-		}
-	}
+	inheritance = all_descendants
 	flags = { historical_bloodline }
 }
 bunnag_bloodline = {

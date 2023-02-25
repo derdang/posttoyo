@@ -156,21 +156,6 @@ e_thailand = {
 				b_in_buri = {}
 				b_mueang_sing_2 = {}
 			}
-			c_suphanburi = { # 785
-				color={ 179 167 93 }
-				color2={ 255 255 255 }
-				myr = "Thuwannapuri"
-				
-				b_suphanburi = {
-				myr = "Thuwannapuri"
-				}
-				b_sam_chuk = {}
-				b_don_chedi = {}
-				b_dan_chang = {}
-				b_song_phi_nong = {}
-				b_doi_chedi = {}
-				b_doem_bang = {}
-			}
 		}
 		d_lopburi = {
 			color={ 166 119 22 }
@@ -293,14 +278,30 @@ e_thailand = {
 				b_sam_roi_yot = {}
 			}
 		}
-		d_uthaithani = {
+		d_suphanburi = {
 			color={ 161 125 43 }
 			color2={ 255 255 255 }
 			
-			capital = 788 # c_uthai_thani
+			capital = 785 # c_suphanburi
 			
-			myr = "Udaya Htani"
+			myr = "Thuwannapuri"
 			
+			
+			c_suphanburi = { # 785
+				color={ 179 167 93 }
+				color2={ 255 255 255 }
+				myr = "Thuwannapuri"
+				
+				b_suphanburi = {
+				myr = "Thuwannapuri"
+				}
+				b_sam_chuk = {}
+				b_don_chedi = {}
+				b_dan_chang = {}
+				b_song_phi_nong = {}
+				b_doi_chedi = {}
+				b_doem_bang = {}
+			}
 			c_uthai_thani = { # 788
 				color={ 151 135 38 }
 				color2={ 255 255 255 }
@@ -923,25 +924,13 @@ e_thailand = {
 				b_song_2 = {}
 				b_wang_chin = {}
 			}
-			c_uttaradit = { # 847
-				color={ 162 80 173 }
-				color2={ 255 255 255 }
-				
-				b_uttaradit = {}
-				b_tha_pla = {}
-				b_fak_tha = {}
-				b_laplae = {}
-				b_phichai = {}
-				b_nam_pat = {}
-				b_tron = {}
-			}
 		}
 	}
 	k_pak_tai = {
 		color={ 122 172 215 }
 		color2={ 255 255 255 }
 		
-		capital = 802 # c_surat_thani
+		capital = 813 # c_nakhon_sri_thammarat
 		culture = thai_paktai
 		
 		allow = {
@@ -952,7 +941,7 @@ e_thailand = {
 			color={ 175 251 242 }
 			color2={ 255 255 255 }
 			
-			capital = 804 # c_chumphon
+			capital = 802 # c_surat_thani
 			
 			c_chumphon = { # 804
 				color={ 185 241 247 }
@@ -1233,6 +1222,53 @@ e_thailand = {
 				b_khlong_khlung = {}
 				b_phran_kratai = {}
 			}
+		}
+		d_phitsanulok = {
+			color={ 141 98 212 }
+			color2={ 255 255 255 }
+			
+			capital = 835 # c_phitsanulok
+			
+			myr = "Wathulawka"
+			
+			
+			c_phitsanulok = { # 835
+				color={ 150 142 195 }
+				color2={ 255 255 255 }
+				myr = "Wathulawka"
+				
+				b_phitsanulok = {
+				myr = "Wathulawka"
+				}
+				b_nakhon_thai = {}
+				b_wang_thong = {}
+				b_bang_rakam = {}
+				b_bang_krathum = {}
+				b_phrom_phiram = {}
+				b_noen_maprang = {}
+			}
+			c_uttaradit = { # 847
+				color={ 162 80 173 }
+				color2={ 255 255 255 }
+				
+				b_uttaradit = {}
+				b_tha_pla = {}
+				b_fak_tha = {}
+				b_laplae = {}
+				b_phichai = {}
+				b_nam_pat = {}
+				b_tron = {}
+			}
+		}
+		d_phichit = {
+			color={ 130 117 192 }
+			color2={ 255 255 255 }
+			
+			capital = 837 # c_phichit
+			
+			myr = "Wizitta"
+			
+			
 			c_nakhon_sawan = { # 833
 				color={ 114 103 167 }
 				color2={ 255 255 255 }
@@ -1278,21 +1314,6 @@ e_thailand = {
 				b_bang_mun_nak = {}
 				b_pho_thale = {}
 				b_sam_ngam = {}
-			}
-			c_phitsanulok = { # 835
-				color={ 150 142 195 }
-				color2={ 255 255 255 }
-				myr = "Wathulawka"
-				
-				b_phitsanulok = {
-				myr = "Wathulawka"
-				}
-				b_nakhon_thai = {}
-				b_wang_thong = {}
-				b_bang_rakam = {}
-				b_bang_krathum = {}
-				b_phrom_phiram = {}
-				b_noen_maprang = {}
 			}
 		}
 	}

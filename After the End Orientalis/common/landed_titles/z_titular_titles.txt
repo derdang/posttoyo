@@ -214,12 +214,19 @@ d_pattaya = {
 	allow = { is_republic = yes }
 	culture = thai_central
 }
-d_phitsanulok = {
-	color = { 160 142 40 }
-	color2={ 100 180 100 }
-	
-	capital = 798 #Phitsanulok
+e_suvanaphum = {
+	color = { 37 9 70 }
+	color2={ 240 0 0 }
+	capital = 785 # c_suphanburi
 	culture = thai_central
+	short_name= yes
+}
+k_khorat = {
+	color = { 212 153 132 }
+	color2={ 240 0 0 }
+	capital = 816 # c_mueang_korat
+	culture = thai_isan
+	short_name= yes
 }
 k_fujian = {
 	color={ 64 193 137 }
