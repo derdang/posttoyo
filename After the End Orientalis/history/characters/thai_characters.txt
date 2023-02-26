@@ -34,6 +34,7 @@
          trait = "wroth" 
          trait = "cruel" 
          trait = "just"
+		 occulded=yes
          disallow_random_traits=yes 
          1945.8.11 = { 
                  birth = yes 
@@ -496,18 +497,80 @@
 2310050 ={ # Old Money
 	name="Ahmad"
 	dynasty=2310015 #Bunnag
+	father=2310051#Pichai
 	culture=thai_central
 	religion=senthang
 	trait=charismatic_negotiator
 	trait=just
 	trait=shrewd
 	trait=mystic
+	disallow_random_traits=yes 
 	2576.7.15={birth=yes
-	 create_bloodline = { 
-                         type = bunnag_bloodline 
-                         has_dlc = "Holy Fury" 
+	}
+}
+2310051 ={ # Old Daddy
+	name="Pichai"
+	father=2310052#Piya
+	dynasty=2310015 #Bunnag
+	culture=thai_central
+	religion=dharmayuttika
+	trait=charismatic_negotiator
+	trait=just
+	trait=shrewd
+	trait=mystic
+	disallow_random_traits=yes 
+	2550.7.15={birth=yes
+	}
+	2593.4.13={death=yes}
+}
+2310052 ={ # Gramp
+	name="Piya"
+	father=2310053#Wuso
+	dynasty=2310015 #Bunnag
+	culture=thai_central
+	religion=dharmayuttika
+	trait=charismatic_negotiator
+	trait=just
+	trait=shrewd
+	trait=mystic
+	disallow_random_traits=yes 
+	2499.7.15={birth=yes
+	}
+	2570.4.13={death=yes}
+}
+2310053 ={ # Grand Gramp
+	name="Wuso"
+	father=2310054#Chao Phraya
+	dynasty=2310015 #Bunnag
+	culture=thai_central
+	religion=dharmayuttika
+	trait=charismatic_negotiator
+	trait=just
+	trait=shrewd
+	trait=mystic
+	disallow_random_traits=yes 
+	2460.7.15={birth=yes
+	}
+	2530.4.13={death=yes}
+}
+2310054 ={ # Forefather of Chao Phraya
+	name="Chao Phraya"
+	dynasty=2310017 #Devadhiraj
+	culture=thai_central
+	religion=dharmayuttika
+	trait=charismatic_negotiator
+	trait=just
+	trait=shrewd
+	trait=legendary
+	occulded=yes
+	disallow_random_traits=yes 
+	2200.1.1={birth=yes
+	create_bloodline = {
+                         type = bunnag_bloodline
+                         has_dlc = "Holy Fury"
                  }
 	}
+	2530.4.13={death=yes}
 }
 
 2310055 ={ # Old Mon-ey
@@ -520,6 +583,45 @@
 	trait=paranoid
 	trait=craven
 	2569.7.15={birth=yes
+	}
+}
+
+2310060 ={ #Chacheongsao
+	name="Somchai"
+	dynasty=2310018 #Khunprome
+	culture=thai_central
+	religion=dharmayuttika
+	trait=thrifty_clerk
+	trait=kind
+	trait=paranoid
+	trait=craven
+	2569.7.15={birth=yes
+	}
+}
+
+2310065 ={ #Nakhon Pathom
+	name="Banyat"
+	dynasty=2310019 #Silpa-Rachan
+	culture=thai_central
+	religion=dharmayuttika
+	trait=thrifty_clerk
+	trait=just
+	trait=authoritative
+	trait=pious
+	2575.7.15={birth=yes
+	}
+}
+
+2310070 ={ #
+	name="Reuang-Rit"
+	dynasty=2310020 #Sunthornkul
+	culture=thai_central
+	religion=dharmayuttika
+	trait=martial_cleric
+	trait=poet
+	trait=kind
+	trait=charitable
+	2580.7.15={birth=yes
 	}
 }
 
