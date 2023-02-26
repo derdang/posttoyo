@@ -49,6 +49,7 @@
 2317120={ #Duke of Champassak
 	name="Champa"
 	dynasty=1353329 #Savaddy
+	father=2317125#Buppha
 	culture=laotian
 	religion=dhamsoc
 	martial=5
@@ -64,9 +65,24 @@
 	trait=stubborn
 	2580.5.1={birth=yes}
 }
+2317125={ #Daddy of Champassak
+	name="Buppha"
+	dynasty=1353329 #Savaddy
+	culture=laotian
+	religion=dhamsoc
+	trait=thrifty_clerk
+	trait=strong
+	trait=brave
+	trait=diligent
+	trait=just
+	trait=ambitious
+	2560.5.1={birth=yes}
+	2590.1.1={death=yes}
+}
 2317130={ #Counts of Savannakhet and Khammouane
 	name="Sinxay"
 	dynasty=1353329 #Savaddy
+	father=2317125#Buppha
 	culture=laotian
 	religion=dhamsoc
 	martial=5
@@ -83,7 +99,7 @@
 }
 2317135={ #Austroasiatic lord
 	name="Chao Brao"
-	#dynasty=1353329
+	#dynasty=1183001 #Sai-Ya
 	culture=loeu #Brao
 	religion=dhamsoc #SEA animist equivalent?
 	martial=5

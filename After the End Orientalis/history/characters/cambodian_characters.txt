@@ -23,7 +23,7 @@
 #Important Characters go here
 1181001 ={ #Phnom Penh duke
 	name="Many"
-	dynasty=1181000
+	dynasty=1181000	#Sok
 	culture=khmer
 	religion=dharmayuttika
 	martial=5
@@ -39,9 +39,10 @@
 	trait=kind
 	2571.5.1={birth=yes}
 }
-1181011 ={ #Angkor duke, I imagine this one is ideal for players that wish to restore Khmer Empire
+1181011 ={ #Duke of Siem Reap
 	name="Chhaya"
-	dynasty=1181001 
+	dynasty=1181001 #Chan
+	father=1181013 #Chan Kosal
 	culture=khmer
 	religion=dharmayuttika
 	martial=6
@@ -57,9 +58,10 @@
 	trait=cynical
 	2581.12.1={birth=yes}
 }
-1181012 ={ #Count of Pursat, take some counties out of Angkor's desmene
+1181012 ={ #Count of Pursat
 	name="Chhouk"
-	dynasty=1181001 
+	dynasty=1181001 #Chan
+	father=1181013 #Chan Kosal
 	culture=khmer
 	religion=dharmayuttika
 	martial=4
@@ -71,9 +73,19 @@
 	trait=temperate
 	2584.12.1={birth=yes}
 }
+1181013 ={ #Father of Siem Reap duke
+	name="Kosal"
+	dynasty=1181001 #Chan
+	culture=khmer
+	religion=dharmayuttika
+	trait=tough_soldier
+	trait=brave
+	2555.5.5={birth=yes}
+	2600.1.1={death=yes}
+}
 1181021 ={ #Count of Kratie, Vassal of Loeu lord
 	name="Khem"
-	dynasty=1181002 
+	dynasty=1181002 #Chea
 	culture=khmer
 	religion=dharmayuttika
 	martial=4
@@ -89,7 +101,7 @@
 }
 1181031 ={ #Count of Pray Veng and Svay Rieng
 	name="Arun"
-	dynasty=1181003
+	dynasty=1181003 #San
 	culture=khmer
 	religion=dharmayuttika
 	martial=3
@@ -107,7 +119,7 @@
 #Rival Clan of Hmong
 2500001={ #Hmong Lord
 	name="Cai"
-	dynasty=2500001
+	dynasty=2500001 #Tsaab
 	culture=hmong
 	religion=catholic
 	martial=3
@@ -126,7 +138,7 @@
 
 1022003={ #Tai Count under Luang Prabang
 	name="Haw"
-	dynasty=1022001
+	dynasty=1022001 #Saeueng
 	culture=tai
 	religion=dharmayuttika
 	martial=2
@@ -143,7 +155,7 @@
 }
 1177003={ #Kampong Cham Lord
 	name="Sri Mara"
-	dynasty=1177002
+	dynasty=1177002 #Indra
 	culture=cham
 	religion=senthang
 	martial=1
@@ -166,7 +178,7 @@
 }
 1178001={ #Ratanakiri Lord
 	name="Sri Kiri"
-	dynasty=1177001
+	dynasty=1177001 #Trà
 	culture=jarai
 	religion=senthang
 	martial=1
@@ -187,7 +199,7 @@
 }
 1183000={ #Mondulkiri Lord
 	name="Kheng"
-	dynasty=1183000
+	dynasty=1183000 #Om-Ka
 	culture=loeu
 	religion=senthang
 	martial=1
