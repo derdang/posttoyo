@@ -570,12 +570,13 @@
                          has_dlc = "Holy Fury"
                  }
 	}
-	2530.4.13={death=yes}
+	2490.4.13={death=yes}
 }
 
 2310055 ={ # Old Mon-ey
 	name="Charta"
-	dynasty=2310016 #Bunnag
+	father=2310056#Muen-Wai
+	dynasty=2310016 #Khotchaseni
 	culture=thai_central
 	religion=dharmayuttika
 	trait=thrifty_clerk
@@ -585,6 +586,68 @@
 	2569.7.15={birth=yes
 	}
 }
+2310056 ={ # Old Daddy
+	name="Muen-Wai"
+	father=2310057 #Inn
+	dynasty=2310016 #Khotchaseni
+	culture=thai_central
+	religion=dharmayuttika
+	trait=charismatic_negotiator
+	trait=just
+	trait=shrewd
+	trait=mystic
+	disallow_random_traits=yes 
+	2530.7.15={birth=yes
+	}
+	2593.4.13={death=yes}
+}
+
+2310057 ={ # Gramp
+	name="Inn"
+	father=2310058#Wuso
+	dynasty=2310016 #Khotchaseni
+	culture=thai_central
+	religion=dharmayuttika
+	trait=charismatic_negotiator
+	trait=just
+	trait=shrewd
+	trait=mystic
+	disallow_random_traits=yes 
+	2499.7.15={birth=yes
+	}
+	2570.4.13={death=yes}
+}
+2310058 ={ # Grand Gramp
+	name="Senai"
+	father=2310059#Pya
+	dynasty=2310016 #Khotchaseni
+	culture=thai_central
+	religion=dharmayuttika
+	trait=charismatic_negotiator
+	trait=just
+	trait=shrewd
+	trait=mystic
+	disallow_random_traits=yes 
+	2460.7.15={birth=yes
+	}
+	2530.4.13={death=yes}
+}
+2310059 ={ # Grand Gramp
+	name="Pya"
+	dynasty=2310016 #Khotchaseni
+	father=2310054#Chao Phraya
+	culture=mon
+	religion=dharmayuttika
+	trait=charismatic_negotiator
+	trait=just
+	trait=shrewd
+	trait=mystic
+	disallow_random_traits=yes 
+	2350.7.15={birth=yes
+	}
+	2432.4.13={death=yes}
+}
+
 
 2310060 ={ #Chacheongsao
 	name="Somchai"
@@ -622,6 +685,7 @@
 	trait=kind
 	trait=charitable
 	2580.7.15={birth=yes
+	wealth=-50
 	}
 }
 
@@ -968,7 +1032,9 @@
 	trait=physician
 	trait=shrewd
 	trait=mystic
-	2584.7.15={birth=yes}
+	2584.7.15={birth=yes
+	wealth=100
+	}
 }
 2310920 ={ # Boxer
 	name="Ted"
@@ -983,6 +1049,7 @@
 	trait=wroth
 	2570.4.15={birth=yes
 	culture=thai_central
+	wealth=100
 	}
 }
 2310930 ={ # Expat
@@ -1011,7 +1078,9 @@
 	trait=sturdy
 	trait=diligent
 	trait=quick
-	2589.4.15={birth=yes}
+	2589.4.15={birth=yes
+	wealth=250
+	}
 }
 2310950 ={ # Thai patrician in Pattaya. Subject to change.
 	name="Jaa"
