@@ -19,7 +19,11 @@ e_thailand = {
 		capital = 778 # c_phra_nakhon
 		culture = thai_central
 		
-		
+		allow = {
+		NOR = { has_landed_title=k_ayothaya
+					has_landed_title=k_suvanaphum
+					}
+					}
 		
 		d_palimonthon = {
 			color={ 238 1 61 }
@@ -343,6 +347,13 @@ e_thailand = {
 		capital = 794 # c_prachinburi
 		culture = thai_central
 		
+		allow={
+		NOR = { has_landed_title=k_prachimdisa
+					has_landed_title=k_chanthabun
+					has_landed_title=k_nikhom
+					}
+		}
+		
 		d_prachinburi = {
 			color={ 78 198 141 }
 			color2={ 255 255 255 }
@@ -492,6 +503,10 @@ e_thailand = {
 				completely_controls = c_roi_et
 				completely_controls = c_ubon_ratchathani
 				completely_controls = c_udon_thani
+				NOR = { has_landed_title=k_buaban
+					has_landed_title=k_udonratchathani
+					has_landed_title=k_khorat
+					}
 			}
 		
 		d_nakhon_ratchasima = {
@@ -935,6 +950,11 @@ e_thailand = {
 		
 		allow = {
 			NOT = {primary_title = {higher_tier_than = KING}} # Neighboring Empire should only allowed to form this title with viceroyalty or higher legalism. (Maybe with event?)
+			NOR = { has_landed_title=k_junk_ceylons
+					has_landed_title=k_si_thammarat
+					has_landed_title=k_singhaburi
+					has_landed_title=k_chaiya
+					} #Centralise via decisions
 		}
 		
 		d_surat = {
@@ -1337,6 +1357,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_isan }
 				}
 			}
+			NOT = {has_landed_title = k_isan}
 		}
 	}
 	k_khorat = {
@@ -1357,6 +1378,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_isan }
 				}
 			}
+			NOT = {has_landed_title = k_isan}
 		}
 	}
 	k_buaban = {
@@ -1377,6 +1399,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_isan }
 				}
 			}
+			NOT = {has_landed_title = k_isan}
 		}
 	}
 	k_lopburi = {
@@ -1397,6 +1420,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_mahanakorn }
 				}
 			}
+			NOT = {has_landed_title = k_mahanakorn}
 		}
 	}
 	k_suvanaphum = {
@@ -1417,6 +1441,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_mahanakorn }
 				}
 			}
+			NOT = {has_landed_title = k_mahanakorn}
 		}
 	}
 	k_rattanakosin = {
@@ -1437,6 +1462,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_mahanakorn }
 				}
 			}
+			NOT = {has_landed_title = k_mahanakorn}
 		}
 	}
 	k_ayothaya = {
@@ -1457,6 +1483,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_mahanakorn }
 				}
 			}
+			NOT = {has_landed_title = k_mahanakorn}
 		}
 	}
 	k_nikhom = {
@@ -1477,6 +1504,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_burapha }
 				}
 			}
+			NOT = {has_landed_title = k_burapha}
 		}
 	}
 	k_prachimdisa = {
@@ -1497,6 +1525,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_burapha }
 				}
 			}
+			NOT = {has_landed_title = k_burapha}
 		}
 	}
 	k_chanthabun = {
@@ -1517,6 +1546,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_burapha }
 				}
 			}
+			NOT = {has_landed_title = k_burapha}
 		}
 	}
 	
@@ -1538,6 +1568,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_pak_tai }
 				}
 			}
+			NOT = {has_landed_title = k_pak_tai}
 		}
 	}
 	k_si_thammarat = {
@@ -1558,6 +1589,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_pak_tai }
 				}
 			}
+			NOT = {has_landed_title = k_pak_tai}
 		}
 	}
 	k_junk_ceylons = {
@@ -1578,6 +1610,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_pak_tai }
 				}
 			}
+			NOT = {has_landed_title = k_pak_tai}
 		}
 	}
 	k_singhaburi = {
@@ -1598,6 +1631,7 @@ e_thailand = {
 					any_vassal = { has_landed_title = k_pak_tai }
 				}
 			}
+			NOT = {has_landed_title = k_pak_tai}
 		}
 	}
 }
