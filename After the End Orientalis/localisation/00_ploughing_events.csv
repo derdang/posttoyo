@@ -1,0 +1,70 @@
+###########Whaling Events###########
+host_ploughing_ceremony;Hold Ploughing Rite.;;;;;;;;;;;;x
+host_ploughing_ceremony_desc;The Ploughing Ceremony is an sacred rite and an obligation for every Suvarnabhumi soveriegns.;;;;;;;;;;;;x
+ploughing_text;Begin The Ploughing Rite;;;;;;;;;;;;;x
+
+EVTDESC_ploughing.1;The Royal Ploughing Ceremony.;;;;;;;;;;;;x
+
+PLOUGHING_KH;The Royal Ploughing Ceremony have been held since the age of Reamker, our forefather have described the lenghty process into the wall of their ancient temples, from the auspice date to the breed of holy cow of which we have followed their instructions faithfully. Now its a matter of the time before my subjects arrived.;;;;;;;;;;;;x
+PLOUGHING_BM;The Royal Ploughing Ceremony have been held long before Light of Buddha touched our lands, our forefather have described the lenghty process within the scriptures, from the auspice date and the list of spirits to invoke to the breed of holy cow of which we have followed their instructions faithfully. Now its a matter of the time before my subjects arrived.;;;;;;;;;;;;x
+PLOUGHING_TH;The Royal Ploughing Ceremony have been held in celebration of Rama's victory over the Yaksha, our forefather have described the lenghty process in the pile of stone tablet and runes outside the ruin of our capitals, from the auspice date to the breed of holy cow of which we have followed their instructions faithfully. Now its a matter of the time before my subjects arrived.;;;;;;;;;;;;x
+PLOUGHING_GEN;The Royal Ploughing Ceremony have been traditionally held at the auspice date before rice harvesting seasons, our forefather have compiled the processes from foriegn records, from the auspice date to the breed of holy cow of which we have followed their instructions faithfully. Now its a matter of the time before my subjects arrived.;;;;;;;;;;;;x
+EVTOPTA_ploughing.1;Now we wait.;;;;;;;;;;;;x
+
+EVTDESC_ploughing.2;Your courts have arrived at the scene. The courts watches in awe as you ploughed the field while the brahmin prayed for good fortune and harvest for the realms. With that done, those oxens will be offered a plates of food.;;;;;;;;;;;;x
+EVTOPTA_ploughing.2;Feed them the best herb and seed.;;;;;;;;;;;;x
+EVTOPTB_ploughing.2;"I have some in my gardens";;;;;;;;;;;;x
+EVTOPTC_ploughing.2;"Grab whatever herb and seed you finds, it can't be picky";;;;;;;;;;;;x
+
+EVTDESC_ploughing.3;The Oxen finished their meals and your Court Brahmins inteprepted it as a Good Omen for your realms.;;;;;;;;;;;;x
+EVTOPT_ploughing.3;Thanks [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;x
+GOOD_OMEN_MANDALA;§G[Root.Religion.GetRandomGodName] have blessed your realms§!;;;;;;;;;;;;;x
+
+EVTDESC_ploughing.4;The Oxen finished their meals and your Court Brahmins inteprepted it as a Great Omen for your realms.;;;;;;;;;;;;x
+EVTOPT_ploughing.4;Thanks [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;x
+GREAT_OMEN_MANDALA;§G[Root.Religion.GetRandomGodName] have blessed your realms§!;;;;;;;;;;;;;x
+
+EVTDESC_ploughing.5;The Oxen finished their meals and your Court Brahmins inteprepted it as a Hopeful Omen for your realms.;;;;;;;;;;;;x
+EVTOPT_ploughing.5;Thanks [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;x
+HOPEFUL_OMEN_MANDALA;§G[Root.Religion.GetRandomGodName] have blessed your realms§!;;;;;;;;;;;;;x
+
+EVTDESC_ploughing.6;The Oxen finished their meals and your Court Brahmins inteprepted it as a Normal Omen for your realms.;;;;;;;;;;;;x
+EVTOPT_ploughing.6;At least nothing terrible will happen.;;;;;;;;;;;;x
+HOPEFUL_OMEN_MANDALA;§Y"The Realms may be safe for now, but what about the future?§!;;;;;;;;;;;;;x
+
+EVTDESC_ploughing.7;The Oxen finished their meals and your Court Brahmins inteprepted it as a Distressing Omen for your realms.;;;;;;;;;;;;x
+EVTOPT_ploughing.7;Worrisome.;;;;;;;;;;;;x
+DISTRESSING_OMEN_MANDALA;§YIt seem your realms may have a terrible fortune this year, but perhap things will change for the better.§!;;;;;;;;;;;;;x
+
+EVTDESC_ploughing.8;The Oxen finished their meals and your Court Brahmins inteprepted it as a Worrisome Omen for your realms.;;;;;;;;;;;;x
+EVTOPT_ploughing.8;Worrisome!;;;;;;;;;;;;x
+WORRYING_OMEN_MANDALA;§RIt seem you have gained [Root.Religion.GetRandomGodName]'s wrath§!;;;;;;;;;;;;;x
+
+EVTDESC_ploughing.9;The Oxen finished their meals and your Court Brahmins inteprepted it as a Terrible Omen for your realms. They urged you to prepare for a misfortune to befall your realms.;;;;;;;;;;;;x
+EVTOPT_ploughing.9;Worrisome.;;;;;;;;;;;;x
+CURSED_OMEN_MANDALA;§R[Root.Religion.GetRandomGodName] have cursed my realms§!;;;;;;;;;;;;;x
+
+ploughing_good_omens;Good Omen;;;;;;;;;;;;;x
+ploughing_good_omens_desc;This character's domain is blessed with Good Omen;;;;;;;;;;;;;x
+
+ploughing_great_omens;Great Omen;;;;;;;;;;;;;x
+ploughing_great_omens_desc;This character's domain is blessed with Great Omen;;;;;;;;;;;;;x
+
+ploughing_hopeful_omens;Hopeful Omen;;;;;;;;;;;;;x
+ploughing_hopeful_omens_desc;This character's domain is graced with Hopeful Omen;;;;;;;;;;;;;x
+
+ploughing_normal_omens;Normal Omen;;;;;;;;;;;;;x
+ploughing_normal_omens_desc;This character's domain is graced with neither Great nor Terrible Omen;;;;;;;;;;;;;x
+
+ploughing_distressing_omens;Distressing Omen;;;;;;;;;;;;;x
+ploughing_distressing_omens_desc;This character's domain is plagued with Distressing Omen;;;;;;;;;;;;;x
+
+ploughing_worrying_omens;Worrisome Omen;;;;;;;;;;;;;x
+ploughing_worrying_omens_desc;This character's domain is plagued with Bad Omen;;;;;;;;;;;;;x
+
+ploughing_cursed_omens;Terrible Omen;;;;;;;;;;;;;x
+ploughing_cursed_omens_desc;This character's domain is cursed with Terrible Omen;;;;;;;;;;;;;x
+
+PLOUGHING_IM_RICH_BITCHES;All in the name of [Root.Religion.GetRandomGodName] and Realm's prosperity;;;;;;;;;;;;;x
+PLOUGHING_HAVE_MONEY;The Oxens will be fed what we can offers;;;;;;;;;;;;;x
+PLOUGHING_NO_MONEY;Pray to [Root.Religion.GetRandomGodName] that The Oxens will favor you;;;;;;;;;;;;;x

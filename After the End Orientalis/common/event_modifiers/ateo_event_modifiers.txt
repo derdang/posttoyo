@@ -129,3 +129,67 @@ used_shatter_realm_cb = {
 	threat_decay_speed = -0.2
 	icon = 34
 }
+hosted_ploughing_ceremony = {
+	monthly_character_prestige = 0.5
+	icon = 43
+}
+ploughing_great_omens = {
+	monthly_character_prestige = 0.5
+	monthly_character_piety = 1
+	vassal_opinion = 20
+	global_tax_modifier = 0.25
+	global_levy_size = 0.25
+	build_cost_modifier = -0.05
+	build_time_modifier = -0.05
+	icon = 97
+}
+ploughing_good_omens = {
+	monthly_character_prestige = 0.05
+	monthly_character_piety = 0.5
+	vassal_opinion = 10
+	global_tax_modifier = 0.15
+	global_levy_size = 0.15
+	build_cost_modifier = -0.05
+	build_time_modifier = -0.05
+	icon = 97
+}
+ploughing_hopeful_omens = {
+	monthly_character_prestige = 0.05
+	monthly_character_piety = 0.1
+	vassal_opinion = 5
+	global_tax_modifier = 0.05
+	global_levy_size = 0.05
+	build_cost_modifier = -0.01
+	build_time_modifier = -0.01
+	icon = 97
+}
+ploughing_normal_omens = {
+	monthly_character_prestige = 0.05
+	global_tax_modifier = 0.01
+	global_levy_size = 0.01
+	icon = 97
+}
+ploughing_worrying_omens = {
+	monthly_character_prestige = 0.05
+	vassal_opinion = -5
+	global_tax_modifier = -0.01
+	global_levy_size = -0.01
+	global_revolt_risk = 0.01
+	icon = 98
+}
+ploughing_distressing_omens = {
+	monthly_character_prestige = 0.05
+	vassal_opinion = -5
+	global_tax_modifier = -0.05
+	global_levy_size = -0.05
+	global_revolt_risk = 0.05
+	icon = 98
+}
+ploughing_cursed_omens = {
+	monthly_character_prestige = 0.05
+	vassal_opinion = -5
+	global_tax_modifier = -0.15
+	global_levy_size = -0.15
+	global_revolt_risk = 0.1
+	icon = 98
+}

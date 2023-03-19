@@ -1,0 +1,284 @@
+namespace = ploughing
+
+narrative_event = {
+	id = ploughing.1
+	title = EVTDESC_ploughing.1
+	#Different locs for different kkkingdoms
+	desc = {
+		trigger = {
+			culture_group = cambodian
+		}
+		text = PLOUGHING_KH
+	}
+	desc = {
+		trigger = {
+			culture_group = burmic
+		}
+		text = PLOUGHING_BM
+	}
+	desc = {
+		trigger = {
+			culture_group = southwest_tai
+		}
+		text = PLOUGHING_TH
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				culture_group = cambodian
+				culture_group = burmic
+				culture_group = southwest_tai
+				}
+		}
+		text = PLOUGHING_GEN
+	}
+	picture = GFX_evt_white_elephant
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_ploughing.1
+		character_event = { id = ploughing.2 days = 7 }
+	}
+}
+
+character_event = {
+	id = ploughing.2
+	desc = EVTDESC_ploughing.2
+	picture = GFX_evt_white_elephant
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		government = mandala_government
+	}
+
+	option = { #Only the best for the cow!
+		name = EVTOPTA_ploughing.2
+		custom_tooltip = { text = PLOUGHING_IM_RICH_BITCHES }
+		scaled_wealth = { value = -1.5 max = -500 }
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = pious 
+			}
+			modifier = {
+				factor = 1
+				trait = zealous 
+			}
+			modifier = {
+				factor = 0.1
+				wealth = 500
+			}
+		}
+		hidden_toolip = {
+			random_list = {
+				8 = {
+					character_event = { id = ploughing.4 days = 1 } #Great omens
+				}
+				42 = {
+					character_event = { id = ploughing.3 days = 1 } #Good omens
+				}
+				40 = {
+					character_event = { id = ploughing.5 days = 1 } #Hopeful omens
+				}
+				10 = {
+					character_event = { id = ploughing.6 days = 1 } #Normal omens
+				}
+			}
+		}
+	}
+	option = { #Feed them with what we have
+		name = EVTOPTB_ploughing.2
+		scaled_wealth = { value = -0.5 max = -50 }
+		custom_tooltip = { text = PLOUGHING_HAVE_MONEY }
+		hidden_toolip = {
+			random_list = {
+				2 = {
+					character_event = { id = ploughing.4 days = 1 } #Great omens
+				}
+				3 = {
+					character_event = { id = ploughing.3 days = 1 } #Good omens
+				}
+				10 = {
+					character_event = { id = ploughing.5 days = 1 } #Hopeful omens
+				}
+				65 = {
+					character_event = { id = ploughing.6 days = 1 } #Normal omens
+				}
+				20 = {
+					character_event = { id = ploughing.7 days = 1 } #Worrying omens
+				}
+			}
+		}
+	}
+	option = { #We don't have much to spare
+		name = EVTOPTC_ploughing.2
+		custom_tooltip = { text = PLOUGHING_NO_MONEY }
+		hidden_toolip = {
+			random_list = {
+				5 = {
+					character_event = { id = ploughing.5 days = 1 } #Hopeful omens
+				}
+				10 = {
+					character_event = { id = ploughing.6 days = 1 } #Normal omens
+				}
+				45 = {
+					character_event = { id = ploughing.7 days = 1 } #Worrying omens
+				}
+				20 = {
+					character_event = { id = ploughing.8 days = 1 } #Distressing omens
+				}
+				20 = {
+					character_event = { id = ploughing.9 days = 1 } #Cursed omens
+				}
+			}
+		}
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				trait = greedy 
+			}
+			modifier = {
+				factor = 0.1
+				wealth > 50
+			}
+		}
+	}
+}
+
+character_event = { #Good Omens
+	id = ploughing.3
+	desc = EVTDESC_ploughing.3
+	picture = GFX_evt_white_elephant
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		government = mandala_government
+	}
+
+	option = {
+		name = EVTOPT_ploughing.3
+		 custom_tooltip = { text = GOOD_OMEN_MANDALA }
+		 hidden_tooltip = { add_character_modifier = { name = ploughing_good_omens days = 300 }	}
+		 }
+}
+character_event = { #Great Omens
+	id = ploughing.4
+	desc = EVTDESC_ploughing.4
+	picture = GFX_evt_white_elephant
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		government = mandala_government
+	}
+
+	option = {
+		name = EVTOPT_ploughing.3
+		custom_tooltip = { text = GREAT_OMEN_MANDALA }
+		hidden_tooltip = {	add_character_modifier = { name = ploughing_great_omens days = 300 } }
+	}
+}
+character_event = { #Hopeful Omens
+	id = ploughing.5
+	desc = EVTDESC_ploughing.5
+	picture = GFX_evt_white_elephant
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		government = mandala_government
+	}
+
+	option = {
+		name = EVTOPT_ploughing.5
+		custom_tooltip = { text = HOPEFUL_OMEN_MANDALA }
+		hidden_tooltip = {	add_character_modifier = { name = ploughing_hopeful_omens days = 300 } }
+		}
+}
+
+character_event = { #Normal Omens
+	id = ploughing.6
+	desc = EVTDESC_ploughing.6
+	picture = GFX_evt_white_elephant
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		government = mandala_government
+	}
+
+	option = {
+		name = EVTOPT_ploughing.6
+		custom_tooltip = { text = NORMAL_OMEN_MANDALA }
+		hidden_tooltip = {	add_character_modifier = { name = ploughing_normal_omens days = 300 } }
+	}
+}
+
+character_event = { #Worrying Omens
+	id = ploughing.7
+	desc = EVTDESC_ploughing.7
+	picture = GFX_evt_white_elephant
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		government = mandala_government
+	}
+
+	option = {
+		name = EVTOPT_ploughing.7
+		custom_tooltip = { text = WORRYING_OMEN_MANDALA }
+		hidden_tooltip = {	add_character_modifier = { name = ploughing_worrying_omens days = 300 } }
+	}
+}
+character_event = { #Distressing Omens
+	id = ploughing.8
+	desc = EVTDESC_ploughing.8
+	picture = GFX_evt_white_elephant
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		government = mandala_government
+	}
+
+	option = {
+		name = EVTOPT_ploughing.8
+		custom_tooltip = { text = DISTRESSING_OMEN_MANDALA }
+		hidden_tooltip = {	add_character_modifier = { name = ploughing_distressing_omens days = 300 } }
+	}
+}
+character_event = { #Cursed Omens
+	id = ploughing.9
+	desc = EVTDESC_ploughing.9
+	picture = GFX_evt_white_elephant
+	border = GFC_event_normal_frame_religion
+	is_triggered_only = yes
+
+	trigger = {
+		government = mandala_government
+	}
+
+	option = {
+		name = EVTOPT_ploughing.9
+		custom_tooltip = { text = CURSED_OMEN_MANDALA }
+		hidden_tooltip = {	add_character_modifier = { name = ploughing_cursed_omens days = 300 } }
+	}
+}
+
+character_event = {
+	id = ploughing.10
+
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = do_not_disturb
+		clr_character_flag = ploughing_ceremony
+	}
+}
