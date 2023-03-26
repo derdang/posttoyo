@@ -531,6 +531,30 @@ e_thailand = {
 				b_chakkrarat = {}
 				b_huai_thalaeng = {}
 			}
+			c_chaiyaphum = { # 823
+				color={ 188 118 93 }
+				color2={ 255 255 255 }
+				
+				myr = "Zeyabumi"
+				
+				b_chaiyaphum = {
+				myr = "Zeyabumi"
+				}
+				b_ban_khwao = {}
+				b_khon_sawan = {}
+				b_kaset_sombun = {}
+				b_nong_bua_daeng = {}
+				b_chatturat = {}
+				b_bamnet_narong = {}
+			}
+			
+		}
+		d_buriram = {
+			color={ 149 49 29 }
+			color2={ 255 255 255 }
+			
+			capital = 817 # c_buriram
+			
 			c_buriram = { # 817
 				color={ 185 129 110 }
 				color2={ 255 255 255 }
@@ -563,6 +587,22 @@ e_thailand = {
 				b_kap_choeng = {}
 				b_rattanaburi = {}
 			}
+			c_si_saket = { # 820
+				color={ 120 83 71 }
+				color2={ 255 255 255 }
+				
+				myr = "Thirithaketha"
+				
+				b_sisaket = {
+				myr = "Thirithaketha"
+				}
+				b_kanthararom = {}
+				b_kantharalak = {}
+				b_khukhan = {}
+				b_khun_han = {}
+				b_rasi_salai = {}
+				b_phrai_bueng = {}
+			}
 		}
 		d_khon_kaen = {
 			color={ 192 85 69 }
@@ -582,38 +622,6 @@ e_thailand = {
 				b_si_chomphu = {}
 				b_nam_phong = {}
 			}
-			c_chaiyaphum = { # 823
-				color={ 188 118 93 }
-				color2={ 255 255 255 }
-				
-				myr = "Zeyabumi"
-				
-				b_chaiyaphum = {
-				myr = "Zeyabumi"
-				}
-				b_ban_khwao = {}
-				b_khon_sawan = {}
-				b_kaset_sombun = {}
-				b_nong_bua_daeng = {}
-				b_chatturat = {}
-				b_bamnet_narong = {}
-			}
-			c_kalasin = { # 826
-				color={ 172 100 76 }
-				color2={ 255 255 255 }
-				
-				myr = "Kaletheindu"
-				
-				b_kalasin = {
-				myr = "Kaletheindu"
-				}
-				b_na_mon = {}
-				b_kamalasai = {}
-				b_rong_kham = {}
-				b_kuchinarai = {}
-				b_khao_wong = {}
-				b_yang_talat = {}
-			}
 			c_maha_sarakham = { # 824
 				color={ 174 108 86 }
 				color2={ 255 255 255 }
@@ -630,6 +638,13 @@ e_thailand = {
 				b_borabue = {}
 				b_na_chueak = {}
 			}
+		}
+		d_roi_et = {
+			color={ 129 69 69 }
+			color2={ 255 255 255 }
+			
+			capital = 825 # c_roi_et
+			
 			c_roi_et = { # 825
 				color={ 187 121 99 }
 				color2={ 255 255 255 }
@@ -641,6 +656,22 @@ e_thailand = {
 				b_thawat_buri = {}
 				b_phanom_phrai = {}
 				b_phon_thong = {}
+			}
+			c_kalasin = { # 826
+				color={ 172 100 76 }
+				color2={ 255 255 255 }
+				
+				myr = "Kaletheindu"
+				
+				b_kalasin = {
+				myr = "Kaletheindu"
+				}
+				b_na_mon = {}
+				b_kamalasai = {}
+				b_rong_kham = {}
+				b_kuchinarai = {}
+				b_khao_wong = {}
+				b_yang_talat = {}
 			}
 		}
 		d_ubon = {
@@ -666,22 +697,6 @@ e_thailand = {
 				b_khemarat = {}
 				b_det_udom = {}
 				b_na_chaluai = {}
-			}
-			c_si_saket = { # 820
-				color={ 120 83 71 }
-				color2={ 255 255 255 }
-				
-				myr = "Thirithaketha"
-				
-				b_sisaket = {
-				myr = "Thirithaketha"
-				}
-				b_kanthararom = {}
-				b_kantharalak = {}
-				b_khukhan = {}
-				b_khun_han = {}
-				b_rasi_salai = {}
-				b_phrai_bueng = {}
 			}
 			c_yasothon = { # 821
 				color={ 173 98 72 }
@@ -736,18 +751,6 @@ e_thailand = {
 				b_pak_chom = {}
 				b_na_haeo = {}
 			}
-			c_nakhon_phanom = { # 831
-				color={ 190 110 83 }
-				color2={ 255 255 255 }
-				
-				b_nakhon_phanom = {}
-				b_pla_pak = {}
-				b_tha_uthen = {}
-				b_ban_phaeng = {}
-				b_that_phanom = {}
-				b_renu_nakhon = {}
-				b_na_kae = {}
-			}
 			c_nong_khai = { # 828
 				color={ 222 171 125 }
 				color2={ 255 255 255 }
@@ -759,6 +762,25 @@ e_thailand = {
 				b_bueng_kan = {}
 				b_phon_charoen = {}
 				b_so_phisai = {}
+			}
+		}
+		d_nakhon_phanom = {
+			color={ 169 29 49 }
+			color2={ 255 255 255 }
+			
+			capital = 831 # c_nakhon_phanom
+			
+			c_nakhon_phanom = { # 831
+				color={ 190 110 83 }
+				color2={ 255 255 255 }
+				
+				b_nakhon_phanom = {}
+				b_pla_pak = {}
+				b_tha_uthen = {}
+				b_ban_phaeng = {}
+				b_that_phanom = {}
+				b_renu_nakhon = {}
+				b_na_kae = {}
 			}
 			c_sakon_nakhon = { # 830
 				color={ 202 143 90 }
