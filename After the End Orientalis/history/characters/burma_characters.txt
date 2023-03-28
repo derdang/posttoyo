@@ -1,40 +1,96 @@
-1551000 ={ #e_burma
-	name="Kaung"
-	dynasty=1550000
+1551000 ={ #myrry sue, c_pyinmana
+	name="San"
+	dynasty=1550000#Zin
+	father=1551001
 	culture=myr
 	religion=parimatira
 	trait=strong
 	trait=quick
 	diplomacy=9 
 	martial=11
-	#no-random-trait
-	2576.10.14={birth=yes}
+	disallow_random_traits=yes 
+	female=yes
+	2593.10.14={birth=yes}
 }
-
-1551101 ={ #d_mandalay
-	name="Myint"
-	dynasty=1550001
+1551001 ={ #myrry sue's dad
+	name="Than Myint"
+	dynasty=1550000#Zin
 	culture=myr
 	religion=parimatira
-	#no-random-trait
+	trait=brilliant_strategist
+	trait=duelist
+	trait=shrewd
+	trait=brave
+	trait=heresiarch
+	trait=mystic
+	disallow_random_traits=yes 
+	2568.10.14={birth=yes}
+	2603.10.14={death=yes}
+}
+1551002 ={ #pao rival with event armies, d_magwe, c_myede, c_meiktila
+	name="Aung Khain"
+	dynasty=1557020#Htoo
+	culture=pao
+	religion=parimatira
+	trait=tough_soldier
+	trait=adventurer
+	trait=sturdy
+	trait=cruel
+	trait=envious
+	trait=deceitful
+	disallow_random_traits=yes 
+	2578.10.14={birth=yes}
+}
+1551003 ={ #wunpawng tribute, d_sagaging
+	name="Nay Wain"
+	dynasty=1550010#Swe
+	culture=myr
+	religion=parimatira
+	trait=flamboyant_schemer
+	trait=weak
+	trait=craven
+	trait=pious
+	trait=trusting
+	trait=paranoid
+	disallow_random_traits=yes 
+	2587.1.4={birth=yes}
+}
+1551004 ={ #friend of myrry sue, c_yamethin
+	name="Win Aung"
+	culture=myr
+	religion=parimatira
+	2579.10.14={birth=yes}
+}
+
+1551004 ={ #Heir of Bamar, c_pakokku, c_thayet, c_minbu
+	name="Min Hlaing"
+	dynasty=1550001#Aung
+	culture=myr
+	religion=parimatira
+	2590.10.14={birth=yes}
+}
+
+1551101 ={ #myr-tai chad, d_taunggyi, d_hsenwi, d_mandalay
+	name="Anolat"
+	dynasty=2314001 #Banya
+	culture=shan
+	religion=parimatira
 	2576.10.14={birth=yes}
 }
 
 ##Chin
 
 1552001 ={ #d_chin
-	name="Guder"
+	name="Kraw Thien"
 	culture=chin
 	religion=parimatira
-	#no-random-trait
 	2576.10.14={birth=yes}
 }
 
 1552002 ={ #c_bhamo
-	name="Guder"
+	name="Hla Shwe"
 	culture=chin
 	religion=parimatira
-	#no-random-trait
 	2576.10.14={birth=yes}
 }
 
@@ -58,50 +114,61 @@
 }
 
 ## Bago
-1554001 ={ #d_yangon
-	name="Guder"
-	culture=myr
+1554001 ={ #Crazy Pao, d_yangon
+	name="Aung Krein"
+	culture=pao
 	religion=parimatira
-	#no-random-trait
+	trait=misguided_warrior
+	trait=lunatic
 	2576.10.14={birth=yes}
 }
-1554002 ={ #d_thaton
-	name="Guder"
+1554002 ={ #Bago's subject, d_thaton
+	name="Hla Aung"
 	culture=mon
 	religion=dharmayuttika
-	#no-random-trait
 	2576.10.14={birth=yes}
+}
+1554003 ={ #Chiang Mai tribute, d_hpa_an
+	name="Htay Win"
+	culture=karen
+	religion=dharmayuttika
+	2565.10.14={birth=yes}
+}
+1554004 ={ #Suvan subject, d_tenasserim
+	name="Hla Tun"
+	culture=mon
+	religion=dharmayuttika
+	2565.10.14={birth=yes}
 }
 #Wunpawng/Kachin
 1555001 ={ #k_wunpawng, aka Kachin
-	name="Guder"
+	name="Ja Hkawn"
+	dynasty=1565000
 	culture=jingpo
 	religion=baptist
-	#no-random-trait
+	disallow_random_traits=yes 
 	2576.10.14={birth=yes}
 }
 #Shan State
-1557001 ={ #kengtung
+1557001 ={ #kengtung, d_kengtung
 	name="Ukaeo"
 	culture=shan
 	religion=dharmayuttika
-	#no-random-trait
 	2581.10.14={birth=yes}
 }
-1557002 ={ #Laukkiang
+1557002 ={ #Wa Federation, d_wa, d_dehong, d_baoshan, d_lincang
 	name="Gaing"
-	dynasty=9070284
-	culture=xinan
+	dynasty=1567017#Hkun
+	culture=wa
 	religion=mahayana
-	#no-random-trait
+	disallow_random_traits=yes 
 	2581.10.14={birth=yes}
 }
-1557003 ={ #Mu Se
+1557003 ={ #d_kyebogi
 	name="Mang"
-	dynasty=1567000
-	culture=wa
+	dynasty=1556012#Tun
+	culture=karenni
 	religion=parimatira
-	#no-random-trait
 	2581.10.14={birth=yes}
 }
 ## Indian Empire characters
@@ -116,4 +183,13 @@
 	trait=administrator
 	trait=thrifty_clerk
 	2560.03.07={birth=yes}
+}
+
+1557005 ={ #Mu Se
+	name="Mang"
+	dynasty=1567000#Kang
+	culture=wa
+	religion=parimatira
+	disallow_random_traits=yes 
+	2581.10.14={birth=yes}
 }
