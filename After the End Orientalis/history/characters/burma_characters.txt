@@ -57,12 +57,13 @@
 }
 1551004 ={ #friend of myrry sue, c_yamethin
 	name="Win Aung"
+	dynasty=1550005#Oo
 	culture=myr
 	religion=parimatira
 	2579.10.14={birth=yes}
 }
 
-1551004 ={ #Heir of Bamar, c_pakokku, c_thayet, c_minbu
+1551005 ={ #Heir of Bamar, c_pakokku, c_thayet, c_minbu
 	name="Min Hlaing"
 	dynasty=1550001#Aung
 	culture=myr
@@ -82,6 +83,7 @@
 
 1552001 ={ #d_chin
 	name="Kraw Thien"
+	dynasty=1558000#Ma
 	culture=chin
 	religion=parimatira
 	2576.10.14={birth=yes}
@@ -89,6 +91,7 @@
 
 1552002 ={ #c_bhamo
 	name="Hla Shwe"
+	dynasty=1558013#Thaung
 	culture=chin
 	religion=parimatira
 	2576.10.14={birth=yes}
@@ -98,7 +101,7 @@
 
 1553000 ={ #d_rakhine
 	name="Suleiman"
-	dynasty=1551000
+	dynasty=1551000#Shah
 	culture=rakhine
 	religion=salafi
 	2576.10.14={birth=yes}
@@ -106,7 +109,7 @@
 
 1553001 ={
 	name="Aye"
-	dynasty=1565000
+	dynasty=1551002#Ba
 	culture=rakhine
 	religion=salafi
 	female=yes
@@ -116,34 +119,68 @@
 ## Bago
 1554001 ={ #Crazy Pao, d_yangon
 	name="Aung Krein"
+	dynasty=1557026#Chit
 	culture=pao
 	religion=parimatira
 	trait=misguided_warrior
 	trait=lunatic
 	2576.10.14={birth=yes}
 }
-1554002 ={ #Bago's subject, d_thaton
+1554002 ={ #Bago's subject, d_thanton
 	name="Hla Aung"
+	dynasty=1552025#Naing
 	culture=mon
 	religion=dharmayuttika
 	2576.10.14={birth=yes}
 }
 1554003 ={ #Chiang Mai tribute, d_hpa_an
 	name="Htay Win"
+	dynasty=1555016#Wai
 	culture=karen
 	religion=dharmayuttika
 	2565.10.14={birth=yes}
 }
 1554004 ={ #Suvan subject, d_tenasserim
 	name="Hla Tun"
+	dynasty=1552012#Tun
 	culture=mon
 	religion=dharmayuttika
-	2565.10.14={birth=yes}
+	2585.10.14={birth=yes}
+}
+1554005 ={ #Evil creature, d_tenasserim
+	name="Aung Shin"
+	culture=myr
+	religion=parimatira
+	dynasty=1550014#Thein
+	trait=charismatic_negotiator
+	trait=cruel
+	2570.10.14={birth=yes}
+}
+1554006 ={ #Mon restorationist, c_taungoo, c_bagoo
+	name="Htay Thein"
+	dynasty=1552006#Phyu
+	culture=mon
+	religion=dharmayuttika
+	2580.10.14={birth=yes}
+}
+1554007 ={ #pious and kind ruler, d_ayeyarwady
+	name="Aung Khin"
+	dynasty=1550041#Zeya
+	culture=myr
+	religion=parimatira
+	trait=brilliant_strategist
+	trait=strong
+	trait=kind
+	trait=pious
+	trait=trusting
+	trait=content
+	disallow_random_traits=yes 
+	2575.1.4={birth=yes}
 }
 #Wunpawng/Kachin
 1555001 ={ #k_wunpawng, aka Kachin
 	name="Ja Hkawn"
-	dynasty=1565000
+	dynasty=1565000#Nyunt
 	culture=jingpo
 	religion=baptist
 	disallow_random_traits=yes 
@@ -152,6 +189,7 @@
 #Shan State
 1557001 ={ #kengtung, d_kengtung
 	name="Ukaeo"
+	dynasty=2314014#Laopitak
 	culture=shan
 	religion=dharmayuttika
 	2581.10.14={birth=yes}
