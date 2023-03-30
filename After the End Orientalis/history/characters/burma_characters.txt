@@ -53,7 +53,7 @@
 	trait=trusting
 	trait=paranoid
 	disallow_random_traits=yes 
-	2587.1.4={birth=yes}
+	2580.1.4={birth=yes}
 }
 1551004 ={ #friend of myrry sue, c_yamethin
 	name="Win Aung"
@@ -70,13 +70,82 @@
 	religion=parimatira
 	2590.10.14={birth=yes}
 }
-
-1551101 ={ #myr-tai chad, d_taunggyi, d_hsenwi, d_mandalay
+1551006 ={ #Sagaging vassal, c_yinmabin
+	name="Min Nay"
+	dynasty=1550032#Hlaing
+	culture=myr
+	religion=parimatira
+	2580.1.4={birth=yes}
+}
+1551007 ={ #Sagaging vassal, c_kanbalu, c_shwebo
+	name="Nay Sin"
+	dynasty=1550046#Htoo
+	culture=myr
+	religion=parimatira
+	2570.1.4={birth=yes}
+}
+1551101 ={ #myr-tai chad,d_mandalay
 	name="Anolat"
 	dynasty=2314001 #Banya
 	culture=shan
 	religion=parimatira
-	2576.10.14={birth=yes}
+	secret_religion=dharmayuttika
+	trait=midas_touched
+	trait=ambitious
+	trait=strong
+	trait=just
+	2570.10.14={birth=yes}
+}
+1551102 ={ #Lord of Taunggyi, d_taunggyi
+	name="Nhatee"
+	dynasty=2314001 #Banya
+	father=1551101#Anolat
+	culture=shan
+	religion=dharmayuttika
+	trait=tough_soldier
+	trait=ambitious
+	trait=kind
+	2587.10.14={birth=yes}
+}
+1551103 ={ #Chief of Lawksauk, c_lawksauk
+	name="Thetdesa"
+	dynasty=2314001 #Banya
+	father=1551101#Anolat
+	culture=shan
+	religion=dharmayuttika
+	secret_religion=dhamsoc
+	trait=ambitious
+	trait=envious
+	2590.10.14={birth=yes}
+}
+1551104 ={ #Heir of Mongmao, d_hsenwi
+	name="Lenglung"
+	dynasty=2314010 #Suepa
+	culture=shan
+	religion=dhamsoc
+	trait=brilliant_strategist
+	trait=content
+	trait=craven
+	2540.10.14={birth=yes}
+}
+1551105 ={ #Shan Mandalay, c_kyaukse
+	name="Phareuang"
+	dynasty=2314006 #Harn
+	culture=shan
+	religion=dharmayuttika
+	trait=content
+	trait=brave
+	2570.10.14={birth=yes}
+}
+1551106 ={ #Myr remmant, c_nyaung_u, c_myingyan
+	name="In Min"
+	dynasty=1550017 #Mar
+	culture=myr
+	religion=parimatira
+	trait=ambitious
+	trait=envious
+	trait=wroth
+	2567.10.14={birth=yes}
 }
 
 ##Chin
@@ -92,8 +161,8 @@
 1552002 ={ #c_bhamo
 	name="Hla Shwe"
 	dynasty=1558013#Thaung
-	culture=chin
-	religion=parimatira
+	culture=jingpo
+	religion=baptist
 	2576.10.14={birth=yes}
 }
 
@@ -124,6 +193,7 @@
 	religion=parimatira
 	trait=misguided_warrior
 	trait=lunatic
+	trait=heresiarch
 	2576.10.14={birth=yes}
 }
 1554002 ={ #Bago's subject, d_thanton
@@ -147,12 +217,12 @@
 	religion=dharmayuttika
 	2585.10.14={birth=yes}
 }
-1554005 ={ #Evil creature, d_tenasserim
+1554005 ={ #Scheming Warlord, d_bago
 	name="Aung Shin"
 	culture=myr
 	religion=parimatira
 	dynasty=1550014#Thein
-	trait=charismatic_negotiator
+	trait=amateurish_plotter
 	trait=cruel
 	2570.10.14={birth=yes}
 }
@@ -176,6 +246,27 @@
 	trait=content
 	disallow_random_traits=yes 
 	2575.1.4={birth=yes}
+}
+1554008 ={ #Yangon Mon, c_twante, c_east_yangon
+	name="Aung Shwe"
+	dynasty=1552024#Myin
+	culture=mon
+	religion=parimatira
+	2586.10.14={birth=yes}
+}
+1554009 ={ #Rohingya Pathien, c_pathien
+	name="Aung Shah"
+	dynasty=1565001#Nya
+	culture=rohingya
+	religion=senthang
+	2580.10.14={birth=yes}
+}
+1554010 ={ #Pao Ayewardy, c_maubin, c_hinthada
+	name="Min Shwe"
+	dynasty=1557023#Chay
+	culture=pao
+	religion=parimatira
+	2585.10.14={birth=yes}
 }
 #Wunpawng/Kachin
 1555001 ={ #k_wunpawng, aka Kachin
@@ -206,7 +297,7 @@
 	name="Mang"
 	dynasty=1556012#Tun
 	culture=karenni
-	religion=parimatira
+	religion=concordanist
 	2581.10.14={birth=yes}
 }
 ## Indian Empire characters
