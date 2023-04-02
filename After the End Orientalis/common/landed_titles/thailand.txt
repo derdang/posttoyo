@@ -390,6 +390,18 @@ e_thailand = {
 				b_pak_nam_ccs = {}
 				b_tha_khai = {}
 			}
+			c_phanom_sarakham = { # 2291
+				color={ 112 200 169 }
+				color2={ 255 255 255 }
+				
+				b_phanom_sarakham = {}
+				b_ratchasan = {}
+				b_sanam_chai_khet = {}
+				b_plaeng_yao = {}
+				b_bangkhla = {}
+				b_khlong_takrao = {}
+				b_tha_takiap = {}
+			}
 			c_sa_kaeo = { # 796
 				color={ 89 183 144 }
 				color2={ 255 255 255 }
@@ -470,11 +482,24 @@ e_thailand = {
 				myr = "Zalapuri"
 				}
 				b_si_racha = {}
-				b_phanat_nikhom = {}
+				b_bang_saen = {}
 				b_sattahip = {}
+				b_phan_thong = {}
+				b_sichang = {}
+				b_ammata_nakhon = {}
+			}
+			c_phanat_nikhom = { # 2290
+				color={ 133 206 190 }
+				color2={ 255 255 255 }
+				
+				
+				b_phanat_nikhom = {}
 				b_ban_bueng = {}
 				b_bo_thong = {}
 				b_nong_yai = {}
+				b_phluang_thong = {}
+				b_that_thong = {}
+				b_khao_sok = {}
 			}
 			c_rayong = { # 799
 				color={ 83 197 149 }
@@ -524,28 +549,48 @@ e_thailand = {
 				b_nakhon_ratchasima = {
 				myr = "Nagara Razathima"
 				}
-				b_khon_buri = {}
-				b_soeng_sang = {}
 				b_pak_thong_chai = {}
-				b_chok_chai = {}
-				b_chakkrarat = {}
-				b_huai_thalaeng = {}
+				b_noen_thai = {}
+				b_pho_klang = {}
+				b_suranari = {}
+				b_chai_mongkhon = {}
+				b_hua_thale = {}
 			}
-			c_chaiyaphum = { # 823
-				color={ 188 118 93 }
+			c_pak_chong = { # 2292
+				color={ 184 209 72 }
 				color2={ 255 255 255 }
 				
-				myr = "Zeyabumi"
+				b_pak_chong = {}
+				b_dan_khun_thot = {}
+				b_sikhio = {}
+				b_sung_noen = {}
+				b_thepharak = {}
+				b_wang_nam_khiao = {}
+				b_phaya_yen = {}
+			}
+			c_chok_chai = { # 2293
+				color={ 130 150 130 }
+				color2={ 255 255 255 }
 				
-				b_chaiyaphum = {
-				myr = "Zeyabumi"
-				}
-				b_ban_khwao = {}
-				b_khon_sawan = {}
-				b_kaset_sombun = {}
-				b_nong_bua_daeng = {}
-				b_chatturat = {}
-				b_bamnet_narong = {}
+				b_chok_chai = {}
+				b_khon_buri = {}
+				b_chakkrarat = {}
+				b_soeng_sang = {}
+				b_chaloem_phra_kiat = {}
+				b_nong_bunmak = {}
+				b_sa_wan_phraya = {}
+			}
+			c_phimai = { # 2294
+				color={ 220 156 130 }
+				color2={ 255 255 255 }
+				
+				b_phimai = {}
+				b_non_sung = {}
+				b_bua_yai = {}
+				b_chum_phuang = {}
+				b_khong = {}
+				b_prathai = {}
+				b_non_daeng = {}
 			}
 			
 		}
@@ -673,6 +718,22 @@ e_thailand = {
 				b_khao_wong = {}
 				b_yang_talat = {}
 			}
+			c_chaiyaphum = { # 823
+				color={ 188 118 93 }
+				color2={ 255 255 255 }
+				
+				myr = "Zeyabumi"
+				
+				b_chaiyaphum = {
+				myr = "Zeyabumi"
+				}
+				b_ban_khwao = {}
+				b_khon_sawan = {}
+				b_kaset_sombun = {}
+				b_nong_bua_daeng = {}
+				b_chatturat = {}
+				b_bamnet_narong = {}
+			}
 		}
 		d_ubon = {
 			color={ 169 91 103 }
@@ -759,9 +820,9 @@ e_thailand = {
 				b_tha_bo = {}
 				b_phon_phisai = {}
 				b_si_chiang_mai = {}
-				b_bueng_kan = {}
-				b_phon_charoen = {}
-				b_so_phisai = {}
+				b_sangcom = {}
+				b_pho_tarn = {}
+				b_rattanavapi = {}
 			}
 		}
 		d_nakhon_phanom = {
@@ -797,6 +858,18 @@ e_thailand = {
 				b_phanna_nikhom = {}
 				b_phang_khon = {}
 				b_waritchaphum = {}
+			}
+			c_bueng_kan = { # 2295
+				color={ 200 169 112 }
+				color2={ 255 255 255 }
+				
+				b_bueng_kan = {}
+				b_so_phisai = {}
+				b_phon_charoen = {}
+				b_sri_vilai = {}
+				b_pak_khad = {}
+				b_bueng_khong_long = {}
+				b_mung_khla = {}
 			}
 		}
 	}
