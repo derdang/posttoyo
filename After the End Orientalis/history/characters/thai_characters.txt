@@ -34,7 +34,7 @@
          trait = "wroth" 
          trait = "cruel" 
          trait = "just"
-		 occulded=yes
+		 occluded=yes
          disallow_random_traits=yes 
          1945.8.11 = { 
                  birth = yes 
@@ -562,7 +562,7 @@
 	trait=just
 	trait=shrewd
 	trait=legendary
-	occulded=yes
+	occluded=yes
 	disallow_random_traits=yes 
 	2200.1.1={birth=yes
 	create_bloodline = {
@@ -1101,7 +1101,7 @@
 	2575.4.15={birth=yes}
 }
 ### Isan - Northeast Thailand
-2311101 ={ # d_nakorn_ratchasima
+2311101 ={ # Queen of Nakhon Ratchasima
 	name="Pongsri"
 	female=yes
 	dna=bcfdfdgeacd # The default DNA don't really give a vibe of martial lady at all.
@@ -1119,6 +1119,141 @@
 	trait=diligent
 	trait=shieldmaiden
 	2585.4.15={birth=yes}
+}
+#Histocial Isanese
+2311150 ={ # Founder of Kanthasima
+	name="Chai"
+	dynasty=2311250 #Rattasetthi
+	culture=thai_isan
+	religion=dharmayuttika
+	trait=intricate_webweaver
+	trait=gregarious
+	trait=authoritative
+	trait=diligent
+	trait=pious
+	disallow_random_traits=yes
+	occluded=yes
+	1958.4.29={birth=yes}
+	2069.4.29={death=yes}#killed by bangkok rebel
+}
+2311151 ={ # 2nd gen Rattasetthi Presumptive Heir
+	name="Athit"
+	dynasty=2311250 #Rattasetthi
+	father=2311150#Chai
+	culture=thai_isan
+	religion=dharmayuttika
+	trait=fortune_builder
+	trait=ambitious
+	trait=gregarious
+	trait=diligent
+	trait=proud
+	disallow_random_traits=yes
+	occluded=yes
+	1984.4.9={birth=yes}
+	2032.4.29={death=yes}
+}
+2311152 ={ # 2nd gen Rattasetthi Princess
+	name="Tawan"
+	dynasty=2311250 #Rattasetthi
+	father=2311150#Chai
+	female=yes
+	culture=thai_isan
+	religion=dharmayuttika
+	trait=thrifty_clerk
+	trait=greedy
+	trait=just
+	trait=paranoid
+	trait=content
+	disallow_random_traits=yes
+	occluded=yes
+	1988.4.29={birth=yes}
+	2042.4.29={death=yes}
+}
+2311153 ={ # 2nd gen Rattasetthi Heir, beginning of Hereditary Monarchy era
+	name="Sathi"
+	dynasty=2311250 #Rattasetthi
+	father=2311150#Chai
+	culture=thai_isan
+	religion=dharmayuttika
+	trait=underhanded_rogue
+	trait=gregarious
+	trait=trusting
+	trait=kind
+	trait=zealous
+	disallow_random_traits=yes
+	occluded=yes
+	2023.4.4={birth=yes}
+	2100.11.11={death=yes}
+}
+2311154 ={ # 3rd gen Rattasetthi Heir, Certified Crusader
+	name="Paisarn"
+	dynasty=2311250 #Rattasetthi
+	father=2311153#Sathi
+	culture=thai_isan
+	religion=dharmayuttika
+	trait=tough_soldier
+	trait=cruel
+	trait=brave
+	trait=authoritative
+	trait=zealous
+	disallow_random_traits=yes
+	occluded=yes
+	2083.4.4={birth=yes}
+	2152.11.11={death=yes}
+}
+2311155 ={ # 4th gen Rattasetthi Heir, Killed in Action
+	name="Paisarn"
+	dynasty=2311250 #Rattasetthi
+	father=2311154#Paisarn
+	culture=thai_isan
+	religion=dharmayuttika
+	trait=elusive_shadow
+	trait=cruel
+	trait=paranoid
+	trait=arbitrary
+	trait=twin
+	disallow_random_traits=yes
+	occluded=yes
+	2102.4.4={birth=yes}
+	2141.11.11={death=yes}
+}
+2311156 ={ # 4th gen Rattasetthi Princess, Conspired with her husband(Klaharn) to take over 
+	name="Taksina"
+	dynasty=2311250 #Rattasetthi
+	father=2311154#Paisarn
+	female=yes
+	culture=thai_isan
+	religion=dharmayuttika
+	trait=brilliant_strategist
+	trait=gregarious
+	trait=brave
+	trait=just
+	trait=seductress
+	trait=authoritative
+	trait=ugly
+	trait=twin
+	disallow_random_traits=yes
+	occluded=yes
+	2102.4.4={birth=yes}
+	2132.11.11 = {add_spouse=2311157}
+	2222.11.11={death=yes}
+}
+2311157 ={ # The Founder of Klaharn Clan
+	name="Paisarn"
+	dynasty=2311252 #Klaharn
+	culture=thai_mueang
+	religion=dharmayuttika
+	trait=tough_soldier
+	trait=kind
+	trait=lustful
+	trait=deceitful
+	trait=shrewd
+	trait=trusting
+	disallow_random_traits=yes
+	occluded=yes
+	2112.4.4={birth=yes}
+	2132.11.11 = {add_spouse=2311156	culture=thai_isan}
+	2172.11.11={death=yes}
 }
 2311111 ={ # c_surin Khmer
 	name="Sray"
