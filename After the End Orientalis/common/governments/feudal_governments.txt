@@ -707,6 +707,8 @@ feudal_governments = {
 		title_prefix = "bureaucracy_"
 		potential = {
 			NOT = { is_government_potential = mandala_government }
+			NOT = { is_government_potential = sinic_kleptocracy_government }
+			NOT = { is_government_potential = sinic_reclamation_government }
 			AND = { 
 				OR = {
 					culture_group = viet
@@ -763,6 +765,177 @@ feudal_governments = {
 		
 		## Modifiers
 		court_size_modifier = 15
+	}
+	sinic_kleptocracy_government = {
+		preferred_holdings = { CASTLE CITY }
+		allowed_holdings = {
+			CASTLE
+			CITY
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			feudal_government
+			ghazi_government
+			diwan_government
+			theocratic_feudal_government
+		}
+		free_revoke_on_tiers = {
+			duke
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_chineseimperial"
+		title_prefix = "kleptocracy_"
+		potential = {
+			NOT = { is_government_potential = mandala_government }
+			NOT = { is_government_potential = sinic_reclamation_government }
+			AND = {
+				capital_scope = { region = custom_dongbei }
+				OR = {
+					# most chinese religion
+					religion = jibenyuanze
+					religion = ruist
+					religion = jinbenwei
+					religion = taoist
+					religion = quanzhen
+					religion = shenist
+					religion = shenist_reformed
+					religion = shanrendao
+					religion = gongye_shenjiao
+					religion = aiguo
+					religion = hui
+					religion = sanmin
+					religion = eastern_lightning_reformed
+					religion = eastern_lightning
+					religion = chuma_reformed
+					religion = chuma
+					religion = heilong_reformed
+					religion = heilong
+					AND = {
+						religion_group = buddhist_group
+						culture_group = han
+					}
+				}
+			}
+			is_patrician = no
+		}
+		
+		color = { 37 37 37 }
+
+		can_build_tribal = no
+		
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 100
+		
+		max_consorts = 4
+		can_demand_religious_conversion = no
+		gets_religion_opinion_penalties = no
+		gives_religion_opinion_penalties = no
+		vassal_government_opinion_penalties = no
+		marriage_ignore_religion = yes
+		ignore_de_jure_laws = yes
+		
+		vassal_limit = 10
+		
+		## Modifiers
+		court_size_modifier = 15
+		
+		allow_looting = yes
+		
+		character_modifier = {
+			days_of_supply = 60
+			retinuesize_perc = 2.0
+			hidden_effect = {
+				bloodline_effect_reaver = 1
+				trait_effect_capture_commanders = 1
+			}
+		}
+	}
+	sinic_reclamation_government = {
+		preferred_holdings = { CASTLE CITY }
+		allowed_holdings = {
+			CASTLE
+			CITY
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
+			TRIBAL
+		}
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
+			feudal_government
+			ghazi_government
+			diwan_government
+			theocratic_feudal_government
+		}
+		free_revoke_on_tiers = {
+			duke
+		}
+		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
+			tribal_government
+		}
+		frame_suffix = "_chineseimperial"
+		title_prefix = "bureaucracy_"
+		potential = {
+			NOT = { is_government_potential = mandala_government }
+			AND = {
+				capital_scope = { region = custom_dongbei }
+				OR = {
+					# most chinese religion
+					religion = jibenyuanze
+					religion = ruist
+					religion = jinbenwei
+					religion = taoist
+					religion = quanzhen
+					religion = shenist
+					religion = shenist_reformed
+					religion = shanrendao
+					religion = gongye_shenjiao
+					religion = aiguo
+					religion = hui
+					religion = sanmin
+					religion = eastern_lightning_reformed
+					religion = eastern_lightning
+					religion = chuma_reformed
+					religion = chuma
+					religion = heilong_reformed
+					religion = heilong
+					AND = {
+						religion_group = buddhist_group
+						culture_group = han
+					}
+				}
+			}
+			is_patrician = no
+		}
+		
+		color = { 218 37 29 }
+
+		dukes_called_kings = yes
+		barons_need_dynasty = yes
+		ignores_de_jure_laws = yes
+		can_imprison_without_reason = yes 
+
+		can_build_tribal = no
+	
+		character_modifier = {
+			short_reign_length = 2
+		}	
+	
+		ignore_in_vassal_limit_calculation = {
+			tribal_government
+		}
+		capital_move_delay = 200
+		## Modifiers
+		court_size_modifier = 10
+		min_vassal_tax = 0.1
 	}
 	chinese_mandate_government = {
 		preferred_holdings = { CASTLE }

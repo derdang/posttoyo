@@ -56,6 +56,22 @@ government_flavor = {
 	}
 }
 government_flavor = {
+	name = gov_banditry
+	graphics = GFX_evt_china_unrest
+	priority = 1
+	trigger = {
+		government = sinic_kleptocracy_government
+	}
+}
+government_flavor = {
+	name = gov_reclamation
+	graphics = GFX_evt_china_stable
+	priority = 1
+	trigger = {
+		government = sinic_reclamation_government
+	}
+}
+government_flavor = {
 	name = gov_sinic_bureaucracy_hegemony
 	graphics = GFX_evt_china_golden_age
 	priority = 1
