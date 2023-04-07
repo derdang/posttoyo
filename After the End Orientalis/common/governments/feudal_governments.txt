@@ -709,6 +709,7 @@ feudal_governments = {
 			NOT = { is_government_potential = mandala_government }
 			NOT = { is_government_potential = sinic_kleptocracy_government }
 			NOT = { is_government_potential = sinic_reclamation_government }
+			NOT = { capital_scope = { region = custom_dongbei } }
 			AND = { 
 				OR = {
 					culture_group = viet
@@ -794,8 +795,8 @@ feudal_governments = {
 		potential = {
 			NOT = { is_government_potential = mandala_government }
 			NOT = { is_government_potential = sinic_reclamation_government }
+			capital_scope = { region = custom_dongbei }
 			AND = {
-				capital_scope = { region = custom_dongbei }
 				OR = {
 					# most chinese religion
 					religion = jibenyuanze
@@ -885,8 +886,8 @@ feudal_governments = {
 		title_prefix = "bureaucracy_"
 		potential = {
 			NOT = { is_government_potential = mandala_government }
+			capital_scope = { region = custom_dongbei }
 			AND = {
-				capital_scope = { region = custom_dongbei }
 				OR = {
 					# most chinese religion
 					religion = jibenyuanze
