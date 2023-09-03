@@ -337,12 +337,15 @@ k_gelugpa = {
 	dignity = 500 # Counted as having this many more counties than it does
 	
 	title = "DALAI_LAMA"
-	foa = "POPE_FOA"
+	foa = "DALAI_LAMA_FOA"
 	title_prefix = "DALAI_LAMA_OF"
 	
 	controls_religion = gelugpa
 	
 	religion = gelugpa
+	
+	# Cannot be held as a secondary title
+	primary = yes
 	
 	dynasty_title_names = no
 }
