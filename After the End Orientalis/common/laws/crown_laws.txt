@@ -567,9 +567,7 @@ de_jure_laws = {
 		group = crown_term_length
 		
 		potential = {
-			OR = {
-				has_law = succ_democratic_elective
-			}
+			always = no
 		}
 		allow = {
 			# Prestige cost
@@ -637,9 +635,6 @@ de_jure_laws = {
 		group = crown_term_length
 		
 		potential = {
-			OR = {
-				has_law = succ_democratic_elective
-			}
 			# These are a republican thing
 			holder_scope = {
 				OR = {
@@ -701,9 +696,6 @@ de_jure_laws = {
 		group = crown_term_length
 		
 		potential = {
-			OR = {
-				has_law = succ_democratic_elective
-			}
 			# These are a republican thing
 			holder_scope = {
 				OR = {
@@ -757,9 +749,6 @@ de_jure_laws = {
 		group = crown_term_length
 		
 		potential = {
-			OR = {
-				has_law = succ_democratic_elective
-			}
 			# These are a republican thing
 			holder_scope = {
 				OR = {
