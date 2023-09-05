@@ -349,3 +349,61 @@ k_gelugpa = {
 	
 	dynasty_title_names = no
 }
+d_nestorian = {
+	color= { 102 72 154 }
+	color2={ 220 220 0 }
+	
+	capital = 1556 #Xi'an
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = DONGFANG_MUSHOU
+	foa = DONGFANG_MUSHOU_FOA
+	title_prefix = ARCHBISHOP_PREFIX
+	
+	controls_religion = nestorian
+	
+	religion = nestorian
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no
+	
+	# Regnal names
+	male_names = {
+		Aba Abraham Eliya Denha Emmanuel Giwargis Hnanisho Ishoyahb Makkikha 
+		Maremmeh Pethion Sabrisho Shemon Sargis Surin Theodosios Timotheos Yahballaha Yohannan
+	}
+}
+d_erkeun = {
+	color= { 72 108 154 }
+	color2={ 220 220 0 }
+	
+	capital = 1598 #Quanzhou
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = CHONG_CHU_KAU
+	foa = CHONG_CHU_KAU_FOA
+	title_prefix = ARCHBISHOP_PREFIX
+	
+	controls_religion = erkeun
+	
+	religion = erkeun
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no
+	
+	# Regnal names
+	male_names = {
+		Aba Abraham Eliya Denha Emmanuel Giwargis Hnanisho Ishoyahb Makkikha 
+		Maremmeh Pethion Sabrisho Shemon Sargis Surin Theodosios Timotheos Yahballaha Yohannan
+	}
+}
