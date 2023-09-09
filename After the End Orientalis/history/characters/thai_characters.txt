@@ -691,27 +691,25 @@
 
 #Ruler of Suvanabhum
 2310069 ={
-         name = "Konthai" #Konthai the King
-         dynasty = 2310001#Kattiyawongse
-		 father=2310021#Chaiya
-         culture=khmer
-         religion=dharmayuttika
-         trait = "underhanded_rogue" 
-         trait = "feeble"
-         trait = "ambitious"
-         trait = "lefthanded"
-         trait = "lunatic"
-         trait = "scholar"
-         trait = "dull"
-         disallow_random_traits=yes 
-         2575.1.1 = { 
-                 birth = yes
-				 culture=thai_central
-         }
-         2690.6.20 = { 
-                 death = yes 
-         }
-         }
+    name = "Konthai" #Konthai the King
+    dynasty = 2310001#Kattiyawongse
+	father=2310021#Chaiya
+    culture=khmer
+    religion=dharmayuttika
+    trait = "underhanded_rogue" 
+	trait = "feeble"
+    trait = "ambitious"
+    trait = "lefthanded"
+    trait = "lunatic"
+    trait = "scholar"
+    trait = "dull"
+    disallow_random_traits=yes 
+    2575.1.1 = { 
+        birth = yes
+		culture=thai_central
+    }
+    2690.6.20 = { death = yes }
+}
 
 
 2310091 ={

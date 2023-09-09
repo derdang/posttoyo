@@ -131,6 +131,70 @@ bm_the_land_of_stupas = { #Indochina Region: Burma, Thailand, Vietnam, Laos, and
 			dynasty=2875000
 		}
 	}
+	selectable_character = {
+		id = 1551101 #Anolat Banya
+		age = 35
+		name = ERA_CHAR_NAME_8
+		title = d_mandalay
+		title_name = d_mandalay
+		
+		character = {
+			dna = cfillolbeaa
+			properties = ac00bc00000000000000000000000000000000
+			religion="parimatira"
+			culture="shan"
+			government = mandala_government
+			dynasty=2314001
+		}
+	}
+	selectable_character = {
+		id = 2310069 #Konthai Kattiyawongse
+		age = 30
+		name = ERA_CHAR_NAME_9
+		title = e_suvanaphum
+		title_name = e_suvanaphum
+		
+		character = {
+			dna = bfimkoladcb
+			properties = ac00bc00000000000000000000000000000000
+			religion="dharmayuttika"
+			culture="thai_central"
+			government = mandala_government
+			dynasty=2310001
+		}
+	}
+	selectable_character = {
+		id = 2317110 #Thinnakone Chantharath
+		age = 25
+		name = ERA_CHAR_NAME_10
+		title = d_vientiane
+		title_name = d_vientiane
+		
+		character = {
+			dna = cfiokmlbead
+			properties = ac00bc00000000000000000000000000000000
+			religion="dhamsoc"
+			culture="laotian"
+			government = mandala_government
+			dynasty=1353117
+		}
+	}
+	selectable_character = {
+		id = 1181001 #Sok Many
+		age = 34
+		name = ERA_CHAR_NAME_11
+		title = d_phnom_penh
+		title_name = d_phnom_penh
+		
+		character = {
+			dna = cfimkolbecc
+			properties = ac00bc00000000000000000000000000000000
+			religion="dharmayuttika"
+			culture="khmer"
+			government = mandala_government
+			dynasty=1181000
+		}
+	}
 }
 bm_at_the_crossroads = { #Maritime SEA (Malaysia, Indonesia and the Phillipines)
 	name = "BM_AT_THE_CROSSROADS"
