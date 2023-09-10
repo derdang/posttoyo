@@ -853,6 +853,49 @@ muslim = {
 		uses_decadence = yes
 		uses_jizya_tax = yes		
 	}
+	
+	bani = {
+		graphical_culture = muslimgfx
+
+		icon = 16
+		heresy_icon = 17
+		
+		interface_skin = { muslim_interface }
+		
+		color = { 200 200 200 }
+		parent = dharmayuttika
+		
+		scripture_name = THE_KORAN_TIPIAKA
+		priest_title = B_MONK
+		
+		high_god_name = GOD_DHAMA
+		
+		god_names = {
+			 GOD_B_MUHHAMAD GOD_THE_BUDDHA GOD_MAHDI_MAITREYA
+		}
+		
+		evil_god_names = {
+			MARA SHAYTAN
+		}
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = christian
+		intermarry = eastern
+		intermarry = ua_dab
+		intermarry = muslim
+		
+		feminist = yes
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		castes = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
 }
 
 pagan_group = {
@@ -2498,48 +2541,6 @@ buddhist_group = {
 		can_grant_divorce = yes
 		priests_can_inherit = no
 		can_retire_to_monastery = yes 
-		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
-	}
-	senthang = {
-		graphical_culture = muslimgfx
-
-		icon = 16
-		heresy_icon = 17
-		
-		interface_skin = { muslim_interface }
-		
-		color = { 200 200 200 }
-		parent = dharmayuttika
-		
-		scripture_name = THE_KORAN_TIPIAKA
-		priest_title = B_MONK
-		
-		high_god_name = GOD_DHAMA
-		
-		god_names = {
-			 GOD_B_MUHHAMAD GOD_THE_BUDDHA GOD_MAHDI_MAITREYA
-		}
-		
-		evil_god_names = {
-			MARA SHAYTAN
-		}
-		
-		piety_name = KARMA
-		character_modifier = { learning = 2 }
-		short_reign_opinion_year_mult = 0
-		
-		intermarry = christian
-		intermarry = eastern
-		intermarry = ua_dab
-		intermarry = muslim
-		
-		feminist = yes
-		female_temple_holders = yes
-		can_grant_divorce = yes
-		castes = yes
-		priests_can_inherit = no
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10

@@ -104,11 +104,11 @@ saint_balance = {
 	customizer = no
 	random = no
 }
-## Senthang schools
+## Bani Cham schools
 
-senthang_muslim = {
+bani_shia = {
 	potential = {
-		religion = senthang
+		religion = bani
 	}
 	religious = yes
 
@@ -116,8 +116,8 @@ senthang_muslim = {
 	tolerates_muslim = yes
 	
 	opposites = {
-		senthang_middle_path
-		senthang_mettaya 
+		bani_balamon
+		bani_sunni 
 	}
 	monthly_character_piety = 0.25
 	learning = 1
@@ -125,9 +125,9 @@ senthang_muslim = {
 	customizer = no
 	random = no
 }
-senthang_mettaya = { #Buddha-Mahdi
+bani_sunni = { #Buddha-Mahdi
 	potential = {
-		religion = senthang
+		religion = bani
 	}
 	religious = yes
 
@@ -135,8 +135,8 @@ senthang_mettaya = { #Buddha-Mahdi
 	buddhist_group_opinion = 10
 
 	opposites = {
-		senthang_middle_path
-		senthang_muslim 
+		bani_balamon
+		bani_shia 
 	}
 
 	diplomacy = 1
@@ -145,9 +145,9 @@ senthang_mettaya = { #Buddha-Mahdi
 	customizer = no
 	random = no
 }
-senthang_middle_path = { #Seek common virtue and values in all religion. i.e. Baha'i
+bani_balamon = { #Seek common virtue and values in all religion
 	potential = {
-		religion = senthang
+		religion = bani
 	}
 	religious = yes
 
@@ -157,8 +157,8 @@ senthang_middle_path = { #Seek common virtue and values in all religion. i.e. Ba
 	tolerates_eastern = yes
 	
 	opposites = {
-		senthang_muslim
-		senthang_mettaya 
+		bani_shia
+		bani_sunni 
 	}
 
 	monthly_character_piety = 0.1

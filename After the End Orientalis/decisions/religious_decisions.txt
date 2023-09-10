@@ -201,18 +201,18 @@ decisions = {
 			set_character_flag = reciting_sutras
 		}
 	}
-	senthang_paths = {
+	bani_paths = {
 		only_playable = yes
 		ai_check_interval = 60
 		
 		potential = {
-			religion = senthang
+			religion = bani
 			NOT = { trait = legendary }
 			in_seclusion = no
 			NOT = { #immersion-breaking
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
-			NOT = { has_character_flag = senthang_paths_chosen }
+			NOT = { has_character_flag = bani_paths_chosen }
 		}
 		allow = {
 			OR = {
@@ -226,9 +226,9 @@ decisions = {
 		}
 		effect = {
 			hidden_tooltip = {
-				narrative_event = { id = senthang.1 }
+				narrative_event = { id = bani.1 }
 			}
-			set_character_flag = senthang_paths_chosen
+			set_character_flag = bani_paths_chosen
 		}
 	}
 	wokou_gamble = {
