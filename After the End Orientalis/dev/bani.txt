@@ -15,39 +15,39 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_senthang1
+		name = EVTOPTA_bani1
 		hidden_tooltip = {
-			remove_trait = senthang_middle_path
-			remove_trait = senthang_metayya
+			remove_trait = bani_balamon
+			remove_trait = bani_sunni
 
 		}
-		add_trait = senthang_muslim
+		add_trait = bani_shia
 		ai_chance = {
 			factor = 10
 		}
 	}
 
 	option = {
-		name = EVTOPTB_senthang1
+		name = EVTOPTB_bani1
 		hidden_tooltip = {
-			remove_trait = senthang_muslim
-			remove_trait = senthang_metayya
+			remove_trait = bani_shia
+			remove_trait = bani_sunni
 
 		}
-		add_trait = senthang_middle_path
+		add_trait = bani_balamon
 		ai_chance = {
 			factor = 10
 		}
 	}
 	
 	option = {
-		name = EVTOPTC_senthang1
+		name = EVTOPTC_bani1
 		hidden_tooltip = {
-			remove_trait = senthang_muslim
-			remove_trait = senthang_middle_path
+			remove_trait = bani_shia
+			remove_trait = bani_balamon
 
 		}
-		add_trait = senthang_mettaya
+		add_trait = bani_sunni
 		ai_chance = {
 			factor = 10
 		}
