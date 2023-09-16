@@ -1,0 +1,62 @@
+namespace = sufi
+
+character_event = {
+	id = sufi.1
+	desc = EVTDESC_sufi_1
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_sufi_1
+		character_event = { id = sufi.2 days = 30 random = 5 }
+	}
+}
+
+character_event = {
+	id = sufi.2
+	desc = EVTDESC_sufi_2
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_sufi_2
+		set_character_flag = sufi_martial
+	}
+	option = {
+		name = EVTOPTB_sufi_2
+		set_character_flag = sufi_music_poetry
+		if = {
+			limit = {
+				religion = hui
+			}
+			character_event = {id = sufi.4 }
+		}
+	}
+	option = {
+		name = EVTOPTC_sufi_2
+		set_character_flag = sufi_mysticism
+	}
+}
+
+character_event = {
+	id = sufi.4
+	desc = EVTDESC_sufi_4
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = sufi_music_poetry
+	}
+	
+	option = {
+		name = EVTOPTA_sufi_4
+		add_trait = khufiy
+	}
+	option = {
+		name = EVTOPTB_sufi_4
+		add_trait = jahriy
+	}
+}

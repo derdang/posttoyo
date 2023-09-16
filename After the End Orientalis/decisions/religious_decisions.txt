@@ -816,4 +816,32 @@ decisions = {
 			always = no
 		}
 	}
+	change_madhab_hui = {
+		ai = no
+		
+		potential = {
+			religion = hui
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedmadhab_hui }
+		}
+		
+		allow = {
+			religion = hui
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = islamate.47 }				
+			}
+			set_character_flag = changedmadhab_hui
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 }

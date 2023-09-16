@@ -1,0 +1,70 @@
+namespace = islamate
+character_event = { #Choosing a madhab
+	id = islamate.47
+	desc = EVTDESC_madhab_switch_hui
+	picture = GFX_evt_chinese_travelers
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	option = {
+		name = EVTOPTA_hui
+		hidden_tooltip = {
+			remove_trait = yihewani
+			remove_trait = xidaotang
+		}
+		add_trait = gedimu
+		ai_chance = {
+			factor = 1
+			modifier = { 
+				factor = 20
+				OR = {
+					culture_group = han
+					culture = uighur
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_hui
+		hidden_tooltip = {
+			remove_trait = gedimu
+			remove_trait = xidaotang
+		}
+		add_trait = yihewani
+		ai_chance = {
+			factor = 1
+			modifier = { 
+				factor = 5
+				culture_group = han
+			}
+			modifier = { 
+				factor = 30
+				culture = uighur
+			}
+		}
+		
+	}
+	option = {
+		name = EVTOPTC_hui
+		hidden_tooltip = {
+			remove_trait = gedimu
+			remove_trait = yihewani
+		}
+		add_trait = xidaotang
+		ai_chance = {
+			factor = 1
+			modifier = { 
+				factor = 30
+				culture_group = han
+			}
+			modifier = { 
+				factor = 5
+				culture = uighur
+			}
+		}
+	}
+}

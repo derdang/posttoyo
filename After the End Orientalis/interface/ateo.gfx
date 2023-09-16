@@ -202,7 +202,7 @@ spriteTypes = {
 
 ### Off-Map India Event Pictures
 
-spriteType = {
+	spriteType = {
 		name = "GFX_indian_civil_war"
 		texturefile = "gfx\\event_pictures\india_civil_war.dds"
 		allwaystransparent = yes
@@ -422,6 +422,10 @@ spriteType = {
 	spriteType = {
 		name = "GFX_evt_chinese_thinkers"
 		texturefile = "gfx\\event_pictures\\chinese_thinkers.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_chinese_travelers"
+		texturefile = "gfx\\event_pictures\\chinese_travelers.dds"
 	}
 	
 ### Orientalis Traits
@@ -644,6 +648,44 @@ spriteType = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	
+#Hui Sufi Orders and Schools
+	
+	spriteType = {
+		name = "GFX_trait_khufiy"
+		texturefile = "gfx/traits/khufiy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_jahriy"
+		texturefile = "gfx/traits/jahriy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_gedimu"
+		texturefile = "gfx/traits/gedimu.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_yihewani"
+		texturefile = "gfx/traits/yihewani.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_xidaotang"
+		texturefile = "gfx/traits/xidaotang.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 
 #Sympathy Traits
 	spriteType = {
@@ -817,5 +859,9 @@ spriteType = {
 	spriteType = {
 		name = "GFX_employ_court_weizza"
 		texturefile = "gfx\\interface\\decision_icon_employ_court_weizza.tga"
+	}
+	spriteType = {
+		name = "GFX_change_madhab_hui"
+		texturefile = "gfx\\interface\\madhab_hui.dds"
 	}
 }
