@@ -1,0 +1,752 @@
+e_jiangsu = {
+	color={ 125 168 101 }
+	color2={ 255 255 20 }
+	
+	capital = 1765 # c_xuanwu
+	culture = huizhou
+	jiao_liao = "Wu"
+	jianghuai = "Ming"
+	wu = "Wu"
+	zhongyuan = "Wu"
+
+	
+	k_wu = {
+		color={ 135 158 106 }
+		color2={ 255 255 255 }
+		
+		capital = 1765 # c_xuanwu
+		culture = huizhou
+		
+		d_nanzhou = {
+			color={ 155 138 116 }
+			color2={ 255 255 255 }
+			
+			capital = 1765 # c_xuanwu
+			
+			c_xuanwu = { # 1765
+				color={ 165 128 121 }
+				color2={ 255 255 255 }
+				
+				holy_site = sanmin
+				holy_site = jibenyuanze
+				
+				b_xuanwu = {}
+				b_qinhuai = {}
+				b_jianye = {}
+				b_gulou_4 = {}
+				b_yuhuatai = {}
+				b_qixia = {}
+				b_jiangning = {}
+			}
+			c_lishui = { # 1767
+				color={ 204 146 136 }
+				color2={ 255 255 255 }
+				
+				b_yongyang = {}
+				b_zhetang = {}
+				b_baima_3 = {}
+				b_shiqiu = {}
+				b_yaxi = {}
+				b_chunxi = {}
+				b_gubai = {}
+			}
+			c_pukou = { # 1766
+				color={ 198 154 147 }
+				color2={ 255 255 255 }
+				
+				b_pukou = {}
+				b_luhe_2 = {}
+				b_shiqiao_2 = {}
+				b_yeshan = {}
+				b_longpao = {}
+				b_maan_3 = {}
+				b_maji_2 = {}
+			}
+		}
+		d_changzhou = {
+			color={ 245 164 86 }
+			color2={ 255 255 255 }
+			
+			capital = 1768 # c_xinbei
+			
+			c_xinbei = { # 1768
+				color={ 255 154 91 }
+				color2={ 255 255 255 }
+				
+				b_xinbei = {}
+				b_tianning = {}
+				b_zhonglou = {}
+				b_wujin = {}
+				b_luoxi_2 = {}
+				b_xixiashu = {}
+				b_menghe = {}
+			}
+			c_liyang = { # 1769
+				color={ 255 139 86 }
+				color2={ 255 255 255 }
+				
+				b_liyang_3 = {}
+				b_jincheng_3 = {}
+				b_rulin_2 = {}
+				b_yaotang = {}
+				b_zhixi = {}
+				b_zhulin_2 = {}
+				b_xuebu = {}
+			}
+			c_yixing = { # 1770
+				color={ 255 191 135 }
+				color2={ 255 255 255 }
+				
+				b_yicheng_2 = {}
+				b_dapu_2 = {}
+				b_dingshu = {}
+				b_hufu = {}
+				b_gaocheng_2 = {}
+				b_xizhu = {}
+				b_xushe = {}
+			}
+			c_zhenjiang_2 = { # 1771
+				color={ 255 127 58 }
+				color2={ 255 255 255 }
+				
+				b_runzhou = {}
+				b_jurong_2 = {}
+				b_danyang = {}
+				b_yangzhou_2 = {}
+				b_dantu = {}
+				b_jingkou = {}
+				b_baotalu = {}
+			}
+		}
+		d_soochow = {
+			color={ 9 99 5 }
+			color2={ 255 255 255 }
+			
+			capital = 1774 # c_gusu
+			
+			c_gusu = { # 1774
+				color={ 255 109 0 }
+				color2={ 255 255 255 }
+				
+				b_gusu = {}
+				b_xiangcheng_3 = {}
+				b_yuanhe_3 = {}
+				b_wangting = {}
+				b_huangdai = {}
+				b_weitang_2 = {}
+				b_yangchenghu = {}
+			}
+			c_kunshan = { # 1776
+				color={ 220 102 30 }
+				color2={ 255 255 255 }
+				
+				b_kunshan = {}
+				b_yushan_2 = {}
+				b_bacheng = {}
+				b_dianshanhu = {}
+				b_huaqiao_3 = {}
+				b_jinxi_2 = {}
+				b_qiandeng = {}
+			}
+			c_shazhou = { # 1775
+				color={ 255 93 0 }
+				color2={ 255 255 255 }
+				
+				b_zhangjiagang = {}
+				b_changshu = {}
+				b_zhitang = {}
+				b_dongbang = {}
+				b_guli = {}
+				b_yangshe = {}
+				b_jinfeng_3 = {}
+			}
+			c_taicang = { # 1778
+				color={ 213 104 38 }
+				color2={ 255 255 255 }
+				
+				b_taicang = {}
+				b_chengxiang_5 = {}
+				b_shaxi_3 = {}
+				b_ludu = {}
+				b_liuhe_2 = {}
+				b_fuqiao = {}
+				b_huangjing = {}
+			}
+			c_wuijiang = { # 1777
+				color={ 255 135 12 }
+				color2={ 255 255 255 }
+				
+				b_binhu_2 = {}
+				b_lili = {}
+				b_qidu_2 = {}
+				b_shengze = {}
+				b_pingwang = {}
+				b_songling = {}
+				b_tongli = {}
+			}
+		}
+		d_wuxi = {
+			color={ 245 165 68 }
+			color2={ 255 255 255 }
+			
+			capital = 1772 # c_wuxi_2
+			
+			c_wuxi_2 = { # 1772
+				color={ 255 155 73 }
+				color2={ 255 255 255 }
+				
+				b_liangxi = {}
+				b_jiangyin = {}
+				b_huishan = {}
+				b_binhu = {}
+				b_xinwu_3 = {}
+				b_xishan_3 = {}
+				b_luoshe_2 = {}
+			}
+			c_huqui = { # 1773
+				color={ 111 50 13 }
+				color2={ 255 255 255 }
+				
+				b_huqiu = {}
+				b_wuzhong = {}
+				b_hushuguan = {}
+				b_tongan_3 = {}
+				b_dongzhu = {}
+				b_luzhi = {}
+				b_xukou = {}
+			}
+		}
+	}
+	k_huaiyang = {
+		color={ 225 184 67 }
+		color2={ 255 255 255 }
+		
+		capital = 1788 # c_huaian
+		culture = jianghuai
+		
+		d_huaian = {
+			color={ 245 164 77 }
+			color2={ 255 255 255 }
+			
+			capital = 1788 # c_huaian
+			
+			c_huaian = { # 1788
+				color={ 255 154 82 }
+				color2={ 255 255 255 }
+				
+				b_huaian = {}
+				b_hongze = {}
+				b_qingjiangpu = {}
+				b_huaiyin = {}
+				b_liancheng_2 = {}
+				b_gaogou = {}
+				b_yixing = {}
+			}
+			c_xuyi = { # 1789
+				color={ 219 125 63 }
+				color2={ 255 255 255 }
+				
+				b_maba = {}
+				b_mingzuling = {}
+				b_chouji = {}
+				b_jiupu_2 = {}
+				b_tiefo = {}
+				b_guanzhen = {}
+				b_guanyinsi = {}
+			}
+		}
+		d_nantong = {
+			color={ 245 124 28 }
+			color2={ 255 255 255 }
+			
+			capital = 1790 # c_chongchuan
+			
+			c_chongchuan = { # 1790
+				color={ 255 114 33 }
+				color2={ 255 255 255 }
+				
+				b_chongchuan = {}
+				b_tongzhou_3 = {}
+				b_jinsha_2 = {}
+				b_xiting = {}
+				b_sanyu = {}
+				b_xianfeng = {}
+				b_pingchao = {}
+			}
+			c_haimen = { # 1791
+				color={ 234 114 44 }
+				color2={ 255 255 255 }
+				
+				b_haimen = {}
+				b_sanxing = {}
+				b_huolong = {}
+				b_baochang = {}
+				b_shuxun = {}
+				b_wanghao = {}
+				b_wannian = {}
+			}
+			c_qidong = { # 1792
+				color={ 213 141 97 }
+				color2={ 255 255 255 }
+				
+				b_qidong = {}
+				b_huilong_3 = {}
+				b_luesigang = {}
+				b_haifu = {}
+				b_huiping = {}
+				b_jinhai = {}
+				b_hezuo_2 = {}
+			}
+		}
+		d_rugao = {
+			color={ 229 147 70 }
+			color2={ 255 255 255 }
+			
+			capital = 1793 # c_rugao
+			
+			c_rugao = { # 1793
+				color={ 239 137 75 }
+				color2={ 255 255 255 }
+				
+				b_rugao = {}
+				b_chaiwan = {}
+				b_xuean = {}
+				b_banjing = {}
+				b_motou = {}
+				b_jiangan_2 = {}
+				b_taoyuan_6 = {}
+			}
+			c_haian = { # 1795
+				color={ 255 135 61 }
+				color2={ 255 255 255 }
+				
+				b_haian = {}
+				b_chengdong_2 = {}
+				b_jiaoxie = {}
+				b_qutang = {}
+				b_lipu_2 = {}
+				b_dagong = {}
+				b_duntou = {}
+			}
+			c_rudong = { # 1794
+				color={ 244 149 91 }
+				color2={ 255 255 255 }
+				
+				b_bingcha = {}
+				b_ju = {}
+				b_caobu = {}
+				b_chahe_2 = {}
+				b_fengli = {}
+				b_xindian_2 = {}
+				b_yangkou_2 = {}
+			}
+		}
+		d_taizhou = {
+			color={ 232 180 89 }
+			color2={ 255 255 255 }
+			
+			capital = 1796 # c_hailing_2
+			
+			c_hailing_2 = { # 1796
+				color={ 242 170 94 }
+				color2={ 255 255 255 }
+				
+				b_hailing = {}
+				b_gaogang = {}
+				b_taixing = {}
+				b_jingjiang = {}
+				b_yonganzhou = {}
+				b_baima_4 = {}
+				b_jingtai_2 = {}
+			}
+			c_xinghua = { # 1797
+				color={ 255 182 99 }
+				color2={ 255 255 255 }
+				
+				b_xinghua = {}
+				b_jiangyan = {}
+				b_qintong = {}
+				b_jiangduo = {}
+				b_dalun = {}
+				b_yuduo = {}
+				b_zhangdian = {}
+			}
+		}
+		d_yancheng = {
+			color={ 245 153 94 }
+			color2={ 255 255 255 }
+			
+			capital = 1800 # c_yancheng
+			
+			c_yancheng = { # 1800
+				color={ 255 143 99 }
+				color2={ 255 255 255 }
+				
+				b_tinghu = {}
+				b_yandu = {}
+				b_dafeng = {}
+				b_xinxing_4 = {}
+				b_bufeng = {}
+				b_yandong = {}
+				b_nanyang = {}
+			}
+			c_binhai = { # 1802
+				color={ 174 102 58 }
+				color2={ 255 255 255 }
+				
+				b_dongkan = {}
+				b_wuxun = {}
+				b_jiepai = {}
+				b_baju = {}
+				b_xiangshui_2 = {}
+				b_yunhe = {}
+				b_nanhe_2 = {}
+			}
+			c_dongtai = { # 1804
+				color={ 183 103 55 }
+				color2={ 255 255 255 }
+				
+				b_dongtai = {}
+				b_qindong = {}
+				b_shinian = {}
+				b_jianggang = {}
+				b_fuan_3 = {}
+				b_xuhe = {}
+				b_nanshenzao = {}
+			}
+			c_funing_2 = { # 1803
+				color={ 234 154 120 }
+				color2={ 255 255 255 }
+				
+				b_fucheng_4 = {}
+				b_goudon = {}
+				b_lupu = {}
+				b_jianhu = {}
+				b_qingfeng_2 = {}
+				b_gangxi = {}
+				b_yanhe = {}
+			}
+			c_sheyang = { # 1801
+				color={ 255 169 112 }
+				color2={ 255 255 255 }
+				
+				b_hede = {}
+				b_linhai_2 = {}
+				b_xintan = {}
+				b_panwan = {}
+				b_yangma = {}
+				b_teyong = {}
+				b_siming_2 = {}
+			}
+		}
+		d_yangzhou = {
+			color={ 245 130 84 }
+			color2={ 255 255 255 }
+			
+			capital = 1798 # c_hanjiang
+			
+			c_hanjiang = { # 1798
+				color={ 255 120 89 }
+				color2={ 255 255 255 }
+				
+				holy_site = erkeun
+				
+				b_hanjiang_2 = {}
+				b_yizheng_2 = {}
+				b_guangling = {}
+				b_gongdao = {}
+				b_wantou = {}
+				b_yangshou = {}
+				b_puxi_2 = {}
+			}
+			c_gaoyou = { # 1799
+				color={ 255 136 85 }
+				color2={ 255 255 255 }
+				
+				b_gaoyou = {}
+				b_jiangdu = {}
+				b_anyi = {}
+				b_fanshui = {}
+				b_jinghe_3 = {}
+				b_xianfeng_2 = {}
+				b_caodian_2 = {}
+			}
+		}
+	}
+	k_shanghai = {
+		color={ 151 157 79 }
+		color2={ 255 255 255 }
+		
+		capital = 1779 # c_shanghai
+		culture = shanghainese
+		
+		d_shanghai = {
+			color={ 171 137 89 }
+			color2={ 255 255 255 }
+			
+			capital = 1779 # c_shanghai
+			
+			c_shanghai = { # 1779
+				color={ 181 127 94 }
+				color2={ 255 255 255 }
+				
+				holy_site = jibenyuanze
+				holy_site = jinbenwei
+				holy_site = tianzhu
+				holy_site = aiguo
+				
+				b_huangpu = {}
+				b_hongkou = {}
+				b_jingan = {}
+				b_xuhui = {}
+				b_changning_4 = {}
+				b_minhang = {}
+				b_yangpu = {}
+			}
+			c_baoshan_2 = { # 1781
+				color={ 255 225 20 }
+				color2={ 255 255 255 }
+				
+				b_wusong_2 = {}
+				b_luodian_2 = {}
+				b_dachang_2 = {}
+				b_yanghang = {}
+				b_yuepu = {}
+				b_gucun = {}
+				b_songnan = {}
+			}
+			c_jiading = { # 1780
+				color={ 244 130 61 }
+				color2={ 255 255 255 }
+				
+				b_jiading_2 = {}
+				b_anting = {}
+				b_nanxiang = {}
+				b_huating = {}
+				b_xuhang = {}
+				b_waigang = {}
+				b_huangdu = {}
+			}
+		}
+		d_fengxian = {
+			color={ 254 88 16 }
+			color2={ 255 255 255 }
+			
+			capital = 1784 # c_fengxian
+			
+			c_fengxian = { # 1784
+				color={ 244 98 11 }
+				color2={ 255 255 255 }
+				
+				b_nanqiao_2 = {}
+				b_fengcheng_6 = {}
+				b_zhuanghang = {}
+				b_qingcun = {}
+				b_zhelin = {}
+				b_haiwan = {}
+				b_situan = {}
+			}
+			c_jinshan = { # 1785
+				color={ 198 117 68 }
+				color2={ 255 255 255 }
+				
+				b_shanyang_2 = {}
+				b_caojing = {}
+				b_fengjing = {}
+				b_jinshanwei = {}
+				b_langxia = {}
+				b_luexiang = {}
+				b_zhujing = {}
+			}
+		}
+		d_pudong = {
+			color={ 245 235 104 }
+			color2={ 255 255 255 }
+			
+			capital = 1782 # c_pudong
+			
+			c_pudong = { # 1782
+				color={ 255 225 109 }
+				color2={ 255 255 255 }
+				
+				b_huamu = {}
+				b_chwansha = {}
+				b_gaoqiao = {}
+				b_beicai = {}
+				b_tang_3 = {}
+				b_caolu = {}
+				b_gaohang = {}
+			}
+			c_chongming = { # 1783
+				color={ 255 206 91 }
+				color2={ 255 255 255 }
+				
+				b_chengqiao = {}
+				b_bu = {}
+				b_xinhe = {}
+				b_shuxin = {}
+				b_chenjia = {}
+				b_zhongxing = {}
+				b_changxing_2 = {}
+			}
+		}
+		d_songjiang = {
+			color={ 219 216 50 }
+			color2={ 255 255 255 }
+			
+			capital = 1786 # c_songjiang
+			
+			c_songjiang = { # 1786
+				color={ 229 206 55 }
+				color2={ 255 255 255 }
+				
+				holy_site = tianzhu
+				
+				b_fangsong = {}
+				b_chedun = {}
+				b_dongjing = {}
+				b_sheshan = {}
+				b_xinbang = {}
+				b_maogang = {}
+				b_xinqiao_4 = {}
+			}
+			c_qingpu = { # 1787
+				color={ 148 62 9 }
+				color2={ 255 255 255 }
+				
+				b_xiayang_3 = {}
+				b_baihe_3 = {}
+				b_chonggu = {}
+				b_huaxin = {}
+				b_jinze = {}
+				b_xujing = {}
+				b_zhaoxiang = {}
+			}
+		}
+	}
+	k_xu = {
+		color={ 194 161 115 }
+		color2={ 255 255 255 }
+		
+		capital = 1805 # c_xuzhou_2
+		culture = zhongyuan
+		
+		d_xuzhou = {
+			color={ 214 141 125 }
+			color2={ 255 255 255 }
+			
+			capital = 1805 # c_xuzhou_2
+			
+			c_xuzhou_2 = { # 1805
+				color={ 224 131 130 }
+				color2={ 255 255 255 }
+				
+				b_yunlong_2 = {}
+				b_quanshan = {}
+				b_gulou_5 = {}
+				b_tongshan = {}
+				b_jiawang = {}
+				b_dawu = {}
+				b_mapo = {}
+			}
+			c_peifeng = { # 1806
+				color={ 239 151 148 }
+				color2={ 255 255 255 }
+				
+				b_peicheng = {}
+				b_fengcheng_7 = {}
+				b_huzhai = {}
+				b_lulo = {}
+				b_wuduan = {}
+				b_shunhe = {}
+				b_dashahe = {}
+			}
+			c_pizhou = { # 1807
+				color={ 242 124 118 }
+				color2={ 255 255 255 }
+				
+				b_pizhou = {}
+				b_xinyi_3 = {}
+				b_suicheng_2 = {}
+				b_suihe = {}
+				b_wangji_2 = {}
+				b_gupi = {}
+				b_liji = {}
+			}
+		}
+		d_lianyungang = {
+			color={ 211 76 21 }
+			color2={ 255 255 255 }
+			
+			capital = 1811 # c_haizhou
+			
+			c_haizhou = { # 1811
+				color={ 201 86 16 }
+				color2={ 255 255 255 }
+				
+				b_haizhou_2 = {}
+				b_lianyun = {}
+				b_ganyu = {}
+				b_baitabu = {}
+				b_taolin = {}
+				b_anfeng = {}
+				b_fangshan_2 = {}
+			}
+			c_guanyun = { # 1812
+				color={ 255 148 142 }
+				color2={ 255 255 255 }
+				
+				b_yishan = {}
+				b_yangji = {}
+				b_yanweigang = {}
+				b_tongxing_2 = {}
+				b_sidui = {}
+				b_longju = {}
+				b_xiaoyi = {}
+			}
+		}
+		d_suqian = {
+			color={ 229 120 105 }
+			color2={ 255 255 255 }
+			
+			capital = 1808 # c_sucheng
+			
+			c_sucheng = { # 1808
+				color={ 239 110 110 }
+				color2={ 255 255 255 }
+				
+				b_sucheng = {}
+				b_suyu = {}
+				b_shucheng = {}
+				b_menxi = {}
+				b_qixiong = {}
+				b_shizi_3 = {}
+				b_longmiao = {}
+			}
+			c_sihong = { # 1810
+				color={ 243 156 104 }
+				color2={ 255 255 255 }
+				
+				b_qingyang_2 = {}
+				b_meihua_4 = {}
+				b_guiren = {}
+				b_jieji = {}
+				b_sunyuan = {}
+				b_jinsuo = {}
+				b_bancheng = {}
+			}
+			c_siyang = { # 1809
+				color={ 239 81 110 }
+				color2={ 255 255 255 }
+				
+				b_zhongxing_2 = {}
+				b_aiyuan = {}
+				b_wangji_3 = {}
+				b_peixu = {}
+				b_likou = {}
+				b_linhe_2 = {}
+				b_luji = {}
+			}
+		}
+	}
+}
