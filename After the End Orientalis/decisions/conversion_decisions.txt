@@ -1198,15 +1198,17 @@ targetted_decisions = {
 			is_playable = yes
 			is_heretic = yes
 			OR = {
-				religion = sjotru
-				religion = finnish_pagan
-				religion = baltic_pagan
-				religion = tengri_pagan
-				religion = slavic_pagan
-				religion = aztec
-				religion = west_african_pagan
-				religion = bon
-				religion = hellenic_pagan
+				religion = ua_dab
+				religion = seirei
+				religion = muist
+				religion = shenist
+				religion = donyi_polo
+				religion = khanist
+				religion = mo
+				religion = chuma
+				religion = heilong
+				religion = shamanist
+				religion = ak_jeng
 			}
 		}
 		allow = {
@@ -1217,40 +1219,48 @@ targetted_decisions = {
 		effect = {
 			piety = -50
 			if = {
-				limit = { religion = sjotru }
-				religion = sjotru_reformed
+				limit = { religion = ua_dab }
+				religion = ua_dab_reformed
 			}
 			if = {
-				limit = { religion = finnish_pagan }
-				religion = finnish_pagan_reformed
+				limit = { religion = seirei }
+				religion = seirei_reformed
 			}
 			if = {
-				limit = { religion = baltic_pagan }
-				religion = baltic_pagan_reformed
+				limit = { religion = muist }
+				religion = muist_reformed
 			}
 			if = {
-				limit = { religion = tengri_pagan }
-				religion = tengri_pagan_reformed
+				limit = { religion = shenist }
+				religion = shenist_reformed
 			}
 			if = {
-				limit = { religion = slavic_pagan }
-				religion = slavic_pagan_reformed
+				limit = { religion = donyi_polo }
+				religion = donyi_polo_reformed
 			}
 			if = {
-				limit = { religion = aztec }
-				religion = aztec_reformed
+				limit = { religion = khanist }
+				religion = khanist_reformed
 			}
 			if = {
-				limit = { religion = west_african_pagan }
-				religion = west_african_pagan_reformed
+				limit = { religion = mo }
+				religion = mo_reformed
 			}
 			if = {
-				limit = { religion = bon }
-				religion = bon_reformed
+				limit = { religion = chuma }
+				religion = chuma_reformed
 			}
 			if = {
-				limit = { religion = hellenic_pagan }
-				religion = hellenic_pagan_reformed
+				limit = { religion = heilong }
+				religion = heilong_reformed
+			}
+			if = {
+				limit = { religion = shamanist }
+				religion = shamanist_reformed
+			}
+			if = {
+				limit = { religion = ak_jeng }
+				religion = ak_jeng_reformed
 			}
 			
 			hidden_tooltip = {
@@ -1329,40 +1339,48 @@ targetted_decisions = {
 				factor = 2.0
 				OR = {
 					AND = {
-						religion = sjotru
-						sjotru_reformed = { has_religion_feature = religion_proselytizing }
+						religion = ua_dab
+						ua_dab_reformed = { has_religion_feature = religion_proselytizing }
 					}
 					AND = {
-						religion = tengri_pagan
-						tengri_pagan_reformed = { has_religion_feature = religion_proselytizing }
+						religion = seirei
+						seirei_reformed = { has_religion_feature = religion_proselytizing }
 					}
 					AND = {
-						religion = slavic_pagan
-						slavic_pagan_reformed = { has_religion_feature = religion_proselytizing }
+						religion = muist
+						muist_reformed = { has_religion_feature = religion_proselytizing }
 					}
 					AND = {
-						religion = baltic_pagan
-						baltic_pagan_reformed = { has_religion_feature = religion_proselytizing }
+						religion = shenist
+						shenist_reformed = { has_religion_feature = religion_proselytizing }
 					}
 					AND = {
-						religion = finnish_pagan
-						finnish_pagan_reformed = { has_religion_feature = religion_proselytizing }
+						religion = donyi_polo
+						donyi_polo_reformed = { has_religion_feature = religion_proselytizing }
 					}
 					AND = {
-						religion = aztec
-						aztec_reformed = { has_religion_feature = religion_proselytizing }
+						religion = khanist
+						khanist_reformed = { has_religion_feature = religion_proselytizing }
 					}
 					AND = {
-						religion = west_african_pagan
-						west_african_pagan_reformed = { has_religion_feature = religion_proselytizing }
+						religion = mo
+						mo_reformed = { has_religion_feature = religion_proselytizing }
 					}
 					AND = {
-						religion = bon
-						bon_reformed = { has_religion_feature = religion_proselytizing }
+						religion = chuma
+						chuma_reformed = { has_religion_feature = religion_proselytizing }
 					}
 					AND = {
-						religion = hellenic_pagan
-						hellenic_pagan_reformed = { has_religion_feature = religion_proselytizing }
+						religion = heilong
+						heilong_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = shamanist
+						shamanist_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = ak_jeng
+						ak_jeng_reformed = { has_religion_feature = religion_proselytizing }
 					}
 				}
 			}
