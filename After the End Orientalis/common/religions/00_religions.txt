@@ -1783,6 +1783,69 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 	}
+	kaharingan_reformed = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 32
+		heresy_icon = 33
+		
+		color = { 120 80 40 }
+		
+		high_god_name = GOD_MAHA_ESA
+		
+		god_names = {
+			GOD_THE_ANCESTORS GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			SARA
+		}
+		scripture_name = THE_RITUALS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
+	kaharingan = {
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 31
+		heresy_icon = 33
+		
+		color = { 40 80 120 }
+		
+		high_god_name = GOD_MAHA_ESA
+		
+		god_names = {
+			GOD_THE_ANCESTORS GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			SARA
+		}
+		scripture_name = THE_RITUALS
+		priest_title = PRIEST
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = eastern
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = seirei_reformed
+	}
 }
 
 jewish_group = {
