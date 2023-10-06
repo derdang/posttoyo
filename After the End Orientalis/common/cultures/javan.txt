@@ -62,7 +62,7 @@ nusantaran = {
 		}
 		male_patronym = "putra"
 		female_patronym = "putri"
-		founder_named_dynasties = yes
+		dynasty_name_first = yes
 		allow_looting = yes
 		modifier = default_culture_modifier
 		dukes_called_kings = yes
@@ -130,7 +130,7 @@ nusantaran = {
 			Yulis Yusfina
 			Zen Zahra_Azahra Zakiya Zubaedah Zubeiri
 		}
-		founder_named_dynasties = yes
+		dynasty_name_first = yes
 		allow_looting = yes
 		modifier = default_culture_modifier
 		dukes_called_kings = yes
@@ -152,54 +152,57 @@ nusantaran = {
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
-		color = { 0.6 0.4 0.8 }
+		color = { 0.9 0.6 0.15 }
 		male_names = {
-			Aa Aam Achdiat Adiningkusuma Agum Agus Ahmad Ajip Ali Amir Amirudin Anies Anom Aria Arudji Asep Ateng 
-			Baduga Burdah 
-			Cakrabuana Cecep 
-			Dadang Da'i Daradjatun Dewata Diwangkara Djuanda 
-			Ebet Eka Entis 
-			Gilan Ginandjar Gorbacep Gugum Gunungjati 
-			Hasbullah Hassan
-			Irama Iskandar_Alexander Iwan 
-			Jajang Jayadewata Jayawikarta
-			Kamidia Kancana Kaprabon Kawasa "Kian Santang" Kurnia
-			Laksamana 
-			Machjar Machmud_Mahmud Maman Mamat_Muhammad Ma'ruf Martawijaya Mochamad_Muhammad Mochtar Muljadi Mulyana Mustapa
-			Naser Natiningrat Nayaga Nilakendra Niskala Nurbuat
-			Prabu Priya
-			Rachmat Rajaningrat Rangga Rasyid_Rashid Ratudewata Ridwan 
-			Sengara Sepuh Sudrajat Suharna Sunandar Sundalana Surawisesa Suriadiwangsa Sutarma Suwarga
-			Tatang Tirtayasa
-			Ujang Umar
-			Walangsungsang Wastu 
-			Yayan Yudi Yusup_Joseph
+			Aan Abdul Abdullah Abu Achmad Adam Ade Adi Aditya Agung Agus Ahmad Aji Akbar Akhmad Al Albert Alfian Ali Amin Amir Andi Andre Andreas Andrew Andri Andry Andy Angga Anang Andika Ardi Ari Arief Arif Arifin Aris Ary Asep 
+			Bagus Bambang Bayu Benny Bong Budi Budiman 
+			Candra Catur Cecep Chandra 
+			Dadang Dani Daniel Deddy Dede Deden Dedi Dedy Deni Denny Deny Dicky Didi Didik Dimas Dodi Doni Donny 
+			Eddy Edi Edwin Edy Erwin 
+			Fahmi Faisal Fajar Fauzi Febri Feri Ferry Firdaus Firman Firmansyah 
+			Galih Gatot Gunawan Gusti 
+			Hadi Haji Hamdani Hamidah Hari Haris Harry Hasan Haryanto Hasanah Helmi Hendi Hendra Hendri Hendrik Hendro Hendry Heri Herman Hermanto Hermawan Herry Heru Hery Hidayat
+			Ibnu Ibrahim Iin Ilham Imam Iman Imas Imron Indra Iqbal Irfan Irwan Ismail Iskandar_Alexander Ita Ivan Iwan 
+			Jamaludin Jimmy Johan Johanes John Joko Joni Jumadi Junaedi 
+			Kevin Kiki Komarudin Kurnia Kurniawan Kusnadi 
+			Latifah Lukman 
+			Maman_Muhammad Mamat_Muhammad Mario Marlina Marni Martin Martini Mat Maulana May Michael Mulyadi Mulyani Mulyati Mulyono Munawaroh 
+			Nanang Nasir Nanda 
+			Panji Paulus Petrus Puji Purnomo Purwanto 
+			Rahmat Rama Rangga Rian Richard Ricky Ridwan Riki Rio Rizal Rizki Robby Robert Ronald Roni Ronny Rosidah Roy Rudi Rudy Rusdi Rusli Ryan 
+			Saiful Salim Samsudin Samuel Sandi Sandra Sandy Satria Septian Sherly Sigit Slamet Sofyan Soleh Solihin Steven Subur Sugeng Sugianto Sugiarti Sugiyanto Suhendra Suherman Sukardi Sulaeman Sumardi SumarnoSunardi Sunarti Sunarto Sunaryo Supardi Suparman Suparno Suprihatin Supriyadi Supriyanto SupriyatiSurya Suryadi Suryani Suryati Susanto Sutrisno Suwardi Suwarno Suyanto Syahrul Syaiful Syamsudin Syamsul Syarif Syarifudin 
+			Tan Tatang Taufik Teddy Teguh Tomi Toni Tony Toto 
+			Udin Ujang Umar 
+			Wahyu Wahyudi Wahyudin Wahyuni Wawan Widodo William Wisnu 
+			Yani Yanto Yogi Yohanes Yudha Yudi Yuli Yuliana Yuliani Yulianto Yulianti Yusuf Yusup 
+			Zaenal Zainal
 		}
 		female_names = {
-			Aciputih Adhisty Andini Airan Ambetkasih Arti Arya Asmirandah Asyifa 
-			Betti Bentang
-			Devina Dewi Diah Dinda 
-			Elvy Endang
-			Fatimah_Fatima
-			Galih Galuh
-			Herfiza 
-			Imas Indah Inten
-			Kania
-			Meriam_Mary Meutya Muharam
-			Nastiti Ningsih Nining Nur 
-			Pakungwati Paramitha Pia Pingkan Pitaloka
-			Qory
-			Rara Ratna Rianti Roekiah Rossa 
-			Sannaha Sastaviyana Singamurti Srie "Subang Larang" Suhara Svida
-			Tejakencana Thalita Trie 
-			Widya  
-			Yulianti Yunita 
+			Agnes Aisah Aisyah Ai Amelia Ami Aminah Aliyah Anita Anna Annisa Antonia Antonius Aulia Ayu Astuti Ati Atikah Aulia Ayu 
+			Cindy Citra 
+			Dahlia Desi Devi_Dewi Diah Dian Diana Dina Dini Dyah 
+			Elvita Eli_Elly Ema Emi Endah Endang Eni Erna Ernawati Erni Esti Eti Ety Euis Eva Evi Evita
+			Farida Faridah Fatimah Febri Ferry Fitri Fitria Fitriah Fitriyani 
+			Grace 
+			Halimah Hamidah Hani Haryati Hasanah Hayati Helmi Heni_Henny Herawati Herni Hesti Hilda 
+			Ida Iin Iis Ika Ima Imelda Ina Indah Indri Intan Ira Irawati Irene Irma Irvan Ita 
+			Jesika 
+			Kartika Kartini Kevin Komariah 
+			Latifah Leni Lenny Lestari Lia Liana Lilik Lilis Lily Lina Linda Lisa 
+			Maemunah Maesaroh Magdalena Maimunah Maisaroh Maria Mariana Marlina Marni Martha Martini Maryam Maryani Maryati Maulana May Maya Mega Megawati Mei Merry Mia Michael Mila Mimi Mimin Mira Mulyani Mulyati Munawaroh Murni 
+		    Nadia Nana Nani Natalia Neneng Neng Neni Nia Niken Nila Nina Nining Nita Nova Novi Novia Novita Nunung Nur Nuraeni Nuraini Nurhasanah Nurhayati Nurjanah Nurlaela_Nurlela Nurul Nuryani Nuryati 
+		    Patimah Puji Purnomo Purwanti Purwanto Putri 
+		    Rachmat Rahayu Rahmawati Rama Rangga Rani Ratih Ratna Reni Restu Retno Ria Riana Rika Riki Rina Rini Rio Ririn Riska Rita Rizka Rohana Rohani Romlah
+		    Sadiah Saidah Sandy Santi Sanusi Sarah Sari Sherly Shinta Siti Sopiah Suci Sugiarti Suharti Suhartini Sulastri Sumarni Sumarno Sumiati Suminah Sumini Sumirah Sumiyati Sunarti Suparmi Supriyati Surati Suratmi ]Suryani Suryati Susanti Susilawati_Susilowati Sutinah Sutini Suwarni Suwarti Suyanto Suyati 
+		    Teti Theresia Tina Tini Titi Titik Titin Tuti 
+		    Umi Umiyati
+		    Vera Viktoria Vivi
+		    Wahyu Wahyuningsih Wartini Wati Widya Winda Wiwi Wiwik Wiwin Wulan 
+		    Yan Yani Yanti Yati Yayah Yeni Yenni Yenny Yuni Yunita Yuyun
 		}
-		from_dynasty_suffix = "wijaya"
-		founder_named_dynasties = yes
+		dynasty_name_first = yes
 		allow_looting = yes
 		modifier = default_culture_modifier
-		dukes_called_kings = yes
 		
 		pat_grf_name_chance = 50
 		mat_grf_name_chance = 20
@@ -220,49 +223,51 @@ nusantaran = {
 		}
 		color = { 0.6 0.4 0.8 }
 		male_names = {
-			Aa Aam Achdiat Adiningkusuma Agum Agus Ahmad Ajip Ali Amir Amirudin Anies Anom Aria Arudji Asep Ateng 
+			Aa Aam Abdullah Abdulaziz Abdulmajid Abdulaziz Aep Achdiat Adiningkusuma Ade Agum Agus Ahmad Ajip Ajang Ajat Ali Amir Amirudin Anies Anom Aria Arudji Asep Ateng 
 			Baduga Burdah 
-			Cakrabuana Cecep 
-			Dadang Da'i Daradjatun Dewata Diwangkara Djuanda 
-			Ebet Eka Entis 
-			Gilan Ginandjar Gorbacep Gugum Gunungjati 
-			Hasbullah Hassan
-			Irama Iskandar_Alexander Iwan 
-			Jajang Jayadewata Jayawikarta
-			Kamidia Kancana Kaprabon Kawasa "Kian Santang" Kurnia
-			Laksamana 
-			Machjar Machmud_Mahmud Maman Mamat_Muhammad Ma'ruf Martawijaya Mochamad_Muhammad Mochtar Muljadi Mulyana Mustapa
-			Naser Natiningrat Nayaga Nilakendra Niskala Nurbuat
-			Prabu Priya
-			Rachmat Rajaningrat Rangga Rasyid_Rashid Ratudewata Ridwan 
-			Sengara Sepuh Sudrajat Suharna Sunandar Sundalana Surawisesa Suriadiwangsa Sutarma Suwarga
-			Tatang Tirtayasa
-			Ujang Umar
-			Walangsungsang Wastu 
-			Yayan Yudi Yusup_Joseph
+			Cakrabuana Cecep Cucu
+			Dadang Da'i Daradjatun Dewata Diwangkara Djuanda Dayat Deden
+			Ebet Eka Entis Enjang Engkos
+			Gilan Ginandjar Gorbacep Gugum Gunungjati Gumelar
+			Hasbullah Hassan Hamdan Hendra Henhen Harja Habib 
+			Irama Idi Iskandar_Alexander Iwan Ijang Ihin 
+			Jajang Jalu Jayadewata Jayawikarta Jaka Jejen Junaedi
+			Kamidia Kancana Kaprabon Kawasa Kosasih Koswara Kurniawan "Kian Santang" Kurnia Kamandaka
+			Laksamana Latip Lukman
+			Machjar Machmud_Mahmud Maman Mamat_Muhammad Ma'ruf Martawijaya Mochamad_Muhammad Mochtar Muljadi Mulyana Mustapa Maman Memed_Muhammad Markasih
+			Naser Natiningrat Nayaga Nilakendra Niskala Nurbuat Nandang Nataprawira
+			Oded
+			Prabu Priya Pepen Patahilah
+			Rachmat Rajaningrat Raka Rangga Rasyid_Rashid Ratudewata Ridwan Rukmana
+			Sengara Sepuh Sudrajat Suharna Sunandar Sundalana Surawisesa Suriadiwangsa Sutarma Suwarga Sanjaya Siliwangi Solihin Sobarna Suganda Suhendar Sujoni Supriatna Sutrisna Surawijaya
+			Tatang Tirtayasa Tisna
+			Ujang Umar Udin Uu
+			Walangsungsang Wastu Wisesa Wawan 
+			Yayan Yudi Yusup_Joseph Yana
 		}
 		female_names = {
-			Aciputih Adhisty Andini Airan Ambetkasih Arti Arya Asmirandah Asyifa 
-			Betti Bentang
-			Devina Dewi Diah Dinda 
-			Elvy Endang
-			Fatimah_Fatima
-			Galih Galuh
-			Herfiza 
-			Imas Indah Inten
-			Kania
-			Meriam_Mary Meutya Muharam
-			Nastiti Ningsih Nining Nur 
-			Pakungwati Paramitha Pia Pingkan Pitaloka
-			Qory
-			Rara Ratna Rianti Roekiah Rossa 
-			Sannaha Sastaviyana Singamurti Srie "Subang Larang" Suhara Svida
-			Tejakencana Thalita Trie 
-			Widya  
-			Yulianti Yunita 
+			Aciputih Adhisty Airan Ambetkasih Andini Arti Arya Asmirandah Asyifa 
+    		Betti Bentang 
+    		Devina Dewi Diah Dinda 
+    		Elvy Endang Erni Eva
+		    Fatimah_Fatima 
+		    Galih Galuh 
+ 		    Halimah Hani erfiza Heni
+		    Ida Idah Iim Iin Iis Ijah Ika Ikah Ilah Imas Ina Indah Intan Ipah Irma Isah Ita Iyan 
+		    Kania Kartini Kiki Komariah_Kokom 
+		    Leni Lia Lili Lilis Lina Linda 
+		    Meriam_Mary 
+		    Meutya Muharam Maemunah Mamah Maria Maryati Maya Mimi Mimin Mira 
+		    Nana Nani Neneng Neng Nengsih Neni Nia Nina Nita Novi Nunung Nur Nuraeni Nurhasanah Nurhayati Nurjanah Nurul Nyai 
+		    Pakungwati Paramitha Pia Pingkan Pitaloka Putri 
+		    Qory 
+		    Rani Ratna Reni Ria Rika Rina Rini Riska Rita Rizki Rizky Roekiah Rossa Rara Roni Rosita 
+		    Sannaha Sastaviyana Singamurti Srie "Subang Larang" Suhara Svida Santi Sari Sinta Siti Sri Susi Susilawati 
+		    Tejakencana Thalita Trie Tata Tati Tini Tita Titi Titin Tuti 
+		    Widya Wiwi Wiwin 
+ 		    Yana Yani Yanti Yati Yaya Yayah Yayan Yayat Yeni Yeti Yulianti Yunita
 		}
-		from_dynasty_suffix = "wijaya"
-		founder_named_dynasties = yes
+		dynasty_name_first = yes
 		allow_looting = yes
 		modifier = default_culture_modifier
 		dukes_called_kings = yes
