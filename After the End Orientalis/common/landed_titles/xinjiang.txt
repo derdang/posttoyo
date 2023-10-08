@@ -1,4 +1,3 @@
-
 e_xinjiang = {
 	color={ 0 153 255 }
 	color2={ 255 255 20 }
@@ -19,11 +18,17 @@ e_xinjiang = {
 			
 			capital = 1304 # c_urumchi
 			
+			uighur = "Urumqi"
+			
 			c_urumchi = { # 1304
 				color={ 195 194 102 }
 				color2={ 255 255 255 }
 				
-				b_urumchi = {}
+				uighur = "Urumqi"
+				
+				b_urumchi = {
+					uighur = "Urumqi"
+				}
 				b_midong = {}
 				b_xinshi = {}
 				b_toutunhe = {}
