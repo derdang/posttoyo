@@ -693,7 +693,7 @@ muslim = {
 		Sakina-muslim Salma-muslim Sariya-muslim 
 	}
 	
-	salafi = { #reflavored ATEFF Traditionalist
+	salafi = { # Renewalist
 		graphical_culture = muslimgfx
 
 		icon = 5
@@ -723,9 +723,14 @@ muslim = {
 		uses_decadence = yes
 		uses_jizya_tax = yes
 
+		intermarry = wahabbi
+		intermarry = nusantara
+		intermarry = pancasila
+		intermarry = hui
+
 	}
 	
-	wahabbi = { #angry 
+	wahabbi = { # Salafi
 		graphical_culture = muslimgfx
 
 		icon = 6
@@ -756,6 +761,8 @@ muslim = {
 		uses_decadence = yes
 		uses_jizya_tax = yes
 
+		intermarry = salafi
+
 	}
 	
 	hui = { #Islam with Chinese Characteristics (Does not have a heresy)
@@ -785,7 +792,8 @@ muslim = {
 		
 		attacking_same_religion_piety_loss = yes
 		
-		intermarry = sunni
+		intermarry = wahabbi
+		intermarry = salafi
 	}
 	
 	nusantara = { #Islam with Nunsantara Characteristics
@@ -793,7 +801,7 @@ muslim = {
 
 		icon = 9
 		
-		color = { 237 28 36 }
+		color = { 130 219 90 }
 		
 		scripture_name = THE_KORAN
 		priest_title = KYAI
@@ -815,7 +823,9 @@ muslim = {
 		
 		attacking_same_religion_piety_loss = yes
 		
-		intermarry = sunni
+		intermarry = salafi
+		intermarry = nusantara
+		intermarry = pancasila
 		intermarry = hui
 		intermarry = buddhist_group
 		intermarry = indian_group
@@ -3284,7 +3294,7 @@ oldworld = {
 		icon = 75
 		heresy_icon = 75
 		
-		color = { 130 219 90 }
+		color = { 237 28 36  }
 		
 		interface_skin = { indian_interface muslim_interface } 
 		
@@ -3315,8 +3325,9 @@ oldworld = {
 		piety_name = HARMONY
 		
 		intermarry = nusantara
-		intermarry = sunni
-		intermarry = wahabbi
+		intermarry = salafi
+		intermarry = buddhist_group
+		intermarry = indian_group
 	}
 	quinto = {
 		graphical_culture = westerngfx
