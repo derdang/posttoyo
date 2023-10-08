@@ -160,6 +160,7 @@
 	trait=honorable
 	disallow_random_traits=yes
 	2574.2.8={birth=yes}
+	2600.1.1={capital = c_yantian}
 	2650.1.1={death=yes}
 }
 
@@ -178,6 +179,36 @@
 	female=yes
 	2586.9.1={birth=yes}
 	2600.1.1={capital = c_mazhang}
+}
+2620302 ={ #Leizhou
+	name="Jingjiu"
+	dynasty=9033016
+	culture=min
+	religion=ruist
+	martial=10
+	diplomacy=8
+	stewardship=9
+	intrigue=9
+	learning=10
+	trait=brilliant_strategist
+	trait=administrator
+	2589.1.12={birth=yes}
+	2660.1.1={death=yes}
+}
+2620303 ={ #Maoming
+	name="Zhan"
+	dynasty=9051016
+	culture=cantonese
+	religion=shenist
+	martial=10
+	diplomacy=8
+	stewardship=9
+	intrigue=9
+	learning=10
+	trait=underhanded_rogue
+	trait=schemer
+	2580.7.22={birth=yes}
+	2660.1.1={death=yes}
 }
 ## To do : Two Shen-chen (pun intended)
 
@@ -198,10 +229,10 @@
 	2587.1.1={birth=yes}
 }
 2653002 ={ #nanning
-	name="Dinh Dao"
-	dynasty=2875107
-	culture=tonkinese
-	religion=mahayana
+	name="Zhizhong"
+	dynasty=9053077 #Guo
+	culture=zhuang
+	religion=mo
 	martial=10
 	trait=brilliant_strategist
 	trait=strong
@@ -216,6 +247,7 @@
 }
 2653012 ={ #fangcheng, dongxing
 	name="Fa"
+	dynasty=9053091 #Huang
 	culture=zhuang
 	religion=shenist
 	2580.1.1={birth=yes}
