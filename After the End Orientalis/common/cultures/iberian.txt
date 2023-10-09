@@ -1,0 +1,75 @@
+iberian = {
+	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
+	graphical_cultures = { occitangfx westerngfx }
+	
+	portuguese = {
+		graphical_cultures = { southerngfx }
+		
+		color = { 0.75 0.67 0.07 }
+		
+		male_names = {
+			Acácio Adrien_Adrian Afonso_Alfonso Agostinho_Augustine Alberto_Albert Alexandre_Alexander Álvaro Américo_Amalric André_Andrew Ângelo_Angel Aníbal_Hannibal António_Anthony Armando_Herman Artur_Arthur Augusto_Augustus
+			Belmiro Benjamin Bento_Benedict Bernardo_Bernard Bruno Bryan 
+			Caio Cândido_Candide Carlos_Charles César_Caesar Cristiano_Christian Cristóvão_Christopher Custódio
+			Damião_Damian Daniel Davi_David David Dinis_Dionysus Diogo_James Domingos_Dominic Duarte_Edward Dylan 
+			Edgar Eduardo_Edward Enzo Eric Ernesto_Ernest Estevão_Stephen
+			Fábio_Fabian Fernando_Ferdinand Filipe_Philip Francisco_Francis Frederico_Frederick 
+			Gabriel Gaspar_Casper Gil_Gilles Gonçalo_Gonzalo Guilherme_William Gustavo_Gustav 
+			Hélio Henrique_Henry Hernâni Hugo_Hugh 
+			Ilídio Isaac Ivan_John Ivo_Yves 
+			Jaime_James João_John "João Mária" "João Paulo" Joaquim_Joachim Joel Jonathan Jorge_George José_Joseph "José Manuel" "José Maria" Júlio_Julius
+			Kevin 
+			Leandro_Leander Leonardo_Leonard Liberato Lourenço_Lawrence Luan Lucas_Luke Luís_Louis 
+			Manuel_Emmanuel Marcelo_Marcellus Marco_Mark Mário_Marius Martim_Martin Mateo_Matthew Mateus_Matthew Matias_Matthew Miguel_Michael Moisés_Moses Muhammad 
+			Noah Nuno 
+			Octávio_Octavius Orlando_Roland
+			Paulo_Paul Pedro_Peter 
+			Rafael_Raphael Raul_Rudolf Renato_Renatus Ricardo_Richard Rodrigo_Roderick Ronaldo_Ronald Rúben_Reuben Rui_Roy 
+			Salvador Samuel Santiago Sebastião_Sebastian Sérgio_Sergius Silvestre_Sylvester Simão_Simon 
+			Theo_Theodore Tiago_James Tomás_Thomas
+			Valentim_Valentine Vasco_Vasco Vicente_Vincent Vítor_Victor 
+			Xavier 
+			Yuri_George 
+			Zé_Joseph
+		}
+		female_names = {
+			Adriana Alana Alexandra Alice Alícia_Alice Amélia_Amelia Ana_Anne Anita Antónia Ariana_Ariane Áurea Aurora 
+			Bárbara_Barbara Beatriz_Beatrice Benedita_Benedicta Bia Bianca_Blanche Bruna 
+			Caetana Camila_Camille Carolina_Caroline Carlota_Charlotte Carminho_Carmen Catarina_Catherine Chloe Clara Constança_Constance Cristina_Christine
+			Daniela Débora_Deborah Diana 
+			Eduarda Elisa_Elizabeth Elvira Ema_Emma Emília_Emily Emily Érica_Erica Ester_Esther Eva 
+			Fabiana Filipa_Philippa Flor Francisca_Frances Frederica_Frederica 
+			Gabriela_Gabriella Giovanna_Joan 
+			Helena_Helen 
+			Inês_Agnes Íris_Iris Isabel_Isabelle Isabella_Elizabeth Ísis_Isis 
+			Jéssica_Jessica Joana_Joan Júlia_Julia Juliana Julieta_Julia 
+			Kelly Kyara 
+			Lara Larissa Laura Leonor_Eleanor Letícia_Laetitia Lia Lorena Luana Lúcia_Lucia Luena Luísa_Louise Luna Luz 
+			Madalena_Magdalene Mafalda_Matilda Mara Margarida_Margaret Maria_Mary "Maria Teresinha" Mariana_Marianne Marta_Martha Matilde_Matilda Mayara Melanie Melissa Mia Miriam_Mary Mónica_Monica
+			Nayara Nicole Noa Núria 
+			Olívia_Olivia 
+			Pilar 
+			Rafaela Raquel_Rachel Rita 
+			Safira_Sapphire Sara_Sarah Sofia_Sophia Soraia 
+			Teresa_Theresa 
+			Valentina Vera Vitória_Victoria 
+			Yara Yasmin_Jasmine 
+		}
+		
+		from_dynasty_prefix = "de "
+		male_patronym = "es"
+		female_patronym = "es"
+		grammar_transform = spanish
+		seafarer = yes
+		
+		pat_grf_name_chance = 55
+		mat_grf_name_chance = 5
+		father_name_chance = 30
+		
+		pat_grm_name_chance = 60
+		mat_grm_name_chance = 15
+		mother_name_chance = 15
+		
+		modifier = default_culture_modifier
+	}
+}
