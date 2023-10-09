@@ -37,23 +37,17 @@ feudal_governments = {
 			NOT = { is_government_potential = malaysian_confederacy }
 			NOT = { is_government_potential = sinic_bureaucracy_government}
 			NAND = { 
-				culture_group = tibetan_group
-				OR = {
-					religion = bon
-					religion = bon_reformed
-					religion = buddhist
-				}
+				culture_group = tibetan
+				religion_group = buddhist_group
 				higher_tier_than = BARON
 			}
 			NAND = { 
 				tier = EMPEROR
 				primary_title = { has_title_flag = pretender_chinese_empire }
 				OR = {
-					culture_group = chinese_group
-					culture = khitan
-					culture = tangut
-					culture = jurchen
-					has_character_flag = chinese_imperial_government_preserve
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+					has_character_flag = chinese_imperial_government_preserve #keeps government when player is given culture change opton
 				}
 			}
 			is_patrician = no
@@ -100,10 +94,7 @@ feudal_governments = {
 		frame_suffix = "_ghazwa"
 		title_prefix = "ghazi_government_"
 		potential = {
-			AND = { 
-				religion_group = muslim
-				NOT = { religion = hui }
-			}
+			religion_group = muslim
 			OR = {
 				lower_tier_than = KING
 				has_law = muslim_government_slider_0
@@ -113,6 +104,7 @@ feudal_governments = {
 			NOT = { is_government_potential = malaysian_confederacy }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
+			NOT = { is_government_potential = sinic_bureaucracy_government}
 			is_patrician = no
 			NAND = {
 				controls_religion = yes
@@ -175,10 +167,7 @@ feudal_governments = {
 		title_prefix = "diwan_government_"
 		potential = {
 			OR = {
-				AND = { 
-					religion_group = muslim
-					NOT = { religion = hui }
-				}
+				religion_group = muslim
 				OR = {
 					has_law = muslim_government_slider_2
 					has_law = muslim_government_slider_3
@@ -196,6 +185,7 @@ feudal_governments = {
 			}
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
+			NOT = { is_government_potential = sinic_bureaucracy_government}
 			NAND = {
 				controls_religion = yes
 				OR = {
@@ -348,23 +338,17 @@ feudal_governments = {
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			AND = { 
-				culture_group = tibetan_group
-				OR = {
-					religion = bon
-					religion = bon_reformed
-					religion = buddhist
-				}
+				culture_group = tibetan
+				religion_group = buddhist_group
 				higher_tier_than = BARON
 			}
 			NAND = { 
 				tier = EMPEROR
 				primary_title = { has_title_flag = pretender_chinese_empire }
 				OR = {
-					culture_group = chinese_group
-					culture = khitan
-					culture = tangut
-					culture = jurchen
-					has_character_flag = chinese_imperial_government_preserve
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+					has_character_flag = chinese_imperial_government_preserve #keeps government when player is given culture change opton
 				}
 			}
 			is_patrician = no
@@ -661,11 +645,9 @@ feudal_governments = {
 				tier = EMPEROR
 				primary_title = { has_title_flag = pretender_chinese_empire }
 				OR = {
-					culture_group = chinese_group
-					culture = khitan
-					culture = tangut
-					culture = jurchen
-					has_character_flag = chinese_imperial_government_preserve
+					culture_group = indo_aryan_group
+					culture_group = dravidian_group
+					has_character_flag = chinese_imperial_government_preserve #keeps government when player is given culture change opton
 				}
 			}
 			is_patrician = no
@@ -790,21 +772,19 @@ feudal_governments = {
 					religion = shanrendao
 					religion = gongye_shenjiao
 					religion = aiguo
-					religion = hui
 					religion = sanmin
+					religion = datong
 					AND = {
 						religion = mahayana
 						culture_group = han
 					}
-					
-					top_liege = {
-						government = sinic_bureaucracy_government
+					AND = {
+						religion = hui
 						OR = {
-							tier = COUNT
-							tier = DUKE
-							tier = KING
-							tier = EMPEROR
+							culture_group = han
+							capital_scope = {region = custom_china_core}
 						}
+						higher_tier_than = BARON
 					}
 				}
 			}
