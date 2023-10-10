@@ -46,11 +46,18 @@ e_hong = {
 	can_be_usurped = no
 }
 k_andong_protectorate = { #Hong Governor of the East
-	color = { 226 100 55 }
+	color = { 206 140 105 }
 	color2={ 128 70 70 }
 	
 	capital = 869 # c_shenyang
 	
+	pekingese = "Protectorate General to Pacify the East"
+	tianjinese = "Protectorate General to Pacify the East"
+	jilu = "Protectorate General to Pacify the East"
+	manchu = "Governor-General of Northeast Provinces"
+	chosunin = "Andong"
+	chaoxianzu = "Andong"
+	hangugin = "Andong"
 	allow = {
 		culture_group = han
 	}
