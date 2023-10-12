@@ -762,20 +762,10 @@ feudal_governments = {
 					culture_group = korean
 					
 					# most chinese religion
-					religion = jibenyuanze
-					religion = ruist
-					religion = jinbenwei
-					religion = taoist
-					religion = quanzhen
-					religion = shenist
-					religion = shenist_reformed
-					religion = shanrendao
-					religion = gongye_shenjiao
-					religion = aiguo
-					religion = sanmin
-					religion = datong
+					is_bureaucratic_religion = yes #Traditional Chinese Religions and those with bureaucratic elements
+					religion = datong #3k larp
 					AND = {
-						religion = mahayana
+						religion_group = buddhist_group
 						culture_group = han
 					}
 					AND = {
@@ -785,6 +775,10 @@ feudal_governments = {
 							capital_scope = {region = custom_china_core}
 						}
 						higher_tier_than = BARON
+					}
+					AND = {
+						NOT = {culture_group = han}
+						capital_scope = {region = custom_china_core}
 					}
 				}
 			}
