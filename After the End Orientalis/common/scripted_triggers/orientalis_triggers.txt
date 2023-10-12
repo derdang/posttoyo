@@ -57,3 +57,20 @@ is_nomadic_tribal_culture = {
 		#culture = neo_jin
 	}
 }
+
+is_bureaucratic_religion = {
+	OR = {
+		religion = jibenyuanze
+		religion = ruist
+		religion = jinbenwei
+		religion = taoist
+		religion = quanzhen
+		religion = shenist
+		religion = shenist_reformed
+		religion = shanrendao
+		religion = gongye_shenjiao
+		religion = aiguo
+		religion = hui
+		religion = sanmin
+	}
+}

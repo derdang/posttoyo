@@ -2344,10 +2344,10 @@ character_event = {
 	
 	option = {
 		name = EVTOPTACETIC300
-		add_trait = governator
+		add_trait = grand_secretary
 		prestige = 100
 		opinion = {
-			modifier = made_me_governator
+			modifier = made_me_grand_secretary
 			who = FROM 
 		}
 		if = {
@@ -2362,13 +2362,13 @@ character_event = {
 					}
 				}
 			}
-			give_minor_title = title_governator
+			give_minor_title = title_grand_secretary
 		}
 		if = {
 			limit = {
-				trait = sanctioned_governator
+				trait = sanctioned_grand_secretary
 			}
-			remove_trait = sanctioned_governator
+			remove_trait = sanctioned_grand_secretary
 		}
 	}
 }
@@ -2385,7 +2385,7 @@ character_event = {
 	
 	# trigger = {
 		# NOT = { has_minor_title = title_regent }
-		# trait = governator
+		# trait = grand_secretary
 		# liege = {
 			# has_landed_title = e_china
 			# OR = {
@@ -2678,15 +2678,15 @@ character_event = {
 			remove_trait = figurehead
 			any_character = {
 				limit = {
-					trait = governator_heir
+					trait = grand_secretary_heir
 				}
-				remove_trait = governator_heir
+				remove_trait = grand_secretary_heir
 			}
 			any_character = {
 				limit = {
-					trait = sanctioned_governator
+					trait = sanctioned_grand_secretary
 				}
-				remove_trait = sanctioned_governator
+				remove_trait = sanctioned_grand_secretary
 			}
 		}
 		if = {
@@ -2706,15 +2706,15 @@ character_event = {
 			add_trait = strong_emperor
 			any_character = {
 				limit = {
-					trait = governator_heir
+					trait = grand_secretary_heir
 				}
-				remove_trait = governator_heir
+				remove_trait = grand_secretary_heir
 			}
 			any_character = {
 				limit = {
-					trait = sanctioned_governator
+					trait = sanctioned_grand_secretary
 				}
-				remove_trait = sanctioned_governator
+				remove_trait = sanctioned_grand_secretary
 			}
 		}
 	}
@@ -3012,8 +3012,7 @@ character_event = {
 	
 	trigger = {
 		OR = {
-			religion = imamite
-			religion = qingzhen
+			is_bureaucratic_religion = yes
 			culture_group = han
 		}
 	}
@@ -3021,11 +3020,11 @@ character_event = {
 		name = opta_excellent
 		any_character = {
 			limit = {
-				trait = governator_heir
+				trait = grand_secretary_heir
 			}
 			character_event = { id = cetic.322 }
 		}
-		add_trait = governator_heir
+		add_trait = grand_secretary_heir
 		prestige = 50
 	}
 }
@@ -3039,7 +3038,7 @@ character_event = {
 	
 	option = {
 		name = hellbebahck
-		remove_trait = governator_heir
+		remove_trait = grand_secretary_heir
 		prestige = -50
 	}
 }
@@ -3052,7 +3051,7 @@ character_event = {
 	only_rulers = yes
 
 	trigger = {
-		trait = governator
+		trait = grand_secretary
 		OR = {
 			e_china = { holder_scope = { trait = figurehead } }
 			e_new_california = { holder_scope = { trait = figurehead } }
@@ -3062,7 +3061,7 @@ character_event = {
 		NOR = {
 			has_character_flag = chosen_heir_gnator
 			any_character = {
-				trait = governator_heir
+				trait = grand_secretary_heir
 			}
 		}
 	}
@@ -3119,11 +3118,7 @@ character_event = {
 				}
 				preferred_limit = {
 					is_powerful_vassal = yes
-					religion = imamite
-				}
-				preferred_limit = {
-					is_powerful_vassal = yes
-					religion = qingzhen
+					is_bureaucratic_religion = yes
 				}
 				preferred_limit = {
 					is_voter = yes
@@ -3152,7 +3147,7 @@ character_event = {
 	}
 }
 
-#Close Relative gets governator
+#Close Relative gets grand_secretary
 character_event = {
 	id = cetic.324
 	desc = EVTDESCCETIC324
@@ -3162,7 +3157,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTACETIC324
-		add_trait = governator
+		add_trait = grand_secretary
 		prestige = 100
 		if = {
 			limit = {
@@ -3176,12 +3171,12 @@ character_event = {
 					}
 				} 
 			}
-			give_minor_title = title_governator
+			give_minor_title = title_grand_secretary
 		}
 	}
 }
 
-#Current heir (non relative) gets governator
+#Current heir (non relative) gets grand_secretary
 character_event = {
 	id = cetic.325
 	desc = EVTDESCCETIC325
@@ -3191,7 +3186,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTACETIC324
-		add_trait = governator
+		add_trait = grand_secretary
 		prestige = 50
 		if = {
 			limit = {
@@ -3205,7 +3200,7 @@ character_event = {
 					}
 				} 
 			}
-			give_minor_title = title_governator
+			give_minor_title = title_grand_secretary
 		}
 	}
 }
@@ -3218,11 +3213,11 @@ character_event = {
 	only_rulers = yes
 	
 	trigger = {
-		trait = governator
+		trait = grand_secretary
 		OR = {
 			has_character_flag = chosen_heir_gnator
 			any_character = {
-				trait = governator_heir
+				trait = grand_secretary_heir
 			}
 		}
 	}
@@ -3230,7 +3225,7 @@ character_event = {
 	immediate = {
 		any_character = {
 			limit = {
-				trait = governator_heir
+				trait = grand_secretary_heir
 			}
 			character_event = { id = cetic.327 }
 		}
@@ -3242,10 +3237,10 @@ character_event = {
 	id = cetic.371
 	hide_window = yes
 	trigger = {
-		trait = governator_heir
+		trait = grand_secretary_heir
 		NOT = {
 			any_character = {
-				trait = governator
+				trait = grand_secretary
 			}
 		}
 	}
@@ -3257,7 +3252,7 @@ character_event = {
 	immediate = {
 		any_character = {
 			limit = {
-				trait = governator_heir
+				trait = grand_secretary_heir
 			}
 			character_event = { id = cetic.327 }
 		}
@@ -3274,8 +3269,8 @@ character_event = {
 	
 	option = {
 		name = hastalavista
-		add_trait = governator
-		remove_trait = governator_heir
+		add_trait = grand_secretary
+		remove_trait = grand_secretary_heir
 		prestige = 100
 		if = {
 			limit = {
@@ -3289,7 +3284,7 @@ character_event = {
 					}
 				} 
 			}
-			give_minor_title = title_governator
+			give_minor_title = title_grand_secretary
 		}
 	}
 }
@@ -3300,13 +3295,13 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		trait = governator_heir
+		trait = grand_secretary_heir
 	}
 	
 	immediate = {
 		any_character = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			character_event = { id = cetic.329 }
 		}
@@ -3320,12 +3315,12 @@ character_event = {
 	picture = GFX_evt_bad_news
 	is_triggered_only = yes
 	trigger = {
-		trait = governator
+		trait = grand_secretary
 	}
 	
 	option = {
 		name = hastalavista
-		add_trait = governator
+		add_trait = grand_secretary
 		clr_character_flag = chosen_heir_gnator
 	}
 }
@@ -3338,9 +3333,9 @@ character_event = {
 	only_rulers = yes
 	
 	trigger = {
-		trait = governator
+		trait = grand_secretary
 		NOT = {
-			has_minor_title = title_governator
+			has_minor_title = title_grand_secretary
 		}
 		liege = {
 			OR = {
@@ -3359,7 +3354,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTACETIC330
-		give_minor_title = title_governator
+		give_minor_title = title_grand_secretary
 	}
 }
 
@@ -3371,7 +3366,7 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		trait = governator
+		trait = grand_secretary
 		OR = {
 			has_landed_title = e_china
 			has_title_flag = has_chinese_mandate
@@ -3384,7 +3379,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTACETIC331
-		remove_trait = governator
+		remove_trait = grand_secretary
 		if = {
 			limit = {
 				NOT = {
@@ -3396,15 +3391,15 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = sanctioned_governator
+				trait = sanctioned_grand_secretary
 			}
-			remove_trait = sanctioned_governator
+			remove_trait = sanctioned_grand_secretary
 		}
 		if = {
 			limit = {
-				trait = governator_heir
+				trait = grand_secretary_heir
 			}
-			remove_trait = governator_heir
+			remove_trait = grand_secretary_heir
 		}
 		if = {
 			limit = {
@@ -3431,11 +3426,7 @@ character_event = {
 				}
 				preferred_limit = {
 					is_powerful_vassal = yes
-					religion = imamite
-				}
-				preferred_limit = {
-					is_powerful_vassal = yes
-					religion = qingzhen
+					is_bureaucratic_religion = yes
 				}
 				preferred_limit = {
 					real_tier = KING
@@ -3484,21 +3475,21 @@ character_event = {
 		name = imterminated
 		if = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
-			remove_trait = governator
+			remove_trait = grand_secretary
 		}
 		if = {
 			limit = {
-				trait = sanctioned_governator
+				trait = sanctioned_grand_secretary
 			}
-			remove_trait = sanctioned_governator
+			remove_trait = sanctioned_grand_secretary
 		}
 		if = {
 			limit = {
-				has_minor_title = title_governator
+				has_minor_title = title_grand_secretary
 			}
-			remove_title = title_governator
+			remove_title = title_grand_secretary
 		}
 		opinion = {
 			modifier = sacked_me
@@ -3558,21 +3549,21 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
-			remove_trait = governator
+			remove_trait = grand_secretary
 		}
 		if = {
 			limit = {
-				trait = sanctioned_governator
+				trait = sanctioned_grand_secretary
 			}
-			remove_trait = sanctioned_governator
+			remove_trait = sanctioned_grand_secretary
 		}
 		if = {
 			limit = {
-				has_minor_title = title_governator
+				has_minor_title = title_grand_secretary
 			}
-			remove_title = title_governator
+			remove_title = title_grand_secretary
 		}
 		custom_tooltip = {
 			text = attack_emperor_TT
@@ -3929,7 +3920,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			custom_tooltip = {
 				text = impauth_decrease_3_TT
@@ -3992,7 +3983,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			custom_tooltip = {
 				text = impauth_decrease_5_TT
@@ -4271,7 +4262,7 @@ character_event = {
 			}
 			any_character = {
 				limit = {
-					trait = governator 
+					trait = grand_secretary 
 				}
 				character_event = { id = cetic.369 }
 			}
@@ -4290,7 +4281,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			any_character = {
 				limit = {
@@ -4330,7 +4321,7 @@ character_event = {
 			}
 			any_character = {
 				limit = {
-					trait = governator 
+					trait = grand_secretary 
 				}
 				character_event = { id = cetic.370 }
 			}
@@ -4349,7 +4340,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			any_character = {
 				limit = {
@@ -4396,7 +4387,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			custom_tooltip = {
 				text = impauth_decrease_3_TT
@@ -4431,7 +4422,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			custom_tooltip = {
 				text = impauth_increase_5_TT
@@ -4450,7 +4441,7 @@ character_event = {
 	immediate = {
 		any_character = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			save_event_target_as = gnator
 		}
@@ -4894,7 +4885,7 @@ letter_event = {
 		if = {
 			limit = {
 				event_target:swayer = {
-					trait = governator
+					trait = grand_secretary
 				}
 			}
 			custom_tooltip = {
@@ -4968,7 +4959,7 @@ letter_event = {
 		if = {
 			limit = {
 				event_target:swayer = {
-					trait = governator
+					trait = grand_secretary
 				}
 			}
 			custom_tooltip = {
@@ -5072,10 +5063,10 @@ character_event = {
 	
 	option = {
 		name = "EXCELLENT"
-		add_trait = sanctioned_governator
+		add_trait = sanctioned_grand_secretary
 		prestige = 50
 		opinion = {
-			modifier = made_me_governator
+			modifier = made_me_grand_secretary
 			who = FROM 
 		}
 	}
@@ -5431,7 +5422,7 @@ character_event = {
 		set_character_flag = sancgovwon
 		any_character = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			character_event = { id = cetic.355 }
 		}
@@ -5546,7 +5537,7 @@ character_event = {
 	}
 }
 
-#Character asked to be governator heir
+#Character asked to be grand_secretary heir
 character_event = {
 	id = cetic.364
 	desc = EVTDESCCETIC364
@@ -5662,11 +5653,11 @@ letter_event = {
 		name = opta_excellent
 		any_character = {
 			limit = {
-				trait = governator_heir
+				trait = grand_secretary_heir
 			}
-			remove_trait = governator_heir
+			remove_trait = grand_secretary_heir
 		}
-		add_trait = governator_heir
+		add_trait = grand_secretary_heir
 		clr_character_flag = asked_gnator_flag
 		opinion = {
 			modifier = opinion_pleased
@@ -5698,7 +5689,7 @@ character_event = {
 	immediate = {
 		any_character = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			character_event = { id = cetic.364 }
 		}
@@ -5935,7 +5926,7 @@ character_event = {
 	immediate = {
 		any_character = {
 			limit = {
-				trait = governator
+				trait = grand_secretary
 			}
 			character_event = { id = cetic.403 }
 		}
@@ -6099,7 +6090,7 @@ character_event = {
 			value = 0
 		}
 		set_variable = {
-			which = governator_influence
+			which = grand_secretary_influence
 			value = 0
 		}
 		set_variable = {
@@ -6398,7 +6389,7 @@ character_event = {
 			if = { 
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -6411,14 +6402,14 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = 2
 				}
 			}
 			if = { 
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -6432,14 +6423,14 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = 2
 				}
 			}
 			if = {
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -6466,14 +6457,14 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = 1
 				}
 			}
 			if = {
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -6500,14 +6491,14 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = 1
 				}
 			}
 			if = {
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -6534,14 +6525,14 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = 1
 				}
 			}
 			if = {
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -6568,7 +6559,7 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = 1
 				}
 			}
@@ -6890,7 +6881,7 @@ character_event = {
 			if = {
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -6917,14 +6908,14 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = -1
 				}
 			}
 			if = {
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -6951,14 +6942,14 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = -1
 				}
 			}
 			if = {
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -6985,14 +6976,14 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = -1
 				}
 			}
 			if = {
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -7019,14 +7010,14 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = -1
 				}
 			}
 			if = {
 				limit = {
 					any_character = {
-						trait = governator
+						trait = grand_secretary
 						prisoner = no
 						# is_incapable = no
 						# in_hiding = no
@@ -7047,7 +7038,7 @@ character_event = {
 					}
 				}
 				change_variable = {
-					which = governator_influence
+					which = grand_secretary_influence
 					value = -1
 				}
 			}
@@ -7151,7 +7142,7 @@ character_event = {
 			}
 			change_variable = {
 				which = yearly_imperial_authority_change
-				which = governator_influence
+				which = grand_secretary_influence
 			}
 		}
 		
@@ -7335,18 +7326,7 @@ character_event = {
 					culture_group = han
 					culture_group = viet
 					culture_group = korean
-					religion = jibenyuanze
-					religion = ruist
-					religion = jinbenwei
-					religion = taoist
-					religion = quanzhen
-					religion = shenist
-					religion = shenist_reformed
-					religion = shanrendao
-					religion = gongye_shenjiao
-					religion = aiguo
-					religion = hui
-					religion = sanmin
+					is_bureaucratic_religion = yes
 					AND = {
 						religion = mahayana
 						culture_group = han

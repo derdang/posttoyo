@@ -107,9 +107,9 @@ bureaucratic_elective = {
 			FROMFROM = { 
 				holder_scope = { character = ROOT }
 			}
-			localisation_key = tooltip_feudal_elector_vote_governator
+			localisation_key = tooltip_feudal_elector_vote_grand_secretary
 			OR = {
-				trait = governator
+				trait = grand_secretary
 				has_minor_title = title_secretary
 			}
 		}
@@ -133,9 +133,9 @@ bureaucratic_elective = {
 					holder_scope = { character = ROOT }
 				}
 			}
-			localisation_key = tooltip_feudal_elector_vote_governator
+			localisation_key = tooltip_feudal_elector_vote_grand_secretary
 			OR = {
-				trait = governator
+				trait = grand_secretary
 				has_minor_title = title_secretary
 			}
 		}
@@ -563,7 +563,7 @@ bureaucratic_elective = {
 				has_minor_title = title_councilmember_king #Generic advisors
 				has_minor_title = title_councilmember_emperor
 				has_minor_title = title_secretary
-				trait = governator
+				trait = grand_secretary
 			}
 		}
 		additive_modifier = { #Then the liege.
@@ -576,12 +576,12 @@ bureaucratic_elective = {
 				holder_scope = { rightful_religious_head = ROOT }
 			} 
 		}
-		# additive_modifier = { #Then the governator.
+		# additive_modifier = { #Then the grand_secretary.
 			# value = 10
 			# FROMFROM = {
 				# holder_scope = { government = bureaucratic_government }
 			# } 
-			# trait = governator
+			# trait = grand_secretary
 		# }
 	}
 	candidate_vote_score = {
@@ -679,8 +679,6 @@ bureaucratic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -699,8 +697,6 @@ bureaucratic_elective = {
 			NOR = {
 				has_religion_feature = religion_patriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -720,8 +716,6 @@ bureaucratic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -740,8 +734,6 @@ bureaucratic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -760,8 +752,6 @@ bureaucratic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -780,8 +770,6 @@ bureaucratic_elective = {
 			NOR = {
 				has_religion_feature = religion_matriarchal
 				has_religion_feature = religion_equal
-				has_religion_feature = religion_feature_aria_de_machete
-				has_religion_feature = religion_feature_midewiwin
 				has_game_rule = {
 					name = gender
 					value = all
@@ -1813,10 +1801,10 @@ bureaucratic_elective = {
 		}
 		additive_modifier = {
 			value = 25
-			localisation_key = tooltip_feudal_elector_vote_governator
+			localisation_key = tooltip_feudal_elector_vote_grand_secretary
 			NOT = { character = FROM } #Do not judge yourself.
 			FROM = { 
-				trait = governator
+				trait = grand_secretary
 			}
 		}
 		additive_modifier = { #Attraction bonus
@@ -3182,9 +3170,7 @@ bureaucratic_elective = {
 				religion = ROOT
 			}
 			OR = { #Must maintain bureaucracy on succession
-				religion = cetic
-				religion = qingzhen
-				religion = imamite
+				is_bureaucratic_religion = yes
 			}
 			NOR = {
 				#mother = {		# Uncommenting this condition provokes that a ruler's son is not a valid candidate if the mother is married to the ruler and a candidate
