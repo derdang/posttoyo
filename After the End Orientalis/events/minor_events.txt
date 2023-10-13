@@ -12,7 +12,10 @@ narrative_event = {
 	}
 	desc = {
 		trigger = {
-			is_sinic = yes
+			OR = {
+				is_sinic = yes
+				culture_group = han
+			}
 		}
 		text = festival_sinic1
 	}
@@ -46,7 +49,10 @@ narrative_event = {
 	}
 	option = {
 		trigger = {
-			is_sinic = yes
+			OR = {
+				is_sinic = yes
+				culture_group = han
+			}
 		}
 		name = EVTOPTB_festival1
 		piety = 25
