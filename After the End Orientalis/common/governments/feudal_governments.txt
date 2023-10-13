@@ -777,18 +777,8 @@ feudal_governments = {
 					}
 					AND = {
 						religion = hui
-						OR = {
-							culture_group = han
-							capital_scope = {region = custom_china_core}
-						}
+						culture_group = han
 						higher_tier_than = BARON
-					}
-					AND = {
-						OR = {
-							culture_group = hmong_mien
-							culture_group = north_tai
-						}
-						capital_scope = {region = custom_china_core}
 					}
 				}
 			}
