@@ -8,14 +8,12 @@ e_gansu = {
 	zhongyuan = "Liang"
 	
 	capital = 1339 # c_lanzhou
-	culture = lanyin
 	
 	k_lanzhou = {
 		color={ 180 68 149 }
 		color2={ 255 255 255 }
 		
 		capital = 1339 # c_lanzhou
-		culture = lanyin
 		
 		d_lanzhou = {
 			color={ 160 88 139 }
@@ -80,11 +78,26 @@ e_gansu = {
 			
 			capital = 1343 # c_gannan
 			
+			changpa = "Gainlho"
+			amdowa = "Gainlho"
+			kham = "Gainlho"
+			u_tsang = "Gainlho"
+			
 			c_gannan = { # 1343
 				color={ 249 85 197 }
 				color2={ 255 255 255 }
 				
-				b_hezuo = {}
+				changpa = "Gainlho"
+				amdowa = "Gainlho"
+				kham = "Gainlho"
+				u_tsang = "Gainlho"
+				
+				b_hezuo = {
+					changpa = "Zö"
+					amdowa = "Zö"
+					kham = "Zö"
+					u_tsang = "Zö"
+				}
 				b_jiakeri = {}
 				b_xiaoe = {}
 				b_qinaihecun = {}
@@ -96,7 +109,17 @@ e_gansu = {
 				color={ 147 0 100 }
 				color2={ 255 255 255 }
 				
-				b_taobin = {}
+				changpa = "Bazê"
+				amdowa = "Bazê"
+				kham = "Bazê"
+				u_tsang = "Bazê"
+				
+				b_taobin = {
+					changpa = "Zhacêr"
+					amdowa = "Zhacêr"
+					kham = "Zhacêr"
+					u_tsang = "Zhacêr"
+				}
 				b_yeliguan = {}
 				b_dianzi = {}
 				b_yangsha = {}
@@ -107,6 +130,11 @@ e_gansu = {
 			c_zhouqu = { # 1345
 				color={ 241 138 208 }
 				color2={ 255 255 255 }
+				
+				changpa = "Zhugchu"
+				amdowa = "Zhugchu"
+				kham = "Zhugchu"
+				u_tsang = "Zhugchu"
 				
 				b_dachuan_2 = {}
 				b_fengdie = {}
@@ -197,7 +225,6 @@ e_gansu = {
 		color2={ 255 255 255 }
 		
 		capital = 1351 # c_dunhuang
-		culture = yuger
 		
 		d_jiuquan = {
 			color={ 150 18 103 }
@@ -312,7 +339,6 @@ e_gansu = {
 		color2={ 255 255 255 }
 		
 		capital = 1548 # c_yinchuan
-		culture = huizhou
 		
 		d_yinchuan = {
 			color={ 104 134 250 }

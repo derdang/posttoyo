@@ -3,14 +3,12 @@ e_tibet = {
 	color2={ 255 255 20 }
 	
 	capital = 1973 #c_lhasa
-	culture = ngalop
 	
 	k_bhutan = {
 		color={ 153 214 106 }
 		color2={ 255 255 255 }
 		
 		capital = 1297 # c_thimphu
-		culture = ngalop
 		
 		d_paro = {
 			color={ 173 194 116 }
@@ -116,7 +114,6 @@ e_tibet = {
 		color2={ 255 255 255 }
 		
 		capital = 1991 # c_dege
-		culture = kham
 		
 		d_garze = {
 			color={ 78 61 175 }
@@ -258,11 +255,20 @@ e_tibet = {
 			
 			capital = 1997 # c_barkam
 			
+			qiang = "Rrmeabba"
+			lanyin = "Aba"
+			
 			c_barkam = { # 1997
 				color={ 23 28 144 }
 				color2={ 255 255 255 }
 				
-				b_barkam = {}
+				qiang = "Muerkvua"
+				lanyin = "Markang"
+				
+				b_barkam = {
+					qiang = "Muerkvua"
+					lanyin = "Markang"
+				}
 				b_ngawa = {}
 				b_rangke = {}
 				b_nanmuda = {}
@@ -273,6 +279,13 @@ e_tibet = {
 			c_maowen = { # 2000
 				color={ 68 71 146 }
 				color2={ 255 255 255 }
+				
+				qiang = "Rrggucua"
+				lanyin = "Jiuzhaigou"
+				changpa = "Sizadêgu"
+				amdowa = "Sizadêgu"
+				kham = "Sizadêgu"
+				u_tsang = "Sizadêgu"
 				
 				b_wolong_3 = {}
 				b_weizhou_2 = {}
@@ -286,6 +299,8 @@ e_tibet = {
 				color={ 55 58 137 }
 				color2={ 255 255 255 }
 				
+				qiang = "Shgvunyi"
+				
 				b_nanxin = {}
 				b_fengyi_2 = {}
 				b_yadu = {}
@@ -298,7 +313,11 @@ e_tibet = {
 				color={ 79 81 158 }
 				color2={ 255 255 255 }
 				
-				b_tsanlha = {}
+				lanyin = "Xiaojin"
+				
+				b_tsanlha = {
+					lanyin = "Xiaojin"
+				}
 				b_meixing = {}
 				b_dawai = {}
 				b_laoying = {}
@@ -309,6 +328,9 @@ e_tibet = {
 			c_zoige = { # 1998
 				color={ 38 36 222 }
 				color2={ 255 255 255 }
+				
+				qiang = "Zuxxjji"
+				lanyin = "Ruo'ergai"
 				
 				b_zoige = {}
 				b_zhangzha = {}
@@ -356,7 +378,6 @@ e_tibet = {
 		color2={ 255 255 255 }
 		
 		capital = 2008 # c_xining
-		culture = lanyin
 		
 		d_qinghai = {
 			color={ 232 247 39 }
@@ -565,7 +586,6 @@ e_tibet = {
 		color2={ 255 255 255 }
 		
 		capital = 1973 # c_lhasa
-		culture = u_tsang
 	
 		d_lhasa = {
 			color={ 174 203 29 }
