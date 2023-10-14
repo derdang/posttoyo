@@ -41,13 +41,6 @@ feudal_governments = {
 				religion_group = buddhist_group
 				higher_tier_than = BARON
 			}
-			NAND = {
-				OR = {
-					culture_group = hmong_mien
-					culture_group = north_tai
-				}
-				capital_scope = {region = custom_china_core}
-			}
 			NAND = { 
 				tier = EMPEROR
 				primary_title = { has_title_flag = pretender_chinese_empire }
@@ -779,6 +772,15 @@ feudal_governments = {
 						religion = hui
 						culture_group = han
 						higher_tier_than = BARON
+					}
+					top_liege = {
+						government = sinic_bureaucracy_government
+						OR = {
+							tier = COUNT
+							tier = DUKE
+							tier = KING
+							tier = EMPEROR
+						}
 					}
 				}
 			}
