@@ -1,19 +1,30 @@
-## Cantonese and Guangzhou in general.
+## Dongbei, Manchu.
 ## File name to be changed or merged with another file later.
 # 9010 - Guangdong
 # 2653 - Nanning
+
+2615101 ={ # Qiqihar
+	name="Geixi"
+	culture=manchu
+	religion=heilong
+	trait=brilliant_strategist
+	trait=ambitious
+	trait=arrogant
+	2578.1.1={birth=yes}
+}
 
 9810001 ={ # Shenyang
 	name="Jiyang"
 	culture=dongbei
 	religion=jibenyuanze
 	trait=brilliant_strategist
+	stewardship=11
 	trait=ambitious
 	trait=arrogant
+	trait=cruel
 	disallow_random_traits = yes
 	2588.1.1={birth=yes}
 }
-
 9810101 ={ # Dandong-NKorea_Border
 	name="Ming"
 	culture=manchu
@@ -57,5 +68,18 @@
 	culture=chaoxianzu
 	religion=gongye_shenjiao
 	trait=ambitious
+	2586.1.1={birth=yes}
+}
+9812101 ={ # Tonghua
+	name="Yonghe"
+	culture=chosunin
+	religion=eastern_lightning
+	2586.1.1={birth=yes}
+}
+9812201 ={ # Yanbian
+	name="Nanwan"
+	culture=chaoxianzu
+	religion=eastern_lightning
+	female=yes
 	2586.1.1={birth=yes}
 }
