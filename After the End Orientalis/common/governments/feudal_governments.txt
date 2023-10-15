@@ -761,15 +761,48 @@ feudal_governments = {
 					culture_group = viet
 					culture_group = korean
 					
-					# most chinese religion
+					####### Chinese Religions ########
 					is_bureaucratic_religion = yes #Traditional Chinese Religions and those with bureaucratic elements
-					religion = datong #3k larp
+					#Chinese Folklore Religions
+					AND = {
+						is_tribal = no
+						OR = {
+							religion = datong #3k larp
+							religion = heilong
+							religion = heilong_reformed
+							religion = chuma
+							religion = chuma_reformed
+						}
+					}
+					##########################
+					
 					AND = {
 						religion_group = buddhist_group
 						culture_group = han
 					}
 					AND = {
 						religion = hui
+						OR = {
+							culture_group = hmong_mien
+							culture_group = formosan
+							culture_group = lolo
+							culture_group = north_tai
+							culture_group = han
+						}
+						higher_tier_than = BARON
+					}
+					AND = {
+						religion = mahayana
+						OR = {
+							culture_group = hmong_mien
+							culture_group = formosan
+							culture_group = lolo
+							culture_group = north_tai
+						}
+						higher_tier_than = BARON
+					}
+					AND = {
+						religion_group = christian
 						culture_group = han
 						higher_tier_than = BARON
 					}
