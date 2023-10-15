@@ -62,9 +62,9 @@ nusantaran = {
 		}
 		male_patronym = "putra"
 		female_patronym = "putri"
-		dynasty_name_first = yes
 		allow_looting = yes
 		modifier = default_culture_modifier
+		founder_named_dynasties = yes 
 		dukes_called_kings = yes
 		
 		pat_grf_name_chance = 50
@@ -130,9 +130,9 @@ nusantaran = {
 			Yulis Yusfina
 			Zen Zahra_Azahra Zakiya Zubaedah Zubeiri
 		}
-		dynasty_name_first = yes
 		allow_looting = yes
 		modifier = default_culture_modifier
+		founder_named_dynasties = yes 
 		dukes_called_kings = yes
 		
 		pat_grf_name_chance = 50
@@ -200,9 +200,9 @@ nusantaran = {
 		    Wahyu Wahyuningsih Wartini Wati Widya Winda Wiwi Wiwik Wiwin Wulan 
 		    Yan Yani Yanti Yati Yayah Yeni Yenni Yenny Yuni Yunita Yuyun
 		}
-		dynasty_name_first = yes
 		allow_looting = yes
 		modifier = default_culture_modifier
+		founder_named_dynasties = yes 
 		
 		pat_grf_name_chance = 50
 		mat_grf_name_chance = 20
@@ -267,7 +267,75 @@ nusantaran = {
 		    Widya Wiwi Wiwin 
  		    Yana Yani Yanti Yati Yaya Yayah Yayan Yayat Yeni Yeti Yulianti Yunita
 		}
-		dynasty_name_first = yes
+		founder_named_dynasties = yes 
+		allow_looting = yes
+		modifier = default_culture_modifier
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 20
+		father_name_chance = 15
+		
+		pat_grm_name_chance = 20
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+	}
+
+	bantenese = {
+		graphical_cultures = { javanesegfx }
+		alternate_start = {
+			OR = {
+				year >= 1100
+				has_alternate_start_parameter = { key = culture value = full_random }
+			}
+		}
+		color = { 0.6 0.4 0.8 }
+		male_names = {
+			Aa Aam Abdullah Abdulaziz Abdulmajid Abdulaziz Aep Achdiat Adiningkusuma Ade Agum Agus Ahmad Ajip Ajang Ajat Ali Amir Amirudin Anies Anom Aria Arudji Asep Ateng 
+			Baduga Burdah 
+			Cakrabuana Cecep Cucu
+			Dadang Da'i Daradjatun Dewata Diwangkara Djuanda Dayat Deden
+			Ebet Eka Entis Enjang Engkos
+			Gilan Ginandjar Gorbacep Gugum Gunungjati Gumelar
+			Hasbullah Hassan Hamdan Hendra Henhen Harja Habib 
+			Irama Idi Iskandar_Alexander Iwan Ijang Ihin 
+			Jajang Jalu Jayadewata Jayawikarta Jaka Jejen Junaedi
+			Kamidia Kancana Kaprabon Kawasa Kosasih Koswara Kurniawan "Kian Santang" Kurnia Kamandaka
+			Laksamana Latip Lukman
+			Machjar Machmud_Mahmud Maman Mamat_Muhammad Ma'ruf Martawijaya Mochamad_Muhammad Mochtar Muljadi Mulyana Mustapa Maman Memed_Muhammad Markasih
+			Naser Natiningrat Nayaga Nilakendra Niskala Nurbuat Nandang Nataprawira
+			Oded
+			Prabu Priya Pepen Patahilah
+			Rachmat Rajaningrat Raka Rangga Rasyid_Rashid Ratudewata Ridwan Rukmana
+			Sengara Sepuh Sudrajat Suharna Sunandar Sundalana Surawisesa Suriadiwangsa Sutarma Suwarga Sanjaya Siliwangi Solihin Sobarna Suganda Suhendar Sujoni Supriatna Sutrisna Surawijaya
+			Tatang Tirtayasa Tisna
+			Ujang Umar Udin Uu
+			Walangsungsang Wastu Wisesa Wawan 
+			Yayan Yudi Yusup_Joseph Yana
+		}
+		female_names = {
+			Aciputih Adhisty Airan Ambetkasih Andini Arti Arya Asmirandah Asyifa 
+    		Betti Bentang 
+    		Devina Dewi Diah Dinda 
+    		Elvy Endang Erni Eva
+		    Fatimah_Fatima 
+		    Galih Galuh 
+ 		    Halimah Hani erfiza Heni
+		    Ida Idah Iim Iin Iis Ijah Ika Ikah Ilah Imas Ina Indah Intan Ipah Irma Isah Ita Iyan 
+		    Kania Kartini Kiki Komariah_Kokom 
+		    Leni Lia Lili Lilis Lina Linda 
+		    Meriam_Mary 
+		    Meutya Muharam Maemunah Mamah Maria Maryati Maya Mimi Mimin Mira 
+		    Nana Nani Neneng Neng Nengsih Neni Nia Nina Nita Novi Nunung Nur Nuraeni Nurhasanah Nurhayati Nurjanah Nurul Nyai 
+		    Pakungwati Paramitha Pia Pingkan Pitaloka Putri 
+		    Qory 
+		    Rani Ratna Reni Ria Rika Rina Rini Riska Rita Rizki Rizky Roekiah Rossa Rara Roni Rosita 
+		    Sannaha Sastaviyana Singamurti Srie "Subang Larang" Suhara Svida Santi Sari Sinta Siti Sri Susi Susilawati 
+		    Tejakencana Thalita Trie Tata Tati Tini Tita Titi Titin Tuti 
+		    Widya Wiwi Wiwin 
+ 		    Yana Yani Yanti Yati Yaya Yayah Yayan Yayat Yeni Yeti Yulianti Yunita
+		}
+		founder_named_dynasties = yes 
 		allow_looting = yes
 		modifier = default_culture_modifier
 		dukes_called_kings = yes
@@ -353,7 +421,7 @@ nusantaran = {
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
-		color = { 0.3 0.4 0.1 }
+		color = { 0.4 0.5 0.8 }
 		male_names = {
 			Abduh "Abdul Aziz" "Abdul Kadir" "Abdul Kasim" "Abdul Latif" "Abdul Rachman" "Abdul Samad" Abidin Abubakar Adi Ahmad Ahsanul Ahyar Alam Alfian Ali Anggrat Arahim Ariffudin Asrul Atmodjo 
 			Bacharudin Badrut Bagiartha Bahri Bambang Bulkiyah 

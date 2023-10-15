@@ -29,27 +29,623 @@
 # 1294 Madurese
 # 1295 Sundanese
 
+1293000 ={ # teresa's father
+	name="William"
+	culture=tionghoa
+	religion=concordanist
+	2560.11.1={birth=yes}
+}
+
 1293001 ={ # surabaya king
 	name="Eka"
+	dynasty = 1293009 # Bustaman
+	martial=5
+	diplomacy=15
+	intrigue=9
+	stewardship=14
+	learning=8
 	culture=javanese
 	religion=nusantara
-	trait=kind
+	trait=proud
+	trait=patient
+	trait=poet
+	trait=greedy
+	trait=nusantara_traditionalist
+	father=1293004
+	mother=1293005
 	2572.1.9={birth=yes}
 }
 
-1293002 ={ # duke of malang
+1293002 ={ # teresa's mother
+	name="Irene"
+	female=yes
+	culture=tionghoa
+	religion=concordanist
+	2562.11.1={birth=yes}
+}
+
+1293003 ={ # surabaya queen
+	name="Teresa"
+	female=yes
+	dynasty = 1956017 # Teng
+	martial=7
+	diplomacy=14
+	intrigue=12
+	stewardship=9
+	learning=12
+	culture=tionghoa
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=honest
+	trait=cynical
+	trait=feeble
+	trait=shrewd
+	father=1293000
+	mother=1293002
+	2585.1.4={birth=yes}
+	2604.1.9={add_spouse=1293001}
+	2604.1.9={dynasty=1293009}
+}
+
+1293003 ={ # surabaya king's father
+	name="Martoredjo"
+	dynasty = 1293009 # Bustaman
+	culture=javanese
+	religion=nusantara
+	trait=familyperson
+	trait=diligent
+	trait=nusantara_traditionalist
+	2547.6.1={birth=yes}
+	2572.3.9={add_spouse=1293004}
+	2596.12.1={death=yes}
+}
+
+1293004 ={ # surabaya king's mother
+	name="Puan"
+	female=yes
+	culture=javanese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=erudite
+	trait=humble
+	trait=socializer
+	2549.11.1={birth=yes}
+}
+
+1293004 ={ # surabaya king's sister
+	name="Diona"
+	female=yes
+	dynasty = 1293009 # Bustaman
+	martial=8
+	diplomacy=14
+	intrigue=6
+	stewardship=8
+	learning=12
+	culture=javanese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=erudite
+	trait=groomed
+	trait=lefthanded
+	father=1293003
+	mother=1293004
+	2581.11.1={birth=yes}
+}
+
+1293012 ={ # duke of kediri
 	name="Ahmad"
+	dynasty = 1293004 # Sukarnoputra
+	martial=15
+	diplomacy=6
+	intrigue=6
+	stewardship=8
+	learning=10
 	culture=javanese
-	religion=nusantara
+	religion=pancasila
 	trait=kind
 	2572.1.9={birth=yes}
+	2590.4.12={add_spouse=1293013}
 }
 
-1293101 ={ # yogyakarta caliph
-	name="Sultan"
+1293013 ={ # duchess of Kediri
+	name="Paramastri"
+	female=yes
+	culture=javanese
+	religion=pancasila
+	2573.2.12={birth=yes}
+}
+
+1293014 ={ # princess of Kediri
+	name="Tika"
+	female=yes
+	culture=javanese
+	religion=pancasila
+	father=1293012
+	mother=1293013
+	2576.12.7={birth=yes}
+}
+
+1293015 ={ # prince of Kediri
+	name="Joko"
+	culture=javanese
+	religion=pancasila
+	father=1293012
+	mother=1293013
+	2590.4.16={birth=yes}
+}
+
+1293016 ={ # prince of Kediri #2
+	name="Indra"
+	culture=javanese
+	religion=pancasila
+	father=1293012
+	mother=1293013
+	2604.12.4={birth=yes}
+}
+
+1293020 ={ # duke of malang
+	name="Prabowo"
+	dynasty = 1293012 # Wisnucahyo
+	martial=8
+	diplomacy=15
+	intrigue=8
+	stewardship=4
+	learning=16
+	culture=javanese
+	religion=tirthaist
+	trait=mystic
+	trait=scholar
+	2565.11.9={birth=yes}
+	2592.5.26={add_spouse=1293021}
+}
+
+1293021 ={ # duchess of malang
+	name="Ningsih"
+	female=yes
+	culture=javanese
+	religion=pancasila
+	2580.2.12={birth=yes}
+}
+
+1293016 ={ # prince of malang
+	name="Indra"
+	culture=javanese
+	religion=tirthaist
+	father=1293020
+	mother=1293021
+	2603.1.4={birth=yes}
+}
+
+1293025 ={ # duke of jember 
+	name="Wahyudi"
+	dynasty = 1293010 # Sudirman
+	martial=11
+	diplomacy=12
+	intrigue=5
+	stewardship=8
+	learning=10
 	culture=javanese
 	religion=nusantara
-	trait=zealous
+	trait=nusantara_traditionalist
 	trait=content
+	trait=slothful
+	2567.9.30={birth=yes}
+	2590.8.30={add_spouse=1293026}
+}
+
+1293026 ={ # duchess of jember 
+	name="Lailawanti"
+	female=yes
+	martial=16
+	diplomacy=9
+	intrigue=7
+	stewardship=10
+	learning=12
+	culture=madurese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=lustful
+	trait=mystic
+	trait=sturdy
+	2570.9.30={birth=yes}
+}
+
+1293027 ={ # princess of jember 
+	name="Najma"
+	female=yes
+	culture=javanese
+	religion=nusantara
+	father=1293025
+	mother=1293026
+	trait=nusantara_traditionalist
+	2591.10.30={birth=yes}
+}
+
+1293028 ={ # princess of jember #2
+	name="Jamila"
+	female=yes
+	culture=javanese
+	religion=nusantara
+	father=1293025
+	mother=1293026
+	trait=nusantara_traditionalist
+	2593.2.14={birth=yes}
+}
+
+1293028 ={ # prince of jember
+	name="Salim"
+	culture=javanese
+	religion=nusantara
+	father=1293025
+	mother=1293026
+	trait=nusantara_traditionalist
+	2597.7.10={birth=yes}
+}
+
+1293028 ={ # princess of jember
+	name="Ariffah"
+	female=yes
+	culture=javanese
+	religion=nusantara
+	father=1293025
+	mother=1293026
+	trait=nusantara_traditionalist
+	2600.7.10={birth=yes}
+}
+
+1293028 ={ # princess of jember
+	name="Kasmirah"
+	female=yes
+	culture=javanese
+	religion=nusantara
+	father=1293025
+	mother=1293026
+	trait=nusantara_traditionalist
+	2604.7.10={birth=yes}
+}
+
+1293101 ={ # duke of yogyakarta
+	name="Suryadi"
+	dynasty = 1293011 # Suryodiningrat
+	martial=18
+	diplomacy=16
+	intrigue=2
+	stewardship=3
+	learning=12
+	culture=javanese
+	religion=salafi
+	trait=zealous
+	trait=ambitious
+	trait=inspiring_leader
+	trait=stubborn
 	2581.1.9={birth=yes}
 }
+
+1293110 ={ # duke of surakarta
+	name="Heru"
+	dynasty = 1293003 # Mangkunegara
+	martial=10
+	diplomacy=5
+	intrigue=13
+	stewardship=16
+	learning=7
+	culture=javanese
+	religion=nusantara
+	trait=kejawen
+	trait=content
+	trait=giant
+	trait=administrator
+	trait=strong
+	2562.1.9={birth=yes}
+	2592.1.2={add_spouse=1293111}
+}
+
+1293111 ={ # duchess of surakarta 
+	name="Laras"
+	female=yes
+	martial=18
+	diplomacy=6
+	intrigue=5
+	stewardship=7
+	learning=2
+	culture=madurese
+	religion=nusantara
+	trait=kejawen
+	trait=slow
+	trait=robust
+	trait=patient
+	2570.9.30={birth=yes}
+}
+
+1293112 ={ # princess of surakarta
+	name="Permata"
+	female=yes
+	culture=javanese
+	religion=nusantara
+	father=1293110
+	mother=1293111
+	2600.1.10={birth=yes}
+}
+
+1293113 ={ # princess of surakarta
+	name="Kusno"
+	culture=javanese
+	religion=nusantara
+	father=1293110
+	mother=1293111
+	2604.1.10={birth=yes}
+}
+
+1293120 ={ # duke of blora
+	name="Bambang"
+	dynasty = 1293013 # Bondowoso
+	martial=12
+	diplomacy=11
+	intrigue=9
+	stewardship=4
+	learning=8
+	culture=javanese
+	religion=nusantara
+	trait=kejawen
+	trait=wroth
+	trait=stubborn
+	trait=experimenter
+	2568.6.9={birth=yes}
+	2603.1.2={add_spouse=1293121}
+}
+
+1293121 ={ # duchess of grobogan 
+	name="Laras"
+	culture=madurese
+	religion=nusantara
+	trait=kejawen
+	trait=chaste
+	trait=deceitful
+	trait=patient
+	2579.9.1={birth=yes}
+}
+
+1293125 ={ # duke of blora
+	name="Reza"
+	dynasty = 1293014 # Sudjatmiko
+	martial=4
+	diplomacy=6
+	intrigue=7
+	stewardship=12
+	learning=9
+	culture=javanese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=trusting
+	trait=brave
+	2580.6.9={birth=yes}
+	2599.11.2={add_spouse=1293126}
+}
+
+1293126 ={ # duchess of surakarta 
+	name="Putri"
+	female=yes
+	culture=javanese
+	religion=nusantara
+	trait=kejawen
+	2585.1.12={birth=yes}
+}
+
+1293127 ={ # princess of surakarta
+	name="Permata"
+	female=yes
+	culture=javanese
+	religion=nusantara
+	father=1293125
+	mother=1293126
+	2604.1.10={birth=yes}
+}
+
+1293135 ={ # duke of semarang
+	name="Elang"
+	dynasty = 1293015 # Ronggowarsito
+	martial=4
+	diplomacy=6
+	intrigue=7
+	stewardship=12
+	learning=9
+	culture=javanese
+	religion=pancasila
+	2586.6.9={birth=yes}
+	2604.1.21={add_spouse=1293136}
+}
+
+1293136 ={ # duchess of semarang 
+	name="Herrawati"
+	female=yes
+	culture=javanese
+	religion=pancasila
+	2584.1.1={birth=yes}
+}
+
+1293140 ={ # duke of cilacap
+	name="Taufan"
+	dynasty = 1293016 # Mangunsarkoro
+	martial=3
+	diplomacy=5
+	intrigue=7
+	stewardship=13
+	learning=16
+	culture=javanese
+	religion=salafi
+	2578.6.9={birth=yes}
+}
+
+1294000 ={ # duke of madura
+	name="Dullah"
+	dynasty = 1294001 # Syamsuddin
+	martial=2
+	diplomacy=15
+	intrigue=9
+	stewardship=8
+	learning=8
+	culture=madurese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=ambitious
+	trait=authoritative
+	trait=crippled
+	2560.12.1={birth=yes}
+	2584.4.2={add_spouse=1294001}
+}
+
+1294001 ={ # duchess of madura
+	name="Gita"
+	female=yes
+	culture=madurese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=honorable
+	trait=humble
+	trait=bisexual
+	2549.11.1={birth=yes}
+}
+
+1294002 ={ # princess of madura
+	name="Cahyadewi"
+	female=yes
+	culture=madurese
+	religion=nusantara
+	martial=7
+	diplomacy=10
+	intrigue=6
+	stewardship=13
+	learning=4
+	trait=nusantara_traditionalist
+	trait=gregarious
+	trait=trusting
+	father=1294000
+	mother=1294001
+	2575.11.1={birth=yes}
+}
+
+1294003 ={ # princess of madura #2
+	name="Sulistyowati"
+	female=yes
+	culture=madurese
+	religion=nusantara
+	martial=8
+	diplomacy=8
+	intrigue=10
+	stewardship=3
+	learning=14
+	trait=nusantara_traditionalist
+	trait=shy
+	trait=content
+	trait=kind
+	father=1294000
+	mother=1294001
+	2582.11.1={birth=yes}
+}
+
+1294004 ={ # prince of madura
+	name="Kusumo"
+	female=yes
+	culture=madurese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	father=1294000
+	mother=1294001
+	2592.3.1={birth=yes}
+}
+
+1294050 ={ # duke of probolinggo
+	name="Bambang"
+	dynasty = 1294002 # Wijaya
+	martial=7
+	diplomacy=13
+	intrigue=15
+	stewardship=4
+	learning=5
+	culture=madurese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=seducer
+	trait=gregarious
+	trait=organizer
+	2580.9.25={birth=yes}
+	2603.8.30={add_spouse=1294054}
+}
+
+1294051 ={ # duke of bondowoso
+	name="Ismanto"
+	dynasty = 1294003 # Cakranegara
+	martial=5
+	diplomacy=12
+	intrigue=10
+	stewardship=8
+	learning=17
+	culture=madurese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=blinded_age
+	trait=administrator
+	trait=trickster
+	trait=paranoid
+	2550.6.12={birth=yes}
+	2582.8.2={add_spouse=1294052}
+}
+
+1294052 ={ # duchess of bondowoso
+	name="Gita"
+	female=yes
+	culture=madurese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=uncouth
+	trait=genius
+	trait=depressed
+	2562.3.11={birth=yes}
+}
+
+1294053 ={ # prince of bondowoso
+	name="Gatot"
+	dynasty = 1294003 # Cakranegara
+	martial=15
+	diplomacy=7
+	intrigue=9
+	stewardship=1
+	learning=4
+	culture=madurese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=drunkard
+	trait=stutter
+	trait=robust
+	trait=hedonist
+	2585.6.12={birth=yes}
+}
+
+1294054 ={ # princess of bondowoso
+	name="Mega"
+	dynasty = 1294003 # Cakranegara
+	female=yes
+	martial=6
+	diplomacy=9
+	intrigue=16
+	stewardship=10
+	learning=5
+	culture=madurese
+	religion=nusantara
+	trait=nusantara_traditionalist
+	trait=gardener
+	trait=chaste
+	trait=stubborn
+	2585.6.12={birth=yes}
+}
+
+
+
+
+
+
+
+
+
+
+
