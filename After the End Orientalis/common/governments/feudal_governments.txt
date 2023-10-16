@@ -775,6 +775,8 @@ feudal_governments = {
 						}
 					}
 					##########################
+					#   SPECIAL CONDITIONS   #
+					##########################
 					
 					AND = {
 						religion_group = buddhist_group
@@ -807,13 +809,16 @@ feudal_governments = {
 						culture_group = han
 						higher_tier_than = BARON
 					}
-					top_liege = {
-						government = sinic_bureaucracy_government
-						OR = {
-							tier = COUNT
-							tier = DUKE
-							tier = KING
-							tier = EMPEROR
+					AND = {
+						NOT = {religion = hui}
+						top_liege = {
+							government = sinic_bureaucracy_government
+							OR = {
+								tier = COUNT
+								tier = DUKE
+								tier = KING
+								tier = EMPEROR
+							}
 						}
 					}
 				}
