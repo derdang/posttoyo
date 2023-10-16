@@ -32,8 +32,11 @@
 1293000 ={ # teresa's father
 	name="William"
 	culture=tionghoa
+	dynasty = 1956017 # Teng
 	religion=concordanist
 	2560.11.1={birth=yes}
+	2584.1.9={add_spouse=1293002}
+	2591.1.1={employer=1293001}
 }
 
 1293001 ={ # surabaya king
@@ -54,14 +57,17 @@
 	father=1293004
 	mother=1293005
 	2572.1.9={birth=yes}
+	2603.1.9={add_spouse=1293003}
 }
 
 1293002 ={ # teresa's mother
 	name="Irene"
 	female=yes
+	dynasty = 1956017 # Teng
 	culture=tionghoa
 	religion=concordanist
 	2562.11.1={birth=yes}
+	2591.1.1={employer=1293001}
 }
 
 1293003 ={ # surabaya queen
@@ -83,11 +89,10 @@
 	father=1293000
 	mother=1293002
 	2585.1.4={birth=yes}
-	2604.1.9={add_spouse=1293001}
-	2604.1.9={dynasty=1293009}
+	2603.1.9={dynasty=1293009}
 }
 
-1293003 ={ # surabaya king's father
+1293004 ={ # surabaya king's father
 	name="Martoredjo"
 	dynasty = 1293009 # Bustaman
 	culture=javanese
@@ -96,11 +101,11 @@
 	trait=diligent
 	trait=nusantara_traditionalist
 	2547.6.1={birth=yes}
-	2572.3.9={add_spouse=1293004}
+	2572.3.9={add_spouse=1293005}
 	2596.12.1={death=yes}
 }
 
-1293004 ={ # surabaya king's mother
+1293005 ={ # surabaya king's mother
 	name="Puan"
 	female=yes
 	culture=javanese
@@ -112,7 +117,7 @@
 	2549.11.1={birth=yes}
 }
 
-1293004 ={ # surabaya king's sister
+1293006 ={ # surabaya king's sister
 	name="Diona"
 	female=yes
 	dynasty = 1293009 # Bustaman
@@ -127,8 +132,8 @@
 	trait=erudite
 	trait=groomed
 	trait=lefthanded
-	father=1293003
-	mother=1293004
+	father=1293004
+	mother=1293005
 	2581.11.1={birth=yes}
 }
 
@@ -157,6 +162,7 @@
 
 1293014 ={ # princess of Kediri
 	name="Tika"
+	dynasty = 1293004 # Sukarnoputra
 	female=yes
 	culture=javanese
 	religion=pancasila
@@ -167,6 +173,7 @@
 
 1293015 ={ # prince of Kediri
 	name="Joko"
+	dynasty = 1293004 # Sukarnoputra
 	culture=javanese
 	religion=pancasila
 	father=1293012
@@ -176,11 +183,12 @@
 
 1293016 ={ # prince of Kediri #2
 	name="Indra"
+	dynasty = 1293004 # Sukarnoputra
 	culture=javanese
 	religion=pancasila
 	father=1293012
 	mother=1293013
-	2604.12.4={birth=yes}
+	2603.12.4={birth=yes}
 }
 
 1293020 ={ # duke of malang
@@ -207,8 +215,9 @@
 	2580.2.12={birth=yes}
 }
 
-1293016 ={ # prince of malang
+1293022 ={ # prince of malang
 	name="Indra"
+	dynasty = 1293012 # Wisnucahyo
 	culture=javanese
 	religion=tirthaist
 	father=1293020
@@ -252,6 +261,7 @@
 
 1293027 ={ # princess of jember 
 	name="Najma"
+	dynasty = 1293010 # Sudirman
 	female=yes
 	culture=javanese
 	religion=nusantara
@@ -263,6 +273,7 @@
 
 1293028 ={ # princess of jember #2
 	name="Jamila"
+	dynasty = 1293010 # Sudirman
 	female=yes
 	culture=javanese
 	religion=nusantara
@@ -272,8 +283,9 @@
 	2593.2.14={birth=yes}
 }
 
-1293028 ={ # prince of jember
+1293029 ={ # prince of jember
 	name="Salim"
+	dynasty = 1293010 # Sudirman
 	culture=javanese
 	religion=nusantara
 	father=1293025
@@ -282,8 +294,9 @@
 	2597.7.10={birth=yes}
 }
 
-1293028 ={ # princess of jember
+1293030 ={ # princess of jember
 	name="Ariffah"
+	dynasty = 1293010 # Sudirman
 	female=yes
 	culture=javanese
 	religion=nusantara
@@ -293,8 +306,9 @@
 	2600.7.10={birth=yes}
 }
 
-1293028 ={ # princess of jember
+1293031 ={ # princess of jember
 	name="Kasmirah"
+	dynasty = 1293010 # Sudirman
 	female=yes
 	culture=javanese
 	religion=nusantara
@@ -359,6 +373,7 @@
 
 1293112 ={ # princess of surakarta
 	name="Permata"
+	dynasty = 1293003 # Mangkunegara
 	female=yes
 	culture=javanese
 	religion=nusantara
@@ -369,6 +384,7 @@
 
 1293113 ={ # princess of surakarta
 	name="Kusno"
+	dynasty = 1293003 # Mangkunegara
 	culture=javanese
 	religion=nusantara
 	father=1293110
@@ -376,7 +392,7 @@
 	2604.1.10={birth=yes}
 }
 
-1293120 ={ # duke of blora
+1293120 ={ # duke of grobogan
 	name="Bambang"
 	dynasty = 1293013 # Bondowoso
 	martial=12
@@ -396,6 +412,7 @@
 
 1293121 ={ # duchess of grobogan 
 	name="Laras"
+	female=yes
 	culture=madurese
 	religion=nusantara
 	trait=kejawen
@@ -422,7 +439,7 @@
 	2599.11.2={add_spouse=1293126}
 }
 
-1293126 ={ # duchess of surakarta 
+1293126 ={ # duchess of blora 
 	name="Putri"
 	female=yes
 	culture=javanese
@@ -431,8 +448,9 @@
 	2585.1.12={birth=yes}
 }
 
-1293127 ={ # princess of surakarta
+1293127 ={ # princess of blora
 	name="Permata"
+	dynasty = 1293014 # Sudjatmiko
 	female=yes
 	culture=javanese
 	religion=nusantara
@@ -508,6 +526,7 @@
 
 1294002 ={ # princess of madura
 	name="Cahyadewi"
+	dynasty = 1294001 # Syamsuddin
 	female=yes
 	culture=madurese
 	religion=nusantara
@@ -526,6 +545,7 @@
 
 1294003 ={ # princess of madura #2
 	name="Sulistyowati"
+	dynasty = 1294001 # Syamsuddin
 	female=yes
 	culture=madurese
 	religion=nusantara
@@ -545,6 +565,7 @@
 
 1294004 ={ # prince of madura
 	name="Kusumo"
+	dynasty = 1294001 # Syamsuddin
 	female=yes
 	culture=madurese
 	religion=nusantara
@@ -587,7 +608,10 @@
 	trait=administrator
 	trait=trickster
 	trait=paranoid
-	2550.6.12={birth=yes}
+	2550.6.12={
+		birth=yes
+		add_claim = c_madura
+	 }
 	2582.8.2={add_spouse=1294052}
 }
 
@@ -618,6 +642,8 @@
 	trait=stutter
 	trait=robust
 	trait=hedonist
+	father=1294051
+	mother=1294052
 	2585.6.12={birth=yes}
 }
 
@@ -636,8 +662,65 @@
 	trait=gardener
 	trait=chaste
 	trait=stubborn
+	father=1294051
+	mother=1294052
 	2585.6.12={birth=yes}
 }
+
+1295000 ={ # sunda's emperor
+	name="Sutrisna"
+	dynasty = 1295000 # Suriakusuma
+	martial=2
+	diplomacy=7
+	intrigue=1
+	stewardship=10
+	learning=4
+	culture=sundanese
+	religion=salafi
+	2580.11.1={birth=yes}
+}
+
+1295020 ={ # cirebon's king
+	name="Jayadewata"
+	dynasty = 1295001 # Hidayatullah
+	martial=10
+	diplomacy=2
+	intrigue=14
+	stewardship=15
+	learning=4
+	culture=sundanese
+	religion=salafi
+	trait=ambitious
+	2551.1.13={birth=yes}
+}
+
+1296000 ={ # banten's king
+	name="Tirtayasa"
+	dynasty = 1296000 # Komalasari
+	martial=6
+	diplomacy=10
+	intrigue=12
+	stewardship=8
+	learning=14
+	culture=bantenese
+	religion=pancasila
+	trait=ambitious
+	2565.2.12={birth=yes}
+}
+
+1297000 ={ # jakarta's king
+	name="Komarudin"
+	dynasty = 1297000 # Setiawan
+	martial=7
+	diplomacy=15
+	intrigue=9
+	stewardship=15
+	learning=8
+	culture=jakartan
+	religion=pancasila
+	2576.2.12={birth=yes}
+}
+
 
 
 
