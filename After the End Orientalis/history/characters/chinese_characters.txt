@@ -73,8 +73,8 @@
 #Denzhou
 1953000 = { #Duke of Denzhou
 	name = "Chongkai"
-	dynasty = 1953000 #Wen
-	culture = huizhou
+	dynasty = 9025078 #Wen
+	culture = jilu
 	religion = hui
 	father = 1953002
 	trait = charismatic_negotiator
@@ -84,8 +84,8 @@
 }
 1953001 = { #Count Laoling
 	name = "Ruqi"
-	dynasty = 1953001 #An
-	culture = huizhou
+	dynasty = 9025079 #An
+	culture = jilu
 	religion = hui
 	father = 1953002
 	trait = martial_cleric
@@ -95,8 +95,8 @@
 }
 1953002 = { #Duke of Denzhou (Paduka Pahala)
 	name = "Batugal"
-	dynasty = 1953000 #Wen
-	culture = huizhou
+	dynasty = 9025078 #Wen
+	culture = jilu
 	religion = hui
 	add_claim=d_sulu
 	trait = charismatic_negotiator
@@ -1720,5 +1720,73 @@
 	dynasty = 9025077 #Guo
 	culture = jilu
 	religion = ruist
+	2580.1.3 = {birth = yes}
+}
+1060001 = {
+	name = "Shanlong"
+	dynasty = 9025097 #Jia
+	culture = jilu
+	religion = heilong
+	2580.1.3 = {birth = yes}
+}
+1060002 = {
+	name = "Shen"
+	dynasty = 9025120 #Li
+	culture = jilu
+	religion = shenist
+	2580.1.3 = {birth = yes}
+}
+1060003 = {
+	name = "Xun"
+	dynasty = 9025205 #Song
+	culture = jilu
+	religion = jibenyuanze
+	2580.1.3 = {birth = yes}
+}
+1060004 = {
+	name = "Guangming"
+	dynasty = 9025208 #Sun
+	culture = jilu
+	religion = jibenyuanze
+	2580.1.3 = {birth = yes}
+}
+1060005 = {
+	name = "Zhen"
+	dynasty = 9025222 #Wang
+	culture = jilu
+	religion = jibenyuanze
+	2580.1.3 = {birth = yes}
+}
+##Jiaodong##
+1060100 = {
+	name = "Zhan"
+	dynasty = 9026026 #Guo
+	culture = jiao_liao
+	religion = quanzhen
+	2580.1.3 = {birth = yes}
+}
+
+###Zhili###
+
+#Zhao#
+1070000 = {
+	name = "Huang"
+	dynasty = 9025258 #Yu
+	culture = jilu
+	religion = jibenyuanze
+	2580.1.3 = {birth = yes}
+}
+1070001 = {
+	name = "Zhongwen"
+	dynasty = 9025271 #Zhang
+	culture = jilu
+	religion = jibenyuanze
+	2580.1.3 = {birth = yes}
+}
+1070002 = {
+	name = "Qinyue"
+	dynasty = 9025272 #Zhao
+	culture = jilu
+	religion = jibenyuanze
 	2580.1.3 = {birth = yes}
 }
