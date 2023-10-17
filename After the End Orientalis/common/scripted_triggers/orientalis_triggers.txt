@@ -7,6 +7,12 @@ is_vajrayana = {
 		religion = dorje_shugden
 	}
 }
+is_salafi_religion = {
+	OR = {
+		religion = renewalist
+		religion = salafi
+	}
+}
 is_theravada = {
 	OR = {
 		religion = dharmayuttika

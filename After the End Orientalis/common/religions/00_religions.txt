@@ -769,7 +769,7 @@ muslim = {
 		Sakina-muslim Salma-muslim Sariya-muslim 
 	}
 	
-	salafi = { # Renewalist
+	renewalist = {
 		graphical_culture = muslimgfx
 
 		icon = 5
@@ -799,20 +799,20 @@ muslim = {
 		uses_decadence = yes
 		uses_jizya_tax = yes
 
-		intermarry = wahabbi
+		intermarry = salafi
 		intermarry = nusantara
 		intermarry = pancasila
 		intermarry = hui
 
 	}
 	
-	wahabbi = { # Salafi
+	salafi = {
 		graphical_culture = muslimgfx
 
 		icon = 6
 		
 		color = { 0 0 0 }
-		parent = salafi
+		parent = renewalist
 		
 		scripture_name = THE_KORAN
 		priest_title = IMAM_PRIEST
@@ -837,7 +837,7 @@ muslim = {
 		uses_decadence = yes
 		uses_jizya_tax = yes
 
-		intermarry = salafi
+		intermarry = renewalist
 
 	}
 	
@@ -868,11 +868,11 @@ muslim = {
 		
 		attacking_same_religion_piety_loss = yes
 		
-		intermarry = wahabbi
 		intermarry = salafi
+		intermarry = renewalist
 	}
 	
-	nusantara = { #Islam with Nunsantara Characteristics
+	nusantara = { #Aswaja
 		graphical_culture = muslimgfx
 
 		icon = 9
@@ -899,7 +899,7 @@ muslim = {
 		
 		attacking_same_religion_piety_loss = yes
 		
-		intermarry = salafi
+		intermarry = renewalist
 		intermarry = nusantara
 		intermarry = pancasila
 		intermarry = hui
@@ -3401,7 +3401,7 @@ oldworld = {
 		piety_name = HARMONY
 		
 		intermarry = nusantara
-		intermarry = salafi
+		intermarry = renewalist
 		intermarry = buddhist_group
 		intermarry = indian_group
 	}
