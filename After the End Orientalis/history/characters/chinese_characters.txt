@@ -965,6 +965,20 @@
 	religion = shenist
 	2589.1.3 = {birth = yes}
 }
+1032006 = {
+	name = "Qingqiu"
+	dyansty = 9070029 #Shen
+	culture = xinan
+	religion = ruist
+	2589.1.3 = {birth = yes}
+}
+1032007 = {
+	name = "Long"
+	dyansty = 2498003 #Tsom
+	culture = miao
+	religion = ruist
+	2589.1.3 = {birth = yes}
+}
 
 ##Sichuan##
 
@@ -1587,6 +1601,27 @@
 	religion = ruist
 	2580.1.3 = {birth = yes}
 }
+1048004 = { #Count of Jiao
+	name = "Deshan"
+	dynasty = 9021097
+	culture = jianghuai
+	religion = fuyin
+	2580.1.3 = {birth = yes}
+}
+1048005 = { #Count of Jianghu and Tongguan
+	name = "Yangming"
+	dynasty = 9023222
+	culture = huizhou
+	religion = ruist
+	2580.1.3 = {birth = yes}
+}
+1048006 = { #Count of Xuanzhou and Ningguo
+	name = "Yangde"
+	dynasty = 9023243
+	culture = huizhou #Xu
+	religion = ruist
+	2580.1.3 = {birth = yes}
+}
 #Qiao
 1048100 = { #Duke of Fuyang
 	name = "Guang"
@@ -1691,6 +1726,30 @@
 	religion = fuyin
 	2580.1.3 = {birth = yes}
 }
+#Xu
+1048700 = { #Duke of Xuzhou
+	name = "Sen"
+	dynasty = 9081002 #Jiang
+	culture = zhongyuan
+	religion = jibenyuanze
+	2580.1.3 = {birth = yes}
+}
+1048701 = { #Duke of Xuzhou
+	name = "Huai"
+	dynasty = 9081007 #Zhang
+	culture = zhongyuan
+	religion = jibenyuanze
+	2575.7.25 = {birth = yes}
+}
+
+#Shanghai
+1048800 = { #Count of Fengxian and Jinshan
+	name = "Yingguo"
+	dynasty = 9020016 #Cai
+	culture = shanghainese
+	religion = gongye_shenjiao
+	2580.1.3 = {birth = yes}
+}
 
 ##Shaanxi/Qin##
 1050000 = { #Duke of Weinan
@@ -1766,6 +1825,75 @@
 	2580.1.3 = {birth = yes}
 }
 
+#Qin
+1060200 = {
+	name = "Zhao"
+	dynasty = 9087043 #Dong
+	culture = guanzhong
+	religion = quanzhen
+	trait=fortune_builder
+	trait=brave
+	trait=stubborn
+	trait=temperate
+	trait=envious
+	disallow_random_traits=yes
+	2574.10.14 = {birth = yes}
+}
+1060201 = {
+	name = "Kui"
+	dynasty = 9087207 #Su
+	culture = guanzhong
+	religion = quanzhen
+	trait=brilliant_strategist
+	trait=heavy_infantry_leader
+	trait=lustful
+	trait=gregarious
+	trait=rude
+	trait=craven
+	disallow_random_traits=yes
+	2571.5.20 = {birth = yes}
+}
+1060202 = {
+	name = "Yanruo"
+	dynasty = 9087229 #Wu
+	culture = guanzhong
+	religion = quanzhen
+	trait=thrifty_clerk
+	trait=gamer
+	trait=content
+	trait=ruthless
+	trait=patient
+	trait=charitable
+	disallow_random_traits=yes
+	2572.5.15 = {birth = yes}
+}
+1060203 = {
+	name = "Zhirou"
+	dynasty = 9087077 #Guo
+	culture = guanzhong
+	religion = tianzhu
+	trait=grey_eminence
+	trait=proud
+	trait=deceitful
+	trait=cynical
+	trait=paranoid
+	disallow_random_traits=yes
+	2573.8.10 = {birth = yes}
+}
+1060204 = {
+	name = "Zhongchen"
+	dynasty = 9087128 #Liu
+	culture = guanzhong
+	religion = nestorian
+	trait=thrifty_clerk
+	trait=honorable
+	trait=honest
+	trait=selfish
+	trait=just
+	disallow_random_traits=yes
+	2573.10.19 = {birth = yes}
+}
+
 ###Zhili###
 
 #Zhao#
@@ -1789,4 +1917,99 @@
 	culture = jilu
 	religion = jibenyuanze
 	2580.1.3 = {birth = yes}
+}
+
+##Chu##
+1080000 = {
+	name = "Changtu"
+	dynasty = 9043279 #Zhou
+	culture = chu
+	religion = quanzhen
+	trait=naive_appeaser
+	trait=quick
+	trait=hunter
+	trait=paranoid
+	trait=selfish
+	trait=erudite
+	trait=greedy
+	disallow_random_traits=yes
+	2566.12.7 = {birth = yes}
+}
+1080001 = {
+	name = "Zhizhong"
+	dynasty = 9043120 #Li
+	culture = chu
+	religion = fuyin
+	trait=elusive_shadow
+	trait=brave
+	trait=authoritative
+	trait=paranoid
+	trait=greedy
+	disallow_random_traits=yes
+	2570.7.12 = {birth = yes}
+}
+1080002 = {
+	name = "Xilie"
+	dynasty = 9043274 #Zheng
+	culture = chu
+	religion = jibenyuanze
+	trait=naive_appeaser
+	trait=wroth
+	trait=arbitrary
+	trait=erudite
+	trait=charitable
+	disallow_random_traits=yes
+	2576.12.13 = {birth=yes}
+}
+1080003 = {
+	name = "Youfu"
+	dynasty = 9043077 #Guo
+	culture = chu
+	religion = jibenyuanze
+	trait=thrifty_clerk
+	trait=rude
+	trait=proud
+	trait=deceitful
+	trait=slothful
+	disallow_random_traits=yes
+	2569.10.22 = {birth=yes}
+}
+1080004 = {
+	name = "Wei"
+	dynasty = 9043137 #Mao
+	culture = chu
+	religion = jibenyuanze
+	trait=amateurish_plotter
+	trait=deceitful
+	trait=kind
+	trait=brave
+	trait=pious
+	disallow_random_traits=yes
+	2573.12.27 = {birth=yes}
+}
+1080005 = {
+	name = "Yuanzong"
+	dynasty = 9035017 #Hu
+	culture = gan
+	religion = taoist
+	trait=midas_touched
+	trait=honest
+	trait=paranoid
+	trait=patient
+	trait=cruel
+	disallow_random_traits=yes
+	2574.10.17 = {birth=yes}
+}
+1080006 = {
+	name = "Jishan"
+	dynasty = 9035125 #Lin
+	culture = chu
+	religion = jibenyuanze
+	trait=tough_soldier
+	trait=cruel
+	trait=stubborn
+	trait=selfish
+	trait=slothful
+	disallow_random_traits=yes
+	2567.2.26 = {birth=yes}
 }
