@@ -987,6 +987,11 @@
 1033000 = { #King of Ba
 	name="Guofeng"
 	dynasty=9061229
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	culture = sichuanese
 	religion = ruist
 	2576.1.3 = {birth = yes}
@@ -994,9 +999,86 @@
 1033001 = { #Duke of Lizhou
 	name="Liang"
 	dynasty=9061249
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	culture = sichuanese
 	religion = datong
 	2576.1.3 = {birth = yes}
+}
+1033002 = { #Duke of Dazhou
+	name="Zhaode"
+	dynasty=9070030 #Ba
+	culture = xinan
+	religion = datong
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait = midas_touched
+	trait = authoritative
+	trait = gregarious
+	trait = cynical
+	trait = humble
+	disallow_random_traits = yes
+	2566.11.3 = {birth = yes}
+}
+1033003 = { #Count of Dazhou
+	name="Shiji"
+	dynasty=9070031 #Gan
+	culture = xinan
+	religion = datong
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait = elusive_shadow
+	trait = honorable
+	trait = slothful
+	trait = charitable
+	trait = shy
+	disallow_random_traits = yes
+	2567.11.12 = {birth = yes}
+}
+1033004 = { #Count of Guangyan and Bazhong
+	name="Sheng"
+	dynasty=9061082 #He
+	culture = sichuanese
+	religion = datong
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait = thrifty_clerk
+	trait = wroth
+	trait = just
+	trait = gregarious
+	trait = humble
+	disallow_random_traits = yes
+	2564.7.31 = {birth = yes}
+}
+1033005 = { #Duke of Yibin
+	name="Mingde"
+	dynasty=9061135 #Ma
+	culture = sichuanese
+	religion = datong
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait = charismatic_negotiator
+	trait = patient
+	trait = cruel
+	trait = gregarious
+	trait = zealous
+	disallow_random_traits = yes
+	2564.7.31 = {birth = yes}
 }
 
 #Shu#
@@ -1757,6 +1839,17 @@
 	dynasty = 9087007 #Bao
 	culture = guanzhong
 	religion = tianzhu
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait = charismatic_negotiator
+	trait = temperate
+	trait = stubborn
+	trait = trusting
+	trait = kind
+	disallow_random_traits = yes
 	2580.1.3 = {birth = yes}
 }
 1050001 = { #Duke of Yan'an
@@ -1764,6 +1857,16 @@
 	dynasty = 9003000 #Guo
 	culture = jin
 	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait = detached_priest
+	trait = slothful
+	trait = brave
+	trait = erudite
+	trait = pious
 	2580.1.3 = {birth = yes}
 }
 1050002 = { #Duke of Yulin
@@ -1771,6 +1874,17 @@
 	dynasty = 9003002 #Jiang
 	culture = jin
 	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait = flamboyant_schemer
+	trait = chaste
+	trait = craven
+	trait = paranoid
+	trait = gregarious
+	disallow_random_traits = yes
 	2580.1.3 = {birth = yes}
 }
 ##Shandong##
@@ -1779,6 +1893,11 @@
 	dynasty = 9025077 #Guo
 	culture = jilu
 	religion = ruist
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	2580.1.3 = {birth = yes}
 }
 1060001 = {
@@ -1786,6 +1905,11 @@
 	dynasty = 9025097 #Jia
 	culture = jilu
 	religion = heilong
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	2580.1.3 = {birth = yes}
 }
 1060002 = {
@@ -1793,6 +1917,11 @@
 	dynasty = 9025120 #Li
 	culture = jilu
 	religion = shenist
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	2580.1.3 = {birth = yes}
 }
 1060003 = {
@@ -1800,6 +1929,11 @@
 	dynasty = 9025205 #Song
 	culture = jilu
 	religion = jibenyuanze
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	2580.1.3 = {birth = yes}
 }
 1060004 = {
@@ -1807,6 +1941,11 @@
 	dynasty = 9025208 #Sun
 	culture = jilu
 	religion = jibenyuanze
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	2580.1.3 = {birth = yes}
 }
 1060005 = {
@@ -1822,6 +1961,11 @@
 	dynasty = 9026026 #Guo
 	culture = jiao_liao
 	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	2580.1.3 = {birth = yes}
 }
 
@@ -1831,6 +1975,11 @@
 	dynasty = 9087043 #Dong
 	culture = guanzhong
 	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=fortune_builder
 	trait=brave
 	trait=stubborn
@@ -1844,6 +1993,11 @@
 	dynasty = 9087207 #Su
 	culture = guanzhong
 	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=brilliant_strategist
 	trait=heavy_infantry_leader
 	trait=lustful
@@ -1858,6 +2012,11 @@
 	dynasty = 9087229 #Wu
 	culture = guanzhong
 	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=thrifty_clerk
 	trait=gamer
 	trait=content
@@ -1872,6 +2031,11 @@
 	dynasty = 9087077 #Guo
 	culture = guanzhong
 	religion = tianzhu
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=grey_eminence
 	trait=proud
 	trait=deceitful
@@ -1885,6 +2049,11 @@
 	dynasty = 9087128 #Liu
 	culture = guanzhong
 	religion = nestorian
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=thrifty_clerk
 	trait=honorable
 	trait=honest
@@ -1902,11 +2071,21 @@
 	dynasty = 9025258 #Yu
 	culture = jilu
 	religion = jibenyuanze
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	2580.1.3 = {birth = yes}
 }
 1070001 = {
 	name = "Zhongwen"
 	dynasty = 9025271 #Zhang
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	culture = jilu
 	religion = jibenyuanze
 	2580.1.3 = {birth = yes}
@@ -1914,6 +2093,11 @@
 1070002 = {
 	name = "Qinyue"
 	dynasty = 9025272 #Zhao
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	culture = jilu
 	religion = jibenyuanze
 	2580.1.3 = {birth = yes}
@@ -1925,6 +2109,11 @@
 	dynasty = 9043279 #Zhou
 	culture = chu
 	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=naive_appeaser
 	trait=quick
 	trait=hunter
@@ -1940,6 +2129,11 @@
 	dynasty = 9043120 #Li
 	culture = chu
 	religion = fuyin
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=elusive_shadow
 	trait=brave
 	trait=authoritative
@@ -1953,6 +2147,11 @@
 	dynasty = 9043274 #Zheng
 	culture = chu
 	religion = jibenyuanze
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=naive_appeaser
 	trait=wroth
 	trait=arbitrary
@@ -1966,6 +2165,11 @@
 	dynasty = 9043077 #Guo
 	culture = chu
 	religion = jibenyuanze
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=thrifty_clerk
 	trait=rude
 	trait=proud
@@ -1979,6 +2183,11 @@
 	dynasty = 9043137 #Mao
 	culture = chu
 	religion = jibenyuanze
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=amateurish_plotter
 	trait=deceitful
 	trait=kind
@@ -1992,6 +2201,11 @@
 	dynasty = 9035017 #Hu
 	culture = gan
 	religion = taoist
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=midas_touched
 	trait=honest
 	trait=paranoid
@@ -2005,6 +2219,11 @@
 	dynasty = 9035125 #Lin
 	culture = chu
 	religion = jibenyuanze
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
 	trait=tough_soldier
 	trait=cruel
 	trait=stubborn
