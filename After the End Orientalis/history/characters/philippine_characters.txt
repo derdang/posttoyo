@@ -6,19 +6,29 @@
 #3902 - Bicolano
 #3903 - Pangasinense
 #3904 - Kapampangan
-#3905 - Bisaya
-#3906 - Dumagat
-#3907 - Ivatan
-#3908 - Ibanag
-#3909 - Cuyonon
-#3910 - Chavacano
-#3911 - Balikbayan
-#3912 - Moro
-#3913 - Igorot
-#3914 - Lumad
-#3915 - Negrito
-#3916 - Badjao
-#3917 - Mangyan 
+#3905 - Sambal
+#3906 - Cebuano
+#3907 - Ilonggo
+#3908 - Waray
+#3909 - Capiznon
+#3910 - Hamtikanon
+#3911 - Aklanon
+#3912 - Romblomanon
+#3913 - Masbateno
+#3914 - Surigaonon
+#3915 - Dumagat
+#3916 - Ivatan
+#3917 - Ibanag
+#3918 - Cuyonon 
+#3919 - Chavacano
+#3920 - Balikbayan
+#3921 - Minahasan
+#3923 - Gorontalo
+#3924 - Visayan
+#3925 - Moro
+#3926 - Sama
+#3927 - Igorot
+#3928 - Lumad
 
 ###########Tagalog Characters###########
 
@@ -156,9 +166,6 @@
 	2561.12.17={
 		birth=yes
 	}
-	2587.9.28={
-		add_spouse=3900000
-	}
 }
 
 3900006 = { #Eldest child
@@ -178,9 +185,6 @@
 	mother=3900005
 	2579.4.9={
 		birth=yes
-	}
-	2587.9.15={
-		add_spouse=3904000
 	}
 }
 
@@ -347,6 +351,74 @@
 	father=3904000
 	mother=3900006
 	2597.8.1={
+		birth=yes
+	}
+}
+
+###########Moro Characters###########
+
+3925000 = { #Kings of Sulu
+	name="Bangkaya"
+	dynasty=3925061 #Kiram
+	culture=moro
+	religion=renewalist
+	diplomacy=5
+	martial=5
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=grey_eminence
+	trait=administrator
+	trait=ambitious
+	trait=honorable
+	trait=just
+	trait=proud
+	trait=trusting
+	2567.8.1={
+		birth=yes
+		add_claim = k_sabah
+	}
+	2595.1.1={
+		add_spouse=3926000
+	}
+}
+
+3925001 = {
+	name="Ul-Abidin"
+	dynasty=3925061 #Kiram
+	culture=moro
+	religion=renewalist
+	diplomacy=2
+	martial=8
+	stewardship=6
+	intrigue=1
+	learning=4
+	trait=rowdy
+	trait=haughty
+	trait=idolizer
+	father=3925000
+	mother=3926000
+	2597.8.1={
+		birth=yes
+		add_claim = k_sabah
+	}
+}
+
+###########Sama Characters###########
+3926000 = {
+	name="Angintabu"
+	female=yes
+	dynasty=3926024 #Tengah
+	culture=sama
+	religion=renewalist
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2579.4.9={
 		birth=yes
 	}
 }
