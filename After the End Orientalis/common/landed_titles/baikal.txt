@@ -1,10 +1,8 @@
-
 e_baikal = {
 	color={ 128 234 18 }
 	color2={ 255 255 20 }
 	
 	capital = 2204 # c_yandashsky
-	culture = buryat
 	
 	buryat = "Dauria"
 	
@@ -13,7 +11,6 @@ e_baikal = {
 		color2={ 255 255 255 }
 		
 		capital = 2188 # c_ulan_ude
-		culture = buryat
 		
 		buryat = "Duaria"
 		
@@ -78,8 +75,6 @@ e_baikal = {
 			c_selenga = { # 2192
 				color={ 233 40 0 }
 				color2={ 255 255 255 }
-				
-				buryat = "Mukhar Sheberei"
 				
 				b_bichura = {}
 				b_kyakhta = {}
@@ -297,7 +292,6 @@ e_baikal = {
 		color2={ 255 255 255 }
 		
 		capital = 2204 # c_yandashsky
-		culture = sibiri
 		
 		d_irkutsky = {
 			color={ 243 24 5 }
@@ -452,12 +446,6 @@ e_baikal = {
 			color={ 148 12 20 }
 			color2={ 255 255 255 }
 			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 2222 province_id = 2223 province_id = 2224 } }
-				}
-			}
 			capital = 2222 # c_bratsky
 			
 			c_bratsky = { # 2222
@@ -501,12 +489,6 @@ e_baikal = {
 			color={ 245 95 54 }
 			color2={ 255 255 255 }
 			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 2213 province_id = 2214 province_id = 2215 } }
-				}
-			}
 			capital = 2213 # c_zhigalovsky
 			
 			c_zhigalovsky = { # 2213
@@ -550,12 +532,6 @@ e_baikal = {
 			color={ 147 5 5 }
 			color2={ 255 255 255 }
 			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 2216 province_id = 2217 } }
-				}
-			}
 			capital = 2216 # c_ust_kutsky
 			
 			c_ust_kutsky = { # 2216
@@ -587,12 +563,6 @@ e_baikal = {
 			color={ 127 29 48 }
 			color2={ 255 255 255 }
 			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 2225 province_id = 2226 province_id = 2227 } }
-				}
-			}
 			capital = 2225 # c_kuytunsky
 			
 			c_kuytunsky = { # 2225
@@ -636,12 +606,6 @@ e_baikal = {
 			color={ 187 33 17 }
 			color2={ 255 255 255 }
 			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 2218 province_id = 2219 } }
-				}
-			}
 			capital = 2218 # c_bodaybinsky
 			
 			c_bodaybinsky = { # 2218
@@ -673,12 +637,6 @@ e_baikal = {
 			color={ 176 13 25 }
 			color2={ 255 255 255 }
 			
-			allow = {
-				OR = {
-					lower_tier_than = KING
-					any_demesne_province = { OR = { province_id = 2220 province_id = 2221 } }
-				}
-			}
 			capital = 2220 # c_chunsky
 			
 			c_chunsky = { # 2220
