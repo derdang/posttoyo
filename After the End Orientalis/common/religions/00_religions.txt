@@ -1929,7 +1929,202 @@ pagan_group = {
 		religious_clothing_priest = 10
 		
 		dislike_tribal_organization = yes
-		reformed = seirei_reformed
+		reformed = kaharingan_reformed
+	}
+	dayawist_reformed = { #Monothestic Indigenous Fillipino Religion influenced by Christianity
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 32
+		heresy_icon = 33
+		
+		color = { 133 176 190 }
+		
+		high_god_name = GOD_BATHALA
+		
+		god_names = {
+			GOD_PANGINOON GOD_DIYOS GOD_MAYKAPAL GOD_KABUNIAN GOD_LIDDUM GOD_DIWATA GOD_SARIMANOK
+		}
+		evil_god_names = {
+			EARTH_SHAKER HIDIT
+		}
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
+	dayawist = { #Monothestic Indigenous Fillipino Religion influenced by Christianity
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 31
+		heresy_icon = 33
+		
+		color = { 173 216 230 }
+		
+		high_god_name = GOD_BATHALA
+		
+		god_names = {
+			GOD_PANGINOON GOD_DIYOS GOD_MAYKAPAL GOD_KABUNIAN GOD_LIDDUM GOD_DIWATA GOD_SARIMANOK
+		}
+		evil_god_names = {
+			EARTH_SHAKER HIDIT
+		}
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = dayawist_reformed
+	}
+	holchu_reformed = { #Andamanese Indigenous Religion
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 32
+		heresy_icon = 33
+		
+		color = { 159 61 173 }
+		
+		high_god_name = GOD_PULUGA
+		
+		god_names = {
+			GOD_MAHA_TOTEMO GOD_MAHA_DIK GOD_MAHA_MITE GOD_TOMO GOD_KOLWOT GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			GOD_THE_SPIRITS
+		}
+		scripture_name = THE_LEGENDS
+		priest_title = OKO_JUMU
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
+	holchu = { #Andamanese Indigenous Religion
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 31
+		heresy_icon = 33
+		
+		color = { 199 21 133 }
+		
+		high_god_name = GOD_PULUGA
+		
+		god_names = {
+			GOD_MAHA_TOTEMO GOD_MAHA_DIK GOD_MAHA_MITE GOD_TOMO GOD_KOLWOT GOD_THE_SPIRITS
+		}
+		evil_god_names = {
+			GOD_THE_SPIRITS
+		}
+		scripture_name = THE_LEGENDS
+		priest_title = OKO_JUMU
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = dayawist_reformed
+	}
+	diwata_reformed = { #literal meaning: "Spirits" Polytheist Indigenous Southern Fillipino Religion
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 32
+		heresy_icon = 33
+		
+		color = { 159 61 173 }
+		
+		high_god_name = GOD_MAGBABAYA
+		
+		god_names = {
+			GOD_DOMALONDONG GOD_ONGLI GOD_TAGOLAMBONG GOD_INTUMBANGOL GOD_TAGABUGTA GOD_PATAKODA GOD_BAKUNAWA GOD_FU GOD_MUHEN
+		}
+		evil_god_names = {
+			SAITAN
+		}
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
+	diwata = { #literal meaning: "Spirits" Polytheist Indigenous Southern Fillipino Religion
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 31
+		heresy_icon = 33
+		
+		color = { 199 21 133 }
+		
+		high_god_name = GOD_MAGBABAYA
+		
+		god_names = {
+			GOD_DOMALONDONG GOD_ONGLI GOD_TAGOLAMBONG GOD_INTUMBANGOL GOD_TAGABUGTA GOD_PATAKODA GOD_BAKUNAWA GOD_FU GOD_MUHEN
+		}
+		evil_god_names = {
+			SAITAN
+		}
+		scripture_name = THE_LEGENDS
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		defensive_attrition = yes
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = diwata_reformed
 	}
 }
 
