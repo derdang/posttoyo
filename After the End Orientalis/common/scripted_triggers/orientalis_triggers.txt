@@ -27,6 +27,13 @@ is_mahayana_chinese = {
 		religion = hoa_hao
 	}
 }
+is_oversea_chinese = {
+	OR = {
+		culture = sinotai
+		culture = tionghoa
+		culture = hoa
+	}
+}
 is_mahayana_japanese = {
 	OR = {
 		religion = soka_gakkai

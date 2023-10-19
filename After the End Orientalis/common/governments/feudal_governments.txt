@@ -621,25 +621,32 @@ feudal_governments = {
 			NOT = {	religion_group = christian }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
-			AND = { 
-				OR = {
-					culture_group = southwest_tai
-					culture_group = karenic
-					culture_group = austroasiatic
-					culture_group = cambodian
-					culture_group = burmic
-					culture_group = chamic
-				}
-				OR = {
-					AND = {
-						religion_group = buddhist_group
-						NOT = {religion = mahayana}
+			OR = { 
+				AND = {
+					OR = {
+						is_theravada = yes
+						religion_group = indian_group
+						religion = pancasila
 					}
-					religion = ua_dab
-					religion = ua_dab_reformed
-					religion_group = indian_group
+					OR = {
+						culture_group = southwest_tai
+						culture_group = karenic
+						culture_group = austroasiatic
+						culture_group = cambodian
+						culture_group = burmic
+						culture_group = chamic
+						culture_group = malayan
+						culture_group = kadazandusun
+						culture_group = philippine
+						culture_group = nusantaran
+						culture_group = timor
+						culture_group = barrier_batak
+						culture_group = sulawesi
+						culture_group = maluku
+						culture_group = dayak
+					}
+					higher_tier_than = BARON
 				}
-				higher_tier_than = BARON
 			}
 			NAND = { 
 				tier = EMPEROR
@@ -794,8 +801,9 @@ feudal_governments = {
 						higher_tier_than = BARON
 					}
 					AND = {
-						religion = mahayana
+						is_mahayana_chinese = yes
 						OR = {
+							is_oversea_chinese = yes
 							culture_group = hmong_mien
 							culture_group = formosan
 							culture_group = lolo
