@@ -1808,6 +1808,41 @@
 	religion = fuyin
 	2580.1.3 = {birth = yes}
 }
+1048602 = { #Xinyang
+	name = "Huaigang"
+	dynasty = 9081003 #Li
+	culture = zhongyuan
+	religion = fuyin
+	2580.1.3 = {birth = yes}
+}
+1048603 = { #Yanling-Xuchang
+	name = "Yizhou"
+	dynasty = 9081004 #Ma
+	culture = zhongyuan
+	religion = mahayana
+	2580.1.3 = {birth = yes}
+}
+1048604 = { #Zhoukou
+	name = "Qingde"
+	dynasty = 9081005 #Wang
+	culture = zhongyuan
+	religion = fuyin
+	2580.1.3 = {birth = yes}
+}
+1048605 = { #Pingdingshan
+	name = "Yuan"
+	dynasty = 9081006 #Yu
+	culture = zhongyuan
+	religion = ruist
+	2580.1.3 = {birth = yes}
+}
+1048606 = { Pingdingshan
+	name = "Mingshan"
+	dynasty = 9081008 #Ai
+	culture = zhongyuan
+	religion = tianzhu
+	2580.1.3 = {birth = yes}
+}
 #Xu
 1048700 = { #Duke of Xuzhou
 	name = "Sen"
@@ -1934,7 +1969,14 @@
 	stewardship = 5
 	intrigue = 5
 	learning = 5
-	2580.1.3 = {birth = yes}
+	trait=fortune_builder
+	trait=administrator
+	trait=patient
+	trait=ambitious
+	trait=slothful
+	trait=selfish
+	disallow_random_traits=yes
+	2574.12.20 = {birth = yes}
 }
 1060004 = {
 	name = "Guangming"
@@ -1956,9 +1998,9 @@
 	2580.1.3 = {birth = yes}
 }
 ##Jiaodong##
-1060100 = {
+1060100 = { #King of Jiaodong
 	name = "Zhan"
-	dynasty = 9026026 #Guo
+	dynasty = 9026026 #Chen
 	culture = jiao_liao
 	religion = quanzhen
 	diplomacy = 5
@@ -1966,7 +2008,67 @@
 	stewardship = 5
 	intrigue = 5
 	learning = 5
-	2580.1.3 = {birth = yes}
+	trait=intricate_webweaver
+	trait=honorable
+	trait=chaste
+	trait=paranoid
+	trait=ambitious
+	disallow_random_traits=yes
+	2580.9.30 = {birth = yes}
+}
+1060101 = { #Duke of Qingdao
+	name = "Chenguang"
+	dynasty = 9026077 #Guo
+	culture = jiao_liao
+	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait=skilled_tactician
+	trait=honorable
+	trait=slothful
+	trait=authoritative
+	trait=charitable
+	disallow_random_traits=yes
+	2571.1.13 = {birth = yes}
+}
+1060102 = { #Duke of Dongyi
+	name = "Lin"
+	dynasty = 9026109 #Kong
+	culture = jiao_liao
+	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait=fortune_builder
+	trait=honorable
+	trait=shy
+	trait=chaste
+	trait=zealous
+	disallow_random_traits=yes
+	2576.8.23 = {birth = yes}
+}
+1060103 = { #Duke of Weihai
+	name = "Shen"
+	dynasty = 9026120 #Li
+	culture = jiao_liao
+	religion = quanzhen
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	trait=underhanded_rogue
+	trait=gregarious
+	trait=erudite
+	trait=authoritative
+	trait=charitable
+	disallow_random_traits=yes
+	2566.10.19 = {birth = yes}
 }
 
 #Qin
