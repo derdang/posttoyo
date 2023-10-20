@@ -648,6 +648,49 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	#Sufi School Traits
+	spriteType = {
+		name = "GFX_trait_bektashi"
+		texturefile = "gfx/traits/sufi_bektashi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_khalveti"
+		texturefile = "gfx/traits/sufi_khalveti.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_naqshbandi"
+		texturefile = "gfx/traits/sufi_naqshbandi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_qadiri"
+		texturefile = "gfx/traits/sufi_qadiri.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_tijani"
+		texturefile = "gfx/traits/sufi_tijani.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_shattari"
+		texturefile = "gfx/traits/sufi_shattari.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 #Hui Sufi Orders and Schools
 	
@@ -863,5 +906,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_change_madhab_hui"
 		texturefile = "gfx\\interface\\madhab_hui.dds"
+	}
+	spriteType = {
+		name = "GFX_delve_into_tasawwuf"
+		texturefile = "gfx\\interface\\delve_into_tasawwuf.dds"
 	}
 }

@@ -23,20 +23,48 @@ character_event = {
 	option = {
 		name = EVTOPTA_sufi_2
 		set_character_flag = sufi_martial
+		character_event = {id = sufi.3 days = 1 }
 	}
 	option = {
 		name = EVTOPTB_sufi_2
 		set_character_flag = sufi_music_poetry
-		if = {
-			limit = {
-				religion = hui
-			}
-			character_event = {id = sufi.4 }
+		trigger = {
+			religion = hui
 		}
+		character_event = {id = sufi.4 days = 1 }
 	}
 	option = {
 		name = EVTOPTC_sufi_2
 		set_character_flag = sufi_mysticism
+		character_event = {id = sufi.8 days = 1 }
+	}
+}
+
+character_event = {
+	id = sufi.3
+	desc = EVTDESC_sufi_3
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	trigger = {
+			has_character_flag = sufi_martial
+		}
+	
+	option = {
+		name = EVTOPTA_sufi_3
+		add_trait = shattari
+		clr_character_flag = sufi_martial
+	}
+	option = {
+		name = EVTOPTB_sufi_3
+		add_trait = qadiri
+		clr_character_flag = sufi_martial
+	}
+	option = {
+		name = EVTOPTC_sufi_3
+		add_trait = tijani
+		clr_character_flag = sufi_martial
 	}
 }
 
@@ -54,9 +82,55 @@ character_event = {
 	option = {
 		name = EVTOPTA_sufi_4
 		add_trait = khufiy
+		clr_character_flag = sufi_music_poetry
+		if = { #get additional benefits as a Xidaotang
+			limit = {
+				trait = xidaotang
+			}
+			piety = 200
+			learning = 2
+		}
 	}
 	option = {
 		name = EVTOPTB_sufi_4
 		add_trait = jahriy
+		clr_character_flag = sufi_music_poetry
+		if = { #get additional benefits as a Xidaotang
+			limit = {
+				trait = xidaotang
+			}
+			piety = 200
+			learning = 2
+		}
+	}
+}
+
+character_event = {
+	id = sufi.8
+	desc = EVTDESC_sufi_8
+	picture = GFX_evt_religious_exultation
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = sufi_mysticism
+	}
+	
+	option = {
+		name = EVTOPTA_sufi_8
+		piety = 100
+		add_trait = bektashi
+		clr_character_flag = sufi_mysticism
+	}
+	option = {
+		name = EVTOPTB_sufi_8
+		piety = 200
+		add_trait = naqshbandi
+		clr_character_flag = sufi_mysticism
+	}
+	option = { #anyone with this trait can do retreat and remove a sinful trait (decision)
+		name = EVTOPTC_sufi_8
+		add_trait = khalveti
+		clr_character_flag = sufi_mysticism
 	}
 }

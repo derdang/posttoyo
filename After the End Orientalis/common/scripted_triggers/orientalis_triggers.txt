@@ -9,8 +9,13 @@ is_vajrayana = {
 }
 is_salafi_religion = {
 	OR = {
-		religion = renewalist
 		religion = salafi
+	}
+}
+is_sunni = {
+	OR = {
+		religion = renewalist
+		religion = nusantara
 	}
 }
 is_theravada = {
