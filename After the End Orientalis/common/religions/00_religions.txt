@@ -876,8 +876,47 @@ muslim = {
 		graphical_culture = muslimgfx
 
 		icon = 9
+		heresy_icon = 9
 		
 		color = { 130 219 90 }
+		
+		scripture_name = THE_KORAN
+		priest_title = KYAI
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
+		
+		priests_can_marry = yes
+		psc_marriage = no
+		max_wives = 4
+		matrilineal_marriages = no
+		female_temple_holders = yes
+		
+		attacking_same_religion_piety_loss = yes
+		
+		intermarry = renewalist
+		intermarry = kebatinan
+		intermarry = pancasila
+		intermarry = hui
+		intermarry = buddhist_group
+		intermarry = indian_group
+	}
+	
+	kebatinan = {
+		graphical_culture = muslimgfx
+
+		icon = 9
+		heresy_icon = 9
+		
+		color = { 90 169 50 }
+		
+		parent=nusantara
 		
 		scripture_name = THE_KORAN
 		priest_title = KYAI
@@ -943,7 +982,6 @@ muslim = {
 		graphical_culture = muslimgfx
 
 		icon = 16
-		heresy_icon = 17
 		
 		interface_skin = { muslim_interface }
 		
