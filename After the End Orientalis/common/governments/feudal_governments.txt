@@ -108,6 +108,7 @@ feudal_governments = {
 				has_law = muslim_government_slider_2
 			}
 			NOT = { is_government_potential = malaysian_confederacy }
+			NOT = { is_government_potential = mandala_government }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = sinic_bureaucracy_government}
@@ -195,6 +196,8 @@ feudal_governments = {
 					}
 				}
 			}
+			NOT = { is_government_potential = malaysian_confederacy }
+			NOT = { is_government_potential = mandala_government }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = sinic_bureaucracy_government}
