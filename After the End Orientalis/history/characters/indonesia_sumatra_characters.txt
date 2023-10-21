@@ -1,0 +1,313 @@
+#Education Reference
+#
+#naive_appeaser
+#underhanded_rogue
+#charismatic_negotiator
+#grey_eminence
+#
+#misguided_warrior
+#tough_soldier
+#skilled_tactician
+#brilliant_strategist
+#
+#indulgent_wastrel
+#thrifty_clerk
+#fortune_builder
+#midas_touched
+#
+#amateurish_plotter
+#flamboyant_schemer
+#intricate_webweaver
+#elusive_shadow
+#
+#detached_priest
+#martial_cleric	
+#scholarly_theologian
+#mastermind_theologian
+#
+
+#1293 Javanese
+#1954 Kerinci
+#1955 Basemah
+#1956 Tionghua
+#1957 Melayu
+#1960 Acehnese
+#1961 Minang
+#1964 Batak
+#1965 Nias
+#1966 Mentawai
+#1967 Gayo
+#1968 Simelue
+#1969 Lampung
+#1970 Rejang
+
+### ACEH
+
+1960000 ={ # aceh king
+	name="Umar"
+	dynasty=1960007 # Zulkarnain
+	culture=acehnese
+	religion=renewalist
+	martial=5
+	diplomacy=2
+	intrigue=10
+	stewardship=15
+	learning=10
+	trait=stubborn
+	trait=just
+	father=1960001
+	mother=1960002
+	2570.8.12={birth=yes}
+}
+
+1960001 ={ # aceh late king
+	name="Iskandar"
+	dynasty=1960007 # Zulkarnain
+	culture=acehnese
+	religion=renewalist
+	2534.4.25={birth=yes}
+	2563.1.9={add_spouse=1960002}
+	2602.5.10={death=yes}
+}
+
+1960002 ={ # aceh queen
+	name="Jeumpa"
+	female=yes
+	culture=acehnese
+	religion=renewalist
+	2540.11.5={birth=yes}
+}
+
+1960003 ={ # aceh king's sister
+	name="Geumala"
+	dynasty=1960007 # Zulkarnain
+	female=yes
+	culture=acehnese
+	religion=renewalist
+	father=1960001
+	mother=1960002
+	2572.9.10={birth=yes}
+}
+
+1960004 ={ # aceh king's sister #2
+	name="Intan"
+	dynasty=1960007 # Zulkarnain
+	female=yes
+	culture=acehnese
+	religion=renewalist
+	father=1960001
+	mother=1960002
+	2579.12.5={birth=yes}
+}
+
+1960005 ={ # aceh king's sister #3
+	name="Putroë"
+	dynasty=1960007 # Zulkarnain
+	female=yes
+	culture=acehnese
+	religion=renewalist
+	father=1960001
+	mother=1960002
+	2590.5.15={birth=yes}
+}
+
+1960010 ={ # meulaboh count
+	name="Muhammad"
+	dynasty=1960008 # Hasan
+	martial=9
+	diplomacy=2
+	intrigue=5
+	stewardship=18
+	learning=10
+	culture=acehnese
+	religion=nusantara
+	trait=content
+	2666.5.27={birth=yes}
+}
+
+1960020 ={ # nagan raya count
+	name="Bentara"
+	dynasty=1960002 # Darul Kamal
+	martial=10
+	diplomacy=4
+	intrigue=9
+	stewardship=8
+	learning=15
+	culture=acehnese
+	religion=renewalist
+	trait=faqih
+	2658.9.7={birth=yes}
+}
+
+1960030 ={ # subussalam count
+	name="Fadhlullah"
+	dynasty=1960009 # Ampon
+	martial=9
+	diplomacy=12
+	intrigue=10
+	stewardship=6
+	learning=5
+	culture=acehnese
+	religion=renewalist
+	trait=stutter
+	2666.5.27={birth=yes}
+}
+
+
+1967000 ={ # gayo count
+	name="Karismanto"
+	dynasty=1967019 # Pereudeustee
+	martial=15
+	diplomacy=6
+	intrigue=8
+	stewardship=10
+	learning=7
+	culture=acehnese
+	religion=nusantara
+	trait=mystic
+	trait=hunter
+	2570.10.6={birth=yes}
+}
+
+1968000 ={ # simelue count
+	name="Mauluddin"
+	dynasty=1968002 # Teupah
+	martial=8
+	diplomacy=2
+	intrigue=2
+	stewardship=8
+	learning=7
+	culture=simeulue
+	religion=nusantara
+	trait=temperate
+	trait=arbitrary
+	2565.10.6={birth=yes}
+}
+
+# NORDSUMATRA
+
+1964000 ={ # batak king
+	name="Hasudungan"
+	dynasty=1964009 # Hutapea
+	martial=15
+	diplomacy=2
+	intrigue=9
+	stewardship=8
+	learning=10
+	culture=batak
+	religion=concordanist
+	2568.10.6={birth=yes}
+}
+
+1964010 ={ # simalungun duke
+	name="Agus"
+	dynasty=1964020 # Hasibuan
+	martial=16
+	diplomacy=12
+	intrigue=9
+	stewardship=5
+	learning=8
+	culture=batak
+	religion=concordanist
+	trait=brave
+	trait=stubborn
+	trait=duelist
+	2570.11.16={birth=yes}
+	2595.1.5={add_spouse=1964012}
+} 
+
+1964012 ={ # simalungun duke's wife
+	name="Yati"
+	female=yes
+	martial=1
+	diplomacy=4
+	intrigue=10
+	stewardship=5
+	learning=8
+	culture=javanese
+	religion=concordanist
+	trait=incapable
+	trait=lunatic
+	2578.1.16={birth=yes}
+}
+
+1293500 ={ # medan duke
+	name="Ganjar"
+	dynasty=1293031 # Adikusumo
+	martial=19
+	diplomacy=5
+	intrigue=12
+	stewardship=5
+	learning=8
+	culture=javanese
+	religion=nusantara
+	trait=content
+	trait=duelist
+	trait=aggressive_leader
+	2586.1.26={birth=yes}
+}
+
+1293510 ={ # labuanbatu duke
+	name="Bagas"
+	dynasty=1293024 # Pasir
+	martial=9
+	diplomacy=5
+	intrigue=8
+	stewardship=7
+	learning=8
+	culture=javanese
+	religion=nusantara
+	2575.7.5={birth=yes}
+}
+
+1293520 ={ # rokan duke
+	name="Pramoedya"
+	dynasty=1293037 # Kusumaataja
+	martial=10
+	diplomacy=6
+	intrigue=9
+	stewardship=5
+	learning=10
+	culture=javanese
+	religion=nusantara
+	2578.8.15={birth=yes}
+}
+
+1964020 ={ # mandailing duke
+	name="Luhut"
+	dynasty=1964024 # Nasution
+	martial=3
+	diplomacy=10
+	intrigue=12
+	stewardship=7
+	learning=5
+	culture=batak
+	religion=renewalist
+	2579.4.8={birth=yes}
+}
+
+1965020 ={ # nias duke
+	name="Hasatulo"
+	dynasty=1965014 # Zalukhu
+	martial=5
+	diplomacy=12
+	intrigue=6
+	stewardship=9
+	learning=5
+	culture=nias
+	religion=concordanist
+	2560.3.18={birth=yes}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

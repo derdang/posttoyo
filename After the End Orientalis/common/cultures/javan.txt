@@ -44,7 +44,7 @@ nusantaran = {
 			Dewi Diandra Diona Desi Dwi
 			Endah Estu Endang Emilia
 			Fadilah Farida Fathina Fahmawati Fitri
-			Gendhis Gayatri Gita Gandawati Galuh
+			Gendhis Gayatri Gita Gandawati GaNi Luh
 			Handayani Hardiyanti Hartinah Hayu Hemas Herrawati Harini Hapsari Hartini
 			Ika Ikawati Indria Indriani_Indriyani Iriana Indah Intan Iswara Imas
 			Jamila Jasmina Jayanti Jumiah Jumila Juwita
@@ -65,7 +65,7 @@ nusantaran = {
 		allow_looting = yes
 		modifier = default_culture_modifier
 		founder_named_dynasties = yes 
-		dukes_called_kings = yes
+		from_dynasty_suffix = an
 		
 		pat_grf_name_chance = 50
 		mat_grf_name_chance = 20
@@ -133,76 +133,7 @@ nusantaran = {
 		allow_looting = yes
 		modifier = default_culture_modifier
 		founder_named_dynasties = yes 
-		dukes_called_kings = yes
-		
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 20
-		father_name_chance = 15
-		
-		pat_grm_name_chance = 20
-		mat_grm_name_chance = 40
-		mother_name_chance = 5
-	}
-
-	jakartan = { # Betawi and other jakartanized ethnic groups
-		graphical_cultures = { javanesegfx }
-		alternate_start = {
-			OR = {
-				year >= 1100
-				has_alternate_start_parameter = { key = culture value = full_random }
-			}
-		}
-		color = { 0.9 0.6 0.15 }
-		male_names = {
-			Aan Abdul Abdullah Abu Achmad Adam Ade Adi Aditya Agung Agus Ahmad Aji Akbar Akhmad Al Albert Alfian Ali Amin Amir Andi Andre Andreas Andrew Andri Andry Andy Angga Anang Andika Ardi Ari Arief Arif Arifin Aris Ary Asep 
-			Bagus Bambang Bayu Benny Bong Budi Budiman 
-			Candra Catur Cecep Chandra 
-			Dadang Dani Daniel Deddy Dede Deden Dedi Dedy Deni Denny Deny Dicky Didi Didik Dimas Dodi Doni Donny 
-			Eddy Edi Edwin Edy Erwin 
-			Fahmi Faisal Fajar Fauzi Febri Feri Ferry Firdaus Firman Firmansyah 
-			Galih Gatot Gunawan Gusti 
-			Hadi Haji Hamdani Hamidah Hari Haris Harry Hasan Haryanto Hasanah Helmi Hendi Hendra Hendri Hendrik Hendro Hendry Heri Herman Hermanto Hermawan Herry Heru Hery Hidayat
-			Ibnu Ibrahim Iin Ilham Imam Iman Imas Imron Indra Iqbal Irfan Irwan Ismail Iskandar_Alexander Ita Ivan Iwan 
-			Jamaludin Jimmy Johan Johanes John Joko Joni Jumadi Junaedi 
-			Kevin Kiki Komarudin Kurnia Kurniawan Kusnadi 
-			Latifah Lukman 
-			Maman_Muhammad Mamat_Muhammad Mario Marlina Marni Martin Martini Mat Maulana May Michael Mulyadi Mulyani Mulyati Mulyono Munawaroh 
-			Nanang Nasir Nanda 
-			Panji Paulus Petrus Puji Purnomo Purwanto 
-			Rahmat Rama Rangga Rian Richard Ricky Ridwan Riki Rio Rizal Rizki Robby Robert Ronald Roni Ronny Rosidah Roy Rudi Rudy Rusdi Rusli Ryan 
-			Saiful Salim Samsudin Samuel Sandi Sandra Sandy Satria Septian Sherly Sigit Slamet Sofyan Soleh Solihin Steven Subur Sugeng Sugianto Sugiarti Sugiyanto Suhendra Suherman Sukardi Sulaeman Sumardi SumarnoSunardi Sunarti Sunarto Sunaryo Supardi Suparman Suparno Suprihatin Supriyadi Supriyanto SupriyatiSurya Suryadi Suryani Suryati Susanto Sutrisno Suwardi Suwarno Suyanto Syahrul Syaiful Syamsudin Syamsul Syarif Syarifudin 
-			Tan Tatang Taufik Teddy Teguh Tomi Toni Tony Toto 
-			Udin Ujang Umar 
-			Wahyu Wahyudi Wahyudin Wahyuni Wawan Widodo William Wisnu 
-			Yani Yanto Yogi Yohanes Yudha Yudi Yuli Yuliana Yuliani Yulianto Yulianti Yusuf Yusup 
-			Zaenal Zainal
-		}
-		female_names = {
-			Agnes Aisah Aisyah Ai Amelia Ami Aminah Aliyah Anita Anna Annisa Antonia Antonius Aulia Ayu Astuti Ati Atikah Aulia Ayu 
-			Cindy Citra 
-			Dahlia Desi Devi_Dewi Diah Dian Diana Dina Dini Dyah 
-			Elvita Eli_Elly Ema Emi Endah Endang Eni Erna Ernawati Erni Esti Eti Ety Euis Eva Evi Evita
-			Farida Faridah Fatimah Febri Ferry Fitri Fitria Fitriah Fitriyani 
-			Grace 
-			Halimah Hamidah Hani Haryati Hasanah Hayati Helmi Heni_Henny Herawati Herni Hesti Hilda 
-			Ida Iin Iis Ika Ima Imelda Ina Indah Indri Intan Ira Irawati Irene Irma Irvan Ita 
-			Jesika 
-			Kartika Kartini Kevin Komariah 
-			Latifah Leni Lenny Lestari Lia Liana Lilik Lilis Lily Lina Linda Lisa 
-			Maemunah Maesaroh Magdalena Maimunah Maisaroh Maria Mariana Marlina Marni Martha Martini Maryam Maryani Maryati Maulana May Maya Mega Megawati Mei Merry Mia Michael Mila Mimi Mimin Mira Mulyani Mulyati Munawaroh Murni 
-		    Nadia Nana Nani Natalia Neneng Neng Neni Nia Niken Nila Nina Nining Nita Nova Novi Novia Novita Nunung Nur Nuraeni Nuraini Nurhasanah Nurhayati Nurjanah Nurlaela_Nurlela Nurul Nuryani Nuryati 
-		    Patimah Puji Purnomo Purwanti Purwanto Putri 
-		    Rachmat Rahayu Rahmawati Rama Rangga Rani Ratih Ratna Reni Restu Retno Ria Riana Rika Riki Rina Rini Rio Ririn Riska Rita Rizka Rohana Rohani Romlah
-		    Sadiah Saidah Sandy Santi Sanusi Sarah Sari Sherly Shinta Siti Sopiah Suci Sugiarti Suharti Suhartini Sulastri Sumarni Sumarno Sumiati Suminah Sumini Sumirah Sumiyati Sunarti Suparmi Supriyati Surati Suratmi Suryani Suryati Susanti Susilawati_Susilowati Sutinah Sutini Suwarni Suwarti Suyanto Suyati 
-		    Teti Theresia Tina Tini Titi Titik Titin Tuti 
-		    Umi Umiyati
-		    Vera Viktoria Vivi
-		    Wahyu Wahyuningsih Wartini Wati Widya Winda Wiwi Wiwik Wiwin Wulan 
-		    Yan Yani Yanti Yati Yayah Yeni Yenni Yenny Yuni Yunita Yuyun
-		}
-		allow_looting = yes
-		modifier = default_culture_modifier
-		founder_named_dynasties = yes 
+		from_dynasty_suffix = an
 		
 		pat_grf_name_chance = 50
 		mat_grf_name_chance = 20
@@ -251,7 +182,7 @@ nusantaran = {
     		Devina Dewi Diah Dinda 
     		Elvy Endang Erni Eva
 		    Fatimah_Fatima 
-		    Galih Galuh 
+		    Galih GaNi Luh 
  		    Halimah Hani erfiza Heni
 		    Ida Idah Iim Iin Iis Ijah Ika Ikah Ilah Imas Ina Indah Intan Ipah Irma Isah Ita Iyan 
 		    Kania Kartini Kiki Komariah_Kokom 
@@ -270,7 +201,7 @@ nusantaran = {
 		founder_named_dynasties = yes 
 		allow_looting = yes
 		modifier = default_culture_modifier
-		dukes_called_kings = yes
+		from_dynasty_suffix = an
 		
 		pat_grf_name_chance = 50
 		mat_grf_name_chance = 20
@@ -281,7 +212,7 @@ nusantaran = {
 		mother_name_chance = 5
 	}
 
-	bantenese = {
+	bantenese = { # placeholder name, copypasted from
 		graphical_cultures = { javanesegfx }
 		alternate_start = {
 			OR = {
@@ -319,7 +250,7 @@ nusantaran = {
     		Devina Dewi Diah Dinda 
     		Elvy Endang Erni Eva
 		    Fatimah_Fatima 
-		    Galih Galuh 
+		    Galih GaNi Luh 
  		    Halimah Hani erfiza Heni
 		    Ida Idah Iim Iin Iis Ijah Ika Ikah Ilah Imas Ina Indah Intan Ipah Irma Isah Ita Iyan 
 		    Kania Kartini Kiki Komariah_Kokom 
@@ -338,7 +269,7 @@ nusantaran = {
 		founder_named_dynasties = yes 
 		allow_looting = yes
 		modifier = default_culture_modifier
-		dukes_called_kings = yes
+		from_dynasty_suffix = an
 		
 		pat_grf_name_chance = 50
 		mat_grf_name_chance = 20
@@ -346,7 +277,7 @@ nusantaran = {
 		
 		pat_grm_name_chance = 20
 		mat_grm_name_chance = 40
-		mother_name_chance = 5
+		mother_name_chance = 5 
 	}
 
 	balinese = {
@@ -357,60 +288,216 @@ nusantaran = {
 				has_alternate_start_parameter = { key = culture value = full_random }
 			}
 		}
-		color = { 0.3 0.4 0.1 }
+		color = { 0.95 0.8 0.45 }
+
+		# balinese name is complex, go look it on internet; actually recreating the format would need script
+
 		male_names = {
-			Agung Alit Andhika Anggungan Anglurah Anom Antara Ardhika Argawa Ariana Ariawan Artha Astawa 
-			Balawan Bandem Bangbang Baturenggong Bayu Beratha Budi Budjana Bukian 
-			Cantiasa Cawu 
-			Dian Dunia 
-			Gangga Geredeg Gianyar Gobiah 
-			Jelantik Jeruk Juni 
-			Kalanganyar Kedung Ketut Komang Kompyang Kresna 
-			Landra Layang Lempad Limbak 
-			Mahendra Manila Martha Maruti Masputra Masriadi Mendra Midhio 
-			Negara Nesa Ngendon Nginte Ngurah Nuarta 
-			Pacekan Pambahyun Pande Pasek Pastika Pedanda Perdana Perwira Putra 
-			Raharja Rai Rampih Rembang Rudana 
-			Sakti Samprangan Santoso Seganing Setiadi Sidemen Sidia Soki Suardana Suardika Subandi Sudihartawan Sugianyar Suharya Sukadana Sukarja Sukawati Sulaba Sulastra Sulendra Sumantara Sumertha Sunartha Suranta Suteja Sutha Suweca Swajaya 
-			Talabah Tampwagan Tisna Togog Trisnajaya 
-			Untung 
-			Wahyu Warmadewa Warsa Wiana Widana Wijaya Wim Winasa Windha Wirahadi Wirawan Wiswantanu 
-			Yudane 
+			"Gede Agung" "Gede Alit" "Gede Andhika" "Gede Anggungan" "Gede Anglurah" "Gede Anom" "Gede Antara" "Gede Ardhika" "Gede Argawa" "Gede Ariana" "Gede Ariawan" "Gede Artha" "Gede Astawa"
+			"Gede Balawan" "Gede Bandem" "Gede Bangbang" "Gede Baturenggong" "Gede Bayu" "Gede Beratha" "Gede Budi" "Gede Budjana" "Gede Bukian"
+			"Gede Cantiasa" "Gede Cawu"
+			"Gede Daru" "Gede Dian" "Gede Dunia"
+			"Gede Gangga" "Gede Geredeg" "Gede Gianyar" "Gede Gobiah"
+			"Gede Jelantik" "Gede Jeruk" "Gede Juni"
+			"Gede Kalanganyar" "Gede Kedung" "Gede Kendra" "Gede Ketut" "Gede Komang" "Gede Kompyang" "Gede Kresna"
+			"Gede Landra" "Gede Layang" "Gede Lempad" "Gede Limbak" 
+			"Gede Mahendra" "Gede Manila" "Gede Martha" "Gede Maruti" "Gede Masputra" "Gede Masriadi" "Gede Mendra" "Gede Midhio" 
+			"Gede Negara" "Gede Nesa" "Gede Ngendon" "Gede Nginte" "Gede Ngurah" "Gede Nuarta" "Gede Nyana"
+			"Gede Pacekan" "Gede Pambahyun" "Gede Pande" "Gede Pasek" "Gede Pastika" "Gede Pedanda" "Gede Perdana" "Gede Perwira" "Gede Putra"
+			"Gede Raharja" "Gede Rai" "Gede Rampih" "Gede Rembang" "Gede Rudana"
+			"Gede Sakti" "Gede Samprangan" "Gede Santoso" "Gede Seganing" "Gede Setiadi" "Gede Sidemen" "Gede Sidia" "Gede Soki" "Gede Suardana" "Gede Suardika" "Gede Subandi" "Gede Sudihartawan" "Gede Sugianyar" "Gede Suharya" "Gede Sukadana" "Gede Sukarja" "Gede Sukawati" "Gede Sulaba" "Gede Sulastra" "Gede Sulendra" "Gede Sumantara" "Gede Sumertha" "Gede Sunartha" "Gede Suranta" "Gede Suteja" "Gede Sutha" "Gede Suweca" "Gede Swajaya"
+			"Gede Talabah" "Gede Tampwagan" "Gede Tisna" "Gede Tresna" "Gede Togog" "Gede Trisnajaya" 
+			"Gede Untung"
+			"Gede Wahyu" "Gede Warmadewa" "Gede Warsa" "Gede Wiana" "Gede Widana" "Gede Wijaya" "Gede Wim" "Gede Winasa" "Gede Windha" "Gede Wirahadi" "Gede Wirawan" "Gede Wiswantanu" 
+			"Gede Yuda"
+
+			"Ketut Agung" "Ketut Alit" "Ketut Andhika" "Ketut Anggungan" "Ketut Anglurah" "Ketut Anom" "Ketut Antara" "Ketut Ardhika" "Ketut Argawa" "Ketut Ariana" "Ketut Ariawan" "Ketut Artha" "Ketut Astawa"
+			"Ketut Balawan" "Ketut Bandem" "Ketut Bangbang" "Ketut Baturenggong" "Ketut Bayu" "Ketut Beratha" "Ketut Budi" "Ketut Budjana" "Ketut Bukian"
+			"Ketut Cantiasa" "Ketut Cawu"
+			"Ketut Daru" "Ketut Dian" "Ketut Dunia"
+			"Ketut Gangga" "Ketut Geredeg" "Ketut Gianyar" "Ketut Gobiah"
+			"Ketut Jelantik" "Ketut Jeruk" "Ketut Juni"
+			"Ketut Kalanganyar" "Ketut Kedung" "Ketut Kendra" "Ketut Ketut" "Ketut Komang" "Ketut Kompyang" "Ketut Kresna"
+			"Ketut Landra" "Ketut Layang" "Ketut Lempad" "Ketut Limbak" 
+			"Ketut Mahendra" "Ketut Manila" "Ketut Martha" "Ketut Maruti" "Ketut Masputra" "Ketut Masriadi" "Ketut Mendra" "Ketut Midhio" 
+			"Ketut Negara" "Ketut Nesa" "Ketut Ngendon" "Ketut Nginte" "Ketut Ngurah" "Ketut Nuarta" "Ketut Nyana"
+			"Ketut Pacekan" "Ketut Pambahyun" "Ketut Pande" "Ketut Pasek" "Ketut Pastika" "Ketut Pedanda" "Ketut Perdana" "Ketut Perwira" "Ketut Putra"
+			"Ketut Raharja" "Ketut Rai" "Ketut Rampih" "Ketut Rembang" "Ketut Rudana"
+			"Ketut Sakti" "Ketut Samprangan" "Ketut Santoso" "Ketut Seganing" "Ketut Setiadi" "Ketut Sidemen" "Ketut Sidia" "Ketut Soki" "Ketut Suardana" "Ketut Suardika" "Ketut Subandi" "Ketut Sudihartawan" "Ketut Sugianyar" "Ketut Suharya" "Ketut Sukadana" "Ketut Sukarja" "Ketut Sukawati" "Ketut Sulaba" "Ketut Sulastra" "Ketut Sulendra" "Ketut Sumantara" "Ketut Sumertha" "Ketut Sunartha" "Ketut Suranta" "Ketut Suteja" "Ketut Sutha" "Ketut Suweca" "Ketut Swajaya"
+			"Ketut Talabah" "Ketut Tampwagan" "Ketut Tisna" "Ketut Tresna" "Ketut Togog" "Ketut Trisnajaya" 
+			"Ketut Untung"
+			"Ketut Wahyu" "Ketut WarKetutwa" "Ketut Warsa" "Ketut Wiana" "Ketut Widana" "Ketut Wijaya" "Ketut Wim" "Ketut Winasa" "Ketut Windha" "Ketut Wirahadi" "Ketut Wirawan" "Ketut Wiswantanu" 
+			"Ketut Yuda"
+
+			"Made Agung" "Made Alit" "Made Andhika" "Made Anggungan" "Made Anglurah" "Made Anom" "Made Antara" "Made Ardhika" "Made Argawa" "Made Ariana" "Made Ariawan" "Made Artha" "Made Astawa"
+			"Made Balawan" "Made Bandem" "Made Bangbang" "Made Baturenggong" "Made Bayu" "Made Beratha" "Made Budi" "Made Budjana" "Made Bukian"
+			"Made Cantiasa" "Made Cawu"
+			"Made Daru" "Made Dian" "Made Dunia"
+			"Made Gangga" "Made Geredeg" "Made Gianyar" "Made Gobiah"
+			"Made Jelantik" "Made Jeruk" "Made Juni"
+			"Made Kalanganyar" "Made Kedung" "Made Kendra" "Made Ketut" "Made Komang" "Made Kompyang" "Made Kresna"
+			"Made Landra" "Made Layang" "Made Lempad" "Made Limbak" 
+			"Made Mahendra" "Made Manila" "Made Martha" "Made Maruti" "Made Masputra" "Made Masriadi" "Made Mendra" "Made Midhio" 
+			"Made Negara" "Made Nesa" "Made Ngendon" "Made Nginte" "Made Ngurah" "Made Nuarta" "Made Nyana"
+			"Made Pacekan" "Made Pambahyun" "Made Pande" "Made Pasek" "Made Pastika" "Made Pedanda" "Made Perdana" "Made Perwira" "Made Putra"
+			"Made Raharja" "Made Rai" "Made Rampih" "Made Rembang" "Made Rudana"
+			"Made Sakti" "Made Samprangan" "Made Santoso" "Made Seganing" "Made Setiadi" "Made Sidemen" "Made Sidia" "Made Soki" "Made Suardana" "Made Suardika" "Made Subandi" "Made Sudihartawan" "Made Sugianyar" "Made Suharya" "Made Sukadana" "Made Sukarja" "Made Sukawati" "Made Sulaba" "Made Sulastra" "Made Sulendra" "Made Sumantara" "Made Sumertha" "Made Sunartha" "Made Suranta" "Made Suteja" "Made Sutha" "Made Suweca" "Made Swajaya"
+			"Made Talabah" "Made Tampwagan" "Made Tisna" "Made Tresna" "Made Togog" "Made Trisnajaya" 
+			"Made Untung"
+			"Made Wahyu" "Made Warmadewa" "Made Warsa" "Made Wiana" "Made Widana" "Made Wijaya" "Made Wim" "Made Winasa" "Made Windha" "Made Wirahadi" "Made Wirawan" "Made Wiswantanu" 
+			"Made Yuda"
+
+			"Nyoman Agung" "Nyoman Alit" "Nyoman Andhika" "Nyoman Anggungan" "Nyoman Anglurah" "Nyoman Anom" "Nyoman Antara" "Nyoman Ardhika" "Nyoman Argawa" "Nyoman Ariana" "Nyoman Ariawan" "Nyoman Artha" "Nyoman Astawa"
+			"Nyoman Balawan" "Nyoman Bandem" "Nyoman Bangbang" "Nyoman Baturenggong" "Nyoman Bayu" "Nyoman Beratha" "Nyoman Budi" "Nyoman Budjana" "Nyoman Bukian"
+			"Nyoman Cantiasa" "Nyoman Cawu"
+			"Nyoman Daru" "Nyoman Dian" "Nyoman Dunia"
+			"Nyoman Gangga" "Nyoman Geredeg" "Nyoman Gianyar" "Nyoman Gobiah"
+			"Nyoman Jelantik" "Nyoman Jeruk" "Nyoman Juni"
+			"Nyoman Kalanganyar" "Nyoman Kedung" "Nyoman Kendra" "Nyoman Ketut" "Nyoman Komang" "Nyoman Kompyang" "Nyoman Kresna"
+			"Nyoman Landra" "Nyoman Layang" "Nyoman Lempad" "Nyoman Limbak" 
+			"Nyoman Mahendra" "Nyoman Manila" "Nyoman Martha" "Nyoman Maruti" "Nyoman Masputra" "Nyoman Masriadi" "Nyoman Mendra" "Nyoman Midhio" 
+			"Nyoman Negara" "Nyoman Nesa" "Nyoman Ngendon" "Nyoman Nginte" "Nyoman Ngurah" "Nyoman Nuarta" "Nyoman Nyana"
+			"Nyoman Pacekan" "Nyoman Pambahyun" "Nyoman Pande" "Nyoman Pasek" "Nyoman Pastika" "Nyoman Pedanda" "Nyoman Perdana" "Nyoman Perwira" "Nyoman Putra"
+			"Nyoman Raharja" "Nyoman Rai" "Nyoman Rampih" "Nyoman Rembang" "Nyoman Rudana"
+			"Nyoman Sakti" "Nyoman Samprangan" "Nyoman Santoso" "Nyoman Seganing" "Nyoman Setiadi" "Nyoman Sidemen" "Nyoman Sidia" "Nyoman Soki" "Nyoman Suardana" "Nyoman Suardika" "Nyoman Subandi" "Nyoman Sudihartawan" "Nyoman Sugianyar" "Nyoman Suharya" "Nyoman Sukadana" "Nyoman Sukarja" "Nyoman Sukawati" "Nyoman Sulaba" "Nyoman Sulastra" "Nyoman Sulendra" "Nyoman Sumantara" "Nyoman Sumertha" "Nyoman Sunartha" "Nyoman Suranta" "Nyoman Suteja" "Nyoman Sutha" "Nyoman Suweca" "Nyoman Swajaya"
+			"Nyoman Talabah" "Nyoman Tampwagan" "Nyoman Tisna" "Nyoman Tresna" "Nyoman Togog" "Nyoman Trisnajaya" 
+			"Nyoman Untung"
+			"Nyoman Wahyu" "Nyoman WarNyomanwa" "Nyoman Warsa" "Nyoman Wiana" "Nyoman Widana" "Nyoman Wijaya" "Nyoman Wim" "Nyoman Winasa" "Nyoman Windha" "Nyoman Wirahadi" "Nyoman Wirawan" "Nyoman Wiswantanu" 
+			"Nyoman Yuda"
+
+			"Putu Agung" "Putu Alit" "Putu Andhika" "Putu Anggungan" "Putu Anglurah" "Putu Anom" "Putu Antara" "Putu Ardhika" "Putu Argawa" "Putu Ariana" "Putu Ariawan" "Putu Artha" "Putu Astawa"
+			"Putu Balawan" "Putu Bandem" "Putu Bangbang" "Putu Baturenggong" "Putu Bayu" "Putu Beratha" "Putu Budi" "Putu Budjana" "Putu Bukian"
+			"Putu Cantiasa" "Putu Cawu"
+			"Putu Daru" "Putu Dian" "Putu Dunia"
+			"Putu Gangga" "Putu Geredeg" "Putu Gianyar" "Putu Gobiah"
+			"Putu Jelantik" "Putu Jeruk" "Putu Juni"
+			"Putu Kalanganyar" "Putu Kedung" "Putu Kendra" "Putu Ketut" "Putu Komang" "Putu Kompyang" "Putu Kresna"
+			"Putu Landra" "Putu Layang" "Putu Lempad" "Putu Limbak" 
+			"Putu Mahendra" "Putu Manila" "Putu Martha" "Putu Maruti" "Putu Masputra" "Putu Masriadi" "Putu Mendra" "Putu Midhio" 
+			"Putu Negara" "Putu Nesa" "Putu Ngendon" "Putu Nginte" "Putu Ngurah" "Putu Nuarta" "Putu Nyana"
+			"Putu Pacekan" "Putu Pambahyun" "Putu Pande" "Putu Pasek" "Putu Pastika" "Putu Pedanda" "Putu Perdana" "Putu Perwira" "Putu Putra"
+			"Putu Raharja" "Putu Rai" "Putu Rampih" "Putu Rembang" "Putu Rudana"
+			"Putu Sakti" "Putu Samprangan" "Putu Santoso" "Putu Seganing" "Putu Setiadi" "Putu Sidemen" "Putu Sidia" "Putu Soki" "Putu Suardana" "Putu Suardika" "Putu Subandi" "Putu Sudihartawan" "Putu Sugianyar" "Putu Suharya" "Putu Sukadana" "Putu Sukarja" "Putu Sukawati" "Putu Sulaba" "Putu Sulastra" "Putu Sulendra" "Putu Sumantara" "Putu Sumertha" "Putu Sunartha" "Putu Suranta" "Putu Suteja" "Putu Sutha" "Putu Suweca" "Putu Swajaya"
+			"Putu Talabah" "Putu Tampwagan" "Putu Tisna" "Putu Tresna" "Putu Togog" "Putu Trisnajaya" 
+			"Putu Untung"
+			"Putu Wahyu" "Putu Warmadewa" "Putu Warsa" "Putu Wiana" "Putu Widana" "Putu Wijaya" "Putu Wim" "Putu Winasa" "Putu Windha" "Putu Wirahadi" "Putu Wirawan" "Putu Wiswantanu" 
+			"Putu Yuda"
+
+			"Wayan Agung" "Wayan Alit" "Wayan Andhika" "Wayan Anggungan" "Wayan Anglurah" "Wayan Anom" "Wayan Antara" "Wayan Ardhika" "Wayan Argawa" "Wayan Ariana" "Wayan Ariawan" "Wayan Artha" "Wayan Astawa"
+			"Wayan Balawan" "Wayan Bandem" "Wayan Bangbang" "Wayan Baturenggong" "Wayan Bayu" "Wayan Beratha" "Wayan Budi" "Wayan Budjana" "Wayan Bukian"
+			"Wayan Cantiasa" "Wayan Cawu"
+			"Wayan Daru" "Wayan Dian" "Wayan Dunia"
+			"Wayan Gangga" "Wayan Geredeg" "Wayan Gianyar" "Wayan Gobiah"
+			"Wayan Jelantik" "Wayan Jeruk" "Wayan Juni"
+			"Wayan Kalanganyar" "Wayan Kedung" "Wayan Kendra" "Wayan Ketut" "Wayan Komang" "Wayan Kompyang" "Wayan Kresna"
+			"Wayan Landra" "Wayan Layang" "Wayan Lempad" "Wayan Limbak" 
+			"Wayan Mahendra" "Wayan Manila" "Wayan Martha" "Wayan Maruti" "Wayan Masputra" "Wayan Masriadi" "Wayan Mendra" "Wayan Midhio" 
+			"Wayan Negara" "Wayan Nesa" "Wayan Ngendon" "Wayan Nginte" "Wayan Ngurah" "Wayan Nuarta" "Wayan Nyana"
+			"Wayan Pacekan" "Wayan Pambahyun" "Wayan Pande" "Wayan Pasek" "Wayan Pastika" "Wayan Pedanda" "Wayan Perdana" "Wayan Perwira" "Wayan Putra"
+			"Wayan Raharja" "Wayan Rai" "Wayan Rampih" "Wayan Rembang" "Wayan Rudana"
+			"Wayan Sakti" "Wayan Samprangan" "Wayan Santoso" "Wayan Seganing" "Wayan Setiadi" "Wayan Sidemen" "Wayan Sidia" "Wayan Soki" "Wayan Suardana" "Wayan Suardika" "Wayan Subandi" "Wayan Sudihartawan" "Wayan Sugianyar" "Wayan Suharya" "Wayan Sukadana" "Wayan Sukarja" "Wayan Sukawati" "Wayan Sulaba" "Wayan Sulastra" "Wayan Sulendra" "Wayan Sumantara" "Wayan Sumertha" "Wayan Sunartha" "Wayan Suranta" "Wayan Suteja" "Wayan Sutha" "Wayan Suweca" "Wayan Swajaya"
+			"Wayan Talabah" "Wayan Tampwagan" "Wayan Tisna" "Wayan Tresna" "Wayan Togog" "Wayan Trisnajaya" 
+			"Wayan Untung"
+			"Wayan Wahyu" "Wayan Warmadewa" "Wayan Warsa" "Wayan Wiana" "Wayan Widana" "Wayan Wijaya" "Wayan Wim" "Wayan Winasa" "Wayan Windha" "Wayan Wirahadi" "Wayan Wirawan" "Wayan Wiswantanu" 
+			"Wayan Yuda"
 		}
 		female_names = {
-			Adnya Adnyani Amandari Ariani Arini Ariastini Atmi 
-			Bulan Bulantrisna 
-			Cahyani Chandra Ciptasari 
-			Desi Devi Dewi Dhinda Diandri Dwijayanti 
-			Eka Ening Erviani 
-			Faradynawati 
-			Galuh Ginanti Giri 
-			Istarani 
-			Jelantik 
-			Kurniani Kurniati 
-			Laskmi Laksmiyani 
-			Mahadewi Maharani Mahaswi Melati Mertaniasih Muriati Murniasih 
-			Natih Nurining Nyoman 
-			Pacekan Padmadewi Peling Pemayun Pitriyani Prami Pratiwi Pupuh Purnama Purnamawati Purwani Puspaningsih Putri 
-			Ramayanti 
-			Sani Sari Sawitri Selat Sinta Suasti Suciarmi Suntri Supari Supasti Supini Suriati Suryani Syahrini 
-			Tangkeban Tanjung Trisnasari 
-			Vania 
-			Wahyuni Wardani Warini Warti Westny Widani Widanti Widiasih Widiastuti Wiryastuti 
-			Yeni Yuliani Yuniarti Yuniawati 
+			"Ni Luh Adnya" "Ni Luh Adnyani" "Ni Luh Amandari" "Ni Luh Ariani" "Ni Luh Arini" "Ni Luh Ariastini" "Ni Luh Atmi" "Ni Luh Ayu"
+			"Ni Luh Bulan" "Ni Luh Bulantrisna"
+			"Ni Luh Cahyani" "Ni Luh Chandra" "Ni Luh Ciptasari" 
+			"Ni Luh Desi" "Ni Luh Devi" "Ni Luh Dewi" "Ni Luh Dhinda" "Ni Luh Diandri" "Ni Luh Dwijayanti" "Ni Luh 
+			"Ni Luh Eka" "Ni Luh Ening" "Ni Luh Erviani"
+			"Ni Luh Faradynawati" 
+			"Ni Luh GaNi Luh" "Ni Luh Ginanti" "Ni Luh Giri" 
+			"Ni Luh Istarani" 
+			"Ni Luh Jelantik" 
+			"Ni Luh Kurniani" "Ni Luh Kurniati"
+			"Ni Luh Laskmi" "Ni Luh Laksmiyani" 
+			"Ni Luh Mahadewi" "Ni Luh Maharani" "Ni Luh Mahaswi" "Ni Luh Melati" "Ni Luh Mertaniasih" "Ni Luh Muriati" "Ni Luh Murniasih"
+			"Ni Luh Natih" "Ni Luh Nurining" "Ni Luh Nyoman" 
+			"Ni Luh Pacekan" "Ni Luh Padmadewi" "Ni Luh Peling" "Ni Luh Pemayun" "Ni Luh Pitriyani" "Ni Luh Prami" "Ni Luh Pratiwi" "Ni Luh Pupuh" "Ni Luh Purnama" "Ni Luh Purnamawati" "Ni Luh Purwani" "Ni Luh Puspaningsih" "Ni Luh Putri"
+			"Ni Luh Ramayanti"
+			"Ni Luh Sani" "Ni Luh Sari" "Ni Luh Sawitri" "Ni Luh Selat" "Ni Luh Sinta" "Ni Luh Suasti" "Ni Luh Suciarmi" "Ni Luh Suntri" "Ni Luh Supari" "Ni Luh Supasti" "Ni Luh Supini" "Ni Luh Suriati" "Ni Luh Suryani" "Ni Luh Syahrini"
+			"Ni Luh Tangkeban" "Ni Luh Tanjung" "Ni Luh Trisnasari"
+			"Ni Luh Vania"
+			"Ni Luh Wahyuni" "Ni Luh Wardani" "Ni Luh Warini" "Ni Luh Warti" "Ni Luh Westny" "Ni Luh Widani" "Ni Luh Widanti" "Ni Luh Widiasih" "Ni Luh Widiastuti" "Ni Luh Wiryastuti"
+			"Ni Luh Yeni" "Ni Luh Yuliani" "Ni Luh Yuniarti" "Ni Luh Yuniawati"
+
+			"Ni Made Adnya" "Ni Made Adnyani" "Ni Made Amandari" "Ni Made Ariani" "Ni Made Arini" "Ni Made Ariastini" "Ni Made Atmi" "Ni Made Ayu"
+			"Ni Made Bulan" "Ni Made Bulantrisna"
+			"Ni Made Cahyani" "Ni Made Chandra" "Ni Made Ciptasari" 
+			"Ni Made Desi" "Ni Made Devi" "Ni Made Dewi" "Ni Made Dhinda" "Ni Made Diandri" "Ni Made Dwijayanti" "Ni Made 
+			"Ni Made Eka" "Ni Made Ening" "Ni Made Erviani"
+			"Ni Made Faradynawati" 
+			"Ni Made GaNi Made" "Ni Made Ginanti" "Ni Made Giri" 
+			"Ni Made Istarani" 
+			"Ni Made Jelantik" 
+			"Ni Made Kurniani" "Ni Made Kurniati"
+			"Ni Made Laskmi" "Ni Made Laksmiyani" 
+			"Ni Made Mahadewi" "Ni Made Maharani" "Ni Made Mahaswi" "Ni Made Melati" "Ni Made Mertaniasih" "Ni Made Muriati" "Ni Made Murniasih"
+			"Ni Made Natih" "Ni Made Nurining" "Ni Made Nyoman" 
+			"Ni Made Pacekan" "Ni Made PadNi Madewi" "Ni Made Peling" "Ni Made Pemayun" "Ni Made Pitriyani" "Ni Made Prami" "Ni Made Pratiwi" "Ni Made Pupuh" "Ni Made Purnama" "Ni Made Purnamawati" "Ni Made Purwani" "Ni Made Puspaningsih" "Ni Made Putri"
+			"Ni Made Ramayanti"
+			"Ni Made Sani" "Ni Made Sari" "Ni Made Sawitri" "Ni Made Selat" "Ni Made Sinta" "Ni Made Suasti" "Ni Made Suciarmi" "Ni Made Suntri" "Ni Made Supari" "Ni Made Supasti" "Ni Made Supini" "Ni Made Suriati" "Ni Made Suryani" "Ni Made Syahrini"
+			"Ni Made Tangkeban" "Ni Made Tanjung" "Ni Made Trisnasari"
+			"Ni Made Vania"
+			"Ni Made Wahyuni" "Ni Made Wardani" "Ni Made Warini" "Ni Made Warti" "Ni Made Westny" "Ni Made Widani" "Ni Made Widanti" "Ni Made Widiasih" "Ni Made Widiastuti" "Ni Made Wiryastuti"
+			"Ni Made Yeni" "Ni Made Yuliani" "Ni Made Yuniarti" "Ni Made Yuniawati"
+
+			"Ni Nyoman Adnya" "Ni Nyoman Adnyani" "Ni Nyoman Amandari" "Ni Nyoman Ariani" "Ni Nyoman Arini" "Ni Nyoman Ariastini" "Ni Nyoman Atmi" "Ni Nyoman Ayu"
+			"Ni Nyoman Bulan" "Ni Nyoman Bulantrisna"
+			"Ni Nyoman Cahyani" "Ni Nyoman Chandra" "Ni Nyoman Ciptasari" 
+			"Ni Nyoman Desi" "Ni Nyoman Devi" "Ni Nyoman Dewi" "Ni Nyoman Dhinda" "Ni Nyoman Diandri" "Ni Nyoman Dwijayanti" "Ni Nyoman 
+			"Ni Nyoman Eka" "Ni Nyoman Ening" "Ni Nyoman Erviani"
+			"Ni Nyoman Faradynawati" 
+			"Ni Nyoman GaNi Nyoman" "Ni Nyoman Ginanti" "Ni Nyoman Giri" 
+			"Ni Nyoman Istarani" 
+			"Ni Nyoman Jelantik" 
+			"Ni Nyoman Kurniani" "Ni Nyoman Kurniati"
+			"Ni Nyoman Laskmi" "Ni Nyoman Laksmiyani" 
+			"Ni Nyoman Mahadewi" "Ni Nyoman Maharani" "Ni Nyoman Mahaswi" "Ni Nyoman Melati" "Ni Nyoman Mertaniasih" "Ni Nyoman Muriati" "Ni Nyoman Murniasih"
+			"Ni Nyoman Natih" "Ni Nyoman Nurining" "Ni Nyoman Nyoman" 
+			"Ni Nyoman Pacekan" "Ni Nyoman PadNi Nyomanwi" "Ni Nyoman Peling" "Ni Nyoman Pemayun" "Ni Nyoman Pitriyani" "Ni Nyoman Prami" "Ni Nyoman Pratiwi" "Ni Nyoman Pupuh" "Ni Nyoman Purnama" "Ni Nyoman Purnamawati" "Ni Nyoman Purwani" "Ni Nyoman Puspaningsih" "Ni Nyoman Putri"
+			"Ni Nyoman Ramayanti"
+			"Ni Nyoman Sani" "Ni Nyoman Sari" "Ni Nyoman Sawitri" "Ni Nyoman Selat" "Ni Nyoman Sinta" "Ni Nyoman Suasti" "Ni Nyoman Suciarmi" "Ni Nyoman Suntri" "Ni Nyoman Supari" "Ni Nyoman Supasti" "Ni Nyoman Supini" "Ni Nyoman Suriati" "Ni Nyoman Suryani" "Ni Nyoman Syahrini"
+			"Ni Nyoman Tangkeban" "Ni Nyoman Tanjung" "Ni Nyoman Trisnasari"
+			"Ni Nyoman Vania"
+			"Ni Nyoman Wahyuni" "Ni Nyoman Wardani" "Ni Nyoman Warini" "Ni Nyoman Warti" "Ni Nyoman Westny" "Ni Nyoman Widani" "Ni Nyoman Widanti" "Ni Nyoman Widiasih" "Ni Nyoman Widiastuti" "Ni Nyoman Wiryastuti"
+			"Ni Nyoman Yeni" "Ni Nyoman Yuliani" "Ni Nyoman Yuniarti" "Ni Nyoman Yuniawati"
+
+			"Ni Ketut Adnya" "Ni Ketut Adnyani" "Ni Ketut Amandari" "Ni Ketut Ariani" "Ni Ketut Arini" "Ni Ketut Ariastini" "Ni Ketut Atmi" "Ni Ketut Ayu"
+			"Ni Ketut Bulan" "Ni Ketut Bulantrisna"
+			"Ni Ketut Cahyani" "Ni Ketut Chandra" "Ni Ketut Ciptasari" 
+			"Ni Ketut Desi" "Ni Ketut Devi" "Ni Ketut Dewi" "Ni Ketut Dhinda" "Ni Ketut Diandri" "Ni Ketut Dwijayanti" "Ni Ketut 
+			"Ni Ketut Eka" "Ni Ketut Ening" "Ni Ketut Erviani"
+			"Ni Ketut Faradynawati" 
+			"Ni Ketut GaNi Ketut" "Ni Ketut Ginanti" "Ni Ketut Giri" 
+			"Ni Ketut Istarani" 
+			"Ni Ketut Jelantik" 
+			"Ni Ketut Kurniani" "Ni Ketut Kurniati"
+			"Ni Ketut Laskmi" "Ni Ketut Laksmiyani" 
+			"Ni Ketut Mahadewi" "Ni Ketut Maharani" "Ni Ketut Mahaswi" "Ni Ketut Melati" "Ni Ketut Mertaniasih" "Ni Ketut Muriati" "Ni Ketut Murniasih"
+			"Ni Ketut Natih" "Ni Ketut Nurining" "Ni Ketut Ketut" 
+			"Ni Ketut Pacekan" "Ni Ketut PadNi Ketutwi" "Ni Ketut Peling" "Ni Ketut Pemayun" "Ni Ketut Pitriyani" "Ni Ketut Prami" "Ni Ketut Pratiwi" "Ni Ketut Pupuh" "Ni Ketut Purnama" "Ni Ketut Purnamawati" "Ni Ketut Purwani" "Ni Ketut Puspaningsih" "Ni Ketut Putri"
+			"Ni Ketut Ramayanti"
+			"Ni Ketut Sani" "Ni Ketut Sari" "Ni Ketut Sawitri" "Ni Ketut Selat" "Ni Ketut Sinta" "Ni Ketut Suasti" "Ni Ketut Suciarmi" "Ni Ketut Suntri" "Ni Ketut Supari" "Ni Ketut Supasti" "Ni Ketut Supini" "Ni Ketut Suriati" "Ni Ketut Suryani" "Ni Ketut Syahrini"
+			"Ni Ketut Tangkeban" "Ni Ketut Tanjung" "Ni Ketut Trisnasari"
+			"Ni Ketut Vania"
+			"Ni Ketut Wahyuni" "Ni Ketut Wardani" "Ni Ketut Warini" "Ni Ketut Warti" "Ni Ketut Westny" "Ni Ketut Widani" "Ni Ketut Widanti" "Ni Ketut Widiasih" "Ni Ketut Widiastuti" "Ni Ketut Wiryastuti"
+			"Ni Ketut Yeni" "Ni Ketut Yuliani" "Ni Ketut Yuniarti" "Ni Ketut Yuniawati"
 		}
-		founder_named_dynasties = yes
 		allow_looting = yes
 		modifier = default_culture_modifier
+		dynasty_name_first = yes
 		dukes_called_kings = yes
 		
-		pat_grf_name_chance = 50
-		mat_grf_name_chance = 20
-		father_name_chance = 15
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
 		
-		pat_grm_name_chance = 20
-		mat_grm_name_chance = 40
-		mother_name_chance = 5
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
 	}
 
 	sasak_sumbawa = { # renamed Sasambo until I can be arsed to split it
@@ -449,7 +536,7 @@ nusantaran = {
 			Ahla Amaliah Aulia 
 			Danar Dhamayanti 
 			Fadliana Fatima Ferra 
-			Galuh 
+			GaNi Luh 
 			Handayani Hilda 
 			Indah 
 			Khairatun 
@@ -464,6 +551,7 @@ nusantaran = {
 		allow_looting = yes
 		modifier = default_culture_modifier
 		dukes_called_kings = yes
+
 		
 		pat_grf_name_chance = 50
 		mat_grf_name_chance = 20

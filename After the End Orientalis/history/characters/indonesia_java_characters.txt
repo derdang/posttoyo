@@ -25,9 +25,14 @@
 #scholarly_theologian
 #mastermind_theologian
 #
+# 1956 Tionghua
 # 1293 Javanese
 # 1294 Madurese
 # 1295 Sundanese
+# 1296 Jakartan
+# 1297 Bantenese
+# 1298 Balinese
+# 1299 Sasombo
 
 1293000 ={ # teresa's father
 	name="William"
@@ -53,7 +58,6 @@
 	trait=patient
 	trait=poet
 	trait=greedy
-	trait=nusantara_traditionalist
 	father=1293004
 	mother=1293005
 	2572.1.9={birth=yes}
@@ -81,7 +85,6 @@
 	learning=12
 	culture=tionghoa
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=honest
 	trait=cynical
 	trait=feeble
@@ -99,7 +102,6 @@
 	religion=nusantara
 	trait=familyperson
 	trait=diligent
-	trait=nusantara_traditionalist
 	2547.6.1={birth=yes}
 	2572.3.9={add_spouse=1293005}
 	2596.12.1={death=yes}
@@ -110,7 +112,6 @@
 	female=yes
 	culture=javanese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=erudite
 	trait=humble
 	trait=socializer
@@ -128,7 +129,6 @@
 	learning=12
 	culture=javanese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=erudite
 	trait=groomed
 	trait=lefthanded
@@ -235,7 +235,6 @@
 	learning=10
 	culture=javanese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=content
 	trait=slothful
 	2567.9.30={birth=yes}
@@ -252,7 +251,6 @@
 	learning=12
 	culture=madurese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=lustful
 	trait=mystic
 	trait=sturdy
@@ -267,7 +265,6 @@
 	religion=nusantara
 	father=1293025
 	mother=1293026
-	trait=nusantara_traditionalist
 	2591.10.30={birth=yes}
 }
 
@@ -279,7 +276,6 @@
 	religion=nusantara
 	father=1293025
 	mother=1293026
-	trait=nusantara_traditionalist
 	2593.2.14={birth=yes}
 }
 
@@ -290,7 +286,6 @@
 	religion=nusantara
 	father=1293025
 	mother=1293026
-	trait=nusantara_traditionalist
 	2597.7.10={birth=yes}
 }
 
@@ -302,7 +297,6 @@
 	religion=nusantara
 	father=1293025
 	mother=1293026
-	trait=nusantara_traditionalist
 	2600.7.10={birth=yes}
 }
 
@@ -314,7 +308,6 @@
 	religion=nusantara
 	father=1293025
 	mother=1293026
-	trait=nusantara_traditionalist
 	2604.7.10={birth=yes}
 }
 
@@ -432,7 +425,6 @@
 	learning=9
 	culture=javanese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=trusting
 	trait=brave
 	2580.6.9={birth=yes}
@@ -494,6 +486,14 @@
 	2578.6.9={birth=yes}
 }
 
+1293141 ={ # Holder of the NU
+	name="Taufan"
+	culture=javanese
+	religion=nusantara
+	2578.6.9={birth=yes}
+}
+
+
 1294000 ={ # duke of madura
 	name="Dullah"
 	dynasty = 1294001 # Syamsuddin
@@ -504,7 +504,6 @@
 	learning=8
 	culture=madurese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=ambitious
 	trait=authoritative
 	trait=crippled
@@ -517,7 +516,6 @@
 	female=yes
 	culture=madurese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=honorable
 	trait=humble
 	trait=bisexual
@@ -535,7 +533,6 @@
 	intrigue=6
 	stewardship=13
 	learning=4
-	trait=nusantara_traditionalist
 	trait=gregarious
 	trait=trusting
 	father=1294000
@@ -554,7 +551,6 @@
 	intrigue=10
 	stewardship=3
 	learning=14
-	trait=nusantara_traditionalist
 	trait=shy
 	trait=content
 	trait=kind
@@ -569,7 +565,6 @@
 	female=yes
 	culture=madurese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	father=1294000
 	mother=1294001
 	2592.3.1={birth=yes}
@@ -585,7 +580,6 @@
 	learning=5
 	culture=madurese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=seducer
 	trait=gregarious
 	trait=organizer
@@ -603,7 +597,6 @@
 	learning=17
 	culture=madurese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=blinded_age
 	trait=administrator
 	trait=trickster
@@ -620,7 +613,6 @@
 	female=yes
 	culture=madurese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=uncouth
 	trait=genius
 	trait=depressed
@@ -637,7 +629,6 @@
 	learning=4
 	culture=madurese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=drunkard
 	trait=stutter
 	trait=robust
@@ -658,7 +649,6 @@
 	learning=5
 	culture=madurese
 	religion=nusantara
-	trait=nusantara_traditionalist
 	trait=gardener
 	trait=chaste
 	trait=stubborn
@@ -720,6 +710,206 @@
 	religion=pancasila
 	2576.2.12={birth=yes}
 }
+
+# NUSA TENGGARA
+
+1298000 ={ # balinese's king
+	name="Gede Pastika"
+	dynasty = 1298007 # Dewa Agung
+	martial=7
+	diplomacy=12
+	intrigue=12
+	stewardship=20
+	learning=2
+	culture=balinese
+	religion=tirthaist
+	2540.2.12={birth=yes}
+	2565.4.12={add_spouse=1298001}
+}
+
+1298001 ={ # balinese's queen
+	name="Ni Made Mahadewi"
+	female=yes
+	dynasty = 1298002 # Anak Agung
+	culture=balinese
+	religion=tirthaist
+	father=1298009
+	mother=1298010
+	2559.2.12={birth=yes}
+}
+
+1298002 ={ # balinese's prince
+	name="Gede Warmadewa"
+	dynasty =  1298007 # Dewa Agung
+	culture=balinese
+	religion=tirthaist
+	father=1298000
+	mother=1298001
+	2570.12.1={birth=yes}
+}
+
+1298003 ={ # balinese's prince #2
+	name="Made Kompyang"
+	dynasty = 1298007 # Dewa Agung
+	culture=balinese
+	religion=tirthaist
+	father=1298000
+	mother=1298001
+	2575.12.1={birth=yes}
+}
+
+1298004 ={ # balinese's princess #1
+	name="Ni Nyoman Ayu"
+	female=yes
+	dynasty = 1298007 # Dewa Agung
+	culture=balinese
+	religion=tirthaist
+	father=1298000
+	mother=1298001
+	2577.1.1={birth=yes}
+}
+
+1298005 ={ # balinese's prince #3
+	name="Ketut Yuda"
+	female=yes
+	dynasty = 1298007 # Dewa Agung
+	culture=balinese
+	religion=tirthaist
+	father=1298000
+	mother=1298001
+	2577.1.1={birth=yes}
+}
+
+1298006 ={ # buleleng's count
+	name="Made Tresna"
+	dynasty = 1298002 # Dewa Agung
+	martial=15
+	diplomacy=4
+	intrigue=10
+	stewardship=8
+	learning=9
+	culture=balinese
+	religion=tirthaist
+	father=1298009
+	mother=1298010
+	2560.2.12={birth=yes}
+	2595.4.12={add_spouse=1298007}
+}
+
+1298007 ={ # buleleng's countess
+	name="Ni Luh Laskmi"
+	dynasty = 1298012 # Gusti Jambe
+	female=yes
+	culture=balinese
+	religion=tirthaist
+	2575.2.12={birth=yes}
+}
+
+1298008 ={ # buleleng's count's brother
+	name="Nyoman Baturenggong"
+	dynasty = 1298002 # Dewa Agung
+	martial=15
+	diplomacy=4
+	intrigue=10
+	stewardship=8
+	learning=9
+	culture=balinese
+	religion=tirthaist
+	father=1298009
+	mother=1298010
+	2580.2.12={birth=yes}
+}
+
+1298009 ={ # buleleng's count's father
+	name="Gede Sugianyar"
+	dynasty = 1298002 # Dewa Agung
+	culture=balinese
+	religion=tirthaist
+	2535.2.12={birth=yes}
+	2558.6.8={add_spouse=1298007}
+	2582.10.18={add_spouse=129808}
+	2602.4.12={death=yes}
+}
+
+1298010 ={ # buleleng's count's mother
+	name="Ni Luh Bulan"
+	female=yes
+	dynasty = 1298003 # Tjokorda
+	culture=balinese
+	religion=tirthaist
+	2537.12.21={birth=yes}
+	2580.2.12={
+		death = {
+			death_reason = death_childbirth
+			}
+		}
+}
+
+1298007 ={ # buleleng's count's mother #2
+	name="Ni Luh Bulan"
+	female=yes
+	dynasty = 1298003 # Tjokorda
+	culture=balinese
+	religion=tirthaist
+	2559.1.18={birth=yes}
+}
+
+# LOMBOK
+
+1299000 ={ # lombok count
+	name="Zulkarnain"
+	dynasty = 1299003 # Majdi
+	martial=8
+	diplomacy=10
+	intrigue=13
+	stewardship=7
+	learning=6
+	culture=sasak_sumbawa
+	religion=nusantara
+	2578.6.15={birth=yes}
+}
+
+1299010 ={ # selaparang count
+	name="Hidayat"
+	dynasty = 1299021 # Komala
+	martial=10
+	diplomacy=5
+	intrigue=2
+	stewardship=4
+	learning=10
+	culture=sasak_sumbawa
+	religion=renewalist
+	2562.11.5={birth=yes}
+}
+
+# SUMBAWA
+
+1299020 ={ # sumbawa count
+	name="Juliansyah"
+	dynasty = 1299002 # Samawa
+	martial=17
+	diplomacy=6
+	intrigue=3
+	stewardship=9
+	learning=12
+	culture=sasak_sumbawa
+	religion=renewalist
+	2580.11.5={birth=yes}
+}
+
+1299030 ={ # bima count
+	name="Mudjitahid"
+	dynasty = 1299011 # Bima
+	martial=8
+	diplomacy=15
+	intrigue=15
+	stewardship=4
+	learning=14
+	culture=sasak_sumbawa
+	religion=renewalist
+	2582.11.5={birth=yes}
+}
+
 
 
 
