@@ -1,0 +1,25 @@
+is_sufi_member_trigger = {
+	OR = {
+		society_member_of = monastic_order_sunni
+	}
+}
+
+has_sufi_societies_religion_sunni = {
+	hidden_tooltip = {
+		is_heretic = no
+		is_sunni = yes
+	}
+}
+
+is_sufi = {
+	OR = {
+		trait = naqshbandi
+		trait = qadiri
+		trait = bektashi
+		trait = khalveti
+		trait = shattari
+		trait = tijani
+		trait = khufiy
+		trait = jahriy
+	}
+}

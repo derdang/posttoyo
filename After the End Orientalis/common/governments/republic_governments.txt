@@ -219,11 +219,11 @@ republic_governments = {
 		potential = {
 			OR = { 
 				capital_scope = { has_province_modifier = pirate_outpost }
-				# primary_title = {
-					# OR = {
-						# title = k_singapore
-					# }
-				# }
+				primary_title = {
+					OR = {
+						title = d_red_fleet
+					}
+				}
 				liege = { government = pirate_government }
 			}
 			controls_religion = no

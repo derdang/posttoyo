@@ -9,8 +9,14 @@ is_vajrayana = {
 }
 is_salafi_religion = {
 	OR = {
-		religion = renewalist
 		religion = salafi
+	}
+}
+is_sunni = {
+	OR = {
+		religion = renewalist
+		religion = nusantara
+		religion = hui
 	}
 }
 is_theravada = {
@@ -25,6 +31,13 @@ is_mahayana_chinese = {
 	OR = {
 		religion = mahayana
 		religion = hoa_hao
+	}
+}
+is_oversea_chinese = {
+	OR = {
+		culture = sinotai
+		culture = tionghoa
+		culture = hoa
 	}
 }
 is_mahayana_japanese = {

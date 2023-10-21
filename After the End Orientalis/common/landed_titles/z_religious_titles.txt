@@ -124,13 +124,13 @@ k_conferentia = {
 	male_names = {
 		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
 		Benedictus Bonifatius 
-		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Caelestinus Callistus "Carolus-Magnus" Christophorus Clemens Constantinus 
 		Damasus Damianus Dominicus 
 		Eduardus Engelmarus Eugenius 
-		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Felix Franciscus "Franciscus-Xavierus" Frumentius 
 		Gelasius Gregorius 
 		Hadrianus Honorius 
-		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes-Henricus" "Ioannes-Paulus" Iosephus 
 		Julius 
 		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
 		Nicolaus 
@@ -170,13 +170,13 @@ d_dili_archbishopric = {
 	male_names = {
 		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
 		Benedictus Bonifatius 
-		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Caelestinus Callistus "Carolus-Magnus" Christophorus Clemens Constantinus 
 		Damasus Damianus Dominicus 
 		Eduardus Engelmarus Eugenius 
-		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Felix Franciscus "Franciscus-Xavierus" Frumentius 
 		Gelasius Gregorius 
 		Hadrianus Honorius 
-		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes-Henricus" "Ioannes-Paulus" Iosephus 
 		Julius 
 		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
 		Nicolaus 
@@ -216,13 +216,13 @@ d_hue_archbishopric = {
 	male_names = {
 		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
 		Benedictus Bonifatius 
-		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Caelestinus Callistus "Carolus-Magnus" Christophorus Clemens Constantinus 
 		Damasus Damianus Dominicus 
 		Eduardus Engelmarus Eugenius 
-		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Felix Franciscus "Franciscus-Xavierus" Frumentius 
 		Gelasius Gregorius 
 		Hadrianus Honorius 
-		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes-Henricus" "Ioannes-Paulus" Iosephus 
 		Julius 
 		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
 		Nicolaus 
@@ -262,13 +262,13 @@ d_macau_archbishopric = {
 	male_names = {
 		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
 		Benedictus Bonifatius 
-		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Caelestinus Callistus "Carolus-Magnus" Christophorus Clemens Constantinus 
 		Damasus Damianus Dominicus 
 		Eduardus Engelmarus Eugenius 
-		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Felix Franciscus "Franciscus-Xavierus" Frumentius 
 		Gelasius Gregorius 
 		Hadrianus Honorius 
-		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes-Henricus" "Ioannes-Paulus" Iosephus 
 		Julius 
 		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
 		Nicolaus 
@@ -308,13 +308,13 @@ d_nagasaki_archbishopric = {
 	male_names = {
 		Adalbertus Adeodatus Agapetus Alexander Aloisius Anastasius Anscharius Antonius Arthurus Augustinus 
 		Benedictus Bonifatius 
-		Caelestinus Callistus "Carolus Magnus" Christophorus Clemens Constantinus 
+		Caelestinus Callistus "Carolus-Magnus" Christophorus Clemens Constantinus 
 		Damasus Damianus Dominicus 
 		Eduardus Engelmarus Eugenius 
-		Felix Franciscus "Franciscus Xavierus" Frumentius 
+		Felix Franciscus "Franciscus-Xavierus" Frumentius 
 		Gelasius Gregorius 
 		Hadrianus Honorius 
-		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes Henricus" "Ioannes Paulus" Iosephus 
+		Iannus Ianuarius Ignatius Innocentius Ioannes "Ioannes-Henricus" "Ioannes-Paulus" Iosephus 
 		Julius 
 		Leo Lucius Marcellus Marinus Martinus Maximilianus Michael 
 		Nicolaus 
@@ -395,6 +395,35 @@ d_erkeun = {
 	controls_religion = erkeun
 	
 	religion = erkeun
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no
+	
+	# Regnal names
+	male_names = {
+		Aba Abraham Eliya Denha Emmanuel Giwargis Hnanisho Ishoyahb Makkikha 
+		Maremmeh Pethion Sabrisho Shemon Sargis Surin Theodosios Timotheos Yahballaha Yohannan
+	}
+}
+d_nusantara = {
+	color= { 72 108 154 }
+	color2={ 220 220 0 }
+	
+	capital = 462 #Surabaya
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = RAIS
+	foa = RAIS_FOA
+	title_prefix = ULAMA_PREFIX
+	
+	controls_religion = nusantara
+	
+	religion = nusantara
 	
 	# Cannot be held as a secondary title
 	primary = yes

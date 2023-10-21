@@ -6,19 +6,30 @@
 #3902 - Bicolano
 #3903 - Pangasinense
 #3904 - Kapampangan
-#3905 - Bisaya
-#3906 - Dumagat
-#3907 - Ivatan
-#3908 - Ibanag
-#3909 - Cuyonon
-#3910 - Chavacano
-#3911 - Balikbayan
-#3912 - Moro
-#3913 - Igorot
-#3914 - Lumad
-#3915 - Negrito
-#3916 - Badjao
-#3917 - Mangyan 
+#3905 - Sambal
+#3906 - Cebuano
+#3907 - Ilonggo
+#3908 - Waray
+#3909 - Capiznon
+#3910 - Hamtikanon
+#3911 - Aklanon
+#3912 - Romblomanon
+#3913 - Masbateno
+#3914 - Surigaonon
+#3915 - Dumagat
+#3916 - Ivatan
+#3917 - Ibanag
+#3918 - Cuyonon 
+#3919 - Chavacano
+#3920 - Balikbayan
+#3921 - Minahasan
+#3923 - Gorontalo
+#3924 - Visayan
+#3925 - Moro
+#3926 - Sama
+#3927 - Igorot
+#3928 - Lumad
+#3929 - Mangyan
 
 ###########Tagalog Characters###########
 
@@ -156,9 +167,6 @@
 	2561.12.17={
 		birth=yes
 	}
-	2587.9.28={
-		add_spouse=3900000
-	}
 }
 
 3900006 = { #Eldest child
@@ -178,9 +186,6 @@
 	mother=3900005
 	2579.4.9={
 		birth=yes
-	}
-	2587.9.15={
-		add_spouse=3904000
 	}
 }
 
@@ -277,6 +282,173 @@
 	}
 }
 
+3900012 = { #Count of Marinduque
+	name="Emilio"
+	dynasty=3900087 #Fernando
+	culture=tagalog
+	religion=catholic
+	trait=skilled_tactician
+	trait=just
+	trait=shy
+	trait=wroth
+	trait=humble
+	trait=ambitious
+	2585.3.22={
+		birth=yes
+	}
+}
+
+3900013 = { #Count of Oriental Mindoro
+	name="Antonio"
+	dynasty=3900255 #Dolor
+	culture=tagalog
+	religion=catholic
+	trait=charismatic_negotiator
+	trait=just
+	trait=proud
+	trait=brave
+	trait=gregarious
+	trait=honest
+	2585.11.27={
+		birth=yes
+	}
+}
+
+3900014 = { #Count of Polillo
+	name="Raffy"
+	dynasty=3900088 #Iyam
+	culture=tagalog
+	religion=catholic
+	trait=intricate_webweaver
+	trait=deceitful
+	trait=shy
+	trait=arbitrary
+	trait=lustful
+	trait=cruel
+	2575.1.4={
+		birth=yes
+	}
+}
+
+3900015 = { #Duke of Quezon
+	name="Lito"
+	dynasty=3900257 #Pomoy
+	culture=tagalog
+	religion=catholic
+	trait=charismatic_negotiator
+	trait=poet
+	trait=groomed
+	trait=socializer
+	trait=lustful
+	trait=content
+	2584.9.2={
+		birth=yes
+	}
+}
+
+3900016 = { #Count of Rizal and Laguna
+	name="José Protasio"
+	dynasty=3900258 #Realonda
+	culture=tagalog
+	religion=catholic
+	trait=charismatic_negotiator
+	trait=poet
+	trait=just
+	trait=socializer
+	trait=lustful
+	trait=ambitious
+	2571.6.19={
+		birth=yes
+	}
+}
+
+3900017 = { #Duke of Katagalugan
+	name="Santiago"
+	dynasty=3900259 #Noriel
+	culture=tagalog
+	religion=catholic
+	trait=brilliant_strategist
+	trait=strong
+	trait=sturdy
+	trait=duelist
+	trait=wroth
+	trait=proud
+	2574.6.12={
+		birth=yes
+	}
+}
+
+###########Ilocano Characters###########
+3901000 = { #Duke of Ilocos
+	name="Armando"
+	dynasty=3901250 #Casugay
+	culture=ilocano
+	religion=catholic
+	trait=brilliant_strategist
+	trait=brave
+	trait=kind
+	trait=patient
+	trait=diligent
+	trait=ambitious
+	2580.2.18={
+		birth=yes
+	}
+}
+3901001 = { #Duke of Sierra Madre
+	name="Mateo"
+	dynasty=3901250 #Luga
+	culture=ilocano
+	religion=catholic
+	trait=skilled_tactician
+	trait=shy
+	trait=kind
+	trait=patient
+	trait=diligent
+	trait=content
+	2580.3.15={
+		birth=yes
+	}
+}
+
+###########Bicolano Characters###########
+
+3902000 = { #Duke of Bicol
+	name="Jesse"
+	dynasty=3902250 #Bayola
+	culture=bicolano
+	religion=catholic
+	trait=skilled_tactician
+	trait=fair
+	trait=quick
+	trait=duelist
+	trait=charitable
+	trait=ambitious
+	trait=honorable
+	trait=brave
+	trait=kind
+	2587.6.18={
+		birth=yes
+	}
+}
+3902001 = { #Count of Catanduanes
+	name="Don"
+	dynasty=3902251 #Rodolfo
+	culture=bicolano
+	religion=catholic
+	trait=brilliant_strategist
+	trait=scarred_mid
+	trait=strong
+	trait=duelist
+	trait=charitable
+	trait=ambitious
+	trait=honorable
+	trait=brave
+	trait=kind
+	2585.6.18={
+		birth=yes
+	}
+}
+
 ###########Pangasinense Characters###########
 
 3903000 = { #Princess Urduja reference
@@ -350,3 +522,694 @@
 		birth=yes
 	}
 }
+
+###########Sambal Characters###########
+3905000 = { #Count of Zambales
+	name="Gavino"
+	dynasty=3905034 #Medina
+	culture=sambal
+	religion=catholic
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2580.1.1={
+		birth=yes
+	}
+}
+
+###########Cebuano Characters###########
+3906000 = { #Count of Southern Leyte
+	name="Antonio"
+	dynasty=3906050 #Ignacio
+	culture=cebuano
+	religion=catholic
+	trait=elusive_shadow
+	trait=greedy
+	trait=humble
+	trait=shrewd
+	trait=patient
+	trait=diligent
+	trait=erudite
+	2580.6.8={
+		birth=yes
+	}
+}
+3906001 = { #Count of Bohol
+	name="Sikatuna"
+	dynasty=3906050 #Combes
+	culture=cebuano
+	religion=catholic
+	trait=scholarly_theologian
+	trait=strong
+	trait=shrewd
+	trait=scholar
+	trait=poet
+	trait=charitable
+	trait=erudite
+	2580.6.8={
+		birth=yes
+	}
+}
+3906002 = { #Count of Cebu
+	name="Don"
+	dynasty=3906050 #Humabon
+	culture=cebuano
+	religion=catholic
+	trait=grey_eminence
+	trait=fair
+	trait=giant
+	trait=uncouth
+	trait=patient
+	trait=diligent
+	trait=hedonist
+	2580.6.8={
+		birth=yes
+	}
+}
+3906003 = { #Count of Negros Oriental
+	name="Sumakwel"
+	dynasty=3906241 #Basilio
+	culture=cebuano
+	religion=catholic
+	trait=detached_priest
+	trait=lefthanded
+	trait=feeble
+	trait=mystic
+	trait=patient
+	trait=diligent
+	trait=erudite
+	2580.6.8={
+		birth=yes
+	}
+}
+
+###########Ilonggo Characters###########
+3907000 = { #Count of Negros Occidental
+	name="Agustín"
+	dynasty=3907010 #Tolentino
+	culture=ilonggo
+	religion=catholic
+	trait=elusive_shadow
+	trait=greedy
+	trait=humble
+	trait=shrewd
+	trait=patient
+	trait=diligent
+	trait=erudite
+	2580.6.8={
+		birth=yes
+	}
+}
+3907001 = { #Count of Iloilo
+	name="Angelia"
+	dynasty=3907029 #Ang
+	female=yes
+	culture=ilonggo
+	religion=catholic
+	trait=charismatic_negotiator
+	trait=fair
+	trait=groomed
+	trait=scholar
+	trait=poet
+	trait=charitable
+	trait=erudite
+	2590.6.8={
+		birth=yes
+	}
+}
+
+###########Waray Characters###########
+3908000 = { #Duke of Samar
+	name="Iberein"
+	dynasty=3908104 #Buenaventura
+	culture=waray
+	religion=catholic
+	trait=elusive_shadow
+	trait=greedy
+	trait=humble
+	trait=shrewd
+	trait=patient
+	trait=diligent
+	trait=erudite
+	2570.6.8={
+		birth=yes
+	}
+}
+3908001 = { #Count of Leyte
+	name="Hector"
+	dynasty=3908119 #Baltazar
+	culture=waray
+	religion=catholic
+	trait=martial_cleric
+	trait=sturdy
+	trait=falconer
+	trait=shrewd
+	trait=patient
+	trait=diligent
+	trait=humble
+	2575.7.1={
+		birth=yes
+	}
+}
+
+###########Capiznon Characters###########
+3909000 = { #Count of Capiz
+	name="Jeckster"
+	dynasty=3909055 #Roxas
+	culture=capiznon
+	religion=catholic
+	trait=grey_eminence
+	trait=genius
+	trait=just
+	trait=kind
+	trait=patient
+	trait=gregarious
+	trait=kind
+	2580.1.1={
+		birth=yes
+	}
+}
+
+###########Hamtikanon Characters###########
+3910000 = { #Count of Aklan
+	name="Quinto"
+	dynasty=3910250 #Javier
+	culture=hamtikanon
+	religion=catholic
+	trait=grey_eminence
+	trait=humble
+	trait=just
+	trait=shy
+	trait=patient
+	trait=gregarious
+	trait=kind
+	2577.10.31={
+		birth=yes
+	}
+}
+
+###########Aklanon Characters###########
+3911000 = { #Count of Aklan
+	name="Manduyog"
+	dynasty=3911250 #Magsaysay
+	culture=aklanon
+	religion=catholic
+	trait=grey_eminence
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=gregarious
+	trait=kind
+	2582.4.9={
+		birth=yes
+	}
+}
+
+###########Romblomanon Characters###########
+3912000 = { #Count of Romblon
+	name="Gabriel"
+	dynasty=3912500 #Fabella
+	culture=romblomanon
+	religion=catholic
+	trait=scholarly_theologian
+	trait=scholar
+	trait=humble
+	trait=erudite
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2582.3.18={
+		birth=yes
+	}
+}
+
+###########Masbateno Characters###########
+3913000 = { #Count of Masbate
+	name="Gonzalo"
+	dynasty=3913250 #Guerrero
+	culture=masbateno
+	religion=catholic
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2582.4.9={
+		birth=yes
+	}
+}
+
+###########Surigaonon Characters###########
+3914000 = { #Duke of Surigao
+	name="Aquilino"
+	dynasty=3914013 #Dizon
+	culture=surigaonon
+	religion=catholic
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2582.4.9={
+		birth=yes
+	}
+}
+
+###########Dumagat Characters###########
+3915000 = { #King of Davao
+	name="Aquilino"
+	dynasty=3915250 #Valerio
+	culture=dumagat
+	religion=catholic
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2582.4.9={
+		birth=yes
+	}
+}
+3915001 = { #Count of Baganga
+	name="Bryan"
+	dynasty=3915224 #Sandoval
+	culture=dumagat
+	religion=catholic
+	trait=midas_touched
+	trait=is_fat
+	trait=robust
+	trait=groomed
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2578.2.10={
+		birth=yes
+	}
+}
+3915002 = { #Count of Misamis Oriental
+	name="Adolpho"
+	dynasty=3915165 #Calderon
+	culture=dumagat
+	religion=catholic
+	trait=detached_priest
+	trait=fatigue
+	trait=hunchback
+	trait=shrewd
+	trait=patient
+	trait=diligent
+	trait=theologian
+	2575.2.10={
+		birth=yes
+	}
+}
+3915003 = { #Count of Iligan
+	name="Kana"
+	dynasty=3915137 #Ching
+	culture=dumagat
+	religion=catholic
+	secret_religion=diwata
+	trait=mastermind_theologian
+	trait=dwarf
+	trait=lunatic
+	trait=shrewd
+	trait=patient
+	trait=ambitious
+	trait=mystic
+	2575.6.20={
+		birth=yes
+	}
+}
+3915004 = { #Count of Dipolog and Misamis Occidental
+	name="Akira"
+	dynasty=3915055 #Roxas
+	culture=dumagat
+	religion=catholic
+	trait=skilled_tactician
+	trait=slothful
+	trait=cynical
+	trait=honest
+	trait=stubborn
+	trait=proud
+	trait=charitable
+	trait=twin
+	2588.5.8={
+		birth=yes
+	}
+}
+3915005 = { #Count of Sindangan and Labason
+	name="Samuel"
+	dynasty=3915055 #Roxas
+	culture=dumagat
+	religion=catholic
+	trait=skilled_tactician
+	trait=slothful
+	trait=cynical
+	trait=honest
+	trait=stubborn
+	trait=proud
+	trait=charitable
+	trait=twin
+	2588.5.8={
+		birth=yes
+	}
+}
+
+###########Cuyonon Characters###########
+
+3918000 = { #Duke of Palawan
+	name="Ramiro"
+	dynasty=3918034 #Medina
+	culture=cuyonon
+	religion=catholic
+	diplomacy=5
+	martial=5
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=scholarly_theologian
+	trait=robust
+	trait=kind
+	trait=honorable
+	trait=just
+	trait=proud
+	trait=groomed
+	2582.2.1={
+		birth=yes
+	}
+}
+
+###########Ivatan Characters###########
+
+3916000 = { #Count of Batanes
+	name="German"
+	dynasty=3916033 #Alcantara
+	culture=ivatan
+	religion=catholic
+	trait=martial_cleric
+	trait=duelist
+	trait=kind
+	trait=honorable
+	trait=just
+	trait=proud
+	trait=trusting
+	2582.2.7={
+		birth=yes
+	}
+}
+
+###########Ibanag Characters###########
+
+3917000 = { #Duke of Cagayan
+	name="Ricardo"
+	dynasty=3917250 #Coballes
+	culture=ibanag
+	religion=catholic
+	diplomacy=5
+	martial=5
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=scholarly_theologian
+	trait=robust
+	trait=kind
+	trait=honorable
+	trait=just
+	trait=proud
+	trait=groomed
+	2582.2.7={
+		birth=yes
+	}
+}
+
+###########Chavacano Characters###########
+
+3919000 = { #Count of Siocon and Zamboanga
+	name="Orlando"
+	dynasty=3919075 #Villegas
+	culture=chavacano
+	religion=catholic
+	diplomacy=5
+	martial=5
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=martial_cleric
+	trait=duelist
+	trait=kind
+	trait=honorable
+	trait=just
+	trait=proud
+	trait=trusting
+	2580.8.1={
+		birth=yes
+	}
+}
+
+###########Moro Characters###########
+
+3925000 = { #Kings of Sulu
+	name="Bangkaya"
+	dynasty=3925061 #Kiram
+	culture=moro
+	religion=renewalist
+	diplomacy=5
+	martial=5
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=grey_eminence
+	trait=administrator
+	trait=ambitious
+	trait=honorable
+	trait=just
+	trait=proud
+	trait=trusting
+	2567.8.1={
+		birth=yes
+		add_claim = k_sabah
+	}
+	2595.1.1={
+		add_spouse=3926000
+	}
+}
+
+3925001 = {
+	name="Ul-Abidin"
+	dynasty=3925061 #Kiram
+	culture=moro
+	religion=renewalist
+	diplomacy=2
+	martial=8
+	stewardship=6
+	intrigue=1
+	learning=4
+	trait=rowdy
+	trait=haughty
+	trait=idolizer
+	father=3925000
+	mother=3926000
+	2597.8.1={
+		birth=yes
+		add_claim = k_sabah
+	}
+}
+
+3925002 = { #Kings of Magindanaw
+	name="Maka-alang"
+	dynasty=3925021 #Baraguir
+	culture=moro
+	religion=renewalist
+	diplomacy=5
+	martial=5
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=martial_cleric
+	trait=scholar
+	trait=ambitious
+	trait=honorable
+	trait=just
+	trait=envious
+	trait=cruel
+	2587.8.1={birth=yes}
+}
+
+3925003 = { #Duke of Sarangani
+	name="Tariq"
+	dynasty=3928082 #Zamora
+	culture=moro
+	religion=renewalist
+	diplomacy=5
+	martial=5
+	stewardship=5
+	intrigue=5
+	learning=5
+	trait=tough_soldier
+	trait=scarred_mid
+	trait=ambitious
+	trait=honorable
+	trait=just
+	trait=holy_warrior
+	trait=kind
+	2584.1.15={birth=yes}
+}
+
+###########Sama Characters###########
+3926000 = {
+	name="Angintabu"
+	female=yes
+	dynasty=3926024 #Tengah
+	culture=sama
+	religion=renewalist
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2579.4.9={
+		birth=yes
+	}
+}
+
+###########Igorot Characters###########
+3927000 = { #Duchess of Cordillera
+	name="Naomi"
+	dynasty=3927050 #Montilla
+	female=yes
+	culture=igorot
+	religion=dayawist
+	trait=brilliant_strategist
+	trait=sympathy_christendom
+	trait=humble
+	trait=kind
+	trait=patient
+	trait=diligent
+	trait=ambitious
+	2580.6.12={
+		birth=yes
+	}
+}
+
+###########Lumad Characters###########
+3928000 = {
+	name="Anu"
+	dynasty=3928038 #Serrano
+	culture=lumad
+	religion=diwata
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2550.4.9={
+		birth=yes
+	}
+	2575.4.9={
+		add_spouse=3928001
+	}
+}
+3928001 = {
+	name="Pengenda"
+	female=yes
+	dynasty=3928065 #Fabella
+	culture=lumad
+	religion=diwata
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=kind
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2550.4.9={
+		birth=yes
+	}
+}
+3928002 = { #Eldest Son
+	name="Obillo"
+	dynasty=3928038 #Serrano
+	culture=lumad
+	religion=diwata
+	trait=amateurish_plotter
+	trait=weak
+	trait=shy
+	trait=arbitrary
+	trait=lustful
+	trait=dull
+	trait=twin
+	mother=3928001
+	father=3928000
+	2580.10.28={
+		birth=yes
+	}
+}
+3928003 = { #Second Son
+	name="Ogan"
+	dynasty=3928038 #Serrano
+	culture=lumad
+	religion=diwata
+	trait=amateurish_plotter
+	trait=slow
+	trait=shy
+	trait=arbitrary
+	trait=lustful
+	trait=dull
+	trait=twin
+	mother=3928001
+	father=3928000
+	2580.10.28={
+		birth=yes
+	}
+}
+3928004 = {
+	name="Meluagpeka"
+	dynasty=3928163 #Laconico
+	culture=lumad
+	religion=diwata
+	trait=thrifty_clerk
+	trait=fair
+	trait=kind
+	trait=shy
+	trait=patient
+	trait=zealous
+	2570.4.9={
+		birth=yes
+	}
+	2600.1.1={
+		religion=catholic
+	}
+}
+
+###########Mangyan Characters###########
+3929000 = { #Count of Occidental Mindoro
+	name="Damaso"
+	dynasty=3929000 #Aquino
+	culture=mangyan
+	religion=dayawist
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2581.4.9={
+		birth=yes
+	}
+}
+

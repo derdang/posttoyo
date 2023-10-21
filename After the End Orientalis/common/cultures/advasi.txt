@@ -43,19 +43,17 @@ advasi = {
 			Syamadevi Vijnayavati Vina Yajnavati
 		}
 		
-		dynasty_title_names = yes
 		founder_named_dynasties = yes
 		
 		
 		modifier = default_culture_modifier
 	}
 	
-	meitei = { # Indo-Aryan
-		graphical_cultures = { indiangfx muslimgfx }
-		secondary_event_pictures = bedouin_arabic
+	meitei = {
+		graphical_cultures = { bodpagfx }
 		
-		color = { 0.45 0.0 0.0 }
-	
+		color = { 0.10 0.47 0.35 }
+
 		male_names = {
 			Akaba Angahal Angoubi Angusana Athokpam 
 			Babu Badubhon Bhubon Bidursana Biju Biramangol Biren Birendra Bodhchandra Bokul Bonium Bonny Bupenda 
@@ -63,7 +61,7 @@ advasi = {
 			Damodara Debendra Dingko Dorendra 
 			Gambhir Gandhar Gautam Gojen Gopalsana Gouramangi Gouramani Govin 
 			Haimosana Hemanta Henry Himalay 
-			Ibobi Ibohal Ibomcha IbopishakÂ  Iboton Ibungohal Ibungomacha Irabot 
+			Ibobi Ibohal Ibomcha Ibopishak  Iboton Ibungohal Ibungomacha Irabot 
 			Jaichandra Jivan Joy Jyotin 
 			Kerani Kesarjit Kishorechandra Koijam Koireng Kongja Kulachandra Kunjabihari Kwakpa 
 			Leirenjao Loken 
@@ -84,28 +82,34 @@ advasi = {
 			Hiyainu 
 			Ibeni Indubala 
 			Janaki 
-			Kamala Kanyahanbi Khomdonsana Kunjarani Kunjarani 
-			Lakhi Landhoni LeibakleiÂ  Lenabati Lukamani 
+			Kamala Kanyahanbi Khomdonsana Kunjarani 
+			Lakhi Landhoni Leibaklei  Lenabati Lukamani 
 			Manda Mangala Mani Marcy Maya Medhabati Merajaobi Mirabai 
 			Ngangbi 
 			Radhe Ranjita Rasamani Rashi Rita Roma 
 			Sanahanbi Seema Sharmila Soma Sonia Sorojini Suniti Surjamukhi Sushmita 
 			Takhi Taruni Thaja Thambalngambi Thambalngoubi Thoibi Thouranijaobi Tompok Tonthoingambi
 		}
+
+		from_dynasty_suffix = "i"
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
 		
-		dynasty_title_names = yes
-		founder_named_dynasties = yes
-		
-		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
 		modifier = default_culture_modifier
+		dynasty_name_first = yes
 	}
 	
-	naga = { # Indo-Aryan
-		graphical_cultures = { indiangfx muslimgfx }
-		secondary_event_pictures = bedouin_arabic
+	naga = {
+		graphical_cultures = { bodpagfx }
 		
-		color = { 0.45 0.0 0.0 }
-	
+		color = { 0.10 0.37 0.15 }
+
 		male_names = {
 			Abraham_Abraham Akobu Alobo Angami Apok Armstrong Asungba Atoulie Awangshi 
 			Bendangtoshi Bokavi 
@@ -113,47 +117,53 @@ advasi = {
 			Darlando 
 			Gaikhangam Gangmumei Guolhoulie 
 			Hangzik Hokaito Hokishe Holshe Hopongki Hovithal Huzheto 
-			Imkong ImtikÃ¼mzÃ¼k Isak_Isaac 
+			Imkong Imtikümzük Isak_Isaac 
 			James_James Jiangam John_John Jonathan_Jonathan Jungshinokdang 
-			KevichÃ¼sa Khangsinglung Khodao Khosa Khwetelhi Kivi Kropol Kushe 
+			Kevichüsa Khangsinglung Khodao Khosa Khwetelhi Kivi Kropol Kushe 
 			Longri Lothonang Luithui Lungshim 
 			Malay Martin_Martin Mayangnokcha Meijinlung Melhupra Methaneilie Min Moyuthung 
-			Neikezhakuo Neikhrieo NeiliezhÃ¼ Neiphiu Neisielie Ngseue Ningdangri Nitoy NthÃ®o 
-			PerietsÃ¼ Puhokhwel Putsolie 
+			Neikezhakuo Neikhrieo Neiliezhü Neiphiu Neisielie Ngseue Ningdangri Nitoy Nthîo 
+			Perietsü Puhokhwel Putsolie 
 			Ralengnao Reivilie Rewben Rishang Rongsen Rungdi 
-			Senayangba Sevilie Shangyang Shilu ShÃ¼rhozelie Silas Subongwati 
-			Taditui Talimeren Thechazelhu ThepfÃ¼lo-u Thiudai Thuingaleng Tokheho Tubu
-			VamÃ¼zo Vikho-o Viseyie ViswesÃ¼l Vizadel Vizol 
+			Senayangba Sevilie Shangyang Shilu Shürhozelie Silas Subongwati 
+			Taditui Talimeren Thechazelhu Thepfülo-u Thiudai Thuingaleng Tokheho Tubu
+			Vamüzo Vikho-o Viseyie Viswesül Vizadel Vizol 
 			Wangcha Wungazan 
 			Yangmaso Yaronsho 
-			ZajÃ¼khrie_Zachary Zale Zhaleo ZhapuzhÃ¼lie Zhokhoi 
+			Zajükhrie_Zachary Zale Zhaleo Zhapuzhülie Zhokhoi 
 		}
 		female_names = { 
-			Alana AleÃ¼ AlÃ¼ne AmeÃ¼ Ano Azine 
+			Alana Aleü Alüne Ameü Ano Azine 
 			Bano Bernika 
-			ChekrovolÃ¼ 
+			Chekrovolü 
 			Dolly Dziesetuonuo 
 			Easterine Erali Eustar 
 			Gaidinliu Grace 
 			Hangmila 
 			Imkonglemla Imnasenla 
-			Kachaklenliu Kaisa Kevizenuo Khatingla Kevilhou-Ã¼ Khrienuo KuvelÃ¼ 
+			Kachaklenliu Kaisa Kevizenuo Khatingla Kevilhou-ü Khrienuo Kuvelü 
 			Lozano 
-			Maongsangla Megolhusau Menguse-Ã¼ Mercy Monalisa Mungshingla MÃ¼tsevelÃ¼ 
-			NeichÃ¼lie-Ã¼ Neidonuo Neithono Ningchungla 
-			Rano Razoulhou-Ã¼ RÃ¼Ã¼lhou-Ã¼ 
+			Maongsangla Megolhusau Menguse-ü Mercy Monalisa Mungshingla Mütsevelü 
+			Neichülie-ü Neidonuo Neithono Ningchungla 
+			Rano Razoulhou-ü Rüülhou-ü 
 			Sesino Seyievino Subokyimia 
-			Tabonliu Takatula TemsÃ¼la Tiamerenla 
-			VesuzolÃ¼ Vichosale Vishi Vitulie-Ã¼ 
+			Tabonliu Takatula Temsüla Tiamerenla 
+			Vesuzolü Vichosale Vishi Vitulie-ü 
 			Watipongla 
 			Yashila 
 			Zuboni 
 		}
+
+		from_dynasty_suffix = "i"
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
 		
-		dynasty_title_names = yes
-		founder_named_dynasties = yes
-		
-		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
 		modifier = default_culture_modifier
 	}
 	
@@ -198,7 +208,6 @@ advasi = {
 			Syamadevi Vijnayavati Vina Yajnavati
 		}
 		
-		dynasty_title_names = yes
 		founder_named_dynasties = yes
 		
 		
@@ -245,7 +254,6 @@ advasi = {
 			Syamadevi Vijnayavati Vina Yajnavati
 		}
 		
-		dynasty_title_names = yes
 		founder_named_dynasties = yes
 		
 		
@@ -288,10 +296,10 @@ advasi = {
 			Pabitra Panna Patal Pratima Prava Puthimala 
 			Radha Rajabala Rani Ranjana Ranjanbati Ratna Ratnadevi Rita Rudhanpoti 
 			Sabita Santana Shephali Shibani Shobha Suchitra Sudha Surabhi 
-			Tanushri Tarumala Tunubala 
+			Tanushri Tarumala Tunubala
 		}
 
-		from_dynasty_prefix = "of "
+		from_dynasty_suffix = "i"
 
 		pat_grf_name_chance = 50
 		mat_grf_name_chance = 40
@@ -303,14 +311,11 @@ advasi = {
 
 		modifier = default_culture_modifier
 	}
-	mizo = { #Mizo-Zozo-Kaki
+	mizo = {
 		graphical_cultures = { bodpagfx }
-		unit_graphical_cultures = { chinesegfx  }
+		
+		color = { 0.10 0.57 0.05 }
 
-		dynasty_name_first = yes
-		
-		color = { 120 182 193 }
-		
 		male_names = {
 			Beichhua Biakmawia 
 			Challianchana 
@@ -348,18 +353,16 @@ advasi = {
 			Vanhlupuii Vanlalnunpari Vanlalruati 
 			Zathiangi Zochhuanawmin Zorinzuali 
 		}
-		
-		from_dynasty_prefix = ""
 
-		pat_grf_name_chance = 0
-		mat_grf_name_chance = 0
+		from_dynasty_suffix = "i"
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
 		father_name_chance = 0
 		
-		pat_grm_name_chance = 0
-		mat_grm_name_chance = 0
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
 		mother_name_chance = 0
-		
-		used_for_random = no
 
 		modifier = default_culture_modifier
 	}

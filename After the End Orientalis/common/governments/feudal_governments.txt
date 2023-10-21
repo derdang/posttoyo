@@ -94,7 +94,13 @@ feudal_governments = {
 		frame_suffix = "_ghazwa"
 		title_prefix = "ghazi_government_"
 		potential = {
-			religion_group = muslim
+			AND = {
+				religion_group = muslim
+				NOR = {
+					religion=nusantara
+					religion=kebatinan
+				}
+			}
 			OR = {
 				lower_tier_than = KING
 				has_law = muslim_government_slider_0
@@ -167,7 +173,13 @@ feudal_governments = {
 		title_prefix = "diwan_government_"
 		potential = {
 			OR = {
-				religion_group = muslim
+				AND = {
+					religion_group = muslim
+					NOR = {
+						religion=nusantara
+						religion=kebatinan
+					}
+				}
 				OR = {
 					has_law = muslim_government_slider_2
 					has_law = muslim_government_slider_3
@@ -617,29 +629,40 @@ feudal_governments = {
 					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
 				}
 			}
-			NOT = {	religion_group = muslim	}
+			NAND = {
+				religion = nusantara
+				controls_religion = yes
+			}
 			NOT = {	religion_group = christian }
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
-			AND = { 
-				OR = {
-					culture_group = southwest_tai
-					culture_group = karenic
-					culture_group = austroasiatic
-					culture_group = cambodian
-					culture_group = burmic
-					culture_group = chamic
-				}
-				OR = {
-					AND = {
-						religion_group = buddhist_group
-						NOT = {religion = mahayana}
+			OR = { 
+				AND = {
+					OR = {
+						is_theravada = yes
+						religion_group = indian_group
+						religion = pancasila
+						religion = kebatinan
+						religion = nusantara
 					}
-					religion = ua_dab
-					religion = ua_dab_reformed
-					religion_group = indian_group
+					OR = {
+						culture_group = southwest_tai
+						culture_group = karenic
+						culture_group = austroasiatic
+						culture_group = cambodian
+						culture_group = burmic
+						culture_group = chamic
+						culture_group = malayan
+						culture_group = kadazandusun
+						culture_group = philippine
+						culture_group = nusantaran
+						culture_group = timor
+						culture_group = barrier_batak
+						culture_group = sulawesi
+						culture_group = maluku
+						culture_group = dayak
+					}
 				}
-				higher_tier_than = BARON
 			}
 			NAND = { 
 				tier = EMPEROR
@@ -794,8 +817,9 @@ feudal_governments = {
 						higher_tier_than = BARON
 					}
 					AND = {
-						religion = mahayana
+						is_mahayana_chinese = yes
 						OR = {
+							is_oversea_chinese = yes
 							culture_group = hmong_mien
 							culture_group = formosan
 							culture_group = lolo
