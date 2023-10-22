@@ -2164,6 +2164,75 @@ pagan_group = {
 		dislike_tribal_organization = yes
 		reformed = diwata_reformed
 	}
+	momolian_reformed = { #Ancestral Religion of the Dusun
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 32
+		heresy_icon = 33
+		
+		color = { 129 101 123 }
+		
+		high_god_name = GOD_MINAMANGUN
+		
+		god_names = {
+			GOD_KINOINGAN GOD_SUMUNDU GOD_HUMINODUN GOD_LOKIU GOD_LONTUGI GOD_DIWATO
+		}
+		evil_god_names = {
+			AKINABALU
+		}
+		scripture_name = THE_LEGENDS
+		priest_title = BOBOHIZAN
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
+	momolian = { #Ancestral Religion of the Dusun
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 31
+		heresy_icon = 33
+		
+		color = { 169 61 153 }
+		
+		high_god_name = GOD_MINAMANGUN
+		
+		god_names = {
+			GOD_KINOINGAN GOD_SUMUNDU GOD_HUMINODUN GOD_LOKIU GOD_LONTUGI GOD_DIWATO
+		}
+		evil_god_names = {
+			AKINABALU
+		}
+		scripture_name = THE_LEGENDS
+		priest_title = BOBOHIZAN
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		defensive_attrition = yes
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = momolian_reformed
+	}
 }
 
 jewish_group = {

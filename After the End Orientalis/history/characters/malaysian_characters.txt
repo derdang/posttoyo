@@ -6,6 +6,15 @@
 #1957 - Melayu
 #1958 - Singaporean
 #1959 - Kelantanese
+#1985 - Bruneian
+#1371 - Orang Ulu
+#1369 - Bidayuh
+#1370 - Iban
+#1986 - Melanau
+#1963 - Sarawak
+#3926 - Sama
+#1987 - Sabahan
+#1988 - Dusun
 
 #Education Reference
 #
@@ -566,4 +575,357 @@
 	trait=proud
 	trait=just
 	2574.1.1={birth=yes}
+}
+####SARAWAK and BRUNEI
+1985000={ #Brunei
+	name="Abdul Hassan"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2574.10.9={birth=yes}
+}
+1371000={ #Duke of Miri
+	name="Awang"
+	dynasty=1371014 #Janting
+	culture=ulu
+	religion=renewalist
+	martial=6
+	diplomacy=3
+	stewardship=4
+	intrigue=4
+	learning=5
+	trait=thrifty_clerk
+	trait=shrewd
+	trait=sturdy
+	trait=scholar
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2576.1.1={birth=yes}
+}
+1371001={ #Count of Beluru
+	name="Dinar"
+	dynasty=1371001 #Endawie
+	culture=ulu
+	religion=concordanist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=naive_appeaser
+	trait=drunkard
+	trait=one_eyed
+	trait=charitable
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2580.5.8={birth=yes}
+}
+1369000={ #Duke of Bintulu
+	name="Irok"
+	dynasty=1369005 #Baba
+	culture=bidayuh
+	religion=concordanist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=intricate_webweaver
+	trait=chaste
+	trait=fair
+	trait=shrewd
+	trait=temperate
+	trait=patient
+	trait=proud
+	trait=just
+	2585.2.18={birth=yes}
+}
+1369001={ #Count of Lundu
+	name="Irok"
+	dynasty=1369007 #Ujang
+	culture=bidayuh
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=grey_eminence
+	trait=wroth
+	trait=fair
+	trait=shrewd
+	trait=proud
+	trait=greedy
+	trait=proud
+	trait=just
+	2575.1.15={birth=yes}
+}
+1370000={ #Duke of Kapit
+	name="Sani"
+	dynasty=1370015 #Hadi
+	culture=iban
+	religion=catholic
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=2
+	female=yes
+	trait=charismatic_negotiator
+	trait=groomed
+	trait=fair
+	trait=charitable
+	trait=kind
+	trait=patient
+	trait=proud
+	trait=just
+	2586.5.1={birth=yes}
+}
+1370001={ #Duke of Sibu
+	name="Alue"
+	dynasty=1370009 #Masing
+	culture=iban
+	religion=catholic
+	secret_religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=charismatic_negotiator
+	trait=sympathy_islam
+	trait=fair
+	trait=charitable
+	trait=kind
+	trait=patient
+	trait=proud
+	trait=just
+	2586.5.1={birth=yes}
+}
+1370002={ #Count of Sibu
+	name="Enchana"
+	dynasty=1370004 #Belaun
+	culture=iban
+	religion=catholic
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=naive_appeaser
+	trait=wroth
+	trait=charitable
+	trait=greedy
+	trait=cruel
+	trait=proud
+	trait=trusting
+	2579.7.21={birth=yes}
+}
+1370003={ #Count of Lubok Antu
+	name="Wangkang"
+	dynasty=1370010 #Ningkan
+	culture=iban
+	religion=catholic
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=tough_soldier
+	trait=duelist
+	trait=trusting
+	trait=kind
+	trait=patient
+	trait=proud
+	trait=just
+	2586.5.1={birth=yes}
+}
+1986000= { #Duke of Mukah
+	name="Matusin"
+	dynasty=1986032 #Gagah
+	culture=melanau
+	religion=renewalist
+	trait=naive_appeaser
+	trait=shrewd
+	trait=strong
+	trait=kind
+	trait=patient
+	2575.1.1={birth=yes}
+}
+1986001= { #Duke of Sariket
+	name="Juanda"
+	dynasty=1986033 #Lukanisman
+	culture=melanau
+	religion=renewalist
+	trait=martial_cleric
+	trait=shrewd
+	trait=mystic
+	trait=just
+	trait=diligent
+	trait=patient
+	2584.1.1={birth=yes}
+}
+1963000= { #King of Sarawak
+	name="Ibrahim Ali"
+	dynasty=1963003 #Hussein
+	culture=sarawak
+	religion=renewalist
+	trait=elusive_shadow
+	trait=scarred
+	trait=quick
+	trait=strong
+	trait=patient
+	trait=shrewd
+	trait=schemer
+	trait=ambitious
+	2585.3.29={birth=yes}
+}
+
+###########Sama Characters###########
+3926001 = {
+	name="Haseeb"
+	dynasty=3926037 #Dumama-Alba
+	culture=sama
+	religion=renewalist
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2580.6.2={
+		birth=yes
+	}
+}
+
+###########Dusun Characters###########
+1988000 = { #Duke of Pantai Barat
+	name="Nazrey"
+	dynasty=1988032 #Johani
+	culture=dusun
+	religion=renewalist
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=poet
+	trait=patient
+	trait=diligent
+	trait=kind
+	2580.6.2={
+		birth=yes
+	}
+}
+1988001 = { #Count of Nabawan and Tongod
+	name="Danny"
+	dynasty=1988033 #Sumping
+	culture=dusun
+	religion=momolian
+	trait=tough_soldier
+	trait=scarred_mid
+	trait=strong
+	trait=just
+	trait=fair
+	trait=diligent
+	trait=stubborn
+	2580.6.2={
+		birth=yes
+	}
+}
+1988002 = { #Count of Kudat
+	name="Mustapha"
+	dynasty=1988034 #Stephens
+	culture=dusun
+	religion=concordanist
+	trait=martial_cleric
+	trait=fair
+	trait=humble
+	trait=shy
+	trait=patient
+	trait=diligent
+	trait=stubborn
+	2580.6.2={
+		birth=yes
+	}
+}
+1988003 = { #Count of Kinabatangan
+	name="Suhaimi"
+	dynasty=1988035 #Kiandee
+	culture=dusun
+	religion=catholic
+	trait=misguided_warrior
+	trait=drunkard
+	trait=humble
+	trait=dull
+	trait=shy
+	trait=diligent
+	trait=wroth
+	2580.6.2={
+		birth=yes
+	}
+}
+
+###########Sabahan (Malay) Characters###########
+1987000= { #Duke of Pedalaman
+	name="Andrew"
+	dynasty=1987033 #Musah
+	culture=cantonese
+	religion=renewalist
+	secret_religion=catholic
+	trait=naive_appeaser
+	trait=shrewd
+	trait=strong
+	trait=kind
+	trait=patient
+	2585.1.1={birth=yes}
+	2585.1.2={culture=sabahan}
+}
+1987001= { #Duke of Sandakan
+	name="Elvin"
+	dynasty=1987034 #Lim
+	culture=sabahan
+	religion=renewalist
+	trait=brilliant_strategist
+	trait=shrewd
+	trait=mystic
+	trait=just
+	trait=diligent
+	trait=patient
+	2584.1.1={birth=yes}
+}
+1987002={ #Duke of Labuan
+	name="Hassan"
+	dynasty=1987032 #Sani
+	culture=sabahan
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=3
+	learning=2
+	trait=tough_soldier
+	trait=duelist
+	trait=trusting
+	trait=kind
+	trait=patient
+	trait=proud
+	trait=just
+	2586.5.1={birth=yes}
 }
