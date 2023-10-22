@@ -844,4 +844,104 @@ decisions = {
 			always = no
 		}
 	}
+	neidan_meditation = { #Health Bonus and gaining health traits
+		only_playable = yes
+		ai_check_interval = 60
+		
+		potential = {
+			OR = {
+				religion = taoist
+				AND = {
+					religion = hui
+					trait = xidaotang
+				}
+			}
+			age = 16
+			prisoner = no
+			in_seclusion = no
+			NOT = { is_incapable = yes }
+			NOT = { trait = legendary }
+			NOT = { #immersion-breaking
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			has_focus = focus_theology
+			NOT = {has_character_flag = neidan_meditation}
+		}
+		allow = {
+			learning >= 5
+			war = no
+			NOT = {trait = zealous}
+		}
+		effect = {
+			add_trait = in_hiding
+			piety = 50
+			hidden_tooltip = {
+				narrative_event = { id = hui_events.2 }
+			}
+			set_character_flag = neidan_meditation
+		}
+	}
+	buddhist_meditation = { #Health Bonus and gaining health traits
+		only_playable = yes
+		ai_check_interval = 60
+		
+		potential = {
+			religion_group = buddhist_group
+			age = 16
+			prisoner = no
+			in_seclusion = no
+			NOT = { is_incapable = yes }
+			NOT = { trait = legendary }
+			NOT = { #immersion-breaking
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			has_focus = focus_theology
+			NOT = {has_character_flag = buddhist_meditation}
+		}
+		allow = {
+			learning >= 5
+			war = no
+			NOT = {trait = zealous}
+		}
+		effect = {
+			add_trait = in_hiding
+			piety = 50
+			hidden_tooltip = {
+				narrative_event = { id = budevents.4 }
+			}
+			set_character_flag = buddhist_meditation
+		}
+	}
+	scholastic_observation = { #Gets a Sympathy Traits
+		only_playable = yes
+		ai_check_interval = 60
+		
+		potential = {
+			religion = hui
+			trait = gedimu
+			age = 16
+			prisoner = no
+			in_seclusion = no
+			NOT = { is_incapable = yes }
+			NOT = { trait = legendary }
+			NOT = { #immersion-breaking
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			has_focus = focus_scholarship
+			NOT = {has_character_flag = scholastic_observation}
+		}
+		allow = {
+			learning >= 5
+			war = no
+			NOT = {trait = zealous}
+		}
+		effect = {
+			add_trait = in_hiding
+			piety = 50
+			hidden_tooltip = {
+				narrative_event = { id = hui_events.1 }
+			}
+			set_character_flag = scholastic_observation
+		}
+	}
 }

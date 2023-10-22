@@ -227,6 +227,35 @@ narrative_event = {
 	}
 }
 narrative_event = {
+	id = budevents.4
+	title = budevents4_title
+	desc = budevent4_desc
+	picture = GFX_evt_buddhist_contemplation
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {trait = mystic}
+		name = EVT_BUD_4_OPTA
+		health = 0.5
+		learning = 2
+		add_trait = vegetarian
+		narrative_event = { id = budevents.9 days = 7 } 
+	}
+	option = {
+		trigger = {NOT = {trait = mystic}}
+		name = EVT_BUD_4_OPTB
+		health = 0.15
+		add_trait = vegetarian
+		narrative_event = { id = budevents.9 days = 7 } 
+	}
+	option = { #decide against contemplation
+		name = EVT_BUD_4_OPTC
+		remove_trait = in_hiding
+		clr_character_flag = buddhist_meditation
+	}
+}
+narrative_event = {
 	id = budevents.5
 	title = budevent5_title
 	#Have the Same Intro in the localization just change out the Sutras that you choose to recites
@@ -486,6 +515,27 @@ character_event = {
 		ai_chance = {
 			factor = 10
 		}
+	}
+}
+narrative_event = {
+	id = budevents.9
+	title = budevents9_title
+	desc = budevent9_desc
+	picture = GFX_evt_buddhist_contemplation
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {trait = mystic}
+		name = EVT_BUD_9_OPTA
+		piety = 200
+		remove_trait = in_hiding
+	}
+	option = {
+		trigger = {NOT = {trait = mystic}}
+		name = EVT_BUD_9_OPTB
+		piety = 100
+		remove_trait = in_hiding
 	}
 }
 

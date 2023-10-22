@@ -1,0 +1,89 @@
+namespace = hui_events
+
+narrative_event = {
+    id = hui_events.1
+	title=hui_eventstitle1
+	desc = EVTDESChui_events1
+	picture = GFX_evt_chinese_thinkers
+	border = GFX_event_narrative_frame_religion 
+	
+	hide_from = yes 
+	is_triggered_only = yes 
+
+	option = { #Cross in a Lotus
+	    name = EVTOPTAhui_events1
+		piety = 50
+		add_trait = sympathy_christendom
+		remove_trait = in_hiding
+	}
+	option = { #Dragon
+	    name = EVTOPTBhui_events1
+		piety = 50
+		add_trait = sympathy_eastern
+		remove_trait = in_hiding
+	}
+	option = { #A wise word
+	    name = EVTOPTChui_events1
+		piety = 50
+		add_trait = sympathy_oldworld
+		remove_trait = in_hiding
+	}
+	option = { #The Lotus
+	    name = EVTOPTDhui_events1
+		piety = 50
+		add_trait = sympathy_buddhist
+		remove_trait = in_hiding
+	}
+}
+
+narrative_event = {
+	id = hui_events.2
+	title = hui_events2_title
+	desc = hui_events2_desc
+	picture = GFX_evt_daoist_master
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {trait = mystic}
+		name = EVT_hui_events2_OPTA
+		health = 0.5
+		learning = 2
+		add_trait = vegetarian
+		narrative_event = { id = hui_events.3 days = 7 } 
+	}
+	option = {
+		trigger = {NOT = {trait = mystic}}
+		name = EVT_hui_events2_OPTB
+		health = 0.15
+		add_trait = vegetarian
+		narrative_event = { id = hui_events.3 days = 7 } 
+	}
+	option = { #decide against contemplation
+		name = EVT_hui_events2_OPTC
+		remove_trait = in_hiding
+		clr_character_flag = neidan_meditation
+	}
+}
+
+narrative_event = {
+	id = hui_events.3
+	title = hui_events3_title
+	desc = hui_events3_desc
+	picture = GFX_evt_daoist_master
+	
+	is_triggered_only = yes
+	
+	option = {
+		trigger = {trait = mystic}
+		name = EVT_hui_events3_OPTA
+		piety = 200
+		remove_trait = in_hiding
+	}
+	option = {
+		trigger = {NOT = {trait = mystic}}
+		name = EVT_hui_events3_OPTB
+		piety = 100
+		remove_trait = in_hiding
+	}
+}
