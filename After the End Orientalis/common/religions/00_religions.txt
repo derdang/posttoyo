@@ -812,7 +812,6 @@ muslim = {
 		icon = 6
 		
 		color = { 0 0 0 }
-		parent = renewalist
 		
 		scripture_name = THE_KORAN
 		priest_title = IMAM_PRIEST
@@ -870,6 +869,8 @@ muslim = {
 		
 		intermarry = salafi
 		intermarry = renewalist
+		intermarry = kebatinan
+		intermarry = nusantara
 	}
 	
 	nusantara = { #Aswaja
@@ -881,7 +882,7 @@ muslim = {
 		color = { 130 219 90 }
 		
 		scripture_name = THE_KORAN
-		priest_title = KYAI
+		priest_title = SYEKH_PRIEST
 		
 		high_god_name = GOD_ALLAH
 		
@@ -889,7 +890,7 @@ muslim = {
 			GOD_ALLAH GOD_THE_GREATEST
 		}
 		evil_god_names = {
-			IBLIS SHAYTAN
+			IBLIS SETAN
 		}
 		
 		priests_can_marry = yes
@@ -914,20 +915,19 @@ muslim = {
 		icon = 9
 		heresy_icon = 9
 		
-		color = { 90 169 50 }
-		
-		parent=nusantara
+		color = { 0.95 0.95 0.5 }
+	
 		
 		scripture_name = THE_KORAN
-		priest_title = KYAI
+		priest_title = GURU_PRIEST
 		
 		high_god_name = GOD_ALLAH
 		
 		god_names = {
-			GOD_ALLAH GOD_THE_GREATEST
+			GOD_ALLAH GOD_THE_GREATEST GOD_SPIRITS GOD_JINN
 		}
 		evil_god_names = {
-			IBLIS SHAYTAN
+			IBLIS SETAN
 		}
 		
 		priests_can_marry = yes
@@ -938,7 +938,6 @@ muslim = {
 		
 		attacking_same_religion_piety_loss = yes
 		
-		intermarry = renewalist
 		intermarry = nusantara
 		intermarry = pancasila
 		intermarry = hui
