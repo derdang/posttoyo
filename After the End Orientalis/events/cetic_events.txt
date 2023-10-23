@@ -649,7 +649,6 @@ province_event = {
 	trigger = {
 		OR = {
 			empire = { title = e_china }
-			empire = { title = e_new_california }
 		}
 		owner = {
 			controls_religion = no
@@ -681,7 +680,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		government = bureaucratic_government
+		government = sinic_bureaucracy_government
 		controls_religion = no
 		has_character_modifier = imperial_favor
 		FROM = {
@@ -2305,9 +2304,8 @@ narrative_event = {
 		name = EVTOPTBCETIC105
 		trigger = {
 			OR = {
-				government = bureaucratic_government
+				government = sinic_bureaucracy_government
 				de_jure_liege = e_china
-				de_jure_liege = e_new_california
 				culture_group = han
 			}
 			NOR = {
@@ -2322,9 +2320,8 @@ narrative_event = {
 			NOR = {
 				has_landed_title = e_china
 				has_title_flag = has_chinese_mandate
-				government = bureaucratic_government
+				government = sinic_bureaucracy_government
 				de_jure_liege = e_china
-				de_jure_liege = e_new_california
 				culture_group = han
 			}
 		}
@@ -3054,9 +3051,7 @@ character_event = {
 		trait = grand_secretary
 		OR = {
 			e_china = { holder_scope = { trait = figurehead } }
-			e_new_california = { holder_scope = { trait = figurehead } }
 			e_china = { holder_scope = { trait = weak_emperor } }
-			e_new_california = { holder_scope = { trait = weak_emperor } }
 		}
 		NOR = {
 			has_character_flag = chosen_heir_gnator
@@ -3132,7 +3127,7 @@ character_event = {
 					is_adult = yes
 					prisoner = no
 					higher_real_tier_than = COUNT
-					government = bureaucratic_government
+					government = sinic_bureaucracy_government
 					NOR = {
 						has_landed_title = e_china
 						has_title_flag = has_chinese_mandate
@@ -3417,7 +3412,7 @@ character_event = {
 					}
 				}
 				preferred_limit = {
-					government = bureaucratic_government
+					government = sinic_bureaucracy_government
 					is_landed = yes
 				}
 				preferred_limit = {
@@ -4911,11 +4906,6 @@ letter_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		e_new_california = {
-			holder_scope = {
-				save_event_target_as = emperor_sway
-			}
-		}
 		e_china = {
 			holder_scope = {
 				save_event_target_as = emperor_sway
@@ -5122,22 +5112,6 @@ character_event = {
 			text = impauth_decrease_10_TT
 			hidden_tooltip = {
 				change_variable = { which = global_imp_auth value = -10 }
-			}
-		}
-		e_new_california = {
-			holder_scope = {
-				remove_opinion = {
-					modifier = gnator_succeed
-					who = ROOT
-				}
-			}
-		}
-		e_new_california = {
-			holder_scope = {
-				opinion = {
-					modifier = gnator_betrayed
-					who = ROOT
-				}
 			}
 		}
 		e_china = {
@@ -5898,7 +5872,7 @@ character_event = {
 		hidden_tooltip = {
 			if = {
 				limit = {
-					government = bureaucratic_government
+					government = sinic_bureaucracy_government
 				}
 				any_demesne_title = {
 					limit = {
@@ -6444,15 +6418,6 @@ character_event = {
 									}
 								}
 							}
-							e_new_california = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value > 20
-									}
-								}
-							}
 						}
 					}
 				}
@@ -6470,15 +6435,6 @@ character_event = {
 						# in_hiding = no
 						OR = {
 							e_china = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value > 40
-									}
-								}
-							}
-							e_new_california = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6512,15 +6468,6 @@ character_event = {
 									}
 								}
 							}
-							e_new_california = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value > 60
-									}
-								}
-							}
 						}
 					}
 				}
@@ -6538,15 +6485,6 @@ character_event = {
 						# in_hiding = no
 						OR = {
 							e_china = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value > 80
-									}
-								}
-							}
-							e_new_california = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6895,15 +6833,6 @@ character_event = {
 									}
 								}
 							}
-							e_new_california = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value < -20
-									}
-								}
-							}
 						}
 					}
 				}
@@ -6921,15 +6850,6 @@ character_event = {
 						# in_hiding = no
 						OR = {
 							e_china = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value < -40
-									}
-								}
-							}
-							e_new_california = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6963,15 +6883,6 @@ character_event = {
 									}
 								}
 							}
-							e_new_california = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value < -60
-									}
-								}
-							}
 						}
 					}
 				}
@@ -6997,15 +6908,6 @@ character_event = {
 									}
 								}
 							}
-							e_new_california = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value < -80
-									}
-								}
-							}
 						}
 					}
 				}
@@ -7023,12 +6925,6 @@ character_event = {
 						# in_hiding = no
 						OR = {
 							e_china = {
-								has_holder = yes
-								holder_scope = {
-									is_rival = PREVPREV
-								}
-							}
-							e_new_california = {
 								has_holder = yes
 								holder_scope = {
 									is_rival = PREVPREV
@@ -7284,7 +7180,7 @@ character_event = {
 			has_title_flag = bureaucracy_set
 		}
 		# ROOT = {
-			# government = bureaucratic_government
+			# government = sinic_bureaucracy_government
 		# }
 		higher_real_tier_than = BARON
 	}
@@ -7339,11 +7235,8 @@ character_event = {
 					culture_group = korean
 				}
 				is_patrician = no
-				NOT = { is_government_potential = colonial_government }
-				NOT = { is_government_potential = mex_imperial_government }
 				NOT = { is_government_potential = roman_imperial_government }
 				NOT = { is_government_potential = order_government }
-				NOT = { is_government_potential = military_governorate }
 			}
 		}
 		OR = {
@@ -8180,7 +8073,7 @@ character_event = {
 	# desc = EVTDESCCETIC533
 	# picture = GFX_evt_china_isolationist
 	# trigger = {
-		# government = bureaucratic_government
+		# government = sinic_bureaucracy_government
 		# realm_size = 300
 		# NOR = {
 			# primary_title = {
@@ -8396,7 +8289,7 @@ character_event = {
 		# primary_title = {
 			# has_title_flag = bureaucracy_set
 		# }
-		# government = bureaucratic_government
+		# government = sinic_bureaucracy_government
 		
 		# OR = {
 			# NOT = {
@@ -8434,7 +8327,7 @@ character_event = {
 		# any_demesne_province = {
 			# has_province_modifier = bureau_roads
 		# }
-		# government = bureaucratic_government
+		# government = sinic_bureaucracy_government
 		# primary_title = {
 			# has_title_flag = bureaucracy_set
 		# }
@@ -8467,7 +8360,7 @@ character_event = {
 	# hide_window = yes
 	# is_triggered_only = yes
 	# trigger = {
-		# government = bureaucratic_government
+		# government = sinic_bureaucracy_government
 		# higher_real_tier_than = BARON
 	# }
 	# immediate = {
@@ -8541,7 +8434,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTACETIC543
-		set_government_type = bureaucratic_government
+		set_government_type = sinic_bureaucracy_government
 		primary_title = {
 			clr_title_flag = devolved_bureaucracy
 		}
@@ -9617,7 +9510,7 @@ character_event = {
 	
 	trigger = {
 		in_command = no
-		government = bureaucratic_government
+		government = sinic_bureaucracy_government
 		NOT = {
 			has_minor_title = title_evaluator_of_merit
 		}
@@ -9645,7 +9538,7 @@ character_event = {
 					tier = emperor
 				}
 			}
-			government = bureaucratic_government
+			government = sinic_bureaucracy_government
 			NOT = {
 				any_vassal = {
 					has_minor_title = title_evaluator_of_merit
@@ -9659,7 +9552,7 @@ character_event = {
 			OR = {
 				any_vassal = {
 					age = 16
-					government = bureaucratic_government
+					government = sinic_bureaucracy_government
 					is_female = no
 					prisoner = no
 					NOT = {
@@ -9682,7 +9575,7 @@ character_event = {
 				}
 				any_courtier = {
 					age = 16
-					government = bureaucratic_government
+					government = sinic_bureaucracy_government
 					is_female = no
 					prisoner = no
 					OR = {
@@ -9757,7 +9650,7 @@ character_event = {
 				any_courtier = {
 					age = 16
 					is_female = no
-					government = bureaucratic_government
+					government = sinic_bureaucracy_government
 					prisoner = no
 					NOT = { character = PREV }
 					NOT = { character = ROOT }
@@ -9782,7 +9675,7 @@ character_event = {
 			random_courtier = {
 				limit = {
 					age = 16
-					government = bureaucratic_government
+					government = sinic_bureaucracy_government
 					#is_female = no
 					prisoner = no
 					NOT = { character = PREV }
@@ -9849,7 +9742,7 @@ character_event = {
 					}
 					age = 16
 					is_female = no
-					government = bureaucratic_government
+					government = sinic_bureaucracy_government
 					prisoner = no
 					NOT = {
 						character = ROOT
@@ -9876,7 +9769,7 @@ character_event = {
 					}
 					age = 16
 					is_female = no
-					government = bureaucratic_government
+					government = sinic_bureaucracy_government
 					prisoner = no
 					NOT = {
 						character = ROOT

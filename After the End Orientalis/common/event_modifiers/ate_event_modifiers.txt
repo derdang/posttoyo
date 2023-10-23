@@ -51,9 +51,83 @@ quake_building_codes = {
 	icon = 4
 }
 
+imperial_authority = {
+	icon = 10
+}
 bureaucracy = {
 	icon = 11
 	is_visible = { 
 		character = FROM
 	}
+}
+influenced_authority = {
+	icon = 9
+}
+
+imperial_favor = {
+	monthly_character_piety = 0.5
+	monthly_character_prestige = 0.5
+	general_opinion = 10
+	church_opinion = 10
+	icon = 16
+}
+
+imperial_censure = {
+	monthly_character_piety = -0.5
+	monthly_character_prestige = -0.5
+	general_opinion = -20
+	church_opinion = -20
+	icon = 34
+}
+low_bureaucracy = {
+	icon = 29
+	global_tax_modifier = -0.25
+	global_levy_size = -0.1
+	global_revolt_risk = 0.02
+	build_time_modifier = 0.2
+	build_cost_modifier = 0.2
+	demesne_size = -2
+}
+high_bureaucracy = {
+	icon = 3
+	global_tax_modifier = 0.2
+	global_levy_size = 0.2
+	global_revolt_risk = -0.05
+	build_time_modifier = -0.2
+	build_cost_modifier = -0.10
+	demesne_size = 2
+}
+poor_reforms = {
+	icon = 33
+	global_tax_modifier = -0.05
+	global_levy_size = -0.05
+	global_revolt_risk = 0.01
+	build_time_modifier = 0.10
+	build_cost_modifier = 0.10
+}
+good_reforms = {
+	icon = 15
+	global_tax_modifier = 0.05
+	global_levy_size = 0.05
+	global_revolt_risk = -0.02
+	build_time_modifier = -0.10
+	build_cost_modifier = -0.05
+}
+sold_bureaucratic_positions = {
+	icon = 33
+	global_tax_modifier = -0.05
+	global_levy_size = -0.05
+	build_time_modifier = 0.10
+	build_cost_modifier = 0.10
+	general_opinion = -20
+	just_opinion = -25
+}
+bureau_offices = {
+	icon = 12
+	global_tax_modifier = -0.05
+}
+
+bureau_roads = {
+	icon = 97
+	global_tax_modifier = -0.03
 }
