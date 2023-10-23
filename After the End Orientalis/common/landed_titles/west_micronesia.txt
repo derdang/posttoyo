@@ -1,17 +1,16 @@
-
 e_west_micronesia = {
 	color={ 40 1 143 }
 	color2={ 255 255 20 }
 	
 	capital = 973 # c_guam
-	culture = chamorro
 	
 	k_mariana = {
 		color={ 30 11 138 }
 		color2={ 255 255 255 }
 		
 		capital = 973 # c_guam
-		culture = chamorro
+		
+		chamorro = "Islas Mariånas"
 		
 		d_guam = {
 			color={ 10 31 128 }
@@ -19,9 +18,13 @@ e_west_micronesia = {
 			
 			capital = 973 # c_guam
 			
+			chamorro = "Guåhan"
+			
 			c_guam = { # 973
 				color={ 0 41 123 }
 				color2={ 255 255 255 }
+				
+				chamorro = "Guåhan"
 				
 				holy_site = americanist_reformed
 				holy_site = americanist
@@ -41,9 +44,13 @@ e_west_micronesia = {
 			
 			capital = 974 # c_northern_mariana
 			
+			chamorro = "Islas Mariånas"
+			
 			c_northern_mariana = { # 974
 				color={ 0 113 188 }
 				color2={ 255 255 255 }
+				
+				chamorro = "Siha Na Islas Mariånas"
 				
 				b_saipan = {}
 				b_tiinian = {}
@@ -60,7 +67,6 @@ e_west_micronesia = {
 		color2={ 255 255 255 }
 		
 		capital = 975 # c_palau
-		culture = palauan
 		
 		d_palau = {
 			color={ 22 44 144 }
@@ -90,9 +96,13 @@ e_west_micronesia = {
 			
 			capital = 976 # c_yap_state
 			
+			yapese = "Waqab"
+			
 			c_yap_state = { # 976
 				color={ 16 55 133 }
 				color2={ 255 255 255 }
+				
+				yapese = "Waqab"
 				
 				holy_site = americanist_reformed
 				holy_site = americanist
