@@ -7,6 +7,18 @@ is_vajrayana = {
 		religion = dorje_shugden
 	}
 }
+is_nusantaran_sphere = {
+	OR = {
+		culture_group = malayan
+		culture_group = nusantaran
+		culture_group = barrier_batak
+		culture_group = dayak
+		culture_group = maluku
+		culture_group = sulawesi
+		culture_group = timor
+		culture_group = philippine
+	}
+}
 is_salafi_religion = {
 	OR = {
 		religion = salafi
