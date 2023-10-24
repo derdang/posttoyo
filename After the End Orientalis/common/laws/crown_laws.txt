@@ -562,248 +562,248 @@ de_jure_laws = {
 	}
 	# Crown Term Length
 	
-	crown_term_length_0 = { # Annual
-		show_as_title = yes
-		group = crown_term_length
+	# crown_term_length_0 = { # Annual
+		# show_as_title = yes
+		# group = crown_term_length
 		
-		potential = {
-			always = no
-		}
-		allow = {
-			# Prestige cost
-			OR = {
-				has_law = crown_term_length_1
-				holder_scope = { prestige = 100 }
-			}
-			OR = {
-				has_law = crown_term_length_1
-				has_law = crown_term_length_2
-				holder_scope = { prestige = 200 }
-			}
-			OR = {
-				has_law = crown_term_length_1
-				has_law = crown_term_length_2
-				has_law = crown_term_length_3
-				holder_scope = { prestige = 300 }
-			}
-		}
-		revoke_allowed = { always = no }
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.1
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { has_law = crown_term_length_1 }
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { has_law = crown_term_length_1 }
-				NOT = { has_law = crown_term_length_2 }
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { has_law = crown_term_length_1 }
-				NOT = { has_law = crown_term_length_2 }
-				NOT = { has_law = crown_term_length_3 }
-			}
-			# Annual elections are a terrible idea
-		}
-		ai_will_revoke = { factor = 0 }
-		pass_effect = {
-			if = {
-				limit = { has_law = crown_term_length_2 }
-				holder_scope = { prestige = -100 }
-			}
-			if = {
-				limit = { has_law = crown_term_length_3 }
-				holder_scope = { prestige = -200 }
-			}
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = crown_term_length_1
-				revoke_law = crown_term_length_2
-				revoke_law = crown_term_length_3
-			}
-		}
-	}
+		# potential = {
+			# always = no
+		# }
+		# allow = {
+			# # Prestige cost
+			# OR = {
+				# has_law = crown_term_length_1
+				# holder_scope = { prestige = 100 }
+			# }
+			# OR = {
+				# has_law = crown_term_length_1
+				# has_law = crown_term_length_2
+				# holder_scope = { prestige = 200 }
+			# }
+			# OR = {
+				# has_law = crown_term_length_1
+				# has_law = crown_term_length_2
+				# has_law = crown_term_length_3
+				# holder_scope = { prestige = 300 }
+			# }
+		# }
+		# revoke_allowed = { always = no }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0.1
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { has_law = crown_term_length_1 }
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { has_law = crown_term_length_1 }
+				# NOT = { has_law = crown_term_length_2 }
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { has_law = crown_term_length_1 }
+				# NOT = { has_law = crown_term_length_2 }
+				# NOT = { has_law = crown_term_length_3 }
+			# }
+			# # Annual elections are a terrible idea
+		# }
+		# ai_will_revoke = { factor = 0 }
+		# pass_effect = {
+			# if = {
+				# limit = { has_law = crown_term_length_2 }
+				# holder_scope = { prestige = -100 }
+			# }
+			# if = {
+				# limit = { has_law = crown_term_length_3 }
+				# holder_scope = { prestige = -200 }
+			# }
+		# }
+		# effect = {
+			# hidden_tooltip = {
+				# revoke_law = crown_term_length_1
+				# revoke_law = crown_term_length_2
+				# revoke_law = crown_term_length_3
+			# }
+		# }
+	# }
 	
-	crown_term_length_1 = { # Every Four Years
-		show_as_title = yes
-		group = crown_term_length
+	# crown_term_length_1 = { # Every Four Years
+		# show_as_title = yes
+		# group = crown_term_length
 		
-		potential = {
-			# These are a republican thing
-			holder_scope = {
-				OR = {
-					government = playable_republic_government
-				}
-			}
-		}
-		allow = {
-			# Prestige cost
-			OR = {
-				has_law = crown_term_length_0
-				has_law = crown_term_length_2
-				holder_scope = { prestige = 100 }
-			}
-			OR = {
-				has_law = crown_term_length_0
-				has_law = crown_term_length_2
-				has_law = crown_term_length_3
-				holder_scope = { prestige = 200 }
-			}
-		}
-		revoke_allowed = { always = no }
-		ai_will_do = {
-			factor = 1
-			# Inertia
-			modifier = {
-				factor = 0.1
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { has_law = crown_term_length_0 }
-				NOT = { has_law = crown_term_length_2 }
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { has_law = crown_term_length_0 }
-				NOT = { has_law = crown_term_length_2 }
-				NOT = { has_law = crown_term_length_3 }
-			}
-		}
-		ai_will_revoke = { factor = 0 }
-		pass_effect = {
-			if = {
-				limit = { has_law = crown_term_length_3 }
-				holder_scope = { prestige = -100 }
-			}
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = crown_term_length_0
-				revoke_law = crown_term_length_2
-				revoke_law = crown_term_length_3
-			}
-		}
-	}
+		# potential = {
+			# # These are a republican thing
+			# holder_scope = {
+				# OR = {
+					# government = playable_republic_government
+				# }
+			# }
+		# }
+		# allow = {
+			# # Prestige cost
+			# OR = {
+				# has_law = crown_term_length_0
+				# has_law = crown_term_length_2
+				# holder_scope = { prestige = 100 }
+			# }
+			# OR = {
+				# has_law = crown_term_length_0
+				# has_law = crown_term_length_2
+				# has_law = crown_term_length_3
+				# holder_scope = { prestige = 200 }
+			# }
+		# }
+		# revoke_allowed = { always = no }
+		# ai_will_do = {
+			# factor = 1
+			# # Inertia
+			# modifier = {
+				# factor = 0.1
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { has_law = crown_term_length_0 }
+				# NOT = { has_law = crown_term_length_2 }
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { has_law = crown_term_length_0 }
+				# NOT = { has_law = crown_term_length_2 }
+				# NOT = { has_law = crown_term_length_3 }
+			# }
+		# }
+		# ai_will_revoke = { factor = 0 }
+		# pass_effect = {
+			# if = {
+				# limit = { has_law = crown_term_length_3 }
+				# holder_scope = { prestige = -100 }
+			# }
+		# }
+		# effect = {
+			# hidden_tooltip = {
+				# revoke_law = crown_term_length_0
+				# revoke_law = crown_term_length_2
+				# revoke_law = crown_term_length_3
+			# }
+		# }
+	# }
 	
-	crown_term_length_2 = { # Every Six Years
-		show_as_title = yes
-		group = crown_term_length
+	# crown_term_length_2 = { # Every Six Years
+		# show_as_title = yes
+		# group = crown_term_length
 		
-		potential = {
-			# These are a republican thing
-			holder_scope = {
-				OR = {
-					government = playable_republic_government
-				}
-			}
-		}
-		allow = {
-			# Prestige cost
-			OR = {
-				has_law = crown_term_length_1
-				has_law = crown_term_length_3
-				holder_scope = { prestige = 100 }
-			}
-		}
-		revoke_allowed = { always = no }
-		ai_will_do = {
-			factor = 1
-			# Inertia
-			modifier = {
-				factor = 0.1
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { has_law = crown_term_length_1 }
-				NOT = { has_law = crown_term_length_3 }
-			}
-		}
-		ai_will_revoke = { factor = 0 }
-		pass_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_law = crown_term_length_0
-					}
-				}
-				holder_scope = { prestige = -100 }
-			}
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = crown_term_length_0
-				revoke_law = crown_term_length_1
-				revoke_law = crown_term_length_3
-			}
-		}
-	}
+		# potential = {
+			# # These are a republican thing
+			# holder_scope = {
+				# OR = {
+					# government = playable_republic_government
+				# }
+			# }
+		# }
+		# allow = {
+			# # Prestige cost
+			# OR = {
+				# has_law = crown_term_length_1
+				# has_law = crown_term_length_3
+				# holder_scope = { prestige = 100 }
+			# }
+		# }
+		# revoke_allowed = { always = no }
+		# ai_will_do = {
+			# factor = 1
+			# # Inertia
+			# modifier = {
+				# factor = 0.1
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { has_law = crown_term_length_1 }
+				# NOT = { has_law = crown_term_length_3 }
+			# }
+		# }
+		# ai_will_revoke = { factor = 0 }
+		# pass_effect = {
+			# if = {
+				# limit = {
+					# OR = {
+						# has_law = crown_term_length_0
+					# }
+				# }
+				# holder_scope = { prestige = -100 }
+			# }
+		# }
+		# effect = {
+			# hidden_tooltip = {
+				# revoke_law = crown_term_length_0
+				# revoke_law = crown_term_length_1
+				# revoke_law = crown_term_length_3
+			# }
+		# }
+	# }
 
-	crown_term_length_3 = { # Every Ten Years
-		show_as_title = yes
-		group = crown_term_length
+	# crown_term_length_3 = { # Every Ten Years
+		# show_as_title = yes
+		# group = crown_term_length
 		
-		potential = {
-			# These are a republican thing
-			holder_scope = {
-				OR = {
-					government = playable_republic_government
-				}
-			}
-		}
-		allow = {
-			# Prestige cost
-			OR = {
-				has_law = crown_term_length_2
-				holder_scope = { prestige = 100 }
-			}
-			OR = {
-				has_law = crown_term_length_1
-				has_law = crown_term_length_2
-				holder_scope = { prestige = 200 }
-			}
-		}
-		revoke_allowed = { always = no }
-		ai_will_do = {
-			factor = 1
-			# Inertia
-			modifier = {
-				factor = 0.1
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { has_law = crown_term_length_2 }
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { has_law = crown_term_length_1 }
-				NOT = { has_law = crown_term_length_2 }
-			}
-		}
-		ai_will_revoke = { factor = 0 }
-		pass_effect = {
-			if = {
-				limit = { has_law = crown_term_length_1 }
-				holder_scope = { prestige = -100 }
-			}
-			if = {
-				limit = { has_law = crown_term_length_0 }
-				holder_scope = { prestige = -200 }
-			}
-		}
-		effect = {
-			hidden_tooltip = {
-				revoke_law = crown_term_length_0
-				revoke_law = crown_term_length_1
-				revoke_law = crown_term_length_2
-			}
-		}
-	}
+		# potential = {
+			# # These are a republican thing
+			# holder_scope = {
+				# OR = {
+					# government = playable_republic_government
+				# }
+			# }
+		# }
+		# allow = {
+			# # Prestige cost
+			# OR = {
+				# has_law = crown_term_length_2
+				# holder_scope = { prestige = 100 }
+			# }
+			# OR = {
+				# has_law = crown_term_length_1
+				# has_law = crown_term_length_2
+				# holder_scope = { prestige = 200 }
+			# }
+		# }
+		# revoke_allowed = { always = no }
+		# ai_will_do = {
+			# factor = 1
+			# # Inertia
+			# modifier = {
+				# factor = 0.1
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { has_law = crown_term_length_2 }
+			# }
+			# modifier = {
+				# factor = 0.1
+				# NOT = { has_law = crown_term_length_1 }
+				# NOT = { has_law = crown_term_length_2 }
+			# }
+		# }
+		# ai_will_revoke = { factor = 0 }
+		# pass_effect = {
+			# if = {
+				# limit = { has_law = crown_term_length_1 }
+				# holder_scope = { prestige = -100 }
+			# }
+			# if = {
+				# limit = { has_law = crown_term_length_0 }
+				# holder_scope = { prestige = -200 }
+			# }
+		# }
+		# effect = {
+			# hidden_tooltip = {
+				# revoke_law = crown_term_length_0
+				# revoke_law = crown_term_length_1
+				# revoke_law = crown_term_length_2
+			# }
+		# }
+	# }
 	
 	# Diwan Factions
 		

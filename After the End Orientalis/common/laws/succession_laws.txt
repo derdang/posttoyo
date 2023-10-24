@@ -83,12 +83,8 @@ succession_laws = {
 		vassal_opinion = 5
 	
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
-				OR = { 
-					title = e_byzantium
-					title = e_roman_empire
-				}
 			}
 			holder_scope = {
 				OR = {
@@ -137,6 +133,16 @@ succession_laws = {
 							NOR = { 
 								religion = pagan
 								religion = ua_dab
+								religion = seirei
+								religion = muist
+								religion = shenist
+								religion = donyi_polo
+								religion = khanist
+								religion = mo
+								religion = chuma
+								religion = heilong
+								religion = shamanist
+								religion = ak_jeng
 							}
 						}
 					}
@@ -194,12 +200,8 @@ succession_laws = {
 		dynasty_opinion = 5
 	
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
-				OR = { 
-					title = e_byzantium
-					title = e_roman_empire
-				}
 			}
 			holder_scope = {
 				is_nomadic = no
@@ -295,12 +297,8 @@ succession_laws = {
 		dynasty_opinion = 5
 	
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
-				OR = { 
-					title = e_byzantium
-					title = e_roman_empire
-				}
 			}
 			holder_scope = {
 				OR = {
@@ -416,12 +414,8 @@ succession_laws = {
 		dynasty_opinion = 5
 	
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
-				OR = { 
-					title = e_byzantium
-					title = e_roman_empire
-				}
 			}
 			holder_scope = {
 				OR = {
@@ -590,12 +584,8 @@ succession_laws = {
 		child_opinion = -10
 		dynasty_opinion = -5
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
-				OR = { 
-					title = e_byzantium
-					title = e_roman_empire
-				}
 			}
 			holder_scope = {
 				NOT = { religion_group = muslim }
@@ -620,8 +610,6 @@ succession_laws = {
 						}
 						OR = {
 							NOT = { religion_group = pagan_group }
-							religion = bon
-							religion = bon_reformed
 							is_reformed_religion = yes
 							religion = hellenic_pagan
 						}
@@ -752,12 +740,8 @@ succession_laws = {
 		dynasty_opinion = -5
 		vassal_opinion = 10
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
-				OR = { 
-					title = e_byzantium
-					title = e_roman_empire
-				}
 			}
 			holder_scope = {
 				OR = {
@@ -859,7 +843,7 @@ succession_laws = {
 		vassal_opinion = 15
 		vassal_limit = 20
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
 			}
 			OR = {
@@ -981,7 +965,7 @@ succession_laws = {
 		dynasty_opinion = 5
 		vassal_opinion = 5
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
 
 			}
@@ -1102,7 +1086,7 @@ succession_laws = {
 		child_opinion = -10
 		dynasty_opinion = -5
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
 
 			}
@@ -1115,7 +1099,7 @@ succession_laws = {
 						}
 					}
 				}
-				culture = khalka
+				culture = khalkha
 				
 				is_merchant_republic = no
 				is_patrician = no
@@ -1228,18 +1212,6 @@ succession_laws = {
 				}
 				has_law = centralization_4
 			}
-			OR = {
-				is_feudal = yes
-				custom_tooltip = { 
-					text = TT_IS_NEPMESE
-					hidden_tooltip = {
-						OR = { 
-							religion = nepmese
-							religion = nepmese_reformed
-						}
-					}
-				}
-			}
 		}
 		
 		effect = {
@@ -1255,7 +1227,7 @@ succession_laws = {
 		#child_opinion = 30
 		#dynasty_opinion = 10
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
 
 			}
@@ -1350,12 +1322,8 @@ succession_laws = {
 	
 	succ_open_elective = {
 		potential = {
-			NAND = { 
+			NOT = { 
 				has_law = succ_byzantine_elective 
-				OR = { 
-					title = e_byzantium
-					title = e_roman_empire
-				}
 			}
 			NOT = {title = d_cao_dai}
 			temporary = no
@@ -1619,20 +1587,6 @@ gender_laws = {
 				}
 			}
 			
-			modifier = {
-				factor = 100
-				holder_scope = {
-					OR = {
-						religion = haredi
-						religion = ahlul_hadith
-						religion = revivalist
-					}
-					primary_title = {
-						NOT = { has_law = status_of_women_3 }
-						NOT = { has_law = status_of_women_4 }
-					}
-				}
-			}
 		}
 	}
 	
@@ -1706,12 +1660,7 @@ gender_laws = {
 		allow = {
 			OR = {
 				holder_scope = {
-					OR = {
-						religion = haskalah
-						religion = neuhumanist
-						religion = glorian
-						has_religion_feature = religion_equal
-					}
+					has_religion_feature = religion_equal
 				}
 				OR = {
 					ROOT = { holder_scope = { primary_title = { has_law = status_of_women_4 } } }

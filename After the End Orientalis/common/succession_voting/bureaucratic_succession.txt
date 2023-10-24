@@ -110,7 +110,7 @@ bureaucratic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_grand_secretary
 			OR = {
 				trait = grand_secretary
-				has_minor_title = title_secretary
+				has_minor_title = title_grand_secretary
 			}
 		}
 		
@@ -136,7 +136,7 @@ bureaucratic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_grand_secretary
 			OR = {
 				trait = grand_secretary
-				has_minor_title = title_secretary
+				has_minor_title = title_grand_secretary
 			}
 		}
 		
@@ -562,7 +562,7 @@ bureaucratic_elective = {
 				has_job_title = job_spiritual
 				has_minor_title = title_councilmember_king #Generic advisors
 				has_minor_title = title_councilmember_emperor
-				has_minor_title = title_secretary
+				has_minor_title = title_grand_secretary
 				trait = grand_secretary
 			}
 		}
@@ -1174,7 +1174,7 @@ bureaucratic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_stewardship
 			FROM = { 
 				OR = { 
-					has_minor_title = title_secretary
+					has_minor_title = title_grand_secretary
 					has_job_title = job_treasurer
 				} 
 				stewardship = 10
@@ -1188,7 +1188,7 @@ bureaucratic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_stewardship
 			FROM = { 
 				OR = { 
-					has_minor_title = title_secretary
+					has_minor_title = title_grand_secretary
 					has_job_title = job_treasurer
 				} 
 				stewardship = 12
@@ -1202,7 +1202,7 @@ bureaucratic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_stewardship
 			FROM = { 
 				OR = { 
-					has_minor_title = title_secretary
+					has_minor_title = title_grand_secretary
 					has_job_title = job_treasurer
 				} 
 				stewardship = 16
@@ -1216,7 +1216,7 @@ bureaucratic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_stewardship
 			FROM = { 
 				OR = { 
-					has_minor_title = title_secretary
+					has_minor_title = title_grand_secretary
 					has_job_title = job_treasurer
 				} 
 				stewardship = 18
@@ -1230,7 +1230,7 @@ bureaucratic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_stewardship
 			FROM = { 
 				OR = { 
-					has_minor_title = title_secretary
+					has_minor_title = title_grand_secretary
 					has_job_title = job_treasurer
 				} 
 				stewardship = 20
@@ -1244,7 +1244,7 @@ bureaucratic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_stewardship
 			FROM = { 
 				OR = { 
-					has_minor_title = title_secretary
+					has_minor_title = title_grand_secretary
 					has_job_title = job_treasurer
 				} 
 				stewardship = 30
@@ -1341,7 +1341,6 @@ bureaucratic_elective = {
 		}
 		additive_modifier = { # Roman Orators
 			value = 20
-			culture = beltway
 			FROM = { 
 				diplomacy = 18
 				NOT = { 
@@ -1351,7 +1350,6 @@ bureaucratic_elective = {
 		}
 		additive_modifier = { # Roman Orators
 			value = 25
-			culture = beltway
 			FROM = { 
 				diplomacy = 20
 				NOT = { 
@@ -1361,7 +1359,6 @@ bureaucratic_elective = {
 		}
 		additive_modifier = { # Roman Orators
 			value = 30
-			culture = beltway
 			FROM = { 
 				diplomacy = 30
 			}
