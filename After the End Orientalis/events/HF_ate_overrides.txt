@@ -20,7 +20,7 @@ character_event = {
 			FROM = { save_event_target_as = scoped_temple_barony } #Only does this on the first go
 		}
 	}
-	option = { #MacArthur
+	option = { #Gadao
 		name = EVTOPTAHF23200
 		custom_tooltip = { text = EVTOPTAHF23200_TT }
 		hidden_tooltip = { character_event = { id = HFATE.23201 } }
@@ -95,7 +95,7 @@ character_event = {
 	}
 }
 
-#MacArthur
+#Gadao
 character_event = {
 	id = HFATE.23201
 	desc = EVTDESCHF23201
@@ -104,21 +104,21 @@ character_event = {
 	has_dlc = "Holy Fury"
 	is_triggered_only = yes
 	
-	option = { #MacArthur
+	option = { #Gadao
 		name = EVTOPTAHF23201
 		ROOT = { 
 			wealth = -250
 			piety = -200
 			add_character_modifier = { 
-				name = dedicated_to_macarthur
+				name = dedicated_to_gadao
 				duration = 3650
 				stacking = yes #In case a player invests enough money to dedicate multiple temples within a lifetime.
 			} 
 		}
 		event_target:scoped_temple_barony = { 
 			show_scope_change = no
-			set_flag = flag_dedicated_to_macarthur
-			add_building = tp_shrine_macarthur
+			set_flag = flag_dedicated_to_gadao
+			add_building = tp_shrine_gadao
 		}
 		hidden_tooltip = { 
 			clr_character_flag = flag_dedicating_temple
