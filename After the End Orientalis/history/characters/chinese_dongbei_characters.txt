@@ -103,13 +103,15 @@
 	2588.1.1={birth=yes}
 }
 9810009 ={ # Duke of Songyuan
-	name="Yi"
+	name="Chogoris"
+	dynasty=9010018 #Qara
 	culture=manchu
 	religion=shanrendao
 	trait=brilliant_strategist
 	trait=ambitious
 	trait=arrogant
 	trait=cruel
+	give_nickname=nick_the_warhawk
 	disallow_random_traits = yes
 	2588.1.1={birth=yes}
 }
@@ -124,14 +126,17 @@
 	disallow_random_traits = yes
 	2588.1.1={birth=yes}
 }
-9810011 ={ # Duke of Daqing
-	name="Ming"
+9810011 ={ # Duke of Daqing (The Iron Man)
+	name="Wang"
+	dynasty=9010017 #Jinxi
 	culture=dongbei
 	religion=shanrendao
 	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
+	trait=proud
+	trait=temperate
+	trait=charitable
+	trait=defensive_leader
+	give_nickname=nick_iron_man #Tieren
 	disallow_random_traits = yes
 	2588.1.1={birth=yes}
 }
@@ -321,11 +326,17 @@
 	2586.1.1={birth=yes}
 }
 9812201 ={ # Yanbian
-	name="Nanwan"
+	name="Joyeong"
+	dynasty=9010019 #Dae
 	culture=chaoxianzu
 	religion=eastern_lightning
-	female=yes
+	trait=thrifty_clerk
+	trait=quick
+	trait=stressed
+	trait=shrewd
+	trait=administrator
 	2586.1.1={birth=yes}
+	2600.1.1={add_claim = e_beidahuang}
 }
 
 9830001 ={ # Changchun
@@ -342,9 +353,17 @@
 }
 
 9840001 ={ # Mishan
-	name="Zhenmeng"
+	name="Zheng"
+	dynasty=9010020 #Weiwei
 	culture=jiao_liao
 	religion=eastern_lightning
-	female=yes
+	trait=naive_appeaser
+	trait=scarred_mid
+	trait=strong
+	trait=shrewd
+	trait=falconer
+	trait=diligent
+	trait=wroth
 	2586.1.1={birth=yes}
+	2600.1.1={add_claim = e_yanbian}
 }

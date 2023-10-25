@@ -127,6 +127,40 @@ k_champa = {
 		culture = cham
 	}
 }
+k_white_scar = { #Jaghatai
+	color = { 255 255 255 }
+	color2={ 255 255 255 }
+	
+	capital = 851 #Ningjiang
+	culture = manchu
+	allow = {
+		culture = manchu
+	}
+}
+e_yanbian = { #Yanbian Empire
+	color = { 50 180 160 }
+	color2={ 255 255 255 }
+	
+	capital = 851 #Ningjiang
+	
+	chaoxianzu="Yeonbye"
+	
+	culture = chaoxianzu
+	allow = {
+		culture = chaoxianzu
+	}
+}
+e_beidahuang = { #Beidahuang Federation
+	color = { 150 90 175 }
+	color2={ 255 255 255 }
+	
+	capital = 851 #Ningjiang
+	
+	culture = jiao_liao
+	allow = {
+		culture = jiao_liao
+	}
+}
 ###################THE PING LORD########################
 e_tian = {
 	color = { 255 255 255 }
