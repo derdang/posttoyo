@@ -186,7 +186,7 @@
 
 # NORDSUMATRA
 
-1964000 ={ # batak king
+1964000 ={ # tapanuli duke
 	name="Hasudungan"
 	dynasty=1964009 # Hutapea
 	martial=15
@@ -240,8 +240,8 @@
 	stewardship=5
 	learning=8
 	culture=javanese
-	religion=nusantara
-	trait=content
+	religion=pancasila
+	trait=wroth
 	trait=duelist
 	trait=aggressive_leader
 	2586.1.26={birth=yes}
@@ -298,6 +298,117 @@
 	religion=concordanist
 	2560.3.18={birth=yes}
 }
+
+# WESTSUMATRA
+
+1961000 ={ # minang duke
+	name="Kamarudin"
+	dynasty=1961021 # Chaniago
+	martial=10
+	diplomacy=2
+	intrigue=10
+	stewardship=19
+	learning=8
+	culture=minang
+	religion=renewalist
+	trait=zealot
+	trait=content
+	2575.8.11={birth=yes}
+	2590.6.12={add_spouse=1961001}
+}
+
+1961001 ={ # minang duke's wife
+	name="Juwita"
+	female=yes
+	dynasty=1961007 # Daradjat
+	culture=minang
+	religion=renewalist
+	2569.6.21={birth=yes}
+}
+
+1961002 ={ # minang duke's son
+	name="Syafruddin"
+	dynasty=1961021 # Chaniago
+	culture=minang
+	religion=renewalist
+	father=1961000
+	mother=1961001
+	2591.3.12={birth=yes}
+}
+
+1961010 ={ # agam count
+	name="Harun"
+	dynasty=1961019 # Sikumbang
+	martial=9
+	diplomacy=12
+	intrigue=11
+	stewardship=7
+	learning=13
+	culture=minang
+	religion=nusantara
+	trait = shattari
+	trait = zealot
+	2570.12.12={birth=yes}
+}
+
+1961020 ={ # kampar - sigigi count
+	name="Mokhzani"
+	dynasty=1961001 # Azra
+	martial=10
+	diplomacy=7
+	intrigue=12
+	stewardship=11
+	learning=9
+	culture=minang
+	religion=nusantara
+	trait = naqshbandi
+	trait = content
+	2573.11.15={birth=yes}
+}
+
+1966000 ={# mentawai count
+	name="Ilarius"
+	dynasty=1966016 # Sakuddei
+	martial=15
+	diplomacy=10
+	intrigue=6
+	stewardship=8
+	learning=10
+	culture=mentawai
+	religion=concordanist
+	trait=hunter
+	2590.12.5={birth=yes}
+}
+
+1954000 ={# kerinci count
+	name="Kamaluddin"
+	dynasty=1961012 # Caniago, placeholder
+	martial=7
+	diplomacy=12
+	intrigue=10
+	stewardship=4
+	learning=17
+	culture=kerinci
+	religion=kebatinan
+	trait=mystic
+	2560.7.12={birth=yes}
+}
+
+
+1957700 = {# dumai count
+	name="Nasrullah"
+	dynasty=1957023 # Othman
+	martial=10
+	diplomacy=8
+	intrigue=7
+	stewardship=14
+	learning=8
+	culture=melayu
+	religion=renewalist
+	2580.10.18={birth=yes}
+}
+
+
 
 
 
