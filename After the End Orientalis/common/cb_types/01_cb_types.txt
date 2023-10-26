@@ -37,6 +37,16 @@ dejure_duchy_claim = { # New1
 				prestige = 1000
 			}
 		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 	}
 	
 	on_add = {
@@ -436,6 +446,16 @@ force_vassalization = { # New2
 				}
 			}
 		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 	}
 	
 	on_add = {
@@ -640,6 +660,16 @@ great_realm_conflict = { # New3
 			relative_power = {
 				who = ROOT
 				power = 0.95
+			}
+		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
 			}
 		}
 	}
@@ -927,6 +957,16 @@ ducal_county_conquest = { # New4
 				}
 				piety = 250
 				scaled_wealth = 1.0
+			}
+		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
 			}
 		}
 	}
@@ -2188,6 +2228,16 @@ unjust_conquest = { # New7
 				}
 				piety = 200
 				scaled_wealth = { value = 1.0 min = 400 }
+			}
+		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
 			}
 		}
 	}

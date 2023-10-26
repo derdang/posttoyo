@@ -1788,7 +1788,13 @@ laws = {
 				NOT = { tier = baron }
 				holder_scope = { is_patrician = yes }
 			}
-			holder_scope = { religion_group = muslim }
+			OR = {
+				holder_scope = { religion_group = muslim }
+				holder_scope = {
+					has_landed_title=e_malaysia
+					war = no
+				}
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -1821,7 +1827,15 @@ laws = {
 				NOT = { tier = baron }
 				holder_scope = { is_patrician = yes }
 			}
-			holder_scope = { religion_group = muslim }
+			OR = {
+				holder_scope = { religion_group = muslim }
+				NOT = { 
+					holder_scope = {
+						has_landed_title=e_malaysia
+						war = no
+					}
+				}
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -1854,7 +1868,15 @@ laws = {
 				NOT = { tier = baron }
 				holder_scope = { is_patrician = yes }
 			}
-			holder_scope = { religion_group = muslim }
+			OR = {
+				holder_scope = { religion_group = muslim }
+				NOT = { 
+					holder_scope = {
+						has_landed_title=e_malaysia
+						war = no
+					}
+				}
+			}
 		}
 		revoke_allowed = {
 			always = no
@@ -1887,7 +1909,13 @@ laws = {
 				NOT = { tier = baron }
 				holder_scope = { is_patrician = yes }
 			}
-			holder_scope = { religion_group = muslim }
+			OR = {
+				holder_scope = { religion_group = muslim }
+				holder_scope = {
+					has_landed_title=e_malaysia
+					war = yes
+				}
+			}
 		}
 		revoke_allowed = {
 			always = no

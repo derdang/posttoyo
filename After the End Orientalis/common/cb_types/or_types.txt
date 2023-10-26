@@ -632,7 +632,11 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 	
 	can_use_gui = {
 		ROOT = {
-			religion = cetic
+			AND = {
+				is_bureaucratic_religion = yes
+				NOT = {culture_group=korean}
+				NOT = {culture_group=viet}
+			}
 			OR = {
 				NOT = { has_character_modifier = holy_war_cooldown }
 				has_game_rule = { name = holy_war_cooldown_rule value = off }
@@ -653,7 +657,11 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 	
 	can_use = {
 		ROOT = {
-			religion = cetic
+			AND = {
+				is_bureaucratic_religion = yes
+				NOT = {culture_group=korean}
+				NOT = {culture_group=viet}
+			}
 			is_nomadic = no
 			NOT = { same_realm = FROM }
 			OR = {

@@ -17,6 +17,16 @@ claim = {
 	
 	can_use_gui = {
 		check_if_crusader_trigger = yes
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 	}
 
 	can_use_title = {
@@ -38,6 +48,9 @@ claim = {
 			holder_scope = {
 				is_liege_or_above = FROM
 			}
+		}
+		NOT = {
+			title = e_malaysia
 		}
 		
 		ROOT = {
@@ -138,6 +151,20 @@ claim = {
 				NOT = { culture = ROOT }
 			}
 			hidden_tooltip = { conquest_culture = ROOT }
+		}
+		
+		if = {
+			limit = {
+				#FROM = {
+				#	has_character_modifier = imperial_authority
+				#}
+				ROOT = {
+					has_claim = e_malaysia
+				}
+			}
+			#ROOT = { 
+			#	character_event = { id = cetic.400 }
+			#}
 		}
 		
 		ROOT = {
@@ -754,6 +781,16 @@ claim_on_liege = {
 
 	can_use_gui = {
 		check_if_crusader_trigger = yes
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 	}
 
 	can_use_title = {
@@ -1054,6 +1091,16 @@ claim_on_liege_plot = {
 
 	can_use_gui = {
 		check_if_crusader_trigger = yes
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 	}
 
 	can_use_title = {
@@ -1289,12 +1336,15 @@ claim_on_vassal_plot = {
 	}
 
 	can_use_title = {
-		OR = {
-			FROM = {
-				has_landed_title = PREV
+		check_if_crusader_trigger = yes
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
 			}
-			holder_scope = {
-				de_facto_liege = ROOT
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
 			}
 		}
 	}
@@ -1429,6 +1479,16 @@ other_claim_on_liege = {
 
 	can_use_gui = {
 		check_if_crusader_trigger = yes
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 	}
 
 	can_use_title = {
@@ -1835,6 +1895,16 @@ claim_all = {
 	}
 
 	can_use_gui = {
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 		check_if_crusader_trigger = yes
 	}
 
@@ -1916,25 +1986,25 @@ claim_all = {
 				character_event = { id = JD.60101 days = 1 } #calculate gold sent from china for building holdings
 			}
 		}
-		hidden_tooltip = {
-			ROOT = {
-				if = {
-					limit = {
-						has_dlc = "Legacy of Rome"
-						OR = { 
-							has_landed_title = e_byzantium
-							has_landed_title = e_roman_empire
-						}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-					}
-					character_event = { id = LoR.30 days = 12 }
-				}
-			}
-		}
+		#hidden_tooltip = {
+		#	ROOT = {
+		#		if = {
+		#			limit = {
+		#				has_dlc = "Legacy of Rome"
+		#				OR = { 
+		#					has_landed_title = e_byzantium
+		#					has_landed_title = e_roman_empire
+		#				}
+		#				OR = { 
+		#					religion_group = christian
+		#					religion = hellenic_pagan
+		#					religion = hellenic_pagan_reformed
+		#				}
+		#			}
+		#			character_event = { id = LoR.30 days = 12 }
+		#		}
+		#	}
+		#}
 		ROOT = {
 			show_scope_change = no
 			participation_scaled_prestige = 100
@@ -2019,25 +2089,25 @@ claim_all = {
 				}
 			}
 		}
-		FROM = {
-			show_scope_change = no
-			participation_scaled_prestige = 200
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-					OR = { 
-						religion_group = christian
-						religion = hellenic_pagan
-						religion = hellenic_pagan_reformed
-					}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
-		}
+		#FROM = {
+		#	show_scope_change = no
+		#	participation_scaled_prestige = 200
+		#	if = {
+		#		limit = { 
+		#			has_dlc = "Legacy of Rome"
+		#			OR = { 
+		#				has_landed_title = e_byzantium
+		#				has_landed_title = e_roman_empire
+		#			}
+		#			OR = { 
+		#				religion_group = christian
+		#				religion = hellenic_pagan
+		#				religion = hellenic_pagan_reformed
+		#			}
+		#		}
+		#		hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+		#	}
+		#}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 200 }
@@ -2710,6 +2780,16 @@ invasion = {
 	}
 
 	can_use_gui = {
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 		check_if_crusader_trigger = yes
 	}
 	
@@ -3734,6 +3814,16 @@ crusade = {
 				}
 			}
 			mercenary = no
+		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
 		}
 	}
 
@@ -8880,6 +8970,16 @@ muslim_invasion = {
 		ROOT = {
 			piety = 1000
 		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 	}
 	
 	on_add = {
@@ -12293,14 +12393,14 @@ caliphal_subjugation = {
 				}
 			}
 			religion_group = muslim
-			OR = {
-				has_landed_title = d_sunni
-				has_landed_title = d_shiite
-				has_landed_title = d_ibadi
-				has_landed_title = d_kharijite
-				has_landed_title = d_yazidi
-				has_landed_title = d_hurufi
-			}
+			#OR = {
+			#	has_landed_title = d_sunni
+			#	has_landed_title = d_shiite
+			#	has_landed_title = d_ibadi
+			#	has_landed_title = d_kharijite
+			#	has_landed_title = d_yazidi
+			#	has_landed_title = d_hurufi
+			#}
 			is_nomadic = no
 			OR = {
 				has_horde_culture = no # Should use tribal invasion instead
@@ -12458,6 +12558,16 @@ muslim_county_conquest = {
 	can_use_gui = {
 		ROOT = {
 			piety = 50
+		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
 		}
 	}
 	
@@ -15751,6 +15861,16 @@ cb_decadence_usurption = {
 		ROOT = { 
 			religion_group = muslim
 		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
+		}
 	
 		FROM = {
 			religion_group = muslim
@@ -16061,6 +16181,16 @@ tributary_cb = {
 				religion = FROM
 			}
 			independent = yes
+		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_malaysia = {
+					has_holder = yes
+				}
+			}
 		}
 		FROM = {
 			higher_tier_than = BARON
