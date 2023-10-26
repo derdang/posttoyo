@@ -371,47 +371,34 @@ e_sumatra = {
 				b_angkeo = {}
 			}
 		}
-		d_medan = {
-			color={ 172 21 19 }
+		d_labuhanbatu = {
+			color={ 123 197 74 }
 			color2={ 255 255 255 }
 			
-			capital = 414 # c_medan
-			
-			c_medan = { # 414
-				color={ 162 69 52 }
+			capital = 426 # c_mandailing_natal
+			c_mandailing_natal = { # 426
+				color={ 130 188 72 }
 				color2={ 255 255 255 }
 				
-				b_istana_maimun = {}
-				b_medan = {}
-				b_masjid_raya_al_mashun = {}
-				b_stabat = {}
-				b_binjai = {}
-				b_lubuk_pakam = {}
-				b_percut_sei_tuan = {}
+				b_panyabungan = {}
+				b_padang_sidempuan = {}
+				b_masjid_raya_al_abror = {}
+				b_siabu = {}
+				b_sitinjak = {}
+				b_natal = {}
+				b_sayur_matinggi = {}
 			}
-			c_asahan = { # 416
-				color={ 172 79 45 }
+			c_padang_lawas = { # 425
+				color={ 128 187 85 }
 				color2={ 255 255 255 }
 				
-				b_kisaran = {}
-				b_tanjungbalai = {}
-				b_air_joman = {}
-				b_simpang_empat_2 = {}
-				b_pulau_rakyat = {}
-				b_sei_dadap = {}
-				b_aek_kuasan = {}
-			}
-			c_simalungun = { # 415
-				color={ 167 74 48 }
-				color2={ 255 255 255 }
-				
-				b_raya_2 = {}
-				b_pematangsiantar = {}
-				b_tebing_tinggi_3 = {}
-				b_sei_rampah = {}
-				b_limapuluh = {}
-				b_siantar = {}
-				b_perbaungan = {}
+				b_sibuhuan = {}
+				b_gunung_tua = {}
+				b_barumun = {}
+				b_huta_raja_tinggi = {}
+				b_langkimat = {}
+				b_sosa = {}
+				b_huristak = {}
 			}
 		}
 		d_tapanuli = {
@@ -469,12 +456,122 @@ e_sumatra = {
 				b_alasa = {}
 			}
 		}
+		d_sumbar = {
+			color={ 123 166 77 }
+			color2={ 255 255 255 }
+			
+			capital = 434 # c_padang
+			
+			c_padang = { # 434
+				color={ 113 176 72 }
+				color2={ 255 255 255 }
+				
+				b_padang = {}
+				b_padang_panjang = {}
+				b_masjid_muhammadan = {}
+				b_batusangkar = {}
+				b_sawahlunto = {}
+				b_ombilin = {}
+				b_sepuluh_koto = {}
+			}
+			c_agam = { # 435
+				color={ 117 179 71 }
+				color2={ 255 255 255 }
+				
+				b_lubuk_basung = {}
+				b_payakumbuh = {}
+				b_gadang_balai_nan_duo = {}
+				b_bukittinggi = {}
+				b_lubuk_sikaping = {}
+				b_simpang_ampek = {}
+				b_sarilamak = {}
+			}
+			c_mentawai = { # 438
+				color={ 118 180 71 }
+				color2={ 255 255 255 }
+				
+				b_tuapejat = {}
+				b_sikakap = {}
+				b_bulasat = {}
+				b_sioban = {}
+				b_kinikdok = {}
+				b_sirilogui = {}
+				b_sigapokna = {}
+			}
+			c_pesisir_selatan = { # 436
+				color={ 118 179 71 }
+				color2={ 255 255 255 }
+				
+				b_painan = {}
+				b_arosuka = {}
+				b_pasa_kambang = {}
+				b_koto_baru = {}
+				b_kapuh = {}
+				b_alahan_panjang = {}
+				b_amping_parak = {}
+			}
+			c_sijunjung = { # 437
+				color={ 115 177 72 }
+				color2={ 255 255 255 }
+				
+				b_muaro_sijunjung = {}
+				b_pulau_punjung = {}
+				b_padang_aro = {}
+				b_silokek = {}
+				b_koto_besar = {}
+				b_sangir = {}
+				b_sumpur_kudus = {}
+			}
+		}
+		d_kerinci = {
+			color={ 124 168 83 }
+			color2={ 255 255 255 }
+			
+			capital = 442 # c_sungai_penuh
+			
+			c_sungai_penuh = { # 442
+				color={ 114 178 78 }
+				color2={ 255 255 255 }
+				
+				b_sungai_penuh = {}
+				b_muara_bungo = {}
+				b_kersik_tua = {}
+				b_siulak = {}
+				b_pelepat = {}
+				b_rimbo = {}
+				b_tanah_sepenggal = {}
+			}
+			c_merangin = { # 443
+				color={ 114 179 83 }
+				color2={ 255 255 255 }
+				
+				b_bangko = {}
+				b_sarolangun = {}
+				b_jangkat = {}
+				b_pelawan = {}
+				b_pamenang = {}
+				b_singkut = {}
+				b_tabir = {}
+			}
+			c_mukomuko = { # 444
+				color={ 119 173 64 }
+				color2={ 255 255 255 }
+				
+				b_mukomuko = {}
+				b_penarik = {}
+				b_ipuh = {}
+				b_lubuk_pinang = {}
+				b_pondok_suguh = {}
+				b_air_rami = {}
+				b_teramang_jaya = {}
+			}
+		}
 	}
 	k_riau = {
 		color={ 107 219 55 }
 		color2={ 255 255 255 }
 		
-		capital = 420 # c_siak
+		capital = 414 # c_medan
 		culture = melayu
 		
 		d_siak = {
@@ -630,92 +727,6 @@ e_sumatra = {
 				b_teluk_singkawang = {}
 			}
 		}
-		d_kerinci = {
-			color={ 124 168 83 }
-			color2={ 255 255 255 }
-			
-			capital = 442 # c_sungai_penuh
-			
-			c_sungai_penuh = { # 442
-				color={ 114 178 78 }
-				color2={ 255 255 255 }
-				
-				b_sungai_penuh = {}
-				b_muara_bungo = {}
-				b_kersik_tua = {}
-				b_siulak = {}
-				b_pelepat = {}
-				b_rimbo = {}
-				b_tanah_sepenggal = {}
-			}
-			c_merangin = { # 443
-				color={ 114 179 83 }
-				color2={ 255 255 255 }
-				
-				b_bangko = {}
-				b_sarolangun = {}
-				b_jangkat = {}
-				b_pelawan = {}
-				b_pamenang = {}
-				b_singkut = {}
-				b_tabir = {}
-			}
-			c_mukomuko = { # 444
-				color={ 119 173 64 }
-				color2={ 255 255 255 }
-				
-				b_mukomuko = {}
-				b_penarik = {}
-				b_ipuh = {}
-				b_lubuk_pinang = {}
-				b_pondok_suguh = {}
-				b_air_rami = {}
-				b_teramang_jaya = {}
-			}
-		}
-		d_labuhanbatu = {
-			color={ 123 197 74 }
-			color2={ 255 255 255 }
-			
-			capital = 424 # c_labuhanbatu
-			
-			c_labuhanbatu = { # 424
-				color={ 133 187 79 }
-				color2={ 255 255 255 }
-				
-				b_rantau_prapat = {}
-				b_aek_kanopan = {}
-				b_kota_pinang = {}
-				b_bilah = {}
-				b_kualuh = {}
-				b_torgamba = {}
-				b_panai = {}
-			}
-			c_mandailing_natal = { # 426
-				color={ 130 188 72 }
-				color2={ 255 255 255 }
-				
-				b_panyabungan = {}
-				b_padang_sidempuan = {}
-				b_masjid_raya_al_abror = {}
-				b_siabu = {}
-				b_sitinjak = {}
-				b_natal = {}
-				b_sayur_matinggi = {}
-			}
-			c_padang_lawas = { # 425
-				color={ 128 187 85 }
-				color2={ 255 255 255 }
-				
-				b_sibuhuan = {}
-				b_gunung_tua = {}
-				b_barumun = {}
-				b_huta_raja_tinggi = {}
-				b_langkimat = {}
-				b_sosa = {}
-				b_huristak = {}
-			}
-		}
 		d_rokan = {
 			color={ 126 187 65 }
 			color2={ 255 255 255 }
@@ -759,71 +770,59 @@ e_sumatra = {
 				b_pasir_baru = {}
 			}
 		}
-		d_sumbar = {
-			color={ 123 166 77 }
+		d_medan = {
+			color={ 172 21 19 }
 			color2={ 255 255 255 }
 			
-			capital = 434 # c_padang
+			capital = 414 # c_medan
 			
-			c_padang = { # 434
-				color={ 113 176 72 }
+			c_medan = { # 414
+				color={ 162 69 52 }
 				color2={ 255 255 255 }
 				
-				b_padang = {}
-				b_padang_panjang = {}
-				b_masjid_muhammadan = {}
-				b_batusangkar = {}
-				b_sawahlunto = {}
-				b_ombilin = {}
-				b_sepuluh_koto = {}
+				b_istana_maimun = {}
+				b_medan = {}
+				b_masjid_raya_al_mashun = {}
+				b_stabat = {}
+				b_binjai = {}
+				b_lubuk_pakam = {}
+				b_percut_sei_tuan = {}
 			}
-			c_agam = { # 435
-				color={ 117 179 71 }
+			c_asahan = { # 416
+				color={ 172 79 45 }
 				color2={ 255 255 255 }
 				
-				b_lubuk_basung = {}
-				b_payakumbuh = {}
-				b_gadang_balai_nan_duo = {}
-				b_bukittinggi = {}
-				b_lubuk_sikaping = {}
-				b_simpang_ampek = {}
-				b_sarilamak = {}
+				b_kisaran = {}
+				b_tanjungbalai = {}
+				b_air_joman = {}
+				b_simpang_empat_2 = {}
+				b_pulau_rakyat = {}
+				b_sei_dadap = {}
+				b_aek_kuasan = {}
 			}
-			c_mentawai = { # 438
-				color={ 118 180 71 }
+			c_simalungun = { # 415
+				color={ 167 74 48 }
 				color2={ 255 255 255 }
 				
-				b_tuapejat = {}
-				b_sikakap = {}
-				b_bulasat = {}
-				b_sioban = {}
-				b_kinikdok = {}
-				b_sirilogui = {}
-				b_sigapokna = {}
+				b_raya_2 = {}
+				b_pematangsiantar = {}
+				b_tebing_tinggi_3 = {}
+				b_sei_rampah = {}
+				b_limapuluh = {}
+				b_siantar = {}
+				b_perbaungan = {}
 			}
-			c_pesisir_selatan = { # 436
-				color={ 118 179 71 }
+			c_labuhanbatu = { # 424
+				color={ 133 187 79 }
 				color2={ 255 255 255 }
 				
-				b_painan = {}
-				b_arosuka = {}
-				b_pasa_kambang = {}
-				b_koto_baru = {}
-				b_kapuh = {}
-				b_alahan_panjang = {}
-				b_amping_parak = {}
-			}
-			c_sijunjung = { # 437
-				color={ 115 177 72 }
-				color2={ 255 255 255 }
-				
-				b_muaro_sijunjung = {}
-				b_pulau_punjung = {}
-				b_padang_aro = {}
-				b_silokek = {}
-				b_koto_besar = {}
-				b_sangir = {}
-				b_sumpur_kudus = {}
+				b_rantau_prapat = {}
+				b_aek_kanopan = {}
+				b_kota_pinang = {}
+				b_bilah = {}
+				b_kualuh = {}
+				b_torgamba = {}
+				b_panai = {}
 			}
 		}
 	}

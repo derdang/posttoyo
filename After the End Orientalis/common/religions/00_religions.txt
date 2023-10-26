@@ -879,13 +879,13 @@ muslim = {
 		
 		color = { 130 219 90 }
 		
+		priest_title = SYEKH_PRIEST
 		scripture_name = THE_KORAN
-		priest_title = GURU_PRIEST
 		
 		high_god_name = GOD_ALLAH
 		
 		god_names = {
-			GOD_ALLAH GOD_SPIRITS GOD_JINN
+			GOD_ALLAH GOD_THE_GREATEST
 		}
 		evil_god_names = {
 			IBLIS SHAYTAN
@@ -915,17 +915,16 @@ muslim = {
 		
 		color = { 0.9 0.9 0.5 }
 		
-		
-		scripture_name = THE_KORAN
-		priest_title = SYEKH_PRIEST
+		scripture_name = THE_KITAB
+		priest_title = GURU_PRIEST
 		
 		high_god_name = GOD_ALLAH
 		
 		god_names = {
-			GOD_ALLAH GOD_THE_GREATEST
+			GOD_ALLAH GOD_JINN GOD_SPIRITS
 		}
 		evil_god_names = {
-			IBLIS SHAYTAN
+			IBLIS SETAN
 		}
 		
 		priests_can_marry = yes

@@ -394,7 +394,6 @@
 	2560.7.12={birth=yes}
 }
 
-
 1957700 = {# dumai count
 	name="Nasrullah"
 	dynasty=1957023 # Othman
@@ -405,8 +404,103 @@
 	learning=8
 	culture=melayu
 	religion=renewalist
+	trait=maimed
+	father=1957712
+	mother=1957713
 	2580.10.18={birth=yes}
 }
+
+1957711 = {# siak count
+	name="Imansyah"
+	dynasty=1957023 # Othman
+	martial=9
+	diplomacy=10
+	intrigue=7
+	stewardship=2
+	learning=6
+	culture=melayu
+	religion=renewalist
+	trait=brave
+	father=1957712
+	mother=1957713
+	2582.1.10={birth=yes}
+}
+
+1957712 = {# father of the two above
+	name="Imansyah"
+	dynasty=1957023 # Othman
+	culture=melayu
+	religion=renewalist
+	2535.1.10={birth=yes}
+	2579.12.6={add_spouse=1957713}
+	2603.3.1={death=yes}
+}
+
+1957713 = {# mother of the two above
+	name="Imansyah"
+	female=yes
+	dynasty=1957023 # Othman
+	culture=melayu
+	religion=renewalist
+	2556.1.10={birth=yes}
+}
+
+1957720 = {# pelalawan count
+	name="Jamaluddin"
+	dynasty=1957013 # Badawi
+	martial=12
+	diplomacy=20
+	intrigue=8
+	stewardship=14
+	learning=8
+	culture=melayu
+	religion=renewalist
+	trait=stressed
+	2560.11.5={birth=yes}
+}
+
+1957730 = {# indragiri count
+	name="Muhammad"
+	dynasty=1957031 # Amiruddin
+	martial=10
+	diplomacy=7
+	intrigue=16
+	stewardship=12
+	learning=11
+	culture=melayu
+	religion=renewalist
+	2565.4.25={birth=yes}
+}
+
+1957740 = {# jambi duke
+	name="Rasmansyah"
+	dynasty=1957019 # Fadhillah
+	martial=10
+	diplomacy=8
+	intrigue=7
+	stewardship=15
+	learning=9
+	culture=melayu
+	religion=nusantara
+	2571.10.8={birth=yes}
+}
+
+1957745 = {# muaro jambi count
+	name="Slamet"
+	dynasty=1293037 # Kusumaatmaja
+	martial=6
+	diplomacy=10
+	intrigue=9
+	stewardship=15
+	learning=9
+	culture=javanese
+	religion=kebatinan
+	2587.1.8={birth=yes}
+}
+
+
+
+
 
 
 
