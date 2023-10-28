@@ -1,0 +1,100 @@
+title_confederation_diet_member = {
+	show_as_title = no
+	realm_in_name = yes
+	is_voter = yes
+	revoke_allowed = no
+	is_unique = yes
+	
+	dignity = 0.5
+	grant_limit = 10
+	
+	monthly_salary = 0.05
+	monthly_prestige = 0.25
+	
+	allowed_to_grant = {
+		always = no
+	}
+	
+	allowed_to_hold = {
+		has_regent = no
+	}
+	
+	revoke_trigger = {
+	}
+	
+	gain_effect = {
+	}
+	
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_confederation_diet_president = {
+	is_high_prio = yes
+	show_as_title = yes
+	realm_in_name = yes
+	is_voter = no
+	revoke_allowed = yes
+	is_unique = no
+	
+	dignity = 1.0
+	grant_limit = 1
+	opinion_effect = 20
+	
+	monthly_salary = 0.1
+	monthly_prestige = 0.5
+	
+	allowed_to_grant = {
+		government = confederation_government
+	}
+	
+	allowed_to_hold = {
+		has_minor_title = title_confederation_diet_member
+	}
+	
+	revoke_trigger = {
+	}
+	
+	gain_effect = {
+	}
+	
+	lose_effect = {
+	}
+
+	message = yes
+}
+
+title_bureaucratic_member = {
+	show_as_title = no
+	realm_in_name = yes
+	is_voter = yes
+	revoke_allowed = no
+	is_unique = yes
+	
+	dignity = 0.5
+	grant_limit = 10
+	
+	monthly_salary = 0.05
+	monthly_prestige = 0.25
+	
+	allowed_to_grant = {
+		always = no
+	}
+	
+	allowed_to_hold = {
+		has_regent = no
+	}
+	
+	revoke_trigger = {
+	}
+	
+	gain_effect = {
+	}
+	
+	lose_effect = {
+	}
+
+	message = yes
+}

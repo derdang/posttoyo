@@ -1,0 +1,508 @@
+###########################################
+#										 #
+# Government Events						 #
+#										 #
+# 										 #
+#										 #
+###########################################
+
+namespace = gov
+
+#add diet member status
+character_event = {
+	id = gov.001
+	hide_window = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		OR = {
+			liege = { government = confederation_government }
+			liege = { government = malaysian_confederacy }
+		}
+		NOT = { has_minor_title = title_confederation_diet_member }
+		has_regent = no
+		#is_councillor = no
+		higher_real_tier_than = BARON
+		#NOT = { has_minor_title = title_regent }
+		#NOT = { has_minor_title = title_councilmember_king }
+		#NOT = { has_minor_title = title_councilmember_emperor }
+	}
+	
+	immediate = {
+		give_minor_title = title_confederation_diet_member
+	}
+}
+
+#remove diet member status
+character_event = {
+	id = gov.002
+	hide_window = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		has_minor_title = title_confederation_diet_member
+		OR = {
+			NOT = { liege = { government = confederation_government } }
+			NOT = { liege = { government = malaysian_confederacy } }
+			has_regent = yes
+			#is_councillor = yes
+			NOT = { higher_real_tier_than = BARON }
+			#OR = {
+			#	has_minor_title = title_regent
+			#	has_minor_title = title_councilmember_king
+			#	has_minor_title = title_councilmember_emperor
+			#}
+		}
+	}
+	
+	immediate = {
+		remove_title = title_confederation_diet_member
+	}
+}
+
+#set succession law (bureaucratic)
+character_event = {
+	id = gov.003
+	hide_window = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		OR = {
+			AND = {
+				government = confederation_government
+				NOT = { has_law = succ_confederation_elective }
+			}
+			AND = {
+				government = bureaucratic_government
+				NOT = { has_law = succ_bureaucratic_elective }
+			}
+			AND = {
+				government = malaysian_confederacy
+				NOT = { has_law = succ_bureaucratic_elective }
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { government = confederation_government }
+			primary_title = { add_law = { law = succ_confederation_elective opinion_effect = no } }
+		}
+		if = {
+			limit = { government = bureaucratic_government }
+			primary_title = { add_law = { law = succ_bureaucratic_elective opinion_effect = no } }
+		}
+		if = {
+			limit = { government = malaysian_confederacy }
+			primary_title = { add_law = { law = succ_confederation_elective opinion_effect = no } }
+		}
+	}
+}
+
+#become bureaucratic if liege is (liege)
+character_event = {
+	id = gov.004
+	hide_window = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		government = bureaucratic_government
+		any_vassal = {
+			government = feudal_government
+			NOT = { has_character_flag = refused_bureaucratic }
+			has_regent = no
+			war = no
+		}
+	}
+	
+	immediate = {
+		random_vassal = {
+			limit = {
+				government = feudal_government
+				NOT = { has_character_flag = refused_bureaucratic }
+				has_regent = no
+			}
+			character_event = { id = gov.5 }
+		}
+	}
+}
+
+#become bureaucratic if liege is (vassal)
+character_event = {
+	id = gov.005
+	picture = GFX_evt_chinese_emissary
+	desc = EVTDESCgov.005
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAgov.005
+		ai_chance = { factor = 0.5 }
+		set_government_type = bureaucratic_government
+		FROM = {
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+			} 
+		}
+	}
+	option = {
+		name = EVTOPTBgov.005
+		ai_chance = { factor = 0.5 }
+		set_character_flag = refused_bureaucratic
+		FROM = {
+			opinion = {
+				modifier = opinion_refused_bureaucracy
+				who = ROOT
+			} 
+		}
+	}
+}
+
+#automatic feudal->pirate
+character_event = {
+	id = gov.006
+	hide_window = yes
+	
+	trigger = {
+		liege = { government = pirate_government }
+		government = feudal_government
+		capital_holding_shipyard_trigger = yes
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_government_type = pirate_government
+	}
+}
+
+#automatic pirate->feudal
+character_event = {
+	id = gov.007
+	hide_window = yes
+	
+	trigger = {
+		liege = { government = feudal_government }
+		government = pirate_government
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_government_type = feudal_government
+	}
+}
+
+#Remove Ghazi Elective if you are no longer Muslim
+character_event = {
+	id = gov.008
+	hide_window = yes
+	
+	trigger = {
+		NOT = {religion_group = muslim}
+		OR = {
+			has_law = succ_ghazi_elective
+			has_law = succ_imamate_elective
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		primary_title = { add_law = { law = succ_gavelkind opinion_effect = no } }
+	}
+}
+
+#automatic pirate->bureaucratic muslim government
+character_event = {
+	id = gov.009
+	hide_window = yes
+	
+	trigger = {
+		liege = { government = diwan_government }
+		government = pirate_government
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_government_type = diwan_government
+	}
+}
+
+#Fate of FROM
+character_event = {
+	id = gov.010
+	title = EVTgov.010
+	desc = EVTDESCgov.010
+	picture = GFX_evt_prisoner_hf
+	border = GFX_event_normal_frame_intrigue
+	
+	is_triggered_only = yes
+
+	option = { #Castrate
+		name = EVTOPTAgov.010
+		trigger = {
+			FROM = {
+				is_female = no
+				NOT = { trait = eunuch }
+			}
+		}
+		FROM = {
+			add_trait = eunuch
+			if = {
+				limit = { 
+					has_game_rule = {
+						name = punishment_release_prisoner
+						value = on
+					}
+				}
+				prisoner = no
+			}
+		}
+	}
+	option = { #Blind
+		name = EVTOPTBgov.010
+		trigger = {
+			FROM = { NOT = { trait = blinded } }
+		}
+		FROM = {
+			if = {
+				limit = {
+					trait = one_eyed
+				}
+				remove_trait = one_eyed
+			}
+			add_trait = blinded
+			if = {
+				limit = { 
+					has_game_rule = {
+						name = punishment_release_prisoner
+						value = on
+					}
+				}
+				prisoner = no
+			}
+		}
+	}
+	option = { #Mutilate
+		name = EVTOPTCgov.010
+		trigger = {
+			NAND = {
+				OR = {
+					trait = one_eyed
+					trait = blinded
+				}
+				trait = one_handed
+				trait = one_legged
+				trait = disfigured
+			}
+		}
+		FROM = {
+			random_list = {
+				10 = {
+					modifier = {
+						factor = 0
+						trait = one_eyed
+					}
+					add_trait = one_eyed
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						trait = one_handed
+					}
+					add_trait = one_handed
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						trait = one_legged
+					}
+					add_trait = one_legged
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						trait = disfigured
+					}
+					add_trait = disfigured
+				}
+			}
+			jailor_mutilate_effect = yes
+			if = {
+				limit = { 
+					has_game_rule = {
+						name = punishment_release_prisoner
+						value = on
+					}
+				}
+				prisoner = no
+			}
+		}
+	}
+	option = { #Humiliate
+		name = EVTOPTDgov.010
+		trigger = {
+		}
+		FROM = {
+			jailor_humiliation_effect = yes
+			if = {
+				limit = { 
+					has_game_rule = {
+						name = punishment_release_prisoner
+						value = on
+					}
+				}
+				prisoner = no
+			}
+		}
+	}
+	
+	after = {
+		prestige = 100
+		FROM = { prestige = -500 }
+		if = {
+			limit = { NOT = { trait = cruel } }
+			custom_tooltip = {
+				text = cruel_imprisoner_trait_chance_TT
+				random = {
+					chance = 25
+					add_trait = cruel
+				}
+			}
+		}
+		piety = -10
+		FROM = {
+			clr_character_flag = fate_being_decided
+			opinion = {
+				modifier = opinion_decided_fate
+				who = ROOT
+			}
+		}
+	}
+}
+#AI ONLY: Convert from GHAZI to Muslim Bureaucracy
+character_event = {
+	id = gov.011
+	hide_window = yes
+	
+	trigger = {
+		ai = yes
+		higher_real_tier_than = DUKE
+		government = ghazi_government
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_government_type = diwan_government
+	}
+}
+#AI ONLY: Convert from Muslim Bureaucracy to GHAZI
+character_event = {
+	id = gov.012
+	hide_window = yes
+	
+	trigger = {
+		ai = yes
+		lower_tier_than = KING
+		government = diwan_government
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_government_type = ghazi_government
+	}
+}
+#Setting Muslim Governments
+character_event = {
+	id = gov.013
+	hide_window = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		OR = {
+			AND = {
+				government = diwan_government
+				NOT = { has_law = succ_familial_elective }
+			}
+			AND = {
+				government = ghazi_government
+				NOT = { has_law = succ_ghazi_elective }
+			}
+			AND = {
+				government = ibadi_imamate
+				NOT = { has_law = succ_imamate_elective }
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { government = diwan_government }
+			primary_title = { add_law = { law = succ_ghazi_elective opinion_effect = no } }
+		}
+		if = {
+			limit = { AND = {government = diwan_government is_female = yes} }
+			primary_title = { add_law = { law = succ_familial_elective opinion_effect = no } }
+		}
+		if = {
+			limit = { government = ghazi_government }
+			primary_title = { add_law = { law = succ_ghazi_elective opinion_effect = no } }
+		}
+		if = {
+			limit = { government = ibadi_imamate }
+			primary_title = { add_law = { law = succ_imamate_elective opinion_effect = no } }
+		}
+	}
+}
+#IF NOT MUSLIM ANYMORE DEFAULT BACK TO FEUDAL
+character_event = {
+	id = gov.014
+	hide_window = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		OR = {
+			NOT = { religion_group = muslim }
+			AND = {
+				liege = {NOT = {religion_group = muslim}}
+				NOT = { religion_group = muslim }
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { government = diwan_government }
+			set_government_type = feudal_government
+			primary_title = { add_law = { law = succ_gavelkind opinion_effect = no } }
+		}
+		if = {
+			limit = { government = ghazi_government }
+			set_government_type = feudal_government
+			primary_title = { add_law = { law = succ_gavelkind opinion_effect = no } }
+		}
+	}
+}
