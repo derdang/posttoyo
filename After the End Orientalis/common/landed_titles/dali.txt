@@ -3,14 +3,19 @@ e_dali = {
 	color2={ 255 255 20 }
 	
 	capital = 1035 # c_kunming
-	culture = yi
+	
+	bai = "Dablit"
+	tonkinese = "Ðai Lý"
+	annamese = "Ðai Lý"
+	cochinchinese = "Ðai Lý"
+	muong = "Ðai Lý"
+	hoa = "Dazhong"
 	
 	k_kunming = {
 		color={ 97 228 122 }
 		color2={ 255 255 255 }
 		
 		capital = 1035 # c_kunming
-		culture = yi
 		
 		d_kunming = {
 			color={ 117 208 132 }
@@ -140,11 +145,17 @@ e_dali = {
 			
 			capital = 1065 # c_zhaoyang
 			
+			yi = "Zizipuwu"
+			
 			c_zhaoyang = { # 1065
 				color={ 125 128 126 }
 				color2={ 255 255 255 }
 				
-				b_zhaoyang = {}
+				yi = "Zizipuwu"
+				
+				b_zhaoyang = {
+					yi = "Zizipuwu"
+				}
 				b_lejuxiang = {}
 				b_jiupu = {}
 				b_qingganglingxiang = {}
@@ -171,7 +182,6 @@ e_dali = {
 		color2={ 255 255 255 }
 		
 		capital = 1041 # c_dali
-		culture = naxi
 		
 		d_dali = {
 			color={ 78 128 83 }
@@ -179,9 +189,13 @@ e_dali = {
 			
 			capital = 1041 # c_dali
 			
+			bai = "Dablit"
+			
 			c_dali = { # 1041
 				color={ 68 138 78 }
 				color2={ 255 255 255 }
+				
+				bai = "Dablit"
 				
 				b_dali_2 = {}
 				b_lushui = {}
@@ -207,6 +221,8 @@ e_dali = {
 				color={ 110 150 116 }
 				color2={ 255 255 255 }
 				
+				yi = "Wop lup"
+				
 				b_chuxiong = {}
 				b_lufeng = {}
 				b_yi = {}
@@ -218,6 +234,10 @@ e_dali = {
 			c_dehong = { # 1045
 				color={ 187 201 189 }
 				color2={ 255 255 255 }
+				
+				shan = "Taue Xoong"
+				jingpo = "Sakhkung"
+				myr = "Tehuan"
 				
 				b_mangshi = {}
 				b_ruili = {}
@@ -277,7 +297,16 @@ e_dali = {
 		color2={ 255 255 255 }
 		
 		capital = 1047 # c_jinghong
-		culture = dai
+		
+		thai_central = "Sipsong Panna"
+		thai_isan = "Sipsong Panna"
+		thai_korat = "Sipsong Panna"
+		thai_kui = "Sipsong Panna"
+		thai_mueang = "Sipsong Panna"
+		thai_sukhothai = "Sipsong Panna"
+		thai_paktai = "Sipsong Panna"
+		laotian = "Sipsong Phanna"
+		shan = "Sípsaung Pánnáa"
 		
 		d_xishuangbanna = {
 			color={ 186 249 197 }
@@ -285,9 +314,27 @@ e_dali = {
 			
 			capital = 1047 # c_jinghong
 			
+			thai_central = "Sipsong Panna"
+			thai_isan = "Sipsong Panna"
+			thai_korat = "Sipsong Panna"
+			thai_kui = "Sipsong Panna"
+			thai_mueang = "Sipsong Panna"
+			thai_sukhothai = "Sipsong Panna"
+			thai_paktai = "Sipsong Panna"
+			laotian = "Sipsong Phanna"
+			shan = "Sípsaung Pánnáa"
+			
 			c_jinghong = { # 1047
 				color={ 196 239 202 }
 				color2={ 255 255 255 }
+				
+				thai_central = "Chiang Rung"
+				thai_isan = "Chiang Rung"
+				thai_korat = "Chiang Rung"
+				thai_kui = "Chiang Rung"
+				thai_mueang = "Chiang Rung"
+				thai_sukhothai = "Chiang Rung"
+				thai_paktai = "Chiang Rung"
 				
 				b_gasa = {}
 				b_menglong = {}
@@ -300,6 +347,16 @@ e_dali = {
 			c_mengla = { # 1048
 				color={ 5 25 8 }
 				color2={ 255 255 255 }
+				
+				thai_central = "Mueang La"
+				thai_isan = "Mueang La"
+				thai_korat = "Mueang La"
+				thai_kui = "Mueang La"
+				thai_mueang = "Mueang La"
+				thai_sukhothai = "Mueang La"
+				thai_paktai = "Mueang La"
+				laotian = "Mueang La"
+				shan = "Mueang La"
 				
 				b_mengla_2 = {}
 				b_mengpeng = {}
@@ -316,9 +373,19 @@ e_dali = {
 			
 			capital = 1057 # c_mengzi
 			
+			tonkinese = "Sông Hong"
+			cochinchinese = "Sông Hong"
+			annamese = "Sông Hong"
+			muong = "Sông Hong"
+			hoa = "Sông Cái"
+			hani = "Haoqhoq"
+			yi = "Hop huop"
+			
 			c_mengzi = { # 1057
 				color={ 125 147 128 }
 				color2={ 255 255 255 }
+				
+				hani = "Maoqziif"
 				
 				b_mengzi = {}
 				b_caoba = {}
@@ -344,6 +411,9 @@ e_dali = {
 				color={ 155 198 161 }
 				color2={ 255 255 255 }
 				
+				hani = "Miqleiq"
+				yi = "Mip lep"
+				
 				b_mile = {}
 				b_miyang = {}
 				b_xinshao = {}
@@ -367,6 +437,8 @@ e_dali = {
 			c_yuanjiang = { # 1058
 				color={ 173 212 178 }
 				color2={ 255 255 255 }
+				
+				hani = "Lalsa"
 				
 				b_xiaogancha = {}
 				b_xinzhai = {}
@@ -438,11 +510,20 @@ e_dali = {
 			
 			capital = 1053 # c_wenshan
 			
+			zhuang = "Vwnzsanh"
+			hmong = "Wenx Shangb"
+			
 			c_wenshan = { # 1053
 				color={ 48 94 54 }
 				color2={ 255 255 255 }
 				
-				b_wenshan = {}
+				zhuang = "Vwnzsanh"
+				hmong = "Wenx Shangb"
+				
+				b_wenshan = {
+					zhuang = "Vwnzsanh"
+					hmong = "Wenx Shangb"
+				}
 				b_pingyuan = {}
 				b_mali = {}
 				b_xisa = {}
@@ -453,6 +534,8 @@ e_dali = {
 			c_funing = { # 1055
 				color={ 45 80 50 }
 				color2={ 255 255 255 }
+				
+				zhuang = "Funingz"
 				
 				b_xinhua = {}
 				b_guichao = {}
@@ -465,6 +548,8 @@ e_dali = {
 			c_guangnan = { # 1054
 				color={ 112 135 115 }
 				color2={ 255 255 255 }
+				
+				zhuang = "Gvangjnanz"
 				
 				b_liancheng = {}
 				b_babao = {}
