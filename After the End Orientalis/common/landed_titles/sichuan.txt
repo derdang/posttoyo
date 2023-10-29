@@ -3,14 +3,12 @@ e_sichuan = {
 	color2={ 255 255 20 }
 	
 	capital = 1412 # c_chengdu
-	culture = sichuanese
 	
 	k_shu = {
 		color={ 209 232 46 }
 		color2={ 255 255 255 }
 		
 		capital = 1412 # c_chengdu
-		culture = sichuanese
 		
 		d_chengdu = {
 			color={ 189 252 36 }
@@ -217,11 +215,17 @@ e_sichuan = {
 			
 			capital = 1433 # c_xichang
 			
+			yi = "Niep sha"
+			
 			c_xichang = { # 1433
 				color={ 160 124 129 }
 				color2={ 255 255 255 }
 				
-				b_xichang_2 = {}
+				yi = "Op Rro"
+				
+				b_xichang_2 = {
+					yi = "Op Rro"
+				}
 				b_dechang = {}
 				b_gaocaocun = {}
 				b_mianning = {}
@@ -232,6 +236,8 @@ e_sichuan = {
 			c_butuo = { # 1435
 				color={ 215 116 130 }
 				color2={ 255 255 255 }
+				
+				yi = "Bux te"
 				
 				b_temuli = {}
 				b_longtan_4 = {}
@@ -245,6 +251,8 @@ e_sichuan = {
 				color={ 246 39 68 }
 				color2={ 255 255 255 }
 				
+				yi = "Ga lo"
+				
 				b_xinshiba = {}
 				b_tianba = {}
 				b_haitang_2 = {}
@@ -257,7 +265,11 @@ e_sichuan = {
 				color={ 244 15 48 }
 				color2={ 255 255 255 }
 				
-				b_puge = {}
+				yi = "Pu jjit"
+				
+				b_puge = {
+					yi = "Pu jjit"
+				}
 				b_luojiashan = {}
 				b_xide = {}
 				b_zhaojue = {}
@@ -343,7 +355,11 @@ e_sichuan = {
 				color={ 239 109 127 }
 				color2={ 255 255 255 }
 				
-				b_huidong = {}
+				yi = "Hop do"
+				
+				b_huidong = {
+					yi = "Hop do"
+				}
 				b_xiaoba = {}
 				b_beiguan_2 = {}
 				b_fengyingcun = {}
@@ -354,6 +370,13 @@ e_sichuan = {
 			c_muli = { # 1438
 				color={ 90 5 17 }
 				color2={ 255 255 255 }
+				
+				lanyin = "Smi-li"
+				changpa = "Smi-li"
+				amdowa = "Smi-li"
+				kham = "Smi-li"
+				utsang = "Smi-li"
+				yi = "Mup li"
 				
 				b_meiyuzhen = {}
 				b_meiyupucun = {}
@@ -386,6 +409,13 @@ e_sichuan = {
 				color={ 177 114 114 }
 				color2={ 255 255 255 }
 				
+				lanyin = "Hri man"
+				changpa = "Hri man"
+				amdowa = "Hri man"
+				kham = "Hri man"
+				utsang = "Hri man"
+				yi = "Shy miep"
+				
 				b_shimian = {}
 				b_anshunxiang = {}
 				b_haiercun = {}
@@ -413,7 +443,6 @@ e_sichuan = {
 		color2={ 255 255 255 }
 		
 		capital = 1440 # c_jiangyang
-		culture = sichuanese
 		
 		d_luzhou = {
 			color={ 234 76 86 }
