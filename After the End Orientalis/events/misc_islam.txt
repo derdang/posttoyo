@@ -68,3 +68,61 @@ character_event = { #Choosing a madhab
 		}
 	}
 }
+character_event = { #Choosing a madhab
+	id = islamate.48
+	desc = EVTDESC_school_switch_bani
+	picture = GFX_evt_chinese_travelers
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	option = {
+		name = EVTOPTA_bani
+		hidden_tooltip = {
+			remove_trait = bani_sunni
+			remove_trait = bani_balamon
+		}
+		add_trait = bani_shia
+		ai_chance = {
+			factor = 1
+			modifier = { 
+				factor = 20
+				culture = cham
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_bani
+		hidden_tooltip = {
+			remove_trait = bani_shia
+			remove_trait = bani_balamon
+		}
+		add_trait = bani_sunni
+		ai_chance = {
+			factor = 1
+			modifier = { 
+				factor = 30
+				trait = zealous
+			}
+		}
+		
+	}
+	option = {
+		name = EVTOPTC_bani
+		hidden_tooltip = {
+			remove_trait = bani_shia
+			remove_trait = bani_sunni
+		}
+		add_trait = bani_balamon
+		ai_chance = {
+			factor = 1
+			modifier = { 
+				factor = 30
+				trait = mystic
+			}
+		}
+	}
+}
