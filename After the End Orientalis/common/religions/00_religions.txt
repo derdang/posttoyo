@@ -151,7 +151,7 @@ christian = {
 		religious_clothing_priest = 1
 
 	}
-	restorationists = { #placeholder
+	restorationists = {
 		graphical_culture = westerngfx
 
 		icon = 1
@@ -166,7 +166,7 @@ christian = {
 		high_god_name = GOD_GOD
 		
 		god_names = {
-			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+			GOD_GOD GOD_THE_LORD
 		}
 		
 		evil_god_names = {
@@ -268,7 +268,7 @@ christian = {
 		intermarry = nestorian
 
 	}
-	dove = {
+	yehowists = {
 		graphical_culture = westerngfx
 
 		icon = 34
@@ -1772,29 +1772,26 @@ pagan_group = {
 		
 		interface_skin = { taoist_interface indian_interface muslim_interface }
 		
-		high_god_name = GOD_THE_ANCESTORS
+		high_god_name = GOD_KAYRA
 		
 		god_names = {
-			GOD_THE_ANCESTORS
+			GOD_AK_ANA GOD_BUGADY_MUSUN GOD_ETUGEN_EKE GOD_GOK_TENGRI GOD_KUTKH GOD_UMAY
 		}
 		
 		evil_god_names = {
-			DISHARMONY
+			TODOTE XARGI
 		}
 
 		has_heir_designation = yes
 		can_grant_divorce = yes
 		priests_can_inherit = no
 		max_consorts = 3
-		
-		reformed = heilong_reformed
-		
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 
-		scripture_name = THE_LEGENDS
+		scripture_name = THE_TALES_SHAMANS
 		
 		intermarry = buddhist_group
 		intermarry = nestorian
@@ -1812,32 +1809,32 @@ pagan_group = {
 		
 		interface_skin = { taoist_interface indian_interface muslim_interface }
 		
-		high_god_name = GOD_THE_ANCESTORS
+		high_god_name = GOD_KAYRA
 		
 		god_names = {
-			GOD_THE_ANCESTORS
+			GOD_AK_ANA GOD_BUGADY_MUSUN GOD_ETUGEN_EKE GOD_GOK_TENGRI GOD_KUTKH GOD_UMAY
 		}
 		
 		evil_god_names = {
-			DISHARMONY
+			TODOTE XARGI
 		}
 
 		has_heir_designation = yes
 		can_grant_divorce = yes
 		priests_can_inherit = no
 		max_consorts = 3
-		reformed = shamanist_reformed
-		
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 
-		scripture_name = THE_LEGENDS
+		scripture_name = THE_TALES_SHAMANS
 		
 		intermarry = buddhist_group
 		intermarry = nestorian
 		intermarry = manichean
+		
+		reformed = shamanist_reformed
 	}
 	ak_jeng_reformed = {
 		graphical_culture = norsegfx
@@ -2094,7 +2091,7 @@ pagan_group = {
 		religious_clothing_priest = 10
 		
 		dislike_tribal_organization = yes
-		reformed = dayawist_reformed
+		reformed = holchu_reformed
 	}
 	diwata_reformed = { #literal meaning: "Spirits" Polytheist Indigenous Southern Fillipino Religion
 		graphical_culture = pagangfx

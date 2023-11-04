@@ -269,6 +269,7 @@ feudal_governments = {
 		frame_suffix = "_merchantrepublic"
 		title_prefix = "confederation_"
 		potential = {
+			NOT = { is_government_potential = malaysian_confederacy }
 			higher_tier_than = BARON
 			OR = {
 				AND = {
@@ -783,6 +784,7 @@ feudal_governments = {
 		title_prefix = "bureaucracy_"
 		potential = {
 			NOT = { is_government_potential = mandala_government }
+			NOT = { is_government_potential = malaysian_confederacy }
 			AND = { 
 				OR = {
 					culture_group = viet
