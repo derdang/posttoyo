@@ -279,13 +279,13 @@ christian = {
 		parent = orthodox
 		
 		crusade_name = CRUSADE
-		scripture_name = THE_BIBLE
+		scripture_name = THE_BOOK_FROM_HEAVEN
 		priest_title = PRIEST
 		
-		high_god_name = GOD_GOD
+		high_god_name = GOD_YEHOWAH
 		
 		god_names = {
-			GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_BLESSED_VIRGIN
+			GOD_JESUS GOD_CONFUCIUS GOD_MUHAMMAD GOD_SOCRATES GOD_PYTHAGORAS GOD_JAKOB_BOHME GOD_JOHN_HUSS
 		}
 		
 		evil_god_names = {
@@ -297,7 +297,67 @@ christian = {
 		priests_can_inherit = yes
 		priests_can_marry = yes
 		
-		can_retire_to_monastery = yes
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	vissarionite = {
+		graphical_culture = westerngfx
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 25 100 125 }
+		
+		crusade_name = CRUSADE
+		scripture_name = THE_LAST_TESTAMENT
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_VISSARION GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_HOLY_SPIRIT
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		pacifist = yes
+		
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		
+		religious_clothing_head = 2
+		religious_clothing_priest = 2
+	}
+	vadimite = {
+		graphical_culture = westerngfx
+
+		icon = 34
+		heresy_icon = 35
+		
+		color = { 65 140 165 }
+		
+		parent = vissarionite
+		
+		crusade_name = CRUSADE
+		scripture_name = GOSPEL_OF_VADIM
+		priest_title = PRIEST
+		
+		high_god_name = GOD_GOD
+		
+		god_names = {
+			GOD_VADIM GOD_VISSARION GOD_GOD GOD_THE_LORD GOD_JESUS GOD_THE_HOLY_SPIRIT
+		}
+		
+		evil_god_names = {
+			SATAN LUCIFER THE_DEVIL
+		}
+		
+		pacifist = yes
+		
+		priests_can_inherit = yes
+		priests_can_marry = yes
 		
 		religious_clothing_head = 2
 		religious_clothing_priest = 2
@@ -3453,7 +3513,7 @@ oldworld = {
 	
 	interface_skin = { pagan_interface }
 
-	atomicist = { #temporary
+	atomicist = { #North Korea Fireworks
 		graphical_culture = muslimgfx
 		
 		icon = 11
@@ -3701,6 +3761,42 @@ oldworld = {
 		intermarry = buddhist_group
 		intermarry = indian_group
 	}
+	fourthist = {
+		graphical_culture = norsegfx
+
+		icon = 13
+		heresy_icon =1375
+		
+		color = { 255 204 2 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_EREIGNIS
+		
+		god_names = {
+			GOD_THE_FOURTH GOD_DASEIN GOD_EASTWARD_DRAGON GOD_HOLY_RUS GOD_RUSSKAYA_DUSHA
+		}
+		
+		evil_god_names = {
+			ATLANTIS THE_UNIPOLE GESTELL WESTWARD_EAGLE
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		can_excommunicate = yes
+
+		crusade_name = CRUSADE	
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 14
+		
+		scripture_name = FOURTH_GOD_APOTHEOSIS
+		
+		intermarry = christian
+		intermarry = eastern
+	}
 	quinto = {
 		graphical_culture = westerngfx
 
@@ -3729,12 +3825,6 @@ oldworld = {
 		religious_clothing_head = 3
 		religious_clothing_priest = 3
 		allow_viking_invasion = yes
-		
-		intermarry = folketro
-		intermarry = fornsed
-		intermarry = nysed
-		intermarry = sun_king_cultist
-		
 	}
 }
 nautical = {
