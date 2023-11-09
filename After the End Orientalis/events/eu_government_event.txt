@@ -213,10 +213,7 @@ character_event = {
 	
 	trigger = {
 		NOT = {religion_group = muslim}
-		OR = {
-			has_law = succ_ghazi_elective
-			has_law = succ_imamate_elective
-		}
+		has_law = succ_ghazi_elective
 	}
 	
 	mean_time_to_happen = { days = 1 }
@@ -447,10 +444,6 @@ character_event = {
 			AND = {
 				government = ghazi_government
 				NOT = { has_law = succ_ghazi_elective }
-			}
-			AND = {
-				government = ibadi_imamate
-				NOT = { has_law = succ_imamate_elective }
 			}
 		}
 	}

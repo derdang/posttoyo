@@ -71,7 +71,7 @@ character_event = {
 				wealth = 500
 			}
 		}
-		hidden_toolip = {
+		hidden_tooltip = {
 			random_list = {
 				8 = {
 					character_event = { id = ploughing.4 days = 1 } #Great omens
@@ -92,7 +92,7 @@ character_event = {
 		name = EVTOPTB_ploughing.2
 		scaled_wealth = { value = -0.5 max = -50 }
 		custom_tooltip = { text = PLOUGHING_HAVE_MONEY }
-		hidden_toolip = {
+		hidden_tooltip = {
 			random_list = {
 				2 = {
 					character_event = { id = ploughing.4 days = 1 } #Great omens
@@ -115,7 +115,7 @@ character_event = {
 	option = { #We don't have much to spare
 		name = EVTOPTC_ploughing.2
 		custom_tooltip = { text = PLOUGHING_NO_MONEY }
-		hidden_toolip = {
+		hidden_tooltip = {
 			random_list = {
 				5 = {
 					character_event = { id = ploughing.5 days = 1 } #Hopeful omens

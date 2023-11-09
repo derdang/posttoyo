@@ -1188,7 +1188,7 @@ letter_event = {
 				if = {
 					limit = {
 						NOR = { 
-							title = e_hre 
+							title = e_malaysia 
 							has_title_flag = alternate_hre
 						}
 					}
@@ -1201,7 +1201,7 @@ letter_event = {
 				if = {
 					limit = {
 						OR = { 
-							title = e_hre 
+							title = e_malaysia 
 							has_title_flag = alternate_hre
 						}
 					}
@@ -19828,7 +19828,7 @@ letter_event = {
 						hidden_tooltip = {
 							if = {
 								limit = { 
-									title = e_hre
+									title = e_malaysia
 									NOT = { has_law = succ_hre_elective }
 									NOT = { has_law = succ_feudal_elective }
 									has_law = law_voting_power_1
@@ -19843,7 +19843,7 @@ letter_event = {
 							}
 							if = {
 								limit = { 
-									NOT = { title = e_hre }
+									NOT = { title = e_malaysia }
 									NOT = { has_law = succ_hre_elective }
 									NOT = { has_law = succ_feudal_elective }
 									has_law = law_voting_power_1
@@ -20170,7 +20170,7 @@ character_event = {
 				limit = { 
 					NOT =  { has_law = succ_byzantine_elective } 
 					OR =  { 
-						title = e_hre 
+						title = e_malaysia 
 						has_title_flag = alternate_hre
 					} 
 					NOT =  { has_law = succ_feudal_elective } 
@@ -20180,7 +20180,7 @@ character_event = {
 			if = {
 				limit = { 
 					NOR =  { 
-						title = e_hre 
+						title = e_malaysia 
 						has_title_flag = alternate_hre
 						has_law = succ_feudal_elective 
 						has_law = succ_byzantine_elective
