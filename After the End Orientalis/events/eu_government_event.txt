@@ -439,7 +439,7 @@ character_event = {
 		OR = {
 			AND = {
 				government = diwan_government
-				NOT = { has_law = succ_familial_elective }
+				NOT = { has_law = succ_ghazi_elective }
 			}
 			AND = {
 				government = ghazi_government
@@ -454,16 +454,8 @@ character_event = {
 			primary_title = { add_law = { law = succ_ghazi_elective opinion_effect = no } }
 		}
 		if = {
-			limit = { AND = {government = diwan_government is_female = yes} }
-			primary_title = { add_law = { law = succ_familial_elective opinion_effect = no } }
-		}
-		if = {
 			limit = { government = ghazi_government }
 			primary_title = { add_law = { law = succ_ghazi_elective opinion_effect = no } }
-		}
-		if = {
-			limit = { government = ibadi_imamate }
-			primary_title = { add_law = { law = succ_imamate_elective opinion_effect = no } }
 		}
 	}
 }
