@@ -183,7 +183,7 @@ religion_nature = {
 					character = yes 
 					OR = { 
 						religion = americanist				
-						religion = hellenic_pagan
+						religion = makasol
 					}
 				}
 			}
@@ -320,7 +320,7 @@ religion_nature = {
 		trigger = {
 			NOR = {
 				has_selected_religion_feature = religion_syncretic
-				has_selected_religion_feature = religion_feature_hellenic
+				has_selected_religion_feature = religion_feature_chuma
 				has_selected_religion_feature = religion_no_leader
 			}
 		}
@@ -395,6 +395,7 @@ religion_nature = {
 		trigger = {
 			NOR = {
 				has_selected_religion_feature = religion_feature_muist
+				has_selected_religion_feature = religion_feature_shenist
 			}
 		}
 		effect = {
@@ -536,7 +537,7 @@ religion_doctrine = {
 		picture = GFX_religion_feature_meritocratic
 		trigger = {
 			NOR = { 
-				has_selected_religion_feature = religion_feature_hellenic # Redundant Doctrine
+				has_selected_religion_feature = religion_feature_chuma # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_shamanist # Redundant Doctrine
 				has_selected_religion_feature = religion_patriarchal # Incompatible
 				has_selected_religion_feature = religion_matriarchal # Incompatible
@@ -562,6 +563,7 @@ religion_doctrine = {
 		trigger = {
 			NOR = { 
 				has_selected_religion_feature = religion_feature_seirei # Redundant Doctrine
+				has_selected_religion_feature = religion_feature_shenist # Redundant Doctrine
 			}
 		}
 		effect = {
@@ -638,7 +640,7 @@ religion_doctrine = {
 			NOR = {
 				has_selected_religion_feature = religion_jizya
 				has_selected_religion_feature = religion_dogmatic
-				has_selected_religion_feature = religion_feature_hellenic # Redundant Doctrine
+				has_selected_religion_feature = religion_feature_chuma # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_muist # Redundant Doctrine
 			}
 		}
@@ -672,6 +674,8 @@ religion_doctrine = {
 			NOT = { religion = hellenic_pagan_reformed } #Core feature of the religion itself.
 			NOT = { religion = mo } #Core feature of the religion itself.
 			NOT = { religion = mo_reformed } #Core feature of the religion itself.
+			NOT = { religion = chuma } #Core feature of the religion itself.
+			NOT = { religion = chuma_reformed } #Core feature of the religion itself.
 			NOT = { religion = ak_jeng } #Core feature of the religion itself.
 			NOT = { religion = ak_jeng_reformed } #Core feature of the religion itself.
 		}
@@ -1028,6 +1032,8 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_feature_chinomi
 				has_selected_religion_feature = religion_feature_mo
 				has_selected_religion_feature = religion_feature_ak_jeng
+				has_selected_religion_feature = religion_feature_shenist
+				has_selected_religion_feature = religion_feature_animist
 				religion_group = christian #Random World redundancy.
 			}
 		}
@@ -1465,17 +1471,17 @@ religion_doctrine = {
 			}
 		}
 	}
-	religion_feature_hellenic = {
-		picture = GFX_religion_feature_hellenic
+	religion_feature_chuma = {
+		picture = GFX_religion_feature_chuma
 		potential = {
 			has_game_started = yes
-			religion = hellenic_pagan_reformed
+			religion = chuma_reformed
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
 			}
 		}
 		trigger = {
-			religion = hellenic_pagan_reformed
+			religion = chuma_reformed
 			NOR = { 
 				has_selected_religion_feature = religion_syncretic
 				has_selected_religion_feature = religion_dogmatic
@@ -1489,6 +1495,54 @@ religion_doctrine = {
 			hidden_tooltip = { 
 				set_heir_designation = yes
 				set_raised_vassal_opinion_loss = no
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	religion_feature_shenist = {
+		picture = GFX_religion_feature_shenist
+		potential = {
+			has_game_started = yes
+			religion = shenist_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = shenist_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_beatification
+				has_selected_religion_feature = religion_stable
+				has_selected_religion_feature = religion_meritocratic
+				has_selected_religion_feature = religion_cosmopolitan
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			custom_tooltip = { text = tooltip_religion_feature_meritocratic }
+			custom_tooltip = { text = tooltip_religion_feature_stable }
+			custom_tooltip = { text = tooltip_religion_feature_meliorism } 
+			custom_tooltip = { text = tooltip_religion_feature_cosmopolitan_2 }
+			custom_tooltip = { text = tooltip_religion_feature_crusade }
+			custom_tooltip = { text = tooltip_religion_feature_impotent }
+			custom_tooltip = { text = tooltip_religion_feature_cosmopolitan_1 }
+			hidden_tooltip = { 
+				set_pacifist = no
+				set_peace_piety_gain = 0
+				set_raised_vassal_opinion_loss = yes
+				set_peace_prestige_loss = no
+				set_allow_looting = yes
+				set_hard_to_convert = no
+				set_piety_loss_for_attacking_same_religion = no
+				set_convert_other_groups = 0
+				set_convert_same_group = 0
+				set_ai_aggression = 0.5
+				set_heir_designation = yes
+				set_raised_vassal_opinion_loss = no
+				set_short_reign_opinion_year_mult = 0
 			}
 		}
 		ai_will_do = {

@@ -2373,6 +2373,132 @@ pagan_group = {
 		dislike_tribal_organization = yes
 		reformed = momolian_reformed
 	}
+	animist_reformed = { #Ancestral Religion of Papua New Guinea
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 100 150 90 }
+		
+		high_god_name = GOD_WONEKAU
+		
+		god_names = {
+			GOD_AFEK GOD_AFEKAN GOD_HAINUWELE GOD_MARUNOGERE_KIWIPAPUA GOD_NU GOD_OLIFAT GOD_YESU
+		}
+		evil_god_names = {
+			BALOMA DUDUGERA HONOYETA
+		}
+		scripture_name = THE_LEGENDS
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
+	animist = { #Ancestral Religion of Papua New Guinea
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 140 110 130 }
+		
+		high_god_name = GOD_WONEKAU
+		
+		god_names = {
+			GOD_AFEK GOD_AFEKAN GOD_HAINUWELE GOD_MARUNOGERE_KIWIPAPUA GOD_NU GOD_OLIFAT GOD_YESU
+		}
+		evil_god_names = {
+			BALOMA DUDUGERA HONOYETA
+		}
+		scripture_name = THE_LEGENDS
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		defensive_attrition = yes
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = animist_reformed
+	}
+	makasol_reformed = { #Paliau Movement of Northern Papua New Guinea
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 161 126 80 }
+		
+		high_god_name = GOD_WING
+		
+		god_names = {
+			GOD_PALIAU GOD_LADY_TERESIA GOD_WANG_JESUS GOD_WONG
+		}
+		evil_god_names = {
+			LAIT_SAN THE_NOISE
+		}
+		scripture_name = MANUS_KASTAM_KANSOL
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+	}
+	makasol = { #Paliau Movement of Northern Papua New Guinea
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 121 86 120 }
+		
+		high_god_name = GOD_WING
+		
+		god_names = {
+			GOD_PALIAU GOD_LADY_TERESIA GOD_WANG_JESUS GOD_WONG
+		}
+		evil_god_names = {
+			LAIT_SAN THE_NOISE
+		}
+		scripture_name = MANUS_KASTAM_KANSOL
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		
+		defensive_attrition = yes
+
+		religious_clothing_head = 14
+		religious_clothing_priest = 10
+		
+		dislike_tribal_organization = yes
+		reformed = makasol_reformed
+	}
 }
 
 jewish_group = {
