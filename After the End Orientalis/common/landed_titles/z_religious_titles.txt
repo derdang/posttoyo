@@ -436,3 +436,119 @@ d_nusantara = {
 		Maremmeh Pethion Sabrisho Shemon Sargis Surin Theodosios Timotheos Yahballaha Yohannan
 	}
 }
+d_concordanist_singapore = {
+	color={ 237 41 57 }
+	color2={ 220 220 0 }
+	
+	capital = 389 #Singapore
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = PRESIDENT
+	foa = PRESIDENT_FOA
+	title_prefix = COUNCIL
+	
+	controls_religion = concordanist
+	
+	religion = concordanist
+	pentarchy = concordanist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no
+}
+d_concordanist_port_moresby = {
+	color={ 196 97 100 }
+	color2={ 220 220 0 }
+	
+	capital = 672 #Port Moresby
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = PRESIDENT
+	foa = PRESIDENT_FOA
+	title_prefix = COUNCIL
+	
+	culture = sentani
+	religion = concordanist
+	pentarchy = concordanist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no
+}
+d_concordanist_taipei = {
+	color={ 0 0 149 }
+	color2={ 220 220 0 }
+	
+	capital = 1358 # c_taipei
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = PRESIDENT
+	foa = PRESIDENT_FOA
+	title_prefix = COUNCIL
+	
+	culture = taiwanese
+	religion = concordanist
+	pentarchy = concordanist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no
+}
+d_concordanist_seoul = {
+	color={ 90 222 98 }
+	color2={ 220 220 0 }
+	
+	capital = 757 # c_inchon
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = PRESIDENT
+	foa = PRESIDENT_FOA
+	title_prefix = COUNCIL
+	
+	culture = hangugin
+	religion = concordanist
+	pentarchy = concordanist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no
+}
+d_concordanist_hong_kong = {
+	color={ 117 42 86 }
+	color2={ 220 220 0 }
+	
+	capital = 1013 # c_hong_kong
+	
+	landless = yes
+	
+	dignity = 500 # Counted as having this many more counties than it does
+	
+	title = PRESIDENT
+	foa = PRESIDENT_FOA
+	title_prefix = COUNCIL
+	
+	culture hong_konger
+	religion = concordanist
+	pentarchy = concordanist
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no
+}
