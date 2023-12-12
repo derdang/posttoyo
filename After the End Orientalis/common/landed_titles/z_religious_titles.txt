@@ -552,3 +552,21 @@ d_concordanist_hong_kong = {
 	
 	dynasty_title_names = no
 }
+k_vissarionite = {
+	color = { 25 100 125 }
+	
+	capital = 2257 #Krasnoyarsk
+	
+	title = "HEAD_VISSARIONITE"
+	foa = "VISSARIONITE_FOA"
+	
+	# Always exists
+	landless = yes
+	
+	religion = vissarionite
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
