@@ -648,7 +648,20 @@
 1240056 = { name="Khalmakshinai" culture=buryat }
 1240057 = { name="Vanjilai" culture=buryat }
 1240058 = { name="Mikhakhanov" culture=buryat } 
-1240059 = { name="Burmaakhain" culture=buryat religion=gelugpa}
+1240059 = { name="Burmaakhain" culture=buryat
+	coat_of_arms = {
+		religion = gelugpa
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1240060 = { name="Stepanai" culture=buryat }
 1240061 = { name="Tsybjitai" culture=buryat }
 1240062 = { name="Tsyrempilai" culture=buryat }
@@ -764,7 +777,65 @@
 1240172 = { name="Gombosüren" culture=buryat }
 1240173 = { name="Bayanmönkh" culture=buryat }
 1240174 = { name="Batbileg" culture=buryat }
-1240175 = { name="Klyonov" culture=buryat religion=orthodox}
+1240175 = { name ="Klyonov" culture = buryat used_for_random = no 
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1240176 = { name="Mihahanov" culture=buryat
+	coat_of_arms = {
+		religion = gelugpa
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1240177 = { name="Buryatsky" culture=buryat religion=gelugpa}
+1240178 = { name="Brynner" culture=buryat
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1240179 = { name="Zhamtsarano" culture=buryat religion=orthodox}
+1240180 = { name="Barannikov" culture=buryat religion=orthodox}
+1240181 = { name="Dashidorzhieva" culture=buryat
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1293000 = { name="Pakualam" culture= javanese used_for_random = no}
 1293001 = { name="Pakubuwana" culture= javanese used_for_random = no}
@@ -7538,6 +7609,34 @@ coat_of_arms = {
 1919134 = { name="Sidorovich" culture=amursky }
 1919135 = { name="Smirnov" culture=amursky }
 1919136 = { name="Polikarpov" culture=amursky }
+1919137 = { name= "Mikhailov"  culture=amursky
+	coat_of_arms = {
+			religion = orthodox
+			template = 0
+			layer = {
+			texture = 3
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1919138 = { name= "Vlasyevsky"  culture=amursky
+	coat_of_arms = {
+			religion = orthodox
+			template = 0
+			layer = {
+			texture = 3
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1920000 = { name="Mesyats" culture=sibiri }
 1920001 = { name="Blanter" culture=sibiri }
@@ -7775,6 +7874,151 @@ coat_of_arms = {
 			layer = {
 			texture = 3
 			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920152 = { name="Boldyrev" culture=sibiri religion=orthodox}
+1920153 = { name="Krasnov" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920154 = { name="Boldyrev" culture=sibiri religion=orthodox}
+1920155 = { name="Semenov" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920156 = { name="Iuzhinskii" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920157 = { name="Reznik" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920158 = { name="Nikitich" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920159 = { name="Popkov" culture=sibiri religion=old_believer}
+1920160 = { name="Popovich" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920161 = { name="Murometz" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920162 = { name="Akritai" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920163 = { name="Kozhemyaka" culture=sibiri religion=orthodox}
+1920164 = { name="Kain" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1920165 = { name="Kosheverova" culture=sibiri religion=orthodox}
+1920166 = { name="Morevna" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 22
 			emblem = 0
 			color = 0
 			color = 0

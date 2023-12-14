@@ -125,32 +125,58 @@
 	2584.1.5={birth=yes}
 }
 1919000={
-	name="Alexei"
-	dynasty=1919038 #Maksimov
-	culture=amursky
-	religion=orthodox
-	trait=duelist
-	trait=zealous
-	2580.7.10={birth=yes}
-	2680.1.1={death=yes}
+	name="Boris"
+    dynasty=1919138 # Vlasyevsky
+    culture=sibiri
+    religion=orthodox
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=underhanded_rogue
+    trait=drunkard
+    trait=gregarious
+    trait=charitable
+    trait=kind
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1919001={
-	name="Lukyan"
-	dynasty=1919042 #Ivanov
-	culture=amursky
-	religion=orthodox
-	2580.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Konstantin"
+    dynasty=1919137 # Mikhailov
+    culture=amursky
+    religion=orthodox
+    martial=6
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=skilled_tactician
+    trait=robust
+    trait=arbitrary
+    trait=ambitious
+    trait=cruel
+    trait=patient
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1920000={
-	name="Alexei"
-	dynasty=1920017 #Frolov
-	culture=sibiri
-	religion=orthodox
-	trait=duelist
-	trait=zealous
-	2580.7.10={birth=yes}
-	2680.1.1={death=yes}
+	name="Vladimir"
+    dynasty=1920152 # Boldyrev
+    culture=sibiri
+    religion=orthodox
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=flamboyant_schemer
+    trait=envious
+    trait=temperate
+    trait=proud
+    2588.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1920001={
 	name="Vasily"
@@ -184,39 +210,85 @@
 	2680.1.1={death=yes}
 }
 1920003={
-	name="Denis"
-	dynasty=1920050 #Bovarin
-	culture=sibiri
-	religion=orthodox
-	2580.7.10={birth=yes}
-	2680.1.1={death=yes}
+	name="Alyosha"
+    dynasty=1920160 # Popovich
+	give_nickname=nick_the_priest_son
+    culture=sibiri
+    religion=orthodox
+    martial=4
+    diplomacy=5
+    stewardship=3
+    intrigue=6
+    learning=6
+    trait=flamboyant_schemer
+    trait=quick
+    trait=socializer
+    trait=deceitful
+    trait=diligent
+    trait=gregarious
+    trait=envious
+    trait=wroth
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1920004={
-	name="Boris"
-	dynasty=1920055 #Uglov
-	culture=sibiri
-	religion=orthodox
-	2580.7.10={birth=yes}
-	2680.1.1={death=yes}
+	name="Zosima"
+    dynasty=1920159 # Popkov
+    culture=sibiri
+    religion=old_believer
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=patient
+    trait=kind
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1920005={
-	name="Aleksandr"
-	dynasty=1920065 #Perevyortov
-	culture=sibiri
-	religion=orthodox
-	2580.7.10={birth=yes}
-	2680.1.1={death=yes}
+	name="Anika"
+    dynasty=1920162 # Akritai
+    culture=sibiri
+	give_nickname=nick_the_unbeaten
+    religion=orthodox
+    martial=8
+    diplomacy=2
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=brilliant_strategist
+    trait=aggressive_leader
+    trait=robust
+    trait=ambitious
+    trait=wroth
+    trait=cynical
+    trait=cruel
+    trait=proud
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1920006={
-	name="Yuriy"
-	dynasty=1920138 #Yevtushenko
-	culture=sibiri
-	religion=orthodox
-	trait=poet
-	trait=scholar
-	trait=erudite
-	2580.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Marya"
+    dynasty=1920166 # Morevna
+    female=yes
+    culture=sibiri
+    religion=orthodox
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=martial_cleric
+    trait=mystic
+    trait=groomed
+    trait=cynical
+    trait=envious
+    trait=diligent
+    2585.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1920007={
 	name="Ivan"
@@ -248,13 +320,23 @@
 	2680.1.1={death=yes}
 }
 1920009={
-	name="Evgeniy"
-	dynasty=1920137 #Chudinov
-	culture=sibiri
-	religion=orthodox
-	give_nickname=nick_the_old
-	2575.2.27={birth=yes}
-	2629.12.30={death=yes}
+	name="Roman"
+    dynasty=1920153 # Krasnov
+    culture=sibiri
+    religion=orthodox
+    martial=3
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=8
+    trait=scholarly_theologian
+    trait=zealous
+    trait=lunatic
+    trait=diligent
+    trait=celibate
+    trait=charitable
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1920010={
 	name="Anatoly"
@@ -700,5 +782,179 @@
 	disallow_random_traits = yes
 	2562.12.1={birth=yes}
 	2660.1.1={death=yes}
+}
+1920033={
+	name="Andrei"
+    dynasty=1920154 # Bogomoev
+    culture=sibiri
+    religion=orthodox
+    martial=2
+    diplomacy=3
+    stewardship=3
+    intrigue=2
+    learning=4
+    trait=naive_appeaser
+    trait=gregarious
+    trait=kind
+    trait=charitable
+    2584.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1920034={
+	name="Nikolai"
+    dynasty=1920155 # Semenov
+    culture=sibiri
+    religion=orthodox
+    martial=5
+    diplomacy=3
+    stewardship=2
+    intrigue=4
+    learning=3
+    trait=skilled_tactician
+    trait=cruel
+    trait=sturdy
+    trait=proud
+    trait=charitable
+    trait=arbitrary
+    trait=envious
+    trait=brave
+    2560.1.1={birth=yes}
+	2600.1.1={employer=1240005}
+	2601.1.1={effect={give_job_title=job_marshal}}
+    2700.1.1={death=yes}
+}
+1920035={
+	name="Vasilisa"
+    dynasty=1920156 # Iuzhinskii
+    female=yes
+	give_nickname=nick_the_vodyantikha
+    culture=sibiri
+    religion=fourthist
+    martial=6
+    diplomacy=6
+    stewardship=6
+    intrigue=6
+    learning=6
+    trait=elusive_shadow
+    trait=mystic
+    trait=shrewd
+    trait=fair
+    trait=ambitious
+    trait=envious
+    trait=gregarious
+    trait=lustful
+    trait=patient
+    trait=deceitful
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1920036={
+	name="Dmitri"
+    dynasty=1920157 # Reznik
+    culture=sibiri
+    religion=orthodox
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=tough_soldier
+    trait=wroth
+    trait=ambitious
+    trait=brave
+    2589.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1920037={
+	name="Dobrynya"
+    dynasty=1920158 # Nikitich
+    culture=sibiri
+    religion=orthodox
+    martial=4
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=stubborn
+    trait=proud
+    trait=diligent
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1920038={
+	name="Ilya"
+    dynasty=1920161 # Murometz
+    culture=sibiri
+    religion=orthodox
+	give_nickname=nick_the_bogatyr
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=brilliant_strategist
+    trait=giant
+    trait=strong
+    trait=dull
+    trait=brave
+    trait=proud
+    trait=charitable
+    trait=wroth
+    2559.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1920039={
+	name="Korila"
+    dynasty=1920163 # Kozhemyaka
+    culture=sibiri
+    religion=orthodox
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=3
+    trait=tough_soldier
+    trait=strong
+    trait=brave
+    trait=kind
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1920040={
+	name="Ivan"
+    dynasty=1920164 # Kain
+    culture=sibiri
+    religion=orthodox
+    martial=7
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=zealous
+    trait=greedy
+    trait=envious
+    trait=wroth
+    trait=gregarious
+    2583.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1920041={
+	name="Ivanushka"
+    dynasty=1920165 # Kosheverova
+    culture=sibiri
+    religion=orthodox
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=underhanded_rogue
+    trait=dull
+    trait=gregarious
+    trait=kind
+    2578.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
