@@ -448,7 +448,7 @@ d_concordanist_singapore = {
 	
 	title = PRESIDENT
 	foa = REVEREND_FOA
-	title_prefix = COUNCIL
+	title_prefix = COUNCIL_OF
 	
 	controls_religion = concordanist
 	
@@ -472,7 +472,7 @@ d_concordanist_port_moresby = {
 	
 	title = PRESIDENT
 	foa = PRESIDENT_FOA
-	title_prefix = COUNCIL
+	title_prefix = COUNCIL_OF
 	
 	culture = sentani
 	religion = concordanist
@@ -495,7 +495,7 @@ d_concordanist_taipei = {
 	
 	title = PRESIDENT
 	foa = PRESIDENT_FOA
-	title_prefix = COUNCIL
+	title_prefix = COUNCIL_OF
 	
 	culture = taiwanese
 	religion = concordanist
@@ -518,7 +518,7 @@ d_concordanist_seoul = {
 	
 	title = PRESIDENT
 	foa = PRESIDENT_FOA
-	title_prefix = COUNCIL
+	title_prefix = COUNCIL_OF
 	
 	culture = hangugin
 	religion = concordanist
@@ -541,7 +541,7 @@ d_concordanist_hong_kong = {
 	
 	title = PRESIDENT
 	foa = PRESIDENT_FOA
-	title_prefix = COUNCIL
+	title_prefix = COUNCIL_OF
 	
 	culture = hong_konger
 	religion = concordanist
@@ -564,6 +564,27 @@ k_vissarionite = {
 	landless = yes
 	
 	religion = vissarionite
+	controls_religion = vissarionite
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
+d_old_believer = {
+	color = { 128 51 102 }
+	
+	capital = 2072 #Khabarovsk
+	
+	title = "METROPOLITAN"
+	foa = "METROPOLITAN_FOA"
+	title_prefix = "METROPOLITANATE_OF"
+	
+	# Always exists
+	landless = yes
+	
+	religion = old_believer
+	controls_religion = old_believer
 	
 	# Cannot be held as a secondary title
 	primary = yes
