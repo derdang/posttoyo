@@ -1,81 +1,3 @@
-1912000 ={ #Wife of the 4th Ruler of Tomsk
-	name="Olga"
-    dynasty=1912061 # Mainagashev
-    culture=khakas
-    religion=orthodox
-    martial=3
-    diplomacy=3
-    stewardship=3
-    intrigue=3
-    learning=3
-	female=yes
-    trait=charismatic_negotiator
-    trait=ugly
-    trait=gregarious
-    trait=kind
-    trait=content
-	father=1912002
-    2585.1.1={birth=yes}
-    2700.1.1={death=yes}
-}
-1912001 ={
-	name="Igor"
-    dynasty=1912061 # Mainagashev
-    culture=khakas
-    religion=orthodox
-    martial=5
-    diplomacy=3
-    stewardship=6
-    intrigue=3
-    learning=4
-    trait=midas_touched
-    trait=cynical
-    trait=temperate
-    trait=envious
-    trait=diligent
-    trait=honest
-	father=1912002
-    2570.1.1={birth=yes}
-    2700.1.1={death=yes}
-}
-1912002 ={
-	name="Simon"
-    dynasty=1912061 # Mainagashev
-    culture=khakas
-    religion=orthodox
-    martial=3
-    diplomacy=3
-    stewardship=3
-    intrigue=3
-    learning=3
-    trait=tough_soldier
-    trait=diligent
-    trait=honest
-    trait=paranoid
-    trait=wroth
-    trait=kind
-    2545.1.1={birth=yes}
-    2588.1.1={death=yes}
-}
-1912003 ={
-	name="Mikhail"
-    dynasty=1912062 # Katanov
-    culture=khakas
-    religion=orthodox
-    martial=3
-    diplomacy=4
-    stewardship=4
-    intrigue=3
-    learning=3
-    trait=tough_soldier
-    trait=brave
-    trait=wroth
-    trait=diligent
-    trait=paranoid
-    trait=greedy
-    2577.1.1={birth=yes}
-    2700.1.1={death=yes}
-}
 1917000 ={ #Duke of Khanka
 	name="Andrei"
 	dynasty=1917137 #Popov
@@ -90,29 +12,23 @@
 	#no-random-trait
 	2579.1.5={birth=yes}
 }
-1917001 ={ #k_vladivostok
-	name="Nikolai"
-	dynasty=1917114
-	culture=primorskiy
-	religion=nousthreskeia
-	trait=ambitious
-	trait=greedy
-	#no-random-trait
-	2579.1.5={birth=yes}
-}
-1917002 ={ #Duke of Ussuriysk
-	name="Nikos"
-	dynasty=1917114 #Voroshilov
-	culture=primorskiy
-	religion=orthodox
-	trait=tough_soldier
-	trait=ambitious
-	trait=shy
-	trait=just
-	trait=fair
-	trait=poet
-	#no-random-trait
-	2579.1.5={birth=yes}
+1917001 ={ #4th Grand Mayor of Primorsky
+	name="Dmitry"
+    dynasty=1917160 # Galetsky
+    culture=primorskiy
+    religion=orthodox
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=midas_touched
+    trait=administrator
+    trait=diligent
+    trait=honest
+	father=1917029
+    2559.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1917002 ={ #Duke of Ussuriysk
 	name="Nikos"
@@ -147,15 +63,543 @@
     2585.1.1={birth=yes}
     2700.1.1={death=yes}
 }
-1917101 ={ #k_khabovsk
-	name="Alexandr"
-	dynasty=1917111
-	culture=primorskiy
-	religion=orthodox
-	trait=ambitious
-	trait=kind
-	#no-random-trait
-	2584.1.5={birth=yes}
+1917004 ={ #4th King of Khabarovsk
+	name="Vyacheslav"
+    dynasty=1917140 # Sievers
+    culture=primorskiy
+    religion=fourthist
+	give_nickname=nick_the_autocrat
+    martial=6
+    diplomacy=6
+    stewardship=4
+    intrigue=6
+    learning=5
+    trait=brilliant_strategist
+    trait=quick
+    trait=impaler
+    trait=zealous
+    trait=ambitious
+    trait=wroth
+    trait=cruel
+    trait=honest
+    2572.1.1={birth=yes}
+	2590.1.1={effect={add_friend=1917012}}
+    2700.1.1={death=yes}
+}
+1917005 ={ #Prince of Khabarovsk
+	name="Yegor"
+    dynasty=1917140 # Sievers
+    culture=primorskiy
+    religion=fourthist
+    martial=6
+    diplomacy=4
+    stewardship=6
+    intrigue=4
+    learning=3
+    trait=tough_soldier
+    trait=strong
+    trait=dull
+    trait=wroth
+    trait=zealous
+	mother=1917007
+	father=1917004
+    2588.1.1={birth=yes}
+	2590.1.1={effect={add_rival=1917012}}
+    2700.1.1={death=yes}
+}
+1917006 ={ #Prince of Khabarovsk
+	name="Zakhar"
+    dynasty=1917140 # Sievers
+    culture=primorskiy
+    religion=fourthist
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=martial_cleric
+    trait=ambitious
+    trait=craven
+    trait=cruel
+    trait=paranoid
+    trait=cynical
+	mother=1917007
+	father=1917004
+    2589.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917007 ={ #Queen of Khabarovsk (Duchess of Vaninsky)
+	name="Darya"
+    dynasty=1917141 # Lakhta
+    female=yes
+    culture=primorskiy
+    religion=fourthist
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=mastermind_theologian
+    trait=mystic
+    trait=ambitious
+    trait=envious
+    trait=zealous
+    trait=diligent
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917008 ={ #1st King of Khabarovsk
+	name="Konstantin"
+    dynasty=1917142 # Konstantinovichi
+    culture=primorskiy
+	give_nickname=nick_the_great
+    religion=orthodox
+	father=1917020
+    2420.1.1={birth=yes}
+    2470.1.1={death={death_reason=death_battle}}
+}
+1917009 ={ #2nd King of Khabarovsk
+	name="Konstantin"
+    dynasty=1917142 # Konstantinovichi
+    culture=primorskiy
+    religion=orthodox
+	father=1917008
+    2460.1.1={birth=yes}
+    2250.1.1={death=yes}
+}
+1917010 ={ #3rd King of Khabarovsk
+	name="Konstantin"
+    dynasty=1917142 # Konstantinovichi
+    culture=primorskiy
+    religion=orthodox
+	give_nickname=nick_the_capable
+    martial=6
+    diplomacy=7
+    stewardship=7
+    intrigue=5
+    learning=4
+    trait=tough_soldier
+    trait=zealous
+    trait=brave
+    trait=proud
+	father=1917009
+    2520.1.1={birth=yes}
+    2591.1.1={death={death_reason=death_battle killer=1917004}}
+}
+1917011 ={ #Count of Bikinsky
+	name="Aleksandr"
+    dynasty=1917143 # Bahtiyarov
+    culture=primorskiy
+    religion=orthodox
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=flamboyant_schemer
+    trait=fair
+    trait=ambitious
+    trait=proud
+    2568.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917012 ={ #Duke of Komsomolsky
+	name="Artur"
+    dynasty=1917144 # Debryanskaya
+    culture=primorskiy
+    religion=fourthist
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=martial_cleric
+    trait=physician
+    trait=zealous
+    trait=lustful
+    trait=arbitrary
+    trait=cruel
+    2571.1.1={birth=yes}
+	2590.1.1={effect={add_friend=1917004}}
+    2700.1.1={death=yes}
+}
+1917013 ={ #Countess of Nanaysky
+	name="Anna"
+    dynasty=1917145 # Pyshnyak
+    female=yes
+    culture=primorskiy
+    religion=fourthist
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=5
+    learning=4
+    trait=underhanded_rogue
+    trait=cruel
+    trait=envious
+    trait=proud
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917014 ={ #Duke of Arsenyevsky
+	name="Ilya"
+    dynasty=1917146 # Khanchuk
+    culture=primorskiy
+    religion=nousthreskeia
+    martial=4
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=5
+    trait=midas_touched
+    trait=greedy
+    trait=patient
+    trait=diligent
+    2564.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917015 ={ #Countess of Chuguyevsky
+	name="Mary"
+    dynasty=1917147 # Dzerzhinsky
+    female=yes
+    culture=primorskiy
+    religion=nousthreskeia
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=paranoid
+    trait=proud
+    trait=arbitrary
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917016 ={ #Countess of Chuguyevsky
+	name="Nikolai"
+    dynasty=1917148 # Khaliletsky
+    culture=primorskiy
+    religion=nousthreskeia
+    martial=5
+    diplomacy=3
+    stewardship=6
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=greedy
+    trait=diligent
+    trait=envious
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917017 ={ #Count of Lezozavodsk
+	name="Alexander"
+    dynasty=1917149 # Sokolov
+    culture=primorskiy
+    religion=nousthreskeia
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=misguided_warrior
+    trait=adventurer
+    trait=ambitious
+    trait=strong
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917018 ={ #Duke of Partizansk
+	name="Boris"
+    dynasty=1917150 # Shishmarev
+    culture=primorskiy
+    religion=nousthreskeia
+    martial=6
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=kind
+    trait=wroth
+    trait=temperate
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917019 ={ #1st King of Primorsky
+	name="Konstantin"
+    dynasty=xx # Konstantinovichi
+    culture=primorskiy
+    religion=orthodox
+    2355.1.1={birth=yes}
+    2400.1.1={death=yes}
+}
+1917020 ={ #2nd King of Primorsky
+	name="Konstantin"
+    dynasty=xx # Konstantinovichi
+    culture=primorskiy
+    religion=orthodox
+	father=1917019
+    2380.1.1={birth=yes}
+    2441.1.1={death={death_reason=death_vanished}}
+}
+1917021 ={ #Count of Khasansky
+	name="Gennady"
+    dynasty=1917152 # Burachka
+    culture=primorskiy
+    religion=orthodox
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=5
+    trait=elusive_shadow
+    trait=gluttonous
+    trait=paranoid
+    trait=envious
+    2586.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917022 ={ #Duke of Yaponskoye Morye
+	name="Konstantin"
+    dynasty=1917153 # Chaadayev
+    culture=primorskiy
+    religion=fourthist
+    martial=4
+    diplomacy=6
+    stewardship=4
+    intrigue=5
+    learning=6
+    trait=martial_cleric
+    trait=mystic
+    trait=ambitious
+    trait=envious
+    trait=wroth
+    trait=chaste
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917023 ={ #Countess of Kranoarmeysky 
+	name="Anya"
+    dynasty=1917154 # Chkheidze
+    female=yes
+    culture=primorskiy
+    religion=fourthist
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=2
+    trait=thrifty_clerk
+    trait=greedy
+    trait=patient
+    trait=diligent
+    2574.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917024 ={ #Countess of Pozharsky and Terneysky 
+	name="Daria"
+    dynasty=1917155 # Arapov
+    female=yes
+    culture=primorskiy
+    religion=fourthist
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=naive_appeaser
+    trait=greedy
+    trait=proud
+    trait=craven
+    2586.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917025 ={ #Chief of Alexandrovsk and Nogliksky
+	name="Roman"
+    dynasty=1917156 # Mazunin
+    culture=primorskiy
+    religion=orthodox
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=kind
+    trait=cruel
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917026 ={ #Chief of Smirnykhovsky and Tymovsky
+	name="Maxim"
+    dynasty=1917157 # Averbakh
+    culture=primorskiy
+    religion=orthodox
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=kind
+    trait=charitable
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917027 ={ #Duchess of Yuzhno-Sakhalin
+	name="Olga"
+    dynasty=1917158 # Agranovskaya
+    female=yes
+    culture=primorskiy
+    religion=orthodox
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=tough_soldier
+    trait=robust
+    trait=wroth
+    trait=humble
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917028 ={ #Chiefdom of Pronaysky
+	name="Yuri"
+    dynasty=1917159 # Borukhovich
+    culture=primorskiy
+    religion=orthodox
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=5
+    learning=4
+    trait=intricate_webweaver
+    trait=deceitful
+    trait=diligent
+    trait=paranoid
+    2584.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917028 ={ #1st Grand Mayor of Primorsky
+	name="Vladimir"
+    dynasty=1917160 # Galetsky
+    culture=primorskiy
+    religion=orthodox
+    2435.1.1={birth=yes}
+    2530.1.1={death=yes}
+}
+1917029 ={ #2nd Grand Mayor of Primorsky
+	name="Petyr"
+    dynasty=1917160 # Galetsky
+    culture=primorskiy
+    religion=orthodox
+	father=1917028
+    2500.1.1={birth=yes}
+    2570.1.1={death=yes}
+}
+1917030 ={ #Grand Mayor of Partizansky
+	name="Ksenia"
+    dynasty=1917161 # Mechik
+    female=yes
+    culture=primorskiy
+    religion=nousthreskeia
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=fair
+    trait=ambitious
+    trait=envious
+    trait=gregarious
+    trait=diligent
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917031 ={ #3rd Prince Mayor of Primorsky
+	name="Moses"
+    dynasty=1917162 # Davidovich
+    culture=primorskiy
+    religion=jewish
+    2545.1.1={birth=yes}
+    2600.1.1={death=yes}
+}
+1917032 ={ #Current Head of the House of Davidovich
+	name="Leizer"
+    dynasty=1917162 # Davidovich
+    culture=primorskiy
+    religion=jewish
+    martial=6
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=6
+    trait=fortune_builder
+    trait=gregarious
+    trait=patient
+    trait=deceitful
+    trait=diligent
+    trait=just
+	father=1917031
+    2573.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917033 ={ #Current Head of the House of Yankovsky
+	name="Pavel"
+    dynasty=1917163 # Yankovsky
+    culture=primorskiy
+    religion=orthodox
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=5
+    trait=martial_cleric
+    trait=patient
+    trait=proud
+    trait=charitable
+    2578.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917034 ={ #Current Head of the House of Reznichenko
+	name="Anton"
+    dynasty=1917164 # Reznichenko
+    culture=primorskiy
+    religion=fourthist
+    martial=5
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=wroth
+    trait=ambitious
+    trait=brave
+    2571.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917035 ={ #Count of Lazovsky
+	name="Vladimir"
+    dynasty=1917151 # Krechmar
+    culture=primorskiy
+    religion=nousthreskeia
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=fortune_builder
+    trait=arbitrary
+    trait=proud
+    trait=brave
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1918000={
 	name="Ivan"
@@ -406,6 +850,429 @@
     trait=deceitful
     trait=gluttonous
     2587.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919005={
+	name="Roman"
+    dynasty=1919142 # Trubetzkoy
+    culture=amursky
+    religion=fourthist
+    martial=4
+    diplomacy=5
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=martial_cleric
+    trait=zealous
+    trait=wroth
+    trait=erudite
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919006={
+	name="Mendele"
+    dynasty=1919143 # Razgon
+    culture=amursky
+    religion=jewish
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=underhanded_rogue
+    trait=content
+    trait=cynical
+    trait=diligent
+    trait=humble
+    2568.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919007={
+	name="Ivan"
+    dynasty=1919144 # Okulov
+    culture=amursky
+    religion=orthodox 
+    martial=4
+    diplomacy=5
+    stewardship=5
+    intrigue=3
+    learning=4
+    trait=flamboyant_schemer
+    trait=poet
+    trait=arbitrary
+    trait=slothful
+    trait=kind
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919008={
+	name="Yakov"
+    dynasty=1919145 # Valuev
+    culture=amursky
+    religion=fourthist
+    martial=7
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=tough_soldier
+    trait=ambitious
+    trait=lustful
+    trait=arbitrary
+    trait=brave
+	father=1919010
+    2570.1.1={birth=yes}
+	2590.1.1={effect={add_friend=1919011}}
+	2599.1.1={
+		add_claim=k_amur
+	}
+    2700.1.1={death=yes}
+}
+1919009={
+	name="Vladimir"
+    dynasty=1919145 # Valuev
+    culture=amursky
+    religion=orthodox
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=5
+    learning=4
+    trait=charismatic_negotiator
+    trait=honest
+    trait=craven
+    trait=kind
+	father=1919010
+    2566.1.1.1={birth=yes}
+	2599.1.1={
+		add_claim=k_amur
+	}
+	2599.6.10={effect={add_lover = 1919016}}
+	2600.1.1={add_spouse=1919016}
+    2700.1.1={death=yes}
+}
+1919010={
+	name="Dmitri"
+    dynasty=1919145 # Valuev
+    culture=amursky
+    religion=orthodox
+	give_nickname=nick_the_open_handed
+    martial=7
+    diplomacy=7
+    stewardship=2
+    intrigue=7
+    learning=7
+    trait=brilliant_strategist
+    trait=strong
+    trait=drunkard
+    trait=brave
+    trait=kind
+    trait=charitable
+    2545.1.1={birth=yes}
+    2600.1.1={death=yes}
+}
+1919011={
+	name="Volodymyr"
+    dynasty=1919146 # Vernadsky
+    culture=amursky
+    religion=nousthreskeia
+	give_nickname=nick_the_pseudo_cosmonaut
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=6
+    learning=6
+    trait=scholarly_theologian
+    trait=scholar
+    trait=shrewd
+    trait=ambitious
+    trait=cruel
+    trait=gregarious
+    2580.1.1={birth=yes}
+	2590.1.1={effect={add_friend=1919008}}
+    2700.1.1={death=yes}
+}
+1919012={
+	name="Clement"
+    dynasty=1919147 # Logvinov
+    culture=amursky
+    religion=orthodox
+	secret_religion=old_believer
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=6
+    trait=martial_cleric
+    trait=humble
+    trait=diligent
+    trait=chaste
+    2562.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919013={
+	name="Boris"
+    dynasty=1919148 # Orlov
+    culture=amursky
+    religion=orthodox
+    martial=4
+    diplomacy=3
+    stewardship=2
+    intrigue=5
+    learning=3
+    trait=underhanded_rogue
+    trait=envious
+    trait=greedy
+    trait=temperate
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919014={
+	name="Alexei"
+    dynasty=1919149 # Kushnir
+    culture=amursky
+    religion=orthodox
+    martial=5
+    diplomacy=2
+    stewardship=2
+    intrigue=3
+    learning=4
+    trait=thrifty_clerk
+    trait=wroth
+    trait=greedy
+    trait=paranoid
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919015={
+	name="Mikhail"
+    dynasty=1919150 # Ulyanov
+    culture=amursky
+    religion=orthodox
+    martial=4
+    diplomacy=5
+    stewardship=3
+    intrigue=5
+    learning=5
+    trait=misguided_warrior
+    trait=possessed
+    trait=cynical
+    trait=wroth
+    2555.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919016={
+	name="Esther"
+    dynasty=1919151 # Vayntrub
+    female=yes
+    culture=amursky
+    religion=jewish
+    martial=4
+    diplomacy=2
+    stewardship=5
+    intrigue=3
+    learning=5
+    trait=midas_touched
+    trait=quick
+    trait=poet
+    trait=shy
+    trait=patient
+    trait=devout
+    2584.1.1={birth=yes}
+	2599.6.10={effect={add_lover = 1919009}}
+    2700.1.1={death=yes}
+}
+1919017={
+	name="Anastasia"
+    dynasty=1919152 # Pasvik
+    female=yes
+    culture=amursky
+    religion=orthodox
+    martial=4
+    diplomacy=6
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=indulgent_wastrel
+    trait=drunkard
+    trait=slothful
+    trait=envious
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919018={
+	name="Grigori"
+    dynasty=1919153 # Gorokhovskaya
+    culture=amursky
+    religion=orthodox
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=tough_soldier
+    trait=brawny
+    trait=just
+    trait=proud
+    2588.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919019={
+	name="Maxim"
+    dynasty=1919154 # Tolstykh
+    culture=amursky
+    religion=orthodox
+    martial=4
+    diplomacy=5
+    stewardship=3
+    intrigue=4
+    learning=6
+    trait=skilled_tactician
+    trait=wroth
+    trait=cruel
+    trait=arbitrary
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919020={
+	name="Vadim"
+    dynasty=1919155 # Shakhtama
+    culture=amursky
+    religion=orthodox
+    martial=6
+    diplomacy=4
+    stewardship=6
+    intrigue=5
+    learning=4
+    trait=tough_soldier
+    trait=greedy
+    trait=wroth
+    trait=paranoid
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919021={
+	name="Anatoly"
+    dynasty=1919156 # Vostretsov
+    culture=amursky
+    religion=orthodox
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=5
+    trait=naive_appeaser
+    trait=dull
+    trait=craven
+    trait=lustful
+    2584.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919022={
+	name="Yamal"
+    dynasty=1919157 # Sevastyanov
+    culture=amursky
+    religion=orthodox
+	give_nickname=nick_the_cosmist
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=8
+    trait=mastermind_theologian
+    trait=genius
+    trait=theologian
+    trait=zealous
+    trait=chaste
+    trait=feeble
+    trait=patient
+    2560.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919023={
+	name="Kolobok"
+    dynasty=1919158 # Oparenko
+    culture=amursky
+    religion=orthodox
+    martial=3
+    diplomacy=5
+    stewardship=2
+    intrigue=5
+    learning=1
+    trait=underhanded_rogue
+    trait=temperate
+    trait=kind
+    trait=lustful
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919024={
+	name="Solovei"
+    dynasty=1919159 # Toropchin
+    culture=amursky
+    religion=orthodox
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=5
+    trait=flamboyant_schemer
+    trait=trusting
+    trait=craven
+    trait=devout
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919025={
+	name="Alexandr"
+    dynasty=1919160 # Babayko
+    culture=amursky
+    religion=fourthist
+	give_nickname=nick_the_baby_eater
+    martial=2
+    diplomacy=4
+    stewardship=4
+    intrigue=6
+    learning=4
+    trait=elusive_shadow
+    trait=cannibal
+    trait=lunatic
+    trait=gluttonous
+    2588.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919026={
+	name="Sergei"
+    dynasty=1919161 # Bamlag
+    culture=amursky
+    religion=orthodox
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=fortune_builder
+    trait=diligent
+    trait=patient
+    trait=arbitrary
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1919027={
+	name="Pavel"
+    dynasty=1919162 # Bugaev
+    culture=amursky
+    religion=orthodox
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=3
+    trait=underhanded_rogue
+    trait=arbitrary
+    trait=kind
+    trait=charitable
+    2582.1.1={birth=yes}
     2700.1.1={death=yes}
 }
 1920000={

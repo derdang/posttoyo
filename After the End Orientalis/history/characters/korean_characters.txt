@@ -3,6 +3,7 @@
 #Korean
 #1597 - Hangugin
 #1598 - Chosunin 
+#1599 - Chaoxianzu 
 
 ###########North Korea###########
 #Theocracy of Nampo
@@ -518,4 +519,22 @@
 	trait=shrewd
 	trait=honest
 	2582.1.1={birth=yes}
+}
+
+1599000 ={ #Count of Anivsky
+	name="Roman"
+    dynasty=1598400 # Pugay
+    culture=chaoxianzu
+    religion=atomicist
+    martial=3
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=fortune_builder
+    trait=greedy
+    trait=temperate
+    trait=diligent
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
