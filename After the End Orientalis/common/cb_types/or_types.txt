@@ -1,4 +1,4 @@
-atomicist_holy_war = { #Adapted from Buddhist holy war
+singijeon_holy_war = { #Adapted from Buddhist holy war
 	name = CB_NAME_RELIGIOUS
 	war_name = WAR_NAME_RELIGIOUS
 	sprite = 9
@@ -13,7 +13,7 @@ atomicist_holy_war = { #Adapted from Buddhist holy war
 	
 	can_use_gui = {
 		ROOT = {
-			religion = atomicist
+			religion = singijeon
 			OR = {
 				NOT = { has_character_modifier = holy_war_cooldown }
 				has_game_rule = { name = holy_war_cooldown_rule value = off }
@@ -28,7 +28,7 @@ atomicist_holy_war = { #Adapted from Buddhist holy war
 	
 	can_use = {
 		ROOT = {
-			religion = atomicist
+			religion = singijeon
 			is_nomadic = no
 			NOT = { same_realm = FROM }
 			OR = {
@@ -139,7 +139,7 @@ atomicist_holy_war = { #Adapted from Buddhist holy war
 
 	is_valid = {
 		ROOT = {
-			religion = atomicist
+			religion = singijeon
 			NOT = { same_realm = FROM }
 			OR = {
 				NOT = { religion = FROM }

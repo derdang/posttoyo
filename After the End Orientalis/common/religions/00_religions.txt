@@ -3011,6 +3011,51 @@ eastern = {
 		intermarry = nestorian
 		intermarry = manichean
 	}
+	cheondoist = {
+		graphical_culture = chinesegfx
+		secondary_event_pictures = sunni
+		has_coa_on_barony_only = yes
+		#alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
+
+		icon = 101
+		heresy_icon = 101
+		
+		color = { 180 150 200 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_HANEULLIM
+		
+		god_names = {
+			GOD_SANGJE GOD_SUWUN GOD_HAEWOL GOD_UIAM
+		}
+		
+		evil_god_names = {
+			THE_DARK_SPIRITS
+		}
+
+		character_modifier = {
+			stewardship = 2
+		}
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		max_consorts = 3
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		scripture_name = DONGHAK
+		priest_title = BAKSU
+		piety_name = GUT
+		
+		intermarry = buddhist_group
+		intermarry = nestorian
+		intermarry = manichean
+	}
 	datong = { #3k Larppppp
 		graphical_culture = chinesegfx
 		secondary_event_pictures = sunni
@@ -3725,7 +3770,7 @@ oldworld = {
 	
 	interface_skin = { pagan_interface }
 
-	atomicist = { #North Korea Fireworks
+	singijeon = { #North Korea Fireworks
 		graphical_culture = muslimgfx
 		
 		icon = 11
@@ -3740,10 +3785,10 @@ oldworld = {
 		high_god_name = GOD_THE_ETERNAL_SUN
 		
 		god_names = {
-			GOD_TSAR_BOMBA GOD_HWASONG GOD_PUKKUKSONG GOD_CHANG_FENG GOD_CHOLLIMA GOD_THE_ATOMIC_SPIRITS
+			GOD_JOWANGSHIN GOD_HWASONG GOD_PUKKUKSONG GOD_CHANG_FENG GOD_CHOLLIMA GOD_THE_ATOMIC_SPIRITS
 		}
 		evil_god_names = {
-			CAPITALISM IMPERIALISM
+			MUSOK DOKKAEBI
 		}
 		
 		investiture = yes
