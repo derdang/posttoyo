@@ -25,9 +25,11 @@ republic_governments = {
 			OR = {
 				controls_religion = no
 				religion_group = muslim
+				religion = vissarionite
+				religion = nousthreskeia
 				has_religion_feature = religion_temporal_head
 				AND = {
-					religion = norse_pagan_reformed
+					religion = americanist_reformed
 					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
 				}
 			}
