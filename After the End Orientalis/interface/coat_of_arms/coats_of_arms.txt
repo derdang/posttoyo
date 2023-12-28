@@ -90,6 +90,13 @@ culture =
 			random = no # Do not use for random CoAs
 		}
 		texture = {
+			file = "gfx\\coats_of_arms\\papuan_dynasties.tga"
+			size = { x = 10 y = 8 }
+			noOfFrames = 80
+			color = 0
+			random = no # Do not use for random CoAs
+		}
+		texture = {
 			file = "gfx\\coats_of_arms\\pattern.tga"
 			size = { x = 10 y = 5 }
 			noOfFrames = 47
@@ -575,6 +582,10 @@ culture = {
 		"chuma_reformed"
 		"shamanist_reformed"
 		"fourthist"
+		"animist"
+		"animist_reformed"
+		"makasol"
+		"makasol_reformed"
 	}
 	
 	templates = { 
@@ -658,6 +669,13 @@ culture = {
 		}
 		texture = {
 			file = "gfx\\coats_of_arms\\siberian_dynasties.tga"
+			size = { x = 10 y = 8 }
+			noOfFrames = 80
+			color = 0
+			random = no # Do not use for random CoAs
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\papuan_pagan_dynasties.tga"
 			size = { x = 10 y = 8 }
 			noOfFrames = 80
 			color = 0
