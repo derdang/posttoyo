@@ -27102,7 +27102,7 @@ abdicate_holy_order_if_religion_changes_effect = {
 				owner = { 
 					ai = yes
 					holy_order = yes 
-					NOT = { religion = singijeon } 
+					NOT = { religion = yuilsasang } 
 				}
 			}
 			log = "[d_chollima_riders.owner.GetTitledFirstName] was found to be unfit to lead the [d_chollima_riders.GetName] and therefore removed by the abdicate holy order effect!"

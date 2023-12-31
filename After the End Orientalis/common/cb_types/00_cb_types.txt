@@ -5921,7 +5921,7 @@ religious = {
 			NOR = {
 				religion_group = buddhist_group
 				religion = cao_dai
-				religion = singijeon
+				religion = yuilsasang
 				has_law = religion_tolerance_0
 			}
 			OR = {
@@ -5959,7 +5959,7 @@ religious = {
 			NOT = { religion_group = pagan_group }
 			NOT = { pacifist = yes }
 			NOT = { religion = taoist }
-			NOT = { religion = singijeon }
+			NOT = { religion = yuilsasang }
 			NAND = {
 				OR = {
 					has_landed_title = k_teutonic_state
@@ -6123,7 +6123,7 @@ religious = {
 		ROOT = {
 			NOT = { religion_group = pagan_group }
 			NOT = { pacifist = yes }
-			NOT = { religion = singijeon }
+			NOT = { religion = yuilsasang }
 			NOT = { same_realm = FROM }
 			OR = {
 				NOT = { religion_group = FROM }
@@ -10489,7 +10489,7 @@ pagan_subjugation = {
 					OR = {
 						AND = { 
 							religion_group = oldworld
-							NOT = {religion = singijeon}
+							NOT = {religion = yuilsasang}
 						}
 						religion = chinomi
 					}
