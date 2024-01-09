@@ -1,15 +1,11 @@
 #PAPUA
 technology = {
 	titles = {
-		d_baliem_valley
 		d_birds_head
 		d_birds_tail
 		d_bismarck
 		d_bomberai
 		d_cenderawasih
-		d_central_highlands
-		d_eastern_highlands
-		d_enga
 		d_humboldt
 		d_lorentz
 		d_madang
@@ -27,5 +23,25 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal Papua land
+technology = {
+	titles = {
+		d_baliem_valley
+		d_central_highlands
+		d_eastern_highlands
+		d_enga
+	}
+	2600 = {
+		military = 1.0
+		economy = 1.0
+		culture = 1.0
+	}
+	3100 = {
+		military = 4.0
+		economy = 4.0
+		culture = 4.0
 	}
 }

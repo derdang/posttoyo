@@ -4,12 +4,10 @@ technology = {
 		d_batu_pahat
 		d_johor
 		d_kedah
-		d_kelantan
 		d_kepulauan_riau
 		d_klang
 		d_melaka
 		d_negeri_sembilan
-		d_pahang_dalaman
 		d_pahang_luar
 		d_penang
 		d_perak_selatan
@@ -27,5 +25,41 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal Malaysia
+technology = {
+	titles = {
+		d_pahang_dalaman
+	}
+	2600 = {
+		military = 1.0
+		economy = 1.0
+		culture = 1.0
+		
+		TECH_NAVAL = 2.0
+	}
+	3100 = {
+		military = 4.0
+		economy = 4.0
+		culture = 4.0
+	}
+}
+
+#High Tribal Malaysia land
+technology = {
+	titles = {
+		d_kelantan
+	}
+	2600 = {
+		military = 1.5
+		economy = 1.5
+		culture = 1.5
+	}
+	3100 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
 	}
 }

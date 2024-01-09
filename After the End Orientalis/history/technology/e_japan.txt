@@ -20,7 +20,6 @@ technology = {
 		d_kitakyushu
 		d_kochi
 		d_kumamoto
-		d_mashike
 		d_miyazaki
 		d_nagano
 		d_nagasaki
@@ -39,7 +38,6 @@ technology = {
 		d_shizuoka
 		d_tochigi
 		d_tokyo
-		d_tomuraushi
 		d_wakayama
 		d_yamaguchi
 	}
@@ -52,5 +50,25 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal Japan
+technology = {
+	titles = {
+		d_mashike
+		d_tomuraushi
+	}
+	2600 = {
+		military = 1.0
+		economy = 1.0
+		culture = 1.0
+		
+		TECH_NAVAL = 2.0
+	}
+	3100 = {
+		military = 4.0
+		economy = 4.0
+		culture = 4.0
 	}
 }

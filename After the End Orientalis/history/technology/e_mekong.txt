@@ -4,14 +4,12 @@ technology = {
 		d_champasak
 		d_koh_trol
 		d_kratie
-		d_luang_prabang
 		d_oudong
 		d_phnom_penh
 		d_pursat
 		d_savannakhet
 		d_siem_reap
 		d_vientiane
-		d_xiangkhouang
 	}
 	2600 = {
 		military = 2.0
@@ -22,5 +20,23 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal Mekong land
+technology = {
+	titles = {
+		d_luang_prabang
+		d_xiangkhouang
+	}
+	2600 = {
+		military = 1.0
+		economy = 1.0
+		culture = 1.0
+	}
+	3100 = {
+		military = 4.0
+		economy = 4.0
+		culture = 4.0
 	}
 }

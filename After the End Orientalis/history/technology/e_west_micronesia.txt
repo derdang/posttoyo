@@ -4,7 +4,6 @@ technology = {
 		d_guam
 		d_mariana
 		d_palau
-		d_yap
 	}
 	2600 = {
 		military = 2.0
@@ -15,5 +14,24 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal Micronesia
+technology = {
+	titles = {
+		d_yap
+	}
+	2600 = {
+		military = 1.0
+		economy = 1.0
+		culture = 1.0
+		
+		TECH_NAVAL = 2.0
+	}
+	3100 = {
+		military = 4.0
+		economy = 4.0
+		culture = 4.0
 	}
 }

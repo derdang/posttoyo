@@ -3,12 +3,10 @@ technology = {
 	titles = {
 		d_ayeyarwady
 		d_bago
-		d_chin
 		d_chindwinn
 		d_hpa_an
 		d_hsenwi
 		d_kungtung
-		d_kyebogi
 		d_magwe
 		d_mandalay
 		d_pyinmana
@@ -18,7 +16,6 @@ technology = {
 		d_tenasserim
 		d_thanton
 		d_wa
-		d_wunpawng
 		d_yangon
 	}
 	2600 = {
@@ -30,5 +27,24 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal Burma land
+technology = {
+	titles = {
+		d_chin
+		d_kyebogi
+		d_wunpawng
+	}
+	2600 = {
+		military = 1.0
+		economy = 1.0
+		culture = 1.0
+	}
+	3100 = {
+		military = 4.0
+		economy = 4.0
+		culture = 4.0
 	}
 }
