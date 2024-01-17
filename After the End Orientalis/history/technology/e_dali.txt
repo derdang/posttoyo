@@ -2,12 +2,8 @@
 technology = {
 	titles = {
 		d_dali
-		d_honghe
 		d_kunming
 		d_lijiang
-		d_puer
-		d_wenshan
-		d_xishuangbanna
 		d_yuxi
 		d_zhaotong
 	}
@@ -20,5 +16,25 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal DALI
+technology = {
+	titles = {
+		d_honghe
+		d_puer
+		d_wenshan
+		d_xishuangbanna
+	}
+	2600 = {
+		military = 0.2
+		economy = 0.1
+		culture = 0.15
+	}
+	3100 = {
+		military = 3.5
+		economy = 3.5
+		culture = 3.5
 	}
 }
