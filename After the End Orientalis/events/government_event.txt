@@ -6,11 +6,11 @@
 #										 #
 ###########################################
 
-namespace = gov
+namespace = govt
 
 #Remove Ghazi Elective if you are no longer Muslim
 character_event = {
-	id = gov.1
+	id = govt.1
 	hide_window = yes
 	
 	trigger = {
@@ -27,7 +27,7 @@ character_event = {
 
 #AI ONLY: Convert from GHAZI to Muslim Bureaucracy
 character_event = {
-	id = gov.2
+	id = govt.2
 	hide_window = yes
 	
 	trigger = {
@@ -44,7 +44,7 @@ character_event = {
 }
 #AI ONLY: Convert from Muslim Bureaucracy to GHAZI
 character_event = {
-	id = gov.3
+	id = govt.3
 	hide_window = yes
 	
 	trigger = {
@@ -61,7 +61,7 @@ character_event = {
 }
 #Setting Muslim Governments (AI)
 character_event = {
-	id = gov.4
+	id = govt.4
 	hide_window = yes
 	
 	mean_time_to_happen = {
