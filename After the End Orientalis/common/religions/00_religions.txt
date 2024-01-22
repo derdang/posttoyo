@@ -3651,6 +3651,53 @@ japonic = {
 		intermarry = buddhist_group
 		intermarry = eastern
 	}
+	shinko = {
+		graphical_culture = chinesegfx
+
+
+		icon = 29
+		heresy_icon = 29
+		
+		color = { 150 80 60 }
+		
+		interface_skin = { taoist_interface indian_interface muslim_interface }
+		
+		high_god_name = GOD_BUCHI_ANSHEE
+
+		god_names = {
+			GOD_UTIN GOD_JIICHI GOD_RYUGU GOD_AMAMIKYU GOD_KINMANMON GOD_HINUKAN GOD_FUURU_NU_KAMI GOD_SHAKA GOD_KAMI GOD_ANCESTORS
+		}
+		
+		evil_god_names = {
+			MARA
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		can_grant_divorce = yes
+		can_grant_claim = yes
+		can_grant_invasion_cb = invasion
+		can_retire_to_monastery = yes
+		priests_can_inherit = no
+		rel_head_defense = yes
+		max_consorts = 3 #can take concubines
+
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+		
+		crusade_name = CRUSADE
+		scripture_name = CHUZAN_SEIKAN
+		priest_title = NORO
+		piety_name = PURITY
+		
+		feminist = yes
+		female_temple_holders = yes
+		
+		intermarry = seirei
+		intermarry = seirei_reformed
+		intermarry = buddhist_group
+		intermarry = eastern
+	}
 	tenrikyo = {
 		graphical_culture = chinesegfx
 
@@ -3778,7 +3825,7 @@ oldworld = {
 		color = { 237 28 39 }
 
 		crusade_name = INTERVENTION
-		scripture_name = THE_TEN_PRINCIPALS
+		scripture_name = THE_TEN_PRINCIPLES
 		priest_title = MISSLE
 		piety_name = STAR_POWER
 		
