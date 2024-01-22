@@ -1,0 +1,377 @@
+1293900 ={ #Duke of Banjar Bakula, rules Seribu Sungai and Tanah Laut 
+	name="Sulaiman"
+    dynasty=1372000 # Antasari
+    culture=banjarese
+    religion=nusantara
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293901 ={ #Count of Barito Kuala
+	name="Hasan"
+    dynasty=1372001 # Noor
+    culture=banjarese
+    religion=nusantara
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293902 ={ #Count of Tapin
+	name="Fadjroel"
+    dynasty=1372002 # Basry
+    culture=banjarese
+    religion=nusantara
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293903 ={ #Count of Murung Raya and Barito Utara
+	name="Joseph"
+    dynasty=1373000 # Dusmala
+    culture=maanyan
+    religion=catholic
+    2584.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293904 ={ #Count of Barito Selatan and Kapuas Hilir
+	name="Muhammad"
+    dynasty=1372003 # Ramlan
+    culture=banjarese
+    religion=nusantara
+    2588.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293905 ={ #Chief of Kapuas Hulu
+	name="Maruhum"
+    dynasty=1374000 # Riwut
+    culture=ngaju
+    religion=nusantara
+    trait=tough_soldier
+    trait=brave
+    trait=diligent
+    trait=proud
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293906 ={ #Duke of Hulu Sungai, rules Balangan, Hulu Sungai, and Tabalong
+	name="Hidayatullah"
+    dynasty=1372004 # al-Banjari
+    culture=banjarese
+    religion=renewalist
+    trait=skilled_tactician
+    trait=zealous
+    trait=diligent
+    trait=wroth
+    2564.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293907 ={ #Duke of Kotabaru, rules Kelumpang, Laut, and Tanah Bumbu
+	name="Said"
+    dynasty=1372005 # Ghani
+    culture=banjarese
+    religion=renewalist
+    trait=naive_appeaser
+    trait=content
+    trait=patient
+    trait=craven
+    2564.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293908 ={ #Duke of Pulangka Riya, rules Pulang Pisau
+	name="Damang"
+    dynasty=1374001 # Pijar
+    culture=ngaju
+    religion=kaharingan
+    trait=underhanded_rogue
+    trait=humble
+    trait=gregarious
+    trait=charitable
+    2571.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293909 ={ #Countess of Gunung Mas
+	name="Nyai"
+    dynasty=1375000 # Tamanggung
+    female=yes
+    culture=ot_danum
+    religion=kaharingan
+    trait=grey_eminence
+    trait=fair
+    trait=gregarious
+    trait=kind
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293910 ={ #Chief of Katingan Hilir
+	name="Raden"
+    dynasty=1374002 # Negara
+    culture=ngaju
+    religion=kaharingan
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293911 ={ #Chief of Katingan Hulu
+	name="Batur"
+    dynasty=1375001 # Anyang
+    culture=ot_danum
+    religion=kaharingan
+    2559.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293912 ={ #Duke of Bulungan, rules Tarakan, Nunukan, and Bulungan
+	name="Raja"
+    dynasty=1376000 # Tidung
+    culture=tidung
+    religion=renewalist
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=brave
+    trait=patient
+    trait=proud
+    trait=kind
+    trait=honest
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293913 ={ #Count of Krayan and Malinau
+	name="Ibrahim"
+    dynasty=1372006 # Muzadi
+    culture=banjarese
+    religion=renewalist
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293914 ={ #Count of Paser
+	name="Moreno"
+    dynasty=1293057 # Sugiarto
+    culture=javanese
+    religion=nusantara
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293915 ={ #Count of Mahakam Ulu and Senawar
+	name="Aloe"
+    dynasty=1377000 # Ismail
+    culture=kutai
+    religion=renewalist
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293916 ={ #Father of Achmed Hatta and Fatmawati Hatta, King of Kutai from 2570.1.1 to 2601.1.1
+	name="Taufiq"
+    dynasty=1293056 # Hatta
+    culture=javanese
+    religion=pancasila
+    trait=genius
+    2545.1.1={birth=yes}
+    2601.1.1={death=yes}
+}
+1293917 ={ #King of Kutai and Duke of Kutai Kartanegara, rules Samarinda, Bontang, and Balikpapan, rival of Fatmawati Hatta
+	name="Achmed"
+    dynasty=1293056 # Hatta
+    culture=javanese
+    religion=pancasila
+    martial=2
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=charismatic_negotiator
+    trait=shrewd
+    trait=cynical
+    trait=charitable
+	father=1293916
+    2577.1.1={birth=yes}
+	2601.1.1={effect={add_rival=1293918}}
+    2700.1.1={death=yes}
+}
+1293918 ={ #Duchess of of Kutai Timur, rules Sangatta and Sangkulirang, rival of Achmed Hatta
+	name="Fatmawati"
+    dynasty=1293056 # Hatta
+    female=yes
+    culture=javanese
+    religion=pancasila
+    female=yes
+    trait=elusive_shadow
+    trait=envious
+    trait=deceitful
+    trait=diligent
+	father=1293916
+    2582.1.1={birth=yes}
+	2601.1.1={effect={add_rival=1293917}}
+	2604.1.1={add_claim=k_kutai}
+    2700.1.1={death=yes}
+}
+1293919 ={ #Countess of Bangun
+	name="Francisca"
+    dynasty=1378000 # Kayaan
+    female=yes
+    culture=kayan
+    religion=renewalist
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293920 ={ #Count of Tanjung Redeb and Talisayan
+	name="Jusuf"
+    dynasty=1949079 # Yassin
+    culture=buginese
+    religion=renewalist
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293921 ={ #Count of Muara Wahau
+	name="Ali"
+    dynasty=1378001 # Situn
+    culture=kayan
+    religion=renewalist
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293922 ={ #Duke of Kapuas Raya, rules Sintang and Melawi
+	name="Menera"
+    dynasty=1379000 # Abdurrahman
+    culture=desa
+    religion=renewalist
+    trait=misguided_warrior
+    trait=cruel
+    trait=diligent
+    trait=brave
+    2568.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293923 ={ #Count of Ketungau
+	name="Arbain"
+    dynasty=1370016 # Dohong
+    culture=iban
+    religion=catholic
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293924 ={ #Count of Putussibau
+	name="Elyakim"
+    dynasty=1370017 # Narang
+    culture=iban
+    religion=renewalist
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293925 ={ #Count of Sekadau
+	name="Jeremias"
+    dynasty=1379001 # Marra
+    culture=desa
+    religion=catholic
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293926 ={ #Duchess of Ketapang, rules Ketapang, Kayong Utara, and Sukumara
+	name="Maznah"
+    dynasty=1957035 # bin Yaacob
+    culture=melayu
+    religion=renewalist
+	give_nickname=nick_the_bomoh
+    martial=2
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=6
+    trait=scholarly_theologian
+    trait=mystic
+    trait=envious
+    trait=cruel
+    trait=lustful
+    trait=cynical
+    trait=diligent
+    trait=patient
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293927 ={ #Count of Hulu Aik
+	name="Kanang"
+    dynasty=1380000 # Krio
+    culture=ulu_ae
+    religion=renewalist
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293928 ={ #Count of Mempawah
+	name="Zakaria"
+    dynasty=1957036 # Hamzah
+    culture=melayu
+    religion=renewalist
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293929 ={ #Count of Landak and Kubu Raya
+	name="Cintaku"
+    dynasty=1368016 # ibn Juba
+    culture=kendayan
+    religion=catholic
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293930 ={ #Count of Sanggau
+	name="Made"
+    dynasty=1369016 # Katib
+    culture=bidayuh
+    religion=catholic
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293931 ={ #Chief of Lamandau
+	name="Effendi"
+    dynasty=1381000 # Hengki
+    culture=tomun
+    religion=kaharingan
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293932 ={ #Count of Pangkalan Bun
+	name="Muammar"
+    dynasty=1293058 # Nadjib
+    culture=javanese
+    religion=kaharingan
+    2572.2.2={birth=yes}
+    2700.1.1={death=yes}
+}
+1293933 ={ #Count of Sampit
+	name="Syaer"
+    dynasty=1374003 # Djaja
+    culture=ngaju
+    religion=renewalist
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293934 ={ #Count of Seruyan
+	name="Tjilik"
+    dynasty=1374004 # Anggen
+    culture=ngaju
+    religion=kaharingan
+    2574.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293935 ={ #Duke of Singkawang, rules Seribu Kuil
+	name="Keng"
+    dynasty=1956032 # Kuok
+    culture=tionghoa
+    religion=mahayana
+    martial=6
+    diplomacy=4
+    stewardship=7
+    intrigue=6
+    learning=5
+    trait=midas_touched
+    trait=ambitious
+    trait=diligent
+    trait=just
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1293936 ={ #Count of Sambas
+	name="Faiz"
+    dynasty=1957037 # Izzuddin
+    culture=melayu
+    religion=renewalist
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
