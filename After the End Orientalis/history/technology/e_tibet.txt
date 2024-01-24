@@ -2,18 +2,12 @@
 technology = {
 	titles = {
 		d_bumthang
-		d_chamdo
 		d_garze
 		d_lhasa
 		d_lhoka
-		d_nagqu
-		d_ngari
-		d_ngawa
-		d_nyingchi
 		d_paro
 		d_qaidam
 		d_qinghai
-		d_sanjiangyuan
 		d_xigaze
 	}
 	2600 = {
@@ -25,5 +19,27 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal TIBET
+technology = {
+	titles = {
+		d_chamdo
+		d_nagqu
+		d_ngawa
+		d_ngari
+		d_nyingchi
+		d_sanjiangyuan
+	}
+	2600 = {
+		military = 0.2
+		economy = 0.1
+		culture = 0.15
+	}
+	3100 = {
+		military = 3.5
+		economy = 3.5
+		culture = 3.5
 	}
 }

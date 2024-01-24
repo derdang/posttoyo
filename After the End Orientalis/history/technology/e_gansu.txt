@@ -1,14 +1,10 @@
 #GANSU
 technology = {
 	titles = {
-		d_gannan
-		d_jiuquan
 		d_lanzhou
 		d_longnan
 		d_qingyang
-		d_wuwei
 		d_yinchuan
-		d_zhangye
 		d_zhongwei
 	}
 	2600 = {
@@ -20,5 +16,25 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal GANSU
+technology = {
+	titles = {
+		d_gannan
+		d_jiuquan
+		d_wuwei
+		d_zhangye
+	}
+	2600 = {
+		military = 0.2
+		economy = 0.1
+		culture = 0.15
+	}
+	3100 = {
+		military = 3.5
+		economy = 3.5
+		culture = 3.5
 	}
 }

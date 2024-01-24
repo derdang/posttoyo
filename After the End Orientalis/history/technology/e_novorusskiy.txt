@@ -7,7 +7,6 @@ technology = {
 		d_komsomolsky
 		d_lezozavodsk
 		d_partizansk
-		d_severnyy_sakhalin
 		d_ussuriysk
 		d_vladivostok
 		d_yaponskoye_morye
@@ -27,5 +26,24 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Tribal NOVORUSSKIY
+technology = {
+	titles = {
+		d_severnyy_sakhalin
+	}
+	2600 = {
+		military = 0.2
+		economy = 0.1
+		culture = 0.15
+		
+		TECH_NAVAL = 1.0
+	}
+	3100 = {
+		military = 3.5
+		economy = 3.5
+		culture = 3.5
 	}
 }
