@@ -80,6 +80,304 @@ k_ice_city = {
 	can_be_claimed = no
 	can_be_usurped = no
 }
+###################################################################
+#Petty Thai Kingdoms
+	k_udonratchathani = {
+		color = { 140 85 0 }
+		color2 = { 255 255 255 }
+		capital = 827 # c_udon_thani
+		culture = thai_isan
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_isan
+					any_vassal = { has_landed_title = k_isan }
+				}
+			}
+			NOT = {has_landed_title = k_isan}
+		}
+	}
+	k_khorat = {
+		color = { 212 153 132 }
+		color2={ 240 0 0 }
+		capital = 816 # c_mueang_korat
+		culture = thai_isan
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_isan
+					any_vassal = { has_landed_title = k_isan }
+				}
+			}
+			NOT = {has_landed_title = k_isan}
+		}
+	}
+	k_buaban = {
+		color = { 160 150 60 }
+		color2 = { 255 255 255 }
+		capital = 819 # c_ubon_ratchathani
+		culture = thai_isan
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_isan
+					any_vassal = { has_landed_title = k_isan }
+				}
+			}
+			NOT = {has_landed_title = k_isan}
+		}
+	}
+	k_lopburi = {
+		color = { 155 160 130 }
+		color2 = { 255 255 255 }
+		capital = 790 # c_lopburi
+		culture = thai_central
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+				independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_mahanakorn
+					any_vassal = { has_landed_title = k_mahanakorn }
+				}
+			}
+			NOT = {has_landed_title = k_mahanakorn}
+		}
+	}
+	k_suvanaphum = {
+		color = { 37 9 70 }
+		color2={ 240 0 0 }
+		capital = 785 # c_suphanburi
+		culture = thai_central
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_mahanakorn
+					any_vassal = { has_landed_title = k_mahanakorn }
+				}
+			}
+			NOT = {has_landed_title = k_mahanakorn}
+		}
+	}
+	k_rattanakosin = {
+		color = { 90 65 55 }
+		color2 = { 255 255 255 }
+		capital = 778 # c_phra_nakhon
+		culture = thai_central
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_mahanakorn
+					any_vassal = { has_landed_title = k_mahanakorn }
+				}
+			}
+			NOT = {has_landed_title = k_mahanakorn}
+		}
+	}
+	k_ayothaya = {
+		color={ 200 17 88 }
+		color2 = { 255 255 255 }
+		capital = 784 # c_ayutthaya
+		culture = thai_central
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_mahanakorn
+					any_vassal = { has_landed_title = k_mahanakorn }
+				}
+			}
+			NOT = {has_landed_title = k_mahanakorn}
+		}
+	}
+	k_nikhom = {
+		color={ 22 44 88 }
+		color2 = { 255 255 255 }
+		capital = 798 # c_chonburi
+		culture = thai_central
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_burapha
+					any_vassal = { has_landed_title = k_burapha }
+				}
+			}
+			NOT = {has_landed_title = k_burapha}
+		}
+	}
+	k_prachimdisa = {
+		color={ 54 23 121 }
+		color2 = { 255 255 255 }
+		capital = 794 # c_prachinburi
+		culture = thai_central
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_burapha
+					any_vassal = { has_landed_title = k_burapha }
+				}
+			}
+			NOT = {has_landed_title = k_burapha}
+		}
+	}
+	k_chanthabun = {
+		color={ 69 42 88 }
+		color2 = { 255 255 255 }
+		capital = 800 # c_chanthaburi
+		culture = thai_central
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_burapha
+					any_vassal = { has_landed_title = k_burapha }
+				}
+			}
+			NOT = {has_landed_title = k_burapha}
+		}
+	}
+	
+	k_chaiya = {
+		color={ 44 44 44 }
+		color2 = { 255 255 255 }
+		capital = 802 # c_surat_thani
+		culture = thai_paktai
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_pak_tai
+					any_vassal = { has_landed_title = k_pak_tai }
+				}
+			}
+			NOT = {has_landed_title = k_pak_tai}
+		}
+	}
+	k_si_thammarat = {
+		color={ 112 112 112 }
+		color2 = { 255 255 255 }
+		capital = 813 # c_nakhon_sri_thammarat
+		culture = thai_paktai
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_pak_tai
+					any_vassal = { has_landed_title = k_pak_tai }
+				}
+			}
+			NOT = {has_landed_title = k_pak_tai}
+		}
+	}
+	k_junk_ceylons = {
+		color={ 212 14 88 }
+		color2 = { 255 255 255 }
+		capital = 805 # c_phuket
+		culture = thai_paktai
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_pak_tai
+					any_vassal = { has_landed_title = k_pak_tai }
+				}
+			}
+			NOT = {has_landed_title = k_pak_tai}
+		}
+	}
+	k_singhaburi = {
+		color={ 169 123 48 }
+		color2 = { 255 255 255 }
+		capital = 811 # c_songkhla
+		culture = thai_paktai
+		short_name= yes
+		dynasty_title_names = no
+		assimilate = no
+		
+		allow = {
+			independent = yes
+			OR = {
+				lower_tier_than = KING
+				NOT = {
+					has_landed_title = k_pak_tai
+					any_vassal = { has_landed_title = k_pak_tai }
+				}
+			}
+			NOT = {has_landed_title = k_pak_tai}
+		}
+	}
+############################################################
 e_commonwealth = {
 	color = { 0 53 169 }
 	color2={ 255 255 255 }
@@ -266,7 +564,7 @@ d_pattaya = {
 	culture = thai_central
 }
 e_suvanaphum = {
-	color = { 37 9 70 }
+	color = {163 251 100}
 	color2={ 240 0 0 }
 	capital = 785 # c_suphanburi
 	culture = thai_central
