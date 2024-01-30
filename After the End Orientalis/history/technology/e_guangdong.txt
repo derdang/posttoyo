@@ -9,7 +9,6 @@ technology = {
 		d_huizhou
 		d_jiangmen
 		d_macau
-		d_maoming
 		d_meizhou
 		d_qingyuan
 		d_shantou
@@ -18,7 +17,6 @@ technology = {
 		d_shenzhen
 		d_yangjiang
 		d_yunfu
-		d_zhanjiang
 		d_zhaoqing
 		d_zhuhai
 	}
@@ -34,21 +32,50 @@ technology = {
 	}
 }
 
-#Tribal Guangdong
+#GUANGDONG coastal
+technology = {
+	titles = {
+		d_maoming
+		d_zhanjiang
+	}
+	2600 = {
+		military = 2.25
+		economy = 2.25
+		culture = 2.25
+
+		TECH_TRADE_PRACTICES = 4
+		TECH_CITY_CONSTRUCTION = 4
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		TECH_CASTLE_CONSTRUCTION = 3
+
+	}
+	3100 = {
+		military = 5.0
+		economy = 5.5
+		culture = 5.0
+		
+		TECH_TRADE_PRACTICES = 6
+		TECH_CITY_CONSTRUCTION = 5
+		TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		TECH_CASTLE_CONSTRUCTION = 6
+	}
+}
+
+#Tribal Guangdong coastal
 technology = {
 	titles = {
 		d_hainan
 	}
 	2600 = {
-		military = 0.2
-		economy = 0.1
-		culture = 0.15
+		military = 1.2
+		economy = 1.1
+		culture = 1.15
 		
-		TECH_NAVAL = 1.0
+		TECH_NAVAL = 2.0
 	}
 	3100 = {
-		military = 3.5
-		economy = 3.5
-		culture = 3.5
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
 	}
 }

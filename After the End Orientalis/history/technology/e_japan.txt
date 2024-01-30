@@ -17,9 +17,7 @@ technology = {
 		d_kagoshima
 		d_kanagawa
 		d_kitakyushu
-		d_kochi
 		d_kumamoto
-		d_mashike
 		d_miyazaki
 		d_nagano
 		d_nagasaki
@@ -27,13 +25,11 @@ technology = {
 		d_okayama
 		d_omi
 		d_osaka
-		d_oshima
 		d_oshu
 		d_ryukyu
 		d_saga
 		d_saitama
 		d_sanin
-		d_seto
 		d_shizuoka
 		d_tochigi
 		d_tokyo
@@ -60,6 +56,37 @@ technology = {
 		TECH_CITY_CONSTRUCTION = 5
 		TECH_FORTIFICATIONS_CONSTRUCTION = 6
 		TECH_CASTLE_CONSTRUCTION = 6
+	}
+}
+
+#Shikoku/Hokkaido feudal (lesser than main islands)
+technology = {
+	titles = {
+		d_kochi
+		d_mashike
+		d_oshima
+		d_seto
+	}
+	2600 = {
+		military = 1.75
+		economy = 1.75
+		culture = 1.75
+
+		TECH_TRADE_PRACTICES = 3
+		TECH_CITY_CONSTRUCTION = 3
+		TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		TECH_CASTLE_CONSTRUCTION = 2
+
+	}
+	3100 = {
+		military = 4.5
+		economy = 5.0
+		culture = 4.5
+		
+		TECH_TRADE_PRACTICES = 5
+		TECH_CITY_CONSTRUCTION = 4
+		TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		TECH_CASTLE_CONSTRUCTION = 5
 	}
 }
 

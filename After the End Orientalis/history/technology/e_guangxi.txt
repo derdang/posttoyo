@@ -2,12 +2,10 @@
 technology = {
 	titles = {
 		d_baise
-		d_fangchenggang
 		d_guilin
 		d_hechi
 		d_laibin
 		d_nanning
-		d_qinzhou
 		d_watlam
 		d_wuzhou
 	}
@@ -20,5 +18,25 @@ technology = {
 		military = 3.5
 		economy = 3.5
 		culture = 3.5
+	}
+}
+
+#Tribal GUANGXI coastal
+technology = {
+	titles = {
+		d_fangchenggang
+		d_qinzhou
+	}
+	2600 = {
+		military = 1.2
+		economy = 1.1
+		culture = 1.15
+		
+		TECH_NAVAL = 2.0
+	}
+	3100 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
 	}
 }
