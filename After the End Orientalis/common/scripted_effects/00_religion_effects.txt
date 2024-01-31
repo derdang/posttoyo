@@ -224,6 +224,84 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
+		secret_religious_society_pentecostal = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_pentecostal_community
+						owned_by = PREV
+					}
+
+					religion = pentecostal
+					remove_province_modifier = secret_pentecostal_community
+				}
+			}
+		}
+		secret_religious_society_baptist = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_baptist_community
+						owned_by = PREV
+					}
+
+					religion = baptist
+					remove_province_modifier = secret_baptist_community
+				}
+			}
+		}
+		secret_religious_society_kohhran_thianghlim = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_kohhran_thianghlim_community
+						owned_by = PREV
+					}
+
+					religion = kohhran_thianghlim
+					remove_province_modifier = secret_kohhran_thianghlim_community
+				}
+			}
+		}
+		secret_religious_society_fuyin = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_fuyin_community
+						owned_by = PREV
+					}
+
+					religion = fuyin
+					remove_province_modifier = secret_fuyin_community
+				}
+			}
+		}
+		secret_religious_society_unificationist = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_unificationist_community
+						owned_by = PREV
+					}
+
+					religion = unificationist
+					remove_province_modifier = secret_unificationist_community
+				}
+			}
+		}
+		secret_religious_society_kohhran_thianghlim = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_kohhran_thianghlim_community
+						owned_by = PREV
+					}
+
+					religion = kohhran_thianghlim
+					remove_province_modifier = secret_kohhran_thianghlim_community
+				}
+			}
+		}
 	}
 }
 
