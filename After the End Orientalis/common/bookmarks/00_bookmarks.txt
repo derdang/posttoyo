@@ -105,6 +105,86 @@ bm_the_frozen_north = { #Far East Russia
 	era = yes
 	picture = GFX_pick_era_image_3
 	custom_start = yes
+	selectable_character = {
+		id = 1920023 #Sergei Torop
+		age = 35
+		name = ERA_CHAR_NAME_12
+		title = k_vissarionite
+		title_name = k_vissarionite
+		
+		character = {
+			dna = gozcozhqasb
+			properties = egl0fb00000000000000000000000000000000
+			religion="vissarionite"
+			culture="sibiri"
+			government = feudal_government
+			dynasty=1920146
+		}
+	}
+	selectable_character = {
+		id = 1917004 #Vyacheslav Sievers
+		age = 40
+		name = ERA_CHAR_NAME_13
+		title = k_khabarovsk
+		title_name = k_khabarovsk
+		
+		character = {
+			dna = dbzkbslgyyr
+			properties = hl00nc00000000000000000000000000000000
+			religion="fourthist"
+			culture="primorskiy"
+			government = feudal_government
+			dynasty=1917140
+		}
+	}
+	selectable_character = {
+		id = 1240005 #Babaasan Petr Klyonov
+		age = 29
+		name = ERA_CHAR_NAME_14
+		title = k_irkutsk
+		title_name = k_irkutsk
+		
+		character = {
+			dna = dndmtkanlku
+			properties = ahuaja00000000000000000000000000000000
+			religion="orthodox"
+			culture="buryat"
+			government = feudal_government
+			dynasty=2877003
+		}
+	}
+	selectable_character = {
+		id = 1919009 #Vladimir Valuev
+		age = 39
+		name = ERA_CHAR_NAME_15
+		title = d_zazeysky
+		title_name = d_zazeysky
+		
+		character = {
+			dna = gzomorypvyw
+			properties = elobdd00000000000000000000000000000000
+			religion="orthodox"
+			culture="amursky"
+			government = feudal_government
+			dynasty=1919145
+		}
+	}
+		selectable_character = {
+		id = 1917032 #Leizer Davidovich
+		age = 32
+		name = ERA_CHAR_NAME_16
+		title = c_shkotovsky
+		title_name = c_shkotovsky
+		
+		character = {
+			dna = wwzoudyimcz
+			properties = cc00jd00000000000000000000000000000000
+			religion="jewish"
+			culture="primorskiy"
+			government = merchant_republic_government
+			dynasty=1917162
+		}
+	}
 }
 bm_the_land_of_stupas = { #Indochina Region: Burma, Thailand, Vietnam, Laos, and Cambodia
 	name = "BM_THE_LAND_OF_STUPAS"
