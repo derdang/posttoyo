@@ -5,11 +5,7 @@ technology = {
 		d_jiaxing
 		d_jinhua
 		d_lishui
-		d_ningbo
 		d_quzhou
-		d_shaoxing
-		d_taichow
-		d_wenzhou
 	}
 	2600 = {
 		military = 2.0
@@ -20,5 +16,36 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#ZHEJIANG coastal
+technology = {
+	titles = {
+		d_ningbo
+		d_shaoxing
+		d_taichow
+		d_wenzhou
+	}
+	2600 = {
+		military = 2.25
+		economy = 2.25
+		culture = 2.25
+
+		TECH_TRADE_PRACTICES = 4
+		TECH_CITY_CONSTRUCTION = 4
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		TECH_CASTLE_CONSTRUCTION = 3
+
+	}
+	3100 = {
+		military = 5.0
+		economy = 5.5
+		culture = 5.0
+		
+		TECH_TRADE_PRACTICES = 6
+		TECH_CITY_CONSTRUCTION = 5
+		TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		TECH_CASTLE_CONSTRUCTION = 6
 	}
 }
