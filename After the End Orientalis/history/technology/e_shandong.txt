@@ -2,18 +2,11 @@
 technology = {
 	titles = {
 		d_dezhou
-		d_dongyi
-		d_dongying
 		d_heze
 		d_jinan
 		d_jining
 		d_lanling
 		d_linyi
-		d_qingdao
-		d_rizhao
-		d_weifang
-		d_weihai
-		d_yantai
 		d_zibo
 	}
 	2600 = {
@@ -25,5 +18,39 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#SHANDONG coastal
+technology = {
+	titles = {
+		d_dongyi
+		d_dongying
+		d_qingdao
+		d_rizhao
+		d_weifang
+		d_weihai
+		d_yantai
+	}
+	2600 = {
+		military = 2.25
+		economy = 2.25
+		culture = 2.25
+
+		TECH_TRADE_PRACTICES = 4
+		TECH_CITY_CONSTRUCTION = 4
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		TECH_CASTLE_CONSTRUCTION = 3
+
+	}
+	3100 = {
+		military = 5.0
+		economy = 5.5
+		culture = 5.0
+		
+		TECH_TRADE_PRACTICES = 6
+		TECH_CITY_CONSTRUCTION = 5
+		TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		TECH_CASTLE_CONSTRUCTION = 6
 	}
 }

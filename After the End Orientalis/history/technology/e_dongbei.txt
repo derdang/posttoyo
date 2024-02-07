@@ -12,7 +12,6 @@ technology = {
 		d_fushun
 		d_harbin
 		d_heihe
-		d_huludao
 		d_jiamusi
 		d_jilin
 		d_jinzhou
@@ -40,5 +39,33 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#DONGBEI coastal
+technology = {
+	titles = {
+		d_huludao
+	}
+	2600 = {
+		military = 2.25
+		economy = 2.25
+		culture = 2.25
+
+		TECH_TRADE_PRACTICES = 4
+		TECH_CITY_CONSTRUCTION = 4
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		TECH_CASTLE_CONSTRUCTION = 3
+
+	}
+	3100 = {
+		military = 5.0
+		economy = 5.5
+		culture = 5.0
+		
+		TECH_TRADE_PRACTICES = 6
+		TECH_CITY_CONSTRUCTION = 5
+		TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		TECH_CASTLE_CONSTRUCTION = 6
 	}
 }

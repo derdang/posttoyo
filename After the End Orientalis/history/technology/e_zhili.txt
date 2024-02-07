@@ -2,16 +2,11 @@
 technology = {
 	titles = {
 		d_baozhou
-		d_beijing
-		d_cangzhou
 		d_chengde
 		d_handan
 		d_hengshui
 		d_langfang
-		d_qinhuangdao
 		d_shijiazhuang
-		d_tangshan
-		d_tianjin
 		d_xingtai
 		d_yizhou
 		d_zhangjiakou
@@ -25,5 +20,37 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#ZHILI coastal
+technology = {
+	titles = {
+		d_beijing
+		d_cangzhou
+		d_tangshan
+		d_tianjin
+		d_qinhuangdao
+	}
+	2600 = {
+		military = 2.25
+		economy = 2.25
+		culture = 2.25
+
+		TECH_TRADE_PRACTICES = 4
+		TECH_CITY_CONSTRUCTION = 4
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		TECH_CASTLE_CONSTRUCTION = 3
+
+	}
+	3100 = {
+		military = 5.0
+		economy = 5.5
+		culture = 5.0
+		
+		TECH_TRADE_PRACTICES = 6
+		TECH_CITY_CONSTRUCTION = 5
+		TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		TECH_CASTLE_CONSTRUCTION = 6
 	}
 }
