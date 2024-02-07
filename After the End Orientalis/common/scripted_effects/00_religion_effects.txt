@@ -289,16 +289,107 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
-		secret_religious_society_kohhran_thianghlim = {
+		secret_religious_society_tianzhu = {
 			ROOT = {
 				any_demesne_province = {
 					limit = {
-						has_province_modifier = secret_kohhran_thianghlim_community
+						has_province_modifier = secret_tianzhu_community
 						owned_by = PREV
 					}
 
-					religion = kohhran_thianghlim
-					remove_province_modifier = secret_kohhran_thianghlim_community
+					religion = tianzhu
+					remove_province_modifier = secret_tianzhu_community
+				}
+			}
+		}
+		secret_religious_society_aiguo = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_aiguo_community
+						owned_by = PREV
+					}
+
+					religion = aiguo
+					remove_province_modifier = secret_aiguo_community
+				}
+			}
+		}
+		secret_religious_society_nestorian = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_nestorian_community
+						owned_by = PREV
+					}
+
+					religion = nestorian
+					remove_province_modifier = secret_nestorian_community
+				}
+			}
+		}
+		secret_religious_society_erkeun = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_erkeun_community
+						owned_by = PREV
+					}
+
+					religion = erkeun
+					remove_province_modifier = secret_erkeun_community
+				}
+			}
+		}
+		secret_religious_society_eastern_lightning = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_eastern_lightning_community
+						owned_by = PREV
+					}
+
+					religion = eastern_lightning
+					remove_province_modifier = secret_eastern_lightning_community
+				}
+			}
+		}
+		secret_religious_society_renewalist = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_renewalist_community
+						owned_by = PREV
+					}
+
+					religion = renewalist
+					remove_province_modifier = secret_renewalist_community
+				}
+			}
+		}
+		secret_religious_society_salafi = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_salafi_community
+						owned_by = PREV
+					}
+
+					religion = salafi
+					remove_province_modifier = secret_salafi_community
+				}
+			}
+		}
+		secret_religious_society_hui = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_hui_community
+						owned_by = PREV
+					}
+
+					religion = hui
+					remove_province_modifier = secret_hui_community
 				}
 			}
 		}
