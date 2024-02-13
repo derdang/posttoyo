@@ -1948,642 +1948,781 @@ character_event = { # Yearly decrease
 character_event = { # Hunt Apostates meta event
 	id = MNM.70100
 	title = MNM.70031.t
+
 	hide_window = yes
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
+
 	has_job_title = yes
-	
+
 	trigger = {
 		has_job_action = action_hunt_heretics
-		NOT = { has_character_modifier = in_seclusion }
+		in_seclusion = no
 		NOT = { has_character_modifier = bedridden_illness }
-		NOT = { trait = incapable }
+
 		liege = {
 			OR = {
-				# There is someone who is highly suspect
+				# There is someone who is highly or moderately suspect
 				any_realm_character = {
+					is_in_society = yes
+					society_is_criminal = yes
 					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = PREV } # Don't catch your liege
-					NOT = { same_society_as = ROOT } # Nor your brethren 
-					NOT = { same_society_as = PREV } # Nor liege's brethren
-					NAND = { # If you share the same secret religion, dont catch them
-						has_roots_secret_religion_truly_trigger = yes 
-						is_devil_worshiper_trigger = no
+
+					OR = {
+						has_character_modifier = highly_suspect
+						has_character_modifier = under_suspicion
 					}
-					NAND = { # If they share secret religion with the liege, dont catch them
-						has_prevs_secret_religion_truly_trigger = yes 
-						is_devil_worshiper_trigger = no 
-					}
-					NOT = {
+
+					NOR = {
+						character = ROOT # Don't catch yourself
+						character = PREV # Don't catch your liege
+						same_society_as = ROOT # Nor your brethren
+						same_society_as = PREV # Nor liege's brethren
+
 						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
+							name = opinion_accused_apostate
+							who = PREV
+						}
+
+						reverse_has_opinion_modifier = {
+							name = opinion_apostate_timer
 							who = PREV
 						}
 					}
-					is_in_society = yes
-					society_is_criminal = yes
-					has_character_modifier = highly_suspect
-				}
-				
-				# There is someone moderately suspect
-				any_realm_character = {
-					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = PREV } # Don't catch your liege
-					NOT = { same_society_as = ROOT } # Nor your brethren 
-					NOT = { same_society_as = PREV } # Nor liege's brethren
-					NAND = { # If you share the same secret religion, dont catch them
-						has_roots_secret_religion_truly_trigger = yes 
-						is_devil_worshiper_trigger = no
-					}
-					NAND = { # If they share secret religion with the liege, dont catch them
-						has_prevs_secret_religion_truly_trigger = yes 
-						is_devil_worshiper_trigger = no 
-					}
-					NOT = {
-						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
-							who = PREV
+
+					# If you or your liege share the same secret religion, dont catch them
+					trigger_if = {
+						limit = { is_devil_worshiper_trigger = no }
+
+						NOR = {
+							secret_religion = {
+								target = ROOT # you
+								target_type = true
+							}
+
+							secret_religion = {
+								target = PREV # liege
+								target_type = true
+							}
 						}
 					}
-					is_in_society = yes
-					society_is_criminal = yes
-					has_character_modifier = under_suspicion
 				}
-				
+
 				# Someone with a secret religion
 				any_realm_character = {
-					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = PREV } # Don't catch your liege
-					OR = { # Nor your brethren
-						NOT = { same_society_as = ROOT }
-						is_in_society = no
-					}
-					OR = { # Nor liege's brethren
-						NOT = { same_society_as = PREV }
-						is_in_society = no
-					}
-					NOT = { has_roots_secret_religion_truly_trigger = yes } # If you share the same secret religion, dont catch them
-					NOT = { has_prevs_secret_religion_truly_trigger = yes } # If they share secret religion with the liege, dont catch them
-					NOT = {
-						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
-							who = PREV
-						}
-					}
+					has_secret_religion = yes
 					religion = PREV
-					age = 16
-					has_secret_religion_trait_trigger = yes
-				}
-				
-				# A devil worshiper, and I'm amazingly good at my job
-				any_realm_character = {
+					is_adult = yes
 					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = PREV } # Don't catch your liege
-					NOT = { same_society_as = ROOT } # Nor your brethren 
-					NOT = { same_society_as = PREV } # Nor liege's brethren
-					NOT = { has_roots_secret_religion_truly_trigger = yes } # If you share the same secret religion, dont catch them
-					NOT = { has_prevs_secret_religion_truly_trigger = yes } # If they share secret religion with the liege, dont catch them
-					NOT = {
+
+					NOR = {
+						character = ROOT # Don't catch yourself
+						character = PREV # Don't catch your liege
+						same_society_as = ROOT # Or your brethren
+						same_society_as = PREV # Or your liege's brethren
+
+						# If you share the same secret religion, dont catch them
+						secret_religion = {
+							target = ROOT
+							target_type = true
+						}
+
+						# If they share secret religion with the liege, dont catch them
+						secret_religion = {
+							target = PREV
+							target_type = true
+						}
+
 						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
+							name = opinion_accused_apostate
+							who = PREV
+						}
+
+						reverse_has_opinion_modifier = {
+							name = opinion_apostate_timer
 							who = PREV
 						}
 					}
-					age = 16
-					is_devil_worshiper_trigger = yes
-					ai = yes
-					NOR = {
-						has_character_modifier = highly_suspect
-						has_character_modifier = under_suspicion
-					}
-					ROOT = {
-						OR = {
-							learning = 16
-							AND = {
-								learning = 12
-								is_in_society = monastic_order_dominican
+				}
+
+				trigger_if = {
+					# A devil worshiper, and I'm amazingly good at my job
+					limit = {
+						ROOT = {
+							trigger_if = {
+								limit = { society_member_of = monastic_order_dominican }
+								learning >= 12
+							}
+							trigger_else = {
+								learning >= 16
 							}
 						}
 					}
-				}
-				
-				# Someone random, and I'm incompetent
-				any_realm_character = {
-					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = PREV } # Don't catch your liege
-					OR = { # Nor your brethren
-						NOT = { same_society_as = ROOT }
-						is_in_society = no
-					}
-					OR = { # Nor liege's brethren
-						NOT = { same_society_as = PREV }
-						is_in_society = no
-					}
-					NOT = { has_roots_secret_religion_truly_trigger = yes } # If you share the same secret religion, dont catch them
-					NOT = { has_prevs_secret_religion_truly_trigger = yes } # If they share secret religion with the liege, dont catch them
-					NOT = {
-						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
-							who = PREV
-						}
-					}
-					NOT = {
-						higher_tier_than = BARON
-					}
-					age = 16
-					NOR = {
-						has_character_modifier = highly_suspect
-						has_character_modifier = under_suspicion
-						has_secret_religion_trait_trigger = yes
-					}
-					ROOT = {
-						OR = {
-							NOT = {
-								learning = 8
-							}
-							is_dumb_trigger = yes
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	immediate = {
-		# Mark targets
-		liege = {
-			save_event_target_as = my_liege
-			# Extremely suspect people
-			random_realm_character = {
-				limit = {
-					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = event_target:my_liege } # Don't catch your liege
-					NOT = { same_society_as = ROOT } # Nor your brethren 
-					NOT = { same_society_as = event_target:my_liege } # Nor liege's brethren
-					NAND = { # If you share the same secret religion, dont catch them
-						has_my_liege_secret_religion_truly_trigger = yes 
-						is_devil_worshiper_trigger = no
-					}
-					NAND = { # If they share secret religion with the liege, dont catch them
-						has_prevs_secret_religion_truly_trigger = yes 
-						is_devil_worshiper_trigger = no 
-					}
-					NOT = {
-						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
-							who = event_target:my_liege
-						}
-					}
-					is_in_society = yes
-					society_is_criminal = yes
-					has_character_modifier = highly_suspect
-				}
-				save_event_target_as = highly_suspected_society_member
-				set_character_flag = apostate_extremely_suspect
-			}
-			
-			# Moderatley suspect people
-			random_realm_character = {
-				limit = {
-					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = event_target:my_liege } # Don't catch your liege
-					NOT = { same_society_as = ROOT } # Nor your brethren 
-					NOT = { same_society_as = event_target:my_liege } # Nor liege's brethren
-					NAND = { # If you share the same secret religion, dont catch them
-						has_my_liege_secret_religion_truly_trigger = yes  
-						is_devil_worshiper_trigger = no
-					}
-					NAND = { # If they share secret religion with the liege, dont catch them
-						has_prevs_secret_religion_truly_trigger = yes 
-						is_devil_worshiper_trigger = no 
-					}
-					NOT = {
-						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
-							who = event_target:my_liege
-						}
-					}
-					is_in_society = yes
-					society_is_criminal = yes
-					has_character_modifier = under_suspicion
-				}
-				save_event_target_as = suspected_society_member
-				set_character_flag = apostate_moderate_suspect
-			}
-			
-			# Characters with a secret religion
-			random_realm_character = {
-				limit = {
-					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = event_target:my_liege } # Don't catch your liege
-					OR = { # Nor your brethren
-						NOT = { same_society_as = ROOT }
-						is_in_society = no
-					}
-					OR = { # Nor liege's brethren
-						NOT = { same_society_as = event_target:my_liege }
-						is_in_society = no
-					}
-					NOT = { has_roots_secret_religion_truly_trigger = yes } # If you share the same secret religion, dont catch them
-					NOT = { has_my_liege_secret_religion_truly_trigger = yes } # If they share secret religion with the liege, dont catch them
-					NOT = {
-						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
-							who = event_target:my_liege
-						}
-					}
-					religion = event_target:my_liege
-					age = 16
-					has_secret_religion_trait_trigger = yes
-				}
-				save_event_target_as = suspected_apostate
-				set_character_flag = apostate_secret_religion
-			}
-			
-			# Devil worshipers without any suspicion
-			random_realm_character = {
-				limit = {
-					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = event_target:my_liege } # Don't catch your liege
-					NOT = { same_society_as = ROOT } # Nor your brethren 
-					NOT = { same_society_as = event_target:my_liege } # Nor liege's brethren
-					NOT = { has_roots_secret_religion_truly_trigger = yes } # If you share the same secret religion, dont catch them
-					NOT = { has_prevs_secret_religion_truly_trigger = yes } # If they share secret religion with the liege, dont catch them
-					NOT = {
-						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
-							who = event_target:my_liege
-						}
-					}
-					age = 16
-					is_devil_worshiper_trigger = yes
-					ai = yes
-					NOR = {
-						has_character_modifier = highly_suspect
-						has_character_modifier = under_suspicion
-					}
-					ROOT = {
-						OR = {
-							learning = 16
-							AND = {
-								learning = 12
-								is_in_society = monastic_order_dominican
-							}
-						}
-					}
-				}
-				save_event_target_as = no_suspicion
-				set_character_flag = apostate_no_suspicion
-			}
-			
-			# Innocent person!
-			random_realm_character = {
-				limit = {
-					prisoner = no
-					NOT = { character = ROOT } # Don't catch yourself
-					NOT = { character = event_target:my_liege } # Don't catch your liege
-					OR = { # Nor your brethren
-						NOT = { same_society_as = ROOT }
-						is_in_society = no
-					}
-					OR = { # Nor liege's brethren
-						NOT = { same_society_as = event_target:my_liege }
-						is_in_society = no
-					}
-					NOT = { has_roots_secret_religion_truly_trigger = yes } # If you share the same secret religion, dont catch them
-					NOT = { has_prevs_secret_religion_truly_trigger = yes } # If they share secret religion with the liege, dont catch them
-					NOT = {
-						reverse_has_opinion_modifier = {
-							modifier = opinion_accused_apostate
-							who = event_target:my_liege
-						}
-					}
-					NOT = {
-						higher_tier_than = BARON
-					}
-					age = 16
-					NOR = {
+
+					any_realm_character = {
 						is_devil_worshiper_trigger = yes
-						has_character_modifier = highly_suspect
-						has_character_modifier = under_suspicion
-						has_secret_religion_trait_trigger = yes
-					}
-				}
-				save_event_target_as = innocent_victim
-				set_character_flag = apostate_innocent
-			}
-		}
-		
-		if = { # If you're incompetent its more usual to accuse someone innocent
-			limit = {
-				OR = {
-					NOT = {
-						learning = 8
-					}
-					is_dumb_trigger = yes
-				}
-				event_target:innocent_victim = {
-					is_alive = yes
-				}
-			}
-			random_list = {
-				20 = {
-					modifier = {
-						factor = 1.25
-						NOT = { learning = 2 }
-					}
-					modifier = {
-						factor = 1.25
-						NOT = { learning = 4 }
-					}
-					modifier = {
-						factor = 1.25
-						NOT = { learning = 6 }
-					}
-					modifier = {
-						factor = 1.25
-						NOT = { learning = 8 }
-					}
-					event_target:innocent_victim = {
-						save_event_target_as = accused_apostate
-					}
-					character_event = { id = MNM.70110 }
-					break = yes
-				}
-				80 = {
-					
-				}
-			}
-		}
-		
-		if = { # If there is someone who is highly suspicious, always succeed
-			limit = {
-				event_target:highly_suspected_society_member = {
-					is_alive = yes
-				}
-			}
-			event_target:highly_suspected_society_member = {
-				save_event_target_as = accused_apostate
-			}
-			character_event = { id = MNM.70110 }
-			break = yes
-		}
-		
-		if = { # If there is someone semi-suspicious, succeed a bit less often
-			limit = {
-				event_target:suspected_society_member = {
-					is_alive = yes
-				}
-			}
-			random_list = {
-				30 = {
-					modifier = {
-						factor = 0
-						event_target:suspected_society_member = {
-							ai = no
-							NOT = { check_variable = { which = visibility_value value = 19 } }
+						is_adult = yes
+						prisoner = no
+						ai = yes
+
+						NOR = {
+							has_character_modifier = highly_suspect
+							has_character_modifier = under_suspicion
+							character = ROOT # Don't catch yourself
+							character = PREV # Don't catch your liege
+							same_society_as = ROOT # Nor your brethren
+							same_society_as = PREV # Nor liege's brethren
+
+							# If you share the same secret religion, dont catch them
+							secret_religion = {
+								target = ROOT
+								target_type = true
+							}
+
+							# If they share secret religion with the liege, dont catch them
+							secret_religion = {
+								target = PREV
+								target_type = true
+							}
+
+							reverse_has_opinion_modifier = {
+								name = opinion_accused_apostate
+								who = PREV
+							}
+
+							reverse_has_opinion_modifier = {
+								name = opinion_apostate_timer
+								who = PREV
+							}
 						}
 					}
-					modifier = {
-						factor = 0.25
-						event_target:suspected_society_member = {
-							ai = no
+				}
+
+				trigger_if = {
+					# Someone random, and I'm incompetent
+					limit = {
+						ROOT = {
+							OR = {
+								learning < 8
+								is_dumb_trigger = yes
+							}
 						}
 					}
-					modifier = {
-						factor = 1.25
-						learning = 10
-					}
-					modifier = {
-						factor = 1.25
-						learning = 12
-					}
-					modifier = {
-						factor = 1.25
-						learning = 14
-					}
-					modifier = {
-						factor = 1.25
-						learning = 16
-					}
-					modifier = {
-						factor = 1.25
-						learning = 18
-					}
-					modifier = {
-						factor = 1.25
-						learning = 20
-					}
-					modifier = {
-						factor = 1.25
-						learning = 22
-					}
-					modifier = {
-						factor = 1.25
-						society_member_of = monastic_order_dominican
-					}
-					event_target:suspected_society_member = {
-						save_event_target_as = accused_apostate
-					}
-					character_event = { id = MNM.70110 }
-					break = yes
-				}
-				70 = {
-					
-				}
-			}
-		}
-		
-		if = { # If there is someone with a secret religion, only succeed if you're really good
-			limit = {
-				event_target:suspected_apostate = {
-					is_alive = yes
-				}
-			}
-			random_list = {
-				25 = {
-					modifier = {
-						factor = 0
-						event_target:suspected_apostate = {
-							ai = no
+
+					any_realm_character = {
+						lower_real_tier_than = COUNT
+						is_adult = yes
+						prisoner = no
+						has_secret_religion = no
+
+						NOR = {
+							has_character_modifier = highly_suspect
+							has_character_modifier = under_suspicion
+							character = ROOT # Don't catch yourself
+							character = PREV # Don't catch your liege
+							same_society_as = ROOT # Nor your brethren
+							same_society_as = PREV # Nor liege's brethren
+
+							# If you share the same secret religion, dont catch them
+							secret_religion = {
+								target = ROOT
+								target_type = true
+							}
+
+							# If they share secret religion with the liege, dont catch them
+							secret_religion = {
+								target = PREV
+								target_type = true
+							}
+
+							reverse_has_opinion_modifier = {
+								name = opinion_accused_apostate
+								who = PREV
+							}
+
+							reverse_has_opinion_modifier = {
+								name = opinion_apostate_timer
+								who = PREV
+							}
 						}
 					}
-					modifier = {
-						factor = 1.25
-						learning = 10
-					}
-					modifier = {
-						factor = 1.25
-						learning = 12
-					}
-					modifier = {
-						factor = 1.25
-						learning = 14
-					}
-					modifier = {
-						factor = 1.25
-						learning = 16
-					}
-					modifier = {
-						factor = 1.25
-						learning = 18
-					}
-					modifier = {
-						factor = 1.25
-						learning = 20
-					}
-					modifier = {
-						factor = 1.25
-						learning = 22
-					}
-					modifier = {
-						factor = 1.25
-						society_member_of = monastic_order_dominican
-					}
-					event_target:suspected_apostate = {
-						save_event_target_as = accused_apostate
-					}
-					character_event = { id = MNM.70110 }
-					break = yes
-				}
-				75 = {
-					
-				}
-			}
-		}
-		
-		if = { # If there is a devil worshiper without any level of suspicion, only succeed if you're amazingly good
-			limit = {
-				event_target:no_suspicion = {
-					is_alive = yes
-				}
-			}
-			random_list = {
-				25 = {
-					modifier = {
-						factor = 1.25
-						learning = 18
-					}
-					modifier = {
-						factor = 1.25
-						learning = 20
-					}
-					modifier = {
-						factor = 1.25
-						learning = 22
-					}
-					modifier = {
-						factor = 1.25
-						society_member_of = monastic_order_dominican
-					}
-					event_target:no_suspicion = {
-						save_event_target_as = accused_apostate
-					}
-					character_event = { id = MNM.70110 }
-					break = yes
-				}
-				75 = {
-					
-				}
-			}
-		}
-		
-		if = { # Accidently accuse someone innocent!
-			limit = {
-				event_target:innocent_victim = {
-					is_alive = yes
-				}
-			}
-			random_list = {
-				5 = {
-					modifier = {
-						factor = 1.25
-						NOT = { learning = 2 }
-					}
-					modifier = {
-						factor = 1.25
-						NOT = { learning = 4 }
-					}
-					modifier = {
-						factor = 1.25
-						NOT = { learning = 6 }
-					}
-					modifier = {
-						factor = 1.25
-						NOT = { learning = 8 }
-					}
-					modifier = {
-						factor = 1.25
-						is_dumb_trigger = yes
-					}
-					event_target:innocent_victim = {
-						save_event_target_as = accused_apostate
-					}
-					character_event = { id = MNM.70110 }
-					break = yes
-				}
-				95 = {
-					
 				}
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 100
 
 		job_event_mtth_modifier_learning_score = yes
 
-		modifier = {
+		mult_modifier = {
 			factor = 0.75
 			society_member_of = monastic_order_dominican
 		}
-		modifier = {
+
+		mult_modifier = {
 			factor = 2
-			NOT = { religion_authority = 0.1 }
+			NOT = { religion_authority >= 0.10 }
 		}
-		modifier = {
+
+		mult_modifier = {
 			factor = 1.5
-			NOT = { religion_authority = 0.2 }
+			NOT = { religion_authority >= 0.20 }
 		}
-		modifier = {
+
+		mult_modifier = {
 			factor = 1.25
-			NOT = { religion_authority = 0.3 }
+			NOT = { religion_authority >= 0.30 }
 		}
-		modifier = {
+
+		mult_modifier = {
 			factor = 1.25
-			NOT = { religion_authority = 0.4 }
+			NOT = { religion_authority >= 0.40 }
 		}
-		modifier = {
+
+		mult_modifier = {
 			factor = 1.25
-			NOT = { religion_authority = 0.5 }
+			NOT = { religion_authority >= 0.50 }
 		}
-		modifier = {
+
+		mult_modifier = {
 			factor = 0.9
-			religion_authority = 0.6
+			religion_authority >= 0.60
 		}
-		modifier = {
+
+		mult_modifier = {
 			factor = 0.9
-			religion_authority = 0.7
+			religion_authority >= 0.70
 		}
-		modifier = {
+
+		mult_modifier = {
 			factor = 0.9
-			religion_authority = 0.8
+			religion_authority >= 0.80
 		}
-		modifier = {
+
+		mult_modifier = {
 			factor = 0.9
-			religion_authority = 0.9
+			religion_authority >= 0.90
+		}
+	}
+
+	immediate = {
+		# Mark targets
+		liege = {
+			save_event_target_as = my_liege
+
+			# Extremely suspect people
+			random_realm_character = {
+				limit = {
+					is_in_society = yes
+					society_is_criminal = yes
+					has_character_modifier = highly_suspect
+					prisoner = no
+
+					NOR = {
+						character = ROOT # Don't catch yourself
+						character = event_target:my_liege # Don't catch your liege
+						same_society_as = ROOT # Nor your brethren
+						same_society_as = event_target:my_liege # Nor liege's brethren
+
+						reverse_has_opinion_modifier = {
+							name = opinion_accused_apostate
+							who = event_target:my_liege
+						}
+
+						reverse_has_opinion_modifier = {
+							name = opinion_apostate_timer
+							who = event_target:my_liege
+						}
+					}
+
+					# If you or your liege share the same secret religion, dont catch them
+					trigger_if = {
+						limit = { is_devil_worshiper_trigger = no }
+
+						NOR = {
+							secret_religion = {
+								target = ROOT
+								target_type = true
+							}
+
+							secret_religion = {
+								target = event_target:my_liege
+								target_type = true
+							}
+						}
+					}
+				}
+
+				save_event_target_as = highly_suspected_society_member
+				set_character_flag = apostate_extremely_suspect
+			}
+
+			# Moderatley suspect people
+			random_realm_character = {
+				limit = {
+					is_in_society = yes
+					society_is_criminal = yes
+					has_character_modifier = under_suspicion
+					prisoner = no
+
+					NOR = {
+						character = ROOT # Don't catch yourself
+						character = event_target:my_liege # Don't catch your liege
+						same_society_as = ROOT # Nor your brethren
+						same_society_as = event_target:my_liege # Nor liege's brethren
+
+						reverse_has_opinion_modifier = {
+							name = opinion_accused_apostate
+							who = event_target:my_liege
+						}
+
+						reverse_has_opinion_modifier = {
+							name = opinion_apostate_timer
+							who = event_target:my_liege
+						}
+					}
+
+					# If you or your liege share the same secret religion, dont catch them
+					trigger_if = {
+						limit = { is_devil_worshiper_trigger = no }
+
+						NOR = {
+							secret_religion = {
+								target = ROOT
+								target_type = true
+							}
+
+							secret_religion = {
+								target = event_target:my_liege
+								target_type = true
+							}
+						}
+					}
+				}
+
+				save_event_target_as = suspected_society_member
+				set_character_flag = apostate_moderate_suspect
+			}
+
+			# Characters with a secret religion
+			random_realm_character = {
+				limit = {
+					religion = event_target:my_liege
+					has_secret_religion = yes
+					is_adult = yes
+					prisoner = no
+
+					NOR = {
+						character = ROOT # Don't catch yourself
+						character = event_target:my_liege # Don't catch your liege
+						same_society_as = ROOT # Nor your brethren
+						same_society_as = event_target:my_liege # Nor liege's brethren
+
+						# If you share the same secret religion, dont catch them
+						secret_religion = {
+							target = ROOT
+							target_type = true
+						}
+
+						# If they share secret religion with the liege, dont catch them
+						secret_religion = {
+							target = event_target:my_liege
+							target_type = true
+						}
+
+						reverse_has_opinion_modifier = {
+							name = opinion_accused_apostate
+							who = event_target:my_liege
+						}
+
+						reverse_has_opinion_modifier = {
+							name = opinion_apostate_timer
+							who = event_target:my_liege
+						}
+					}
+				}
+
+				save_event_target_as = suspected_apostate
+				set_character_flag = apostate_secret_religion
+			}
+
+			if = {
+				limit = {
+					ROOT = {
+						trigger_if = {
+							limit = { society_member_of = monastic_order_dominican }
+							learning >= 12
+						}
+						trigger_else = {
+							learning >= 16
+						}
+					}
+				}
+
+				# Devil worshipers without any suspicion
+				random_realm_character = {
+					limit = {
+						is_devil_worshiper_trigger = yes
+						is_adult = yes
+						prisoner = no
+						ai = yes
+
+						NOR = {
+							has_character_modifier = highly_suspect
+							has_character_modifier = under_suspicion
+							character = ROOT # Don't catch yourself
+							character = event_target:my_liege # Don't catch your liege
+							same_society_as = ROOT # Nor your brethren
+							same_society_as = event_target:my_liege # Nor liege's brethren
+
+							# If you share the same secret religion, dont catch them
+							secret_religion = {
+								target = ROOT
+								target_type = true
+							}
+
+							# If they share secret religion with the liege, dont catch them
+							secret_religion = {
+								target = PREV
+								target_type = true
+							}
+
+							reverse_has_opinion_modifier = {
+								name = opinion_accused_apostate
+								who = event_target:my_liege
+							}
+
+							reverse_has_opinion_modifier = {
+								name = opinion_apostate_timer
+								who = event_target:my_liege
+							}
+						}
+					}
+
+					save_event_target_as = no_suspicion
+					set_character_flag = apostate_no_suspicion
+				}
+			}
+
+			# Innocent person!
+			random_realm_character = {
+				limit = {
+					lower_real_tier_than = COUNT
+					is_adult = yes
+					prisoner = no
+					is_devil_worshiper_trigger = no
+					has_secret_religion = no
+
+					NOR = {
+						has_character_modifier = highly_suspect
+						has_character_modifier = under_suspicion
+						character = ROOT # Don't catch yourself
+						character = event_target:my_liege # Don't catch your liege
+						same_society_as = ROOT # Nor your brethren
+						same_society_as = event_target:my_liege # Nor liege's brethren
+
+						# If you share the same secret religion, dont catch them
+						secret_religion = {
+							target = ROOT
+							target_type = true
+						}
+
+						# If they share secret religion with the liege, dont catch them
+						secret_religion = {
+							target = PREV
+							target_type = true
+						}
+
+						reverse_has_opinion_modifier = {
+							name = opinion_accused_apostate
+							who = event_target:my_liege
+						}
+
+						reverse_has_opinion_modifier = {
+							name = opinion_apostate_timer
+							who = event_target:my_liege
+						}
+					}
+				}
+
+				save_event_target_as = innocent_victim
+				set_character_flag = apostate_innocent
+			}
+		}
+
+		if = { # If you're incompetent it's more common to accuse someone innocent
+			limit = {
+				OR = {
+					learning < 8
+					is_dumb_trigger = yes
+				}
+
+				event_target:innocent_victim = { is_alive = yes }
+			}
+
+			random_list = {
+				20 = {
+					mult_modifier = {
+						factor = 1.25
+						learning < 2
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning < 4
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning < 6
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning < 8
+					}
+
+					event_target:innocent_victim = {
+						save_event_target_as = accused_apostate
+					}
+				}
+
+				80 = { }
+			}
+		}
+
+		if = { # If there is someone who is highly suspicious, always succeed
+			limit = {
+				event_target:highly_suspected_society_member = { always = yes }
+				NOT = { event_target:accused_apostate = { always = yes } }
+			}
+
+			event_target:highly_suspected_society_member = {
+				save_event_target_as = accused_apostate
+			}
+		}
+
+		if = { # If there is someone semi-suspicious, succeed a bit less often
+			limit = {
+				event_target:suspected_society_member = { always = yes }
+				NOT = { event_target:accused_apostate = { always = yes } }
+			}
+
+			random_list = {
+				30 = {
+					trigger = {
+						event_target:suspected_society_member = {
+							trigger_if = {
+								limit = { ai = no }
+
+								check_variable = {
+									which = visibility_value
+									value >= 20
+								}
+							}
+						}
+					}
+
+					mult_modifier = {
+						factor = 0.25
+						event_target:suspected_society_member = { ai = no }
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 10
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 12
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 14
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 16
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 18
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 20
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 22
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						society_member_of = monastic_order_dominican
+					}
+
+					event_target:suspected_society_member = {
+						save_event_target_as = accused_apostate
+					}
+				}
+
+				70 = { }
+			}
+		}
+
+		if = { # If there is someone with a secret religion, only succeed if you're really good
+			limit = {
+				event_target:suspected_apostate = { always = yes }
+				NOT = { event_target:accused_apostate = { always = yes } }
+			}
+
+			random_list = {
+				25 = {
+					trigger = {
+						event_target:suspected_apostate = { ai = yes }
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 10
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 12
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 14
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 16
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 18
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 20
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 22
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						society_member_of = monastic_order_dominican
+					}
+
+					event_target:suspected_apostate = {
+						save_event_target_as = accused_apostate
+					}
+				}
+
+				75 = { }
+			}
+		}
+
+		if = { # If there is a devil worshiper without any level of suspicion, only succeed if you're amazingly good
+			limit = {
+				event_target:no_suspicion = { always = yes }
+				NOT = { event_target:accused_apostate = { always = yes } }
+			}
+
+			random_list = {
+				25 = {
+					mult_modifier = {
+						factor = 1.25
+						learning >= 18
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 20
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning >= 22
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						society_member_of = monastic_order_dominican
+					}
+
+					event_target:no_suspicion = {
+						save_event_target_as = accused_apostate
+					}
+				}
+
+				75 = { }
+			}
+		}
+
+		if = { # Accidently accuse someone innocent!
+			limit = {
+				event_target:innocent_victim = { is_alive = yes }
+				NOT = { event_target:accused_apostate = { always = yes } }
+			}
+
+			random_list = {
+				5 = {
+					mult_modifier = {
+						factor = 1.25
+						learning < 2
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning < 4
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning < 6
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						learning < 8
+					}
+
+					mult_modifier = {
+						factor = 1.25
+						is_dumb_trigger = yes
+					}
+
+					event_target:innocent_victim = {
+						save_event_target_as = accused_apostate
+					}
+				}
+
+				95 = { } # Do nothing
+			}
+		}
+
+		if = {
+			limit = {
+				event_target:accused_apostate = { always = yes }
+			}
+
+			character_event = { id = MNM.70110 }
 		}
 	}
 }

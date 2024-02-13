@@ -393,6 +393,123 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
+		secret_religious_society_nusantara = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_nusantara_community
+						owned_by = PREV
+					}
+
+					religion = nusantara
+					remove_province_modifier = secret_nusantara_community
+				}
+			}
+		}
+		secret_religious_society_kebatinan = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_kebatinan_community
+						owned_by = PREV
+					}
+
+					religion = kebatinan
+					remove_province_modifier = secret_kebatinan_community
+				}
+			}
+		}
+		secret_religious_society_shiite = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_shiite_community
+						owned_by = PREV
+					}
+
+					religion = shiite
+					remove_province_modifier = secret_shiite_community
+				}
+			}
+		}
+		secret_religious_society_bani = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_bani_community
+						owned_by = PREV
+					}
+
+					religion = bani
+					remove_province_modifier = secret_bani_community
+				}
+			}
+		}
+		secret_religious_society_pagan = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_pagan_community
+						owned_by = PREV
+					}
+
+					religion = pagan
+					remove_province_modifier = secret_pagan_community
+				}
+			}
+		}
+		secret_religious_society_ua_dab_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_ua_dab_reformed_community
+						owned_by = PREV
+					}
+
+					religion = ua_dab_reformed
+					remove_province_modifier = secret_ua_dab_reformed_community
+				}
+			}
+		}
+		secret_religious_society_ua_dab = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_ua_dab_community
+						owned_by = PREV
+					}
+
+					religion = ua_dab
+					remove_province_modifier = secret_ua_dab_community
+				}
+			}
+		}
+		secret_religious_society_seirei_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_seirei_reformed_community
+						owned_by = PREV
+					}
+
+					religion = seirei_reformed
+					remove_province_modifier = secret_seirei_reformed_community
+				}
+			}
+		}
+		secret_religious_society_seirei = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_seirei_community
+						owned_by = PREV
+					}
+
+					religion = seirei
+					remove_province_modifier = secret_seirei_community
+				}
+			}
+		}
 	}
 }
 
