@@ -2732,169 +2732,159 @@ character_event = { # Outcome event
 	title = MNM.70031.t
 	picture = GFX_evt_catching_heretic
 	border = GFX_event_normal_frame_religion
-	
+
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:innocent_victim }
-		}
 		text = MNM.70110.d.innocent_victim
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:innocent_victim
+			}
+		}
 	}
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:highly_suspected_society_member }
-		}
 		text = MNM.70110.d.highly_suspected_society_member
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:highly_suspected_society_member
+			}
+		}
 	}
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:suspected_society_member }
-		}
 		text = MNM.70110.d.suspected_society_member
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:suspected_society_member
+			}
+		}
 	}
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:suspected_apostate }
-		}
 		text = MNM.70110.d.suspected_apostate
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:suspected_apostate
+			}
+		}
 	}
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:no_suspicion }
-		}
 		text = MNM.70110.d.no_suspicion
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:no_suspicion
+			}
+		}
 	}
-	
+
 	is_triggered_only = yes
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	
-	trigger = {
-		
-	}
-	
+
 	immediate = {
 		event_target:my_liege = {
 			random_realm_character = {
 				limit = {
-					age = 16
-					ai = yes
 					is_rival = ROOT
-					NOT = {
+					is_adult = yes
+					ai = yes
+
+					NOR = {
 						character = event_target:my_liege
-					}
-					NOT = {
 						character = event_target:accused_apostate
 					}
 				}
+
 				save_event_target_as = rival_target
 			}
 		}
-
 	}
-	
+
 	option = {
 		name = MNM.70110.a
-		
+
+		reverse_opinion = {
+			name = opinion_hate
+			who = event_target:accused_apostate
+			years = 100
+		}
+
+		custom_tooltip = {
+			text = apostate_found_tooltip
+
+			if = {
+				limit = {
+					has_nickname = no
+
+					event_target:accused_apostate = {
+						NOT = { character = event_target:innocent_victim }
+					}
+				}
+
+				random_list = {
+					500 = { } # No Nickname
+					50 = { give_nickname = nick_the_cleansing_flame }
+					50 = { give_nickname = nick_the_witch_hunter }
+					50 = { give_nickname = nick_the_inquisitor }
+					50 = { give_nickname = nick_the_purifier }
+				}
+			}
+		}
+
 		ai_chance = {
 			factor = 90
-			
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = zealous
 			}
 		}
-		
-		event_target:accused_apostate = {
-			opinion = {
-				modifier = opinion_hate
-				who = ROOT
-				years = 100
-			}
-		}
-		
-		custom_tooltip = {
-			text = apostate_found_tooltip
-		}
-		
-		hidden_tooltip = {
-			if = {
-				limit = {
-					has_nickname = no
-					NOT = {
-						event_target:accused_apostate = { character = event_target:innocent_victim }
-					}
-				}
-				random_list = {
-					500 = {
-						# No Nickname
-					}
-					50 = {
-						give_nickname = nick_the_cleansing_flame
-					}
-					50 = {
-						give_nickname = nick_the_witch_hunter
-					}
-					50 = {
-						give_nickname = nick_the_inquisitor
-					}
-					50 = {
-						give_nickname = nick_the_purifier
-					}
-				}
-			}
-		}
-		
-		liege = {
-			character_event = { id = MNM.70200 }
-		}
 	}
-	
+
 	option = {
 		name = MNM.70110.b
 		tooltip_info = deceitful
-		
+
 		trigger = {
 			trait = deceitful
+			event_target:rival_target = { is_alive = yes }
+		}
+
+		custom_tooltip = {
+			text = accuse_rival_tooltip
+
 			event_target:rival_target = {
-				is_alive = yes
+				save_event_target_as = accused_apostate
+				set_character_flag = apostate_rival_accused
 			}
 		}
-		
+
 		ai_chance = {
 			factor = 1000
-			
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = lunatic
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = possessed
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = cruel
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = paranoid
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = arbitrary
 			}
 		}
-		
-		custom_tooltip = {
-			text = accuse_rival_tooltip
-		}
-		
-		event_target:rival_target = {
-			save_event_target_as = accused_apostate
-			set_character_flag = apostate_rival_accused
-		}
+	}
+
+	after = {
 		liege = {
 			character_event = { id = MNM.70200 }
 		}
@@ -2906,362 +2896,328 @@ character_event = { # What does the liege wish to do with the apostate?
 	title = MNM.70031.t
 	picture = GFX_evt_catching_heretic
 	border = GFX_event_normal_frame_religion
-	
-	trigger = {
-		event_target:accused_apostate = {
-			is_alive = yes
-		}
-	}
-	
+
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:innocent_victim }
-		}
 		text = MNM.70200.d.innocent_victim
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:innocent_victim
+			}
+		}
 	}
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:highly_suspected_society_member }
-		}
 		text = MNM.70200.d.highly_suspected_society_member
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:highly_suspected_society_member
+			}
+		}
 	}
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:suspected_society_member }
-		}
 		text = MNM.70200.d.suspected_society_member
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:suspected_society_member
+			}
+		}
 	}
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:suspected_apostate }
-		}
 		text = MNM.70200.d.suspected_apostate
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:suspected_apostate
+			}
+		}
 	}
 	desc = {
-		trigger = { 
-			event_target:accused_apostate = { character = event_target:no_suspicion }
-		}
 		text = MNM.70200.d.no_suspicion
+		trigger = {
+			event_target:accused_apostate = {
+				character = event_target:no_suspicion
+			}
+		}
 	}
-	
+
 	is_triggered_only = yes
-	
+
+	trigger = {
+		event_target:accused_apostate = { is_alive = yes }
+	}
+
 	option = { # Execute them!
 		name = MNM.70200.a
-		
-		ai_chance = {
-			factor = 50
-			
-			modifier = {
-				factor = 2
-				trait = lunatic
-			}
-			modifier = {
-				factor = 2
-				trait = possessed
-			}
-			modifier = {
-				factor = 2
-				trait = cruel
-			}
-			modifier = {
-				factor = 2
-				trait = paranoid
-			}
-			modifier = {
-				factor = 2
-				trait = arbitrary
-			}
-			modifier = {
-				factor = 100
-				trait = zealous
-			}
-		}
-		
+
 		piety = 10
-		
+
 		tooltip = {
 			event_target:accused_apostate = {
 				show_scope_change = no
+
 				death = {
 					death_reason = death_execution_burning
 					killer = ROOT
 				}
 			}
 		}
-		event_target:accused_apostate = { save_event_target_as = kinslayer_target }
+
+		event_target:accused_apostate = {
+			save_event_target_as = kinslayer_target
+		}
+
 		add_kinslayer_trait_effect = yes
-		hidden_tooltip = {
+
+		hidden_effect = {
 			event_target:accused_apostate = {
+
 				if = {
 					limit = {
 						is_devil_worshiper_trigger = yes
+
 						OR = {
 							has_character_modifier = under_suspicion
 							has_character_modifier = highly_suspect
 						}
 					}
+
 					add_character_modifier = {
 						name = known_satanist
 						duration = -1
 					}
 				}
-				if = {
-					limit = {
-						OR = {
-							is_devil_worshiper_trigger = no
-							AND = {
-								is_devil_worshiper_trigger = yes
-								NOR = {
-									has_character_modifier = under_suspicion
-									has_character_modifier = highly_suspect
-								}
-							}
-						}
-					}
+				else = {
 					add_character_modifier = {
 						name = accused_apostate
 						duration = -1
 					}
 				}
+
 				if = {
 					limit = {
 						religion = ROOT
 						controls_religion = no
-						OR = {
-							religion = catholic
-							religion = fraticelli
-							religion = orthodox
-							religion = iconoclast
-						}
+						religion_has_excommunication = yes
 					}
+
 					add_trait = excommunicated
 				}
 			}
+
 			opinion = {
-				modifier = opinion_accused_apostate 
-				who = event_target:accused_apostate 
+				name = opinion_accused_apostate
+				who = event_target:accused_apostate
 				years = 100
 			}
+
 			event_target:accused_apostate = {
 				character_event = { id = MNM.70300 }
 			}
+
 			if = {
 				limit = {
 					has_nickname = no
-					NOT = {
-						event_target:accused_apostate = { character = event_target:innocent_victim }
+
+					event_target:accused_apostate = {
+						NOT = { character = event_target:innocent_victim }
 					}
 				}
+
 				random_list = {
-					500 = {
-						# No Nickname
-					}
-					5 = {
-						give_nickname = nick_the_cleansing_flame
-					}
-					5 = {
-						give_nickname = nick_the_witch_hunter
-					}
-					5 = {
-						give_nickname = nick_the_inquisitor
-					}
-					5 = {
-						give_nickname = nick_the_purifier
-					}
+					500 = { } # No Nickname
+					5 = { give_nickname = nick_the_cleansing_flame }
+					5 = { give_nickname = nick_the_witch_hunter }
+					5 = { give_nickname = nick_the_inquisitor }
+					5 = { give_nickname = nick_the_purifier }
 				}
 			}
 		}
+
+		ai_chance = {
+			factor = 50
+
+			mult_modifier = {
+				factor = 2
+				trait = lunatic
+			}
+
+			mult_modifier = {
+				factor = 2
+				trait = possessed
+			}
+
+			mult_modifier = {
+				factor = 2
+				trait = cruel
+			}
+
+			mult_modifier = {
+				factor = 2
+				trait = paranoid
+			}
+
+			mult_modifier = {
+				factor = 2
+				trait = arbitrary
+			}
+
+			mult_modifier = {
+				factor = 100
+				trait = zealous
+			}
+		}
 	}
-	
+
 	option = { # Imprison them
 		name = MNM.70200.b
-		
+
+		reverse_imprison = event_target:accused_apostate
+
+		opinion = {
+			name = opinion_accused_apostate
+			who = event_target:accused_apostate
+			years = 100
+		}
+
+		event_target:accused_apostate = {
+			show_scope_change = no
+
+			if = {
+				limit = {
+					is_devil_worshiper_trigger = yes
+
+					OR = {
+						has_character_modifier = under_suspicion
+						has_character_modifier = highly_suspect
+					}
+				}
+
+				add_character_modifier = {
+					name = known_satanist
+					duration = -1
+				}
+			}
+			else = {
+				add_character_modifier = {
+					name = accused_apostate
+					duration = -1
+				}
+			}
+
+			if = {
+				limit = {
+					religion = ROOT
+					controls_religion = no
+					religion_has_excommunication = yes
+				}
+
+				add_trait = excommunicated
+			}
+		}
+
+		event_target:accused_apostate = {
+			character_event = { id = MNM.70310 }
+		}
+
 		ai_chance = {
 			factor = 40
-			
-			modifier = {
+
+			mult_modifier = {
 				factor = 2
 				trait = kind
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 3
-				event_target:accused_apostate = {
-					ai = no
-				}
+				event_target:accused_apostate = { ai = no }
 			}
-			modifier = {
+
+			mult_modifier = {
 				factor = 5
-				event_target:accused_apostate = {
-					dynasty = ROOT
-				}
-			}
-		}
-		
-		event_target:accused_apostate = {
-			show_scope_change = no
-			imprison = ROOT
-		}
-		opinion = {
-			modifier = opinion_accused_apostate 
-			who = event_target:accused_apostate 
-			years = 100
-		}
-		event_target:accused_apostate = {
-			show_scope_change = no
-			if = {
-				limit = {
-					is_devil_worshiper_trigger = yes
-					OR = {
-						has_character_modifier = under_suspicion
-						has_character_modifier = highly_suspect
-					}
-				}
-				add_character_modifier = {
-					name = known_satanist
-					duration = -1
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						is_devil_worshiper_trigger = no
-						AND = {
-							is_devil_worshiper_trigger = yes
-							NOR = {
-								has_character_modifier = under_suspicion
-								has_character_modifier = highly_suspect
-							}
-						}
-					}
-				}
-				add_character_modifier = {
-					name = accused_apostate
-					duration = -1
-				}
-			}
-			if = {
-				limit = {
-					religion = ROOT
-					controls_religion = no
-					OR = {
-						religion = catholic
-						religion = iconoclast
-						religion = orthodox
-					}
-				}
-				add_trait = excommunicated
-			}
-		}
-		hidden_tooltip = {
-			event_target:accused_apostate = {
-				character_event = { id = MNM.70310 }
+				dynasty = event_target:accused_apostate
 			}
 		}
 	}
-	
+
 	option = { # Brand them
 		name = MNM.70200.c
-		
-		ai_chance = {
-			factor = 100
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					trait = trusting
-				}
-			}
+
+		event_target:accused_apostate = {
+			character_event = { id = MNM.70320 }
 		}
-		
-		hidden_tooltip = {
-			event_target:accused_apostate = {
-				character_event = { id = MNM.70320 }
-			}
-		}
+
 		opinion = {
-			modifier = opinion_accused_apostate 
-			who = event_target:accused_apostate 
+			name = opinion_accused_apostate
+			who = event_target:accused_apostate
 			years = 100
 		}
+
 		event_target:accused_apostate = {
 			show_scope_change = no
+
 			if = {
 				limit = {
 					is_devil_worshiper_trigger = yes
+
 					OR = {
 						has_character_modifier = under_suspicion
 						has_character_modifier = highly_suspect
 					}
 				}
+
 				add_character_modifier = {
 					name = known_satanist
 					duration = -1
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						is_devil_worshiper_trigger = no
-						AND = {
-							is_devil_worshiper_trigger = yes
-							NOR = {
-								has_character_modifier = under_suspicion
-								has_character_modifier = highly_suspect
-							}
-						}
-					}
-				}
+			else = {
 				add_character_modifier = {
 					name = accused_apostate
 					duration = -1
 				}
 			}
+
 			if = {
 				limit = {
 					religion = ROOT
 					controls_religion = no
-					OR = {
-						religion = catholic
-						religion = iconoclast
-						religion = orthodox
-					}
+					religion_has_excommunication = yes
 				}
+
 				add_trait = excommunicated
 			}
 		}
+
+		ai_chance = {
+			factor = 100
+
+			trigger = { trait = trusting }
+		}
 	}
-	
+
 	option = { # Let them go
 		name = MNM.70200.d
-		
-		ai_chance = {
-			factor = 10
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					trait = trusting
-				}
-			}
-		}
-		
+
 		piety = -10
-		
-		hidden_tooltip = {
-			event_target:accused_apostate = {
-				character_event = { id = MNM.70330 }
-			}
+
+		event_target:accused_apostate = {
+			character_event = { id = MNM.70330 }
 		}
+
 		opinion = {
-			modifier = opinion_accused_apostate 
-			who = event_target:accused_apostate 
+			name = opinion_apostate_timer
+			who = event_target:accused_apostate
 			years = 10
 		}
+
 		reverse_opinion = {
-			modifier = opinion_outraged 
+			name = opinion_outraged
 			who = FROM
 			years = 10
+		}
+
+		ai_chance = {
+			factor = 10
+
+			trigger = { trait = trusting }
 		}
 	}
 }
@@ -3271,59 +3227,39 @@ character_event = { # The Apostate reacts to Execution
 	desc = MNM.70300.d
 	picture = GFX_evt_witch_burning
 	border = GFX_event_normal_frame_religion
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
-		name = MNM.70300.a
-		trigger = {
-			is_devil_worshiper_trigger = yes
+		name = {
+			text = MNM.70300.a
+			trigger = { is_devil_worshiper_trigger = yes }
 		}
+		name = {
+			text = MNM.70300.b
+			trigger = { is_devil_worshiper_trigger = no }
+		}
+
 		death = {
 			death_reason = death_execution_burning
 			killer = FROM
 		}
-		hidden_tooltip = { # Inform players that fellow society member has been executed
-			any_player = {
-				limit = {
-					OR = {
-						same_realm = ROOT
-						is_close_relative = ROOT
-						is_friend = ROOT
-					}
-					same_society_as = ROOT
-					NOT = {
-						character = ROOT
-					}
+
+		# Inform players that fellow society member has been executed
+		any_player = {
+			limit = {
+				same_society_as = ROOT
+
+				OR = {
+					same_realm = ROOT
+					is_close_relative = ROOT
+					is_friend = ROOT
 				}
-				character_event = { id = MNM.70400 }
+
+				NOT = { character = ROOT }
 			}
-		}
-	}
-	option = {
-		name = MNM.70300.b
-		trigger = {
-			is_devil_worshiper_trigger = no
-		}
-		death = {
-			death_reason = death_execution_burning
-			killer = FROM
-		}
-		hidden_tooltip = { # Inform players that fellow society member has been executed
-			any_player = {
-				limit = {
-					OR = {
-						same_realm = ROOT
-						is_close_relative = ROOT
-						is_friend = ROOT
-					}
-					same_society_as = ROOT
-					NOT = {
-						character = ROOT
-					}
-				}
-				character_event = { id = MNM.70400 }
-			}
+
+			character_event = { id = MNM.70400 }
 		}
 	}
 }
@@ -3333,80 +3269,70 @@ character_event = { # The Apostate reacts to Imprisonment
 	desc = MNM.70310.d
 	picture = GFX_evt_catching_heretic
 	border = GFX_event_normal_frame_religion
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = MNM.70310.a
+
 		tooltip = {
 			imprison = FROM
-			event_target:my_liege = {
-				opinion = {
-					modifier = opinion_accused_apostate 
-					who = event_target:accused_apostate 
-					years = 100
-				}
+
+			reverse_opinion = {
+				name = opinion_accused_apostate
+				who = event_target:my_liege
+				years = 100
 			}
+
 			if = {
 				limit = {
 					is_devil_worshiper_trigger = yes
+
 					OR = {
 						has_character_modifier = under_suspicion
 						has_character_modifier = highly_suspect
 					}
 				}
+
 				add_character_modifier = {
 					name = known_satanist
 					duration = -1
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						is_devil_worshiper_trigger = no
-						AND = {
-							is_devil_worshiper_trigger = yes
-							NOR = {
-								has_character_modifier = under_suspicion
-								has_character_modifier = highly_suspect
-							}
-						}
-					}
-				}
+
+			else = {
 				add_character_modifier = {
 					name = accused_apostate
 					duration = -1
 				}
 			}
+
 			if = {
 				limit = {
 					religion = FROM
 					controls_religion = no
-					OR = {
-						religion = catholic
-						religion = iconoclast
-						religion = orthodox
-					}
+					religion_has_excommunication = yes
 				}
+
 				add_trait = excommunicated
 			}
 		}
-		hidden_tooltip = { # Inform players that fellow society member has been imprisoned
-			any_player = {
-				limit = {
-					primary_title = { always = yes }
-					OR = {
-						same_realm = ROOT
-						is_close_relative = ROOT
-						is_friend = ROOT
-					}
-					same_society_as = ROOT
-					NOT = {
-						character = ROOT
-					}
+
+		# Inform players that fellow society member has been imprisoned
+		any_player = {
+			limit = {
+				same_society_as = ROOT
+
+				OR = {
+					same_realm = ROOT
+					is_close_relative = ROOT
+					is_friend = ROOT
 				}
-				character_event = { id = MNM.70400 }
+
+				NOT = { character = ROOT }
 			}
+
+			character_event = { id = MNM.70400 }
 		}
 	}
 }
@@ -3416,79 +3342,68 @@ character_event = { # The Apostate reacts to Branding
 	desc = MNM.70320.d
 	picture = GFX_evt_catching_heretic
 	border = GFX_event_normal_frame_religion
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = MNM.70320.a
-		
+
 		tooltip = {
-			event_target:my_liege = {
-				opinion = {
-					modifier = opinion_accused_apostate 
-					who = event_target:accused_apostate 
-					years = 100
-				}
+			reverse_opinion = {
+				name = opinion_accused_apostate
+				who = event_target:my_liege
+				years = 100
 			}
+
 			if = {
 				limit = {
 					is_devil_worshiper_trigger = yes
+
 					OR = {
 						has_character_modifier = under_suspicion
 						has_character_modifier = highly_suspect
 					}
 				}
+
 				add_character_modifier = {
 					name = known_satanist
 					duration = -1
 				}
 			}
-			if = {
-				limit = {
-					OR = {
-						is_devil_worshiper_trigger = no
-						AND = {
-							is_devil_worshiper_trigger = yes
-							NOR = {
-								has_character_modifier = under_suspicion
-								has_character_modifier = highly_suspect
-							}
-						}
-					}
-				}
+
+			else = {
 				add_character_modifier = {
 					name = accused_apostate
 					duration = -1
 				}
 			}
+
 			if = {
 				limit = {
 					religion = FROM
 					controls_religion = no
-					OR = {
-						religion = catholic
-						religion = iconoclast
-						religion = orthodox
-					}
+					religion_has_excommunication = yes
 				}
+
 				add_trait = excommunicated
 			}
 		}
-		hidden_tooltip = { # Inform players that fellow society member has been branded
-			any_player = {
-				limit = {
-					OR = {
-						same_realm = ROOT
-						is_close_relative = ROOT
-						is_friend = ROOT
-					}
-					same_society_as = ROOT
-					NOT = {
-						character = ROOT
-					}
+
+		# Inform players that fellow society member has been branded
+		any_player = {
+			limit = {
+				same_society_as = ROOT
+
+				OR = {
+					same_realm = ROOT
+					is_close_relative = ROOT
+					is_friend = ROOT
 				}
-				character_event = { id = MNM.70400 }
+
+				NOT = { character = ROOT }
 			}
+
+			character_event = { id = MNM.70400 }
 		}
 	}
 }
@@ -3498,21 +3413,13 @@ character_event = { # The Apostate reacts to Mercy
 	desc = MNM.70330.d
 	picture = GFX_evt_catching_heretic
 	border = GFX_event_normal_frame_religion
-	
+
 	is_triggered_only = yes
-	
+
+	ai = no
+
 	option = {
 		name = MNM.70320.a
-		
-		tooltip = {
-			event_target:my_liege = {
-				opinion = {
-					modifier = opinion_accused_apostate 
-					who = event_target:accused_apostate 
-					years = 10
-				}
-			}
-		}
 	}
 }
 
@@ -3520,72 +3427,64 @@ character_event = { # Player society members are informed that a fellow member h
 	id = MNM.70400
 	picture = GFX_evt_catching_heretic
 	border = GFX_event_normal_frame_religion
-	
+
 	desc = {
-		trigger = { 
-			FROM = {
-				is_alive = no
-			}
-		}
 		text = MNM.70400.d.executed
 		picture = GFX_evt_witch_burning
+		trigger = {
+			FROM = { is_alive = no }
+		}
 	}
 	desc = {
-		trigger = { 
+		text = MNM.70400.d.imprisoned
+		trigger = {
 			FROM = {
 				is_alive = yes
 				prisoner = yes
 			}
 		}
-		text = MNM.70400.d.imprisoned
 	}
 	desc = {
-		trigger = { 
+		text = MNM.70400.d.caught
+		trigger = {
 			FROM = {
 				is_alive = yes
 				prisoner = no
 			}
 		}
-		text = MNM.70400.d.caught
 	}
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = MNM.70400.a
 		tooltip_info = paranoid
-		
-		trigger = {
-			trait = paranoid
-		}
-		
+
+		trigger = { trait = paranoid }
+
 		event_target:my_liege = {
-			set_character_flag = portrait_flag
-			clr_character_flag = portrait_flag
-		}
-		
-		event_target:my_liege = {
+			show_portrait = yes
+
 			job_spiritual = {
-				set_character_flag = portrait_flag
-				clr_character_flag = portrait_flag
+				show_portrait = yes
 			}
 		}
-		
+
 		decrease_visibility_effect = yes
 	}
-	
+
 	option = {
 		name = CURSES
-		
-		event_target:my_liege = {
-			set_character_flag = portrait_flag
-			clr_character_flag = portrait_flag
+
+		trigger = {
+			NOT = { trait = paranoid }
 		}
-		
+
 		event_target:my_liege = {
+			show_portrait = yes
+
 			job_spiritual = {
-				set_character_flag = portrait_flag
-				clr_character_flag = portrait_flag
+				show_portrait = yes
 			}
 		}
 	}

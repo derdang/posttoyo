@@ -754,3 +754,34 @@ has_safe_secret_religion = {
 		has_dlc = "Rajas of India"
 	}
 }
+
+religion_has_excommunication = {
+	OR = {
+		religion = catholic
+		religion = restorationist
+		religion = orthodox
+		religion = old_believer
+		religion = concordanist
+		religion = adventist
+		religion = pentecostal
+		religion = baptist
+		religion = fuyin
+		religion = unificationist
+		religion = aiguo
+		religion = nestorian
+		religion = erkeun
+		religion = eastern_lightning
+		religion = muist
+		religion = muist_reformed
+		religion = cao_dai
+		religion = shinto
+		religion = shinko
+		religion = yuilsasang
+		religion = jibenyuanze
+		religion = jinbenwei
+		religion = nousthreskeia
+		religion = pancasila
+		religion = fourthist
+		religion = mormon
+	}
+}
