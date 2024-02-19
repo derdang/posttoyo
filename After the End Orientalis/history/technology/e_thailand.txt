@@ -1,25 +1,20 @@
 #Thailand
 technology = {
 	titles = {
-		d_ayutthaya
 		d_chantraburi
 		d_chiang_mai
 		d_chonburi
 		d_khon_kaen
 		d_lampang
-		d_lopburi
 		d_nakhon_ratchasima
 		d_nakhon_sri_thammarat
-		d_palimonthon
 		d_pattani
 		d_phayao
 		d_phitsanulok
 		d_phuket
 		d_prachinburi
-		d_ratchaburi
 		d_songkhla
 		d_sukhothai
-		d_suphanburi
 		d_nakhon_phanom
 		d_roi_et
 		d_buriram
@@ -37,5 +32,37 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Central Thailand
+technology = {
+	titles = {
+		d_ayutthaya
+		d_palimonthon
+		d_lopburi
+		d_ratchaburi
+		d_suphanburi
+	}
+	2600 = {
+		military = 2.0
+		economy = 2.0
+		culture = 2.0
+
+		TECH_TRADE_PRACTICES = 3
+		TECH_CITY_CONSTRUCTION = 3
+		TECH_FORTIFICATIONS_CONSTRUCTION = 2.5
+		TECH_CASTLE_CONSTRUCTION = 2.5
+
+	}
+	3100 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
+		
+		TECH_TRADE_PRACTICES = 5
+		TECH_CITY_CONSTRUCTION = 5
+		TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		TECH_CASTLE_CONSTRUCTION = 5
 	}
 }

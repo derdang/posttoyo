@@ -4,13 +4,9 @@ technology = {
 		d_agusan
 		d_bicol
 		d_bukidnon
-		d_cagayan
-		d_central_luzon
-		d_cordillera
 		d_cotabato
 		d_davao
 		d_davao_oriental
-		d_ilocos
 		d_kabisay_an
 		d_katagalugan
 		d_la_laguna
@@ -21,11 +17,9 @@ technology = {
 		d_negros
 		d_palawan
 		d_panay
-		d_pangasinan
 		d_quezon
 		d_samar
 		d_sarangani
-		d_sierra_madre
 		d_sulu
 		d_surigao
 		d_zamboanga
@@ -40,5 +34,38 @@ technology = {
 		military = 5.0
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#Luzon
+technology = {
+	titles = {
+		d_cordillera
+		d_cagayan
+		d_central_luzon
+		d_ilocos
+		d_pangasinan
+		d_sierra_madre
+	}
+	2600 = {
+		military = 2.0
+		economy = 2.0
+		culture = 2.0
+
+		TECH_TRADE_PRACTICES = 3
+		TECH_CITY_CONSTRUCTION = 3
+		TECH_FORTIFICATIONS_CONSTRUCTION = 2.5
+		TECH_CASTLE_CONSTRUCTION = 2.5
+
+	}
+	3100 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
+		
+		TECH_TRADE_PRACTICES = 5
+		TECH_CITY_CONSTRUCTION = 5
+		TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		TECH_CASTLE_CONSTRUCTION = 5
 	}
 }
