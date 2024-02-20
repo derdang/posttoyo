@@ -1325,7 +1325,12 @@ succession_laws = {
 			NOT = { 
 				has_law = succ_byzantine_elective 
 			}
-			NOT = {title = d_cao_dai}
+			NOR = {
+				title = d_cao_dai
+				title = d_ruist_yansheng
+				title = k_vissarionite
+				title = k_kohhran_thianghlim
+			}
 			temporary = no
 			OR = {
 				is_primary_type_title = yes
@@ -1352,7 +1357,12 @@ succession_laws = {
 				is_landless_type_title = yes
 				holder_scope = { is_theocracy = no }
 				holder_scope = { 
-					NOT = { religion = catholic }
+					NOR = {
+						religion = catholic
+						religion = ruist
+						religion = vissarionite
+						religion = kohhran_thianghlim
+					}
 				}
 			}
 			holder_scope = { 
