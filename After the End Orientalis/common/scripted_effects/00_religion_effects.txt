@@ -510,6 +510,214 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
+		secret_religious_society_americanist_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_americanist_reformed_community
+						owned_by = PREV
+					}
+
+					religion = americanist_reformed
+					remove_province_modifier = secret_americanist_reformed_community
+				}
+			}
+		}
+		secret_religious_society_americanist = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_americanist_community
+						owned_by = PREV
+					}
+
+					religion = americanist
+					remove_province_modifier = secret_americanist_community
+				}
+			}
+		}
+		secret_religious_society_muist_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_muist_reformed_community
+						owned_by = PREV
+					}
+
+					religion = muist_reformed
+					remove_province_modifier = secret_muist_reformed_community
+				}
+			}
+		}
+		secret_religious_society_muist = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_muist_community
+						owned_by = PREV
+					}
+
+					religion = muist
+					remove_province_modifier = secret_muist_community
+				}
+			}
+		}
+		secret_religious_society_shenist_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_shenist_reformed_community
+						owned_by = PREV
+					}
+
+					religion = shenist_reformed
+					remove_province_modifier = secret_shenist_reformed_community
+				}
+			}
+		}
+		secret_religious_society_shenist = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_shenist_community
+						owned_by = PREV
+					}
+
+					religion = shenist
+					remove_province_modifier = secret_shenist_community
+				}
+			}
+		}
+		secret_religious_society_donyi_polo_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_donyi_polo_reformed_community
+						owned_by = PREV
+					}
+
+					religion = donyi_polo_reformed
+					remove_province_modifier = secret_donyi_polo_reformed_community
+				}
+			}
+		}
+		secret_religious_society_donyi_polo = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_donyi_polo_community
+						owned_by = PREV
+					}
+
+					religion = donyi_polo
+					remove_province_modifier = secret_donyi_polo_community
+				}
+			}
+		}
+		secret_religious_society_khanist_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_khanist_reformed_community
+						owned_by = PREV
+					}
+
+					religion = khanist_reformed
+					remove_province_modifier = secret_khanist_reformed_community
+				}
+			}
+		}
+		secret_religious_society_khanist = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_khanist_community
+						owned_by = PREV
+					}
+
+					religion = khanist
+					remove_province_modifier = secret_khanist_community
+				}
+			}
+		}
+		secret_religious_society_mo_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_mo_reformed_community
+						owned_by = PREV
+					}
+
+					religion = mo_reformed
+					remove_province_modifier = secret_mo_reformed_community
+				}
+			}
+		}
+		secret_religious_society_mo = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_mo_community
+						owned_by = PREV
+					}
+
+					religion = mo
+					remove_province_modifier = secret_mo_community
+				}
+			}
+		}
+		secret_religious_society_chuma_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_chuma_reformed_community
+						owned_by = PREV
+					}
+
+					religion = chuma_reformed
+					remove_province_modifier = secret_chuma_reformed_community
+				}
+			}
+		}
+		secret_religious_society_chuma = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_chuma_community
+						owned_by = PREV
+					}
+
+					religion = chuma
+					remove_province_modifier = secret_chuma_community
+				}
+			}
+		}
+		secret_religious_society_heilong_reformed = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_heilong_reformed_community
+						owned_by = PREV
+					}
+
+					religion = heilong_reformed
+					remove_province_modifier = secret_heilong_reformed_community
+				}
+			}
+		}
+		secret_religious_society_heilong = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_heilong_community
+						owned_by = PREV
+					}
+
+					religion = heilong
+					remove_province_modifier = secret_heilong_community
+				}
+			}
+		}
 	}
 }
 
@@ -654,4 +862,328 @@ apply_dogmatic_on_start_effect = {
 
 # rebuild_god_name_effect
 
-# abdicate_all_primary_type_titles_effect
+convert_religion_failsafe_effect = {
+	hidden_effect = {
+		if = {
+			limit = {
+				trigger_if = {
+					limit = { is_theocracy = yes }
+					is_ruler = yes
+				}
+				# Potentially no longer allowed to hold temples and would become a theocracy
+				trigger_else = {
+					capital_holding = { holding_type = temple }
+
+					OR = {
+						government = ghazi_government
+						government = diwan_government
+						government = theocratic_feudal_government
+					}
+
+					NOT = {
+						any_demesne_title = {
+							real_tier = BARON
+							is_preferred_holding_type = PREV
+						}
+					}
+				}
+			}
+
+			set_character_flag = needs_temporary_fake_theocracy_government
+			set_government_type = temporary_fake_theocracy_government
+		}
+	}
+
+	trigger_switch = {
+		on_trigger = has_character_flag
+
+		convert_secret = {
+			convert_to_secret_religion = yes
+			clr_character_flag = convert_secret
+		}
+
+		convert_heretic = {
+			become_heretic = yes
+			clr_character_flag = convert_heretic
+		}
+
+		convert_abandon_heresy = {
+			abandon_heresy = yes
+			clr_character_flag = convert_abandon_heresy
+		}
+
+		fallback = {
+			if = {
+				limit = { can_change_religion = yes }
+				religion = event_target:target_religion
+			}
+			else = {
+				unsafe_religion = event_target:target_religion
+			}
+			clear_event_target = target_religion
+		}
+	}
+
+	hidden_effect = {
+		if = {
+			limit = { government = temporary_fake_theocracy_government }
+
+			# Stop apostates from becoming the pope
+			if = {
+				limit = {
+					NOT = { religion = catholic }
+				}
+
+				remove_title = title_cardinal
+			}
+
+			# Check if my new religion even has theocracies
+			if = {
+				limit = {
+					NOR = {
+						is_government_potential = ghazi_government
+						is_government_potential = diwan_government
+						is_government_potential = theocratic_feudal_government
+					}
+				}
+
+				# Check if my new religion allows me to remain a priest
+				if = {
+					limit = {
+						trigger_if = {
+							limit = { is_female = no }
+							religion_allows_male_temple_holders = yes
+						}
+						trigger_else = {
+							religion_allows_female_temple_holders = yes
+						}
+					}
+
+					# Check if my new religion allows me to remain married
+					if = {
+						limit = {
+							# TODO: Replace with flag on religions
+							OR = {
+								religion_group = christian
+								religion_group = zoroastrian_group
+								religion_openly_bon_or_reformed_trigger = yes
+								religion = jain
+								religion = buddhist
+								religion = taoist
+							}
+						}
+
+						any_spouse = { remove_spouse = PREV }
+						any_consort = { remove_consort = PREV }
+					}
+
+					set_correct_theocratic_government_type_effect = yes
+				}
+				else = {
+					# Abdicate
+					random_courtier = {
+						limit = {
+							religion = PREV
+							is_opposite_sex = PREV
+							is_ruler = no
+
+							trigger_if = {
+								limit = { has_dharmic_religion_trigger = yes }
+								trait = brahmin
+							}
+
+							trigger_if = {
+								limit = {
+									OR = {
+										religion_group = christian
+										religion_group = zoroastrian_group
+										religion_openly_bon_or_reformed_trigger = yes
+										religion = jain
+										religion = buddhist
+										religion = taoist
+									}
+								}
+
+								is_married = no
+								is_consort = no
+								is_senior_consort_party = no
+							}
+
+							NOR = {
+								any_heir_title = { always = yes }
+								any_pretender_title = { always = yes }
+							}
+						}
+
+						save_event_target_as = new_priest
+					}
+
+					if = {
+						limit = {
+							NOT = { event_target:new_priest = { always = yes } }
+						}
+
+						if = {
+							limit = { religion_allows_female_temple_holders = yes }
+
+							create_random_priest = {
+								random_traits = yes
+								religion = THIS
+								culture = THIS
+								female = yes
+							}
+						}
+						else = {
+							create_random_priest = {
+								random_traits = yes
+								religion = THIS
+								culture = THIS
+								female = no
+							}
+						}
+
+						new_character = {
+							save_event_target_as = new_priest
+
+							if = {
+								limit = { has_dharmic_religion_trigger = yes }
+								add_trait = brahmin
+								character_event = { id = RoI.30120 } # Pick random sect
+							}
+						}
+					}
+
+					# Abdication effects leave undesirable claims
+					any_demesne_title = {
+						gain_title = event_target:new_priest
+					}
+
+					transfer_scaled_wealth = {
+						to = event_target:new_priest
+						value = all
+					}
+
+					# TODO: Transfer artifacts?
+
+					clear_event_target = new_priest
+				}
+			}
+			else = {
+				set_correct_feudal_government_type_effect = yes
+			}
+
+			# Clear this flag, so that characters are forced into a normal government
+			# Characters who have abdicated may take a day to find their way back into a court and get a suitable government
+			clr_character_flag = needs_temporary_fake_theocracy_government
+		}
+	}
+}
+
+abdicate_all_primary_type_titles_effect = {
+	if = {
+		limit = { controls_religion = yes }
+
+		# Secular religious head titles are forfeit
+		if = {
+			limit = { is_theocracy = no }
+
+			any_demesne_title = {
+				limit = { controls_religion = yes }
+				destroy_landed_title = THIS
+			}
+		}
+
+		# Theocratic religious head titles are given to a random new character
+		else = {
+			hidden_effect = {
+				liege = {
+					save_event_target_as = liege_target
+				}
+			}
+
+			any_demesne_title = {
+				show_scope_change = no
+
+				limit = { controls_religion = yes }
+
+				hidden_effect = {
+					create_character = {
+						age = 38
+						dynasty = random
+						religion = ROOT
+						culture = ROOT
+						random_traits = yes
+					}
+				}
+
+				grant_title = new_character
+
+				holder_scope = {
+					show_scope_change = no
+
+					any_vassal = {
+						show_scope_change = no
+
+						set_defacto_liege = event_target:liege_target
+					}
+				}
+			}
+
+			hidden_effect = {
+				set_defacto_liege = event_target:liege_target
+			}
+		}
+	}
+
+	if = { # Holy Orders/Static Mercs are given to a random new character
+		limit = {
+			OR = {
+				holy_order = yes
+				mercenary = yes
+			}
+		}
+
+		hidden_effect = {
+			liege = {
+				save_event_target_as = liege_target
+			}
+		}
+
+		any_demesne_title = {
+			show_scope_change = no
+
+			limit = {
+				OR = {
+					holy_order = yes
+					mercenary = yes
+				}
+			}
+
+			hidden_effect = {
+				create_character = {
+					age = 38
+					dynasty = random
+					religion = PREV
+					culture = PREV
+					random_traits = yes
+				}
+			}
+
+			grant_title = new_character
+
+			holder_scope = {
+				show_scope_change = no
+
+				any_vassal = {
+					show_scope_change = no
+
+					set_defacto_liege = event_target:liege_target
+				}
+			}
+		}
+
+		hidden_effect = {
+			set_defacto_liege = event_target:liege_target
+		}
+	}
+}
