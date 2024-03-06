@@ -7,16 +7,34 @@ technology = {
 		d_nagaland
 		d_namsai
 		d_subansari
-		d_tripura
 	}
 	2600 = {
-		military = 2.0
+		military = 1.1
 		economy = 2.0
 		culture = 2.0
 	}
 	3100 = {
-		military = 5.0
+		military = 4.1
 		economy = 5.0
 		culture = 5.0
+	}
+}
+
+#BENGAL
+technology = {
+	titles = {
+		d_tripura
+	}
+	2600 = {
+		military = 1.5
+		economy = 1.1
+		culture = 1.1
+		TECH_INFANTRY = 2.2
+	}
+	3100 = {
+		military = 4.5
+		economy = 4.1
+		culture = 4.1
+		TECH_INFANTRY = 5.2
 	}
 }
