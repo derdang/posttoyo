@@ -675,3 +675,61 @@ k_kohhran_thianghlim = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+k_tenrikyo = {
+	color = { 120 156 040 }
+	
+	creation_requires_capital = no
+	
+	capital = 82 #Nara
+	
+	dignity = 200
+	
+	title = SHINBASHIRA
+	title_female = SHINBASHIRA
+	foa = SHINBASHIRA_FOA
+	primary = yes
+	
+	short_name = yes
+	
+	religion = tenrikyo
+	caliphate = yes
+	
+	controls_religion = tenrikyo
+	
+	allow = {
+		has_global_flag = tenrikyo_formed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+k_taoist = {
+	color = { 226 241 182 }
+	
+	creation_requires_capital = no
+	
+	capital = 1642 # Yingtan/Mt. Longhu
+	
+	dignity = 200
+	
+	title = CELESTIAL_MASTER
+	title_female = CELESTIAL_MASTER
+	foa = CELESTIAL_MASTER_FOA
+	primary = yes
+	
+	short_name = yes
+	
+	religion = taoist
+	caliphate = yes
+	
+	controls_religion = taoist
+	
+	allow = {
+		has_global_flag = taoist_formed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
