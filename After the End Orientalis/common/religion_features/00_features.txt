@@ -533,6 +533,7 @@ religion_doctrine = {
 		trigger = {
 			NOR = { 
 				has_selected_religion_feature = religion_matriarchal #Incompatible
+				has_selected_religion_feature = religion_feature_ak_jeng
 			} 
 		}
 		effect = {
@@ -692,8 +693,6 @@ religion_doctrine = {
 			NOT = { religion = chuma_reformed } #Core feature of the religion itself.
 			NOT = { religion = heilong } #Core feature of the religion itself.
 			NOT = { religion = heilong_reformed } #Core feature of the religion itself.
-			NOT = { religion = ak_jeng } #Core feature of the religion itself.
-			NOT = { religion = ak_jeng_reformed } #Core feature of the religion itself.
 		}
 
 		effect = {
@@ -993,6 +992,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_feature_heilong
 				has_selected_religion_feature = religion_feature_makasol
 				has_selected_religion_feature = religion_feature_diwata
+				has_selected_religion_feature = religion_feature_ak_jeng
 			}
 		}
 		effect = {
@@ -1035,11 +1035,19 @@ religion_doctrine = {
 		picture = GFX_religion_feature_animistic
 		trigger = {
 			NOR = {
-				has_selected_religion_feature = religion_feature_chinomi
-				has_selected_religion_feature = religion_feature_chuma
-				has_selected_religion_feature = religion_feature_heilong
-				has_selected_religion_feature = religion_feature_animist
-				has_selected_religion_feature = religion_feature_diwata
+				#Redunancy as it is part of the Religion
+				religion = chinomi
+				religion = chinomi_reformed
+				religion = chuma
+				religion = chuma_reformed
+				religion = heilong
+				religion = heilong_reformed
+				religion = animist
+				religion = animist_reformed
+				religion = diwata
+				religion = diwata_reformed
+				religion = ak_jeng
+				religion = ak_jeng_reformed
 			}
 		}
 		effect = {
@@ -1060,7 +1068,6 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_no_leader
 				has_selected_religion_feature = religion_feature_chinomi
 				has_selected_religion_feature = religion_feature_mo
-				has_selected_religion_feature = religion_feature_ak_jeng
 				has_selected_religion_feature = religion_feature_shenist
 				has_selected_religion_feature = religion_feature_kaharingan
 				has_selected_religion_feature = religion_feature_animist
@@ -1220,14 +1227,44 @@ religion_doctrine = {
 		trigger = {
 			religion = ak_jeng_reformed
 			NOR = { 
-				has_selected_religion_feature = religion_haruspicy
-				has_selected_religion_feature = religion_beatification
+				has_selected_religion_feature = religion_relentless
+				has_selected_religion_feature = religion_animistic
+				has_selected_religion_feature = religion_harems
 			}
 		}
 		effect = {
-			custom_tooltip = { text = tooltip_religion_feature_beatification }
-			custom_tooltip = { text = tooltip_religion_feature_eldership }
-			custom_tooltip = { text = tooltip_religion_feature_haruspicy }
+			custom_tooltip = { text = tooltip_religion_feature_land_morale }
+			custom_tooltip = { text = tooltip_religion_feature_adulthood_rite }
+			hidden_tooltip = { 
+				set_unit_modifier = { 
+					land_morale = 0.05
+					key = "ANIMISTIC_RELIGION"
+				}
+			}
+			custom_tooltip = { text = tooltip_religion_feature_anti_attrition }
+			custom_tooltip = { text = tooltip_religion_feature_offensive }
+			hidden_tooltip = { 
+				set_ignores_defensive_attrition = yes
+				set_unit_modifier = { 
+					light_infantry_offensive = 0.1
+					heavy_infantry_offensive = 0.1
+					light_cavalry_offensive = 0.1 
+					knights_offensive = 0.1 
+					pikemen_offensive = 0.1 
+					archers_offensive = 0.1
+					horse_archers_offensive = 0.1
+					camel_cavalry_offensive = 0.1
+					war_elephants_offensive = 0.1
+					key = "RELENTLESS_RELIGION"
+				}
+			}
+			effect = {
+			custom_tooltip = { text = tooltip_religion_feature_harems }
+			hidden_tooltip = { 
+				set_max_consorts = 0
+				set_max_wives = 4
+			}
+		}
 		}
 		ai_will_do = {
 			factor = 1
