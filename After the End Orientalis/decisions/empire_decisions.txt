@@ -59,4 +59,222 @@ decisions = {
 			factor = 1
 		}
 	}
+	reunify_tianxia = {
+		is_high_prio = yes
+		only_playable = yes
+		
+		potential = {
+			is_alternate_start = no
+			NOT = { has_global_flag = china_unified }
+			is_playable = yes
+			independent = yes
+			realm_size = 100
+			OR = {
+				culture_group = mongol
+				culture_group = han
+				culture_group = tungusic
+				culture = chaoxianzu
+				
+				AND = {
+					religion = hui
+					OR = {
+						culture_group = hmong_mien
+						culture_group = formosan
+						culture_group = lolo
+						culture_group = north_tai
+					}
+				}
+				AND = {
+					OR = {
+						is_bureaucratic_religion = yes
+						is_mahayana_chinese = yes
+						religion = hui
+						religion = datong
+						religion = heilong
+						religion = heilong_reformed
+						religion = chuma
+						religion = chuma_reformed
+					}
+					OR = {
+						culture_group = hmong_mien
+						culture_group = formosan
+						culture_group = lolo
+						culture_group = north_tai
+					}
+				}
+			}
+			e_china = {
+				has_holder = no
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 2500
+			realm_size = 250
+			scaled_wealth = 2
+			war = no
+			any_demesne_title = {
+				tier = EMPEROR
+			}
+			completely_controls = e_anhui
+			completely_controls = e_chongqing
+			completely_controls = e_dali
+			completely_controls = e_dongbei
+			completely_controls = e_gansu
+			completely_controls = e_guangdong
+			completely_controls = e_guangxi
+			completely_controls = e_guizhou
+			completely_controls = e_henan
+			completely_controls = e_hubei
+			completely_controls = e_hunan
+			completely_controls = e_jiangsu
+			completely_controls = e_jiangxi
+			completely_controls = e_min_tai
+			completely_controls = e_shaanxi
+			completely_controls = e_shandong
+			completely_controls = e_shanxi
+			completely_controls = e_sichuan
+			completely_controls = e_zhejiang
+			completely_controls = e_zhili
+			NOT = { has_global_flag = china_unified }
+		}
+		effect = {
+			activate_title = { title = e_china status = yes }
+			scaled_wealth = -2
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			any_demesne_title = {
+				limit = { tier = KING }
+				de_jure_liege = e_china
+			}
+			hidden_tooltip = {
+				primary_title = {
+					if = {
+						limit = { tier = EMPEROR }
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = e_china
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_patrician = no
+				}
+				primary_title = {
+					e_china = {
+						grant_title = ROOT
+						copy_title_laws = PREV
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_patrician = yes
+				}
+				primary_title = {
+					e_china = {
+						grant_title = ROOT
+						copy_title_laws = PREV
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = {
+					tier = EMPEROR
+					NOT = { title = e_china }
+				}
+				destroy_landed_title = THIS
+				hidden_tooltip = { activate_title = { title = THIS status = no } }
+			}
+			set_global_flag = china_unified
+			if = {
+				limit = { completely_controls = e_mongolia } #Yuan/Qing Larp
+				k_altay_sayan = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+				k_govi = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+				k_khangai = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+			}
+			if = {
+				limit = { completely_controls = k_tannu_tuva }
+				k_tannu_tuva = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+			}
+			if = {
+				limit = { completely_controls = k_primorsky }
+				k_primorsky = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+			}
+			if = {
+				limit = { completely_controls = k_amur }
+				k_amur = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+			}
+			if = {
+				limit = { completely_controls = k_khabarovsk }
+				k_khabarovsk = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+				k_sakhalin = {
+					de_jure_liege = e_kamchatka
+				}
+			}
+			if = {
+				limit = { completely_controls = e_tibet }
+				k_amdo = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+				k_bhutan = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+				k_kham = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+				k_u_tsang = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+			}
+			if = {
+				limit = { completely_controls = e_xinjiang }
+				k_tarim = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+				k_dzungaria = {
+					de_jure_liege = e_china
+					destroy_landed_title = THIS
+				}
+			}
+			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
