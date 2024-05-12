@@ -26,52 +26,465 @@
 #scholarly_theologian
 #mastermind_theologian
 #
-
+# 2610 - The Great Hong
 # 2603 - Jin
 
-2610001 = {  #Hong
+#The Rulers of the Great Hong
+
+2610001 = { #12th and Current Ruler of the Hong (The Grand Usurper Minister Zhao)
 	name="Zhiyuan"
-	dynasty=9005801 #imperial Hong
+	dynasty=9005801 #Zhao
 	culture=pekingese
-	religion=jibenyuanze
-	martial=8
-	diplomacy=6
-	stewardship=8
-	intrigue=10
-	learning=6
-	trait=intricate_webweaver
-	trait=chaste
-	trait=ambitious
-	trait=kinslayer
+    religion=jibenyuanze
+    martial=8
+    diplomacy=6
+    stewardship=8
+    intrigue=10
+    learning=6
+    trait=intricate_webweaver
+    trait=kinslayer
+    trait=hunter
+    trait=envious
+    trait=brave
+    trait=deceitful
+    trait=chaste
+    trait=ambitious
+    trait=shy
+    trait=arbitrary
+	father=2610017
+	mother=2603108
 	2582.9.1={birth=yes}
+	2598.1.1={effect={add_lover = 2610003}}
 	2599.1.1={
 		add_claim=d_yulin
 		add_claim=d_weinan
 		add_claim=d_yanan
 		add_claim=k_yanan
 	}
+	2600.1.1={add_spouse=2610003}
+	2700.1.1={death=yes}
 }
-2610002 = {  #Hong
+2610002 = {  #11th of the Great Hong
 	name="Zhiming"
-	dynasty=9005801 #imperial Hong
+	dynasty=9005801 #Zhao
 	culture=pekingese
-	religion=jibenyuanze
-	martial=10
-	diplomacy=10
-	stewardship=8
-	intrigue=8
-	learning=6
-	trait=grey_eminence
-	trait=humble
-	trait=kind
-	trait=quick
-	2576.1.1={birth=yes}
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=scholarly_theologian
+    trait=scholar
+    trait=devout
+    trait=sympathy_indian
+    trait=patient
+    trait=trusting
+    trait=just
+    trait=chaste
+    trait=gregarious
+    trait=erudite
+    trait=diligent
+	father=2610017
+	mother=2603108
+    2576.1.1={birth=yes}
 	2599.1.1={
 		death={
-			death_reason=death_execution
+			death_reason=death_execution_hunt
 			killer=2610001
 		}
 	}
+}
+2610003 = {  #Wife of Zhao Zhiyuan, lover of Zhao Zhiyuan
+	name="Yuling"
+    dynasty=9005272 # Huzu
+    female=yes
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=6
+    stewardship=4
+    intrigue=6
+    learning=4
+    trait=intricate_webweaver
+    trait=fair
+    trait=schemer
+    trait=patient
+    trait=gregarious
+    trait=proud
+    trait=cruel
+    trait=arbitrary
+    trait=deceitful
+    2577.1.1={birth=yes}
+    2650.1.1={death=yes}
+}
+2610004 = {  #Prince of the Hong (Heir Apparent)
+	name="Jiaren"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=twin
+    trait=genius
+    trait=fair
+	father=2610001
+	mother=2610003
+    2605.1.1={birth=yes}
+    2654.1.1={death=yes}
+}
+2610005 = {  #Princess of the Hong
+	name="Jiawen"
+    dynasty=9005801 #Zhao
+    female=yes
+    culture=pekingese
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=twin
+    trait=strong
+    trait=willful
+	father=2610001
+	mother=2610003
+    2600.1.1={birth=yes}
+    2690.1.1={death=yes}
+}
+2610006 = {  #Young 1st Rank Iron Prince of the Hong (Brother of Zhiyuan)
+	name="Zhichao"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=hedonist
+    trait=shrewd
+    trait=honorable
+    trait=lustful
+    trait=cynical
+    trait=paranoid
+	father=2610017
+	mother=2603108
+    2585.1.1={birth=yes}
+	2599.1.1={
+		add_claim=e_hong
+		add_claim=k_yan
+		add_claim=d_beijing
+	}
+    2609.1.1={death=yes}
+}
+2610007 = {  #1st of the Legendary Triad of Hong Rulers
+	name="Yuanrui"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=skilled_tactician
+    trait=legendary
+    trait=shrewd
+    trait=envious
+    trait=charitable
+    trait=just
+    trait=honorable
+	occluded=yes
+    1996.1.1={birth=yes}
+    2180.1.1={death=yes}
+}
+2610008 = {  #2nd of the Legendary Triad of Hong Rulers
+	name="Biao"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=midas_touched
+    trait=legendary
+    trait=quick
+    trait=diligent
+	occluded=yes
+	father=2610007
+    2150.1.1={birth=yes}
+    2300.1.1={death=yes}
+}
+2610009 = {  #3rd of the Legendary Triad of Hong Rulers
+	name="Jingjin"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=mastermind_theologian
+    trait=legendary
+    trait=patient
+	occluded=yes
+	father=2610008
+    2300.1.1={birth=yes}
+    2400.1.1={death=yes}
+}
+2610010 = {  #4th of the Hong (Start of the Verifiable History of the Hong)
+	name="Qiancho"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=scholarly_theologian
+    trait=genius
+    trait=erudite
+    trait=celibate
+	father=2610009
+    2380.1.1={birth=yes}
+    2450.1.1={
+		death={
+			death_reason=death_murder_unknown_poison
+		}
+	}
+}
+2610011 = {  #5th of the Hong
+	name="Qian"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=fortune_builder
+    trait=administrator
+    trait=genius
+    trait=humble
+    trait=diligent
+    trait=proud
+	father=2610010
+    2395.1.1={birth=yes}
+    2489.1.1={death=yes}
+}
+2610012 = {  #6th of the Hong
+	name="Dingyi"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=proud
+    trait=ambitious
+	father=2610011
+    2460.1.1={birth=yes}
+    2545.1.1={death=yes}
+}
+2610013 = {  #7th of the Hong
+	name="Jingwei"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=detached_priest
+    trait=hedonist
+    trait=drunkard
+    trait=shrewd
+    trait=patient
+    trait=honest
+    trait=cynical
+    trait=slothful
+    trait=content
+	father=2610012
+    2490.1.1={birth=yes}
+    2564.1.1={death=yes}
+}
+2610014 = {  #8th of the Hong
+	name="Weijun"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=genius
+    trait=duelist
+    trait=giant
+    trait=ambitious
+    trait=diligent
+    trait=wroth
+    trait=just
+    trait=gluttonous
+    trait=kind
+    trait=brave
+	father=2610013
+    2515.1.1={birth=yes}
+    2565.1.1={
+		death={
+			death_reason=death_battle
+		}
+	}
+}
+2610015 = {  #9th of the Hong
+	name="Song"
+    dynasty=9005801 #Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=slow
+    trait=dysentery
+    trait=content
+    trait=kind
+    trait=craven
+	father=2610013
+    2520.1.1={birth=yes}
+    2570.1.1={
+		death={
+			death_reason=death_trait 
+			killer=dysentery
+		}
+	}
+}
+2610016 = {  #Empress during the Rule of Zhao Song (Queen Regent from 2570.1.1 to 2575.1.1)
+	name="Lien-yen"
+    dynasty=9005802 # Qiu
+    female=yes
+    culture=pekingese
+    religion=jibenyuanze
+    martial=6
+    diplomacy=6
+    stewardship=6
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=socializer        
+    trait=honorable
+    trait=robust
+    trait=gregarious
+    trait=brave
+    trait=charitable
+    trait=proud
+    trait=diligent
+	give_nickname=nick_the_woman_knight
+	father=2610019
+    2539.1.1={birth=yes}
+	2560.1.1={add_spouse=2610015}
+    2595.1.1={death=yes}
+}
+2610017 = {  #10th of the Hong
+	name="Tianhua"
+    dynasty=9005801 # Zhao
+    culture=pekingese
+    religion=jibenyuanze
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=quick
+    trait=brave
+    trait=content
+    trait=proud
+    trait=humble
+	father=2610014
+    2559.1.1={birth=yes}
+	2575.1.1={add_spouse=2603108}
+    2589.1.1={death=yes}
+}
+
+#Andong Protectorate
+9810181 ={ # Third Lord of Hulundao, Second and Current Andong Protectorate-General
+	name="Xi"
+    dynasty=9005802 # Qiu
+    culture=pekingese
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=duelist        
+    trait=robust
+    trait=patient
+    trait=brave
+    trait=diligent
+	father=2610018
+    2587.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2610018 = {  #Second Lord of Hulundao, First Andong Protectorate-General
+	name="Dehan"
+    dynasty=9005802 # Qiu
+    culture=pekingese
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=charismatic_negotiator
+    trait=charitable
+    trait=cruel
+    trait=arbitrary
+    trait=wroth
+    trait=diligent
+	father=2610019
+    2552.1.1={birth=yes}
+	2599.1.1={effect={add_friend=2603108}}
+    2604.1.1={death=yes}
+}
+2610019 = {  #First Lord of Hulundao
+	name="Daiying"
+    dynasty=9005802 # Qiu
+    culture=pekingese
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=skilled_tactician
+    trait=shrewd
+    trait=diligent
+    trait=ambitious
+    trait=honest
+    trait=gregarious
+    2510.1.1={birth=yes}
+    2575.1.1={death=yes}
 }
 
 2603001 ={ # Emperor of Jin
@@ -218,24 +631,36 @@
 	disallow_random_traits=yes
 	2567.9.1={birth=yes}
 }
-2603108 = {  #Changping-Shunyi, Hong vassal
-	name="Zheng"
-	dynasty=9005061 #Chen
-	culture=pekingese
-	religion=jibenyuanze
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=5
-	learning=9
-	trait=misguided_warrior
-	trait=rude
-	trait=shy
-	trait=proud
-	trait=brave
-	trait=duelist
-	disallow_random_traits=yes
-	2567.9.1={birth=yes}
+2603108 = {  #Queen Mother and Lady of the Knights of the Hong
+	name="Renlan"
+    dynasty=9005801 # Zhao
+    female=yes
+    culture=pekingese
+    religion=jibenyuanze
+    martial=6
+    diplomacy=6
+    stewardship=6
+    intrigue=6
+    learning=6
+    trait=charismatic_negotiator
+    trait=genius
+    trait=groomed
+    trait=socializer
+    trait=brave
+    trait=ambitious
+    trait=chaste
+    trait=proud
+    trait=honorable
+	father=2610015
+	mother=2610016
+    2563.1.1={birth=yes}
+	2599.1.1={effect={add_rival = 2610001}}
+	2600.1.1={
+		add_weak_claim=e_hong
+		add_weak_claim=k_yan
+		add_weak_claim=d_beijing
+	}
+    2609.1.1={death=yes}
 }
 2603109 = {  #Zhangjiakou, Hong vassal
 	name="Xuanling"
