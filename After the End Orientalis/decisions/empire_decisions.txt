@@ -66,24 +66,14 @@ decisions = {
 		potential = {
 			is_alternate_start = no
 			NOT = { has_global_flag = china_unified }
-			is_playable = yes
 			independent = yes
-			realm_size = 100
+			realm_size >= 100
 			OR = {
 				culture_group = mongol
 				culture_group = han
 				culture_group = tungusic
 				culture = chaoxianzu
 				
-				AND = {
-					religion = hui
-					OR = {
-						culture_group = hmong_mien
-						culture_group = formosan
-						culture_group = lolo
-						culture_group = north_tai
-					}
-				}
 				AND = {
 					OR = {
 						is_bureaucratic_religion = yes
@@ -113,7 +103,7 @@ decisions = {
 			NOT = { is_incapable = yes }
 			prestige = 2500
 			realm_size = 250
-			scaled_wealth = 2
+			scaled_wealth = 2.5
 			war = no
 			any_demesne_title = {
 				tier = EMPEROR
@@ -142,7 +132,7 @@ decisions = {
 		}
 		effect = {
 			activate_title = { title = e_china status = yes }
-			scaled_wealth = -2
+			scaled_wealth = -2.5
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great
@@ -269,6 +259,61 @@ decisions = {
 				}
 			}
 			
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	form_lan_xang_empire = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = empire_decisions
+					value = off
+				}
+			}
+			NOT = { has_global_flag = lan_xang_empire_restored }
+			independent = yes
+			culture = lao
+			AND = {
+				has_landed_title = k_lan_xang	
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 400
+			scaled_wealth = 2.5
+			war = no
+			completely_controls = k_lan_xang
+			completely_controls = k_isan
+		}
+		effect = {
+			activate_title = { title = e_lan_xang status = yes }
+			primary_title = {
+				e_lan_xang = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			scaled_wealth = -2.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			k_lan_xang = {
+				de_jure_liege = e_lan_xang
+			}
+			k_isan = {
+				de_jure_liege = e_lan_xang
+			}
+			set_global_flag = lan_xang_empire_restored
 		}
 		revoke_allowed = {
 			always = no
