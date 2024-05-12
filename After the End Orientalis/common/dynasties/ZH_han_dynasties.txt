@@ -71,7 +71,20 @@
 # NE China : 901 (Dongbei)
 #-- Dongbei
 9010016 = { name="Cai" culture=dongbei }
-9010017 = { name="Jinxi" culture=dongbei }
+9010017 = { name="Jinxi" culture=dongbei
+	coat_of_arms = {
+		religion = shanrendao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9010018 = { name="Qara" culture=manchu }
 9010019 = { name="Dae" culture=chaoxianzu }
 9010020 = { name="Zheng" culture=jiao_liao }
@@ -81,17 +94,140 @@
 9010100 = { name="Jiang" culture=dongbei }
 9010120 = { name="Li" culture=dongbei }
 9010135 = { name="Ma" culture=dongbei }
-9010222 = { name="Wang" culture=dongbei }
+9010222 = { name="Wang" culture=dongbei}
 9010258 = { name="Yu" culture=dongbei }
 9010271 = { name="Zhang" culture=dongbei }
+9010272 = { name="Liu" culture=dongbei
+	coat_of_arms = {
+		religion = shanrendao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9010273 = { name="Shen" culture=dongbei }
+9010274 = { name="Yang" culture=dongbei }
+9010275 = { name="Sun" culture=dongbei }
+9010276 = { name="Ji" culture=dongbei }
+9010277 = { name="Yang" culture=dongbei }
+9010278 = { name="Qian" culture=dongbei
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9010279 = { name="Qiu" culture=dongbei }
+9010280 = { name="Lao" culture=dongbei }
+9010281 = { name="Fei" culture=dongbei }
+9010282 = { name="Su" culture=dongbei
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9010283 = { name="Feng" culture=dongbei }
+9010284 = { name="Xiao" culture=dongbei
+	coat_of_arms = {
+		religion = shanrendao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9010285 = { name="Fei" culture=dongbei }
+9010286 = { name="Lin" culture=dongbei
+	coat_of_arms = {
+		religion = shanrendao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9010287 = { name="Xu" culture=dongbei }
+9010288 = { name="Jiang" culture=dongbei
+	coat_of_arms = {
+		religion = eastern_lightning
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
-9011103 = { name="Jin" culture=chaoxianzu } #Chinese reading of Kim
+9011103 = { name="Jin" culture=chaoxianzu
+	coat_of_arms = {
+		religion = eastern_lightning
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}#Chinese reading of Kim
 9011120 = { name="Li" culture=chaoxianzu } #Lee
 9011500 = { name="Po" culture=chaoxianzu } #Park - don't exist in hantemp_dyn
 9011033 = { name="Cui" culture=chaoxianzu } #Choi
 9011005 = { name="Zheng" culture=chaoxianzu } #Jeong
 9011222 = { name="Wang" culture=chaoxianzu }
 9011271 = { name="Zhang" culture=chaoxianzu }
+9011272 = { name="Wu" culture=chaoxianzu }
+9011273 = { name="Zuorong" culture=chaoxianzu
+	coat_of_arms = {
+		religion = shanrendao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+} #Reference to the Ancient Korean Kingdom of Balhae (Bohai)
 
 # Jiangsu + Shanghai : 902
 
@@ -226,6 +362,36 @@
 9026273 = { name="Zheng" culture=jiao_liao }
 9026279 = { name="Zhou" culture=jiao_liao }
 9026280 = { name="Zhu" culture=jiao_liao }
+9026281 = { name="Sang" culture=jiao_liao
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9026282 = { name="Liang" culture=jiao_liao
+	coat_of_arms = {
+		religion = eastern_lightning
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9026283 = { name="Yun" culture=jiao_liao }
+9026284 = { name="Huong" culture=jiao_liao }
 
 # Min-Hakka
 
@@ -500,6 +666,7 @@
 9081015 = { name="Dong" culture=zhongyuan }
 9081016 = { name="Xun" culture=zhongyuan }
 9081017 = { name="Jia" culture=zhongyuan }
+9081018 = { name="Zhao" culture=zhongyuan }
 
 9087007 = { name="Bao" culture=guanzhong }
 9087008 = { name="Yu" culture=guanzhong }

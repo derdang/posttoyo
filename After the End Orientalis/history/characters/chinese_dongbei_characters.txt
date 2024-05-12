@@ -4,116 +4,191 @@
 # 2653 - Nanning
 
 2615101 ={ # Qiqihar
-	name="Geixi"
-	culture=manchu
-	religion=heilong
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	2578.1.1={birth=yes}
+	name="Dong"
+    dynasty=3960001 # Donggor
+    culture=manchu
+    religion=heilong
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=fortune_builder
+    trait=greedy
+    trait=honest
+    trait=diligent
+    2583.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 9810001 ={ # Shenyang
-	name="Jiyang"
-	culture=dongbei
-	religion=jibenyuanze
-	trait=brilliant_strategist
-	stewardship=11
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Wenhua"
+    dynasty=9010282 # Su
+    female=yes
+    culture=dongbei
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=socializer
+    trait=diligent
+    trait=ambitious
+    trait=arbitrary
+    trait=charitable
+    trait=proud
+	give_nickname=nick_the_ivory_dragon
+    2578.1.1={birth=yes}
+	2590.1.1={effect={add_rival=9810211}}
+    2700.1.1={death=yes}
 }
 9810002 ={ # Bayuquan and Xiuyan
-	name="Jiyang"
-	culture=dongbei
-	religion=gongye_shenjiao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Dazhao"
+    dynasty=9010279 # Qiu
+    culture=dongbei
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=kind
+    trait=diligent
+    trait=humble
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810003 ={ # Fengcheng
-	name="Jiyang"
-	culture=manchu
-	religion=gongye_shenjiao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Li"
+    dynasty=3960004 # Nara
+    culture=manchu
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=kind
+    trait=just
+    trait=patient
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810004 ={ # Duke of Benxi
-	name="Xing"
-	culture=manchu
-	religion=gongye_shenjiao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Qingchun"
+    dynasty=9010280 # Lao
+    culture=manchu
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=poet
+    trait=shrewd
+    trait=gregarious
+    trait=proud
+    trait=envious
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810005 ={ # Count of Xifeng
-	name="Lu"
-	culture=dongbei
-	religion=shanrendao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Yongzhi"
+    dynasty=9010285 # Shang
+    culture=dongbei
+    religion=shanrendao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=martial_cleric
+    trait=scholar
+    trait=devout
+    trait=humble
+    trait=content
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810006 ={ # Count of Liaoyuan,Yitong,Meihekou
-	name="Fu"
-	culture=dongbei
-	religion=gongye_shenjiao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Heng"
+    dynasty=9010275 # Sun
+    culture=dongbei
+    religion=shanrendao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=diligent
+    trait=devout
+    trait=patient
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810007 ={ # Count of Xinmin
-	name="Liu Ki"
-	culture=dongbei
-	religion=gongye_shenjiao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Yuting"
+    dynasty=9010283 # Feng
+    culture=dongbei
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=fat
+    trait=impaler
+    trait=wroth
+    trait=envious
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810008 ={ # Duke of Tieling
-	name="Lee"
-	culture=dongbei
-	religion=shanrendao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Tao"
+    dynasty=9010284 # Xiao
+    culture=dongbei
+    religion=shanrendao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=unyielding_leader
+    trait=brave
+    trait=just
+    trait=wroth
+    trait=envious
+    2574.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810009 ={ # Duke of Songyuan
-	name="Chogoris"
-	dynasty=9010018 #Qara
-	culture=manchu
-	religion=shanrendao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
+	name="Jaghatai"
+    dynasty=3960002 # Uya
+    culture=manchu
+    religion=shanrendao
+    martial=4
+    diplomacy=1
+    stewardship=7
+    intrigue=5
+    learning=9
+    trait=brilliant_strategist
+    trait=shrewd
+    trait=ambitious
+    trait=shy
+    trait=diligent
+    trait=proud
+    trait=cruel
 	give_nickname=nick_the_warhawk
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810010 ={ # Count of Nianzishan
 	name="Po"
@@ -130,48 +205,74 @@
 	name="Wang"
 	dynasty=9010017 #Jinxi
 	culture=dongbei
-	religion=shanrendao
-	trait=brilliant_strategist
-	trait=proud
-	trait=temperate
-	trait=charitable
-	trait=defensive_leader
+    religion=shanrendao
+    martial=2
+    diplomacy=8
+    stewardship=4
+    intrigue=9
+    learning=2
+    trait=tough_soldier
+    trait=peasant_leader
+    trait=diligent
+    trait=stubborn
+    trait=trusting
+    trait=content
+    trait=kind
 	give_nickname=nick_iron_man #Tieren
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+    2571.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810012 ={ # Count of Raohe and Fujin
-	name="Su"
-	culture=chaoxianzu
-	religion=eastern_lightning
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Dehai"
+    dynasty=9011103 # Jin
+    culture=chaoxianzu
+    religion=eastern_lightning
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=amateurish_plotter
+    trait=content
+    trait=craven
+    trait=kind
+	father=9812201
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810013 ={ # Duke of Jixi
-	name="Ping"
-	culture=dongbei
-	religion=eastern_lightning
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Quiang"
+    dynasty=9010288 # Jiang
+    culture=dongbei
+    religion=eastern_lightning
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=devout
+    trait=patient
+    trait=kind
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810014 ={ # Count of Jiaohe
-	name="Ping"
-	culture=dongbei
-	religion=eastern_lightning
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Jingyan"
+    dynasty=9010274 # Yang
+    culture=dongbei
+    religion=shanrendao
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=naive_appeaser
+    trait=gregarious
+    trait=kind
+    trait=craven
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810015 ={ # Count of Jiaohe
 	name="Tang"
@@ -185,111 +286,200 @@
 	2588.1.1={birth=yes}
 }
 9810016 ={ # Count of Yushu
-	name="Shu"
-	culture=dongbei
-	religion=gongye_shenjiao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Zhen"
+    dynasty=9010273 # Shen 
+    culture=dongbei
+    religion=shanrendao
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=cruel
+    trait=gregarious
+    trait=patient
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+
 }
 9810017 ={ # Count of Wuchang
-	name="Xi"
-	culture=dongbei
-	religion=heilong
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Yuzhong"
+    dynasty=9010287 # Xu
+    culture=dongbei
+    religion=shanrendao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=temperate
+    trait=honest
+    2566.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810018 ={ # Duke of Mudanjiang
-	name="Lee"
-	culture=dongbei
+	name="Go"
+	dynasty=9011273 #Zuorong
+	culture=chaoxianzu
 	religion=shanrendao
 	trait=brilliant_strategist
 	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
+	trait=just
+	trait=proud
 	2588.1.1={birth=yes}
 }
 9810019 ={ # Duke of Jiamusi
-	name="Liyu"
-	culture=dongbei
-	religion=shanrendao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Gong"
+    dynasty=3960005 # Wu
+    culture=manchu
+    religion=chuma
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=intricate_webweaver
+    trait=homosexual
+    trait=impaler
+    trait=cruel
+    trait=lustful
+    trait=wroth
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810020 ={ # Duke of Heihe
-	name="Pi"
-	culture=manchu
-	religion=heilong
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Shifeng"
+    dynasty=3960000 # Zhang
+    culture=manchu
+    religion=heilong
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=charismatic_negotiator        
+    trait=hunter
+    trait=wroth
+    trait=proud
+    2574.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810021 ={ # Duke of Suihua
-	name="Xing"
-	culture=dongbei
-	religion=shanrendao
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Zhaolin"
+    dynasty=9010017 # Jinxi
+    culture=dongbei
+    religion=shanrendao
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=5
+    learning=4
+    trait=intricate_webweaver
+    trait=eunuch
+    trait=arbitrary
+    trait=slothful
+	father=9840002
+    2560.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810022 ={ # Duke of Yichun
-	name="Bihua"
-	culture=manchu
-	religion=heilong
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=arrogant
-	trait=cruel
-	disallow_random_traits = yes
-	2588.1.1={birth=yes}
+	name="Fu"
+    dynasty=3960006 # Zhiduan
+    culture=manchu
+    religion=heilong
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=proud
+    trait=just
+    trait=ambitious
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810101 ={ # Dandong-NKorea_Border
-	name="Ming"
-	culture=manchu
-	religion=ruist
-	trait=ambitious
-	2586.1.1={birth=yes}
+	name="Hengguang"
+    dynasty=3960003 # Ma
+    culture=manchu
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=duelist
+    trait=inspiring_leader
+    trait=wroth
+    trait=diligent
+    trait=brave
+    trait=honest
+    trait=lustful
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-9810102 ={ # zhuanghe_pun_intended
-	name="Xingdou"
-	culture=zhuang
-	religion=ruist
-	trait=adventurer
-	female=yes
-	2587.1.1={birth=yes}
+9810102 ={ # County of Zhuanghe (pun is intended)
+	name="Xian"
+    dynasty=1024000 # Qiao Guo
+    female=yes
+    culture=zhuang
+    religion=ruist
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=intricate_webweaver        
+    trait=genius
+    trait=adventurer
+    trait=hedonist
+    trait=ambitious
+    trait=wroth
+    trait=proud
+    trait=diligent
+    trait=erudite
+    2587.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810121 ={ # Dalian
-	name="Minhe"
-	culture=jiao_liao
-	religion=gongye_shenjiao
-	trait=ambitious
-	2587.1.1={birth=yes}
+	name="Xilai"
+    dynasty=9026208 # Sun
+    culture=jiao_liao
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=grey_eminence
+    trait=gregarious
+    trait=diligent
+    trait=kind
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 9810151 ={ # Yingkou
-	name="Yilong"
-	culture=jiao_liao
-	religion=jibenyuanze
-	trait=ambitious
-	2587.1.1={birth=yes}
+	name="Min"
+    dynasty=9026281 # Sang
+    culture=jiao_liao
+    religion=gongye_shenjiao
+    martial=6
+    diplomacy=4
+    stewardship=6
+    intrigue=4
+    learning=3
+    trait=skilled_tactician
+    trait=brave
+    trait=wroth
+    trait=diligent
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9810181 ={ # Huludao-andong protector
 	name="Minhe"
@@ -298,72 +488,370 @@
 	trait=patient
 	2587.1.1={birth=yes}
 }
-9810201 ={ # Jinyang
-	name="Kai"
-	culture=dongbei
-	religion=shanrendao
-	trait=patient
-	2584.1.1={birth=yes}
+9810201 ={ # Jinzhou
+	name="Xiaobo"
+    dynasty=9010281 # Fei
+    culture=dongbei
+    religion=shanrendao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=flamboyant_schemer
+    trait=patient
+    trait=paranoid
+    trait=deceitful
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-9810211 ={ # Heishan
-	name="Xinshan"
-	culture=dongbei
-	religion=shanrendao
-	female=yes
-	2584.1.1={birth=yes}
+9810211 ={ # Duchy of Anshan
+	name="Xiangning"
+    dynasty=9010278 # Qian
+    female=yes
+    culture=dongbei
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=shrewd
+    trait=wroth
+    trait=groomed
+    trait=feeble
+    trait=proud
+    trait=patient
+	father=9840005
+    2579.1.1={birth=yes}
+	2590.1.1={effect={add_rival=9810001}}
+    2700.1.1={death=yes}
 }
 9812001 ={ # Changbai-NKorea_Border
-	name="Kangyon"
-	culture=chaoxianzu
-	religion=gongye_shenjiao
-	trait=ambitious
-	2586.1.1={birth=yes}
+	name="Yan"
+    dynasty=9011272 # Wu
+    culture=chaoxianzu
+    religion=eastern_lightning
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=devout
+    trait=diligent
+    trait=greedy
+    2571.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9812101 ={ # Tonghua
-	name="Yonghe"
-	culture=chosunin
-	religion=eastern_lightning
-	2586.1.1={birth=yes}
+	name="Yangming"
+    dynasty=9010276 # Ji
+    culture=dongbei
+    religion=eastern_lightning
+    martial=4
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=6
+    trait=scholarly_theologian        
+    trait=devout
+    trait=lustful
+    trait=diligent
+    2574.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9812201 ={ # Yanbian
-	name="Joyeong"
-	dynasty=9010019 #Dae
-	culture=chaoxianzu
-	religion=eastern_lightning
-	trait=thrifty_clerk
-	trait=quick
-	trait=stressed
-	trait=shrewd
-	trait=administrator
-	2586.1.1={birth=yes}
+	name="Mingri"
+    dynasty=9011103 # Jin
+    culture=chaoxianzu
+    religion=eastern_lightning
+    martial=4
+    diplomacy=6
+    stewardship=5
+    intrigue=6
+    learning=5
+    trait=martial_cleric
+    trait=quick
+    trait=shrewd
+    trait=charitable
+    trait=content
+    trait=cynical
+    trait=ambitious
+    2566.1.1={birth=yes}
 	2600.1.1={add_claim = e_beidahuang}
+    2700.1.1={death=yes}
 }
 
 9830001 ={ # Changchun
-	name="Zijing"
-	culture=dongbei
-	religion=shanrendao
-	2586.1.1={birth=yes}
+	name="Juying"
+    dynasty=9010272 # Liu
+    culture=dongbei
+    religion=shanrendao
+    martial=3
+    diplomacy=3
+    stewardship=6
+    intrigue=4
+    learning=3
+    trait=tough_soldier
+    trait=diligent
+    trait=stubborn
+    trait=wroth
+	father=9840003
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 9830101 ={ # d_Jilin
-	name="Shi"
-	culture=dongbei
-	religion=eastern_lightning
-	2584.1.1={birth=yes}
+	name="Leichuan"
+    dynasty=9010272 # Liu
+    culture=dongbei
+    religion=eastern_lightning
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=misguided_warrior
+    trait=strong
+    trait=ambitious
+    trait=wroth
+	father=9840003
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
-9840001 ={ # Mishan
-	name="Weiwei"
-	dynasty=9010020 #Zheng
-	culture=jiao_liao
-	religion=eastern_lightning
-	trait=naive_appeaser
-	trait=scarred_mid
-	trait=strong
-	trait=shrewd
-	trait=falconer
-	trait=diligent
-	trait=wroth
-	2586.1.1={birth=yes}
+9840001 ={ # Emperor of Beidahuang
+	name="Shengmo"
+    dynasty=9026282 # Liang
+    culture=jiao_liao
+    religion=eastern_lightning
+    martial=7
+    diplomacy=6
+    stewardship=6
+    intrigue=6
+    learning=6
+    trait=tough_soldier
+    trait=strong
+    trait=scarred_mid
+    trait=theologian
+    trait=devout
+    trait=shrewd
+    trait=diligent
+    trait=wroth
+    trait=ambitious
+	give_nickname=nick_the_conquerer_of_demons
+    2570.1.1={birth=yes}
+	2599.1.1={add_spouse=9840008}
 	2600.1.1={add_claim = e_yanbian}
+    2700.1.1={death=yes}
+}
+
+9840002 ={ # King of Heilongjiang
+	name="Gang"
+    dynasty=9010017 # Jinxi
+    culture=dongbei
+    religion=shanrendao
+    martial=2
+    diplomacy=8
+    stewardship=4
+    intrigue=9
+    learning=2
+    trait=skilled_tactician
+    trait=peasant_leader
+    2539.1.1={birth=yes}
+    2595.1.1={death=yes}
+}
+9840003 ={ # Old Duke of Jilin (retired)
+	name="Gang"
+    dynasty=9010272 # Liu
+    culture=dongbei
+    religion=shanrendao
+    martial=2
+    diplomacy=8
+    stewardship=4
+    intrigue=9
+    learning=2
+    trait=shrewd
+    trait=tough_soldier
+    2520.1.1={birth=yes}
+    2595.1.1={death=yes}
+}
+9840004 ={ # Court Chaplain of Yanbian
+	name="Weishan"
+    dynasty=9010277 # Yang
+    female=yes
+    culture=dongbei
+    religion=eastern_lightning
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=6
+    trait=scholarly_theologian
+    trait=quick
+    trait=celibate
+    trait=possessed
+    trait=zealous
+    trait=shy
+    trait=chaste
+    2585.1.1={birth=yes}
+	2600.1.1={
+		employer=9812201	
+		effect={add_friend=9812201}
+	}
+    2700.1.1={death=yes}
+}
+9840005 ={ # King of Liaodong
+	name="Tienong"
+    dynasty=9010278 # Qian
+    culture=dongbei
+    religion=jibenyuanze
+    martial=6
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=brilliant_strategist
+    trait=strong
+    trait=shrewd
+    trait=diligent
+    trait=proud
+    trait=zealous
+    trait=honest
+    2521.1.1={birth=yes}
+    2599.1.1={death=yes}
+}
+9840006 ={ # Old Duke of Shenyang
+	name="Songling"
+    dynasty=9010278 # Qian
+    culture=dongbei
+    religion=jibenyuanze
+    martial=6
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=strong
+    trait=dull
+    trait=proud
+    trait=zealous
+    trait=honest
+	father=9840005
+    2549.1.1={birth=yes}
+	2599.1.1={add_spouse=9810001}
+    2602.1.1={death={death_reason=death_murder_unknown_poison killer=9810001}}
+}
+2615001 = { #King of the Ice City
+	name="Gensheng"
+    dynasty=9010286 # Lin
+    culture=dongbei
+    religion=shanrendao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=duelist
+    trait=robust
+    trait=brave
+    trait=arbitrary
+    trait=patient
+    trait=cynical
+	father=9840007
+	mother=1917036
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+9840007 ={ #Old King of the Ice City
+	name="Hu"
+    dynasty=9010286 # Lin
+    culture=dongbei
+    religion=shanrendao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=quick
+    trait=brave
+    trait=wroth
+    2529.1.1={birth=yes}
+	2550.1.1={add_spouse=1917036}
+    2595.1.1={death=yes}
+}
+9840008 ={ #Wife of the Beidahuang Emperor
+	name="Xuanji"
+    dynasty=9026283 # Yun
+    culture=jiao_liao
+    religion=eastern_lightning
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=poet
+    trait=lustful
+    trait=erudite
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+9840009 ={ #Friend of the Beidahuang Emperor
+	name="Xu"
+    dynasty=9026284 # Huong
+    culture=jiao_liao
+    religion=tianzhu
+    martial=6
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=homosexual
+    trait=trickster
+    trait=duelist
+    trait=brave
+    trait=wroth
+    trait=kind
+    trait=lustful
+    trait=diligent
+    trait=honest
+    trait=groomed
+	give_nickname=nick_the_piratical
+    2581.1.1={birth=yes}
+	2600.1.1={
+		employer=9840001	
+		effect={add_friend=9840001}
+		effect={add_friend=9840008}
+	}
+    2700.1.1={death=yes}
+}
+9840010 ={ #Friend of the Beidahuang Emperor
+	name="Zhenying"
+    dynasty=9081018 # Zhao
+    culture=zhongyuan
+    religion=fuyin
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=shrewd
+    trait=devout
+    trait=gregarious
+    trait=charitable
+    trait=proud
+    trait=kind
+	give_nickname=nick_the_heavenly_man
+    2574.1.1={birth=yes}
+	2600.1.1={
+		employer=9840001	
+		effect={add_friend=9840001}
+	}
+    2700.1.1={death=yes}
 }

@@ -91,6 +91,21 @@
 1023021 = { name="Luong" culture=bouyei }
 1023022 = { name="Xu" culture=bouyei }
 
+1024000 ={ name="Xu" culture=zhuang
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
 1025000 = { name="Zheung" culture=tay_nung }
 1025001 = { name="Nùng" culture=tay_nung }
 1025002 = { name="Than" culture=tay_nung }
@@ -8160,7 +8175,20 @@ coat_of_arms = {
 1917111 = { name="Kazantsev" culture=primorskiy }
 1917112 = { name="Popov" culture=primorskiy }
 1917113 = { name="Mihaylov" culture=primorskiy }
-1917114 = { name="Primakov" culture=primorskiy }
+1917114 = { name="Galibin" culture=primorskiy
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 44
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1917115 = { name="Vakhrushev" culture=primorskiy }
 1917116 = { name="Kislukhin" culture=primorskiy }
 1917117 = { name="Sayankov" culture=primorskiy }
@@ -8183,7 +8211,20 @@ coat_of_arms = {
 1917134 = { name="Sidorovich" culture=primorskiy }
 1917135 = { name="Smirnov" culture=primorskiy }
 1917136 = { name="Polikarpov" culture=primorskiy }
-1917137 = { name="Popov" culture=primorskiy }
+1917137 = { name="Kryukov" culture=primorskiy
+	coat_of_arms = {
+		religion = eastern_lightning
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1917138 = { name="Voroshilov" culture=primorskiy }
 1917139 = { name="Idolishche" culture=primorskiy
 	coat_of_arms = {
@@ -8406,6 +8447,8 @@ coat_of_arms = {
 		}
 	}
 }
+1917165 = { name="Taraskin" culture=primorskiy }
+1917166 = { name="Primakov" culture=primorskiy }
 
 1918000 = { name="Mesyats" culture=petropavlovskiy }
 1918001 = { name="Blanter" culture=petropavlovskiy }
@@ -25374,6 +25417,79 @@ coat_of_arms = {
 3958002 = { name = "Dugong" culture = andamanese religion=holchu}
 
 3959000 = { name = "Thang" culture = zo}
+
+3960000 = { name = "Zhang" culture = manchu
+	coat_of_arms = {
+		religion = heilong
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+3960001 = { name = "Donggor" culture = manchu
+	coat_of_arms = {
+		religion = heilong
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+3960002 = { name = "Uya" culture = manchu
+	coat_of_arms = {
+		religion = shanrendao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+3960003 = { name = "Ma" culture = manchu
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+3960004 = { name = "Nara" culture = manchu}
+3960005 = { name="Wu" culture=manchu
+	coat_of_arms = {
+		religion = chuma
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+3960006 = { name = "Zhiduan" culture = manchu}
 
 #Indian Off-Map (4XXX)
 

@@ -1,16 +1,20 @@
 1917000 ={ #Duke of Khanka
-	name="Andrei"
-	dynasty=1917137 #Popov
-	culture=primorskiy
-	religion=eastern_lightning
-	trait=ambitious
-	trait=greedy
-	trait=strong
-	trait=pious
-	trait=brave
-	trait=tough_soldier
-	#no-random-trait
-	2579.1.5={birth=yes}
+	name="Mikhail"
+    dynasty=1917137 # Kryukov
+    culture=primorskiy
+    religion=eastern_lightning
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=poet
+    trait=diligent
+    trait=wroth
+    trait=proud
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1917001 ={ #4th Grand Mayor of Primorsky
 	name="Dmitry"
@@ -31,18 +35,27 @@
     2700.1.1={death=yes}
 }
 1917002 ={ #Duke of Ussuriysk
-	name="Nikos"
-	dynasty=1917114 #Voroshilov
-	culture=primorskiy
-	religion=orthodox
-	trait=tough_soldier
-	trait=ambitious
-	trait=shy
-	trait=just
-	trait=fair
-	trait=poet
-	#no-random-trait
-	2579.1.5={birth=yes}
+	name="Pyotr"
+    dynasty=1917114 # Galibin
+    culture=primorskiy
+    religion=orthodox
+    martial=7
+    diplomacy=4
+    stewardship=5
+    intrigue=3
+    learning=5
+    trait=brilliant_strategist
+    trait=one_eyed
+    trait=quick
+    trait=gregarious
+    trait=proud
+    trait=zealous
+    trait=diligent
+    trait=brave
+    trait=groomed
+	give_nickname=nick_the_white_baron
+    2560.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1917003 ={ #Canton President of Ust-Maysky
 	name="Vasily"
@@ -603,6 +616,40 @@
     trait=proud
     trait=brave
     2570.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917036 ={ #Wife of the Ice King
+	name="Natalia"
+    female=yes
+    culture=primorskiy
+    religion=orthodox
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=grey_eminence
+    trait=fair
+    trait=lustful
+    trait=gregarious
+    2550.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1917037 ={ #Count of Spassky
+	name="Stepan"
+    dynasty=1917165 # Taraskin
+    culture=primorskiy
+    religion=eastern_lightning
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=wroth
+    trait=paranoid
+    trait=lunatic
+    2549.1.1={birth=yes}
     2700.1.1={death=yes}
 }
 1918000={
