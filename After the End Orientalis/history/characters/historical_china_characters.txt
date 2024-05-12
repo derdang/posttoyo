@@ -12704,7 +12704,46 @@
 	}
 	1967.10.17 = {death = { death_reason = death_offmap }}
 }
-#########THE GREAT HONG######################
+#########THE GREAT HONG###################### 
+#Historical Records of the Great Hong has been destroyed during "The Event" Scholars from the Later Hong of the 25th Century have tried to reconstruct the earlier histories of their forebearers as such attributes of these leaders are
+#Uncertain their dates of Rule are considered Estimates and to what extent they ruled all China have come into dispute but they were certainly powerful rulers in their day.
+
+#Early Hong Emperors
+
+#An important record was uncovered which is appended to this codex as to explain the Rise of the Great Hong on the twilight years of the Great Qing and the succession of Disorder that wrought the transition.
+
+#Commentary regarding the Taizhu Emperor: It is said that the Taizhu Emperor was once the Lord of Xinhai along with his friend and Brother-in-arms Guofu Zaizhi, who fought against great evils that plagued the land following the fall of the Great Qing
+#Legends suggest that this man was both shrewd and ever ambitious to bring the Glory of China to the world stage, it is also said that this emperor was a great Philosopher King in his day having read many works of ancient literatures that have since been lost in the blaze of the Event.
+#It is said he was the founder of what has henceforth been referred to as Jibenyuanze which brought law to the lawless and restored the primacy of the State which had degenerated under the Great Qing. It is said that he was also a strict legalist believing the absolution of Law can cleanse China
+#and birth it anew to stand the test of the grand millenia project that he envisioned. He also excised the demons of the Old World by creating the by-laws to rid the world of the "Three Antitheticals and the Five Great Evils".
+
+8001282 = { #Taizhu Emperor (lived 1893-1976) (reigned 1911) #Lord of Xinhai, Friend of the Gúofù Zaizhi (Lord Wu of Taiwan)
+	dynasty = 1051209 #Zhao
+	name = "Desheng"
+	religion = jibenyuanze
+	culture = pekingese
+	occluded=yes
+	1893.12.26 = {birth = yes}
+	1911.10.10 = {
+		name = "Taizhu"
+	}
+	1976.9.9 = {death = { death_reason = death_offmap }}
+}
+8001283 = { #Xiaozong Emperor (lived 1921-2008) (reigned 1976) #Favorite Son of Desheng
+	dynasty = 1051209 #Zhao
+	name = "Zhu"
+	religion = jibenyuanze
+	culture = pekingese
+	father = 8001282
+	occluded=yes
+	1921.2.16 = {birth = yes}
+	1976.1.1 = {
+		name = "Xiaozong"
+	}
+	2008.8.20 = {death = { death_reason = death_offmap }}
+}
+
+#The Three Middle-Era Hong Rulers Start the Hong Dynasty as Imperial Authority over All-China begins to erode (Please Head to the Great Hong List in the chinese_imperial_characters.txt for more detail)
 
 #########EXTRA TITLE HISTORY CHINESE CHARACTERS (MING and HONG Dynasties and Other misc. Chinese Warlords) ######################
 
