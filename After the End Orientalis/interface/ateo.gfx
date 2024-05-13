@@ -943,4 +943,11 @@ spriteTypes = {
 		name = "GFX_host_ploughing_ceremony"
 		texturefile = "gfx\\interface\\decision_icon_host_ploughing_ceremony.dds"
 	}
+	spriteType = {
+		name = "GFX_trait_devout"
+		texturefile = "gfx/traits/devout.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 }
