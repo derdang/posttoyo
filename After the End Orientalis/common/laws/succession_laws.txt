@@ -1389,7 +1389,10 @@ succession_laws = {
 					has_law = succ_hre_elective
 				}
 			}
-			NOT = { holder_scope = { government = chinese_imperial_government } }
+			NOR = {
+				holder_scope = { government = chinese_imperial_government }
+				holder_scope = { government = sinic_bureaucracy_government }
+			}
 		}
 		
 		effect = {
