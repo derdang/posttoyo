@@ -359,6 +359,7 @@
     2565.1.1={
 		death={
 			death_reason=death_battle
+			killer=2603004 #First Emperor of Jin, Wang Shendong
 		}
 	}
 }
@@ -497,20 +498,258 @@
     2575.1.1={death=yes}
 }
 
-2603001 ={ # Emperor of Jin
-	name="Huayi"
-	dynasty=9003001 #Huang
-	culture=jin
-	religion=ruist
-	martial=7
-	diplomacy=10
-	stewardship=8
-	intrigue=9
-	learning=6
-	trait=skilled_tactician
-	trait=ambitious
-	2578.1.1={birth=yes}
+2603001 ={ # Current Emperor of Jin
+	name="Jun"
+    dynasty=9005803 # Wang
+    culture=jin
+    religion=ruist
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=skilled_tactician
+    trait=duelist
+    trait=proud
+    trait=brave
+    trait=diligent
+    trait=just
+    trait=wroth
+	father=2603002
+    2580.1.1={birth=yes}
 	2600.1.1={capital = c_luolong}
+    2700.1.1={death=yes}
+}
+2603002 ={ # Late Emperor of Jin
+	name="Gan"
+    dynasty=9005803 # Wang
+    culture=jin
+    religion=ruist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=scarred_high
+    trait=strong
+    trait=envious
+    trait=ambitious
+    trait=brave
+    trait=diligent
+	father=2603004
+    2555.1.1={birth=yes}
+    2591.1.1={
+		death={
+			death_reason=death_battle
+			killer=2610016 #Empress Regent Qiu Lien-yen of Hong
+		}
+	}
+}
+2603003 ={ # Son of Wang Zhongxia
+	name="Chengzhang"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=erkeun
+    trait=martial_cleric
+    trait=quick
+    trait=craven
+    trait=devout
+	father=2603006
+    2532.1.1={birth=yes}
+    2600.1.1={death=yes}
+}
+2603004 ={ # 1st Emperor of Jin
+	name="Shengdong"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=ruist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=grey_eminence
+    trait=shrewd
+    trait=ambitious
+    trait=gregarious
+    trait=brave
+	father=2603006
+    2512.1.1={birth=yes}
+    2575.1.1={death=yes}
+}
+2603005 ={ # Son of Wang Zhongxia
+	name="Chen"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=strong
+    trait=dull
+    trait=brave
+	father=2603006
+    2510.1.1={birth=yes}
+    2550.1.1={
+		death={
+			death_reason=death_execution_hanging
+			killer=2610013 #Emperor Zhao Jingwei
+		}
+	}
+}
+2603006 ={ # 7th King of Zheng, Lord of the Western Frontier
+	name="Zhongxia"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=jibenyuanze
+    trait=skilled_tactician
+    trait=brave
+    trait=shrewd
+    trait=ambitious
+	father=2603007
+    2485.1.1={birth=yes}
+    2550.1.1={death=yes}
+}
+2603007 ={ # 6th King of Zheng, Lord of the Western Frontier
+	name="Bingyan"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=jibenyuanze
+    trait=fortune_builder        
+    trait=quick
+    trait=ambitious
+    trait=envious
+    trait=diligent
+	father=2603009
+    2425.1.1={birth=yes}
+    2510.1.1={death=yes}
+}
+2603008 ={ # 5th King of Zheng, Lord of the Western Frontier
+	name="Xuanying"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=jibenyuanze
+    trait=martial_cleric
+    trait=zealous
+    trait=brave
+    trait=content
+    trait=erudite
+	father=2603009
+    2375.1.1={birth=yes}
+    2450.1.1={death=yes}
+}
+2603009 ={ # 4th King of Zheng, Lord of the Western Frontier
+	name="Shijie"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=jibenyuanze
+    trait=charismatic_negotiator
+    trait=legendary
+    trait=poet
+    trait=gregarious
+    trait=kind
+	occluded=yes
+	father=2603011
+    2300.1.1={birth=yes}
+    2400.1.1={death=yes}
+}
+2603010 ={ # Princess of the Lord of Zheng
+	name="Junying"
+    dynasty=9005803 # Wang
+    female=yes
+    culture=pekingese
+    religion=jibenyuanze
+    trait=tough_soldier
+    trait=legendary
+    trait=duelist
+    trait=twin
+	father=2603012
+	occluded=yes
+    2260.1.1={birth=yes}
+    2315.1.1={
+		death={
+			death_reason=death_murder_unknown_poison
+		}
+	}
+}
+2603011 ={ # 3rd King of Zheng, Lord of the Western Frontier
+	name="Qiubai"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=jibenyuanze
+    trait=tough_soldier
+    trait=legendary
+    trait=duelist
+    trait=twin
+	father=2603012
+	occluded=yes
+    2260.1.1={birth=yes}
+    2330.1.1={death=yes}
+}
+2603012 ={ # 2nd King of Zheng, Lord of the Western Frontier
+	name="Yaobang"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=skilled_tactician
+    trait=brave
+    trait=diligent
+    trait=trusting
+    trait=content
+    trait=charitable
+    trait=wroth
+	trait=legendary
+	father=2603013
+	occluded=yes
+    2175.1.1={birth=yes}
+    2300.1.1={death=yes}
+}
+2603013 ={ # 1st King of Zheng, Lord of the Western Frontier
+	name="Duxiu"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=strong
+    trait=brave
+    trait=diligent
+	trait=legendary
+	father=2603014
+	occluded=yes
+    2120.1.1={birth=yes}
+    2212.1.1={death=yes}
+}
+2603014 ={ # Prefect Wang of the Hong Southern Campaign against "Dai Viet" (Progenitor of the House of Wang)
+	name="Zhongxun"
+    dynasty=9005803 # Wang
+    culture=pekingese
+    religion=jibenyuanze
+    trait=thrifty_clerk
+    trait=legendary
+    trait=cruel
+    trait=content
+	occluded=yes
+    2098.1.1={birth=yes}
+    2150.1.1={
+		death={
+			death_reason=death_battle
+			killer=2875000 #First Dragon Emperor of Vietnam, Nguyen Hoang Quang-Trung
+		}
+	}
 }
 2603101 = {  #Dai, Hong vassal
 	name="Dongqi"
