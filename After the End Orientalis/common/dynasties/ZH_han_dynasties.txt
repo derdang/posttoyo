@@ -52,8 +52,37 @@
 9005222 = { name="Wang" culture=pekingese }
 9005243 = { name="Xu" culture=pekingese }
 9005258 = { name="Yu" culture=pekingese }
+9005259 = { name="Tseng" culture=pekingese }
 9005271 = { name="Zhang" culture=pekingese }
 9005272 = { name="Huzu" culture=pekingese }
+9005273 = { name="Zong" culture=pekingese
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9005274 = { name="Yu" culture=pekingese
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 #Imperial Family of the Great Hong
 9005801 = { name="Zhao" culture=pekingese
@@ -61,8 +90,8 @@
 		religion = jibenyuanze
 		template = 0
 		layer = {
-			texture = 3
-			texture_internal = 17
+			texture = 2
+			texture_internal = 6
 			emblem = 0
 			color = 0
 			color = 0
@@ -86,6 +115,8 @@
 	}
 }
 
+#The Golden League of Triads :
+
 9006026 = { name="Chen" culture=tianjinese }
 9006061 = { name="Gao" culture=tianjinese }
 9006077 = { name="Guo" culture=tianjinese }
@@ -96,7 +127,39 @@
 9006222 = { name="Wang" culture=tianjinese }
 9006243 = { name="Xu" culture=tianjinese }
 9006258 = { name="Yu" culture=tianjinese }
+9006259 = { name="Duan" culture=tianjinese }
+9006260 = { name="Tseng" culture=tianjinese }
 9006271 = { name="Zhang" culture=tianjinese }
+
+9006300 = { name="Shu-tien" culture=jindonbeian
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
+9006400 = { name="He" culture=tangshanese
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 # NE China : 901 (Dongbei)
 #-- Dongbei
@@ -373,8 +436,79 @@
 9025271 = { name="Zhang" culture=jilu }
 9025272 = { name="Zhao" culture=jilu }
 9025273 = { name="Jing" culture=jilu }
+9025274 = { name="Rong" culture=jilu }
 
 9025280 = { name="Zhu" culture=jilu }
+9025281 = { name="Han" culture=jilu
+	coat_of_arms = {
+		religion = aiguo
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9025282 = { name="Guo" culture=jilu
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9025283 = { name="Song" culture=jilu
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9025284 = { name="Tian" culture=jilu
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9025285 = { name="Meng" culture=jilu
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 9025551 = { name="Kong" culture = jilu religion = ruist used_for_random = no} #Confucius
 

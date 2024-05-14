@@ -15007,7 +15007,7 @@
 	1841.9.13 = {birth = yes}
 	1896.6.17 = {death = death_offmap}
 }
-8001275 = { #5th Son of Prince Yixuan
+8001275 = { #5th Son of Prince Yixuan (Prince Chun)
 	dynasty = 1051209 #Aisin Gioro
 	name = "Zaifeng"
 	religion = ruist
@@ -15016,6 +15016,7 @@
 	mother = 8001276
 	1871.10.16 = {birth = yes}
 	1891.1.1 = {add_spouse = 8001278}
+	1896.1.1 = {add_consort = 8001284}
 	1908.1.1 = {death = death_offmap}
 }
 8001276 = { #Secondary Consort
@@ -15062,6 +15063,15 @@
 	culture = manchu
 	1800.4.6 = {birth = yes}
 	1852.4.11 = {death = death_offmap}
+}
+8001284 = { #Secondary Consort of Zaifeng (Prince Chun)
+	dynasty = 1051224 #Denggiya
+	name = "Yu"
+	female=tes
+	religion = ruist
+	culture = manchu
+	1886.4.6 = {birth = yes}
+	1942.4.11 = {death = death_offmap}
 }
 #########################################
 #Later Northern Yuan Leaders

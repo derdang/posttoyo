@@ -547,99 +547,99 @@
 	2579.1.1={birth=yes}
 }
 2603103 = {  #Dacheng-Jinhai, Hong vassal
-	name="Xuantong"
-	dynasty=9006128 #Liu
-	culture=tianjinese
-	religion=jibenyuanze
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=5
-	learning=9
-	trait=grey_eminence
-	trait=quick
-	trait=gregarious
-	trait=just
-	trait=familyperson
-	trait=charitable
-	disallow_random_traits=yes
-	2573.11.12={birth=yes}
+	name="Xulun"
+    dynasty=9006259 # Duan
+    culture=tianjinese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=fortune_builder
+    trait=deceitful
+    trait=greedy
+    trait=patient
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2603104 = {  #Baozhou, Hong vassal
-	name="Youqiu"
-	dynasty=9025272 #Zhao
-	culture=jilu
-	religion=aiguo
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=5
-	learning=9
-	trait=charismatic_negotiator
-	trait=temperate
-	trait=humble
-	trait=envious
-	trait=cruel
-	trait=pious
-	trait=sympathy_oldworld
-	disallow_random_traits=yes
-	2568.8.29={birth=yes}
+	name="Huanqi"
+    dynasty=9025281 # Han
+    culture=jilu
+    religion=aiguo
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=5
+    trait=detached_priest
+    trait=theologian
+    trait=sympathy_owc
+    trait=humble
+    trait=content
+    trait=patient
+    trait=honest
+    trait=gluttonous
+    2564.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-2603105 = {  #Baozhou, Hong vassal
-	name="Hui"
-	dynasty=9025273 #Zhao
-	culture=jilu
-	religion=jibenyuanze
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=5
-	learning=9
-	trait=elusive_shadow
-	trait=honest
-	trait=envious
-	trait=paranoid
-	trait=rude
-	trait=cynical
-	disallow_random_traits=yes
-	2578.1.19={birth=yes}
+2603105 = {  #Yizhou, Hong vassal
+	name="Ying"
+    dynasty=9005274 # Yu
+    female=yes
+    culture=jilu
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=ugly
+    trait=quick
+    trait=mystic
+    trait=shy
+    trait=kind
+    trait=erudite
+    trait=honest
+	father=2603112
+	secret_religion=taoist
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2603106 = {  #Tongzhou, Hong vassal
-	name="Zhirou"
-	culture=pekingese
-	religion=jibenyuanze
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=5
-	learning=9
-	trait=mastermind_theologian
-	trait=theologian
-	trait=slothful
-	trait=patient
-	trait=rude
-	trait=pious
-	disallow_random_traits=yes
-	2572.9.24={birth=yes}
+	name="Xifan"
+    culture=pekingese
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=marital_cleric
+    trait=theologian
+    trait=devout
+    trait=diligent
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2603107 = {  #Langfang, Hong vassal
-	name="Zheng"
-	dynasty=9005026 #Chen
-	culture=pekingese
-	religion=jibenyuanze
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=5
-	learning=9
-	trait=fortune_builder
-	trait=envious
-	trait=chaste
-	trait=stubborn
-	trait=administrator
-	trait=zealous
-	disallow_random_traits=yes
-	2567.9.1={birth=yes}
+	name="Jinxu"
+    dynasty=9005273 # Zong
+    culture=pekingese
+    religion=jibenyuanze
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=martial_cleric
+    trait=just
+    trait=diligent
+    trait=devout
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2603108 = {  #Queen Mother and Lady of the Knights of the Hong
 	name="Renlan"
@@ -673,62 +673,76 @@
     2609.1.1={death=yes}
 }
 2603109 = {  #Zhangjiakou, Hong vassal
-	name="Xuanling"
-	dynasty=9005258 #Yu
-	culture=pekingese
-	religion=jibenyuanze
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=5
-	learning=9
-	trait=misguided_warrior
-	trait=quick
-	trait=hunter
-	trait=temperate
-	trait=stubborn
-	trait=deceitful
-	trait=craven
-	disallow_random_traits=yes
-	2570.3.29={birth=yes}
+	name="Jian"
+    dynasty=9005274 # Yu
+    culture=pekingese
+    religion=jibenyuanze
+    martial=5
+    diplomacy=5
+    stewardship=3
+    intrigue=5
+    learning=5
+    trait=tough_soldier
+    trait=fair
+    trait=diligent
+    trait=wroth
+    trait=brave
+	father=2603112
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2603110 = {  #Zhuolu, Hong vassal
-	name="Huaigang"
-	dynasty=9005091 #Huang
-	culture=pekingese
-	religion=jibenyuanze
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=5
-	learning=9
-	trait=underhanded_rogue
-	trait=selfish
-	trait=arbitrary
-	trait=authoritative
-	trait=proud
-	trait=gamer
-	disallow_random_traits=yes
-	2574.10.24={birth=yes}
+	name="Wu"
+    dynasty=9005259 # Tseng
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=misguided_warrior
+    trait=honorable
+    trait=humble
+    trait=honest
+    2549.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2603111 = {  #Binhai, Hong vassal
-	name="Yunyuan"
-	dynasty=9006061 #Guo
-	culture=tianjinese
-	religion=jibenyuanze
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=5
-	learning=9
-	trait=intricate_webweaver
-	trait=cynical
-	trait=proud
-	trait=stubborn
-	trait=cruel
-	trait=seducer
-	disallow_random_traits=yes
-	2568.4.16={birth=yes}
+	name="Xiaoyu"
+    dynasty=9006260 # Tseng
+    culture=tianjinese
+    religion=jibenyuanze
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=duelist
+    trait=brave
+    trait=deceitful
+    trait=proud
+    trait=arbitrary
+    2588.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2603112 = {  #Yu Clique Founder
+	name="Jiwen"
+    dynasty=9005274 # Yu
+    culture=pekingese
+    religion=jibenyuanze
+    martial=5
+    diplomacy=5
+    stewardship=3
+    intrigue=5
+    learning=5
+    trait=naive_appeaser
+    trait=content
+    trait=humble
+    trait=craven
+    2550.1.1={birth=yes}
+    2600.1.1={death=yes}
 }
 
 2621001 ={ # kShanghai ruler
@@ -828,13 +842,25 @@
 
 2625001 ={ # Shijiazhuang
 	name="Laohu"
-	dynasty=9025205 #Song
-	culture=jilu
-	religion=jibenyuanze
-	martial=10
-	trait=skilled_tactician
-	trait=brave
-	2583.8.9={birth=yes}
+    dynasty=9025283 # Song
+    culture=jilu
+    religion=jibenyuanze
+    martial=6
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=charismatic_negotiator
+    trait=poet
+    trait=gregarious
+    trait=content
+    trait=wroth
+    trait=humble
+	give_nickname=nick_the_tiger
+	father=2625018
+    2572.1.1={birth=yes}
+	2580.1.1={add_friend=2625019}
+    2700.1.1={death=yes}
 }
 2625002 ={ # Shijiazhuang
 	name="Zhentao"
@@ -846,30 +872,316 @@
 	trait=wroth
 	2587.2.1={birth=yes}
 }
-2625003 ={ # Chengde
+2625003 ={ # Iron Prince of Chengde
 	name="Zhentao"
-	dynasty=1051209 #Aisin Gioro
-	culture=manchu
-	religion=chuma
-	2580.9.1={birth=yes}
+    dynasty=1051209 #Aisin Gioro
+    culture=manchu
+    religion=chuma
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=falconer
+    trait=brave
+    trait=ambitious
+    trait=diligent
+    trait=proud
+    trait=cruel
+	father=2625007
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2625004 ={ # Qinhuangdao
-	name="Er"
-	culture=jidongbeian
-	religion=gongye_shenjiao
-	2582.3.1={birth=yes}
+	name="Qiang"
+    dynasty=9006300 # Shu-tien
+    culture=jidongbeian
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=3
+    stewardship=6
+    intrigue=3
+    learning=4
+    trait=midas_touched
+    trait=architect
+    trait=fat
+    trait=shrewd
+    trait=diligent
+    trait=just
+    trait=proud
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2625005 ={ # Tangshan
-	name="San"
-	culture=tangshanese
-	religion=gongye_shenjiao
-	2586.7.1={birth=yes}
+	name="Jiulong"
+    dynasty=9006400 # He
+    culture=tangshanese
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=intricate_webweaver
+    trait=feeble
+    trait=greedy
+    trait=cruel
+    trait=ambitious
+    trait=diligent
+    2571.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2625006 ={ # Yulin
 	name="Si"
 	culture=jin
 	religion=taoist
 	2584.4.1={birth=yes}
+}
+2625007 ={ # Iron Prince of Chengde
+	name="Huaying"
+    dynasty = 1051209 #Aisin Gioro
+    religion = chuma
+    culture = manchu
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=content
+    trait=patient
+    trait=trusting
+	father=2625008
+    2525.1.1={birth=yes}
+    2602.1.1={death=yes}
+}
+2625008 ={ # Iron Prince of Chengde
+	name="Jun"
+    dynasty = 1051209 #Aisin Gioro
+    religion = chuma
+    culture = manchu
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=flamboyant_schemer
+    trait=proud
+    trait=deceitful
+    trait=ambitious
+	father=2625009
+    2480.1.1={birth=yes}
+    2560.1.1={
+		death={
+			death_reason=death_execution_hanging
+			killer=2610013 #Emperor Zhao Jingwei
+		}
+	}
+}
+2625009 ={ # Iron Prince of Chengde
+	name="Chun"
+    dynasty = 1051209 #Aisin Gioro
+    religion = chuma
+    culture = manchu
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=5
+    trait=martial_cleric
+    trait=content
+    trait=diligent
+    trait=honest
+	father=2625010
+    2430.1.1={birth=yes}
+    2515.1.1={death=yes}
+}
+2625010 ={ # Iron Prince of Chengde
+	name="Baoxiang"
+    dynasty = 1051209 #Aisin Gioro
+    religion = chuma
+    culture = manchu
+    martial=3
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=misguided_warrior
+    trait=legendary
+    trait=poet
+    trait=humble
+	occluded=yes
+	father=2625011
+    2400.1.1={birth=yes}
+    2450.1.1={death=yes}
+}
+2625011 ={ # Iron Prince of Chengde
+	name="Dong"
+    dynasty = 1051209 #Aisin Gioro
+    religion = ruist
+    culture = manchu
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=legendary
+    trait=robust
+    trait=patient
+    trait=brave
+	occluded=yes
+	father=2625012
+    2333.1.1={birth=yes}
+    2420.1.1={death=yes}
+}
+2625012 ={ # Iron Prince of Chengde
+	name="Zhongjun"
+    dynasty = 1051209 #Aisin Gioro
+    religion = ruist
+    culture = manchu
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=thrifty_clerk
+    trait=legendary
+    trait=diligent
+    trait=patient
+    trait=proud
+	occluded=yes
+	father=2625013
+    2260.1.1={birth=yes}
+    2350.1.1={death=yes}
+}
+2625013 ={ # Iron Prince of Chengde
+	name="Shuo"
+    dynasty = 1051209 #Aisin Gioro
+    religion = quanzhen
+    culture = manchu
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=elusive_shadow
+    trait=legendary
+    trait=deceitful
+    trait=envious
+    trait=patient
+	occluded=yes
+	father=2625014
+    2180.1.1={birth=yes}
+    2300.1.1={death=yes}
+}
+2625014 ={ # Iron Prince of Chengde
+	name="Zhi"
+    dynasty = 1051209 #Aisin Gioro
+    religion = ruist
+    culture = manchu
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=underhanded_rogue
+    trait=poet
+    trait=gregarious
+    trait=shrewd
+	occluded=yes
+	father=2625015
+    2050.1.1={birth=yes}
+    2200.1.1={death=yes}
+}
+2625015 ={ # Iron Prince of Chengde
+	name="Chengbin"
+    dynasty = 1051209 #Aisin Gioro
+    religion = ruist
+    culture = manchu
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=scholarly_theologian
+    trait=legendary
+    trait=scholar
+    trait=devout
+	occluded=yes
+	father=2625016
+    1980.1.1={birth=yes}
+    2100.1.1={death=yes}
+}
+2625016 ={ # Iron Prince of Chengde
+	name="Yuzhang"
+    dynasty = 1051209 #Aisin Gioro
+    religion = ruist
+    culture = manchu
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=devout
+    trait=diligent
+    trait=patient
+	father=2625017
+    1942.5.3={birth=yes}
+    2030.1.1={death=yes}
+}
+2625017 ={ # Iron Prince of Chengde
+	name="Youzhi"
+    dynasty = 1051209 #Aisin Gioro
+    religion = ruist
+    culture = manchu
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=charismatic_negotiator
+    trait=poet
+    trait=kind
+    trait=humble
+	give_nickname=nick_jin
+	father=8001275
+	mother=8001284
+    1918.9.21={birth=yes}
+    2015.4.10={death=yes}
+}
+2625018 ={ # First Duke of Shijiazhuang
+	name="Jin"
+    dynasty=9025283 # Song
+    culture=jilu
+    religion=jibenyuanze
+    trait=indulgent_wastrel
+    trait=drunkard
+    2650.1.1={birth=yes}
+    2604.1.1={death=yes}
+}
+2625019 ={ # Brother of the Second Duke of Shijiazhuang
+	name="Zhentao"
+    dynasty=9025283 # Song
+    culture=jilu
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=skilled_tactician
+    trait=duelist
+    trait=brave
+    trait=shy
+    trait=patient
+    trait=content
+	father=2625018
+    2580.1.1={birth=yes}
+	2580.1.1={add_friend=2625001}
+    2700.1.1={death=yes}
 }
 
 2633001 ={ # Xiamen
