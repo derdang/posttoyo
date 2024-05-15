@@ -292,7 +292,7 @@ monastic_order_benedictine = {
 			}
 			NOT = { trait = cynical }
 			NOT = { trait = excommunicated }
-			has_secret_religion_trait_trigger = no
+			has_secret_religion = no
 			OR = {
 				trait = zealous
 				trait = scholar
@@ -590,7 +590,7 @@ monastic_order_dominican = { #actually the Jesuits
 			}
 			NOT = { trait = cynical }
 			NOT = { trait = excommunicated }
-			has_secret_religion_trait_trigger = no
+			has_secret_religion = no
 			OR = {
 				trait = zealous
 				trait = scholar
@@ -817,7 +817,7 @@ monastic_order_mormon = { #NOTE: treated as a Christian holy order in the code d
 			}
 			NOT = { trait = cynical }
 			NOT = { trait = excommunicated }
-			has_secret_religion_trait_trigger = no
+			has_secret_religion = no
 			OR = {
 				trait = zealous
 				trait = scholar
@@ -1072,7 +1072,7 @@ monastic_order_hindu = {
 				holy_order = yes
 			}
 			NOT = { trait = cynical }
-			has_secret_religion_trait_trigger = no
+			has_secret_religion = no
 			OR = {
 				trait = zealous
 				trait = scholar
@@ -1368,7 +1368,7 @@ monastic_order_jewish = {
 			}
 			NOT = { trait = cynical }
 			# NOT = { trait = excommunicated }
-			has_secret_religion_trait_trigger = no
+			has_secret_religion = no
 			OR = {
 				trait = zealous
 				trait = scholar

@@ -59,23 +59,6 @@ technology = {
 	}
 }
 
-#Thang Long non coastal
-technology = {
-	titles = {
-		d_phu_tho
-	}
-	2600 = {
-		military = 2.0
-		economy = 2.0
-		culture = 3.0
-	}
-	3100 = {
-		military = 4.0
-		economy = 4.0
-		culture = 5.0
-	}
-}
-
 #Sai Gon (economy tech)
 technology = {
 	titles = {
@@ -123,15 +106,20 @@ technology = {
 		d_ha_giang
 		d_son_la
 		d_yen_bai
+		d_phu_tho
 	}
 	2600 = {
 		military = 0.2
 		economy = 0.1
 		culture = 1.15
+		
+		TECH_INFANTRY = 1
 	}
 	3100 = {
 		military = 3.5
 		economy = 3.5
 		culture = 4.5
+		
+		TECH_INFANTRY = 4
 	}
 }
