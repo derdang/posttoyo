@@ -816,6 +816,35 @@ decisions = {
 			always = no
 		}
 	}
+	change_quanzhen_branch = {
+		ai = no
+		
+		potential = {
+			religion = quanzhen
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedquanzhenbranch }
+		}
+		
+		allow = {
+			religion = quanzhen
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = sino.1 }				
+			}
+			custom_tooltip = { text = TXT_change_quanzhen_branch }
+			set_character_flag = changedquanzhenbranch
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 	change_madhab_hui = {
 		ai = no
 		

@@ -592,6 +592,8 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	
+# Bani Cham
+	
 	spriteType = {
 		name = "GFX_trait_bani_balamon"
 		texturefile = "gfx/traits/bani_balamon.dds"
@@ -609,6 +611,44 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_bani_sunni"
 		texturefile = "gfx/traits/bani_sunni.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+# Quanzhen Schools
+	
+	spriteType = {
+		name = "GFX_trait_quanzhen_longmen"
+		texturefile = "gfx/traits/quanzhen_longmen.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_quanzhen_nanwu"
+		texturefile = "gfx/traits/quanzhen_nanwu.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_quanzhen_qingjing"
+		texturefile = "gfx/traits/quanzhen_qingjing.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_quanzhen_wuyue"
+		texturefile = "gfx/traits/quanzhen_wuyue.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_quanzhen_yuxian"
+		texturefile = "gfx/traits/quanzhen_yuxian.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -858,6 +898,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_change_mahayana_schools"
 		texturefile = "gfx/interface/change_mahayana_schools.tga"
+	}
+	spriteType = {
+		name = "GFX_change_quanzhen_branch"
+		texturefile = "gfx/interface/change_quanzhen_schools.dds"
 	}
 	spriteType = {
 		name = "GFX_change_sanmin_branch"

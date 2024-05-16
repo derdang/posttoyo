@@ -456,6 +456,97 @@ tomanurung = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+##Quanzhen Schools
+quanzhen_longmen = {
+	opposites = {
+		quanzhen_nanwu
+		quanzhen_qingjing
+		quanzhen_wuyue
+		quanzhen_yuxian
+	}
+
+	stewardship = 2
+	health = 0.5
+	monthly_character_prestige = 0.5
+	
+	potential = { religion = quanzhen }
+	religious_branch = quanzhen
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+quanzhen_nanwu = {
+	opposites = {
+		quanzhen_longmen
+		quanzhen_qingjing
+		quanzhen_wuyue
+		quanzhen_yuxian
+	}
+	
+	learning = 2
+	monthly_character_piety = 0.5
+
+	potential = { religion = quanzhen }
+	religious_branch = quanzhen
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+quanzhen_qingjing = {
+	opposites = {
+		quanzhen_longmen
+		quanzhen_nanwu
+		quanzhen_wuyue
+		quanzhen_yuxian
+	}
+
+	learning = 2
+	health = 0.5
+	monthly_character_piety = 0.5
+
+	potential = { religion = quanzhen }
+	religious_branch = quanzhen
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+quanzhen_wuyue = {
+	opposites = {
+		quanzhen_longmen
+		quanzhen_nanwu
+		quanzhen_qingjing
+		quanzhen_yuxian
+	}
+
+	learning = 4
+
+	potential = { religion = quanzhen }
+	religious_branch = quanzhen
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+quanzhen_yuxian = {
+	opposites = {
+		quanzhen_longmen
+		quanzhen_nanwu
+		quanzhen_qingjing
+		quanzhen_wuyue
+	}
+
+	diplomacy = 2
+	vassal_opinion = 5
+	general_opinion = 5
+
+	potential = { religion = quanzhen }
+	religious_branch = quanzhen
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
 ##General Traits
 vegetarian = {
 	opposites = {

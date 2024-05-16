@@ -1,0 +1,119 @@
+namespace = sino
+
+#Quanzhen Branch Trait Decision
+character_event = {
+	id = sino.1	
+	desc = EVTDESC_quanzhen1
+	picture = GFX_evt_chinese_thinkers
+	religion = quanzhen
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_quanzhen1
+		hidden_tooltip = {
+			remove_trait = quanzhen_nanwu
+			remove_trait = quanzhen_qingjing
+			remove_trait = quanzhen_wuyue
+			remove_trait = quanzhen_yuxian
+		}
+		add_trait = quanzhen_longmen
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = EVTOPTB_quanzhen1
+		hidden_tooltip = {
+			remove_trait = quanzhen_longmen
+			remove_trait = quanzhen_qingjing
+			remove_trait = quanzhen_wuyue
+			remove_trait = quanzhen_yuxian
+		}
+		add_trait = quanzhen_nanwu
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_quanzhen1
+		hidden_tooltip = {
+			remove_trait = quanzhen_nanwu
+			remove_trait = quanzhen_longmen
+			remove_trait = quanzhen_wuyue
+			remove_trait = quanzhen_yuxian
+		}
+		add_trait = quanzhen_qingjing
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_quanzhen1
+		hidden_tooltip = {
+			character_event = { id = sino.2 day=1 }				
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+character_event = {
+	id = sino.2	
+	desc = EVTDESC_quanzhen2
+	picture = GFX_evt_chinese_thinkers
+	religion = quanzhen
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_quanzhen2
+		hidden_tooltip = {
+			remove_trait = quanzhen_nanwu
+			remove_trait = quanzhen_qingjing
+			remove_trait = quanzhen_longmen
+			remove_trait = quanzhen_yuxian
+		}
+		add_trait = quanzhen_wuyue
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_quanzhen2
+		hidden_tooltip = {
+			remove_trait = quanzhen_nanwu
+			remove_trait = quanzhen_qingjing
+			remove_trait = quanzhen_wuyue
+			remove_trait = quanzhen_longmen
+		}
+		add_trait = quanzhen_yuxian
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_quanzhen2
+		hidden_tooltip = {
+			character_event = { id = sino.1 day=1}				
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
