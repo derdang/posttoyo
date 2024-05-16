@@ -38,6 +38,7 @@ k_tenno = {
 	
 	# Controls a religion
 	controls_religion = shinto
+	assimilate = no
 	
 	religion = shinto
 	
@@ -87,6 +88,7 @@ k_soka_gakkai = {
 	
 	# Always exists
 	landless = yes
+	assimilate = no
 	
 	# Controls a religion
 	controls_religion = soka_gakkai
@@ -135,6 +137,7 @@ k_conferentia = {
 	
 	# Always exists
 	landless = yes
+	assimilate = no
 	
 	# Controls a religion
 	controls_religion = catholic
@@ -597,6 +600,7 @@ k_vissarionite = {
 	# Cannot be held as a secondary title
 	primary = yes
 	caliphate = yes
+	assimilate = no
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
@@ -663,6 +667,7 @@ k_kohhran_thianghlim = {
 	
 	religion = kohhran_thianghlim
 	caliphate = yes
+	assimilate = no
 
 	# Controls a religion
 	controls_religion = kohhran_thianghlim
@@ -693,6 +698,7 @@ k_tenrikyo = {
 	
 	religion = tenrikyo
 	caliphate = yes
+	assimilate = no
 	
 	controls_religion = tenrikyo
 	
@@ -722,11 +728,42 @@ k_taoist = {
 	
 	religion = taoist
 	caliphate = yes
+	assimilate = no
 	
 	controls_religion = taoist
 	
 	allow = {
 		has_global_flag = taoist_formed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+k_unificationist = {
+	color = { 220 20 60 }
+	
+	creation_requires_capital = no
+	
+	capital = 758 # Seoul
+	
+	dignity = 200
+	
+	title = TRUE_FATHER
+	title_female = TRUE_MOTHER
+	foa = TRUE_PARENTS_FOA
+	primary = yes
+	
+	short_name = yes
+	
+	religion = unificationist
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = unificationist
+	
+	allow = {
+		has_global_flag = unificationist_formed
 		num_of_holy_sites = 3
 		piety = 1000
 	}
