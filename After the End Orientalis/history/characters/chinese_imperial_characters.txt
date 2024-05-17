@@ -1490,18 +1490,262 @@
 	2583.8.9={birth=yes}
 }
 # Qin
-2671001 ={ # Emperor of Qin
-	name="Wanzheng"
-	dynasty=9087255 #Ying
-	culture=guanzhong
-	religion=quanzhen
-	secret_religion = nestorian
-	martial=7
-	diplomacy=10
-	stewardship=10
-	intrigue=7
-	learning=8
-	trait=grey_eminence
-	2566.5.1={birth=yes}
+2671001 ={ # Seventh Emperor of Qin
+	name="Kangmin"
+    dynasty=9087274 # Ying
+    culture=guanzhong
+    religion=quanzhen
+    martial=4
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=scholar
+    trait=quick
+    trait=weak
+    trait=shy
+    trait=humble
+    trait=devout
+	father=2671006
+    2578.1.1={birth=yes}
+	2600.1.1={add_spouse=2671002}
+    2700.1.1={death=yes}
 }
-	
+2671002 ={ # Empress of Qin
+	name="Chun"
+    dynasty=9087276 # Xian
+	female=yes
+    culture=guanzhong
+    religion=nestorian
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=groomed
+    trait=kind
+    trait=deceitful
+	father=1060205
+    2585.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2671003 ={ # Princess of Qin
+	name="Zhen"
+    dynasty=9087274 # Ying
+    female=yes
+    culture=guanzhong
+    religion=quanzhen
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=elusive_shadow
+    trait=quick
+    trait=schemer
+    trait=deceitful
+    trait=envious
+    trait=shy
+    trait=lustful
+    trait=patient
+    trait=arbitrary
+    trait=paranoid
+	father=2671006
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2671004 ={ # Princess of Qin
+	name="Bai"
+    dynasty=9087274 # Ying
+    female=yes
+    culture=guanzhong
+    religion=quanzhen
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=brilliant_strategist
+    trait=twin
+    trait=ugly
+    trait=duelist
+    trait=wroth
+    trait=brave
+    trait=honest
+    trait=humble
+    trait=kind
+	father=2671006
+    2585.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2671005 ={ # Princess of Qin
+	name="Wen"
+    dynasty=9087274 # Ying
+    female=yes
+    culture=guanzhong
+    religion=quanzhen
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=grey_eminence
+    trait=twin
+    trait=fair
+    trait=poet
+    trait=gregarious
+    trait=proud
+    trait=charitable
+    trait=honest
+    trait=slothful
+    trait=patient
+	father=2671006
+    2585.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2671006 ={ # Sixth Emperor of Qin
+	name="Changshou"
+    dynasty=9087274 # Ying
+    culture=guanzhong
+    religion=quanzhen
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=brilliant_strategist
+    trait=mangled
+    trait=dull
+    trait=wroth
+    trait=kind
+    trait=charitable
+    trait=devout
+    trait=ambitious
+	father=2671007
+    2552.1.1={birth=yes}
+    2599.1.1={
+		death={
+			death_reason=death_trait
+			killer=mangled
+		}
+	}
+}
+2671007 ={ # Fifth Emperor of Qin
+	name="Xingcan"
+    dynasty=9087274 # Ying
+    culture=guanzhong
+    religion=quanzhen
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=diligent
+    trait=proud
+    trait=wroth
+	father=2671008
+    2515.1.1={birth=yes}
+	2581.1.1={
+		death={
+			death_reason=death_battle
+			killer=2610017
+		}
+	}
+}
+2671008 ={ # Fourth Emperor of Qin
+	name="Jun"
+    dynasty=9087274 # Ying
+    culture=guanzhong
+    religion=quanzhen
+    martial=2
+    diplomacy=3
+    stewardship=2
+    intrigue=4
+    learning=3
+    trait=misguided_warrior
+    trait=dull
+    trait=ugly
+    trait=wroth
+    trait=cruel
+	give_nickname=nick_the_pig
+	father=2671009
+	2495.1.1={birth=yes}
+	2549.1.1={
+		death={
+			death_reason=death_battle
+			killer=2625007
+		}
+	}
+}
+2671009 ={ # Third Emperor of Qin
+	name="Xun"
+    dynasty=9087274 # Ying
+    culture=guanzhong
+    religion=ruist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=midas_touched
+    trait=quick
+    trait=just
+    trait=diligent
+    trait=greedy
+    trait=envious
+	father=2671010
+    2430.1.1={birth=yes}
+    2511.1.1={death=yes}
+}
+2671010 ={ # Second Emperor of Qin
+	name="Yi"
+    dynasty=9087274 # Ying
+    culture=guanzhong
+    religion=quanzhen
+    martial=4
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=6
+    trait=skilled_tactician
+    trait=scarred_high
+    trait=legendary
+    trait=devout
+    trait=brave
+    trait=trusting
+    trait=content
+	occluded=yes
+    2350.1.1={birth=yes}
+    2450.1.1={death=yes}
+}
+2671011 ={ # First Emperor of Qin - Hermit King of Qin vanished into the Mountains leaving his general in charge of the Empire
+	name="Jue"
+    dynasty=9087277 # Yiqi
+    culture=guanzhong
+    religion=quanzhen
+    martial=7
+    diplomacy=3
+    stewardship=2
+    intrigue=3
+    learning=4
+    trait=mastermind_theologian
+    trait=duelist
+    trait=peasant_leader
+    trait=inspiring_leader
+    trait=celibate
+    trait=legendary
+    trait=diligent
+    trait=temperate
+    trait=humble
+	occluded=yes
+    2290.1.1={birth=yes}
+    2350.1.1
+		death={
+			death_reason=death_vanished #Technically transcended as Celestial Master :P
+		}
+	}
+}
