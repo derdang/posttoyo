@@ -3,14 +3,14 @@ e_korea = {
 	color2={ 255 255 20 }
 	
 	capital = 755 # c_hwanghae
-	culture = chosunin
+	chosunin = "Choson"
+	hangugin = "Hanguk"
 	
 	k_hamgyong = {
 		color={ 198 148 180 }
 		color2={ 255 255 255 }
 		
 		capital = 735 # c_rason
-		culture = chosunin
 		
 		d_hamgyong = {
 			color={ 218 128 190 }
@@ -146,7 +146,6 @@ e_korea = {
 		color2={ 255 255 255 }
 		
 		capital = 773 # c_yeongju
-		culture = hangugin
 		
 		d_taegu = {
 			color={ 181 204 82 }
@@ -193,6 +192,7 @@ e_korea = {
 				color2={ 255 255 255 }
 				
 				holy_site = yuilsasang
+				holy_site = unificationist
 				
 				b_yeongje = {}
 				b_haeundae = {}
@@ -235,7 +235,6 @@ e_korea = {
 		color2={ 255 255 255 }
 		
 		capital = 744 # c_kanggye
-		culture = chosunin
 		
 		chosunin = "Go-Choson"
 		
@@ -260,6 +259,7 @@ e_korea = {
 			c_chongju = { # 747
 				color={ 88 202 185 }
 				color2={ 255 255 255 }
+				holy_site = unificationist
 				
 				b_chongju = {}
 				b_sonchon = {}
@@ -384,6 +384,7 @@ e_korea = {
 				color2={ 255 255 255 }
 				
 				holy_site = concordanist
+				holy_site = unificationist
 				holy_site = yuilsasang
 				holy_site = muist
 				holy_site = muist_reformed
@@ -399,6 +400,7 @@ e_korea = {
 			c_pyongyang = { # 751
 				color={ 93 171 159 }
 				color2={ 255 255 255 }
+				holy_site = unificationist
 				
 				b_kumsusan = {}
 				b_moranbong = {}
@@ -427,7 +429,6 @@ e_korea = {
 		color2={ 255 255 255 }
 		
 		capital = 757 # c_inchon
-		culture = hangugin
 		
 		d_seoul = {
 			color={ 110 202 108 }
@@ -463,6 +464,7 @@ e_korea = {
 				color={ 40 66 37 }
 				color2={ 255 255 255 }
 				
+				holy_site = unificationist
 				holy_site = muist
 				holy_site = muist_reformed
 				

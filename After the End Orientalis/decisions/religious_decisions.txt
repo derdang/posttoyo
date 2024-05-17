@@ -974,4 +974,52 @@ decisions = {
 			set_character_flag = scholastic_observation
 		}
 	}
+	claim_unification_church_leadership = {
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			religion = unificationist
+			is_adult = yes
+			is_playable = yes
+			independent = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_global_flag = unificationist_formed }
+		}
+		allow = {
+			is_adult = yes
+			war = no
+			num_of_holy_sites = 3
+			piety = 200
+			completely_controls = e_korea
+		}
+		effect = {
+			activate_title = { title = k_unificationist status = yes }
+			piety = -200
+			if = {
+				limit = {
+					is_patrician = no
+				}
+				primary_title = {
+					k_unificationist = {
+						grant_title = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_patrician = yes
+				}
+				primary_title = {
+					k_unificationist = {
+						grant_title = ROOT
+						copy_title_laws = PREV
+					}
+				}
+			}
+			set_global_flag = unificationist_formed
+		}
+	}
 }
