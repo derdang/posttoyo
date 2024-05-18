@@ -1,158 +1,272 @@
-2043000={ #Father of Yelu Dashik
+2043000={ #Grandfather of Yelu Dashik
 	name="Esen"
 	dynasty=2043017 #Dashik
 	culture=yuger
 	religion=gelugpa
-	add_trait=kind
-	add_trait=weak
 	add_trait=charismatic_negotiator
-	add_trait=scholar
-	add_trait=humble
-	add_trait=diligent
-	2580.1.1={birth=yes}
-	2680.1.1={death=yes}
+    add_trait=weak
+    add_trait=scholar
+    add_trait=kind
+    add_trait=diligent
+    2564.1.1={birth=yes}
+    2680.1.1={death=yes}
+}
+2043001={ #Son of Esen Dashik (Father of Yelu who is not born yet)
+	name="Özgür"
+    dynasty=2043017 # Dashik
+    culture=yuger
+    religion=gelugpa
+    martial=4
+    diplomacy=3
+    stewardship=2
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=robust
+    trait=diligent
+    trait=brave
+    trait=patient
+    trait=honest
+    2589={birth=yes}
+    2700.1.1={death=yes}
 }
 3953003={
-	name="Ren"
-	dynasty=3953006 #She
-	culture=lanyin
-	religion=datong
-	add_trait=kind
-	add_trait=groomed
-	add_trait=thrifty_clerk
-	add_trait=quick
-	add_trait=patient
-	add_trait=diligent
-	2580.3.16={birth=yes}
-	2680.1.1={death=yes}
+	name="Xuanjing"
+    dynasty=9080008 # Tan
+    culture=lanyin
+    religion=datong
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=martial_cleric
+    trait=wroth
+    trait=gregarious
+    trait=charitable
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 8001287={
-	name="Chih"
-	dynasty=3957000 #Liu
-	culture=huizu
-	religion=hui
-	add_trait=martial_cleric
-	add_trait=groomed
-	add_trait=scholar
-	add_trait=diligent
-	add_trait=charitable
-	add_trait=erudite
-	2570.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Chongxi"
+    dynasty=9910277 # Pai
+    culture=huizu
+    religion=hui
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=underhanded_rogue
+    trait=ambitious
+    trait=rude
+    trait=devout
+    trait=charitable
+    trait=proud
+    trait=patient
+    2571.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 8001288={
-	name="Chih"
-	dynasty=3957000 #Liu
-	culture=huizu
-	religion=hui
-	add_trait=fussy
-	father=8001287
-	2600.3.16={birth=yes}
-	2680.1.1={death=yes}
+	name="Honggu"
+    dynasty=9080012 # Lu
+    female=yes
+    culture=lanyin
+    religion=datong
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=duelist
+    trait=brave
+    trait=kind
+    trait=gregarious
+    trait=wroth
+	father=8001289
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+8001289={
+	name="Fengyang"
+    dynasty=9080012 # Lu
+    culture=lanyin
+    religion=datong
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=thrifty_clerk
+    trait=administrator
+    trait=diligent
+    trait=greedy
+    trait=honest
+    trait=just
+    2560.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3953004={
-	name="Ming"
-	dynasty=3953007 #Yue
-	culture=lanyin
-	religion=datong
-	add_trait=kind
-	add_trait=groomed
-	add_trait=thrifty_clerk
-	add_trait=quick
-	add_trait=patient
-	add_trait=diligent
-	2570.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Xiaoqing"
+    dynasty=9080012 # Lu
+    culture=lanyin
+    religion=datong
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=duelist
+    trait=shy
+    trait=patient
+    trait=chaste
+    trait=kind
+	father=8001289
+    2584.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3953005={ #Former Lord of Lanzhou
-	name="Feng"
-	dynasty=3953008 #Zhang
-	culture=lanyin
-	religion=datong
-	add_trait=kind
-	add_trait=groomed
-	add_trait=charismatic_negotiator
-	add_trait=socializer
-	add_trait=patient
-	add_trait=diligent
-	2570.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Wei"
+    dynasty=9080010 # Han
+    culture=lanyin
+    religion=datong
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=5
+    learning=4
+    trait=skilled_tactician
+    trait=poet
+    trait=devout
+    trait=ambitious
+    trait=diligent
+    trait=proud
+    trait=just
+    trait=brave
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3953006={ #Former Lord of Gannan
-	name="Gushihan"
-	dynasty=3953009 #Hu
-	culture=lanyin
-	religion=gelugpa
-	add_trait=kind
-	add_trait=martial_cleric
-	add_trait=zealous
-	add_trait=socializer
-	add_trait=patient
-	add_trait=diligent
-	2569.1.1={birth=yes}
-	2680.1.1={death=yes}
+	name="Manshu"
+    dynasty=9080009 # Li
+    culture=lanyin
+    religion=gelugpa
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=martial_cleric
+    trait=devout
+    trait=charitable
+    trait=kind
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 3953007={ #Duke of Qingyang
 	name="Shuji"
-	dynasty=9910135 #Ma
-	culture=huizu
-	religion=hui
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	add_trait=flamboyant_schemer
-	add_trait=lefthanded
-	add_trait=schemer
-	add_trait=kind
-	add_trait=patient
-	add_trait=erudite
-	add_trait=content
-	add_trait=sayyid
-	disallow_random_traits=yes
-	2579.12.27={birth=yes}
-	2680.1.1={death=yes}
+    dynasty=9910276 #Ma
+    culture=huizu
+    religion=hui
+    diplomacy = 5
+    martial = 5
+    stewardship = 5
+    intrigue = 5
+    learning = 5
+    trait=flamboyant_schemer
+    trait=lefthanded
+    trait=schemer
+    trait=kind
+    trait=patient
+    trait=erudite
+    trait=content
+    trait=sayyid
+	father=3953011
+    2579.12.27={birth=yes}
+    2680.1.1={death=yes}
 }
 3953008={ #Duke of Longnan
-	name="Wenchang"
-	dynasty=9087008 #Yu
-	culture=guanzhong
-	religion=datong
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	add_trait=naive_appeaser
-	add_trait=mystic
-	add_trait=slothful
-	add_trait=chaste
-	add_trait=patient
-	add_trait=arbitrary
-	add_trait=content
-	disallow_random_traits=yes
-	2566.5.31={birth=yes}
-	2680.1.1={death=yes}
+	name="Suet-yee"
+    dynasty=9080011 # Ha
+    culture=guanzhong
+    religion=datong
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=duelist
+    trait=wroth
+    trait=diligent
+    trait=honest
+    trait=arbitrary
+    trait=brave
+	give_nickname=nick_the_golden_snake
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-3953009={ #Duke of Qingyang
-	name="Shuo"
-	dynasty= 9919077 #Hu
-	culture=huizu
-	religion=hui
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	add_trait=elusive_shadow
-	add_trait=familyperson
-	add_trait=schemer
-	add_trait=trusting
-	add_trait=patient
-	add_trait=erudite
-	add_trait=ambitious
-	disallow_random_traits=yes
-	2570.10.27={birth=yes}
-	2680.1.1={death=yes}
+3953009={ #Count of Dingxi
+	name="Biao"
+    dynasty=9910276 #Ma 
+    culture=huizu
+    religion=hui
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=tough_soldier
+    trait=sayyid
+    trait=brave
+    trait=temperate
+    trait=ambitious
+	father=3953011
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+3953010={ #1st Ma Lord
+	name="Qi"
+    dynasty=9910276 #Ma 
+    culture=huizu
+    religion=hui
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=brilliant_strategist
+    trait=sayyid
+    trait=temperate
+    trait=brave
+    trait=patient
+    trait=ambitious
+    2510.1.1={birth=yes}
+    2563.1.1={death=yes}
+}
+3953011={ #2nd Ma Lord
+	name="Lin"
+    dynasty=9910276 #Ma 
+    culture=huizu
+    religion=hui
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=sayyid
+    trait=zealous
+    trait=wroth
+    trait=content
+    trait=proud
+    2545.1.1={birth=yes}
+    2597.1.1={
+		death={
+			death_reason=death_battle
+			killer=3953005
+		}
+	}
 }
