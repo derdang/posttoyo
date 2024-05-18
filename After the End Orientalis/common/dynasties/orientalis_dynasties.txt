@@ -15007,9 +15007,48 @@ coat_of_arms = {
 2080087 = { name="Obul" culture=uighur }
 2080088 = { name="Muti'i" culture=uighur }
 2080089 = { name="Khoja" culture=uighur }
-2080090 = { name="Nafisi" culture=uighur religion=hui}
-2080091 = { name="Sulayman" culture=uighur religion=renewalist}
-2080092 = { name="Tekin" culture=uighur religion=hui}
+2080090 = { name="Nafisi" culture=uighur 
+	coat_of_arms = {
+		religion = hui
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2080091 = { name="Mehmet" culture=uighur 
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2080092 = { name="Tekin" culture=uighur 
+	coat_of_arms = {
+		religion = hui
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2042000 = { name="Ülmcin" culture=kalmyk }
 2042001 = { name="Hasgin" culture=kalmyk }
@@ -15048,7 +15087,20 @@ coat_of_arms = {
 2043014 = { name="Mandciin" culture=yuger }
 2043015 = { name="Nemacin" culture=yuger }
 2043016 = { name="Téyip" culture=yuger }
-2043017 = { name="Dashik" culture=yuger }
+2043017 = { name="Dashik" culture=yuger 
+	coat_of_arms = {
+		religion = gelugpa
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 2112000 = { name="Abbos" culture=uzbek }
 2112001 = { name="Abzalov" culture=uzbek }
