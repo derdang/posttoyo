@@ -1682,11 +1682,23 @@
 	2580.1.3 = {birth = yes}
 }
 1047100 = { #Duke of Soochow
-	name = "Heli"
-	dynasty = 9022091
-	culture = wu
-	religion = gongye_shenjiao
-	2576.1.3 = {birth = yes}
+	name="Dao"
+    dynasty=9022244 # Ling
+    culture=wu
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=6
+    trait=martial_cleric
+    trait=devout
+    trait=content
+    trait=chaste
+    trait=shy
+    trait=diligent
+    2558.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 ##Anhui-Jiangsu-Henan/Wan-Su-Yu##
@@ -1780,18 +1792,42 @@
 }
 #Wu
 1048300 = { #King of Wu
-	name = "Youwen"
-	dynasty = 9022087 #Hu
-	culture = wu
-	religion = gongye_shenjiao
-	2580.1.3 = {birth = yes}
+	name="Xiqing"
+    dynasty=9022242 # Chen
+    culture=wu
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=indulgent_wastrel
+    trait=hedonist
+    trait=arbitrary
+    trait=greedy
+    trait=stubborn
+    trait=cruel
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1048301 = { #Duke of Wuxi
-	name = "Anqi"
-	dynasty = 9022259 #Yuan
-	culture = wu
-	religion = gongye_shenjiao
-	2580.1.3 = {birth = yes}
+	name="Zhen'an"
+    dynasty=9022243 # Yang
+    culture=wu
+    religion=gongye_shenjiao
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=4
+    trait=thrifty_clerk
+    trait=slothful
+    trait=charitable
+    trait=arbitrary
+    trait=envious
+    trait=patient
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 #Song
 1048400 = { #Queen of Song
@@ -1816,32 +1852,83 @@
 }
 #Huaiyang
 1048500 = { #Yancheng
-	name = "Mingde"
-	dynasty = 9021079 #Han
-	culture = jianghuai
-	religion = jibenyuanze
-	2580.1.3 = {birth = yes}
+	name="Hongwen"
+    dynasty=9081028 # Yao
+    culture=jianghuai
+    religion=jibenyuanze
+    martial=4
+    diplomacy=6
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=poet
+    trait=zealous
+    trait=diligent
+    trait=cruel
+    trait=proud
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1048501 = { #Huai'an
-	name = "Wenming"
-	dynasty = 9021087 #Hu
-	culture = jianghuai
-	religion = jibenyuanze
-	2580.1.3 = {birth = yes}
+	name="Xinfang"
+    dynasty=9021001 # Qilin
+    culture=jianghuai
+    religion=ruist
+    martial=4
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=honorable
+    trait=charitable
+    trait=diligent
+    trait=proud
+    2548.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1048502 = { #Rugao
-	name = "Shen"
-	dynasty = 9021091 #Huang
-	culture = jianghuai
-	religion = gongye_shenjiao
-	2580.1.3 = {birth = yes}
+	name="Wenyuan"
+    dynasty=9021002 # Zhang
+    culture=jianghuai
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=mystic
+    trait=cynical
+    trait=greedy
+    trait=envious
+    trait=diligent
+    trait=ambitious
+    trait=shy
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1048503 = { #Rugao
-	name = "Shen"
-	dynasty = 9021091 #Huang
-	culture = shanghainese
-	religion = gongye_shenjiao
-	2580.1.3 = {birth = yes}
+1048503 = { #Nantong
+	name="Shousheng"
+    dynasty=9020001 # Gu
+    culture=shanghainese
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=scholar
+    trait=cynical
+    trait=humble
+    trait=just
+    trait=lustful
+    trait=paranoid
+    2571.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 #Cai
 1048600 = {
@@ -1975,27 +2062,371 @@
 }
 #Xu
 1048700 = { #Duke of Xuzhou
-	name = "Sen"
-	dynasty = 9081002 #Jiang
-	culture = zhongyuan
-	religion = jibenyuanze
-	2580.1.3 = {birth = yes}
+	name="Yuanchao"
+    dynasty=9081030 # Zhou
+    culture=zhongyuan
+    religion=jibenyuanze
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=4
+    trait=tough_soldier
+    trait=worth
+    trait=devout
+    trait=greedy
+    2578.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1048701 = { #Duke of Xuzhou
-	name = "Huai"
-	dynasty = 9081007 #Zhang
-	culture = zhongyuan
-	religion = jibenyuanze
-	2575.7.25 = {birth = yes}
+1048701 = { #Duke of Lianyungang
+	name="Yongkang"
+    dynasty=9081029 # Shi
+    culture=zhongyuan
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=lunatic
+    trait=possessed
+    trait=duelist
+    trait=wroth
+    trait=envious
+    trait=just
+    trait=cruel
+    trait=temperate
+	give_nickname=nick_the_destroyer_of_old
+    2564.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 #Shanghai
-1048800 = { #Count of Fengxian and Jinshan
-	name = "Yingguo"
-	dynasty = 9020016 #Cai
-	culture = shanghainese
-	religion = gongye_shenjiao
-	2580.1.3 = {birth = yes}
+1048800 = { #Count of Fengxian and Jinshan (Head of the House of Duan)
+	name="Ying"
+    dynasty=9020002 # Duan
+    female=yes
+    culture=shanghainese
+    religion=gongye_shenjiao
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=fortune_builder
+    trait=diligent
+    trait=proud
+    trait=paranoid
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2621001 ={ # Shanghai ruler (Head of the House of Liu)
+	name="Zhugong"
+	dynasty=9020901 #Liu
+	culture=shanghainese
+	religion=gongye_shenjiao
+	martial=9
+	diplomacy=8
+	stewardship=8
+	intrigue=9
+	learning=8
+	trait=midas_touched
+	trait=diligent
+	2565.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2621002 ={ # House of Tang
+	name="Pin-Mei"
+    dynasty=9020004 # Tang
+    culture=shanghainese
+    religion=catholic
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=scholarly_theologian
+    trait=theologian
+    trait=devout
+    trait=chaste
+    trait=just
+    trait=charitable
+    trait=kind
+    2566.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2621003 ={ # Head of House Hu
+	name="Zhengting"
+    dynasty=9020003 # Hu
+    culture=shanghainese
+    religion=gongye_shenjiao
+	secret_religion=sanmin
+    martial=4
+    diplomacy=6
+    stewardship=4
+    intrigue=3
+    learning=6
+    trait=mastermind_theologian
+    trait=quick
+    trait=scholar
+    trait=cynical
+    trait=deceitful
+    trait=cruel
+    trait=diligent
+    trait=erudite
+    trait=ambitious
+	father=2621008
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2621004 ={ # Duke of Songjiang
+	name="Guangzhen"
+    dynasty=9020005 # Sheng
+    culture=shanghainese
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=kind
+    trait=just
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2621005 ={ # House of Chen
+	name="Li"
+	dynasty=9020006 #Chen
+	culture=shanghainese
+	religion=gongye_shenjiao
+	trait=midas_touched
+	trait=brave
+	trait=diligent
+    trait=erudite
+    trait=ambitious
+	2574.6.1={birth=yes}
+	2700.1.1={death=yes}
+}
+2621006 ={ # House Hu
+	name="Jinmei"
+    dynasty=9020003 # Hu
+    culture=shanghainese
+    religion=gongye_shenjiao 
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=cynical
+    trait=deceitful
+    trait=proud
+	father=2621011
+    2360.1.1={birth=yes}
+    2440.1.1={
+		death={
+			death_reason=death_execution_hanging
+			killer=2621015 #Liu Zhangrun
+		}
+	}
+}
+2621007 ={ # House Hu
+	name="Junshun"
+    dynasty=9020003 # Hu
+    culture=shanghainese
+    religion=gongye_shenjiao
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=elusive_shadow
+    trait=wroth
+    trait=deceitful
+    trait=cynical
+	father=2621006
+    2415.1.1={birth=yes}
+    2500.1.1={death=yes}
+}
+2621008 ={ # House Hu
+	name="Bingwen"
+    dynasty=9020003 # Hu
+    culture=shanghainese
+    religion=gongye_shenjiao
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=intricate_webweaver
+    trait=ambitious
+    trait=shrewd
+    trait=diligent
+	father=2621007
+    2490.1.1={birth=yes}
+    2575.1.1={death=yes}
+}
+2621009 ={ # House Jiang
+	name="Shumeng"
+    dynasty=9020902 # Jiang
+    female=yes
+    religion=jibenyuanze
+    culture=shanghainese
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=legendary
+    trait=zealous
+    trait=content
+    trait=proud
+	occluded=yes
+    2200.1.1={birth=yes}
+    2300.1.1={death=yes}
+}
+2621010 ={ # House Jiang
+	name="Ping"
+    dynasty=9020902 # Jiang
+    female=yes
+    religion=jibenyuanze
+    culture=shanghainese
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=charismatic_negotiator
+    trait=legendary
+    trait=gregarious
+    trait=content
+    trait=patient
+	occluded=yes
+	mother=2621009
+    2280.1.1={birth=yes}
+    2350.1.1={
+		death={
+			death_reason=death_vanished
+		}
+	}
+}
+2621011 ={ # 3rd Mayor of Shanghai
+	name="Sheng"
+    dynasty=9020003 # Hu
+    religion=jibenyuanze
+    culture=shanghainese
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=legendary
+    trait=genius
+    trait=cynical
+    trait=diligent
+	occluded=yes
+    2320.1.1={birth=yes}
+    2405.1.1={
+		death={
+			death_reason=death_execution
+			killer=2610006 #Zhao Qiancho
+		}
+	}
+}
+2621012 ={ # 4th Mayor of Shanghai
+	name="Jin"
+    dynasty=9020902 # Jiang
+    female=yes
+    religion=jibenyuanze
+    culture=shanghainese
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=thrifty_clerk
+    trait=content
+    trait=diligent
+    trait=patient
+	mother=2621010
+    2320.1.1={birth=yes}
+    2410.1.1={death=yes}
+}
+2621013 ={ # 5th Mayor of Shanghai
+	name="Junning"
+    dynasty=9020901 # Liu
+    culture=shanghainese
+    religion=gongye_shenjiao
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=charitable
+    trait=kind
+    2375.1.1={birth=yes}
+    2460.1.1={death=yes}
+}
+2621014 ={ # 6th Mayor of Shanghai
+	name="Weiying"
+    dynasty=9020901 # Liu
+    religion=jibenyuanze
+    culture=shanghainese
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=fortune_builder
+    trait=diligent
+    trait=lustful
+    trait=greedy
+	father=2621013
+    2425.1.1={birth=yes}
+    2500.1.1={death=yes}
+}
+2621015 ={ # 7th Mayor of Shanghai
+	name="Zhangrun"
+    dynasty=9020901 # Liu
+    culture=shanghainese
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=brave
+    trait=honest
+	father=2621014
+    2480.1.1={birth=yes}
+    2547.1.1={death=yes}
+}
+2621016 ={ # 8th Mayor of Shanghai
+	name="Qichang"
+    dynasty=9020901 # Liu
+    culture=shanghainese
+    religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=midas_touched
+    trait=shrewd
+    trait=lustful
+    trait=greedy
+	father=2621015
+    2520.1.1={birth=yes}
+    2580.1.1={death=yes}
 }
 
 ##Shaanxi/Qin##

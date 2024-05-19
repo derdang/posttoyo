@@ -989,71 +989,6 @@
     2600.1.1={death=yes}
 }
 
-2621001 ={ # kShanghai ruler
-	name="Zhugong"
-	dynasty=9020901 #Jiang
-	culture=shanghainese
-	religion=gongye_shenjiao
-	martial=9
-	diplomacy=8
-	stewardship=8
-	intrigue=9
-	learning=8
-	trait=midas_touched
-	trait=diligent
-	2577.8.1={birth=yes}
-}
-2621002 ={ # xu ruler
-	name="Zixi"
-	dynasty=9020902 #xu
-	culture=shanghainese
-	religion=catholic
-	martial=9
-	diplomacy=8
-	stewardship=9
-	intrigue=9
-	learning=8
-	trait=mastermind_theologian
-	trait=kind
-	2582.8.1={birth=yes}
-}
-2621003 ={ # yuan ruler
-	name="Chong"
-	dynasty=9020903 #yuan
-	culture=shanghainese
-	religion=ruist
-	martial=9
-	diplomacy=8
-	stewardship=9
-	intrigue=9
-	learning=8
-	trait=scholarly_theologian
-	trait=wroth
-	2580.6.1={birth=yes}
-}
-2621004 ={ # Sun ruler
-	name="Like"
-	dynasty=9020904 #Sun
-	culture=jianghuai
-	religion=gongye_shenjiao
-	martial=9
-	diplomacy=8
-	stewardship=9
-	intrigue=9
-	learning=8
-	trait=skilled_tactician
-	trait=brave
-	2580.6.1={birth=yes}
-}
-2621005 ={ # Zhou ruler
-	name="Nande"
-	dynasty=9020905 #Zhou
-	culture=shanghainese
-	religion=gongye_shenjiao
-	trait=midas_touched
-	trait=brave
-	2574.6.1={birth=yes}
-}
 2621006 ={ # inland ruler
 	name="Beifeng"
 	dynasty=9020097 #Jia
@@ -1070,18 +1005,102 @@
 	2581.12.10={birth=yes}
 }
 # Xu
-2622001 ={ # King of Xu
-	name="Anguo"
-	dynasty=9022241 #Xing
-	culture=zhongyuan
-	religion=jibenyuanze
-	martial=6
-	diplomacy=8
-	stewardship=8
-	intrigue=9
-	learning=8
-	trait=tough_soldier
-	2580.10.1={birth=yes}
+2622001 ={ # Queen of Xu
+	name="Yunhe"
+    dynasty=9020902 # Jiang
+    female=yes
+    culture=zhongyuan
+    religion=jibenyuanze
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=intricate_webweaver
+    trait=zealous
+    trait=shrewd
+    trait=lustful
+    trait=proud
+    trait=arbitrary
+	father=2622005
+	give_nickname=nick_the_flagbearer
+    2570.1.1={birth=yes}
+	2600.1.1={add_matrilineal_spouse=1048700}
+	2600.1.2={effect={add_friend = 2603108}} #Zhao Renlan
+    2700.1.1={death=yes}
+}
+2622002 ={ #Third King of Xu
+	name="Minqi"
+    dynasty=9020902 # Jiang
+    culture=zhongyuan
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=zealous
+    trait=wroth
+    trait=brave
+	mother=2621012
+    2330.1.1={birth=yes}
+    2420.1.1={death=yes}
+}
+2622003 ={ #Fourth King of Xu
+	name="Wenmu"
+    dynasty=9020902 # Jiang
+    culture=zhongyuan
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=scholarly_theologian
+    trait=devout
+    trait=patient
+    trait=kind
+	father=2622002
+    2400.1.1={birth=yes}
+    2500.1.1={death=yes}
+}
+2622004 ={ #Fifth King of Xu
+	name="Zhanxuan"
+    dynasty=9020902 # Jiang
+    culture=zhongyuan
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=detached_priest
+    trait=cynical
+    trait=craven
+    trait=patient
+	father=2622003
+    2480.1.1={birth=yes}
+    2540.1.1={death=yes}
+
+}
+2622005 ={ #Sixth King of Xu
+	name="Xilai"
+    dynasty=9020902 # Jiang
+    culture=zhongyuan
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=skilled_tactician
+    trait=wroth
+    trait=diligent
+    trait=brave
+	father=2622004
+    2520.1.1={birth=yes}
+    2578.1.1={death=yes}
 }
 
 2625001 ={ # Shijiazhuang

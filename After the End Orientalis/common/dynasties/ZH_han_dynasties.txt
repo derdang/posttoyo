@@ -538,13 +538,120 @@
 9020279 = { name="Zhou" culture=shanghainese }
 9020280 = { name="Zhu" culture=shanghainese }
 9020000 = { name="Lyu" culture=shanghainese }
+9020001 = { name="Gu" culture=shanghainese
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 #Shanghai patrician dynasties
-9020901 = { name="Jiang" culture=shanghainese used_for_random=no }
-9020902 = { name="Xu" culture=shanghainese used_for_random=no }
-9020903 = { name="Yuan" culture=shanghainese used_for_random=no }
-9020904 = { name="Sun" culture=shanghainese used_for_random=no }
-9020905 = { name="Zhou" culture=shanghainese used_for_random=no }
+9020901 = { name="Liu" culture=shanghainese
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9020902 = { name="Jiang" culture=shanghainese
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9020002 = { name="Duan" culture=shanghainese
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9020003 = { name="Hu" culture=shanghainese
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9020004 = { name="Tang" culture=shanghainese
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9020005 = { name="Sheng" culture=shanghainese
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9020006 = { name="Chen" culture=shanghainese
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 9021016 = { name="Cai" culture=jianghuai }
 9021026 = { name="Chen" culture=jianghuai }
@@ -572,6 +679,35 @@
 9021279 = { name="Zhou" culture=jianghuai }
 9021280 = { name="Zhu" culture=jianghuai }
 9021000 = { name="Lyu" culture=jianghuai }
+9021001 = { name="Qilin" culture=jianghuai
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9021002 = { name="Zhang" culture=jianghuai
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
 
 9022016 = { name="Cai" culture=wu }
 9022026 = { name="Chen" culture=wu }
@@ -600,6 +736,48 @@
 9022280 = { name="Zhu" culture=wu }
 9022000 = { name="Lyu" culture=wu }
 9022241 = { name="Xing" culture=wu used_for_random=no }
+9022242 = { name="Chen" culture=wu
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9022243 = { name="Yang" culture=wu
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9022244 = { name="Ling" culture=wu
+	coat_of_arms = {
+		religion = gongye_shenjiao
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 9023087 = { name="Hu" culture=huizhou }
 9023120 = { name="Li" culture=huizhou }
@@ -1337,6 +1515,48 @@
 		layer = {
 			texture = 5
 			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9081028 = { name="Yao" culture=zhongyuan
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9081029 = { name="Ling" culture=zhongyuan
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9081030 = { name="Zhou" culture=zhongyuan
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 12
 			emblem = 0
 			color = 0
 			color = 0
