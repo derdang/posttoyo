@@ -1639,70 +1639,174 @@
 #Dong'ou#
 
 1046000 = { #Duke of Taichow
-	name = "Jiabao"
-	dynasty = 9022097
-	culture = wu
-	religion = ruist
-	2580.1.3 = {birth = yes}
+	name="Jiaqi"
+    dynasty=9022248 # Fu
+    culture=wu
+    religion=ruist
+    female=yes
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=fortune_builder
+    trait=diligent
+    trait=lustful
+    trait=deceitful
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1046001 = { #Duke of Jinhua
-	name = "Zhong"
-	dynasty = 9022100
-	culture = wu
-	religion = ruist
-	2580.1.3 = {birth = yes}
+	name="Zhaolin"
+    dynasty=9022245 # Xu
+    culture=wu
+    religion=ruist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=2
+    learning=3
+    trait=underhanded_rogue
+    trait=poet
+    trait=rude
+    trait=charitable
+    trait=patient
+    trait=proud
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1046002 = { #Duke of Quzhou
-	name = "Zhan"
-	dynasty = 9022120
-	culture = wu
-	religion = ruist
-	2580.1.3 = {birth = yes}
+	name="Li"
+    dynasty=9022247 # Dai
+    culture=wu
+    religion=ruist
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=flamboyant_schemer
+    trait=schemer
+    trait=shrewd
+    trait=patient
+    trait=deceitful
+    trait=envious
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1046003 = { #King of Dong'Ou
-	name = "Chaohu"
-	dynasty = 9021125
-	culture = wu
-	religion = mahayana
-	2577.1.1 = {birth = yes}
+	name="Xiaodan"
+    dynasty=9022249 # Dong
+    culture=wu
+    religion=mahayana
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=elusive_shadow
+    trait=impaler
+    trait=envious
+    trait=cruel
+    trait=wroth
+    trait=diligent
+    trait=shy
+	give_nickname=nick_the_throat_cutter
+    2563.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1046004 = { #Duke of Lishui
-	name = "Zhaoming"
-	dynasty = 9021128
-	culture = wu
-	religion = mahayana
-	2580.1.3 = {birth = yes}
+	name="Jie"
+    dynasty=9022246 # Li
+    culture=wu
+    religion=mahayana
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=wroth
+    trait=brave
+    trait=devout
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 #Hang#(Will do)#
 
 1047000 = { #Duke of Ningbo
-	name = "Mingshan"
-	dynasty = 9022016
-	culture = wu
-	religion = mahayana
-	2580.1.3 = {birth = yes}
+	name="Xiaolin"
+    dynasty=9022252 # Wenren
+    culture=wu
+    religion=mahayana
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=duelist
+    trait=brave
+    trait=patient
+    trait=humble
+    trait=just
+    2578.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1047001 = { #Duke of Jiaxing
-	name = "Shaode"
-	dynasty = 9022026
-	culture = wu
-	religion = gongye_shenjiao
-	2580.1.3 = {birth = yes}
+	name="Luping"
+    dynasty=9022251 # Bao
+    culture=wu
+    religion=gongye_shenjiao
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=detached_priest
+    trait=cynical
+    trait=diligent
+    trait=erudite
+    trait=proud
+    2574.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1047002 = { #Duke of Shaoxing
-	name = "Mingde"
-	dynasty = 9022077
-	culture = wu
-	religion = ruist
-	2580.1.3 = {birth = yes}
+	name="Zhongli"
+    dynasty=9022253 # Song
+    culture=wu
+    religion=ruist
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=fortune_builder        
+    trait=greedy
+    trait=lustful
+    trait=diligent
+    2556.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1047003 = { #Duke of Hangzhou
-	name = "Wuxian"
-	dynasty = 9022079
-	culture = wu
-	religion = ruist
-	2580.1.3 = {birth = yes}
+	name="Qingru"
+    dynasty=9022250 # Jiang
+    culture=wu
+    religion=ruist
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=martial_cleric        
+    trait=quick
+    trait=mystic
+    trait=cynical
+    trait=honest
+    trait=diligent
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1047004 = { #Count of Chunan
 	name = "Weide"
