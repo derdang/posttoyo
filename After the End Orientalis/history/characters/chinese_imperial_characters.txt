@@ -989,21 +989,22 @@
     2600.1.1={death=yes}
 }
 
-2621006 ={ # inland ruler
-	name="Beifeng"
-	dynasty=9020097 #Jia
-	culture=shanghainese
-	religion=gongye_shenjiao
-	female = yes
-	martial=8
-	diplomacy=8
-	stewardship=10
-	intrigue=9
-	learning=8
-	trait=midas_touched
-	trait=kind
-	2581.12.10={birth=yes}
-}
+#same id as another character and is not in title history at all
+# 2621006 ={ # inland ruler
+	# name="Beifeng"
+	# dynasty=9020097 #Jia
+	# culture=shanghainese
+	# religion=gongye_shenjiao
+	# female = yes
+	# martial=8
+	# diplomacy=8
+	# stewardship=10
+	# intrigue=9
+	# learning=8
+	# trait=midas_touched
+	# trait=kind
+	# 2581.12.10={birth=yes}
+# }
 # Xu
 2622001 ={ # Queen of Xu
 	name="Yunhe"
@@ -1777,7 +1778,6 @@
     2599.1.1={
 		death={
 			death_reason=death_trait
-			killer=mangled
 		}
 	}
 }
@@ -1891,7 +1891,7 @@
     trait=humble
 	occluded=yes
     2290.1.1={birth=yes}
-    2350.1.1
+    2350.1.1={
 		death={
 			death_reason=death_vanished #Technically transcended as Celestial Master :P
 		}
