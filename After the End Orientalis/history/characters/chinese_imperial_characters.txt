@@ -1462,19 +1462,148 @@
 	2580.10.1={birth=yes}
 }
 # Chu
-2643001 ={ # Emperor of Chu
-	name="Yongli"
-	dynasty=9043242 # Xiong
-	culture=chu
-	religion=ruist
-	martial=7
-	diplomacy=8
-	stewardship=8
-	intrigue=9
-	learning=11
-	trait=fortune_builder
-	trait=quick
-	2567.5.1={birth=yes}
+2643001 ={ # 5th Emperor of Chu
+	name="Shangyuan"
+    dynasty=9043242 # Xiong
+    culture=chu
+    religion=ruist
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=lefthanded
+    trait=hedonist
+    trait=lefthanded
+    trait=lustful
+    trait=content
+    trait=gregarious
+    trait=rude
+    trait=honest
+    trait=patient
+	father=2643007
+    2584.1.1={birth=yes}
+	2600.1.1={add_spouse=1080009}
+    2700.1.1={death=yes}
+}
+2643002 ={ # Current Prince of Chu
+	name="Haifeng"
+    dynasty=9043242 # Xiong
+    culture=chu
+    religion=ruist
+    trait=lefthanded
+	father=2643007
+	mother=1080009
+    2596.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2643003 ={ # Chancellor of Chu
+	name="Huaiying"
+    dynasty=9043248 # Di
+    culture=chu
+    religion=ruist
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=grey_eminence
+    trait=scholar
+    trait=shrewd
+    trait=honorable
+    trait=just
+    trait=diligent
+    trait=content
+    2575.1.1={birth=yes}
+	2599.1.1={
+		employer=2643001
+		effect={give_job_title=job_chancellor}
+	}
+	2600.1.1={effect={add_friend=2643001}}
+    2700.1.1={death=yes}
+}
+2643004 ={ # 1st Emperor of Chu
+	name="Zhongdao"
+    dynasty=9043242 # Xiong
+    culture=chu
+    religion=ruist
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=brilliant_strategist
+    trait=lefthanded
+    trait=immortal
+    trait=legendary
+    trait=impaler
+    trait=envious
+    trait=shrewd
+    trait=cruel
+    trait=diligent
+    2250.1.1={birth=yes}
+    2495.1.1={death=yes}
+}
+2643005 ={ # 2nd Emperor of Chu
+	name="Xianliang"
+    dynasty=9043242 # Xiong
+    culture=chu
+    religion=ruist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=detached_priest
+    trait=lefthanded
+    trait=shrewd
+    trait=cynical
+	father=2643004
+    2480.1.1={birth=yes}
+    2541.1.1={death=yes}
+}
+2643006 ={ # 3rd Emperor of Chu
+	name="Zhiyi"
+    dynasty=9043242 # Xiong
+    culture=chu
+    religion=ruist
+    martial=4
+    diplomacy=4
+    stewardship=2
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=wroth
+    trait=charitable
+    trait=ambitious
+	father=2643005
+    2524.1.1={birth=yes}
+    2565.1.1={
+		death={
+			death_reason=death_battle
+			killer=2610014
+		}
+	}
+}
+2643007 ={ # 4th Emperor of Chu
+	name="Nanjiang"
+    dynasty=9043242 # Xiong
+    culture=chu
+    religion=ruist
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=content
+    trait=charitable
+    trait=diligent
+	father=2643006
+    2548.1.1={birth=yes}
+	2580.1.1={add_spouse=1080009}
+    2598.1.1={death=yes}
 }
 
 2655001 ={ # Kong

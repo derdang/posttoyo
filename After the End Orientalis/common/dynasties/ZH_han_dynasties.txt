@@ -1243,6 +1243,7 @@
 
 9035016 = { name="Cai" culture=gan }
 9035017 = { name="Hu" culture=gan }
+9035018 = { name="Ding" culture=gan religion=taoist used_for_random=no}
 9035026 = { name="Chen" culture=gan }
 9035077 = { name="Guo" culture=gan }
 9035091 = { name="Huang" culture=gan }
@@ -1256,6 +1257,21 @@
 9035258 = { name="Yu" culture=gan }
 9035271 = { name="Zhang" culture=gan }
 9035274 = { name="Zheng" culture=gan }
+9035275 = { name="Ke" culture=gan
+	coat_of_arms = {
+		religion = taoist
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
 
 # Central China : 904
 
@@ -1284,6 +1300,8 @@
 9041000 = { name="Lyu" culture=xiang }
 
 9043026 = { name="Chen" culture=chu }
+9043026 = { name="Fang" culture=chu religion=fuyin used_for_random=no}
+9043027 = { name="Deng" culture=Deng religion=quanzhen used_for_random=no}
 9043077 = { name="Guo" culture=chu }
 9043087 = { name="Hu" culture=chu }
 9043091 = { name="Huang" culture=chu }
@@ -1303,7 +1321,104 @@
 9043279 = { name="Zhou" culture=chu }
 9043280 = { name="Zhu" culture=chu }
 9043000 = { name="Lyu" culture=chu }
-9043242 = { name="Xiong" culture=chu used_for_random=no}
+9043242 = { name="Xiong" culture=chu
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9043243 = { name="Qin" culture=chu
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9043244 = { name="Feng" culture=chu
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9043245 = { name="Lauu" culture=chu
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9043246 = { name="Zhong" culture=chu
+	coat_of_arms = {
+		religion = quanzhen
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9043247 = { name="Nie" culture=chu
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9043248 = { name="Di" culture=chu
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 # South China : 9051
 #-- Guangdong
@@ -1420,6 +1535,7 @@
 9070271 = { name="Zhang" culture=xinan }
 9070272 = { name="Zhao" culture=xinan }
 9070284 = { name="Ngwe" culture=xinan used_for_random=no}
+9070285 = { name="Shen" culture=xinan religion=ruist used_for_random=no}
 
 9071002 = { name="An" culture=yi }
 9071026 = { name="Chen" culture=yi }
@@ -1450,8 +1566,9 @@
 9075027 = { name="Yang" culture=miao}
 9075120 = { name="Li" culture=miao }
 9075205 = { name="Song" culture=miao }
-9075272 = { name="Zhao" culture=miao }
 9075271 = { name="Zhang" culture=miao }
+9075272 = { name="Zhao" culture=miao }
+9075273 = { name="Ding" culture=miao }
 
 #Northwest China: 9080
 9080000 = { name="Guo" culture=lanyin }

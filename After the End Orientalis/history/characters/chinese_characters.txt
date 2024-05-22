@@ -1453,25 +1453,55 @@
 	2580.1.3 = {birth = yes}
 }
 1042011 = { #Count of Xianning
-	name = "Chen"
-	dynasty = 9035274
-	culture = gan
-	religion = taoist
-	2580.1.3 = {birth = yes}
+	name="Hongbing"
+    dynasty=9035018 # Ding
+    culture=gan
+    religion=taoist
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=thrifty_clerk
+    trait=diligent
+    trait=greedy
+    trait=brave
+    2574.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1042012 = { #Count of Yiling
-	name = "Ying"
-	dynasty = 9070027 #Wei
-	culture = xinan
-	religion = ruist
-	2580.1.3 = {birth = yes}
+	name="Weirong"
+    dynasty=9070285 # Shen
+    culture=xinan
+    religion=ruist
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=tough_soldier
+    trait=ambitious
+    trait=craven
+    trait=arbitrary
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1042013 = { #Duke of Enshi
-	name = "Meng"
-	dynasty = 2498010 #Chang
-	culture = miao
-	religion = ruist
-	2580.1.3 = {birth = yes}
+	name="Quang"
+    dynasty=9075273 # Ding
+    culture=miao
+    religion=ruist
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=brave
+    trait=lunatic
+    trait=envious
+    2560.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 #Hengzhou#
@@ -3320,132 +3350,194 @@
 
 ##Chu##
 1080000 = {
-	name = "Changtu"
-	dynasty = 9043279 #Zhou
-	culture = chu
-	religion = quanzhen
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait=naive_appeaser
-	trait=quick
-	trait=hunter
-	trait=paranoid
-	trait=selfish
-	trait=erudite
-	trait=greedy
-	disallow_random_traits=yes
-	2566.12.7 = {birth = yes}
+	name="Zixin"
+    dynasty=9043246 # Zhong
+    culture=chu
+    religion=quanzhen
+    martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=flamboyant_schemer
+    trait=deceitful
+    trait=ambitious
+    trait=envious
+    2566.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1080001 = {
-	name = "Zhizhong"
-	dynasty = 9043120 #Li
-	culture = chu
-	religion = fuyin
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait=elusive_shadow
-	trait=brave
-	trait=authoritative
-	trait=paranoid
-	trait=greedy
-	disallow_random_traits=yes
-	2570.7.12 = {birth = yes}
+	name="Yuzhang"
+    dynasty=9043026 # Fang
+    culture=chu
+    religion=fuyin
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=patient
+    trait=brave
+    trait=proud
+    2556.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1080002 = {
-	name = "Xilie"
-	dynasty = 9043274 #Zheng
-	culture = chu
-	religion = jibenyuanze
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait=naive_appeaser
-	trait=wroth
-	trait=arbitrary
-	trait=erudite
-	trait=charitable
-	disallow_random_traits=yes
-	2576.12.13 = {birth=yes}
+	name="Yan"
+    dynasty=9043247 # Nie
+    culture=chu
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=poet
+    trait=gregarious
+    trait=kind
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1080003 = {
-	name = "Youfu"
-	dynasty = 9043077 #Guo
-	culture = chu
-	religion = jibenyuanze
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait=thrifty_clerk
-	trait=rude
-	trait=proud
-	trait=deceitful
-	trait=slothful
-	disallow_random_traits=yes
-	2569.10.22 = {birth=yes}
+	name="Hu"
+    dynasty=9043245 # Lauu
+    culture=chu
+    religion=jibenyuanze
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=skilled_tactician
+    trait=quick
+    trait=envious
+    trait=ambitious
+    trait=arbitrary
+    trait=diligent
+	give_nickname=nick_the_red_tiger
+    2549.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1080004 = {
-	name = "Wei"
-	dynasty = 9043137 #Mao
-	culture = chu
-	religion = jibenyuanze
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait=amateurish_plotter
-	trait=deceitful
-	trait=kind
-	trait=brave
-	trait=pious
-	disallow_random_traits=yes
-	2573.12.27 = {birth=yes}
+	name="Qiguo"
+    dynasty=9043244 # Feng
+    culture=chu
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=2
+    intrigue=5
+    learning=3
+    trait=tough_soldier
+    trait=wroth
+    trait=kind
+    trait=rude
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1080005 = {
-	name = "Yuanzong"
-	dynasty = 9035017 #Hu
-	culture = gan
-	religion = taoist
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait=midas_touched
-	trait=honest
-	trait=paranoid
-	trait=patient
-	trait=cruel
-	disallow_random_traits=yes
-	2574.10.17 = {birth=yes}
+	name="Yangyi"
+    dynasty=9035275 # Ke
+    culture=gan
+    religion=taoist
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=martial_cleric
+    trait=gamer
+    trait=genius
+    trait=shy
+    trait=diligent
+    trait=proud
+    2568.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1080006 = {
-	name = "Jishan"
-	dynasty = 9035125 #Lin
-	culture = chu
-	religion = jibenyuanze
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait=tough_soldier
-	trait=cruel
-	trait=stubborn
-	trait=selfish
-	trait=slothful
-	disallow_random_traits=yes
-	2567.2.26 = {birth=yes}
+	name="Jian'an"
+    dynasty=9043243 # Qin
+    culture=chu
+    religion=jibenyuanze
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=thrifty_clerk
+    trait=peasant_leader
+    trait=diligent
+    trait=charitable
+    trait=humble
+    trait=ambitious
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1080007 = {
+	name="Qizhang"
+    dynasty=9043245 # Lauu
+    culture=chu
+    religion=jibenyuanze
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=quick
+    trait=scarred_high
+    trait=disfigured
+    trait=brave
+    trait=wroth
+    trait=honorable
+    trait=diligent
+    trait=groomed
+	give_nickname=nick_the_red_horror
+	father=1080003
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1080008 = {
+	name="Haoran"
+    dynasty=9043027 # Deng
+    culture=chu
+    religion=quanzhen
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=2
+    learning=4
+    trait=indulgent_wastrel
+    trait=drunkard
+    trait=rude
+    trait=honest
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1080009 = {
+	name="Qi"
+    dynasty=9043245 # Lauu
+    female=yes
+    culture=chu
+    religion=jibenyuanze
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=6
+    learning=4
+    trait=charismatic_negotiator
+    trait=quick
+    trait=fair
+    trait=arbitrary
+    trait=ambitious
+    trait=proud
+    trait=envious
+	give_nickname=nick_the_red_beauty
+	father=1080003
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 ##Jin##
