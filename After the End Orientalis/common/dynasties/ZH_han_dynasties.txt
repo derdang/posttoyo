@@ -1338,6 +1338,9 @@
 # Min-Hakka
 
 9033016 = { name="Cai" culture=min }
+9033017 = { name="Tsui" culture=min religion=mahayana used_for_random=no}
+9033018 = { name="Lin" culture=min religion=ruist used_for_random=no}
+9033019 = { name="Wang" culture=min }
 9033026 = { name="Chen" culture=min }
 9033077 = { name="Guo" culture=min }
 9033087 = { name="Hu" culture=min }
@@ -1345,12 +1348,81 @@
 9033120 = { name="Li" culture=min }
 9033125 = { name="Lin" culture=min }
 9033135 = { name="Ma" culture=min }
-9033222 = { name="Wang" culture=min }
+9033222 = { name="Wang" culture=min
+	coat_of_arms = {
+		religion = erkeun
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9033238 = { name="Xie" culture=min }
 9033258 = { name="Yu" culture=min }
 9033271 = { name="Zhang" culture=min }
 9033274 = { name="Zheng" culture=min }
 9033275 = { name="Ma" culture=min }
+9033276 = { name="Feng" culture=min
+	coat_of_arms = {
+		religion = sanmin
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9033277 = { name="Zeng" culture=min
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9033278 = { name="Shu" culture=min
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9033279 = { name="Zou" culture=min
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 9034026 = { name="Chen" culture=hakka }
 9034027 = { name="Song" culture=hakka}
@@ -1366,6 +1438,34 @@
 9034258 = { name="Yu" culture=hakka }
 9034271 = { name="Zhang" culture=hakka }
 9034274 = { name="Zheng" culture=hakka }
+9034275 = { name="Chen" culture=hakka
+	coat_of_arms = {
+		religion = concordanist
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9034276 = { name="Wanqiu" culture=hakka
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 9035016 = { name="Cai" culture=gan }
 9035017 = { name="Hu" culture=gan }

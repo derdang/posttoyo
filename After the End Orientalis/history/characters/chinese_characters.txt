@@ -1701,64 +1701,250 @@
 
 ##Min Tai##
 #Fuzhou#
-1044000 = { #King of Fuzhou
-	name = "Yizhun"
-	dynasty = 9058016
-	culture = min
-	religion = mahayana
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+1044000 = { #3rd King of Fuzhou
+	name="Hongzhi"
+    dynasty=9033276 # Feng
+    culture=min
+    religion=mahayana
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=content
+    trait=wroth
+    trait=honest
+    trait=envious
+    trait=gluttonous
+	father=1044005
+    2564.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1044001 = { #Duke of Putian
-	name = "Junxian"
-	dynasty = 9058026
-	culture = min
-	religion = mahayana
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Zhouli"
+    dynasty=9033277 # Zeng
+    culture=min
+    religion=mahayana
+    martial=3
+    diplomacy=3
+    stewardship=2
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=duelist
+    trait=brave
+    trait=proud
+    trait=wroth
+    trait=diligent
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1044002 = { #Duke of Nanping
-	name = "Zhongting"
-	dynasty = 9058077
-	culture = min
-	religion = ruist
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Qirui"
+    dynasty=9033276 # Feng
+    culture=min
+    religion=ruist
+    martial=6
+    diplomacy=4
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=grey_eminence
+    trait=quick
+    trait=ambitious
+    trait=gregarious
+    trait=envious
+    trait=temperate
+	father=1044005
+    2576.1.1={birth=yes}
+	2600.1.1={effect={add_lover=1045000}}
+    2700.1.1={death=yes}
 }
-1044003 = { #Count of Wuyishan
-	name = "Ziyi"
-	dynasty = 9058125
-	culture = min
-	religion = ruist
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+1044003 = { #Count of Zhenghe and Wuyishan
+	name="Kaixiang"
+    dynasty=9033017 # Tsui
+    culture=min
+    religion=mahayana
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=misguided_warrior
+    trait=wroth
+    trait=cruel
+    trait=honest
+    trait=arbitrary
+    trait=proud
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1044005 = { #2nd King of Fuzhou
+	name="Xianggao"
+    dynasty=9033276 # Feng
+    culture=min
+    religion=ruist
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=greedy
+    trait=diligent
+    trait=honest
+	father=1044006
+    2529.1.1={birth=yes}
+    2595.1.1={death=yes}
+}
+1044006 = { #1st King of Fuzhou
+	name="Shaokuan"
+    dynasty=9033276 # Feng
+    culture=taiwanese
+    religion=sanmin
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=brave
+    trait=diligent
+    trait=envious
+    2498.1.1={birth=yes}
+    2560.1.1={death=yes}
+}
+1044007 = { #Marshal of Fuzhou
+	name="Picheng"
+    dynasty=9034275 # Chen
+    culture=hakka
+    religion=concordanist
+    martial=6
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=brilliant_strategist
+    trait=scarred_high
+    trait=duelist
+    trait=patient
+    trait=diligent
+    trait=robust
+    trait=gluttonous
+    trait=chaste
+    2460.1.1={birth=yes}
+	2599.1.1={
+		employer=1044000
+		effect={give_job_title=job_marshal}
+	}
+	2600.1.1={effect={add_friend=1044000}}
+    2700.1.1={death=yes}
+}
+1044008 = { #Count of Fuding and Fu’an
+	name="Zhuo"
+    dynasty=9033018 # Lin
+    culture=min
+    religion=ruist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=underhanded_rogue
+    trait=gregarious
+    trait=kind
+    trait=diligent
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 #Zhangxia#
-1045000 = { #Duke of Longyan
-	name = "Jing"
-	dynasty = 9058091
-	culture = min
-	religion = mahayana
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+1045000 = { #Duchess of Longyan
+	name="Xiaopei"
+    dynasty=9034276 # Wanqiu
+    female=yes
+    culture=hakka
+    religion=mahayana
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=socializer
+    trait=gregarious
+    trait=charitable
+    trait=rude
+    trait=ambitious
+    trait=diligent
+    trait=proud
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1045001 = { #Duke of Sanming
-	name = "Ming"
-	dynasty = 9058120
-	culture = min
-	religion = ruist
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Zhen"
+    dynasty=9033279 # Zou
+    culture=min
+    religion=ruist
+    martial=3
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=misguided_warrior
+    trait=strong
+    trait=wroth
+    trait=zealous
+    trait=lustful
+    trait=just
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1045002 = { #Count of Yongchun
-	name = "Wenliang"
-	dynasty = 9058135
-	culture = min
-	religion = mahayana
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Peiyu"
+    dynasty=9033278 # Shu
+    female=yes
+    culture=min
+    religion=mahayana
+    martial=3
+    diplomacy=4
+    stewardship=3
+    intrigue=2
+    learning=3
+    trait=elusive_shadow
+    trait=schemer
+    trait=humble
+    trait=diligent
+    trait=deceitful
+    trait=ambitious
+    2579.1.1={birth=yes}
+	2600.1.1={effect={add_friend=1045000}}
+    2700.1.1={death=yes}
 }
+1045003 = { #King of Zhangxia
+	name="Shoupan"
+    dynasty=9034276 # Wanqiu
+    culture=hakka
+    religion=mahayana
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=proud
+    trait=kind
+    2225.1.1={birth=yes}
+    2588.1.1={
+		death={
+			death_reason=death_battle
+			killer=1044007 #Marshal Chen
+		}
+	}
+}
+
 ##Zhejiang##
 
 #Dong'ou#
