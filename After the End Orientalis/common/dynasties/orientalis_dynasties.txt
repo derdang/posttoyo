@@ -4643,7 +4643,20 @@ coat_of_arms = {
 1972113 = { name="Sung" culture=macanese }
 1972114 = { name="Yuen" culture=macanese }
 1972115 = { name="Ngai" culture=macanese }
-1972116 = { name="Hao" culture=macanese }
+1972116 = { name="Hao" culture=macanese
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1972117 = { name="Sheh" culture=macanese }
 1972118 = { name="Yue" culture=macanese }
 1972119 = { name="Liu" culture=macanese }
@@ -16143,6 +16156,7 @@ coat_of_arms = {
 2498022 = { name="Yaaj" culture=miao }
 2498023 = { name="Yaj" culture=miao }
 2498024 = { name="Xyooj" culture=miao }
+2498025 = { name="Shen" culture=miao religion=ua_dab used_for_random=no}
 
 2499000 = { name="Xiong" culture=hmu }
 2499001 = { name="Wang" culture=hmu }

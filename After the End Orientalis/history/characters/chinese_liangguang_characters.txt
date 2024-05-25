@@ -7,29 +7,29 @@
 ### Ge line and family
 2620001 ={ #  Ge1
 	name="Ge"
-	dynasty=1972116 # Hao-Macanese
-	culture=highlander
-	religion=jibenyuanze
-	martial=19
-	diplomacy=15
-	stewardship=16
-	intrigue=20
-	learning=15
-	trait=brilliant_strategist
-	trait=ambitious
-	trait=genius
-	trait=legendary
-	#occluded=yes
-	disallow_random_traits = yes
-	2001.1.1={birth=yes}
-	2016.2.15={culture=cantonese}
-	2101.1.1={death=yes}
+    dynasty=1972116 # Hao
+    culture=highlander
+    religion=jibenyuanze
+    martial=19
+    diplomacy=15
+    stewardship=16
+    intrigue=20
+    learning=15
+    trait=brilliant_strategist
+    trait=ambitious
+    trait=genius
+    trait=legendary
+    occluded=yes
+    disallow_random_traits = yes
+    2001.1.1={birth=yes}
+    2016.2.15={culture=cantonese}
+    2101.1.1={death=yes}
 }
 2620002 ={ # papa Ge2
 	name="Ge"
 	dynasty=1972116 # Hao-Macanese
 	culture=highlander
-	religion=ruist #ruist/secret JBYZ
+	religion=ruist
 	secret_religion=jibenyuanze
 	martial=9
 	diplomacy=9
@@ -39,17 +39,22 @@
 	trait=skilled_tactician
 	trait=shrewd
 	trait=ambitious
+	father=2620005
 	2577.2.15={birth=yes}
 	2595.2.15={culture=cantonese}
 	2598.12.1={
 		add_spouse = 2620012
+		effect={
+			add_rival=2620102
+			add_rival=2633001
+		}
 	}
 }
 2620003 ={ # baby Ge3
 	name="Ge"
 	dynasty=1972116 # Hao-Macanese
 	culture=highlander
-	religion=ruist #ruist/secret JBYZ
+	religion=ruist
 	martial=5
 	diplomacy=6
 	stewardship=7
@@ -61,11 +66,55 @@
 	2600.1.21={birth=yes}
 	2601.2.15={culture=cantonese}
 }
+2620004 ={ # Son of the Hao Ge Guangzhou
+	name="Mole"
+    dynasty=1972116 # Hao
+    culture=highlander
+    religion=taoist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=10
+    trait=underhanded_rogue        
+    trait=devout
+    trait=immortal
+    trait=shrewd
+    trait=legendary
+    occluded=yes
+	father=2620001
+    2100.1.1={birth=yes}
+    2100.2.15={culture=cantonese}
+    2525.1.1={
+			death={
+			death_reason=death_vanished
+		}
+	}
+}
+2620005 ={ # Son of Mole
+	name="Cui"
+    dynasty=1972116 # Hao
+    culture=highlander
+    religion=ruist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier        
+    trait=content
+    trait=wroth
+    trait=shrewd
+	father=2620004
+    2520.1.1={birth=yes}
+    2520.2.15={culture=cantonese}
+    2595.1.1={death=yes}
+}
 2620012 ={ # mom Ge2
 	name="Girle"
 	culture=highlander
 	female=yes
-	religion=ruist #ruist/secret JBYZ
+	religion=ruist
 	secret_religion=jibenyuanze
 	martial=5
 	diplomacy=9
@@ -75,35 +124,50 @@
 	trait=quick
 	2580.1.15={birth=yes}
 }
-2620101 ={ # Chen of Dongjiang
-	name="Tairen"
-	dynasty=9051026
-	culture=cantonese
-	religion=ruist
-	martial=8
-	diplomacy=11
-	stewardship=10
-	intrigue=9
-	learning=9
-	trait=grey_eminence
-	trait=wroth
-	trait=zealous
-	2584.1.9={birth=yes}
+2620101 ={ # King of Dongjiang
+	name="Zehua"
+    dynasty=9051286 # Yong
+    culture=cantonese
+    religion=ruist
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=skilled_tactician
+    trait=brave
+    trait=arbitrary
+    trait=wroth
+    trait=gregarious
+    trait=envious
+    trait=rude
+    trait=cynical
+	give_nickname=nick_the_vulgar
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2620102 ={ # Chen of Beijiang
-	name="Yuan"
-	dynasty=9051026
-	culture=cantonese
-	religion=ruist
-	martial=6
-	diplomacy=8
-	stewardship=9
-	intrigue=5
-	learning=6
-	trait=thrifty_clerk
-	trait=charitable
-	trait=content
-	2582.8.5={birth=yes}
+	name="Wenjin"
+    dynasty=9051026 # Chen
+    culture=cantonese
+    religion=ruist
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=gamer
+    trait=brave
+    trait=patient
+    trait=erudite
+    trait=diligent
+    trait=shy
+    trait=honest
+	father=2620005
+    2566.1.1={birth=yes}
+	2599.1.1={add_claim=e_guangdong}
+    2700.1.1={death=yes}
 }
 2620103 ={ #Shenzhen
 	name="Youyi"
@@ -133,19 +197,91 @@
 	religion=ruist
 	2584.8.5={birth=yes}
 }
+2620105 ={ # First Emperor of Yue
+	name="Yongtai"
+    dynasty=xx # Chen
+    culture=cantonese
+    religion=ruist
+    martial=7
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=5
+    trait=skilled_tactician
+    trait=strong
+    trait=honest
+    trait=kind
+    trait=charitable
+    trait=honorable
+    2519.1.1={birth=yes}
+    2575.1.1={death=yes}
+}
+2620106 ={ # Second Emperor of Yue
+	name="Shixin"
+    dynasty=xx # Chen
+    culture=cantonese
+    religion=ruist
+    martial=4
+    diplomacy=6
+    stewardship=6
+    intrigue=5
+    learning=4
+    trait=naive_appeaser
+    trait=drunkard
+    trait=rude
+    trait=patient
+    trait=slothful
+	father=2620105
+    2540.1.1={birth=yes}
+    2598.1.1={
+		death={
+			death_reason=death_battle
+			killer=2620002 #Emperor Hao Ge
+		}
+	}
+}
 2620201 ={ #Foshan
-	name="Ming"
-	dynasty=9051258
-	culture=cantonese
-	religion=shenist
-	martial=10
-	diplomacy=8
-	stewardship=9
-	intrigue=7
-	learning=10
-	trait=brilliant_strategist
-	trait=quick
-	2588.9.1={birth=yes}
+	name="Yun"
+    dynasty=9051283 # Xue
+    culture=cantonese
+    religion=ruist
+    martial=2
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=9
+    trait=mastermind_theologian
+    trait=scholar
+    trait=diligent
+    trait=erudite
+    trait=patient
+    trait=just
+    trait=proud
+    trait=honest
+	give_nickname=nick_the_sage
+    2554.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2620202 ={ #Gaoyao
+	name="Suzhen"
+    dynasty=9051284 # Bai
+    female=yes
+    culture=cantonese
+    religion=shenist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=scholarly_theologian
+    trait=fair
+    trait=seductress
+    trait=devout
+    trait=deceitful
+    trait=shrewd
+    trait=stubborn
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2620204={ #Yantian-Dapeng
 	name="Chapman"
@@ -186,49 +322,73 @@
     2600.1.1={death=yes}
 }
 2620302 ={ #Leizhou
-	name="Jingjiu"
-	dynasty=9033016
-	culture=min
-	religion=ruist
-	martial=10
-	diplomacy=8
-	stewardship=9
-	intrigue=9
-	learning=10
-	trait=brilliant_strategist
-	trait=administrator
-	2589.1.12={birth=yes}
-	2660.1.1={death=yes}
+	name="Nanhua"
+    dynasty=9051291 # Lao
+    culture=cantonese
+    religion=ruist
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=brilliant_strategist
+    trait=inspiring_leader
+    trait=robust
+    trait=arbitrary
+    trait=ambitious
+    trait=greedy
+    trait=proud
+    trait=brave
+    trait=lustful
+	give_nickname=nick_the_bandit
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2620303 ={ #Duke of Shanwei
-	name="Zhan"
-	dynasty=9051112
-	culture=cantonese
-	religion=ruist
-	martial=10
-	diplomacy=8
-	stewardship=9
-	intrigue=9
-	learning=10
-	trait=underhanded_rogue
-	trait=schemer
-	2580.7.22={birth=yes}
-	2660.1.1={death=yes}
+	name="Jiongming"
+    dynasty=xx # Huang
+    culture=cantonese
+    religion=ruist
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=skilled_tactician
+    trait=mystic
+    trait=rude
+    trait=wroth
+    trait=envious
+    trait=charitable
+    trait=cynical
+    trait=honest
+    trait=arbitrary
+	give_nickname=nick_the_rebel
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-2620304 ={ #Count of Wuhua-Meijiang
-	name="Yuan"
-	dynasty=9034027
-	culture=hakka
-	religion=ruist
-	martial=10
-	diplomacy=8
-	stewardship=9
-	intrigue=9
-	learning=10
-	trait=intricate_webweaver
-	trait=seducer
-	2584.10.1={birth=yes}
-	2660.1.1={death=yes}
+2620304 ={ #Countess of Shenshan
+	name="Yaoji"
+    dynasty=9051288 # Wu
+    female=yes
+    culture=cantonese
+    religion=ruist
+    secret_religion=gongye_shenjiao
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=one_handed
+    trait=honest
+    trait=shrewd
+    trait=groomed
+    trait=ambitious
+    trait=patient
+    trait=gregarious
+    2586.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2620305 ={ #Current Red Fleet Lord
 	name="Yang"
