@@ -10,71 +10,198 @@
 
 ###Macau####
 1972000 = {
-	name = "Hau-Yin"
+	name="Arnaldo"
 	dynasty = 1972000 #Ho
-	culture = macanese
-	religion = catholic
-	trait = ambitious
-	trait = greedy
-	2590.3.13 = {birth = yes}
-	2650.1.1 = {death = yes}
+	culture=macanese
+    religion=catholic
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=midas_touched
+    trait=cynical
+    trait=diligent
+    trait=shrewd
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1972001 = {
+	name="Tianbao"
+    dynasty=9051282 # Cheng
+    culture=cantonese
+    religion=wokou
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=tough_soldier
+    trait=scarred_high
+    trait=brave
+    trait=wroth
+    trait=diligent
+    trait=proud
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1972002 = {
+	name="Sabrina"
+    dynasty=1972154 # Leong
+    female=yes
+    culture=macanese
+    religion=shenist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=charismatic_negotiator
+    trait=groomed
+    trait=proud
+    trait=greedy
+    trait=envious
+	give_nickname=nick_the_princess
+    2586.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1972003 = {
+	name="Domingos"
+    dynasty=1972155 # de Souza
+    culture=macanese
+    religion=catholic
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=flamboyant_schemer
+    trait=devout
+    trait=diligent
+    trait=patient
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1972004 = {
+	name="David"
+    dynasty=1972156 # Collaquo
+    culture=macanese
+    religion=ruist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=underhanded_rogue
+    trait=ugly
+    trait=gregarious
+    trait=charitable
+    trait=patient
+    trait=envious
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 ###Hong Kong Republic####
-1842000 = {
-	name = "Chiu-Wai"
-	dynasty = 1842056 #Leung
-	culture = hong_konger
-	religion = ruist
-	trait = charismatic_negotiator
-	trait = ambitious
-	trait = musician
-	2580.3.13 = {birth = yes}
-	2650.1.1 = {death = yes}
+1842000 = { #Head of House Shaw
+	name="Richard"
+    dynasty=1842056 # Shaw
+    culture=hong_konger
+    religion=ruist
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=martial_cleric
+    trait=ambitious
+    trait=just
+    trait=kind
+    trait=charitable
+    trait=proud
+    trait=honest
+    2564.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1842001 = {
-	name = "Fu-sheng"
-	dynasty = 1842138 #Cheung
-	culture = hong_konger
-	religion = mahayana
-	trait = ambitious
-	trait = skilled_tactician
-	trait = wroth
-	2580.3.13 = {birth = yes}
-	2650.1.1 = {death = yes}
+1842001 = { #Head of the House Lee
+	name="Preston"
+    dynasty=1842138 # Lee
+    culture=hong_konger
+    religion=mahayana
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=midas_touched
+    trait=greedy
+    trait=proud
+    trait=ambitious
+    trait=gregarious
+    trait=diligent
+    2571.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1842002 = {
-	name = "Yìxian"
-	dynasty = 1842000 #Au
-	culture = hong_konger
-	religion = concordanist
-	trait = scholarly_theologian
-	trait = pious
-	trait = erudite
-	2580.3.13 = {birth = yes}
-	2650.1.1 = {death = yes}
+1842002 = { #House of Kao
+	name="Carl"
+    dynasty=1842000 # Kao
+    culture=hong_konger
+    religion=catholic
+    martial=3
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=scholarly_theologian
+    trait=genius
+    trait=scholar
+    trait=cynical
+    trait=diligent
+    trait=patient
+    trait=proud
+    trait=content
+    2558.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1842003 = { #Jackie Chan
-	name = "Kong-sang"
-	dynasty = 1842040 #Fang
-	culture = hong_konger
-	religion = ruist
-	trait = fortune_builder
-	trait = ambitious
-	trait = brave
-	trait = diligent
-	2570.4.7 = {birth = yes}
-	2600.1.1 = {culture = cantonese}
-	2650.1.1 = {death = yes}
+1842003 = { #House of Lam
+	name="Yeuk-wah"
+    dynasty=1842040 # Lam
+    female=yes
+    culture=cantonese
+    religion=taoist
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=duelist
+    trait=wroth
+    trait=devout
+    trait=deceitful
+    trait=cruel
+    2586.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1842004 = { #Lu Dongbin Homage
-	name = "Dexuan"
-	dynasty = 1842052 #Lui
-	culture = cantonese
-	religion = taoist
-	trait = ambitious
-	2580.3.13 = {birth = yes}
-	2650.1.1 = {death = yes}
+1842004 = { #House of Wong
+	name="Kwok-yung"
+    dynasty=1842052 # Wong
+    culture=hong_konger
+    religion=concordanist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=physician
+    trait=humble
+    trait=diligent
+    trait=cruel
+    trait=devout
+    trait=erudite
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 #Denzhou
 1953000 = { #Duke of Denzhou

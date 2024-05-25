@@ -3820,7 +3820,20 @@ coat_of_arms = {
 1597058 = { name="Soh" culture=hangugin }
 1597059 = { name="Seol" culture=hangugin }
 1597060 = { name="Sun" culture=hangugin }
-1597061 = { name="Ma" culture=hangugin }
+1597061 = { name="Moo-Chi" culture=hangugin
+	coat_of_arms = {
+		religion = wokou
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1597062 = { name="Gil" culture=hangugin }
 1597063 = { name="Yun" culture=hangugin }
 1597064 = { name="Wi" culture=hangugin }
@@ -4110,160 +4123,160 @@ coat_of_arms = {
 1598151 = { name="Man" culture=chosunin }
 1598152 = { name="Goo" culture=chosunin }
 
-1597000 = { name="Kim" culture=chaoxianzu }
-1597001 = { name="Lee" culture=chaoxianzu }
-1597002 = { name="Park" culture=chaoxianzu }
-1597003 = { name="Jung" culture=chaoxianzu }
-1597004 = { name="Choi" culture=chaoxianzu }
-1597005 = { name="Cho" culture=chaoxianzu }
-1597006 = { name="Kang" culture=chaoxianzu }
-1597007 = { name="Jang" culture=chaoxianzu }
-1597008 = { name="Yoon" culture=chaoxianzu }
-1597009 = { name="Im" culture=chaoxianzu }
-1597010 = { name="Shin" culture=chaoxianzu }
-1597011 = { name="Yu" culture=chaoxianzu }
-1597012 = { name="Han" culture=chaoxianzu }
-1597013 = { name="O" culture=chaoxianzu }
-1597014 = { name="Moon" culture=chaoxianzu }
-1597015 = { name="Ban" culture=chaoxianzu }
-1597016 = { name="Seo" culture=chaoxianzu }
-1597017 = { name="Jeon" culture=chaoxianzu }
-1597018 = { name="Ki" culture=chaoxianzu }
-1597019 = { name="Kwon" culture=chaoxianzu }
-1597020 = { name="Ahn" culture=chaoxianzu }
-1597021 = { name="Song" culture=chaoxianzu }
-1597022 = { name="Hong" culture=chaoxianzu }
-1597023 = { name="Yang" culture=chaoxianzu }
-1597024 = { name="Ko" culture=chaoxianzu }
-1597025 = { name="Moon" culture=chaoxianzu }
-1597026 = { name="Son" culture=chaoxianzu }
-1597027 = { name="Bae" culture=chaoxianzu }
-1597028 = { name="Paik" culture=chaoxianzu }
-1597029 = { name="Heo" culture=chaoxianzu }
-1597030 = { name="No" culture=chaoxianzu }
-1597031 = { name="Nam" culture=chaoxianzu }
-1597032 = { name="Sim" culture=chaoxianzu }
-1597033 = { name="Ju" culture=chaoxianzu }
-1597034 = { name="Ku" culture=chaoxianzu }
-1597035 = { name="Kwak" culture=chaoxianzu }
-1597036 = { name="Sung" culture=chaoxianzu }
-1597037 = { name="Woo" culture=chaoxianzu }
-1597038 = { name="Cha" culture=chaoxianzu }
-1597039 = { name="Jin" culture=chaoxianzu }
-1597040 = { name="Min" culture=chaoxianzu }
-1597041 = { name="Yoo" culture=chaoxianzu }
-1597042 = { name="Na" culture=chaoxianzu }
-1597043 = { name="Ji" culture=chaoxianzu }
-1597044 = { name="Um" culture=chaoxianzu }
-1597045 = { name="Byun" culture=chaoxianzu }
-1597046 = { name="Chae" culture=chaoxianzu }
-1597047 = { name="Won" culture=chaoxianzu }
-1597048 = { name="Chun" culture=chaoxianzu }
-1597049 = { name="Chon" culture=chaoxianzu }
-1597050 = { name="Kong" culture=chaoxianzu }
-1597051 = { name="Hyun" culture=chaoxianzu }
-1597052 = { name="Yuh" culture=chaoxianzu }
-1597053 = { name="Ham" culture=chaoxianzu }
-1597054 = { name="Yum" culture=chaoxianzu }
-1597055 = { name="Seok" culture=chaoxianzu }
-1597056 = { name="Chu" culture=chaoxianzu }
-1597057 = { name="Doh" culture=chaoxianzu }
-1597058 = { name="Soh" culture=chaoxianzu }
-1597059 = { name="Seol" culture=chaoxianzu }
-1597060 = { name="Sun" culture=chaoxianzu }
-1597061 = { name="Ma" culture=chaoxianzu }
-1597062 = { name="Gil" culture=chaoxianzu }
-1597063 = { name="Yun" culture=chaoxianzu }
-1597064 = { name="Wi" culture=chaoxianzu }
-1597065 = { name="Pyo" culture=chaoxianzu }
-1597066 = { name="Myung" culture=chaoxianzu }
-1597067 = { name="Mo" culture=chaoxianzu }
-1597068 = { name="Mok" culture=chaoxianzu }
-1597069 = { name="Myo" culture=chaoxianzu }
-1597070 = { name="Moo" culture=chaoxianzu }
-1597071 = { name="Moobon" culture=chaoxianzu }
-1597072 = { name="Muk" culture=chaoxianzu }
-1597073 = { name="Ra" culture=chaoxianzu }
-1597074 = { name="Wang" culture=chaoxianzu }
-1597075 = { name="Geum" culture=chaoxianzu }
-1597076 = { name="Ok" culture=chaoxianzu }
-1597077 = { name="Yuk" culture=chaoxianzu }
-1597078 = { name="In" culture=chaoxianzu }
-1597079 = { name="Maeng" culture=chaoxianzu }
-1597080 = { name="Je" culture=chaoxianzu }
-1597081 = { name="Namgung" culture=chaoxianzu }
-1597082 = { name="Tak" culture=chaoxianzu }
-1597083 = { name="Gook" culture=chaoxianzu }
-1597084 = { name="Uh" culture=chaoxianzu }
-1597085 = { name="Kyung" culture=chaoxianzu }
-1597086 = { name="Eun" culture=chaoxianzu }
-1597087 = { name="Pyon" culture=chaoxianzu }
-1597088 = { name="Yong" culture=chaoxianzu }
-1597089 = { name="Ye" culture=chaoxianzu }
-1597090 = { name="Bong" culture=chaoxianzu }
-1597091 = { name="Pu" culture=chaoxianzu }
-1597092 = { name="Pi" culture=chaoxianzu }
-1597093 = { name="Sah" culture=chaoxianzu }
-1597094 = { name="Hwangbo" culture=chaoxianzu }
-1597095 = { name="Ga" culture=chaoxianzu }
-1597096 = { name="Bok" culture=chaoxianzu }
-1597097 = { name="Tae" culture=chaoxianzu }
-1597098 = { name="Mok" culture=chaoxianzu }
-1597099 = { name="Hyung" culture=chaoxianzu }
-1597100 = { name="Kye" culture=chaoxianzu }
-1597101 = { name="Du" culture=chaoxianzu }
-1597102 = { name="Gam" culture=chaoxianzu }
-1597103 = { name="Dong" culture=chaoxianzu }
-1597104 = { name="Ho" culture=chaoxianzu }
-1597105 = { name="Pin" culture=chaoxianzu }
-1597106 = { name="Chegal" culture=chaoxianzu }
-1597107 = { name="Eum" culture=chaoxianzu }
-1597108 = { name="On" culture=chaoxianzu }
-1597109 = { name="Sagong" culture=chaoxianzu }
-1597110 = { name="Si" culture=chaoxianzu }
-1597111 = { name="Bom" culture=chaoxianzu }
-1597112 = { name="Sunwoo" culture=chaoxianzu }
-1597113 = { name="Seung" culture=chaoxianzu }
-1597114 = { name="Jwa" culture=chaoxianzu }
-1597115 = { name="Pang" culture=chaoxianzu }
-1597116 = { name="Kan" culture=chaoxianzu }
-1597117 = { name="Sang" culture=chaoxianzu }
-1597118 = { name="Gal" culture=chaoxianzu }
-1597119 = { name="Seomun" culture=chaoxianzu }
-1597120 = { name="Kyon" culture=chaoxianzu }
-1597121 = { name="Dan" culture=chaoxianzu }
-1597122 = { name="Soon" culture=chaoxianzu }
-1597123 = { name="Dang" culture=chaoxianzu }
-1597124 = { name="Tang" culture=chaoxianzu }
-1597125 = { name="Chang" culture=chaoxianzu }
-1597126 = { name="Ong" culture=chaoxianzu }
-1597127 = { name="Hwa" culture=chaoxianzu }
-1597128 = { name="Ping" culture=chaoxianzu }
-1597129 = { name="Chong" culture=chaoxianzu }
-1597130 = { name="Pung" culture=chaoxianzu }
-1597131 = { name="Kung" culture=chaoxianzu }
-1597132 = { name="Yop" culture=chaoxianzu }
-1597133 = { name="Ah" culture=chaoxianzu }
-1597134 = { name="Pyong" culture=chaoxianzu }
-1597135 = { name="Dokgo" culture=chaoxianzu }
-1597136 = { name="Nae" culture=chaoxianzu }
-1597137 = { name="Pan" culture=chaoxianzu }
-1597138 = { name="Ree" culture=chaoxianzu }
-1597139 = { name="Chu" culture=chaoxianzu }
-1597140 = { name="Mae" culture=chaoxianzu }
-1597141 = { name="Gwok" culture=chaoxianzu }
-1597142 = { name="Nang" culture=chaoxianzu }
-1597143 = { name="Dongbang" culture=chaoxianzu }
-1597144 = { name="Pil" culture=chaoxianzu }
-1597145 = { name="Muk" culture=chaoxianzu }
-1597146 = { name="Geun" culture=chaoxianzu }
-1597147 = { name="Chom" culture=chaoxianzu }
-1597148 = { name="Hae" culture=chaoxianzu }
-1597149 = { name="Tan" culture=chaoxianzu }
-1597150 = { name="Rang" culture=chaoxianzu }
-1597151 = { name="Choe" culture=chaoxianzu }
-1597152 = { name="Jeong" culture=chaoxianzu }
-1598400 = { name="Pugay" culture=chaoxianzu 
+1599000 = { name="Kim" culture=chaoxianzu }
+1599001 = { name="Lee" culture=chaoxianzu }
+1599002 = { name="Park" culture=chaoxianzu }
+1599003 = { name="Jung" culture=chaoxianzu }
+1599004 = { name="Choi" culture=chaoxianzu }
+1599005 = { name="Cho" culture=chaoxianzu }
+1599006 = { name="Kang" culture=chaoxianzu }
+1599007 = { name="Jang" culture=chaoxianzu }
+1599008 = { name="Yoon" culture=chaoxianzu }
+1599009 = { name="Im" culture=chaoxianzu }
+1599010 = { name="Shin" culture=chaoxianzu }
+1599011 = { name="Yu" culture=chaoxianzu }
+1599012 = { name="Han" culture=chaoxianzu }
+1599013 = { name="O" culture=chaoxianzu }
+1599014 = { name="Moon" culture=chaoxianzu }
+1599015 = { name="Ban" culture=chaoxianzu }
+1599016 = { name="Seo" culture=chaoxianzu }
+1599017 = { name="Jeon" culture=chaoxianzu }
+1599018 = { name="Ki" culture=chaoxianzu }
+1599019 = { name="Kwon" culture=chaoxianzu }
+1599020 = { name="Ahn" culture=chaoxianzu }
+1599021 = { name="Song" culture=chaoxianzu }
+1599022 = { name="Hong" culture=chaoxianzu }
+1599023 = { name="Yang" culture=chaoxianzu }
+1599024 = { name="Ko" culture=chaoxianzu }
+1599025 = { name="Moon" culture=chaoxianzu }
+1599026 = { name="Son" culture=chaoxianzu }
+1599027 = { name="Bae" culture=chaoxianzu }
+1599028 = { name="Paik" culture=chaoxianzu }
+1599029 = { name="Heo" culture=chaoxianzu }
+1599030 = { name="No" culture=chaoxianzu }
+1599031 = { name="Nam" culture=chaoxianzu }
+1599032 = { name="Sim" culture=chaoxianzu }
+1599033 = { name="Ju" culture=chaoxianzu }
+1599034 = { name="Ku" culture=chaoxianzu }
+1599035 = { name="Kwak" culture=chaoxianzu }
+1599036 = { name="Sung" culture=chaoxianzu }
+1599037 = { name="Woo" culture=chaoxianzu }
+1599038 = { name="Cha" culture=chaoxianzu }
+1599039 = { name="Jin" culture=chaoxianzu }
+1599040 = { name="Min" culture=chaoxianzu }
+1599041 = { name="Yoo" culture=chaoxianzu }
+1599042 = { name="Na" culture=chaoxianzu }
+1599043 = { name="Ji" culture=chaoxianzu }
+1599044 = { name="Um" culture=chaoxianzu }
+1599045 = { name="Byun" culture=chaoxianzu }
+1599046 = { name="Chae" culture=chaoxianzu }
+1599047 = { name="Won" culture=chaoxianzu }
+1599048 = { name="Chun" culture=chaoxianzu }
+1599049 = { name="Chon" culture=chaoxianzu }
+1599050 = { name="Kong" culture=chaoxianzu }
+1599051 = { name="Hyun" culture=chaoxianzu }
+1599052 = { name="Yuh" culture=chaoxianzu }
+1599053 = { name="Ham" culture=chaoxianzu }
+1599054 = { name="Yum" culture=chaoxianzu }
+1599055 = { name="Seok" culture=chaoxianzu }
+1599056 = { name="Chu" culture=chaoxianzu }
+1599057 = { name="Doh" culture=chaoxianzu }
+1599058 = { name="Soh" culture=chaoxianzu }
+1599059 = { name="Seol" culture=chaoxianzu }
+1599060 = { name="Sun" culture=chaoxianzu }
+1599061 = { name="Ma" culture=chaoxianzu }
+1599062 = { name="Gil" culture=chaoxianzu }
+1599063 = { name="Yun" culture=chaoxianzu }
+1599064 = { name="Wi" culture=chaoxianzu }
+1599065 = { name="Pyo" culture=chaoxianzu }
+1599066 = { name="Myung" culture=chaoxianzu }
+1599067 = { name="Mo" culture=chaoxianzu }
+1599068 = { name="Mok" culture=chaoxianzu }
+1599069 = { name="Myo" culture=chaoxianzu }
+1599070 = { name="Moo" culture=chaoxianzu }
+1599071 = { name="Moobon" culture=chaoxianzu }
+1599072 = { name="Muk" culture=chaoxianzu }
+1599073 = { name="Ra" culture=chaoxianzu }
+1599074 = { name="Wang" culture=chaoxianzu }
+1599075 = { name="Geum" culture=chaoxianzu }
+1599076 = { name="Ok" culture=chaoxianzu }
+1599077 = { name="Yuk" culture=chaoxianzu }
+1599078 = { name="In" culture=chaoxianzu }
+1599079 = { name="Maeng" culture=chaoxianzu }
+1599080 = { name="Je" culture=chaoxianzu }
+1599081 = { name="Namgung" culture=chaoxianzu }
+1599082 = { name="Tak" culture=chaoxianzu }
+1599083 = { name="Gook" culture=chaoxianzu }
+1599084 = { name="Uh" culture=chaoxianzu }
+1599085 = { name="Kyung" culture=chaoxianzu }
+1599086 = { name="Eun" culture=chaoxianzu }
+1599087 = { name="Pyon" culture=chaoxianzu }
+1599088 = { name="Yong" culture=chaoxianzu }
+1599089 = { name="Ye" culture=chaoxianzu }
+1599090 = { name="Bong" culture=chaoxianzu }
+1599091 = { name="Pu" culture=chaoxianzu }
+1599092 = { name="Pi" culture=chaoxianzu }
+1599093 = { name="Sah" culture=chaoxianzu }
+1599094 = { name="Hwangbo" culture=chaoxianzu }
+1599095 = { name="Ga" culture=chaoxianzu }
+1599096 = { name="Bok" culture=chaoxianzu }
+1599097 = { name="Tae" culture=chaoxianzu }
+1599098 = { name="Mok" culture=chaoxianzu }
+1599099 = { name="Hyung" culture=chaoxianzu }
+1599100 = { name="Kye" culture=chaoxianzu }
+1599101 = { name="Du" culture=chaoxianzu }
+1599102 = { name="Gam" culture=chaoxianzu }
+1599103 = { name="Dong" culture=chaoxianzu }
+1599104 = { name="Ho" culture=chaoxianzu }
+1599105 = { name="Pin" culture=chaoxianzu }
+1599106 = { name="Chegal" culture=chaoxianzu }
+1599107 = { name="Eum" culture=chaoxianzu }
+1599108 = { name="On" culture=chaoxianzu }
+1599109 = { name="Sagong" culture=chaoxianzu }
+1599110 = { name="Si" culture=chaoxianzu }
+1599111 = { name="Bom" culture=chaoxianzu }
+1599112 = { name="Sunwoo" culture=chaoxianzu }
+1599113 = { name="Seung" culture=chaoxianzu }
+1599114 = { name="Jwa" culture=chaoxianzu }
+1599115 = { name="Pang" culture=chaoxianzu }
+1599116 = { name="Kan" culture=chaoxianzu }
+1599117 = { name="Sang" culture=chaoxianzu }
+1599118 = { name="Gal" culture=chaoxianzu }
+1599119 = { name="Seomun" culture=chaoxianzu }
+1599120 = { name="Kyon" culture=chaoxianzu }
+1599121 = { name="Dan" culture=chaoxianzu }
+1599122 = { name="Soon" culture=chaoxianzu }
+1599123 = { name="Dang" culture=chaoxianzu }
+1599124 = { name="Tang" culture=chaoxianzu }
+1599125 = { name="Chang" culture=chaoxianzu }
+1599126 = { name="Ong" culture=chaoxianzu }
+1599127 = { name="Hwa" culture=chaoxianzu }
+1599128 = { name="Ping" culture=chaoxianzu }
+1599129 = { name="Chong" culture=chaoxianzu }
+1599130 = { name="Pung" culture=chaoxianzu }
+1599131 = { name="Kung" culture=chaoxianzu }
+1599132 = { name="Yop" culture=chaoxianzu }
+1599133 = { name="Ah" culture=chaoxianzu }
+1599134 = { name="Pyong" culture=chaoxianzu }
+1599135 = { name="Dokgo" culture=chaoxianzu }
+1599136 = { name="Nae" culture=chaoxianzu }
+1599137 = { name="Pan" culture=chaoxianzu }
+1599138 = { name="Ree" culture=chaoxianzu }
+1599139 = { name="Chu" culture=chaoxianzu }
+1599140 = { name="Mae" culture=chaoxianzu }
+1599141 = { name="Gwok" culture=chaoxianzu }
+1599142 = { name="Nang" culture=chaoxianzu }
+1599143 = { name="Dongbang" culture=chaoxianzu }
+1599144 = { name="Pil" culture=chaoxianzu }
+1599145 = { name="Muk" culture=chaoxianzu }
+1599146 = { name="Geun" culture=chaoxianzu }
+1599147 = { name="Chom" culture=chaoxianzu }
+1599148 = { name="Hae" culture=chaoxianzu }
+1599149 = { name="Tan" culture=chaoxianzu }
+1599150 = { name="Rang" culture=chaoxianzu }
+1599151 = { name="Choe" culture=chaoxianzu }
+1599152 = { name="Jeong" culture=chaoxianzu }
+1599153 = { name="Pugay" culture=chaoxianzu 
 	coat_of_arms = {
 		religion = yuilsasang
 		template = 0
@@ -4278,7 +4291,20 @@ coat_of_arms = {
 	}
 }
 
-1842000 = { name="Au" culture=hong_konger }
+1842000 = { name="Kao" culture=hong_konger
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 15
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1842001 = { name="Sek" culture=hong_konger }
 1842002 = { name="Tso" culture=hong_konger }
 1842003 = { name="Lai" culture=hong_konger }
@@ -4318,7 +4344,20 @@ coat_of_arms = {
 1842037 = { name="Ha" culture=hong_konger }
 1842038 = { name="Bu" culture=hong_konger }
 1842039 = { name="Mon" culture=hong_konger }
-1842040 = { name="Fang" culture=hong_konger }
+1842040 = { name="Lam" culture=hong_konger
+	coat_of_arms = {
+		religion = taoist
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1842041 = { name="Tao" culture=hong_konger }
 1842042 = { name="Lin" culture=hong_konger }
 1842043 = { name="Shao" culture=hong_konger }
@@ -4330,11 +4369,37 @@ coat_of_arms = {
 1842049 = { name="Foo" culture=hong_konger }
 1842050 = { name="Zhuang" culture=hong_konger }
 1842051 = { name="Yeung" culture=hong_konger }
-1842052 = { name="Lui" culture=hong_konger }
+1842052 = { name="Wong" culture=hong_konger
+	coat_of_arms = {
+		religion = concordanist
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 16
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1842053 = { name="Chung" culture=hong_konger }
 1842054 = { name="Hung" culture=hong_konger }
 1842055 = { name="To" culture=hong_konger }
-1842056 = { name="Leung" culture=hong_konger }
+1842056 = { name="Shaw" culture=hong_konger
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1842057 = { name="Suen" culture=hong_konger }
 1842058 = { name="Tom" culture=hong_konger }
 1842059 = { name="Zhang" culture=hong_konger }
@@ -4416,7 +4481,20 @@ coat_of_arms = {
 1842135 = { name="Tong" culture=hong_konger }
 1842136 = { name="Wu" culture=hong_konger }
 1842137 = { name="Tuen" culture=hong_konger }
-1842138 = { name="Cheung" culture=hong_konger }
+1842138 = { name="Lee" culture=hong_konger
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1842139 = { name="Shiu" culture=hong_konger }
 1842140 = { name="Hsiao" culture=hong_konger }
 1842141 = { name="Tsui" culture=hong_konger }
@@ -4431,10 +4509,25 @@ coat_of_arms = {
 1842150 = { name="Daiweisi" culture=hong_konger }
 1842151 = { name="Midun" culture=hong_konger }
 1842152 = { name="Tin" culture=hong_konger }
+1842153 = { name="Leung" culture=hong_konger }
+1842154 = { name="Cheung" culture=hong_konger }
 
 1971000 = { name="Tung" culture=bai }
 
-1972000 = { name="Ho" culture=macanese }
+1972000 = { name="Ho" culture=macanese
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1972001 = { name="Sek" culture=macanese }
 1972002 = { name="Tso" culture=macanese }
 1972003 = { name="Lai" culture=macanese }
@@ -4587,7 +4680,49 @@ coat_of_arms = {
 1972150 = { name="Daiweisi" culture=macanese }
 1972151 = { name="Midun" culture=macanese }
 1972152 = { name="Tin" culture=macanese }
-
+1972153 = { name="Ho" culture=macanese }
+1972154 = { name="Leong" culture=macanese
+	coat_of_arms = {
+		religion = shenist
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1972155 = { name="de Souza" culture=macanese
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1972156 = { name="Collaquo" culture=macanese
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 8
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1975000 = { name="Herzog" culture=manmeri
 	coat_of_arms = {
 		religion = concordanist

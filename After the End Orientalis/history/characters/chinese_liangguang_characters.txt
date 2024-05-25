@@ -105,22 +105,26 @@
 	trait=content
 	2582.8.5={birth=yes}
 }
-2620103 ={ #Shenzhen Li
-	name="Jingshu"
-	dynasty=9051120
-	culture=cantonese
-	religion=taoist
-	female=yes
-	martial=7
-	diplomacy=10
-	stewardship=8
-	intrigue=7
-	learning=8
-	trait=scholarly_theologian
-	trait=charitable
-	trait=quick
-	2588.9.1={birth=yes}
+2620103 ={ #Shenzhen
+	name="Youyi"
+    dynasty=9051120 # Zhen
+    female=yes
+    culture=cantonese
+    religion=taoist
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=3
+    trait=grey_eminence
+    trait=fair
+    trait=gregarious
+    trait=patient
+    trait=honest
+    trait=kind
+    2566.1.1={birth=yes}
 	2600.1.1={capital = c_shenzhen}
+    2700.1.1={death=yes}
 }
 2620104 ={ # 
 	name="Wenyu"
@@ -144,41 +148,42 @@
 	2588.9.1={birth=yes}
 }
 2620204={ #Yantian-Dapeng
-	name="Shilian"
-	dynasty=9051016 #Cai
-	culture=cantonese
-	religion=quanzhen
-	martial=10
-	diplomacy=8
-	stewardship=9
-	intrigue=7
-	learning=10
-	trait=underhanded_rogue
-	trait=gregarious
-	trait=envious
-	trait=just
-	trait=honorable
-	disallow_random_traits=yes
-	2574.2.8={birth=yes}
+	name="Chapman"
+    dynasty=9051016 # Chiang
+    culture=cantonese
+    religion=quanzhen
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=skilled_tactician
+    trait=duelist
+    trait=proud
+    trait=gregarious
+    trait=zealous
+    trait=envious
+    2578.1.1={birth=yes}
 	2600.1.1={capital = c_yantian}
-	2650.1.1={death=yes}
+    2700.1.1={death=yes}
 }
 
-2620301 ={ #zhanjiang
-	name="Haigong"
-	dynasty=9053274
-	culture=cantonese
-	religion=wokou
-	martial=10
-	diplomacy=8
-	stewardship=9
-	intrigue=9
-	learning=10
-	trait=brilliant_strategist
-	trait=quick
-	female=yes
-	2586.9.1={birth=yes}
-	2600.1.1={capital = c_mazhang}
+2620301 ={ #Old Red Fleet Lord
+	name="Qi"
+    dynasty=9053274 # Zheng
+    culture=cantonese
+    religion=wokou
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=brilliant_strategist
+    trait=quick
+    trait=brave
+    trait=envious
+    2560.1.1={birth=yes}
+    2600.1.1={death=yes}
 }
 2620302 ={ #Leizhou
 	name="Jingjiu"
@@ -225,7 +230,30 @@
 	2584.10.1={birth=yes}
 	2660.1.1={death=yes}
 }
-## To do : Two Shen-chen (pun intended)
+2620305 ={ #Current Red Fleet Lord
+	name="Yang"
+    dynasty=9053274 # Zheng
+    female=yes
+    culture=cantonese
+    religion=wokou
+    martial=10
+    diplomacy=8
+    stewardship=9
+    intrigue=9
+    learning=10
+    trait=brilliant_strategist
+    trait=quick
+    trait=hedonist
+    trait=envious
+    trait=brave
+    trait=devout
+    trait=charitable
+    trait=honest
+	father=2620301
+    2582.1.1={birth=yes}
+	2600.1.1={capital = c_mazhang}
+    2700.1.1={death=yes}
+}
 
 ##
 2653001 ={ #fusui
@@ -268,10 +296,25 @@
 	2580.1.1={birth=yes}
 }
 2653013 ={
-	name="Fa"
-	dynasty=9051280 #Shu
-	female=yes
-	culture=zhuang
-	religion=wokou
-	2590.1.1={birth=yes}
+	name="Xianggu"
+    dynasty=9051280 #Shu
+    female=yes
+    culture=cantonese
+    religion=wokou
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=skilled_tactician
+    trait=one_eyed
+    trait=duelist
+    trait=bastard
+    trait=brave
+    trait=shy
+    trait=chaste
+    trait=arbitrary
+    trait=cruel
+    2584.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
