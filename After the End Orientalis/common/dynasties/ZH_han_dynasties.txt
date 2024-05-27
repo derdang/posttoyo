@@ -1437,6 +1437,7 @@
 9034249 = { name="Yang" culture=hakka }
 9034258 = { name="Yu" culture=hakka }
 9034271 = { name="Zhang" culture=hakka }
+9034272 = { name="Hsiao" culture=hakka religion=taoist used_for_random=no}
 9034274 = { name="Zheng" culture=hakka }
 9034275 = { name="Chen" culture=hakka
 	coat_of_arms = {
@@ -1466,10 +1467,39 @@
 		}
 	}
 }
+9034277 = { name="Fan" culture=hakka
+	coat_of_arms = {
+		religion = taoist
+		template = 0
+		layer = {
+			texture = 9
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9034278 = { name="Loa" culture=hakka
+	coat_of_arms = {
+		religion = taoist
+		template = 0
+		layer = {
+			texture = 9
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 9035016 = { name="Cai" culture=gan }
 9035017 = { name="Hu" culture=gan }
 9035018 = { name="Ding" culture=gan religion=taoist used_for_random=no}
+9035019 = { name="Geng" culture=gan religion=taoist used_for_random=no}
 9035026 = { name="Chen" culture=gan }
 9035077 = { name="Guo" culture=gan }
 9035091 = { name="Huang" culture=gan }
@@ -1490,6 +1520,48 @@
 		layer = {
 			texture = 6
 			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9035276 = { name="Lao" culture=gan
+	coat_of_arms = {
+		religion = taoist
+		template = 0
+		layer = {
+			texture = 9
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9035277 = { name="Xie" culture=gan
+	coat_of_arms = {
+		religion = taoist
+		template = 0
+		layer = {
+			texture = 9
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9035278 = { name="Zhu" culture=gan
+	coat_of_arms = {
+		religion = taoist
+		template = 0
+		layer = {
+			texture = 9
+			texture_internal = 12
 			emblem = 0
 			color = 0
 			color = 0
