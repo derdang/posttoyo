@@ -1822,6 +1822,20 @@
 		}
 	}
 }
+9051292 = { name="Yi" culture=cantonese
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 9
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 #--Guangxi : 9053
 9053026 = { name="Chen" culture=zhuang }
@@ -1979,6 +1993,35 @@
 9075271 = { name="Zhang" culture=miao }
 9075272 = { name="Zhao" culture=miao }
 9075273 = { name="Ding" culture=miao }
+9075274 = { name="Mo" culture=miao religion = ua_dab used_for_random=no}
+9075275 = { name="Lan" culture=miao
+	coat_of_arms = {
+		religion = ua_dab
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9075276 = { name="Shi" culture=miao
+	coat_of_arms = {
+		religion = ua_dab
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 #Northwest China: 9080
 9080000 = { name="Guo" culture=lanyin }

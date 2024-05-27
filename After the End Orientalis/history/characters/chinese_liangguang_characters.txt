@@ -417,43 +417,78 @@
 
 ##
 2653001 ={ #fusui
-	name="Huanghuang"
-	dynasty=9053125
-	culture=cantonese
-	religion=mo
-	martial=8
-	diplomacy=9
-	stewardship=9
-	intrigue=7
-	learning=10
-	trait=grey_eminence
-	trait=quick
-	female=yes
-	2587.1.1={birth=yes}
+	name="Dahuang"
+    dynasty=1024005 # Zhou
+    culture=zhuang
+    religion=mo
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=thrifty_clerk
+    trait=kind
+    trait=diligent
+    trait=just
+	father=2653014
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2653002 ={ #nanning
-	name="Zhizhong"
-	dynasty=9053077 #Guo
-	culture=zhuang
-	religion=mo
-	martial=10
-	trait=brilliant_strategist
-	trait=strong
-	2584.1.1={birth=yes}
+	name="Shanzuo"
+    dynasty=1024005 # Zhou
+    culture=zhuang
+    religion=mo
+    martial=3
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=charitable
+    trait=honest
+	father=2653014
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2653011 ={ #qinzhou
-	name="Yong"
-	dynasty=9058238
-	culture=min
-	religion=shenist
-	2589.1.1={birth=yes}
+	name="Yongfu"
+    dynasty=1024004 # Liu
+    culture=zhuang
+    religion=shenist
+    martial=6
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=skilled_tactician
+    trait=wroth
+    trait=rude
+    trait=envious
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2653012 ={ #fangcheng, dongxing
-	name="Fa"
-	dynasty=9053091 #Huang
-	culture=zhuang
-	religion=shenist
-	2580.1.1={birth=yes}
+	name="Yongli"
+    dynasty=1024003 # Cen
+    female=yes
+    culture=zhuang
+    religion=shenist
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=intricate_webweaver
+    trait=socializer
+    trait=diligent
+    trait=lustful
+    trait=gregarious
+    trait=deceitful
+	give_nickname=nick_the_baoernai
+    2586.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 2653013 ={
 	name="Xianggu"
@@ -477,4 +512,21 @@
     trait=cruel
     2584.1.1={birth=yes}
     2700.1.1={death=yes}
+}
+2653014 ={
+	name="Saike"
+    dynasty=1024005 # Zhou
+    culture=zhuang
+    religion=mo
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=diligent
+    trait=kind
+    2540.1.1={birth=yes}
+    2585.1.1={death=yes}
 }
