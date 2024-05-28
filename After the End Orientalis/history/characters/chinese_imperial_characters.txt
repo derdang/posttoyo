@@ -1634,17 +1634,97 @@
 }
 
 # Shu
-2661001 ={ #
+2661001 ={ #Head of the Federation of Sichuan
 	name="Zilang"
-	dynasty=9061128 #Liu
-	culture=sichuanese
-	religion=datong
-	martial=9
-	intrigue=8
-	learning=11
-	trait=intricate_webweaver
-	trait=ambitious
-	2583.8.9={birth=yes}
+    dynasty=9061287 # Liu
+    culture=sichuanese
+    religion=datong
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=brilliant_strategist
+    trait=poet
+    trait=scholar
+    trait=ambitious
+    trait=diligent
+    trait=patient
+    trait=devout
+    trait=shrewd
+    2555.1.1={birth=yes}
+	2588.1.1={add_spouse=2661002}
+    2700.1.1={death=yes}
+}
+2661002 ={ #Wife of the President of Sichuan
+	name="Chunxia"
+    dynasty=9061286 # Chanyu
+    female=yes
+    culture=sichuanese
+    religion=datong
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=charismatic_negotiator
+    trait=socializer
+    trait=gregarious
+    trait=kind
+    trait=proud
+    trait=charitable
+    trait=patient
+	father=1033006
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+2661003 ={ #Son of the President of Sichuan
+	name="Qingde"
+    dynasty=9061287 # Liu
+    culture=sichuanese
+    religion=datong
+    martial=6
+    diplomacy=4
+    stewardship=5
+    intrigue=5
+    learning=4
+    trait=mastermind_theologian
+    trait=twin
+    trait=quick
+    trait=devout
+    trait=patient
+    trait=erudite
+    trait=diligent
+	father=2661001
+	mother=2661002
+    2589.1.1={birth=yes}
+	2600.1.1={effect={add_friend=2661004}}
+    2700.1.1={death=yes}
+}
+2661004 ={ #Daughter of the President of Sichuan
+	name="Qingling"
+    dynasty=9061287 # Liu
+    female=yes
+    culture=sichuanese
+    religion=datong
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=grey_eminence
+    trait=twin
+    trait=quick
+    trait=wroth
+    trait=kind
+    trait=lustful
+    trait=gregarious
+    trait=honest
+	father=2661001
+	mother=2661002
+    2589.1.1={birth=yes}
+	2600.1.1={effect={add_friend=2661003}}
+    2700.1.1={death=yes}
 }
 # Qin
 2671001 ={ # Seventh Emperor of Qin

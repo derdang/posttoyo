@@ -1998,11 +1998,14 @@
 # Sichuan
 
 9061007 = { name="Bao" culture=sichuanese }
+9061008 = { name="Yang" culture=sichuanese religion=datong used_for_random=no}
+9061009 = { name="Tong" culture=sichuanese religion=datong used_for_random=no}
+9061010 = { name="Yue" culture=sichuanese religion=rime used_for_random=no}
 9061038 = { name="Deng" culture=sichuanese }
 9061120 = { name="Li" culture=sichuanese }
 9061128 = { name="Liu" culture=sichuanese }
 9061072 = { name="Guan" culture=sichuanese }
-9061082 = { name="He" culture=sichuanese }
+9061082 = { name="He" culture=sichuanese religion=datong used_for_random=no}
 9061135 = { name="Ma" culture=sichuanese }
 9061222 = { name="Wang" culture=sichuanese }
 9061229 = { name="Wu" culture=sichuanese }
@@ -2011,6 +2014,118 @@
 9061271 = { name="Zhang" culture=sichuanese }
 9061272 = { name="Zhao" culture=sichuanese }
 9061283 = { name="Zhuge" culture=sichuanese }
+9061284 = { name="Pan" culture=sichuanese
+	coat_of_arms = {
+		religion = datong
+		template = 0
+		layer = {
+			texture = 9
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9061285 = { name="Min" culture=sichuanese
+	coat_of_arms = {
+		religion = datong
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9061286 = { name="Chanyu" culture=sichuanese
+	coat_of_arms = {
+		religion = datong
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9061287 = { name="Liu" culture=sichuanese
+	coat_of_arms = {
+		religion = datong
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9061288 = { name="Hu" culture=sichuanese
+	coat_of_arms = {
+		religion = datong
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9061289 = { name="Ren" culture=sichuanese
+	coat_of_arms = {
+		religion = datong
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9061290 = { name="Bao" culture=sichuanese
+	coat_of_arms = {
+		religion = datong
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9061291 = { name="Xie" culture=sichuanese
+	coat_of_arms = {
+		religion = datong
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 #-- Xinan / Yunnan : 9070
 
@@ -2134,12 +2249,40 @@
 		}
 	}
 }
+9070293 = { name="Qu" culture=xinan
+	coat_of_arms = {
+		religion = datong
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 9071002 = { name="An" culture=yi }
 9071026 = { name="Chen" culture=yi }
 9071191 = { name="She" culture=yi }
 9071249 = { name="Yang" culture=yi }
 9071271 = { name="Zhang" culture=yi }
+9071272 = { name="An" culture=yi
+	coat_of_arms = {
+		religion = shenist
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 9072222 = { name="Wang" culture=bai }
 9072249 = { name="Yang" culture=bai }

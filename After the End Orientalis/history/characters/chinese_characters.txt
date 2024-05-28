@@ -1282,196 +1282,332 @@
 #Ba#
 
 1033000 = { #King of Ba
-	name="Guofeng"
-	dynasty=9061229
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	culture = sichuanese
-	religion = ruist
-	2576.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Liang"
+    dynasty=9061286 # Chanyu
+    culture=sichuanese
+    religion=datong
+    martial=7
+    diplomacy=7
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=charismatic_negotiator
+    trait=hedonist
+    trait=gregarious
+    trait=charitable
+    trait=lustful
+    trait=slothful
+    trait=honest
+	father=1033006
+    2569.1.1={birth=yes}
+	2600.1.1={effect={add_friend=2661001}}
+    2700.1.1={death=yes}
 }
 1033001 = { #Duke of Lizhou
-	name="Liang"
-	dynasty=9061249
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	culture = sichuanese
-	religion = datong
-	2576.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Keyu"
+    dynasty=9061285 # Min
+    culture=sichuanese
+    religion=datong
+    martial=6
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=4
+    trait=skilled_tactician
+    trait=giant
+    trait=honest
+    trait=charitable
+    trait=greedy
+    trait=trusting
+	give_nickname=nick_the_tall
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1033002 = { #Duke of Dazhou
-	name="Zhaode"
-	dynasty=9070030 #Ba
-	culture = xinan
-	religion = datong
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait = midas_touched
-	trait = authoritative
-	trait = gregarious
-	trait = cynical
-	trait = humble
-	disallow_random_traits = yes
-	2566.11.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Shuang"
+    dynasty=9061284 # Pan
+    culture=sichuanese
+    religion=datong
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=ambitious
+    trait=robust
+    trait=envious
+    trait=wroth
+    trait=diligent
+    trait=just
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1033003 = { #Count of Dazhou
-	name="Shiji"
-	dynasty=9070031 #Gan
-	culture = xinan
-	religion = datong
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait = elusive_shadow
-	trait = honorable
-	trait = slothful
-	trait = charitable
-	trait = shy
-	disallow_random_traits = yes
-	2567.11.12 = {birth = yes}
-	2650.1.1 = {death = yes}
+1033003 = { #Count of Wanyuan
+	name="Songyun"
+    dynasty=9070293 # Qu
+    culture=xinan
+    religion=datong
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=detached_priest
+    trait=cynical
+    trait=erudite
+    trait=slothful
+    2551.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1033004 = { #Count of Guangyan and Bazhong
-	name="Sheng"
-	dynasty=9061082 #He
-	culture = sichuanese
-	religion = datong
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait = thrifty_clerk
-	trait = wroth
-	trait = just
-	trait = gregarious
-	trait = humble
-	disallow_random_traits = yes
-	2564.7.31 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Sixun"
+    dynasty=9061008 # Yang
+    culture=sichuanese
+    religion=datong
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=mystic
+    trait=zealous
+    trait=proud
+    trait=diligent
+    trait=patient
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1033005 = { #Duke of Yibin
-	name="Mingde"
-	dynasty=9061135 #Ma
-	culture = sichuanese
-	religion = datong
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
-	trait = charismatic_negotiator
-	trait = patient
-	trait = cruel
-	trait = gregarious
-	trait = zealous
-	disallow_random_traits = yes
-	2564.7.31 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Ying"
+    dynasty=9061009 # Tong
+    culture=sichuanese
+    religion=datong
+    martial=6
+    diplomacy=5
+    stewardship=5
+    intrigue=6
+    learning=5
+    trait=intricate_webweaver
+    trait=wroth
+    trait=rude
+    trait=deceitful
+    trait=robust
+    trait=diligent
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1033006 = { #Old President of Ba
+	name="Qiang"
+    dynasty=9061286 # Chanyu
+    culture=sichuanese
+    religion=ruist
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=quick
+    trait=brave
+    trait=diligent
+    2550.1.1={birth=yes}
+    2600.1.1={death=yes}
 }
 
 #Shu#
 
 1034000 = { #Warlord of Panzhihua
 	name="Huo"
-	dynasty=9071002 #An
-	culture = yi
-	religion = shenist
-	2570.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+    dynasty=9071272 # An
+    culture=yi
+    religion=shenist
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=brilliant_strategist
+    trait=ambitious
+    trait=brave
+    trait=proud
+    trait=diligent
+    trait=wroth
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1034001 = { #Count of Muli
-	name="Chagnaadorj"
-	dynasty=9001077 #Guo
-	culture = mengguzu
-	religion = rime
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Shagalyn"
+    dynasty=1166025 # Jadambaa
+    culture=mengguzu
+    religion=rime
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=hunter
+    trait=patient
+    trait=cruel
+    trait=proud
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1034002 = { #Count of Butuo
-	name="Yu" 
-	dynasty=9061007 #Bao
-	culture = sichuanese
-	religion = datong
-	trait=skilled_tactician
-	trait=brave
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+1034002 = { #League of Liangshan
+	name="Yu"
+    dynasty=9061290 # Bao
+    culture=sichuanese
+    religion=datong
+    martial=3
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=3
+    trait=skilled_tactician
+    trait=brave
+    trait=proud
+    trait=honest
+    trait=arbitrary
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1034003 = { #Duke of Ya'an
-	name="Shan"
-	dynasty=9061038 #Deng
-	culture = sichuanese
-	religion = rime
-	2583.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Yanqi"
+    dynasty=9061291 # Xie
+    female=yes
+    culture=sichuanese
+    religion=datong
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=charismatic_negotiator
+    trait=musician
+    trait=groomed
+    trait=honest
+    trait=lustful
+    trait=rude
+    trait=charitable
+    trait=gregarious	
+	give_nickname=nick_babyface
+    2583.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1034004 = { #Duke of Leshan
-	name="Anlong"
-	dynasty=9061120 #Li
-	culture = sichuanese
-	religion = mahayana
-	2585.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Daoxi"
+    dynasty=9061289 # Ren
+    culture=sichuanese
+    religion=mahayana
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=fortune_builder
+    trait=deceitful
+    trait=greedy
+    trait=chaste
+    trait=patient
+    trait=proud
+    2578.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1034005 = { #Countess of Emeishan
 	name="Shouxue"
-	dynasty=9061082 #He
-	culture = sichuanese
-	religion = datong
-	female=yes
-	trait=quick
-	trait=fair
-	2587.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+    dynasty=9061082 #He
+    female=yes
+    culture=sichuanese
+    religion=datong
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=underhanded_rogue
+    trait=quick
+    trait=fair
+    trait=rude
+    trait=diligent
+    trait=honest
+    2587.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1034006 = { #Duke of Dayi
-	name="Shen"
-	dynasty=9061072 #Guan
-	culture = sichuanese
-	religion = datong
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Weiguo"
+    dynasty=9061288 # Hu
+    culture=sichuanese
+    religion=datong
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=6
+    learning=4
+    trait=martial_cleric
+    trait=zealous
+    trait=wroth
+    trait=diligent
+    trait=paranoid
+    trait=proud
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1034007 = { #Duke of Mianyang
-	name="Molingzan"
-	dynasty=1944000
-	culture = qiang
-	religion = rime
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Kening"
+    dynasty=1944146 # Bian
+    culture=qiang
+    religion=rime
+    martial=6
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=ambitious
+    trait=proud
+    trait=diligent
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1034008 = { #Count of Santai
-	name="Chao"
-	dynasty=9061135
-	culture = sichuanese
-	religion = rime
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Jian"
+    dynasty=9061010 # Yue
+    female=yes
+    culture=sichuanese
+    religion=rime
+    martial=5
+    diplomacy=4
+    stewardship=6
+    intrigue=4
+    learning=5
+    trait=intricate_webweaver
+    trait=diligent
+    trait=deceitful
+    trait=proud
+    2581.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1034009 = { #Count of Santai
-	name="Yun"
-	dynasty=9061222
-	culture = sichuanese
-	religion = datong
-	trait=deceitful
-	trait=hedonist
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+1034009 = { #Canton of Chengdu
+	name="Lijie"
+    dynasty=9061286 # Chanyu
+    culture=sichuanese
+    religion=datong
+    martial=8
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=3
+    trait=tough_soldier
+    trait=strong
+    trait=duelist
+    trait=dull
+    trait=diligent
+    trait=wroth
+	father=1033006
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 ##Yue##
