@@ -3371,6 +3371,20 @@ coat_of_arms = {
 1553048 = { name="Kahtawng" culture=jingpo }
 1553049 = { name="Kyan" culture=jingpo }
 1553050 = { name="Laja" culture=jingpo }
+1553051 = { name="Maran" culture=jingpo
+	coat_of_arms = {
+		religion = baptist
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1555000 = { name="Ma" culture=karen }
 1555001 = { name="Aung" culture=karen }
@@ -4599,6 +4613,21 @@ coat_of_arms = {
 1842154 = { name="Cheung" culture=hong_konger }
 
 1971000 = { name="Tung" culture=bai }
+1971001 = { name="Shen" culture=bai
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1971002 = { name="Zhou" culture=bai religion=mahayana}
 
 1972000 = { name="Ho" culture=macanese
 	coat_of_arms = {
@@ -10282,6 +10311,20 @@ coat_of_arms = {
 1941151 = { name="Yungok" culture=kham religion=rime}
 1941152 = { name="Pashu'tse" culture=kham religion=rime}
 1941153 = { name="Yangatse" culture=kham religion=gelugpa}
+1941153 = { name="Gyaltsen" culture=kham
+	coat_of_arms = {
+		religion = rime
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1942000 = { name="Adro" culture=amdowa }
 1942001 = { name="Akyong" culture=amdowa }
@@ -25615,6 +25658,7 @@ coat_of_arms = {
 3951015 = { name="Chungpa" culture=hani }
 3951016 = { name="Dak" culture=hani }
 3951017 = { name="Dawa" culture=hani }
+3951018 = { name="Luo" culture=hani religion=mahayana}
 
 3952012 = { name="Che" culture=naxi }
 3952013 = { name="Chim" culture=naxi }
@@ -25622,6 +25666,20 @@ coat_of_arms = {
 3952015 = { name="Chungpa" culture=naxi }
 3952016 = { name="Dak" culture=naxi }
 3952017 = { name="Dawa" culture=naxi }
+3952018 = { name="Su" culture=naxi
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 3953000 = { name="Ying" culture=lanyin religion=gelugpa}
 3953001 = { name="Ma" culture=lanyin }

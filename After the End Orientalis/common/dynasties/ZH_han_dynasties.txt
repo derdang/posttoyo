@@ -1938,6 +1938,21 @@
 	}
 }
 9053279 = { name="Zhou" culture=zhuang }
+9053280 = { name="Nong" culture=zhuang religion=mo}
+9053281 = { name="Cen" culture=zhuang
+	coat_of_arms = {
+		religion = mo
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 #--Hainan :
 
@@ -2263,8 +2278,38 @@
 		}
 	}
 }
+9070294 = { name="Tu" culture=xinan
+	coat_of_arms = {
+		religion = shenist
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9070295 = { name="Xi" culture=xinan
+	coat_of_arms = {
+		religion = shenist
+		template = 0
+		layer = {
+			texture = 10
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+
 
 9071002 = { name="An" culture=yi }
+9071003 = { name="Zhang" culture=yi religion=shenist}
 9071026 = { name="Chen" culture=yi }
 9071191 = { name="She" culture=yi }
 9071249 = { name="Yang" culture=yi }
@@ -2275,7 +2320,7 @@
 		template = 0
 		layer = {
 			texture = 10
-			texture_internal = 7
+			texture_internal = 12
 			emblem = 0
 			color = 0
 			color = 0
@@ -2291,11 +2336,26 @@
 
 #Dai - part of Sinicized Tai Dam dyns :S
 9073018 = { name="Cao" culture=dai }
+9073019 = { name="Manola" culture=dai religion=maha_nikaya}
 9073082 = { name="He" culture=dai }
 9074077 = { name="Guo" culture=dai }
 9073205 = { name="Song" culture=dai }
 9073232 = { name="Xia" culture=dai }
 9073287 = { name="Zong" culture=dai }
+9073288 = { name="Zhu" culture=dai
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 9074026 = { name="Chen" culture=hani }
 9074077 = { name="Guo" culture=hani }
@@ -2744,6 +2804,20 @@
 		layer = {
 			texture = 2
 			texture_internal = 32
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9910278 = { name="Bai" culture=huizu
+	coat_of_arms = {
+		religion = hui
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 36
 			emblem = 0
 			color = 0
 			color = 0

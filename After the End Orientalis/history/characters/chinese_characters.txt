@@ -872,127 +872,270 @@
 ##Southern China##
 
 #Xishuangbanna#
-1026000 = { #King of Xishuangbanna
-	name = "Han"
-	dynasty = 1026000 #Dao
-	culture = dai
-	religion = maha_nikaya
-	2587.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+1026000 = { #Queen of Xishuangbanna
+	name="Manohara"
+    dynasty=9073288 # Zhu
+    female=yes
+    culture=dai
+    religion=maha_nikaya
+    martial=5
+    diplomacy=6
+    stewardship=6
+    intrigue=6
+    learning=5
+    trait=charismatic_negotiator
+    trait=fair
+    trait=mystic
+    trait=charitable
+    trait=proud
+    trait=diligent
+	give_nickname=nick_the_peacock_princess
+    2575.1.1={birth=yes}
+	2595.1.1={add_matrilineal_spouse=1026004}
+    2700.1.1={death=yes}
 }
 1026001 = { #Duke of Pu'er
-	name = "Yanbo"
-	dynasty = 1971000 #Tung
-	culture = bai
-	religion = mahayana
-	2589.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Xiji"
+    dynasty=1971001 # Shen
+    culture=bai
+    religion=mahayana
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=mystic
+    trait=diligent
+    trait=devout
+    trait=proud
+    trait=just
+    2579.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1026002 = { #Hani of Mengzi
-	name = "Hla Than"
-	dynasty = 3952016 #Dak
-	culture = hani
-	religion = mahayana
-	2580.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Xuewen"
+    dynasty=3951018 # Luo
+    culture=hani
+    religion=mahayana
+    martial=4
+    diplomacy=4
+    stewardship=6
+    intrigue=5
+    learning=4
+    trait=underhanded_rogue
+    trait=gregarious
+    trait=honest
+    trait=kind
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1026003 = { #Duke of Wenshan
-	name = "Zhirou"
-	dynasty = 9053077
-	culture = zhuang
-	religion = mo
-	2575.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Majia"
+    dynasty=9053281 # Cen
+    culture=zhuang
+    religion=mo
+    martial=5
+    diplomacy=6
+    stewardship=5
+    intrigue=5
+    learning=4
+    trait=tough_soldier
+    trait=strong
+    trait=wroth
+    trait=ambitious
+    trait=charitable
+    trait=arbitrary
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1026004 = { #Count of Maguan
-	name = "Daoan"
-	dynasty = 9053091
-	culture = zhuang
-	religion = mo
-	2579.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+1026004 = { #Husband of Xishuangbanna
+	name="Sudhana"
+    dynasty=9073019 # Manola
+    culture=dai
+    religion=maha_nikaya
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=tough_soldier
+    trait=fair
+    trait=kind
+    trait=humble
+    trait=diligent
+    2570.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1026005 = { #Count of Jianshui
-	name = "Daoan"
-	dynasty = 3950017
-	culture = yi
-	religion = shenist
-	2555.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Majia"
+    dynasty=9071003 # Zhang 
+    culture=yi
+    religion=shenist
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=5
+    learning=5
+    trait=flamboyant_schemer
+    trait=poet
+    trait=envious
+    trait=proud
+    trait=deceitful
+    trait=cruel
+    2568.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1026006 = { #Count of Mile
-	name = "Suiliang"
-	dynasty = 9071026 #Chen
-	culture = yi
-	religion = shenist
-	2580.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Zuoha"
+    dynasty=9071272 # Ye
+    culture=yi
+    religion=shenist
+    martial=5
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=5
+    trait=skilled_tactician
+    trait=quick
+    trait=brave
+    trait=diligent
+    trait=proud
+    trait=wroth
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1026007 = { #Count of Guangnan
-	name = "Zongmin"
-	dynasty = 9053120
-	culture = zhuang
-	religion = mo
-	2575.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
-}
+#1026007 Unused
 
 #Dali#
 1027000 = { #King of Dianxi
-	name = "Youdao"
-	dynasty = 3952012
-	culture = naxi
-	religion = mahayana
-	2579.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Milishuzhu"
+    dynasty=3952018 # Su
+    culture=naxi
+    religion=mahayana
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=skilled_tactician
+    trait=duelist
+    trait=robust
+    trait=envious
+    trait=proud
+    trait=honest
+    2564.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1027001 = { #Count of Chuxiong
-	name = "Yuanheng"
-	dynasty = 9072222
-	culture = bai
-	religion = mahayana
-	2570.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Yiqin"
+    dynasty=1971002 # Zhou 
+    female=yes
+    culture=bai
+    religion=mahayana
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=gregarious
+    trait=kind
+    trait=charitable
+    2576.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1027002 = { #Count of Lijiang(Revolted)
-	name = "Daijia"
-	dynasty = 1941004
-	culture = kham
-	religion = rime
-	2570.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Dragpa"
+    dynasty=1941153 # Gyaltsen
+    culture=kham
+    religion=rime
+    martial=6
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=skilled_tactician
+    trait=strong
+    trait=charitable
+    trait=wroth
+    trait=honorable
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1027003 = { #Upstart of Kunming
-	name = "Rengui"
-	dynasty = 9910006
-	culture = huizu
-	religion = hui
-	2567.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Bukang"
+    dynasty=9910278 # Bai
+    culture=huizu
+    religion=hui
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=brilliant_strategist
+    trait=devout
+    trait=wroth
+    trait=diligent
+    trait=robust
+    trait=ambitious
+    2569.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1027004 = { #Count of Shizong
-	name = "Maozhen"
-	dynasty = 9070272
-	culture = xinan
-	religion = mo
-	2576.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Guoqing"
+    dynasty=9053280 # Nong
+    culture=zhuang
+    religion=mo
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=diligent
+    trait=humble
+    trait=envious
+    2559.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1027005 = { #Duke of Zhaotong
-	name = "Qianyao"
-	dynasty = 9070271
-	culture = xinan
-	religion = datong
-	2580.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Shikai"
+    dynasty=9070295 # Xi
+    culture=xinan
+    religion=datong
+    martial=7
+    diplomacy=5
+    stewardship=6
+    intrigue=6
+    learning=5
+    trait=skilled_tactician
+    trait=fat
+    trait=gout
+    trait=proud
+    trait=wroth
+    trait=diligent
+    2551.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1027006 = { #Duke of Kunming
-	name = "Cheng"
-	dynasty = 9070284
-	culture = xinan
-	religion = shenist
-	2580.12.23 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Jiang"
+    dynasty=9070294 # Tu
+    culture=xinan
+    religion=shenist
+    martial=5
+    diplomacy=6
+    stewardship=7
+    intrigue=6
+    learning=5
+    trait=midas_touched
+    trait=deceitful
+    trait=diligent
+    trait=greedy
+    trait=patient
+    trait=proud
+    2578.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 ##Guangxi##
