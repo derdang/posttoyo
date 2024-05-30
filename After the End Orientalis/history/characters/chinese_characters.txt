@@ -1310,114 +1310,276 @@
 #Qian#
 
 1031000 = { #Duke of Qiannan(Bouyei confed)
-	name = "Changliang"
-	dynasty = 1023001 #Ou
-	culture = bouyei
-	religion = mo
-	2589.1.3 = {birth = yes}
-	2660.1.1 = {death = yes}
+	name="Zuoqin"
+    dynasty=9053282 # Cen
+    culture=zhuang
+    religion=mo
+    martial=5
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=5
+    trait=tough_soldier
+    trait=ambitious
+    trait=brave
+    trait=wroth
+    trait=slow
+    trait=lustful
+    trait=kind
+    2570.1.1={birth=yes}
+	2595.1.1={effect={add_rival=1032000}}
+    2700.1.1={death=yes}
 }
 1031001 = { #Count of Fuquan
-	name = "Xiujing"
-	dynasty = 1023002 #Guo
-	culture = bouyei
-	religion = mo
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Xiaolin"
+    dynasty=2499025 # Kuazan
+    culture=hmu
+    religion=ua_dab
+    martial=6
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=underhanded_rogue
+    trait=gregarious
+    trait=kind
+    trait=charitable
+    2578.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1031002 = { #Count of Guiding
-	name = "Zhide"
-	dynasty = 1023003 #Ren
-	culture = bouyei
-	religion = mo
-	2560.1.3 = {birth = yes}
-	2660.1.1 = {death = yes}
+	name="Qihan"
+    dynasty=9053259 # Gan
+    culture=zhuang
+    religion=mo
+    martial=3
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=intricate_webweaver
+    trait=deceitful
+    trait=envious
+    trait=proud
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1031003 = { #Count of Anlong
-	name = "Qinwang"
-	dynasty = 9053026 #Chen
-	culture = zhuang
-	religion = mo
-	trait=ambitious
-	2580.1.3 = {birth = yes}
-	2660.1.1 = {death = yes}
+	name="Cunzhi"
+    dynasty=9053283 # Yan
+    culture=zhuang
+    religion=mo
+    martial=4
+    diplomacy=6
+    stewardship=4
+    intrigue=6
+    learning=4
+    trait=fortune_builder
+    trait=diligent
+    trait=proud
+    trait=kind
+	father=1032008
+    2568.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1031004 = { #Count of Meitan
-	name = "Zhide"
-	dynasty = 2499000 #Xiong
-	culture = hmu
-	religion = mo
-	2580.1.3 = {birth = yes}
-	2660.1.1 = {death = yes}
+	name="Zhiming"
+    dynasty=2499026 # Vang
+    culture=hmu
+    religion=ua_dab
+	secret_religion=fuyin
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=martial_cleric
+    trait=devout
+    trait=charitable
+    trait=kind
+    2580.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 #Yelang#
 
 1032000 = { #King of Yelang
-	name = "Chengsi"
-	dynasty = 9070028 #Xu
-	culture = xinan
-	religion = ruist
-	trait=authoritative
-	trait=ambitious
-	2575.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Jialie"
+    dynasty=9070297 # Jiang
+    culture=xinan
+    religion=ruist
+	secret_religion=gongye_shenjiao
+    martial=7
+    diplomacy=6
+    stewardship=6
+    intrigue=7
+    learning=6
+    trait=misguided_warrior
+    trait=dull
+    trait=strong
+    trait=brave
+    trait=wroth
+    trait=diligent
+    2565.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1032001 = { #Count of Panzhou
-	name = "Shi"
-	dynasty = 1023005
-	culture = bouyei
-	religion = ruist
-	2580.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Jieqiu"
+    dynasty=9053283 # Yan
+    female=yes
+    culture=zhuang
+    religion=mo
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=4
+    trait=intricate_webweaver
+    trait=schemer
+    trait=quick
+    trait=diligent
+    trait=cruel
+    trait=wroth
+	father=1032008
+    2575.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1032002 = { #Duke of Guiyang
-	name = "Youdao"
-	dynasty = 1023006
-	culture = bouyei
-	religion = mo
-	2587.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Ruofei"
+    dynasty=9070296 # Ku
+    culture=xinan
+    religion=ruist
+    martial=5
+    diplomacy=6
+    stewardship=6
+    intrigue=5
+    learning=6
+    trait=amateurish_plotter
+    trait=envious
+    trait=patient
+    trait=lustful
+    2577.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 1032003 = { #Duke of Zunyi
-	name = "Daiju"
-	dynasty = 2499001
-	culture = hmu
-	religion = shenist
-	2573.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+	name="Zhengming"
+    dynasty=9070297 # Jiang
+    culture=xinan
+    religion=shenist
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=zealous
+    trait=ambitious
+    trait=just
+    trait=honorable
+	father=1032000
+    2579.1.1={birth=yes}
+	2600.1.1={effect={add_rival=1032006}}
+    2700.1.1={death=yes}
 }
-1032004 = { #Count of Daozhen
-	name = "Shen"
-	dynasty = 2499002
-	culture = hmu
-	religion = shenist
-	2582.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+#1032004 = Unused
+1032005 = { #Count of Honghuagang and Daozhen
+	name="Xaykaothao"
+    dynasty=2499027 # Ka
+    female=yes
+    culture=hmu
+    religion=ua_dab
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=5
+    learning=4
+    trait=underhanded_rogue
+    trait=ambitious
+    trait=rude
+    trait=envious
+    trait=charitable
+    2584.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1032005 = { #Count of Honghuagang
-	name = "Shen"
-	dynasty = 2499003
-	culture = hmu
-	religion = shenist
-	2589.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+1032006 = { #Count of Zhongshan
+	name="Zhengfei"
+    dynasty=9070297 # Jiang
+    culture=xinan
+    religion=ruist
+    martial=5
+    diplomacy=6
+    stewardship=6
+    intrigue=5
+    learning=5
+    trait=skilled_tactician
+    trait=ambitious
+    trait=envious
+    trait=proud
+    trait=cruel
+	father=1032000
+    2581.1.1={birth=yes}
+	2600.1.1={effect={add_rival=1032003}}
+    2700.1.1={death=yes}
 }
-1032006 = {
-	name = "Qingqiu"
-	dynasty = 9070029 #Shen
-	culture = xinan
-	religion = ruist
-	2589.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+1032007 = { #Count of Qianxi
+	name="Wenzhong"
+    dynasty=9070277 # Ding
+    culture=xinan
+    religion=shenist
+    martial=5
+    diplomacy=5
+    stewardship=6
+    intrigue=5
+    learning=5
+    trait=midas_touched
+    trait=diligent
+    trait=shrewd
+    trait=proud
+    2572.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
-1032007 = {
-	name = "Long"
-	dynasty = 2498003 #Tsom
-	culture = miao
-	religion = ruist
-	2589.1.3 = {birth = yes}
-	2650.1.1 = {death = yes}
+1032008 = { #Old King of Yelang
+	name="Hanhong"
+    dynasty=9053283 # Yan
+    culture=zhuang
+    religion=mo
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=5
+    learning=5
+    trait=skilled_tactician
+    trait=wroth
+    trait=content
+    trait=cruel
+    2539.1.1 ={birth=yes}
+    2595.1.1={
+		death={
+			death_reason=death_battle
+			killer=1032000 #King Jiang
+		}
+	}
+}
+1032009 = { #Daughter of the New Yelang King
+	name="Yingying"
+    dynasty=9070297 # Jiang
+    culture=xinan
+    religion=ruist (secret gongye)
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=fair
+    trait=physician
+    trait=content
+    trait=wroth
+    trait=shy
+    trait=chaste
+	father=1032000
+    2586.1.1={birth=yes}
+    2700.1.1={death=yes}
 }
 
 ##Sichuan##
