@@ -5,16 +5,6 @@
 # is_zoroastrian_secret_religious_society_member_trigger
 # is_indian_secret_religious_society_member_trigger
 # is_jewish_secret_religious_society_member_trigger
-# is_norse_secret_religious_society_member_trigger
-# is_slavic_secret_religious_society_member_trigger
-# is_tengri_secret_religious_society_member_trigger
-# is_baltic_secret_religious_society_member_trigger
-# is_finnish_secret_religious_society_member_trigger
-# is_west_african_secret_religious_society_member_trigger
-# is_zun_secret_religious_society_member_trigger
-# is_aztec_secret_religious_society_member_trigger
-# is_bon_secret_religious_society_member_trigger
-# is_hellenic_secret_religious_society_member_trigger
 # is_taoist_secret_religious_society_member_trigger
 
 # has_sympathy_for_true_religion_of_prev_trigger
@@ -26,40 +16,8 @@
 
 # is_in_prevs_interesting_society_trigger
 
-# religion_openly_norse_or_reformed_trigger
-# religion_openly_baltic_or_reformed_trigger
-# religion_openly_finnish_or_reformed_trigger
-# religion_openly_slavic_or_reformed_trigger
-# religion_openly_tengri_or_reformed_trigger
-# religion_openly_west_african_or_reformed_trigger
-# religion_openly_zun_or_reformed_trigger
-# religion_openly_bon_or_reformed_trigger
-# religion_openly_hellenic_or_reformed_trigger
-# religion_openly_aztec_or_reformed_trigger
 # has_dharmic_religion_trigger
-
-# religion_secretly_norse_or_reformed_trigger
-# religion_secretly_baltic_or_reformed_trigger
-# religion_secretly_finnish_or_reformed_trigger
-# religion_secretly_slavic_or_reformed_trigger
-# religion_secretly_tengri_or_reformed_trigger
-# religion_secretly_west_african_or_reformed_trigger
-# religion_secretly_zun_or_reformed_trigger
-# religion_secretly_bon_or_reformed_trigger
-# religion_secretly_hellenic_or_reformed_trigger
-# religion_secretly_aztec_or_reformed_trigger
 # has_secret_dharmic_religion_trigger
-
-# true_norse_religion_trigger
-# true_baltic_religion_trigger
-# true_finnish_religion_trigger
-# true_slavic_religion_trigger
-# true_tengri_religion_trigger
-# true_west_african_religion_trigger
-# true_zun_religion_trigger
-# true_bon_religion_trigger
-# true_hellenic_religion_trigger
-# true_aztec_religion_trigger
 # true_dharmic_religion_trigger
 
 # has_safe_religion
@@ -112,92 +70,6 @@ is_indian_secret_religious_society_member_trigger = {
 is_jewish_secret_religious_society_member_trigger = {
 	society_member_of = secret_religious_cult
 	secret_religion_group = jewish_group
-}
-
-is_norse_secret_religious_society_member_trigger = {
-	society_member_of = secret_religious_cult
-
-	OR = {
-		society_member_of = secret_religious_society_norse_pagan_reformed
-		society_member_of = secret_religious_society_norse_pagan
-	}
-}
-
-is_slavic_secret_religious_society_member_trigger = {
-	society_member_of = secret_religious_cult
-
-	OR = {
-		society_member_of = secret_religious_society_slavic_pagan_reformed
-		society_member_of = secret_religious_society_slavic_pagan
-	}
-}
-
-is_tengri_secret_religious_society_member_trigger = {
-	society_member_of = secret_religious_cult
-
-	OR = {
-		society_member_of = secret_religious_society_tengri_pagan_reformed
-		society_member_of = secret_religious_society_tengri_pagan
-	}
-}
-
-is_baltic_secret_religious_society_member_trigger = {
-	society_member_of = secret_religious_cult
-
-	OR = {
-		society_member_of = secret_religious_society_baltic_pagan_reformed
-		society_member_of = secret_religious_society_baltic_pagan
-	}
-}
-
-is_finnish_secret_religious_society_member_trigger = {
-	society_member_of = secret_religious_cult
-
-	OR = {
-		society_member_of = secret_religious_society_finnish_pagan_reformed
-		society_member_of = secret_religious_society_finnish_pagan
-	}
-}
-
-is_west_african_secret_religious_society_member_trigger = {
-	society_member_of = secret_religious_cult
-
-	OR = {
-		society_member_of = secret_religious_society_west_african_pagan_reformed
-		society_member_of = secret_religious_society_west_african_pagan
-	}
-}
-
-is_zun_secret_religious_society_member_trigger = {
-	society_member_of = secret_religious_cult
-
-	OR = {
-		society_member_of = secret_religious_society_zun_pagan_reformed
-		society_member_of = secret_religious_society_zun_pagan
-	}
-}
-
-is_aztec_secret_religious_society_member_trigger = {
-	society_member_of = secret_religious_cult
-
-	OR = {
-		society_member_of = secret_religious_society_aztec_reformed
-		society_member_of = secret_religious_society_aztec
-	}
-}
-
-is_bon_secret_religious_society_member_trigger = {
-	OR = {
-		society_member_of = secret_religious_society_bon_pagan
-		society_member_of = secret_religious_society_bon_pagan_reformed
-	}
-}
-
-is_hellenic_secret_religious_society_member_trigger = {
-	OR = {
-		society_member_of = secret_religious_society_hellenic_pagan
-		society_member_of = secret_religious_society_hellenic_pagan_reformed
-	}
 }
 
 is_taoist_secret_religious_society_member_trigger = {
@@ -383,278 +255,16 @@ is_in_prevs_interesting_society_trigger = {
 	}
 }
 
-religion_openly_norse_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_norse_or_reformed_tooltip
-
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-		}
-	}
-}
-
-religion_openly_baltic_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_baltic_or_reformed_tooltip
-
-		OR = {
-			religion = baltic_pagan
-			religion = baltic_pagan_reformed
-		}
-	}
-}
-
-religion_openly_finnish_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_finnish_or_reformed_tooltip
-
-		OR = {
-			religion = finnish_pagan
-			religion = finnish_pagan_reformed
-		}
-	}
-}
-
-religion_openly_slavic_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_slavic_or_reformed_tooltip
-
-		OR = {
-			religion = slavic_pagan
-			religion = slavic_pagan_reformed
-		}
-	}
-}
-
-religion_openly_tengri_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_tengri_or_reformed_tooltip
-
-		OR = {
-			religion = tengri_pagan
-			religion = tengri_pagan_reformed
-		}
-	}
-}
-
-religion_openly_west_african_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_west_african_or_reformed_tooltip
-
-		OR = {
-			religion = west_african_pagan
-			religion = west_african_pagan_reformed
-		}
-	}
-}
-
-religion_openly_zun_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_zun_or_reformed_tooltip
-
-		OR = {
-			religion = zun_pagan
-			religion = zun_pagan_reformed
-		}
-	}
-}
-
-religion_openly_bon_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_bon_or_reformed_tooltip
-
-		OR = {
-			religion = bon_pagan
-			religion = bon_pagan_reformed
-		}
-	}
-}
-
-religion_openly_hellenic_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_hellenic_or_reformed_tooltip
-
-		OR = {
-			religion = hellenic_pagan
-			religion = hellenic_pagan_reformed
-		}
-	}
-}
-
-religion_openly_aztec_or_reformed_trigger = {
-	custom_tooltip = {
-		text = religion_openly_aztec_or_reformed_tooltip
-
-		OR = {
-			religion = aztec_pagan
-			religion = aztec_pagan_reformed
-		}
-	}
-}
-
 has_dharmic_religion_trigger = {
-	OR = {
-		religion = hindu
-		religion = buddhist
-		religion = jain
-	}
-}
-
-religion_secretly_norse_or_reformed_trigger = {
-	OR = {
-		secret_religion = norse_pagan
-		secret_religion = norse_pagan_reformed
-	}
-}
-
-religion_secretly_baltic_or_reformed_trigger = {
-	OR = {
-		secret_religion = baltic_pagan
-		secret_religion = baltic_pagan_reformed
-	}
-}
-
-religion_secretly_finnish_or_reformed_trigger = {
-	OR = {
-		secret_religion = finnish_pagan
-		secret_religion = finnish_pagan_reformed
-	}
-}
-
-religion_secretly_slavic_or_reformed_trigger = {
-	OR = {
-		secret_religion = slavic_pagan
-		secret_religion = slavic_pagan_reformed
-	}
-}
-
-religion_secretly_tengri_or_reformed_trigger = {
-	OR = {
-		secret_religion = tengri_pagan
-		secret_religion = tengri_pagan_reformed
-	}
-}
-
-religion_secretly_west_african_or_reformed_trigger = {
-	OR = {
-		secret_religion = west_african_pagan
-		secret_religion = west_african_pagan_reformed
-	}
-}
-
-religion_secretly_zun_or_reformed_trigger = {
-	OR = {
-		secret_religion = zun_pagan
-		secret_religion = zun_pagan_reformed
-	}
-}
-
-religion_secretly_bon_or_reformed_trigger = {
-	OR = {
-		secret_religion = bon_pagan
-		secret_religion = bon_pagan_reformed
-	}
-}
-
-religion_secretly_hellenic_or_reformed_trigger = {
-	OR = {
-		secret_religion = hellenic_pagan
-		secret_religion = hellenic_pagan_reformed
-	}
-}
-
-religion_secretly_aztec_or_reformed_trigger = {
-	OR = {
-		secret_religion = aztec_pagan
-		secret_religion = aztec_pagan_reformed
-	}
+	religion_group = indian_group
 }
 
 has_secret_dharmic_religion_trigger = {
-	OR = {
-		secret_religion = hindu
-		secret_religion = buddhist
-		secret_religion = jain
-	}
-}
-
-true_norse_religion_trigger = {
-	OR = {
-		true_religion = norse_pagan
-		true_religion = norse_pagan_reformed
-	}
-}
-
-true_baltic_religion_trigger = {
-	OR = {
-		true_religion = baltic_pagan
-		true_religion = baltic_pagan_reformed
-	}
-}
-
-true_finnish_religion_trigger = {
-	OR = {
-		true_religion = finnish_pagan
-		true_religion = finnish_pagan_reformed
-	}
-}
-
-true_slavic_religion_trigger = {
-	OR = {
-		true_religion = slavic_pagan
-		true_religion = slavic_pagan_reformed
-	}
-}
-
-true_tengri_religion_trigger = {
-	OR = {
-		true_religion = tengri_pagan
-		true_religion = tengri_pagan_reformed
-	}
-}
-
-true_west_african_religion_trigger = {
-	OR = {
-		true_religion = west_african_pagan
-		true_religion = west_african_pagan_reformed
-	}
-}
-
-true_zun_religion_trigger = {
-	OR = {
-		true_religion = zun_pagan
-		true_religion = zun_pagan_reformed
-	}
-}
-
-true_bon_religion_trigger = {
-	OR = {
-		true_religion = bon_pagan
-		true_religion = bon_pagan_reformed
-	}
-}
-
-true_hellenic_religion_trigger = {
-	OR = {
-		true_religion = hellenic_pagan
-		true_religion = hellenic_pagan_reformed
-	}
-}
-
-true_aztec_religion_trigger = {
-	OR = {
-		true_religion = aztec_pagan
-		true_religion = aztec_pagan_reformed
-	}
+	secret_religion_group = indian_group
 }
 
 true_dharmic_religion_trigger = {
-	OR = {
-		true_religion = hindu
-		true_religion = buddhist
-		true_religion = jain
-	}
+	true_religion_group = indian_group
 }
 
 # Remember that Nomads can safely change religion
@@ -669,15 +279,6 @@ has_safe_religion = {
 	trigger_else_if = {
 		limit = { religion_group = muslim }
 		has_dlc = "The Sword of Islam"
-	}
-	trigger_else_if = {
-		limit = { religion_openly_bon_or_reformed_trigger = yes }
-
-		OR = {
-			has_dlc = "Jade Dragon"
-			has_dlc = "Holy Fury"
-			has_dlc = "The Old Gods"
-		}
 	}
 	trigger_else_if = {
 		limit = { religion_group = pagan_group }
@@ -719,15 +320,6 @@ has_safe_secret_religion = {
 	trigger_else_if = {
 		limit = { secret_religion_group = muslim }
 		has_dlc = "The Sword of Islam"
-	}
-	trigger_else_if = {
-		limit = { religion_secretly_bon_or_reformed_trigger = yes }
-
-		OR = {
-			has_dlc = "Jade Dragon"
-			has_dlc = "Holy Fury"
-			has_dlc = "The Old Gods"
-		}
 	}
 	trigger_else_if = {
 		limit = { secret_religion_group = pagan_group }

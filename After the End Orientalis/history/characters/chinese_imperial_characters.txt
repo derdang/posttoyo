@@ -383,8 +383,7 @@
     2520.1.1={birth=yes}
     2570.1.1={
 		death={
-			death_reason=death_trait 
-			killer=dysentery
+			death_reason=death_trait
 		}
 	}
 }
@@ -861,7 +860,7 @@
     stewardship=3
     intrigue=3
     learning=3
-    trait=marital_cleric
+    trait=martial_cleric
     trait=theologian
     trait=devout
     trait=diligent
@@ -1135,6 +1134,7 @@
 	trait=skilled_tactician
 	trait=wroth
 	2587.2.1={birth=yes}
+	2700.1.1={death=yes}
 }
 2625003 ={ # Iron Prince of Chengde
 	name="Zhentao"
@@ -1169,7 +1169,7 @@
     learning=4
     trait=midas_touched
     trait=architect
-    trait=fat
+    trait=is_fat
     trait=shrewd
     trait=diligent
     trait=just
@@ -1201,6 +1201,7 @@
 	culture=jin
 	religion=taoist
 	2584.4.1={birth=yes}
+	2700.1.1={death=yes}
 }
 2625007 ={ # Iron Prince of Chengde
 	name="Huaying"
@@ -1444,7 +1445,7 @@
     trait=content
 	father=2625018
     2580.1.1={birth=yes}
-	2580.1.1={add_friend=2625001}
+	2580.1.1={effect={add_friend=2625001}}
     2700.1.1={death=yes}
 }
 
@@ -1484,7 +1485,6 @@
     trait=underhanded_rogue
     trait=lefthanded
     trait=hedonist
-    trait=lefthanded
     trait=lustful
     trait=content
     trait=gregarious
