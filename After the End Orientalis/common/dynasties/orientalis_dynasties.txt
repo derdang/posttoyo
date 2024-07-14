@@ -11878,6 +11878,7 @@ coat_of_arms = {
 }
 1957036 = { name="Hamzah" culture=melayu religion=renewalist}
 1957037 = { name="Izzuddin" culture=melayu religion=renewalist}
+1957038 = { name="Kayangan" culture=melayu religion=renewalist used_for_random=no}
 
 #penang MR dyns
 
@@ -12485,7 +12486,20 @@ coat_of_arms = {
 1985029 = { name="Khir" culture=bruneian }
 1985030 = { name="Ali" culture=bruneian }
 1985031 = { name="Amirudin" culture=bruneian }
-1985032 = { name="Bolkiah" culture=bruneian }
+1985032 = { name="Bolkiah" culture=bruneian
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 37
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1986001 = { name="Abdul Rahman" culture=melanau }
 1986002 = { name="Abdul Razak" culture=melanau }

@@ -577,7 +577,7 @@
 	2574.1.1={birth=yes}
 }
 ####SARAWAK and BRUNEI
-1985000={ #Brunei
+1985000={ #Brunei Current Ruler
 	name="Abdul Hassan"
 	dynasty=1985032 #Bolkiah
 	culture=bruneian
@@ -596,6 +596,372 @@
 	trait=proud
 	trait=just
 	2574.10.9={birth=yes}
+}
+1985001= { #progeniture of the houses of Brunei, Sulu and Maguindanao
+	name="Dewa Emas"
+	dynasty=1957038 #Kayangan
+	culture=melayu
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	1280.1.1={birth=yes}
+	1360.1.1={death=yes}
+}
+1985002={ #Brunei Founding Sultan
+	name="Muhammad Shah"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985001
+	1320.1.1={birth=yes}
+	1402.1.1={death=yes}
+}
+1985003={ #2nd Brunei Sultan
+	name="Abdul Majid Hassan"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985002
+	1340.1.1={birth=yes}
+	1408.1.1={death=yes}
+}
+1985004={ #3rd Brunei Sultan
+	name="Pateh Berbai"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985003
+	1360.1.1={birth=yes}
+	1425.1.1={death=yes}
+}
+1985005={ #4th Brunei Sultan
+	name="Barkat Ali"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985004
+	1380.1.1={birth=yes}
+	1432.1.1={death=yes}
+}
+1985006={ #5th Brunei Sultan
+	name="Sulaiman al-Qanuni"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985005
+	1420.1.1={birth=yes}
+	1513.1.1={death=yes}
+}
+1985007={ #6th Brunei Sultan
+	name="Bolkiah"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985006
+	1440.1.1={birth=yes}
+	1524.1.1={death=yes}
+}
+1985008={ #7th Brunei Sultan
+	name="Abdul Kahar"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985007
+	1480.1.1={birth=yes}
+	1578.1.1={death=yes}
+}
+1985009={ #8th Brunei Sultan
+	name="Saiful Rijal"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985008
+	1505.1.1={birth=yes}
+	1581.1.1={death=yes}
+}
+1985010={ #9th Brunei Sultan
+	name="Shah Berunai"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985009
+	1510.1.1={birth=yes}
+	1582.1.1={death=yes}
+}
+1985011={ #10th Brunei Sultan
+	name="Muhammad Hasan"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985010
+	1520.1.1={birth=yes}
+	1598.1.1={death=yes}
+}
+1985012={ #11th Brunei Sultan (Start of Dynastic Instability leading to the Brunei Civil War)
+	name="Marhum Tua"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985011
+	1580.1.1={birth=yes}
+	1659.1.1={death=yes}
+}
+1985013={ #12th Brunei Sultan
+	name="Abdul Jalilul Jabbar"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985012
+	1600.1.1={birth=yes}
+	1660.1.1={death=yes}
+}
+1985014={ #13th Brunei Sultan (Death leads to the Brunei Civil War)
+	name="Muhammad Ali"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985012
+	1620.1.1={birth=yes}
+	1661.1.1={
+		death={
+			death_reason=death_murder_unknown
+		}
+	}
+}
+1985015={ #14th Brunei Sultan
+	name="Abdul Hakkul Mubin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985012
+	1600.1.1={birth=yes}
+	1673.1.1={death=yes}
+}
+1985016={ #15th Brunei Sultan
+	name="Muhyiddin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985012
+	1630.1.1={birth=yes}
+	1690.1.1={death=yes}
+}
+1985017={ #16th Brunei Sultan
+	name="Nasruddin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985018
+	1660.1.1={birth=yes}
+	1710.1.1={death=yes}
+}
+1985018={ #Father of Nasruddin
+	name="Besar Abdullah"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985012
+	1630.1.1={birth=yes}
+	1690.1.1={death=yes}
+}
+1985019={ #17th Brunei Sultan
+	name="Husin Kamaluddin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985017
+	1700.1.1={birth=yes}
+	1770.1.1={death=yes}
+}
+1985020={ #18th Brunei Sultan
+	name="Muhammad Alauddin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985017
+	1662.1.1={birth=yes}
+	1737.1.1={death=yes}
+}
+1985021={ #19th Brunei Sultan
+	name="Omar Ali Saifuddin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985020
+	1720.1.1={birth=yes}
+	1795.7.10={death=yes}
+}
+1985022={ #20th Brunei Sultan
+	name="Muhammad Tajuddin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985021
+	1740.1.1={birth=yes}
+	1807.1.1={death=yes}
+}
+1985023={ #21st Brunei Sultan
+	name="Muhammad Jamalul Alam"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985021
+	1740.1.1={birth=yes}
+	1804.1.1={death=yes}
+}
+1985024={ #22nd Brunei Sultan
+	name="Muhammad Kanzul Alam"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985023
+	1770.1.1={birth=yes}
+	1826.1.1={death=yes}
+}
+1985025={ #23rd Brunei Sultan
+	name="Muhammad Alam"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985023
+	1770.1.1={birth=yes}
+	1828.1.1={death=yes}
+}
+1985026={ #24th Brunei Sultan
+	name="Omar Ali Saifuddin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985023
+	1799.2.3={birth=yes}
+	1852.11.18={death=yes}
+}
+1985027={ #Prince of Brunei
+	name="Pengiran Anak Abdul Wahab"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985023
+	1760.1.1={birth=yes}
+	1790.1.1={death=yes}
+}
+1985028={ #25th Brunei Sultan
+	name="Abdul Momin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985027
+	1788.1.1={birth=yes}
+	1885.5.29={death=yes}
+}
+1985029={ #26th Brunei Sultan
+	name="Hashim Jalilul"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985026
+	1824.1.1={birth=yes}
+	1906.5.10={death=yes}
+}
+1985030={ #27th Brunei Sultan
+	name="Muhammad Jamalul Alam"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985029
+	1889.1.1={birth=yes}
+	1924.11.11={death=yes}
+}
+1985031={ #28th Brunei Sultan
+	name="Ahmad Tajuddin"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985030
+	1913.8.22={birth=yes}
+	1950.6.4={death=yes}
+}
+1985032={ #29th Brunei Sultan
+	name="Omar Ali Saifuddien"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985030
+	1914.11.23={birth=yes}
+	1986.11.7={death=yes}
+}
+1985033={ #30th Brunei Sultan and Last Pre-Event One
+	name="Hassanal"
+	dynasty=1985032 #Bolkiah
+	culture=bruneian
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985032
+	1946.7.15={birth=yes}
+	2000.1.1={death=yes}
 }
 1371000={ #Duke of Miri
 	name="Awang"
