@@ -1,6 +1,6 @@
 government_flavor = {
 	name = gov_elective_ghazi_state
-	graphics = GFX_evt_battle
+	graphics = GFX_india_arabs_invade
 	priority = 2
 	trigger = {
 		government = ghazi_government
@@ -12,7 +12,7 @@ government_flavor = {
 
 government_flavor = {
 	name = gov_noble_ghazi_state
-	graphics = GFX_evt_battle
+	graphics = GFX_india_arabs_invade
 	priority = 2
 	trigger = {
 		government = ghazi_government
@@ -23,7 +23,42 @@ government_flavor = {
 }
 
 government_flavor = {
+	name = gov_elective_diwan_state
+	graphics = GFX_evt_council_arabic
+	priority = 2
+	trigger = {
+		government = diwan_government
+		NOR = { has_law = succ_gavelkind has_law = succ_elective_gavelkind }
+		NOT = { tier = EMPEROR }
+		NOT = { has_landed_title = k_aceh }
+	}
+}
+
+government_flavor = {
+	name = gov_noble_diwan_state
+	graphics = GFX_evt_council_arabic
+	priority = 2
+	trigger = {
+		government = diwan_government
+		OR = { has_law = succ_gavelkind has_law = succ_elective_gavelkind }
+		NOT = { tier = EMPEROR }
+		NOT = { has_landed_title = k_aceh }
+	}
+}
+
+government_flavor = {
 	name = gov_exalted_ghazi_state
+	graphics = GFX_evt_emissary_arabic
+	priority = 2
+	trigger = {
+		government = ghazi_government
+		tier = EMPEROR
+		NOT = { has_landed_title = k_aceh }
+	}
+}
+
+government_flavor = {
+	name = gov_exalted_diwan_state
 	graphics = GFX_evt_emissary_arabic
 	priority = 2
 	trigger = {

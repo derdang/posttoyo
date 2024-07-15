@@ -1,6 +1,6 @@
 government_flavor = {
 	name = gov_elective_malaysian_princely_states
-	graphics = GFX_evt_china_golden_age
+	graphics = GFX_malay_rulers
 	priority = 2
 	trigger = {
 		government = malaysian_confederacy
@@ -15,6 +15,30 @@ government_flavor = {
 	trigger = {
 		government = mandala_government
 		NOR = { has_law = succ_gavelkind has_law = succ_elective_gavelkind }
+	}
+}
+government_flavor = {
+	name = gov_himalayan_state
+	graphics = GFX_tibetan_monastery
+	priority = 2
+	trigger = {
+		AND={
+			culture_group=tibetan
+			religion_group=buddhist_group
+		}
+		NOT = { tier = EMPEROR }
+	}
+}
+government_flavor = {
+	name = gov_tibetan_state
+	graphics = GFX_tibetan_monarchy
+	priority = 2
+	trigger = {
+		AND={
+			culture_group=tibetan
+			religion_group=buddhist_group
+		}
+		tier = EMPEROR
 	}
 }
 government_flavor = {
@@ -56,22 +80,6 @@ government_flavor = {
 		NOT = { tier = emperor }
 	}
 }
-# government_flavor = {
-	# name = gov_banditry
-	# graphics = GFX_evt_china_unrest
-	# priority = 1
-	# trigger = {
-		# government = sinic_kleptocracy_government
-	# }
-# }
-# government_flavor = {
-	# name = gov_reclamation
-	# graphics = GFX_evt_china_stable
-	# priority = 1
-	# trigger = {
-		# government = sinic_reclamation_government
-	# }
-# }
 government_flavor = {
 	name = gov_sinic_bureaucracy_hegemony
 	graphics = GFX_evt_china_golden_age
