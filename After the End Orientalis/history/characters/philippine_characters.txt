@@ -1027,7 +1027,7 @@
 
 3925002 = { #Kings of Magindanaw
 	name="Maka-alang"
-	dynasty=3925021 #Baraguir
+	dynasty=3925021 #Al-'Aydarus
 	culture=moro
 	religion=renewalist
 	diplomacy=5
@@ -1063,6 +1063,587 @@
 	trait=holy_warrior
 	trait=kind
 	2584.1.15={birth=yes}
+}
+
+#Historical Magindanaw and Sulu Sultans (very messy)
+
+3925004 = { #First Sultan of Magindanaw (Kabungsuwan)
+	name="Muhammad Kabunsuan"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985003 #Brother of Pateh Berbai (3rd Sultan of Brunei Sultan "Ahmad" of Magindanaw Legends)
+	1443.1.1={birth=yes}
+	1543.1.1={death=yes}
+}
+
+3925005 = { #First Sultan of Sulu (Alawi)
+	name="ul-Hashim"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=1985003 #Brother of Pateh Berbai (3rd Sultan of Brunei Sultan "Ahmad" of Magindanaw Legends)
+	1400.1.1={birth=yes}
+	1485.1.1={death=yes}
+}
+
+3925006 = { #2nd Sultan of Sulu
+	name="Kamaluddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925005
+	1470.1.1={birth=yes}
+	1505.1.1={death=yes}
+}
+
+3925007 = { #5th Sultan of Sulu
+	name="Muizzul Mutawadiin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925006
+	1500.1.1={birth=yes}
+	1548.1.1={death=yes}
+}
+
+3925008 = { #6th Sultan of Sulu
+	name="Nasiruddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925007
+	1520.1.1={birth=yes}
+	1568.1.1={death=yes}
+}
+
+3925009 = { #7th Sultan of Sulu
+	name="Pangiran Buddiman"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925008
+	1540.1.1={birth=yes}
+	1596.1.1={death=yes}
+}
+
+3925010 = { #8th Sultan of Sulu
+	name="Pangiran Tengah"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925009
+	1560.1.1={birth=yes}
+	1608.1.1={death=yes}
+}
+
+3925011 = { #Wife of Muhammad Hasan (10th Brunei Sultan)
+	name="Putri Sulu"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	female=yes
+	father=3925009
+	1560.1.1={birth=yes}
+	1608.1.1={death=yes}
+}
+
+3925012 = { #9th Sultan of Sulu
+	name="Muwallil Wasit"
+	dynasty=1985032 #Bolkiah
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	mother=3925011
+	father=1985011
+	1580.1.1={birth=yes}
+	1650.1.1={death=yes}
+}
+
+3925013 = { #Second Sultan of Magindanaw
+	name="Maka-alang Saripada"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925004
+	1480.1.1={birth=yes}
+	1560.1.1={death=yes}
+}
+
+3925014 = { #3rd Sultan of Magindanaw
+	name="Datu Bangkaya"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925013
+	1520.1.1={birth=yes}
+	1578.1.1={death=yes}
+}
+
+3925015 = { #4th Sultan of Magindanaw
+	name="Dimasangkay Adil"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925014
+	1540.1.1={birth=yes}
+	1585.1.1={death=yes}
+}
+
+3925016 = { #5th Sultan of Magindanaw
+	name="Gugu Sarikula"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925014
+	1545.1.1={birth=yes}
+	1597.1.1={death=yes}
+}
+
+3925017 = { #6th Sultan of Magindanaw
+	name="Katchil"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925014
+	1550.1.1={birth=yes}
+	1619.1.1={death=yes}
+}
+
+3925018 = { #7th Sultan of Magindanaw/ 10th Sultan of Sulu / Nephew of the Sultan of Brunei (Defeated Spanish Conquistadors from Visaya)
+	name="Kudarat"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moro
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925017
+	1581.1.1={birth=yes}
+	1671.1.1={death=yes}
+}
+
+3925019 = { #11th Sultan of Sulu
+	name="Salahuddin Bakhtiar"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925018
+	1620.1.1={birth=yes}
+	1680.1.1={death=yes}
+}
+
+3925020 = { #8th Sultan of Magindanaw (Instability in the Magindanaw Kingdom as it fractures into Princedoms upon the siege of Spanish Officials from Davao) - Start of the Interior Mindanao falling out of royal control
+	name="Dundang Tidulay"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925018
+	1630.1.1={birth=yes}
+	1680.1.1={death=yes}
+}
+
+3925021 = { #9th Sultan of Magindanaw (2nd Lord of Simuay)
+	name="Barahaman"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925020
+	1650.1.1={birth=yes}
+	1690.1.1={death=yes}
+}
+
+3925022 = { #10th Sultan of Magindanaw (3rd Lord of Simuay)
+	name="Kaharuddin Kuda"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925020
+	1652.1.1={birth=yes}
+	1700.1.1={death=yes}
+}
+
+3925023 = { #11th Sultan of Magindanaw (Lord of Slangan)
+	name="Dipatuan"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925022
+	1680.1.1={birth=yes}
+	1710.1.1={death=yes}
+}
+
+3925024 = { #12th Sultan of Magindanaw (Lord of Tamontaka) - The Magindanaw Kingdom Stabilizes along the Southwestern Coast of Mindanao
+	name="Maulana"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925022
+	1685.1.1={birth=yes}
+	1720.1.1={death=yes}
+}
+
+3925025 = { #13th Sultan of Magindanaw
+	name="Muhammad Tahiruddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925023
+	1700.1.1={birth=yes}
+	1748.1.1={death=yes}
+}
+
+3925026 = { #12th Sultan of Sulu (First of the 3 rulers of the Sulu Regency)
+	name="Ali Shah"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925018
+	1640.1.1={birth=yes}
+	1680.1.1={death=yes}
+}
+
+3925027 = { #13th Sultan of Sulu (Second of the 3 rulers of the Sulu Regency)
+	name="Nur ul-Azam"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	female=yes
+	father=3925018
+	1645.1.1={birth=yes}
+	1680.1.1={death=yes}
+}
+
+3925028 = { #14th Sultan of Sulu (Third of the 3 rulers of the Sulu Regency)
+	name="Al Haqunu Ibn Wali ul-Ahad"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925018
+	1650.1.1={birth=yes}
+	1680.1.1={death=yes}
+}
+
+3925029 = { #15th Sultan of Sulu
+	name="Shahabuddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925026
+	1660.1.1={birth=yes}
+	1710.1.1={death=yes}
+}
+
+3925030 = { #14th Sultan of Magindanaw
+	name="Maulana Kamsa"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925024
+	1700.1.1={birth=yes}
+	1755.1.1={death=yes}
+}
+
+3925031 = { #16th Sultan of Sulu
+	name="Juhan Pahalawan"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925026
+	1682.1.1={birth=yes}
+	1718.1.1={death=yes}
+}
+
+3925032 = { #Prince of Sulu (3rd Ruler of Sulu)
+	name="Alauddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925005
+	1460.1.1={birth=yes}
+	1505.1.1={death=yes}
+}
+
+3925033 = { #17th Sultan of Sulu
+	name="Badaruddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925026
+	1685.1.1={birth=yes}
+	1732.1.1={death=yes}
+}
+
+3925034 = { #18th Sultan of Sulu - Active start of Sulu Sultanate relations with the Spanish Philippines Authority following the wars against the Magindanaw Sultans
+	name="Nasaruddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925026
+	1686.1.1={birth=yes}
+	1732.1.1={death=yes}
+}
+
+3925035 = { #19th Sultan of Sulu - Sultan of Sulu who had close relations with the Spanish Philippines leading to a confusing succession crisis and double reigns due to conversion to Christianity and re-conversion to Islam (when Christian he was known as Ferndinand I of the Crown of Sulu)
+	name="Alimuddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925033
+	1700.1.1={birth=yes}
+	1785.1.1={death=yes}
+}
+
+3925036 = { #20th Sultan of Sulu
+	name="Bantilan Muizzuddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925033
+	1705.1.1={birth=yes}
+	1763.1.1={death=yes}
+}
+
+3925037 = { #21st Sultan of Sulu
+	name="Mohammad Israel"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925035
+	1730.1.1={birth=yes}
+	1778.1.1={death=yes}
+}
+
+3925038 = { #22nd Sultan of Sulu
+	name="Alimuddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925036
+	1740.1.1={birth=yes}
+	1789.1.1={death=yes}
+}
+
+3925039 = { #23rd Sultan of Sulu
+	name="Alimuddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925036
+	1750.1.1={birth=yes}
+	1808.1.1={death=yes}
+}
+
+3925040 = { #24th Sultan of Sulu
+	name="Aliyuddin"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925036
+	1755.1.1={birth=yes}
+	1821.1.1={death=yes}
+}
+
+3925041 = { #25th Sultan of Sulu
+	name="Shakirullah"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925040
+	1790.1.1={birth=yes}
+	1823.1.1={death=yes}
+}
+
+3925042 = { #26th Sultan of Sulu
+	name="Jamalul"
+	dynasty=3925061 #Kiram
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925039
+	1790.1.1={birth=yes}
+	1844.1.1={death=yes}
+}
+
+3925043 = { #27th Sultan of Sulu
+	name="Mohammad Pulalun"
+	dynasty=3925061 #Kiram
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925042
+	1810.1.1={birth=yes}
+	1862.1.1={death=yes}
+}
+
+3925044 = { #28th Sultan of Sulu
+	name="Jamal ul-Azam"
+	dynasty=3925061 #Kiram
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925043
+	1830.1.1={birth=yes}
+	1881.1.1={death=yes}
+}
+
+3925045 = { #29th Sultan of Sulu
+	name="Mohammed Badaruddin"
+	dynasty=3925061 #Kiram
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925044
+	1850.1.1={birth=yes}
+	1884.1.1={death=yes}
+}
+
+3925046 = { #30th Sultan of Sulu
+	name="Harun Ar-Rashid"
+	dynasty=3925021 #Al-'Aydarus
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925041
+	1820.1.1={birth=yes}
+	1894.1.1={death=yes}
+}
+
+3925047 = { #31st Sultan of Sulu (Last Sultan of Independent Sultanate of Sulu as the association pact is dissolved with the American Colonial Authorities and its absorption to the Commonwealth of the Phillipines)
+	name="Jamalul"
+	dynasty=3925061 #Kiram
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925044
+	1868.3.27={birth=yes}
+	1936.1.1={death=yes}
+}
+
+3925048 = { #32nd Sultan of Sulu (Non-recognized continuation of the Sulu Monarchy)
+	name="Muwallil Wasit"
+	dynasty=3925061 #Kiram
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925044
+	1888.1.1={birth=yes}
+	1936.1.1={death=yes}
+}
+
+3925049 = { #33rd Sultan of Sulu (Recognized by the Republic of the Phillipines)
+	name="Mohammed Esmail"
+	dynasty=3925061 #Kiram
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925044
+	1908.1.1={birth=yes}
+	1936.1.1={death=yes}
+}
+
+3925050 = { #34th Sultan of Sulu (Recognized by the Republic of the Phillipines)
+	name="Mohammed Mahakuttah Abdullah"
+	dynasty=3925061 #Kiram
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925049
+	1930.1.1={birth=yes}
+	1986.1.1={death=yes}
+}
+
+3925051 = { #35th Sultan of Sulu (Last Pre-event One)
+	name="Jamalul"
+	dynasty=3925061 #Kiram
+	culture=moros
+	religion=renewalist
+	trait=legendary
+	occluded=yes
+	father=3925049
+	1938.6.15={birth=yes}
+	2000.10.20={death=yes}
 }
 
 ###########Sama Characters###########
