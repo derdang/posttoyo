@@ -61,7 +61,7 @@ government_flavor = {
 }
 government_flavor = {
 	name = gov_buddhist_republic
-	graphics = GFX_evt_cathedral_indian_group
+	graphics = GFX_east_asian_cities
 	priority = 2
 	trigger = {
 		religion_group = buddhist_group
@@ -87,6 +87,73 @@ government_flavor = {
 	trigger = {
 		government = sinic_bureaucracy_government
 		tier = emperor
+	}
+}
+government_flavor = {
+	name = gov_hui_state
+	graphics = GFX_evt_zheng_he
+	priority = 2
+	trigger = {
+		religion = hui
+	}
+}
+government_flavor = {
+	name = gov_shogunate
+	graphics = GFX_shogunate
+	priority = 2
+	trigger = {
+		culture_group = japonic
+		tier >= king
+		NOT = { government = merchant_republic_government }
+	}
+}
+government_flavor = {
+	name = gov_japanese_clans
+	graphics = GFX_clan_japanese
+	priority = 2
+	trigger = {
+		culture_group = japonic
+		tier <= duke
+		NOT = { government = merchant_republic_government }
+	}
+}
+government_flavor = {
+	name = gov_keiretsu
+	graphics = GFX_east_asian_cities
+	priority = 2
+	trigger = {
+		culture_group = japonic
+		OR = {
+			government = merchant_republic_government
+			government = republic_government
+		}
+	}
+}
+government_flavor = {
+	name = gov_kongsi
+	graphics = GFX_east_asian_cities
+	priority = 2
+	trigger = {
+		OR = {
+			culture_group = han
+			culture_group = viet
+		}
+		OR = {
+			government = merchant_republic_government
+			government = republic_government
+		}
+	}
+}
+government_flavor = {
+	name = gov_chaebol
+	graphics = GFX_east_asian_cities
+	priority = 2
+	trigger = {
+		culture_group = korean
+		OR = {
+			government = merchant_republic_government
+			government = republic_government
+		}
 	}
 }
 government_flavor = {
