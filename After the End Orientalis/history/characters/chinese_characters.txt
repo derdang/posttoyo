@@ -244,11 +244,11 @@
 	dynasty = 9025078 #Wen
 	culture = jilu
 	religion = hui
-	add_claim=d_sulu
 	trait = charismatic_negotiator
 	trait = ambitious
 	trait = pious
 	2560.3.13 = {birth = yes}
+	2570.1.1 = { effect = { add_claim = d_sulu } }
 	2605.3.13 = {death = yes}
 }
 ####Historical Ones - Taiwan####
@@ -4236,7 +4236,7 @@
     trait=diligent
 	father=2621007
     2490.1.1={birth=yes}
-    2575.1.1={death=yes}
+    2576.1.2={death=yes}
 }
 2621009 ={ # House Jiang
 	name="Shumeng"
@@ -4763,11 +4763,11 @@
     trait=ambitious
     trait=proud
     trait=diligent
-    trait=sympathy_old_world
+    trait=sympathy_oldworld
 	father=2610015
 	mother=2610016
     2569.1.1={birth=yes}
-	2600.1.1={add_weak_claim=e_hong}
+	2600.1.1={effect={add_weak_claim=e_hong}}
     2700.1.1={death=yes}
 }
 1060102 = { #Duke of Dongyi
@@ -4886,7 +4886,7 @@
     trait=lustful
 	father=2671007
     2555.1.1={birth=yes}
-	2600.1.1={add_claim=e_shaanxi}
+	2600.1.1={effect={add_claim=e_shaanxi}}
     2700.1.1={death=yes}
 }
 1060203 = {

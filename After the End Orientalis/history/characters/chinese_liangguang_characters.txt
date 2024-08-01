@@ -166,7 +166,7 @@
     trait=honest
 	father=2620005
     2566.1.1={birth=yes}
-	2599.1.1={add_claim=e_guangdong}
+	2599.1.1={effect={add_claim=e_guangdong}}
     2700.1.1={death=yes}
 }
 2620103 ={ #Shenzhen
@@ -196,10 +196,11 @@
 	culture=cantonese
 	religion=ruist
 	2584.8.5={birth=yes}
+	2700.1.1={death=yes}
 }
 2620105 ={ # First Emperor of Yue
 	name="Yongtai"
-    dynasty=xx # Chen
+    dynasty=9051293 # Chen
     culture=cantonese
     religion=ruist
     martial=7
@@ -218,7 +219,7 @@
 }
 2620106 ={ # Second Emperor of Yue
 	name="Shixin"
-    dynasty=xx # Chen
+    dynasty=9051293 # Chen
     culture=cantonese
     religion=ruist
     martial=4
@@ -346,7 +347,7 @@
 }
 2620303 ={ #Duke of Shanwei
 	name="Jiongming"
-    dynasty=xx # Huang
+    dynasty=9051091 # Huang
     culture=cantonese
     religion=ruist
     martial=5

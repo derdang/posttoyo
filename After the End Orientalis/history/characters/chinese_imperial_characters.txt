@@ -56,10 +56,12 @@
 	2582.9.1={birth=yes}
 	2598.1.1={effect={add_lover = 2610003}}
 	2599.1.1={
-		add_claim=d_yulin
-		add_claim=d_weinan
-		add_claim=d_yanan
-		add_claim=k_yanan
+		effect = {
+			add_claim=d_yulin
+			add_claim=d_weinan
+			add_claim=d_yanan
+			add_claim=k_yanan
+		}
 	}
 	2600.1.1={add_spouse=2610003}
 	2700.1.1={death=yes}
@@ -152,7 +154,7 @@
     trait=willful
 	father=2610001
 	mother=2610003
-    2600.1.1={birth=yes}
+    2605.1.1={birth=yes}
     2690.1.1={death=yes}
 }
 2610006 = {  #Young 1st Rank Iron Prince of the Hong (Brother of Zhiyuan)
@@ -176,9 +178,11 @@
 	mother=2603108
     2585.1.1={birth=yes}
 	2599.1.1={
-		add_claim=e_hong
-		add_claim=k_yan
-		add_claim=d_beijing
+		effect = {
+			add_claim=e_hong
+			add_claim=k_yan
+			add_claim=d_beijing
+		}
 	}
     2609.1.1={death=yes}
 }
@@ -623,7 +627,7 @@
     trait=ambitious
     trait=envious
     trait=diligent
-	father=2603009
+	father=2603008
     2425.1.1={birth=yes}
     2510.1.1={death=yes}
 }
@@ -818,7 +822,7 @@
     learning=5
     trait=detached_priest
     trait=theologian
-    trait=sympathy_owc
+    trait=sympathy_oldworld
     trait=humble
     trait=content
     trait=patient
@@ -909,9 +913,11 @@
     2563.1.1={birth=yes}
 	2599.1.1={effect={add_rival = 2610001}}
 	2600.1.1={
-		add_weak_claim=e_hong
-		add_weak_claim=k_yan
-		add_weak_claim=d_beijing
+		effect = {
+			add_weak_claim=e_hong
+			add_weak_claim=k_yan
+			add_weak_claim=d_beijing
+		}
 	}
     2609.1.1={death=yes}
 }
@@ -1122,7 +1128,7 @@
 	give_nickname=nick_the_tiger
 	father=2625018
     2572.1.1={birth=yes}
-	2580.1.1={add_friend=2625019}
+	2580.1.1={effect={add_friend=2625019}}
     2700.1.1={death=yes}
 }
 2625002 ={ # Shijiazhuang
@@ -1468,7 +1474,7 @@
     trait=erudite
     trait=charitable
     2548.1.1={birth=yes}
-	2599.1.1={add_claim=e_guangdong}
+	2599.1.1={effect={add_claim=e_guangdong}}
     2700.1.1={death=yes}
 }
 # Chu
