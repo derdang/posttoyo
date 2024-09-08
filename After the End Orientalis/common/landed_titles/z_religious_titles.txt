@@ -770,3 +770,34 @@ k_unificationist = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+d_quinto = {
+	color = { 237 18 83 }
+	color2={ 220 220 0 }
+	
+	creation_requires_capital = no
+	
+	capital = 570 # Dili
+	
+	dignity = 200
+	
+	title = GRAND_ADMIRAL
+	title_female = GRAND_ADMIRAL
+	foa = GRAND_ADMIRAL_FOA
+	primary = yes
+	
+	short_name = yes
+	
+	religion = quinto
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = quinto
+	
+	allow = {
+		has_global_flag = quinto_formed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}

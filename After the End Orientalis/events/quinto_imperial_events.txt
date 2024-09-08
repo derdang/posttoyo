@@ -1,0 +1,179 @@
+namespace = quinto
+character_event = {
+	id = quinto.1
+	title = EVTTITLE_quinto_muses
+	desc = EVTDESC_quinto_muses
+  
+	picture = GFX_evt_book_carolingian_script
+	border = GFX_event_normal_frame_religion
+	religion = quinto
+	is_triggered_only = yes
+  
+	option = {
+		name = EVTOPT_muses_maria
+		add_character_modifier = {
+			modifier = maria_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	option = {
+		name = EVTOPT_muses_sebastiao
+		add_character_modifier = {
+			modifier = sebastiao_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	option = {
+		name = EVTOPT_muses_mars
+		add_character_modifier = {
+			modifier = mars_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	
+	option = {
+		name = "Next Page"
+		hidden_tooltip = {
+			character_event = { id = quinto.2 }
+		}	
+	}
+}
+
+character_event = {
+	id = quinto.2
+	title = EVTTITLE_quinto_muses
+	desc = EVTDESC_quinto_muses
+  
+	picture = GFX_evt_book_carolingian_script
+	border = GFX_event_normal_frame_religion
+	religion = quinto
+	is_triggered_only = yes
+  
+	option = {
+		name = EVTOPT_muses_venus
+		add_character_modifier = {
+			modifier = venus_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	option = {
+		name = EVTOPT_muses_ines_pedro
+		add_character_modifier = {
+			modifier = ines_pedro_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	option = {
+		name = EVTOPT_muses_bacchus
+		add_character_modifier = {
+			modifier = bacchus_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	
+	option = {
+		name = "Next Page"
+		hidden_tooltip = {
+			character_event = { id = quinto.3 }
+		}	
+	}
+}
+
+character_event = {
+	id = quinto.3
+	title = EVTTITLE_quinto_muses
+	desc = EVTDESC_quinto_muses
+  
+	picture = GFX_evt_book_carolingian_script
+	border = GFX_event_normal_frame_religion
+	religion = quinto
+	is_triggered_only = yes
+  
+	option = {
+		name = EVTOPT_muses_rei_artur
+		add_character_modifier = {
+			modifier = rei_artur_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	option = {
+		name = EVTOPT_muses_nossa_senhora
+		add_character_modifier = {
+			modifier = nossa_senhora_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	option = {
+		name = EVTOPT_muses_adamastor
+		add_character_modifier = {
+			modifier = adamastor_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	option = {
+		name = "Next Page"
+		hidden_tooltip = {
+			character_event = { id = quinto.4 }
+		}	
+	}
+}
+character_event = {
+	id = quinto.4
+	title = EVTTITLE_quinto_muses
+	desc = EVTDESC_quinto_muses
+  
+	picture = GFX_evt_book_carolingian_script
+	border = GFX_event_normal_frame_religion
+	religion = quinto
+	is_triggered_only = yes
+  
+	option = {
+		name = EVTOPT_muses_netuno
+		add_character_modifier = {
+			modifier = netuno_muse
+			duration = -1
+		}
+		hidden_tooltip = {
+			set_character_flag = foundmuse
+		}
+	}
+	option = {
+		name = "Go Back"
+		hidden_tooltip = {
+			character_event = { id = quinto.3 }
+		}	
+	}
+	option = {
+		name = "Next Page"
+		hidden_tooltip = {
+			character_event = { id = quinto.1 }
+		}	
+	}
+}
