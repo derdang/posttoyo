@@ -17500,7 +17500,21 @@ coat_of_arms = {
 3900016 = { name="del Rosario" culture=tagalog }
 3900017 = { name="Javier" culture=tagalog }
 3900018 = { name="Ocampo" culture=tagalog }
-3900019 = { name="Manalo" culture=tagalog }
+3900019 = { name="Manalo" culture=tagalog 
+	used_for_random=no 
+	coat_of_arms = {
+		religion = restorationist
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 3900020 = { name="Enriquez" culture=tagalog }
 3900021 = { name="Miranda" culture=tagalog }
 3900022 = { name="Yap" culture=tagalog }
