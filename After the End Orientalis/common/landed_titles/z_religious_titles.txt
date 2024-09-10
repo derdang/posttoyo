@@ -801,3 +801,34 @@ d_quinto = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+k_restorationist = {
+	color = { 255 215 0 }
+	color2={ 220 220 0 }
+	
+	creation_requires_capital = no
+	
+	capital = 202 # Manila
+	
+	dignity = 200
+	
+	title = EXECUTIVE_MINISTER
+	title_female = EXECUTIVE_MINISTER
+	foa = EXECUTIVE_MINISTER_FOA
+	primary = yes
+	
+	short_name = yes
+	
+	religion = restorationist
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = restorationist
+	
+	allow = {
+		has_global_flag = restorationist_formed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
