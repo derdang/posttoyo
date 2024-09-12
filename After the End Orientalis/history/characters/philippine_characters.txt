@@ -446,7 +446,12 @@
 	disallow_random_traits=yes
 	father=3900020
 	1995.1.1={birth=yes}
-	2095.1.1={death=yes}
+	2095.1.1={
+		death={
+			death_reason=death_battle
+			killer=3900029
+		}
+	}
 }
 3900022 = { #5th Executive Minister of Iglesia ni Cristo, ruled 2095.1.1 to 2155.1.1, Duke of Quezon from 2095.1.1 to 2155.1.1, son of Rodrigo Manalo
 	name="Ferdinand"
@@ -507,7 +512,11 @@
 	disallow_random_traits=yes
 	father=3900024
 	2285.1.1={birth=yes}
-	2350.1.1={death=yes}
+	2350.1.1={
+		death={
+			death_reason=death_rabble
+		}
+	}
 }
 3900026 = { #9th Executive Minister of Iglesia ni Cristo and Duke of Quezon from 2350.9.1 to 2450.1.1, son of Marco Manalo
 	name="Felix"
@@ -599,7 +608,11 @@
 	disallow_random_traits=yes
 	mother=3900030
 	2225.1.1={birth=yes}
-	2320.1.1={death=yes}
+	2320.1.1={
+		death={
+			death_reason=death_flood_drowning
+		}
+	}
 }
 3900032 = { #Count of Manila, ruled from 2318.1.1 to 2320.1.1, died in a flood
 	name="Ramon"
@@ -614,7 +627,11 @@
 	disallow_random_traits=yes
 	father=3900031
 	2300.1.1={birth=yes}
-	2320.1.1={death=yes}
+	2320.1.1={
+		death={
+			death_reason=death_flood_drowning
+		}
+	}
 }
 3900033 = { #Mother of Conrad Aquino
 	name="Lourdes"
@@ -735,7 +752,7 @@
 	2370.1.1={birth=yes}
 	2475.1.1={death=yes}
 }
-3900041 = { #Eleventh Archprimate of Asia, ruled from 2459.1.1 to 2501.1.1, died of gout complications, son of Emilio Ongpin
+3900041 = { #Eleventh Archprimate of Asia, ruled from 2459.1.1 to 2501.1.1, died of gout complications & syphillis, son of Emilio Ongpin
 	name="Dan"
 	dynasty=3900250 # Ongpin
 	culture=tagalog
@@ -751,7 +768,11 @@
 	father=3900038
 	mother=3900040
 	2415.1.1={birth=yes}
-	2501.1.1={death=yes}
+	2501.1.1={
+		death={
+			death_reason=death_trait
+		}
+	}
 }
 3900042 = { #Son of Felipe Ongpin, head of House Ongpin from 2475.1.1 to 2500.1.1
 	name="Andrew"
@@ -779,7 +800,12 @@
 	disallow_random_traits=yes
 	father=3900042
 	2475.1.1={birth=yes}
-	2530.1.1={death=yes}
+	2530.1.1={
+		death={
+			death_reason=death_murder
+			killer=3900037
+		}
+	}
 
 }
 3900044 = { #Sixth Lord Mayor of Republic of Manila and Count of Manila from 2550.1.1 to 2575.1.1, head of House Ongpin from 2530.1.1 to 2575.1.1, son of Valentin Ongpin
@@ -837,7 +863,11 @@
 	father=3900035
 	mother=3900045
 	2440.1.1={birth=yes}
-	2525.1.1={death=yes}
+	2525.1.1={
+		death={
+			death_reason=death_murder_unknown
+		}
+	}
 }
 3900048 = { #Son of Francisco Tantoco, head of House Tantoco from 2500.1.1 to 2550.1.1
 	name="Felipe"
@@ -880,7 +910,12 @@
 	father=3900048
 	mother=3900049
 	2530.1.1={birth=yes}
-	2568.1.1={death=yes}
+	2568.1.1={
+		death={
+			death_reason=death_murder
+			killer=3900051
+		}
+	}
 }
 3900051 = { #Thirteenth Archprimate of Asia, ruled from 2525.1.1 to 2570.1.1, son of Felipe Tantoco, ruled Duchy of Manila and County of Manila from 2540.1.1 to 2550.1.1
 	name="Antonio"

@@ -246,6 +246,20 @@ death_accident_drowning = {
 		}
 	}
 }
+death_flood_drowning = {
+	violent = yes
+	long_desc = "DEATH_FLOOD_DROWNING"
+	execution = yes
+	sound_list = {
+		female = {
+			"drowning_female_01"
+			"drowning_female_02"
+		}
+		male = {
+			"drowning_male_01"
+		}
+	}
+}
 
 death_accident_arrow = {
 	violent = yes
