@@ -17232,7 +17232,7 @@ coat_of_arms = {
 2877217 = { name="Vang" culture=cochinchinese }
 2877218 = { name="Kanh" culture=cochinchinese }
 2877219 = { name="Lang" culture=cochinchinese }
-
+2877220 = { name="Huynh" culture=cochinchinese }
 
 2878000 = { name="Mau" culture=muong }
 2878001 = { name="Lê" culture=muong religion=mahayana} #Late Lê Family
@@ -17487,7 +17487,21 @@ coat_of_arms = {
 3900003 = { name="Lim" culture=tagalog }
 3900004 = { name="Villanueva" culture=tagalog }
 3900005 = { name="Chua" culture=tagalog }
-3900006 = { name="Aquino" culture=tagalog }
+3900006 = { name="Aquino" culture=tagalog 
+	used_for_random=no 
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 3900007 = { name="De Leon" culture=tagalog }
 3900008 = { name="Ong" culture=tagalog }
 3900009 = { name="Francisco" culture=tagalog }
@@ -17833,7 +17847,10 @@ coat_of_arms = {
 3900256 = { name="Iyam" culture=tagalog }
 3900257 = { name="Pomoy" culture=tagalog }
 3900258 = { name="Realonda" culture=tagalog }
-3900259 = { name="Realonda" culture=tagalog }
+3900259 = { name="Noriel" culture=tagalog }
+3900260 = { name="Gomez" culture=tagalog }
+3900261 = { name="Castro" culture=tagalog }
+3900262 = { name="Forteza" culture=tagalog }
 
 
 3901000 = { name="Tan" culture=ilocano }
@@ -18874,6 +18891,37 @@ coat_of_arms = {
 		}
 	} #Baron of Rice
 }
+3904251 = { name="Sakan" culture=kapampangan 
+	used_for_random=no
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+3904252 = { name="Esteban" culture=kapampangan 
+	used_for_random=no
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+3904253 = { name="Arroyo" culture=kapampangan }
 
 3905000 = { name="Tan" culture=sambal }
 3905001 = { name="dela Cruz" culture=sambal }
@@ -26291,7 +26339,7 @@ coat_of_arms = {
 3960256 = { name="Iyam" culture=tsinoy }
 3960257 = { name="Pomoy" culture=tsinoy }
 3960258 = { name="Realonda" culture=tsinoy }
-3960259 = { name="Realonda" culture=tsinoy }
+3960259 = { name="Gokongwei" culture=tsinoy used_for_random = no }
 
 #Indian Off-Map (4XXX)
 

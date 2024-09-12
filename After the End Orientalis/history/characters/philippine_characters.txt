@@ -30,6 +30,7 @@
 #3927 - Igorot
 #3928 - Lumad
 #3929 - Mangyan
+#3930 - Tsinoy
 
 ###########Tagalog Characters###########
 
@@ -52,6 +53,7 @@
 	trait=paranoid
 	trait=arbitrary
 	trait=humble
+	father=3900044
 	2557.8.1={
 		birth=yes
 	}
@@ -77,6 +79,7 @@
 	trait=stubborn
 	trait=gregarious
 	trait=cynical
+	father=3900050
 	2565.2.16={
 		birth=yes
 	}
@@ -550,7 +553,469 @@
 	2490.1.1={birth=yes}
 	2579.1.1={death=yes}
 }
+3900029 = { #1st First King of Luzon, Count of Manila and Pampanga, ruled from 2024.1.1 to 2065.1.1
+	name="Jaime"
+	dynasty=3900006 #Aquino
+	culture=tagalog
+	religion=catholic
+	trait=charismatic_negotiator
+	trait=legendary
+	trait=gregarious
+	trait=kind
+	trait=just
+	trait=charitable
+	disallow_random_traits=yes
+	1988.1.1={birth=yes}
+	2065.1.1={death=yes}
+}
+3900030 = { #Second Queen of Luzon, Count of Manila and Pampanga, ruled from 2065.1.1 to 2250.1.1, daughter of King Jaime Aquino
+	name="Robina"
+	dynasty=3900006 #Aquino
+	female=yes
+	culture=tagalog
+	religion=catholic
+	trait=midas_touched
+	trait=fair
+	trait=quick
+	trait=kind
+	trait=ambitious
+	trait=diligent
+	disallow_random_traits=yes
+	father=3900029
+	2012.1.1={birth=yes}
+	2250.1.1={death=yes}
+}
+3900031 = { #Third King of Luzon and Count of Pampanga from 2250.1.1 to 2320.1.1, Count of Manila from 2250.1.1 to 2318.1.1 died in a flood, son of Robina Aquino
+	name="Benigno"
+	dynasty=3900006 #Aquino
+	culture=tagalog
+	religion=catholic
+	trait=grey_eminence
+	trait=socializer
+	trait=charitable
+	trait=kind
+	trait=zealous
+	trait=celibate
+	disallow_random_traits=yes
+	mother=3900030
+	2225.1.1={birth=yes}
+	2320.1.1={death=yes}
+}
+3900032 = { #Count of Manila, ruled from 2318.1.1 to 2320.1.1, died in a flood
+	name="Ramon"
+	dynasty=3900006 #Aquino
+	culture=tagalog
+	religion=catholic
+	trait=martial_cleric
+	trait=poet
+	trait=zealous
+	trait=chaste
+	trait=erudite
+	disallow_random_traits=yes
+	father=3900031
+	2300.1.1={birth=yes}
+	2320.1.1={death=yes}
+}
+3900033 = { #Mother of Conrad Aquino
+	name="Lourdes"
+	culture=tagalog
+	female=yes
+	religion=catholic
+	trait=martial_cleric
+	trait=nun
+	trait=zealous
+	trait=chaste
+	trait=diligent
+	trait=ambitious
+	trait=kind
+	disallow_random_traits=yes
+	2295.1.1={birth=yes}
+	2350.1.1={death=yes}
+}
+3900034 = { #First Lord Mayor of Republic of Manila and Count of Manila from 2361.1.1 to 2400.1.1
+	name="Benjamin"
+	dynasty=3900250 #Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=grey_eminence
+	trait=quick
+	trait=gregarious
+	trait=diligent
+	trait=ambitious
+	trait=proud
+	disallow_random_traits=yes
+	2320.1.1={birth=yes}
+	2400.1.1={death=yes}
+}
+3900035 = { #Third Lord Mayor of Republic of Manila and Count of Manila from 2433.1.1 to 2450.1.1
+	name="José"
+	dynasty=3900251 # Tantoco
+	culture=tagalog
+	religion=catholic
+	trait=midas_touched
+	trait=ambitious
+	trait=diligent
+	trait=cruel
+	trait=lustful
+	trait=patient
+	disallow_random_traits=yes
+	2380.1.1={birth=yes}
+	2450.1.1={death=yes}
+}
+3900036 = { #Fourth Lord Mayor of Republic of Manila and Count of Manila from 2450.1.1 to 2500.1.1, son of José Tantoco
+	name="Francisco"
+	dynasty=3900251 # Tantoco
+	culture=tagalog
+	religion=catholic
+	trait=fortune_builder
+	trait=weak
+	trait=diligent
+	trait=ambitious
+	father=3900035
+	mother=3900045
+	disallow_random_traits=yes
+	2430.1.1={birth=yes}
+	2500.1.1={death=yes}
+}
+3900037 = { #Fifth Lord Mayor of Republic of Manila and Count of Manila from 2500.1.1 to 2540.1.1
+	name="Marco"
+	dynasty=3900253 # Lopez
+	culture=tagalog
+	religion=catholic
+	trait=tough_soldier
+	trait=is_fat
+	trait=wroth
+	trait=diligent
+	trait=paranoid
+	disallow_random_traits=yes
+	2455.1.1={birth=yes}
+	2540.1.1={death=yes}
+}
+3900038 = { #Son of Benjamin Ongpin, head of House Ongpin from 2400.1.1 to 2450.1.1
+	name="Emilio"
+	dynasty=3900250 # Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=underhanded_rogue
+	trait=paranoid
+	trait=gregarious
+	trait=charitable
+	disallow_random_traits=yes
+	father=3900034
+	2365.1.1={birth=yes}
+	2388.1.1={add_spouse=3900040}
+	2450.1.1={death=yes}
+}
+3900039 = { #Son of Emilio Ongpin, head of House Ongpin from 2450.1.1 to 2475.1.1
+	name="Felipe"
+	dynasty=3900250 # Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=thrifty_clerk
+	trait=greedy
+	trait=lustful
+	trait=paranoid
+	trait=twin
+	disallow_random_traits=yes
+	father=3900038
+	mother=3900040
+	2415.1.1={birth=yes}
+	2475.1.1={death=yes}
+}
+3900040 = { #Mother of Felipe and Dan
+	name="Maria"
+	female=yes
+	culture=tagalog
+	religion=catholic
+	trait=thrifty_clerk
+	trait=greedy
+	trait=lustful
+	trait=paranoid
+	disallow_random_traits=yes
+	2370.1.1={birth=yes}
+	2475.1.1={death=yes}
+}
+3900041 = { #Eleventh Archprimate of Asia, ruled from 2459.1.1 to 2501.1.1, died of gout complications, son of Emilio Ongpin
+	name="Dan"
+	dynasty=3900250 # Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=indulgent_wastrel
+	trait=drunkard
+	trait=syphilitic
+	trait=gout
+	trait=greedy
+	trait=slothful
+	trait=twin
+	disallow_random_traits=yes
+	father=3900038
+	mother=3900040
+	2415.1.1={birth=yes}
+	2501.1.1={death=yes}
+}
+3900042 = { #Son of Felipe Ongpin, head of House Ongpin from 2475.1.1 to 2500.1.1
+	name="Andrew"
+	dynasty=3900250 # Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=fortune_builder
+    trait=ambitious
+    trait=diligent
+    trait=proud
+	disallow_random_traits=yes
+	father=3900039
+	2450.1.1={birth=yes}
+	2500.1.1={death=yes}
+}
+3900043 = { #Son of Andrew Ongpin, head of House Ongpin 2500.1.1 to 2530.1.1, murdered on the order of Marco Lopez
+	name="Valentin"
+	dynasty=3900250 # Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=flamboyant_schemer
+	trait=deceitful
+	trait=greedy
+	trait=diligent
+	disallow_random_traits=yes
+	father=3900042
+	2475.1.1={birth=yes}
+	2530.1.1={death=yes}
 
+}
+3900044 = { #Sixth Lord Mayor of Republic of Manila and Count of Manila from 2550.1.1 to 2575.1.1, head of House Ongpin from 2530.1.1 to 2575.1.1, son of Valentin Ongpin
+	name="Manuel"
+	dynasty=3900250 # Ongpin
+	culture=tagalog
+	religion=catholic
+	trait=underhanded_rogue
+	trait=gregarious
+	trait=charitable
+	trait=kind
+	disallow_random_traits=yes
+	father=3900043
+	2515.1.1={birth=yes}
+	2575.1.1={death=yes}
+}
+3900045 = { #Mother of Francisco and Alvin
+	name="Gloria"
+	female=yes
+	culture=tagalog
+	religion=catholic
+	trait=thrifty_clerk
+	trait=greedy
+	trait=lustful
+	trait=paranoid
+	disallow_random_traits=yes
+	2390.1.1={birth=yes}
+	2445.1.1={death=yes}
+}
+3900046 = { #Tenth Archprimate of Asia, ruled from 2440.1.1 to 2459.1.1, son of José Tantoco
+	name="Alvin"
+	dynasty=3900251 # Tantoco
+	culture=tagalog
+	religion=catholic
+	trait=martial_cleric
+	trait=cynical
+	trait=ambitious
+	trait=diligent
+	disallow_random_traits=yes
+	father=3900035
+	mother=3900045
+	2420.1.1={birth=yes}
+	2459.1.1={death=yes}
+}
+3900047 = { #Twelfth Archprimate of Asia, ruled from 2501.1.1 to 2525.1.1, died under suspicious circumstances, son of José Tantoco
+	name="Jesus"
+	dynasty=3900251 # Tantoco
+	culture=tagalog
+	religion=catholic
+	trait=martial_cleric
+	trait=just
+	trait=kind
+	trait=charitable
+	disallow_random_traits=yes
+	father=3900035
+	mother=3900045
+	2440.1.1={birth=yes}
+	2525.1.1={death=yes}
+}
+3900048 = { #Son of Francisco Tantoco, head of House Tantoco from 2500.1.1 to 2550.1.1
+	name="Felipe"
+	dynasty=3900251 # Tantoco
+	culture=tagalog
+	religion=catholic
+	trait=martial_cleric
+	trait=scholar
+	trait=zealous
+	trait=diligent
+	disallow_random_traits=yes
+	father=3900036
+	2475.1.1={birth=yes}
+	2495.1.1={add_spouse=3900049}
+	2550.1.1={death=yes}
+}
+3900049 = { #Mother of Vicente and Antonio
+	name="Alice"
+	female=yes
+	culture=tagalog
+	religion=catholic
+	trait=thrifty_clerk
+	trait=greedy
+	trait=lustful
+	trait=paranoid
+	disallow_random_traits=yes
+	2480.1.1={birth=yes}
+	2560.1.1={death=yes}
+}
+3900050 = { #Son of Felipe Tantoco, head of House Tantoco, father of Baltazar Tantoco from 2550.1.1 to 2568.1.1, murdered by Antonio Tantoco
+	name="Vicente"
+	dynasty=3900251 # Tantoco
+	culture=tagalog
+	religion=catholic
+	trait=tough_soldier
+	trait=wroth
+	trait=kind
+	trait=paranoid
+	disallow_random_traits=yes
+	father=3900048
+	mother=3900049
+	2530.1.1={birth=yes}
+	2568.1.1={death=yes}
+}
+3900051 = { #Thirteenth Archprimate of Asia, ruled from 2525.1.1 to 2570.1.1, son of Felipe Tantoco, ruled Duchy of Manila and County of Manila from 2540.1.1 to 2550.1.1
+	name="Antonio"
+	dynasty=3900251 # Tantoco
+	culture=tagalog
+	religion=catholic
+	trait=elusive_shadow
+	trait=sadist
+	trait=kinslayer
+	trait=proud
+	trait=diligent
+	trait=ambitious
+	trait=shrewd
+	trait=paranoid
+	trait=cynical
+	disallow_random_traits=yes
+	father=3900048
+	mother=3900049
+	2500.1.1={birth=yes}
+	2570.1.1={death=yes}
+}
+3900052 = { #Fourteenth Archprimate of Asia, ruled from 2570.1.1 onward, son of Antonio Tantoco
+	name="Maximo"
+	dynasty=3900251 # Tantoco
+	culture=tagalog
+	religion=catholic
+	trait=scholarly_theologian
+	trait=theologian
+	trait=bastard
+	trait=proud
+	trait=content
+	trait=diligent
+	disallow_random_traits=yes
+	father=3900051
+	2535.1.1={birth=yes}
+	2610.1.1={death=yes}
+}
+3900053 = { #First Archprimate of Asia, ruled from 2080.1.1 to 2088.1.1
+	name="Pedro"
+	dynasty=3900002 # Bautista
+	culture=tagalog
+	religion=catholic
+	trait=mastermind_theologian
+	trait=legendary
+	trait=zealous
+	trait=chaste
+	disallow_random_traits=yes
+	2012.1.1={birth=yes}
+	2088.1.1={death=yes}
+}
+3900054 = { #Second Archprimate of Asia, ruled from 2088.1.1 to 2145.1.1
+	name="Jovito"
+	dynasty=3900260 # Gomez
+	culture=tagalog
+	religion=catholic
+	trait=martial_cleric
+	trait=legendary
+	trait=scholarly_theologian
+	trait=scholar
+	trait=diligent
+	trait=charitable
+	disallow_random_traits=yes
+	2050.1.1={birth=yes}
+	2145.1.1={death=yes}
+}
+3900055 = { #Third Archprimate of Asia, ruled from 2145.1.1 to 2170.1.1
+	name="Rex"
+	dynasty=3900216 # Salonga
+	culture=tagalog
+	religion=catholic
+	trait=mastermind_theologian
+	trait=legendary
+	trait=genius
+	trait=zealous
+	disallow_random_traits=yes
+	2096.1.1={birth=yes}
+	2170.1.1={death=yes}
+}
+3900056 = { #Fifth Archprimate of Asia, ruled from 2200.1.1 to 2300.1.1
+	name="Angel"
+	dynasty=3900168 # Bonifacio
+	culture=tagalog
+	religion=catholic
+	trait=martial_cleric
+	trait=legendary
+	trait=zealous
+	trait=diligent
+	disallow_random_traits=yes
+	2150.1.1={birth=yes}
+	2300.1.1={death=yes}
+}
+3900057 = { #Sixth Archprimate of Asia, ruled from 2300.1.1 to 2356.1.1
+	name="Lorenzo"
+	dynasty=3900261 # Castro
+	culture=tagalog
+	religion=catholic
+	trait=scholarly_theologian
+	trait=charitable
+	trait=kind
+	trait=ambitious
+	disallow_random_traits=yes
+	2270.1.1={birth=yes}
+	2356.1.1={death=yes}
+}
+3900058 = { #Eighth Archprimate of Asia, son of Ramon Aquino and Lourdes, ruled from 2380.1.1 to 2405.1.1
+	name="Conrad"
+	dynasty=3900006 #Aquino
+	culture=tagalog
+	religion=catholic
+	trait=mastermind_theologian
+	trait=bastard
+	trait=celibate
+	trait=kind
+	trait=zealous
+	trait=charitable
+	trait=humble
+	disallow_random_traits=yes
+	father=3900032
+	mother=3900033
+	2320.9.1={birth=yes}
+	2405.1.1={death=yes}
+}
+3900059 = { #Ninth Archprimate of Asia, ruled from 2405.1.1 to 2440.1.1
+	name="Ibarra"
+	dynasty=3900262 # Forteza
+	culture=tagalog
+	religion=catholic
+	trait=martial_cleric
+	trait=chaste
+	trait=zealous
+	trait=proud
+	disallow_random_traits=yes
+	2375.1.1={birth=yes}
+	2440.1.1={death=yes}
+}
 ###########Ilocano Characters###########
 3901000 = { #Duke of Ilocos
 	name="Armando"
@@ -694,6 +1159,79 @@
 	2597.8.1={
 		birth=yes
 	}
+}
+3904002 = { #Count of Manila from 2321.1.1 to 2330.1.1, killed by Queen Francesca Esteban
+	name="Domingo"
+	dynasty=3904251 #Sakan
+	culture=kapampangan
+	religion=catholic
+	diplomacy=2
+	martial=8
+	stewardship=6
+	intrigue=1
+	learning=4
+	trait=brilliant_strategist
+	trait=brave
+	trait=ambitious
+	trait=proud
+	trait=arbitrary
+	trait=diligent
+	disallow_random_traits=yes
+	2295.1.1={birth=yes}
+	2330.1.1={death=yes}
+}
+3904003 = { #Fourth Queen of Luzon and Countess of Pampanga from 2330.1.1 to 2363.1.1, Countess of Manila from 2330.1.1 to 2361.1.1
+	name="Francesca"
+	dynasty=3904252 #Esteban
+	female=yes
+	culture=kapampangan
+	religion=catholic
+	diplomacy=2
+	martial=8
+	stewardship=6
+	intrigue=1
+	learning=4
+	trait=brilliant_strategist
+	trait=brave
+	trait=ambitious
+	trait=proud
+	trait=arbitrary
+	trait=diligent
+	disallow_random_traits=yes
+	2290.1.1={birth=yes}
+	2363.1.1={death=yes}
+}
+3904004 = { #Fifth King of Luzon and Count of Pampanga from 2361.1.1 to 2380.1.1, killed by a rabble, son of Queen Francesca Esteban
+	name="Alejandro"
+	dynasty=3904252 #Esteban
+	culture=kapampangan
+	religion=catholic
+	diplomacy=2
+	martial=8
+	stewardship=6
+	intrigue=1
+	learning=4
+	trait=tough_soldier
+	trait=dull
+	trait=wroth
+	trait=paranoid
+	disallow_random_traits=yes
+	mother=3904003
+	2335.1.1={birth=yes}
+	2380.1.1={death=yes}
+}
+3904005 = { #Fourth Archprimate of Asia, ruled from 2170.1.1 to 2200.1.1
+	name="Satur"
+	dynasty=3904253 # Arroyo
+	culture=kapampangan
+	religion=catholic
+	trait=fortune_builder
+	trait=legendary
+	trait=greedy
+	trait=diligent
+	disallow_random_traits=yes
+	2100.1.1={birth=yes}
+	2200.1.1={death=yes}
 }
 
 ###########Sambal Characters###########
@@ -2250,3 +2788,19 @@
 	}
 }
 
+###########Tsinoy Characters###########
+3930000 = { #Second Lord Mayor of Republic of Manila and Count of Manila from 2400.1.1 to 2433.1.1
+	name="James"
+	dynasty=3960259 # Gokongwei
+	culture=tsinoy
+	religion=ruist
+	trait=fortune_builder
+	trait=administrator
+	trait=shrewd
+	trait=diligent
+	trait=ambitious
+	trait=patient
+	disallow_random_traits=yes
+	2380.1.1={birth=yes}
+	2433.1.1={death=yes}
+}
