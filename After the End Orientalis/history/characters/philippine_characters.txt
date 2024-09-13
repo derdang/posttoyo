@@ -1051,6 +1051,60 @@
 	2375.1.1={birth=yes}
 	2440.1.1={death=yes}
 }
+3900060 = { #Killed in battle by Archprimate Antonio ‘the Aswang’ Tantoco in 2543.1.1
+	name="Crisóstomo"
+	dynasty=3900263 # Ibarra
+	culture=tagalog
+	religion=rizalista
+	trait=skilled_tactician
+	trait=heresiarch
+	trait=bastard
+	trait=zealous
+	trait=envious
+	trait=charitable
+	disallow_random_traits=yes
+	2515.1.1={birth=yes}
+	2543.1.1={
+		death={
+			death_reason=death_murder
+			killer=3900051
+		}
+	}
+}
+3900061 = { #Killed in battle by Queen Francesca Esteban in 2330.1.1
+	name="Tiago"
+	culture=tagalog
+	religion=rizalista
+	trait=tough_soldier
+	trait=peasant_leader
+	trait=wroth
+	trait=charitable
+	disallow_random_traits=yes
+	2305.1.1={birth=yes}
+	2330.1.1={
+		death={
+			death_reason=death_murder
+			killer=3904003
+		}
+	}
+}
+3900062 = { #Killed in battle by Arturo Manalo in 2250.1.1
+	name="Elías"
+	culture=tagalog
+	religion=rizalista
+	trait=tough_soldier
+	trait=peasant_leader
+	trait=zealous
+	trait=wroth
+	disallow_random_traits=yes
+	2220.1.1={birth=yes}
+	2250.1.1={
+		death={
+			death_reason=death_murder
+			killer=3900024
+		}
+	}
+}
 ###########Ilocano Characters###########
 3901000 = { #Duke of Ilocos
 	name="Armando"
@@ -1213,7 +1267,12 @@
 	trait=diligent
 	disallow_random_traits=yes
 	2295.1.1={birth=yes}
-	2330.1.1={death=yes}
+	2330.1.1={
+		death={
+			death_reason=death_murder
+			killer=3904003
+		}
+	}
 }
 3904003 = { #Fourth Queen of Luzon and Countess of Pampanga from 2330.1.1 to 2363.1.1, Countess of Manila from 2330.1.1 to 2361.1.1
 	name="Francesca"

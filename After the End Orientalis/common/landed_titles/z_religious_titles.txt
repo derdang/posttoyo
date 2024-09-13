@@ -832,3 +832,34 @@ k_restorationist = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+d_rizalista = {
+	color = { 255 215 0 }
+	color2={ 220 220 0 }
+	
+	creation_requires_capital = no
+	
+	capital = 203 # Laguna
+	
+	dignity = 200
+	
+	title = SUPREME_BISHOP
+	title_female = SUPREME_BISHOP
+	foa = SUPREME_BISHOP_FOA
+	primary = yes
+	
+	short_name = yes
+	landless = yes
+	
+	religion = rizalista
+	assimilate = no
+	
+	controls_religion = rizalista
+	
+	allow = {
+		has_global_flag = rizalista_formed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
