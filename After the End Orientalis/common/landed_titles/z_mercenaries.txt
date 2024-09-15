@@ -479,6 +479,30 @@ d_azkals = {
 	
 	mercenary_type = d_azkals_composition
 }
+d_joyful_bees = {
+	color={ 0 155 255 }
+	color2={ 255 255 255 }
+		
+	capital = 202 # c_manila
+
+	culture = tagalog
+	
+	allow = {
+		culture_group = philippine
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_joyful_bees_composition
+}
 d_pishoye = {
 	color={ 0 155 255 }
 	color2={ 255 255 255 }
