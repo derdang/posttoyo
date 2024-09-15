@@ -286,4 +286,71 @@ dal_nevostochnyy = {
 		used_for_random = no
 		modifier = default_culture_modifier
 	}
+	muscovite = {
+		graphical_cultures = { easternslavicgfx }
+
+		color = {0.8 0.1 0.3 }
+
+		male_names = {
+			Adam Ademar Aleksandr_Alexander Aleksey_Alexis Alfred Ali_Ali Alikhan Alinur Amir Anatoliy Andrey_Andrew Anfim_Anthemios Anton_Anthony Arkadiy_Arcadius Arkhip Arseniy_Arsenius Artyom_Artemius Artur_Arthur Aryeh Avraam_Abraham 
+			Bilal_Bilal Bogdan Boris Bruno 
+			Damir Daniil_Daniel David_David Demid Demyan Denis_Dionysus Dmitriy_Demetrius
+			Egor_Igor Elisey Emanuel_Emmanuel Emelyan_Aemilian Emil_Emil Emin Ermak Evgeniy_Eugene 
+			Filipp_Philip Fyodor_Theodore 
+			Gavriil Gennadiy_Gennadius Georgiy_George German_Herman Gleb Gordey Grigoriy_Gregory Gurgen 
+			Ibragim_Abraham Igor_Igor Ilya_Elijah Imran Iosif_Joseph Islam Ivan_John 
+			Khristofor_Christopher Kim Kirill_Cyril Konstantin_Constantine 
+			Lavrentiy_Lawrence Leonid Lev_Leo Luka_Luke Lyudvig_Louis 
+			Makar Maksim_Maximus Mark Marsel Matvey_Matthew Mikhail_Michael Miron Miroslav Moisey_Moses Mukhammad_Muhammad 
+			Nikita_Niketas Nikolay_Nicholas 
+			Odissey_Odysseus Okhrip Oleg 
+			Pavel_Paul Platon_Plato Pyotr_Peter 
+			Robert_Robert Rodion Roman_Roman Ruslan 
+			Sabir Saveliy Savva Semyon_Simon Serafim Sergey_Sergius Spartak Stanislav Stepan_Stephen Svyatoslav_Sviatoslav 
+			Tasoltan Teodor_Theodore Tikhon Timofey_Timothy Timur 
+			Umar_Umar 
+			Vadim Valentin_Valentine Valeriy_Valerius Vasiliy_Basil Viktor_Victor Vitaliy Vladilen Vladimir Vladislav Vsevolod Vyacheslav 
+			Yakov_James Yan Yaroslav Yuliy_Julius Yuriy_George Yusuf_Joseph 
+			Zakhar_Zachary Zhores 
+		}
+
+		female_names = {
+			Adelina Afina_Athena Afrodita Agata_Agatha Agnia Aisha Aleksandra_Alexandra Alia Alisa_Alice Alla Alyona Amalia Amelia Amina Amira Anastasia_Anastasia Angelina Anna_Anna Antonina Ariana Asia Avrora_Aurora Aylin 
+			Bella 
+			Darina Daria Diana Dionis_Dionysus 
+			Ekaterina_Catherine Elena_Helen Elina Elizaveta_Elizabeth Emilia Emma Esenia Eva_Eve Evangelina Evdokia_Eudokia Evdoksia Evgenia_Eugenia 
+			Fanni Fatima 
+			Galina 
+			Inessa Irina 
+			Kamila Kamilla_Camilla Karina Karolina_Caroline Kira Kristina_Christina Ksenia 
+			Leyla Lidia_Lydia Lilia Lyubov Lyudmila 
+			Madina Malika Margarita_Margaret Maria Marianna_Mary-Anne Marina Marta Maryam_Mary Maryana_Mary-Anne Mayya Melania_Melanie Mia Mila Milena Mira Miroslava 
+			Nadezhda Natalya Nika Nina 
+			Olesya Olga Olivia 
+			Polina 
+			Rayana Rozalia 
+			Sabina Safia Samira Serafima Sofia_Sophia Sonja Stefania_Stephanie Svetlana 
+			Taisia Tatyana Teona Teya 
+			Uliana_Juliana 
+			Valentina Valeria Varvara_Barbara Vasilisa Venera Vera Veronika_Veronica Viktoria_Victoria Vladislava 
+			Yana Yaroslava Yasmina Yasna Yulia 
+			Zlata Zlatoslava Zoya 
+		}
+		
+		from_dynasty_prefix = "of "
+		
+		male_patronym = "ovich"
+		female_patronym = "ovna"
+		prefix = no
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
+		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+	}
 }
