@@ -555,12 +555,17 @@ d_asiatic_fleet = {
 	color={ 31 145 191 }
 	color2={ 255 255 255 }
 		
-	capital = 973 # c_guam
+	capital = 134 # c_okinawa
 
-	culture = chamorro
+	culture = hawaiian
+	religion = americanist
 	
 	allow = {
-		culture_group = pacific_islander
+		OR = {
+			culture_group = pacific_islander
+			religion = americanist
+			religion = americanist_reformed
+		}
 	}
 		
 	title = "CAPTAIN"
@@ -574,4 +579,547 @@ d_asiatic_fleet = {
 	strength_growth_per_century = 1.0
 	
 	mercenary_type = d_asiatic_fleet_composition
+}
+d_admirals_of_the_empire = {
+	color={ 225 38 31 }
+	color2={ 255 255 255 }
+		
+	capital = 643 # c_vladivostok
+
+	culture = primorskiy
+	
+	allow = {
+		culture_group = dal_nevostochnyy
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_admirals_of_the_empire_composition
+}
+d_free_rangers = {
+	color={ 239 200 37 }
+	color2={ 255 255 255 }
+		
+	capital = 906 # c_hpa_an
+
+	culture = karen
+	
+	allow = {
+		culture_group = karenic
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_free_rangers_composition
+}
+d_tojo_clan = {
+	color={ 200 150 100 }
+	color2={ 255 255 255 }
+		
+	capital = 53 # c_tokyo
+
+	culture = togoku
+	
+	allow = {
+		culture_group = japonic
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_tojo_clan_composition
+}
+d_forbidden_company = {
+	color={ 40 111 196 }
+	color2={ 255 255 255 }
+		
+	capital = 1973 #c_lhasa
+
+	culture = utsang
+	
+	allow = {
+		culture_group = tibetan
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_forbidden_company_composition
+}
+d_white_elephants = {
+	color={ 255 255 255 }
+	color2={ 255 255 255 }
+		
+	capital = 778 # c_phra_nakhon
+
+	culture = southwest_tai
+	
+	allow = {
+		culture_group = southwest_tai
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_white_elephants_composition
+}
+d_descended_dragons_of_lac = {
+	color={ 31 145 191 }
+	color2={ 255 255 255 }
+		
+	capital = 146 # c_quang_ninh
+
+	culture = tonkinese
+	
+	allow = {
+		culture_group = viet
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_descended_dragons_of_lac_composition
+}
+d_black_flag_army = {
+	color={ 0 0 0 }
+	color2={ 255 255 255 }
+		
+	capital = 1021 # c_nanning
+
+	culture = zhuang
+	
+	allow = {
+		OR = {
+			culture_group = viet
+			culture_group = han
+			culture_group = north_tai
+			culture_group = southwest_tai
+			culture_group = hmong_mien
+			culture_group = lolo
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_black_flag_army_composition
+}
+d_red_devils = {
+	color={ 251 20 18 }
+	color2={ 255 255 255 }
+		
+	capital = 758 # c_seoul
+
+	culture = hangugin
+	
+	allow = {
+		culture_group = korean
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_red_devils_composition
+}
+d_guanning_cavalry = {
+	color={ 251 20 18 }
+	color2={ 255 255 255 }
+		
+	capital = 1457 # c_harbin
+
+	culture = dongbei
+	religion = shanrendao
+	
+	allow = {
+		OR = {
+			culture_group = han
+			culture_group = tungusic
+			culture_group = korean
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_guanning_cavalry_composition
+}
+d_futaubang = {
+	color={ 255 242 0 }
+	color2={ 255 255 255 }
+		
+	capital = 1412 # c_chengdu
+
+	culture = sichuanese
+	religion = datong
+	
+	allow = {
+		OR = {
+			culture_group = han
+			religion = datong
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_futaubang_composition
+}
+d_society_of_blue_shirts = {
+	color={ 18 18 74 }
+	color2={ 255 255 255 }
+		
+	capital = 1765 # c_xuanwu
+
+	culture = huizhou
+	religion = sanmin
+	
+	allow = {
+		OR = {
+			culture_group = han
+			religion = sanmin
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_society_of_blue_shirts_composition
+}
+d_guangxi_wolf_soldiers = {
+	color={ 236 28 36 }
+	color2={ 255 255 255 }
+		
+	capital = 983 # c_guangzhou
+
+	culture = cantonese
+	religion = jibenyuanze
+	
+	allow = {
+		OR = {
+			culture_group = han
+			religion = jibenyuanze
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_guangxi_wolf_soldiers_composition
+}
+d_static_fortress_cavalry = {
+	color={ 119 28 36 }
+	color2={ 255 255 255 }
+		
+	capital = 1923 # c_beijing
+
+	culture = pekingese
+	religion = ruist
+	
+	allow = {
+		OR = {
+			culture_group = han
+			religion = ruist
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_static_fortress_cavalry_composition
+}
+d_iron_harrier = {
+	color={ 140 255 251 }
+	color2={ 255 255 255 }
+		
+	capital = 1548 # c_yinchuan
+
+	culture = huizu
+	religion = hui
+	
+	allow = {
+		OR = {
+			culture_group = han
+			religion = hui
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_iron_harrier_composition
+}
+d_lava_spring = {
+	color={ 123 66 180 }
+	color2={ 255 255 255 }
+		
+	capital = 1457 # c_harbin
+
+	culture = dongbei
+	religion = heilong
+	
+	allow = {
+		OR = {
+			culture_group = han
+			culture_group = tungusic
+			culture_group = korean
+			religion = heilong
+			religion = heilong_reformed
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_eight_one_rocket_composition
+}
+d_eight_one_rocket = {
+	color={ 165 131 128 }
+	color2={ 255 255 255 }
+		
+	capital = 1923 # c_beijing
+
+	culture = pekingese
+	religion = jibenyuanze
+	
+	allow = {
+		OR = {
+			culture_group = han
+			religion = jibenyuanze
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_eight_one_rocket_composition
+}
+d_tigers_of_the_amur = {
+	color={ 63 72 204 }
+	color2={ 255 255 255 }
+		
+	capital = 1923 # c_beijing
+
+	culture = amursky
+	religion = orthodox
+	
+	allow = {
+		OR = {
+			culture_group = dal_nevostochnyy
+			religion = orthodox
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_tigers_of_the_amur_composition
+}
+d_little_white_dragons = {
+	color={ 236 28 36 }
+	color2={ 255 255 255 }
+		
+	capital = 1457 # c_harbin
+
+	culture = togoku
+	religion = shinto
+	
+	allow = {
+		OR = {
+			culture_group = han
+			culture_group = tungusic
+			culture_group = korean
+			culture_group = japonic
+			religion = shinto
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_little_white_dragons_composition
+}
+d_sons_of_limahon = {
+	color={ 254 242 0 }
+	color2={ 255 255 255 }
+		
+	capital = 202 # c_manila
+
+	culture = tsinoy
+	religion = wokou
+	
+	allow = {
+		OR = {
+			culture_group = philippine
+			religion = wokou
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_sons_of_limahon_composition
+}
+d_bullys_buccaneers = {
+	color={ 30 20 10 }
+	color2={ 255 255 255 }
+		
+	capital = 974 # c_northern_mariana
+
+	culture = yankee
+	religion = americanist
+	
+	allow = {
+		OR = {
+			culture_group = american
+			religion = americanist
+			religion = americanist_reformed
+		}
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_bullys_buccaneers_composition
 }

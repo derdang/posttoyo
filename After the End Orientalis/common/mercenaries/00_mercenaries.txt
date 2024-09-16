@@ -46,10 +46,9 @@ d_orient_brigade_composition = {
 
 d_trung_sisterhood_composition = {
 	levy_size = 1	
-	heavy_infantry = 500	
-	light_infantry = 100
-	archers = 100
+	heavy_infantry = 500
 	knights = 50
+	war_elephants = 10
 }
 
 d_dragon_lords_composition = {
@@ -140,8 +139,8 @@ d_lucoes_composition = {
 	heavy_infantry = 200
 	galleys = 5
 }
-d_asiatic_fleet = {
-	levy_size = 1
+d_asiatic_fleet_composition = {
+	levy_size = 9
 	galleys = 10
 }
 d_joyful_bees_composition = {
@@ -149,6 +148,111 @@ d_joyful_bees_composition = {
 	light_infantry = 500
 	archers = 250
 	light_cavalry = 400
+}
+d_admirals_of_the_empire_composition = {
+	levy_size = 1
+	heavy_infantry = 200
+	galleys = 5
+}
+d_free_rangers_composition = {
+	levy_size = 1
+	light_infantry = 500
+	archers = 250
+	light_cavalry = 400
+}
+d_tojo_clan_composition = {
+	levy_size = 1
+	light_infantry = 500
+	heavy_infantry = 200
+}
+d_forbidden_company_composition = {
+	levy_size = 1
+	light_infantry = 500
+	light_cavalry = 400
+}
+d_descended_dragons_of_lac_composition = {
+	levy_size = 9
+	galleys = 10
+}
+d_white_elephants_composition = {
+	levy_size = 1
+	heavy_infantry = 200
+	war_elephants = 20
+}
+d_black_flag_army_composition = {
+	levy_size = 1
+	light_infantry = 500
+	archers = 250
+	light_cavalry = 400
+}
+d_red_devils_composition = {
+	levy_size = 1
+	light_infantry = 500
+	archers = 250
+	light_cavalry = 400
+}
+d_guanning_cavalry_composition = {
+	levy_size = 1
+	knights = 200
+}
+d_futaubang_composition = {
+	levy_size = 1
+	light_infantry = 500
+	archers = 250
+}
+d_society_of_blue_shirts_composition = {
+	levy_size = 1
+	light_infantry = 500
+	archers = 250
+	heavy_infantry = 200
+}
+d_guangxi_wolf_soldiers_composition = {
+	levy_size = 1
+	pikemen = 800
+	archers = 250
+	heavy_infantry = 200
+}
+d_static_fortress_cavalry_composition = {
+	levy_size = 1
+	knights = 200
+}
+d_iron_harrier_composition = {
+	levy_size = 1
+	horse_archers = 250
+	knights = 200
+}
+d_lava_spring_composition = {
+	levy_size = 1
+	light_infantry = 500
+	archers = 250
+	light_cavalry = 400
+}
+d_eight_one_rocket_composition = {
+	levy_size = 1
+	light_infantry = 500
+	archers = 250
+	heavy_infantry = 200
+}
+d_tigers_of_the_amur_composition = {
+	levy_size = 1
+	light_infantry = 500
+	heavy_infantry = 200
+}
+d_little_white_dragons_composition = {
+	levy_size = 1
+	light_infantry = 500
+	light_cavalry = 400
+	knights = 100
+}
+d_sons_of_limahon_composition = {
+	levy_size = 1
+	light_infantry = 500
+	galleys = 5
+}
+d_bullys_buccaneers_composition = {
+	levy_size = 1
+	light_infantry = 500
+	galleys = 5
 }
 
 ## Must exist or else dynamic mercenary band might fail for nomads!
