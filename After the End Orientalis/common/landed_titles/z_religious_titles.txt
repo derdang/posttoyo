@@ -863,3 +863,29 @@ d_rizalista = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+d_kan_imam_san = {
+	color = { 32 215 34 }
+	color2={ 220 220 0 }
+	
+	creation_requires_capital = no
+	
+	capital = 203 # Laguna
+	
+	dignity = 200
+	
+	title = OKNHA_KHNOUR
+	title_female = OKNHA_KHNOUR
+	foa = OKNHA_KHNOUR_FOA
+	primary = yes
+	
+	short_name = yes
+	landless = yes
+	
+	culture = cham
+	religion = kan_imam_san
+	assimilate = no
+	
+	controls_religion = kan_imam_san
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}

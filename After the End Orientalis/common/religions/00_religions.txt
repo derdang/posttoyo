@@ -1232,6 +1232,47 @@ muslim = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
+	kan_imam_san = {
+		graphical_culture = muslimgfx
+
+		icon = 108
+		
+		interface_skin = { muslim_interface }
+		
+		color = { 200 200 200 }
+		
+		scripture_name = GHEET
+		priest_title = ACAR
+		
+		high_god_name = GOD_ALLAH_CHAM
+		
+		god_names = {
+			 GOD_ALLAH_CHAM GOD_IMAM_SAN
+		}
+		
+		evil_god_names = {
+			IBLIS 
+		}
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = christian
+		intermarry = eastern
+		intermarry = ua_dab
+		intermarry = buddhist_group
+		intermarry = indian_group
+		
+		feminist = yes
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		castes = yes
+		priests_can_inherit = no
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
 }
 
 pagan_group = {
