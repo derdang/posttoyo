@@ -1108,7 +1108,7 @@
 ###########Ilocano Characters###########
 3901000 = { #Duke of Ilocos
 	name="Armando"
-	dynasty=3901250 #Casugay
+	dynasty=3901250 #Casuguay
 	culture=ilocano
 	religion=catholic
 	trait=brilliant_strategist
@@ -1117,10 +1117,12 @@
 	trait=patient
 	trait=diligent
 	trait=ambitious
+	father=3901002
 	2580.2.18={
 		birth=yes
 	}
 }
+
 3901001 = { #Duke of Sierra Madre
 	name="Mateo"
 	dynasty=3901250 #Luga
@@ -1132,7 +1134,19 @@
 	trait=patient
 	trait=diligent
 	trait=content
-	2580.3.15={
+	father=3901002
+	2581.3.15={
+		birth=yes
+	}
+}
+
+3901002 = { #Father of the Brothers
+	name="Jorge"
+	dynasty=3901250 #Casuguay
+	culture=ilocano
+	religion=catholic
+	trait=homosexual
+	2540.1.1={
 		birth=yes
 	}
 }
@@ -1375,6 +1389,7 @@
 	trait=poet
 	trait=charitable
 	trait=erudite
+    father=3906004
 	2580.6.8={
 		birth=yes
 	}
@@ -1391,6 +1406,7 @@
 	trait=patient
 	trait=diligent
 	trait=hedonist
+    father=3906004
 	2580.6.8={
 		birth=yes
 	}
@@ -1408,6 +1424,15 @@
 	trait=diligent
 	trait=erudite
 	2580.6.8={
+		birth=yes
+	}
+}
+3906004 = { #Father of Ignacio brothers
+	name="Felix"
+	dynasty=3906241 # Ignacio
+	culture=cebuano
+	religion=catholic
+	2535.6.8={
 		birth=yes
 	}
 }
@@ -1668,6 +1693,7 @@
 	trait=proud
 	trait=charitable
 	trait=twin
+	father=3915006
 	2588.5.8={
 		birth=yes
 	}
@@ -1685,7 +1711,17 @@
 	trait=proud
 	trait=charitable
 	trait=twin
+	father=3915006
 	2588.5.8={
+		birth=yes
+	}
+}
+3915006 = { #Count of Sindangan and Labason
+	name="Alejandro"
+	dynasty=3915055 #Roxas
+	culture=dumagat
+	religion=catholic
+    2545.1.1={
 		birth=yes
 	}
 }
