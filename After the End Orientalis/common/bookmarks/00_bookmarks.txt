@@ -6,6 +6,87 @@ bm_the_warring_states = { #China, Tibet, and Mongolia
 	era = yes
 	picture = GFX_pick_era_image_1
 	custom_start = yes
+	
+	selectable_character = {
+		id = 2610001 #Celestial Emperor Zhao Zhiyuan of the Hong
+		age = 23
+		name = ERA_CHAR_NAME_17
+		title = e_hong
+		title_name = e_hong
+		
+		character = {
+			dna = imrqauqjrlb
+			properties ="al000c0000000000000000000000000000000"
+			religion="jibenyuanze"
+			culture="pekingese"
+			government = chinese_imperial_government
+			dynasty=9005801
+		}
+	}
+	selectable_character = {
+		id = 9840001 #Celestial Emperor Liang Shengmo of Beidahuang
+		age = 35
+		name = ERA_CHAR_NAME_18
+		title = e_beidahuang
+		title_name = e_beidahuang
+		
+		character = {
+			dna="enjbqcsuaqa"
+			properties="aj000a00000000000000000000000000000000"
+			religion="eastern_lightning"
+			culture="jiao_liao"
+			government = chinese_imperial_government
+			dynasty=9026282
+		}
+	}
+	selectable_character = {
+		id = 2603001 #Celestial Emperor Wang Jun of Jin
+		age = 35
+		name = ERA_CHAR_NAME_19
+		title = e_shanxi
+		title_name = e_shanxi
+		
+		character = {
+			dna="ywdyidsxhbq"
+			properties="ti0c0d0000000a000000000000000000000000"
+			religion="ruist"
+			culture="jin"
+			government = chinese_imperial_government
+			dynasty=9005803
+		}
+	}
+	selectable_character = {
+		id = 1942000 #Emperor Dalunpa Langdarma of Tibet
+		age = 35
+		name = ERA_CHAR_NAME_20
+		title = e_tibet
+		title_name = e_tibet
+		
+		character = {
+			dna="mppytasaoaf"
+			properties="al000c00000000000000000000000000000000"
+			religion="ngocholugspa"
+			culture="amdowa"
+			government = theocratic_feudal_government
+			dynasty=1942145
+		}
+	}
+	selectable_character = {
+		id = 2671001 #Celestial Emperor Ying Kangmin of Qin
+		age = 27
+		name = ERA_CHAR_NAME_21
+		title = e_shaanxi
+		title_name = e_shaanxi
+		
+		character = {
+			dna="jzumwbfuugh"
+			properties="aci00c00000000000000000000000000000000"
+			religion="quanzhen"
+			culture="guanzhong"
+			government = chinese_imperial_government
+			dynasty=9087274
+		}
+	}
 }
 bm_the_rising_sun = { #Japan and Korea
 	name = "BM_THE_RISING_SUN"
@@ -284,6 +365,87 @@ bm_at_the_crossroads = { #Maritime SEA (Malaysia, Indonesia and the Phillipines)
 	era = yes
 	picture = GFX_pick_era_image_5
 	custom_start = yes
+	
+	selectable_character = {
+		id = 1958000 #His Excellency Cheong-Ming Lee of Singapore
+		age = 35
+		name = ERA_CHAR_NAME_22
+		title = k_singapore
+		title_name = k_singapore
+		
+		character = {
+			dna = imrqauqjrlb
+			properties ="al000c0000000000000000000000000000000"
+			religion="mahayana"
+			culture="singaporean"
+			government = merchant_republic_government
+			dynasty=1956011
+		}
+	}
+	selectable_character = {
+		id = 1957500 #Yang di-Pertuan Agong Ali of Malaysia
+		age = 31
+		name = ERA_CHAR_NAME_23
+		title = e_malaysia
+		title_name = e_malaysia
+		
+		character = {
+			dna="enjbqcsuaqa"
+			properties="aj000a00000000000000000000000000000000"
+			religion="renewalist"
+			culture="melayu"
+			government = malaysian_confederacy
+			dynasty=1957806
+		}
+	}
+	selectable_character = {
+		id = 1293917 #Susuhunan Achmed Hatta of Kutai
+		age = 28
+		name = ERA_CHAR_NAME_24
+		title = k_kutai
+		title_name = k_kutai
+		
+		character = {
+			dna="ywdyidsxhbq"
+			properties="ti0c0d0000000a000000000000000000000000"
+			religion="pancasila"
+			culture="javanese"
+			government = mandala_government
+			dynasty=1293056
+		}
+	}
+	selectable_character = {
+		id = 3904000 #King Armando Kasiple of Central Luzon
+		age = 38
+		name = ERA_CHAR_NAME_25
+		title = d_central_luzon
+		title_name = d_central_luzon
+		
+		character = {
+			dna="mppytasaoaf"
+			properties="al000c00000000000000000000000000000000"
+			religion="catholic"
+			culture="kapampangan"
+			government = feudal_government
+			dynasty=3904250
+		}
+	}
+	selectable_character = {
+		id = 1293705 #King Carlos Lobato of Timor
+		age = 29
+		name = ERA_CHAR_NAME_26
+		title = k_timor
+		title_name = k_timor
+		
+		character = {
+			dna="jzumwbfuugh"
+			properties="aci00c00000000000000000000000000000000"
+			religion="catholic"
+			culture="east_timor"
+			government = feudal_government
+			dynasty=2002153
+		}
+	}
 }
 
 bm_feuding_dragons = { #Vietnam Region
