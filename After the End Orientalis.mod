@@ -1,6 +1,7 @@
 name = "After the End Orientalis"
 path = "mod/After the End Orientalis"
 user_dir = "After the End Orientalis"
+picture = "ATEO.jpg"
 
 replace_path = "common/dynasties"
 replace_path = "history/provinces"
