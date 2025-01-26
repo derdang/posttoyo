@@ -6245,8 +6245,31 @@ religious = {
 				}
 			}
 		}
-		if = { # Preserve Vassals if Tolerant
-			ROOT = { has_law = religion_tolerance_1 }
+		if = { # Muslims fighting Non-Muslims preserve vassals
+			show_scope_change = no
+			limit = {
+				ROOT = {
+					religion_group = muslim
+				}
+				FROM = {
+					NOT = {
+						religion_group = muslim
+					}
+				}
+			}
+			custom_tooltip = {
+				text = religious_cb_succ_muslim_tip
+				hidden_tooltip = {
+					ROOT = {
+						vassalize_or_take_under_title = {
+							title = PREV
+							enemy = FROM
+							is_religious = yes
+							type = holy_war
+						}
+					}
+				}
+			}
 		}
 
 		hidden_tooltip = {
