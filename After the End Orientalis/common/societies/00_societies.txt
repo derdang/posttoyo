@@ -1969,10 +1969,7 @@ banking_society = {
 			religion_group = oldworld
 			religion_group = jewish_group
 			AND = {
-				OR = {
-					religion_group = pagan_group
-					religion_group = american_native
-				}
+				religion_group = pagan_group
 				has_religion_feature = religion_jizya
 			}
 			is_patrician = yes
@@ -1988,7 +1985,6 @@ banking_society = {
 		hidden_trigger = { mercenary = no }
 		age = 16
 		NOT = { has_character_flag = loan_taken }
-		NOT = { has_landed_title = d_electoral_college }
 		hidden_trigger = {
 			NOT = { has_character_flag = society_join_block }
 		}
