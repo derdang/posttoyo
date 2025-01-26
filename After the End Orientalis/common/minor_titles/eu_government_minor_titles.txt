@@ -47,7 +47,10 @@ title_confederation_diet_president = {
 	monthly_prestige = 0.5
 	
 	allowed_to_grant = {
-		government = confederation_government
+		OR = {
+			government = confederation_government
+			government = malaysian_confederacy
+		}
 	}
 	
 	allowed_to_hold = {
