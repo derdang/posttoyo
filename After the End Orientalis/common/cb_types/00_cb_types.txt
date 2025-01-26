@@ -5960,13 +5960,6 @@ religious = {
 			NOT = { pacifist = yes }
 			NOT = { religion = taoist }
 			NOT = { religion = yuilsasang }
-			NAND = {
-				OR = {
-					has_landed_title = k_teutonic_state
-					has_landed_title = d_teutonic_order
-				}
-				has_global_flag = northern_crusades_active
-			}
 			NOR = {
 				has_character_flag = currently_reconquering_iberia
 				reconquista_check_trigger = yes
