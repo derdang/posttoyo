@@ -491,8 +491,8 @@ other_claim = {
 			if = {
 				limit = {
 					OR = {
-						title = k_papal_state
-						title = d_fraticelli
+						title = k_conferentia
+						title = d_cao_dai
 					}
 				}
 				FROM = {
@@ -2651,8 +2651,8 @@ change_feudal_elective_succession_law = {
 		if = { 
 			limit = {
 				NOR = { 
-					title = e_hre 
-					has_title_flag = alternate_hre
+					title = e_malaysia 
+					has_title_flag = alternate_malaysia
 				}
 			}
 			add_law_w_cooldown = succ_feudal_elective
@@ -2664,8 +2664,8 @@ change_feudal_elective_succession_law = {
 		if = { 
 			limit = {
 				OR = { 
-					title = e_hre 
-					has_title_flag = alternate_hre
+					title = e_malaysia 
+					has_title_flag = alternate_malaysia
 				}
 			}
 			add_law_w_cooldown = succ_hre_elective
@@ -2869,21 +2869,21 @@ invasion = {
 					give_nickname = nick_the_conqueror
 				}
 				
-				if = {
-					limit = {
-						has_dlc = "Legacy of Rome"
-						OR = { 
-							has_landed_title = e_byzantium
-							has_landed_title = e_roman_empire
-						}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-					}
-					character_event = { id = LoR.30 days = 12 }
-				}
+				# if = {
+					# limit = {
+						# has_dlc = "Legacy of Rome"
+						# OR = { 
+							# has_landed_title = e_byzantium
+							# has_landed_title = e_roman_empire
+						# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+					# }
+					# character_event = { id = LoR.30 days = 12 }
+				# }
 			}
 		}
 		
@@ -2933,136 +2933,6 @@ invasion = {
 			}
 			hidden_tooltip = { conquest_culture = ROOT }
 		}
-		
-		if = {
-			limit = { ROOT = { character = 140 } }
-			ROOT = {
-				if = {
-					limit = {
-						has_dlc = "Holy Fury"
-						NOT = {
-							any_owned_bloodline = {
-								has_bloodline_flag = william_the_conqueror_bloodline
-							}
-						}
-					}
-					create_bloodline = {
-						type = william_the_conqueror
-					}
-				}
-			}
-			hidden_tooltip = {
-				add_law = succ_primogeniture
-				ROOT = {
-					any_vassal = {
-						limit = {
-							culture = saxon
-						}
-						opinion = {
-							modifier = opinion_subjugated 
-							who = ROOT
-						}
-					}
-					if = {
-						limit = { # Help AI William by usurping extra land
-							ai = yes
-						}
-						d_bedford = {
-							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							any_de_jure_vassal_title = {
-								limit = {
-									holder_scope = {
-										culture = saxon
-										ai = yes # But not from players
-										same_realm = ROOT
-									}
-								}
-								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							}
-						}
-						d_canterbury = {
-							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							any_de_jure_vassal_title = {
-								limit = {
-									holder_scope = {
-										culture = saxon
-										ai = yes # But not from players
-										same_realm = ROOT
-									}
-								}
-								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							}
-						}
-						d_cornwall = {
-							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							any_de_jure_vassal_title = {
-								limit = {
-									holder_scope = {
-										culture = saxon
-										ai = yes # But not from players
-										same_realm = ROOT
-									}
-								}
-								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							}
-						}
-						d_somerset = {
-							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							any_de_jure_vassal_title = {
-								limit = {
-									holder_scope = {
-										culture = saxon
-										ai = yes # But not from players
-										same_realm = ROOT
-									}
-								}
-								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							}
-						}
-						d_gloucester = {
-							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							any_de_jure_vassal_title = {
-								limit = {
-									holder_scope = {
-										culture = saxon
-										ai = yes # But not from players
-										same_realm = ROOT
-									}
-								}
-								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							}
-						}
-						d_norfolk = {
-							usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							any_de_jure_vassal_title = {
-								limit = {
-									holder_scope = {
-										culture = saxon
-										ai = yes # But not from players
-										same_realm = ROOT
-									}
-								}
-								usurp_title_plus_barony_if_unlanded = { target = ROOT type = invasion }
-							}
-						}
-					}
-					if = {
-						limit = {
-							c_middlesex = {
-								holder_scope = {
-									character = ROOT
-								}
-							}
-						}
-						c_middlesex = {
-							capital_holding = {
-								ROOT = { capital = PREV }
-							}
-						}
-					}
-				}
-			}
-		}
 
 		hidden_tooltip = {
 			check_if_reconquista_finished_effect = yes
@@ -3104,21 +2974,21 @@ invasion = {
 			show_scope_change = no
 			prestige = 200
 			participation_scaled_prestige = 200
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
@@ -3303,7 +3173,7 @@ tribal_invasion = {
 								primary_title = {
 									has_law = succ_elective_gavelkind
 								}
-								has_landed_title = e_mongol_empire
+								has_landed_title = e_mongolia
 								has_landed_title = e_mexikha
 							}
 						}
@@ -3374,7 +3244,7 @@ tribal_invasion = {
 			}
 			ROOT = {
 				OR = {
-					has_landed_title = e_mongol_empire
+					has_landed_title = e_mongolia
 					has_landed_title = e_mexikha
 				}
 			}
@@ -3560,21 +3430,21 @@ tribal_invasion = {
 				}
 			}
 			
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			participation_scaled_prestige = 200
 		}
 		any_defender = {
@@ -3624,73 +3494,73 @@ tribal_invasion = {
 		}
 		
 		# Try to guide the Hordes in the right direction
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				OR = {
-					dynasty = 613 # Seljuks
-					dynasty = 800 # Timurids
-					primary_title = { title = e_il-khanate }
-				}
-			}
-			OR = {
-				empire = {
-					NOT = {
-						OR = {
-							title = e_persia
-							title = e_byzantium
-							title = e_arabia
-						}
-					}
-				}
-				FROM = {
-					primary_title = { title = e_golden_horde }
-					NOT = { year = 1300 }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				primary_title = { title = e_golden_horde }
-			}
-			OR = {
-				empire = {
-					OR = {
-						title = e_persia
-						title = e_byzantium
-						title = e_arabia
-					}
-				}
-				FROM = {
-					primary_title = { title = e_il-khanate }
-					NOT = { year = 1300 }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				culture = hungarian
-				primary_title = {
-					OR = {
-						title = k_hungary
-						title = e_carpathia
-					}
-				}
-			}
-			empire = {
-				OR = {
-					title = e_tartaria
-					title = e_russia
-				}
-			}
-		}
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# OR = {
+					# dynasty = 613 # Seljuks
+					# dynasty = 800 # Timurids
+					# primary_title = { title = e_il-khanate }
+				# }
+			# }
+			# OR = {
+				# empire = {
+					# NOT = {
+						# OR = {
+							# title = e_persia
+							# title = e_byzantium
+							# title = e_arabia
+						# }
+					# }
+				# }
+				# FROM = {
+					# primary_title = { title = e_golden_horde }
+					# NOT = { year = 1300 }
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# primary_title = { title = e_golden_horde }
+			# }
+			# OR = {
+				# empire = {
+					# OR = {
+						# title = e_persia
+						# title = e_byzantium
+						# title = e_arabia
+					# }
+				# }
+				# FROM = {
+					# primary_title = { title = e_il-khanate }
+					# NOT = { year = 1300 }
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# culture = hungarian
+				# primary_title = {
+					# OR = {
+						# title = k_hungary
+						# title = e_carpathia
+					# }
+				# }
+			# }
+			# empire = {
+				# OR = {
+					# title = e_tartaria
+					# title = e_russia
+				# }
+			# }
+		# }
 		modifier = {
 			factor = 0
 			ROOT = {
 				has_character_flag = is_temujin
-				has_landed_title = e_mongol_empire
+				has_landed_title = e_mongolia
 				demesne_size = 1
 			}
 			FROM = {
@@ -4161,21 +4031,21 @@ crusade = {
 				}
 				participation_scaled_decadence = -50
 			}
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			
 			hidden_tooltip = {
 				if = {
@@ -4233,21 +4103,21 @@ crusade = {
 				}
 				participation_scaled_decadence = -100
 			}
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			hidden_tooltip = {
 				if = {
 					limit = {
@@ -4404,18 +4274,18 @@ new_crusade = {
 			NOT = { religion = ROOT}
 			OR = {
 				NOT = { religion_group = ROOT }
-				AND = {
-					has_character_flag = fourth_crusade_target
-					NOR = { 
-						has_character_flag = fourth_crusade_recipient 
-						religion = ROOT
-					}
-				}
-				AND = {
-					has_global_flag = 4th_crusade_official
-					has_landed_title = e_byzantium
-					NOT = { religion = ROOT }
-				}
+				# AND = {
+					# has_character_flag = fourth_crusade_target
+					# NOR = { 
+						# has_character_flag = fourth_crusade_recipient 
+						# religion = ROOT
+					# }
+				# }
+				# AND = {
+					# has_global_flag = 4th_crusade_official
+					# has_landed_title = e_byzantium
+					# NOT = { religion = ROOT }
+				# }
 				is_heresy_of = ROOT
 				is_parent_religion = ROOT
 				AND = {
@@ -4425,15 +4295,15 @@ new_crusade = {
 			}
 		}
 		
-		NOT = { # Not if the Schism has been mended
-			AND = {
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				has_global_flag = schism_mended
-			}
-		}
+		# NOT = { # Not if the Schism has been mended
+			# AND = {
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# has_global_flag = schism_mended
+			# }
+		# }
 	}
 
 	can_use_title = {
@@ -4449,13 +4319,13 @@ new_crusade = {
 					value = 6
 					title = PREV
 				}
-				PREV = {
-					title = k_thrace	
-					FROM = { 
-						has_landed_title = e_byzantium 
-						religion_group = christian
-					}
-				} 
+				# PREV = {
+					# title = k_thrace	
+					# FROM = { 
+						# has_landed_title = e_byzantium 
+						# religion_group = christian
+					# }
+				# } 
 			}
 		}
 	}
@@ -4546,20 +4416,20 @@ new_crusade = {
 
 		hidden_tooltip = {
 		
-			if = { # Achievement
-				limit = {
-					event_target:new_crusade_target_char = {
-						has_landed_title = e_byzantium
-						religion_group = FROM
-					}
-				}
-				any_attacker = {
-					limit = {
-						ai = no
-					}
-					set_character_flag = achievement_venetian_guile
-				}
-			}
+			# if = { # Achievement
+				# limit = {
+					# event_target:new_crusade_target_char = {
+						# has_landed_title = e_byzantium
+						# religion_group = FROM
+					# }
+				# }
+				# any_attacker = {
+					# limit = {
+						# ai = no
+					# }
+					# set_character_flag = achievement_venetian_guile
+				# }
+			# }
 
 			if = {
 				limit = {
@@ -4601,8 +4471,8 @@ new_crusade = {
 						holy_order = no
 						mercenary = no
 						NOR = {
-							has_landed_title = k_papal_state
-							has_landed_title = d_fraticelli
+							has_landed_title = k_conferentia
+							has_landed_title = d_cao_dai
 						}
 						OR = {
 							AND = {
@@ -5053,306 +4923,306 @@ new_crusade = {
 					}
 				}
 				# If it is a Fourth Crusade
-				else_if = {
-					limit = {
-						has_global_flag = 4th_crusade_official
-						crusade_target_title = {
-							title = k_thrace
-						}
-						FROM = {
-							religion_group = ROOT
-						}
-						FROM = {
-							NOT = {
-								religion = ROOT
-							}
-						}
-						crusade_target_char = {
-							e_byzantium = {
-								owner = {
-									character = PREVPREV
-								}
-							}
-						}
-					}
-					# Find a King for Trebizond
-					e_byzantium = {
-						owner = {
-							if = {
-								limit = {
-									NOT = {
-										any_playable_ruler = {
-											has_landed_title = k_trebizond
-										}
-									}
-								}
-								random_vassal = {
-									limit = {
-										OR = {
-											has_landed_title = d_trebizond
-											has_landed_title = d_armeniacon
-										}
-									}
-									preferred_limit = {
-										has_landed_title = d_trebizond
-									}
-									grant_title_no_opinion = k_trebizond
-								}
-							}
+				# else_if = {
+					# limit = {
+						# has_global_flag = 4th_crusade_official
+						# crusade_target_title = {
+							# title = k_thrace
+						# }
+						# FROM = {
+							# religion_group = ROOT
+						# }
+						# FROM = {
+							# NOT = {
+								# religion = ROOT
+							# }
+						# }
+						# crusade_target_char = {
+							# e_byzantium = {
+								# owner = {
+									# character = PREVPREV
+								# }
+							# }
+						# }
+					# }
+					# # Find a King for Trebizond
+					# e_byzantium = {
+						# owner = {
+							# if = {
+								# limit = {
+									# NOT = {
+										# any_playable_ruler = {
+											# has_landed_title = k_trebizond
+										# }
+									# }
+								# }
+								# random_vassal = {
+									# limit = {
+										# OR = {
+											# has_landed_title = d_trebizond
+											# has_landed_title = d_armeniacon
+										# }
+									# }
+									# preferred_limit = {
+										# has_landed_title = d_trebizond
+									# }
+									# grant_title_no_opinion = k_trebizond
+								# }
+							# }
 
-						}
-					}
-					# Set vassals for Trebizond
-					k_trebizond = {
-						owner = {
-							e_byzantium = {
-								owner = {
-									any_vassal = {
-										limit = {
-											de_jure_liege = k_trebizond
-										}
-										set_defacto_liege = PREVPREVPREV
-									}
-								}
-							}
-						}
-					}
-					# Find a Catholic/Fraticelli lord for Cyprus
-					if = {
-						limit = {
-							c_famagusta = {
-								owner = {
-									religion = FROM
-									culture = FROM
-									ai = yes
-								}
-							}
-							c_limisol = {
-								owner = {
-									religion = FROM
-									culture = FROM
-									ai = yes
-								}
-							}
-							k_cyprus = {
-								has_holder = no
-							}
-						}
-						any_crusade_participant = {
-							limit = {
-								ai = yes
-								NOT = {
-									most_participating_crusader = {
-										character = PREV
-									}
-								}
-							}
-							crusade_beneficiary = {
-								grant_title_no_opinion = c_famagusta
-								grant_title_no_opinion = c_limisol
-								grant_title_no_opinion = d_cyprus
-								grant_title_no_opinion = k_cyprus
-								d_cyprus = {
-									de_jure_liege = k_cyprus
-								}
-								set_defacto_liege = THIS
-								character_event = { id = HFP.41090 days = 1 }
-								if = {
-									limit = {
-										NOR = {
-											trait = crusader
-											trait = crusader_king
-											trait = crusader_queen
-										}
-									}
-									add_trait = crusader
-								}
-							}
-							character_event = { id = HFP.41007 }
-						}
-					}
-					distribute_crusade_target_title = yes
-					#The Crusader King becomes an Emperor and gets a bloodline
-					crusader_king = {
-						grant_title_no_opinion = e_latin_empire
-					}
-					# Find random vassal and make a king out of them
-					e_byzantium = {
-						owner = {
-							random_vassal = {
-								limit = {
-									tier = DUKE
-									ai = yes
-								}
-								preferred_limit = {
-									de_jure_liege = k_byzantium
-								}
-								preferred_limit = {
-									de_jure_liege = k_anatolia
-								}
-								preferred_limit = {
-									de_jure_liege = k_sicily
-								}
-								primary_title = {
-									create_title = {
-										tier = KING
-										landless = no
-										temporary = no
-										name = "fourth_crusade_greek_kingdom_name"
-										holder = PREV
-										culture = PREV
-										custom_created = yes
-										base_title = THIS
-										copy_title_laws = yes
-									}
-								}
-							}
-						}
-					}
-					# All Byzantine vassals go independent except those neighboring the old Emperor, and he/she gets an inferior Empire title while the Byzantine title is broken
-					e_byzantium = {
-						owner = {
-							any_vassal = {
-								limit = {
-									higher_tier_than = BARON
-								}
-								set_defacto_liege = this
-							}
-							if = {
-								limit = {
-									primary_title = {
-										title = e_byzantium
-									}
-									has_landed_title = c_nikaea
-								}
-								grant_title = e_nicaea
-								e_nicaea = {
-									copy_title_laws = e_byzantium
-									copy_title_history = e_byzantium
-									make_primary_title = yes
-								}
-								any_demesne_title = {
-									limit = {
-										tier = EMPEROR
-										NOT = {
-											title = e_nicaea
-										}
-									}
-									destroy_landed_title = THIS
-								}
-								any_neighbor_independent_ruler = {
-									limit = {
-										ai = yes
-										culture = PREV
-										religion = PREV
-										lower_tier_than = KING
-									}
-									set_defacto_liege = PREV
-								}
-							}
-							else_if = {
-								limit = {
-									primary_title = {
-										title = e_byzantium
-									}
-								}
-								capital_scope = {
-									create_title = {
-										tier = EMPEROR
-										landless = no
-										temporary = no
-										name = "fourth_crusade_greek_empire_name"
-										holder = PREV
-										culture = PREV
-										custom_created = yes
-										base_title = THIS
-									}
-								}
-								any_demesne_title = {
-									limit = {
-										tier = EMPEROR
-										is_titular = no
-									}
-									destroy_landed_title = THIS
-								}
-							}
-							any_neighbor_independent_ruler = {
-								limit = {
-									ai = yes
-									culture = PREV
-									religion = PREV
-									lower_tier_than = KING
-								}
-								set_defacto_liege = PREV
-							}
-						}
-					}
-					# Crete is taken by a Merchant Lord
-					if = {
-						limit = {
-							c_kaneia = {
-								owner = {
-									ai = yes
-								}
-							} 
-							c_chandax = {
-								owner = {
-									ai = yes
-								}
-							}
-							any_crusade_participant = {
-								is_patrician = yes
-								higher_tier_than = COUNT
-							}
-						}
-						random_crusade_participant = {
-							limit = {
-								is_patrician = yes
-								higher_tier_than = COUNT
-							}
-							preferred_limit = {
-								has_landed_title = k_venice
-							}
-							preferred_limit = {
-								has_landed_title = d_venice
-							}
-							preferred_limit = {
-								tier = EMPEROR
-							}
-							preferred_limit = {
-								tier = KING
-							}
-							grant_title_no_opinion = d_krete 
-							grant_title_no_opinion = c_kaneia
-							grant_title_no_opinion = c_chandax
-						}
-					}
+						# }
+					# }
+					# # Set vassals for Trebizond
+					# k_trebizond = {
+						# owner = {
+							# e_byzantium = {
+								# owner = {
+									# any_vassal = {
+										# limit = {
+											# de_jure_liege = k_trebizond
+										# }
+										# set_defacto_liege = PREVPREVPREV
+									# }
+								# }
+							# }
+						# }
+					# }
+					# # Find a Catholic/Fraticelli lord for Cyprus
+					# if = {
+						# limit = {
+							# c_famagusta = {
+								# owner = {
+									# religion = FROM
+									# culture = FROM
+									# ai = yes
+								# }
+							# }
+							# c_limisol = {
+								# owner = {
+									# religion = FROM
+									# culture = FROM
+									# ai = yes
+								# }
+							# }
+							# k_cyprus = {
+								# has_holder = no
+							# }
+						# }
+						# any_crusade_participant = {
+							# limit = {
+								# ai = yes
+								# NOT = {
+									# most_participating_crusader = {
+										# character = PREV
+									# }
+								# }
+							# }
+							# crusade_beneficiary = {
+								# grant_title_no_opinion = c_famagusta
+								# grant_title_no_opinion = c_limisol
+								# grant_title_no_opinion = d_cyprus
+								# grant_title_no_opinion = k_cyprus
+								# d_cyprus = {
+									# de_jure_liege = k_cyprus
+								# }
+								# set_defacto_liege = THIS
+								# character_event = { id = HFP.41090 days = 1 }
+								# if = {
+									# limit = {
+										# NOR = {
+											# trait = crusader
+											# trait = crusader_king
+											# trait = crusader_queen
+										# }
+									# }
+									# add_trait = crusader
+								# }
+							# }
+							# character_event = { id = HFP.41007 }
+						# }
+					# }
+					# distribute_crusade_target_title = yes
+					# #The Crusader King becomes an Emperor and gets a bloodline
+					# crusader_king = {
+						# grant_title_no_opinion = e_latin_empire
+					# }
+					# # Find random vassal and make a king out of them
+					# e_byzantium = {
+						# owner = {
+							# random_vassal = {
+								# limit = {
+									# tier = DUKE
+									# ai = yes
+								# }
+								# preferred_limit = {
+									# de_jure_liege = k_byzantium
+								# }
+								# preferred_limit = {
+									# de_jure_liege = k_anatolia
+								# }
+								# preferred_limit = {
+									# de_jure_liege = k_sicily
+								# }
+								# primary_title = {
+									# create_title = {
+										# tier = KING
+										# landless = no
+										# temporary = no
+										# name = "fourth_crusade_greek_kingdom_name"
+										# holder = PREV
+										# culture = PREV
+										# custom_created = yes
+										# base_title = THIS
+										# copy_title_laws = yes
+									# }
+								# }
+							# }
+						# }
+					# }
+					# # All Byzantine vassals go independent except those neighboring the old Emperor, and he/she gets an inferior Empire title while the Byzantine title is broken
+					# e_byzantium = {
+						# owner = {
+							# any_vassal = {
+								# limit = {
+									# higher_tier_than = BARON
+								# }
+								# set_defacto_liege = this
+							# }
+							# if = {
+								# limit = {
+									# primary_title = {
+										# title = e_byzantium
+									# }
+									# has_landed_title = c_nikaea
+								# }
+								# grant_title = e_nicaea
+								# e_nicaea = {
+									# copy_title_laws = e_byzantium
+									# copy_title_history = e_byzantium
+									# make_primary_title = yes
+								# }
+								# any_demesne_title = {
+									# limit = {
+										# tier = EMPEROR
+										# NOT = {
+											# title = e_nicaea
+										# }
+									# }
+									# destroy_landed_title = THIS
+								# }
+								# any_neighbor_independent_ruler = {
+									# limit = {
+										# ai = yes
+										# culture = PREV
+										# religion = PREV
+										# lower_tier_than = KING
+									# }
+									# set_defacto_liege = PREV
+								# }
+							# }
+							# else_if = {
+								# limit = {
+									# primary_title = {
+										# title = e_byzantium
+									# }
+								# }
+								# capital_scope = {
+									# create_title = {
+										# tier = EMPEROR
+										# landless = no
+										# temporary = no
+										# name = "fourth_crusade_greek_empire_name"
+										# holder = PREV
+										# culture = PREV
+										# custom_created = yes
+										# base_title = THIS
+									# }
+								# }
+								# any_demesne_title = {
+									# limit = {
+										# tier = EMPEROR
+										# is_titular = no
+									# }
+									# destroy_landed_title = THIS
+								# }
+							# }
+							# any_neighbor_independent_ruler = {
+								# limit = {
+									# ai = yes
+									# culture = PREV
+									# religion = PREV
+									# lower_tier_than = KING
+								# }
+								# set_defacto_liege = PREV
+							# }
+						# }
+					# }
+					# # Crete is taken by a Merchant Lord
+					# if = {
+						# limit = {
+							# c_kaneia = {
+								# owner = {
+									# ai = yes
+								# }
+							# } 
+							# c_chandax = {
+								# owner = {
+									# ai = yes
+								# }
+							# }
+							# any_crusade_participant = {
+								# is_patrician = yes
+								# higher_tier_than = COUNT
+							# }
+						# }
+						# random_crusade_participant = {
+							# limit = {
+								# is_patrician = yes
+								# higher_tier_than = COUNT
+							# }
+							# preferred_limit = {
+								# has_landed_title = k_venice
+							# }
+							# preferred_limit = {
+								# has_landed_title = d_venice
+							# }
+							# preferred_limit = {
+								# tier = EMPEROR
+							# }
+							# preferred_limit = {
+								# tier = KING
+							# }
+							# grant_title_no_opinion = d_krete 
+							# grant_title_no_opinion = c_kaneia
+							# grant_title_no_opinion = c_chandax
+						# }
+					# }
 
-					if = {
-						limit = {
-							official_crusade_recipient = {
-								has_character_flag = fourth_crusade_recipient
-							}
-						}
-						official_crusade_recipient = {
-							save_event_target_as = byzantine_refugee
-						}
-					}
-					# Narrative event explaining that Byzantium has been taken out
-					any_character = {
-						narrative_event = { id = HF.49008 }
-					}
-					event_target:byzantine_refugee = {
-						death = {
-							death_reason = death_battle
-							killer = FROM
-						}
-					}
-					# Making sure the Byzantine Empire is destroyed
-					e_byzantium = {
-						unsafe_destroy_landed_title = THIS
-					}
-				}
+					# if = {
+						# limit = {
+							# official_crusade_recipient = {
+								# has_character_flag = fourth_crusade_recipient
+							# }
+						# }
+						# official_crusade_recipient = {
+							# save_event_target_as = byzantine_refugee
+						# }
+					# }
+					# # Narrative event explaining that Byzantium has been taken out
+					# any_character = {
+						# narrative_event = { id = HF.49008 }
+					# }
+					# event_target:byzantine_refugee = {
+						# death = {
+							# death_reason = death_battle
+							# killer = FROM
+						# }
+					# }
+					# # Making sure the Byzantine Empire is destroyed
+					# e_byzantium = {
+						# unsafe_destroy_landed_title = THIS
+					# }
+				# }
 				# Otherwise
 				else = {
 					FROM = {
@@ -5681,21 +5551,21 @@ new_crusade = {
 				}
 				participation_scaled_decadence = -50
 			}
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			
 			hidden_tooltip = {
 				if = {
@@ -5755,21 +5625,21 @@ new_crusade = {
 				}
 				participation_scaled_decadence = -100
 			}
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			hidden_tooltip = {
 				if = {
 					limit = {
@@ -6458,65 +6328,65 @@ religious = {
 		}
 		
 		# Try to guide the Hordes in the right direction
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				OR = {
-					dynasty = 613 # Seljuks
-					dynasty = 800 # Timurids
-					primary_title = { title = e_il-khanate }
-				}
-			}
-			OR = {
-				empire = {
-					NOT = {
-						OR = {
-							title = e_persia
-							title = e_byzantium
-							title = e_arabia
-						}
-					}
-				}
-				FROM = {
-					primary_title = { title = e_golden_horde }
-					NOT = { year = 1300 }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				primary_title = { title = e_golden_horde }
-			}
-			OR = {
-				empire = {
-					OR = {
-						title = e_persia
-						title = e_byzantium
-						title = e_arabia
-					}
-				}
-				FROM = {
-					primary_title = { title = e_il-khanate }
-					NOT = { year = 1300 }
-				}
-			}
-		}
-		modifier = {
-			factor = 2.0
-			OR = {
-				culture = persian
-				culture = baloch
-				culture = afghan
-				culture = turkish
-			}
-			empire = {
-				OR = {
-					title = e_persia
-					title = e_rajastan
-				}
-			}
-		}
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# OR = {
+					# dynasty = 613 # Seljuks
+					# dynasty = 800 # Timurids
+					# primary_title = { title = e_il-khanate }
+				# }
+			# }
+			# OR = {
+				# empire = {
+					# NOT = {
+						# OR = {
+							# title = e_persia
+							# title = e_byzantium
+							# title = e_arabia
+						# }
+					# }
+				# }
+				# FROM = {
+					# primary_title = { title = e_golden_horde }
+					# NOT = { year = 1300 }
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# primary_title = { title = e_golden_horde }
+			# }
+			# OR = {
+				# empire = {
+					# OR = {
+						# title = e_persia
+						# title = e_byzantium
+						# title = e_arabia
+					# }
+				# }
+				# FROM = {
+					# primary_title = { title = e_il-khanate }
+					# NOT = { year = 1300 }
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 2.0
+			# OR = {
+				# culture = persian
+				# culture = baloch
+				# culture = afghan
+				# culture = turkish
+			# }
+			# empire = {
+				# OR = {
+					# title = e_persia
+					# title = e_rajastan
+				# }
+			# }
+		# }
 	}
 }
 
@@ -9168,21 +9038,21 @@ muslim_invasion = {
 		}
 		FROM = {
 			show_scope_change = no
-			if = {
-				limit = {
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = {
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			hidden_effect = {
 				if = {
 					limit = {
@@ -9251,21 +9121,21 @@ muslim_invasion = {
 					change_variable = { which = strengthen_religion value = 1 }
 				}
 			}
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			hidden_effect = {
 				if = {
 					limit = {
@@ -9627,209 +9497,209 @@ cb_faction_independence = {
 	}
 }
 
-imperial_reconquest = {
-	name = CB_NAME_IMPERIAL
-	war_name = WAR_NAME_IMPERIAL
-	sprite = 17
-	truce_days = 3650
-	is_permanent = yes
-	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
+# imperial_reconquest = {
+	# name = CB_NAME_IMPERIAL
+	# war_name = WAR_NAME_IMPERIAL
+	# sprite = 17
+	# truce_days = 3650
+	# is_permanent = yes
+	# check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
-	allowed_to_target_tributaries = no
+	# allowed_to_target_tributaries = no
 	
-	sort_priority = 1900
+	# sort_priority = 1900
 
-	can_use_gui = {
-		check_if_crusader_trigger = yes
-	}
+	# can_use_gui = {
+		# check_if_crusader_trigger = yes
+	# }
 
-	can_use = {
-		ROOT = {
-			has_landed_title = e_roman_empire
-			independent = yes
-			OR = { 
-				religion_group = christian
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
-			}
-			NOT = { same_realm = FROM }
-			mercenary = no
-		}
-		FROM = {
-			NOT = { religion_group = muslim }
-		}
-	}
+	# can_use = {
+		# ROOT = {
+			# has_landed_title = e_roman_empire
+			# independent = yes
+			# OR = { 
+				# religion_group = christian
+				# religion = hellenic_pagan
+				# religion = hellenic_pagan_reformed
+			# }
+			# NOT = { same_realm = FROM }
+			# mercenary = no
+		# }
+		# FROM = {
+			# NOT = { religion_group = muslim }
+		# }
+	# }
 
-	can_use_title = {
-		OR = {
-			de_jure_liege_or_above = k_byzantium
-			de_jure_liege_or_above = k_thrace
-			de_jure_liege_or_above = k_anatolia
-			de_jure_liege_or_above = k_epirus
-			de_jure_liege_or_above = k_trebizond
-			de_jure_liege_or_above = k_armenia
-			de_jure_liege_or_above = k_bulgaria
-			de_jure_liege_or_above = k_serbia
-			de_jure_liege_or_above = k_croatia
-			de_jure_liege_or_above = k_italy
-			de_jure_liege_or_above = k_sicily
-			de_jure_liege_or_above = k_bavaria
-			de_jure_liege_or_above = k_burgundy
-			de_jure_liege_or_above = k_france
-			de_jure_liege_or_above = k_aquitaine
-			de_jure_liege_or_above = k_brittany
-			de_jure_liege_or_above = k_england
-			de_jure_liege_or_above = k_wales
-			de_jure_liege_or_above = k_frisia
-			de_jure_liege_or_above = k_lotharingia
-			de_jure_liege_or_above = k_aragon
-			de_jure_liege_or_above = k_castille
-			de_jure_liege_or_above = k_andalusia
-			de_jure_liege_or_above = k_badajoz
-			de_jure_liege_or_above = k_valencia
-			de_jure_liege_or_above = k_leon
-			de_jure_liege_or_above = k_spanish_galicia
-			de_jure_liege_or_above = k_portugal
-			de_jure_liege_or_above = k_navarra
-			de_jure_liege_or_above = k_syria
-			de_jure_liege_or_above = k_jerusalem
-			de_jure_liege_or_above = k_egypt
-			de_jure_liege_or_above = k_africa
-			de_jure_liege_or_above = k_mauretania
-			de_jure_liege_or_above = k_papal_state
-			de_jure_liege_or_above = k_papacy
-			de_jure_liege_or_above = k_asturias
-			de_jure_liege_or_above = k_sardinia
-			de_jure_liege_or_above = k_antioch
-			de_jure_liege_or_above = k_cyprus
-			de_jure_liege_or_above = k_amalfi
-			de_jure_liege_or_above = k_venice
-			de_jure_liege_or_above = k_pisa
-			de_jure_liege_or_above = k_genoa
-			de_jure_liege_or_above = k_switzerland
-			de_jure_liege_or_above = k_romagna
-			de_jure_liege_or_above = k_carinthia
-		}
-	}
+	# can_use_title = {
+		# OR = {
+			# de_jure_liege_or_above = k_byzantium
+			# de_jure_liege_or_above = k_thrace
+			# de_jure_liege_or_above = k_anatolia
+			# de_jure_liege_or_above = k_epirus
+			# de_jure_liege_or_above = k_trebizond
+			# de_jure_liege_or_above = k_armenia
+			# de_jure_liege_or_above = k_bulgaria
+			# de_jure_liege_or_above = k_serbia
+			# de_jure_liege_or_above = k_croatia
+			# de_jure_liege_or_above = k_italy
+			# de_jure_liege_or_above = k_sicily
+			# de_jure_liege_or_above = k_bavaria
+			# de_jure_liege_or_above = k_burgundy
+			# de_jure_liege_or_above = k_france
+			# de_jure_liege_or_above = k_aquitaine
+			# de_jure_liege_or_above = k_brittany
+			# de_jure_liege_or_above = k_england
+			# de_jure_liege_or_above = k_wales
+			# de_jure_liege_or_above = k_frisia
+			# de_jure_liege_or_above = k_lotharingia
+			# de_jure_liege_or_above = k_aragon
+			# de_jure_liege_or_above = k_castille
+			# de_jure_liege_or_above = k_andalusia
+			# de_jure_liege_or_above = k_badajoz
+			# de_jure_liege_or_above = k_valencia
+			# de_jure_liege_or_above = k_leon
+			# de_jure_liege_or_above = k_spanish_galicia
+			# de_jure_liege_or_above = k_portugal
+			# de_jure_liege_or_above = k_navarra
+			# de_jure_liege_or_above = k_syria
+			# de_jure_liege_or_above = k_jerusalem
+			# de_jure_liege_or_above = k_egypt
+			# de_jure_liege_or_above = k_africa
+			# de_jure_liege_or_above = k_mauretania
+			# de_jure_liege_or_above = k_conferentia
+			# de_jure_liege_or_above = k_papacy
+			# de_jure_liege_or_above = k_asturias
+			# de_jure_liege_or_above = k_sardinia
+			# de_jure_liege_or_above = k_antioch
+			# de_jure_liege_or_above = k_cyprus
+			# de_jure_liege_or_above = k_amalfi
+			# de_jure_liege_or_above = k_venice
+			# de_jure_liege_or_above = k_pisa
+			# de_jure_liege_or_above = k_genoa
+			# de_jure_liege_or_above = k_switzerland
+			# de_jure_liege_or_above = k_romagna
+			# de_jure_liege_or_above = k_carinthia
+		# }
+	# }
 	
-	is_valid = {
-		ROOT = {
-			independent = yes
-			OR = { 
-				religion_group = christian
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
-			}
-			NOT = { same_realm = FROM }
-		}
-	}
+	# is_valid = {
+		# ROOT = {
+			# independent = yes
+			# OR = { 
+				# religion_group = christian
+				# religion = hellenic_pagan
+				# religion = hellenic_pagan_reformed
+			# }
+			# NOT = { same_realm = FROM }
+		# }
+	# }
 
-	on_add = {
-		hidden_tooltip = { fire_haruspicy_event_effect = yes }
-		if = {
-			limit = { defender = { is_offmap_governor = offmap_china } }
-			attacker = {  
-				sound_effect = china_angered_emperor
-				detract_grace_super_huge_effect = yes 
-			}
-		}
-	}
+	# on_add = {
+		# hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		# if = {
+			# limit = { defender = { is_offmap_governor = offmap_china } }
+			# attacker = {  
+				# sound_effect = china_angered_emperor
+				# detract_grace_super_huge_effect = yes 
+			# }
+		# }
+	# }
 	
-	on_success = {
-		ROOT = {
-			participation_scaled_prestige = 100
-		}
-		any_attacker = {
-			limit = { NOT = { character = ROOT } }
-			hidden_tooltip = { 
-				participation_scaled_prestige = 100
-			}
-		}
+	# on_success = {
+		# ROOT = {
+			# participation_scaled_prestige = 100
+		# }
+		# any_attacker = {
+			# limit = { NOT = { character = ROOT } }
+			# hidden_tooltip = { 
+				# participation_scaled_prestige = 100
+			# }
+		# }
 		
-		FROM = { prestige = -100 }
-	}
+		# FROM = { prestige = -100 }
+	# }
 
-	on_success_title = {
-		custom_tooltip = { 
-			text = other_invasion_succ_tip
-			hidden_tooltip = {
-				ROOT = {
-					vassalize_or_take_under_title = {
-						title = PREV
-						enemy = FROM
-						type = invasion
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				holder_scope = { character = FROM }
-			}
-			usurp_title_only = { target = ROOT type = invasion }
-		}
+	# on_success_title = {
+		# custom_tooltip = { 
+			# text = other_invasion_succ_tip
+			# hidden_tooltip = {
+				# ROOT = {
+					# vassalize_or_take_under_title = {
+						# title = PREV
+						# enemy = FROM
+						# type = invasion
+					# }
+				# }
+			# }
+		# }
+		# if = {
+			# limit = {
+				# holder_scope = { character = FROM }
+			# }
+			# usurp_title_only = { target = ROOT type = invasion }
+		# }
 
-		hidden_tooltip = {
-			check_if_reconquista_finished_effect = yes
-			FROM = {
-				landless_pope_effect = yes
-			}
-		}
-	}
+		# hidden_tooltip = {
+			# check_if_reconquista_finished_effect = yes
+			# FROM = {
+				# landless_pope_effect = yes
+			# }
+		# }
+	# }
 
-	on_fail = {
-		ROOT = { prestige = -150 }
-	}
+	# on_fail = {
+		# ROOT = { prestige = -150 }
+	# }
 
-	on_reverse_demand = {
-		ROOT = {
-			transfer_scaled_wealth = {
-				to = FROM
-				value = 4.0
-			}
-			ROOT = { prestige = -200 }
-		}
-		FROM = {
-			participation_scaled_piety = 100
-			participation_scaled_prestige = 200
-			if = {
-				limit = {
-					uses_decadence = yes
-				}
-				participation_scaled_decadence = -10
-			}
-		}
-		any_defender = {
-			limit = { NOT = { character = FROM } }
-			hidden_tooltip = { 
-				participation_scaled_piety = 100
-				participation_scaled_prestige = 200
-				if = {
-					limit = {
-						uses_decadence = yes
-					}
-					participation_scaled_decadence = -10
-				}
-			}
-		}
-	}
+	# on_reverse_demand = {
+		# ROOT = {
+			# transfer_scaled_wealth = {
+				# to = FROM
+				# value = 4.0
+			# }
+			# ROOT = { prestige = -200 }
+		# }
+		# FROM = {
+			# participation_scaled_piety = 100
+			# participation_scaled_prestige = 200
+			# if = {
+				# limit = {
+					# uses_decadence = yes
+				# }
+				# participation_scaled_decadence = -10
+			# }
+		# }
+		# any_defender = {
+			# limit = { NOT = { character = FROM } }
+			# hidden_tooltip = { 
+				# participation_scaled_piety = 100
+				# participation_scaled_prestige = 200
+				# if = {
+					# limit = {
+						# uses_decadence = yes
+					# }
+					# participation_scaled_decadence = -10
+				# }
+			# }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1 # always accept
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1 # always accept
+	# }
 	
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1 # always accept
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1 # always accept
+	# }
 	
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
 # Embargo Merchant Republic CB
 embargo_cb = {
@@ -10425,21 +10295,21 @@ viking_invasion = {
 		}
 		FROM = {
 			prestige = 300
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			participation_scaled_prestige = 250
 		}
 		any_defender = {
@@ -11432,54 +11302,54 @@ duchy_adventure = {
 			}
 		}
 		
-		ROOT = {
-			hidden_tooltip = {
-				# Special case: Seljuk succeeds in his first conquest
-				if = {
-					limit = {
-						has_character_flag = seljuk_himself
-					}
-					narrative_event = {
-						id = 60206
-						days = 1
-					}
-				}
+		# ROOT = {
+			# hidden_tooltip = {
+				# # Special case: Seljuk succeeds in his first conquest
+				# if = {
+					# limit = {
+						# has_character_flag = seljuk_himself
+					# }
+					# narrative_event = {
+						# id = 60206
+						# days = 1
+					# }
+				# }
 				
-				# Special case: Timur succeeds in his first conquest
-				if = {
-					limit = {
-						has_character_flag = timur_himself
-					}
-					narrative_event = {
-						id = 60306
-						days = 1
-					}
-				}
+				# # Special case: Timur succeeds in his first conquest
+				# if = {
+					# limit = {
+						# has_character_flag = timur_himself
+					# }
+					# narrative_event = {
+						# id = 60306
+						# days = 1
+					# }
+				# }
 				
-				# Special case: Sabuktigin succeeds in his first conquest
-				if = {
-					limit = {
-						has_character_flag = sabuktigin_himself
-					}
-					narrative_event = {
-						id = 60406
-						days = 1
-					}
-				}
+				# # Special case: Sabuktigin succeeds in his first conquest
+				# if = {
+					# limit = {
+						# has_character_flag = sabuktigin_himself
+					# }
+					# narrative_event = {
+						# id = 60406
+						# days = 1
+					# }
+				# }
 				
-				# Special case: Sultanate of Rum creator succeeds in his first conquest
-				if = {
-					limit = {
-						has_character_flag = rum_creator
-					}
-					character_event = {
-						id = 60610
-						days = 600
-						random = 300
-					}
-				}
-			}
-		}
+				# # Special case: Sultanate of Rum creator succeeds in his first conquest
+				# if = {
+					# limit = {
+						# has_character_flag = rum_creator
+					# }
+					# character_event = {
+						# id = 60610
+						# days = 600
+						# random = 300
+					# }
+				# }
+			# }
+		# }
 
 		hidden_tooltip = {
 			check_if_reconquista_finished_effect = yes
@@ -12494,21 +12364,21 @@ caliphal_subjugation = {
 		}
 		FROM = {
 			prestige = 100
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -12750,7 +12620,7 @@ muslim_county_conquest = {
 			factor = 0
 			ROOT = {
 				has_character_flag = is_temujin
-				has_landed_title = e_mongol_empire
+				has_landed_title = e_mongolia
 				demesne_size = 1
 			}
 			FROM = {
@@ -13579,7 +13449,7 @@ dejure_county_claim = {
 			factor = 0
 			ROOT = {
 				has_character_flag = is_temujin
-				has_landed_title = e_mongol_empire
+				has_landed_title = e_mongolia
 				demesne_size = 1
 			}
 			FROM = {
@@ -13621,126 +13491,6 @@ dejure_barony_claim = {
 						primary_title = { title = d_knights_templar }
 						ROOT = {
 							has_character_modifier = expelled_d_knights_templar
-						}
-					}
-					AND = {
-						primary_title = { title = d_knights_hospitaler }
-						ROOT = {
-							has_character_modifier = expelled_d_knights_hospitaler
-						}
-					}
-					AND = {
-						primary_title = { title = d_teutonic_order }
-						ROOT = {
-							has_character_modifier = expelled_d_teutonic_order
-						}
-					}
-					AND = {
-						primary_title = { title = d_jomsvikings }
-						ROOT = {
-							has_character_modifier = expelled_d_jomsvikings
-						}
-					}
-					AND = {
-						primary_title = { title = d_hashshashin }
-						ROOT = {
-							has_character_modifier = expelled_d_hashshashin
-						}
-					}
-					AND = {
-						primary_title = { title = d_bektashi }
-						ROOT = {
-							has_character_modifier = expelled_d_bektashi
-						}
-					}
-					AND = {
-						primary_title = { title = d_haruriyyah }
-						ROOT = {
-							has_character_modifier = expelled_d_haruriyyah
-						}
-					}
-					AND = {
-						primary_title = { title = d_holy_sepulchre }
-						ROOT = {
-							has_character_modifier = expelled_d_holy_sepulchre
-						}
-					}
-					AND = {
-						primary_title = { title = d_saint_anthony }
-						ROOT = {
-							has_character_modifier = expelled_d_saint_anthony
-						}
-					}
-					AND = {
-						primary_title = { title = d_immortals }
-						ROOT = {
-							has_character_modifier = expelled_d_immortals
-						}
-					}
-					AND = {
-						primary_title = { title = d_zealots }
-						ROOT = {
-							has_character_modifier = expelled_d_zealots
-						}
-					}
-					AND = {
-						primary_title = { title = d_sky_lords }
-						ROOT = {
-							has_character_modifier = expelled_d_sky_lords
-						}
-					}
-					AND = {
-						primary_title = { title = d_spirit_guardians }
-						ROOT = {
-							has_character_modifier = expelled_d_spirit_guardians
-						}
-					}
-					AND = {
-						primary_title = { title = d_warriors_perun }
-						ROOT = {
-							has_character_modifier = expelled_d_warriors_perun
-						}
-					}
-					AND = {
-						primary_title = { title = d_chosen_perkunas }
-						ROOT = {
-							has_character_modifier = expelled_d_chosen_perkunas
-						}
-					}
-					AND = {
-						primary_title = { title = d_sons_kaleva }
-						ROOT = {
-							has_character_modifier = expelled_d_sons_kaleva
-						}
-					}
-					AND = {
-						primary_title = { title = d_huitzilopochtli }
-						ROOT = {
-							has_character_modifier = expelled_d_huitzilopochtli
-						}
-					}
-					AND = {
-						primary_title = { title = d_knights_santiago }
-						ROOT = {
-							has_character_modifier = expelled_d_knights_santiago
-						}
-					}
-					AND = {
-						primary_title = { title = d_knights_calatrava }
-						ROOT = {
-							has_character_modifier = expelled_d_knights_calatrava
-						}
-					}
-					AND = {
-						primary_title = { title = d_saint_addai }
-						ROOT = {
-							has_character_modifier = expelled_d_saint_addai
-						}
-					}
-					AND = {
-						primary_title = { title = d_zun_warriors }
-						ROOT = {
-							has_character_modifier = expelled_d_zun_warriors
 						}
 					}
 				}
@@ -14496,8 +14246,8 @@ depose_antipope = {
 				religion = fraticelli
 			}
 			rightful_religious_head_scope = {
-				NOT = { has_claim = k_papal_state }
-				NOT = { has_claim = d_fraticelli }
+				NOT = { has_claim = k_conferentia }
+				NOT = { has_claim = d_cao_dai }
 			}
 			mercenary = no
 		}
@@ -14505,8 +14255,8 @@ depose_antipope = {
 			rightful_religious_head_scope = {
 				is_liege_or_above = PREV
 				OR = {
-					has_claim = k_papal_state
-					has_claim = d_fraticelli
+					has_claim = k_conferentia
+					has_claim = d_cao_dai
 				}
 			}
 		}
@@ -14520,16 +14270,16 @@ depose_antipope = {
 				religion = fraticelli
 			}
 			rightful_religious_head_scope = {
-				NOT = { has_claim = k_papal_state }
-				NOT = { has_claim = d_fraticelli }
+				NOT = { has_claim = k_conferentia }
+				NOT = { has_claim = d_cao_dai }
 			}
 		}
 		FROM = {
 			rightful_religious_head_scope = {
 				is_liege_or_above = PREV
 				OR = {
-					has_claim = k_papal_state
-					has_claim = d_fraticelli
+					has_claim = k_conferentia
+					has_claim = d_cao_dai
 				}
 			}
 		}
@@ -14609,8 +14359,8 @@ depose_antipope = {
 			prestige = -250
 			
 			rightful_religious_head_scope = {
-				remove_claim = k_papal_state
-				remove_claim = d_fraticelli
+				remove_claim = k_conferentia
+				remove_claim = d_cao_dai
 			}
 		}
 	}
@@ -14764,7 +14514,7 @@ cb_install_antiking = {
 				limit = {
 					religion = catholic
 				}
-				k_papal_state = {
+				k_conferentia = {
 					holder_scope = {
 						opinion = {
 							who = ROOT
@@ -14777,7 +14527,7 @@ cb_install_antiking = {
 				limit = {
 					religion = fraticelli
 				}
-				d_fraticelli = {
+				d_cao_dai = {
 					holder_scope = {
 						opinion = {
 							who = ROOT
@@ -14794,8 +14544,8 @@ cb_install_antiking = {
 			
 			hidden_tooltip = {
 				rightful_religious_head_scope = {
-					remove_claim = k_papal_state
-					remove_claim = d_fraticelli
+					remove_claim = k_conferentia
+					remove_claim = d_cao_dai
 				}
 			}
 			
@@ -15467,7 +15217,7 @@ indian_subjugation = {
 			factor = 0
 			ROOT = {
 				has_character_flag = is_temujin
-				has_landed_title = e_mongol_empire
+				has_landed_title = e_mongolia
 				demesne_size = 1
 			}
 			FROM = {
@@ -15588,13 +15338,13 @@ manifest_destiny_invasion = {
 					}
 				}
 			}
-			OR = {
-				AND = {
-					dynasty = 613 # Seljuks
-					NOT = { year = 1200 }
-				}
-				dynasty = 800 # Timurids
-			}
+			# OR = {
+				# AND = {
+					# dynasty = 613 # Seljuks
+					# NOT = { year = 1200 }
+				# }
+				# dynasty = 800 # Timurids
+			# }
 		}
 		
 		ROOT = {
@@ -15741,21 +15491,21 @@ manifest_destiny_invasion = {
 			prestige = 100
 		}
 		FROM = {
-			if = {
-				limit = {
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = {
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -15787,21 +15537,21 @@ manifest_destiny_invasion = {
 		}
 		FROM = {
 			prestige = 200
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			participation_scaled_prestige = 200
 		}
 		any_defender = {
@@ -17353,11 +17103,11 @@ cb_liberate_nomad_duchy = {
 				}
 			}
 			OR = {
-				location = {
-					NOT = {
-						region = world_steppe
-					}
-				}
+				# location = {
+					# NOT = {
+						# region = world_steppe
+					# }
+				# }
 				location = {
 					any_province_holding = {
 						OR = {
@@ -18010,21 +17760,21 @@ nomad_subjugation = {
 		}
 		FROM = {
 			piety = 100
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			participation_scaled_prestige = 100
 		}
 		any_defender = {
@@ -18055,7 +17805,7 @@ nomad_subjugation = {
 			factor = 0
 			ROOT = {
 				has_character_flag = is_temujin
-				has_landed_title = e_mongol_empire
+				has_landed_title = e_mongolia
 				demesne_size = 1
 			}
 			FROM = {
@@ -18128,7 +17878,7 @@ nomad_invasion = {
 				ai = no
 			}
 			ROOT = {
-				has_landed_title = e_mongol_empire
+				has_landed_title = e_mongolia
 			}
 			FROM = {
 				num_of_realm_counties = {
@@ -18298,21 +18048,21 @@ nomad_invasion = {
 				}
 			}
 			
-			if = {
-				limit = { 
-					has_dlc = "Legacy of Rome"
-					OR = { 
-						has_landed_title = e_byzantium
-						has_landed_title = e_roman_empire
-					}
-						OR = { 
-							religion_group = christian
-							religion = hellenic_pagan
-							religion = hellenic_pagan_reformed
-						}
-				}
-				hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
-			}
+			# if = {
+				# limit = { 
+					# has_dlc = "Legacy of Rome"
+					# OR = { 
+						# has_landed_title = e_byzantium
+						# has_landed_title = e_roman_empire
+					# }
+						# OR = { 
+							# religion_group = christian
+							# religion = hellenic_pagan
+							# religion = hellenic_pagan_reformed
+						# }
+				# }
+				# hidden_tooltip = { character_event = { id = LoR.30 days = 12 } }
+			# }
 			participation_scaled_prestige = 200
 		}
 		any_defender = {
@@ -18345,72 +18095,72 @@ nomad_invasion = {
 		}
 		
 		# Try to guide the Hordes in the right direction
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				OR = {
-					dynasty = 613 # Seljuks
-					dynasty = 800 # Timurids
-					primary_title = { title = e_il-khanate }
-				}
-			}
-			OR = {
-				empire = {
-					NOT = {
-						OR = {
-							title = e_persia
-							title = e_byzantium
-							title = e_arabia
-						}
-					}
-				}
-				FROM = {
-					primary_title = { title = e_golden_horde }
-					NOT = { year = 1300 }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				primary_title = { title = e_golden_horde }
-			}
-			OR = {
-				empire = {
-					OR = {
-						title = e_persia
-						title = e_byzantium
-						title = e_arabia
-					}
-				}
-				FROM = {
-					primary_title = { title = e_il-khanate }
-					NOT = { year = 1300 }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				culture = hungarian
-				primary_title = {
-					OR = {
-						title = k_hungary
-						title = e_carpathia
-					}
-				}
-			}
-			empire = {
-				OR = {
-					title = e_tartaria
-					title = e_russia
-				}
-			}
-		}
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# OR = {
+					# dynasty = 613 # Seljuks
+					# dynasty = 800 # Timurids
+					# primary_title = { title = e_il-khanate }
+				# }
+			# }
+			# OR = {
+				# empire = {
+					# NOT = {
+						# OR = {
+							# title = e_persia
+							# title = e_byzantium
+							# title = e_arabia
+						# }
+					# }
+				# }
+				# FROM = {
+					# primary_title = { title = e_golden_horde }
+					# NOT = { year = 1300 }
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# primary_title = { title = e_golden_horde }
+			# }
+			# OR = {
+				# empire = {
+					# OR = {
+						# title = e_persia
+						# title = e_byzantium
+						# title = e_arabia
+					# }
+				# }
+				# FROM = {
+					# primary_title = { title = e_il-khanate }
+					# NOT = { year = 1300 }
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# culture = hungarian
+				# primary_title = {
+					# OR = {
+						# title = k_hungary
+						# title = e_carpathia
+					# }
+				# }
+			# }
+			# empire = {
+				# OR = {
+					# title = e_tartaria
+					# title = e_russia
+				# }
+			# }
+		# }
 		modifier = {
 			factor = 100
 			ROOT = {
-				primary_title = { title = e_mongol_empire }
+				primary_title = { title = e_mongolia }
 			}
 			empire = {
 				OR = {
@@ -18426,7 +18176,7 @@ nomad_invasion = {
 		modifier = {
 			factor = 0.1
 			ROOT = {
-				primary_title = { title = e_mongol_empire }
+				primary_title = { title = e_mongolia }
 			}
 			empire = {
 				OR = {
@@ -18441,7 +18191,7 @@ nomad_invasion = {
 			factor = 0
 			ROOT = {
 				has_character_flag = is_temujin
-				has_landed_title = e_mongol_empire
+				has_landed_title = e_mongolia
 				demesne_size = 1
 			}
 			FROM = {
@@ -18702,70 +18452,70 @@ nomad_expansion = {
 		factor = 2
 		
 		# Try to guide the Hordes in the right direction
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				OR = {
-					dynasty = 613 # Seljuks
-					dynasty = 800 # Timurids
-					primary_title = { title = e_il-khanate }
-				}
-			}
-			OR = {
-				empire = {
-					NOT = {
-						OR = {
-							title = e_persia
-							title = e_byzantium
-							title = e_arabia
-						}
-					}
-				}
-				FROM = {
-					primary_title = { title = e_golden_horde }
-					NOT = { year = 1300 }
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			ROOT = {
-				primary_title = { title = e_golden_horde }
-			}
-			OR = {
-				empire = {
-					OR = {
-						title = e_persia
-						title = e_byzantium
-						title = e_arabia
-					}
-				}
-				FROM = {
-					primary_title = { title = e_il-khanate }
-					NOT = { year = 1300 }
-				}
-			}
-		}
-		modifier = {
-			factor = 2.0
-			OR = {
-				culture = persian
-				culture = baloch
-				culture = afghan
-				culture = turkish
-			}
-			empire = {
-				OR = {
-					title = e_persia
-					title = e_rajastan
-				}
-			}
-		}
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# OR = {
+					# dynasty = 613 # Seljuks
+					# dynasty = 800 # Timurids
+					# primary_title = { title = e_il-khanate }
+				# }
+			# }
+			# OR = {
+				# empire = {
+					# NOT = {
+						# OR = {
+							# title = e_persia
+							# title = e_byzantium
+							# title = e_arabia
+						# }
+					# }
+				# }
+				# FROM = {
+					# primary_title = { title = e_golden_horde }
+					# NOT = { year = 1300 }
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 0.1
+			# ROOT = {
+				# primary_title = { title = e_golden_horde }
+			# }
+			# OR = {
+				# empire = {
+					# OR = {
+						# title = e_persia
+						# title = e_byzantium
+						# title = e_arabia
+					# }
+				# }
+				# FROM = {
+					# primary_title = { title = e_il-khanate }
+					# NOT = { year = 1300 }
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 2.0
+			# OR = {
+				# culture = persian
+				# culture = baloch
+				# culture = afghan
+				# culture = turkish
+			# }
+			# empire = {
+				# OR = {
+					# title = e_persia
+					# title = e_rajastan
+				# }
+			# }
+		# }
 		modifier = {
 			factor = 0
 			ROOT = {
 				has_character_flag = is_temujin
-				has_landed_title = e_mongol_empire
+				has_landed_title = e_mongolia
 				demesne_size = 1
 			}
 			FROM = {
@@ -19343,8 +19093,8 @@ powerful_vassal_takeover_war = { # Started from faction
 					if = {
 						limit = { 
 							OR = { 
-								title = e_hre
-								has_title_flag = alternate_hre
+								title = e_malaysia
+								has_title_flag = alternate_malaysia
 							}
 							NOR = { has_law = succ_feudal_elective has_law = succ_hre_elective }
 							has_law = law_voting_power_1
@@ -19360,8 +19110,8 @@ powerful_vassal_takeover_war = { # Started from faction
 					if = {
 						limit = { 
 							NOR = { 
-								title = e_hre 
-								has_title_flag = alternate_hre
+								title = e_malaysia 
+								has_title_flag = alternate_malaysia
 							}
 							NOR = { has_law = succ_feudal_elective has_law = succ_hre_elective }
 							has_law = law_voting_power_1
@@ -19533,2215 +19283,2215 @@ powerful_vassal_takeover_war = { # Started from faction
 
 ### Reconquista Wars ###
 # Leon & Asturia #
-reconquista_leon = {
-	name = CB_NAME_RECONQUISTA_LEON
-	war_name = WAR_NAME_RECONQUISTA_LEON
-	diplo_view_region = custom_leon
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# reconquista_leon = {
+	# name = CB_NAME_RECONQUISTA_LEON
+	# war_name = WAR_NAME_RECONQUISTA_LEON
+	# diplo_view_region = custom_leon
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
 
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes
 
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_leon
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_leon
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								region = custom_leon
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_leon
-							}
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_leon
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_leon
-								}
-							}
-						}
-					}
-				}
-			}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_leon
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_leon
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# region = custom_leon
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_leon
+							# }
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_leon
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_leon
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_leon
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_leon
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_leon = {
-			save_event_target_as = first_duchy_title
-		}
+		# d_leon = {
+			# save_event_target_as = first_duchy_title
+		# }
 
-		d_asturias = {
-			save_event_target_as = second_duchy_title
-		}
-		if = {
-			limit = {
-				k_asturias = {
-					is_titular = yes
-				}
-			}
-			k_leon = {
-				save_event_target_as = reconquista_kingdom_title
-			}
-		}
-		else = {
-			k_asturias = {
-				save_event_target_as = reconquista_kingdom_title
-			}
-		}
+		# d_asturias = {
+			# save_event_target_as = second_duchy_title
+		# }
+		# if = {
+			# limit = {
+				# k_asturias = {
+					# is_titular = yes
+				# }
+			# }
+			# k_leon = {
+				# save_event_target_as = reconquista_kingdom_title
+			# }
+		# }
+		# else = {
+			# k_asturias = {
+				# save_event_target_as = reconquista_kingdom_title
+			# }
+		# }
 		
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-# Castille & Toledo #
-reconquista_castille = {
-	name = CB_NAME_RECONQUISTA_CASTILLE
-	war_name = WAR_NAME_RECONQUISTA_CASTILLE
-	diplo_view_region = custom_castille
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# # Castille & Toledo #
+# reconquista_castille = {
+	# name = CB_NAME_RECONQUISTA_CASTILLE
+	# war_name = WAR_NAME_RECONQUISTA_CASTILLE
+	# diplo_view_region = custom_castille
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
 
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes
 			
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_castille
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_castille
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								region = custom_castille
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_castille
-							}
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_castille
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_castille
-								}
-							}
-						}
-					}
-				}
-			}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_castille
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_castille
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# region = custom_castille
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_castille
+							# }
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_castille
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_castille
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_castille
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_castille
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_castilla = {
-			save_event_target_as = first_duchy_title
-		}
+		# d_castilla = {
+			# save_event_target_as = first_duchy_title
+		# }
 
-		d_toledo = {
-			save_event_target_as = second_duchy_title
-		}
-		k_castille = {
-			save_event_target_as = reconquista_kingdom_title
-		}
+		# d_toledo = {
+			# save_event_target_as = second_duchy_title
+		# }
+		# k_castille = {
+			# save_event_target_as = reconquista_kingdom_title
+		# }
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-# Aragon & Barcelona #
-reconquista_aragon = {
-	name = CB_NAME_RECONQUISTA_ARAGON
-	war_name = WAR_NAME_RECONQUISTA_ARAGON
-	diplo_view_region = custom_aragon
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# # Aragon & Barcelona #
+# reconquista_aragon = {
+	# name = CB_NAME_RECONQUISTA_ARAGON
+	# war_name = WAR_NAME_RECONQUISTA_ARAGON
+	# diplo_view_region = custom_aragon
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
 
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes
 			
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_aragon
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_aragon
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								region = custom_aragon
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_aragon
-							}
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_aragon
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_aragon
-								}
-							}
-						}
-					}
-				}
-			}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_aragon
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_aragon
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# region = custom_aragon
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_aragon
+							# }
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_aragon
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_aragon
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_aragon
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_aragon
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_aragon = {
-			save_event_target_as = first_duchy_title
-		}
+		# d_aragon = {
+			# save_event_target_as = first_duchy_title
+		# }
 
-		d_barcelona = {
-			save_event_target_as = second_duchy_title
-		}
-		k_aragon = {
-			save_event_target_as = reconquista_kingdom_title
-		}
+		# d_barcelona = {
+			# save_event_target_as = second_duchy_title
+		# }
+		# k_aragon = {
+			# save_event_target_as = reconquista_kingdom_title
+		# }
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-# Galicia & Porto #
-reconquista_galicia = {
-	name = CB_NAME_RECONQUISTA_GALICIA
-	war_name = WAR_NAME_RECONQUISTA_GALICIA
-	diplo_view_region = custom_galicia
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# # Galicia & Porto #
+# reconquista_galicia = {
+	# name = CB_NAME_RECONQUISTA_GALICIA
+	# war_name = WAR_NAME_RECONQUISTA_GALICIA
+	# diplo_view_region = custom_galicia
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes
 			
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_galicia
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_galicia
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								region = custom_galicia
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_galicia
-							}
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_galicia 
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_galicia
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_galicia
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# region = custom_galicia
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_galicia
+							# }
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_galicia 
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
 
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_galicia
-								}
-							}
-						}
-					}
-				}
-			}
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_galicia
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_galicia
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_galicia
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_galicia = {
-			save_event_target_as = first_duchy_title
-		}
+		# d_galicia = {
+			# save_event_target_as = first_duchy_title
+		# }
 
-		d_porto = {
-			save_event_target_as = second_duchy_title
-		}
-		if = {
-			limit = {
-				k_spanish_galicia = {
-					is_titular = no
-				}
-			}
-			k_spanish_galicia = {
-				save_event_target_as = reconquista_kingdom_title
-			}
-		}
+		# d_porto = {
+			# save_event_target_as = second_duchy_title
+		# }
+		# if = {
+			# limit = {
+				# k_spanish_galicia = {
+					# is_titular = no
+				# }
+			# }
+			# k_spanish_galicia = {
+				# save_event_target_as = reconquista_kingdom_title
+			# }
+		# }
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-# Beja & Algarve #
-reconquista_beja = {
-	name = CB_NAME_RECONQUISTA_BEJA
-	war_name = WAR_NAME_RECONQUISTA_BEJA
-	diplo_view_region = custom_beja
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# # Beja & Algarve #
+# reconquista_beja = {
+	# name = CB_NAME_RECONQUISTA_BEJA
+	# war_name = WAR_NAME_RECONQUISTA_BEJA
+	# diplo_view_region = custom_beja
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
 
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes
 			
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_beja
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_beja
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								region = custom_beja
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_beja
-							}
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_beja 
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_beja
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_beja
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# region = custom_beja
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_beja
+							# }
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_beja 
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
 
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_beja
-								}
-							}
-						}
-					}
-				}
-			}
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_beja
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_beja
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_beja
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_beja = {
-			save_event_target_as = first_duchy_title
-		}
+		# d_beja = {
+			# save_event_target_as = first_duchy_title
+		# }
 
-		d_algarve = {
-			save_event_target_as = second_duchy_title
-		}
+		# d_algarve = {
+			# save_event_target_as = second_duchy_title
+		# }
 
-		d_balata = {
-			save_event_target_as = third_duchy_title
-		}
+		# d_balata = {
+			# save_event_target_as = third_duchy_title
+		# }
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-# Granada & Sevilla #
-reconquista_granada = {
-	name = CB_NAME_RECONQUISTA_GRANADA
-	war_name = WAR_NAME_RECONQUISTA_GRANADA
-	diplo_view_region = custom_granada
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# # Granada & Sevilla #
+# reconquista_granada = {
+	# name = CB_NAME_RECONQUISTA_GRANADA
+	# war_name = WAR_NAME_RECONQUISTA_GRANADA
+	# diplo_view_region = custom_granada
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
 
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes	
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes	
 
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_granada
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_granada
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								region = custom_granada
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_granada
-							}
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_granada 
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_granada
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_granada
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# region = custom_granada
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_granada
+							# }
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_granada 
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
 
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_granada
-								}
-							}
-						}
-					}
-				}
-			}
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_granada
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_granada
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_granada
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_granada = {
-			save_event_target_as = first_duchy_title
-		}
+		# d_granada = {
+			# save_event_target_as = first_duchy_title
+		# }
 
-		d_sevilla = {
-			save_event_target_as = second_duchy_title
-		}
+		# d_sevilla = {
+			# save_event_target_as = second_duchy_title
+		# }
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-# Cordoba & Badajoz #
-reconquista_cordoba = {
-	name = CB_NAME_RECONQUISTA_CORDOBA
-	war_name = WAR_NAME_RECONQUISTA_CORDOBA
-	diplo_view_region = custom_cordoba
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# # Cordoba & Badajoz #
+# reconquista_cordoba = {
+	# name = CB_NAME_RECONQUISTA_CORDOBA
+	# war_name = WAR_NAME_RECONQUISTA_CORDOBA
+	# diplo_view_region = custom_cordoba
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
 
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes
 			
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_cordoba
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_cordoba
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {	
-							is_land = yes
-							any_neighbor_province = {
-								region = custom_cordoba
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_cordoba
-							}
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_cordoba 
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_cordoba
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_cordoba
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {	
+							# is_land = yes
+							# any_neighbor_province = {
+								# region = custom_cordoba
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_cordoba
+							# }
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_cordoba 
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
 
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_cordoba
-								}
-							}
-						}
-					}
-				}
-			}
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_cordoba
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_cordoba
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_cordoba
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_cordoba = {
-			save_event_target_as = first_duchy_title
-		}
+		# d_cordoba = {
+			# save_event_target_as = first_duchy_title
+		# }
 
-		d_badajoz = {
-			save_event_target_as = second_duchy_title
-		}
+		# d_badajoz = {
+			# save_event_target_as = second_duchy_title
+		# }
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-# Valencia & Murcia #
-reconquista_valencia = {
-	name = CB_NAME_RECONQUISTA_VALENCIA
-	war_name = WAR_NAME_RECONQUISTA_VALENCIA
-	diplo_view_region = custom_valencia
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# # Valencia & Murcia #
+# reconquista_valencia = {
+	# name = CB_NAME_RECONQUISTA_VALENCIA
+	# war_name = WAR_NAME_RECONQUISTA_VALENCIA
+	# diplo_view_region = custom_valencia
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
 
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes
 			
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_valencia
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_valencia
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								region = custom_valencia
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_valencia
-							}
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_valencia 
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_valencia
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_valencia
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# region = custom_valencia
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_valencia
+							# }
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_valencia 
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
 
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_valencia
-								}
-							}
-						}
-					}
-				}
-			}
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_valencia
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_valencia
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_valencia
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_valencia = {
-			save_event_target_as = first_duchy_title
-		}
+		# d_valencia = {
+			# save_event_target_as = first_duchy_title
+		# }
 
-		d_murcia = {
-			save_event_target_as = second_duchy_title
-		}
+		# d_murcia = {
+			# save_event_target_as = second_duchy_title
+		# }
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-# Navarra #
-reconquista_navarra = {
-	name = CB_NAME_RECONQUISTA_NAVARRA
-	war_name = WAR_NAME_RECONQUISTA_NAVARRA
-	diplo_view_region = custom_navarra
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# # Navarra #
+# reconquista_navarra = {
+	# name = CB_NAME_RECONQUISTA_NAVARRA
+	# war_name = WAR_NAME_RECONQUISTA_NAVARRA
+	# diplo_view_region = custom_navarra
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
 
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes
 			
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_navarra
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_navarra
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								region = custom_navarra
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_navarra
-							}
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_navarra 
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_navarra
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_navarra
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# region = custom_navarra
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_navarra
+							# }
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_navarra 
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
 
-						any_neighbor_province = {
-							is_land = yes
-							any_neighbor_province = {
-								is_land = yes
-								any_neighbor_province = {
-									region = custom_navarra
-								}
-							}
-						}
-					}
-				}
-			}
+						# any_neighbor_province = {
+							# is_land = yes
+							# any_neighbor_province = {
+								# is_land = yes
+								# any_neighbor_province = {
+									# region = custom_navarra
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_navarra
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_navarra
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_navarra = {
-			save_event_target_as = first_duchy_title
-		}
-		k_navarra = {
-			save_event_target_as = reconquista_kingdom_title
-		}
+		# d_navarra = {
+			# save_event_target_as = first_duchy_title
+		# }
+		# k_navarra = {
+			# save_event_target_as = reconquista_kingdom_title
+		# }
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-# Balearic Islands #
-reconquista_balearic = {
-	name = CB_NAME_RECONQUISTA_BALEARIC
-	war_name = WAR_NAME_RECONQUISTA_BALEARIC
-	diplo_view_region = custom_balearic
-	sprite = 9
-	truce_days = 3650
-	is_permanent = yes
-	is_holy_war = yes
-	battle_warscore_mult = 0.5
-	#max_defender_occupation_score = 85
-	allow_whitepeace = no
+# # Balearic Islands #
+# reconquista_balearic = {
+	# name = CB_NAME_RECONQUISTA_BALEARIC
+	# war_name = WAR_NAME_RECONQUISTA_BALEARIC
+	# diplo_view_region = custom_balearic
+	# sprite = 9
+	# truce_days = 3650
+	# is_permanent = yes
+	# is_holy_war = yes
+	# battle_warscore_mult = 0.5
+	# #max_defender_occupation_score = 85
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = yes
-	can_ask_to_join_war = yes
+	# allowed_to_target_tributaries = yes
+	# can_ask_to_join_war = yes
 
-	sort_priority = 10000
+	# sort_priority = 10000
 
-	can_use_gui = {
-		ROOT = {
-			prisoner = no
-			is_adult = yes
-		}
-	}
+	# can_use_gui = {
+		# ROOT = {
+			# prisoner = no
+			# is_adult = yes
+		# }
+	# }
 
-	can_use = {
-		ROOT = {
-			has_character_flag = currently_reconquering_iberia
-			not_reconquista_check_trigger = yes
+	# can_use = {
+		# ROOT = {
+			# has_character_flag = currently_reconquering_iberia
+			# not_reconquista_check_trigger = yes
 			
-			any_realm_province = {
-				OR = {
-					AND = {
-						any_neighbor_province = {
-							region = custom_balearic
-						}
-					}
-					AND = {
-						NOT = {
-							any_neighbor_province = {
-								region = custom_balearic
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								region = world_europe_west_iberia
-								owner = {
-									OR = {
-										AND = {
-											independent = yes
-											NOT = {
-												religion_group = christian
-											}
-										}
-										top_liege = {
-											NOT = {
-												religion_group = christian
-											}
-										}
-									}
-								}
-							}
-						}
-						any_neighbor_province = {
-							any_neighbor_province = {
-								region = custom_balearic
-							}
-						}
-					}
-					AND = {
-						NOR = {
-							any_neighbor_province = {
-								region = custom_balearic
-							}
-							any_neighbor_province = {
-								any_neighbor_province = {
-									region = custom_balearic 
-								}
-							}
-						}
-						NOT = {
-							any_neighbor_province = {
-								any_neighbor_province = {
-									region = world_europe_west_iberia
-									owner = {
-										OR = {
-											AND = {
-												independent = yes
-												NOT = {
-													religion_group = christian
-												}
-											}
-											top_liege = {
-												NOT = {
-													religion_group = christian
-												}
-											}
-										}
-									}
-								}
-							}
-						}
+			# any_realm_province = {
+				# OR = {
+					# AND = {
+						# any_neighbor_province = {
+							# region = custom_balearic
+						# }
+					# }
+					# AND = {
+						# NOT = {
+							# any_neighbor_province = {
+								# region = custom_balearic
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# region = world_europe_west_iberia
+								# owner = {
+									# OR = {
+										# AND = {
+											# independent = yes
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+										# top_liege = {
+											# NOT = {
+												# religion_group = christian
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
+						# any_neighbor_province = {
+							# any_neighbor_province = {
+								# region = custom_balearic
+							# }
+						# }
+					# }
+					# AND = {
+						# NOR = {
+							# any_neighbor_province = {
+								# region = custom_balearic
+							# }
+							# any_neighbor_province = {
+								# any_neighbor_province = {
+									# region = custom_balearic 
+								# }
+							# }
+						# }
+						# NOT = {
+							# any_neighbor_province = {
+								# any_neighbor_province = {
+									# region = world_europe_west_iberia
+									# owner = {
+										# OR = {
+											# AND = {
+												# independent = yes
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+											# top_liege = {
+												# NOT = {
+													# religion_group = christian
+												# }
+											# }
+										# }
+									# }
+								# }
+							# }
+						# }
 
-						any_neighbor_province = {
-							any_neighbor_province = {
-								any_neighbor_province = {
-									region = custom_balearic
-								}
-							}
-						}
-					}
-				}
-			}
+						# any_neighbor_province = {
+							# any_neighbor_province = {
+								# any_neighbor_province = {
+									# region = custom_balearic
+								# }
+							# }
+						# }
+					# }
+				# }
+			# }
 
-			conditional_tooltip = {
-				trigger = {
-					ai = yes
-				}
+			# conditional_tooltip = {
+				# trigger = {
+					# ai = yes
+				# }
 
-				NOT = {
-					has_character_modifier = reconquista_preparation_duration
-				}
-			}
-		}
+				# NOT = {
+					# has_character_modifier = reconquista_preparation_duration
+				# }
+			# }
+		# }
 
-		FROM = {
-			any_realm_province = {
-				region = custom_balearic
-			}
-			NOT = {
-				religion_group = ROOT
-			}
-		}
-	}
+		# FROM = {
+			# any_realm_province = {
+				# region = custom_balearic
+			# }
+			# NOT = {
+				# religion_group = ROOT
+			# }
+		# }
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = reconquista_valid_TT
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = reconquista_valid_TT
 
-				has_character_flag = currently_reconquering_iberia
-			}
-		}
-		custom_tooltip = {
-			text = reconquista_valid_2_TT
+				# has_character_flag = currently_reconquering_iberia
+			# }
+		# }
+		# custom_tooltip = {
+			# text = reconquista_valid_2_TT
 
-			FROM = {
-				NOT = {
-					religion_group = ROOT
-				}
-			}
-		}
-	}
+			# FROM = {
+				# NOT = {
+					# religion_group = ROOT
+				# }
+			# }
+		# }
+	# }
 
-	on_add = {
-		custom_tooltip = { text = add_allies_reconquista_TT }
-		ROOT = {
-			character_event = { id = HF.49210 }
-		}
-	}
+	# on_add = {
+		# custom_tooltip = { text = add_allies_reconquista_TT }
+		# ROOT = {
+			# character_event = { id = HF.49210 }
+		# }
+	# }
 
-	on_success = {
+	# on_success = {
 
-		d_mallorca = {
-			save_event_target_as = first_duchy_title
-		}
+		# d_mallorca = {
+			# save_event_target_as = first_duchy_title
+		# }
 
-		reconquista_win_effect = yes
-	}
+		# reconquista_win_effect = yes
+	# }
 
-	on_reverse_demand = {
-		reconquista_lose_effect = yes
-	}
+	# on_reverse_demand = {
+		# reconquista_lose_effect = yes
+	# }
 
-	on_invalidation = {
-		ROOT = {
-			character_event = { id = HF.49200 }
-		}
-	}
+	# on_invalidation = {
+		# ROOT = {
+			# character_event = { id = HF.49200 }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
 
-### Otto Specific CBs
-thankmars_rebellion = {
-	name = CB_NAME_THANKMARS_REBELLION
-	war_name = WAR_NAME_THANKMARS_REBELLION
-	diplo_view_region = world_europe_west_germania
-	sprite = 12
-	truce_days = 3650
-	is_permanent = no
-	allow_whitepeace = no
+# ### Otto Specific CBs
+# thankmars_rebellion = {
+	# name = CB_NAME_THANKMARS_REBELLION
+	# war_name = WAR_NAME_THANKMARS_REBELLION
+	# diplo_view_region = world_europe_west_germania
+	# sprite = 12
+	# truce_days = 3650
+	# is_permanent = no
+	# allow_whitepeace = no
 
-	allowed_to_target_tributaries = no
-	can_ask_to_join_war = no
-	major_revolt = yes
-	can_call_allies = no
+	# allowed_to_target_tributaries = no
+	# can_ask_to_join_war = no
+	# major_revolt = yes
+	# can_call_allies = no
 
-	can_use = {
-		always = no
-	}
+	# can_use = {
+		# always = no
+	# }
 
-	is_valid = {
-		ROOT = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = THANKMAR_REBELLION_01_TT
-				has_character_flag = is_thankmar
-			}
-		}
-		FROM = {
-			show_scope_change = no
-			custom_tooltip = {
-				text = THANKMAR_REBELLION_02_TT
-				has_character_flag = is_otto
-			}
-		}
-	}
+	# is_valid = {
+		# ROOT = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = THANKMAR_REBELLION_01_TT
+				# has_character_flag = is_thankmar
+			# }
+		# }
+		# FROM = {
+			# show_scope_change = no
+			# custom_tooltip = {
+				# text = THANKMAR_REBELLION_02_TT
+				# has_character_flag = is_otto
+			# }
+		# }
+	# }
 
-	on_invalidation = {
-		any_attacker = {
-			set_defacto_liege = FROM
-		}
-		if = {
-			limit = {
-				ROOT = {
-					is_alive = no
-				}
-				FROM = {
-					is_alive = yes
-				}
-			}
-			any_attacker = {
-				imprison = ROOT
-			}
-		}
-	}
+	# on_invalidation = {
+		# any_attacker = {
+			# set_defacto_liege = FROM
+		# }
+		# if = {
+			# limit = {
+				# ROOT = {
+					# is_alive = no
+				# }
+				# FROM = {
+					# is_alive = yes
+				# }
+			# }
+			# any_attacker = {
+				# imprison = ROOT
+			# }
+		# }
+	# }
 
-	on_success = {
-		custom_tooltip = { text = THANKMARS_REBELLION_VICTORY_TT }
-		hidden_tooltip = {
-			ROOT = {
-				remove_trait = bastard
-				dynasty = 669
-				any_child = {
-					limit = {
-						NOT = {
-							trait = bastard
-						}
-					}
-					dynasty = 669
-				}
-			}
+	# on_success = {
+		# custom_tooltip = { text = THANKMARS_REBELLION_VICTORY_TT }
+		# hidden_tooltip = {
+			# ROOT = {
+				# remove_trait = bastard
+				# dynasty = 669
+				# any_child = {
+					# limit = {
+						# NOT = {
+							# trait = bastard
+						# }
+					# }
+					# dynasty = 669
+				# }
+			# }
 
-			FROM = {
-				any_demesne_title = {
-					grant_title_no_opinion = ROOT
-				}
-				imprison = ROOT
-			}
+			# FROM = {
+				# any_demesne_title = {
+					# grant_title_no_opinion = ROOT
+				# }
+				# imprison = ROOT
+			# }
 
-			any_attacker = {
-				set_defacto_liege = ROOT
-			}
+			# any_attacker = {
+				# set_defacto_liege = ROOT
+			# }
 
-			ROOT = {
-				narrative_event = { id = LT.40009 }
-			}
-		}
-	}
+			# ROOT = {
+				# narrative_event = { id = LT.40009 }
+			# }
+		# }
+	# }
 
-	on_reverse_demand = {
-		FROM = {
-			show_scope_change = no
-			reverse_imprison = ROOT
-			narrative_event = { id = LT.40011 }
-		}
-		any_attacker = {
-			show_scope_change = no
-			imprison = FROM
-		}
-		hidden_tooltip = {
-			any_attacker = {
-				set_defacto_liege = FROM
-			}
-		}
-	}
+	# on_reverse_demand = {
+		# FROM = {
+			# show_scope_change = no
+			# reverse_imprison = ROOT
+			# narrative_event = { id = LT.40011 }
+		# }
+		# any_attacker = {
+			# show_scope_change = no
+			# imprison = FROM
+		# }
+		# hidden_tooltip = {
+			# any_attacker = {
+				# set_defacto_liege = FROM
+			# }
+		# }
+	# }
 
-	attacker_ai_victory_worth = {
-		factor = -1
-	}
+	# attacker_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	attacker_ai_defeat_worth = {
-		factor = 100
-	}
+	# attacker_ai_defeat_worth = {
+		# factor = 100
+	# }
 
-	defender_ai_victory_worth = {
-		factor = -1
-	}
+	# defender_ai_victory_worth = {
+		# factor = -1
+	# }
 
-	defender_ai_defeat_worth = {
-		factor = 100
-	}
-}
+	# defender_ai_defeat_worth = {
+		# factor = 100
+	# }
+# }
