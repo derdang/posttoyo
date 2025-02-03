@@ -160,7 +160,9 @@ e_japan = {
 				holy_site = chinomi
 				holy_site = chinomi_reformed
 				
-				b_sapporo = {}
+				b_sapporo = {
+					holy_site = soka_gakkai # Atsuta (Birthplace of Toda Josei, 2nd president)
+				}
 				b_ebetsu = {}
 				b_chitose = {}
 				b_eniwa = {}
@@ -569,7 +571,9 @@ e_japan = {
 				color2={ 255 255 255 }
 				
 				b_hamamatsu = {}
-				b_iwata = {}
+				b_iwata = {
+					holy_site = tenrikyo # Yamana (Major Church)
+				}
 				b_fujieda = {}
 				b_yaizu = {}
 				b_kakegawa = {}
@@ -582,7 +586,9 @@ e_japan = {
 				
 				b_shizuoka = {}
 				b_fuji = {}
-				b_fujinomiya = {}
+				b_fujinomiya = {
+					holy_site = soka_gakkai # Taisekiji (Major temple of Nichiren-Shoshu)
+				}
 				b_numazu = {}
 				b_mishima = {}
 				b_gotemba = {}
@@ -643,10 +649,11 @@ e_japan = {
 				color={ 189 177 108 }
 				color2={ 255 255 255 }
 				
-				holy_site = shinto
 				
 				b_matsue = {}
-				b_izumo = {}
+				b_izumo = {
+					holy_site = shinto # Izumo-taisha (Major temple)
+				}
 				b_yasugi = {}
 				b_daito = {}
 				b_kisuki = {}
@@ -700,7 +707,6 @@ e_japan = {
 				color={ 185 183 86 }
 				color2={ 255 255 255 }
 				
-				holy_site = tenrikyo
 				holy_site = yuilsasang
 				
 				b_hiroshima = {}
@@ -840,11 +846,11 @@ e_japan = {
 				color={ 24 73 99 }
 				color2={ 255 255 255 }
 				
-				holy_site = shinto
-				
 				b_shima = {}
 				b_meiwa = {}
-				b_ise = {}
+				b_ise = {
+					holy_site = shinto # Ise-jingu (major temple)
+				}
 				b_toba = {}
 				b_owase = {}
 				b_kumano = {}
@@ -885,12 +891,13 @@ e_japan = {
 				color={ 19 139 172 }
 				color2={ 255 255 255 }
 				
-				holy_site = shinto
-				holy_site = soka_gakkai
-				holy_site = shingon_shu
 				holy_site = shinko
 				
-				b_kyoto = {}
+				b_kyoto = {
+					holy_site = shinto # Kyoto-gosho (Old imperial palace)
+					holy_site = tenrikyo # Kyoto (Major Church)
+					holy_site = shingon_shu # Toji temple (Major temple)
+				}
 				b_uji = {}
 				b_nagaokakyo = {}
 				b_joyo = {}
@@ -902,15 +909,18 @@ e_japan = {
 				color={ 71 161 161 }
 				color2={ 255 255 255 }
 				
-				holy_site = soka_gakkai
 				holy_site = seirei
-				holy_site = tenrikyo
-				holy_site = shingon_shu
 				
 				b_nara = {}
-				b_kashihara = {}
-				b_ikoma = {}
-				b_tenri = {}
+				b_kashihara = {
+					holy_site = shinto # Kashihara-jingu (major temple)
+				}
+				b_ikoma = {
+					holy_site = shingon_shu # Shigi-san (major mountainous temple)
+				}
+				b_tenri = {
+					holy_site = tenrikyo # Tenri (Headquarter)
+				}
 				b_yamatokoriyama = {}
 				b_kashiba = {}
 				b_yamatotakada = {}
@@ -1007,8 +1017,12 @@ e_japan = {
 				
 				b_osaka = {}
 				b_sakai_2 = {}
-				b_higashiosaka = {}
-				b_yao = {}
+				b_higashiosaka = {
+					holy_site = soka_gakkai # Katano (Kansai Soka High School)
+				}
+				b_yao = {
+					holy_site = tenrikyo # Takayasu (Major Church)
+				}
 				b_kishiwada = {}
 				b_izumi = {}
 				b_matsubara = {}
@@ -1024,10 +1038,11 @@ e_japan = {
 				color={ 17 154 179 }
 				color2={ 255 255 255 }
 				
-				holy_site = shingon_shu
 				
 				b_wakayama = {}
-				b_hashimoto = {}
+				b_hashimoto = {
+					holy_site = shingon_shu # Mount Koya (major mountainous temple)
+				}
 				b_naga = {}
 				b_iwade = {}
 				b_kainan = {}
@@ -1126,7 +1141,9 @@ e_japan = {
 				b_sakura_2 = {}
 				b_kashiwa = {}
 				b_yachiyo = {}
-				b_narita = {}
+				b_narita = {
+					holy_site = shingon_shu # Shinsho-ji (Major temple)
+				}
 			}
 			c_chiba = { # 45
 				color={ 145 51 51 }
@@ -1342,7 +1359,9 @@ e_japan = {
 				color={ 150 57 57 }
 				color2={ 255 255 255 }
 				
-				b_hachinoji = {}
+				b_hachinoji = {
+					holy_site = soka_gakkai # Hachioji (Soka University)
+				}
 				b_tachikawa = {}
 				b_ome = {}
 				b_fuchu = {}
@@ -1354,15 +1373,16 @@ e_japan = {
 				color={ 219 6 6 }
 				color2={ 255 255 255 }
 				
-				holy_site = shinto
-				holy_site = soka_gakkai
-				holy_site = tenrikyo
 				holy_site = americanist_reformed
 				holy_site = americanist
 				
-				b_shinjuku = {}
+				b_shinjuku = {
+					holy_site = soka_gakkai # Shinanomachi (Headquarter)
+				}
 				b_chuo = {}
-				b_chiyoda = {}
+				b_chiyoda = {
+					holy_site = shinto # Imperial palace
+				}
 				b_minato = {}
 				b_bunkyo = {}
 				b_asakusa = {}
@@ -1398,9 +1418,6 @@ e_japan = {
 			c_beppu = { # 116
 				color={ 231 71 159 }
 				color2={ 255 255 255 }
-				
-				holy_site = shinto
-				holy_site = soka_gakkai
 				
 				b_nakatsu = {}
 				b_beppu = {}
@@ -1574,7 +1591,7 @@ e_japan = {
 				color={ 151 75 132 }
 				color2={ 255 255 255 }
 				
-				holy_site = tenrikyo
+				holy_site = seirei
 				holy_site = quinto
 				
 				b_nagasaki = {}
@@ -1600,8 +1617,6 @@ e_japan = {
 			c_shimabara = { # 123
 				color={ 165 100 149 }
 				color2={ 255 255 255 }
-				
-				holy_site = seirei
 				
 				b_shimabara = {}
 				b_isahaya = {}
@@ -1746,10 +1761,10 @@ e_japan = {
 				color={ 0 0 206 }
 				color2={ 255 255 255 }
 				
-				holy_site = shingon_shu
-				
 				b_takamatsu = {}
-				b_marugame = {}
+				b_marugame = {
+					holy_site = shingon_shu # Zentsu-ji temple (Major temple)
+				}
 				b_mitoyo = {}
 				b_sakaide = {}
 				b_onohara = {}
@@ -1779,11 +1794,12 @@ e_japan = {
 				color={ 78 78 152 }
 				color2={ 255 255 255 }
 				
-				holy_site = soka_gakkai
 				
 				b_tokushima = {}
 				b_anan = {}
-				b_naruto = {}
+				b_naruto = {
+					holy_site = tenrikyo # Muya (Major Church)
+				}
 				b_kamojima = {}
 				b_komatsushima = {}
 				b_awa = {}

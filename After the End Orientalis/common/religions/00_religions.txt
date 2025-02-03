@@ -3502,17 +3502,17 @@ buddhist_group = {
 		scripture_name = MYOHO_RENGE_KYO
 		priest_title = B_LEADER
 		
-		high_god_name = GOD_DHARMA
+		high_god_name = GOD_NICHIREN
 		
 		god_names = {
-			 GOD_SHAKA GOD_NICHIREN GOD_MONJU GOD_IKEDA
+			 GOD_SHAKA GOD_MONJU GOD_FUGEN GOD_IKEDA
 		}
 		
 		evil_god_names = {
-			MARA
+			SANSHO_SHIMA
 		}
 		
-		piety_name = SOKA
+		piety_name = FUKUUN
 		character_modifier = { learning = 2 }
 		short_reign_opinion_year_mult = 0
 		
@@ -3524,6 +3524,7 @@ buddhist_group = {
 		feminist = no
 		female_temple_holders = no
 		can_grant_divorce = yes
+		priests_can_marry = yes
 		priests_can_inherit = yes
 		
 		religious_clothing_head = 10
@@ -3779,7 +3780,7 @@ japonic = {
 		}
 		
 		evil_god_names = {
-			AKUMA
+			ONI
 		}
 		
 		investiture = yes
@@ -3788,7 +3789,10 @@ japonic = {
 		can_grant_claim = yes
 		can_grant_invasion_cb = invasion
 		can_retire_to_monastery = yes
-		priests_can_inherit = no
+
+		priests_can_marry = yes
+		priests_can_inherit = yes
+
 		rel_head_defense = yes
 		max_consorts = 3 #can take concubines
 
@@ -3846,6 +3850,7 @@ japonic = {
 		
 		feminist = yes
 		female_temple_holders = yes
+		male_temple_holders = no
 		
 		intermarry = seirei
 		intermarry = seirei_reformed

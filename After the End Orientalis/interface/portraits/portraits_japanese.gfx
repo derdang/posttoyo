@@ -3,22 +3,64 @@ spriteTypes = {
 ############## japanese ##########################
 
 	spriteType = {
-		name = "PORTRAIT_ainugfx_child_male"
+		name = "PORTRAIT_japanesegfx_child_male"
 		texturefile = "gfx\\characters\\default_son_chinese.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
 	
 	spriteType = {
-		name = "PORTRAIT_ainugfx_child_female"
+		name = "PORTRAIT_japanesegfx_child_female"
 		texturefile = "gfx\\characters\\default_daughter_chinese.tga"
 		noOfFrames = 1
 		norefcount = yes
 	}
 
-	# ainu Male
+	spriteType = {
+		name = "GFX_japanese_male_headgear"
+		texturefile = "gfx\\characters\\japanese_male\\japanese_male_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_japanese_male_headgear_mid"
+		texturefile = "gfx\\characters\\japanese_male\\japanese_male_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_japanese_male_headgear_behind"
+		texturefile = "gfx\\characters\\japanese_male\\japanese_male_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_japanese_female_headgear"
+		texturefile = "gfx\\characters\\japanese_female\\japanese_female_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_japanese_female_headgear_mid"
+		texturefile = "gfx\\characters\\japanese_female\\japanese_female_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	spriteType = {
+		name = "GFX_japanese_female_headgear_behind"
+		texturefile = "gfx\\characters\\japanese_female\\japanese_female_headgear.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
+	# japanese Male
 	portraitType = {
-		name = "PORTRAIT_ainugfx_male"
+		name = "PORTRAIT_japanesegfx_male"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK
 			"GFX_character_background:p0"
@@ -27,19 +69,19 @@ spriteTypes = {
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p18"
 			"GFX_chinese_male_hair_behind:p1:h:y"
-			"GFX_ugric_male_beard_behind:p4:h:y"
+			"GFX_bodpa_male_beard_behind:p4:h:y"
 			":p5:c6"
-			"GFX_turkish_male_base:p2"					
-			"GFX_turkish_male_neck:d0"
-			"GFX_turkish_male_chin:d1"
-			"GFX_character_turkish_male_physique:p21" 
-			"GFX_turkish_male_cheeks:d4"
-			"GFX_turkish_male_mouth:d2"					
-			"GFX_turkish_male_eyes:d6"
-			"GFX_turkish_male_nose:d3"
-			"GFX_turkish_male_eyes2:d6:e"
+			"GFX_chinese_male_base:p2"
+			"GFX_chinese_male_neck:d0"
+			"GFX_chinese_male_chin:d1"
+			"GFX_character_chinese_male_physique:p21" 
+			"GFX_chinese_male_cheeks:d4"
+			"GFX_chinese_male_mouth:d2"
+			"GFX_chinese_male_eyes:d6"
+			"GFX_chinese_male_nose:d3"
+			"GFX_chinese_male_eyes2:d6:e"
 			"GFX_character_freckles:p20"
-			"GFX_character_turkish_male_pale:p22"
+			"GFX_character_chinese_male_pale:p22"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25"
 			"GFX_character_scars_high:p26"
@@ -55,8 +97,8 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_bodpa_male_clothes:p3:c2"
 			"GFX_japanese_male_headgear_mid:p5:c3"
-			"GFX_turkish_male_ear:d7"		
-			"GFX_ugric_male_beard:p4:h:y"
+			"GFX_chinese_male_ear:d7"			
+			"GFX_bodpa_male_beard:p4:h:y"
 		   	"GFX_chinese_male_hair:p1:h:y"
 			":p5:c7"
 			"GFX_character_mask:p12:y:o40x45"
@@ -92,7 +134,7 @@ spriteTypes = {
 	
 	# middle age
 	portraitType = {
-		name = "PORTRAIT_ainugfx_male1"
+		name = "PORTRAIT_japanesegfx_male1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK
 			"GFX_character_background:p0"
@@ -101,19 +143,19 @@ spriteTypes = {
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p18"
 			"GFX_chinese_male_hair_behind_midage:p1:h:y"
-			"GFX_ugric_male_beard_behind_midage:p4:h:y"
+			"GFX_bodpa_male_beard_behind_midage:p4:h:y"
 			":p5:c6"
-			"GFX_turkish_male_base_midage:p2"
-			"GFX_turkish_male_neck_midage:d0"
-			"GFX_turkish_male_chin_midage:d1"
-			"GFX_character_turkish_male_physique:p21" 
-			"GFX_turkish_male_cheeks_midage:d4"
-			"GFX_turkish_male_mouth_midage:d2"
-			"GFX_turkish_male_eyes_midage:d6"
-			"GFX_turkish_male_nose_midage:d3"
-			"GFX_turkish_male_eyes2:d6:e"
+			"GFX_chinese_male_base_midage:p2"
+			"GFX_chinese_male_neck_midage:d0"
+			"GFX_chinese_male_chin_midage:d1"
+			"GFX_character_chinese_male_physique:p21" 
+			"GFX_chinese_male_cheeks_midage:d4"
+			"GFX_chinese_male_mouth_midage:d2"
+			"GFX_chinese_male_eyes_midage:d6"
+			"GFX_chinese_male_nose_midage:d3"
+			"GFX_chinese_male_eyes2:d6:e"
 			"GFX_character_freckles:p20"
-			"GFX_character_turkish_male_pale:p22"
+			"GFX_character_chinese_male_pale:p22"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25"
 			"GFX_character_scars_high:p26"
@@ -129,8 +171,8 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_bodpa_male_clothes:p3:c2"
 			"GFX_japanese_male_headgear_mid:p5:c3"
-			"GFX_turkish_male_ear_midage:d7"
-			"GFX_ugric_male_beard_midage:p4:h:y"
+			"GFX_chinese_male_ear_midage:d7"
+			"GFX_bodpa_male_beard_midage:p4:h:y"
 			":p5:c7"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_chinese_male_hair_midage:p1:h:y"
@@ -166,7 +208,7 @@ spriteTypes = {
 	
 	# old age
 	portraitType = {
-		name = "PORTRAIT_ainugfx_male2"
+		name = "PORTRAIT_japanesegfx_male2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK
 			"GFX_character_background:p0"
@@ -175,19 +217,19 @@ spriteTypes = {
 			"GFX_frankish_male_overlayer_behind:p31"
 			"GFX_character_special_crowns_behind:p18"
 			"GFX_chinese_male_hair_behind_oldage:p1:h:y"
-			"GFX_ugric_male_beard_behind_oldage:p4:h:y"
+			"GFX_bodpa_male_beard_behind_oldage:p4:h:y"
 			":p5:c6"
-			"GFX_turkish_male_base_oldage:p2"
-			"GFX_turkish_male_neck_oldage:d0"
-			"GFX_turkish_male_chin_oldage:d1"
-			"GFX_character_turkish_male_physique:p21" 
-			"GFX_turkish_male_cheeks_oldage:d4"
-			"GFX_turkish_male_mouth_oldage:d2"
-			"GFX_turkish_male_eyes_oldage:d6"
-			"GFX_turkish_male_nose_oldage:d3"
-			"GFX_turkish_male_eyes2:d6:e"
+			"GFX_chinese_male_base_oldage:p2"
+			"GFX_chinese_male_neck_oldage:d0"
+			"GFX_chinese_male_chin_oldage:d1"
+			"GFX_character_chinese_male_physique:p21" 
+			"GFX_chinese_male_cheeks_oldage:d4"
+			"GFX_chinese_male_mouth_oldage:d2"
+			"GFX_chinese_male_eyes_oldage:d6"
+			"GFX_chinese_male_nose_oldage:d3"
+			"GFX_chinese_male_eyes2:d6:e"
 			"GFX_character_freckles:p20"
-			"GFX_character_turkish_male_pale:p22"
+			"GFX_character_chinese_male_pale:p22"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25"
 			"GFX_character_scars_high:p26"
@@ -203,8 +245,8 @@ spriteTypes = {
 			"GFX_character_eyepatch:p13:y:o32x63"
 			"GFX_bodpa_male_clothes:p3:c2"
 			"GFX_japanese_male_headgear_mid:p5:c3"
-			"GFX_turkish_male_ear_oldage:d7"
-			"GFX_ugric_male_beard_oldage:p4:h:y"
+			"GFX_chinese_male_ear_oldage:d7"
+			"GFX_bodpa_male_beard_oldage:p4:h:y"
 			":p5:c7"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_chinese_male_hair_oldage:p1:h:y"
@@ -238,9 +280,9 @@ spriteTypes = {
 		headgear_that_hides_hair = { 10 }
 	}
 
-	# ainu female
+	# japanese female
 	portraitType = {
-		name = "PORTRAIT_ainugfx_female"
+		name = "PORTRAIT_japanesegfx_female"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK
 			"GFX_character_background:p0"
@@ -251,20 +293,19 @@ spriteTypes = {
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p18"
 			"GFX_persian_female_hair_behind:p1:h:y"
-#			"GFX_persian_female_hair_ribbon_behind:p1:y"
-#			"GFX_chinese_female_headgear_behind_hairlayer:p5:c6:h"
-#			"GFX_chinese_female_jewelry_behind:p16"
-			"GFX_turkish_female_base:p2"
-			"GFX_turkish_female_neck:d0"
-			"GFX_turkish_female_chin:d1"
-			"GFX_character_turkish_female_physique:p21" 
-			"GFX_turkish_female_mouth:d2"
-			"GFX_turkish_female_cheeks:d4"
-			"GFX_turkish_female_eyes:d6"
-			"GFX_turkish_female_nose:d3"
-			"GFX_turkish_female_eyes2:d6:e"
+			"GFX_chinese_female_base:p2"
+			"GFX_chinese_female_neck:d0"
+			"GFX_chinese_female_chin:d1"
+			"GFX_character_chinese_female_physique:p21" 
+			"GFX_chinese_female_cheeks:d4"
+			"GFX_chinese_female_mouth:d2"
+			"GFX_chinese_female_eyes:d6"
+			"GFX_chinese_female_nose:d3"
+			"GFX_chinese_female_makeup1:p14"
+			"GFX_chinese_female_makeup2:p15"
+			"GFX_chinese_female_eyes2:d6:e"
 			"GFX_character_freckles:p20"
-			"GFX_character_turkish_female_pale:p22"
+			"GFX_character_chinese_female_pale:p22"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25"
 			"GFX_character_scars_high:p26"
@@ -277,14 +318,11 @@ spriteTypes = {
 			"GFX_character_blinded_eyes:p10"
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
-			"GFX_turkish_female_ear:d7"			
-#			"GFX_chinese_female_jewelry_front:p16"
+			"GFX_chinese_female_ear:d7"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_bodpa_female_clothes:p3:c2"
 			"GFX_japanese_female_headgear_mid:p5:c3"
 			"GFX_persian_female_hair:p1:h:y"
-#			"GFX_persian_female_hair_ribbon_front:p1:y"
-#			"GFX_chinese_female_headgear_hairlayer:p5:c7:h"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_empty:p3:c4"
 			"GFX_frankish_female_undermain_hair:p33:h"
@@ -320,7 +358,7 @@ spriteTypes = {
 
 	# midage
 	portraitType = {
-		name = "PORTRAIT_ainugfx_female1"
+		name = "PORTRAIT_japanesegfx_female1"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK
 			"GFX_character_background:p0"
@@ -331,20 +369,19 @@ spriteTypes = {
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p18"
 			"GFX_persian_female_hair_behind_midage:p1:h:y"
-#			"GFX_persian_female_hair_ribbon_behind:p1:y"
-#			"GFX_chinese_female_headgear_behind_hairlayer:p5:c6:h"
-#			"GFX_chinese_female_jewelry_behind:p16"
-			"GFX_turkish_female_base_midage:p2"
-			"GFX_turkish_female_neck_midage:d0"
-			"GFX_turkish_female_chin_midage:d1"
-			"GFX_character_turkish_female_physique:p21" 
-			"GFX_turkish_female_mouth_midage:d2"
-			"GFX_turkish_female_cheeks_midage:d4"
-			"GFX_turkish_female_eyes_midage:d6"
-			"GFX_turkish_female_nose_midage:d3"
-			"GFX_turkish_female_eyes2:d6:e"
+			"GFX_chinese_female_base_midage:p2"
+			"GFX_chinese_female_neck_midage:d0"
+			"GFX_chinese_female_chin_midage:d1"
+			"GFX_character_chinese_female_physique:p21" 
+			"GFX_chinese_female_cheeks_midage:d4"
+			"GFX_chinese_female_mouth_midage:d2"
+			"GFX_chinese_female_eyes_midage:d6"
+			"GFX_chinese_female_nose_midage:d3"
+			"GFX_chinese_female_makeup1:p14"
+			"GFX_chinese_female_makeup2:p15"
+			"GFX_chinese_female_eyes2:d6:e"
 			"GFX_character_freckles:p20"
-			"GFX_character_turkish_female_pale:p22"
+			"GFX_character_chinese_female_pale:p22"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25"
 			"GFX_character_scars_high:p26"
@@ -357,14 +394,11 @@ spriteTypes = {
 			"GFX_character_blinded_eyes:p10"
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
-			"GFX_turkish_female_ear_midage:d7"		
-#			"GFX_chinese_female_jewelry_front:p16"
+			"GFX_chinese_female_ear_midage:d7"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_bodpa_female_clothes:p3:c2"
 			"GFX_japanese_female_headgear_mid:p5:c3"
 			"GFX_persian_female_hair_midage:p1:h:y"
-#			"GFX_persian_female_hair_ribbon_front:p1:y"
-#			"GFX_chinese_female_headgear_hairlayer:p5:c7:h"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_empty:p3:c4"
 			"GFX_frankish_female_undermain_hair:p33:h"
@@ -400,7 +434,7 @@ spriteTypes = {
 
 	# oldage
 	portraitType = {
-		name = "PORTRAIT_ainugfx_female2"
+		name = "PORTRAIT_japanesegfx_female2"
 		effectFile = "gfx/FX/portrait.lua"
 		layer = { # GFX_TYPE:[d|p]INDEX:COLOR_LINK
 			"GFX_character_background:p0"
@@ -411,20 +445,19 @@ spriteTypes = {
 			"GFX_frankish_female_overlayer_behind:p32"
 			"GFX_character_special_crowns_behind:p18"
 			"GFX_persian_female_hair_behind_oldage:p1:h:y"
-#			"GFX_persian_female_hair_ribbon_behind:p1:y"
-#			"GFX_chinese_female_headgear_behind_hairlayer:p5:c6:h"
-#			"GFX_chinese_female_jewelry_behind:p16"
-			"GFX_turkish_female_base_oldage:p2"
-			"GFX_turkish_female_neck_oldage:d0"
-			"GFX_turkish_female_chin_oldage:d1"
-			"GFX_character_turkish_female_physique:p21" 
-			"GFX_turkish_female_mouth_oldage:d2"
-			"GFX_turkish_female_cheeks_oldage:d4"
-			"GFX_turkish_female_eyes_oldage:d6"
-			"GFX_turkish_female_nose_oldage:d3"
-			"GFX_turkish_female_eyes2:d6:e"
+			"GFX_chinese_female_base_oldage:p2"
+			"GFX_chinese_female_neck_oldage:d0"
+			"GFX_chinese_female_chin_oldage:d1"
+			"GFX_character_chinese_female_physique:p21" 
+			"GFX_chinese_female_cheeks_oldage:d4"
+			"GFX_chinese_female_mouth_oldage:d2"
+			"GFX_chinese_female_eyes_oldage:d6"
+			"GFX_chinese_female_nose_oldage:d3"
+			"GFX_chinese_female_makeup1:p14"
+			"GFX_chinese_female_makeup2:p15"
+			"GFX_chinese_female_eyes2:d6:e"
 			"GFX_character_freckles:p20"
-			"GFX_character_turkish_female_pale:p22"
+			"GFX_character_chinese_female_pale:p22"
 			"GFX_character_scars:p7:y"
 			"GFX_character_scars_mid:p25"
 			"GFX_character_scars_high:p26"
@@ -437,14 +470,11 @@ spriteTypes = {
 			"GFX_character_blinded_eyes:p10"
 			"GFX_character_possessed:p30"
 			"GFX_character_eyepatch:p13:y:o32x63"
-			"GFX_turkish_female_ear_oldage:d7"		
-#			"GFX_chinese_female_jewelry_front:p16"
+			"GFX_chinese_female_ear_oldage:d7"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_bodpa_female_clothes:p3:c2"
 			"GFX_japanese_female_headgear_mid:p5:c3"
 			"GFX_persian_female_hair_oldage:p1:h:y"
-#			"GFX_persian_female_hair_ribbon_front:p1:y"
-#			"GFX_chinese_female_headgear_hairlayer:p5:c7:h"
 			"GFX_character_mask:p12:y:o40x45"
 			"GFX_empty:p3:c4"
 			"GFX_frankish_female_undermain_hair:p33:h"
