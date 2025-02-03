@@ -490,10 +490,7 @@ other_claim = {
 			# Anti-Popes take all the gold of the Vatican
 			if = {
 				limit = {
-					OR = {
-						title = k_conferentia
-						title = d_cao_dai
-					}
+					title = k_conferentia
 				}
 				FROM = {
 					transfer_scaled_wealth = {
@@ -508,10 +505,7 @@ other_claim = {
 			limit = {
 				controls_religion = yes
 				holder_scope = { 
-					OR = {
-						religion = catholic
-						religion = fraticelli
-					}
+					religion = catholic
 				}
 			}
 			holder_scope = {
@@ -531,10 +525,7 @@ other_claim = {
 					controls_religion = no
 					NOT = { 
 						holder_scope = {
-							OR = {
-								religion = catholic 
-								religion = fraticelli 
-							}
+							religion = catholic 
 						}
 					}
 				}
@@ -3030,23 +3021,23 @@ invasion = {
 	
 	ai_will_do = { 
 		factor = 1
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 		
 		modifier = {
 			factor = 0
@@ -3475,23 +3466,23 @@ tribal_invasion = {
 		modifier = {
 			factor = 0.9 # Prefer using CB's without on_add costs
 		}
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 		
 		# Try to guide the Hordes in the right direction
 		# modifier = {
@@ -3715,15 +3706,15 @@ crusade = {
 			}
 		}
 		
-		NOT = { # Not if the Schism has been mended
-			AND = {
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				has_global_flag = schism_mended
-			}
-		}
+		# NOT = { # Not if the Schism has been mended
+			# AND = {
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# has_global_flag = schism_mended
+			# }
+		# }
 	}
 
 	can_use_title = {
@@ -5737,18 +5728,18 @@ new_crusade = {
 				}
 				set_global_flag = catholic_shepherds_crusade
 			}
-			else_if = {
-				limit = {
-					has_game_rule = {
-						name = shepherds_crusade
-						value = on
-					}
-					ROOT = {
-						religion = fraticelli
-					}
-				}
-				set_global_flag = fraticelli_shepherds_crusade
-			}
+			# else_if = {
+				# limit = {
+					# has_game_rule = {
+						# name = shepherds_crusade
+						# value = on
+					# }
+					# ROOT = {
+						# religion = fraticelli
+					# }
+				# }
+				# set_global_flag = fraticelli_shepherds_crusade
+			# }
 			ROOT = {
 				character_event = { id = HFP.42300 days = 3}
 			}
@@ -6266,23 +6257,23 @@ religious = {
 	ai_will_do = { 
 		factor = 1
 		
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 		
 		modifier = {
 			factor = 0
@@ -9900,23 +9891,23 @@ embargo_cb = {
 	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
 	ai_will_do = { 
 		factor = 1
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 		modifier = {
 			factor = 0
 			ROOT = {
@@ -10101,23 +10092,23 @@ seize_trade_post = {
 	# ai importance placed on this CB: scope is the targeted title, ROOT is the attacking character, FROM is the defending character
 	ai_will_do = { 
 		factor = 1
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 		modifier = {
 			factor = 0.25
 			ROOT = {
@@ -13156,126 +13147,6 @@ dejure_county_claim = {
 							has_character_modifier = expelled_d_knights_templar
 						}
 					}
-					AND = {
-						primary_title = { title = d_knights_hospitaler }
-						ROOT = {
-							has_character_modifier = expelled_d_knights_hospitaler
-						}
-					}
-					AND = {
-						primary_title = { title = d_teutonic_order }
-						ROOT = {
-							has_character_modifier = expelled_d_teutonic_order
-						}
-					}
-					AND = {
-						primary_title = { title = d_jomsvikings }
-						ROOT = {
-							has_character_modifier = expelled_d_jomsvikings
-						}
-					}
-					AND = {
-						primary_title = { title = d_hashshashin }
-						ROOT = {
-							has_character_modifier = expelled_d_hashshashin
-						}
-					}
-					AND = {
-						primary_title = { title = d_bektashi }
-						ROOT = {
-							has_character_modifier = expelled_d_bektashi
-						}
-					}
-					AND = {
-						primary_title = { title = d_haruriyyah }
-						ROOT = {
-							has_character_modifier = expelled_d_haruriyyah
-						}
-					}
-					AND = {
-						primary_title = { title = d_holy_sepulchre }
-						ROOT = {
-							has_character_modifier = expelled_d_holy_sepulchre
-						}
-					}
-					AND = {
-						primary_title = { title = d_saint_anthony }
-						ROOT = {
-							has_character_modifier = expelled_d_saint_anthony
-						}
-					}
-					AND = {
-						primary_title = { title = d_immortals }
-						ROOT = {
-							has_character_modifier = expelled_d_immortals
-						}
-					}
-					AND = {
-						primary_title = { title = d_zealots }
-						ROOT = {
-							has_character_modifier = expelled_d_zealots
-						}
-					}
-					AND = {
-						primary_title = { title = d_sky_lords }
-						ROOT = {
-							has_character_modifier = expelled_d_sky_lords
-						}
-					}
-					AND = {
-						primary_title = { title = d_spirit_guardians }
-						ROOT = {
-							has_character_modifier = expelled_d_spirit_guardians
-						}
-					}
-					AND = {
-						primary_title = { title = d_warriors_perun }
-						ROOT = {
-							has_character_modifier = expelled_d_warriors_perun
-						}
-					}
-					AND = {
-						primary_title = { title = d_chosen_perkunas }
-						ROOT = {
-							has_character_modifier = expelled_d_chosen_perkunas
-						}
-					}
-					AND = {
-						primary_title = { title = d_sons_kaleva }
-						ROOT = {
-							has_character_modifier = expelled_d_sons_kaleva
-						}
-					}
-					AND = {
-						primary_title = { title = d_huitzilopochtli }
-						ROOT = {
-							has_character_modifier = expelled_d_huitzilopochtli
-						}
-					}
-					AND = {
-						primary_title = { title = d_knights_santiago }
-						ROOT = {
-							has_character_modifier = expelled_d_knights_santiago
-						}
-					}
-					AND = {
-						primary_title = { title = d_knights_calatrava }
-						ROOT = {
-							has_character_modifier = expelled_d_knights_calatrava
-						}
-					}
-					AND = {
-						primary_title = { title = d_saint_addai }
-						ROOT = {
-							has_character_modifier = expelled_d_saint_addai
-						}
-					}
-					AND = {
-						primary_title = { title = d_zun_warriors }
-						ROOT = {
-							has_character_modifier = expelled_d_zun_warriors
-						}
-					}
 				}
 			}
 		}
@@ -13413,23 +13284,23 @@ dejure_county_claim = {
 	
 	ai_will_do = { 
 		factor = 1
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 		
 		modifier = {
 			factor = 0 # AIs will not take the last counties off their liege's direct vassals
@@ -13692,126 +13563,6 @@ other_dejure_county_claim = {
 						primary_title = { title = d_knights_templar }
 						ROOT = {
 							has_character_modifier = expelled_d_knights_templar
-						}
-					}
-					AND = {
-						primary_title = { title = d_knights_hospitaler }
-						ROOT = {
-							has_character_modifier = expelled_d_knights_hospitaler
-						}
-					}
-					AND = {
-						primary_title = { title = d_teutonic_order }
-						ROOT = {
-							has_character_modifier = expelled_d_teutonic_order
-						}
-					}
-					AND = {
-						primary_title = { title = d_jomsvikings }
-						ROOT = {
-							has_character_modifier = expelled_d_jomsvikings
-						}
-					}
-					AND = {
-						primary_title = { title = d_hashshashin }
-						ROOT = {
-							has_character_modifier = expelled_d_hashshashin
-						}
-					}
-					AND = {
-						primary_title = { title = d_bektashi }
-						ROOT = {
-							has_character_modifier = expelled_d_bektashi
-						}
-					}
-					AND = {
-						primary_title = { title = d_haruriyyah }
-						ROOT = {
-							has_character_modifier = expelled_d_haruriyyah
-						}
-					}
-					AND = {
-						primary_title = { title = d_holy_sepulchre }
-						ROOT = {
-							has_character_modifier = expelled_d_holy_sepulchre
-						}
-					}
-					AND = {
-						primary_title = { title = d_saint_anthony }
-						ROOT = {
-							has_character_modifier = expelled_d_saint_anthony
-						}
-					}
-					AND = {
-						primary_title = { title = d_immortals }
-						ROOT = {
-							has_character_modifier = expelled_d_immortals
-						}
-					}
-					AND = {
-						primary_title = { title = d_zealots }
-						ROOT = {
-							has_character_modifier = expelled_d_zealots
-						}
-					}
-					AND = {
-						primary_title = { title = d_sky_lords }
-						ROOT = {
-							has_character_modifier = expelled_d_sky_lords
-						}
-					}
-					AND = {
-						primary_title = { title = d_spirit_guardians }
-						ROOT = {
-							has_character_modifier = expelled_d_spirit_guardians
-						}
-					}
-					AND = {
-						primary_title = { title = d_warriors_perun }
-						ROOT = {
-							has_character_modifier = expelled_d_warriors_perun
-						}
-					}
-					AND = {
-						primary_title = { title = d_chosen_perkunas }
-						ROOT = {
-							has_character_modifier = expelled_d_chosen_perkunas
-						}
-					}
-					AND = {
-						primary_title = { title = d_sons_kaleva }
-						ROOT = {
-							has_character_modifier = expelled_d_sons_kaleva
-						}
-					}
-					AND = {
-						primary_title = { title = d_huitzilopochtli }
-						ROOT = {
-							has_character_modifier = expelled_d_huitzilopochtli
-						}
-					}
-					AND = {
-						primary_title = { title = d_knights_santiago }
-						ROOT = {
-							has_character_modifier = expelled_d_knights_santiago
-						}
-					}
-					AND = {
-						primary_title = { title = d_knights_calatrava }
-						ROOT = {
-							has_character_modifier = expelled_d_knights_calatrava
-						}
-					}
-					AND = {
-						primary_title = { title = d_saint_addai }
-						ROOT = {
-							has_character_modifier = expelled_d_saint_addai
-						}
-					}
-					AND = {
-						primary_title = { title = d_zun_warriors }
-						ROOT = {
-							has_character_modifier = expelled_d_zun_warriors
 						}
 					}
 				}
@@ -14241,23 +13992,16 @@ depose_antipope = {
 	can_use = {
 		ROOT = {
 			religion = FROM
-			OR = {
-				religion = catholic
-				religion = fraticelli
-			}
+			religion = catholic
 			rightful_religious_head_scope = {
 				NOT = { has_claim = k_conferentia }
-				NOT = { has_claim = d_cao_dai }
 			}
 			mercenary = no
 		}
 		FROM = {
 			rightful_religious_head_scope = {
 				is_liege_or_above = PREV
-				OR = {
-					has_claim = k_conferentia
-					has_claim = d_cao_dai
-				}
+				has_claim = k_conferentia
 			}
 		}
 	}
@@ -14265,22 +14009,15 @@ depose_antipope = {
 	is_valid = {
 		ROOT = {
 			religion = FROM
-			OR = {
-				religion = catholic
-				religion = fraticelli
-			}
+			religion = catholic
 			rightful_religious_head_scope = {
 				NOT = { has_claim = k_conferentia }
-				NOT = { has_claim = d_cao_dai }
 			}
 		}
 		FROM = {
 			rightful_religious_head_scope = {
 				is_liege_or_above = PREV
-				OR = {
-					has_claim = k_conferentia
-					has_claim = d_cao_dai
-				}
+				has_claim = k_conferentia
 			}
 		}
 	}
@@ -14360,7 +14097,6 @@ depose_antipope = {
 			
 			rightful_religious_head_scope = {
 				remove_claim = k_conferentia
-				remove_claim = d_cao_dai
 			}
 		}
 	}
@@ -14445,10 +14181,7 @@ cb_install_antiking = {
 		ROOT = {
 			vassal_of = FROM
 			religion = FROM
-			OR = {
-				religion = catholic
-				religion = fraticelli
-			}
+			religion = catholic
 		}
 	}
 	
@@ -14462,10 +14195,7 @@ cb_install_antiking = {
 	is_valid = {
 		ROOT = {
 			religion = FROM
-			OR = {
-				religion = catholic
-				religion = fraticelli
-			}
+			religion = catholic
 		}
 		
 		ROOT = {
@@ -14523,19 +14253,6 @@ cb_install_antiking = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					religion = fraticelli
-				}
-				d_cao_dai = {
-					holder_scope = {
-						opinion = {
-							who = ROOT
-							modifier = opinion_deposed_antipope
-						}
-					}
-				}
-			}
 		}
 		
 		FROM = { 
@@ -14545,7 +14262,6 @@ cb_install_antiking = {
 			hidden_tooltip = {
 				rightful_religious_head_scope = {
 					remove_claim = k_conferentia
-					remove_claim = d_cao_dai
 				}
 			}
 			
@@ -15578,23 +15294,23 @@ manifest_destiny_invasion = {
 	
 	ai_will_do = { 
 		factor = 10
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 	}
 }
 
@@ -16297,23 +16013,23 @@ tributary_cb = {
 	ai_will_do = {
 		factor = 1
 		
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 		modifier = {
 			factor = 0.1 # Low prio CB
 		}
@@ -16694,23 +16410,23 @@ free_tributary_cb = {
 		modifier = {
 			factor = 1.5
 		}
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 
 		modifier = {
 			factor = 4
@@ -17014,23 +16730,23 @@ nomad_dispute = {
 	
 	ai_will_do = {
 		factor = 2
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 	}
 	
 }
@@ -17246,23 +16962,23 @@ cb_liberate_nomad_duchy = {
 	
 	ai_will_do = {
 		factor = 1
-		modifier = { #Focus on Coronation first.
-			factor = 0.1
-			has_dlc = "Holy Fury"
-			ROOT = {
-				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
-				NOR = {
-					trait = crowned_by_priest
-					trait = crowned_by_bishop
-					trait = crowned_by_pope
-					trait = crowned_by_myself
-				}
-			}
-		}
+		# modifier = { #Focus on Coronation first.
+			# factor = 0.1
+			# has_dlc = "Holy Fury"
+			# ROOT = {
+				# is_feudal = yes
+				# OR = {
+					# religion = catholic
+					# religion = fraticelli
+				# }
+				# NOR = {
+					# trait = crowned_by_priest
+					# trait = crowned_by_bishop
+					# trait = crowned_by_pope
+					# trait = crowned_by_myself
+				# }
+			# }
+		# }
 		modifier = {
 			factor = 0
 			ROOT = {
