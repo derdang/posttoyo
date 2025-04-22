@@ -1,37 +1,29 @@
 #Thailand
 technology = {
 	titles = {
-		d_chantraburi
 		d_chiang_mai
-		d_chonburi
 		d_khon_kaen
 		d_lampang
 		d_nakhon_ratchasima
-		d_nakhon_sri_thammarat
-		d_pattani
 		d_phayao
 		d_phitsanulok
-		d_phuket
-		d_prachinburi
-		d_songkhla
 		d_sukhothai
 		d_nakhon_phanom
 		d_roi_et
 		d_buriram
 		d_phichit
-		d_surat
 		d_ubon
 		d_udon_thani
 	}
 	2600 = {
-		military = 2.0
-		economy = 2.0
-		culture = 2.0
+		military = 1.5
+		economy = 1.5
+		culture = 1.5
 	}
 	3100 = {
-		military = 5.0
-		economy = 5.0
-		culture = 5.0
+		military = 4.0
+		economy = 4.0
+		culture = 4.0
 	}
 }
 
@@ -64,5 +56,38 @@ technology = {
 		TECH_CITY_CONSTRUCTION = 5
 		TECH_FORTIFICATIONS_CONSTRUCTION = 5
 		TECH_CASTLE_CONSTRUCTION = 5
+	}
+}
+
+#Coastal Southern Thailand
+technology = {
+	titles = {
+		d_chantraburi
+		d_chonburi
+		d_prachinburi
+		d_surat
+		d_nakhon_sri_thammarat
+		d_pattani
+		d_phuket
+		d_songkhla
+	}
+	2600 = {
+		military = 2.0
+		economy = 2.0
+		culture = 2.0
+
+		TECH_TRADE_PRACTICES = 2.5
+		TECH_CITY_CONSTRUCTION = 2.5
+		TECH_NAVAL = 2.5
+
+	}
+	3100 = {
+		military = 4.0
+		economy = 4.0
+		culture = 4.0
+		
+		TECH_TRADE_PRACTICES = 4.5
+		TECH_CITY_CONSTRUCTION = 4.5
+		TECH_NAVAL = 4.5
 	}
 }
