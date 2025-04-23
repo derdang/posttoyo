@@ -1814,7 +1814,6 @@ bureaucratic_elective = {
 			#	religion = zoroastrian
 			#	religion = messalian
 				has_religion_feature = religion_holy_family 
-				has_religion_feature = religion_feature_zun
 			} 
 			OR = { 
 				AND = { 
@@ -3166,9 +3165,7 @@ bureaucratic_elective = {
 				}
 				religion = ROOT
 			}
-			OR = { #Must maintain bureaucracy on succession
-				is_bureaucratic_religion = yes
-			}
+			is_bureaucratic_religion = yes #Must maintain bureaucracy on succession
 			NOR = {
 				#mother = {		# Uncommenting this condition provokes that a ruler's son is not a valid candidate if the mother is married to the ruler and a candidate
 				#	is_alive = yes

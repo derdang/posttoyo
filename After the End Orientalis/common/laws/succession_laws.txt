@@ -959,28 +959,17 @@ succession_laws = {
 		}			
 	}
 	
-	succ_dynastic_meritocratic = {
+	succ_bureaucratic_elective = {
+		oldest_child_opinion = -5
+		child_opinion = -5
+		dynasty_opinion = -5
+		feudal_opinion = 5
 		potential = {
 			holder_scope = {
 				OR = {
 					government = bureaucratic_government
 					government = chinese_imperial_government
 				}
-				is_merchant_republic = no
-				is_patrician = no
-				OR = {
-					independent = yes
-					NOT = {
-						any_demesne_title = {
-							is_vice_royalty = yes
-						}
-					}
-				}
-			}
-			OR = {
-				is_landless_type_title = no
-				is_tribal_type_title = yes
-				temporary = yes
 			}
 			NOT = { holder_scope = { government = malaysian_confederacy } }
 			NOT = { holder_scope = { government = confederation_government } }
@@ -999,13 +988,11 @@ succession_laws = {
 		}
 		effect = {
 			succession = {
-				base_type = tanistry
-				voting_rules = byzantine_elective_2
+				base_type = feudal_elective
+				voting_rules = bureaucratic_elective
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}			
+		
 	}
 
 	succ_tanistry = {
