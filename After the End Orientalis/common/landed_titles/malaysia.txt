@@ -21,7 +21,13 @@ e_malaysia = {
 			c_kuala_lumpur = { # 337
 				color={ 255 162 75 }
 				color2={ 255 255 255 }
-				holy_site = sunni
+				
+				holy_site = renewalist
+				holy_site = nusantara
+				holy_site = kebatinan
+				holy_site = salafi
+				holy_site = shiite
+				
 				b_istana_negara = {}
 				b_petaling_jaya = {}
 				b_masjid_negara = {}
@@ -324,16 +330,21 @@ e_malaysia = {
 			
 			thai_central = "Malaka"
 			thai_isan = "Malaka"
+			
 			c_melaka = { # 354
 				color={ 138 75 88 }
 				color2={ 255 255 255 }
+				
 				thai_central = "Malaka"
 				thai_isan = "Malaka"
+				
 				holy_site = quinto
+				holy_site = nusantara
+				holy_site = kebatinan
 				
 				b_melaka = {
-				thai_central = "Malaka"
-				thai_isan = "Malaka"
+					thai_central = "Malaka"
+					thai_isan = "Malaka"
 				}
 				b_ayer_keroh = {}
 				b_masjid_al_azim = {}
@@ -575,7 +586,9 @@ e_malaysia = {
 				color2={ 255 255 255 }
 				thai_central = "Trangganu"
 				thai_isan = "Trangganu"
-				holy_site = sunni
+				
+				holy_site = salafi
+				
 				b_istana_maziah = {}
 				b_kuala_terengganu = {}
 				b_masjid_abidin = {}
@@ -706,6 +719,9 @@ e_malaysia = {
 			c_kota_setar = { # 367
 				color={ 106 172 84 }
 				color2={ 255 255 255 }
+				
+				holy_site = renewalist
+				holy_site = shiite
 				
 				b_anak_bukit = {}
 				b_alor_setar = {}
