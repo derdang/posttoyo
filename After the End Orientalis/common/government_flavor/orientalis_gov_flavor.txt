@@ -9,6 +9,15 @@ government_flavor = {
 	}
 }
 government_flavor = {
+	name = gov_elective_singapore_republic
+	graphics = GFX_great_asian_trade
+	priority = 2
+	trigger = {
+		government = merchant_republic_government
+		has_landed_title = k_singapore
+	}
+}
+government_flavor = {
 	name = gov_mandala_noble_state
 	graphics = GFX_evt_white_elephant
 	priority = 2
