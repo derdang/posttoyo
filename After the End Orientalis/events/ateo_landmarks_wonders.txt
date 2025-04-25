@@ -69,6 +69,27 @@ character_event = {
 		976 = {
 			add_province_modifier = { name = landmark_nan_madol duration  = -1 }
 		}
+	
+	#Indonesia
+		445 = {
+			add_province_modifier = { name = landmark_old_city_of_jakarta duration  = -1 }
+		}
+		453 = {
+			add_province_modifier = { name = landmark_prambanan duration  = -1 }
+		}
+	
+	#Cambodia
+		328 = {
+			add_province_modifier = { name = landmark_angkor_wat duration  = -1 }
+		}
+		
+	#Russia
+		2167 = {
+			add_province_modifier = { name = landmark_lena_pillars duration  = -1 }
+		}
+		2105 = {
+			add_province_modifier = { name = landmark_valley_of_geysers duration  = -1 }
+		}
 		set_global_flag = landmarks_set
 	}
 }
