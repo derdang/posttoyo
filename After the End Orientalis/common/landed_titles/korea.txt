@@ -89,7 +89,7 @@ e_korea = {
 			color={ 89 250 61 }
 			color2={ 255 255 255 }
 			
-			capital = 740 # c_sinpo
+			capital = 742 # c_wonsan
 			
 			c_sinpo = { # 740
 				color={ 79 4 56 }
@@ -145,13 +145,13 @@ e_korea = {
 		color={ 161 224 72 }
 		color2={ 255 255 255 }
 		
-		capital = 773 # c_yeongju
+		capital = 775 # c_pusan
 		
 		d_taegu = {
 			color={ 181 204 82 }
 			color2={ 255 255 255 }
 			
-			capital = 773 # c_yeongju
+			capital = 774 # c_taegu
 			
 			c_yeongju = { # 773
 				color={ 191 194 87 }
@@ -171,6 +171,7 @@ e_korea = {
 				
 				holy_site = muist
 				holy_site = muist_reformed
+				holy_site = cheondoist
 				
 				b_taegu = {}
 				b_pohang = {}
@@ -232,7 +233,7 @@ e_korea = {
 		color={ 43 144 164 }
 		color2={ 255 255 255 }
 		
-		capital = 744 # c_kanggye
+		capital = 751 # c_pyongyang
 		
 		chosunin = "Go-Choson"
 		
@@ -257,7 +258,9 @@ e_korea = {
 			c_chongju = { # 747
 				color={ 88 202 185 }
 				color2={ 255 255 255 }
+				
 				holy_site = unificationist
+				holy_site = cheondoist
 				
 				b_chongju = {}
 				b_sonchon = {}
@@ -296,7 +299,7 @@ e_korea = {
 			color={ 19 106 104 }
 			color2={ 255 255 255 }
 			
-			capital = 753 # c_sariwon
+			capital = 755 # c_hwanghae
 			
 			c_sariwon = { # 753
 				color={ 9 116 99 }
@@ -351,7 +354,7 @@ e_korea = {
 			color={ 18 49 56 }
 			color2={ 255 255 255 }
 			
-			capital = 748 # c_kaechon
+			capital = 751 # c_pyongyang
 			
 			c_kaechon = { # 748
 				color={ 8 59 51 }
@@ -383,9 +386,6 @@ e_korea = {
 				
 				holy_site = concordanist
 				holy_site = unificationist
-				holy_site = yuilsasang
-				holy_site = muist
-				holy_site = muist_reformed
 				
 				b_hoechang = {}
 				b_sunchon = {}
@@ -398,7 +398,12 @@ e_korea = {
 			c_pyongyang = { # 751
 				color={ 93 171 159 }
 				color2={ 255 255 255 }
+				
 				holy_site = unificationist
+				holy_site = yuilsasang
+				holy_site = muist
+				holy_site = muist_reformed
+				holy_site = cheondoist
 				
 				b_kumsusan = {}
 				b_moranbong = {}
@@ -426,7 +431,7 @@ e_korea = {
 		color={ 90 222 98 }
 		color2={ 255 255 255 }
 		
-		capital = 757 # c_inchon
+		capital = 758 # c_seoul
 		
 		d_seoul = {
 			color={ 110 202 108 }
@@ -437,8 +442,6 @@ e_korea = {
 			c_inchon = { # 757
 				color={ 120 192 113 }
 				color2={ 255 255 255 }
-				
-				holy_site = mormon
 				
 				b_namdong = {}
 				b_bupyeong = {}
@@ -467,6 +470,7 @@ e_korea = {
 				holy_site = unificationist
 				holy_site = muist
 				holy_site = muist_reformed
+				holy_site = mormon
 				
 				b_yongsan = {}
 				b_gangnam = {}
@@ -618,6 +622,8 @@ e_korea = {
 			c_jeonju = { # 767
 				color={ 44 93 39 }
 				color2={ 255 255 255 }
+				
+				holy_site = cheondoist
 				
 				b_jeonju = {}
 				b_iksan = {}
