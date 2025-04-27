@@ -159,10 +159,22 @@
 	trait=proud
 	2578.1.1={birth=yes}
 }
+1957107={
+	name="Mutahir"
+	dynasty=1382001 #Abdullah
+	culture=tamil
+	religion=renewalist
+	trait=charismatic_negotiator
+	trait=mystic
+	trait=patient
+	trait=proud
+	trait=poet
+	2580.1.1={birth=yes}
+}
 #--
 1957120={
 	name="Musa"
-	dynasty=1957802 #Klang
+	dynasty=1957801 #Celak
 	culture=melayu
 	religion=renewalist
 	martial=2
@@ -326,8 +338,8 @@
 }
 #Kedah + Perlis
 1957300={
-	name="Mahmud"
-	dynasty=1957803 #Kedah
+	name="Abdullah"
+	dynasty=1957802 #Mahawangsa
 	culture=melayu
 	religion=renewalist
 	martial=4
@@ -343,6 +355,7 @@
 	trait=patient
 	trait=proud
 	trait=just
+	father=1957301
 	2574.1.1={birth=yes}
 	2600.1.1={
 		effect = {
@@ -350,9 +363,30 @@
 		}
 	}
 }
+1957301={
+	name="Abdullah"
+	dynasty=1957802 #Mahawangsa
+	culture=melayu
+	religion=renewalist
+	martial=4
+	diplomacy=3
+	stewardship=4
+	intrigue=1
+	learning=5
+	trait=martial_cleric
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2549.1.1={birth=yes}
+	2590.1.1={death=yes}
+}
 1957340={
 	name="Ismail"
-	dynasty=1957804 #Perlis
+	dynasty=1957802 #Mahawangsa
 	culture=melayu
 	religion=renewalist
 	martial=6
@@ -368,12 +402,13 @@
 	trait=patient
 	trait=proud
 	trait=just
+	father=1957301
 	2575.1.1={birth=yes}
 }
 #Johor
 1957400= {
-	name="Ibrahim"
-	dynasty=1957805 #Johor
+	name="Tunku"
+	dynasty=1957803 #Temenggong
 	culture=melayu
 	religion=renewalist
 	martial=6
@@ -408,7 +443,7 @@
 }
 1957450= { #d_melaka
 	name="Jaafar"
-	dynasty=1957805 #Johor
+	dynasty=1957803 #Temenggong
 	culture=melayu
 	religion=renewalist
 	martial=5
@@ -433,8 +468,8 @@
 }
 
 1957500={ #Pahang
-	name="Ali"
-	dynasty=1957806 #Pahang
+	name="Muzaffar"
+	dynasty=1957804 #Bendahara
 	culture=melayu
 	religion=renewalist
 	martial=5
@@ -450,12 +485,34 @@
 	trait=patient
 	trait=proud
 	trait=just
+	father=1957501
 	2574.1.1={birth=yes}
 	2600.1.1={
 		effect = {
 			give_minor_title = title_confederation_diet_member
 		}
 	}
+}
+1957501={ #Father of the Sultans of Pahang and Terengganu
+	name="Sulaiman"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=grey_eminence
+	trait=shrewd
+	trait=groomed
+	trait=strong
+	trait=diligent
+	trait=patient
+	trait=proud
+	trait=just
+	2550.1.1={birth=yes}
+	2592.1.1={death=yes}
 }
 1957550={ #Bentong benchwarmer
 	name="Abdul"
@@ -577,8 +634,8 @@
 ## k_kelantan
 #Kelantan
 1959100={
-	name="Yunus"
-	dynasty=1959000 #Long
+	name="Yahya Petra"
+	dynasty=1959030 #Long Yunus
 	culture=kelantanese
 	religion=renewalist
 	martial=5
@@ -613,9 +670,9 @@
 	2583.1.1={birth=yes}
 }
 1959200={ #Terengganu
-	name="Ahmad Shah"
-	dynasty=1959003 #Zainal
-	culture=kelantanese
+	name="Omar Riayat"
+	dynasty=1957804 #Bendahara
+	culture=melayu
 	religion=salafi
 	martial=5
 	diplomacy=3
@@ -630,6 +687,7 @@
 	trait=patient
 	trait=proud
 	trait=just
+	father=1957501
 	2574.1.1={birth=yes}
 }
 ####SARAWAK and BRUNEI

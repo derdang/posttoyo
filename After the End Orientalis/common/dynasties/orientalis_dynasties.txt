@@ -3165,6 +3165,7 @@ coat_of_arms = {
 1381000 = { name="Hengki" culture=tomun religion = kaharingan}
 
 1382000 = { name="Pillay" culture=tamil religion = vaishnava}
+1382001 = { name="Abdullah" culture=tamil religion = renewalist}
 
 1550000 = { name="Zin" culture=myr }
 1550001 = { name="Aung" culture=myr }
@@ -11899,14 +11900,63 @@ coat_of_arms = {
 
 #penang MR dyns
 
-#Placeholder historical dyns
-1957801 = { name="Celak" culture=melayu used_for_random=no}
-1957802 = { name="Klang" culture=melayu used_for_random=no}
-1957803 = { name="Kedah" culture=melayu used_for_random=no}
-1957804 = { name="Perlis" culture=melayu used_for_random=no}
-1957805 = { name="Johor" culture=melayu used_for_random=no}
-#Kelantan and Terrenganu used seperate list
-1957806 = { name="Pahang" culture=melayu used_for_random=no}
+#Malaysian Historical Dynasty References
+1957801 = { name="Celak" culture=melayu
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 44
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1957802 = { name="Mahawangsa" culture=melayu
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1957803 = { name="Temenggong" culture=melayu
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 46
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1957804 = { name="Bendahara" culture=melayu
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 47
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1958000 = { name="Tedja" culture=singaporean }
 1958001 = { name="Latipah" culture=singaporean }
@@ -12084,6 +12134,20 @@ coat_of_arms = {
 1959027 = { name="Bahar" culture=kelantanese }
 1959028 = { name="Sulaiman" culture=kelantanese }
 1959029 = { name="Sakti" culture=kelantanese }
+1959030 = { name="Long Yunus" culture=kelantanese
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 48
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1960000 = { name="Samudra" culture=acehnese }
 1960001 = { name="Meukuta Alam" culture=acehnese }
