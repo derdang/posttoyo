@@ -727,14 +727,6 @@ feudal_governments = {
                 primary_title = {
                     has_law = succ_confederation_elective
                 }
-                top_liege = {
-                    government = malaysian_confederacy
-                    OR = {
-                    tier = DUKE
-                    tier = KING
-                    tier = EMPEROR
-                    }
-                }
 				primary_title = {
 					title = e_malaysia
 				}
