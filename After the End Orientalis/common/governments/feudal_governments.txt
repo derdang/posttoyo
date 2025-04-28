@@ -272,7 +272,6 @@ feudal_governments = {
 		frame_suffix = "_merchantrepublic"
 		title_prefix = "confederation_"
 		potential = {
-			NOT = { is_government_potential = malaysian_confederacy }
 			higher_tier_than = BARON
 			OR = {
 				AND = {
@@ -723,15 +722,10 @@ feudal_governments = {
 		}
 		frame_suffix = "_malaysia"
 		potential = {
-            OR = {
-                primary_title = {
-                    has_law = succ_confederation_elective
-                }
-				primary_title = {
-					title = e_malaysia
-				}
-            }
-			higher_tier_than = BARON
+            primary_title = {
+				title = e_malaysia
+			}
+			higher_tier_than = KING
 		}
 		
 		color = { 16 0 106 }
