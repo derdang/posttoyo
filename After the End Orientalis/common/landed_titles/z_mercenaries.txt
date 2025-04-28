@@ -1123,3 +1123,153 @@ d_bullys_buccaneers = {
 	
 	mercenary_type = d_bullys_buccaneers_composition
 }
+d_selangor_red_giant = {
+	color={ 237 28 36 }
+	color2={ 255 255 255 }
+		
+	capital = 337 # c_kuala_lumpur
+
+	culture = melayu
+	religion = renewalist
+	
+	allow = {
+		culture_group = malayan
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_selangor_red_giant_composition
+}
+d_penang_black_panther = {
+	color={ 0 0 0 }
+	color2={ 255 255 255 }
+		
+	capital = 363 # c_george_town
+
+	culture = melayu
+	religion = renewalist
+	
+	allow = {
+		culture_group = malayan
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_penang_black_panther_composition
+}
+d_johor_southern_tigers = {
+	color={ 47 53 146 }
+	color2={ 255 255 255 }
+		
+	capital = 347 # c_johor_bahru
+
+	culture = melayu
+	religion = renewalist
+	
+	allow = {
+		culture_group = malayan
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_johor_southern_tigers_composition
+}
+d_kelantan_red_warrior = {
+	color={ 237 28 36 }
+	color2={ 255 255 255 }
+		
+	capital = 373 # c_kota_bharu
+
+	culture = kelantanese
+	religion = renewalist
+	
+	allow = {
+		culture_group = malayan
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_kelantan_red_warrior_composition
+}
+d_sarawak_crocs = {
+	color={ 2 3 25 }
+	color2={ 255 255 255 }
+		
+	capital = 606 # c_kuching
+
+	culture = sarawak
+	religion = renewalist
+	
+	allow = {
+		culture_group = malayan
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_sarawak_crocs_composition
+}
+d_sabah_rhinos = {
+	color={ 110 28 177 }
+	color2={ 255 255 255 }
+		
+	capital = 628 # c_kota_kinabalu
+
+	culture = sabahan
+	religion = renewalist
+	
+	allow = {
+		culture_group = malayan
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_sabah_rhinos_composition
+}
