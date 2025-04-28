@@ -41,14 +41,12 @@ succession_laws = {
 	succ_confederation_elective = {
 		potential = {
 			holder_scope = {
-				government = malaysian_confederacy
-				is_nomadic = no
-				is_merchant_republic = no
-				is_patrician = no
+				government = confederation_government
 			}
 			#is_primary_type_title = no
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
+			NOT = { holder_scope = { government = malaysian_confederacy } }
 
 		}
 		default_selection = {
@@ -58,7 +56,7 @@ succession_laws = {
 				factor = 0
 				NOT = {
 					holder_scope = {
-						government = malaysian_confederacy
+						government = confederation_government
 					}
 				}
 			}
@@ -66,7 +64,7 @@ succession_laws = {
 			modifier = {
 				factor = 100
 				holder_scope = {
-					government = malaysian_confederacy
+					government = confederation_government
 				}
 			}
 		}

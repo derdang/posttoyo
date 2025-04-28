@@ -8,64 +8,6 @@
 
 namespace = gov
 
-#add diet member status
-character_event = {
-	id = gov.001
-	hide_window = yes
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	trigger = {
-		OR = {
-			liege = { government = confederation_government }
-			liege = { government = malaysian_confederacy }
-		}
-		NOT = { has_minor_title = title_confederation_diet_member }
-		has_regent = no
-		#is_councillor = no
-		higher_real_tier_than = BARON
-		#NOT = { has_minor_title = title_regent }
-		#NOT = { has_minor_title = title_councilmember_king }
-		#NOT = { has_minor_title = title_councilmember_emperor }
-	}
-	
-	immediate = {
-		give_minor_title = title_confederation_diet_member
-	}
-}
-
-#remove diet member status
-character_event = {
-	id = gov.002
-	hide_window = yes
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	trigger = {
-		has_minor_title = title_confederation_diet_member
-		OR = {
-			NOT = { liege = { government = confederation_government } }
-			NOT = { liege = { government = malaysian_confederacy } }
-			has_regent = yes
-			#is_councillor = yes
-			NOT = { higher_real_tier_than = BARON }
-			#OR = {
-			#	has_minor_title = title_regent
-			#	has_minor_title = title_councilmember_king
-			#	has_minor_title = title_councilmember_emperor
-			#}
-		}
-	}
-	
-	immediate = {
-		remove_title = title_confederation_diet_member
-	}
-}
-
 #set succession law (bureaucratic)
 character_event = {
 	id = gov.003
@@ -87,7 +29,7 @@ character_event = {
 			}
 			AND = {
 				government = malaysian_confederacy
-				NOT = { has_law = succ_confederation_elective }
+				NOT = { has_law = succ_malaysian_elective }
 			}
 		}
 	}
@@ -103,7 +45,7 @@ character_event = {
 		}
 		if = {
 			limit = { government = malaysian_confederacy }
-			primary_title = { add_law = { law = succ_confederation_elective opinion_effect = no } }
+			primary_title = { add_law = { law = succ_malaysian_elective opinion_effect = no } }
 		}
 	}
 }
