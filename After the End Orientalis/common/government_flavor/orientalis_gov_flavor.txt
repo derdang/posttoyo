@@ -8,6 +8,14 @@ government_flavor = {
 	}
 }
 government_flavor = {
+	name = gov_free_league
+	graphics = GFX_east_asian_cities
+	priority = 2
+	trigger = {
+		government = confederation_government
+	}
+}
+government_flavor = {
 	name = gov_elective_singapore_republic
 	graphics = GFX_great_asian_trade
 	priority = 2

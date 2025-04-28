@@ -14,6 +14,7 @@ succession_laws = {
 			}
 			NOT = { holder_scope = { government = confucian_bureaucracy } }
 			NOT = { holder_scope = { government = chinese_imperial_government } }
+			NOT = { holder_scope = { government = malaysian_confederacy } }
 
 		}
 		allow = {
@@ -122,5 +123,42 @@ succession_laws = {
 		revoke_allowed = {
 			always = no
 		}
+	}
+	succ_malaysian_elective = {
+		oldest_child_opinion = -15
+		child_opinion = -5
+		dynasty_opinion = -5
+		vassal_opinion = 15
+		vassal_limit = 20
+		potential = {
+			holder_scope = {
+				OR = {
+					title = e_malaysia #title-bounded
+					government = malaysian_confederacy
+				}
+			}
+			NOT = { holder_scope = { government = confucian_bureaucracy } }
+			NOT = { holder_scope = { government = chinese_imperial_government } }
+			NOT =  { holder_scope = { government = ghazi_government } }
+			NOT =  { holder_scope = { government = diwan_government } }
+
+		}
+		allow = {
+			custom_tooltip = {
+				text = not_forced_tt
+				hidden_tooltip = {
+					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+				}
+			}
+		}
+		effect = {
+			succession = {
+				base_type = feudal_elective
+				voting_rules = malaysian_elective
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}		
 	}
 }

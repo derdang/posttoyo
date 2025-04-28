@@ -86,9 +86,6 @@ succession_laws = {
 			NOT = { 
 				has_law = succ_byzantine_elective 
 			}
-			NOT = { 
-				has_law = succ_hre_elective 
-			}
 			holder_scope = {
 				OR = {
 					independent = yes
@@ -195,6 +192,7 @@ succession_laws = {
 						}
 					}
 				}
+				NOT = { religion_group = muslim }
 				is_merchant_republic = no
 				is_patrician = no
 				OR = {
@@ -452,7 +450,6 @@ succession_laws = {
 			conditional_tooltip = {
 				trigger = {
 					NOT = { has_dlc = "Conclave" }
-					NOT = { has_law = succ_hre_elective }
 				}
 				OR = {
 					hidden_tooltip = {
@@ -548,7 +545,6 @@ succession_laws = {
 						OR = {
 							NOT = { religion_group = pagan_group }
 							is_reformed_religion = yes
-							religion = hellenic_pagan
 						}
 					}
 					OR = {
@@ -598,7 +594,6 @@ succession_laws = {
 			conditional_tooltip = {
 				trigger = {
 					NOT = { has_dlc = "Conclave" }
-					NOT = { has_law = succ_hre_elective }
 				}
 				OR = {
 					holder_scope = { # Viceroyalties can always have primogeniture if not muslim
@@ -669,17 +664,10 @@ succession_laws = {
 					}
 				}
 				OR = {
-					NOR = { 
-						religion_group = muslim
-						religion_group = indian_group
-					}
 					has_law = succession_voting_power_1
 					OR = { 
 						has_law = succ_feudal_elective # Keep it even if you revoke Full Council Authority
 					} 
-					ROOT = {
-						has_title_flag = alternate_hre
-					}
 				}
 				is_merchant_republic = no
 				is_patrician = no
@@ -731,78 +719,6 @@ succession_laws = {
 			succession = {
 				base_type = feudal_elective
 				voting_rules = feudal_elective
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}			
-	}
-	succ_malaysian_elective = {
-		oldest_child_opinion = -15
-		child_opinion = -5
-		dynasty_opinion = -5
-		vassal_opinion = 15
-		vassal_limit = 20
-		potential = {
-			title = e_malaysia #Title-bound.
-			holder_scope = {
-				OR = {
-					independent = yes
-					NOT = {
-						any_liege = {
-							holy_order = yes
-						}
-					}
-				}
-				OR = {
-					independent = yes
-					NOT = {
-						any_demesne_title = {
-							is_vice_royalty = yes
-						}
-					}
-				}
-			}
-			OR = {
-				is_landless_type_title = no
-				is_tribal_type_title = yes
-				temporary = yes
-			}
-			is_primary_type_title = no
-			NOT = { tier = baron }
-			NOT = { holder_scope = { government = chinese_imperial_government } }
-		}
-		default_selection = {
-			factor = 1
-			
-			modifier = {
-				factor = 0
-				NOT = {
-					holder_scope = {
-						government = malaysian_confederacy
-					}
-				}
-			}
-			
-			modifier = {
-				factor = 100
-				holder_scope = {
-					government = malaysian_confederacy
-				}
-			}
-		}
-		allow = {
-			custom_tooltip = {
-				text = not_forced_tt
-				hidden_tooltip = {
-					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
-				}
-			}
-		}
-		effect = {
-			succession = {
-				base_type = feudal_elective
-				voting_rules = malaysian_feudal_elective
 			}
 		}
 		revoke_allowed = {
@@ -895,7 +811,6 @@ succession_laws = {
 				is_merchant_republic = no
 				is_patrician = no
 				OR = {
-					culture_group = celtic
 					any_owned_bloodline = {
 						has_bloodline_flag = bloodline_tanistry
 					}
@@ -919,7 +834,6 @@ succession_laws = {
 			OR = {
 				holder_scope = {
 					OR = {
-						culture_group = celtic
 						any_owned_bloodline = {
 							has_bloodline_flag = bloodline_tanistry
 						}
@@ -956,31 +870,10 @@ succession_laws = {
 							has_law = succession_voting_power_1
 							OR = { 
 								has_law = succ_feudal_elective 
-								has_law = succ_hre_elective
 							}
 						}
 					}
 				}
-			}
-			conditional_tooltip = {
-				trigger = {
-					has_law = succ_hre_elective
-					has_dlc = "Conclave"
-				}
-				has_law = law_voting_power_0
-			}
-			conditional_tooltip = {
-				trigger = {
-					has_law = succ_hre_elective
-					NOT = { has_dlc = "Conclave" }
-				}
-				has_law = crown_authority_4
-			}
-			conditional_tooltip = {
-				trigger = {
-					has_law = succ_hre_elective
-				}
-				has_law = centralization_4
 			}
 		}
 		effect = {
@@ -1067,7 +960,6 @@ succession_laws = {
 			conditional_tooltip = {
 				trigger = {
 					NOT = { has_dlc = "Conclave" }
-					NOT = { has_law = succ_hre_elective }
 				}
 				OR = {
 					hidden_tooltip = {
@@ -1100,31 +992,10 @@ succession_laws = {
 							has_law = succession_voting_power_1
 							OR = { 
 								has_law = succ_feudal_elective 
-								has_law = succ_hre_elective
 							}
 						}
 					}
 				}
-			}
-			conditional_tooltip = {
-				trigger = {
-					has_law = succ_hre_elective
-					has_dlc = "Conclave"
-				}
-				has_law = law_voting_power_0
-			}
-			conditional_tooltip = {
-				trigger = {
-					has_law = succ_hre_elective
-					NOT = { has_dlc = "Conclave" }
-				}
-				has_law = crown_authority_4
-			}
-			conditional_tooltip = {
-				trigger = {
-					has_law = succ_hre_elective
-				}
-				has_law = centralization_4
 			}
 		}
 		
@@ -1189,7 +1060,6 @@ succession_laws = {
 				has_law = succession_voting_power_1
 				OR = { 
 					has_law = succ_feudal_elective 
-					has_law = succ_hre_elective
 				}
 			}
 		}
@@ -1306,7 +1176,6 @@ succession_laws = {
 				has_law = succession_voting_power_1
 				OR = { 
 					has_law = succ_feudal_elective 
-					has_law = succ_hre_elective
 				}
 			}
 			NOR = {
