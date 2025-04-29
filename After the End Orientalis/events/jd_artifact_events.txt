@@ -762,7 +762,7 @@ character_event = {
 			5 = { 
 				modifier = {
 					factor = 0
-					has_artifact = jade_dragon
+					has_artifact = brass_elephant
 				}
 				modifier = {
 					factor = 3
@@ -772,7 +772,7 @@ character_event = {
 					factor = 0.3
 					has_character_flag = chinese_envoy_trade_dislike
 				}
-				add_artifact = jade_dragon
+				add_artifact = brass_elephant
 				new_artifact = {
 					save_event_target_as = chinese_envoy_artifact
 				}
@@ -780,7 +780,7 @@ character_event = {
 			15 = { 
 				modifier = {
 					factor = 0
-					has_artifact = chinese_dragon_amulet
+					has_artifact = indian_rani_haar
 				}
 				modifier = {
 					factor = 3
@@ -790,7 +790,7 @@ character_event = {
 					factor = 0.3
 					has_character_flag = chinese_envoy_trade_dislike
 				}
-				add_artifact = chinese_dragon_amulet
+				add_artifact = indian_rani_haar
 				new_artifact = {
 					save_event_target_as = chinese_envoy_artifact
 				}
@@ -798,52 +798,52 @@ character_event = {
 			40 = {
 				modifier = {
 					factor = 0
-					has_artifact = chinese_artwork
+					has_artifact = indian_artwork
 				}
 				modifier = {
 					factor = 0.3
 					has_character_flag = chinese_envoy_trade_like
 				}
-				add_artifact = chinese_artwork
+				add_artifact = indian_artwork
 				new_artifact = {
-					set_name="chinese_artwork_name"
+					set_name="indian_artwork_name"
 					save_event_target_as = chinese_envoy_artifact
 				}
 			}
 			40 = { 
 				modifier = {
 					factor = 0
-					has_artifact = chinese_calligraphy
+					has_artifact = indian_poetry
 				}
 				modifier = {
 					factor = 0.3
 					has_character_flag = chinese_envoy_trade_like
 				}
-				add_artifact = chinese_calligraphy
+				add_artifact = indian_poetry
 				new_artifact = {
-					set_name="chinese_calligraphy_name"
+					set_name="indian_poetry_name"
 					save_event_target_as = chinese_envoy_artifact
 				}
 			}
 			40 = { 
 				modifier = {
 					factor = 0
-					has_artifact = chinese_sculpture
+					has_artifact = indian_sculpture
 				}
 				modifier = {
 					factor = 0.3
 					has_character_flag = chinese_envoy_trade_like
 				}
-				add_artifact = chinese_sculpture
+				add_artifact = indian_sculpture
 				new_artifact = {
-					set_name="chinese_sculpture_name"
+					set_name="indian_sculpture_name"
 					save_event_target_as = chinese_envoy_artifact
 				}
 			}
-			20 = { 
+			20 = { #Sari and Dhoti
 				modifier = {
 					factor = 0
-					has_artifact = chinese_ceremonial_robes
+					has_artifact = indian_ceremonial_robes
 				}
 				modifier = {
 					factor = 3
@@ -853,7 +853,7 @@ character_event = {
 					factor = 0.3
 					has_character_flag = chinese_envoy_trade_dislike
 				}
-				add_artifact = chinese_ceremonial_robes
+				add_artifact = indian_ceremonial_robes
 				new_artifact = {
 					save_event_target_as = chinese_envoy_artifact
 				}
@@ -861,30 +861,30 @@ character_event = {
 			20 = { 
 				trigger = { 
 					has_character_flag = chinese_envoy_trade_like
-					NOT = { martial <= 10 }
+					NOT = { learning <= 10 }
 					FROMFROM = { has_character_flag = chinese_envoy_warrior }
 				}
 				modifier = {
 					factor = 0.1
-					has_artifact = art_of_war
+					has_artifact = samhita
 				}
 				modifier = {
 					factor = 2
-					martial = 14
+					learning = 14
 				}
 				modifier = {
 					factor = 2
-					martial = 18
+					learning = 18
 				}
 				modifier = {
 					factor = 2
-					martial = 22
+					learning = 22
 				}
 				modifier = {
 					factor = 2
-					martial = 24
+					learning = 24
 				}
-				add_artifact = art_of_war
+				add_artifact = samhita
 				new_artifact = {
 					save_event_target_as = chinese_envoy_artifact
 				}
@@ -910,7 +910,7 @@ character_event = {
 			15 = { 
 				modifier = {
 					factor = 0
-					has_artifact = water_clock
+					has_artifact = charkha
 				}
 				modifier = {
 					factor = 3
@@ -920,7 +920,7 @@ character_event = {
 					factor = 0.3
 					has_character_flag = chinese_envoy_trade_dislike
 				}
-				add_artifact = water_clock
+				add_artifact = charkha
 				new_artifact = {
 					save_event_target_as = chinese_envoy_artifact
 				}
@@ -928,7 +928,7 @@ character_event = {
 			15 = { 
 				modifier = {
 					factor = 0
-					has_artifact = jian_sword
+					has_artifact = kirpan
 				}
 				modifier = {
 					factor = 3
@@ -938,7 +938,7 @@ character_event = {
 					factor = 0.3
 					has_character_flag = chinese_envoy_trade_dislike
 				}
-				add_artifact = jian_sword
+				add_artifact = kirpan
 				new_artifact = {
 					save_event_target_as = chinese_envoy_artifact
 				}
@@ -946,7 +946,7 @@ character_event = {
 			10 = { 
 				modifier = {
 					factor = 0
-					has_artifact = classic_of_poetry
+					has_artifact = indian_spices
 				}
 				modifier = {
 					factor = 3
@@ -956,15 +956,15 @@ character_event = {
 					factor = 0.3
 					has_character_flag = chinese_envoy_trade_dislike
 				}
-				add_artifact = classic_of_poetry
+				add_artifact = indian_spices
 				new_artifact = {
 					save_event_target_as = chinese_envoy_artifact
 				}
 			}
 			1 = {
-				add_artifact = chinese_prev_emperor_sculpture
+				add_artifact = indian_prev_emperor_sculpture
 				new_artifact = {
-					set_name="chinese_figurine_name"
+					set_name="indian_figurine_name"
 					save_event_target_as = chinese_envoy_artifact
 				}
 			}
@@ -1035,9 +1035,9 @@ character_event = {
 					5 = { 
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = jade_dragon }
+							ROOT = { has_artifact = brass_elephant }
 						}
-						add_artifact = jade_dragon
+						add_artifact = brass_elephant
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV
@@ -1049,9 +1049,9 @@ character_event = {
 					15 = { 
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = chinese_dragon_amulet }
+							ROOT = { has_artifact = indian_rani_haar }
 						}
-						add_artifact = chinese_dragon_amulet
+						add_artifact = indian_rani_haar
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV
@@ -1063,9 +1063,9 @@ character_event = {
 					40 = {
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = chinese_artwork }
+							ROOT = { has_artifact = indian_artwork }
 						}
-						add_artifact = chinese_artwork
+						add_artifact = indian_artwork
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV
@@ -1077,9 +1077,9 @@ character_event = {
 					40 = { 
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = chinese_calligraphy }
+							ROOT = { has_artifact = indian_poetry }
 						}
-						add_artifact = chinese_calligraphy
+						add_artifact = indian_poetry
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV
@@ -1091,9 +1091,9 @@ character_event = {
 					40 = { 
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = chinese_sculpture }
+							ROOT = { has_artifact = indian_sculpture }
 						}
-						add_artifact = chinese_sculpture
+						add_artifact = indian_sculpture
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV
@@ -1105,9 +1105,9 @@ character_event = {
 					20 = { 
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = chinese_ceremonial_robes }
+							ROOT = { has_artifact = indian_ceremonial_robes }
 						}
-						add_artifact = chinese_ceremonial_robes
+						add_artifact = indian_ceremonial_robes
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV
@@ -1122,7 +1122,7 @@ character_event = {
 						}
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = art_of_war }
+							ROOT = { has_artifact = samhita }
 						}
 						modifier = {
 							factor = 2
@@ -1140,7 +1140,7 @@ character_event = {
 							factor = 2
 							ROOT = { martial = 24 }
 						}
-						add_artifact = art_of_war
+						add_artifact = samhita
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV
@@ -1166,9 +1166,9 @@ character_event = {
 					15 = { 
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = water_clock }
+							ROOT = { has_artifact = charkha }
 						}
-						add_artifact = water_clock
+						add_artifact = charkha
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV
@@ -1180,9 +1180,9 @@ character_event = {
 					15 = { 
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = jian_sword }
+							ROOT = { has_artifact = kirpan }
 						}
-						add_artifact = jian_sword
+						add_artifact = kirpan
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV
@@ -1194,9 +1194,9 @@ character_event = {
 					10 = { 
 						modifier = {
 							factor = 0.1
-							ROOT = { has_artifact = classic_of_poetry }
+							ROOT = { has_artifact = indian_spices }
 						}
-						add_artifact = classic_of_poetry
+						add_artifact = indian_spices
 						new_artifact = {
 							transfer_artifact = {
 								from = PREV

@@ -1,0 +1,96 @@
+#########################################
+## DLC: Jade Dragon: Chinese Artifacts ##
+#########################################
+brass_elephant = {
+	monthly_character_prestige = 1
+	monthly_character_piety = 0.1
+	global_tax_modifier = 0.1
+	diplomacy = 2
+	quality = 5
+	flags = { indian statue rare }
+	picture = "GFX_brass_elephant"
+	stacking = no
+}
+indian_rani_haar = { #Indian Jewelry
+	monthly_character_prestige = 0.75
+	vassal_opinion = 5
+	stewardship = 1
+	build_cost_modifier = -0.1
+	quality = 4
+	flags = { indian necklace jewelry }
+	picture = "GFX_rani_haar"
+	stacking = no
+	slot = neck
+}
+indian_artwork = {
+	monthly_character_prestige = 0.35
+	quality = 2
+	flags = { indian art decor }
+	picture = "GFX_indian_artwork"
+	stacking = no
+}
+indian_poetry = {
+	monthly_character_prestige = 0.35
+	town_opinion = 2
+	quality = 2
+	flags = { indian art book }
+	picture = "GFX_scroll"
+	stacking = no
+}
+indian_sculpture = {
+	monthly_character_prestige = 0.35
+	build_time_modifier = -0.05
+	quality = 2
+	flags = { indian sculpture decor }
+	picture = "GFX_indian_sculpture"
+	stacking = no
+}
+indian_ceremonial_robes = {
+	quality = 3
+	monthly_character_prestige = 0.5
+	diplomacy = 1
+	active = {
+		is_adult = yes
+	}
+	flags = { indian clothing }
+	picture = "GFX_indian_ceremonial_robes"
+	stacking = no
+	slot = ceremonial_torso
+}
+samhita = {
+	quality = 3
+	monthly_character_piety = 0.5
+	learning = 2
+	sex_appeal_opinion = 10
+	flags = { indian art book religious }
+	picture = "GFX_scroll"
+	stacking = no
+}
+kirpan = { #Sikh Punjabi Ceremonial Dagger
+	quality = 4
+	monthly_character_prestige = 1
+	martial = 3
+	combat_rating = 10
+	active = {
+		is_adult = yes
+	}
+	flags = { indian knife sword }
+	stacking = no
+	picture = "GFX_kirpan"
+	slot = ceremonial_weapon
+}
+indian_prev_emperor_sculpture = {
+	monthly_character_prestige = 0.15
+	quality = 1
+	flags = { indian sculpture decor }
+	picture = "GFX_small_chinese_figurine"
+	#stacking = no
+}
+charkha = {
+	quality = 2
+	monthly_character_prestige = 0.4
+	flags = { indian art decor }
+	stacking = no
+	picture = "GFX_charkha"
+	stacking = no
+}
