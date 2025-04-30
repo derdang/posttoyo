@@ -303,7 +303,11 @@ decisions = {
 			is_playable = yes
 			religion_group = muslim
 			NOT = {
-				religion = salafi
+				OR = {
+					religion = salafi
+					religion = bani
+					religion = kan_imam_san
+				}
 				has_character_flag = becoming_sufi
 				is_sufi = yes
 			}
