@@ -555,6 +555,7 @@
 	trait=patient
 	trait=proud
 	trait=just
+	father=1957501
 	2575.1.1={birth=yes}
 }
 1957440= { #c_kulai
@@ -746,7 +747,7 @@
 	father=1957501
 	2574.1.1={birth=yes}
 }
-1957501={ #Father of the Sultans of Pahang and Terengganu
+1957501={ #Father of the Sultans of Pahang and Terengganu and Johor
 	name="Sulaiman"
 	dynasty=1957804 #Bendahara
 	culture=melayu
@@ -764,9 +765,135 @@
 	trait=patient
 	trait=proud
 	trait=just
+	father=1957502
 	2550.1.1={birth=yes}
 	2592.1.1={death=yes}
 }
+1957502={
+	name="Baginda Omar"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=martial_cleric
+	trait=patient
+	trait=cruel
+	trait=diligent
+	trait=envious
+	trait=greedy
+	father=1957503
+	2510.1.1={birth=yes}
+	2565.1.1={death=yes}
+}
+1957503={
+	name="Perpatih Putih"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=elusive_shadow
+	trait=schemer
+	trait=cruel
+	trait=diligent
+	trait=envious
+	trait=greedy
+	trait=just
+	trait=proud
+	father=1957504
+	2470.1.1={birth=yes}
+	2535.1.1={death=yes}
+}
+1957504={
+	name="Abu Syahid"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=amateurish_plotter
+	trait=schemer
+	trait=cruel
+	trait=wroth
+	trait=envious
+	trait=greedy
+	trait=proud
+	trait=ambitious
+	father=1957505
+	2430.1.1={birth=yes}
+	2480.1.1={death=yes}
+}
+1957505={
+	name="Ahmad"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=thrifty_clerk
+	trait=feeble
+	trait=shrewd
+	trait=architect
+	trait=just
+	trait=proud
+	father=1957506
+	2390.1.1={birth=yes}
+	2460.1.1={death=yes}
+}
+1957506={
+	name="Zainal Abidin"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=misguided_warrior
+	trait=holy_warrior
+	trait=honest
+	trait=hunter
+	trait=just
+	trait=proud
+	father=1957507
+	2355.1.1={birth=yes}
+	2420.1.1={death=yes}
+}
+1957507={
+	name="Omar"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	martial=5
+	diplomacy=3
+	stewardship=4
+	intrigue=6
+	learning=5
+	trait=grey_eminence
+	trait=kind
+	trait=shrewd
+	trait=groomed
+	trait=just
+	trait=proud
+	father=1959103
+	2315.1.1={birth=yes}
+	2370.1.1={death=yes}
+}
+
 1957550={ #Bentong benchwarmer
 	name="Abdul"
 	culture=asli
@@ -904,7 +1031,151 @@
 	trait=patient
 	trait=proud
 	trait=just
-	2574.1.1={birth=yes}
+	father=1959110
+	2560.1.1={birth=yes}
+}
+1959101={
+	name="Siti Wan Kembang"
+	dynasty=1959031 #Wan
+	culture=kelantanese
+	religion=renewalist
+	trait=brilliant_strategist
+	trait=genius
+	trait=strong
+	trait=hunter
+	trait=kind
+	female=yes
+	trait=legendary
+	occluded=yes
+	2100.1.1={birth=yes}
+	2300.1.1={death=yes}
+}
+1959102={
+	name="Puteri Saadong"
+	dynasty=1959031 #Wan
+	culture=kelantanese
+	religion=renewalist
+	trait=grey_eminence
+	trait=fair
+	trait=patient
+	trait=kind
+	trait=socializer
+	female=yes
+	trait=legendary
+	occluded=yes
+	mother=1959101
+	2100.1.1={birth=yes}
+	2300.1.1={death=yes}
+}
+1959103={
+	name="Abdul Jalil"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	trait=indulgent_wastrel
+	trait=envious
+	trait=patient
+	trait=cruel
+	trait=socializer
+	trait=legendary
+	occluded=yes
+	2275.1.1={birth=yes}
+	2299.1.1={add_spouse=1959102}
+	2330.1.1={death=yes}
+}
+1959104={
+	name="Ibrahim"
+	dynasty=1959030 #Long Yunus
+	culture=kelantanese
+	religion=renewalist
+	trait=indulgent_wastrel
+	trait=envious
+	trait=patient
+	trait=cruel
+	trait=socializer
+	trait=legendary
+	occluded=yes
+	2275.1.1={birth=yes}
+	2299.2.1={add_spouse=1959102}
+	2335.1.1={death=yes}
+}
+1959105={
+	name="Muhammad"
+	dynasty=1959030 #Long Yunus
+	culture=kelantanese
+	religion=renewalist
+	trait=indulgent_wastrel
+	trait=greedy
+	trait=groomed
+	trait=wroth
+	father=1959104
+	2310.1.1={birth=yes}
+	2360.1.1={death=yes}
+}
+1959106={
+	name="Yakub"
+	dynasty=1959030 #Long Yunus
+	culture=kelantanese
+	religion=renewalist
+	trait=scholarly_theologian
+	trait=kind
+	trait=patient
+	trait=pious
+	father=1959105
+	2350.1.1={birth=yes}
+	2410.1.1={death=yes}
+}
+1959107={
+	name="Musah"
+	dynasty=1959030 #Long Yunus
+	culture=kelantanese
+	religion=renewalist
+	trait=detached_priest
+	trait=kind
+	trait=patient
+	trait=zealous
+	father=1959106
+	2390.1.1={birth=yes}
+	2460.1.1={death=yes}
+}
+1959108={
+	name="Hussein"
+	dynasty=1959030 #Long Yunus
+	culture=kelantanese
+	religion=renewalist
+	trait=charismatic_negotiator
+	trait=uncouth
+	trait=quick
+	trait=gamer
+	father=1959107
+	2440.1.1={birth=yes}
+	2500.1.1={death=yes}
+}
+1959109={
+	name="Muhammad"
+	dynasty=1959030 #Long Yunus
+	culture=kelantanese
+	religion=renewalist
+	trait=skilled_tactician
+	trait=groomed
+	trait=patient
+	trait=hunter
+	father=1959108
+	2480.1.1={birth=yes}
+	2540.1.1={death=yes}
+}
+1959110={
+	name="Muhammad"
+	dynasty=1959030 #Long Yunus
+	culture=kelantanese
+	religion=renewalist
+	trait=fortune_builder
+	trait=greedy
+	trait=patient
+	trait=trusting
+	father=1959109
+	2520.1.1={birth=yes}
+	2580.1.1={death=yes}
 }
 1959150={ #Gua Musang
 	name="Musang"
