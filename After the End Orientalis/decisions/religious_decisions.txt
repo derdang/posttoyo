@@ -641,10 +641,7 @@ decisions = {
 			is_adult = yes
 			AND = {
 				religion_group = muslim
-				NOR = {
-					religion = bani
-					religion = kan_imam_san
-				}
+				NOT = {religion = bani}
 			}
 			NOT = { has_character_flag = ramadan }
 			NOT = { has_character_modifier = ramadan }
@@ -710,10 +707,7 @@ decisions = {
 			is_playable = yes
 			prisoner = no
 			is_adult = yes
-			OR = {
-				religion = bani
-				religion = kan_imam_san
-			}
+			religion = bani
 			NOT = { has_character_flag = ramuwan }
 			NOT = { has_character_modifier = observed_ramuwan }
 			NOT = { trait = on_hajj }
