@@ -112,8 +112,9 @@ bani_shia = {
 	}
 	religious = yes
 
-	muslim_opinion = 10
-	tolerates_muslim = yes
+	buddhist_group_opinion = 10
+	tolerates_buddhist_group = yes
+	tolerates_eastern = yes
 	
 	opposites = {
 		bani_balamon
@@ -125,14 +126,14 @@ bani_shia = {
 	customizer = no
 	random = no
 }
-bani_sunni = { #Buddha-Mahdi
+bani_sunni = {
 	potential = {
 		religion = bani
 	}
 	religious = yes
 
-	tolerates_buddhist_group = yes
-	buddhist_group_opinion = 10
+	muslim_opinion = 10
+	tolerates_muslim = yes
 
 	opposites = {
 		bani_balamon
@@ -150,11 +151,14 @@ bani_balamon = { #Seek common virtue and values in all religion
 		religion = bani
 	}
 	religious = yes
+	
+	indian_group_opinion = 10
 
 	tolerates_buddhist_group = yes
 	tolerates_muslim = yes
 	tolerates_christian  = yes
 	tolerates_eastern = yes
+	tolerates_indian_group = yes
 	
 	opposites = {
 		bani_shia
