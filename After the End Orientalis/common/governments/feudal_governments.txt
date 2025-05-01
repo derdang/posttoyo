@@ -104,6 +104,8 @@ feudal_governments = {
 				NOR = {
 					religion=nusantara
 					religion=kebatinan
+					religion=bani
+					religion=kan_imam_san
 				}
 			}
 			OR = {
@@ -183,6 +185,8 @@ feudal_governments = {
 					NOR = {
 						religion=nusantara
 						religion=kebatinan
+						religion=bani
+						religion=kan_imam_san
 					}
 				}
 				OR = {
@@ -625,6 +629,7 @@ feudal_governments = {
 			tribal_government
 		}
 		frame_suffix = "_theocraticfeudal"
+		title_prefix = "mandala_"
 		potential = {
 			OR = {
 				controls_religion = no
@@ -650,6 +655,8 @@ feudal_governments = {
 						religion = pancasila
 						religion = kebatinan
 						religion = nusantara
+						religion = bani
+						religion = kan_imam_san
 					}
 					OR = {
 						culture_group = southwest_tai
