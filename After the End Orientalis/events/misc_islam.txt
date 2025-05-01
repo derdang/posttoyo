@@ -143,7 +143,7 @@ character_event = {
 		name = EVTOPTA49ISLAMATE
 		hidden_tooltip = {
 			character_event = { id = islamate.57 days = 1 }
-			character_event = { id = islamate.58 days = 26 }
+			narrative_event = { id = islamate.58 days = 26 }
 			character_event = { id = islamate.63 days = 31 }
 			character_event = { id = islamate.69 days = 35 }
 			random_list = {
@@ -408,7 +408,7 @@ character_event = {
 	}
 }
 
-# Prayers
+# Nao Ghur
 character_event = {
 	id = islamate.57
 	title = RAMUWANTITLE
@@ -440,12 +440,12 @@ character_event = {
 }
 
 # Hold Feast
-character_event = {
+narrative_event = {
 	id = islamate.58
 	title = RAMUWANTITLE
 	desc = EVTDESC58ISLAMATE
 	picture = GFX_evt_asian_feast
-	border =  GFX_event_normal_frame_religion
+	border =  GFX_event_narrative_frame_religion
 	
 	is_triggered_only = yes
 	
