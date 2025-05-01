@@ -4161,3 +4161,68 @@ upgrade_yoni = {
 		timor_opinion = 5
 	}
 }
+upgrade_murugan_statue = {
+	#....
+	picture = GFX_upgrade_icon_statue
+
+	potential = { }
+	allow = { }
+	active = { 
+		ROOT = {
+			religion_group = indian_group
+		}
+	}
+
+	flags = {
+		is_singular
+	}
+	build_time = 575
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		tamil_opinion = 15
+		indian_group_opinion = 10
+	}
+}
+upgrade_hanuman_statue = {
+	#....
+	picture = GFX_upgrade_icon_statue
+
+	potential = { }
+	allow = { }
+	active = { 
+		ROOT = {
+			religion_group = indian_group
+		}
+	}
+
+	flags = {
+		is_singular
+	}
+	build_time = 575
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		tamil_opinion = 15
+		indian_group_opinion = 10
+	}
+}
+upgrade_cave_villa = {
+	picture = GFX_upgrade_icon_roses_blue
+	potential = { }
+	allow = { }
+	active = {
+		religion_group = indian_group
+	}
+
+	flags = {
+		is_singular
+	}
+	build_time = 24
+	gold_cost_flat = 450
+	gold_cost_ticking = 1
+	owner_modifier = {
+		monthly_character_prestige = 0.05
+		poet_opinion = 5
+	}
+}
