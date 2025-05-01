@@ -382,7 +382,12 @@ decisions = {
 		ai_check_interval = 60
 		potential = {
 			is_playable = yes
-			religion_group = muslim
+			OR = {
+				is_nusantara_muslim = yes
+				religion = hui
+				religion = bani
+				religion = kan_imam_san
+			}
 			NOT = { trait = zair }
 			NOT = { trait = on_ziyara }
 			NOT = { trait = on_hajj }

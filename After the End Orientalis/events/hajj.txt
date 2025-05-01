@@ -5,7 +5,7 @@
 
 namespace = hajj
 
-#Adaption of the ATE HAJJ EVENTS
+#Adaption of the ATE HAJJ EVENTS (Completely Replaces Vanilla)
 
 ##########################################################################
 # Mecca or Bust 
@@ -1511,7 +1511,7 @@ character_event = {
 	}
 }
 #################################################################################
-#Singular Decision to encompass all Zijaya Locations to declutter Intrigue Screen
+#Singular Decision to encompass all Ziyara Locations to declutter Intrigue Screen
 #################################################################################
 narrative_event = {
 	id = hajj.200
@@ -1525,40 +1525,80 @@ narrative_event = {
 	immediate = {
 		clr_character_flag = activated_ziyara
 		set_character_flag = preparing_ziyara
+		if = {
+			limit = {
+				is_nusantara_muslim = yes
+			}
+			set_character_flag = activated_hajj_wapauwe_old_mosque
+		}
+		if = {
+			limit = {
+				religion = hui
+			}
+			set_character_flag = activated_hajj_islamic_sage_shrine
+		}
+		if = {
+			limit = {
+				religion = bani
+			}
+			set_character_flag = activated_hajj_twin_hero_shrine
+		}
+		if = {
+			limit = {
+				religion = kan_imam_san
+			}
+			set_character_flag = activated_hajj_imam_san_tomb
+		}
 	}
 	
 	option = {
-		name = test
+		name = EVTOPTA_ZIYARA_NUSANTARA_GENERAL
+		trigger = {
+			OR = {
+				has_character_flag = activated_hajj_wapauwe_old_mosque
+			}
+		}
 		hidden_tooltip = {
-			clr_character_flag = preparing_ziyara
+	#		narrative_event = { id = hajj.--- days = 2 } Future Hajj Event
+			clr_character_flag = preparing_ziyara #temp
 		}
 	}
-	#option = {
-	#	name = EVTOPTC_ZIYARA_SUNNI_GENERAL
-	#	trigger = {
-	#		OR = {
-	#			has_character_flag = activated_hajj_umayyadmosque
-	#			has_character_flag = activated_hajj_alazhar
-	#			has_character_flag = activated_hajj_baghdadtombs
-	#		}
-	#	}
-	#	hidden_tooltip = {
-	#		narrative_event = { id = hajj.202 days = 2 }
-	#	}
-	#}
-	#option = {
-	#	name = EVTOPTC_ZIYARA_SHIA_GENERAL
-	#	trigger = {
-	#		OR = {
-	#			has_character_flag = activated_hajj_karbala
-	#			has_character_flag = activated_hajj_mashhad
-	#			has_character_flag = activated_hajj_kadhimiyya
-	#		}
-	#	}
-	#	hidden_tooltip = {
-	#		narrative_event = { id = hajj.203 days = 2 }
-	#	}
-	#}
+	option = {
+		name = EVTOPTB_ZIYARA_HUI_GENERAL
+		trigger = {
+			OR = {
+				has_character_flag = activated_hajj_islamic_sage_shrine
+			}
+		}
+		hidden_tooltip = {
+			#narrative_event = { id = hajj.--- days = 2 } Future Hajj Event
+			clr_character_flag = preparing_ziyara #temp
+		}
+	}
+	option = {
+		name = EVTOPTC_ZIYARA_SPECIAL_BANI
+		trigger = {
+			OR = {
+				has_character_flag = activated_hajj_twin_hero_shrine
+			}
+		}
+		hidden_tooltip = {
+			#narrative_event = { id = hajj.--- days = 2 } Future Hajj Event
+			clr_character_flag = preparing_ziyara #temp
+		}
+	}
+	option = {
+		name = EVTOPTD_ZIYARA_SPECIAL_KIS
+		trigger = {
+			OR = {
+				has_character_flag = activated_hajj_imam_san_tomb
+			}
+		}
+		hidden_tooltip = {
+			#narrative_event = { id = hajj.--- days = 2 } Future Hajj Event
+			clr_character_flag = preparing_ziyara #temp
+		}
+	}
 }
 narrative_event = {
 	id = hajj.201

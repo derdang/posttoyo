@@ -31,6 +31,12 @@ is_sunni = {
 		religion = hui
 	}
 }
+is_nusantara_muslim = {
+	OR = {
+		religion = nusantara
+		religion = kebatinan
+	}
+}
 is_theravada = {
 	OR = {
 		religion = dharmayuttika
