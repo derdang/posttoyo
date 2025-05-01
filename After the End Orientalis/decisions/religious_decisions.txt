@@ -647,7 +647,7 @@ decisions = {
 				}
 			}
 			NOT = { has_character_flag = ramadan }
-			NOT = { has_character_modifier = observed_ramuwan }
+			NOT = { has_character_modifier = ramadan }
 			NOT = { trait = on_hajj }
 			NOT = { trait = incapable }
 			NOT = {
@@ -677,7 +677,7 @@ decisions = {
 			piety = 15
 			wealth = -100
 			add_character_modifier = {
-				name = observed_ramuwan
+				name = observed_ramadan
 				duration = 1900
 				hidden = no
 			}
@@ -740,7 +740,7 @@ decisions = {
 			}
 		}
 		effect = {
-			character_event = { id = bani. tooltip = "begin_fast" }
+			character_event = { id = islamate.49 tooltip = "begin_fast" }
 			set_character_flag = ramuwan
 			piety = 15
 			wealth = -100
