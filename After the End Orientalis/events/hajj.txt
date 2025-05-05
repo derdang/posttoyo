@@ -7,6 +7,259 @@ namespace = hajj
 
 #Adaption of the ATE HAJJ EVENTS (Completely Replaces Vanilla)
 
+#############################
+# Going to Imam San Tomb
+#############################
+letter_event = {
+	id = hajj.1
+	desc = "EVTDESC_hajjtoimamsantomb"
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPT_hajjtocity"
+		piety = 5
+		set_character_flag = preparing_hajj_imam_san_tomb
+		clr_character_flag = activated_hajj_imam_san_tomb
+		clr_character_flag = preparing_ziyara
+		hidden_tooltip = {
+			narrative_event = { id = hajj.4 days = 12 }
+		}	
+	}
+}
+
+#############################
+# Going to Imam San Tomb
+#############################
+narrative_event = {
+	id = hajj.4
+	title = EVTTITLE_HAJJIMAMSANTOMB
+	desc = EVTDESC_hajj4
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "EVTOPTA_hajj4"
+		clr_character_flag = preparing_hajj_imam_san_tomb
+		add_trait = on_ziyara
+		hidden_tooltip = {
+			character_event = { id = hajj.7 days = 30 }
+		}
+		hidden_tooltip = {
+			character_event = { id = hajj.25 days = 30 }
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					location = {
+						distance = {
+							where = 318	#Oudong
+							value = 400	#kind of far..
+						}
+					}
+				}
+				random_list = {
+					10 = { character_event = { id = SoA.5027 days = 5 random = 9 } }
+					10 = { narrative_event = { id = SoA.5028 days = 5 random = 9 } }
+					10 = { character_event = { id = SoA.5029 days = 5 random = 9 } }
+					10 = { character_event = { id = SoA.5030 days = 5 random = 9 } }
+				}
+			}
+			if = {
+				limit = {
+					location = {
+						distance = {
+							where = 318	#Oudong
+							value = 100	#kind of far..
+						}
+					}
+				}
+				random_list = {
+					10 = { character_event = { id = SoA.5031 days = 15 random = 7 } } # List that is always checked
+					10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
+					10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
+				}
+			}
+		}
+		piety = 15
+	}
+	option = { #Ends the Hajj Early
+		name = "EVTOPTB_hajj4"
+		clr_character_flag = preparing_hajj_imam_san_tomb
+		piety = -15
+	}
+}
+
+##########################################################################
+# Arrival at Imam San Tomb
+##########################################################################				
+
+#Hidden gateway event				
+character_event = {
+	id = hajj.25
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = { id = hajj.26 day = 1}
+	}
+}
+
+character_event = {
+	id = hajj.26
+	title = "EVTTITLE_hajj26"
+	desc = "EVTDESC_hajj26"
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_hajjtolerantimamsantomb"
+		add_trait = sympathy_buddhist
+		add_trait = sympathy_indian
+		hidden_tooltip = {
+			character_event = { id = hajj.27 days = 1 }
+		}
+	}
+	option = {
+		name = "EVTOPT_hajjzealousimamsantomb"
+		add_trait = zealous
+		hidden_tooltip = {
+			character_event = { id = hajj.27 days = 1 }
+		}	
+	}
+}
+character_event = {
+	id = hajj.27
+	title = "EVTTITLE_hajj27"
+	desc = "EVTDESC_hajj27"
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA_hajj27"
+		scaled_wealth = -0.1
+		piety = 50
+		hidden_tooltip = {
+			character_event = { id = hajj.28 days = 4 }
+		}	
+	}
+	option = {
+		name = "EVTOPTB_hajj27"
+		scaled_wealth = -0.2
+		piety = 100
+		hidden_tooltip = {
+			random_list = {
+				50 = {add_trait = charitable}
+				50 = {add_trait = zealous}
+			}
+		}
+		hidden_tooltip = {
+			character_event = { id = hajj.28 days = 4 }
+		}	
+	}
+	option = {
+		name = "EVTOPTC_hajj27"
+		scaled_wealth = -0.3
+		prestige = 100
+		add_trait = proud
+		hidden_tooltip = {
+			character_event = { id = hajj.28 days = 4 }
+		}	
+	}
+	option = {
+		name = "EVTOPTD_hajj27"
+		piety = -50
+		add_trait = greedy
+		hidden_tooltip = {
+			character_event = { id = hajj.28 days = 4 }
+		}	
+	}
+}
+narrative_event = {
+	id = hajj.28
+	title = EVTTITLE_HAJJIMAMSANTOMBARRIVED
+	desc = EVTDESC_hajjimamsantomb
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_narrative_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA_hajjimamsantomb"
+		piety = 10
+		spouse = {
+				show_scope_change = no
+				piety = 50
+			} 
+		hidden_tooltip = {
+			character_event = { id = hajj.30 days = 35 }
+		}	
+	}
+	option = {
+		name = "EVTOPTB_hajjimamsantomb"
+		trigger = {
+			is_female = yes
+		}
+		piety = 50
+		hidden_tooltip = {
+			character_event = { id = hajj.30 days = 35 }
+		}	
+	}
+	option = {
+		name = "EVTOPTC_hajjimamsantomb"
+		prestige = 50
+		spouse = {
+				show_scope_change = no
+				piety = 100
+				opinion = { 
+					who = PREV
+					modifier = opinion_antagonize_slandering_spouse
+					years = 10
+				} 
+			} 
+		hidden_tooltip = {
+			character_event = { id = hajj.30 days = 35 }
+		}	
+	}
+	option = {
+		name = "EVTOPTD_hajjimamsantomb"
+		trigger = {
+			trait = gluttonous
+		}
+		piety = -50
+		hidden_tooltip = {
+			character_event = { id = hajj.30 days = 35 }
+		}	
+	}
+}
+character_event = {
+	id = hajj.30
+	title = END_OF_ZIYARA
+	desc = "EVTDESC_hajjimamsantombhome"
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_hajjimamsantombhome"
+		clr_character_flag = do_not_disturb
+		piety = 50
+		remove_trait = on_ziyara
+		add_trait = zair
+	}
+}
+
 ##########################################################################
 # Mecca or Bust 
 ##########################################################################
@@ -1516,7 +1769,30 @@ character_event = {
 narrative_event = {
 	id = hajj.200
 	title = EVTTITLE_ZIYARA
-	desc = EVTDESC_hajj200
+	desc = {
+		trigger = {
+			religion = hui
+		}
+		text = ZIYARA_HUI
+	}
+	desc = {
+		trigger = {
+			is_nusantara_muslim = yes
+		}
+		text = ZIYARA_NUSANTARA
+	}
+	desc = {
+		trigger = {
+			religion = bani
+		}
+		text = ZIYARA_BANI
+	}
+	desc = {
+		trigger = {
+			religion = kan_imam_san
+		}
+		text = ZIYARA_KANIMAMSAN
+	}
 	picture = GFX_travel_muslim
 	border = GFX_event_narrative_frame_religion
 	
@@ -1583,7 +1859,7 @@ narrative_event = {
 			}
 		}
 		hidden_tooltip = {
-			#narrative_event = { id = hajj.--- days = 2 } Future Hajj Event
+			#letter_event = { id = hajj.--- days = 2 } Future Hajj Event
 			clr_character_flag = preparing_ziyara #temp
 		}
 	}
@@ -1595,8 +1871,7 @@ narrative_event = {
 			}
 		}
 		hidden_tooltip = {
-			#narrative_event = { id = hajj.--- days = 2 } Future Hajj Event
-			clr_character_flag = preparing_ziyara #temp
+			letter_event = { id = hajj.1 days = 2 }
 		}
 	}
 }

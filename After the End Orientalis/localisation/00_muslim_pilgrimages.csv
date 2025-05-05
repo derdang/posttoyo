@@ -56,7 +56,37 @@ EVTOPT_onwards;What a bunch of nonsense. I will see Mecca or die trying.;;;;;;;;
 ### ZIYARA EVENT ###
 
 EVTTITLE_ZIYARA;A Trip to the Shrines;;;;;;;;;;;;;x
-EVTDESC_hajj200;The Islamic World is a wide and diverse place. Having a rich history of blessed shrines, mosque and other features that can be just as important as the conducting the Hajj to [c_mecca.GetName]. Whether it be for shrines of the Walis or the dedications to the Prophet Muhammad, his family and companions, as a pious Muslim you may visit these blessed places anytime...;;;;;;;;;;;;;x
+ZIYARA_KANIMAMSAN;The Islamic World is a wide and diverse place. Having a rich history of blessed shrines, mosque and other features that can be just as important as conducting the Hajj to Mecca. Whether it be for shrines of the Walis or the tomb of the venerable Imam San, bringer of Islam to Kampuchea, as a pious Muslim you may visit these blessed places anytime...;;;;;;;;;;;;;x
+
+EVTDESC_hajjtoimamsantomb;Whilst Mecca and Medina hold great religious significance to all pious Muslims, there are plenty of other sites to visit. The Tomb of the Venerable Imam San is an especially important figure that lay at rest in his tomb in Oudong.;;;;;;;;;;;;;x
+EVTOPT_hajjtocity;All are equal in front of God!;;;;;;;;;;;;;x
+
+EVTTITLE_HAJJIMAMSANTOMB;Atop Phnom Oudong;;;;;;;;;;;;;x
+EVTDESC_hajj4;Sitting atop Phnom Oudong is the Masjid of Imam San. Said to have been built by Imam San himself, with the blessing of an ancient Khmer king, the ancient masjid now houses the tomb of the Venerable Imam himself. Every year countless Muslims gather here to pay respects and seek blessings from his holiness.;;;;;;;;;;;;;x
+EVTOPTA_hajj4;Oh Imam, I seek the blessings of Allah through your intercession.;;;;;;;;;;;;;x
+EVTOPTB_hajj4;Bah, what good is a dead man's blessing?;;;;;;;;;;;;;x
+
+EVTTITLE_hajj26;A Conversation;;;;;;;;;;;;;x
+EVTDESC_hajj26;You have arrived in the city of Oudong, home of the Venerable Imam. As you walk across the streets you observe many people that have welcomed us as brothers, perhaps it doesn't hurt to converse with those that may not share our belief in the One God...;;;;;;;;;;;;;x
+EVTOPT_hajjtolerantimamsantomb;Come brothers let us converse about the day.;;;;;;;;;;;;;x
+EVTOPT_hajjzealousimamsantomb;If only they could understand Allah and his message.;;;;;;;;;;;;;x
+
+EVTTITLE_hajj27;Auspiscious Offerings;;;;;;;;;;;;;x
+EVTDESC_hajj27;As pilgrims line up to offer cash to the tomb, in exchange for barakah, I look towards my servants carrying my gold and ponder how much I should offer.;;;;;;;;;;;;;x
+EVTOPTA_hajj27;I will offer a modest amount for blessings of prosperity...;;;;;;;;;;;;;x
+EVTOPTB_hajj27;Wealth only blinds us from the way of Allah!;;;;;;;;;;;;;x
+EVTOPTC_hajj27;If everybody sees me make a generous offer, they'll know of my glory!;;;;;;;;;;;;;x
+EVTOPTD_hajj27;On second thought...;;;;;;;;;;;;;x
+
+EVTTITLE_HAJJIMAMSANTOMBARRIVED;Trees of Offerings;;;;;;;;;;;;;x
+EVTDESC_hajjimamsantomb;While the men engage in prayer, the women attending the pilgrimage prepare elaborate trees of offerings to Allah. An elaborate cake is erected, with rice cakes in shaped into intricate mandalas form the trunks and fruits of the tree, while ceremonial cash, flowers, and other deocrations adorn its branches. These offerings not only display the devotion of the women who made them, but also show off the talents of the women.;;;;;;;;;;;;;x
+EVTOPTA_hajjimamsantomb;I watch as my wife crafts her own tree.;;;;;;;;;;;;;x
+EVTOPTB_hajjimamsantomb;I begin in the name of Allah.;;;;;;;;;;;;;x
+EVTOPTC_hajjimamsantomb;My wife must have the most elaborate tree here.;;;;;;;;;;;;;x
+EVTOPTD_hajjimamsantomb;Nobody will notice a piece missing, right?;;;;;;;;;;;;;x
+
+EVTDESC_hajjimamsantombhome;Walking back through the familiar gates of my castle, I can't help but feel fulfilled. I have travelled across the land, and returned a changed worshiper. Before Allah, all men are indeed equal.;;;;;;;;;;;;;x
+EVTOPT_hajjimamsantombhome;There is no god but Allah the Light!;;;;;;;;;;;;;x
 
 EVTOPTA_ZIYARA_NUSANTARA_GENERAL;I shall see about traveling to the shrines of the Wali...;;;;;;;;;;;;;x
 EVTOPTB_ZIYARA_HUI_GENERAL;I shall travel and walk the wise Ma Sages Path...;;;;;;;;;;;;;x
@@ -67,6 +97,8 @@ EVTDESC_hajjhadith;As you stop for camp one evening, you notice that an old man 
 EVTOPT_hajjhadithyes;Listen to the old man.;;;;;;;;;;;;;x
 EVTOPT_hajjhadithno;It is just an old man...;;;;;;;;;;;;;x
 TOOLTIP_LISTEN_TO_HADITHHAJJ;You listen carefully to the old man's hadith.\n;;;;;;;;;;;;;x
+
+END_OF_ZIYARA;End of Ziyara;;;;;;;;;;;;;x
 
 ### ASHURA EVENT ###
 

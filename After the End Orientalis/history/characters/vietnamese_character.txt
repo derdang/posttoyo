@@ -1473,7 +1473,7 @@
 #The Phoenix of Champa: The Princes of Panduranga
 1177000={ #Panduranga Start Character
 	name="Pham Van"
-	dynasty=1177000
+	dynasty=1177000 #Che
 	culture=cham
 	religion=bani
 	dna="banooabcaaa"
@@ -1494,15 +1494,17 @@
 	trait=humble
 	trait=erudite
 	2550.1.1={birth=yes}
+	2575.1.1={add_spouse=1177002}
 	2648.1.1={death=yes}
 }
 1177001={ #Son of the Panduranga Prince
 	name="Katip"
-	dynasty=1177000
+	dynasty=1177000 #Che
 	culture=cham
 	religion=bani
 	dna="banooabcaaa"
 	father=1177000
+	mother=1177002
 	martial=5
 	diplomacy=2
 	stewardship=5
@@ -1520,6 +1522,23 @@
 	trait=humble
 	trait=diligent
 	2585.1.1={birth=yes}
+}
+1177002={ #Mother of the Panduranga Prince
+	name="Siti Zubaidah"
+	dynasty=1959032 #Makah
+	culture=kelantanese
+	religion=renewalist
+	dna="banooabcaaa"
+	martial=3
+	trait=grey_eminence
+	trait=zealous
+	trait=shrewd
+	trait=brave
+	trait=patient
+	trait=humble
+	trait=ambitious
+	2550.1.1={birth=yes}
+	2648.1.1={death=yes}
 }
 1178000={ #Jarai Lord
 	name="Jarai"
