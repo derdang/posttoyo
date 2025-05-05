@@ -113,31 +113,69 @@ decisions = {
 			NOT = { is_incapable = yes }
 			prestige = 2500
 			realm_size = 250
-			scaled_wealth = 2
+			scaled_wealth = 4
 			war = no
 			any_demesne_title = {
 				tier = EMPEROR
 			}
-			completely_controls = e_anhui
-			completely_controls = e_chongqing
-			completely_controls = e_dali
-			completely_controls = e_dongbei
-			completely_controls = e_gansu
-			completely_controls = e_guangdong
-			completely_controls = e_guangxi
-			completely_controls = e_guizhou
-			completely_controls = e_henan
-			completely_controls = e_hubei
-			completely_controls = e_hunan
-			completely_controls = e_jiangsu
-			completely_controls = e_jiangxi
-			completely_controls = e_min_tai
-			completely_controls = e_shaanxi
-			completely_controls = e_shandong
-			completely_controls = e_shanxi
-			completely_controls = e_sichuan
-			completely_controls = e_zhejiang
-			completely_controls = e_zhili
+			OR = {
+				custom_tooltip = {
+					text = TXT_PRC_CORE
+				}
+				AND = {
+					religion = jibenyuanze
+					completely_controls = e_zhili
+					completely_controls = e_dongbei
+					completely_controls = e_shaanxi
+					completely_controls = e_shanxi
+				}
+				custom_tooltip = {
+					text = TXT_ROC_CORE
+				}
+				AND = {
+					religion = sanmin
+					completely_controls = e_min_tai
+					completely_controls = e_jiangsu
+					completely_controls = e_zhejiang
+					completely_controls = e_guangdong
+					completely_controls = e_guangxi
+				}
+				custom_tooltip = {
+					text = TXT_NORTH_CORE
+				}
+				AND = {
+					completely_controls = e_zhili
+					completely_controls = e_dongbei
+					completely_controls = e_shaanxi
+					completely_controls = e_shanxi
+					completely_controls = e_shandong
+					completely_controls = e_henan
+				}
+				custom_tooltip = {
+					text = TXT_SOUTH_CORE
+				}
+				AND = {
+					completely_controls = e_min_tai
+					completely_controls = e_jiangsu
+					completely_controls = e_zhejiang
+					completely_controls = e_guangdong
+					completely_controls = e_guangxi
+					completely_controls = e_jiangxi
+					completely_controls = e_hubei
+					completely_controls = e_anhui
+					completely_controls = e_hunan
+				}
+				custom_tooltip = {
+					text = TXT_WEST_CORE
+				}
+				AND = {
+					completely_controls = e_sichuan
+					completely_controls = e_chongqing
+					completely_controls = e_dali
+					completely_controls = e_gansu
+					completely_controls = e_guizhou
+				}
+			}
 			NOT = { has_global_flag = china_unified }
 		}
 		effect = {
