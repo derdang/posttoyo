@@ -149,7 +149,7 @@ character_event = {
 	is_triggered_only = yes
 	option = {
 		name = "EVTOPTA_hajj27"
-		scaled_wealth = -0.1
+		scaled_wealth = 1
 		piety = 50
 		hidden_tooltip = {
 			character_event = { id = hajj.28 days = 4 }
@@ -157,7 +157,7 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB_hajj27"
-		scaled_wealth = -0.2
+		scaled_wealth = 2
 		piety = 100
 		hidden_tooltip = {
 			random_list = {
@@ -171,7 +171,7 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTC_hajj27"
-		scaled_wealth = -0.3
+		scaled_wealth = 2.5
 		prestige = 100
 		add_trait = proud
 		hidden_tooltip = {
@@ -198,6 +198,10 @@ narrative_event = {
 	option = {
 		name = "EVTOPTA_hajjimamsantomb"
 		piety = 10
+		trigger = {
+			is_female = no
+			is_married = yes
+		}
 		spouse = {
 				show_scope_change = no
 				piety = 50
@@ -219,6 +223,10 @@ narrative_event = {
 	option = {
 		name = "EVTOPTC_hajjimamsantomb"
 		prestige = 50
+		trigger = {
+			is_female = no
+			is_married = yes
+		}
 		spouse = {
 				show_scope_change = no
 				piety = 100
@@ -238,6 +246,12 @@ narrative_event = {
 			trait = gluttonous
 		}
 		piety = -50
+		hidden_tooltip = {
+			character_event = { id = hajj.30 days = 35 }
+		}	
+	}
+	option = { #fallback if not married
+		name = "EVTOPTE_hajjimamsantomb"
 		hidden_tooltip = {
 			character_event = { id = hajj.30 days = 35 }
 		}	
