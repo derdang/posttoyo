@@ -1377,14 +1377,6 @@ grand_secretary_war = {
 				}
 			}
 		}
-		e_new_california = {
-			holder_scope = {
-				opinion = {
-					modifier = defied_norms
-					who = ROOT
-				}
-			}
-		}
 		ROOT = {
 			show_scope_change = no
 			participation_scaled_prestige = 100
@@ -1638,20 +1630,6 @@ sanc_grand_secretary_war = {
 				character_event = { id = cetic.361 }
 			}
 		}
-		if = {
-			limit = {
-				has_title_flag = has_chinese_mandate
-			}
-			e_new_california = {
-				holder_scope = {
-					opinion = {
-						modifier = gnator_succeed
-						who = ROOT
-					}
-					character_event = { id = cetic.361 }
-				}
-			}
-		}
 		ROOT = {
 			show_scope_change = no
 			participation_scaled_prestige = 100
@@ -1721,14 +1699,6 @@ sanc_grand_secretary_war = {
 			}
 		}
 		e_china = {
-			holder_scope = {
-				opinion = {
-					modifier = gnator_fail
-					who = ROOT
-				}
-			}
-		}
-		e_new_california = {
 			holder_scope = {
 				opinion = {
 					modifier = gnator_fail
