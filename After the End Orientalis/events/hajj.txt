@@ -149,7 +149,7 @@ character_event = {
 	is_triggered_only = yes
 	option = {
 		name = "EVTOPTA_hajj27"
-		scaled_wealth = 1
+		scaled_wealth = -0.5
 		piety = 50
 		hidden_tooltip = {
 			character_event = { id = hajj.28 days = 4 }
@@ -157,7 +157,7 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTB_hajj27"
-		scaled_wealth = 2
+		scaled_wealth = -1
 		piety = 100
 		hidden_tooltip = {
 			random_list = {
@@ -171,7 +171,7 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPTC_hajj27"
-		scaled_wealth = 2.5
+		scaled_wealth = -2.5
 		prestige = 100
 		add_trait = proud
 		hidden_tooltip = {
