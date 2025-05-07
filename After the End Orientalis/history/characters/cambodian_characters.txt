@@ -57,10 +57,10 @@
 	trait=ambitious
 	trait=paranoid
 	trait=cynical
-	2581.12.1={birth=yes}
+	2570.12.1={birth=yes}
 	2700.1.1={death=yes}
 }
-1181012 ={ #Count of Pursat
+1181012 ={ #Duke of Pursat
 	name="Chhouk"
 	dynasty=1181001 #Chan
 	father=1181013 #Chan Kosal
@@ -73,7 +73,7 @@
 	learning=6
 	trait=thrifty_clerk
 	trait=temperate
-	2584.12.1={birth=yes}
+	2578.12.1={birth=yes}
 	2700.1.1={death=yes}
 }
 1181013 ={ #Father of Siem Reap duke
@@ -107,7 +107,7 @@
 	name="Arun"
 	dynasty=1181003 #San
 	culture=khmer
-	religion=dharmayuttika
+	religion=maha_nikaya
 	martial=3
 	diplomacy=5
 	stewardship=6
@@ -117,6 +117,61 @@
 	trait=content
 	trait=trusting
 	2577.9.10={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1181041 ={ #Count of Kampong Som and Koh Kong
+	name="Phat"
+	dynasty=1181031 #Ly
+	culture=thai_mueang
+	religion=dharmayuttika
+	martial=2
+	diplomacy=6
+	stewardship=8
+	intrigue=3
+	learning=2
+	trait=midas_touched
+	trait=ambitious
+	trait=shrewd
+	add_claim = d_pattaya
+	2567.9.10={birth=yes culture=khmer}
+	2700.1.1={death=yes}
+}
+
+1181051 ={ #Count of Phu Qouc
+	name="Mean"
+	dynasty=1182012 #Diêp
+	culture=cochinchinese
+	religion=cao_dai
+	martial=5
+	diplomacy=3
+	stewardship=2
+	intrigue=3
+	learning=2
+	trait=tough_soldier
+	trait=fair
+	2577.9.10={birth=yes culture=khrom}
+	2700.1.1={death=yes}
+}
+
+1181061 ={ #Duke of Kampot Oudong
+	name="Reththy"
+	dynasty=1181032 #Sam
+	culture=sinotai
+	religion=dharmayuttika
+	secret_religion=renewalist
+	martial=10
+	diplomacy=0
+	stewardship=0
+	intrigue=5
+	learning=6
+	trait=tough_soldier
+	trait=cruel
+	trait=mystic
+	trait=authoritative
+	trait=dull
+	disallow_random_traits=yes
+	2580.9.10={birth=yes culture=khmer}
 	2700.1.1={death=yes}
 }
 ###########Non-Cambodian Dynasties###########
