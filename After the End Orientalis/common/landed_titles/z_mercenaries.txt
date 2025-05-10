@@ -140,12 +140,13 @@ d_trung_sisterhood = {
 	color2={ 34 47 181 }
 
 	capital = 136 # Hà Nôi
-	
-	allow = {
-			culture_group = viet
-	}
 
 	culture = tonkinese
+	
+	allow = {
+		culture_group = viet
+		culture_group = chamic
+	}
 
 	title = "CAPTAIN"
 	title_female = "CAPTAIN"
@@ -166,11 +167,12 @@ d_dragon_lords = {
 
 	capital = 146 # Quang Ninh (Ha Long Bay)
 	
-	allow = {
-			culture_group = viet
-	}
-	
 	culture = tonkinese
+	
+	allow = {
+		culture_group = viet
+		culture_group = chamic
+	}
 
 	title = "CAPTAIN"
 	foa = "CAPTAIN_FOA"
@@ -194,6 +196,7 @@ d_golden_star_dragons = {
 	
 	allow = {
 		culture_group = viet
+		culture_group = chamic
 	}
 		
 	title = "CAPTAIN"
@@ -320,6 +323,7 @@ d_asa_cham = {
 	
 	allow = {
 		culture_group = southwest_tai
+		culture_group = chamic
 	}
 		
 	title = "CAPTAIN"
