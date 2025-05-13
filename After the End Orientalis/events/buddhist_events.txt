@@ -1254,3 +1254,65 @@ character_event = {
 		}
 	}
 }
+
+#Akhom paths
+character_event = {
+	id = budevents.420
+	picture = GFX_evt_courier
+	desc = EVTDESC_BUDDHISTEVENT_420
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	option = {
+		name = EVTOPTA_akhom
+		add_character_modifier = {
+			name = akhom_naga
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = { 
+				factor = 2
+				culture_group  = cambodian
+			}
+			modifier = { 
+				factor = 2
+				culture  = thai_isan
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_akhom
+		add_character_modifier = {
+			name = akhom_garuda
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = { 
+				factor = 2
+				culture_group  = southwest_tai
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_akhom
+		add_character_modifier = {
+			name = akhom_deva
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+		}
+	}
+}
