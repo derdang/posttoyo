@@ -216,18 +216,37 @@
 	2700.1.1={death=yes}
 }
 1177003={ #Kampong Cham Lord
-	name="Sri Mara"
-	dynasty=1177002 #Indra
+	name="Sman"
+	dynasty=1177022 #Sos
 	culture=cham
 	religion=kan_imam_san
-	martial=1
-	diplomacy=2
+	dna="bamomcabaaa"
+	martial=5
+	diplomacy=3
 	stewardship=2
 	intrigue=2
-	learning=5
+	learning=2
+	trait=skilled_tactician
+	trait=scarred
+	trait=zealous
+	trait=shrewd
+	trait=ambitious
+	trait=wroth
+	trait=stubborn
+	trait=jungle_terrain_leader
+	2560.1.1={birth=yes}
+	2590.1.1={add_spouse=1177004}
+	2648.1.1={death=yes}
+}
+1177004={ #Kampong Cham Lord Wife
+	name="Mariah"
+	dynasty=1177023 #Kosem
+	culture=cham
+	religion=kan_imam_san
+	female=yes
 	trait=charismatic_negotiator
 	trait=scholar
-	trait=zealous
+	trait=fair
 	trait=honest
 	trait=content
 	trait=trusting
@@ -235,8 +254,22 @@
 	trait=temperate
 	trait=humble
 	trait=erudite
-	2550.1.1={birth=yes}
+	2565.1.1={birth=yes}
 	2648.1.1={death=yes}
+}
+1177005={ #Kampong Cham Lord Son
+	name="Sokha"
+	dynasty=1177022 #Sos
+	culture=cham
+	religion=kan_imam_san
+	martial=2
+	diplomacy=3
+	stewardship=2
+	intrigue=2
+	learning=2
+	trait=fussy
+	trait=idolizer
+	2600.1.1={birth=yes}
 }
 1178001={ #Ratanakiri Lord
 	name="Sri Kiri"

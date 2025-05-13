@@ -68,6 +68,8 @@
 	trait=just
 	father=1957101
 	2515.1.1={birth=yes}
+	2549.1.1={add_spouse=1957118}
+	2600.1.1={effect={add_rival=1957120}} #Hates his son for betraying the Family
 }
 1957101={
 	name="Ibrahim"
@@ -122,6 +124,7 @@
 	trait=patient
 	trait=humble
 	trait=just
+	father=1957113
 	2320.1.1={birth=yes}
 	2380.9.29={death=yes}
 }
@@ -241,8 +244,140 @@
 	2437.1.1={birth=yes}
 	2477.8.31={death=yes}
 }
-#--
-1957120={
+1957113={
+	name="Nazri"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	trait=brilliant_strategist
+	trait=kind
+	trait=proud
+	trait=strong
+	trait=just
+	father=1957114
+	2280.1.1={birth=yes}
+	2340.1.1={death=yes}
+}
+1957114={
+	name="Amir Shah"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	trait=thrifty_clerk
+	trait=gregarious
+	trait=proud
+	trait=diligent
+	trait=just
+	father=1957115
+	2240.1.1={birth=yes}
+	2300.1.1={death=yes}
+}
+1957115={
+	name="Sulaiman"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	trait=misguided_warrior
+	trait=uncouth
+	trait=strong
+	trait=proud
+	trait=just
+	occluded=yes
+	father=1957105
+	2200.1.1={birth=yes}
+	2270.1.1={death=yes}
+}
+1957116={ #Eldest Son of Mu'adzam
+	name="Abdul Aziz"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	martial=2
+	diplomacy=4
+	stewardship=2
+	intrigue=8
+	learning=3
+	trait=underhanded_rogue
+	trait=shrewd
+	trait=scarred
+	trait=strong
+	trait=groomed
+	trait=falconer
+	trait=proud
+	trait=just
+	mother=1957118
+	father=1957100
+	2550.1.1={birth=yes}
+	2590.1.1={add_spouse=1957123}
+	2600.1.1={effect={add_rival=1957120}}
+}
+1957117={ #Second Eldest Son of Mu'adzam
+	name="Musahiddin"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	martial=5
+	diplomacy=4
+	stewardship=2
+	intrigue=2
+	learning=8
+	trait=detached_priest
+	trait=erudite
+	trait=stressed
+	trait=scarred
+	trait=lefthanded
+	trait=sturdy
+	trait=scholar
+	trait=shy
+	trait=twin
+	mother=1957118
+	father=1957100
+	2555.1.1={birth=yes}
+	2580.1.1={effect={add_lover=1957126}}
+	2585.1.1={add_spouse=1957126} #married his lover
+	2600.1.1={effect={add_rival=1957120}}
+}
+1957118={ #Wife of the Sultan of Selangor
+#Schemed with the Emperor to split the domains with her nephew the Emperor of Malaysia from her Husband died shortly after
+	name="Puteri Arafiah"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	female=yes
+	trait=intricate_webweaver
+	trait=shrewd
+	trait=seductress
+	trait=poet
+	trait=patient
+	trait=proud
+	trait=deceitful
+	trait=gregarious
+	trait=lustful
+	father=1957502
+	2530.1.1={birth=yes}
+	2601.1.1={death=yes}
+}
+1957119={ #Eldest Daughter of Mu'adzam
+	name="Rima"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	female=yes
+	trait=charismatic_negotiator
+	trait=just
+	trait=kind
+	trait=groomed
+	trait=trusting
+	trait=poet
+	trait=fair
+	trait=twin
+	mother=1957118
+	father=1957100
+	2555.1.1={birth=yes}
+	2600.1.1={effect={add_rival=1957120}}
+}
+#
+1957120={ #Youngest Son of the Sultan of Selangor (His domain was split by the current Emperor of Malaysia)
 	name="Alauddin"
 	dynasty=1957801 #Celak
 	culture=melayu
@@ -260,7 +395,12 @@
 	trait=patient
 	trait=proud
 	trait=just
-	2572.1.1={birth=yes}
+	mother=1957118
+	father=1957100
+	2560.1.1={birth=yes}
+	2590.1.1={add_spouse=1957131}
+	2600.1.1={effect={add_friend=1957500}}
+	2600.1.1={effect={add_rival=1957100}}
 }
 1957121={#Sultan of Perak
 	name="Iskandar Shah"
@@ -302,6 +442,178 @@
 	trait=just
 	2540.1.1={birth=yes}
 	2593.9.30={death=yes}
+}
+1957123={ #Wife of Abdul Aziz
+	name="Syahira"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	female=yes
+	trait=naive_appeaser
+	trait=fair
+	trait=groomed
+	trait=shrewd
+	trait=charitable
+	trait=humble
+	trait=proud
+	trait=just
+	father=1957501
+	2565.1.1={birth=yes}
+	2600.1.1={effect={add_rival=1957120}}
+}
+1957124={ #Son of Abdul Aziz
+	name="Izzat"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	martial=3
+	diplomacy=4
+	stewardship=5
+	intrigue=4
+	learning=4
+	trait=brooding
+	trait=willful
+	trait=idolizer
+	mother=1957123
+	father=1957116
+	2590.1.1={birth=yes}
+}
+1957125={ #Son of Abdul Aziz
+	name="Muhammad Faez"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	martial=8
+	diplomacy=2
+	stewardship=3
+	intrigue=5
+	learning=2
+	trait=fussy
+	trait=rowdy
+	trait=haughty
+	mother=1957123
+	father=1957116
+	2593.1.1={birth=yes}
+}
+1957126={ #Wife of Musahiddin
+	name="Walinong Sari"
+	dynasty=1957805 #Zahid
+	culture=melayu
+	religion=renewalist
+	female=yes
+	trait=grey_eminence
+	trait=fair
+	trait=groomed
+	trait=socializer
+	trait=charitable
+	trait=humble
+	trait=proud
+	trait=just
+	2560.1.1={birth=yes}
+	2600.1.1={effect={add_rival=1957120}}
+}
+1957127={ #Son of Musahiddin
+	name="Ayden Husain"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	martial=3
+	diplomacy=4
+	stewardship=5
+	intrigue=4
+	learning=8
+	trait=affectionate
+	trait=idolizer
+	trait=curious
+	mother=1957126
+	father=1957117
+	2590.1.1={birth=yes}
+}
+1957128={ #Daughter of Musahiddin
+	name="Siti Aishah"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	female=yes
+	martial=8
+	diplomacy=2
+	stewardship=3
+	intrigue=5
+	learning=2
+	trait=fussy
+	trait=rowdy
+	trait=haughty
+	mother=1957126
+	father=1957117
+	2593.1.1={birth=yes}
+}
+1957129={ #Husband of Rima of Selangor
+#Low Noble in the Selangor Sultanate raised to higher status following the Civil War in Selangor (2580) - with marriage to the Old Sultan's only Daughter
+	name="Azamuddin"
+	dynasty=1957806 #Ali
+	culture=melayu
+	religion=renewalist
+	trait=grey_eminence
+	trait=fair
+	trait=groomed
+	trait=socializer
+	trait=charitable
+	trait=humble
+	trait=proud
+	trait=just
+	2560.1.1={birth=yes}
+	2585.1.1={add_spouse=1957119}
+	2600.1.1={effect={add_rival=1957120}}
+}
+1957130={ #Son of Rima
+	name="Salahuddin Putra"
+	dynasty=1957806 #Ali
+	culture=melayu
+	religion=renewalist
+	martial=3
+	diplomacy=4
+	stewardship=5
+	intrigue=4
+	learning=8
+	trait=affectionate
+	trait=idolizer
+	trait=curious
+	mother=1957119
+	father=1957129
+	2590.1.1={birth=yes}
+}
+1957131={ #Wife of Alauddin, Older Sister of the Malaysian Emperor
+	name="Zerafina"
+	dynasty=1957804 #Bendahara
+	culture=melayu
+	religion=renewalist
+	female=yes
+	trait=charismatic_negotiator
+	trait=quick
+	trait=shrewd
+	trait=socializer
+	trait=charitable
+	trait=humble
+	trait=proud
+	trait=just
+	father=1957501
+	2569.1.1={birth=yes}
+}
+1957132={ #Son of Alauddin
+	name="Azlan"
+	dynasty=1957801 #Celak
+	culture=melayu
+	religion=renewalist
+	martial=3
+	diplomacy=3
+	stewardship=5
+	intrigue=4
+	learning=4
+	trait=affectionate
+	trait=playful
+	mother=1957131
+	father=1957120
+	2598.1.1={birth=yes}
 }
 1957150={
 	name="Hua-Seng"
@@ -746,6 +1058,7 @@
 	trait=just
 	father=1957501
 	2574.1.1={birth=yes}
+	2600.1.1={effect={add_friend=1957120}}
 }
 1957501={ #Father of the Sultans of Pahang and Terengganu and Johor
 	name="Sulaiman"
