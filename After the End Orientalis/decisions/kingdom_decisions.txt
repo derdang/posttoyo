@@ -40,8 +40,12 @@ decisions = {
 			}
 			scaled_wealth = -2.5
 			if = {
-				limit = { has_nickname = no }
-				give_nickname = nick_the_great
+				limit = { has_nickname = no female=no }
+				give_nickname = nick_red_king
+			}
+			else_if = {
+				limit = { has_nickname = no female=yes }
+				give_nickname = nick_red_queen
 			}
 			d_cua_han = {
 				de_jure_liege = k_champa
