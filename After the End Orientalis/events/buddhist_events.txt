@@ -1258,7 +1258,317 @@ character_event = {
 #Akhom paths
 character_event = {
 	id = budevents.420
-	picture = GFX_evt_courier
+	picture = GFX_evt_buddha_teaching
+	desc = EVTDESC_BUDDHISTEVENT_420
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_akhom
+		add_character_modifier = {
+			name = akhom_deva
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_akhom
+		add_character_modifier = {
+			name = akhom_buddha
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTAB_akhom
+		character_event = { id = budevents.425 }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = EVTOPTE_akhom #More deities
+		if = {
+			limit = {
+				culture = khmer
+			}
+			character_event = { id = budevents.421 }
+		}
+		else_if = {
+			limit = {
+			OR = {
+				culture = thai_central
+				culture = thai_sukhothai
+				}
+			}
+			character_event = { id = budevents.422 }
+		}
+		else_if = {
+			limit = {
+				culture = thai_mueang
+			}
+			character_event = { id = budevents.423 }
+		}
+		else_if = {
+			limit = {
+				culture = thai_paktai
+			}
+			character_event = { id = budevents.424 }
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+		}
+	}
+}
+
+#Akhom paths Khmer
+character_event = {
+	id = budevents.421
+	picture = GFX_evt_buddhist_thai_old_temple
+	desc = EVTDESC_BUDDHISTEVENT_420
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTAB_akhom1
+		character_event = { id = budevents.426 }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_akhom1
+		add_character_modifier = {
+			name = akhom_preahko
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_stewardship_trigger = yes
+				factor = 2
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_akhom1
+		add_character_modifier = {
+			name = akhom_neakta_phnom
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTE_akhom1 #Back to first step
+		character_event = { id = budevents.420 }
+	}
+}
+
+#Akhom paths North Thai
+character_event = {
+	id = budevents.422
+	picture = GFX_evt_buddhist_thai_old_temple
+	desc = EVTDESC_BUDDHISTEVENT_420
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTABC_akhom2
+		character_event = { id = budevents.427 }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_akhom2
+		add_character_modifier = {
+			name = akhom_khruba
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTE_akhom2 #Back to first step
+		character_event = { id = budevents.420 }
+	}
+}
+
+#Akhom paths Central Thai
+character_event = {
+	id = budevents.423
+	picture = GFX_evt_buddhist_thai_old_temple
+	desc = EVTDESC_BUDDHISTEVENT_420
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	option = {
+		name = EVTOPTA_akhom3
+		add_character_modifier = {
+			name = akhom_siam_devadhirath
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_diplomacy_trigger = yes
+				factor = 2
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTBC_akhom3
+		character_event = { id = budevents.428 }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_akhom3
+		add_character_modifier = {
+			name = akhom_mae_phosop
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTE_akhom3 #Back to first step
+		character_event = { id = budevents.420 }
+	}
+}
+
+#Akhom paths South Thai
+character_event = {
+	id = budevents.424
+	picture = GFX_evt_buddhist_thai_old_temple
+	desc = EVTDESC_BUDDHISTEVENT_420
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	option = {
+		name = EVTOPTAB_akhom4
+		character_event = { id = budevents.429 }
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = EVTOPTC_akhom4
+		add_character_modifier = {
+			name = akhom_mae_yanang
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_stewardship_trigger = yes
+				factor = 2
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_akhom4
+		add_character_modifier = {
+			name = akhom_chatukham_ramdev
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_education_learning_trigger = yes
+				factor = 2
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTE_akhom4 #Back to first step
+		character_event = { id = budevents.420 }
+	}
+}
+
+#Akhom paths
+character_event = {
+	id = budevents.425
+	picture = GFX_evt_buddha_teaching
 	desc = EVTDESC_BUDDHISTEVENT_420
 	border = GFX_event_normal_frame_religion
 
@@ -1301,76 +1611,17 @@ character_event = {
 			}
 		}
 	}
-	option = {
-		name = EVTOPTC_akhom
-		add_character_modifier = {
-			name = akhom_deva
-			duration = -1
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				has_education_learning_trigger = yes
-				factor = 2
-			}
-		}
-	}
 	
 	option = {
-		name = EVTOPTD_akhom #More deities
-		trigger = {
-		OR = {
-			culture = khmer
-			culture = thai_central
-			culture = thai_sukhothai
-			culture = thai_mueang
-			culture = thai_paktai
-			}
-		}
-		if = {
-			limit = {
-				culture = khmer
-			}
-			character_event = budevents.421
-		}
-		if = {
-			limit = {
-			OR = {
-				culture = thai_central
-				culture = thai_sukhothai
-				}
-			}
-			character_event = budevents.422
-		}
-		if = {
-			limit = {
-				culture = thai_mueang
-			}
-			character_event = budevents.423
-		}
-		if = {
-			limit = {
-				culture = thai_paktai
-			}
-			character_event = budevents.424
-		}
-		else = {
-			character_event = budevents.420
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				has_education_learning_trigger = yes
-				factor = 2
-			}
-		}
+		name = EVTOPTE_akhom4 #Back to first step
+		character_event = { id = budevents.420 }
 	}
 }
 
 #Akhom paths Khmer
 character_event = {
-	id = budevents.421
-	picture = GFX_evt_courier
+	id = budevents.426
+	picture = GFX_evt_buddhist_thai_old_temple
 	desc = EVTDESC_BUDDHISTEVENT_420
 	border = GFX_event_normal_frame_religion
 
@@ -1409,46 +1660,17 @@ character_event = {
 			}
 		}
 	}
-	option = {
-		name = EVTOPTC_akhom1
-		add_character_modifier = {
-			name = akhom_preahko
-			duration = -1
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				has_education_stewardship_trigger = yes
-				factor = 2
-			}
-		}
-	}
 	
 	option = {
-		name = EVTOPTD_akhom1
-		add_character_modifier = {
-			name = akhom_neakta_phnom
-			duration = -1
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				has_education_learning_trigger = yes
-				factor = 2
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTE_akhom1 #Back to first step
-		character_event = budevents.420
+		name = EVTOPTE_akhom4 #Back to first step
+		character_event = { id = budevents.421 }
 	}
 }
 
 #Akhom paths North Thai
 character_event = {
-	id = budevents.422
-	picture = GFX_evt_courier
+	id = budevents.427
+	picture = GFX_evt_buddhist_thai_old_temple
 	desc = EVTDESC_BUDDHISTEVENT_420
 	border = GFX_event_normal_frame_religion
 
@@ -1503,30 +1725,15 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTD_akhom2
-		add_character_modifier = {
-			name = akhom_khruba
-			duration = -1
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				has_education_learning_trigger = yes
-				factor = 2
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTE_akhom2 #Back to first step
-		character_event = budevents.420
+		name = EVTOPTE_akhom4 #Back to first step
+		character_event = { id = budevents.422 }
 	}
 }
 
 #Akhom paths Central Thai
 character_event = {
-	id = budevents.423
-	picture = GFX_evt_courier
+	id = budevents.428
+	picture = GFX_evt_buddhist_thai_old_temple
 	desc = EVTDESC_BUDDHISTEVENT_420
 	border = GFX_event_normal_frame_religion
 
@@ -1535,20 +1742,6 @@ character_event = {
 	trigger = {
 		NOT = {
 			has_alternate_start_parameter = { key = religion_names value = random }
-		}
-	}
-	option = {
-		name = EVTOPTA_akhom3
-		add_character_modifier = {
-			name = akhom_siam_devadhirath
-			duration = -1
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				has_education_diplomacy_trigger = yes
-				factor = 2
-			}
 		}
 	}
 	option = {
@@ -1581,30 +1774,15 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTD_akhom3
-		add_character_modifier = {
-			name = akhom_mae_phosop
-			duration = -1
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				has_education_learning_trigger = yes
-				factor = 2
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTE_akhom3 #Back to first step
-		character_event = budevents.420
+		name = EVTOPTE_akhom4 #Back to first step
+		character_event = { id = budevents.423 }
 	}
 }
 
-#Akhom paths Central Thai
+#Akhom paths South Thai
 character_event = {
-	id = budevents.424
-	picture = GFX_evt_courier
+	id = budevents.429
+	picture = GFX_evt_buddhist_thai_old_temple
 	desc = EVTDESC_BUDDHISTEVENT_420
 	border = GFX_event_normal_frame_religion
 
@@ -1643,38 +1821,9 @@ character_event = {
 			}
 		}
 	}
-	option = {
-		name = EVTOPTC_akhom4
-		add_character_modifier = {
-			name = akhom_mae_yanang
-			duration = -1
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				has_education_stewardship_trigger = yes
-				factor = 2
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTD_akhom4
-		add_character_modifier = {
-			name = akhom_chatukham_ramdev
-			duration = -1
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				has_education_learning_trigger = yes
-				factor = 2
-			}
-		}
-	}
 	
 	option = {
 		name = EVTOPTE_akhom4 #Back to first step
-		character_event = budevents.420
+		character_event = { id = budevents.424 }
 	}
 }
