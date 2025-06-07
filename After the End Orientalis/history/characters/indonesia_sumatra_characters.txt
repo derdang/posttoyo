@@ -30,7 +30,6 @@
 #1954 Kerinci
 #1955 Basemah
 #1956 Tionghua
-#1957 Melayu
 #1960 Acehnese
 #1961 Minang
 #1964 Batak
@@ -38,8 +37,6 @@
 #1966 Mentawai
 #1967 Gayo
 #1968 Simelue
-#1969 Lampung
-#1970 Rejang
 
 ### ACEH
 
@@ -402,7 +399,7 @@
 	intrigue=7
 	stewardship=14
 	learning=8
-	culture=melayu
+	culture=siak
 	religion=renewalist
 	trait=maimed
 	father=1957712
@@ -418,7 +415,7 @@
 	intrigue=7
 	stewardship=2
 	learning=6
-	culture=melayu
+	culture=siak
 	religion=renewalist
 	trait=brave
 	father=1957712
@@ -429,7 +426,7 @@
 1957712 = {# father of the two above
 	name="Imansyah"
 	dynasty=1957023 # Othman
-	culture=melayu
+	culture=siak
 	religion=renewalist
 	2535.1.10={birth=yes}
 	2579.12.6={add_spouse=1957713}
@@ -440,7 +437,7 @@
 	name="Imansyah"
 	female=yes
 	dynasty=1957023 # Othman
-	culture=melayu
+	culture=siak
 	religion=renewalist
 	2556.1.10={birth=yes}
 }
@@ -453,7 +450,7 @@
 	intrigue=8
 	stewardship=14
 	learning=8
-	culture=melayu
+	culture=siak
 	religion=renewalist
 	trait=stressed
 	2560.11.5={birth=yes}
@@ -467,7 +464,7 @@
 	intrigue=16
 	stewardship=12
 	learning=11
-	culture=melayu
+	culture=riauan
 	religion=renewalist
 	2565.4.25={birth=yes}
 }
@@ -480,7 +477,7 @@
 	intrigue=7
 	stewardship=15
 	learning=9
-	culture=melayu
+	culture=jambi
 	religion=nusantara
 	2571.10.8={birth=yes}
 }
@@ -522,12 +519,12 @@
     trait=humble
     trait=envious
     2570.1.1={birth=yes}
-	2570.1.5={culture=melayu}
+	2570.1.5={culture=bangka}
     2700.1.1={death=yes}
 }
 1957752 = { #Duke of Bengkulu, rules Bengkulu, Lahat, and Seluma
 	name="Hassan"
-    dynasty=1957033 # Tunggau
+    dynasty=2026033 # Tunggau
     culture=rejang
     religion=renewalist
     trait=martial_cleric
@@ -594,7 +591,7 @@
 1957757 = { #Duke of Palembang, rules Banyuasin and Musi Banyuasin
 	name="Ismail"
     dynasty=1957034 # Siauw
-    culture=melayu
+    culture=palembang
     religion=nusantara
     trait=skilled_tactician
     trait=devout
