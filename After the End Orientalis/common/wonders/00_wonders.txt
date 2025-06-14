@@ -2424,6 +2424,7 @@ wonder_perfume_temple = {
 	default_picture_stage = 3
 	is_in_water = no
 	allow_coastal = no
+	allow_construction = no
 	show_model = yes
 	potential = {
 	}
@@ -2540,6 +2541,7 @@ wonder_intramuros = {
 	default_picture_stage = 3
 	allow_coastal = yes
 	is_in_water = no
+	allow_construction = no
 	show_model = yes
 	model = wonder_cathedral
 	potential = {
@@ -2661,6 +2663,7 @@ wonder_osaka_castle = {
 	default_picture_stage = 3
 	allow_coastal = no
 	is_in_water = no
+	allow_construction = no
 	show_model = yes
 	potential = {
 	}
@@ -2779,6 +2782,7 @@ wonder_osaka_castle = {
 wonder_monas = {
 	picture = GFX_wonder_strip_monas
 	model = wonder_statue
+	allow_construction = no
 	potential = {
 		NOT = {
 			trait = humble
@@ -2945,6 +2949,7 @@ wonder_monas = {
 # 7E. Batu Caves - Kuala Lumpur, Malayasia 
 wonder_batu_caves = {
 	picture = GFX_wonder_strip_batu_caves
+	allow_construction = no
 	potential = {
 		religion_group = indian_group
 	}
