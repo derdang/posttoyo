@@ -4161,7 +4161,7 @@ oldworld = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 	}
-	gongye_shenjiao = {
+	shengming = {
 		graphical_culture = chinesegfx
 
 		icon = 41
@@ -4173,20 +4173,25 @@ oldworld = {
 		
 		scripture_name = KEJI_SHU
 		
-		high_god_name = SUPREME_MATERIALISM
+		high_god_name = LUMINARY_SAGE
 		
 		god_names = {
-			 GOD_LIU_CIXIN GOD_OMNISSIAH GOD_MA_QIANZU GOD_ZHONGXIA GOD_CHEN_YUN GOD_NI_ZHIFU
+			 GOD_LIU_CIXIN GOD_MA_QIANZU GOD_ZHONGXIA GOD_BAIHUA GOD_CHEN_YUN GOD_NI_ZHIFU
 		}
 		
 		evil_god_names = {
-			RED_RUST TRISOLIAN
+			DARK_TIDE TRISOLIAN
 		}
 		
 		piety_name = DEVOTION
 		short_reign_opinion_year_mult = 0
 		
 		intermarry = oldworld
+		
+		#aggressive Old World Religion
+		allow_looting = yes
+		short_reign_opinion_year_mult = 1.5
+		aggression = 1.5 # AI aggression factor
 		
 		feminist = yes
 		female_temple_holders = yes

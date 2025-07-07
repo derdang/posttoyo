@@ -30,6 +30,28 @@ letter_event = {
 }
 
 #############################
+# Going to My Son
+#############################
+letter_event = {
+	id = hajj.2
+	desc = "EVTDESC_hajjtotwinheroshrine"
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPT_hajjtocity"
+		piety = 5
+		set_character_flag = preparing_hajj_twin_hero_shrine
+		clr_character_flag = activated_hajj_twin_hero_shrine
+		clr_character_flag = preparing_ziyara
+		hidden_tooltip = {
+			narrative_event = { id = hajj.5 days = 12 }
+		}	
+	}
+}
+
+#############################
 # Going to Imam San Tomb
 #############################
 narrative_event = {
@@ -94,6 +116,75 @@ narrative_event = {
 	option = { #Ends the Hajj Early
 		name = "EVTOPTB_hajj4"
 		clr_character_flag = preparing_hajj_imam_san_tomb
+		piety = -15
+	}
+}
+
+#############################
+# Going to My Son
+#############################
+narrative_event = {
+	id = hajj.5
+	title = EVTTITLE_HAJJTWINHEROSHRINE
+	desc = EVTDESC_hajj5
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "EVTOPTA_hajj5"
+		clr_character_flag = preparing_hajj_twin_hero_shrine
+		add_trait = on_ziyara
+		hidden_tooltip = {
+			character_event = { id = hajj.7 days = 30 }
+		}
+		hidden_tooltip = {
+			character_event = { id = hajj.31 days = 30 }
+		}
+		hidden_tooltip = {
+			if = {
+				limit = {
+					location = {
+						distance = {
+							where = 168	#Quang Nam
+							value = 400	#kind of far..
+						}
+					}
+				}
+				random_list = {
+					10 = { character_event = { id = SoA.5027 days = 5 random = 9 } }
+					10 = { narrative_event = { id = SoA.5028 days = 5 random = 9 } }
+					10 = { character_event = { id = SoA.5029 days = 5 random = 9 } }
+					10 = { character_event = { id = SoA.5030 days = 5 random = 9 } }
+				}
+			}
+			if = {
+				limit = {
+					location = {
+						distance = {
+							where = 168	#Quang Nam
+							value = 100	#kind of far..
+						}
+					}
+				}
+				random_list = {
+					10 = { character_event = { id = SoA.5031 days = 15 random = 7 } } # List that is always checked
+					10 = { character_event = { id = SoA.5032 days = 15 random = 7 } }
+					10 = { narrative_event = { id = SoA.5033 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5034 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5035 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5036 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5037 days = 15 random = 7 } }
+					10 = { character_event = { id = SoA.5038 days = 15 random = 7 } }
+				}
+			}
+		}
+		piety = 15
+	}
+	option = { #Ends the Hajj Early
+		name = "EVTOPTB_hajj5"
+		clr_character_flag = preparing_hajj_twin_hero_shrine
 		piety = -15
 	}
 }
@@ -267,6 +358,182 @@ character_event = {
 	is_triggered_only = yes
 	option = {
 		name = "EVTOPT_hajjimamsantombhome"
+		clr_character_flag = do_not_disturb
+		piety = 50
+		remove_trait = on_ziyara
+		add_trait = zair
+	}
+}
+
+##########################################################################
+# Arrival at Imam San Tomb
+##########################################################################				
+
+#Hidden gateway event				
+character_event = {
+	id = hajj.31
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		character_event = { id = hajj.32 day = 1}
+	}
+}
+
+character_event = {
+	id = hajj.32
+	title = "EVTTITLE_hajj32"
+	desc = "EVTDESC_hajj32"
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_hajjtoleranttwin_hero_shrine"
+		add_trait = sympathy_buddhist
+		add_trait = sympathy_indian
+		hidden_tooltip = {
+			character_event = { id = hajj.33 days = 1 }
+		}
+	}
+	option = {
+		name = "EVTOPT_hajjzealoustwin_hero_shrine"
+		add_trait = zealous
+		hidden_tooltip = {
+			character_event = { id = hajj.33 days = 1 }
+		}	
+	}
+}
+character_event = {
+	id = hajj.33
+	title = "EVTTITLE_hajj33"
+	desc = "EVTDESC_hajj33"
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA_hajj33"
+		scaled_wealth = -0.25
+		piety = 50
+		hidden_tooltip = {
+			character_event = { id = hajj.34 days = 4 }
+		}	
+	}
+	option = {
+		name = "EVTOPTB_hajj33"
+		scaled_wealth = -0.50
+		piety = 100
+		hidden_tooltip = {
+			random_list = {
+				50 = {add_trait = charitable}
+				50 = {add_trait = zealous}
+			}
+		}
+		hidden_tooltip = {
+			character_event = { id = hajj.34 days = 4 }
+		}	
+	}
+	option = {
+		name = "EVTOPTC_hajj33"
+		scaled_wealth = -1.5
+		prestige = 100
+		add_trait = proud
+		hidden_tooltip = {
+			character_event = { id = hajj.34 days = 4 }
+		}	
+	}
+	option = {
+		name = "EVTOPTD_hajj33"
+		piety = -50
+		add_trait = greedy
+		hidden_tooltip = {
+			character_event = { id = hajj.34 days = 4 }
+		}	
+	}
+}
+narrative_event = {
+	id = hajj.34
+	title = EVTTITLE_HAJJTWINHEROSHRINEARRIVED
+	desc = EVTDESC_hajjtwin_hero_shrine
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_narrative_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPTA_hajjtwin_hero_shrine"
+		piety = 10
+		trigger = {
+			is_female = no
+			is_married = yes
+		}
+		spouse = {
+				show_scope_change = no
+				piety = 50
+			} 
+		hidden_tooltip = {
+			character_event = { id = hajj.35 days = 35 }
+		}	
+	}
+	option = {
+		name = "EVTOPTB_hajjtwin_hero_shrine"
+		trigger = {
+			is_female = yes
+		}
+		piety = 50
+		hidden_tooltip = {
+			character_event = { id = hajj.35 days = 35 }
+		}	
+	}
+	option = {
+		name = "EVTOPTC_hajjtwin_hero_shrine"
+		prestige = 50
+		trigger = {
+			is_female = no
+			is_married = yes
+		}
+		spouse = {
+				show_scope_change = no
+				piety = 100
+				opinion = { 
+					who = PREV
+					modifier = opinion_antagonize_slandering_spouse
+					years = 10
+				} 
+			} 
+		hidden_tooltip = {
+			character_event = { id = hajj.35 days = 35 }
+		}	
+	}
+	option = {
+		name = "EVTOPTD_hajjtwin_hero_shrine"
+		trigger = {
+			trait = gluttonous
+		}
+		piety = -50
+		hidden_tooltip = {
+			character_event = { id = hajj.35 days = 35 }
+		}	
+	}
+	option = { #fallback if not married
+		name = "EVTOPTE_hajjtwin_hero_shrine"
+		hidden_tooltip = {
+			character_event = { id = hajj.35 days = 35 }
+		}	
+	}
+}
+character_event = {
+	id = hajj.35
+	title = END_OF_ZIYARA
+	desc = "EVTDESC_hajjtwinheroshrinehome"
+	picture = GFX_evt_buddhist_thai_old_temple
+	border = GFX_event_normal_frame_religion
+	prisoner = no
+	is_triggered_only = yes
+	option = {
+		name = "EVTOPT_hajjtwinheroshrinehome"
 		clr_character_flag = do_not_disturb
 		piety = 50
 		remove_trait = on_ziyara
@@ -1873,8 +2140,7 @@ narrative_event = {
 			}
 		}
 		hidden_tooltip = {
-			#letter_event = { id = hajj.--- days = 2 } Future Hajj Event
-			clr_character_flag = preparing_ziyara #temp
+			letter_event = { id = hajj.2 days = 2 } Future Hajj Event
 		}
 	}
 	option = {
