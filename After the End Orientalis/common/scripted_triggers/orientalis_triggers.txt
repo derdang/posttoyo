@@ -113,3 +113,18 @@ is_bureaucratic_religion = {
 		religion = sanmin
 	}
 }
+
+is_sea_pagan = {
+	OR = {
+		religion = kaharingan_reformed
+		religion = kaharingan
+		religion = dayawist
+		religion = dayawist_reformed
+		religion = diwata
+		religion = diwata_reformed
+		religion = momolian_reformed
+		religion = momolian
+		religion = holchu
+		religion = holchu_reformed
+	}
+}

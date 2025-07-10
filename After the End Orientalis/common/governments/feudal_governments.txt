@@ -352,7 +352,7 @@ feudal_governments = {
 				religion_group = muslim
 				has_religion_feature = religion_temporal_head
 				AND = {
-					religion = norse_pagan_reformed
+					religion = americanist_reformed
 					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
 				}
 			}
@@ -636,7 +636,7 @@ feudal_governments = {
 				religion_group = muslim
 				has_religion_feature = religion_temporal_head
 				AND = {
-					religion = norse_pagan_reformed
+					religion = americanist_reformed
 					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
 				}
 			}
@@ -644,19 +644,28 @@ feudal_governments = {
 				religion = nusantara
 				controls_religion = yes
 			}
-			NOT = {	religion_group = christian }
-			NOT = { is_government_potential = roman_imperial_government }
-			NOT = { is_government_potential = order_government }
 			OR = { 
 				AND = {
 					OR = {
 						is_theravada = yes
+						AND = {
+							is_sea_pagan = yes
+							is_tribal = no
+						}
 						religion_group = indian_group
 						religion = pancasila
 						religion = kebatinan
 						religion = nusantara
 						religion = bani
 						religion = kan_imam_san
+						AND = {
+							religion_group = christian
+							NOR = {
+								culture_group = philippine
+								culture_group = timor
+							}
+							is_tribal = no
+						}
 					}
 					OR = {
 						culture_group = southwest_tai
@@ -686,6 +695,8 @@ feudal_governments = {
 					has_character_flag = chinese_imperial_government_preserve #keeps government when player is given culture change opton
 				}
 			}
+			NOT = { is_government_potential = roman_imperial_government }
+			NOT = { is_government_potential = order_government }
 			is_patrician = no
 		}
 		

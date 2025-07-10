@@ -45,6 +45,26 @@ custom_sumatra = {
 		d_palembang d_bangka_belitung d_bengkulu d_lampung d_ogan_komering d_aceh_utara d_aceh_selatan d_medan d_tapanuli d_siak d_indragiri d_jambi d_kerinci d_labuhanbatu d_rokan d_sumbar
     }
 }
+custom_java = {
+    duchies = {
+		d_banten d_jawa_kulon d_lombok d_bali d_flores d_maumere d_sumba d_sumbawa d_surabaya d_madura d_semarang d_lorosae d_malada d_timbar d_yogyakarta d_solo d_malang
+    }
+}
+custom_sulawesi = {
+    duchies = {
+		d_makassar d_luwu d_pare_pare d_sulbar d_konawe d_banggai d_buton d_kolaka d_morowali d_minahasa d_bolaang_mongondow d_gorontalo d_palu d_tomini
+    }
+}
+custom_maluku = {
+    duchies = {
+		d_ternate_tidore d_kepulauan_sula d_maluku_tenggara d_oba d_seram
+    }
+}
+custom_borneo = {
+    duchies = {
+		d_khatulistiwa d_kapuas_raya d_ketapang d_kotawaringin d_singkawang d_banjar_bakula d_kotabaru d_hulu_sungai d_palangka_raya d_barito d_kutai_kartanegara d_bulungan d_kutai_barat d_kutai_timur d_brunei d_pantai_barat d_labuan d_pedalaman d_sandakan d_tawau d_kuching d_bintulu d_kapit d_limbang d_miri d_mukah d_sarikei d_sibu d_sri_aman
+    }
+}
 custom_andaman = {
     duchies = {
 		d_south_andaman d_north_andaman d_nicobar
@@ -280,23 +300,39 @@ custom_korea = {
 		d_hamgyong d_wonsan d_taegu d_pusan d_chagang d_hwanghae d_pyongyang d_seoul d_chungcheong d_gangwon d_jeju d_jeolla 
     }
 }
+custom_papua = {
+	regions = {
+		d_birds_tail d_bismarck d_eastern_highlands d_enga d_madang d_morobe d_sepik d_the_gulf d_birds_head d_baliem_valley d_bomberai d_cenderawasih d_central_highlands d_humboldt d_lorentz d_torres_strait
+    }
+}
 custom_china_core = {
 	regions = {
 		custom_xibei custom_zhongnan custom_huadong custom_xinan custom_dongbei custom_huabei
     }
 }
-world_old_japan = {
-	regions = {
-		custom_honshu custom_shikoku custom_kyushu custom_hokkaido custom_okinawa
-    }
-}
-world_the_philippines = {
+custom_the_philippines = {
 	regions = {
 		custom_mindanao custom_visaya custom_luzon
     }
 	duchies = {
 		d_sulu
 	}
+}
+custom_indonesia = {
+	regions = {
+		custom_sumatra custom_java custom_maluku custom_sulawesi custom_borneo
+    }
+}
+custom_indomalay = {
+	regions = {
+		custom_pennisular_malaysia custom_singapura custom_indonesia
+    }
+}
+
+world_old_japan = {
+	regions = {
+		custom_honshu custom_shikoku custom_kyushu custom_hokkaido custom_okinawa
+    }
 }
 world_old_china = {
 	regions = {
@@ -308,21 +344,28 @@ world_indochina = {
 		custom_old_vietnam custom_old_laos custom_old_cambodia custom_old_siam custom_old_burma
     }
 }
-custom_historical_plague_free_zone = {
+world_nusantara = {
+    regions = {
+		custom_the_philippines custom_indomalay
+    }
+}
+custom_micronesia = {
     duchies = {
 		d_guam d_mariana d_palau d_yap
     }
 }
+custom_historical_plague_free_zone = {
+    regions = {
+		custom_micronesia
+    }
+}
 custom_monsoon_region = {
     regions = {
-		world_indochina world_the_philippines custom_pennisular_malaysia custom_singapura custom_sumatra custom_andaman custom_xinan custom_zhongnan custom_taiwan custom_fujian custom_anhui custom_zhejiang custom_jiangxi custom_jiangsu custom_kyushu custom_shikoku custom_honshu custom_okinawa
-    }
-	duchies = {
-		d_guam d_mariana d_palau d_yap
+		world_indochina world_nusantara custom_andaman custom_xinan custom_zhongnan custom_taiwan custom_fujian custom_anhui custom_zhejiang custom_jiangxi custom_jiangsu custom_kyushu custom_shikoku custom_honshu custom_okinawa custom_micronesia
     }
 }
 custom_earthquake_region = {
 	regions = {
-		world_old_japan world_the_philippines custom_taiwan
+		world_old_japan world_nusantara custom_taiwan
     }
 }
