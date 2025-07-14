@@ -94,3 +94,17 @@ charkha = {
 	picture = "GFX_charkha"
 	stacking = no
 }
+ciacia_annal = {
+	quality = 2
+	learning = -1
+	active = {
+		OR = {
+			learning = 12
+			is_adult = yes
+		}
+	}
+	flags = { joke art book }
+	stacking = no
+	picture = "GFX_book_red"
+	stacking = no
+}
