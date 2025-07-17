@@ -809,6 +809,8 @@ feudal_governments = {
 							religion = heilong_reformed
 							religion = chuma
 							religion = chuma_reformed
+							religion = changbai
+							religion = changbai_reformed
 						}
 					}
 					##########################
@@ -831,7 +833,10 @@ feudal_governments = {
 						higher_tier_than = BARON
 					}
 					AND = {
-						is_mahayana_chinese = yes
+						OR = {
+							is_mahayana_chinese = yes
+							religion = azhali
+						}
 						OR = {
 							is_oversea_chinese = yes
 							culture_group = hmong_mien

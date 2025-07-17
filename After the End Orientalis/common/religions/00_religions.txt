@@ -2608,6 +2608,211 @@ pagan_group = {
 		dislike_tribal_organization = yes
 		reformed = makasol_reformed
 	}
+	bimo_reformed = {
+		graphical_culture = chinesegfx
+
+		icon = 77
+		heresy_icon = 78
+		
+		color = { 80 180 120 }
+
+		high_god_name = GOD_LONGYI
+
+		god_names = {
+			GOD_LONGYI GOD_SHUOTNYIE_VOPLIE GOD_AKI GOD_ZHYGE_ALU GOD_SIREABI GOD_ATILABA GOD_BODDHISATTVA
+		}
+		evil_god_names = {
+			JIEGUJIENUO BBAHXA_AYUOSSE
+		}
+		
+		scripture_name = THE_NUOSU
+		priest_title = BIMO
+		priests_can_marry = yes
+		
+		
+		feminist = yes
+		female_temple_holders = yes
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	bimo = {
+		graphical_culture = chinesegfx
+
+		icon = 76
+		heresy_icon = 78
+		
+		color = { 60 200 125 }
+
+		high_god_name = GOD_LONGYI
+
+		god_names = {
+			GOD_LONGYI GOD_SHUOTNYIE_VOPLIE GOD_AKI GOD_ZHYGE_ALU GOD_SIREABI GOD_ATILABA GOD_BODDHISATTVA
+		}
+		evil_god_names = {
+			JIEGUJIENUO BBAHXA_AYUOSSE
+		}
+		
+		scripture_name = THE_NUOSU
+		priest_title = BIMO
+		priests_can_marry = yes
+		reformed = bimo_reformed
+		
+		
+		feminist = yes
+		female_temple_holders = yes
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	benzhu_reformed = {
+		graphical_culture = chinesegfx
+
+		icon = 77
+		heresy_icon = 78
+		
+		color = { 70 210 100 }
+
+		high_god_name = GOD_LONGWANG
+
+		god_names = {
+			GOD_LONGWANG GOD_LONGMU GOD_GUIYI GOD_MA_SHIZI GOD_QIJIA_WANG GOD_LAOJUN_JINGDI GOD_GUANYIN GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			MA
+		}
+		
+		scripture_name = NANZHAO_TUZHUAN
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		
+		
+		feminist = yes
+		female_temple_holders = yes
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	benzhu = {
+		graphical_culture = chinesegfx
+
+		icon = 76
+		heresy_icon = 78
+		
+		color = { 60 190 88 }
+
+		high_god_name = GOD_LONGWANG
+
+		god_names = {
+			GOD_LONGWANG GOD_LONGMU GOD_GUIYI GOD_MA_SHIZI GOD_QIJIA_WANG GOD_LAOJUN_JINGDI GOD_GUANYIN GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			MA
+		}
+		
+		scripture_name = NANZHAO_TUZHUAN
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		reformed = benzhu_reformed
+		
+		
+		feminist = yes
+		female_temple_holders = yes
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	changbai_reformed = {
+		graphical_culture = chinesegfx
+
+		icon = 77
+		heresy_icon = 78
+		
+		color = { 230 220 220 }
+
+		high_god_name = GOD_MUBYASEI
+
+		god_names = {
+			GOD_MUBYASEI GOD_JADE_EMPEROR GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			MA
+		}
+		
+		scripture_name = RITE_OF_MOUNTAIN
+		priest_title = MBI
+		priests_can_marry = yes
+		
+		
+		female_temple_holders = yes
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	changbai = {
+		graphical_culture = chinesegfx
+
+		icon = 76
+		heresy_icon = 78
+		
+		color = { 255 250 250 }
+
+		high_god_name = GOD_MUBYASEI
+
+		god_names = {
+			GOD_MUBYASEI GOD_JADE_EMPEROR GOD_THE_SPIRITS GOD_THE_ANCESTORS
+		}
+		evil_god_names = {
+			MA
+		}
+		
+		scripture_name = RITE_OF_MOUNTAIN
+		priest_title = MBI
+		priests_can_marry = yes
+		reformed = changbai_reformed
+		
+		
+		female_temple_holders = yes
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
 }
 
 jewish_group = {
@@ -3805,6 +4010,43 @@ buddhist_group = {
 		female_temple_holders = yes
 		can_grant_divorce = yes
 		castes = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
+	azhali = {
+		graphical_culture = chinesegfx
+
+		icon = 18
+		heresy_icon = 19
+		
+		color = { 180 220 55 }
+		
+		scripture_name = MAHAYANA_SUTRAS
+		priest_title = ACHARYA
+		
+		high_god_name = GOD_DHAMA
+		
+		god_names = {
+			 GOD_BUDDHA GOD_AMITABHA GOD_MAITREYA GOD_LOKESHVARA GOD_MAHAKALA
+		}
+		
+		evil_god_names = {
+			NARAKA MARA
+		}
+		
+		parent = mahayana
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = eastern
+		
+		can_grant_divorce = yes
+		priests_can_marry = yes
 		priests_can_inherit = no
 		can_retire_to_monastery = yes 
 		
