@@ -23,7 +23,7 @@ decisions = {
 						is_liege_or_above = ROOT
 					}
 					AND = {
-						ROOT = { religion = cao_dai }
+						ROOT = { OR {religion = cao_dai secret_religion = cao_dai} }
 						d_cao_dai_papacy = {
 							holder_scope = {
 								NOT = { character = PREVPREV }
@@ -110,7 +110,7 @@ decisions = {
 		ai_check_interval = 120
 		
 		potential = {
-			religion = cao_dai
+			OR {religion = cao_dai secret_religion = cao_dai}
 			age = 16
 			prisoner = no
 			in_seclusion = no
@@ -206,7 +206,7 @@ decisions = {
 		ai_check_interval = 60
 		
 		potential = {
-			religion = bani
+			OR  = {religion = bani secret_religion = bani}
 			NOT = { trait = legendary }
 			in_seclusion = no
 			NOT = { #immersion-breaking
@@ -266,7 +266,7 @@ decisions = {
 		ai_check_interval = 60
 		
 		potential = {
-			religion = wokou
+			OR = {religion = wokou secret_religion = wokou}
 			in_seclusion = no
 			NOT = { is_incapable = yes }
 			NOT = { trait = legendary }
@@ -417,6 +417,9 @@ decisions = {
 				religion = hui
 				religion = bani
 				religion = kan_imam_san
+				secret_religion = hui
+				secret_religion = bani
+				secret_religion = kan_imam_san
 			}
 			NOT = { trait = zair }
 			NOT = { trait = on_ziyara }
@@ -742,7 +745,7 @@ decisions = {
 			is_playable = yes
 			prisoner = no
 			is_adult = yes
-			religion = bani
+			OR = {religion = bani secret_religion = bani}
 			NOT = { has_character_flag = ramuwan }
 			NOT = { has_character_modifier = observed_ramuwan }
 			NOT = { trait = on_hajj }
@@ -807,7 +810,7 @@ decisions = {
 			is_playable = yes
 			is_adult = yes
 			prisoner = no
-			religion = shinto
+			OR = {religion = shinto secret_religion = shinto}
 			NOT = { has_character_modifier = held_obon_festival_timer }
 			NOT = {	has_character_flag = holding_obon_festival }
 			NOT = {	has_character_flag = attending_obon_festival }
@@ -901,7 +904,7 @@ decisions = {
 		ai = no
 		
 		potential = {
-			religion = shinto
+			OR = {religion = shinto secret_religion = shinto}
 			is_playable = yes
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
@@ -930,7 +933,7 @@ decisions = {
 		ai = no
 		
 		potential = {
-			religion = mahayana
+			OR = {religion = mahayana secret_religion = mahayana}
 			is_playable = yes
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
@@ -939,7 +942,7 @@ decisions = {
 		}
 		
 		allow = {
-			religion = mahayana
+			OR = {religion = mahayana secret_religion = mahayana}
 			is_playable = yes
 		}
 		
@@ -959,7 +962,7 @@ decisions = {
 		ai = no
 		
 		potential = {
-			religion = sanmin
+			OR = {religion = sanmin secret_religion = sanmin}
 			is_playable = yes
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
@@ -968,7 +971,7 @@ decisions = {
 		}
 		
 		allow = {
-			religion = sanmin
+			OR = {religion = sanmin secret_religion = sanmin}
 			is_playable = yes
 		}
 		
@@ -988,7 +991,7 @@ decisions = {
 		ai = no
 		
 		potential = {
-			religion = quanzhen
+			OR = {religion = quanzhen secret_religion = quanzhen}
 			is_playable = yes
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
@@ -1017,7 +1020,7 @@ decisions = {
 		ai = no
 		
 		potential = {
-			religion = hui
+			OR = {religion = hui secret_religion = hui}
 			is_playable = yes
 			NOT = {
 				has_alternate_start_parameter = { key = religion_names value = random }
@@ -1026,7 +1029,7 @@ decisions = {
 		}
 		
 		allow = {
-			religion = hui
+			OR = {religion = hui secret_religion = hui}
 			is_playable = yes
 		}
 		
@@ -1048,9 +1051,11 @@ decisions = {
 		potential = {
 			OR = {
 				religion = taoist
+				secret_religion = taoist
 				religion = quanzhen
+				secret_religion = quanzhen
 				AND = {
-					religion = hui
+					OR = {religion = hui secret_religion = hui}
 					trait = xidaotang
 				}
 			}
@@ -1115,7 +1120,7 @@ decisions = {
 		ai_check_interval = 60
 		
 		potential = {
-			religion = hui
+			OR = {religion = hui secret_religion = hui}
 			trait = gedimu
 			age = 16
 			prisoner = no
@@ -1188,6 +1193,388 @@ decisions = {
 				}
 			}
 			set_global_flag = unificationist_formed
+		}
+	}
+	asian_secondary_religion_picks_human = {
+		is_high_prio = yes
+		ai_check_interval = 18
+		
+		potential = {
+				OR = {
+					religion = hui
+					religion = bani
+					religion = kan_imam_san
+					religion = ua_dab
+					religion = ua_dab_reformed
+					religion = seirei
+					religion = seirei_reformed
+					religion = muist
+					religion = muist_reformed
+					religion = shenist
+					religion = shenist_reformed
+					religion = mo
+					religion = mo_reformed
+					religion = chuma
+					religion = chuma_reformed
+					religion = heilong
+					religion = heilong_reformed
+					religion = bimo
+					religion = bimo_reformed
+					religion = benzhu
+					religion = benzhu_reformed
+					religion = vvlufi
+					religion = vvlufi_reformed
+					religion = shinto
+					religion = shinko
+					religion = tenrikyo
+					religion = chinomi
+					religion = chinomi_reformed
+					religion = cao_dai
+					religion = ruist
+					religion = taoist
+					religion = quanzhen
+					religion = shanrendao
+					religion = cheondoist
+					religion = datong
+					religion = mahayana
+					religion = soka_gakkai
+					religion = shingon_shu
+					religion = yuilsasang
+					religion = jibenyuanze
+					religion = sanmin
+					religion = jinbenwei
+					religion = shengming
+					religion = wokou
+					religion = jewish
+				}
+			war = no
+			in_command = no
+			prisoner = no
+			is_ruler = yes
+			ai = no
+			NOT = {
+				has_character_modifier = hidden_picker_timer_modif
+			}
+		}
+		allow = {
+			piety = 50
+		}
+		effect = {
+			piety = -50
+			hidden_tooltip = { add_character_modifier = { name = hidden_picker_timer_modif duration = 7300 hidden = yes} }
+			remove_character_modifier = has_two_faiths 
+			add_character_modifier = { name = has_two_faiths days = -1 }
+			if = {
+				limit = {
+					OR = {
+						culture_group = japonic
+						culture = ainu
+						capital_scope = {
+							region = world_old_japan
+						}
+					}
+				}
+				long_character_event = { id = asia.76 }
+			}
+			else_if = {
+				limit = {
+					OR = {
+						culture_group = korean
+						capital_scope = {
+							region = custom_korea
+						}
+					}
+				}
+				long_character_event = { id = asia.86 }
+			}
+			else_if = {
+				limit = {
+					OR = {
+						culture_group = viet
+						culture_group = chamic
+						culture_group = north_tai
+						culture_group = hmong_mien
+						capital_scope = {
+							region = custom_old_vietnam
+						}
+					}
+				}
+				long_character_event = { id = asia.96 }
+			}
+			else = {
+				long_character_event = { id = asia.66 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	asian_secondary_religion_picks_ai = {
+		is_high_prio = yes
+		ai_check_interval = 18
+		
+		potential = {
+				OR = {
+					religion = hui
+					religion = bani
+					religion = kan_imam_san
+					religion = ua_dab
+					religion = ua_dab_reformed
+					religion = seirei
+					religion = seirei_reformed
+					religion = muist
+					religion = muist_reformed
+					religion = shenist
+					religion = shenist_reformed
+					religion = mo
+					religion = mo_reformed
+					religion = chuma
+					religion = chuma_reformed
+					religion = heilong
+					religion = heilong_reformed
+					religion = bimo
+					religion = bimo_reformed
+					religion = benzhu
+					religion = benzhu_reformed
+					religion = vvlufi
+					religion = vvlufi_reformed
+					religion = shinto
+					religion = shinko
+					religion = tenrikyo
+					religion = chinomi
+					religion = chinomi_reformed
+					religion = cao_dai
+					religion = ruist
+					religion = taoist
+					religion = quanzhen
+					religion = shanrendao
+					religion = cheondoist
+					religion = datong
+					religion = mahayana
+					religion = soka_gakkai
+					religion = shingon_shu
+					religion = yuilsasang
+					religion = jibenyuanze
+					religion = sanmin
+					religion = jinbenwei
+					religion = shengming
+					religion = wokou
+					religion = jewish
+				}
+			war = no
+			in_command = no
+			prisoner = no
+			is_ruler = yes
+			ai = yes
+			NOT = {
+				has_character_modifier = hidden_picker_timer_modif
+			}
+		}
+		allow = {
+			piety = 50
+		}
+		effect = {
+			piety = -50
+			hidden_tooltip = { add_character_modifier = { name = hidden_picker_timer_modif duration = 7300 hidden = yes} }
+			remove_character_modifier = has_two_faiths 
+			add_character_modifier = { name = has_two_faiths days = -1 }
+			random_list = {
+				33 = {
+					trigger = {
+						OR = {
+							culture_group = japonic
+						}
+					}
+					random_list = {
+						33 = {
+							set_secret_religion = shinto
+						}
+						33 = {
+							set_secret_religion = shinko
+						}
+						33 = {
+							set_secret_religion = tenrikyo
+						}
+						33 = {
+							set_secret_religion = chinomi
+						}
+						33 = {
+							set_secret_religion = chinomi_reformed
+						}
+						33 = {
+							set_secret_religion = shingon_shu
+						}
+						33 = {
+							set_secret_religion = soka_gakkai
+						}
+						33 = {
+							set_secret_religion = seirei
+						}
+						33 = {
+							set_secret_religion = seirei_reformed
+						}
+					}
+				}
+				33 = {
+					trigger = {
+						OR = {
+							culture_group = korean
+						}
+					}
+					random_list = {
+						33 = {
+							trigger = {
+								muist_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
+							set_secret_religion = muist_reformed
+						}
+						33 = {
+							set_secret_religion = cheondoist
+						}
+						33 = {
+							set_secret_religion = mahayana
+						}
+						33 = {
+							set_secret_religion = yuilsasang
+						}
+					}
+				}
+				33 = {
+					trigger = {
+						OR = {
+							culture_group = viet
+							culture_group = chamic
+							culture_group = north_tai
+						}
+					}
+					random_list = {
+						33 = {
+							set_secret_religion = cao_dai
+						}
+						33 = {
+							set_secret_religion = hoa_hao
+						}
+						33 = {
+							set_secret_religion = mahayana
+						}
+						33 = {
+							set_secret_religion = bani
+						}
+						33 = {
+							set_secret_religion = kan_imam_san
+						}
+					}
+				}
+				33 = {
+					trigger = {
+						NOR = {
+							culture_group = japonic
+							culture_group = viet
+							culture_group = chamic
+							culture_group = korean
+						}
+					}
+					random_list = {
+						33 = {
+							set_secret_religion = ruist
+						}
+						33 = {
+							set_secret_religion = taoist
+						}
+						33 = {
+							set_secret_religion = quanzhen
+						}
+						33 = {
+							set_secret_religion = shanrendao
+						}
+						33 = {
+							set_secret_religion = legalist
+						}
+						33 = {
+							set_secret_religion = mahayana
+						}
+						33 = {
+							set_secret_religion = jewish
+						}
+						33 = {
+							set_secret_religion = shengming
+						}
+						33 = {
+							set_secret_religion = jibenyuanze
+						}
+						33 = {
+							set_secret_religion = sanmin
+						}
+						33 = {
+							set_secret_religion = jinbenwei
+						}
+						33 = {
+							set_secret_religion = wokou
+						}
+						33 = {
+							trigger = {
+								mo_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
+							set_secret_religion = mo_reformed
+						}
+						33 = {
+							trigger = {
+								benzhu_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
+							set_secret_religion = benzhu_reformed
+						}
+						33 = {
+							trigger = {
+								vvlufi_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
+							set_secret_religion = vvlufi_reformed
+						}
+						33 = {
+							trigger = {
+								bimo_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
+							set_secret_religion = bimo_reformed
+						}
+						33 = {
+							trigger = {
+								heilong_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
+							set_secret_religion = heilong_reformed
+						}
+						33 = {
+							trigger = {
+								chuma_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
+							set_secret_religion = chuma_reformed
+						}
+						33 = {
+							trigger = {
+								shenist_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
+							set_secret_religion = shenist_reformed
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

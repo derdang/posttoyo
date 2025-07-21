@@ -109,6 +109,13 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_devout"
+		texturefile = "gfx/traits/devout.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 ############################
 # A Game of Thrones Traits #
@@ -495,6 +502,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_seirei_revelation"
 		texturefile = "gfx/event_pictures/seirei_revelation.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_japanese_archer"
+		texturefile = "gfx/event_pictures/japanese_archer.dds"
 	}
 	spriteType = {
 		name = "GFX_japanese_palace"
@@ -974,6 +985,10 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_catholic_pilgrimage.dds"
 	}
 	spriteType = {
+		name = "GFX_asian_secondary_religion_picks_human"
+		texturefile = "gfx\\interface\\learning_reform.dds"
+	}
+	spriteType = {
 		name = "GFX_reunify_tianxia"
 		texturefile = "gfx\\interface\\reunify_tianxia.dds"
 	}
@@ -1154,10 +1169,7 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_host_ploughing_ceremony.dds"
 	}
 	spriteType = {
-		name = "GFX_trait_devout"
-		texturefile = "gfx/traits/devout.dds"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
+		name = "GFX_hold_archery_divination"
+		textureFile = "gfx\\interface\\hold_archery_divination.dds"
 	}
 }

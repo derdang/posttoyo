@@ -1,0 +1,1183 @@
+namespace=asia
+#########################################
+#
+#	asia religious events
+#
+#########################################
+character_event = {#Trait choice 1
+	id = asia.66
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	desc = {
+		text = asia66Desc
+	}
+	option = {
+		name = EVTOPTA_asia66
+		trigger = {
+			NOT = {
+				religion = taoist
+			}
+		}
+		set_secret_religion = taoist
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = taoist
+		}
+		spouse = {
+			set_secret_religion = taoist
+		}
+		any_child = {
+			set_secret_religion = taoist
+			any_child = {
+				set_secret_religion = taoist
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia66
+		trigger = {
+			NOT = {
+				religion = ruist
+			}
+		}
+		set_secret_religion = ruist
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = ruist
+		}
+		spouse = {
+			set_secret_religion = ruist
+		}
+		any_child = {
+			set_secret_religion = ruist
+			any_child = {
+				set_secret_religion = ruist
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia66
+		trigger = {
+			NOT = {
+				religion = quanzhen
+			}
+		}
+		set_secret_religion = quanzhen
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = quanzhen
+		}
+		spouse = {
+			set_secret_religion = quanzhen
+		}
+		any_child = {
+			set_secret_religion = quanzhen
+			any_child = {
+				set_secret_religion = quanzhen
+			}
+		}
+	}
+	option = {#Next event
+		name = EVTOPT_more
+		character_event = { id = asia.661 }
+	}
+
+}
+
+character_event = {#Trait choice 2
+	id = asia.661
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	desc = {
+		text = asia66Desc
+	}
+	option = {
+		name = EVTOPTA_asia661
+		trigger = {
+			NOT = {
+				religion = shanrendao
+			}
+			shanrendao = {
+				is_reformed_religion = PREV
+			}
+		}
+		set_secret_religion = shanrendao
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = shanrendao
+				
+		}
+		spouse = {
+			set_secret_religion = shanrendao
+				
+		}
+		any_child = {
+			set_secret_religion = shanrendao
+				
+			any_child = {
+				set_secret_religion = shanrendao
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia661
+		trigger = {
+			NOT = {
+				religion = shengming
+			}
+			shengming = {
+				is_reformed_religion = PREV
+			}
+		}
+		set_secret_religion = shengming
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = shengming
+				
+		}
+		spouse = {
+			set_secret_religion = shengming
+				
+		}
+		any_child = {
+			set_secret_religion = shengming
+				
+			any_child = {
+				set_secret_religion = shengming
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia661
+		trigger = {
+			NOT = {
+				religion = wokou
+			}
+		}
+		set_secret_religion = wokou
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = wokou
+				
+		}
+		spouse = {
+			set_secret_religion = wokou
+				
+		}
+		any_child = {
+			set_secret_religion = wokou
+				
+			any_child = {
+				set_secret_religion = wokou
+				
+			}
+		}
+	}
+	option = {#Go back
+		name = EVTOPT_more
+		character_event = { id = asia.662 }
+	}
+}
+character_event = {#Trait choice 2
+	id = asia.662
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	desc = {
+		text = asia66Desc
+	}
+	option = {
+		name = EVTOPTA_asia662
+		trigger = {
+			NOT = {
+				religion = shenist_reformed
+			}
+		}
+		set_secret_religion = shenist_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = shenist_reformed
+				
+		}
+		spouse = {
+			set_secret_religion = shenist_reformed
+				
+		}
+		any_child = {
+			set_secret_religion = shenist_reformed
+				
+			any_child = {
+				set_secret_religion = shenist_reformed
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia662
+		trigger = {
+			NOT = {
+				religion = mo_reformed
+			}
+		}
+		set_secret_religion = mo_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = mo_reformed
+				
+		}
+		spouse = {
+			set_secret_religion = mo_reformed
+				
+		}
+		any_child = {
+			set_secret_religion = mo_reformed
+				
+			any_child = {
+				set_secret_religion = mo_reformed
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia662
+		trigger = {
+			NOT = {
+				religion = chuma_reformed
+			}
+		}
+		set_secret_religion = chuma_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = chuma_reformed
+				
+		}
+		spouse = {
+			set_secret_religion = chuma_reformed
+				
+		}
+		any_child = {
+			set_secret_religion = chuma_reformed
+				
+			any_child = {
+				set_secret_religion = chuma_reformed
+				
+			}
+		}
+	}
+	option = {#Go back
+		name = EVTOPT_more
+		character_event = { id = asia.663 }
+	}
+}
+character_event = {#Trait choice 2
+	id = asia.663
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	desc = {
+		text = asia66Desc
+	}
+	option = {
+		name = EVTOPTA_asia663
+		trigger = {
+			NOT = {
+				religion = heilong_reformed
+			}
+		}
+		set_secret_religion = heilong_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = heilong_reformed
+				
+		}
+		spouse = {
+			set_secret_religion = heilong_reformed
+				
+		}
+		any_child = {
+			set_secret_religion = heilong_reformed
+				
+			any_child = {
+				set_secret_religion = heilong_reformed
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia663
+		trigger = {
+			NOT = {
+				religion = bimo_reformed
+			}
+		}
+		set_secret_religion = bimo_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = bimo_reformed
+				
+		}
+		spouse = {
+			set_secret_religion = bimo_reformed
+				
+		}
+		any_child = {
+			set_secret_religion = bimo_reformed
+				
+			any_child = {
+				set_secret_religion = bimo_reformed
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia663
+		trigger = {
+			NOT = {
+				religion = benzhu_reformed
+			}
+		}
+		set_secret_religion = benzhu_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = benzhu_reformed
+				
+		}
+		spouse = {
+			set_secret_religion = benzhu_reformed
+				
+		}
+		any_child = {
+			set_secret_religion = benzhu_reformed
+				
+			any_child = {
+				set_secret_religion = benzhu_reformed
+				
+			}
+		}
+	}
+	option = {#Go back
+		name = EVTOPT_more
+		character_event = { id = asia.664 }
+	}
+}
+
+character_event = {#Trait choice 2
+	id = asia.664
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	desc = {
+		text = asia66Desc
+	}
+	option = {
+		name = EVTOPTA_asia664
+		trigger = {
+			NOT = {
+				religion = mahayana
+			}
+		}
+		set_secret_religion = mahayana
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = mahayana
+				
+		}
+		spouse = {
+			set_secret_religion = mahayana
+				
+		}
+		any_child = {
+			set_secret_religion = mahayana
+				
+			any_child = {
+				set_secret_religion = mahayana
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia664
+		trigger = {
+			NOT = {
+				religion = vvlufi_reformed
+			}
+		}
+		set_secret_religion = vvlufi_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = vvlufi_reformed
+				
+		}
+		spouse = {
+			set_secret_religion = vvlufi_reformed
+				
+		}
+		any_child = {
+			set_secret_religion = vvlufi_reformed
+				
+			any_child = {
+				set_secret_religion = vvlufi_reformed
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia664
+		trigger = {
+			NOT = {
+				religion = sanmin
+			}
+			sanmin = {
+				is_reformed_religion = PREV
+			}
+		}
+		set_secret_religion = sanmin
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = sanmin
+				
+		}
+		spouse = {
+			set_secret_religion = sanmin
+				
+		}
+		any_child = {
+			set_secret_religion = sanmin
+				
+			any_child = {
+				set_secret_religion = sanmin
+				
+			}
+		}
+	}
+	option = {#Go back
+		name = EVTOPT_more
+		character_event = { id = asia.664 }
+	}
+}
+
+character_event = {#Trait choice 2
+	id = asia.665
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	desc = {
+		text = asia66Desc
+	}
+	option = {
+		name = EVTOPTA_asia665
+		trigger = {
+			NOT = {
+				religion = jibenyuanze
+			}
+		}
+		set_secret_religion = jibenyuanze
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = jibenyuanze
+				
+		}
+		spouse = {
+			set_secret_religion = jibenyuanze
+				
+		}
+		any_child = {
+			set_secret_religion = jibenyuanze
+				
+			any_child = {
+				set_secret_religion = jibenyuanze
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia665
+		trigger = {
+			NOT = {
+				religion = jinbenwei
+			}
+		}
+		set_secret_religion = jinbenwei
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = jinbenwei
+				
+		}
+		spouse = {
+			set_secret_religion = jinbenwei
+				
+		}
+		any_child = {
+			set_secret_religion = jinbenwei
+				
+			any_child = {
+				set_secret_religion = jinbenwei
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia665
+		trigger = {
+			NOT = {
+				religion = jewish
+			}
+		}
+		set_secret_religion = jewish
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = jewish
+				
+		}
+		spouse = {
+			set_secret_religion = jewish
+				
+		}
+		any_child = {
+			set_secret_religion = jewish
+				
+			any_child = {
+				set_secret_religion = jewish
+				
+			}
+		}
+	}
+	option = {#Go back
+		name = EVTOPT_more
+		character_event = { id = asia.66 }
+	}
+}
+character_event = {#Trait choice 2
+	id = asia.666
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	desc = {
+		text = asia66Desc
+	}
+	option = {
+		name = EVTOPTA_asia666
+		trigger = {
+			NOT = {
+				religion = hui
+			}
+		}
+		set_secret_religion = hui
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = hui
+				
+		}
+		spouse = {
+			set_secret_religion = hui
+				
+		}
+		any_child = {
+			set_secret_religion = hui
+				
+			any_child = {
+				set_secret_religion = hui
+				
+			}
+		}
+	}
+	option = {#Go back
+		name = EVTOPT_more
+		character_event = { id = asia.66 }
+	}
+}
+############
+
+character_event = {#Trait choice 1
+	id = asia.76
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	desc = {
+		text = asia76Desc
+	}
+	option = {#Gandhi
+		name = EVTOPTA_asia76
+		trigger = {
+			NOT = {
+				religion = shinto
+			}
+		}
+		set_secret_religion = shinto
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = shinto
+		}
+		spouse = {
+			set_secret_religion = shinto
+		}
+		any_child = {
+			set_secret_religion = shinto
+			any_child = {
+				set_secret_religion = shinto
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia76
+		trigger = {
+			NOT = {
+				religion = shinko
+			}
+		}
+		set_secret_religion = shinko
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = shinko
+		}
+		spouse = {
+			set_secret_religion = shinko
+		}
+		any_child = {
+			set_secret_religion = shinko
+			any_child = {
+				set_secret_religion = shinko
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia76
+		trigger = {
+			NOT = {
+				religion = seirei_reformed
+			}
+		}
+		set_secret_religion = seirei_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = seirei_reformed
+		}
+		spouse = {
+			set_secret_religion = seirei_reformed
+		}
+		any_child = {
+			set_secret_religion = seirei_reformed
+			any_child = {
+				set_secret_religion = seirei_reformed
+			}
+		}
+	}
+	option = {#Next event
+		name = EVTOPT_more
+		character_event = { id = asia.761 }
+	}
+
+}
+
+character_event = {#Trait choice 2
+	id = asia.761
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	desc = {
+		text = asia76Desc
+	}
+	option = {
+		name = EVTOPTA_asia761
+		trigger = {
+			NOT = {
+				religion = soka_gakkai
+			}
+		}
+		set_secret_religion = soka_gakkai
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = soka_gakkai
+				
+		}
+		spouse = {
+			set_secret_religion = soka_gakkai
+				
+		}
+		any_child = {
+			set_secret_religion = soka_gakkai
+				
+			any_child = {
+				set_secret_religion = soka_gakkai
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia761
+		trigger = {
+			NOT = {
+				religion = shingon_shu
+			}
+		}
+		set_secret_religion = shingon_shu
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = shingon_shu
+				
+		}
+		spouse = {
+			set_secret_religion = shingon_shu
+				
+		}
+		any_child = {
+			set_secret_religion = shingon_shu
+				
+			any_child = {
+				set_secret_religion = shingon_shu
+				
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia761
+		trigger = {
+			NOT = {
+				religion = chinomi_reformed
+			}
+		}
+		set_secret_religion = chinomi_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = chinomi_reformed
+				
+		}
+		spouse = {
+			set_secret_religion = chinomi_reformed
+				
+		}
+		any_child = {
+			set_secret_religion = chinomi_reformed
+				
+			any_child = {
+				set_secret_religion = chinomi_reformed
+				
+			}
+		}
+	}
+	option = {#Go back
+		name = EVTOPT_more
+		character_event = { id = asia.762 }
+	}
+}
+character_event = {#Trait choice 2
+	id = asia.762
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	desc = {
+		text = asia76Desc
+	}
+	option = {
+		name = EVTOPTA_asia762
+		trigger = {
+			NOT = {
+				religion = tenrikyo
+			}
+		}
+		set_secret_religion = tenrikyo
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = tenrikyo
+				
+		}
+		spouse = {
+			set_secret_religion = tenrikyo
+				
+		}
+		any_child = {
+			set_secret_religion = tenrikyo
+				
+			any_child = {
+				set_secret_religion = tenrikyo
+				
+			}
+		}
+	}
+	option = {#Go back
+		name = EVTOPT_more
+		character_event = { id = asia.76 }
+	}
+}
+########
+character_event = {#Trait choice 1
+	id = asia.86
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	desc = {
+		text = asia86Desc
+	}
+	option = {
+		name = EVTOPTA_asia86
+		trigger = {
+			NOT = {
+				religion = muist_reformed
+			}
+			muist_reformed = {
+				is_reformed_religion = PREV
+			}
+		}
+		set_secret_religion = muist_reformed
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = muist_reformed
+		}
+		spouse = {
+			set_secret_religion = muist_reformed
+		}
+		any_child = {
+			set_secret_religion = muist_reformed
+			any_child = {
+				set_secret_religion = muist_reformed
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia86
+		trigger = {
+			NOT = {
+				religion = cheondoist
+			}
+		}
+		set_secret_religion = cheondoist
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = cheondoist
+		}
+		spouse = {
+			set_secret_religion = cheondoist
+		}
+		any_child = {
+			set_secret_religion = cheondoist
+			any_child = {
+				set_secret_religion = cheondoist
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia86
+		trigger = {
+			NOT = {
+				religion = mahayana
+			}
+		}
+		set_secret_religion = mahayana
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = mahayana
+		}
+		spouse = {
+			set_secret_religion = mahayana
+		}
+		any_child = {
+			set_secret_religion = mahayana
+			any_child = {
+				set_secret_religion = mahayana
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD_asia86
+		trigger = {
+			NOT = {
+				religion = yuilsasang
+			}
+		}
+		set_secret_religion = yuilsasang
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = yuilsasang
+		}
+		spouse = {
+			set_secret_religion = yuilsasang
+		}
+		any_child = {
+			set_secret_religion = yuilsasang
+			any_child = {
+				set_secret_religion = yuilsasang
+			}
+		}
+	}
+
+}
+###############
+character_event = {#Trait choice 1
+	id = asia.96
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	desc = {
+		text = asia96Desc
+	}
+	option = {
+		name = EVTOPTA_asia96
+		trigger = {
+			NOT = {
+				religion = cao_dai
+			}
+		}
+		set_secret_religion = cao_dai
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = cao_dai
+		}
+		spouse = {
+			set_secret_religion = cao_dai
+		}
+		any_child = {
+			set_secret_religion = cao_dai
+			any_child = {
+				set_secret_religion = cao_dai
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB_asia96
+		trigger = {
+			NOT = {
+				religion = kan_imam_san
+			}
+		}
+		set_secret_religion = kan_imam_san
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = kan_imam_san
+		}
+		spouse = {
+			set_secret_religion = kan_imam_san
+		}
+		any_child = {
+			set_secret_religion = kan_imam_san
+			any_child = {
+				set_secret_religion = kan_imam_san
+			}
+		}
+	}
+	option = {
+		name = EVTOPTC_asia96
+		trigger = {
+			NOT = {
+				religion = mahayana
+			}
+		}
+		set_secret_religion = mahayana
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = mahayana
+		}
+		spouse = {
+			set_secret_religion = mahayana
+		}
+		any_child = {
+			set_secret_religion = mahayana
+			any_child = {
+				set_secret_religion = mahayana
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD_asia96
+		trigger = {
+			NOT = {
+				religion = bani
+			}
+		}
+		set_secret_religion = bani
+		any_courtier = {
+			limit = {
+				NOR = {
+					is_landed = yes
+					prisoner = yes
+				}
+			}	
+			set_secret_religion = bani
+		}
+		spouse = {
+			set_secret_religion = bani
+		}
+		any_child = {
+			set_secret_religion = bani
+			any_child = {
+				set_secret_religion = bani
+			}
+		}
+	}
+}

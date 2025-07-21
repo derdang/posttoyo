@@ -222,8 +222,8 @@ pancasila;Pancasila;;;;;;;;;;;;x
 pancasila_DESC;Once in ages long since passed the great Garuda once flew over the world unifiying all people under the its divine and ulimate unity. But as the discordance of the Event ravaged Indonesia the Garuda and their disciples drew arms against the darkness itself saving Indonesia from total annihilation. To whom the five truths hold true they preach the coming return of the Great Unifier who shall bring the light of the Divine back to the world. The faithful hold by deep contemplation one shall cultivate understanding of the five truths and principles to live by example of their ancient forefathers.;;;;;;;;;;;;x
 quinto;Quinto-Imperial;;;;;;;;;;;;;x
 quinto_DESC;Originally a small brotherhood in the Azores dedicated to the cult of of Desejado the Lost King who will one day come back and estabilish the Fifth Empire, it's adherents have grown outside the archipelago and are known throughout the Atlantic as raiders and conquerors. It's rulers are not justified by Divine Right, they are instead acclaimed by the population and expected to do their duty and keep their promises to Desejado, their actions being seen in a pelagic sense the wealth they collect in their journeys meant to be shared and war must be made on the trasgos and other enemies of the Quinto Império so that O Desejado may finally return.;;;;;;;;;;;;;x
-fourthist;Fourthist;;;;;;;;;;;;;x
-fourthist_DESC;A mad prophet emerged from Siberia proclaiming the birth of a new god, the Fourth God. In the turmoil of previous centuries, three prior gods had fought and died, devastating continents and spilling oceans of blood. From this carnage, a Fourth God was born and chose the peoples of Eurasia as his warriors, an ethnos to lead the world into a new epoch. Opposed to the Fourth God and his people are the thralls and allies of the prior dead gods, the Unipole, who rightly fear the Fourth God's arrival.;;;;;;;;;;;;;x
+pravdist;Pravdist;;;;;;;;;;;;;x
+pravdist_DESC;In the beginning, there was only the Father in heaven from him came the world and his most important creation humanity. In those times they lived as one in the splendid city of Atlantis. Imparting the power of creation and free will to his favorite children and they expanded from the city to then cover the world. But within this gift a crimson whisper crept the sounds of discord which began to divide humanity and in an act of despair the Father withdrew his divine protection and in one day and night humanity tore itself in the maddening Crimson Tide that washed and left waste the world. Among the tribes the children of Rus came to uncover "Pravda", the truth, of what was lost. And seeing pass their own tribe saw within the shattered tribes of humanity a common struggle against the crimson tide. Seeking to abstain from the alluring whispers they forfeit their weapons as to live as the father intended his children in harmony with all of creation now spreading the "Truth" of the Great Sin of Discord to not only prevent the destruction of their world but also bring back the light of their long departed Father.;;;;;;;;;;;;;x
 GUBYERNATOR_FOA;Your Holiness;Votre Sainteté;Eure Heiligkeit;;Su Santidad;;;;;;;;;x
 
 #Nautical
@@ -305,7 +305,7 @@ THE_QAIS;The Qaïs;;;;;;;;;;;;;x
 THE_LUSIADS;Os Lusíadas;;;;;;;;;;;;;x
 UNDANG_UNDANG;Undang-Undang;;;;;;;;;;;;;x
 THE_TALES_SHAMANS;Tales of the Nisan Shamans;;;;;;;;;;;;;x
-FOURTH_GOD_APOTHEOSIS;Apotheosis of the Fourth God;;;;;;;;;;;;;x
+THE_TRUTH;Russkaya Pravda;;;;;;;;;;;;;x
 THE_BOOK_FROM_HEAVEN;The Book from Heaven;;;;;;;;;;;;;x
 THE_LAST_TESTAMENT;The Last Testament;;;;;;;;;;;;;x
 GOSPEL_OF_VADIM;Gospel of Vadim;;;;;;;;;;;;;x
@@ -731,14 +731,12 @@ GOD_UMAY;Umay;;;;;;;;;;;;;x
 TODOTE;Todote;;;;;;;;;;;;;x
 XARGI;Xargi;;;;;;;;;;;;;x
 
-GOD_EREIGNIS;Ereignis;;;;;;;;;;;;;x
-GOD_THE_FOURTH;The Fourth God;;;;;;;;;;;;;x
-GOD_DASEIN;Dasein;;;;;;;;;;;;;x
+GOD_THE_FATHER;Heavenly Father;;;;;;;;;;;;;x
+GOD_PRAVDA;Pravda;;;;;;;;;;;;;x
 GOD_EASTWARD_DRAGON;Eastward Dragon;;;;;;;;;;;;;x
-GOD_HOLY_RUS;Holy Rus;;;;;;;;;;;;;x
-GOD_RUSSKAYA_DUSHA;Russkaya Dusha;;;;;;;;;;;;;x
+GOD_DASEIN;Dasein;;;;;;;;;;;;;x
 ATLANTIS;Atlantis;;;;;;;;;;;;;x
-THE_UNIPOLE;The Unipole;;;;;;;;;;;;;x
+CRIMSON_TIDE;Crimson-Tide;;;;;;;;;;;;;x
 GESTELL;Gestell;;;;;;;;;;;;;x
 WESTWARD_EAGLE;Westward Eagle;;;;;;;;;;;;;x
 
@@ -966,3 +964,69 @@ religion_feature_momolian;The Bobohizan Order;;;;;;;;;;;;;x
 religion_feature_momolian_desc;As the Momolian faith has long been in the hinterlands of Sabah having once been pushed by the arrival of foreign religions but with the rise of power in Dusun People to prominence in Borneo the priestess of old have taken new roles in society as not only mediums but divine guiders of our people.;;;;;;;;;;;;;x
 religion_feature_holchu;The Fischer King;;;;;;;;;;;;;x
 religion_feature_holchu_desc;Once isolated the Great Adamanese People have risen as new powers in this order and as result the horizons of these islands are not enough and tides of destiny crash upon the coast of the land-dwellers that have once subjugated our people.;;;;;;;;;;;;;x
+religion_feature_vvlufi;Vvlufi Xse;;;;;;;;;;;;;x
+religion_feature_vvlufi_desc;Rising above the seas of change light a mighty mountain we shall preserve our traditions in this new era rising high above the stones as shining pillars of our great legacy much as our Lord of Heaven.;;;;;;;;;;;;;x
+
+
+####DECISION####
+FOLLOWS_SECRET_RELIGION_TOOLTIP;This character practices the $RELIGION|Y$ religion in private;Ce personnage pratique la religion $RELIGION|Y$ en secret;Diese Person ?bt heimlich die $RELIGION|Y$?Ye?! Religion aus;;Este personaje profesa el credo $RELIGION|Y$ en secreto.;;;;;;;;;x
+CAN_SEE_SECRET_RELIGION;Knows that $WHO|Y$ privately practices a religion;Sait que $WHO|Y$ pratique secr?tement une religion;Wei?, dass $WHO|Y$ heimlich eine Religion aus?bt;;Sabe que $WHO|Y$ practica una religi?n en secreto.;;;;;;;;;x
+CANNOT_SEE_SECRET_RELIGION;Does not know if $WHO|Y$ privately practices a religion;Ne sait pas si $WHO|Y$ pratique secr?tement une religion;Wei? nicht, ob $WHO|Y$ heimlich eine Religion aus?bt;;No sabe si $WHO|Y$ practica una religi?n en secreto.;;;;;;;;;x
+FILTER_HAS_SECRET_RELIGION;Has Private Religion;A une religion secr?te;Hat eine heimliche Religion;;Tiene una religi?n secreta;;;;;;;;;x
+
+has_two_faiths;Has Two Faiths;;;;;;;;;x
+asian_secondary_religion_picks_human;Choose Secondary Religion;;;;;;;;;x
+asian_secondary_religion_picks_human_desc;Many East Asians will typically practice two religions in their daily lives, what will my second faith be?;;;;;;;;;x
+asia66Desc;Chinese typically practice two religions in their daily lives, what will my second faith be?;;;;;;;;;x
+EVTOPTA_asia66;I shall practice [taoist.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia66;I shall practice [ruist.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia66;I shall practice [quanzhen.GetName] in private.;;;;;;;;;x
+
+EVTOPTA_asia661;I shall practice [shanrendao.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia661;I shall practice [shengming.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia661;I shall practice [wokou.GetName] in private.;;;;;;;;;x
+
+EVTOPTA_asia662;I shall practice [shenist_reformed.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia662;I shall practice [mo_reformed.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia662;I shall practice [chuma_reformed.GetName] in private.;;;;;;;;;x
+
+EVTOPTA_asia663;I shall practice [heilong_reformed.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia663;I shall practice [bimo_reformed.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia663;I shall practice [benzhu_reformed.GetName] in private.;;;;;;;;;x
+
+EVTOPTA_asia664;I shall practice [mahayana.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia664;I shall practice [vvlufi_reformed.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia664;I shall practice [sanmin.GetName] in private.;;;;;;;;;x
+
+EVTOPTA_asia665;I shall practice [jibenyuanze.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia665;I shall practice [jinbenwei.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia665;I shall practice [jewish.GetName] in private.;;;;;;;;;x
+
+EVTOPTA_asia666;I shall practice [hui.GetName] in private.;;;;;;;;;x
+##############
+
+asia76Desc;Japanese typically practice two religions in their daily lives, what will my second faith be?;;;;;;;;;x
+EVTOPTA_asia76;I shall practice [shinto.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia76;I shall practice [shinko.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia76;I shall practice [seirei_reformed.GetName] in private.;;;;;;;;;x
+
+EVTOPTA_asia761;I shall practice [soka_gakkai.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia761;I shall practice [shingon_shu.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia761;I shall practice [chinomi_reformed.GetName] in private.;;;;;;;;;x
+
+EVTOPTA_asia762;I shall practice [tenrikyo.GetName] in private.;;;;;;;;;x
+##############
+
+asia86Desc;Koreans typically practice two religions in their daily lives, what will my second faith be?;;;;;;;;;x
+EVTOPTA_asia86;I shall practice [muist_reformed.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia86;I shall practice [cheondoist.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia86;I shall practice [mahayana.GetName] in private.;;;;;;;;;x
+EVTOPTD_asia86;I shall practice [yuilsasang.GetName] in private.;;;;;;;;;x
+
+##############
+
+asia96Desc;People that live in Vietnam typically practice two religions in their daily lives, what will my second faith be?;;;;;;;;;x
+EVTOPTA_asia96;I shall practice [cao_dai.GetName] in private.;;;;;;;;;x
+EVTOPTB_asia96;I shall practice [kan_imam_san.GetName] in private.;;;;;;;;;x
+EVTOPTC_asia96;I shall practice [mahayana.GetName] in private.;;;;;;;;;x
+EVTOPTD_asia96;I shall practice [bani.GetName] in private.;;;;;;;;;x
