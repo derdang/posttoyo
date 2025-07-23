@@ -4918,8 +4918,8 @@ oldworld = {
 		intermarry = buddhist_group
 		intermarry = indian_group
 	}
-	pravdist = { #Eurasianist
-		graphical_culture = norsegfx
+	novobozhiye = { #Eurasianist
+		graphical_culture = buddhistgfx
 
 		icon = 116
 		heresy_icon = 116
@@ -4928,23 +4928,20 @@ oldworld = {
 		
 		interface_skin = { taoist_interface indian_interface muslim_interface }
 		
-		high_god_name = GOD_THE_FATHER
+		high_god_name = GOD_THE_GESTALT
 		
 		god_names = {
-			GOD_THE_FATHER GOD_PRAVDA GOD_DASEIN GOD_EASTWARD_DRAGON
+			GOD_THE_FATHER GOD_ATLANTIS GOD_LIGHT_TSAR GOD_THE_RESTORER
 		}
 		
 		evil_god_names = {
-			ATLANTIS CRIMSON_TIDE GESTELL WESTWARD_EAGLE
+			CRIMSON_TIDE DARKNESS DISCORD MADNESS
 		}
 		
 		can_grant_divorce = yes
 		priests_can_inherit = yes
 		priests_can_marry = yes
 		allow_rivermovement = yes
-		can_excommunicate = yes
-
-		crusade_name = CRUSADE	
 		
 		religious_clothing_head = 14
 		religious_clothing_priest = 14
@@ -4952,6 +4949,7 @@ oldworld = {
 		scripture_name = THE_TRUTH
 		
 		intermarry = christian
+		intermarry = buddhist_group
 		intermarry = eastern
 	}
 	quinto = {

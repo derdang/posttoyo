@@ -61,7 +61,7 @@
 	name="Vasily"
     dynasty=1917139 # Idolishche
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=4
     diplomacy=4
     stewardship=5
@@ -80,20 +80,19 @@
 	name="Vyacheslav"
     dynasty=1917140 # Sievers
     culture=primorskiy
-    religion=pravdist
-	give_nickname=nick_the_autocrat
-    martial=6
-    diplomacy=6
+    religion=novobozhiye
+	give_nickname=nick_the_gestalt
+    martial=5
+    diplomacy=5
     stewardship=4
     intrigue=6
-    learning=5
-    trait=brilliant_strategist
+    learning=8
+    trait=scholarly_theologian
     trait=quick
-    trait=impaler
+    trait=mystic
     trait=zealous
     trait=ambitious
-    trait=wroth
-    trait=cruel
+    trait=just
     trait=honest
     2565.1.1={birth=yes}
 	2585.1.1={add_spouse=1917007}
@@ -104,7 +103,7 @@
 	name="Yegor"
     dynasty=1917140 # Sievers
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=6
     diplomacy=4
     stewardship=6
@@ -125,7 +124,7 @@
 	name="Zakhar"
     dynasty=1917140 # Sievers
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=4
     diplomacy=4
     stewardship=4
@@ -147,14 +146,14 @@
     dynasty=1917141 # Lakhta
     female=yes
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=5
     diplomacy=4
-    stewardship=4
+    stewardship=5
     intrigue=4
-    learning=5
-    trait=mastermind_theologian
-    trait=mystic
+    learning=4
+    trait=thrifty_clerk
+    trait=administrator
     trait=ambitious
     trait=envious
     trait=zealous
@@ -201,7 +200,7 @@
     trait=proud
 	father=1917009
     2520.1.1={birth=yes}
-    2591.1.1={death={death_reason=death_battle killer=1917004}}
+    2591.1.1={death={death_reason=death_battle }}
 }
 1917011 ={ #Count of Bikinsky
 	name="Aleksandr"
@@ -224,18 +223,17 @@
 	name="Artur"
     dynasty=1917144 # Debryanskaya
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=5
     diplomacy=3
     stewardship=4
     intrigue=5
     learning=4
-    trait=martial_cleric
-    trait=physician
+    trait=brilliant_strategist
+    trait=duelist
     trait=zealous
-    trait=lustful
-    trait=arbitrary
-    trait=cruel
+    trait=strong
+    trait=stubborn
     2571.1.1={birth=yes}
 	2590.1.1={effect={add_friend=1917004}}
     2700.1.1={death=yes}
@@ -245,7 +243,7 @@
     dynasty=1917145 # Pyshnyak
     female=yes
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=3
     diplomacy=5
     stewardship=3
@@ -382,7 +380,7 @@
 	name="Konstantin"
     dynasty=1917153 # Chaadayev
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=4
     diplomacy=6
     stewardship=4
@@ -402,7 +400,7 @@
     dynasty=1917154 # Chkheidze
     female=yes
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=4
     diplomacy=4
     stewardship=4
@@ -420,7 +418,7 @@
     dynasty=1917155 # Arapov
     female=yes
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=5
     diplomacy=4
     stewardship=5
@@ -588,7 +586,7 @@
 	name="Anton"
     dynasty=1917164 # Reznichenko
     culture=primorskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=5
     diplomacy=5
     stewardship=4
@@ -777,7 +775,7 @@
     dynasty=1918145 # Lotos
     female=yes
     culture=petropavlovskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=4
     diplomacy=5
     stewardship=4
@@ -798,7 +796,7 @@
 	name="Alexey"
     dynasty=1918146 # Slavyan
     culture=petropavlovskiy
-    religion=pravdist
+    religion=novobozhiye
     martial=4
     diplomacy=5
     stewardship=4
@@ -907,7 +905,7 @@
 	name="Roman"
     dynasty=1919142 # Trubetzkoy
     culture=amursky
-    religion=pravdist
+    religion=novobozhiye
     martial=4
     diplomacy=5
     stewardship=4
@@ -960,16 +958,16 @@
 	name="Yakov"
     dynasty=1919145 # Valuev
     culture=amursky
-    religion=pravdist
-    martial=7
-    diplomacy=5
+    religion=novobozhiye
+    martial=5
+    diplomacy=8
     stewardship=5
     intrigue=5
     learning=5
-    trait=tough_soldier
-    trait=ambitious
-    trait=lustful
-    trait=arbitrary
+    trait=grey_eminence
+    trait=gregarious
+    trait=kind
+    trait=just
     trait=brave
 	father=1919010
     2570.1.1={birth=yes}
@@ -992,7 +990,8 @@
     trait=charismatic_negotiator
     trait=honest
     trait=craven
-    trait=kind
+    trait=arbitrary
+	trait=zealous
 	father=1919010
     2566.1.1={birth=yes}
 	2599.1.1={
@@ -1278,7 +1277,7 @@
 	name="Alexandr"
     dynasty=1919160 # Babayko
     culture=amursky
-    religion=pravdist
+    religion=novobozhiye
 	give_nickname=nick_the_baby_eater
     martial=2
     diplomacy=4
@@ -1994,7 +1993,7 @@
     female=yes
 	give_nickname=nick_the_vodyantikha
     culture=sibiri
-    religion=pravdist
+    religion=novobozhiye
     martial=6
     diplomacy=6
     stewardship=6
