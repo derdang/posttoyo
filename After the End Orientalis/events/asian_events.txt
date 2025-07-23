@@ -472,10 +472,10 @@ character_event = {#Trait choice 2
 		name = EVTOPTB_asia664
 		trigger = {
 			NOT = {
-				religion = vvlufi_reformed
+				religion = meishan
 			}
 		}
-		set_secret_religion = vvlufi_reformed
+		set_secret_religion = meishan
 		any_courtier = {
 			limit = {
 				NOR = {
@@ -483,18 +483,18 @@ character_event = {#Trait choice 2
 					prisoner = yes
 				}
 			}	
-			set_secret_religion = vvlufi_reformed
+			set_secret_religion = meishan
 				
 		}
 		spouse = {
-			set_secret_religion = vvlufi_reformed
+			set_secret_religion = meishan
 				
 		}
 		any_child = {
-			set_secret_religion = vvlufi_reformed
+			set_secret_religion = meishan
 				
 			any_child = {
-				set_secret_religion = vvlufi_reformed
+				set_secret_religion = meishan
 				
 			}
 		}

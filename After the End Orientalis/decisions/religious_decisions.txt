@@ -1224,6 +1224,8 @@ decisions = {
 					religion = benzhu_reformed
 					religion = vvlufi
 					religion = vvlufi_reformed
+					religion = nuo
+					religion = nuo_reformed
 					religion = shinto
 					religion = shinko
 					religion = tenrikyo
@@ -1233,6 +1235,7 @@ decisions = {
 					religion = ruist
 					religion = taoist
 					religion = quanzhen
+					religion = meishan
 					religion = shanrendao
 					religion = cheondoist
 					religion = datong
@@ -1337,6 +1340,8 @@ decisions = {
 					religion = benzhu_reformed
 					religion = vvlufi
 					religion = vvlufi_reformed
+					religion = nuo
+					religion = nuo_reformed
 					religion = shinto
 					religion = shinko
 					religion = tenrikyo
@@ -1346,6 +1351,7 @@ decisions = {
 					religion = ruist
 					religion = taoist
 					religion = quanzhen
+					religion = meishan
 					religion = shanrendao
 					religion = cheondoist
 					religion = datong
@@ -1407,9 +1413,11 @@ decisions = {
 							set_secret_religion = soka_gakkai
 						}
 						33 = {
-							set_secret_religion = seirei
-						}
-						33 = {
+							trigger = {
+								seirei_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
 							set_secret_religion = seirei_reformed
 						}
 					}
@@ -1486,6 +1494,9 @@ decisions = {
 							set_secret_religion = quanzhen
 						}
 						33 = {
+							set_secret_religion = meishan
+						}
+						33 = {
 							set_secret_religion = shanrendao
 						}
 						33 = {
@@ -1535,6 +1546,14 @@ decisions = {
 								}
 							}
 							set_secret_religion = vvlufi_reformed
+						}
+						33 = {
+							trigger = {
+								nuo_reformed = {
+									is_reformed_religion = PREV
+								}
+							}
+							set_secret_religion = nuo_reformed
 						}
 						33 = {
 							trigger = {
