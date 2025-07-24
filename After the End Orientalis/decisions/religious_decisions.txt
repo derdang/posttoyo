@@ -201,6 +201,33 @@ decisions = {
 			set_character_flag = reciting_sutras
 		}
 	}
+	take_vow_of_vegetarianism = { #For Non-Buddhist Religions (Buddhism has theirs via the Sutra Event)
+		only_playable = yes
+		ai_check_interval = 60
+		
+		potential = {
+			religion = novobozhiye
+			age = 16
+			prisoner = no
+			in_seclusion = no
+			NOT = { is_incapable = yes }
+			NOT = { trait = legendary }
+			NOT = { #immersion-breaking
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = {trait = vegetarian}
+		}
+		allow = {
+			war = no
+			NOT = {trait = cynical}
+			NOT = {trait = vegetarian}
+		}
+		effect = {
+			add_trait = vegetarian
+			add_character_modifier = { name = adjusting_diet days = 15 }
+			piety = 100
+		}
+	}
 	bani_paths = {
 		only_playable = yes
 		ai_check_interval = 60
