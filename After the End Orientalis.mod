@@ -4,6 +4,7 @@ user_dir = "After the End Orientalis"
 picture = "ATEO.jpg"
 
 replace_path = "common/dynasties"
+replace_path = "common/defines"
 replace_path = "history/provinces"
 replace_path = "history/titles"
 replace_path = "history/wars"
