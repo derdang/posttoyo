@@ -1430,7 +1430,7 @@ malayan = {
 	}
 	
 	singaporean = {
-		graphical_cultures = { chinesegfx }
+		graphical_cultures = { chinesegfx melayugfx }
 		unit_graphical_cultures = { chinesegfx mongolgfx indiangfx muslimgfx }
 
 		color = { 0.5 0.5 0.7 }
@@ -1522,8 +1522,12 @@ malayan = {
 		allow_looting = yes
 		seafarer = yes
 		
-		parent = min
-		parent = malaccan
+		#character_modifier = {
+		#	nusantaran_opinion = 10
+		#	malayan_opinion = 10
+		#	han_opinion = 10
+		#}
+		
 		dynasty_title_names = no
 		
 		modifier = default_culture_modifier
@@ -1592,9 +1596,12 @@ malayan = {
 		allow_looting = yes
 		seafarer = yes
 		
-		parent = min
-		parent = sundanese
-		parent = javanese
+		#character_modifier = {
+		#	nusantaran_opinion = 10
+		#	malayan_opinion = 10
+		#	han_opinion = 10
+		#}
+		
 		dynasty_title_names = no
 		
 		from_dynasty_prefix = "dari "
