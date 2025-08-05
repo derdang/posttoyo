@@ -3660,6 +3660,13 @@ add_prolong_life_effect = {
 	}
 }
 
+##BANKING SOCIETY##
+
+join_prev_banking_society = {
+	join_society = banking_society
+	scaled_wealth = -0.50
+}
+
 join_prev_devil_worshiper_society_effect = {
 	if = {
 		limit = { PREV = { society_member_of = the_satanists } }

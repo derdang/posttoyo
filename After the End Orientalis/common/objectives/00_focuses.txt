@@ -135,6 +135,13 @@ focus_business = {
 		always = no
 	}
 	
+	creation_effect = {
+		if = {
+			limit = { has_quest = quest_banking_society_business_focus }
+			character_event = { id = bank.53 }
+		}
+	}
+	
 	abort = {
 		OR = {
 			prisoner = yes
