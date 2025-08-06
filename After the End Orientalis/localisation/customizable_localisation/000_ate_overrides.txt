@@ -23,3 +23,33 @@ defined_text = {
 		localisation_key = MUDANG
 	}
 }
+
+defined_text = {
+	name = GetAssassinsSocietyName
+	text = { trigger = { has_alternate_start_parameter = { key = religion_names value = random } }
+		localisation_key = the_assassins_random
+	}
+	text = { trigger = { NOT = { has_alternate_start_parameter = { key = religion_names value = random } } }
+		localisation_key = the_assassins_real
+	}
+}
+
+defined_text = {
+	name = GetAssassinsSocietyDesc
+	text = { trigger = { has_alternate_start_parameter = { key = religion_names value = random } }
+		localisation_key = the_assassins_desc_random
+	}
+	text = { trigger = { NOT = { has_alternate_start_parameter = { key = religion_names value = random } } }
+		localisation_key = the_assassins_desc_real
+	}
+}
+
+defined_text = {
+	name = GetAsssassinMemberName
+	text = { trigger = { has_alternate_start_parameter = { key = religion_names value = random } }
+		localisation_key = String_Assassin
+	}
+	text = { trigger = { NOT = { has_alternate_start_parameter = { key = religion_names value = random } } }
+		localisation_key = String_Man_In_Black
+	}
+}

@@ -890,3 +890,39 @@ d_kan_imam_san = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+d_eastern_depot = {
+	color={ 100 100 0 }
+	color2={ 255 255 255 }
+	
+	graphical_culture = hashshashingfx
+	
+	capital = 1923 #Beijing
+	
+	title = "CHIEF"
+	title_female = "CHIEF"
+	foa = "GRANDHEADMASTER_FOA"
+	
+	culture = pekingese
+	religion = jibenyuanze
+	
+	holy_order = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	monthly_income = 6
+
+	mercenary_type = hashshashin_composition
+
+	pagan_coa = {
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+		religion = jibenyuanze
+	}
+}
