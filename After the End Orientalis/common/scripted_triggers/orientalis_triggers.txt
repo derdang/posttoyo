@@ -8,6 +8,12 @@ is_vajrayana = {
 		religion = azhali
 	}
 }
+is_member_of_a_martial_art_school = {
+	OR = {
+		society_member_of = warrior_lodge_malayan
+		society_member_of = warrior_lodge_viet
+	}
+}
 is_nusantaran_sphere = {
 	OR = {
 		culture_group = malayan

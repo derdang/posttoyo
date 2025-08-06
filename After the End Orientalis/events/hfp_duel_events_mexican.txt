@@ -30,14 +30,14 @@ society_quest_event = {
 		text = EVTDESCHF16523_A #default
 		trigger = { 
 			event_target:duel_target = { NOT = { character = event_target:lodge_hero } } 
-			society_member_of = warrior_lodge_mexican
+			is_member_of_a_martial_art_school = yes
 		}
 	}
 	desc = {
 		text = EVTDESCHF16523_B #if target is also the person giving you the quest...
 		trigger = { 
 			event_target:duel_target = { character = event_target:lodge_hero } 
-			society_member_of = warrior_lodge_mexican
+			is_member_of_a_martial_art_school = yes
 		}
 	}
 
@@ -288,14 +288,6 @@ character_event = {
 			modifier = {
 				factor = 0.05
 				trait = craven
-			}
-			modifier = {
-				factor = 0.3
-				religion = anabaptist
-			}
-			modifier = {
-				factor = 0.3
-				religion = transcendentalist
 			}
 			modifier = {
 				religion_group = christian
@@ -3447,7 +3439,7 @@ character_event = {
 	trigger = {
 		OR = {
 			is_member_of_any_warrior_lodge_trigger = yes
-			society_member_of = warrior_lodge_mexican
+			is_member_of_a_martial_art_school = yes
 		}
 		has_any_quest = no
 		NOT = { has_character_modifier = quest_cooldown_timer }
@@ -3482,7 +3474,7 @@ character_event = {
 	
 	trigger = {
 		has_character_flag = los_luchadores
-		society_member_of = warrior_lodge_mexican
+		is_member_of_a_martial_art_school = yes
 	}
 	
 	mean_time_to_happen = {

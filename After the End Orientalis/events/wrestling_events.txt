@@ -366,10 +366,7 @@ character_event = {
 	is_in_society = yes
 	
 	trigger = {
-		OR = {
-			society_member_of = warrior_lodge_malayan
-			society_member_of = warrior_lodge_viet
-		}
+		is_member_of_a_martial_art_school = yes
 		NOR = {
 			trait = robust
 			trait = strong
@@ -639,10 +636,7 @@ character_event = {
 	has_dlc = "Holy Fury"
 	
 	trigger = {
-		OR = {
-			society_member_of = warrior_lodge_malayan
-			society_member_of = warrior_lodge_viet
-		}
+		is_member_of_a_martial_art_school = yes
 		NOR = {
 			trait = homosexual
 			trait = bisexual
@@ -673,10 +667,7 @@ character_event = {
 	}
 	
 	trigger = {
-		OR = {
-			society_member_of = warrior_lodge_malayan
-			society_member_of = warrior_lodge_viet
-		}
+		is_member_of_a_martial_art_school = yes
 		OR = {
 			trait = w_face
 			trait = w_heel
@@ -708,10 +699,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		OR = {
-			society_member_of = warrior_lodge_malayan
-			society_member_of = warrior_lodge_viet
-		}
+		is_member_of_a_martial_art_school = yes
 		OR = {
 			trait = greedy
 			trait = envious
@@ -900,10 +888,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		OR = {
-			society_member_of = warrior_lodge_malayan
-			society_member_of = warrior_lodge_viet
-		}
+		is_member_of_a_martial_art_school = yes
 		OR = {
 			trait = charitable
 			trait = kind
