@@ -5138,6 +5138,15 @@ character_event = {
 				set_character_flag = betrayed_monastic_order_sunni
 			}
 		}
+		if = {
+			limit = {
+				society_member_of = basaih_society
+			}
+			leave_society = yes
+			hidden_effect = {
+				set_character_flag = betrayed_basaih_society
+			}
+		}
 		character_event = { id = SUFI.4615 days = 10 random = 10 }
 	}
 
@@ -6127,6 +6136,15 @@ letter_event = {
 			leave_society = yes
 			hidden_effect = {
 				set_character_flag = betrayed_monastic_order_sunni
+			}
+		}
+		if = {
+			limit = {
+				society_member_of = basaih_society
+			}
+			leave_society = yes
+			hidden_effect = {
+				set_character_flag = betrayed_basaih_society
 			}
 		}
 	}
@@ -8405,6 +8423,22 @@ narrative_event = { #sunni
 				can_join_society = monastic_order_sunni
 			}
 			join_society = monastic_order_sunni
+		}
+	}
+	option = {
+		name = EVTOPTASUFI25027
+		trigger = {
+			OR = { 
+				society_member_of = basaih_society 
+				can_join_society = basaih_society
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { society_member_of = basaih_society }
+				can_join_society = basaih_society
+			}
+			join_society = basaih_society
 		}
 	}
 	option = {

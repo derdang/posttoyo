@@ -65,12 +65,20 @@ join_prev_sufi_order_society = {
 		limit = { PREV = { society_member_of = monastic_order_sunni } }
 		join_society = monastic_order_sunni
 	}
+	if = {
+		limit = { PREV = { society_member_of = basaih_society } }
+		join_society = basaih_society
+	}
 }
 
 join_root_sufi_order_society = {
 	if = {
 		limit = { ROOT = { society_member_of = monastic_order_sunni } }
 		join_society = monastic_order_sunni
+	}
+	if = {
+		limit = { PREV = { society_member_of = basaih_society } }
+		join_society = basaih_society
 	}
 }
 
