@@ -306,7 +306,7 @@ targeted_decisions = {
 					FROM = { is_adult = no }
 				}
 			}
-			society_member_of = warrior_lodge_mexican
+			is_member_of_a_martial_art_school = yes
 			prisoner = no
 			NOT = { character = FROM }
 			is_inaccessible_trigger = no
@@ -329,10 +329,10 @@ targeted_decisions = {
 					}
 					AND = {
 						ROOT = {
-							society_member_of = warrior_lodge_mexican
+							is_member_of_a_martial_art_school = yes
 						}
 						FROM = {
-							society_member_of = warrior_lodge_mexican
+							is_member_of_a_martial_art_school = yes
 						}
 					}
 					custom_tooltip = {
