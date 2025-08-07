@@ -1010,7 +1010,6 @@
 	stewardship=4
 	intrigue=5
 	learning=5
-	give_job_title=job_marshal
 	trait=tough_soldier
 	trait=robust
 	trait=brave
@@ -1022,7 +1021,13 @@
 	trait=defensive_leader
 	give_nickname=nick_the_dragon
 	2560.1.1={birth=yes}
-	2580.5.1={effect={add_friend=2877007}}
+	2580.5.1={
+		employer=2877007
+		effect={
+			add_friend=2877007
+			give_job_title=job_marshal
+		}
+	}
 }
 2877013={
 	name="Loc" #Surveyor of the Frontier
@@ -1254,6 +1259,7 @@
 	2582.1.1={birth=yes}
 	2600.1.1={
 		employer=2875014
+		give_job_title=job_treasurer
 	}
 }
 # Da Nang Patricians and Courtiers
@@ -1522,6 +1528,12 @@
 	trait=humble
 	trait=diligent
 	2585.1.1={birth=yes}
+	2605.1.1={
+		employer=1177000
+		effect = {
+			give_job_title=job_marshal
+		}
+	}
 }
 1177002={ #Mother of the Panduranga Prince
 	name="Siti Zubaidah"
@@ -1563,9 +1575,36 @@
 	2575.1.1={birth=yes}
 	2600.1.1={
 		employer=1177000
+		give_job_title = job_spiritual
 	}
 }
-1177007={ #Cham Ahier
+1177007={ #Wife of Katip
+	name="Mai"
+	dynasty=1177024 #Phung Hoang
+	culture=cham
+	religion=bani
+	dna="dhifhlcdbbp"
+	female=yes
+	martial=2
+	diplomacy
+	intrigue=1
+	learning=6
+	trait=bani_balamon
+	trait=devout
+	trait=sympathy_eastern
+	trait=sympathy_buddhist
+	trait=poet
+	trait=charitable
+	trait=humble
+	trait=diligent
+	trait=erudite
+	trait=trusting
+	2585.1.1={birth=yes}
+	2600.1.1={
+		add_spouse=1177001
+	}
+}
+1177008={ #Cham Ahier
 	name="Simhavarman"
 	dynasty=1177006 #Khang
 	culture=cham
@@ -1585,9 +1624,6 @@
 	trait=humble
 	trait=diligent
 	2575.1.1={birth=yes}
-	2600.1.1={
-		employer=1177000
-	}
 }
 1178000={ #Jarai Lord
 	name="Jarai"

@@ -53,3 +53,43 @@ defined_text = {
 		localisation_key = String_Man_In_Black
 	}
 }
+
+defined_text = {
+	name = GetChabadSocietyName
+	text = { trigger = { has_alternate_start_parameter = { key = religion_names value = random } }
+		localisation_key = monastic_order_jewish_random
+	}
+	text = { trigger = { NOT = { has_alternate_start_parameter = { key = religion_names value = random } } }
+		localisation_key = monastic_order_jewish_real
+	}
+}
+
+defined_text = {
+	name = GetChabadSocietyDesc
+	text = { trigger = { has_alternate_start_parameter = { key = religion_names value = random } }
+		localisation_key = monastic_order_jewish_desc_random
+	}
+	text = { trigger = { NOT = { has_alternate_start_parameter = { key = religion_names value = random } } }
+		localisation_key = monastic_order_jewish_desc_real
+	}
+}
+
+defined_text = {
+	name = GetBYUSocietyName
+	text = { trigger = { has_alternate_start_parameter = { key = religion_names value = random } }
+		localisation_key = monastic_order_mormon_random
+	}
+	text = { trigger = { NOT = { has_alternate_start_parameter = { key = religion_names value = random } } }
+		localisation_key = monastic_order_mormon_real
+	}
+}
+
+defined_text = {
+	name = GetBYUSocietyDesc
+	text = { trigger = { has_alternate_start_parameter = { key = religion_names value = random } }
+		localisation_key = monastic_order_mormon_desc_random
+	}
+	text = { trigger = { NOT = { has_alternate_start_parameter = { key = religion_names value = random } } }
+		localisation_key = monastic_order_mormon_desc_real
+	}
+}
