@@ -1231,33 +1231,33 @@ decisions = {
 					religion = hui
 					religion = bani
 					religion = kan_imam_san
-					religion = ua_dab
-					religion = ua_dab_reformed
-					religion = seirei
-					religion = seirei_reformed
-					religion = muist
-					religion = muist_reformed
-					religion = shenist
-					religion = shenist_reformed
-					religion = mo
-					religion = mo_reformed
-					religion = chuma
-					religion = chuma_reformed
-					religion = heilong
-					religion = heilong_reformed
-					religion = bimo
-					religion = bimo_reformed
-					religion = benzhu
-					religion = benzhu_reformed
-					religion = vvlufi
-					religion = vvlufi_reformed
-					religion = nuo
-					religion = nuo_reformed
+#					religion = ua_dab
+#					religion = ua_dab_reformed
+#					religion = seirei
+#					religion = seirei_reformed
+#					religion = muist
+#					religion = muist_reformed
+#					religion = shenist
+#					religion = shenist_reformed
+#					religion = mo
+#					religion = mo_reformed
+#					religion = chuma
+#					religion = chuma_reformed
+#					religion = heilong
+#					religion = heilong_reformed
+#					religion = bimo
+#					religion = bimo_reformed
+#					religion = benzhu
+#					religion = benzhu_reformed
+#					religion = vvlufi
+#					religion = vvlufi_reformed
+#					religion = nuo
+#					religion = nuo_reformed
 					religion = shinto
 					religion = shinko
 					religion = tenrikyo
-					religion = chinomi
-					religion = chinomi_reformed
+#					religion = chinomi
+#					religion = chinomi_reformed
 					religion = cao_dai
 					religion = ruist
 					religion = taoist
@@ -1347,33 +1347,33 @@ decisions = {
 					religion = hui
 					religion = bani
 					religion = kan_imam_san
-					religion = ua_dab
-					religion = ua_dab_reformed
-					religion = seirei
-					religion = seirei_reformed
-					religion = muist
-					religion = muist_reformed
-					religion = shenist
-					religion = shenist_reformed
-					religion = mo
-					religion = mo_reformed
-					religion = chuma
-					religion = chuma_reformed
-					religion = heilong
-					religion = heilong_reformed
-					religion = bimo
-					religion = bimo_reformed
-					religion = benzhu
-					religion = benzhu_reformed
-					religion = vvlufi
-					religion = vvlufi_reformed
-					religion = nuo
-					religion = nuo_reformed
+#					religion = ua_dab
+#					religion = ua_dab_reformed
+#					religion = seirei
+#					religion = seirei_reformed
+#					religion = muist
+#					religion = muist_reformed
+#					religion = shenist
+#					religion = shenist_reformed
+#					religion = mo
+#					religion = mo_reformed
+#					religion = chuma
+#					religion = chuma_reformed
+#					religion = heilong
+#					religion = heilong_reformed
+#					religion = bimo
+#					religion = bimo_reformed
+#					religion = benzhu
+#					religion = benzhu_reformed
+#					religion = vvlufi
+#					religion = vvlufi_reformed
+#					religion = nuo
+#					religion = nuo_reformed
 					religion = shinto
 					religion = shinko
 					religion = tenrikyo
-					religion = chinomi
-					religion = chinomi_reformed
+#					religion = chinomi
+#					religion = chinomi_reformed
 					religion = cao_dai
 					religion = ruist
 					religion = taoist
@@ -1427,12 +1427,12 @@ decisions = {
 						33 = {
 							set_secret_religion = tenrikyo
 						}
-						33 = {
-							set_secret_religion = chinomi
-						}
-						33 = {
-							set_secret_religion = chinomi_reformed
-						}
+#						33 = {
+#							set_secret_religion = chinomi
+#						}
+#						33 = {
+#							set_secret_religion = chinomi_reformed
+#						}
 						33 = {
 							set_secret_religion = shingon_shu
 						}
@@ -1456,14 +1456,14 @@ decisions = {
 						}
 					}
 					random_list = {
-						33 = {
-							trigger = {
-								muist_reformed = {
-									is_reformed_religion = PREV
-								}
-							}
-							set_secret_religion = muist_reformed
-						}
+#						33 = {
+#							trigger = {
+#								muist_reformed = {
+#									is_reformed_religion = PREV
+#								}
+#							}
+#							set_secret_religion = muist_reformed
+#						}
 						33 = {
 							set_secret_religion = cheondoist
 						}
@@ -1550,70 +1550,70 @@ decisions = {
 						33 = {
 							set_secret_religion = wokou
 						}
-						33 = {
-							trigger = {
-								mo_reformed = {
-									is_reformed_religion = PREV
-								}
-							}
-							set_secret_religion = mo_reformed
-						}
-						33 = {
-							trigger = {
-								benzhu_reformed = {
-									is_reformed_religion = PREV
-								}
-							}
-							set_secret_religion = benzhu_reformed
-						}
-						33 = {
-							trigger = {
-								vvlufi_reformed = {
-									is_reformed_religion = PREV
-								}
-							}
-							set_secret_religion = vvlufi_reformed
-						}
-						33 = {
-							trigger = {
-								nuo_reformed = {
-									is_reformed_religion = PREV
-								}
-							}
-							set_secret_religion = nuo_reformed
-						}
-						33 = {
-							trigger = {
-								bimo_reformed = {
-									is_reformed_religion = PREV
-								}
-							}
-							set_secret_religion = bimo_reformed
-						}
-						33 = {
-							trigger = {
-								heilong_reformed = {
-									is_reformed_religion = PREV
-								}
-							}
-							set_secret_religion = heilong_reformed
-						}
-						33 = {
-							trigger = {
-								chuma_reformed = {
-									is_reformed_religion = PREV
-								}
-							}
-							set_secret_religion = chuma_reformed
-						}
-						33 = {
-							trigger = {
-								shenist_reformed = {
-									is_reformed_religion = PREV
-								}
-							}
-							set_secret_religion = shenist_reformed
-						}
+#						33 = {
+#							trigger = {
+#								mo_reformed = {
+#									is_reformed_religion = PREV
+#								}
+#							}
+#							set_secret_religion = mo_reformed
+#						}
+#						33 = {
+#							trigger = {
+#								benzhu_reformed = {
+#									is_reformed_religion = PREV
+#								}
+#							}
+#							set_secret_religion = benzhu_reformed
+#						}
+#						33 = {
+#							trigger = {
+#								vvlufi_reformed = {
+#									is_reformed_religion = PREV
+#								}
+#							}
+#							set_secret_religion = vvlufi_reformed
+#						}
+#						33 = {
+#							trigger = {
+#								nuo_reformed = {
+#									is_reformed_religion = PREV
+#								}
+#							}
+#							set_secret_religion = nuo_reformed
+#						}
+#						33 = {
+#							trigger = {
+#								bimo_reformed = {
+#									is_reformed_religion = PREV
+#								}
+#							}
+#							set_secret_religion = bimo_reformed
+#						}
+#						33 = {
+#							trigger = {
+#								heilong_reformed = {
+#									is_reformed_religion = PREV
+#								}
+#							}
+#							set_secret_religion = heilong_reformed
+#						}
+#						33 = {
+#							trigger = {
+#								chuma_reformed = {
+#									is_reformed_religion = PREV
+#								}
+#							}
+#							set_secret_religion = chuma_reformed
+#						}
+#						33 = {
+#							trigger = {
+#								shenist_reformed = {
+#									is_reformed_religion = PREV
+#								}
+#							}
+#							set_secret_religion = shenist_reformed
+#						}
 					}
 				}
 			}
