@@ -377,5 +377,67 @@ japonic = {
 		
 		modifier = default_culture_modifier
 	}
-	
+	kepani = { #Japanese-Hawaiians
+		graphical_cultures = { japanesegfx chinesegfx }
+		
+		dynasty_name_first = yes
+		
+		color = { 0.26 0.18 0.69 }
+		
+		male_names = {
+			Aimoto Akifumi Akihiro Akio Akira Akitake Atsuki Atsushi Atsuya Ayase Ayumu
+			Daiju Daiki Daisuke
+			Eiichi Eiji Eita
+			Fumio Futoshi Fuyuki
+			Gen Genki Genta Go
+			Hajime Haruo Hayao Hayato Hikaru Hiro Hiroki Hiromi Hiroshi Hiroto Hisao
+			Ichiro Isao Itaru
+			Jiro Jun Junichi Junji
+			Kai Kaii Kaiji Kaito Katsuhiro Katsuo Kazu Kazuki Kazuteru Kazutomo Kazuya Kazuyoshi Keiichi Keiji Keisuke Ken Kenichi Kenji Kenshi Kenta Kentaro Kento Kenzo Kintaro Kimitake Kiyoshi Koichi Koichiro Koki Kosuke Kotaro Koyo Kyohei Kyoji Kyosuke
+			Mahiro Makoto Masao Masato Mikio Mitsuo Musashi
+			Naoki Naomichi Naoto Nobuo
+			Osamu
+			Reiji Ren Rentaro Riki Ryoma Ryota Ryotaro Ryuhei Ryuji
+			Sadao Satoshi Sei Seiya Shigemi Shigeru Shigeshi Shinji Shinogu Shinzo Shizuo Sho Shogo Shoji Shosei Shota Shunji Shunsuke So Soseki
+			Tachi Tachiki Tadashi Tadayoshi Tadayuki Taichi Taiki Taiyo Takashi Takayoshi Takehiro Takeo Takeshi Takuma Takumi Tanaka Tatsuya Taisuke Testuo Tetsuya Tomoaki Toru Tsubasa Tsuneya
+			Uryu
+			Wataru
+			Yasuhito Yasunori Yoshiki Yoshitaka Yukio Yusuke Yuta Yutaro Yuya
+
+		}
+		
+		female_names = {
+			Ai Aika Aimi Akane Akari Akemi Akina Akino Amane Anna Aoi Asuka Atsuko Aya Ayaka Ayako Ayana Ayano Ayumi
+			Chie Chieko Chiemi Chiho Chika Chikako Chinami Chitose
+			Emiko Erika Erina
+			Fujiko Fuka Fumi Futaba
+			Hana Hanako Haruka Haruna Haruyo Hideko Hinata Hiroko Hiromi Hisako Hitomi Honoka
+			Ichiko Ikumi Iroha Irono
+			Jun Junko
+			Kae Kaho Kahori Kahoru Kana Kanae Kanako Kanami Kaori Kaoru Keiko Kimiko Kumi Kurumi Kyoka Kyoko
+			Machiko Mai Maika Maki Mao Mari Marie Marina Masumi Mayu Mayumi Megumi Mei Midori Mieko Miharu Miho Mikako Miki Minami Misa Misaki Mitsuki Mitsuko Miyo Mizue Mizuki Momo Momoko
+			Nami Nana Nanako Nanami Nanase Nanayo Naoko Natsu Natsumi Noriko Nozomi
+			Reina Rika Rina Riri Risa Rui
+			Sachiko Sadako Sae Saeko Sahori Saki Sakiko Sakura Sana Saori Sayaka Sayuri Seiko Shigeko Shiori Shizue Shoko Sonoko Sumi Sumie
+			Terumi Tomoe Tomomi Touko Tsubasa Tsugumi Tsukiko
+			Urara Uta
+			Wakana
+			Yasue Yayoi Yoko Yoshiko Yu Yui Yuika Yuka Yukari Yukie Yukiko Yuko Yumi Yuna Yuuko
+
+		}
+
+		from_dynasty_prefix = ""
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0		
+		
+		modifier = default_culture_modifier
+	}
 }

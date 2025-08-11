@@ -31,7 +31,6 @@ glad_bhikku = {
 }
 building_stupa = {
 	icon = 101
-	temple_opinion = 5
 	monthly_character_piety = 0.5
 }
 vessak_fast_failed = {
@@ -221,8 +220,7 @@ akhom_buddha = {
 
 akhom_preahthong = {
 	icon =  9 
-	spouse_opinion = 5
-	fertility = 0.2
+	fertility = 0.25
 }
 
 akhom_preahkeo = {
@@ -319,4 +317,66 @@ akhom_chao_talung = {
 adjusting_diet = {
 	health = -0.15
 	icon = 60
+}
+
+#NEOW THINGS
+has_two_faiths = {
+	monthly_character_piety = -0.2
+	icon = 96
+}
+poor_credit = {
+	general_opinion = -5
+	icon = 24
+}
+
+weak_banker = {
+	monthly_character_prestige = -0.2
+	icon = 24
+}
+
+strong_banker = {
+	monthly_character_prestige = 0.2
+	icon = 4
+}
+
+shares_sold = {
+	icon = 4
+}
+
+building_subsidies = {
+	local_build_cost_modifier = -0.1
+	icon = 4
+}
+
+invested_research = {
+	icon = 4
+}
+
+increased_prosperity = {
+	icon = 4
+}
+
+banking_results = {
+	icon = 4
+}
+recent_loan_request = {
+	#hidden = yes
+	icon = 24
+}
+loan_timer = {
+	icon = 24
+	monthly_character_piety = -0.25
+	#inherit = yes
+}
+defaulted_on_loan = {
+	monthly_character_piety = -0.5
+	#inherit = yes 
+	icon = 24
+}
+province_for_imf = {
+	icon = 17
+}
+hidden_picker_timer_modif = {
+	icon = 17
+	#is_visible = no
 }

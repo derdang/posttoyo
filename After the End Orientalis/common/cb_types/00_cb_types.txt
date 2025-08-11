@@ -3153,8 +3153,8 @@ tribal_invasion = {
 							religion_group = pagan_group
 							OR = {
 								culture_group = altaic
-								culture_group = magyar
-								culture_group = mesoamerican
+								culture_group = turkic
+								culture_group = pacific_islander
 							}
 							FROM = {
 								NOT = { religion_group = pagan_group } # Should subjugate these instead
@@ -3165,7 +3165,7 @@ tribal_invasion = {
 									has_law = succ_elective_gavelkind
 								}
 								has_landed_title = e_mongolia
-								has_landed_title = e_mexikha
+								has_landed_title = e_hawaii
 							}
 						}
 					}
@@ -3186,8 +3186,8 @@ tribal_invasion = {
 					}
 					OR = {
 						culture_group = altaic
-						culture_group = magyar
-						culture_group = mesoamerican
+						culture_group = turkic
+						culture_group = pacific_islander
 					}
 					OR = {
 						has_horde_culture = yes

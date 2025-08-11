@@ -1,0 +1,1302 @@
+
+
+###################################
+#
+# Mongol Horde Events using the Aztec Invasion Logic (Using the Redcoat from ATE)
+#
+# Id 60000 - 61000 is reserved
+#
+###################################
+ 
+# The lights of Old North
+narrative_event = {
+	id = 177501
+	title = "redcoats.1.name"
+	desc = redcoats.1.desc
+	major = yes
+	
+	picture = "GFX_evt_black_ships"
+	border = "GFX_event_narrative_frame_war"
+	
+	only_playable = yes
+	hide_from = yes
+	religion = catholic
+	
+	trigger = {
+		OR = {
+			AND = {
+				has_game_rule = {
+					name = aztec_invasion
+					value = historical
+				}
+				year = 3000
+			}
+			AND = {
+				has_game_rule = {
+					name = aztec_invasion
+					value = random
+				}
+				year = 2650
+				total_years_played = 100
+			}
+		}
+		NOR = { 
+			year = 3000
+			has_game_rule = {
+				name = aztec_invasion
+				value = off
+			}
+		}
+		controls_religion = yes # Let it happen for the Pope - he's always around
+		
+		NOT = { has_global_flag = american_rumors }
+		NOT = { has_global_flag = american_arrival }
+	}
+	
+	mean_time_to_happen = {
+		years = 40
+		
+		modifier = {
+			factor = 0.5
+			year = 3000
+		}
+		modifier = {
+			factor = 0.5
+			year = 3010
+		}
+		modifier = {
+			factor = 0.5
+			year = 3020
+		}
+		modifier = {
+			factor = 0.5
+			year = 3030
+		}
+		modifier = {
+			factor = 0.5
+			year = 3040
+		}
+	}
+	
+	immediate = {
+		set_global_flag = american_rumors
+		activate_title = { title = e_hawaii status = yes }
+		create_character = {
+			random_traits = no
+			dynasty = 4100071 # Kalakaua
+			name = "Lunalilo"
+			culture = hawaiian
+			religion = mormon
+			age = 30
+			attributes = {
+				martial = 7
+				diplomacy = 3
+				stewardship = 5
+				intrigue = 4
+				learning = 3
+			}
+			health = 6
+			fertility = 0.7
+			trait = brilliant_strategist
+			trait = wroth
+			trait = cruel
+			trait = proud
+			trait = zealous
+			trait = ambitious
+		}
+		new_character = {
+			e_hawaii = {
+				grant_title = PREV
+				add_law = succ_gavelkind
+			}
+			set_government_type = feudal_government
+			set_defacto_liege = THIS
+			set_character_flag = horde_invader
+			military_techpoints = 1000
+			economy_techpoints = 1000
+			culture_techpoints = 1000
+			#character_event = { id = misc.3 } # Diversity
+		}
+		
+	}
+	
+	option = {
+		name = "redcoats.1.optA"
+	}
+}
+ 
+# Arrival of the Redcoats
+narrative_event = {
+	id = 177502
+	title = redcoats.2.name
+	desc = "redcoats.2.desc"
+	major = yes
+	hide_new = yes
+	
+	picture = "GFX_evt_black_ships"
+	border = "GFX_event_narrative_frame_war"
+	
+	only_playable = yes
+	
+	trigger = {
+		year = 2650
+		has_landed_title = e_hawaii
+		NOT = { year = 2841 }
+		NOT = { has_global_flag = american_arrival }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "OK"
+		trigger = {
+			has_landed_title = e_hawaii
+			culture_group = pacific_islander
+		}
+		set_global_flag = american_arrival
+		
+		# hawaiians attacks a huge hordes on top of Micronesia
+		973 = { #Guam
+			any_neighbor_province = {
+				any_neighbor_province = {
+					duchy = {
+						ROOT = {
+							war = {
+								casus_belli = tribal_invasion
+								target = PREVPREV
+								thirdparty_title = PREV
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		wealth = 5000
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = hawaiian
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					light_infantry = { 1241 1241 }
+					heavy_infantry = { 1010 1010 }
+					light_cavalry = { 1337 1337 }
+					knights = { 1024 1024 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = hawaiian
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = shinto
+			culture = kepani
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = shinto
+			culture = hawaiian
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = concordanist
+			culture = yankee
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = concordanist
+			culture = hawaiian
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = yankee
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = baptist
+			culture = yankee
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = baptist
+			culture = hawaiian
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = hawaiian
+			female = no
+			age = 30
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 975 # Palau
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = shinto
+			culture = kepani
+			female = no
+			age = 35
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 975 # Palau
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = hawaiian
+			female = no
+			age = 39
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 975 # Palau
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		new_character = {
+			spawn_unit = {
+				province = 975 # Palau
+				troops =
+				{
+					archers = { 1620 1620 }
+					light_infantry = { 1100 1100 }
+					heavy_infantry = { 1230 1230 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		
+ 
+		random = {
+			chance = 50
+
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				religion = baptist
+				culture = hawaiian
+				female = no
+				age = 30
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 974 # Northern Mariana Islands
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+				#character_event = { id = misc.3 } # Diversity
+				#character_event = { id = misc.4 } # Physique
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				religion = shinto
+				culture = hawaiian
+				female = no
+				age = 35
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 974 # Northern Mariana Islands
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+				#character_event = { id = misc.3 } # Diversity
+				#character_event = { id = misc.4 } # Physique
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				religion = mormon
+				culture = hawaiian
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 974 # Northern Mariana Islands
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+				#character_event = { id = misc.3 } # Diversity
+				#character_event = { id = misc.4 } # Physique
+			}
+		}
+		random = {
+			chance = 50
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				religion = mormon
+				culture = hawaiian
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 974 # Northern Mariana Islands
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+				#character_event = { id = misc.3 } # Diversity
+				#character_event = { id = misc.4 } # Physique
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				religion = mormon
+				culture = hawaiian
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 974 # Northern Mariana Islands
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+				#character_event = { id = misc.3 } # Diversity
+				#character_event = { id = misc.4 } # Physique
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = actually_culture
+				religion = mormon
+				culture = hawaiian
+				female = no
+				age = 39
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 974 # Northern Mariana Islands
+					troops =
+					{
+						light_cavalry = { 960 960 }
+						archers = { 1620 1620 }
+						light_infantry = { 1100 1100 }
+						heavy_infantry = { 1230 1230 }
+					}
+					attrition = 0.25
+				}
+				#character_event = { id = misc.3 } # Diversity
+				#character_event = { id = misc.4 } # Physique
+			}
+		}
+		
+		# Some extra courtiers
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = shinto
+			culture = kepani
+			female = no
+			age = 16
+		}
+		new_character = { character_event = { id = misc.3 } character_event = { id = misc.4 } } # Diversity
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = catholic
+			culture = yankee
+			female = no
+			age = 18
+		}
+		new_character = { character_event = { id = misc.3 } character_event = { id = misc.4 } } # Diversity
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = yankee
+			female = no
+			age = 18
+		}
+		new_character = { character_event = { id = misc.3 } character_event = { id = misc.4 } } # Diversity
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = concordanist
+			culture = yankee
+			female = no
+			age = 22
+		}
+		new_character = { character_event = { id = misc.3 } character_event = { id = misc.4 } } # Diversity
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = hawaiian
+			female = no
+			age = 25
+		}
+		new_character = { character_event = { id = misc.3 } character_event = { id = misc.4 } } # Diversity
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = hawaiian
+			female = no
+			age = 26
+		}
+		new_character = { character_event = { id = misc.3 } character_event = { id = misc.4 } } # Diversity
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = hawaiian
+			female = no
+			age = 28
+		}
+		new_character = { character_event = { id = misc.3 } character_event = { id = misc.4 } } # Diversity
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = hawaiian
+			female = yes
+			age = 23
+		}
+		new_character = { character_event = { id = misc.3 } character_event = { id = misc.4 }} # Diversity
+		create_character = {
+			random_traits = no
+			name="Kalama"
+			dynasty = 4100072 #Moana
+			religion = mormon
+			culture = hawaiian
+			female = yes
+			age = 18
+			attributes={
+				martial=8
+				diplomacy=3
+				stewardship=4
+				intrigue=4
+				learning=3
+			}
+			health=6
+			fertility=1.5
+			trait=tough_soldier
+			trait=flat_terrain_leader
+			trait=drunkard
+			trait=wroth
+			trait=proud
+			trait=stubborn
+			trait=brave
+		}
+		new_character = {
+			set_character_flag=diversity
+			set_character_flag=physique
+		} 
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = yankee
+			female = yes
+			age = 17
+		}
+		new_character = { # Diversity
+			character_event = { id = misc.3 }
+			#character_event = { id = misc.4 } # Physique 
+		} 
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = shinto
+			culture = kepani
+			female = yes
+			age = 18
+		}
+		new_character = { # Diversity
+			character_event = { id = misc.3 }
+			#character_event = { id = misc.4 } # Physique 
+		} 
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = mormon
+			culture = hawaiian
+			female = yes
+			age = 18
+		}
+		new_character = { # Diversity
+			character_event = { id = misc.3 }
+			#character_event = { id = misc.4 } # Physique 
+		} 
+		create_character = {
+			random_traits = no
+			name = "Kelina"
+			dynasty = 4100071 #Kalakaua
+			religion = mormon
+			culture = hawaiian
+			martial = 3
+			diplomacy = 7
+			stewardship = 5
+			intrigue = 4
+			learning = 7
+			trait = scholarly_theologian
+			trait = kind
+			trait = lustful
+			trait = patient
+			trait = humble
+			female = yes
+			age = 22
+		}
+		new_character = { # Diversity
+			#character_event = { id = misc.3 }
+			#character_event = { id = misc.4 } # Physique 
+		} 
+	}
+	option = {
+		name = "redcoats.2.optA"
+		trigger = {
+			religion = mormon
+			NOT = { has_landed_title = e_hawaii }
+		}
+	}
+	option = {
+		name = "redcoats.2.optB"
+		trigger = {
+			religion_group = christian
+			NOT = { has_landed_title = e_hawaii }
+		}
+	}
+	option = {
+		name = "redcoats.2.optC"
+		trigger = {
+			NOT = { religion_group = christian }
+			NOT = { religion = mormon }
+			NOT = { has_landed_title = e_hawaii }
+		}
+	}
+}
+ 
+# Redcoat reinforcements
+character_event = {
+	id = 177503
+	title = redcoats.3.name
+	desc = "redcoats.3.desc"
+	
+	picture = "GFX_evt_black_ships"
+	border = "GFX_event_normal_frame_war"
+	
+	only_playable = yes
+	
+	trigger = {
+		NOT = { year = 2900 }
+		has_landed_title = e_hawaii
+		NOT = { has_global_flag = american_reinf }
+		had_global_flag = { flag = american_arrival days = 1825 } # Valid for 5 years rather than vanilla 10
+		e_hawaii = {
+			holder_scope = {
+				culture_group = pacific_islander
+				religion = mormon
+				OR = {
+					war = yes
+					is_landed = yes
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "OK"
+		set_global_flag = american_reinf
+ 
+		trigger = {
+			has_landed_title = e_hawaii
+		}
+		
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = mormon
+			culture = hawaiian
+			female = no
+			age = 25
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					light_cavalry = { 500 500 }
+					archers = { 1500 1500 }
+					heavy_infantry = { 1500 1500 }
+					knights = { 333 333 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = shinto
+			culture = kepani
+			female = no
+			age = 26
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					light_cavalry = { 500 500 }
+					archers = { 1500 1500 }
+					heavy_infantry = { 1500 1500 }
+					knights = { 333 333 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		create_character = {
+			random_traits = yes
+			dynasty = random
+			religion = mormon
+			culture = yankee
+			female = no
+			age = 27
+			attributes = {
+				martial = 12
+			}
+			trait = brilliant_strategist
+		}
+		new_character = {
+			spawn_unit = {
+				province = 973 # Guam
+				troops =
+				{
+					light_cavalry = { 500 500 }
+					archers = { 1500 1500 }
+					heavy_infantry = { 1500 1500 }
+					knights = { 333 333 }
+				}
+				attrition = 0.25
+			}
+			#character_event = { id = misc.3 } # Diversity
+			#character_event = { id = misc.4 } # Physique
+		}
+		
+		random = {
+			chance = 50
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = mormon
+				culture = hawaiian
+				female = no
+				age = 25
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 973 # Guam
+					troops =
+					{
+						light_cavalry = { 500 500 }
+						archers = { 1500 1500 }
+						heavy_infantry = { 1500 1500 }
+						knights = { 333 333 }
+					}
+					attrition = 0.25
+				}
+				#character_event = { id = misc.3 } # Diversity
+				#character_event = { id = misc.4 } # Physique
+			}
+			create_character = {
+				random_traits = yes
+				dynasty = random
+				religion = concordanist
+				culture = yankee
+				female = no
+				age = 26
+				attributes = {
+					martial = 12
+				}
+				trait = brilliant_strategist
+			}
+			new_character = {
+				spawn_unit = {
+					province = 973 # Guam
+					troops =
+					{
+						light_cavalry = { 500 500 }
+						archers = { 1500 1500 }
+						heavy_infantry = { 1500 1500 }
+						knights = { 333 333 }
+					}
+					attrition = 0.25
+				}
+				#character_event = { id = misc.3 } # Diversity
+				#character_event = { id = misc.4 } # Physique
+			}
+		}
+	}
+}
+ 
+### The Redcoats Convert ###
+ 
+# Hawaiian Empire converts to Concordanist
+character_event = {
+	id = 177504
+	title = redcoats.4.name
+	desc = "redcoats.4.desc"
+	picture = "GFX_evt_black_ships"
+	border = "GFX_event_normal_frame_war"
+	major = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		primary_title = {
+			title = e_hawaii
+			holder_scope = {
+				religion = mormon
+				NOT = { trait = zealous }
+			}
+		}
+		had_global_flag = { flag = american_arrival days = 7300 } # 20 years
+		NOT = { had_global_flag = { flag = american_arrival days = 14600 } } # 40 years
+		NOT = { has_global_flag = american_convert }
+		any_realm_province = {
+			religion = concordanist
+		}
+	}
+ 
+	mean_time_to_happen = {
+		years = 120
+		modifier = {
+			factor = 0.75
+			any_demesne_province = {
+				is_capital = yes
+				religion = concordanist
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = american_convert
+	}
+	
+	option = {	# concordanist
+		name = "redcoats.4.optA"
+		trigger = {
+			has_landed_title = e_hawaii
+		}
+		religion = concordanist
+		capital_scope = {
+			religion = concordanist
+		}
+		
+		any_realm_character = {
+			limit = { religion = mormon }
+			religion = concordanist
+			if = {
+				limit = {
+					is_playable = yes
+					capital_scope = {
+						religion = mormon
+					}
+				}
+				capital_scope = {
+					religion = concordanist
+				}
+			}
+		}
+	}
+	# Other rulers are informed
+	option = {
+		name = "EXCELLENT"
+		trigger = {
+			religion_group = christian
+			NOT = { has_landed_title = e_hawaii }
+		}
+	}
+	option = {
+		name = "redcoats.4.optC"
+		trigger = {
+			NOT = { religion_group = christian }
+			NOT = { has_landed_title = e_hawaii }
+		}
+	}
+}
+ 
+# Hawaiian Empire converts to Shinto
+character_event = {
+	id = 177505
+	title = redcoats.5.name
+	desc = "redcoats.5.desc"
+	picture = "GFX_evt_black_ships"
+	border = "GFX_event_normal_frame_religion"
+	major = yes
+	
+	only_playable = yes
+	
+	trigger = {
+		primary_title = {
+			title = e_hawaii
+			holder_scope = {
+				religion = mormon
+				NOT = { trait = zealous }
+			}
+		}
+		had_global_flag = { flag = redcoats_arrival days = 14600 }
+		NOT = { had_global_flag = { flag = redcoats_arrival days = 29200 } }
+		NOT = { has_global_flag = american_convert }
+		any_realm_province = {
+			religion = shinto
+		}
+	}
+ 
+	mean_time_to_happen = {
+		years = 80
+		modifier = {
+			factor = 0.75
+			any_demesne_province = {
+				is_capital = yes
+				religion = shinto
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = american_convert
+	}
+	
+	option = {	# Shinto
+		name = "EVTOPTA60010"
+		trigger = {
+			has_landed_title = e_hawaii
+		}
+		religion = shinto
+		any_realm_character = {
+			limit = { religion = mormon }
+			religion = shinto
+			if = {
+				limit = {
+					is_playable = yes
+					capital_scope = {
+						religion = mormon
+					}
+				}
+				capital_scope = {
+					religion = shinto
+				}
+			}
+		}
+	}
+	# Other rulers are informed
+	option = {
+		name = "EXCELLENT"
+		trigger = {
+			religion_group = japonic
+			NOT = { has_landed_title = e_hawaii }
+		}
+	}
+	option = {
+		name = "redcoats.5.optC"
+		trigger = {
+			NOT = { religion_group = japonic }
+			NOT = { has_landed_title = e_hawaii }
+		}
+	}
+}
+
+
+ 
+### Americans sack Asian cities ###
+ 
+# American sack the archprimate of Manila
+narrative_event = {
+	id = 177506
+	title = "redcoats.6.name"
+	desc = "redcoats.6.desc"
+	major = yes
+	
+	picture = "GFX_evt_black_ships"
+	border = "GFX_event_narrative_frame_war"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_global_flag = americans_sack_manila }
+		OR = {
+			has_landed_title = e_hawaii
+			liege = { has_landed_title = e_hawaii }
+			top_liege = { has_landed_title = e_hawaii }
+		}
+		FROM = { title = b_manila }
+		culture_group = pacific_islander
+		NOT = {
+			FROM = {
+				owner = {
+					OR = {
+						has_landed_title = e_hawaii
+						liege = { has_landed_title = e_hawaii }
+						top_liege = { has_landed_title = e_hawaii }
+					}
+				}
+			}
+		}
+	}
+	
+	major_trigger = {
+		NOT = {
+			has_landed_title = e_hawaii
+			liege = { has_landed_title = e_hawaii }
+			top_liege = { has_landed_title = e_hawaii }
+		}
+	}
+	
+	immediate = {
+		set_global_flag = americans_sack_manila
+		any_playable_ruler = {
+			limit = {
+				ai = no
+				OR = {
+					has_landed_title = e_hawaii
+					liege = { has_landed_title = e_hawaii }
+					top_liege = { has_landed_title = e_hawaii }
+				}
+			}
+			#narrative_event = { id = TOG.1 }
+		}
+	}
+	
+	option = {
+		name = "redcoats.6.optA"
+		trigger = { 
+			NOT = { religion_group = christian }
+		}
+	}
+	option = {
+		name = "redcoats.6.optB"
+		trigger = { 
+			religion_group = christian
+		}
+	}
+}
+ 
+# Redcoats sack Hong Kong
+# Redcoats sack Guam
+# Redcoats sack Okinawa
+# Redcoats sack Saigon
+# Redcoats sack Manila
+# Redcoats sack Kuala Lumpur
+# Redcoats sack Seoul
+# Redcoats sack Jakarta
+# Redcoats sack Beijing
+# Redcoats sack Tokyo
+# Redcoats sack Nagasaki
+# Redcoats sack Hiroshima
