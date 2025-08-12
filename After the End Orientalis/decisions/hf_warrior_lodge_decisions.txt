@@ -261,10 +261,7 @@ targeted_decisions = {
 				}
 				AND = {
 					has_dlc = "Holy Fury"
-					OR = {
-						society_member_of = warrior_lodge_malayan
-						society_member_of = warrior_lodge_viet
-					}
+					is_member_of_a_martial_art_school = yes
 				}
 				AND = {
 					has_dlc = "Holy Fury"
@@ -1339,6 +1336,112 @@ targeted_decisions = {
 }
 
 society_decisions = {
+
+	warrior_lodge_mexican_train = {
+		ai_check_interval = 24
+		is_high_prio = yes
+		potential = {
+			has_dlc = "Mystics"
+			is_member_of_any_warrior_lodge_trigger = yes
+			is_member_of_a_martial_art_school = yes
+			OR = {
+				has_quest = quest_warrior_lodge_mexican_train
+				society_rank = 2
+			}
+		}
+
+		allow = {
+			custom_tooltip = {
+				text = lodge_allow_training_TT
+				OR = {
+					NOT = { has_character_flag = w_training_flag }
+					had_character_flag = { flag = w_training_flag days = 730 }
+				}
+			}
+		}
+
+		effect = {
+			hidden_tooltip = {
+				clr_character_flag = w_training_flag
+				set_character_flag = w_training_flag
+				character_event = { id = WR.3 }
+			}
+		}
+
+		
+		
+		ai_will_do = {
+			factor = 0.5
+
+			modifier = {
+				factor = 0.01
+				war = yes
+			}
+			modifier = {
+				factor = 0.1
+				martial < 5
+			}
+			modifier = {
+				factor = 5
+				martial = 8
+			}
+		}
+	}
+	
+	warrior_lodge_mexican_persona = {
+		is_high_prio = yes
+		potential = {
+			is_member_of_a_martial_art_school = yes
+			NOR = {
+				trait = w_heel
+				trait = w_face
+				has_character_flag = choosing_persona
+	
+			}
+			society_rank = 3
+		}
+		
+		allow = {
+			is_adult = yes
+		}
+		
+		effect = {
+			character_event = { id = WR.101 }
+			set_character_flag = choosing_persona
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	warrior_lodge_mexican_style = {
+		is_high_prio = yes
+		potential = {
+			is_member_of_a_martial_art_school = yes
+			NOR = {
+				trait = w_eagle
+				trait = w_jaguar
+				trait = w_snake
+				has_character_flag = choosing_style
+			}
+			society_rank = 2
+		}
+		
+		allow = {
+			is_adult = yes
+		}
+		
+		effect = {
+			character_event = { id = WR.104 }
+			set_character_flag = choosing_style
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	warrior_lodge_legendary_gathering = {
 		ai_check_interval = 36
 
