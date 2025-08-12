@@ -3,7 +3,6 @@ on_startup = {
 	events = {
 		GR.13 #True cognatic for rule gender = all
 		#MNM.10025 #Save game conversion of secret_traits to secret religions
-		JD.10006#Save game fix for setting the name of the Chinese empire
 		JD.60005 #Convert prosthetics event modifiers into artifacts
 		JD.50401 # Set correct value of the Silk Road
 		JD.30504 # Clean up living members of the chinese dynasty
@@ -1450,7 +1449,7 @@ on_siege_won_leader = {
 		88005 # Mongols sack city near the Hashshashin
 		CM.10033 # Chronicle for certain major locations
 		CM.10034 # Chronicle for certain major locations
-		HF.49121 # Northern Crusade flavor tombola
+		#HF.49121 # Northern Crusade flavor tombola
 		HF.49471 # Reconquista flavor tombola
 	}
 	random_events = {
@@ -1593,12 +1592,12 @@ on_birth = {
 		318 # A Bastard is born, but is not recognized as such by the mother's spouse (cuckoo!)
 		335 # Hidden utility event for all children born
 		TOG.3206 # Child Perceived to be Demon Born
-		706 # Full House achievement
-		707 # Keeping it in the Family achievement
+		#706 # Full House achievement
+		#707 # Keeping it in the Family achievement
 		CM.10011 # Chronicle entry
-		HL.1000 # Child born with Wolf's Blood
-		HL.1700 # Wolf's Blood inheritance
-		TOG.6001 # Children gains Saoshyant Descendant trait from Saoshyant
+		#HL.1000 # Child born with Wolf's Blood
+		#HL.1700 # Wolf's Blood inheritance
+		#TOG.6001 # Children gains Saoshyant Descendant trait from Saoshyant
 		RIP.11064 # Babies born in seclusion get seclusion modifier
 		MNM.7508 # DW Demon child
 		HFP.20403 # Remove pregnancy_finishing trait, check all special circumstances for child's birth.
@@ -3630,7 +3629,7 @@ on_unit_entering_province = {
 		8469
 		8305
 		HFP.42320
-		HF.49121 # Northern Crusade flavor
+		#HF.49121 # Northern Crusade flavor
 	}
 }
 
