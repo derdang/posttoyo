@@ -18,7 +18,10 @@ is_member_of_any_warrior_lodge_trigger = {
 	custom_tooltip = {
 		text = is_member_of_any_warrior_lodge_tt
 		hidden_trigger = {
-			society_member_of = warrior_lodge_americanist
+			OR = {
+				society_member_of = warrior_lodge_americanist
+				is_member_of_a_martial_art_school = yes
+			}
 		}
 	}
 }

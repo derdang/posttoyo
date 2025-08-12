@@ -97,9 +97,29 @@ has_sympathy_for_true_religion_of_prev_trigger = {
 		limit = { PREV = { true_religion_group = jewish_group } }
 		trait = sympathy_judaism
 	}
-	trigger_else = {
+	trigger_else_if = {
 		PREV = { true_religion_group = indian_group }
 		trait = sympathy_indian
+	}
+	trigger_else_if = {
+		PREV = { true_religion_group = buddhist_group }
+		trait = sympathy_buddhist
+	}
+	trigger_else_if = {
+		PREV = { true_religion_group = japonic }
+		trait = sympathy_japonic
+	}
+	trigger_else_if = {
+		PREV = { true_religion_group = eastern }
+		trait = sympathy_eastern
+	}
+	trigger_else_if = {
+		PREV = { true_religion_group = latter_day_saints }
+		trait = sympathy_latter_day_saints
+	}
+	trigger_else = {
+		PREV = { true_religion_group = oldworld }
+		trait = sympathy_oldworld
 	}
 }
 
@@ -124,9 +144,29 @@ has_sympathy_for_true_religion_of_root_trigger = {
 		limit = { ROOT = { true_religion_group = jewish_group } }
 		trait = sympathy_judaism
 	}
-	trigger_else = {
-		ROOT = { true_religion_group = indian_group }
+	trigger_else_if = {
+		limit = { ROOT = { true_religion_group = indian_group } }
 		trait = sympathy_indian
+	}
+	trigger_else_if = {
+		limit = { ROOT = { true_religion_group = buddhist_group } }
+		trait = sympathy_buddhist
+	}
+	trigger_else_if = {
+		limit = { ROOT = { true_religion_group = japonic } }
+		trait = sympathy_japonic
+	}
+	trigger_else_if = {
+		limit = { ROOT = { true_religion_group = eastern } }
+		trait = sympathy_eastern
+	}
+	trigger_else_if = {
+		limit = { ROOT = { true_religion_group = latter_day_saints } }
+		trait = sympathy_latter_day_saints
+	}
+	trigger_else = {
+		limit = { ROOT = { true_religion_group = oldworld } }
+		trait = sympathy_oldworld
 	}
 }
 
@@ -151,9 +191,29 @@ has_sympathy_for_true_religion_of_from_trigger = {
 		limit = { FROM = { true_religion_group = jewish_group } }
 		trait = sympathy_judaism
 	}
-	trigger_else = {
-		FROM = { true_religion_group = indian_group }
+	trigger_else_if = {
+		limit = { FROM = { true_religion_group = indian_group } }
 		trait = sympathy_indian
+	}
+	trigger_else_if = {
+		limit = { FROM = { true_religion_group = buddhist_group } }
+		trait = sympathy_buddhist
+	}
+	trigger_else_if = {
+		limit = { FROM = { true_religion_group = japonic } }
+		trait = sympathy_japonic
+	}
+	trigger_else_if = {
+		limit = { FROM = { true_religion_group = eastern } }
+		trait = sympathy_eastern
+	}
+	trigger_else_if = {
+		limit = { FROM = { true_religion_group = latter_day_saints } }
+		trait = sympathy_latter_day_saints
+	}
+	trigger_else = {
+		limit = { FROM = { true_religion_group = oldworld } }
+		trait = sympathy_oldworld
 	}
 }
 
@@ -178,9 +238,29 @@ has_sympathy_for_public_religion_of_prev_trigger = {
 		limit = { PREV = { religion_group = jewish_group } }
 		trait = sympathy_judaism
 	}
-	trigger_else = {
-		PREV = { religion_group = indian_group }
+	trigger_else_if = {
+		limit = { FROM = { religion_group = indian_group } }
 		trait = sympathy_indian
+	}
+	trigger_else_if = {
+		limit = { PREV = { religion_group = buddhist_group } }
+		trait = sympathy_buddhist
+	}
+	trigger_else_if = {
+		limit = { PREV = { religion_group = japonic } }
+		trait = sympathy_japonic
+	}
+	trigger_else_if = {
+		limit = { PREV = { religion_group = eastern } }
+		trait = sympathy_eastern
+	}
+	trigger_else_if = {
+		limit = { PREV = { religion_group = latter_day_saints } }
+		trait = sympathy_latter_day_saints
+	}
+	trigger_else = {
+		limit = { PREV = { religion_group = oldworld } }
+		trait = sympathy_oldworld
 	}
 }
 
@@ -205,9 +285,29 @@ has_sympathy_for_public_religion_of_root_trigger = {
 		limit = { ROOT = { religion_group = jewish_group } }
 		trait = sympathy_judaism
 	}
-	trigger_else = {
-		ROOT = { religion_group = indian_group }
+	trigger_else_if = {
+		limit = { ROOT = { religion_group = indian_group } }
 		trait = sympathy_indian
+	}
+	trigger_else_if = {
+		limit = { ROOT = { religion_group = buddhist_group } }
+		trait = sympathy_buddhist
+	}
+	trigger_else_if = {
+		limit = { ROOT = { religion_group = japonic } }
+		trait = sympathy_japonic
+	}
+	trigger_else_if = {
+		limit = { ROOT = { religion_group = eastern } }
+		trait = sympathy_eastern
+	}
+	trigger_else_if = {
+		limit = { ROOT = { religion_group = latter_day_saints } }
+		trait = sympathy_latter_day_saints
+	}
+	trigger_else = {
+		limit = { ROOT = { religion_group = oldworld } }
+		trait = sympathy_oldworld
 	}
 }
 
@@ -232,9 +332,29 @@ has_sympathy_for_public_religion_of_from_trigger = {
 		limit = { FROM = { religion_group = jewish_group } }
 		trait = sympathy_judaism
 	}
-	trigger_else = {
-		FROM = { religion_group = indian_group }
+	trigger_else_if = {
+		limit = { FROM = { religion_group = indian_group } }
 		trait = sympathy_indian
+	}
+	trigger_else_if = {
+		limit = { FROM = { religion_group = buddhist_group } }
+		trait = sympathy_buddhist
+	}
+	trigger_else_if = {
+		limit = { FROM = { religion_group = japonic } }
+		trait = sympathy_japonic
+	}
+	trigger_else_if = {
+		limit = { FROM = { religion_group = eastern } }
+		trait = sympathy_eastern
+	}
+	trigger_else_if = {
+		limit = { FROM = { religion_group = latter_day_saints } }
+		trait = sympathy_latter_day_saints
+	}
+	trigger_else = {
+		limit = { FROM = { religion_group = oldworld } }
+		trait = sympathy_oldworld
 	}
 }
 
@@ -256,15 +376,24 @@ is_in_prevs_interesting_society_trigger = {
 }
 
 has_dharmic_religion_trigger = {
-	religion_group = indian_group
+	OR = {
+		religion_group = indian_group
+		religion_group = buddhist_group
+	}
 }
 
 has_secret_dharmic_religion_trigger = {
-	secret_religion_group = indian_group
+	OR = {
+		secret_religion_group = indian_group
+		secret_religion_group = buddhist_group
+	}
 }
 
 true_dharmic_religion_trigger = {
-	true_religion_group = indian_group
+	OR = {
+		true_religion_group = indian_group
+		true_religion_group = buddhist_group
+	}
 }
 
 # Remember that Nomads can safely change religion
@@ -289,11 +418,11 @@ has_safe_religion = {
 		}
 	}
 	trigger_else_if = {
-		limit = { religion_group = zoroastrian_group }
+		limit = { OR = {religion_group = zoroastrian_group religion_group = oldworld } }
 		has_dlc = "The Old Gods"
 	}
 	trigger_else_if = {
-		limit = { religion = taoist }
+		limit = { religion_group = eastern }
 
 		OR = {
 			has_dlc = "Rajas of India"
@@ -301,7 +430,7 @@ has_safe_religion = {
 		}
 	}
 	trigger_else_if = {
-		limit = { religion_group = indian_group }
+		limit = { OR = {religion_group = indian_group religion_group = buddhist_group } }
 		has_dlc = "Rajas of India"
 	}
 }
@@ -330,11 +459,11 @@ has_safe_secret_religion = {
 		}
 	}
 	trigger_else_if = {
-		limit = { secret_religion_group = zoroastrian_group }
+		limit = { OR = {secret_religion_group = zoroastrian_group secret_religion_group = oldworld } }
 		has_dlc = "The Old Gods"
 	}
 	trigger_else_if = {
-		limit = { secret_religion = taoist }
+		limit = { secret_religion_group = eastern }
 
 		OR = {
 			has_dlc = "Rajas of India"
@@ -342,7 +471,7 @@ has_safe_secret_religion = {
 		}
 	}
 	trigger_else_if = {
-		limit = { secret_religion_group = indian_group }
+		limit = { OR = {secret_religion_group = indian_group secret_religion_group = buddhist_group } }
 		has_dlc = "Rajas of India"
 	}
 }
