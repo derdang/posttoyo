@@ -4,12 +4,17 @@
 	father=1551001
 	culture=myr
 	religion=weizzane
+	female=yes
+	martial=11
+    diplomacy=9
+    stewardship=4
+    intrigue=5
+    learning=5
+	trait=skilled_tactician
 	trait=strong
 	trait=quick
-	diplomacy=9 
-	martial=11
-	disallow_random_traits=yes 
-	female=yes
+	trait=brave
+	trait=wroth
 	2593.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -24,7 +29,6 @@
 	trait=brave
 	trait=heresiarch
 	trait=mystic
-	disallow_random_traits=yes 
 	2568.10.14={birth=yes}
 	2603.10.14={death=yes}
 }
@@ -39,8 +43,8 @@
 	trait=cruel
 	trait=envious
 	trait=deceitful
-	disallow_random_traits=yes 
 	2578.10.14={birth=yes}
+	2600.1.1= {effect={add_rival=1554001}}
 	2700.1.1={death=yes}
 }
 1551003 ={ #wunpawng tribute, d_sagaging
@@ -48,13 +52,17 @@
 	dynasty=1550010#Swe
 	culture=myr
 	religion=weizzane
+	martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=7
+    learning=5
 	trait=flamboyant_schemer
 	trait=weak
 	trait=craven
 	trait=pious
 	trait=trusting
 	trait=paranoid
-	disallow_random_traits=yes 
 	2580.1.4={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -63,7 +71,18 @@
 	dynasty=1550005#Oo
 	culture=myr
 	religion=weizzane
+	martial=5
+    diplomacy=9
+    stewardship=11
+    intrigue=5
+    learning=5
+	trait=fortune_builder
+	trait=trusting
+	trait=fair
+	trait=craven
+	trait=honest
 	2579.10.14={birth=yes}
+	2600.1.1= {effect={add_friend=1551000}}
 	2700.1.1={death=yes}
 }
 
@@ -72,6 +91,10 @@
 	dynasty=1550001#Aung
 	culture=myr
 	religion=weizzane
+	trait=charismatic_negotiator
+	trait=honest
+	trait=strong
+	trait=just
 	2590.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -80,6 +103,16 @@
 	dynasty=1550032#Hlaing
 	culture=myr
 	religion=weizzane
+	martial=7
+    diplomacy=4
+    stewardship=11
+    intrigue=3
+    learning=3
+	trait=misguided_warrior
+	trait=scarred
+	trait=strong
+	trait=honest
+	trait=just
 	2580.1.4={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -88,6 +121,16 @@
 	dynasty=1550046#Htoo
 	culture=myr
 	religion=weizzane
+	martial=6
+    diplomacy=1
+    stewardship=5
+    intrigue=1
+    learning=4
+	trait=misguided_warrior
+	trait=scarred
+	trait=quick
+	trait=cruel
+	trait=wroth
 	2570.1.4={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -97,6 +140,11 @@
 	culture=shan
 	religion=weizzane
 	secret_religion=maha_nikaya
+	martial=1
+    diplomacy=5
+    stewardship=6
+    intrigue=4
+    learning=3
 	trait=midas_touched
 	trait=ambitious
 	trait=strong
@@ -110,6 +158,11 @@
 	father=1551101#Anolat
 	culture=shan
 	religion=maha_nikaya
+	martial=3
+    diplomacy=2
+    stewardship=1
+    intrigue=2
+    learning=3
 	trait=tough_soldier
 	trait=ambitious
 	trait=kind
@@ -123,8 +176,16 @@
 	culture=shan
 	religion=maha_nikaya
 	secret_religion=dhamsoc
+	martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=5
+    learning=2
+	trait=skilled_tactician
 	trait=ambitious
 	trait=envious
+	trait=wroth
+	trait=cruel
 	2590.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -133,9 +194,15 @@
 	dynasty=2314010 #Suepa
 	culture=shan
 	religion=dhamsoc
+	martial=5
+    diplomacy=2
+    stewardship=3
+    intrigue=5
+    learning=2
 	trait=brilliant_strategist
 	trait=content
 	trait=craven
+	trait=just
 	2540.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -144,8 +211,16 @@
 	dynasty=2314006 #Harn
 	culture=shan
 	religion=maha_nikaya
+	martial=4
+    diplomacy=3
+    stewardship=2
+    intrigue=3
+    learning=4
+	trait=naive_appeaser
 	trait=content
 	trait=brave
+	trait=kind
+	trait=trusting
 	2570.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -154,6 +229,15 @@
 	dynasty=1550017 #Mar
 	culture=myr
 	religion=weizzane
+	martial=2
+    diplomacy=6
+    stewardship=4
+    intrigue=5
+    learning=5
+	trait=flamboyant_schemer
+	trait=scarred
+	trait=stressed
+	trait=schemer
 	trait=ambitious
 	trait=envious
 	trait=wroth
@@ -168,6 +252,19 @@
 	dynasty=1558000#Ma
 	culture=chin
 	religion=weizzane
+	martial=2
+    diplomacy=6
+    stewardship=4
+    intrigue=5
+    learning=5
+	trait=grey_eminence
+	trait=quick
+	trait=shrewd
+	trait=socializer
+	trait=proud
+	trait=envious
+	trait=charitable
+	trait=content
 	2576.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -190,23 +287,100 @@
     2700.1.1={death=yes}
 }
 
-##Rahkine
+##Rahkine (Joint Rahkine and Rohingya State)
 
-1553000 ={ #d_rakhine
-	name="Suleiman"
+1553000 ={ #King of Rakhine (Arakan)
+	name="Daw"
 	dynasty=1551000#Shah
 	culture=rakhine
+	religion=weizzane
+	martial=4
+    diplomacy=8
+    stewardship=5
+    intrigue=4
+    learning=4
+	trait=grey_eminence
+	trait=theologian
+	trait=groomed
+	trait=charitable
+	trait=humble
+	trait=stubborn
+	trait=ambitious
+	trait=sympathy_islam
+	2576.10.14={birth=yes}
+	2600.1.1={add_spouse=1553001}
+	2700.1.1={death=yes}
+}
+
+1553001 ={ #Duchess of Rakhine assumed title from husband in a political marriage
+	name="Wai Wai"
+	dynasty=1565004 #Sultana
+	culture=rohingya
 	religion=renewalist
+	female=yes
+	martial=4
+    diplomacy=8
+    stewardship=5
+    intrigue=4
+    learning=4
+	trait=fortune_builder
+	trait=fair
+	trait=just
+	trait=ambitious
+	trait=kind
 	2576.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
 
-1553001 ={
-	name="Aye"
-	dynasty=1551002#Ba
+1553002 ={ #Rahkine Son - faith of the Father
+	name="Thiha"
+	dynasty=1551000#Shah
+	culture=rakhine
+	religion=weizzane
+	father=1553000
+	mother=1553001
+	martial=6
+    diplomacy=3
+    stewardship=5
+    intrigue=2
+    learning=2
+	trait=rowdy
+	2600.10.14={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1553003 ={ #Rahkine Son - faith of the Mother
+	name="Mohammad"
+	dynasty=1551000#Shah
 	culture=rakhine
 	religion=renewalist
-	female=yes
+	father=1553000
+	mother=1553001
+	martial=2
+    diplomacy=4
+    stewardship=6
+    intrigue=3
+    learning=5
+	trait=idolizer
+	2600.10.14={birth=yes}
+	2700.1.1={death=yes}
+}
+
+1553004 ={ #Count of Mrauk-U
+	name="Fazal"
+	dynasty=1565001 #Akter
+	culture=rohingya
+	religion=renewalist
+	martial=8
+    diplomacy=3
+    stewardship=2
+    intrigue=4
+    learning=4
+	trait=brilliant_strategist
+	trait=brave
+	trait=just
+	trait=content
+	trait=zealous
 	2576.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -217,6 +391,11 @@
 	dynasty=1557026#Chit
 	culture=pao
 	religion=weizzane
+	martial=8
+    diplomacy=3
+    stewardship=2
+    intrigue=4
+    learning=4
 	trait=misguided_warrior
 	trait=lunatic
 	trait=heresiarch
@@ -228,6 +407,14 @@
 	dynasty=1552025#Naing
 	culture=mon
 	religion=dharmayuttika
+	martial=4
+    diplomacy=5
+    stewardship=2
+    intrigue=4
+    learning=4
+	trait=martial_cleric
+	trait=honest
+	trait=just
 	2576.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -244,6 +431,14 @@
 	dynasty=1552012#Tun
 	culture=mon
 	religion=maha_nikaya
+	martial=5
+    diplomacy=2
+    stewardship=5
+    intrigue=3
+    learning=1
+	trait=thrifty_clerk
+	trait=craven
+	trait=content
 	2585.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -252,8 +447,16 @@
 	culture=myr
 	religion=weizzane
 	dynasty=1550014#Thein
+	martial=5
+    diplomacy=2
+    stewardship=3
+    intrigue=6
+    learning=1
 	trait=amateurish_plotter
 	trait=cruel
+	trait=arbitrary
+	trait=cynical
+	trait=strong
 	2570.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -262,6 +465,18 @@
 	dynasty=1552006#Phyu
 	culture=mon
 	religion=maha_nikaya
+	martial=8
+    diplomacy=7
+    stewardship=6
+    intrigue=4
+    learning=3
+	trait=brilliant_strategist
+	trait=falconer
+	trait=just
+	trait=strong
+	trait=fair
+	trait=honest
+	trait=kind
 	2580.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -270,13 +485,17 @@
 	dynasty=1550041#Zeya
 	culture=myr
 	religion=vipassana
-	trait=brilliant_strategist
+	martial=3
+    diplomacy=6
+    stewardship=4
+    intrigue=4
+    learning=6
+	trait=scholarly_theologian
 	trait=strong
 	trait=kind
 	trait=pious
 	trait=trusting
 	trait=content
-	disallow_random_traits=yes 
 	2575.1.4={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -285,14 +504,35 @@
 	dynasty=1552024#Myin
 	culture=mon
 	religion=vipassana
+	martial=3
+    diplomacy=6
+    stewardship=4
+    intrigue=4
+    learning=6
+	trait=scholarly_theologian
+	trait=strong
+	trait=kind
+	trait=pious
+	trait=trusting
+	trait=content
 	2586.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
 1554009 ={ #Rohingya Pathien, c_pathien
 	name="Aung Shah"
-	dynasty=1565001#Nya
+	dynasty=1565003#Nya
 	culture=rohingya
 	religion=renewalist
+	martial=3
+    diplomacy=6
+    stewardship=4
+    intrigue=4
+    learning=6
+	trait=charismatic_negotiator
+	trait=honest
+	trait=kind
+	trait=trusting
+	trait=content
 	2580.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -301,6 +541,16 @@
 	dynasty=1557023#Chay
 	culture=pao
 	religion=weizzane
+	martial=5
+    diplomacy=3
+    stewardship=5
+    intrigue=2
+    learning=5
+	trait=tough_soldier
+	trait=wroth
+	trait=envious
+	trait=ambitious
+	trait=just
 	2585.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -310,7 +560,16 @@
 	dynasty=1553008#Zatang
 	culture=jingpo
 	religion=baptist
-	disallow_random_traits=yes 
+	martial=7
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=5
+	trait = tough_soldier
+	trait = cruel
+	trait = strong
+	trait = honest
+	trait = wroth
 	2576.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -319,7 +578,16 @@
 	dynasty=1560005#Changkilari
 	culture=naga
 	religion=baptist
-	disallow_random_traits=yes 
+	martial=7
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=5
+	trait = martial_cleric
+	trait = one_eyed
+	trait = patient
+	trait = honest
+	trait = fair
 	2576.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -328,7 +596,16 @@
 	dynasty=1550022#Hlaing
 	culture=myr
 	religion=weizzane
-	disallow_random_traits=yes 
+	martial=7
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=5
+	trait = martial_cleric
+	trait = one_eyed
+	trait = patient
+	trait = honest
+	trait = fair
 	2576.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -337,7 +614,16 @@
 	dynasty=3959000#Thang
 	culture=zo
 	religion=baptist
-	disallow_random_traits=yes 
+	martial=4
+    diplomacy=5
+    stewardship=6
+    intrigue=4
+    learning=3
+	trait = naive_appeaser
+	trait = lisp
+	trait = wroth
+	trait = just
+	trait = cruel
 	2576.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -347,6 +633,18 @@
 	dynasty=2314014#Laopitak
 	culture=shan
 	religion=maha_nikaya
+	martial=4
+    diplomacy=6
+    stewardship=4
+    intrigue=4
+    learning=5
+	trait = skilled_tactician
+	trait = one_eyed
+	trait = patient
+	trait = honest
+	trait = just
+	trait = gregarious
+	trait = sympathy_eastern
 	2581.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -355,7 +653,17 @@
 	dynasty=1567017#Hkun
 	culture=wa
 	religion=azhali
-	disallow_random_traits=yes 
+	martial=3
+    diplomacy=3
+    stewardship=8
+    intrigue=3
+    learning=6
+	trait = midas_touched
+	trait = lefthanded
+	trait = patient
+	trait = honest
+	trait = charitable
+	trait = feeble
 	2581.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -364,6 +672,15 @@
 	dynasty=1556012#Tun
 	culture=karenni
 	religion=concordanist
+	martial=5
+    diplomacy=3
+    stewardship=3
+    intrigue=4
+    learning=5
+	trait = indulgent_wastrel
+	trait = shy
+	trait = stubborn
+	trait = sturdy
 	2581.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
@@ -372,7 +689,17 @@
 	dynasty=1567000#Kang
 	culture=wa
 	religion=weizzane
-	disallow_random_traits=yes 
+	martial=7
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=5
+	trait = elusive_shadow
+	trait = one_legged
+	trait = giant
+	trait = proud
+	trait = strong
+	trait = arbitrary
 	2581.10.14={birth=yes}
 	2700.1.1={death=yes}
 }
