@@ -144,8 +144,10 @@ d_trung_sisterhood = {
 	culture = tonkinese
 	
 	allow = {
-		culture_group = viet
-		culture_group = chamic
+		OR = {
+			culture_group = viet
+			culture_group = chamic
+		}
 	}
 
 	title = "CAPTAIN"
@@ -170,8 +172,10 @@ d_dragon_lords = {
 	culture = tonkinese
 	
 	allow = {
-		culture_group = viet
-		culture_group = chamic
+		OR = {
+			culture_group = viet
+			culture_group = chamic
+		}
 	}
 
 	title = "CAPTAIN"
@@ -195,8 +199,10 @@ d_golden_star_dragons = {
 	culture = cochinchinese
 	
 	allow = {
-		culture_group = viet
-		culture_group = chamic
+		OR = {
+			culture_group = viet
+			culture_group = chamic
+		}
 	}
 		
 	title = "CAPTAIN"

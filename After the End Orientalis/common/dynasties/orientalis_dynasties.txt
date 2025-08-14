@@ -3366,10 +3366,36 @@ coat_of_arms = {
 1384045 = { name="Sim" culture=cina }
 
 1550000 = { name="Zin" culture=myr }
-1550001 = { name="Aung" culture=myr }
+1550001 = { name="Aung" culture=myr
+	coat_of_arms = {
+		religion = weizzane
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1550002 = { name="Ba" culture=myr }
 1550003 = { name="Khin" culture=myr }
-1550004 = { name="Maung" culture=myr }
+1550004 = { name="Maung" culture=myr
+	coat_of_arms = {
+		religion = weizzane
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1550005 = { name="Oo" culture=myr }
 1550006 = { name="Phyu" culture=myr }
 1550007 = { name="Thet" culture=myr }
@@ -3379,7 +3405,20 @@ coat_of_arms = {
 1550011 = { name="Su" culture=myr }
 1550012 = { name="Tun" culture=myr }
 1550013 = { name="Thaung" culture=myr }
-1550014 = { name="Thein" culture=myr }
+1550014 = { name="Thein" culture=myr
+	coat_of_arms = {
+		religion = weizzane
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1550015 = { name="Win" culture=myr }
 1550016 = { name="Wai" culture=myr }
 1550017 = { name="Mar" culture=myr }
@@ -3406,7 +3445,20 @@ coat_of_arms = {
 1550038 = { name="Thun" culture=myr }
 1550039 = { name="Thein" culture=myr }
 1550040 = { name="Ba" culture=myr }
-1550041 = { name="Zeya" culture=myr }
+1550041 = { name="Min" culture=myr
+	coat_of_arms = {
+		religion = weizzane
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1550042 = { name="Aung" culture=myr }
 1550043 = { name="Min" culture=myr }
 1550044 = { name="Hlaing" culture=myr }
@@ -3417,7 +3469,20 @@ coat_of_arms = {
 1550049 = { name="Khin" culture=myr }
 1550050 = { name="Aung" culture=myr }
 
-1551000 = { name="Shah" culture=rakhine }
+1551000 = { name="Shah" culture=rakhine
+	coat_of_arms = {
+		religion = vipassana
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1551001 = { name="Aung" culture=rakhine }
 1551002 = { name="Ba" culture=rakhine }
 1551003 = { name="Khin" culture=rakhine }
@@ -3475,7 +3540,20 @@ coat_of_arms = {
 1552003 = { name="Khin" culture=mon }
 1552004 = { name="Maung" culture=mon }
 1552005 = { name="Oo" culture=mon }
-1552006 = { name="Phyu" culture=mon }
+1552006 = { name="Phyu" culture=mon
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1552007 = { name="Thet" culture=mon }
 1552008 = { name="Soe" culture=mon }
 1552009 = { name="Sein" culture=mon }
@@ -3494,7 +3572,20 @@ coat_of_arms = {
 1552022 = { name="Hlaing" culture=mon }
 1552023 = { name="Chay" culture=mon }
 1552024 = { name="Myin" culture=mon }
-1552025 = { name="Naing" culture=mon }
+1552025 = { name="Naing" culture=mon
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1552026 = { name="Chit" culture=mon }
 1552027 = { name="Myint" culture=mon }
 1552028 = { name="Tun" culture=mon }
@@ -3529,7 +3620,20 @@ coat_of_arms = {
 1553005 = { name="Brang" culture=jingpo }
 1553006 = { name="Jyang" culture=jingpo }
 1553007 = { name="Jai" culture=jingpo }
-1553008 = { name="Zatang" culture=jingpo }
+1553008 = { name="Zatang" culture=jingpo
+	coat_of_arms = {
+		religion = baptist
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1553009 = { name="Lahpai" culture=jingpo }
 1553010 = { name="Lachyan" culture=jingpo }
 1553011 = { name="Nanghoi" culture=jingpo }
@@ -3606,7 +3710,20 @@ coat_of_arms = {
 1555016 = { name="Wai" culture=karen }
 1555017 = { name="Mar" culture=karen }
 1555018 = { name="Zaw" culture=karen }
-1555019 = { name="Saw" culture=karen }
+1555019 = { name="Saw" culture=karen
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1555020 = { name="Htoo" culture=karen }
 1555021 = { name="Min" culture=karen }
 1555022 = { name="Hlaing" culture=karen }
@@ -3711,7 +3828,20 @@ coat_of_arms = {
 1557017 = { name="Mar" culture=pao }
 1557018 = { name="Zaw" culture=pao }
 1557019 = { name="Saw" culture=pao }
-1557020 = { name="Htoo" culture=pao }
+1557020 = { name="Htoo" culture=pao
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1557021 = { name="Min" culture=pao }
 1557022 = { name="Hlaing" culture=pao }
 1557023 = { name="Chay" culture=pao }
@@ -3742,6 +3872,20 @@ coat_of_arms = {
 1557048 = { name="Swe" culture=pao }
 1557049 = { name="Khin" culture=pao }
 1557050 = { name="Aung" culture=pao }
+1557051 = { name="Sayadaw" culture=pao
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1558000 = { name="Ma" culture=chin }
 1558001 = { name="Aung" culture=chin }
@@ -4030,7 +4174,20 @@ coat_of_arms = {
 1565001 = { name="Akter" culture=rohingya }
 1565002 = { name="Shah" culture=rohingya }
 1565003 = { name="Nya" culture=rohingya }
-1565004 = { name="Sultana" culture=rohingya }
+1565004 = { name="Sultana" culture=rohingya
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1565005 = { name="Min" culture=rohingya }
 1565006 = { name="Lwin" culture=rohingya }
 1565007 = { name="Gaffar" culture=rohingya }
@@ -4081,7 +4238,20 @@ coat_of_arms = {
 1567014 = { name="Liang" culture=wa }
 1567015 = { name="Ban" culture=wa }
 1567016 = { name="Jia" culture=wa }
-1567017 = { name="Hkun" culture=wa }
+1567017 = { name="Hkun" culture=wa
+	coat_of_arms = {
+		religion = azhali
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1567018 = { name="Ka" culture=wa }
 1567019 = { name="Dang" culture=wa }
 1567020 = { name="Ahn" culture=wa }
@@ -17535,7 +17705,20 @@ coat_of_arms = {
 2313809 =  { name="Sae-ung" culture=thai_paktai }
 
 #Shan/Tai Long
-2314001 = { name="Banya" culture=shan } 
+2314001 = { name="Banya" culture=shan
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2314002 = { name="Jarong" culture=shan} 
 2314003 = { name="Aungpya" culture=shan } 
 2314004 = { name="Deja" culture=shan} 
@@ -17544,11 +17727,37 @@ coat_of_arms = {
 2314007 = { name="Jaturong" culture=shan } 
 2314008 = { name="Kamon" culture=shan} 
 2314009 = { name="Ong-Art" culture=shan } 
-2314010 = { name="Suepa" culture=shan} 
+2314010 = { name="Suepa" culture=shan
+	coat_of_arms = {
+		religion = dhamsoc
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2314011 = { name="Yodpetch" culture=shan } 
 2314012 = { name="Manop" culture=shan} 
 2314013 = { name="Pongchareon" culture=shan } 
-2314014 = { name="Laopitak" culture=shan} 
+2314014 = { name="Laopitak" culture=shan
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2314015 = { name="Saetan" culture=shan } 
 2314016 = { name="Taepanich" culture=shan} 
 2314017 = { name="Juangpattana" culture=shan } 
