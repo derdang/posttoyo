@@ -202,7 +202,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		character_event = { id = hajj.26 day = 1}
+		character_event = { id = hajj.26 }
 	}
 }
 
@@ -378,7 +378,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		character_event = { id = hajj.32 day = 1}
+		character_event = { id = hajj.32 }
 	}
 }
 
@@ -2140,7 +2140,8 @@ narrative_event = {
 			}
 		}
 		hidden_tooltip = {
-			letter_event = { id = hajj.2 days = 2 } Future Hajj Event
+			#letter_event = { id = hajj.2 days = 2 } Future Hajj Event
+			clr_character_flag = preparing_ziyara #temp
 		}
 	}
 	option = {
@@ -2155,6 +2156,7 @@ narrative_event = {
 		}
 	}
 }
+
 narrative_event = {
 	id = hajj.201
 	title = EVTTITLE_HAJJ
