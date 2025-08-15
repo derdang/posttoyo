@@ -4266,13 +4266,65 @@ coat_of_arms = {
 1567029 = { name="Heo" culture=wa }
 1567030 = { name="Gawmg" culture=wa }
 
-1597000 = { name="Kim" culture=hangugin }
-1597001 = { name="Lee" culture=hangugin }
+1597000 = { name="Kim" culture=hangugin
+	coat_of_arms = {
+		religion = muist
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1597001 = { name="Lee" culture=hangugin
+	coat_of_arms = {
+		religion = muist
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1597002 = { name="Park" culture=hangugin }
 1597003 = { name="Jung" culture=hangugin }
-1597004 = { name="Choi" culture=hangugin }
+1597004 = { name="Choi" culture=hangugin
+	coat_of_arms = {
+		religion = unificationist
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1597005 = { name="Cho" culture=hangugin }
-1597006 = { name="Kang" culture=hangugin }
+1597006 = { name="Kang" culture=hangugin
+	coat_of_arms = {
+		religion = muist
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1597007 = { name="Jang" culture=hangugin }
 1597008 = { name="Yoon" culture=hangugin }
 1597009 = { name="Im" culture=hangugin }
@@ -4430,8 +4482,34 @@ coat_of_arms = {
 1597148 = { name="Hae" culture=hangugin }
 1597149 = { name="Tan" culture=hangugin }
 1597150 = { name="Rang" culture=hangugin }
-1597151 = { name="Choe" culture=hangugin }
-1597152 = { name="Jeong" culture=hangugin }
+1597151 = { name="Choe" culture=hangugin
+	coat_of_arms = {
+		religion = muist
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1597152 = { name="Jeong" culture=hangugin
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 
 1598000 = { name="Kim" culture=chosunin
@@ -4439,7 +4517,7 @@ coat_of_arms = {
 		religion = yuilsasang
 		template = 0
 		layer = {
-			texture = 3
+			texture = 0
 			texture_internal = 0
 			emblem = 0
 			color = 0
@@ -4457,7 +4535,20 @@ coat_of_arms = {
 1598007 = { name="Jang" culture=chosunin }
 1598008 = { name="Yoon" culture=chosunin }
 1598009 = { name="Im" culture=chosunin }
-1598010 = { name="Shin" culture=chosunin }
+1598010 = { name="Shin" culture=chosunin
+	coat_of_arms = {
+		religion = yuilsasang
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1598011 = { name="Yu" culture=chosunin }
 1598012 = { name="Han" culture=chosunin }
 1598013 = { name="O" culture=chosunin }
@@ -4465,8 +4556,34 @@ coat_of_arms = {
 1598015 = { name="Ban" culture=chosunin }
 1598016 = { name="Seo" culture=chosunin }
 1598017 = { name="Jeon" culture=chosunin }
-1598018 = { name="Ki" culture=chosunin }
-1598019 = { name="Kwon" culture=chosunin }
+1598018 = { name="Ki" culture=chosunin
+	coat_of_arms = {
+		religion = yuilsasang
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1598019 = { name="Kwon" culture=chosunin
+	coat_of_arms = {
+		religion = yuilsasang
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1598020 = { name="Ahn" culture=chosunin }
 1598021 = { name="Song" culture=chosunin }
 1598022 = { name="Hong" culture=chosunin }
@@ -4604,7 +4721,7 @@ coat_of_arms = {
 		religion = yuilsasang
 		template = 0
 		layer = {
-			texture = 3
+			texture = 0
 			texture_internal = 2
 			emblem = 0
 			color = 0
@@ -4618,7 +4735,7 @@ coat_of_arms = {
 		religion = yuilsasang
 		template = 0
 		layer = {
-			texture = 3
+			texture = 0
 			texture_internal = 1
 			emblem = 0
 			color = 0
