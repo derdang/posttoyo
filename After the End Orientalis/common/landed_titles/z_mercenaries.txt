@@ -1508,3 +1508,53 @@ d_lele_glagah = {
 	
 	mercenary_type = d_lele_glagah_composition
 }
+d_hyundai = {
+	color={ 66 101 25 }
+	color2={ 255 255 255 }
+		
+	capital = 758 # c_seoul
+
+	culture = hangugin
+	religion = cheondoist
+	
+	allow = {
+		culture_group = korean
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_hyundai_composition
+}
+d_samsung = {
+	color={ 55 22 25 }
+	color2={ 255 255 255 }
+		
+	capital = 758 # c_seoul
+
+	culture = hangugin
+	religion = cheondoist
+	
+	allow = {
+		culture_group = korean
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_samsung_composition
+}
