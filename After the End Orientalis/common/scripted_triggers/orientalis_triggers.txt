@@ -153,3 +153,13 @@ is_sea_pagan = {
 		religion = holchu_reformed
 	}
 }
+
+is_accepting_of_homosexuality_trigger = {
+	hidden_tooltip = {
+		OR = { 
+			has_character_flag = overridemarriage
+			has_religion_feature = religion_equal
+		}
+	
+	}
+}
