@@ -1520,7 +1520,7 @@ NTechnology = {
 	SPYACTION_SPREAD_BONUS = 0.006,				-- Spread from the target of the study technology spymaster action
 
 	IDEAL_YEAR_LEVEL_0 = 2400, 					-- the chance to get a progress to this level will increase after this date and decrease before it
-	IDEAL_YEAR_LEVEL_8 = 3100,
+	IDEAL_YEAR_LEVEL_8 = 3200,
 	IDEAL_YEAR_AHEAD_PENALTY_INVEST = 0.6,		-- Percent increase in cost pre level ahead of ideal date
 
 	PAGAN_HOME_ATTRITION_REMOVAL_LEVEL = 4.0,

@@ -754,25 +754,25 @@ character_event = {
 
 	trigger = {
 		NAND = {
-			has_global_flag = bp_world_india_broadcasted
-			has_global_flag = bp_world_persia_broadcasted
-			has_global_flag = bp_world_middle_east_broadcasted
-			has_global_flag = bp_world_africa_broadcasted
-			has_global_flag = bp_world_asia_minor_broadcasted
-			has_global_flag = bp_world_europe_east_broadcasted
-			has_global_flag = bp_world_europe_south_broadcasted
-			has_global_flag = bp_world_europe_west_broadcasted
-			has_global_flag = bp_world_europe_north_broadcasted
-			has_global_flag = bp_world_steppe_broadcasted
+			has_global_flag = bp_custom_indomalay_broadcasted
+			has_global_flag = bp_world_indochina_broadcasted
+			has_global_flag = bp_world_old_japan_broadcasted
+			has_global_flag = bp_custom_china_core_broadcasted
+			has_global_flag = bp_custom_tibet_broadcasted
+			has_global_flag = bp_custom_the_philippines_broadcasted
+			has_global_flag = bp_custom_korea_broadcasted
+			has_global_flag = bp_custom_old_russia_broadcasted
+			has_global_flag = bp_custom_papua_broadcasted
+			has_global_flag = bp_custom_mongolia_broadcasted
 		}
 	}
 
 	immediate = {
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_india_broadcasted }
+				NOT = { has_global_flag = bp_custom_indomalay_broadcasted }
 				regional_percentage = {
-					region = world_india
+					region = custom_indomalay
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -781,7 +781,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_india_broadcasted
+			set_global_flag = bp_custom_indomalay_broadcasted
 			capital_scope = { province_event = { id = RIP.10115 } }
 			chronicle = {
 			entry = CHRONICLE_INDIA_GONE
@@ -790,9 +790,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_persia_broadcasted }
+				NOT = { has_global_flag = bp_world_indochina_broadcasted }
 				regional_percentage = {
-					region = world_persia
+					region = world_indochina
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -801,7 +801,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_persia_broadcasted
+			set_global_flag = bp_world_indochina_broadcasted
 			capital_scope = { province_event = { id = RIP.10116 } }
 			chronicle = {
 			entry = CHRONICLE_PERSIA_GONE
@@ -810,9 +810,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_middle_east_broadcasted }
+				NOT = { has_global_flag = bp_world_old_japan_broadcasted }
 				regional_percentage = {
-					region = world_middle_east
+					region = world_old_japan
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -821,7 +821,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_middle_east_broadcasted
+			set_global_flag = bp_world_old_japan_broadcasted
 			capital_scope = { province_event = { id = RIP.10117 } }
 			chronicle = {
 			entry = CHRONICLE_MIDDLEEAST_GONE
@@ -830,9 +830,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_africa_broadcasted }
+				NOT = { has_global_flag = bp_custom_china_core_broadcasted }
 				regional_percentage = {
-					region = world_africa
+					region = custom_china_core
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -841,7 +841,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_africa_broadcasted
+			set_global_flag = bp_custom_china_core_broadcasted
 			capital_scope = { province_event = { id = RIP.10118 } }
 			chronicle = {
 			entry = CHRONICLE_AFRICA_GONE
@@ -850,9 +850,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_asia_minor_broadcasted }
+				NOT = { has_global_flag = bp_custom_tibet_broadcasted }
 				regional_percentage = {
-					region = world_asia_minor
+					region = custom_tibet
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -861,7 +861,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_asia_minor_broadcasted
+			set_global_flag = bp_custom_tibet_broadcasted
 			capital_scope = { province_event = { id = RIP.10119 } }
 			chronicle = {
 			entry = CHRONICLE_ASIAMINOR_GONE
@@ -870,9 +870,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_europe_east_broadcasted }
+				NOT = { has_global_flag = bp_custom_the_philippines_broadcasted }
 				regional_percentage = {
-					region = world_europe_east
+					region = custom_the_philippines
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -881,7 +881,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_europe_east_broadcasted
+			set_global_flag = bp_custom_the_philippines_broadcasted
 			capital_scope = { province_event = { id = RIP.10120 } }
 			chronicle = {
 			entry = CHRONICLE_EASTEUROPE_GONE
@@ -890,9 +890,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_europe_south_broadcasted }
+				NOT = { has_global_flag = bp_custom_korea_broadcasted }
 				regional_percentage = {
-					region = world_europe_south
+					region = custom_korea
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -901,7 +901,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_europe_south_broadcasted
+			set_global_flag = bp_custom_korea_broadcasted
 			capital_scope = { province_event = { id = RIP.10121 } }
 			chronicle = {
 			entry = CHRONICLE_SOUTHEUROPE_GONE
@@ -910,9 +910,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_europe_west_broadcasted }
+				NOT = { has_global_flag = bp_custom_old_russia_broadcasted }
 				regional_percentage = {
-					region = world_europe_west
+					region = custom_old_russia
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -921,7 +921,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_europe_west_broadcasted
+			set_global_flag = bp_custom_old_russia_broadcasted
 			capital_scope = { province_event = { id = RIP.10122 } }
 			chronicle = {
 			entry = CHRONICLE_WESTEUROPE_GONE
@@ -930,9 +930,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_europe_north_broadcasted }
+				NOT = { has_global_flag = bp_custom_papua_broadcasted }
 				regional_percentage = {
-					region = world_europe_north
+					region = custom_papua
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -941,7 +941,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_europe_north_broadcasted
+			set_global_flag = bp_custom_papua_broadcasted
 			capital_scope = { province_event = { id = RIP.10123 } }
 			chronicle = {
 			entry = CHRONICLE_NORTHEUROPE_GONE
@@ -950,9 +950,9 @@ character_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_global_flag = bp_world_steppe_broadcasted }
+				NOT = { has_global_flag = bp_custom_mongolia_broadcasted }
 				regional_percentage = {
-					region = world_steppe
+					region = custom_mongolia
 					percentage = 0.5
 					OR = {
 						has_province_modifier = depopulated_1
@@ -961,7 +961,7 @@ character_event = {
 					}
 				}
 			}
-			set_global_flag = bp_world_steppe_broadcasted
+			set_global_flag = bp_custom_mongolia_broadcasted
 			capital_scope = { province_event = { id = RIP.10124 } }
 			chronicle = {
 			entry = CHRONICLE_STEPPE_GONE
@@ -1465,7 +1465,7 @@ character_event = {
 				disease = bubonic_plague
 			}
 			regional_percentage = {
-				region = world_india
+				region = custom_indomalay
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1474,7 +1474,7 @@ character_event = {
 				}
 			}
 			regional_percentage = {
-				region = world_persia
+				region = world_indochina
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1483,7 +1483,7 @@ character_event = {
 				}
 			}
 			regional_percentage = {
-				region = world_middle_east
+				region = world_old_japan
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1492,7 +1492,7 @@ character_event = {
 				}
 			}
 			regional_percentage = {
-				region = world_africa
+				region = custom_china_core
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1501,7 +1501,7 @@ character_event = {
 				}
 			}
 			regional_percentage = {
-				region = world_asia_minor
+				region = custom_tibet
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1510,7 +1510,7 @@ character_event = {
 				}
 			}
 			regional_percentage = {
-				region = world_europe_east
+				region = custom_the_philippines
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1519,7 +1519,7 @@ character_event = {
 				}
 			}
 			regional_percentage = {
-				region = world_europe_south
+				region = custom_korea
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1528,7 +1528,7 @@ character_event = {
 				}
 			}
 			regional_percentage = {
-				region = world_europe_west
+				region = custom_old_russia
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1537,7 +1537,7 @@ character_event = {
 				}
 			}
 			regional_percentage = {
-				region = world_europe_north
+				region = custom_papua
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1546,7 +1546,7 @@ character_event = {
 				}
 			}
 			regional_percentage = {
-				region = world_steppe
+				region = custom_mongolia
 				percentage = 0.5
 				OR = {
 					has_province_modifier = depopulated_1
@@ -1559,15 +1559,15 @@ character_event = {
 
 	immediate = {
 		clr_global_flag = black_death_broadcasted
-		clr_global_flag = bp_world_india_broadcasted
-		clr_global_flag = bp_world_persia_broadcasted
-		clr_global_flag = bp_world_middle_east_broadcasted
-		clr_global_flag = bp_world_africa_broadcasted
-		clr_global_flag = bp_world_asia_minor_broadcasted
-		clr_global_flag = bp_world_europe_east_broadcasted
-		clr_global_flag = bp_world_europe_south_broadcasted
-		clr_global_flag = bp_world_europe_west_broadcasted
-		clr_global_flag = bp_world_europe_north_broadcasted
-		clr_global_flag = bp_world_steppe_broadcasted
+		clr_global_flag = bp_custom_indomalay_broadcasted
+		clr_global_flag = bp_world_indochina_broadcasted
+		clr_global_flag = bp_world_old_japan_broadcasted
+		clr_global_flag = bp_custom_china_core_broadcasted
+		clr_global_flag = bp_custom_tibet_broadcasted
+		clr_global_flag = bp_custom_the_philippines_broadcasted
+		clr_global_flag = bp_custom_korea_broadcasted
+		clr_global_flag = bp_custom_old_russia_broadcasted
+		clr_global_flag = bp_custom_papua_broadcasted
+		clr_global_flag = bp_custom_mongolia_broadcasted
 	}
 }

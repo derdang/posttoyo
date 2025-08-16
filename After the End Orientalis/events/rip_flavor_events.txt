@@ -1,9 +1,9 @@
 ###########################################
-#                                         #
-# RIP Flavor Events		           		  #
-# ID RIP.4010 - RIP.4499                  #
+#										#
+# RIP Flavor Events						#
+# ID RIP.4010 - RIP.4499				#
 # ID RIP.29000 -
-#                                         #
+#										#
 ###########################################
 
 #Court physician events written by Alexander Oltner & Mathilda Bjarnehed
@@ -25,6 +25,7 @@ character_event = {
 	picture = GFX_evt_court_physician
 	border = GFX_event_normal_frame_religion
 
+	has_dlc = "Reapers"
 	min_age = 16
 	capable_only = yes
 	only_playable = yes
@@ -33,7 +34,6 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_dlc = "Reapers"
 		NOR = { 
 			has_character_flag = stress_relief
 			is_tribal = yes
@@ -54,7 +54,7 @@ character_event = {
 				trait = physician
 			}
 		}
-		NOT = { character = 108500 } #Not for learning scenario character! 
+		#NOT = { character = 108500 } #Not for learning scenario character! 
 	}
 	
 	weight_multiplier = {
@@ -194,6 +194,7 @@ character_event = {
 	picture = GFX_evt_court_physician
 	border = GFX_event_normal_frame_religion
 
+	has_dlc = "Reapers"
 	min_age = 16
 	capable_only = yes
 	only_playable = yes
@@ -202,7 +203,6 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_dlc = "Reapers"
 		trait = blinded
 		NOR = {
 			has_character_modifier = guide_dog
@@ -541,10 +541,10 @@ character_event = {
 						}
 					}
 				}
-				
+	
 				FROM = { character_event = { id = RIP.4015 } }
 			}
-			
+
 			10 = { # Physician concocts a herbal mixture that is TOO effective...
 				modifier = {
 					factor = 0
@@ -565,13 +565,13 @@ character_event = {
 					factor = 5
 					trait = possessed
 				}
-				
+	
 				FROM = {
 					set_character_flag = fertility_increased_too_much
 					character_event = { id = RIP.4016 days = 14 random = 7 }
 				}
 			}
-			
+
 			50 = { # Physician concocts a herbal mixture that increases your fertility
 				modifier = {
 					factor = 2
@@ -581,13 +581,13 @@ character_event = {
 					factor = 2
 					learning = 18
 				}
-				
+	
 				FROM = {
 					set_character_flag = fertility_increased
 					character_event = { id = RIP.4016 days = 14 random = 7 }
 				}
 			}
-			
+
 			30 = { # Physician concocts a herbal mixture that DECREASES your fertility
 				modifier = {
 					factor = 0.1
@@ -605,7 +605,7 @@ character_event = {
 					factor = 2
 					has_character_flag = physician_is_quack
 				}
-				
+	
 				FROM = {
 					set_character_flag = fertility_decreased
 					character_event = { id = RIP.4016 days = 14 random = 7 }
@@ -755,7 +755,7 @@ character_event = {
 				NOT = { age = 45 }
 				is_marriage_adult = yes
 				is_pregnant = no
-				NOT = { trait = incapable }
+				NOT = { is_incapable = yes }
 				has_lover = no
 				NOT = {
 					spouse = { 
@@ -781,7 +781,7 @@ character_event = {
 				NOT = { age = 45 }
 				is_marriage_adult = yes
 				is_pregnant = no
-				NOT = { trait = incapable }
+				NOT = { is_incapable = yes }
 				has_lover = no
 				NOT = {
 					spouse = { 
@@ -808,7 +808,7 @@ character_event = {
 				NOT = { age = 45 }
 				is_marriage_adult = yes
 				is_pregnant = no
-				NOT = { trait = incapable }
+				NOT = { is_incapable = yes }
 				has_lover = no
 				NOT = {
 					spouse = { 
@@ -832,7 +832,7 @@ character_event = {
 				has_lover = no
 				trait = homosexual
 				NOT = { character = ROOT }
-				NOT = { trait = incapable }
+				NOT = { is_incapable = yes }
 				NOT = { character = event_target:lover_h_2 }
 			}
 			save_event_target_as = lover_h_1
@@ -845,7 +845,7 @@ character_event = {
 				has_lover = no
 				trait = homosexual
 				NOT = { character = ROOT }
-				NOT = { trait = incapable }
+				NOT = { is_incapable = yes }
 				NOT = { character = event_target:lover_h_1 }
 			}
 			save_event_target_as = lover_h_2
@@ -863,17 +863,14 @@ character_event = {
 		}
 		add_trait = lustful
 		if = {
-			limit = {
-				NOT = { trait = homosexual }
-			}  
-			add_trait = homosexual
+			add_trait = bisexual
 		}
 		fertility = 0.25
 		
 		any_spouse = {
 			limit = {
 				prisoner = no
-				NOT = { trait = incapable }
+				NOT = { is_incapable = yes }
 			}
 			hidden_tooltip = {
 				if = {
@@ -896,7 +893,7 @@ character_event = {
 		any_consort = {
 			limit = {
 				prisoner = no
-				NOT = { trait = incapable }
+				NOT = { is_incapable = yes }
 				NOT = { is_senior_consort_party = yes }
 			}
 			hidden_tooltip = {
@@ -2536,6 +2533,7 @@ character_event = {
 	picture = GFX_evt_court_physician
 	border = GFX_event_normal_frame_religion
 
+	has_dlc = "Reapers"
 	min_age = 16
 	capable_only = yes
 	only_playable = yes
@@ -2544,7 +2542,6 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_dlc = "Reapers"
 		higher_tier_than = BARON
 		OR = {
 			is_tribal = yes
@@ -2643,9 +2640,12 @@ character_event = {
 				flag = is_court_physician
 			}
 			new_character = {
+				character_event = { id = misc.3 } # Diversity
+				character_event = { id = misc.4 } # Physique
 				remove_trait = cynical
 				remove_trait = mystic
 				remove_trait = poet
+				remove_trait = musician
 				remove_trait = socializer
 				remove_trait = gamer
 				remove_trait = hedonist
@@ -2785,31 +2785,28 @@ character_event = {
 				factor = 1.5
 				trait = trusting
 			}
-			modifier = {
-				factor = 0.75
-				NOT = {
-					year = 900
-				}
-			}
+			#modifier = {
+			#	factor = 0.75
+			#	NOT = {
+			#		year = 900
+			#	}
+			#}
 			modifier = {
 				factor = 0.25
 				OR = {
-					culture_group = baltic
-					culture_group = finno_ugric  # The most stubborn pagans
+					culture_group = north_atlantic
+					culture_group = britannic
+					culture_group = upland # The most stubborn pagans
 				}
 			}
 			modifier = {
 				factor = 0.25
-				culture_group = east_slavic # Like alcohol
+				culture_group = ameronordic # Like alcohol
 				event_target:missionary_physician_target = {
-					religion_group = muslim
-				}
-			}
-			modifier = {
-				factor = 0.25
-				culture_group = north_germanic # Vikings do like their alcohol
-				event_target:missionary_physician_target = {
-					religion_group = muslim
+					OR = {
+						religion_group = latter_day_saints
+						religion_group = muslim
+					}
 				}
 			}
 			modifier = {
@@ -3820,10 +3817,11 @@ character_event = { # Execution nicknames
 	hide_window = yes
 	is_triggered_only = yes
 	
+	has_dlc = "Reapers"
+	
 	trigger = {
 		death_execution_trigger = yes
 		killer = { always = yes }
-		has_dlc = "Reapers"
 	}
 	
 	immediate = {
@@ -3832,7 +3830,7 @@ character_event = { # Execution nicknames
 				limit = {
 					has_nickname = no
 					is_adult = yes
-					NOT = { trait = incapable }
+					NOT = { is_incapable = yes }
 				}
 				random_list = {
 					5 = {
@@ -3984,18 +3982,9 @@ character_event = {
 
 	trigger = {
 		OR = {
-			any_lover = {
-				is_alive = yes
-				NOT = { is_inaccessible_or_incapable_trigger = yes }
-			}
-			any_friend = {
-				is_alive = yes
-				NOT = { is_inaccessible_or_incapable_trigger = yes }
-			}
-			any_rival = {
-				is_alive = yes
-				NOT = { is_inaccessible_or_incapable_trigger = yes }
-			}
+			any_lover = { is_alive = yes }
+			any_friend = { is_alive = yes }
+			any_rival = { is_alive = yes }
 		}
 		NOR = {
 			death_no_trace_trigger = yes
@@ -4009,34 +3998,25 @@ character_event = {
 		spouse = { save_event_target_as = rip_widow }
 
 		random_child = { 
-			limit = {
-				is_adult = yes
-				NOT = { is_inaccessible_or_incapable_trigger = yes }
-			}
+			limit = { is_adult = yes }
 			save_event_target_as = rip_child
 		}
 
 		#Lover event
 		random_lover = {
-			limit = {
-				NOT = { is_inaccessible_or_incapable_trigger = yes }
-				NOT = { has_character_modifier = grief_timer }
-			}
+			limit = { block_general_event_trigger = no NOT = { has_character_modifier = grief_timer } }
 			character_event = { id = RIP.29001 days = 20 } 
 		}
 
 		#Friend event
 		random_friend = {
-			limit = {
-				NOT = { is_inaccessible_or_incapable_trigger = yes }
-				NOT = { has_character_modifier = grief_timer }
-			}
+			limit = { block_general_event_trigger = no NOT = { has_character_modifier = grief_timer } }
 			save_event_target_as = rip_friend_1
 
 			ROOT = { 
 				random_friend = {
 					limit = { 
-						NOT = { is_inaccessible_or_incapable_trigger = yes }
+						block_general_event_trigger = no 
 						NOR = {
 							is_rival = event_target:rip_friend_1
 							character = event_target:rip_friend_1
@@ -4066,7 +4046,7 @@ character_event = {
 									NOR = {
 										character = event_target:rip_friend_1 
 										is_rival = event_target:rip_friend_1 
-										is_friend = event_target:rip_friend_1  
+										is_friend = event_target:rip_friend_1 
 										is_lover = event_target:rip_friend_1
 									} 
 								} 
@@ -4080,16 +4060,13 @@ character_event = {
 
 		#Rival event
 		random_rival = {
-			limit = {
-				NOT = { is_inaccessible_or_incapable_trigger = yes }
-				NOT = { has_character_modifier = grief_timer }
-			}
+			limit = { block_general_event_trigger = no NOT = { has_character_modifier = grief_timer } }
 			save_event_target_as = rip_enemy_1
 
 			liege = {
 				any_courtier = {
 					limit = { 
-						NOT = { is_inaccessible_or_incapable_trigger = yes }
+						block_general_event_trigger = no 
 						NOR = {
 							is_rival = event_target:rip_enemy_1
 							character = event_target:rip_enemy_1
@@ -4104,7 +4081,7 @@ character_event = {
 			ROOT = { 
 				random_rival = {
 					limit = { 
-						NOT = { is_inaccessible_or_incapable_trigger = yes }
+						block_general_event_trigger = no 
 						NOR = {
 							is_rival = event_target:rip_enemy_1
 							character = event_target:rip_enemy_1
@@ -4116,7 +4093,7 @@ character_event = {
 				}
 				random_child = {
 					limit = { 
-						NOT = { is_inaccessible_or_incapable_trigger = yes }
+						block_general_event_trigger = no 
 						NOR = {
 							is_rival = event_target:rip_enemy_1
 							character = event_target:rip_enemy_1
@@ -4128,7 +4105,7 @@ character_event = {
 				}
 				random_friend = {
 					limit = { 
-						NOT = { is_inaccessible_or_incapable_trigger = yes }
+						block_general_event_trigger = no 
 						NOR = {
 							is_rival = event_target:rip_enemy_1
 							character = event_target:rip_enemy_1
@@ -4195,7 +4172,7 @@ character_event = {
 
 		if = { 
 			limit = { NOT = { trait = depressed } } 
-			
+
 			random = {
 				chance = 50
 				add_trait = depressed
@@ -4425,7 +4402,7 @@ character_event = {
 
 		if = { 
 			limit = { NOT = { trait = depressed } } 
-			
+
 			random = {
 				chance = 50
 				add_trait = depressed
@@ -5124,8 +5101,8 @@ character_event = {
 		name = EVTOPTB_RIP_29019
 		custom_tooltip = { text = EVTOPTB_RIP_29019_TOOLTIP }
 		reverse_opinion = {
-		 	who = FROM
-		 	modifier = opinion_neglectful_parent
+			who = FROM
+			modifier = opinion_neglectful_parent
 		}
 	}
 }
@@ -6628,7 +6605,7 @@ character_event = {
 					factor = 0
 					prefers_men_trigger = yes
 					NOT = {
-						any_courtier = {  
+						any_courtier = { 
 							is_female = no 
 							block_general_event_trigger = no 
 							NOT = { is_lover = ROOT } 
@@ -6644,7 +6621,7 @@ character_event = {
 							is_female = yes 
 							block_general_event_trigger = no 
 							NOT = { is_lover = ROOT } 
-							NOT = { is_close_relative = ROOT }  
+							NOT = { is_close_relative = ROOT } 
 						}
 					}
 				}
@@ -6695,7 +6672,7 @@ character_event = {
 
 	immediate = {
 		if = {
-			limit = { prefers_men_trigger = yes  }
+			limit = { prefers_men_trigger = yes }
 
 			random_courtier = {
 				limit = { is_female = no block_general_event_trigger = no NOT = { is_lover = ROOT } NOT = { is_close_relative = ROOT } }
@@ -6720,8 +6697,8 @@ character_event = {
 		name = EVTOPTA_RIP_29401
 
 		random_list = {
-		 	60 = { character_event = { id = RIP.29402 tooltip = EVTOPTA_RIP_29401_SUCCESS } } 
-		 	40 = { character_event = { id = RIP.29403 tooltip = EVTOPTA_RIP_29401_FAILURE } }
+			60 = { character_event = { id = RIP.29402 tooltip = EVTOPTA_RIP_29401_SUCCESS } } 
+			40 = { character_event = { id = RIP.29403 tooltip = EVTOPTA_RIP_29401_FAILURE } }
 		}
 	}
 
@@ -6918,8 +6895,8 @@ character_event = {
 		name = EVTOPTA_RIP_29501
 
 		random_list = {
-		 	50 = { character_event = { id = RIP.29502 tooltip = EVTOPTA_RIP_29501_SUCCESS days = 30 } } 
-		 	50 = { character_event = { id = RIP.29503 tooltip = EVTOPTA_RIP_29501_FAILURE days = 15 } } #Gives food poisoning
+			50 = { character_event = { id = RIP.29502 tooltip = EVTOPTA_RIP_29501_SUCCESS days = 30 } } 
+			50 = { character_event = { id = RIP.29503 tooltip = EVTOPTA_RIP_29501_FAILURE days = 15 } } #Gives food poisoning
 		}
 	}
 
@@ -6927,8 +6904,8 @@ character_event = {
 		name = EVTOPTB_RIP_29501
 
 		random_list = {
-		 	80 = { character_event = { id = RIP.29502 tooltip = EVTOPTA_RIP_29501_SUCCESS days = 30 } } 
-		 	20 = { character_event = { id = RIP.29504 tooltip = EVTOPTB_RIP_29501_FAILURE days = 15 } } #Gives infirm
+			80 = { character_event = { id = RIP.29502 tooltip = EVTOPTA_RIP_29501_SUCCESS days = 30 } } 
+			20 = { character_event = { id = RIP.29504 tooltip = EVTOPTB_RIP_29501_FAILURE days = 15 } } #Gives infirm
 		}
 	}
 
@@ -7006,7 +6983,7 @@ character_event = {
 	}
 }
 
-#Spouse/lover/child or lover takes care of you  
+#Spouse/lover/child or lover takes care of you 
 character_event = {
 	id = RIP.29511
 
@@ -7098,7 +7075,7 @@ character_event = {
 
 		ai_chance = {
 			factor = 60
-			
+
 			modifier = {
 				trait = kind
 				factor = 2
@@ -7122,7 +7099,7 @@ character_event = {
 
 		ai_chance = {
 			factor = 15
-			
+
 			modifier = {
 				trait = ambitious
 				factor = 2
@@ -7430,7 +7407,11 @@ character_event = {
 					is_ruler = yes
 
 					#First male will inherit
-					NOT = { primary_title = { has_law = true_cognatic_succession } } 
+					NOR = {
+						primary_title = { has_law = true_cognatic_succession }
+						primary_title = { has_law = enatic_cognatic_succession }
+						primary_title = { has_law = enatic_succession }
+					}
 					OR = {
 						primary_title = { has_law = succ_primogeniture }
 						primary_title = { has_law = succ_gavelkind }
@@ -7441,10 +7422,10 @@ character_event = {
 					ROOT = { NOT = { trait = bastard } }
 					ROOT = { is_female = no }
 					num_of_children = 2
-					
+
 					#There is no other legitimate son
 					NOT = {
-						any_child =	{
+						any_child = {
 							NOT = { character = ROOT }
 							is_female = no
 							dynasty = ROOT
@@ -7464,7 +7445,11 @@ character_event = {
 					is_ruler = yes
 
 					#First male will inherit
-					NOT = { primary_title = { has_law = true_cognatic_succession } } 
+					NOR = {
+						primary_title = { has_law = true_cognatic_succession }
+						primary_title = { has_law = enatic_cognatic_succession }
+						primary_title = { has_law = enatic_succession }
+					}
 					OR = {
 						primary_title = { has_law = succ_primogeniture }
 						primary_title = { has_law = succ_gavelkind }
@@ -7475,10 +7460,10 @@ character_event = {
 					ROOT = { NOT = { trait = bastard } }
 					ROOT = { is_female = no }
 					num_of_children = 2
-					
+
 					#There is no other legitimate son
 					NOT = {
-						any_child =	{
+						any_child = {
 							NOT = { character = ROOT }
 							is_female = no
 							dynasty = ROOT
@@ -7548,7 +7533,10 @@ character_event = {
 				OR = {
 					primary_title = { has_law = agnatic_succession }
 					primary_title = { has_law = succ_patrician_elective }
-					religion_group = muslim
+					AND = {
+						religion_group = muslim
+						NOT = { religion = imamite }
+					}
 				}	
 			}
 			set_character_flag = text_girl_cant_inherit
@@ -7561,6 +7549,16 @@ character_event = {
 					OR = {
 						AND = {
 							is_female = yes
+							ROOT = { 
+								OR = {
+									primary_title = { has_law = true_cognatic_succession }
+									primary_title = { has_law = enatic_cognatic_succession }
+									primary_title = { has_law = enatic_succession } 
+								}
+							}
+						}
+						AND = {
+							is_female = no
 							ROOT = { primary_title = { has_law = true_cognatic_succession } }
 						}
 						is_female = no
@@ -7654,7 +7652,7 @@ character_event = {
 				}
 				NOT = { FROM = { mother = { character = ROOT } } }
 			}
-			
+
 			FROM = { mother = { save_event_target_as = firstborn_mother } }
 
 			opinion = {
@@ -7692,7 +7690,7 @@ character_event = {
 			limit = {
 				NOT = { FROM = { mother = { character = ROOT } } }
 			}
-			
+
 			FROM = { mother = { save_event_target_as = firstborn_mother } }
 
 			opinion = {
@@ -7748,7 +7746,7 @@ character_event = {
 			is_child_of = ROOT
 			NOR = { 
 				trait = reincarnation
-				trait = incapable
+				is_incapable = yes
 				prisoner = yes
 				is_inaccessible_trigger = yes
 			}
@@ -7827,7 +7825,7 @@ character_event = {
 		}
 		NOR = { 
 			trait = reincarnation
-			trait = incapable
+			is_incapable = yes
 			prisoner = yes
 			is_inaccessible_trigger = yes
 		}
@@ -7869,7 +7867,7 @@ character_event = {
 	trigger = {
 		NOR = { 
 			trait = reincarnation
-			trait = incapable
+			is_incapable = yes
 			prisoner = yes
 			is_inaccessible_trigger = yes
 		}
@@ -7916,7 +7914,7 @@ character_event = {
 	trigger = {
 		NOR = { 
 			trait = reincarnation
-			trait = incapable
+			is_incapable = yes
 			prisoner = yes
 			is_inaccessible_trigger = yes
 		}
@@ -7942,7 +7940,7 @@ character_event = {
 	trigger = {
 		NOR = {
 			trait = reincarnation
-			trait = incapable
+			is_incapable = yes
 			prisoner = yes
 			is_inaccessible_trigger = yes
 		}
@@ -7971,9 +7969,9 @@ character_event = {
 			}
 		}
 		OR = {
-			religion = manichean
-			religion = west_african_pagan_reformed
-			religion = west_african_pagan
+			religion = neognostic
+			religion = gaian
+			religion = cetic
 		}
 		OR = {
 			father = {
@@ -8057,7 +8055,7 @@ character_event = {
 					}
 				}
 			}
-			
+
 			father = {
 				character_event = {
 					id = RIP.29806
@@ -8102,7 +8100,7 @@ character_event = {
 					}
 				}
 			}
-			
+
 			mother = {
 				character_event = {
 					id = RIP.29806
@@ -8153,7 +8151,7 @@ character_event = {
 
 #######################################
 # LIEGE INTERFERES IN VASSAL WARS
-# by Henrik Fåhraeus
+# by Henrik F?aeus
 #######################################
 
 # Vassal is asked by Liege to stop war of aggression against another vassal
@@ -8406,8 +8404,8 @@ letter_event = {
 				end_war = whitepeace
 			}
 			set_pacified = {
-                years = 1
-            }
+				years = 1
+			}
 		}
 	}
 }
@@ -8470,8 +8468,8 @@ letter_event = {
 				end_war = whitepeace
 			}
 			set_pacified = {
-                years = 3
-            }
+				years = 3
+			}
 		}
 	}
 	
@@ -8598,8 +8596,8 @@ letter_event = {
 				end_war = whitepeace
 			}
 			set_pacified = {
-                years = 3
-            }
+				years = 3
+			}
 		}
 	}
 	
@@ -8669,8 +8667,8 @@ letter_event = {
 		}
 		
 		set_pacified = {
-                years = 2
-        }
+				years = 2
+		}
 		
 		tooltip = {
 			reverse_opinion = {
@@ -8678,7 +8676,7 @@ letter_event = {
 				modifier = opinion_grateful
 				years = 5
 			}
-			
+
 			reverse_remove_favor = FROMFROM
 		}
 		
@@ -9226,7 +9224,7 @@ letter_event = {
 				modifier = opinion_very_grateful
 				years = 10
 			}
-			
+
 			reverse_remove_favor = FROMFROM
 		}
 		
@@ -9736,7 +9734,7 @@ letter_event = {
 				modifier = opinion_very_grateful
 				years = 10
 			}
-			
+
 			reverse_remove_favor = FROMFROM
 		}
 		
@@ -9840,7 +9838,7 @@ character_event = {
 		random_rival = {
 			limit = { block_general_event_trigger = no }
 			save_event_target_as = suicide_duel_target
-			
+
 		}
 	}
 
@@ -9903,9 +9901,9 @@ character_event = {
 
 	#Hang yourself
 	option = {
-   		name = EVTOPTC_RIP_30200
+ 		name = EVTOPTC_RIP_30200
 
-   		hidden_tooltip = {
+ 		hidden_tooltip = {
 			random_list = {
 				30 = {
 					modifier = {
@@ -9994,7 +9992,7 @@ character_event = {
 	}
 }
 
-#Rival recieves challenge
+#Rival receives challenge
 letter_event = {
 	id = RIP.30202
 	desc = EVTDESC_RIP_30202
@@ -10008,7 +10006,7 @@ letter_event = {
 
 		FROM = { letter_event = { id = RIP.30203 days = 14 } }
 
-		ai_chance =  { 
+		ai_chance = { 
 			factor = 100 
 
 			modifier = {
@@ -10029,7 +10027,7 @@ letter_event = {
 			years = 10
 		}
 
-		ai_chance =  { factor = 2 }
+		ai_chance = { factor = 2 }
 	}
 }
 
@@ -10194,7 +10192,7 @@ character_event = {
 
 		event_target:suicide_duel_target = { 
 			prestige = -100
-			
+
 			death = {
 				death_reason = death_duel
 				killer = ROOT
@@ -10719,6 +10717,8 @@ character_event = {
 						}
 					}
 					new_character = {
+						character_event = { id = misc.3 } # Diversity
+						character_event = { id = misc.4 } # Physique
 						save_event_target_as = death
 						set_character_flag = is_death
 					}
@@ -10742,11 +10742,12 @@ character_event = {
 						}
 					}
 					new_character = {
+						character_event = { id = misc.3 } # Diversity
+						character_event = { id = misc.4 } # Physique
 						save_event_target_as = death
-						set_character_flag = is_death
 					}
 				}
-			}			
+			}
 		}
 		if = {
 			limit = { NOT = { religion_group = christian } }
@@ -10757,9 +10758,8 @@ character_event = {
 						age = 32
 						dynasty = none
 						female = yes
-						name = Eugenia
-						culture = italian
-						race = italian
+						name = "Eugenia"
+						culture = gothamite
 						religion = catholic
 						trait = mastermind_theologian
 						trait = nun
@@ -10773,7 +10773,11 @@ character_event = {
 							martial = 5
 						}
 					}
-					new_character = { save_event_target_as = death }
+					new_character = {
+						character_event = { id = misc.3 } # Diversity
+						character_event = { id = misc.4 } # Physique
+						save_event_target_as = death
+					}
 				}
 				50 = {
 					create_character = {
@@ -10781,9 +10785,8 @@ character_event = {
 						age = 32
 						dynasty = none
 						female = no
-						name = Augusto
-						culture = italian
-						race = italian
+						name = "Grim"
+						culture = west_indian
 						religion = catholic
 						trait = mastermind_theologian
 						trait = monk
@@ -10797,9 +10800,13 @@ character_event = {
 							martial = 5
 						}
 					}
-					new_character = { save_event_target_as = death }
+					new_character = {
+						character_event = { id = misc.3 } # Diversity
+						character_event = { id = misc.4 } # Physique
+						save_event_target_as = death
+					}
 				}
-			}			
+			}
 		}
 
 		set_character_flag = chess_30222	
@@ -10822,7 +10829,7 @@ character_event = {
 		FROM = {	
 			trigger_switch = {
 				on_trigger = has_character_flag
-				chess_30222	= { character_event = { id = RIP.30222 } } #Seeing someone during a walk
+				chess_30222 = { character_event = { id = RIP.30222 } } #Seeing someone during a walk
 				chess_30223 = { character_event = { id = RIP.30223 days = 5 } } #Talking to the nun/monk, they want room & board
 				chess_30224 = { narrative_event = { id = RIP.30224 days = 14 random = 14 } } #Death comes for you
 				chess_30225 = { character_event = { id = RIP.30225 days = 1 } } #Outcome of attacking death
@@ -10866,7 +10873,7 @@ character_event = {
 
 		random = {
 			chance = 20
-			add_trait_gregarious_effect = yes			
+			add_trait_gregarious_effect = yes
 		}
 		random = {
 			chance = 30
@@ -10884,7 +10891,7 @@ character_event = {
 
 		random = {
 			chance = 20
-			add_trait_shy_effect = yes			
+			add_trait_shy_effect = yes
 		}
 		random = {
 			chance = 30
@@ -11077,7 +11084,7 @@ narrative_event = {
 				hidden_tooltip = {
 					FROM = {
 						leave_court_effect = yes
-		  				death = { death_reason = death_missing }
+						death = { death_reason = death_missing }
 					}
 				}
 			}
@@ -11149,10 +11156,10 @@ character_event = {
 
 		trigger_switch = {
 			on_trigger = has_character_flag
-			give_wounded	= { add_trait_wounded_effect = yes }
-			give_mangled	= { mangle_effect = yes }
-			give_one_eyed	= { add_trait_one_eyed_effect = yes }
-			give_one_handed	= { add_trait_one_handed_effect = yes }
+			give_wounded = { add_trait_wounded_effect = yes }
+			give_mangled = { mangle_effect = yes }
+			give_one_eyed = { add_trait_one_eyed_effect = yes }
+			give_one_handed = { add_trait_one_handed_effect = yes }
 		}
 
 		clr_character_flag = give_wounded
@@ -11985,7 +11992,7 @@ narrative_event = {
 					}
 					modifier = {
 						factor = 2
-						OR = {				
+						OR = {	
 							trait = lunatic
 							trait = cruel
 							trait = wroth
@@ -11996,7 +12003,7 @@ narrative_event = {
 					set_character_flag = immortal_rival_goodguy
 				}
 				100 = {
-					set_character_flag = immortal_rival_shieldmaiden					
+					set_character_flag = immortal_rival_shieldmaiden
 					modifier = {
 						factor = 2
 						combat_rating = 30
@@ -12079,18 +12086,18 @@ narrative_event = {
 				trait = impaler
 			}
 		}
-		character_event = { id = RIP.30301 days = 180 random = 100  tooltip = IMMORTAL_RIVAL_COMING_TOOLTIP }
+		character_event = { id = RIP.30301 days = 180 random = 100 tooltip = IMMORTAL_RIVAL_COMING_TOOLTIP }
 	}
 	option = {
 		trigger = {
 			trait = craven
 		}
 		name = RIP.30300.b
-		character_event = { id = RIP.30301 days = 180 random = 100  tooltip = IMMORTAL_RIVAL_COMING_TOOLTIP }
+		character_event = { id = RIP.30301 days = 180 random = 100 tooltip = IMMORTAL_RIVAL_COMING_TOOLTIP }
 	}
 	option = {
 		trigger = {
-			OR = {				
+			OR = {	
 				trait = lunatic
 				trait = cruel
 				trait = wroth
@@ -12099,7 +12106,7 @@ narrative_event = {
 			}
 		}
 		name = RIP.30300.c
-		character_event = { id = RIP.30301 days = 180 random = 100  tooltip = IMMORTAL_RIVAL_COMING_TOOLTIP }
+		character_event = { id = RIP.30301 days = 180 random = 100 tooltip = IMMORTAL_RIVAL_COMING_TOOLTIP }
 	}
 
 }
@@ -12118,13 +12125,13 @@ character_event = {
 			}
 			create_character = {
 				random_traits = no
-				name = "Ramirez"
+				name = "Connor"
 				dynasty = none
 				religion = catholic
-				culture = scottish
+				culture = gothamite
 				female = no
-				age = 1500
-				immortal_age = 40
+				age = 1200
+				immortal_age = 30
 				attributes = {
 					martial = 12
 					diplomacy = 10
@@ -12149,13 +12156,13 @@ character_event = {
 			}
 			create_character = {
 				random_traits = no
-				name = "Uran"
+				name = "Dracula"
 				dynasty = culture
-				religion = pagan
-				culture = random
+				religion = occultist
+				culture = angeleno #from the movies...
 				female = no
-				age = 1800
-				immortal_age = 25
+				age = 1250
+				immortal_age = 30
 				attributes = {
 					martial = 15
 					diplomacy = 5
@@ -12165,14 +12172,14 @@ character_event = {
 				}
 				health = 6
 				fertility = 0.8
-				trait = brilliant_strategist
+				trait = elusive_shadow
 				trait = wroth
 				trait = immortal
 				trait = proud
 				trait = impaler
 				trait = cynical
 				trait = strong
-				trait = berserker
+				trait = cannibal_trait
 				trait = envious
 				historical = yes
 			}
@@ -12186,10 +12193,10 @@ character_event = {
 				random_traits = no
 				name = "Arthur"
 				dynasty = none
-				religion = catholic
-				culture = breton
+				religion = celtic_pagan
+				culture = anglish
 				female = no
-				age = 950
+				age = 2550
 				immortal_age = 30
 				attributes = {
 					martial = 16
@@ -12217,12 +12224,12 @@ character_event = {
 			}
 			create_character = {
 				random_traits = no
-				name = "Torhild"
+				name = "Brunnhilde"
 				dynasty = none
 				religion = norse_pagan
-				culture = norse
+				culture = northlander
 				female = yes
-				age = 1300
+				age = 2900
 				immortal_age = 18
 				attributes = {
 					martial = 15
@@ -12253,10 +12260,10 @@ character_event = {
 				random_traits = no
 				name = "Incitatus"
 				dynasty = none
-				religion = hellenic_pagan
+				religion = sol_invicta
 				culture = horse
 				female = no
-				age = 2200
+				age = 3800
 				immortal_age = 20
 				attributes = {
 					martial = 8
@@ -12279,7 +12286,7 @@ character_event = {
 				trait = stubborn
 				trait = schemer
 				trait = cynical
-				trait = ares_own
+				#trait = ares_own
 				trait = horse
 				historical = yes
 			}
@@ -12301,7 +12308,7 @@ character_event = {
 							ai = yes
 							is_alive = yes
 							culture = horse
-							has_job_title = yes								
+							has_job_title = yes
 						}
 					}
 					random_courtier = {
@@ -12312,7 +12319,7 @@ character_event = {
 								has_job_title = yes	
 							}
 						save_event_target_as = immortal_horse_victim
-						death = { death_reason = death_execution_horses killer = event_target:immortal_rival }				
+						death = { death_reason = death_execution_horses killer = event_target:immortal_rival }	
 					}
 					break = yes
 				}
@@ -12355,7 +12362,7 @@ character_event = {
 								is_close_relative = ROOT
 								is_consort = ROOT
 								is_married = ROOT
-							}				
+							}	
 						}
 					}
 					random_courtier = {
@@ -12451,10 +12458,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					5 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					1 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12480,7 +12487,7 @@ character_event = {
 						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					5 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12503,10 +12510,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					15 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					5 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12531,10 +12538,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					20 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					40 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12561,10 +12568,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					20 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					60 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12591,10 +12598,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					15 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					80 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12608,15 +12615,15 @@ character_event = {
 			}
 			custom_tooltip = { text = holmgang_chances_terrible }
 			hidden_tooltip = {
-				random_list = {					
+				random_list = {
 					1 = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					9 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					90 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12653,10 +12660,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					5 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					1 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12682,7 +12689,7 @@ character_event = {
 						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					5 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12705,10 +12712,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					15 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					5 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12733,10 +12740,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					20 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					40 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12763,10 +12770,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					20 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					60 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12793,10 +12800,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					15 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					80 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12810,15 +12817,15 @@ character_event = {
 			}
 			custom_tooltip = { text = holmgang_chances_terrible }
 			hidden_tooltip = {
-				random_list = {					
+				random_list = {
 					1 = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					9 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					90 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12853,10 +12860,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					5 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					1 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12882,7 +12889,7 @@ character_event = {
 						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					5 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12905,10 +12912,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					15 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					5 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12933,10 +12940,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					20 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					40 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12963,10 +12970,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					20 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					60 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -12993,10 +13000,10 @@ character_event = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					15 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					80 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -13010,15 +13017,15 @@ character_event = {
 			}
 			custom_tooltip = { text = holmgang_chances_terrible }
 			hidden_tooltip = {
-				random_list = {					
+				random_list = {
 					1 = {
 						long_character_event = { id = RIP.30303 days = 0 }
 					}
 					9 = {
-						long_character_event = { id =  RIP.30304 days = 0 }
+						long_character_event = { id = RIP.30304 days = 0 }
 					}
 					90 = {
-						long_character_event = { id =  RIP.30305 days = 0 }
+						long_character_event = { id = RIP.30305 days = 0 }
 					}
 				}
 			}
@@ -13028,7 +13035,7 @@ character_event = {
 	}
 	option = { #die
 		name = placeholdername_32 #RIP.30301.die
-		custom_tooltip = { text =  placeholdername_35 } #RIP.30301.die.tooltip
+		custom_tooltip = { text = placeholdername_35 } #RIP.30301.die.tooltip
 			death = { death_reason = death_duel killer = event_target:immortal_rival }
 	}
 	option = { #persuade 
@@ -13070,7 +13077,7 @@ character_event = {
 				OR = {
 					has_education_intrigue_trigger = yes
 					has_lifestyle_intrigue_trigger = yes
-				}			
+				}
 			}
 		}
 		tooltip_info = intrigue
@@ -13093,7 +13100,7 @@ character_event = {
 				OR = {
 					has_education_stewardship_trigger = yes
 					has_lifestyle_stewardship_trigger = yes
-				}			
+				}
 			}
 		}
 		tooltip_info = stewardship
@@ -13117,7 +13124,7 @@ character_event = {
 					has_education_learning_trigger = yes
 					has_lifestyle_learning_trigger = yes
 					is_learned_trigger = yes
-				}			
+				}
 			}
 		}
 		tooltip_info = learning
@@ -13161,7 +13168,7 @@ long_character_event = { # win - no wound
 		}
 	}
 	option = {
-		trigger = {			
+		trigger = {
 			trait = craven
 		}
 		name = placeholdername_8
@@ -13427,7 +13434,7 @@ character_event = { # trick
 			add_province_modifier = {
 				name = trapped_immortal
 				duration = -1
-			}			
+			}
 		}
 	}
 }
@@ -13450,7 +13457,7 @@ character_event = { # the power of money
 		trigger = {
 			OR = {
 				trait = lunatic
-				trait = possessed  
+				trait = possessed 
 				trait = hunter
 			}
 		}
@@ -13486,7 +13493,7 @@ character_event = { # the power of money
 			add_province_modifier = {
 				name = trapped_immortal
 				duration = -1
-			}			
+			}
 		}
 	}
 }
@@ -13631,10 +13638,10 @@ character_event = { # clean up immortal crisis
 		}
 		NOR = {
 			any_vassal = {
-				has_opinion_modifier = { who = ROOT  modifier = immortal_hate }
+				has_opinion_modifier = { who = ROOT modifier = immortal_hate }
 			}
 			any_vassal = {
-				has_opinion_modifier = { who = ROOT  modifier = immortal_suspicions }
+				has_opinion_modifier = { who = ROOT modifier = immortal_suspicions }
 			}
 		}
 	}
