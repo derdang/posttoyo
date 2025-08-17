@@ -707,23 +707,6 @@ crusader = {
 		crusader_king
 		crusader_queen
 		mujahid
-		valhalla_bound
-		jaguar_warrior
-		fords_striker
-		sword_of_the_lamb
-		knight_templar
-		order_of_the_garter
-		danite
-		shaddai
-		lughs_own
-		thunderbird_warrior
-		raven_warrior
-		dragon_soldier
-		hivernant
-		cavalier
-		joropo_cantor
-		medal_of_honor
-		patriota
 	}
 	
 	martial = 2
@@ -1390,7 +1373,6 @@ lustful = {
 	}
 	
 	vice = yes
-	brethren_opinion = 5
 	
 	fertility = 0.2
 	
@@ -1424,7 +1406,6 @@ chaste = {
 	}
 	
 	virtue = yes
-	brethren_opinion = -10
 	
 	fertility = -0.15
 	
@@ -1453,7 +1434,6 @@ gluttonous = {
 	}
 	
 	vice = yes
-	brethren_opinion = 5
 	
 	sex_appeal_opinion = -15
 	church_opinion = -5
@@ -1478,7 +1458,6 @@ temperate = {
 	}
 	
 	virtue = yes
-	brethren_opinion = -5
 	
 	church_opinion = 5
 	opposite_opinion = -5
@@ -1502,9 +1481,6 @@ greedy = {
 	}
 	
 	vice = yes
-	consumerist_opinion = 5
-	monetarist_opinion = 5
-	brethren_opinion = 5
 	
 	global_tax_modifier = 0.1
 	diplomacy = -1
@@ -1524,7 +1500,6 @@ charitable = {
 	}
 	
 	virtue = yes
-	brethren_opinion = -5
 	
 	diplomacy = 3
 	
@@ -1601,7 +1576,6 @@ envious = {
 	}
 	
 	vice = yes
-	brethren_opinion = 5
 	
 	intrigue = 2
 	diplomacy = -1
@@ -1622,7 +1596,6 @@ kind = {
 	}
 	
 	virtue = yes
-	brethren_opinion = -5
 	
 	intrigue = -2
 	diplomacy = 2
@@ -1645,7 +1618,6 @@ wroth = {
 	}
 	
 	vice = yes
-	brethren_opinion = 5
 	
 	diplomacy = -1
 	intrigue = -1
@@ -1692,7 +1664,6 @@ proud = {
 	
 	
 	vice = yes
-	brethren_opinion = 5
 	
 	monthly_character_prestige = 0.5
 	
@@ -1708,7 +1679,6 @@ humble = {
 	}
 	
 	virtue = yes
-	brethren_opinion = -5
 	
 	monthly_character_piety = 1
 	opposite_opinion = -5
@@ -1956,14 +1926,11 @@ zealous = {
 	opposites = {
 		cynical
 		devout
-		sympathy_afro_syncretic
-		sympathy_american_native
-		sympathy_amero_syncretic
 		sympathy_christendom
-		sympathy_cult_of_saints
-		sympathy_pacific
+		sympathy_eastern
+		sympathy_buddhist
 		sympathy_latter_day_saints
-		sympathy_mesoamerican_gods
+		sympathy_japonic
 		sympathy_oldworld
 		sympathy_pagans
 		sympathy_nautical

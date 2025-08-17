@@ -1552,6 +1552,14 @@ letter_event = { #SUCCESS: Welcome to the society!
 			#Give Sympathy trait
 			add_trait = sympathy_pagans
 		}
+		
+		if = {
+			limit = {
+				is_member_of_a_martial_art_school = yes
+			}
+			#Give Martial Disciple Trait to find in the Character Search Feature
+			add_trait = martial_disciple
+		}
 
 		hidden_effect = {
 			clr_character_flag = was_actually_injured
@@ -2121,5 +2129,20 @@ character_event = {
 	option = {	
 		name = EVTOPTB_HF_10017_1 #I am an embarrassment.
 		trigger = { has_character_flag = parent_was_mean }
+	}
+}
+#Safety removal on_death and leave_society for Martial Arts Lodge event troops.
+character_event = {
+	id = WR.415
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		trait = martial_disciple 	
+	}
+
+	immediate = {
+		remove_trait = martial_disciple
 	}
 }

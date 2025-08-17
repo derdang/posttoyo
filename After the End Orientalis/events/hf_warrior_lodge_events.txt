@@ -12,67 +12,146 @@ namespace = HF
 #From on_character_ask_to_join_society
 #Set up for finding an appropriate Hero character, who will tell the new recruit about the initation duel
 character_event = {
-    id = HF.10003
-    is_triggered_only = yes
-    hide_window = yes
-    #ai = no
+	id = HF.10003
+	is_triggered_only = yes
+	hide_window = yes
+	#ai = no
 
-    trigger = {
-        NOT = { has_character_flag = is_being_recruited_to_warrior_lodge_by_parent }
-        NOT = { has_character_flag = awaiting_initiation_trial }
-        FROM = { leader = { is_member_of_any_warrior_lodge_trigger = yes } }
-    }
+	trigger = {
+		NOT = { has_character_flag = is_being_recruited_to_warrior_lodge_by_parent }
+		NOT = { has_character_flag = awaiting_initiation_trial }
+		FROM = { 
+			leader = { 
+				AND = {
+					is_member_of_any_warrior_lodge_trigger = yes 
+					NOT = { 
+						is_member_of_a_martial_art_school = yes
+					} 
+				}
+			} 
+		}
+	}
 
-    immediate = {
-        FROM = { save_event_target_as = warrior_lodge_to_join } #used later for joining correct society
-        set_character_flag = society_join_block
-        set_character_flag = awaiting_initiation_trial
-        save_event_target_as = new_recruit
+	immediate = {
+		FROM = { save_event_target_as = warrior_lodge_to_join } #used later for joining correct society
+		set_character_flag = society_join_block
+		set_character_flag = awaiting_initiation_trial
+		save_event_target_as = new_recruit
 
-        if = { #Find a non-prisoner member
-            limit = { FROM = { leader = { prisoner = yes } } }
-            FROM = {
-                random_society_member = {
-                    limit = { 
-                        society_member_of = event_target:warrior_lodge_to_join
-                        society_rank == 4
-                        prisoner = no
-                    }
-                    character_event = { id = HF.10004 }
-                    break = yes
-                }
-                random_society_member = {
-                    limit = { 
-                        society_member_of = event_target:warrior_lodge_to_join
-                        society_rank == 3
-                        prisoner = no
-                    }
-                    character_event = { id = HF.10004 }
-                    break = yes
-                }
-                random_society_member = {
-                    limit = { 
-                        society_member_of = event_target:warrior_lodge_to_join
-                        society_rank == 2
-                        prisoner = no
-                    }
-                    character_event = { id = HF.10004 }
-                    break = yes
-                }
-                random_society_member = {
-                    limit = { 
-                        society_member_of = event_target:warrior_lodge_to_join
-                        society_rank == 1
-                        prisoner = no
-                    }
-                    character_event = { id = HF.10004 }
-                    break = yes
-                }
-            }
-            #Everyone is somehow in prison so just use the leader anyway
-        }
-        FROM = { leader = { character_event = { id = HF.10004 } } }
-    }
+		if = { #Find a non-prisoner member
+			limit = { 
+				FROM = { 
+					leader = { 
+						prisoner = yes 
+					} 
+				}
+				NOT = {
+					FROM = {
+						leader = {
+							is_member_of_a_martial_art_school = yes
+						}
+					}
+				}
+			}
+
+			FROM = {
+				random_society_member = {
+					limit = { 
+						society_member_of = event_target:warrior_lodge_to_join
+						society_rank == 4
+						prisoner = no
+					}
+					character_event = { id = HF.10004 }
+					break = yes
+				}
+				random_society_member = {
+					limit = { 
+						society_member_of = event_target:warrior_lodge_to_join
+						society_rank == 3
+						prisoner = no
+					}
+					character_event = { id = HF.10004 }
+					break = yes
+				}
+				random_society_member = {
+					limit = { 
+						society_member_of = event_target:warrior_lodge_to_join
+						society_rank == 2
+						prisoner = no
+					}
+					character_event = { id = HF.10004 }
+					break = yes
+				}
+				random_society_member = {
+					limit = { 
+						society_member_of = event_target:warrior_lodge_to_join
+						society_rank == 1
+						prisoner = no
+					}
+					character_event = { id = HF.10004 }
+					break = yes
+				}
+			}
+			#Everyone is somehow in prison so just use the leader anyway
+		}
+		else_if = { #Find a non-prisoner member
+			limit = { FROM = { leader = { prisoner = yes } } }
+			FROM = {
+				random_society_member = {
+					limit = { 
+						society_member_of = event_target:warrior_lodge_to_join
+						society_rank == 4
+						prisoner = no
+					}
+					character_event = { id = WR.401 }
+					break = yes
+				}
+				random_society_member = {
+					limit = { 
+						society_member_of = event_target:warrior_lodge_to_join
+						society_rank == 3
+						prisoner = no
+					}
+					character_event = { id = WR.401 }
+					break = yes
+				}
+				random_society_member = {
+					limit = { 
+						society_member_of = event_target:warrior_lodge_to_join
+						society_rank == 2
+						prisoner = no
+					}
+					character_event = { id = WR.401 }
+					break = yes
+				}
+				random_society_member = {
+					limit = { 
+						society_member_of = event_target:warrior_lodge_to_join
+						society_rank == 1
+						prisoner = no
+					}
+					character_event = { id = WR.401 }
+					break = yes
+				}
+			}
+			#Everyone is somehow in prison so just use the leader anyway
+		}
+		if = {
+			limit = {
+				FROM = {
+					leader = {
+						NOT = {
+							is_member_of_a_martial_art_school = yes
+						}
+					}
+				}
+			}
+			FROM = { leader = { character_event = { id = HF.10004 } } }
+		}
+		else = {
+			FROM = { leader = { character_event = { id = WR.401 } } }
+		}
+	}
 }
 
 #Event for hero character (unless MP, this is an AI)
@@ -553,6 +632,8 @@ letter_event = { #SUCCESS: Welcome to the society!
             #Give Sympathy trait
             add_trait = sympathy_pagans
         }
+		
+		add_trait = martial_disciple
 
         hidden_effect = {
             clr_character_flag = was_actually_injured
@@ -2831,109 +2912,153 @@ character_event = {
 
 ### Follow-up: If was eligible, AI joins a warrior lodge
 character_event = {
-    id = HF.10051
-    hide_window = yes
-    is_triggered_only = yes
-    immediate = {
-        if = {
-            limit = {
-                religion_openly_norse_or_reformed_trigger = yes
-                can_join_society = warrior_lodge_norse
-            }
-            join_society = warrior_lodge_norse
-		}
-        else_if = {
-            limit = {
-                religion_openly_baltic_or_reformed_trigger = yes
-                can_join_society = warrior_lodge_baltic
-            }
-            join_society = warrior_lodge_baltic
-        }
-        else_if = {
-            limit = {
-                religion_openly_finnish_or_reformed_trigger = yes
-                can_join_society = warrior_lodge_finnish
-            }
-            join_society = warrior_lodge_finnish
-        }
-        else_if = {
-            limit = {
-                religion_openly_slavic_or_reformed_trigger = yes
-                can_join_society = warrior_lodge_slavic
-            }
-            join_society = warrior_lodge_slavic
-        }
-        else_if = {
-            limit = {
-                religion_openly_west_african_or_reformed_trigger = yes
-                can_join_society = warrior_lodge_west_african
-            }
-            join_society = warrior_lodge_west_african
-        }
-        else_if = {
-            limit = {
-                religion_openly_zun_or_reformed_trigger = yes
-                can_join_society = warrior_lodge_zun
-            }
-            join_society = warrior_lodge_zun
-        }
-        else_if = {
-            limit = {
-                religion_openly_bon_or_reformed_trigger = yes
-                can_join_society = warrior_lodge_bon
-            }
-            join_society = warrior_lodge_bon
-        }
-        else_if = {
-            limit = {
-                religion_openly_hellenic_or_reformed_trigger = yes
-                can_join_society = warrior_lodge_hellenic
-            }
-            join_society = warrior_lodge_hellenic
-        }
-        else_if = {
-            limit = {
+	id = HF.10051
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
 				OR = {
-					religion_openly_tengri_or_reformed_trigger = yes
-					is_nomadic = yes
+					religion_openly_americanist_or_heresy_trigger = yes
+					can_join_society = warrior_lodge_americanist
 				}
-                can_join_society = warrior_lodge_tengri
-            }
-            join_society = warrior_lodge_tengri
-        }
-        else = {
-            log = "[Root.GetTitledName] failed to join a society in event HF.10051"
-            break = yes
-        }
-        log = "[Root.GetTitledName] joined [Root.Society.GetName] society!"
-        
-        apply_random_minor_injury_effect = yes #So it seems they were in a duel!
+			}
+			join_society = warrior_lodge_americanist
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture_group = viet
+					culture_group = cham
+					can_join_society = warrior_lodge_viet
+				}
+			}
+			join_society = warrior_lodge_viet
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture_group = malayan
+					culture_group = dayak
+					can_join_society = warrior_lodge_malayan
+				}
+			}
+			join_society = warrior_lodge_malayan
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture_group = nusantaran
+					culture_group = barrier_batak
+					can_join_society = warrior_lodge_indonesian
+				}
+			}
+			join_society = warrior_lodge_indonesian
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture_group = philippine
+					can_join_society = warrior_lodge_filipino
+				}
+			}
+			join_society = warrior_lodge_filipino
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture_group = southwest_tai
+					can_join_society = warrior_lodge_thailao
+				}
+			}
+			join_society = warrior_lodge_thailao
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture_group = burmic
+					culture_group = karenic
+					can_join_society = warrior_lodge_burmese
+				}
+			}
+			join_society = warrior_lodge_burmese
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture_group = cambodian
+					can_join_society = warrior_lodge_khmer
+				}
+			}
+			join_society = warrior_lodge_khmer
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture_group = japonic
+					can_join_society = warrior_lodge_japanese
+				}
+			}
+			join_society = warrior_lodge_japanese
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture_group = korean
+					can_join_society = warrior_lodge_korean
+				}
+			}
+			join_society = warrior_lodge_korean
+		}
+		else_if = {
+			limit = {
+				OR = {
+					can_join_society = warrior_lodge_northern_chinese
+				}
+			}
+			join_society = warrior_lodge_northern_chinese
+		}
+		else_if = {
+			limit = {
+				OR = {
+					can_join_society = warrior_lodge_southern_chinese
+				}
+			}
+			join_society = warrior_lodge_southern_chinese
+		}
+		else = {
+			log = "[Root.GetTitledName] failed to join a society in event HF.10051"
+			break = yes
+		}
+		log = "[Root.GetTitledName] joined [Root.Society.GetName] society!"
+		
+		apply_random_minor_injury_effect = yes #So it seems they were in a duel!
 
-        if = {
-            limit = {
-                NOT = {
-                    society = {
-                        any_society_member = {
-                            is_society_grandmaster = yes
-                        }
-                    }
-                }
-            }
-            log = "[This.Society.GetName] is a society without a grandmaster and I am trying to be set as the grandmaster."
-            set_society_grandmaster = yes # Set character as Grand Master (if there was none)
-            add_society_currency_massive_effect = yes
-        }
+		if = {
+			limit = {
+				NOT = {
+					society = {
+						any_society_member = {
+							is_society_grandmaster = yes
+						}
+					}
+				}
+			}
+			log = "[This.Society.GetName] is a society without a grandmaster and I am trying to be set as the grandmaster."
+			set_society_grandmaster = yes # Set character as Grand Master (if there was none)
+			add_society_currency_massive_effect = yes
+		}
 
-        society = {
-            any_society_member = { #Send notification to players that society is growing...
-                limit = {
-                    ai = no
-                    society_rank = 4
-                }
-                character_event = { id = HF.10052 days = 1 random = 15 }
-            }
-        }
-    }
+		society = {
+			any_society_member = { #Send notification to players that society is growing...
+				limit = {
+					ai = no
+					society_rank = 4
+				}
+				character_event = { id = HF.10052 days = 1 random = 15 }
+			}
+		}
+	}
 }
 
 #Notification for players, that their warrior lodge is growing

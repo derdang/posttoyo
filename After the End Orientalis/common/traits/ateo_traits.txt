@@ -745,3 +745,19 @@ akhom_tolerations = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+####Traits to assign to Martial Arts Society (ATEO Original)
+martial_disciple = {
+	personality = yes
+	
+	martial = 2
+	
+	male_compliment_adj = COMPL_COMMANDING
+	female_compliment_adj = COMPL_CONFIDENT
+	
+	male_insult = INSULT_authoritarian
+	female_insult = INSULT_authoritarian
+	child_insult = INSULT_MEANIE
+	male_insult_adj = INSULT_OVERBEARING
+	female_insult_adj = INSULT_HIGH_HANDED
+	child_insult_adj = INSULT_SCARY
+}
