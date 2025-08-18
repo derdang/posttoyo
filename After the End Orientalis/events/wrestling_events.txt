@@ -2146,3 +2146,20 @@ character_event = {
 		remove_trait = martial_disciple
 	}
 }
+#Adds Martial Arts Lodge event troops. (on_game_start)
+character_event = {
+	id = WR.416
+	hide_window = yes
+
+	is_triggered_only = yes
+	has_game_started = no
+	
+	trigger = { 
+		NOT = {trait = martial_disciple}
+		is_member_of_any_warrior_lodge_trigger = yes
+	}
+
+	immediate = {
+		add_trait = martial_disciple
+	}
+}
