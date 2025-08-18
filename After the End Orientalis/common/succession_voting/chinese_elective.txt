@@ -2838,7 +2838,7 @@ byzantine_elective_2 = {
 				AND = { 
 					religion_group = pagan_group
 					NOT = { religion = bon }
-					NOT = { religion = bon_reformed }
+					NOT = { #religion = bon_reformed }
 					NOT = { religion = hellenic_pagan }
 					NOT = { religion = hellenic_pagan_reformed }
 				}
@@ -2863,7 +2863,7 @@ byzantine_elective_2 = {
 				religion = hellenic_pagan
 				religion = hellenic_pagan_reformed
 				religion = bon
-				religion = bon_reformed
+				#religion = bon_reformed
 			}
 			NOT = { trait = gluttonous }
 			FROM = { 
@@ -2879,7 +2879,7 @@ byzantine_elective_2 = {
 				AND = { 
 					religion_group = pagan_group
 					NOT = { religion = bon }
-					NOT = { religion = bon_reformed }
+					NOT = { #religion = bon_reformed }
 					NOT = { religion = hellenic_pagan }
 					NOT = { religion = hellenic_pagan_reformed }
 					NOT = { religion = novelist }
@@ -2987,7 +2987,7 @@ byzantine_elective_2 = {
 				religion_group = indian_group
 				religion_group = buddhist_group
 				religion = bon
-				religion = bon_reformed
+				#religion = bon_reformed
 			}
 			NOR = { 
 				trait = proud 
@@ -3005,7 +3005,7 @@ byzantine_elective_2 = {
 				AND = { 
 					religion_group = pagan_group
 					NOT = { religion = bon }
-					NOT = { religion = bon_reformed }
+					NOT = { #religion = bon_reformed }
 					NOT = { religion = hellenic_pagan }
 					NOT = { religion = hellenic_pagan_reformed }
 				}
@@ -3024,7 +3024,7 @@ byzantine_elective_2 = {
 				AND = { 
 					religion_group = pagan_group
 					NOT = { religion = bon }
-					NOT = { religion = bon_reformed }
+					NOT = { #religion = bon_reformed }
 					NOT = { religion = hellenic_pagan }
 					NOT = { religion = hellenic_pagan_reformed }
 				}
@@ -3064,7 +3064,7 @@ byzantine_elective_2 = {
 				AND = { 
 					religion_group = pagan_group
 					NOT = { religion = bon }
-					NOT = { religion = bon_reformed }
+					NOT = { #religion = bon_reformed }
 					NOT = { religion = hellenic_pagan }
 					NOT = { religion = hellenic_pagan_reformed }
 				}
@@ -3103,7 +3103,7 @@ byzantine_elective_2 = {
 				AND = { 
 					religion_group = pagan_group
 					NOT = { religion = bon }
-					NOT = { religion = bon_reformed }
+					NOT = { #religion = bon_reformed }
 				}
 				trait = greedy
 			}
@@ -3189,7 +3189,7 @@ byzantine_elective_2 = {
 			religion_group = pagan_group
 			NOR = { 
 				religion = bon
-				religion = bon_reformed
+				#religion = bon_reformed
 				trait = humble
 			}
 			FROM = { 
@@ -3227,7 +3227,7 @@ byzantine_elective_2 = {
 			religion_group = pagan_group
 			NOR = { 
 				religion = bon
-				religion = bon_reformed
+				#religion = bon_reformed
 				trait = content
 			}
 			FROM = { 
@@ -3246,7 +3246,7 @@ byzantine_elective_2 = {
 				religion_group = indian_group
 				religion_group = buddhist_group
 				religion = bon
-				religion = bon_reformed
+				#religion = bon_reformed
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -3330,7 +3330,7 @@ byzantine_elective_2 = {
 			NOR = { 
 				trait = content
 				religion = bon
-				religion = bon_reformed
+				#religion = bon_reformed
 			}
 			FROM = { 
 				trait = content
@@ -4043,7 +4043,7 @@ byzantine_elective_2 = {
 			OR = { 
 				AND = { 
 					NOT = { has_dlc = "Holy Fury"}
-					religion = bon_reformed
+					#religion = bon_reformed
 				}
 				pacifist = yes
 			}
@@ -4063,15 +4063,10 @@ byzantine_elective_2 = {
 					trait = sympathy_zoroastrianism
 					trait = sympathy_pagans
 					trait = sympathy_indian
-					trait = sympathy_buddhism
-					trait = sympathy_old_world_cultist
-					trait = sympathy_esoteric
-					trait = sympathy_syncratic
-					trait = sympathy_oceanic
-					trait = sympathy_alien
-					trait = sympathy_synth
-					trait = sympathy_chinese
-					trait = sympathy_shinto
+					trait = sympathy_buddhist
+					trait = sympathy_oldworld
+					trait = sympathy_eastern
+					trait = sympathy_japonic
 				}
 			}
 		}
