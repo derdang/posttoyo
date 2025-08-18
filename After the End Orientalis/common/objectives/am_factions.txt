@@ -166,48 +166,6 @@ faction_pro_imperial = {
 		}
 		
 		modifier = {
-			factor = 2.0
-			FROM = { trait = way_dove }
-			e_china = { holder_scope = { trait = way_dove } }
-		}
-		modifier = {
-			factor = 2.0
-			FROM = { trait = way_cowl }
-			e_china = { holder_scope = { trait = way_cowl } }
-		}
-		modifier = {
-			factor = 2.0
-			FROM = { trait = way_book }
-			e_china = { holder_scope = { trait = way_book } }
-		}
-		modifier = {
-			factor = 2.0
-			FROM = { trait = way_fist }
-			e_china = { holder_scope = { trait = way_fist } }
-		}
-		
-		modifier = {
-			factor = 0.3
-			FROM = { trait = way_dove }
-			LIEGE = { trait = way_dove }
-		}
-		modifier = {
-			factor = 0.3
-			FROM = { trait = way_cowl }
-			LIEGE = { trait = way_cowl }
-		}
-		modifier = {
-			factor = 0.3
-			FROM = { trait = way_book }
-			LIEGE = { trait = way_book }
-		}
-		modifier = {
-			factor = 0.3
-			FROM = { trait = way_fist }
-			LIEGE = { trait = way_fist }
-		}
-		
-		modifier = {
 			factor = 0.1
 			LIEGE = { has_character_modifier = imperial_favor }
 		}
@@ -343,31 +301,6 @@ faction_pro_imperial = {
 		modifier = {
 			factor = 4.0
 			trait = zealous
-		}
-		
-		modifier = {
-			factor = 2.0
-			trait = way_dove
-			e_china = { holder_scope = { trait = way_dove } }
-			FROM = { trait = way_dove }
-		}
-		modifier = {
-			factor = 2.0
-			trait = way_cowl
-			e_china = { holder_scope = { trait = way_cowl } }
-			FROM = { trait = way_cowl }
-		}
-		modifier = {
-			factor = 2.0
-			trait = way_book
-			e_china = { holder_scope = { trait = way_book } }
-			FROM = { trait = way_book }
-		}
-		modifier = {
-			factor = 2.0
-			trait = way_fist
-			e_china = { holder_scope = { trait = way_fist } }
-			FROM = { trait = way_fist }
 		}
 		
 		modifier = {

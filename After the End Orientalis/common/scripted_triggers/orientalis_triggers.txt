@@ -163,3 +163,39 @@ is_accepting_of_homosexuality_trigger = {
 	
 	}
 }
+
+capital_holding_shipyard_trigger = {
+	custom_tooltip = {
+		text = HAS_SHIPYARD
+		capital_holding = {
+			OR = {
+				has_building = ct_shipyard_1
+				has_building = ct_shipyard_2
+				has_building = ct_shipyard_3
+				has_building = ct_shipyard_4
+				has_building = tp_shipyard_1
+				has_building = tp_shipyard_2
+				has_building = tp_shipyard_3
+				has_building = tp_shipyard_4
+				has_building = fp_shipyard_1
+				has_building = fp_shipyard_2
+				has_building = fp_shipyard_3
+				has_building = ca_shipyard_1
+				has_building = ca_shipyard_2
+				has_building = ca_shipyard_3
+				has_building = ca_shipyard_4
+				has_building = tb_shipyard_1
+				has_building = tb_shipyard_2
+				has_building = tb_shipyard_3
+				has_building = tb_shipyard_4
+			}
+		}
+	}
+}
+pirate_island_trigger = {
+	primary_title = {
+		capital_scope = {
+			is_island = yes
+		}
+	}
+}

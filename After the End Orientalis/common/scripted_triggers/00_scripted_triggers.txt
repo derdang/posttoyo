@@ -2632,6 +2632,26 @@ print_scope_trigger = {
 	log = "------------------------------"
 }
 
+is_secret_religious_society_member_trigger = {
+	society_member_of = secret_religious_cult
+}
+
+religion_openly_americanist_or_heresy_trigger = {
+	custom_tooltip = {
+		text = religion_openly_americanist_or_heresy_tooltip
+		hidden_trigger = {
+			religion = americanist
+		}
+	}
+}
+
+has_secret_religion_trait_trigger = {
+	custom_tooltip = {
+		text = no_secret_religion
+		has_secret_religion = yes
+	}
+}
+
 character_knows_prev_trigger = {
 	OR = {
 		is_close_relative = PREV

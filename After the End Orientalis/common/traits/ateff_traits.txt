@@ -513,3 +513,27 @@ w_face = {
 	female_compliment_adj = COMPL_FORTHRIGHT
 	child_compliment_adj = COMPL_GOOD
 }
+distractible = {
+	birth = 100
+	inherit_chance = 15
+	
+	diplomacy = -2
+	stewardship = -2
+
+	male_insult = INSULT_DIM
+	ruler_designer_cost = -5
+}
+reclusive = {
+	birth = 100
+	inherit_chance = 15
+	
+	diplomacy = -2
+	learning = 2
+
+	male_insult_adj = INSULT_TIMID
+	female_insult_adj = INSULT_COY
+	child_insult_adj = INSULT_STUPID
+	female_compliment_adj = COMPL_DEMURE
+	child_compliment_adj = COMPL_NICE
+	ruler_designer_cost = -5
+}

@@ -148,9 +148,9 @@ feudal_governments = {
 
 		## Modifiers
 		court_size_modifier = 10
-		max_commanders = 4
-		min_vassal_tax = -0.5
-		min_vassal_levy = -0.5
+		commander_limit = 4
+		#min_vassal_tax = -0.5
+		#min_vassal_levy = -0.5
 		
 	}
 	diwan_government = {
@@ -248,11 +248,11 @@ feudal_governments = {
 		## Modifiers
 		court_size_modifier = 20
 		vassal_limit = 15
-		min_vassal_tax = -0.4
-		min_vassal_levy = -0.4
-		max_vassal_tax = 0.4
-		max_vassal_levy = 0.4
-		max_commanders = 2
+		commander_limit = 2
+		#min_vassal_tax = -0.4
+		#min_vassal_levy = -0.4
+		#max_vassal_tax = 0.4
+		#max_vassal_levy = 0.4
 
 	}
 	confederation_government = {

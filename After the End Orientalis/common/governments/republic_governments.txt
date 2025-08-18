@@ -281,7 +281,7 @@ republic_governments = {
 		barons_need_dynasty = yes
 		can_demand_religious_conversion = no
 		can_build_tribal = no
-		ignore_de_jure_laws = yes
+		#ignore_de_jure_laws = yes
 		
 		
 		ignore_in_vassal_limit_calculation = {
@@ -297,10 +297,8 @@ republic_governments = {
 		character_modifier = {
 			days_of_supply = 60
 			retinuesize_perc = 2.0
-			hidden_effect = {
-				bloodline_effect_reaver = 1
-				trait_effect_capture_commanders = 1
-			}
+			bloodline_effect_reaver = 1
+			trait_effect_capture_commanders = 1
 		}
 	}
 }

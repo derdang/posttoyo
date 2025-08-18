@@ -1361,7 +1361,9 @@
 	mother=1920027
     2578.1.1={birth=yes}
 	2599.1.1={
-		add_weak_claim=k_tomsk
+		effect = {
+			add_weak_claim=k_tomsk
+		}
 	}
     2700.1.1={death=yes}
 }
@@ -1902,7 +1904,9 @@
 	mother=1920027
     2575.1.1={birth=yes}
 	2599.1.1={
-		add_weak_claim=k_tomsk
+		effect = {
+			add_weak_claim=k_tomsk
+		}
 	}
     2700.1.1={death=yes}
 }

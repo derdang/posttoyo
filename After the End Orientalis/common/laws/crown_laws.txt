@@ -811,7 +811,6 @@ de_jure_laws = {
 		show_as_title = yes
 		group = diwan_factions
 		
-
 		potential = {
 			holder_scope = { government = diwan_government }
 		}		
@@ -835,17 +834,13 @@ de_jure_laws = {
 				revoke_law = diwan_factions_3
 				revoke_law = diwan_factions_4
 			}
-			
+			character_modifier = {
+				levy_size = -0.2
+				levy_reinforce_rate = -0.2
+				build_cost_modifier = -0.2
+				build_time_modifier = -0.2
+			}
 		}
-		
-		character_modifier = {
-			levy_size = -0.2
-			levy_reinforce_rate = -0.2
-			build_cost_modifier = -0.2
-			build_time_modifier = -0.2
-		}
-		
-		
 	}
 	
 	diwan_factions_1 = { #High Bureaucratic Authority
@@ -896,13 +891,12 @@ de_jure_laws = {
 				add_law = execution_voting_power_1
 				add_law = war_voting_power_1
 			}
-		}
-		
-		character_modifier = {
-			levy_size = -0.1
-			levy_reinforce_rate = -0.1
-			build_cost_modifier = -0.1
-			build_time_modifier = -0.1
+			character_modifier = {
+				levy_size = -0.1
+				levy_reinforce_rate = -0.1
+				build_cost_modifier = -0.1
+				build_time_modifier = -0.1
+			}
 		}
 	}
 	
@@ -997,15 +991,13 @@ de_jure_laws = {
 				revoke_law = diwan_factions_3
 				revoke_law = diwan_factions_4
 			}
-			
+			character_modifier = {
+				levy_size = 0.1
+				levy_reinforce_rate = 0.1
+				build_cost_modifier = 0.1
+				build_time_modifier = 0.1
+			}
 		}
-		character_modifier = {
-			levy_size = 0.1
-			levy_reinforce_rate = 0.1
-			build_cost_modifier = 0.1
-			build_time_modifier = 0.1
-		}
-
 	}
 	
 	diwan_factions_4 = { #Full Military Authority
@@ -1060,13 +1052,12 @@ de_jure_laws = {
 				add_law = execution_voting_power_1
 				add_law = war_voting_power_1
 			}
-		}
-		
-		character_modifier = {
-			levy_size = 0.2
-			levy_reinforce_rate = 0.2
-			build_cost_modifier = 0.2
-			build_time_modifier = 0.2
+			character_modifier = {
+				levy_size = 0.2
+				levy_reinforce_rate = 0.2
+				build_cost_modifier = 0.2
+				build_time_modifier = 0.2
+			}
 		}
 	}
 }

@@ -187,8 +187,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_martial_disciple"
-		texturefile = "gfx/traits/martial_disciple.dds"
+		name = "GFX_trait_distractible"
+		texturefile = "gfx/traits/distractible.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_reclusive"
+		texturefile = "gfx/traits/reclusive.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -905,6 +912,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_pious"
 		texturefile = "gfx/traits/pious.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_martial_disciple"
+		texturefile = "gfx/traits/martial_disciple.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
