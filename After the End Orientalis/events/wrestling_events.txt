@@ -2131,7 +2131,7 @@ character_event = {
 		trigger = { has_character_flag = parent_was_mean }
 	}
 }
-#Safety removal on_death and leave_society for Martial Arts Lodge event troops.
+#Safety removal on_death and leave_society for Martial Arts Lodge trait.
 character_event = {
 	id = WR.415
 	hide_window = yes
@@ -2146,20 +2146,41 @@ character_event = {
 		remove_trait = martial_disciple
 	}
 }
-#Adds Martial Arts Lodge event troops. (on_game_start)
+#Adds Martial Arts Lodge trait. (on_game_start)
 character_event = {
 	id = WR.416
 	hide_window = yes
 
 	is_triggered_only = yes
-	has_game_started = no
 	
-	trigger = { 
-		NOT = {trait = martial_disciple}
-		is_member_of_any_warrior_lodge_trigger = yes
+	trigger = {
+		AND = {
+			NOT = {trait = martial_disciple}
+			is_member_of_any_warrior_lodge_trigger = yes
+			ai = yes
+		}
 	}
 
 	immediate = {
 		add_trait = martial_disciple
+	}
+}
+#Clears Martial Arts Lodge trait. (on_game_start)
+character_event = {
+	id = WR.417
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+			trait = martial_disciple
+			is_member_of_any_warrior_lodge_trigger = no
+			ai = yes
+		}
+	}
+
+	immediate = {
+		remove_trait = martial_disciple
 	}
 }
