@@ -250,7 +250,7 @@ dejure_duchy_claim = { # New1
 				# is_feudal = yes
 				# OR = {
 					# religion = catholic
-					# religion = fraticelli
+					# religion = cao_dai
 				# }
 				# NOR = {
 					# trait = crowned_by_priest
@@ -503,7 +503,7 @@ force_vassalization = { # New2
 				# is_feudal = yes
 				# OR = {
 					# religion = catholic
-					# religion = fraticelli
+					# religion = cao_dai
 				# }
 				# NOR = {
 					# trait = crowned_by_priest
@@ -785,23 +785,23 @@ great_realm_conflict = { # New3
 	
 	ai_will_do = { 
 		factor = 1
-		# modifier = { #Focus on Coronation first.
-			# factor = 0.1
-			# has_dlc = "Holy Fury"
-			# ROOT = {
-				# is_feudal = yes
-				# OR = {
-					# religion = catholic
-					# religion = fraticelli
-				# }
-				# NOR = {
-					# trait = crowned_by_priest
-					# trait = crowned_by_bishop
-					# trait = crowned_by_pope
-					# trait = crowned_by_myself
-				# }
-			# }
-		# }
+		modifier = { #Focus on Coronation first.
+			factor = 0.1
+			has_dlc = "Holy Fury"
+			ROOT = {
+				is_feudal = yes
+				OR = {
+					religion = catholic
+					religion = cao_dai
+				}
+				NOR = {
+					trait = crowned_by_priest
+					trait = crowned_by_bishop
+					trait = crowned_by_pope
+					trait = crowned_by_myself
+				}
+			}
+		}
 	}
 }
 
@@ -1073,23 +1073,23 @@ ducal_county_conquest = { # New4
 				NOT = { scaled_wealth = 1.25 }
 			}
 		}
-		# modifier = { #Focus on Coronation first.
-			# factor = 0.1
-			# has_dlc = "Holy Fury"
-			# ROOT = {
-				# is_feudal = yes
-				# OR = {
-					# religion = catholic
-					# religion = fraticelli
-				# }
-				# NOR = {
-					# trait = crowned_by_priest
-					# trait = crowned_by_bishop
-					# trait = crowned_by_pope
-					# trait = crowned_by_myself
-				# }
-			# }
-		# }
+		modifier = { #Focus on Coronation first.
+			factor = 0.1
+			has_dlc = "Holy Fury"
+			ROOT = {
+				is_feudal = yes
+				OR = {
+					religion = catholic
+					religion = cao_dai
+				}
+				NOR = {
+					trait = crowned_by_priest
+					trait = crowned_by_bishop
+					trait = crowned_by_pope
+					trait = crowned_by_myself
+				}
+			}
+		}
 	}
 }
 
@@ -1953,23 +1953,23 @@ liberate_religion = { # New6
 	
 	ai_will_do = { 
 		factor = 1
-		# modifier = { #Focus on Coronation first.
-			# factor = 0.1
-			# has_dlc = "Holy Fury"
-			# ROOT = {
-				# is_feudal = yes
-				# OR = {
-					# religion = catholic
-					# religion = fraticelli
-				# }
-				# NOR = {
-					# trait = crowned_by_priest
-					# trait = crowned_by_bishop
-					# trait = crowned_by_pope
-					# trait = crowned_by_myself
-				# }
-			# }
-		# }
+		modifier = { #Focus on Coronation first.
+			factor = 0.1
+			has_dlc = "Holy Fury"
+			ROOT = {
+				is_feudal = yes
+				OR = {
+					religion = catholic
+					religion = cao_dai
+				}
+				NOR = {
+					trait = crowned_by_priest
+					trait = crowned_by_bishop
+					trait = crowned_by_pope
+					trait = crowned_by_myself
+				}
+			}
+		}
 	}
 }
 
@@ -2602,23 +2602,23 @@ unjust_conquest = { # New7
 		modifier = {
 			factor = 0.7 # Prefer using CB's without on_add costs
 		}
-		# modifier = { #Focus on Coronation first.
-			# factor = 0.1
-			# has_dlc = "Holy Fury"
-			# ROOT = {
-				# is_feudal = yes
-				# OR = {
-					# religion = catholic
-					# religion = fraticelli
-				# }
-				# NOR = {
-					# trait = crowned_by_priest
-					# trait = crowned_by_bishop
-					# trait = crowned_by_pope
-					# trait = crowned_by_myself
-				# }
-			# }
-		# }
+		modifier = { #Focus on Coronation first.
+			factor = 0.1
+			has_dlc = "Holy Fury"
+			ROOT = {
+				is_feudal = yes
+				OR = {
+					religion = catholic
+					religion = cao_dai
+				}
+				NOR = {
+					trait = crowned_by_priest
+					trait = crowned_by_bishop
+					trait = crowned_by_pope
+					trait = crowned_by_myself
+				}
+			}
+		}
 		modifier = {
 			factor = 0
 			ROOT = {
@@ -2995,23 +2995,23 @@ tributary_permanent_cb = { # New8
 		modifier = {
 			factor = 0.5  # Low prio CB
 		}
-		# modifier = { #Focus on Coronation first.
-			# factor = 0.1
-			# has_dlc = "Holy Fury"
-			# ROOT = {
-				# is_feudal = yes
-				# OR = {
-					# religion = catholic
-					# religion = fraticelli
-				# }
-				# NOR = {
-					# trait = crowned_by_priest
-					# trait = crowned_by_bishop
-					# trait = crowned_by_pope
-					# trait = crowned_by_myself
-				# }
-			# }
-		# }
+		modifier = { #Focus on Coronation first.
+			factor = 0.1
+			has_dlc = "Holy Fury"
+			ROOT = {
+				is_feudal = yes
+				OR = {
+					religion = catholic
+					religion = cao_dai
+				}
+				NOR = {
+					trait = crowned_by_priest
+					trait = crowned_by_bishop
+					trait = crowned_by_pope
+					trait = crowned_by_myself
+				}
+			}
+		}
 	}
 }
 
@@ -5256,7 +5256,7 @@ truebelievers_bid_for_independence = {
 					# rightful_religious_head_scope = { has_landed_title = k_conferentia }
 				# }
 				# AND = { 
-					# religion = fraticelli
+					# religion = cao_dai
 					# rightful_religious_head_scope = { has_landed_title = d_cao_dai }
 				# }
 			# }
@@ -5265,7 +5265,7 @@ truebelievers_bid_for_independence = {
 			# independent = yes
 			# OR = {
 				# religion = catholic
-				# religion = fraticelli
+				# religion = cao_dai
 			# }
 			# NOT = { same_realm = FROM }
 		# #	OR = {
@@ -5340,7 +5340,7 @@ truebelievers_bid_for_independence = {
 					# rightful_religious_head_scope = { has_landed_title = k_conferentia }
 				# }
 				# AND = { 
-					# religion = fraticelli
+					# religion = cao_dai
 					# rightful_religious_head_scope = { has_landed_title = d_cao_dai }
 				# }
 			# }
@@ -5349,7 +5349,7 @@ truebelievers_bid_for_independence = {
 			# NOT = { same_realm = FROM }
 			# OR = {
 				# religion = catholic
-				# religion = fraticelli
+				# religion = cao_dai
 			# }
 		# }
 	# }
@@ -5619,7 +5619,7 @@ truebelievers_bid_for_independence = {
 				# is_feudal = yes
 				# OR = {
 					# religion = catholic
-					# religion = fraticelli
+					# religion = cao_dai
 				# }
 				# NOR = {
 					# trait = crowned_by_priest
@@ -6427,7 +6427,7 @@ flower_war_cb = {
 				# is_feudal = yes
 				# OR = {
 					# religion = catholic
-					# religion = fraticelli
+					# religion = cao_dai
 				# }
 				# NOR = {
 					# trait = crowned_by_priest
@@ -7364,7 +7364,7 @@ matriarchal_deposition_war = {
 				# is_feudal = yes
 				# OR = {
 					# religion = catholic
-					# religion = fraticelli
+					# religion = cao_dai
 				# }
 				# NOR = {
 					# trait = crowned_by_priest
@@ -7836,7 +7836,7 @@ patriarchal_deposition_war = {
 				# is_feudal = yes
 				# OR = {
 					# religion = catholic
-					# religion = fraticelli
+					# religion = cao_dai
 				# }
 				# NOR = {
 					# trait = crowned_by_priest

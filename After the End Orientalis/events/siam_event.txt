@@ -1,0 +1,45 @@
+namespace=siam
+#########################################
+#
+#	Siamese events
+#
+#########################################
+narrative_event = {#End of War
+	id = siam.1
+	picture = GFX_evt_elephant_warfare
+	border = GFX_event_narrative_frame_war
+	title = siam1_title
+	desc = siam1_desc
+	trigger = {
+		primary_title = {
+			OR = {
+				title = e_thailand
+				title = e_suvanaphum
+			}
+		}
+		war = no
+		NOT = {has_global_flag = siam_reunified}
+	}
+	option = {
+		name = EVTOPTA_siam
+		trigger = {
+			primary_title = {
+				title = e_thailand
+			}
+			war = no
+		}
+		destroy_landed_title = e_suvanaphum
+		set_global_flag = siam_reunified
+	}
+	option = {
+		name = EVTOPTB_suvanaphum
+		trigger = {
+			primary_title = {
+				title = e_suvanaphum
+			}
+			war = no
+		}
+		destroy_landed_title = e_suvanaphum
+		set_global_flag = siam_reunified
+	}
+}

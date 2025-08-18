@@ -707,6 +707,9 @@
     2575.1.1 = { 
         birth = yes
 		culture=thai_central
+		effect = {
+			add_claim=e_thailand
+		}
     }
     2690.6.20 = { death = yes }
 }
@@ -893,7 +896,12 @@
 	trait=diligent
 	trait=just
 	trait=quick
-	2567.4.15={birth=yes}
+	2567.4.15={
+		birth=yes
+		effect = {
+			add_claim=e_suvanaphum
+		}
+	}
 }
 2310508 ={
 	name="Thong" # Kraithong
