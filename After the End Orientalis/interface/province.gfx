@@ -346,6 +346,12 @@ spriteTypes = {
 		noOfFrames = 1
 		norefcount = yes
 	}
+	spriteType = {
+		name = "GFX_settlement_castle_burmicgfx"
+		texturefile = "gfx\\interface\\placeholder_castle_indian.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
 	
 	spriteType = {
 		name = "GFX_settlement_castle_chinesegfx"
@@ -379,6 +385,12 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_settlement_castle_javanesegfx"
+		texturefile = "gfx\\interface\\placeholder_castle_china.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_settlement_castle_southeastasiangfx"
 		texturefile = "gfx\\interface\\placeholder_castle_china.tga"
 		noOfFrames = 1
 		norefcount = yes
@@ -447,6 +459,21 @@ spriteTypes = {
 		noOfFrames = 1
 		norefcount = yes
 	}
+	
+	spriteType = {
+		name = "GFX_settlement_tribal_southeastasiangfx"
+		texturefile = "gfx\\interface\\placeholder_tribal_indian.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_settlement_tribal_burmicgfx"
+		texturefile = "gfx\\interface\\placeholder_tribal_indian.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+
 
 	spriteType = {
 		name = "GFX_settlement_tribal_empty"
@@ -630,6 +657,18 @@ spriteTypes = {
 		norefcount = yes
 	}
 	spriteType = {
+		name = "GFX_settlement_city_southeastasiangfx"
+		texturefile = "gfx\\interface\\placeholder_city_china.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_settlement_city_burmicgfx"
+		texturefile = "gfx\\interface\\placeholder_city_china.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
 		name = "GFX_settlement_city_byzantinegfx"
 		texturefile = "gfx\\interface\\placeholder_city_byzantine.tga"
 		noOfFrames = 1
@@ -761,6 +800,12 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_settlement_temple_chinesegfx_westerngfx"
+		texturefile = "gfx\\interface\\placeholder_temple_china.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_settlement_temple_southeastasiangfx_westerngfx"
 		texturefile = "gfx\\interface\\placeholder_temple_china.tga"
 		noOfFrames = 1
 		norefcount = yes
@@ -1812,6 +1857,34 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_settlement_temple_southindiangfx_southindiangfx"
+		texturefile = "gfx\\interface\\placeholder_temple_indian.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_settlement_temple_southeastasiangfx_indiangfx"
+		texturefile = "gfx\\interface\\placeholder_temple_indian.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_settlement_temple_southeastasiangfx_southindiangfx"
+		texturefile = "gfx\\interface\\placeholder_temple_indian.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_settlement_temple_burmicgfx_indiangfx"
+		texturefile = "gfx\\interface\\placeholder_temple_indian.tga"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_settlement_temple_burmicgfx_southindiangfx"
 		texturefile = "gfx\\interface\\placeholder_temple_indian.tga"
 		noOfFrames = 1
 		norefcount = yes
