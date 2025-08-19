@@ -1,4 +1,247 @@
-# Syncretic rulers can pick a random sympathy.
+# Written by Flavio
+
+namespace = HF
+namespace = HFP
+# Ritual Sacrifice Prisoner
+character_event = {
+	id = HF.23001
+	desc = EVTDESCHF23001
+	
+	picture = GFX_evt_pagan_blood_sacrifice
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHF23001
+	}
+}
+
+# Ritual Sacrifice Prisoner (Jailer's perspective)
+character_event = {
+	id = HF.23002
+	desc = { 
+		trigger = { 
+			ROOT = { 
+				NOR = { 
+					trait = bloodthirsty_gods_1
+					trait = bloodthirsty_gods_2
+					trait = bloodthirsty_gods_3
+				}
+			}
+			NOT = { 
+				any_realm_wonder_upgrade = {
+					has_wonder_upgrade = upgrade_sacrificial_altar
+					is_active = yes
+				}
+			}
+		}
+		text = EVTDESCHF23002
+	}
+	desc = { 
+		trigger = { 
+			ROOT = { 
+				OR = { 
+					trait = bloodthirsty_gods_1
+					trait = bloodthirsty_gods_2
+					trait = bloodthirsty_gods_3
+				}
+			}
+			NOT = { 
+				any_realm_wonder_upgrade = {
+					has_wonder_upgrade = upgrade_sacrificial_altar
+					is_active = yes
+				}
+			}
+		} 
+		text = EVTDESCHF23002_B 	#Do it yourself.
+	}
+	desc = { 
+		trigger = { 
+			ROOT = { 
+				NOR = { 
+					trait = bloodthirsty_gods_1
+					trait = bloodthirsty_gods_2
+					trait = bloodthirsty_gods_3
+				}
+			}
+			any_realm_wonder_upgrade = {
+				has_wonder_upgrade = upgrade_sacrificial_altar
+				is_active = yes
+			}
+		} 
+		text = EVTDESCHF23002_C
+	}
+	desc = { 
+		trigger = { 
+			ROOT = { 
+				OR = { 
+					trait = bloodthirsty_gods_1
+					trait = bloodthirsty_gods_2
+					trait = bloodthirsty_gods_3
+				}
+			} 
+			any_realm_wonder_upgrade = {
+				has_wonder_upgrade = upgrade_sacrificial_altar
+				is_active = yes
+			}
+		}
+		text = EVTDESCHF23002_D 	#Do it yourself.
+	}
+	picture = { 
+		picture = GFX_evt_pagan_blood_sacrifice
+	}
+	border = GFX_event_normal_frame_war
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_realm_wonder_upgrade = {
+			limit = {
+				has_wonder_upgrade = upgrade_sacrificial_altar
+				is_active = yes
+			}
+			save_event_target_as = the_sacrificial_altar
+			wonder = { save_event_target_as = the_temple }
+		}
+	}
+	
+	option = {
+		name = EVTOPTAHF23002
+		if = {
+			limit = {
+				any_realm_wonder_upgrade = {
+					has_wonder_upgrade = upgrade_sacrificial_altar
+					is_active = yes
+				}
+			}
+			prestige = 10
+		}
+	}
+
+	option = {
+		name = EVTOPTBHF23002
+		trigger = {
+			any_realm_wonder_upgrade = {
+				has_wonder_upgrade = upgrade_sacrificial_altar
+				is_active = yes
+			}
+		}
+		tooltip_info_custom = EVTOPTBHF23002_TT
+		add_character_modifier = {
+			name = ate_beating_heart
+			months = 6
+		}
+	}
+
+	after = {
+		if = { 
+			limit = { FROM = { is_ruler = no } }
+			piety = 5
+		}
+		if = { 
+			limit = { FROM = { tier = BARON } }
+			piety = 15
+		}
+		if = { 
+			limit = { FROM = { tier = COUNT } }
+			piety = 30
+		}
+		if = { 
+			limit = { FROM = { tier = DUKE } }
+			piety = 75
+		}
+		if = { 
+			limit = { FROM = { tier = KING } }
+			piety = 150
+		}
+		if = { 
+			limit = { FROM = { tier = EMPEROR } }
+			piety = 250
+		}
+		#Bloodthirsty Bloodline bonus.
+		if = { 
+			limit = { 
+				FROM = { 
+					is_ruler = no 
+				} 
+				ROOT = { 
+					any_owned_bloodline = { 
+						has_bloodline_flag = bloodline_prestige_sacrifice
+					}
+				} 
+			}
+			prestige = 10
+		}
+		if = { 
+			limit = { 
+				FROM = { 
+					tier = BARON
+				} 
+				ROOT = { 
+					any_owned_bloodline = { 
+						has_bloodline_flag = bloodline_prestige_sacrifice
+					}
+				}
+			}
+			prestige = 30
+		}
+		if = { 
+			limit = { 
+				FROM = { 
+					tier = COUNT
+				} 
+				ROOT = { 
+					any_owned_bloodline = { 
+						has_bloodline_flag = bloodline_prestige_sacrifice
+					}
+				}
+			}
+			prestige = 60
+		}
+		if = { 
+			limit = { 
+				FROM = { 
+					tier = DUKE
+				} 
+				ROOT = { 
+					any_owned_bloodline = { 
+						has_bloodline_flag = bloodline_prestige_sacrifice
+					}
+				}
+			}
+			prestige = 150
+		}
+		if = { 
+			limit = { 
+				FROM = { 
+					tier = KING
+				} 
+				ROOT = { 
+					any_owned_bloodline = { 
+						has_bloodline_flag = bloodline_prestige_sacrifice
+					}
+				}
+			}
+			prestige = 300
+		}
+		if = { 
+			limit = { 
+				FROM = { 
+					tier = EMPEROR
+				} 
+				ROOT = { 
+					any_owned_bloodline = { 
+						has_bloodline_flag = bloodline_prestige_sacrifice
+					}
+				}
+			}
+			prestige = 500
+		}
+	}
+}
+
+# Syncretic rulers can pick a random sympathy. (THREE PAGES)
 character_event = {
 	id = HF.23003
 	desc = EVTDESCHF23003
@@ -31,8 +274,14 @@ character_event = {
 			modifier = { 
 				factor = 0 
 				liege = { 
-					OR = {
+					OR = { 
+						trait = sympathy_oldworld
+						trait = sympathy_latter_day_saints
+						trait = sympathy_eastern
 						trait = sympathy_judaism
+						trait = sympathy_indian 
+						trait = sympathy_islam
+						trait = sympathy_buddhist
 					}
 				}
 			}
@@ -40,7 +289,13 @@ character_event = {
 				factor = 0 
 				top_liege = { 
 					OR = { 
+						trait = sympathy_oldworld
+						trait = sympathy_latter_day_saints
+						trait = sympathy_eastern
 						trait = sympathy_judaism
+						trait = sympathy_indian 
+						trait = sympathy_islam
+						trait = sympathy_buddhist
 					}
 				}
 			}
@@ -48,7 +303,13 @@ character_event = {
 				factor = 0.25
 				spouse = { 
 					OR = { 
+						trait = sympathy_oldworld
+						trait = sympathy_latter_day_saints
+						trait = sympathy_eastern
 						trait = sympathy_judaism
+						trait = sympathy_indian 
+						trait = sympathy_islam
+						trait = sympathy_buddhist
 					}
 				}
 			}
@@ -62,6 +323,158 @@ character_event = {
 				factor = 1.5
 				any_courtier_or_vassal = { 
 					religion_group = christian
+				}
+			}
+		}
+	}
+	option = { #Islam
+		name = {
+			text = EVTOPTBHF23003
+			trigger = {
+				is_alternate_start = no
+			}
+		}
+		name = {
+			text = EVTOPTBHF23003_ALT
+			trigger = {
+				is_alternate_start = yes
+			}
+		}
+		trigger = {
+			NOT = { religion_group = muslim } #Random World safety check.
+		}
+		add_trait = sympathy_islam
+		clr_character_flag = flag_picking_sympathy
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 0 
+				liege = { 
+					OR = { 
+						trait = sympathy_christendom
+						trait = sympathy_oldworld
+						trait = sympathy_latter_day_saints
+						trait = sympathy_eastern
+						trait = sympathy_judaism
+						trait = sympathy_indian 
+						trait = sympathy_buddhist
+					}
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					OR = { 
+						trait = sympathy_christendom
+						trait = sympathy_oldworld
+						trait = sympathy_latter_day_saints
+						trait = sympathy_eastern
+						trait = sympathy_judaism
+						trait = sympathy_indian 
+						trait = sympathy_buddhist
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					OR = { 
+						trait = sympathy_christendom
+						trait = sympathy_oldworld
+						trait = sympathy_latter_day_saints
+						trait = sympathy_eastern
+						trait = sympathy_judaism
+						trait = sympathy_indian 
+						trait = sympathy_buddhist
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = muslim
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = muslim
+				}
+			}
+		}
+	}
+	option = { #Old World Cultist
+		name = {
+			text = EVTOPTBHF23003A
+			trigger = {
+				is_alternate_start = no
+			}
+		}
+		name = {
+			text = EVTOPTBHF23003_ALT
+			trigger = {
+				is_alternate_start = yes
+			}
+		}
+		trigger = {
+			NOT = { religion_group = oldworld } #Random World safety check.
+		}
+		add_trait = sympathy_oldworld
+		clr_character_flag = flag_picking_sympathy
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 0 
+				liege = { 
+					OR = { 
+						trait = sympathy_christendom
+						trait = sympathy_islam
+						trait = sympathy_latter_day_saints
+						trait = sympathy_eastern
+						trait = sympathy_judaism
+						trait = sympathy_indian 
+						trait = sympathy_buddhist
+					}
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					OR = { 
+						trait = sympathy_christendom
+						trait = sympathy_islam
+						trait = sympathy_latter_day_saints
+						trait = sympathy_eastern
+						trait = sympathy_judaism
+						trait = sympathy_indian 
+						trait = sympathy_buddhist
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					OR = { 
+						trait = sympathy_christendom
+						trait = sympathy_islam
+						trait = sympathy_latter_day_saints
+						trait = sympathy_eastern
+						trait = sympathy_judaism
+						trait = sympathy_indian 
+						trait = sympathy_buddhist
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = oldworld
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = oldworld
 				}
 			}
 		}
@@ -90,10 +503,13 @@ character_event = {
 				factor = 0 
 				liege = { 
 					OR = { 
-						trait = sympathy_islam
-						trait = sympathy_zoroastrianism
+						trait = sympathy_oldworld
+						trait = sympathy_eastern
+						trait = sympathy_latter_day_saints
+						trait = sympathy_buddhist
 						trait = sympathy_christendom
 						trait = sympathy_indian 
+						trait = sympathy_islam
 					}
 				}
 			}
@@ -101,10 +517,13 @@ character_event = {
 				factor = 0 
 				top_liege = { 
 					OR = { 
-						trait = sympathy_islam
-						trait = sympathy_zoroastrianism
+						trait = sympathy_oldworld
+						trait = sympathy_eastern
+						trait = sympathy_latter_day_saints
+						trait = sympathy_buddhist
 						trait = sympathy_christendom
 						trait = sympathy_indian 
+						trait = sympathy_islam
 					}
 				}
 			}
@@ -112,10 +531,13 @@ character_event = {
 				factor = 0.25
 				spouse = { 
 					OR = { 
-						trait = sympathy_islam
-						trait = sympathy_zoroastrianism
+						trait = sympathy_oldworld
+						trait = sympathy_eastern
+						trait = sympathy_latter_day_saints
+						trait = sympathy_buddhist
 						trait = sympathy_christendom
 						trait = sympathy_indian 
+						trait = sympathy_islam
 					}
 				}
 			}
@@ -153,9 +575,10 @@ character_event = {
 				factor = 0 
 				liege = { 
 					OR = { 
-						trait = sympathy_islam
+						trait = sympathy_oldworld
 						trait = sympathy_judaism
 						trait = sympathy_christendom
+						trait = sympathy_islam
 					}
 				}
 			}
@@ -163,9 +586,10 @@ character_event = {
 				factor = 0 
 				top_liege = { 
 					OR = { 
-						trait = sympathy_islam
+						trait = sympathy_oldworld
 						trait = sympathy_judaism
 						trait = sympathy_christendom
+						trait = sympathy_islam
 					}
 				}
 			}
@@ -173,13 +597,456 @@ character_event = {
 				factor = 0.25
 				spouse = { 
 					OR = { 
-						trait = sympathy_islam
+						trait = sympathy_oldworld
 						trait = sympathy_judaism
 						trait = sympathy_christendom
+						trait = sympathy_islam
 					}
 				}
 			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = indian_group
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = indian_group
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = buddhist_group
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = buddhist_group
+				}
+			}
 		}
+	}
+}
+
+#Second sympathy list (Pacific, Indian, and Pagan)
+character_event = {
+	id = HF.23004
+	desc = EVTDESCHF23004
+	
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Pacific
+		name = {
+			text = EVTOPTAHF23004
+			trigger = {
+				is_alternate_start = no
+			}
+		}
+		name = {
+			text = EVTOPTAHF23004_ALT
+			trigger = {
+				is_alternate_start = yes
+			}
+		}
+		trigger = {
+			NOT = { religion_group = eastern } #Random World safety check.
+		}
+		add_trait = sympathy_eastern
+		clr_character_flag = flag_picking_sympathy
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 0 
+				liege = { 
+					trait = sympathy_indian 
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					trait = sympathy_indian 
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					trait = sympathy_indian 
+				}
+			}
+			modifier = { 
+				factor = 0 
+				liege = { 
+					trait = sympathy_pagans 
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					trait = sympathy_pagans 
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					trait = sympathy_pagans 
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = eastern
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = eastern
+				}
+			}
+		}
+	}
+	option = { #Indians
+		name = {
+			text = EVTOPTBHF23004
+			trigger = {
+				is_alternate_start = no
+			}
+		}
+		name = {
+			text = EVTOPTBHF23004_ALT
+			trigger = {
+				is_alternate_start = yes
+			}
+		}
+		trigger = {
+			NOT = { religion_group = indian_group } #Random World safety check.
+		}
+		add_trait = sympathy_indian
+		clr_character_flag = flag_picking_sympathy
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 0 
+				liege = { 
+					trait = sympathy_eastern
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					trait = sympathy_eastern
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					trait = sympathy_eastern
+				}
+			}
+			modifier = { 
+				factor = 0 
+				liege = { 
+					trait = sympathy_pagans 
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					trait = sympathy_pagans 
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					trait = sympathy_pagans 
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = indian_group
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = indian_group
+				}
+			}
+		}
+	}
+	option = { #Pagans - Just for Random World.
+		name = {
+			text = EVTOPTCHF23004
+			trigger = {
+				is_alternate_start = no
+			}
+		}
+		name = {
+			text = EVTOPTCHF23004_ALT
+			trigger = {
+				is_alternate_start = yes
+			}
+		}
+		trigger = {
+			NOT = { religion_group = pagan_group } #Random World safety check.
+		}
+		add_trait = sympathy_pagans
+		clr_character_flag = flag_picking_sympathy
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 0 
+				liege = { 
+					trait = sympathy_eastern
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					trait = sympathy_eastern
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					trait = sympathy_eastern
+				}
+			}
+			modifier = { 
+				factor = 0 
+				liege = { 
+					trait = sympathy_indian 
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					trait = sympathy_indian 
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					trait = sympathy_indian 
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = pagan_group
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = pagan_group
+				}
+			}
+		}
+	}
+	#Third List
+		option = { #Others
+		name = {
+			text = EVTOPTDHF23004
+			trigger = {
+				is_alternate_start = no
+			}
+		}
+		name = {
+			text = EVTOPTDHF23004_ALT
+			trigger = {
+				is_alternate_start = yes
+			}
+		}
+		hidden_tooltip = { character_event = { id = HF.23090 } } #third event, event ID doesn't overlap I think
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 0 
+				liege = { 
+					OR = { 
+						trait = sympathy_eastern
+						trait = sympathy_indian
+						trait = sympathy_pagans
+					}
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					OR = { 
+						trait = sympathy_eastern
+						trait = sympathy_indian
+						trait = sympathy_pagans
+					}
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					OR = { 
+						trait = sympathy_eastern
+						trait = sympathy_indian
+						trait = sympathy_pagans
+					}
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = buddhist_group
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = buddhist_group
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = latter_day_saints
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = latter_day_saints
+				}
+			}
+		}
+	}
+}
+#Third sympathy list (Cult of Saints and Latter-Day Saints)
+character_event = {
+	id = HF.23090
+	desc = EVTDESCHF23004
+	
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Cult of Saints
+		name = {
+			text = EVTOPTAHF23090
+			trigger = {
+				is_alternate_start = no
+			}
+		}
+		name = {
+			text = EVTOPTAHF23004_ALT
+			trigger = {
+				is_alternate_start = yes
+			}
+		}
+		trigger = {
+			NOT = { religion_group = cult_of_saints } #Random World safety check.
+		}
+		add_trait = sympathy_buddhist
+		clr_character_flag = flag_picking_sympathy
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 0 
+				liege = { 
+					trait = sympathy_latter_day_saints
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					trait = sympathy_latter_day_saints
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					trait = sympathy_latter_day_saints 
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = buddhist_group
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = buddhist_group
+				}
+			}
+		}
+	}
+	
+	option = { #Latter-Day Saints
+		name = {
+			text = EVTOPTBHF23090
+			trigger = {
+				is_alternate_start = no
+			}
+		}
+		name = {
+			text = EVTOPTAHF23004_ALT
+			trigger = {
+				is_alternate_start = yes
+			}
+		}
+		trigger = {
+			NOT = { religion_group = latter_day_saints } #Random World safety check.
+		}
+		add_trait = sympathy_latter_day_saints
+		clr_character_flag = flag_picking_sympathy
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 0 
+				liege = { 
+					trait = sympathy_buddhist
+				}
+			}
+			modifier = { 
+				factor = 0 
+				top_liege = { 
+					trait = sympathy_buddhist
+				}
+			}
+			modifier = { 
+				factor = 0.25
+				spouse = { 
+					trait = sympathy_buddhist 
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_demesne_province = { 
+					religion_group = latter_day_saints
+				}
+			}
+			modifier = { 
+				factor = 1.5
+				any_courtier_or_vassal = { 
+					religion_group = latter_day_saints
+				}
+			}
+		}
+	}
+	option = { #Return
+		name = {
+			text = EVTOPTDHF23090
+		}
+		hidden_tooltip = { character_event = { id = HF.23003 } }
+		ai_chance = { factor = 0 }
 	}
 }
 
@@ -193,9 +1060,7 @@ character_event = {
 	
 	trigger = { 
 		OR = { 
-			has_religion_feature = religion_haruspicy 
-			religion = seirei
-			religion = seirei_reformed
+			has_religion_feature = religion_haruspicy
 		} 
 		NOR = {
 			has_character_modifier = divination_crit_success
@@ -238,15 +1103,11 @@ character_event = {
 					is_theocracy = yes
 				}
 			}
-			any_realm_character = {
+			random_realm_character = {
 				limit = {
 					religion = ROOT
 					is_theocracy = yes
 				}
-				score_value = { #Prioritizes selecting an interesting courtier...
-		            value = 10
-		            interesting_courtier_selection_score = yes
-		        }
 				character_event = { id = HF.23006 }
 				break = yes
 			}
@@ -266,8 +1127,6 @@ character_event = {
 	trigger = { 
 		OR = { 
 			has_religion_feature = religion_haruspicy 
-			religion = seirei
-			religion = seirei_reformed
 		} 
 		NOR = {
 			has_character_modifier = divination_crit_success
@@ -308,8 +1167,6 @@ character_event = {
 		war = yes
 		OR = { 
 			has_religion_feature = religion_haruspicy 
-			religion = seirei
-			religion = seirei_reformed
 		} 
 		NOR = {
 			has_character_modifier = divination_crit_success
@@ -331,7 +1188,12 @@ character_event = {
 			set_character_flag = flag_cheap_diviner #Prevents crit success, increases crit failure.
 		}
 		if = { 
-			limit = { has_religion_feature = religion_ritual_sacrifice }
+			limit = {
+				OR = {
+					has_religion_feature = religion_ritual_sacrifice
+					religion = mictlantec
+				}
+			}
 			random_courtier = { 
 				limit = {
 					NOR = {
@@ -350,7 +1212,7 @@ character_event = {
 				save_event_target_as = potential_victim 
 			} 
 		}	
-		clr_character_flag = flag_sacrificing_bull  #Safety cleanup.
+		clr_character_flag = flag_sacrificing_bull #Safety cleanup.
 		clr_character_flag = flag_sacrificing_cow
 		clr_character_flag = flag_sacrificing_goat
 		clr_character_flag = flag_sacrificing_chicken
@@ -365,7 +1227,10 @@ character_event = {
 	option = { #Human - Ensure no Critical Fail - Unlocks Critical success - Only if also Bloodthirsty Gods.
 		name = EVTOPTZHF23007
 		trigger = { 
-			has_religion_feature = religion_ritual_sacrifice 
+			OR = {
+				has_religion_feature = religion_ritual_sacrifice 
+				religion = mictlantec
+			}
 			event_target:potential_victim = { is_alive = yes } 
 		}
 		if = { 
@@ -402,7 +1267,7 @@ character_event = {
 	}
 	option = { #Great bull - Ensure no Critical Fail - Unlocks Critical success
 		name = EVTOPTAHF23007
-		trigger = { NOT = { has_religion_feature = religion_ritual_sacrifice } }
+		trigger = { NOR = { has_religion_feature = religion_ritual_sacrifice religion = mictlantec } }
 		if = { 
 			limit = { ai = no }
 			scaled_wealth = { value = -1 min = -175 max = -500 } 
@@ -1123,8 +1988,259 @@ character_event = {
 	}
 }
 
+#HF.23014 - HF.23015
+
+
+#Pick a Pagan religious branch when having a headless reformed pagan religion.
+character_event = {
+	id = HF.23016
+	desc = EVTDESCHF23016
+	
+	picture = GFX_evt_pagan
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = { 
+		religion_group = pagan_group
+		has_religion_feature = religion_no_leader
+		NOR = { 
+			trait = pagan_branch_1
+			trait = pagan_branch_2
+			trait = pagan_branch_3 
+			trait = pagan_branch_4
+		}
+	}
+	
+	option = { 
+		name = EVTOPTAHF23016
+		trigger = { 
+			NOT = { 
+				has_religion_feature = religion_dogmatic 
+			} 
+		}
+		add_trait = pagan_branch_1
+		ai_chance = { 
+			factor = 5 
+			modifier = { 
+				factor = 0.1
+				has_religion_feature = religion_jizya
+			}
+		}
+	}
+	option = { 
+		name = EVTOPTBHF23016
+		add_trait = pagan_branch_2
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 1.5
+				OR = { 
+					trait = scholar
+					trait = theologian
+					trait = mystic
+					trait = zealous
+					has_focus = focus_scholarship
+					has_focus = focus_theology
+					trait = detached_priest 
+					trait = martial_cleric 
+					trait = scholarly_theologian 
+					trait = mastermind_theologian 
+				}
+			} 
+			modifier = { 
+				factor = 0.5
+				OR = { 
+					trait = lustful
+					trait = hedonist
+					trait = gluttonous
+					trait = drunkard
+					has_focus = focus_seduction
+					has_focus = focus_carousing
+				}
+			}
+		}
+	}
+	option = { 
+		name = EVTOPTCHF23016
+		add_trait = pagan_branch_3
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 1.5
+				OR = { 
+					trait = duelist
+					trait = hunter
+					trait = strategist
+					trait = zealous
+					has_focus = focus_war
+					has_focus = focus_hunting
+					trait = misguided_warrior 
+					trait = tough_soldier 
+					trait = skilled_tactician 
+					trait = brilliant_strategist 
+				}
+			}
+			modifier = { 
+				factor = 0.5
+				OR = { 
+					trait = craven
+					trait = paranoid
+					trait = shy
+				}
+			}
+		}
+	}
+	option = { 
+		name = EVTOPTDHF23016
+		add_trait = pagan_branch_4
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 1.5
+				OR = { 
+					any_child = { NOT = { age = 16 } count = 3 }
+					has_focus = focus_family
+					has_focus = focus_carousing
+					trait = misguided_warrior 
+					trait = tough_soldier 
+					trait = skilled_tactician 
+					trait = brilliant_strategist 
+				}
+			}
+		}
+	}
+	after = { clr_character_flag = flag_picking_branch }
+}
+
+#Switch pagan religious branch.
+character_event = {
+	id = HF.23017
+	desc = EVTDESCHF23017
+	
+	picture = GFX_evt_pagan
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTAHF23017
+		trigger = { 
+			NOT = { 
+				trait = pagan_branch_1
+			} 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_2
+			}
+			remove_trait = pagan_branch_2 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_3
+			}
+			remove_trait = pagan_branch_3 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_4
+			}
+			remove_trait = pagan_branch_4 
+		}
+		add_trait = pagan_branch_1
+	}
+	option = { 
+		name = EVTOPTBHF23017
+		trigger = { 
+			NOT = { 
+				trait = pagan_branch_2
+			} 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_1
+			}
+			remove_trait = pagan_branch_1 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_3
+			}
+			remove_trait = pagan_branch_3 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_4
+			}
+			remove_trait = pagan_branch_4 
+		}
+		add_trait = pagan_branch_2
+	}
+	option = { 
+		name = EVTOPTCHF23017
+		trigger = { 
+			NOT = { 
+				trait = pagan_branch_3
+			} 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_2
+			}
+			remove_trait = pagan_branch_2 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_1
+			}
+			remove_trait = pagan_branch_1 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_4
+			}
+			remove_trait = pagan_branch_4 
+		}
+		add_trait = pagan_branch_3
+	}
+	option = { 
+		name = EVTOPTDHF23017
+		trigger = { 
+			NOT = { 
+				trait = pagan_branch_4
+			} 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_2
+			}
+			remove_trait = pagan_branch_2 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_3
+			}
+			remove_trait = pagan_branch_3 
+		}
+		if = { 
+			limit = { 
+				trait = pagan_branch_1
+			}
+			remove_trait = pagan_branch_1 
+		}
+		add_trait = pagan_branch_4
+	}
+	after = { clr_character_flag = flag_picking_branch }
+}
+
 #######################
-# Zodiac Signs - Hellenic Flavor
+# Dralha's Children (removed)
+#######################
+# Notification event
+
+#######################
+# Zodiac Signs - ####. (Occultist already has their branch traits...)
 #######################
 # On_birth event assigns traits on hellenic child.
 character_event = {
@@ -1134,22 +2250,10 @@ character_event = {
 	trigger = {
 		OR = {
 			has_religion_feature = religion_astrology
-			religion = heilong
-			religion = heilong_reformed
-		}
-		NOR = {
-			trait = zodiac_aquarius
-			trait = zodiac_aries
-			trait = zodiac_cancer
-			trait = zodiac_capricorn
-			trait = zodiac_gemini
-			trait = zodiac_leo
-			trait = zodiac_libra
-			trait = zodiac_pisces
-			trait = zodiac_sagittarius
-			trait = zodiac_scorpio
-			trait = zodiac_taurus
-			trait = zodiac_virgo
+			AND = {
+				religion = occultist_reformed
+				has_religion_features = no
+			}
 		}
 	}
 
@@ -1352,9 +2456,7 @@ character_event = {
 		name = EVTOPTAHF23022
 		trigger = { 
 			NOR = {
-				religion = heilong
-				religion = heilong_reformed
-				has_religion_feature = religion_astrology 			
+				has_religion_feature = religion_astrology
 			} 
 		}
 		if = { 
@@ -1457,9 +2559,7 @@ character_event = {
 		}
 		trigger = { 
 			OR = {
-				religion = heilong
-				religion = heilong_reformed
-				has_religion_feature = religion_astrology 			
+				has_religion_feature = religion_astrology
 			} 
 		}
 		if = { 
@@ -1579,9 +2679,7 @@ character_event = {
 		}
 		trigger = { 
 			OR = {
-				religion = heilong
-				religion = heilong_reformed
-				has_religion_feature = religion_astrology				
+				has_religion_feature = religion_astrology
 			} 
 		}
 		FROM = { 
@@ -1831,6 +2929,271 @@ character_event = {
 	}
 }
 
+#######################################################################
+
+############## Delving into the Classics - Possibly converting to Americanism
+
+#######################################################################
+character_event = {
+	id = HF.23026
+	desc = EVTDESCAHF23026
+
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { #Interest in religion.
+		name = EVTOPTAHF23026
+		set_character_flag = flag_studying_classics_religion
+		custom_tooltip = { text = tooltipt_HF23026_A }
+		ai_chance = { factor = 100 } #Already unlikely to happen for the AI, so pick the one meaningful choice.
+	}
+	option = { #Interest in war.
+		name = EVTOPTBHF23026
+		set_character_flag = flag_studying_military_war
+		custom_tooltip = { text = tooltipt_HF23026_B }
+		ai_chance = { factor = 0 }
+	}
+	option = { #Interest in government.
+		name = EVTOPTCHF23026
+		set_character_flag = flag_studying_classics_government
+		custom_tooltip = { text = tooltipt_HF23026_C }
+		ai_chance = { factor = 0 }
+	}
+	option = { #Interest in orations.
+		name = EVTOPTDHF23026
+		set_character_flag = flag_studying_classics_orations
+		custom_tooltip = { text = tooltipt_HF23026_D }
+		ai_chance = { factor = 0 }
+	}
+	after = { #Determine outcome based on choice and learning.
+		hidden_tooltip = { 
+			random_list = { 	
+				10 = { #Failure
+					trigger = { NOT = { has_character_flag = flag_studying_classics_religion } } #Conversion never fails.
+					modifier = { 
+						factor = 1.5
+						NOT = { learning = 2 }
+					}
+					modifier = { 
+						factor = 1.5
+						NOT = { learning = 4 }
+					}
+					modifier = { 
+						factor = 1.5
+						NOT = { learning = 6 }
+					}
+					modifier = { 
+						factor = 1.25
+						NOT = { learning = 8 }
+					}
+					modifier = { 
+						factor = 0.85
+						learning = 10
+					}
+					modifier = { 
+						factor = 0.85
+						learning = 12
+					}
+					modifier = { 
+						factor = 0.75
+						learning = 14
+					}
+					modifier = { 
+						factor = 0.75
+						learning = 16
+					}
+					modifier = { 
+						factor = 0.75
+						learning = 18
+					}
+					modifier = { 
+						factor = 0.5
+						learning = 20
+					}
+					modifier = { 
+						factor = 0.5
+						learning = 24
+					}
+					modifier = { 
+						factor = 0.25
+						learning = 26
+					}
+					modifier = { 
+						factor = 2
+						trait = slow
+					}
+					modifier = { 
+						factor = 3
+						trait = imbecile
+					}
+					modifier = { 
+						factor = 3
+						trait = inbred
+					}
+					modifier = { 
+						factor = 2
+						trait = dull
+					}
+					character_event = { id = HF.23027 days = 100 random = 100 }
+				} 
+				20 = { #Success studying religion.
+					trigger = { has_character_flag = flag_studying_classics_religion } 
+					character_event = { id = HF.23028 days = 100 random = 100 }
+				} 
+				20 = { #Success studying war.
+					trigger = { has_character_flag = flag_studying_military_war } 
+					character_event = { id = HF.23029 days = 100 random = 100 }
+				} 
+				20 = { #Success studying government.
+					trigger = { has_character_flag = flag_studying_classics_government } 
+					character_event = { id = HF.23030 days = 100 random = 100 }
+				} 
+				20 = { #Success studying orations.
+					trigger = { has_character_flag = flag_studying_classics_orations } 
+					character_event = { id = HF.23031 days = 100 random = 100 }
+				} 
+			}
+			clr_character_flag = flag_studying_classics_religion
+			clr_character_flag = flag_studying_military_war
+			clr_character_flag = flag_studying_classics_government
+			clr_character_flag = flag_studying_classics_orations
+		}	
+	}
+}
+#Study ended in failure.
+character_event = {
+	id = HF.23027
+	desc = EVTDESCAHF23027
+
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTAHF23027
+		ai_chance = { factor = 100 } 
+	}
+}
+
+#Chance to secretly become hellenic.
+character_event = {
+	id = HF.23028
+	desc = EVTDESCAHF23028
+
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTAHF23028
+		trigger = { 
+			NOR = { 
+				religion = nestorian
+				secret_religion = nestorian
+			} 
+		} 
+		if = { 
+			limit = { trait = zealous } 
+			remove_trait = zealous
+		} 
+		if = {
+			limit = {
+				has_game_rule = {
+					name = secret_cults
+					value = default
+				}
+			}
+			set_secret_religion = nestorian
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					name = secret_cults
+					value = none
+				}
+			}
+			religion = nestorian
+		}
+		ai_chance = { factor = 2 } 
+	}
+	option = { 
+		name = EVTOPTCHF23028
+		trigger = { 
+			OR = { 
+				religion = nestorian
+				secret_religion = nestorian
+			} 
+		} 
+		tiered_piety_reward_effect = yes
+		ai_chance = { factor = 0 } 
+	}
+	option = { 
+		name = EVTOPTBHF23028
+		ai_chance = { factor = 98 } 
+	}
+}
+#Studied military.
+character_event = {
+	id = HF.23029
+	desc = EVTDESCAHF23029
+
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTAHF23029
+		add_character_modifier = { 
+			name = caesars_insight 
+			duration = -1 
+		}
+		ai_chance = { factor = 100 } 
+	}
+}
+#Studied statecraft.
+character_event = {
+	id = HF.23030
+	desc = EVTDESCAHF23030
+
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTAHF23030
+		add_character_modifier = { 
+			name = justinians_insight 
+			duration = -1 
+		}
+		ai_chance = { factor = 100 } 
+	}
+}
+#Studied orations.
+character_event = {
+	id = HF.23031
+	desc = EVTDESCAHF23031
+
+	picture = GFX_evt_library
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = EVTOPTAHF23031
+		add_character_modifier = { 
+			name = ciceros_insight 
+			duration = -1 
+		}
+		ai_chance = { factor = 100 } 
+	}
+}
+
 #Astrology: Notification event without tooltip.
 character_event = {
 	id = HF.23032
@@ -1917,6 +3280,554 @@ character_event = {
 	}
 }
 
+#on_conversion: Converted to a Pagan Religion with branches from a religion without.
+character_event = {
+	id = HF.23033
+	desc = EVTDESCHF23033
+	
+	picture = GFX_evt_pagan
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+
+	trigger = { 
+		is_adult = yes
+		religion_group = pagan_group
+		has_religion_feature = religion_no_leader 
+		NOR = { 
+			trait = pagan_branch_1
+			trait = pagan_branch_2
+			trait = pagan_branch_3 
+			trait = pagan_branch_4
+			has_character_modifier = picked_pagan_branch_cooldown
+		}
+	}
+	
+	immediate = { 
+		add_character_modifier = { modifier = picked_pagan_branch_cooldown years = 5 hidden = yes }
+	}
+	option = { 
+		name = EVTOPTAHF23016
+		trigger = { 
+			NOT = { 
+				has_religion_feature = religion_dogmatic 
+			} 
+		}
+		add_trait = pagan_branch_1
+		ai_chance = { 
+			factor = 5 
+			modifier = { 
+				factor = 0.1
+				has_religion_feature = religion_jizya
+			}
+		}
+	}
+	option = { 
+		name = EVTOPTBHF23016
+		add_trait = pagan_branch_2
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 1.5
+				OR = { 
+					trait = scholar
+					trait = theologian
+					trait = mystic
+					trait = zealous
+					has_focus = focus_scholarship
+					has_focus = focus_theology
+					trait = detached_priest 
+					trait = martial_cleric 
+					trait = scholarly_theologian 
+					trait = mastermind_theologian 
+				}
+			} 
+			modifier = { 
+				factor = 0.5
+				OR = { 
+					trait = lustful
+					trait = hedonist
+					trait = gluttonous
+					trait = drunkard
+					has_focus = focus_seduction
+					has_focus = focus_carousing
+				}
+			}
+		}
+	}
+	option = { 
+		name = EVTOPTCHF23016
+		add_trait = pagan_branch_3
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 1.5
+				OR = { 
+					trait = duelist
+					trait = hunter
+					trait = strategist
+					trait = zealous
+					has_focus = focus_war
+					has_focus = focus_hunting
+					trait = misguided_warrior 
+					trait = tough_soldier 
+					trait = skilled_tactician 
+					trait = brilliant_strategist 
+				}
+			}
+			modifier = { 
+				factor = 0.5
+				OR = { 
+					trait = craven
+					trait = paranoid
+					trait = shy
+				}
+			}
+		}
+	}
+	option = { 
+		name = EVTOPTDHF23016
+		add_trait = pagan_branch_4
+		ai_chance = { 
+			factor = 25 
+			modifier = { 
+				factor = 1.5
+				OR = { 
+					any_child = { NOT = { age = 16 } count = 3 }
+					has_focus = focus_family
+					has_focus = focus_carousing
+					trait = misguided_warrior 
+					trait = tough_soldier 
+					trait = skilled_tactician 
+					trait = brilliant_strategist 
+				}
+			}
+		}
+	}
+	after = { clr_character_flag = flag_picking_branch }
+}
+
+#On Conversion event to clear up gender laws when needed.
+character_event = {
+	id = HF.23034
+	hide_window = yes
+	
+	trigger = {
+		ROOT = {
+			OR = { 
+				has_religion_feature = religion_patriarchal
+				has_religion_feature = religion_equal
+				has_religion_feature = religion_matriarchal
+			}
+		}
+	}
+	is_triggered_only = yes
+	
+	immediate = { 
+		if = {
+			limit = { 
+				ROOT = { 
+					has_religion_feature = religion_matriarchal 
+					NOR = { 
+						#is_merchant_republic = yes
+						is_republic = yes
+					}
+				}
+			}
+			ROOT = { 
+				any_demesne_title = { 
+					add_law = {
+						law = enatic_succession
+						cooldown = no
+						opinion_effect = no
+					}
+					add_law = {
+						law = status_of_women_4
+						cooldown = no
+						opinion_effect = no
+					}
+					if = { 
+						limit = { 
+							ROOT = { 
+								NOT = { has_law = succ_byzantine_elective }
+								OR = { 
+									is_feudal = yes 
+									is_tribal = yes
+									is_nomadic = yes
+								}
+							}
+						}
+						add_law = {
+							law = succ_turkish_succession
+							cooldown = no
+							opinion_effect = no
+						}
+					}
+				} 
+				recalc_succession = yes
+			} 
+		}
+		if = {
+			limit = { 
+				ROOT = { has_religion_feature = religion_patriarchal }
+			}
+			ROOT = { 
+				any_demesne_title = { 
+					add_law = {
+						law = agnatic_succession
+						cooldown = no
+						opinion_effect = no
+					}
+					add_law = {
+						law = status_of_women_0
+						cooldown = no
+						opinion_effect = no
+					}
+					if = { 
+						limit = { 
+							ROOT = { 
+								NOT = { has_law = succ_byzantine_elective }
+								OR = { 
+									is_feudal = yes 
+									is_tribal = yes
+									is_nomadic = yes
+								}
+							}
+						}
+						add_law = {
+							law = succ_turkish_succession
+							cooldown = no
+							opinion_effect = no
+						}
+					}
+				} 
+				recalc_succession = yes
+			} 
+		}
+		if = {
+			limit = { 
+				ROOT = {
+					OR = { 
+						has_religion_feature = religion_equal 
+					}
+					NOR = { 
+						#is_merchant_republic = yes
+						is_republic = yes
+					}
+				}
+			}
+			ROOT = { 
+				any_demesne_title = { 
+					add_law = {
+						law = true_cognatic_succession
+						cooldown = no
+						opinion_effect = no
+					}
+					add_law = {
+						law = status_of_women_4
+						cooldown = no
+						opinion_effect = no
+					}
+				} 
+				recalc_succession = yes
+			} 
+		}
+		ROOT = {
+			if = {
+				limit = { 
+					FROM = {
+						NOR = { 
+							has_religion_feature = religion_equal 
+							has_religion_feature = religion_patriarchal
+							has_religion_feature = religion_matriarchal
+						}
+					}
+					ROOT = { has_religion_feature = religion_matriarchal }
+				}
+				any_close_relative = { 
+					limit = { is_female = no }
+					opinion = { 
+						who = ROOT 
+						modifier = bad_succ_law_change
+						years = 100
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = yes }
+					opinion = { 
+						who = ROOT 
+						modifier = good_succ_law_change
+						years = 100
+					}
+				}
+			}
+			if = {
+				limit = { 
+					FROM = {
+						NOR = { 
+							has_religion_feature = religion_equal 
+							has_religion_feature = religion_matriarchal
+							has_religion_feature = religion_patriarchal
+						}
+					}
+					ROOT = { has_religion_feature = religion_patriarchal }
+				}
+				any_close_relative = { 
+					limit = { is_female = yes }
+					opinion = { 
+						who = ROOT 
+						modifier = bad_succ_law_change
+						years = 100
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = no }
+					opinion = { 
+						who = ROOT 
+						modifier = good_succ_law_change
+						years = 100
+					}
+				}
+			}
+			if = {
+				limit = { 
+					FROM = { has_religion_feature = religion_patriarchal }
+					ROOT = { 
+						OR = { 
+							has_religion_feature = religion_equal 
+							has_religion_feature = religion_matriarchal
+						}
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = no }
+					opinion = { 
+						who = ROOT 
+						modifier = bad_succ_law_change
+						years = 100
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = yes }
+					opinion = { 
+						who = ROOT 
+						modifier = good_succ_law_change
+						years = 100
+					}
+				}
+			}
+			if = {
+				limit = { 
+					FROM = { has_religion_feature = religion_matriarchal }
+					ROOT = { 
+						OR = { 
+							has_religion_feature = religion_equal 
+							has_religion_feature = religion_patriarchal
+						}
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = yes }
+					opinion = { 
+						who = ROOT 
+						modifier = bad_succ_law_change
+						years = 100
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = no }
+					opinion = { 
+						who = ROOT 
+						modifier = good_succ_law_change
+						years = 100
+					}
+				}
+			}
+			if = {
+				limit = { 
+					FROM = { 
+						OR = { 
+							has_religion_feature = religion_equal 
+						}
+					}
+					ROOT = { 
+						has_religion_feature = religion_patriarchal
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = yes }
+					opinion = { 
+						who = ROOT 
+						modifier = bad_succ_law_change
+						years = 100
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = no }
+					opinion = { 
+						who = ROOT 
+						modifier = good_succ_law_change
+						years = 100
+					}
+				}
+			}
+			if = {
+				limit = { 
+					FROM = { 
+						OR = { 
+							has_religion_feature = religion_equal 
+						}
+					}
+					ROOT = { 
+						has_religion_feature = religion_matriarchal
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = no }
+					opinion = { 
+						who = ROOT 
+						modifier = bad_succ_law_change
+						years = 100
+					}
+				}
+				any_close_relative = { 
+					limit = { is_female = yes }
+					opinion = { 
+						who = ROOT 
+						modifier = good_succ_law_change
+						years = 100
+					}
+				}
+			}
+		}
+	}
+}
+
+#On Random Start cleanup for Status of Women.
+character_event = {
+	id = HF.23035
+	hide_window = yes
+	
+	trigger = { 
+		is_save_game = no
+
+		OR = {
+			has_religion_feature = religion_patriarchal
+			has_religion_feature = religion_equal
+			has_religion_feature = religion_matriarchal
+		}
+	}
+	is_triggered_only = yes
+	
+	immediate = { 
+		if = {
+			limit = { 
+				ROOT = { has_religion_feature = religion_matriarchal }
+			}
+			ROOT = { 
+				any_demesne_title = { 
+					add_law = {
+						law = status_of_women_4
+						cooldown = no
+						opinion_effect = no
+					}
+					add_law = {
+						law = enatic_succession
+						cooldown = no
+						opinion_effect = no
+					}
+					if = { 
+						limit = { 
+							ROOT = { 
+								NOT = { has_law = succ_byzantine_elective }
+								OR = { 
+									is_feudal = yes 
+									is_tribal = yes
+									is_nomadic = yes
+								}
+							}
+						}
+						add_law = {
+							law = succ_turkish_succession
+							cooldown = no
+							opinion_effect = no
+						}
+					}
+				} 
+			} 
+		}
+		if = {
+			limit = { 
+				ROOT = { has_religion_feature = religion_patriarchal }
+			}
+			ROOT = { 
+				any_demesne_title = { 
+					add_law = {
+						law = status_of_women_0
+						cooldown = no
+						opinion_effect = no
+					}
+					add_law = {
+						law = cognatic_succession
+						cooldown = no
+						opinion_effect = no
+					}
+					if = { 
+						limit = { 
+							ROOT = { 
+								NOT = { has_law = succ_byzantine_elective }
+								OR = { 
+									is_feudal = yes 
+									is_tribal = yes
+									is_nomadic = yes
+								}
+							}
+						}
+						add_law = {
+							law = succ_turkish_succession
+							cooldown = no
+							opinion_effect = no
+						}
+					}
+				}
+			} 
+		}
+		if = {
+			limit = { 
+				ROOT = {
+					OR = { 
+						has_religion_feature = religion_equal 
+					}
+				}
+			}
+			ROOT = { 
+				any_demesne_title = { 
+					add_law = {
+						law = status_of_women_4
+						cooldown = no
+						opinion_effect = no
+					}
+					add_law = {
+						law = true_cognatic_succession
+						cooldown = no
+						opinion_effect = no
+					}
+				} 
+			} 
+		}
+	}
+}
+################################################################
+#				Reformation via Roman Empire 				   #
+################################################################
+
+#these events are cursed for some reason
+
+#On_startup: Hidden event on AltStart applying the Cosmopolitan/Dogmatic effects on customized religions.
+#THIS EVENT LISTS EVERY SINGLE RELIGION IN THE ENTIRE GAME TWICE. WHAT THE FUCK PDOX
+
+#REMOVED HF.23205
+
 ##################################################################################################
 
 #Synergic Doctrines flavor
@@ -1957,7 +3868,7 @@ character_event = {
 	option = {
 		name = EVTOPTAHF23207
 		trigger = { 
-			OR = { religion = aztec religion = aztec_reformed has_religion_feature = religion_ritual_sacrifice } 
+			OR = { religion = mictlantec has_religion_feature = religion_ritual_sacrifice } 
 			FROM = { location = { NOT = { religion = ROOT } } } #Only if province is of some other religion.
 		}
 		hidden_tooltip = { FROM = { owner = { character_event = { id = HF.23208 } } } } #Notify owner
@@ -2130,7 +4041,7 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTBHF23208
-		trigger = { religion = FROM }  
+		trigger = { religion = FROM } 
 	} 
 }
 
@@ -2476,8 +4387,8 @@ narrative_event = {
 			is_female = no
 			is_alternate_start = no
 			OR = {
-				religion = norse_pagan 
-				religion = norse_pagan_reformed
+				religion = americanist 
+				religion = americanist_reformed
 			}
 		}
 		text = EVTDESCAHF23212
@@ -2487,8 +4398,8 @@ narrative_event = {
 			is_female = yes
 			is_alternate_start = no
 			OR = {
-				religion = norse_pagan 
-				religion = norse_pagan_reformed
+				religion = americanist 
+				religion = americanist_reformed
 			}
 		}
 		text = EVTDESCBHF23212
@@ -2498,8 +4409,8 @@ narrative_event = {
 			OR = {
 				is_alternate_start = yes
 				NOR = {
-					religion = norse_pagan 
-					religion = norse_pagan_reformed
+					religion = americanist 
+					religion = americanist_reformed
 				}
 			}
 		}
@@ -2587,7 +4498,7 @@ narrative_event = {
 			}
 			set_bloodline_founder_religion_flag_effect = yes
 			if = { 
-				limit = { OR = { religion = norse_pagan religion  = norse_pagan_reformed } }
+				limit = { OR = { religion = americanist religion = americanist_reformed } }
 				new_bloodline = {
 					set_description = "bloodline_desc_seaking_bloodline_viking"
 					random_list = { 
@@ -2599,7 +4510,7 @@ narrative_event = {
 				}		
 			}
 			if = { 
-				limit = { NOR = { religion = norse_pagan religion  = norse_pagan_reformed } }
+				limit = { NOR = { religion = americanist religion = americanist_reformed } }
 				new_bloodline = {
 					set_description = "bloodline_desc_seaking_bloodline_pirate"
 					random_list = { 
@@ -2618,7 +4529,7 @@ narrative_event = {
 			}
 			set_bloodline_founder_religion_flag_effect = yes
 			if = { 
-				limit = { OR = { religion = norse_pagan religion  = norse_pagan_reformed } }
+				limit = { OR = { religion = americanist religion = americanist_reformed } }
 				new_bloodline = {
 					set_description = "bloodline_desc_seaking_bloodline_viking"
 					random_list = { 
@@ -2630,7 +4541,7 @@ narrative_event = {
 				}		
 			}
 			if = { 
-				limit = { NOR = { religion = norse_pagan religion  = norse_pagan_reformed } }
+				limit = { NOR = { religion = americanist religion = americanist_reformed } }
 				new_bloodline = {
 					set_description = "bloodline_desc_seaking_bloodline_pirate"
 					random_list = { 
@@ -2699,8 +4610,8 @@ narrative_event = {
 		name = EVTOPTAHF23213
 		trigger = { 
 			OR = { 
-				religion = norse_pagan 
-				religion = norse_pagan_reformed
+				religion = americanist 
+				religion = americanist_reformed
 				AND = { 
 					has_religion_feature = religion_adventuring 
 					has_religion_feature = religion_seafaring
@@ -2712,8 +4623,8 @@ narrative_event = {
 		name = EVTOPTBHF23213
 		trigger = { 
 			NOR = { 
-				religion = norse_pagan 
-				religion = norse_pagan_reformed
+				religion = americanist 
+				religion = americanist_reformed
 				AND = { 
 					has_religion_feature = religion_adventuring 
 					has_religion_feature = religion_seafaring
@@ -2740,9 +4651,9 @@ character_event = {
 	is_triggered_only = yes
 
 	has_dlc = "Holy Fury"
+	only_playable = yes
 
 	trigger = {
-		is_landed = yes
 		NOR = {	
 			has_earmarked_regiments = pirate_mercenaries_perm #Don't let another band spawn when the previous is still employed.
 			has_earmarked_regiments = pirate_mercenaries 
@@ -2775,7 +4686,7 @@ character_event = {
 		FROM = { location = { save_event_target_as = scoped_spawning_point } }
 		FROM = { owner = { save_event_target_as = scoped_province_owner } }
 		random_list = { #Decide mercenary leader's sex.
-			70 = {  
+			70 = { 
 				trigger = { FROM = { owner = { NOT = { has_religion_feature = religion_matriarchal } } } }	
 				create_random_soldier = {
 					random_traits = yes
@@ -2812,7 +4723,8 @@ character_event = {
 								}
 								has_religion_feature = religion_matriarchal 
 								has_religion_feature = religion_equal 
-								has_religion_feature = religion_feature_bon 
+								has_religion_feature = religion_feature_aria_de_machete 
+								has_religion_feature = religion_feature_midewiwin
 							}
 						} 
 					} 
@@ -3024,25 +4936,25 @@ character_event = {
 		trigger = { combat_rating = 15 }
 		tooltip_info = combat_rating 
 		custom_tooltip = { text = TOOLTIP_EVTOPTCHF23214 }
-    	#REQUIRED event targets for setting up duel evaluation!
-	    hidden_tooltip = { 
-	    	save_event_target_as = combatant_1 #the person issuing the duel...
-	    	set_character_flag = flag_pirate_fighting_mercenary_leader 	#Needed for follow-up event in case of victory.
-	    	set_character_flag = flag_duel_no_draws #Prevents duel from ending in a draw.
-	    	event_target:scoped_pirate_mercenary = {
-	    		set_character_flag = flag_duel_no_backsies #Make the challenged party unable to decline the duel.
-	    		set_character_flag = flag_duel_no_draws #Prevents duel from ending in a draw.
-	    		save_event_target_as = combatant_2 } #the target of the duel...
-	    }
-	    pacifists_lose_piety_effect = yes
-	    add_character_modifier = {
-	        modifier = recent_duel_timer
-	        duration = 365
-	        hidden = yes
-	    }
-	    hidden_tooltip = {
-	        event_target:scoped_pirate_mercenary = { character_event = { id = HFP.10095 } }
-	    }
+		#REQUIRED event targets for setting up duel evaluation!
+		hidden_tooltip = { 
+			save_event_target_as = combatant_1 #the person issuing the duel...
+			set_character_flag = flag_pirate_fighting_mercenary_leader 	#Needed for follow-up event in case of victory.
+			set_character_flag = flag_duel_no_draws #Prevents duel from ending in a draw.
+			event_target:scoped_pirate_mercenary = {
+				set_character_flag = flag_duel_no_backsies #Make the challenged party unable to decline the duel.
+				set_character_flag = flag_duel_no_draws #Prevents duel from ending in a draw.
+				save_event_target_as = combatant_2 } #the target of the duel...
+		}
+		pacifists_lose_piety_effect = yes
+		add_character_modifier = {
+			modifier = recent_duel_timer
+			duration = 365
+			hidden = yes
+		}
+		hidden_tooltip = {
+			event_target:scoped_pirate_mercenary = { character_event = { id = HFP.10095 } }
+		}
 		ai_chance = { 
 			factor = 20 
 			modifier = { 
@@ -3059,9 +4971,9 @@ character_event = {
 			scaled_wealth = { value = -1 min = -150 max = -250 } 
 		}
 		location = { 
-            show_scope_change = no
+			show_scope_change = no
 			ROOT = {
-            	show_scope_change = no
+				show_scope_change = no
 				spawn_unit = {
 					province = PREV
 					home = PREV
@@ -3142,9 +5054,9 @@ character_event = {
 			death = { death_reason = death_murder killer = ROOT }
 		}
 		location = { 
-            show_scope_change = no
+			show_scope_change = no
 			ROOT = {
-            	show_scope_change = no
+				show_scope_change = no
 				spawn_unit = {
 					province = PREV
 					home = PREV
@@ -3189,9 +5101,9 @@ character_event = {
 			}
 		}
 		location = { 
-            show_scope_change = no
+			show_scope_change = no
 			ROOT = {
-            	show_scope_change = no
+				show_scope_change = no
 				spawn_unit = {
 					province = PREV
 					home = PREV
@@ -3214,9 +5126,9 @@ character_event = {
 		name = EVTOPTCHF23215
 		custom_tooltip = { text = TOOLTIP_EVTOPTCHF23215 }
 		location = { 
-            show_scope_change = no
+			show_scope_change = no
 			ROOT = {
-            	show_scope_change = no
+				show_scope_change = no
 				spawn_unit = {
 					province = PREV
 					home = PREV
@@ -3264,9 +5176,9 @@ character_event = {
 			scaled_wealth = { value = -2 min = -250 max = -450 } 
 		}
 		location = { 
-            show_scope_change = no
+			show_scope_change = no
 			ROOT = {
-            	show_scope_change = no
+				show_scope_change = no
 				spawn_unit = {
 					province = PREV
 					home = PREV
@@ -3356,9 +5268,9 @@ character_event = {
 	option = { 
 		name = EVTOPTAHF23218
 		location = { 
-            show_scope_change = no
+			show_scope_change = no
 			ROOT = {
-            	show_scope_change = no
+				show_scope_change = no
 				spawn_unit = {
 					province = PREV
 					home = PREV
@@ -3413,9 +5325,9 @@ character_event = {
 	is_triggered_only = yes
 
 	has_dlc = "Holy Fury"
+	only_playable = yes
 
 	trigger = {
-		is_landed = yes
 		siege = {
 			is_attacker = yes
 		}
@@ -3466,11 +5378,11 @@ character_event = {
 		custom_tooltip = { text = TOOLTIP_EVTOPTAHF23219 } 
 		hidden_tooltip = {
 			random_list = { 
-				60 = {  
+				60 = { 
 					good_soldier_outcome_score = yes
 					character_event = { id = HF.23220 } #Success
 				}
-				40 = {  
+				40 = { 
 					bad_soldier_outcome_score = yes
 					character_event = { id = HF.23221 } #Failure
 				}
@@ -3481,7 +5393,7 @@ character_event = {
 		name = EVTOPTBHF23219
 		trigger = { 
 			FROM = { holding_type = temple }
-			OR = {  #check doctrines
+			OR = { #check doctrines
 				AND = { 
 					is_female = yes 
 					FROM = { owner = { has_religion_feature = religion_matriarchal } }
@@ -3491,7 +5403,8 @@ character_event = {
 					FROM = { owner = { NOT = { has_religion_feature = religion_matriarchal } } }
 				}
 				FROM = { owner = { has_religion_feature = religion_equal } }
-				FROM = { owner = { has_religion_feature = religion_feature_bon } }
+				FROM = { owner = { has_religion_feature = religion_feature_aria_de_machete } }
+				FROM = { owner = { has_religion_feature = religion_feature_midewiwin } }
 				FROM = { 
 					owner = { 
 						religion_group = pagan_group
@@ -3505,7 +5418,7 @@ character_event = {
 		custom_tooltip = { text = TOOLTIP_EVTOPTBHF23219 } 
 		hidden_tooltip = {
 			random_list = { #Outcome based on intrigue and a bit of learning.
-				60 = {  
+				60 = { 
 					is_good_intrigue_character_score = yes
 					modifier = {
 						factor = 1.25
@@ -3525,7 +5438,7 @@ character_event = {
 					}
 					character_event = { id = HF.23222 } #Success
 				}
-				40 = {  
+				40 = { 
 					is_bad_intrigue_character_score = yes
 					character_event = { id = HF.23223 } #Failure
 				}
@@ -3536,7 +5449,7 @@ character_event = {
 		name = EVTOPTCHF23219
 		trigger = { 
 			FROM = { holding_type = castle }
-			OR = {  #check doctrines
+			OR = { #check doctrines
 				AND = { 
 					is_female = yes 
 					FROM = { NOT = { owner = { has_religion_feature = religion_matriarchal } } }
@@ -3546,13 +5459,14 @@ character_event = {
 					FROM = { owner = { has_religion_feature = religion_matriarchal } }
 				}
 				FROM = { owner = { has_religion_feature = religion_equal } }
-				FROM = { owner = { has_religion_feature = religion_feature_bon } }
+				FROM = { owner = { has_religion_feature = religion_feature_aria_de_machete } }
+				FROM = { owner = { has_religion_feature = religion_feature_midewiwin } }
 			} 
 		} 
 		custom_tooltip = { text = TOOLTIP_EVTOPTCHF23219 } 
 		hidden_tooltip = {
 			random_list = { #Outcome based on intrigue and attraction score.
-				60 = {  
+				60 = { 
 					is_good_intrigue_character_score = yes
 					modifier = {
 						factor = 1.75
@@ -3567,7 +5481,7 @@ character_event = {
 					}
 					character_event = { id = HF.23224 } #Success
 				}
-				40 = {  
+				40 = { 
 					is_bad_intrigue_character_score = yes
 					modifier = {
 						factor = 1.75
@@ -3594,11 +5508,11 @@ character_event = {
 		}
 		hidden_tooltip = {
 			random_list = { #Less risky than the above options, but with lesser reward.
-				75 = {  
+				75 = { 
 					good_soldier_outcome_score = yes
 					character_event = { id = HF.23226 } #Success
 				}
-				25 = {  
+				25 = { 
 					bad_soldier_outcome_score = yes
 					character_event = { id = HF.23227 } #Failure
 				}
@@ -3713,7 +5627,7 @@ character_event = {
 	#Steal wealth from temple.
 	#Desecrate temple.
 
-	immediate  = { 
+	immediate = { 
 		siege = { 
 			morale = 0.05
 			enemy = {
@@ -3996,13 +5910,15 @@ narrative_event = {
 			has_character_modifier = astrology_very_bad_omen
 		}
 		OR = {
+			religion = neomayan
+			has_religion_feature = religion_feature_occultist
 			AND = {
 				has_religion_feature = religion_haruspicy
 				has_religion_feature = religion_astrology 
 			}
 			AND = {
-				religion = hellenic_pagan_reformed #Part of their features.
-				is_alternate_start = no
+				religion = occultist_reformed
+				has_religion_features = no
 			}
 		}
 	}
@@ -4433,14 +6349,21 @@ narrative_event = {
 		}
 		OR = {
 			AND = {
+				has_religion_feature = religion_feature_occultist
+				has_religion_feature = religion_no_leader
+			}
+			AND = {
 				has_religion_feature = religion_haruspicy
 				has_religion_feature = religion_astrology 
 				has_religion_feature = religion_no_leader 
 			}
 			AND = {
-				religion = hellenic_pagan_reformed #Part of their features.
+				religion = gaian
 				is_alternate_start = no
-				has_religion_feature = religion_no_leader 
+			}
+			AND = {
+				religion = neomayan
+				is_alternate_start = no
 			}
 		}
 	}
@@ -4489,7 +6412,7 @@ narrative_event = {
 				}
 			}
 		}
-		hidden_tooltip = {  
+		hidden_tooltip = { 
 			liege = { 
 				narrative_event = { id = HF.23405 }
 			}
@@ -4654,10 +6577,9 @@ character_event = {
 	id = HF.23410
 	hide_window = yes
 	is_triggered_only = yes
+	only_playable = yes
 
 	trigger = { 
-		is_ruler = yes
-		higher_real_tier_than = COUNT
 		OR = { 
 			death_execution_trigger = yes
 			death_sacrificed_trigger = yes
@@ -4673,16 +6595,14 @@ character_event = {
 			}
 			is_playable = yes
 			is_landed = yes
-			NOT = { trait = incapable }
-			OR = { 
+			NOT = { is_incapable = yes }
+			OR = {
 				has_religion_feature = religion_ritual_sacrifice
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 			}
 			OR = { 
 				has_religion_feature = religion_haruspicy
-				religion = seirei
-				religion = seirei_reformed
+				religion_group = mesoamerican_gods
 			}
 		}
 	}
@@ -4702,10 +6622,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -4713,9 +6630,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5124,10 +7040,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5135,9 +7048,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5162,10 +7074,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5173,9 +7082,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5200,10 +7108,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5211,9 +7116,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5238,10 +7142,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5249,9 +7150,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5276,10 +7176,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5287,9 +7184,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5310,10 +7206,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5321,9 +7214,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5348,10 +7240,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5359,9 +7248,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5392,17 +7280,17 @@ character_event = {
 character_event = {
 	id = HF.23430
 	hide_window = yes
+	has_dlc = "Holy Fury"
+
 	trigger = { 
-		has_dlc = "Holy Fury"
 		death_sacrificed_trigger = yes
 		killer = { 
 			is_playable = yes
 			is_landed = yes
-			NOT = { trait = incapable }
+			NOT = { is_incapable = yes }
 			OR = { 
 				has_religion_feature = religion_ritual_sacrifice
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 			}
 		}
 	}
@@ -5425,7 +7313,7 @@ character_event = {
 					ROOT = { religion = PREV } 
 					OR = { 
 						has_religion_feature = religion_holy_family 
-						has_religion_feature = religion_feature_zun
+						#has_religion_feature = religion_feature_zun
 					} 
 				}
 				change_variable = { which = burned_hearts_points value = 1 }
@@ -5456,10 +7344,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5467,9 +7352,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5483,8 +7367,7 @@ character_event = {
 		NOT = { trait = bloodthirsty_gods_1 }
 		OR = { 
 			has_religion_feature = religion_ritual_sacrifice
-			religion = aztec
-			religion = aztec_reformed
+			religion = mictlantec
 		}
 	}
 
@@ -5525,10 +7408,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5536,9 +7416,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5551,8 +7430,7 @@ character_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_ritual_sacrifice
-			religion = aztec
-			religion = aztec_reformed
+			religion = mictlantec
 		}
 		NOR = { 
 			trait = bloodthirsty_gods_2 
@@ -5604,10 +7482,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5615,9 +7490,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5630,8 +7504,7 @@ character_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_ritual_sacrifice
-			religion = aztec
-			religion = aztec_reformed
+			religion = mictlantec
 		}
 		NOT = { 
 			trait = bloodthirsty_gods_3
@@ -5679,10 +7552,7 @@ narrative_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5690,9 +7560,8 @@ narrative_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5706,8 +7575,7 @@ narrative_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_ritual_sacrifice
-			religion = aztec
-			religion = aztec_reformed
+			religion = mictlantec
 		}
 		NOT = { 
 			any_owned_bloodline = { # Not already has a Bloodthirsty bloodline.
@@ -5823,8 +7691,7 @@ narrative_event = {
 			OR = {
 				religion = FROM
 				has_religion_feature = religion_ritual_sacrifice
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 			}
 		}
 		text = EVTDESCAHF23435
@@ -5834,8 +7701,7 @@ narrative_event = {
 			NOR = {
 				religion = FROM
 				has_religion_feature = religion_ritual_sacrifice
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 			}
 		}
 		text = EVTDESCBHF23435
@@ -5843,10 +7709,7 @@ narrative_event = {
 	picture = { 
 		trigger = { 
 			FROM = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -5854,9 +7717,8 @@ narrative_event = {
 	picture = { 
 		trigger = { 
 			FROM = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -5872,8 +7734,7 @@ narrative_event = {
 			OR = {
 				religion = FROM
 				has_religion_feature = religion_ritual_sacrifice
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 			}
 		}
 	}
@@ -5883,8 +7744,7 @@ narrative_event = {
 			NOR = {
 				religion = FROM
 				has_religion_feature = religion_ritual_sacrifice
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 			}
 		}
 	}
@@ -5912,32 +7772,7 @@ character_event = {
 					NOT = { has_character_flag = do_not_disturb }
 					NOT = { has_character_modifier = holding_large_feast }
 					is_adult = yes
-					NOT = { trait = incapable }
-					NOT = { is_inaccessible_trigger = yes }
-					religion = ROOT
-					higher_tier_than = BARON 
-					NOT = { has_any_opinion_modifier = opinion_blood_games_guest } #Not already tangled in some other blood games from a previous liege.
-				}
-				letter_event = { id = HF.23441 }
-			}
-			character_event = { id = HF.23443 days = 5 } #Pick your champion.
-		}
-	}
-	
-	option = { #Hold it in your Amphitheater
-		name = EVTOPTBHF23440
-		set_character_flag = flag_preparing_blood_games #Used for on_death notifications.
-		
-		prestige = 200
-		trigger = { has_wonder = wonder_amphitheater }
-		tooltip_info_custom = EVTOPTBHF23440_tt
-		hidden_tooltip = {
-			any_vassal = {
-				limit = { 
-					NOT = { has_character_flag = do_not_disturb }
-					NOT = { has_character_modifier = holding_large_feast }
-					is_adult = yes
-					NOT = { trait = incapable }
+					NOT = { is_incapable = yes }
 					NOT = { is_inaccessible_trigger = yes }
 					religion = ROOT
 					higher_tier_than = BARON 
@@ -6048,7 +7883,7 @@ character_event = {
 			limit = { 
 				prisoner = yes 
 				is_adult = yes
-				NOT = { trait = incapable }
+				NOT = { is_incapable = yes }
 				OR = { #Sex laws check
 					AND = { 
 						is_female = no
@@ -6258,7 +8093,7 @@ character_event = {
 				is_ruler = no #Cannot risk your own vassals' life.
 				is_adult = yes
 				NOR = { 
-					trait = incapable 
+					is_incapable = yes 
 					has_character_modifier = elder_long_life_modifier
 				}
 				has_minor_title = title_commander
@@ -6404,7 +8239,7 @@ character_event = {
 				prisoner = no
 				religion = ROOT
 				NOR = { 
-					trait = incapable 
+					is_incapable = yes 
 					has_character_modifier = elder_long_life_modifier
 				}
 				NOT = { has_minor_title = title_commander }
@@ -6546,7 +8381,7 @@ character_event = {
 			save_event_target_as = blood_contender_courtier
 		}
 		if = { 
-			limit = {  
+			limit = { 
 				event_target:blood_contender_prisoner = { is_alive = no }
 				event_target:blood_contender_commander = { is_alive = no }
 				event_target:blood_contender_courtier = { is_alive = no } #In the event of no available other target... 
@@ -6906,14 +8741,14 @@ character_event = {
 		name = EVTOPTAHF23445
 		trigger = { trait = mystic }
 		tooltip_info = mystic
-		persistent_event_target:my_blood_contender = { add_character_modifier =  { name = fearless_potion months = 3 } }
+		persistent_event_target:my_blood_contender = { add_character_modifier = { name = fearless_potion months = 3 } }
 		ai_chance = { factor = 60 }
 	}
 	option = { 
 		name = EVTOPTBHF23445
 		trigger = { trait = deceitful }
 		tooltip_info = deceitful
-		persistent_event_target:my_blood_contender = { add_character_modifier =  { name = poisoned_weapons months = 3 } }
+		persistent_event_target:my_blood_contender = { add_character_modifier = { name = poisoned_weapons months = 3 } }
 		ai_chance = { factor = 60 }
 	}
 	option = { 
@@ -6922,21 +8757,9 @@ character_event = {
 			limit = { ai = no }
 			scaled_wealth = { value = -0.5 min = -50 max = -150 } 
 		}
-		persistent_event_target:my_blood_contender = { add_character_modifier =  { name = gladiatorial_equipment months = 3 } }
+		persistent_event_target:my_blood_contender = { add_character_modifier = { name = gladiatorial_equipment months = 3 } }
 		ai_chance = { factor = 20 }
 	}
-	
-	option = { 
-		name = EVTOPTEHF23445
-		tooltip_info_custom = EVTOPTEHF23445_tt
-		trigger = { 
-			any_realm_wonder = {
-				has_wonder_upgrade = upgrade_animal_cages 
-			}
-		}
-		ai_chance = { factor = 10 }
-	}
-	
 	option = { #Nothing
 		name = EVTOPTDHF23445
 		ai_chance = { factor = 30 }
@@ -7007,7 +8830,7 @@ character_event = {
 	immediate = { 
 		if = { 
 			limit = { 
-				multiplayer = no  #With the delay, the new contender might not make it in time before the tournament ends.
+				multiplayer = no #With the delay, the new contender might not make it in time before the tournament ends.
 			} 
 			spawn_good_commander_effect = yes #Saved as invited_character
 		}
@@ -7101,7 +8924,7 @@ character_event = {
 	immediate = { 
 		if = { 
 			limit = { 
-				multiplayer = no  #With the delay, the new contender might not make it in time before the tournament ends.
+				multiplayer = no #With the delay, the new contender might not make it in time before the tournament ends.
 			} 
 			spawn_good_commander_effect = yes #Saved as invited_character
 		}
@@ -7154,7 +8977,7 @@ character_event = {
 	immediate = { 
 		if = { 
 			limit = { 
-				multiplayer = no  #With the delay, the new contender might not make it in time before the tournament ends.
+				multiplayer = no #With the delay, the new contender might not make it in time before the tournament ends.
 			} 
 			spawn_good_commander_effect = yes #Saved as invited_character
 		}
@@ -7321,7 +9144,7 @@ character_event = {
 
 	immediate = { 
 		#Sacrifice all the losers to the gods.
-		FROM = {  
+		FROM = { 
 			any_realm_character = { 
 				limit = { 
 					NOT = { character = ROOT } 
@@ -7502,10 +9325,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -7513,9 +9333,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -7560,10 +9379,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -7571,9 +9387,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -7607,7 +9422,7 @@ character_event = {
 			} 
 		} 
 		tiered_piety_reward_effect = yes
-		hidden_tooltip  = {  
+		hidden_tooltip = { 
 			change_variable = { which = burned_hearts_points value = 10 }
 			bloodthirsty_tiered_traits_effect = yes
 			clear_persistent_event_target = my_blood_contender
@@ -7622,7 +9437,7 @@ character_event = {
 				} 
 			} 
 		}
-		hidden_tooltip  = {  
+		hidden_tooltip = { 
 			bloodthirsty_tiered_traits_effect = yes #You still get a point.
 			clear_persistent_event_target = my_blood_contender
 		}
@@ -7654,10 +9469,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -7665,9 +9477,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -7692,7 +9503,7 @@ character_event = {
 			years = 5
 		}
 		tiered_piety_reward_effect = yes
-		hidden_tooltip  = {  
+		hidden_tooltip = { 
 			change_variable = { which = burned_hearts_points value = 10 }
 			bloodthirsty_tiered_traits_effect = yes
 			clear_persistent_event_target = my_blood_contender
@@ -7712,7 +9523,7 @@ character_event = {
 			who = FROM
 			years = 5
 		}
-		hidden_tooltip  = {  
+		hidden_tooltip = { 
 			bloodthirsty_tiered_traits_effect = yes #You still get a point.
 			clear_persistent_event_target = my_blood_contender
 		}
@@ -7726,10 +9537,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -7737,9 +9545,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -7755,8 +9562,7 @@ character_event = {
 	trigger = {
 		NOR = {
 			has_religion_feature = religion_ritual_sacrifice
-			religion = aztec
-			religion = aztec_reformed
+			religion = mictlantec
 		}
 	}
 	immediate = {
@@ -7775,7 +9581,7 @@ character_event = {
 
 	option = { 
 		name = EVTOPTAHF23458
-		hidden_tooltip  = {  
+		hidden_tooltip = { 
 			clear_persistent_event_target = my_blood_contender
 		}
 	}
@@ -7787,10 +9593,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -7798,9 +9601,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -7813,27 +9615,25 @@ character_event = {
 
 	option = { 
 		name = EVTOPTAHF23459
-		trigger  = {  
+		trigger = { 
 			OR = {
 				has_religion_feature = religion_ritual_sacrifice
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 			}
 		}
-		hidden_tooltip  = {  
+		hidden_tooltip = { 
 			clear_persistent_event_target = my_blood_contender
 		}
 	}
 	option = { 
 		name = EVTOPTBHF23459
-		trigger  = {  
+		trigger = { 
 			NOR = {
 				has_religion_feature = religion_ritual_sacrifice
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 			}
 		}
-		hidden_tooltip  = {  
+		hidden_tooltip = { 
 			clear_persistent_event_target = my_blood_contender
 		}
 	}
@@ -7868,14 +9668,14 @@ character_event = {
 		name = EVTOPTAHF23445
 		trigger = { trait = mystic }
 		tooltip_info = mystic
-		persistent_event_target:my_blood_contender = { add_character_modifier =  { name = fearless_potion months = 3 } }
+		persistent_event_target:my_blood_contender = { add_character_modifier = { name = fearless_potion months = 3 } }
 		ai_chance = { factor = 60 }
 	}
 	option = { 
 		name = EVTOPTBHF23445
 		trigger = { trait = deceitful }
 		tooltip_info = deceitful
-		persistent_event_target:my_blood_contender = { add_character_modifier =  { name = poisoned_weapons months = 3 } }
+		persistent_event_target:my_blood_contender = { add_character_modifier = { name = poisoned_weapons months = 3 } }
 		ai_chance = { factor = 60 }
 	}
 	option = { 
@@ -7884,7 +9684,7 @@ character_event = {
 			limit = { ai = no }
 			scaled_wealth = { value = -0.5 min = -50 max = -150 } 
 		}
-		persistent_event_target:my_blood_contender = { add_character_modifier =  { name = gladiatorial_equipment months = 3 } }
+		persistent_event_target:my_blood_contender = { add_character_modifier = { name = gladiatorial_equipment months = 3 } }
 		ai_chance = { factor = 20 }
 	}
 	option = { #Nothing
@@ -7903,10 +9703,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -7914,9 +9711,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -7971,9 +9767,8 @@ character_event = {
 				limit = { 
 					higher_tier_than = BARON 
 					NOR = { 
-						religion = ROOT  
-						religion = aztec
-						religion = aztec_reformed
+						religion = ROOT 
+						religion = mictlantec
 						has_religion_feature = religion_ritual_sacrifice
 					}
 				} 
@@ -8072,9 +9867,8 @@ character_event = {
 				limit = { 
 					higher_tier_than = BARON 
 					NOR = { 
-						religion = ROOT  
-						religion = aztec
-						religion = aztec_reformed
+						religion = ROOT 
+						religion = mictlantec
 						has_religion_feature = religion_ritual_sacrifice
 					}
 				} 
@@ -8132,13 +9926,9 @@ character_event = {
 				limit = { 
 					higher_tier_than = BARON 
 					NOR = { 
-						religion = ROOT  
+						religion = ROOT 
 						AND = { 
-							religion = aztec
-							NOT = { has_religion_feature = religion_peaceful }
-						}
-						AND = { 
-							religion = aztec_reformed
+							religion = mictlantec
 							NOT = { has_religion_feature = religion_peaceful }
 						}
 						has_religion_feature = religion_ritual_sacrifice
@@ -8171,10 +9961,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -8182,9 +9969,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -8210,10 +9996,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -8221,9 +10004,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -8249,10 +10031,7 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				OR = {  
-					religion = aztec
-					religion = aztec_reformed
-				}
+				religion_group = mesoamerican_gods
 			} 
 		} 
 		picture = GFX_evt_bishop_aztec
@@ -8260,9 +10039,8 @@ character_event = {
 	picture = { 
 		trigger = { 
 			ROOT = { 
-				NOR = {  
-					religion = aztec
-					religion = aztec_reformed
+				NOT = { 
+					religion_group = mesoamerican_gods
 				}
 			} 
 		} 
@@ -8276,8 +10054,7 @@ character_event = {
 		name = EVTOPTAHF23465
 		trigger = { 
 			OR = {
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 				has_religion_feature = religion_ritual_sacrifice
 			}
 		}
@@ -8297,8 +10074,7 @@ character_event = {
 		name = EVTOPTBHF23465
 		trigger = { 
 			NOR = {
-				religion = aztec
-				religion = aztec_reformed
+				religion = mictlantec
 				has_religion_feature = religion_ritual_sacrifice
 			}
 		}
@@ -8315,33 +10091,45 @@ character_event = {
 	title = EVTTITLEHF23470
 	desc = { 
 		trigger = { 
-			religion = norse_pagan
+			religion = americanist
 		} 
 		text = EVTDESCAHF23470
 	}
 	desc = { 
 		trigger = { 
-			religion = tengri_pagan
+			religion = revelationist
 		} 
 		text = EVTDESCBHF23470
 	}
 	desc = { 
 		trigger = { 
-			religion = slavic_pagan
+			religion = rust_cultist
 		} 
 		text = EVTDESCCHF23470
 	}
 	desc = { 
 		trigger = { 
-			religion = finnish_pagan
+			religion = occultist
 		} 
 		text = EVTDESCDHF23470
 	}
 	desc = { 
 		trigger = { 
-			religion = finnish_pagan
+			religion = glorian
 		} 
 		text = EVTDESCEHF23470
+	}
+	desc = { 
+		trigger = { 
+			religion = celtic_pagan
+		} 
+		text = EVTDESCFHF23470
+	}
+	desc = { 
+		trigger = { 
+			religion = aria_de_machete
+		} 
+		text = EVTDESCFHF23470
 	}
 	picture = GFX_evt_irminsul_shrine
 	border = GFX_event_normal_frame_religion
@@ -8386,6 +10174,8 @@ character_event = {
 		trigger = { NOT = { religion = FROM } }
 	}
 }
+#On_startup event giving Irminsul to the Saxon Kingdom on Charlemagne start.
+#delted
 
 #on_siege_over_winner: Destroying a Great Pillar. (ROOT is besieger, FROM is besieged holding)
 character_event = {
@@ -8393,38 +10183,41 @@ character_event = {
 	title = EVTTITLEHF23473
 	desc = EVTDESCAHF23473
 	picture = GFX_evt_irminsul_burning
-
+	has_dlc = "Holy Fury"
 	is_triggered_only = yes
 	
 	trigger = {
-		has_dlc = "Holy Fury"
 		OR = {
 			NOT = { religion_group = pagan_group }
 			is_reformed_religion = yes
 		}
 		FROM = {
 			holding_type = tribal
-			location = {  
+			location = { 
 				OR = {
 					AND = {
 						has_province_flag = flag_great_pillar_norse
 						ROOT = { religion_openly_norse_or_reformed_trigger = no }
 					}
 					AND = {
-						has_province_flag = flag_great_pillar_tengri
-						ROOT = { religion_openly_tengri_or_reformed_trigger = no }
+						has_province_flag = flag_great_pillar_revelationist
+						ROOT = { religion_openly_revelationist_or_reformed_trigger = no }
 					}
 					AND = {
-						has_province_flag = flag_great_pillar_slavic
-						ROOT = { religion_openly_slavic_or_reformed_trigger = no }
+						has_province_flag = flag_great_pillar_occultist
+						ROOT = { religion_openly_occultist_or_reformed_trigger = no }
 					}
 					AND = {
-						has_province_flag = flag_great_pillar_baltic
-						ROOT = { religion_openly_baltic_or_reformed_trigger = no }
+						has_province_flag = flag_great_pillar_celtic_pagan
+						ROOT = { religion_openly_in_celtic_subgroup_trigger = no }
 					}
 					AND = {
-						has_province_flag = flag_great_pillar_finnish
-						ROOT = { religion_openly_finnish_or_reformed_trigger = no }
+						has_province_flag = flag_great_pillar_aria_de_machete
+						ROOT = { religion_openly_aria_de_machete_or_reformed_trigger = no }
+					}
+					AND = {
+						has_province_flag = flag_great_pillar_trailwalker
+						ROOT = { religion_openly_trailwalker_or_reformed_trigger = no }
 					}
 				}
 			}
@@ -8446,7 +10239,12 @@ character_event = {
 			tiered_piety_reward_effect = yes
 		}
 		if = {
-			limit = { has_religion_feature = religion_cosmopolitan }
+			limit = {
+				OR = {
+					has_religion_feature = religion_cosmopolitan
+					has_religion_feature = religion_feature_revelationist
+				}
+			}
 			tiered_piety_negative_effect = yes
 		}
 		hidden_tooltip = {
@@ -8460,7 +10258,7 @@ character_event = {
 						set_province_flag = flag_just_destroyed_norse_pillar #Needed for next event.
 						province_event = { id = HF.23475 days = 60 } #Clean up flag.
 					}
-					norse_pagan = {
+					americanist = {
 						religion_authority = {
 							modifier = destroyed_great_pillar
 							years = 10
@@ -8468,8 +10266,8 @@ character_event = {
 					}		
 					owner = {
 						any_realm_character = {
-							limit = {  
-								religion = norse_pagan
+							limit = { 
+								religion = americanist
 							}
 							character_event = { id = HF.23474 }
 						}
@@ -8477,14 +10275,14 @@ character_event = {
 				}
 				if = { 
 					limit = {
-						location = { has_province_flag = flag_great_pillar_tengri }
+						location = { has_province_flag = flag_great_pillar_revelationist }
 					}
 					location = { 
-						clr_province_flag = flag_great_pillar_tengri 
-						set_province_flag = flag_just_destroyed_tengri_pillar #Needed for next event.
+						clr_province_flag = flag_great_pillar_revelationist 
+						set_province_flag = flag_just_destroyed_revelationist_pillar #Needed for next event.
 						province_event = { id = HF.23475 days = 60 } #Clean up flag.
 					}
-					tengri_pagan = {
+					revelationist = {
 						religion_authority = {
 							modifier = destroyed_great_pillar
 							years = 10
@@ -8492,8 +10290,8 @@ character_event = {
 					}	
 					owner = {
 						any_realm_character = {
-							limit = {  
-								religion = tengri_pagan
+							limit = { 
+								religion = revelationist
 							}
 							character_event = { id = HF.23474 }
 						}
@@ -8501,38 +10299,14 @@ character_event = {
 				}
 				if = { 
 					limit = {
-						location = { has_province_flag = flag_great_pillar_slavic }
+						location = { has_province_flag = flag_great_pillar_occultist }
 					}
 					location = { 
-						clr_province_flag = flag_great_pillar_slavic 
-						set_province_flag = flag_just_destroyed_slavic_pillar #Needed for next event.
+						clr_province_flag = flag_great_pillar_occultist 
+						set_province_flag = flag_just_destroyed_occultist_pillar #Needed for next event.
 						province_event = { id = HF.23475 days = 60 } #Clean up flag.
 					}
-					slavic_pagan = {
-						religion_authority = {
-							modifier = destroyed_great_pillar
-							years = 10
-						}
-					}	
-					owner = {
-						any_realm_character = {
-							limit = {  
-								religion = slavic_pagan
-							}
-							character_event = { id = HF.23474 }
-						}
-					}	
-				}
-				if = { 
-					limit = {
-						location = { has_province_flag = flag_great_pillar_baltic }
-					}
-					location = { 
-						clr_province_flag = flag_great_pillar_baltic 
-						set_province_flag = flag_just_destroyed_baltic_pillar #Needed for next event.
-						province_event = { id = HF.23475 days = 60 } #Clean up flag.
-					}
-					finnish_pagan = {
+					occultist = {
 						religion_authority = {
 							modifier = destroyed_great_pillar
 							years = 10
@@ -8540,8 +10314,8 @@ character_event = {
 					}		
 					owner = {
 						any_realm_character = {
-							limit = {  
-								religion = finnish_pagan
+							limit = { 
+								religion = occultist
 							}
 							character_event = { id = HF.23474 }
 						}
@@ -8549,14 +10323,14 @@ character_event = {
 				}
 				if = { 
 					limit = {
-						location = { has_province_flag = flag_great_pillar_finnish }
+						location = { has_province_flag = flag_great_pillar_celtic_pagan }
 					}
 					location = { 
-						clr_province_flag = flag_great_pillar_finnish 
-						set_province_flag = flag_just_destroyed_finnish_pillar #Needed for next event.
+						clr_province_flag = flag_great_pillar_celtic_pagan
+						set_province_flag = flag_just_destroyed_celtic_pagan_pillar #Needed for next event.
 						province_event = { id = HF.23475 days = 60 } #Clean up flag.
 					}
-					finnish_pagan = {
+					celtic_pagan = {
 						religion_authority = {
 							modifier = destroyed_great_pillar
 							years = 10
@@ -8564,12 +10338,60 @@ character_event = {
 					}	
 					owner = {
 						any_realm_character = {
-							limit = {  
-								religion = finnish_pagan
+							limit = { 
+								religion = celtic_pagan
 							}
 							character_event = { id = HF.23474 }
 						}
+					}
+				}
+				if = { 
+					limit = {
+						location = { has_province_flag = flag_great_pillar_aria_de_machete }
+					}
+					location = { 
+						clr_province_flag = flag_great_pillar_aria_de_machete
+						set_province_flag = flag_just_destroyed_aria_de_machete_pillar #Needed for next event.
+						province_event = { id = HF.23475 days = 60 } #Clean up flag.
+					}
+					aria_de_machete = {
+						religion_authority = {
+							modifier = destroyed_great_pillar
+							years = 10
+						}
 					}	
+					owner = {
+						any_realm_character = {
+							limit = { 
+								religion = aria_de_machete
+							}
+							character_event = { id = HF.23474 }
+						}
+					}
+				}
+				if = { 
+					limit = {
+						location = { has_province_flag = flag_great_pillar_trailwalker }
+					}
+					location = { 
+						clr_province_flag = flag_great_pillar_trailwalker
+						set_province_flag = flag_just_destroyed_trailwalker_pillar #Needed for next event.
+						province_event = { id = HF.23475 days = 60 } #Clean up flag.
+					}
+					trailwalker = {
+						religion_authority = {
+							modifier = destroyed_great_pillar
+							years = 10
+						}
+					}		
+					owner = {
+						any_realm_character = {
+							limit = { 
+								religion = trailwalker
+							}
+							character_event = { id = HF.23474 }
+						}
+					}
 				}
 			}
 		}
@@ -8589,7 +10411,7 @@ character_event = {
 			}
 		}
 	}
-	option = {  #Leave it be.
+	option = { #Leave it be.
 		name = EVTOPTBHF23473
 		if = {
 			limit = { NOT = { religion_group = pagan_group } } #Friend of heathens
@@ -8633,7 +10455,7 @@ character_event = {
 		if = { 
 			limit = {
 				FROMFROM = { location = { has_province_flag = flag_just_destroyed_norse_pillar } }
-				religion = norse_pagan
+				religion = americanist
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -8657,8 +10479,8 @@ character_event = {
 		}
 		if = { 
 			limit = {
-				FROMFROM = { location = { has_province_flag = flag_just_destroyed_tengri_pillar } }
-				religion = tengri_pagan
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_revelationist_pillar } }
+				religion = revelationist
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -8682,8 +10504,8 @@ character_event = {
 		}
 		if = { 
 			limit = {
-				FROMFROM = { location = { has_province_flag = flag_just_destroyed_slavic_pillar } }
-				religion = slavic_pagan
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_occultist_pillar } }
+				religion = occultist
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -8707,8 +10529,8 @@ character_event = {
 		}
 		if = { 
 			limit = {
-				FROMFROM = { location = { has_province_flag = flag_just_destroyed_baltic_pillar } }
-				religion = finnish_pagan
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_celtic_pagan_pillar } }
+				religion = celtic_pagan
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -8732,8 +10554,33 @@ character_event = {
 		}
 		if = { 
 			limit = {
-				FROMFROM = { location = { has_province_flag = flag_just_destroyed_finnish_pillar } }
-				religion = finnish_pagan
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_aria_de_machete_pillar } }
+				religion = aria_de_machete
+			}
+			tooltip = { #Already removed in previous event.
+				religion_authority = {
+					modifier = destroyed_great_pillar
+					years = 10
+				}
+			}
+			if = { 
+				limit = { has_character_modifier = recently_built_great_pillar }
+				remove_character_modifier = recently_built_great_pillar
+			}
+			add_character_modifier = { #Prevents rebuilding one immediately after.
+				name = recently_destroyed_great_pillar_cooldown
+				years = 30
+			}
+			opinion = {
+				who = FROM
+				modifier = opinion_sacrilege
+				years = 10
+			}
+		}
+		if = { 
+			limit = {
+				FROMFROM = { location = { has_province_flag = flag_just_destroyed_trailwalker_pillar } }
+				religion = trailwalker
 			}
 			tooltip = { #Already removed in previous event.
 				religion_authority = {
@@ -8771,10 +10618,11 @@ province_event = {
 
 	immediate = { 
 		clr_province_flag = flag_just_destroyed_norse_pillar
-		clr_province_flag = flag_just_destroyed_tengri_pillar
-		clr_province_flag = flag_just_destroyed_slavic_pillar
-		clr_province_flag = flag_just_destroyed_baltic_pillar
-		clr_province_flag = flag_just_destroyed_finnish_pillar
+		clr_province_flag = flag_just_destroyed_revelationist_pillar
+		clr_province_flag = flag_just_destroyed_occultist_pillar
+		clr_province_flag = flag_just_destroyed_celtic_pagan_pillar
+		clr_province_flag = flag_just_destroyed_aria_de_machete_pillar
+		clr_province_flag = flag_just_destroyed_trailwalker_pillar
 	}
 }
 
@@ -8846,30 +10694,21 @@ character_event = {
 				ROOT = { has_religion_feature = religion_patriarchal }
 				FROMFROM = { has_religion_feature = religion_patriarchal }
 			}
-			AND = { 
-				ROOT = { 
-					OR = { 
-						has_religion_feature = religion_equal 
-						has_religion_feature = religion_feature_bon 	
-					} 
-				} 
-				FROMFROM = { 
-					OR = { 
-						has_religion_feature = religion_equal 
-						has_religion_feature = religion_feature_bon 	
-					} 
-				}
-			}
+			#no bon man
 			AND = { 
 				ROOT = { has_religion_feature = religion_matriarchal }
 				FROMFROM = { has_religion_feature = religion_matriarchal }
+			}
+			AND = {
+				ROOT = { religion = gaian }
+				FROMFROM = { religion = gaian }
 			}
 		}
 	}
 	is_triggered_only = yes
 
 	immediate = { 
-		ROOT = { character_event = { id  = HF.23701 days  = 1 } }
+		ROOT = { character_event = { id = HF.23701 days = 1 } }
 	}
 }
 
@@ -8883,8 +10722,11 @@ character_event = {
 		if = {
 			limit = { 
 				ROOT = { 
-					has_religion_feature = religion_matriarchal 
-					NOR = {  
+					OR = {
+						has_religion_feature = religion_matriarchal 
+						religion = gaian
+					}
+					NOR = { 
 						#is_merchant_republic = yes
 						is_republic = yes
 					}
@@ -8902,7 +10744,7 @@ character_event = {
 					opinion_effect = no
 				}
 				if = { 
-					limit = {  
+					limit = { 
 						NOT = { has_law = succ_byzantine_elective }
 						OR = { 
 							is_feudal = yes 
@@ -8955,9 +10797,10 @@ character_event = {
 				ROOT = {
 					OR = { 
 						has_religion_feature = religion_equal 
-						has_religion_feature = religion_feature_bon
+						has_religion_feature = religion_feature_aria_de_machete 
+						has_religion_feature = religion_feature_midewiwin
 					}
-					NOR = {  
+					NOR = { 
 						#is_merchant_republic = yes
 						is_republic = yes
 					}
@@ -9000,8 +10843,7 @@ character_event = {
 			higher_tier_than = BARON
 			OR = {
 				has_religion_feature = religion_stable
-				has_religion_feature = religion_feature_slavic
-				has_religion_feature = religion_feature_finnish
+				has_religion_feature = religion_feature_raven_tales_2
 			}
 			religion = ROOT
 		}
@@ -9150,10 +10992,10 @@ character_event = {
 					character_event = { id = HF.23752 } #Excellent Response.
 				}
 				60 = { 
-					character_event = { id = HF.23753 }  #Good Response.
+					character_event = { id = HF.23753 } #Good Response.
 				}
 				20 = { 
-					character_event = { id = HF.23754 }  #Bad Response.
+					character_event = { id = HF.23754 } #Bad Response.
 				}
 				5 = { 
 					modifier = { 
@@ -9235,9 +11077,9 @@ character_event = {
 	}
 	option = { 
 		name = EVTOPTBHF23751
-		FROM = {  
+		FROM = { 
 			show_scope_change = no
-			add_character_modifier = {  
+			add_character_modifier = { 
 				name = child_protected
 				years = 16
 			}
@@ -9261,9 +11103,9 @@ character_event = {
 	}
 	option = { 
 		name = EVTOPTCHF23751
-		FROM = {  
+		FROM = { 
 			show_scope_change = no
-			add_character_modifier = {  
+			add_character_modifier = { 
 				name = child_heavily_guarded
 				years = 16
 			}
@@ -10301,7 +12143,7 @@ character_event = {
 	}
 	picture = { 
 		trigger = { 
-			event_target:scoped_improvement_target  = {
+			event_target:scoped_improvement_target = {
 				is_female = yes
 			}
 		} 
@@ -10309,7 +12151,7 @@ character_event = {
 	}
 	picture = { 
 		trigger = { 
-			event_target:scoped_improvement_target  = {
+			event_target:scoped_improvement_target = {
 				is_female = no
 			}
 		} 
@@ -10409,7 +12251,7 @@ character_event = {
 			}
 			remove_trait = groomed
 		}
-		else_if = { 
+		else = {
 			add_trait = uncouth
 		}
 		ai_chance = { 
@@ -10423,7 +12265,7 @@ character_event = {
 	option = { #Eat more.
 		name = EVTOPTCHF23762
 		trigger = { 
-			NOR  = {
+			NOR = {
 				trait = is_fat
 				trait = is_malnourished
 			}
@@ -10504,7 +12346,7 @@ character_event = {
 	option = { #Eat less.
 		name = EVTOPTDHF23762
 		trigger = { 
-			NOR  = {
+			NOR = {
 				trait = is_fat
 				trait = is_malnourished
 			}
@@ -10633,7 +12475,7 @@ character_event = {
 				remove_trait = elusive_shadow
 				add_trait = intricate_webweaver
 			}
-			
+
 			### Diplomacy ###
 			naive_appeaser = {
 				if = {
@@ -10726,7 +12568,7 @@ character_event = {
 				remove_trait = brilliant_strategist
 				add_trait = skilled_tactician
 			}
-			
+
 			### Learning ###
 			detached_priest = {
 				if = {
@@ -10994,7 +12836,7 @@ character_event = {
 	desc = EVTDESCAHF23769
 	picture = { 
 		trigger = { 
-			event_target:scoped_improvement_target  = {
+			event_target:scoped_improvement_target = {
 				is_female = no
 			}
 		} 
@@ -11002,7 +12844,7 @@ character_event = {
 	}
 	picture = { 
 		trigger = { 
-			event_target:scoped_improvement_target  = {
+			event_target:scoped_improvement_target = {
 				is_female = yes
 			}
 		} 
@@ -11172,35 +13014,43 @@ character_event = {
 	}
 }
 
-#on_adulthood (delayed): African rite of passage.
+#on_adulthood (delayed): African rite of passage. (Afro-Syncretics as well.)
 #First select investment for ceremony.
 character_event = {
 	id = HF.23773
 	desc = EVTDESCAHF23773
 	picture = { 
 		trigger = { 
-			OR = { 
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
-			} 
+			religion_group = afro_syncretic
 		} 
 		picture = GFX_evt_west_african_ruler
 	}
 	picture = { 
 		trigger = { 
 			has_dlc = "Mystics"
-			NOR = { 
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
+			NOT = { 
+				religion_group = afro_syncretic
 			} 
-			has_religion_feature = religion_animistic 
+			OR = {
+				has_religion_feature = religion_animistic
+				has_religion_feature = religion_feature_trailwalker
+				has_religion_feature = religion_feature_midewiwin
+				has_religion_feature = religion_feature_celtic
+				religion = peyotist
+			}
 		} 
 		picture = GFX_evt_magic_ritual
 	}
 	picture = { 
 		trigger = { 
 			NOT = { has_dlc = "Mystics" } 
-			has_religion_feature = religion_animistic 
+			OR = {
+				has_religion_feature = religion_animistic
+				has_religion_feature = religion_feature_trailwalker
+				has_religion_feature = religion_feature_midewiwin 
+				has_religion_feature = religion_feature_celtic
+				religion = peyotist
+			}
 		} 
 		picture = GFX_evt_tribal_shrine
 	}
@@ -11215,9 +13065,12 @@ character_event = {
 			dynasty = none
 		}
 		OR = {
-			religion = west_african_pagan
-			religion = west_african_pagan_reformed
-			has_religion_feature = religion_animistic 
+			religion_group = afro_syncretic
+			has_religion_feature = religion_animistic
+			has_religion_feature = religion_feature_trailwalker
+			has_religion_feature = religion_feature_midewiwin
+			has_religion_feature = religion_feature_celtic
+			religion = peyotist
 		}
 	}
 	
@@ -11225,7 +13078,7 @@ character_event = {
 		name = EVTOPTAHF23773
 		custom_tooltip = { text = tooltip_EVTOPTAHF23773 }
 		if = { 
-			limit = {  
+			limit = { 
 				ai = no
 			} 
 			scaled_wealth = { value = -1.0 min = -150 max = -350 } 
@@ -11272,7 +13125,7 @@ character_event = {
 		name = EVTOPTBHF23773
 		custom_tooltip = { text = tooltip_EVTOPTBHF23773 }
 		if = { 
-			limit = {  
+			limit = { 
 				ai = no
 			} 
 			scaled_wealth = { value = -1.0 min = -50 max = -100 } 
@@ -11295,7 +13148,7 @@ character_event = {
 		name = EVTOPTCHF23773
 		custom_tooltip = { text = tooltip_EVTOPTCHF23773 }
 		if = { 
-			limit = {  
+			limit = { 
 				ai = no
 			} 
 			scaled_wealth = { value = -1.0 min = -15 max = -50 } 
@@ -11366,28 +13219,36 @@ character_event = {
 
 	picture = { 
 		trigger = { 
-			OR = { 
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
-			} 
+			religion_group = afro_syncretic
 		} 
 		picture = GFX_evt_west_african_ruler
 	}
 	picture = { 
 		trigger = { 
 			has_dlc = "Mystics"
-			NOR = { 
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
+			NOT = { 
+				religion_group = afro_syncretic
 			} 
-			has_religion_feature = religion_animistic 
+			OR = {
+				has_religion_feature = religion_animistic
+				has_religion_feature = religion_feature_trailwalker
+				has_religion_feature = religion_feature_midewiwin
+				has_religion_feature = religion_feature_celtic
+				religion = peyotist
+			}
 		} 
 		picture = GFX_evt_magic_ritual
 	}
 	picture = { 
 		trigger = { 
 			NOT = { has_dlc = "Mystics" } 
-			has_religion_feature = religion_animistic 
+			OR = {
+				has_religion_feature = religion_animistic
+				has_religion_feature = religion_feature_trailwalker
+				has_religion_feature = religion_feature_midewiwin
+				has_religion_feature = religion_feature_celtic
+				religion = peyotist
+			}
 		} 
 		picture = GFX_evt_tribal_shrine
 	}
@@ -11429,9 +13290,8 @@ character_event = {
 			random_list = { 
 				10 = { 
 					trigger = { 
-						NOR = {
-							religion = west_african_pagan
-							religion = west_african_pagan_reformed
+						NOT = {
+							religion_group = afro_syncretic
 						}
 					}
 					add_trait = slavic_tattoo_6
@@ -11501,9 +13361,8 @@ character_event = {
 			random_list = { 
 				10 = { 
 					trigger = { 
-						NOR = {
-							religion = west_african_pagan
-							religion = west_african_pagan_reformed
+						NOT = {
+							religion_group = afro_syncretic
 						}
 					}
 					add_trait = norse_tattoo_6
@@ -11573,9 +13432,8 @@ character_event = {
 			random_list = { 
 				10 = { 
 					trigger = { 
-						NOR = {
-							religion = west_african_pagan
-							religion = west_african_pagan_reformed
+						NOT = {
+							religion_group = afro_syncretic
 						}
 					}
 					add_trait = norse_tattoo_3
@@ -11645,9 +13503,8 @@ character_event = {
 			random_list = { 
 				10 = { 
 					trigger = { 
-						NOR = {
-							religion = west_african_pagan
-							religion = west_african_pagan_reformed
+						NOT = {
+							religion_group = afro_syncretic
 						}
 					}
 					add_trait = norse_tattoo_4
@@ -11698,17 +13555,20 @@ character_event = {
 character_event = {
 	id = HF.23775
 	hide_window = yes
+	has_dlc = "Holy Fury"
 	only_capable = yes
 
 	trigger = { 
-		has_dlc = "Holy Fury"
 		NOT = {
 			dynasty = none
 		}
 		OR = {
-			religion = west_african_pagan
-			religion = west_african_pagan_reformed
-			has_religion_feature = religion_animistic 
+			religion_group = afro_syncretic
+			has_religion_feature = religion_animistic
+			has_religion_feature = religion_feature_trailwalker
+			has_religion_feature = religion_feature_midewiwin
+			has_religion_feature = religion_feature_celtic
+			religion = peyotist
 		}
 	}
 	
@@ -11732,9 +13592,12 @@ character_event = {
 		ai = yes
 		is_save_game = no
 		OR = { 
-			religion = west_african_pagan
-			religion = west_african_pagan_reformed
+			religion_group = afro_syncretic
 			has_religion_feature = religion_animistic
+			has_religion_feature = religion_feature_trailwalker
+			has_religion_feature = religion_feature_midewiwin
+			has_religion_feature = religion_feature_celtic
+			religion = peyotist
 		}
 	}
 	immediate = { 
@@ -11852,7 +13715,7 @@ character_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_holy_family 
-			has_religion_feature = religion_feature_zun
+			#has_religion_feature = religion_feature_zun
 		}
 		new_character = { is_close_relative = FROM }
 		OR = {
@@ -11982,7 +13845,7 @@ character_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_holy_family 
-			has_religion_feature = religion_feature_zun
+			#has_religion_feature = religion_feature_zun
 		}
 		has_religion_feature = religion_dogmatic
 		has_religion_feature = religion_temporal_head
@@ -12006,7 +13869,7 @@ character_event = {
 	trigger = {
 		OR = { 
 			has_religion_feature = religion_holy_family 
-			has_religion_feature = religion_feature_zun
+			#has_religion_feature = religion_feature_zun
 		}
 		has_religion_feature = religion_dogmatic
 		has_religion_feature = religion_temporal_head

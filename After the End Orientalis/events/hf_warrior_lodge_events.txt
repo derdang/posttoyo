@@ -22,12 +22,7 @@ character_event = {
 		NOT = { has_character_flag = awaiting_initiation_trial }
 		FROM = { 
 			leader = { 
-				AND = {
-					is_member_of_any_warrior_lodge_trigger = yes 
-					NOT = { 
-						is_member_of_a_martial_art_school = yes
-					} 
-				}
+				is_member_of_any_warrior_lodge_trigger = yes
 			} 
 		}
 	}
@@ -42,15 +37,9 @@ character_event = {
 			limit = { 
 				FROM = { 
 					leader = { 
-						prisoner = yes 
+						prisoner = yes
+						is_member_of_a_martial_art_school = no
 					} 
-				}
-				NOT = {
-					FROM = {
-						leader = {
-							is_member_of_a_martial_art_school = yes
-						}
-					}
 				}
 			}
 
@@ -95,7 +84,14 @@ character_event = {
 			#Everyone is somehow in prison so just use the leader anyway
 		}
 		else_if = { #Find a non-prisoner member
-			limit = { FROM = { leader = { prisoner = yes } } }
+			limit = { 
+				FROM = { 
+					leader = { 
+						prisoner = yes 
+						is_member_of_a_martial_art_school = yes
+					} 
+				}
+			}
 			FROM = {
 				random_society_member = {
 					limit = { 
@@ -140,15 +136,20 @@ character_event = {
 			limit = {
 				FROM = {
 					leader = {
-						NOT = {
-							is_member_of_a_martial_art_school = yes
-						}
+						is_member_of_a_martial_art_school = no
 					}
 				}
 			}
 			FROM = { leader = { character_event = { id = HF.10004 } } }
 		}
-		else = {
+		else_if = {
+			limit = {
+				FROM = {
+					leader = {
+						is_member_of_a_martial_art_school = yes
+					}
+				}
+			}
 			FROM = { leader = { character_event = { id = WR.401 } } }
 		}
 	}

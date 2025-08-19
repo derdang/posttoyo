@@ -3133,8 +3133,6 @@ the_assassins = {
 
 	show_society = {
 		OR = {
-			religion_group = oldworld
-			secret_religion = jibenyuanze
 			AND = {
 				ai = no
 				NOT = { trait = zealous }
@@ -5503,6 +5501,10 @@ warrior_lodge_viet = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -5690,6 +5692,10 @@ warrior_lodge_viet = {
 		}
 		modifier = {
 			trait = adventurer
+			factor = 1.1
+		}
+		modifier = {
+			trait = martial_disciple
 			factor = 1.1
 		}
 		modifier = {
@@ -6023,6 +6029,10 @@ warrior_lodge_malayan = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -6210,6 +6220,10 @@ warrior_lodge_malayan = {
 		}
 		modifier = {
 			trait = adventurer
+			factor = 1.1
+		}
+		modifier = {
+			trait = martial_disciple
 			factor = 1.1
 		}
 		modifier = {
@@ -6543,6 +6557,10 @@ warrior_lodge_indonesian = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -6730,6 +6748,10 @@ warrior_lodge_indonesian = {
 		}
 		modifier = {
 			trait = adventurer
+			factor = 1.1
+		}
+		modifier = {
+			trait = martial_disciple
 			factor = 1.1
 		}
 		modifier = {
@@ -7053,6 +7075,10 @@ warrior_lodge_filipino = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -7240,6 +7266,10 @@ warrior_lodge_filipino = {
 		}
 		modifier = {
 			trait = adventurer
+			factor = 1.1
+		}
+		modifier = {
+			trait = martial_disciple
 			factor = 1.1
 		}
 		modifier = {
@@ -7563,6 +7593,10 @@ warrior_lodge_thailao = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -7750,6 +7784,10 @@ warrior_lodge_thailao = {
 		}
 		modifier = {
 			trait = adventurer
+			factor = 1.1
+		}
+		modifier = {
+			trait = martial_disciple
 			factor = 1.1
 		}
 		modifier = {
@@ -8073,6 +8111,10 @@ warrior_lodge_burmese = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -8263,6 +8305,10 @@ warrior_lodge_burmese = {
 			factor = 1.1
 		}
 		modifier = {
+			trait = martial_disciple
+			factor = 1.1
+		}
+		modifier = {
 			trait = viking
 			factor = 1.1
 		}
@@ -8327,7 +8373,7 @@ warrior_lodge_burmese = {
 			trait = hunchback
 			factor = 0.8
 		}
-	}	
+	}		
 
 	startup_populate = {
 		trigger = {
@@ -8577,6 +8623,10 @@ warrior_lodge_khmer = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -8764,6 +8814,10 @@ warrior_lodge_khmer = {
 		}
 		modifier = {
 			trait = adventurer
+			factor = 1.1
+		}
+		modifier = {
+			trait = martial_disciple
 			factor = 1.1
 		}
 		modifier = {
@@ -9087,6 +9141,10 @@ warrior_lodge_japanese = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -9277,6 +9335,10 @@ warrior_lodge_japanese = {
 			factor = 1.1
 		}
 		modifier = {
+			trait = martial_disciple
+			factor = 1.1
+		}
+		modifier = {
 			trait = viking
 			factor = 1.1
 		}
@@ -9341,7 +9403,7 @@ warrior_lodge_japanese = {
 			trait = hunchback
 			factor = 0.8
 		}
-	}	
+	}		
 
 	startup_populate = {
 		trigger = {
@@ -9591,6 +9653,10 @@ warrior_lodge_korean = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -9778,6 +9844,10 @@ warrior_lodge_korean = {
 		}
 		modifier = {
 			trait = adventurer
+			factor = 1.1
+		}
+		modifier = {
+			trait = martial_disciple
 			factor = 1.1
 		}
 		modifier = {
@@ -10101,6 +10171,10 @@ warrior_lodge_northern_chinese = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -10288,6 +10362,10 @@ warrior_lodge_northern_chinese = {
 		}
 		modifier = {
 			trait = adventurer
+			factor = 1.1
+		}
+		modifier = {
+			trait = martial_disciple
 			factor = 1.1
 		}
 		modifier = {
@@ -10618,6 +10696,10 @@ warrior_lodge_southern_chinese = {
 			value = 1
 		}
 		has_trait = {
+			trait = martial_disciple
+			value = 1
+		}
+		has_trait = {
 			trait = viking
 			value = 1
 		}
@@ -10808,6 +10890,10 @@ warrior_lodge_southern_chinese = {
 			factor = 1.1
 		}
 		modifier = {
+			trait = martial_disciple
+			factor = 1.1
+		}
+		modifier = {
 			trait = viking
 			factor = 1.1
 		}
@@ -10872,7 +10958,7 @@ warrior_lodge_southern_chinese = {
 			trait = hunchback
 			factor = 0.8
 		}
-	}	
+	}		
 
 	startup_populate = {
 		trigger = {
