@@ -323,7 +323,7 @@ character_event = {
 	}
 }
 
-# Catholic - May decide where to go - Western Europe (Canterbury, Santiago, Cologne) or the ancient sites (Hong Kong, Manila)
+# Catholic - May decide where to go - Minor Sites (Canterbury, Santiago, Cologne) or the Major Sites (Hong Kong, Manila)
 character_event = {
 	id = SoA.5018
 	desc = EVTDESC_SoA_5018
@@ -351,11 +351,11 @@ character_event = {
 	is_triggered_only = yes
 
 	#option = {
-	#	name = EVTOPTA_SoA_5018   # Go to Western Europe
+	#	name = EVTOPTA_SoA_5018   # Go to visit the Lesser Places
 	#	hidden_tooltip = { character_event = { id = SoA.5019 } }
 	#}
 	option = {
-		name = EVTOPTB_SoA_5018   # Go to the old sites, Manila or Hong Kong
+		name = EVTOPTB_SoA_5018   # Go to the Grand Sites, Manila or Hong Kong
 		hidden_tooltip = { character_event = { id = SoA.5020 } }
 	}
 	option = {
