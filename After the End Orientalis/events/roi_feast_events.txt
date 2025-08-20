@@ -897,7 +897,7 @@ character_event = {
 	
 	trigger = {
 		capital_scope = {
-			region = world_india
+			region = custom_southeast_asia
 		}
 	}
 	
@@ -1173,7 +1173,7 @@ character_event = {
 		trigger = {
 			OR = {
 				religion = hindu
-				religion = buddhist
+				#religion = buddhist
 			}
 		}
 		if = {
@@ -1185,19 +1185,19 @@ character_event = {
 		}
 		piety = 30
 	}
-	option = {
-		name = EVTOPTB_RoI_1142
-		trigger = {
-			religion = jain
-		}
-		if = {
-			limit = { NOT = { trait = lustful }	}
-			random = {
-				chance = 30
-				add_trait = lustful
-			}
-		}
-	}
+	#option = {
+	#	name = EVTOPTB_RoI_1142
+	#	trigger = {
+	#		religion = jain
+	#	}
+	#	if = {
+	#		limit = { NOT = { trait = lustful }	}
+	#		random = {
+	#			chance = 30
+	#			add_trait = lustful
+	#		}
+	#	}
+	#}
 }
 
 # Fascinating male singer appears
@@ -1269,7 +1269,7 @@ character_event = {
 		trigger = {
 			OR = {
 				religion = hindu
-				religion = buddhist
+				#religion = buddhist
 			}
 		}
 		if = {
@@ -1292,30 +1292,30 @@ character_event = {
 		}
 		piety = 30
 	}
-	option = {
-		name = EVTOPTB_RoI_1142
-		trigger = {
-			religion = jain
-		}
-		if = {
-			limit = { NOT = { trait = lustful }	}
-			random = {
-				chance = 30
-				add_trait = lustful
-			}
-		}
-		if = {
-			limit = { 
-				is_pregnant = no
-				NOT = { age = 45 }
-			}
-			random = {
-				chance = 20
-				impregnate = 0
-				add_trait = pregnant
-			}
-		}
-	}
+	#option = {
+	#	name = EVTOPTB_RoI_1142
+	#	trigger = {
+	#		religion = jain
+	#	}
+	#	if = {
+	#		limit = { NOT = { trait = lustful }	}
+	#		random = {
+	#			chance = 30
+	#			add_trait = lustful
+	#		}
+	#	}
+	#	if = {
+	#		limit = { 
+	#			is_pregnant = no
+	#			NOT = { age = 45 }
+	#		}
+	#		random = {
+	#			chance = 20
+	#			impregnate = 0
+	#			add_trait = pregnant
+	#		}
+	#	}
+	#}
 }
 
 ###########################################
@@ -1502,7 +1502,7 @@ character_event = {
 	
 	trigger = {
 		capital_scope = {
-			region = world_india
+			region = custom_southeast_asia
 		}
 	}
 
@@ -1653,20 +1653,20 @@ character_event = {
 			}
 			character_event = { id = RoI.1171 } # Hindu
 		}
-		if = {
-			limit = {
-				has_character_modifier = holding_diwali_feast
-				religion = buddhist
-			}
-			character_event = { id = RoI.1173 } # Buddhist
-		}
-		if = {
-			limit = {
-				has_character_modifier = holding_diwali_feast
-				religion = jain
-			}
-			character_event = { id = RoI.1175 } # Jain
-		}
+		#if = {
+		#	limit = {
+		#		has_character_modifier = holding_diwali_feast
+		#		religion = buddhist
+		#	}
+		#	character_event = { id = RoI.1173 } # Buddhist
+		#}
+		#if = {
+		#	limit = {
+		#		has_character_modifier = holding_diwali_feast
+		#		religion = jain
+		#	}
+		#	character_event = { id = RoI.1175 } # Jain
+		#}
 		if = {
 			limit = {
 				has_character_modifier = holding_kali_puja_feast
@@ -1713,79 +1713,9 @@ character_event = {
 	}
 }
 
-# Buddhist celebration - host
-character_event = {
-	id = RoI.1173
-	desc = EVTDESC_RoI_1173
-	picture = GFX_evt_feast
-	border = GFX_event_normal_frame_religion
+# Buddhist celebration - Moved to Vesak
 
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RoI_1173 #
-		piety = 30
-		any_vassal = {
-			limit = {
-				ai = no
-				has_character_flag = attending_diwali_feast
-			}
-			hidden_tooltip = { character_event = { id = RoI.1174 } }
-		}
-	}
-}
-
-# Buddhist celebration - guests
-character_event = {
-	id = RoI.1174
-	desc = EVTDESC_RoI_1173
-	picture = GFX_evt_feast
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RoI_1173 # 
-		piety = 10
-	}
-}
-
-# Jain celebration - host
-character_event = {
-	id = RoI.1175
-	desc = EVTDESC_RoI_1175
-	picture = GFX_evt_feast
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RoI_1175 #
-		piety = 30
-		any_vassal = {
-			limit = {
-				ai = no
-				has_character_flag = attending_diwali_feast
-			}
-			hidden_tooltip = { character_event = { id = RoI.1176 } }
-		}
-	}
-}
-
-# Jain celebration - guests
-character_event = {
-	id = RoI.1176
-	desc = EVTDESC_RoI_1175
-	picture = GFX_evt_feast
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTA_RoI_1175 # 
-		piety = 10
-	}
-}
+# Jain celebration - No Jains
 
 # Kali Puja Celebration
 character_event = {
@@ -1871,7 +1801,7 @@ character_event = {
 		name = EVTOPTC_RoI_1178 # 3 - Massive ritual blood sacrifice of animals (elephants, massive)
 		trigger = {
 			capital_scope = {
-				region = world_india
+				region = custom_southeast_asia
 			}
 		}
 		any_vassal = {

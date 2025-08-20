@@ -165,6 +165,354 @@ decisions = {
 			modifier = { factor = 0 NOT = { wealth = 250 } }
 		}
 	}
+	catholic_pilgrimage = {        # For some Christians
+		only_playable = yes
+		ai_check_interval = 120
+		potential = {
+			has_dlc = "Sons of Abraham"
+			OR = {
+				NOT = { has_dlc = "Way of Life" }
+				has_focus = focus_theology
+				has_quest = quest_monastic_order_pilgrimage_christian
+			}
+			is_playable = yes
+			OR = {
+				religion = catholic
+				religion = orthodox
+				religion = old_believer
+			}
+			NOT = { trait = pilgrim }
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			in_command = no
+			conditional_tooltip = {
+				trigger = { has_character_modifier = coronation_request_cooldown }
+				custom_tooltip = {
+					text = TT_NOT_RECENTLY_ASKED_CORONATION
+					hidden_tooltip = {  
+						NOT = { has_character_modifier = coronation_request_cooldown } 
+					} 
+				} 
+			} 
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			scaled_wealth = 0.2
+			age = 16
+			custom_tooltip = {
+				text = health_travel_condition
+				hidden_tooltip = {
+					NOT = {	trait = pregnant }
+					NOT = {	trait = incapable }
+					NOT = {	trait = blinded }
+					NOT = {	trait = has_tuberculosis }
+					NOT = {	trait = has_typhoid_fever }
+					NOT = {	trait = has_typhus }
+					NOT = {	trait = has_bubonic_plague }
+					NOT = {	trait = has_measles }
+					NOT = {	trait = has_small_pox }
+					NOT = {	trait = has_aztec_disease }
+				}
+			}
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			scaled_wealth = -0.2
+			set_character_flag = activated_pilgrimage
+			set_character_flag = do_not_disturb
+			hidden_tooltip = {
+				character_event = { 
+					id = SoA.5000
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1             # Only a small minority of Christians ever go on a pilgrimage
+			}
+			modifier = {
+				factor = 3
+				trait = zealous
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+			}			
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}
+		}
+	}
+	
+	hold_diwali_feast = {
+		only_playable = yes
+		ai_check_interval = 4
+		potential = {
+			has_dlc = "Rajas of India"
+			is_playable = yes
+			is_adult = yes
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+				is_nomadic = yes
+				is_republic = yes
+			}
+			prisoner = no
+			religion_group = indian_group
+			NOT = { trait = incapable }
+			NOT = { has_character_modifier = patron_kali }
+			NOT = {
+				has_character_modifier = holding_diwali_feast
+			}
+			NOT = {
+				has_character_modifier = holding_kali_puja_feast
+			}
+			NOT = {
+				has_character_modifier = large_feast_timer
+			}
+			NOT = {
+				has_character_modifier = fabulous_feast
+			}
+			NOT = {
+				has_character_flag = guest_diwali_feast_started
+			}
+			NOT = {
+				liege = {
+					has_character_modifier = holding_diwali_feast
+					has_character_modifier = holding_kali_puja_feast
+				}
+			}
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			scaled_wealth = 0.2
+			month = 3
+			month <= 5 
+			prestige = 100
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			scaled_wealth = -0.2
+			add_character_modifier = {
+				name = holding_diwali_feast
+				duration = 365
+			}
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { 
+				character_event = { id = RoI.1000 }
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { diplomacy = 10 }
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}	
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}			
+		}
+	}
+	hold_diwali_feast_kali_puja = {
+		only_playable = yes
+		ai_check_interval = 4
+		potential = {
+			has_dlc = "Rajas of India"
+			is_playable = yes
+			is_adult = yes
+			OR = {
+				is_feudal = yes
+				is_tribal = yes
+				is_nomadic = yes
+				is_republic = yes
+			}
+			prisoner = no
+			religion_group = indian_group
+			NOT = { trait = incapable }
+			has_character_modifier = patron_kali
+			NOT = {
+				has_character_modifier = holding_diwali_feast
+			}
+			NOT = {
+				has_character_modifier = holding_kali_puja_feast
+			}
+			NOT = {
+				has_character_modifier = large_feast_timer
+			}
+			NOT = {
+				has_character_modifier = fabulous_feast
+			}
+			NOT = {
+				has_character_flag = guest_diwali_feast_started
+			}
+			NOT = {
+				liege = {
+					has_character_modifier = holding_diwali_feast
+					has_character_modifier = holding_kali_puja_feast
+				}
+			}			
+			num_of_vassals = 1
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			war = no
+			custom_tooltip = {
+				text = UNOCCUPIED_DEMESNE_TITLE
+				hidden_tooltip = {
+					any_demesne_title = {
+						NOT = { higher_tier_than = count }
+						is_occupied = no
+					}
+				}
+			}
+			has_character_modifier = patron_kali
+			prisoner = no
+			NOT = { is_inaccessible_trigger = yes }
+			scaled_wealth = 0.2
+			month = 9
+			prestige = 100
+			custom_tooltip = {
+				text = is_not_busy_trigger_tooltip
+				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
+			}
+		}
+		effect = {
+			scaled_wealth = -0.2
+			add_character_modifier = {
+				name = holding_kali_puja_feast
+				duration = 365
+			}
+			set_character_flag = recent_minor_decision
+			set_character_flag = do_not_disturb
+			hidden_tooltip = { character_event = { id = RoI.1000 } }
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						capital_scope = {
+							change_variable = { which = prosperity_value value = 8 }
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					scaled_wealth = 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = shy
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { diplomacy = 10 }
+			}	
+			modifier = {
+				factor = 0
+				has_character_flag = recent_minor_decision
+				NOT = {
+					had_character_flag = {
+						flag = recent_minor_decision
+						days = 730
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { age = 30 }
+			}		
+		}
+	}
 	reciting_sutras = {
 		only_playable = yes
 		ai_check_interval = 60

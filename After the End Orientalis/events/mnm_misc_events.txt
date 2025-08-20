@@ -675,6 +675,33 @@ character_event = {
 
 						join_society = monastic_order_buddhist
 					}
+					
+					100 = {
+						trigger = { can_join_society = weizza_society }
+
+						mult_modifier = {
+							factor = 3
+
+							OR = {
+								trait = zealous
+								trait = scholar
+								trait = theologian
+								trait = brahmin
+								learning >= 16
+								is_priest = yes
+							}
+						}
+						mult_modifier = {
+							factor = 2
+							weizza_society = { num_of_society_members < 15 }
+						}
+						mult_modifier = {
+							factor = 2
+							weizza_society = { num_of_society_members < 10 }
+						}
+
+						join_society = weizza_society
+					}
 
 					200 = {
 						trigger = { can_join_society = secret_religious_society_catholic }
@@ -702,7 +729,36 @@ character_event = {
 
 						join_society = hermetics
 					}
-
+					200 = {
+						trigger = {
+							can_join_society = banking_society
+						}
+						modifier = {
+							factor = 5
+							is_dumb_trigger = no
+							OR = { 
+								stewardship = 15
+								trait = greedy
+								trait = cynical
+								trait = arbitrary
+								trait = ambitious
+							}
+						}
+						mult_modifier = {
+							factor = 2
+							banking_society = { num_of_society_members < 20 }
+						}
+						mult_modifier = {
+							factor = 2
+							banking_society = { num_of_society_members < 15 }
+						}
+						mult_modifier = {
+							factor = 2
+							banking_society = { num_of_society_members < 10 }
+						}
+						
+						join_society = banking_society
+					}
 					500 = {
 						trigger = {
 							can_join_society = the_assassins
@@ -985,6 +1041,7 @@ character_event = {
 				society_member_of = hermetics
 				society_member_of = secret_religious_cult
 				society_member_of = the_assassins
+				society_member_of = banking_society
 				is_dharmic_monastic_member_trigger = yes
 				is_christian_monastic_member_trigger = yes
 			}
@@ -1000,6 +1057,11 @@ character_event = {
 		picture = GFX_evt_experiment
 		trigger = { society_member_of = hermetics }
 	}
+	desc = {
+    	trigger = { society_member_of = banking_society }
+    	text = EVTDESC_MNM_10045
+    	picture = GFX_evt_market
+    }
 	desc = {
 		text = EVTDESC_MNM_10045
 		picture = GFX_evt_secret_ceremony
