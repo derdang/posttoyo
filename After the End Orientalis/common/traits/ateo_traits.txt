@@ -15,7 +15,7 @@
 saint_faith = {
 	
 	potential = {
-		OR {religion = cao_dai secret_religion=cao_dai}
+		OR = { religion = cao_dai secret_religion=cao_dai }
 	}
 	
 	religious = yes
@@ -38,7 +38,7 @@ saint_faith = {
 saint_wisdom = {
 	
 	potential = {
-		OR {religion = cao_dai secret_religion=cao_dai}
+		OR = { religion = cao_dai secret_religion=cao_dai }
 	}
 	
 	religious = yes
@@ -61,7 +61,7 @@ saint_wisdom = {
 saint_power = {
 	
 	potential = {
-		OR {religion = cao_dai secret_religion=cao_dai}
+		OR = { religion = cao_dai secret_religion=cao_dai }
 	}
 	
 	religious = yes
@@ -84,7 +84,7 @@ saint_power = {
 saint_balance = {
 	
 	potential = {
-		OR {religion = cao_dai secret_religion=cao_dai}
+		OR = { religion = cao_dai secret_religion=cao_dai }
 	}
 	
 	religious = yes
@@ -108,7 +108,7 @@ saint_balance = {
 
 bani_shia = {
 	potential = {
-		OR {religion = bani secret_religion=bani}
+		OR = { religion = bani secret_religion=bani }
 	}
 	religious = yes
 
@@ -128,7 +128,7 @@ bani_shia = {
 }
 bani_sunni = {
 	potential = {
-		OR {religion = bani secret_religion=bani}
+		OR = { religion = bani secret_religion=bani }
 	}
 	religious = yes
 
@@ -148,7 +148,7 @@ bani_sunni = {
 }
 bani_balamon = { #Seek common virtue and values in all religion
 	potential = {
-		OR {religion = bani secret_religion=bani}
+		OR = { religion = bani secret_religion=bani }
 	}
 	religious = yes
 	
@@ -175,7 +175,7 @@ bani_balamon = { #Seek common virtue and values in all religion
 
 mahayana_chan = {
 	potential = {
-		OR {religion = mahayana secret_religion=mahayana}
+		OR = { religion = mahayana secret_religion=mahayana }
 	}
 	religious = yes
 	
@@ -194,7 +194,7 @@ mahayana_chan = {
 }
 mahayana_esoteric = {
 	potential = {
-		OR {religion = mahayana secret_religion=mahayana}
+		OR = { religion = mahayana secret_religion=mahayana }
 	}
 	religious = yes
 	
@@ -213,7 +213,7 @@ mahayana_esoteric = {
 }
 mahayana_humanist = {
 	potential = {
-		OR {religion = mahayana secret_religion=mahayana}
+		OR = { religion = mahayana secret_religion=mahayana }
 	}
 	religious = yes
 
@@ -232,7 +232,7 @@ mahayana_humanist = {
 }
 mahayana_lotus = {
 	potential = {
-		OR {religion = mahayana secret_religion=mahayana}
+		OR = { religion = mahayana secret_religion=mahayana }
 	}
 	religious = yes
 	
@@ -250,7 +250,7 @@ mahayana_lotus = {
 }
 mahayana_maitreyan = {
 	potential = {
-		OR {religion = mahayana secret_religion=mahayana}
+		OR = { religion = mahayana secret_religion=mahayana }
 	}
 	religious = yes
 	
@@ -269,7 +269,7 @@ mahayana_maitreyan = {
 }
 mahayana_pureland = {
 	potential = {
-		OR {religion = mahayana secret_religion=mahayana}
+		OR = { religion = mahayana secret_religion=mahayana }
 	}
 	religious = yes
 
@@ -298,7 +298,7 @@ koshitsu_shinto = {
 	
 	vassal_opinion = 5
 	
-	potential = { OR {religion = shinto secret_religion=shinto} }
+	potential = { OR = { religion = shinto secret_religion=shinto } }
 	religious_branch = shinto
 	random = no
 	religious = yes
@@ -315,7 +315,7 @@ minzoku_shinto = {
 	
 	monthly_character_prestige = 0.5
 
-	potential = { OR {religion = shinto secret_religion=shinto} }
+	potential = { OR = { religion = shinto secret_religion=shinto } }
 	religious_branch = shinto
 	random = no
 	religious = yes
@@ -332,7 +332,7 @@ bukka_shinto = {
 	
 	monthly_character_piety = 0.5
 
-	potential = { OR {religion = shinto secret_religion=shinto} }
+	potential = { OR = { religion = shinto secret_religion=shinto } }
 	religious_branch = shinto
 	random = no
 	religious = yes
@@ -349,7 +349,7 @@ minzu_sanmin = {
 	vassal_opinion = 5
 	general_opinion = 5
 	
-	potential = { OR {religion = sanmin secret_religion=sanmin} }
+	potential = { OR = { religion = sanmin secret_religion=sanmin } }
 	religious_branch = sanmin
 	random = no
 	religious = yes
@@ -366,7 +366,7 @@ minquan_sanmin = {
 	health = 0.5
 	monthly_character_prestige = 0.5
 
-	potential = { OR {religion = sanmin secret_religion=sanmin} }
+	potential = { OR = { religion = sanmin secret_religion=sanmin } }
 	religious_branch = sanmin
 	random = no
 	religious = yes
@@ -383,7 +383,7 @@ minsheng_sanmin = {
 	vassal_opinion = 10
 	monthly_character_piety = 0.5
 
-	potential = { OR {religion = sanmin secret_religion=sanmin} }
+	potential = { OR = { religion = sanmin secret_religion=sanmin } }
 	religious_branch = sanmin
 	random = no
 	religious = yes
@@ -473,7 +473,7 @@ quanzhen_longmen = {
 	health = 0.5
 	monthly_character_prestige = 0.5
 	
-	potential = { OR {religion = quanzhen secret_religion=quanzhen} }
+	potential = { OR = { religion = quanzhen secret_religion=quanzhen } }
 	religious_branch = quanzhen
 	random = no
 	religious = yes
@@ -491,7 +491,7 @@ quanzhen_nanwu = {
 	learning = 2
 	monthly_character_piety = 0.5
 
-	potential = { OR {religion = quanzhen secret_religion=quanzhen} }
+	potential = { OR = { religion = quanzhen secret_religion=quanzhen } }
 	religious_branch = quanzhen
 	random = no
 	religious = yes
@@ -510,7 +510,7 @@ quanzhen_qingjing = {
 	health = 0.5
 	monthly_character_piety = 0.5
 
-	potential = { OR {religion = quanzhen secret_religion=quanzhen} }
+	potential = { OR = { religion = quanzhen secret_religion=quanzhen } }
 	religious_branch = quanzhen
 	random = no
 	religious = yes
@@ -526,7 +526,7 @@ quanzhen_wuyue = {
 
 	learning = 4
 
-	potential = { OR {religion = quanzhen secret_religion=quanzhen} }
+	potential = { OR = { religion = quanzhen secret_religion=quanzhen } }
 	religious_branch = quanzhen
 	random = no
 	religious = yes
@@ -544,7 +544,7 @@ quanzhen_yuxian = {
 	vassal_opinion = 5
 	general_opinion = 5
 
-	potential = { OR {religion = quanzhen secret_religion=quanzhen} }
+	potential = { OR = { religion = quanzhen secret_religion=quanzhen } }
 	religious_branch = quanzhen
 	random = no
 	religious = yes
@@ -643,13 +643,13 @@ sympathy_eastern = {
 
 khufiy = {
 	religious = yes
-	potential = { OR {religion = hui secret_religion=hui} }
+	potential = { OR = { religion = hui secret_religion=hui } }
 	monthly_character_piety = 0.5
 	same_opinion = 10
 }
 jahriy = {
 	religious = yes
-	potential = { OR {religion = hui secret_religion=hui} }
+	potential = { OR = { religion = hui secret_religion=hui } }
 	monthly_character_piety = 0.5
 	same_opinion = 10
 }
@@ -660,9 +660,7 @@ gedimu = {
 		xidaotang
 		yihewani
 	}
-	potential = {
-		OR {religion = hui secret_religion = hui}
-	}
+	potential = { OR = { religion = hui secret_religion=hui } }
 	opposite_opinion = -5
 	same_opinion = 10
 	
@@ -679,9 +677,7 @@ yihewani = {
 		gedimu
 		xidaotang
 	}
-	potential = {
-		OR {religion = hui secret_religion = hui}
-	}
+	potential = { OR = { religion = hui secret_religion=hui } }
 	opposite_opinion = -5
 	same_opinion = 10
 	
@@ -698,9 +694,7 @@ xidaotang = {
 		gedimu
 		yihewani
 	}
-	potential = {
-		OR {religion = hui secret_religion = hui}
-	}
+	potential = { OR = { religion = hui secret_religion=hui } }
 	opposite_opinion = -5
 	same_opinion = 10
 	
