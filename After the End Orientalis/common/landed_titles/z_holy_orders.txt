@@ -6,6 +6,318 @@ d_knights_of_lavang = {
 
 	culture = annamese
 	religion = catholic
+	
+	allow = {
+		OR = {
+			culture_group = viet
+			culture_group = chamic
+		}
+	}
+		
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_knights_of_bim = {
+	color={ 81 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 202 #Manila
+
+	culture = tagalog
+	religion = catholic
+		
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	allow = {
+		OR = {
+			culture_group = philippine
+		}
+	}
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_army_of_the_immaculate_heart = {
+	color={ 82 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 202 #Manila
+
+	culture = tagalog
+	religion = catholic
+		
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	allow = {
+		OR = {
+			culture_group = philippine
+		}
+	}
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_knightly_brothers_marist = {
+	color={ 83 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 570 # Dili
+
+	culture = east_timor
+	religion = catholic
+		
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+	
+	allow = {
+		OR = {
+			culture_group = timor
+			culture_group = nusantaran
+			culture_group = barrier_batak
+		}
+	}
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_soldiers_of_solidarity = {
+	color={ 84 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 389 # Singapore
+
+	culture = singaporean
+	religion = concordanist
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	
+	allow = {
+		OR = {
+			culture_group = malayan
+		}
+	}
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_salvation_army = {
+	color={ 85 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 1013 # Hong Kong
+
+	culture = hong_konger
+	religion = concordanist
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+	
+	allow = {
+		OR = {
+			culture_group = han
+		}
+	}
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_army_of_the_word = {
+	color={ 86 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 672 #Port Moresby
+
+	culture = strine
+	religion = concordanist
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_knights_of_amity = {
+	color={ 87 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 1923 #Beijing
+
+	culture = pekingese
+	religion = fuyin
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_boys_brigade = {
+	color={ 88 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 1013 #Hong Kong
+
+	culture = hong_konger
+	religion = fuyin
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_knights_of_our_mother_of_sheshan = {
+	color={ 89 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 1013 #Hong Kong
+
+	culture = shanghainese
+	religion = tianzhu
+		
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_millenial_army_of_the_almighty_god = {
+	color={ 90 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 848 # Changchun
+
+	culture = dongbei
+	religion = eastern_lightning
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_guardians_of_the_city_of_sun = {
+	color={ 91 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 2257 #Krasnoyarsk
+
+	culture = sibiri
+	religion = vissarionite
+		
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_order_of_st_vladimir = {
+	color={ 92 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 2123 # Blagoveshchensky
+
+	culture = amursky
+	religion = orthodox
+		
+	title = "GRANDMASTER"
+	foa = "GRANDMASTER_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_knights_of_lavang_composition
+}
+d_blessed_wandering_knights_of_the_holy_fools = {
+	color={ 93 100 90 }
+	color2={ 255 255 255 }
+		
+	capital = 643 # Vladivostok
+
+	culture = primorskiy
+	religion = orthodox
 		
 	title = "GRANDMASTER"
 	foa = "GRANDMASTER_FOA"

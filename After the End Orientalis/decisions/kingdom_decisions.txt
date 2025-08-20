@@ -59,6 +59,9 @@ decisions = {
 			d_ninh_thuan = {
 				de_jure_liege = k_champa
 			}
+			k_champa = {
+				de_jure_liege = e_viet_nam
+			}
 			set_global_flag = champa_formed
 		}
 		revoke_allowed = {
@@ -115,6 +118,9 @@ decisions = {
 			}
 			d_gia_lai = {
 				de_jure_liege = k_sedang
+			}
+			k_sedang = {
+				de_jure_liege = e_viet_nam
 			}
 			set_global_flag = sedang_formed
 		}
@@ -173,6 +179,9 @@ decisions = {
 			d_yen_bai = {
 				de_jure_liege = k_hmong
 			}
+			k_hmong = {
+				de_jure_liege = e_viet_nam
+			}
 			set_global_flag = hmong_formed
 		}
 		revoke_allowed = {
@@ -229,6 +238,9 @@ decisions = {
 			}
 			d_son_la = {
 				de_jure_liege = k_sip_song_chau_tai
+			}
+			k_sip_song_chau_tai = {
+				de_jure_liege = e_viet_nam
 			}
 			set_global_flag = tai_confederacy_formed
 		}
@@ -290,6 +302,9 @@ decisions = {
 			}
 			d_ha_long = {
 				de_jure_liege = k_tay_nung
+			}
+			k_tay_nung = {
+				de_jure_liege = e_viet_nam
 			}
 			set_global_flag = tay_nung_state_formed
 		}

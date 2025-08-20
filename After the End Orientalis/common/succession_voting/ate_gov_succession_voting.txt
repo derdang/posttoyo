@@ -7956,20 +7956,12 @@ ghazi_elective = {
 					FROM = { religion_group = christian } 
 				} 
 				AND = { 
-					trait = sympathy_afro_syncretic
-					FROM = { religion_group = afro_syncretic } 
+					trait = sympathy_buddhist
+					FROM = { religion_group = buddhist_group } 
 				} 
 				AND = { 
-					trait = sympathy_american_native
-					FROM = { religion_group = american_native } 
-				}
-				AND = { 
-					trait = sympathy_amero_syncretic
-					FROM = { religion_group = amero_syncretic } 
-				}
-				AND = { 
-					trait = sympathy_pacific
-					FROM = { religion_group = pacific } 
+					trait = sympathy_eastern
+					FROM = { religion_group = eastern } 
 				} 
 				AND = { 
 					trait = sympathy_judaism
@@ -7982,10 +7974,6 @@ ghazi_elective = {
 				AND = { 
 					trait = sympathy_nautical
 					FROM = { religion_group = nautical } 
-				} 
-				AND = { 
-					trait = sympathy_cult_of_saints
-					FROM = { religion_group = cult_of_saints } 
 				} 
 				AND = { 
 					trait = sympathy_cult_of_saints
@@ -9731,7 +9719,7 @@ ghazi_elective = {
 				OR = { 
 					trait = sympathy_christendom
 					trait = sympathy_judaism
-					trait = sympathy_afro_syncretic
+					trait = sympathy_buddhist
 					trait = sympathy_american_native
 					trait = sympathy_amero_syncretic
 					trait = sympathy_pacific
