@@ -8,6 +8,11 @@ is_vajrayana = {
 		religion = azhali
 	}
 }
+is_member_of_a_religious_warrior_lodge = {
+	OR = {
+		society_member_of = warrior_lodge_americanist
+	}
+}
 is_member_of_a_martial_art_school = {
 	OR = {
 		society_member_of = warrior_lodge_malayan

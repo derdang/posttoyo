@@ -3571,10 +3571,10 @@ join_from_devil_worshiper_society_effect = {
 		}
 		if = {
 			limit = {
-				society_member_of = the_bacchants
+				society_member_of = the_illuminati
 			}
 			ROOT = {
-				join_society = the_bacchants
+				join_society = the_illuminati
 			}
 		}
 		if = {
@@ -3740,6 +3740,74 @@ give_this_warrior_lodge_religion_effect = { #Mostly for spawned characters.
 		religion = americanist
 	}
 }
+give_this_warrior_lodge_culture_effect = { #Mostly for spawned culture characters.
+	if = {
+		limit = { 
+			society_member_of = warrior_lodge_malayan
+		}
+		culture = johorean
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_indonesian
+		}
+		culture = javanese
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_filipino
+		}
+		culture = tagalog
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_viet
+		}
+		culture = tonkinese
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_thailao
+		}
+		culture = thai_central
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_burmese
+		}
+		culture = myr
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_khmer
+		}
+		culture = khmer
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_southern_chinese
+		}
+		culture = cantonese
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_northern_chinese
+		}
+		culture = pekingese
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_korean
+		}
+		culture = hangugin
+	}
+	else_if = {
+		limit = { 
+			society_member_of = warrior_lodge_japanese
+		}
+		culture = togoku
+	}
+}
 
 remove_education_effect = {
 	remove_trait = naive_appeaser
@@ -3863,12 +3931,12 @@ join_prev_monastic_order_society = {
 		join_society = monastic_order_buddhist
 	}
 	if = {
-		limit = { PREV = { society_member_of = monastic_order_jain } }
-		join_society = monastic_order_jain
+		limit = { PREV = { society_member_of = weizza_society } }
+		join_society = weizza_society
 	}
 	if = {
-		limit = { PREV = { society_member_of = monastic_order_stoics } }
-		join_society = monastic_order_stoics
+		limit = { PREV = { society_member_of = basaih_society } }
+		join_society = basaih_society
 	}
 }
 

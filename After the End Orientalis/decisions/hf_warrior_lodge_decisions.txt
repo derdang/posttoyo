@@ -1710,8 +1710,16 @@ society_decisions = {
 						random = {
 							# Chance of the commander being spawned from another religion
 							chance = 50
-
-							give_this_warrior_lodge_religion_effect = yes
+							OR = {
+								AND = {
+									is_member_of_a_religious_warrior_lodge = yes
+									give_this_warrior_lodge_religion_effect = yes
+								}
+								AND = {
+									is_member_of_a_martial_art_school = yes
+									give_this_warrior_lodge_culture_effect = yes
+								}
+							}
 
 							# In which case don't allow liege to immediately demand conversion.
 							set_character_flag = ai_flag_refuse_conversion
