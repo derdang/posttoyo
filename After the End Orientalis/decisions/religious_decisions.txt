@@ -576,6 +576,101 @@ decisions = {
 			piety = 100
 		}
 	}
+	# Catholic > Aiguo Catholic becomes parent
+	reproach_aiguo = {
+		only_independent = yes
+		is_high_prio = yes
+		ai_check_interval = 24
+		
+		potential = {
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			has_dlc = "Legacy of Rome"
+			is_playable = yes
+			is_adult = yes
+			prisoner = no
+			independent = yes
+			NOT = { is_incapable = yes }
+			OR = {
+				religion = catholic
+				religion = restorationist
+				religion = rizalista
+			}
+			OR = {
+				tier = KING
+				tier = EMPEROR
+			}
+			is_heretic = no
+			NOT = { has_global_flag = catholics_mended_schism }
+			d_aiguo = {
+				holder_scope = {
+					is_heretic = no
+				}
+			}
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			tier = EMPEROR
+			piety = 2000
+			religion_authority = 0.9
+			custom_tooltip = { # Custom tooltip to shorten the in-game tooltip
+				text = china_is_no_aiguo
+				OR = {
+					e_china = { has_holder = no }
+					e_china = {
+						holder_scope = {
+							NOR = {
+								religion = aiguo
+								religion = tianzhu
+								is_bureaucratic_religion = yes
+							}
+						}
+					}
+				}
+			}
+			completely_controls = c_cap_diamant
+			b_shisanling = {
+				custom_tooltip = { # Custom tooltip to shorten the in-game tooltip
+					text = the_reproachment_holder_religion
+					hidden_tooltip = {
+						holder_scope = {
+							OR = {
+								religion = catholic
+								religion = restorationist
+								religion = rizalista
+							}
+							is_heretic = no
+						}
+					}
+				}
+			}
+			b_caloocan = {
+				custom_tooltip = {
+					text = the_reproachment_holder_religion
+					hidden_tooltip = {
+						holder_scope = {
+							OR = {
+								religion = catholic
+								religion = restorationist
+								religion = rizalista
+							}
+							is_heretic = no
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			narrative_event = { id = christ.1 tooltip = TXT_reproach_aiguo }
+			set_global_flag = catholics_mended_schism
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	bani_paths = {
 		only_playable = yes
 		ai_check_interval = 60

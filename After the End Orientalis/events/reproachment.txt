@@ -1,0 +1,72 @@
+# Manilan Christian Mending and Crusades
+namespace = christ
+
+# The Schism Mended (Catholics v Aiguo)
+narrative_event = {
+	id = christ.1
+	title = EVTNAME_christ_1
+	desc = EVTDESC_christ_1
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_christ_1
+
+		if = {
+			limit = { religion = catholic }
+			set_parent_religion = { religion = aiguo parent = catholic }
+		}
+		if = {
+			limit = { religion = restorationist }
+			set_parent_religion = { religion = aiguo parent = restorationist }
+		}
+		if = {
+			limit = { religion = rizalista }
+			set_parent_religion = { religion = aiguo parent = rizalista }
+		}
+
+		give_nickname = nick_the_saint
+		hidden_tooltip = {
+			any_playable_ruler = {
+				limit = {
+					religion = aiguo
+					controls_religion = no
+				}
+				narrative_event = { id = christ.2 }
+			}
+		}
+	}
+}
+
+# Convert or Not?
+narrative_event = {
+	id = christ.2
+	title = EVTNAME_christ_1
+	desc = EVTDESC_christ_1
+	
+	picture = GFX_evt_icon
+	
+	is_triggered_only = yes
+	
+	option = { # Yes
+		name = EVTOPTALoR.211
+		ai_chance = { factor = 75 }
+		religion = FROM
+		any_courtier = {
+			limit = {
+				religion = aiguo
+				liege = { character = ROOT }
+			}
+			religion = FROM
+		}
+		capital_scope = {
+			religion = FROM
+		}
+	}
+	option = { # No
+		name = EVTOPTBLoR.211
+		ai_chance = { factor = 25 }
+	}
+}
