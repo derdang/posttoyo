@@ -757,3 +757,30 @@ martial_disciple = {
 	female_insult_adj = INSULT_HIGH_HANDED
 	child_insult_adj = INSULT_SCARY
 }
+
+####Indian Pilgrimage####
+yatri = {
+	potential = {
+		religion_group = indian_group
+	}
+	
+	same_religion_opinion = 5
+	monthly_character_piety = 0.1
+	
+	male_compliment = COMPL_PILGRIM
+	female_compliment = COMPL_PILGRIM
+}
+on_yatra = {
+	potential = {
+		religion_group = indian_group
+		NOT = { trait = pilgrim }
+	}
+	
+	cached = yes    # Keep a cache of all trait holders, to use with the corresponding event trigger 
+	
+	monthly_character_piety = 0.2
+	same_religion_opinion = 5
+	
+	pilgrimage = yes    # Will need a regent, but can still be guardian to children
+	customizer = no
+}
