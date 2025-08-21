@@ -3673,66 +3673,62 @@ join_prev_devil_worshiper_society_effect = {
 		join_society = the_satanists
 	}
 	if = {
-		limit = { PREV = { society_member_of = the_cold_ones } }
-		join_society = the_cold_ones
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_plaguebringers } }
-		join_society = the_plaguebringers
+		limit = { PREV = { society_member_of = the_illuminati } }
+		join_society = the_illuminati
 	}
 	if = {
 		limit = { PREV = { society_member_of = the_cult_of_kali } }
 		join_society = the_cult_of_kali
 	}
-	if = {
-		limit = { PREV = { society_member_of = the_trollcrafters } }
-		join_society = the_trollcrafters
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_bacchants } }
-		join_society = the_bacchants
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_vodouns } }
-		join_society = the_vodouns
-	}
 }
 join_prev_warrior_lodge_society_effect = {
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_norse } }
-		join_society = warrior_lodge_norse
+		limit = { PREV = { society_member_of = warrior_lodge_americanist } }
+		join_society = warrior_lodge_americanist
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_tengri } }
-		join_society = warrior_lodge_tengri
+		limit = { PREV = { society_member_of = warrior_lodge_viet } }
+		join_society = warrior_lodge_viet
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_baltic } }
-		join_society = warrior_lodge_baltic
+		limit = { PREV = { society_member_of = warrior_lodge_malayan } }
+		join_society = warrior_lodge_malayan
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_finnish } }
-		join_society = warrior_lodge_finnish
+		limit = { PREV = { society_member_of = warrior_lodge_indonesian } }
+		join_society = warrior_lodge_indonesian
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_slavic } }
-		join_society = warrior_lodge_slavic
+		limit = { PREV = { society_member_of = warrior_lodge_filipino } }
+		join_society = warrior_lodge_filipino
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_west_african } }
-		join_society = warrior_lodge_west_african
+		limit = { PREV = { society_member_of = warrior_lodge_thailao } }
+		join_society = warrior_lodge_thailao
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_zun } }
-		join_society = warrior_lodge_zun
+		limit = { PREV = { society_member_of = warrior_lodge_burmese } }
+		join_society = warrior_lodge_burmese
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_bon } }
-		join_society = warrior_lodge_bon
+		limit = { PREV = { society_member_of = warrior_lodge_khmer } }
+		join_society = warrior_lodge_khmer
 	}
 	if = {
-		limit = { PREV = { society_member_of = warrior_lodge_hellenic } }
-		join_society = warrior_lodge_hellenic
+		limit = { PREV = { society_member_of = warrior_lodge_japanese } }
+		join_society = warrior_lodge_japanese
+	}
+	if = {
+		limit = { PREV = { society_member_of = warrior_lodge_korean } }
+		join_society = warrior_lodge_korean
+	}
+	if = {
+		limit = { PREV = { society_member_of = warrior_lodge_northern_chinese } }
+		join_society = warrior_lodge_northern_chinese
+	}
+	if = {
+		limit = { PREV = { society_member_of = warrior_lodge_southern_chinese } }
+		join_society = warrior_lodge_southern_chinese
 	}
 }
 give_this_warrior_lodge_religion_effect = { #Mostly for spawned characters.
@@ -3742,125 +3738,6 @@ give_this_warrior_lodge_religion_effect = { #Mostly for spawned characters.
 			NOT = { has_global_flag = norse_reformation }
 		}
 		religion = norse_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_norse 
-			has_global_flag = norse_reformation
-		}
-		religion = norse_pagan_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_tengri 
-			NOT = { has_global_flag = tengri_reformation }
-		}
-		religion = tengri_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_tengri 
-			has_global_flag = tengri_reformation
-		}
-		religion = tengri_pagan_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_baltic 
-			NOT = { has_global_flag = baltic_reformation }
-		}
-		religion = baltic_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_baltic 
-			has_global_flag = baltic_reformation
-		}
-		religion = baltic_pagan_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_finnish 
-			NOT = { has_global_flag = finnish_reformation }
-		}
-		religion = finnish_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_finnish 
-			has_global_flag = finnish_reformation
-		}
-		religion = finnish_pagan_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_slavic 
-			NOT = { has_global_flag = slavic_reformation }
-		}
-		religion = slavic_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_slavic 
-			has_global_flag = slavic_reformation
-		}
-		religion = slavic_pagan_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_west_african 
-			NOT = { has_global_flag = west_african_reformation }
-		}
-		religion = west_african_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_west_african 
-			has_global_flag = west_african_reformation
-		}
-		religion = west_african_pagan_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_zun 
-			NOT = { has_global_flag = zun_reformation }
-		}
-		religion = zun_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_zun 
-			has_global_flag = zun_reformation
-		}
-		religion = zun_pagan_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_bon 
-			NOT = { has_global_flag = bon_reformation }
-		}
-		religion = bon
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_bon 
-			has_global_flag = bon_reformation
-		}
-		religion = bon_reformed
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_hellenic 
-			NOT = { has_global_flag = hellenic_reformation }
-		}
-		religion = hellenic_pagan
-	}
-	if = {
-		limit = { 
-			society_member_of = warrior_lodge_hellenic 
-			has_global_flag = hellenic_reformation
-		}
-		religion = hellenic_pagan_reformed
 	}
 }
 

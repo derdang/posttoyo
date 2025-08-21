@@ -3749,13 +3749,8 @@ the_satanists = {
 			controls_religion = no
 			OR = {
 				true_religion_group_christian_trigger = yes
-				true_religion_group_cult_of_saints_trigger = yes
-				true_religion_group_latter_day_saints_trigger = yes
 				true_religion_group_jewish_group_trigger = yes
 				true_religion_group_muslim_trigger = yes
-				true_religion_revelationist_trigger = yes
-				true_religion_revelationist_reformed_trigger = yes
-				true_religion_rastafarian_trigger = yes
 			}
 			OR = {
 				has_impious_trait_trigger = yes
@@ -5309,7 +5304,7 @@ warrior_lodge_viet = {
 		capital_scope = { region = custom_old_vietnam }
 		OR = {
 			culture_group = viet
-			culture_group = cham
+			culture_group = chamic
 		}
 	}
 
@@ -5318,7 +5313,7 @@ warrior_lodge_viet = {
 			capital_scope = { region = custom_old_vietnam }
 			OR = {
 				culture_group = viet
-				culture_group = cham
+				culture_group = chamic
 			}
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_viet
@@ -5329,7 +5324,7 @@ warrior_lodge_viet = {
 		capital_scope = { region = custom_old_vietnam }
 		OR = {
 			culture_group = viet
-			culture_group = cham
+			culture_group = chamic
 		}
 	}
 
@@ -5773,7 +5768,7 @@ warrior_lodge_viet = {
 			is_in_society = no
 			OR = {
 				culture_group = viet
-				culture_group = cham
+				culture_group = chamic
 			}
 			OR = {
 				martial = 12

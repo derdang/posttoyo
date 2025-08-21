@@ -199,3 +199,12 @@ pirate_island_trigger = {
 		}
 	}
 }
+has_illuminati_prerequisites = {
+	has_common_devilworship_prerequisites = yes
+	OR = {
+		religion = americanist
+		religion = americanist_reformed
+		secret_religion = americanist
+		secret_religion = americanist_reformed
+	}
+}

@@ -2276,6 +2276,14 @@ true_religion_group_pagan_group_trigger = {
 	true_religion_group = pagan_group
 }
 
+true_religion_americanist_trigger = {
+	true_religion = americanist
+}
+
+true_religion_americanist_reformed_trigger = {
+	true_religion = americanist_reformed
+}
+
 relationship_with_root_trigger = {
 	OR = {
 		is_lover = ROOT
@@ -2752,8 +2760,6 @@ has_satanists_prerequisites = {
 		religion_group = muslim
 		religion_group = zoroastrian_group
 		religion_group = jewish_group
-		religion = zun_pagan
-		religion = zun_pagan_reformed
 	}
 }
 
@@ -2764,9 +2770,7 @@ has_trollcrafters_prerequisites = {
 
 has_cult_of_kali_prerequisites = {
 	has_common_devilworship_prerequisites = yes
-	OR = {
-		religion = hindu
-	}
+	religion = hindu
 }
 
 has_cold_ones_prerequisites = {

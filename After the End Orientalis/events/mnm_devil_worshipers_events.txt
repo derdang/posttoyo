@@ -100,29 +100,14 @@ character_event = {
 
 	fail_trigger_effect = {
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
 		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_cold_ones
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_vodouns
-		clr_character_flag = being_recruited_by_the_bacchants
+		clr_character_flag = being_recruited_by_the_illuminati
 	}
 
 	#Approving of heretics
 	option = {
 		name = {
 			text = EVTOPTA_7001 #If God didn't want us to ask questions, why did he make us curious?
-			trigger = {
-				NOT = {
-					has_character_flag = being_recruited_by_the_bacchants
-				}
-			}
-		}
-		name = {
-			text = EVTOPTA_7001_B
-			trigger = {
-				has_character_flag = being_recruited_by_the_bacchants
-			}
 		}
 		
 		trigger = {
@@ -195,16 +180,6 @@ character_event = {
 				trait = cynical
 			}
 			modifier = {
-				factor = 1.75
-				has_character_flag = being_recruited_by_the_bacchants
-				culture = roman 	#Decadence
-			}
-			modifier = {
-				factor = 1.5
-				has_character_flag = being_recruited_by_the_bacchants
-				is_close_relative = yes 	#Decadence
-			}
-			modifier = {
 				factor = 0.2
 				OR = {
 					AND = {
@@ -215,35 +190,13 @@ character_event = {
 						true_religion_group_zoroastrian_group_trigger = no
 					}
 					AND = {
-						has_character_flag = being_recruited_by_the_trollcrafters
-						true_religion_norse_pagan_reformed_trigger = no
-						true_religion_norse_pagan_trigger = no
-					}
-					AND = {
 						has_character_flag = being_recruited_by_the_cult_of_kali
 						true_religion_hindu_trigger = no
 					}
 					AND = {
-						has_character_flag = being_recruited_by_the_cold_ones
-						true_religion_baltic_pagan_trigger = no
-			    		true_religion_baltic_pagan_reformed_trigger = no
-			    		true_religion_slavic_pagan_trigger = no
-			    		true_religion_slavic_pagan_reformed_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_the_plaguebringers
-						true_religion_tengri_pagan_trigger = no
-						true_religion_tengri_pagan_reformed_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_the_vodouns
-						true_religion_west_african_pagan_trigger = no
-						true_religion_west_african_pagan_reformed_trigger = no
-					}
-					AND = {
-						has_character_flag = being_recruited_by_the_bacchants
-						true_religion_hellenic_pagan_trigger = no
-						true_religion_hellenic_pagan_reformed_trigger = no
+						has_character_flag = being_recruited_by_the_illuminati
+						true_religion_americanist_trigger = no
+			    		true_religion_americanist_reformed_trigger = no
 					}
 				}
 			}
@@ -269,10 +222,7 @@ character_event = {
 		clr_character_flag = being_recruited_by_the_satanists
 		clr_character_flag = being_recruited_by_the_trollcrafters
 		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_cold_ones
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_vodouns
-		clr_character_flag = being_recruited_by_the_bacchants
+		clr_character_flag = being_recruited_by_the_illuminati
 
 		hidden_effect = { 
 			event_target:satanists_recruiter = { 
@@ -464,12 +414,8 @@ character_event = { # event notifying recruitee that "Something must've gone wro
 		}
 		custom_tooltip = { text = EVTTOOLTIP_MNM_6995 }
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
 		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_cold_ones
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_vodouns
-		clr_character_flag = being_recruited_by_the_bacchants
+		clr_character_flag = being_recruited_by_the_illuminati
 		clr_character_flag = dw_recruitment_end_unable
 	}
 }
@@ -664,12 +610,8 @@ character_event = {
 		set_character_flag = unwilling_to_join
 		
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
 		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_cold_ones
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_bacchants
-		clr_character_flag = being_recruited_by_the_vodouns
+		clr_character_flag = being_recruited_by_the_illuminati
 
 
 		
@@ -846,12 +788,8 @@ character_event = {
 		name = EVTOPTB_7005
 		custom_tooltip = { text = EVTOPTB_7005_TT }
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
 		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_cold_ones
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_vodouns
-		clr_character_flag = being_recruited_by_the_bacchants
+		clr_character_flag = being_recruited_by_the_illuminati
 
 		hidden_effect = { character_event = { id = MNM.6996 days = 1 } } # turn down the satanists
 
@@ -1278,28 +1216,6 @@ letter_event = {
 			if = {
 				limit = {
 					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_the_trollcrafters
-					any_society_member = {
-						society_member_of = the_trollcrafters
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_trollcrafters
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
 					has_character_flag = being_recruited_by_the_cult_of_kali
 					any_society_member = {
 						society_member_of = the_cult_of_kali
@@ -1322,82 +1238,16 @@ letter_event = {
 			if = {
 				limit = {
 					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_the_cold_ones
+					has_character_flag = being_recruited_by_the_illuminati
 					any_society_member = {
-						society_member_of = the_cold_ones
+						society_member_of = the_illuminati
 						is_female = no
 						is_attractive_trigger = yes
 					}
 				}
 				random_society_member = {
 					limit = {
-						society_member_of = the_cold_ones
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_the_plaguebringers
-					any_society_member = {
-						society_member_of = the_plaguebringers
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_plaguebringers
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_the_bacchants
-					any_society_member = {
-						society_member_of = the_bacchants
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_bacchants
-						is_female = no
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = yes
-					has_character_flag = being_recruited_by_the_vodouns
-					any_society_member = {
-						society_member_of = the_vodouns
-						is_female = no
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_vodouns
+						society_member_of = the_illuminati
 						is_female = no
 						is_attractive_trigger = yes
 					}
@@ -1433,28 +1283,6 @@ letter_event = {
 			if = {
 				limit = {
 					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_trollcrafters
-					any_society_member = {
-						society_member_of = the_trollcrafters
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_trollcrafters
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
 					has_character_flag = being_recruited_by_the_cult_of_kali
 					any_society_member = {
 						society_member_of = the_cult_of_kali
@@ -1477,82 +1305,16 @@ letter_event = {
 			if = {
 				limit = {
 					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_cold_ones
+					has_character_flag = being_recruited_by_the_illuminati
 					any_society_member = {
-						society_member_of = the_cold_ones
+						society_member_of = the_illuminati
 						is_female = yes
 						is_attractive_trigger = yes
 					}
 				}
 				random_society_member = {
 					limit = {
-						society_member_of = the_cold_ones
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_plaguebringers
-					any_society_member = {
-						society_member_of = the_plaguebringers
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_plaguebringers
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_bacchants
-					any_society_member = {
-						society_member_of = the_bacchants
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_bacchants
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-					save_event_target_as = satanists_inductor
-					set_character_flag = event_MNM_7015
-					character_event = { id = MNM.7013 }
-					break = yes
-				}
-			}
-			if = {
-				limit = {
-					prefers_men_trigger = no
-					has_character_flag = being_recruited_by_the_vodouns
-					any_society_member = {
-						society_member_of = the_vodouns
-						is_female = yes
-						is_attractive_trigger = yes
-					}
-				}
-				random_society_member = {
-					limit = {
-						society_member_of = the_vodouns
+						society_member_of = the_illuminati
 						is_female = yes
 						is_attractive_trigger = yes
 					}
@@ -1591,12 +1353,8 @@ letter_event = {
 						trigger_switch = {
 							on_trigger = has_character_flag
 							being_recruited_by_the_satanists = { PREV = { join_society = the_satanists } }
-							being_recruited_by_the_trollcrafters = { PREV = { join_society = the_trollcrafters } }
 							being_recruited_by_the_cult_of_kali = { PREV = { join_society = the_cult_of_kali } }
-							being_recruited_by_the_cold_ones = { PREV = { join_society = the_cold_ones } }
-							being_recruited_by_the_plaguebringers = { PREV = { join_society = the_plaguebringers } }
-							being_recruited_by_the_vodouns = { PREV = { join_society = the_vodouns } }
-							being_recruited_by_the_bacchants = { PREV = { join_society = the_bacchants } }
+							being_recruited_by_the_illuminati = { PREV = { join_society = the_illuminati } }
 						}
 					}
 					character_event = { id = MNM.7013 }
@@ -1629,12 +1387,8 @@ letter_event = {
 						trigger_switch = {
 							on_trigger = has_character_flag
 							being_recruited_by_the_satanists = { PREV = { join_society = the_satanists } }
-							being_recruited_by_the_trollcrafters = { PREV = { join_society = the_trollcrafters } }
 							being_recruited_by_the_cult_of_kali = { PREV = { join_society = the_cult_of_kali } }
-							being_recruited_by_the_cold_ones = { PREV = { join_society = the_cold_ones } }
-							being_recruited_by_the_plaguebringers = { PREV = { join_society = the_plaguebringers } }
-							being_recruited_by_the_vodouns = { PREV = { join_society = the_vodouns } }
-							being_recruited_by_the_bacchants = { PREV = { join_society = the_bacchants } }
+							being_recruited_by_the_illuminati = { PREV = { join_society = the_illuminati } }
 						}
 					}
 					character_event = { id = MNM.7013 }
@@ -1871,12 +1625,8 @@ character_event = {
 		}
 		custom_tooltip = { text = EVTTOOLTIP_MNM_6993 }
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
 		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_cold_ones
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_vodouns
-		clr_character_flag = being_recruited_by_the_bacchants
+		clr_character_flag = being_recruited_by_the_illuminati
 		clr_character_flag = dw_recruitment_end_unable
 	}
 }
@@ -2091,17 +1841,6 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_trollcrafters
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
 				if = { limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
 					random_society_member = {
 						limit = {
@@ -2113,45 +1852,12 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_cold_ones }
+				if = { limit = { has_character_flag = being_recruited_by_the_illuminati }
 					random_society_member = {
 						limit = {
 							society_rank = {
 								rank == 4
-								society = the_cold_ones
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_plaguebringers
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_vodouns }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_vodouns
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_bacchants }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_bacchants
+								society = the_illuminati
 							}
 						}
 						save_event_target_as = grand_master
@@ -2170,28 +1876,12 @@ character_event = {
 			join_society = the_satanists
 		}
 		if = {
-			limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-			join_society = the_trollcrafters
-		}
-		if = {
 			limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
 			join_society = the_cult_of_kali
 		}
 		if = {
-			limit = { has_character_flag = being_recruited_by_the_cold_ones }
-			join_society = the_cold_ones
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-			join_society = the_plaguebringers
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_vodouns }
-			join_society = the_vodouns
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_bacchants }
-			join_society = the_bacchants
+			limit = { has_character_flag = being_recruited_by_the_illuminati }
+			join_society = the_illuminati
 		}
 
 		if = { 
@@ -2212,12 +1902,8 @@ character_event = {
 
 		hidden_effect = {
 			clr_character_flag = being_recruited_by_the_satanists
-			clr_character_flag = being_recruited_by_the_trollcrafters
 			clr_character_flag = being_recruited_by_the_cult_of_kali
-			clr_character_flag = being_recruited_by_the_cold_ones
-			clr_character_flag = being_recruited_by_the_plaguebringers
-			clr_character_flag = being_recruited_by_the_vodouns
-			clr_character_flag = being_recruited_by_the_bacchants
+			clr_character_flag = being_recruited_by_the_illuminati
 		}
 	}
 	option = {
@@ -2228,28 +1914,12 @@ character_event = {
 			join_society = the_satanists
 		}
 		if = {
-			limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-			join_society = the_trollcrafters
-		}
-		if = {
 			limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
 			join_society = the_cult_of_kali
 		}
 		if = {
-			limit = { has_character_flag = being_recruited_by_the_cold_ones }
-			join_society = the_cold_ones
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-			join_society = the_plaguebringers
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_vodouns }
-			join_society = the_vodouns
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_bacchants }
-			join_society = the_bacchants
+			limit = { has_character_flag = being_recruited_by_the_illuminati }
+			join_society = the_illuminati
 		}
 
 		event_target:satanists_inductor = {
@@ -2274,17 +1944,6 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_trollcrafters
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
 				if = { limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
 					random_society_member = {
 						limit = {
@@ -2296,45 +1955,12 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_cold_ones }
+				if = { limit = { has_character_flag = being_recruited_by_the_illuminati }
 					random_society_member = {
 						limit = {
 							society_rank = {
 								rank == 4
-								society = the_cold_ones
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_plaguebringers
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_bacchants }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_bacchants
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_vodouns }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_vodouns
+								society = the_illuminati
 							}
 						}
 						save_event_target_as = grand_master
@@ -2343,12 +1969,8 @@ character_event = {
 				event_target:grand_master = { character_event = { id = MNM.7021 } }
 			}
 			clr_character_flag = being_recruited_by_the_satanists
-			clr_character_flag = being_recruited_by_the_trollcrafters
 			clr_character_flag = being_recruited_by_the_cult_of_kali
-			clr_character_flag = being_recruited_by_the_cold_ones
-			clr_character_flag = being_recruited_by_the_plaguebringers
-			clr_character_flag = being_recruited_by_the_vodouns
-			clr_character_flag = being_recruited_by_the_bacchants
+			clr_character_flag = being_recruited_by_the_illuminati
 		}
 	}
 }
@@ -2392,17 +2014,6 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_trollcrafters
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
 				if = { limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
 					random_society_member = {
 						limit = {
@@ -2414,45 +2025,12 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_cold_ones }
+				if = { limit = { has_character_flag = being_recruited_by_the_illuminati }
 					random_society_member = {
 						limit = {
 							society_rank = {
 								rank == 4
-								society = the_cold_ones
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_plaguebringers
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_vodouns }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_vodouns
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_bacchants }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_bacchants
+								society = the_illuminati
 							}
 						}
 						save_event_target_as = grand_master
@@ -2463,12 +2041,8 @@ character_event = {
 		}
 
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
 		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_cold_ones
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_vodouns
-		clr_character_flag = being_recruited_by_the_bacchants
+		clr_character_flag = being_recruited_by_the_illuminati
 	}
 
 	#Escape successfully
@@ -2516,12 +2090,8 @@ character_event = {
 		name = EVTOPTA_7020
 		custom_tooltip = { text = EVTOPTA_7020_TT}
 		clr_character_flag = being_recruited_by_the_satanists
-		clr_character_flag = being_recruited_by_the_trollcrafters
 		clr_character_flag = being_recruited_by_the_cult_of_kali
-		clr_character_flag = being_recruited_by_the_cold_ones
-		clr_character_flag = being_recruited_by_the_plaguebringers
-		clr_character_flag = being_recruited_by_the_vodouns
-		clr_character_flag = being_recruited_by_the_bacchants
+		clr_character_flag = being_recruited_by_the_illuminati
 	}
 }
 
@@ -2585,12 +2155,8 @@ character_event = {
 						is_in_society = no
 						OR = {
 							has_character_flag = being_recruited_by_the_satanists
-							has_character_flag = being_recruited_by_the_trollcrafters
 							has_character_flag = being_recruited_by_the_cult_of_kali
-							has_character_flag = being_recruited_by_the_cold_ones
-							has_character_flag = being_recruited_by_the_plaguebringers
-							has_character_flag = being_recruited_by_the_vodouns
-							has_character_flag = being_recruited_by_the_bacchants
+							has_character_flag = being_recruited_by_the_illuminati
 							has_character_flag = assassins_attempted_recruitment
 						}
 					}
@@ -2601,17 +2167,6 @@ character_event = {
 							society_rank = {
 								rank == 4
 								society = the_satanists
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_trollcrafters
 							}
 						}
 						save_event_target_as = grand_master
@@ -2628,45 +2183,12 @@ character_event = {
 						save_event_target_as = grand_master
 					}
 				}
-				if = { limit = { has_character_flag = being_recruited_by_the_cold_ones }
+				if = { limit = { has_character_flag = being_recruited_by_the_illuminati }
 					random_society_member = {
 						limit = {
 							society_rank = {
 								rank == 4
-								society = the_cold_ones
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_plaguebringers
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_vodouns }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_vodouns
-							}
-						}
-						save_event_target_as = grand_master
-					}
-				}
-				if = { limit = { has_character_flag = being_recruited_by_the_bacchants }
-					random_society_member = {
-						limit = {
-							society_rank = {
-								rank == 4
-								society = the_bacchants
+								society = the_illuminati
 							}
 						}
 						save_event_target_as = grand_master
@@ -2747,28 +2269,12 @@ letter_event = {
 			join_society = the_satanists
 		}
 		if = {
-			limit = { has_character_flag = being_recruited_by_the_trollcrafters }
-			join_society = the_trollcrafters
-		}
-		if = {
 			limit = { has_character_flag = being_recruited_by_the_cult_of_kali }
 			join_society = the_cult_of_kali
 		}
 		if = {
-			limit = { has_character_flag = being_recruited_by_the_cold_ones }
-			join_society = the_cold_ones
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_plaguebringers }
-			join_society = the_plaguebringers
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_vodouns }
-			join_society = the_vodouns
-		}
-		if = {
-			limit = { has_character_flag = being_recruited_by_the_bacchants }
-			join_society = the_bacchants
+			limit = { has_character_flag = being_recruited_by_the_illuminati }
+			join_society = the_illuminati
 		}
 		if = {
 			limit = { has_character_flag = assassins_attempted_recruitment }
@@ -2777,12 +2283,8 @@ letter_event = {
 
 		hidden_effect = {
 			clr_character_flag = being_recruited_by_the_satanists
-			clr_character_flag = being_recruited_by_the_trollcrafters
 			clr_character_flag = being_recruited_by_the_cult_of_kali
-			clr_character_flag = being_recruited_by_the_cold_ones
-			clr_character_flag = being_recruited_by_the_plaguebringers
-			clr_character_flag = being_recruited_by_the_vodouns
-			clr_character_flag = being_recruited_by_the_bacchants
+			clr_character_flag = being_recruited_by_the_illuminati
 			clr_character_flag = assassins_attempted_recruitment
 		}
 	}
@@ -2797,12 +2299,8 @@ letter_event = {
 		}
 		hidden_effect = {
 			clr_character_flag = being_recruited_by_the_satanists
-			clr_character_flag = being_recruited_by_the_trollcrafters
 			clr_character_flag = being_recruited_by_the_cult_of_kali
-			clr_character_flag = being_recruited_by_the_cold_ones
-			clr_character_flag = being_recruited_by_the_plaguebringers
-			clr_character_flag = being_recruited_by_the_vodouns
-			clr_character_flag = being_recruited_by_the_bacchants
+			clr_character_flag = being_recruited_by_the_illuminati
 			clr_character_flag = assassins_attempted_recruitment
 		}
 		ai_chance = { factor = 0 }
@@ -5342,28 +4840,12 @@ character_event = {
 				join_society = the_satanists
 			}
 			if = {
-				limit = { ROOT = { society_member_of = the_trollcrafters } }
-				join_society = the_trollcrafters
-			}
-			if = {
 				limit = { ROOT = { society_member_of = the_cult_of_kali } }
 				join_society = the_cult_of_kali
 			}
 			if = {
-				limit = { ROOT = { society_member_of = the_cold_ones } }
-				join_society = the_cold_ones
-			}
-			if = {
-				limit = { ROOT = { society_member_of = the_plaguebringers } }
-				join_society = the_plaguebringers
-			}
-			if = {
-				limit = { ROOT = { society_member_of = the_vodouns } }
-				join_society = the_vodouns
-			}
-			if = {
-				limit = { ROOT = { society_member_of = the_bacchants } }
-				join_society = the_bacchants
+				limit = { ROOT = { society_member_of = the_illuminati } }
+				join_society = the_illuminati
 			}
 		}
 		
@@ -6711,18 +6193,10 @@ character_event = { #birth
 		}
 		if = {
 			limit = {
-				mother = { society_member_of = the_cold_ones }
+				mother = { society_member_of = the_illuminati }
 			}
 			ROOT = {
-				set_character_flag = demonspawn_will_join_cold_ones
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = the_plaguebringers }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_plaguebringers
+				set_character_flag = demonspawn_will_join_illuminati
 			}
 		}
 		if = {
@@ -6731,30 +6205,6 @@ character_event = { #birth
 			}
 			ROOT = {
 				set_character_flag = demonspawn_will_join_cult_of_kali
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = the_trollcrafters }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_trollcrafters
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = the_bacchants }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_bacchants
-			}
-		}
-		if = {
-			limit = {
-				mother = { society_member_of = the_vodouns }
-			}
-			ROOT = {
-				set_character_flag = demonspawn_will_join_vodouns
 			}
 		}
 		remove_trait = sickly
@@ -9056,33 +8506,9 @@ character_event = {
 		trigger = {
 			OR = {
 				society_member_of = the_satanists
-				society_member_of = the_cold_ones
+				society_member_of = the_illuminati
 				society_member_of = the_cult_of_kali
-				society_member_of = the_trollcrafters
-				society_member_of = the_vodouns
 			}
-		}
-	}
-	desc = {
-		text = EVTDESC_MNM_20014_NOMAD
-		picture = GFX_evt_nomad_camp
-		trigger = {
-			society_member_of = the_plaguebringers
-			has_dlc = "Horse Lords"
-		}
-	}
-	desc = {
-		text = EVTDESC_MNM_20014_NOMAD
-		trigger = {
-			society_member_of = the_plaguebringers
-			NOT = { has_dlc = "Horse Lords" }
-		}
-	}
-	desc = {
-		text = EVTDESC_MNM_20014_BACCHANALIS
-		picture = GFX_evt_bacchants_initiation
-		trigger = {
-			society_member_of = the_bacchants
 		}
 	}
 
