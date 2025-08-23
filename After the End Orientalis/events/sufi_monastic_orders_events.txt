@@ -437,7 +437,50 @@ character_event = {
 				}
 	
 				random_list = {
-					200 = { }
+					100 = { #Cham
+						trigger = {
+							can_join_society = basaih_society
+						}
+						modifier = {
+							factor = 3
+							OR = {
+								trait = zair
+								trait = hafiz
+								trait = mystic
+								trait = bani_balamon
+								learning = 16
+								is_priest = yes
+							}
+						}
+						modifier = {
+							factor = 0.1
+							is_female = yes
+						}
+						join_society = basaih_society
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
 					100 = { #sunni
 						trigger = {
 							can_join_society = monastic_order_sunni
