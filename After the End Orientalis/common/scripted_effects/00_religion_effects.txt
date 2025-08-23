@@ -931,7 +931,7 @@ convert_religion_failsafe_effect = {
 			# Stop apostates from becoming the pope
 			if = {
 				limit = {
-					NOT = { religion = catholic }
+					NOR = {religion = catholic religion = cao_dai }
 				}
 
 				remove_title = title_cardinal
@@ -966,8 +966,7 @@ convert_religion_failsafe_effect = {
 							OR = {
 								religion_group = christian
 								religion_group = zoroastrian_group
-								religion_openly_bon_or_reformed_trigger = yes
-								religion = jain
+								religion = cao_dai
 								religion = buddhist
 								religion = taoist
 							}
@@ -997,8 +996,7 @@ convert_religion_failsafe_effect = {
 									OR = {
 										religion_group = christian
 										religion_group = zoroastrian_group
-										religion_openly_bon_or_reformed_trigger = yes
-										religion = jain
+										religion = cao_dai
 										religion = buddhist
 										religion = taoist
 									}
