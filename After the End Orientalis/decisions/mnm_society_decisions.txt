@@ -380,20 +380,20 @@ society_decisions = {
 		potential = {
 			has_dlc = "Mystics"
 			society_member_of = weizza_society
-			has_quest = quest_hermetics_build_laboratory
+			has_quest = quest_weizza_society_build_tantric_center
 			is_playable = yes
 			block_general_event_trigger = no
-			NOT = { has_character_flag = building_laboratory }
-			NOT = { has_character_flag = built_laboratory }
+			NOT = { has_character_flag = building_tantric_center }
+			NOT = { has_character_flag = built_tantric_center }
 		}
 		allow = {
 			wealth = 50
 		}
 		effect = {
 			wealth = -50
-			set_character_flag = building_laboratory
+			set_character_flag = building_tantric_center
 			custom_tooltip = { text = start_constructing_laboratory_tooltip }
-			hidden_tooltip = { character_event = { id = MNM.1100 } }
+			hidden_tooltip = { character_event = { id = wizard.1100 } }
 		}
 		
 		ai_will_do = {
