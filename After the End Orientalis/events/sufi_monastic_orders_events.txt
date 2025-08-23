@@ -440,6 +440,7 @@ character_event = {
 					100 = { #Cham
 						trigger = {
 							can_join_society = basaih_society
+							trait = bani_balamon
 						}
 						modifier = {
 							factor = 3
@@ -447,7 +448,7 @@ character_event = {
 								trait = zair
 								trait = hafiz
 								trait = mystic
-								trait = bani_balamon
+								trait = theologian
 								learning = 16
 								is_priest = yes
 							}
