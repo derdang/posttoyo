@@ -1,4 +1,4 @@
-# 1		[hidden] char: chinese character has claims on imperial seat
+# 1		[hidden] char: cetic character has claims on imperial seat
 # 2		char: notify emperor of claims on imperial seat, dispatch letter to claimant
 # 3		letter: choose whether to dissolve the claims or not
 # 4		letter: emperor notified that claims were removed
@@ -6,13 +6,13 @@
 # 10	[hidden] char: figurehead trait passed onto next emperor
 # 11	narr: ruler usurps the imperial throne
 # 12	[hidden] on-action: check on usurpation if imperial title has been destroyed
-# 13	narr: notify chinese ruler of imperial destruction
+# 13	narr: notify cetic ruler of imperial destruction
 # 14	[hidden] check if imperial title has been restored by this character
-# 15	narr: notify chinese ruler of imperial restoration
+# 15	narr: notify cetic ruler of imperial restoration
 # 16	[hidden] hack event to check if emperor has lost his title
-# 18	prov: Chinese Imperial controls of Sacramento, option to return it to emperor
-# 19	Removed
-# 20	[hidden] prov: trigger chinese border claim event
+# 18	prov: cetic controls sacramento, option to return it to emperor
+# 19	choose cetic path to follow
+# 20	[hidden] prov: trigger cetic border claim event
 # 21	char: discover tenuous claim on border province, request imperial sanction of the claim
 # 22	char: emperor receives request to sanction claim
 # 23	char: claim is granted by the emperor
@@ -25,17 +25,26 @@
 # 35	char: imperial court visit: impress other court visitors
 # 36	char: imperial court visit: anger other court visitors
 # 37	char: imperial court visit: attempt to buy influence
-# 50-59 Removed 
+# 50	char: emperor writing: writer's block
+# 51	char: emperor writing: inspired writings
+# 52	char: emperor writing: competent writings
+# 53	char: emperor writing: terrible writings
+# 54	char: emperor writing: inspired by a ruler visiting the court
+# 55	char: inform cetic character of inspired writings
+# 56	char: inform cetic character of terrible writings
 # 60	letter: emperor requests military aid
-# 61	narr: notify Chinese ruler of chinese imperialism
+# 61	narr: notify cetic ruler of californian imperialism
 # 100	imperial claim war begins, rulers asked to choose a side
 # 101	imperial claim war ends, claimant wins
 # 102	imperial claim war ends, white peace
 # 103	imperial claim war ends, emperor wins
 
-#Edited By Derrick
+namespace = cetic
 
-namespace = cetic #Used for the Bureaucratic System
+#PLANS:
+#Create Imperial society
+#Visiting the court is a quest now
+#Imperial claim is a decision for like level 3
 
 #this is gonna be the real shit for pretriggers
 
@@ -48,13 +57,10 @@ character_event = {
 	culture_group = han
 
 	trigger = {
-		OR = {
-			has_claim = e_china
-			has_claim = k_yan
-			has_claim = d_beijing
-			has_claim = c_beijing
+		AND = {
+			trait = weak_emperor
+			war = yes
 		}
-		religion_head = { NOT = { dynasty = ROOT } }
 	}
 	
 	mean_time_to_happen = {
@@ -77,12 +83,12 @@ character_event = {
 	desc = EVTDESC_cetic_claims
 	picture = GFX_evt_china_diplomatic_incident
 	is_triggered_only = yes
-	culture_group = han
 	
 	trigger = {
-		controls_religion = yes
-		completely_controls = k_yan
-		trait = figurehead
+		AND = {
+			trait = weak_emperor
+			war = yes
+		}
 	}
 	
 	option = {
@@ -145,10 +151,6 @@ letter_event = {
 		prestige = -20
 		piety = 50
 		remove_character_modifier = imperial_censure
-		remove_claim = e_china
-		remove_claim = k_yan
-		remove_claim = d_beijing
-		remove_claim = c_beijing
 		FROM = { letter_event = { id = cetic.4 days = 5 random = 3 } }
 		ai_chance = {
 			factor = 20
@@ -161,10 +163,6 @@ letter_event = {
 		prestige = -20
 		piety = 50
 		add_character_modifier = { name = imperial_favor duration = 1500 }
-		remove_claim = e_china
-		remove_claim = k_yan
-		remove_claim = d_beijing
-		remove_claim = c_beijing
 		FROM = { letter_event = { id = cetic.4 days = 5 random = 3 } }
 		ai_chance = {
 			factor = 20
@@ -247,8 +245,9 @@ character_event = {
 	
 	trigger = {
 		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
+			primary_title = {
+				government = sinic_bureaucracy_government
+			}
 		}
 	}
 	
@@ -303,14 +302,15 @@ narrative_event = {
 	only_playable = yes
 	
 	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
+		primary_title = {
+			government = sinic_bureaucracy_government
 		}
+		NOT = {has_character_flag = cetic_11_decision}
 	}
-	
-	# same dynasty, previous holder was weak
-	option = {
+	immediate = {
+					set_character_flag = cetic_11_decision
+				}
+	option = {# same dynasty, previous holder was weak
 		name = EVTOPT_cetic_usurp_same
 		trigger = {
 			dynasty = FROMFROM
@@ -325,8 +325,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# same dynasty, previous holder was figurehead
-	option = {
+	option = {# same dynasty, previous holder was figurehead
 		name = EVTOPT_cetic_usurp_same
 		trigger = {
 			dynasty = FROMFROM
@@ -341,8 +340,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# same dynasty, previous holder was not figurehead
-	option = {
+	option = {# same dynasty, previous holder was not figurehead
 		name = EVTOPT_cetic_usurp_same
 		trigger = {
 			dynasty = FROMFROM
@@ -353,8 +351,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# same dynasty, previous holder was strong
-	option = {
+	option = {# same dynasty, previous holder was strong
 		name = EVTOPT_cetic_usurp_same
 		trigger = {
 			dynasty = FROMFROM
@@ -365,10 +362,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	
-	
-	# different dynasty, high diplo
-	option = {
+	option = {# different dynasty, high diplo
 		name = EVTOPT_cetic_usurp_diplo
 		trigger = {
 			NOT = { dynasty = FROMFROM }
@@ -384,8 +378,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# different dynasty, high learning
-	option = {
+	option = {# different dynasty, high learning
 		name = EVTOPT_cetic_usurp_learn
 		trigger = {
 			NOT = { dynasty = FROMFROM }
@@ -401,82 +394,26 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# different dynasty
-	option = {
+	option = {# different dynasty
 		name = EVTOPT_cetic_usurp_destroy
 		trigger = {
 			NOT = { dynasty = FROMFROM }
 		}
 		piety = -50
-		e_china = { destroy_landed_title = THIS }
+		ROOT = { destroy_landed_title = THIS }
 		FROMFROM = { remove_trait = figurehead }
-		set_global_flag = chinese_emperor_destroyed
+		set_global_flag = cali_emperor_destroyed
 		religion_authority = { modifier = emperor_overthrown }
 		hidden_tooltip = {
 			narrative_event = { id = cetic.13 }
 			any_playable_ruler = {
 				limit = {
-					culture_group = han
+					government = sinic_bureaucracy_government
 				}
 				narrative_event = { id = cetic.13 }
 			}
 		}
 		ai_chance = { factor = 1 }
-	}
-}
-
-character_event = {
-	id = cetic.12
-	desc = EVTDESC_bounce
-	picture = GFX_evt_china_unrest
-	is_triggered_only = yes
-	hide_window = yes
-	
-	trigger = {
-		NOT = { has_global_flag = chinese_emperor_destroyed }
-		FROMFROM = {
-			culture_group = han
-			controls_religion = yes
-		}
-	}
-	
-	immediate = {
-		character_event = { id = cetic.16 days = 2 }
-	}
-	
-	option = {
-		name = OK
-	}
-}
-
-character_event = {
-	id = cetic.16
-	desc = EVTDESC_bounce
-	picture = GFX_evt_china_civil_war
-	is_triggered_only = yes
-	hide_window = yes
-	
-	trigger = {
-		NOT = { has_global_flag = chinese_emperor_destroyed }
-		FROMFROMFROM = {
-			NOT = { demesne_size = 1 }
-		}
-	}
-	
-	immediate = {
-		set_global_flag = chinese_emperor_destroyed
-		religion_authority = { modifier = emperor_overthrown }
-		narrative_event = { id = cetic.13 }
-		any_playable_ruler = {
-			limit = {
-				culture_group = han
-			}
-			narrative_event = { id = cetic.13 }
-		}
-	}
-	
-	option = {
-		name = OK
 	}
 }
 
@@ -488,7 +425,7 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		culture_group = han
+		goverment = sinic_bureaucracy_government
 	}
 	
 	option = {
@@ -527,11 +464,11 @@ character_event = {
 	desc = EVTDESC_bounce
 	picture = GFX_evt_china_golden_age
 	hide_window = yes
-	culture_group = han
-	has_global_flag = chinese_emperor_destroyed
+	government = sinic_bureaucracy_government
+	has_global_flag = cali_emperor_destroyed
 	
 	trigger = {
-		controls_religion = yes
+		is_liege_or_above = ROOT
 	}
 	
 	mean_time_to_happen = {
@@ -539,11 +476,11 @@ character_event = {
 	}
 	
 	immediate = {
-		clr_global_flag = chinese_emperor_destroyed
+		clr_global_flag = cali_emperor_destroyed
 		narrative_event = { id = cetic.15 }
 		any_playable_ruler = {
 			limit = {
-				culture_group = han
+				government = sinic_bureaucracy_government
 			}
 			narrative_event = { id = cetic.15 }
 		}
@@ -562,7 +499,7 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		culture_group = han
+		government = sinic_bureaucracy_government
 	}
 	
 	option = {
@@ -583,15 +520,12 @@ narrative_event = {
 
 province_event = {
 	id = cetic.18
-	desc = EVTDESC_beijing
+	desc = EVTDESC_cetic_sacramento
 	picture = GFX_evt_china_stable
 	
 	trigger = {
-		1923 = { province = ROOT } # Sacramento
-		e_china = { has_holder = yes }
+		ROOT = { has_holder = yes }
 		holder_scope = {
-			culture_group = han
-			controls_religion = no
 			NOT = { has_character_modifier = imperial_censure }
 		}
 	}
@@ -601,30 +535,23 @@ province_event = {
 	}
 	
 	option = {
-		name = EVTOPT_cetic_beijing_accept
-		c_beijing = {
-			holder_scope = {
-				religion_head = {
-					grant_title = PREVPREV
-				}
-			}
-		}
+		name = EVTOPT_cetic_sacramento_accept
 		holder_scope = {
 			piety = 100
 			add_character_modifier = { name = imperial_favor duration = 1500 }
 		}
 		ai_chance = {
 			factor = 20
-			modifier = { factor = 5 trait = zealous }
-			modifier = { factor = 2 trait = just }
-			modifier = { factor = 2 trait = honest }
-			modifier = { factor = 2 trait = humble }
-			modifier = { factor = 2 trait = charitable }
+			modifier = { factor = 5 holder_scope = { trait = zealous } }
+			modifier = { factor = 2 holder_scope = { trait = just } }
+			modifier = { factor = 2 holder_scope = { trait = humble } }
+			modifier = { factor = 2 holder_scope = { trait = honest } }
+			modifier = { factor = 2 holder_scope = { trait = charitable } }
 		}
 	}
 	
 	option = {
-		name = EVTOPT_cetic_beijing_deny
+		name = EVTOPT_cetic_sacramento_deny
 		holder_scope = {
 			piety = -50
 			add_trait = cynical
@@ -633,8 +560,8 @@ province_event = {
 		}
 		ai_chance = {
 			factor = 5
-			modifier = { factor = 5 trait = cynical }
-			modifier = { factor = 2 trait = arbitrary }
+			modifier = { factor = 5 holder_scope = { trait = cynical } }
+			modifier = { factor = 2 holder_scope = { trait = arbitrary } }
 		}
 	}
 }
@@ -647,12 +574,7 @@ province_event = {
 	hide_window = yes
 	
 	trigger = {
-		OR = {
-			empire = { title = e_china }
-		}
-		owner = {
-			controls_religion = no
-		}
+		goverment = sinic_bureaucracy_government
 	}
 
 	mean_time_to_happen = {
@@ -681,7 +603,6 @@ character_event = {
 	
 	trigger = {
 		government = sinic_bureaucracy_government
-		controls_religion = no
 		has_character_modifier = imperial_favor
 		FROM = {
 			owner = {
@@ -723,10 +644,10 @@ character_event = {
 	desc = EVTDESC_cetic_claim_request
 	picture = GFX_evt_chinese_bureaucrat
 	is_triggered_only = yes
-	culture_group = han
+	government = sinic_bureaucracy_government
 	
 	trigger = {
-		controls_religion = yes
+		is_liege_or_above = ROOT
 	}
 	
 	option = {
@@ -779,7 +700,7 @@ character_event = {
 	desc = EVTDESC_cetic_claim_granted
 	picture = GFX_evt_china_diplomatic_success
 	is_triggered_only = yes
-	culture_group = han
+	government = sinic_bureaucracy_government
 	
 	trigger = {
 		
@@ -819,7 +740,7 @@ character_event = {
 	desc = EVTDESC_cetic_claim_denied
 	picture = GFX_evt_china_diplomatic_incident
 	is_triggered_only = yes
-	culture_group = han
+	government = sinic_bureaucracy_government
 	
 	trigger = {
 		
@@ -1223,7 +1144,7 @@ character_event = {
 		religion_head = {
 			opinion = { modifier = opinion_impressed who = ROOT years = 5 }
 			random_vassal = {
-				limit = { culture_group = han }
+				limit = { religion = cetic }
 				opinion = { modifier = opinion_impressed who = ROOT years = 5 }
 			}
 		}
@@ -1276,7 +1197,7 @@ character_event = {
 		religion_head = {
 			opinion = { modifier = opinion_pitiful who = ROOT years = 5 }
 			random_vassal = {
-				limit = { culture_group = han }
+				limit = { religion = cetic }
 				opinion = { modifier = opinion_pitiful who = ROOT years = 5 }
 			}
 		}
@@ -1297,7 +1218,7 @@ character_event = {
 		religion_head = {
 			opinion = { modifier = opinion_pitiful who = ROOT years = 5 }
 			random_vassal = {
-				limit = { culture_group = han }
+				limit = { religion = cetic }
 				opinion = { modifier = opinion_pitiful who = ROOT years = 5 }
 			}
 		}
@@ -1362,8 +1283,11 @@ character_event = {
 	}
 }
 
+# ************************** emperor writes new teachings ****************************
+# Sinic Government Characters aren't in need of the Emperor to Write Shit but its the job of the Imperial Bureaucrats though > - <
+
 # ******************************** imperial power faction **************************
-#e_china = { ROOT = { approve_law = PREV } }
+#e_california = { ROOT = { approve_law = PREV } }
 
 # Ultimatum - pro_imperial
 letter_event = {
@@ -1449,7 +1373,7 @@ letter_event = {
 				}
 				diplomatic_immunity = no
 			}
-			e_china = { holder_scope = { letter_event = { id = cetic.211 } } }
+			ROOT = { holder_scope = { letter_event = { id = cetic.211 } } }
 		}
 		FROM = {
 			religion_authority = {
@@ -1457,7 +1381,7 @@ letter_event = {
 				years = 50
 			}
 			hidden_tooltip = {
-				e_china = {
+				ROOT = {
 					holder_scope = {
 						opinion = {
 							who = PREVPREV
@@ -1468,7 +1392,7 @@ letter_event = {
 			}
 		}
 		
-		set_defacto_liege = e_china
+		set_defacto_liege = ROOT
 	}
 	
 	option = {
@@ -1687,7 +1611,7 @@ letter_event = {
 				casus_belli = cb_pro_imperial
 				faction = faction_pro_imperial
 			}
-			e_china = { holder_scope = { opinion = { modifier = opinion_refused_abdicate_title who = PREVPREV months = 160 } } }
+			e_california = { holder_scope = { opinion = { modifier = opinion_refused_abdicate_title who = PREVPREV months = 160 } } }
 		}
 	}
 }
@@ -1740,9 +1664,10 @@ character_event = {
 	immediate = {
 		any_independent_ruler = {
 			limit = {
-				culture_group = han
+				government = sinic_bureaucracy_government
 				NOT = { war = yes }
 				mercenary = no
+				is_liege_or_above = yes
 			}
 			letter_event = { id = cetic.61 days = 5 random = 5 }
 		}
@@ -1752,7 +1677,6 @@ character_event = {
 letter_event = {
 	id = cetic.61
 	desc = EVTDESC_cetic_aid_request
-	picture = GFX_evt_china_civil_war
 	is_triggered_only = yes
 	
 	option = {
@@ -1812,7 +1736,7 @@ narrative_event = {
 	option = {
 		name = EVTOPT_current_emperor
 		trigger = {
-			has_landed_title = e_china
+			has_landed_title = FROM
 		}
 		prestige = -500
 	}
@@ -1827,12 +1751,12 @@ narrative_event = {
 	option = {
 		name = EVTOPT_support_emperor
 		trigger = {
-			culture_group = han
-			de_jure_liege = e_china
-			NOT = { de_facto_liege_title = e_china }
+			government = sinic_bureaucracy_government
+			de_jure_liege = ROOT
+			NOT = { de_facto_liege_title = ROOT }
 			NOR = {
 				has_character_flag = imperial_claimant
-				has_landed_title = e_china
+				independent = yes
 			}
 		}
 		set_character_flag = supported_emperor_imperial_war
@@ -1845,7 +1769,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 2
-				e_china = {
+				ROOT = {
 					holder_scope = {
 						is_friend = ROOT
 					}
@@ -1859,7 +1783,7 @@ narrative_event = {
 				factor = 0 # alliances WILL be upheld
 				AND = {
 					NOT = {
-						e_china = {
+						ROOT = {
 							holder_scope = {
 								is_allied_with = ROOT
 							}
@@ -1874,12 +1798,12 @@ narrative_event = {
 	option = {
 		name = EVTOPT_imperial_neutral
 		trigger = {
-			culture_group = han
-			de_jure_liege = e_china
-			NOT = { de_facto_liege_title = e_china }
+			government = sinic_bureaucracy_government
+			de_jure_liege = ROOT
+			NOT = { de_facto_liege_title = ROOT }
 			NOR = {
 				has_character_flag = imperial_claimant
-				has_landed_title = e_china
+				independent = yes
 			}
 		}
 		prestige = -250
@@ -1897,7 +1821,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 0
-				e_china = {
+				ROOT = {
 					holder_scope = {
 						is_friend = ROOT
 					}
@@ -1911,7 +1835,7 @@ narrative_event = {
 				factor = 0 # alliances WILL be upheld
 				is_allied_with = FROMFROM
 				NOT = { 
-					e_china = {
+					ROOT = {
 						holder_scope = {
 							is_allied_with = ROOT
 						}
@@ -1920,7 +1844,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 0 # alliances WILL be upheld
-				e_china = {
+				ROOT = {
 					holder_scope = {
 						is_allied_with = ROOT
 					}
@@ -1929,7 +1853,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 100 # alliances WILL be upheld
-				e_china = {
+				ROOT = {
 					holder_scope = {
 						is_allied_with = ROOT
 					}
@@ -1942,12 +1866,12 @@ narrative_event = {
 	option = {
 		name = EVTOPT_support_claimant
 		trigger = {
-			culture_group = han
-			de_jure_liege = e_china
-			NOT = { de_facto_liege_title = e_china }
+			government = sinic_bureaucracy_government
+			de_jure_liege = ROOT
+			NOT = { de_facto_liege_title = ROOT }
 			NOR = {
 				has_character_flag = imperial_claimant
-				has_landed_title = e_china
+				independent = yes
 			}
 		}
 		join_attacker_wars = FROMFROM
@@ -1961,7 +1885,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 0
-				e_china = {
+				ROOT = {
 					holder_scope = {
 						is_friend = ROOT
 					}
@@ -1973,7 +1897,7 @@ narrative_event = {
 			}
 			modifier = {
 				factor = 0 # alliances WILL be upheld
-				e_china = {
+				ROOT = {
 					holder_scope = {
 						is_allied_with = FROMFROM
 					}
@@ -1986,9 +1910,9 @@ narrative_event = {
 	option = { #direct imperial vassal, presumed neutral
 		name = EVTOPT_direct_imperial_vassal
 		trigger = {
-			culture_group = han
-			de_jure_liege = e_china
-			de_facto_liege_title = e_china
+			government = sinic_bureaucracy_government
+			de_jure_liege = ROOT
+			de_facto_liege_title = ROOT
 		}
 		set_character_flag = stayed_neutral_imperial_war
 	}
@@ -1997,8 +1921,8 @@ narrative_event = {
 		name = EVTOPT_other
 		trigger = {
 			NAND = {
-				culture_group = han
-				de_jure_liege = e_china
+				government = sinic_bureaucracy_government
+				de_jure_liege = ROOT
 			}
 		}
 	}
@@ -2021,22 +1945,21 @@ narrative_event = {
 		clr_global_flag = imperial_claim_war
 	}
 	
-	option = {
-		name = EVTOPT_successful_claimant
-		trigger = {
-			has_character_flag = imperial_claimant
-		}
-		grant_title = e_china # insanity check
-		clr_character_flag = imperial_claimant
-		hidden_tooltip = {
-			set_variable = { which = global_imp_auth value = 70 }
-		}
-		add_trait = strong_emperor
-		add_character_modifier = {
-			modifier = imperial_authority
-			duration = -1
-		}
-	}
+	#option = { - This cannot be done its very bad and will destroy whole realms
+	#	name = EVTOPT_successful_claimant
+	#	trigger = {
+	#		has_character_flag = imperial_claimant
+	#	}
+	#	clr_character_flag = imperial_claimant
+	#	hidden_tooltip = {
+	#		set_variable = { which = global_imp_auth value = 70 }
+	#	}
+	#	add_trait = strong_emperor
+	#	add_character_modifier = {
+	#		modifier = imperial_authority
+	#		duration = -1
+	#	}
+	#}
 	
 	option = {
 		name = EVTOPT_deposed_emperor
@@ -2077,7 +2000,7 @@ narrative_event = {
 		}
 		clr_character_flag = supported_claimant_imperial_war
 		prestige = 250
-		set_defacto_liege = e_china
+		set_defacto_liege = e_california
 	}
 	
 	option = {
@@ -2210,7 +2133,7 @@ narrative_event = {
 		}
 		prestige = 1500
 		clr_character_flag = restored_emperor
-		set_defacto_liege = e_china
+		set_defacto_liege = ROOT
 		hidden_tooltip = {
 			set_variable = { which = global_imp_auth value = 70 }
 		}
@@ -2263,10 +2186,7 @@ character_event = {
 	only_playable = yes
 
 	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
+		independent = yes
 		NOT = {
 			has_character_flag = era_name
 		}
@@ -2295,8 +2215,7 @@ narrative_event = {
 		name = EVTOPTACETIC105
 		trigger = {
 			OR = {
-				has_landed_title = e_china
-				has_title_flag = has_chinese_mandate
+				independent = yes
 			}
 		}
 	}
@@ -2305,12 +2224,11 @@ narrative_event = {
 		trigger = {
 			OR = {
 				government = sinic_bureaucracy_government
-				de_jure_liege = e_china
-				culture_group = han
+				de_jure_liege = ROOT
+				government = sinic_bureaucracy_government
 			}
 			NOR = {
-				has_landed_title = e_china
-				has_title_flag = has_chinese_mandate
+				independent = yes
 			}
 		}
 	}
@@ -2318,11 +2236,14 @@ narrative_event = {
 		name = EVTOPTCCETIC105
 		trigger = {
 			NOR = {
-				has_landed_title = e_china
-				has_title_flag = has_chinese_mandate
-				government = sinic_bureaucracy_government
-				de_jure_liege = e_china
-				culture_group = han
+				AND = {
+					independent = yes
+					government = sinic_bureaucracy_government
+				}
+				AND = {
+					de_jure_liege = ROOT
+					government = sinic_bureaucracy_government
+				}
 			}
 		}
 	}
@@ -2350,10 +2271,7 @@ character_event = {
 		if = {
 			limit = {
 				liege = {
-					OR = {
-						has_landed_title = e_china
-						has_title_flag = has_chinese_mandate
-					}
+					independent = yes
 					NOT = {
 						trait = strong_emperor
 					}
@@ -2370,71 +2288,21 @@ character_event = {
 	}
 }
 
-#Governator takes Regent
-# character_event = {
-	# id = cetic.301
-	# desc = EVTDESCCETIC301
-	# picture = GFX_evt_china_stable
-	
-	# min_age = 16
-	# prisoner = no
-	# capable_only = yes
-	
-	# trigger = {
-		# NOT = { has_minor_title = title_regent }
-		# trait = grand_secretary
-		# liege = {
-			# has_landed_title = e_china
-			# OR = {
-				# prisoner = no
-				# is_abroad = no
-				# is_adult = no
-				# is_incapable = yes
-				# trait = in_hiding
-				# trait = weak_emperor
-			# }
-		# }
-	# }
-	
-	# mean_time_to_happen = {
-		# days = 1
-	# }
-	
-	# option = {
-		# name = EVTOPTACETIC301
-		# give_minor_title = title_regent
-	# }
-# }
-
-#Regent gets obliterated by the Governator
-# character_event = {
-	# id = cetic.302
-	# desc = EVTDESCCETIC302
-	# picture = GFX_evt_bad_news
-	# is_triggered_only = yes
-	
-	# option = {
-		# name = EVTOPTACETIC302
-		# prestige = -50
-	# }
-# }
-
 #on_startup to set up Imperial Authority
 character_event = {
 	id = cetic.303
 	hide_window = yes
 	is_triggered_only = yes
-	culture_group = han
+	government = sinic_bureaucracy_government
 	
 	trigger = {
-		has_landed_title = e_china
-		controls_religion = yes
+		sinic_bureaucracy_government
 		NOT = {
 			has_global_flag = imperial_authority_set
 		}
 	}
 	immediate = {
-		set_variable = { which = global_imp_auth value = 10 }
+		set_variable = { which = global_imp_auth value = 100 }
 		set_global_flag = a_flaming
 		set_global_flag = n_bear
 		# set_character_flag = ia_goodstats
@@ -2496,10 +2364,7 @@ character_event = {
 	}
 	
 	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
+		goverment = sinic_bureaucracy_government
 		OR = {
 			AND = {
 				check_variable = { which = global_imp_auth value < 10 }
@@ -2717,42 +2582,16 @@ character_event = {
 	}
 }	
 
-#Authority Increase - Win War
-# character_event = {
-	# id = cetic.306
-	# desc = EVTDESCCETIC306
-	# is_triggered_only = yes
-	# trigger = {
-		# OR = {
-			# has_landed_title = e_china
-			# has_title_flag = has_chinese_mandate
-		# }
-	# }
-	
-	# immediate = {
-		# change_variable = { which = global_imp_auth value = 5 }
-	# }
-	
-	# option = {
-		# name = opta_excellent
-		# custom_tooltip = {
-			# text = impauth_increase_5_TT
-		# }
-	# }
-# }
-
-#Authority Increase - Uniting California
+#Authority Increase - Peace in the Realm
 narrative_event = {
 	id = cetic.309
 	title = EVTTITLECETIC309
 	desc = EVTDESCCETIC309
 	picture = GFX_evt_china_golden_age
-	culture_group = han
+	government = sinic_bureaucracy_government
 	
 	trigger = {
-		controls_religion = yes
-		has_landed_title = e_china
-		completely_controls = e_china
+		is_liege_or_above = ROOT
 		NOT = {
 			has_global_flag = ia_unite
 		}
@@ -2776,89 +2615,18 @@ narrative_event = {
 		}
 		any_playable_ruler = {
 			limit = {
-				culture_group = han
+				government = sinic_bureaucracy_government
 			}
 			narrative_event = { id = cetic.15 }
 		}
 	}
 }
 
-#Authority Increase - Excellent Writings
-character_event = {
-	id = cetic.310
-	desc = EVTDESCCETIC310
-	picture = GFX_evt_monk
-	is_triggered_only = yes
-	culture_group = han
-	
-	trigger = {
-		controls_religion = yes
-		has_landed_title = e_china
-	}
-	
-	immediate = {
-		change_variable = { which = global_imp_auth value = 2 }
-	}
-	
-	option = {
-		name = opta_excellent
-		custom_tooltip = {
-			text = impauth_increase_2_TT
-		}
-	}
-}
-
-#Authority Increase - Good Writings
-character_event = {
-	id = cetic.311
-	desc = EVTDESCCETIC311
-	picture = GFX_evt_monk
-	is_triggered_only = yes
-	culture_group = han
-	
-	trigger = {
-		controls_religion = yes
-		has_landed_title = e_china
-	}
-	
-	immediate = {
-		change_variable = { which = global_imp_auth value = 1 }
-	}
-	
-	option = {
-		name = opta_excellent
-		custom_tooltip = {
-			text = impauth_increase_1_TT
-		}
-	}
-}
+#Authority Increase - Writings
+# Authority cannot be increased in this way in this mod so it has been commented out
 
 #Authority Decrease - Lost War
-character_event = {
-	id = cetic.312
-	desc = EVTDESCCETIC312
-	picture = GFX_evt_china_isolationist
-	is_triggered_only = yes
-	only_playable = yes
-	
-	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
-	}
-	
-	immediate = {
-		change_variable = { which = global_imp_auth value = -10 }
-	}
-	
-	option = {
-		name = opta_disappointing
-		custom_tooltip = {
-			text = impauth_decrease_10_TT
-		}
-	}
-}
+# War is not penalized but you should still be stable or else incur more issues down the line
 
 #Authority Decrease - Succession
 character_event = {
@@ -2890,10 +2658,7 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
+		government = sinic_bureaucracy_government
 		NOT = {
 			trait = weak_emperor
 		}
@@ -2921,10 +2686,7 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
+		government = sinic_bureaucracy_government
 		has_regent = yes
 		had_character_flag = {
 			flag = california_regent
@@ -2957,10 +2719,7 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
+		government = sinic_bureaucracy_government
 		has_regent = no
 		has_character_flag = california_regent
 	}
@@ -2975,30 +2734,7 @@ character_event = {
 }
 
 #Authority Decrease - Terrible Writings
-character_event = {
-	id = cetic.320
-	desc = EVTDESCCETIC320
-	picture = GFX_evt_bad_news
-	is_triggered_only = yes
-	
-	only_playable = yes
-	
-	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
-	}
-	immediate = {
-		change_variable = { which = global_imp_auth value = -5 }
-	}
-	option = {
-		name = opta_disappointing
-		custom_tooltip = {
-			text = impauth_decrease_5_TT
-		}
-	}
-}
+#Also do not have bad writing in this mod :D
 
 #Governator chose heir
 character_event = {
@@ -3008,10 +2744,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-			is_bureaucratic_religion = yes
-			culture_group = han
-		}
+		government = sinic_bureaucracy_government
 	}
 	option = {
 		name = opta_excellent
@@ -3050,8 +2783,10 @@ character_event = {
 	trigger = {
 		trait = grand_secretary
 		OR = {
-			e_china = { holder_scope = { trait = figurehead } }
-			e_china = { holder_scope = { trait = weak_emperor } }
+			ROOT = { holder_scope = { trait = figurehead } }
+			ROOT = { holder_scope = { trait = figurehead } }
+			ROOT = { holder_scope = { trait = weak_emperor } }
+			ROOT = { holder_scope = { trait = weak_emperor } }
 		}
 		NOR = {
 			has_character_flag = chosen_heir_gnator
@@ -3109,11 +2844,7 @@ character_event = {
 				}
 				preferred_limit = {
 					is_powerful_vassal = yes
-					culture_group = han
-				}
-				preferred_limit = {
-					is_powerful_vassal = yes
-					is_bureaucratic_religion = yes
+					government = sinic_bureaucracy_government
 				}
 				preferred_limit = {
 					is_voter = yes
@@ -3129,8 +2860,7 @@ character_event = {
 					higher_real_tier_than = COUNT
 					government = sinic_bureaucracy_government
 					NOR = {
-						has_landed_title = e_china
-						has_title_flag = has_chinese_mandate
+						independent = yes
 					}
 				}
 				preferred_limit = {
@@ -3157,10 +2887,7 @@ character_event = {
 		if = {
 			limit = {
 				liege = {
-					OR = {
-						has_landed_title = e_china
-						has_title_flag = has_chinese_mandate
-					}
+					goverment = sinic_bureaucracy_government
 					NOT = {
 						trait = strong_emperor
 					}
@@ -3186,10 +2913,7 @@ character_event = {
 		if = {
 			limit = {
 				liege = {
-					OR = {
-						has_landed_title = e_china
-						has_title_flag = has_chinese_mandate
-					}
+					goverment = sinic_bureaucracy_government
 					NOT = {
 						trait = strong_emperor
 					}
@@ -3270,10 +2994,7 @@ character_event = {
 		if = {
 			limit = {
 				liege = {
-					OR = {
-						has_landed_title = e_china
-						has_title_flag = has_chinese_mandate
-					}
+					goverment = sinic_bureaucracy_government
 					NOT = {
 						trait = strong_emperor
 					}
@@ -3315,7 +3036,6 @@ character_event = {
 	
 	option = {
 		name = hastalavista
-		add_trait = grand_secretary
 		clr_character_flag = chosen_heir_gnator
 	}
 }
@@ -3333,10 +3053,7 @@ character_event = {
 			has_minor_title = title_grand_secretary
 		}
 		liege = {
-			OR = {
-				has_landed_title = e_china
-				has_title_flag = has_chinese_mandate
-			}
+			goverment = sinic_bureaucracy_government
 			NOT = {
 				trait = strong_emperor
 			}
@@ -3362,10 +3079,7 @@ character_event = {
 	
 	trigger = {
 		trait = grand_secretary
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
+		goverment = sinic_bureaucracy_government
 	}
 	
 	mean_time_to_happen = {
@@ -3417,11 +3131,15 @@ character_event = {
 				}
 				preferred_limit = {
 					is_powerful_vassal = yes
-					culture_group = han
+					government = sinic_bureaucracy_government
 				}
 				preferred_limit = {
 					is_powerful_vassal = yes
-					is_bureaucratic_religion = yes
+					religion = imamite
+				}
+				preferred_limit = {
+					is_powerful_vassal = yes
+					religion = qingzhen
 				}
 				preferred_limit = {
 					real_tier = KING
@@ -3611,633 +3329,7 @@ character_event = {
 }
 
 #Ex-Governator Writes a Paper to Slander Emperor
-character_event = {
-	id = cetic.333
-	desc = EVTDESCCETIC333
-	picture = GFX_evt_scandal
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:slanderer = {
-			set_character_flag = no_scope_please
-		}
-	}
-	
-	option = {
-		name = EVTOPTACETIC333
-		custom_tooltip = {
-			text = furious_writing_TT
-			random_list = {
-				33 = { #Do poorly
-					custom_tooltip = {
-						text = do_poorly_TT
-						hidden_tooltip = {
-							character_event = { id = cetic.334 }
-							any_character = {
-								limit = {
-									NOT = {
-										has_character_flag = no_scope_please
-									}
-									is_voter = yes
-									liege = {
-										OR = {
-											has_landed_title = e_china
-											has_title_flag = has_chinese_mandate
-										}
-									}
-								}
-								character_event = { id = cetic.337 }
-							}
-						}
-					}
-					modifier = {
-						factor = 1.5
-						OR = {
-							event_target:slanderee = {
-								is_benevolent_trigger = yes
-								has_pleasant_personality_trigger = yes 
-								is_pious_trigger = yes
-							}
-						}
-					}
-					modifier = {
-						factor = 1.3
-						OR = {
-							event_target:slanderee = {
-								has_benevolent_trait_trigger = yes
-								has_pleasant_trait_trigger = yes
-								has_pious_trait_trigger = yes
-								has_virtue_trigger = yes
-							}
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							intrigue = 15
-							trait = genius
-							trait = flamboyant_schemer
-						}
-					}
-				}
-				44 = { #Do well
-					custom_tooltip = {
-						text = do_well_TT
-						hidden_tooltip = {
-							character_event = { id = cetic.335 }
-							any_character = {
-								limit = {
-									NOT = {
-										has_character_flag = no_scope_please
-									}
-									is_voter = yes
-									liege = {
-										OR = {
-											has_landed_title = e_china
-											has_title_flag = has_chinese_mandate
-										}
-									}
-								}
-								character_event = { id = cetic.338 }
-							}
-						}
-					}
-					modifier = {
-						factor = 1.5
-						OR = {
-							intrigue = 15
-							trait = genius
-							trait = flamboyant_schemer
-						}
-					}
-					modifier = {
-						factor = 1.3
-						OR = {
-							event_target:slanderee = {
-								is_evil_trigger = yes
-								has_unpleasant_personality_trigger = yes 
-								is_impious_trigger = yes
-							}
-						}
-					}
-					modifier = {
-						factor = 1.2
-						OR = {
-							event_target:slanderee = {
-								has_evil_trait_trigger = yes
-								has_unpleasant_trait_trigger = yes
-								has_impious_trait_trigger = yes
-								has_vice_trigger = yes
-							}
-						}
-					}
-					modifier = {
-						factor = 0.8
-						OR = {
-							event_target:slanderee = {
-								is_benevolent_trigger = yes
-								has_pleasant_personality_trigger = yes 
-								is_pious_trigger = yes
-							}
-						}
-					}
-					modifier = {
-						factor = 0.6
-						OR = {
-							event_target:slanderee = {
-								has_benevolent_trait_trigger = yes
-								has_pleasant_trait_trigger = yes
-								has_pious_trait_trigger = yes
-								has_virtue_trigger = yes
-							}
-						}
-					}
-				}
-				22 = { #Do excellent
-					custom_tooltip = {
-						text = do_excellent_TT
-						hidden_tooltip = {
-							character_event = { id = cetic.336 }
-							any_character = {
-								limit = {
-									NOT = {
-										has_character_flag = no_scope_please
-									}
-									is_voter = yes
-									liege = {
-										OR = {
-											has_landed_title = e_china
-											has_title_flag = has_chinese_mandate
-										}
-									}
-								}
-								character_event = { id = cetic.339 }
-							}
-						}
-					}
-					modifier = {
-						factor = 1.4
-						OR = {
-							intrigue = 15
-							trait = genius
-							trait = flamboyant_schemer
-						}
-					}
-					modifier = {
-						factor = 1.3
-						OR = {
-							event_target:slanderee = {
-								is_evil_trigger = yes
-								has_unpleasant_personality_trigger = yes 
-								is_impious_trigger = yes
-							}
-						}
-					}
-					modifier = {
-						factor = 1.2
-						OR = {
-							event_target:slanderee = {
-								has_evil_trait_trigger = yes
-								has_unpleasant_trait_trigger = yes
-								has_impious_trait_trigger = yes
-								has_vice_trigger = yes
-							}
-						}
-					}
-					modifier = {
-						factor = 0.9
-						OR = {
-							event_target:slanderee = {
-								is_benevolent_trigger = yes
-								has_pleasant_personality_trigger = yes 
-								is_pious_trigger = yes
-							}
-						}
-					}
-					modifier = {
-						factor = 0.7
-						OR = {
-							event_target:slanderee = {
-								has_benevolent_trait_trigger = yes
-								has_pleasant_trait_trigger = yes
-								has_pious_trait_trigger = yes
-								has_virtue_trigger = yes
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-#Slandering goes poorly
-character_event = {
-	id = cetic.334
-	desc = EVTDESCCETIC334
-	picture = GFX_evt_council
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:slanderer = {
-			clr_character_flag = no_scope_please
-		}
-	}
-	
-	option = {
-		name = EVTOPTACETIC334
-		custom_tooltip = {
-			text = council_dislikes_you_TT
-			hidden_tooltip = {
-				any_character = {
-					limit = {
-						NOT = {
-							is_friend = ROOT
-						}
-						is_voter = yes
-						liege = {
-							OR = {
-								has_landed_title = e_china
-								has_title_flag = has_chinese_mandate
-							}
-						}
-					}
-					opinion = {
-						modifier = slandered_emperor
-						who = FROM
-					}
-				}
-			}
-		}
-		event_target:slanderee = {
-			character_event = { id = cetic.340 } #Message to emperor
-		}
-	}
-}
-
-#Slandering goes well
-character_event = {
-	id = cetic.335
-	desc = EVTDESCCETIC335
-	picture = GFX_evt_council
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:slanderer = {
-			clr_character_flag = no_scope_please
-		}
-	}
-	
-	option = {
-		name = EVTOPTACETIC335
-		custom_tooltip = {
-			text = council_dislikes_TT
-			hidden_tooltip = {
-				any_character = {
-					limit = {
-						NOT = {
-							is_friend = event_target:slanderee
-						}
-						is_voter = yes
-						liege = {
-							OR = {
-								has_landed_title = e_china
-								has_title_flag = has_chinese_mandate
-							}
-						}
-					}
-					opinion = {
-						modifier = gnator_rumors_10
-						who = event_target:slanderee
-					}
-				}
-			}
-		}
-		if = {
-			limit = {
-				trait = grand_secretary
-			}
-			custom_tooltip = {
-				text = impauth_decrease_3_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = -3 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
-				}
-			}
-			custom_tooltip = {
-				text = impauth_increase_3_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 3 }
-				}
-			}
-		}
-		event_target:slanderee = {
-			character_event = { id = cetic.341 } #Message to emperor
-		}
-	}
-}
-
-#Slandering goes excellently
-character_event = {
-	id = cetic.336
-	desc = EVTDESCCETIC336
-	picture = GFX_evt_council
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:slanderer = {
-			clr_character_flag = no_scope_please
-		}
-	}
-	
-	option = {
-		name = EVTOPTACETIC336
-		any_character = {
-			limit = {
-				culture_group = han
-				is_landed = yes
-				NOT = {
-					is_friend = event_target:slanderee
-				}
-				NOR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
-				}
-			}
-			opinion = {
-				modifier = gnator_rumors_25
-				who = event_target:slanderee
-			}
-		}
-		if = {
-			limit = {
-				trait = grand_secretary
-			}
-			custom_tooltip = {
-				text = impauth_decrease_5_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = -5 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
-				}
-			}
-			custom_tooltip = {
-				text = impauth_increase_5_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 5 }
-				}
-			}
-		}
-		event_target:slanderee = {
-			character_event = { id = cetic.342 } #Message to emperor
-		}
-	}
-}
-
-#Slandering goes poorly - Council
-character_event = {
-	id = cetic.337
-	desc = EVTDESCCETIC337
-	picture = GFX_evt_council
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC337
-		custom_tooltip = {
-			text = council_hates_gnator_TT
-		}
-	}
-}
-
-#Slandering goes well - Council
-character_event = {
-	id = cetic.338
-	desc = EVTDESCCETIC338
-	picture = GFX_evt_scandal
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC338
-		custom_tooltip = {
-			text = council_dislikes_emp_TT
-		}
-	}
-}
-
-#Slandering goes excellently - Council
-character_event = {
-	id = cetic.339
-	desc = EVTDESCCETIC339
-	picture = GFX_evt_scandal
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC339
-		custom_tooltip = {
-			text = council_hates_emp_TT
-		}
-	}
-}
-
-#Slandering goes poorly - Emperor
-character_event = {
-	id = cetic.340
-	desc = EVTDESCCETIC340
-	picture = GFX_evt_chinese_emissary
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC340
-		opinion = {
-			modifier = opinion_slanderer
-			who = FROM
-		}
-		if = {
-			limit = {
-				is_friend = FROM
-			}
-			remove_friend = FROM
-		}
-	}
-}
-
-#Slandering goes well - Emperor
-character_event = {
-	id = cetic.341
-	desc = EVTDESCCETIC341
-	picture = GFX_evt_chinese_emissary
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC341
-		opinion = {
-			modifier = opinion_slanderer
-			who = FROM
-		}
-		if = {
-			limit = {
-				is_friend = FROM
-			}
-			remove_friend = FROM
-		}
-	}
-}
-
-#Slandering goes excellently - Emperor
-character_event = {
-	id = cetic.342
-	desc = EVTDESCCETIC342
-	picture = GFX_evt_chinese_emissary
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC342
-		opinion = {
-			modifier = opinion_slanderer
-			who = FROM
-		}
-		if = {
-			limit = {
-				is_friend = FROM
-			}
-			remove_friend = FROM
-		}
-	}
-}
-
-character_event = {
-	id = cetic.343
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		ROOT = {
-			save_event_target_as = slanderer
-		}
-		FROM = {
-			save_event_target_as = slanderee
-		}
-		character_event = { id = cetic.333 }
-	}
-}
-
-#Grain to the masses
-character_event = {
-	id = cetic.344
-	desc = EVTDESCCETIC344
-	picture = GFX_evt_stone_church
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC344
-		scaled_wealth = -0.05
-		custom_tooltip = {
-			text = send_excess_crops_TT
-			hidden_tooltip = {
-				random_list = {
-					50 = { #poor food
-						character_event = { id = cetic.345 }
-					}
-					50 = { #food
-						character_event = { id = cetic.346 }
-					}
-				}
-			}
-		}
-		ai_chance = {
-			factor = 0.25
-			modifier = {
-				factor = 2
-				trait = greedy
-			}
-			modifier = {
-				factor = 0.7
-				trait = kind
-			}
-			modifier = {
-				factor = 0.3
-				trait = charitable
-			}
-		}
-	}
-	option = {
-		name = EVTOPTBCETIC344
-		scaled_wealth = -0.30
-		custom_tooltip = {
-			text = send_crops_TT
-			hidden_tooltip = {
-				random_list = {
-					33 = { #poor food
-						character_event = { id = cetic.345 }
-					}
-					67 = { #food
-						character_event = { id = cetic.346 }
-					}
-				}
-			}
-		}
-		ai_chance = {
-			factor = 0.45
-			modifier = {
-				factor = 0.5
-				trait = greedy
-			}
-			modifier = {
-				factor = 1.1
-				trait = kind
-			}
-			modifier = {
-				factor = 1.2
-				trait = charitable
-			}
-		}
-	}
-	option = {
-		name = EVTOPTCCETIC344
-		scaled_wealth = -1
-		custom_tooltip = {
-			text = send_many_crops_TT
-			hidden_tooltip = {
-				random_list = {
-					10 = { #poor food
-						character_event = { id = cetic.345 }
-					}
-					90 = { #food
-						character_event = { id = cetic.346 }
-					}
-				}
-			}
-		}
-		ai_chance = {
-			factor = 0.30
-			modifier = {
-				factor = 0.5
-				trait = greedy
-			}
-			modifier = {
-				factor = 1.2
-				trait = kind
-			}
-			modifier = {
-				factor = 1.3
-				trait = charitable
-			}
-		}
-	}
-}
+#You cannot talk bad of the Son of Heaven
 
 #Food is bad
 character_event = {
@@ -4250,10 +3342,7 @@ character_event = {
 		name = opta_disappointing
 		if = {
 			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
-				}
+				government = sinic_bureaucracy_government
 			}
 			any_character = {
 				limit = {
@@ -4280,10 +3369,7 @@ character_event = {
 			}
 			any_character = {
 				limit = {
-					OR = {
-						has_landed_title = e_china
-						has_title_flag = has_chinese_mandate
-					}
+					government = sinic_bureaucracy_government
 				}
 				character_event = { id = cetic.369 }
 			}
@@ -4309,10 +3395,7 @@ character_event = {
 		name = opta_excellent
 		if = {
 			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
-				}
+				government = sinic_bureaucracy_government
 			}
 			any_character = {
 				limit = {
@@ -4339,10 +3422,7 @@ character_event = {
 			}
 			any_character = {
 				limit = {
-					OR = {
-						has_landed_title = e_china
-						has_title_flag = has_chinese_mandate
-					}
+					government = sinic_bureaucracy_government
 				}
 				character_event = { id = cetic.370 }
 			}
@@ -4371,10 +3451,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
-				}
+				government = sinic_bureaucracy_government
 			}
 			custom_tooltip = {
 				text = impauth_increase_3_TT
@@ -4406,10 +3483,7 @@ character_event = {
 		}
 		if = {
 			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
-				}
+				government = sinic_bureaucracy_government
 			}
 			custom_tooltip = {
 				text = impauth_decrease_5_TT
@@ -4849,7 +3923,6 @@ character_event = {
 letter_event = {
 	id = cetic.350
 	desc = EVTDESCCETIC350 
-	picture = GFX_evt_council_quarrelling
 	is_triggered_only = yes
 	
 	option = {
@@ -4864,10 +3937,8 @@ letter_event = {
 		if = {
 			limit = {
 				event_target:swayer = {
-					OR = {
-						has_landed_title = e_china
-						has_title_flag = has_chinese_mandate
-					}
+					government = sinic_bureaucracy_government
+					independent = yes
 				}
 			}
 			custom_tooltip = {
@@ -4902,11 +3973,15 @@ letter_event = {
 letter_event = {
 	id = cetic.351
 	desc = EVTDESCCETIC351 
-	picture = GFX_evt_council_agreement
 	is_triggered_only = yes
 	
 	immediate = {
-		e_china = {
+		e_new_california = {
+			holder_scope = {
+				save_event_target_as = emperor_sway
+			}
+		}
+		e_california = {
 			holder_scope = {
 				save_event_target_as = emperor_sway
 			}
@@ -4962,10 +4037,8 @@ letter_event = {
 		if = {
 			limit = {
 				event_target:swayer = {
-					OR = {
-						has_landed_title = e_china
-						has_title_flag = has_chinese_mandate
-					}
+					government = sinic_bureaucracy_government
+					independent = yes
 				}
 			}
 			custom_tooltip = {
@@ -5010,10 +4083,8 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
+		government = sinic_bureaucracy_government
+		independent = yes
 	}
 	
 	mean_time_to_happen = {
@@ -5114,7 +4185,7 @@ character_event = {
 				change_variable = { which = global_imp_auth value = -10 }
 			}
 		}
-		e_china = {
+		e_new_california = {
 			holder_scope = {
 				remove_opinion = {
 					modifier = gnator_succeed
@@ -5122,7 +4193,23 @@ character_event = {
 				}
 			}
 		}
-		e_china = {
+		e_new_california = {
+			holder_scope = {
+				opinion = {
+					modifier = gnator_betrayed
+					who = ROOT
+				}
+			}
+		}
+		e_california = {
+			holder_scope = {
+				remove_opinion = {
+					modifier = gnator_succeed
+					who = ROOT
+				}
+			}
+		}
+		e_california = {
 			holder_scope = {
 				opinion = {
 					modifier = gnator_betrayed
@@ -5280,9 +4367,9 @@ character_event = {
 		}
 		any_character = {
 			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
+				AND = {
+					goverment = sinic_bureaucracy_government
+					independent = yes
 				}
 			}
 			opinion = {
@@ -5311,9 +4398,9 @@ character_event = {
 		}
 		any_character = {
 			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
+				AND = {
+					goverment = sinic_bureaucracy_government
+					independent = yes
 				}
 			}
 			capital_scope = {
@@ -5325,9 +4412,9 @@ character_event = {
 		}
 		any_character = {
 			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
+				AND = {
+					goverment = sinic_bureaucracy_government
+					independent = yes
 				}
 			}
 			opinion = {
@@ -5355,9 +4442,9 @@ character_event = {
 		}
 		any_character = {
 			limit = {
-				OR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
+				AND = {
+					goverment = sinic_bureaucracy_government
+					independent = yes
 				}
 			}
 			character_event = { id = cetic.360 }
@@ -5428,9 +4515,9 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
+		AND = {
+			goverment = sinic_bureaucracy_government
+			independent = yes
 		}
 		NOT = {
 			has_character_modifier = imperial_authority
@@ -5443,9 +4530,9 @@ character_event = {
 	immediate = {
 		any_character = {
 			limit = {
-				NOR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
+				AND = {
+					goverment = sinic_bureaucracy_government
+					independent = yes
 				}
 			}
 			remove_trait = weak_emperor
@@ -5670,227 +4757,8 @@ character_event = {
 	}
 }
 
-#Emperor Controls Kingdom
-character_event = {
-	id = cetic.368
-	desc = EVTDESCCETIC368
-	picture = GFX_evt_china_expansionist
-	only_playable = yes
-	
-	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
-		OR = {
-			AND = {
-				completely_controls = k_baja_california
-				NOT = {
-					has_global_flag = bc_get
-				}
-			}
-			AND = {
-				completely_controls = k_jefferson
-				NOT = {
-					has_global_flag = j_get
-				}
-			}
-			AND = {
-				completely_controls = k_francisco
-				NOT = {
-					has_global_flag = f_get
-				}
-			}
-			AND = {
-				completely_controls = k_the_valley
-				NOT = {
-					has_global_flag = v_get
-				}
-			}
-			AND = {
-				completely_controls = k_nevada
-				NOT = {
-					has_global_flag = dv_get
-				}
-			}
-			AND = {
-				completely_controls = k_socal
-				NOT = {
-					has_global_flag = s_get
-				}
-			}
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = opta_excellent
-		if = {
-			limit = {
-				AND = {
-					completely_controls = k_baja_california
-					NOT = {
-						has_global_flag = bc_get
-					}
-				}
-			}
-			set_global_flag = bc_get
-			custom_tooltip = {
-				text = impauth_increase_10_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 10 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				AND = {
-					completely_controls = k_jefferson
-					NOT = {
-						has_global_flag = j_get
-					}
-				}
-			}
-			set_global_flag = j_get
-			custom_tooltip = {
-				text = impauth_increase_10_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 10 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				AND = {
-					completely_controls = k_francisco
-					NOT = {
-						has_global_flag = f_get
-					}
-				}
-			}
-			set_global_flag = f_get
-			custom_tooltip = {
-				text = impauth_increase_10_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 10 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				AND = {
-					completely_controls = k_the_valley
-					NOT = {
-						has_global_flag = v_get
-					}
-				}
-			}
-			set_global_flag = v_get
-			custom_tooltip = {
-				text = impauth_increase_10_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 10 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				AND = {
-					completely_controls = k_nevada
-					NOT = {
-						has_global_flag = dv_get
-					}
-				}
-			}
-			set_global_flag = dv_get
-			custom_tooltip = {
-				text = impauth_increase_10_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 10 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				AND = {
-					completely_controls = k_socal
-					NOT = {
-						has_global_flag = s_get
-					}
-				}
-			}
-			set_global_flag = s_get
-			custom_tooltip = {
-				text = impauth_increase_10_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 10 }
-				}
-			}
-		}
-	}
-}
-
-#Restoring California
-character_event = {
-	id = cetic.400
-	desc = EVTDESCCETIC400
-	picture = GFX_evt_china_expansionist
-	is_triggered_only = yes
-
-	option = {
-		name = EVTOPTACETIC400
-		hidden_tooltip = {
-			set_variable = { which = global_imp_auth value = 70 }
-		}
-		add_character_modifier = {
-			name = imperial_authority
-			duration = -1
-		}
-		set_global_flag = bc_get
-		set_global_flag = v_get
-		set_global_flag = j_get
-		set_global_flag = f_get
-		set_global_flag = dv_get
-		set_global_flag = s_get
-		add_trait = strong_emperor
-		any_character = {
-			limit = {
-				NOR = {
-					has_landed_title = e_china
-					has_title_flag = has_chinese_mandate
-				}
-				has_character_modifier = imperial_authority
-			}
-			remove_trait = weak_emperor
-			remove_trait = strong_emperor
-			remove_trait = figurehead
-			remove_character_modifier = imperial_authority
-			clr_character_flag = era_name
-		}
-		hidden_tooltip = {
-			if = {
-				limit = {
-					government = sinic_bureaucracy_government
-				}
-				any_demesne_title = {
-					limit = {
-						has_title_flag = primary_set
-					}
-					set_variable = { which = global_selfbureau_number which = bureau_number }
-					clr_title_flag = bureaucracy_set
-					clr_title_flag = primary_set
-				}
-				primary_title = {
-					set_variable = { which = bureau_number which = global_selfbureau_number }
-					set_title_flag = bureaucracy_set
-					set_title_flag = primary_set
-				}
-			}
-		}
-	}
-}
+#California Restoration
+#These Events were removed as they pertain specifically to California's Restoration which has no bearing to Asia
 
 character_event = {
 	id = cetic.402
@@ -5913,12 +4781,12 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		e_china = {
+		e_california = {
 			holder_scope = {
 				add_rival = ROOT
 			}
 		}
-		e_china = {
+		e_california = {
 			holder_scope = {
 				war = {
 					target = FROM 
@@ -5941,7 +4809,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		e_china = {
+		e_california = {
 			holder_scope = {
 				reverse_war = {
 					target = FROM 
@@ -5982,7 +4850,7 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		e_china = {
+		e_california = {
 			holder_scope = {
 				character_event = { id = cetic.405 }
 			}
@@ -5996,10 +4864,7 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		OR = {
-			has_landed_title = e_china
-			has_title_flag = has_chinese_mandate
-		}
+		goverment = sinic_bureaucracy_government
 	}
 	
 	immediate = {
@@ -6073,42 +4938,42 @@ character_event = {
 		}
 		#Positive Effects
 		hidden_tooltip = {
-			# if = {
-				# limit = {
-					# diplomacy = 12
-				# }
-				# set_variable = {
-					# which = diplomacy_bonus
-					# value = 0.5
-				# }
-			# }
-			# if = {
-				# limit = {
-					# martial = 12
-				# }
-				# set_variable = {
-					# which = martial_bonus
-					# value = 0.5
-				# }
-			# }
-			# if = {
-				# limit = {
-					# stewardship = 12
-				# }
-				# set_variable = {
-					# which = stewardship_bonus
-					# value = 0.5
-				# }
-			# }
-			# if = {
-				# limit = {
-					# learning = 12
-				# }
-				# set_variable = {
-					# which = learning_bonus
-					# value = 0.5
-				# }
-			# }
+			#if = {
+				#limit = {
+					#diplomacy = 12
+				#}
+				#set_variable = {
+					#which = diplomacy_bonus
+					#value = 0.5
+				#}
+			#}
+			#if = {
+				#limit = {
+					#martial = 12
+				#}
+				#set_variable = {
+					#which = martial_bonus
+					#value = 0.5
+				#}
+			#}
+			#if = {
+				#limit = {
+					#stewardship = 12
+				#}
+				#set_variable = {
+					#which = stewardship_bonus
+					#value = 0.5
+				#}
+			#}
+			#if = {
+				#limit = {
+					#learning = 12
+				#}
+				#set_variable = {
+					#which = learning_bonus
+					#value = 0.5
+				#}
+			#}
 			if = {
 				limit = {
 					trait = genius
@@ -6409,7 +5274,7 @@ character_event = {
 						# is_incapable = no
 						# in_hiding = no
 						OR = {
-							e_china = {
+							ROOT = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6434,7 +5299,16 @@ character_event = {
 						# is_incapable = no
 						# in_hiding = no
 						OR = {
-							e_china = {
+							e_california = {
+								has_holder = yes
+								holder_scope = {
+									reverse_opinion = {
+										who = PREVPREV
+										value > 40
+									}
+								}
+							}
+							e_new_california = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6459,7 +5333,16 @@ character_event = {
 						# is_incapable = no
 						# in_hiding = no
 						OR = {
-							e_china = {
+							e_california = {
+								has_holder = yes
+								holder_scope = {
+									reverse_opinion = {
+										who = PREVPREV
+										value > 60
+									}
+								}
+							}
+							e_new_california = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6484,7 +5367,16 @@ character_event = {
 						# is_incapable = no
 						# in_hiding = no
 						OR = {
-							e_china = {
+							e_california = {
+								has_holder = yes
+								holder_scope = {
+									reverse_opinion = {
+										who = PREVPREV
+										value > 80
+									}
+								}
+							}
+							e_new_california = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6824,7 +5716,7 @@ character_event = {
 						# is_incapable = no
 						# in_hiding = no
 						OR = {
-							e_china = {
+							ROOT = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6849,7 +5741,7 @@ character_event = {
 						# is_incapable = no
 						# in_hiding = no
 						OR = {
-							e_china = {
+							ROOT = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6874,7 +5766,7 @@ character_event = {
 						# is_incapable = no
 						# in_hiding = no
 						OR = {
-							e_china = {
+							ROOT = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6899,7 +5791,7 @@ character_event = {
 						# is_incapable = no
 						# in_hiding = no
 						OR = {
-							e_china = {
+							ROOT = {
 								has_holder = yes
 								holder_scope = {
 									reverse_opinion = {
@@ -6924,7 +5816,7 @@ character_event = {
 						# is_incapable = no
 						# in_hiding = no
 						OR = {
-							e_china = {
+							ROOT = {
 								has_holder = yes
 								holder_scope = {
 									is_rival = PREVPREV
@@ -7049,6 +5941,48 @@ character_event = {
 	}
 }
 
+#Gives grand_secretary trait to sanctioned grand_secretary when there is no grand_secretary
+character_event = {
+	id = cetic.409
+	hide_window = yes
+	trigger = {
+		trait = sanctioned_grand_secretary
+		NOR = {
+			any_character = {
+				trait = grand_secretary
+			}
+			any_character = {
+				trait = grand_secretary_heir
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_trait = sanctioned_grand_secretary
+		add_trait = grand_secretary
+		any_character = {
+			limit = {
+				goverment = sinic_bureaucracy_government
+				independent = yes
+			}
+			character_event = { id = cetic.410 } #Ping event
+		}
+	}
+}
+
+character_event = {
+	id = cetic.410
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { character_event = { id = cetic.300 } }
+	}
+}
 # ************************** Bureaucracy Events***********************
 
 #Variable for bureaucracy (on_startup)
@@ -7059,10 +5993,7 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		OR = {
-			government = chinese_mandate_government
-			government = sinic_bureaucracy_government
-		}
+		government = sinic_bureaucracy_government
 		higher_real_tier_than = BARON
 		NOT = {
 			primary_title = {
@@ -7099,7 +6030,7 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		has_landed_title = e_china
+		goverment = sinic_bureaucracy_government
 		NOT = {
 			has_global_flag = global_bureaucracy_set
 		}
@@ -7120,10 +6051,7 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		OR = {
-			government = chinese_mandate_government
-			government = sinic_bureaucracy_government
-		}
+		government = sinic_bureaucracy_government
 		higher_real_tier_than = BARON
 		NOT = {
 			primary_title = {
@@ -7205,10 +6133,7 @@ character_event = {
 	trigger = {
 		NOR = {
 			AND = {
-				OR = {
-					government = chinese_mandate_government
-					government = sinic_bureaucracy_government
-				}
+				government = sinic_bureaucracy_government
 				higher_real_tier_than = BARON
 			}
 			AND = {
@@ -7217,23 +6142,6 @@ character_event = {
 				}
 				government = feudal_government
 				higher_real_tier_than = BARON
-				OR = {
-					controls_religion = no
-					culture_group = han
-					culture_group = viet
-					culture_group = korean
-					is_bureaucratic_religion = yes
-					AND = {
-						religion = mahayana
-						culture_group = han
-					}
-					has_religion_feature = religion_temporal_head
-				}
-				OR = {
-					culture_group = han
-					culture_group = viet
-					culture_group = korean
-				}
 				is_patrician = no
 				NOT = { is_government_potential = roman_imperial_government }
 				NOT = { is_government_potential = order_government }
@@ -7435,7 +6343,7 @@ character_event = {
 			limit = {
 				event_target:inspectee = {
 					primary_title = {
-						check_variable = { which = bureau_number value > 70 days = 10 }
+						check_variable = { which = bureau_number value > 70 }
 					}
 				}
 			}
@@ -7445,7 +6353,7 @@ character_event = {
 			limit = {
 				event_target:inspectee = {
 					primary_title = {
-						check_variable = { which = bureau_number value < 40 days = 10 }
+						check_variable = { which = bureau_number value < 40 }
 					}
 				}
 			}
@@ -8225,7 +7133,6 @@ character_event = {
 			set_province_flag = office_set
 		}
 		set_character_flag = bureau_office_flag
-		#character_event = { id = cetic.537 }
 	}
 }
 
@@ -8273,102 +7180,8 @@ character_event = {
 		}
 		prestige = 100
 		set_character_flag = bureau_roads_flag
-		#character_event = { id = cetic.538 }
 	}
 }
-
-#Office yearly bonus
-# character_event = {
-	# id = cetic.537
-	# desc = DEBUG
-	# hide_window = yes
-	# trigger = {
-		# any_demesne_province = {
-			# has_province_modifier = bureau_offices
-		# }
-		# primary_title = {
-			# has_title_flag = bureaucracy_set
-		# }
-		# government = sinic_bureaucracy_government
-		
-		# OR = {
-			# NOT = {
-				# has_character_flag = bureau_office_flag
-			# }
-			# had_character_flag = {
-				# flag = bureau_office_flag
-				# days = 364
-			# }
-		# }
-	# }
-	
-	# mean_time_to_happen = {
-		# days = 1
-	# }
-	
-	# immediate = {
-		# primary_title = {
-			# change_variable = { which = bureau_number value = 1 }
-		# }
-		# clr_character_flag = bureau_office_flag
-		# set_character_flag = bureau_office_flag
-		# character_event = { id = cetic.537 days = 365 }
-	# }
-	# option = {
-		# name = DEBUG
-	# }
-# }
-
-#Roads yearly bonus
-# character_event = {
-	# id = cetic.538
-	# hide_window = yes
-	# trigger = {
-		# any_demesne_province = {
-			# has_province_modifier = bureau_roads
-		# }
-		# government = sinic_bureaucracy_government
-		# primary_title = {
-			# has_title_flag = bureaucracy_set
-		# }
-		# OR = {
-			# NOT = {
-				# has_character_flag = bureau_roads_flag
-			# }
-			# had_character_flag = {
-				# flag = bureau_roads_flag
-				# days = 364
-			# }
-		# }
-	# }
-	
-	# mean_time_to_happen = {
-		# days = 1
-	# }
-	
-	# immediate = {
-		# clr_character_flag = bureau_roads_flag
-		# set_character_flag = bureau_roads_flag
-		# change_variable = { which = global_bureau_number value = 0.5 }
-		# character_event = { id = cetic.538 days = 365 }
-	# }
-# }
-
-# Succession Set up
-# character_event = {
-	# id = cetic.539 
-	# hide_window = yes
-	# is_triggered_only = yes
-	# trigger = {
-		# government = sinic_bureaucracy_government
-		# higher_real_tier_than = BARON
-	# }
-	# immediate = {
-		# current_heir = {
-			# character_event = { id = cetic.524 }
-		# }
-	# }
-# }
 
 #Succession High Bureau
 character_event = {
@@ -8387,60 +7200,6 @@ character_event = {
 		}
 	}
 }
-
-#Fall to Feudal
-character_event = {
-	id = cetic.542
-	picture = GFX_evt_china_isolationist
-	desc = EVTDESCCETIC542
-	trigger = {
-		has_character_modifier = bureaucracy
-		primary_title = {
-			check_variable = { which = bureau_number value <= 0 }
-			NOT = {
-				has_title_flag = devolved_bureaucracy
-			}
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = EVTOPTACETIC542
-		set_government_type = feudal_government
-		primary_title = {
-			set_title_flag = devolved_bureaucracy
-		}
-	}
-}
-
-#Rise From Feudal
-character_event = {
-	id = cetic.543
-	picture = GFX_evt_china_isolationist
-	desc = EVTDESCCETIC543
-	trigger = {
-		has_character_modifier = bureaucracy
-		government = feudal_government
-		primary_title = {
-			check_variable = { which = bureau_number value = 25 }
-			has_title_flag = devolved_bureaucracy
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = EVTOPTACETIC543
-		set_government_type = sinic_bureaucracy_government
-		primary_title = {
-			clr_title_flag = devolved_bureaucracy
-		}
-	}
-}
-
 #Yearly Bureaucracy Change
 character_event = {
 	id = cetic.544
@@ -9313,38 +8072,6 @@ character_event = {
 	}	
 }
 
-# character_event = {
-	# id = cetic.545
-	# hide_window = yes
-	# mean_time_to_happen = {
-		# days = 1
-	# }
-	# trigger = {
-		# any_demesne_title = {
-			# NOT = {
-				# primary_title = {
-					# title = PREV
-				# }
-			# }
-			# has_title_flag = primary_set
-		# }
-	# }
-	# immediate = {
-		# any_demesne_title = {
-			# limit = {
-				# NOT = {
-				# primary_title = {
-						# title = PREV
-					# }
-				# }
-				# has_title_flag = primary_set
-			# }
-			# clr_title_flag = primary_set
-			# clr_title_flag = bureaucracy_set
-		# }
-	# }
-# }
-
 #Average Bureaucracy Calculation (five_year_pulse)
 character_event = {
 	id = cetic.546
@@ -9354,7 +8081,7 @@ character_event = {
 	religion = catholic
 	
 	trigger = {
-		has_landed_title = k_papal_state
+		has_landed_title = k_conferentia
 	}
 	
 	immediate = {
@@ -9390,7 +8117,7 @@ character_event = {
 	id = cetic.600
 	hide_window = yes
 	trigger = {
-		has_landed_title = k_papal_state
+		has_landed_title = k_conferentia
 		check_variable = { which = global_bureau_number value >= 100 }
 	}
 	
@@ -9407,7 +8134,7 @@ character_event = {
 	id = cetic.601
 	hide_window = yes
 	trigger = {
-		has_landed_title = k_papal_state
+		has_landed_title = k_conferentia
 		check_variable = { which = global_bureau_number value < 15 }
 	}
 	
@@ -9424,7 +8151,7 @@ character_event = {
 	id = cetic.602
 	hide_window = yes
 	trigger = {
-		has_landed_title = k_papal_state
+		has_landed_title = k_conferentia
 		check_variable = { which = global_imp_auth value >= 100 }
 	}
 	
@@ -9441,7 +8168,7 @@ character_event = {
 	id = cetic.603
 	hide_window = yes
 	trigger = {
-		has_landed_title = k_papal_state
+		has_landed_title = k_conferentia
 		check_variable = { which = global_imp_auth value < 0 }
 	}
 	

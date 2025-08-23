@@ -704,33 +704,6 @@ character_event = {
 
 						join_society = weizza_society
 					}
-					
-					100 = {
-						trigger = { can_join_society = basaih_society }
-
-						mult_modifier = {
-							factor = 3
-
-							OR = {
-								trait = devout
-								trait = scholar
-								trait = theologian
-								trait = bani_balamon
-								learning >= 16
-								is_priest = yes
-							}
-						}
-						mult_modifier = {
-							factor = 2
-							basaih_society = { num_of_society_members < 15 }
-						}
-						mult_modifier = {
-							factor = 2
-							basaih_society = { num_of_society_members < 10 }
-						}
-
-						join_society = basaih_society
-					}
 
 					200 = {
 						trigger = { can_join_society = secret_religious_society_catholic }
