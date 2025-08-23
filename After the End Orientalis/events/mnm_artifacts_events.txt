@@ -125,87 +125,75 @@ character_event = {
 				modifier = {
 					factor = 0
 					AND = {
-						religion_group = indian_group
+						religion_group = buddhist_group
 						has_artifact = buddhas_tooth
 					}
 				}
-				modifier = {
-					factor = 0
-					AND = {
-						OR = {
-							religion = norse_pagan
-							religion = norse_pagan_reformed
-						}
-						has_artifact = mjolnir
-						has_artifact = andvaranaut
-					}
-				}
-				modifier = {
-					factor = 0
-					AND = {
-						OR = {
-							religion = west_african_pagan
-							religion = west_african_pagan_reformed
-						}
-						has_artifact = fetish_of_souls
-					}
-				}
-				modifier = {
-					factor = 0
-					AND = {
-						OR = {
-							religion = finnish_pagan
-							religion = finnish_pagan_reformed
-						}
-						has_artifact = sampo
-					}
-				}
-				modifier = {
-					factor = 0
-					AND = {
-						OR = {
-							religion = slavic_pagan
-							religion = slavic_pagan_reformed
-						}
-						has_artifact = axe_of_perun
-					}
-				}
-				modifier = {
-					factor = 0
-					AND = {
-						OR = {
-							religion = baltic_pagan
-							religion = baltic_pagan_reformed
-						}
-						has_artifact = axe_of_perkunas
-					}
-				}
-				modifier = {
-					factor = 0
-					AND = {
-						OR = {
-							religion = tengri_pagan
-							religion = tengri_pagan_reformed
-						}
-						has_artifact = yada_tashy
-					}
-				}
+				#UNUSED ARTIFACTS
+				#modifier = {
+				#	factor = 0
+				#	AND = {
+				#		OR = {
+				#			religion = norse_pagan
+				#			religion = norse_pagan_reformed
+				#		}
+				#		has_artifact = mjolnir
+				#		has_artifact = andvaranaut
+				#	}
+				#}
+				#modifier = {
+				#	factor = 0
+				#	AND = {
+				#		OR = {
+				#			religion = west_african_pagan
+				#			religion = west_african_pagan_reformed
+				#		}
+				#		has_artifact = fetish_of_souls
+				#	}
+				#}
+				#modifier = {
+				#	factor = 0
+				#	AND = {
+				#		OR = {
+				#			religion = finnish_pagan
+				#			religion = finnish_pagan_reformed
+				#		}
+				#		has_artifact = sampo
+				#	}
+				#}
+				#modifier = {
+				#	factor = 0
+				#	AND = {
+				#		OR = {
+				#			religion = slavic_pagan
+				#			religion = slavic_pagan_reformed
+				#		}
+				#		has_artifact = axe_of_perun
+				#	}
+				#}
+				#modifier = {
+				#	factor = 0
+				#	AND = {
+				#		OR = {
+				#			religion = baltic_pagan
+				#			religion = baltic_pagan_reformed
+				#		}
+				#		has_artifact = axe_of_perkunas
+				#	}
+				#}
+				#modifier = {
+				#	factor = 0
+				#	AND = {
+				#		OR = {
+				#			religion = tengri_pagan
+				#			religion = tengri_pagan_reformed
+				#		}
+				#		has_artifact = yada_tashy
+				#	}
+				#}
 				event_target:rumor_councillor = { character_event = { id = MNM.9001 } } 
 			}
 			30 = { #Good rumor
-				modifier = { 
-					factor = 0 
-					OR = {
-						religion = finnish_pagan
-						religion = finnish_pagan_reformed
-						religion = slavic_pagan
-						religion = slavic_pagan_reformed
-						religion = baltic_pagan
-						religion = baltic_pagan_reformed
-						religion = tengri_pagan
-						religion = tengri_pagan_reformed
-					} 
-				}
 				modifier = {
 					factor = 0
 					AND = {
@@ -248,9 +236,7 @@ character_event = {
 				modifier = {
 					factor = 0
 					AND = {
-						religion_group = indian_group
-						has_artifact = mountain_of_light_diamond
-						has_artifact = elaborate_danda
+						religion_group = buddhist_group
 						has_artifact = sarira
 						has_artifact = sariraka_actual_body_part
 					}
@@ -258,13 +244,21 @@ character_event = {
 				modifier = {
 					factor = 0
 					AND = {
-						OR = {
-							religion = norse_pagan
-							religion = norse_pagan_reformed
-						}
-						has_artifact = gjallarhorn
+						religion_group = indian_group
+						has_artifact = mountain_of_light_diamond
+						has_artifact = elaborate_danda
 					}
 				}
+				#modifier = {
+				#	factor = 0
+				#	AND = {
+				#		OR = {
+				#			religion = norse_pagan
+				#			religion = norse_pagan_reformed
+				#		}
+				#		has_artifact = gjallarhorn
+				#	}
+				#}
 				event_target:rumor_councillor = { character_event = { id = MNM.9002 } }
 			} 
 			60 = { #Weak rumor
@@ -352,7 +346,10 @@ character_event = {
 				modifier = {
 					factor = 0
 					AND = {
-						religion_group = indian_group
+						OR = {
+							religion_group = buddhist_group
+							religion_group = indian_group_group
+						}
 						has_artifact = famous_head
 						has_artifact = famous_tongue
 						has_artifact = infamous_tongue
@@ -1347,7 +1344,6 @@ character_event = {
 						factor = 0 
 						NOR = { 
 							religion_group = zoroastrian_group 
-							culture_group = iranian
 						} 
 					}
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
@@ -1364,9 +1360,6 @@ character_event = {
 						factor = 0 
 						NOR = { 
 							religion_group = zoroastrian_group 
-							culture_group = iranian
-							has_landed_title = e_persia
-							has_landed_title = k_persia
 						} 
 					}
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
@@ -1404,7 +1397,6 @@ character_event = {
 						factor = 0 
 						NOR = { 
 							religion_group = zoroastrian_group 
-							culture_group = iranian
 						} 
 					}
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
@@ -1421,7 +1413,7 @@ character_event = {
 					modifier = { 
 						factor = 0 
 						NOT = {
-							religion_group = indian_group
+							religion_group = buddhist_group
 						}
 					}
 					modifier = {
@@ -1465,13 +1457,7 @@ character_event = {
 					modifier = { 
 						factor = 0 
 						NOT = {
-							religion_group = indian_group
-						}
-					}
-					modifier = { 
-						factor = 0.5
-						NOT = {
-							religion = buddhist
+							religion_group = buddhist_group
 						}
 					}
 					modifier = {
@@ -1489,13 +1475,7 @@ character_event = {
 					modifier = { 
 						factor = 0 
 						NOT = {
-							religion_group = indian_group
-						}
-					}
-					modifier = { 
-						factor = 0.5
-						NOT = {
-							religion = buddhist
+							religion_group = buddhist_group
 						}
 					}
 					modifier = {
@@ -1512,147 +1492,24 @@ character_event = {
 				
 
 				##Pagan artifacts##
-				#Germanic artifacts
-				20 = {
-					modifier = { 
-						factor = 0 
-						NOR = {
-							religion = norse_pagan
-							religion = norse_pagan_reformed
-						}
-					}
-					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
-					modifier = {
-						factor = 0
-						has_artifact = gjallarhorn
-					}
-					#Insert artifact event here
-					character_event = { id = MNM.9600 } #Gjallarhorn
-				}
-
-				10 = {
-					modifier = { 
-						factor = 0 
-						NOR = {
-							religion = norse_pagan
-							religion = norse_pagan_reformed
-						}
-					}
-					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
-					modifier = {
-						factor = 0
-						has_artifact = andvaranaut
-					}
-					#Insert artifact event here
-					narrative_event = { id = MNM.9601 } #Andvaranaut/Andvari's Gift
-				}
-
-				10 = {
-					modifier = { 
-						factor = 0 
-						NOR = {
-							religion = norse_pagan
-							religion = norse_pagan_reformed
-						}
-					}
-					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
-					modifier = {
-						factor = 0
-						has_artifact = mjolnir
-					}
-					#Insert artifact event here
-					narrative_event = { id = MNM.9602 } #Mjolnir
-				}
-
-				#West African artifacts
-				10 = {
-					modifier = { 
-						factor = 0 
-						NOR = {
-							religion = west_african_pagan
-							religion = west_african_pagan_reformed
-						}
-					}
-					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
-					modifier = {
-						factor = 0
-						has_artifact = fetish_of_souls
-					}
-					#Insert artifact event here
-					narrative_event = { id = MNM.9603 } #Fetish of Souls
-				}
-
-				#Finnish artifacts
-				10 = {
-					modifier = { 
-						factor = 0 
-						NOR = {
-							religion = finnish_pagan
-							religion = finnish_pagan_reformed
-						}
-					}
-					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
-					modifier = {
-						factor = 0
-						has_artifact = sampo
-					}
-					#Insert artifact event here
-					narrative_event = { id = MNM.9604 } #Sampo/Mill of Fortune
-				}
-
-				#Slavic artifacts
-				10 = {
-					modifier = { 
-						factor = 0 
-						NOR = {
-							religion = slavic_pagan
-							religion = slavic_pagan_reformed
-						}
-					}
-					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
-					modifier = {
-						factor = 0
-						has_artifact = axe_of_perun
-					}
-					#Insert artifact event here
-					narrative_event = { id = MNM.9605 } #Axe of Perun
-				}
-
-				#Romuvan artifacts
-				10 = {
-					modifier = { 
-						factor = 0 
-						NOR = {
-							religion = baltic_pagan
-							religion = baltic_pagan_reformed
-						}
-					}
-					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
-					modifier = {
-						factor = 0
-						has_artifact = axe_of_perkunas
-					}
-					#Insert artifact event here
-					narrative_event = { id = MNM.9606 } #Axe of Perkunas
-				}
 
 				#Tengri artifacts
-				10 = {
-					modifier = { 
-						factor = 0 
-						NOR = {
-							religion = tengri_pagan
-							religion = tengri_pagan_reformed
-						}
-					}
-					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
-					modifier = {
-						factor = 0
-						has_artifact = yada_tashy
-					}
-					#Insert artifact event here
-					narrative_event = { id = MNM.9607 } #Yada Tashy/Rain Stone
-				}
+				#10 = {
+				#	modifier = { 
+				#		factor = 0 
+				#		NOR = {
+				#			religion = tengri_pagan
+				#			religion = tengri_pagan_reformed
+				#		}
+				#	}
+				#	modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
+				#	modifier = {
+				#		factor = 0
+				#		has_artifact = yada_tashy
+				#	}
+				#	#Insert artifact event here
+				#	narrative_event = { id = MNM.9607 } #Yada Tashy/Rain Stone
+				#}
 
 			}
 		}
@@ -6869,814 +6726,15 @@ character_event = {
 ##PAGAN##
 #Germanic#
 
-#Gjallarhorn
-character_event = {
-    id = MNM.9600
-    desc = EVTDESC_MNM_9600
-    picture = GFX_evt_pagan_artifacts
-    border = GFX_event_normal_frame_religion
-
-    is_triggered_only = yes
-
-    has_dlc = "Mystics"
-
-    option = { #it's their duty
-        name = EVTOPT_MEDIUM_ARTIFACT_DUTY
-        prestige = 10
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_very_disappointed
-			years = 15
-		}
-        add_artifact = gjallarhorn
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #monetary reward
-        name = EVTOPT_MEDIUM_ARTIFACT_MONEY
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 10
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_medium_artifact
-			years = 15
-		}
-		transfer_scaled_wealth = {
-			to = FROM
-			value = 0.5
-			min = 35
-		}
-
-        add_artifact = gjallarhorn
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    
-    option = { #reward them with a favor
-        name = EVTOPT_MEDIUM_ARTIFACT_FAVOR
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 10
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_medium_artifact
-			years = 15
-		}
-        reverse_add_favor = FROM
-        add_artifact = gjallarhorn
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #praise them (prestige reward)
-    	trigger = {
-			diplomacy = 15
-		}
-        name = EVTOPT_MEDIUM_ARTIFACT_PRESTIGE
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_praised
-			years = 10
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_medium_artifact
-			years = 5
-		}
-		FROM = { prestige = 50 }
-		random = {
-			chance = 20
-			add_friend = FROM
-		}
-        add_artifact = gjallarhorn
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    after = { clr_artifact_flagsmodifiers_effect = yes }
-}
-
-#Andvaranaut/Andvari's Gift
-narrative_event = {
-    id = MNM.9601
-    title = EVTNAME_MNM_9601
-    desc = EVTDESC_MNM_9601
-    picture = GFX_evt_pagan_artifacts
-    border = GFX_event_narrative_frame_religion
-
-    is_triggered_only = yes
-
-    has_dlc = "Mystics"
-
-    option = { #it's their duty
-        name = EVTOPT_MAJOR_ARTIFACT_DUTY
-        prestige = 10
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_extremely_disappointed
-			years = 20
-		}
-        add_artifact = andvaranaut
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #monetary reward
-        name = EVTOPT_MAJOR_ARTIFACT_MONEY
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-		transfer_scaled_wealth = {
-			to = FROM
-			value = 1
-			min = 50
-		}
-
-        add_artifact = andvaranaut
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    
-    option = { #reward them with a favor
-        name = EVTOPT_MAJOR_ARTIFACT_FAVOR
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-        reverse_add_favor = FROM
-        add_artifact = andvaranaut
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #praise them (prestige reward)
-    	trigger = {
-			diplomacy = 15
-		}
-        name = EVTOPT_MAJOR_ARTIFACT_PRESTIGE
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_praised
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 5
-		}
-		FROM = { prestige = 100 }
-		random = {
-			chance = 20
-			add_friend = FROM
-		}
-        add_artifact = andvaranaut
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    after = { clr_artifact_flagsmodifiers_effect = yes }
-}
-
-#Mjolnir
-narrative_event = {
-    id = MNM.9602
-    title = EVTNAME_MNM_9602
-    desc = EVTDESC_MNM_9602
-    picture = GFX_evt_pagan_artifacts
-    border = GFX_event_narrative_frame_religion
-
-    is_triggered_only = yes
-
-    has_dlc = "Mystics"
-
-    option = { #it's their duty
-        name = EVTOPT_MAJOR_ARTIFACT_DUTY
-        prestige = 10
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_extremely_disappointed
-			years = 20
-		}
-        add_artifact = mjolnir
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #monetary reward
-        name = EVTOPT_MAJOR_ARTIFACT_MONEY
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-		transfer_scaled_wealth = {
-			to = FROM
-			value = 1
-			min = 50
-		}
-
-        add_artifact = mjolnir
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    
-    option = { #reward them with a favor
-        name = EVTOPT_MAJOR_ARTIFACT_FAVOR
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-        reverse_add_favor = FROM
-        add_artifact = mjolnir
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #praise them (prestige reward)
-    	trigger = {
-			diplomacy = 15
-		}
-        name = EVTOPT_MAJOR_ARTIFACT_PRESTIGE
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_praised
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 5
-		}
-		FROM = { prestige = 100 }
-		random = {
-			chance = 20
-			add_friend = FROM
-		}
-        add_artifact = mjolnir
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    after = { clr_artifact_flagsmodifiers_effect = yes }
-}
-
 #West African#
-
-#Fetish of Souls
-narrative_event = {
-    id = MNM.9603
-    title = EVTNAME_MNM_9603
-    desc = EVTDESC_MNM_9603
-    picture = GFX_evt_pagan_artifacts
-    border = GFX_event_narrative_frame_religion
-
-    is_triggered_only = yes
-
-    has_dlc = "Mystics"
-
-    option = { #it's their duty
-        name = EVTOPT_MAJOR_ARTIFACT_DUTY
-        prestige = 10
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_extremely_disappointed
-			years = 20
-		}
-        add_artifact = fetish_of_souls
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #monetary reward
-        name = EVTOPT_MAJOR_ARTIFACT_MONEY
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-		transfer_scaled_wealth = {
-			to = FROM
-			value = 1
-			min = 50
-		}
-
-        add_artifact = fetish_of_souls
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    
-    option = { #reward them with a favor
-        name = EVTOPT_MAJOR_ARTIFACT_FAVOR
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-        reverse_add_favor = FROM
-        add_artifact = fetish_of_souls
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #praise them (prestige reward)
-    	trigger = {
-			diplomacy = 15
-		}
-        name = EVTOPT_MAJOR_ARTIFACT_PRESTIGE
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_praised
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 5
-		}
-		FROM = { prestige = 100 }
-		random = {
-			chance = 20
-			add_friend = FROM
-		}
-        add_artifact = fetish_of_souls
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    after = { clr_artifact_flagsmodifiers_effect = yes }
-}
 
 #Finnish#
 
-#Sampo
-narrative_event = {
-    id = MNM.9604
-    title = EVTNAME_MNM_9604
-    desc = EVTDESC_MNM_9604
-    picture = GFX_evt_pagan_artifacts
-    border = GFX_event_narrative_frame_religion
-
-    is_triggered_only = yes
-
-    has_dlc = "Mystics"
-
-    option = { #it's their duty
-        name = EVTOPT_MAJOR_ARTIFACT_DUTY
-        prestige = 10
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_extremely_disappointed
-			years = 20
-		}
-        add_artifact = sampo
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #monetary reward
-        name = EVTOPT_MAJOR_ARTIFACT_MONEY
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-		transfer_scaled_wealth = {
-			to = FROM
-			value = 1
-			min = 50
-		}
-
-        add_artifact = sampo
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    
-    option = { #reward them with a favor
-        name = EVTOPT_MAJOR_ARTIFACT_FAVOR
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-        reverse_add_favor = FROM
-        add_artifact = sampo
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #praise them (prestige reward)
-    	trigger = {
-			diplomacy = 15
-		}
-        name = EVTOPT_MAJOR_ARTIFACT_PRESTIGE
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_praised
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 5
-		}
-		FROM = { prestige = 100 }
-		random = {
-			chance = 20
-			add_friend = FROM
-		}
-        add_artifact = sampo
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    after = { clr_artifact_flagsmodifiers_effect = yes }
-}
-
 #Slavic#
-
-#Axe of Perun
-narrative_event = {
-    id = MNM.9605
-    title = EVTNAME_MNM_9605
-    desc = EVTDESC_MNM_9605
-    picture = GFX_evt_pagan_artifacts
-    border = GFX_event_narrative_frame_religion
-
-    is_triggered_only = yes
-
-    has_dlc = "Mystics"
-
-    option = { #it's their duty
-        name = EVTOPT_MAJOR_ARTIFACT_DUTY
-        prestige = 10
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_extremely_disappointed
-			years = 20
-		}
-        add_artifact = axe_of_perun
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #monetary reward
-        name = EVTOPT_MAJOR_ARTIFACT_MONEY
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-		transfer_scaled_wealth = {
-			to = FROM
-			value = 1
-			min = 50
-		}
-
-        add_artifact = axe_of_perun
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    
-    option = { #reward them with a favor
-        name = EVTOPT_MAJOR_ARTIFACT_FAVOR
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-        reverse_add_favor = FROM
-        add_artifact = axe_of_perun
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #praise them (prestige reward)
-    	trigger = {
-			diplomacy = 15
-		}
-        name = EVTOPT_MAJOR_ARTIFACT_PRESTIGE
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_praised
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 5
-		}
-		FROM = { prestige = 100 }
-		random = {
-			chance = 20
-			add_friend = FROM
-		}
-        add_artifact = axe_of_perun
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    after = { clr_artifact_flagsmodifiers_effect = yes }
-}
 
 #Romuva#
 
-#Axe of Perkunas
-narrative_event = {
-    id = MNM.9606
-    title = EVTNAME_MNM_9606
-    desc = EVTDESC_MNM_9606
-    picture = GFX_evt_pagan_artifacts
-    border = GFX_event_narrative_frame_religion
-
-    is_triggered_only = yes
-
-    has_dlc = "Mystics"
-
-    option = { #it's their duty
-        name = EVTOPT_MAJOR_ARTIFACT_DUTY
-        prestige = 10
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_extremely_disappointed
-			years = 20
-		}
-        add_artifact = axe_of_perkunas
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #monetary reward
-        name = EVTOPT_MAJOR_ARTIFACT_MONEY
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-		transfer_scaled_wealth = {
-			to = FROM
-			value = 1
-			min = 50
-		}
-
-        add_artifact = axe_of_perkunas
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    
-    option = { #reward them with a favor
-        name = EVTOPT_MAJOR_ARTIFACT_FAVOR
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-        reverse_add_favor = FROM
-        add_artifact = axe_of_perkunas
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #praise them (prestige reward)
-    	trigger = {
-			diplomacy = 15
-		}
-        name = EVTOPT_MAJOR_ARTIFACT_PRESTIGE
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_praised
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 5
-		}
-		FROM = { prestige = 100 }
-		random = {
-			chance = 20
-			add_friend = FROM
-		}
-        add_artifact = axe_of_perkunas
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    after = { clr_artifact_flagsmodifiers_effect = yes }
-}
-
 #Tengri#
-
-#Yada Tashy
-narrative_event = {
-    id = MNM.9607
-    title = EVTNAME_MNM_9607
-    desc = EVTDESC_MNM_9607
-    picture = GFX_evt_pagan_artifacts
-    border = GFX_event_narrative_frame_religion
-
-    is_triggered_only = yes
-
-    has_dlc = "Mystics"
-
-    option = { #it's their duty
-        name = EVTOPT_MAJOR_ARTIFACT_DUTY
-        prestige = 10
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_extremely_disappointed
-			years = 20
-		}
-        add_artifact = yada_tashy
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #monetary reward
-        name = EVTOPT_MAJOR_ARTIFACT_MONEY
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-		transfer_scaled_wealth = {
-			to = FROM
-			value = 1
-			min = 50
-		}
-
-        add_artifact = yada_tashy
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    
-    option = { #reward them with a favor
-        name = EVTOPT_MAJOR_ARTIFACT_FAVOR
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_rewarded
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 15
-		}
-        reverse_add_favor = FROM
-        add_artifact = yada_tashy
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-
-    option = { #praise them (prestige reward)
-    	trigger = {
-			diplomacy = 15
-		}
-        name = EVTOPT_MAJOR_ARTIFACT_PRESTIGE
-
-        reverse_opinion = {
-			who = FROM
-			modifier = opinion_was_praised
-			years = 15
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_found_major_artifact
-			years = 5
-		}
-		FROM = { prestige = 100 }
-		random = {
-			chance = 20
-			add_friend = FROM
-		}
-        add_artifact = yada_tashy
-        new_artifact = {
-			set_creation_date = 1.1.1
-		}
-    }
-    after = { clr_artifact_flagsmodifiers_effect = yes }
-}
 
 ###Seal of Solomon removes possession###
 character_event = {
@@ -10475,9 +9533,7 @@ character_event = {
 		        	limit = { 
 		        		FROM = {
 			        		OR = {
-			        			religion_group = muslim 
-			        			religion = west_african_pagan
-			        			religion = west_african_pagan_reformed
+			        			religion_group = muslim
 			        		}
 			        	}
 		        	}
@@ -10490,9 +9546,8 @@ character_event = {
 		        	limit = { 
 		        		FROM = {
 			        		OR = {
+			        			religion_group = buddhist_group
 			        			religion_group = indian_group
-			        			religion = bon
-        						religion = bon_reformed
 			        		}
 			        	}
 		        	}
@@ -10506,28 +9561,12 @@ character_event = {
 		        		FROM = {
 			        		OR = {
 			        			religion_group = zoroastrian_group
-			        			religion = zun_pagan
-			        			religion = zun_pagan_reformed
 							}
 						}
 					}
 		        	add_artifact = circlet_of_the_heavens
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        	add_artifact = staff_of_majesty
-		        	new_artifact = { set_artifact_flag = stolen_by_smith }
-		        }
-		        else_if = {
-		        	limit = {
-		        		FROM = {
-			        		OR = {
-			        			religion = norse_pagan
-			        			religion = norse_pagan_reformed
-			        		}
-			        	}
-		        	}
-		        	add_artifact = crown_of_crows
-		        	new_artifact = { set_artifact_flag = stolen_by_smith }
-		        	add_artifact = sword_of_heroes
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        }
 		        else = {
@@ -10559,8 +9598,6 @@ character_event = {
 		        		FROM = {
 			        		OR = {
 			        			religion_group = muslim 
-			        			religion = west_african_pagan
-			        			religion = west_african_pagan_reformed
 			        		}
 			        	}
 		        	}
@@ -10573,9 +9610,8 @@ character_event = {
 		        	limit = { 
 		        		FROM = {
 			        		OR = {
+			        			religion_group = buddhist_group
 			        			religion_group = indian_group
-			        			religion = bon
-        						religion = bon_reformed
 			        		}
 			        	}
 		        	}
@@ -10589,28 +9625,12 @@ character_event = {
 		        		FROM = {
 			        		OR = {
 			        			religion_group = zoroastrian_group
-			        			religion = zun_pagan
-			        			religion = zun_pagan_reformed
 							}
 						}
 					}
 		        	add_artifact = circlet_of_the_heavens
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        	add_artifact = golden_staff
-		        	new_artifact = { set_artifact_flag = stolen_by_smith }
-		        }
-		        else_if = {
-		        	limit = { 
-		        		FROM = {
-			        		OR = {
-			        			religion = norse_pagan
-			        			religion = norse_pagan_reformed
-			        		}
-			        	}
-		        	}
-		        	add_artifact = crown_of_the_sea
-		        	new_artifact = { set_artifact_flag = stolen_by_smith }
-		        	add_artifact = golden_sword
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        }
 		        else = {
@@ -10642,8 +9662,6 @@ character_event = {
 		        		FROM = {
 			        		OR = {
 			        			religion_group = muslim 
-			        			religion = west_african_pagan
-			        			religion = west_african_pagan_reformed
 			        		}
 			        	}
 		        	}
@@ -10656,9 +9674,8 @@ character_event = {
 		        	limit = { 
 		        		FROM = {
 			        		OR = {
+			        			religion_group = buddhist_group
 			        			religion_group = indian_group
-			        			religion = bon
-        						religion = bon_reformed
 			        		}
 			        	}
 		        	}
@@ -10672,28 +9689,12 @@ character_event = {
 		        		FROM = {
 			        		OR = {
 			        			religion_group = zoroastrian_group
-			        			religion = zun_pagan
-			        			religion = zun_pagan_reformed
 							}
 						}
 					}
 		        	add_artifact = circlet_of_twilight
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        	add_artifact = silver_staff
-		        	new_artifact = { set_artifact_flag = stolen_by_smith }
-		        }
-		        else_if = {
-		        	limit = {
-		        		FROM = {
-			        		OR = {
-			        			religion = norse_pagan
-			        			religion = norse_pagan_reformed
-			        		}
-			        	}
-		        	}
-		        	add_artifact = iron_crown
-		        	new_artifact = { set_artifact_flag = stolen_by_smith }
-		        	add_artifact = engraved_sword
 		        	new_artifact = { set_artifact_flag = stolen_by_smith }
 		        }
 		        else = {

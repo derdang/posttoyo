@@ -69,7 +69,7 @@ character_event = {
     				break = yes
     			}
     		}
-			#Everyone is somehow in prison so just use teh leader anyway
+			#Everyone is somehow in prison so just use the leader anyway
     	}
     	FROM = { leader = { character_event = { id = wizard.101 } } }
     }
@@ -143,7 +143,7 @@ character_event = {
     						is_within_diplo_range = ROOT
 							opinion = { who = ROOT value = 0 }
     					}
-    					save_event_target_as = hermetic_collaborator
+    					save_event_target_as = weizza_collaborator
     				}
     			}
     		}
@@ -168,7 +168,7 @@ character_event = {
 							opinion = { who = ROOT value = 0 }
 							same_realm = ROOT
     					}
-    					save_event_target_as = hermetic_collaborator
+    					save_event_target_as = weizza_collaborator
     				}
     			}
     		}
@@ -179,7 +179,7 @@ character_event = {
     			}
     			random_courtier_or_vassal = {
     				limit = { has_minor_title =  title_weizza_society_apprentice }
-    				save_event_target_as = hermetic_collaborator
+    				save_event_target_as = weizza_collaborator
     			}
     		}
     	}
@@ -193,26 +193,26 @@ character_event = {
     				NOT = { any_courtier_or_vassal = { has_minor_title =  title_weizza_society_apprentice } }
     				ai = no
     			}
-    			event_target:hermetic_collaborator = { character_event = { id = wizard.1404 days = 7 random = 7 } }
+    			event_target:weizza_collaborator = { character_event = { id = wizard.1404 days = 7 random = 7 } }
     		}
 			
 			20 = { #Build a laboratory
 				trigger = {
-					NOT = { has_character_flag = building_laboratory }
-					NOT = { has_character_flag = built_laboratory }
+					NOT = { has_character_flag = building_tantric_center }
+					NOT = { has_character_flag = built_tantric_center }
 					OR = {
     					ai = no
     					society_rank == 4
     				}
     				is_landed = yes
 				}
-				event_target:hermetic_collaborator = { character_event = { id = wizard.1120 days = 7 random = 7 } }
+				event_target:weizza_collaborator = { character_event = { id = wizard.1120 days = 7 random = 7 } }
 			}
     		15 = { #Find a rare scroll/book/tablet
 				trigger = {
 					is_landed = yes
 				}
-    			event_target:hermetic_collaborator = { character_event = { id = wizard.1417 days = 7 random = 7 } }
+    			event_target:weizza_collaborator = { character_event = { id = wizard.1417 days = 7 random = 7 } }
     		}
 			20 = { #Acquire/gather ingredients
 				trigger = {
@@ -222,9 +222,9 @@ character_event = {
 							has_artifact_flag = ingredient
 						}
 					}
-					event_target:hermetic_collaborator = { ai = yes }
+					event_target:weizza_collaborator = { ai = yes }
 				}
-				event_target:hermetic_collaborator = { character_event = { id = wizard.1801 days = 7 random = 7 } }
+				event_target:weizza_collaborator = { character_event = { id = wizard.1801 days = 7 random = 7 } }
 			}
     		10 = { #Infiltrate lab
     			trigger = {
@@ -233,8 +233,8 @@ character_event = {
     						is_within_diplo_range = ROOT
     						NOR = { 
     							character = ROOT
-    							character = event_target:hermetic_collaborator
-    							reverse_opinion = { who = event_target:hermetic_collaborator value = 20 }
+    							character = event_target:weizza_collaborator
+    							reverse_opinion = { who = event_target:weizza_collaborator value = 20 }
     							reverse_opinion = { who = ROOT value = 20 }
     							has_character_flag = infiltration_rival
     							has_character_flag = infiltration_mutual_dislike
@@ -243,10 +243,10 @@ character_event = {
     					}
     				}
     			}
-    			event_target:hermetic_collaborator = { character_event = { id = wizard.1430 days = 7 random = 7 } }
+    			event_target:weizza_collaborator = { character_event = { id = wizard.1430 days = 7 random = 7 } }
     		}
 			10 = { #Observe stars
-				event_target:hermetic_collaborator = { character_event = { id = wizard.1828 days = 7 random = 7 } } 
+				event_target:weizza_collaborator = { character_event = { id = wizard.1828 days = 7 random = 7 } } 
 			}
 			
 			105 = { # AI bypasses missions at times
@@ -302,15 +302,15 @@ character_event = {
 #Mission: Building a Laboratory
 #Flags:
 #Temporary:
-#building_laboratory (cleared at end)
-#decided_on_glass (cleared at end)
-#decided_on_crucibles (cleared at end)
-#decided_on_tools (cleared at end)
-#decided_on_books (cleared at end)
+#building_tantric_center (cleared at end)
+#decided_on_small_mandala (cleared at end)
+#decided_on_large_mandala (cleared at end)
+#decided_on_tantric_tools (cleared at end)
+#decided_on_tantras (cleared at end)
 #Not Temporary:
-#built_laboratory (not cleared -> set at end, marks this as done for this character)
-#hidden_lab (not cleared -> to be used to weight stealing of secrets)
-#very_hidden_lab (not cleared -> to be used to weight stealing of secrets)
+#built_tantric_center (not cleared -> set at end, marks this as done for this character)
+#hidden_grove (not cleared -> to be used to weight stealing of secrets)
+#very_hidden_grove (not cleared -> to be used to weight stealing of secrets)
 character_event = {
 	id = wizard.1100
 	desc = EVTDESC_wizard_1100
@@ -323,12 +323,12 @@ character_event = {
 		name = EVTOPTA_wizard_1100
 		hidden_tooltip = {
 			character_event = { id = wizard.1101 days = 7 }
-			set_variable = { which = laboratory_level value = 1 }
+			set_variable = { which = center_level value = 1 }
 		}
 	}
 	option = {
 		name = EVTOPTB_wizard_1100
-		clr_character_flag = building_laboratory
+		clr_character_flag = building_tantric_center
 		wealth = 50
 	}
 }
@@ -343,17 +343,17 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_quest = quest_weizza_society_build_laboratory
+		has_quest = quest_weizza_society_build_tantric_center
 	}
 
 	option = {
 		name = EVTOPTA_wizard_1101 #In my Castle, hidden away
 		custom_tooltip = {
-			text = hidden_lab_tooltip
-			set_character_flag = hidden_lab
+			text = hidden_grove_tooltip
+			set_character_flag = hidden_grove
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 2 }
+			change_variable = { which = center_level value = 2 }
 			character_event = { id = wizard.1102 days = 30 }
 		}
 	}
@@ -363,7 +363,7 @@ character_event = {
 			text = accessible_lab_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 5 }
+			change_variable = { which = center_level value = 5 }
 			character_event = { id = wizard.1102 days = 30 }
 		}
 	}
@@ -377,11 +377,11 @@ character_event = {
 			capital_scope = { port = yes }
 		}
 		custom_tooltip = {
-			text = very_hidden_lab_tooltip
-			set_character_flag = very_hidden_lab
+			text = very_hidden_grove_tooltip
+			set_character_flag = very_hidden_grove
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 3 }
+			change_variable = { which = center_level value = 3 }
 			character_event = { id = wizard.1102 days = 30 }
 		}
 	}
@@ -397,11 +397,11 @@ character_event = {
 			}
 		}
 		custom_tooltip = {
-			text = very_hidden_lab_tooltip
-			set_character_flag = very_hidden_lab
+			text = very_hidden_grove_tooltip
+			set_character_flag = very_hidden_grove
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 3 }
+			change_variable = { which = center_level value = 3 }
 			character_event = { id = wizard.1102 days = 30 }
 		}
 	}
@@ -422,23 +422,23 @@ character_event = {
 			text = cheap_laboratory_setup
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 1 }
-			set_variable = { which = lab_ambition value = 1 }
+			change_variable = { which = center_level value = 1 }
+			set_variable = { which = tancen_ambition value = 1 }
 			random_list = {
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_glass } }
+					trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 					character_event = { id = wizard.1103 days = 60 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+					trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 					character_event = { id = wizard.1104 days = 60 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_tools } }
+					trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 					character_event = { id = wizard.1105 days = 60 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_books } }
+					trigger = { NOT = { has_character_flag = decided_on_tantras } }
 					character_event = { id = wizard.1106 days = 60 }
 				}
 			}
@@ -457,23 +457,23 @@ character_event = {
 			text = efficient_laboratory_setup
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 3 }
-			set_variable = { which = lab_ambition value = 2 }
+			change_variable = { which = center_level value = 3 }
+			set_variable = { which = tancen_ambition value = 2 }
 			random_list = {
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_glass } }
+					trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 					character_event = { id = wizard.1103 days = 30 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+					trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 					character_event = { id = wizard.1104 days = 30 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_tools } }
+					trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 					character_event = { id = wizard.1105 days = 30 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_books } }
+					trigger = { NOT = { has_character_flag = decided_on_tantras } }
 					character_event = { id = wizard.1106 days = 30 }
 				}
 			}
@@ -504,23 +504,23 @@ character_event = {
 			text = large_laboratory_setup
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 5 }
-			set_variable = { which = lab_ambition value = 3 }
+			change_variable = { which = center_level value = 5 }
+			set_variable = { which = tancen_ambition value = 3 }
 			random_list = {
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_glass } }
+					trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 					character_event = { id = wizard.1103 days = 30 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+					trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 					character_event = { id = wizard.1104 days = 30 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_tools } }
+					trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 					character_event = { id = wizard.1105 days = 30 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_books } }
+					trigger = { NOT = { has_character_flag = decided_on_tantras } }
 					character_event = { id = wizard.1106 days = 30 }
 				}
 			}
@@ -551,23 +551,23 @@ character_event = {
 			text = extravagant_laboratory_setup
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 8 }
-			set_variable = { which = lab_ambition value = 4 }
+			change_variable = { which = center_level value = 8 }
+			set_variable = { which = tancen_ambition value = 4 }
 			random_list = {
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_glass } }
+					trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 					character_event = { id = wizard.1103 days = 30 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+					trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 					character_event = { id = wizard.1104 days = 30 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_tools } }
+					trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 					character_event = { id = wizard.1105 days = 30 }
 				}
 				25 = {
-					trigger = { NOT = { has_character_flag = decided_on_books } }
+					trigger = { NOT = { has_character_flag = decided_on_tantras } }
 					character_event = { id = wizard.1106 days = 30 }
 				}
 			}
@@ -593,7 +593,7 @@ character_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_character_flag = decided_on_glass
+			set_character_flag = decided_on_small_mandala
 		}
 	}
 	
@@ -604,31 +604,31 @@ character_event = {
 		}
 		hidden_effect = {
 			change_variable = {
-				which = laboratory_level value = 1
+				which = center_level value = 1
 			}
-			change_variable = { which = lab_ambition value = -1 }
+			change_variable = { which = tancen_ambition value = -1 }
 			if = {
 				limit = {
 					check_variable = {
-						which = lab_ambition
+						which = tancen_ambition
 						value = 1
 					}
 				}
 				random_list = {
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_glass } }
+						trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 						character_event = { id = wizard.1103 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+						trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 						character_event = { id = wizard.1104 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_tools } }
+						trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 						character_event = { id = wizard.1105 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_books } }
+						trigger = { NOT = { has_character_flag = decided_on_tantras } }
 						character_event = { id = wizard.1106 days = 30 }
 					}
 				}
@@ -637,7 +637,7 @@ character_event = {
 				limit = {
 					NOT = {
 						check_variable = {
-							which = lab_ambition
+							which = tancen_ambition
 							value = 1
 						}
 					}
@@ -653,30 +653,30 @@ character_event = {
 			text = fancy_laboratory_glass_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 2 }
-			change_variable = { which = lab_ambition value = -1 }
+			change_variable = { which = center_level value = 2 }
+			change_variable = { which = tancen_ambition value = -1 }
 			if = {
 				limit = {
 					check_variable = {
-						which = lab_ambition
+						which = tancen_ambition
 						value = 1
 					}
 				}
 				random_list = {
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_glass } }
+						trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 						character_event = { id = wizard.1103 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+						trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 						character_event = { id = wizard.1104 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_tools } }
+						trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 						character_event = { id = wizard.1105 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_books } }
+						trigger = { NOT = { has_character_flag = decided_on_tantras } }
 						character_event = { id = wizard.1106 days = 30 }
 					}
 				}
@@ -685,7 +685,7 @@ character_event = {
 				limit = {
 					NOT = {
 						check_variable = {
-							which = lab_ambition
+							which = tancen_ambition
 							value = 1
 						}
 					}
@@ -707,7 +707,7 @@ character_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_character_flag = decided_on_crucibles
+			set_character_flag = decided_on_large_mandala
 		}
 	}
 
@@ -717,30 +717,30 @@ character_event = {
 			text = non_fancy_laboratory_crucibles_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 1 }
-			change_variable = { which = lab_ambition value = -1 }
+			change_variable = { which = center_level value = 1 }
+			change_variable = { which = tancen_ambition value = -1 }
 			if = {
 				limit = {
 					check_variable = {
-						which = lab_ambition
+						which = tancen_ambition
 						value = 1
 					}
 				}
 				random_list = {
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_glass } }
+						trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 						character_event = { id = wizard.1103 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+						trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 						character_event = { id = wizard.1104 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_tools } }
+						trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 						character_event = { id = wizard.1105 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_books } }
+						trigger = { NOT = { has_character_flag = decided_on_tantras } }
 						character_event = { id = wizard.1106 days = 30 }
 					}
 				}
@@ -749,7 +749,7 @@ character_event = {
 				limit = {
 					NOT = {
 						check_variable = {
-							which = lab_ambition
+							which = tancen_ambition
 							value = 1
 						}
 					}
@@ -765,30 +765,30 @@ character_event = {
 			text = fancy_laboratory_crucibles_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 2 }
-			change_variable = { which = lab_ambition value = -1 }
+			change_variable = { which = center_level value = 2 }
+			change_variable = { which = tancen_ambition value = -1 }
 			if = {
 				limit = {
 					check_variable = {
-						which = lab_ambition
+						which = tancen_ambition
 						value = 1
 					}
 				}
 				random_list = {
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_glass } }
+						trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 						character_event = { id = wizard.1103 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+						trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 						character_event = { id = wizard.1104 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_tools } }
+						trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 						character_event = { id = wizard.1105 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_books } }
+						trigger = { NOT = { has_character_flag = decided_on_tantras } }
 						character_event = { id = wizard.1106 days = 30 }
 					}
 				}
@@ -797,7 +797,7 @@ character_event = {
 				limit = {
 					NOT = {
 						check_variable = {
-							which = lab_ambition
+							which = tancen_ambition
 							value = 1
 						}
 					}
@@ -819,7 +819,7 @@ character_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_character_flag = decided_on_tools
+			set_character_flag = decided_on_tantric_tools
 		}
 	}
 
@@ -829,30 +829,30 @@ character_event = {
 			text = non_fancy_laboratory_tools_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 1 }
-			change_variable = { which = lab_ambition value = -1 }
+			change_variable = { which = center_level value = 1 }
+			change_variable = { which = tancen_ambition value = -1 }
 			if = {
 				limit = {
 					check_variable = {
-						which = lab_ambition
+						which = tancen_ambition
 						value = 1
 					}
 				}
 				random_list = {
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_glass } }
+						trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 						character_event = { id = wizard.1103 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+						trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 						character_event = { id = wizard.1104 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_tools } }
+						trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 						character_event = { id = wizard.1105 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_books } }
+						trigger = { NOT = { has_character_flag = decided_on_tantras } }
 						character_event = { id = wizard.1106 days = 30 }
 					}
 				}
@@ -861,7 +861,7 @@ character_event = {
 				limit = {
 					NOT = {
 						check_variable = {
-							which = lab_ambition
+							which = tancen_ambition
 							value = 1
 						}
 					}
@@ -877,30 +877,30 @@ character_event = {
 			text = fancy_laboratory_tools_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 2 }
-			change_variable = { which = lab_ambition value = -1 }
+			change_variable = { which = center_level value = 2 }
+			change_variable = { which = tancen_ambition value = -1 }
 			if = {
 				limit = {
 					check_variable = {
-						which = lab_ambition
+						which = tancen_ambition
 						value = 1
 					}
 				}
 				random_list = {
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_glass } }
+						trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 						character_event = { id = wizard.1103 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+						trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 						character_event = { id = wizard.1104 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_tools } }
+						trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 						character_event = { id = wizard.1105 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_books } }
+						trigger = { NOT = { has_character_flag = decided_on_tantras } }
 						character_event = { id = wizard.1106 days = 30 }
 					}
 				}
@@ -909,7 +909,7 @@ character_event = {
 				limit = {
 					NOT = {
 						check_variable = {
-							which = lab_ambition
+							which = tancen_ambition
 							value = 1
 						}
 					}
@@ -932,7 +932,7 @@ character_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_character_flag = decided_on_books
+			set_character_flag = decided_on_tantras
 		}
 	}
 
@@ -942,30 +942,30 @@ character_event = {
 			text = non_fancy_laboratory_books_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 1 }
-			change_variable = { which = lab_ambition value = -1 }
+			change_variable = { which = center_level value = 1 }
+			change_variable = { which = tancen_ambition value = -1 }
 			if = {
 				limit = {
 					check_variable = {
-						which = lab_ambition
+						which = tancen_ambition
 						value = 1
 					}
 				}
 				random_list = {
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_glass } }
+						trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 						character_event = { id = wizard.1103 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+						trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 						character_event = { id = wizard.1104 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_tools } }
+						trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 						character_event = { id = wizard.1105 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_books } }
+						trigger = { NOT = { has_character_flag = decided_on_tantras } }
 						character_event = { id = wizard.1106 days = 30 }
 					}
 				}
@@ -974,7 +974,7 @@ character_event = {
 				limit = {
 					NOT = {
 						check_variable = {
-							which = lab_ambition
+							which = tancen_ambition
 							value = 1
 						}
 					}
@@ -990,30 +990,30 @@ character_event = {
 			text = fancy_laboratory_books_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 2 }
-			change_variable = { which = lab_ambition value = -1 }
+			change_variable = { which = center_level value = 2 }
+			change_variable = { which = tancen_ambition value = -1 }
 			if = {
 				limit = {
 					check_variable = {
-						which = lab_ambition
+						which = tancen_ambition
 						value = 1
 					}
 				}
 				random_list = {
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_glass } }
+						trigger = { NOT = { has_character_flag = decided_on_small_mandala } }
 						character_event = { id = wizard.1103 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_crucibles } }
+						trigger = { NOT = { has_character_flag = decided_on_large_mandala } }
 						character_event = { id = wizard.1104 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_tools } }
+						trigger = { NOT = { has_character_flag = decided_on_tantric_tools } }
 						character_event = { id = wizard.1105 days = 30 }
 					}
 					25 = {
-						trigger = { NOT = { has_character_flag = decided_on_books } }
+						trigger = { NOT = { has_character_flag = decided_on_tantras } }
 						character_event = { id = wizard.1106 days = 30 }
 					}
 				}
@@ -1022,7 +1022,7 @@ character_event = {
 				limit = {
 					NOT = {
 						check_variable = {
-							which = lab_ambition
+							which = tancen_ambition
 							value = 1
 						}
 					}
@@ -1044,17 +1044,17 @@ character_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_character_flag = built_laboratory
-			clr_character_flag = building_laboratory
-			clr_character_flag = decided_on_glass
-			clr_character_flag = decided_on_crucibles
-			clr_character_flag = decided_on_tools
-			clr_character_flag = decided_on_books
+			set_character_flag = built_tantric_center
+			clr_character_flag = building_tantric_center
+			clr_character_flag = decided_on_small_mandala
+			clr_character_flag = decided_on_large_mandala
+			clr_character_flag = decided_on_tantric_tools
+			clr_character_flag = decided_on_tantras
 			if = {
 				limit = {
 					NOT = {
 						check_variable = {
-							which = laboratory_level
+							which = center_level
 							value = 6
 						}
 					}
@@ -1064,12 +1064,12 @@ character_event = {
 			if = {
 				limit = {
 					check_variable = {
-						which = laboratory_level
+						which = center_level
 						value = 6
 					}
 					NOT = {
 						check_variable = {
-							which = laboratory_level
+							which = center_level
 							value = 12
 						}
 					}
@@ -1079,12 +1079,12 @@ character_event = {
 			if = {
 				limit = {
 					check_variable = {
-						which = laboratory_level
+						which = center_level
 						value = 12
 					}
 					NOT = {
 						check_variable = {
-							which = laboratory_level
+							which = center_level
 							value = 18
 						}
 					}
@@ -1094,12 +1094,12 @@ character_event = {
 			if = {
 				limit = {
 					check_variable = {
-						which = laboratory_level
+						which = center_level
 						value = 18
 					}
 					NOT = {
 						check_variable = {
-							which = laboratory_level
+							which = center_level
 							value = 23
 						}
 					}
@@ -1109,7 +1109,7 @@ character_event = {
 			if = {
 				limit = {
 					check_variable = {
-						which = laboratory_level
+						which = center_level
 						value = 23
 					}
 				}
@@ -1131,7 +1131,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_wizard_1108 #
 		add_character_modifier = {
-			name = "cheap_laboratory"
+			name = "cheap_center"
 			duration = -1
 		}
 		hidden_effect = {
@@ -1153,7 +1153,7 @@ character_event = {
 		name = EVTOPTA_wizard_1109 #
 		economy_techpoints = 5
 		add_character_modifier = {
-			name = "normal_laboratory"
+			name = "normal_center"
 			duration = -1
 		}
 		hidden_effect = {
@@ -1175,7 +1175,7 @@ character_event = {
 		name = EVTOPTA_wizard_1110 #
 		economy_techpoints = 15
 		add_character_modifier = {
-			name = "good_laboratory"
+			name = "good_center"
 			duration = -1
 		}
 		hidden_effect = {
@@ -1198,7 +1198,7 @@ narrative_event = {
 		name = EVTOPTA_wizard_1111 #
 		economy_techpoints = 30
 		add_character_modifier = {
-			name = "great_laboratory"
+			name = "great_center"
 			duration = -1
 		}
 		hidden_effect = {
@@ -1221,7 +1221,7 @@ narrative_event = {
 		name = EVTOPTA_wizard_1112 #
 		economy_techpoints = 50
 		add_character_modifier = {
-			name = "best_laboratory"
+			name = "best_center"
 			duration = -1
 		}
 		hidden_effect = {
@@ -1248,7 +1248,7 @@ character_event = {
 		            interesting_courtier_selection_score = yes
 		            prev_dislikes_this_score = yes
 		        }
-				save_event_target_as = sacrifice_for_science
+				save_event_target_as = sacrifice_for_mysticism
 			}
 		}
 	}
@@ -1256,11 +1256,11 @@ character_event = {
 	option = {
 		name = EVTOPTA_wizard_1113 #
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = -2 }
+			change_variable = { which = center_level value = -2 }
 		}
 		if = {
-			limit = { has_character_flag = hidden_lab } #Lab built in castle
-			event_target:sacrifice_for_science = {
+			limit = { has_character_flag = hidden_grove } #Lab built in castle
+			event_target:sacrifice_for_mysticism = {
 				add_maimed_trait_effect = yes
 				if = {
 					limit = {
@@ -1281,12 +1281,12 @@ character_event = {
 			text = efforts_to_improve_lab_security_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = -1 }
+			change_variable = { which = center_level value = -1 }
 		}
 		wealth = -10
 		if = {
-			limit = { has_character_flag = hidden_lab } #Lab built in castle
-			event_target:sacrifice_for_science = {
+			limit = { has_character_flag = hidden_grove } #Lab built in castle
+			event_target:sacrifice_for_mysticism = {
 				add_maimed_trait_effect = yes
 				if = {
 					limit = {
@@ -1330,7 +1330,7 @@ character_event = {
 			text = accomodate_gossipers_tooltip
 		}
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = -2 }
+			change_variable = { which = center_level value = -2 }
 		}
 		
 	}
@@ -1352,14 +1352,14 @@ character_event = {
 	option = {
 		name = EVTOPTA_wizard_1115 #
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = -1 }
+			change_variable = { which = center_level value = -1 }
 		}
 	}
 	option = {
 		name = EVTOPTB_wizard_1115 #
 		wealth = -25
 		hidden_effect = {
-			change_variable = { which = laboratory_level value = 1 }
+			change_variable = { which = center_level value = 1 }
 		}
 	}
 
@@ -1399,7 +1399,7 @@ society_quest_event = {
 	desc = {
 		text = EVTDESC_wizard_1121
 		trigger = { 
-			event_target:hermetic_collaborator = {
+			event_target:weizza_collaborator = {
 				NOT = { has_minor_title = title_weizza_society_apprentice }
 			}
 		}
@@ -1407,7 +1407,7 @@ society_quest_event = {
 	desc = {
 		text = EVTDESC_wizard_1121_apprentice
 		trigger = { 
-			event_target:hermetic_collaborator = {
+			event_target:weizza_collaborator = {
 				has_minor_title = title_weizza_society_apprentice
 			}
 		}
@@ -2473,8 +2473,8 @@ character_event = {
     		limit = { 
     			event_target:infiltration_target = {
     				OR = {
-    					has_character_flag = hidden_lab
-    					has_character_flag = very_hidden_lab
+    					has_character_flag = hidden_grove
+    					has_character_flag = very_hidden_grove
     				}
     			}
     		}
@@ -2484,8 +2484,8 @@ character_event = {
     		limit = { 
     			event_target:infiltration_target = {
     				NOR = {
-    					has_character_flag = hidden_lab
-    					has_character_flag = very_hidden_lab
+    					has_character_flag = hidden_grove
+    					has_character_flag = very_hidden_grove
     				}
     			}
     		}
@@ -2518,7 +2518,7 @@ letter_event = {
 
         		}
         		33 = { #It goes slowly
-					modifier = { event_target:infiltration_target = { has_character_flag = hidden_lab } factor = 1.5 }
+					modifier = { event_target:infiltration_target = { has_character_flag = hidden_grove } factor = 1.5 }
 					modifier = { FROM = { intrigue = 12 } factor = 1.1 }
         			modifier = { FROM = { intrigue = 14 } factor = 1.1 }
         			modifier = { FROM = { intrigue = 16 } factor = 1.1 }
@@ -2526,7 +2526,7 @@ letter_event = {
         			FROM = { character_event = { id = wizard.1434 days = 45 random = 30 } }
         		}
         		33 = { #It goes super slow
-        			modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } factor = 2 }
+        			modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } factor = 2 }
         			FROM = { character_event = { id = wizard.1434 days = 90 random = 45 } }
         		}
         	}
@@ -2567,19 +2567,19 @@ character_event = {
 	}
 
     desc = {
-    	trigger = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } }
+    	trigger = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } }
     	text = EVTDESC_wizard_1435_A
     }
     desc = {
-    	trigger = { event_target:infiltration_target = { has_character_flag = hidden_lab } }
+    	trigger = { event_target:infiltration_target = { has_character_flag = hidden_grove } }
     	text = EVTDESC_wizard_1435_B
     }
     desc = {
     	trigger = { 
     		event_target:infiltration_target = { 
     			NOR = {
-    				has_character_flag = very_hidden_lab
-    				has_character_flag = hidden_lab
+    				has_character_flag = very_hidden_grove
+    				has_character_flag = hidden_grove
     			}
     		}
     	}	
@@ -2602,18 +2602,18 @@ character_event = {
         tooltip_info = diplomacy
 
         if = {
-        	limit = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } }
+        	limit = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } }
         	scaled_wealth = { value = -0.75 min = -75 }
         }
         if = {
-        	limit = { event_target:infiltration_target = { has_character_flag = hidden_lab } }
+        	limit = { event_target:infiltration_target = { has_character_flag = hidden_grove } }
         	scaled_wealth = { value = -0.5 min = -50 }
         }
         if = {
         	limit = { 
         		NOR = {
-        			event_target:infiltration_target = { has_character_flag = very_hidden_lab }
-        			event_target:infiltration_target = { has_character_flag = hidden_lab } 
+        			event_target:infiltration_target = { has_character_flag = very_hidden_grove }
+        			event_target:infiltration_target = { has_character_flag = hidden_grove } 
         		}
         	}
         	scaled_wealth = { value = -0.3 min = -30 }
@@ -2660,8 +2660,8 @@ character_event = {
         		custom_tooltip = { text = EVTOPTX_wizard_1435_SUCCESS_TT character_event = { id = wizard.1436 days = 7 } }
         	}
         	40 = {
-        		modifier = { event_target:infiltration_target = { has_character_flag = hidden_lab } factor = 1.2 }
-        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } factor = 1.5 }
+        		modifier = { event_target:infiltration_target = { has_character_flag = hidden_grove } factor = 1.2 }
+        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } factor = 1.5 }
         		custom_tooltip = { 
 	        		text = EVTOPTX_wizard_1435_FAIL_TT
 	        		hidden_effect = {
@@ -2710,8 +2710,8 @@ character_event = {
         		custom_tooltip = { text = EVTOPTX_wizard_1435_SUCCESS_TT character_event = { id = wizard.1436 days = 7 } }
         	}
         	50 = {
-        		modifier = { event_target:infiltration_target = { has_character_flag = hidden_lab } factor = 1.2 }
-        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } factor = 1.5 }
+        		modifier = { event_target:infiltration_target = { has_character_flag = hidden_grove } factor = 1.2 }
+        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } factor = 1.5 }
         		custom_tooltip = { 
 	        		text = EVTOPTX_wizard_1435_FAIL_TT
 	        		hidden_effect = {
@@ -2753,8 +2753,8 @@ character_event = {
         		custom_tooltip = { text = EVTOPTX_wizard_1435_SUCCESS_TT character_event = { id = wizard.1438 days = 7 } }
         	}
         	40 = {
-        		modifier = { event_target:infiltration_target = { has_character_flag = hidden_lab } factor = 1.2 }
-        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } factor = 1.5 }
+        		modifier = { event_target:infiltration_target = { has_character_flag = hidden_grove } factor = 1.2 }
+        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } factor = 1.5 }
         		custom_tooltip = { 
 	        		text = EVTOPTX_wizard_1435_FAIL_TT
 	        		hidden_effect = {
@@ -3394,8 +3394,8 @@ character_event = {
     			set_character_flag = good_theft
     		}
     		33 = { #Ok theft
-    			modifier = { event_target:infiltration_target = { has_character_flag = hidden_lab } factor = 1.2 }
-        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } factor = 1.5 }
+    			modifier = { event_target:infiltration_target = { has_character_flag = hidden_grove } factor = 1.2 }
+        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } factor = 1.5 }
     			set_character_flag = ok_theft
     		}
     	}
@@ -3583,7 +3583,7 @@ character_event = {
     immediate = {
     	random_list = {
 	    	40 = { #Total destruction
-	    		trigger = { event_target:infiltration_target = { has_character_flag = built_laboratory } }
+	    		trigger = { event_target:infiltration_target = { has_character_flag = built_tantric_center } }
 	    		modifier = { learning = 12 factor = 1.2 }
 				modifier = { learning = 13 factor = 1.2 }
 				modifier = { learning = 16 factor = 1.2 }
@@ -3599,9 +3599,9 @@ character_event = {
 				set_character_flag = lab_damage
 	    	}
 	    	5 = { #You die in an accident
-	    		modifier = { event_target:infiltration_target = { has_character_flag = hidden_lab } factor = 1.2 }
-	        	modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } factor = 1.5 }
-	    		trigger = { event_target:infiltration_target = { has_character_flag = built_laboratory } }
+	    		modifier = { event_target:infiltration_target = { has_character_flag = hidden_grove } factor = 1.2 }
+	        	modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } factor = 1.5 }
+	    		trigger = { event_target:infiltration_target = { has_character_flag = built_tantric_center } }
 	    		modifier = { NOT = { learning = 10 } factor = 1.5 }
 	    		modifier = { NOT = { learning = 8 } factor = 2 }
 	    		modifier = { NOT = { learning = 6 } factor = 2 }
@@ -3712,9 +3712,9 @@ character_event = {
     			best_laboratory 	= { remove_character_modifier = best_laboratory }
     		}
     		hidden_effect = {
-    			clr_character_flag = built_laboratory
-    			clr_character_flag = hidden_lab
-    			clr_character_flag = very_hidden_lab
+    			clr_character_flag = built_tantric_center
+    			clr_character_flag = hidden_grove
+    			clr_character_flag = very_hidden_grove
     		}
         }
 
@@ -3778,8 +3778,8 @@ character_event = {
 				FROM = { character_event = { id = wizard.1446 days = 20 } }
 			}
 			20 = { #Bad theft
-				modifier = { event_target:infiltration_target = { has_character_flag = hidden_lab } factor = 1.2 }
-        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } factor = 1.5 }
+				modifier = { event_target:infiltration_target = { has_character_flag = hidden_grove } factor = 1.2 }
+        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } factor = 1.5 }
 				modifier = { NOT = { learning = 10 } factor = 1.5 }
 				modifier = { NOT = { learning = 8 } factor = 2 }
 				modifier = { NOT = { intrigue = 10 } factor = 1.5 }
@@ -3848,8 +3848,8 @@ character_event = {
 				FROM = { character_event = { id = wizard.1448 days = 20 } }
 			}
 			10 = { #They die
-				modifier = { event_target:infiltration_target = { has_character_flag = hidden_lab } factor = 1.2 }
-        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_lab } factor = 1.5 }
+				modifier = { event_target:infiltration_target = { has_character_flag = hidden_grove } factor = 1.2 }
+        		modifier = { event_target:infiltration_target = { has_character_flag = very_hidden_grove } factor = 1.5 }
 				modifier = { NOT = { learning = 10 } factor = 1.5 }
 				modifier = { NOT = { learning = 8 } factor = 2 }
 				modifier = { NOT = { intrigue = 10 } factor = 1.5 }
@@ -8104,7 +8104,7 @@ character_event = {
 ################
 # INTERACTIONS
 ################
-#The flags hidden_lab and very_hidden_lab can be used for events about stealing secrets from others/having your secrets stolen.
+#The flags hidden_grove and very_hidden_grove can be used for events about stealing secrets from others/having your secrets stolen.
 
 #Interaction: Gathering of the Great Minds
 character_event = {		
@@ -8125,7 +8125,7 @@ character_event = {
     		stewardship = 8
     	}
     	is_landed = yes
-    	has_character_flag = built_laboratory
+    	has_character_flag = built_tantric_center
     	war = no
     	block_general_event_trigger = no
     	NOT = { has_character_flag = gathering_of_the_minds }
@@ -12067,11 +12067,11 @@ character_event = {
 	immediate = {
 		if = {
 			limit = {
-				event_target:hermetic_collaborator = {
+				event_target:weizza_collaborator = {
 					always = yes
 				}
 			}
-			event_target:hermetic_collaborator = {
+			event_target:weizza_collaborator = {
 				save_event_target_as = gathering_companion
 			}
 			set_character_flag = quest_gathering_companion
@@ -15508,7 +15508,7 @@ character_event = { # progress event tombola
 			}
 			30 = { # Neglect interacting with your spouse
 				trigger = {
-					NOT = { event_target:hermetic_collaborator = { is_married = ROOT } }
+					NOT = { event_target:weizza_collaborator = { is_married = ROOT } }
 					any_spouse = {
 						prisoner = no
 					}

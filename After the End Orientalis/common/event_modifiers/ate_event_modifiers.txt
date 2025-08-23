@@ -137,3 +137,15 @@ stele_modifier = {
 	local_tax_modifier = 0.05
 	monthly_character_piety = 0.1
 }
+
+rampant_sinner_jewish = {
+	icon = 64
+	monthly_character_piety = -0.25
+	same_religion_opinion = -10
+}
+
+doing_teshuva = {
+	icon = 63
+	diplomacy = -1
+	monthly_character_piety = 0.1
+} 
