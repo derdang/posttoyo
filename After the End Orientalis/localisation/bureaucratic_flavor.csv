@@ -36,24 +36,24 @@ claim_realm_exam;Claim Liege Realm;;;;;;;;;;;;;x
 claim_realm_exam_desc;Your liege has done poorly on their Imperial Exam. As a ruler who has passed, you have a right to claim your lord's realm and replace them.;;;;;;;;;;;;;x
 
 appoint_grand_secretary;Appoint a Grand Secretary;;;;;;;;;;;;;x
-appoint_grand_secretary_desc;The Grand Secretary is a very important and influential title within the Imperial Court and across the entire realm. A person who holds this title may be able to garner enough support to displace the [Root.GetEmperorEmpress], so one must be careful of who they pick.;;;;;;;;;;;;;x
+appoint_grand_secretary_desc;The Grand Secretary is a very important and influential title within the Imperial Court and across the entire realm. A person who holds this title may be able to garner enough support to displace the [Root.GetRulerTitle], so one must be careful of who they pick.;;;;;;;;;;;;;x
 
 sanction_grand_secretary;Sanction a new Grand Secretary;;;;;;;;;;;;;x
 sanction_grand_secretary_desc;With the Grand Secretary seizing more and more power for themselves, it is necessary to declare an opposing "Grand Secretary" to combat this unjust power grab.;;;;;;;;;;;;;x
 
 remove_grand_secretary;Remove Grand Secretary;;;;;;;;;;;;;x
-remove_grand_secretary_desc;Your Grand Secretary  has begun to drift off course from your vision, and now is sometimes at direct odds with your decisions. As the [Root.GetEmperorEmpress], you have all the right to remove the governatus at your will.;;;;;;;;;;;;;x
+remove_grand_secretary_desc;Your Grand Secretary  has begun to drift off course from your vision, and now is sometimes at direct odds with your decisions. As the [Root.GetRulerTitle], you have all the right to remove the governatus at your will.;;;;;;;;;;;;;x
 at_least_65_TT;Imperial Authority is at least 65%;;;;;;;;;;;;;x
 
 remove_sanctioned_grand_secretary;Remove Anti-Grand Secretary;;;;;;;;;;;;;x
 remove_sanctioned_grand_secretary_desc;Although an opposing Grand Secretary you have chosen was supposed to defer to your rule, they have began to stray from Imperial perview. It would be best to rescind your endorsement.;;;;;;;;;;;;;x
 
 remove_grand_secretary;Remove Grand Secretary;;;;;;;;;;;;;x
-remove_grand_secretary_desc;The current Grand Secretary  has begun to drift off course from your vision, and now is even at direct odds with your decisions. As the [Root.GetEmperorEmpress], you have all the right to remove the governatus at your will.;;;;;;;;;;;;;x
+remove_grand_secretary_desc;The current Grand Secretary  has begun to drift off course from your vision, and now is even at direct odds with your decisions. As the [Root.GetRulerTitle], you have all the right to remove the governatus at your will.;;;;;;;;;;;;;x
 at_least_65_TT;Imperial Authority is at least 65%;;;;;;;;;;;;;x
 
 grand_secretary_heir_decision;Appoint Grand Secretary Heir;;;;;;;;;;;;;x
-grand_secretary_heir_decision_desc;Although the appointing of a governatus is usually reserved for the [Root.GetEmperorEmpress], your elevated position in the Imperial Court grants you the leverage to choose your own heir.;;;;;;;;;;;;;x
+grand_secretary_heir_decision_desc;Although the appointing of a governatus is usually reserved for the [Root.GetRulerTitle], your elevated position in the Imperial Court grants you the leverage to choose your own heir.;;;;;;;;;;;;;x
 
 ask_grand_secretary_heir;Request to be Grand Secretary Heir;;;;;;;;;;;;;x
 ask_grand_secretary_heir_desc;Although you are a fine candidate for governatus, the current titleholder has not appointed you their heir. To correct this grave mistake, it is best to confront the governatus directly.;;;;;;;;;;;;;x
@@ -71,11 +71,11 @@ has_not_action_7ys_TT;Has not attempted to change Imperial Authority for seven y
 grain_to_masses;Distribute Grain in Imperial Capital;;;;;;;;;;;;;x
 grain_to_masses_desc;The will of the people is influential in the politics of the Imperial Court, and so, controlling it is vital to controlling the empire. By feeding the many starving peasants of the capital, one may be able to gain favor among the populace, and cement their influence over the Imperial Court.;;;;;;;;;;;;;x
 
-grain_to_masses_humble;Distribute Grain in [Root.GetEmperorEmpressCap]'s Name;;;;;;;;;;;;;x
-grain_to_masses_humble_desc;As a loyal subject of the [Root.GetEmperorEmpress], I must bow to his will. However, I currently have more sway over the Imperial Court than he has. If I distribute grain in his name, it may turn the tides towards him instead.;;;;;;;;;;;;;x
+grain_to_masses_humble;Distribute Grain in [Root.GetRulerTitle]'s Name;;;;;;;;;;;;;x
+grain_to_masses_humble_desc;As a loyal subject of the [Root.GetRulerTitle], I must bow to his will. However, I currently have more sway over the Imperial Court than he has. If I distribute grain in his name, it may turn the tides towards him instead.;;;;;;;;;;;;;x
 
-defer_powers;Defer Powers to [Root.GetEmperorEmpressCap];;;;;;;;;;;;;x
-defer_powers_desc;As the [Root.GetEmperorEmpress]'s loyal subject, I must bow to his will. However, at the current moment, I have more power over the Imperial Court. By surrendering powers to him, I can tip the balance of power.;;;;;;;;;;;;;x
+defer_powers;Defer Powers to [Root.GetRulerTitle];;;;;;;;;;;;;x
+defer_powers_desc;As the [Root.GetRulerTitle]'s loyal subject, I must bow to his will. However, at the current moment, I have more power over the Imperial Court. By surrendering powers to him, I can tip the balance of power.;;;;;;;;;;;;;x
 
 gain_favor_cetic;Gain Favor of [Root.GetJobTitle];;;;;;;;;;;;;x
 gain_favor_cetic_desc;Influence over the Imperial Court requires the favor of the ones who are a part of it. By gaining a councilor as an ally, one can further cement control over the council.;;;;;;;;;;;;;x
@@ -196,28 +196,28 @@ EVTOPTAIE22;Hopefully the next ruler can actually pass the exams.;;;;;;;;;;;;;x
 EVTDESCIE23;Now that I am no longer a bureaucrat, it makes little sense for me to be chained to the Imperial Exam system.;;;;;;;;;;;;;x
 EVTOPTAIE23;No loss to me!;;;;;;;;;;;;;x
 
-EVTTITLECETIC105;A New [Root.GetEmperorEmpressCap];;;;;;;;;;;;;x
-EVTDESCCETIC105;"The [Root.GetEmperorEmpressCap]  is dead! May the [Root.GetEmperorEmpressCap] reign for ten thousand years!"\n\nIn an elaborate and extravagent ceremony, the new [Root.GetEmperorEmpressCap]  has been enthroned as the [Root.GetEraAdjective] [Root.GetEraNoun] [Root.GetEmperorEmpressCap].;;;;;;;;;;;;;x
+EVTTITLECETIC105;A New [Root.GetRulerTitle];;;;;;;;;;;;;x
+EVTDESCCETIC105;"The [Root.GetRulerTitle]  is dead! May the [Root.GetRulerTitle] reign for ten thousand years!"\n\nIn an elaborate and extravagent ceremony, the new [Root.GetRulerTitle]  has been enthroned as the [Root.GetEraAdjective] [Root.GetEraNoun] [Root.GetRulerTitle].;;;;;;;;;;;;;x
 EVTOPTACETIC105;May I rule with an even hand.;;;;;;;;;;;;;x
-EVTOPTBCETIC105;May harmony befall the [Root.GetEmperorEmpressCap]!;;;;;;;;;;;;;x
-EVTOPTCCETIC105;The what [Root.GetEmperorEmpressCap]?;;;;;;;;;;;;;x
+EVTOPTBCETIC105;May harmony befall the [Root.GetRulerTitle]!;;;;;;;;;;;;;x
+EVTOPTCCETIC105;The what [Root.GetRulerTitle]?;;;;;;;;;;;;;x
 
-EVTTITLECETIC300;An Appointment by the [Root.GetEmperorEmpressCap];;;;;;;;;;;;;x
+EVTTITLECETIC300;An Appointment by the [Root.GetRulerTitle];;;;;;;;;;;;;x
 EVTDESCCETIC300;[From.GetHerHisCap] Imperial Majesty's messanger has given me a letter informing my appointment as the Grand Secretary;;;;;;;;;;;;;x
-EVTOPTACETIC300;I shall serve my [Root.GetEmperorEmpress] with pride!;;;;;;;;;;;;;x
+EVTOPTACETIC300;I shall serve my [Root.GetRulerTitle] with pride!;;;;;;;;;;;;;x
 
-EVTDESCCETIC301;As the Grand Secretary , the [Root.GetEmperorEmpress] tasks me with running some parts of the realm that [Root.GetSheHe] simply cannot attend to. Although a regent has been appointed by [Root.GetHerHisCap] Majesty, I must ensure that the realm is run by a trusted member of the court — me.;;;;;;;;;;;;;x
-EVTOPTACETIC301;The [Root.GetEmperorEmpress] can trust me...;;;;;;;;;;;;;x
+EVTDESCCETIC301;As the Grand Secretary , the [Root.GetRulerTitle] tasks me with running some parts of the realm that [Root.GetSheHe] simply cannot attend to. Although a regent has been appointed by [Root.GetHerHisCap] Majesty, I must ensure that the realm is run by a trusted member of the court — me.;;;;;;;;;;;;;x
+EVTOPTACETIC301;The [Root.GetRulerTitle] can trust me...;;;;;;;;;;;;;x
 send_a_message_to_regent_TT;Send a message to the ex-regent , informing him of his reassignment.;;;;;;;;;;;;;x
 
 EVTDESCCETIC302;Grand Secretary [From.GetFullName] has informed me that I have been "reassigned", and now HE is the regent !;;;;;;;;;;;;;x
 EVTOPTACETIC302;That damn governatus!;;;;;;;;;;;;;x
 
-EVTDESCCETIC304_WEAK;As my authority as [Root.GetEmperorEmpress] begins to wane, and the Grand Secretary takes control of imperial duties, I have nothing left to do except shut myself in my estate.;;;;;;;;;;;;;x
+EVTDESCCETIC304_WEAK;As my authority as [Root.GetRulerTitle] begins to wane, and the Grand Secretary takes control of imperial duties, I have nothing left to do except shut myself in my estate.;;;;;;;;;;;;;x
 EVTOPTACETIC304_WEAK;I hope I am better at painting than administrating...;;;;;;;;;;;;;x
 EVTDESCCETIC304_NOTWEAK;With the Imperial Council ever so slightly now in your favor, you no longer are forced into confinement in the palace.;;;;;;;;;;;;;x
 EVTOPTACETIC304_NOTWEAK;At least some of my shackles are off...;;;;;;;;;;;;;x
-EVTDESCCETIC304_FIGUREHEAD;As my authority as [Root.GetEmperorEmpress] begins to wane, and the Grand Secretary takes control of imperial duties, my decrees and wishes have been taken to heart by nearly none of the Imperial Court.;;;;;;;;;;;;;x
+EVTDESCCETIC304_FIGUREHEAD;As my authority as [Root.GetRulerTitle] begins to wane, and the Grand Secretary takes control of imperial duties, my decrees and wishes have been taken to heart by nearly none of the Imperial Court.;;;;;;;;;;;;;x
 EVTOPTACETIC304_FIGUREHEAD;I am beginning to feel trapped...;;;;;;;;;;;;;x
 EVTDESCCETIC304;With a silver tongue and quick mind, I have taken back much of the control and influence Grand Secretarys of the past have unduly stolen from emperors.;;;;;;;;;;;;;x
 EVTOPTACETIC304;May this be a permanent change.;;;;;;;;;;;;;x
@@ -231,7 +231,7 @@ opta_excellent;Excellent;;;;;;;;;;;;;x
 
 EVTDESCCETIC307;As a skilled bureaucrat, your vassals are more inclined to follow your lead over the Grand Secretary.;;;;;;;;;;;;;x
 
-EVTDESCCETIC308;With a high Imperial Exam, your reign as [Root.GetEmperorEmpress] has been fully legitimized.;;;;;;;;;;;;;x
+EVTDESCCETIC308;With a high Imperial Exam, your reign as [Root.GetRulerTitle] has been fully legitimized.;;;;;;;;;;;;;x
 
 EVTTITLECETIC309;The Realm Reunited!;;;;;;;;;;;;;x
 EVTDESCCETIC309;The Illustrious Ruler has wrestled control of the empire from his devious vassals, and has reasserted [Root.GetHerHis] dominance over all ! May my reign be bright, and may my heirs surpass me in its brilliance.;;;;;;;;;;;;x
@@ -245,11 +245,11 @@ opta_disappointing;Disappointing...;;;;;;;;;;;;;x
 
 EVTDESCCETIC313;As a poor bureaucrat, your vassals are less likely to follow your lead.;;;;;;;;;;;;;x
 
-EVTDESCCETIC314;By failing the Imperial Exam, you have revealed yourself to be unfit for the tasks normally assigned to an [Root.GetEmperorEmpress].;;;;;;;;;;;;;x
+EVTDESCCETIC314;By failing the Imperial Exam, you have revealed yourself to be unfit for the tasks normally assigned to an [Root.GetRulerTitle].;;;;;;;;;;;;;x
 
 EVTDESCCETIC315;Without the support of the peasantry, the influence of your reign has weakened;;;;;;;;;;;;;x
 
-EVTDESCCETIC316;As ruler unproven to the Imperial Court, the influence of the [Root.GetEmperorEmpress] has lessened.;;;;;;;;;;;;;x
+EVTDESCCETIC316;As ruler unproven to the Imperial Court, the influence of the [Root.GetRulerTitle] has lessened.;;;;;;;;;;;;;x
 
 EVTDESCCETIC318;As your regency drags on, your regent has been gaining more and more influence at the expense of yours.;;;;;;;;;;;;;x
 
@@ -270,16 +270,16 @@ hastalavista;Hasta la vista, friend...;;;;;;;;;;;;;x
 
 EVTDESCCETIC329;[From.GetName] has passed away, leaving me with no heir to my title of governatus...;;;;;;;;;;;;;x
 
-EVTDESCCETIC330;As my direct liege is now the [Root.GetEmperorEmpress], it is appropriate for me to take my place on the council in my role as governatus.;;;;;;;;;;;;;x
+EVTDESCCETIC330;As my direct liege is now the [Root.GetRulerTitle], it is appropriate for me to take my place on the council in my role as governatus.;;;;;;;;;;;;;x
 EVTOPTACETIC330;One must get behind someone before stabbing them in the back...;;;;;;;;;;;;;x
 
-EVTDESCCETIC331;As the new [Root.GetEmperorEmpressCap] , it makes little sense to be both governatus and [Root.GetEmperorEmpress].;;;;;;;;;;;;;x
+EVTDESCCETIC331;As the new [Root.GetRulerTitle] , it makes little sense to be both governatus and [Root.GetRulerTitle].;;;;;;;;;;;;;x
 EVTOPTACETIC331;I reluctantly give up my post.;;;;;;;;;;;;;x
 
-EVTDESCCETIC332;The [Root.GetEmperorEmpress] has informed he has no use for my services, and that he is formally removing me from the position of governatus.;;;;;;;;;;;;;x
+EVTDESCCETIC332;The [Root.GetRulerTitle] has informed he has no use for my services, and that he is formally removing me from the position of governatus.;;;;;;;;;;;;;x
 imterminated;I guess I'm terminated...;;;;;;;;;;;;;x
 EVTOPTACETIC332;I might as well mess the place up on the way out.;;;;;;;;;;;;;x
-attack_emperor_TT;Pen a scathing review on the [Root.GetEmperorEmpress] addressed to the council.;;;;;;;;;;;;;x
+attack_emperor_TT;Pen a scathing review on the [Root.GetRulerTitle] addressed to the council.;;;;;;;;;;;;;x
 
 EVTDESCCETIC333;[slanderee.GetRandomSlanderDescCetic] All that I can now do is pen a compelling narrative and hope the council is respondant to my message.;;;;;;;;;;;;;x
 EVTOPTACETIC333;I'll show the [slanderee.GetCeticTitle] who's boss!;;;;;;;;;;;;;x
@@ -343,18 +343,18 @@ EVTDESCCETIC350;Dear [swayer.GetTitledFirstName],\n\n[swayer.CeticSway];;;;;;;;;
 
 EVTDESCCETIC351;Dear [swayer.GetTitledFirstName],\n\nYou have thoroughly convinced me to take your side against the tyranny of the [swayer.GetCeticTitleOpp]. You may consider me a close ally and friend!;;;;;;;;;;;;;x
 
-EVTDESCCETIC354;The [Root.GetEmperorEmpress] has informed he that he has lost confidence in his current governatus, and that he is authorizing me to invade for the title.;;;;;;;;;;;;;x
+EVTDESCCETIC354;The [Root.GetRulerTitle] has informed he that he has lost confidence in his current governatus, and that he is authorizing me to invade for the title.;;;;;;;;;;;;;x
 
 EVTDESCCETIC355;I have won against the previous governatus! Now, to decide my future move...;;;;;;;;;;;;;x
-EVTOPTACETIC355;The [Root.GetEmperorEmpress]'s word is law, I shall follow their word.;;;;;;;;;;;;;x
+EVTOPTACETIC355;The [Root.GetRulerTitle]'s word is law, I shall follow their word.;;;;;;;;;;;;;x
 EVTOPTBCETIC355;I have no need for that fool's word!;;;;;;;;;;;;;x
 
-EVTDESCCETIC356;The masses  are easily swayed with bread and circuses, and the adoration of the populace is necessary for an [Root.GetEmperorEmpress] to wield power decisively. By delivering grain to the people of the Imperial Capital, I can give the [Root.GetEmperorEmpress] more leverage over the Court.;;;;;;;;;;;;;x
+EVTDESCCETIC356;The masses  are easily swayed with bread and circuses, and the adoration of the populace is necessary for an [Root.GetRulerTitle] to wield power decisively. By delivering grain to the people of the Imperial Capital, I can give the [Root.GetRulerTitle] more leverage over the Court.;;;;;;;;;;;;;x
 
-EVTDESCCETIC358;My donation of food to the populace of the Capital has been a great success! According to my messangers, the peasantry have been hailing the [Root.GetEmperorEmpress]'s name, which tips the balance of power away from myself and towards him.;;;;;;;;;;;;;x
+EVTDESCCETIC358;My donation of food to the populace of the Capital has been a great success! According to my messangers, the peasantry have been hailing the [Root.GetRulerTitle]'s name, which tips the balance of power away from myself and towards him.;;;;;;;;;;;;;x
 
-EVTDESCCETIC359;After penning an order giving certain powers back the [Root.GetEmperorEmpress], it seems as if things have shifted, with the [Root.GetEmperorEmpress]'s word having more sway over councilors than before.;;;;;;;;;;;;;x
-EVTOPTACETIC359;I hope the [Root.GetEmperorEmpress] is pleased with my gesture.;;;;;;;;;;;;;x
+EVTDESCCETIC359;After penning an order giving certain powers back the [Root.GetRulerTitle], it seems as if things have shifted, with the [Root.GetRulerTitle]'s word having more sway over councilors than before.;;;;;;;;;;;;;x
+EVTOPTACETIC359;I hope the [Root.GetRulerTitle] is pleased with my gesture.;;;;;;;;;;;;;x
 
 EVTDESCCETIC360;[From.GetCeticTitle] [From.GetFullName] has ordered some of the authorities alloted to him be transfered to me instead, shifting the balance of power.;;;;;;;;;;;;;x
 EVTOPTACETIC360;Seems as if [From.GetSheHe] is loyal after all!;;;;;;;;;;;;;x
@@ -508,7 +508,7 @@ globalbureau_decrease_105_TT;§YAverage Bureaucratic Efficiency§! will §Rdecrease
 globalbureau_decrease_2_TT;§YAverage Bureaucratic Efficiency§! will §Rdecrease§! by 2%;;;;;;;;;;;;;x
 globalbureau_decrease_5_TT;§YAverage Bureaucratic Efficiency§! will §Rdecrease§! by 5%;;;;;;;;;;;;;x
 
-EVTDESCCETIC400;As the new [Root.GetEmperorEmpressCap] , you now must heed to the many standards and customs of the realm, including the necessity to defend Imperial Authority;;;;;;;;;;;;;x
+EVTDESCCETIC400;As the new [Root.GetRulerTitle] , you now must heed to the many standards and customs of the realm, including the necessity to defend Imperial Authority;;;;;;;;;;;;;x
 EVTOPTACETIC400;How did the Lawgiver deal with this?;;;;;;;;;;;;;x
 
 String_Celestial_Emperor;Celestial Emperor;;;;;;;;;;;;;x
@@ -518,10 +518,10 @@ String_Empress;Empress;;;;;;;;;;;;;x
 
 #Modifiers
 imperial_authority;Imperial Authority ([Root.global_imp_auth.GetValue]%) \ Yearly Authority Change ([Root.yearly_imperial_authority_change.GetValue]%);;;;;;;;;;;;;x
-imperial_authority_desc;The authority of the [Root.GetEmperorEmpress] is determined by how much control over bureaucratic California they has. As it ebbs and flows, so does the power of the [Root.GetEmperorEmpress].\nImperial authority can be §Bincreased§! by having high stewardship or learning, uniting California, influential imperial writings, or direct action by the [Root.GetEmperorEmpress]\nImperial authority can be §Rdecreased§! by having low stewardship or learning, revolts, succession, long regencies, bad imperial writings, or direct action by the Grand Secretary.\n§Y*§!Positive Traits: [Root.trait_bonus.GetValue]\n§Y*§!Loyal Councilors: [Root.councilor_bonus.GetValue]\n§Y*§!Loyal Vassals: [Root.vassal_bonus.GetValue]\n§Y*§!Negative Traits: [Root.trait_penalty.GetValue]\n§Y*§!Disloyal Councilors: [Root.councilor_penalty.GetValue]\n§Y*§!Disloyal Vassals: [Root.vassal_penalty.GetValue]\n§Y*§!Stability: [Root.stability.GetValue]\n§Y*§!Grand Secretary Influence: [Root.grand_secretary_influence.GetValue];;;;;;;;;;;;;x
+imperial_authority_desc;The authority of the [Root.GetRulerTitle] is determined by how much control over bureaucratic California they has. As it ebbs and flows, so does the power of the [Root.GetRulerTitle].\nImperial authority can be §Bincreased§! by having high stewardship or learning, uniting California, influential imperial writings, or direct action by the [Root.GetRulerTitle]\nImperial authority can be §Rdecreased§! by having low stewardship or learning, revolts, succession, long regencies, bad imperial writings, or direct action by the Grand Secretary.\n§Y*§!Positive Traits: [Root.trait_bonus.GetValue]\n§Y*§!Loyal Councilors: [Root.councilor_bonus.GetValue]\n§Y*§!Loyal Vassals: [Root.vassal_bonus.GetValue]\n§Y*§!Negative Traits: [Root.trait_penalty.GetValue]\n§Y*§!Disloyal Councilors: [Root.councilor_penalty.GetValue]\n§Y*§!Disloyal Vassals: [Root.vassal_penalty.GetValue]\n§Y*§!Stability: [Root.stability.GetValue]\n§Y*§!Grand Secretary Influence: [Root.grand_secretary_influence.GetValue];;;;;;;;;;;;;x
 
 bureaucracy;Realm Bureaucratic Efficiency ([From.PrimaryTitle.bureau_number.GetValue]%) \ Average Bureaucratic Efficiency ([global_bureau_number.GetValue]%) \ Yearly Bureaucracy Change ([From.yearly_bureaucracy_change.GetValue]%);;;;;;;;;;;;;x
-bureaucracy_desc;The bureaucracy of a realm is determined by how much bureaucratic norms are prevalent in said realm. As it changes, the norms of the realm change with it.\nRealm bureaucracy can be §Bincreased§! by having qualified lords, a powerful or qualified council, bureaucratic reforms, or by direct action by the [Root.GetEmperorEmpress] or Grand Secretary\nRealm bureaucracy can be §Rdecreased§! by having unqualified lords, having a weak or unqualified council, succession, or by direct action by the [Root.GetEmperorEmpress] or Grand Secretary\n§Y*§!Stewardship: [Root.stewardship_number_bureaucracy.GetValue]\n§Y*§!Learning: [Root.learning_number_bureaucracy.GetValue]\n§Y*§!Positive Traits: [Root.trait_bonus_bureaucracy.GetValue]\n§Y*§!Quality Councilors: [Root.councilor_bonus_bureaucracy.GetValue]\n§Y*§!Quality Vassals: [Root.vassal_bonus_bureaucracy.GetValue]\n§Y*§!Negative Traits: [Root.trait_penalty_bureaucracy.GetValue]\n§Y*§!Poor Councilors: [Root.councilor_penalty_bureaucracy.GetValue]\n§Y*§!Poor Vassals: [Root.vassal_penalty_bureaucracy.GetValue]\n§Y*§!Bureaucratic Scope: [Root.passive_bureaucracy.GetValue];;;;;;;;;;;;;x
+bureaucracy_desc;The bureaucracy of a realm is determined by how much bureaucratic norms are prevalent in said realm. As it changes, the norms of the realm change with it.\nRealm bureaucracy can be §Bincreased§! by having qualified lords, a powerful or qualified council, bureaucratic reforms, or by direct action by the [Root.GetRulerTitle] or Grand Secretary\nRealm bureaucracy can be §Rdecreased§! by having unqualified lords, having a weak or unqualified council, succession, or by direct action by the [Root.GetRulerTitle] or Grand Secretary\n§Y*§!Stewardship: [Root.stewardship_number_bureaucracy.GetValue]\n§Y*§!Learning: [Root.learning_number_bureaucracy.GetValue]\n§Y*§!Positive Traits: [Root.trait_bonus_bureaucracy.GetValue]\n§Y*§!Quality Councilors: [Root.councilor_bonus_bureaucracy.GetValue]\n§Y*§!Quality Vassals: [Root.vassal_bonus_bureaucracy.GetValue]\n§Y*§!Negative Traits: [Root.trait_penalty_bureaucracy.GetValue]\n§Y*§!Poor Councilors: [Root.councilor_penalty_bureaucracy.GetValue]\n§Y*§!Poor Vassals: [Root.vassal_penalty_bureaucracy.GetValue]\n§Y*§!Bureaucratic Scope: [Root.passive_bureaucracy.GetValue];;;;;;;;;;;;;x
 
 low_bureaucracy;Inefficient Bureaucracy;;;;;;;;;;;;;x
 low_bureaucracy_desc;Due to poor recordkeeping, inefficient administrative systems, and corrupt bureaucrats, this realm's bureaucracy is in disarray.;;;;;;;;;;;;;x
@@ -545,7 +545,7 @@ bureau_roads;Road Network Center;;;;;;;;;;;;;x
 bureau_roads_desc;This province is the center of a realm-wide road network, fostering better bureaucracies accross the realm.;;;;;;;;;;;;;x 
 
 influenced_authority;Influenced Imperial Authority;;;;;;;;;;;;;x
-influenced_authority_desc;This character has acted to influence the authority of the [Root.GetEmperorEmpressCap].;;;;;;;;;;;;;x
+influenced_authority_desc;This character has acted to influence the authority of the [Root.GetRulerTitle].;;;;;;;;;;;;;x
 
 #Traits
 not_evaluated;Unevaluated;;;;;;;;;;;;;x
@@ -567,19 +567,19 @@ imp_ex4;Jinshi;;;;;;;;;;;;;x
 imp_ex4_desc;This bureaucrat has passed the Imperial Exam, and has earned the fourth and highest rank — Jinshi.;;;;;;;;;;;;;x
 
 weak_emperor;Weak Ruler;;;;;;;;;;;;;x
-weak_emperor_desc;Imperial authority has been extremely limited, with the [Root.GetEmperorEmpress] being restricted the to Imperial Palace. It will take skillful political and theological maneuvering to remove the legal and cultural restrictions currently in place. Despite the military restrictions, the favor of the Imperial Court is a powerful diplomatic tool.;;;;;;;;;;;;;x
+weak_emperor_desc;Imperial authority has been extremely limited, with the [Root.GetRulerTitle] being restricted the to Imperial Palace. It will take skillful political and theological maneuvering to remove the legal and cultural restrictions currently in place. Despite the military restrictions, the favor of the Imperial Court is a powerful diplomatic tool.;;;;;;;;;;;;;x
 
-china_emperor;[Root.GetEmperorEmpressCap] ;;;;;;;;;;;;;x
-china_emperor_desc;The authority of the [Root.GetEmperorEmpress] is relatively high and stable, with all its typical duties and powers. Although [Root.GetHerHisCap] Majesty is in power within the Imperial Court, and particulary skillful politician may be able to wrestle control from the hands of the sovereign.;;;;;;;;;;;;;x
+china_emperor;[Root.GetRulerTitle] ;;;;;;;;;;;;;x
+china_emperor_desc;The authority of the [Root.GetRulerTitle] is relatively high and stable, with all its typical duties and powers. Although [Root.GetHerHisCap] Majesty is in power within the Imperial Court, and particulary skillful politician may be able to wrestle control from the hands of the sovereign.;;;;;;;;;;;;;x
 
-strong_emperor;Strong [Root.GetEmperorEmpressCap];;;;;;;;;;;;;x
-strong_emperor_desc;The authority of the [Root.GetEmperorEmpress] is high and seemingly stable. Vassals of all rank and power bow before the glory of the [Root.GetEmperorEmpress], and [Root.GetSheHe] wields considerable power, within the walls of the Court and without. It would take a political mastermind and an [Root.GetEmperorEmpress] of... low quality for this sort of control to be taken away.;;;;;;;;;;;;;x
+strong_emperor;Strong [Root.GetRulerTitle];;;;;;;;;;;;;x
+strong_emperor_desc;The authority of the [Root.GetRulerTitle] is high and seemingly stable. Vassals of all rank and power bow before the glory of the [Root.GetRulerTitle], and [Root.GetSheHe] wields considerable power, within the walls of the Court and without. It would take a political mastermind and an [Root.GetRulerTitle] of... low quality for this sort of control to be taken away.;;;;;;;;;;;;;x
 
 grand_secretary;Grand Secretary;;;;;;;;;;;;;x
-grand_secretary_desc;The Grand Secretary  is a very influential title among the Imperial Court and all throughout California. As the highest ranking official within the Imperial Court, surpassing even the kings and queens of the bureaucratic realms, the Grand Secretary has the ear of the [Root.GetEmperorEmpress] at all times.;;;;;;;;;;;;;x
+grand_secretary_desc;The Grand Secretary  is a very influential title among the Imperial Court and all throughout California. As the highest ranking official within the Imperial Court, surpassing even the kings and queens of the bureaucratic realms, the Grand Secretary has the ear of the [Root.GetRulerTitle] at all times.;;;;;;;;;;;;;x
 
 sanctioned_grand_secretary;Anti-Grand Secretary;;;;;;;;;;;;;x
-sanctioned_grand_secretary_desc;The [Root.GetEmperorEmpress]  has lost confidence in his Grand Secretary, therefore, he has selected [Root.GetTitledFirstName] as his Anti-Grand Secretary;;;;;;;;;;;;;x 
+sanctioned_grand_secretary_desc;The [Root.GetRulerTitle]  has lost confidence in his Grand Secretary, therefore, he has selected [Root.GetTitledFirstName] as his Anti-Grand Secretary;;;;;;;;;;;;;x 
 
 grand_secretary_heir;Grand Secretary Heir;;;;;;;;;;;;;x
 grand_secretary_heir_desc;The Heir of the Grand Secretary does not wield any special privileges, however what it lacks in power, it makes up in prestige. Although, in due time, one will gain both power in prestige.;;;;;;;;;;;;;x
@@ -619,7 +619,7 @@ bad_bureaucrat;Poor Bureaucrat;;;;;;;;;;;;;x
 
 #Minor Titles
 title_grand_secretary;Grand Secretary;;;;;;;;;;;;;x
-title_grand_secretary_desc;The Grand Secretary of the Empire  is a very influential title among the Imperial Court and all throughout California. As the highest ranking official within the Imperial Court, surpassing even the kings and queens of the bureaucratic realms, the Grand Secretary has the ear of the [Root.GetEmperorEmpress] at all times.;;;;;;;;;;;;;x
+title_grand_secretary_desc;The Grand Secretary of the Empire  is a very influential title among the Imperial Court and all throughout California. As the highest ranking official within the Imperial Court, surpassing even the kings and queens of the bureaucratic realms, the Grand Secretary has the ear of the [Root.GetRulerTitle] at all times.;;;;;;;;;;;;;x
 title_evaluator_of_merit;Evaluator of Merit;;;;;;;;;;;;;x
 title_evaluator_of_merit_desc;In the better days of the Imperial Bureaucracy, the Evaluator of Merit was responsible for assessing all applicants for government positions. Today, as positions are usually filled by friends and relatives of rulers instead of qualified civil servants, the position of Evaluator of Merit is wholly ceremonial, but it still holds a good deal of prestige.;;;;;;;;;;;;;x
 title_grand_herald;Grand Herald;;;;;;;;;;;;;x
@@ -650,7 +650,7 @@ bureaucratic_war_declaration_0_desc;Bureaucratic lords are under no obligation t
 bureaucratic_war_declaration_0_option;War;;;;;;;;;;;;;x
 
 bureaucratic_war_declaration_1;Disallowed Declaration;;;;;;;;;;;;;x
-bureaucratic_war_declaration_1_desc;By the [Root.GetEmperorEmpressCap]'s orders, bureaucratic lords must not wage any war.;;;;;;;;;;;;;x
+bureaucratic_war_declaration_1_desc;By the [Root.GetRulerTitle]'s orders, bureaucratic lords must not wage any war.;;;;;;;;;;;;;x
 bureaucratic_war_declaration_1_option;No War;;;;;;;;;;;;;x
 
 succ_bureaucratic_elective;Bureaucratic Elective;;;;;;;;;;;;;x
@@ -665,7 +665,7 @@ tooltip_feudal_elector_vote_councilor_learning;[From.GetFirstName] is a brillian
 
 tooltip_feudal_elector_vote_grand_secretary;[From.GetSheHeCap] is the §YGrand Secretary§!;;;;;;;;;;;;;x
 
-tooltip_feudal_elector_vote_emperor;[From.GetSheHeCap] is the §Y[Root.GetEmperorEmpressCap]§!;;;;;;;;;;;;;x
+tooltip_feudal_elector_vote_emperor;[From.GetSheHeCap] is the §Y[Root.GetRulerTitle]§!;;;;;;;;;;;;;x
 
 allow_war_TT;Allowed to wage war.;;;;;;;;;;;;;x
 
@@ -684,7 +684,7 @@ GetCeticEmpressCap;Empress;;;;;;;;;;;;;x
 
 
 CeticWheatponsibilityPanic;I must find a way to keep these rioting peasants in control, and fast.;;;;;;;;;;;;;x
-CeticWheatponsibilityPay;the [Root.GetEmperorEmpress] has forced me to pay for new deliveries of food to be given to the peasants.;;;;;;;;;;;;;x
+CeticWheatponsibilityPay;the [Root.GetRulerTitle] has forced me to pay for new deliveries of food to be given to the peasants.;;;;;;;;;;;;;x
 
 CeticSwayDip;Your honeyed words and empty promises shall not sway me! You and your deceitful silver tongue will never gain my support.;;;;;;;;;;;;;x
 CeticSwayBribe;The bribe you sent with your letter greatly offends me. You will not gain my support in your corrupt operation.;;;;;;;;;;;;;x

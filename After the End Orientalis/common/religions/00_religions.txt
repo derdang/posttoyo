@@ -1448,6 +1448,7 @@ muslim = {
 		
 		can_grant_divorce = yes
 		priests_can_inherit = no
+		castes = yes
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
@@ -1488,6 +1489,9 @@ muslim = {
 		
 		can_grant_divorce = yes
 		priests_can_inherit = no
+		can_excommunicate = yes
+		can_grant_claim = yes
+		rel_head_defense = yes
 		
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
@@ -1773,7 +1777,6 @@ pagan_group = {
 		can_grant_claim = yes
 		can_grant_divorce = yes
 		allow_viking_invasion = yes
-		can_call_crusade = yes
 		can_grant_invasion_cb = invasion
 		allow_rivermovement = yes
 		
@@ -1811,7 +1814,6 @@ pagan_group = {
 		can_grant_claim = yes
 		can_grant_divorce = yes
 		allow_viking_invasion = yes
-		can_call_crusade = yes
 		can_grant_invasion_cb = invasion
 		allow_rivermovement = yes
 		

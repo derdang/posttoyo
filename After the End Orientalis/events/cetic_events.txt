@@ -2180,74 +2180,77 @@ narrative_event = {
 	}
 }
 
-character_event = {
-	id = cetic.104
-	hide_window = yes
-	only_playable = yes
+#Era Name buggy without a set title will fix later
 
-	trigger = {
-		independent = yes
-		NOT = {
-			has_character_flag = era_name
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = {
-		clear_era_name = yes
-		get_random_era_name = yes
-		narrative_event = { id = cetic.105 }
-		set_character_flag = era_name
-	}
-}
+#character_event = {
+#	id = cetic.104
+#	hide_window = yes
+#	only_playable = yes
+#
+#	trigger = {
+#		government = sinic_bureaucracy_government
+#		independent = yes
+#		NOT = {
+#			has_character_flag = era_name
+#		}
+#	}
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	immediate = {
+#		clear_era_name = yes
+#		get_random_era_name = yes
+#		narrative_event = { id = cetic.105 }
+#		set_character_flag = era_name
+#	}
+#}
 
-narrative_event = {
-	id = cetic.105
-	title = EVTTITLECETIC105
-	desc = EVTDESCCETIC105
-	picture = GFX_evt_china_stable
-	border = GFX_event_narrative_frame_diplomacy
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC105
-		trigger = {
-			OR = {
-				independent = yes
-			}
-		}
-	}
-	option = {
-		name = EVTOPTBCETIC105
-		trigger = {
-			OR = {
-				government = sinic_bureaucracy_government
-				de_jure_liege = ROOT
-				government = sinic_bureaucracy_government
-			}
-			NOR = {
-				independent = yes
-			}
-		}
-	}
-	option = {
-		name = EVTOPTCCETIC105
-		trigger = {
-			NOR = {
-				AND = {
-					independent = yes
-					government = sinic_bureaucracy_government
-				}
-				AND = {
-					de_jure_liege = ROOT
-					government = sinic_bureaucracy_government
-				}
-			}
-		}
-	}
-}
+#narrative_event = {
+#	id = cetic.105
+#	title = EVTTITLECETIC105
+#	desc = EVTDESCCETIC105
+#	picture = GFX_evt_china_stable
+#	border = GFX_event_narrative_frame_diplomacy
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTACETIC105
+#		trigger = {
+#			OR = {
+#				independent = yes
+#			}
+#		}
+#	}
+#	option = {
+#		name = EVTOPTBCETIC105
+#		trigger = {
+#			OR = {
+#				government = sinic_bureaucracy_government
+#				de_jure_liege = ROOT
+#				government = sinic_bureaucracy_government
+#			}
+#			NOR = {
+#				independent = yes
+#			}
+#		}
+#	}
+#	option = {
+#		name = EVTOPTCCETIC105
+#		trigger = {
+#			NOR = {
+#				AND = {
+#					independent = yes
+#					government = sinic_bureaucracy_government
+#				}
+#				AND = {
+#					de_jure_liege = ROOT
+#					government = sinic_bureaucracy_government
+#				}
+#			}
+#		}
+#	}
+#}
 
 # ************************** Imperial Authority Events***********************
 
