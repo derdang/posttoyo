@@ -1,0 +1,78 @@
+holy_order_check_active_trigger = {
+	FROM = {
+		OR = {
+			AND = {
+				OR = {
+					religion = catholic
+					religion = restorationist
+					religion = rizalista
+				}
+				OR = {
+					is_title_active = d_knights_of_lavang
+					is_title_active = d_knights_of_bim
+					is_title_active = d_army_of_the_immaculate_heart
+					is_title_active = d_knightly_brothers_marist
+				}
+			}
+			AND = {
+				OR = {
+					religion = orthodox
+					religion = old_believer
+					religion = yehowist
+				}
+				is_title_active = d_order_of_st_vladimir
+				is_title_active = d_blessed_wandering_knights_of_the_holy_fools
+			}
+			AND = {
+				OR = {
+					religion = concordanist
+					religion = adventist
+					religion = pentecostal
+				}
+				is_title_active = d_soldiers_of_solidarity
+				is_title_active = d_salvation_army
+				is_title_active = d_army_of_the_word
+			}
+			AND = {
+				OR = {
+					religion = fuyin
+					religion = unificationist
+				}
+				is_title_active = d_knights_of_amity
+				is_title_active = d_boys_brigade
+			}
+			AND = {
+				OR = {
+					religion = tianzhu
+					religion = aiguo
+				}
+				is_title_active = d_knights_of_our_mother_of_sheshan
+			}
+			AND = {
+				OR = {
+					religion = eastern_lightning
+					religion = jerusalemite
+				}
+				is_title_active = d_millenial_army_of_the_almighty_god
+			}
+			AND = {
+				OR = {
+					religion = vissarionite
+					religion = vadimite
+				}
+				is_title_active = d_guardians_of_the_city_of_sun
+			}
+			AND = {
+				OR = {
+					religion = baptist
+					religion = kohhran_thianghlim
+				}
+				is_title_active = d_free_rangers
+			}
+			AND = {
+				religion = yuilsasang
+				is_title_active = d_chollima_riders
+			}
+		}
+	}
+}
