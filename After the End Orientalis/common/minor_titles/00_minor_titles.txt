@@ -1660,9 +1660,7 @@ title_baghatur = {
 					is_tribal = yes
 				}
 				OR = {
-					has_landed_title = e_mongol_empire
-					has_landed_title = e_golden_horde
-					has_landed_title = e_il-khanate
+					has_landed_title = e_mongolia
 				}
 			}
 		}
@@ -1707,9 +1705,7 @@ title_cherbi = {
 					is_tribal = yes
 				}
 				OR = {
-					has_landed_title = e_mongol_empire
-					has_landed_title = e_golden_horde
-					has_landed_title = e_il-khanate
+					has_landed_title = e_mongolia
 				}
 			}
 		}
@@ -1754,9 +1750,7 @@ title_darkhan = {
 					is_tribal = yes
 				}
 				OR = {
-					has_landed_title = e_mongol_empire
-					has_landed_title = e_golden_horde
-					has_landed_title = e_il-khanate
+					has_landed_title = e_mongolia
 				}
 			}
 		}
@@ -1794,9 +1788,7 @@ title_noyan = {
 			is_tribal = yes
 		}
 		OR = {
-			has_landed_title = e_mongol_empire
-			has_landed_title = e_golden_horde
-			has_landed_title = e_il-khanate
+			has_landed_title = e_mongolia
 		}
 	}
 	
@@ -1839,9 +1831,7 @@ title_behi = {
 					is_tribal = yes
 				}
 				OR = {
-					has_landed_title = e_mongol_empire
-					has_landed_title = e_golden_horde
-					has_landed_title = e_il-khanate
+					has_landed_title = e_mongolia
 				}
 			}
 		}
@@ -1885,9 +1875,7 @@ title_master_of_the_eagle = {
 					is_tribal = yes
 				}
 				OR = {
-					has_landed_title = e_mongol_empire
-					has_landed_title = e_golden_horde
-					has_landed_title = e_il-khanate
+					has_landed_title = e_mongolia
 				}
 			}
 		}
@@ -2220,28 +2208,12 @@ title_master_of_the_blade = {
 		}
 		NOT = {
 			OR = {
-				has_landed_title = e_mongol_empire
-				has_landed_title = e_golden_horde
-				has_landed_title = e_il-khanate
+				has_landed_title = e_mongolia
 			}
 		}
 		OR = {
-			religion = baltic_pagan_reformed
-			religion = baltic_pagan
-			religion = finnish_pagan_reformed
-			religion = finnish_pagan
-			religion = slavic_pagan_reformed
-			religion = slavic_pagan
-			religion = west_african_pagan_reformed
-			religion = west_african_pagan
-			religion = aztec_reformed
-			religion = aztec
-			religion = tengri_pagan
-			religion = tengri_pagan_reformed
-			religion = zun_pagan_reformed
-			religion = zun_pagan
-			religion = bon
-			religion = bon_reformed
+			religion = khanist
+			religion = khanist_reformed
 		}
 	}
 	
@@ -2282,28 +2254,12 @@ title_master_of_the_bow = {
 		}
 		NOT = {
 			OR = {
-				has_landed_title = e_mongol_empire
-				has_landed_title = e_golden_horde
-				has_landed_title = e_il-khanate
+				has_landed_title = e_mongolia
 			}
 		}
 		OR = {
-			religion = baltic_pagan_reformed
-			religion = baltic_pagan
-			religion = finnish_pagan_reformed
-			religion = finnish_pagan
-			religion = slavic_pagan_reformed
-			religion = slavic_pagan
-			religion = west_african_pagan_reformed
-			religion = west_african_pagan
-			religion = aztec_reformed
-			religion = aztec
-			religion = tengri_pagan
-			religion = tengri_pagan_reformed
-			religion = zun_pagan_reformed
-			religion = zun_pagan
-			religion = bon
-			religion = bon_reformed
+			religion = khanist
+			religion = khanist_reformed
 		}
 	}
 	
@@ -2342,28 +2298,12 @@ title_venerable_elder = {
 		}
 		NOT = {
 			OR = {
-				has_landed_title = e_mongol_empire
-				has_landed_title = e_golden_horde
-				has_landed_title = e_il-khanate
+				has_landed_title = e_mongolia
 			}
 		}
 		OR = {
-			religion = baltic_pagan_reformed
-			religion = baltic_pagan
-			religion = finnish_pagan_reformed
-			religion = finnish_pagan
-			religion = slavic_pagan_reformed
-			religion = slavic_pagan
-			religion = west_african_pagan_reformed
-			religion = west_african_pagan
-			religion = aztec_reformed
-			religion = aztec
-			religion = tengri_pagan
-			religion = tengri_pagan_reformed
-			religion = zun_pagan_reformed
-			religion = zun_pagan
-			religion = bon
-			religion = bon_reformed
+			religion = khanist
+			religion = khanist_reformed
 		}
 	}
 	
@@ -2414,14 +2354,12 @@ title_yabgu = {
 		#		}
 		#		NOT = {
 		#			OR = {
-		#				has_landed_title = e_mongol_empire
-		#				has_landed_title = e_golden_horde
-		#				has_landed_title = e_il-khanate
+		#				has_landed_title = e_mongolia
 		#			}
 		#		}
 		#		OR = {
-		#			religion = tengri_pagan
-		#			religion = tengri_pagan_reformed
+		#			religion = khanist
+		#			religion = khanist_reformed
 		#		}
 		#	}
 		#}
@@ -2471,14 +2409,12 @@ title_ishad = {
 		#		}
 		#		NOT = {
 		#			OR = {
-		#				has_landed_title = e_mongol_empire
-		#				has_landed_title = e_golden_horde
-		#				has_landed_title = e_il-khanate
+		#				has_landed_title = e_mongolia
 		#			}
 		#		}
 		#		OR = {
-		#			religion = tengri_pagan
-		#			religion = tengri_pagan_reformed
+		#			religion = khanist
+		#			religion = khanist_reformed
 		#		}
 		#	}
 		#}
@@ -2524,14 +2460,12 @@ title_kundur = {
 		#		}
 		#		NOT = {
 		#			OR = {
-		#				has_landed_title = e_mongol_empire
-		#				has_landed_title = e_golden_horde
-		#				has_landed_title = e_il-khanate
+		#				has_landed_title = e_mongolia
 		#			}
 		#		}
 		#		OR = {
-		#			religion = tengri_pagan
-		#			religion = tengri_pagan_reformed
+		#			religion = khanist
+		#			religion = khanist_reformed
 		#		}
 		#	}
 		#}

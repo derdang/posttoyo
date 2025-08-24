@@ -7653,14 +7653,6 @@ root_has_imprisonment_reason_opinion_trigger = {
 	}
 }
 
-region_africa_west_central_or_east_trigger = {
-	OR = {
-		region = world_africa_west
-		region = world_africa_east
-		region = world_africa_central
-	}
-}
-
 has_rain_or_drought_modifier_trigger = {
 	OR = {
 		has_province_modifier = africa_light_rain
@@ -7673,7 +7665,7 @@ has_rain_or_drought_modifier_trigger = {
 any_neighbor_province_has_dry_weather_trigger = {
 	any_neighbor_province = {
     	is_land = yes
-		region_africa_west_central_or_east_trigger = yes
+		region = custom_monsoon_region
 		OR = {
 			has_province_modifier = africa_drought_risk
 			has_province_modifier = africa_drought
@@ -7683,14 +7675,14 @@ any_neighbor_province_has_dry_weather_trigger = {
 any_neighbor_province_has_heavy_rain_trigger = {
 	any_neighbor_province = {
     	is_land = yes
-		region_africa_west_central_or_east_trigger = yes
+		region = custom_monsoon_region
 		has_province_modifier = africa_heavy_rain
 	}
 }
 any_neighbor_province_has_light_rain_trigger = {
 	any_neighbor_province = {
     	is_land = yes
-		region_africa_west_central_or_east_trigger = yes
+		region = custom_monsoon_region
 		has_province_modifier = africa_light_rain
 	}
 }
@@ -7899,15 +7891,9 @@ can_still_be_marshal_byzantine_trigger = {
 
 is_mongol_empire_leader_trigger = {
 	OR = {
-		has_landed_title = e_il-khanate
-		has_landed_title = e_golden_horde
-		has_landed_title = e_mongol_empire
-		liege = { has_landed_title = e_il-khanate }
-		liege = { has_landed_title = e_golden_horde }
-		liege = { has_landed_title = e_mongol_empire }
-		top_liege = { has_landed_title = e_il-khanate }
-		top_liege = { has_landed_title = e_golden_horde }
-		top_liege = { has_landed_title = e_mongol_empire }
+		has_landed_title = e_mongolia
+		liege = { has_landed_title = e_mongolia }
+		top_liege = { has_landed_title = e_mongolia }
 	}
 }
 

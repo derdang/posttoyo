@@ -2802,7 +2802,7 @@ pay_back_assassins_effect = {
 				if = {
 					limit = {
 						ai = yes
-						primary_title = { title = d_hashshashin } 
+						primary_title = { title = d_eastern_depot } 
 					}
 					wealth = 50
 				}
@@ -2817,7 +2817,7 @@ pay_back_assassins_effect = {
 				if = {
 					limit = {
 						ai = yes
-						primary_title = { title = d_hashshashin } 
+						primary_title = { title = d_eastern_depot } 
 					}
 					wealth = 250
 				}
@@ -2832,7 +2832,7 @@ pay_back_assassins_effect = {
 				if = {
 					limit = {
 						ai = yes
-						primary_title = { title = d_hashshashin } 
+						primary_title = { title = d_eastern_depot } 
 					}
 					wealth = 300
 				}
@@ -2847,7 +2847,7 @@ pay_back_assassins_effect = {
 				if = {
 					limit = {
 						ai = yes
-						primary_title = { title = d_hashshashin } 
+						primary_title = { title = d_eastern_depot } 
 					}
 					wealth = 500
 				}
@@ -3539,22 +3539,6 @@ join_from_devil_worshiper_society_effect = {
 		}
 		if = {
 			limit = {
-				society_member_of = the_cold_ones
-			}
-			ROOT = {
-				join_society = the_cold_ones
-			}
-		}
-		if = {
-			limit = {
-				society_member_of = the_plaguebringers
-			}
-			ROOT = {
-				join_society = the_plaguebringers
-			}
-		}
-		if = {
-			limit = {
 				society_member_of = the_cult_of_kali
 			}
 			ROOT = {
@@ -3563,26 +3547,10 @@ join_from_devil_worshiper_society_effect = {
 		}
 		if = {
 			limit = {
-				society_member_of = the_trollcrafters
-			}
-			ROOT = {
-				join_society = the_trollcrafters
-			}
-		}
-		if = {
-			limit = {
 				society_member_of = the_illuminati
 			}
 			ROOT = {
 				join_society = the_illuminati
-			}
-		}
-		if = {
-			limit = {
-				society_member_of = the_vodouns
-			}
-			ROOT = {
-				join_society = the_vodouns
 			}
 		}
 	}
@@ -9452,8 +9420,6 @@ spawn_good_commander_effect = {
 			if = {
 				limit = {
 					OR = {
-						religion = hellenic_pagan
-						religion = hellenic_pagan_reformed
 						has_religion_feature = religion_astrology
 					}
 				}
@@ -9639,8 +9605,6 @@ spawn_great_commander_effect = {
 			if = {
 				limit = {
 					OR = {
-						religion = hellenic_pagan
-						religion = hellenic_pagan_reformed
 						has_religion_feature = religion_astrology
 					}
 				}
@@ -10054,7 +10018,6 @@ spawn_fantastic_diplomat_effect = {
 				has_global_flag = christian_crusades_unlocked
 				OR = {
 					religion = catholic
-					religion = fraticelli
 				}
 			}
 			random = { 
@@ -10381,8 +10344,6 @@ spawn_elder_effect = {
 			if = { # Assign African face paint
 				limit = {
 					OR = { 
-						religion = west_african_pagan
-						religion = west_african_pagan_reformed
 						has_religion_feature = religion_animistic
 					}
 				}
@@ -13005,7 +12966,7 @@ random_coronation_events_effect = {
 			}
 			modifier = { 
 				factor = 0
-				NOT = { has_landed_title = e_hre }
+				NOT = { has_landed_title = e_malaysia }
 			}
 			modifier = { 
 				factor = 1.5 
@@ -17556,8 +17517,6 @@ spawn_debutante_effect = {
 			if = {
 				limit = {
 					OR = {
-						religion = hellenic_pagan
-						religion = hellenic_pagan_reformed
 						has_religion_feature = religion_astrology
 					}
 				}
@@ -17589,215 +17548,8 @@ spawn_debutante_effect = {
 	}
 }
 
-transfer_crown_on_abdication_effect = {
-	if = {
-		limit = { 
-			has_landed_title = e_hre
-			any_artifact = { artifact_type = crown_hre } 
-		}
-			current_heir = { save_event_target_as = crown_hre_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_hre }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_hre_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = e_byzantium
-			any_artifact = { artifact_type = crown_byzantine }
-		}
-			current_heir = { save_event_target_as = crown_byzantine_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_byzantine }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_byzantine_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = e_persia
-			any_artifact = { artifact_type = crown_pahlavi }
-		}
-			current_heir = { save_event_target_as = crown_pahlavi_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_pahlavi }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_pahlavi_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_norse_pagan_reformed
-			any_artifact = { artifact_type = crown_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_tengri_pagan_reformed
-			any_artifact = { artifact_type = crown_tengri_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_tengri_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_tengri_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_tengri_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_slavic_pagan_reformed
-			any_artifact = { artifact_type = crown_slavic_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_slavic_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_slavic_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_slavic_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_baltic_pagan_reformed
-			any_artifact = { artifact_type = crown_romuva_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_romuva_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_romuva_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_romuva_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_finnish_pagan_reformed
-			any_artifact = { artifact_type = crown_finnish_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_finnish_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_finnish_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_finnish_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_west_african_pagan_reformed
-			any_artifact = { artifact_type = crown_west_african_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_west_african_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_west_african_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_west_african_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_zun_pagan_reformed
-			any_artifact = { artifact_type = crown_zun_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_zun_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_zun_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_zun_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_bon_reformed
-			any_artifact = { artifact_type = scepter_bon_fylkir }
-		}
-			current_heir = { save_event_target_as = scepter_bon_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = scepter_bon_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:scepter_bon_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = d_aztec_reformed
-			any_artifact = { artifact_type = crown_aztec_fylkir }
-		}
-			current_heir = { save_event_target_as = crown_aztec_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = crown_aztec_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:crown_aztec_fylkir_heir
-				} 
-			}
-	}
-	if = {
-		limit = { 
-			has_landed_title = k_hellenic_pagan
-			any_artifact = { artifact_type = scepter_hellenic_fylkir }
-		}
-			current_heir = { save_event_target_as = scepter_hellenic_fylkir_heir }
-			any_artifact = { 
-				limit = { artifact_type = scepter_hellenic_fylkir }
-				transfer_artifact = {
-					from = PREV
-					to = event_target:scepter_hellenic_fylkir_heir
-				} 
-			}
-	}
-	#Now transfer all other remaining artifacts to the player_heir, who may or may not be the current_heir.
-	player_heir = { save_event_target_as = scoped_player_heir }
-	any_artifact = { 
-		limit = { 
-			NOR = {
-				artifact_type = crown_hre
-				artifact_type = crown_byzantine 
-				artifact_type = crown_pahlavi
-				artifact_type = crown_fylkir
-				artifact_type = crown_tengri_fylkir
-				artifact_type = crown_slavic_fylkir
-				artifact_type = crown_romuva_fylkir
-				artifact_type = crown_finnish_fylkir
-				artifact_type = crown_west_african_fylkir
-				artifact_type = crown_zun_fylkir
-				artifact_type = scepter_bon_fylkir 
-				artifact_type = crown_aztec_fylkir
-				artifact_type = scepter_hellenic_fylkir 
-			}
-		}
-		transfer_artifact = {
-			from = PREV
-			to = event_target:scoped_player_heir
-		}
-	}
-}
+#transfer_crown_on_abdication_effect = { #This Effect was removed since none of the vanilla crowns are used in the Mod
+#}
 
 # Referenced by the "button_rename" button in the character view 
 rename_character_effect = {
@@ -17811,9 +17563,9 @@ move_childrens_crusade_region_effect = {
 	if = { #If at any point during the preparation Jerusalem is no longer a valid target, or a real Crusade starts, stop everything.
 		limit = {
 			OR = {
-				k_jerusalem = { has_holder = yes holder_scope = { religion_group = christian } }
-				c_jerusalem = { holder_scope = { religion_group = christian } }
-				c_jerusalem = { holder_scope = { is_crusade_target = yes } }
+				k_seoul = { has_holder = yes holder_scope = { religion_group = christian } }
+				c_seoul = { holder_scope = { religion_group = christian } }
+				c_seoul = { holder_scope = { is_crusade_target = yes } }
 				religion_head = { is_preparing_crusade = yes }
 				religion_head = { 
 					OR = { 
@@ -17849,15 +17601,15 @@ move_childrens_crusade_region_effect = {
 		}
 		break = yes
 	}
-	if = { #Move to Genoa first.
+	if = { #Move to Tokyo first.
 		limit = {
 			has_character_flag = flag_children_at_beginning
 		}
-		primary_title = { set_preferred_capital = c_genoa } #Historically traveled here.
+		primary_title = { set_preferred_capital = c_tokyo } #Historically traveled here.
 		change_variable = { which = children_crusade_forces value = 1 }
 		change_variable = { which = children_crusade_morale value = -1 }
 		clr_character_flag = flag_children_at_beginning
-		set_character_flag = flag_children_at_genoa
+		set_character_flag = flag_children_at_tokyo
 		if = { 
 			limit = {  
 				NOT = { persistent_event_target:childrens_crusade_sponsor_per = { is_alive = yes } }
@@ -17871,18 +17623,18 @@ move_childrens_crusade_region_effect = {
 					character = ROOT
 				}
 			}
-			narrative_event = { id = HF.25815 days = 30 } #Notify everyone that the crusade has reached Genoa and the sea did not part before them.
+			narrative_event = { id = HF.25815 days = 30 } #Notify everyone that the crusade has reached Tokyo and the sea did not part before them.
 		}
 		narrative_event = { id = HF.25808 days = 50 random = 100 } #Ping back to main event to check travel progress.
 	}
-	else_if = { #Then shipwreck to Achaia.
+	else_if = { #Then shipwreck to Nagasaki.
 		limit = {
-			has_character_flag = flag_children_at_genoa
+			has_character_flag = flag_children_at_tokyo
 		}
-		primary_title = { set_preferred_capital = c_achaia } 
+		primary_title = { set_preferred_capital = c_nagasaki } 
 		change_variable = { which = children_crusade_morale value = -1 }
-		clr_character_flag = flag_children_at_genoa
-		set_character_flag = flag_children_at_achaia 
+		clr_character_flag = flag_children_at_tokyo
+		set_character_flag = flag_children_at_nagasaki 
 		any_player = { 
 				limit = {
 				religion_group = christian
@@ -17890,7 +17642,7 @@ move_childrens_crusade_region_effect = {
 					character = ROOT
 				}
 			}
-			narrative_event = { id = HF.25816 days = 30 } #Notify everyone that the crusade has shipwrecked into Achaia.
+			narrative_event = { id = HF.25816 days = 30 } #Notify everyone that the crusade has shipwrecked into Nagasaki.
 		}
 		if = { 
 			limit = {  
@@ -17903,13 +17655,13 @@ move_childrens_crusade_region_effect = {
 		}
 		narrative_event = { id = HF.25808 days = 50 random = 100 } #Ping back to main event to check travel progress.
 	}
-	else_if = { #Then crawl to Nikaea.
+	else_if = { #Then crawl to Vladivostok.
 		limit = {
-			has_character_flag = flag_children_at_achaia
+			has_character_flag = flag_children_at_nagasaki
 		}
-		primary_title = { set_preferred_capital = c_nikaea } 
-		clr_character_flag = flag_children_at_achaia
-		set_character_flag = flag_children_at_nikaea
+		primary_title = { set_preferred_capital = c_vladivostok } 
+		clr_character_flag = flag_children_at_nagasaki
+		set_character_flag = flag_children_at_vladivostok
 		change_variable = { which = children_crusade_forces value = 1 } #Base forces score is 3 = circa 15.000 poorly armed troops.
 		any_player = { 
 				limit = {
@@ -17918,17 +17670,17 @@ move_childrens_crusade_region_effect = {
 					character = ROOT
 				}
 			}
-			narrative_event = { id = HF.25817 days = 30 } #Notify everyone that the crusade has crawled its way to Nikaea.
+			narrative_event = { id = HF.25817 days = 30 } #Notify everyone that the crusade has crawled its way to Vladivostok.
 		}
 		narrative_event = { id = HF.25808 days = 50 random = 100 } #Ping back to main event to check travel progress.
 	}
 	else_if = { #We actually got there. Start the war.
 		limit = {
-			has_character_flag = flag_children_at_nikaea
+			has_character_flag = flag_children_at_vladivostok
 		}
-		primary_title = { set_preferred_capital = c_antiocheia } #Where the troops will spawn.
-		clr_character_flag = flag_children_at_nikaea
-		set_character_flag = flag_children_at_antioch
+		primary_title = { set_preferred_capital = c_seoul } #Where the troops will spawn.
+		clr_character_flag = flag_children_at_vladivostok
+		set_character_flag = flag_children_at_seoul
 		narrative_event = { id = HF.25820 days = 25 } #START THE CRUSADE.
 		any_player = { 
 				limit = {
@@ -17941,11 +17693,11 @@ move_childrens_crusade_region_effect = {
 		}
 	}
 	else = { #Move directly to Antioch in case something went wrong.
-		primary_title = { set_preferred_capital = c_antiocheia } #Historically traveled here.
-		clr_character_flag = flag_children_at_achaia
-		clr_character_flag = flag_children_at_nikaea
-		clr_character_flag = flag_children_at_genoa
-		set_character_flag = flag_children_at_antioch
+		primary_title = { set_preferred_capital = c_seoul } #Historically traveled here.
+		clr_character_flag = flag_children_at_nagasaki
+		clr_character_flag = flag_children_at_vladivostok
+		clr_character_flag = flag_children_at_tokyo
+		set_character_flag = flag_children_at_seoul
 		change_variable = { which = children_crusade_forces value = 1 }
 		change_variable = { which = children_crusade_morale value = -1 }
 		if = { 
@@ -21107,155 +20859,51 @@ murder_bloodline_check_effect = {
 	}
 }
 
-princely_elective_german_elector_setup_effect = {
-	e_hre = { 
-		#County of Koln
-		#County of Mainz
-		#County of Trier
-		#Duchy of Bohemia
-		#Duchy of Franconia
-		#Duchy of Saxony
-		#Duchy of Brandenburg
-		save_persistent_event_target = { name = hre_title_1_per scope = c_koln }
-		save_persistent_event_target = { name = hre_title_2_per scope = c_mainz }
-		save_persistent_event_target = { name = hre_title_3_per scope = c_trier }
-		save_persistent_event_target = { name = hre_title_4_per scope = d_bohemia }
-		save_persistent_event_target = { name = hre_title_5_per scope = d_franconia }
-		save_persistent_event_target = { name = hre_title_6_per scope = d_saxony }
-		save_persistent_event_target = { name = hre_title_7_per scope = d_brandenburg }
+princely_elective_pennisular_elector_setup_effect = {
+	e_malaysia = {
+		#Electors will always be the 9 Traditional Sultans of the Pennisula + Sarawak and other National Territories
+		#Sultan of Negeri Sembilan
+		#Sultan of Selangor
+		#Sultan of Perlis
+		#Sultan of Terengganu
+		#Sultan of Kedah
+		#Sultan of Kelantan
+		#Sultan of Pahang Dalaman (Pahang Sultanate)
+		#Sultan of Pahang Luar (Pahang Sultanate)
+		#Sultan of Johor
+		#Sultan of Perak
+		#Sultan of Sarawak
+		#The State of Singapore (Formerly a Member) mostly an easter egg for people lookin in the code :P
+		
+		save_persistent_event_target = { name = hre_title_1_per scope = d_negeri_sembilan }
+		save_persistent_event_target = { name = hre_title_2_per scope = k_selangor }
+		save_persistent_event_target = { name = hre_title_3_per scope = d_perlis }
+		save_persistent_event_target = { name = hre_title_4_per scope = d_terengganu }
+		save_persistent_event_target = { name = hre_title_5_per scope = d_kedah }
+		save_persistent_event_target = { name = hre_title_6_per scope = k_kelantan }
+		save_persistent_event_target = { name = hre_title_7_per scope = d_pahang_dalaman }
+		save_persistent_event_target = { name = hre_title_8_per scope = d_pahang_luar }
+		save_persistent_event_target = { name = hre_title_9_per scope = k_johor }
+		save_persistent_event_target = { name = hre_title_10_per scope = d_perak_selatan }
+		save_persistent_event_target = { name = hre_title_11_per scope = k_sarawak }
+		save_persistent_event_target = { name = hre_title_12_per scope = k_singapore }
 	}
 }
 
-princely_elective_french_elector_setup_effect = {
-	e_hre = { 
-		#County of Amiens
-		#County of Reims
-		#County of Anjou
-		#Duchy of Aquitaine
-		#Duchy of Burgundy
-		#Duchy of Normandy
-		#Duchy of Champagne
-		save_persistent_event_target = { name = hre_title_1_per scope = c_amiens }
-		save_persistent_event_target = { name = hre_title_2_per scope = c_reims }
-		save_persistent_event_target = { name = hre_title_3_per scope = c_anjou }
-		save_persistent_event_target = { name = hre_title_4_per scope = d_aquitaine }
-		save_persistent_event_target = { name = hre_title_5_per scope = d_burgundy }
-		save_persistent_event_target = { name = hre_title_6_per scope = d_normandy }
-		save_persistent_event_target = { name = hre_title_7_per scope = d_champagne }
-	}
-}
-
-princely_elective_italian_elector_setup_effect = {
-	e_hre = { 
-		#County of Rome
-		#County of Ravenna
-		#County of Genoa
-		#Duchy of Latium
-		#Duchy of Milan
-		#Duchy of Tuscany
-		#Duchy of Pisa
-		save_persistent_event_target = { name = hre_title_1_per scope = c_roma }
-		save_persistent_event_target = { name = hre_title_2_per scope = c_ravenna }
-		save_persistent_event_target = { name = hre_title_3_per scope = c_genoa }
-		save_persistent_event_target = { name = hre_title_4_per scope = d_latium }
-		save_persistent_event_target = { name = hre_title_5_per scope = d_lombardia }
-		save_persistent_event_target = { name = hre_title_6_per scope = d_toscana }
-		save_persistent_event_target = { name = hre_title_7_per scope = d_pisa }
-	}
-}
-
-princely_elective_spain_elector_setup_effect = {
-	e_hre = { 
-		#County of Santiago
-		#County of Cordoba
-		#County of Leon
-		#Duchy of Barcelona
-		#Duchy of Castille
-		#Duchy of Portucale
-		#Duchy of Seville
-		save_persistent_event_target = { name = hre_title_1_per scope = c_santiago }
-		save_persistent_event_target = { name = hre_title_2_per scope = c_leon }
-		save_persistent_event_target = { name = hre_title_3_per scope = c_cordoba }
-		save_persistent_event_target = { name = hre_title_4_per scope = d_barcelona }
-		save_persistent_event_target = { name = hre_title_5_per scope = d_castilla }
-		save_persistent_event_target = { name = hre_title_6_per scope = d_porto }
-		save_persistent_event_target = { name = hre_title_7_per scope = d_sevilla }
-	}
-}
-
-princely_elective_britannia_elector_setup_effect = {
-	e_hre = { 
-		#County of Kent
-		#County of Worcester
-		#County of Durham
-		#Duchy of Mercia
-		#Duchy of Meath
-		#Duchy of Albany
-		#Duchy of Gwynedd
-		save_persistent_event_target = { name = hre_title_1_per scope = c_kent }
-		save_persistent_event_target = { name = hre_title_2_per scope = c_worcester }
-		save_persistent_event_target = { name = hre_title_3_per scope = c_durham }
-		save_persistent_event_target = { name = hre_title_4_per scope = d_mercia }
-		save_persistent_event_target = { name = hre_title_5_per scope = d_meath }
-		save_persistent_event_target = { name = hre_title_6_per scope = d_albany }
-		save_persistent_event_target = { name = hre_title_7_per scope = d_gwynedd }
-	}
-}
-
-princely_elective_apply_elector_setup_effect = { 
+princely_elective_apply_elector_setup_effect = {
 	if = {
 		limit = {
 			capital_scope = {
-				region = world_europe_south_italy
+				region = custom_indomalay
 			}
 		}
 		hidden_tooltip = {
-			princely_elective_italian_elector_setup_effect = yes
+			princely_elective_pennisular_elector_setup_effect = yes
 		}
 	}
-	else_if = {
-		limit = {
-			capital_scope = {
-				region = world_europe_west_francia
-			}
-		}
+	else = { #If outside usual borders, default to Malaysia.
 		hidden_tooltip = {
-			princely_elective_french_elector_setup_effect = yes
-		}
-	}
-	else_if = {
-		limit = {
-			capital_scope = {
-				region = world_europe_west_germania
-			}
-		}
-		hidden_tooltip = {
-			princely_elective_german_elector_setup_effect = yes
-		}
-	}
-	else_if = {
-		limit = {
-			capital_scope = {
-				region = world_europe_west_iberia
-			}
-		}
-		hidden_tooltip = {
-			princely_elective_spain_elector_setup_effect = yes
-		}
-	}
-	else_if = {
-		limit = {
-			capital_scope = {
-				region = world_europe_west_brittania
-			}
-		}
-		hidden_tooltip = {
-			princely_elective_britannia_elector_setup_effect = yes
-		}
-	}
-	else = { #If outside usual borders, default to Germania.
-		hidden_tooltip = {
-			princely_elective_german_elector_setup_effect = yes
+			princely_elective_pennisular_elector_setup_effect = yes
 		}
 	}
 }
@@ -21275,9 +20923,7 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	else_if = {
 	    limit = { 
 	        OR = {
-	        	religion_group = muslim 
-	        	religion = west_african_pagan
-	        	religion = west_african_pagan_reformed
+	        	religion_group = muslim
 	        }
 	    }
 	    add_artifact = engraved_dagger
@@ -21288,7 +20934,7 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	        OR = {
 	        	religion_group = indian_group
 	        	religion = bon
-	        	religion = bon_reformed
+	        	religion_group = buddhist_group
 	        }
 	    }
 	    add_artifact = engraved_dagger
@@ -21298,22 +20944,10 @@ give_goldsmith_artifacts_flag_okay_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = zoroastrian_group
-	        	religion = zun_pagan
-	        	religion = zun_pagan_reformed
 			}
 		}
 	    add_artifact = circlet_of_twilight
         add_artifact = silver_staff
-	}
-	else_if = {
-	    limit = {
-	       OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
-	        }
-	    }
-	    add_artifact = iron_crown
-        add_artifact = engraved_sword
 	}
 	else = {
 	    add_artifact = engraved_crown
@@ -21337,8 +20971,6 @@ give_goldsmith_artifacts_flag_good_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = muslim 
-	        	religion = west_african_pagan
-	        	religion = west_african_pagan_reformed
 	        }
 	    }
 	    add_artifact = bejeweled_dagger
@@ -21348,8 +20980,7 @@ give_goldsmith_artifacts_flag_good_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = indian_group
-	        	religion = bon
-	        	religion = bon_reformed
+	        	religion_group = buddhist_group
 	        }
 	    }
 	    add_artifact = bejeweled_dagger
@@ -21365,16 +20996,6 @@ give_goldsmith_artifacts_flag_good_effect = {
 		}
 	    add_artifact = circlet_of_the_heavens
         add_artifact = golden_staff
-	}
-	else_if = {
-	    limit = {
-	       OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
-	        }
-	    }
-	    add_artifact = crown_of_the_sea
-        add_artifact = golden_sword
 	}
 	else = {
 	    add_artifact = amber_crown
@@ -21398,8 +21019,6 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = muslim 
-	        	religion = west_african_pagan
-	        	religion = west_african_pagan_reformed
 	        }
 	    }
 	    add_artifact = dagger_of_glory
@@ -21409,8 +21028,7 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = indian_group
-	        	religion = bon
-	        	religion = bon_reformed
+	        	religion_group = buddhist_group
 	        }
 	    }
 	    add_artifact = dagger_of_glory
@@ -21420,22 +21038,10 @@ give_goldsmith_artifacts_flag_expensive_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = zoroastrian_group
-	        	religion = zun_pagan
-	        	religion = zun_pagan_reformed
 			}
 		}
 	    add_artifact = circlet_of_the_heavens
 	    add_artifact = staff_of_majesty
-	}
-	else_if = {
-	    limit = {
-	       OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
-	        }
-	    }
-	    add_artifact = crown_of_crows
-	    add_artifact = sword_of_heroes
 	}
 	else = {
 	    add_artifact = heros_crown
@@ -21458,9 +21064,7 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 	else_if = {
 	    limit = { 
 	        OR = {
-	        	religion_group = muslim 
-	        	religion = west_african_pagan
-	        	religion = west_african_pagan_reformed
+	        	religion_group = muslim
 	        }
 	    }
 	    add_artifact = dagger_of_glory_2
@@ -21470,8 +21074,7 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = indian_group
-	        	religion = bon
-	        	religion = bon_reformed
+	        	religion_group = buddhist_group
 	        }
 	    }
 	    add_artifact = dagger_of_glory_2
@@ -21481,22 +21084,10 @@ give_goldsmith_artifacts_flag_amazing_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = zoroastrian_group
-	        	religion = zun_pagan
-	        	religion = zun_pagan_reformed
 			}
 		}
 	    add_artifact = circlet_of_the_heavens_2
 	    add_artifact = staff_of_majesty_2
-	}
-	else_if = {
-	    limit = {
-	       OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
-	        }
-	    }
-	    add_artifact = crown_of_crows_2
-	    add_artifact = sword_of_heroes_2
 	}
 	else = {
 	    add_artifact = heros_crown_2
@@ -21521,8 +21112,6 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = muslim 
-	        	religion = west_african_pagan
-	        	religion = west_african_pagan_reformed
 	        }
 	    }
 	    add_artifact = engraved_dagger
@@ -21532,8 +21121,7 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = indian_group
-	        	religion = bon
-	        	religion = bon_reformed
+	        	religion_group = buddhist_group
 	        }
 	    }
 	    add_artifact = engraved_dagger
@@ -21543,22 +21131,10 @@ give_weaponsmith_artifacts_flag_okay_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = zoroastrian_group
-	        	religion = zun_pagan
-	        	religion = zun_pagan_reformed
 			}
 		}
 	    add_artifact = circlet_of_twilight
         add_artifact = silver_staff
-	}
-	else_if = {
-	    limit = {
-	       OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
-	        }
-	    }
-	    add_artifact = iron_crown
-        add_artifact = engraved_sword
 	}
 	else = {
 	    add_artifact = engraved_crown
@@ -21582,8 +21158,6 @@ give_weaponsmith_artifacts_flag_good_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = muslim 
-	        	religion = west_african_pagan
-	        	religion = west_african_pagan_reformed
 	        }
 	    }
 	    add_artifact = bejeweled_dagger
@@ -21593,8 +21167,7 @@ give_weaponsmith_artifacts_flag_good_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = indian_group
-	        	religion = bon
-	        	religion = bon_reformed
+	        	religion_group = buddhist_group
 	        }
 	    }
 	    add_artifact = bejeweled_dagger
@@ -21604,22 +21177,10 @@ give_weaponsmith_artifacts_flag_good_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = zoroastrian_group
-	        	religion = zun_pagan
-	        	religion = zun_pagan_reformed
 			}
 		}
 	    add_artifact = circlet_of_the_heavens
         add_artifact = golden_staff
-	}
-	else_if = {
-	    limit = {
-	       OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
-	        }
-	    }
-	    add_artifact = crown_of_the_sea
-        add_artifact = golden_sword
 	}
 	else = {
 	    add_artifact = amber_crown
@@ -21643,8 +21204,6 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = muslim 
-	        	religion = west_african_pagan
-	        	religion = west_african_pagan_reformed
 	        }
 	    }
 	    add_artifact = dagger_of_glory
@@ -21654,8 +21213,7 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = indian_group
-	        	religion = bon
-	        	religion = bon_reformed
+	        	religion_group = buddhist_group
 	        }
 	    }
 	    add_artifact = dagger_of_glory
@@ -21665,22 +21223,10 @@ give_weaponsmith_artifacts_flag_expensive_effect = {
 	    limit = { 
 	        OR = {
 	        	religion_group = zoroastrian_group
-	        	religion = zun_pagan
-	        	religion = zun_pagan_reformed
 			}
 		}
 	    add_artifact = circlet_of_the_heavens
 	    add_artifact = staff_of_majesty
-	}
-	else_if = {
-	    limit = {
-	       OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
-	        }
-	    }
-	    add_artifact = crown_of_crows
-	    add_artifact = sword_of_heroes
 	}
 	else = {
 	    add_artifact = heros_crown
@@ -22866,6 +22412,202 @@ abdicate_holy_order_if_religion_changes_effect = {
 				}
 			}
 			log = "[d_knights_of_lavang.owner.GetTitledFirstName] was found to be unfit to lead the [d_knights_of_lavang.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_knights_of_bim = {
+		if = {
+			limit = {
+				is_title_active = d_knights_of_bim
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = catholic } 
+				}
+			}
+			log = "[d_knights_of_bim.owner.GetTitledFirstName] was found to be unfit to lead the [d_knights_of_bim.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_army_of_the_immaculate_heart = {
+		if = {
+			limit = {
+				is_title_active = d_army_of_the_immaculate_heart
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = catholic } 
+				}
+			}
+			log = "[d_army_of_the_immaculate_heart.owner.GetTitledFirstName] was found to be unfit to lead the [d_army_of_the_immaculate_heart.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_knightly_brothers_marist = {
+		if = {
+			limit = {
+				is_title_active = d_knightly_brothers_marist
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = catholic } 
+				}
+			}
+			log = "[d_knightly_brothers_marist.owner.GetTitledFirstName] was found to be unfit to lead the [d_knightly_brothers_marist.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_soldiers_of_solidarity = {
+		if = {
+			limit = {
+				is_title_active = d_soldiers_of_solidarity
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = concordanist } 
+				}
+			}
+			log = "[d_soldiers_of_solidarity.owner.GetTitledFirstName] was found to be unfit to lead the [d_soldiers_of_solidarity.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_salvation_army = {
+		if = {
+			limit = {
+				is_title_active = d_salvation_army
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = concordanist } 
+				}
+			}
+			log = "[d_salvation_army.owner.GetTitledFirstName] was found to be unfit to lead the [d_salvation_army.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_army_of_the_word = {
+		if = {
+			limit = {
+				is_title_active = d_army_of_the_word
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = concordanist } 
+				}
+			}
+			log = "[d_army_of_the_word.owner.GetTitledFirstName] was found to be unfit to lead the [d_army_of_the_word.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_knights_of_amity = {
+		if = {
+			limit = {
+				is_title_active = d_knights_of_amity
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = fuyin } 
+				}
+			}
+			log = "[d_knights_of_amity.owner.GetTitledFirstName] was found to be unfit to lead the [d_knights_of_amity.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_boys_brigade = {
+		if = {
+			limit = {
+				is_title_active = d_boys_brigade
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = fuyin } 
+				}
+			}
+			log = "[d_boys_brigade.owner.GetTitledFirstName] was found to be unfit to lead the [d_boys_brigade.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_knights_of_our_mother_of_sheshan = {
+		if = {
+			limit = {
+				is_title_active = d_knights_of_our_mother_of_sheshan
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = tianzhu } 
+				}
+			}
+			log = "[d_knights_of_our_mother_of_sheshan.owner.GetTitledFirstName] was found to be unfit to lead the [d_knights_of_our_mother_of_sheshan.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_millenial_army_of_the_almighty_god = {
+		if = {
+			limit = {
+				is_title_active = d_millenial_army_of_the_almighty_god
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = eastern_lightning } 
+				}
+			}
+			log = "[d_millenial_army_of_the_almighty_god.owner.GetTitledFirstName] was found to be unfit to lead the [d_millenial_army_of_the_almighty_god.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_guardians_of_the_city_of_sun = {
+		if = {
+			limit = {
+				is_title_active = d_guardians_of_the_city_of_sun
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = vissarionite } 
+				}
+			}
+			log = "[d_guardians_of_the_city_of_sun.owner.GetTitledFirstName] was found to be unfit to lead the [d_guardians_of_the_city_of_sun.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_order_of_st_vladimir = {
+		if = {
+			limit = {
+				is_title_active = d_order_of_st_vladimir
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = orthodox } 
+				}
+			}
+			log = "[d_order_of_st_vladimir.owner.GetTitledFirstName] was found to be unfit to lead the [d_order_of_st_vladimir.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_blessed_wandering_knights_of_the_holy_fools = {
+		if = {
+			limit = {
+				is_title_active = d_blessed_wandering_knights_of_the_holy_fools
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = orthodox } 
+				}
+			}
+			log = "[d_blessed_wandering_knights_of_the_holy_fools.owner.GetTitledFirstName] was found to be unfit to lead the [d_blessed_wandering_knights_of_the_holy_fools.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_free_rangers = {
+		if = {
+			limit = {
+				is_title_active = d_free_rangers
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = baptist } 
+				}
+			}
+			log = "[d_free_rangers.owner.GetTitledFirstName] was found to be unfit to lead the [d_free_rangers.GetName] and therefore removed by the abdicate holy order effect!"
 		}
 	}
     
