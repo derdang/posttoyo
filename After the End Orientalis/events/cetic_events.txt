@@ -407,7 +407,7 @@ narrative_event = {
 			narrative_event = { id = cetic.13 }
 			any_playable_ruler = {
 				limit = {
-					goverment = sinic_bureaucracy_government
+					government = sinic_bureaucracy_government
 				}
 				narrative_event = { id = cetic.13 }
 			}
@@ -443,7 +443,7 @@ narrative_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		goverment = sinic_bureaucracy_government
+		government = sinic_bureaucracy_government
 	}
 	
 	option = {
@@ -592,7 +592,7 @@ province_event = {
 	hide_window = yes
 	
 	trigger = {
-		goverment = sinic_bureaucracy_government
+		government = sinic_bureaucracy_government
 	}
 
 	mean_time_to_happen = {
@@ -2317,7 +2317,7 @@ character_event = {
 	government = sinic_bureaucracy_government
 	
 	trigger = {
-		sinic_bureaucracy_government
+		government = sinic_bureaucracy_government
 		NOT = {
 			has_global_flag = imperial_authority_set
 		}
@@ -2385,7 +2385,7 @@ character_event = {
 	}
 	
 	trigger = {
-		goverment = sinic_bureaucracy_government
+		government = sinic_bureaucracy_government
 		OR = {
 			AND = {
 				check_variable = { which = global_imp_auth value < 10 }
@@ -2908,7 +2908,7 @@ character_event = {
 		if = {
 			limit = {
 				liege = {
-					goverment = sinic_bureaucracy_government
+					government = sinic_bureaucracy_government
 					NOT = {
 						trait = strong_emperor
 					}
@@ -2934,7 +2934,7 @@ character_event = {
 		if = {
 			limit = {
 				liege = {
-					goverment = sinic_bureaucracy_government
+					government = sinic_bureaucracy_government
 					NOT = {
 						trait = strong_emperor
 					}
@@ -3015,7 +3015,7 @@ character_event = {
 		if = {
 			limit = {
 				liege = {
-					goverment = sinic_bureaucracy_government
+					government = sinic_bureaucracy_government
 					NOT = {
 						trait = strong_emperor
 					}
@@ -3074,7 +3074,7 @@ character_event = {
 			has_minor_title = title_grand_secretary
 		}
 		liege = {
-			goverment = sinic_bureaucracy_government
+			government = sinic_bureaucracy_government
 			NOT = {
 				trait = strong_emperor
 			}
@@ -3100,7 +3100,7 @@ character_event = {
 	
 	trigger = {
 		trait = grand_secretary
-		goverment = sinic_bureaucracy_government
+		government = sinic_bureaucracy_government
 	}
 	
 	mean_time_to_happen = {
@@ -4368,7 +4368,7 @@ character_event = {
 		any_character = {
 			limit = {
 				AND = {
-					goverment = sinic_bureaucracy_government
+					government = sinic_bureaucracy_government
 					independent = yes
 				}
 			}
@@ -4399,7 +4399,7 @@ character_event = {
 		any_character = {
 			limit = {
 				AND = {
-					goverment = sinic_bureaucracy_government
+					government = sinic_bureaucracy_government
 					independent = yes
 				}
 			}
@@ -4413,7 +4413,7 @@ character_event = {
 		any_character = {
 			limit = {
 				AND = {
-					goverment = sinic_bureaucracy_government
+					government = sinic_bureaucracy_government
 					independent = yes
 				}
 			}
@@ -4443,7 +4443,7 @@ character_event = {
 		any_character = {
 			limit = {
 				AND = {
-					goverment = sinic_bureaucracy_government
+					government = sinic_bureaucracy_government
 					independent = yes
 				}
 			}
@@ -4516,7 +4516,7 @@ character_event = {
 	
 	trigger = {
 		AND = {
-			goverment = sinic_bureaucracy_government
+			government = sinic_bureaucracy_government
 			independent = yes
 		}
 		NOT = {
@@ -4531,7 +4531,7 @@ character_event = {
 		any_character = {
 			limit = {
 				AND = {
-					goverment = sinic_bureaucracy_government
+					government = sinic_bureaucracy_government
 					independent = yes
 				}
 			}
@@ -4864,7 +4864,7 @@ character_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		goverment = sinic_bureaucracy_government
+		government = sinic_bureaucracy_government
 	}
 	
 	immediate = {
@@ -5939,7 +5939,7 @@ character_event = {
 		add_trait = grand_secretary
 		any_character = {
 			limit = {
-				liege = {goverment = sinic_bureaucracy_government }
+				liege = {government = sinic_bureaucracy_government }
 			}
 			character_event = { id = cetic.410 } #Ping event
 		}
@@ -6002,7 +6002,7 @@ character_event = {
 	only_playable = yes
 	
 	trigger = {
-		goverment = sinic_bureaucracy_government
+		government = sinic_bureaucracy_government
 		NOT = {
 			has_global_flag = global_bureaucracy_set
 		}
