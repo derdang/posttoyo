@@ -50,8 +50,8 @@ has_religion_matching_joined_warrior_lodge_trigger = {
 		text = has_religion_matching_joined_warrior_lodge_tt
 		OR = {
 			AND = {
-				religion_openly_norse_or_reformed_trigger = yes
-				society_member_of = warrior_lodge_norse
+				religion_openly_americanist_or_heresy_trigger = yes
+				society_member_of = warrior_lodge_americanist
 			}
 		}
 	}
@@ -60,8 +60,8 @@ has_religion_matching_joined_warrior_lodge_trigger = {
 has_religion_matching_available_warrior_lodge_trigger = {
 	OR = {
 		AND = {
-			religion_openly_norse_or_reformed_trigger = yes
-			warrior_lodge_norse = { society_has_members = yes }
+			religion_openly_americanist_or_heresy_trigger = yes
+			warrior_lodge_americanist = { society_has_members = yes }
 		}
 	}
 }
@@ -69,16 +69,16 @@ has_religion_matching_available_warrior_lodge_trigger = {
 has_religion_matching_warrior_lodge_in_need_of_members_trigger = {
 	OR = {
 		AND = {
-			religion_openly_norse_or_reformed_trigger = yes
-			warrior_lodge_norse = { num_of_society_members < 30 }
+			religion_openly_americanist_or_heresy_trigger = yes
+			warrior_lodge_americanist = { num_of_society_members < 30 }
 		}
 	}
 }
 has_religion_matching_empty_warrior_lodge_trigger = {
 	OR = {
 		AND = {
-			religion_openly_norse_or_reformed_trigger = yes
-			NOT = { warrior_lodge_norse = { society_has_members = yes } }
+			religion_openly_americanist_or_heresy_trigger = yes
+			NOT = { warrior_lodge_americanist = { society_has_members = yes } }
 		}
 	}
 }
@@ -86,22 +86,22 @@ has_religion_matching_empty_warrior_lodge_trigger = {
 #Can be used on a character too -- will then default to look at the society a character is member of.
 this_society_is_a_warrior_lodge_trigger = {
 	OR = {
-	    is_society = warrior_lodge_norse
+	    is_society = warrior_lodge_americanist
 	}
 }
 
 has_religion_matching_any_warrior_lodge_trigger = {
 	OR = {
-		religion_openly_norse_or_reformed_trigger = yes
+		religion_openly_americanist_or_heresy_trigger = yes
 	}
 }
 
 has_religion_matching_warrior_lodge_to_revive_trigger = {
 	OR = {
 		AND = {
-			religion_openly_norse_or_reformed_trigger = yes
+			religion_openly_americanist_or_heresy_trigger = yes
 			event_target:warrior_lodge_to_revive = {
-				is_society = warrior_lodge_norse
+				is_society = warrior_lodge_americanist
 			}
 		}
 	}
@@ -112,14 +112,14 @@ special_join_warrior_lodge_trigger = {
 		text = special_join_warrior_lodge_trigger_tt
 		OR = {
 			AND = {
-				FROM = { is_society = warrior_lodge_norse }
+				FROM = { is_society = warrior_lodge_americanist }
 				custom_tooltip = {
 					text = has_liege_vassal_or_neighbor_of_norse_religion_tt
 					hidden_trigger = {
 						OR = {
-							any_vassal = { religion_openly_norse_or_reformed_trigger = yes }
-							any_liege = { religion_openly_norse_or_reformed_trigger = yes }
-							any_neighbor_independent_ruler = { religion_openly_norse_or_reformed_trigger = yes }
+							any_vassal = { religion_openly_americanist_or_heresy_trigger = yes }
+							any_liege = { religion_openly_americanist_or_heresy_trigger = yes }
+							any_neighbor_independent_ruler = { religion_openly_americanist_or_heresy_trigger = yes }
 						}
 					}
 				}

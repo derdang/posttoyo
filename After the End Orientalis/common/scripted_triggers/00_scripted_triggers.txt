@@ -2650,7 +2650,10 @@ religion_openly_americanist_or_heresy_trigger = {
 	custom_tooltip = {
 		text = religion_openly_americanist_or_heresy_tooltip
 		hidden_trigger = {
-			religion = americanist
+			OR = {
+				religion = americanist
+				religion = americanist_reformed
+			}
 		}
 	}
 }
