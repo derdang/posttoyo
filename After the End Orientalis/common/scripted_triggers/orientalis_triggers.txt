@@ -40,6 +40,17 @@ is_nusantaran_sphere = {
 		culture_group = philippine
 	}
 }
+is_nusantaran_sphere_no_ph = {
+	OR = {
+		culture_group = malayan
+		culture_group = nusantaran
+		culture_group = barrier_batak
+		culture_group = dayak
+		culture_group = maluku
+		culture_group = sulawesi
+		culture_group = timor
+	}
+}
 is_salafi_religion = {
 	OR = {
 		religion = salafi

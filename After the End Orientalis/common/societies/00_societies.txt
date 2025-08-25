@@ -6353,9 +6353,10 @@ warrior_lodge_indonesian = {
 		}
 		AND = {
 			capital_scope = { region = custom_indomalay }
-			OR = {
-				culture_group = nusantaran
-				culture_group = barrier_batak
+			AND = {
+				is_nusantaran_sphere_no_ph = yes
+				NOT = {culture_group = malayan}
+				NOT = {culture_group = dayak}
 			}
 		}
 	}
@@ -6364,9 +6365,10 @@ warrior_lodge_indonesian = {
 		OR = {
 			AND = {
 				capital_scope = { region = custom_indomalay }
-				OR = {
-					culture_group = nusantaran
-					culture_group = barrier_batak
+				AND = {
+					is_nusantaran_sphere_no_ph = yes
+					NOT = {culture_group = malayan}
+					NOT = {culture_group = dayak}
 				}
 			}
 			#Always show if: You are already a member. Duh.
@@ -6377,9 +6379,10 @@ warrior_lodge_indonesian = {
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
 		AND = {
 			capital_scope = { region = custom_indomalay }
-			OR = {
-				culture_group = nusantaran
-				culture_group = barrier_batak
+			AND = {
+				is_nusantaran_sphere_no_ph = yes
+				NOT = {culture_group = malayan}
+				NOT = {culture_group = dayak}
 			}
 		}
 	}
@@ -6822,9 +6825,10 @@ warrior_lodge_indonesian = {
 			controls_religion = no
 			is_adult = yes
 			is_in_society = no
-			OR = {
-				culture_group = nusantaran
-				culture_group = barrier_batak
+			AND = {
+				is_nusantaran_sphere_no_ph = yes
+				NOT = {culture_group = malayan}
+				NOT = {culture_group = dayak}
 			}
 			OR = {
 				martial = 12

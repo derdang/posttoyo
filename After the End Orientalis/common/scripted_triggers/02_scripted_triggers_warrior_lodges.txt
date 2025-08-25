@@ -87,6 +87,17 @@ has_religion_matching_empty_warrior_lodge_trigger = {
 this_society_is_a_warrior_lodge_trigger = {
 	OR = {
 	    is_society = warrior_lodge_americanist
+		is_society = warrior_lodge_malayan
+		is_society = warrior_lodge_indonesian
+		is_society = warrior_lodge_filipino
+		is_society = warrior_lodge_viet
+		is_society = warrior_lodge_thailao
+		is_society = warrior_lodge_burmese
+		is_society = warrior_lodge_khmer
+		is_society = warrior_lodge_southern_chinese
+		is_society = warrior_lodge_northern_chinese
+		is_society = warrior_lodge_korean
+		is_society = warrior_lodge_japanese
 	}
 }
 

@@ -3437,10 +3437,7 @@ character_event = {
 	is_in_society = yes
 	
 	trigger = {
-		OR = {
-			is_member_of_any_warrior_lodge_trigger = yes
-			is_member_of_a_martial_art_school = yes
-		}
+		is_member_of_any_warrior_lodge_trigger = yes
 		has_any_quest = no
 		NOT = { has_character_modifier = quest_cooldown_timer }
 		NOT = { is_inaccessible_trigger = yes }
