@@ -741,15 +741,6 @@ targetted_decisions = {
 			
 			has_dlc = "Rajas of India"
 			
-			NOT = {
-				AND = {
-					has_dlc = "Charlemagne"
-					has_landed_title = e_byzantium # May instead renounce iconoclasm
-					has_landed_title = c_byzantion
-					religion = iconoclast
-					capital_scope = { religion = orthodox }
-				}
-			}
 		}
 		allow = {
 			NOT = { trait = zealous }
@@ -831,7 +822,33 @@ targetted_decisions = {
 			}
 			if = {
 				limit = {
-					religion_group = vernacular
+					religion_group = oldworld
+					NOT = { trait = sympathy_oldworld }
+					capital_scope = {
+						NOT = { true_religion_group = ROOT }
+					}
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_oldworld
+				}
+			}
+			if = {
+				limit = {
+					religion_group = eastern
+					NOT = { trait = sympathy_eastern }
+					capital_scope = {
+						NOT = { true_religion_group = ROOT }
+					}
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_eastern
+				}
+			}
+			if = {
+				limit = {
+					religion_group = zoroastrian_group
 					NOT = { trait = sympathy_zoroastrianism }
 					capital_scope = {
 						NOT = { true_religion_group = ROOT }
@@ -866,6 +883,19 @@ targetted_decisions = {
 				random = {
 					chance = 60
 					add_trait = sympathy_indian
+				}
+			}
+			if = {
+				limit = {
+					religion_group = buddhist_group
+					NOT = { trait = sympathy_buddhist }
+					capital_scope = {
+						NOT = { true_religion_group = ROOT }
+					}
+				}
+				random = {
+					chance = 60
+					add_trait = sympathy_buddhist
 				}
 			}
 			custom_tooltip = { text = local_religion_conversion_tooltip }
