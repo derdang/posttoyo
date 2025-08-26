@@ -5301,31 +5301,19 @@ warrior_lodge_viet = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		capital_scope = { region = custom_old_vietnam }
-		OR = {
-			culture_group = viet
-			culture_group = chamic
-		}
+		has_viet_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			capital_scope = { region = custom_old_vietnam }
-			OR = {
-				culture_group = viet
-				culture_group = chamic
-			}
+			has_viet_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_viet
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		capital_scope = { region = custom_old_vietnam }
-		OR = {
-			culture_group = viet
-			culture_group = chamic
-		}
+		has_viet_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
