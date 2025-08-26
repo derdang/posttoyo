@@ -39,6 +39,46 @@ has_current_warrior_lodge_leader_trait_trigger = {
 				trait = martial_disciple
 				society_member_of = warrior_lodge_viet
 			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_malayan
+			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_indonesian
+			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_filipino
+			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_thailao
+			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_burmese
+			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_khmer
+			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_southern_chinese
+			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_northern_chinese
+			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_korean
+			}
+			AND = {
+				trait = martial_disciple
+				society_member_of = warrior_lodge_japanese
+			}
 		}
 	}
 }
@@ -52,8 +92,48 @@ has_religion_matching_joined_warrior_lodge_trigger = {
 				society_member_of = warrior_lodge_americanist
 			}
 			AND = {
+				has_malayan_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_malayan
+			}
+			AND = {
+				has_indonesian_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_indonesian
+			}
+			AND = {
+				has_filipino_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_filipino
+			}
+			AND = {
 				has_viet_lodge_prerequisites = yes
 				society_member_of = warrior_lodge_viet
+			}
+			AND = {
+				has_thailao_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_thailao
+			}
+			AND = {
+				has_burmese_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_burmese
+			}
+			AND = {
+				has_khmer_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_khmer
+			}
+			AND = {
+				has_southern_chinese_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_southern_chinese
+			}
+			AND = {
+				has_northern_chinese_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_northern_chinese
+			}
+			AND = {
+				has_korean_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_korean
+			}
+			AND = {
+				has_japanese_lodge_prerequisites = yes
+				society_member_of = warrior_lodge_japanese
 			}
 		}
 	}
@@ -79,8 +159,48 @@ has_religion_matching_warrior_lodge_in_need_of_members_trigger = {
 			warrior_lodge_americanist = { num_of_society_members < 30 }
 		}
 		AND = {
+			has_malayan_lodge_prerequisites = yes
+			warrior_lodge_malayan = { num_of_society_members < 30 }
+		}
+		AND = {
+			has_indonesian_lodge_prerequisites = yes
+			warrior_lodge_indonesian = { num_of_society_members < 30 }
+		}
+		AND = {
+			has_filipino_lodge_prerequisites = yes
+			warrior_lodge_filipino = { num_of_society_members < 30 }
+		}
+		AND = {
 			has_viet_lodge_prerequisites = yes
 			warrior_lodge_viet = { num_of_society_members < 30 }
+		}
+		AND = {
+			has_thailao_lodge_prerequisites = yes
+			warrior_lodge_thailao = { num_of_society_members < 30 }
+		}
+		AND = {
+			has_burmese_lodge_prerequisites = yes
+			warrior_lodge_burmese = { num_of_society_members < 30 }
+		}
+		AND = {
+			has_khmer_lodge_prerequisites = yes
+			warrior_lodge_khmer = { num_of_society_members < 30 }
+		}
+		AND = {
+			has_northern_chinese_lodge_prerequisites = yes
+			warrior_lodge_northern_chinese = { num_of_society_members < 30 }
+		}
+		AND = {
+			has_southern_chinese_lodge_prerequisites = yes
+			warrior_lodge_southern_chinese = { num_of_society_members < 30 }
+		}
+		AND = {
+			has_japanese_lodge_prerequisites = yes
+			warrior_lodge_japanese = { num_of_society_members < 30 }
+		}
+		AND = {
+			has_korean_lodge_prerequisites = yes
+			warrior_lodge_korean = { num_of_society_members < 30 }
 		}
 	}
 }
@@ -91,8 +211,48 @@ has_religion_matching_empty_warrior_lodge_trigger = {
 			NOT = { warrior_lodge_americanist = { society_has_members = yes } }
 		}
 		AND = {
+			has_malayan_lodge_prerequisites = yes
+			NOT = { warrior_lodge_malayan = { society_has_members = yes } }
+		}
+		AND = {
+			has_indonesian_lodge_prerequisites = yes
+			NOT = { warrior_lodge_indonesian = { society_has_members = yes } }
+		}
+		AND = {
+			has_filipino_lodge_prerequisites = yes
+			NOT = { warrior_lodge_filipino = { society_has_members = yes } }
+		}
+		AND = {
 			has_viet_lodge_prerequisites = yes
 			NOT = { warrior_lodge_viet = { society_has_members = yes } }
+		}
+		AND = {
+			has_thailao_lodge_prerequisites = yes
+			NOT = { warrior_lodge_thailao = { society_has_members = yes } }
+		}
+		AND = {
+			has_burmese_lodge_prerequisites = yes
+			NOT = { warrior_lodge_burmese = { society_has_members = yes } }
+		}
+		AND = {
+			has_khmer_lodge_prerequisites = yes
+			NOT = { warrior_lodge_khmer = { society_has_members = yes } }
+		}
+		AND = {
+			has_northern_chinese_lodge_prerequisites = yes
+			NOT = { warrior_lodge_northern_chinese = { society_has_members = yes } }
+		}
+		AND = {
+			has_southern_chinese_lodge_prerequisites = yes
+			NOT = { warrior_lodge_southern_chinese = { society_has_members = yes } }
+		}
+		AND = {
+			has_japanese_lodge_prerequisites = yes
+			NOT = { warrior_lodge_japanese = { society_has_members = yes } }
+		}
+		AND = {
+			has_korean_lodge_prerequisites = yes
+			NOT = { warrior_lodge_korean = { society_has_members = yes } }
 		}
 	}
 }
@@ -131,9 +291,69 @@ has_religion_matching_warrior_lodge_to_revive_trigger = {
 			}
 		}
 		AND = {
+			has_malayan_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_malayan
+			}
+		}
+		AND = {
+			has_indonesian_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_indonesian
+			}
+		}
+		AND = {
+			has_filipino_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_filipino
+			}
+		}
+		AND = {
 			has_viet_lodge_prerequisites = yes
 			event_target:warrior_lodge_to_revive = {
 				is_society = warrior_lodge_viet
+			}
+		}
+		AND = {
+			has_burmese_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_burmese
+			}
+		}
+		AND = {
+			has_thailao_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_thailao
+			}
+		}
+		AND = {
+			has_khmer_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_khmer
+			}
+		}
+		AND = {
+			has_northern_chinese_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_northern_chinese
+			}
+		}
+		AND = {
+			has_southern_chinese_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_southern_chinese
+			}
+		}
+		AND = {
+			has_japanese_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_japanese
+			}
+		}
+		AND = {
+			has_korean_lodge_prerequisites = yes
+			event_target:warrior_lodge_to_revive = {
+				is_society = warrior_lodge_korean
 			}
 		}
 	}
@@ -157,6 +377,45 @@ special_join_warrior_lodge_trigger = {
 				}
 			}
 			AND = {
+				FROM = { is_society = warrior_lodge_malayan }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_malayan_culture_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { has_malayan_lodge_prerequisites = yes }
+							any_liege = { has_malayan_lodge_prerequisites = yes }
+							any_neighbor_independent_ruler = { has_malayan_lodge_prerequisites = yes }
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { is_society = warrior_lodge_indonesian }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_indonesian_culture_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { has_indonesian_lodge_prerequisites = yes }
+							any_liege = { has_indonesian_lodge_prerequisites = yes }
+							any_neighbor_independent_ruler = { has_indonesian_lodge_prerequisites = yes }
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { is_society = warrior_lodge_filipino }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_filipino_culture_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { has_filipino_lodge_prerequisites = yes }
+							any_liege = { has_filipino_lodge_prerequisites = yes }
+							any_neighbor_independent_ruler = { has_filipino_lodge_prerequisites = yes }
+						}
+					}
+				}
+			}
+			AND = {
 				FROM = { is_society = warrior_lodge_viet }
 				custom_tooltip = {
 					text = has_liege_vassal_or_neighbor_of_viet_culture_tt
@@ -165,6 +424,84 @@ special_join_warrior_lodge_trigger = {
 							any_vassal = { has_viet_lodge_prerequisites = yes }
 							any_liege = { has_viet_lodge_prerequisites = yes }
 							any_neighbor_independent_ruler = { has_viet_lodge_prerequisites = yes }
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { is_society = warrior_lodge_thailao }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_thailao_culture_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { has_thailao_lodge_prerequisites = yes }
+							any_liege = { has_thailao_lodge_prerequisites = yes }
+							any_neighbor_independent_ruler = { has_thailao_lodge_prerequisites = yes }
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { is_society = warrior_lodge_burmese }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_burmese_culture_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { has_burmese_lodge_prerequisites = yes }
+							any_liege = { has_burmese_lodge_prerequisites = yes }
+							any_neighbor_independent_ruler = { has_burmese_lodge_prerequisites = yes }
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { is_society = warrior_lodge_northern_chinese }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_northern_chinese_culture_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { has_northern_chinese_lodge_prerequisites = yes }
+							any_liege = { has_northern_chinese_lodge_prerequisites = yes }
+							any_neighbor_independent_ruler = { has_northern_chinese_lodge_prerequisites = yes }
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { is_society = warrior_lodge_southern_chinese }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_southern_chinese_culture_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { has_southern_chinese_lodge_prerequisites = yes }
+							any_liege = { has_southern_chinese_lodge_prerequisites = yes }
+							any_neighbor_independent_ruler = { has_southern_chinese_lodge_prerequisites = yes }
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { is_society = warrior_lodge_japanese }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_japanese_culture_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { has_japanese_lodge_prerequisites = yes }
+							any_liege = { has_japanese_lodge_prerequisites = yes }
+							any_neighbor_independent_ruler = { has_japanese_lodge_prerequisites = yes }
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { is_society = warrior_lodge_korean }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_korean_culture_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { has_korean_lodge_prerequisites = yes }
+							any_liege = { has_korean_lodge_prerequisites = yes }
+							any_neighbor_independent_ruler = { has_korean_lodge_prerequisites = yes }
 						}
 					}
 				}

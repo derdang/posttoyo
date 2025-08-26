@@ -11,7 +11,7 @@ namespace = SoA
 character_event = {
 	id = SoA.105
 	desc = EVTDESC_SoA_105
-	picture = GFX_evt_china_open
+	picture = GFX_evt_jewish_market
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -21,7 +21,7 @@ character_event = {
 	immediate = {
 		any_realm_lord = {
 			limit = {
-				culture_group = han
+				religion_group = jewish_group
 				ai = yes
 			}
 			any_demesne_title = {
@@ -50,7 +50,7 @@ character_event = {
 character_event = {
 	id = SoA.106
 	desc = EVTDESC_SoA_106
-	picture = GFX_evt_china_open
+	picture = GFX_evt_jewish_market
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -68,15 +68,15 @@ character_event = {
 	}
 }
 
-# Jews Welcomed Back due to ruler now being Chinese!
+# Jews Welcomed Back due to ruler now being Jewish!
 character_event = {
 	id = SoA.566
 	desc = EVTDESC_SoA_566
-	picture = GFX_evt_china_open
+	picture = GFX_evt_jewish_market
 	border = GFX_event_normal_frame_religion
 
 	only_playable = yes
-	culture_group = han
+	religion_group = jewish_group
 	only_independent = yes
 	
 	trigger = {
@@ -108,7 +108,7 @@ character_event = {
 character_event = {
 	id = SoA.107
 	desc = EVTDESC_SoA_107
-	picture = GFX_evt_china_open
+	picture = GFX_evt_jewish_market
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -132,7 +132,7 @@ character_event = {
 character_event = {
 	id = SoA.108
 	desc = EVTDESC_SoA_108
-	picture = GFX_evt_china_open
+	picture = GFX_evt_jewish_market
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -393,12 +393,12 @@ character_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-	culture_group = han
+	religion_group = jewish_group
 	
 	trigger = {
 		has_job_title = job_chancellor
 		employer = {
-			NOT = { culture_group = han }
+			NOT = { religion_group = jewish_group }
 		}
 	}
 	
@@ -424,7 +424,7 @@ character_event = {
 character_event = {
 	id = SoA.561
 	desc = EVTDESC_SoA_561
-	picture = GFX_evt_china_open
+	picture = GFX_evt_jewish_market
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -443,12 +443,12 @@ character_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-	culture_group = han
+	religion_group = jewish_group
 	
 	trigger = {
 		has_job_title = job_treasurer
 		employer = {
-			NOT = { culture_group = han }
+			NOT = { religion_group = jewish_group }
 		}
 	}
 	
@@ -474,7 +474,7 @@ character_event = {
 character_event = {
 	id = SoA.563
 	desc = EVTDESC_SoA_563
-	picture = GFX_evt_china_open
+	picture = GFX_evt_jewish_market
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
@@ -493,12 +493,12 @@ character_event = {
 	min_age = 16
 	only_capable = yes
 	prisoner = no
-	culture_group = han
+	religion_group = jewish_group
 	
 	trigger = {
 		has_job_title = job_spymaster
 		employer = {
-			NOT = { culture_group = han }
+			NOT = { religion_group = jewish_group }
 		}
 	}
 	
@@ -524,7 +524,7 @@ character_event = {
 character_event = {
 	id = SoA.565
 	desc = EVTDESC_SoA_565
-	picture = GFX_evt_china_open
+	picture = GFX_evt_jewish_market
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes

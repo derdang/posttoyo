@@ -5811,37 +5811,19 @@ warrior_lodge_malayan = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		AND = {
-			capital_scope = { region = custom_indomalay }
-			OR = {
-				culture_group = malayan
-				culture_group = dayak
-			}
-		}
+		has_malayan_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			AND = {
-				capital_scope = { region = custom_indomalay }
-				OR = {
-					culture_group = malayan
-					culture_group = dayak
-				}
-			}
+			has_malayan_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_malayan
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		AND = {
-			capital_scope = { region = custom_indomalay }
-			OR = {
-				culture_group = malayan
-				culture_group = dayak
-			}
-		}
+		has_malayan_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
@@ -6339,40 +6321,19 @@ warrior_lodge_indonesian = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		AND = {
-			capital_scope = { region = custom_indomalay }
-			AND = {
-				is_nusantaran_sphere_no_ph = yes
-				NOT = {culture_group = malayan}
-				NOT = {culture_group = dayak}
-			}
-		}
+		has_indonesian_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			AND = {
-				capital_scope = { region = custom_indomalay }
-				AND = {
-					is_nusantaran_sphere_no_ph = yes
-					NOT = {culture_group = malayan}
-					NOT = {culture_group = dayak}
-				}
-			}
+			has_indonesian_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_indonesian
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		AND = {
-			capital_scope = { region = custom_indomalay }
-			AND = {
-				is_nusantaran_sphere_no_ph = yes
-				NOT = {culture_group = malayan}
-				NOT = {culture_group = dayak}
-			}
-		}
+		has_indonesian_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
@@ -6870,28 +6831,19 @@ warrior_lodge_filipino = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		AND = {
-			capital_scope = { region = custom_the_philippines }
-			culture_group = philippine
-		}
+		has_filipino_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			AND = {
-				capital_scope = { region = custom_the_philippines }
-				culture_group = philippine
-			}
+			has_filipino_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_filipino
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		AND = {
-			capital_scope = { region = custom_the_philippines }
-			culture_group = philippine
-		}
+		has_filipino_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
@@ -7385,31 +7337,19 @@ warrior_lodge_thailao = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		OR = {
-			capital_scope = { region = custom_old_laos }
-			capital_scope = { region = custom_old_siam }
-		}
-		culture_group = southwest_tai
+		has_thailao_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			OR = {
-				capital_scope = { region = custom_old_laos }
-				capital_scope = { region = custom_old_siam }
-			}
-			culture_group = southwest_tai
+			has_thailao_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_thailao
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		OR = {
-			capital_scope = { region = custom_old_laos }
-			capital_scope = { region = custom_old_siam }
-		}
-		culture_group = southwest_tai
+		has_thailao_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
@@ -7903,31 +7843,19 @@ warrior_lodge_burmese = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		capital_scope = { region = custom_old_burma }
-		OR = {
-			culture_group = burmic
-			culture_group = karenic
-		}
+		has_burmese_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			capital_scope = { region = custom_old_burma }
-			OR = {
-				culture_group = burmic
-				culture_group = karenic
-			}
+			has_burmese_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_burmese
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		capital_scope = { region = custom_old_burma }
-		OR = {
-			culture_group = burmic
-			culture_group = karenic
-		}
+		has_burmese_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
@@ -8424,22 +8352,19 @@ warrior_lodge_khmer = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		capital_scope = { region = custom_old_cambodia }
-		culture_group = cambodian
+		has_khmer_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			capital_scope = { region = custom_old_cambodia }
-			culture_group = cambodian
+			has_khmer_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_khmer
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		capital_scope = { region = custom_old_cambodia }
-		culture_group = cambodian
+		has_khmer_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
@@ -8933,31 +8858,19 @@ warrior_lodge_japanese = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		capital_scope = { region = world_old_japan }
-		OR = {
-			culture_group = japonic
-			culture = ainu
-		}
+		has_japanese_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			capital_scope = { region = world_old_japan }
-			OR = {
-				culture_group = japonic
-				culture = ainu
-			}
+			has_japanese_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_japanese
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		capital_scope = { region = world_old_japan }
-		OR = {
-			culture_group = japonic
-			culture = ainu
-		}
+		has_japanese_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
@@ -9454,22 +9367,19 @@ warrior_lodge_korean = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		capital_scope = { region = custom_korea }
-		culture_group = korean
+		has_korean_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			capital_scope = { region = custom_korea }
-			culture_group = korean
+			has_korean_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_korean
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		capital_scope = { region = custom_korea }
-		culture_group = korean
+		has_korean_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
@@ -9963,31 +9873,19 @@ warrior_lodge_northern_chinese = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		OR = {
-			capital_scope =  {region = custom_xibei }
-			capital_scope =  {region = custom_dongbei }
-			capital_scope =  {region = custom_huabei }
-		}
+		has_northern_chinese_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			OR = {
-				capital_scope =  {region = custom_xibei }
-				capital_scope =  {region = custom_dongbei }
-				capital_scope =  {region = custom_huabei }
-			}
+			has_northern_chinese_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_northern_chinese
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		OR = {
-			capital_scope =  {region = custom_xibei }
-			capital_scope =  {region = custom_dongbei }
-			capital_scope =  {region = custom_huabei }
-		}
+		has_northern_chinese_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"
@@ -10485,34 +10383,19 @@ warrior_lodge_southern_chinese = {
 			limit = { prisoner = yes }
 			prisoner = no
 		}
-		OR = {
-			capital_scope =  {region = custom_xinan }
-			capital_scope =  {region = custom_zhongnan }
-			capital_scope =  {region = custom_huadong }
-			capital_scope =  {region = custom_taiwan }
-		}
+		has_southern_chinese_lodge_prerequisites = yes
 	}
 
 	show_society = {
 		OR = {
-			OR = {
-				capital_scope =  {region = custom_xinan }
-				capital_scope =  {region = custom_zhongnan }
-				capital_scope =  {region = custom_huadong }
-				capital_scope =  {region = custom_taiwan }
-			}
+			has_southern_chinese_lodge_prerequisites = yes
 			#Always show if: You are already a member. Duh.
 			society_member_of = warrior_lodge_southern_chinese
 		}
 	}
 
 	potential = { #if you change religion or become zealous while NOT pagan, you are kicked out
-		OR = {
-			capital_scope =  {region = custom_xinan }
-			capital_scope =  {region = custom_zhongnan }
-			capital_scope =  {region = custom_huadong }
-			capital_scope =  {region = custom_taiwan }
-		}
+		has_southern_chinese_lodge_prerequisites = yes
 	}
 
 	society_rank = { #"Fledling"

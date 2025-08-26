@@ -482,11 +482,11 @@ character_event = {
 	desc = EVTDESC_bounce
 	picture = GFX_evt_china_golden_age
 	hide_window = yes
+	government = sinic_bureaucracy_government
 	has_global_flag = cali_emperor_destroyed
 	
 	trigger = {
 		is_liege_or_above = ROOT
-		government = sinic_bureaucracy_government
 	}
 	
 	mean_time_to_happen = {
@@ -662,10 +662,10 @@ character_event = {
 	desc = EVTDESC_cetic_claim_request
 	picture = GFX_evt_chinese_bureaucrat
 	is_triggered_only = yes
+	government = sinic_bureaucracy_government
 	
 	trigger = {
 		is_liege_or_above = ROOT
-		government = sinic_bureaucracy_government
 	}
 	
 	option = {
@@ -718,9 +718,10 @@ character_event = {
 	desc = EVTDESC_cetic_claim_granted
 	picture = GFX_evt_china_diplomatic_success
 	is_triggered_only = yes
+	government = sinic_bureaucracy_government
 	
 	trigger = {
-		government = sinic_bureaucracy_government
+		
 	}
 	
 	option = {
@@ -757,9 +758,10 @@ character_event = {
 	desc = EVTDESC_cetic_claim_denied
 	picture = GFX_evt_china_diplomatic_incident
 	is_triggered_only = yes
+	government = sinic_bureaucracy_government
 	
 	trigger = {
-		government = sinic_bureaucracy_government
+		
 	}
 	
 	option = {
@@ -2312,6 +2314,7 @@ character_event = {
 	id = cetic.303
 	hide_window = yes
 	is_triggered_only = yes
+	government = sinic_bureaucracy_government
 	
 	trigger = {
 		government = sinic_bureaucracy_government
@@ -2606,10 +2609,10 @@ narrative_event = {
 	title = EVTTITLECETIC309
 	desc = EVTDESCCETIC309
 	picture = GFX_evt_china_golden_age
+	government = sinic_bureaucracy_government
 	
 	trigger = {
 		is_liege_or_above = ROOT
-		government = sinic_bureaucracy_government
 		NOT = {
 			has_global_flag = ia_unite
 		}
