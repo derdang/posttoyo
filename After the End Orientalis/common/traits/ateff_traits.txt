@@ -261,6 +261,24 @@ imp_ex4 = {
 	child_compliment_adj = COMPL_CLEVER
 }
 
+figurehead = {
+	monthly_character_prestige = -0.5
+	vassal_opinion = -10
+	ai_ambition = -50
+	random = no
+	customizer = no
+	
+	opposites = {
+		weak_emperor
+		strong_emperor
+		china_emperor
+	}
+	
+	male_insult_adj = INSULT_INEFFECTUAL
+	female_insult_adj = INSULT_INEFFECTUAL
+	child_insult_adj = INSULT_WUSSY
+}
+
 weak_emperor = {
 	monthly_character_prestige = -1
 	global_tax_modifier = -0.25
@@ -276,8 +294,6 @@ weak_emperor = {
 		figurehead
 		china_emperor
 		strong_emperor
-		grand_secretary
-		sanctioned_grand_secretary
 	}
 	
 	male_insult_adj = INSULT_INEFFECTUAL
@@ -295,8 +311,6 @@ china_emperor = {
 		figurehead
 		weak_emperor
 		strong_emperor
-		grand_secretary
-		sanctioned_grand_secretary
 	}
 	
 	male_insult_adj = INSULT_INEFFECTUAL
@@ -317,8 +331,6 @@ strong_emperor = {
 		figurehead
 		weak_emperor
 		china_emperor
-		grand_secretary
-		sanctioned_grand_secretary
 	}
 	
 	male_compliment_adj = COMPL_STRONG
@@ -335,10 +347,6 @@ grand_secretary = {
 	customizer = no
 	
 	opposites = {
-		figurehead
-		weak_emperor
-		china_emperor
-		strong_emperor
 		grand_secretary_heir
 		sanctioned_grand_secretary
 	}
@@ -357,10 +365,6 @@ grand_secretary_heir = {
 	customizer = no
 	opposites = {
 		grand_secretary
-		figurehead
-		weak_emperor
-		china_emperor
-		strong_emperor
 		sanctioned_grand_secretary
 	}
 }
@@ -373,33 +377,9 @@ sanctioned_grand_secretary = {
 	opposites = {
 		grand_secretary
 		grand_secretary_heir
-		figurehead
-		weak_emperor
-		china_emperor
-		strong_emperor
 	}
 	
 	#opposite_opinion = -100 (this doesnt work as intended)
-}
-
-figurehead = {
-	monthly_character_prestige = -0.5
-	vassal_opinion = -10
-	ai_ambition = -50
-	random = no
-	customizer = no
-	
-	opposites = {
-		weak_emperor
-		strong_emperor
-		grand_secretary
-		grand_secretary_heir
-		sanctioned_grand_secretary
-	}
-	
-	male_insult_adj = INSULT_INEFFECTUAL
-	female_insult_adj = INSULT_INEFFECTUAL
-	child_insult_adj = INSULT_WUSSY
 }
 
 w_eagle = {

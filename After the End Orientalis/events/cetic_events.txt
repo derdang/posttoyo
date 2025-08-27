@@ -302,9 +302,6 @@ narrative_event = {
 	only_playable = yes
 	
 	trigger = {
-		primary_title = {
-			government = sinic_bureaucracy_government
-		}
 		NOT = {has_character_flag = imperial_claimant}
 	}
 	
@@ -585,223 +582,7 @@ province_event = {
 }
 
 # ************************** request claim from emperor ****************************
-province_event = {
-	id = cetic.20
-	desc = EVTDESC_bounce
-	picture = GFX_evt_china_diplomatic_incident
-	hide_window = yes
-	
-	trigger = {
-		government = sinic_bureaucracy_government
-	}
-
-	mean_time_to_happen = {
-		years = 10
-	}
-	
-	immediate = {
-		random_neighbor_province = {
-			random_list = {
-				10 = { owner = { character_event = { id = cetic.21 } } }
-				10 = { owner = { top_liege = { character_event = { id = cetic.21 } } } }
-			}
-		}
-	}
-	
-	option = {
-		name = OK
-	}
-}
-
-character_event = {
-	id = cetic.21
-	desc = EVTDESC_cetic_border
-	picture = GFX_evt_china_diplomatic_incident
-	is_triggered_only = yes
-	
-	trigger = {
-		government = sinic_bureaucracy_government
-		has_character_modifier = imperial_favor
-		FROM = {
-			owner = {
-				NOT = {
-					same_realm = ROOT
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPT_cetic_border_claim
-		religion_head = {
-			character_event = { id = cetic.22 days = 5 random = 5 }
-		}
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 5 trait = ambitious }
-			modifier = { factor = 2 trait = greedy }
-			modifier = { factor = 2 trait = envious }
-		}
-	}
-	
-	option = {
-		name = EVTOPT_cetic_border_no
-		piety = 20
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 5 trait = content }
-			modifier = { factor = 3 trait = humble }
-			modifier = { factor = 2 trait = craven }
-			modifier = { factor = 2 trait = slothful }
-		}
-	}
-}
-
-character_event = {
-	id = cetic.22
-	desc = EVTDESC_cetic_claim_request
-	picture = GFX_evt_chinese_bureaucrat
-	is_triggered_only = yes
-	
-	trigger = {
-		is_liege_or_above = ROOT
-		government = sinic_bureaucracy_government
-	}
-	
-	option = {
-		name = EVTOPT_cetic_border_sanction
-		FROM = {
-			opinion = { modifier = opinion_happy who = ROOT years = 10 }
-			character_event = { id = cetic.23 days = 5 random = 5 }
-		}
-		FROMFROM = {
-			owner = {
-				top_liege = {
-					opinion = { modifier = opinion_annoyed who = ROOT years = 10 }
-				}
-			}
-		}
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 0 NOT = { opinion = { who = FROM value = -20 } } }
-			modifier = { factor = 1.5 opinion = { who = FROM value = 20 } }
-			modifier = { factor = 1.5 opinion = { who = FROM value = 40 } }
-			modifier = { factor = 1.5 opinion = { who = FROM value = 60 } }
-		}
-	}
-	
-	option = {
-		name = EVTOPT_cetic_border_repudiate
-		FROM = {
-			opinion = { modifier = opinion_disappointed who = ROOT years = 10 }
-			character_event = { id = cetic.24 days = 5 random = 5 }
-		}
-		FROMFROM = {
-			owner = {
-				top_liege = {
-					opinion = { modifier = opinion_pleased who = ROOT years = 10 }
-				}
-			}
-		}
-		piety = -20
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 2 trait = arbitrary }
-			modifier = { factor = 2 trait = lunatic }
-			modifier = { factor = 0 opinion = { who = FROM value = 80 } }
-		}
-	}
-}
-
-character_event = {
-	id = cetic.23
-	desc = EVTDESC_cetic_claim_granted
-	picture = GFX_evt_china_diplomatic_success
-	is_triggered_only = yes
-	
-	trigger = {
-		government = sinic_bureaucracy_government
-	}
-	
-	option = {
-		name = EVTOPT_cetic_claim_granted_intrigue
-		trigger = { intrigue = 10 }
-		tooltip_info = intrigue
-		prestige = 20
-		random = { chance = 40 remove_character_modifier = imperial_favor }
-		FROMFROMFROM = { county = { add_claim = ROOT } }
-		ai_chance = { factor = 500 }
-	}
-	
-	option = {
-		name = EVTOPT_cetic_claim_granted_diplo
-		trigger = { diplomacy = 10 }
-		tooltip_info = diplomacy
-		prestige = 20
-		random = { chance = 40 remove_character_modifier = imperial_favor }
-		FROMFROMFROM = { county = { add_claim = ROOT } }
-		ai_chance = { factor = 500 }
-	}
-	
-	option = {
-		name = OK
-		prestige = 20
-		remove_character_modifier = imperial_favor
-		FROMFROMFROM = { county = { add_claim = ROOT } }
-		ai_chance = { factor = 5 }
-	}
-}
-
-character_event = {
-	id = cetic.24
-	desc = EVTDESC_cetic_claim_denied
-	picture = GFX_evt_china_diplomatic_incident
-	is_triggered_only = yes
-	
-	trigger = {
-		government = sinic_bureaucracy_government
-	}
-	
-	option = {
-		name = EVTOPT_cetic_claim_denied_insult
-		opinion = { modifier = opinion_annoyed who = FROM years = 10 }
-		prestige = -20
-		piety = -10
-		random_list = {
-			10 = { add_trait = cynical }
-			10 = { add_trait = envious }
-			10 = { add_trait = ambitious }
-			10 = { add_trait = proud }
-			10 = { add_trait = wroth }
-			50 = { }
-		}
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 2 trait = cynical }
-			modifier = { factor = 2 trait = envious }
-			modifier = { factor = 2 trait = ambitious }
-			modifier = { factor = 2 trait = proud }
-			modifier = { factor = 2 trait = wroth }
-		}
-	}
-	
-	option = {
-		name = EVTOPT_cetic_claim_denied_forgive
-		prestige = -20
-		random_list = {
-			10 = { add_trait = humble }
-			10 = { add_trait = content }
-			10 = { add_trait = zealous }
-			70 = { }
-		}
-		ai_chance = {
-			factor = 30
-			modifier = { factor = 2 trait = humble }
-			modifier = { factor = 2 trait = content }
-			modifier = { factor = 2 trait = zealous }
-		}
-	}
-}
+# Cannot Claim in this way will use regular CBs
 
 # ************************** visiting the imperial court ***********************
 character_event = {
@@ -1672,640 +1453,46 @@ letter_event = {
 }
 
 # *************************** emperor requests military aid **************************
-character_event = {
-	id = cetic.60
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		any_independent_ruler = {
-			limit = {
-				government = sinic_bureaucracy_government
-				NOT = { war = yes }
-				mercenary = no
-				is_liege_or_above = yes
-			}
-			letter_event = { id = cetic.61 days = 5 random = 5 }
-		}
-	}
-}
-
-letter_event = {
-	id = cetic.61
-	desc = EVTDESC_cetic_aid_request
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPT_cetic_aid_accept
-		join_defender_wars = FROM
-		custom_tooltip = { text = TXT_newline }
-		piety = 100
-		add_character_modifier = { name = imperial_favor duration = 1500 }
-		hidden_tooltip = {
-			remove_character_modifier = imperial_censure
-			FROM = { diploresponse_event = { id = 238 } }
-		}
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 2 trait = zealous }
-			modifier = { factor = 0 NOT = { opinion = { who = FROM value = 0 } } }
-			modifier = { factor = 1.3 opinion = { who = FROM value = 40 } }
-			modifier = { factor = 1.3 opinion = { who = FROM value = 60 } }
-			modifier = { factor = 1.3 opinion = { who = FROM value = 80 } }
-		}
-	}
-
-	option = {
-		name = EVTOPT_cetic_aid_deny
-		trigger = { NOT = { has_character_modifier = imperial_censure } }
-		piety = -25
-		prestige = -25
-		hidden_tooltip = {
-			FROM = { diploresponse_event = { id = 239 } }
-		}
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 4 war = yes }
-			modifier = { factor = 3 trait = cynical }
-			modifier = { factor = 2 trait = craven }
-		}
-	}
-}
-
-# Imperial Claim War
-narrative_event = {
-	id = cetic.100
-	title = EVTTITLE_cetic_imperial_war
-	desc = EVTDESC_cetic_imperial_war
-	picture = GFX_evt_china_civil_war
-	border = GFX_event_narrative_frame_war
-	major = yes
-	show_root = yes
-	is_triggered_only = yes
-	hide_from = yes
-	hide_new = yes
-	
-	immediate = {
-		set_global_flag = imperial_claim_war
-	}
-	
-	option = {
-		name = EVTOPT_current_emperor
-		trigger = {
-			has_landed_title = FROM
-		}
-		prestige = -500
-	}
-	
-	option = {
-		name = EVTOPT_imperial_claimant
-		trigger = {
-			has_character_flag = imperial_claimant
-		}
-	}
-	
-	option = {
-		name = EVTOPT_support_emperor
-		trigger = {
-			government = sinic_bureaucracy_government
-			de_jure_liege = ROOT
-			NOT = { de_facto_liege_title = ROOT }
-			NOR = {
-				has_character_flag = imperial_claimant
-				independent = yes
-			}
-		}
-		set_character_flag = supported_emperor_imperial_war
-		character_event = { id = cetic.407 }
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 4
-				has_character_modifier = imperial_censure
-			}
-			modifier = {
-				factor = 2
-				ROOT = {
-					holder_scope = {
-						is_friend = ROOT
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				is_rival = FROMFROM
-			}
-			modifier = {
-				factor = 0 # alliances WILL be upheld
-				AND = {
-					NOT = {
-						ROOT = {
-							holder_scope = {
-								is_allied_with = ROOT
-							}
-						}
-					}
-					is_allied_with = FROMFROM
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPT_imperial_neutral
-		trigger = {
-			government = sinic_bureaucracy_government
-			de_jure_liege = ROOT
-			NOT = { de_facto_liege_title = ROOT }
-			NOR = {
-				has_character_flag = imperial_claimant
-				independent = yes
-			}
-		}
-		prestige = -250
-		set_character_flag = stayed_neutral_imperial_war
-		
-		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 2
-				has_character_modifier = imperial_censure
-			}
-			modifier = {
-				factor = 2
-				has_character_modifier = imperial_favor
-			}
-			modifier = {
-				factor = 0
-				ROOT = {
-					holder_scope = {
-						is_friend = ROOT
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				is_rival = FROMFROM
-			}
-			modifier = {
-				factor = 0 # alliances WILL be upheld
-				is_allied_with = FROMFROM
-				NOT = { 
-					ROOT = {
-						holder_scope = {
-							is_allied_with = ROOT
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 0 # alliances WILL be upheld
-				ROOT = {
-					holder_scope = {
-						is_allied_with = ROOT
-					}
-				}
-				NOT = { is_allied_with = FROMFROM }
-			}
-			modifier = {
-				factor = 100 # alliances WILL be upheld
-				ROOT = {
-					holder_scope = {
-						is_allied_with = ROOT
-					}
-				}
-				is_allied_with = FROMFROM
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPT_support_claimant
-		trigger = {
-			government = sinic_bureaucracy_government
-			de_jure_liege = ROOT
-			NOT = { de_facto_liege_title = ROOT }
-			NOR = {
-				has_character_flag = imperial_claimant
-				independent = yes
-			}
-		}
-		join_attacker_wars = FROMFROM
-		set_character_flag = supported_claimant_imperial_war
-		
-		ai_chance = {
-			factor = 2
-			modifier = {
-				factor = 2
-				has_character_modifier = imperial_favor
-			}
-			modifier = {
-				factor = 0
-				ROOT = {
-					holder_scope = {
-						is_friend = ROOT
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				is_rival = FROMFROM
-			}
-			modifier = {
-				factor = 0 # alliances WILL be upheld
-				ROOT = {
-					holder_scope = {
-						is_allied_with = FROMFROM
-					}
-				}
-				NOT = { is_allied_with = FROMFROM }
-			}
-		}
-	}
-	
-	option = { #direct imperial vassal, presumed neutral
-		name = EVTOPT_direct_imperial_vassal
-		trigger = {
-			government = sinic_bureaucracy_government
-			de_jure_liege = ROOT
-			de_facto_liege_title = ROOT
-		}
-		set_character_flag = stayed_neutral_imperial_war
-	}
-	
-	option = {
-		name = EVTOPT_other
-		trigger = {
-			NAND = {
-				government = sinic_bureaucracy_government
-				de_jure_liege = ROOT
-			}
-		}
-	}
-}
-
-# Imperial Claim War Won By Claimant
-narrative_event = {
-	id = cetic.101
-	title = EVTTITLE_cetic_imperial_war_success
-	desc = EVTDESC_cetic_imperial_war_success
-	picture = GFX_evt_china_golden_age
-	border = GFX_event_narrative_frame_diplomacy
-	major = yes
-	show_root = yes
-	is_triggered_only = yes
-	hide_from = yes
-	hide_new = yes
-	
-	immediate = {
-		clr_global_flag = imperial_claim_war
-	}
-	
-	#option = { - This cannot be done its very bad and will destroy whole realms
-	#	name = EVTOPT_successful_claimant
-	#	trigger = {
-	#		has_character_flag = imperial_claimant
-	#	}
-	#	clr_character_flag = imperial_claimant
-	#	hidden_tooltip = {
-	#		set_variable = { which = global_imp_auth value = 70 }
-	#	}
-	#	add_trait = strong_emperor
-	#	add_character_modifier = {
-	#		modifier = imperial_authority
-	#		duration = -1
-	#	}
-	#}
-	
-	option = {
-		name = EVTOPT_deposed_emperor
-		trigger = {
-			has_character_flag = deposed_emperor
-		}
-		prestige = -1000
-		hidden_tooltip = {
-			remove_trait = weak_emperor
-			remove_trait = strong_emperor
-			remove_trait = figurehead
-			remove_character_modifier = imperial_authority
-			clr_character_flag = era_name
-		}
-	}
-	
-	option = {
-		name = EVTOPT_supported_emperor_101
-		trigger = {
-			has_character_flag = supported_emperor_imperial_war
-		}
-		clr_character_flag = supported_emperor_imperial_war
-		prestige = -250
-	}
-	
-	option = {
-		name = EVTOPT_stayed_neutral_101
-		trigger = {
-			has_character_flag = stayed_neutral_imperial_war
-		}
-		clr_character_flag = stayed_neutral_imperial_war
-	}
-	
-	option = {
-		name = EVTOPT_supported_claimant_101
-		trigger = {
-			has_character_flag = supported_claimant_imperial_war
-		}
-		clr_character_flag = supported_claimant_imperial_war
-		prestige = 250
-		set_defacto_liege = ROOT
-	}
-	
-	option = {
-		name = EVTOPT_other_101
-		trigger = {
-			NOR = {
-				has_character_flag = imperial_claimant
-				has_character_flag = deposed_emperor
-				has_character_flag = supported_emperor_imperial_war
-				has_character_flag = stayed_neutral_imperial_war
-				has_character_flag = supported_claimant_imperial_war
-			}
-		}
-	}
-}
-
-# Imperial Claim War Won By Emperor (White Peace)
-narrative_event = {
-	id = cetic.102
-	title = EVTTITLE_cetic_imperial_war_failure
-	desc = EVTDESC_cetic_imperial_war_failure
-	picture = GFX_evt_china_stable
-	border = GFX_event_narrative_frame_diplomacy
-	major = yes
-	show_root = yes
-	is_triggered_only = yes
-	hide_from = yes
-	hide_new = yes
-	
-	immediate = {
-		clr_global_flag = imperial_claim_war
-		clear_persistent_event_target = imperial_claimant
-		clear_persistent_event_target = current_emperor
-	}
-	
-	option = {
-		name = EVTOPT_failed_claimant
-		trigger = {
-			has_character_flag = failed_imperial_claimant
-		}
-		prestige = -500
-	}
-	
-	option = {
-		name = EVTOPT_successful_emperor
-		trigger = {
-			has_character_flag = restored_emperor
-		}
-		prestige = 500
-		clr_character_flag = restored_emperor
-		custom_tooltip = {
-			text = impauth_increase_10_TT
-			hidden_tooltip = {
-				change_variable = { which = global_imp_auth value = 10 }
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPT_supported_emperor_102
-		trigger = {
-			has_character_flag = supported_emperor_imperial_war
-		}
-		clr_character_flag = supported_emperor_imperial_war
-		prestige = 250
-	}
-	
-	option = {
-		name = EVTOPT_stayed_neutral_102
-		trigger = {
-			has_character_flag = stayed_neutral_imperial_war
-		}
-		clr_character_flag = stayed_neutral_imperial_war
-	}
-	
-	option = {
-		name = EVTOPT_supported_claimant_102
-		trigger = {
-			has_character_flag = supported_claimant_imperial_war
-		}
-		clr_character_flag = supported_claimant_imperial_war
-		prestige = -250
-	}
-	
-	option = {
-		name = EVTOPT_other_102
-		trigger = {
-			NOR = {
-				has_character_flag = imperial_claimant
-				has_character_flag = deposed_emperor
-				has_character_flag = supported_emperor_imperial_war
-				has_character_flag = stayed_neutral_imperial_war
-				has_character_flag = supported_claimant_imperial_war
-			}
-		}
-	}
-}
-
-# Imperial Claim War Won By Emperor (Figurehead Removed)
-narrative_event = {
-	id = cetic.103
-	title = EVTTITLE_cetic_imperial_war_utter_failure
-	desc = EVTDESC_cetic_imperial_war_utter_failure
-	picture = GFX_evt_china_golden_age
-	border = GFX_event_narrative_frame_diplomacy
-	major = yes
-	show_root = yes
-	is_triggered_only = yes
-	hide_from = yes
-	hide_new = yes
-	
-	immediate = {
-		clr_global_flag = imperial_claim_war
-		clear_persistent_event_target = imperial_claimant
-		clear_persistent_event_target = current_emperor
-	}
-	
-	option = {
-		name = EVTOPT_failed_claimant_103
-		trigger = {
-			has_character_flag = failed_imperial_claimant
-		}
-		prestige = -15000
-	}
-	
-	option = {
-		name = EVTOPT_restored_emperor
-		trigger = {
-			has_character_flag = restored_emperor
-		}
-		prestige = 1500
-		clr_character_flag = restored_emperor
-		set_defacto_liege = ROOT
-		hidden_tooltip = {
-			set_variable = { which = global_imp_auth value = 70 }
-		}
-	}
-	
-	option = {
-		name = EVTOPT_supported_emperor_103
-		trigger = {
-			has_character_flag = supported_emperor_imperial_war
-		}
-		clr_character_flag = supported_emperor_imperial_war
-		prestige = 500
-	}
-	
-	option = {
-		name = EVTOPT_stayed_neutral_103
-		trigger = {
-			has_character_flag = stayed_neutral_imperial_war
-		}
-		clr_character_flag = stayed_neutral_imperial_war
-		prestige = -250
-	}
-	
-	option = {
-		name = EVTOPT_supported_claimant_103
-		trigger = {
-			has_character_flag = supported_claimant_imperial_war
-		}
-		clr_character_flag = supported_claimant_imperial_war
-		prestige = -500
-	}
-	
-	option = {
-		name = EVTOPT_other_103
-		trigger = {
-			NOR = {
-				has_character_flag = imperial_claimant
-				has_character_flag = deposed_emperor
-				has_character_flag = supported_emperor_imperial_war
-				has_character_flag = stayed_neutral_imperial_war
-				has_character_flag = supported_claimant_imperial_war
-			}
-		}
-	}
-}
-
-#Era Name buggy without a set title will fix later
-
-#character_event = {
-#	id = cetic.104
-#	hide_window = yes
-#	only_playable = yes
-#
-#	trigger = {
-#		government = sinic_bureaucracy_government
-#		independent = yes
-#		NOT = {
-#			has_character_flag = era_name
-#		}
-#	}
-#	mean_time_to_happen = {
-#		days = 1
-#	}
-#	
-#	immediate = {
-#		clear_era_name = yes
-#		get_random_era_name = yes
-#		narrative_event = { id = cetic.105 }
-#		set_character_flag = era_name
-#	}
-#}
-
-#narrative_event = {
-#	id = cetic.105
-#	title = EVTTITLECETIC105
-#	desc = EVTDESCCETIC105
-#	picture = GFX_evt_china_stable
-#	border = GFX_event_narrative_frame_diplomacy
-#	is_triggered_only = yes
-#	
-#	option = {
-#		name = EVTOPTACETIC105
-#		trigger = {
-#			OR = {
-#				independent = yes
-#			}
-#		}
-#	}
-#	option = {
-#		name = EVTOPTBCETIC105
-#		trigger = {
-#			OR = {
-#				government = sinic_bureaucracy_government
-#				de_jure_liege = ROOT
-#				government = sinic_bureaucracy_government
-#			}
-#			NOR = {
-#				independent = yes
-#			}
-#		}
-#	}
-#	option = {
-#		name = EVTOPTCCETIC105
-#		trigger = {
-#			NOR = {
-#				AND = {
-#					independent = yes
-#					government = sinic_bureaucracy_government
-#				}
-#				AND = {
-#					de_jure_liege = ROOT
-#					government = sinic_bureaucracy_government
-#				}
-#			}
-#		}
-#	}
-#}
+# Uses regular war CBs
 
 # ************************** Imperial Authority Events***********************
 
 #Appointed Governator by Emperor
-character_event = {
-	id = cetic.300
-	title = EVTTITLECETIC300
-	desc = EVTDESCCETIC300
-	picture = GFX_evt_china_stable
-	border = GFX_event_normal_frame_diplomacy
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC300
-		add_trait = grand_secretary
-		prestige = 100
-		opinion = {
-			modifier = made_me_grand_secretary
-			who = FROM 
-		}
-		if = {
-			limit = {
-				liege = {
-					independent = yes
-					NOT = {
-						trait = strong_emperor
-					}
-				}
-			}
-			give_minor_title = title_grand_secretary
-		}
-		if = {
-			limit = {
-				trait = sanctioned_grand_secretary
-			}
-			remove_trait = sanctioned_grand_secretary
-		}
-	}
-}
+#character_event = {
+#	id = cetic.300
+#	title = EVTTITLECETIC300
+#	desc = EVTDESCCETIC300
+#	picture = GFX_evt_china_stable
+#	border = GFX_event_normal_frame_diplomacy
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTACETIC300
+#		add_trait = grand_secretary
+#		prestige = 100
+#		opinion = {
+#			modifier = made_me_grand_secretary
+#			who = FROM 
+#		}
+#		if = {
+#			limit = {
+#				liege = {
+#					independent = yes
+#					NOT = {
+#						trait = strong_emperor
+#					}
+#				}
+#			}
+#			give_minor_title = title_grand_secretary
+#		}
+#		if = {
+#			limit = {
+#				trait = sanctioned_grand_secretary
+#			}
+#			remove_trait = sanctioned_grand_secretary
+#		}
+#	}
+#}
 
 #on_startup to set up Imperial Authority
 character_event = {
@@ -2415,6 +1602,9 @@ character_event = {
 					trait = strong_emperor
 				}
 			}
+		}
+		NOT = {
+			has_global_flag = trait_assigned_sinic
 		}
 	}
 	
@@ -2556,18 +1746,18 @@ character_event = {
 				trait = figurehead
 			}
 			remove_trait = figurehead
-			any_character = {
-				limit = {
-					trait = grand_secretary_heir
-				}
-				remove_trait = grand_secretary_heir
-			}
-			any_character = {
-				limit = {
-					trait = sanctioned_grand_secretary
-				}
-				remove_trait = sanctioned_grand_secretary
-			}
+			#any_character = {
+			#	limit = {
+			#		trait = grand_secretary_heir
+			#	}
+			#	remove_trait = grand_secretary_heir
+			#}
+			#any_character = {
+			#	limit = {
+			#		trait = sanctioned_grand_secretary
+			#	}
+			#	remove_trait = sanctioned_grand_secretary
+			#}
 		}
 		if = {
 			limit = {
@@ -2584,61 +1774,62 @@ character_event = {
 				}
 			}
 			add_trait = strong_emperor
-			any_character = {
-				limit = {
-					trait = grand_secretary_heir
-				}
-				remove_trait = grand_secretary_heir
-			}
-			any_character = {
-				limit = {
-					trait = sanctioned_grand_secretary
-				}
-				remove_trait = sanctioned_grand_secretary
-			}
+			#any_character = {
+			#	limit = {
+			#		trait = grand_secretary_heir
+			#	}
+			#	remove_trait = grand_secretary_heir
+			#}
+			#any_character = {
+			#	limit = {
+			#		trait = sanctioned_grand_secretary
+			#	}
+			#	remove_trait = sanctioned_grand_secretary
+			#}
 		}
+		set_global_flag = trait_assigned_sinic
 	}
 }	
 
 #Authority Increase - Peace in the Realm
-narrative_event = {
-	id = cetic.309
-	title = EVTTITLECETIC309
-	desc = EVTDESCCETIC309
-	picture = GFX_evt_china_golden_age
-	
-	trigger = {
-		is_liege_or_above = ROOT
-		government = sinic_bureaucracy_government
-		NOT = {
-			has_global_flag = ia_unite
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = {
-		change_variable = { which = global_imp_auth value = 20 }
-	}
-	
-	option = {
-		name = opta_excellent
-		custom_tooltip = {
-			text = impauth_increase_20_TT
-		}
-		hidden_tooltip = {
-			set_global_flag = ia_unite
-		}
-		any_playable_ruler = {
-			limit = {
-				government = sinic_bureaucracy_government
-			}
-			narrative_event = { id = cetic.15 }
-		}
-	}
-}
+#narrative_event = {
+#	id = cetic.309
+#	title = EVTTITLECETIC309
+#	desc = EVTDESCCETIC309
+#	picture = GFX_evt_china_golden_age
+#	
+#	trigger = {
+#		is_liege_or_above = ROOT
+#		government = sinic_bureaucracy_government
+#		NOT = {
+#			has_global_flag = ia_unite
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	immediate = {
+#		change_variable = { which = global_imp_auth value = 20 }
+#	}
+#	
+#	option = {
+#		name = opta_excellent
+#		custom_tooltip = {
+#			text = impauth_increase_20_TT
+#		}
+#		hidden_tooltip = {
+#			set_global_flag = ia_unite
+#		}
+#		any_playable_ruler = {
+#			limit = {
+#				government = sinic_bureaucracy_government
+#			}
+#			narrative_event = { id = cetic.15 }
+#		}
+#	}
+#}
 
 #Authority Increase - Writings
 # Authority cannot be increased in this way in this mod so it has been commented out
@@ -2755,596 +1946,596 @@ character_event = {
 #Also do not have bad writing in this mod :D
 
 #Governator chose heir
-character_event = {
-	id = cetic.321
-	desc = EVTDESCCETIC321
-	picture = GFX_evt_recieve_letter
-	is_triggered_only = yes
-	
-	trigger = {
-		government = sinic_bureaucracy_government
-	}
-	option = {
-		name = opta_excellent
-		any_character = {
-			limit = {
-				trait = grand_secretary_heir
-			}
-			character_event = { id = cetic.322 }
-		}
-		add_trait = grand_secretary_heir
-		prestige = 50
-	}
-}
+#character_event = {
+#	id = cetic.321
+#	desc = EVTDESCCETIC321
+#	picture = GFX_evt_recieve_letter
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		government = sinic_bureaucracy_government
+#	}
+#	option = {
+#		name = opta_excellent
+#		any_character = {
+#			limit = {
+#				trait = grand_secretary_heir
+#			}
+#			character_event = { id = cetic.322 }
+#		}
+#		add_trait = grand_secretary_heir
+#		prestige = 50
+#	}
+#}
 
-character_event = {
-	id = cetic.322
-	desc = EVTDESCCETIC322
-	picture = GFX_evt_upsetting_letter
-	is_triggered_only = yes
-	min_age = 16
-	
-	option = {
-		name = hellbebahck
-		remove_trait = grand_secretary_heir
-		prestige = -50
-	}
-}
+#character_event = {
+#	id = cetic.322
+#	desc = EVTDESCCETIC322
+#	picture = GFX_evt_upsetting_letter
+#	is_triggered_only = yes
+#	min_age = 16
+#	
+#	option = {
+#		name = hellbebahck
+#		remove_trait = grand_secretary_heir
+#		prestige = -50
+#	}
+#}
 
 #Governator dies, no heir chosen
-character_event = {
-	id = cetic.323
-	hide_window = yes
-	is_triggered_only = yes
-	only_rulers = yes
-
-	trigger = {
-		trait = grand_secretary
-		OR = {
-			ROOT = { holder_scope = { trait = figurehead } }
-			ROOT = { holder_scope = { trait = figurehead } }
-			ROOT = { holder_scope = { trait = weak_emperor } }
-			ROOT = { holder_scope = { trait = weak_emperor } }
-		}
-		NOR = {
-			has_character_flag = chosen_heir_gnator
-			any_character = {
-				trait = grand_secretary_heir
-			}
-		}
-	}
-	immediate = {
-		if = {
-			limit = {
-				any_close_relative = {
-					is_alive = yes
-					is_adult = yes
-					is_landed = yes
-				}
-			}
-			random_close_relative = {
-				preferred_limit = { #smh sexism in 2666
-					is_heir = yes
-					is_female = no
-				}
-				preferred_limit = {
-					is_heir = yes
-					is_female = yes
-				}
-				preferred_limit = {
-					is_child_of = ROOT
-					is_female = no
-				}
-				preferred_limit = {
-					is_child_of = ROOT
-					is_female = yes
-				}
-				preferred_limit = {
-					is_close_relative = ROOT
-					is_female = no
-				}
-				preferred_limit = {
-					is_close_relative = ROOT
-					is_female = yes
-				}
-				character_event = { id = cetic.324 }
-			}
-		}
-		else_if = {
-			limit = {
-				any_vassal = {
-					higher_real_tier_than = COUNT
-				}
-			}
-			random_vassal = {
-				limit = {
-					is_adult = yes
-				}
-				preferred_limit = {
-					is_powerful_vassal = yes
-					government = sinic_bureaucracy_government
-				}
-				preferred_limit = {
-					is_voter = yes
-				}
-				character_event = { id = cetic.325 }
-			}
-		}
-		else = {
-			random_independent_ruler = {
-				limit = {
-					is_adult = yes
-					prisoner = no
-					higher_real_tier_than = COUNT
-					government = sinic_bureaucracy_government
-					NOR = {
-						independent = yes
-					}
-				}
-				preferred_limit = {
-					higher_real_tier_than = DUKE
-				}
-				character_event = { id = cetic.325 }
-			}
-		}
-	}
-}
+#character_event = {
+#	id = cetic.323
+#	hide_window = yes
+#	is_triggered_only = yes
+#	only_rulers = yes
+#
+#	trigger = {
+#		trait = grand_secretary
+#		OR = {
+#			ROOT = { holder_scope = { trait = figurehead } }
+#			ROOT = { holder_scope = { trait = figurehead } }
+#			ROOT = { holder_scope = { trait = weak_emperor } }
+#			ROOT = { holder_scope = { trait = weak_emperor } }
+#		}
+#		NOR = {
+#			has_character_flag = chosen_heir_gnator
+#			any_character = {
+#				trait = grand_secretary_heir
+#			}
+#		}
+#	}
+#	immediate = {
+#		if = {
+#			limit = {
+#				any_close_relative = {
+#					is_alive = yes
+#					is_adult = yes
+#					is_landed = yes
+#				}
+#			}
+#			random_close_relative = {
+#				preferred_limit = { #smh sexism in 2666
+#					is_heir = yes
+#					is_female = no
+#				}
+#				preferred_limit = {
+#					is_heir = yes
+#					is_female = yes
+#				}
+#				preferred_limit = {
+#					is_child_of = ROOT
+#					is_female = no
+#				}
+#				preferred_limit = {
+#					is_child_of = ROOT
+#					is_female = yes
+#				}
+#				preferred_limit = {
+#					is_close_relative = ROOT
+#					is_female = no
+#				}
+#				preferred_limit = {
+#					is_close_relative = ROOT
+#					is_female = yes
+#				}
+#				character_event = { id = cetic.324 }
+#			}
+#		}
+#		else_if = {
+#			limit = {
+#				any_vassal = {
+#					higher_real_tier_than = COUNT
+#				}
+#			}
+#			random_vassal = {
+#				limit = {
+#					is_adult = yes
+#				}
+#				preferred_limit = {
+#					is_powerful_vassal = yes
+#					government = sinic_bureaucracy_government
+#				}
+#				preferred_limit = {
+#					is_voter = yes
+#				}
+#				character_event = { id = cetic.325 }
+#			}
+#		}
+#		else = {
+#			random_independent_ruler = {
+#				limit = {
+#					is_adult = yes
+#					prisoner = no
+#					higher_real_tier_than = COUNT
+#					government = sinic_bureaucracy_government
+#					NOR = {
+#						independent = yes
+#					}
+#				}
+#				preferred_limit = {
+#					higher_real_tier_than = DUKE
+#				}
+#				character_event = { id = cetic.325 }
+#			}
+#		}
+#	}
+#}
 
 #Close Relative gets grand_secretary
-character_event = {
-	id = cetic.324
-	desc = EVTDESCCETIC324
-	picture = GFX_evt_china_expansionist
-	is_triggered_only = yes
-	min_age = 16
-	
-	option = {
-		name = EVTOPTACETIC324
-		add_trait = grand_secretary
-		prestige = 100
-		if = {
-			limit = {
-				liege = {
-					government = sinic_bureaucracy_government
-					NOT = {
-						trait = strong_emperor
-					}
-				} 
-			}
-			give_minor_title = title_grand_secretary
-		}
-	}
-}
+#character_event = {
+#	id = cetic.324
+#	desc = EVTDESCCETIC324
+#	picture = GFX_evt_china_expansionist
+#	is_triggered_only = yes
+#	min_age = 16
+#	
+#	option = {
+#		name = EVTOPTACETIC324
+#		add_trait = grand_secretary
+#		prestige = 100
+#		if = {
+#			limit = {
+#				liege = {
+#					government = sinic_bureaucracy_government
+#					NOT = {
+#						trait = strong_emperor
+#					}
+#				} 
+#			}
+#			give_minor_title = title_grand_secretary
+#		}
+#	}
+#}
 
 #Current heir (non relative) gets grand_secretary
-character_event = {
-	id = cetic.325
-	desc = EVTDESCCETIC325
-	picture = GFX_evt_china_expansionist
-	is_triggered_only = yes
-	min_age = 16
-	
-	option = {
-		name = EVTOPTACETIC324
-		add_trait = grand_secretary
-		prestige = 50
-		if = {
-			limit = {
-				liege = {
-					government = sinic_bureaucracy_government
-					NOT = {
-						trait = strong_emperor
-					}
-				} 
-			}
-			give_minor_title = title_grand_secretary
-		}
-	}
-}
+#character_event = {
+#	id = cetic.325
+#	desc = EVTDESCCETIC325
+#	picture = GFX_evt_china_expansionist
+#	is_triggered_only = yes
+#	min_age = 16
+#	
+#	option = {
+#		name = EVTOPTACETIC324
+#		add_trait = grand_secretary
+#		prestige = 50
+#		if = {
+#			limit = {
+#				liege = {
+#					government = sinic_bureaucracy_government
+#					NOT = {
+#						trait = strong_emperor
+#					}
+#				} 
+#			}
+#			give_minor_title = title_grand_secretary
+#		}
+#	}
+#}
 
 #Governator Heir gets Governator Setup
-character_event = {
-	id = cetic.326
-	hide_window = yes
-	is_triggered_only = yes
-	only_rulers = yes
-	
-	trigger = {
-		trait = grand_secretary
-		OR = {
-			has_character_flag = chosen_heir_gnator
-			any_character = {
-				trait = grand_secretary_heir
-			}
-		}
-	}
-	
-	immediate = {
-		any_character = {
-			limit = {
-				trait = grand_secretary_heir
-			}
-			character_event = { id = cetic.327 }
-		}
-	}
-}
+#character_event = {
+#	id = cetic.326
+#	hide_window = yes
+#	is_triggered_only = yes
+#	only_rulers = yes
+#	
+#	trigger = {
+#		trait = grand_secretary
+#		OR = {
+#			has_character_flag = chosen_heir_gnator
+#			any_character = {
+#				trait = grand_secretary_heir
+#			}
+#		}
+#	}
+#	
+#	immediate = {
+#		any_character = {
+#			limit = {
+#				trait = grand_secretary_heir
+#			}
+#			character_event = { id = cetic.327 }
+#		}
+#	}
+#}
 
 #Gnator heir failsafe
-character_event = {
-	id = cetic.371
-	hide_window = yes
-	trigger = {
-		trait = grand_secretary_heir
-		NOT = {
-			any_character = {
-				trait = grand_secretary
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = {
-		any_character = {
-			limit = {
-				trait = grand_secretary_heir
-			}
-			character_event = { id = cetic.327 }
-		}
-	}
-}
+#character_event = {
+#	id = cetic.371
+#	hide_window = yes
+#	trigger = {
+#		trait = grand_secretary_heir
+#		NOT = {
+#			any_character = {
+#				trait = grand_secretary
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	immediate = {
+#		any_character = {
+#			limit = {
+#				trait = grand_secretary_heir
+#			}
+#			character_event = { id = cetic.327 }
+#		}
+#	}
+#}
 
 #Governator Heir gets Governator
-character_event = {
-	id = cetic.327
-	desc = EVTDESCCETIC327
-	picture = GFX_evt_china_expansionist
-	is_triggered_only = yes
-	min_age = 16
-	
-	option = {
-		name = hastalavista
-		add_trait = grand_secretary
-		remove_trait = grand_secretary_heir
-		prestige = 100
-		if = {
-			limit = {
-				liege = {
-					government = sinic_bureaucracy_government
-					NOT = {
-						trait = strong_emperor
-					}
-				} 
-			}
-			give_minor_title = title_grand_secretary
-		}
-	}
-}
+#character_event = {
+#	id = cetic.327
+#	desc = EVTDESCCETIC327
+#	picture = GFX_evt_china_expansionist
+#	is_triggered_only = yes
+#	min_age = 16
+#	
+#	option = {
+#		name = hastalavista
+#		add_trait = grand_secretary
+#		remove_trait = grand_secretary_heir
+#		prestige = 100
+#		if = {
+#			limit = {
+#				liege = {
+#					government = sinic_bureaucracy_government
+#					NOT = {
+#						trait = strong_emperor
+#					}
+#				} 
+#			}
+#			give_minor_title = title_grand_secretary
+#		}
+#	}
+#}
 
 #Governator heir has died set up
-character_event = {
-	id = cetic.328
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-		trait = grand_secretary_heir
-	}
-	
-	immediate = {
-		any_character = {
-			limit = {
-				trait = grand_secretary
-			}
-			character_event = { id = cetic.329 }
-		}
-	}
-}
+#character_event = {
+#	id = cetic.328
+#	hide_window = yes
+#	is_triggered_only = yes
+#	trigger = {
+#		trait = grand_secretary_heir
+#	}
+#	
+#	immediate = {
+#		any_character = {
+#			limit = {
+#				trait = grand_secretary
+#			}
+#			character_event = { id = cetic.329 }
+#		}
+#	}
+#}
 
 #Governator Heir has Died
-character_event = {
-	id = cetic.329
-	desc = EVTDESCCETIC329
-	picture = GFX_evt_bad_news
-	is_triggered_only = yes
-	trigger = {
-		trait = grand_secretary
-	}
-	
-	option = {
-		name = hastalavista
-		clr_character_flag = chosen_heir_gnator
-	}
-}
+#character_event = {
+#	id = cetic.329
+#	desc = EVTDESCCETIC329
+#	picture = GFX_evt_bad_news
+#	is_triggered_only = yes
+#	trigger = {
+#		trait = grand_secretary
+#	}
+#	
+#	option = {
+#		name = hastalavista
+#		clr_character_flag = chosen_heir_gnator
+#	}
+#}
 
 #Governator now vassal of California
-character_event = {
-	id = cetic.330
-	desc = EVTDESCCETIC330
-	picture = GFX_evt_chinese_bureaucrat
-	only_rulers = yes
-	
-	trigger = {
-		trait = grand_secretary
-		NOT = {
-			has_minor_title = title_grand_secretary
-		}
-		liege = {
-			government = sinic_bureaucracy_government
-			NOT = {
-				trait = strong_emperor
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = EVTOPTACETIC330
-		give_minor_title = title_grand_secretary
-	}
-}
+#character_event = {
+#	id = cetic.330
+#	desc = EVTDESCCETIC330
+#	picture = GFX_evt_chinese_bureaucrat
+#	only_rulers = yes
+#	
+#	trigger = {
+#		trait = grand_secretary
+#		NOT = {
+#			has_minor_title = title_grand_secretary
+#		}
+#		liege = {
+#			government = sinic_bureaucracy_government
+#			NOT = {
+#				trait = strong_emperor
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 2
+#	}
+#	
+#	option = {
+#		name = EVTOPTACETIC330
+#		give_minor_title = title_grand_secretary
+#	}
+#}
 
 #Governator now Emperor of California
-character_event = {
-	id = cetic.331
-	desc = EVTDESCCETIC331
-	picture = GFX_evt_china_stable
-	only_playable = yes
-	
-	trigger = {
-		trait = grand_secretary
-		government = sinic_bureaucracy_government
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = EVTOPTACETIC331
-		remove_trait = grand_secretary
-		if = {
-			limit = {
-				NOT = {
-					has_character_flag = imp_auth_dont_change
-				}
-			}
-			set_variable = { which = global_imp_auth value = 70 }
-			add_trait = strong_emperor
-		}
-		if = {
-			limit = {
-				trait = sanctioned_grand_secretary
-			}
-			remove_trait = sanctioned_grand_secretary
-		}
-		if = {
-			limit = {
-				trait = grand_secretary_heir
-			}
-			remove_trait = grand_secretary_heir
-		}
-		if = {
-			limit = {
-				OR = {
-					trait = figurehead
-					trait = weak_emperor
-				}
-			}
-			random_courtier_or_vassal = {
-				limit = {
-					age = 16
-					prisoner = no
-					NOT = {
-						is_incapable = yes
-					}
-				}
-				preferred_limit = {
-					government = sinic_bureaucracy_government
-					is_landed = yes
-				}
-				preferred_limit = {
-					is_powerful_vassal = yes
-					government = sinic_bureaucracy_government
-				}
-				preferred_limit = {
-					is_powerful_vassal = yes
-					religion = imamite
-				}
-				preferred_limit = {
-					is_powerful_vassal = yes
-					religion = qingzhen
-				}
-				preferred_limit = {
-					real_tier = KING
-				}
-				preferred_limit = {
-					real_tier = DUKE
-				}
-				preferred_limit = {
-					real_tier = COUNT
-				}
-				preferred_limit = {
-					is_voter = yes
-				}
-				preferred_limit = {
-					is_close_relative = ROOT
-					NOT = {
-						is_heir = yes
-					}
-				}
-				preferred_limit = {
-					is_theocracy = yes
-				}
-				character_event = { id = cetic.300 }
-			}
-		}
-	}
-}
+#character_event = {
+#	id = cetic.331
+#	desc = EVTDESCCETIC331
+#	picture = GFX_evt_china_stable
+#	only_playable = yes
+#	
+#	trigger = {
+#		trait = grand_secretary
+#		government = sinic_bureaucracy_government
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	option = {
+#		name = EVTOPTACETIC331
+#		remove_trait = grand_secretary
+#		if = {
+#			limit = {
+#				NOT = {
+#					has_character_flag = imp_auth_dont_change
+#				}
+#			}
+#			set_variable = { which = global_imp_auth value = 70 }
+#			add_trait = strong_emperor
+#		}
+#		if = {
+#			limit = {
+#				trait = sanctioned_grand_secretary
+#			}
+#			remove_trait = sanctioned_grand_secretary
+#		}
+#		if = {
+#			limit = {
+#				trait = grand_secretary_heir
+#			}
+#			remove_trait = grand_secretary_heir
+#		}
+#		if = {
+#			limit = {
+#				OR = {
+#					trait = figurehead
+#					trait = weak_emperor
+#				}
+#			}
+#			random_courtier_or_vassal = {
+#				limit = {
+#					age = 16
+#					prisoner = no
+#					NOT = {
+#						is_incapable = yes
+#					}
+#				}
+#				preferred_limit = {
+#					government = sinic_bureaucracy_government
+#					is_landed = yes
+#				}
+#				preferred_limit = {
+#					is_powerful_vassal = yes
+#					government = sinic_bureaucracy_government
+#				}
+#				preferred_limit = {
+#					is_powerful_vassal = yes
+#					religion = imamite
+#				}
+#				preferred_limit = {
+#					is_powerful_vassal = yes
+#					religion = qingzhen
+#				}
+#				preferred_limit = {
+#					real_tier = KING
+#				}
+#				preferred_limit = {
+#					real_tier = DUKE
+#				}
+#				preferred_limit = {
+#					real_tier = COUNT
+#				}
+#				preferred_limit = {
+#					is_voter = yes
+#				}
+#				preferred_limit = {
+#					is_close_relative = ROOT
+#					NOT = {
+#						is_heir = yes
+#					}
+#				}
+#				preferred_limit = {
+#					is_theocracy = yes
+#				}
+#				character_event = { id = cetic.300 }
+#			}
+#		}
+#	}
+#}
 
 #Governator gets... terminated
-character_event = {
-	id = cetic.332
-	desc = EVTDESCCETIC332
-	picture = GFX_evt_bad_news
-	is_triggered_only = yes
-	
-	immediate = {
-		ROOT = {
-			save_event_target_as = slanderer
-		}
-		FROM = {
-			save_event_target_as = slanderee
-		}
-	}
-	
-	option = {
-		name = imterminated
-		if = {
-			limit = {
-				trait = grand_secretary
-			}
-			remove_trait = grand_secretary
-		}
-		if = {
-			limit = {
-				trait = sanctioned_grand_secretary
-			}
-			remove_trait = sanctioned_grand_secretary
-		}
-		if = {
-			limit = {
-				has_minor_title = title_grand_secretary
-			}
-			remove_title = title_grand_secretary
-		}
-		opinion = {
-			modifier = sacked_me
-			who = FROM
-			years = 25
-		}
-		ai_chance = {
-			factor = 0.7
-			modifier = {
-				factor = 100
-				ROOT = { is_friend = event_target:slanderee }
-			}
-			modifier = {
-				factor = 0.01
-				ROOT = { is_rival = event_target:slanderee }
-			}
-			modifier = {
-				factor = 0.2
-				ROOT = { opinion = { who = event_target:slanderee value <= -80 } }
-			}
-			modifier = {
-				factor = 0.4
-				ROOT = { opinion = { who = event_target:slanderee value <= -60 } }
-			}
-			modifier = {
-				factor = 0.6
-				ROOT = { opinion = { who = event_target:slanderee value <= -40 } }
-			}
-			modifier = {
-				factor = 0.8
-				ROOT = { opinion = { who = event_target:slanderee value <= -20 } }
-			}
-			modifier = {
-				factor = 1.2
-				ROOT = { opinion = { who = event_target:slanderee value = 20 } }
-			}
-			modifier = {
-				factor = 1.4
-				ROOT = { opinion = { who = event_target:slanderee value = 40 } }
-			}
-			modifier = {
-				factor = 1.6
-				ROOT = { opinion = { who = event_target:slanderee value = 60 } }
-			}
-			modifier = {
-				factor = 1.8
-				ROOT = { opinion = { who = event_target:slanderee value = 80 } }
-			}
-		}
-	}
-	option = {
-		name = EVTOPTACETIC332
-		opinion = {
-			modifier = sacked_me
-			who = FROM
-			years = 25
-		}
-		if = {
-			limit = {
-				trait = grand_secretary
-			}
-			remove_trait = grand_secretary
-		}
-		if = {
-			limit = {
-				trait = sanctioned_grand_secretary
-			}
-			remove_trait = sanctioned_grand_secretary
-		}
-		if = {
-			limit = {
-				has_minor_title = title_grand_secretary
-			}
-			remove_title = title_grand_secretary
-		}
-		custom_tooltip = {
-			text = attack_emperor_TT
-		}
-		character_event = { id = cetic.333 }
-		ai_chance = {
-			factor = 0.30
-			modifier = {
-				factor = 0
-				ROOT = { is_friend = event_target:slanderee }
-			}
-			modifier = {
-				factor = 100
-				ROOT = { is_rival = event_target:slanderee }
-			}
-			modifier = {
-				factor = 1.8
-				ROOT = { opinion = { who = event_target:slanderee value <= -80 } }
-			}
-			modifier = {
-				factor = 1.6
-				ROOT = { opinion = { who = event_target:slanderee value <= -60 } }
-			}
-			modifier = {
-				factor = 1.4
-				ROOT = { opinion = { who = event_target:slanderee value <= -40 } }
-			}
-			modifier = {
-				factor = 1.2
-				ROOT = { opinion = { who = event_target:slanderee value <= -20 } }
-			}
-			modifier = {
-				factor = 0.8
-				ROOT = { opinion = { who = event_target:slanderee value = 20 } }
-			}
-			modifier = {
-				factor = 0.6
-				ROOT = { opinion = { who = event_target:slanderee value = 40 } }
-			}
-			modifier = {
-				factor = 0.4
-				ROOT = { opinion = { who = event_target:slanderee value = 60 } }
-			}
-			modifier = {
-				factor = 0.2
-				ROOT = { opinion = { who = event_target:slanderee value = 80 } }
-			}
-		}
-	}
-}
+#character_event = {
+#	id = cetic.332
+#	desc = EVTDESCCETIC332
+#	picture = GFX_evt_bad_news
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		ROOT = {
+#			save_event_target_as = slanderer
+#		}
+#		FROM = {
+#			save_event_target_as = slanderee
+#		}
+#	}
+#	
+#	option = {
+#		name = imterminated
+#		if = {
+#			limit = {
+#				trait = grand_secretary
+#			}
+#			remove_trait = grand_secretary
+#		}
+#		if = {
+#			limit = {
+#				trait = sanctioned_grand_secretary
+#			}
+#			remove_trait = sanctioned_grand_secretary
+#		}
+#		if = {
+#			limit = {
+#				has_minor_title = title_grand_secretary
+#			}
+#			remove_title = title_grand_secretary
+#		}
+#		opinion = {
+#			modifier = sacked_me
+#			who = FROM
+#			years = 25
+#		}
+#		ai_chance = {
+#			factor = 0.7
+#			modifier = {
+#				factor = 100
+#				ROOT = { is_friend = event_target:slanderee }
+#			}
+#			modifier = {
+#				factor = 0.01
+#				ROOT = { is_rival = event_target:slanderee }
+#			}
+#			modifier = {
+#				factor = 0.2
+#				ROOT = { opinion = { who = event_target:slanderee value <= -80 } }
+#			}
+#			modifier = {
+#				factor = 0.4
+#				ROOT = { opinion = { who = event_target:slanderee value <= -60 } }
+#			}
+#			modifier = {
+#				factor = 0.6
+#				ROOT = { opinion = { who = event_target:slanderee value <= -40 } }
+#			}
+#			modifier = {
+#				factor = 0.8
+#				ROOT = { opinion = { who = event_target:slanderee value <= -20 } }
+#			}
+#			modifier = {
+#				factor = 1.2
+#				ROOT = { opinion = { who = event_target:slanderee value = 20 } }
+#			}
+#			modifier = {
+#				factor = 1.4
+#				ROOT = { opinion = { who = event_target:slanderee value = 40 } }
+#			}
+#			modifier = {
+#				factor = 1.6
+#				ROOT = { opinion = { who = event_target:slanderee value = 60 } }
+#			}
+#			modifier = {
+#				factor = 1.8
+#				ROOT = { opinion = { who = event_target:slanderee value = 80 } }
+#			}
+#		}
+#	}
+#	option = {
+#		name = EVTOPTACETIC332
+#		opinion = {
+#			modifier = sacked_me
+#			who = FROM
+#			years = 25
+#		}
+#		if = {
+#			limit = {
+#				trait = grand_secretary
+#			}
+#			remove_trait = grand_secretary
+#		}
+#		if = {
+#			limit = {
+#				trait = sanctioned_grand_secretary
+#			}
+#			remove_trait = sanctioned_grand_secretary
+#		}
+#		if = {
+#			limit = {
+#				has_minor_title = title_grand_secretary
+#			}
+#			remove_title = title_grand_secretary
+#		}
+#		custom_tooltip = {
+#			text = attack_emperor_TT
+#		}
+#		character_event = { id = cetic.333 }
+#		ai_chance = {
+#			factor = 0.30
+#			modifier = {
+#				factor = 0
+#				ROOT = { is_friend = event_target:slanderee }
+#			}
+#			modifier = {
+#				factor = 100
+#				ROOT = { is_rival = event_target:slanderee }
+#			}
+#			modifier = {
+#				factor = 1.8
+#				ROOT = { opinion = { who = event_target:slanderee value <= -80 } }
+#			}
+#			modifier = {
+#				factor = 1.6
+#				ROOT = { opinion = { who = event_target:slanderee value <= -60 } }
+#			}
+#			modifier = {
+#				factor = 1.4
+#				ROOT = { opinion = { who = event_target:slanderee value <= -40 } }
+#			}
+#			modifier = {
+#				factor = 1.2
+#				ROOT = { opinion = { who = event_target:slanderee value <= -20 } }
+#			}
+#			modifier = {
+#				factor = 0.8
+#				ROOT = { opinion = { who = event_target:slanderee value = 20 } }
+#			}
+#			modifier = {
+#				factor = 0.6
+#				ROOT = { opinion = { who = event_target:slanderee value = 40 } }
+#			}
+#			modifier = {
+#				factor = 0.4
+#				ROOT = { opinion = { who = event_target:slanderee value = 60 } }
+#			}
+#			modifier = {
+#				factor = 0.2
+#				ROOT = { opinion = { who = event_target:slanderee value = 80 } }
+#			}
+#		}
+#	}
+#}
 
 #Ex-Governator Writes a Paper to Slander Emperor
 #You cannot talk bad of the Son of Heaven
@@ -3362,12 +2553,12 @@ character_event = {
 			limit = {
 				government = sinic_bureaucracy_government
 			}
-			any_character = {
-				limit = {
-					trait = grand_secretary 
-				}
-				character_event = { id = cetic.369 }
-			}
+			#any_character = {
+			#	limit = {
+			#		trait = grand_secretary 
+			#	}
+			#	character_event = { id = cetic.369 }
+			#}
 			custom_tooltip = {
 				text = impauth_decrease_3_TT
 				hidden_tooltip = {
@@ -3381,24 +2572,24 @@ character_event = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				trait = grand_secretary
-			}
-			any_character = {
-				limit = {
-					government = sinic_bureaucracy_government
-				}
-				character_event = { id = cetic.369 }
-			}
-			custom_tooltip = {
-				text = impauth_increase_3_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 3 }
-				}
-			}
-			scaled_wealth = -0.2
-		}
+		#if = {
+		#	limit = {
+		#		trait = grand_secretary
+		#	}
+		#	any_character = {
+		#		limit = {
+		#			government = sinic_bureaucracy_government
+		#		}
+		#		character_event = { id = cetic.369 }
+		#	}
+		#	custom_tooltip = {
+		#		text = impauth_increase_3_TT
+		#		hidden_tooltip = {
+		#			change_variable = { which = global_imp_auth value = 3 }
+		#		}
+		#	}
+		#	scaled_wealth = -0.2
+		#}
 	}
 }
 
@@ -3415,12 +2606,12 @@ character_event = {
 			limit = {
 				government = sinic_bureaucracy_government
 			}
-			any_character = {
-				limit = {
-					trait = grand_secretary 
-				}
-				character_event = { id = cetic.370 }
-			}
+			#any_character = {
+			#	limit = {
+			#		trait = grand_secretary 
+			#	}
+			#	character_event = { id = cetic.370 }
+			#}
 			custom_tooltip = {
 				text = impauth_increase_5_TT
 				hidden_tooltip = {
@@ -3434,23 +2625,23 @@ character_event = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				trait = grand_secretary
-			}
-			any_character = {
-				limit = {
-					government = sinic_bureaucracy_government
-				}
-				character_event = { id = cetic.370 }
-			}
-			custom_tooltip = {
-				text = impauth_decrease_5_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = -5 }
-				}
-			}
-		}
+		#if = {
+		#	limit = {
+		#		trait = grand_secretary
+		#	}
+		#	any_character = {
+		#		limit = {
+		#			government = sinic_bureaucracy_government
+		#		}
+		#		character_event = { id = cetic.370 }
+		#	}
+		#	custom_tooltip = {
+		#		text = impauth_decrease_5_TT
+		#		hidden_tooltip = {
+		#			change_variable = { which = global_imp_auth value = -5 }
+		#		}
+		#	}
+		#}
 	}
 }
 
@@ -3519,728 +2710,121 @@ character_event = {
 }
 
 #Attempt to bribe/sweettalk/threaten voter
-character_event = {
-	id = cetic.347
-	desc = EVTDESCCETIC347
-	picture = GFX_evt_courtiers_talking
-	is_triggered_only = yes
-	
-	immediate = {
-		any_character = {
-			limit = {
-				trait = grand_secretary
-			}
-			save_event_target_as = gnator
-		}
-		ROOT = {
-			save_event_target_as = swayer
-		}
-		FROM = {
-			save_event_target_as = swayee
-		}
-	}
-	
-	option = { #Use diplomacy
-		name = EVTOPTACETIC347
-		set_character_flag = sway_dip
-		hidden_tooltip = {
-			random_list = {
-				60 = { #fails
-					hidden_tooltip = {
-						event_target:swayee = {
-							character_event = { id = cetic.348 } #simple ping event
-						}
-					}
-					custom_tooltip = {
-						text = not_swayed_TT
-					}
-					modifier = {
-						factor = 1.3
-						event_target:swayer = {
-							diplomacy < 8
-						}
-					}
-					modifier = {
-						factor = 1.3
-						event_target:swayee = {
-							OR = {
-								is_friend = liege
-								is_friend = event_target:gnator
-							}
-							NOT = {
-								has_character_flag = forced_friend
-							}
-						}
-					}
-					modifier = {
-						factor = 0.7
-						event_target:swayee = {
-							OR = {
-								is_friend = liege
-								is_friend = event_target:gnator
-							}
-							has_character_flag = forced_friend
-						}
-					}
-					modifier = {
-						factor = 0.5
-						event_target:swayer = {
-							diplomacy = 12
-						}
-					}
-					modifier = {
-						factor = 1.8
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -80 } }
-					}
-					modifier = {
-						factor = 1.6
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -60 } }
-					}
-					modifier = {
-						factor = 1.4
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -40 } }
-					}
-					modifier = {
-						factor = 1.2
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -20 } }
-					}
-					modifier = {
-						factor = 0.9
-						event_target:swayee = { opinion = { who = event_target:swayer value = 40 } }
-					}
-					modifier = {
-						factor = 0.8
-						event_target:swayee = { opinion = { who = event_target:swayer value = 60 } }
-					}
-					modifier = {
-						factor = 0.6
-						event_target:swayee = { opinion = { who = event_target:swayer value = 80 } }
-					}
-				}
-				40 = { #it succeeds
-					hidden_tooltip = {
-						event_target:swayee = {
-							character_event = { id = cetic.349 } #simple ping event
-							clr_character_flag = forced_friend
-						}
-					}
-					custom_tooltip = {
-						text = swayed_TT
-					}
-					modifier = {
-						factor = 0.5
-						event_target:swayer = {
-							diplomacy < 8
-						}
-					}
-					modifier = {
-						factor = 100
-						event_target:swayee = { is_friend = event_target:swayer }
-					}
-					modifier = {
-						factor = 0.01
-						event_target:swayee = { is_rival = event_target:swayer }
-					}
-					modifier = {
-						factor = 0.2
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -80 } }
-					}
-					modifier = {
-						factor = 0.4
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -60 } }
-					}
-					modifier = {
-						factor = 0.6
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -40 } }
-					}
-					modifier = {
-						factor = 0.8
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -20 } }
-					}
-					modifier = {
-						factor = 1.2
-						event_target:swayee = { opinion = { who = event_target:swayer value = 20 } }
-					}
-					modifier = {
-						factor = 1.4
-						event_target:swayee = { opinion = { who = event_target:swayer value = 40 } }
-					}
-					modifier = {
-						factor = 1.6
-						event_target:swayee = { opinion = { who = event_target:swayer value = 60 } }
-					}
-					modifier = {
-						factor = 1.8
-						event_target:swayee = { opinion = { who = event_target:swayer value = 80 } }
-					}
-				}
-			}
-		}
-	}
-	option = { #Use bribery
-		name = EVTOPTBCETIC347
-		set_character_flag = sway_bribe
-		hidden_tooltip = {
-			event_target:swayer = {
-				set_character_flag = bribery
-			}
-		}
-		wealth = -200
-		hidden_tooltip = {
-			random_list = {
-				70 = { #fails
-					hidden_tooltip = {
-						event_target:swayee = {
-							character_event = { id = cetic.348 } #simple ping event
-						}
-					}
-					custom_tooltip = {
-						text = not_swayed_TT
-					}
-					modifier = {
-						factor = 1.3
-						event_target:swayee = {
-							trait = greedy
-						}
-					}
-					modifier = {
-						factor = 0.5
-						event_target:swayee = {
-							trait = honest
-						}
-					}
-					modifier = {
-						factor = 1.3
-						event_target:swayee = {
-							OR = {
-								is_friend = liege
-								is_friend = event_target:gnator
-							}
-							NOT = {
-								has_character_flag = forced_friend
-							}
-						}
-					}
-					modifier = {
-						factor = 0.7
-						event_target:swayee = {
-							OR = {
-								is_friend = liege
-								is_friend = event_target:gnator
-							}
-							has_character_flag = forced_friend
-						}
-					}
-					modifier = {
-						factor = 0
-						event_target:swayee = { is_friend = event_target:swayer }
-					}
-					modifier = {
-						factor = 100
-						event_target:swayee = { is_rival = event_target:swayer }
-					}
-					modifier = {
-						factor = 1.8
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -80 } }
-					}
-					modifier = {
-						factor = 1.6
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -60 } }
-					}
-					modifier = {
-						factor = 1.4
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -40 } }
-					}
-					modifier = {
-						factor = 1.2
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -20 } }
-					}
-					modifier = {
-						factor = 0.9
-						event_target:swayee = { opinion = { who = event_target:swayer value = 40 } }
-					}
-					modifier = {
-						factor = 0.8
-						event_target:swayee = { opinion = { who = event_target:swayer value = 60 } }
-					}
-					modifier = {
-						factor = 0.6
-						event_target:swayee = { opinion = { who = event_target:swayer value = 80 } }
-					}
-				}
-				30 = { #it succeeds
-					hidden_tooltip = {
-						event_target:swayee = {
-							character_event = { id = cetic.349 } #simple ping event
-							set_character_flag = forced_friend
-						}
-					}
-					custom_tooltip = {
-						text = swayed_TT
-					}
-					modifier = {
-						factor = 0.5
-						event_target:swayee = {
-							trait = honest
-						}
-					}
-					modifier = {
-						factor = 100
-						event_target:swayee = { is_friend = event_target:swayer }
-					}
-					modifier = {
-						factor = 0.01
-						event_target:swayee = { is_rival = event_target:swayer }
-					}
-					modifier = {
-						factor = 0.2
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -80 } }
-					}
-					modifier = {
-						factor = 0.4
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -60 } }
-					}
-					modifier = {
-						factor = 0.6
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -40 } }
-					}
-					modifier = {
-						factor = 0.8
-						event_target:swayee = { opinion = { who = event_target:swayer value <= -20 } }
-					}
-					modifier = {
-						factor = 1.2
-						event_target:swayee = { opinion = { who = event_target:swayer value = 20 } }
-					}
-					modifier = {
-						factor = 1.4
-						event_target:swayee = { opinion = { who = event_target:swayer value = 40 } }
-					}
-					modifier = {
-						factor = 1.6
-						event_target:swayee = { opinion = { who = event_target:swayer value = 60 } }
-					}
-					modifier = {
-						factor = 1.8
-						event_target:swayee = { opinion = { who = event_target:swayer value = 80 } }
-					}
-				}
-			}
-		}
-	}
-	option = { #Use intrigue
-		name = EVTOPTCCETIC347
-		set_character_flag = sway_int
-		hidden_tooltip = {
-			random_list = {
-			70 = { #fails
-				hidden_tooltip = {
-					event_target:swayee = {
-						character_event = { id = cetic.348 } #simple ping event
-					}
-				}
-				custom_tooltip = {
-					text = not_swayed_TT
-				}
-				modifier = {
-					factor = 1.3
-					event_target:swayee = {
-						OR = {
-							is_friend = liege
-							is_friend = event_target:gnator
-						}
-						NOT = {
-							has_character_flag = forced_friend
-						}
-					}
-				}
-				modifier = {
-					factor = 0.7
-					event_target:swayee = {
-						OR = {
-							is_friend = liege
-							is_friend = event_target:gnator
-						}
-						has_character_flag = forced_friend
-					}
-				}
-				modifier = {
-					factor = 1.3
-					event_target:swayer = {
-						has_pleasant_personality_trigger = yes
-					}
-				}
-				modifier = {
-					factor = 1.3
-					event_target:swayer = {
-						intrigue < 8
-					}
-				}
-				modifier = {
-					factor = 0.5
-					event_target:swayer = {
-						intrigue = 12
-					}
-				}
-			}
-			30 = { #it succeeds
-				hidden_tooltip = {
-					event_target:swayee = {
-						character_event = { id = cetic.349 } #simple ping event
-						set_character_flag = forced_friend
-					}
-				}
-				custom_tooltip = {
-					text = swayed_TT
-				}
-				modifier = {
-					factor = 0.5
-					event_target:swayer = {
-						intrigue < 8
-					}
-				}
-				modifier = {
-					factor = 1.3
-					event_target:swayer = {
-						has_unpleasant_personality_trigger = yes
-					}
-				}
-			}
-		}
-		}
-	}
-}
-
-#Sway failed
-character_event = {
-	id = cetic.348
-	hide_window = yes 
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:swayer = {
-			letter_event = { id = cetic.350 days = 4 }
-		}
-	}
-}
-
-#Sway suceeded
-character_event = {
-	id = cetic.349
-	hide_window = yes 
-	is_triggered_only = yes
-	
-	immediate = {
-		event_target:swayer = {
-			letter_event = { id = cetic.351 days = 4 }
-		}
-	}
-}
-
-#Sway failed
-letter_event = {
-	id = cetic.350
-	desc = EVTDESCCETIC350 
-	is_triggered_only = yes
-	
-	option = {
-		name = opta_disappointing
-		if = {
-			limit = {
-				has_character_flag = bribery
-			}
-			wealth = 200
-			clr_character_flag = bribery
-		}
-		if = {
-			limit = {
-				event_target:swayer = {
-					government = sinic_bureaucracy_government
-					independent = yes
-				}
-			}
-			custom_tooltip = {
-				text = impauth_decrease_3_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = -3 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				event_target:swayer = {
-					trait = grand_secretary
-				}
-			}
-			custom_tooltip = {
-				text = impauth_increase_3_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 3 }
-				}
-			}
-		}
-		hidden_tooltip = {
-			event_target:swayer = {
-				character_event = { id = cetic.352 } #cleanup
-			}
-		}
-	}
-}
-
-#Sway succeeded
-letter_event = {
-	id = cetic.351
-	desc = EVTDESCCETIC351 
-	is_triggered_only = yes
-	
-	immediate = {
-		ROOT = {
-			holder_scope = {
-				save_event_target_as = emperor_sway
-			}
-		}
-	}
-	
-	option = {
-		name = opta_excellent
-		if = {
-			limit = {
-				has_character_flag = bribery
-			}
-			event_target:swayee = {
-				wealth = 200
-			}
-			event_target:swayer = {
-				clr_character_flag = bribery
-			}
-		}
-		if = {
-			limit = {
-				event_target:swayee = {
-					is_friend = event_target:gnator
-				}
-			}
-			event_target:swayee = {
-				remove_friend = event_target:gnator
-			}
-		}
-		if = {
-			limit = {
-				event_target:swayee = {
-					is_friend = event_target:emperor_sway
-				}
-			}
-			event_target:swayee = {
-				remove_friend = event_target:emperor_sway
-			}
-		}
-		if = {
-			limit = {
-				event_target:swayer = {
-					trait = grand_secretary
-				}
-			}
-			custom_tooltip = {
-				text = impauth_decrease_3_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = -3 }
-				}
-			}
-		}
-		if = {
-			limit = {
-				event_target:swayer = {
-					government = sinic_bureaucracy_government
-					independent = yes
-				}
-			}
-			custom_tooltip = {
-				text = impauth_increase_3_TT
-				hidden_tooltip = {
-					change_variable = { which = global_imp_auth value = 3 }
-				}
-			}
-		}
-		event_target:swayer = {
-			add_friend = event_target:swayee
-		}
-		event_target:swayee = {
-			set_character_flag = swayed_councillor
-		}
-		hidden_tooltip = {
-			event_target:swayer = {
-				character_event = { id = cetic.352 } #cleanup
-			}
-			save_persistent_event_target = {
-				name = pers_swayer
-				scope = event_target:swayer
-			}
-		}
-	}
-}
-
-character_event = {
-	id = cetic.352
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		clr_character_flag = sway_bribe
-		clr_character_flag = sway_dip
-		clr_character_flag = sway_int
-	}
-}
-
-character_event = {
-	id = cetic.353
-	hide_window = yes
-	only_playable = yes
-	
-	trigger = {
-		government = sinic_bureaucracy_government
-		independent = yes
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	immediate = {
-		any_character = {
-			limit = {
-				is_friend = ROOT
-				is_voter = no
-				has_character_flag = swayed_councillor
-			}
-			character_event = { id = cetic.401 }
-		}
-	}
-	option = {
-		name = ok
-	}
-}
-
-character_event = {
-	id = cetic.401
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		remove_friend = FROM
-	}
-}
+#Removed for being too large in scope
 
 #Sanctioned Governator
-character_event = {
-	id = cetic.354
-	desc = EVTDESCCETIC354
-	picture = GFX_evt_chinese_bureaucrat
-	is_triggered_only = yes
-	
-	option = {
-		name = "EXCELLENT"
-		add_trait = sanctioned_grand_secretary
-		prestige = 50
-		opinion = {
-			modifier = made_me_grand_secretary
-			who = FROM 
-		}
-	}
-}
+#character_event = {
+#	id = cetic.354
+#	desc = EVTDESCCETIC354
+#	picture = GFX_evt_chinese_bureaucrat
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "EXCELLENT"
+#		add_trait = sanctioned_grand_secretary
+#		prestige = 50
+#		opinion = {
+#			modifier = made_me_grand_secretary
+#			who = FROM 
+#		}
+#	}
+#}
 
 #Sanctioned Governator chooses to surrender authority or keep it
-character_event = {
-	id = cetic.355
-	desc = EVTDESCCETIC355
-	picture = GFX_evt_chinese_bureaucrat
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC355
-		prestige = 50
-		custom_tooltip = {
-			text = impauth_increase_10_TT
-			hidden_tooltip = {
-				change_variable = { which = global_imp_auth value = 10 }
-			}
-		}
-		ai_chance = {
-			factor = 0.6
-			modifier = {
-				factor = 2
-				trait = content
-			}
-			modifier = {
-				factor = 2
-				ROOT = { 
-					opinion = {
-						who = FROM
-						value > 60
-					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				ROOT = { 
-					opinion = {
-						who = FROM
-						value <= -20
-					}
-				}
-			}
-		}
-	}
-	
-	option = {
-		name = EVTOPTBCETIC355
-		prestige = 50
-		custom_tooltip = {
-			text = impauth_decrease_10_TT
-			hidden_tooltip = {
-				change_variable = { which = global_imp_auth value = -10 }
-			}
-		}
-		ROOT = {
-			holder_scope = {
-				remove_opinion = {
-					modifier = gnator_succeed
-					who = ROOT
-				}
-			}
-		}
-		ROOT = {
-			holder_scope = {
-				opinion = {
-					modifier = gnator_betrayed
-					who = ROOT
-				}
-			}
-		}
-		ai_chance = {
-			factor = 0.4
-			modifier = {
-				factor = 2
-				trait = ambitious
-			}
-			modifier = {
-				factor = 2
-				ROOT = { 
-					opinion = {
-						who = FROM
-						value <= -20
-					}
-				}
-			}
-			modifier = {
-				factor = 0.5
-				ROOT = { 
-					opinion = {
-						who = FROM
-						value > 60
-					}
-				}
-			}
-		}
-	}
-}
+#character_event = {
+#	id = cetic.355
+#	desc = EVTDESCCETIC355
+#	picture = GFX_evt_chinese_bureaucrat
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTACETIC355
+#		prestige = 50
+#		custom_tooltip = {
+#			text = impauth_increase_10_TT
+#			hidden_tooltip = {
+#				change_variable = { which = global_imp_auth value = 10 }
+#			}
+#		}
+#		ai_chance = {
+#			factor = 0.6
+#			modifier = {
+#				factor = 2
+#				trait = content
+#			}
+#			modifier = {
+#				factor = 2
+#				ROOT = { 
+#					opinion = {
+#						who = FROM
+#						value > 60
+#					}
+#				}
+#			}
+#			modifier = {
+#				factor = 0.5
+#				ROOT = { 
+#					opinion = {
+#						who = FROM
+#						value <= -20
+#					}
+#				}
+#			}
+#		}
+#	}
+#	
+#	option = {
+#		name = EVTOPTBCETIC355
+#		prestige = 50
+#		custom_tooltip = {
+#			text = impauth_decrease_10_TT
+#			hidden_tooltip = {
+#				change_variable = { which = global_imp_auth value = -10 }
+#			}
+#		}
+#		ROOT = {
+#			holder_scope = {
+#				remove_opinion = {
+#					modifier = gnator_succeed
+#					who = ROOT
+#				}
+#			}
+#		}
+#		ROOT = {
+#			holder_scope = {
+#				opinion = {
+#					modifier = gnator_betrayed
+#					who = ROOT
+#				}
+#			}
+#		}
+#		ai_chance = {
+#			factor = 0.4
+#			modifier = {
+#				factor = 2
+#				trait = ambitious
+#			}
+#			modifier = {
+#				factor = 2
+#				ROOT = { 
+#					opinion = {
+#						who = FROM
+#						value <= -20
+#					}
+#				}
+#			}
+#			modifier = {
+#				factor = 0.5
+#				ROOT = { 
+#					opinion = {
+#						who = FROM
+#						value > 60
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
 
 #Grain to the masses: Selfless Edition
 character_event = {
@@ -4450,60 +3034,60 @@ character_event = {
 }
 
 #Defering Powers: Emperor's Response
-character_event = {
-	id = cetic.360
-	desc = EVTDESCCETIC360
-	picture = GFX_evt_china_golden_age
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTACETIC360
-		custom_tooltip = {
-			text = impauth_increase_7_TT
-		}
-		opinion = {
-			modifier = gnator_powers
-			who = FROM
-		}
-	}
-}
+#character_event = {
+#	id = cetic.360
+#	desc = EVTDESCCETIC360
+#	picture = GFX_evt_china_golden_age
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = EVTOPTACETIC360
+#		custom_tooltip = {
+#			text = impauth_increase_7_TT
+#		}
+#		opinion = {
+#			modifier = gnator_powers
+#			who = FROM
+#		}
+#	}
+#}
 
 #Sanctioned Governator has won
-character_event = {
-	id = cetic.361
-	desc = EVTDESCCETIC361
-	picture = GFX_evt_china_expansionist
-	is_triggered_only = yes
-	
-	option = {
-		name = opta_excellent
-		set_character_flag = sancgovwon
-		any_character = {
-			limit = {
-				trait = grand_secretary
-			}
-			character_event = { id = cetic.355 }
-		}
-	}
-}
+#character_event = {
+#	id = cetic.361
+#	desc = EVTDESCCETIC361
+#	picture = GFX_evt_china_expansionist
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = opta_excellent
+#		set_character_flag = sancgovwon
+#		any_character = {
+#			limit = {
+#				trait = grand_secretary
+#			}
+#			character_event = { id = cetic.355 }
+#		}
+#	}
+#}
 
 #Sanctioned Governator has failed
-character_event = {
-	id = cetic.362
-	desc = EVTDESCCETIC362
-	picture = GFX_evt_bad_news
-	is_triggered_only = yes
-	
-	option = {
-		name = opta_disappointing
-		custom_tooltip = {
-			text = impauth_decrease_5_TT
-			hidden_tooltip = {
-				change_variable = { which = global_imp_auth value = -5 }
-			}
-		}
-	}
-}
+#character_event = {
+#	id = cetic.362
+#	desc = EVTDESCCETIC362
+#	picture = GFX_evt_bad_news
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = opta_disappointing
+#		custom_tooltip = {
+#			text = impauth_decrease_5_TT
+#			hidden_tooltip = {
+#				change_variable = { which = global_imp_auth value = -5 }
+#			}
+#		}
+#	}
+#}
 
 #If the emperor somehow loses the throne
 character_event = {
@@ -4596,229 +3180,229 @@ character_event = {
 }
 
 #Character asked to be grand_secretary heir
-character_event = {
-	id = cetic.364
-	desc = EVTDESCCETIC364
-	picture = GFX_evt_china_open
-	is_triggered_only = yes
-	
-	option = { #yes
-		name = EVTOPTACETIC364
-		FROM = {
-			letter_event = { id = cetic.365 }
-		}
-		ai_chance = {
-			factor = 0.4
-			modifier = {
-				factor = 0.5
-				has_character_flag = chosen_heir_gnator
-			}
-			modifier = {
-				factor = 100
-				FROM = { is_friend = ROOT }
-			}
-			modifier = {
-				factor = 0
-				FROM = { is_rival = ROOT }
-			}
-			modifier = {
-				factor = 0.2
-				FROM = { reverse_opinion = { who = ROOT value <= -80 } }
-			}
-			modifier = {
-				factor = 0.4
-				FROM = { reverse_opinion = { who = ROOT value <= -60 } }
-			}
-			modifier = {
-				factor = 0.6
-				FROM = { reverse_opinion = { who = ROOT value <= -40 } }
-			}
-			modifier = {
-				factor = 0.8
-				FROM = { reverse_opinion = { who = ROOT value <= -20 } }
-			}
-			modifier = {
-				factor = 1.2
-				FROM = { reverse_opinion = { who = ROOT value = 20 } }
-			}
-			modifier = {
-				factor = 1.4
-				FROM = { reverse_opinion = { who = ROOT value = 40 } }
-			}
-			modifier = {
-				factor = 1.6
-				FROM = { reverse_opinion = { who = ROOT value = 60 } }
-			}
-			modifier = {
-				factor = 1.8
-				FROM = { reverse_opinion = { who = ROOT value = 80 } }
-			}
-		}
-	}
-	option = { #no
-		name = EVTOPTBCETIC364
-		FROM = {
-			letter_event = { id = cetic.366 }
-		}
-		ai_chance = {
-			factor = 0.6
-			modifier = {
-				factor = 0
-				FROM = { is_friend = ROOT }
-			}
-			modifier = {
-				factor = 100
-				FROM = { is_rival = ROOT }
-			}
-			modifier = {
-				factor = 1.8
-				FROM = { reverse_opinion = { who = ROOT value <= -80 } }
-			}
-			modifier = {
-				factor = 1.6
-				FROM = { reverse_opinion = { who = ROOT value <= -60 } }
-			}
-			modifier = {
-				factor = 1.4
-				FROM = { reverse_opinion = { who = ROOT value <= -40 } }
-			}
-			modifier = {
-				factor = 1.2
-				FROM = { reverse_opinion = { who = ROOT value <= -20 } }
-			}
-			modifier = {
-				factor = 0.9
-				FROM = { reverse_opinion = { who = ROOT value = 40 } }
-			}
-			modifier = {
-				factor = 0.8
-				FROM = { reverse_opinion = { who = ROOT value = 60 } }
-			}
-			modifier = {
-				factor = 0.6
-				FROM = { reverse_opinion = { who = ROOT value = 80 } }
-			}
-		}
-	}
-}
+#character_event = {
+#	id = cetic.364
+#	desc = EVTDESCCETIC364
+#	picture = GFX_evt_china_open
+#	is_triggered_only = yes
+#	
+#	option = { #yes
+#		name = EVTOPTACETIC364
+#		FROM = {
+#			letter_event = { id = cetic.365 }
+#		}
+#		ai_chance = {
+#			factor = 0.4
+#			modifier = {
+#				factor = 0.5
+#				has_character_flag = chosen_heir_gnator
+#			}
+#			modifier = {
+#				factor = 100
+#				FROM = { is_friend = ROOT }
+#			}
+#			modifier = {
+#				factor = 0
+#				FROM = { is_rival = ROOT }
+#			}
+#			modifier = {
+#				factor = 0.2
+#				FROM = { reverse_opinion = { who = ROOT value <= -80 } }
+#			}
+#			modifier = {
+#				factor = 0.4
+#				FROM = { reverse_opinion = { who = ROOT value <= -60 } }
+#			}
+#			modifier = {
+#				factor = 0.6
+#				FROM = { reverse_opinion = { who = ROOT value <= -40 } }
+#			}
+#			modifier = {
+#				factor = 0.8
+#				FROM = { reverse_opinion = { who = ROOT value <= -20 } }
+#			}
+#			modifier = {
+#				factor = 1.2
+#				FROM = { reverse_opinion = { who = ROOT value = 20 } }
+#			}
+#			modifier = {
+#				factor = 1.4
+#				FROM = { reverse_opinion = { who = ROOT value = 40 } }
+#			}
+#			modifier = {
+#				factor = 1.6
+#				FROM = { reverse_opinion = { who = ROOT value = 60 } }
+#			}
+#			modifier = {
+#				factor = 1.8
+#				FROM = { reverse_opinion = { who = ROOT value = 80 } }
+#			}
+#		}
+#	}
+#	option = { #no
+#		name = EVTOPTBCETIC364
+#		FROM = {
+#			letter_event = { id = cetic.366 }
+#		}
+#		ai_chance = {
+#			factor = 0.6
+#			modifier = {
+#				factor = 0
+#				FROM = { is_friend = ROOT }
+#			}
+#			modifier = {
+#				factor = 100
+#				FROM = { is_rival = ROOT }
+#			}
+#			modifier = {
+#				factor = 1.8
+#				FROM = { reverse_opinion = { who = ROOT value <= -80 } }
+#			}
+#			modifier = {
+#				factor = 1.6
+#				FROM = { reverse_opinion = { who = ROOT value <= -60 } }
+#			}
+#			modifier = {
+#				factor = 1.4
+#				FROM = { reverse_opinion = { who = ROOT value <= -40 } }
+#			}
+#			modifier = {
+#				factor = 1.2
+#				FROM = { reverse_opinion = { who = ROOT value <= -20 } }
+#			}
+#			modifier = {
+#				factor = 0.9
+#				FROM = { reverse_opinion = { who = ROOT value = 40 } }
+#			}
+#			modifier = {
+#				factor = 0.8
+#				FROM = { reverse_opinion = { who = ROOT value = 60 } }
+#			}
+#			modifier = {
+#				factor = 0.6
+#				FROM = { reverse_opinion = { who = ROOT value = 80 } }
+#			}
+#		}
+#	}
+#}
 
-letter_event = {
-	id = cetic.365
-	desc = EVTDESCCETIC365
-	is_triggered_only = yes
-	
-	option = {
-		name = opta_excellent
-		any_character = {
-			limit = {
-				trait = grand_secretary_heir
-			}
-			remove_trait = grand_secretary_heir
-		}
-		add_trait = grand_secretary_heir
-		clr_character_flag = asked_gnator_flag
-		opinion = {
-			modifier = opinion_pleased
-			who = FROM
-		}
-	}
-}
+#letter_event = {
+#	id = cetic.365
+#	desc = EVTDESCCETIC365
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = opta_excellent
+#		any_character = {
+#			limit = {
+#				trait = grand_secretary_heir
+#			}
+#			remove_trait = grand_secretary_heir
+#		}
+#		add_trait = grand_secretary_heir
+#		clr_character_flag = asked_gnator_flag
+#		opinion = {
+#			modifier = opinion_pleased
+#			who = FROM
+#		}
+#	}
+#}
 
-letter_event = {
-	id = cetic.366
-	desc = EVTDESCCETIC366
-	is_triggered_only = yes
-	
-	option = {
-		name = opta_disappointing
-		clr_character_flag = asked_gnator_flag
-		opinion = {
-			modifier = opinion_disappointed
-			who = FROM
-		}
-	}
-}
+#letter_event = {
+#	id = cetic.366
+#	desc = EVTDESCCETIC366
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = opta_disappointing
+#		clr_character_flag = asked_gnator_flag
+#		opinion = {
+#			modifier = opinion_disappointed
+#			who = FROM
+#		}
+#	}
+#}
 
-character_event = {
-	id = cetic.367
-	is_triggered_only = yes
-	hide_window = yes
-	
-	immediate = {
-		any_character = {
-			limit = {
-				trait = grand_secretary
-			}
-			character_event = { id = cetic.364 }
-		}
-	}
-}
+#character_event = {
+#	id = cetic.367
+#	is_triggered_only = yes
+#	hide_window = yes
+#	
+#	immediate = {
+#		any_character = {
+#			limit = {
+#				trait = grand_secretary
+#			}
+#			character_event = { id = cetic.364 }
+#		}
+#	}
+#}
 
 #California Restoration
 #These Events were removed as they pertain specifically to California's Restoration which has no bearing to Asia
 
-character_event = {
-	id = cetic.402
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		any_character = {
-			limit = {
-				trait = grand_secretary
-			}
-			character_event = { id = cetic.403 }
-		}
-	}
-}
+#character_event = {
+#	id = cetic.402
+#	hide_window = yes
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		any_character = {
+#			limit = {
+#				trait = grand_secretary
+#			}
+#			character_event = { id = cetic.403 }
+#		}
+#	}
+#}
 
-character_event = {
-	id = cetic.403
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		ROOT = {
-			holder_scope = {
-				add_rival = ROOT
-			}
-		}
-		ROOT = {
-			holder_scope = {
-				war = {
-					target = FROM 
-					casus_belli = imperial_claim_war
-					thirdparty_title = PREV
-					tier = EMPEROR
-				}
-			}
-		}
-		set_character_flag = imperial_claimant # for later events
-		FROM = {
-			character_event = { id = cetic.404 }
-		}
-	}
-}
+#character_event = {
+#	id = cetic.403
+#	hide_window = yes
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		ROOT = {
+#			holder_scope = {
+#				add_rival = ROOT
+#			}
+#		}
+#		ROOT = {
+#			holder_scope = {
+#				war = {
+#					target = FROM 
+#					casus_belli = imperial_claim_war
+#					thirdparty_title = PREV
+#					tier = EMPEROR
+#				}
+#			}
+#		}
+#		set_character_flag = imperial_claimant # for later events
+#		FROM = {
+#			character_event = { id = cetic.404 }
+#		}
+#	}
+#}
 
-character_event = {
-	id = cetic.404
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		ROOT = {
-			holder_scope = {
-				reverse_war = {
-					target = FROM 
-					casus_belli = imperial_claim_war
-					thirdparty_title = PREV
-					tier = EMPEROR
-				}
-			}
-		}
-		narrative_event = { id = cetic.100 }
-	}
-}
+#character_event = {
+#	id = cetic.404
+#	hide_window = yes
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		ROOT = {
+#			holder_scope = {
+#				reverse_war = {
+#					target = FROM 
+#					casus_belli = imperial_claim_war
+#					thirdparty_title = PREV
+#					tier = EMPEROR
+#				}
+#			}
+#		}
+#		narrative_event = { id = cetic.100 }
+#	}
+#}
 
 character_event = {
 	id = cetic.405
@@ -4832,28 +3416,28 @@ character_event = {
 	}
 }
 
-character_event = {
-	id = cetic.406
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		join_defender_wars = FROM
-	}
-}
+#character_event = {
+#	id = cetic.406
+#	hide_window = yes
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		join_defender_wars = FROM
+#	}
+#}
 
-character_event = {
-	id = cetic.407
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		ROOT = {
-			holder_scope = {
-				character_event = { id = cetic.405 }
-			}
-		}
-	}
-}
+#character_event = {
+#	id = cetic.407
+#	hide_window = yes
+#	is_triggered_only = yes
+#	immediate = {
+#		ROOT = {
+#			holder_scope = {
+#				character_event = { id = cetic.405 }
+#			}
+#		}
+#	}
+#}
 
 #Yearly Imperial Authority
 character_event = {
@@ -5222,147 +3806,147 @@ character_event = {
 					# value = 1
 				# }
 			# }
-			if = { 
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						ROOT = {
-							has_opinion_modifier = {
-								who = PREV
-								modifier = gnator_succeed
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = 2
-				}
-			}
-			if = { 
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						ROOT = {
-							has_opinion_modifier = {
-								who = PREV
-								modifier = gnator_succeed
-							}
-						}
-						higher_real_tier_than = duke
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = 2
-				}
-			}
-			if = {
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						OR = {
-							ROOT = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value > 20
-									}
-								}
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = 1
-				}
-			}
-			if = {
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						OR = {
-							ROOT = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value > 40
-									}
-								}
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = 1
-				}
-			}
-			if = {
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						OR = {
-							ROOT = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value > 60
-									}
-								}
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = 1
-				}
-			}
-			if = {
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						OR = {
-							ROOT = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value > 80
-									}
-								}
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = 1
-				}
-			}
+			#if = { 
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			ROOT = {
+			#				has_opinion_modifier = {
+			#					who = PREV
+			#					modifier = gnator_succeed
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = 2
+			#	}
+			#}
+			#if = { 
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			ROOT = {
+			#				has_opinion_modifier = {
+			#					who = PREV
+			#					modifier = gnator_succeed
+			#				}
+			#			}
+			#			higher_real_tier_than = duke
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = 2
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			OR = {
+			#				ROOT = {
+			#					has_holder = yes
+			#					holder_scope = {
+			#						reverse_opinion = {
+			#							who = PREVPREV
+			#							value > 20
+			#						}
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = 1
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			OR = {
+			#				ROOT = {
+			#					has_holder = yes
+			#					holder_scope = {
+			#						reverse_opinion = {
+			#							who = PREVPREV
+			#							value > 40
+			#						}
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = 1
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			OR = {
+			#				ROOT = {
+			#					has_holder = yes
+			#					holder_scope = {
+			#						reverse_opinion = {
+			#							who = PREVPREV
+			#							value > 60
+			#						}
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = 1
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			OR = {
+			#				ROOT = {
+			#					has_holder = yes
+			#					holder_scope = {
+			#						reverse_opinion = {
+			#							who = PREVPREV
+			#							value > 80
+			#						}
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = 1
+			#	}
+			#}
 		}
 		
 		#Negative Effects
@@ -5678,128 +4262,128 @@ character_event = {
 					value = -0.5
 				}
 			}
-			if = {
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						OR = {
-							ROOT = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value < -20
-									}
-								}
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = -1
-				}
-			}
-			if = {
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						OR = {
-							ROOT = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value < -40
-									}
-								}
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = -1
-				}
-			}
-			if = {
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						OR = {
-							ROOT = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value < -60
-									}
-								}
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = -1
-				}
-			}
-			if = {
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						OR = {
-							ROOT = {
-								has_holder = yes
-								holder_scope = {
-									reverse_opinion = {
-										who = PREVPREV
-										value < -80
-									}
-								}
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = -1
-				}
-			}
-			if = {
-				limit = {
-					any_character = {
-						trait = grand_secretary
-						prisoner = no
-						# is_incapable = no
-						# in_hiding = no
-						OR = {
-							ROOT = {
-								has_holder = yes
-								holder_scope = {
-									is_rival = PREVPREV
-								}
-							}
-						}
-					}
-				}
-				change_variable = {
-					which = grand_secretary_influence
-					value = -1
-				}
-			}
+			#if = {
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			OR = {
+			#				ROOT = {
+			#					has_holder = yes
+			#					holder_scope = {
+			#						reverse_opinion = {
+			#							who = PREVPREV
+			#							value < -20
+			#						}
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = -1
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			OR = {
+			#				ROOT = {
+			#					has_holder = yes
+			#					holder_scope = {
+			#						reverse_opinion = {
+			#							who = PREVPREV
+			#							value < -40
+			#						}
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = -1
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			OR = {
+			#				ROOT = {
+			#					has_holder = yes
+			#					holder_scope = {
+			#						reverse_opinion = {
+			#							who = PREVPREV
+			#							value < -60
+			#						}
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = -1
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			OR = {
+			#				ROOT = {
+			#					has_holder = yes
+			#					holder_scope = {
+			#						reverse_opinion = {
+			#							who = PREVPREV
+			#							value < -80
+			#						}
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = -1
+			#	}
+			#}
+			#if = {
+			#	limit = {
+			#		any_character = {
+			#			trait = grand_secretary
+			#			prisoner = no
+			#			# is_incapable = no
+			#			# in_hiding = no
+			#			OR = {
+			#				ROOT = {
+			#					has_holder = yes
+			#					holder_scope = {
+			#						is_rival = PREVPREV
+			#					}
+			#				}
+			#			}
+			#		}
+			#	}
+			#	change_variable = {
+			#		which = grand_secretary_influence
+			#		value = -1
+			#	}
+			#}
 		}
 		
 		hidden_tooltip = {
@@ -5898,10 +4482,10 @@ character_event = {
 				which = yearly_imperial_authority_change
 				which = stability
 			}
-			change_variable = {
-				which = yearly_imperial_authority_change
-				which = grand_secretary_influence
-			}
+			#change_variable = {
+			#	which = yearly_imperial_authority_change
+			#	which = grand_secretary_influence
+			#}
 		}
 		
 		change_variable = {
@@ -5912,46 +4496,46 @@ character_event = {
 }
 
 #Gives grand_secretary trait to sanctioned grand_secretary when there is no grand_secretary
-character_event = {
-	id = cetic.409
-	hide_window = yes
-	trigger = {
-		trait = sanctioned_grand_secretary
-		NOR = {
-			any_character = {
-				trait = grand_secretary
-			}
-			any_character = {
-				trait = grand_secretary_heir
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = {
-		remove_trait = sanctioned_grand_secretary
-		add_trait = grand_secretary
-		any_character = {
-			limit = {
-				liege = {government = sinic_bureaucracy_government }
-			}
-			character_event = { id = cetic.410 } #Ping event
-		}
-	}
-}
+#character_event = {
+#	id = cetic.409
+#	hide_window = yes
+#	trigger = {
+#		trait = sanctioned_grand_secretary
+#		NOR = {
+#			any_character = {
+#				trait = grand_secretary
+#			}
+#			any_character = {
+#				trait = grand_secretary_heir
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	immediate = {
+#		remove_trait = sanctioned_grand_secretary
+#		add_trait = grand_secretary
+#		any_character = {
+#			limit = {
+#				liege = {government = sinic_bureaucracy_government }
+#			}
+#			character_event = { id = cetic.410 } #Ping event
+#		}
+#	}
+#}
 
-character_event = {
-	id = cetic.410
-	hide_window = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		FROM = { character_event = { id = cetic.300 } }
-	}
-}
+#character_event = {
+#	id = cetic.410
+#	hide_window = yes
+#	is_triggered_only = yes
+#	
+#	immediate = {
+#		FROM = { character_event = { id = cetic.300 } }
+#	}
+#}
 # ************************** Bureaucracy Events***********************
 
 #Variable for bureaucracy (on_startup)
