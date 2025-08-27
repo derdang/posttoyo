@@ -859,7 +859,10 @@ HORDE_RETTYPE_CAV1 =
 	maintenance_multiplier = 0.50
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 	}
 	
 	modifier = {
@@ -883,7 +886,10 @@ HORDE_RETTYPE_CAV2 =
 	maintenance_multiplier = 0.50
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 	}
 	
 	modifier = {
@@ -909,7 +915,10 @@ HORDE_RETTYPE_CAV3 =
 	maintenance_multiplier = 0.5
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 	}
 	
 	modifier = {
@@ -934,7 +943,10 @@ HORDE_RETTYPE_CAV4 =
 	maintenance_multiplier = 0.3
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 	}
 	
 	modifier = {
@@ -956,7 +968,10 @@ HORDE_RETTYPE_CAV5 =
 	maintenance_multiplier = 0.3
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		NOT = { has_character_modifier = invading_population_halt } # This stops the Mongol Empire from spending all their money on super-expensive retinues
 	}
 	
@@ -979,7 +994,10 @@ HORDE_RETTYPE_CAV6 =
 	maintenance_multiplier = 0.3
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		NOT = { has_character_modifier = invading_population_halt } # This stops the Mongol Empire from spending all their money on super-expensive retinues
 	}
 	modifier = {
@@ -1001,7 +1019,10 @@ HORDE_RETTYPE_CAV7 =
 	maintenance_multiplier = 0.3
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		NOT = { has_character_modifier = invading_population_halt } # This stops the Mongol Empire from spending all their money on super-expensive retinues
 	}
 	
@@ -1026,7 +1047,10 @@ HORDE_RETTYPE_PAGAN =
 	maintenance_multiplier = 0.25
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		religion_group = pagan_group
 	}
 	modifier = {
@@ -1052,7 +1076,10 @@ HORDE_RETTYPE_MUSLIM =
 	maintenance_multiplier = 0.25
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		religion_group = muslim
 	}
 	modifier = {
@@ -1078,7 +1105,10 @@ HORDE_RETTYPE_CHRISTIAN =
 	maintenance_multiplier = 0.25
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		religion_group = christian
 	}
 	modifier = {
@@ -1103,7 +1133,10 @@ HORDE_RETTYPE_ZOROASTRIAN =
 	maintenance_multiplier = 0.25
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		religion_group = zoroastrian_group
 	}
 	modifier = {
@@ -1128,7 +1161,10 @@ HORDE_RETTYPE_JEWISH =
 	maintenance_multiplier = 0.25
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		religion_group = jewish_group
 	}
 	modifier = {
@@ -1152,10 +1188,14 @@ HORDE_RETTYPE_EASTERN =
 	maintenance_multiplier = 0.25
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		OR = {
 			religion_group = indian_group
 			religion_group = buddhist_group
+			religion_group = eastern
 		}
 	}
 	modifier = {
@@ -1203,7 +1243,10 @@ HORDE_RETTYPE_DESERT = {
 	hire_cost = 250
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		capital_scope = {
 			terrain = desert
 		}
@@ -1225,7 +1268,10 @@ HORDE_RETTYPE_EUROPE = {
 	hire_cost = 250
 	
 	potential = {
-		is_nomadic = yes
+		OR = {
+			is_nomadic = yes
+			government = nomadic_tribal_government
+		}
 		capital_scope = {
 			OR = {
 				region = custom_china_core
