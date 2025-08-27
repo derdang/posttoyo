@@ -738,7 +738,11 @@ decisions = {
 		ai_check_interval = 60
 		
 		potential = {
-			religion = novobozhiye
+			OR = {
+				religion = novobozhiye
+				religion = vissarionite
+				religion = vadimite
+			}
 			age = 16
 			prisoner = no
 			in_seclusion = no
