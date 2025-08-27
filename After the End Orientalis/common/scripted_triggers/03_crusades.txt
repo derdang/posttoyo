@@ -13,11 +13,7 @@ pledge_crusade_trigger = {
 		text = crusade_no_antipope_TT
 
 		rightful_religious_head_scope = {
-			OR = {
-				has_landed_title = k_conferentia
-				has_landed_title = k_restorationist
-				has_landed_title = d_rizalista
-			}
+			controls_religion = yes
 		}
 	}
 	rightful_religious_head_scope = {
