@@ -931,7 +931,6 @@ wonder_statue_horse = {
 		OR = {
 			trait = lunatic
 			culture = horse
-			culture_group = west_anglo
 			government = nomadic_government
 		}
 		trigger_if = {
@@ -946,7 +945,6 @@ wonder_statue_horse = {
 			OR = {
 				trait = lunatic
 				culture = horse
-				culture_group = west_anglo
 				government = nomadic_government
 			}
 			trigger_if = {
@@ -2424,7 +2422,6 @@ wonder_perfume_temple = {
 	default_picture_stage = 3
 	is_in_water = no
 	allow_coastal = no
-	allow_construction = no
 	show_model = yes
 	potential = {
 	}
