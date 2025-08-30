@@ -1072,7 +1072,10 @@ succession_laws = {
 	}
 	succ_papal_succession = {
 		potential = {
-			title = d_cao_dai
+			OR = {
+				title = d_cao_dai
+				title = k_gelugpa
+			}
 		}
 		
 		effect = {
@@ -1111,6 +1114,7 @@ succession_laws = {
 			}
 			NOR = {
 				title = d_cao_dai
+				title = k_gelugpa
 				title = d_ruist_yansheng
 				title = d_quinto
 				title = k_vissarionite

@@ -3,7 +3,14 @@ spriteTypes = {
 ###########################
 # After the End FF Traits #
 ###########################
-
+	
+	spriteType = {
+		name = "GFX_trait_bad_priest_mormon"
+		texturefile = "gfx/traits/bad_priest_mormon.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	spriteType = {
 		name = "GFX_trait_musician"
 		texturefile = "gfx/traits/musician.dds"
