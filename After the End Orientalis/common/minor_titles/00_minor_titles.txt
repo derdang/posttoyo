@@ -2516,8 +2516,6 @@ title_master_of_the_royal_elephants = {
 				tier = emperor
 			}
 		}
-		NOT = { has_landed_title = e_byzantium }
-		NOT = { has_landed_title = e_roman_empire }
 		has_dharmic_religion_trigger = yes
 	}
 	
@@ -2630,19 +2628,11 @@ title_guru = {
 			has_character_flag = fake_guru
 		}
 		is_adult = yes
-		OR = {
-			has_dharmic_religion_trigger = yes
-			religion = bon
-			religion = bon_reformed
-		}
+		has_dharmic_religion_trigger = yes
 	}
 	
 	allowed_to_grant = { 
-		OR = {
-			has_dharmic_religion_trigger = yes
-			religion = bon
-			religion = bon_reformed
-		}
+		has_dharmic_religion_trigger = yes
 	}
 	
 	gain_effect = {
@@ -2850,7 +2840,7 @@ title_court_architect = {
 				tier = emperor
 			}
 		}
-		religion = taoist
+		religion_group = eastern
 	}
 	
 	gain_effect = {
@@ -2889,7 +2879,7 @@ title_zhangshi = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		religion = taoist
+		religion_group = eastern
 	}
 	
 	gain_effect = {
@@ -2928,7 +2918,7 @@ title_canjun = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		religion = taoist
+		religion_group = eastern
 	}
 	
 	gain_effect = {
@@ -2967,7 +2957,7 @@ title_yuhou = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		religion = taoist
+		religion_group = eastern
 	}
 	
 	gain_effect = {
@@ -3007,7 +2997,7 @@ title_historiographer = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		religion = taoist
+		religion_group = eastern
 	}
 	
 	gain_effect = {

@@ -104,6 +104,137 @@ decisions = {
 			}
 		}
 	}
+	assume_caliphate = {
+		only_rulers = yes
+		is_high_prio = yes
+		potential = {
+			is_ruler = yes
+			independent = yes
+			rebel = no
+			religion = salafi
+			NOR = {
+				has_regent = yes
+				controls_religion = yes
+				any_vassal = {
+					OR = {
+						AND = {
+							religion = ROOT
+							controls_religion = yes
+						}
+						any_vassal = {
+							religion = ROOT
+							controls_religion = yes
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			OR = {
+				trait = sayyid
+				piety = 2500
+			}
+			religion_head = {
+				ROOT = {
+					NOT = { lower_tier_than = PREV }
+				}
+			}
+			calc_true_if = {
+				amount = 3
+				OR = {
+					trait = sayyid
+				}
+				realm_size = 100
+				tier = EMPEROR
+				num_of_holy_sites = 1
+				num_of_holy_sites = 2
+			}
+			piety = 1500
+		}
+		effect = {
+			wealth = -200
+			if = {
+				limit = { 
+					trait = sayyid
+				}
+				piety = -1500
+			}
+			else = {
+				piety = -2500
+			}
+			set_character_flag = newly_founded_caliphate
+			caliphate_gain_effect = yes
+			if = {
+				limit = { 
+					religion = salafi 
+					d_salafi = {
+						has_holder = no
+					}
+				}
+				set_global_flag = sunni_caliphate_restored
+				d_salafi = { 
+					activate_title = {  title = d_salafi status = yes }	
+				}
+				d_salafi = { 
+					grant_title = ROOT 
+				}
+				salafi = {
+					set_religion_head = d_salafi
+					make_reformer_head_of_religion = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				AND = {
+					NOT = {
+						religion_head = {
+							ROOT = {
+								relative_power_including_allies_defender = { who = PREV power = 0.6 }
+							}
+						}
+					}
+					OR = {
+						trait = craven
+						trait = content
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					religion_head = {
+						ROOT = {
+							relative_power_including_allies_defender = { who = PREV power = 0.3 }
+						}
+					}
+					trait = brave
+					trait = lunatic
+					trait = possessed
+					trait = ambitious
+				}
+				
+			}
+			modifier = {
+				factor = 1000
+				always = yes
+			}
+			modifier = {
+				factor = 0.05
+				trait = craven
+			}
+			modifier = {
+				factor = 0.01
+				trait = content
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+			}
+		}
+	}
 	celebrate_passover = {
 		only_playable = yes
 		is_high_prio = yes

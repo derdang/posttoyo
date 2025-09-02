@@ -49,6 +49,19 @@ is_nusantaran_sphere_no_ph = {
 		culture_group = timor
 	}
 }
+is_protestant_christian = {
+	OR = {
+		religion = concordanist
+        religion = adventist
+        religion = pentecostal
+        religion = baptist
+        religion = kohhran_thianghlim
+        religion = fuyin
+        religion = unificationist
+		religion = eastern_lightning
+		religion = jerusalemite
+	}
+}
 is_salafi_religion = {
 	OR = {
 		religion = salafi

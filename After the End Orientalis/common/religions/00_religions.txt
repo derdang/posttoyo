@@ -1232,6 +1232,9 @@ muslim = {
 		
 		landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
+		
+		religious_clothing_priest = 23
+		religious_clothing_head = 23
 
 		intermarry = salafi
 		intermarry = nusantara
@@ -1260,13 +1263,27 @@ muslim = {
 			IBLIS SHAYTAN
 		}
 		
+		aggression = 1.5
+		
+		allow_rivermovement = yes
+		can_call_crusade = yes
 		priests_can_marry = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
 		matrilineal_marriages = no
-		
 		landed_kin_prestige_bonus = yes
-		attacking_same_religion_piety_loss = yes
+		can_have_antipopes = yes
+		attacking_same_religion_piety_loss = no
+		peace_prestige_loss = yes
+		allow_looting = yes
+		allow_viking_invasion = yes
+		
+		character_modifier = {
+			religion_flex = 0.25
+		}
+		
+		religious_clothing_priest = 23
+		religious_clothing_head = 23
 
 		intermarry = renewalist
 
@@ -1299,8 +1316,13 @@ muslim = {
 		
 		attacking_same_religion_piety_loss = yes
 		
+		religious_clothing_priest = 23
+		religious_clothing_head = 23
+		
 		intermarry = salafi
 		intermarry = renewalist
+		intermarry = bani
+		intermarry = kan_imam_san
 		
 		dynamic_cult = no
 	}
@@ -1332,6 +1354,9 @@ muslim = {
 		female_temple_holders = yes
 		
 		attacking_same_religion_piety_loss = yes
+		
+		religious_clothing_priest = 23
+		religious_clothing_head = 23
 		
 		intermarry = renewalist
 		intermarry = kebatinan
@@ -1369,6 +1394,9 @@ muslim = {
 		
 		attacking_same_religion_piety_loss = yes
 		
+		religious_clothing_priest = 23
+		religious_clothing_head = 23
+		
 		intermarry = renewalist
 		intermarry = nusantara
 		intermarry = pancasila
@@ -1404,7 +1432,10 @@ muslim = {
 		matrilineal_marriages = no
 		
 		landed_kin_prestige_bonus = yes
-		attacking_same_religion_piety_loss = yes	
+		attacking_same_religion_piety_loss = yes
+
+		religious_clothing_priest = 23
+		religious_clothing_head = 23		
 	}
 	
 	bani = {
@@ -1488,8 +1519,8 @@ muslim = {
 		can_grant_claim = yes
 		rel_head_defense = yes
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_priest = 23
+		religious_clothing_head = 23
 		
 		dynamic_cult = no
 	}
@@ -3245,16 +3276,13 @@ zoroastrian_group = {
 		
 		max_consorts = 3 # Can take concubines
 		
-		divine_blood = yes # Sacred Xwedodah close-kin marriage mechanics
-		pc_marriage = yes # Parent/child marriage allowed
-		bs_marriage = yes # Brother/sister marriage allowed
-		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 
-		#intermarry = zoroastrian
+		intermarry = buddhist_group
 		intermarry = mazdaki
 		intermarry = manichean
+		intermarry = eastern
 	}
 	
 	mazdaki = {
@@ -3286,15 +3314,63 @@ zoroastrian_group = {
 		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
 		female_temple_holders = yes
 		
+		max_consorts = 3 # Can take concubines
+		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5
 
 		intermarry = zoroastrian
 		intermarry = manichean
+		intermarry = eastern
+		intermarry = buddhist_group
+	}
+	
+	manichean = {
+		graphical_culture = persiangfx
+		
+		secondary_event_pictures = sunni
+		
+		icon = 10
+		heresy_icon = 12
+		
+		color = { 0.7 0.7 0.4 }
+		crusade_name = GREAT_HOLY_WAR
+		scripture_name = THE_EVANGELION
+		
+		priest_title = DIDASKOLOS
+		
+		high_god_name = GOD_ZURVAN
+		
+		god_names = {
+			GOD_ZURVAN GOD_OHRMAZD PROPHET_MANI GOD_MIHRYAZD
+		}
+		
+		evil_god_names = {
+			THE_DEMIURGE
+		}
+		
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		
+		parent = zoroastrian
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		can_call_crusade = no
+		
+		max_consorts = 0 # Can take concubines
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+
+		intermarry = zoroastrian
+		intermarry = mazdaki
+		intermarry = eastern
+		intermarry = buddhist_group
 	}
 }
 
-indian_group = {
+indian_group = { #hindu
 	graphical_culture = indiangfx
 	playable = yes
 	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
