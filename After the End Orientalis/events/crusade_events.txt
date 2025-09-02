@@ -72,76 +72,6 @@ character_event = {
 	}
 }
 
-# Arriving for the great holy war - Norse
-character_event = {
-	id = 8468
-	desc = "EVTDESC8300"
-	picture = "GFX_evt_battle"
-	border = GFX_event_normal_frame_war
-	
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	in_command = yes
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-		}
-		NOT = { trait = valhalla_bound }
-		OR = {
-			AND = {
-				any_war = {
-					OR = {
-						using_cb = crusade
-						using_cb = new_crusade
-					}
-				}
-				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
-				}
-				crusade_target = {
-					is_located_in = ROOT
-				}
-			}
-			any_liege = {
-				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
-				}
-				any_war = {
-					OR = {
-						using_cb = crusade
-						using_cb = new_crusade
-					}
-				}
-				crusade_target = {
-					is_located_in = ROOT
-				}
-			}
-		}
-	}
-
-	immediate = {
-		abdicate_holy_order_if_religion_changes_effect = yes
-	}
-	
-	option = {
-		trigger = {
-			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
-			}
-		}
-		name = "EVTOPTA8468"
-		add_trait = valhalla_bound
-	}
-}
-
 # Arriving for the great holy war - non-norse Pagans and Jews
 character_event = {
 	id = 8469
@@ -160,11 +90,7 @@ character_event = {
 		OR = {
 			religion_group = pagan_group
 			religion_group = jewish_group
-			religion_group = old_world
-		}
-		NOR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
+			religion_group = oldworld
 		}
 		has_crusade_trait_trigger = no
 		OR = {

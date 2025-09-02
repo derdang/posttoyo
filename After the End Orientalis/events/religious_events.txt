@@ -4773,17 +4773,6 @@ narrative_event = {
 			161 = { # Hue
 				NOT = { owner = { top_liege = { religion_group = christian } } }
 			}
-			180 = { # Saigon
-				NOT = { owner = { top_liege = { religion_group = christian } } }
-			}
-			AND = { #Fallback in case the Kingdom is instead Gia Dinh
-				161 = { # Hue
-					NOT = { owner = { top_liege = { religion_group = christian } } }
-				}
-				180 = { # Saigon
-					NOT = { owner = { top_liege = { religion_group = christian } } }
-				}
-			}
 		}
 	}
 	
@@ -4919,7 +4908,7 @@ narrative_event = {
 		}
 		controls_religion = yes
 		NOT = { has_global_flag = christian_crusades_unlocked }
-		year = 2650
+		year = 2700
 		
 		calc_true_if = {
 			amount = 2
