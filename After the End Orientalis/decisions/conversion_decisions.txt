@@ -1654,7 +1654,7 @@ targetted_decisions = {
 			OR = {
 				religion_group = christian
 				religion_group = muslim
-				religion_group = vernacular
+				religion_group = zoroastrian_group
 				religion_group = jewish_group
 				religion_group = indian_group
 			}
@@ -1941,7 +1941,7 @@ decisions = {
 					}
 					
 					if = {
-						limit = { religion_group = vernacular }
+						limit = { religion_group = zoroastrian_group }
 						add_trait = sympathy_zoroastrianism
 					}
 					
