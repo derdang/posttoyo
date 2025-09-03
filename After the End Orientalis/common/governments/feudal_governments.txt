@@ -634,6 +634,7 @@ feudal_governments = {
 			OR = {
 				controls_religion = no
 				religion_group = muslim
+				NOT = {religion_group = christian }
 				has_religion_feature = religion_temporal_head
 				AND = {
 					religion = americanist_reformed
@@ -658,14 +659,6 @@ feudal_governments = {
 						religion = nusantara
 						religion = bani
 						religion = kan_imam_san
-						AND = {
-							religion_group = christian
-							NOR = {
-								culture_group = philippine
-								culture_group = timor
-							}
-							is_tribal = no
-						}
 					}
 					OR = {
 						culture_group = southwest_tai

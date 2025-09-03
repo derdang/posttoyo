@@ -1121,10 +1121,14 @@ decisions = {
 			is_adult = yes
 			prisoner = no
 			OR = {
-				religion_group = eastern
+				is_oversea_chinese = yes
+				is_sinic = yes
 				religion_group = japonic
+				religion_group = eastern
 				religion = vvlufi
 				religion = vvlufi_reformed
+				religion = khanist
+				religion = khanist_reformed
 				has_religion_feature = religion_beatification
 			}
 		}
@@ -1160,7 +1164,7 @@ decisions = {
 					character_event = { id = TOG.7000 } 
 					add_character_modifier = {
 						name = worshipped_ancestors_timer
-						years = 10
+						years = 1
 						hidden = yes
 					}
 				}
