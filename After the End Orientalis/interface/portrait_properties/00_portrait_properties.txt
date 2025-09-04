@@ -69,10 +69,9 @@
 		modifier = {
 			factor = 0
 			location = { 
-				OR = { 
-					region = world_middle_east_jerusalem 
-					region = world_middle_east_arabia
-					region = world_africa
+				OR = {
+					region = custom_southeast_asia
+					region = custom_papua
 				} 
 			}
 		}
@@ -126,8 +125,7 @@
 				religion_group = muslim
 				religion_group = indian_group
 				religion_group = zoroastrian_group
-				religion = zun_pagan
-				religion = zun_pagan_reformed 
+				religion_group = buddhist_group
 			}
 		}
 		modifier = {
@@ -182,25 +180,6 @@
 		modifier = {
 			factor = 0
 			NOT = { religion_group = pagan_group }
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
-			}
-		}
-		modifier = {
-			factor = 0
-			OR = { 
-				is_offmap_tag_including_dead = offmap_china
-				location = { 
-					NOR = { 
-						region = world_europe 
-						region = world_steppe
-					} 
-				}
-			}
 		}
 		modifier = {
 			factor = 100
@@ -260,11 +239,10 @@
 		modifier = {
 			factor = 0
 			OR = { 
-				has_landed_title = k_papal_state 
-				has_landed_title = k_hellenic_pagan 
-				has_landed_title = d_fraticelli 
-				has_claim = k_papal_state 
-				has_claim = d_fraticelli 
+				has_landed_title = k_conferentia 
+				has_landed_title = d_cao_dai 
+				has_claim = k_conferentia 
+				has_claim = d_cao_dai 
 			}
 		}
 	}
@@ -280,10 +258,9 @@
 			OR = { 
 				is_offmap_tag_including_dead = offmap_china
 				location = { 
-					NOR = { 
-						region = world_middle_east_jerusalem 
-						region = world_middle_east_arabia
-						region = world_africa
+					NOR = {
+						region = custom_southeast_asia
+						region = custom_papua
 					} 
 				}
 			}
@@ -316,7 +293,7 @@
 				is_offmap_tag_including_dead = offmap_china
 				location = { 
 					NOT = { 
-						region = world_steppe
+						region = world_greater_mongolia
 					} 
 				}
 			}
@@ -371,7 +348,7 @@
 			factor = 0
 			NOT = { religion_group = muslim }
 			NOT = { religion_group = zoroastrian_group }
-			NOT = { religion = zun_pagan }
+			NOT = { religion_group = buddhist_group }
 			NOT = { religion_group = indian_group }
 		}
 	}
@@ -387,8 +364,7 @@
 			NOT = { religion_group = muslim }
 			NOT = { religion_group = indian_group }
 			NOT = { religion_group = zoroastrian_group }
-			NOT = { religion = zun_pagan }
-			NOT = { religion = zun_pagan_reformed }
+			NOT = { religion_group = buddhist_group }
 		}
 		modifier = {
 			factor = 100
@@ -410,10 +386,9 @@
 			OR = { 
 				is_offmap_tag_including_dead = offmap_china
 				location = { 
-					NOR = { 
-						region = world_middle_east_jerusalem 
-						region = world_middle_east_arabia
-						region = world_africa
+					NOR = {
+						region = custom_southeast_asia
+						region = custom_papua
 					} 
 				}
 			}
@@ -477,11 +452,10 @@
 		}
 		modifier = {
 			factor = 0
-			NOT = { has_landed_title = k_papal_state }
-			NOT = { has_landed_title = k_hellenic_pagan }
-			NOT = { has_landed_title = d_fraticelli }
-			NOT = { has_claim = k_papal_state }
-			NOT = { has_claim = d_fraticelli }
+			NOT = { has_landed_title = k_conferentia }
+			NOT = { has_landed_title = d_cao_dai }
+			NOT = { has_claim = k_conferentia }
+			NOT = { has_claim = d_cao_dai }
 		}
 	}
 
@@ -564,8 +538,7 @@
 				is_offmap_tag_including_dead = offmap_china
 				location = { 
 					NOR = { 
-						region = world_europe_west  
-						region = world_europe_south
+						region = custom_tibet  
 					} 
 				}
 			}
@@ -629,8 +602,6 @@
 			factor = 0
 			is_female = yes
 			graphical_culture = westafricangfx
-			NOT = { culture = manden }
-			NOT = { culture = ethiopian }
 			OR = {
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
@@ -672,10 +643,6 @@
 		modifier = {
 			factor = 0
 			is_female = yes
-			OR = {
-				culture = manden
-				culture = ethiopian
-			}
 			NOT = { graphical_culture = westafricangfx }
 			NOT = { graphical_culture = muslimgfx }
 			OR = {
@@ -692,11 +659,6 @@
 				higher_tier_than = count
 			}
 			graphical_culture = westernslavicgfx
-			OR = {
-				culture = pommeranian
-				culture = bohemian
-				culture = polish
-			}
 		}
 		modifier = { 
 			factor = 0
@@ -718,12 +680,6 @@
 			OR = {
 				graphical_culture = serb_southslavicgfx
 				graphical_culture = magyargfx
-			}
-			OR = {
-				culture = serbian
-				culture = bulgarian
-				culture = romanian
-				culture = hungarian
 			}
 		}
 	}
@@ -756,10 +712,6 @@
 		modifier = {
 			factor = 0
 			is_female = yes
-			OR = {
-				culture = manden
-				culture = ethiopian
-			}
 			NOT = { graphical_culture = westafricangfx }
 			NOT = { graphical_culture = muslimgfx }
 			OR = {
@@ -776,11 +728,6 @@
 				higher_tier_than = count
 			}
 			graphical_culture = westernslavicgfx
-			OR = {
-				culture = pommeranian
-				culture = bohemian
-				culture = polish
-			}
 		}
 		modifier = { 
 			factor = 0
@@ -790,7 +737,6 @@
 				higher_tier_than = duke
 			}
 			graphical_culture = croat_southslavicgfx
-			culture = croatian
 		}
 		modifier = { 
 			factor = 0
@@ -803,12 +749,6 @@
 				graphical_culture = serb_southslavicgfx
 				graphical_culture = magyargfx
 			}
-			OR = {
-				culture = serbian
-				culture = bulgarian
-				culture = romanian
-				culture = hungarian
-			}
 		}
 	}
 
@@ -820,8 +760,6 @@
 			factor = 0
 			is_female = yes
 			graphical_culture = westafricangfx
-			NOT = { culture = manden }
-			NOT = { culture = ethiopian }
 			OR = {
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
@@ -836,11 +774,6 @@
 				higher_tier_than = count
 			}
 			graphical_culture = westernslavicgfx
-			OR = {
-				culture = pommeranian
-				culture = bohemian
-				culture = polish
-			}
 		}
 		modifier = { 
 			factor = 0
@@ -850,7 +783,6 @@
 				higher_tier_than = duke
 			}
 			graphical_culture = croat_southslavicgfx
-			culture = croatian
 		}
 		modifier = { 
 			factor = 0
@@ -862,12 +794,6 @@
 			OR = {
 				graphical_culture = serb_southslavicgfx
 				graphical_culture = magyargfx
-			}
-			OR = {
-				culture = serbian
-				culture = bulgarian
-				culture = romanian
-				culture = hungarian
 			}
 		}
 	}
@@ -903,10 +829,6 @@
 		modifier = {
 			factor = 0
 			is_female = yes
-			OR = {
-				culture = manden
-				culture = ethiopian
-			}
 			NOT = { graphical_culture = westafricangfx }
 			NOT = { graphical_culture = muslimgfx }
 			OR = {
@@ -921,8 +843,6 @@
 			factor = 0
 			is_female = yes
 			graphical_culture = westafricangfx
-			NOT = { culture = manden }
-			NOT = { culture = ethiopian }
 			OR = {
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
@@ -938,10 +858,6 @@
 		modifier = {
 			factor = 0
 			is_female = yes
-			OR = {
-				culture = manden
-				culture = ethiopian
-			}
 			NOT = { graphical_culture = westafricangfx }
 			NOT = { graphical_culture = muslimgfx }
 			OR = {
@@ -956,8 +872,6 @@
 			factor = 0
 			is_female = yes
 			graphical_culture = westafricangfx
-			NOT = { culture = manden }
-			NOT = { culture = ethiopian }
 			OR = {
 				higher_real_tier_than = count
 				spouse = { higher_real_tier_than = count }
@@ -981,10 +895,6 @@
 		modifier = {
 			factor = 0
 			is_female = yes
-			OR = {
-				culture = manden
-				culture = ethiopian
-			}
 			NOT = { graphical_culture = westafricangfx }
 			NOT = { graphical_culture = muslimgfx }
 			OR = {
@@ -1012,10 +922,6 @@
 		modifier = {
 			factor = 0
 			is_female = yes
-			OR = {
-				culture = manden
-				culture = ethiopian
-			}
 			NOT = { graphical_culture = westafricangfx }
 			NOT = { graphical_culture = muslimgfx }
 			OR = {
@@ -1041,11 +947,6 @@
 				higher_tier_than = count
 			}
 			graphical_culture = westernslavicgfx
-			OR = {
-				culture = pommeranian
-				culture = bohemian
-				culture = polish
-			}
 		}
 		modifier = { 
 			factor = 0
@@ -1067,12 +968,6 @@
 			OR = {
 				graphical_culture = serb_southslavicgfx
 				graphical_culture = magyargfx
-			}
-			OR = {
-				culture = serbian
-				culture = bulgarian
-				culture = romanian
-				culture = hungarian
 			}
 		}
 	}
@@ -1099,11 +994,6 @@
 				higher_tier_than = count
 			}
 			graphical_culture = westernslavicgfx
-			OR = {
-				culture = pommeranian
-				culture = bohemian
-				culture = polish
-			}
 		}
 		modifier = { 
 			factor = 0
@@ -1126,12 +1016,6 @@
 				graphical_culture = serb_southslavicgfx
 				graphical_culture = magyargfx
 			}
-			OR = {
-				culture = serbian
-				culture = bulgarian
-				culture = romanian
-				culture = hungarian
-			}
 		}
 	}
 	
@@ -1142,10 +1026,6 @@
 		modifier = {
 			factor = 0
 			is_female = yes
-			OR = {
-				culture = manden
-				culture = ethiopian
-			}
 			NOT = { graphical_culture = westafricangfx }
 			NOT = { graphical_culture = muslimgfx }
 			OR = {
@@ -1627,11 +1507,6 @@
 				government = order_government
 				primary_title = {
 					OR = {
-						title = d_knights_hospitaler
-						title = d_knights_templar
-						title = d_teutonic_order
-						title = k_teutonic_state
-						title = d_livonian_order
 						title = e_china_west_governor
 					}
 				}
@@ -1670,11 +1545,10 @@
 					NOT = {
 						primary_title = {
 							OR = {
-								title = d_knights_hospitaler
-								title = d_knights_templar
-								title = d_teutonic_order
-								title = k_teutonic_state
-								title = d_livonian_order
+								title = d_knights_of_lavang
+								title = d_knights_of_bim
+								title = d_army_of_the_immaculate_heart
+								title = d_knightly_brothers_marist
 								title = e_china_west_governor
 							}
 						}
@@ -1782,14 +1656,7 @@
 		modifier = {
 			factor = 30
 			OR = {
-				culture = greek
-				culture = italian
-				culture = roman
-			}
-			OR = {
 				religion_group = christian
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
 			}
 		#	OR = {
 		#		graphical_culture = southerngfx
@@ -1799,7 +1666,7 @@
 		modifier = {
 			factor = 15
 			religion_group = christian
-			culture_group = iberian
+			culture_group = philippine
 			OR = {
 				graphical_culture = southerngfx
 				graphical_culture = byzantinegfx
@@ -1839,7 +1706,7 @@
 		modifier = {
 			factor = 5
 			religion_group = christian
-			culture_group = iberian
+			culture_group = philippine
 			OR = {
 				graphical_culture = southerngfx
 				graphical_culture = byzantinegfx
@@ -1856,19 +1723,7 @@
 		modifier = {
 			factor = 20
 			religion_group = christian
-			culture_group = iberian
-			OR = {
-				graphical_culture = southerngfx
-				graphical_culture = byzantinegfx
-			}
-		}
-		modifier = {
-			factor = 60
-			religion_group = christian
-			OR = {
-				culture = greek
-				culture = italian
-			}
+			culture_group = philippine
 			OR = {
 				graphical_culture = southerngfx
 				graphical_culture = byzantinegfx
@@ -1936,7 +1791,7 @@
 		modifier = { #If you are Emperor and died without being crowned, you don't wear a crown.
 			factor = 0
 			real_tier = EMPEROR
-			trait = uncrowned # Only on death of uncrowned Catholics/Fraticelli
+			trait = uncrowned # Only on death of uncrowned Catholics/Cao Dai
 		}
 		modifier = { #If you are a living Emperor and are not crowned, you don't wear a crown.
 			factor = 0
@@ -1949,7 +1804,7 @@
 			is_alive = yes
 			OR = { 
 				religion = catholic
-				religion = fraticelli
+				religion = cao_dai
 			} 
 			NOR = { 
 				trait = crowned_by_priest 
@@ -1968,7 +1823,7 @@
 			NOT = { real_tier = EMPEROR }
 			spouse = { 
 				real_tier = EMPEROR
-				trait = uncrowned # Only on death of uncrowned Catholics/Fraticelli
+				trait = uncrowned # Only on death of uncrowned Catholics/Cao Dai
 			} 
 		}
 		modifier = {
@@ -1984,7 +1839,7 @@
 				is_alive = yes 
 				OR = { 
 					religion = catholic
-					religion = fraticelli
+					religion = cao_dai
 				} 
 				NOR = { 
 					trait = crowned_by_priest 
@@ -2083,7 +1938,7 @@
 			factor = 0
 			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
 			real_tier = KING
-			trait = uncrowned # Only on death of uncrowned Catholics/Fraticelli
+			trait = uncrowned # Only on death of uncrowned Catholics/Cao Dai
 		}
 		modifier = { #If you are a living Emperor and are not crowned, you don't wear a crown.
 			factor = 0
@@ -2096,7 +1951,7 @@
 			is_alive = yes
 			OR = { 
 				religion = catholic
-				religion = fraticelli
+				religion = cao_dai
 			} 
 			NOR = { 
 				trait = crowned_by_priest 
@@ -2115,7 +1970,7 @@
 			NOT = { real_tier = KING }
 			spouse = { 
 				real_tier = KING
-				trait = uncrowned # Only on death of uncrowned Catholics/Fraticelli
+				trait = uncrowned # Only on death of uncrowned Catholics/Cao Dai
 			} 
 		}
 		modifier = {
@@ -2131,7 +1986,7 @@
 				is_alive = yes 
 				OR = { 
 					religion = catholic
-					religion = fraticelli
+					religion = cao_dai
 				} 
 				NOR = { 
 					trait = crowned_by_priest 
@@ -2220,7 +2075,7 @@
 			factor = 0
 			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
 			real_tier = KING
-			trait = uncrowned # Only on death of uncrowned Catholics/Fraticelli
+			trait = uncrowned # Only on death of uncrowned Catholics/Cao Dai
 		}
 		modifier = { #If you are a living Emperor and are not crowned, you don't wear a crown.
 			factor = 0
@@ -2233,7 +2088,7 @@
 			is_alive = yes
 			OR = { 
 				religion = catholic
-				religion = fraticelli
+				religion = cao_dai
 			} 
 			NOR = { 
 				trait = crowned_by_priest 
@@ -2252,7 +2107,7 @@
 			NOT = { real_tier = KING }
 			spouse = { 
 				real_tier = KING
-				trait = uncrowned # Only on death of uncrowned Catholics/Fraticelli
+				trait = uncrowned # Only on death of uncrowned Catholics/Cao Dai
 			} 
 		}
 		modifier = {
@@ -2268,7 +2123,7 @@
 				is_alive = yes 
 				OR = { 
 					religion = catholic
-					religion = fraticelli
+					religion = cao_dai
 				} 
 				NOR = { 
 					trait = crowned_by_priest 
@@ -2369,7 +2224,7 @@
 			factor = 0
 			has_dlc = "Holy Fury" #Ignore Coronation triggers if Holy Fury is disabled.
 			real_tier = KING
-			trait = uncrowned # Only on death of uncrowned Catholics/Fraticelli
+			trait = uncrowned # Only on death of uncrowned Catholics/Cao Dai
 		}
 		modifier = { #If you are a living Emperor and are not crowned, you don't wear a crown.
 			factor = 0
@@ -2382,7 +2237,7 @@
 			is_alive = yes
 			OR = { 
 				religion = catholic
-				religion = fraticelli
+				religion = cao_dai
 			} 
 			NOR = { 
 				trait = crowned_by_priest 
@@ -2401,7 +2256,7 @@
 			NOT = { real_tier = KING }
 			spouse = { 
 				real_tier = KING
-				trait = uncrowned # Only on death of uncrowned Catholics/Fraticelli
+				trait = uncrowned # Only on death of uncrowned Catholics/Cao Dai
 			} 
 		}
 		modifier = {
@@ -2417,7 +2272,7 @@
 				is_alive = yes 
 				OR = { 
 					religion = catholic
-					religion = fraticelli
+					religion = cao_dai
 				} 
 				NOR = { 
 					trait = crowned_by_priest 
@@ -2465,7 +2320,7 @@
 					higher_real_tier_than = DUKE 
 					OR = { 
 						religion = catholic
-						religion = fraticelli
+						religion = cao_dai
 					}
 					OR = { 
 						trait = crowned_by_priest
@@ -2487,7 +2342,7 @@
 					higher_real_tier_than = DUKE 
 					OR = { 
 						religion = catholic
-						religion = fraticelli
+						religion = cao_dai
 					}
 					OR = { 
 						trait = crowned_by_priest
@@ -2530,7 +2385,7 @@
 			is_ruler = yes
 			NOT = { trait = uncrowned }
 			NOT = { religion = catholic }
-			NOT = { religion = fraticelli }
+			NOT = { religion = cao_dai }
 			higher_real_tier_than = DUKE
 			OR = { 
 				is_nomadic = no 
@@ -2620,18 +2475,12 @@
 			factor = 2
 			is_female = yes
 			graphical_culture = westernslavicgfx
-			OR = {
-				culture = pommeranian
-				culture = bohemian
-				culture = polish
-			}
 			is_married = no
 		}
 		modifier = {
 			factor = 2
 			is_female = yes
 			graphical_culture = croat_southslavicgfx
-			culture = croatian
 			is_married = no
 		}
 		modifier = {
@@ -2640,12 +2489,6 @@
 			OR = {
 				graphical_culture = serb_southslavicgfx
 				graphical_culture = magyargfx
-			}
-			OR = {
-				culture = serbian
-				culture = bulgarian
-				culture = romanian
-				culture = hungarian
 			}
 			is_married = no
 		}
@@ -2835,30 +2678,18 @@
 				graphical_culture = serb_southslavicgfx
 				graphical_culture = magyargfx
 			}
-			OR = {
-				culture = serbian
-				culture = bulgarian
-				culture = romanian
-				culture = hungarian
-			}
 			is_married = yes
 		}
 		modifier = {
 			factor = 2
 			is_female = yes
 			graphical_culture = westernslavicgfx
-			OR = {
-				culture = pommeranian
-				culture = bohemian
-				culture = polish
-			}
 			is_married = no
 		}
 		modifier = {
 			factor = 2
 			is_female = yes
 			graphical_culture = croat_southslavicgfx
-			culture = croatian
 			is_married = no
 		}
 		modifier = {
@@ -2867,12 +2698,6 @@
 			OR = {
 				graphical_culture = serb_southslavicgfx
 				graphical_culture = magyargfx
-			}
-			OR = {
-				culture = serbian
-				culture = bulgarian
-				culture = romanian
-				culture = hungarian
 			}
 			is_married = no
 		}
@@ -2960,11 +2785,10 @@
 				NOT = { has_portrait_property = { layer = 3 index = 10 } } 
 				primary_title = { #Holy Orders in peace time should wear martial clothes, but not the helmet.
 					OR = {
-						title = d_knights_hospitaler
-						title = d_knights_templar
-						title = d_teutonic_order
-						title = k_teutonic_state
-						title = d_livonian_order
+						title = d_knights_of_lavang
+						title = d_knights_of_bim
+						title = d_army_of_the_immaculate_heart
+						title = d_knightly_brothers_marist
 						title = e_china_west_governor
 					}
 				}
@@ -3007,11 +2831,10 @@
 				government = order_government 
 				primary_title = { #Holy Orders in peace time should wear martial clothes, but not the helmet.
 					OR = {
-						title = d_knights_hospitaler
-						title = d_knights_templar
-						title = d_teutonic_order
-						title = k_teutonic_state
-						title = d_livonian_order
+						title = d_knights_of_lavang
+						title = d_knights_of_bim
+						title = d_army_of_the_immaculate_heart
+						title = d_knightly_brothers_marist
 					}
 				}
 			}
@@ -3053,18 +2876,12 @@
 			factor = 4
 			is_female = yes
 			graphical_culture = westernslavicgfx
-			OR = {
-				culture = pommeranian
-				culture = bohemian
-				culture = polish
-			}
 			is_married = no
 		}
 		modifier = {
 			factor = 4
 			is_female = yes
 			graphical_culture = croat_southslavicgfx
-			culture = croatian
 			is_married = no
 		}
 		modifier = {
@@ -3073,12 +2890,6 @@
 			OR = {
 				graphical_culture = serb_southslavicgfx
 				graphical_culture = magyargfx
-			}
-			OR = {
-				culture = serbian
-				culture = bulgarian
-				culture = romanian
-				culture = hungarian
 			}
 			is_married = no
 		}
@@ -3706,15 +3517,6 @@
 				is_nomadic = yes
 			}
 		}
-		modifier = {
-			factor = 0
-			NOR = {
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
-				culture = manden
-				culture_group = east_african
-			}
-		}
 	}
 	
 	7 = { # mask 7 bone - black stripes
@@ -3742,15 +3544,6 @@
 			NOR = {
 				is_tribal = yes
 				is_nomadic = yes
-			}
-		}
-		modifier = {
-			factor = 0
-			NOR = {
-				religion = west_african_pagan
-				religion = west_african_pagan_reformed
-				culture = manden
-				culture_group = east_african
 			}
 		}
 	}
@@ -3830,13 +3623,6 @@
 				has_character_modifier = golden_mask
 			}
 		}
-		modifier = {
-			factor = 0
-			OR = {
-				culture = manden
-				culture = maghreb_arabic
-			}
-		}
 	}
 	
 	11 = { # mask 11 - decorated gold
@@ -3882,7 +3668,7 @@
 		}
 		modifier = {
 			factor = 5
-			has_landed_title = k_papal_state
+			has_landed_title = k_conferentia
 		}
 		modifier = {
 			factor = 1000
@@ -4263,7 +4049,6 @@
 			factor = 0
 			OR = {
 				has_minor_title = title_cardinal
-				has_minor_title = title_fraticelli_cardinal
 			}
 		}
 		modifier = {
@@ -4437,7 +4222,6 @@
 			factor = 0
 			OR = {
 				has_minor_title = title_cardinal
-				has_minor_title = title_fraticelli_cardinal
 			}
 		}
 		modifier = {
@@ -4776,7 +4560,7 @@
 			factor = 0
 			NOR = {
 				has_minor_title = title_cardinal
-				has_minor_title = title_fraticelli_cardinal
+				has_minor_title = title_cao_dai_cardinal
 			}
 		}
 	}
@@ -4794,7 +4578,7 @@
 			factor = 0
 			NOR = {
 				has_minor_title = title_cardinal
-				has_minor_title = title_fraticelli_cardinal
+				has_minor_title = title_cao_dai_cardinal
 			}
 		}
 	}
