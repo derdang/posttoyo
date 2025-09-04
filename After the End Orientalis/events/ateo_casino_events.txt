@@ -2,7 +2,7 @@ namespace = casino
 character_event = {
 	id = casino.1
 	desc = "EVTDESC_casino1"
-	picture = GFX_evt_open_book_hf
+	picture = GFX_evt_gambling_den
 	border = GFX_event_normal_frame_religion
 	is_triggered_only = yes
 
@@ -12,37 +12,62 @@ character_event = {
 		}
 	}
 	option = {
-		trigger = {
-			wealth = 40
-		}
-		name = EVTOPTA_casino1 
-		random_list = {
-			4861 ={
-					wealth = 40
-				}
-			5139 ={
-					wealth = -40
-				}	
-			}
+		name = EVTOPTA_casino1
+		
+		wealth = -40
   	
 		ai_chance = {
-			factor = 100
+			factor = 50
 		}
 	}
 	option = {
-		trigger = {
-			wealth = 40
-		}
-		name = EVTOPTB_casino1 
-		random_list = {
-			741 ={
-					wealth = 333
+		name = EVTOPTB_casino1
+		
+		wealth = -40
+		
+		custom_tooltip = {
+		text = TXT_gamble1
+			hidden_tooltip = {
+				random_list = {
+					50 ={
+						wealth = 40
+					}
+					50 ={
+						# Nothing Happens you lose 40
+					}	
 				}
-			9259 ={
-					wealth = -40
-				}	
 			}
+		}
   	
+		ai_chance = {
+			factor = 45
+		}
+	}
+	option = {
+		name = EVTOPTC_casino1
+		
+		wealth = -400
+		
+		custom_tooltip = {
+		text = TXT_gamble2
+			hidden_tooltip = {
+				random_list = {
+					10 ={
+						wealth = 3600
+					}
+					15 = {
+						wealth = -2000
+					}
+					25 ={
+						wealth = -3200 # Losing the Amount of Raised Bet
+					}
+					50 ={
+						wealth = -3600
+					}	
+				}
+			}
+		}
+		
 		ai_chance = {
 			factor = 4
 		}
@@ -50,17 +75,33 @@ character_event = {
 	
 	option = {
 		trigger = {
-			wealth = 40
-		}
-		name = EVTOPTC_casino1 
-		random_list = {
-			28={
-					wealth = 1000
-				}
-			972 ={
-					wealth = -40
-				}	
+			AND = {
+				trait = greedy
+				trait = ambitious
 			}
+		}
+		
+		name = EVTOPTD_casino1 
+		
+		custom_tooltip = {
+		text = TXT_gamble3
+			hidden_tooltip = {
+				random_list = {
+					1 ={
+						scaled_wealth = 5
+					}
+					2 ={
+						scaled_wealth = 3
+					}
+					7 ={
+						scaled_wealth = 2
+					}
+					90 ={
+						scaled_wealth = -1 #All in Baby!
+					}	
+				}
+			}
+		}
 		ai_chance = {
 			factor = 1
 		}

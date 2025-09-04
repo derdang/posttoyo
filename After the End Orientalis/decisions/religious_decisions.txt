@@ -1126,7 +1126,7 @@ decisions = {
 			}
 		}
 		allow = {
-			wealth = 9999999999 #No_poor
+			wealth = 9000 #You need to be loaded cuz you WILL LOSE ALOT OF MONEY
 			age = 20
 			war = no
 			prisoner = no
@@ -1134,8 +1134,7 @@ decisions = {
 		}
 		effect = {
 			hidden_tooltip = {
-				#narrative_event = { id = casino.1 }
-				wealth = -40 # Soft-disable it
+				narrative_event = { id = casino.1 }
 			}
 			if = {
 				limit = {
