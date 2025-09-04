@@ -22,6 +22,31 @@ d_aiguo = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+d_shengming = {
+	color = { 127 38 82 }
+	
+	capital = 1923 #Beijing
+	
+	title = "CHAIRMAN"
+	title_female = "CHAIRWOMAN"
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	location_ruler_title = yes
+	
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = shengming
+	
+	religion = shengming
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+}
 d_salafi = {
 	color={ 217 155 177 }
 	color2={ 220 220 0 }
