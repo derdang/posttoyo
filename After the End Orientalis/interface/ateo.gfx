@@ -214,6 +214,13 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_tech_scavenger"
+		texturefile = "gfx/traits/techscav.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 	
 ############################
@@ -398,6 +405,66 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_charkha_small"
 		texturefile = "gfx/interface/artifacts/inventory/charkha_small.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_ate_engine"
+		texturefile = "gfx/interface/artifacts/inventory/ate_engine.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_ate_engine_small"
+		texturefile = "gfx/interface/artifacts/inventory/ate_engine_small.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_ate_firearm"
+		texturefile = "gfx/interface/artifacts/inventory/ate_firearm.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_ate_firearm_small"
+		texturefile = "gfx/interface/artifacts/inventory/ate_firearm_small.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_famous_ancient_gun"
+		texturefile = "gfx/interface/artifacts/inventory/ate_firearm_old.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_famous_ancient_gun_small"
+		texturefile = "gfx/interface/artifacts/inventory/ate_firearm_old_small.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_old_world_shades"
+		texturefile = "gfx/interface/artifacts/inventory/old_world_shades.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_old_world_shades_small"
+		texturefile = "gfx/interface/artifacts/inventory/old_world_shades_small.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_old_world_money"
+		texturefile = "gfx/interface/artifacts/inventory/old_world_money.dds"
+		noOfFrames = 1
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_old_world_money_small"
+		texturefile = "gfx/interface/artifacts/inventory/old_world_money_small.dds"
 		noOfFrames = 1
 		norefcount = yes
 	}
@@ -1131,6 +1198,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ancestor_worship"
 		texturefile = "gfx\\interface\\shrine.dds"
+	}
+	spriteType = {
+		name = "GFX_rustcult_salvage"
+		texturefile = "gfx/interface/salvage.dds"
 	}
 	spriteType = {
 		name = "GFX_assume_caliphate"

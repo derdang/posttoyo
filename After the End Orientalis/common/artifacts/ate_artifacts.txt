@@ -1,0 +1,174 @@
+### Salvage Artifacts ###
+
+ate_firearm = {
+	monthly_character_prestige = 1
+	martial = 3
+	combat_rating = 30
+	command_modifier = {
+		morale_offence = 0.1
+	}
+	quality = 4
+	active = {
+		is_adult = yes
+	}
+	flags = { oldworld salvage combat_weapon gun }
+	stacking = no
+	picture = "GFX_ate_firearm"
+	slot = weapon
+}
+
+ate_calculator = {
+	monthly_character_prestige = 0.5
+	stewardship = 2
+	learning = 1
+	quality = 3
+	active = {
+		is_adult = yes
+	}
+	flags = { oldworld salvage }
+	stacking = no
+	picture = "GFX_relicbox_iron"
+}
+
+ate_watch = {
+	monthly_character_prestige = 0.5
+	intrigue = 2
+	learning = 1
+	quality = 3
+	active = {
+		is_adult = yes
+	}
+	flags = { oldworld salvage }
+	stacking = no
+	picture = "GFX_relic_box"
+}
+
+ate_typewriter = {
+	monthly_character_prestige = 0.5
+	diplomacy = 2
+	learning = 1
+	quality = 3
+	active = {
+		is_adult = yes
+	}
+	flags = { oldworld salvage }
+	stacking = no
+	picture = "GFX_relicbox_iron"
+}
+
+ate_telescope = {
+	monthly_character_prestige = 0.5
+	learning = 2
+	martial = 1
+	quality = 3
+	active = {
+		is_adult = yes
+	}
+	flags = { oldworld salvage }
+	stacking = no
+	picture = "GFX_relic_box"
+}
+
+ate_textbooks = {
+	monthly_character_prestige = 0.5
+	learning = 3
+	quality = 3
+	active = {
+		is_adult = yes
+	}
+	flags = { oldworld salvage book }
+	stacking = no
+	picture = "GFX_book"
+}
+
+ate_compass = {
+	monthly_character_prestige = 0.1
+	intrigue = 1
+	stewardship = 2
+	active = {
+		is_adult = yes
+	}
+	quality = 3
+	flags = { oldworld salvage }
+	stacking = no
+	picture = "GFX_compass"
+}
+
+famous_ancient_gun = { #rusty old firearm
+	monthly_character_prestige = 0.5
+	quality = 1
+	flags = { weapon }
+	picture = "GFX_ate_firearm_old"
+	slot = ceremonial_weapon
+}
+
+### Old World Artifacts ###
+
+old_world_engine = {
+	monthly_character_piety = 0.2
+	monthly_character_prestige = 0.2
+	learning = 1
+	active = { 
+		religion = shengming
+	}
+	allowed_gift = {
+		religion = shengming
+	}
+	quality = 2
+	flags = { oldworld religious shengming metal statue }
+	stacking = no
+	picture = "GFX_ate_engine"
+}
+
+old_world_glass = {
+	monthly_character_prestige = 0.1
+	active = { }
+	quality = 1
+	flags = { oldworld glass }
+	stacking = no
+	picture = "GFX_cup_fancy"
+}
+
+old_world_jewelry = {
+	monthly_character_prestige = 0.2
+	active = { }
+	quality = 1
+	flags = { oldworld jewelry }
+	stacking = no
+	picture = "GFX_bracelet_gold"
+}
+
+old_world_musicbox = {
+	monthly_character_prestige = 0.1
+	diplomacy = 1
+	active = { }
+	quality = 1
+	flags = { oldworld music }
+	stacking = no
+	picture = "GFX_relicbox_iron"
+}
+
+old_world_shades = {
+	monthly_character_prestige = 0.1
+	diplomacy = 1
+	active = { }
+	quality = 1
+	flags = { oldworld glass jewelry }
+	stacking = no
+	picture = "GFX_old_world_shades"
+}
+
+old_world_money = {
+	monthly_character_piety = 0.1
+	stewardship = 1
+	active = { 
+		religion = shengming
+	}
+	allowed_gift = { 
+		religion = shengming
+	}
+	quality = 1
+	flags = { oldworld religious shengming statue }
+	stacking = no
+	picture = "GFX_old_world_money"
+}
