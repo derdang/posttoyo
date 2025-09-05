@@ -101,7 +101,7 @@ d_cao_dai = {
 k_tenno = {
 	color = { 190 030 030 }
 	
-	capital = 53
+	capital = 53 #Tokyo
 	
 	title = "HEAD_SHINTO"
 	title_female = "HEAD_SHINTO_FEMALE"
@@ -749,7 +749,7 @@ k_kohhran_thianghlim = {
 	controls_religion = kohhran_thianghlim
 	
 	allow = {
-		has_global_flag = kohhran_thianglim_formed
+		religion = kohhran_thianghlim
 		num_of_holy_sites = 3
 		piety = 1000
 	}
@@ -779,7 +779,7 @@ k_tenrikyo = {
 	controls_religion = tenrikyo
 	
 	allow = {
-		has_global_flag = tenrikyo_formed
+		religion = tenrikyo
 		num_of_holy_sites = 3
 		piety = 1000
 	}
@@ -809,7 +809,7 @@ k_taoist = {
 	controls_religion = taoist
 	
 	allow = {
-		has_global_flag = taoist_formed
+		religion = taoist
 		num_of_holy_sites = 3
 		piety = 1000
 	}
@@ -839,7 +839,7 @@ k_unificationist = {
 	controls_religion = unificationist
 	
 	allow = {
-		has_global_flag = unificationist_formed
+		religion = unificationist
 		num_of_holy_sites = 3
 		piety = 1000
 	}
@@ -870,7 +870,7 @@ d_quinto = {
 	controls_religion = quinto
 	
 	allow = {
-		has_global_flag = quinto_formed
+		religion = quinto
 		num_of_holy_sites = 3
 		piety = 1000
 	}
@@ -901,7 +901,7 @@ k_restorationist = {
 	controls_religion = restorationist
 	
 	allow = {
-		has_global_flag = restorationist_formed
+		religion = restorationist
 		num_of_holy_sites = 3
 		piety = 1000
 	}
@@ -932,7 +932,7 @@ d_rizalista = {
 	controls_religion = rizalista
 	
 	allow = {
-		has_global_flag = rizalista_formed
+		religion = rizalista
 		num_of_holy_sites = 3
 		piety = 1000
 	}
