@@ -21,15 +21,20 @@
 	learning=10
 	religion=mahayana
 	culture=kouzoku
-	add_trait="brilliant_strategist"
-	add_trait="proud"
-	add_trait="brave"
-	add_trait="just"
+	trait="brilliant_strategist"
+	trait="proud"
+	trait="brave"
+	trait="just"
+	trait=legendary
+	occluded = yes
 	1.1.1={
-		birth="1.1.1"
+		birth=yes
 	}
 	8.2.11={
 		name="Jimmu"
+		create_bloodline = {
+			type = japanese_imperial_bloodline	
+		}
 	}
 	23.3.11={
 		death=yes
@@ -43,10 +48,12 @@
 	father=88000
 	religion=mahayana
 	culture=kouzoku
-	add_trait="brilliant_strategist"
-	add_trait="cruel"
-	add_trait="brave"
-	add_trait="just"
+	trait="brilliant_strategist"
+	trait="cruel"
+	trait="brave"
+	trait="just"
+	trait=legendary
+	occluded = yes
 	19.1.1={
 		birth=yes
 	}
@@ -65,7 +72,9 @@
 	father=88001
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
+	trait="indulgent_wastrel"
+	trait=legendary
+	occluded = yes
 	35.1.1={
 		birth=yes
 	}
@@ -84,7 +93,9 @@
 	father=88002
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
+	trait="indulgent_wastrel"
+	trait=legendary
+	occluded = yes
 	53.1.1={
 		birth=yes
 	}
@@ -103,7 +114,9 @@
 	father=88003
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
+	trait="indulgent_wastrel"
+	trait=legendary
+	occluded = yes
 	83.1.1={
 		birth=yes
 	}
@@ -122,7 +135,9 @@
 	father=88004
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
+	trait="indulgent_wastrel"
+	trait=legendary
+	occluded = yes
 	100.1.1={
 		birth=yes
 	}
@@ -141,7 +156,9 @@
 	father=88005
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
+	trait="indulgent_wastrel"
+	trait=legendary
+	occluded = yes
 	132.1.1={
 		birth=yes
 	}
@@ -160,7 +177,9 @@
 	father=88006
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
+	trait="indulgent_wastrel"
+	trait=legendary
+	occluded = yes
 	150.1.1={
 		birth=yes
 	}
@@ -182,7 +201,9 @@
 	father=88007
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
+	trait="indulgent_wastrel"
+	trait=legendary
+	occluded = yes
 	180.1.1={
 		birth=yes
 	}
@@ -209,10 +230,12 @@
 	learning=11
 	religion=mahayana
 	culture=kouzoku
-	add_trait="grey_eminence"
-	add_trait="diligent"
-	add_trait="ambitious"
-	add_trait="zealous"
+	trait="grey_eminence"
+	trait="diligent"
+	trait="ambitious"
+	trait="zealous"
+	trait=legendary
+	occluded = yes
 	202.1.1={
 		birth=yes
 	}
@@ -236,10 +259,12 @@
 	learning=9
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
-	add_trait="charitable"
-	add_trait="kind"
-	add_trait="zealous"
+	trait="indulgent_wastrel"
+	trait="charitable"
+	trait="kind"
+	trait="zealous"
+	trait=legendary
+	occluded = yes
 	230.1.1={
 		birth=yes
 	}
@@ -263,9 +288,11 @@
 	learning=5
 	religion=mahayana
 	culture=kouzoku
-	add_trait="brilliant_strategist"
-	add_trait="ambitious"
-	add_trait="proud"
+	trait="brilliant_strategist"
+	trait="ambitious"
+	trait="proud"
+	trait=legendary
+	occluded = yes
 	270.1.1={
 		birth=yes
 	}
@@ -289,13 +316,15 @@
 	intrigue=14
 	stewardship=6
 	learning=8
-	add_trait="brilliant_strategist"
-	add_trait="fair"
-	add_trait="twin"
-	add_trait="brave"
-	add_trait="cruel"
-	add_trait="honest"
-	add_trait="poet"
+	trait="brilliant_strategist"
+	trait="fair"
+	trait="twin"
+	trait="brave"
+	trait="cruel"
+	trait="honest"
+	trait="poet"
+	trait=legendary
+	occluded = yes
 	290.1.1={
 		birth=yes
 	}
@@ -319,10 +348,12 @@
 	intrigue=7
 	stewardship=13
 	learning=9
-	add_trait="grey_eminence"
-	add_trait="gregarious"
-	add_trait="diligent"
-	add_trait="brave"
+	trait="grey_eminence"
+	trait="gregarious"
+	trait="diligent"
+	trait="brave"
+	trait=legendary
+	occluded = yes
 	295.1.1={
 		birth=yes
 	}
@@ -346,10 +377,12 @@
 	intrigue=2
 	stewardship=6
 	learning=6
-	add_trait="naive_appeaser"
-	add_trait="fair"
-	add_trait="brave"
-	add_trait="cynical"
+	trait="naive_appeaser"
+	trait="fair"
+	trait="brave"
+	trait="cynical"
+	trait=legendary
+	occluded = yes
 	310.1.1={
 		birth=yes
 	}
@@ -373,11 +406,13 @@
 	intrigue=11
 	stewardship=8
 	learning=7
-	add_trait="brilliant_strategist"
-	add_trait="genius"
-	add_trait="brave"
-	add_trait="ambitious"
-	add_trait="zealous"
+	trait="brilliant_strategist"
+	trait="genius"
+	trait="brave"
+	trait="ambitious"
+	trait="zealous"
+	trait=legendary
+	occluded = yes
 	344.1.1={
 		birth=yes
 	}
@@ -401,11 +436,13 @@
 	intrigue=6
 	stewardship=13
 	learning=11
-	add_trait="midas_touched"
-	add_trait="genius"
-	add_trait="temperate"
-	add_trait="charitable"
-	add_trait="kind"
+	trait="midas_touched"
+	trait="genius"
+	trait="temperate"
+	trait="charitable"
+	trait="kind"
+	trait=legendary
+	occluded = yes
 	362.1.1={
 		birth=yes
 	}
@@ -424,9 +461,11 @@
 	father=88016
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="lustful"
-	add_trait="proud"
+	trait="naive_appeaser"
+	trait="lustful"
+	trait="proud"
+	trait=legendary
+	occluded = yes
 	389.1.1={
 		birth=yes
 	}
@@ -445,16 +484,13 @@
 	father=88017
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	430.1.1={
 		birth=yes
 	}
-	463.10.1={
-		death={
-		death_reason=death_murder
-		killer=88022 # Emperor Yuryaku
-		}
-	}
+	463.10.1={death={death_reason=death_murder killer=88022}} # Emperor Yuryaku
 }
 
 88019 = {
@@ -464,9 +500,11 @@
 	father=88016
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="honest"
-	add_trait="just"
+	trait="naive_appeaser"
+	trait="honest"
+	trait="just"
+	trait=legendary
+	occluded = yes
 	395.1.1={
 		birth=yes
 	}
@@ -485,9 +523,11 @@
 	father=88016
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="just"
-	add_trait="diligent"
+	trait="naive_appeaser"
+	trait="just"
+	trait="diligent"
+	trait=legendary
+	occluded = yes
 	400.1.1={
 		birth=yes
 	}
@@ -509,21 +549,18 @@
 	father=88020
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="greedy"
-	add_trait="honest"
+	trait="naive_appeaser"
+	trait="greedy"
+	trait="honest"
+	trait=legendary
+	occluded = yes
 	435.1.1={
 		birth=yes
 	}
 	459.1.23={
 		name="Anko"
 	}
-	463.8.19={
-		death={
-		death_reason=death_murder
-		killer=41202 # Prince Mayowa
-		}
-	}
+	463.8.19={death={death_reason=death_murder}} #killer was the Prince Mayowa
 }
 
 88022 = {
@@ -538,12 +575,14 @@
 	intrigue=14
 	stewardship=6
 	learning=13
-	add_trait="intricate_webweaver"
-	add_trait="strong"
-	add_trait="wroth"
-	add_trait="impaler"
-	add_trait="greedy"
-	add_trait="proud"
+	trait="intricate_webweaver"
+	trait="strong"
+	trait="wroth"
+	trait="impaler"
+	trait="greedy"
+	trait="proud"
+	trait=legendary
+	occluded = yes
 	440.1.1={
 		birth=yes
 	}
@@ -562,10 +601,12 @@
 	father=88022
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="weak"
-	add_trait="kind"
-	add_trait="humble"
+	trait="naive_appeaser"
+	trait="weak"
+	trait="kind"
+	trait="humble"
+	trait=legendary
+	occluded = yes
 	470.1.1={
 		birth=yes
 	}
@@ -584,11 +625,13 @@
 	father=88018
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="brave"
-	add_trait="just"
-	add_trait="proud"
-	add_trait="poet"
+	trait="naive_appeaser"
+	trait="brave"
+	trait="just"
+	trait="proud"
+	trait="poet"
+	trait=legendary
+	occluded = yes
 	461.1.1={
 		birth=yes
 	}
@@ -607,10 +650,12 @@
 	father=88018
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="patient"
-	add_trait="proud"
-	add_trait="diligent"
+	trait="naive_appeaser"
+	trait="patient"
+	trait="proud"
+	trait="diligent"
+	trait=legendary
+	occluded = yes
 	460.1.1={
 		birth=yes
 	}
@@ -629,11 +674,13 @@
 	father=88025
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="arbitrary"
-	add_trait="wroth"
-	add_trait="proud"
-	add_trait="cruel"
+	trait="naive_appeaser"
+	trait="arbitrary"
+	trait="wroth"
+	trait="proud"
+	trait="cruel"
+	trait=legendary
+	occluded = yes
 	498.1.1={
 		birth=yes
 	}
@@ -655,7 +702,9 @@
 	father=88015
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	370.1.1={
 		birth=yes
 	}
@@ -671,7 +720,9 @@
 	father=88027
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	386.1.1={
 		birth=yes
 	}
@@ -687,7 +738,9 @@
 	father=88028
 	religion=mahayana
 	culture=kouzoku
-	add_trait="elusive_shadow"
+	trait="elusive_shadow"
+	trait=legendary
+	occluded = yes
 	410.1.1={
 		birth=yes
 	}
@@ -703,7 +756,9 @@
 	father=88029
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	430.1.1={
 		birth=yes
 	}
@@ -723,15 +778,17 @@
 	stewardship=7
 	religion=mahayana
 	culture=kouzoku
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
+	trait=legendary
+	occluded = yes
 	450.1.1={
-		birth="450.1.1"
+		birth=yes
 	}
 	517.3.3={
 		name="Keitai"
 	}
 	531.3.10={
-		death="531.3.10"
+		death=yes
 	}
 }
 
@@ -741,16 +798,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88031
 	466.1.1={
-		birth="466.1.1"
+		birth=yes
 	}
 	531.3.10={
 		name="Ankan"
 	}
 	535.12.17={
-		death="535.12.17"
+		death=yes
 	}
 }
 
@@ -760,16 +819,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88031
 	467.1.1={
-		birth="467.1.1"
+		birth=yes
 	}
 	535.12.17={
 		name="Senka"
 	}
 	539.3.15={
-		death="539.3.15"
+		death=yes
 	}
 }
 
@@ -783,16 +844,18 @@
 	stewardship=6
 	religion=mahayana
 	culture=kouzoku
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
+	trait=legendary
+	occluded = yes
 	father=88031
 	509.1.1={
-		birth="509.1.1"
+		birth=yes
 	}
 	539.3.15={
 		name="Kinmei"
 	}
 	571.5.24={
-		death="571.5.24"
+		death=yes
 	}
 }
 
@@ -802,16 +865,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88034
 	538.1.1={
-		birth="538.1.1"
+		birth=yes
 	}
 	571.4.30={
 		name="Bidatsu"
 	}
 	585.9.14={
-		death="585.9.14"
+		death=yes
 	}
 }
 
@@ -821,7 +886,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88034
 	539.1.1={
 		birth=yes
@@ -830,7 +897,7 @@
 		name="Yomei"
 	}
 	587.4.9={
-		death="587.4.9"
+		death=yes
 	}
 }
 
@@ -840,16 +907,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88034
 	553.1.1={
-		birth="553.1.1"
+		birth=yes
 	}
 	587.4.9={
 		name="Sushun"
 	}
 	592.12.12={
-		death="592.12.12"
+		death=yes
 	}
 }
 
@@ -864,16 +933,18 @@
 	stewardship=6
 	religion=mahayana
 	culture=kouzoku
-	add_trait="underhanded_rogue"
+	trait="underhanded_rogue"
+	trait=legendary
+	occluded = yes
 	father=88034
 	554.1.1={
-		birth="554.1.1"
+		birth=yes
 	}
 	592.12.12={
 		name="Suiko"
 	}
 	628.4.15={
-		death="628.4.15"
+		death=yes
 	}
 }
 
@@ -883,13 +954,15 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88035
 	565.1.1={
-		birth="565.1.1"
+		birth=yes
 	}
 	606.1.1={
-		death="606.1.1"
+		death=yes
 	}
 }
 
@@ -899,17 +972,19 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88039
 	593.1.1={
-		birth="593.1.1"
+		birth=yes
 	}
 	628.4.15={
 		name="Jomei"
 		add_spouse = 88042
 	}
 	641.11.17={
-		death="641.11.17"
+		death=yes
 	}
 }
 
@@ -920,12 +995,14 @@
 	father=88039
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	580.1.1={
-		birth="580.1.1"
+		birth=yes
 	}
 	623.1.1={
-		death="623.1.1"
+		death=yes
 	}
 }
 
@@ -940,10 +1017,12 @@
 	stewardship=6
 	religion=mahayana
 	culture=kouzoku
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
+	trait=legendary
+	occluded = yes
 	father=88041
 	594.1.1={
-		birth="594.1.1"
+		birth=yes
 	}
 	641.11.17={
 		name="Kogyoku"
@@ -952,7 +1031,7 @@
 		name="Saimei"
 	}
 	661.8.24={
-		death="661.8.24"
+		death=yes
 	}
 }
 
@@ -962,16 +1041,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88041
 	596.1.1={
-		birth="596.1.1"
+		birth=yes
 	}
 	645.7.12={
 		name="Kotoku"
 	}
 	654.11.24={
-		death="654.11.24"
+		death=yes
 	}
 }
 ## ( #mother=88042 (Empress Kogyoku/Saimei) prevents weird lineage breaks)
@@ -985,17 +1066,19 @@
 	stewardship=7
 	religion=mahayana
 	culture=kouzoku
-	add_trait="intricate_webweaver"
+	trait="intricate_webweaver"
+	trait=legendary
+	occluded = yes
 	father=88040
 	#mother=88042 (Empress Kogyoku/Saimei)
 	626.1.1={
-		birth="626.1.1"
+		birth=yes
 	}
 	661.8.24={
 		name="Tenchi"
 	}
 	672.1.7={
-		death="672.1.7"
+		death=yes
 	}
 }
 
@@ -1005,16 +1088,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88044
 	648.1.1={
-		birth="648.1.1"
+		birth=yes
 	}
 	672.1.9={
 		name="Kobun"
 	}
 	672.8.21={
-		death="672.8.21"
+		death=yes
 	}
 }
 
@@ -1028,17 +1113,19 @@
 	stewardship=9
 	religion=mahayana
 	culture=kouzoku
-	add_trait="midas_touched"
+	trait="midas_touched"
+	trait=legendary
+	occluded = yes
 	father=88040
 	#mother=88042 (Empress Kogyoku/Saimei)
 	631.1.1={
-		birth="631.1.1"
+		birth=yes
 	}
 	672.8.21={
 		name = "Tenmu"
 	}
 	686.10.1={
-		death="686.10.1"
+		death=yes
 	}
 }
 
@@ -1053,16 +1140,18 @@
 	stewardship=8
 	religion=mahayana
 	culture=kouzoku
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
+	trait=legendary
+	occluded = yes
 	father=88044
 	645.1.1={
-		birth="645.1.1"
+		birth=yes
 	}
 	686.10.1={
 		name = "Jito"
 	}
 	703.1.13={
-		death="703.1.13"
+		death=yes
 	}
 }
 
@@ -1072,13 +1161,15 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88046
 	662.1.1={
-		birth="662.1.1"
+		birth=yes
 	}
 	689.5.7={
-		death="689.5.7"
+		death=yes
 	}
 }
 
@@ -1088,16 +1179,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88048
 	683.1.1={
-		birth="683.1.1"
+		birth=yes
 	}
 	697.8.22={
 		name = "Monmu"
 	}
 	707.7.18={
-		death="707.7.18"
+		death=yes
 	}
 }
 
@@ -1108,16 +1201,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88044
 	661.1.1={
-		birth="661.1.1"
+		birth=yes
 	}
 	707.7.18={
 		name = "Genmei"
 	}
 	721.12.29={
-		death="721.12.29"
+		death=yes
 	}
 }
 
@@ -1128,17 +1223,19 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88048
 	mother=88050
 	680.1.1={
-		birth="680.1.1"
+		birth=yes
 	}
 	715.10.3={
 		name = "Gensho"
 	}
 	748.5.22={
-		death="748.5.22"
+		death=yes
 	}
 }
 
@@ -1148,16 +1245,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="thrifty_clerk"
+	trait="thrifty_clerk"
+	trait=legendary
+	occluded = yes
 	father=88049
 	701.1.1={
-		birth="701.1.1"
+		birth=yes
 	}
 	721.12.29={
 		name = "Shomu"
 	}
 	756.6.4={
-		death="756.6.4"
+		death=yes
 	}
 }
 
@@ -1168,10 +1267,12 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88052
 	718.1.1={
-		birth="718.1.1"
+		birth=yes
 	}
 	749.8.19={
 		name = "Koken"
@@ -1180,7 +1281,7 @@
 		name = "Shotoku"
 	}
 	770.8.28={
-		death="770.8.28"
+		death=yes
 	}
 }
 
@@ -1189,13 +1290,15 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88046
 	676.1.1={
-		birth="676.1.1"
+		birth=yes
 	}
 	735.12.6={
-		death="735.12.6"
+		death=yes
 	}
 }
 
@@ -1205,16 +1308,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88054
 	733.1.1={
-		birth="733.1.1"
+		birth=yes
 	}
 	758.9.7={
 		name = "Junnin"
 	}
 	765.11.10={
-		death="765.11.10"
+		death=yes
 	}
 }
 
@@ -1223,13 +1328,15 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88044
 	668.1.1={
-		birth="668.1.1"
+		birth=yes
 	}
 	716.10.4={
-		death="716.10.4"
+		death=yes
 	}
 }
 
@@ -1239,16 +1346,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88056
 	709.1.1={
-		birth="709.1.1"
+		birth=yes
 	}
 	770.8.28={
 		name = "Konin"
 	}
 	782.1.11={
-		death="782.1.11"
+		death=yes
 	}
 }
 
@@ -1262,16 +1371,18 @@
 	stewardship=6
 	religion=mahayana
 	culture=kouzoku
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
+	trait=legendary
+	occluded = yes
 	father=88057
 	737.1.1={
-		birth="737.1.1"
+		birth=yes
 	}
 	781.4.30={
 		name = "Kanmu"
 	}
 	806.4.9={
-		death="806.4.9"
+		death=yes
 	}
 }
 
@@ -1281,16 +1392,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88058
 	774.9.25={
-		birth="774.9.25"
+		birth=yes
 	}
 	806.4.9={
 		name = "Heizei"
 	}
 	824.8.5={
-		death="824.8.5"
+		death=yes
 	}
 }
 
@@ -1300,16 +1413,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88058
 	786.10.3={
-		birth="786.10.3"
+		birth=yes
 	}
 	809.5.8={
 		name = "Saga"
 	}
 	842.8.24={
-		death="842.8.24"
+		death=yes
 	}
 }
 
@@ -1319,16 +1434,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88058
 	786.12.1={
-		birth="786.12.1"
+		birth=yes
 	}
 	823.6.9={
 		name = "Junna"
 	}
 	840.6.11={
-		death="840.6.11"
+		death=yes
 	}
 }
 
@@ -1338,16 +1455,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88060
 	810.12.1={
-		birth="810.12.1"
+		birth=yes
 	}
 	833.3.30={
 		name = "Ninmyo"
 	}
 	850.5.6={
-		death="850.5.6"
+		death=yes
 	}
 }
 
@@ -1357,16 +1476,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88062
 	827.1.1={
-		birth="827.1.1"
+		birth=yes
 	}
 	850.5.6={
 		name = "Montoku"
 	}
 	858.10.7={
-		death="858.10.7"
+		death=yes
 	}
 }
 
@@ -1376,16 +1497,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88063
 	850.5.10={
-		birth="850.5.10"
+		birth=yes
 	}
 	858.10.7={
 		name = "Seiwa"
 	}
 	881.1.7={
-		death="881.1.7"
+		death=yes
 	}
 }
 
@@ -1395,16 +1518,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88064
 	869.1.2={
-		birth="869.1.2"
+		birth=yes
 	}
 	876.12.18={
 		name = "Yozei"
 	}
 	949.10.23={
-		death="949.10.23"
+		death=yes
 	}
 }
 
@@ -1414,16 +1539,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88062 # Emperor Ninmyo
 	830.1.1={
-		birth="830.1.1"
+		birth=yes
 	}
 	884.3.23={
 		name = "Koko"
 	}
 	887.9.17={
-		death="887.9.17"
+		death=yes
 	}
 }
 
@@ -1437,16 +1564,18 @@
 	stewardship=6
 	religion=mahayana
 	culture=kouzoku
-	add_trait="charismatic_negotiator"
+	trait="charismatic_negotiator"
+	trait=legendary
+	occluded = yes
 	father=88066
 	867.6.10={
-		birth="867.6.10"
+		birth=yes
 	}
 	887.9.17={
 		name = "Uda"
 	}
 	913.9.3={
-		death="913.9.3"
+		death=yes
 	}
 }
 
@@ -1456,16 +1585,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="flamboyant_schemer"
+	trait="flamboyant_schemer"
+	trait=legendary
+	occluded = yes
 	father=88067
 	885.2.6={
-		birth="885.2.6"
+		birth=yes
 	}
 	897.8.14={
 		name = "Daigo"
 	}
 	930.10.23={
-		death="930.10.23"
+		death=yes
 	}
 }
 
@@ -1475,16 +1606,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88068
 	923.9.7={
-		birth="923.9.7"
+		birth=yes
 	}
 	930.12.14={
 		name = "Suzaku"
 	}
 	952.9.6={
-		death="952.9.6"
+		death=yes
 	}
 }
 
@@ -1494,16 +1627,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88068
 	926.7.14={
-		birth="926.7.14"
+		birth=yes
 	}
 	946.5.31={
 		name = "Murakami"
 	}
 	967.7.5={
-		death="967.7.5"
+		death=yes
 	}
 }
 
@@ -1513,16 +1648,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88070
 	950.6.12={
-		birth="950.6.12"
+		birth=yes
 	}
 	967.7.5={
 		name = "Reizei"
 	}
 	1011.11.21={
-		death="1011.11.21"
+		death=yes
 	}
 }
 
@@ -1532,16 +1669,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88070
 	959.4.12={
-		birth="959.4.12"
+		birth=yes
 	}
 	969.11.5={
 		name = "Enyu"
 	}
 	991.3.1={
-		death="991.3.1"
+		death=yes
 	}
 }
 
@@ -1551,16 +1690,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88071
 	968.11.29={
-		birth="968.11.29"
+		birth=yes
 	}
 	984.11.5={
 		name = "Kazan"
 	}
 	1008.3.17={
-		death="1008.3.17"
+		death=yes
 	}
 }
 
@@ -1570,16 +1711,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88072
 	980.7.15={
-		birth="980.7.15"
+		birth=yes
 	}
 	986.7.31={
 		name = "Ichijo"
 	}
 	1011.7.25={
-		death="1011.7.25"
+		death=yes
 	}
 }
 
@@ -1589,16 +1732,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88071
 	976.2.5={
-		birth="976.2.5"
+		birth=yes
 	}
 	1011.7.16={
 		name = "Sanjo"
 	}
 	1017.6.15={
-		death="1017.6.15"
+		death=yes
 	}
 }
 
@@ -1608,16 +1753,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88074
 	1008.10.12={
-		birth="1008.10.12"
+		birth=yes
 	}
 	1016.3.24={
 		name = "Go-Ichijo"
 	}
 	1036.5.15={
-		death="1036.5.15"
+		death=yes
 	}
 }
 
@@ -1627,16 +1774,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88074
 	1009.12.14={
-		birth="1009.12.14"
+		birth=yes
 	}
 	1036.5.15={
 		name = "Go-Suzaku"
 	}
 	1045.2.5={
-		death="1045.2.5"
+		death=yes
 	}
 }
 
@@ -1646,16 +1795,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88077
 	1025.8.28={
-		birth="1025.8.28"
+		birth=yes
 	}
 	1045.2.5={
 		name="Go-Reizei"
 	}
 	1068.5.22={
-		death="1068.5.22"
+		death=yes
 	}
 }
 
@@ -1665,16 +1816,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88077
 	1034.9.3={
-		birth="1034.9.3"
+		birth=yes
 	}
 	1068.5.22={
 		name = "Go-Sanjo"
 	}
 	1073.6.15={
-		death="1073.6.15"
+		death=yes
 	}
 }
 
@@ -1688,16 +1841,18 @@
 	stewardship=6
 	religion=mahayana
 	culture=kouzoku
-	add_trait="elusive_shadow"
+	trait="elusive_shadow"
+	trait=legendary
+	occluded = yes
 	father=88079
 	1053.7.7={
-		birth="1053.7.7"
+		birth=yes
 	}
 	1073.1.18={
 		name = "Shirakawa"
 	}
 	1129.7.24={
-		death="1129.7.24"
+		death=yes
 	}
 }
 
@@ -1707,17 +1862,19 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="poet"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
+	trait="poet"
 	father=88080
 	1079.8.8={
-		birth="1079.8.8"
+		birth=yes
 	}
 	1086.12.16={
 		name = "Horikawa"
 	}
 	1107.8.9={
-		death="1107.8.9"
+		death=yes
 	}
 }
 
@@ -1727,17 +1884,19 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="flamboyant_schemer"
-	add_trait="poet"
+	trait="flamboyant_schemer"
+	trait=legendary
+	occluded = yes
+	trait="poet"
 	father=88081
 	1103.2.24={
-		birth="1103.2.24"
+		birth=yes
 	}
 	1107.8.9={
 		name = "Toba"
 	}
 	1156.7.20={
-		death="1156.7.20"
+		death=yes
 	}
 }
 
@@ -1747,18 +1906,20 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
-	add_trait="poet"
-	add_trait="envious"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
+	trait="poet"
+	trait="envious"
 	father=88082
 	1119.7.7={
-		birth="1119.7.7"
+		birth=yes
 	}
 	1123.2.19={
 		name = "Sutoku"
 	}
 	1164.9.14={
-		death="1164.9.14"
+		death=yes
 	}
 }
 
@@ -1766,8 +1927,6 @@
 	name="Masahito"
 	# Emperor Go-Shirakawa
 	dynasty=888 #Yamato
-	dna="00vg00u0000"
-	properties="aaaaaa"
 	religion=mahayana
 	culture=kouzoku
 	martial=4
@@ -1775,21 +1934,23 @@
 	intrigue=8
 	stewardship=7
 	health=7
-	add_trait="elusive_shadow"
-	add_trait="quick"
+	trait="elusive_shadow"
+	trait="quick"
+	trait=legendary
+	occluded = yes
 	father=88082
 	1127.8.23={
-		birth="1127.8.23"
+		birth=yes
 	}
 	1155.8.23={
 		name = "Go-Shirakawa"
 	}
 	1169.7.13={
-		add_trait="monk"
+		trait="monk"
 		effect = { set_character_flag = has_monk_name }
 	}
 	1192.4.26={
-		death="1192.4.26"
+		death=yes
 	}
 }
 
@@ -1799,16 +1960,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88082 # Empeor Toba
 	1139.6.16={
-		birth="1139.6.16"
+		birth=yes
 	}
 	1142.1.5={
 		name = "Konoe"
 	}
 	1155.8.22={
-		death="1155.8.22"
+		death=yes
 	}
 }
 
@@ -1818,17 +1981,19 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
-	add_trait="fair"
+	trait="indulgent_wastrel"
+	trait="fair"
+	trait=legendary
+	occluded = yes
 	father=88084
 	1143.7.31={
-		birth="1143.7.31"
+		birth=yes
 	}
 	1158.9.5={
 		name = "Nijo"
 	}
 	1165.9.5={
-		death="1165.9.5"
+		death=yes
 	}
 }
 
@@ -1838,17 +2003,19 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="indulgent_wastrel"
-	add_trait="fair"
+	trait="indulgent_wastrel"
+	trait="fair"
+	trait=legendary
+	occluded = yes
 	father=88086
 	1165.8.3={
-		birth="1165.8.3"
+		birth=yes
 	}
 	1165.8.3={
 		name = "Rokujo"
 	}
 	1176.8.23={
-		death="1176.8.23"
+		death=yes
 	}
 }
 
@@ -1858,21 +2025,23 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="fair"
+	trait="naive_appeaser"
+	trait="fair"
+	trait=legendary
+	occluded = yes
 	father=88084
 	1161.9.23={
-		birth="1161.9.23"
+		birth=yes
 	}
 	1168.3.30={
 		name = "Takakura"
 	}
 	1180.5.18={
-		add_trait="stressed"
-		add_trait="ill"
+		trait="stressed"
+		trait="ill"
 	}
 	1181.2.6={
-		death="1181.2.6"
+		death=yes
 	}
 }
 
@@ -1882,16 +2051,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88088
 	1178.12.22={
-		birth="1178.12.22"
+		birth=yes
 	}
 	1180.5.18={
 		name = "Antoku"
 	}
 	1185.4.25={
-		death="1185.4.25"
+		death=yes
 	}
 }
 
@@ -1899,24 +2070,24 @@
 	name="Takanari"
 	# Emperor Go-Toba
 	dynasty=888 #Yamato
-	dna="00vg00f0000"
-	properties="aaaaaa"
 	religion=mahayana
 	culture=kouzoku
-	add_trait="intricate_webweaver"
-	add_trait="poet"
-	add_trait="arbitrary"
-	add_trait="ambitious"
-	add_trait="wroth"
+	trait="intricate_webweaver"
+	trait="poet"
+	trait="arbitrary"
+	trait="ambitious"
+	trait="wroth"
+	trait=legendary
+	occluded = yes
 	father=88088
 	1180.8.6={
-		birth="1180.8.6"
+		birth=yes
 	}
 	1183.9.8={
 		name = "Go-Toba"
 	}
 	1239.3.28={
-		death="1239.3.28"
+		death=yes
 	}
 }
 
@@ -1926,18 +2097,20 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="content"
-	add_trait="kind"
+	trait="naive_appeaser"
+	trait="content"
+	trait="kind"
+	trait=legendary
+	occluded = yes
 	father=88090
 	1196.1.3={
-		birth="1196.1.3"
+		birth=yes
 	}
 	1198.2.18={
 		name = "Tsuchimikado"
 	}
 	1231.11.16={
-		death="1231.11.16"
+		death=yes
 	}
 }
 
@@ -1947,18 +2120,20 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
-	add_trait="wroth"
-	add_trait="scholar"
+	trait="amateurish_plotter"
+	trait="wroth"
+	trait="scholar"
+	trait=legendary
+	occluded = yes
 	father=88090
 	1197.10.22={
-		birth="1197.10.22"
+		birth=yes
 	}
 	1210.12.12={
 		name = "Juntoku"
 	}
 	1242.10.7={
-		death="1242.10.7"
+		death=yes
 	}
 }
 
@@ -1968,16 +2143,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88092
 	1218.10.30={
-		birth="1218.10.30"
+		birth=yes
 	}
 	1221.5.13={
 		name = "Chukyo"
 	}
 	1234.6.18={
-		death="1234.6.18"
+		death=yes
 	}
 }
 
@@ -1986,13 +2163,15 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="detached_priest"
+	trait="detached_priest"
+	trait=legendary
+	occluded = yes
 	father=88088
 	1179.4.6={
-		birth="1179.4.6"
+		birth=yes
 	}
 	1223.6.14={
-		death="1223.6.14"
+		death=yes
 	}
 }
 
@@ -2002,16 +2181,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88094
 	1212.3.22={
-		birth="1212.3.22"
+		birth=yes
 	}
 	1221.7.29={
 		name = "Go-Horikawa"
 	}
 	1234.8.31={
-		death="1234.8.31"
+		death=yes
 	}
 }
 
@@ -2021,16 +2202,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88095
 	1231.3.17={
-		birth="1231.3.17"
+		birth=yes
 	}
 	1232.11.17={
 		name = "Shijo"
 	}
 	1242.2.10={
-		death="1242.2.10"
+		death=yes
 	}
 }
 
@@ -2040,16 +2223,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88091
 	1220.2.26={
-		birth="1220.2.26"
+		birth=yes
 	}
 	1242.2.21={
 		name = "Go-Saga"
 	}
 	1272.2.17={
-		death="1272.2.17"
+		death=yes
 	}
 }
 
@@ -2059,16 +2244,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88097
 	1243.6.10={
-		birth="1243.6.10"
+		birth=yes
 	}
 	1246.2.16={
 		name = "Go-Fukakusa"
 	}
 	1304.7.16={
-		death="1304.7.16"
+		death=yes
 	}
 }
 
@@ -2078,16 +2265,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88097
 	1249.7.9={
-		birth="1249.7.9"
+		birth=yes
 	}
 	1260.1.9={
 		name = "Kameyama"
 	}
 	1305.10.4={
-		death="1305.10.4"
+		death=yes
 	}
 }
 
@@ -2097,16 +2286,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88099
 	1267.12.17={
-		birth="1267.12.17"
+		birth=yes
 	}
 	1274.3.6={
 		name = "Go-Uda"
 	}
 	1324.7.16={
-		death="1324.7.16"
+		death=yes
 	}
 }
 
@@ -2116,17 +2307,19 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
-	add_trait="poet"
+	trait="naive_appeaser"
+	trait="poet"
+	trait=legendary
+	occluded = yes
 	father=88098
 	1265.5.10={
-		birth="1265.5.10"
+		birth=yes
 	}
 	1287.11.27={
 		name = "Fushimi"
 	}
 	1317.10.8={
-		death="1317.10.8"
+		death=yes
 	}
 }
 
@@ -2136,16 +2329,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88101
 	1288.4.5={
-		birth="1288.4.5"
+		birth=yes
 	}
 	1298.8.30={
 		name = "Go-Fushimi"
 	}
 	1336.5.17={
-		death="1336.5.17"
+		death=yes
 	}
 }
 
@@ -2155,16 +2350,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="naive_appeaser"
+	trait="naive_appeaser"
+	trait=legendary
+	occluded = yes
 	father=88100
 	1285.3.9={
-		birth="1285.3.9"
+		birth=yes
 	}
 	1301.3.2={
 		name = "Go-Nijo"
 	}
 	1308.9.10={
-		death="1308.9.10"
+		death=yes
 	}
 }
 
@@ -2174,16 +2371,18 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88101
 	1297.8.14={
-		birth="1297.8.14"
+		birth=yes
 	}
 	1308.12.28={
 		name = "Hanazono"
 	}
 	1348.12.2={
-		death="1348.12.2"
+		death=yes
 	}
 }
 
@@ -2198,22 +2397,24 @@
 	learning=7
 	religion=mahayana
 	culture=kouzoku
-	add_trait="charismatic_negotiator"
-	add_trait="ambitious"
-	add_trait="arbitrary"
-	add_trait="diligent"
-	add_trait="proud"
-	add_trait="gregarious"
-	add_trait="hedonist"
+	trait="charismatic_negotiator"
+	trait="ambitious"
+	trait="arbitrary"
+	trait="diligent"
+	trait="proud"
+	trait="gregarious"
+	trait="hedonist"
+	trait=legendary
+	occluded = yes
 	father=88100
 	1288.11.26={
-		birth="1288.11.26"
+		birth=yes
 	}
 	1318.4.30={
 		name = "Go-Daigo"
 	}
 	1339.9.19={
-		death="1339.9.19"
+		death=yes
 	}
 }
 
@@ -2223,17 +2424,19 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
-	add_trait="poet"
+	trait="amateurish_plotter"
+	trait="poet"
+	trait=legendary
+	occluded = yes
 	father=88102
 	1313.8.1={
-		birth="1313.8.1"
+		birth=yes
 	}
 	1331.10.22={
 		name = "Kogon"
 	}
 	1364.8.5={
-		death="1364.8.5"
+		death=yes
 	}
 }
 
@@ -2243,7 +2446,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88105
 	1328.1.1={
 		birth=yes
@@ -2262,7 +2467,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88107
 	1343.1.1={
 		birth=yes
@@ -2282,7 +2489,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88107
 	1350.1.1={
 		birth=yes
@@ -2302,7 +2511,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88102
 	1322.1.11={
 		birth=yes
@@ -2321,7 +2532,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88106
 	1334.5.25={
 		birth=yes
@@ -2340,7 +2553,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88106
 	1338.3.23={
 		birth=yes
@@ -2359,7 +2574,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88112
 	1359.1.11={
 		birth=yes
@@ -2378,7 +2595,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88113
 	1377.8.1={
 		birth=yes
@@ -2396,7 +2615,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88111
 	1351.1.1={
 		birth=yes
@@ -2411,7 +2632,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88115
 	1372.4.9={
 		birth=yes
@@ -2427,7 +2650,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88114
 	1401.5.12={
 		birth=yes
@@ -2446,7 +2671,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88116
 	1419.7.10={
 		birth=yes
@@ -2465,7 +2692,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88118
 	1442.7.3={
 		birth=yes
@@ -2484,7 +2713,9 @@
 	dynasty=888 #Yamato
 	religion=mahayana
 	culture=kouzoku
-	add_trait="amateurish_plotter"
+	trait="amateurish_plotter"
+	trait=legendary
+	occluded = yes
 	father=88119
 	1464.11.19={
 		birth=yes
@@ -2509,10 +2740,12 @@
 	learning=12
 	religion=mahayana
 	culture=kouzoku
-	add_trait="thrifty_clerk"
-	add_trait="scholar"
-	add_trait="charitable"
-	add_trait="just"
+	trait="thrifty_clerk"
+	trait="scholar"
+	trait="charitable"
+	trait="just"
+	trait=legendary
+	occluded = yes
 	1497.1.26={
 		birth=yes
 	}
@@ -2528,8 +2761,8 @@
 	name="Michihito"
 	# Emperor Oogimachi
 	dynasty=888 #Yamato
-	dna="aavbaafaeea"
-	properties="aaaaaa"
+	trait=legendary
+	occluded = yes
 	father=88151 # Go-Nara Emperor
 	religion=mahayana
 	culture=kouzoku
@@ -2556,6 +2789,8 @@
 	father=88121 # Ohgimachi Emperor
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	martial=1
 	1552.5.16={
 		birth=yes
@@ -2572,6 +2807,8 @@
 	father=88122 # Prince Sanehito(Son of Ohgimachi Emperor)
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	martial=1
 	1571.12.31={
 		birth=yes
@@ -2591,11 +2828,8 @@
 	father=88123 # Go-Yozei Emperor
 	religion=mahayana
 	culture=kouzoku
-	martial=1
-#	diplomacy=
-#	intrigue=
-#	stewardship=
-#	learning=
+	trait=legendary
+	occluded = yes
 	1596.6.29={
 		birth=yes
 	}
@@ -2615,6 +2849,8 @@
 	father=88124
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1624.1.9={
 		birth=yes
 	}
@@ -2633,6 +2869,8 @@
 	father=88124
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1633.4.20={
 		birth=yes
 	}
@@ -2651,6 +2889,8 @@
 	father=88124
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1638.1.1={
 		birth=yes
 	}
@@ -2669,6 +2909,8 @@
 	father=88124
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1654.7.9={
 		birth=yes
 	}
@@ -2687,6 +2929,8 @@
 	father=88128
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1675.10.21={
 		birth=yes
 	}
@@ -2705,6 +2949,8 @@
 	father=88129
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1702.1.14={
 		birth=yes
 	}
@@ -2723,6 +2969,8 @@
 	father=88130
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1720.2.8={
 		birth=yes
 	}
@@ -2741,6 +2989,8 @@
 	father=88131
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1742.4.14={
 		birth=yes
 	}
@@ -2760,6 +3010,8 @@
 	father=88131
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1740.9.23={
 		birth=yes
 	}
@@ -2778,6 +3030,8 @@
 	father=88132
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1758.8.5={
 		birth=yes
 	}
@@ -2796,6 +3050,8 @@
 	father=88129
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1704.10.7={
 		birth=yes
 	}
@@ -2811,6 +3067,8 @@
 	father=88135
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1733.4.1={
 		birth=yes
 	}
@@ -2826,6 +3084,8 @@
 	father=88136
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1771.9.23={
 		birth=yes
 	}
@@ -2844,6 +3104,8 @@
 	father=88137
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1800.3.16={
 		birth=yes
 	}
@@ -2862,6 +3124,8 @@
 	father=88138
 	religion=mahayana
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1831.7.22={
 		birth=yes
 	}
@@ -2878,8 +3142,10 @@
 	# Emperor Meiji
 	dynasty=888 #Yamato
 	father=88139
-	religion=mahayana
+	religion=shinto
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1852.11.3={
 		birth=yes
 	}
@@ -2896,8 +3162,10 @@
 	# Emperor Taisho
 	dynasty=888 #Yamato
 	father=88140
-	religion=mahayana
+	religion=shinto
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1879.8.31={
 		birth=yes
 	}
@@ -2914,8 +3182,10 @@
 	# Emperor Showa
 	dynasty=888 #Yamato
 	father=88141
-	religion=mahayana
+	religion=shinto
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1901.4.29={
 		birth=yes
 	}
@@ -2932,8 +3202,10 @@
 	# Emperor Heisei
 	dynasty=888 #Yamato
 	father=88142
-	religion=mahayana
+	religion=shinto
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1933.12.23={
 		birth=yes
 	}
@@ -2950,8 +3222,10 @@
 	# Emperor Reiwa
 	dynasty=888 #Yamato
 	father=88143
-	religion=mahayana
+	religion=shinto
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	1960.2.23={
 		birth=yes
 	}
@@ -2968,8 +3242,10 @@
 	# Emperor Go-Chukyo
 	dynasty=888 #Yamato
 	father=88144
-	religion=mahayana
+	religion=shinto
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	2010.3.28={
 		birth=yes
 	}
@@ -2986,8 +3262,10 @@
 	# Emperor Go-Oogimachi
 	dynasty=888 #Yamato
 	father=88145
-	religion=mahayana
+	religion=shinto
 	culture=kouzoku
+	trait=legendary
+	occluded = yes
 	2071.2.23={
 		birth=yes
 	}

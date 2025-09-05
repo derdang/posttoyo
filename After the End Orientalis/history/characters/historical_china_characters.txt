@@ -12726,6 +12726,9 @@
 	1893.12.26 = {birth = yes}
 	1911.10.10 = {
 		name = "Taizhu"
+		create_bloodline = {
+			type = hong_bloodline	
+		}
 	}
 	1976.9.9 = {death = { death_reason = death_offmap }}
 }
@@ -13592,7 +13595,12 @@
 	culture = manchu
 	father = 8001099
 	mother = 8001100
-	1559.5.14 = {birth = yes}
+	1559.5.14 = {
+		birth = yes
+		create_bloodline = {
+			type = qing_bloodline	
+		}
+	}
 	1626.9.30 = {death = death_battle}
 }
 8001102 = {

@@ -11885,7 +11885,20 @@ coat_of_arms = {
 1945142 = { name="Zi" culture=ngalop }
 1945143 = { name="Zira" culture=ngalop }
 1945144 = { name="Zur" culture=ngalop }
-1945145 = { name="Wangchuck" culture=ngalop religion=rime used_for_random=no}
+1945145 = { name="Wangchuck" culture=ngalop
+	coat_of_arms = {
+		religion = rime
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1946000 = { name="Adro" culture=sharchop }
 1946001 = { name="Akyong" culture=sharchop }

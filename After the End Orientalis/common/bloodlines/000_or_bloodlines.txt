@@ -81,3 +81,51 @@ varman_bloodline = {
 	inheritance = patrilineal
 	flags = { historical_bloodline bloodline_cambodian }
 }
+wangchuck = {#Blood of the Wangchucks (Kings of Bhutan)
+	monthly_character_prestige = 1
+	tibetan_opinion = 5
+	rime_opinion = 5
+	health = 0.5
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_wangchuk
+	flags = { historical_bloodline wangchuk_true bloodline_drill }
+}
+japanese_imperial_bloodline = {#Blood of the Japanese Emperor
+	monthly_character_prestige = 0.5
+	monthly_character_piety = 0.5
+	japonic_opinion = 25
+	allow_bastards = no
+	picture = GFX_bloodlines_symbol_yamato
+	flags = { historical_bloodline japanese_imperial_blood }
+}
+qing_bloodline = {
+	monthly_character_prestige = 0.5
+	monthly_character_piety = 0.5
+	han_opinion = -10
+	manchu_opinion = 20
+	inheritance = patrilineal
+	allow_bastards = no
+	picture = GFX_bloodlines_symbol_taoist
+	flags = { historical_bloodline qing_blood }
+}
+hong_bloodline = {
+	monthly_character_prestige = 0.5
+	monthly_character_piety = 0.5
+	han_opinion = 20
+	jibenyuanze_opinion = 10
+	inheritance = patrilineal
+	allow_bastards = no
+	picture = GFX_bloodlines_symbol_hong
+	flags = { historical_bloodline hong_blood }
+}
+confucian_bloodline = {
+	monthly_character_prestige = 0.5
+	monthly_character_piety = 0.5
+	han_opinion = 25
+	ruist_opinion = 20
+	inheritance = patrilineal
+	allow_bastards = no
+	picture = GFX_bloodlines_symbol_taoist
+	flags = { historical_bloodline qing_blood }
+}
