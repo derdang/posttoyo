@@ -100,6 +100,13 @@ character_event = {
 		2105 = {
 			add_province_modifier = { name = landmark_valley_of_geysers duration  = -1 }
 		}
+	#China
+		1923 = {
+			add_province_modifier = { name = landmark_forbidden_city_zh duration  = -1 }
+		}
+		1902 = {
+			add_province_modifier = { name = landmark_qufu_palace duration  = -1 }
+		}
 		set_global_flag = landmarks_set
 	}
 }
