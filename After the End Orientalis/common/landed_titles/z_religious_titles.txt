@@ -197,7 +197,7 @@ d_ruist_yansheng = {
 	religion = ruist
 	
 	# Cannot be held as a secondary title
-	primary = yes
+	primary = no
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
@@ -810,6 +810,36 @@ k_taoist = {
 	
 	allow = {
 		religion = taoist
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_shenist_reformed = {
+	color = { 226 241 182 }
+	
+	creation_requires_capital = no
+	
+	capital = 1642 # Yingtan/Mt. Longhu
+	
+	dignity = 200
+	
+	title = CELESTIAL_MASTER
+	title_female = CELESTIAL_MASTER
+	foa = CELESTIAL_MASTER_FOA
+	primary = yes
+	
+	short_name = yes
+	
+	religion = shenist_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = shenist_reformed
+	
+	allow = {
+		religion = shenist_reformed
 		num_of_holy_sites = 3
 		piety = 1000
 	}

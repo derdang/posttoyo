@@ -123,12 +123,12 @@ e_hong = {
 	
 	allow = {
 		culture_group = han
+		religion = jibenyuanze
 	}
 	# Cannot be held as a secondary title
-	primary = yes
 	short_name = yes
-	can_be_claimed = no
-	can_be_usurped = no
+	can_be_claimed = yes
+	can_be_usurped = yes
 }
 k_andong_protectorate = { #Hong Governor of the East
 	color = { 206 140 105 }
@@ -144,10 +144,9 @@ k_andong_protectorate = { #Hong Governor of the East
 		culture_group = han
 	}
 	# Cannot be held as a secondary title
-	primary = yes
 	short_name = yes
 	dynasty_title_names = no
-	can_be_claimed = no
+	can_be_claimed = yes
 }
 k_ice_city = {
 	color = { 140 220 200 }
@@ -160,10 +159,9 @@ k_ice_city = {
 		culture = dongbei
 	}
 	# Cannot be held as a secondary title
-	primary = yes
 	short_name = yes
-	can_be_claimed = no
-	can_be_usurped = no
+	can_be_claimed = yes
+	can_be_usurped = yes
 }
 ###################################################################
 #Petty Thai Kingdoms

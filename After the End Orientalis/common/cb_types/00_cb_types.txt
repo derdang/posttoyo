@@ -3208,32 +3208,6 @@ tribal_invasion = {
 	}
 	
 	on_success_title = {
-	
-		if = {
-			limit = {
-				ROOT = {
-					OR = {
-						character = 159136
-						character = 159137
-					}
-				}
-			}
-			ROOT = {
-				if = {
-					limit = {
-						has_dlc = "Holy Fury"
-						NOT = {
-							any_owned_bloodline = {
-								has_bloodline_flag = arpad_bloodline
-							}
-						}
-					}
-					create_bloodline = {
-						type = arpad
-					}
-				}
-			}
-		}
 		
 		custom_tooltip = {
 			text = tribal_invasion_succ_tip
@@ -3246,13 +3220,13 @@ tribal_invasion = {
 						type = invasion
 					}
 				}
-			}
-		}
-
-		hidden_tooltip = {
-			check_if_reconquista_finished_effect = yes
-			FROM = {
-				landless_pope_effect = yes
+				if = {
+					limit = {
+						higher_tier_than = BARON
+						NOT = { culture = ROOT }
+					}
+					hidden_tooltip = { conquest_culture = ROOT }
+				}
 			}
 		}
 	}
