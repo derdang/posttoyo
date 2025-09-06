@@ -700,30 +700,6 @@ d_old_believer = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
-d_baptist = {
-	color={ 28 78 157 }
-	color2={ 220 220 0 }
-
-	capital = 1282 #Kohima
-	
-	title = "GENERAL_SECRETARY"
-	title_female = "GENERAL_SECRETARY"
-	foa = "ECUMENICAL_PATRIARCH_FOA"
-	
-	# Always exists
-	landless = yes
-	short_name = yes
-	
-	# Controls a religion
-	controls_religion = baptist
-	
-	religion = baptist
-	
-	# Cannot be held as a secondary title
-	primary = yes
-	
-	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
-}
 k_kohhran_thianghlim = {
 	color={ 139 211 230 }
 	color2={ 180 170 40 }
@@ -750,6 +726,68 @@ k_kohhran_thianghlim = {
 	
 	allow = {
 		religion = kohhran_thianghlim
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+k_pentecostal = {
+	color={ 0.55 0.65 0.45 }
+	color2={ 180 170 40 }
+
+	creation_requires_capital = no
+	
+	capital = 389 # Singapore
+	
+	dignity = 200 
+	
+	title = "REVEREND"
+	title_female = "REVEREND"
+	foa = "POPE_FOA"
+	primary = yes
+	
+	short_name = yes
+	
+	religion = pentecostal
+	caliphate = yes
+	assimilate = no
+
+	# Controls a religion
+	controls_religion = pentecostal
+	
+	allow = {
+		religion = pentecostal
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+k_eastern_lightning = {
+	color={ 100 20 111 }
+	color2={ 180 170 40 }
+
+	creation_requires_capital = no
+	
+	capital = 1457 # Harbin
+	
+	dignity = 200 
+	
+	title = "PROPHET"
+	title_female = "PROPHETESS"
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = eastern_lightning
+	assimilate = no
+
+	# Controls a religion
+	controls_religion = eastern_lightning
+	
+	allow = {
+		religion = eastern_lightning
 		num_of_holy_sites = 3
 		piety = 1000
 	}
