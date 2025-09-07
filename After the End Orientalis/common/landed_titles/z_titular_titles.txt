@@ -115,6 +115,48 @@ e_china = { #Unified China
 		}
 	}
 }
+e_crusader_china = {
+	color = { 150 105 56 }
+	color2 = { 220 220 0 }
+	
+	capital = 1923 #Beijing
+	
+	short_name = yes
+	
+	allow = {
+		OR = {
+			religion = catholic
+			is_heresy_of = catholic
+		}
+		e_hong = {
+			has_holder = no
+		}
+		e_china = {
+			has_holder = no
+		}
+		custom_tooltip = {
+			text = controls_beijing
+			hidden_tooltip = {
+				1923 = { # Beijing
+					owner = {
+						OR = {
+							is_liege_or_above = ROOT
+							character = ROOT
+						}
+					}
+				}
+				1928 = { # Tianjin
+					owner = {
+						OR = {
+							is_liege_or_above = ROOT
+							character = ROOT
+						}
+					}
+				}
+			}
+		}
+	}
+}
 e_hong = {
 	color = { 226 66 0 }
 	color2={ 255 255 255 }

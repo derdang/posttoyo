@@ -5121,21 +5121,21 @@ narrative_event = {
 				AND = {
 					has_global_flag = 4th_crusade_official
 					crusade_target_title = {
-						title = k_thrace
+						title = k_yan
 					}
 					new_character = {
 						religion = FROM
-						has_landed_title = e_byzantium
+						has_landed_title = e_hong
 					}	
 				}
 				AND = {
 					NOR = {
 						has_global_flag = 4th_crusade_official
 						crusade_target_title = {
-							title = k_thrace
+							title = k_yan
 						}
 						new_character = {
-							has_landed_title = e_byzantium
+							has_landed_title = e_hong
 						}
 					}
 					new_character = {

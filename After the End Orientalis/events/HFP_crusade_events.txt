@@ -19,6 +19,28 @@ character_event = {
                 using_cb = new_crusade
             }
         }
+		OR = {
+            NOT = {
+                official_crusade_recipient = {
+                    has_character_flag = fourth_crusade_recipient
+                    is_dying = no
+                }
+            }
+            NOT = {
+                has_global_flag = 4th_crusade_official
+            }
+            official_crusade_recipient = {
+                OR = {
+                    has_landed_title = e_hong
+                    has_landed_title = k_yan
+                }
+            }
+            NOT = {
+                crusade_target_title = {
+                    title = k_yan
+                }
+            }
+        }
     }
 
     immediate = {
@@ -2742,10 +2764,10 @@ character_event = {
     trigger = {
         NAND = {
             crusade_target_title = {
-                title = k_thrace
+                title = k_yan
             }
             crusade_target_char = {
-                e_byzantium = {
+                e_hong = {
                     owner = {
                         character = PREVPREV
                     }
@@ -3531,13 +3553,13 @@ character_event = {
             NOT = {
                 ROOT = {
                     crusade_target_title = {
-                        title = k_thrace
+                        title = k_yan
                     }
                 }
             }
             NOT = {
                 crusade_target_char = {
-                    has_landed_title = e_byzantium
+                    has_landed_title = e_hong
                 }
             }
             NOT = {

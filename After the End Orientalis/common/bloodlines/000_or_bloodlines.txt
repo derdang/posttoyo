@@ -129,3 +129,16 @@ confucian_bloodline = {
 	picture = GFX_bloodlines_symbol_taoist
 	flags = { historical_bloodline qing_blood }
 }
+#Destroyer of the Hong
+boxer = {
+	monthly_character_prestige = 0.5
+	han_opinion = 5
+	jibenyuanze_opinion = 5
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_cross_crusader_wicked
+	flags = { created_bloodline }
+	active = {
+		NOT = {culture_group = han}
+	}
+}
