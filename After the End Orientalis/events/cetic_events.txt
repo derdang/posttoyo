@@ -1521,288 +1521,90 @@ character_event = {
 }
 
 #Giving out traits when needed
-character_event = {
-	id = cetic.304
-	picture = GFX_evt_china_isolationist #filler
-	desc = {
-		trigger = {
-			check_variable = { which = global_imp_auth value < 10 }
-		}
-		picture = GFX_evt_china_isolationist
-		text = EVTDESCCETIC304_WEAK
-	}
-	desc = {
-		trigger = {
-			check_variable = { which = global_imp_auth value >= 10 }
-		}
-		picture = GFX_evt_china_isolationist
-		text = EVTDESCCETIC304_NOTWEAK
-	}
-	desc = {
-		trigger = {
-			check_variable = { which = global_imp_auth value < 50 }
-		}
-		picture = GFX_evt_china_isolationist
-		text = EVTDESCCETIC304_FIGUREHEAD
-	}
-	desc = {
-		trigger = {
-			check_variable = { which = global_imp_auth value > 50 }
-		}
-		picture = GFX_evt_china_open
-		text = EVTDESCCETIC304
-	}
-	desc = {
-		trigger = {
-			check_variable = { which = global_imp_auth value < 70 }
-			trait = strong_emperor
-		}
-		picture = GFX_evt_china_isolationist
-		text = EVTDESCCETIC304_B
-	}
-	desc = {
-		trigger = {
-			check_variable = { which = global_imp_auth value > 70 }
-		}
-		picture = GFX_evt_china_golden_age
-		text = EVTDESCCETIC304_STRONG
-	}
-	
-	trigger = {
-		government = sinic_bureaucracy_government
-		OR = {
-			AND = {
-				check_variable = { which = global_imp_auth value < 10 }
-				NOT = {
-					trait = weak_emperor
-				}
-			}
-			AND = {
-				check_variable = { which = global_imp_auth value >= 10 }
-				trait = weak_emperor
-			}
-			AND = {
-				check_variable = { which = global_imp_auth value >= 10 }
-				check_variable = { which = global_imp_auth value < 50 }
-				NOT = {
-					trait = figurehead
-				}
-			}
-			AND = {
-				check_variable = { which = global_imp_auth value > 50 }
-				trait = figurehead
-			}
-			AND = {
-				check_variable = { which = global_imp_auth value < 70 }
-				trait = strong_emperor
-			}
-			AND = {
-				check_variable = { which = global_imp_auth value > 70 }
-				NOT = {
-					trait = strong_emperor
-				}
-			}
-		}
-		NOT = {
-			has_global_flag = trait_assigned_sinic
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = {
-			text = EVTOPTACETIC304_WEAK
-			trigger = {
-				check_variable = { which = global_imp_auth value < 10 }
-				NOT = {
-					trait = weak_emperor
-				}
-			}
-		}
-		name = {
-			text = EVTOPTACETIC304_NOTWEAK
-			trigger = {
-				check_variable = { which = global_imp_auth value >= 10 }
-				trait = weak_emperor
-			}
-		}
-		name = {
-			text = EVTOPTACETIC304_FIGUREHEAD
-			trigger = {
-				check_variable = { which = global_imp_auth value >= 10 }
-				check_variable = { which = global_imp_auth value < 50 }
-				NOT = {
-					trait = figurehead
-				}
-			}
-		}
-		name = {
-			text = EVTOPTACETIC304
-			trigger = {
-				check_variable = { which = global_imp_auth value > 50 }
-				trait = figurehead
-			}
-		}
-		name = {
-			text = EVTOPTACETIC304_B
-			trigger = {
-				check_variable = { which = global_imp_auth value < 70 }
-				trait = strong_emperor
-			}
-		}
-		name = {
-			text = EVTOPTACETIC304_STRONG
-			trigger = {
-				check_variable = { which = global_imp_auth value > 70 }
-				NOT = {
-					trait = strong_emperor
-				}
-			}
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_imp_auth value < 10 }
-				NOT = {
-					trait = weak_emperor
-				}
-			}
-			add_trait = weak_emperor
-			remove_trait = figurehead
-			primary_title = {
-				add_law = {
-					law = law_voting_power_1
-					opinion_effect = no
-				}
-				add_law = {
-					law = war_voting_power_1
-					# cooldown = yes
-					opinion_effect = no
-				}
-				add_law = {
-					law = revoke_title_voting_power_1
-					# cooldown = yes
-					opinion_effect = no
-				}
-				add_law = {
-					law = execution_voting_power_1
-					# cooldown = yes
-					opinion_effect = no
-				}
-				add_law = {
-					law = grant_title_voting_power_1
-					# cooldown = yes
-					opinion_effect = no
-				}
-				add_law = {
-					law = banish_voting_power_1
-					# cooldown = yes
-					opinion_effect = no
-				}
-				add_law = {
-					law = imprison_voting_power_1
-					# cooldown = yes
-					opinion_effect = no
-				}
-				add_law = {
-					law = succession_voting_power_1
-					# cooldown = yes
-					opinion_effect = no
-				}
-				add_law = {
-					law = vassal_wars_law_0
-					# cooldown = yes
-					opinion_effect = no
-				}
-				# add_law = {
-					# law = revoke_title_law_0
-					# cooldown = yes
-					# opinion_effect = no
-				# }
-			}
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_imp_auth value >= 10 }
-				trait = weak_emperor
-			}
-			remove_trait = weak_emperor
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_imp_auth value >= 10 }
-				check_variable = { which = global_imp_auth value < 50 }
-				NOT = {
-					trait = figurehead
-				}
-			}
-			add_trait = figurehead
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_imp_auth value > 50 }
-				trait = figurehead
-			}
-			remove_trait = figurehead
-			#any_character = {
-			#	limit = {
-			#		trait = grand_secretary_heir
-			#	}
-			#	remove_trait = grand_secretary_heir
-			#}
-			#any_character = {
-			#	limit = {
-			#		trait = sanctioned_grand_secretary
-			#	}
-			#	remove_trait = sanctioned_grand_secretary
-			#}
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_imp_auth value < 70 }
-				trait = strong_emperor
-			}
-			remove_trait = strong_emperor
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_imp_auth value > 70 }
-				NOT = {
-					trait = strong_emperor
-				}
-			}
-			add_trait = strong_emperor
-			#any_character = {
-			#	limit = {
-			#		trait = grand_secretary_heir
-			#	}
-			#	remove_trait = grand_secretary_heir
-			#}
-			#any_character = {
-			#	limit = {
-			#		trait = sanctioned_grand_secretary
-			#	}
-			#	remove_trait = sanctioned_grand_secretary
-			#}
-		}
-		set_global_flag = trait_assigned_sinic
-	}
-}	
-
-#Authority Increase - Peace in the Realm
-#narrative_event = {
-#	id = cetic.309
-#	title = EVTTITLECETIC309
-#	desc = EVTDESCCETIC309
-#	picture = GFX_evt_china_golden_age
+#character_event = {
+#	id = cetic.304
+#	picture = GFX_evt_china_isolationist #filler
+#	desc = {
+#		trigger = {
+#			check_variable = { which = global_imp_auth value < 10 }
+#		}
+#		picture = GFX_evt_china_isolationist
+#		text = EVTDESCCETIC304_WEAK
+#	}
+#	desc = {
+#		trigger = {
+#			check_variable = { which = global_imp_auth value >= 10 }
+#		}
+#		picture = GFX_evt_china_isolationist
+#		text = EVTDESCCETIC304_NOTWEAK
+#	}
+#	desc = {
+#		trigger = {
+#			check_variable = { which = global_imp_auth value < 50 }
+#		}
+#		picture = GFX_evt_china_isolationist
+#		text = EVTDESCCETIC304_FIGUREHEAD
+#	}
+#	desc = {
+#		trigger = {
+#			check_variable = { which = global_imp_auth value > 50 }
+#		}
+#		picture = GFX_evt_china_open
+#		text = EVTDESCCETIC304
+#	}
+#	desc = {
+#		trigger = {
+#			check_variable = { which = global_imp_auth value < 70 }
+#			trait = strong_emperor
+#		}
+#		picture = GFX_evt_china_isolationist
+#		text = EVTDESCCETIC304_B
+#	}
+#	desc = {
+#		trigger = {
+#			check_variable = { which = global_imp_auth value > 70 }
+#		}
+#		picture = GFX_evt_china_golden_age
+#		text = EVTDESCCETIC304_STRONG
+#	}
 #	
 #	trigger = {
-#		is_liege_or_above = ROOT
 #		government = sinic_bureaucracy_government
+#		OR = {
+#			AND = {
+#				check_variable = { which = global_imp_auth value < 10 }
+#				NOT = {
+#					trait = weak_emperor
+#				}
+#			}
+#			AND = {
+#				check_variable = { which = global_imp_auth value >= 10 }
+#				trait = weak_emperor
+#			}
+#			AND = {
+#				check_variable = { which = global_imp_auth value >= 10 }
+#				check_variable = { which = global_imp_auth value < 50 }
+#				NOT = {
+#					trait = figurehead
+#				}
+#			}
+#			AND = {
+#				check_variable = { which = global_imp_auth value > 50 }
+#				trait = figurehead
+#			}
+#			AND = {
+#				check_variable = { which = global_imp_auth value < 70 }
+#				trait = strong_emperor
+#			}
+#			AND = {
+#				check_variable = { which = global_imp_auth value > 70 }
+#				NOT = {
+#					trait = strong_emperor
+#				}
+#			}
+#		}
 #		NOT = {
-#			has_global_flag = ia_unite
+#			has_global_flag = trait_assigned_sinic
 #		}
 #	}
 #	
@@ -1810,26 +1612,220 @@ character_event = {
 #		days = 1
 #	}
 #	
-#	immediate = {
-#		change_variable = { which = global_imp_auth value = 20 }
-#	}
-#	
 #	option = {
-#		name = opta_excellent
-#		custom_tooltip = {
-#			text = impauth_increase_20_TT
-#		}
-#		hidden_tooltip = {
-#			set_global_flag = ia_unite
-#		}
-#		any_playable_ruler = {
-#			limit = {
-#				government = sinic_bureaucracy_government
+#		name = {
+#			text = EVTOPTACETIC304_WEAK
+#			trigger = {
+#				check_variable = { which = global_imp_auth value < 10 }
+#				NOT = {
+#					trait = weak_emperor
+#				}
 #			}
-#			narrative_event = { id = cetic.15 }
 #		}
+#		name = {
+#			text = EVTOPTACETIC304_NOTWEAK
+#			trigger = {
+#				check_variable = { which = global_imp_auth value >= 10 }
+#				trait = weak_emperor
+#			}
+#		}
+#		name = {
+#			text = EVTOPTACETIC304_FIGUREHEAD
+#			trigger = {
+#				check_variable = { which = global_imp_auth value >= 10 }
+#				check_variable = { which = global_imp_auth value < 50 }
+#				NOT = {
+#					trait = figurehead
+#				}
+#			}
+#		}
+#		name = {
+#			text = EVTOPTACETIC304
+#			trigger = {
+#				check_variable = { which = global_imp_auth value > 50 }
+#				trait = figurehead
+#			}
+#		}
+#		name = {
+#			text = EVTOPTACETIC304_B
+#			trigger = {
+#				check_variable = { which = global_imp_auth value < 70 }
+#				trait = strong_emperor
+#			}
+#		}
+#		name = {
+#			text = EVTOPTACETIC304_STRONG
+#			trigger = {
+#				check_variable = { which = global_imp_auth value > 70 }
+#				NOT = {
+#					trait = strong_emperor
+#				}
+#			}
+#		}
+#		if = {
+#			limit = {
+#				check_variable = { which = global_imp_auth value < 10 }
+#				NOT = {
+#					trait = weak_emperor
+#				}
+#			}
+#			#add_trait = weak_emperor
+#			remove_trait = figurehead
+#			primary_title = {
+#				add_law = {
+#					law = law_voting_power_1
+#					opinion_effect = no
+#				}
+#				add_law = {
+#					law = war_voting_power_1
+#					# cooldown = yes
+#					opinion_effect = no
+#				}
+#				add_law = {
+#					law = revoke_title_voting_power_1
+#					# cooldown = yes
+#					opinion_effect = no
+#				}
+#				add_law = {
+#					law = execution_voting_power_1
+#					# cooldown = yes
+#					opinion_effect = no
+#				}
+#				add_law = {
+#					law = grant_title_voting_power_1
+#					# cooldown = yes
+#					opinion_effect = no
+#				}
+#				add_law = {
+#					law = banish_voting_power_1
+#					# cooldown = yes
+#					opinion_effect = no
+#				}
+#				add_law = {
+#					law = imprison_voting_power_1
+#					# cooldown = yes
+#					opinion_effect = no
+#				}
+#				add_law = {
+#					law = succession_voting_power_1
+#					# cooldown = yes
+#					opinion_effect = no
+#				}
+#				add_law = {
+#					law = vassal_wars_law_0
+#					# cooldown = yes
+#					opinion_effect = no
+#				}
+#				# add_law = {
+#					# law = revoke_title_law_0
+#					# cooldown = yes
+#					# opinion_effect = no
+#				# }
+#			}
+#		}
+#		if = {
+#			limit = {
+#				check_variable = { which = global_imp_auth value >= 10 }
+#				trait = weak_emperor
+#			}
+#			remove_trait = weak_emperor
+#		}
+#		#if = {
+#		#	limit = {
+#		#		check_variable = { which = global_imp_auth value >= 10 }
+#		#		check_variable = { which = global_imp_auth value < 50 }
+#		#		NOT = {
+#		#			trait = figurehead
+#		#		}
+#		#	}
+#		#	add_trait = figurehead
+#		#}
+#		if = {
+#			limit = {
+#				check_variable = { which = global_imp_auth value > 50 }
+#				trait = figurehead
+#			}
+#			remove_trait = figurehead
+#			#any_character = {
+#			#	limit = {
+#			#		trait = grand_secretary_heir
+#			#	}
+#			#	remove_trait = grand_secretary_heir
+#			#}
+#			#any_character = {
+#			#	limit = {
+#			#		trait = sanctioned_grand_secretary
+#			#	}
+#			#	remove_trait = sanctioned_grand_secretary
+#			#}
+#		}
+#		if = {
+#			limit = {
+#				check_variable = { which = global_imp_auth value < 70 }
+#				trait = strong_emperor
+#			}
+#			remove_trait = strong_emperor
+#		}
+#		if = {
+#			limit = {
+#				check_variable = { which = global_imp_auth value > 70 }
+#				NOT = {
+#					trait = strong_emperor
+#				}
+#			}
+#			#add_trait = strong_emperor
+#			#any_character = {
+#			#	limit = {
+#			#		trait = grand_secretary_heir
+#			#	}
+#			#	remove_trait = grand_secretary_heir
+#			#}
+#			#any_character = {
+#			#	limit = {
+#			#		trait = sanctioned_grand_secretary
+#			#	}
+#			#	remove_trait = sanctioned_grand_secretary
+#			#}
+#		}
+#		set_global_flag = trait_assigned_sinic
 #	}
-#}
+#}	
+
+#Authority Increase - Peace in the Realm
+narrative_event = {
+	id = cetic.309
+	title = EVTTITLECETIC309
+	desc = EVTDESCCETIC309
+	picture = GFX_evt_china_golden_age
+	is_triggered_only = yes
+	
+	trigger = {
+		is_liege_or_above = ROOT
+		government = sinic_bureaucracy_government
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		change_variable = { which = global_imp_auth value = 20 }
+	}
+	
+	option = {
+		name = opta_excellent
+		custom_tooltip = {
+			text = impauth_increase_20_TT
+		}
+		any_playable_ruler = {
+			limit = {
+				government = sinic_bureaucracy_government
+			}
+			narrative_event = { id = cetic.15 }
+		}
+	}
+}
 
 #Authority Increase - Writings
 # Authority cannot be increased in this way in this mod so it has been commented out
@@ -1868,9 +1864,6 @@ character_event = {
 	
 	trigger = {
 		government = sinic_bureaucracy_government
-		NOT = {
-			trait = weak_emperor
-		}
 		has_regent = yes
 		NOT = {
 			has_character_flag = california_regent
