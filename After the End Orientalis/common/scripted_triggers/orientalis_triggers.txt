@@ -8,6 +8,37 @@ is_vajrayana = {
 		religion = azhali
 	}
 }
+isnt_forced_to_theocracy = {
+	trigger_if = {
+		limit = { controls_religion = yes }
+		OR = {
+			AND = {
+				religion_group = muslim
+				NOR = {
+					religion = bani
+					AND = {
+						NOT = {
+							has_global_flag = sunni_caliphate_restored
+						}
+						religion = salafi
+					}
+				}
+			}
+			religion_group = muslim
+			religion = vissarionite
+			religion = kohhran_thianghlim
+			religion = nousthreskeia
+			religion = restorationist
+			religion = quinto
+			religion = shinto
+			religion_scope = { has_religion_feature = religion_temporal_head }
+			AND = {
+				has_religion_features = no
+				religion = americanist_reformed
+			}
+		}
+	}
+}
 is_member_of_a_religious_warrior_lodge = {
 	society_member_of = warrior_lodge_americanist
 }

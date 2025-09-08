@@ -250,6 +250,56 @@ k_conferentia = {
 		Xavierus
 	}
 }
+k_orthodox = {
+	color={ 183 60 155 }
+	color2={ 220 220 0 }
+	
+	capital = 643 # Vladivostok
+	
+	title = "PATRIARCH_RUSSIAN"
+	title_prefix = "METROPOLITAN_OF"
+	
+	#location_ruler_title = yes
+
+	# Always exists
+	landless = yes
+	assimilate = no
+	culture = muscovite
+	
+	# Controls a religion
+	controls_religion = orthodox
+	
+	religion = orthodox
+	
+	dignity = 200
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+	male_names = { 
+		Adrian Afanasiy Aleksandr Aleksiy Amvrosiy Anastasiy Antoniy Arseniy 
+		Daniil Dimitriy Dionisiy 
+		Efrem 
+		Feodosiy Feodor Feofan Feofilakt Filaret Filipp Fotiy 
+		Gavriil Georgiy Gerasim German Gerontiy Grigoriy 
+		Ieronim Ignatiy Ilarion Ioakim Ioann Ioannikiy Iona Ioasaf Iosif Isidor 
+		Kiprian Kirill Kliment Konstantin 
+		Luka 
+		Makariy Maksim Mark Matfey Mikhail 
+		Nikanor Nikifor Nikita Nikolay 
+		Onufriy 
+		Palladiy Pimen Platon Pyotr 
+		Serafim Sergiy Silvestr Simon Sofroniy Stefan 
+		Tikhon 
+		Veniamin Vikentiy Vitaliy Vladimir 
+		Yuvenaliy 
+		Zosima 
+	}
+
+
+}
 d_dili_archbishopric = {
 	color = { 241 255 86 }
 	color2={ 220 220 0 }
