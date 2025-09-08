@@ -648,8 +648,8 @@ christian = {
 		priests_can_marry = yes
 		priests_can_inherit = no
 		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
+		religious_clothing_head = 10
+		religious_clothing_priest = 13
 		
 		intermarry = pentecostal
 		intermarry = orthodox
@@ -692,8 +692,8 @@ christian = {
 		priests_can_marry = yes
 		priests_can_inherit = no
 		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
+		religious_clothing_head = 10
+		religious_clothing_priest = 13
 		
 		intermarry = pentecostal
 		intermarry = orthodox
@@ -734,8 +734,8 @@ christian = {
 		priests_can_inherit = no
 		female_temple_holders = yes
 		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
+		religious_clothing_head = 10
+		religious_clothing_priest = 13
 		
 		intermarry = adventist
 		intermarry = orthodox
@@ -771,8 +771,8 @@ christian = {
 		priests_can_inherit = yes
 		priests_can_marry = yes
 		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
+		religious_clothing_head = 10
+		religious_clothing_priest = 13
 		
 		intermarry = catholic
 		intermarry = orthodox
@@ -815,8 +815,8 @@ christian = {
 		priests_can_inherit = yes
 		priests_can_marry = yes
 		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
+		religious_clothing_head = 7
+		religious_clothing_priest = 7
 		
 		intermarry = catholic
 		intermarry = orthodox
@@ -859,8 +859,8 @@ christian = {
 		priests_can_marry = yes
 		priests_can_inherit = no
 		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
+		religious_clothing_head = 10
+		religious_clothing_priest = 13
 		
 		intermarry = catholic
 		intermarry = orthodox
@@ -905,8 +905,8 @@ christian = {
 		priests_can_marry = yes
 		priests_can_inherit = no
 		
-		religious_clothing_head = 2
-		religious_clothing_priest = 2
+		religious_clothing_head = 10
+		religious_clothing_priest = 13
 		
 		intermarry = catholic
 		intermarry = orthodox
@@ -1104,8 +1104,8 @@ christian = {
 		priests_can_marry = yes
 		female_temple_holders = yes
 		
-		religious_clothing_head = 1
-		religious_clothing_priest = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 		intermarry = tianzhu
 		intermarry = aiguo
@@ -1135,8 +1135,8 @@ christian = {
 		
 		priests_can_marry = yes
 		
-		religious_clothing_head = 1
-		religious_clothing_priest = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 		intermarry = tianzhu
 		intermarry = aiguo
@@ -1216,9 +1216,6 @@ muslim = {
 		
 		landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
-		
-		religious_clothing_priest = 23
-		religious_clothing_head = 23
 
 		intermarry = salafi
 		intermarry = nusantara
@@ -1265,9 +1262,6 @@ muslim = {
 		character_modifier = {
 			religion_flex = 0.25
 		}
-		
-		religious_clothing_priest = 23
-		religious_clothing_head = 23
 
 		intermarry = renewalist
 
@@ -1299,9 +1293,6 @@ muslim = {
 		female_temple_holders = yes
 		
 		attacking_same_religion_piety_loss = yes
-		
-		religious_clothing_priest = 23
-		religious_clothing_head = 23
 		
 		intermarry = salafi
 		intermarry = renewalist
@@ -1338,9 +1329,6 @@ muslim = {
 		female_temple_holders = yes
 		
 		attacking_same_religion_piety_loss = yes
-		
-		religious_clothing_priest = 23
-		religious_clothing_head = 23
 		
 		intermarry = renewalist
 		intermarry = kebatinan
@@ -1416,10 +1404,7 @@ muslim = {
 		matrilineal_marriages = no
 		
 		landed_kin_prestige_bonus = yes
-		attacking_same_religion_piety_loss = yes
-
-		religious_clothing_priest = 23
-		religious_clothing_head = 23		
+		attacking_same_religion_piety_loss = yes		
 	}
 	
 	bani = {
@@ -1502,9 +1487,6 @@ muslim = {
 		can_excommunicate = yes
 		can_grant_claim = yes
 		rel_head_defense = yes
-		
-		religious_clothing_priest = 23
-		religious_clothing_head = 23
 		
 		dynamic_cult = no
 	}
@@ -1731,8 +1713,8 @@ pagan_group = {
 		priests_can_marry = yes
 		defensive_attrition = yes
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 11
+		religious_clothing_priest = 11
 	}
 	americanist = { #Americans with Pacific Characteristics
 		graphical_culture = muslimgfx
@@ -1764,8 +1746,8 @@ pagan_group = {
 		priests_can_marry = yes
 		defensive_attrition = yes
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 11
+		religious_clothing_priest = 11
 		
 		reformed = americanist_reformed
 	}
@@ -1801,8 +1783,8 @@ pagan_group = {
 		priests_can_marry = yes
 		female_temple_holders = yes
 		
-		religious_clothing_head = 6
-		religious_clothing_priest = 6
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 	}
@@ -1938,8 +1920,8 @@ pagan_group = {
 		can_demand_religious_conversion = yes
 		female_temple_holders = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 	}
 	donyi_polo = { #East Indian Indigenous Religion
@@ -1971,8 +1953,8 @@ pagan_group = {
 		can_demand_religious_conversion = no
 		female_temple_holders = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 	}
 	khanist_reformed = {
@@ -2002,8 +1984,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 	}
 	khanist = {
@@ -2034,8 +2016,8 @@ pagan_group = {
 		max_consorts = 3 
 		can_demand_religious_conversion = no
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 	}
 	
@@ -2069,8 +2051,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -2106,8 +2088,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -2143,8 +2125,8 @@ pagan_group = {
 		
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
 
 		scripture_name = THE_LEGENDS
 		piety_name = DEVOTION
@@ -2185,8 +2167,8 @@ pagan_group = {
 		
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
 
 		scripture_name = THE_LEGENDS
 		piety_name = DEVOTION
@@ -2225,8 +2207,8 @@ pagan_group = {
 		
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
 
 		scripture_name = THE_LEGENDS
 		priest_title = DAOSHI
@@ -2268,8 +2250,8 @@ pagan_group = {
 		
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
 
 		scripture_name = THE_LEGENDS
 		priest_title = DAOSHI
@@ -2306,8 +2288,8 @@ pagan_group = {
 		max_consorts = 3
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
 
 		scripture_name = THE_TALES_SHAMANS
 		
@@ -2343,8 +2325,8 @@ pagan_group = {
 		max_consorts = 3
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 6
+		religious_clothing_priest = 6
 
 		scripture_name = THE_TALES_SHAMANS
 		
@@ -2382,8 +2364,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 	}
 	ak_jeng = {
@@ -2415,8 +2397,8 @@ pagan_group = {
 		max_consorts = 3 
 		can_demand_religious_conversion = no
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 	}
 	kaharingan_reformed = {
@@ -2445,8 +2427,8 @@ pagan_group = {
 		intermarry = buddhist_group
 		intermarry = eastern
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 	}
 	kaharingan = {
 		graphical_culture = pagangfx
@@ -2476,8 +2458,8 @@ pagan_group = {
 		
 		defensive_attrition = yes
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 		
 		dislike_tribal_organization = yes
 		reformed = kaharingan_reformed
@@ -2509,8 +2491,8 @@ pagan_group = {
 		intermarry = christian
 		intermarry = eastern
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 	}
 	dayawist = { #Monothestic Indigenous Fillipino Religion influenced by Christianity
 		graphical_culture = pagangfx
@@ -2541,8 +2523,8 @@ pagan_group = {
 		
 		defensive_attrition = yes
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 		
 		dislike_tribal_organization = yes
 		reformed = dayawist_reformed
@@ -2639,8 +2621,8 @@ pagan_group = {
 		intermarry = christian
 		intermarry = eastern
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 	}
 	diwata = { #literal meaning: "Spirits" Polytheist Indigenous Southern Fillipino Religion
 		graphical_culture = pagangfx
@@ -2671,8 +2653,8 @@ pagan_group = {
 		
 		defensive_attrition = yes
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 		
 		dislike_tribal_organization = yes
 		reformed = diwata_reformed
@@ -2706,8 +2688,8 @@ pagan_group = {
 		intermarry = christian
 		intermarry = eastern
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 	}
 	momolian = { #Ancestral Religion of the Dusun
 		graphical_culture = pagangfx
@@ -2740,8 +2722,8 @@ pagan_group = {
 		
 		defensive_attrition = yes
 
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 		
 		dislike_tribal_organization = yes
 		reformed = momolian_reformed
@@ -2772,8 +2754,8 @@ pagan_group = {
 		intermarry = christian
 		intermarry = eastern
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 	}
 	animist = { #Ancestral Religion of Papua New Guinea
 		graphical_culture = pagangfx
@@ -2803,8 +2785,8 @@ pagan_group = {
 		
 		defensive_attrition = yes
 
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 		dislike_tribal_organization = yes
 		reformed = animist_reformed
@@ -2835,8 +2817,8 @@ pagan_group = {
 		intermarry = christian
 		intermarry = eastern
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 	}
 	makasol = { #Paliau Movement of Northern Papua New Guinea
 		graphical_culture = pagangfx
@@ -2866,8 +2848,8 @@ pagan_group = {
 		
 		defensive_attrition = yes
 
-		religious_clothing_head = 14
-		religious_clothing_priest = 10
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
 		
 		dislike_tribal_organization = yes
 		reformed = makasol_reformed
@@ -2902,8 +2884,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -2939,8 +2921,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -2975,8 +2957,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -3012,8 +2994,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -3047,8 +3029,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -3083,8 +3065,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -3118,8 +3100,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -3154,8 +3136,8 @@ pagan_group = {
 		allow_in_ruler_designer = no
 		can_demand_religious_conversion = yes
 		
-		religious_clothing_head = 3
-		religious_clothing_priest = 3
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 		
@@ -3344,8 +3326,8 @@ zoroastrian_group = {
 		
 		max_consorts = 0 # Can take concubines
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 5
+		religious_clothing_priest = 5
 
 		intermarry = zoroastrian
 		intermarry = mazdaki
@@ -3536,8 +3518,8 @@ eastern = {
 		priests_can_inherit = no
 		rel_head_defense = yes
 		
-		religious_clothing_head = 1
-		religious_clothing_priest = 1
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
 		
 		dynamic_cult = no
 	}
@@ -4858,8 +4840,8 @@ oldworld = {
 		
 		priests_can_marry = yes
 		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
+		religious_clothing_head = 18
+		religious_clothing_priest = 18
 		dynamic_cult = no
 	}
 	shengming = {
@@ -4900,8 +4882,8 @@ oldworld = {
 		priests_can_inherit = no
 		rel_head_defense = yes
 		
-		religious_clothing_head = 1
-		religious_clothing_priest = 1
+		religious_clothing_head = 14
+		religious_clothing_priest = 14
 		dynamic_cult = no
 	}
 	nousthreskeia = {
@@ -4976,8 +4958,8 @@ oldworld = {
 		
 		max_consorts = 3 #can take concubines
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 14
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
 		
 		scripture_name = UNDANG_UNDANG
 		piety_name = HARMONY
@@ -5014,8 +4996,8 @@ oldworld = {
 		
 		pacifist = yes
 		
-		religious_clothing_head = 14
-		religious_clothing_priest = 14
+		religious_clothing_head = 9
+		religious_clothing_priest = 9
 		
 		scripture_name = THE_TRUTH
 		
