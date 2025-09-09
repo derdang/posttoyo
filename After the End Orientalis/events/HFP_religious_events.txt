@@ -3586,6 +3586,176 @@ character_event = {
 	}
 }
 
+#Pope requests independence.
+letter_event = {
+	id = HFP.23020
+	desc = EVTDESCHFPA23020
+	border = GFX_event_letter_frame_religion
+
+	religion = catholic
+	
+	trigger = {
+
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHFP23020
+		custom_tooltip = { text = TT_EVTOPTAHFP23020 }
+		excommunicate = no
+		hidden_tooltip = { 
+			sound_effect = excommunication_lifted
+			FROM = { 
+				opinion = { 
+					modifier = opinion_repented_sins
+					who = ROOT
+					years = 20
+				}
+			}
+		}
+		hidden_tooltip = { 
+			FROM = { 
+				character_event = { id = HF.20234 } #Independence.
+			} 
+		}
+		hidden_tooltip = { character_event = { id = HFP.23021 } }
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = EVTOPTBHFP23020
+		hidden_tooltip = { 
+			FROM = { #Pope remembers what you asked for, no use spamming the decision, cheaty player.
+				opinion = {
+					modifier = opinion_pope_ex_demands_independence
+					who = ROOT
+					years = 100
+				} 
+			} 
+		} 
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Ruler forced to give independence to Papcy.
+character_event = {
+	id = HFP.23021
+	desc = {
+		text = EVTDESCAHFP23021
+		trigger = { 
+			religion_group = christian
+		}
+		picture = GFX_evt_pope
+	}
+	desc = {
+		text = EVTDESCBHFP23021
+		trigger = { 
+			NOR = { 
+				religion_group = christian
+				religion_group = pagan_group
+			}
+		}
+		picture = GFX_evt_bishop
+	}
+	desc = {
+		text = EVTDESCBHFP23021
+		trigger = { 
+			religion_group = pagan_group
+		}
+		picture = GFX_evt_tribal_shrine
+	}
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAHFP23021
+		ai_chance = { factor = 100 } 
+	}
+}
+
+#Pope demands to become your liege.
+letter_event = {
+	id = HFP.23022
+	desc = EVTDESCHFPA23022
+	border = GFX_event_letter_frame_religion
+	
+	religion = catholic
+	
+	trigger = {
+
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTAHFP23022
+		excommunicate = no
+		hidden_tooltip = { 
+			sound_effect = excommunication_lifted
+			FROM = { 
+				opinion = { 
+					modifier = opinion_repented_sins
+					who = ROOT
+					years = 20
+				}
+			}
+		}
+		set_defacto_liege = FROM
+		hidden_tooltip = { character_event = { id = HFP.23023 } }
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = EVTOPTBHFP23022
+		hidden_tooltip = { 
+			FROM = { #Pope remembers what you asked for, no use spamming the decision, cheaty player.
+				opinion = {
+					modifier = opinion_pope_ex_demands_vassalization
+					who = ROOT
+					years = 100
+				} 
+			} 
+		} 
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Ruler forced to become Papal vassal.
+character_event = {
+	id = HFP.23023
+	desc = EVTDESCAHFP23023
+	picture = GFX_evt_pope
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTAHFP23023
+		ai_chance = { factor = 100 } 
+	}
+}
+
+#on_imprisoned: stop pilgrimage.
+character_event = {
+	id = HFP.23024
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_character_flag = pilgrimage_to_canterbury
+		clr_character_flag = pilgrimage_to_hongkong
+		clr_character_flag = pilgrimage_to_koln
+		clr_character_flag = pilgrimage_to_manila
+		clr_character_flag = pilgrimage_to_santiago
+		clr_character_flag = pilgrimage_to_vladivostok
+		clr_character_flag = pilgrimage_to_axum
+		clr_character_flag = pilgrimage_to_moscow
+		clr_character_flag = abominable_pilgrimage
+		clr_character_flag = do_not_disturb
+		clr_character_flag = preparing_pilgrimage
+		clr_character_flag = activated_pilgrimage
+		hidden_tooltip = { remove_trait = on_pilgrimage }
+	}
+}
+
 #on_war_ended_victory: restore spouse under enemy's concubinage.
 # From = Attacker, Root = Defender
 character_event = {

@@ -2024,9 +2024,9 @@ on_pregnancy = {
 #character
 on_crusade_creation = {
 	events = {
- 		#200 # Christian Crusade against Muslims
- 		#201 # Christian Crusade against Pagans
- 		#321 # Christian Crusade against Heretics
+ 		200 # Christian Crusade against Muslims
+ 		201 # Christian Crusade against Pagans
+ 		321 # Christian Crusade against Heretics
  		320 # Jihad against Christians
  		322 # Jihad against Pagans
  		323 # Jihad against Heretics
@@ -2044,9 +2044,7 @@ on_marriage = {
 	events = {
  		500 # Royal Marriage Aid Duty
  		501 # Zoroastrian "Xwedodah" marriage
- 		502 # Messalian close kin marriage
  		HF.23777 # Doctrine close kin marriage
-		708 # Marriage Game achievement
 		CM.10023  # Chronicle entry
 		CM.10036 # Chronicle entry - primary heir
 		ZE.1015 # Disobedient daughter is unhappy with marriage
@@ -2067,7 +2065,6 @@ on_become_imprisoned_any_reason = {
 		MNM.9033 # Imprisoned councillor cannot hunt for relics
 		685 # Remove in-hiding trait on imprisonment
 		JD.10022 # Chinese councilor visiting is imprisoned - cancels visit
-		86867 # Cleanup event for Hajj.
 		HF.25803 # Childrens' Crusade leader has been captured, disband everything.
 		HFP.23024 # Stop pilgrimage when arrested.
 		HF.12305 # Legendary Hero has been imprisoned - notifies society members
@@ -2087,7 +2084,6 @@ on_became_imprisoned = {
 	events = {
  		151 # Was imprisoned
 		CM.10024  # Chronicle entry
-		86867 # Cleanup event for Hajj.
  	}
 }
 
@@ -2245,9 +2241,9 @@ on_death = {
 		cetic.10  # pass on imperial figurehead trait
 		cetic.539 #Succession penalty bureaucracy
 		cetic.540 #Succession high bureaucracy
-		cetic.323 #Grand Secretary dies with no heir
-		cetic.326 #Grand Secretary heir gets Grand Secretariate
-		cetic.328 #Grand Secretary heir dies
+		#cetic.323 #Grand Secretary dies with no heir
+		#cetic.326 #Grand Secretary heir gets Grand Secretariate
+		#cetic.328 #Grand Secretary heir dies
 	}
 	random_events = {
 		1 = RIP.29800 #reincarnation investigation
