@@ -661,6 +661,7 @@
 1178010 = { name= "R'mah" culture=jarai }
 1178011 = { name= "R'ô" culture=jarai }
 1178012 = { name= "Kpa" culture=jarai }
+1178013 = { name= "Rahlan" culture=jarai religion=catholic used_for_random=no }
 
 
 #Khmer Dynasties
@@ -3365,6 +3366,8 @@ coat_of_arms = {
 1384043 = { name="Phan" culture=cina }
 1384044 = { name="Teh" culture=cina }
 1384045 = { name="Sim" culture=cina }
+1384046 = { name="Wenming" culture=cina religion=mahayana used_for_random=no}
+1384047 = { name="Chen" culture=cina religion=wokou used_for_random=no }
 
 1550000 = { name="Zin" culture=myr }
 1550001 = { name="Aung" culture=myr
@@ -4545,6 +4548,7 @@ coat_of_arms = {
 }
 1597153 = { name="Jung" culture=hangugin religion=cheondoist }
 1597154 = { name="Lee" culture=hangugin religion=cheondoist }
+1597155 = { name="Hwangbo" culture=hangugin religion=concordanist used_for_random=no }
 
 1598000 = { name="Kim" culture=chosunin
 	coat_of_arms = {
@@ -5169,6 +5173,7 @@ coat_of_arms = {
 1842152 = { name="Tin" culture=hong_konger }
 1842153 = { name="Leung" culture=hong_konger }
 1842154 = { name="Cheung" culture=hong_konger }
+1842155 = { name="Kot" culture=hong_konger religion=concordanist used_for_random=no}
 
 1971000 = { name="Tung" culture=bai }
 1971001 = { name="Shen" culture=bai
@@ -5410,6 +5415,8 @@ coat_of_arms = {
 		}
 	}
 }
+1972157 = { name="Yam" culture=macanese religion=catholic used_for_random=no}
+
 1975000 = { name="Herzog" culture=manmeri
 	coat_of_arms = {
 		religion = concordanist
@@ -6827,7 +6834,7 @@ coat_of_arms = {
 1602336 = { name="Yasuhara" culture=kyushuan }
 1602337 = { name="Yohama" culture=kyushuan }
 1602338 = { name="Yoshida" culture=kyushuan }
-1602349 = { name="Yoshigawa" culture=kyushuan }
+1602339 = { name="Yoshigawa" culture=kyushuan }
 1602340 = { name="Yoshikawa" culture=kyushuan }
 1602341 = { name="Yoshimura" culture=kyushuan }
 1602342 = { name="Yoshioka" culture=kyushuan }
@@ -6837,6 +6844,7 @@ coat_of_arms = {
 1602346 = { name="Akimoto" culture=kyushuan }
 1602347 = { name="Akiyama" culture=kyushuan }
 1602348 = { name="Amano" culture=kyushuan }
+1602349 = { name="Horiguchi" culture=kyushuan religion=catholic used_for_random=no}
 
 
 1603000 = { name="Kakihara" culture=togoku
@@ -9129,6 +9137,7 @@ coat_of_arms = {
 		}
 	}
 }
+1771025 = { name="Conrad" culture=strine religion=concordanist used_for_random=no}
 
 1911000 = { name= "Saryglar" culture=tuvan }
 1911001 = { name= "Oorzhak" culture=tuvan }
@@ -26242,17 +26251,14 @@ coat_of_arms = {
 3923021 = { #Koxinga
 	name = "Zheng"
 	culture = taiwanese
-	used_for_random = no
 }
 3923022 = {
 	name = "Tang"
 	culture = taiwanese
-	used_for_random = no
 }
 3923023 = {
 	name = "Liu"
 	culture = taiwanese
-	used_for_random = no
 }
 3923024 = {
 	name = "Gúofù"
@@ -26329,6 +26335,18 @@ coat_of_arms = {
 			color = 0
 		}
 	}
+}
+3923030 = {
+	name = "Yang"
+	culture = taiwanese
+	religion = concordanist
+	used_for_random = no
+}
+3923031 = {
+	name = "Chi"
+	culture = taiwanese
+	religion = sanmin
+	used_for_random = no
 }
 
 3924001 = { name="Bituon" culture=cebuano }

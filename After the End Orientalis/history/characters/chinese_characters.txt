@@ -101,6 +101,31 @@
     2577.1.1={birth=yes}
     2700.1.1={death=yes}
 }
+1972005 = { #Patriarch of Macau
+	name="Óscar"
+    dynasty=1972157 # Yam
+    culture=macanese
+    religion=catholic
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=naive_appeaser
+    trait=kind
+    trait=just
+    trait=fatigue
+    trait=patient
+    trait=robust
+	trait=devout
+    2577.1.1={birth=yes}
+    2590.1.1={
+		name="Dominicus"
+		effect = {
+			add_rival = 1842005
+		}
+	}
+}
 
 ###Hong Kong Republic####
 1842000 = { #Head of House Shaw
@@ -202,6 +227,30 @@
     trait=erudite
     2570.1.1={birth=yes}
     2700.1.1={death=yes}
+}
+1842005 = { #Patriarch of Hong Kong
+	name="Andelu"
+    dynasty=1842155 # Kot
+    culture=hong_konger
+    religion=concordanist
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=grey_eminence
+    trait=socializer
+    trait=gregarious
+    trait=kind
+    trait=sympathy_oldworld
+	trait=sympathy_eastern
+	trait=patient
+    2577.1.1={birth=yes}
+    2590.1.1={
+		effect = {
+			add_rival = 1972005
+		}
+	}
 }
 #Denzhou
 1953000 = { #Duke of Denzhou
