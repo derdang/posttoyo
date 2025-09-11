@@ -4870,7 +4870,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		FROM = {
+		random_vassal = {
 			save_event_target_as = inspectee
 		}
 	}
