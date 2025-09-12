@@ -904,35 +904,6 @@ k_taoist = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
-d_shenist_reformed = {
-	color = { 226 241 182 }
-	
-	creation_requires_capital = no
-	
-	capital = 1642 # Yingtan/Mt. Longhu
-	
-	dignity = 200
-	
-	title = CELESTIAL_MASTER
-	title_female = CELESTIAL_MASTER
-	foa = CELESTIAL_MASTER_FOA
-	
-	short_name = yes
-	
-	religion = shenist_reformed
-	caliphate = yes
-	assimilate = no
-	
-	controls_religion = shenist_reformed
-	
-	allow = {
-		religion = shenist_reformed
-		num_of_holy_sites = 3
-		piety = 1000
-	}
-	
-	dynasty_title_names = no	# Will not be named "Seljuk", etc.
-}
 k_unificationist = {
 	color = { 220 20 60 }
 	
@@ -1117,4 +1088,296 @@ d_eastern_depot = {
 		}
 		religion = jibenyuanze
 	}
+}
+
+#Pagan Reformed Religious Head Titles (If people used Temporal Reformation)
+d_shenist_reformed = {
+	color = { 226 241 182 }
+	
+	creation_requires_capital = no
+	
+	capital = 1642 # Yingtan/Mt. Longhu
+	
+	dignity = 200
+	
+	title = CELESTIAL_MASTER
+	title_female = CELESTIAL_MASTER
+	foa = CELESTIAL_MASTER_FOA
+	
+	short_name = yes
+	
+	religion = shenist_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = shenist_reformed
+	
+	allow = {
+		religion = shenist_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_americanist_reformed = {
+	color= { 60 59 110 }
+	
+	creation_requires_capital = no
+	
+	capital = 973 #Guam
+	
+	dignity = 200
+	
+	title = GRAND_ADMIRAL
+	title_female = GRAND_ADMIRAL
+	foa = GRAND_ADMIRAL_FOA
+	
+	short_name = yes
+	
+	religion = americanist_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = americanist_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = americanist_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_ua_dab_reformed = {
+	color = { 255 191 51 }
+	
+	creation_requires_capital = no
+	
+	capital = 1489 #Guizhou
+	
+	dignity = 200
+	
+	title = HIGH_PRIEST
+	title_female = HIGH_PRIESTESS
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = ua_dab_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = ua_dab_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = ua_dab_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_seirei_reformed = {
+	color= { 155 155 235 }
+	
+	creation_requires_capital = no
+	
+	capital = 21 #Aomori
+	
+	dignity = 200
+	
+	title = HIGH_PRIEST
+	title_female = HIGH_PRIESTESS
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = seirei_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = seirei_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = seirei_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_muist_reformed = {
+	color={ 240 40 40 }
+	
+	creation_requires_capital = no
+	
+	capital = 758 #Seoul
+	
+	dignity = 200
+	
+	title = HIGH_PRIEST
+	title_female = HIGH_PRIESTESS
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = muist_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = muist_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = muist_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_donyi_polo_reformed = {
+	color = { 190 200 050 }
+	
+	creation_requires_capital = no
+	
+	capital = 1291 #Siang
+	
+	dignity = 200
+	
+	title = HIGH_PRIEST
+	title_female = HIGH_PRIESTESS
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = donyi_polo_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = donyi_polo_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = donyi_polo_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_khanist_reformed = {
+	color = { 0 102 179 }
+	
+	creation_requires_capital = no
+	
+	capital = 2023 #Ulaanbaatar
+	
+	dignity = 200
+	
+	title = GREAT_KHAN
+	title_female = GREAT_KHAN
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = khanist_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = khanist_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = khanist_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_mo_reformed = {
+	color = { 76 191 105 }
+	
+	creation_requires_capital = no
+	
+	capital = 1021 #Namzningz (Nanning)
+	
+	dignity = 200
+	
+	title = HIGH_PRIEST
+	title_female = HIGH_PRIESTESS
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = mo_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = mo_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = mo_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_chuma_reformed = {
+	color = { 191 155 47 }
+	
+	creation_requires_capital = no
+	
+	capital = 855 #Jilin
+	
+	dignity = 200
+	
+	title = COMMANDER
+	title_female = COMMANDER
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = chuma_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = chuma_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = chuma_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_heilong_reformed = {
+	color = { 243 246 251 }
+	
+	creation_requires_capital = no
+	
+	capital = 855 #Jilin
+	
+	dignity = 200
+	
+	title = COMMANDER
+	title_female = COMMANDER
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = heilong_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = heilong_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = heilong_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
