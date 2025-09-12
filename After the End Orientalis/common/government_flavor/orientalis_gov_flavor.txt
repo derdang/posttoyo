@@ -25,6 +25,14 @@ government_flavor = {
 	}
 }
 government_flavor = {
+	name = gov_pirate
+	graphics = GFX_great_asian_trade
+	priority = 2
+	trigger = {
+		government = pirate_government
+	}
+}
+government_flavor = {
 	name = gov_mandala_noble_state
 	graphics = GFX_evt_white_elephant
 	priority = 2

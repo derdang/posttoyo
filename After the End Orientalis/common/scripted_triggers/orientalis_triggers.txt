@@ -8,6 +8,14 @@ is_vajrayana = {
 		religion = azhali
 	}
 }
+ai_pirate_trigger = {
+	OR = {
+		trait = ambitious
+		trait = cynical
+		trait = cruel
+	}
+	NOT = { trait = content }
+}
 isnt_forced_to_theocracy = {
 	trigger_if = {
 		limit = { controls_religion = yes }

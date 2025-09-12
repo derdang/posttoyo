@@ -417,7 +417,6 @@ succession_laws = {
 					}
 				}
 				NAND = {
-					government = pirate_government
 					is_patrician = yes
 					independent = no
 				}
@@ -1245,7 +1244,10 @@ succession_laws = {
 				}
 			}
 			holder_scope = {
-				is_merchant_republic = yes
+				OR = {
+					is_merchant_republic = yes
+					government = pirate_government
+				}
 			}
 			NOT = { holder_scope = { government = chinese_imperial_government } }
 		}

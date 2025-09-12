@@ -1,156 +1,107 @@
-# decisions = {
-	# become_pirate = {
-		# is_high_prio = yes
-		# filter = self
-		# ai_target_filter = self
+decisions = {
+	become_pirate = {
+		is_high_prio = yes
+		filter = self
+		ai_target_filter = self
 		
-		# potential = {
-			# NOT = { government = pirate_government }
-			# war = no
-			# is_feudal = yes
-			# pirate_island_trigger = yes
-			# religion_group = pirate
-			# OR = {
-				# tier = COUNT
-				# tier = DUKE
-			# }
-			# independent = yes
-			# OR = {
-				# controls_religion = no
-				# religion_group = muslim
-				# has_religion_feature = religion_temporal_head
-				# AND = {
-					# religion = norse_pagan_reformed
-					# has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
-				# }
-			# }
-			# #NOT = { religion_group = muslim }
-			# NOT = { is_government_potential = roman_imperial_government }
-			# NOT = { is_government_potential = order_government }
-			# NAND = { 
-				# culture_group = tibetan_group
-				# OR = {
-					# religion = bon
-					# religion = bon_reformed
-					# religion = buddhist
-				# }
-				# higher_tier_than = BARON
-			# }
-			# NAND = { 
-				# tier = EMPEROR
-				# primary_title = { has_title_flag = pretender_chinese_empire }
-				# OR = {
-					# culture_group = chinese_group
-					# culture = khitan
-					# culture = tangut
-					# culture = jurchen
-					# has_character_flag = chinese_imperial_government_preserve
-				# }
-			# }
-			# is_patrician = no
-		# }
+		potential = {
+			NOT = { government = pirate_government }
+			war = no
+			is_feudal = yes
+			pirate_island_trigger = yes
+			OR = {
+				tier = COUNT
+				tier = DUKE
+			}
+			independent = yes
+			OR = {
+				controls_religion = no
+				religion_group = muslim
+				has_religion_feature = religion_temporal_head
+			}
+			NOT = { is_government_potential = order_government }
+			is_patrician = no
+		}
 		
-		# allow = {
-			# has_regent = no
-			# capital_holding_shipyard_trigger = yes
-		# }
+		allow = {
+			has_regent = no
+			capital_holding_shipyard_trigger = yes
+		}
+		effect = {
+			set_government_type = pirate_government
+		}
 		
-		# effect = {
-			# set_government_type = pirate_government
-		# }
+		revoke_allowed = {
+			always = no
+		}
 		
-		# revoke_allowed = {
-			# always = no
-		# }
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				ai_pirate_trigger = no
+			}
+		}
+	}
+	become_feudal = {
+		is_high_prio = no
+		filter = self
+		ai_target_filter = self
+		ai_check_interval = 60
 		
-		# ai_will_do = {
-			# factor = 1
-			# modifier = {
-				# factor = 0
-				# ai_pirate_trigger = no
-			# }
-		# }
-	# }
-	# become_feudal = {
-		# is_high_prio = no
-		# filter = self
-		# ai_target_filter = self
-		# ai_check_interval = 60
+		potential = {
+			government = pirate_government
+			war = no
+			is_feudal = yes
+			independent = yes
+			OR = {
+				controls_religion = no
+				religion_group = muslim
+				has_religion_feature = religion_temporal_head
+			}
+			NOT = { is_government_potential = order_government }
+			is_patrician = no
+		}
 		
-		# potential = {
-			# government = pirate_government
-			# war = no
-			# is_feudal = yes
-			# independent = yes
-			# NOT = { 
-				# religion_group = pirate
-			# }
-			# OR = {
-				# controls_religion = no
-				# religion_group = muslim
-				# has_religion_feature = religion_temporal_head
-				# AND = {
-					# religion = norse_pagan_reformed
-					# has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
-				# }
-			# }
-			# #NOT = { religion_group = muslim }
-			# NOT = { is_government_potential = roman_imperial_government }
-			# NOT = { is_government_potential = order_government }
-			# NAND = { 
-				# culture_group = tibetan_group
-				# OR = {
-					# religion = bon
-					# religion = bon_reformed
-					# religion = buddhist
-				# }
-				# higher_tier_than = BARON
-			# }
-			# NAND = { 
-				# tier = EMPEROR
-				# primary_title = { has_title_flag = pretender_chinese_empire }
-				# OR = {
-					# culture_group = chinese_group
-					# culture = khitan
-					# culture = tangut
-					# culture = jurchen
-					# has_character_flag = chinese_imperial_government_preserve
-				# }
-			# }
-			# is_patrician = no
-		# }
+		allow = {
+			has_regent = no
+			prestige = 500
+		}
 		
-		# allow = {
-			# has_regent = no
-			# prestige = 500
-		# }
+		effect = {
+			prestige = -500
+			if = {
+				limit = { religion_group = muslim }
+				set_government_type = diwan_government
+			}
+			else_if = {
+				limit = { is_sinic = yes }
+				set_government_type = sinic_bureaucracy_government
+			}
+			else_if = {
+				limit = { is_theravada = yes }
+				set_government_type = mandala_government
+			}
+			else = { set_government_type = feudal_government }
+		}
 		
-		# effect = {
-			# prestige = -500
-			# if = {
-				# limit = { religion_group = muslim }
-				# set_government_type = muslim_government
-			# }
-			# else = { set_government_type = feudal_government }
-		# }
+		revoke_allowed = {
+			always = no
+		}
 		
-		# revoke_allowed = {
-			# always = no
-		# }
-		
-		# ai_will_do = {
-			# factor = 0.01
-			# modifier = {
-				# factor = 0
-				# ai_pirate_trigger = yes
-			# }
-			# modifier = {
-				# factor = 3
-				# ai_pirate_trigger = no
-			# }
-		# }
-	# }
-# }
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				factor = 0
+				ai_pirate_trigger = yes
+			}
+			modifier = {
+				factor = 3
+				ai_pirate_trigger = no
+			}
+		}
+	}
+}
 targetted_decisions = {
 	call_grand_expedition = {
 		only_playable = yes
