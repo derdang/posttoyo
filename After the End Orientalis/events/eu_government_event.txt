@@ -24,8 +24,8 @@ character_event = {
 				NOT = { has_law = succ_confederation_elective }
 			}
 			AND = {
-				government = bureaucratic_government
-				NOT = { has_law = succ_bureaucratic_elective }
+				government = sinic_bureaucracy_government
+				NOT = { has_law = succ_dynastic_meritocratic }
 			}
 			AND = {
 				government = malaysian_confederacy
@@ -40,8 +40,13 @@ character_event = {
 			primary_title = { add_law = { law = succ_confederation_elective opinion_effect = no } }
 		}
 		if = {
-			limit = { government = bureaucratic_government }
-			primary_title = { add_law = { law = succ_bureaucratic_elective opinion_effect = no } }
+			limit = {
+				AND = {
+					government = sinic_bureaucracy_government
+					higher_tier_than = DUKE
+				}
+			}
+			primary_title = { add_law = { law = succ_dynastic_meritocratic opinion_effect = no } }
 		}
 		if = {
 			limit = { government = malaysian_confederacy }
@@ -58,17 +63,6 @@ character_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	
-	trigger = {
-		government = bureaucratic_government
-		any_vassal = {
-			government = feudal_government
-			NOT = { has_character_flag = refused_bureaucratic }
-			has_regent = no
-			war = no
-		}
-	}
-	
 	immediate = {
 		random_vassal = {
 			limit = {

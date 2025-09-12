@@ -465,10 +465,7 @@ cb_pro_imperial = {
 
 	is_valid_title = {
 		NOT = {
-			OR = {
-				top_liege = { has_landed_title = e_china }
-				top_liege = { has_title_flag = has_chinese_mandate }
-			}
+			top_liege = { government = sinic_bureaucracy_government }
 		}
 		OR = {
 			tier = emperor
@@ -480,7 +477,6 @@ cb_pro_imperial = {
 	on_success = {
 		FROM = {
 			hidden_tooltip = { disband_event_forces = faction_loyalists }
-			set_defacto_liege = e_china
 		}
 		any_attacker = {
 			limit = { character = ROOT }
@@ -494,12 +490,6 @@ cb_pro_imperial = {
 			hidden_tooltip = {
 				participation_scaled_prestige = 100 
 				disband_event_forces = faction_revolters
-			}
-		}
-		e_china = {
-			holder_scope = {
-				hidden_tooltip = { letter_event = { id = cetic.210 } }
-				reverse_imprison = FROM
 			}
 		}
 	}
@@ -594,16 +584,10 @@ cb_pro_imperial = {
 	
 	is_valid = {
 		OR = {
-			e_china = { holder_scope = { trait = figurehead } }
-			e_china = { holder_scope = { trait = weak_emperor } }
+			ROOT = { holder_scope = { trait = figurehead } }
+			ROOT = { holder_scope = { trait = weak_emperor } }
 		}
 		ROOT = {
-			NOT = {
-				OR = {
-					top_liege = { has_landed_title = e_china }
-					top_liege = { has_title_flag = has_chinese_mandate }
-				}
-			}
 			OR = {
 				liege = {
 					character = PREV # either independent
@@ -645,12 +629,6 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 		NAND = {
 			ROOT = {
 				has_law = bureaucratic_war_declaration_1
-			}
-			OR = {
-				e_china = {
-					has_holder = yes
-				}
-				has_title_flag = has_chinese_mandate
 			}
 		}
 	}
@@ -1102,7 +1080,7 @@ imperial_claim_war = { #Special CB used for imperial claims
 			is_landed = yes
 		}
 		FROM = {
-			has_landed_title = e_china
+			has_landed_title = ROOT
 		}
 	}
 	
@@ -1112,7 +1090,7 @@ imperial_claim_war = { #Special CB used for imperial claims
 			is_landed = yes
 		}
 		FROM = {
-			has_landed_title = e_china
+			has_landed_title = ROOT
 		}
 	}
 
@@ -1122,7 +1100,7 @@ imperial_claim_war = { #Special CB used for imperial claims
 			is_landed = yes
 		}
 		FROM = {
-			has_landed_title = e_china
+			has_landed_title = ROOT
 		}
 	}
 	
@@ -1256,22 +1234,12 @@ grand_secretary_war = {
 			NOT = {
 				trait = sanctioned_grand_secretary
 			}
-			NOR = {
-				has_landed_title = e_china
-				has_title_flag = has_chinese_mandate
-			}
-			government = chinese_mandate_government
+			government = sinic_bureaucracy_government
 			is_landed = yes
 		}
 		NAND = {
 			ROOT = {
 				has_law = bureaucratic_war_declaration_1
-			}
-			OR = {
-				e_china = {
-					has_holder = yes
-				}
-				has_title_flag = has_chinese_mandate
 			}
 		}
 		OR = {
@@ -1285,8 +1253,8 @@ grand_secretary_war = {
 			}
 		}
 		OR = {
-			e_china = { holder_scope = { trait = figurehead } }
-			e_china = { holder_scope = { trait = weak_emperor } }
+			ROOT = { holder_scope = { trait = figurehead } }
+			ROOT = { holder_scope = { trait = weak_emperor } }
 		}
 	}
 	
@@ -1310,8 +1278,8 @@ grand_secretary_war = {
 
 	is_valid = {
 		OR = {
-			e_china = { holder_scope = { trait = figurehead } }
-			e_china = { holder_scope = { trait = weak_emperor } }
+			ROOT = { holder_scope = { trait = figurehead } }
+			ROOT = { holder_scope = { trait = weak_emperor } }
 		}
 		FROM = {
 			OR = {
@@ -1369,7 +1337,7 @@ grand_secretary_war = {
 			}
 			remove_trait = grand_secretary_heir
 		}
-		e_china = {
+		ROOT = {
 			holder_scope = {
 				opinion = {
 					modifier = defied_norms
@@ -1383,13 +1351,8 @@ grand_secretary_war = {
 			add_trait = grand_secretary
 			if = {
 				limit = {
-					OR = {
-						liege = {
-							has_landed_title = e_china
-						}
-						liege = {
-							has_title_flag = has_chinese_mandate
-						}
+					liege = {
+						government = sinic_bureaucracy_government
 					}
 				}
 				give_minor_title = title_grand_secretary
@@ -1465,7 +1428,7 @@ grand_secretary_war = {
 			factor = 1.5
 			OR = {
 				AND = {
-					e_china = { 
+					ROOT = { 
 						holder_scope = {
 							reverse_opinion = {
 								who = ROOT
@@ -1473,7 +1436,7 @@ grand_secretary_war = {
 							}
 						}
 					}
-					e_china = { 
+					ROOT = { 
 						holder_scope = {
 							reverse_opinion = {
 								who = FROM
@@ -1488,7 +1451,7 @@ grand_secretary_war = {
 			factor = 1.6
 			OR = {
 				AND = {
-					e_china = { 
+					ROOT = { 
 						holder_scope = {
 							opinion = {
 								who = ROOT
@@ -1496,7 +1459,7 @@ grand_secretary_war = {
 							}
 						}
 					}
-					e_china = { 
+					ROOT = { 
 						holder_scope = {
 							opinion = {
 								who = FROM
@@ -1542,8 +1505,8 @@ sanc_grand_secretary_war = {
 			}
 		}
 		OR = {
-			e_china = { holder_scope = { trait = figurehead } }
-			e_china = { holder_scope = { trait = weak_emperor } }
+			ROOT = { holder_scope = { trait = figurehead } }
+			ROOT = { holder_scope = { trait = weak_emperor } }
 		}
 	}
 	
@@ -1565,8 +1528,8 @@ sanc_grand_secretary_war = {
 
 	is_valid = {
 		OR = {
-			e_china = { holder_scope = { trait = figurehead } }
-			e_china = { holder_scope = { trait = weak_emperor } }
+			ROOT = { holder_scope = { trait = figurehead } }
+			ROOT = { holder_scope = { trait = weak_emperor } }
 		}
 		FROM = {
 			OR = {
@@ -1621,11 +1584,11 @@ sanc_grand_secretary_war = {
 			}
 			remove_trait = grand_secretary_heir
 		}
-		e_china = {
+		ROOT = {
 			holder_scope = {
 				opinion = {
 					modifier = gnator_succeed
-					who = ROOT
+					who = FROM
 				}
 				character_event = { id = cetic.361 }
 			}
@@ -1636,13 +1599,8 @@ sanc_grand_secretary_war = {
 			add_trait = grand_secretary
 			if = {
 				limit = {
-					OR = {
-						liege = {
-							has_landed_title = e_china
-						}
-						liege = {
-							has_title_flag = has_chinese_mandate
-						}
+					liege = {
+						government = sinic_bureaucracy_government
 					}
 				}
 				give_minor_title = title_grand_secretary
@@ -1669,11 +1627,11 @@ sanc_grand_secretary_war = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { participation_scaled_prestige = 50 }
 		}
-		e_china = {
+		ROOT = {
 			holder_scope = {
 				opinion = {
 					modifier = gnator_fail
-					who = ROOT
+					who = FROM
 				}
 				character_event = { id = cetic.362 }
 			}
@@ -1698,11 +1656,11 @@ sanc_grand_secretary_war = {
 				}
 			}
 		}
-		e_china = {
+		ROOT = {
 			holder_scope = {
 				opinion = {
 					modifier = gnator_fail
-					who = ROOT
+					who = FROM
 				}
 			}
 		}

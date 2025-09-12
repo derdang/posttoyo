@@ -27,15 +27,6 @@ byzantine_elective_2 = {
 				has_minor_title = title_councilmember_emperor
 			}
 		}
-		additive_modifier = { #MPS
-			value = 10
-			vassal_of = FROMFROM 
-			OR = {
-				has_minor_title = title_senator
-				has_minor_title = title_senator_1
-				has_minor_title = title_senator_2
-			}
-		}
 		additive_modifier = { #And finally the generals.
 			value = 10
 			vassal_of = FROMFROM 
@@ -50,6 +41,44 @@ byzantine_elective_2 = {
 			FROMFROM = { 
 				holder_scope = { character = ROOT }
 			}
+		}
+		additive_modifier = { #The King-Emperor Tier Bureaucratic Ruler must have an untarnished body.
+			value = -50 
+			localisation_key = tooltip_imperial_vote_strength_emperor_deformed
+			FROMFROM = { 
+				holder_scope = { character = ROOT }
+				AND = {
+					government = sinic_bureaucracy_government
+					higher_tier_than = DUKE
+				}
+			}
+			is_adult = yes
+			OR = { 
+				trait = disfigured
+				OR = { trait = blinded trait = blind }
+				trait = eunuch
+				trait = dwarf
+				trait = mangled
+				trait = one_eyed
+				trait = one_handed
+				trait = one_legged
+				trait = severely_injured
+				trait = clubfooted
+				trait = harelip
+				trait = inbred
+			}
+		}
+		additive_modifier = { #Children are not leaders.
+			value = -40
+			localisation_key = tooltip_imperial_vote_strength_emperor_child
+			FROMFROM = { 
+				holder_scope = { character = ROOT }
+				AND = {
+					government = sinic_bureaucracy_government
+					higher_tier_than = DUKE
+				}
+			}
+			NOT = { is_adult = yes }
 		}
 		additive_modifier = { #Being a good orator.
 			value = 10 
@@ -278,7 +307,7 @@ byzantine_elective_2 = {
 			}
 			higher_tier_than = DUKE
 		}
-		additive_modifier = { #Chinese minor titles not so minor after all...
+		additive_modifier = { #Byzantine minor titles not so minor after all...
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_elector_despot
 			vassal_of = FROMFROM 
@@ -289,7 +318,7 @@ byzantine_elective_2 = {
 			}
 			has_minor_title = title_despot
 		}
-		additive_modifier = { #Chinese minor titles not so minor after all...
+		additive_modifier = { #Byzantine minor titles not so minor after all...
 			value = 5
 			localisation_key = tooltip_imperial_vote_strength_elector_sebastokrator
 			vassal_of = FROMFROM 
@@ -300,7 +329,7 @@ byzantine_elective_2 = {
 			}
 			has_minor_title = title_sebastokrator
 		}
-		additive_modifier = { #Chinese minor titles not so minor after all...
+		additive_modifier = { #Byzantine minor titles not so minor after all...
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_elector_caesar
 			vassal_of = FROMFROM 
@@ -311,7 +340,7 @@ byzantine_elective_2 = {
 			}
 			has_minor_title = title_caesar
 		}
-		additive_modifier = { #Chinese minor titles not so minor after all...
+		additive_modifier = { #Byzantine minor titles not so minor after all...
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_elector_kouropalates
 			vassal_of = FROMFROM 
@@ -321,17 +350,6 @@ byzantine_elective_2 = {
 				}
 			}
 			has_minor_title = title_kouropalates
-		}
-		additive_modifier = { #Chinese minor titles not so minor after all...
-			value = 5
-			localisation_key = tooltip_imperial_vote_strength_elector_anthypatos
-			vassal_of = FROMFROM 
-			NOT = { 
-				FROMFROM = { 
-					holder_scope = { character = ROOT }
-				}
-			}
-			has_minor_title = title_anthypatos
 		}
 		#Commanders
 		additive_modifier = { #The less commanders you have appointed, the more influential the remaining ones are.
@@ -1087,7 +1105,7 @@ byzantine_elective_2 = {
 		}
 		################################################################################
 
-		additive_modifier = { #Those crafty Chineses...
+		additive_modifier = { #Those crafty Sinics...
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_greek_intrigue
 			vassal_of = FROMFROM 
@@ -1098,9 +1116,9 @@ byzantine_elective_2 = {
 			}
 			intrigue = 8
 			NOT = { intrigue = 10 }
-			culture_group = byzantine
+			is_sinic = yes
 		}
-		additive_modifier = { #Those crafty Chineses...
+		additive_modifier = { #Those crafty Sinics...
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_greek_intrigue
 			vassal_of = FROMFROM 
@@ -1111,9 +1129,9 @@ byzantine_elective_2 = {
 			}
 			intrigue = 10
 			NOT = { intrigue = 12 }
-			culture_group = byzantine
+			is_sinic = yes
 		}
-		additive_modifier = { #Those crafty Chineses...
+		additive_modifier = { #Those crafty Sinics...
 			value = 20
 			localisation_key = tooltip_imperial_vote_strength_greek_intrigue
 			vassal_of = FROMFROM 
@@ -1124,9 +1142,9 @@ byzantine_elective_2 = {
 			}
 			intrigue = 12
 			NOT = { intrigue = 14 }
-			culture_group = byzantine
+			is_sinic = yes
 		}
-		additive_modifier = { #Those crafty Chineses...
+		additive_modifier = { #Those crafty Sinics...
 			value = 25
 			localisation_key = tooltip_imperial_vote_strength_greek_intrigue
 			vassal_of = FROMFROM 
@@ -1137,9 +1155,9 @@ byzantine_elective_2 = {
 			}
 			intrigue = 14
 			NOT = { intrigue = 16 }
-			culture_group = byzantine
+			is_sinic = yes
 		}
-		additive_modifier = { #Those crafty Chineses...
+		additive_modifier = { #Those crafty Sinics...
 			value = 30
 			localisation_key = tooltip_imperial_vote_strength_greek_intrigue
 			vassal_of = FROMFROM 
@@ -1150,9 +1168,9 @@ byzantine_elective_2 = {
 			}
 			intrigue = 16
 			NOT = { intrigue = 18 }
-			culture_group = byzantine
+			is_sinic = yes
 		}
-		additive_modifier = { #Those crafty Chineses...
+		additive_modifier = { #Those crafty Sinics...
 			value = 35
 			localisation_key = tooltip_imperial_vote_strength_greek_intrigue
 			vassal_of = FROMFROM 
@@ -1163,9 +1181,9 @@ byzantine_elective_2 = {
 			}
 			intrigue = 18
 			NOT = { intrigue = 20 }
-			culture_group = byzantine
+			is_sinic = yes
 		}
-		additive_modifier = { #Those crafty Chineses...
+		additive_modifier = { #Those crafty Sinics...
 			value = 40
 			localisation_key = tooltip_imperial_vote_strength_greek_intrigue
 			vassal_of = FROMFROM 
@@ -1176,9 +1194,9 @@ byzantine_elective_2 = {
 			}
 			intrigue = 20
 			NOT = { intrigue = 25 }
-			culture_group = byzantine
+			is_sinic = yes
 		}
-		additive_modifier = { #Those crafty Chineses...
+		additive_modifier = { #Those crafty Sinics...
 			value = 50
 			localisation_key = tooltip_imperial_vote_strength_greek_intrigue
 			vassal_of = FROMFROM 
@@ -1189,9 +1207,9 @@ byzantine_elective_2 = {
 			}
 			intrigue = 25
 			NOT = { intrigue = 30 }
-			culture_group = byzantine
+			is_sinic = yes
 		}
-		additive_modifier = { #Those crafty Chineses...
+		additive_modifier = { #Those crafty Sinics...
 			value = 65
 			localisation_key = tooltip_imperial_vote_strength_greek_intrigue
 			vassal_of = FROMFROM 
@@ -1201,11 +1219,11 @@ byzantine_elective_2 = {
 				}
 			}
 			intrigue = 30
-			culture_group = byzantine
+			is_sinic = yes
 		}
 		################################################################################
 
-		additive_modifier = { #Romans love their orations...
+		additive_modifier = { #Sinics love their orations...
 			value = 10
 			localisation_key = tooltip_imperial_vote_strength_roman_diplomacy
 			vassal_of = FROMFROM 
@@ -1216,9 +1234,9 @@ byzantine_elective_2 = {
 			}
 			diplomacy = 8
 			NOT = { diplomacy = 10 }
-			culture_group = apeninian
+			is_sinic = yes
 		}
-		additive_modifier = { #Romans love their orations...
+		additive_modifier = { #Sinics love their orations...
 			value = 15
 			localisation_key = tooltip_imperial_vote_strength_roman_diplomacy
 			vassal_of = FROMFROM 
@@ -1229,9 +1247,9 @@ byzantine_elective_2 = {
 			}
 			diplomacy = 10
 			NOT = { diplomacy = 12 }
-			culture_group = apeninian
+			is_sinic = yes
 		}
-		additive_modifier = { #Romans love their orations...
+		additive_modifier = { #Sinics love their orations...
 			value = 20
 			localisation_key = tooltip_imperial_vote_strength_roman_diplomacy
 			vassal_of = FROMFROM 
@@ -1242,9 +1260,9 @@ byzantine_elective_2 = {
 			}
 			diplomacy = 12
 			NOT = { diplomacy = 14 }
-			culture_group = apeninian
+			is_sinic = yes
 		}
-		additive_modifier = { #Romans love their orations...
+		additive_modifier = { #Sinics love their orations...
 			value = 25
 			localisation_key = tooltip_imperial_vote_strength_roman_diplomacy
 			vassal_of = FROMFROM 
@@ -1255,9 +1273,9 @@ byzantine_elective_2 = {
 			}
 			diplomacy = 14
 			NOT = { diplomacy = 16 }
-			culture_group = apeninian
+			is_sinic = yes
 		}
-		additive_modifier = { #Romans love their orations...
+		additive_modifier = { #Sinics love their orations...
 			value = 30
 			localisation_key = tooltip_imperial_vote_strength_roman_diplomacy
 			vassal_of = FROMFROM 
@@ -1268,9 +1286,9 @@ byzantine_elective_2 = {
 			}
 			diplomacy = 16
 			NOT = { diplomacy = 18 }
-			culture_group = apeninian
+			is_sinic = yes
 		}
-		additive_modifier = { #Romans love their orations...
+		additive_modifier = { #Sinics love their orations...
 			value = 35
 			localisation_key = tooltip_imperial_vote_strength_roman_diplomacy
 			vassal_of = FROMFROM 
@@ -1281,9 +1299,9 @@ byzantine_elective_2 = {
 			}
 			diplomacy = 18
 			NOT = { diplomacy = 20 }
-			culture_group = apeninian
+			is_sinic = yes
 		}
-		additive_modifier = { #Romans love their orations...
+		additive_modifier = { #Sinics love their orations...
 			value = 40
 			localisation_key = tooltip_imperial_vote_strength_roman_diplomacy
 			vassal_of = FROMFROM 
@@ -1294,9 +1312,9 @@ byzantine_elective_2 = {
 			}
 			diplomacy = 20
 			NOT = { diplomacy = 25 }
-			culture_group = apeninian
+			is_sinic = yes
 		}
-		additive_modifier = { #Romans love their orations...
+		additive_modifier = { #Sinics love their orations...
 			value = 50
 			localisation_key = tooltip_imperial_vote_strength_roman_diplomacy
 			vassal_of = FROMFROM 
@@ -1307,9 +1325,9 @@ byzantine_elective_2 = {
 			}
 			diplomacy = 25
 			NOT = { diplomacy = 30 }
-			culture_group = apeninian
+			is_sinic = yes
 		}
-		additive_modifier = { #Romans love their orations...
+		additive_modifier = { #Sinics love their orations...
 			value = 65
 			localisation_key = tooltip_imperial_vote_strength_roman_diplomacy
 			vassal_of = FROMFROM 
@@ -1319,7 +1337,7 @@ byzantine_elective_2 = {
 				}
 			}
 			diplomacy = 30
-			culture_group = apeninian
+			is_sinic = yes
 		}
 	}
 	candidate_vote_score = {
@@ -1400,9 +1418,9 @@ byzantine_elective_2 = {
 			FROMFROM = {
 				holder_scope = {
 					character = PREVPREV
-				}
-				NOT = {
-					is_rival = FROM #Unless is rival.
+					NOT = {
+						is_rival = FROM #Unless is rival.
+					}
 				}
 			}
 		}
@@ -1575,7 +1593,7 @@ byzantine_elective_2 = {
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_fellow_culture
 			NOT = { character = FROM }
-			NOT = { religion = blorgist }
+			
 			culture = FROM
 		}
 		additive_modifier = { 
@@ -1583,19 +1601,19 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_stranger
 			FROMFROM = { holder_scope = { culture = ROOT } } #Only a concern if Elector and current ruler share culture.
 			NOT = { culture = FROM }
-			NOT = { religion = blorgist }
+			
 		}
 		additive_modifier = { 
 			value = -30
 			localisation_key = tooltip_feudal_elector_vote_foreigner
 			FROMFROM = { holder_scope = { culture = ROOT } } #Only a concern if Elector and current ruler share culture.
 			NOT = { culture_group = FROM }
-			NOT = { religion = blorgist }
+			
 		}
 		additive_modifier = { #Candidate is a foreigner's pet 
 			value = -10
 			localisation_key = tooltip_feudal_elector_vote_strangers_pet
-			NOT = { religion = blorgist }
+			
 			FROM = { 
 				character = ROOT_FROMFROMFROM 
 				culture = ROOT
@@ -1605,7 +1623,7 @@ byzantine_elective_2 = {
 		additive_modifier = { #Candidate is a foreigner's pet 
 			value = -15
 			localisation_key = tooltip_feudal_elector_vote_foreigners_pet
-			NOT = { religion = blorgist }
+			
 			FROM = { 
 				character = ROOT_FROMFROMFROM 
 				culture = ROOT
@@ -1626,7 +1644,7 @@ byzantine_elective_2 = {
 			value = -30
 			localisation_key = tooltip_feudal_elector_vote_encroaching_foreigner
 			capital_scope = { de_jure_liege_or_above = FROMFROM }
-			NOT = { religion = blorgist }
+			
 			FROM = {
 				is_ruler = yes 
 				NOT = { is_vassal_or_below_of = ROOT_FROMFROM }
@@ -1654,9 +1672,10 @@ byzantine_elective_2 = {
 		additive_modifier = { #Infidel
 			value = -100
 			localisation_key = tooltip_feudal_elector_vote_infidel
-			NOT = { has_religion_feature = religion_cosmopolitan }
-			NOT = { has_religion_feature = religion_dogmatic }
-			NOT = { religion_group = indian_group }
+			NOT = { ROOT = { has_religion_feature = religion_cosmopolitan } }
+			NOT = { ROOT = { has_religion_feature = religion_dogmatic } }
+			NOT = { religion_group = eastern }
+			NOT = { religion_group = oldworld }
 			NOT = { religion_group = buddhist_group }
 			FROM = { 
 				religion_group = ROOT
@@ -1667,9 +1686,10 @@ byzantine_elective_2 = {
 		additive_modifier = { #Heathen
 			value = -150
 			localisation_key = tooltip_feudal_elector_vote_heathen
-			NOT = { has_religion_feature = religion_cosmopolitan }
-			NOT = { has_religion_feature = religion_dogmatic }
-			NOT = { religion_group = indian_group }
+			NOT = { ROOT = { has_religion_feature = religion_cosmopolitan } }
+			NOT = { ROOT = { has_religion_feature = religion_dogmatic } }
+			NOT = { religion_group = eastern }
+			NOT = { religion_group = oldworld }
 			NOT = { religion_group = buddhist_group }
 			FROM = {
 				ROOT = {
@@ -1684,16 +1704,17 @@ byzantine_elective_2 = {
 		additive_modifier = { #Heretic
 			value = -100
 			localisation_key = tooltip_feudal_elector_vote_heretic
-			NOT = { has_religion_feature = religion_cosmopolitan }
-			NOT = { has_religion_feature = religion_dogmatic }
-			NOT = { religion_group = indian_group }
+			NOT = { ROOT = { has_religion_feature = religion_cosmopolitan } }
+			NOT = { ROOT = { has_religion_feature = religion_dogmatic } }
+			NOT = { religion_group = eastern }
+			NOT = { religion_group = oldworld }
 			NOT = { religion_group = buddhist_group }
 			FROM = { is_heresy_of = ROOT }
 		}
 		additive_modifier = { #Dogmatics will hardly ever pick an infidel.
 			value = -100
 			localisation_key = tooltip_feudal_elector_vote_heathen_dogmatic
-			has_religion_feature = religion_dogmatic
+			ROOT = { has_religion_feature = religion_dogmatic }
 			FROM = { NOT = { religion = ROOT } }
 		}
 
@@ -1913,7 +1934,6 @@ byzantine_elective_2 = {
 		additive_modifier = { # Warrior culture prefers warriors
 			value = 15
 			localisation_key = tooltip_feudal_elector_vote_martial_education
-			this_is_warrior_culture_trigger = yes
 			FROM = { 
 				martial = 10
 				OR = { 
@@ -1925,7 +1945,6 @@ byzantine_elective_2 = {
 		additive_modifier = { # Diplomatic culture prefers stewards and diplomats
 			value = 15
 			localisation_key = tooltip_feudal_elector_vote_diplomatic_education
-			this_is_diplomatic_culture_trigger = yes
 			FROM = { 
 				OR = { 
 					AND = { 
@@ -1948,7 +1967,6 @@ byzantine_elective_2 = {
 		additive_modifier = { # Spiritual culture prefers scholars
 			value = 15
 			localisation_key = tooltip_feudal_elector_vote_spiritual_education
-			this_is_spiritual_culture_trigger = yes
 			FROM = { 
 				learning = 10
 				OR = { 
@@ -1980,7 +1998,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_playful
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = playful
 			}
@@ -1989,7 +2007,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_rowdy
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = rowdy
 			}
@@ -1998,7 +2016,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_haughty
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_diplomatic_culture_trigger = yes
+			ROOT = { this_is_diplomatic_culture_trigger = yes }
 			FROM = { 
 				trait = haughty
 			}
@@ -2007,7 +2025,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_conscientious
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_diplomatic_culture_trigger = yes
+			ROOT = { this_is_diplomatic_culture_trigger = yes }
 			FROM = { 
 				trait = conscientious
 			}
@@ -2016,7 +2034,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_curious
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_spiritual_culture_trigger = yes
+			ROOT = { this_is_spiritual_culture_trigger = yes }
 			FROM = { 
 				trait = curious
 			}
@@ -2025,7 +2043,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_idolizer
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_spiritual_culture_trigger = yes
+			ROOT = { this_is_spiritual_culture_trigger = yes }
 			FROM = { 
 				trait = idolizer
 			}
@@ -2079,7 +2097,7 @@ byzantine_elective_2 = {
 			value = -50
 			localisation_key = tooltip_feudal_elector_vote_incapable_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = incapable
 			}
@@ -2097,7 +2115,7 @@ byzantine_elective_2 = {
 			value = -30
 			localisation_key = tooltip_feudal_elector_vote_infirm_diplomat
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_diplomatic_culture_trigger = yes
+			ROOT = { this_is_diplomatic_culture_trigger = yes }
 			FROM = { 
 				trait = infirm
 			}
@@ -2128,7 +2146,7 @@ byzantine_elective_2 = {
 			value = -15
 			localisation_key = tooltip_feudal_elector_vote_maimed_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = maimed
 			}
@@ -2163,7 +2181,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_physician
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_spiritual_culture_trigger = yes
+			ROOT = { this_is_spiritual_culture_trigger = yes }
 			FROM = { 
 				trait = physician
 			}
@@ -2172,7 +2190,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_scarred
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = scarred
 			}
@@ -2181,7 +2199,7 @@ byzantine_elective_2 = {
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_scarred_mid
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = scarred_mid
 			}
@@ -2190,7 +2208,7 @@ byzantine_elective_2 = {
 			value = 15
 			localisation_key = tooltip_feudal_elector_vote_scarred_high
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = scarred_high
 			}
@@ -2355,7 +2373,7 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_disfigured
 			this_is_warrior_culture_trigger = no
 			NOT = { 
-				culture_group = byzantine
+				is_sinic = yes
 			}
 			FROM = { 
 				trait = disfigured
@@ -2364,7 +2382,7 @@ byzantine_elective_2 = {
 		additive_modifier = {
 			value = -100
 			localisation_key = tooltip_feudal_elector_vote_disfigured_byzantine
-			culture_group = byzantine
+			is_sinic = yes
 			FROM = { 
 				trait = disfigured
 			}
@@ -2372,9 +2390,9 @@ byzantine_elective_2 = {
 		additive_modifier = {
 			value = -50
 			localisation_key = tooltip_feudal_elector_vote_disfigured_warrior
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			NOT = { 
-				culture_group = byzantine
+				is_sinic = yes
 			}
 			FROM = { 
 				trait = disfigured
@@ -2391,7 +2409,7 @@ byzantine_elective_2 = {
 		additive_modifier = {
 			value = -15
 			localisation_key = tooltip_feudal_elector_vote_mangled_warrior
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = mangled
 			}
@@ -2438,9 +2456,9 @@ byzantine_elective_2 = {
 			value = 25
 			localisation_key = tooltip_feudal_elector_vote_born_in_the_purple
 			NOT = { character = FROM } #Do not judge yourself.
-			FROMFROM = { OR = { title = e_byzantium title = e_marblists } }
+			FROMFROM = { OR = { government = sinic_bureaucracy_government title = e_marblists } }
 			OR = {
-			culture_group = byzantine
+			is_sinic = yes
 			religion = marblists
 			}
 			FROM = { 
@@ -2453,7 +2471,7 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_despot
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = {
-			culture_group = byzantine
+			is_sinic = yes
 			religion = marblists
 			}
 			FROM = { 
@@ -2566,8 +2584,8 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_genius_diplomat
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				this_is_diplomatic_culture_trigger = yes
-				this_is_spiritual_culture_trigger = yes
+				ROOT = { this_is_diplomatic_culture_trigger = yes }
+				ROOT = { this_is_spiritual_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = genius
@@ -2578,8 +2596,8 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_genius
 			NOT = { character = FROM } #Do not judge yourself.
 			NOR = { 
-				this_is_diplomatic_culture_trigger = yes
-				this_is_spiritual_culture_trigger = yes
+				ROOT = { this_is_diplomatic_culture_trigger = yes }
+				ROOT = { this_is_spiritual_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = genius
@@ -2590,8 +2608,8 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_quick_diplomat
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				this_is_diplomatic_culture_trigger = yes
-				this_is_spiritual_culture_trigger = yes
+				ROOT = { this_is_diplomatic_culture_trigger = yes }
+				ROOT = { this_is_spiritual_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = quick
@@ -2602,8 +2620,8 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_quick
 			NOT = { character = FROM } #Do not judge yourself.
 			NOR = { 
-				this_is_diplomatic_culture_trigger = yes
-				this_is_spiritual_culture_trigger = yes
+				ROOT = { this_is_diplomatic_culture_trigger = yes }
+				ROOT = { this_is_spiritual_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = quick
@@ -2622,7 +2640,7 @@ byzantine_elective_2 = {
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_strong_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = strong
 			}
@@ -2648,7 +2666,7 @@ byzantine_elective_2 = {
 			value = -50
 			localisation_key = tooltip_feudal_elector_vote_dwarf_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = dwarf
 			}
@@ -2674,7 +2692,7 @@ byzantine_elective_2 = {
 			value = -60
 			localisation_key = tooltip_feudal_elector_vote_hunchback_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = hunchback
 			}
@@ -2692,7 +2710,7 @@ byzantine_elective_2 = {
 			value = -20
 			localisation_key = tooltip_feudal_elector_vote_imbecile_diplomat
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_diplomatic_culture_trigger = yes
+			ROOT = { this_is_diplomatic_culture_trigger = yes }
 			FROM = { 
 				trait = imbecile
 			}
@@ -2726,7 +2744,7 @@ byzantine_elective_2 = {
 			value = -10
 			localisation_key = tooltip_feudal_elector_vote_slow_diplomat
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_diplomatic_culture_trigger = yes
+			ROOT = { this_is_diplomatic_culture_trigger = yes }
 			FROM = { 
 				trait = slow
 			}
@@ -2752,7 +2770,7 @@ byzantine_elective_2 = {
 			value = -10
 			localisation_key = tooltip_feudal_elector_vote_weak_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = weak
 			}
@@ -2770,7 +2788,7 @@ byzantine_elective_2 = {
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_robust_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = robust
 			}
@@ -2780,8 +2798,8 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_dull_diplomat
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				this_is_diplomatic_culture_trigger = yes
-				this_is_spiritual_culture_trigger = yes
+				ROOT = { this_is_diplomatic_culture_trigger = yes }
+				ROOT = { this_is_spiritual_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = dull
@@ -2792,8 +2810,8 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_dull
 			NOT = { character = FROM } #Do not judge yourself.
 			NOR = { 
-				this_is_diplomatic_culture_trigger = yes
-				this_is_spiritual_culture_trigger = yes
+				ROOT = { this_is_diplomatic_culture_trigger = yes }
+				ROOT = { this_is_spiritual_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = dull
@@ -2812,7 +2830,7 @@ byzantine_elective_2 = {
 			value = -10
 			localisation_key = tooltip_feudal_elector_vote_feeble_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = feeble
 			}
@@ -2837,12 +2855,7 @@ byzantine_elective_2 = {
 				trait = lustful 
 				AND = { 
 					religion_group = pagan_group
-					NOT = { religion = bon }
-					NOT = { #religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
 				}
-				is_esoteric_religion_trigger = yes
 			}
 			NOT = { trait = chaste }
 			FROM = { 
@@ -2857,13 +2870,8 @@ byzantine_elective_2 = {
 				religion_group = christian 
 				religion_group = muslim
 				religion_group = jewish_group
-				religion_group = syncratic_group
-				religion_group = indian_group
+				religion_group = eastern
 				religion_group = buddhist_group
-				religion = hellenic_pagan
-				religion = hellenic_pagan_reformed
-				religion = bon
-				#religion = bon_reformed
 			}
 			NOT = { trait = gluttonous }
 			FROM = { 
@@ -2878,12 +2886,6 @@ byzantine_elective_2 = {
 				trait = gluttonous
 				AND = { 
 					religion_group = pagan_group
-					NOT = { religion = bon }
-					NOT = { #religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
-					NOT = { religion = novelist }
-					NOT = { religion = novelist_reformed }
 				}
 			}
 			NOT = { trait = temperate }
@@ -2898,8 +2900,6 @@ byzantine_elective_2 = {
 			OR = { 
 				religion_group = christian 
 				religion_group = muslim
-				religion_group = syncratic_group
-				is_communist_religion_trigger = yes
 			}
 			NOT = { trait = greedy }
 			FROM = { 
@@ -2939,7 +2939,7 @@ byzantine_elective_2 = {
 			NOT = { character = FROM } #Do not judge yourself.
 			NOR = { 
 				trait = wroth
-				this_is_warrior_culture_trigger = yes
+				ROOT = { this_is_warrior_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = patient
@@ -2951,7 +2951,7 @@ byzantine_elective_2 = {
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
 				trait = wroth
-				this_is_warrior_culture_trigger = yes
+				ROOT = { this_is_warrior_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = patient
@@ -2983,11 +2983,10 @@ byzantine_elective_2 = {
 				religion_group = christian
 				religion_group = muslim
 				religion_group = jewish_group
-				religion_group = syncratic_group
-				religion_group = indian_group
+				religion_group = eastern
 				religion_group = buddhist_group
 				religion = bon
-				#religion = bon_reformed
+				religion = bon_reformed
 			}
 			NOR = { 
 				trait = proud 
@@ -3004,10 +3003,6 @@ byzantine_elective_2 = {
 			OR = { 
 				AND = { 
 					religion_group = pagan_group
-					NOT = { religion = bon }
-					NOT = { #religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = proud
 				trait = envious
@@ -3023,14 +3018,9 @@ byzantine_elective_2 = {
 			OR = { 
 				AND = { 
 					religion_group = pagan_group
-					NOT = { religion = bon }
-					NOT = { #religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = lustful
 				trait = hedonist
-				is_esoteric_religion_trigger = yes
 			}
 			FROM = { 
 				trait = lustful
@@ -3063,10 +3053,6 @@ byzantine_elective_2 = {
 			OR = { 
 				AND = { 
 					religion_group = pagan_group
-					NOT = { religion = bon }
-					NOT = { #religion = bon_reformed }
-					NOT = { religion = hellenic_pagan }
-					NOT = { religion = hellenic_pagan_reformed }
 				}
 				trait = gluttonous
 				trait = hedonist
@@ -3102,8 +3088,6 @@ byzantine_elective_2 = {
 			OR = { 
 				AND = { 
 					religion_group = pagan_group
-					NOT = { religion = bon }
-					NOT = { #religion = bon_reformed }
 				}
 				trait = greedy
 			}
@@ -3118,10 +3102,8 @@ byzantine_elective_2 = {
 			OR = { 
 				religion_group = christian
 				religion_group = muslim
-				religion_group = syncratic_group
-				religion_group = indian_group
+				religion_group = eastern
 				religion_group = buddhist_group
-				is_communist_religion_trigger = yes
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -3156,7 +3138,7 @@ byzantine_elective_2 = {
 			value = 15
 			localisation_key = tooltip_feudal_elector_vote_wroth_positive
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = wroth
 			}
@@ -3187,9 +3169,7 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_proud_positive
 			NOT = { character = FROM } #Do not judge yourself.
 			religion_group = pagan_group
-			NOR = { 
-				religion = bon
-				#religion = bon_reformed
+			NOT = { 
 				trait = humble
 			}
 			FROM = { 
@@ -3203,8 +3183,7 @@ byzantine_elective_2 = {
 			OR = { 
 				religion_group = christian
 				religion_group = muslim
-				religion_group = syncratic_group
-				religion_group = indian_group
+				religion_group = eastern
 				religion_group = buddhist_group
 				religion_group = jewish_group
 			}
@@ -3227,7 +3206,7 @@ byzantine_elective_2 = {
 			religion_group = pagan_group
 			NOR = { 
 				religion = bon
-				#religion = bon_reformed
+				religion = bon_reformed
 				trait = content
 			}
 			FROM = { 
@@ -3242,11 +3221,8 @@ byzantine_elective_2 = {
 				religion_group = christian
 				religion_group = muslim
 				religion_group = jewish_group
-				religion_group = syncratic_group
-				religion_group = indian_group
+				religion_group = eastern
 				religion_group = buddhist_group
-				religion = bon
-				#religion = bon_reformed
 			}
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -3285,7 +3261,7 @@ byzantine_elective_2 = {
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_brave_positive_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			NOR = { 
 				trait = envious
 				trait = arbitrary #No need for consistency
@@ -3313,9 +3289,6 @@ byzantine_elective_2 = {
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
 				religion_group = buddhist_group
-				religion = jain
-				religion = bon
-				religion = bahai
 				pacifist = yes
 			}
 			FROM = { 
@@ -3329,8 +3302,6 @@ byzantine_elective_2 = {
 			religion_group = pagan_group
 			NOR = { 
 				trait = content
-				religion = bon
-				#religion = bon_reformed
 			}
 			FROM = { 
 				trait = content
@@ -3349,7 +3320,7 @@ byzantine_elective_2 = {
 			value = -25
 			localisation_key = tooltip_feudal_elector_vote_craven_negative_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = craven
 			}
@@ -3360,8 +3331,7 @@ byzantine_elective_2 = {
 			NOT = { character = FROM } #Do not judge yourself.
 			religion = FROM
 			OR = { 
-				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				ROOT = { has_religion_feature = religion_cosmopolitan }
 				trait = cynical
 			}
 			NOT = { 
@@ -3375,11 +3345,10 @@ byzantine_elective_2 = {
 			value = -20
 			localisation_key = tooltip_feudal_elector_vote_cynical_negative
 			NOT = { character = FROM } #Do not judge yourself.
-			NOT = { has_religion_feature = religion_dogmatic }
+			NOT = { ROOT = { has_religion_feature = religion_dogmatic } }
 			religion = FROM
 			NOR = { 
-				has_religion_feature = religion_cosmopolitan
-				religion = hellenic_pagan
+				ROOT = { has_religion_feature = religion_cosmopolitan }
 				trait = cynical
 			}
 			OR = { 
@@ -3394,7 +3363,7 @@ byzantine_elective_2 = {
 			value = -50
 			localisation_key = tooltip_feudal_elector_vote_cynical_negative_dogmatic
 			NOT = { character = FROM } #Do not judge yourself.
-			has_religion_feature = religion_dogmatic
+			ROOT = { has_religion_feature = religion_dogmatic }
 			religion = FROM
 			OR = { 
 				trait = arbitrary #No need for consistency
@@ -3421,8 +3390,8 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_erudite_positive
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				this_is_diplomatic_culture_trigger = yes
-				this_is_spiritual_culture_trigger = yes
+				ROOT = { this_is_diplomatic_culture_trigger = yes }
+				ROOT = { this_is_spiritual_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = erudite
@@ -3471,8 +3440,8 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_shy_negative
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				this_is_diplomatic_culture_trigger = yes
-				this_is_warrior_culture_trigger = yes
+				ROOT = { this_is_diplomatic_culture_trigger = yes }
+				ROOT = { this_is_warrior_culture_trigger = yes }
 			}
 			FROM = { 
 				trait = shy
@@ -3482,7 +3451,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_stubborn_positive
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = stubborn
 			}
@@ -3491,7 +3460,7 @@ byzantine_elective_2 = {
 			value = -10
 			localisation_key = tooltip_feudal_elector_vote_stubborn_negative
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_spiritual_culture_trigger = yes
+			ROOT = { this_is_spiritual_culture_trigger = yes }
 			FROM = { 
 				trait = stubborn
 			}
@@ -3515,7 +3484,7 @@ byzantine_elective_2 = {
 			NOT = { character = FROM } #Do not judge yourself.
 			religion = FROM
 			NOR = { 
-				has_religion_feature = religion_cosmopolitan
+				ROOT = { has_religion_feature = religion_cosmopolitan }
 				pacifist = yes
 				trait = cynical
 			}
@@ -3529,7 +3498,7 @@ byzantine_elective_2 = {
 			NOT = { character = FROM } #Do not judge yourself.
 			religion = FROM
 			OR = { 
-				has_religion_feature = religion_cosmopolitan
+				ROOT = { has_religion_feature = religion_cosmopolitan }
 				pacifist = yes
 				trait = cynical
 			}
@@ -3556,7 +3525,7 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_seaking_positive
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				this_is_warrior_culture_trigger = yes
+				ROOT = { this_is_warrior_culture_trigger = yes }
 				has_religion_feature = religion_seafaring
 			}
 			FROM = { 
@@ -3571,7 +3540,7 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_seaking_negative
 			NOT = { character = FROM } #Do not judge yourself.
 			NOR = { 
-				this_is_warrior_culture_trigger = yes
+				ROOT = { this_is_warrior_culture_trigger = yes }
 				has_religion_feature = religion_seafaring
 			}
 			FROM = { 
@@ -3585,7 +3554,7 @@ byzantine_elective_2 = {
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_shieldmaiden_positive
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			NOT = { has_religion_feature = religion_patriarchal }
 			FROM = { 
 				trait = shieldmaiden
@@ -3611,127 +3580,11 @@ byzantine_elective_2 = {
 				trait = shieldmaiden
 			}
 		}
-		additive_modifier = { #Praised for being a saoshyant_descendant 
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_saoshyant_descendant_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			religion_group = zoroastrian_group
-			FROM = {
-				trait = saoshyant_descendant
-			}
-		}
-		additive_modifier = { #Praised for being a possible_reincarnation_of_god 
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_possible_reincarnation_of_god_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			religion_group = zoroastrian_group
-			FROM = {
-				trait = possible_reincarnation_of_god
-			}
-		}
-		additive_modifier = { #Praised for being a real_reincarnation_of_god 
-			value = 30
-			localisation_key = tooltip_feudal_elector_vote_real_reincarnation_of_god_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			religion_group = zoroastrian_group
-			FROM = {
-				trait = real_reincarnation_of_god
-			}
-		}
-		additive_modifier = { #Praised for being an israeli_messiah 
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_israeli_messiah_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			religion = jewish
-			FROM = { 
-				trait = israeli_messiah
-			}
-		}
-		additive_modifier = { #Praised for being a mikraist_messiah 
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_mikraist_messiah_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			religion = mikraist
-			FROM = { 
-				trait = mikraist_messiah
-			}
-		}
-		additive_modifier = { #Praised for being a leninov 
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_leninov_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			religion = leninist
-			FROM = { 
-				trait = leninov 
-			}
-		}
-		additive_modifier = { #Praised for being a just lord
-			value = 10
-			localisation_key = tooltip_feudal_elector_vote_just_ruler_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			OR = {
-				religion = girondist
-				religion = concordianist
-				religion = communard
-			}
-			FROM = { 
-				trait = just_ruler
-			}
-		}
-		additive_modifier = { #Shunned for being an israeli_messiah 
-			value = -10
-			localisation_key = tooltip_feudal_elector_vote_israeli_messiah_negative
-			NOT = { character = FROM } #Do not judge yourself.
-			religion = mikraist
-			FROM = { 
-				trait = israeli_messiah
-			}
-		}
-		additive_modifier = { #Shunned for being a mikraist_messiah 
-			value = -10
-			localisation_key = tooltip_feudal_elector_vote_mikraist_messiah_negative
-			NOT = { character = FROM } #Do not judge yourself.
-			religion = jewish
-			FROM = { 
-				trait = mikraist_messiah
-			}
-		}
-		additive_modifier = { #Shunned for being a leninov 
-			value = -10
-			localisation_key = tooltip_feudal_elector_vote_leninov_negative
-			NOT = { character = FROM } #Do not judge yourself.
-			religion = stalinist
-			FROM = { 
-				trait = leninov 
-			}
-		}
-		additive_modifier = { #Shunned for being a tyrant
-			value = -10
-			localisation_key = tooltip_feudal_elector_vote_leninov_negative
-			NOT = { character = FROM } #Do not judge yourself.
-			OR = {
-				religion = girondist
-				religion = concordianist
-				religion = communard
-			}
-			FROM = {
-				trait = tyrant
-			}
-		}
-		additive_modifier = { #Shunned for being a sparrow 
-			value = -10
-			localisation_key = tooltip_feudal_elector_vote_sparrow_negative
-			NOT = { character = FROM } #Do not judge yourself.
-			OR = { religion = maoist religion = red_cult }
-			FROM = { 
-				trait = sparrow 
-			}
-		}
 		additive_modifier = { #Praised for being Adventurer
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_adventurer_positive
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = adventurer
 			}
@@ -3749,7 +3602,7 @@ byzantine_elective_2 = {
 			value = 5
 			localisation_key = tooltip_feudal_elector_vote_berserker_positive
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = berserker
 			}
@@ -3769,35 +3622,31 @@ byzantine_elective_2 = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = no
 			NOR = { 
-				culture_group = byzantine
-				religion = marblists
+				is_sinic = yes
 			}
 			FROM = { 
-				trait = blinded
+				OR = { trait = blinded trait = blind }
 			}
 		}
 		additive_modifier = { #Shunned for being blind
 			value = -80
 			localisation_key = tooltip_feudal_elector_vote_blinded_negative_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			NOT = { 
-				culture_group = byzantine
+				is_sinic = yes
 			}
 			FROM = { 
-				trait = blinded
+				OR = { trait = blinded trait = blind }
 			}
 		}
 		additive_modifier = { #Shunned for being blind
 			value = -150
 			localisation_key = tooltip_feudal_elector_vote_blinded_negative_byzantine
 			NOT = { character = FROM } #Do not judge yourself.
-			OR = {
-			culture_group = byzantine
-			religion = marblists
-			}
+			is_sinic = yes
 			FROM = { 
-				trait = blinded
+				OR = { trait = blinded trait = blind }
 			}
 		}
 		additive_modifier = { #Shunned for being eunuch
@@ -3806,9 +3655,8 @@ byzantine_elective_2 = {
 			NOT = { character = FROM } #Do not judge yourself.
 			this_is_warrior_culture_trigger = no
 			NOR = { 
-				culture_group = byzantine
+				is_sinic = yes
 				religion_group = muslim
-				religion = marblists
 			}
 			FROM = { 
 				trait = eunuch
@@ -3818,11 +3666,10 @@ byzantine_elective_2 = {
 			value = -75
 			localisation_key = tooltip_feudal_elector_vote_eunuch_negative_warrior
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			NOR = { 
-				culture_group = byzantine
+				is_sinic = yes
 				religion_group = muslim
-				religion = marblists
 			}
 			FROM = { 
 				trait = eunuch
@@ -3833,9 +3680,8 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_eunuch_negative_byzantine
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
-				culture_group = byzantine
+				is_sinic = yes
 				religion_group = muslim
-				religion = marblists
 			}
 			FROM = { 
 				trait = eunuch
@@ -4036,20 +3882,14 @@ byzantine_elective_2 = {
 			localisation_key = tooltip_feudal_elector_vote_sympathy_heathens
 			NOT = { character = FROM } #Do not judge yourself.
 			religion = FROM
-			NOT = { has_religion_feature = religion_cosmopolitan }
-			NOT = { religion_group = indian_group }
+			NOT = { ROOT = { has_religion_feature = religion_cosmopolitan } }
+			NOT = { religion_group = eastern }
 			NOT = { religion_group = buddhist_group }
-			NOT = { religion = bon }
-			OR = { 
-				AND = { 
-					NOT = { has_dlc = "Holy Fury"}
-					#religion = bon_reformed
-				}
-				pacifist = yes
-			}
+			NOT = { religion_group = oldworld }
+			pacifist = yes
 			OR = { 
 				trait = zealous
-				has_religion_feature = religion_dogmatic
+				ROOT = { has_religion_feature = religion_dogmatic }
 			}
 			OR = { 
 				trait = zealous
@@ -4065,6 +3905,7 @@ byzantine_elective_2 = {
 					trait = sympathy_indian
 					trait = sympathy_buddhist
 					trait = sympathy_oldworld
+					trait = sympathy_nautical
 					trait = sympathy_eastern
 					trait = sympathy_japonic
 				}
@@ -4074,7 +3915,7 @@ byzantine_elective_2 = {
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_giant_positive
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				trait = giant
 			}
@@ -4104,7 +3945,7 @@ byzantine_elective_2 = {
 			value = -10
 			localisation_key = tooltip_feudal_elector_vote_shape_negative
 			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = yes
+			ROOT = { this_is_warrior_culture_trigger = yes }
 			FROM = { 
 				OR = { 
 					trait = is_fat
@@ -4571,6 +4412,34 @@ byzantine_elective_2 = {
 				vassal_of = ROOT_FROMFROM 
 			}
 			FROM = { 
+				has_job_title = job_chancellor
+				vassal_of = ROOT_FROMFROM 
+			}
+			FROM = { 
+				has_job_title = job_spiritual
+				vassal_of = ROOT_FROMFROM 
+			}
+			FROM = { 
+				has_job_title = job_spymaster
+				vassal_of = ROOT_FROMFROM 
+			}
+			FROM = { 
+				has_job_title = job_treasurer
+				vassal_of = ROOT_FROMFROM 
+			}
+			FROM = { 
+				has_job_title = job_first_magistrate
+				vassal_of = ROOT_FROMFROM 
+			}
+			FROM = { 
+				has_job_title = job_second_magistrate
+				vassal_of = ROOT_FROMFROM 
+			}
+			FROM = { 
+				has_job_title = job_third_magistrate
+				vassal_of = ROOT_FROMFROM 
+			}
+			FROM = { 
 				has_minor_title = title_commander
 				vassal_of = ROOT_FROMFROM 
 			}
@@ -4610,8 +4479,7 @@ byzantine_elective_2 = {
 				trait = horse
 				trait = eunuch
 				trait = disfigured
-				trait = blinded
-				trait = eunuch
+				OR = { trait = blinded trait = blind }
 				trait = dwarf
 				trait = clubfooted
 				trait = harelip

@@ -161,4 +161,47 @@ succession_laws = {
 			always = no
 		}		
 	}
+	succ_dynastic_meritocratic = {
+		potential = {
+			holder_scope = {
+				higher_tier_than = DUKE
+				government = sinic_bureaucracy_government
+				is_merchant_republic = no
+				is_patrician = no
+				OR = {
+					independent = yes
+					NOT = {
+						any_demesne_title = {
+							is_vice_royalty = yes
+						}
+					}
+				}
+			}
+			OR = {
+				is_landless_type_title = no
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			NOT = { holder_scope = { government = confucian_bureaucracy } }
+			NOT = { holder_scope = { government = confederation_government } }
+			NOT = { holder_scope = { government = order_government } }
+			NOT = { holder_scope = { government = republic_government } }
+			NOT = { holder_scope = { government = pirate_government } }
+		}
+		allow = {
+			custom_tooltip = {
+				text = not_forced_tt
+				hidden_tooltip = {
+					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+				}
+			}
+		}
+		effect = {
+			succession = {
+				base_type = tanistry
+				voting_rules = byzantine_elective_2
+			}
+		}
+					
+	}
 }

@@ -268,10 +268,7 @@ decisions = {
 		only_playable = yes
 		
 		potential = {
-			OR = {
-				government = sinic_bureaucracy_government
-				government = chinese_mandate_government
-			}
+			government = sinic_bureaucracy_government
 			higher_real_tier_than = COUNT
 			prisoner = no
 			NOT = {
@@ -360,10 +357,7 @@ decisions = {
 		only_playable = yes
 		
 		potential = {
-			OR = {
-				government = sinic_bureaucracy_government
-				government = chinese_mandate_government
-			}
+			government = sinic_bureaucracy_government
 			higher_real_tier_than = COUNT
 			prisoner = no
 			NOT = {

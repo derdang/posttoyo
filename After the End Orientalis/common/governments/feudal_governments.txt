@@ -883,69 +883,7 @@ feudal_governments = {
 		
 		## Modifiers
 		court_size_modifier = 15
-	}
-	chinese_mandate_government = {
-		preferred_holdings = { CASTLE }
-		allowed_holdings = { 
-			CASTLE
-			FORT
-			HOSPITAL
-		}
-		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
-			TRIBAL
-		}
-		accepts_liege_governments = { # Gets the wrong religion modifier instead
-			feudal_government
-			diwan_government
-			sinic_bureaucracy_government
-		}
-		free_revoke_on_tiers = {
-			duke
-		}
-		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
-			tribal_government
-		}
-		frame_suffix = "_chineseimperial"
-		title_prefix = "bureaucracy_"
-		potential = {
-			primary_title = {
-				has_title_flag = has_chinese_mandate
-			}
-			NOT = {
-				primary_title = {
-					has_title_flag = devolved_bureaucracy
-				}
-			}
-			is_patrician = no
-			NOT = { is_government_potential = roman_imperial_government }
-			NOT = { is_government_potential = order_government }
-			NOT = { is_government_potential = chinese_imperial_government }
-		}
-		
-		color = { 0 127 95 }
-		
-		uses_piety_for_law_change = yes
-		
-		dukes_called_kings = yes
-		barons_need_dynasty = yes
-		free_retract_vassalage = yes
-		
-		#No free levies in offensive war
-		
-		can_build_tribal = no
-		
-		can_imprison_without_reason = no
-		can_revoke_without_reason = no
-		
-		ignore_in_vassal_limit_calculation = {
-			tribal_government
-		}
-		capital_move_delay = 200
-		
-		## Modifiers
-		court_size_modifier = 10
-	}
-	
+	}	
 	temporary_fake_theocracy_government = {
 		preferred_holdings = {
 			CASTLE

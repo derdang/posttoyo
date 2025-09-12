@@ -97,12 +97,22 @@ government_flavor = {
 	}
 }
 government_flavor = {
+	name = gov_sinic_bureaucracy_court_politics
+	graphics = GFX_evt_china_golden_age
+	priority = 1
+	trigger = {
+		government = sinic_bureaucracy_government
+		has_law = byzantine_elective_2
+	}
+}
+government_flavor = {
 	name = gov_sinic_bureaucracy_hegemony
 	graphics = GFX_evt_china_golden_age
 	priority = 1
 	trigger = {
 		government = sinic_bureaucracy_government
 		tier = emperor
+		NOT = {has_law = byzantine_elective_2}
 	}
 }
 government_flavor = {
