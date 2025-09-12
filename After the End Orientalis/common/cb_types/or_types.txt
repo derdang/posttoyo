@@ -2265,10 +2265,6 @@ tributary_mandala_cb = { #
 			has_dlc = "Holy Fury"
 			ROOT = {
 				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
 				NOR = {
 					trait = crowned_by_priest
 					trait = crowned_by_bishop

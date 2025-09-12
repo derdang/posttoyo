@@ -3966,10 +3966,6 @@ byzantine_elective_2 = {
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_baptized_by_pope
 			NOT = { character = FROM } #Do not judge yourself.
-			OR = { 
-				religion = catholic 
-				religion = fraticelli
-			} 
 			religion = FROM
 			FROM = { 
 				trait = baptized_by_pope
