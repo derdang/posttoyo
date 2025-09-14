@@ -849,7 +849,7 @@ feudal_governments = {
 						higher_tier_than = BARON
 					}
 					AND = {
-						NOT = {religion = hui}
+						NOT = {religion_group = muslim}
 						NOT = {culture_group = dal_nevostochnyy}
 						top_liege = {
 							government = sinic_bureaucracy_government
