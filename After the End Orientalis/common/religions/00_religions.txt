@@ -464,6 +464,7 @@ christian = {
 		
 		can_excommunicate = yes
 		can_grant_divorce = yes
+		autocephaly = yes
 		can_grant_invasion_cb = invasion
 		can_call_crusade = no
 		priests_can_inherit = no
@@ -504,7 +505,6 @@ christian = {
 		}
 
 		autocephaly = yes
-		pentarchy = yes
 		can_excommunicate = yes
 		can_grant_divorce = yes
 		can_grant_invasion_cb = invasion
@@ -948,6 +948,7 @@ christian = {
 		defensive_attrition = yes
 		hard_to_convert = yes
 		rel_head_defense = yes
+		autocephaly = yes
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 1
@@ -3908,6 +3909,43 @@ buddhist_group = {
 		religious_clothing_priest = 10
 		dynamic_cult = no
 	}
+	azhali = {
+		graphical_culture = chinesegfx
+
+		icon = 18
+		heresy_icon = 19
+		
+		color = { 180 220 55 }
+		
+		scripture_name = MAHAYANA_SUTRAS
+		priest_title = ACHARYA
+		
+		high_god_name = GOD_DHAMA
+		
+		god_names = {
+			 GOD_BUDDHA GOD_AMITABHA GOD_MAITREYA GOD_LOKESHVARA GOD_MAHAKALA
+		}
+		
+		evil_god_names = {
+			NARAKA MARA
+		}
+		
+		parent = mahayana
+		
+		piety_name = KARMA
+		character_modifier = { learning = 2 }
+		short_reign_opinion_year_mult = 0
+		
+		intermarry = eastern
+		
+		can_grant_divorce = yes
+		priests_can_marry = yes
+		priests_can_inherit = no
+		can_retire_to_monastery = yes 
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+	}
 	maha_nikaya = {
 		graphical_culture = buddhistgfx
 
@@ -4429,43 +4467,6 @@ buddhist_group = {
 		feminist = yes
 		female_temple_holders = yes
 		can_grant_divorce = yes
-		priests_can_inherit = no
-		can_retire_to_monastery = yes 
-		
-		religious_clothing_head = 10
-		religious_clothing_priest = 10
-	}
-	azhali = {
-		graphical_culture = chinesegfx
-
-		icon = 18
-		heresy_icon = 19
-		
-		color = { 180 220 55 }
-		
-		scripture_name = MAHAYANA_SUTRAS
-		priest_title = ACHARYA
-		
-		high_god_name = GOD_DHAMA
-		
-		god_names = {
-			 GOD_BUDDHA GOD_AMITABHA GOD_MAITREYA GOD_LOKESHVARA GOD_MAHAKALA
-		}
-		
-		evil_god_names = {
-			NARAKA MARA
-		}
-		
-		parent = mahayana
-		
-		piety_name = KARMA
-		character_modifier = { learning = 2 }
-		short_reign_opinion_year_mult = 0
-		
-		intermarry = eastern
-		
-		can_grant_divorce = yes
-		priests_can_marry = yes
 		priests_can_inherit = no
 		can_retire_to_monastery = yes 
 		

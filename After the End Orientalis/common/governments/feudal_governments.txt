@@ -827,6 +827,7 @@ feudal_governments = {
 						higher_tier_than = BARON
 					}
 					AND = {
+						NOT = {culture_group = dal_nevostochnyy}
 						OR = {
 							is_mahayana_chinese = yes
 							is_bureaucratic_religion = yes
@@ -849,6 +850,7 @@ feudal_governments = {
 					}
 					AND = {
 						NOT = {religion = hui}
+						NOT = {culture_group = dal_nevostochnyy}
 						top_liege = {
 							government = sinic_bureaucracy_government
 							OR = {
