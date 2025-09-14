@@ -1837,6 +1837,35 @@ decisions = {
 			always = no
 		}
 	}
+	change_jibenyuanze_branch = {
+		ai = no
+		
+		potential = {
+			OR = {religion = jibenyuanze secret_religion = jibenyuanze}
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedjibenyuanzebranch }
+		}
+		
+		allow = {
+			OR = {religion = jibenyuanze secret_religion = jibenyuanze}
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = sino.3 }				
+			}
+			custom_tooltip = { text = TXT_change_jibenyuanze_branch }
+			set_character_flag = changedjibenyuanzebranch
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 	change_quanzhen_branch = {
 		ai = no
 		

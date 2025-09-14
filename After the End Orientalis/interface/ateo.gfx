@@ -888,6 +888,36 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
+#Jibenyuanze Traits
+	spriteType = {
+		name = "GFX_trait_jibenyuanze_loyalty"
+		texturefile = "gfx/traits/jibenyuanze_loyalty.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_jibenyuanze_sword"
+		texturefile = "gfx/traits/jibenyuanze_sword.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_jibenyuanze_flame"
+		texturefile = "gfx/traits/jibenyuanze_flame.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_jibenyuanze_legalism"
+		texturefile = "gfx/traits/jibenyuanze_legalism.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
 #Nusantara Traits
 	spriteType = {
 		name = "GFX_trait_kejawen"
@@ -1382,6 +1412,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_change_sanmin_branch"
 		texturefile = "gfx/interface/change_sanmin_branch.dds"
+	}
+	spriteType = {
+		name = "GFX_change_jibenyuanze_branch"
+		texturefile = "gfx/interface/change_jibenyuanze_branch.dds"
 	}
 	spriteType = {
 		name = "GFX_claim_unification_church_leadership"

@@ -389,6 +389,76 @@ minsheng_sanmin = {
 	religious = yes
 	ruler_designer_cost = 0
 }
+##Jibenyuanze Schools
+jibenyuanze_loyalty = {
+	opposites = {
+		jibenyuanze_sword
+		jibenyuanze_flame
+		jibenyuanze_legalism
+	}
+
+	diplomacy = 2
+	vassal_opinion = 5
+	general_opinion = 5
+	
+	potential = { OR = { religion = jibenyuanze secret_religion=jibenyuanze } }
+	religious_branch = jibenyuanze
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+jibenyuanze_sword = {
+	opposites = {
+		jibenyuanze_loyalty
+		jibenyuanze_flame
+		jibenyuanze_legalism
+	}
+	
+	martial = 2
+	health = 0.5
+	monthly_character_prestige = 0.5
+
+	potential = { OR = { religion = jibenyuanze secret_religion=jibenyuanze } }
+	religious_branch = jibenyuanze
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+jibenyuanze_flame = {
+	opposites = {
+		jibenyuanze_loyalty
+		jibenyuanze_sword
+		jibenyuanze_legalism
+	}
+
+	learning = 2
+	vassal_opinion = 10
+	monthly_character_piety = 0.5
+
+	potential = { OR = { religion = jibenyuanze secret_religion=jibenyuanze } }
+	religious_branch = jibenyuanze
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+jibenyuanze_legalism = {
+	opposites = {
+		jibenyuanze_loyalty
+		jibenyuanze_sword
+		jibenyuanze_flame
+	}
+
+	intrigue = 2
+	vassal_opinion = -10
+
+	potential = { OR = { religion = jibenyuanze secret_religion=jibenyuanze } }
+	religious_branch = jibenyuanze
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
 ##Nusantara 
 kejawen = {
 	opposites = {

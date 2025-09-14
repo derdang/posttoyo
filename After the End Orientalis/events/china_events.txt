@@ -117,3 +117,103 @@ character_event = {
 		}
 	}
 }
+
+#Jibenyuanze Branch Trait Decision
+character_event = {
+	id = sino.3	
+	desc = EVTDESC_jibenyuanze1
+	picture = GFX_evt_chinese_thinkers
+	religion = jibenyuanze
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_jibenyuanze1
+		hidden_tooltip = {
+			remove_trait = jibenyuanze_sword
+			remove_trait = jibenyuanze_flame
+			remove_trait = jibenyuanze_legalism
+		}
+		add_trait = jibenyuanze_loyalty
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = EVTOPTB_jibenyuanze1
+		hidden_tooltip = {
+			remove_trait = jibenyuanze_loyalty
+			remove_trait = jibenyuanze_flame
+			remove_trait = jibenyuanze_legalism
+		}
+		add_trait = jibenyuanze_sword
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_jibenyuanze1
+		hidden_tooltip = {
+			remove_trait = jibenyuanze_sword
+			remove_trait = jibenyuanze_loyalty
+			remove_trait = jibenyuanze_legalism
+		}
+		add_trait = jibenyuanze_flame
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_otherjibenyuanze
+		hidden_tooltip = {
+			character_event = { id = sino.4 days=1 }				
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+character_event = {
+	id = sino.4
+	desc = EVTDESC_jibenyuanze1
+	picture = GFX_evt_chinese_thinkers
+	religion = jibenyuanze
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_jibenyuanze2
+		hidden_tooltip = {
+			remove_trait = jibenyuanze_sword
+			remove_trait = jibenyuanze_flame
+			remove_trait = jibenyuanze_loyalty
+		}
+		add_trait = jibenyuanze_legalism
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_otherjibenyuanze
+		hidden_tooltip = {
+			character_event = { id = sino.3 days=1}				
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
