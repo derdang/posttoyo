@@ -596,10 +596,9 @@ feudal_governments = {
 		court_size_modifier = 15
 	}
 	mandala_government = {
-		preferred_holdings = { CASTLE TEMPLE }
+		preferred_holdings = { CASTLE }
 		allowed_holdings = { 
-			CASTLE 
-			TEMPLE
+			CASTLE
 			FORT
 			HOSPITAL
 			TRADE_POST
@@ -617,52 +616,23 @@ feudal_governments = {
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
 		}
-		frame_suffix = "_theocraticfeudal"
+		frame_suffix = "_mandala"
 		title_prefix = "mandala_"
 		potential = {
+			isnt_forced_to_theocracy = yes
+			uses_mandala_government_trigger = yes
 			OR = {
-				controls_religion = no
-				religion_group = muslim
-				NOT = {religion_group = christian }
-				has_religion_feature = religion_temporal_head
+				is_theravada = yes
 				AND = {
-					religion = americanist_reformed
-					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
+					is_sea_pagan = yes
+					is_tribal = no
 				}
-			}
-			OR = { 
-				AND = {
-					OR = {
-						is_theravada = yes
-						AND = {
-							is_sea_pagan = yes
-							is_tribal = no
-						}
-						religion_group = indian_group
-						religion = pancasila
-						religion = kebatinan
-						religion = nusantara
-						religion = bani
-						religion = kan_imam_san
-					}
-					OR = {
-						culture_group = southwest_tai
-						culture_group = karenic
-						culture_group = austroasiatic
-						culture_group = cambodian
-						culture_group = burmic
-						culture_group = chamic
-						culture_group = malayan
-						culture_group = kadazandusun
-						culture_group = philippine
-						culture_group = nusantaran
-						culture_group = timor
-						culture_group = barrier_batak
-						culture_group = sulawesi
-						culture_group = maluku
-						culture_group = dayak
-					}
-				}
+				religion_group = indian_group
+				religion = pancasila
+				religion = kebatinan
+				religion = nusantara
+				religion = bani
+				religion = kan_imam_san
 			}
 			NAND = { 
 				tier = EMPEROR

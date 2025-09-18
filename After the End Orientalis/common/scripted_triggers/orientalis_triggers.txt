@@ -16,6 +16,25 @@ ai_pirate_trigger = {
 	}
 	NOT = { trait = content }
 }
+uses_mandala_government_trigger = {
+	OR = {
+		culture_group = southwest_tai
+		culture_group = karenic
+		culture_group = austroasiatic
+		culture_group = cambodian
+		culture_group = burmic
+		culture_group = chamic
+		culture_group = malayan
+		culture_group = kadazandusun
+		culture_group = philippine
+		culture_group = nusantaran
+		culture_group = timor
+		culture_group = barrier_batak
+		culture_group = sulawesi
+		culture_group = maluku
+		culture_group = dayak
+	}	
+}
 isnt_forced_to_theocracy = {
 	trigger_if = {
 		limit = { controls_religion = yes }
@@ -32,7 +51,6 @@ isnt_forced_to_theocracy = {
 					}
 				}
 			}
-			religion_group = muslim
 			religion = vissarionite
 			religion = kohhran_thianghlim
 			religion = nousthreskeia
