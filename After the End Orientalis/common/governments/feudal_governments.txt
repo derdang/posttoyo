@@ -121,12 +121,6 @@ feudal_governments = {
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = sinic_bureaucracy_government}
 			is_patrician = no
-			NAND = {
-				controls_religion = yes
-				OR = {
-					religion = nusantara
-				}
-			}
 			NOT = { top_liege = { government = diwan_government }}
 		}
 		
@@ -210,12 +204,6 @@ feudal_governments = {
 			NOT = { is_government_potential = roman_imperial_government }
 			NOT = { is_government_potential = order_government }
 			NOT = { is_government_potential = sinic_bureaucracy_government}
-			NAND = {
-				controls_religion = yes
-				OR = {
-					religion = nusantara
-				}
-			}
 			is_patrician = no
 		}
 		
@@ -641,11 +629,6 @@ feudal_governments = {
 					religion = americanist_reformed
 					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
 				}
-			}
-			higher_tier_than = BARON
-			NAND = {
-				religion = nusantara
-				controls_religion = yes
 			}
 			OR = { 
 				AND = {
