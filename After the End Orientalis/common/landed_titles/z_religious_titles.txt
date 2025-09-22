@@ -47,6 +47,26 @@ d_shengming = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+d_pancasila = {
+	color={ 204 40 68 }
+	color2={ 220 220 0 }
+	
+	capital = 445 #Jakarta
+	
+	title = "PRESIDENT"
+	foa = "PRESIDENT_FOA"
+	short_name = yes
+	
+	# Controls a religion
+	controls_religion = pancasila
+	
+	religion = pancasila
+	
+	caliphate = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+	
+}
 d_salafi = {
 	color={ 217 155 177 }
 	color2={ 220 220 0 }
