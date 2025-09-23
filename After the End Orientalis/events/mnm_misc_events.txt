@@ -568,6 +568,34 @@ character_event = {
 
 						join_society = monastic_order_mormon
 					}
+					
+					100 = {
+						trigger = { can_join_society = monastic_order_pancasila }
+
+						mult_modifier = {
+							factor = 3
+							OR = {
+								trait = zealous
+								trait = scholar
+								trait = theologian
+								trait = gardener
+								trait = monk
+								trait = nun
+								learning >= 16
+								is_priest = yes
+							}
+						}
+						mult_modifier = {
+							factor = 2
+							monastic_order_pancasila = { num_of_society_members < 15 }
+						}
+						mult_modifier = {
+							factor = 2
+							monastic_order_pancasila = { num_of_society_members < 10 }
+						}
+
+						join_society = monastic_order_pancasila
+					}
 
 					100 = {
 						trigger = { can_join_society = monastic_order_orthodox }

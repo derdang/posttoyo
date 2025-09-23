@@ -3906,6 +3906,18 @@ join_prev_monastic_order_society = {
 		limit = { PREV = { society_member_of = basaih_society } }
 		join_society = basaih_society
 	}
+	if = {
+		limit = { PREV = { society_member_of = monastic_order_jewish } }
+		join_society = monastic_order_jewish
+	}
+	if = {
+		limit = { PREV = { society_member_of = monastic_order_mormon } }
+		join_society = monastic_order_mormon
+	}
+	if = {
+		limit = { PREV = { society_member_of = monastic_order_pancasila } }
+		join_society = monastic_order_pancasila
+	}
 }
 
 clr_artifact_flagsmodifiers_effect = {

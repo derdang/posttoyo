@@ -315,6 +315,129 @@ decisions = {
 			factor = 1
 		}
 	}
+	reunify_indonesia = {
+		is_high_prio = yes
+		only_playable = yes
+		
+		potential = {
+			is_alternate_start = no
+			NOT = { has_global_flag = indonesia_unified }
+			is_playable = yes
+			independent = yes
+			is_nusantaran_sphere_no_ph = yes
+			e_indonesia = {
+				has_holder = no
+			}
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 2500
+			realm_size = 150
+			scaled_wealth = 4
+			war = no
+			any_demesne_title = {
+				tier = EMPEROR
+			}
+			OR = {
+				custom_tooltip = {
+					text = TXT_PANCASILA_INDONESIA
+					AND = {
+						religion = pancasila
+						completely_controls = e_wallacea
+						completely_controls = e_sumatra
+						completely_controls = e_java
+						completely_controls = e_borneo
+					}
+				}
+				custom_tooltip = {
+					text = TXT_MUSLIM_NUSANTARA
+					AND = {
+						religion_group = muslim
+						completely_controls = e_wallacea
+						completely_controls = e_sumatra
+						completely_controls = e_java
+						completely_controls = e_borneo
+					}
+				}
+				custom_tooltip = {
+					text = TXT_PAGAN_NUSANTARA
+					AND = {
+						OR = {
+							is_sea_pagan = yes
+							religion_group = buddhist_group
+							religion_group = indian_group
+						}
+						completely_controls = e_wallacea
+						completely_controls = e_sumatra
+						completely_controls = e_java
+						completely_controls = e_borneo
+					}
+				}
+			}
+			NOT = { has_global_flag = indonesia_unified }
+		}
+		effect = {
+			activate_title = { title = e_indonesia status = yes }
+			scaled_wealth = -2
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			any_demesne_title = {
+				limit = { tier = KING }
+				de_jure_liege = e_indonesia
+			}
+			hidden_tooltip = {
+				primary_title = {
+					if = {
+						limit = { tier = EMPEROR }
+						any_direct_de_jure_vassal_title = {
+							de_jure_liege = e_indonesia
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_patrician = no
+				}
+				primary_title = {
+					e_indonesia = {
+						grant_title = ROOT
+						copy_title_laws = PREV
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_patrician = yes
+				}
+				primary_title = {
+					e_indonesia = {
+						grant_title = ROOT
+						copy_title_laws = PREV
+					}
+				}
+			}
+			any_demesne_title = {
+				limit = {
+					tier = EMPEROR
+					NOT = { title = e_indonesia }
+				}
+				destroy_landed_title = THIS
+				hidden_tooltip = { activate_title = { title = THIS status = no } }
+			}
+			set_global_flag = indonesia_unified
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	form_lan_xang_empire = {
 		is_high_prio = yes
 		potential = {
