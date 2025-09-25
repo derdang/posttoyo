@@ -542,12 +542,15 @@
 	stewardship=4
 	intrigue=5
 	learning=5
-	trait=charismatic_negotiator
+	trait=scholarly_theologian
+	trait=mahayana_pureland
 	trait=scholar
-	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
+	trait=genius
+	trait=sturdy
+	trait=chaste
+	trait=kind
+	trait=humble
+	trait=honest
 	2580.1.1={birth=yes}
 }
 2876001={
@@ -579,12 +582,13 @@
 	stewardship=8
 	intrigue=5
 	learning=5
-	trait=martial_cleric
-	trait=shy
-	trait=humble
-	trait=content
-	trait=trusting
-	trait=just
+	trait=flamboyant_schemer
+	trait=seducer
+	trait=fair
+	trait=lovers_pox
+	trait=robust
+	trait=uncouth
+	trait=lustful
 	2580.1.1={birth=yes}
 }
 2876003={
@@ -597,12 +601,12 @@
 	stewardship=8
 	intrigue=5
 	learning=5
-	trait=martial_cleric
+	trait=elusive_shadow
 	trait=shy
-	trait=kind
+	trait=craven
 	trait=content
-	trait=trusting
-	trait=just
+	trait=paranoid
+	trait=robust
 	2580.1.1={birth=yes}
 }
 2876004={
@@ -891,8 +895,8 @@
 	stewardship=4
 	intrigue=5
 	learning=5
-	trait=naive_appeaser
-	trait=scholar
+	trait=martial_cleric
+	trait=scarred
 	trait=brave
 	trait=shrewd
 	trait=patient
@@ -966,15 +970,15 @@
 	stewardship=3
 	intrigue=3
 	learning=3
-	trait=naive_appeaser
+	trait=scholarly_theologian
 	trait=depressed
 	trait=twin
 	trait=scarred
 	trait=poet
 	trait=patient
 	trait=kind
-	trait=paranoid
 	trait=content
+	trait=lefthanded
 	trait=zealous
 	2570.1.1={birth=yes}
 }
@@ -990,14 +994,14 @@
 	stewardship=3
 	intrigue=3
 	learning=3
-	trait=naive_appeaser
+	trait=detached_priest
 	trait=depressed
 	trait=twin
 	trait=scarred
 	trait=poet
 	trait=patient
 	trait=kind
-	trait=paranoid
+	trait=mystic
 	trait=content
 	trait=zealous
 	2570.1.1={birth=yes}
@@ -1061,12 +1065,12 @@
 	stewardship=8
 	intrigue=5
 	learning=5
-	trait=tough_soldier
+	trait=martial_cleric
 	trait=lefthanded
-	trait=duelist
-	trait=content
+	trait=poet
+	trait=feeble
 	trait=patient
-	trait=brave
+	trait=genius
 	trait=twin
 	2580.1.1={birth=yes}
 }
@@ -1081,10 +1085,10 @@
 	stewardship=8
 	intrigue=5
 	learning=5
-	trait=tough_soldier
+	trait=skilled_tactician
 	trait=duelist
-	trait=kind
-	trait=content
+	trait=strong
+	trait=dull
 	trait=patient
 	trait=brave
 	trait=twin
@@ -1121,12 +1125,12 @@
 	stewardship=4
 	intrigue=5
 	learning=5
-	trait=charismatic_negotiator
-	trait=scholar
+	trait=mastermind_theologian
+	trait=schemer
 	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
+	trait=proud
+	trait=ambitious
+	trait=gregarious
 	2580.1.1={birth=yes}
 }
 #Minor Cochinchinese Lords
@@ -1140,13 +1144,14 @@
 	stewardship=4
 	intrigue=5
 	learning=5
-	trait=charismatic_negotiator
-	trait=scholar
+	trait=tough_soldier
+	trait=cynical
 	trait=brave
-	trait=content
+	trait=ambitious
 	trait=trusting
-	trait=lustful
+	trait=strong
 	2580.1.1={birth=yes}
+	2580.1.1={effect={add_claim=c_tay_ninh}}
 }
 2877019={
 	name="Due" #Duke of Dong Thap
@@ -1158,12 +1163,12 @@
 	stewardship=4
 	intrigue=5
 	learning=5
-	trait=charismatic_negotiator
-	trait=scholar
-	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
+	trait=intricate_webweaver
+	trait=shrewd
+	trait=wroth
+	trait=envious
+	trait=honest
+	trait=stubborn
 	secret_religion=mahayana
 	2580.1.1={birth=yes}
 }
@@ -1178,10 +1183,10 @@
 	intrigue=5
 	learning=5
 	trait=charismatic_negotiator
-	trait=scholar
-	trait=brave
+	trait=hedonist
+	trait=drunkard
 	trait=content
-	trait=trusting
+	trait=robust
 	trait=lustful
 	2580.1.1={birth=yes}
 }
@@ -1190,17 +1195,21 @@
 	dynasty=2877008
 	culture=cochinchinese
 	religion=cao_dai
-	martial=3
+	martial=8
 	diplomacy=3
 	stewardship=4
 	intrigue=5
 	learning=5
-	trait=charismatic_negotiator
-	trait=scholar
+	trait=brilliant_strategist
+	trait=strong
 	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
+	trait=shrewd
+	trait=strategist
+	trait=falconer
+	trait=patient
+	trait=diligent
+	trait=just
+	trait=jungle_terrain_leader
 	2580.1.1={birth=yes}
 }
 2877022={ #Strange Prince of Rach Goi(Reference)
@@ -1639,12 +1648,12 @@
 	stewardship=4
 	intrigue=5
 	learning=5
-	trait=charismatic_negotiator
-	trait=scholar
-	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
+	trait=naive_appeaser
+	trait=shrewd
+	trait=cynical
+	trait=craven
+	trait=kind
+	trait=just
 	2580.1.1={birth=yes}
 }
 1178002={ #Jarai Patriach of Hue
@@ -1785,18 +1794,40 @@
 	dynasty=1182001
 	culture=khrom
 	religion=maha_nikaya
+	secret_religion=orthodox
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=thrifty_clerk
+	trait=lunatic
+	trait=brave
+	trait=uncouth
+	trait=unyielding_leader
+	trait=lustful
+	2580.1.1={birth=yes}
+	2600.1.1={add_spouse=1182004}
+}
+1182004={
+	name="Olga" #Kievan Princess
+	dynasty=0 #Lowborn
+	female=yes
+	culture=primorskiy #Closest Thing to Ukraianian in the Mod
+	religion=orthodox
 	martial=3
 	diplomacy=3
 	stewardship=4
 	intrigue=5
 	learning=5
 	trait=charismatic_negotiator
-	trait=scholar
-	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
+	trait=kind
+	trait=robust
+	trait=zealous
+	trait=adventurer
+	trait=sympathy_eastern
 	2580.1.1={birth=yes}
+	2600.1.1={culture=khrom}
 }
 2500000={ #Hmong Lord
 	name="Alang"
@@ -1815,6 +1846,7 @@
 	trait=robust
 	trait=honest
 	2580.1.1={birth=yes}
+	2600.1.1={effect={add_friend=2875014}}
 }
 1025000={ #Tay-Nung Lord
 	name="Tayin"
