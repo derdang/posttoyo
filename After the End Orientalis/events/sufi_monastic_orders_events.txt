@@ -4050,15 +4050,6 @@ character_event = {
 			purity_add_patient		 = { add_trait = patient }
 			purity_add_diligent		 = { add_trait = diligent }
 		}
-		if = {
-			limit = {
-				trait = decadent
-			}
-			# random = {
-				# chance = 75
-				remove_trait = decadent
-			# }
-		}
 
 		clr_character_flag = purity_remove_cynical
 		clr_character_flag = purity_remove_gluttonous

@@ -13994,10 +13994,6 @@ character_event = {
 				factor = 2
 				trait = drunkard
 			}
-			modifier = {
-				factor = 2
-				trait = decadent
-			}
 		}
 	}
 	
@@ -14018,13 +14014,6 @@ character_event = {
 			modifier = {
 				factor = 5
 				trait = temperate
-			}
-			modifier = {
-				factor = 6
-				AND = {
-					religion_group = muslim
-					NOT = { trait = decadent }
-				}
 			}
 			modifier = {
 				factor = 3

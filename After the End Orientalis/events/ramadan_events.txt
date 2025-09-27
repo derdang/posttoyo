@@ -73,7 +73,6 @@ character_event = {
 		any_courtier = { 
 			prisoner = yes 
 			OR = {
-				NOT = { trait = decadent } 
 				NOT = { dynasty = ROOT } 
 			}
 		}
@@ -90,7 +89,6 @@ character_event = {
 			limit = { 
 				prisoner = yes 
 				OR = {
-					NOT = { trait = decadent } 
 					NOT = { dynasty = ROOT } 
 				} 
 			}

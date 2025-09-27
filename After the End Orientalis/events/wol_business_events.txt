@@ -3109,10 +3109,7 @@ character_event = {
 	
 	option = {
 		trigger = {
-			OR = {
-				trait = decadent
-				NOT = { religion_group = muslim }
-			}
+			NOT = { religion_group = muslim }
 		}
 		name = EVTOPTB_WOL_10303
 		add_character_modifier = {

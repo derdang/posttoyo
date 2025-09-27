@@ -1760,7 +1760,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				trait = disfigured
-				OR = { trait = blinded trait = blind }
+				trait = blinded
 				trait = one_eyed
 				trait = leper
 			}
@@ -1894,13 +1894,10 @@ defined_text = {
 			OR = {
 				trait = intricate_webweaver
 				trait = elusive_shadow
-				trait = conniving_puppetmaster
 				trait = fortune_builder
 				trait = midas_touched
-				trait = golden_sovereign
 				trait = scholarly_theologian
 				trait = mastermind_theologian
-				trait = erudite_oracle
 			}
 		}
 		localisation_key = COMPL_CLEVER
@@ -1910,7 +1907,6 @@ defined_text = {
 			OR = {
 				trait = charismatic_negotiator
 				trait = grey_eminence
-				trait = virtuoso_arbitrator
 			}
 		}
 		localisation_key = COMPL_ELOQUENT
@@ -1920,7 +1916,6 @@ defined_text = {
 			OR = {
 				trait = fortune_builder
 				trait = midas_touched
-				trait = golden_sovereign
 			}
 		}
 		localisation_key = COMPL_THRIFTY
@@ -1930,7 +1925,6 @@ defined_text = {
 			OR = {
 				trait = scholarly_theologian
 				trait = mastermind_theologian
-				trait = erudite_oracle
 			}
 		}
 		localisation_key = COMPL_LEARNED
@@ -2027,13 +2021,10 @@ defined_text = {
 			OR = {
 				trait = intricate_webweaver
 				trait = elusive_shadow
-				trait = conniving_puppetmaster
 				trait = fortune_builder
 				trait = midas_touched
-				trait = golden_sovereign
 				trait = scholarly_theologian
 				trait = mastermind_theologian
-				trait = erudite_oracle
 			}
 		}
 		localisation_key = String_Clever
@@ -2052,7 +2043,6 @@ defined_text = {
 			OR = {
 				trait = fortune_builder
 				trait = midas_touched
-				trait = golden_sovereign
 			}
 		}
 		localisation_key = String_Thrifty
@@ -2062,7 +2052,6 @@ defined_text = {
 			OR = {
 				trait = scholarly_theologian
 				trait = mastermind_theologian
-				trait = erudite_oracle
 			}
 		}
 		localisation_key = String_Learned
@@ -2161,7 +2150,6 @@ defined_text = {
 				trait = flamboyant_schemer
 				trait = intricate_webweaver
 				trait = elusive_shadow
-				trait = conniving_puppetmaster
 			}
 		}
 		localisation_key = INSULT_SCHEMING
@@ -2173,7 +2161,6 @@ defined_text = {
 				trait = underhanded_rogue
 				trait = charismatic_negotiator
 				trait = grey_eminence
-				trait = virtuoso_arbitrator
 			}
 		}
 		localisation_key = INSULT_TWOFACED
@@ -2185,7 +2172,6 @@ defined_text = {
 				trait = thrifty_clerk
 				trait = charismatic_negotiator
 				trait = grey_eminence
-				trait = virtuoso_arbitrator
 			}
 		}
 		localisation_key = INSULT_MISERLY
@@ -2460,10 +2446,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 			society_member_of = the_satanists
-			OR = {
-				religion_group = muslim
-				is_jadidist_religion_trigger = yes
-			}
+			religion_group = muslim
 		}
 	}
 	text = {
@@ -2510,13 +2493,6 @@ defined_text = {
 			society_member_of = davy_jones_mates
 		}
 	}
-	text = {
-		localisation_key = String_The_King_in_Yellow
-		trigger = {
-			society_member_of = starry_wisdom
-			is_esoteric_religion_trigger = yes
-		}
-	}
 
 	fallback_text = {
 		localisation_key = String_Random_Devil
@@ -2537,10 +2513,7 @@ defined_text = {
 		localisation_key = String_sihr
 		trigger = { 
 			society_member_of = the_satanists 
-			OR = {
-				religion_group = muslim
-				is_jadidist_religion_trigger = yes
-			}
+			religion_group = muslim
 		} 
 	}
 	text = {
@@ -2610,10 +2583,7 @@ defined_text = {
 		trigger = { 
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 			society_member_of = the_satanists 
-			OR = {
-				religion_group = muslim
-				is_jadidist_religion_trigger = yes
-			}
+			religion_group = muslim
 		} 
 	}
 	text = {
@@ -2650,14 +2620,14 @@ defined_text = {
 		localisation_key = String_dark_one
 		trigger = {
 			society_member_of = starry_wisdom
-			religion_openly_nousthreskeia_or_reformed_trigger = yes
+			religion_openly_nousthreskeia_trigger = yes
 		}
 	}
 	text = {
 		localisation_key = String_hybrid
 		trigger = {
 			society_member_of = starry_wisdom 
-			religion_openly_nousthreskeia_or_reformed_trigger = no
+			religion_openly_nousthreskeia_trigger = no
 		}
 	}
 	fallback_text = {
@@ -2685,10 +2655,7 @@ defined_text = {
 		trigger = { 
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 			society_member_of = the_satanists 
-			OR = {
-				religion_group = muslim
-				is_jadidist_religion_trigger = yes
-			}
+			religion_group = muslim
 		} 
 	}
 	text = {
@@ -2725,14 +2692,14 @@ defined_text = {
 		localisation_key = String_dark_ones
 		trigger = {
 			society_member_of = starry_wisdom
-			religion_openly_nousthreskeia_or_reformed_trigger = yes
+			religion_openly_nousthreskeia_trigger = yes
 		}
 	}
 	text = {
 		localisation_key = String_hybrids
 		trigger = {
 			society_member_of = starry_wisdom 
-			religion_openly_nousthreskeia_or_reformed_trigger = no
+			religion_openly_nousthreskeia_trigger = no
 		}
 	}
 	fallback_text = {
@@ -2916,10 +2883,7 @@ defined_text = {
 		trigger = {
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 			society_member_of = the_satanists
-			OR = {
-				religion_group = muslim
-				is_jadidist_religion_trigger = yes
-			}
+			religion_group = muslim
 		}
 	}
 	text = {
@@ -2957,17 +2921,10 @@ defined_text = {
 		trigger = { society_member_of = davy_jones_mates }
 	}
 	text = {
-		localisation_key = String_Glory_to_The_Feaster
-		trigger = {
-			society_member_of = starry_wisdom
-			is_esoteric_religion_trigger = yes
-		}
-	}
-	text = {
 		localisation_key = String_Glory_to_Deneb
 		trigger = {
 			society_member_of = starry_wisdom
-			religion_openly_nousthreskeia_or_reformed_trigger = yes
+			religion_openly_nousthreskeia_trigger = yes
 		}
 	}
 	fallback_text = {
@@ -9030,44 +8987,27 @@ defined_text = {
 	text = {
 		trigger = {
 			society_member_of = starry_wisdom
-			religion_openly_nousthreskeia_or_reformed_trigger = yes
+			religion_openly_nousthreskeia_trigger = yes
 		}
 		localisation_key = String_Deneb
 	}
 	text = {
 		trigger = {
 			society_member_of = starry_wisdom
-			NOT = { religion_group = esoteric }
 		}
 		localisation_key = String_The_Crawling_Chaos
 	}
 	text = {
 		trigger = {
 			society_member_of = starry_wisdom
-			NOT = { religion_group = esoteric }
 		}
 		localisation_key = String_Randall_Flag
 	}
 	text = {
 		trigger = {
 			society_member_of = starry_wisdom
-			NOT = { religion_group = esoteric }
 		}
 		localisation_key = String_The_Beast
-	}
-	text = {
-		trigger = {
-			society_member_of = starry_wisdom
-			is_esoteric_religion_trigger = yes
-		}
-		localisation_key = String_The_King_in_Yellow
-	}
-	text = {
-		trigger = {
-			society_member_of = starry_wisdom
-			is_esoteric_religion_trigger = yes
-		}
-		localisation_key = String_The_Feaster
 	}
 	fallback_text = {
 		localisation_key = String_Random_Devil
@@ -9272,23 +9212,9 @@ defined_text = {
 	text = {
 		trigger = {
 			society_member_of = starry_wisdom
-			religion_openly_nousthreskeia_or_reformed_trigger = yes
+			religion_openly_nousthreskeia_trigger = yes
 		}
 		localisation_key = String_Odinochki
-	}
-	text = {
-		trigger = {
-			society_member_of = starry_wisdom
-			NOT = { religion_group = esoteric }
-		}
-		localisation_key = String_MiGo
-	}
-	text = {
-		trigger = {
-			society_member_of = starry_wisdom
-			is_esoteric_religion_trigger = yes
-		}
-		localisation_key = String_Carcosan
 	}
 	fallback_text = {
 		localisation_key = String_Demon_Prince

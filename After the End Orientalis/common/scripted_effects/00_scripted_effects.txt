@@ -21954,17 +21954,6 @@ assign_random_nickname_effect = {
 			}
 			give_nickname = nick_the_unchaste
 		}
-		5 = {
-			trigger = {
-				uses_decadence = yes
-				decadence = 50
-			}
-			modifier = {
-				factor = 4
-				decadence = 70
-			}
-			give_nickname = nick_the_decadent
-		}
 		10 = {
 			trigger = {
 				has_unpleasant_personality_trigger = yes

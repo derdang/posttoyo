@@ -42,16 +42,15 @@ character_event = {
 		is_allowed_to_loot = yes
 		NOT = { trait = content }
 		NOT = { trait = craven }
-		NOT = { trait = decadent }
 		OR = {
 			AND = {
 				any_liege = {
 					government = nomadic_government
 				}
-				culture_group = altaic
+				culture_group = mongol
 			}
-			religion = norse_pagan
-			religion = norse_pagan_reformed
+			religion = khanist
+			religion = khanist_reformed
 			AND = {
 				trait = ambitious
 				martial = 15
@@ -60,7 +59,6 @@ character_event = {
 				NOR = {
 					trait = craven
 					trait = content
-					trait = decadent
 					any_child = {
 						OR = {
 							is_heir = yes

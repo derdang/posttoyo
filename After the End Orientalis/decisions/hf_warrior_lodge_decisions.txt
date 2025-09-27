@@ -100,17 +100,6 @@ targeted_decisions = {
 					}
 
 					trigger_if = {
-						limit = { FROM = { religion_group = muslim } }
-
-						custom_tooltip = {
-							text = duel_tooltip_decadent
-
-							trait = decadent
-							FROM = { trait = zealous }
-						}
-					}
-
-					trigger_if = {
 						limit = {
 							any_quester_targeting_this = { # FROM must have this as a quest target
 								character = FROM
@@ -344,14 +333,6 @@ targeted_decisions = {
 							trait = excommunicated
 						}
 					}
-					#trigger_if = {
-					#	limit = { FROM = { religion_group = muslim } }
-					#	custom_tooltip = {
-					#		text = duel_tooltip_decadent
-					#		FROM = { trait = zealous }
-					#		trait = decadent
-					#	}
-					#}
 					trigger_if = {
 						limit = {
 							any_quester_targeting_this = { #FROM must have this as a quest target

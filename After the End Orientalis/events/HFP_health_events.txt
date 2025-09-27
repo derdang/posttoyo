@@ -609,12 +609,6 @@ character_event = {
 		}
 		if = { 
 			limit = { 
-				trait = decadent
-			}
-			change_variable = { which = physique_variable value = 2 }
-		}
-		if = { 
-			limit = { 
 				trait = monk
 				trait = diligent
 			}

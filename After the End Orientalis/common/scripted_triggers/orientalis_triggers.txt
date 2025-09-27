@@ -16,6 +16,14 @@ ai_pirate_trigger = {
 	}
 	NOT = { trait = content }
 }
+religion_openly_nousthreskeia_trigger = {
+	custom_tooltip = {
+		text = religion_openly_nousthreskeia_trigger
+		hidden_trigger = {
+			religion = nousthreskeia
+		}
+	}
+}
 uses_mandala_government_trigger = {
 	OR = {
 		culture_group = southwest_tai
