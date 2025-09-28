@@ -83,6 +83,11 @@ character_event = {
 			add_province_modifier = { name = landmark_angkor_wat duration  = -1 }
 		}
 		
+	#The Philippines
+		202 = {
+			add_province_modifier = { name = landmark_san_lazaro_hippodrome duration  = -1 }
+		}
+		
 	#Pennisular Malaysia
 		338 = {
 			add_province_modifier = { name = landmark_petronas_towers duration  = -1 }
@@ -106,6 +111,9 @@ character_event = {
 		}
 		1902 = {
 			add_province_modifier = { name = landmark_qufu_palace duration  = -1 }
+		}
+		989 = {
+			add_province_modifier = { name = landmark_taipa_raceway duration  = -1 }
 		}
 		set_global_flag = landmarks_set
 	}
