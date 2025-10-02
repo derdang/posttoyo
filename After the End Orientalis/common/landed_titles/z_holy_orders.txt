@@ -373,3 +373,24 @@ d_chollima_riders = {
 	
 	mercenary_type = d_chollima_riders_composition
 }
+d_kathmandu_battle_nuns = {
+	color={ 239 200 37 }
+	color2={ 255 255 255 }
+		
+	capital = 1973 # Lhasa
+
+	culture = nepali
+	religion = gelugpa
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	holy_order = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_free_rangers_composition
+}
