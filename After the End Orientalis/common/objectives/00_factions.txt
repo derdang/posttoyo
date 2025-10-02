@@ -1619,7 +1619,7 @@ faction_succ_gavelkind = {
 			factor = 0
 			OR = {
 				has_law = succ_feudal_elective
-				has_law = succ_hre_elective
+				#has_law = succ_hre_elective
 			}
 			NOT = {
 				holder_scope = {
@@ -5319,7 +5319,7 @@ faction_claimant = {
 			
 			OR = {
 				ROOT = { has_law = succ_feudal_elective }
-				ROOT = { has_law = succ_hre_elective }
+				#ROOT = { has_law = succ_hre_elective }
 				has_claim = ROOT
 			}
 			
@@ -5454,7 +5454,7 @@ faction_claimant = {
 		modifier = { # Title does NOT have Elective and the current heir is me
 			factor = 0
 			NOT = { has_law = succ_feudal_elective }
-			NOT = { has_law = succ_hre_elective }
+			#NOT = { has_law = succ_hre_elective }
 			current_heir = {
 				OR = {
 					character = FROM
@@ -5543,7 +5543,7 @@ faction_claimant = {
 		
 		modifier = {
 			factor = 0
-			OR = { has_law = succ_hre_elective has_law = succ_feudal_elective }
+			has_law = succ_feudal_elective
 			new_character = {
 				character = FROM
 				NOT = { trait = ambitious }
