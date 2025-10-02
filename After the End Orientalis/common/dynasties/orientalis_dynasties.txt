@@ -3266,7 +3266,20 @@ coat_of_arms = {
 
 1381000 = { name="Hengki" culture=tomun religion = kaharingan}
 
-1382000 = { name="Pillay" culture=tamil religion = vaishnava}
+1382000 = { name="Pillay" culture=tamil
+	coat_of_arms = {
+		religion = vaishnava
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1382001 = { name="Abdullah" culture=tamil religion = renewalist}
 
 1383000 = { name="Tan" culture=baba_nyonya }
@@ -12787,7 +12800,20 @@ coat_of_arms = {
 1956008 = { name="Ong" culture=tionghoa }
 1956009 = { name="Wong" culture=tionghoa }
 1956010 = { name="Leong" culture=tionghoa }
-1956011 = { name="Lee" culture=tionghoa }
+1956011 = { name="Lee" culture=tionghoa
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1956012 = { name="Ling" culture=tionghoa }
 1956013 = { name="Chua" culture=tionghoa }
 1956014 = { name="Kong" culture=tionghoa }
@@ -12835,6 +12861,7 @@ coat_of_arms = {
 		}
 	}
 }
+1956033 = { name="Lee" culture=tionghoa }
 
 1957001 = { name="Abdul Rahman" culture=johorean }
 1957002 = { name="Abdul Razak" culture=johorean }
@@ -13018,10 +13045,62 @@ coat_of_arms = {
 }
 
 1958000 = { name="Tedja" culture=singaporean }
-1958001 = { name="Latipah" culture=singaporean }
-1958002 = { name="Dai" culture=singaporean }
-1958003 = { name="Ngo" culture=singaporean }
-1958004 = { name="Tahaani" culture=singaporean }
+1958001 = { name="Latipah" culture=singaporean
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 56
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1958002 = { name="Dai" culture=singaporean
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1958003 = { name="Ngo" culture=singaporean
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1958004 = { name="Tahaani" culture=singaporean
+	coat_of_arms = {
+		religion = hindu
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1958005 = { name="Hutagaol" culture=singaporean }
 1958006 = { name="Hamna" culture=singaporean }
 1958007 = { name="Weiyuan" culture=singaporean }
