@@ -328,8 +328,6 @@ title_court_eunuch = {
 				tier = emperor
 			}
 		}
-		NOT = { has_landed_title = e_byzantium }
-		NOT = { has_landed_title = e_roman_empire }
 	}
 	
 	gain_effect = {
@@ -412,6 +410,7 @@ title_court_jester = {
 			religion_group = christian
 			religion_group = jewish_group
 			religion_group = pagan_group
+			religion_group = oldworld
 			has_dharmic_religion_trigger = yes
 		}
 	}
@@ -455,8 +454,6 @@ title_keeper_of_swans = {
 				tier = emperor
 			}
 		}
-		NOT = { has_landed_title = e_byzantium }
-		NOT = { has_landed_title = e_roman_empire }
 		OR = {
 			religion_group = christian
 			religion_group = jewish_group
@@ -499,8 +496,6 @@ title_master_of_the_horse = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		NOT = { has_landed_title = e_byzantium }
-		NOT = { has_landed_title = e_roman_empire }
 		OR = {
 			religion_group = christian
 			religion_group = jewish_group
@@ -537,7 +532,10 @@ title_master_of_the_hunt = {
 		}
 		NOT = { has_character_flag = guru }
 		NOT = { trait = incapable }
-		NOT = { religion = jain }
+		NOR = { 
+			religion = novobozhiye
+			religion = vissarionite
+		}
 	}
 	
 	allowed_to_grant = {
@@ -545,14 +543,15 @@ title_master_of_the_hunt = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		NOT = { has_landed_title = e_byzantium }
-		NOT = { has_landed_title = e_roman_empire }
 		OR = {
 			religion_group = christian
 			religion_group = jewish_group
 			has_dharmic_religion_trigger = yes
 		}
-		NOT = { religion = jain }
+		NOR = { 
+			religion = novobozhiye
+			religion = vissarionite
+		}
 	}
 	
 	gain_effect = {
@@ -587,8 +586,6 @@ title_high_almoner = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		NOT = { has_landed_title = e_byzantium }
-		NOT = { has_landed_title = e_roman_empire }
 		OR = {
 			religion_group = christian
 			religion_group = jewish_group
@@ -631,8 +628,6 @@ title_cupbearer = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		NOT = { has_landed_title = e_byzantium }
-		NOT = { has_landed_title = e_roman_empire }
 	}
 	
 	gain_effect = {
@@ -678,8 +673,6 @@ title_seneschal = {
 				tier = emperor
 			}
 		}
-		NOT = { has_landed_title = e_byzantium }
-		NOT = { has_landed_title = e_roman_empire }
 		OR = {
 			religion_group = christian
 			religion_group = jewish_group
@@ -714,256 +707,7 @@ title_paramount_knight = {
 	message = yes
 }
 
-# Byzantine Titles
-title_despot = {
-	dignity = 6.0
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 30
-	
-	monthly_salary = 0.1
-	monthly_prestige = 0.5
-	
-	counts_as_purple_born = yes
-	
-	show_as_title = yes
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		OR = {
-			male_can_hold_minor_title_trigger = yes
-			female_can_hold_minor_title_trigger = yes
-			has_law = true_cognatic_succession
-		}
-		is_close_relative = FROM
-		NOT = { trait = monk }
-		NOT = { trait = nun }
-		NOT = { trait = eunuch }
-		is_theocracy = no
-	}
-	
-	allowed_to_grant = {
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion_group = jewish_group
-			religion_group = pagan_group
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_sebastokrator = {
-	dignity = 0.2
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 10
-	
-	monthly_salary = 0.1
-	monthly_prestige = 0.25
-	
-	show_as_title = yes
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		is_close_relative = FROM
-	}
-	
-	allowed_to_grant = {
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion_group = jewish_group
-			religion_group = pagan_group
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_caesar = {
-	dignity = 0.15
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 10
-	
-	monthly_salary = 0.1
-	monthly_prestige = 0.25
-	
-	show_as_title = yes
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		always = yes
-	}
-	
-	allowed_to_grant = {
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion_group = jewish_group
-			religion_group = pagan_group
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_kouropalates = {
-	dignity = 0.10
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 10
-	
-	monthly_salary = 0.075
-	monthly_prestige = 0.75
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		is_adult = yes
-		OR = { 
-			male_can_hold_minor_title_trigger = yes
-			female_can_hold_minor_title_trigger = yes
-		}
-	}
-	
-	allowed_to_grant = {
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion_group = jewish_group
-			religion_group = pagan_group
-		}
-	}
-		
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_anthypatos = {
-	dignity = 3.0
-	grant_limit = 5
-	opinion_effect = 10
-	
-	monthly_salary = 0.005
-	monthly_prestige = 0.25
-	
-	show_as_title = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		NOT = { has_minor_title = title_hypatos }
-		is_adult = yes	
-		OR = { 
-			male_can_hold_minor_title_trigger = yes
-			female_can_hold_minor_title_trigger = yes
-		}
-	}
-	
-	allowed_to_grant = {
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion_group = jewish_group
-			religion_group = pagan_group
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_imperial_eunuch = {
-	dignity = 0.050
-	grant_limit = 1
-	opinion_effect = 30
-	
-	monthly_salary = 0.02
-	monthly_prestige = 0.35
-	
-	show_as_title = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		is_adult = yes
-		is_female = no
-		trait = eunuch
-	}
-	
-	allowed_to_grant = {
-		real_tier = emperor	
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-	}	
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
+# Byzantine Titles - They dont exist
 
 # Muslim World titles
 
@@ -1374,258 +1118,7 @@ title_patrician_heir = {
 	message = yes
 }
 
-# NORSE PAGAN TITLES
-
-title_volva = {
-	dignity = 0.050
-	grant_limit = 1
-	opinion_effect = 5
-	
-	monthly_salary = 0.02
-	monthly_prestige = 0.25
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		is_adult = yes
-		is_female = yes
-		trait = mystic
-		custom_tooltip = {
-			text = is_germanic_pagan_custom_tooltip
-			hidden_tooltip = {
-				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
-				}
-			}
-		}
-	}
-	
-	allowed_to_grant = {
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-		}
-	}
-		
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_lawspeaker = {
-	dignity = 0.2
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 10
-	
-	monthly_salary = 0.1
-	monthly_prestige = 0.75
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		is_adult = yes
-		custom_tooltip = {
-			text = is_germanic_pagan_custom_tooltip
-			hidden_tooltip = {
-				OR = {
-					religion = norse_pagan
-					religion = norse_pagan_reformed
-				}
-			}
-		}
-		NOT = { trait = incapable } 
-	}
-	
-	allowed_to_grant = {
-		OR = {
-			is_feudal = yes
-			is_tribal = yes
-		}
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_drottseti = {
-	dignity = 0.15
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 10
-	
-	monthly_salary = 0.1
-	monthly_prestige = 0.5
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		is_adult = yes
-		NOT = { trait = incapable } 
-	}
-
-	allowed_to_grant = {
-		OR = {
-			is_feudal = yes
-			is_tribal = yes
-		}
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-		}
-		higher_tier_than = DUKE
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_court_skald = {
-	dignity = 0.15
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 10
-	
-	monthly_salary = 0.075
-	monthly_prestige = 0.75
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		is_adult = yes
-		trait = poet
-		NOT = { trait = incapable } 
-	}
-
-	allowed_to_grant = {
-		OR = {
-			is_feudal = yes
-			is_tribal = yes
-		}
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_marksman = {
-	dignity = 0.1
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 10
-	
-	monthly_salary = 0.075
-	monthly_prestige = 0.75
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		is_adult = yes
-		OR = { 
-			male_can_hold_minor_title_trigger = yes
-			female_can_hold_minor_commander_title_trigger = yes
-		}
-		NOT = { trait = incapable } 
-	}
-
-	allowed_to_grant = {
-		OR = {
-			is_feudal = yes
-			is_tribal = yes
-		}
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_hirdman = {
-	dignity = 0.075
-	grant_limit = 4
-	opinion_effect = 5
-	
-	monthly_salary = 0.005
-	monthly_prestige = 0.25
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		is_adult = yes
-		OR = { 
-			male_can_hold_minor_title_trigger = yes
-			female_can_hold_minor_title_trigger = yes
-		}
-		NOT = { trait = incapable } 
-	}
-
-	allowed_to_grant = {
-		OR = {
-			is_feudal = yes
-			is_tribal = yes
-		}
-		OR = {
-			religion = norse_pagan
-			religion = norse_pagan_reformed
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
+# NORSE PAGAN TITLES - No Norse Pagans
 
 # MONGOL PAGAN TITLES
 
@@ -1652,7 +1145,7 @@ title_baghatur = {
 		OR = {
 			AND = {
 				is_nomadic = yes
-				culture = mongol
+				culture_group = mongol
 			}
 			AND = {
 				OR = {
@@ -1697,7 +1190,7 @@ title_cherbi = {
 		OR = {
 			AND = {
 				is_nomadic = yes
-				culture = mongol
+				culture_group = mongol
 			}
 			AND = {
 				OR = {
@@ -1742,7 +1235,7 @@ title_darkhan = {
 		OR = {
 			AND = {
 				is_nomadic = yes
-				culture = mongol
+				culture_group = mongol
 			}
 			AND = {
 				OR = {
@@ -1823,7 +1316,7 @@ title_behi = {
 		OR = {
 			AND = {
 				is_nomadic = yes
-				culture = mongol
+				culture_group = mongol
 			}
 			AND = {
 				OR = {
@@ -1867,7 +1360,7 @@ title_master_of_the_eagle = {
 		OR = {
 			AND = {
 				is_nomadic = yes
-				culture = mongol
+				culture_group = mongol
 			}
 			AND = {
 				OR = {
@@ -2153,21 +1646,12 @@ title_champion = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		OR = {
-			religion = baltic_pagan_reformed
-			religion = baltic_pagan
-			religion = finnish_pagan_reformed
-			religion = finnish_pagan
-			religion = slavic_pagan_reformed
-			religion = slavic_pagan
-			religion = west_african_pagan_reformed
-			religion = west_african_pagan
-			religion = aztec_reformed
-			religion = aztec
-			religion = zun_pagan_reformed
-			religion = zun_pagan
-			religion = bon
-			religion = bon_reformed
+		AND = {
+			religion_group = pagan_group
+			NOR = {
+				religion = khanist
+				religion = khanist_reformed
+			}
 		}
 	}
 	
@@ -2342,27 +1826,27 @@ title_yabgu = {
 	}
 
 	allowed_to_grant = {
-		#OR = {
-		#	AND = {
+		OR = {
+			AND = {
 				is_nomadic = yes
-				NOT = { culture = mongol }
-		#	}
-		#	AND = {
-		#		OR = {
-		#			is_feudal = yes
-		#			is_tribal = yes
-		#		}
-		#		NOT = {
-		#			OR = {
-		#				has_landed_title = e_mongolia
-		#			}
-		#		}
-		#		OR = {
-		#			religion = khanist
-		#			religion = khanist_reformed
-		#		}
-		#	}
-		#}
+				NOT = { culture_group = mongol }
+			}
+			AND = {
+				OR = {
+					is_feudal = yes
+					is_tribal = yes
+				}
+				NOT = {
+					OR = {
+						has_landed_title = e_mongolia
+					}
+				}
+				OR = {
+					religion = khanist
+					religion = khanist_reformed
+				}
+			}
+		}
 	}
 	
 	gain_effect = {
@@ -2397,27 +1881,27 @@ title_ishad = {
 	}
 
 	allowed_to_grant = {
-		#OR = {
-		#	AND = {
+		OR = {
+			AND = {
 				is_nomadic = yes
-				NOT = { culture = mongol }
-		#	}
-		#	AND = {
-		#		OR = {
-		#			is_feudal = yes
-		#			is_tribal = yes
-		#		}
-		#		NOT = {
-		#			OR = {
-		#				has_landed_title = e_mongolia
-		#			}
-		#		}
-		#		OR = {
-		#			religion = khanist
-		#			religion = khanist_reformed
-		#		}
-		#	}
-		#}
+				NOT = { culture_group = mongol }
+			}
+			AND = {
+				OR = {
+					is_feudal = yes
+					is_tribal = yes
+				}
+				NOT = {
+					OR = {
+						has_landed_title = e_mongolia
+					}
+				}
+				OR = {
+					religion = khanist
+					religion = khanist_reformed
+				}
+			}
+		}
 	}
 	
 	gain_effect = {
@@ -2448,27 +1932,27 @@ title_kundur = {
 	}
 	
 	allowed_to_grant = {
-		#OR = {
-		#	AND = {
+		OR = {
+			AND = {
 				is_nomadic = yes
-				NOT = { culture = mongol }
-		#	}
-		#	AND = {
-		#		OR = {
-		#			is_feudal = yes
-		#			is_tribal = yes
-		#		}
-		#		NOT = {
-		#			OR = {
-		#				has_landed_title = e_mongolia
-		#			}
-		#		}
-		#		OR = {
-		#			religion = khanist
-		#			religion = khanist_reformed
-		#		}
-		#	}
-		#}
+				NOT = { culture_group = mongol }
+			}
+			AND = {
+				OR = {
+					is_feudal = yes
+					is_tribal = yes
+				}
+				NOT = {
+					OR = {
+						has_landed_title = e_mongolia
+					}
+				}
+				OR = {
+					religion = khanist
+					religion = khanist_reformed
+				}
+			}
+		}
 	}
 	
 	gain_effect = {
@@ -2840,7 +2324,10 @@ title_court_architect = {
 				tier = emperor
 			}
 		}
-		religion_group = eastern
+		OR = {
+			religion_group = eastern
+			is_sinic = yes
+		}
 	}
 	
 	gain_effect = {
@@ -2879,7 +2366,10 @@ title_zhangshi = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		religion_group = eastern
+		OR = {
+			religion_group = eastern
+			is_sinic = yes
+		}
 	}
 	
 	gain_effect = {
@@ -2918,7 +2408,10 @@ title_canjun = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		religion_group = eastern
+		OR = {
+			religion_group = eastern
+			is_sinic = yes
+		}
 	}
 	
 	gain_effect = {
@@ -2957,7 +2450,10 @@ title_yuhou = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		religion_group = eastern
+		OR = {
+			religion_group = eastern
+			is_sinic = yes
+		}
 	}
 	
 	gain_effect = {
@@ -2997,7 +2493,10 @@ title_historiographer = {
 			is_feudal = yes
 			is_tribal = yes
 		}
-		religion_group = eastern
+		OR = {
+			religion_group = eastern
+			is_sinic = yes
+		}
 	}
 	
 	gain_effect = {
@@ -3051,7 +2550,6 @@ title_court_physician = {
 					trait = physician
 					trait = scholar
 					trait = mystic
-					trait = mutazilite
 				}
 			}
 			custom_tooltip = { 
@@ -3522,177 +3020,4 @@ title_teacher = {
 	message = yes
 }
 
-### New Byzantine Minor Titles ###
-title_augusta = {
-	dignity = 5.0
-	realm_in_name = yes
-	grant_limit = 1
-	opinion_effect = 30
-	
-	show_as_title = yes
-	
-	monthly_salary = 0.05
-	monthly_prestige = 0.75
-	
-	is_unique = yes
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		NOT = { has_minor_title = title_sebastos }
-		is_female = yes
-		is_close_relative = FROM 
-		is_adult = yes
-	}
-	
-	allowed_to_grant = {
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-		}
-		OR = {
-			religion_group = christian
-			religion_group = jewish_group
-			religion_group = pagan_group
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_patrikios = {
-	dignity = 2.0
-	grant_limit = 10
-	opinion_effect = 5
-	
-	show_as_title = yes
-	
-	monthly_salary = 0.03
-	monthly_prestige = 0.125
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		NOT = { family = FROM }
-		NOT = { is_close_relative = FROM }
-		is_adult = yes
-		OR = { 
-			male_can_hold_minor_title_trigger = yes
-			female_can_hold_minor_title_trigger = yes
-		}
-	}
-	
-	allowed_to_grant = {
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion_group = jewish_group
-			religion_group = pagan_group
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_hypatos = {
-	dignity = 1.0
-	grant_limit = 20
-	opinion_effect = 5
-	
-	monthly_salary = 0.03
-	monthly_prestige = 0.0625
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		NOT = { family = FROM }
-		NOT = { is_close_relative = FROM }
-		NOT = { has_minor_title = title_anthypatos }
-		is_adult = yes
-		OR = { 
-			male_can_hold_minor_title_trigger = yes
-			female_can_hold_minor_title_trigger = yes
-		}
-	}
-	
-	allowed_to_grant = {
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion_group = jewish_group
-			religion_group = pagan_group
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
-
-title_sebastos = {
-	dignity = 2.5
-	grant_limit = 10
-	opinion_effect = 5
-	
-	show_as_title = yes
-	
-	monthly_salary = 0.02
-	monthly_prestige = 0.1875
-	
-	allowed_to_hold = {
-		NOT = { 
-			primary_title = { temporary = yes } 
-		}
-		NOT = { has_minor_title = title_augusta }
-		OR = {
-			is_close_relative = FROM
-			family = FROM
-			is_cousin_of = FROM
-			is_friend = FROM
-		}
-	}
-	
-	allowed_to_grant = {
-		is_feudal = yes
-		OR = {
-			has_landed_title = e_byzantium
-			has_landed_title = e_roman_empire
-		}
-		OR = {
-			religion_group = christian
-			religion_group = jewish_group
-			religion_group = pagan_group
-		}
-	}
-	
-	gain_effect = {
-	}
-	lose_effect = {
-	}
-
-	message = yes
-}
+### New Byzantine Minor Titles ### - Not existing

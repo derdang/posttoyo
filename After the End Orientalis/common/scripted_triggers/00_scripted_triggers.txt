@@ -825,15 +825,15 @@ can_be_mercenary_leader_potential_trigger = {
 	OR = {
 		is_female = no
 		AND = {
-			religion = cathar
+			religion = ngocholugspa
 			FROM = {
-				religion = cathar
+				religion = ngocholugspa
 			}
 		}
 		AND = {
-			religion = messalian
+			religion = dorje_shugden
 			FROM = {
-				religion = messalian
+				religion = dorje_shugden
 			}
 		}
 		FROM = {
@@ -961,12 +961,12 @@ can_be_chancellor_trigger = {
 				}
 				trait = horse # So we can have female glitterhoofs! :D
 				AND = {
-					religion = cathar
-					liege = { religion = cathar }
+					religion = ngocholugspa
+					liege = { religion = ngocholugspa }
 				}
 				AND = {
-					religion = messalian
-					liege = { religion = messalian }
+					religion = dorje_shugden
+					liege = { religion = dorje_shugden }
 				}
 				AND = {
 					liege = {
@@ -1041,12 +1041,12 @@ can_be_marshal_trigger = {
 				trait = horse # So we can have female glitterhoofs! :D
 				OR = {
 					AND = {
-						religion = cathar
-						liege = { religion = cathar }
+						religion = ngocholugspa
+						liege = { religion = ngocholugspa }
 					}
 					AND = {
-						religion = messalian
-						liege = { religion = messalian }
+						religion = dorje_shugden
+						liege = { religion = dorje_shugden }
 					}
 				}
 				AND = {
@@ -1124,12 +1124,12 @@ can_be_treasurer_trigger = {
 				}
 				trait = horse # So we can have female glitterhoofs! :D
 				AND = {
-					religion = cathar
-					liege = { religion = cathar }
+					religion = ngocholugspa
+					liege = { religion = ngocholugspa }
 				}
 				AND = {
-					religion = messalian
-					liege = { religion = messalian }
+					religion = dorje_shugden
+					liege = { religion = dorje_shugden }
 				}
 				AND = {
 					liege = {
@@ -1224,9 +1224,9 @@ can_be_spymaster_trigger = {
 					}
 				}
 				AND = {
-					religion = cathar
+					religion = ngocholugspa
 					liege = { 
-						religion = cathar 
+						religion = ngocholugspa 
 						NOR = {
 							liege = { has_religion_feature = religion_matriarchal } 
 							liege = { has_religion_feature = religion_patriarchal } 
@@ -1234,9 +1234,9 @@ can_be_spymaster_trigger = {
 					}
 				}
 				AND = {
-					religion = messalian
+					religion = dorje_shugden
 					liege = { 
-						religion = messalian 
+						religion = dorje_shugden 
 						NOR = {
 							liege = { has_religion_feature = religion_matriarchal } 
 							liege = { has_religion_feature = religion_patriarchal } 
@@ -1402,8 +1402,8 @@ can_be_councilmember_king_trigger = {
 			}
 			AND = {
 				OR = {
-					religion = cathar
-					religion = messalian
+					religion = ngocholugspa
+					religion = dorje_shugden
 				}
 				liege = { religion = ROOT }
 			}
@@ -1465,12 +1465,12 @@ can_be_councilmember_emperor_trigger = {
 					} 
 				}
 				AND = {
-					religion = cathar
-					liege = { religion = cathar }
+					religion = ngocholugspa
+					liege = { religion = ngocholugspa }
 				}
 				AND = {
-					religion = messalian
-					liege = { religion = messalian }
+					religion = dorje_shugden
+					liege = { religion = dorje_shugden }
 				}
 				AND = {
 					is_female = yes
@@ -1838,8 +1838,8 @@ block_general_event_trigger = {
 
 gender_equality_trigger = {
 	OR = {
-		religion = cathar
-		religion = messalian
+		religion = ngocholugspa
+		religion = dorje_shugden
 		has_religion_feature = religion_equal
 		has_religion_feature = religion_feature_bon
 		AND = {
@@ -1898,9 +1898,9 @@ female_can_hold_minor_title_trigger = {
 				text = tooltip_feminist_liege_vanilla_religion
 				AND = {
 					OR = {
-						religion = cathar
-						religion = messalian
-						religion = bogomilist
+						religion = ngocholugspa
+						religion = dorje_shugden
+						religion = shinko
 						religion = mazdaki
 					}
 					liege = { religion = ROOT }
@@ -1962,9 +1962,9 @@ female_can_hold_minor_commander_title_trigger = {
 				text = tooltip_feminist_liege_vanilla_religion
 				AND = {
 					OR = {
-						religion = cathar
-						religion = messalian
-						religion = bogomilist
+						religion = ngocholugspa
+						religion = dorje_shugden
+						religion = shinko
 						religion = mazdaki
 					}
 					liege = { religion = ROOT }
@@ -2813,8 +2813,8 @@ looting_artifact_event_religious_artifacts_trigger = {
 		NAND = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
-				has_artifact_flag = cathar
-				ROOT = { religion = cathar }
+				has_artifact_flag = ngocholugspa
+				ROOT = { religion = ngocholugspa }
 			}
 		}
 		NAND = {
@@ -2848,8 +2848,8 @@ looting_artifact_event_religious_artifacts_trigger = {
 		NAND = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
-				has_artifact_flag = bogomilist
-				ROOT = { religion = bogomilist }
+				has_artifact_flag = shinko
+				ROOT = { religion = shinko }
 			}
 		}
 		NAND = {
@@ -2897,8 +2897,8 @@ looting_artifact_event_religious_artifacts_trigger = {
 		NAND = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
-				has_artifact_flag = messalian
-				ROOT = { religion = messalian }
+				has_artifact_flag = dorje_shugden
+				ROOT = { religion = dorje_shugden }
 			}
 		}
 		NAND = {
@@ -7730,12 +7730,12 @@ can_still_be_marshal_byzantine_trigger = {
 				trait = horse # So we can have female glitterhoofs! :D
 				OR = {
 					AND = {
-						religion = cathar
-						liege = { religion = cathar }
+						religion = ngocholugspa
+						liege = { religion = ngocholugspa }
 					}
 					AND = {
-						religion = messalian
-						liege = { religion = messalian }
+						religion = dorje_shugden
+						liege = { religion = dorje_shugden }
 					}
 				}
 				AND = {
