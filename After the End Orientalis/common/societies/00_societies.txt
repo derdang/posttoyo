@@ -2295,6 +2295,7 @@ hermetics = {
 			religion_group = jewish_group
 			religion_group = eastern
 			religion_group = indian_group
+			religion_group = zoroastrian_group
 			religion = mahayana
 		}
 		NOR = {
@@ -2318,6 +2319,7 @@ hermetics = {
 			religion_group = jewish_group
 			religion_group = eastern
 			religion_group = indian_group
+			religion_group = zoroastrian_group
 			religion = mahayana
 			society_member_of = hermetics
 		}
@@ -2537,6 +2539,7 @@ hermetics = {
 				religion_group = jewish_group
 				religion_group = eastern
 				religion_group = indian_group
+				religion_group = zoroastrian_group
 				religion = mahayana
 			}
 		}
@@ -3773,6 +3776,7 @@ the_satanists = {
 			religion_group = latter_day_saints
 			religion_group = jewish_group
 			religion_group = muslim
+			religion_group = zoroastrian_group
 			religion = eastern_lightning
 			society_member_of = the_satanists
 		}
@@ -4028,9 +4032,10 @@ the_satanists = {
 			ai = yes
 			controls_religion = no
 			OR = {
+				true_religion_group_muslim_trigger = yes
 				true_religion_group_christian_trigger = yes
 				true_religion_group_jewish_group_trigger = yes
-				true_religion_group_muslim_trigger = yes
+				true_religion_group_zoroastrian_group_trigger = yes
 			}
 			OR = {
 				has_impious_trait_trigger = yes
