@@ -8142,9 +8142,8 @@ character_event = {
 	trigger = { 
 		educator = { 
 			is_monastic_member_trigger = yes
-			NOR = { #Buddhists and Jains have a different power
+			NOT = { #Buddhists have a different power
 				society_member_of = monastic_order_buddhist
-				society_member_of = monastic_order_jain
 			}
 		}
 		NOT = { check_variable = { which = "monastic_order_education_event" value = 3 } }
