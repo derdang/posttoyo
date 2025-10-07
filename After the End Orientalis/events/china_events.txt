@@ -217,3 +217,39 @@ character_event = {
 		}
 	}
 }
+#Fuyin Branch Trait Decision
+character_event = {
+	id = sino.5	
+	desc = EVTDESC_fuyin1
+	picture = GFX_evt_chinese_thinkers
+	religion = fuyin
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_fuyin1
+		hidden_tooltip = {
+			remove_trait = fuyin_huhan
+		}
+		add_trait = fuyin_sanzi
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = EVTOPTB_fuyin1
+		hidden_tooltip = {
+			remove_trait = fuyin_sanzi
+		}
+		add_trait = fuyin_huhan
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

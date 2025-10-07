@@ -77,6 +77,7 @@ String_Gelugpa;Gelugpa;;;;;;;;;x
 String_Eastern;Eastern;;;;;;;;;x
 String_Nautical;Nautical;;;;;;;;;x
 String_Old_World_Cultists;Antediluvianist;;;;;;;;;x
+unificationist_blessed;If you are Unificationist you have a chance to remove a Sin due to blessed communion...;;;;;;;;;x
 
 #Indian Patron Dieties
 smartist_hindu;Follower of Bhagavan-Krishna;;;;;;;;x
@@ -87,6 +88,11 @@ vaishnavist_hindu;Follower of Bala-Krishna;;;;;;;;x
 vaishnavist_hindu_desc;This character worships Bala-Krishna, the divine child form of Svayam Bhagavan.;;;;;;;;x
 shaktist_hindu;Follower of Radha-Krishna;;;;;;;;x
 shaktist_hindu_desc;This character worships Radha-Krishna, the combined forms of the masculine and feminine realities of God and the divine couple of love.;;;;;;;;x
+
+#Other Decisions
+shia_spiritual_guidance;Give Spiritual Guidance;Donner des conseils spirituels;Spirituelle Weisung erteilen;;Dar orientación espiritual;;;;;;;;;x
+shia_spiritual_guidance_desc;You know [Root.GetTitledFirstName] to be a sinful person. As such you can provide spiritual guidance to help rid [Root.GetHerHim] of one of [Root.GetHerHis] vices.;Vous savez que [Root.Get_le_TitledFirstName] est dans le péché. En tant que tel, vous pouvez lui donner des conseils spirituels pour l'aider à se débarrasser d'un des ses vices.;Ihr wisst, dass [Root.GetTitledFirstName] ein sündhafter Mensch ist. Daher könnt Ihr spirituelle Weisung erteilen, damit [Root.GetSheHe] eines [Root.GetHerHis]er Laster aufgibt.;;Sabes que [Root.GetTitledFirstName] es una persona pecaminosa. Puedes proporcionarle orientación espiritual para conseguir que abandone uno de sus vicios.;;;;;;;;;x
+shia_spiritual_guidance_power_desc;Enables you to §Gright-click§! on landed characters within your realm, or relatives, or fellow society members, in order to remove one of their vices. You can only remove a vice that you don't have yourself.;Permet de faire perdre un vice que vous n'avez pas à un personnage possédant des terres dans votre pays, un parent ou un membre de votre société.\n(Faites un clic droit sur leurs portraits);Ermöglicht einen §GRechtsklick§! auf begüterte Personen in Eurem Reich, auf Verwandte oder auf andere Mitglieder Eures Zirkels, um sie von einem ihrer Laster zu befreien. Ihr könnt nur ein Laster entfernen, das Ihr selbst nicht habt.;;Te permite hacer §Gclic con el botón secundario§! sobre personajes hacendados de tu reino, familiares o miembros de una sociedad a la que perteneces para eliminar uno de sus vicios. Solo puedes eliminar un vicio que tú no tengas.;;;;;;;;;x
 
 #Reformation
 EVTNAME670;The [Root.Religion.GetName] Reformation;Réforme de la foi [Root.Religion.GetName];Reformation des Glaubens;;Reforma de la Fe [Root.Religion.GetName];;;;;;;;;x

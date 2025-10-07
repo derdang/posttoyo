@@ -430,6 +430,12 @@ character_event = {
 	
 	immediate = {
 		random_list = {
+			50 = { # do nothing
+				modifier = {
+					factor = 0.75
+					has_sufi_societies_religion_shiite = yes
+				}
+			}
 			5 = { # try to join a society
 				modifier = {
 					factor = 2
@@ -502,6 +508,50 @@ character_event = {
 							is_female = yes
 						}
 						join_society = monastic_order_sunni
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					100 = { #shiite
+						trigger = {
+							can_join_society = monastic_order_shiite
+						}
+						modifier = {
+							factor = 3
+							OR = {
+								trait = zair
+								trait = hafiz
+								trait = mystic
+								trait = theologian
+								learning = 16
+								is_priest = yes
+							}
+						}
+						modifier = {
+							factor = 0.1
+							is_female = yes
+						}
+						join_society = monastic_order_shiite
 						random_list = { # Artificially increase society influence for balance purposes
 							75 = {
 								modifier = {
@@ -5175,6 +5225,15 @@ character_event = {
 		}
 		if = {
 			limit = {
+				society_member_of = monastic_order_shiite
+			}
+			leave_society = yes
+			hidden_effect = {
+				set_character_flag = betrayed_monastic_order_shiite
+			}
+		}
+		if = {
+			limit = {
 				society_member_of = basaih_society
 			}
 			leave_society = yes
@@ -6171,6 +6230,15 @@ letter_event = {
 			leave_society = yes
 			hidden_effect = {
 				set_character_flag = betrayed_monastic_order_sunni
+			}
+		}
+		if = {
+			limit = {
+				society_member_of = monastic_order_shiite
+			}
+			leave_society = yes
+			hidden_effect = {
+				set_character_flag = betrayed_monastic_order_shiite
 			}
 		}
 		if = {
@@ -8482,6 +8550,46 @@ narrative_event = { #sunni
 			NOR = { 
 				society_member_of = monastic_order_sunni 
 				has_sufi_societies_religion_sunni = yes
+			}
+		}
+	}
+}
+narrative_event = { #shiite
+	id = SUFI.25028
+	title = EVTTITLESUFI25028
+	desc = EVTDESCSUFI25028
+	hide_from = yes
+	hide_new = yes
+
+	picture = GFX_evt_imam
+	
+	only_playable = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTASUFI25028
+		trigger = {
+			OR = { 
+				society_member_of = monastic_order_shiite 
+				has_sufi_societies_religion_shiite = yes
+				can_join_society = monastic_order_shiite
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { society_member_of = monastic_order_shiite }
+				can_join_society = monastic_order_shiite
+			}
+			join_society = monastic_order_shiite
+		}
+	}
+	option = {
+		name = EVTOPTBSUFI25028
+		trigger = {
+			NOR = { 
+				society_member_of = monastic_order_shiite 
+				has_sufi_societies_religion_shiite = yes
 			}
 		}
 	}

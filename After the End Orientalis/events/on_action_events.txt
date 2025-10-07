@@ -3571,6 +3571,20 @@ character_event = {
 			value = 0.5
 			min = 10
 		}
+		custom_tooltip = { text = unificationist_blessed }
+		hidden_tooltip = {
+			if = {
+				limit = {religion = unificationist}
+				random_list = { #Remove All Sins Except for Lust
+					15 = {remove_trait=gluttonous}
+					20 = {remove_trait=greedy}
+					20 = {remove_trait=slothful}
+					15 = {remove_trait=wroth}
+					15 = {remove_trait=envious}
+					15 = {remove_trait=proud}
+				}
+			}
+		}
 	}
 	option = {
 		name = EVTOPTB500
@@ -3620,6 +3634,20 @@ character_event = {
 		if = {
 			limit = { tier = BARON }
 			prestige = 25
+		}
+		custom_tooltip = { text = unificationist_blessed }
+		hidden_tooltip = {
+			if = {
+				limit = {religion = unificationist}
+				random_list = { #Remove All Sins Except for Lust
+					15 = {remove_trait=gluttonous}
+					20 = {remove_trait=greedy}
+					20 = {remove_trait=slothful}
+					15 = {remove_trait=wroth}
+					15 = {remove_trait=envious}
+					15 = {remove_trait=proud}
+				}
+			}
 		}
 	}
 }

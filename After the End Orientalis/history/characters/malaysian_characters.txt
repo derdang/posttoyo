@@ -157,7 +157,7 @@
 	name="Mutahir"
 	dynasty=1382001 #Abdullah
 	culture=tamil
-	religion=renewalist
+	religion=dawoodi
 	trait=charismatic_negotiator
 	trait=mystic
 	trait=patient
@@ -1285,13 +1285,19 @@
 	2575.1.1={birth=yes}
 }
 1958002= { #SGP patrician
-	name="Soon-Hong"
-	dynasty=1958002 #Dai
+	name="Kassamali"
+	dynasty=1958002 #Bargah
 	culture=singaporean
-	religion=wokou
-	trait=shrewd
-	trait=patient
-	2584.1.1={birth=yes}
+	religion=shiite
+	trait = mastermind_theologian 
+    trait = diligent 
+    trait = patient 
+    trait = zealous 
+    trait = kind
+    trait = charitable 
+    trait = scholar
+	2575.1.1={birth=yes}
+	2600.1.1={add_spouse=1958013}
 }
 1958003= { #SGP patrician
 	name="Oscar"
@@ -1380,6 +1386,52 @@
     trait = charitable 
     trait = scholar
 	2570.1.1={birth=yes}
+}
+1958013= { #Wife of the Shiite Patrician
+	name="Aisha"
+	dynasty=1958146 #Heyzer
+	culture=singaporean
+	religion=shiite
+	female=yes
+	trait=grey_eminence
+	trait=socializer
+	trait=shrewd
+	trait=fair
+	trait=groomed
+	2575.1.1={birth=yes}
+}
+1958014= { #Wife of the Shiite Character
+	name="Kasbani"
+	dynasty=1958002 #Bargah
+	culture=singaporean
+	religion=shiite
+	trait = conscientious
+	trait = brooding
+	trait = fussy
+	father=1958002
+	mother=1958013
+	2595.1.1={birth=yes}
+}
+1958015= { #Son of the Shiite Character
+	name="Fandi"
+	dynasty=1958002 #Bargah
+	culture=singaporean
+	religion=shiite
+	trait = affectionate
+	trait = rowdy
+	father=1958002
+	mother=1958013
+	2597.1.1={birth=yes}
+}
+1958016= { #Son of the Shiite Character
+	name="Ikhsan"
+	dynasty=1958002 #Bargah
+	culture=singaporean
+	religion=shiite
+	trait = playful
+	father=1958002
+	mother=1958013
+	2600.1.1={birth=yes}
 }
 
 ## k_kelantan

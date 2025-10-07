@@ -868,6 +868,23 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	
+#Fuyin Traits
+	spriteType = {
+		name = "GFX_trait_fuyin_sanzi"
+		texturefile = "gfx/traits/fuyin_sanzi.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_fuyin_huhan"
+		texturefile = "gfx/traits/fuyin_huhan.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
 
 #Sanmin Traits
 	spriteType = {
@@ -1420,6 +1437,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_change_sanmin_branch"
 		texturefile = "gfx/interface/change_sanmin_branch.dds"
+	}
+	spriteType = {
+		name = "GFX_change_fuyin_branch"
+		texturefile = "gfx/interface/change_fuyin_branch.dds"
 	}
 	spriteType = {
 		name = "GFX_change_jibenyuanze_branch"

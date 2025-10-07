@@ -3280,7 +3280,7 @@ coat_of_arms = {
 		}
 	}
 }
-1382001 = { name="Abdullah" culture=tamil religion = renewalist}
+1382001 = { name="Abdullah" culture=tamil religion = dawoodi}
 
 1383000 = { name="Tan" culture=baba_nyonya }
 1383001 = { name="Lim" culture=baba_nyonya }
@@ -4612,6 +4612,20 @@ coat_of_arms = {
 1597153 = { name="Jung" culture=hangugin religion=cheondoist }
 1597154 = { name="Lee" culture=hangugin religion=cheondoist }
 1597155 = { name="Hwangbo" culture=hangugin religion=concordanist used_for_random=no }
+1597156 = { name="Mun" culture=hangugin
+	coat_of_arms = {
+		religion = unificationist
+		template = 0
+		layer = {
+			texture = 6
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1598000 = { name="Kim" culture=chosunin
 	coat_of_arms = {
@@ -13059,13 +13073,13 @@ coat_of_arms = {
 		}
 	}
 }
-1958002 = { name="Dai" culture=singaporean
+1958002 = { name="Bargah" culture=singaporean
 	coat_of_arms = {
-		religion = mahayana
+		religion = shiite
 		template = 0
 		layer = {
-			texture = 11
-			texture_internal = 6
+			texture = 2
+			texture_internal = 57
 			emblem = 0
 			color = 0
 			color = 0
@@ -13242,6 +13256,7 @@ coat_of_arms = {
 1958143 = { name="Tien" culture=singaporean }
 1958144 = { name="Wang" culture=singaporean }
 1958145 = { name="Chew" culture=singaporean }
+1958146 = { name="Heyzer" culture=singaporean religion=shiite}
 
 1959000 = { name="Long" culture=kelantanese }
 1959001 = { name="Mahmud" culture=kelantanese }

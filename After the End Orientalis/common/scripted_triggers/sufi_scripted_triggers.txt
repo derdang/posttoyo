@@ -2,6 +2,7 @@ is_sufi_member_trigger = {
 	OR = {
 		society_member_of = monastic_order_sunni
 		society_member_of = basaih_society
+		society_member_of = monastic_order_shiite
 	}
 }
 
@@ -9,6 +10,15 @@ has_sufi_societies_religion_sunni = {
 	hidden_tooltip = {
 		is_heretic = no
 		is_sunni = yes
+	}
+}
+has_sufi_societies_religion_shiite = {
+	hidden_tooltip = {
+		is_heretic = no
+		OR = {
+			religion = shiite
+			religion = dawoodi 
+		}
 	}
 }
 

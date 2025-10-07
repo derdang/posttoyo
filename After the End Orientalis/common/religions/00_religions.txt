@@ -648,7 +648,7 @@ christian = {
 		priests_can_marry = yes
 		priests_can_inherit = no
 		
-		religious_clothing_head = 10
+		religious_clothing_head = 13
 		religious_clothing_priest = 13
 		
 		intermarry = pentecostal
@@ -692,7 +692,7 @@ christian = {
 		priests_can_marry = yes
 		priests_can_inherit = no
 		
-		religious_clothing_head = 10
+		religious_clothing_head = 13
 		religious_clothing_priest = 13
 		
 		intermarry = pentecostal
@@ -734,7 +734,7 @@ christian = {
 		priests_can_inherit = no
 		female_temple_holders = yes
 		
-		religious_clothing_head = 10
+		religious_clothing_head = 13
 		religious_clothing_priest = 13
 		
 		intermarry = adventist
@@ -771,7 +771,7 @@ christian = {
 		priests_can_inherit = yes
 		priests_can_marry = yes
 		
-		religious_clothing_head = 10
+		religious_clothing_head = 13
 		religious_clothing_priest = 13
 		
 		intermarry = catholic
@@ -859,7 +859,7 @@ christian = {
 		priests_can_marry = yes
 		priests_can_inherit = no
 		
-		religious_clothing_head = 10
+		religious_clothing_head = 13
 		religious_clothing_priest = 13
 		
 		intermarry = catholic
@@ -872,7 +872,7 @@ christian = {
 		intermarry = tianzhu
 		intermarry = erkeun
 	}
-	unificationist = { #temporary
+	unificationist = {
 		graphical_culture = chinesegfx
 		alternate_start = { has_alternate_start_parameter = { key = religion value = full_random } }
 
@@ -905,7 +905,11 @@ christian = {
 		priests_can_marry = yes
 		priests_can_inherit = no
 		
-		religious_clothing_head = 10
+		max_consorts = 3 # Can take concubines
+		
+		character_modifier = { jibenyuanze_opinion = -20 }
+		
+		religious_clothing_head = 13
 		religious_clothing_priest = 13
 		
 		intermarry = catholic
@@ -1104,6 +1108,8 @@ christian = {
 		feminist = yes
 		priests_can_marry = yes
 		female_temple_holders = yes
+		
+		character_modifier = { jibenyuanze_opinion = -20 }
 		
 		religious_clothing_head = 4
 		religious_clothing_priest = 4
@@ -1378,12 +1384,42 @@ muslim = {
 		intermarry = indian_group
 	}
 	
-	shiite = { #Placeholder Shia
+	shiite = {
 		graphical_culture = muslimgfx
 		
-		icon = 3 #5?
+		icon = 3
 		
 		color = { 0 0.8 0 }
+		
+		crusade_name = JIHAD
+		scripture_name = THE_KORAN
+		priest_title = MULLAH
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
+		
+		can_call_crusade = yes
+		priests_can_marry = yes
+		psc_marriage = no
+		max_wives = 4
+		matrilineal_marriages = no
+		
+		landed_kin_prestige_bonus = yes
+		attacking_same_religion_piety_loss = yes		
+	}
+	
+	dawoodi = { #Indian Ismaili
+		graphical_culture = muslimgfx
+		
+		icon = 4
+		
+		color = { 0 0.68 0 }
 		
 		crusade_name = JIHAD
 		scripture_name = THE_KORAN

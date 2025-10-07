@@ -1808,6 +1808,35 @@ decisions = {
 			always = no
 		}
 	}
+	change_fuyin_branch = {
+		ai = no
+		
+		potential = {
+			OR = {religion = fuyin secret_religion = fuyin}
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedfuyinbranch }
+		}
+		
+		allow = {
+			OR = {religion = fuyin secret_religion = fuyin}
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = sino.5 }				
+			}
+			custom_tooltip = { text = TXT_change_fuyin_branch }
+			set_character_flag = changedfuyinbranch
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 	change_sanmin_branch = {
 		ai = no
 		
