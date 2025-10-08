@@ -20,7 +20,7 @@ narrative_event = {
 		trigger = {
 			OR = {
 				culture = singaporean
-				culture = tionghoa
+				is_oversea_chinese = yes
 			}
 		}
 		text = festival_sinic_expat1
@@ -58,7 +58,7 @@ narrative_event = {
 		trigger = {
 			OR = {
 				culture = singaporean
-				culture = tionghoa
+				is_oversea_chinese = yes
 			}
 		}
 		name = EVTOPTC_festival1
