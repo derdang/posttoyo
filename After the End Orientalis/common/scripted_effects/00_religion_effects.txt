@@ -276,6 +276,32 @@ flip_secret_religious_community_provinces = {
 				}
 			}
 		}
+		secret_religious_society_paulite = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_paulite_community
+						owned_by = PREV
+					}
+
+					religion = paulite
+					remove_province_modifier = secret_paulite_community
+				}
+			}
+		}
+		secret_religious_society_muite = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_muite_community
+						owned_by = PREV
+					}
+
+					religion = muite
+					remove_province_modifier = secret_muite_community
+				}
+			}
+		}
 		secret_religious_society_unificationist = {
 			ROOT = {
 				any_demesne_province = {
@@ -286,6 +312,19 @@ flip_secret_religious_community_provinces = {
 
 					religion = unificationist
 					remove_province_modifier = secret_unificationist_community
+				}
+			}
+		}
+		secret_religious_society_autotheocrat = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_autotheocrat_community
+						owned_by = PREV
+					}
+
+					religion = autotheocrat
+					remove_province_modifier = secret_autotheocrat_community
 				}
 			}
 		}
@@ -351,6 +390,19 @@ flip_secret_religious_community_provinces = {
 
 					religion = eastern_lightning
 					remove_province_modifier = secret_eastern_lightning_community
+				}
+			}
+		}
+		secret_religious_society_elijahite = {
+			ROOT = {
+				any_demesne_province = {
+					limit = {
+						has_province_modifier = secret_elijahite_community
+						owned_by = PREV
+					}
+
+					religion = elijahite
+					remove_province_modifier = secret_elijahite_community
 				}
 			}
 		}

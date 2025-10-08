@@ -864,6 +864,34 @@ k_eastern_lightning = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+d_elijahite = {
+	color = { 110 50 100 }
+	
+	creation_requires_capital = no
+	
+	capital = 1457 # Harbin
+	
+	dignity = 200
+	
+	title = IMMORTAL
+	title_female = IMMORTAL
+	foa = IMMORTAL_FOA
+	
+	short_name = yes
+	
+	religion = elijahite
+	assimilate = no
+	
+	controls_religion = elijahite
+	
+	allow = {
+		religion = elijahite
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
 k_tenrikyo = {
 	color = { 120 156 040 }
 	
@@ -946,6 +974,101 @@ k_unificationist = {
 	
 	allow = {
 		religion = unificationist
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_autotheocrat = {
+	color = { 200 45 60 }
+	
+	creation_requires_capital = no
+	
+	capital = 758 # Seoul
+	
+	dignity = 200
+	
+	title = REVEREND_MINISTER
+	title_female = REVEREND_MINISTER
+	foa = POPE_FOA
+	
+	short_name = yes
+	
+	religion = autotheocrat
+	assimilate = no
+	
+	caliphate = yes
+	
+	controls_religion = autotheocrat
+	
+	allow = {
+		religion = autotheocrat
+		num_of_holy_sites = 3
+		piety = 1000
+		e_hong = {
+			has_holder = no
+		}
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_paulite = {
+	color = { 200 45 60 }
+	
+	creation_requires_capital = no
+	
+	capital = 1923 # Beijing
+	
+	dignity = 200
+	
+	title = PRESIDENT
+	title_female = PRESIDENT
+	foa = PRESIDENT_FOA
+	
+	short_name = yes
+	
+	religion = paulite
+	
+	# Always exists
+	landless = yes
+	assimilate = no
+	
+	controls_religion = paulite
+	
+	allow = {
+		religion = paulite
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_muite = {
+	color = { 65 82 186 }
+	
+	creation_requires_capital = no
+	
+	capital = 1358 # Taipei
+	
+	dignity = 200
+	
+	title = SERVANT
+	title_female = MAIDSERVANT
+	foa = SERVANT_FOA
+	
+	short_name = yes
+	
+	religion = muite
+	
+	# Always exists
+	landless = yes
+	assimilate = no
+	
+	controls_religion = muite
+	
+	allow = {
+		religion = muite
 		num_of_holy_sites = 3
 		piety = 1000
 	}
