@@ -147,7 +147,7 @@ government_flavor = {
 	priority = 2
 	trigger = {
 		culture_group = japonic
-		tier <= duke
+		tier <= count
 		NOT = { government = merchant_republic_government }
 	}
 }
