@@ -387,6 +387,36 @@ custom_micronesia = {
 		d_guam d_mariana d_palau d_yap
     }
 }
+custom_arunachal_pradesh = {
+	duchies = {
+		d_subansari d_namsai
+    }
+}
+custom_bangladesh = {
+	duchies = {
+		d_chattogram
+    }
+}
+custom_purvottar_pradesh = {
+	duchies = {
+		d_tripura d_manipur d_mizoram d_nagaland
+    }
+}
+custom_himalaya = {
+	regions = {
+		custom_bhutan custom_arunachal_pradesh
+    }
+}
+custom_greater_tibet = {
+	regions = {
+		custom_tibet custom_bhutan
+    }
+}
+custom_northeast_india = {
+	regions = {
+		custom_arunachal_pradesh custom_purvottar_pradesh custom_bangladesh
+    }
+}
 custom_historical_plague_free_zone = {
     regions = {
 		custom_micronesia
