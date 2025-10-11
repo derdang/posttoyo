@@ -19810,9 +19810,9 @@ add_same_commander_trait_as_FROM = {
 landless_pope_effect = {
 	if = {
 		limit = {
-			has_landed_title = k_conferentia
+			has_landed_title = d_cao_dai
 			NOT = {
-				catholic = {
+				cao_dai = {
 					is_name_randomized = yes
 				}
 			}
@@ -19830,8 +19830,8 @@ landless_pope_effect = {
 					}
 				}
 			}
-			character_event = { id = HFP.40034 }
-			character_event = { id = HFP.40035 }
+			#character_event = { id = HFP.40034 } There is no Papal State Equivalent
+			#character_event = { id = HFP.40035 }
 		}
 	}
 }

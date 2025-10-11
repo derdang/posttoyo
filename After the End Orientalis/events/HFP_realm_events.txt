@@ -699,7 +699,7 @@ narrative_event = {
     }
 }
 
-# The Teutonic Order has been formed
+# The Teutonic Order has been formed (TODO:REPURPOSE)
 narrative_event = {
     id = HFP.40031
     desc = EVTDESC_HFP_40031
@@ -744,176 +744,17 @@ narrative_event = {
     }
 }
 
-# The Holy Sepulchre has been formed
-narrative_event = {
-    id = HFP.40032
-    desc = EVTDESC_SOA_1609
-    title = EVTTITLE_SOA_1609
-    picture = GFX_evt_western_knights_byzantine
-    border = GFX_event_narrative_frame_religion
-    portrait = event_target:portrait_target
-    is_triggered_only = yes
+# The Holy Sepulchre has been formed - Doesnt Exist in this mod
 
-    immediate = {
-        if = {
-            limit = {
-                NOT = {
-                    character = FROM
-                }
-            }
-            d_holy_sepulchre = {
-                holder_scope = {
-                    save_event_target_as = portrait_target
-                }
-            }
-        }
-        else = {
-            save_event_target_as = portrait_target
-        }
-    }
+# Romagna / Papal States usurpation event - Italy Doesnt Exist
 
-    option = {
-        name = EVTOPTA_SOA_1609
-        trigger = {
-            religion = FROM
-        }
-    }
+# Papal States don't exist
 
-    option = {
-        name = EVTOPTB_SOA_1609
-        trigger = {
-            NOT = {
-                religion = FROM
-            }
-        }
-    }
-}
+# Clean up Papal Guards - Cao Dai doesnt have this
 
-# Romagna / Papal States usurpation event
-character_event = {
-    id = HFP.40033
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = {
-        FROM = {
-            title = k_papacy
-        }
-    }
+# Narrative Event - Papal States usurped - Doesn't Exist
 
-    immediate = {
-        if = {
-            limit = {
-                NOT = {
-                    has_landed_title = k_papal_state
-                }
-            }
-            grant_title_no_opinion = k_romagna
-            destroy_landed_title = k_papacy
-            k_papacy = {
-                any_direct_de_jure_vassal_title = {
-                    de_jure_liege = k_romagna
-                }
-                dejure_liege_title = {
-                    k_romagna = {
-                        de_jure_liege = PREV
-                    }
-                }
-            }
-            ROOT = {
-                character_event = { id = HFP.40036 }
-            }
-            any_playable_ruler = {
-                limit = {
-                    any_demesne_province = {
-                        region = world_europe_south_italy
-                    }
-                }
-                character_event = { id = HFP.40036 }
-            }
-        }
-    }
-}
-
-# Papal States becomes Romagna when the Pope holds no lands in Italy
-character_event = {
-    id = HFP.40034
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = {
-        has_landed_title = k_papal_state
-    }
-
-    immediate = {
-        destroy_landed_title = k_papacy
-        k_papacy = {
-            any_direct_de_jure_vassal_title = {
-                de_jure_liege = k_romagna
-            }
-        }
-        any_playable_ruler = {
-            limit = {
-                any_demesne_province = {
-                    region = world_europe_south_italy
-                }
-            }
-            character_event = { id = HFP.40037 }
-        }
-    }
-}
-
-# Clean up Papal Guards 
-character_event = {
-    id = HFP.40035
-    hide_window = yes
-    is_triggered_only = yes
-    trigger = {
-    
-    }
-
-    immediate = {
-        activate_title = {
-            title = d_papal_guards
-            status = no
-        }
-    }
-}
-
-# Narrative Event - Papal States usurped -
-narrative_event = {
-    id = HFP.40036
-    desc = EVTDESC_HFP_40036
-    title = EVTTITLE_HFP_40036
-    picture = GFX_evt_magnificent_castle
-    is_triggered_only = yes
-
-    option = {      
-        name = EVTOPTA_HFP_40036
-        trigger = {
-            NOT = {
-                character = FROM
-            }
-        }
-    }
-    option = {
-        name = EVTOPTB_HFP_40036
-        trigger = {
-            character = FROM
-        }
-    }
-}
-
-# Narrative Event - Papacy has lost all their land, and thus any claim to the land in central Italy -
-narrative_event = {
-    id = HFP.40037
-    desc = EVTDESC_HFP_40037
-    title = EVTTITLE_HFP_40037
-    picture = GFX_evt_magnificent_castle
-    is_triggered_only = yes
-
-    option = {      
-        name = EVTOPTA_HFP_40037
-    }
-}
+# Narrative Event - Papacy has lost all their land, and thus any claim to the land in central Italy - Italy and the Papacy Doesnt Exist
 
 # Narrative Event - Grand Stem Duchies in the HRE
 narrative_event = {
@@ -968,9 +809,9 @@ character_event = {
 	
 	only_rulers = yes
 	trigger = {
-		has_landed_title = e_hre #Only if the original exists.
+		has_landed_title = e_malaysia #Only if the original exists.
 		NOT = {
-			e_hre = {
+			e_malaysia = {
 				persistent_event_target:hre_title_1_per = { always = yes } #If one exists already, all do.
 			}
 		}
@@ -979,6 +820,6 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		princely_elective_german_elector_setup_effect = yes #Regular German setup.
+		princely_elective_pennisular_elector_setup_effect = yes #Regular Malay setup.
 	}
 }
