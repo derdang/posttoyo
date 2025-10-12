@@ -182,6 +182,18 @@ government_flavor = {
 	}
 }
 government_flavor = {
+	name = gov_oligarchic_republic
+	graphics = GFX_east_asian_cities
+	priority = 2
+	trigger = {
+		culture_group = viet
+		OR = {
+			government = merchant_republic_government
+			government = republic_government
+		}
+	}
+}
+government_flavor = {
 	name = gov_chaebol
 	graphics = GFX_east_asian_cities
 	priority = 2
