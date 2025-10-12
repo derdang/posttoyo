@@ -205,19 +205,16 @@ d_ruist_yansheng = {
 	title = "HEAD_RUIST"
 	foa = "TENNO_FOA"
 	
-	short_name = yes
-	location_ruler_title = yes
-	
 	# Always exists
 	landless = yes
 	
-	# Controls a religion
+	religion = ruist
 	controls_religion = ruist
 	
-	religion = ruist
-	
 	# Cannot be held as a secondary title
-	primary = no
+	primary = yes
+	caliphate = yes
+	assimilate = no
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }

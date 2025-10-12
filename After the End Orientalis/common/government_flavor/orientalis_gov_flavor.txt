@@ -88,7 +88,10 @@ government_flavor = {
 	graphics = GFX_east_asian_cities
 	priority = 2
 	trigger = {
-		religion_group = buddhist_group
+		AND = {
+			religion_group = buddhist_group
+			is_oversea_chinese = no
+		}
 		OR = {
 			government = merchant_republic_government
 			government = republic_government
@@ -170,7 +173,7 @@ government_flavor = {
 	trigger = {
 		OR = {
 			culture_group = han
-			culture_group = viet
+			is_oversea_chinese = yes
 		}
 		OR = {
 			government = merchant_republic_government

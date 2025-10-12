@@ -3381,6 +3381,48 @@ coat_of_arms = {
 1384045 = { name="Sim" culture=cina }
 1384046 = { name="Wenming" culture=cina religion=mahayana used_for_random=no}
 1384047 = { name="Chen" culture=cina religion=wokou used_for_random=no }
+1384048 = { name="Cheong" culture=cina religion=ruist
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 11
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1384049 = { name="Tang" culture=cina religion=catholic
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 0
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+1384050 = { name="Koe" culture=cina religion=concordanist
+	coat_of_arms = {
+		religion = concordanist
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1385000 = { name="Ontoros" culture=murut religion=renewalist}
 
@@ -12861,7 +12903,7 @@ coat_of_arms = {
 		}
 	}
 }
-1956032 = { name="Kuok" culture=tionghoa
+1956032 = { name="Kuok" culture=cina
 	coat_of_arms = {
 		religion = mahayana
 		template = 0
@@ -12956,7 +12998,6 @@ coat_of_arms = {
 1957036 = { name="Hamzah" culture=sambas religion=renewalist}
 1957037 = { name="Izzuddin" culture=sambas religion=renewalist}
 1957038 = { name="Kayangan" culture=bruneian religion=renewalist used_for_random=no}
-#Malaysian Historical Dynasty References
 1957039 = { name="Perak" culture=perakian
 	coat_of_arms = {
 		religion = renewalist
@@ -12972,6 +13013,20 @@ coat_of_arms = {
 	}
 }
 1957040 = { name="Ledang" culture=malaccan religion=renewalist used_for_random=no}
+1957041 = { name="Endawie" culture=kendayan religion=renewalist
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 58
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1957801 = { name="Celak" culture=selangorean
 	coat_of_arms = {
 		religion = renewalist
