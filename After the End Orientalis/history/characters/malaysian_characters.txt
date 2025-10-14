@@ -905,6 +905,20 @@
 	trait=content
 	2578.1.1={birth=yes}
 }
+1957441= { #Riau Islands
+	name="Nurdin"
+	dynasty=2007032 #Basirun
+	culture=riauan
+	religion=renewalist
+	trait=skilled_tactician
+	trait=greedy
+	trait=administrator
+	trait=strong
+	trait=authoritative
+	trait=proud
+	trait=ambitious
+	2578.1.1={birth=yes}
+}
 1957445= { #c_batu_pahat
 	name="Di-Awng"
 	dynasty=1384047 #Chen
@@ -1662,6 +1676,11 @@
 	trait=legendary
 	occluded=yes
 	1280.1.1={birth=yes}
+	1300.1.1={
+		create_bloodline = {
+				type = bolkiah_bloodline
+			}
+	}
 	1360.1.1={death=yes}
 }
 1985002={ #Brunei Founding Sultan

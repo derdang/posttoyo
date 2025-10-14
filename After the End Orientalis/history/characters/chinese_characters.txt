@@ -788,7 +788,7 @@
 	trait = greedy
 	trait = pious
 	trait = ambitious
-	
+	father= 3923029 #Tuwana Mona
 	2560.2.9 = {
 		birth = yes
 	}
@@ -896,6 +896,66 @@
 	trait = zealous
 	trait = chaste
 	trait = gluttonous
+	2580.1.1 = {birth = yes}
+	2650.1.1 = {death = yes}
+}
+
+#More Gaoshan Guys
+3923029 = { #Father
+	name = "Mona"
+	dynasty = 3923028 #Tuwana
+	culture = gaoshan
+	religion = sanmin
+	martial = 4
+	diplomacy = 7
+	stewardship = 4
+	intrigue = 3
+	learning = 5
+	trait=charismatic_negotiator
+    trait=gregarious
+    trait=kind
+    trait=charitable
+	2540.1.1 = {birth = yes}
+	2600.1.1 = {death = yes}
+}
+3923030 = { #Count of Nantou
+	name = "Iwan"
+	dynasty = 3923028 #Tuwana
+	culture = gaoshan
+	religion = sanmin
+	martial = 4
+	diplomacy = 7
+	stewardship = 4
+	intrigue = 3
+	learning = 5
+	trait=tough_soldier
+    trait=fair
+    trait=kind
+    trait=humble
+    trait=diligent
+	trait=twin
+	father= 3923029 #Tuwana Mona
+	2580.1.1 = {birth = yes}
+	2650.1.1 = {death = yes}
+}
+3923031 = { #Count of Yushan
+	name = "Walis"
+	dynasty = 3923028 #Tuwana
+	culture = gaoshan
+	religion = sanmin
+	martial = 4
+	diplomacy = 7
+	stewardship = 4
+	intrigue = 3
+	learning = 5
+	trait=brilliant_strategist
+    trait=devout
+    trait=wroth
+    trait=diligent
+    trait=robust
+    trait=ambitious
+	trait=twin
+	father= 3923029 #Tuwana Mona
 	2580.1.1 = {birth = yes}
 	2650.1.1 = {death = yes}
 }
@@ -3954,6 +4014,7 @@
     dynasty=9020001 # Gu
     culture=shanghainese
     religion=shengming
+	secret_religion=jinbenwei
     martial=4
     diplomacy=3
     stewardship=5

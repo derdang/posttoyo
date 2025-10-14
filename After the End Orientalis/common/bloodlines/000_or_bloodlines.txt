@@ -33,7 +33,7 @@ legendary_ruler_of_singapore = { #...
 	picture = GFX_bloodlines_pap
 	flags = { historical_bloodline }
 }
-baekdu_bloodline = { #...
+baekdu_bloodline = { #Kim Family
 	monthly_character_prestige = 0.3
 	monthly_character_piety = 0.3
 
@@ -48,7 +48,28 @@ baekdu_bloodline = { #...
 			}
 		}
 	}
+	allow_bastards = yes
 	picture = GFX_bloodlines_star
+	flags = { historical_bloodline }
+}
+bolkiah_bloodline = { #Bolkiah Family
+	monthly_character_prestige = 0.45
+	monthly_character_piety = 0.2
+	muslim_opinion = 10
+
+	inheritance = patrilineal
+	active = {
+		custom_tooltip = {
+			text = saintly_bloodline_same_culture_TT
+			FROM = {
+				founder = {
+					culture = ROOT
+				}
+			}
+		}
+	}
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_sunni
 	flags = { historical_bloodline }
 }
 wongsuwan_bloodline = { #...

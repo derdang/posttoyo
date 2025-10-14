@@ -367,12 +367,32 @@
     2569.1.1={birth=yes}
     2700.1.1={death=yes}
 }
-1293936 ={ #Count of Sambas
+1293936 ={ #Sultan of Sambas
 	name="Faiz"
     dynasty=1957037 # Izzuddin
     culture=sambas
     religion=renewalist
+	martial=6
+    diplomacy=4
+    stewardship=7
+    intrigue=6
+    learning=5
+	trait=skilled_tactician
+	trait=envious
+	trait=strong
+	trait=robust
+	trait=scarred
+	trait=giant
+	trait=shrewd
+	trait=ambitious
     2581.1.1={birth=yes}
+	2600.1.1={
+		effect = {
+			add_claim = k_lanfang
+			add_claim = c_landak
+			add_claim = c_kubu_raya
+		}
+	}
     2700.1.1={death=yes}
 }
 1293937 ={ #Count of Nunukan

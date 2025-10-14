@@ -90,10 +90,9 @@
 }
 1598013={ #Sinpo
 	name="Ha Il"
-	dynasty=1598401 #Kim
+	dynasty=1598153 #Dugu
 	culture=chosunin
 	religion=yuilsasang
-	father=1598153
 	2588.1.1={birth=yes}
 }
 1598014={ #d_hamgyeong
@@ -126,6 +125,7 @@
 	religion=cheondoist
 	female=yes
 	trait=ambitious
+	father=1598038
 	2547.1.1={birth=yes}
 	2567.12.1={
 		add_spouse = 1598152
@@ -166,6 +166,7 @@
 	dynasty=1598019 #Kwon
 	culture=chosunin
 	religion=yuilsasang
+	father=1598038
 	2552.1.1={birth=yes}
 	2601.12.1={
 		employer = 1598016
@@ -182,6 +183,20 @@
 	father=1598154
 	mother=1598017
 	2603.9.1={birth=yes}
+}
+1598038={ #Father of the Kwon Kids
+	name="Ju-won"
+	dynasty=1598019 #Kwon
+	culture=chosunin
+	religion=yuilsasang
+	trait=charismatic_negotiator
+	trait=scholar
+	trait=brave
+	trait=content
+	trait=trusting
+	trait=lustful
+	2510.1.1={birth=yes}
+	2570.1.1={death=yes}
 }
 ###### North Korea History ###########
 1598150={ #
@@ -255,15 +270,13 @@
 	stewardship=5
 	intrigue=1
 	learning=6
-	trait=mastermind_theologian
-	trait=theologian
-	trait=diligent
-	trait=humble
-	trait=erudite
-	trait=brave
-	trait=genius
-	trait=physician
-	trait=strong
+	trait=skilled_tactician
+	trait=robust
+	trait=wroth
+	trait=cruel
+	trait=patient
+	trait=ambitious
+	trait=one_eyes
 	2550.1.1={birth=yes}
 }
 ###########South Korea###########
