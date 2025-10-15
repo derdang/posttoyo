@@ -1,1 +1,6406 @@
-#empty
+###########################################
+#
+# Holy Order Events
+#
+# ID SoA 1000-2999 is reserved
+#
+###########################################
+# Written by Henrik Fåhraeus
+###########################################
+
+namespace = SoA
+
+########################################
+# The Brotherly Knights
+########################################
+
+# The Grand Master demands one of your sons due to debt
+character_event = {
+	id = SoA.1000
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = catholic
+			religion = restorationist
+			religion = rizalista
+		}
+		culture_group = philippine
+		is_heretic = no
+		has_character_modifier = borrowed_from_knights_templar
+		NOT = { has_character_flag = sent_son_to_knights_templar }
+		any_child = {
+			is_female = no
+			is_adult = yes
+			is_ruler = no
+			prisoner = no
+			NOT = { trait = incapable }
+			ROOT = {
+				NOT = { 
+					current_heir = { 
+						character = PREVPREV 
+					}
+				}
+			}
+		}
+		has_dlc = "Sons of Abraham"
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+		random_child = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_ruler = no
+				prisoner = no
+				NOT = { trait = incapable }
+				ROOT = {
+					NOT = { 
+						current_heir = { 
+							character = PREVPREV 
+						}
+					}
+				}
+			}
+			character_event = {
+				id = SoA.1001
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1001
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knightly_brothers_marist = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1002
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1002
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1003
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1003
+	desc = {
+        text = EVTDESC_SOA_1003
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_DEMAND_SON_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1003 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		set_character_flag = sent_son_to_knights_templar
+		
+		piety = 100
+		
+		d_knightly_brothers_marist = {
+			holder_scope = {
+				FROMFROM = {
+					hidden_tooltip = {
+						clear_wealth = PREV
+					}
+					spouse = {
+						remove_spouse = spouse
+						hidden_tooltip = { character_event = { id = SoA.2862 } }
+					}
+					move_character = PREV
+					add_trait = celibate
+					end_inaccessibility_effect = yes #removes in_hiding or in_seclusion
+
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1003 # Pay them back
+		wealth = -300
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_knights_templar
+		}
+		FROM = {
+			wealth = 300
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_1003 # Refuse
+		piety = -1000
+	}
+}
+
+# Ping event when borrowing money from the Knights
+character_event = {
+	id = SoA.1010
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = -300
+		FROM = {
+			letter_event = {
+				id = SoA.1011
+			}
+		}
+		abdicate_holy_order_if_religion_changes_effect = yes
+	}
+}
+
+# Notification event when borrowing money from the Knights
+letter_event = {
+	id = SoA.1011
+	desc = {
+        text = EVTDESC_SOA_1011
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BORROW_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# Ping event when vassalizing the Knights
+character_event = {
+	id = SoA.1015
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_defacto_liege = FROM
+		FROM = {
+			letter_event = {
+				id = SoA.1016
+			}
+		}
+		abdicate_holy_order_if_religion_changes_effect = yes
+	}
+}
+
+# Notification event when vassalizing the Knights
+letter_event = {
+	id = SoA.1016
+	desc = EVTDESC_SOA_1016
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# The Grand Master demands the right to build a castle in your demesne
+character_event = {
+	id = SoA.1020
+	
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = catholic
+			religion = restorationist
+			religion = rizalista
+		}
+		culture_group = philippine
+		is_heretic = no
+		
+		has_character_modifier = borrowed_from_knights_templar
+		NOT = { has_character_flag = sent_son_to_knights_templar }
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+		}
+		
+		d_knightly_brothers_marist = {
+			holder_scope = {
+				wealth = 300
+			}
+		}
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_knights_templar }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_templar
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+			}
+			province_event = {
+				id = SoA.1021
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1021
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knightly_brothers_marist = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1022
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1022
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1023
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1023
+	desc = {
+        text = EVTDESC_SOA_1023
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BUILD_CASTLE_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_knights_templar
+			remove_character_modifier = expelled_d_knights_templar
+			FROMFROM = {
+				province_event = { id = SoA.1024 }
+			}
+		}
+		
+		piety = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1003 # Pay them back
+		wealth = -300
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_knights_templar
+		}
+		FROM = {
+			wealth = 300
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_1003 # Refuse
+		piety = -1000
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1024
+	desc = EVTDESC_SOA_1024
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+# The son of a ruler volunteers to join the Brotherly Knights
+character_event = {
+	id = SoA.1030
+	hide_window = yes
+	
+	only_men = yes
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	religion_group = christian
+	
+	trigger = {
+		is_ruler = no
+		OR = {
+			religion = catholic
+			religion = restorationist
+			religion = rizalista
+		}
+		culture_group = philippine
+		is_heretic = no
+		
+		martial = 5
+		
+		is_title_active = d_knightly_brothers_marist
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			OR = {
+				religion = catholic
+				religion = restorationist
+				religion = rizalista
+			}
+			liege = {
+				holy_order = no
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_knights_templar }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_templar
+			}
+		}
+		
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = {
+						is_pregnant = yes
+					father_of_unborn = { character = ROOT } # Won't happen if spouse is pregnant with non-bastard child
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.5
+			trait = homosexual
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2
+			any_spouse = {
+				reverse_opinion = { who = ROOT value = 100 }
+			}
+		}
+		modifier = {
+			factor = 3.0 # Prefer the Knights of La Vang
+			culture_group = viet
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = SoA.1031
+			}
+		}
+	}
+}
+
+# Son or brother asks to join the Brotherly Knights
+character_event = {
+	id = SoA.1031
+	desc = EVTDESC_SOA_1031
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1031 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = 100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1032
+				tooltip = EVTTOOLTIP_SOA_1032
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1033
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Brotherly Knights
+character_event = {
+	id = SoA.1032
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knightly_brothers_marist = {
+			holder_scope = {
+				save_event_target_as = order_target
+				ROOT = {
+					character_event = { id = SoA.2864 }
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Brotherly Knights
+character_event = {
+	id = SoA.1033
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_holy_order
+		}
+	}
+}
+
+# The Grand Master humbly requests the right to build a castle in your demesne
+character_event = {
+	id = SoA.1050
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = catholic
+			religion = restorationist
+			religion = rizalista
+		}
+		is_heretic = no
+		
+		d_knightly_brothers_marist = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+				NOT = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+			OR = {
+				region = custom_southeast_asia
+				region = custom_korea
+				region = world_old_japan
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_knights_templar }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_templar
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_knightly_brothers_marist = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_knightly_brothers_marist = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_knightly_brothers_marist = {
+				holder_scope = {
+					realm_size = 5
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+				OR = {
+					region = world_persia
+					region = custom_korea
+					region = world_old_japan
+				}
+			}
+			province_event = {
+				id = SoA.1051
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1051
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knightly_brothers_marist = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1052
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1052
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1053
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1053
+	desc = {
+        text = EVTDESC_SOA_1053
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BUILD_CASTLE_FOR_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_d_knights_templar
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = SoA.1054 }
+			}
+			remove_character_modifier = expelled_d_knights_templar
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		piety = -100
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1054
+	desc = EVTDESC_SOA_1054
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+
+# Ping event when expelling a Christian Holy Order
+character_event = {
+	id = SoA.1060
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_title_under = {
+			limit = {
+				tier = BARON
+				location = {
+					owner = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+				}
+			}
+			usurp_title = FROM
+		}
+		
+		if = {
+			limit = {
+				is_liege_or_above = FROM
+			}
+			set_defacto_liege = THIS
+		}
+	
+		FROM = {
+			letter_event = {
+				id = SoA.1061
+			}
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_expelled_from_realm
+		}
+	}
+}
+
+# Notification event when expelling a Christian Holy Order
+letter_event = {
+	id = SoA.1061
+	desc = {
+        text = EVTDESC_SOA_1061
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_EXPEL_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = donated_to_holy_order
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1061
+	}
+}
+
+########################################
+# The Blessed Knights
+########################################
+
+# Ping event when vassalizing the Knights
+character_event = {
+	id = SoA.1115
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_defacto_liege = FROM
+		FROM = {
+			letter_event = {
+				id = SoA.1116
+			}
+		}
+	}
+}
+
+# Notification event when vassalizing the Knights
+letter_event = {
+	id = SoA.1116
+	desc = EVTDESC_SOA_1116
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# The son of a ruler volunteers to join the Blessed Knights
+character_event = {
+	id = SoA.1130
+	hide_window = yes
+	
+	only_men = yes
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	religion_group = christian
+	
+	trigger = {
+		is_ruler = no
+		OR = {
+			religion = catholic
+			religion = restorationist
+			religion = rizalista
+		}
+		culture_group=philippine
+		is_heretic = no
+		
+		martial = 5
+		
+		is_title_active = d_knights_of_bim
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			OR = {
+				religion = catholic
+				religion = restorationist
+				religion = rizalista
+			}
+			liege = {
+				holy_order = no
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_knights_hospitaler }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_hospitaler
+			}
+		}
+
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = {
+						is_pregnant = yes
+					father_of_unborn = { character = ROOT } # Won't happen if spouse is pregnant with non-bastard child
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.5
+			trait = homosexual
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2
+			any_spouse = {
+				reverse_opinion = { who = ROOT value = 100 }
+			}
+		}
+		modifier = {
+			factor = 3.0 # Prefer the Knights of La Vang
+			culture_group = viet
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = SoA.1131
+			}
+		}
+	}
+}
+
+# Son or brother asks to join the Blessed Knights
+character_event = {
+	id = SoA.1131
+	desc = EVTDESC_SOA_1131
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1031 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = 100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1132
+				tooltip = EVTTOOLTIP_SOA_1132
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1133
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Blessed Knights
+character_event = {
+	id = SoA.1132
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knights_of_bim = {
+			holder_scope = {
+				save_event_target_as = order_target
+				ROOT = {
+					character_event = { id = SoA.2864 }
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Blessed Knights
+character_event = {
+	id = SoA.1133
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_holy_order
+		}
+	}
+}
+
+# Ping event when donating money to the Knights (also used for Salvation Army, Assassins, Haruriyyah and Templar orders)
+character_event = {
+	id = SoA.1140
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = 300
+		if = {
+			limit = { religion_group = christian }
+			FROM = {
+				letter_event = {
+					id = SoA.1141
+				}
+			}
+		}
+		if = {
+			limit = { religion_group = muslim }
+			FROM = {
+				letter_event = {
+					id = CM.4399
+				}
+			}
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_generous_donation
+		}
+		abdicate_holy_order_if_religion_changes_effect = yes
+	}
+}
+
+# Notification event when donating money to the Knights
+letter_event = {
+	id = SoA.1141
+	desc = {
+        text = EVTDESC_SOA_1141
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_DONATE_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# The Grand Master humbly requests the right to build a castle in your demesne
+character_event = {
+	id = SoA.1150
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = catholic
+			religion = restorationist
+			religion = rizalista
+		}
+		culture_group = philippine
+		is_heretic = no
+		
+		d_knights_of_bim = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+			OR = {
+				region = world_persia
+				region = custom_korea
+				region = world_old_japan
+				region = world_india_rajastan
+				region = world_africa_north
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_knights_hospitaler }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_hospitaler
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_knights_of_bim = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_knights_of_bim = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_knights_of_bim = {
+				holder_scope = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_knights_of_bim = {
+				holder_scope = {
+					realm_size = 5
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+				OR = {
+					region = world_persia
+					region = custom_korea
+					region = world_old_japan
+				}
+			}
+			province_event = {
+				id = SoA.1151
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1151
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knights_of_bim = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1152
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1152
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1153
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1153
+	desc = {
+        text = HOLY_ORDER_BUILD_CASTLE_FOR_MONEY_ALT
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BORROW_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_d_knights_hospitaler
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = SoA.1154 }
+			}
+			remove_character_modifier = expelled_d_knights_hospitaler
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1153 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		piety = -100
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1154
+	desc = EVTDESC_SOA_1154
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+########################################
+# The Salvation Army
+########################################
+
+# The Grand Master demands one of your sons due to debt
+character_event = {
+	id = SoA.1200
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = concordanist
+			religion = adventist
+			religion = pentecostal
+		}
+		is_heretic = no
+		has_character_modifier = borrowed_from_bektashi
+		NOT = { has_character_flag = sent_son_to_bektashi }
+		any_child = {
+			is_female = no
+			is_adult = yes
+			is_ruler = no
+			prisoner = no
+			NOT = { trait = incapable }
+			ROOT = {
+				NOT = { 
+					current_heir = { 
+						character = PREVPREV 
+					}
+				}
+			}
+		}
+		has_dlc = "Sons of Abraham"
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+		random_child = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_ruler = no
+				prisoner = no
+				NOT = { trait = incapable }
+				ROOT = {
+					NOT = { 
+						current_heir = { 
+							character = PREVPREV 
+						}
+					}
+				}
+			}
+			character_event = {
+				id = SoA.1201
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1201
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_salvation_army = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1202
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1202
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1203
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1203
+	desc = {
+        text = EVTDESC_SOA_1203
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_DEMAND_SON_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1003 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		set_character_flag = sent_son_to_bektashi
+		
+		piety = 100
+		
+		d_salvation_army = {
+			holder_scope = {
+				FROMFROM = {
+					move_character = PREV
+					hidden_tooltip = {
+						clear_wealth = PREV
+					}
+					end_inaccessibility_effect = yes #removes in_hiding or in_seclusion
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1003 # Pay them back
+		wealth = -300
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_bektashi
+		}
+		FROM = {
+			wealth = 300
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_1003 # Refuse
+		piety = -1000
+	}
+}
+
+
+# Birth of the Salvation Army Order (SOA.1209) - The Replacement of this Order: The Salvation Army Exist on Map
+
+# Ping event when borrowing money from the Salvation Army
+character_event = {
+	id = SoA.1210
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = -300
+		FROM = {
+			letter_event = {
+				id = SoA.1211
+			}
+		}
+	}
+}
+
+# Notification event when borrowing money from the Salvation Army
+letter_event = {
+	id = SoA.1211
+	desc = {
+        text = EVTDESC_SOA_1211
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BORROW_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+
+# The Grand Master demands the right to build a castle in your demesne
+character_event = {
+	id = SoA.1220
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = muslim
+	
+	trigger = {
+		OR = {
+			religion = concordanist
+			religion = adventist
+			religion = pentecostal
+		}
+		is_heretic = no
+		
+		has_character_modifier = borrowed_from_bektashi
+		NOT = { has_character_flag = sent_son_to_bektashi }
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+		}
+		
+		d_salvation_army = {
+			holder_scope = {
+				wealth = 300
+			}
+		}
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_bektashi }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_bektashi
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+			}
+			province_event = {
+				id = SoA.1221
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1221
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_salvation_army = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1222
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1222
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1223
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1223
+	desc = EVTDESC_SOA_1223
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_bektashi
+			FROMFROM = {
+				province_event = { id = SoA.1224 }
+			}
+		}
+		
+		piety = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1003 # Pay them back
+		wealth = -300
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_bektashi
+		}
+		FROM = {
+			wealth = 300
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_1003 # Refuse
+		piety = -1000
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1224
+	desc = EVTDESC_SOA_1224
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+# The son of a ruler volunteers to join the Salvation Army Order
+character_event = {
+	id = SoA.1230
+	hide_window = yes
+	
+	only_men = yes
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	religion_group = muslim
+	
+	trigger = {
+		is_ruler = no
+		OR = {
+			religion = concordanist
+			religion = adventist
+			religion = pentecostal
+		}
+		is_heretic = no
+		
+		martial = 5
+		
+		is_title_active = d_salvation_army
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			OR = {
+				religion = concordanist
+				religion = adventist
+				religion = pentecostal
+			}
+			liege = {
+				holy_order = no
+			}
+		}
+		liege = {
+			NOT = { has_landed_title = d_salvation_army }
+			liege = {
+				NOT = { has_landed_title = d_salvation_army }
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_bektashi }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_bektashi
+			}
+		}
+
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = {
+						is_pregnant = yes
+					father_of_unborn = { character = ROOT } # Won't happen if spouse is pregnant with non-bastard child
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.5
+			trait = homosexual
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2
+			any_spouse = {
+				reverse_opinion = { who = ROOT value = 100 }
+			}
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = SoA.1231
+			}
+		}
+	}
+}
+
+# Son or brother asks to join the Salvation Army
+character_event = {
+	id = SoA.1231
+	desc = EVTDESC_SOA_1231
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1031 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = 100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1232
+				tooltip = EVTTOOLTIP_SOA_1232
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1233
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Salvation Army Order
+character_event = {
+	id = SoA.1232
+
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_salvation_army = {
+			holder_scope = {
+				save_event_target_as = order_target
+				ROOT = {
+					character_event = { id = SoA.2864 }
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Salvation Army
+character_event = {
+	id = SoA.1233
+
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_holy_order
+		}
+	}
+}
+
+
+# The Grand Master requests the right to build a castle in your demesne
+character_event = {
+	id = SoA.1250
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		is_heretic = no
+		OR = {
+			religion = concordanist
+			religion = adventist
+			religion = pentecostal
+		}
+		
+		d_salvation_army = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+				NOT = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+			port = yes
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_bektashi }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_bektashi
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_salvation_army = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_salvation_army = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_salvation_army = {
+				holder_scope = {
+					realm_size = 5
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+				port = yes
+			}
+			province_event = {
+				id = SoA.1251
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1251
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_salvation_army = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1252
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1252
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1253
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1253
+	desc = EVTDESC_SOA_1253
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_d_bektashi
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = SoA.1254 }
+			}
+			remove_character_modifier = expelled_d_bektashi
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		piety = -100
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1254
+	desc = EVTDESC_SOA_1224
+	picture = GFX_evt_moors
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+
+########################################
+# The Knights of La Vang
+########################################
+
+# The son of a ruler volunteers to join the Knights of La Vang
+character_event = {
+	id = SoA.1330
+	hide_window = yes
+	
+	only_men = yes
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	religion_group = christian
+	
+	trigger = {
+		is_ruler = no
+		OR = {
+			religion = catholic
+			religion = restorationist
+			religion = rizalista
+		}
+		culture_group = viet
+		is_heretic = no
+		
+		martial = 5
+		
+		is_title_active = d_knights_of_lavang
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			OR = {
+				religion = catholic
+				religion = restorationist
+				religion = rizalista
+			}
+			liege = {
+				holy_order = no
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_teutonic_order }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_teutonic_order
+			}
+		}
+
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = {
+						is_pregnant = yes
+					father_of_unborn = { character = ROOT } # Won't happen if spouse is pregnant with non-bastard child
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.5
+			trait = homosexual
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2
+			any_spouse = {
+				reverse_opinion = { who = ROOT value = 100 }
+			}
+		}
+		modifier = {
+			factor = 3.0 # Prefer the other Holy Orders
+			NOT = {
+				culture_group = viet
+			}
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = SoA.1331
+			}
+		}
+	}
+}
+
+# Son or brother asks to join the Knights of La Vang
+character_event = {
+	id = SoA.1331
+	desc = EVTDESC_SOA_1331
+	picture = GFX_evt_crusaders
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1031 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = 100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1332
+				tooltip = EVTTOOLTIP_SOA_1332
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1333
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Knights of La Vang
+character_event = {
+	id = SoA.1332
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knights_of_lavang = {
+			holder_scope = {
+				save_event_target_as = order_target
+				ROOT = {
+					character_event = { id = SoA.2864 }
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Knights of La Vang
+character_event = {
+	id = SoA.1333
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_holy_order
+		}
+	}
+}
+
+# Ping event when donating money to the Knights of La Vang
+character_event = {
+	id = SoA.1340
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = 300
+		FROM = {
+			letter_event = {
+				id = SoA.1141 # We can just reuse this
+			}
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_generous_donation
+		}
+	}
+}
+
+# The Grand Master humbly requests the right to build a castle in your demesne
+character_event = {
+	id = SoA.1350
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	is_triggered_only = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = catholic
+			religion = restorationist
+			religion = rizalista
+		}
+		is_heretic = no
+		
+		d_knights_of_lavang = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+			OR = {
+				region = custom_old_vietnam
+				region = custom_old_cambodia
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_teutonic_order }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_teutonic_order
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+				OR = {
+					region = custom_old_vietnam
+					region = custom_old_cambodia
+				}
+			}
+			province_event = {
+				id = SoA.1351
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1351
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knights_of_lavang = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1352
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1352
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1353
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1353
+	desc = {
+        text = EVTDESC_SOA_1353
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BUILD_CASTLE_FOR_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_d_teutonic_order
+			}
+			modifier = {
+				factor = 0.05
+				NOT = { culture_group = central_germanic }
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = SoA.1354 }
+			}
+			remove_character_modifier = expelled_d_teutonic_order
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1153 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1354
+	desc = EVTDESC_SOA_1354
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+########################################
+# The Eastern Depot
+########################################
+
+# The Grand Master demands one of your sons due to debt
+character_event = {
+	id = SoA.1400
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = oldworld
+	
+	trigger = {
+		religion = jibenyuanze
+		is_heretic = no
+		has_character_modifier = borrowed_from_assassins
+		NOT = { has_character_flag = sent_son_to_assassins }
+		any_child = {
+			is_female = no
+			is_adult = yes
+			is_ruler = no
+			prisoner = no
+			NOT = { trait = incapable }
+			ROOT = {
+				NOT = { 
+					current_heir = { 
+						character = PREVPREV 
+					}
+				}
+			}
+		}
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_hashshashin }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_hashshashin
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+		random_child = {
+			limit = {
+				is_female = no
+				is_adult = yes
+				is_ruler = no
+				prisoner = no
+				NOT = { trait = incapable }
+				ROOT = {
+					NOT = { 
+						current_heir = { 
+							character = PREVPREV 
+						}
+					}
+				}
+			}
+			character_event = {
+				id = SoA.1401
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1401
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_eastern_depot = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1402
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1402
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1403
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1403
+	desc = {
+        text = EVTDESC_SOA_1203
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_DEMAND_SON_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1403 # Agree
+		
+		set_character_flag = sent_son_to_assassins
+		
+		piety = 100
+		
+		d_eastern_depot = {
+			holder_scope = {
+				FROMFROM = {
+					move_character = PREV
+					hidden_tooltip = {
+						clear_wealth = PREV
+						add_trait = disinherited
+					}
+					end_inaccessibility_effect = yes #removes in_hiding or in_seclusion
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1003 # Pay them back
+		wealth = -300
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_assassins
+		}
+		FROM = {
+			wealth = 300
+		}
+
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = { wealth = 300 }
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_1003 # Refuse
+
+		if = {
+			limit = { NOT = { has_dlc = "Mystics" } }
+			piety = -1000
+		}
+		if = {
+			limit = { has_dlc = "Mystics" }
+			piety = -200
+			set_character_flag = assassins_refused_to_pay_debt
+		}
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 2
+				NOT = { wealth = 300 }
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				is_impious_trigger = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_dlc = "Mystics" }
+			}
+		}
+	}
+}
+
+# Ping event when borrowing money from the Eastern Depot
+character_event = {
+	id = SoA.1410
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = -300
+		FROM = {
+			letter_event = {
+				id = SoA.1411
+			}
+		}
+	}
+}
+
+# Notification event when borrowing money from the Eastern Depot
+letter_event = {
+	id = SoA.1411
+	desc = {
+        text = EVTDESC_SOA_1411
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BORROW_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+	
+		name = EXCELLENT
+	}
+}
+
+# The Grand Master demands the right to build a castle in your demesne
+character_event = {
+	id = SoA.1420
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = oldworld
+	
+	trigger = {
+		religion=jibenyuanze
+		is_heretic = no
+		
+		has_character_modifier = borrowed_from_assassins
+		NOT = { has_character_flag = sent_son_to_assassins }
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+		}
+		
+		d_eastern_depot = {
+			holder_scope = {
+				wealth = 300
+			}
+		}
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_hashshashin }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_hashshashin
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+			}
+			province_event = {
+				id = SoA.1421
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1421
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_eastern_depot = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1422
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1422
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1423
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1423
+	desc = EVTDESC_SOA_1223
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_assassins
+			FROMFROM = {
+				province_event = { id = SoA.1424 }
+			}
+		}
+		
+		piety = 100
+
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1003 # Pay them back
+		wealth = -300
+		hidden_tooltip = {
+			remove_character_modifier = borrowed_from_assassins
+		}
+		FROM = {
+			wealth = 300
+		}
+
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = { wealth = 300 }
+			}
+		}	
+	}
+	
+	option = {
+		name = EVTOPTC_SOA_1003 # Refuse
+		
+		if = {
+			limit = { NOT = { has_dlc = "Mystics" } }
+			piety = -1000
+		}
+		if = {
+			limit = { has_dlc = "Mystics" }
+			piety = -200
+			set_character_flag = assassins_refused_to_pay_debt
+		}
+
+		ai_chance = {
+			factor = 3
+			modifier = {
+				factor = 2
+				NOT = { wealth = 300 }
+			}
+			modifier = {
+				factor = 2
+				trait = greedy
+			}
+			modifier = {
+				factor = 2
+				is_impious_trigger = yes
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_dlc = "Mystics" }
+			}
+		}
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1424
+	desc = {
+        text = EVTDESC_SOA_1424
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_CONSTRUCTION_COMPLETE_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+# The son of a ruler volunteers to join the Eastern Depot
+character_event = {
+	id = SoA.1430
+	hide_window = yes
+	
+	only_men = yes
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	religion_group = oldworld
+	
+	trigger = {
+		religion=jibenyuanze
+		is_heretic = no
+		
+		is_ruler = no
+		
+		martial = 5
+		
+		is_title_active = d_eastern_depot
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			OR = {
+				religion = shiite
+				religion = druze
+				religion = hurufi
+			}
+			liege = {
+				holy_order = no
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_hashshashin }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_hashshashin
+			}
+		}
+
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = {
+						is_pregnant = yes
+					father_of_unborn = { character = ROOT } # Won't happen if spouse is pregnant with non-bastard child
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.5
+			trait = homosexual
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2
+			any_spouse = {
+				reverse_opinion = { who = ROOT value = 100 }
+			}
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = SoA.1431
+			}
+		}
+	}
+}
+
+# Son or brother asks to join the Eastern Depot
+character_event = {
+	id = SoA.1431
+	desc = EVTDESC_SOA_1431
+	picture = GFX_evt_moors
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1031 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = 100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1432
+				tooltip = EVTTOOLTIP_SOA_1432
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1433
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Eastern Depot
+character_event = {
+	id = SoA.1432
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_eastern_depot = {
+			holder_scope = {
+				save_event_target_as = order_target
+				ROOT = {
+					character_event = { id = SoA.2864 }
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Eastern Depot
+character_event = {
+	id = SoA.1433
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_holy_order
+		}
+	}
+}
+
+# The Grand Master requests the right to build a castle in your demesne
+character_event = {
+	id = SoA.1450
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = oldworld
+	
+	trigger = {
+		religion=jibenyuanze
+		is_heretic = no
+		
+		d_eastern_depot = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+				NOT = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+			port = yes
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_hashshashin }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_hashshashin
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_eastern_depot = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_eastern_depot = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_eastern_depot = {
+				holder_scope = {
+					realm_size = 5
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+				port = yes
+			}
+			province_event = {
+				id = SoA.1451
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1451
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_eastern_depot = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1452
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1452
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1453
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1453
+	desc = EVTDESC_SOA_1253 # Reuse this
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_d_hashshashin
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = SoA.1454 }
+			}
+			remove_character_modifier = expelled_d_hashshashin
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		piety = -100
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1454
+	desc = EVTDESC_SOA_1454
+	picture = GFX_evt_moors
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+
+# Ping event when expelling the Assassin Order
+character_event = {
+	id = SoA.1460
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_title_under = {
+			limit = {
+				tier = BARON
+				location = {
+					owner = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+				}
+			}
+			usurp_title = FROM
+		}
+		
+		if = {
+			limit = {
+				is_liege_or_above = FROM
+			}
+			set_defacto_liege = THIS
+		}
+	
+		FROM = {
+			letter_event = {
+				id = SoA.1461
+			}
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_expelled_from_realm
+		}
+	}
+}
+
+# Notification event when expelling an Assassin Order
+letter_event = {
+	id = SoA.1461
+	desc = {
+        text = EVTDESC_SOA_1461
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_EXPEL_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = donated_to_holy_order
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1061
+	}
+}
+
+
+########################################
+# The Chollima Riders
+########################################
+
+# The son of a ruler volunteers to join the Chollima Riders
+character_event = {
+	id = SoA.1530
+	hide_window = yes
+	
+	only_men = yes
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	religion_group = oldworld
+	
+	trigger = {
+		is_ruler = no
+		religion = yuilsasang
+		
+		martial = 5
+		
+		is_title_active = d_chollima_riders
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			religion = yuilsasang
+			liege = {
+				holy_order = no
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_jomsvikings }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_jomsvikings
+			}
+		}
+
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = {
+						is_pregnant = yes
+					father_of_unborn = { character = ROOT } # Won't happen if spouse is pregnant with non-bastard child
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.5
+			trait = homosexual
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2
+			any_spouse = {
+				reverse_opinion = { who = ROOT value = 100 }
+			}
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = SoA.1531
+			}
+		}
+	}
+}
+
+# Son or brother asks to join the Chollima Riders
+character_event = {
+	id = SoA.1531
+	desc = EVTDESC_SOA_1531
+	picture = GFX_evt_vikings_arriving_oldgods
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1031 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = 100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1532
+				tooltip = EVTTOOLTIP_SOA_1532
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1533
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Chollima Riders
+character_event = {
+	id = SoA.1532
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_chollima_riders = {
+			holder_scope = {
+				save_event_target_as = order_target
+				ROOT = {
+					character_event = { id = SoA.2864 }
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Chollima Riders
+character_event = {
+	id = SoA.1533
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_holy_order
+		}
+	}
+}
+
+# Ping event when donating money to the Chollima Riders
+character_event = {
+	id = SoA.1540
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = 300
+		FROM = {
+			letter_event = {
+				id = SoA.1541
+			}
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_generous_donation
+		}
+	}
+}
+
+# Notification event when donating money to the Chollima Riders
+letter_event = {
+	id = SoA.1541
+	desc = {
+        text = EVTDESC_SOA_1541
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_DONATE_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# The Warchief requests the right to build a castle in your demesne
+character_event = {
+	id = SoA.1550
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = oldworld
+	
+	trigger = {
+		religion = yuilsasang
+		
+		d_chollima_riders = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+			port = yes
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_jomsvikings }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_jomsvikings
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_chollima_riders = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_chollima_riders = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_chollima_riders = {
+				holder_scope = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_chollima_riders = {
+				holder_scope = {
+					realm_size = 5
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+				port = yes
+			}
+			province_event = {
+				id = SoA.1551
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1551
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_chollima_riders = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1552
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1552
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1553
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1553
+	desc = {
+        text = EVTDESC_SOA_1553
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BUILD_CASTLE_FOR_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_d_jomsvikings
+			}
+			modifier = {
+				factor = 0.01
+				FROMFROM = {
+					region = custom_korea
+				}
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = SoA.1554 }
+			}
+			remove_character_modifier = expelled_d_jomsvikings
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1553 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		piety = -100
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1554
+	desc = EVTDESC_SOA_1554
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+# Ping event when expelling a Pagan Holy Order
+character_event = {
+	id = SoA.1560
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_title_under = {
+			limit = {
+				tier = BARON
+				location = {
+					owner = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+				}
+			}
+			usurp_title = FROM
+		}
+		
+		if = {
+			limit = {
+				is_liege_or_above = FROM
+			}
+			set_defacto_liege = THIS
+		}
+	
+		FROM = {
+			letter_event = {
+				id = SoA.1561
+			}
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_expelled_from_realm
+		}
+	}
+}
+
+# Notification event when expelling a Pagan Holy Order
+letter_event = {
+	id = SoA.1561
+	desc = {
+        text = EVTDESC_SOA_1561
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_EXPEL_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		remove_character_modifier = donated_to_holy_order
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1061
+	}
+}
+
+########################################
+# The Brotherhood of the Order of St. Vladimir
+########################################
+
+# Brotherhood of the Order of St. Vladimir becomes a Chivalric Order (SOA.1609) - Its equivalent this Holy Order: The Order of St. Vladimir Starts on the Map already
+
+# The son of a ruler volunteers to join the Brotherhood
+character_event = {
+	id = SoA.1630
+	hide_window = yes
+	
+	only_men = yes
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	religion_group = christian
+	
+	trigger = {
+		is_ruler = no
+		OR = {
+			religion = orthodox
+			religion = old_believer
+			religion = yehowist
+		}
+		is_heretic = no
+		
+		martial = 5
+		
+		is_title_active = d_order_of_st_vladimir
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			OR = {
+				religion = orthodox
+				religion = old_believer
+				religion = yehowist
+			}
+			liege = {
+				holy_order = no
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_holy_sepulchre }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_holy_sepulchre
+			}
+		}
+
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = {
+						is_pregnant = yes
+					father_of_unborn = { character = ROOT } # Won't happen if spouse is pregnant with non-bastard child
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.5
+			trait = homosexual
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2
+			any_spouse = {
+				reverse_opinion = { who = ROOT value = 100 }
+			}
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = SoA.1631
+			}
+		}
+	}
+}
+
+# Son or brother asks to join the Brotherhood
+character_event = {
+	id = SoA.1631
+	desc = EVTDESC_SOA_1631
+	picture = GFX_evt_western_knights_byzantine
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1031 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = 100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1632
+				tooltip = EVTTOOLTIP_SOA_1632
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.1633
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Brotherhood
+character_event = {
+	id = SoA.1632
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_order_of_st_vladimir = {
+			holder_scope = {
+				save_event_target_as = order_target
+				ROOT = {
+					character_event = { id = SoA.2864 }
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Brotherhood
+character_event = {
+	id = SoA.1633
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_holy_order
+		}
+	}
+}
+
+# Ping event when donating money to the Brotherhood
+character_event = {
+	id = SoA.1640
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = 300
+		FROM = {
+			letter_event = {
+				id = SoA.1641
+			}
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_generous_donation
+		}
+	}
+}
+
+# Notification event when donating money to the Brotherhood
+letter_event = {
+	id = SoA.1641
+	desc = {
+        text = EVTDESC_SOA_1141
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_DONATE_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# The Grand Master humbly requests the right to build a castle in your demesne
+character_event = {
+	id = SoA.1650
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = orthodox
+			religion = old_believer
+			religion = yehowist
+		}
+		is_heretic = no
+		
+		d_order_of_st_vladimir = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_holy_sepulchre }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_holy_sepulchre
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_order_of_st_vladimir = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_order_of_st_vladimir = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_order_of_st_vladimir = {
+				holder_scope = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_order_of_st_vladimir = {
+				holder_scope = {
+					realm_size = 5
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+			}
+			province_event = {
+				id = SoA.1651
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.1651
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_order_of_st_vladimir = {
+			holder_scope = {
+				character_event = {
+					id = SoA.1652
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.1652
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.1653
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.1653
+	desc = {
+        text = EVTDESC_SOA_1653
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BUILD_CASTLE_FOR_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_d_holy_sepulchre
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = SoA.1654 }
+			}
+			remove_character_modifier = expelled_d_holy_sepulchre
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1153 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		piety = -100
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.1654
+	desc = EVTDESC_SOA_1654
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+# Ping event when expelling the Brotherhood
+character_event = {
+	id = SoA.1660
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_title_under = {
+			limit = {
+				tier = BARON
+				location = {
+					owner = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+				}
+			}
+			usurp_title = FROM
+		}
+	
+		FROM = {
+			letter_event = {
+				id = SoA.1661
+			}
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_expelled_from_realm
+		}
+	}
+}
+
+# Notification event when expelling the Brotherhood
+letter_event = {
+	id = SoA.1661
+	desc = {
+        text = EVTDESC_SOA_1661
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_EXPEL_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTB_SOA_1061
+	}
+}
+
+########################################
+# The Order of Saint Anthony
+########################################
+
+# Ethopia is not on the Map
+
+########################################
+# The Immortals
+########################################
+
+# The Immortals cannot be reformed in this mod
+
+########################################
+# The Zealots
+########################################
+
+# The Jews are even fewer in Asia and cannot reform a proper Religious Order in this mod
+
+########################################
+# The Lords of the Sky
+########################################
+
+# Tengri Holy Order not in the game
+
+########################################
+# The Spirit Guardians
+########################################
+
+# West African Pagans not in the Game
+
+########################################
+# The Warriors of Perun
+########################################
+
+# No Slavic Pagans
+
+########################################
+# The Chosen of Perkunas
+########################################
+
+# Baltic Pagans dont exist
+
+########################################
+# The Sons of Kaleva
+########################################
+
+# No Finnish Pagans 
+
+########################################
+# The Cult of Huitzilopochtli
+########################################
+
+# No Nahua Religion
+
+########################################
+# The world_old_china
+########################################
+
+# The birth of the world_old_china (SoA.2609) - its Mod equivalent The knights of Amity Already Exist on Map
+
+# The son of a ruler volunteers to join the Order
+character_event = {
+	id = SoA.2630
+	hide_window = yes
+	
+	only_men = yes
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	religion_group = christian
+	
+	trigger = {
+		is_ruler = no
+		OR = {
+			religion = fuyin
+			religion = paulite
+			religion = muite
+		}
+		is_heretic = no
+		
+		martial = 5
+		
+		is_title_active = d_knights_of_amity
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			OR = {
+				religion = fuyin
+				religion = paulite
+				religion = muite
+			}
+			liege = {
+				holy_order = no
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_knights_santiago }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_santiago
+			}
+		}
+
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = {
+						is_pregnant = yes
+					father_of_unborn = { character = ROOT } # Won't happen if spouse is pregnant with non-bastard child
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.5
+			trait = homosexual
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2
+			any_spouse = {
+				reverse_opinion = { who = ROOT value = 100 }
+			}
+		}
+		modifier = {
+			factor = 3.0 # Prefer the world_old_china
+			culture_group = han
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = SoA.2631
+			}
+		}
+	}
+}
+
+# Son or brother asks to join the Order
+character_event = {
+	id = SoA.2631
+	desc = EVTDESC_SOA_2631
+	picture = GFX_evt_knight_kneeling
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1031 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = 100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.2632
+				tooltip = EVTTOOLTIP_SOA_2632
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.2633
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Order
+character_event = {
+	id = SoA.2632
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knights_of_amity = {
+			holder_scope = {
+				save_event_target_as = order_target
+				ROOT = {
+					character_event = { id = SoA.2864 }
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Order
+character_event = {
+	id = SoA.2633
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_holy_order
+		}
+	}
+}
+
+# Ping event when donating money to the Order
+character_event = {
+	id = SoA.2640
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = 300
+		FROM = {
+			letter_event = {
+				id = SoA.2641
+			}
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_generous_donation
+		}
+	}
+}
+
+# Notification event when donating money to the Order
+letter_event = {
+	id = SoA.2641
+	desc = {
+        text = EVTDESC_SOA_1141
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_DONATE_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# The Grand Master humbly requests the right to build a castle in your demesne
+character_event = {
+	id = SoA.2650
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = fuyin
+			religion = paulite
+			religion = muite
+		}
+		is_heretic = no
+		
+		d_knights_of_amity = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+			region = world_old_china
+		}
+		
+		has_dlc = "Sons of Abraham"
+		NOT = { has_character_modifier = expelled_d_knights_santiago }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_santiago
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_knights_of_amity = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_knights_of_amity = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_knights_of_amity = {
+				holder_scope = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_knights_of_amity = {
+				holder_scope = {
+					realm_size = 5
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+			}
+			province_event = {
+				id = SoA.2651
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.2651
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_knights_of_amity = {
+			holder_scope = {
+				character_event = {
+					id = SoA.2652
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.2652
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.2653
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.2653
+	desc = {
+        text = EVTDESC_SOA_1053
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BUILD_CASTLE_FOR_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_d_knights_santiago
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = SoA.2654 }
+			}
+			remove_character_modifier = expelled_d_knights_santiago
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1153 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		piety = -100
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.2654
+	desc = EVTDESC_SOA_2654
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+# Ping event when expelling the Order
+character_event = {
+	id = SoA.2660
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_title_under = {
+			limit = {
+				tier = BARON
+				location = {
+					owner = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+				}
+			}
+			usurp_title = FROM
+		}
+	
+		FROM = {
+			letter_event = {
+				id = SoA.2661
+			}
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_expelled_from_realm
+		}
+	}
+}
+
+# Notification event when expelling the Order
+letter_event = {
+	id = SoA.2661
+	desc = {
+        text = EVTDESC_SOA_1061
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_EXPEL_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTB_SOA_1061
+	}
+}
+
+########################################
+# The Free Rangers
+########################################
+
+# The birth of The Order of Calatrava (SoA.2709) - its equivalent in the Mod the Free Rangers exist in the Map already
+
+# The son of a ruler volunteers to join the Order
+character_event = {
+	id = SoA.2730
+	hide_window = yes
+	
+	only_men = yes
+	min_age = 16
+	max_age = 45
+	only_capable = yes
+	prisoner = no
+	religion_group = christian
+	
+	trigger = {
+		is_ruler = no
+		OR = {
+			religion = baptist
+			religion = kohhran_thianghlim
+		}
+		is_heretic = no
+		
+		martial = 5
+		
+		is_title_active = d_free_rangers
+		
+		OR = {
+			father_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+			mother_even_if_dead = {
+				primary_title = { higher_tier_than = BARON }
+			}
+		}
+		
+		liege = {
+			holy_order = no
+			OR = {
+				religion = baptist
+				religion = kohhran_thianghlim
+			}
+			liege = {
+				holy_order = no
+			}
+		}
+		
+		has_dlc = "Sons of Abraham"
+		
+		NOT = { has_character_modifier = expelled_d_knights_calatrava }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_calatrava
+			}
+		}
+
+		NOT = {
+			any_spouse = {
+				OR = {
+					is_landed = yes
+					AND = {
+						is_pregnant = yes
+						father_of_unborn = { character = ROOT } # Won't happen if spouse is pregnant with non-bastard child
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 0.25
+			trait = zealous
+		}
+		modifier = {
+			factor = 0.5
+			trait = celibate
+		}
+		modifier = {
+			factor = 0.5
+			trait = homosexual
+		}
+		modifier = {
+			factor = 0.7
+			trait = content
+		}
+		modifier = {
+			factor = 0.75
+			trait = chaste
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { age = 25 }
+		}
+		modifier = {
+			factor = 1.5
+			trait = slothful
+		}
+		modifier = {
+			factor = 2.0
+			trait = lustful
+		}
+		modifier = {
+			factor = 2.0
+			trait = cynical
+		}
+		modifier = {
+			factor = 2.0
+			trait = hedonist
+		}
+		modifier = {
+			factor = 2.0
+			trait = ambitious
+		}
+		modifier = {
+			factor = 2.0
+			any_heir_title = {
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 2.0
+			is_primary_heir = yes
+		}
+		modifier = {
+			factor = 2
+			any_spouse = {
+				reverse_opinion = { who = ROOT value = 100 }
+			}
+		}
+		modifier = {
+			factor = 3.0 # Prefer the Free Rangers
+			culture_group = karenic
+		}
+	}
+	
+	immediate = {
+		liege = {
+			character_event = {
+				id = SoA.2731
+			}
+		}
+	}
+}
+
+# Son or brother asks to join the Order
+character_event = {
+	id = SoA.2731
+	desc = EVTDESC_SOA_2731
+	picture = GFX_evt_knight_kneeling
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1031 # Agree
+		ai_chance = {
+			factor = 100
+		}
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = 100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.2732
+				tooltip = EVTTOOLTIP_SOA_2732
+			}
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1031 # Refuse
+		
+		if = {
+			limit = {
+				religion = FROM
+			}
+			piety = -100
+		}
+		
+		FROM = {
+			character_event = {
+				id = SoA.2733
+				tooltip = EVTTOOLTIP_SOA_1033
+			}
+		}
+	}
+}
+
+# Son or brother joins the Order
+character_event = {
+	id = SoA.2732
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		d_free_rangers = {
+			holder_scope = {
+				save_event_target_as = order_target
+				ROOT = {
+					character_event = { id = SoA.2864 }
+				}
+			}
+		}
+	}
+}
+
+# Liege refuses request to join the Order
+character_event = {
+	id = SoA.2733
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROM
+			modifier = opinion_refused_request_holy_order
+		}
+	}
+}
+
+# Ping event when donating money to the Order
+character_event = {
+	id = SoA.2740
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		wealth = 300
+		FROM = {
+			letter_event = {
+				id = SoA.2741
+			}
+		}
+		opinion = {
+			who = FROM
+			modifier = opinion_generous_donation
+		}
+	}
+}
+
+# Notification event when donating money to the Order
+letter_event = {
+	id = SoA.2741
+	desc = {
+        text = EVTDESC_SOA_1141
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_DONATE_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# The Grand Master humbly requests the right to build a castle in your demesne
+character_event = {
+	id = SoA.2750
+	hide_window = yes
+	
+	min_age = 16
+	only_playable = yes
+	religion_group = christian
+	
+	trigger = {
+		OR = {
+			religion = baptist
+			religion = kohhran_thianghlim
+		}
+		is_heretic = no
+		
+		d_free_rangers = {
+			holder_scope = {
+				wealth = 300
+				NOT = {
+					realm_size = 10
+				}
+			}
+		}
+		
+		any_demesne_province = {
+			has_empty_holding = yes
+			region = world_old_china
+		}
+		
+		has_dlc = "Sons of Abraham"
+		NOT = { has_character_modifier = expelled_d_knights_calatrava }
+		NOT = {
+			any_liege = {
+				has_character_modifier = expelled_d_knights_calatrava
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_free_rangers = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_free_rangers = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_free_rangers = {
+				holder_scope = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_free_rangers = {
+				holder_scope = {
+					realm_size = 5
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				has_empty_holding = yes
+			}
+			province_event = {
+				id = SoA.2751
+			}
+		}
+	}
+}
+
+province_event = {
+	id = SoA.2751
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		d_free_rangers = {
+			holder_scope = {
+				character_event = {
+					id = SoA.2752
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = SoA.2752
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			letter_event = {
+				id = SoA.2753
+			}
+		}
+	}
+}
+
+letter_event = {
+	id = SoA.2753
+	desc = {
+        text = EVTDESC_SOA_1053
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_BUILD_CASTLE_FOR_MONEY_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_SOA_1023 # Agree
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_character_modifier = expelled_d_knights_calatrava
+			}
+		}
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				province_event = { id = SoA.2754 }
+			}
+			remove_character_modifier = expelled_d_knights_calatrava
+		}
+		
+		piety = 200
+		wealth = 100
+	}
+	
+	option = {
+		name = EVTOPTB_SOA_1153 # Refuse
+		ai_chance = {
+			factor = 20
+		}
+		
+		piety = -100
+	}
+}
+
+# Castle has been erected
+province_event = {
+	id = SoA.2754
+	desc = EVTDESC_SOA_2754
+	picture = GFX_evt_castle_construction
+	border = GFX_event_normal_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		FROMFROM = {
+			wealth = -300
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SOA_1024
+		build_holding = {
+		   type = castle
+		   holder = FROMFROM
+		}
+	}
+}
+
+# Ping event when expelling the Order
+character_event = {
+	id = SoA.2760
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		any_title_under = {
+			limit = {
+				tier = BARON
+				location = {
+					owner = {
+						OR = {
+							character = FROM
+							is_liege_or_above = FROM
+						}
+					}
+				}
+			}
+			usurp_title = FROM
+		}
+	
+		FROM = {
+			letter_event = {
+				id = SoA.2761
+			}
+		}
+		
+		opinion = {
+			who = FROM
+			modifier = opinion_expelled_from_realm
+		}
+	}
+}
+
+# Notification event when expelling the Order
+letter_event = {
+	id = SoA.2761
+	desc = {
+        text = EVTDESC_SOA_1061
+        trigger = {
+			NOT = {
+				has_alternate_start_parameter = {
+					key = religion_names
+					value = random
+				}
+			}
+        }
+    }
+	desc = {
+        text = HOLY_ORDER_EXPEL_ALT
+        trigger = {
+			has_alternate_start_parameter = {
+				key = religion_names
+				value = random
+			}
+        }
+    }
+	border = GFX_event_letter_frame_religion
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTB_SOA_1061
+	}
+}
+
+# Spouse notified of divorce due to husband going off to join holy order
+character_event = {
+	id = SoA.2862
+	desc = EVTDESC_SoA_2862
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ALAS
+		trigger = {
+			opinion = { who = FROMFROMFROM value = 0 }
+		}
+		tooltip = { remove_spouse = FROMFROMFROM }
+	}
+	option = {
+		name = GOOD_RIDDANCE
+		trigger = {
+			NOT = { opinion = { who = FROMFROMFROM value = 0 } }
+		}
+		tooltip = { remove_spouse = FROMFROMFROM }
+	}
+}
+
+# Spouse notified of character joining holy order
+character_event = {
+	id = SoA.2863
+	desc = EVTDESC_SoA_2863
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ALAS
+		trigger = {
+			opinion = { who = FROM value = 0 }
+		}
+		tooltip = { remove_spouse = FROM }
+	}
+	option = {
+		name = GOOD_RIDDANCE
+		trigger = {
+			NOT = { opinion = { who = FROM value = 0 } }
+		}
+		tooltip = { remove_spouse = FROM }
+	}
+}
+
+# Character joining holy order effects
+character_event = {
+	id = SoA.2864
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_minor_title = title_commander
+			}
+			remove_title = title_commander
+		}
+		if = {
+			limit = {
+				has_minor_title = title_appointed_regent
+			}
+			remove_title = title_appointed_regent
+		}
+		if = {
+			limit = {
+				has_minor_title = title_patrician_heir
+			}
+			remove_title = title_patrician_heir
+		}
+		clear_wealth = event_target:order_target
+		spouse = {
+			remove_spouse = spouse
+			character_event = { id = SoA.2863 }
+		}
+		move_character = event_target:order_target
+		add_trait = celibate
+		end_inaccessibility_effect = yes #removes in_hiding or in_seclusion
+	}
+}
+
+# Expelling a Holy Order confirmation event
+character_event = {
+	id = SoA.2990
+	desc = "EVTDESC_SOA_2990"
+	picture = "GFX_evt_crusaders"
+	border = "GFX_event_normal_frame_religion"
+	
+	desc = {
+		trigger = {
+			religion_group = christian
+		}
+		text = EVTDESC_SOA_2990
+		picture = "GFX_evt_crusaders"
+	}
+	desc = {
+		trigger = {
+			religion_group = muslim
+		}
+		text = EVTDESC_SOA_2990
+		picture = "GFX_evt_moors"
+	}
+	desc = {
+		trigger = {
+			religion_group = pagan_group
+		}
+		text = EVTDESC_SOA_2990
+		picture = "GFX_evt_vikings_arriving_oldgods"
+	}
+	desc = {
+		trigger = {
+			OR = {
+				religion_group = jewish_group
+				religion_group = oldworld
+			}
+		}
+		text = EVTDESC_SOA_2990
+		picture = "GFX_evt_synagogue"
+	}
+	
+	title = { # Brotherly Knights
+		trigger = {
+			has_character_flag = expel_the_knights_templar_check
+		}
+		text = expel_the_knights_templar
+	}
+	title = { # Knights Hospitaler
+		trigger = {
+			has_character_flag = expel_the_knights_hospitaler_check
+		}
+		text = expel_the_knights_hospitaler
+	}
+	title = { # Knights of La Vang
+		trigger = {
+			has_character_flag = expel_the_teutonic_order_check
+		}
+		text = expel_the_teutonic_order
+	}
+	title = { # Chollima Riders
+		trigger = {
+			has_character_flag = expel_the_jomsvikings_check
+		}
+		text = expel_the_jomsvikings
+	}
+	title = { # Eastern Depot
+		trigger = {
+			has_character_flag = expel_the_assassins_check
+		}
+		text = expel_the_assassins
+	}
+	title = { # Salvation Army
+		trigger = {
+			has_character_flag = expel_the_bektashi_check
+		}
+		text = expel_the_bektashi
+	}
+	title = { # Order of St. Vladimir
+		trigger = {
+			has_character_flag = expel_the_holy_sepulchre_check
+		}
+		text = expel_the_holy_sepulchre
+	}
+	title = { # Knights of Amity
+		trigger = {
+			has_character_flag = expel_knights_santiago_check
+		}
+		text = expel_knights_santiago
+	}
+	title = { # Free Rangers
+		trigger = {
+			has_character_flag = expel_knights_calatrava_check
+		}
+		text = expel_knights_calatrava
+	}
+	
+	only_rulers = yes
+	
+	is_triggered_only = yes
+	
+	option = { # Brotherly Knights
+		trigger = {
+			has_character_flag = expel_the_knights_templar_check
+		}
+		name = "EVTOPTA_SOA_2990"
+		piety = -1000
+		
+		religion_authority = {
+			modifier = holy_order_expelled
+			years = 20
+		}
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_a
+		}
+		hidden_tooltip = {
+			d_knightly_brothers_marist = {
+				holder_scope = {
+					character_event = {
+						id = SoA.1060
+					}
+				}
+			}
+			add_character_modifier = {
+				name = expelled_d_knights_templar
+				duration = -1
+				inherit = yes
+			}
+			clr_character_flag = expel_the_knights_templar_check
+		}
+	}
+	option = { # Knights Hospitaler
+		trigger = {
+			has_character_flag = expel_the_knights_hospitaler_check
+		}
+		name = "EVTOPTA_SOA_2990"
+		piety = -1000
+		
+		religion_authority = {
+			modifier = holy_order_expelled
+			years = 20
+		}
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_a
+		}
+		hidden_tooltip = {
+			d_knights_of_bim = {
+				holder_scope = {
+					character_event = {
+						id = SoA.1060
+					}
+				}
+			}
+			add_character_modifier = {
+				name = expelled_d_knights_hospitaler
+				duration = -1
+				inherit = yes
+			}
+			clr_character_flag = expel_the_knights_hospitaler_check
+		}
+	}
+	option = { # Knights of La Vang
+		trigger = {
+			has_character_flag = expel_the_teutonic_order_check
+		}
+		name = "EVTOPTA_SOA_2990"
+		piety = -1000
+		
+		religion_authority = {
+			modifier = holy_order_expelled
+			years = 20
+		}
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_a
+		}
+		hidden_tooltip = {
+			add_character_modifier = {
+				name = expelled_d_teutonic_order
+				duration = -1
+				inherit = yes
+			}
+			d_knights_of_lavang = {
+				holder_scope = {
+					character_event = {
+						id = SoA.1060
+					}
+				}
+			}
+			clr_character_flag = expel_the_teutonic_order_check
+		}
+	}
+	option = { # Chollima Riders
+		trigger = {
+			has_character_flag = expel_the_jomsvikings_check
+		}
+		name = "EVTOPTA_SOA_2990"
+		piety = -1000
+		
+		religion_authority = {
+			modifier = holy_order_expelled
+			years = 20
+		}
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_a
+		}
+		hidden_tooltip = {
+			d_chollima_riders = {
+				holder_scope = {
+					character_event = {
+						id = SoA.1560
+					}
+				}
+			}
+			add_character_modifier = {
+				name = expelled_d_jomsvikings
+				duration = -1
+				inherit = yes
+			}
+			clr_character_flag = expel_the_jomsvikings_check
+		}
+	}
+	option = { # Eastern Depot
+		trigger = {
+			has_character_flag = expel_the_assassins_check
+		}
+		name = "EVTOPTA_SOA_2990"
+		piety = -1000
+		
+		religion_authority = {
+			modifier = holy_order_expelled
+			years = 20
+		}
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_a
+		}
+		hidden_tooltip = {
+			d_eastern_depot = {
+				holder_scope = {
+					character_event = {
+						id = SoA.1460
+					}
+				}
+			}
+			
+			add_character_modifier = {
+				name = expelled_d_hashshashin
+				duration = -1
+				inherit = yes
+			}
+			clr_character_flag = expel_the_assassins_check
+		}
+	}
+	option = { # Salvation Army
+		trigger = {
+			has_character_flag = expel_the_bektashi_check
+		}
+		name = "EVTOPTA_SOA_2990"
+		piety = -1000
+		
+		religion_authority = {
+			modifier = holy_order_expelled
+			years = 20
+		}
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_a
+		}
+		hidden_tooltip = {
+			d_eastern_depot = {
+				holder_scope = {
+					character_event = {
+						id = SoA.1460
+					}
+				}
+			}
+			
+			add_character_modifier = {
+				name = expelled_d_hashshashin
+				duration = -1
+				inherit = yes
+			}
+			clr_character_flag = expel_the_bektashi_check
+		}
+	}
+	option = { # Order of St. Vladimir
+		trigger = {
+			has_character_flag = expel_the_holy_sepulchre_check
+		}
+		name = "EVTOPTA_SOA_2990"
+		piety = -1000
+		
+		religion_authority = {
+			modifier = holy_order_expelled
+			years = 20
+		}
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_a
+		}
+		hidden_tooltip = {
+			d_order_of_st_vladimir = {
+				holder_scope = {
+					character_event = {
+						id = SoA.1660
+					}
+				}
+			}
+			add_character_modifier = {
+				name = expelled_d_holy_sepulchre
+				duration = -1
+				inherit = yes
+			}
+			clr_character_flag = expel_the_holy_sepulchre_check
+		}
+	}
+	option = { # Knights of Amity
+		trigger = {
+			has_character_flag = expel_knights_santiago_check
+		}
+		name = "EVTOPTA_SOA_2990"
+		piety = -1000
+		
+		religion_authority = {
+			modifier = holy_order_expelled
+			years = 20
+		}
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_a
+		}
+		hidden_tooltip = {
+			d_knights_of_amity = {
+				holder_scope = {
+					character_event = {
+						id = SoA.2660
+					}
+				}
+			}
+			add_character_modifier = {
+				name = expelled_d_knights_santiago
+				duration = -1
+				inherit = yes
+			}
+			clr_character_flag = expel_knights_santiago_check
+		}
+	}
+	option = { # Free Rangers
+		trigger = {
+			has_character_flag = expel_knights_calatrava_check
+		}
+		name = "EVTOPTA_SOA_2990"
+		piety = -1000
+		
+		religion_authority = {
+			modifier = holy_order_expelled
+			years = 20
+		}
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_a
+		}
+		hidden_tooltip = {
+			d_free_rangers = {
+				holder_scope = {
+					character_event = {
+						id = SoA.2760
+					}
+				}
+			}
+			add_character_modifier = {
+				name = expelled_d_knights_calatrava
+				duration = -1
+				inherit = yes
+			}
+			clr_character_flag = expel_knights_calatrava_check
+		}
+	}
+	option = { # Allow them to stay
+		name = "EVTOPTB_SOA_2990"
+		custom_tooltip = {
+			text = expelling_holy_order_event_tooltip_b
+		}
+		hidden_tooltip = {
+			clr_character_flag = expel_the_knights_templar_check
+			clr_character_flag = expel_the_knights_hospitaler_check
+			clr_character_flag = expel_the_teutonic_order_check
+			clr_character_flag = expel_the_jomsvikings_check
+			clr_character_flag = expel_the_assassins_check
+			clr_character_flag = expel_the_bektashi_check
+			clr_character_flag = expel_the_holy_sepulchre_check
+			clr_character_flag = expel_knights_santiago_check
+			clr_character_flag = expel_knights_calatrava_check
+		}
+	}
+	after = {
+		hidden_tooltip = { 
+			abdicate_holy_order_if_religion_changes_effect = yes
+		}
+	}
+}

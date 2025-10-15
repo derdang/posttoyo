@@ -22504,8 +22504,8 @@ abdicate_holy_order_if_religion_changes_effect = {
 			log = "[d_free_rangers.owner.GetTitledFirstName] was found to be unfit to lead the [d_free_rangers.GetName] and therefore removed by the abdicate holy order effect!"
 		}
 	}
-    
-    d_chollima_riders = {
+	
+	d_chollima_riders = {
 		if = {
 			limit = {
 				is_title_active = d_chollima_riders
@@ -22516,6 +22516,34 @@ abdicate_holy_order_if_religion_changes_effect = {
 				}
 			}
 			log = "[d_chollima_riders.owner.GetTitledFirstName] was found to be unfit to lead the [d_chollima_riders.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+    
+    d_eastern_depot = {
+		if = {
+			limit = {
+				is_title_active = d_eastern_depot
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = jibenyuanze } 
+				}
+			}
+			log = "[d_eastern_depot.owner.GetTitledFirstName] was found to be unfit to lead the [d_eastern_depot.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_kathmandu_battle_nuns = {
+		if = {
+			limit = {
+				is_title_active = d_kathmandu_battle_nuns
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = gelugpa } 
+				}
+			}
+			log = "[d_kathmandu_battle_nuns.owner.GetTitledFirstName] was found to be unfit to lead the [d_kathmandu_battle_nuns.GetName] and therefore removed by the abdicate holy order effect!"
 		}
 	}
 }

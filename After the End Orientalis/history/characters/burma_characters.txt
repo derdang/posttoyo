@@ -313,22 +313,23 @@
 
 1553001 ={ #Duchess of Rakhine assumed title from husband in a political marriage
 	name="Wai Wai"
-	dynasty=1565004 #Sultana
-	culture=rohingya
-	religion=renewalist
-	female=yes
-	martial=4
-    diplomacy=8
-    stewardship=5
-    intrigue=4
-    learning=4
-	trait=fortune_builder
-	trait=fair
-	trait=just
-	trait=ambitious
-	trait=kind
-	2576.10.14={birth=yes}
-	2700.1.1={death=yes}
+    dynasty=1565004 #Sultana
+    culture=rohingya
+    religion=renewalist
+	father=1553007
+    female=yes
+    martial=4
+	diplomacy=8
+	stewardship=5
+	intrigue=4
+	learning=4
+    trait=fortune_builder
+    trait=fair
+    trait=just
+    trait=ambitious
+    trait=kind
+    2570.10.14={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1553002 ={ #Rahkine Son - faith of the Father
@@ -348,21 +349,21 @@
 	2700.1.1={death=yes}
 }
 
-1553003 ={ #Rahkine Son - faith of the Mother
+1553003 ={ #Rohingya Son - faith, culture, and dynasty of the Mother
 	name="Mohammad"
-	dynasty=1551000#Shah
-	culture=rakhine
+	dynasty=1565004 #Sultana
+	culture=rohingya
 	religion=renewalist
-	father=1553000
-	mother=1553001
-	martial=2
+	father=1553005
+    mother=1553001
+    martial=2
     diplomacy=4
     stewardship=6
     intrigue=3
     learning=5
-	trait=idolizer
-	2600.10.14={birth=yes}
-	2700.1.1={death=yes}
+    trait=idolizer
+    2595.10.14={birth=yes}
+    2700.1.1={death=yes}
 }
 
 1553004 ={ #Count of Mrauk-U
@@ -382,6 +383,91 @@
 	trait=zealous
 	2576.10.14={birth=yes}
 	2700.1.1={death=yes}
+}
+
+1553005 ={ #Duke of Rakhine and Wai Wai’s deceased first husband and father of her eldest child (also her cousin)
+    name="Ahmed"
+    dynasty=1565004 #Sultana
+    culture=rohingya
+    religion=renewalist
+	father=1553008
+    martial=8
+    diplomacy=8
+    stewardship=8
+    intrigue=8
+    learning=8
+    trait=tough_soldier
+    trait=devout
+    trait=wroth
+    trait=ambitious
+    trait=envious
+    2565.10.14={birth=yes}
+    2590.1.1={add_spouse=1553001}
+    2599.1.1={death=yes}
+}
+
+1553006 ={ #Patriarch of the Rohingya Family of Sultana (Grandfather)
+    name="Gani"
+    dynasty=1565004 #Sultana
+    culture=rohingya
+    religion=renewalist
+    martial=8
+    diplomacy=8
+    stewardship=8
+    intrigue=8
+    learning=8
+    trait=fortune_builder
+    trait=zealous
+    trait=administrator
+    trait=kind
+    trait=just
+    2460.10.14={birth=yes}
+    2520.1.1={death=yes}
+}
+
+1553007 ={ #Patriarch of the Rohingya Family of Sultana (Father)
+    name="Mahmud"
+    dynasty=1565004 #Sultana
+    culture=rohingya
+    religion=renewalist
+	father=1553006
+    martial=8
+    diplomacy=8
+    stewardship=8
+    intrigue=8
+    learning=8
+    trait=mastermind_theologian
+    trait=devout
+    trait=physician
+    trait=fair
+	trait=robust
+	trait=wroth
+    trait=stressed
+	trait=twin
+    2510.10.14={birth=yes}
+    2580.1.1={death=yes}
+}
+
+1553008 ={ #Patriarch of the Rohingya Family of Sultana (Uncle of Wai Wai, Father of Ahmed)
+    name="Ebrahim"
+    dynasty=1565004 #Sultana
+    culture=rohingya
+    religion=renewalist
+	father=1553006
+    martial=8
+    diplomacy=8
+    stewardship=8
+    intrigue=8
+    learning=8
+    trait=skilled_tactician
+    trait=strong
+    trait=stubborn
+    trait=ambitious
+    trait=proud
+	trait=just
+	trait=twin
+    2510.10.14={birth=yes}
+    2580.1.1={death=yes}
 }
 
 ## Bago
