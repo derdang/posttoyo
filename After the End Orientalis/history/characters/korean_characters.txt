@@ -280,12 +280,13 @@
 	2550.1.1={birth=yes}
 }
 ###########South Korea###########
-#Theocracy of Yeongju
+#Count of Yeongju
 1597000={
 	name="Chul"
 	dynasty=1597006 #Kang
 	culture=hangugin
 	religion=cheondoist
+	father=1597006
 	martial=3
 	diplomacy=3
 	stewardship=4
@@ -299,7 +300,7 @@
 	trait=lustful
 	2580.1.1={birth=yes}
 }
-#Theocracy of Mokpo
+#Count of Mokpo
 1597001={
 	name="Syngman"
 	dynasty=1597010 #Shin
@@ -382,6 +383,7 @@
 	dynasty=1597006 #Kang
 	culture=hangugin
 	religion=muist
+	father=1597006
 	martial=3
 	diplomacy=3
 	stewardship=4
@@ -396,6 +398,27 @@
 	trait=stubborn
 	trait=proud
 	2580.1.1={birth=yes}
+}
+1597006={ #Patriarch of the Kang Family
+	name="Isik"
+	dynasty=1597006 #Kang
+	culture=hangugin
+	religion=cheondoist
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=skilled_tactician
+	trait=one_legged
+	trait=strong
+	trait=fair
+	trait=robust
+	trait=stubborn
+	trait=proud
+	trait=just
+	2550.1.1={birth=yes}
+	2600.1.1={death=yes}
 }
 1597010={ #Duke of Seoul
 	name="Tae-Soo"
@@ -601,6 +624,27 @@
 	intrigue=5
 	learning=5
 	trait=grey_eminence
+	trait=lustful
+	trait=fair
+	trait=zealous
+	trait=shrewd
+	trait=uncouth
+	trait=seducer
+	trait=trusting
+	trait=ambitious
+	2582.1.1={birth=yes}
+}
+1597109={ #Grandmaster of the Moonie Knights
+	name="Yeongun"
+	dynasty=1597157 #Kim
+	culture=hangugin
+	religion=unificationist
+	martial=4
+	diplomacy=7
+	stewardship=3
+	intrigue=5
+	learning=5
+	trait=skilled_tactician
 	trait=lustful
 	trait=fair
 	trait=zealous

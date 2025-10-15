@@ -22546,4 +22546,242 @@ abdicate_holy_order_if_religion_changes_effect = {
 			log = "[d_kathmandu_battle_nuns.owner.GetTitledFirstName] was found to be unfit to lead the [d_kathmandu_battle_nuns.GetName] and therefore removed by the abdicate holy order effect!"
 		}
 	}
+	
+	d_moonie_knights = {
+		if = {
+			limit = {
+				is_title_active = d_moonie_knights
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = unificationist } 
+				}
+			}
+			log = "[d_moonie_knights.owner.GetTitledFirstName] was found to be unfit to lead the [d_moonie_knights.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_xinjiang_mujahideen = {
+		if = {
+			limit = {
+				is_title_active = d_xinjiang_mujahideen
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = renewalist } 
+				}
+			}
+			log = "[d_xinjiang_mujahideen.owner.GetTitledFirstName] was found to be unfit to lead the [d_xinjiang_mujahideen.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_elite_force = {
+		if = {
+			limit = {
+				is_title_active = d_elite_force
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = renewalist } 
+				}
+			}
+			log = "[d_elite_force.owner.GetTitledFirstName] was found to be unfit to lead the [d_elite_force.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_muhammadiyah = {
+		if = {
+			limit = {
+				is_title_active = d_muhammadiyah
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = renewalist } 
+				}
+			}
+			log = "[d_muhammadiyah.owner.GetTitledFirstName] was found to be unfit to lead the [d_muhammadiyah.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_bagan_guard = {
+		if = {
+			limit = {
+				is_title_active = d_bagan_guard
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = weizzane } 
+				}
+			}
+			log = "[d_bagan_guard.owner.GetTitledFirstName] was found to be unfit to lead the [d_bagan_guard.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_straw_hats = {
+		if = {
+			limit = {
+				is_title_active = d_straw_hats
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = wokou } 
+				}
+			}
+			log = "[d_straw_hats.owner.GetTitledFirstName] was found to be unfit to lead the [d_straw_hats.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_atlantis_knights = {
+		if = {
+			limit = {
+				is_title_active = d_atlantis_knights
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = novobozhiye } 
+				}
+			}
+			log = "[d_atlantis_knights.owner.GetTitledFirstName] was found to be unfit to lead the [d_atlantis_knights.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_pancasila_guardian = {
+		if = {
+			limit = {
+				is_title_active = d_pancasila_guardian
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = pancasila } 
+				}
+			}
+			log = "[d_pancasila_guardian.owner.GetTitledFirstName] was found to be unfit to lead the [d_pancasila_guardian.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_imperial_guard = {
+		if = {
+			limit = {
+				is_title_active = d_imperial_guard
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = shinto } 
+				}
+			}
+			log = "[d_imperial_guard.owner.GetTitledFirstName] was found to be unfit to lead the [d_imperial_guard.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_bushido = {
+		if = {
+			limit = {
+				is_title_active = d_bushido
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = shinto } 
+				}
+			}
+			log = "[d_bushido.owner.GetTitledFirstName] was found to be unfit to lead the [d_bushido.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_komeito = {
+		if = {
+			limit = {
+				is_title_active = d_komeito
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = soka_gakkai } 
+				}
+			}
+			log = "[d_komeito.owner.GetTitledFirstName] was found to be unfit to lead the [d_komeito.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_bund_warriors = {
+		if = {
+			limit = {
+				is_title_active = d_bund_warriors
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = jinbenwei } 
+				}
+			}
+			log = "[d_bund_warriors.owner.GetTitledFirstName] was found to be unfit to lead the [d_bund_warriors.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_darkforest = {
+		if = {
+			limit = {
+				is_title_active = d_darkforest
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = shengming } 
+				}
+			}
+			log = "[d_darkforest.owner.GetTitledFirstName] was found to be unfit to lead the [d_darkforest.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_darkforest = {
+		if = {
+			limit = {
+				is_title_active = d_darkforest
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = shengming } 
+				}
+			}
+			log = "[d_darkforest.owner.GetTitledFirstName] was found to be unfit to lead the [d_darkforest.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_whampoa_army = {
+		if = {
+			limit = {
+				is_title_active = d_whampoa_army
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = sanmin } 
+				}
+			}
+			log = "[d_whampoa_army.owner.GetTitledFirstName] was found to be unfit to lead the [d_whampoa_army.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_pla = {
+		if = {
+			limit = {
+				is_title_active = d_pla
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = jibenyuanze } 
+				}
+			}
+			log = "[d_pla.owner.GetTitledFirstName] was found to be unfit to lead the [d_pla.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
+	
+	d_red_army = {
+		if = {
+			limit = {
+				is_title_active = d_red_army
+				owner = { 
+					ai = yes
+					holy_order = yes 
+					NOT = { religion = jibenyuanze } 
+				}
+			}
+			log = "[d_red_army.owner.GetTitledFirstName] was found to be unfit to lead the [d_red_army.GetName] and therefore removed by the abdicate holy order effect!"
+		}
+	}
 }

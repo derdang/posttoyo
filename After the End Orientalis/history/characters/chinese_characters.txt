@@ -959,6 +959,24 @@
 	2580.1.1 = {birth = yes}
 	2650.1.1 = {death = yes}
 }
+3923032 = { #Captain of the Whampoa Academy
+	name = "Umin"
+	dynasty = 3923033 #Boya
+	culture = gaoshan
+	religion = sanmin
+	martial = 4
+	diplomacy = 7
+	stewardship = 4
+	intrigue = 3
+	learning = 5
+	trait=brilliant_strategist
+    trait=kind
+    trait=just
+    trait=diligent
+    trait=robust
+    trait=strong
+	2580.1.1 = {birth = yes}
+}
 
 ###Kaifeng###
 
@@ -4610,6 +4628,37 @@
 	2590.1.1={birth=yes}
 	2700.1.1={death=yes}
 }
+2621024 ={ # Grandmaster of Twilight Forest Hunters
+	name="Wenjie"
+	dynasty=9020283 #Ye
+	culture=shanghainese
+	religion=shengming
+	trait=scholarly_theologian
+	trait=fair
+	trait=architect
+	trait=falconer
+	trait=patient
+	trait=diligent
+	trait=craven
+    trait=paranoid
+	trait=stubborn
+	2580.1.1={birth=yes}
+	2700.1.1={death=yes}
+}
+2621025 ={ # Grandmaster of The Bund Warriors
+	name="Keng"
+	dynasty=9020284 #Wang
+	culture=shanghainese
+	religion=jinbenwei
+	trait=skilled_tactician
+	trait=one_eyed
+	trait=brave
+	trait=lustful
+    trait=greedy
+	trait=strong
+	2578.1.1={birth=yes}
+	2700.1.1={death=yes}
+}
 
 ##Shaanxi/Qin##
 1050000 = { #Duke of Weinan
@@ -5759,6 +5808,49 @@
     trait=chaste
 	trait=kind
     trait=honest
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1090021 = { #Leader of the PLA
+	name="Enlai"
+    dynasty=9005030 #Zhou
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=6
+    learning=5
+    trait=skilled_tactician
+    trait=arbitrary
+    trait=jibenyuanze_sword
+    trait=robust
+    trait=ambitious
+    trait=strong
+	trait=wroth
+	trait=shrewd
+    trait=deceitful
+    2582.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
+1090022 = { #Leader of the Red Army
+	name="Guotao"
+    dynasty=9005031 #Zhang
+    culture=pekingese
+    religion=jibenyuanze
+    martial=4
+    diplomacy=4
+    stewardship=5
+    intrigue=6
+    learning=5
+    trait=tough_soldier
+    trait=uncouth
+    trait=jibenyuanze_sword
+    trait=robust
+    trait=falconer
+    trait=envious
+	trait=cruel
+    trait=cynical
     2582.1.1={birth=yes}
     2700.1.1={death=yes}
 }
