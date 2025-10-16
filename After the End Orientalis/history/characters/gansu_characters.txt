@@ -34,7 +34,7 @@
 	name="Xuanjing"
     dynasty=9080008 # Tan
     culture=lanyin
-    religion=datong
+    religion=gelugpa
     martial=4
     diplomacy=3
     stewardship=5
@@ -72,7 +72,7 @@
     dynasty=9080012 # Lu
     female=yes
     culture=lanyin
-    religion=datong
+    religion=nestorian
     martial=5
     diplomacy=3
     stewardship=3
@@ -92,7 +92,7 @@
 	name="Fengyang"
     dynasty=9080012 # Lu
     culture=lanyin
-    religion=datong
+    religion=nestorian
     martial=3
     diplomacy=4
     stewardship=3
@@ -111,7 +111,7 @@
 	name="Xiaoqing"
     dynasty=9080012 # Lu
     culture=lanyin
-    religion=datong
+    religion=nestorian
     martial=3
     diplomacy=3
     stewardship=3
@@ -131,7 +131,7 @@
 	name="Wei"
     dynasty=9080010 # Han
     culture=lanyin
-    religion=datong
+    religion=nestorian
     martial=3
     diplomacy=5
     stewardship=3
@@ -191,7 +191,7 @@
 	name="Suet-yee"
     dynasty=9080011 # Ha
     culture=guanzhong
-    religion=datong
+    religion=nestorian
     martial=4
     diplomacy=4
     stewardship=4
@@ -270,4 +270,23 @@
 			killer=3953005
 		}
 	}
+}
+3953012={ #Duke of Zhongwei
+	name="Biao"
+    dynasty=9910276 #Ma 
+    culture=huizu
+    religion=hui
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=scholarly_theologian
+    trait=sayyid
+    trait=erudite
+    trait=gregarious
+    trait=honest
+	father=3953011
+    2586.1.1={birth=yes}
+    2700.1.1={death=yes}
 }

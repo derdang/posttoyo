@@ -742,6 +742,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_matriarchal
 				has_selected_religion_feature = religion_equal
 				has_selected_religion_feature = religion_meritocratic
+				has_selected_religion_feature = religion_feature_momolian
 			}
 		}
 		effect = {
@@ -2079,7 +2080,6 @@ religion_doctrine = {
 		trigger = {
 			religion = animist_reformed
 			NOR = { 
-				has_selected_religion_feature = religion_no_leader
 				has_selected_religion_feature = religion_animistic
 				has_selected_religion_feature = religion_beatification
 				has_selected_religion_feature = religion_syncretic
@@ -2193,6 +2193,112 @@ religion_doctrine = {
 				set_convert_other_groups = 0
 				set_convert_same_group = 2
 				set_ai_aggression = 1.5
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	religion_feature_bimo = { #Bimoism
+		picture = GFX_religion_feature_bimo
+		potential = {
+			has_game_started = yes
+			religion = bimo_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = bimo_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_beatification
+				has_selected_religion_feature = religion_syncretic
+				has_selected_religion_feature = religion_no_leader
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			custom_tooltip = { text = tooltip_religion_feature_syncretic }
+			custom_tooltip = { text = tooltip_religion_feature_branches }
+			custom_tooltip = { text = tooltip_religion_feature_dynamic }
+			custom_tooltip = { text = tooltip_religion_feature_no_leader }
+			custom_tooltip = { text = tooltip_religion_feature_no_crusade }
+			hidden_tooltip = { 
+				set_no_head_of_religion = yes
+				set_religion_head = none
+				set_can_call_crusade = no
+				set_religious_branch = pagan_reformation
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	religion_feature_benzhu = { #Benzhuism
+		picture = GFX_religion_feature_benzhu
+		potential = {
+			has_game_started = yes
+			religion = benzhu_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = benzhu_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_beatification
+				has_selected_religion_feature = religion_syncretic
+				has_selected_religion_feature = religion_no_leader
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			custom_tooltip = { text = tooltip_religion_feature_syncretic }
+			custom_tooltip = { text = tooltip_religion_feature_branches }
+			custom_tooltip = { text = tooltip_religion_feature_dynamic }
+			custom_tooltip = { text = tooltip_religion_feature_no_leader }
+			custom_tooltip = { text = tooltip_religion_feature_no_crusade }
+			hidden_tooltip = { 
+				set_no_head_of_religion = yes
+				set_religion_head = none
+				set_can_call_crusade = no
+				set_religious_branch = pagan_reformation
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	religion_feature_nuo = { #Sabah Matriarchal Ancestral Worship and Dogmatic belief against magics
+		picture = GFX_religion_feature_nuo
+		potential = {
+			has_game_started = yes
+			religion = nuo_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = nuo_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_beatification
+				has_selected_religion_feature = religion_syncretic
+				has_selected_religion_feature = religion_autocephaly
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			custom_tooltip = { text = tooltip_religion_feature_syncretic }
+			custom_tooltip = { text = tooltip_religion_feature_autocephaly }
+			hidden_tooltip = { 
+				set_autocephaly = yes
+				set_can_excommunicate = yes
+				set_can_grant_divorce = yes
+				set_can_grant_invasion_cb = yes
+				set_can_grant_claim = yes
 			}
 		}
 		ai_will_do = {

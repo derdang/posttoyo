@@ -1922,3 +1922,32 @@ d_nuo_reformed = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+d_chinomi_reformed = {
+	color = { 230 135 115 }
+	
+	creation_requires_capital = no
+	
+	capital = 5 # c_ishikari
+	
+	dignity = 200
+	
+	title = HIGH_PRIEST
+	title_female = HIGH_PRIESTESS
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = chinomi_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = chinomi_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = chinomi_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
