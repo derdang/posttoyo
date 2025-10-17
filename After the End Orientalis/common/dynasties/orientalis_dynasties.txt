@@ -648,7 +648,20 @@
 	}
 }
 
-1178000 = { name="M'nu" culture=jarai }
+1178000 = { name="M'nu" culture=jarai
+	coat_of_arms = {
+		religion = vaishnava
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 3
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1178001 = { name="R'com" culture=jarai }
 1178002 = { name="Ro" culture=jarai }
 1178003 = { name="Ksor" culture=jarai }
@@ -791,6 +804,20 @@
 
 1183000 = { name="Om-Ka" culture=loeu }
 1183001 = { name="Sai-Ya" culture=loeu }
+1183002 = { name="Trà" culture=loeu #Reference to a Jarai King
+	coat_of_arms = {
+		religion = vaishnava
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 4
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1240000 = { name="Tukhan" culture=buryat }
 1240001 = { name="Malo" culture=buryat }
@@ -1187,7 +1214,20 @@
 1294004 = { name="Mangkuadiningrat" culture= madurese}
 
 
-1295000 = { name="Suriakusuma" culture= sundanese}
+1295000 = { name="Suriakusuma" culture=sundanese
+	coat_of_arms = {
+			religion = pancasila
+			template = 0
+			layer = {
+			texture = 2
+			texture_internal = 60
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1295001 = { name="Hidayatullah" culture= sundanese}
 1295002 = { name="Brajanegara" culture= sundanese}
 1295003 = { name="Sukardi" culture= sundanese}
@@ -1195,26 +1235,65 @@
 1295005 = { name="Kartasasmita" culture= sundanese}
 1295006 = { name="Wiranatakusuma" culture= sundanese}
 
-1296000 = { name="Chasan" culture= bantenese}
+1296000 = { name="Komalasari" culture= bantenese religion=kebatinan used_for_random=no}
 1296001 = { name="Natakusuma" culture= bantenese}
 1296002 = { name="Jayabaya" culture= bantenese}
 1296003 = { name="Hazrumy" culture= bantenese}
 1296004 = { name="Diany" culture= bantenese}
 1296005 = { name="Jayadiningrat" culture= bantenese}
 
-1297000 = { name="Setiawan" culture= jakartan}
+1297000 = { name="Setiawan" culture= jakartan
+	coat_of_arms = {
+			religion = pancasila
+			template = 0
+			layer = {
+			texture = 2
+			texture_internal = 61
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1297001 = { name="Baidan" culture= jakartan}
 1297002 = { name="Jaim" culture= jakartan}
 1297003 = { name="Sennen" culture= jakartan}
 
 1298000 = { name="I Made" culture= balinese}
 1298001 = { name="I Gusti Agung" culture= balinese}
-1298002 = { name="Anak Agung" culture= balinese}
+1298002 = { name="Anak Agung" culture= balinese
+	coat_of_arms = {
+		religion = tirthaist
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1298003 = { name="Tjokorda" culture= balinese}
 1298004 = { name="Ida Bagus" culture= balinese}
 1298005 = { name="Dewa Made" culture= balinese}
 1298006 = { name="I Wayan" culture= balinese}
-1298007 = { name="Dewa Agung" culture= balinese}
+1298007 = { name="Dewa Agung" culture= balinese
+	coat_of_arms = {
+		religion = tirthaist
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 2
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1298008 = { name="Dewa Gede" culture= balinese}
 1298009 = { name="Gusti Ngurah" culture= balinese}
 1298010 = { name="Gusti Gede" culture= balinese}

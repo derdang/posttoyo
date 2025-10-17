@@ -696,10 +696,19 @@
 	martial=2
 	diplomacy=7
 	intrigue=1
-	stewardship=10
+	stewardship=8
 	learning=4
 	culture=sundanese
-	religion=renewalist
+	religion=pancasila
+	trait=scholarly_theologian
+	trait=quick
+	trait=shrewd
+	trait=architect
+	trait=falconer
+	trait=diligent
+	trait=temperate
+	trait=ambitious
+	trait=lustful
 	2580.11.1={birth=yes}
 }
 
@@ -726,8 +735,16 @@
 	stewardship=8
 	learning=14
 	culture=bantenese
-	religion=pancasila
-	trait=ambitious
+	religion=kebatinan
+	trait=charismatic_negotiator
+	trait=one_eyed
+	trait=clubfooted
+	trait=uncouth
+	trait=gardener
+	trait=temperate
+	trait=patient
+	trait=kind
+	trait=humble
 	2565.2.12={birth=yes}
 }
 
@@ -741,6 +758,15 @@
 	learning=8
 	culture=jakartan
 	religion=pancasila
+	trait=fortune_builder
+	trait=is_fat
+	trait=strong
+	trait=sturdy
+	trait=administrator
+	trait=chaste
+	trait=diligent
+	trait=kind
+	trait=humble
 	2576.2.12={birth=yes}
 }
 
@@ -771,12 +797,20 @@
 	name="Gede Pastika"
 	dynasty = 1298007 # Dewa Agung
 	martial=7
-	diplomacy=12
+	diplomacy=11
 	intrigue=12
-	stewardship=20
+	stewardship=10
 	learning=2
 	culture=balinese
 	religion=tirthaist
+	trait=fortune_builder
+	trait=zealous
+	trait=quick
+	trait=robust
+	trait=groomed
+	trait=scholar
+	trait=humble
+	trait=envious
 	2540.2.12={birth=yes}
 	2565.4.12={add_spouse=1298001}
 }
@@ -789,53 +823,94 @@
 	religion=tirthaist
 	father=1298009
 	mother=1298010
+	trait=flamboyant_schemer
+	trait=fair
+	trait=lefthanded
+	trait=shrewd
+	trait=charitable
+	trait=lustful
+	trait=ambitious
+	trait=proud
 	2559.2.12={birth=yes}
 }
 
 1298002 ={ # balinese's prince
-	name="Gede Warmadewa"
+	name="Gede Warmadewa"
 	dynasty =  1298007 # Dewa Agung
 	culture=balinese
 	religion=tirthaist
 	father=1298000
 	mother=1298001
+	trait=scholarly_theologian
+	trait=quick
+	trait=stutter
+	trait=shrewd
+	trait=scholar
+	trait=falconer
+	trait=humble
+	trait=envious
 	2570.12.1={birth=yes}
 }
 
 1298003 ={ # balinese's prince #2
-	name="Made Kompyang"
+	name="Made Kompyang"
 	dynasty = 1298007 # Dewa Agung
 	culture=balinese
 	religion=tirthaist
 	father=1298000
 	mother=1298001
+	trait=tough_soldier
+	trait=drunkard
+	trait=strong
+	trait=shrewd
+	trait=giant
+	trait=falconer
+	trait=duelist
+	trait=proud
+	trait=scarred_mid
 	2575.12.1={birth=yes}
 }
 
 1298004 ={ # balinese's princess #1
-	name="Ni Nyoman Ayu"
+	name="Ni Nyoman Ayu"
 	female=yes
 	dynasty = 1298007 # Dewa Agung
 	culture=balinese
 	religion=tirthaist
 	father=1298000
 	mother=1298001
+	trait=indulgent_wastrel
+	trait=fair
+	trait=poet
+	trait=chaste
+	trait=temperate
+	trait=diligent
+	trait=humble
+	trait=content
 	2577.1.1={birth=yes}
 }
 
 1298005 ={ # balinese's prince #3
-	name="Ketut Yuda"
+	name="Ketut Yuda"
 	female=yes
 	dynasty = 1298007 # Dewa Agung
 	culture=balinese
 	religion=tirthaist
 	father=1298000
 	mother=1298001
+	trait=flamboyant_schemer
+	trait=lisp
+	trait=robust
+	trait=hedonist
+	trait=gregarious
+	trait=stubborn
+	trait=humble
+	trait=trusting
 	2577.1.1={birth=yes}
 }
 
 1298006 ={ # buleleng's count
-	name="Made Tresna"
+	name="Made Tresna"
 	dynasty = 1298002 # Dewa Agung
 	martial=15
 	diplomacy=4
@@ -846,21 +921,38 @@
 	religion=tirthaist
 	father=1298009
 	mother=1298010
+	trait=naive_appeaser
+	trait=stressed
+	trait=quick
+	trait=temperate
+	trait=gardener
+	trait=craven
+	trait=paranoid
+	trait=erudite
 	2560.2.12={birth=yes}
 	2595.4.12={add_spouse=1298007}
 }
 
 1298007 ={ # buleleng's countess
-	name="Ni Luh Laskmi"
+	name="Ni Luh Laskmi"
 	dynasty = 1298012 # Gusti Jambe
 	female=yes
 	culture=balinese
 	religion=tirthaist
+	trait=intricate_webweaver
+	trait=quick
+	trait=shrewd
+	trait=uncouth
+	trait=greedy
+	trait=wroth
+	trait=strong
+	trait=envious
+	trait=deceitful
 	2575.2.12={birth=yes}
 }
 
 1298008 ={ # buleleng's count's brother
-	name="Nyoman Baturenggong"
+	name="Nyoman Baturenggong"
 	dynasty = 1298002 # Dewa Agung
 	martial=15
 	diplomacy=4
@@ -871,14 +963,30 @@
 	religion=tirthaist
 	father=1298009
 	mother=1298010
+	trait=underhanded_rogue
+	trait=greedy
+	trait=ambitious
+	trait=fair
+	trait=robust
+	trait=poet
+	trait=wroth
+	trait=envious
 	2580.2.12={birth=yes}
 }
 
 1298009 ={ # buleleng's count's father
-	name="Gede Sugianyar"
+	name="Gede Sugianyar"
 	dynasty = 1298002 # Dewa Agung
 	culture=balinese
 	religion=tirthaist
+	trait=brilliant_strategist
+	trait=strategist
+	trait=lisp
+	trait=one_legged
+	trait=scarred_high
+	trait=falconer
+	trait=wroth
+	trait=envious
 	2535.2.12={birth=yes}
 	2558.6.8={add_spouse=1298007}
 	2582.10.18={add_spouse=1298011}
@@ -886,17 +994,21 @@
 }
 
 1298010 ={ # buleleng's count's mother
-	name="Ni Luh Bulan"
+	name="Ni Luh Bulan"
 	female=yes
 	dynasty = 1298003 # Tjokorda
 	culture=balinese
 	religion=tirthaist
+	trait=scholarly_theologian
+	trait=feeble
+	trait=fair
+	trait=groomed
+	trait=just
+	trait=poet
+	trait=kind
+	trait=proud
 	2537.12.21={birth=yes}
-	2580.2.12={
-		death = {
-			death_reason = death_childbirth
-			}
-		}
+	2580.2.12={death = { death_reason = death_childbirth }}
 }
 
 1298011 ={ # buleleng's count's mother #2
@@ -905,6 +1017,14 @@
 	dynasty = 1298003 # Tjokorda
 	culture=balinese
 	religion=tirthaist
+	trait=elusive_shadow
+	trait=quick
+	trait=robust
+	trait=shrewd
+	trait=seductress
+	trait=proud
+	trait=ambitious
+	trait=envious
 	2559.1.18={birth=yes}
 }
 
