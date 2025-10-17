@@ -202,7 +202,6 @@ is_historical_hordes_culture = { #Cultures with histories of nomadic steppe hist
 	OR = {
 		culture_group = tungusic
 		culture_group = mongol
-		#culture = neo_jin
 	}
 }
 is_nomadic_tribal_culture = {
@@ -211,7 +210,15 @@ is_nomadic_tribal_culture = {
 		culture_group = sibero_turkic
 		culture_group = tungusic
 		culture_group = mongol
-		#culture = neo_jin
+	}
+}
+
+is_salvationist_religion = {
+	OR = {
+		religion = shanrendao
+		religion = yiguandao
+		religion = cao_dai
+		religion = datong
 	}
 }
 
