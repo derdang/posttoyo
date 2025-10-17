@@ -181,10 +181,10 @@ character_event = {#Trait choice 2
 		name = EVTOPTC_asia661
 		trigger = {
 			NOT = {
-				religion = wokou
+				religion = yiguandao
 			}
 		}
-		set_secret_religion = wokou
+		set_secret_religion = yiguandao
 		any_courtier = {
 			limit = {
 				NOR = {
@@ -192,18 +192,18 @@ character_event = {#Trait choice 2
 					prisoner = yes
 				}
 			}	
-			set_secret_religion = wokou
+			set_secret_religion = yiguandao
 				
 		}
 		spouse = {
-			set_secret_religion = wokou
+			set_secret_religion = yiguandao
 				
 		}
 		any_child = {
-			set_secret_religion = wokou
+			set_secret_religion = yiguandao
 				
 			any_child = {
-				set_secret_religion = wokou
+				set_secret_religion = yiguandao
 				
 			}
 		}
