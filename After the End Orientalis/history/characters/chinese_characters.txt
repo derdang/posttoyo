@@ -5855,3 +5855,28 @@
     2582.1.1={birth=yes}
     2700.1.1={death=yes}
 }
+1090023 = { #Chinese Superman
+	name="Kenan"
+    dynasty=9005032 #Kong
+    culture=shanghainese
+    religion=jibenyuanze
+    martial=10
+    diplomacy=5
+    stewardship=2
+    intrigue=3
+    learning=2
+    trait=misguided_warrior
+    trait=strong
+    trait=jibenyuanze_sword
+    trait=wroth
+    trait=arbitrary
+    trait=kind
+	trait=ambitious
+    trait=rude
+    2586.1.1={birth=yes}
+    2599.1.1={
+		employer=2621001
+		effect={give_job_title=job_marshal}
+	}
+	2700.1.1={death=yes}
+}
