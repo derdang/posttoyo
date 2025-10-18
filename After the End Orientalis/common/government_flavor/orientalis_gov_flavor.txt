@@ -16,6 +16,15 @@ government_flavor = {
 	}
 }
 government_flavor = {
+	name = gov_elective_singapore_confederation
+	graphics = GFX_great_asian_trade
+	priority = 2
+	trigger = {
+		government = confederation_government
+		has_landed_title = e_shanghai_confederation
+	}
+}
+government_flavor = {
 	name = gov_elective_singapore_republic
 	graphics = GFX_great_asian_trade
 	priority = 2

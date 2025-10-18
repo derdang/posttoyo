@@ -24,6 +24,17 @@ religion_openly_nousthreskeia_trigger = {
 		}
 	}
 }
+confederation_title_trigger = {
+	OR = {
+		title = e_shanghai_confederation
+		title = k_yakutia_confederation
+		title = k_wu_union
+		title = d_rugao_union
+		title = d_jiaxing_union
+		title = d_nantong_union
+		has_title_flag = is_a_confederacy
+	}
+}
 uses_mandala_government_trigger = {
 	OR = {
 		culture_group = southwest_tai

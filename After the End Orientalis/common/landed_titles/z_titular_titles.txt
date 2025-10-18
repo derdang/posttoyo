@@ -236,6 +236,81 @@ e_hong = {
 	can_be_claimed = yes
 	can_be_usurped = yes
 }
+e_shanghai_confederation = {
+	color = { 151 157 79 }
+	color2={ 255 255 255 }
+	
+	capital = 1779 #Shanghai
+	
+	allow = {
+		religion=shengming
+	}
+	# Cannot be held as a secondary title
+	primary=yes
+	short_name = yes
+	can_be_claimed = yes
+	can_be_usurped = yes
+}
+k_wu_union = {
+	color = { 155 138 116 }
+	color2={ 255 255 255 }
+	
+	capital = 1765 #Xuanwu
+	
+	allow = {
+		religion=shengming
+	}
+	# Cannot be held as a secondary title
+	primary=yes
+	short_name = yes
+	can_be_claimed = yes
+	can_be_usurped = yes
+}
+d_rugao_union = {
+	color = { 229 147 70 }
+	color2={ 255 255 255 }
+	
+	capital = 1793 #Rugao
+	
+	allow = {
+		religion=shengming
+	}
+	# Cannot be held as a secondary title
+	primary=yes
+	short_name = yes
+	can_be_claimed = yes
+	can_be_usurped = yes
+}
+d_jiaxing_union = {
+	color = { 150 24 37 }
+	color2={ 255 255 255 }
+	
+	capital = 1613 #Jiaxing
+	
+	allow = {
+		religion=shengming
+	}
+	# Cannot be held as a secondary title
+	primary=yes
+	short_name = yes
+	can_be_claimed = yes
+	can_be_usurped = yes
+}
+d_nantong_union = {
+	color = { 245 124 28 }
+	color2={ 255 255 255 }
+	
+	capital = 1790 #Chongchuan
+	
+	allow = {
+		religion=shengming
+	}
+	# Cannot be held as a secondary title
+	primary=yes
+	short_name = yes
+	can_be_claimed = yes
+	can_be_usurped = yes
+}
 k_andong_protectorate = { #Hong Governor of the East
 	color = { 206 140 105 }
 	color2={ 128 70 70 }
@@ -265,6 +340,22 @@ k_ice_city = {
 		culture = dongbei
 	}
 	# Cannot be held as a secondary title
+	short_name = yes
+	can_be_claimed = yes
+	can_be_usurped = yes
+}
+k_yakutia_confederation = {
+	color = { 30 113 69 }
+	color2={ 255 255 255 }
+	
+	capital = 2167 #Yakuts
+	culture = yakut
+	
+	allow = {
+		culture = yakut
+	}
+	# Cannot be held as a secondary title
+	primary=yes
 	short_name = yes
 	can_be_claimed = yes
 	can_be_usurped = yes
