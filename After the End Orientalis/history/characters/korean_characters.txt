@@ -3,7 +3,7 @@
 #Korean
 #1597 - Hangugin
 #1598 - Chosunin 
-#1599 - Chaoxianzu 
+#1599 - Chaoxianzu
 
 ###########North Korea###########
 #Theocracy of Nampo
@@ -319,43 +319,45 @@
 	trait=lustful
 	2580.1.1={birth=yes}
 }
-#Theocracy of Seogwipo
+#Queen of Tamna
 1597002={
-	name="Garam"
-	dynasty=1597035 #Kwak
-	culture=hangugin
+	name="Ji-Won"
+	dynasty=1607154 #Nampyeong
+	culture=jejuan
+	religion=muist
+	female=yes
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=charismatic_negotiator
+	trait=kind
+	trait=proud
+	trait=patient
+	trait=trusting
+	trait=content
+	2550.1.1={birth=yes}
+}
+#Duke of Jeju (King of Tamna)
+1597003={
+	name="Uk"
+	dynasty=1607153 #Go
+	culture=jejuan
 	religion=fuyin
 	martial=3
 	diplomacy=3
 	stewardship=4
 	intrigue=5
 	learning=5
-	trait=charismatic_negotiator
+	trait=tough_soldier
 	trait=scholar
 	trait=brave
 	trait=content
 	trait=trusting
 	trait=lustful
-	2580.1.1={birth=yes}
-}
-#Count of Jeju
-1597003={
-	name="Noori"
-	dynasty=1597066 #Myung
-	culture=hangugin
-	religion=muist
-	martial=3
-	diplomacy=3
-	stewardship=4
-	intrigue=5
-	learning=5
-	trait=charismatic_negotiator
-	trait=scholar
-	trait=brave
-	trait=content
-	trait=trusting
-	trait=lustful
-	2580.1.1={birth=yes}
+	2545.1.1={birth=yes}
+	2570.1.1={add_spouse=1597002}
 }
 #Captaincy of Ulleung
 1597004={
@@ -485,6 +487,87 @@
 	trait=misguided_warrior
 	trait=stubborn
 	trait=proud
+	2578.1.1={birth=yes}
+}
+1597015={ #Tamna Kid
+	name="Chido"
+	dynasty=1607153 #Go
+	culture=jejuan
+	religion=concordanist
+	father=1597003
+	mother=1597002
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=tough_soldier
+	trait=one_eyed
+	trait=fair
+	trait=shrewd
+	trait=sturdy
+	trait=hunter
+	trait=falconer
+	2575.1.1={birth=yes}
+}
+1597016={ #Tamna Kid
+	name="Damyeong"
+	dynasty=1607153 #Go
+	culture=jejuan
+	religion=unificationist
+	father=1597003
+	mother=1597002
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=misguided_warrior
+	trait=stubborn
+	trait=proud
+	trait=giant
+	trait=dull
+	trait=strong
+	2576.1.1={birth=yes}
+}
+1597017={ #Tamna Kid
+	name="Sik"
+	dynasty=1607153 #Go
+	culture=jejuan
+	religion=mahayana
+	father=1597003
+	mother=1597002
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=thrifty_clerk
+	trait=stubborn
+	trait=proud
+	trait=just
+	trait=wroth
+	trait=envious
+	2577.1.1={birth=yes}
+}
+1597018={ #Tamna Kid
+	name="Gi"
+	dynasty=1607153 #Go
+	culture=jejuan
+	religion=muist
+	father=1597003
+	mother=1597002
+	martial=3
+	diplomacy=3
+	stewardship=4
+	intrigue=5
+	learning=5
+	trait=martial_cleric
+	trait=erudite
+	trait=quick
+	trait=feeble
+	trait=shrewd
+	trait=mystic
 	2578.1.1={birth=yes}
 }
 ### Pusan
