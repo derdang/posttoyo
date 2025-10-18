@@ -48,7 +48,7 @@ secret_religion_visibility_trigger = {
 					religion = shanrendao
 					religion = yiguandao
 					religion = cheondoist
-					religion = datong
+					religion = tiandao
 					religion = mahayana
 					religion = hoa_hao
 					religion = soka_gakkai
@@ -102,7 +102,7 @@ secret_religion_visibility_trigger = {
 					secret_religion = shanrendao
 					secret_religion = yiguandao
 					secret_religion = cheondoist
-					secret_religion = datong
+					secret_religion = tiandao
 					secret_religion = mahayana
 					secret_religion = hoa_hao
 					secret_religion = soka_gakkai
@@ -158,7 +158,7 @@ secret_religion_visibility_trigger = {
 					religion = shanrendao
 					religion = yiguandao
 					religion = cheondoist
-					religion = datong
+					religion = tiandao
 					religion = mahayana
 					religion = hoa_hao
 					religion = soka_gakkai
@@ -213,7 +213,7 @@ secret_religion_visibility_trigger = {
 					secret_religion = shanrendao
 					secret_religion = yiguandao
 					secret_religion = cheondoist
-					secret_religion = datong
+					secret_religion = tiandao
 					secret_religion = mahayana
 					secret_religion = hoa_hao
 					secret_religion = soka_gakkai
@@ -4015,7 +4015,7 @@ eastern = {
 		intermarry = buddhist_group
 		dynamic_cult = no
 	}
-	datong = { #3k Larppppp
+	tiandao = { #Chinese Millenarianism
 		graphical_culture = chinesegfx
 		secondary_event_pictures = sunni
 		has_coa_on_barony_only = yes
@@ -4028,14 +4028,14 @@ eastern = {
 		
 		interface_skin = { taoist_interface indian_interface muslim_interface }
 		
-		high_god_name = GOD_HEAVENLY_HAN
+		high_god_name = GOD_AMITABHA
 		
 		god_names = {
-			GOD_GAOZU GOD_SHIZU GOD_LIEZU GOD_ANCESTORS
+			GOD_MILE GOD_XIWANGMU GOD_DAO GOD_DHARMA GOD_ANCESTORS
 		}
 		
 		evil_god_names = {
-			WANG MANG LIANG_JI DONG_ZHOU CAO_CAO
+			MA
 		}
 
 		has_heir_designation = yes
@@ -4048,11 +4048,18 @@ eastern = {
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
 
-		scripture_name = MA_QIAN_KE
-		priest_title = DAOSHI
-		piety_name = PIETY_TE
+		scripture_name = SANYANG
+		priest_title = MASTER
+		piety_name = XIAO
 		
 		intermarry = buddhist_group
+		intermarry = ruist
+		intermarry = taoist
+		intermarry = quanzhen
+		intermarry = yiguandao
+		intermarry = shanrendao
+		intermarry = cao_dai
+		intermarry = jibenyuanze
 		dynamic_cult = no
 	}
 }
