@@ -1363,7 +1363,7 @@
 ###########Cebuano Characters###########
 3906000 = { #Count of Southern Leyte
 	name="Antonio"
-	dynasty=3906050 #Ignacio
+	dynasty=3906250 #Ignacio
 	culture=cebuano
 	religion=catholic
 	trait=elusive_shadow
@@ -1373,13 +1373,14 @@
 	trait=patient
 	trait=diligent
 	trait=erudite
+	father=3906004
 	2580.6.8={
 		birth=yes
 	}
 }
 3906001 = { #Count of Bohol
 	name="Sikatuna"
-	dynasty=3906050 #Combes
+	dynasty=3906250 #Ignacio
 	culture=cebuano
 	religion=catholic
 	trait=scholarly_theologian
@@ -1390,13 +1391,13 @@
 	trait=charitable
 	trait=erudite
     father=3906004
-	2580.6.8={
+	2581.6.8={
 		birth=yes
 	}
 }
 3906002 = { #Count of Cebu
 	name="Don"
-	dynasty=3906050 #Humabon
+	dynasty=3906250 #Ignacio
 	culture=cebuano
 	religion=catholic
 	trait=grey_eminence
@@ -1407,7 +1408,7 @@
 	trait=diligent
 	trait=hedonist
     father=3906004
-	2580.6.8={
+	2582.6.8={
 		birth=yes
 	}
 }
@@ -1429,7 +1430,7 @@
 }
 3906004 = { #Father of Ignacio brothers
 	name="Felix"
-	dynasty=3906241 # Ignacio
+	dynasty=3906250 # Ignacio
 	culture=cebuano
 	religion=catholic
 	2535.6.8={
