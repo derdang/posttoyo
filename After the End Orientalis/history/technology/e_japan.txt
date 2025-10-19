@@ -3,7 +3,6 @@ technology = {
 	titles = {
 		d_aichi
 		d_aomori
-		d_asuka
 		d_chiba
 		d_dewa
 		d_fukushima
@@ -20,11 +19,9 @@ technology = {
 		d_kumamoto
 		d_miyazaki
 		d_nagano
-		d_nagasaki
 		d_niigata
 		d_okayama
 		d_omi
-		d_osaka
 		d_oshu
 		d_ryukyu
 		d_saga
@@ -32,13 +29,70 @@ technology = {
 		d_sanin
 		d_shizuoka
 		d_tochigi
-		d_tokyo
 		d_wakayama
 		d_yamaguchi
 	}
 	2600 = {
 		military = 2.25
 		economy = 2.25
+		culture = 2.25
+
+		TECH_TRADE_PRACTICES = 3
+		TECH_CITY_CONSTRUCTION = 3
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		TECH_CASTLE_CONSTRUCTION = 3
+
+	}
+	3100 = {
+		military = 5.0
+		economy = 5.5
+		culture = 5.0
+		
+		TECH_TRADE_PRACTICES = 6
+		TECH_CITY_CONSTRUCTION = 5
+		TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		TECH_CASTLE_CONSTRUCTION = 6
+	}
+}
+
+#JAPAN - Cultural Centers
+technology = {
+	titles = {
+		d_asuka
+		d_osaka
+	}
+	2600 = {
+		military = 2.25
+		economy = 2.25
+		culture = 3
+
+		TECH_TRADE_PRACTICES = 3
+		TECH_CITY_CONSTRUCTION = 3
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		TECH_CASTLE_CONSTRUCTION = 3
+
+	}
+	3100 = {
+		military = 5.0
+		economy = 5.5
+		culture = 5.0
+		
+		TECH_TRADE_PRACTICES = 6
+		TECH_CITY_CONSTRUCTION = 5
+		TECH_FORTIFICATIONS_CONSTRUCTION = 6
+		TECH_CASTLE_CONSTRUCTION = 6
+	}
+}
+
+#JAPAN - Major Commercial Centers
+technology = {
+	titles = {
+		d_nagasaki
+		d_tokyo
+	}
+	2600 = {
+		military = 2.25
+		economy = 3
 		culture = 2.25
 
 		TECH_TRADE_PRACTICES = 4

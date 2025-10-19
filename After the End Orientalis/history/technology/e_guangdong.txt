@@ -25,11 +25,8 @@ technology = {
 #GUANGDONG coastal
 technology = {
 	titles = {
-		d_guangzhou
-		d_hong_kong
 		d_huizhou
 		d_jiangmen
-		d_macau
 		d_maoming
 		d_shantou
 		d_shanwei
@@ -37,6 +34,36 @@ technology = {
 		d_yangjiang
 		d_zhanjiang
 		d_zhuhai
+	}
+	2600 = {
+		military = 2.25
+		economy = 2.25
+		culture = 2.25
+
+		TECH_TRADE_PRACTICES = 3
+		TECH_CITY_CONSTRUCTION = 3
+		TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		TECH_CASTLE_CONSTRUCTION = 3
+
+	}
+	3100 = {
+		military = 5.0
+		economy = 5.5
+		culture = 5.0
+		
+		TECH_TRADE_PRACTICES = 5
+		TECH_CITY_CONSTRUCTION = 4
+		TECH_FORTIFICATIONS_CONSTRUCTION = 5
+		TECH_CASTLE_CONSTRUCTION = 5
+	}
+}
+
+#GUANGDONG Mega Cities
+technology = {
+	titles = {
+		d_guangzhou
+		d_hong_kong
+		d_macau
 	}
 	2600 = {
 		military = 2.25
