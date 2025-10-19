@@ -10568,7 +10568,20 @@ coat_of_arms = {
 		}
 	}
 }
-1918141 = { name="Eikhe" culture=petropavlovskiy religion=orthodox}
+1918141 = { name="Eikhe" culture=petropavlovskiy
+	coat_of_arms = {
+		religion = nousthreskeia
+		template = 0
+		layer = {
+			texture = 4
+			texture_internal = 5
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1918142 = { name="Nedorubov" culture=petropavlovskiy
 	coat_of_arms = {
 		religion = orthodox

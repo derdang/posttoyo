@@ -1,22 +1,17 @@
-#JAVA
+#JAVA Island and Bali - Highest Tech in the Area of Old Indonesia
 technology = {
 	titles = {
 		d_bali
 		d_banten
-		d_flores
 		d_jawa_kulon
 		d_lombok
-		d_lorosae
-		d_malada
 		d_malang
-		d_maumere
 		d_madura
 		d_semarang
 		d_solo
 		d_sumba
 		d_sumbawa
 		d_surabaya
-		d_timbar
 		d_yogyakarta
 	}
 	2600 = {
@@ -39,5 +34,41 @@ technology = {
 		TECH_CITY_CONSTRUCTION = 5
 		TECH_FORTIFICATIONS_CONSTRUCTION = 5
 		TECH_CASTLE_CONSTRUCTION = 5
+	}
+}
+#Timor Leste - Average Tech
+technology = {
+	titles = {
+		d_lorosae
+		d_timbar
+	}
+	2600 = {
+		military = 2.0
+		economy = 2.0
+		culture = 2.0
+
+	}
+	3100 = {
+		military = 4.5
+		economy = 4.5
+		culture = 4.5
+	}
+}
+#Tribal Java
+technology = {
+	titles = {
+		d_flores
+		d_malada
+		d_maumere
+	}
+	2600 = {
+		military = 1.1
+		economy = 1.1
+		culture = 1.1
+	}
+	3100 = {
+		military = 3.8
+		economy = 3.8
+		culture = 3.8
 	}
 }
