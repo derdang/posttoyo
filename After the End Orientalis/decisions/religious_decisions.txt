@@ -1839,6 +1839,35 @@ decisions = {
 			always = no
 		}
 	}
+	change_tiandao_branch = {
+		ai = no
+		
+		potential = {
+			OR = {religion = tiandao secret_religion = tiandao}
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedtiandaobranch }
+		}
+		
+		allow = {
+			OR = {religion = tiandao secret_religion = tiandao}
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = sino.6 }				
+			}
+			custom_tooltip = { text = TXT_change_tiandao_branch }
+			set_character_flag = changedtiandaobranch
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 	change_sanmin_branch = {
 		ai = no
 		

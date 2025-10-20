@@ -802,6 +802,21 @@ spriteTypes = {
 	
 ### Orientalis Traits
 
+#Tiandao Position
+	spriteType = {
+		name = "GFX_trait_tiandao_tiandi"
+		texturefile = "gfx/traits/tiandao_tiandi.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_tiandao_bailian"
+		texturefile = "gfx/traits/tiandao_bailian.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 #Mahayana Traits
 	spriteType = {
 		name = "GFX_trait_mahayana_chan"
@@ -1441,6 +1456,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_change_fuyin_branch"
 		texturefile = "gfx/interface/change_fuyin_branch.dds"
+	}
+	spriteType = {
+		name = "GFX_change_tiandao_branch"
+		texturefile = "gfx/interface/change_tiandao_branch.dds"
 	}
 	spriteType = {
 		name = "GFX_change_jibenyuanze_branch"

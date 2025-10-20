@@ -253,3 +253,39 @@ character_event = {
 		}
 	}
 }
+#Tiandao Branch Trait Decision
+character_event = {
+	id = sino.6
+	desc = EVTDESC_tiandao1
+	picture = GFX_evt_chinese_thinkers
+	religion = tiandao
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_tiandao1
+		hidden_tooltip = {
+			remove_trait = tiandao_bailian
+		}
+		add_trait = tiandao_tiandi
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = EVTOPTB_tiandao1
+		hidden_tooltip = {
+			remove_trait = tiandao_tiandi
+		}
+		add_trait = tiandao_bailian
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

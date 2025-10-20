@@ -25,9 +25,10 @@ saint_faith = {
 	tolerates_buddhist_group = yes
 	buddhist_group_opinion = 5
 	
-	opposites = {saint_balance
-	saint_power 
-	saint_wisdom
+	opposites = {
+		saint_balance
+		saint_power 
+		saint_wisdom
 	}
 
 	learning = 1
@@ -48,9 +49,10 @@ saint_wisdom = {
 	tolerates_buddhist_group = yes
 	buddhist_group_opinion = 5
 	
-	opposites = {saint_balance
-	saint_power 
-	saint_faith
+	opposites = {
+		saint_balance
+		saint_power 
+		saint_faith
 	}
 
 	learning = 2
@@ -71,9 +73,10 @@ saint_power = {
 	tolerates_buddhist_group = yes
 	buddhist_group_opinion = 5
 	
-	opposites = {saint_balance
-	saint_faith 
-	saint_wisdom
+	opposites = {
+		saint_balance
+		saint_faith 
+		saint_wisdom
 	}
 	
 	martial = 1
@@ -94,9 +97,10 @@ saint_balance = {
 	tolerates_buddhist_group = yes
 	buddhist_group_opinion = 5
 	
-	opposites = {saint_faith
-	saint_power 
-	saint_wisdom
+	opposites = {
+		saint_faith
+		saint_power 
+		saint_wisdom
 	}
 	
 	stewardship = 1
@@ -364,6 +368,36 @@ fuyin_huhan = {
 
 	potential = { OR = { religion = fuyin secret_religion=fuyin } }
 	religious_branch = fuyin
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+##Tiandao Stances
+tiandao_tiandi = {
+	opposites = {
+		tiandao_bailian
+	}
+
+	learning = 2
+	eastern_opinion = 10
+	
+	potential = { OR = { religion = tiandao secret_religion=tiandao } }
+	religious_branch = tiandao
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+}
+
+tiandao_bailian = {
+	opposites = {
+		tiandao_tiandi
+	}
+	
+	diplomacy = 2
+	buddhist_group_opinion = 10
+
+	potential = { OR = { religion = tiandao secret_religion=tiandao } }
+	religious_branch = tiandao
 	random = no
 	religious = yes
 	ruler_designer_cost = 0
