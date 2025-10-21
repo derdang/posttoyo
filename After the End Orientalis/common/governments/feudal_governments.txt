@@ -741,7 +741,10 @@ feudal_governments = {
 					
 					AND = {
 						religion_group = buddhist_group
-						culture_group = han
+						OR = {
+							culture_group = han
+							culture = mengguzu
+						}
 					}
 					AND = {
 						religion = hui

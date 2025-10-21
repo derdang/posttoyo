@@ -237,7 +237,7 @@ e_hong = {
 	can_be_usurped = yes
 }
 e_shanghai_confederation = {
-	color = { 151 157 79 }
+	color = { 127 38 82 }
 	color2={ 255 255 255 }
 	
 	capital = 1779 #Shanghai
@@ -260,6 +260,22 @@ k_wu_union = {
 	allow = {
 		religion=shengming
 	}
+	# Cannot be held as a secondary title
+	primary=yes
+	short_name = yes
+	can_be_claimed = yes
+	can_be_usurped = yes
+}
+k_korean_confederation = {
+	color = { 0 71 160 }
+	color2={ 255 255 255 }
+	
+	capital = 758 #Seoul
+	
+	allow = {
+		culture=hangugin
+	}
+
 	# Cannot be held as a secondary title
 	primary=yes
 	short_name = yes

@@ -439,8 +439,9 @@
 	trait=ambitious
 	2578.1.1={birth=yes}
 	2580.1.1={
-	effect={
-		add_artifact=ciacia_annal
+		effect={
+			add_artifact=ciacia_annal
+			add_claim = k_pusan
 		}
 	}
 }
@@ -585,6 +586,11 @@
 	trait=stubborn
 	trait=proud
 	2584.1.1={birth=yes}
+	2590.1.1={
+		effect={
+			add_claim = k_korean_confederation
+		}
+	}
 }
 1597101={ #Chungcheong
 	name="Tae-Hyun"
