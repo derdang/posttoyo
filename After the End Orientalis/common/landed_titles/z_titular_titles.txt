@@ -344,6 +344,21 @@ k_ice_city = {
 	can_be_claimed = yes
 	can_be_usurped = yes
 }
+k_bailian = {
+	color = { 247 8 54 }
+	color2={ 255 255 255 }
+	
+	capital = 1445 #Neijiang
+	culture = sichuanese
+	
+	allow = {
+		culture = sichuanese
+	}
+	# Cannot be held as a secondary title
+	short_name = yes
+	can_be_claimed = yes
+	can_be_usurped = yes
+}
 k_yakutia_confederation = {
 	color = { 30 113 69 }
 	color2={ 255 255 255 }
@@ -764,8 +779,8 @@ e_tian = {
 	color = { 255 255 255 }
 	color2={ 255 255 255 }
 	
-	capital = 1 #PLACEHOLDER
-	culture = cantonese
+	capital = 1923 #Beijing
+	culture = pekingese
 	
 	# Always exists
 	landless = yes
