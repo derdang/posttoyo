@@ -6,7 +6,7 @@ e_lan_xang = {
 	culture = laotian
 	
 	allow = {
-		culture = laotian
+		always = no # Only created through special decisions
 	}
 }
 e_chakrphup_khmer = {
@@ -17,7 +17,7 @@ e_chakrphup_khmer = {
 	culture = khmer
 	
 	allow = {
-		culture_group = cambodian
+		always = no # Only created through special decisions
 	}
 }
 e_indonesia = {
@@ -28,7 +28,7 @@ e_indonesia = {
 	culture = javanese
 	
 	allow = {
-		is_nusantaran_sphere_no_ph = yes
+		always = no # Only created through special decisions
 	}
 }
 e_china = { #Unified China
@@ -92,37 +92,7 @@ e_china = { #Unified China
 	muong = "Trung Hoa"
 	
 	allow = {
-		OR = {
-			culture_group = han
-			culture_group = mongol
-			culture_group = tungusic
-			culture = chaoxianzu
-			
-			AND = {
-				conditional_tooltip = {
-					trigger = {
-						OR = {
-							is_bureaucratic_religion = yes
-							is_mahayana_chinese = yes
-							religion = hui
-							religion = heilong
-							religion = heilong_reformed
-							religion = chuma
-							religion = chuma_reformed
-						}
-					}
-					custom_tooltip = {
-						text = TXT_is_bureaucratic_religion
-					}
-				}
-				OR = {
-					culture_group = hmong_mien
-					culture_group = formosan
-					culture_group = lolo
-					culture_group = north_tai
-				}
-			}
-		}
+		always = no # Only created through special decisions
 	}
 }
 e_crusader_china = {
@@ -692,6 +662,10 @@ k_yakutia_confederation = {
 e_commonwealth = {
 	color = { 0 53 169 }
 	color2={ 255 255 255 }
+	
+	allow = {
+		always = no # Only created through special decisions
+	}
 	
 	capital = 202 #Manila
 	culture = tagalog
