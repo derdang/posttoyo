@@ -274,16 +274,30 @@ narrative_event = {
 			}
 		}
 		create_character = {
-			random_traits = yes
-			dynasty = actually_culture
-			religion = concordanist
+			random_traits = no
+			dynasty = 4300088 # Doki-Doki
+			name = "Monika"
+			religion = shengming
 			culture = yankee
-			female = no
-			age = 35
+			age = 18
 			attributes = {
-				martial = 12
+				martial = 2
+				diplomacy = 15
+				stewardship = 2
+				intrigue = 15
+				learning = 2
 			}
-			trait = brilliant_strategist
+			health = 6
+			fertility = 0.7
+			trait = elusive_shadow
+			trait = envious
+			trait = gregarious
+			trait = paranoid
+			trait = deceitful
+			trait = poet
+			trait = wroth
+			trait = cruel
+			trait = stubborn
 		}
 		new_character = {
 			spawn_unit = {
