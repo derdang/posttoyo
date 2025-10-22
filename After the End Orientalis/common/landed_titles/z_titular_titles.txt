@@ -707,7 +707,7 @@ k_champa = {
 	capital = 167 #Da Nang
 	culture = cham
 	allow = {
-		culture = cham
+		always = no # Only created through special decisions
 	}
 }
 k_lanfang = {
@@ -737,7 +737,7 @@ k_white_scar = { #Jaghatai
 	capital = 851 #Ningjiang
 	culture = manchu
 	allow = {
-		culture = manchu
+		always = no # Only created through special decisions
 	}
 }
 e_yanbian = { #Yanbian Empire
@@ -750,7 +750,7 @@ e_yanbian = { #Yanbian Empire
 	
 	culture = chaoxianzu
 	allow = {
-		culture = chaoxianzu
+		always = no # Only created through special decisions
 	}
 }
 e_beidahuang = { #Beidahuang Federation
@@ -761,7 +761,7 @@ e_beidahuang = { #Beidahuang Federation
 	
 	culture = jiao_liao
 	allow = {
-		culture = jiao_liao
+		always = no # Only created through special decisions
 	}
 }
 ###################THE PING LORD########################
@@ -771,6 +771,10 @@ e_tian = {
 	
 	capital = 1923 #Beijing
 	culture = pekingese
+	
+	allow = {
+		always = no # Only created through special decisions
+	}
 	
 	# Always exists
 	landless = yes
@@ -793,7 +797,7 @@ k_sedang = {
 	capital = 175 #Gia Lai
 	culture = jarai
 	allow = {
-		culture = jarai
+		always = no # Only created through special decisions
 	}
 }
 k_hmong = {
@@ -805,7 +809,7 @@ k_hmong = {
 	capital = 155 #Son La
 	culture = hmong
 	allow = {
-		culture = hmong
+		always = no # Only created through special decisions
 	}
 }
 k_sip_song_chau_tai = {
@@ -815,7 +819,7 @@ k_sip_song_chau_tai = {
 	capital = 155 #Son La
 	culture = tai
 	allow = {
-		culture = tai
+		always = no # Only created through special decisions
 	}
 }
 k_tay_nung = {
@@ -826,7 +830,7 @@ k_tay_nung = {
 	culture = tay_nung
 	short_name= yes
 	allow = {
-		culture = tay_nung
+		always = no # Only created through special decisions
 	}
 }
 k_hariphunchai = {
