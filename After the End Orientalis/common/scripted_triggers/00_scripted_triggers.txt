@@ -2475,7 +2475,6 @@ is_dharmic_monastic_member_trigger = {
 	OR = {
 		society_member_of = monastic_order_hindu
 		society_member_of = monastic_order_buddhist
-		society_member_of = weizza_society
 	}
 }
 
@@ -3801,6 +3800,7 @@ can_be_asked_to_leave_court_trigger = {
 				has_minor_title = title_appointed_regent
 				has_minor_title = title_commander
 				has_minor_title = title_court_physician
+				has_minor_title = title_court_weizza
 			}
 		}
 

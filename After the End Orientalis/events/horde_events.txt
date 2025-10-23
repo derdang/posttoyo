@@ -664,12 +664,32 @@ narrative_event = {
 			age = 16
 		}
 		create_character = {
-			random_traits = yes
+			random_traits = no
+			dynasty = 4300089 # Hardy
+			name = "Thomas"
 			dynasty = actually_culture
 			religion = catholic
 			culture = yankee
+			give_nickname = nick_the_fool
 			female = no
-			age = 18
+			age = 25
+			attributes = {
+				martial = 2
+				diplomacy = 10
+				stewardship = 2
+				intrigue = 7
+				learning = 8
+			}
+			health = 6
+			fertility = 0.7
+			trait = charismatic_negotiator
+			trait = musician
+			trait = stubborn
+			trait = devout
+			trait = patient
+			trait = sloth
+			trait = quick
+			trait = freckles
 		}
 		create_character = {
 			random_traits = yes

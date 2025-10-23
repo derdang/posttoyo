@@ -1476,7 +1476,10 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_minor_title = title_court_physician
+		OR = {
+			has_minor_title = title_court_physician
+			has_minor_title = title_court_weizza
+		}
 		FROM = {
 			prisoner = no
 			OR = {
