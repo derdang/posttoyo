@@ -1816,7 +1816,20 @@
 9041091 = { name="Huang" culture=xiang }
 9041100 = { name="Jiang" culture=xiang }
 9041101 = { name="Wen" culture=xiang religion=shenist}
-9041102 = { name="Hu" culture=xiang religion=shenist}
+9041102 = { name="Hu" culture=xiang
+	coat_of_arms = {
+		religion = shenist
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9041120 = { name="Li" culture=xiang }
 9041125 = { name="Lin" culture=xiang }
 9041137 = { name="Mao" culture=xiang }
@@ -2071,7 +2084,20 @@
 	}
 }
 9051077 = { name="Guo" culture=cantonese }
-9051091 = { name="Huang" culture=cantonese }
+9051091 = { name="Huang" culture=cantonese
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 8
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9051112 = { name="Kuang" culture=cantonese }
 9051120 = { name="Zhen" culture=cantonese
 	coat_of_arms = {
@@ -2184,7 +2210,20 @@
 		}
 	}
 }
-9051287 = { name="Sing" culture=cantonese religion=ruist used_for_random=no}
+9051287 = { name="Sing" culture=cantonese
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9051288 = { name="Wu" culture=cantonese
 	coat_of_arms = {
 		religion = ruist
@@ -2356,7 +2395,20 @@
 9058249 = { name="Yang" culture=min }
 9058271 = { name="Zhang" culture=min }
 9058274 = { name="Zheng" culture=min }
-9058275 = { name="Lo" culture=min religion=ruist used_for_random=no}
+9058275 = { name="Lo" culture=min
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 9
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9058276 = { name="Wei" culture=min religion=ruist used_for_random=no}
 
 9059026 = { name="Chen" culture=hakka }
@@ -2371,7 +2423,20 @@
 9059238 = { name="Xie" culture=hakka }
 9059271 = { name="Zhang" culture=hakka }
 9059274 = { name="Zheng" culture=hakka }
-9059275 = { name="Yuan" culture=hakka religion=ruist used_for_random=no}
+9059275 = { name="Yuan" culture=hakka
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 14
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9059276 = { name="Cheong" culture=hakka religion=ruist used_for_random=no}
 
 # Sichuan
@@ -2530,7 +2595,20 @@
 9070276 = { name="Wu" culture=xinan religion=tiandao used_for_random=no}
 9070277 = { name="Ding" culture=xinan religion=shenist used_for_random=no}
 9070284 = { name="Ngwe" culture=xinan used_for_random=no}
-9070285 = { name="Shen" culture=xinan religion=ruist used_for_random=no}
+9070285 = { name="Shen" culture=xinan
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 12
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9070286 = { name="Lü" culture=xinan
 	coat_of_arms = {
 		religion = ruist
