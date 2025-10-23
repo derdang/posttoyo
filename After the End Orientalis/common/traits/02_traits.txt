@@ -6005,49 +6005,11 @@ secretly_pagan = {
 	ai_zeal = -50
 }
 
-muni = {
-	potential = {
-		is_ruler = no
-		is_female = no
-		religion = jain
-	}
-	
-	monthly_character_piety = 0.3
-	same_religion_opinion = 5
-	
-	religious = yes # Lost immediately on religion change
-	cannot_marry = yes
-	cannot_inherit = yes
-	customizer = no
-	random = no
-	
-	male_compliment = COMPL_MONK
-}
-
-aryika = {
-	potential = {
-		is_ruler = no
-		is_female = yes
-		religion = jain
-	}
-	
-	monthly_character_piety = 0.3
-	same_religion_opinion = 5
-	
-	religious = yes # Lost immediately on religion change
-	cannot_marry = yes
-	cannot_inherit = yes
-	customizer = no
-	random = no
-	
-	female_compliment = COMPL_NUN
-}
-
 bhikkhu = {
 	potential = {
 		is_ruler = no
 		is_female = no
-		religion = buddhist
+		religion_group = buddhist_group
 	}
 	
 	monthly_character_piety = 0.3
@@ -6066,7 +6028,7 @@ bhikkhuni = {
 	potential = {
 		is_ruler = no
 		is_female = yes
-		religion = buddhist
+		religion_group = buddhist_group
 	}
 	
 	monthly_character_piety = 0.3
@@ -6085,7 +6047,7 @@ sanyasi = {
 	potential = {
 		is_ruler = no
 		is_female = no
-		religion = hindu
+		religion_group = indian_group
 	}
 	
 	monthly_character_piety = 0.3
@@ -6104,7 +6066,7 @@ sanyasini = {
 	potential = {
 		is_ruler = no
 		is_female = yes
-		religion = hindu
+		religion_group = indian_group
 	}
 	
 	monthly_character_piety = 0.3

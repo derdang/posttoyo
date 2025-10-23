@@ -1,0 +1,394 @@
+namespace = WFT
+long_character_event = {
+	id = WFT.1
+	desc = EVTDESCWFT1
+	
+	picture = GFX_evt_melee
+	border = GFX_event_long_frame_war
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT1
+		add_one_duel_experience_modifier = yes
+		remove_trait = training
+	}
+}
+long_character_event = {
+	id = WFT.11
+	desc = EVTDESCWFT11
+	
+	picture = GFX_evt_scientist
+	border = GFX_event_long_frame_religion
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT11
+		if = {
+			limit = {
+				OR = {
+					trait = naive_appeaser
+					trait = misguided_warrior
+					trait = indulgent_wastrel
+					trait = amateurish_plotter
+					trait = detached_priest
+				}
+			}
+			if = {
+				limit = {
+					trait = naive_appeaser
+				}
+				remove_trait = naive_appeaser
+				add_trait = underhanded_rogue
+			}
+			if = {
+				limit = {
+					trait = misguided_warrior
+				}
+				remove_trait = misguided_warrior
+				add_trait = tough_soldier
+			}
+			if = {
+				limit = {
+					trait = indulgent_wastrel
+				}
+				remove_trait = indulgent_wastrel
+				add_trait = thrifty_clerk
+			}
+			if = {
+				limit = {
+					trait = amateurish_plotter
+				}
+				remove_trait = amateurish_plotter
+				add_trait = flamboyant_schemer
+			}
+			if = {
+				limit = {
+					trait = detached_priest
+				}
+				remove_trait = detached_priest
+				add_trait = martial_cleric
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					trait = underhanded_rogue
+					trait = tough_soldier
+					trait = thrifty_clerk
+					trait = flamboyant_schemer
+					trait = martial_cleric
+				}
+			}
+			if = {
+				limit = {
+					trait = underhanded_rogue
+				}
+				remove_trait = underhanded_rogue
+				add_trait = charismatic_negotiator
+			}
+			if = {
+				limit = {
+					trait = tough_soldier
+				}
+				remove_trait = tough_soldier
+				add_trait = skilled_tactician
+			}
+			if = {
+				limit = {
+					trait = thrifty_clerk
+				}
+				remove_trait = thrifty_clerk
+				add_trait = fortune_builder
+			}
+			if = {
+				limit = {
+					trait = flamboyant_schemer
+				}
+				remove_trait = flamboyant_schemer
+				add_trait = intricate_webweaver
+			}
+			if = {
+				limit = {
+					trait = martial_cleric
+				}
+				remove_trait = martial_cleric
+				add_trait = scholarly_theologian
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					trait = charismatic_negotiator
+					trait = skilled_tactician
+					trait = fortune_builder
+					trait = intricate_webweaver
+					trait = scholarly_theologian
+				}
+			}
+			if = {
+				limit = {
+					trait = charismatic_negotiator
+				}
+				remove_trait = charismatic_negotiator
+				add_trait = grey_eminence
+			}
+			if = {
+				limit = {
+					trait = skilled_tactician
+				}
+				remove_trait = skilled_tactician
+				add_trait = brilliant_strategist
+			}
+			if = {
+				limit = {
+					trait = fortune_builder
+				}
+				remove_trait = fortune_builder
+				add_trait = midas_touched
+			}
+			if = {
+				limit = {
+					trait = intricate_webweaver
+				}
+				remove_trait = intricate_webweaver
+				add_trait = elusive_shadow
+			}
+			if = {
+				limit = {
+					trait = scholarly_theologian
+				}
+				remove_trait = scholarly_theologian
+				add_trait = mastermind_theologian
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					trait = grey_eminence
+					trait = brilliant_strategist
+					trait = midas_touched
+					trait = elusive_shadow
+					trait = mastermind_theologian
+				}
+			}
+			if = {
+				limit = {
+					trait = grey_eminence
+				}
+				remove_trait = grey_eminence
+				add_trait = virtuoso_arbitrator
+			}
+			if = {
+				limit = {
+					trait = brilliant_strategist
+				}
+				remove_trait = brilliant_strategist
+				add_trait = exalted_warlord
+			}
+			if = {
+				limit = {
+					trait = midas_touched
+				}
+				remove_trait = midas_touched
+				add_trait = golden_sovereign
+			}
+			if = {
+				limit = {
+					trait = elusive_shadow
+				}
+				remove_trait = elusive_shadow
+				add_trait = conniving_puppetmaster
+			}
+			if = {
+				limit = {
+					trait = mastermind_theologian
+				}
+				remove_trait = mastermind_theologian
+				add_trait = erudite_oracle
+			}
+		}
+		remove_trait = travelling
+	}
+}
+long_character_event = {
+	id = WFT.21
+	desc = EVTDESCWFT21
+	
+	picture = GFX_evt_scientist
+	border = GFX_event_long_frame_religion
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT21
+		prestige = -1500
+		remove_trait = travelling
+	}
+}
+long_character_event = {
+	id = WFT.22
+	desc = EVTDESCWFT22
+	
+	picture = GFX_evt_scientist
+	border = GFX_event_long_frame_religion
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT22
+		prestige = -250
+		remove_trait = travelling
+	}
+}
+long_character_event = {
+	id = WFT.32
+	desc = EVTDESCWFT32
+	
+	picture = GFX_evt_scientist
+	border = GFX_event_long_frame_religion
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT32
+		set_global_flag = guns_in_transnistria
+	}
+}
+long_character_event = {
+	id = WFT.42
+	desc = EVTDESCWFT42
+	
+	picture = GFX_evt_scientist
+	border = GFX_event_long_frame_religion
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT42
+	}
+}
+long_character_event = {
+	id = WFT.2
+	desc = EVTDESCWFT2
+	
+	picture = GFX_evt_melee
+	border = GFX_event_long_frame_war
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT2
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		health = 0.02
+		remove_trait = training
+	}
+}
+
+long_character_event = {
+	id = WFT.3
+	desc = EVTDESCWFT3
+	
+	picture = GFX_evt_melee
+	border = GFX_event_long_frame_war
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT3
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		health = 0.05
+		remove_trait = training
+	}
+}
+long_character_event = {
+	id = WFT.4
+	desc = EVTDESCWFT4
+	
+	picture = GFX_evt_melee
+	border = GFX_event_long_frame_war
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT4
+		if = {
+			limit = { has_dlc = Reapers }
+			random_list = { #Randomize injured body part.
+				10 = { #the eyes
+					trigger = { NOT = { OR = { trait = blinded trait = blind } } }
+					if = { limit = { trait = one_eyed }
+						set_character_flag = injury_both_eyes
+					}
+					else = {
+						set_character_flag = injury_eye
+					}
+				}
+				10 = {
+					trigger = { NOT = { trait = one_handed } }
+					set_character_flag = injury_hand
+				}
+				10 = {
+					trigger = { NOT = { trait = one_legged } }
+					set_character_flag = injury_leg
+				}
+				3 = {
+					trigger = { NOT = { trait = disfigured } }
+					set_character_flag = injury_face
+				}
+				1 = {
+					trigger = { NOT = { trait = mangled } }
+					set_character_flag = injury_mangled_body
+				}
+				10 = { #Only in case you already have ALL the other maimed traits?
+					trigger = {
+						OR = { trait = blinded trait = blind }
+						trait = one_handed
+						trait = one_legged
+						trait = disfigured
+						trait = mangled
+					}
+					set_character_flag = injury_could_be_lethal
+				}
+			}
+		}
+		apply_duel_wounded_effect = yes
+		add_blood_splatter_effect = yes
+		remove_trait = training
+	}
+}
+long_character_event = {
+	id = WFT.5
+	desc = EVTDESCWFT5
+	
+	picture = GFX_evt_melee
+	border = GFX_event_long_frame_war
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT5
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		health = 0.08
+		remove_trait = training
+	}
+}
+long_character_event = {
+	id = WFT.6
+	desc = EVTDESCWFT6
+	
+	picture = GFX_evt_melee
+	border = GFX_event_long_frame_war
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT6
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		add_one_duel_experience_modifier = yes
+		health = 0.1
+		remove_trait = training
+	}
+}
+long_character_event = {
+	id = WFT.7
+	desc = EVTDESCWFT7
+	
+	picture = GFX_evt_melee
+	border = GFX_event_long_frame_war
+	is_triggered_only = yes
+	option = {
+		name = EVTOPTAWFT7
+		health = 0.15
+		remove_trait = training
+		add_trait = duelist
+	}
+}
