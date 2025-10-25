@@ -2562,6 +2562,30 @@ religion_openly_americanist_or_heresy_trigger = {
 	}
 }
 
+religion_openly_shamanist_or_heresy_trigger = {
+	custom_tooltip = {
+		text = religion_openly_shamanist_or_heresy_tooltip
+		hidden_trigger = {
+			OR = {
+				religion = shamanist
+				religion = shamanist_reformed
+			}
+		}
+	}
+}
+
+religion_openly_animist_or_heresy_trigger = {
+	custom_tooltip = {
+		text = religion_openly_animist_or_heresy_tooltip
+		hidden_trigger = {
+			OR = {
+				religion = animist
+				religion = animist_reformed
+			}
+		}
+	}
+}
+
 has_secret_religion_trait_trigger = {
 	custom_tooltip = {
 		text = no_secret_religion

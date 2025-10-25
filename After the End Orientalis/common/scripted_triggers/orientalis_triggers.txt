@@ -90,7 +90,11 @@ isnt_forced_to_theocracy = {
 	}
 }
 is_member_of_a_religious_warrior_lodge = {
-	society_member_of = warrior_lodge_americanist
+	OR = {
+		society_member_of = warrior_lodge_americanist
+		society_member_of = warrior_lodge_shamanist
+		society_member_of = warrior_lodge_animist
+	}
 }
 is_member_of_a_martial_art_school = {
 	OR = {

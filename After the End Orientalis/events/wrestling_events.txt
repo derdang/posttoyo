@@ -1545,7 +1545,9 @@ letter_event = { #SUCCESS: Welcome to the society!
 		if = { # Give Sympathy trait if appropriate...
 			limit = {
 				OR = {
-					society_member_of = warrior_lodge_americanist 
+					society_member_of = warrior_lodge_americanist
+					society_member_of = warrior_lodge_shamanist 
+					society_member_of = warrior_lodge_animist 
 				}
 				NOT = { religion_group = pagan_group }
 			}

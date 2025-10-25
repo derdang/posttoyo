@@ -2929,6 +2929,24 @@ character_event = {
 		else_if = {
 			limit = {
 				OR = {
+					religion_openly_shamanist_or_heresy_trigger = yes
+					can_join_society = warrior_lodge_shamanist
+				}
+			}
+			join_society = warrior_lodge_shamanist
+		}
+		else_if = {
+			limit = {
+				OR = {
+					religion_openly_animist_or_heresy_trigger = yes
+					can_join_society = warrior_lodge_animist
+				}
+			}
+			join_society = warrior_lodge_animist
+		}
+		else_if = {
+			limit = {
+				OR = {
 					culture_group = viet
 					culture_group = cham
 					can_join_society = warrior_lodge_viet
