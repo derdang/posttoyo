@@ -306,11 +306,11 @@ character_event = {
                     }
 	    		}
 			}
-			fraticelli = {
+			restorationist = {
 				official_crusade_recipient = {
                     character = ROOT
                     NOT = {
-                        religion = fraticelli
+                        religion = restorationist
                     }
 				}
 			}
@@ -323,8 +323,8 @@ character_event = {
     immediate = {
     	trigger_switch = {
     		on_trigger = religion
-    		catholic = { d_r = { owner = { character_event = { id = HFP.41000 days = 1 } } } }
-    		fraticelli = { d_fraticelli = { owner = { character_event = { id = HFP.41000 days = 1 } } } }
+    		catholic = { k_conferentia = { owner = { character_event = { id = HFP.41000 days = 1 } } } }
+    		restorationist = { k_restorationist = { owner = { character_event = { id = HFP.41000 days = 1 } } } }
     	}
     }
 }
@@ -341,7 +341,7 @@ character_event = {
                     character = ROOT
 	    		}
 			}
-			fraticelli = {
+			restorationist = {
 				official_crusade_recipient = {
                     character = ROOT
 				}
@@ -358,15 +358,15 @@ character_event = {
             catholic = {
                 set_official_crusade_recipient = NONE
             }
-            fraticelli = {
+            restorationist = {
                 set_official_crusade_recipient = NONE
             }
         }
 
     	trigger_switch = {
     		on_trigger = religion
-    		catholic = { d_r = { owner = { character_event = { id = HFP.41000 } } } }
-    		fraticelli = { d_fraticelli = { owner = { character_event = { id = HFP.41000 } } } }
+    		catholic = { k_conferentia = { owner = { character_event = { id = HFP.41000 } } } }
+    		restorationist = { k_restorationist = { owner = { character_event = { id = HFP.41000 } } } }
     	}
     }
 }
@@ -2835,16 +2835,16 @@ narrative_event = {
     		limit = {
     			OR = {
     				event_target:crusade_title = {
-    					region = world_europe_west
+    					region = custom_the_philippines
     				}
     				event_target:crusade_title = {
-    					region = world_europe_south
+    					region = custom_korea
     				}
     				event_target:crusade_title = {
-    					region = world_middle_east_jerusalem
+    					region = custom_java
     				}
     				event_target:crusade_title = {
-    					region = world_africa_north
+    					region = custom_old_russia
     				}
     			}
     		}
@@ -2856,10 +2856,10 @@ narrative_event = {
     		limit = {
     			OR = {
     				event_target:crusade_title = {
-    					region = world_europe_north
+    					region = custom_old_burma
     				}
     				event_target:crusade_title = {
-    					region = world_europe_east
+    					region = custom_papua
     				}
     			}
     		}
@@ -5841,7 +5841,7 @@ character_event = {
             limit = {
                 religion = catholic
             }
-            religion = fraticelli
+            religion = restorationist
         }
     }
 }
@@ -6329,7 +6329,7 @@ province_event = {
     immediate = {
         if = {
             limit = {
-                d_r = {
+                k_conferentia = {
                     owner = {
                         any_war = {
                             using_cb = new_crusade
@@ -6337,7 +6337,7 @@ province_event = {
                     }
                 }
             }
-            d_r = {
+            k_conferentia = {
                 owner = {
                     character_event = { id = HFP.41143 }
                 }
@@ -6345,7 +6345,7 @@ province_event = {
         }
         if = {
             limit = {
-                d_fraticelli = {
+                k_restorationist = {
                     owner = {
                         any_war = {
                             using_cb = new_crusade
@@ -6353,7 +6353,7 @@ province_event = {
                     }
                 }
             }
-            d_fraticelli = {
+            k_restorationist = {
                 owner = {
                     character_event = { id = HFP.41143 }
                 }
@@ -6500,7 +6500,7 @@ province_event = {
     immediate = {
         if = {
             limit = {
-                d_r = {
+                k_conferentia = {
                     owner = {
                         any_war = {
                             using_cb = new_crusade
@@ -6508,7 +6508,7 @@ province_event = {
                     }
                 }
             }
-            d_r = {
+            k_conferentia = {
                 owner = {
                     character_event = { id = HFP.41146 }
                 }
@@ -6516,7 +6516,7 @@ province_event = {
         }
         if = {
             limit = {
-                d_fraticelli = {
+                k_restorationist = {
                     owner = {
                         any_war = {
                             using_cb = new_crusade
@@ -6524,7 +6524,7 @@ province_event = {
                     }
                 }
             }
-            d_fraticelli = {
+            k_restorationist = {
                 owner = {
                     character_event = { id = HFP.41146 }
                 }
