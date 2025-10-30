@@ -885,7 +885,20 @@
 1182009 = { name="Chavay" culture=khrom }
 1182010 = { name="Oknha" culture=khrom }
 1182011 = { name="Mu" culture=khrom }
-1182012 = { name="Diêp" culture=khrom }
+1182012 = { name="Diêp" culture=cochinchinese
+	coat_of_arms = {
+		religion = cao_dai
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 17
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1182013 = { name="U" culture=khrom }
 1182014 = { name="Neang" culture=khrom }
 1182015 = { name="Nuth" culture=khrom }
@@ -1090,7 +1103,20 @@
 1240164 = { name="Oyuunchimeg" culture=buryat }
 1240165 = { name="Erdenechimeg" culture=buryat }
 1240166 = { name="Mönkhbaatar" culture=buryat }
-1240167 = { name="Mönkhbat" culture=buryat religion=gelugpa}
+1240167 = { name="Mönkhbat" culture=buryat
+	coat_of_arms = {
+		religion = gelugpa
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1240168 = { name="Jargalsaikhan" culture=buryat }
 1240169 = { name="Yondon" culture=buryat }
 1240170 = { name="Enkhtuyaa" culture=buryat }
@@ -1141,7 +1167,20 @@
 		}
 	}
 }
-1240179 = { name="Zhamtsarano" culture=buryat religion=orthodox}
+1240179 = { name="Zhamtsarano" culture=buryat
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 56
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1240180 = { name="Barannikov" culture=buryat religion=orthodox}
 1240181 = { name="Dashidorzhieva" culture=buryat
 	coat_of_arms = {
@@ -1239,7 +1278,20 @@
 		}
 	}
 }
-1293016 = { name="Mangunsarkoro" culture= javanese}
+1293016 = { name="Mangunsarkoro" culture= javanese
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1293017 = { name="Joyohadikusumo" culture= javanese} 
 1293018 = { name="Kolopaking" culture= javanese}
 1293019 = { name="Sastrowaldyo" culture= javanese}  
@@ -2260,10 +2312,19 @@
 	culture=maluku
 	religion=renewalist
 }
-1300174 = {
-	name="de Hoog"
-	culture=maluku
-	religion=concordanist
+1300174 = { name="de Hoog" culture=maluku
+	coat_of_arms = {
+		religion = concordanist
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 44
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
 }
 1300175 = {
 	name="Pattikawa"
@@ -3435,27 +3496,40 @@ coat_of_arms = {
 1367007 = { name="Omar" culture=asli }
 1367008 = { name="Salim" culture=asli }
 1367009 = { name="Muttalib" culture=asli }
-1367010 = { name="Kawi" culture=asli }
+1367010 = { name="Kawi" culture=asli
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1367011 = { name="Ali" culture=asli }
-1367002 = { name="Kia" culture=asli }
-1367003 = { name="Jaafar" culture=asli }
-1367004 = { name="Daud" culture=asli }
-1367005 = { name="Harun" culture=asli }
-1367006 = { name="Adzharuddin" culture=asli }
-1367007 = { name="Yaakob" culture=asli }
-1367008 = { name="Sadan" culture=asli }
-1367009 = { name="Zuldin" culture=asli }
-1367010 = { name="Khiruddin" culture=asli }
-1367011 = { name="Ngah" culture=asli }
-1367012 = { name="Jalil" culture=asli }
-1367013 = { name="Fuad" culture=asli }
-1367014 = { name="Taha" culture=asli }
-1367015 = { name="Hafizi" culture=asli }
-1367016 = { name="Bin Ibrahim" culture=asli }
-1367017 = { name="Ismail" culture=asli }
-1367018 = { name="Mohamad" culture=asli }
-1367019 = { name="Abdul Razak" culture=asli }
-1367020 = { name="Man" culture=asli }
+1367012 = { name="Kia" culture=asli }
+1367013 = { name="Jaafar" culture=asli }
+1367014 = { name="Daud" culture=asli }
+1367015 = { name="Harun" culture=asli }
+1367016 = { name="Adzharuddin" culture=asli }
+1367017 = { name="Yaakob" culture=asli }
+1367018 = { name="Sadan" culture=asli }
+1367019 = { name="Zuldin" culture=asli }
+1367020 = { name="Khiruddin" culture=asli }
+1367021 = { name="Ngah" culture=asli }
+1367022 = { name="Jalil" culture=asli }
+1367023 = { name="Fuad" culture=asli }
+1367024 = { name="Taha" culture=asli }
+1367025 = { name="Hafizi" culture=asli }
+1367026 = { name="Bin Ibrahim" culture=asli }
+1367027 = { name="Ismail" culture=asli }
+1367028 = { name="Mohamad" culture=asli }
+1367029 = { name="Abdul Razak" culture=asli }
+1367030 = { name="Man" culture=asli }
 
 1368000 = { name="Meron" culture=kendayan }
 1368001 = { name="Endawie" culture=kendayan }
@@ -3517,7 +3591,20 @@ coat_of_arms = {
 1369013 = { name="Embas" culture=bidayuh }
 1369014 = { name="Janting" culture=bidayuh }
 1369015 = { name="Hadi" culture=bidayuh }
-1369016 = { name="Katib" culture=bidayuh religion=catholic}
+1369016 = { name="Katib" culture=bidayuh
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 45
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1370000 = { name="Meron" culture=iban }
 1370001 = { name="Endawie" culture=iban }
@@ -3732,7 +3819,20 @@ coat_of_arms = {
 		}
 	}
 }
-1382001 = { name="Abdullah" culture=tamil religion = dawoodi}
+1382001 = { name="Abdullah" culture=tamil
+	coat_of_arms = {
+			religion = dawoodi
+			template = 0
+			layer = {
+			texture = 3
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1383000 = { name="Tan" culture=baba_nyonya }
 1383001 = { name="Lim" culture=baba_nyonya }
@@ -5045,7 +5145,20 @@ coat_of_arms = {
 1566045 = { name="Tanti" culture=jumma }
 1566046 = { name="Larma" culture=jumma religion=hindu used_for_random=no}
 
-1567000 = { name="Kang" culture=wa }
+1567000 = { name="Kang" culture=wa
+	coat_of_arms = {
+		religion = weizzane
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1567001 = { name="Pang" culture=wa }
 1567002 = { name="Kang" culture=wa }
 1567003 = { name="La" culture=wa }
@@ -10850,7 +10963,20 @@ coat_of_arms = {
 		}
 	}
 }
-1917157 = { name= "Averbakh"  culture=primorskiy religion = orthodox}
+1917157 = { name= "Averbakh"  culture=primorskiy
+	coat_of_arms = {
+			religion = orthodox
+			template = 0
+			layer = {
+			texture = 3
+			texture_internal = 51
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1917158 = { name= "Agranovskaya"  culture=primorskiy
 	coat_of_arms = {
 			religion = orthodox
@@ -11174,7 +11300,20 @@ coat_of_arms = {
 		}
 	}
 }
-1918143 = { name="Aleut" culture=petropavlovskiy religion=orthodox}
+1918143 = { name="Aleut" culture=petropavlovskiy
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 50
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1918144 = { name="Morozko" culture=petropavlovskiy
 	coat_of_arms = {
 		religion = orthodox
@@ -11627,7 +11766,20 @@ coat_of_arms = {
 		}
 	}
 }
-1919162 = { name= "Bugaev"  culture=amursky religion=orthodox}
+1919162 = { name= "Bugaev"  culture=amursky
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 53
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1919163 = { name= "Reissner"  culture=amursky religion=novobozhiye}
 
 1920000 = { name="Mesyats" culture=sibiri }
@@ -11858,9 +12010,9 @@ coat_of_arms = {
 }
 1920148 = { name="Vologodsky"  culture=sibiri
 	coat_of_arms = {
-			religion = old_believer
-			template = 0
-			layer = {
+		religion = old_believer
+		template = 0
+		layer = {
 			texture = 3
 			texture_internal = 6
 			emblem = 0
@@ -11870,13 +12022,26 @@ coat_of_arms = {
 		}
 	}
 }
-1920149 = { name="Sedov" culture=sibiri religion=orthodox}
+1920149 = { name="Sedov" culture=sibiri
+	coat_of_arms = {
+		religion = old_believer
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 55
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1920150 = { name="Rukavishnikov" culture=sibiri religion=old_believer}
 1920151 = { name="Astomen"  culture=sibiri
 	coat_of_arms = {
-			religion = old_believer
-			template = 0
-			layer = {
+		religion = old_believer
+		template = 0
+		layer = {
 			texture = 3
 			texture_internal = 7
 			emblem = 0
@@ -11886,7 +12051,20 @@ coat_of_arms = {
 		}
 	}
 }
-1920152 = { name="Boldyrev" culture=sibiri religion=orthodox}
+1920152 = { name="Boldyrev" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 52
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1920153 = { name="Krasnov" culture=sibiri
 	coat_of_arms = {
 		religion = orthodox
@@ -12042,7 +12220,20 @@ coat_of_arms = {
 		}
 	}
 }
-1920165 = { name="Kosheverova" culture=sibiri religion=orthodox}
+1920165 = { name="Kosheverova" culture=sibiri
+	coat_of_arms = {
+		religion = orthodox
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 54
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1920166 = { name="Morevna" culture=sibiri
 	coat_of_arms = {
 		religion = orthodox
@@ -20588,8 +20779,34 @@ coat_of_arms = {
 		}
 	}
 }
-2876002 = { name="Sam" culture=annamese } #Count of Quang Nam
-2876003 = { name="Dinh Sang" culture=annamese } #Count of Quang Ngai
+2876002 = { name="Sam" culture=annamese #Count of Quang Nam
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 19
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+2876003 = { name="Dinh Sang" culture=annamese #Count of Quang Ngai
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 18
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2876004 = { name="Lieu" culture=annamese } #shared with north
 2876005 = { name="Huynh" culture=annamese } #Primate Antoine Dinh Van Huynh (woot!)
 2876006 = { name="Trinh" culture=annamese } #Reference to Trinh Công Son
@@ -31035,7 +31252,20 @@ coat_of_arms = {
 4000039 = { name="Shome" culture= bengali }
 4000040 = { name="Sikdar" culture= bengali }
 4000041 = { name="Tagore" culture= bengali }
-4000042 = { name="Bhavan" culture= bengali }
+4000042 = { name="Bhavan" culture= bengali
+	coat_of_arms = {
+		religion = hindu
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 7
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 4000043 = { name="Yunus" culture= bengali religion=renewalist }
 4000044 = { name="Ali Khan" culture= bengali religion=renewalist }
 
@@ -31048,7 +31278,20 @@ coat_of_arms = {
 4010006 = { name = "Shah" culture = nepali }
 4010007 = { name = "Koirala" culture = nepali }
 4010008 = { name = "Yakthung" culture = nepali }
-4010009 = { name = "Acharya" culture = nepali }
+4010009 = { name = "Acharya" culture = nepali
+	coat_of_arms = {
+		religion = hindu
+		template = 0
+		layer = {
+			texture = 1
+			texture_internal = 6
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 4010010 = { name = "Adhikari" culture = nepali }
 4010011 = { name = "Bhattarai" culture = nepali }
 4010012 = { name = "Gautam" culture = nepali }
