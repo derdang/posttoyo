@@ -728,15 +728,15 @@ has_crusade_trait_trigger = {
 	OR = {
 		AND = {
 			OR = {
-				religion = norse_pagan
-				religion = norse_pagan_reformed
+				religion = americanist
+				religion = americanist_reformed
 			}
 			trait = valhalla_bound
 		}
 		AND = {
 			OR = {
-				religion = tengri_pagan
-				religion = tengri_pagan_reformed
+				religion = khanist
+				religion = khanist_reformed
 			}
 			trait = tengri_warrior
 		}
@@ -756,8 +756,8 @@ has_crusade_trait_trigger = {
 		}
 		AND = {
 			OR = {
-				religion = aztec
-				religion = aztec_reformed
+				religion = animist
+				religion = animist_reformed
 			}
 			trait = eagle_warrior
 		}
@@ -1679,7 +1679,7 @@ developing_epidemic_disease_trigger = {
 		has_character_flag = got_bubonic_plague
 		has_character_flag = got_measles
 		has_character_flag = got_small_pox
-		has_character_flag = got_aztec_disease
+		has_character_flag = got_animist_disease
 	}
 }
 
@@ -1786,7 +1786,7 @@ death_execution_trigger = {
 		death_reason = death_execution_wheel
 		death_reason = death_execution_boar
 		death_reason = death_execution_eaten
-		death_reason = death_execution_aztec_sacrifice
+		death_reason = death_execution_animist_sacrifice
 		death_reason = death_executed_by_chinese_emperor
 		death_reason = death_execution_brazen_bull
 		death_reason = death_execution_macabre_banquet
@@ -1798,7 +1798,7 @@ death_sacrificed_trigger = {
 		death_reason = death_sacrificed
 		death_reason = death_sacrificed_norse
 		death_reason = death_sacrificed_ancestors
-		death_reason = death_execution_aztec_sacrifice
+		death_reason = death_execution_animist_sacrifice
 	}	
 }
 
@@ -3038,35 +3038,28 @@ looting_artifact_event_religious_artifacts_trigger = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
 				has_artifact_flag = taoist
-				ROOT = { religion = taoist }
+				ROOT = { religion_group = eastern }
 			}
 		}
 		NAND = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
 				has_artifact_flag = hindu
-				ROOT = { religion = hindu }
+				ROOT = { religion_group = indian_group }
 			}
 		}
 		NAND = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
 				has_artifact_flag = buddhist
-				ROOT = { religion = buddhist }
+				ROOT = { religion_group = buddhist_group }
 			}
 		}
 		NAND = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
-				has_artifact_flag = jain
-				ROOT = { religion = jain }
-			}
-		}
-		NAND = {
-			any_artifact = {
-				has_artifact_flag = looted_artifact_tooltip_1
-				has_artifact_flag = norse_pagan
-				ROOT = { OR = { religion = norse_pagan religion = norse_pagan_reformed } }
+				has_artifact_flag = americanist
+				ROOT = { OR = { religion = americanist religion = americanist_reformed } }
 			}
 		}
 		NAND = {
@@ -3093,15 +3086,15 @@ looting_artifact_event_religious_artifacts_trigger = {
 		NAND = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
-				has_artifact_flag = tengri_pagan
-				ROOT = { OR = { religion = tengri_pagan religion = tengri_pagan_reformed } }
+				has_artifact_flag = khanist
+				ROOT = { OR = { religion = khanist religion = khanist_reformed } }
 			}
 		}
 		NAND = {
 			any_artifact = {
 				has_artifact_flag = looted_artifact_tooltip_1
-				has_artifact_flag = aztec
-				ROOT = { OR = { religion = aztec religion = aztec_reformed } }
+				has_artifact_flag = animist
+				ROOT = { OR = { religion = animist religion = animist_reformed } }
 			}
 		}
 		NAND = {
@@ -3193,9 +3186,7 @@ have_duplicate_goldsmith_artifacts_flag_okay_trigger = {
 		}
 		AND = {
 	        OR = {
-	        	religion_group = muslim 
-	        	religion = west_african_pagan
-	        	religion = west_african_pagan_reformed
+	        	religion_group = muslim
 	        }
 	        AND = {
 		        has_artifact = engraved_dagger
@@ -3205,8 +3196,7 @@ have_duplicate_goldsmith_artifacts_flag_okay_trigger = {
         AND = {
 	        OR = {
 	        	religion_group = indian_group
-	        	religion = bon
-	        	religion = bon_reformed
+				religion_group = eastern
 	        }
         	AND = {
         		has_artifact = engraved_dagger
@@ -3216,8 +3206,6 @@ have_duplicate_goldsmith_artifacts_flag_okay_trigger = {
         AND = {
 	        OR = {
 	        	religion_group = zoroastrian_group
-	        	religion = zun_pagan
-	        	religion = zun_pagan_reformed
 			}
 			AND = {
 			    has_artifact = circlet_of_twilight
@@ -3226,8 +3214,8 @@ have_duplicate_goldsmith_artifacts_flag_okay_trigger = {
         }
        	AND = {
 	        OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
+	        	religion = americanist
+	        	religion = americanist_reformed
 	        }
 		    AND = {
 		        has_artifact = iron_crown
@@ -3258,8 +3246,6 @@ have_duplicate_goldsmith_artifacts_flag_good_trigger = {
 		AND = {
 	        OR = {
 	        	religion_group = muslim 
-	        	religion = west_african_pagan
-	        	religion = west_african_pagan_reformed
 	        }
 	        AND = {
 		        has_artifact = bejeweled_dagger
@@ -3269,8 +3255,7 @@ have_duplicate_goldsmith_artifacts_flag_good_trigger = {
         AND = {
 	        OR = {
 	        	religion_group = indian_group
-	        	religion = bon
-	        	religion = bon_reformed
+	        	religion_group = eastern
 	        }
         	AND = {
         		has_artifact = bejeweled_dagger
@@ -3280,8 +3265,6 @@ have_duplicate_goldsmith_artifacts_flag_good_trigger = {
         AND = {
 	        OR = {
 	        	religion_group = zoroastrian_group
-	        	religion = zun_pagan
-	        	religion = zun_pagan_reformed
 			}
 			AND = {
 			    has_artifact = circlet_of_the_heavens
@@ -3290,8 +3273,8 @@ have_duplicate_goldsmith_artifacts_flag_good_trigger = {
         }
        	AND = {
 	        OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
+	        	religion = americanist
+	        	religion = americanist_reformed
 	        }
 		    AND = {
 		        has_artifact = crown_of_the_sea
@@ -3354,8 +3337,8 @@ have_duplicate_goldsmith_artifacts_flag_expensive_trigger = {
         }
        	AND = {
 	        OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
+	        	religion = americanist
+	        	religion = americanist_reformed
 	        }
 		    AND = {
 		        has_artifact = crown_of_crows
@@ -3418,8 +3401,8 @@ have_duplicate_goldsmith_artifacts_flag_amazing_trigger = {
         }
        	AND = {
 	        OR = {
-	        	religion = norse_pagan
-	        	religion = norse_pagan_reformed
+	        	religion = americanist
+	        	religion = americanist_reformed
 	        }
 		    AND = {
 		        has_artifact = crown_of_crows_2
@@ -5223,7 +5206,7 @@ has_unsafe_religion = {
 		}
 		AND = {
 			NOT = { has_dlc = "Jade Dragon" }
-			religion = taoist
+			religion_group = eastern
 		}
 	}
 }
@@ -5270,7 +5253,7 @@ proselytize_convert_independent_trigger = {
 		NOT = { religion = FROM }
 		religion_group = pagan_group
 		OR = {
-			NOT = { religion = aztec }
+			NOT = { religion = animist }
 			year = 1350
 		}
 		is_reformed_religion = no
@@ -5889,7 +5872,7 @@ martyrs_death_trigger = {
 		death_reason = death_sacrificed
   		death_reason = death_sacrificed_norse
   		death_reason = death_sacrificed_ancestors
-  		death_reason = death_execution_aztec_sacrifice
+  		death_reason = death_execution_animist_sacrifice
   		
 	}
 }
@@ -6318,23 +6301,23 @@ this_is_warrior_culture_trigger = { #Not really about culture - Used in AI votin
 	NOT = { pacifist = yes }
 	OR = { 
 		religion_group = muslim
-		religion = norse_pagan
-		religion = tengri_pagan
-		religion = aztec
+		religion = americanist
+		religion = khanist
+		religion = animist
 		has_religion_feature = religion_warlike
 		is_tribal = yes
 		is_nomadic = yes
 		AND = { 
 			NOT = { has_dlc = "Holy Fury"}
-			religion = norse_pagan_reformed
+			religion = americanist_reformed
 		}
 		AND = { 
 			NOT = { has_dlc = "Holy Fury"}
-			religion = tengri_pagan_reformed
+			religion = khanist_reformed
 		}
 		AND = { 
 			NOT = { has_dlc = "Holy Fury"}
-			religion = aztec_reformed
+			religion = animist_reformed
 		}
 	}
 }
@@ -7421,7 +7404,7 @@ dlc_religion_check_trigger = {
 			has_dlc = "Rajas of India"
 		}
 		AND = {
-			religion = taoist
+			religion_group = eastern
 			has_dlc = "Jade Dragon"
 		}
 	}
