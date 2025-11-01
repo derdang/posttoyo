@@ -3,7 +3,6 @@ yuilsasang_holy_war = { #Adapted from Buddhist holy war
 	war_name = WAR_NAME_RELIGIOUS
 	sprite = 9
 	truce_days = 3650
-	diplo_view_region = custom_korea
 	is_permanent = yes
 	is_holy_war = yes
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
@@ -223,12 +222,6 @@ yuilsasang_holy_war = { #Adapted from Buddhist holy war
 			hidden_tooltip = { 
 				participation_scaled_piety = 100
 				participation_scaled_prestige = 50
-				if = {
-					limit = {
-						uses_decadence = yes
-					}
-					participation_scaled_decadence = -10
-				}
 				hidden_tooltip = {
 					if = {
 						limit = {
@@ -243,12 +236,6 @@ yuilsasang_holy_war = { #Adapted from Buddhist holy war
 		ROOT = { 
 			participation_scaled_piety = 100
 			participation_scaled_prestige = 50
-			if = {
-				limit = {
-					uses_decadence = yes
-				}
-				participation_scaled_decadence = -10
-			}
 			religion_authority = {
 				modifier = won_holy_war
 				years = 20
@@ -315,24 +302,12 @@ yuilsasang_holy_war = { #Adapted from Buddhist holy war
 		FROM = {
 			participation_scaled_piety = 200
 			participation_scaled_prestige = 100
-			if = {
-				limit = {
-					uses_decadence = yes
-				}
-				participation_scaled_decadence = -10
-			}
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { 
 				participation_scaled_piety = 200
 				participation_scaled_prestige = 100
-				if = {
-					limit = {
-						uses_decadence = yes
-					}
-					participation_scaled_decadence = -10
-				}
 				hidden_tooltip = {
 					if = {
 						limit = {
@@ -341,22 +316,6 @@ yuilsasang_holy_war = { #Adapted from Buddhist holy war
 						change_variable = { which = strengthen_religion value = 1 }
 					}
 				}
-			}
-		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-				uses_decadence = yes
-			}
-			participation_scaled_decadence = 20
-		}
-		any_attacker = {
-			limit = {
-				NOT = { character = ROOT }
-				uses_decadence = yes
-			}
-			hidden_tooltip = { 
-				participation_scaled_decadence = 20
 			}
 		}
 		ROOT = { 
@@ -445,10 +404,9 @@ yuilsasang_holy_war = { #Adapted from Buddhist holy war
 	}
 }
 cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-China Conflicts)
-	name = CB_NAME_RELIGIOUS
-	war_name = WAR_NAME_RELIGIOUS
-	sprite = 9
-	diplo_view_region = world_old_china
+	name = CB_NAME_CONSOLIDATION
+	war_name = WAR_NAME_CONSOLIDATION
+	sprite = 30
 	truce_days = 3650
 	is_permanent = yes
 	is_holy_war = yes
@@ -681,12 +639,6 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 			hidden_tooltip = { 
 				participation_scaled_piety = 100
 				participation_scaled_prestige = 50
-				if = {
-					limit = {
-						uses_decadence = yes
-					}
-					participation_scaled_decadence = -10
-				}
 				hidden_tooltip = {
 					if = {
 						limit = {
@@ -701,12 +653,6 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 		ROOT = { 
 			participation_scaled_piety = 100
 			participation_scaled_prestige = 50
-			if = {
-				limit = {
-					uses_decadence = yes
-				}
-				participation_scaled_decadence = -10
-			}
 			religion_authority = {
 				modifier = won_holy_war
 				years = 20
@@ -773,24 +719,12 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 		FROM = {
 			participation_scaled_piety = 200
 			participation_scaled_prestige = 100
-			if = {
-				limit = {
-					uses_decadence = yes
-				}
-				participation_scaled_decadence = -10
-			}
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { 
 				participation_scaled_piety = 200
 				participation_scaled_prestige = 100
-				if = {
-					limit = {
-						uses_decadence = yes
-					}
-					participation_scaled_decadence = -10
-				}
 				hidden_tooltip = {
 					if = {
 						limit = {
@@ -799,22 +733,6 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 						change_variable = { which = strengthen_religion value = 1 }
 					}
 				}
-			}
-		}
-		any_attacker = {
-			limit = {
-				character = ROOT
-				uses_decadence = yes
-			}
-			participation_scaled_decadence = 20
-		}
-		any_attacker = {
-			limit = {
-				NOT = { character = ROOT }
-				uses_decadence = yes
-			}
-			hidden_tooltip = { 
-				participation_scaled_decadence = 20
 			}
 		}
 		ROOT = { 
@@ -1913,17 +1831,6 @@ tributary_mandala_cb = { #
 			show_scope_change = no
 			prestige = 200
 			make_tributary = { who = FROM tributary_type = mandala_tributary }
-		}
-		
-		if  = {
-			limit = {
-				ROOT = {
-					uses_decadence = yes
-				}
-			}
-			ROOT = {
-				decadence = -10
-			}
 		}
 		
 	}
