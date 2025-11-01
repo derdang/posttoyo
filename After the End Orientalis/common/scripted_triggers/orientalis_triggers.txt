@@ -24,6 +24,30 @@ religion_openly_nousthreskeia_trigger = {
 		}
 	}
 }
+has_coronation_trigger = {
+	OR = {
+		religion = catholic
+		religion = cao_dai
+	}
+}
+should_have_coronation = {
+	has_dlc = "Holy Fury"
+	higher_tier_than = DUKE
+	age = 16
+	is_feudal = yes
+	is_landed = yes
+	is_vice_royalty = no
+	has_coronation_trigger = yes
+	NOR = {
+		trait = crowned_by_pope
+		trait = crowned_by_bishop
+		trait = crowned_by_priest
+		trait = crowned_by_myself
+		trait = crowned_by_priest_rd
+		trait = crowned_by_bishop_rd
+		trait = crowned_by_pope_rd
+	}
+}
 confederation_title_trigger = {
 	OR = {
 		title = e_shanghai_confederation
