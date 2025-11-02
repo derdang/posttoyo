@@ -4505,7 +4505,7 @@
 }
 1603003={ #Nishi Aomori
 	name="Sueji"
-	dynasty=1603002 #Goto
+	dynasty=1603002 #Sawaguchi
 	culture=togoku
 	religion=seirei
 	martial=5
@@ -4519,6 +4519,12 @@
 	trait=slothful
 	trait=patient
 	2585.1.1={birth=yes}
+	2600.1.1={
+		create_bloodline = { 
+			type = sawaguchi_bloodline 
+			has_dlc = "Holy Fury" 
+		} 
+	}
 }
 1603004={ #Higashi Aomori
 	name="Tsuyoshi"
