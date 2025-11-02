@@ -416,11 +416,7 @@ bureaucratic_county_conquest = { #Adapted from Unjust County Conquest (Used in t
 
 	can_use_gui = {
 		check_if_crusader_trigger = yes
-		NOR = {
-			culture_group = viet
-			culture_group = korean
-			culture = manchu
-		}
+		culture_group = han
 
 		# Attacker
 		ROOT = {
@@ -574,11 +570,7 @@ bureaucratic_county_conquest = { #Adapted from Unjust County Conquest (Used in t
 	can_use = {
 		has_dlc = "Jade Dragon"
 		government = sinic_bureaucracy_government
-		NOR = {
-			culture_group = viet
-			culture_group = korean
-			culture = manchu
-		}
+		culture_group = han
 		# Attacker
 		ROOT = {
 			pacifist = no
