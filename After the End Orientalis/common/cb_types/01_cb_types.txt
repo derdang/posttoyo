@@ -1935,7 +1935,7 @@ unjust_conquest = { # New7
 
 	can_use_gui = {
 		check_if_crusader_trigger = yes
-
+		
 		# Attacker
 		ROOT = {
 			show_scope_change = no
@@ -2090,6 +2090,7 @@ unjust_conquest = { # New7
 			pacifist = no
 			is_nomadic = no # Use 'pagan_county_conquest' instead
 			mercenary = no
+			NOT = {government = sinic_bureaucracy_government}
 
 			NOR = {
 				is_vassal_or_below_of = FROM

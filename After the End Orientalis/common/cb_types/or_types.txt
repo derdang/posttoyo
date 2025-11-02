@@ -403,11 +403,625 @@ yuilsasang_holy_war = { #Adapted from Buddhist holy war
 		}
 	}
 }
-cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-China Conflicts)
-	name = CB_NAME_CONSOLIDATION
-	war_name = WAR_NAME_CONSOLIDATION
+bureaucratic_county_conquest = { #Adapted from Unjust County Conquest (Used in this Mod for Inter-China Conflicts)
+	name = CB_NAME_UNJUST_COUNTY_CONQUEST
+	war_name = WAR_NAME_UNJUST_COUNTY_CONQUEST
+	sprite = 30
+	truce_days = 730
+	hostile_against_others = yes
+	is_permanent = yes
+	check_all_titles = yes # if permanent, setting this to true will check against all of someones titles, including vassal held titles
+	can_ask_to_join_war = no
+	allowed_to_target_tributaries = no
+
+	can_use_gui = {
+		check_if_crusader_trigger = yes
+		NOR = {
+			culture_group = viet
+			culture_group = korean
+			culture = manchu
+		}
+
+		# Attacker
+		ROOT = {
+			show_scope_change = no
+			any_realm_title = {
+				location = {
+					region = custom_china_core
+				}
+			}
+			trigger_if = { # Pagans have a much easier time using this CB in general
+				limit = { culture_group = han }
+				prestige >= 100
+			}
+			trigger_else_if = {
+				limit = { real_tier = COUNT }
+
+				trigger_if = {
+					limit = { culture = FROM }
+
+					prestige >= 100
+
+					scaled_wealth = {
+						value = 3.0
+						min = 50
+					}
+				}
+				trigger_else_if = {
+					limit = { culture_group = FROM }
+
+					prestige >= 50
+
+					scaled_wealth = {
+						value = 2.0
+						min = 50
+					}
+				}
+				trigger_else = {
+					prestige >= 25
+
+					scaled_wealth = {
+						value = 1.0
+						min = 50
+					}
+				}
+			}
+			trigger_else_if = {
+				limit = { real_tier = DUKE }
+
+				trigger_if = {
+					limit = { culture = FROM }
+
+					prestige >= 200
+
+					scaled_wealth = {
+						value = 3.0
+						min = 100
+					}
+				}
+				trigger_else_if = {
+					limit = { culture_group = FROM }
+
+					prestige >= 100
+
+					scaled_wealth = {
+						value = 2.0
+						min = 100
+					}
+				}
+				trigger_else = {
+					prestige >= 50
+
+					scaled_wealth = {
+						value = 1.0
+						min = 100
+					}
+				}
+			}
+			trigger_else_if = {
+				limit = { real_tier = KING }
+
+				trigger_if = {
+					limit = { culture = FROM }
+
+					prestige >= 300
+
+					scaled_wealth = {
+						value = 3.0
+						min = 200
+					}
+				}
+				trigger_else_if = {
+					limit = { culture_group = FROM }
+
+					prestige >= 200
+
+					scaled_wealth = {
+						value = 2.0
+						min = 200
+					}
+				}
+				trigger_else = {
+					prestige >= 100
+
+					scaled_wealth = {
+						value = 1.0
+						min = 200
+					}
+				}
+			}
+			trigger_else_if = {
+				limit = { real_tier = EMPEROR }
+
+				trigger_if = {
+					limit = { culture = FROM }
+
+					prestige >= 600
+
+					scaled_wealth = {
+						value = 3.0
+						min = 400
+					}
+				}
+				trigger_else_if = {
+					limit = { culture_group = FROM }
+
+					prestige >= 400
+
+					scaled_wealth = {
+						value = 2.0
+						min = 400
+					}
+				}
+				trigger_else = {
+					prestige >= 200
+
+					scaled_wealth = {
+						value = 1.0
+						min = 400
+					}
+				}
+			}
+		}
+		#Defender
+		FROM = {
+			any_realm_title = {
+				region = custom_china_core
+			}
+		}
+	}
+
+	can_use = {
+		has_dlc = "Jade Dragon"
+		government = sinic_bureaucracy_government
+		NOR = {
+			culture_group = viet
+			culture_group = korean
+			culture = manchu
+		}
+		# Attacker
+		ROOT = {
+			pacifist = no
+			is_nomadic = no # Use 'pagan_county_conquest' instead
+			mercenary = no
+			NOR = {
+				is_vassal_or_below_of = FROM
+				religion_group = muslim	# Use 'muslim_county_conquest' instead
+				religion_group = pagan_group # Use 'pagan_county_conquest' instead
+			}
+		}
+
+		# If below is false, use shattered CBs instead
+		trigger_if = {
+			limit = { is_shattered_world = yes }
+
+			trigger_if = {
+				limit = {
+					has_alternate_start_setting = {
+						setting = shattered_cbs
+						option = on_limited
+					}
+				}
+				total_years_played >= 25
+			}
+			trigger_else_if = {
+				limit = {
+					has_alternate_start_setting = {
+						setting = shattered_cbs
+						option = on_long
+					}
+				}
+				total_years_played >= 100
+			}
+			trigger_else = {
+				has_alternate_start_setting = {
+					setting = shattered_cbs
+					option = off
+				}
+			}
+		}
+	}
+
+	can_use_title = {
+		real_tier = COUNT
+
+		holder_scope = {
+			OR = {
+				character = FROM
+
+				AND = {
+					is_vassal_or_below_of = FROM
+					NOT = { same_realm = ROOT }
+				}
+			}
+		}
+
+		location = {
+			any_neighbor_province = {
+				owner = {
+					OR = {
+						character = ROOT
+						is_vassal_or_below_of = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	is_valid_title = {
+		holder_scope = {
+			OR = {
+				character = FROM
+				is_vassal_or_below_of = FROM
+			}
+		}
+	}
+
+	on_add = {
+		attacker = {
+			show_scope_change = no
+
+			if = { # Pagans have a much easier time using this CB in general
+				limit = { culture_group = han }
+				prestige = -50
+			}
+			else = {
+				trigger_switch = {
+					on_trigger = real_tier
+
+					COUNT = {
+						if = {
+							limit = { culture = defender }
+							prestige = -100
+							scaled_wealth = { value = -3.0 min = -100 }
+						}
+						else_if = {
+							limit = { culture_group = defender }
+							prestige = -50
+							scaled_wealth = { value = -2.0 min = -100 }
+						}
+						else = {
+							prestige = -25
+							scaled_wealth = { value = -1.0 min = -100 }
+						}
+					}
+
+					DUKE = {
+						if = {
+							limit = { culture = defender }
+							prestige = -200
+							scaled_wealth = { value = -3.0 min = -100 }
+						}
+						else_if = {
+							limit = { culture_group = defender }
+							prestige = -100
+							scaled_wealth = { value = -2.0 min = -100 }
+						}
+						else = {
+							prestige = -50
+							scaled_wealth = { value = -1.0 min = -100 }
+						}
+					}
+
+					KING = {
+						if = {
+							limit = { culture = defender }
+							prestige = -300
+							scaled_wealth = { value = -3.0 min = -100 }
+						}
+						else_if = {
+							limit = { culture_group = defender }
+							prestige = -200
+							scaled_wealth = { value = -2.0 min = -100 }
+						}
+						else = {
+							prestige = -100
+							scaled_wealth = { value = -1.0 min = -100 }
+						}
+					}
+
+					EMPEROR = {
+						if = {
+							limit = { culture = defender }
+							prestige = -600
+							scaled_wealth = { value = -3.0 min = -100 }
+						}
+						else_if = {
+							limit = { culture_group = defender }
+							prestige = -400
+							scaled_wealth = { value = -2.0 min = -100 }
+						}
+						else = {
+							prestige = -200
+							scaled_wealth = { value = -1.0 min = -100 }
+						}
+					}
+				}
+			}
+
+			if = { # Opinion hit for same culture
+				limit = { culture = defender }
+
+				custom_tooltip = {
+					text = custom_opinion_hit_tooltip
+
+					any_realm_lord = {
+						limit = {
+							culture_group = attacker
+							controls_religion = no
+						}
+
+						opinion = {
+							name = opinion_declared_unjust_conquest
+							who = attacker
+							years = 10
+						}
+					}
+
+					defender = {
+						any_realm_lord = {
+							limit = {
+								culture_group = attacker
+								controls_religion = no
+							}
+
+							opinion = {
+								name = opinion_declared_unjust_conquest
+								who = attacker
+								years = 10
+							}
+						}
+					}
+				}
+			}
+
+			else_if = { # Opinion hit for same group
+				limit = { culture_group = defender }
+
+				custom_tooltip = {
+					text = custom_opinion_hit_tooltip
+
+					any_realm_lord = {
+						limit = { culture_group = attacker }
+
+						opinion = {
+							name = opinion_declared_unjust_conquest
+							who = attacker
+							years = 10
+						}
+					}
+
+					defender = {
+						any_realm_lord = {
+							limit = { culture_group = attacker }
+
+							opinion = {
+								name = opinion_declared_unjust_conquest
+								who = attacker
+								years = 10
+							}
+						}
+					}
+				}
+			}
+
+			else = {
+				custom_tooltip = {
+					text = custom_opinion_hit_tooltip_enemy
+
+					any_realm_lord = {
+						limit = { culture = defender }
+
+						opinion = {
+							name = opinion_declared_unjust_conquest
+							who = attacker
+							years = 10
+						}
+					}
+
+					defender = {
+						any_realm_lord = {
+							limit = { culture = attacker }
+
+							opinion = {
+								name = opinion_declared_unjust_conquest
+								who = attacker
+								years = 10
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_success_title = {
+		if = { # Vassalise single county counts
+			limit = {
+				holder_scope = {
+					real_tier = COUNT
+					num_of_count_titles == 1
+					lower_real_tier_than = attacker
+					is_patrician = no
+				}
+			}
+
+			holder_scope = {
+				show_scope_change = no
+
+				set_defacto_liege = attacker
+			}
+		}
+
+		else = { # Usurp target title otherwise
+			usurp_title_plus_barony_if_unlanded = {
+				target = attacker
+				type = invasion
+			}
+
+			any_de_jure_vassal_title = { # take all baronies under the one we're fighting for
+				limit = {
+					has_holder = yes
+					NOT = { de_facto_liege = PREV }
+
+					holder_scope = {
+						OR = {
+							character = defender
+							is_vassal_or_below_of = defender
+						}
+					}
+				}
+
+				usurp_title_plus_barony_if_unlanded = {
+					target = attacker
+					type = invasion
+				}
+			}
+		}
+
+		add_pressed_claim = FROM
+
+		attacker = {
+			show_scope_change = no
+
+			participation_scaled_prestige = 100
+		}
+
+		any_attacker = {
+			limit = { NOT = { character = attacker } }
+			hidden_effect = { participation_scaled_prestige = 100 }
+		}
+
+		hidden_effect = {
+			check_war_effect = yes
+
+			defender = {
+				landless_pope_effect = yes
+			}
+		}
+	}
+
+	on_fail_title = {
+		attacker = {
+			show_scope_change = no
+
+			prestige = -100
+		}
+
+		defender = {
+			show_scope_change = no
+
+			participation_scaled_prestige = 50
+		}
+
+		any_defender = {
+			limit = { NOT = { character = defender } }
+			hidden_effect = { participation_scaled_prestige = 50 }
+		}
+	}
+
+	on_reverse_demand = {
+		attacker = {
+			show_scope_change = no
+
+			prestige = -200
+
+			transfer_scaled_wealth = {
+				to = defender
+				value = 4.0
+			}
+		}
+
+		defender = {
+			show_scope_change = no
+
+			participation_scaled_prestige = 100
+		}
+
+		any_defender = {
+			limit = { NOT = { character = defender } }
+			hidden_effect = { participation_scaled_prestige = 100 }
+		}
+	}
+
+	attacker_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+
+	defender_ai_defeat_worth = {
+		factor = 100
+	}
+
+	ai_will_do = { 
+		factor = 1
+		
+		modifier = {
+			factor = 0.7 # Prefer using CB's without on_add costs
+		}
+		modifier = { #Focus on Coronation first.
+			factor = 0.1
+			ROOT = { should_have_coronation = yes }
+		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				independent = no
+				same_liege = FROM
+			}
+		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				higher_tier_than = DUKE
+				num_of_count_titles_in_realm = 10
+			}
+		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				OR = {
+					trait = just
+					trait = content
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				NOR = {
+					trait = arbitrary
+					trait = ambitious
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			ROOT = {
+				has_character_flag = is_temujin
+				has_landed_title = e_mongol_empire
+				demesne_size = 1
+			}
+			FROM = {
+				has_landed_title = e_china_west_governor
+			}
+		}
+	}
+}
+
+bureaucratic_ducal_conquest = { #Adapted from Dharmic Wars in India (Used in this Mod for Inter-China Conflicts)
+	name = CB_NAME_REGIONAL_WAR
+	war_name = WAR_NAME_REGIONAL_WAR
 	sprite = 30
 	truce_days = 3650
+	hostile_against_others = yes
 	is_permanent = yes
 	is_holy_war = yes
 	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
@@ -417,11 +1031,25 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 	sort_priority = 800
 	
 	can_use_gui = {
+		NOR = {
+			culture_group = viet
+			culture_group = korean
+			culture = manchu
+		}
+		
+		#Attacker
 		ROOT = {
-			AND = {
-				is_bureaucratic_religion = yes
-				NOT = {culture_group=korean}
-				NOT = {culture_group=viet}
+			custom_tooltip = {
+				text = bureaucratic_chinese_valid_tt
+				hidden_tooltip = {
+					OR = {
+						is_bureaucratic_religion = yes
+						religion = hui
+					}
+				}
+			}
+			any_realm_title = {
+				region = custom_china_core
 			}
 			OR = {
 				NOT = { has_character_modifier = holy_war_cooldown }
@@ -432,15 +1060,33 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 			ROOT = {
 				has_law = bureaucratic_war_declaration_1
 			}
+			e_china = {
+				has_holder = yes
+			}
+		}
+		#Defender
+		FROM = {
+			any_realm_title = {
+				region = custom_china_core
+			}
 		}
 	}
 	
 	can_use = {
 		ROOT = {
-			AND = {
-				is_bureaucratic_religion = yes
-				NOT = {culture_group=korean}
-				NOT = {culture_group=viet}
+			custom_tooltip = {
+				text = bureaucratic_chinese_valid_tt
+				hidden_tooltip = {
+					OR = {
+						is_bureaucratic_religion = yes
+						religion = hui
+					}
+					NOR = {
+						culture_group = viet
+						culture_group = korean
+						culture = manchu
+					}
+				}
 			}
 			is_nomadic = no
 			NOT = { same_realm = FROM }
@@ -552,6 +1198,15 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 
 	is_valid = {
 		ROOT = {
+			custom_tooltip = {
+				text = bureaucratic_chinese_valid_tt
+				hidden_tooltip = {
+					OR = {
+						is_bureaucratic_religion = yes
+						religion = hui
+					}
+				}
+			}
 			NOT = { same_realm = FROM }
 			OR = {
 				NOT = { religion = FROM }
@@ -639,6 +1294,12 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 			hidden_tooltip = { 
 				participation_scaled_piety = 100
 				participation_scaled_prestige = 50
+				if = {
+					limit = {
+						uses_decadence = yes
+					}
+					participation_scaled_decadence = -10
+				}
 				hidden_tooltip = {
 					if = {
 						limit = {
@@ -653,6 +1314,12 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 		ROOT = { 
 			participation_scaled_piety = 100
 			participation_scaled_prestige = 50
+			if = {
+				limit = {
+					uses_decadence = yes
+				}
+				participation_scaled_decadence = -10
+			}
 			religion_authority = {
 				modifier = won_holy_war
 				years = 20
@@ -719,12 +1386,24 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 		FROM = {
 			participation_scaled_piety = 200
 			participation_scaled_prestige = 100
+			if = {
+				limit = {
+					uses_decadence = yes
+				}
+				participation_scaled_decadence = -10
+			}
 		}
 		any_defender = {
 			limit = { NOT = { character = FROM } }
 			hidden_tooltip = { 
 				participation_scaled_piety = 200
 				participation_scaled_prestige = 100
+				if = {
+					limit = {
+						uses_decadence = yes
+					}
+					participation_scaled_decadence = -10
+				}
 				hidden_tooltip = {
 					if = {
 						limit = {
@@ -733,6 +1412,22 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 						change_variable = { which = strengthen_religion value = 1 }
 					}
 				}
+			}
+		}
+		any_attacker = {
+			limit = {
+				character = ROOT
+				uses_decadence = yes
+			}
+			participation_scaled_decadence = 20
+		}
+		any_attacker = {
+			limit = {
+				NOT = { character = ROOT }
+				uses_decadence = yes
+			}
+			hidden_tooltip = { 
+				participation_scaled_decadence = 20
 			}
 		}
 		ROOT = { 
@@ -817,6 +1512,298 @@ cetic_holy_war = { #Adapted from Buddhist holy war (Used in this Mod for Inter-C
 					}
 				}
 			}
+		}
+	}
+}
+
+bureaucratic_consolidation = { #Adapted from Great Realm Conquest (Used in this Mod for Inter-China Conflicts)
+	name = CB_NAME_CONSOLIDATION
+	war_name = WAR_NAME_CONSOLIDATION
+	sprite = 30
+	truce_days = 3650
+	hostile_against_others = yes
+	is_permanent = yes
+	check_de_jure_tier = KING
+	can_ask_to_join_war = no
+
+	allowed_to_target_tributaries = no
+	
+	sort_priority = 810
+
+	can_use_gui = {
+		check_if_crusader_trigger = yes
+		NOR = {
+			culture_group = viet
+			culture_group = korean
+			culture = manchu
+		}
+		
+		ROOT = {
+			prestige = 3000
+			piety = 1500
+			any_realm_title = {
+				location = {
+					region = custom_china_core
+				}
+			}
+		}
+		FROM = {
+			relative_power = {
+				who = ROOT
+				power = 0.95
+			}
+			any_realm_title = {
+				location = {
+					region = custom_china_core
+				}
+			}
+		}
+		NAND = {
+			ROOT = {
+				has_law = bureaucratic_war_declaration_1
+			}
+			OR = {
+				e_china = {
+					has_holder = yes
+				}
+			}
+		}
+	}
+	
+	can_use = {
+		has_dlc = "Jade Dragon"
+		
+		NOR = {
+			culture_group = viet
+			culture_group = korean
+			culture = manchu
+		}
+
+		NOT = {
+			has_game_rule = {
+				name = jade_dragon_cbs
+				value = off
+			}
+		}
+
+		# Attacker
+		ROOT = {
+			independent = yes
+			higher_real_tier_than = DUKE
+			is_nomadic = no
+		}
+
+		# Defender
+		FROM = {
+			higher_real_tier_than = DUKE
+			is_nomadic = no
+			in_revolt = no
+		}
+	}
+
+	can_use_title = {
+		is_titular = no
+
+		# The attacker needs at least one county in the target kingdom, a border or be at the most two sea zones away
+		any_direct_de_jure_vassal_title = { # duchies
+			any_direct_de_jure_vassal_title = { # counties
+				trigger_if = {
+					limit = {
+						holder_scope = {
+							NOR = { # part of attacker's realm
+								character = ROOT
+								is_vassal_or_below_of = ROOT
+							}
+						}
+					}
+				}
+
+				holder_scope = {
+					OR = { # Actually part of Defender's realm, not a random title in the same de jure duchy
+						character = FROM
+						is_vassal_or_below_of = FROM
+					}
+				}
+
+				location = {
+					any_neighbor_province = { # bordering province
+						trigger_if = {
+							limit = { has_owner = yes }
+
+							owner = { # part of attacker's realm
+								OR = {
+									character = ROOT
+									is_vassal_or_below_of = ROOT
+								}
+							}
+						}
+						trigger_else = {
+							is_land = no # first sea zone
+
+							any_neighbor_province = {
+								trigger_if = {
+									limit = { has_owner = yes }
+
+									owner = { # part of attacker's realm
+										OR = {
+											character = ROOT
+											is_vassal_or_below_of = ROOT
+										}
+									}
+								}
+								trigger_else = {
+									is_land = no # second sea zone
+
+									any_neighbor_province = {
+										owner = { # part of attacker's realm
+											OR = {
+												character = ROOT
+												is_vassal_or_below_of = ROOT
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_valid_title = {
+		# Defender
+		FROM = {
+			num_of_realm_counties = {
+				value >= 1
+				title = PREV
+			}
+		}
+	}
+
+	on_add = {
+		attacker = {
+			prestige = -3000
+			piety = -1500
+		}
+
+		fire_haruspicy_event_effect = yes
+		anger_china_effect = yes
+	}
+
+	on_invalidation = {
+		attacker = {
+			prestige = 3000
+			piety = 1500
+		}
+	}
+
+	on_success_title = {
+		if = { # Claim the targeted Kingdom if it is held by the target
+			limit = {
+				controls_religion = no
+
+				holder_scope = {
+					OR = {
+						character = defender
+						is_vassal_or_below_of = defender
+					}
+				}
+			}
+
+			usurp_title = {
+				target = attacker
+				type = invasion
+			}
+		}
+
+		attacker = {
+			show_scope_change = no
+
+			vassalize_or_take_under_title = {
+				title = PREV
+				enemy = defender
+				type = invasion
+			}
+		}
+
+		any_attacker = {
+			limit = { NOT = { character = attacker } }
+			hidden_effect = { participation_scaled_prestige = 100 }
+		}
+
+		hidden_effect = {
+			check_if_reconquista_finished_effect = yes
+
+			defender = {
+				landless_pope_effect = yes
+			}
+		}
+	}
+
+	on_fail = {
+		attacker = {
+			show_scope_change = no
+			prestige = -1500
+			piety = -750
+		}
+
+		defender = {
+			show_scope_change = no
+			participation_scaled_prestige = 50
+		}
+
+		any_defender = {
+			limit = { NOT = { character = defender } }
+			hidden_effect = { participation_scaled_prestige = 50 }
+		}
+	}
+
+	on_reverse_demand = {
+		attacker = {
+			show_scope_change = no
+
+			prestige = -3000
+			piety = -1500
+
+			transfer_scaled_wealth = {
+				to = defender
+				value = 10.0
+			}
+		}
+
+		defender = {
+			show_scope_change = no
+			participation_scaled_prestige = 3000
+		}
+
+		any_defender = {
+			limit = { NOT = { character = defender } }
+			hidden_effect = { participation_scaled_prestige = 1500 }
+		}
+	}
+
+	attacker_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+
+	defender_ai_defeat_worth = {
+		factor = 100
+	}
+
+	ai_will_do = { 
+		factor = 1
+		modifier = { #Focus on Coronation first.
+			factor = 0.1
+			ROOT = { should_have_coronation = yes }
 		}
 	}
 }

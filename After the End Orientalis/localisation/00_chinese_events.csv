@@ -114,8 +114,13 @@ TXT_newline; \n;;;;;;;;;;;;;x
 EVTDESC_beijing;You currently control the province of Beijing, which contains the Imperial Palace. You are not the Emperor, so attempting to maintain control of the Imperial Seat would bring you censure from the Imperial Court. A faithful, sensible Chinese would return the palace to the Emperor.;;;;;;;;;;;;;x
 EVTOPT_cetic_sacramento_accept;Yes, the Emperor shall have his palace.;;;;;;;;;;;;;x
 EVTOPT_cetic_sacramento_deny;No! This land is my land!;;;;;;;;;;;;;x
-CB_NAME_CONSOLIDATION;Bureaucratic Consolidation;;;;;;;;;;;;;x
+CB_NAME_REGIONAL_WAR;Provincial War for [Title.GetBaseName];;;;;;;;;;;;;x
+WAR_NAME_REGIONAL_WAR;Provincial War for [Title.GetBaseName];;;;;;;;;;;;;x
+CB_NAME_CONSOLIDATION;Consolidation War of [Title.GetBaseName];;;;;;;;;;;;;x
 WAR_NAME_CONSOLIDATION;$ORDER$$FIRST_ADJ$ War to Consolidate the Realm of $DEFENDER$;;;;;;;;;;;;;x
-cetic_holy_war_desc;Chinese Bureaucratic Rulers can use this Casus Belli to seize all titles held by other Chinese Bureaucratic Rulers within a de jure Duchy inside China.;;;;;;;;;;;;;x
+bureaucratic_county_conquest_desc;Chinese Bureaucratic Rulers can use this Casus Belli to seize §Ycounty-level§! titles held by other Chinese Bureaucratic Rulers within the §YChina Core§! Region.;;;;;;;;;;;;;x
+bureaucratic_ducal_conquest_desc;Chinese Bureaucratic Rulers can use this Casus Belli to seize §Yducal-level§! titles held by other Chinese Bureaucratic Rulers within the §YChina Core§! Region.;;;;;;;;;;;;;x
+bureaucratic_consolidation_desc;Chinese Bureaucratic Rulers can use this Casus Belli to seize §Ykingdom-level§! titles and all vassals underneath it held by other Chinese Bureaucratic Rulers within the §YChina Core§! Region.;;;;;;;;;;;;;x
 holy_war_cooldown;Recent Holy War;;;;;;;;;;;;;x
 holy_war_cooldown_ctt;Gain the Recent Holy War modifier.\n;;;;;;;;;;;;;x
+bureaucratic_chinese_valid_tt;Is a Chinese Bureaucratic Religion that can't take alternative Holy War CBs;;;;;;;;;;;;;x
