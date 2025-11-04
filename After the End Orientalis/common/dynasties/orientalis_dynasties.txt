@@ -4364,7 +4364,20 @@ coat_of_arms = {
 		}
 	}
 }
-1550005 = { name="Oo" culture=myr }
+1550005 = { name="Oo" culture=myr
+	coat_of_arms = {
+		religion = weizzane
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1550006 = { name="Phyu" culture=myr }
 1550007 = { name="Thet" culture=myr }
 1550008 = { name="Soe" culture=myr }
