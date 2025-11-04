@@ -1225,7 +1225,20 @@
 }
 
 9023087 = { name="Hu" culture=huizhou }
-9023088 = { name="Bao" culture=huizhou religion=ruist used_for_random=no}
+9023088 = { name="Bao" culture=huizhou
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 13
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9023089 = { name="Kuan" culture=huizhou religion=ruist used_for_random=no}
 9023120 = { name="Li" culture=huizhou }
 9023128 = { name="Liu" culture=huizhou }
