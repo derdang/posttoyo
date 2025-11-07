@@ -1239,7 +1239,20 @@
 		}
 	}
 }
-9023089 = { name="Kuan" culture=huizhou religion=ruist used_for_random=no}
+9023089 = { name="Kuan" culture=huizhou
+	coat_of_arms = {
+		religion = ruist
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 20
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9023120 = { name="Li" culture=huizhou }
 9023128 = { name="Liu" culture=huizhou }
 9023091 = { name="Huang" culture=huizhou }
