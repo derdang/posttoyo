@@ -1,0 +1,112 @@
+e_australia = {
+	color={ 0 132 61 }
+	color2={ 255 255 20 }
+	
+	capital = 1083 #Weipa Township
+	
+	k_queensland = {
+		color={ 115 24 44 }
+		color2={ 255 255 255 }
+		
+		capital = 1083 #Weipa Township
+		
+		d_cape_york = {
+			color={ 0 110 182 }
+			color2={ 255 255 255 }
+			
+			capital = 672 #Weipa Township
+			
+			c_weipa = { # 1083
+				color={ 78 72 28 }
+				color2={ 255 255 255 }
+				
+				b_weipa = {}
+				b_bamaga = {}
+				b_mapoon = {}
+				b_injinoo = {}
+				b_umagico = {}
+				b_seisia = {}
+				b_somerset = {}
+			}
+			c_torres = { # 2296
+				color={ 144 177 85 }
+				color2={ 255 255 255 }
+				
+				b_waiben = {
+					strine = "Port Kennedy"
+				}
+				b_abednego = {
+					strine = "Rose Hill"
+				}
+				b_saibai = {}
+				b_mer = {
+					strine = "Murray Island"
+				}
+				b_erub = {
+					strine = "Darnley"
+				}
+				b_malu_kiwai = {
+					strine = "Boigu"
+				}
+				b_mabuiag = {
+					strine = "Jervis"
+				}
+			}
+		}
+	}
+	
+	k_top_end = {
+		color={ 199 91 18 }
+		color2={ 255 255 255 }
+		
+		capital = 1081 #Tiwi
+		
+		d_arafura = {
+			color={ 255 227 0 }
+			color2={ 255 255 255 }
+			
+			capital = 1081 #Milikapiti
+			
+			c_ratuati_irara = { # 1081
+				color={ 249 185 0 }
+				color2={ 255 255 255 }
+				
+				strine = "Tiwi Island"
+				
+				b_milikapiti = {}
+				b_pirlangimpi = {
+					strine = "Garden Point"
+				}
+				b_nguiu = {
+					strine = "Bathurst"
+				}
+				b_bonkalji = {}
+				b_pinyianappi = {}
+				b_tientebei = {}
+				b_tarntipi = {}
+			}
+			c_cobourg = { # 1082
+				color={ 144 177 85 }
+				color2={ 255 255 255 }
+				
+				b_minjilang = {
+					strine = "Mission Bay"
+				}
+				b_limbo_cardja = {
+					strine = "Port Essington"
+				}
+				b_cape_don = {}
+				b_gul_gul = {
+					strine = "Danger Point"
+				}
+				b_araru = {}
+				b_algarlalgari = {
+					strine = "Black Point"
+				}
+				b_ngardimardi = {
+					strine = "Smith Point"
+				}
+			}
+		}
+	}
+}

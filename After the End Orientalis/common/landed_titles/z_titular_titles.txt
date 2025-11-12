@@ -670,17 +670,19 @@ e_commonwealth = {
 	capital = 202 #Manila
 	culture = tagalog
 }
-e_india_east_governor = { #placeholder for the Indian Empire Eastern Governor
-	color={ 245 240 10 }
+e_australian_capitancy = { #placeholder for the Australian Commonwealth Imperial Captain
+	color={ 0 132 61 }
 	color2={ 220 220 0 }
 	
-	capital = 1278 # c_chattogram
+	capital = 1083 # Weipa Township
+	
+	culture = strine
 	
 	assimilate = no # Duchies cannot de jure drift IN or OUT of this title
 	
-	title_female = "WESTERN_GOVERNOR_FEMALE"
-	title = "WESTERN_GOVERNOR_MALE"
-	foa = "WESTERN_GOVERNOR_TITLE_FOA"
+	title_female = "CAPTAIN"
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
 	short_name = yes
 	#location_ruler_title = yes
 	
@@ -918,16 +920,6 @@ d_red_fleet = {
 	
 	capital = 983 #Guangzhou
 	culture = cantonese
-}
-k_ozzies = {
-	color = { 1 33 105 }
-	color2={ 255 255 255 }
-	
-	short_name = yes
-	
-	capital = 672 #Port Moresby
-	culture = strine
-	religion = concordanist
 }
 k_aboriginals = {
 	color = { 243 202 86 }
