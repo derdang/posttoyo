@@ -3663,6 +3663,10 @@ join_prev_warrior_lodge_society_effect = {
 		join_society = warrior_lodge_animist
 	}
 	if = {
+		limit = { PREV = { society_member_of = warrior_lodge_bushranger } }
+		join_society = warrior_lodge_bushranger
+	}
+	if = {
 		limit = { PREV = { society_member_of = warrior_lodge_viet } }
 		join_society = warrior_lodge_viet
 	}
@@ -3728,6 +3732,16 @@ give_this_warrior_lodge_religion_effect = { #Mostly for spawned characters.
 			NOT = { has_global_flag = animist_reformation }
 		}
 		religion = animist
+	}
+	if = {
+		limit = { 
+			society_member_of = warrior_lodge_bushranger
+			NOT = { has_global_flag = bushranger_reformation }
+		}
+		OR = {
+			religion = bushranger
+			religion = dreamer
+		}
 	}
 }
 give_this_warrior_lodge_culture_effect = { #Mostly for spawned culture characters.

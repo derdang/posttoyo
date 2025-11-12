@@ -890,6 +890,7 @@ spriteTypes = {
 	#warrior_lodge_americanist - The Order of The Roosevelt
 	#warrior_lodge_shamanist - Protectors of Tradition
 	#warrior_lodge_animist - The Spirit-Avengers
+	#warrior_lodge_bushranger - The Bushrangers
 
 	#Martial Art Lodge
 	#warrior_lodge_malayan - Silat Melayu
@@ -916,6 +917,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_society_main_background_warrior_lodge_animist"
 		texturefile = "gfx\\interface\\societies\\society_bg_warrior_lodge_animist.dds"
+	}
+	spriteType = {
+		name = "GFX_society_main_background_warrior_lodge_bushranger"
+		texturefile = "gfx\\interface\\societies\\society_bg_warrior_lodge_bushranger.dds"
 	}
 	spriteType = {
 		name = "GFX_society_main_background_warrior_lodge_malayan"
@@ -973,6 +978,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_society_expansion_background_warrior_lodge_animist"
+		texturefile = "gfx\\interface\\societies\\society_exp_bg_olympic_champions.tga"
+	}
+	spriteType = {
+		name = "GFX_society_expansion_background_warrior_lodge_bushranger"
 		texturefile = "gfx\\interface\\societies\\society_exp_bg_olympic_champions.tga"
 	}
 	spriteType = {
@@ -1034,6 +1043,10 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\societies\\portrait_ring_olympic_champions.tga"
 	}
 	spriteType = {
+		name = "GFX_society_portrait_ring_warrior_lodge_bushranger"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_olympic_champions.tga"
+	}
+	spriteType = {
 		name = "GFX_society_portrait_ring_warrior_lodge_malayan"
 		texturefile = "gfx\\interface\\societies\\portrait_ring_olympic_champions.tga"
 	}
@@ -1089,6 +1102,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_society_portrait_ring_small_warrior_lodge_animist"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_small_olympic_champions.tga"
+	}
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_warrior_lodge_bushranger"
 		texturefile = "gfx\\interface\\societies\\portrait_ring_small_olympic_champions.tga"
 	}
 	spriteType = {
@@ -1150,6 +1167,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_small_warrior_lodge_animist"
 		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_animist.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_icon_small_warrior_lodge_bushranger"
+		texturefile = "gfx\\interface\\societies\\symbol_small_warrior_lodge_bushranger.dds"
 		noOfFrames = 2
 	}
 	spriteType = {
@@ -1217,6 +1239,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_society_currency_warrior_lodge_animist"
+		texturefile = "gfx\\interface\\societies\\society_currency_warriors.dds"
+	}
+	spriteType = {
+		name = "GFX_society_currency_warrior_lodge_bushranger"
 		texturefile = "gfx\\interface\\societies\\society_currency_warriors.dds"
 	}
 	spriteType = {

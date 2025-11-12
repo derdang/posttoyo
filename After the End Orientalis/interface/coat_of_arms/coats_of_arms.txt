@@ -763,6 +763,10 @@ culture = {
 		"donyi_polo_reformed"
 		"momolian"
 		"momolian_reformed"
+		"dreamer"
+		"dreamer_reformed"
+		"bushranger"
+		"bushranger_reformed"
 	}
 	
 	templates = { 
@@ -1165,11 +1169,10 @@ culture = {
 		}
 	}
 }
-culture =
-{
-	religion_group = "latter_day_saints"
+culture = {
 	religion = {
 		"quinto"
+		"mormon"
 	}
 
 	templates = { 
@@ -1236,6 +1239,107 @@ culture =
 			color = 3
 			emblem = no
 			#random = no
+		}
+	}
+}
+culture = {
+	religion = {
+		"mateship"
+	}
+
+	templates = { 
+		"coa_plain:1"
+		"coa_party_per_fess:2"
+		"coa_party_per_pale:2"
+		"coa_party_per_cross:4"
+		"coa_party_triangle:3"
+	}
+
+	color = {
+		{ 242 188 81 }	#0		Or (Gold)
+		{ 246 246 246 } #1		Argent (White)
+		{ 13 103 147 } 	#2		Azure (Blue)
+		{ 188 46 46 } 	#3		Gules (Red)
+		{ 62 147 62 } 	#4		Vert (Green)
+		{ 51 51 51 }	#5		Sable (Black)
+		{ 145 58 106 }	#6		Purpure (Purple)
+		{ 165 47 45 }	#7		Sanguine (Blood Red)
+		{ 191 117 50 }	#8		Tenné (Tawny)
+		{ 53 156 183 }	#9		Bleu-Celeste (Sky Blue)
+		{ 164 44 69 }	#10		Murrey (Mulberry) Burgundy
+		{ 31 74 31 }	#11		Dark green
+		{ 114 89 66 }	#12		Brunatre (Brown)
+		{ 50 173 192 }	#13		Turqouise
+		{ 25 166 118 }	#14		Teal
+	}
+	
+	rebel_colors = { 3 5 7 }
+
+	banned_colors = 
+	{ 
+		{ 0 1 }						#0		
+		{ 0 1 9}					#1		
+		{ 2 3 4 6 7 8 9 12 14 }		#2		
+		{ 2 3 4 7 9 10	}			#3		
+		{ 2 4 6 7 9 10 13 14}		#4		
+		{ 5 10 14 15}				#5		
+		{ 2 4 6 10 11 12 }			#6		
+		{ 2 3 4 7 8 10 13 }			#7		
+		{ 2 4 6 7 8 9 }				#8		
+		{ 2 3 4 8 9 10 11 13 }		#9		
+		{ 3 4 5 6 7 9 10 }			#10		
+		{ 6 9 11 }					#11
+		{ 6 12 }					#12
+		{ 4 7 9 13 14 }				#13
+		{ 2 4 13 14 }				#14
+	}
+
+	emblem = {
+		file = "gfx\\coats_of_arms\\emblem.tga"
+		noOfFrames = 25
+	}
+	emblem = {
+		file = "gfx\\coats_of_arms\\war_of_the_roses_random.tga"
+		noOfFrames = 5
+		random = yes
+	}
+
+	# WHEN ADDING NEW, ALWAYS ADD AT THE END
+	textures = {
+		texture = {
+			file = "gfx\\coats_of_arms\\australian_dynasties.tga"
+			size = { x = 8 y = 3 }
+			noOfFrames = 24
+			color = 0
+			random = no # Do not use for random CoAs
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\pattern.tga"
+			size = { x = 10 y = 5 }
+			noOfFrames = 47
+			color = 2
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\pattern2.tga"
+			size = { x = 10 y = 3 }
+			noOfFrames = 22
+			color = 3
+			emblem_chance = 30
+		}
+		texture = {
+			file = "gfx\\coats_of_arms\\pattern3.tga"
+			size = { x = 10 y = 5 }
+			noOfFrames = 44
+			color = 3
+			emblem = no
+		}
+		
+		texture = {
+			file = "gfx\\coats_of_arms\\pattern4.tga"
+			size = { x = 10 y = 5 }
+			noOfFrames = 45
+			color = 2
+			emblem = no
 		}
 	}
 }

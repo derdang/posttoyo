@@ -1926,6 +1926,35 @@ decisions = {
 			always = no
 		}
 	}
+	change_mateship_branch = {
+		ai = no
+		
+		potential = {
+			religion = mateship
+			is_playable = yes
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+			NOT = { has_character_flag = changedmateshipbranch }
+		}
+		
+		allow = {
+			religion = mateship
+			is_playable = yes
+		}
+		
+		effect = {
+			hidden_tooltip = {
+				character_event = { id = aus.1 }				
+			}
+			custom_tooltip = { text = TXT_change_mateship_branch }
+			set_character_flag = changedmateshipbranch
+		}
+		
+		revoke_allowed = {
+			always = no
+		}
+	}
 	change_quanzhen_branch = {
 		ai = no
 		

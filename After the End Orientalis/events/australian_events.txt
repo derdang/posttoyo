@@ -1,0 +1,119 @@
+namespace = aus
+
+#Quanzhen Branch Trait Decision
+character_event = {
+	id = aus.1	
+	desc = EVTDESC_mateship1
+	picture = GFX_evt_commonwealth
+	religion = mateship
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_mateship1
+		hidden_tooltip = {
+			remove_trait = mateship_battler
+			remove_trait = mateship_mods
+			remove_trait = mateship_nats
+			remove_trait = mateship_bushwhackers
+		}
+		add_trait = mateship_laborer
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = EVTOPTB_mateship1
+		hidden_tooltip = {
+			remove_trait = mateship_laborer
+			remove_trait = mateship_mods
+			remove_trait = mateship_nats
+			remove_trait = mateship_bushwhackers
+		}
+		add_trait = mateship_battler
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_mateship1
+		hidden_tooltip = {
+			remove_trait = mateship_battler
+			remove_trait = mateship_laborer
+			remove_trait = mateship_nats
+			remove_trait = mateship_bushwhackers
+		}
+		add_trait = mateship_mods
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTD_mateship1
+		hidden_tooltip = {
+			character_event = { id = aus.2 days=1 }				
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+character_event = {
+	id = aus.2	
+	desc = EVTDESC_mateship2
+	picture = GFX_evt_commonwealth
+	religion = mateship
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_mateship2
+		hidden_tooltip = {
+			remove_trait = mateship_battler
+			remove_trait = mateship_mods
+			remove_trait = mateship_laborer
+			remove_trait = mateship_bushwhackers
+		}
+		add_trait = mateship_nats
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTB_mateship2
+		hidden_tooltip = {
+			remove_trait = mateship_battler
+			remove_trait = mateship_mods
+			remove_trait = mateship_nats
+			remove_trait = mateship_laborer
+		}
+		add_trait = mateship_bushwhackers
+		ai_chance = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = EVTOPTC_mateship2
+		hidden_tooltip = {
+			character_event = { id = aus.1 days=1}				
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

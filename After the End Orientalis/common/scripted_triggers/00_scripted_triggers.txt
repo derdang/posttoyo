@@ -2586,6 +2586,20 @@ religion_openly_animist_or_heresy_trigger = {
 	}
 }
 
+religion_openly_bushranger_trigger = {
+	custom_tooltip = {
+		text = religion_openly_bushranger_tooltip
+		hidden_trigger = {
+			OR = {
+				religion = bushranger
+				religion = bushranger_reformed
+				religion = dreamer
+				religion = dreamer_reformed
+			}
+		}
+	}
+}
+
 has_secret_religion_trait_trigger = {
 	custom_tooltip = {
 		text = no_secret_religion

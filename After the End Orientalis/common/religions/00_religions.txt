@@ -3326,6 +3326,144 @@ pagan_group = {
 		dynamic_cult = no
 		
 	}
+	bushranger_reformed = { #Ned Kelly Mad Max Religion
+		graphical_culture = pagangfx
+		
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 230 200 10 }
+		
+		crusade_name = BUSHRANGE
+		scripture_name = THE_LETTER
+		priest_title = SQUATTER
+		piety_name = FREEDOM
+		
+		high_god_name = GOD_NED_KELLY
+		
+		god_names = {
+			GOD_NED_KELLY GOD_BEN_HALL GOD_CROOKED_MICK GOD_EUREKA GOD_ROADWARRIORS GOD_SWAGMAN
+		}
+		evil_god_names = {
+			BUNYIP THE_COMMONWEALTH THE_SLUMBERING_LION LORD_HUMUNGUS YOWIE
+		}
+		
+		can_grant_invasion_cb = invasion
+		allow_looting = yes
+		allow_rivermovement = yes
+		raised_vassal_opinion_loss = no
+		peace_prestige_loss = yes 
+		female_temple_holders = yes
+		priests_can_marry = yes
+		defensive_attrition = yes
+		
+		religious_clothing_head = 11
+		religious_clothing_priest = 11
+	}
+	bushranger = { #Ned Kelly Mad Max Religion
+		graphical_culture = pagangfx
+		
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 255 215 0 }
+
+		scripture_name = THE_LETTER
+		priest_title = SQUATTER
+		piety_name = FREEDOM
+		
+		high_god_name = GOD_NED_KELLY
+		
+		god_names = {
+			GOD_NED_KELLY GOD_BEN_HALL GOD_CROOKED_MICK GOD_EUREKA GOD_ROADWARRIORS GOD_SWAGMAN
+		}
+		evil_god_names = {
+			BUNYIP THE_COMMONWEALTH THE_SLUMBERING_LION LORD_HUMUNGUS YOWIE
+		}
+		
+		can_grant_invasion_cb = invasion
+		allow_looting = yes
+		allow_rivermovement = yes
+		raised_vassal_opinion_loss = no
+		peace_prestige_loss = yes 
+		female_temple_holders = yes
+		priests_can_marry = yes
+		defensive_attrition = yes
+		
+		religious_clothing_head = 11
+		religious_clothing_priest = 11
+		
+		reformed = bushranger_reformed
+	}
+	dreamer_reformed = { #Ancestral Religion of Indigenous Australians
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 10 150 80 }
+		
+		high_god_name = GOD_DREAMTIME
+		
+		god_names = {
+			GOD_EMU GOD_RAINBOW_SERPENT GOD_PEMULWUY GOD_SEVEN_SISTERS GOD_YAGAN
+		}
+		evil_god_names = {
+			BUNYIP THE_CAPTAIN QUINKIN
+		}
+		crusade_name = BUSHRANGE
+		scripture_name = THE_LAW
+		priest_title = CLEVERMAN
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		intermarry = pagan_group
+		
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+	}
+	dreamer = { #Ancestral Religion of Indigenous Australians
+		graphical_culture = pagangfx
+		alternate_start = { always = no }
+
+		icon = 13
+		heresy_icon = 13
+		
+		color = { 0 132 61 }
+		
+		high_god_name = GOD_DREAMTIME
+		
+		god_names = {
+			GOD_EMU GOD_RAINBOW_SERPENT GOD_PEMULWUY GOD_SEVEN_SISTERS GOD_YAGAN
+		}
+		evil_god_names = {
+			BUNYIP THE_CAPTAIN QUINKIN
+		}
+		crusade_name = BUSHRANGE
+		scripture_name = THE_LAW
+		priest_title = CLEVERMAN
+		priests_can_marry = yes
+		max_consorts = 3
+		
+		intermarry = indian_group
+		intermarry = buddhist_group
+		intermarry = christian
+		intermarry = eastern
+		intermarry = pagan_group
+		
+		defensive_attrition = yes
+
+		religious_clothing_head = 4
+		religious_clothing_priest = 4
+		
+		dislike_tribal_organization = yes
+		reformed = dreamer_reformed
+	}
 }
 
 jewish_group = {
@@ -5239,6 +5377,47 @@ oldworld = {
 		intermarry = christian
 		intermarry = buddhist_group
 		intermarry = eastern
+	}
+	mateship = {
+		graphical_culture = muslimgfx
+
+		icon = 13
+		
+		crusade_name = CAMPAIGN
+		scripture_name = THE_CONSTITUTION
+		priest_title = EMPEE
+		
+		color = { 0 0 139 }
+		
+		interface_skin = { indian_interface muslim_interface } 
+		
+		high_god_name = THE_COMMONWEALTH
+		
+		god_names = {
+			GOD_ANZAC GOD_DIGGER GOD_EUREKA GOD_THE_FLEET GOD_LABOR GOD_TREE_OF_KNOWLEDGE
+		}
+		
+		evil_god_names = {
+			BUNYIP GOD_NED_KELLY YOWIE
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		allow_rivermovement = yes
+		can_excommunicate = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		
+		max_consorts = 3 #can take concubines
+		
+		religious_clothing_head = 19
+		religious_clothing_priest = 19
+		
+		intermarry = pagan_group
+		intermarry = christian
+		intermarry = buddhist_group
+		intermarry = indian_group
 	}
 	quinto = {
 		graphical_culture = westerngfx

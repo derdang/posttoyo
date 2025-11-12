@@ -799,6 +799,10 @@ spriteTypes = {
 		name = "GFX_evt_my_son"
 		texturefile = "gfx\\event_pictures\\my_son.dds"
 	}
+	spriteType = {
+		name = "GFX_evt_commonwealth"
+		texturefile = "gfx\\event_pictures\\commonwealth.dds"
+	}
 	
 ### Orientalis Traits
 
@@ -817,6 +821,43 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+#Mateship Traits
+	spriteType = {
+		name = "GFX_trait_mateship_laborer"
+		texturefile = "gfx/traits/mateship_laborer.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mateship_battler"
+		texturefile = "gfx/traits/mateship_battler.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mateship_mods"
+		texturefile = "gfx/traits/mateship_mods.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mateship_nats"
+		texturefile = "gfx/traits/mateship_nats.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_mateship_bushwhackers"
+		texturefile = "gfx/traits/mateship_bushwhackers.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
 #Mahayana Traits
 	spriteType = {
 		name = "GFX_trait_mahayana_chan"
@@ -1440,6 +1481,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_change_shinto_branch"
 		texturefile = "gfx/interface/change_shinto_branch.tga"
+	}
+	spriteType = {
+		name = "GFX_change_mateship_branch"
+		texturefile = "gfx/interface/change_mateship_branch.tga"
 	}
 	spriteType = {
 		name = "GFX_change_mahayana_schools"

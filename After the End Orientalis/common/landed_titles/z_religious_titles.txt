@@ -2006,6 +2006,64 @@ d_chinomi_reformed = {
 	
 	dynasty_title_names = no	# Will not be named "Seljuk", etc.
 }
+d_bushranger_reformed = {
+	color = { 255 215 0 }
+	
+	creation_requires_capital = no
+	
+	capital = 1082 # c_cobourg
+	
+	dignity = 200
+	
+	title = LEADER
+	title_female = LEADER
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = bushranger_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = bushranger_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = bushranger_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
+d_dreamer_reformed = {
+	color = { 0 132 61 }
+	
+	creation_requires_capital = no
+	
+	capital = 1082 # c_cobourg
+	
+	dignity = 200
+	
+	title = LEADER
+	title_female = LEADER
+	foa = "POPE_FOA"
+	
+	short_name = yes
+	
+	religion = dreamer_reformed
+	caliphate = yes
+	assimilate = no
+	
+	controls_religion = dreamer_reformed
+	
+	allow = { #Same Requirement as needed to Reform Religions
+		religion = dreamer_reformed
+		num_of_holy_sites = 3
+		piety = 1000
+	}
+	
+	dynasty_title_names = no	# Will not be named "Seljuk", etc.
+}
 d_nousthreskeia = {
 	color={ 204 229 255 }
 	color2={ 255 255 255 }

@@ -382,9 +382,9 @@ special_join_warrior_lodge_trigger = {
 					text = has_liege_vassal_or_neighbor_of_shamanist_religion_tt
 					hidden_trigger = {
 						OR = {
-							any_vassal = { religion_openly_americanist_or_heresy_trigger = yes }
-							any_liege = { religion_openly_americanist_or_heresy_trigger = yes }
-							any_neighbor_independent_ruler = { religion_openly_americanist_or_heresy_trigger = yes }
+							any_vassal = { religion_openly_shamanist_or_heresy_trigger = yes }
+							any_liege = { religion_openly_shamanist_or_heresy_trigger = yes }
+							any_neighbor_independent_ruler = { religion_openly_shamanist_or_heresy_trigger = yes }
 						}
 					}
 				}
@@ -395,9 +395,22 @@ special_join_warrior_lodge_trigger = {
 					text = has_liege_vassal_or_neighbor_of_animist_religion_tt
 					hidden_trigger = {
 						OR = {
-							any_vassal = { religion_openly_americanist_or_heresy_trigger = yes }
-							any_liege = { religion_openly_americanist_or_heresy_trigger = yes }
-							any_neighbor_independent_ruler = { religion_openly_americanist_or_heresy_trigger = yes }
+							any_vassal = { religion_openly_animist_or_heresy_trigger = yes }
+							any_liege = { religion_openly_animist_or_heresy_trigger = yes }
+							any_neighbor_independent_ruler = { religion_openly_animist_or_heresy_trigger = yes }
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { is_society = warrior_lodge_bushranger }
+				custom_tooltip = {
+					text = has_liege_vassal_or_neighbor_of_bushranger_religion_tt
+					hidden_trigger = {
+						OR = {
+							any_vassal = { religion_openly_bushranger_trigger = yes }
+							any_liege = { religion_openly_bushranger_trigger = yes }
+							any_neighbor_independent_ruler = { religion_openly_bushranger_trigger = yes }
 						}
 					}
 				}

@@ -1526,10 +1526,26 @@ warrior_lodge_animist_rank_2_male;Warrior;;;;;;;;;;;;x
 warrior_lodge_animist_rank_3_male;Veteran;;;;;;;;;;;;x
 warrior_lodge_animist_rank_4_male;Hero;;;;;;;;;;;;x
 
+has_liege_vassal_or_neighbor_of_bushranger_religion_tt;Has a §YLiege§!, §YVassal§!, or a §Yneighboring ruler§! who follows the §YBushrange Creed§!\n;;;;;;;;;;;;x
+warrior_lodge_bushranger;The Bushrangers;;;;;;;;;;;;x
+warrior_lodge_bushranger_desc;This band of warriors have always banded for the Freedom of the Lands Down Under — legend has it that they commune with the spirits of Ancestors to empower them to seek out Tyrants and slewing the oppressors in the name of Freedom and Justice for the world and their communities. This society is a just one deeming that any worthy Freedom-Fighters among the Bushrange may join its ranks.;;;;;;;;;;;;x
+warrior_lodge_bushranger_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+warrior_lodge_bushranger_rank_1_female;Outlaw;;;;;;;;;;;;x
+warrior_lodge_bushranger_rank_2_female;Warrior;;;;;;;;;;;;x
+warrior_lodge_bushranger_rank_3_female;Veteran;;;;;;;;;;;;x
+warrior_lodge_bushranger_rank_4_female;Hero-Ranger;;;;;;;;;;;;x
+warrior_lodge_bushranger_rank_1_male;Outlaw;;;;;;;;;;;;x
+warrior_lodge_bushranger_rank_2_male;Warrior;;;;;;;;;;;;x
+warrior_lodge_bushranger_rank_3_male;Veteran;;;;;;;;;;;;x
+warrior_lodge_bushranger_rank_4_male;Hero-Ranger;;;;;;;;;;;;x
+
 
 religion_openly_americanist_or_heresy_tooltip;Publicly follows the §Y[americanist.GetName]§! religion (or a heresy);;;;;;;;;;;;;x
 religion_openly_shamanist_or_heresy_tooltip;Publicly follows the §Y[shamanist.GetName]§! religion (or a heresy);;;;;;;;;;;;;x
 religion_openly_animist_or_heresy_tooltip;Publicly follows the §Y[animist.GetName]§! religion (or a heresy);;;;;;;;;;;;;x
+religion_openly_bushranger_tooltip;Publicly follows the §YBushranger Creed§!;;;;;;;;;;;;;x
+
+is_part_of_the_bushrange_creed;Is part of the Bushrange Creed;;;;;;;;;;;;;x
 
 #Warrior Lodge Strings
 string_americanist_training;softly humming the tune I just finished singing, before clearing [fellow_member.GetHerHis] throat. "It's just something I made up, while we were marching" I say, dismissively. "You should keep it up, friend!", the [fellow_member.GetManWoman] argues. "It's good for morale, for the troops, you know".;fredonnant doucement l'air que je venais de finir de chanter. « C'est juste quelque chose que j'ai inventé alors que nous marchions », dis-je, dédaigneusement. « Vous devriez continuer ! C'est rust_cultist pour le moral, pour les troupes, vous savez », soutient-[fellow_member.GetIlElle].;summt leiste die Melodie, die ich gerade fertig gesunden habe, bevor [fellow_member.GetSheHe] [fellow_member.GetHerHis]en Kehle befeuchtete. "Es ist etwas, dass ich erfunden habe, während wir marschierte", sagte ich abweisend. "Ihr solltet es fortführen, Freund!, sagte [fellow_member.Getderdie] [fellow_member.GetManWoman]. "Es ist gut für die Moral der Truppen, wisst Ihr?".;;tarareando suavemente el tema que acabo de cantar, justo antes de que se acalare la gartanta. "Es solo una tema que me inventé mientras marchábamos, dándole poca importancia. "¡Debes guardarla, amig[Root.GetOA]!", arguye, "Es buena para la moral y las tropas...";;;;;;;;;x

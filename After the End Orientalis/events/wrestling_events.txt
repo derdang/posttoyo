@@ -1547,7 +1547,8 @@ letter_event = { #SUCCESS: Welcome to the society!
 				OR = {
 					society_member_of = warrior_lodge_americanist
 					society_member_of = warrior_lodge_shamanist 
-					society_member_of = warrior_lodge_animist 
+					society_member_of = warrior_lodge_animist
+					society_member_of = warrior_lodge_bushranger
 				}
 				NOT = { religion_group = pagan_group }
 			}

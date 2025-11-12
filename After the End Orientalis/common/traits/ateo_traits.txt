@@ -175,6 +175,106 @@ bani_balamon = { #Seek common virtue and values in all religion
 	customizer = no
 	random = no
 }
+## Mateship Factions
+
+mateship_laborer = {
+	potential = {
+		religion = mateship
+	}
+	religious = yes
+	
+	opposites = {
+		mateship_battler
+		mateship_mods
+		mateship_nats
+		mateship_bushwhackers
+	}
+	martial = 2
+	stewardship = 1
+	oldworld_opinion = 15
+
+	customizer = no
+	random = no
+}
+mateship_battler = {
+	potential = {
+		religion = mateship
+	}
+	religious = yes
+	
+	opposites = {
+		mateship_laborer
+		mateship_mods
+		mateship_nats
+		mateship_bushwhackers
+	}
+	diplomacy = 2
+	martial = 1
+	christian_opinion = 15
+
+	customizer = no
+	random = no
+}
+mateship_mods = {
+	potential = {
+		religion = mateship
+	}
+	religious = yes
+
+	opposites = {
+		mateship_laborer
+		mateship_battler
+		mateship_nats
+		mateship_bushwhackers
+	}
+	diplomacy = 2
+	learning = 1
+	same_religion_opinion = 15
+
+	customizer = no
+	random = no
+}
+mateship_nats = {
+	potential = {
+		religion = mateship
+	}
+	religious = yes
+	
+	opposites = {
+		mateship_laborer
+		mateship_battler
+		mateship_mods
+		mateship_bushwhackers
+	}
+	martial = 2
+	diplomacy = -1
+	same_religion_opinion = 25
+	
+	ai_zeal = 100
+
+	customizer = no
+	random = no
+}
+mateship_bushwhackers = {
+	potential = {
+		religion = mateship
+	}
+	religious = yes
+	
+	opposites = {
+		mateship_laborer
+		mateship_battler
+		mateship_mods
+		mateship_nats
+	}
+	intrigue = 2
+	martial = 1
+	pagan_group_opinion = 15
+
+	customizer = no
+	random = no
+}
+
 ## Mahayana schools
 
 mahayana_chan = {

@@ -187,6 +187,7 @@ religion_nature = {
 						religion = donyi_polo
 						religion = heilong
 						religion = kaharingan
+						religion = bushranger
 					}
 				}
 			}
@@ -327,6 +328,7 @@ religion_nature = {
 				has_selected_religion_feature = religion_feature_kaharingan
 				has_selected_religion_feature = religion_feature_chinomi
 				has_selected_religion_feature = religion_feature_animist
+				has_selected_religion_feature = religion_feature_dreamer
 				has_selected_religion_feature = religion_feature_makasol
 				has_selected_religion_feature = religion_feature_momolian
 				has_selected_religion_feature = religion_no_leader
@@ -550,6 +552,7 @@ religion_doctrine = {
 			NOR = { 
 				has_selected_religion_feature = religion_feature_chuma # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_shamanist # Redundant Doctrine
+				has_selected_religion_feature = religion_feature_bushranger #Redundant Doctrine
 				has_selected_religion_feature = religion_patriarchal # Incompatible
 				has_selected_religion_feature = religion_matriarchal # Incompatible
 			}
@@ -656,6 +659,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_feature_kaharingan # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_muist # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_animist # Redundant Doctrine
+				has_selected_religion_feature = religion_feature_dreamer # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_dayawist # Redundant Doctrine
 				has_selected_religion_feature = religion_feature_vvlufi # Redundant Doctrine
 			}
@@ -674,6 +678,7 @@ religion_doctrine = {
 						religion = chuma
 						religion = kaharingan
 						religion = animist
+						religion = dreamer
 						religion = dayawist
 						religion = vvlufi
 					}
@@ -1051,6 +1056,8 @@ religion_doctrine = {
 				religion = heilong_reformed
 				religion = animist
 				religion = animist_reformed
+				religion = dreamer
+				religion = dreamer_reformed
 				religion = diwata
 				religion = diwata_reformed
 				religion = ak_jeng
@@ -1080,6 +1087,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_feature_shenist
 				has_selected_religion_feature = religion_feature_kaharingan
 				has_selected_religion_feature = religion_feature_animist
+				has_selected_religion_feature = religion_feature_dreamer
 				has_selected_religion_feature = religion_feature_dayawist
 				has_selected_religion_feature = religion_feature_vvlufi
 				religion_group = christian #Random World redundancy.
@@ -2305,6 +2313,152 @@ religion_doctrine = {
 			factor = 50
 		}
 	}
+	religion_feature_bushranger = { #Ned Kelly Mad Max Religion
+		picture = GFX_religion_feature_bushranger
+		potential = {
+			has_game_started = yes
+			religion = bushranger_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = bushranger_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_defensive
+				has_selected_religion_feature = religion_autocephaly
+				has_selected_religion_feature = religion_meritocratic
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_defensive }
+			custom_tooltip = { text = tooltip_religion_feature_hard_conversion }
+			custom_tooltip = { text = tooltip_religion_feature_crusade }
+			hidden_tooltip = { 
+				set_pacifist = no
+				set_peace_piety_gain = 0
+				set_raised_vassal_opinion_loss = yes
+				set_piety_loss_for_attacking_same_religion = no
+				set_peace_prestige_loss = no
+				set_allow_looting = yes
+				set_hard_to_convert = yes
+				set_convert_other_groups = 1
+				set_convert_same_group = 1
+				set_ai_aggression = 0.5
+				set_unit_modifier = {		
+					garrison_size = 0.3
+					levy_size = 0.2
+					
+					key = "DEF_RELIGION"
+				}
+				set_unit_home_modifier = {
+					land_morale = 0.8
+					light_infantry_defensive = 0.8
+					heavy_infantry_defensive = 0.8
+					pikemen_defensive = 0.8
+					light_cavalry_defensive = 0.8
+					knights_defensive = 0.8
+					archers_defensive = 0.8
+					horse_archers_defensive = 0.8
+					camel_cavalry_defensive = 0.8
+					war_elephants_defensive = 0.8
+					
+					garrison_size = 0.4
+					
+					key = "DEF_RELIGION_HOME_TERRITORY"
+				}
+			}
+			custom_tooltip = { text = tooltip_religion_feature_autocephaly }
+			hidden_tooltip = { 
+				set_autocephaly = yes
+				set_can_excommunicate = yes
+				set_can_grant_divorce = yes
+				set_can_grant_invasion_cb = yes
+				set_can_grant_claim = yes
+			}
+			custom_tooltip = { text = tooltip_religion_feature_meritocratic }
+			hidden_tooltip = {
+				set_heir_designation = yes
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	religion_feature_dreamer = {
+		picture = GFX_religion_feature_dreamer
+		potential = {
+			has_game_started = yes
+			religion = dreamer_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = dreamer_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_animistic
+				has_selected_religion_feature = religion_beatification
+				has_selected_religion_feature = religion_syncretic
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_syncretic }
+			custom_tooltip = { text = tooltip_religion_feature_land_morale }
+			custom_tooltip = { text = tooltip_religion_feature_adulthood_rite }
+			custom_tooltip = { text = tooltip_religion_feature_beatification }
+			custom_tooltip = { text = tooltip_religion_feature_eldership }
+			hidden_tooltip = { 
+				set_unit_modifier = { 
+					land_morale = 0.05
+					key = "ANIMISTIC_RELIGION"
+				}
+			}
+			custom_tooltip = { text = tooltip_religion_feature_branches }
+			custom_tooltip = { text = tooltip_religion_feature_dynamic }
+			custom_tooltip = { text = tooltip_religion_feature_no_leader }
+			custom_tooltip = { text = tooltip_religion_feature_no_crusade }
+			hidden_tooltip = { 
+				set_no_head_of_religion = yes
+				set_religion_head = none
+				set_can_call_crusade = no
+				set_religious_branch = pagan_reformation
+			}
+			if = { 
+				limit = { 
+					FROM = { 
+						character = yes 
+						OR = { 
+							religion = chinomi 
+						} 
+					}
+					has_selected_religion_feature = religion_monastic
+				}
+				set_character_modifier = {
+					diplomacy = 2
+					learning = 2
+					key = "MONASTIC_AUTONOMOUS_ATTR_RELIGION"
+				}
+			}
+			else_if = { 
+				limit = { 
+					FROM = { 
+						character = yes 
+						OR = { 
+							religion = chinomi 
+						} 
+					}
+				}
+				set_character_modifier = {
+					diplomacy = 2
+					key = "AUTONOMOUS_ATTR_RELIGION"
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
 	
 	religion_feature_pyramids = {
 		picture = GFX_religion_feature_pyramids
@@ -2329,6 +2483,7 @@ religion_leadership = {
 			NOR = { 
 				has_selected_religion_feature = religion_feature_shamanist
 				has_selected_religion_feature = religion_feature_animist
+				has_selected_religion_feature = religion_feature_dreamer
 				has_selected_religion_feature = religion_feature_makasol #Redundant
 			}
 		}
@@ -2363,6 +2518,7 @@ religion_leadership = {
 				has_selected_religion_feature = religion_feature_donyi_polo
 				has_selected_religion_feature = religion_feature_shamanist
 				has_selected_religion_feature = religion_feature_animist
+				has_selected_religion_feature = religion_feature_dreamer
 			}
 		}
 		effect = {
@@ -2384,7 +2540,9 @@ religion_leadership = {
 			NOR = { 
 				has_selected_religion_feature = religion_feature_shamanist
 				has_selected_religion_feature = religion_feature_animist
+				has_selected_religion_feature = religion_feature_dreamer
 				has_selected_religion_feature = religion_feature_momolian
+				has_selected_religion_feature = religion_feature_bushranger
 			}
 		}
 		effect = {
@@ -2423,6 +2581,7 @@ religion_leadership = {
 				has_selected_religion_feature = religion_feature_chinomi #redundancy
 				has_selected_religion_feature = religion_feature_shamanist #redundancy
 				has_selected_religion_feature = religion_feature_animist #redundancy
+				has_selected_religion_feature = religion_feature_dreamer #redundancy
 				has_selected_religion_feature = religion_feature_vvlufi #redundancy
 				has_selected_religion_feature = religion_feature_makasol
 			}
@@ -2476,6 +2635,7 @@ religion_leadership = {
 							religion = chinomi
 							religion = shamanist
 							religion = animist
+							religion = dreamer
 							religion = vvlufi
 							religion = makasol
 						} 
@@ -2496,6 +2656,7 @@ religion_leadership = {
 							religion = chinomi
 							religion = shamanist
 							religion = animist
+							religion = dreamer
 							religion = vvlufi
 							religion = makasol
 						} 
@@ -2530,6 +2691,7 @@ religion_leadership = {
 							religion = chinomi
 							religion = shamanist
 							religion = animist
+							religion = dreamer
 							religion = vvlufi
 							religion = makasol
 						}
@@ -2549,6 +2711,7 @@ religion_leadership = {
 							religion = chinomi
 							religion = shamanist
 							religion = animist
+							religion = dreamer
 							religion = vvlufi
 							religion = makasol
 						}
