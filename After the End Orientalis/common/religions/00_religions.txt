@@ -1563,6 +1563,37 @@ muslim = {
 		attacking_same_religion_piety_loss = yes		
 	}
 	
+	barelvi = {
+		graphical_culture = muslimgfx
+
+		icon = 4
+		
+		color = { 179 232 56 }
+		
+		high_god_name = GOD_ALLAH
+		
+		god_names = {
+			GOD_ALLAH GOD_THE_GREATEST
+		}
+		evil_god_names = {
+			IBLIS SHAYTAN
+		}
+		
+		scripture_name = THE_KORAN
+		priest_title = IMAM
+		crusade_name = JIHAD
+		uses_decadence = no
+		max_wives = 4
+		can_call_crusade = yes
+		can_grant_invasion_cb = yes
+		psc_marriage = no
+		
+		religious_clothing_head = 10
+		religious_clothing_priest = 10
+		
+		intermarry = muslim
+	}
+	
 	dawoodi = { #Indian Ismaili
 		graphical_culture = muslimgfx
 		

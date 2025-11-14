@@ -133,35 +133,6 @@ decisions = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						e_mongolia = {
-							holder_scope = { always = yes }
-						}
-					}
-				}
-				any_demesne_title = {
-					limit = {
-						tier = EMPEROR
-					}
-					set_title_flag = to_be_destroyed
-				}
-				e_mongolia = {
-					hidden_tooltip = {
-						activate_title = { title = THIS status = yes }
-					}
-					grant_title = PREV
-					make_primary_title = yes
-				}
-				any_demesne_title = {
-					limit = {
-						has_title_flag = to_be_destroyed
-					}
-					activate_title = { title = THIS status = no }
-					destroy_landed_title = THIS
-				}
-			}
-			if = {
-				limit = {
 					ai = yes
 				}
 				character_event = { id = 60530 } # ai reinforcements
@@ -208,32 +179,6 @@ decisions = {
 			add_character_modifier = {
 				modifier = greatest_of_khans
 				duration = -1
-			}
-			if = {
-				limit = {
-					NOT = {
-						e_mongolia = {
-							holder_scope = { always = yes }
-						}
-					}
-				}
-				any_demesne_title = {
-					limit = {
-						tier = EMPEROR
-					}
-					set_title_flag = to_be_destroyed
-				}
-				e_mongolia = {
-					activate_title = { title = THIS status = yes }
-					grant_title = PREV
-				}
-				any_demesne_title = {
-					limit = {
-						has_title_flag = to_be_destroyed
-					}
-					activate_title = { title = THIS status = no }
-					destroy_landed_title = THIS
-				}
 			}
 			if = {
 				limit = {

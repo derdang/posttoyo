@@ -343,7 +343,10 @@ decisions = {
 				custom_tooltip = {
 					text = TXT_PANCASILA_INDONESIA
 					AND = {
-						religion = pancasila
+						OR = {
+							religion = pancasila
+							religion_group = christian
+						}
 						completely_controls = e_wallacea
 						completely_controls = e_sumatra
 						completely_controls = e_java

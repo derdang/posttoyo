@@ -98,6 +98,16 @@ custom_bhutan = {
 		d_paro d_bumthang
     }
 }
+custom_sikkim = {
+	duchies = {
+		d_sikkim
+    }
+}
+custom_nepal = {
+	duchies = {
+		d_kathmandu d_gandaki d_karnali d_kosi
+    }
+}
 custom_tibet = {
 	duchies = {
 		d_garze d_chamdo d_ngawa d_nyingchi d_qinghai d_qaidam d_sanjiangyuan d_lhasa d_lhoka d_nagqu d_ngari d_xigaze  
@@ -399,17 +409,27 @@ custom_arunachal_pradesh = {
 }
 custom_bangladesh = {
 	duchies = {
-		d_chattogram
+		d_chattogram d_dhaka d_barishal d_mymensingh d_sylhet d_rangpur
+    }
+}
+custom_west_bengal = {
+	duchies = {
+		d_malda d_rajshahi d_kolkata d_burdwan d_khulna d_medinipur
     }
 }
 custom_purvottar_pradesh = {
 	duchies = {
-		d_tripura d_manipur d_mizoram d_nagaland
+		d_tripura d_manipur d_mizoram d_nagaland d_dimasa
+    }
+}
+custom_assam = {
+	duchies = {
+		d_guwahati d_jorhat d_nagaon d_meghalaya
     }
 }
 custom_himalaya = {
 	regions = {
-		custom_bhutan custom_arunachal_pradesh
+		custom_bhutan custom_arunachal_pradesh custom_sikkim custom_nepal
     }
 }
 custom_greater_tibet = {
@@ -419,7 +439,7 @@ custom_greater_tibet = {
 }
 custom_northeast_india = {
 	regions = {
-		custom_arunachal_pradesh custom_purvottar_pradesh custom_bangladesh
+		custom_arunachal_pradesh custom_purvottar_pradesh custom_bangladesh custom_west_bengal custom_assam
     }
 }
 custom_historical_plague_free_zone = {

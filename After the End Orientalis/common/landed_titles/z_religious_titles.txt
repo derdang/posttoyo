@@ -369,6 +369,34 @@ k_dawoodi = {
 	
 	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
 }
+d_barelvi = {
+	color={ 200 50 200 }
+	color2={ 220 220 0 }
+	
+	capital = 2326 #Dhaka
+	
+	title = "GRAND_MUFTI"
+	
+	
+	short_name = yes
+	#location_ruler_title = yes
+
+	# Always exists
+	landless = yes
+	
+	# Controls a religion
+	controls_religion = barelvi
+	
+	religion = barelvi
+	
+	dignity = 200
+	
+	# Cannot be held as a secondary title
+	primary = yes
+	
+	dynasty_title_names = no 	# Will not be named "Seljuk", etc.
+
+}
 d_dili_archbishopric = {
 	color = { 241 255 86 }
 	color2={ 220 220 0 }

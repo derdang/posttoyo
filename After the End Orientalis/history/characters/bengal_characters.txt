@@ -1,9 +1,9 @@
 ## Indian Empire characters
 1557004 ={ #Indian governor/Sultan of the Bengal Empire
 	name="Iskander"
-	dynasty=4000044 #Ali Khan
-	culture=bengali
-    religion=renewalist
+	dynasty=4001001 #Ali Khan
+	culture=vangiya
+    religion=barelvi
     martial=8
     diplomacy=6
     stewardship=5
@@ -20,11 +20,478 @@
     2575.1.1={birth=yes}
     2628.1.1={death=yes}
 }
+#1557005 - the Duke of Mu Sae Burma
+1557006={
+	name="Vikram"
+    dynasty=4005090 # Makhdum
+    culture=varendri
+    religion=barelvi
+    martial=4
+    diplomacy=5
+    stewardship=5
+    intrigue=4
+    learning=6
+    trait=dutiful_cleric
+    trait=sympathy_indian        
+    trait=hafiz        
+    trait=slothful
+    trait=erudite
+    trait=honest
+    trait=shy
+    trait=craven
+    trait=kind
+    2560.1.1={birth=yes}
+    2688.1.1={death=yes}
+}
+1557007={
+	name="Achintya"
+    dynasty=2147935 # Hossein
+    culture=varendri
+    religion=barelvi
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=intricate_webweaver
+    trait=deceitful
+    trait=zealous
+    trait=wroth
+    trait=temperate
+    trait=charitable
+    trait=kind
+    2570.1.1={birth=yes}
+    2695.1.1={death=yes}
+}
+1557008={ #Duke of Rangpur
+	name="al-Azar"
+    dynasty=4003089 # Sharif
+    culture=rangpuri
+    religion=salafi
+    martial=7
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=5
+    trait=skilled_tactician
+    trait=temperate
+    trait=brawny
+    trait=shrewd
+    trait=honest
+    trait=just
+    trait=diligent
+    trait=ambitious
+    2560.1.1={birth=yes}
+    2705.1.1={death=yes}
+}
+1557009={ #Count of Cooch Behar
+	name="Bindi"
+    dynasty=4004052 # Majumdar
+	female=yes
+    culture=rajbongshi
+    religion=vaishnava
+    martial=3
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=6
+    trait=detached_priest        
+    trait=erudite
+    trait=shy
+    trait=paranoid
+    trait=kind
+    trait=diligent
+    trait=patient
+    2585.1.1={birth=yes}
+    2667.1.1={death=yes}
+}
+1557010={
+	name="Abdul"
+    dynasty=4002074 # Bachchu
+    culture=sylheti
+    religion=salafi
+    martial=4
+    diplomacy=7
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=charismatic_negotiator
+	trait=poet
+    trait=ambitious
+    trait=charitable
+    trait=zealous
+    trait=brave
+    trait=just
+    2575.1.1={birth=yes}
+    2678.1.1={death=yes}
+}
+1557011={
+	name="Ahmed"
+    dynasty=4001111 # Mosharraf
+    culture=vangiya
+    religion=barelvi
+	secret_religion=salafi
+    martial=5
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=brilliant_strategist
+    trait=greedy
+    trait=deceitful
+    trait=cruel
+    trait=diligent
+    trait=ambitious
+    trait=gluttonous
+    2580.1.1={birth=yes}
+    2671.1.1={death=yes}
+}
+1557012={
+	name="Hasanat"
+    dynasty=4001112 # Abdullah
+    culture=vangiya
+    religion=barelvi
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=8
+    trait=detached_priest
+    trait=sayyid
+    trait=scholar
+    trait=shrewd
+    trait=proud
+    trait=patient
+    trait=just
+    trait=erudite
+    trait=honest
+    2565.1.1={birth=yes}
+    2685.1.1={death=yes}
+}
+1557013={
+	name="Anwaruddin"
+    dynasty=4002075 # Mazumdar
+    culture=sylheti
+    religion=barelvi
+    martial=4
+    diplomacy=7
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=stubborn
+    trait=wroth
+    trait=charitable
+    trait=zealous
+    trait=brave
+    trait=just
+    2575.1.1={birth=yes}
+    2678.1.1={death=yes}
+}
+1557014={ #Duke of Kulhna
+	name="Jahan"
+    dynasty=4001113 # Khan
+    culture=vangiya
+    religion=salafi
+    martial=5
+    diplomacy=4
+    stewardship=6
+    intrigue=5
+    learning=5
+    trait=tough_soldier
+    trait=strong
+    trait=proud
+    trait=zealous
+    trait=wroth
+    trait=lustful
+	trait=duelist
+    2580.1.1={birth=yes}
+    2705.1.1={death=yes}
+}
+1557015={ King of Calcutta
+	name="Haridas"
+    dynasty=4000043 # Dutta
+    culture=rarhi
+    religion=hindu
+    martial=5
+    diplomacy=6
+    stewardship=5
+    intrigue=6
+    learning=7
+    trait=skilled_tactician
+    trait=zealous
+    trait=lustful
+    trait=shy
+    trait=proud
+    trait=patient
+    trait=diligent
+    trait=arbitrary
+	trait=shaktist_hindu
+    2540.1.1={birth=yes}
+    2658.1.1={death=yes}
+}
+1557016={ Vassal of Calcutta (Prince)
+	name="Sudhindranath"
+    dynasty=4000043 # Dutta
+    culture=rarhi
+    religion=hindu
+    martial=5
+    diplomacy=6
+    stewardship=5
+    intrigue=6
+    learning=7
+    trait=martial_cleric
+    trait=cynical
+    trait=scholar
+    trait=feeble
+    trait=proud
+    trait=patient
+    trait=diligent
+    trait=just
+	trait=shaktist_hindu
+	father=1557015
+    2580.1.1={birth=yes}
+    2658.1.1={death=yes}
+}
+1557017={ Vassal of Calcutta (Prince)
+	name="Swami"
+    dynasty=4000043 # Dutta
+    culture=rarhi
+    religion=hindu
+    martial=5
+    diplomacy=6
+    stewardship=5
+    intrigue=6
+    learning=7
+    trait=grey_eminence
+    trait=zealous
+    trait=gregarious
+    trait=shy
+    trait=proud
+    trait=patient
+    trait=diligent
+    trait=fair
+	father=1557015
+	trait=shaktist_hindu
+    2580.1.1={birth=yes}
+    2658.1.1={death=yes}
+}
+1557018={ Vassal of Calcutta
+	name="Jamini"
+    dynasty=4000044 # Roy
+    culture=rarhi
+    religion=hindu
+    martial=5
+    diplomacy=6
+    stewardship=5
+    intrigue=6
+    learning=7
+    trait=scholarly_theologian
+    trait=poet
+    trait=musician
+    trait=kind
+    trait=fair
+    trait=patient
+    trait=diligent
+	trait=shaktist_hindu
+    2575.1.1={birth=yes}
+    2658.1.1={death=yes}
+}
+1557019={ Raj of Dimasa
+	name="Govindi"
+    dynasty=1569056 # Chandra
+    culture=dimasa
+    religion=hindu
+    martial=5
+    diplomacy=6
+    stewardship=5
+    intrigue=6
+    learning=7
+    trait=tough_soldier
+    trait=poet
+    trait=proud
+    trait=zealous
+    trait=fair
+    trait=stubborn
+    trait=diligent
+    2575.1.1={birth=yes}
+    2658.1.1={death=yes}
+}
+1557020={
+	name="Togan"
+    dynasty=1573040 # Sangma
+    culture=garo
+    religion=baptist
+    martial=5
+    diplomacy=4
+    stewardship=6
+    intrigue=4
+    learning=5
+    trait=brilliant_strategist
+    trait=shrewd
+    trait=authoritative
+    trait=proud
+    trait=greedy
+    trait=envious
+    trait=arbitrary
+    2580.1.1={birth=yes}
+    2695.1.1={death=yes}
+}
+1557021={
+	name="Neil"
+    dynasty=1572150 # Nangbah
+    culture=khasi
+    religion=baptist
+    martial=5
+    diplomacy=5
+    stewardship=6
+    intrigue=5
+    learning=4
+    trait=thrifty_clerk
+    trait=musician
+    trait=kind
+    trait=just
+    trait=erudite
+    trait=trusting
+	trait=strong
+    2586.1.1={birth=yes}
+    2680.1.1={death=yes}
+}
+1557022={
+	name="Burha"
+    dynasty=1570056 # Teron
+    culture=karbi
+    religion=vaishnava
+    martial=5
+    diplomacy=5
+    stewardship=6
+    intrigue=5
+    learning=4
+    trait=tough_soldier
+    trait=stubborn
+    trait=wroth
+    2580.1.1={birth=yes}
+    2680.1.1={death=yes}
+}
+1557023={
+	name="Pramod"
+    dynasty=1571036 # Boro
+    culture=boro
+    religion=vaishnava
+    martial=6
+    diplomacy=3
+    stewardship=3
+    intrigue=5
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=ambitious
+    trait=gregarious
+    trait=charitable
+    trait=kind
+    trait=honest
+    2575.1.1={birth=yes}
+    2701.1.1={death=yes}
+}
+1557024={
+	name="Purandar"
+    dynasty=4012021 # Ahom
+    culture=assamese
+    religion=vaishnava
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=diligent        
+    trait=greedy
+    trait=cruel
+    trait=stubborn
+    trait=deceitful
+    trait=envious        
+    2580.1.1={birth=yes}
+    2710.1.1={death=yes}
+}
+1557025={
+	name="Karmabir"
+    dynasty=4012022 # Bardoloi
+    culture=assamese
+    religion=donyi_polo
+    martial=5
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=tough_soldier
+    trait=strong
+    trait=uncouth
+    trait=shrewd
+    trait=greedy
+    trait=envious
+    trait=content
+    2586.1.1={birth=yes}
+    2728.1.1={death=yes}
+}
+1557026={
+	name="Chandradhar"
+    dynasty=4012023 # Barua
+    culture=assamese
+    religion=vaishnava
+    martial=5
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=3
+    trait=charismatic_negotiator
+    trait=brave
+    trait=poet
+    trait=temperate
+    trait=honest
+    trait=strong
+    trait=ambitious
+    2575.1.1={birth=yes}
+    2728.1.1={death=yes}
+}
+1557498={
+	name="Ismail"
+    dynasty=4005089 # Choudhury
+    culture=varendri
+    religion=barelvi
+    martial=4
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=stubborn
+    trait=wroth
+    trait=charitable
+    trait=temperate
+    trait=kind
+    trait=brawny
+    2580.1.1={birth=yes}
+    2677.1.1={death=yes}
+}
+1557499={ #Grand Mufti of the Barelvi Order
+	name="Muhajir"
+    culture=vangiya
+    religion=barelvi
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=8
+    trait=mastermind_theologian
+    trait=faqih
+    2599.1.1={birth=yes}
+    2700.1.1={death=yes}
+}
 1557500 ={ #Will be used to be the Proper Emperor of Western India Once India is a Thing
 	name="Vikram"
-	dynasty=4000044 #Ali Khan
-	culture=bengali
-    religion=renewalist
+	dynasty=4001001 #Ali Khan
+	culture=vangiya
+    religion=barelvi
     martial=8
     diplomacy=6
     stewardship=5

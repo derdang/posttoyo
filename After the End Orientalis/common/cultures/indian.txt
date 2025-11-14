@@ -1,55 +1,324 @@
-#Temporary carry-over from Vanilla
 indo_aryan_group = {
 	alternate_start = { NOT = { has_alternate_start_parameter = { key = special_culture value = animal_world } } }
 	graphical_cultures = { indiangfx muslimgfx }
 	
-	bengali = { # Indo-Aryan
-		graphical_cultures = { indiangfx muslimgfx }
-		secondary_event_pictures = bedouin_arabic
+	rarhi = { #Bengali
+		graphical_cultures = { indiangfx }
 		
-		color = { 0.45 0.0 0.0 }
-	
+		color = { 0.19 0.12 0.51 }
+		
+		male_names = { 
+			Abanindranath Abhas Abhijit Abhishek Ajitesh Amal Amalendu Amar Amartya Amitav Amiya Ananda Anik Anil Anirvan Anjan Anol Anudvaipayan Anupam Arjun Arup Ashis Ashok Ashutosh Asim Aveek Ayan 
+			Barun Basabi Basanta Bhairab Bhanu Bharat Bhaskar Bhubhanmohan Bhupendranath Bikash Bipin Bishwanath Biswajit Biswarup Brothindranath 
+			Chandra Chandranath Charu Chhabi Chidananda Chirakumar Chiraranjan 
+			Debendranath Dipak Dipesh Durgadas Durgaprasad Dwarkanath Dwijendralal 
+			Gaganendranath Ganesh Ganganarayan Gaurav Gautam Girindranath Gobinda Gopal Gunendranath Guranga Gurudas Gurucharan Gurusaday 
+			Haranath Harendra Henant 
+			Jadunath Jagdish Jahar Jamini Janakinath Janant Janmajeya Jayanta Jibankrishna Jogen 
+			Kabir Kalyan Kaushik Kedarnath Khaled_Khalid Khudiram Krishna Krishnanath Kumar Kumudlal Kunjalal 
+			Mahendranath Mainak Manas Manish 
+			Namashi Nandalal Narendra Narendranath Nibaran Niranjan 
+			Pahari Paresh Paritosh Partha Prabhas Prabodh Prafulla Prakash Pranab Prasanna Prasanta Prashad Prasun Pritish Priyanshu Prosenjit Purnendu 
+			Rabindra Rabindranath Rahul Raja Rajendra Rajkumar Ramaprasad Ramchandra Ramesh Ramkinkar Ranjan Ratul Riddhi Rohit Ronit Rupam Rupen 
+			Sabitri Sabyasachi Sadhan Samit Samrat Sanatan Sandip Sanjit Santosh Sarat Saroj Sashadhar Saswata Satish Satyajit Satyen Shankar Shomu Shantanu Shyamal Siddharth Sisir Sital Somen Somnath Subhankar Subhaprasanna Subhas Subhasendu Subhendu Subir Subodhchandra Subrata Suchinta Sudipto Sugata Sukanta Sukumar Sumantra Sumit Sumitra Sundar Sunil Suradip Suresh Susobhan Swapan 
+			Tanumoy Tarajyoti Tarak Tinkori Tulsi 
+			Uday Upendranath Utpal 
+			Vijay Vishwanath 
+		}
+		
+		female_names = { 
+			Amala Amita Anila Anjali Antara Anushka Aparna Arpita Arundhati 
+			Basanti Beena Bela Bhuvaneshwari Bidhumukhi Bidisha Bidita Bijoya Bina Bindubasini Bipasha 
+			Chandramukhi Charulata 
+			Debashree Deepali Devajyoti Devika Digendra Dishani 
+			Indira Indrani Ishita 
+			Jamuna Jaya Jogindra 
+			Kaberi Kadambini Kajol Kalyani Kamala Kamalini Kamini Kaminibala Kanaklata Kartikeyachandra Karuna Khetramoni Konkona Krishna 
+			Lakshmi Lakshmirani Lalita 
+			Madhabi Malina Mamata Manjari Manorama Meera Monika Monikangana Mushuma 
+			Nabanalini Nalini Nandana Nilima Nivedita 
+			Pallavi Panchami Patralekha Payal Prabhabati Prafulla Preeti Prerona Prima Protiva 
+			Radharani Raghumani Raima Rakhee Rani Ranu Renuka Reshmi Rhona Ridhima Rituparna Riya Roma Rupa Rupali 
+			Sagarika Sanghamitra Sangita Sapna Sarada Sarita Sarmila Sarnabala Sati Seema Shahana Shanti Shibani Shraddha Shyamsundari Shukhalata Subhamitra Suchitra Suprabha Supriya Surabala Swarnalata 
+			Tannishtha Tanushree Tarubala 
+			Ushoshi 
+			Vijayeta Vina 
+			Yogeeta 
+		}
+	}
+	vangiya = { #Bangladeshi
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.89 0.72 0.31 }
+		
+		male_names = { 
+			Abbas "Abbas Uddin" "Abdul Ali" "Abdul Azad" "Abdul Hafiz" "Abdul Hamid" "Abdul Jabbar" "Abdul Majid" "Abdul Muhith" "Abdul Munim" "Abdul Qadir" "Abdul Wadud" "Abdur Rab" "Abdur Rahim" "Abdur Rahman" "Abdur Rauf" "Abdur Razzak" "Abdus Sattar" Abid "Abidul Haque" "Abul Asad" "Abul Hayat" "Abul Kashem" "Abul Mansur" "Abu Nasir" "Abu Tahir" Adil "Aftab Uddin" Ahmed_Ahmad "Ahmed Akbar" Aijan Ajman Akbar Alamgir Alimuzzaman Altamas Amin "Amir Uddin" "Amirul Islam" Amjad "Anisul Islam" Anwar "Anwar Uddin" Arib Arifin "Asadul Haque" "Ashfaq Uddin" "Ashiqul Alam" "Ashiqur Rahman" "Ashiqus Samad" Ashok Ashraf "Ashraf Azad" Asif "Asiful Haque" "Asifur Rahman" "Ataul Karim" "Ataur Rahman" "Ataus Samad" Awlad Ayub_Job "Ayub Ali" Azim Aziz "Azizur Rahman" 
+			Badiuzzaman "Badr Uddin" "Baharul Islam" "Barkat Ullah" Bipul 
+			Dastgir "Diwan Muhammad" 
+			"Ehtesamul Haque" "Emadul Karim" Eyzah 
+			"Fahim Uddin" Faisal "Faisal Mahmud" "Faizur Rahman" "Fakhr Uddin" "Farash Uddin" Fateh Fazle "Fazle Fahim" "Fazlul Haque" "Fazlul Karim" "Fazlur Rahman" Ferdus_Firdaws Firoz_Firuz 
+			Golam_Ghulam "Golam Mustafa" 
+			Habib "Habibul Bashar" Hamid "Hamidur Rahman" Hamin Hammad Hasan_Hasan "Hasanur Rahman" Hossain 
+			Ibrahim_Abraham 
+			Jahangir Jamal "Jamal Uddin" Jamil Javed_Jawad 
+			Kamaluzzaman Khalid Kholikuzzaman 
+			"Lutfur Rahman" 
+			"Mafiz Uddin" "Mahbubul Haque" "Mahbubur Rahman" Mahfuz Mahmud "Mahmudul Haque" "Mamunur Rashid" Manik Masum "Matiur Rahman" "Mohi Uddin" "Moinul Hossain" "Momtaj Uddin" Muazzam Mudassir Muhammad_Muhammad "Muhammad Ajman" "Muhammad Ali" "Muhammad Ibrahim" "Mujibur Rahman" Mujtaba Murad_Murad Murshid Murtaja "Murtaja Basir" Musa_Moses "Muslih Uddin" Mustafa_Mustafa "Mustafa Sarwar" "Mustafizur Rahman" 
+			Nabil Nafis "Naimul Karim" "Najmul Hossain" Nasir "Nasir Ahmed" "Nasir Uddin" "Nazirul Haque" "Nazrul Islam" "Nur Ahmed" "Nurul Arifin" "Nurul Haque" "Nurul Islam" "Nurul Mumin" Nuruzzaman 
+			Omar Opu 
+			"Rafiqul Bari" Raihan "Raihan Murshid" Raja Rashid "Rashid Hossain" Rauf Reza "Rezaul Karim" Riaz Rizwan  
+			Sadat Sadiq Safwan "Saiful Islam" "Salah Uddin" Salman Samir Samrat Sanjib Sarwar Shafiat "Shahab Uddin" "Shah Alam" Shahid "Shahid Sharif" "Shahidul Alam" "Shahidul Islam" "Shahid Ullah" Shahin "Shah Jahan" Shahriar_Shahryar Shakib "Shakil Ahmed" "Shamsul Ulama" Shamsuzzaman Sharif Shawkat "Sheikh Muhammad" Shelim Siam Sikander_Alexander Siraj "Siraj Uddin" "Sirajul Haque" "Sirajul Hossain" 
+			Tabarak Tahir "Taki Ullah" Tamal Tanvir Tarique_Tarik "Tasar Uddin" Tauquir Topu 
+			"Washiqur Rahman" 
+			Yunus_Jonah Yusuf_Joseph "Yusuf Hossain" 
+			Zafar "Zahir Ullah" Zaid "Zainul Abedin" "Ziaul Roshan" "Ziaur Rahman" 
+		}
+		
+		female_names = { 
+			Adiba Afshan "Akhtar Jahan" Amina Amira "Amirun Nessa" Anjuman Anubha Anzema Arifa Arisha "Ashrafun Nessa" Asiya Asma Ayesha_Aisha "Azizun Nessa" 
+			Benazir Bidya Bipasha Bibi Bipasha 
+			"Fakhrun Nessa" Fargana Farida Fatima_Fatima Ferdausi Feroza Fultera 
+			Gouri 
+			Habiba "Habibun Nessa" Hamida Hasina 
+			Jabin Jahan Jahanara Jannat "Jannatul Kawsar" "Jannatul Kifayet" "Jasimun Nessa" "Jebun Nahar" "Jebun Nessa" Jhumur 
+			Kabita Kamala "Kamar Jahan" "Kamrun Nahar" "Karimun Nessa" Khadija "Khairun Nessa" Khalida Khatun Khurshida Kulsum 
+			Laila Lamisa Latifa "Latifun Nessa" Lila 
+			Mahiya Majida Malika Manzila Marguba Mariam_Mary "Mariamun Nessa" Marina Marjana Mashiat Meher Minara Momtaz Mosammat Moshaheda "Motijan Nessa" 
+			"Nabijun Nessa" Naiyar Najat Najma Nakhat Nashid Nasima Nazia Nazmun Naznin Nilufar Nishat Nur "Nur Jahan" "Nurun Nahar" "Nurun Nessa" Nusrat Nuzhat 
+			Padya Panna "Parijun Nessa" Parveen Purpita 
+			"Quamrun Nessa" 
+			Rabiya "Rahatun Nessa" Raheli Rahima Raihan Rani Rashida Razia Rehana Rezwana Rita Rokeya_Ruqqaya Romena Rothi Rowshan Rukhsana Rumana Runa Rupjan Rushanara 
+			Sabira Sadia Safina Saifa Saima Salma Samira Sanjida Sara Sapnara Sayra Sekandra_Alexandra Selina Setara Shahanara Shahdara Shahida "Shahidun Nessa" Shahla Shamima Sharifa Sharmila Sharmin Shathira Sheila Shirin Sobhana Sufia Sultana Suraiya Sushma 
+			Tabassum Tahmina "Tairun Nessa" Taiyaba "Tajun Nessa" "Talebun Nessa" Tamanna Taramon Tasnia Tasnim 
+			Umaima 
+			Yanur Yasmin_Yasmin Yeshim 
+			Zahida Zaima Zakia Zohra Zubaida 
+		}
+	}
+	rangpuri = {
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.5 0.6 0.4 }
+		
+		male_names = { 
+			Abbas "Abbas Uddin" "Abdul Awal" "Abdul Aziz" "Abdul Bari" "Abdul Halim" "Abdul Hamid" "Abdul Haqim" "Abdul Haque" "Abdul Jalil" "Abdul Kadir" "Abdul Kayum" "Abdul Kuddus" Abdullah_Abdullah "Abdul Majid" "Abdul Malik" "Abdul Mannan" "Abdur Rahman" "Abdur Razzak" "Abdur Rouf" "Abdus Salam" "Abdus Samad" "Abdus Sattar" "Abdus Sobhan" "Abu Bakar" "Abul Hassan" "Abul Hossain" "Abul Kalam" "Abul Kashem" "Abu Tahir" "Abu Talib" "Adelur Rahman" Afzal Ahmed_Ahmad "Ahmedul Kabir" Ahsan "Ahsanul Haque" Akbar Akhtaruzzaman Alamgir "Ala Uddin" "Alim Uddin" "Aminul Islam" "Anisul Haque" "Anwarul Kabir" Arif "Ariful Haque" "Asadul Habib" "Asadur Rahman" "Ashraful Alam" Asghar "Ashequr Rahman" Asif "Ataur Rahman" "Azharul Islam" "Azim Uddin" Aziz "Azizur Rahman" 
+			Badiuzzaman Badol 
+			"Dabirul Islam"  
+			"Ehsanul Karim" "Emdadul Haque" "Enayet Ullah"
+			"Faizur Rahman" "Fakhrul Islam" "Fakhruz Zaman" Faruque "Fazle Rabbi" "Fazlul Karim" 
+			Golam_Ghulam 
+			Habib_Habib "Habibur Rahman" Hafiz "Hafizur Rahman" Haider_Haydar "Harij Uddin" Hasan_Hasan Hasanuzzaman Hossain_Hussain Humayun 
+			Ibrahim_Abraham Ibtesham Ilias_Elijah Imam Ishaque_Isaac Ishtiaque Iskandar_Alexander Ismail_Ismail 
+			Jahangir Jahid Jalal "Jalal Uddin" "Jamir Uddin" "Jannatul Ferdus" Javed_Jawad 
+			Kamal "Kamal Uddin" "Kamruzzaman" Kanai "Karim Uddin" "Kasim Uddin" "Khabir Uddin" "Khairul Islam" Khalil "Khalilur Rahman"  
+			"Lutfur Rahman" 
+			"Mahbubur Rahman" Mahfuz Mahmud_Mahmud "Mahmudul Hasan" "Mahmudul Islam" "Manjurul Islam" Mansur Maqbul "Mashiur Rahman" "Matiar Rahman" "Mizanur Rahman" "Mohi Uddin" "Moin Uddin" "Mojibur Rahman" "Mominul Islam" "Momtaj Uddin" "Monajat Uddin" Motahar Muhammad_Muhammad Muhsin "Mujibur Rahman" "Mukhlesur Rahman" "Mukidul Islam" "Munir Uddin" Murad_Murad Musa_Moses Mustafa_Mustafa "Mustafizur Rahman" 
+			"Naeem Islam" "Nahid Islam" Najib "Nazrul Haque" "Najrul Islam" Nasir "Nur Muhammad" "Nurul Alam" "Nurul Islam" Nuruzzaman 
+			Qais 
+			"Rabiul Haque" "Rafiqul Bari" "Rafiqul Islam" Rafiqullah "Rahim Uddin" Rakin Rashek Rashid Rashiduzzaman Rauf Razin "Reaz Uddin" Reza_Rezha "Rezaul Haque" "Rezaur Rahman" Rokanuddaula Rubaiyat "Rezwanul Haque" "Ruhul Amin" "Ruhul Islam" Rustam 
+			Sadakat Saddam Sadique Saif Sajeeb "Sajidul Islam" Sakhawat "Saif Uddin" "Saiful Alam" "Saifur Rahman" "Salah Uddin" Salamat "Sanaul Haque" Shafi "Shafiqul Ghani" Shahadat "Shah Alam" Shahin "Shah Jahan" Shahriar Shahrin Shamim "Shams Uddin" "Shamsul Ajam" "Shamsul Alam" "Shamsul Hossain" Shamsuzzaman "Sharaf Uddin" "Shariful Alam" Shawkat Shibli "Shiraz Islam" Siddique Sikander_Alexander "Sirajul Haque" Soliman_Solomon  
+			Tahir "Tajul Islam" "Tajul Kabir" Tanbir Tarique_Tarik Taslim Tipu "Tofazzal Hossain" 
+			Umar_Umar 
+			"Waliur Rahman" Wazed 
+			Yunus_Jonah Yusuf_Joseph 
+			Zafar "Zahir Uddin" Zaman "Ziaur Rahman" "Zikrul Haque" 
+		}
+		
+		female_names = { 
+			Adiba "Akhtar Jahan" Amina Amira "Amirun Nessa" Anjuman Anubha Anzema Arifa "Ashrafun Nessa" Asiya Asma Ayesha_Aisha "Azizun Nessa" 
+			Benazir Bidya Bipasha Bibi 
+			"Fakhrun Nessa" Fargana Farida Fatima_Fatima Ferdausi Feroza Fultera 
+			Gouri 
+			Habiba "Habibun Nessa" Hamida Hasina 
+			Jabin Jahan Jahanara Jannat "Jannatul Kawsar" "Jannatul Kifayet" "Jasimun Nessa" "Jebun Nahar" "Jebun Nessa" 
+			Kabita Kamala "Kamar Jahan" "Kamrun Nahar" "Karimun Nessa" Khadija "Khairun Nessa" Khalida Khatun Khurshida Kulsum 
+			Laila Lamisa Latifa "Latifun Nessa" Lila 
+			Mahiya Majida Malika Manzila Mariam_Mary "Mariamun Nessa" Marina Marjana Mashiat Meher Minara Momtaz Mosammat Moshaheda "Motijan Nessa" 
+			"Nabijun Nessa" Naiyar Najat Najma Nashid Nasima Nazmun Naznin Nilufar Nishat "Nurun Nessa" Nuzhat 
+			Padya Panna "Parijun Nessa" Parveen Purpita 
+			"Quamrun Nessa" 
+			Rabiya "Rahatun Nessa" Raheli Rahima Raihan Rani Rashida Razia Rehana Rezwana Rita Rokeya_Ruqqaya Romena Rothi Rowshan Rukhsana Rumana Runa Rupjan Rushanara 
+			Sabira Sadia Safina Saifa Saima Salma Samira Sanjida Sara Sapnara Sayra Sekandra_Alexandra Selina Setara Shahanara Shahdara Shahida "Shahidun Nessa" Shamima Sharifa Sharmila Sharmin Shathira Sheila Shirin Sobhana Sufia Sultana Suraiya 
+			Tabassum Tahmina "Tairun Nessa" Taiyaba "Talebun Nessa" Tamanna Taramon Tasnia Tasnim 
+			Yanur Yasmin_Yasmin Yeshim 
+			Zahida Zaima Zakia Zohra Zubaida 
+		}
+	}
+	assamese = {
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.5 0.7 0.3 }
+		
+		male_names = { 
+			Balavarman Bhaskarvarman Bhattamahabahu Bhutivarman Birapala Brahmapala Chandramukhavarman 
+			Dharmapala Ganapativarman Gopala Harjjaravarman Harshadeva Harshapala Harshavarman 
+			Indrapala Jayamala Jayapala Kalyanavarman Kumarapala Mahendravarman Narayanavarman 
+			Pralambha Purandelapala Pushyavarman Ratnadhwajpala Ratnapala 
+			Salasthamba Samudravarman Sthitavarman Supratisthitavarman Susthitavarman 
+			Timgyadeva Tyagasimha Ummoka Vanamalavarmadeva Vigrahastambha Vijaya Virabahu
+			Ogni_Agni Orjuna_Arjuna Omit_Amita Obixek_Abisheka Ojoy
+			Bissax_Vishvasa
+			Esh_Esha
+			Sondro_Chandra
+		}
+		
+		female_names = { 
+			Ahiavadevi Bhogavati Dattadevi Devavati Durlabha Gandharavati Kuladevi Nayanadevi
+			Ratnavati Suvrata Syamadevi Vasumati Vijnanavati Vijnayavati Yajiyavati Yajnavati
+			Omia_Amrita 
+		}
+	}
+	varendri = {
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.95 0.12 0.31 }
+		
+		male_names = { 
+			"Abdul Ahad" "Abdul Alim" "Abdul Aziz" "Abdul Bari" "Abdul Gafur" "Abdul Hai" "Abdul Hamid" "Abdul Haque" "Abdul Hasid" "Abdul Jalil" "Abdul Karim" "Abdul Latif" "Abdul Malik" "Abdul Mumin" "Abdul Quddus" "Abdul Wadud" "Abdul Wahid" "Abdur Rahman" "Abdur Razzaq" "Abdus Sobhan" "Abu Bakar" "Abu Haider" "Abu Hena" "Abul Hossain" "Abul Kalam" Ahmed_Ahmad Akbar Akhtar "Akhtar Uddin" Akhtaruzzaman Akram Alamgir "Ala Uddin" Ali_Ali Altaf Amalesh "Amin Uddin" "Aminul Haque" Amiya Amjad Anwar "Anwarul Azim" Arafat Arif "Arifur Rahman" Ashraf "Ataur Rahman" "Azim Uddin" "Azizul Islam" "Azizur Rahman" 
+			Badiuzzaman 
+			Chandra 
+			Daanish Dilwar Durgadas 
+			Ehsan "Ekramul Alam" "Emaz Uddin" "Enamul Haque" 
+			"Faezul Haque" Faruque "Fazle Rabbi" "Fazlul Haque" 
+			Golam_Ghulam 
+			Habib "Habibur Rahman" Haider_Haydar Hamid "Harez Uddin" Harun_Aaron "Harunur Rashid" Helal_Hilal Helaluzzaman Hossain_Hussain Humayun "Husam Uddin" 
+			Iftikhar Ijaz "Imrul Qais" Imtiaz Iqbal Ishtiaque Iskandar_Alexander Israfil 
+			Jadunath Jayanto Junaid_Junayd 
+			Kabir "Kabir Uddin" "Kafil Uddin" "Kalim Uddin" Kamal Kamaruzzaman "Khademul Bashar" Khairuzzaman Khalid "Khalilur Rahman" Khurshid Kumar 
+			"Latifur Rahman" "Lutful Hassan" 
+			Mahbub "Mahbubul Alam" Mahfuz Mahmud_Mahmud Mansur Mayan "Miraj Uddin" Mohor "Moin Uddin" "Momtaj Uddin" "Momtajur Rahman" Monjur Mosaddek "Moshiur Rahman" Motin Mozahar "Mozammel Haque" Muhammad_Muhammad "Muhammad Ali" "Mujibur Rahman" Mukhtar "Mumnunul Keramat" Murshid "Musharraf" "Mushfiqur Rahim" "Mushfiqur Rahman" "Mustafizur Rahman" Muzaffar 
+			Nadim "Najmul Haque" "Najmul Huda" "Najmul Hussain" "Najmul Qais" Naosher "Nasir Uddin" "Nazrul Islam" Nihaduzzaman "Nizam Uddin" Nuruzzaman 
+			"Obaid Ullah" 
+			Polan Pramatha Prankrishna Premanshu Purno 
+			"Qais Uddin" 
+			"Rabiul Islam" "Rafiq Uddin" "Rafiqul Alam" "Rafiqul Haque" "Rafiqul Islam" "Rafiqun Nabi" Rajkumar Rajnarayan Ranesh "Rezaul Bari" "Rezaul Islam" "Rezaul Karim" Rimon
+			"Sabibul Azam" Sadhan "Saiful Islam" "Saifur Rahman" "Salah Uddin" Saleh "Salim Uddin" "Sanjamul Islam" Sarfaraz Sarwar "Sazedur Rahman" Shahiduzzaman "Shah Jahan" "Shamil Uddin" Shamshad "Shams Uddin" "Shamsul Alam" Shamsuzzoha Shibli Shujauddaulah 
+			"Tajul Islam" Tanvir Tarique_Tarik "Tariqul Islam" Tarun 
+			"Wahidur Rahman" Wajid 
+			Yunus_Jonah Yusuf_Joseph 
+			Zahid Zakaria_Zachary "Ziaur Rahman" 
+		}
+		
+		female_names = { 
+			Adiba "Akhtar Jahan" Amina Amira "Amirun Nessa" Anjuman Anubha Anzema Arifa "Ashrafun Nessa" Asiya Asma Ayesha_Aisha "Azizun Nessa" 
+			Benazir Bidya Bipasha Bibi 
+			"Fakhrun Nessa" Fargana Farida Fatima_Fatima Ferdausi Feroza Fultera 
+			Gouri 
+			Habiba "Habibun Nessa" Hamida Hasina 
+			Jabin Jahan Jahanara Jannat "Jannatul Kawsar" "Jannatul Kifayet" "Jasimun Nessa" "Jebun Nahar" "Jebun Nessa" 
+			Kabita Kamala "Kamar Jahan" "Kamrun Nahar" "Karimun Nessa" Khadija "Khairun Nessa" Khalida Khatun Khurshida Kulsum 
+			Laila Lamisa Latifa "Latifun Nessa" Lila 
+			Mahiya Majida Malika Manzila Mariam_Mary "Mariamun Nessa" Marina Marjana Mashiat Meher Minara Momtaz Mosammat Moshaheda "Motijan Nessa" 
+			"Nabijun Nessa" Naiyar Najat Najma Nashid Nasima Nazmun Naznin Nilufar Nishat "Nurun Nessa" Nuzhat 
+			Padya Panna "Parijun Nessa" Parveen Purpita 
+			"Quamrun Nessa" 
+			Rabiya "Rahatun Nessa" Raheli Rahima Raihan Rani Rashida Razia Rehana Rezwana Rita Rokeya_Ruqqaya Romena Rothi Rowshan Rukhsana Rumana Runa Rupjan Rushanara 
+			Sabira Sadia Safina Saifa Saima Salma Samira Sanjida Sara Sapnara Sayra Sekandra_Alexandra Selina Setara Shahanara Shahdara Shahida "Shahidun Nessa" Shamima Sharifa Sharmila Sharmin Shathira Sheila Shirin Sobhana Sufia Sultana Suraiya 
+			Tabassum Tahmina "Tairun Nessa" Taiyaba "Talebun Nessa" Tamanna Taramon Tasnia Tasnim 
+			Yanur Yasmin_Yasmin Yeshim 
+			Zahida Zaima Zakia Zohra Zubaida 
+		}
+	}
+	rajbongshi = {
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.30 0.67 0.55 }
+
 		male_names = {
-			Amritnarayan Balabhata Balinarayan Ballalsen Basudevnayaran 
-			Bhagadatta Bhairabendranarayan Bhatta Bhavashankari Bhimsingha Birnayaran 
-			Chandrasen Chandranarayan Chaturanan Chilarai 
-			Danujmadhava Dasharathadeva Devakhadga Devapala Devendranarayan 
-			Dhairjendranayaran Dharendranarayan Dharmapala Dhirsingha 
-			Gajnarayan Gopala Govindachandra Govindapala 
-			Hajo Harendranarayan Haridevnarayan Hariyamandal Hemantasen Indranarayan 
-			Jadu Jagaddipendranarayan Jatakhadga Jayanarayan Jayapala Jitendranarayan 
-			Kalyanachandra Kamalnarayan Keshabsen Khadgodyama Krishanmishra Krishnaroy 
-			Kumarapala Kumudnarayan Ladahachandra Lakshmansen Lakshmichandra Lakshminarayan Lomapada 
-			Madanapala Mahendrapala Mahendrasingha Mahindranarayan Mahipala Manava Mukundanarayan 
-			Naranarayan Narasingha Narayanapala Narendranarayan Nayapala Nripendranarayan 
-			Parikshitnayaran Prananarayan Prannath Pratapnarayan Pratapnarayanroy Pushkaranadhipa 
-			Raghudev Rajabhata Rajadinaj Rajaganesha Rajendranarayan Rajrajendranarayan Rajyapala 
-			Ramapala Ramnath Ranasura Ranjitsingha Roopnarayan Rudranarayan 
-			Samudrasen Shanibhangar Shashanka Shivanarayan Shivendranarayan Shukladhwaj Shurapala 
-			Srichandra Srimanta Subarnachandra Sukhdev Suryanarayan Traillokyachandra 
-			Udirnakhadga Uditanarayan Upendranayaran Vakapala Vapyata Vigrahapala 
-			Vijaynarayan Vijaysen Vijaysingha Virajdendranarayan Vishwarupsen Vishwasingha
-			"Bhairav Singh" "Bhavesh" "Bhogishwar" "Dev Singh" "Dhir Singh" Dhireshwar 
-			"Ganeshwar Singh" "Gang Dev" Harasimhadeva "Hari Singh" "Hemant Sen" 
-			"Kameshwar" "Kirti Singh" Jyotirishwar "Laxman Sen" "Laxminath Singh Dev" Madanpal 
-			"Nanya Dev" "Nar Singh" "Narsingh Dev" "Padma Singh" "Rambhadra Singh Dev" Rameshwar 
-			"Samant Sen" "Shakrasingh Dev" "Shiv Singh"  "Vallal Sen" "Vijay Sen"
-			Agnimitra Andhraka Ayus Bhagabhadra Bhikhari Bhumimitra Devabhuti Ghosha Gopal Govindapal 
-			Khsetravridha Maharshi Mahendra Maurayadhwaj Narayana Pulindaka Pusyamitra 
-			Sahtiya Susarman Vajramitra Vasudeva Vasujyeshtha Vasumitra 
+			Amrik Ananta Arjun Ashok Aswani 
+			Badol Basanta Bhumi "Bhumi Prasad" Biranarayan Birendra Bishwanath Brajen 
+			Chandra 
+			Debesh Devraj Dhanjyoti Dhiman Dhiren Dinesh Dipak Domalal Dulal 
+			Golak Gorelal Govinda Gunjan Gyaneshwor 
+			Harendra Harka Hirakjyoti 
+			Indra Indramohan 
+			Jagadish Jagannath Jayaram 
+			Kaisar Kalyan Kamal Kanthi Kartick Keshab Khadag "Khadag Prasad" Khoshal Krishnara Kumar "Kumar Shanu" 
+			Lakhidhar Lakshman Lalit Litu 
+			Madhab Madhusudan Mahadev Mahendra Manoj Manoranjan Mukunda 
+			Nagendra Nanigopal Narayan Naren Nisith Nituparna Nupur 
+			Panchanan Paramananda Partha Prabhu Pradipta Prakash Prakritish Pranab Pranjal Prasad Purna "Purna Prasad" 
+			Ramesh Ramkumar Ripon "Ripon Kumar" 
+			Sambhu Sanjay Sanjit Sarat Saymon Siddhiram Suhrawadi Sukumar Suraj Sushanto 
+			"Tara Nath" Tilak "Top Lal" Tuluram Tushar 
+			Upendra Upendranath 
 		}
-		female_names = {
-			Amrapali Amritakala Asima Bhavashankari "Bishwas Devi" Bhogavati Bibibai Dattadevi Devavati "Devi Ahiylya" Gandharavati
-			Gayatri Himadrija Hira Jira Kanchani Mahendrani Malavyadevi Nayanadevi Rani Ratnadevi Suvrata
-			Syamadevi Vijnayavati Vina Yajnavati
+		female_names = { 
+			Baby Bacchia 
+			Champala 
+			Debaree 
+			Hrishita 
+			Indu 
+			Juriti 
+			Kamala Kshirodebala 
+			Lakshmi Leela 
+			Mailani Maram Maya "Maya Rani" Minu 
+			Nanduri Neelam Nimsari 
+			Phulti Pranami Pratima
+			Rajasree Rajbanshi Ratna 
+			Smriti Soma Swapna 
 		}
+
+		from_dynasty_prefix = "of "
+
+		pat_grf_name_chance = 50
+		mat_grf_name_chance = 40
+		father_name_chance = 0
 		
-		
-		founder_named_dynasties = yes
-		
-		castes = yes
-		
+		pat_grm_name_chance = 30
+		mat_grm_name_chance = 30
+		mother_name_chance = 0
+
 		modifier = default_culture_modifier
+	}
+	sylheti = {
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.45 0.02 0.1 }
+		
+		male_names = { 
+			"Abdul Ahad" "Abdul Aziz" "Abdul Basit" "Abdul Hakim" "Abdul Haque" "Abdul Hasib" "Abdul Jabbar" "Abdul Jalil" "Abdul Karim" Abdullah "Abdul Latif" "Abdul Majid" "Abdul Malik" "Abdul Matin" "Abdul Matlib" "Abdul Mubeen" "Abdul Mukit" "Abdul Muktadir" "Abdul Mumin" "Abdul Mustaqim" "Abdul Qadir" "Abdul Qayum" "Abdun Nur" "Abdur Rahim" "Abdur Rahman" "Abdur Rakib" "Abdus Samad" "Abdus Sattar" Abid Abrar Adnan Afsar Aftab Ahmed_Ahmad "Ahmed Ullah" Ahsan Ajmal Akhlaq Akhtar "Akhtarul Islam" Alam "Ala Uddin" Alfaz Ali_Ali "Alim Uddin" "Ali Sher" Altaf Amin "Aminul Haque" Amir "Amiruz Zaman" Amjad Anwar Ardhendu Arif "Ariful Haque" Ashraf Asif Athar "Atikur Rahman" "Azharul Islam" Aziz "Azizur Rahman" Azmat 
+			"Badar Uddin" Bajlur Bashir "Bashirul Haque" Bibhash Bilal Bulbul "Burhan Uddin" 
+			Chandra 
+			Dildar Dilwar 
+			"Ebadot Hossain" Ejaz Enam "Enamul Haque" 
+			"Faizul Aman" "Faiz Ullah" "Faizur Rahman" Farhan Farid "Farid Uddin" Faruque_Faruk "Fazlur Rahman" Ferdus_Firdaws 
+			Ghazi "Gias Uddin" 
+			Habib "Habibur Rahman" Hafiz Haider_Haydar Hamid Hasan_Hasan Helal Hossain_Hussain Humayun  
+			Ibrahim_Abraham Idris Iftikhar Ilias_Elijah Imran Imtiaz Iqbal Islah Islam Ismail 
+			Jalal_Jalal "Jalal Uddin" "Jamilur Reza" Javed_Jawad Junaid 
+			Kaisar Kalim Kamal "Kamar Uddin" Kamran Karim Khalil "Khalil Ullah" Kumar "Kutub Uddin" 
+			Liaqat Lokman Lutf "Lutfur Rahman" 
+			Madris Mahbub "Mahbubur Rahman" Mahmud_Mahmud "Mahmudul Amin" Majid Makbul Mamun Manjur "Manjurul Islam" Maqsud Masud "Moin Uddin" "Moinul Islam" Mokabbir Muhammad_Muhammad "Muhibur Rahman" Muquim Murad Mushahid Mustafa Muzammil 
+			Nabil Nahas Nasim Nasir "Nasir Uddin" "Nasirul Alam" Nasum Nausheran "Nazrul Islam" Nizam "Nizam Uddin" Nuhash "Nur Uddin" "Nurul Haque" "Nurul Islam" 
+			"Obaidul Haque" 
+			"Rafiqul Haque" "Rafiqul Islam" Ragib Rahat "Rahatul Ferdus" Rahman Raihan Rashid Redwan_Ridwan "Redwanul Haque" Reza_Rezha "Rezaul Haque" "Rezaul Karim" Ruhul 
+			"Sadr Uddin" "Saidur Rahman" Saif "Saiful Islam" "Saifur Rahman" "Saifur Razzak" Salah "Salah Uddin" "Salim Uddin" Salman Sattar Sayem Shafi Shafiq "Shafiqur Rahman" Shahan "Shahanur Rahman" Shahid Shahriar Shakhawat Shamsher "Shams Uddin" "Sharaf Uddin" Shefali Shoaib Siddiq "Siddiqur Rahman" Sikander_Alexander "Siraj Uddin" Sohel Sushil 
+			Tahir Tapash Tarique Tassaduq Tawfiq 
+			"Wahidur Rahman" "Waysur Rahman" 
+			Yahya_John Yamin Yusuf_Joseph 
+			Zafar Zaid Zakaria_Zachary Ziya Zubayr 
+		}
+		
+		female_names = { 
+			Adiba "Akhtar Jahan" Amina Amira "Amirun Nessa" Anjuman Anubha Anzema Arifa "Ashrafun Nessa" Asiya Asma Ayesha_Aisha "Azizun Nessa" 
+			Benazir Bidya Bipasha Bibi 
+			"Fakhrun Nessa" Fargana Farida Fatima_Fatima Ferdausi Feroza Fultera 
+			Gouri 
+			Habiba "Habibun Nessa" Hamida Hasina 
+			Jabin Jahan Jahanara Jannat "Jannatul Kawsar" "Jannatul Kifayet" "Jasimun Nessa" "Jebun Nahar" "Jebun Nessa" 
+			Kabita Kamala "Kamar Jahan" "Kamrun Nahar" "Karimun Nessa" Khadija "Khairun Nessa" Khalida Khatun Khurshida Kulsum 
+			Laila Lamisa Latifa "Latifun Nessa" Lila 
+			Mahiya Majida Malika Manzila Mariam_Mary "Mariamun Nessa" Marina Marjana Mashiat Meher Minara Momtaz Mosammat Moshaheda "Motijan Nessa" 
+			"Nabijun Nessa" Naiyar Najat Najma Nashid Nasima Nazmun Naznin Nilufar Nishat "Nurun Nessa" Nuzhat 
+			Padya Panna "Parijun Nessa" Parveen Purpita 
+			"Quamrun Nessa" 
+			Rabiya "Rahatun Nessa" Raheli Rahima Raihan Rani Rashida Razia Rehana Rezwana Rita Rokeya_Ruqqaya Romena Rothi Rowshan Rukhsana Rumana Runa Rupjan Rushanara 
+			Sabira Sadia Safina Saifa Saima Salma Samira Sanjida Sara Sapnara Sayra Sekandra_Alexandra Selina Setara Shahanara Shahdara Shahida "Shahidun Nessa" Shamima Sharifa Sharmila Sharmin Shathira Sheila Shirin Sobhana Sufia Sultana Suraiya 
+			Tabassum Tahmina "Tairun Nessa" Taiyaba "Talebun Nessa" Tamanna Taramon Tasnia Tasnim 
+			Yanur Yasmin_Yasmin Yeshim 
+			Zahida Zaima Zakia Zohra Zubaida 
+		}
 	}
 	
 	oriya = { # Indo-Aryan
@@ -464,6 +733,36 @@ indo_aryan_group = {
 		allow_looting = yes
 		
 		modifier = default_culture_modifier
+	}
+	maithil = {
+		graphical_cultures = { indiangfx }
+		
+		color = { 0.20 0.80 0.61 }
+		
+		male_names = { 
+			Anangabhima Anantasaktivarman Anantavarman Apsaradeva Arthapatiraja Ayasobhita Balabhadra Barjena 
+			Betta Bhanu Bhavadattavarman Bhimaratha Bhimasena Bhramarbara Bhupendra Bhupendravarman Chandravarman 
+			Charamparaja Damodara Danai Danarnava Dayita Dayitavarman Devananda Devendravarman Dharmaraja Dharmarstha 
+			Dhruvananda Dibyasingha Digbhanja Durgaraja Durjaya Durjayabhanja Gangadhara Gandhata Gangakavilasa Gayada 
+			Gopinatha Gunamaharnava Gunarnava Gundama Hamvira Harekrushna Hastivarman Hemantavarman Indranatha Indravarman 
+			Jahangir Janmejaya Jayananda Jayaraja Jayasimha Jayasthambha Jayavarma Jayavarmadeva Kakharua Kalaha Kalahastambha 
+			Kalasa Kalua Kalyankalasa Kamarnava Kanchana Kanchanastambha Kapilendra Kapilendradeva Karnadeva Khadaga Kotta 
+			Kottabhanja Ksemankaradeva Kulastambha Lakshmikaradeva Madhavaraja Madhavavarman Madhukamarnava Mahendraditya 
+			Mahendravarman Mahinda Manamatra Matradhyarya Mukunda Nahusa Nandaprabhanjana Nandaprabhanjanavarman Nandavarman 
+			Narasimha Narendra Netta Nettabhanja Padmanava Paramananda Prasannamatra Prataparudra Pravaraja Prithivarman 
+			Prithivimaharaja Prithvibhanja Prithvidena Pulindasena Puranjaya Purushottama Rajabhanja Rajaraja Ramachandra 
+			Ramachandradeva Ranabhanja Ranabhita Ranadurjaya Ranga Rangabhanja Sailobhava Sainyabita Saktivarman Samantavarman 
+			Sambhuyasa Sankaravarman Santikaradeva Sarabha Satru Satrubhanja Satyavarman Sila Silabhanja Sivakaradeva Sivananda 
+			Skandavarman Sobhanaraja Solyana Subhakaradeva Sudevaraja Suravala Teja Tejavarsha Tustikara Udaya Udayavarsha Udita 
+			Udyotakesari Umavarman Unmattasimha Utidavarsha Vaaraharaja Vajrahasta Vidhyadhara Vidhyadharabhanja Vijaya Vinayaditya 
+			Vinita Vishakavarman Vrishadhvaja Vyaghraraja Yayati
+		}
+		
+		female_names = { 
+			Ahiavadevi Apsaradevi Bhogavati Dandi Dandimahadevi Dattadevi Devavati Dharma Dharmamahadevi Durlabha Gandharavati 
+			Gauri Gaurimahadevi Kalyanavati Karnadevi Kuladevi Lakshmi Lakshmikaradevi Lilavati Mahadevi Nayanadevi Rajasundari 
+			Ratnavati Suvrata Syamadevi Vakula Vakulamahadevi Vasumati Vijnanavati Vijnayavati Yajiyavati Yajnavati
+		}
 	}
 }
 

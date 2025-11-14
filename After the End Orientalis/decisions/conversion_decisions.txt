@@ -973,250 +973,6 @@ targetted_decisions = {
 		}
 	}
 	
-	convert_to_swedish = {
-		only_playable = yes
-		
-		filter = self
-		ai_target_filter = self
-		ai_check_interval = 60
-		
-		potential = {
-			is_playable = yes
-			culture = norse
-			capital_scope = {
-				region = custom_sweden
-			}
-			any_realm_province = {
-				culture = swedish
-			}
-			NOT = { government = chinese_imperial_government }
-			NOT = {
-				has_alternate_start_parameter = { key = culture_names value = random }
-			}
-		}
-		allow = {
-			OR = {
-				culture = gotalander
-				culture = svealander
-			}
-		}
-		effect = {
-			culture = swedish
-			any_courtier = {
-				limit = {
-					culture = norse
-					employer = { character = ROOT }
-					dynasty = ROOT
-				}
-				culture = swedish
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0.5 # Slow it down a bit
-			}
-			
-			modifier = { # Do not flip if we're in a huge Scandinavian empire
-				factor = 0
-				top_liege = { 
-					OR = {
-						culture = gotalander
-						culture = svealander
-					}
-				}
-				494 = { # Uppland
-					owner = {
-						same_realm = ROOT
-					}
-				}
-				508 = { # Akershus
-					owner = {
-						same_realm = ROOT
-					}
-				}
-				389 = { # Sjaelland
-					owner = {
-						same_realm = ROOT
-					}
-				}
-			}
-			
-			modifier = {
-				factor = 0.01
-				capital_scope = {
-					NOT = { culture = swedish }
-				}
-			}
-			modifier = {
-				factor = 2.0
-				liege = { culture = swedish }
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 2
-					culture = swedish
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 4
-					culture = swedish
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 6
-					culture = swedish
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 8
-					culture = swedish
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 10
-					culture = swedish
-				}
-			}
-		}
-	}
-	convert_to_norwegian = {
-		only_playable = yes
-		
-		filter = self
-		ai_target_filter = self
-		ai_check_interval = 60
-		
-		potential = {
-			is_playable = yes
-			culture = norse
-			capital_scope = {
-				region = custom_norway
-			}
-			any_realm_province = {
-				culture = norwegian
-			}
-			NOT = { government = chinese_imperial_government }
-			NOT = {
-				has_alternate_start_parameter = { key = culture_names value = random }
-			}
-		}
-		allow = {
-			OR = {
-				culture = tronder
-				culture = ostlending
-				culture = vestlending
-			}
-		}
-		effect = {
-			culture = norwegian
-			any_courtier = {
-				limit = {
-					culture = norse
-					employer = { character = ROOT }
-					dynasty = ROOT
-				}
-				culture = norwegian
-			}
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 0.5 # Slow it down a bit
-			}
-			
-			modifier = { # Do not flip if we're in a huge Scandinavian empire
-				factor = 0
-				top_liege = { 
-					OR = {
-						culture = tronder
-						culture = ostlending
-						culture = vestlending
-					}
-				}
-				494 = { # Uppland
-					owner = {
-						same_realm = ROOT
-					}
-				}
-				508 = { # Akershus
-					owner = {
-						same_realm = ROOT
-					}
-				}
-				389 = { # Sjaelland
-					owner = {
-						same_realm = ROOT
-					}
-				}
-			}
-			
-			modifier = {
-				factor = 0.01
-				capital_scope = {
-					NOT = { culture = norwegian }
-				}
-			}
-			modifier = {
-				factor = 2.0
-				liege = { culture = norwegian }
-			}
-			
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 2
-					culture = norwegian
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 4
-					culture = norwegian
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 6
-					culture = norwegian
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 8
-					culture = norwegian
-				}
-			}
-			modifier = {
-				factor = 1.1
-				num_culture_realm_provs = {
-					value = 10
-					culture = norwegian
-				}
-			}
-		}
-	}
-	
 	convert_to_reformed = {
 		only_playable = yes
 		
@@ -1238,7 +994,19 @@ targetted_decisions = {
 				religion = chuma
 				religion = heilong
 				religion = shamanist
-				religion = ak_jeng
+				religion = kaharingan
+				religion = dayawist
+				religion = holchu
+				religion = diwata
+				religion = momolian
+				religion = animist
+				religion = makasol
+				religion = bimo
+				religion = benzhu
+				religion = vvlufi
+				religion = nuo
+				religion = bushranger
+				religion = dreamer
 			}
 		}
 		allow = {
@@ -1291,6 +1059,58 @@ targetted_decisions = {
 			if = {
 				limit = { religion = ak_jeng }
 				religion = ak_jeng_reformed
+			}
+			if = {
+				limit = { religion = kaharingan }
+				religion = kaharingan_reformed
+			}
+			if = {
+				limit = { religion = dayawist }
+				religion = dayawist_reformed
+			}
+			if = {
+				limit = { religion = holchu }
+				religion = holchu_reformed
+			}
+			if = {
+				limit = { religion = diwata }
+				religion = diwata_reformed
+			}
+			if = {
+				limit = { religion = momolian }
+				religion = momolian_reformed
+			}
+			if = {
+				limit = { religion = animist }
+				religion = animist_reformed
+			}
+			if = {
+				limit = { religion = makasol }
+				religion = makasol_reformed
+			}
+			if = {
+				limit = { religion = bimo }
+				religion = bimo_reformed
+			}
+			if = {
+				limit = { religion = benzhu }
+				religion = benzhu_reformed
+			}
+			if = {
+				limit = { religion = vvlufi }
+				religion = vvlufi_reformed
+			}
+			if = {
+				limit = { religion = nuo }
+				religion = nuo_reformed
+			}
+			if = {
+				limit = { religion = bushranger }
+				religion = bushranger_reformed
+			}
+			if = {
+				limit = { religion = dreamer }
+				religion = dreamer_reformed
 			}
 			
 			hidden_tooltip = {
@@ -1412,186 +1232,121 @@ targetted_decisions = {
 						religion = ak_jeng
 						ak_jeng_reformed = { has_religion_feature = religion_proselytizing }
 					}
+					AND = {
+						religion = kaharingan
+						kaharingan_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = dayawist
+						dayawist_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = holchu
+						holchu_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = diwata
+						diwata_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = momolian
+						momolian_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = animist
+						animist_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = makasol
+						makasol_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = bimo
+						bimo_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = benzhu
+						benzhu_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = vvlufi
+						vvlufi_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = nuo
+						nuo_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = bushranger
+						bushranger_reformed = { has_religion_feature = religion_proselytizing }
+					}
+					AND = {
+						religion = dreamer
+						dreamer_reformed = { has_religion_feature = religion_proselytizing }
+					}
 				}
 			}
 		}
 	}
 	
-	# convert_to_hinduism = {
-		# only_playable = yes
-		# icon_religion = hindu
+	convert_to_hinduism = {
+		only_playable = yes
+		icon_religion = hindu
 		
-		# filter = self
-		# ai_target_filter = self
-		# ai = no
+		filter = self
+		ai_target_filter = self
+		ai = no
 	
-		# potential = {
-			# is_playable = yes
-			# has_dharmic_religion_trigger = yes
-			# NOT = { religion = hindu }
-			# is_theocracy = no
-			# NOT = {
-				# has_alternate_start_parameter = { key = religion_names value = random }
-			# }
-		# }
-		# allow = {
-			# is_adult = yes
-			# prestige = 500
-			# NOT = { trait = zealous }
-			# any_realm_province = {
-				# religion = hindu
-			# }
-			# custom_tooltip = {
-				# text = indian_has_not_converted
-				# NOT = { has_character_flag = india_converted }
-			# }
-			# holy_order = no
-		# }
-		# effect = {
-			# if = {
-				# limit = { higher_tier_than = BARON }
-				# religion_authority = {
-					# modifier = ruler_converted_from
-				# }
-			# }
-			# religion = hindu
-			# if = {
-				# limit = { higher_tier_than = BARON }
-				# hidden_tooltip = {
-					# religion_authority = {
-						# modifier = ruler_converted_to
-					# }
-				# }
-			# }
-			# set_character_flag = india_converted
-			# prestige = -500
-			# piety = 100
-			# hidden_tooltip = { character_event = { id = RoI.110 } } # Choose branch
-		# }
-		# revoke_allowed = {
-			# always = no
-		# }
-		# ai_will_do = {
-			# factor = 0
-		# }
-	# }
-
-	# convert_to_buddhism = {
-		# only_playable = yes
-		# icon_religion = buddhist
-		
-		# filter = self
-		# ai_target_filter = self
-		# ai = no
-	
-		# potential = {
-			# is_playable = yes
-			# has_dharmic_religion_trigger = yes
-			# NOT = { religion = buddhist }
-			# is_theocracy = no
-			# NOT = {
-				# has_alternate_start_parameter = { key = religion_names value = random }
-			# }
-		# }
-		# allow = {
-			# is_adult = yes
-			# prestige = 500
-			# NOT = { trait = zealous }
-			# any_realm_province = {
-				# religion = buddhist
-			# }
-			# custom_tooltip = {
-				# text = indian_has_not_converted
-				# NOT = { has_character_flag = india_converted }
-			# }
-		# }
-		# effect = {
-			# if = {
-				# limit = { higher_tier_than = BARON }
-				# religion_authority = {
-					# modifier = ruler_converted_from
-				# }
-			# }
-			# religion = buddhist
-			# if = {
-				# limit = { higher_tier_than = BARON }
-				# hidden_tooltip = {
-					# religion_authority = {
-						# modifier = ruler_converted_to
-					# }
-				# }
-			# }
-			# set_character_flag = india_converted
-			# prestige = -500
-			# piety = 100
-			# hidden_tooltip = { character_event = { id = RoI.111 } } # Choose branch
-		# }
-		# revoke_allowed = {
-			# always = no
-		# }
-		# ai_will_do = {
-			# factor = 0
-		# }
-	# }
-
-	# convert_to_jainism = {
-		# only_playable = yes
-		# icon_religion = jain
-		
-		# filter = self
-		# ai_target_filter = self
-		# ai = no
-	
-		# potential = {
-			# is_playable = yes
-			# has_dharmic_religion_trigger = yes
-			# NOT = { religion = jain }
-			# is_theocracy = no
-			# NOT = {
-				# has_alternate_start_parameter = { key = religion_names value = random }
-			# }
-		# }
-		# allow = {
-			# is_adult = yes
-			# holy_order = no
-			# prestige = 500
-			# NOT = { trait = zealous }
-			# any_realm_province = {
-				# religion = jain
-			# }
-			# custom_tooltip = {
-				# text = indian_has_not_converted
-				# NOT = { has_character_flag = india_converted }
-			# }
-		# }
-		# effect = {
-			# if = {
-				# limit = { higher_tier_than = BARON }
-				# religion_authority = {
-					# modifier = ruler_converted_from
-				# }
-			# }
-			# religion = jain
-			# if = {
-				# limit = { higher_tier_than = BARON }
-				# hidden_tooltip = {
-					# religion_authority = {
-						# modifier = ruler_converted_to
-					# }
-				# }
-			# }
-			# set_character_flag = india_converted
-			# prestige = -500
-			# piety = 100
-			# hidden_tooltip = { character_event = { id = RoI.112 } } # Choose branch
-		# }
-		# revoke_allowed = {
-			# always = no
-		# }
-		# ai_will_do = {
-			# factor = 0
-		# }
-	# }
+		potential = {
+			is_playable = yes
+			has_dharmic_religion_trigger = yes
+			NOT = { religion = hindu }
+			is_theocracy = no
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		allow = {
+			is_adult = yes
+			prestige = 500
+			NOT = { trait = zealous }
+			any_realm_province = {
+				religion = hindu
+			}
+			custom_tooltip = {
+				text = indian_has_not_converted
+				NOT = { has_character_flag = india_converted }
+			}
+			holy_order = no
+		}
+		effect = {
+			if = {
+				limit = { higher_tier_than = BARON }
+				religion_authority = {
+					modifier = ruler_converted_from
+				}
+			}
+			religion = hindu
+			if = {
+				limit = { higher_tier_than = BARON }
+				hidden_tooltip = {
+					religion_authority = {
+						modifier = ruler_converted_to
+					}
+				}
+			}
+			set_character_flag = india_converted
+			prestige = -500
+			piety = 100
+			hidden_tooltip = { character_event = { id = RoI.110 } } # Choose branch
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
 	convert_indian_branch = {
 		only_playable = yes
@@ -1657,6 +1412,8 @@ targetted_decisions = {
 				religion_group = zoroastrian_group
 				religion_group = jewish_group
 				religion_group = indian_group
+				religion_group = buddhist_group
+				religion_group = oldworld
 			}
 			is_alive = yes
 		}
@@ -1695,50 +1452,6 @@ targetted_decisions = {
 				religion = ROOT
 				abdicate_holy_order_if_religion_changes_effect = yes
 				
-				
-				#When spouse is Buddhist
-				if = {
-					limit = {
-						ROOT = {
-							trait = mahayana_buddhist
-						}
-					}
-					add_trait = mahayana_buddhist
-				}
-				if = {
-					limit = {
-						ROOT = {
-							trait = vajrayana_buddhist
-						}
-					}
-					add_trait = vajrayana_buddhist
-				}
-				if = {
-					limit = {
-						ROOT = {
-							trait = theravada_buddhist
-						}
-					}
-					add_trait = theravada_buddhist
-				}
-				
-				#When spouse is Jain
-				if = {
-					limit = {
-						ROOT = {
-							trait = digambara_jain
-						}
-					}
-					add_trait = digambara_jain
-				}
-				if = {
-					limit = {
-						ROOT = {
-							trait = svetambara_jain
-						}
-					}
-					add_trait = svetambara_jain
-				}
 				if = {
 					limit = {
 						ROOT = {
@@ -2080,6 +1793,5 @@ decisions = {
 				}
 			}
 		}
-	}
-	
+	}	
 }
