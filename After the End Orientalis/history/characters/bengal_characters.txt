@@ -1,5 +1,26 @@
 ## Indian Empire characters
-1557004 ={ #Indian governor/Sultan of the Bengal Empire
+1557000 ={ #Sultan of the Bengal Empire
+	name="Shamsuddin"
+	dynasty=4001001 #Ali Khan
+	culture=vangiya
+    religion=barelvi
+    martial=8
+    diplomacy=6
+    stewardship=5
+    intrigue=6
+    learning=5
+    trait=martial_cleric
+	trait=scarred_mid
+	trait=quick
+	trait=hunter
+	trait=falconer
+	trait=wroth
+	trait=charitable
+	trait=erudite
+    2535.1.1={birth=yes}
+    2600.1.1={death=yes}
+}
+1557004 ={ #Prince General of the Bengal Empire
 	name="Iskander"
 	dynasty=4001001 #Ali Khan
 	culture=vangiya
@@ -11,12 +32,14 @@
     learning=5
     trait=brilliant_strategist
     trait=genius
-    trait=poet
-    trait=gregarious
+    trait=one_eyed
+    trait=just
     trait=brave
-    trait=diligent
+    trait=duelist
     trait=proud
-    trait=temperate
+    trait=envious
+	trait=twin
+	father=1557000
     2575.1.1={birth=yes}
     2628.1.1={death=yes}
 }
@@ -45,7 +68,7 @@
 }
 1557007={
 	name="Achintya"
-    dynasty=2147935 # Hossein
+    dynasty=4005091 # Hossein
     culture=varendri
     religion=barelvi
     martial=4
@@ -487,7 +510,7 @@
     2599.1.1={birth=yes}
     2700.1.1={death=yes}
 }
-1557500 ={ #Will be used to be the Proper Emperor of Western India Once India is a Thing
+1557500 ={ #Will be used to be the Proper Emperor of Bengal
 	name="Vikram"
 	dynasty=4001001 #Ali Khan
 	culture=vangiya
@@ -497,14 +520,16 @@
     stewardship=5
     intrigue=6
     learning=5
-    trait=brilliant_strategist
+    trait=grey_eminence
     trait=genius
     trait=poet
     trait=gregarious
-    trait=brave
+    trait=frail
     trait=diligent
-    trait=proud
+    trait=kind
     trait=temperate
+	trait=twin
+	father=1557000
     2575.1.1={birth=yes}
     2628.1.1={death=yes}
 }
