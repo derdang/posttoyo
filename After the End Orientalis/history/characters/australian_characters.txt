@@ -39,48 +39,8 @@
 	trait=unyielding_leader
 	trait=mateship_nats
     2580.1.1={birth=yes}
-	2602.1.1={add_spouse = 1771029}
     2620.1.1={death=yes}
 }
-
-1771028={ #Father of Theocrat and Wifey
-	name="John Gideon"
-    dynasty=1771024 # Hand
-	culture=strine
-	religion=concordanist
-	martial=5
-    diplomacy=5
-    stewardship=5
-    intrigue=5
-    learning=8
-    trait=scholarly_theologian
-    trait=scholar
-    trait=devout
-    trait=stubborn
-    trait=diligent
-	2559.1.1={birth=yes}
-	2602.1.1={
-		employer=1771027
-		effect={
-			add_friend=1771027
-			give_job_title=job_treasurer
-		}
-	}
-	2620.1.1={death=yes}
-}
-
-1771029={ #Wifey
-	name="Miranda"
-    dynasty=1771024 # Hand
-	culture=strine
-	religion=concordanist
-	trait=fair
-	trait=humble
-	father=1771028
-	2585.1.1={birth=yes}
-	2688.1.1={death=yes}
-}
-
 1667000 ={ #Count of Tiwi
 	name="Lawrence"
     dynasty=1667095 #Costa
