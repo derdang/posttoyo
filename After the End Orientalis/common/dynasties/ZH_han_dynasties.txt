@@ -269,7 +269,20 @@
 9005026 = { name="Chen" culture=pekingese }
 9005027 = { name="Luo" culture=pekingese religion=aiguo}
 9005028 = { name="Ni" culture=pekingese religion=paulite}
-9005029 = { name="Zhang" culture=pekingese religion=taoist}
+9005029 = { name="Zhang" culture=pekingese
+	coat_of_arms = {
+		religion = taoist
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9005030 = { name="Zhou" culture=pekingese religion=jibenyuanze used_for_random=no}
 9005031 = { name="Zhang" culture=pekingese religion=jibenyuanze used_for_random=no}
 9005032 = { name="Kong" culture=pekingese religion=jibenyuanze used_for_random=no}
@@ -617,7 +630,20 @@
 		}
 	}
 }
-9010283 = { name="Feng" culture=dongbei }
+9010283 = { name="Feng" culture=dongbei
+	coat_of_arms = {
+		religion = shengming
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9010284 = { name="Xiao" culture=dongbei
 	coat_of_arms = {
 		religion = shanrendao
@@ -2115,7 +2141,20 @@
 		}
 	}
 }
-9043027 = { name="Deng" culture=chu religion=quanzhen used_for_random=no}
+9043027 = { name="Deng" culture=chu
+	coat_of_arms = {
+		religion = quanzhen
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9043077 = { name="Guo" culture=chu }
 9043087 = { name="Hu" culture=chu }
 9043091 = { name="Huang" culture=chu }
@@ -2560,7 +2599,20 @@
 	}
 }
 9053279 = { name="Zhou" culture=zhuang }
-9053280 = { name="Nong" culture=zhuang religion=mo}
+9053280 = { name="Nong" culture=zhuang
+	coat_of_arms = {
+		religion = mo
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 48
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9053281 = { name="Cen" culture=zhuang
 	coat_of_arms = {
 		religion = mo
@@ -2722,7 +2774,20 @@
 9061120 = { name="Li" culture=sichuanese }
 9061128 = { name="Liu" culture=sichuanese }
 9061072 = { name="Guan" culture=sichuanese }
-9061082 = { name="He" culture=sichuanese religion=tiandao used_for_random=no}
+9061082 = { name="He" culture=sichuanese
+	coat_of_arms = {
+		religion = tiandao
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9061135 = { name="Ma" culture=sichuanese }
 9061222 = { name="Wang" culture=sichuanese }
 9061229 = { name="Wu" culture=sichuanese }
@@ -3178,7 +3243,20 @@
 		}
 	}
 }
-9075274 = { name="Mo" culture=hmao religion = ua_dab used_for_random=no}
+9075274 = { name="Mo" culture=hmao
+	coat_of_arms = {
+		religion = ua_dab
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 48
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9075275 = { name="Lan" culture=hmao
 	coat_of_arms = {
 		religion = ua_dab

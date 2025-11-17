@@ -453,7 +453,20 @@
 
 1164000 = { name="Nyambayar" culture=daur }
 1164001 = { name="Tengis" culture=daur }
-1164002 = { name="Dügersüren" culture=daur }
+1164002 = { name="Dügersüren" culture=daur
+	coat_of_arms = {
+		religion = shamanist
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 46
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1164003 = { name="Batzorig" culture=daur }
 1164004 = { name="Bataa" culture=daur }
 1164005 = { name="Namsrai" culture=daur }
@@ -945,7 +958,20 @@
 1182017 = { name="Pem" culture=khrom }
 1182018 = { name="Uônth" culture=khrom }
 
-1183000 = { name="Om-Ka" culture=loeu }
+1183000 = { name="Om-Ka" culture=loeu
+	coat_of_arms = {
+		religion = akhom
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 27
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1183001 = { name="Sai-Ya" culture=loeu
 	coat_of_arms = {
 		religion = akhom
@@ -1429,7 +1455,20 @@
 1293021 = { name="Yudanegara" culture= javanese} 
 1293022 = { name="Gudono" culture= javanese}
 1293023 = { name="Gandasubrata" culture= javanese}
-1293024 = { name="Pasir" culture= javanese}
+1293024 = { name="Pasir" culture= javanese
+	coat_of_arms = {
+			religion = nusantara
+			template = 0
+			layer = {
+			texture = 3
+			texture_internal = 74
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}  
 1293025 = { name="Marjana" culture= javanese}
 1293026 = { name="Dipayuda" culture= javanese} 
 1293027 = { name="Wangsanegara" culture= javanese}
@@ -1615,7 +1654,20 @@
 	}
 }
 1294002 = { name="Wijaya" culture= madurese}
-1294003 = { name="Cakranegara" culture= madurese}
+1294003 = { name="Cakranegara" culture= madurese
+	coat_of_arms = {
+		religion = nusantara
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 68
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1294004 = { name="Mangkuadiningrat" culture= madurese
 	coat_of_arms = {
 		religion = nusantara
@@ -1646,7 +1698,20 @@
 		}
 	}
 }
-1295001 = { name="Hidayatullah" culture= sundanese}
+1295001 = { name="Hidayatullah" culture= sundanese
+	coat_of_arms = {
+			religion = renewalist
+			template = 0
+			layer = {
+			texture = 3
+			texture_internal = 69
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1295002 = { name="Brajanegara" culture= sundanese}
 1295003 = { name="Sukardi" culture= sundanese}
 1295004 = { name="Hartarto" culture= sundanese}
@@ -3223,9 +3288,35 @@
 	}
 }
 
-1302000 = { name="Pasha" culture=lampungic religion=nusantara}
+1302000 = { name="Pasha" culture=lampungic
+	coat_of_arms = {
+		religion = nusantara
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 73
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
-1303000 = { name="Pesemah" culture=basemah religion=nusantara}
+1303000 = { name="Pesemah" culture=basemah
+	coat_of_arms = {
+		religion = nusantara
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 75
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1353001 = { name="Bun" culture=laotian }
 1353002 = { name="Bunmi" culture=laotian }
@@ -4774,7 +4865,20 @@ coat_of_arms = {
 }
 1550015 = { name="Win" culture=myr }
 1550016 = { name="Wai" culture=myr }
-1550017 = { name="Mar" culture=myr }
+1550017 = { name="Mar" culture=myr
+	coat_of_arms = {
+		religion = weizzane
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 25
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1550018 = { name="Zaw" culture=myr }
 1550019 = { name="Saw" culture=myr }
 1550020 = { name="Htoo" culture=myr }
@@ -7961,7 +8065,20 @@ coat_of_arms = {
 		}
 	}
 }
-1976001 = { name="Kini" culture=bismarcker religion = makasol}
+1976001 = { name="Kini" culture=bismarcker
+	coat_of_arms = {
+		religion = makasol
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 47
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1976002 = { name="Pochapon" culture=bismarcker
 	coat_of_arms = {
 		religion = makasol
@@ -8199,7 +8316,20 @@ coat_of_arms = {
 		}
 	}
 }
-1993001 = { name="Peliokai" culture=madang religion=catholic}
+1993001 = { name="Peliokai" culture=madang
+	coat_of_arms = {
+		religion = catholic
+		template = 0
+		layer = {
+			texture = 7
+			texture_internal = 76
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1994000 = { name="Yambon" culture=sepik
 	coat_of_arms = {
@@ -12189,7 +12319,20 @@ coat_of_arms = {
 	}
 }
 1771025 = { name="Conrad" culture=strine religion=concordanist used_for_random=no}
-1771026 = { name="Burly-Griffin" culture=strine religion=mateship used_for_random=no}
+1771026 = { name="Burly-Griffin" culture=strine
+	coat_of_arms = {
+		religion = mateship
+		template = 0
+		layer = {
+			texture = 0
+			texture_internal = 1
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1771027 = { name="Cook" culture=strine
 	coat_of_arms = {
 		religion = mateship
@@ -12213,7 +12356,20 @@ coat_of_arms = {
 1911005 = { name= "Chuldum" culture=tuvan }
 1911006 = { name= "Shirshin" culture=tuvan }
 1911007 = { name= "Mendume" culture=tuvan }
-1911008 = { name= "Dolchanmaa" culture=tuvan }
+1911008 = { name= "Dolchanmaa" culture=tuvan
+	coat_of_arms = {
+		religion = gelugpa
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 21
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1911009 = { name= "Dupchur" culture=tuvan }
 1911010 = { name= "Chulydum" culture=tuvan }
 1911011 = { name= "Bapa" culture=tuvan }
@@ -13485,7 +13641,20 @@ coat_of_arms = {
 		}
 	}
 }
-1919148 = { name= "Orlov"  culture=amursky religion=orthodox}
+1919148 = { name= "Orlov"  culture=amursky
+	coat_of_arms = {
+			religion = orthodox
+			template = 0
+			layer = {
+			texture = 3
+			texture_internal = 65
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1919149 = { name= "Kushnir"  culture=amursky
 	coat_of_arms = {
 			religion = orthodox
@@ -13542,7 +13711,20 @@ coat_of_arms = {
 		}
 	}
 }
-1919153 = { name= "Gorokhovskaya"  culture=amursky religion=orthodox}
+1919153 = { name= "Gorokhovskaya"  culture=amursky
+	coat_of_arms = {
+			religion = orthodox
+			template = 0
+			layer = {
+			texture = 3
+			texture_internal = 64
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1919154 = { name= "Tolstykh"  culture=amursky
 	coat_of_arms = {
 			religion = orthodox
@@ -15023,7 +15205,20 @@ coat_of_arms = {
 		}
 	}
 }
-1941149 = { name="Dzatö'tse" culture=kham religion=ngocholugspa}
+1941149 = { name="Dzatö'tse" culture=kham
+	coat_of_arms = {
+		religion = ngocholugspa
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 22
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1941150 = { name="Pelyültse" culture=kham
 	coat_of_arms = {
 		religion = rime
@@ -15039,7 +15234,20 @@ coat_of_arms = {
 	}
 }
 1941151 = { name="Yungok" culture=kham religion=rime}
-1941152 = { name="Pashu'tse" culture=kham religion=rime}
+1941152 = { name="Pashu'tse" culture=kham
+	coat_of_arms = {
+		religion = rime
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1941153 = { name="Yangatse" culture=kham religion=gelugpa}
 1941153 = { name="Gyaltsen" culture=kham
 	coat_of_arms = {
@@ -15374,7 +15582,20 @@ coat_of_arms = {
 1943142 = { name="Zi" culture=changpa }
 1943143 = { name="Zira" culture=changpa }
 1943144 = { name="Zur" culture=changpa }
-1943145 = { name="Fangpa" culture=changpa religion=gelugpa }
+1943145 = { name="Fangpa" culture=changpa
+	coat_of_arms = {
+		religion = gelugpa
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 23
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 1944000 = { name="Adro" culture=qiang }
 1944001 = { name="Akyong" culture=qiang }
@@ -16615,7 +16836,20 @@ coat_of_arms = {
 		}
 	}
 }
-1950165 = { name="Murhum" culture=sulawesi religion=renewalist}
+1950165 = { name="Murhum" culture=sulawesi
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 70
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1950166 = { name="Thalib" culture=sulawesi
 	coat_of_arms = {
 		religion = salafi
@@ -16674,7 +16908,20 @@ coat_of_arms = {
 		}
 	}
 }
-1950172 = { name="Sulaeman" culture=sulawesi religion=renewalist}
+1950172 = { name="Sulaeman" culture=sulawesi
+	coat_of_arms = {
+		religion = renewalist
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 76
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 1950173 = { name="Bisalemba" culture=sulawesi
 	coat_of_arms = {
 		religion = concordanist
@@ -20953,7 +21200,20 @@ coat_of_arms = {
 2017003 = { name="Hussein" culture=negerian }
 2017004 = { name="Mahathir" culture=negerian }
 2017005 = { name="Abdullah" culture=negerian }
-2017006 = { name="Najib" culture=negerian }
+2017006 = { name="Najib" culture=negerian
+	coat_of_arms = {
+			religion = renewalist
+			template = 0
+			layer = {
+			texture = 3
+			texture_internal = 71
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2017007 = { name="Mohamad" culture=negerian }
 2017008 = { name="Muhyddin" culture=negerian }
 2017009 = { name="Ismail" culture=negerian }
@@ -22307,12 +22567,38 @@ coat_of_arms = {
 2311026 = { name="Kularbkulee" culture=thai_isan }
 #Buriram
 2311040 = { name="Kamlangram" culture=thai_isan }
-2311041 = { name="Padungram" culture=thai_isan }
+2311041 = { name="Padungram" culture=thai_isan
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 2311042 = { name="Daodairam" culture=thai_isan }
 2311043 = { name="Puttaisong" culture=thai_isan }
 2311044 = { name="Jaetaisong" culture=thai_isan }
 #Roi Et
-2311101 = { name="na Roi Ech" culture=thai_isan } #Roi Et, spelt as defined in royal gazette 
+2311101 = { name="na Roi Ech" culture=thai_isan #Roi Et, spelt as defined in royal gazette
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 26
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 #Udon-thani
 2311151 = { name="Sangcom" culture=thai_isan
 	coat_of_arms = {
@@ -22427,7 +22713,20 @@ coat_of_arms = {
 2312013 = { name="na Lampang" culture=thai_mueang } 
 2312014 = { name="Phraephan" culture=thai_mueang } 
 2312015 = { name="Phathong" culture=thai_mueang } 
-2312016 = { name="Kaenhom" culture=thai_mueang } 
+2312016 = { name="Kaenhom" culture=thai_mueang
+	coat_of_arms = {
+		religion = maha_nikaya
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 24
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}  
 2312017 = { name="Huamueangkaew" culture=thai_mueang } 
 2312018 = { name="Rotkem" culture=thai_mueang } 
 2312019 = { name="Wangsai" culture=thai_mueang } 
@@ -30862,7 +31161,18 @@ coat_of_arms = {
 3921189 = {
 	name="Palandung"
 	culture=minahasan
-	religion=kebatinan
+	coat_of_arms = {
+		religion = kebatinan
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 72
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
 }
 
 3922000 = {
@@ -33863,7 +34173,20 @@ coat_of_arms = {
 }
 
 
-4001000 = { name="Yunus" culture= vangiya religion=barelvi }
+4001000 = { name="Yunus" culture= vangiya
+	coat_of_arms = {
+		religion = barelvi
+		template = 0
+		layer = {
+			texture = 3
+			texture_internal = 77
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 4001001 = { name="Ali Khan" culture= vangiya
 	coat_of_arms = {
 		religion = barelvi
@@ -34496,11 +34819,37 @@ coat_of_arms = {
 4010020 = { name = "Tamang" culture = nepali }
 4010021 = { name = "Khilwa" culture = nepali religion=gelugpa }
 4010022 = { name = "Rana" culture = nepali religion=hindu }
-4010023 = { name = "Bhandari" culture = nepali religion=hindu }
+4010023 = { name = "Bhandari" culture = nepali
+	coat_of_arms = {
+		religion = hindu
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 10
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 4010024 = { name = "Pokharel" culture = nepali religion=hindu }
 4010025 = { name = "Thapa" culture = nepali religion=hindu }
 4010026 = { name = "Shahi" culture = nepali religion=hindu }
-4010027 = { name = "Kaulani" culture = nepali religion=hindu }
+4010027 = { name = "Kaulani" culture = nepali
+	coat_of_arms = {
+		religion = hindu
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 11
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 4010028 = { name = "Shah" culture = nepali
 	coat_of_arms = {
 		religion = hindu
@@ -34515,7 +34864,20 @@ coat_of_arms = {
 		}
 	}
 }
-4010029 = { name = "Singh" culture = nepali religion=hindu }
+4010029 = { name = "Singh" culture = nepali
+	coat_of_arms = {
+		religion = hindu
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 12
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 4010030 = { name = "Bhattacharjee" culture = nepali
 	coat_of_arms = {
 		religion = vaishnava
