@@ -1702,7 +1702,20 @@
 # Min-Hakka
 
 9033016 = { name="Cai" culture=min }
-9033017 = { name="Tsui" culture=min religion=mahayana used_for_random=no}
+9033017 = { name="Tsui" culture=min used_for_random=no
+	coat_of_arms = {
+		religion = mahayana
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9033018 = { name="Lin" culture=min
 	coat_of_arms = {
 		religion = ruist
@@ -2010,7 +2023,20 @@
 9041077 = { name="Guo" culture=xiang }
 9041091 = { name="Huang" culture=xiang }
 9041100 = { name="Jiang" culture=xiang }
-9041101 = { name="Wen" culture=xiang religion=shenist}
+9041101 = { name="Wen" culture=xiang
+	coat_of_arms = {
+		religion = shenist
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 31
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9041102 = { name="Hu" culture=xiang
 	coat_of_arms = {
 		religion = shenist
@@ -2056,7 +2082,20 @@
 	}
 }
 9041277 = { name="Shi" culture=xiang religion=taoist}
-9041278 = { name="Yang" culture=xiang religion=shenist}
+9041278 = { name="Yang" culture=xiang
+	coat_of_arms = {
+		religion = shenist
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 34
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9041285 = { name="Shu" culture=xiang
 	coat_of_arms = {
 		religion = shenist
@@ -2767,9 +2806,48 @@
 # Sichuan
 
 9061007 = { name="Bao" culture=sichuanese }
-9061008 = { name="Yang" culture=sichuanese religion=tiandao used_for_random=no}
-9061009 = { name="Tong" culture=sichuanese religion=shenist used_for_random=no}
-9061010 = { name="Yue" culture=sichuanese religion=rime used_for_random=no}
+9061008 = { name="Yang" culture=sichuanese
+	coat_of_arms = {
+		religion = tiandao
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 33
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9061009 = { name="Tong" culture=sichuanese used_for_random=no
+	coat_of_arms = {
+		religion = shenist
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 29
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9061010 = { name="Yue" culture=sichuanese
+	coat_of_arms = {
+		religion = rime
+		template = 0
+		layer = {
+			texture = 5
+			texture_internal = 32
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9061038 = { name="Deng" culture=sichuanese }
 9061120 = { name="Li" culture=sichuanese }
 9061128 = { name="Liu" culture=sichuanese }
@@ -2955,8 +3033,34 @@
 		}
 	}
 }
-9070275 = { name="Ran" culture=xinan religion=shenist used_for_random=no}
-9070276 = { name="Wu" culture=xinan religion=tiandao used_for_random=no}
+9070275 = { name="Ran" culture=xinan religion=shenist
+	coat_of_arms = {
+		religion = shenist
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 28
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
+9070276 = { name="Wu" culture=xinan
+	coat_of_arms = {
+		religion = tiandao
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 32
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9070277 = { name="Ding" culture=xinan
 	coat_of_arms = {
 		religion = shenist
