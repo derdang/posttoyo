@@ -339,7 +339,20 @@
 		}
 	}
 }
-9005275 = { name="Yin" culture=pekingese religion=jibenyuanze used_for_random=no}
+9005275 = { name="Yin" culture=pekingese religion=jibenyuanze
+	coat_of_arms = {
+		religion = jibenyuanze
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 37
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 
 #Imperial Family of the Great Hong
 9005801 = { name="Zhao" culture=pekingese
@@ -2081,7 +2094,20 @@
 		}
 	}
 }
-9041277 = { name="Shi" culture=xiang religion=taoist}
+9041277 = { name="Shi" culture=xiang
+	coat_of_arms = {
+		religion = taoist
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 36
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9041278 = { name="Yang" culture=xiang
 	coat_of_arms = {
 		religion = shenist
@@ -3678,7 +3704,20 @@
 9087268 = { name="Zeng" culture=guanzhong }
 9087271 = { name="Zhang" culture=guanzhong }
 9087272 = { name="Zhao" culture=guanzhong }
-9087273 = { name="Zhai" culture=guanzhong }
+9087273 = { name="Zhai" culture=guanzhong
+	coat_of_arms = {
+		religion = quanzhen
+		template = 0
+		layer = {
+			texture = 13
+			texture_internal = 38
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+}
 9087274 = { name="Ying" culture=guanzhong
 	coat_of_arms = {
 		religion = quanzhen
