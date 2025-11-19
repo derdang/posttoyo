@@ -9,7 +9,7 @@ character_event = {	#I begin my journey...
 	
 	title = EVTTITLE_JD_KOWTOW
 	
-	picture = GFX_evt_china_open
+	picture = GFX_evt_merchant_ship_at_sea_republic
     border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
@@ -38,12 +38,12 @@ character_event = { #Hidden set-up event!
 	
 	immediate = {
 		# Take distance into account for delay
-		# 1513 = Jiuquan on the Eastern border
+		# 1083 = Is near Queensland (Weipa)
 		capital_scope = {
-			if = { # Near the far east
+			if = { # Near the Australia
 				limit = {
 					distance = {
-						where = 1513
+						where = 1083
 						value < 500
 					}
 				}
@@ -57,7 +57,7 @@ character_event = { #Hidden set-up event!
 			else_if = { # Still on the eastern side of the map
 				limit = {
 					distance = {
-						where = 1513
+						where = 1083
 						value < 900
 					}
 				}
@@ -71,7 +71,7 @@ character_event = { #Hidden set-up event!
 			else = { # Approaching the Middle East
 				#limit = {
 				#	distance = {
-				#		where = 1513
+				#		where = 1083
 				#		value < 1500
 				#	}
 				#}
@@ -216,7 +216,7 @@ character_event = { # Travel Tombola
 							}
 							capital_scope = {
 								distance = {
-									where = 1513
+									where = 1083
 									value >= 900
 								}
 							}
@@ -230,7 +230,7 @@ character_event = { # Travel Tombola
 							}
 							capital_scope = {
 								distance = {
-									where = 1513
+									where = 1083
 									value >= 1500
 								}
 							}
@@ -243,7 +243,7 @@ character_event = { # Travel Tombola
 							tier = DUKE
 						}
 						capital_scope = {
-							region = custom_eastern_access
+							region = custom_australia
 						}
 						NOT = {
 							num_of_friends = 3
@@ -264,14 +264,14 @@ character_event = { # Travel Tombola
 		                ai = yes
 		                mercenary = yes
 		                OR = {
-		                	culture = han
+		                	culture = strine
 		                	AND = {
 		                		offmap_china = { has_status = china_jurchen_invasion }
-		                		culture = jurchen
+		                		culture = ozlander
 		                	}
 		                	AND = {
 		                		offmap_china = { has_status = china_mongol_invasion }
-		                		culture = mongol
+		                		#culture = bogan
 		                	}
 		                }
 						primary_title = {
@@ -295,7 +295,7 @@ character_event = {  # Unusually heavy rain, think of late parents.
 	title = EVTTITLE_JD_KOWTOW
 	
 	desc = EVTDESC_JD_32100
-	picture = GFX_evt_carriage_default
+	picture = GFX_evt_merchant_ship_at_sea_republic
     border = GFX_event_normal_frame_diplomacy
 
 
@@ -516,7 +516,7 @@ character_event = { # Messenger invites you to the Lords keep, travel time > 2
 					tier = DUKE
 				}
 				capital_scope = {
-					region = custom_eastern_access
+					region = custom_australia
 				}
 				NOT = {
 					num_of_friends = 3
@@ -535,7 +535,7 @@ character_event = { # Messenger invites you to the Lords keep, travel time > 2
 					tier = DUKE
 				}
 				capital_scope = {
-					region = custom_eastern_access
+					region = custom_australia
 				}
 				NOT = { block_general_event_trigger = yes }
 				is_rival = ROOT
@@ -832,7 +832,7 @@ narrative_event = { #Follow up from option A
 			}
 		}
 	}
-	#picture = GFX_evt_feast
+	picture = GFX_evt_feast
     border = GFX_event_narrative_frame_intrigue
 	
 	portrait = event_target:target_host
@@ -948,7 +948,7 @@ character_event = { # Enter China, choose path
 	title = EVTTITLE_JD_KOWTOW
 	desc = EVTDESC_JD_32200
 	
-	picture = GFX_evt_china_open
+	picture = GFX_evt_trade_post_republic
     border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
@@ -1052,7 +1052,7 @@ character_event = { # Within China Tombola
 	}
 }
 
-# You spot a group of people playing GO in the park
+# You spot a group of people playing Rugby in the park
 character_event = {
 	id = JD.32211
 	has_dlc = "Jade Dragon"
@@ -1152,7 +1152,7 @@ character_event = {
 	title = EVTTITLE_JD_KOWTOW
 	desc = EVTDESC_JD_32216
 	
-	picture = GFX_evt_china_diplomatic_incident
+	picture = GFX_evt_monk
     border = GFX_event_normal_frame_diplomacy
 	
 	is_triggered_only = yes
@@ -1171,10 +1171,10 @@ character_event = {
 		trigger = {
 			NOR = {
 				trait = zealous
-				religion_group = indian_group # Eastern religion group
+				religion_group = christian # Christian religion group
 			}
 		}
-		add_trait = sympathy_indian # Sympathy for eastern religions
+		add_trait = sympathy_indian # Sympathy for christian religions
 	}
 	
 	option = { # Join in the ceremony
@@ -1183,7 +1183,7 @@ character_event = {
 		if = {
 			limit = {
 				trait = zealous
-				NOT = { religion_group = indian_group } # Eastern religion group 
+				NOT = { religion_group = christian } # Christian religion group 
 			}
 			remove_trait = zealous
 		}
@@ -1206,7 +1206,7 @@ character_event = {
 		name = EVTOPTC_JD_32216
 		trigger = {
 			trait = zealous
-			NOT = { religion_group = indian_group } # Eastern religion group 
+			NOT = { religion_group = christian } # Christian religion group 
 		}
 		
 		piety = 30
@@ -1241,26 +1241,26 @@ character_event = { # audience w/ the Emperor
 	title = EVTTITLE_JD_KOWTOW
 	desc = {
 		text = EVTDESCA_JD_32290 # Bad outcome
-		picture = GFX_evt_chinese_bureaucrat
+		picture = GFX_evt_courtiers_talking
 		trigger = {
 			has_character_flag = kow_tow_bad_outcome
 		}
 	}
 	desc = {
 		text = EVTDESCB_JD_32290 # Okay outcome
-		picture = GFX_evt_china_golden_age
+		picture = GFX_evt_commonwealth
 		trigger = {
 			has_character_flag = kow_tow_okay_outcome
 		}
 	}
 	desc = {
 		text = EVTDESCC_JD_32290 # Great outcome
-		picture = GFX_evt_china_golden_age
+		picture = GFX_evt_commonwealth
 		trigger = {
 			has_character_flag = kow_tow_great_outcome
 		}
 	}
-	picture = GFX_evt_china_golden_age
+	picture = GFX_evt_commonwealth
 	
     border = GFX_event_normal_frame_diplomacy
 	
@@ -1626,11 +1626,11 @@ character_event = {
                 	culture = han
                 	AND = {
                 		offmap_china = { has_status = china_jurchen_invasion }
-                		culture = jurchen
+                		culture = ozlander
                 	}
                 	AND = {
                 		offmap_china = { has_status = china_mongol_invasion }
-                		culture = mongol
+                		#culture = bogan
                 	}
                 }
 				primary_title = {
@@ -1710,7 +1710,7 @@ character_event = { #Mercenaries wants root to pay a "bridge fee"...
 	
 	title = EVTTITLE_JD_KOWTOW
     desc = EVTDESC_JD_15002
-    picture = GFX_evt_china_diplomatic_success
+    picture = GFX_evt_courier
     border = GFX_event_normal_frame_diplomacy
     is_triggered_only = yes
 
@@ -1795,7 +1795,7 @@ character_event = { #Mercenaries: "We're here to escort you!"
 	
 	title = EVTTITLE_JD_KOWTOW
     desc = EVTDESC_JD_15003 
-    picture = GFX_evt_china_rebel_general
+    picture = GFX_evt_courtiers_talking
     border = GFX_event_normal_frame_diplomacy
     is_triggered_only = yes
     
@@ -1894,6 +1894,7 @@ character_event = { #We see starving people...
 
     	hidden_effect = {
 	        event_target:other_ruler = {
+	        	transfer_crown_on_abdication_effect = yes
 	        	abdicate = yes
 	        	move_character = ROOT
 	        }
@@ -1935,7 +1936,7 @@ character_event = {
 	
 	title = EVTTITLE_JD_KOWTOW
     desc = EVTDESC_JD_15010
-    picture = GFX_evt_carriage_default
+    picture = GFX_evt_merchant_ship_at_sea_republic
     border = GFX_event_normal_frame_diplomacy
     is_triggered_only = yes
 
@@ -2205,7 +2206,7 @@ character_event = { #Learn about political philosophy or attempt to impress pret
 	
 	title = EVTTITLE_JD_KOWTOW
     desc = EVTDESC_JD_15015
-    picture = GFX_evt_chinese_bureaucrat
+    picture = GFX_evt_courtiers_talking
     border = GFX_event_normal_frame_diplomacy
     is_triggered_only = yes
 
@@ -2323,7 +2324,7 @@ character_event = { #Visit the market
 					new_character = {
 						save_event_target_as = chinese_trader
 						give_nickname = nick_the_trader
-	    				add_chinese_artifact_effect = yes
+	    				add_australian_artifact_effect = yes
 					}
 				}
 			}
@@ -2356,7 +2357,7 @@ character_event = { #Visit the market
 
         hidden_effect = {
 	        event_target:chinese_trader = {
-	        	event_target:chinese_artifact = {
+	        	event_target:australian_artifact = {
 		        	transfer_artifact = {
 						from = PREV
 						to = PREVPREV
@@ -2385,7 +2386,7 @@ character_event = { #Visit the market
 		}
     }
 
-    option = { #Steal a Chinese artifact in the market!
+    option = { #Steal an Australian artifact in the market!
         name = EVTOPTC_JD_15016
         custom_tooltip = { text = EVTOPTC_JD_15016_TT }
         tooltip_info = intrigue
@@ -2402,7 +2403,7 @@ character_event = { #Visit the market
 
         hidden_effect = {
 	        event_target:chinese_trader = {
-	        	event_target:chinese_artifact = {
+	        	event_target:australian_artifact = {
 		        	transfer_artifact = {
 						from = PREV
 						to = PREVPREV
@@ -2465,7 +2466,7 @@ character_event = { #Encounter a merchant..!
 					new_character = {
 						upgrade_education_effect = yes
 						save_event_target_as = chinese_trader
-	    				add_chinese_artifact_effect = yes
+	    				add_australian_artifact_effect = yes
 					}
 				}
 			}
@@ -2480,7 +2481,7 @@ character_event = { #Encounter a merchant..!
 
         hidden_effect = {
 	        event_target:chinese_trader = {
-	        	event_target:chinese_artifact = {
+	        	event_target:australian_artifact = {
 		        	transfer_artifact = {
 						from = PREV
 						to = PREVPREV
@@ -2514,7 +2515,7 @@ character_event = { #Encounter a merchant..!
         custom_tooltip = { text = EVTOPTA_JD_15017_TT } #it's transfered to you.
 		hidden_effect = { #Steal the artifact
 	        event_target:chinese_trader = {
-	        	event_target:chinese_artifact = {
+	        	event_target:australian_artifact = {
 		        	transfer_artifact = {
 						from = PREV
 						to = PREVPREV

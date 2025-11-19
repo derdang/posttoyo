@@ -1,0 +1,108 @@
+add_indian_artifact_effect = {
+	hidden_effect = {
+		random_list = {
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = indian_artwork } } }
+				add_artifact = indian_artwork
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = indian_poetry } } }
+				add_artifact = indian_poetry
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = indian_sculpture } } }
+				add_artifact = indian_sculpture
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = indian_ceremonial_robes } } }
+				add_artifact = indian_ceremonial_robes
+			}
+			10 = {
+				offmap_china = {
+					offmap_prev_ruler = {
+						save_event_target_as = prev_emperor
+					}
+				}
+				add_artifact = indian_prev_emperor_sculpture
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = indian_rani_haar } } }
+				add_artifact = indian_rani_haar
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = kirpan } } }
+				add_artifact = kirpan
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = charkha } } }
+				add_artifact = charkha
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = brass_elephant } } }
+				add_artifact = brass_elephant
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = samhita } } }
+				add_artifact = samhita
+			}
+		}
+		new_artifact = {
+			save_event_target_as = indian_artifact
+		}
+	}
+}
+add_australian_artifact_effect = { #Used in event JD.15016 (possible to use elsewhere!)
+	hidden_effect = {
+		random_list = {
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = australian_artwork } } }
+				add_artifact = australian_artwork
+				new_artifact = {
+					set_name = australian_artwork_name
+				}
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = australian_book_poetry } } }
+				add_artifact = australian_book_poetry
+				new_artifact = {
+					set_name = australian_book_poetry_name
+				}
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = australian_book_health } } }
+				add_artifact = australian_book_health
+				new_artifact = {
+					set_name = australian_book_health_name
+				}
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = australian_book_law } } }
+				add_artifact = australian_book_law
+				new_artifact = {
+					set_name = australian_book_law_name
+				}
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = australian_book_history } } }
+				add_artifact = australian_book_history
+				new_artifact = {
+					set_name = australian_book_history_name
+				}
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = australian_book_economy } } }
+				add_artifact = australian_book_economy
+				new_artifact = {
+					set_name = australian_book_economy_name
+				}
+			}
+			10 = {
+				trigger = { ROOT = { NOT = { has_artifact = commander_sword } } }
+				add_artifact = commander_sword
+			}
+		}
+		new_artifact = {
+			save_event_target_as = australian_artifact
+		}
+	}
+}

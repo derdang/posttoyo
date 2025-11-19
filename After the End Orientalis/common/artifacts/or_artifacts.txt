@@ -1,5 +1,5 @@
 #########################################
-## DLC: Jade Dragon: Chinese Artifacts ##
+## DLC: Jade Dragon: Indian Artifacts ##
 #########################################
 brass_elephant = {
 	monthly_character_prestige = 1
@@ -107,4 +107,91 @@ ciacia_annal = {
 	stacking = no
 	picture = "GFX_book_red"
 	stacking = no
+}
+
+############################################
+## DLC: Jade Dragon: Australian Artifacts ##
+############################################
+
+australian_artwork = {
+	monthly_character_prestige = 0.35
+	monthly_character_piety = 0.1
+	quality = 2
+	flags = { australian art decor }
+	picture = "GFX_chinese_artwork"
+	stacking = no
+}
+commander_sword = {
+	quality = 4
+	monthly_character_prestige = 1
+	martial = 2
+	combat_rating = 12
+	command_modifier = {
+		heavy_infantry = 0.10
+		light_cavalry = 0.125
+		actual_light_infantry = 0.125
+	}
+	active = {
+		is_adult = yes
+	}
+	flags = { australian sword }
+	stacking = no
+	picture = "GFX_jian_sword"
+	slot = weapon
+}
+australian_book_poetry = {
+	quality = 5
+	monthly_character_piety = 0.5
+	learning = 3
+	flags = { australian book }
+	picture = "GFX_book_blue"
+	stacking = no
+	slot = library
+}
+australian_book_health = {
+	quality = 3
+	active = {
+		learning = 6
+	}
+	health = 0.5
+	fertility = 0.15
+	flags = { australian book }
+	picture = "GFX_book_green"
+	stacking = no
+	slot = library
+}
+australian_book_law = {
+	quality = 3
+	active = {
+		learning = 6
+	}
+	vassal_opinion = 5
+	flags = { australian book }
+	picture = "GFX_book_red"
+	stacking = no
+	slot = library
+}
+australian_book_history = {
+	quality = 1
+	active = {
+		learning = 6
+	}
+	monthly_character_prestige = 0.1
+	fertility = 0.05
+	flags = { australian book }
+	picture = "GFX_book_roots_crown_01"
+	#stacking = no
+	slot = library
+}
+australian_book_economy = {
+	quality = 3
+	active = {
+		learning = 6
+	}
+	stewardship = 1
+	monthly_character_wealth = 1
+	flags = { australian book }
+	picture = "GFX_chinese_economic_chronicle"
+	stacking = no
+	slot = library
 }

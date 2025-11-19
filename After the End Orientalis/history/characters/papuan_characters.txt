@@ -33,6 +33,7 @@
     trait=cruel
 	trait=wroth
 	trait=arbitrary
+	father=1975007
     2581.1.1={birth=yes}
     2700.1.1={death=yes}
 }
@@ -73,7 +74,7 @@
 }
 1975002 ={ #Count of Oro
 	name="Peter"
-    dynasty=1975002 # Conrad
+    dynasty=1771025 # Conrad
     culture=manmeri
     religion=concordanist
     martial=4
@@ -85,6 +86,7 @@
     trait=ambitious
     trait=diligent
     trait=envious
+	father=1975007
     2569.1.1={birth=yes}
     2700.1.1={death=yes}
 }
@@ -155,6 +157,23 @@
     trait=proud
     2571.1.1={birth=yes}
     2700.1.1={death=yes}
+}
+1975007 ={ #Father of the Conrad Brothers
+	name="David"
+    dynasty=1771025 # Conrad
+    culture=manmeri
+    religion=concordanist
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=3
+    trait=tough_soldier
+    trait=devout
+    trait=just
+    trait=strong
+    2530.1.1={birth=yes}
+    2600.1.1={death=yes}
 }
 
 1976000 ={ #Duke of Bismarck, rules Gloucester and Gazelle

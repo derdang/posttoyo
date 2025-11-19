@@ -393,17 +393,17 @@ narrative_event = {
 	
 	desc = {
 		trigger = { FROMFROM = { has_policy = china_open } }
-		picture = GFX_india_open
+		picture = GFX_australia_open
 		text = EVTDESC_JD_50021_OPEN
 	}
 	desc = {
 		trigger = { FROMFROM = { has_policy = china_isolationist } }
-		picture = GFX_india_isolationist
+		picture = GFX_australia_isolationist
 		text = EVTDESC_JD_50021_ISO
 	}
 	desc = {
 		trigger = { FROMFROM = { has_policy = china_expansionist } }
-		picture = GFX_india_expansionist
+		picture = GFX_australia_expansionist
 		text = EVTDESC_JD_50021_EXP
 	}
 
@@ -484,42 +484,42 @@ narrative_event = {
 	
 	desc = {
 		trigger = { FROMFROM = { has_status = china_stable } }
-		picture = GFX_india_stable
+		picture = GFX_australia_stable
 		text = EVTDESC_JD_50031_STABLE
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = china_unrest } }
-		picture = GFX_india_unrest
+		picture = GFX_australia_unrest
 		text = EVTDESC_JD_50031_UNREST
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = china_famine } }
-		picture = GFX_india_famine
+		picture = GFX_australia_famine
 		text = EVTDESC_JD_50031_FAMINE
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = china_plague } }
-		picture = GFX_india_devastating_plague
+		picture = GFX_australia_devastating_plague
 		text = EVTDESC_JD_50031_PLAGUE
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = china_mongol_invasion } }
-		picture = GFX_india_arabs_invade
+		picture = GFX_australia_invaded
 		text = EVTDESC_JD_50031_MONGOLS
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = china_jurchen_invasion } }
-		picture = GFX_india_arabs_invade
+		picture = GFX_australia_invaded
 		text = EVTDESC_JD_50031_JURCHENS
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = china_civil_war } }
-		picture = GFX_indian_civil_war
+		picture = GFX_australian_civil_war
 		text = EVTDESC_JD_50031_CW
 	}
 	desc = {
 		trigger = { FROMFROM = { has_status = china_golden_age } }
-		picture = GFX_india_golden_age
+		picture = GFX_australia_golden_age
 		text = EVTDESC_JD_50031_GOLDEN
 	}
 

@@ -5194,11 +5194,11 @@ character_event = { #
     			}
     		}
     		30 = { #China sends you an artifact
-				add_chinese_artifact_effect = yes
+				add_australian_artifact_effect = yes
 
 				while = { #runs until it finds an appropriate artifact...
 					limit = {
-						event_target:chinese_artifact = {
+						event_target:australian_artifact = {
 							NOR = {
 								has_artifact_flag = decor
 								has_artifact_flag = statue
@@ -5208,13 +5208,13 @@ character_event = { #
 							}
 						}
 					}
-					event_target:chinese_artifact = {
+					event_target:australian_artifact = {
 						destroy_artifact = yes
 					}
-					add_chinese_artifact_effect = yes
+					add_australian_artifact_effect = yes
 				}
 				
-				event_target:chinese_artifact = {
+				event_target:australian_artifact = {
 					set_name = the_chinese_royals_favorite
 					set_description = the_chinese_royals_favorite_desc
 					set_artifact_flag = royal_inheritance_gift@ROOT
@@ -5296,9 +5296,9 @@ character_event = { #
 				add_artifact = chinese_journal
 
 				new_artifact = {
-					save_event_target_as = chinese_artifact
+					save_event_target_as = australian_artifact
 				}
-				event_target:chinese_artifact = {
+				event_target:australian_artifact = {
 					set_name = the_chinese_royals_personal_note_book
 					set_description = the_chinese_royals_personal_note_book_desc
 					set_artifact_flag = royal_inheritance_gift@ROOT
@@ -5435,7 +5435,7 @@ character_event = {
 			if = {
 				limit = { has_character_flag = scenario_2 }
 				#to make sure the WP doesn't end up with a ton of Chinese artifacts (named things like "Shan Li's Favorite Tapestry") when the follow-up (JD.10082) doesn't trigger...
-			    hidden_effect = { event_target:chinese_artifact = { destroy_artifact = yes } }
+			    hidden_effect = { event_target:australian_artifact = { destroy_artifact = yes } }
 			}
 			if = {
 				limit = { NOT = { has_character_flag = scenario_3 } } #The only event that doesn't require peace with WP...
@@ -5545,7 +5545,7 @@ character_event = { #China sends their condolences, in the form of a GIFT...
         custom_tooltip = { text = EVTOPTA_JD_10082_TT }
 
         hidden_effect = {
-	        event_target:chinese_artifact = {
+	        event_target:australian_artifact = {
 				transfer_artifact = {
 					from = event_target:the_protector_general
 					to = ROOT
@@ -5572,7 +5572,7 @@ character_event = { #China sends their condolences, in the form of a GIFT...
 		    }
         }
         hidden_effect = {
-        	event_target:chinese_artifact = {
+        	event_target:australian_artifact = {
         		destroy_artifact = yes
         	}
         }
@@ -5606,7 +5606,7 @@ character_event = { #You find their journal...
         custom_tooltip = { text = EVTOPTA_JD_10083_TT }
 
         hidden_effect = {
-	        event_target:chinese_artifact = {
+	        event_target:australian_artifact = {
 				transfer_artifact = {
 					from = event_target:the_protector_general
 					to = ROOT
@@ -5626,7 +5626,7 @@ character_event = { #You find their journal...
 		}
 
         hidden_effect = {
-        	event_target:chinese_artifact = {
+        	event_target:australian_artifact = {
         		destroy_artifact = yes
         	}
         }
