@@ -67,7 +67,7 @@ offmap_decisions = {
 							offmap = offmap_china
 							value = 450
 						}
-						e_china_west_governor = {
+						e_australian_capitancy = {
 							show_scope_change = no
 							offmap_power = {
 								show_scope_change = no
@@ -92,7 +92,7 @@ offmap_decisions = {
 							offmap = offmap_china
 							value = 150
 						}
-						e_china_west_governor = {
+						e_australian_capitancy = {
 							show_scope_change = no
 							offmap_power = {
 								show_scope_change = no
@@ -115,7 +115,7 @@ offmap_decisions = {
 							offmap = offmap_china
 							value = 300
 						}
-						e_china_west_governor = {
+						e_australian_capitancy = {
 							show_scope_change = no
 							offmap_power = {
 								show_scope_change = no
@@ -186,27 +186,27 @@ offmap_decisions = {
 				show_scope_change = no
 				war = no
 				OR = {
-					custom_tooltip = { #Borders the Western Governate
+					custom_tooltip = { #Borders the Capitiancy
 						text = chinese_grace_become_tributary_allow_governor_neighbor_tt
 						any_neighbor_independent_ruler = {
-							has_landed_title = e_china_west_governor
+							has_landed_title = e_australian_capitancy
 						}
 					}
-					custom_tooltip = { #Borders a Chinese tributary
+					custom_tooltip = { #Borders a Australian tributary
 						text = chinese_grace_become_tributary_allow_tributary_neighbor_tt
 						any_neighbor_independent_ruler = {
 							suzerain = {
-								has_landed_title = e_china_west_governor
+								has_landed_title = e_australian_capitancy
 							}
 						}
 					}
 					custom_tooltip = { #Borders the eastern edge of the map
 						text = chinese_grace_become_tributary_allow_chinese_influence_tt
 						any_realm_province = {
-							region = custom_chinese_invasion_target_region
+							region = custom_australian_invasion_target_region
 						}
 					}
-					custom_tooltip = { #Within diplo range of China and has a port in India
+					custom_tooltip = { #Within diplo range of Australia and has a port in India
 						text = chinese_grace_become_tributary_allow_india_tt
 						any_realm_province = { 
 							port = yes 
@@ -266,7 +266,7 @@ offmap_decisions = {
 							offmap = offmap_china
 							value = 400
 						}
-						e_china_west_governor = {
+						e_australian_capitancy = {
 							show_scope_change = no
 							offmap_power = {
 								show_scope_change = no
@@ -291,7 +291,7 @@ offmap_decisions = {
 							offmap = offmap_china
 							value = 100
 						}
-						e_china_west_governor = {
+						e_australian_capitancy = {
 							show_scope_change = no
 							offmap_power = {
 								show_scope_change = no
@@ -314,7 +314,7 @@ offmap_decisions = {
 							offmap = offmap_china
 							value = 200
 						}
-						e_china_west_governor = {
+						e_australian_capitancy = {
 							show_scope_change = no
 							offmap_power = {
 								show_scope_change = no
@@ -397,21 +397,21 @@ offmap_decisions = {
 					custom_tooltip = { #Borders the Western Governate
 						text = chinese_grace_become_tributary_allow_governor_neighbor_tt
 						any_neighbor_independent_ruler = {
-							has_landed_title = e_china_west_governor
+							has_landed_title = e_australian_capitancy
 						}
 					}
 					custom_tooltip = { #Borders a Chinese tributary
 						text = chinese_grace_become_tributary_allow_tributary_neighbor_tt
 						any_neighbor_independent_ruler = {
 							suzerain = {
-								has_landed_title = e_china_west_governor
+								has_landed_title = e_australian_capitancy
 							}
 						}
 					}
 					custom_tooltip = { #Borders the eastern edge of the map
 						text = chinese_grace_become_tributary_allow_chinese_influence_tt
 						any_realm_province = {
-							region = custom_chinese_invasion_target_region
+							region = custom_australian_invasion_target_region
 						}
 					}
 				}
@@ -448,7 +448,7 @@ offmap_decisions = {
 							offmap = offmap_china
 							value = 150
 						}
-						e_china_west_governor = {
+						e_australian_capitancy = {
 							show_scope_change = no
 							offmap_power = {
 								show_scope_change = no
@@ -471,7 +471,7 @@ offmap_decisions = {
 							offmap = offmap_china
 							value = 50
 						}
-						e_china_west_governor = {
+						e_australian_capitancy = {
 							show_scope_change = no
 							offmap_power = {
 								show_scope_change = no
@@ -492,7 +492,7 @@ offmap_decisions = {
 							offmap = offmap_china
 							value = 150
 						}
-						e_china_west_governor = {
+						e_australian_capitancy = {
 							show_scope_change = no
 							offmap_power = {
 								show_scope_change = no
@@ -549,7 +549,7 @@ offmap_decisions = {
 				factor = 0
 				FROM = {
 					primary_title = {
-						title = e_mongol_empire
+						title = e_mongolia
 					}
 				}
 			}
@@ -604,7 +604,7 @@ offmap_decisions = {
 						offmap = offmap_china
 						value = -150
 					}
-					e_china_west_governor = {
+					e_australian_capitancy = {
 						show_scope_change = no
 						offmap_power = {
 							show_scope_change = no
@@ -627,7 +627,7 @@ offmap_decisions = {
 						offmap = offmap_china
 						value = -50
 					}
-					e_china_west_governor = {
+					e_australian_capitancy = {
 						show_scope_change = no
 						offmap_power = {
 							show_scope_change = no
@@ -648,7 +648,7 @@ offmap_decisions = {
 						offmap = offmap_china
 						value = -150
 					}
-					e_china_west_governor = {
+					e_australian_capitancy = {
 						show_scope_change = no
 						offmap_power = {
 							show_scope_change = no
@@ -700,1441 +700,6 @@ offmap_decisions = {
 						trait = brave
 					}
 				}
-			}
-		}
-	}
-
-	chinese_grace_offer_eunuch = {
-		only_playable = yes
-		button_name = offmap_gifts
-		
-		third_party_filter = home_court
-		ai_third_party_filter = home_court
-		third_party = FROM
-		ai_check_interval = 36
-		show_third_party_potential = yes
-
-		potential = {
-			is_offmap_tag = offmap_china
-			OR = {
-				ai = no
-				china_offmap_tribute_decisions_enabled_trigger = yes # Allow is checked for each valid 3rd party, so it is cheaper to check it here for the AI
-			}
-		}
-	
-		from_potential = {
-			has_dlc = "Jade Dragon"
-			mercenary = no
-			holy_order = no
-			is_landed = yes
-		}
-
-		allow = {
-			show_only_failed_conditions = yes
-			FROM = {
-				show_scope_change = no
-				custom_tooltip = {
-					text = china_tribute_send_eunuch_cooldown_tt
-					NOT = { has_character_modifier = chinese_grace_send_eunuch_timer }
-				}
-				prisoner = no
-				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
-			}
-			# china_offmap_decisions_enabled_trigger = yes #leave in please, to be used if the tooltip for china_offmap_tribute_decisions_enabled_trigger changes and we need to reference things uniquely again
-			tooltip = { china_offmap_tribute_decisions_enabled_trigger = yes }
-			hidden_tooltip = {
-				OR = { 
-					ai = yes
-					china_offmap_tribute_decisions_enabled_trigger = yes # AI has already checked this in the potential
-				}
-			}
-		}
-		
-		third_party_potential = {
-			show_only_failed_conditions = yes
-			FROMFROM = {
-				show_scope_change = no
-				custom_tooltip = {
-					text = is_landless_male_tt
-					NOT = { is_landed = yes }
-					NOT = { is_ruler = yes }
-					NOT = { is_female = yes }
-					NOT = { is_patrician = yes }
-				}
-				custom_tooltip = {
-					text = adult_or_close_relative_of_12_years_tt
-					OR = {
-						is_adult = yes
-						AND = {
-							is_close_relative = ROOT_FROM
-							age = 12
-						}
-					}
-				}
-				
-				NOT = { is_heir = yes }
-
-				custom_tooltip = {
-					text = not_married_or_getting_married_tt
-					NOT = { is_betrothed = yes }
-					NOT = { is_married = yes }
-				}
-				custom_tooltip = { #can't be from China
-					text = is_not_from_china_tt
-					NOT = {	has_character_flag = eunuch_gift }
-					courtier_from_china_trigger = no
-				}
-				custom_tooltip = {
-					text = is_not_incapable_inbred_or_imbecile_tt
-					NOT = { trait = incapable }
-					NOT = { trait = inbred }
-					NOT = { trait = imbecile }
-				}
-				custom_tooltip = {
-					text = is_not_maimed_or_infirm_tt
-					NOT = { trait = maimed }
-					NOT = { trait = infirm }
-				}
-				custom_tooltip = {
-					text = is_not_wounded_severely_injured_tt
-					NOT = { trait = wounded }
-					NOT = { trait = severely_injured }
-				}
-				custom_tooltip = {
-					text = is_not_one_eyed_handed_legged_disfigured_or_mangled_tt
-					NOT = { trait = one_eyed }
-					NOT = { trait = one_handed }
-					NOT = { trait = one_legged }
-					NOT = { trait = disfigured }
-					NOT = { trait = mangled }
-				}
-				NOT = { prisoner = yes }
-
-				OR = {
-					custom_tooltip = {
-						text = is_close_relative_tt
-						is_close_relative = ROOT_FROM
-					}
-					custom_tooltip = {
-						text = china_tribute_send_eunuch_stats_tt
-						OR = {
-							diplomacy = 20
-							martial = 20
-							stewardship = 20
-							intrigue = 20
-							learning = 20
-						}
-					}
-					custom_tooltip = {
-						text = china_tribute_send_eunuch_congenital_tt
-						OR = {
-							trait = strong
-							trait = genius
-							trait = quick
-							trait = fair
-						}
-					}
-					custom_tooltip = {
-						text = china_tribute_send_eunuch_non_inherit_congenital_tt
-						OR = {
-							trait = robust
-							trait = shrewd
-						}
-					}
-					custom_tooltip = {
-						text = has_the_right_eunuch_traits_tt
-						OR = {
-							trait = architect
-							trait = administrator
-							trait = strategist
-							trait = scholar
-							trait = faqih						
-						}
-					}
-				}
-			}
-		}
-		
-		third_party_allow = {
-			show_only_failed_conditions = yes
-			FROMFROM = {
-				is_ill = no
-				is_inaccessible_trigger = no
-			}
-		}
-		
-		third_party_score = {
-			factor = 100
-			
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					diplomacy = 8					
-					hidden_trigger = {
-						NOT = { diplomacy = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					diplomacy = 12					
-					hidden_trigger = {
-						NOT = { diplomacy = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = { 
-					show_scope_change = no
-					diplomacy = 16				
-					hidden_trigger = {
-						NOT = { diplomacy = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					diplomacy = 20
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					martial = 8					
-					hidden_trigger = {
-						NOT = { martial = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					martial = 12					
-					hidden_trigger = {
-						NOT = { martial = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = {
-					show_scope_change = no 
-					martial = 16				
-					hidden_trigger = {
-						NOT = { martial = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					martial = 20
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					stewardship = 8					
-					hidden_trigger = {
-						NOT = { stewardship = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					stewardship = 12					
-					hidden_trigger = {
-						NOT = { stewardship = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = { 
-					show_scope_change = no
-					stewardship = 16				
-					hidden_trigger = {
-						NOT = { stewardship = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					stewardship = 20
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					intrigue = 8					
-					hidden_trigger = {
-						NOT = { intrigue = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					intrigue = 12					
-					hidden_trigger = {
-						NOT = { intrigue = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = { 
-					show_scope_change = no
-					intrigue = 16				
-					hidden_trigger = {
-						NOT = { intrigue = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					intrigue = 20
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					learning = 8					
-					hidden_trigger = {
-						NOT = { learning = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					learning = 12					
-					hidden_trigger = {
-						NOT = { learning = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = { 
-					show_scope_change = no
-					learning = 16				
-					hidden_trigger = {
-						NOT = { learning = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					learning = 20
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = fair
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					trait = groomed
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = genius
-				}
-			}
-			additive_modifier = {
-				value = 30
-				FROMFROM = { 
-					show_scope_change = no
-					trait = quick
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					trait = strong
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = {
-					show_scope_change = no
-					trait = robust
-				}
-			}
-			additive_modifier = {
-				value = 30
-				FROMFROM = {
-					show_scope_change = no
-					trait = shrewd
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = architect
-				}
-			}
-			additive_modifier = {
-				value = 60
-				FROMFROM = { 
-					show_scope_change = no
-					trait = administrator
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = strategist
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = scholar
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = faqih
-				}
-			}
-			additive_modifier = {
-				value = 25
-				custom_tooltip = {
-					text = tribute_interaction_level3_education_tt
-					FROMFROM = { 
-						OR = {
-							trait = intricate_webweaver
-							trait = charismatic_negotiator
-							trait = fortune_builder
-							trait = skilled_tactician
-							trait = scholarly_theologian
-						}
-					}
-				}
-			}
-			additive_modifier = {
-				value = 50
-				custom_tooltip = {
-					text = tribute_interaction_level4_education_tt
-					FROMFROM = { 
-						OR = {
-							trait = elusive_shadow
-							trait = grey_eminence
-							trait = midas_touched
-							trait = brilliant_strategist
-							trait = mastermind_theologian
-						}
-					}
-				}
-			}
-			additive_modifier = {
-				value = 60
-				FROMFROM = {
-					show_scope_change = no
-					is_adult = no
-				}
-			}
-			modifier = {
-				factor = 2.0
-				OR = {
-					offmap_china = {
-						show_scope_change = no 
-						offmap_has_like = likes_eunuchs
-					}
-				}
-			}
-			modifier = {
-				factor = 2.0
-				FROMFROM = {
-					show_scope_change = no 
-					liked_by_offmap = {
-			            type = offmap_china
-			        }
-				}
-			}
-			modifier = {
-				factor = 0.5
-				offmap_china = {
-					show_scope_change = no 
-					offmap_has_dislike = likes_eunuchs
-				}
-			}
-			modifier = {
-				factor = 0.5
-				FROMFROM = {
-					show_scope_change = no 
-					disliked_by_offmap = {
-				        type = offmap_china
-				    }
-				}
-			}
-			modifier = {
-				factor = 1.5
-				FROM = { 
-					show_scope_change = no
-					liked_by_offmap = {
-						type = offmap_china
-					}
-				}
-			}
-			modifier = {
-				factor = 0.66
-				FROM = {
-					show_scope_change = no 
-					disliked_by_offmap = {
-						type = offmap_china
-					}
-				}
-			}
-		}
-	
-		effect = {
-			save_event_target_as = target_governor
-			FROM = {
-				sound_effect = china_grace_gain
-				save_event_target_as = target_tribute_sender
-			}
-			FROMFROM = {
-				save_event_target_as = person_sent_as_tribute
-			}
-			#if = {
-			#	limit = {
-			#		FROMFROM = { disliked_by_offmap = offmap_china }
-			#	}
-			#	custom_tooltip = { text = notification_china_dislike_tt }
-			#}
-			#if = {
-			#	limit = {
-			#		NOT = { FROMFROM = { disliked_by_offmap = offmap_china } }
-			#		FROMFROM = { liked_by_offmap = offmap_china }
-			#	}
-			#	custom_tooltip = { text = notification_china_like_tt }
-			#}
-			FROM = {
-				show_scope_change = no
-				add_offmap_currency = {
-					offmap = offmap_china
-					value = local_third_party_score
-				}
-				hidden_effect = {
-					if = {
-						limit = {
-							ai = no
-						}
-						set_character_flag = achievement_snipped_off_to_china
-					}
-				}
-			}
-			
-			# Like/Dislike effect description
-			#################################
-			if = {
-				limit = {
-					OR = {
-						FROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-						FROMFROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-					}
-					NOR = {
-						FROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-						FROMFROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-					}
-				}
-				e_china_west_governor = {
-					show_scope_change = no
-					offmap_power = {
-						show_scope_change = no
-						custom_tooltip = { text = likes_tt }
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					OR = {
-						FROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-						FROMFROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-					}
-					NOR = {
-						FROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-						FROMFROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-					}
-				}
-				e_china_west_governor = {
-					show_scope_change = no
-					offmap_power = {
-						show_scope_change = no
-						custom_tooltip = { text = dislikes_tt }
-					}
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						FROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-						FROMFROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-					}
-					OR = {
-						FROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-						FROMFROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = eunuch
-							}
-						}
-					}
-				}
-				e_china_west_governor = {
-					show_scope_change = no
-					offmap_power = {
-						show_scope_change = no
-						custom_tooltip = { text = likes_but_dislikes_tt }
-					}
-				}
-			}
-			#################################
-			
-			FROMFROM = {
-				show_scope_change = no
-				hidden_effect = {
-					if = {
-						limit = {
-							NOT = {
-								trait = eunuch
-							}
-						}
-						add_trait = eunuch
-					}
-				}
-				leave_court_for_china_effect = yes
-			}
-			hidden_effect = {
-				FROM = {
-					add_character_modifier = {
-						modifier = chinese_grace_send_eunuch_timer
-						hidden = yes
-						years = 20
-					
-					}
-					if = {
-						limit = { local_third_party_score_low_trigger = yes }
-						set_character_flag = sent_bad_tribute
-					}
-					if = {
-						limit = { local_third_party_score_medium_trigger = yes }
-						set_character_flag = sent_decent_tribute
-					}
-					if = {
-						limit = { local_third_party_score_great_trigger = yes }
-						set_character_flag = sent_great_tribute
-					}
-					set_character_flag = sent_eunuch_tribute
-					letter_event = { id = JD.10050 days = 5 random = 2 }
-				}
-			}
-		}
-	
-		revoke_allowed = {
-			always = no
-		}
-	
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.3 # slow down
-			}
-		}
-	}
-	
-	chinese_grace_offer_concubine = {
-		only_playable = yes
-		button_name = offmap_gifts
-		
-		third_party_filter = home_court
-		ai_third_party_filter = home_court
-		third_party = FROM
-		ai_check_interval = 20
-		show_third_party_potential = yes
-
-		potential = {
-			is_offmap_tag = offmap_china
-			OR = {
-				ai = no
-				china_offmap_tribute_decisions_enabled_trigger = yes # Allow is checked for each valid 3rd party, so it is cheaper to check it here for the AI
-			}
-		}
-	
-		from_potential = {
-			has_dlc = "Jade Dragon"
-			mercenary = no
-			holy_order = no
-			is_landed = yes
-		}
-
-		allow = {
-			show_only_failed_conditions = yes
-			FROM = {
-				show_scope_change = no
-				custom_tooltip = {
-					text = china_tribute_send_concubine_cooldown_tt
-					NOT = { has_character_modifier = chinese_grace_send_concubine_timer }
-				}
-				prisoner = no
-				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
-			}
-			# china_offmap_decisions_enabled_trigger = yes #leave in please, to be used if the tooltip for china_offmap_tribute_decisions_enabled_trigger changes and we need to reference things uniquely again
-			tooltip = { china_offmap_tribute_decisions_enabled_trigger = yes }
-			hidden_tooltip = {
-				OR = { 
-					ai = yes
-					china_offmap_tribute_decisions_enabled_trigger = yes # AI has already checked this in the potential
-				}
-			}
-		}
-							
-		third_party_potential = {
-			show_only_failed_conditions = yes
-			custom_tooltip = {
-				text = china_tribute_send_concubine_preference_tt
-				OR = {
-					AND = {
-						offmap_china = {
-							offmap_ruler = {
-								is_female = yes
-							}
-						}
-						FROMFROM = {
-							is_female = no
-						}
-					}
-					AND = {
-						offmap_china = {
-							offmap_ruler = {
-								is_female = no
-							}
-						}
-						FROMFROM = {
-							is_female = yes
-						}
-					}
-				}
-			}
-			FROMFROM = {
-				show_scope_change = no
-				custom_tooltip = {
-					text = is_close_relative_or_same_dynasty_tt
-					OR = {
-						is_close_relative = ROOT_FROM
-						dynasty = ROOT_FROM
-					}
-				}
-				custom_tooltip = {
-					text = is_adult_under_45_tt
-					is_adult = yes
-					NOT = { age = 45 }
-				}
-				NOT = { is_landed = yes }
-				NOT = { is_ruler = yes }
-				NOT = { is_heir = yes }
-				custom_tooltip = {
-					text = not_married_or_getting_married_tt
-					NOT = { is_betrothed = yes }
-					NOT = { is_married = yes }
-				}
-				custom_tooltip = {
-					text = is_not_from_china_tt
-					courtier_from_china_trigger = no
-				}
-				custom_tooltip = {
-					text = is_not_incapable_inbred_or_imbecile_tt
-					NOT = { trait = incapable }
-					NOT = { trait = inbred }
-					NOT = { trait = imbecile }
-				}
-				custom_tooltip = {
-					text = is_not_maimed_or_infirm_tt
-					NOT = { trait = maimed }
-					NOT = { trait = infirm }
-				}
-				custom_tooltip = {
-					text = is_not_wounded_severely_injured_tt
-					NOT = { trait = wounded }
-					NOT = { trait = severely_injured }
-				}
-				custom_tooltip = {
-					text = is_not_one_eyed_handed_legged_disfigured_or_mangled_tt
-					NOT = { trait = one_eyed }
-					NOT = { trait = one_handed }
-					NOT = { trait = one_legged }
-					NOT = { trait = disfigured }
-					NOT = { trait = mangled }
-				}
-				NOT = { prisoner = yes }
-				custom_tooltip = {
-					text = is_not_ascetic_or_celibate_tt
-					NOT = { is_ascetic_trigger = yes }
-					NOT = { trait = celibate }
-				}
-			}
-		}
-		
-		third_party_allow = {
-			show_only_failed_conditions = yes
-			FROMFROM = {
-				is_ill = no
-				is_inaccessible_trigger = no
-			}
-		}
-		
-		third_party_score = {
-			factor = 100
-			
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					diplomacy = 8					
-					hidden_trigger = {
-						NOT = { diplomacy = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					diplomacy = 12					
-					hidden_trigger = {
-						NOT = { diplomacy = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = { 
-					show_scope_change = no
-					diplomacy = 16				
-					hidden_trigger = {
-						NOT = { diplomacy = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					diplomacy = 20
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					martial = 8					
-					hidden_trigger = {
-						NOT = { martial = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					martial = 12					
-					hidden_trigger = {
-						NOT = { martial = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = { 
-					show_scope_change = no
-					martial = 16				
-					hidden_trigger = {
-						NOT = { martial = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					martial = 20
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					stewardship = 8					
-					hidden_trigger = {
-						NOT = { stewardship = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					stewardship = 12					
-					hidden_trigger = {
-						NOT = { stewardship = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = { 
-					show_scope_change = no
-					stewardship = 16				
-					hidden_trigger = {
-						NOT = { stewardship = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					stewardship = 20
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					intrigue = 8					
-					hidden_trigger = {
-						NOT = { intrigue = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					intrigue = 12					
-					hidden_trigger = {
-						NOT = { intrigue = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = { 
-					show_scope_change = no
-					intrigue = 16				
-					hidden_trigger = {
-						NOT = { intrigue = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					intrigue = 20
-				}
-			}
-			additive_modifier = {
-				value = 20
-				FROMFROM = { 
-					show_scope_change = no
-					learning = 8					
-					hidden_trigger = {
-						NOT = { learning = 12 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					learning = 12					
-					hidden_trigger = {
-						NOT = { learning = 16 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 75
-				FROMFROM = { 
-					show_scope_change = no
-					learning = 16				
-					hidden_trigger = {
-						NOT = { learning = 20 }
-					}
-				}
-			}
-			additive_modifier = {
-				value = 120
-				FROMFROM = { 
-					show_scope_change = no
-					learning = 20
-				}
-			}
-			additive_modifier = {
-				value = 80
-				FROMFROM = { 
-					show_scope_change = no
-					trait = fair
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = groomed
-				}
-			}
-			additive_modifier = {
-				value = -80
-				FROMFROM = { 
-					show_scope_change = no
-					trait = ugly
-				}
-			}
-			additive_modifier = {
-				value = -40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = uncouth
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = genius
-				}
-			}
-			additive_modifier = {
-				value = 30
-				FROMFROM = { 
-					show_scope_change = no
-					trait = quick
-				}
-			}
-			additive_modifier = {
-				value = 40
-				FROMFROM = { 
-					show_scope_change = no
-					trait = strong
-				}
-			}
-			additive_modifier = {
-				value = 30
-				FROMFROM = {
-					show_scope_change = no
-					trait = robust
-				}
-			}
-			additive_modifier = {
-				value = 30
-				FROMFROM = {
-					show_scope_change = no
-					trait = shrewd
-				}
-			}
-			additive_modifier = {
-				value = 30
-				FROMFROM = {
-					show_scope_change = no
-					trait = charitable
-				}
-			}
-			additive_modifier = {
-				value = 30
-				FROMFROM = {
-					show_scope_change = no
-					trait = gregarious
-				}
-			}
-			additive_modifier = {
-				value = 30
-				FROMFROM = {
-					show_scope_change = no
-					trait = kind
-				}
-			}
-			additive_modifier = {
-				value = -50
-				FROMFROM = {
-					show_scope_change = no
-					trait = lunatic
-				}
-			}
-			additive_modifier = {
-				value = 25
-				custom_tooltip = {
-					text = tribute_interaction_level3_education_tt
-					FROMFROM = { 
-						OR = {
-							trait = intricate_webweaver
-							trait = charismatic_negotiator
-							trait = fortune_builder
-							trait = skilled_tactician
-							trait = scholarly_theologian
-						}
-					}
-				}
-			}
-			additive_modifier = {
-				value = 50
-				custom_tooltip = {
-					text = tribute_interaction_level4_education_tt
-					FROMFROM = { 
-						OR = {
-							trait = elusive_shadow
-							trait = grey_eminence
-							trait = midas_touched
-							trait = brilliant_strategist
-							trait = mastermind_theologian
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 2.0
-				OR = {
-					offmap_china = {
-						show_scope_change = no 
-						offmap_has_like = likes_concubines
-					}
-				}
-			}
-			modifier = {
-				factor = 2.0
-				FROMFROM = {
-					show_scope_change = no 
-					liked_by_offmap = {
-			            type = offmap_china
-			        }
-				}
-			}
-			modifier = {
-				factor = 0.5
-				offmap_china = {
-					show_scope_change = no 
-					offmap_has_dislike = likes_concubines
-				}
-			}
-			modifier = {
-				factor = 0.5
-				FROMFROM = {
-					show_scope_change = no 
-					disliked_by_offmap = {
-				        type = offmap_china
-				    }
-				}
-			}
-			modifier = {
-				factor = 1.5
-				FROM = { 
-					show_scope_change = no
-					liked_by_offmap = {
-						type = offmap_china
-					}
-				}
-			}
-			modifier = {
-				factor = 0.66
-				FROM = {
-					show_scope_change = no 
-					disliked_by_offmap = {
-						type = offmap_china
-					}
-				}
-			}
-		}
-	
-		effect = {
-			save_event_target_as = target_governor
-			FROM = {
-				sound_effect = china_grace_gain
-				save_event_target_as = target_tribute_sender
-			}
-			FROMFROM = {
-				save_event_target_as = person_sent_as_tribute
-			}
-			#if = {
-			#	limit = {
-			#		FROMFROM = { disliked_by_offmap = offmap_china }
-			#	}
-			#	custom_tooltip = { text = notification_china_dislike_tt }
-			#}
-			#if = {
-			#	limit = {
-			#		NOT = { FROMFROM = { disliked_by_offmap = offmap_china } }
-			#		FROMFROM = { liked_by_offmap = offmap_china }
-			#	}
-			#	custom_tooltip = { text = notification_china_like_tt }
-			#}
-			
-			FROM = {
-				show_scope_change = no
-				add_offmap_currency = {
-					offmap = offmap_china
-					value = local_third_party_score
-				}
-			}
-			
-			# Like/Dislike effect description
-			#################################
-			if = {
-				limit = {
-					OR = {
-						FROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-						FROMFROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-					}
-					NOR = {
-						FROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-						FROMFROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-					}
-				}
-				e_china_west_governor = {
-					show_scope_change = no
-					offmap_power = {
-						show_scope_change = no
-						custom_tooltip = { text = likes_tt }
-					}
-				}
-			}
-			
-			if = {
-				limit = {
-					OR = {
-						FROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-						FROMFROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-					}
-					NOR = {
-						FROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-						FROMFROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-					}
-				}
-				e_china_west_governor = {
-					show_scope_change = no
-					offmap_power = {
-						show_scope_change = no
-						custom_tooltip = { text = dislikes_tt }
-					}
-				}
-			}
-			if = {
-				limit = {
-					OR = {
-						FROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-						FROMFROM = {
-							liked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-					}
-					OR = {
-						FROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-						FROMFROM = {
-							disliked_by_offmap = {
-								type = offmap_china
-								context = concubine
-							}
-						}
-					}
-				}
-				e_china_west_governor = {
-					show_scope_change = no
-					offmap_power = {
-						show_scope_change = no
-						custom_tooltip = { text = likes_but_dislikes_tt }
-					}
-				}
-			}
-			#################################
-			
-			
-			FROMFROM = {
-				show_scope_change = no
-				leave_court_for_china_effect = yes
-			}
-			hidden_effect = {
-				FROM = {
-					add_character_modifier = {
-						modifier = chinese_grace_send_concubine_timer
-						hidden = yes
-						years = 20
-					
-					}
-					if = {
-						limit = { local_third_party_score_low_trigger = yes }
-						set_character_flag = sent_bad_tribute
-					}
-					if = {
-						limit = { local_third_party_score_medium_trigger = yes }
-						set_character_flag = sent_decent_tribute
-					}
-					if = {
-						limit = { local_third_party_score_great_trigger = yes }
-						set_character_flag = sent_great_tribute
-					}
-					set_character_flag = sent_concubine_tribute
-					letter_event = { id = JD.10050 days = 5 random = 2 }
-				}
-			}
-		}
-	
-		revoke_allowed = {
-			always = no
-		}
-	
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.5 # slow down
 			}
 		}
 	}
@@ -2639,7 +1204,7 @@ offmap_decisions = {
 						}
 					}
 				}
-				e_china_west_governor = {
+				e_australian_capitancy = {
 					show_scope_change = no
 					offmap_power = {
 						show_scope_change = no
@@ -2675,7 +1240,7 @@ offmap_decisions = {
 						}
 					}
 				}
-				e_china_west_governor = {
+				e_australian_capitancy = {
 					show_scope_change = no
 					offmap_power = {
 						show_scope_change = no
@@ -2710,7 +1275,7 @@ offmap_decisions = {
 						}
 					}
 				}
-				e_china_west_governor = {
+				e_australian_capitancy = {
 					show_scope_change = no
 					offmap_power = {
 						show_scope_change = no
@@ -3138,7 +1703,7 @@ offmap_decisions = {
 						offmap = offmap_china
 						value = 750
 					}
-					e_china_west_governor = {
+					e_australian_capitancy = {
 						show_scope_change = no
 						offmap_power = {
 							show_scope_change = no
@@ -3161,7 +1726,7 @@ offmap_decisions = {
 						offmap = offmap_china
 						value = 250
 					}
-					e_china_west_governor = {
+					e_australian_capitancy = {
 						show_scope_change = no
 						offmap_power = {
 							show_scope_change = no
@@ -3182,7 +1747,7 @@ offmap_decisions = {
 						offmap = offmap_china
 						value = 500
 					}
-					e_china_west_governor = {
+					e_australian_capitancy = {
 						show_scope_change = no
 						offmap_power = {
 							show_scope_change = no
@@ -3444,7 +2009,7 @@ offmap_decisions = {
 						}
 					}
 				}
-				e_china_west_governor = {
+				e_australian_capitancy = {
 					show_scope_change = no
 					offmap_power = {
 						show_scope_change = no
@@ -3476,7 +2041,7 @@ offmap_decisions = {
 						}
 					}
 				}
-				e_china_west_governor = {
+				e_australian_capitancy = {
 					show_scope_change = no
 					offmap_power = {
 						show_scope_change = no
@@ -3507,7 +2072,7 @@ offmap_decisions = {
 						}
 					}
 				}
-				e_china_west_governor = {
+				e_australian_capitancy = {
 					show_scope_change = no
 					offmap_power = {
 						show_scope_change = no
@@ -3905,30 +2470,13 @@ offmap_decisions = {
 				hidden_tooltip = {
 					FROM = {
 						NAND = {
-							has_artifact = chinese_artwork
-							has_artifact = chinese_calligraphy
-							has_artifact = chinese_sculpture
-							has_artifact = chinese_ceremonial_robes
-							OR = {
-								has_artifact = chinese_prev_emperor_sculpture
-								offmap_china = {
-									offmap_prev_ruler = {
-										always = no
-									}
-								}
-							}
-							has_artifact = chinese_arm_protector
-							has_artifact = chinese_serpent_spear
-							has_artifact = chinese_ji
-							has_artifact = chinese_crossbow
-							has_artifact = chinese_bronze_sculpture
-							has_artifact = chinese_book_health
-							has_artifact = chinese_book_law
-							has_artifact = chinese_book_history
-							has_artifact = chinese_book_economy
-							has_artifact = chinese_painting_of_glitterhoof
-							has_artifact = chinese_tapestry
-							has_artifact = chinese_tapestry_grand
+							has_artifact = australian_artwork
+							has_artifact = commander_sword
+							has_artifact = australian_book_poetry
+							has_artifact = australian_book_health
+							has_artifact = australian_book_law
+							has_artifact = australian_book_history
+							has_artifact = australian_book_economy
 						}
 					}
 				}
@@ -4348,171 +2896,6 @@ offmap_decisions = {
 		}
 	}
 
-	chinese_imperial_marriage = {
-		only_playable = yes
-		button_name = offmap_boons
-		third_party_filter = realm_including_me
-		ai_third_party_filter = court
-		third_party = from
-		ai_check_interval = 12
-		show_third_party_potential = yes
-		
-		from_potential = {
-			has_dlc = "Jade Dragon"
-			mercenary = no
-			holy_order = no
-			is_landed = yes
-		}
-
-		potential = {
-			is_offmap_tag = offmap_china
-		}
-
-		allow = {
-			show_only_failed_conditions = yes
-			FROM = {
-				show_scope_change = no
-				conditional_tooltip = {
-					trigger = { NOT = { has_character_modifier = peace_deal_with_china } }
-					has_offmap_currency = { offmap = offmap_china value = 1000 }
-				}
-				conditional_tooltip = {
-					trigger = { has_character_modifier = peace_deal_with_china }
-					has_offmap_currency = { offmap = offmap_china value = 750 }
-				}
-				OR = {
-					custom_tooltip = {
-						text = can_marry_chinese_royal_tt
-						AND = {
-							is_adult = yes
-							is_married = no
-						}
-					}
-					custom_tooltip = {
-						text = has_courtier_eligible_for_marriage_tt
-						OR = {
-							any_dynasty_member = {
-								is_adult = yes
-								is_married = no
-								liege = { character = ROOT_FROM }
-							}
-							any_close_relative = {
-								is_adult = yes
-								is_married = no
-								liege = { character = ROOT_FROM }
-								NOT = { any_spouse = { character = ROOT_FROM } } #turns out without this, it includes your spouse
-							}
-						}
-					}
-				}
-				prisoner = no
-				NOT = { trait = incapable }
-				is_inaccessible_trigger = no
-			}
-			china_offmap_boon_decisions_enabled_trigger = yes
-		}
-
-		third_party_potential = {
-			show_only_failed_conditions = yes
-			FROMFROM = {
-				show_scope_change = no
-				OR = {
-					dynasty = ROOT_FROM
-					is_close_relative = ROOT_FROM
-				}
-				OR = {
-					character = ROOT_FROM
-					AND = {
-						liege = { character = ROOT_FROM }
-						ai = yes
-					}
-				}
-				NOT = { any_spouse = { character = ROOT_FROM } } 
-				is_adult = yes
-				is_betrothed = no
-			}
-		}
-
-		third_party_allow = {
-			show_only_failed_conditions = yes
-			FROMFROM = {
-				custom_tooltip = {
-					text = can_marry_chinese_royal_tt
-					can_marry = yes
-					is_married = no
-				}
-			}
-		}
-
-		effect = {
-			FROM = {
-				show_scope_change = no
-				sound_effect = china_grace_spend
-				if = {
-					limit = { has_character_modifier = peace_deal_with_china }
-					add_offmap_currency = {
-						offmap = offmap_china
-						value = -750
-					}
-				}
-				else = {
-					add_offmap_currency = {
-						offmap = offmap_china
-						value = -1000
-					}
-					custom_tooltip = { text = chinese_imperial_marriage_peace_deal_tt }	
-				}				
-			}
-			if = { 
-				limit = { FROMFROM = { is_female = yes } } 
-				custom_tooltip = { text = chinese_imperial_marriage_prince_effect_tt }
-			}
-			if = { 
-				limit = { FROMFROM = { is_female = no } } 
-				custom_tooltip = { text = chinese_imperial_marriage_princess_effect_tt }
-			}
-			hidden_effect = { FROMFROM = { add_trait = cannot_marry } }
-			hidden_effect = { offmap_china = { governor = { character_event = { id = JD.20045 } } } }
-			hidden_effect = { FROM = { set_china_boon_cd_effect = yes } }
-			FROM = {
-				if = {
-					limit = {
-						ai = no
-					}
-					hidden_effect = { set_character_flag = achievement_imperial_marriage }
-				}
-			}
-			FROMFROM = { set_character_flag = awaiting_imperial_wedding }
-		}
-
-		revoke_allowed = {
-			always = no
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.1 # slow down
-			}
-			modifier = {
-				factor = 0.5
-				FROM = {
-					NOT = {
-						higher_tier_than = DUKE
-					}
-				}
-			}
-			modifier = {
-				factor = 0.75
-				FROM = {
-					NOT = {
-						independent = yes
-					}
-				}
-			}
-		}
-	}
-
 	chinese_request_invasion = {
 		only_playable = yes
 		button_name = offmap_boons
@@ -4700,7 +3083,7 @@ offmap_decisions = {
 				custom_tooltip = { #Borders the eastern edge of the map
 					text = chinese_grace_become_tributary_allow_chinese_influence_tt
 					any_realm_province = {
-						region = custom_chinese_invasion_target_region
+						region = custom_australian_invasion_target_region
 					}
 				}
 				custom_tooltip = {
@@ -4869,21 +3252,21 @@ offmap_decisions = {
 					custom_tooltip = { #Borders the Western Governate
 						text = chinese_grace_become_tributary_allow_governor_neighbor_tt
 						any_neighbor_independent_ruler = {
-							has_landed_title = e_china_west_governor
+							has_landed_title = e_australian_capitancy
 						}
 					}
 					custom_tooltip = { #Borders a Chinese tributary
 						text = chinese_grace_become_tributary_allow_tributary_neighbor_tt
 						any_neighbor_independent_ruler = {
 							suzerain = {
-								has_landed_title = e_china_west_governor
+								has_landed_title = e_australian_capitancy
 							}
 						}
 					}
 					custom_tooltip = { #Borders the eastern edge of the map
 						text = chinese_grace_become_tributary_allow_chinese_influence_tt
 						any_realm_province = {
-							region = custom_chinese_invasion_target_region
+							region = custom_australian_invasion_target_region
 						}
 					}
 					custom_tooltip = { #Within diplo range of China and has a port in India
@@ -5045,7 +3428,7 @@ offmap_decisions = {
 					custom_tooltip = { #Borders the Western Governate
 						text = chinese_grace_become_tributary_allow_governor_neighbor_tt
 						any_neighbor_independent_ruler = {
-							has_landed_title = e_china_west_governor
+							has_landed_title = e_australian_capitancy
 						}
 					}
 					custom_tooltip = { #Borders the eastern edge of the map

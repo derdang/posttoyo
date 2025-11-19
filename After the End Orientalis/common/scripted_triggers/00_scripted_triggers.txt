@@ -4958,23 +4958,23 @@ valid_offmap_china_target = {
 
 valid_offmap_china_target_location = {
 	OR = {
-		any_realm_province = { region = custom_chinese_invasion_target_region }
+		any_realm_province = { region = custom_australian_invasion_target_region }
 		any_neighbor_independent_ruler = {
-			has_landed_title = e_china_west_governor
+			has_landed_title = e_australian_capitancy
 		}
 	}
 }
 
 valid_offmap_china_target_location_tributary_chain = {
 	OR = {
-		#any_realm_province = { region = custom_chinese_invasion_target_region }
+		#any_realm_province = { region = custom_australian_invasion_target_region }
 		any_neighbor_independent_ruler = {
-			has_landed_title = e_china_west_governor
+			has_landed_title = e_australian_capitancy
 		}
 		any_neighbor_independent_ruler = {
 			is_tributary = yes
 			suzerain = {
-				has_landed_title = e_china_west_governor
+				has_landed_title = e_australian_capitancy
 			}
 		}
 	}
