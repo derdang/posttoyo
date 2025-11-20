@@ -196,7 +196,7 @@ offmap_china = {
 		}
 		culture = {
 	
-			bengali = { # default culture for new emperor
+			strine = { # default culture for new emperor
 				value = 99 # if any other value reaches 100, it will be picked instead
 			}
 			FROM = { # default culture for new emperor
@@ -208,7 +208,7 @@ offmap_china = {
 					FROM = { culture_scope = { always = yes } } # Essentially a check that the previous emperor actually exists
 				}
 			}
-			elephant_culture = {
+			horse = {
 				value = 0
 				additive_modifier = {
 					has_alternate_start_parameter = { key = special_culture value = animal_world }
@@ -224,7 +224,7 @@ offmap_china = {
 		}
 
 		religion = {
-			hindu = { # default religion for new emperor
+			mateship = { # default religion for new emperor
 				value = 99 # if any other value reaches 100, it will be picked instead (unless equal, then it will randomize)
 			}
 			FROM = {
@@ -256,16 +256,6 @@ offmap_china = {
 		}
 		
 		likes = {
-			likes_concubines = {
-				value = 300
-				modifier = {
-					factor = 0.1
-					FROMFROM = { is_female = yes }
-				}
-			}
-			likes_eunuchs = {
-				value = 300
-			}
 			likes_wealth = {
 				value = 300
 			}
@@ -279,6 +269,54 @@ offmap_china = {
 					NOT = {
 						any_province = {
 							culture_group = han
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+			}
+			likes_indians = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							culture_group = indo_aryan_group
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+			}
+			likes_iranians = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							culture_group = east_iranic
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+			}
+			likes_dravidians = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							culture_group = dravidian_group
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+			}
+			likes_papuan = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							culture_group = papuan
 							is_within_diplo_range = offmap_china
 						}
 					}
@@ -311,14 +349,13 @@ offmap_china = {
 					}
 				}
 			}
-			
 			likes_tai = {
 				value = 100
 				modifier = {
 					factor = 0
 					NOT = {
 						any_province = {
-							likes_tai = yes
+							likes_thai_people = yes
 							is_within_diplo_range = offmap_china
 						}
 					}
@@ -552,6 +589,54 @@ offmap_china = {
 					FROMFROM = { likes_eastern = yes }
 				}
 			}
+			likes_jews = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							religion_group = jewish_group
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					FROMFROM = { likes_jews = yes }
+				}
+			}
+			likes_zoroastrians = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							religion = zoroastrian
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					FROMFROM = { religion = zoroastrian }
+				}
+			}
+			likes_indian_groups = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							religion_group = indian_group
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					FROMFROM = { likes_indian_groups = yes }
+				}
+			}
 			likes_japonic = {
 				value = 100
 				modifier = {
@@ -584,26 +669,32 @@ offmap_china = {
 					FROMFROM = { religion_group = buddhist_group }
 				}
 			}
+			likes_old_world_cultists = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							religion_group = oldworld
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0.5
+					FROMFROM = { likes_old_world_cultists = yes }
+				}
+			}
 		}
 		
 		dislikes = {
-			likes_concubines = {
-				value = 100
-				modifier = {
-					factor = 5.0
-					FROMFROM = { is_female = yes }
-				}
-			}
-			likes_eunuchs = {
-				value = 100
-			}
 			likes_tributaries = {
 				value = 100
 			}
 			likes_wealth = {
 				value = 100
 			}
-			likes_indians = {
+			likes_chinese = {
 				value = 100
 				modifier = {
 					factor = 0
@@ -621,7 +712,7 @@ offmap_china = {
 					}
 				}
 			}
-			likes_dravidians = {
+			likes_burmese = {
 				value = 100
 				modifier = {
 					factor = 0
@@ -642,6 +733,42 @@ offmap_china = {
 							culture_group = burmic
 							culture_group = karenic
 						}
+					}
+				}
+			}
+			likes_indians = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							culture_group = indo_aryan_group
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROMFROM = {
+						culture_group = indo_aryan_group
+					}
+				}
+			}
+			likes_dravidians = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							culture_group = dravidian_group
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROMFROM = {
+						culture_group = dravidian_group
 					}
 				}
 			}
@@ -669,7 +796,7 @@ offmap_china = {
 					factor = 0
 					NOT = {
 						any_province = {
-							likes_tai = yes
+							likes_thai_people = yes
 							is_within_diplo_range = offmap_china
 						}
 					}
@@ -999,6 +1126,38 @@ offmap_china = {
 					FROMFROM = { religion_group = eastern }
 				}
 			}
+			likes_jews = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							religion_group = jewish_group
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROMFROM = { religion_group = jewish_group }
+				}
+			}
+			likes_zoroastrians = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							religion = zoroastrian
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROMFROM = { religion = zoroastrian }
+				}
+			}
 			likes_japonic = {
 				value = 100
 				modifier = {
@@ -1015,6 +1174,22 @@ offmap_china = {
 					FROMFROM = { religion_group = japonic }
 				}
 			}
+			likes_indian_groups = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							religion_group = indian_group
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROMFROM = { religion_group = indian_group }
+				}
+			}
 			likes_buddhists = {
 				value = 100
 				modifier = {
@@ -1029,6 +1204,22 @@ offmap_china = {
 				modifier = {
 					factor = 0
 					FROMFROM = { religion_group = buddhist_group }
+				}
+			}
+			likes_old_world_cultists = {
+				value = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_province = {
+							religion_group = oldworld
+							is_within_diplo_range = offmap_china
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROMFROM = { likes_old_world_cultists = yes }
 				}
 			}
 		}
