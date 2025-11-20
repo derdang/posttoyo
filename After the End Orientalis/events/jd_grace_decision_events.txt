@@ -4103,18 +4103,18 @@ character_event = {
         }
         custom_tooltip = { text = force_china_open_cb_outcome_tt }
     }
-    option = { #Silk Road dominance
+    option = { #Oceanic Trade dominance
         name = EVT_OPTB_JD_60301
         trigger = {
             any_realm_province = {
                 OR = {
-                    province_id = 1513 #Jiuquan
-                    province_id = 1505 #Markam
-                    province_id = 1114 #Mahoyadapuram
+                    province_id = 1083 #Weipa
+                    province_id = 672 #Port Moresby
+                    province_id = 570 #Dili
                 }
             }
             trade_route_control = {
-                trade_route = silk_road
+                trade_route = oceanic_trade
                 value >= 0.25
                 type = wealth
                 indirectly_owned = yes
@@ -4221,7 +4221,7 @@ narrative_event = {
     }
 }
 
-#News Event: Silk Road dominance forces open China
+#News Event: Oceanic Trade dominance forces open China
 narrative_event = {
     id = JD.60304
 	has_dlc = "Jade Dragon"
@@ -4417,7 +4417,7 @@ letter_event = {
                         75 = {
                             trigger = {
                                 any_trade_post = {
-                                    trade_route = silk_road
+                                    trade_route = oceanic_trade
                                 }
                             }
                             set_character_flag = force_open_china_demands_trade_post
@@ -4436,194 +4436,6 @@ letter_event = {
                                 offmap_china = { offmap_has_dislike = likes_wealth }
                             }
                             set_character_flag = force_open_china_demands_wealth
-                        }
-                        25 = {
-                            trigger = {
-                                any_courtier = {
-                                    NOR = {
-                                        has_character_flag = originated_from_chinese_court
-                                        has_character_flag = eunuch_gift
-                                        is_landed = yes
-                                        is_female = yes
-                                        is_betrothed = yes
-                                        spouse = { always = yes }
-                                        trait = incapable
-                                        trait = inbred
-                                        trait = imbecile
-                                    }
-                                    OR = {
-                                        is_close_relative = ROOT_FROM
-                                        diplomacy = 20
-                                        martial = 20
-                                        stewardship = 20
-                                        intrigue = 20
-                                        learning = 20
-                                        trait = strong
-                                        trait = genius
-                                        trait = quick
-                                        trait = fair
-                                        trait = robust
-                                        trait = shrewd
-                                        trait = architect
-                                        trait = strategist
-                                        trait = scholar
-                                        trait = faqih
-                                    }
-                                    OR = {
-                                        is_adult = yes
-                                        AND = {
-                                            is_close_relative = ROOT_FROM
-                                            age = 12
-                                        }
-                                    }
-                                    is_heir = no
-                                    is_ill = no
-                                    is_inaccessible_trigger = no
-                                }
-                            }
-                            modifier = {
-                                factor = 2
-                                offmap_china = { offmap_has_like = likes_eunuchs }
-                            }
-                            modifier = {
-                                factor = 2
-                                offmap_china = { offmap_has_dislike = likes_eunuchs }
-                            }
-                            random_courtier = {
-                                limit = { 
-                                    NOR = {
-                                        has_character_flag = originated_from_chinese_court
-                                        has_character_flag = eunuch_gift
-                                        is_landed = yes
-                                        is_female = yes
-                                        is_betrothed = yes
-                                        spouse = { always = yes }
-                                        trait = incapable
-                                        trait = inbred
-                                        trait = imbecile
-                                    }
-                                    OR = {
-                                        is_close_relative = ROOT_FROM
-                                        diplomacy = 20
-                                        martial = 20
-                                        stewardship = 20
-                                        intrigue = 20
-                                        learning = 20
-                                        trait = strong
-                                        trait = genius
-                                        trait = quick
-                                        trait = fair
-                                        trait = robust
-                                        trait = shrewd
-                                        trait = architect
-                                        trait = strategist
-                                        trait = scholar
-                                        trait = faqih
-                                    }
-                                    OR = {
-                                        is_adult = yes
-                                        AND = {
-                                            is_close_relative = ROOT_FROM
-                                            age = 12
-                                        }
-                                    }
-                                    is_heir = no
-                                    is_ill = no
-                                    is_inaccessible_trigger = no
-                                }
-                                save_event_target_as = target_courtier
-                            }
-                            set_character_flag = force_open_china_demands_eunuch
-                        }
-                        25 = {
-                            trigger = {
-                                any_courtier = {
-                                    OR = {
-                                        AND = {
-                                            offmap_china = {
-                                                offmap_ruler = {
-                                                    is_female = yes
-                                                }
-                                            }
-                                            is_female = no
-                                        }
-                                        AND = {
-                                            offmap_china = {
-                                                offmap_ruler = {
-                                                    is_female = no
-                                                }
-                                            }
-                                            is_female = yes
-                                        }
-                                    }
-                                    is_close_relative = ROOT_FROM
-                                    is_adult = yes
-                                    NOT = { age = 45 }
-                                    NOR = {
-                                        has_character_flag = originated_from_chinese_court
-                                        is_landed = yes
-                                        is_betrothed = yes
-                                        is_married = yes
-                                        trait = incapable
-                                        trait = inbred
-                                        trait = imbecile
-                                        trait = celibate
-                                    }
-                                    is_heir = no
-                                    is_ill = no
-                                    NOT = { trait = wounded }
-                                    is_inaccessible_trigger = no
-                                }
-                            }
-                            modifier = {
-                                factor = 2
-                                offmap_china = { offmap_has_like = likes_concubines }
-                            }
-                            modifier = {
-                                factor = 2
-                                offmap_china = { offmap_has_dislike = likes_concubines }
-                            }
-                            random_courtier = {
-                                limit = { 
-                                    OR = {
-                                        AND = {
-                                            offmap_china = {
-                                                offmap_ruler = {
-                                                    is_female = yes
-                                                }
-                                            }
-                                            is_female = no
-                                        }
-                                        AND = {
-                                            offmap_china = {
-                                                offmap_ruler = {
-                                                    is_female = no
-                                                }
-                                            }
-                                            is_female = yes
-                                        }
-                                    }
-                                    is_close_relative = ROOT_FROM
-                                    is_adult = yes
-                                    NOT = { age = 45 }
-                                    NOR = {
-                                        has_character_flag = originated_from_chinese_court
-                                        is_landed = yes
-                                        is_betrothed = yes
-                                        is_married = yes
-                                        trait = incapable
-                                        trait = inbred
-                                        trait = imbecile
-                                        trait = celibate
-                                    }
-                                    is_heir = no
-                                    is_ill = no
-                                    NOT = { trait = wounded }
-                                    is_inaccessible_trigger = no
-                                }
-                                save_event_target_as = target_courtier
-                            }
-                            set_character_flag = force_open_china_demands_concubine
                         }
                         50 = {
                             trigger = {
@@ -4697,37 +4509,13 @@ letter_event = {
             force_open_china_demands_trade_post = {
                 random_trade_post = {
                     limit = {
-                        trade_route = silk_road
+                        trade_route = oceanic_trade
                     }
                     destroy_tradepost = THIS
                 }
             }
             force_open_china_demands_wealth = {
                 scaled_wealth = { value = -2 min = -2000 }
-            }
-            force_open_china_demands_eunuch = {
-                event_target:target_courtier = { 
-                    show_scope_change = no
-                    hidden_effect = {
-                        if = {
-                            limit = {
-                                NOT = {
-                                    trait = eunuch
-                                }
-                            }
-                            add_trait = eunuch
-                        }
-                    }
-					set_character_flag = ignore_refund
-                    leave_court_for_china_effect = yes
-                }
-            }
-            force_open_china_demands_concubine = {
-                event_target:target_courtier = { 
-                    show_scope_change = no
-					set_character_flag = ignore_refund
-                    leave_court_for_china_effect = yes
-                }
             }
             force_open_china_demands_return_chinese = {
                 any_courtier = {

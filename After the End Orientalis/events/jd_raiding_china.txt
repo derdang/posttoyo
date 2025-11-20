@@ -362,196 +362,75 @@ character_event = { # Normal Outcome
 					10 = {
 						trigger = {
 							NOT = {
-								has_artifact = chinese_artwork
+								has_artifact = australian_artwork
 							}
 						}
-						add_artifact = chinese_artwork
+						add_artifact = australian_artwork
 						new_artifact = {
-							set_name="chinese_artwork_name"
+							set_name="australian_artwork_name"
 						}
 					}
 					10 = {
 						trigger = {
 							NOT = {
-								has_artifact = chinese_calligraphy
+								has_artifact = commander_sword
 							}
 						}
-						add_artifact = chinese_calligraphy
+						add_artifact = commander_sword
+					}
+					10 = {
+						trigger = {
+							NOT = {
+								has_artifact = australian_book_health
+							}
+						}
+						add_artifact = australian_book_health
 						new_artifact = {
-							set_name="chinese_calligraphy_name"
+							set_name="australian_book_health_name"
 						}
 					}
 					10 = {
 						trigger = {
 							NOT = {
-								has_artifact = chinese_sculpture
+								has_artifact = australian_book_law
 							}
 						}
-						add_artifact = chinese_sculpture
+						add_artifact = australian_book_law
 						new_artifact = {
-							set_name="chinese_sculpture_name"
+							set_name="australian_book_law_name"
 						}
 					}
 					10 = {
 						trigger = {
 							NOT = {
-								has_artifact = chinese_ceremonial_robes
+								has_artifact = australian_book_history
 							}
 						}
-						add_artifact = chinese_ceremonial_robes
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_prev_emperor_sculpture
-							}
-							offmap_china = {
-								offmap_prev_ruler = {
-									always = yes
-								}
-							}
-						}
-						offmap_china = {
-							offmap_prev_ruler = {
-								save_event_target_as = prev_emperor
-							}
-						}
-						add_artifact = chinese_prev_emperor_sculpture
+						add_artifact = australian_book_history
 						new_artifact = {
-							set_name="chinese_figurine_name"
+							set_name="australian_book_history_name"
 						}
 					}
 					10 = {
 						trigger = {
 							NOT = {
-								has_artifact = chinese_arm_protector
-							} 
+								has_artifact = australian_book_economy
+							}
 						}
-						add_artifact = chinese_arm_protector
+						add_artifact = australian_book_economy
 						new_artifact = {
-							set_name="chinese_arm_protector_name"
+							set_name="australian_book_economy_name"
 						}
 					}
 					10 = {
 						trigger = {
 							NOT = {
-								has_artifact = chinese_serpent_spear
+								has_artifact = australian_book_poetry
 							}
 						}
-						add_artifact = chinese_serpent_spear
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_ji
-							}
-						}
-						add_artifact = chinese_ji
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_crossbow
-							}
-						}
-						add_artifact = chinese_crossbow
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_bronze_sculpture
-							}
-						}
-						add_artifact = chinese_bronze_sculpture
+						add_artifact = australian_book_poetry
 						new_artifact = {
-							set_name="chinese_bronze_sculpture_name"
-						}
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_book_health
-							}
-						}
-						add_artifact = chinese_book_health
-						new_artifact = {
-							set_name="chinese_book_health_name"
-						}
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_book_law
-							}
-						}
-						add_artifact = chinese_book_law
-						new_artifact = {
-							set_name="chinese_book_law_name"
-						}
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_book_history
-							}
-						}
-						add_artifact = chinese_book_history
-						new_artifact = {
-							set_name="chinese_book_history_name"
-						}
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_book_economy
-							}
-						}
-						add_artifact = chinese_book_economy
-						new_artifact = {
-							set_name="chinese_book_economy_name"
-						}
-					}
-					1 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_painting_of_glitterhoof
-							}
-						}
-						add_artifact = chinese_painting_of_glitterhoof
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_tapestry
-							}
-						}
-						random_independent_ruler = {
-							limit = {
-								any_realm_province = {
-									trade_route = silk_road
-								}
-							}
-							random_realm_province = {
-								limit = {
-									trade_route = silk_road
-								}
-								save_event_target_as = tapestry_target
-							}
-						}
-						add_artifact = chinese_tapestry
-						new_artifact = {
-							set_name="chinese_tapestry_name"
-						}
-					}
-					10 = {
-						trigger = {
-							NOT = {
-								has_artifact = chinese_tapestry_grand
-							}
-						}
-						add_artifact = chinese_tapestry_grand
-						new_artifact = {
-							set_name="chinese_tapestry_grand_name"
+							set_name="australian_book_poetry_name"
 						}
 					}
 				}
