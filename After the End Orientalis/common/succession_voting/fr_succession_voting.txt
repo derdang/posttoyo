@@ -58,8 +58,6 @@ nomadic_elective = {
 				trait = weak
 				trait = hunchback
 				trait = feeble
-				trait = delicate
-				trait = soft
 
 			}
 		}
@@ -1778,44 +1776,45 @@ nomadic_elective = {
 				trait = severely_injured
 			}
 		}
-		additive_modifier = { #Attraction bonus - now with bisexuality
+		additive_modifier = { #Attraction bonus
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_attractive
 			NOT = { character = FROM } #Do not judge yourself.
 			is_adult = yes
-			OR = {
+			OR = { 
 				NOT = { is_close_relative = FROM }
-				has_religion_feature = religion_holy_family
-			}
-			OR = {
-				AND = {
-					fancies_men_trigger = yes
-					NOR = {
-						trait = celibate
-						AND = {
-							is_married = yes
+				religion = zoroastrian
+				has_religion_feature = religion_holy_family 
+			} 
+			OR = { 
+				AND = { 
+					prefers_men_trigger = yes
+					NOR = { 
+						trait = celibate 
+						AND = { 
+							is_married = yes 
 							NOT = { is_married = FROM }
 							trait = chaste
 						}
 					}
-					FROM = {
-						is_female = no
+					FROM = { 
+						is_female = no 
 						is_adult = yes
 						is_attractive_trigger = yes
 					}
 				}
-				AND = {
-					fancies_women_trigger = yes
-					NOR = {
-						trait = celibate
-						AND = {
-							is_married = yes
+				AND = { 
+					prefers_men_trigger = no
+					NOR = { 
+						trait = celibate 
+						AND = { 
+							is_married = yes 
 							NOT = { is_married = FROM }
 							trait = chaste
 						}
 					}
-					FROM = {
-						is_female = yes
+					FROM = { 
+						is_female = yes 
 						is_adult = yes
 						is_attractive_trigger = yes
 					}
@@ -1827,39 +1826,40 @@ nomadic_elective = {
 			localisation_key = tooltip_feudal_elector_vote_ugly
 			NOT = { character = FROM } #Do not judge yourself.
 			is_adult = yes
-			OR = {
+			OR = { 
 				NOT = { is_close_relative = FROM }
-				has_religion_feature = religion_holy_family
-			}
-			OR = {
-				AND = {
-					fancies_men_trigger = yes
-					NOR = {
-						trait = celibate
-						AND = {
-							is_married = yes
+				religion = zoroastrian
+				has_religion_feature = religion_holy_family 
+			} 
+			OR = { 
+				AND = { 
+					prefers_men_trigger = yes
+					NOR = { 
+						trait = celibate 
+						AND = { 
+							is_married = yes 
 							NOT = { is_married = FROM }
 							trait = chaste
 						}
 					}
-					FROM = {
-						is_female = no
+					FROM = { 
+						is_female = no 
 						is_adult = yes
 						is_unattractive_trigger = yes
 					}
 				}
-				AND = {
-					fancies_women_trigger = yes
-					NOR = {
-						trait = celibate
-						AND = {
-							is_married = yes
+				AND = { 
+					prefers_men_trigger = no
+					NOR = { 
+						trait = celibate 
+						AND = { 
+							is_married = yes 
 							NOT = { is_married = FROM }
 							trait = chaste
 						}
 					}
-					FROM = {
-						is_female = yes
+					FROM = { 
+						is_female = yes 
 						is_adult = yes
 						is_unattractive_trigger = yes
 					}
