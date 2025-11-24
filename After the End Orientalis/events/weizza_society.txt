@@ -1418,7 +1418,7 @@ society_quest_event = {
     option = {
 		name = ACCEPT
 		ai_chance = { factor = 100 }
-		set_quest = quest_weizza_society_build_laboratory
+		set_quest = quest_weizza_society_build_tantric_center
 	}
 
 	option = {
@@ -1465,7 +1465,7 @@ character_event = {
 		}
 	}
 
-	trigger = { has_quest = quest_weizza_society_build_laboratory }
+	trigger = { has_quest = quest_weizza_society_build_tantric_center }
 
     option = { 
         name = EVTOPTA_wizard_1122
@@ -7686,7 +7686,7 @@ character_event = {
 		name = EVTOPTD_wizard_1900
 		
 		add_society_currency_minor_effect = yes
-		clr_character_flag = choosing_hermetic_art
+		clr_character_flag = choosing_weizza_society_art
 	}
 }
 
@@ -7732,7 +7732,7 @@ character_event = {
 			remove_trait = theologian
 		}
 		add_trait = scholar
-		clr_character_flag = choosing_hermetic_art
+		clr_character_flag = choosing_weizza_society_art
 	}
 	
 	option = { # Change to Alchemy/Mystic
@@ -7751,7 +7751,7 @@ character_event = {
 			remove_trait = theologian
 		}
 		add_trait = mystic
-		clr_character_flag = choosing_hermetic_art
+		clr_character_flag = choosing_weizza_society_art
 	}
 	
 	option = { # Change to Theurgy/Theologian
@@ -7770,14 +7770,14 @@ character_event = {
 			remove_trait = mystic
 		}
 		add_trait = theologian
-		clr_character_flag = choosing_hermetic_art
+		clr_character_flag = choosing_weizza_society_art
 	}
 	
 	option = { # Change your mind
 		name = EVTOPTD_wizard_1901
 		
 		add_society_currency_minor_effect = yes
-		clr_character_flag = choosing_hermetic_art
+		clr_character_flag = choosing_weizza_society_art
 	}
 }
 
@@ -7916,7 +7916,7 @@ character_event = {
 			}
 		}
 		add_trait = scholar
-		clr_character_flag = choosing_hermetic_art
+		clr_character_flag = choosing_weizza_society_art
 	}
 }
 
@@ -8020,7 +8020,7 @@ character_event = {
 			}
 		}
 		add_trait = mystic
-		clr_character_flag = choosing_hermetic_art
+		clr_character_flag = choosing_weizza_society_art
 	}
 }
 
@@ -8098,7 +8098,7 @@ character_event = {
 			}
 		}
 		add_trait = theologian
-		clr_character_flag = choosing_hermetic_art
+		clr_character_flag = choosing_weizza_society_art
 	}
 }
 ################
@@ -8234,7 +8234,7 @@ character_event = {
     	random_list = {
     		70 = { #Your rival gets invited
     			trigger = { society = { any_society_member = { ai = yes NOT = { reverse_opinion = { who = ROOT value = -30 } } } } }
-    			set_character_flag = disliked_hermetic_colleague
+    			set_character_flag = disliked_weizza_society_colleague
 
     			society = {
     				random_society_member = {
@@ -8314,14 +8314,14 @@ character_event = {
         reverse_opinion = { who = event_target:great_minds_guest_2 modifier = opinion_grateful_invitation months = 3 }
         reverse_opinion = { who = event_target:great_minds_guest_3 modifier = opinion_grateful_invitation months = 3 }
         if = {
-        	limit = { NOT = { has_character_flag = disliked_hermetic_colleague } }
+        	limit = { NOT = { has_character_flag = disliked_weizza_society_colleague } }
         	reverse_opinion = { who = event_target:great_minds_guest_4 modifier = opinion_grateful_invitation months = 3 }
         }
         hidden_effect = {
 	        if = {
-	        	limit = { has_character_flag = disliked_hermetic_colleague }
+	        	limit = { has_character_flag = disliked_weizza_society_colleague }
 	        	event_target:great_minds_guest_3 = { character_event = { id = wizard.1462 days = 10 } }
-	        	clr_character_flag = disliked_hermetic_colleague
+	        	clr_character_flag = disliked_weizza_society_colleague
 	        	break = yes
 	        }
 	        character_event = { id = wizard.1464 days = 30 }
@@ -12083,7 +12083,7 @@ character_event = {
 				has_minor_title = title_weizza_society_apprentice
 			}
 			save_event_target_as = gathering_companion
-			ROOT = { set_character_flag = apprentice_hermetic_gathering }
+			ROOT = { set_character_flag = apprentice_weizza_society_gathering }
 		}
 	}
 	
@@ -12143,11 +12143,11 @@ society_quest_event = {
     option = {
 		name = ACCEPT
 
-		tooltip = { set_quest = quest_hermetic_gather_ingredients }
+		tooltip = { set_quest = quest_weizza_society_gather_ingredients }
 		hidden_effect = {
 			FROM = {
 				set_quest_target = {
-					id = quest_hermetic_gather_ingredients
+					id = quest_weizza_society_gather_ingredients
 					holder = ROOT
 				}
 			}
@@ -12391,9 +12391,9 @@ character_event = {
 		
 		if = {
 			limit = {
-				has_quest = quest_hermetic_gather_ingredients
+				has_quest = quest_weizza_society_gather_ingredients
 			}
-			clr_quest = quest_hermetic_gather_ingredients
+			clr_quest = quest_weizza_society_gather_ingredients
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_medium_effect = yes
 		}
@@ -12417,9 +12417,9 @@ character_event = {
 		
 		if = {
 			limit = {
-				has_quest = quest_hermetic_gather_ingredients
+				has_quest = quest_weizza_society_gather_ingredients
 			}
-			clr_quest = quest_hermetic_gather_ingredients
+			clr_quest = quest_weizza_society_gather_ingredients
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_minor_effect = yes
 		}
@@ -12439,9 +12439,9 @@ character_event = {
 		
 		if = {
 			limit = {
-				has_quest = quest_hermetic_gather_ingredients
+				has_quest = quest_weizza_society_gather_ingredients
 			}
-			clr_quest = { id = quest_hermetic_gather_ingredients failure = yes }
+			clr_quest = { id = quest_weizza_society_gather_ingredients failure = yes }
 		}
 		random_list = {
 			120 = { #no effect
@@ -12479,7 +12479,7 @@ character_event = {
 			}
 		}
 		clr_character_flag = do_not_disturb
-		clr_character_flag = apprentice_hermetic_gathering
+		clr_character_flag = apprentice_weizza_society_gathering
 	}
 }
 
@@ -12704,9 +12704,9 @@ character_event = {
 		
 		if = {
 			limit = {
-				has_quest = quest_hermetic_gather_ingredients
+				has_quest = quest_weizza_society_gather_ingredients
 			}
-			clr_quest = quest_hermetic_gather_ingredients
+			clr_quest = quest_weizza_society_gather_ingredients
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_medium_effect = yes
 		}
@@ -12730,9 +12730,9 @@ character_event = {
 		
 		if = {
 			limit = {
-				has_quest = quest_hermetic_gather_ingredients
+				has_quest = quest_weizza_society_gather_ingredients
 			}
-			clr_quest = quest_hermetic_gather_ingredients
+			clr_quest = quest_weizza_society_gather_ingredients
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_minor_effect = yes
 		}
@@ -12752,9 +12752,9 @@ character_event = {
 		
 		if = {
 			limit = {
-				has_quest = quest_hermetic_gather_ingredients
+				has_quest = quest_weizza_society_gather_ingredients
 			}
-			clr_quest = { id = quest_hermetic_gather_ingredients failure = yes }
+			clr_quest = { id = quest_weizza_society_gather_ingredients failure = yes }
 		}
 		prestige = -25
 		add_character_modifier = {
@@ -12779,7 +12779,7 @@ character_event = {
 			}
 		}
 		clr_character_flag = do_not_disturb
-		clr_character_flag = apprentice_hermetic_gathering
+		clr_character_flag = apprentice_weizza_society_gathering
 	}
 }
 
@@ -13005,9 +13005,9 @@ character_event = {
 		
 		if = {
 			limit = {
-				has_quest = quest_hermetic_gather_ingredients
+				has_quest = quest_weizza_society_gather_ingredients
 			}
-			clr_quest = quest_hermetic_gather_ingredients
+			clr_quest = quest_weizza_society_gather_ingredients
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_medium_effect = yes
 		}
@@ -13032,9 +13032,9 @@ character_event = {
 		
 		if = {
 			limit = {
-				has_quest = quest_hermetic_gather_ingredients
+				has_quest = quest_weizza_society_gather_ingredients
 			}
-			clr_quest = quest_hermetic_gather_ingredients
+			clr_quest = quest_weizza_society_gather_ingredients
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_minor_effect = yes
 		}
@@ -13054,9 +13054,9 @@ character_event = {
 		wealth = -15
 		if = {
 			limit = {
-				has_quest = quest_hermetic_gather_ingredients
+				has_quest = quest_weizza_society_gather_ingredients
 			}
-			clr_quest = { id = quest_hermetic_gather_ingredients failure = yes }
+			clr_quest = { id = quest_weizza_society_gather_ingredients failure = yes }
 		}
 	}
 	
@@ -13076,7 +13076,7 @@ character_event = {
 			}
 		}
 		clr_character_flag = do_not_disturb
-		clr_character_flag = apprentice_hermetic_gathering
+		clr_character_flag = apprentice_weizza_society_gathering
 	}
 }
 
@@ -13088,7 +13088,7 @@ character_event = {
 	
 	immediate = {
 		clr_character_flag = do_not_disturb
-		clr_character_flag = apprentice_hermetic_gathering
+		clr_character_flag = apprentice_weizza_society_gathering
 		set_variable = { which = gath_try value = 0 }
 		set_variable = { which = gath_res value = 0 }
 	}
@@ -13164,7 +13164,7 @@ character_event = {
 			}
     		character_event = { id = wizard.1416 }
     		if = {
-    			limit = { has_character_flag = apprentice_hermetic_gathering }
+    			limit = { has_character_flag = apprentice_weizza_society_gathering }
     			clear_delayed_event = { id = wizard.1825 }
     			character_event = { id = wizard.1825 }
     		}
