@@ -7219,11 +7219,11 @@ character_event = {
     is_triggered_only = yes
 
     desc = {
-    	text = EVTDESC_wizard_5115_self
+    	text = EVTDESC_MNM_5115_self
     	trigger = { has_character_flag = potion_target_is_self }
     }
     desc = {
-    	text = EVTDESC_wizard_5115_other
+    	text = EVTDESC_MNM_5115_other
     	trigger = { NOT = { has_character_flag = potion_target_is_self } }
     }
 
@@ -7235,19 +7235,19 @@ character_event = {
 
     option = { # I will use ingredient 1
 		name = {
-        	text = EVTOPTA_wizard_5115_herb
+        	text = EVTOPTA_MNM_5115_herb
         	trigger = { has_selected_herb_ingredient_1_trigger = yes }
         }
         name = {
-        	text = EVTOPTA_wizard_5115_animal_part
+        	text = EVTOPTA_MNM_5115_animal_part
         	trigger = { has_selected_animal_part_ingredient_1_trigger = yes }
         }		
         name = {
-        	text = EVTOPTA_wizard_5115_powder
+        	text = EVTOPTA_MNM_5115_powder
         	trigger = { has_selected_powder_ingredient_1_trigger = yes }
         }
         name = {
-        	text = EVTOPTA_wizard_5115_liquid
+        	text = EVTOPTA_MNM_5115_liquid
         	trigger = { has_selected_liquid_ingredient_1_trigger = yes }
         }
 		calculate_health_level_of_ingredient_1_effect = yes
@@ -7262,19 +7262,19 @@ character_event = {
 
 	option = { # I will use ingredient 2
 		name = {
-        	text = EVTOPTB_wizard_5115_herb
+        	text = EVTOPTB_MNM_5115_herb
         	trigger = { has_selected_herb_ingredient_2_trigger = yes }
         }
         name = {
-        	text = EVTOPTB_wizard_5115_animal_part
+        	text = EVTOPTB_MNM_5115_animal_part
         	trigger = { has_selected_animal_part_ingredient_2_trigger = yes }
         }		
         name = {
-        	text = EVTOPTB_wizard_5115_powder
+        	text = EVTOPTB_MNM_5115_powder
         	trigger = { has_selected_powder_ingredient_2_trigger = yes }
         }
         name = {
-        	text = EVTOPTB_wizard_5115_liquid
+        	text = EVTOPTB_MNM_5115_liquid
         	trigger = { has_selected_liquid_ingredient_2_trigger = yes }
         }
 		calculate_health_level_of_ingredient_2_effect = yes
@@ -7290,19 +7290,19 @@ character_event = {
 
     option = { # I will only use one <ingredient_type_X> (IF DUPLICATE SELECTIONS)
 		name = {
-        	text = EVTOPTC_wizard_5115_herb
+        	text = EVTOPTC_MNM_5115_herb
         	trigger = { has_selected_herb_ingredient_1_trigger = yes }
         }
         name = {
-        	text = EVTOPTC_wizard_5115_animal_part
+        	text = EVTOPTC_MNM_5115_animal_part
         	trigger = { has_selected_animal_part_ingredient_1_trigger = yes }
         }		
         name = {
-        	text = EVTOPTC_wizard_5115_powder
+        	text = EVTOPTC_MNM_5115_powder
         	trigger = { has_selected_powder_ingredient_1_trigger = yes }
         }
         name = {
-        	text = EVTOPTC_wizard_5115_liquid
+        	text = EVTOPTC_MNM_5115_liquid
         	trigger = { has_selected_liquid_ingredient_1_trigger = yes }
         }
 		calculate_health_level_of_ingredient_1_effect = yes
@@ -7318,11 +7318,11 @@ character_event = {
 
     option = { #I will use ingredient 1 and 2
         name = {
-        	text = EVTOPTD_wizard_5115
+        	text = EVTOPTD_MNM_5115
         	trigger = {	selected_ingredient_1_and_2_are_same = no }
         }
         name = {
-        	text = EVTOPTD_wizard_5115_duplicate
+        	text = EVTOPTD_MNM_5115_duplicate
         	trigger = {	selected_ingredient_1_and_2_are_same = yes }
         }
 
@@ -7338,8 +7338,8 @@ character_event = {
     }
 
     option = { #I'll throw a bit of everything in there!
-        name = EVTOPTE_wizard_5115
-        custom_tooltip = { text = EVTOPTE_wizard_5115_tt }
+        name = EVTOPTE_MNM_5115
+        custom_tooltip = { text = EVTOPTE_MNM_5115_tt }
 
         calculate_health_level_of_all_ingredients_effect = yes
 
@@ -7376,7 +7376,7 @@ character_event = {
 #Giving the potion to yourself
 character_event = {
     id = wizard.1400
-    desc = EVTDESC_wizard_1400
+    desc = EVTDESC_MNM_1400
     picture = GFX_evt_experiment
     border = GFX_event_normal_frame_religion
 
@@ -7385,7 +7385,7 @@ character_event = {
     is_triggered_only = yes
     
     option = { 
-        name = EVTOPTA_wizard_1400
+        name = EVTOPTA_MNM_1400
 
         if = { 
 			limit = { trait = stressed }
@@ -7450,15 +7450,15 @@ character_event = {
 #The other person gets offered a potion
 character_event = {
     id = wizard.1401
-    desc = EVTDESC_wizard_1401
+    desc = EVTDESC_MNM_1401
     picture = GFX_evt_experiment
     border = GFX_event_normal_frame_religion
 
     is_triggered_only = yes
     
     option = { 
-        name = EVTOPTA_wizard_1401
-        custom_tooltip = { text = EVTOPTA_wizard_1401_TT }
+        name = EVTOPTA_MNM_1401
+        custom_tooltip = { text = EVTOPTA_MNM_1401_TT }
 
         tooltip = {
 	        if = { 
@@ -7487,8 +7487,8 @@ character_event = {
     }
 
     option = {
-        name = EVTOPTB_wizard_1401
-        custom_tooltip = { text = EVTOPTB_wizard_1401_TT }
+        name = EVTOPTB_MNM_1401
+        custom_tooltip = { text = EVTOPTB_MNM_1401_TT }
 
         reverse_opinion = {
         	who = FROM
@@ -7514,14 +7514,14 @@ character_event = {
 #Giving the potion to someone else 
 character_event = {
     id = wizard.1402
-    desc = EVTDESC_wizard_1402
+    desc = EVTDESC_MNM_1402
     picture = GFX_evt_experiment
     border = GFX_event_normal_frame_religion
 
     is_triggered_only = yes
     
     option = { 
-        name = EVTOPTA_wizard_1402
+        name = EVTOPTA_MNM_1402
 
         
     	FROM = {
@@ -7595,7 +7595,7 @@ character_event = {
 #The good effect didn't last
 character_event = {
     id = wizard.1403
-    desc = EVTDESC_wizard_1403
+    desc = EVTDESC_MNM_1403
     picture = GFX_evt_illness
     border = GFX_event_normal_frame_religion
 
@@ -7604,7 +7604,7 @@ character_event = {
     trigger = { NOT = { trait = depressed } }
 
     option = { 
-        name = EVTOPTA_wizard_1403
+        name = EVTOPTA_MNM_1403
 
         add_trait = depressed
 
@@ -10820,7 +10820,7 @@ character_event = {
     	name = EVTOPTA_wizard_1630
     	custom_tooltip = { text = EVTOPTA_wizard_1630_TT }
     	hidden_effect = {
-    		set_character_flag = theory_paper_normal_effort
+    		set_character_flag = spiritual_discourse_normal_effort
     		character_event = { id = wizard.1631 days = 90 random = 90 }
     	}
     }
@@ -10832,7 +10832,7 @@ character_event = {
     	tooltip_info = diplomacy
     	custom_tooltip = { text = EVTOPTB_wizard_1630_TT }
     	hidden_effect = {
-    		set_character_flag = theory_paper_asked_help
+    		set_character_flag = spiritual_discourse_asked_help
     		character_event = { id = wizard.1631 days = 90 random = 90 }
     	}
     }
@@ -10844,7 +10844,7 @@ character_event = {
     	tooltip_info = intrigue
 	   	custom_tooltip = { text = EVTOPTC_wizard_1630_TT }
     	hidden_effect = {
-    		set_character_flag = theory_paper_stole_work
+    		set_character_flag = spiritual_discourse_stole_work
     		character_event = { id = wizard.1631 days = 90 random = 90 }
     	}
     }
@@ -10879,12 +10879,12 @@ character_event = {
     	scaled_wealth = { value = -1 min = -25 }
     	piety = -50
     	add_character_modifier = {
-    		name = theory_paper_heavy_investment
+    		name = spiritual_discourse_heavy_investment
     		years = 1
     	}
     	custom_tooltip = { text = EVTOPTD_wizard_1630_TT }
     	hidden_effect = {
-    		set_character_flag = theory_paper_heavy_investment
+    		set_character_flag = spiritual_discourse_heavy_investment
     		character_event = { id = wizard.1631 days = 180 random = 180 }
     	}
     }
@@ -10908,15 +10908,15 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					has_character_flag = theory_paper_heavy_investment
+					has_character_flag = spiritual_discourse_heavy_investment
 				}
 				modifier = {
 					factor = 1.4
-					has_character_flag = theory_paper_asked_help
+					has_character_flag = spiritual_discourse_asked_help
 				}
 				modifier = {
 					factor = 1.6
-					has_character_flag = theory_paper_stole_work
+					has_character_flag = spiritual_discourse_stole_work
 				}
 				modifier = {
 					factor = 2
@@ -10982,7 +10982,7 @@ character_event = {
 					factor = 1.6
 					trait = erudite
 				}
-				set_character_flag = theory_paper_revolutionary
+				set_character_flag = spiritual_discourse_revolutionary
 			}
 			25 = {
 				modifier = {
@@ -10994,15 +10994,15 @@ character_event = {
 				}
 				modifier = {
 					factor = 2
-					has_character_flag = theory_paper_heavy_investment
+					has_character_flag = spiritual_discourse_heavy_investment
 				}
 				modifier = {
 					factor = 1.3
-					has_character_flag = theory_paper_asked_help
+					has_character_flag = spiritual_discourse_asked_help
 				}
 				modifier = {
 					factor = 1.6
-					has_character_flag = theory_paper_stole_work
+					has_character_flag = spiritual_discourse_stole_work
 				}
 				modifier = {
 					factor = 2
@@ -11068,7 +11068,7 @@ character_event = {
 					factor = 1.6
 					trait = erudite
 				}
-				set_character_flag = theory_paper_excellent
+				set_character_flag = spiritual_discourse_excellent
 			}
 			35 = {
 				modifier = {
@@ -11082,7 +11082,7 @@ character_event = {
 					factor = 1.3
 					trait = martial_cleric
 				}
-				set_character_flag = theory_paper_average
+				set_character_flag = spiritual_discourse_average
 			}
 			25 = {
 				modifier = {
@@ -11091,15 +11091,15 @@ character_event = {
 				}
 				modifier = {
 					factor = 0.5
-					has_character_flag = theory_paper_heavy_investment
+					has_character_flag = spiritual_discourse_heavy_investment
 				}
 				modifier = {
 					factor = 0.8
-					has_character_flag = theory_paper_asked_help
+					has_character_flag = spiritual_discourse_asked_help
 				}
 				modifier = {
 					factor = 0.7
-					has_character_flag = theory_paper_stole_work
+					has_character_flag = spiritual_discourse_stole_work
 				}
 				modifier = {
 					factor = 0.5
@@ -11169,10 +11169,10 @@ character_event = {
 					factor = 0.7
 					trait = erudite
 				}
-				set_character_flag = theory_paper_simplistic
+				set_character_flag = spiritual_discourse_simplistic
 			}
 		}
-		remove_character_modifier = theory_paper_heavy_investment
+		remove_character_modifier = spiritual_discourse_heavy_investment
 		character_event = { id = wizard.1640 }
 	}
 }
@@ -11470,14 +11470,14 @@ character_event = {
 		custom_tooltip = {
 			text = EVTTOOLTIPB_wizard_1640
 			hidden_effect = {
-				clr_character_flag = theory_paper_normal_effort
-				clr_character_flag = theory_paper_asked_help
-				clr_character_flag = theory_paper_stole_work
-				clr_character_flag = theory_paper_heavy_investment
-				clr_character_flag = theory_paper_revolutionary
-				clr_character_flag = theory_paper_excellent
-				clr_character_flag = theory_paper_average
-				clr_character_flag = theory_paper_simplistic
+				clr_character_flag = spiritual_discourse_normal_effort
+				clr_character_flag = spiritual_discourse_asked_help
+				clr_character_flag = spiritual_discourse_stole_work
+				clr_character_flag = spiritual_discourse_heavy_investment
+				clr_character_flag = spiritual_discourse_revolutionary
+				clr_character_flag = spiritual_discourse_excellent
+				clr_character_flag = spiritual_discourse_average
+				clr_character_flag = spiritual_discourse_simplistic
 			}
 		}
 	}
@@ -11581,7 +11581,7 @@ character_event = {
 	immediate = {
 		if = {
 			limit = {
-				FROM = { has_character_flag = theory_paper_stole_work }
+				FROM = { has_character_flag = spiritual_discourse_stole_work }
 			}
 			random_list = {
 				10 = { # Discovered knowledge theft
@@ -11713,9 +11713,9 @@ character_event = {
 				factor = 1.2
 				FROM = {
 					OR = {
-						has_character_flag = theory_paper_average
-						has_character_flag = theory_paper_excellent
-						has_character_flag = theory_paper_revolutionary
+						has_character_flag = spiritual_discourse_average
+						has_character_flag = spiritual_discourse_excellent
+						has_character_flag = spiritual_discourse_revolutionary
 					}
 				}
 				learning = 7
@@ -11724,8 +11724,8 @@ character_event = {
 				factor = 1.2
 				FROM = {
 					OR = {
-						has_character_flag = theory_paper_excellent
-						has_character_flag = theory_paper_revolutionary
+						has_character_flag = spiritual_discourse_excellent
+						has_character_flag = spiritual_discourse_revolutionary
 					}
 				}
 				learning = 10
@@ -11733,21 +11733,21 @@ character_event = {
 			modifier = {
 				factor = 1.2
 				FROM = {
-					has_character_flag = theory_paper_revolutionary
+					has_character_flag = spiritual_discourse_revolutionary
 				}
 				learning = 13
 			}
 			modifier = {
 				factor = 0.6
 				FROM = {
-					has_character_flag = theory_paper_simplistic
+					has_character_flag = spiritual_discourse_simplistic
 				}
 				learning = 7
 			}
 			modifier = {
 				factor = 2
 				FROM = {
-					has_character_flag = theory_paper_simplistic
+					has_character_flag = spiritual_discourse_simplistic
 				}
 				NOT = { learning = 7 }
 			}
@@ -11779,7 +11779,7 @@ character_event = {
 		custom_tooltip = {
 			text = EVTTOOLTIPB_wizard_1641
 			hidden_effect = {
-				set_character_flag = refuted_paper_@FROM
+				set_character_flag = spiritual_sd_@FROM
 				FROM = {
 					character_event = { id = wizard.1643 }
 				}
@@ -11935,15 +11935,15 @@ character_event = {
 		clr_character_flag = paper_success
 		clr_character_flag = paper_failure
 		clr_character_flag = discovered_knowledge_theft
-		clr_character_flag = theory_paper_normal_effort
-		clr_character_flag = theory_paper_asked_help
-		clr_character_flag = theory_paper_stole_work
-		clr_character_flag = theory_paper_heavy_investment
-		clr_character_flag = theory_paper_revolutionary
-		clr_character_flag = theory_paper_excellent
-		clr_character_flag = theory_paper_average
-		clr_character_flag = theory_paper_simplistic
-		clr_character_flag = refuted_paper_@ROOT
+		clr_character_flag = spiritual_discourse_normal_effort
+		clr_character_flag = spiritual_discourse_asked_help
+		clr_character_flag = spiritual_discourse_stole_work
+		clr_character_flag = spiritual_discourse_heavy_investment
+		clr_character_flag = spiritual_discourse_revolutionary
+		clr_character_flag = spiritual_discourse_excellent
+		clr_character_flag = spiritual_discourse_average
+		clr_character_flag = spiritual_discourse_simplistic
+		clr_character_flag = spiritual_sd_@ROOT
 	}
 }
 
@@ -11968,7 +11968,7 @@ character_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_character_flag = refuted_paper_@FROM }
+		NOT = { has_character_flag = spiritual_sd_@FROM }
 	}
 	
 	option = {
@@ -11977,7 +11977,7 @@ character_event = {
 			FROM = { has_character_flag = paper_success }
 		}
 		add_character_modifier = {
-			modifier = endorsed_theorem
+			modifier = endorsed_sd
 			years = 5
 		}
 	}
@@ -12046,13 +12046,13 @@ character_event = {
 character_event = {
 	id = wizard.1800
 	desc = {
-		text = EVTDESC_wizard_1800_A
+		text = EVTDESC_MNM_1800_A
 		trigger = {
 			NOT = { has_character_flag = quest_gathering_companion }
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1800_B
+		text = EVTDESC_MNM_1800_B
 		trigger = {
 			has_character_flag = quest_gathering_companion
 		}
@@ -12088,22 +12088,22 @@ character_event = {
 	}
 	
 	option = { # Look for herbs
-		name = EVTOPTA_wizard_1800
-		character_event = { id = wizard.1810 days = 20 tooltip = EVTTOOLTIPA_wizard_1800 }
+		name = EVTOPTA_MNM_1800
+		character_event = { id = wizard.1810 days = 20 tooltip = EVTTOOLTIPA_MNM_1800 }
 	}
 	
 	option = { # Hunt for animal parts
-		name = EVTOPTB_wizard_1800
-		character_event = { id = wizard.1815 days = 20 tooltip = EVTTOOLTIPB_wizard_1800 }
+		name = EVTOPTB_MNM_1800
+		character_event = { id = wizard.1815 days = 20 tooltip = EVTTOOLTIPB_MNM_1800 }
 	}
 	
 	option = { # Shop for ingredients
-		name = EVTOPTC_wizard_1800
-		character_event = { id = wizard.1820 days = 20 tooltip = EVTTOOLTIPC_wizard_1800 }
+		name = EVTOPTC_MNM_1800
+		character_event = { id = wizard.1820 days = 20 tooltip = EVTTOOLTIPC_MNM_1800 }
 	}
 	
 	option = {	# I don't have time for this now
-		name = EVTOPTD_wizard_1800
+		name = EVTOPTD_MNM_1800
 		hidden_effect = {
 			remove_character_modifier = acquire_ingredients_decision_cooldown_timer
 		}
@@ -12136,7 +12136,7 @@ character_event = { #quest ping
 
 society_quest_event = {
     id = wizard.1802
-    desc = EVTDESC_wizard_1802
+    desc = EVTDESC_MNM_1802
 
     is_triggered_only = yes
    
@@ -12172,7 +12172,7 @@ society_quest_event = {
 
 character_event = {
 	id = wizard.1810
-	desc = EVTDESC_wizard_1810
+	desc = EVTDESC_MNM_1810
 	picture = GFX_evt_bandits
 	border = GFX_event_normal_frame_religion
 	
@@ -12181,7 +12181,7 @@ character_event = {
 	trigger = { event_target:gathering_companion = { is_alive = yes } }
 	
 	option = { # Head out with companion to find herbs.
-		name = EVTOPTA_wizard_1810
+		name = EVTOPTA_MNM_1810
 		trigger = {
 			stewardship = 11
 			FROM = { stewardship = 11 }
@@ -12194,7 +12194,7 @@ character_event = {
 	}
 	
 	option = { # Head out with companion to find herbs.
-		name = EVTOPTB_wizard_1810
+		name = EVTOPTB_MNM_1810
 		trigger = {
 			NOT = { stewardship = 11 }
 			NOT = { FROM = { stewardship = 11 } }
@@ -12209,7 +12209,7 @@ character_event = {
 	}
 	
 	option = { # Head out with companion to find herbs.
-		name = EVTOPTC_wizard_1810
+		name = EVTOPTC_MNM_1810
 		trigger = {
 			NOT = { stewardship = 7 }
 			NOT = { FROM = { stewardship = 7 } }
@@ -12339,7 +12339,7 @@ character_event = {
 character_event = {
 	id = wizard.1812
 	desc = {
-		text = EVTDESC_wizard_1812_A
+		text = EVTDESC_MNM_1812_A
 		trigger = {
 			check_variable = {
 				which = gath_res
@@ -12348,7 +12348,7 @@ character_event = {
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1812_B
+		text = EVTDESC_MNM_1812_B
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12363,7 +12363,7 @@ character_event = {
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1812_C
+		text = EVTDESC_MNM_1812_C
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12381,7 +12381,7 @@ character_event = {
 	trigger = { event_target:gathering_companion = { is_alive = yes } }
 	
 	option = {
-		name = EVTOPTA_wizard_1812
+		name = EVTOPTA_MNM_1812
 		trigger = {
 			check_variable = {
 				which = gath_res
@@ -12397,11 +12397,11 @@ character_event = {
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_medium_effect = yes
 		}
-		custom_tooltip = { text = EVTTOOLTIP_wizard_1812 }
+		custom_tooltip = { text = EVTTOOLTIP_MNM_1812 }
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1812
+		name = EVTOPTB_MNM_1812
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12423,11 +12423,11 @@ character_event = {
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_minor_effect = yes
 		}
-		custom_tooltip = { text = EVTTOOLTIP_wizard_1812 }
+		custom_tooltip = { text = EVTTOOLTIP_MNM_1812 }
 	}
 	
 	option = {
-		name = EVTOPTC_wizard_1812
+		name = EVTOPTC_MNM_1812
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12452,7 +12452,7 @@ character_event = {
 					limit = { has_dlc = "Reapers" }
 					give_food_poisoning_effect = yes
 					custom_tooltip = {
-						text = EVTTOOLTIP_wizard_1812_ILL
+						text = EVTTOOLTIP_MNM_1812_ILL
 					}
 				}
 				if = {
@@ -12485,7 +12485,7 @@ character_event = {
 
 character_event = {
 	id = wizard.1815
-	desc = EVTDESC_wizard_1815
+	desc = EVTDESC_MNM_1815
 	picture = GFX_evt_hunt
 	border = GFX_event_normal_frame_religion
 	
@@ -12494,7 +12494,7 @@ character_event = {
 	trigger = { event_target:gathering_companion = { is_alive = yes } }
 	
 	option = { # Head out with companion to find animal parts.
-		name = EVTOPTA_wizard_1815
+		name = EVTOPTA_MNM_1815
 		trigger = {
 			martial = 11
 			FROM = { martial = 11 }
@@ -12507,7 +12507,7 @@ character_event = {
 	}
 	
 	option = { # Head out with companion to find animal parts.
-		name = EVTOPTB_wizard_1815
+		name = EVTOPTB_MNM_1815
 		trigger = {
 			NOT = { martial = 11 }
 			NOT = { FROM = { martial = 11 } }
@@ -12522,7 +12522,7 @@ character_event = {
 	}
 	
 	option = { # Head out with companion to find animal parts.
-		name = EVTOPTC_wizard_1815
+		name = EVTOPTC_MNM_1815
 		trigger = {
 			NOT = { martial = 7 }
 			NOT = { FROM = { martial = 7 } }
@@ -12652,7 +12652,7 @@ character_event = {
 character_event = {
 	id = wizard.1817
 	desc = {
-		text = EVTDESC_wizard_1817_A
+		text = EVTDESC_MNM_1817_A
 		trigger = {
 			check_variable = {
 				which = gath_res
@@ -12661,7 +12661,7 @@ character_event = {
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1817_B
+		text = EVTDESC_MNM_1817_B
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12676,7 +12676,7 @@ character_event = {
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1817_C
+		text = EVTDESC_MNM_1817_C
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12694,7 +12694,7 @@ character_event = {
 	trigger = { event_target:gathering_companion = { is_alive = yes } }
 	
 	option = {
-		name = EVTOPTA_wizard_1817
+		name = EVTOPTA_MNM_1817
 		trigger = {
 			check_variable = {
 				which = gath_res
@@ -12710,11 +12710,11 @@ character_event = {
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_medium_effect = yes
 		}
-		custom_tooltip = { text = EVTTOOLTIP_wizard_1817 }
+		custom_tooltip = { text = EVTTOOLTIP_MNM_1817 }
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1817
+		name = EVTOPTB_MNM_1817
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12736,11 +12736,11 @@ character_event = {
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_minor_effect = yes
 		}
-		custom_tooltip = { text = EVTTOOLTIP_wizard_1817 }
+		custom_tooltip = { text = EVTTOOLTIP_MNM_1817 }
 	}
 	
 	option = {
-		name = EVTOPTC_wizard_1817
+		name = EVTOPTC_MNM_1817
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12785,7 +12785,7 @@ character_event = {
 
 character_event = {
 	id = wizard.1820
-	desc = EVTDESC_wizard_1820
+	desc = EVTDESC_MNM_1820
 	picture = GFX_evt_market
 	border = GFX_event_normal_frame_religion
 	
@@ -12794,7 +12794,7 @@ character_event = {
 	trigger = { event_target:gathering_companion = { is_alive = yes } }
 	
 	option = { # Head out with companion to shop misc ingredients.
-		name = EVTOPTA_wizard_1820
+		name = EVTOPTA_MNM_1820
 		trigger = {
 			diplomacy = 11
 			FROM = { diplomacy = 11 }
@@ -12807,7 +12807,7 @@ character_event = {
 	}
 	
 	option = { # Head out with companion to shop misc ingredients.
-		name = EVTOPTB_wizard_1820
+		name = EVTOPTB_MNM_1820
 		trigger = {
 			NOT = { diplomacy = 11 }
 			NOT = { FROM = { diplomacy = 11 } }
@@ -12822,7 +12822,7 @@ character_event = {
 	}
 	
 	option = { # Head out with companion to shop misc ingredients.
-		name = EVTOPTC_wizard_1820
+		name = EVTOPTC_MNM_1820
 		trigger = {
 			NOT = { diplomacy = 7 }
 			NOT = { FROM = { diplomacy = 7 } }
@@ -12952,7 +12952,7 @@ character_event = {
 character_event = {
 	id = wizard.1822
 	desc = {
-		text = EVTDESC_wizard_1822_A
+		text = EVTDESC_MNM_1822_A
 		trigger = {
 			check_variable = {
 				which = gath_res
@@ -12961,7 +12961,7 @@ character_event = {
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1822_B
+		text = EVTDESC_MNM_1822_B
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12976,7 +12976,7 @@ character_event = {
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1822_C
+		text = EVTDESC_MNM_1822_C
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -12994,7 +12994,7 @@ character_event = {
 	trigger = { event_target:gathering_companion = { is_alive = yes } }
 	
 	option = {
-		name = EVTOPTA_wizard_1822
+		name = EVTOPTA_MNM_1822
 		trigger = {
 			check_variable = {
 				which = gath_res
@@ -13011,11 +13011,11 @@ character_event = {
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_medium_effect = yes
 		}
-		custom_tooltip = { text = EVTTOOLTIP_wizard_1822 }
+		custom_tooltip = { text = EVTTOOLTIP_MNM_1822 }
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1822
+		name = EVTOPTB_MNM_1822
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -13038,11 +13038,11 @@ character_event = {
 			sound_effect = hermetic_society_acquire_seed
 			add_society_currency_minor_effect = yes
 		}
-		custom_tooltip = { text = EVTTOOLTIP_wizard_1822 }
+		custom_tooltip = { text = EVTTOOLTIP_MNM_1822 }
 	}
 	
 	option = {
-		name = EVTOPTC_wizard_1822
+		name = EVTOPTC_MNM_1822
 		trigger = {
 			NOT = {
 				check_variable = {
@@ -13115,14 +13115,14 @@ character_event = {
 #Apprenticeship completion
 character_event = {
     id = wizard.1414
-    desc = EVTDESC_wizard_1414
+    desc = EVTDESC_MNM_1414
     picture = GFX_evt_gathering_of_minds
     border = GFX_event_normal_frame_religion
 
     is_triggered_only = yes
     
     option = { 
-		name = EVTOPTA_wizard_1414
+		name = EVTOPTA_MNM_1414
 
         add_society_currency_major_effect = yes
 
@@ -13185,7 +13185,7 @@ character_event = {
     			NOT = { FROM = { learning = 12 } }
     		}
     	}
-    	text = EVTDESC_wizard_1416_A
+    	text = EVTDESC_MNM_1416_A
     }
     desc = {
     	trigger = {
@@ -13194,13 +13194,13 @@ character_event = {
     			NOT = { FROM = { learning = 12 } }
     		}
     	}
-    	text = EVTDESC_wizard_1416_B
+    	text = EVTDESC_MNM_1416_B
     }
 
     is_triggered_only = yes
     
     option = { 
-        name = EVTOPTA_wizard_1416
+        name = EVTOPTA_MNM_1416
     }
 }
 
@@ -13210,13 +13210,13 @@ character_event = {
 # Invitation events
 letter_event = {
 	id = wizard.1920
-	desc = EVTDESC_wizard_1920
+	desc = EVTDESC_MNM_1920
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = { # Accept
-		name = EVTOPTA_wizard_1920
+		name = EVTOPTA_MNM_1920
 		
 		save_event_target_as = stargazing_guest
 		hidden_tooltip = { set_variable = { which = stargazing_satisfaction value = 0 } }
@@ -13269,7 +13269,7 @@ letter_event = {
 	}
 	
 	option = { # Decline
-		name = EVTOPTB_wizard_1920
+		name = EVTOPTB_MNM_1920
 		
 		FROMFROM = {
 			letter_event = { id = wizard.1922 }
@@ -13327,7 +13327,7 @@ letter_event = {
 #Invitation accepted
 letter_event = {
 	id = wizard.1921
-	desc = EVTDESC_wizard_1921
+	desc = EVTDESC_MNM_1921
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -13350,7 +13350,7 @@ letter_event = {
 # Invitation declined
 letter_event = {
 	id = wizard.1922
-	desc = EVTDESC_wizard_1922
+	desc = EVTDESC_MNM_1922
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -13398,17 +13398,17 @@ character_event = {
 # Cancel stargazing
 character_event = {
 	id = wizard.1926
-	desc = EVTDESC_wizard_1926
+	desc = EVTDESC_MNM_1926
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1926
+		name = EVTOPTA_MNM_1926
 		
 		custom_tooltip = {
-			text = EVTOPTA_wizard_1926_TOOLTIP
+			text = EVTOPTA_MNM_1926_TOOLTIP
 		}
 		hidden_tooltip = {
 			clr_character_flag = do_not_disturb
@@ -13422,7 +13422,7 @@ character_event = {
 
 letter_event = {
 	id = wizard.1927
-	desc = EVTDESC_wizard_1927
+	desc = EVTDESC_MNM_1927
 	border = GFX_event_letter_frame_religion
 	
 	is_triggered_only = yes
@@ -13435,7 +13435,7 @@ letter_event = {
 # Guest arrives - What to do before nightfall?
 character_event = {
 	id = wizard.1928
-	desc = EVTDESC_wizard_1928
+	desc = EVTDESC_MNM_1928
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
@@ -13446,7 +13446,7 @@ character_event = {
 	}
 	
 	option = { # Show observatory
-		name = EVTOPTA_wizard_1928
+		name = EVTOPTA_MNM_1928
 		
 		trigger = {
 			has_character_flag = built_observatory
@@ -13456,7 +13456,7 @@ character_event = {
 			text = AVAILABLE_DUE_TO_OBSERVATORY
 		}
 		custom_tooltip = {
-			text = EVTOPTA_wizard_1928_TOOLTIP
+			text = EVTOPTA_MNM_1928_TOOLTIP
 		}
 		event_target:stargazing_guest = { character_event = { id = wizard.1930 } }
 		
@@ -13470,7 +13470,7 @@ character_event = {
 	}
 	
 	option = { # Show fancy equipment
-		name = EVTOPTB_wizard_1928
+		name = EVTOPTB_MNM_1928
 		
 		trigger = {
 			has_character_flag = owns_observatory_equipment
@@ -13482,7 +13482,7 @@ character_event = {
 		}
 		
 		custom_tooltip = {
-			text = EVTOPTB_wizard_1928_TOOLTIP
+			text = EVTOPTB_MNM_1928_TOOLTIP
 		}
 		event_target:stargazing_guest = { character_event = { id = wizard.1933 } }
 		
@@ -13496,13 +13496,13 @@ character_event = {
 	}
 	
 	option = { # Show nearby location to use for stargazing
-		name = EVTOPTC_wizard_1928
+		name = EVTOPTC_MNM_1928
 		trigger = {
 			NOT = { has_character_flag = built_observatory }
 		}
 		
 		custom_tooltip = {
-			text = EVTOPTC_wizard_1928_TOOLTIP
+			text = EVTOPTC_MNM_1928_TOOLTIP
 		}
 		event_target:stargazing_guest = { character_event = { id = wizard.1936 } }
 		
@@ -13520,10 +13520,10 @@ character_event = {
 	}
 	
 	option = { # Sit down for a drink/conversation
-		name = EVTOPTD_wizard_1928
+		name = EVTOPTD_MNM_1928
 		
 		custom_tooltip = {
-			text = EVTOPTD_wizard_1928_TOOLTIP
+			text = EVTOPTD_MNM_1928_TOOLTIP
 		}
 		event_target:stargazing_guest = { character_event = { id = wizard.1939 } }
 		
@@ -13545,10 +13545,10 @@ character_event = {
 	}
 	
 	option = { # Spend some time to study together
-		name = EVTOPTE_wizard_1928
+		name = EVTOPTE_MNM_1928
 		
 		custom_tooltip = {
-			text = EVTOPTE_wizard_1928_TOOLTIP
+			text = EVTOPTE_MNM_1928_TOOLTIP
 		}
 		event_target:stargazing_guest = { character_event = { id = wizard.1942 } }
 		
@@ -13569,14 +13569,14 @@ character_event = {
 # Show observatory
 character_event = {
 	id = wizard.1930
-	desc = EVTDESC_wizard_1930
+	desc = EVTDESC_MNM_1930
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = { # Guest is impressed
-		name = EVTOPTA_wizard_1930
+		name = EVTOPTA_MNM_1930
 		
 		reverse_opinion = {
 			modifier = opinion_pleased
@@ -13631,7 +13631,7 @@ character_event = {
 	}
 	
 	option = { # Guest is not impressed
-		name = EVTOPTB_wizard_1930
+		name = EVTOPTB_MNM_1930
 		
 		reverse_opinion = {
 			modifier = not_feeling_apreciated
@@ -13658,14 +13658,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1931
-	desc = EVTDESC_wizard_1931
+	desc = EVTDESC_MNM_1931
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1931
+		name = EVTOPTA_MNM_1931
 		
 		reverse_opinion = {
 			modifier = opinion_impressed
@@ -13677,14 +13677,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1932
-	desc = EVTDESC_wizard_1932
+	desc = EVTDESC_MNM_1932
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1932
+		name = EVTOPTA_MNM_1932
 		
 		reverse_opinion = {
 			modifier = opinion_unimpressed
@@ -13697,14 +13697,14 @@ character_event = {
 # Show fancy equipment
 character_event = {
 	id = wizard.1933
-	desc = EVTDESC_wizard_1933
+	desc = EVTDESC_MNM_1933
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = { # Guest is impressed
-		name = EVTOPTA_wizard_1933
+		name = EVTOPTA_MNM_1933
 		
 		reverse_opinion = {
 			modifier = opinion_pleased
@@ -13759,7 +13759,7 @@ character_event = {
 	}
 	
 	option = { # Guest is not impressed
-		name = EVTOPTB_wizard_1933
+		name = EVTOPTB_MNM_1933
 		
 		reverse_opinion = {
 			modifier = not_feeling_apreciated
@@ -13786,14 +13786,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1934
-	desc = EVTDESC_wizard_1934
+	desc = EVTDESC_MNM_1934
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1934
+		name = EVTOPTA_MNM_1934
 		
 		reverse_opinion = {
 			modifier = opinion_impressed
@@ -13805,14 +13805,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1935
-	desc = EVTDESC_wizard_1935
+	desc = EVTDESC_MNM_1935
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1935
+		name = EVTOPTA_MNM_1935
 		
 		reverse_opinion = {
 			modifier = opinion_unimpressed
@@ -13825,14 +13825,14 @@ character_event = {
 # Show nearby location to use for stargazing
 character_event = {
 	id = wizard.1936
-	desc = EVTDESC_wizard_1936
+	desc = EVTDESC_MNM_1936
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = { # Guest approves
-		name = EVTOPTA_wizard_1936
+		name = EVTOPTA_MNM_1936
 		
 		reverse_opinion = {
 			modifier = opinion_pleased
@@ -13881,7 +13881,7 @@ character_event = {
 	}
 	
 	option = { # Guest does not approve
-		name = EVTOPTB_wizard_1936
+		name = EVTOPTB_MNM_1936
 		
 		reverse_opinion = {
 			modifier = not_feeling_apreciated
@@ -13908,14 +13908,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1937
-	desc = EVTDESC_wizard_1937
+	desc = EVTDESC_MNM_1937
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1937
+		name = EVTOPTA_MNM_1937
 		
 		reverse_opinion = {
 			modifier = opinion_impressed
@@ -13927,14 +13927,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1938
-	desc = EVTDESC_wizard_1938
+	desc = EVTDESC_MNM_1938
 	picture = GFX_evt_stone_church
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1938
+		name = EVTOPTA_MNM_1938
 		
 		reverse_opinion = {
 			modifier = opinion_unimpressed
@@ -13947,14 +13947,14 @@ character_event = {
 # Sit down for a drink/conversation
 character_event = {
 	id = wizard.1939
-	desc = EVTDESC_wizard_1939
+	desc = EVTDESC_MNM_1939
 	picture = GFX_evt_feast
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = { # Guest enjoyed it
-		name = EVTOPTA_wizard_1939
+		name = EVTOPTA_MNM_1939
 		
 		reverse_opinion = {
 			modifier = opinion_pleased
@@ -14015,7 +14015,7 @@ character_event = {
 	}
 	
 	option = { # Guest did not enjoy it
-		name = EVTOPTB_wizard_1939
+		name = EVTOPTB_MNM_1939
 		
 		reverse_opinion = {
 			modifier = not_feeling_apreciated
@@ -14042,14 +14042,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1940
-	desc = EVTDESC_wizard_1940
+	desc = EVTDESC_MNM_1940
 	picture = GFX_evt_feast
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1940
+		name = EVTOPTA_MNM_1940
 		
 		reverse_opinion = {
 			modifier = opinion_enjoyed_feast
@@ -14061,14 +14061,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1941
-	desc = EVTDESC_wizard_1941
+	desc = EVTDESC_MNM_1941
 	picture = GFX_evt_feast
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1941
+		name = EVTOPTA_MNM_1941
 		
 		reverse_opinion = {
 			modifier = opinion_unimpressed
@@ -14081,14 +14081,14 @@ character_event = {
 # Spend some time to study together
 character_event = {
 	id = wizard.1942
-	desc = EVTDESC_wizard_1942
+	desc = EVTDESC_MNM_1942
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = { # Guest approves
-		name = EVTOPTA_wizard_1942
+		name = EVTOPTA_MNM_1942
 		
 		reverse_opinion = {
 			modifier = opinion_pleased
@@ -14143,7 +14143,7 @@ character_event = {
 	}
 	
 	option = { # Guest does not approve
-		name = EVTOPTB_wizard_1942
+		name = EVTOPTB_MNM_1942
 		
 		reverse_opinion = {
 			modifier = not_feeling_apreciated
@@ -14174,14 +14174,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1943
-	desc = EVTDESC_wizard_1943
+	desc = EVTDESC_MNM_1943
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1943
+		name = EVTOPTA_MNM_1943
 		
 		reverse_opinion = {
 			modifier = opinion_impressed
@@ -14193,14 +14193,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1944
-	desc = EVTDESC_wizard_1944
+	desc = EVTDESC_MNM_1944
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1944
+		name = EVTOPTA_MNM_1944
 		
 		reverse_opinion = {
 			modifier = opinion_unimpressed
@@ -14213,7 +14213,7 @@ character_event = {
 # Nightfall - Time to stargaze
 character_event = {
 	id = wizard.1945
-	desc = EVTDESC_wizard_1945
+	desc = EVTDESC_MNM_1945
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
@@ -14224,7 +14224,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_wizard_1945
+		name = EVTOPTA_MNM_1945
 		
 		custom_tooltip = {
 			text = PREPARE_STARGAZING
@@ -14296,14 +14296,14 @@ character_event = {
 # Make observation about stars
 character_event = {
 	id = wizard.1947
-	desc = EVTDESC_wizard_1947
+	desc = EVTDESC_MNM_1947
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1947
+		name = EVTOPTA_MNM_1947
 		
 		random_list = {
 			10 = {
@@ -14335,14 +14335,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1948
-	desc = EVTDESC_wizard_1948
+	desc = EVTDESC_MNM_1948
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1948
+		name = EVTOPTA_MNM_1948
 		
 		random_list = {
 			10 = {
@@ -14361,14 +14361,14 @@ character_event = {
 # Make observation about zodiacs
 character_event = {
 	id = wizard.1950
-	desc = EVTDESC_wizard_1950
+	desc = EVTDESC_MNM_1950
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1950
+		name = EVTOPTA_MNM_1950
 		
 		military_techpoints = 50
 		economy_techpoints = 50
@@ -14383,14 +14383,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1951
-	desc = EVTDESC_wizard_1951
+	desc = EVTDESC_MNM_1951
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1951
+		name = EVTOPTA_MNM_1951
 		
 		military_techpoints = 25
 		economy_techpoints = 25
@@ -14401,14 +14401,14 @@ character_event = {
 # Saw a comet cross the sky
 character_event = {
 	id = wizard.1953
-	desc = EVTDESC_wizard_1953
+	desc = EVTDESC_MNM_1953
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1953
+		name = EVTOPTA_MNM_1953
 		
 		military_techpoints = 30
 		economy_techpoints = 30
@@ -14439,14 +14439,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1954
-	desc = EVTDESC_wizard_1954
+	desc = EVTDESC_MNM_1954
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1954
+		name = EVTOPTA_MNM_1954
 		
 		military_techpoints = 20
 		economy_techpoints = 20
@@ -14474,14 +14474,14 @@ character_event = {
 # Learned something new - Nothing major
 character_event = {
 	id = wizard.1955
-	desc = EVTDESC_wizard_1955
+	desc = EVTDESC_MNM_1955
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1955
+		name = EVTOPTA_MNM_1955
 		
 		hidden_tooltip = {
 			set_character_flag = stargazing_good_outcome
@@ -14492,28 +14492,28 @@ character_event = {
 
 character_event = {
 	id = wizard.1956
-	desc = EVTDESC_wizard_1955 # Reused text
+	desc = EVTDESC_MNM_1955 # Reused text
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1955 # Reused text
+		name = EVTOPTA_MNM_1955 # Reused text
 	}
 }
 
 # Could not see anything of interest
 character_event = {
 	id = wizard.1957
-	desc = EVTDESC_wizard_1957
+	desc = EVTDESC_MNM_1957
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1957
+		name = EVTOPTA_MNM_1957
 		
 		hidden_tooltip = {
 			set_character_flag = stargazing_bad_outcome
@@ -14524,14 +14524,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1958
-	desc = EVTDESC_wizard_1958
+	desc = EVTDESC_MNM_1958
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1958
+		name = EVTOPTA_MNM_1958
 		
 		hidden_tooltip = {
 			change_variable = { which = stargazing_satisfaction value = -1 }
@@ -14542,14 +14542,14 @@ character_event = {
 # Bad weather ruined the night
 character_event = {
 	id = wizard.1959
-	desc = EVTDESC_wizard_1959
+	desc = EVTDESC_MNM_1959
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1959
+		name = EVTOPTA_MNM_1959
 		
 		random = {
 			chance = 5
@@ -14569,14 +14569,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1960
-	desc = EVTDESC_wizard_1959 # Reused text
+	desc = EVTDESC_MNM_1959 # Reused text
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1959 # Reused text
+		name = EVTOPTA_MNM_1959 # Reused text
 		
 		hidden_tooltip = {
 			change_variable = { which = stargazing_satisfaction value = -1 }
@@ -14670,14 +14670,14 @@ character_event = {
 # Host and guest become friends
 character_event = {
 	id = wizard.1962
-	desc = EVTDESC_wizard_1962
+	desc = EVTDESC_MNM_1962
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1962
+		name = EVTOPTA_MNM_1962
 		
 		add_friend = event_target:stargazing_guest
 		
@@ -14690,14 +14690,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1963
-	desc = EVTDESC_wizard_1963
+	desc = EVTDESC_MNM_1963
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1963
+		name = EVTOPTA_MNM_1963
 		
 		tooltip = {
 			add_friend = event_target:stargazing_host
@@ -14708,14 +14708,14 @@ character_event = {
 # Host and guest become rivals
 character_event = {
 	id = wizard.1965
-	desc = EVTDESC_wizard_1965
+	desc = EVTDESC_MNM_1965
 	picture = GFX_evt_quarrel
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1965
+		name = EVTOPTA_MNM_1965
 		
 		add_rival = event_target:stargazing_guest
 		
@@ -14727,14 +14727,14 @@ character_event = {
 
 character_event = {
 	id = wizard.1966
-	desc = EVTDESC_wizard_1966
+	desc = EVTDESC_MNM_1966
 	picture = GFX_evt_quarrel
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1966
+		name = EVTOPTA_MNM_1966
 		
 		tooltip = {
 			add_rival = event_target:stargazing_host
@@ -14751,20 +14751,20 @@ character_event = {
 	is_triggered_only = yes
 	
 	desc = {
-		text = EVTDESC_wizard_1968_A
+		text = EVTDESC_MNM_1968_A
 		trigger = {
 			has_character_flag = stargazing_good_outcome
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1968_B
+		text = EVTDESC_MNM_1968_B
 		trigger = {
 			has_character_flag = stargazing_bad_outcome
 			NOT = { has_character_flag = stargazing_become_friends }
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1968_C
+		text = EVTDESC_MNM_1968_C
 		trigger = {
 			has_character_flag = stargazing_bad_outcome
 			has_character_flag = stargazing_become_friends
@@ -14777,20 +14777,20 @@ character_event = {
 	
 	option = {
 		name = {
-			text = EVTOPTA_wizard_1968_A
+			text = EVTOPTA_MNM_1968_A
 			trigger = {
 				has_character_flag = stargazing_good_outcome
 			}
 		}
 		name = {
-			text = EVTOPTA_wizard_1968_B
+			text = EVTOPTA_MNM_1968_B
 			trigger = {
 				has_character_flag = stargazing_bad_outcome
 				NOT = { has_character_flag = stargazing_become_friends }
 			}
 		}
 		name = {
-			text = EVTOPTA_wizard_1968_C
+			text = EVTOPTA_MNM_1968_C
 			trigger = {
 				has_character_flag = stargazing_bad_outcome
 				has_character_flag = stargazing_become_friends
@@ -14820,13 +14820,13 @@ character_event = {
 	is_triggered_only = yes
 	
 	desc = {
-		text = EVTDESC_wizard_1968_A
+		text = EVTDESC_MNM_1968_A
 		trigger = {
 			FROM = { has_character_flag = stargazing_good_outcome }
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1968_B
+		text = EVTDESC_MNM_1968_B
 		trigger = {
 			FROM = {
 				has_character_flag = stargazing_bad_outcome
@@ -14835,7 +14835,7 @@ character_event = {
 		}
 	}
 	desc = {
-		text = EVTDESC_wizard_1968_C
+		text = EVTDESC_MNM_1968_C
 		trigger = {
 			FROM = {
 				has_character_flag = stargazing_bad_outcome
@@ -14845,557 +14845,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_wizard_1969
-	}
-}
-
-###Magus Power: Write a Magnum Opus###
-#Write a Magnum Opus - Start Writing
-character_event = {
-	id = wizard.1610
-	desc = EVTDESC_wizard_1610
-	picture = GFX_evt_scientist
-    border = GFX_event_normal_frame_religion
-
-    is_triggered_only = yes
-
-    option = { #It will be glorious!
-    	name = EVTOPTA_wizard_1610
-    	add_character_modifier = {
-    		modifier = writing_magnum_opus
-			years = 2
-    	}
-    	hidden_effect = {
-    		character_event = { id = wizard.1600 days = 90 random = 60 }
-    	}
-    }
-}
-
-#Write a Magnum Opus - Pick Pillar
-character_event = {
-	id = wizard.1600
-	desc = EVTDESC_wizard_1600
-	picture = GFX_evt_scientist
-    border = GFX_event_normal_frame_religion
-
-    is_triggered_only = yes
-
-    trigger = {	society_member_of = weizza_society }
-
-    option = { #write book on Theurgy
-    	name = EVTOPTA_wizard_1600
-    	trigger = {
-    		NOT = {
-    			AND = {
-    				OR = {
-    					has_artifact = magnum_opus_theurgy_ritual_1
-						has_artifact = magnum_opus_theurgy_ritual_2
-						has_artifact = magnum_opus_theurgy_ritual_3
-						has_artifact = magnum_opus_theurgy_ritual_4
-    				}
-    				OR = {
-    					has_artifact = magnum_opus_theurgy_contemplation_1
-						has_artifact = magnum_opus_theurgy_contemplation_2
-						has_artifact = magnum_opus_theurgy_contemplation_3
-						has_artifact = magnum_opus_theurgy_contemplation_4
-    				}
-    			}
-    		}
-    	}
-    	custom_tooltip = { text = EVTOPTA_wizard_1600_TT }
-    	hidden_effect = {
-    		character_event = { id = wizard.1601 days = 90 random = 60 }
-    	}
-    }
-
-    option = { #write book on Astrology
-    	name = EVTOPTB_wizard_1600
-    	trigger = {
-    		NOT = {
-    			AND = {
-    				OR = {
-    					has_artifact = magnum_opus_astrology_stars_1
-						has_artifact = magnum_opus_astrology_stars_2
-						has_artifact = magnum_opus_astrology_stars_3
-						has_artifact = magnum_opus_astrology_stars_4
-    				}
-    				OR = {
-    					has_artifact = magnum_opus_astrology_planets_1
-						has_artifact = magnum_opus_astrology_planets_2
-						has_artifact = magnum_opus_astrology_planets_3
-						has_artifact = magnum_opus_astrology_planets_4
-    				}
-    			}
-    		}
-    	}
-    	custom_tooltip = { text = EVTOPTB_wizard_1600_TT }
-    	hidden_effect = {
-    		character_event = { id = wizard.1602 days = 90 random = 60 }
-    	}
-    }
-
-    option = { #write book on Alchemy
-    	name = EVTOPTC_wizard_1600
-    	trigger = {
-    		NOT = {
-    			AND = {
-    				OR = {
-    					has_artifact = magnum_opus_alchemy_panacea_1
-						has_artifact = magnum_opus_alchemy_panacea_2
-						has_artifact = magnum_opus_alchemy_panacea_3
-						has_artifact = magnum_opus_alchemy_panacea_4
-    				}
-    				OR = {
-    					has_artifact = magnum_opus_alchemy_transmutation_1
-						has_artifact = magnum_opus_alchemy_transmutation_2
-						has_artifact = magnum_opus_alchemy_transmutation_3
-						has_artifact = magnum_opus_alchemy_transmutation_4
-    				}
-    			}
-    		}
-    	}
-    	custom_tooltip = { text = EVTOPTC_wizard_1600_TT }
-    	hidden_effect = {
-    		character_event = { id = wizard.1603 days = 90 random = 60 }
-    	}
-    }
-}
-
-#Write a Magnum Opus - Pick type of Theurgy
-character_event = {
-	id = wizard.1601
-	desc = EVTDESC_wizard_1601
-	picture = GFX_evt_secluded_in_prayer
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	trigger = {	society_member_of = weizza_society }
-
-	option = { #Focus on Rituals/Invocation
-		name = EVTOPTA_wizard_1601
-		trigger = {
-			NOT = {
-				OR = {
-    				has_artifact = magnum_opus_theurgy_ritual_1
-					has_artifact = magnum_opus_theurgy_ritual_2
-					has_artifact = magnum_opus_theurgy_ritual_3
-					has_artifact = magnum_opus_theurgy_ritual_4
-    			}
-			}
-		}
-		custom_tooltip = { text = EVTOPTA_wizard_1601_TT }
-    	hidden_effect = {
-    		character_event = { id = wizard.1604 days = 90 random = 60 }
-    	}
-	}
-
-	option = { #Focus on Contemplation
-    	name = EVTOPTB_wizard_1601
-    	trigger = {
-			NOT = {
-				OR = {
-    				has_artifact = magnum_opus_theurgy_contemplation_1
-					has_artifact = magnum_opus_theurgy_contemplation_2
-					has_artifact = magnum_opus_theurgy_contemplation_3
-					has_artifact = magnum_opus_theurgy_contemplation_4
-    			}
-			}
-		}
-    	custom_tooltip = { text = EVTOPTB_wizard_1601_TT }
-    	hidden_effect = {
-    		character_event = { id = wizard.1605 days = 90 random = 60 }
-    	}
-    }
-}
-
-#Write a Magnum Opus - Pick type of Astrology
-character_event = {
-	id = wizard.1602
-	desc = EVTDESC_wizard_1602
-	picture = GFX_evt_comet
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-    
-    trigger = {	society_member_of = weizza_society }
-
-	option = { #Focus on Stars
-		name = EVTOPTA_wizard_1602
-		trigger = {
-			NOT = {
-				OR = {
-    				has_artifact = magnum_opus_astrology_stars_1
-					has_artifact = magnum_opus_astrology_stars_2
-					has_artifact = magnum_opus_astrology_stars_3
-					has_artifact = magnum_opus_astrology_stars_4
-    			}
-			}
-		}
-		custom_tooltip = { text = EVTOPTA_wizard_1602_TT }
-    	hidden_effect = {
-    		character_event = { id = wizard.1606 days = 90 random = 60 }
-    	}
-	}
-
-	option = { #Focus on Planets
-    	name = EVTOPTB_wizard_1602
-    	trigger = {
-			NOT = {
-				OR = {
-    				has_artifact = magnum_opus_astrology_planets_1
-					has_artifact = magnum_opus_astrology_planets_2
-					has_artifact = magnum_opus_astrology_planets_3
-					has_artifact = magnum_opus_astrology_planets_4
-    			}
-			}
-		}
-    	custom_tooltip = { text = EVTOPTB_wizard_1602_TT }
-    	hidden_effect = {
-    		character_event = { id = wizard.1607 days = 90 random = 60 }
-    	}
-    }
-}
-
-#Write a Magnum Opus - Pick type of Alchemy
-character_event = {
-	id = wizard.1603
-	desc = EVTDESC_wizard_1603
-	picture = GFX_evt_experiment
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-    trigger = {	society_member_of = weizza_society }
-
-	option = { #Focus on Universal Panacea
-		name = EVTOPTA_wizard_1603
-		trigger = {
-			NOT = {
-				OR = {
-    				has_artifact = magnum_opus_alchemy_panacea_1
-					has_artifact = magnum_opus_alchemy_panacea_2
-					has_artifact = magnum_opus_alchemy_panacea_3
-					has_artifact = magnum_opus_alchemy_panacea_4
-    			}
-			}
-		}
-		custom_tooltip = { text = EVTOPTA_wizard_1603_TT }
-    	hidden_effect = {
-    		character_event = { id = wizard.1608 days = 90 random = 60 }
-    	}
-	}
-
-	option = { #Focus on Transmutation
-    	name = EVTOPTB_wizard_1603
-    	trigger = {
-			NOT = {
-				OR = {
-    				has_artifact = magnum_opus_alchemy_transmutation_1
-					has_artifact = magnum_opus_alchemy_transmutation_2
-					has_artifact = magnum_opus_alchemy_transmutation_3
-					has_artifact = magnum_opus_alchemy_transmutation_4
-    			}
-			}
-		}
-    	custom_tooltip = { text = EVTOPTB_wizard_1603_TT }
-    	hidden_effect = {
-    		character_event = { id = wizard.1609 days = 90 random = 60 }
-    	}
-    }
-}
-
-#Write a Magnum Opus - Finish book on Ritualistic/Invocative Theurgy
-character_event = {
-	id = wizard.1604
-	desc = EVTDESC_wizard_1604
-	picture = GFX_evt_secluded_in_prayer
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Awesome!
-		name = EVTOPTA_wizard_1604
-		if = {
-			limit = {
-				NOT = { learning = 12 }
-			}
-			prestige = 50
-    		add_artifact = magnum_opus_theurgy_ritual_1
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 12
-					NOT = { learning = 18 }
-				}
-			}
-			prestige = 100
-    		add_artifact = magnum_opus_theurgy_ritual_2
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 18
-					NOT = { learning = 25 }
-				}
-			}
-			prestige = 150
-    		add_artifact = magnum_opus_theurgy_ritual_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-    		add_artifact = magnum_opus_theurgy_ritual_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
-
-#Write a Magnum Opus - Finish book on Contemplative Theurgy
-character_event = {
-	id = wizard.1605
-	desc = EVTDESC_wizard_1605
-	picture = GFX_evt_secluded_in_prayer
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Awesome!
-		name = EVTOPTA_wizard_1605
-		if = {
-			limit = {
-				NOT = { learning = 12 }
-			}
-			prestige = 50
-    		add_artifact = magnum_opus_theurgy_contemplation_1
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 12
-					NOT = { learning = 18 }
-				}
-			}
-			prestige = 100
-    		add_artifact = magnum_opus_theurgy_contemplation_2
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 18
-					NOT = { learning = 25 }
-				}
-			}
-			prestige = 150
-    		add_artifact = magnum_opus_theurgy_contemplation_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-    		add_artifact = magnum_opus_theurgy_contemplation_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
-
-#Write a Magnum Opus - Finish book on Astrology with focus on Stars
-character_event = {
-	id = wizard.1606
-	desc = EVTDESC_wizard_1606
-	picture = GFX_evt_comet
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Awesome!
-		name = EVTOPTA_wizard_1606
-		if = {
-			limit = {
-				NOT = { learning = 12 }
-			}
-			prestige = 50
-    		add_artifact = magnum_opus_astrology_stars_1
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 12
-					NOT = { learning = 18 }
-				}
-			}
-			prestige = 100
-    		add_artifact = magnum_opus_astrology_stars_2
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 18
-					NOT = { learning = 25 }
-				}
-			}
-			prestige = 150
-    		add_artifact = magnum_opus_astrology_stars_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-    		add_artifact = magnum_opus_astrology_stars_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
-
-#Write a Magnum Opus - Finish book on Astrology with focus on Planets
-character_event = {
-	id = wizard.1607
-	desc = EVTDESC_wizard_1607
-	picture = GFX_evt_comet
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Awesome!
-		name = EVTOPTA_wizard_1607
-		if = {
-			limit = {
-				NOT = { learning = 12 }
-			}
-			prestige = 50
-    		add_artifact = magnum_opus_astrology_planets_1
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 12
-					NOT = { learning = 18 }
-				}
-			}
-			prestige = 100
-    		add_artifact = magnum_opus_astrology_planets_2
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 18
-					NOT = { learning = 25 }
-				}
-			}
-			prestige = 150
-    		add_artifact = magnum_opus_astrology_planets_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-    		add_artifact = magnum_opus_astrology_planets_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
-
-#Write a Magnum Opus - Finish book on Alchemy with focus on Universal Panacea
-character_event = {
-	id = wizard.1608
-	desc = EVTDESC_wizard_1608
-	picture = GFX_evt_experiment
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Awesome!
-		name = EVTOPTA_wizard_1608
-    	if = {
-			limit = {
-				NOT = { learning = 12 }
-			}
-			prestige = 50
-    		add_artifact = magnum_opus_alchemy_panacea_1
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 12
-					NOT = { learning = 18 }
-				}
-			}
-			prestige = 100
-    		add_artifact = magnum_opus_alchemy_panacea_2
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 18
-					NOT = { learning = 25 }
-				}
-			}
-			prestige = 150
-    		add_artifact = magnum_opus_alchemy_panacea_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-    		add_artifact = magnum_opus_alchemy_panacea_4
-		}
-		remove_character_modifier = writing_magnum_opus
-	}
-}
-
-#Write a Magnum Opus - Finish book on Alchemy with focus on Transmutation
-character_event = {
-	id = wizard.1609
-	desc = EVTDESC_wizard_1609
-	picture = GFX_evt_experiment
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = { #Awesome!
-		name = EVTOPTA_wizard_1609
-		if = {
-			limit = {
-				NOT = { learning = 12 }
-			}
-			prestige = 50
-    		add_artifact = magnum_opus_alchemy_transmutation_1
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 12
-					NOT = { learning = 18 }
-				}
-			}
-			prestige = 100
-    		add_artifact = magnum_opus_alchemy_transmutation_2
-		}
-		if = {
-			limit = {
-				AND = {
-					learning = 18
-					NOT = { learning = 25 }
-				}
-			}
-			prestige = 150
-    		add_artifact = magnum_opus_alchemy_transmutation_3
-		}
-		if = {
-			limit = {
-				learning = 25
-			}
-			prestige = 200
-    		add_artifact = magnum_opus_alchemy_transmutation_4
-		}
-		remove_character_modifier = writing_magnum_opus
+		name = EVTOPTA_MNM_1969
 	}
 }
 
@@ -15438,7 +14888,7 @@ character_event = {
 
 society_quest_event = {
 	id = wizard.1829
-	desc = EVTDESC_wizard_1829
+	desc = EVTDESC_MNM_1829
 
     is_triggered_only = yes
    
@@ -15466,14 +14916,14 @@ society_quest_event = {
 
 character_event = {
 	id = wizard.1830
-	desc = EVTDESC_wizard_1830
+	desc = EVTDESC_MNM_1830
 	picture = GFX_evt_book_carolingian_script
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1830
+		name = EVTOPTA_MNM_1830
 		add_character_modifier = {
 			modifier = astronomical_insights_1
 			duration = -1
@@ -15597,25 +15047,25 @@ character_event = { # ending event tombola
 character_event = { # continue studying or conclude my findings?
 	id = wizard.1837
 	desc = {
-		text = EVTDESCA_wizard_1837
+		text = EVTDESCA_MNM_1837
 		trigger = {
 			has_character_modifier = astronomical_insights_1
 		}
 	}
 	desc = {
-		text = EVTDESCB_wizard_1837
+		text = EVTDESCB_MNM_1837
 		trigger = {
 			has_character_modifier = astronomical_insights_2
 		}
 	}
 	desc = {
-		text = EVTDESCC_wizard_1837
+		text = EVTDESCC_MNM_1837
 		trigger = {
 			has_character_modifier = astronomical_insights_3
 		}
 	}
 	desc = {
-		text = EVTDESCD_wizard_1837
+		text = EVTDESCD_MNM_1837
 		trigger = {
 			has_character_modifier = astronomical_insights_4
 		}
@@ -15628,8 +15078,8 @@ character_event = { # continue studying or conclude my findings?
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1837
-		custom_tooltip = { text = EVTOPTA_wizard_1837_TT }
+		name = EVTOPTA_MNM_1837
+		custom_tooltip = { text = EVTOPTA_MNM_1837_TT }
 		trigger = {
 			NOT = { has_character_modifier = astronomical_insights_4 }
 		}
@@ -15637,8 +15087,8 @@ character_event = { # continue studying or conclude my findings?
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1837
-		custom_tooltip = { text = EVTOPTB_wizard_1837_TT }
+		name = EVTOPTB_MNM_1837
+		custom_tooltip = { text = EVTOPTB_MNM_1837_TT }
 		trigger = {
 			NOT = { has_character_modifier = astronomical_insights_4 }
 		}
@@ -15646,13 +15096,13 @@ character_event = { # continue studying or conclude my findings?
 	}
 	
 	option = {
-		name = EVTOPTC_wizard_1837
-		custom_tooltip = { text = EVTOPTB_wizard_1837_TT }
+		name = EVTOPTC_MNM_1837
+		custom_tooltip = { text = EVTOPTB_MNM_1837_TT }
 		trigger = {
 			has_character_modifier = astronomical_insights_4
 		}
 		custom_tooltip = {
-			text = EVTTOOLTIP_wizard_1837
+			text = EVTTOOLTIP_MNM_1837
 			character_event = { id = wizard.1836 days = 20 }
 		}
 	}
@@ -15660,7 +15110,7 @@ character_event = { # continue studying or conclude my findings?
 
 character_event = { # Progress - Productive evening
 	id = wizard.1840
-	desc = EVTDESC_wizard_1840
+	desc = EVTDESC_MNM_1840
 	picture = GFX_evt_monk
 	border = GFX_event_normal_frame_religion
 	
@@ -15668,12 +15118,12 @@ character_event = { # Progress - Productive evening
 	hide_from = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1840
+		name = EVTOPTA_MNM_1840
 		add_society_currency_trivial_effect = yes
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1840
+		name = EVTOPTB_MNM_1840
 		trigger = { trait = slothful }
 		random = {
 			chance = 30
@@ -15682,7 +15132,7 @@ character_event = { # Progress - Productive evening
 	}
 	
 	option = {
-		name = EVTOPTC_wizard_1840
+		name = EVTOPTC_MNM_1840
 		trigger = { trait = depressed }
 		random = {
 			chance = 30
@@ -15691,7 +15141,7 @@ character_event = { # Progress - Productive evening
 	}
 	
 	option = {
-		name = EVTOPTD_wizard_1840
+		name = EVTOPTD_MNM_1840
 		trigger = { trait = envious }
 		random = {
 			chance = 30
@@ -15708,7 +15158,7 @@ character_event = { # Progress - Productive evening
 character_event = { # Progress - Neglect interacting with your spouse
 	id = wizard.1841
 	desc = {
-		text = EVTDESCA_wizard_1841
+		text = EVTDESCA_MNM_1841
 		trigger = {
 			NOT = {
 				event_target:target_spouse = {
@@ -15727,7 +15177,7 @@ character_event = { # Progress - Neglect interacting with your spouse
 		}
 	}
 	desc = {
-		text = EVTDESCB_wizard_1841
+		text = EVTDESCB_MNM_1841
 		trigger = {
 			event_target:target_spouse = {
 				OR = {
@@ -15759,7 +15209,7 @@ character_event = { # Progress - Neglect interacting with your spouse
 	
 	option = {
 		name = {
-			text = EVTOPTA_wizard_1841_1
+			text = EVTOPTA_MNM_1841_1
 			trigger = {
 				NOT = {
 					event_target:target_spouse = {
@@ -15778,7 +15228,7 @@ character_event = { # Progress - Neglect interacting with your spouse
 			}
 		}
 		name = {
-			text = EVTOPTA_wizard_1841_2
+			text = EVTOPTA_MNM_1841_2
 			trigger = {
 				event_target:target_spouse = {
 					OR = {
@@ -15828,7 +15278,7 @@ character_event = { # Progress - Neglect interacting with your spouse
 	
 	option = {
 		name = {
-			text = EVTOPTB_wizard_1841_1
+			text = EVTOPTB_MNM_1841_1
 			trigger = {
 				NOT = {
 					event_target:target_spouse = {
@@ -15847,7 +15297,7 @@ character_event = { # Progress - Neglect interacting with your spouse
 			}
 		}
 		name = {
-			text = EVTOPTB_wizard_1841_2
+			text = EVTOPTB_MNM_1841_2
 			trigger = {
 				event_target:target_spouse = {
 					OR = {
@@ -15880,7 +15330,7 @@ character_event = { # Progress - Neglect interacting with your spouse
 
 character_event = { # Progress - Child wants help to sleep
 	id = wizard.1842
-	desc = EVTDESCA_wizard_1842
+	desc = EVTDESCA_MNM_1842
 	picture = GFX_evt_daughter_asking_father
 	border = GFX_event_normal_frame_religion
 	
@@ -15916,7 +15366,7 @@ character_event = { # Progress - Child wants help to sleep
 	}	
 
 	option = {
-		name = EVTOPTA_wizard_1842
+		name = EVTOPTA_MNM_1842
 		increase_astronomical_insights_modifier_effect = yes
 		event_target:target_child = {
 			if = {
@@ -15953,7 +15403,7 @@ character_event = { # Progress - Child wants help to sleep
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1842
+		name = EVTOPTB_MNM_1842
 
 		event_target:target_child = {
 			opinion = {
@@ -15969,19 +15419,19 @@ character_event = { # Progress - Child wants help to sleep
 		custom_tooltip = { text = ingredient_option_available_tt }
 
 		name = {
-        	text = EVTOPTC_wizard_1842_herb
+        	text = EVTOPTC_MNM_1842_herb
         	trigger = { has_selected_herb_ingredient_1_trigger = yes }
         }
         name = {
-        	text = EVTOPTC_wizard_1842_animal_part
+        	text = EVTOPTC_MNM_1842_animal_part
         	trigger = { has_selected_animal_part_ingredient_1_trigger = yes }
         }		
         name = {
-        	text = EVTOPTC_wizard_1842_powder
+        	text = EVTOPTC_MNM_1842_powder
         	trigger = { has_selected_powder_ingredient_1_trigger = yes }
         }
         name = {
-        	text = EVTOPTC_wizard_1842_liquid
+        	text = EVTOPTC_MNM_1842_liquid
         	trigger = { has_selected_liquid_ingredient_1_trigger = yes }
         }
 
@@ -16054,14 +15504,14 @@ character_event = { # Progress - Child wants help to sleep
 
 character_event = { # Progress - Neglect taking care of accounting
 	id = wizard.1843
-	desc = EVTDESC_wizard_1843
+	desc = EVTDESC_MNM_1843
 	picture = GFX_evt_relic_box
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1843
+		name = EVTOPTA_MNM_1843
 		increase_astronomical_insights_modifier_effect = yes
 		add_character_modifier = {
 			modifier = neglected_accounting
@@ -16075,7 +15525,7 @@ character_event = { # Progress - Neglect taking care of accounting
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1843
+		name = EVTOPTB_MNM_1843
 		scaled_wealth = {
 			value = -0.3
 			min = -15
@@ -16090,7 +15540,7 @@ character_event = { # Progress - Neglect taking care of accounting
 
 character_event = { # Progress - Friends upset about missed event
 	id = wizard.1844
-	desc = EVTDESC_wizard_1844
+	desc = EVTDESC_MNM_1844
 	picture = GFX_evt_bad_news
 	border = GFX_event_normal_frame_religion
 	
@@ -16123,7 +15573,7 @@ character_event = { # Progress - Friends upset about missed event
 	}
 	
 	option = {
-		name = EVTOPTA_wizard_1844
+		name = EVTOPTA_MNM_1844
 		increase_astronomical_insights_modifier_effect = yes
 		event_target:target_friend = {
 			random = {
@@ -16139,7 +15589,7 @@ character_event = { # Progress - Friends upset about missed event
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1844
+		name = EVTOPTB_MNM_1844
 		event_target:target_friend = {
 			opinion = {
 				modifier = opinion_forgot_important_occasion_mild
@@ -16154,19 +15604,19 @@ character_event = { # Progress - Friends upset about missed event
 		custom_tooltip = { text = ingredient_option_available_tt }
 
 		name = {
-        	text = EVTOPTC_wizard_1844_herb
+        	text = EVTOPTC_MNM_1844_herb
         	trigger = { has_selected_herb_ingredient_1_trigger = yes }
         }
         name = {
-        	text = EVTOPTC_wizard_1844_animal_part
+        	text = EVTOPTC_MNM_1844_animal_part
         	trigger = { has_selected_animal_part_ingredient_1_trigger = yes }
         }		
         name = {
-        	text = EVTOPTC_wizard_1844_powder
+        	text = EVTOPTC_MNM_1844_powder
         	trigger = { has_selected_powder_ingredient_1_trigger = yes }
         }
         name = {
-        	text = EVTOPTC_wizard_1844_liquid
+        	text = EVTOPTC_MNM_1844_liquid
         	trigger = { has_selected_liquid_ingredient_1_trigger = yes }
         }
 
@@ -16238,7 +15688,7 @@ character_event = { # Progress - Friends upset about missed event
 
 character_event = { # Progress - Absent-mindedness in meetings
 	id = wizard.1845
-	desc = EVTDESC_wizard_1845
+	desc = EVTDESC_MNM_1845
 	picture = GFX_evt_state_diplomacy
 	border = GFX_event_normal_frame_religion
 	
@@ -16271,7 +15721,7 @@ character_event = { # Progress - Absent-mindedness in meetings
 	}
 	
 	option = {
-		name = EVTOPTA_wizard_1845
+		name = EVTOPTA_MNM_1845
 		increase_astronomical_insights_modifier_effect = yes
 		
 		event_target:councillor2 = {
@@ -16292,7 +15742,7 @@ character_event = { # Progress - Absent-mindedness in meetings
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1845
+		name = EVTOPTB_MNM_1845
 		event_target:councillor1 = {
 			opinion = {	
 				modifier = opinion_angry
@@ -16310,7 +15760,7 @@ character_event = { # Progress - Absent-mindedness in meetings
 # Progress event: use ingredients
 character_event = {
     id = wizard.1855
-    desc = EVTDESC_wizard_1855
+    desc = EVTDESC_MNM_1855
 	picture = GFX_evt_experiment
 	border = GFX_event_normal_frame_religion
 
@@ -16324,7 +15774,7 @@ character_event = {
     }
 
     option = { # Smoke something...!
-        name = EVTOPTA_wizard_1855
+        name = EVTOPTA_MNM_1855
 
         random = {
         	chance = 30
@@ -16339,7 +15789,7 @@ character_event = {
     }
 
     option = { # Cook something...!
-        name = EVTOPTB_wizard_1855
+        name = EVTOPTB_MNM_1855
         
         random = {
         	chance = 40
@@ -16354,7 +15804,7 @@ character_event = {
     }
 
     option = { # I'll keep it under my pillow
-        name = EVTOPTC_wizard_1855
+        name = EVTOPTC_MNM_1855
         
         random = {
         	chance = 50
@@ -16372,7 +15822,7 @@ character_event = {
         tooltip_info = yes
         custom_tooltip = { text = multiple_ingredient_option_available_tt }
         
-        name = EVTOPTD_wizard_1855
+        name = EVTOPTD_MNM_1855
 
         random_list = {
         	85 = {
@@ -16391,7 +15841,7 @@ character_event = {
     }
 
     option = { #I'd rather not...
-    	name = EVTOPTE_wizard_1855
+    	name = EVTOPTE_MNM_1855
     }
 
     after = {
@@ -16403,14 +15853,14 @@ character_event = {
 
 character_event = { # Outcome - Tracking planets
 	id = wizard.1846
-	desc = EVTDESC_wizard_1846
+	desc = EVTDESC_MNM_1846
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1846
+		name = EVTOPTA_MNM_1846
 		random = {
 			chance = 15
 			add_trait = patient
@@ -16425,26 +15875,26 @@ character_event = { # Outcome - Tracking planets
 
 character_event = { # Outcome - Predicting star-fall
 	id = wizard.1847
-	desc = EVTDESC_wizard_1847
+	desc = EVTDESC_MNM_1847
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1847 # Invite everyone to this occasion
+		name = EVTOPTA_MNM_1847 # Invite everyone to this occasion
 		character_event = { id = wizard.1853 days = 190 random = 70 }
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1847 # I'll remember the day and observe it myself
+		name = EVTOPTB_MNM_1847 # I'll remember the day and observe it myself
 		character_event = { id = wizard.1854 days = 190 random = 70 }
 	}
 }
 
 character_event = { # Outcome - Name a newly found star
 	id = wizard.1848
-	desc =  EVTDESC_wizard_1848
+	desc =  EVTDESC_MNM_1848
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
@@ -16481,7 +15931,7 @@ character_event = { # Outcome - Name a newly found star
 	}
 	
 	option = { # Name it after my child
-		name = EVTOPTA_wizard_1848
+		name = EVTOPTA_MNM_1848
 		trigger = {
 			event_target:target_child = { always = yes }
 		}
@@ -16500,7 +15950,7 @@ character_event = { # Outcome - Name a newly found star
 	}
 	
 	option = { # Name it after my spouse
-		name = EVTOPTB_wizard_1848
+		name = EVTOPTB_MNM_1848
 		trigger = {
 			event_target:target_spouse = { always = yes }
 		}
@@ -16529,7 +15979,7 @@ character_event = { # Outcome - Name a newly found star
 	}
 	
 	option = { # Name it after a friend
-		name = EVTOPTC_wizard_1848
+		name = EVTOPTC_MNM_1848
 		trigger = {
 			event_target:target_friend = { always = yes }
 		}
@@ -16548,7 +15998,7 @@ character_event = { # Outcome - Name a newly found star
 	}
 	
 	option = { # Name it after myself
-		name = EVTOPTD_wizard_1848
+		name = EVTOPTD_MNM_1848
 		add_trait = proud
 		add_character_modifier = {
 			modifier = got_named_star
@@ -16567,14 +16017,14 @@ character_event = { # Outcome - Name a newly found star
 
 long_character_event = { # Outcome - Observe zodiac stars
 	id = wizard.1850
-	desc = EVTDESC_wizard_1850
+	desc = EVTDESC_MNM_1850
 	picture = GFX_evt_comet
 	border = GFX_event_long_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1850
+		name = EVTOPTA_MNM_1850
 		add_western_zodiac_trait_effect = yes
 		clr_quest = quest_weizza_society_observe_sky
 		sound_effect = hermetic_society_observe_planet
@@ -16586,14 +16036,14 @@ long_character_event = { # Outcome - Observe zodiac stars
 
 character_event = { # Outcome - Fail to observe anything of interest
 	id = wizard.1851
-	desc = EVTDESC_wizard_1851
+	desc = EVTDESC_MNM_1851
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1851
+		name = EVTOPTA_MNM_1851
 		clr_quest = { id = quest_weizza_society_observe_sky failure = yes }
 		add_mission_fail_influence_effect = yes
 		remove_astronomical_insight_modifier_effect = yes
@@ -16602,14 +16052,14 @@ character_event = { # Outcome - Fail to observe anything of interest
 
 character_event = { # Notification - Named star
 	id = wizard.1852
-	desc = EVTDESC_wizard_1852
+	desc = EVTDESC_MNM_1852
 	picture = GFX_evt_comet
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = EVTOPTA_wizard_1852
+		name = EVTOPTA_MNM_1852
 		tooltip = {
 			add_character_modifier = {
 				modifier = got_named_star
@@ -16628,11 +16078,11 @@ long_character_event = {
 	is_triggered_only = yes
 
 	desc = {
-		text = EVTDESCA_wizard_1853
+		text = EVTDESCA_MNM_1853
 		trigger = { has_character_flag = comet_success }
 	}
 	desc = {
-		text = EVTDESCB_wizard_1853
+		text = EVTDESCB_MNM_1853
 		trigger = { has_character_flag = comet_failure }
 	}
 	
@@ -16661,7 +16111,7 @@ long_character_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_wizard_1853
+		name = EVTOPTA_MNM_1853
 		trigger = { has_character_flag = comet_success }
 		
 		add_trait = proud
@@ -16674,7 +16124,7 @@ long_character_event = {
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1853
+		name = EVTOPTB_MNM_1853
 		trigger = { has_character_flag = comet_failure }
 		add_character_modifier = {
 			modifier = failed_to_predict_star_fall
@@ -16700,11 +16150,11 @@ long_character_event = {
 	is_triggered_only = yes
 
 	desc = {
-		text = EVTDESCA_wizard_1854
+		text = EVTDESCA_MNM_1854
 		trigger = { has_character_flag = comet_success }
 	}
 	desc = {
-		text = EVTDESCB_wizard_1854
+		text = EVTDESCB_MNM_1854
 		trigger = { has_character_flag = comet_failure }
 	}
 	
@@ -16733,7 +16183,7 @@ long_character_event = {
 	}
 	
 	option = {
-		name = EVTOPTA_wizard_1854
+		name = EVTOPTA_MNM_1854
 		trigger = { has_character_flag = comet_success }
 		
 		clr_quest = quest_weizza_society_observe_sky
@@ -16743,7 +16193,7 @@ long_character_event = {
 	}
 	
 	option = {
-		name = EVTOPTB_wizard_1854
+		name = EVTOPTB_MNM_1854
 		trigger = { has_character_flag = comet_failure }
 		
 		clr_quest = { id = quest_weizza_society_observe_sky failure = yes }
@@ -16822,26 +16272,26 @@ character_event = {
     is_triggered_only = yes
     
     desc = {
-    	text = EVTDESC_wizard_5109_hermetic
+    	text = EVTDESC_MNM_5109_hermetic
     	trigger = {
     		society_member_of = weizza_society
     	}
     }
     desc = {
-    	text = EVTDESC_wizard_5109_other_society
+    	text = EVTDESC_MNM_5109_other_society
     	trigger = {
     		NOT = { society_member_of = weizza_society }
     		is_in_society = yes
     	}
     }
     desc = {
-    	text = EVTDESC_wizard_5109_no_society
+    	text = EVTDESC_MNM_5109_no_society
     	trigger = {
     		is_in_society = no
     	}
     }
     desc = {
-    	text = EVTDESC_wizard_5109_child
+    	text = EVTDESC_MNM_5109_child
     	trigger = {
     		NOT = { age = 16 }
     	}
@@ -16853,20 +16303,20 @@ character_event = {
     }
 
     option = {      
-        name = EVTOPTA_wizard_5109
+        name = EVTOPTA_MNM_5109
         destroy_selected_ingredient_1_and_2_effect = yes
         piety = 25
         ai_chance = { factor = 5 }
     }
     option = {      
-        name = EVTOPTB_wizard_5109
+        name = EVTOPTB_MNM_5109
         destroy_all_ingredients_effect = yes
         piety = 25
         prestige = 25
         ai_chance = { factor = 100 }
     }
     option = {
-        name = EVTOPTC_wizard_5109
+        name = EVTOPTC_MNM_5109
     }
 
     after = {
@@ -16879,7 +16329,7 @@ character_event = {
 #Paranoid ward-making (random event, fired from on_society_bi_yearly_pulse)
 character_event = {
     id = wizard.5110
-    desc = EVTDESC_wizard_5110
+    desc = EVTDESC_MNM_5110
     picture = GFX_evt_shady_meeting
     border = GFX_event_normal_frame_intrigue
     is_triggered_only = yes
@@ -16919,7 +16369,7 @@ character_event = {
     }
 
     option = { #One ingredient is fine
-        name = EVTOPTA_wizard_5110
+        name = EVTOPTA_MNM_5110
         prestige = 15
         piety = -10
         destroy_selected_ingredient_1_effect = yes
@@ -16932,7 +16382,7 @@ character_event = {
         ai_chance = { factor = 10 }
     }
     option = { #I want to use both ingredients
-        name = EVTOPTB_wizard_5110
+        name = EVTOPTB_MNM_5110
         prestige = 25
         piety = -20
         destroy_selected_ingredient_1_and_2_effect = yes
@@ -16945,7 +16395,7 @@ character_event = {
         ai_chance = { factor = 10 }
     }
     option = { #I'll cover my quarters in these things!
-        name = EVTOPTC_wizard_5110
+        name = EVTOPTC_MNM_5110
         prestige = 35
         piety = -30
         destroy_all_ingredients_effect = yes
@@ -16958,7 +16408,7 @@ character_event = {
         ai_chance = { factor = 100 }
     }
     option = { #this is paranoia!
-        name = EVTOPTD_wizard_5110
+        name = EVTOPTD_MNM_5110
         ai_chance = { factor = 0 }
     }
     after = {
