@@ -3966,20 +3966,12 @@ character_event = {
     id = wizard.1200
     picture = GFX_evt_dark_prayer
     border = GFX_event_normal_frame_religion
+	desc = EVTDESC_MNM_1200_A
     is_triggered_only = yes
 
     trigger = {
     	has_dlc = "Mystics"
     	has_an_omen_modifier_trigger = no
-    }
-
-    desc = {
-    	text = EVTDESC_wizard_1200_A
-    	trigger = {	NOT = { any_artifact = { has_artifact_flag = ingredient	} } }
-    }
-    desc = {
-    	text = EVTDESC_wizard_1200_B
-    	trigger = {	any_artifact = { has_artifact_flag = ingredient	} }
     }
 
     immediate = {
@@ -3994,86 +3986,16 @@ character_event = {
     }
 
     option = { # I want to know about battles to come
-        name = EVTOPTA_wizard_1200
+        name = EVTOPTA_MNM_1200
         set_character_flag = battle_focused_scrying_flag
     }
     option = { # I want to know where my relationships will lead
-        name = EVTOPTB_wizard_1200
+        name = EVTOPTB_MNM_1200
         set_character_flag = relationship_focused_scrying_flag
     }
     option = { # I want to find out how to increase my power
-        name = EVTOPTC_wizard_1200
+        name = EVTOPTC_MNM_1200
         set_character_flag = power_hungry_scrying_flag
-    }
-
-    option = { # I am gonna throw some ingredients into the water...
-    	tooltip_info = yes
-
-    	custom_tooltip = { text = ingredient_option_available_tt }
-    	custom_tooltip = { text = EVTOPTD_wizard_1200_tt }
-        name = {
-        	text = EVTOPTD_wizard_1200_herb
-        	trigger = {
-        		any_artifact = {
-        			has_artifact_flag = selected_ingredient
-        			is_ingredient_herb_trigger = yes
-        		}
-        	}
-        }
-        name = {
-        	text = EVTOPTD_wizard_1200_animal_part
-        	trigger = {
-        		any_artifact = {
-        			has_artifact_flag = selected_ingredient
-        			is_ingredient_animal_part_trigger = yes
-        		}
-        	}
-        }
-        name = {
-        	text = EVTOPTD_wizard_1200_powder
-        	trigger = {
-        		any_artifact = {
-        			has_artifact_flag = selected_ingredient
-        			is_ingredient_powder_trigger = yes
-        		}
-        	}
-        }
-        name = {
-        	text = EVTOPTD_wizard_1200_liquid
-        	trigger = {
-        		any_artifact = {
-        			has_artifact_flag = selected_ingredient
-        			is_ingredient_liquid_trigger = yes
-        		}
-        	}
-        }
-        hidden_effect = {
-	        random_list = {
-	        	10 = {
-	        		set_character_flag = battle_focused_scrying_flag
-	        	}
-	        	10 = {
-	        		set_character_flag = relationship_focused_scrying_flag
-	        	}
-	        	10 = {
-	        		set_character_flag = power_hungry_scrying_flag
-	        	}
-	        }
-	        set_character_flag = used_ingredient_flag
-        }
-        destroy_selected_ingredient_1_effect = yes
-
-        ai_chance = { #AI should use ingredients if they can
-			factor = 100
-			modifier = {
-				factor = 50
-				trait = ambitious
-			}
-		}
-
-        trigger = {
-        	any_artifact = { has_artifact_flag = ingredient }
-        }
     }
 
     after = {
@@ -4098,41 +4020,41 @@ character_event = { # You see something in the water and react well or poorly to
 
     desc = {
     	trigger = { has_character_flag = battle_focused_scrying_flag has_character_flag = desc_variation_A_flag }
-    	text = EVTDESC_wizard_1201_BATTLE_A
+    	text = EVTDESC_MNM_1201_BATTLE_A
     }
     desc = {
     	trigger = { has_character_flag = battle_focused_scrying_flag has_character_flag = desc_variation_B_flag }
-    	text = EVTDESC_wizard_1201_BATTLE_B
+    	text = EVTDESC_MNM_1201_BATTLE_B
     }
     desc = {
     	trigger = { has_character_flag = battle_focused_scrying_flag has_character_flag = desc_variation_C_flag }
-    	text = EVTDESC_wizard_1201_BATTLE_C
+    	text = EVTDESC_MNM_1201_BATTLE_C
     }
 
     desc = {
     	trigger = { has_character_flag = relationship_focused_scrying_flag has_character_flag = desc_variation_A_flag }
-    	text = EVTDESC_wizard_1201_RELATIONSHIP_A
+    	text = EVTDESC_MNM_1201_RELATIONSHIP_A
     }
     desc = {
     	trigger = { has_character_flag = relationship_focused_scrying_flag has_character_flag = desc_variation_B_flag }
-    	text = EVTDESC_wizard_1201_RELATIONSHIP_B
+    	text = EVTDESC_MNM_1201_RELATIONSHIP_B
     }
     desc = {
     	trigger = { has_character_flag = relationship_focused_scrying_flag has_character_flag = desc_variation_C_flag }
-    	text = EVTDESC_wizard_1201_RELATIONSHIP_C
+    	text = EVTDESC_MNM_1201_RELATIONSHIP_C
     }
 
     desc = {
     	trigger = { has_character_flag = power_hungry_scrying_flag has_character_flag = desc_variation_A_flag }
-    	text = EVTDESC_wizard_1201_POWER_A
+    	text = EVTDESC_MNM_1201_POWER_A
     }
     desc = {
     	trigger = { has_character_flag = power_hungry_scrying_flag has_character_flag = desc_variation_B_flag }
-    	text = EVTDESC_wizard_1201_POWER_B
+    	text = EVTDESC_MNM_1201_POWER_B
     }
     desc = {
     	trigger = { has_character_flag = power_hungry_scrying_flag has_character_flag = desc_variation_C_flag }
-    	text = EVTDESC_wizard_1201_POWER_C
+    	text = EVTDESC_MNM_1201_POWER_C
     }
 
     immediate = {
@@ -4155,7 +4077,7 @@ character_event = { # You see something in the water and react well or poorly to
     	}
     }
     option = {
-        name = EVTOPTA_wizard_1201
+        name = EVTOPTA_MNM_1201
 
 		if = { limit = { has_character_flag = battle_focused_scrying_flag }
 			add_character_modifier = {
@@ -4182,7 +4104,7 @@ character_event = { # You see something in the water and react well or poorly to
 		}
     }
     option = {
-        name = EVTOPTB_wizard_1201
+        name = EVTOPTB_MNM_1201
 
 		if = { limit = { has_character_flag = battle_focused_scrying_flag }
 			add_character_modifier = {
@@ -4253,11 +4175,11 @@ character_event = { # Gain a leadership trait (fired from on_combat_pulse)
 
 	desc = {
     	trigger = { has_character_modifier = good_battle_omen }
-    	text = EVTDESC_wizard_1202_A
+    	text = EVTDESC_MNM_1202_A
     }
     desc = {
     	trigger = { has_character_modifier = bad_battle_omen }
-    	text = EVTDESC_wizard_1202_B
+    	text = EVTDESC_MNM_1202_B
     }
     
 	immediate = {
@@ -4279,17 +4201,17 @@ character_event = { # Gain a leadership trait (fired from on_combat_pulse)
 	}
 
 	option = { # Gain Direct Leader
-        name = EVTOPTA_wizard_1202
+        name = EVTOPTA_MNM_1202
 		trigger = {	has_character_flag = gain_direct_leader }
 		add_trait = experimenter
 	}
 	option = { # Gain Unyielding
-        name = EVTOPTB_wizard_1202
+        name = EVTOPTB_MNM_1202
 		trigger = { has_character_flag = gain_unyielding_leader }
 		add_trait = unyielding_leader
 	}
 	option = { # Gain Inspiring Leader
-		name = EVTOPTC_wizard_1202
+		name = EVTOPTC_MNM_1202
 		trigger = { has_character_flag = gain_inspiring_leader }
 		add_trait = inspiring_leader
 	}
@@ -4329,21 +4251,21 @@ character_event = { # Fight goes badly (fired from on_combat_pulse)
 
     desc = {
     	trigger = { has_character_modifier = bad_battle_omen }
-    	text = EVTDESC_wizard_1203_A
+    	text = EVTDESC_MNM_1203_A
     }
 	desc = {
     	trigger = { has_character_modifier = good_battle_omen }
-    	text = EVTDESC_wizard_1203_B
+    	text = EVTDESC_MNM_1203_B
     }
 
 	option = { # At least I was right
-		name = EVTOPTA_wizard_1203
+		name = EVTOPTA_MNM_1203
 		upgrade_seer_modifier_effect = yes
 
 		trigger = { has_character_modifier = bad_battle_omen }
 	}
 	option = { # Curses! Where's the glory in this?!
-    	name = EVTOPTB_wizard_1203
+    	name = EVTOPTB_MNM_1203
 		downgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = good_battle_omen }
@@ -4426,15 +4348,15 @@ character_event = { # A Child is born - you have a good feeling about the kid! (
 
 	desc = {
     	trigger = { has_character_modifier = good_relationship_omen }
-    	text = EVTDESC_wizard_1204_A
+    	text = EVTDESC_MNM_1204_A
     }
     desc = {
     	trigger = { has_character_modifier = bad_relationship_omen }
-    	text = EVTDESC_wizard_1204_B
+    	text = EVTDESC_MNM_1204_B
     }
     
 	option = { # I knew something great would happen!
-    	name = EVTOPTA_wizard_1204
+    	name = EVTOPTA_MNM_1204
 		tooltip = {
 			remove_character_modifier = good_relationship_omen
 		}
@@ -4443,7 +4365,7 @@ character_event = { # A Child is born - you have a good feeling about the kid! (
     	trigger = { has_character_flag = omen_opt1 }
 	}
 	option = { # I am not sure I interpreted the omen correctly...
-		name = EVTOPTB_wizard_1204
+		name = EVTOPTB_MNM_1204
 		tooltip = {
 			remove_character_modifier = bad_relationship_omen
 		}
@@ -4501,16 +4423,16 @@ character_event = { # A Child is born - you're not impressed (fired from on_birt
 
 	desc = {
     	trigger = { has_character_modifier = bad_relationship_omen }
-    	text = EVTDESC_wizard_1205_A
+    	text = EVTDESC_MNM_1205_A
     }
     desc = {
     	trigger = { has_character_modifier = good_relationship_omen }
-    	text = EVTDESC_wizard_1205_B
+    	text = EVTDESC_MNM_1205_B
     }
 
 
 	option = { # I knew something bad would happen!
-		name = EVTOPTA_wizard_1205
+		name = EVTOPTA_MNM_1205
 		tooltip = {
 			remove_character_modifier = bad_relationship_omen
 		}
@@ -4519,7 +4441,7 @@ character_event = { # A Child is born - you're not impressed (fired from on_birt
 		trigger = { has_character_flag = omen_opt1 }
 	}
 	option = { # I am not sure I interpreted the omen correctly...
-    	name = EVTOPTB_wizard_1205
+    	name = EVTOPTB_MNM_1205
     	tooltip = {
 			remove_character_modifier = good_relationship_omen
 		}
@@ -4691,21 +4613,21 @@ character_event = { # scrying vision result: the passing of a lover
 
     desc = {
     	trigger = { has_character_modifier = bad_relationship_omen }
-    	text = EVTDESC_wizard_1208_A
+    	text = EVTDESC_MNM_1208_A
     }
     desc = {
     	trigger = { has_character_modifier = good_relationship_omen }
-    	text = EVTDESC_wizard_1208_B
+    	text = EVTDESC_MNM_1208_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1208
+        name = EVTOPTA_MNM_1208
         upgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = bad_relationship_omen }
     }
     option = {      
-        name = EVTOPTB_wizard_1208
+        name = EVTOPTB_MNM_1208
         downgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = good_relationship_omen }
@@ -4729,21 +4651,21 @@ character_event = { # scrying vision result: the passing of a friend
 
     desc = {
     	trigger = { has_character_modifier = bad_relationship_omen }
-    	text = EVTDESC_wizard_1209_A
+    	text = EVTDESC_MNM_1209_A
     }
     desc = {
     	trigger = { has_character_modifier = good_relationship_omen }
-    	text = EVTDESC_wizard_1209_B
+    	text = EVTDESC_MNM_1209_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1209
+        name = EVTOPTA_MNM_1209
 		upgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = bad_relationship_omen }
     }
     option = {      
-        name = EVTOPTB_wizard_1209
+        name = EVTOPTB_MNM_1209
         downgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = good_relationship_omen }
@@ -4767,21 +4689,21 @@ character_event = { # scrying vision result: the passing of a rival
 
     desc = {
     	trigger = { has_character_modifier = bad_relationship_omen }
-    	text = EVTDESC_wizard_1210_A
+    	text = EVTDESC_MNM_1210_A
     }
     desc = {
     	trigger = { has_character_modifier = good_relationship_omen }
-    	text = EVTDESC_wizard_1210_B
+    	text = EVTDESC_MNM_1210_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1210
+        name = EVTOPTA_MNM_1210
         upgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = good_relationship_omen }
     }
     option = {      
-        name = EVTOPTB_wizard_1210
+        name = EVTOPTB_MNM_1210
         downgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = bad_relationship_omen }
@@ -4805,21 +4727,21 @@ character_event = { # scrying vision result: the passing of a parent
 
     desc = {
     	trigger = { has_character_modifier = bad_relationship_omen }
-    	text = EVTDESC_wizard_1211_A
+    	text = EVTDESC_MNM_1211_A
     }
     desc = {
     	trigger = { has_character_modifier = good_relationship_omen }
-    	text = EVTDESC_wizard_1211_B
+    	text = EVTDESC_MNM_1211_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1211
+        name = EVTOPTA_MNM_1211
         upgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = bad_relationship_omen }
     }
     option = {      
-        name = EVTOPTB_wizard_1211
+        name = EVTOPTB_MNM_1211
         downgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = good_relationship_omen }
@@ -4843,21 +4765,21 @@ character_event = { # scrying vision result: the passing of a child
 
     desc = {
     	trigger = { has_character_modifier = bad_relationship_omen }
-    	text = EVTDESC_wizard_1212_A
+    	text = EVTDESC_MNM_1212_A
     }
     desc = {
     	trigger = { has_character_modifier = good_relationship_omen }
-    	text = EVTDESC_wizard_1212_B
+    	text = EVTDESC_MNM_1212_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1212
+        name = EVTOPTA_MNM_1212
         upgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = bad_relationship_omen }
     }
     option = {      
-        name = EVTOPTB_wizard_1212
+        name = EVTOPTB_MNM_1212
 		downgrade_seer_modifier_effect = yes
 
     	trigger = { has_character_modifier = good_relationship_omen }
@@ -4913,32 +4835,32 @@ character_event = { # scrying vision result: Cat/Dog death (other pet?)
 
     desc = {
     	trigger = { has_character_modifier = bad_relationship_omen NOT = { trait = lunatic } }
-    	text = EVTDESC_wizard_1214_A
+    	text = EVTDESC_MNM_1214_A
     }
     desc = {
     	trigger = { has_character_modifier = good_relationship_omen NOT = { trait = lunatic } }
-    	text = EVTDESC_wizard_1214_B
+    	text = EVTDESC_MNM_1214_B
     }
     desc = {
     	trigger = { has_character_modifier = bad_relationship_omen trait = lunatic }
-    	text = EVTDESC_wizard_1214_A_lunatic
+    	text = EVTDESC_MNM_1214_A_lunatic
     }
     desc = {
     	trigger = { has_character_modifier = good_relationship_omen trait = lunatic }
-    	text = EVTDESC_wizard_1214_B_lunatic
+    	text = EVTDESC_MNM_1214_B_lunatic
     }
 
     option = {      
         name = {
-        	text = EVTOPTA_wizard_1214_cat
+        	text = EVTOPTA_MNM_1214_cat
         	trigger = { has_character_flag = cat_death_omen }
         }
         name = {
-        	text = EVTOPTA_wizard_1214_dog
+        	text = EVTOPTA_MNM_1214_dog
         	trigger = { has_character_flag = dog_death_omen }
         }
         name = {
-        	text = EVTOPTA_wizard_1214_other
+        	text = EVTOPTA_MNM_1214_other
         	trigger = {
         		NOT = { has_character_flag = cat_death_omen }
         		NOT = { has_character_flag = dog_death_omen }
@@ -4951,15 +4873,15 @@ character_event = { # scrying vision result: Cat/Dog death (other pet?)
     }
     option = {      
         name = {
-        	text = EVTOPTB_wizard_1214_cat
+        	text = EVTOPTB_MNM_1214_cat
         	trigger = { has_character_flag = cat_death_omen }
         }
         name = {
-        	text = EVTOPTB_wizard_1214_dog
+        	text = EVTOPTB_MNM_1214_dog
         	trigger = { has_character_flag = dog_death_omen }
         }
         name = {
-        	text = EVTOPTB_wizard_1214_other
+        	text = EVTOPTB_MNM_1214_other
         	trigger = {
         		NOT = { has_character_flag = cat_death_omen }
         		NOT = { has_character_flag = dog_death_omen }
@@ -4997,15 +4919,15 @@ character_event = { # Scrying vision result: gaining a new title
 
 	desc = {
     	trigger = { has_character_flag = omen_opt1 }
-    	text = EVTDESC_wizard_1215_A
+    	text = EVTDESC_MNM_1215_A
     }
     desc = {
     	trigger = { has_character_flag = omen_opt2 }
-    	text = EVTDESC_wizard_1215_B
+    	text = EVTDESC_MNM_1215_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1215
+        name = EVTOPTA_MNM_1215
 		tooltip = {
 			remove_character_modifier = good_power_omen
 		}
@@ -5014,7 +4936,7 @@ character_event = { # Scrying vision result: gaining a new title
     	trigger = { has_character_flag = omen_opt1 }
     }
     option = {      
-        name = EVTOPTB_wizard_1215
+        name = EVTOPTB_MNM_1215
 		tooltip = {
 			remove_character_modifier = bad_power_omen
 		}
@@ -5093,15 +5015,15 @@ character_event = { # 3: Scrying vision result: losing a title (not sent if give
 
 	desc = {
     	trigger = { has_character_flag = omen_opt1 }
-    	text = EVTDESC_wizard_1219_A
+    	text = EVTDESC_MNM_1219_A
     }
     desc = {
     	trigger = { has_character_flag = omen_opt2 }
-    	text = EVTDESC_wizard_1219_B
+    	text = EVTDESC_MNM_1219_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1219
+        name = EVTOPTA_MNM_1219
 		tooltip = {
 			remove_character_modifier = bad_power_omen
 		}
@@ -5110,7 +5032,7 @@ character_event = { # 3: Scrying vision result: losing a title (not sent if give
     	trigger = { has_character_flag = omen_opt1 }
     }
     option = {      
-        name = EVTOPTB_wizard_1219
+        name = EVTOPTB_MNM_1219
 		tooltip = {
 			remove_character_modifier = good_power_omen
 		}
@@ -5143,15 +5065,15 @@ character_event = { # Scrying vision result: you are sick
 
 	desc = {
     	trigger = { has_character_flag = omen_opt1 }
-    	text = EVTDESC_wizard_1220_A
+    	text = EVTDESC_MNM_1220_A
     }
     desc = {
     	trigger = { has_character_flag = omen_opt2 }
-    	text = EVTDESC_wizard_1220_B
+    	text = EVTDESC_MNM_1220_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1220
+        name = EVTOPTA_MNM_1220
 		tooltip = {
 			remove_character_modifier = bad_power_omen
 		}
@@ -5160,7 +5082,7 @@ character_event = { # Scrying vision result: you are sick
     	trigger = { has_character_flag = omen_opt1 }
     }
     option = {      
-        name = EVTOPTB_wizard_1220
+        name = EVTOPTB_MNM_1220
 		tooltip = {
 			remove_character_modifier = good_power_omen
 		}
@@ -5196,23 +5118,23 @@ character_event = { # Scrying vision result: FROM is sick
 
 	desc = {
     	trigger = { FROM = { NOT = { character = ROOT } } has_character_flag = omen_opt1 }
-    	text = EVTDESC_wizard_1221_A
+    	text = EVTDESC_MNM_1221_A
     }
     desc = {
     	trigger = { FROM = { NOT = { character = ROOT } } has_character_flag = omen_opt2 }
-    	text = EVTDESC_wizard_1221_B
+    	text = EVTDESC_MNM_1221_B
     }
 	desc = {
     	trigger = { FROM = { character = ROOT } has_character_flag = omen_opt1 }
-    	text = EVTDESC_wizard_1221_C
+    	text = EVTDESC_MNM_1221_C
     }
     desc = {
     	trigger = { FROM = { character = ROOT } has_character_flag = omen_opt2 }
-    	text = EVTDESC_wizard_1221_D
+    	text = EVTDESC_MNM_1221_D
     }
 
     option = {      
-        name = EVTOPTA_wizard_1221
+        name = EVTOPTA_MNM_1221
 		tooltip = {
 			remove_character_modifier = bad_relationship_omen
 		}
@@ -5221,7 +5143,7 @@ character_event = { # Scrying vision result: FROM is sick
     	trigger = { has_character_flag = omen_opt1 }
     }
     option = {      
-        name = EVTOPTB_wizard_1221
+        name = EVTOPTB_MNM_1221
 		tooltip = {
 			remove_character_modifier = good_relationship_omen
 		}
@@ -5254,15 +5176,15 @@ character_event = { # Scrying vision result: you are healthy!
 
 	desc = {
     	trigger = { has_character_flag = omen_opt1 }
-    	text = EVTDESC_wizard_1222_A
+    	text = EVTDESC_MNM_1222_A
     }
     desc = {
     	trigger = { has_character_flag = omen_opt2 }
-    	text = EVTDESC_wizard_1222_B
+    	text = EVTDESC_MNM_1222_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1222
+        name = EVTOPTA_MNM_1222
 		tooltip = {
 			remove_character_modifier = good_power_omen
 		}
@@ -5271,7 +5193,7 @@ character_event = { # Scrying vision result: you are healthy!
     	trigger = { has_character_flag = omen_opt1 }
     }
     option = {      
-        name = EVTOPTB_wizard_1222
+        name = EVTOPTB_MNM_1222
 		tooltip = {
 			remove_character_modifier = bad_power_omen
 		}
@@ -5308,15 +5230,15 @@ character_event = { # Scrying vision result: FROM is healthy!
 
 	desc = {
     	trigger = { has_character_flag = omen_opt1 }
-    	text = EVTDESC_wizard_1223_A
+    	text = EVTDESC_MNM_1223_A
     }
     desc = {
     	trigger = { has_character_flag = omen_opt2 }
-    	text = EVTDESC_wizard_1223_B
+    	text = EVTDESC_MNM_1223_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1223
+        name = EVTOPTA_MNM_1223
 		tooltip = {
 			remove_character_modifier = good_relationship_omen
 		}
@@ -5325,7 +5247,7 @@ character_event = { # Scrying vision result: FROM is healthy!
     	trigger = { has_character_flag = omen_opt1 }
     }
     option = {      
-        name = EVTOPTB_wizard_1223
+        name = EVTOPTB_MNM_1223
 		tooltip = {
 			remove_character_modifier = bad_relationship_omen
 		}
@@ -5448,45 +5370,45 @@ character_event = { # FALLBACK (delayed event): Something good happens
 	desc = {
     	trigger = { has_character_flag = omen_opt_good_battle }
     	picture = GFX_evt_hunt
-    	text = EVTDESC_wizard_1225_A
+    	text = EVTDESC_MNM_1225_A
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_bad_battle }
     	picture = GFX_evt_hunt
-    	text = EVTDESC_wizard_1225_B
+    	text = EVTDESC_MNM_1225_B
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_good_relationship }
     	picture = GFX_evt_state_diplomacy
-    	text = EVTDESC_wizard_1225_C
+    	text = EVTDESC_MNM_1225_C
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_bad_relationship }
     	picture = GFX_evt_state_diplomacy
-    	text = EVTDESC_wizard_1225_D
+    	text = EVTDESC_MNM_1225_D
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_good_power }
 		picture = GFX_evt_prospering_province
-    	text = EVTDESC_wizard_1225_E
+    	text = EVTDESC_MNM_1225_E
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_bad_power }
     	picture = GFX_evt_prospering_province
-    	text = EVTDESC_wizard_1225_F
+    	text = EVTDESC_MNM_1225_F
     }
 
  	option = {
         name = {
-        	text = EVTOPTA_wizard_1225_battle
+        	text = EVTOPTA_MNM_1225_battle
         	trigger = { has_character_flag = omen_opt_good_battle }
         }
         name = {
-        	text = EVTOPTA_wizard_1225_relationship
+        	text = EVTOPTA_MNM_1225_relationship
         	trigger = { has_character_flag = omen_opt_good_relationship }
         }
         name = {
-        	text = EVTOPTA_wizard_1225_power
+        	text = EVTOPTA_MNM_1225_power
         	trigger = { has_character_flag = omen_opt_good_power }
         }
         if = { limit = { has_character_flag = omen_opt_good_battle }
@@ -5524,15 +5446,15 @@ character_event = { # FALLBACK (delayed event): Something good happens
     }
     option = {
         name = {
-        	text = EVTOPTB_wizard_1225_battle
+        	text = EVTOPTB_MNM_1225_battle
         	trigger = { has_character_flag = omen_opt_bad_battle }
         }
         name = {
-        	text = EVTOPTB_wizard_1225_relationship
+        	text = EVTOPTB_MNM_1225_relationship
         	trigger = { has_character_flag = omen_opt_bad_relationship }
         }
         name = {
-        	text = EVTOPTB_wizard_1225_power
+        	text = EVTOPTB_MNM_1225_power
         	trigger = { has_character_flag = omen_opt_bad_power }
         }
 		if = { limit = { has_character_flag = omen_opt_bad_battle }
@@ -5690,45 +5612,45 @@ character_event = { # FALLBACK (delayed event): Something bad happens
 	desc = {
     	trigger = { has_character_flag = omen_opt_bad_battle }
     	picture = GFX_evt_hunt
-    	text = EVTDESC_wizard_1226_A
+    	text = EVTDESC_MNM_1226_A
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_good_battle }
     	picture = GFX_evt_hunt
-    	text = EVTDESC_wizard_1226_B
+    	text = EVTDESC_MNM_1226_B
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_bad_relationship }
     	picture = GFX_evt_gathering_of_minds
-    	text = EVTDESC_wizard_1226_C
+    	text = EVTDESC_MNM_1226_C
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_good_relationship }
     	picture = GFX_evt_gathering_of_minds
-    	text = EVTDESC_wizard_1226_D
+    	text = EVTDESC_MNM_1226_D
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_bad_power }
    		picture = GFX_evt_prospering_province
-    	text = EVTDESC_wizard_1226_E
+    	text = EVTDESC_MNM_1226_E
     }
     desc = {
     	trigger = { has_character_flag = omen_opt_good_power }
    		picture = GFX_evt_prospering_province
-    	text = EVTDESC_wizard_1226_F
+    	text = EVTDESC_MNM_1226_F
     }
 
     option = {
 		name = {
-        	text = EVTOPTA_wizard_1226_battle
+        	text = EVTOPTA_MNM_1226_battle
         	trigger = { has_character_flag = omen_opt_bad_battle }
         }
         name = {
-        	text = EVTOPTA_wizard_1226_relationship
+        	text = EVTOPTA_MNM_1226_relationship
         	trigger = { has_character_flag = omen_opt_bad_relationship }
         }
         name = {
-        	text = EVTOPTA_wizard_1226_power
+        	text = EVTOPTA_MNM_1226_power
         	trigger = { has_character_flag = omen_opt_bad_power }
         }
 
@@ -5761,15 +5683,15 @@ character_event = { # FALLBACK (delayed event): Something bad happens
     }
  	option = {      
 		name = {
-        	text = EVTOPTB_wizard_1226_battle
+        	text = EVTOPTB_MNM_1226_battle
         	trigger = { has_character_flag = omen_opt_good_battle }
         }
         name = {
-        	text = EVTOPTB_wizard_1226_relationship
+        	text = EVTOPTB_MNM_1226_relationship
         	trigger = { has_character_flag = omen_opt_good_relationship }
         }
         name = {
-        	text = EVTOPTB_wizard_1226_power
+        	text = EVTOPTB_MNM_1226_power
         	trigger = { has_character_flag = omen_opt_good_power }
         }
 
@@ -5813,7 +5735,7 @@ character_event = { # FALLBACK (delayed event): Something bad happens
 
 character_event = { # Scrying result fallback: Nothing happened, after all this time
     id = wizard.1227
-    desc = EVTDESC_wizard_1227
+    desc = EVTDESC_MNM_1227
     picture = GFX_evt_secluded_in_prayer
     border = GFX_event_normal_frame_religion
     is_triggered_only = yes
@@ -5862,8 +5784,8 @@ character_event = { # Scrying result fallback: Nothing happened, after all this 
     }
 
     option = {
-        name = EVTOPTA_wizard_1227
-        custom_tooltip = { text = EVTOPTA_wizard_1227_TT }
+        name = EVTOPTA_MNM_1227
+        custom_tooltip = { text = EVTOPTA_MNM_1227_TT }
 
 		if = { limit = { has_character_flag = omen_opt_good_battle }
 			tooltip = {
@@ -5909,7 +5831,7 @@ character_event = { # Scrying result fallback: Nothing happened, after all this 
 ### POWER: Make Horoscope ####
 character_event = { # You prepare the horoscope (for horoscope_maker)
     id = wizard.1250
-    desc = EVTDESC_wizard_1250
+    desc = EVTDESC_MNM_1250
     picture = GFX_evt_secluded_in_prayer
     border = GFX_event_normal_frame_religion
     is_triggered_only = yes
@@ -5926,8 +5848,8 @@ character_event = { # You prepare the horoscope (for horoscope_maker)
     }
 
     option = { # "Come what may"
-        name = EVTOPTA_wizard_1250
-        custom_tooltip = { text = EVTOPTA_wizard_1250_TT }
+        name = EVTOPTA_MNM_1250
+        custom_tooltip = { text = EVTOPTA_MNM_1250_TT }
     }
 
     after = {
@@ -5977,36 +5899,36 @@ character_event = { #Child is destined for grandeur (for horoscope_maker)
 
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_steward } }
-    	text = EVTDESC_wizard_1251_steward
+    	text = EVTDESC_MNM_1251_steward
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_fighter } }
-    	text = EVTDESC_wizard_1251_fighter
+    	text = EVTDESC_MNM_1251_fighter
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_diplomat } }
-    	text = EVTDESC_wizard_1251_diplomat
+    	text = EVTDESC_MNM_1251_diplomat
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_schemer } }
-    	text = EVTDESC_wizard_1251_schemer
+    	text = EVTDESC_MNM_1251_schemer
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_scholar } }
-    	text = EVTDESC_wizard_1251_scholar
+    	text = EVTDESC_MNM_1251_scholar
     }
 
     option = { # This is exactly what I want for them
-        name = EVTOPTA_wizard_1251
-        custom_tooltip = { text = EVTOPTA_wizard_1251_TT }
+        name = EVTOPTA_MNM_1251
+        custom_tooltip = { text = EVTOPTA_MNM_1251_TT }
         event_target:horoscope_child = {
         	set_character_flag = encouraged_horoscope_pattern
         }
         hidden_effect = { event_target:horoscope_child = { change_variable = { which = horoscope_destiny_points value = 5 } } } # increase likelyhood of fulfilling horoscope...      
     }
     option = { # We need to discourage these tendencies
-        name = EVTOPTB_wizard_1251
-        custom_tooltip = { text = EVTOPTB_wizard_1251_TT }
+        name = EVTOPTB_MNM_1251
+        custom_tooltip = { text = EVTOPTB_MNM_1251_TT }
         event_target:horoscope_child = {
         	set_character_flag = discouraged_horoscope_pattern
         }
@@ -6045,40 +5967,40 @@ character_event = { # Child receives horoscope (for horoscope_child)
     		has_character_flag = encouraged_horoscope_pattern
     		NOT = { has_character_flag = horoscope_maker_died }
     	}
-    	text = EVTDESC_wizard_1252_A
+    	text = EVTDESC_MNM_1252_A
     }
     desc = {
     	trigger = {
     		has_character_flag = discouraged_horoscope_pattern
     		NOT = { has_character_flag = horoscope_maker_died }
     	}
-    	text = EVTDESC_wizard_1252_B
+    	text = EVTDESC_MNM_1252_B
     }
     desc = {
     	trigger = {
     		has_character_flag = encouraged_horoscope_pattern
     		has_character_flag = horoscope_maker_died
     	}
-    	text = EVTDESC_wizard_1252_C
+    	text = EVTDESC_MNM_1252_C
     }
     desc = {
     	trigger = {
     		has_character_flag = discouraged_horoscope_pattern
     		has_character_flag = horoscope_maker_died
     	}
-    	text = EVTDESC_wizard_1252_D
+    	text = EVTDESC_MNM_1252_D
     }
 
     option = { # chain continues (if horoscope_maker lives)
         name = {
-        	text = EVTOPTA_wizard_1252_1 # I wouldn't mind being great at something
+        	text = EVTOPTA_MNM_1252_1 # I wouldn't mind being great at something
         	trigger = { has_character_flag = encouraged_horoscope_pattern }
         }
         name = {
-        	text = EVTOPTA_wizard_1252_2 # I hope I didn't do anything wrong
+        	text = EVTOPTA_MNM_1252_2 # I hope I didn't do anything wrong
         	trigger = { has_character_flag = discouraged_horoscope_pattern }
         }
-        custom_tooltip = { text = EVTOPTA_wizard_1252_TT } #You try to put it out of your mind
+        custom_tooltip = { text = EVTOPTA_MNM_1252_TT } #You try to put it out of your mind
     	
         hidden_effect = { character_event = { id = wizard.1297 days = 10 } } #send gating event before next step...
 		set_horoscope_modifier_effect = yes
@@ -6087,14 +6009,14 @@ character_event = { # Child receives horoscope (for horoscope_child)
     }
     option = { # - END (if horoscope_maker is dead)
         name = {
-        	text = EVTOPTB_wizard_1252_1 #I wonder what they saw
+        	text = EVTOPTB_MNM_1252_1 #I wonder what they saw
         	trigger = { has_character_flag = encouraged_horoscope_pattern }
         }
         name = {
-        	text = EVTOPTB_wizard_1252_2 # that certainly takes the pressure off!
+        	text = EVTOPTB_MNM_1252_2 # that certainly takes the pressure off!
         	trigger = { has_character_flag = discouraged_horoscope_pattern }
         }
-        custom_tooltip = { text = EVTOPTA_wizard_1252_TT } #You try to put it out of your mind
+        custom_tooltip = { text = EVTOPTA_MNM_1252_TT } #You try to put it out of your mind
 		hidden_effect = { clean_up_horoscope_effect = yes }
     	trigger = { has_character_flag = horoscope_maker_died }
     }
@@ -6113,49 +6035,49 @@ character_event = { # You receive update (for horoscope_maker, kid has to be ove
 
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_steward } }
-    	text = EVTDESC_wizard_1253_steward
+    	text = EVTDESC_MNM_1253_steward
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_fighter } }
-    	text = EVTDESC_wizard_1253_fighter
+    	text = EVTDESC_MNM_1253_fighter
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_diplomat } }
-    	text = EVTDESC_wizard_1253_diplomat
+    	text = EVTDESC_MNM_1253_diplomat
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_schemer } }
-    	text = EVTDESC_wizard_1253_schemer
+    	text = EVTDESC_MNM_1253_schemer
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_scholar } }
-    	text = EVTDESC_wizard_1253_scholar
+    	text = EVTDESC_MNM_1253_scholar
     }
 
     option = {
-        name = EVTOPTA_wizard_1253 #This is great! Just as the stars predicted...
-        custom_tooltip = { text = EVTOPTA_wizard_1253_TT }
+        name = EVTOPTA_MNM_1253 #This is great! Just as the stars predicted...
+        custom_tooltip = { text = EVTOPTA_MNM_1253_TT }
         hidden_effect = { event_target:horoscope_child = { change_variable = { which = horoscope_destiny_points value = 3 } } } # increase likelyhood of fulfilling horoscope...
 
         trigger = { event_target:horoscope_child = { has_character_flag = encouraged_horoscope_pattern } }
     }
     option = {
-        name = EVTOPTB_wizard_1253 # This is not so great. This is not a path I want for them...
-        custom_tooltip = { text = EVTOPTB_wizard_1253_TT }
+        name = EVTOPTB_MNM_1253 # This is not so great. This is not a path I want for them...
+        custom_tooltip = { text = EVTOPTB_MNM_1253_TT }
         hidden_effect = { event_target:horoscope_child = { change_variable = { which = horoscope_destiny_points value = -7 } } } # decrease likelyhood of fulfilling horoscope...
 
         trigger = { event_target:horoscope_child = { has_character_flag = encouraged_horoscope_pattern } }
     }
     option = {
-        name = EVTOPTC_wizard_1253 #This is not so terrible, I guess. In spite of my doubts...
-        custom_tooltip = { text = EVTOPTC_wizard_1253_TT }
+        name = EVTOPTC_MNM_1253 #This is not so terrible, I guess. In spite of my doubts...
+        custom_tooltip = { text = EVTOPTC_MNM_1253_TT }
         hidden_effect = { event_target:horoscope_child = { change_variable = { which = horoscope_destiny_points value = 3 } } } # increase likelyhood of fulfilling horoscope...
 
         trigger = { event_target:horoscope_child = { has_character_flag = discouraged_horoscope_pattern } }
     }
     option = {
-        name = EVTOPTD_wizard_1253 #This is terrible! Still not at ALL what I want for them...!
-        custom_tooltip = { text = EVTOPTD_wizard_1253_TT }
+        name = EVTOPTD_MNM_1253 #This is terrible! Still not at ALL what I want for them...!
+        custom_tooltip = { text = EVTOPTD_MNM_1253_TT }
         hidden_effect = { event_target:horoscope_child = { change_variable = { which = horoscope_destiny_points value = -7 } } } # decrease likelyhood of fulfilling horoscope...
 
         trigger = { event_target:horoscope_child = { has_character_flag = discouraged_horoscope_pattern } }
@@ -6585,27 +6507,27 @@ character_event = { # Child contemplates their destiny - is this what they want?
 
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_steward } }
-    	text = EVTDESC_wizard_1254_steward
+    	text = EVTDESC_MNM_1254_steward
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_fighter } }
-    	text = EVTDESC_wizard_1254_fighter
+    	text = EVTDESC_MNM_1254_fighter
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_diplomat } }
-    	text = EVTDESC_wizard_1254_diplomat
+    	text = EVTDESC_MNM_1254_diplomat
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_schemer } }
-    	text = EVTDESC_wizard_1254_schemer
+    	text = EVTDESC_MNM_1254_schemer
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = destined_scholar } }
-    	text = EVTDESC_wizard_1254_scholar
+    	text = EVTDESC_MNM_1254_scholar
     }
 
     option = {
-        name = EVTOPTA_wizard_1254 # I feel like this is what I am MEANT to be doing. Just as [parent's] horoscope predicted...
+        name = EVTOPTA_MNM_1254 # I feel like this is what I am MEANT to be doing. Just as [parent's] horoscope predicted...
         hidden_effect = { change_variable = { which = horoscope_destiny_points value = 5 } }
         set_character_flag = embraced_destiny
 
@@ -6677,7 +6599,7 @@ character_event = { # Child contemplates their destiny - is this what they want?
 		}
     }
     option = {
-        name = EVTOPTB_wizard_1254  # I don't think this is my path...
+        name = EVTOPTB_MNM_1254  # I don't think this is my path...
 
 		ai_chance = { # AI shouldn't pick this...
         	factor = 30
@@ -6716,25 +6638,25 @@ character_event = { # Parent receives update about how the child is taking to th
     }
 
     desc = {
-    	text = EVTDESC_wizard_1255_A
+    	text = EVTDESC_MNM_1255_A
     	trigger = { event_target:horoscope_child = { has_character_flag = encouraged_horoscope_pattern has_character_flag = embraced_destiny } }
     }
 	desc = {
-    	text = EVTDESC_wizard_1255_B
+    	text = EVTDESC_MNM_1255_B
     	trigger = { event_target:horoscope_child = { has_character_flag = discouraged_horoscope_pattern has_character_flag = embraced_destiny } }
     }
     desc = {
-    	text = EVTDESC_wizard_1255_C
+    	text = EVTDESC_MNM_1255_C
     	trigger = { event_target:horoscope_child = { has_character_flag = encouraged_horoscope_pattern has_character_flag = refused_destiny } }
     }
 	desc = {
-    	text = EVTDESC_wizard_1255_D
+    	text = EVTDESC_MNM_1255_D
     	trigger = { event_target:horoscope_child = { has_character_flag = discouraged_horoscope_pattern has_character_flag = refused_destiny } }
     }
 
     option = {
-        name = EVTOPTA_wizard_1255 # Good! I believe the heavens have a plan for [horoscope_child.GetTitledFirstName]
-        custom_tooltip = { text = EVTOPTA_wizard_1255_TT }
+        name = EVTOPTA_MNM_1255 # Good! I believe the heavens have a plan for [horoscope_child.GetTitledFirstName]
+        custom_tooltip = { text = EVTOPTA_MNM_1255_TT }
         hidden_effect = {
             event_target:horoscope_child = {
             	change_variable = { which = horoscope_destiny_points value = 2 }
@@ -6743,8 +6665,8 @@ character_event = { # Parent receives update about how the child is taking to th
     	}
     }
     option = {      
-        name = EVTOPTB_wizard_1255 # Actually, I think the stars have something else in store for my [horoscope_child.GetDaugtherSon].
-        custom_tooltip = { text = EVTOPTB_wizard_1255_TT }
+        name = EVTOPTB_MNM_1255 # Actually, I think the stars have something else in store for my [horoscope_child.GetDaugtherSon].
+        custom_tooltip = { text = EVTOPTB_MNM_1255_TT }
         hidden_effect = {
         	event_target:horoscope_child = {
         		change_variable = { which = horoscope_destiny_points value = -2 }
@@ -6777,23 +6699,23 @@ character_event = { # Destiny fulfilled (for horoscope_child)
 
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = encouraged_horoscope_pattern has_character_flag = embraced_destiny } }
-    	text = EVTDESC_wizard_1270_A
+    	text = EVTDESC_MNM_1270_A
     }
 	desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = discouraged_horoscope_pattern has_character_flag = embraced_destiny } }
-    	text = EVTDESC_wizard_1270_B
+    	text = EVTDESC_MNM_1270_B
     }
     desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = encouraged_horoscope_pattern has_character_flag = refused_destiny } }
-    	text = EVTDESC_wizard_1270_C
+    	text = EVTDESC_MNM_1270_C
     }
 	desc = {
     	trigger = { event_target:horoscope_child = { has_character_flag = discouraged_horoscope_pattern has_character_flag = refused_destiny } }
-    	text = EVTDESC_wizard_1270_D
+    	text = EVTDESC_MNM_1270_D
     }
 
     option = {      
-        name = EVTOPTA_wizard_1270 # Destiny fulfilled
+        name = EVTOPTA_MNM_1270 # Destiny fulfilled
 
 		trigger_switch = {
 			on_trigger = has_character_flag
@@ -6851,7 +6773,7 @@ character_event = { # Destiny fulfilled (for horoscope_child)
 		trigger = { has_top_tier_education_trait_trigger = no }
     }
     option = {
-        name = EVTOPTB_wizard_1270 # Destiny fulfilled (already maxed "correct" education)
+        name = EVTOPTB_MNM_1270 # Destiny fulfilled (already maxed "correct" education)
 		trigger_switch = {
 			on_trigger = has_character_flag
 			destined_steward = {
@@ -6952,15 +6874,15 @@ character_event = { #Destiny avoided/backfired (for horoscope_child)
 
     desc = {
     	trigger = { has_character_flag = horoscope_maker_died }
-    	text = EVTDESC_wizard_1271_A
+    	text = EVTDESC_MNM_1271_A
     }
     desc = {
     	trigger = { NOT = { has_character_flag = horoscope_maker_died } }
-    	text = EVTDESC_wizard_1271_B
+    	text = EVTDESC_MNM_1271_B
     }
 
     option = {      
-        name = EVTOPTA_wizard_1271 # I always had mixed feelings about this
+        name = EVTOPTA_MNM_1271 # I always had mixed feelings about this
         set_horoscope_modifier_effect = yes
 
     }
