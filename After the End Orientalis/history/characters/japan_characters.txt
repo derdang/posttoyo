@@ -3344,6 +3344,20 @@
 	2573.8.24={
 		name="Banwa"
 	}
+	2603.1.1={
+		add_spouse = 1603030
+	}
+}
+88151={ #Crown Prince
+	name="Hirihito"
+	dynasty=888 #Yamato
+	father=88150
+	mother=1603030
+	religion=shinto
+	culture=kouzoku
+	2604.1.1={
+		birth=yes
+	}
 }
 
 1600000={ #Duke of Ryukyu
@@ -4743,7 +4757,7 @@
 	trait=honest
 	2560.1.1={birth=yes}
 }
-1603016={ #King of Kanto
+1603016={ #King of Kanto (Imperial Regent of the Emperor of Japan)
 	name="Satoru"
 	dynasty=1603015 #Fukuzawa
 	culture=togoku
@@ -4759,6 +4773,7 @@
 	trait=just
 	trait=ambitious
 	2561.1.1={birth=yes}
+	2582.1.1={add_spouse=1603033}
 }
 1603017={ #Niigata
 	name="Eichi"
@@ -4942,7 +4957,81 @@
 	2580.1.1={birth=yes}
 	2590.1.1={culture=ezo}
 }
-
+1603030={ #Daughter of the King of Kanto and Empress of Japan
+	name="Megumi"
+	dynasty=1603015 #Fukuzawa
+	female=yes
+	culture=togoku
+	religion=shinto
+	martial=9
+	diplomacy=6
+	stewardship=3
+	intrigue=2
+	learning=4
+	trait=charismatic_negotiator
+	trait=groomed
+	trait=kind
+	trait=proud
+	trait=ambitious
+	father=1603016
+	2582.3.12={birth=yes}
+}
+1603031={ #Son of the King of Kanto
+	name="Ranpo"
+	dynasty=1603015 #Fukuzawa
+	culture=togoku
+	religion=shinto
+	martial=9
+	diplomacy=6
+	stewardship=3
+	intrigue=2
+	learning=4
+	trait=tough_soldier
+	trait=one_eyed
+	trait=strong
+	trait=sturdy
+	trait=duelist
+	trait=twin
+	father=1603016
+	2583.5.15={birth=yes}
+}
+1603032={ #Son of the King of Kanto
+	name="Yoshiharu"
+	dynasty=1603015 #Fukuzawa
+	culture=togoku
+	religion=shinto
+	martial=9
+	diplomacy=6
+	stewardship=3
+	intrigue=2
+	learning=4
+	trait=thrifty_clerk
+	trait=groomed
+	trait=quick
+	trait=proud
+	trait=architect
+	trait=twin
+	father=1603016
+	2583.5.15={birth=yes}
+}
+1603033={ #Wife of the King of Kanto
+	name="Toki"
+	dynasty=1603368 #Okudaira
+	female=yes
+	culture=togoku
+	religion=shinto
+	martial=9
+	diplomacy=6
+	stewardship=3
+	intrigue=2
+	learning=4
+	trait=skilled_tactician
+	trait=strong
+	trait=scholar
+	trait=duelist
+	trait=strong
+	2561.1.1={birth=yes}
+}
 ###KANSAI###
 
 1604004={ #Hikone

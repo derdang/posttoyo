@@ -416,7 +416,12 @@ bureaucratic_county_conquest = { #Adapted from Unjust County Conquest (Used in t
 
 	can_use_gui = {
 		check_if_crusader_trigger = yes
-		culture_group = han
+		government = sinic_bureaucracy_government
+		NOR = {
+			culture_group = viet
+			culture_group = korean
+			culture = manchu
+		}
 
 		# Attacker
 		ROOT = {
@@ -1023,6 +1028,7 @@ bureaucratic_ducal_conquest = { #Adapted from Dharmic Wars in India (Used in thi
 	sort_priority = 800
 	
 	can_use_gui = {
+		government = sinic_bureaucracy_government
 		NOR = {
 			culture_group = viet
 			culture_group = korean
@@ -1524,6 +1530,7 @@ bureaucratic_consolidation = { #Adapted from Great Realm Conquest (Used in this 
 
 	can_use_gui = {
 		check_if_crusader_trigger = yes
+		government = sinic_bureaucracy_government
 		NOR = {
 			culture_group = viet
 			culture_group = korean
