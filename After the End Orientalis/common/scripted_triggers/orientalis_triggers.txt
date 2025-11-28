@@ -24,6 +24,24 @@ religion_openly_nousthreskeia_trigger = {
 		}
 	}
 }
+can_search_god_trigger = {
+	is_adult = yes
+	is_landed = yes
+	OR = {
+		religion = gelugpa
+		religion = elijahite
+		religion = eastern_lightning
+		religion = muite
+	}
+	NOR = {
+		has_alternate_start_parameter = { key = religion_names value = random }
+		is_title_active = k_gelugpa
+		is_title_active = d_elijahite
+		is_title_active = k_eastern_lightning
+		is_title_active = d_muite
+		has_character_flag = searched_for_god
+	}
+}
 has_coronation_trigger = {
 	OR = {
 		religion = catholic
