@@ -805,6 +805,22 @@ spriteTypes = {
 	
 ### Orientalis Traits
 
+
+#Stone Immortal
+	spriteType = {
+		name = "GFX_trait_stone_immortal"
+		texturefile = "gfx/traits/stone_immortal.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_stone_immortal_descendant"
+		texturefile = "gfx/traits/stone_immortal_descendant.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 #Tiandao Position
 	spriteType = {
 		name = "GFX_trait_tiandao_tiandi"
@@ -1320,6 +1336,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_cd_pilgrimage"
 		texturefile = "gfx\\interface\\decision_icon_catholic_pilgrimage.dds"
+	}
+	spriteType = {
+		name = "GFX_become_stone_immortal"
+		texturefile = "gfx\\interface\\become_stone_immortal.dds"
 	}
 	spriteType = {
 		name = "GFX_become_pirate"
