@@ -431,7 +431,7 @@ letter_event = {
 
 ###JOINING & RECRUITMENT EVENTS###
 
-#Does recruit approve of Americanism?
+#Does recruit approve of Jibenyuanze?
 character_event = {
 	id = MNM.6020
 	picture = GFX_evt_feast
@@ -475,7 +475,7 @@ character_event = {
 			years = 5
 		}
 
-		set_character_flag = approves_of_jibenyuanze
+		set_character_flag = approves_of_shia
 
 		hidden_effect = { event_target:assassins_recruiter = { character_event = { id = MNM.6021 days = 3 } } }
 
@@ -536,7 +536,7 @@ character_event = {
 			years = 5
 		}
 
-		set_character_flag = disapproves_of_jibenyuanze
+		set_character_flag = disapproves_of_shia
 
 		hidden_effect = { event_target:assassins_recruiter = { character_event = { id = MNM.6021 days = 3 } } }
 
@@ -563,18 +563,18 @@ character_event = {
 
 	desc = {
 		trigger = {
-			FROM = { has_character_flag = approves_of_jibenyuanze }
+			FROM = { has_character_flag = approves_of_shia }
 			NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
 		}
 		text = EVTDESC_MNM_6021_A
 	}
 	desc = {
-		trigger = { FROM = { has_character_flag = disapproves_of_jibenyuanze } }
+		trigger = { FROM = { has_character_flag = disapproves_of_shia } }
 		text = EVTDESC_MNM_6021_B
 	}
 	desc = {
 		trigger = {
-			FROM = { has_character_flag = disapproves_of_jibenyuanze }
+			FROM = { has_character_flag = disapproves_of_shia }
 			has_alternate_start_parameter = { key = religion_names value = random }
 		}
 		text = EVTDESC_MNM_6021_c
@@ -584,14 +584,14 @@ character_event = {
 
 	#Go ahead
 	option = {
-		trigger = { FROM = { has_character_flag = approves_of_jibenyuanze } }
+		trigger = { FROM = { has_character_flag = approves_of_shia } }
 		name = EVTOPTA_6021
 		custom_tooltip = { text = EVTOPTA_6021_TOOLTIP }
 
 		hidden_effect = {
 			FROM = {
 				character_event = { id = MNM.6022 days = 14 }
-				clr_character_flag = approves_of_jibenyuanze
+				clr_character_flag = approves_of_shia
 			}
 		}
 		ai_chance = { factor = 100 }
@@ -599,20 +599,20 @@ character_event = {
 
 	#Too risky, end
 	option = {
-		trigger = { FROM = { has_character_flag = approves_of_jibenyuanze } }
+		trigger = { FROM = { has_character_flag = approves_of_shia } }
 		name = EVTOPTB_6021
 		custom_tooltip = { text = EVTOPTB_6021_TOOLTIP }
-		hidden_effect = { FROM = { clr_character_flag = approves_of_jibenyuanze } }
+		hidden_effect = { FROM = { clr_character_flag = approves_of_shia } }
 		hidden_effect = { FROM = { clr_character_flag = ongoing_recruitment } }
 		ai_chance = { factor = 0 }
 	}
 
 	#Dislikes Jibenyuanze, end
 	option = {
-		trigger = { FROM = { has_character_flag = disapproves_of_jibenyuanze } }
+		trigger = { FROM = { has_character_flag = disapproves_of_shia } }
 		name = EVTOPTC_6021
 		custom_tooltip = { text = EVTOPTB_6021_TOOLTIP }
-		hidden_effect = { FROM = { clr_character_flag = disapproves_of_jibenyuanze } }
+		hidden_effect = { FROM = { clr_character_flag = disapproves_of_shia } }
 		hidden_effect = { FROM = { clr_character_flag = ongoing_recruitment } }
 	}
 }
