@@ -3377,6 +3377,7 @@ the_assassins = {
 
 	can_join_society = {
 		NOT = { trait = legendary }
+		year >= 2689
 		hidden_trigger = {
 			NAND = {
 				ai = yes
@@ -3414,7 +3415,9 @@ the_assassins = {
 	}
 
 	show_society = {
+		year >= 2689
 		OR = {
+			secret_religion = jibenyuanze
 			AND = {
 				ai = no
 				NOT = { trait = zealous }
