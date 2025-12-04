@@ -2350,11 +2350,9 @@ religion_doctrine = {
 			custom_tooltip = { text = tooltip_religion_feature_branches }
 			custom_tooltip = { text = tooltip_religion_feature_dynamic }
 			custom_tooltip = { text = tooltip_religion_feature_no_leader }
-			custom_tooltip = { text = tooltip_religion_feature_no_crusade }
 			hidden_tooltip = { 
 				set_no_head_of_religion = yes
 				set_religion_head = none
-				set_can_call_crusade = no
 				set_religious_branch = pagan_reformation
 			}
 			custom_tooltip = { text = tooltip_religion_feature_meritocratic }
