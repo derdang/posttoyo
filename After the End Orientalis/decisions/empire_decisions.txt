@@ -327,6 +327,9 @@ decisions = {
 			e_indonesia = {
 				has_holder = no
 			}
+			NOT = {
+				has_landed_title = e_malaysia	
+			}
 		}
 		allow = {
 			is_adult = yes
@@ -336,6 +339,9 @@ decisions = {
 			realm_size = 150
 			scaled_wealth = 4
 			war = no
+			NOT = {
+				has_landed_title = e_malaysia	
+			}
 			any_demesne_title = {
 				tier = EMPEROR
 			}
