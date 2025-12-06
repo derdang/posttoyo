@@ -1888,6 +1888,119 @@
 	}
     2008.7.8={death=yes}
 }
+2655015 ={ # Kong Lineage
+	name="Ho"
+    dynasty=9025551 #Kong
+    culture=jilu
+    religion=ruist
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=fortune_builder
+    trait=quick
+    trait=administrator
+    trait=ambitious
+    trait=proud
+    trait=diligent
+    father=2655002
+    2582.1.1={birth=yes}
+	2600.1.1={
+		effect = {
+			add_claim=d_ruist_yansheng
+		}
+		employer=2610001
+	}
+    2642.1.1={death=yes}
+}
+2655016 ={ # Kong Lineage
+	name="Chen"
+    dynasty=9025551 #Kong
+    culture=jilu
+    religion=ruist
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=6
+    learning=5
+    trait=skilled_tactician        
+    trait=strong
+    trait=duelist
+    trait=ambitious
+    trait=wroth
+    trait=envious
+    father=2655002
+    2583.1.1={birth=yes}
+	2600.1.1={
+		effect = {
+			add_claim=d_ruist_yansheng
+		}
+		employer=2655001
+	}
+    2640.1.1={death=yes}
+}
+2655017 ={ # Kong Lineage
+	name="Huirong"
+    dynasty=9025551 #Kong
+    female=yes
+    culture=singaporean
+    religion=jinbenwei
+    martial=4
+    diplomacy=7
+    stewardship=3
+    intrigue=6
+    learning=5
+    trait=charismatic_negotiator
+    trait=fair
+    trait=groomed
+    trait=hedonist
+    trait=lustful
+    trait=honest
+    trait=kind
+    trait=gregarious
+    trait=patient
+    father=2655002
+    2585.1.1={birth=yes}
+	2600.1.1={
+		effect = {
+			add_weak_claim=d_ruist_yansheng
+			add_lover=1958000
+		}
+		employer=1958000
+	}
+    2625.1.1={death=yes}
+}
+2655018 ={ # Kong Lineage
+	name="Xiaomao"
+    dynasty=9025551 #Kong
+    culture=jilu
+    religion=ruist
+    female=yes
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=6
+    learning=5
+    trait=intricate_webweaver
+    trait=freckles
+    trait=quick
+    trait=feeble
+    trait=shrewd
+    trait=diligent
+    trait=humble
+    trait=cynical
+    father=2655002
+	give_nickname=nick_the_apothecary
+    2589.1.1={birth=yes}
+	2600.1.1={
+		effect = {
+			add_weak_claim=d_ruist_yansheng
+		}
+		employer=1958000
+	}
+    2610.1.1={death=yes}
+}
 
 # Shu
 2661001 ={ #Head of the Kingdom of Light

@@ -667,6 +667,32 @@
     2549.1.1={birth=yes}
     2700.1.1={death=yes}
 }
+1917040 ={ #Father of the EL HOF
+	name="Nicolae"
+    dynasty=1917168 # Carpathia
+    culture=primorskiy
+    religion=eastern_lightning
+    martial=6
+    diplomacy=6
+    stewardship=6
+    intrigue=6
+    learning=6
+    trait=grey_eminence
+    trait=genius
+    trait=fair
+    trait=lefthanded
+    trait=socializer
+    trait=possessed
+    trait=shrewd
+    trait=ambitious
+    trait=proud
+    trait=cynical
+    trait=diligent
+    trait=groomed
+    trait=gregarious
+    2560.1.1={birth=yes}
+    2640.1.1={death=yes}
+}
 1918000={
 	name="Ivan"
     dynasty=1918137 # Kappel
@@ -1008,7 +1034,9 @@
     2570.1.1={birth=yes}
 	2590.1.1={effect={add_friend=1919011}}
 	2599.1.1={
-		add_claim=k_amur
+		effect = {
+			add_claim=k_amur
+		}
 	}
     2700.1.1={death=yes}
 }
@@ -1030,7 +1058,9 @@
 	father=1919010
     2566.1.1={birth=yes}
 	2599.1.1={
-		add_claim=k_amur
+		effect = {
+			add_claim=k_amur
+		}
 	}
 	2599.6.10={effect={add_lover = 1919016}}
 	2600.1.1={add_spouse=1919016}
