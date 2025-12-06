@@ -361,6 +361,17 @@ k_yakutia_confederation = {
 	can_be_claimed = yes
 	can_be_usurped = yes
 }
+k_ryukyu = {
+	color = { 198 142 179 }
+	color2={ 255 255 255 }
+	
+	allow = {
+		always = no # Only created through special decisions
+	}
+	
+	capital = 133 #Amami
+	culture = ryukyuan
+}
 ###################################################################
 #Petty Thai Kingdoms
 	k_udonratchathani = {

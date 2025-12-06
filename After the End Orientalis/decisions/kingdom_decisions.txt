@@ -131,6 +131,59 @@ decisions = {
 			factor = 1
 		}
 	}
+	form_ryukyu = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = dynamic_realms
+					value = off
+				}
+			}
+			NOT = { has_global_flag = ryukyu_formed }
+			independent = yes
+			culture = ryukyuan
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 400
+			scaled_wealth = 2.5
+			war = no
+			num_of_duke_titles >= 2
+			primary_title = { lower_tier_than = KING }
+			completely_controls = d_ryukyu
+		}
+		effect = {
+			activate_title = { title = k_ryukyu status = yes }
+			primary_title = {
+				k_ryukyu = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
+			}
+			scaled_wealth = -2.5
+			if = {
+				limit = { has_nickname = no }
+				give_nickname = nick_the_great
+			}
+			d_ryukyu = {
+				de_jure_liege = k_ryukyu
+			}
+			k_ryukyu = {
+				de_jure_liege = e_japan
+			}
+			set_global_flag = ryukyu_formed
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	form_hmong = {
 		is_high_prio = yes
 		potential = {
