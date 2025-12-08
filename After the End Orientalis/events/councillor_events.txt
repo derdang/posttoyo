@@ -366,7 +366,7 @@ character_event = {
 				hidden_tooltip = {
 					if = {
 						limit = {
-							has_dharmic_religion_trigger = yes
+							religion_group = indian_group
 						}
 						add_trait = kshatriya
 						character_event = { id = RoI.30121 }

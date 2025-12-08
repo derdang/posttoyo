@@ -94,23 +94,23 @@ character_event = {
 				}
 				if = {
 					random_list = {
-						10 = { #Anxi
-							1408 = { save_event_target_as = chinese_invasion_spawn_point_province }
+						10 = { #Tiwi
+							1081 = { save_event_target_as = chinese_invasion_spawn_point_province }
 						}
-						10 = { #Dunhuang
-							1448 = { save_event_target_as = chinese_invasion_spawn_point_province }
+						10 = { #Torres
+							2296 = { save_event_target_as = chinese_invasion_spawn_point_province }
 						}
-						10 = { #Jiuquan
-							1513 = { save_event_target_as = chinese_invasion_spawn_point_province } 
+						10 = { #Weipa Township
+							1083 = { save_event_target_as = chinese_invasion_spawn_point_province } 
 						}
-						10 = { #Yizhou
-							1450 = { save_event_target_as = chinese_invasion_spawn_point_province } 
+						10 = { #Cobourg
+							1082 = { save_event_target_as = chinese_invasion_spawn_point_province } 
 						}
-						10 = { #Gaochang
-							1446 = { save_event_target_as = chinese_invasion_spawn_point_province } 
+						10 = { #Port Moresby
+							672 = { save_event_target_as = chinese_invasion_spawn_point_province } 
 						}
-						10 = { #Luntai
-							1449 = { save_event_target_as = chinese_invasion_spawn_point_province } 
+						10 = { #Gloucester
+							689 = { save_event_target_as = chinese_invasion_spawn_point_province } 
 						}
 					}
 				}
@@ -702,10 +702,10 @@ character_event = {
 					}
     				
     				OR = {
-    					#Can grab Jiuquan (dunuhang, etc)
+    					#Can grab Cape York
     					AND = {
-	    					NOT = { completely_controls = d_jiuquan }
-	    					d_jiuquan = {
+	    					NOT = { completely_controls = d_cape_york }
+	    					d_cape_york = {
 	    						any_direct_de_jure_vassal_title = {
 		    						holder_scope = {
 										top_liege = {
@@ -803,10 +803,10 @@ character_event = {
 				}
 
 				random_list = {
-					100 = { # Go for Jiuquan (Grab Dunhuang, Anxi, etc - regardless of expansionist or not, on map or not) 
+					100 = { # Go for Cape York (Grab Torres, Anxi, etc - regardless of expansionist or not, on map or not) 
 						trigger = {
-							NOT = { completely_controls = d_jiuquan }
-	    					d_jiuquan = {
+							NOT = { completely_controls = d_cape_york }
+	    					d_cape_york = {
 	    						any_direct_de_jure_vassal_title = {
 		    						holder_scope = {
 										top_liege = {
@@ -817,8 +817,8 @@ character_event = {
 	    					}
 						}
 
-						#The WP will try to grab whatever they can within Jiuquan...
-						d_jiuquan = {
+						#The WP will try to grab whatever they can within Cape York...
+						d_cape_york = {
 							#add_claim = ROOT #No claim on the duchy title, as then they can grab more land than intended - they can usurp it afterwards instead					
 							any_direct_de_jure_vassal_title = {
 								add_claim = ROOT
@@ -838,7 +838,7 @@ character_event = {
 								}
 							}
 						}	    				
-						set_offmap_tmp_flag = should_claim_all_titles_war # Makes sure they will go after Jiuquan counties...
+						set_offmap_tmp_flag = should_claim_all_titles_war # Makes sure they will go after Cape York counties...
 						#change_variable = { which = global_major_invasions_launched value = 1 } # For logging purposes
 					}
 
@@ -1296,15 +1296,15 @@ character_event = {
 			}
 
 		}
-		if = { #If NOT on map, find random good place to spawn the Chinese Troops (in this example, Anxi or Dunhuang)
+		if = { #If NOT on map, find random good place to spawn the Chinese Troops (in this example, Anxi or Torres)
 			limit = { has_offmap_tmp_flag = WP_is_not_on_map }
 
 			random_list = {
 				10 = { #Anxi
-					1408 = { save_event_target_as = chinese_invasion_spawn_point_province }
+					1081 = { save_event_target_as = chinese_invasion_spawn_point_province }
 				}
-				10 = { #Dunhuang
-					1448 = { save_event_target_as = chinese_invasion_spawn_point_province }
+				10 = { #Torres
+					2296 = { save_event_target_as = chinese_invasion_spawn_point_province }
 				}
 			}
 		}
@@ -1509,22 +1509,22 @@ character_event = {
 
 			random_list = {
 				10 = { #Anxi
-					1408 = { save_event_target_as = chinese_invasion_spawn_point_province }
+					1081 = { save_event_target_as = chinese_invasion_spawn_point_province }
 				}
-				10 = { #Dunhuang
-					1448 = { save_event_target_as = chinese_invasion_spawn_point_province }
+				10 = { #Torres
+					2296 = { save_event_target_as = chinese_invasion_spawn_point_province }
 				}
-				10 = { #Jiuquan
-					1513 = { save_event_target_as = chinese_invasion_spawn_point_province } 
+				10 = { #Cape York
+					1083 = { save_event_target_as = chinese_invasion_spawn_point_province } 
 				}
 				10 = { #Yizhou
-					1450 = { save_event_target_as = chinese_invasion_spawn_point_province } 
+					1082 = { save_event_target_as = chinese_invasion_spawn_point_province } 
 				}
-				10 = { #Gaochang
-					1446 = { save_event_target_as = chinese_invasion_spawn_point_province } 
+				10 = { #Port Moresby
+					672 = { save_event_target_as = chinese_invasion_spawn_point_province } 
 				}
-				10 = { #Luntai
-					1449 = { save_event_target_as = chinese_invasion_spawn_point_province } 
+				10 = { #Gloucester
+					689 = { save_event_target_as = chinese_invasion_spawn_point_province } 
 				}
 			}
 		}
@@ -2253,7 +2253,7 @@ character_event = {
 
 		if = {
 			limit = { has_character_flag = is_displaced_prince }
-			1513 = { #Jiuquan
+			1083 = { #Cape York
 				save_event_target_as = target_province
 			}
 		}
@@ -3303,7 +3303,7 @@ character_event = {
 				china_spawn_commander_effect = yes
 			}
 			
-			1448 = { # Dunhuang
+			2296 = { # Torres
 				save_event_target_as = spawn_province
 			}
 			
