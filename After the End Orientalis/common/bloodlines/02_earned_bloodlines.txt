@@ -351,10 +351,7 @@ northern_crusade_bloodline = {
 	allow_bastards = yes
 	picture = GFX_bloodlines_symbol_teutonic
 	active = {
-		OR = {
-			religion_group = christian
-			religion_group = syncratic_group
-		}
+		religion_group = christian
 		is_heretic = no
 	}
 	flags = { northern_crusade_bloodline created_bloodline crusader_bloodline }
@@ -498,10 +495,7 @@ pure_war_bloodline_02 = {
 	}
 	bloodline_effect_knights = 1
 	active = {
-		OR = {
-			religion_group = christian
-			religion_group = syncratic_group
-		}
+		religion_group = christian
 	}
 	flags = { created_bloodline bloodline_knights }
 }

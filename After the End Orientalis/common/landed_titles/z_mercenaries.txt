@@ -328,8 +328,10 @@ d_asa_cham = {
 	culture = cham
 	
 	allow = {
-		culture_group = southwest_tai
-		culture_group = chamic
+		OR = {
+			culture_group = southwest_tai
+			culture_group = chamic
+		}
 	}
 		
 	title = "CAPTAIN"

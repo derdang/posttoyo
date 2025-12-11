@@ -396,8 +396,10 @@ RETTYPE_CUL_IBER =
 	
 	potential = {
 		is_nomadic = no
-		culture_group = iberian
-		culture_group = philippine
+		OR = {
+			culture_group = iberian
+			culture_group = philippine
+		}
 	}
 	
 	modifier = {
