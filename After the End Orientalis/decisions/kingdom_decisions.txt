@@ -131,6 +131,41 @@ decisions = {
 			factor = 1
 		}
 	}
+	abolish_andong = {
+		is_high_prio = yes
+		potential = {
+			is_alternate_start = no
+			NOT = {
+				has_game_rule = {
+					name = dynamic_realms
+					value = off
+				}
+			}
+			NOT = { has_global_flag = andong_abolish }
+			independent = yes
+			has_landed_title = e_hong
+		}
+		allow = {
+			is_adult = yes
+			prisoner = no
+			NOT = { is_incapable = yes }
+			prestige = 400
+			scaled_wealth = 3.5
+			war = no
+		}
+		effect = {
+			destroy_landed_title = k_andong_protectorate
+			activate_title = { title = k_andong_protectorate status = no }
+			scaled_wealth = -3.5
+			set_global_flag = andong_abolish
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	form_ryukyu = {
 		is_high_prio = yes
 		potential = {

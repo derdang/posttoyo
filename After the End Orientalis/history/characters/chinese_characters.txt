@@ -5914,3 +5914,96 @@
     2582.1.1={birth=yes}
     2700.1.1={death=yes}
 }
+1090025 = { #Scholar in the court of Liu Zhugong, Mayor of Shanghai
+	name="Anping"
+    dynasty=9020285 # Chu
+    culture=shanghainese
+    religion=jinbenwei
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=8
+    trait=scholarly_theologian
+    trait=scholar
+    trait=poet
+    trait=diligent
+    trait=honest
+    trait=proud
+    trait=stubborn
+    trait=just
+    2565.1.1={birth=yes}
+	2599.1.1={
+		employer=2621001
+	}
+    2610.1.1={death=yes}
+}
+1090026 = { #Scholar in the court of Yulbars Khoja, King of Tarim
+	name="Jiamu"
+    dynasty=9020286 # Peng 
+    culture=shanghainese
+    religion=shengming
+    martial=2
+    diplomacy=5
+    stewardship=5
+    intrigue=2
+    learning=6
+    trait=martial_cleric
+    trait=physician
+    trait=adventurer
+    trait=erudite
+    trait=diligent
+    trait=proud
+    trait=charitable
+    2555.1.1={birth=yes}
+	2599.1.1={
+		employer=2080003
+	}
+    2615.1.1={death=yes}
+}
+1090027 = { #Scholar in the court of Bai Bukang in Kunming
+	name="Songshan"
+    dynasty=9910279 # Hu
+    culture=huizu
+    religion=hui
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=3
+    learning=8
+    trait=mastermind_theologian
+    trait=faqih
+    trait=hajjaj
+    trait=devout
+    trait=diligent
+    trait=wroth
+    trait=just
+    2545.1.1={birth=yes}
+	2599.1.1={
+		employer=1027006
+	}
+    2621.1.1={death=yes}
+}
+1090028 = { #Court tutor in the court of Hu Weiguo, Duke of Dayi
+	name="Lucy"
+    dynasty=1842156 # Zhemei
+    female=yes
+    culture=hong_konger
+    religion=catholic
+    martial=3
+    diplomacy=5
+    stewardship=3
+    intrigue=3
+    learning=9
+    trait=martial_cleric
+    trait=mystic
+    trait=zealous
+    trait=kind
+    trait=charitable
+    2565.1.1={birth=yes}
+	2599.1.1={
+		employer=1034006
+		effect={give_job_title=title_teacher}
+	}
+    2608.1.1={death=yes}
+}

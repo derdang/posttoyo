@@ -2237,4 +2237,222 @@
     2578.1.1={birth=yes}
     2700.1.1={death=yes}
 }
-
+1921001={ #Courtier in the Republic of Hong Kong, friend of James Cook, Captain of the Commonwealth of Australia
+	name="Sidney"
+    dynasty=1919164 # Rosenblum
+    culture=amursky
+    religion=jewish
+    martial=5
+    diplomacy=8
+    stewardship=4
+    intrigue=8
+    learning=4
+    trait=intricate_webweaver
+    trait=quick
+    trait=schemer
+    trait=deceitful
+    trait=diligent
+    trait=cynical
+    trait=humble
+    trait=gregarious
+    2566.1.1={birth=yes}
+	2599.1.1={
+		employer=1842000
+		effect={add_friend=1771027}
+	}
+    2633.1.1={death=yes}
+}
+1921002={ #Commander in the court of the King of Tomsk, Oleg Vologodsky, genetically/ethnically African
+	name="Vladimir"
+    dynasty=1920167 # Ayo
+    culture=black
+    religion=old_believer
+    martial=7
+    diplomacy=2
+    stewardship=3
+    intrigue=2
+    learning=4
+    trait=tough_soldier
+    trait=wroth
+    trait=cruel
+    trait=zealous
+    trait=honest
+    trait=proud
+    2580.1.1={
+		birth=yes
+		culture=sibiri
+	}
+	2599.1.1={
+		employer=1920015
+		effect={give_job_title=job_marshal}
+	}
+    2630.1.1={death=yes}
+}
+1921003={ #Court chaplain in the court of Darya Lakhta, Queen of Khabarovsk, has the secret religion Jinbenwei
+	name="Nina"
+    dynasty=1917169 # Andreyeva
+    female=yes
+    culture=primorskiy
+    religion=novobozhiye
+	secret_religion=jinbenwei
+    martial=4
+    diplomacy=3
+    stewardship=6
+    intrigue=3
+    learning=6
+    trait=scholarly_theologian
+    trait=scholar
+    trait=zealous
+    trait=diligent
+    trait=just
+    trait=cruel
+	give_nickname = nick_the_principled
+    2560.1.1={birth=yes}
+	2599.1.1={
+		employer=1917004
+		effect={give_job_title=job_spiritual}
+	}
+    2615.1.1={death=yes}
+}
+1921004={ #Monk and court chaplain in the court of the King of Tomsk, Oleg Vologodsky
+	name="Viktor"
+    dynasty=1920168 # Popkov
+    culture=sibiri
+    religion=old_believer
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=6
+    trait=martial_cleric
+    trait=monk
+    trait=devout
+    trait=kind
+    trait=humble
+    trait=charitable
+    2548.1.1={birth=yes}
+	2599.1.1={
+		employer=1920015
+		effect={give_job_title=job_spiritual}
+	}
+    2615.1.1={death=yes}
+}
+1921005={ #Courtier in the Republic of Hong Kong far from home
+	name="Fyodor"
+    dynasty=1917170 # Konyukhov
+    culture=primorskiy
+    religion=orthodox
+    martial=5
+    diplomacy=6
+    stewardship=4
+    intrigue=4
+    learning=6
+    trait=scholarly_theologian
+    trait=monk
+    trait=adventurer
+    trait=strong
+    trait=diligent
+    trait=zealous
+    2576.1.1={birth=yes}
+	2599.1.1={
+		employer=1842000
+	}
+    2615.1.1={death=yes}
+}
+1921006={ #Courtier in the Republic of Hong Kong far from home, exiled, weak claim on the Kingdom of Buryatia
+	name="Viktoria"
+    dynasty=1240182 # Maladaeva
+    female=yes
+    culture=buryat
+    religion=orthodox
+    martial=5
+    diplomacy=7
+    stewardship=4
+    intrigue=4
+    learning=7
+    trait=charismatic_negotiator
+    trait=gregarious
+    trait=diligent
+    trait=proud
+    trait=ambitious
+    trait=wroth
+    2584.1.1={birth=yes}
+	2599.1.1={
+		employer=1842000
+		effect={add_weak_claim=k_buryatia}
+	}
+    2625.1.1={death=yes}
+}
+1921007={ #Commander in the court of the King of Khabarovsk, Vyacheslav Sievers
+	name="Fritz"
+    dynasty=1917171 # Maximovich
+    culture=primorskiy
+    religion=novobozhiye
+    martial=6
+    diplomacy=5
+    stewardship=5
+    intrigue=6
+    learning=6
+    trait=duelist
+    trait=zealous
+    trait=wroth
+    trait=ambitious
+    trait=envious
+    trait=cruel
+    trait=proud
+    2580.1.1={birth=yes}
+	2599.1.1={
+		employer=1917004
+		effect={give_job_title=job_marshal}
+	}
+    2625.1.1={death=yes}
+}
+1921008={ #Monk in the court of the King of Tomsk, Oleg Vologodsky
+	name="Feodor"
+    dynasty=1920169 # Kuzmich
+    culture=sibiri
+    religion=orthodox
+    martial=2
+    diplomacy=5
+    stewardship=3
+    intrigue=8
+    learning=8
+    trait=martial_cleric
+    trait=monk
+    trait=diligent
+    trait=devout
+    2545.1.1={birth=yes}
+	2599.1.1={
+		employer=1920015
+	}
+    2615.1.1={death=yes}
+}
+1921009={ #Friend of the Hong Emperor and the King of Taiwan, lives in the court of the King of Taiwan, has gun artifact
+	name="Moszek"
+    dynasty=1919165 # Cohen
+    culture=amursky
+    religion=jewish
+    martial=1
+    diplomacy=8
+    stewardship=6
+    intrigue=6
+    learning=3
+    trait=underhanded_rogue
+    trait=socializer
+    trait=wroth
+    trait=lustful
+    trait=kind
+    trait=gregarious
+    trait=arbitrary
+	give_nickname=nick_the_twogun
+    2570.1.1={birth=yes}
+	2599.1.1={
+		employer=3923010
+		effect={
+			add_friend=3923010
+			add_friend=2610001
+			add_artifact=ate_firearm
+		}
+	}
+    2610.1.1={death=yes}
+}
