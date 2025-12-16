@@ -1264,6 +1264,7 @@
 2311111 ={ # c_surin Khmer
 	name="Sray"
 	dynasty=2311025
+	father=2311120 #Vicchay
 	culture=khmer
 	religion=maha_nikaya
 	martial=6
@@ -1276,6 +1277,170 @@
 	trait=diligent
 	2583.4.15={birth=yes}
 }
+#Historical Khmer
+2311110 ={ # Founder of House Si
+	name="Atith"
+	dynasty=2311025
+	culture=khmer
+	religion=dharmayuttika
+	trait=amateurish_plotter
+	trait=deceitful
+	trait=ambitious
+	trait=diligent
+	trait=shy
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	2207.6.7={birth=yes}
+	2250.11.11={death=yes}
+}
+2311112 ={ # King of Siem Reap 1
+	name="Vireak"
+	dynasty=2311025
+	father=2311110 #Atith
+	mother=2311156 #Taksina
+	culture=khmer
+	religion=dharmayuttika
+	trait=skilled_tactician
+	trait=legit_bastard
+	trait=quick
+	trait=slothful
+	trait=charitable
+	trait=cynical
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	2225.6.7={birth=yes}
+	2260.6.7={death={death_reason=death_suicide}}
+}
+2311113 ={ # Prince that never was
+	name="Kunthear"
+	dynasty=2311025
+	father=2311112 #Vireak
+	culture=khmer
+	religion=dharmayuttika
+	trait=brilliant_strategist
+	trait=weak
+	trait=diligent
+	trait=brave
+	trait=twin
+	disallow_random_traits=yes
+	2242.10.7={birth=yes}
+	2260.5.5={death={death_reason=death_battle}}
+}
+2311114 ={ # Siem Reap 2
+	name="Puthyrith"
+	dynasty=2311025
+	father=2311112 #Vireak
+	culture=khmer
+	religion=dharmayuttika
+	trait=midas_touched
+	trait=depressed
+	trait=cruel
+	trait=architect
+	trait=wroth
+	trait=twin
+	disallow_random_traits=yes
+	2242.10.7={birth=yes}
+	2315.5.5={death={death_reason=death_trait}}
+}
+2311115 ={ # Siem Reap 3 Parliment guy
+	name="Sathea"
+	dynasty=2311025
+	father=2311114 #Puthyrith
+	culture=khmer
+	religion=dharmayuttika
+	trait=grey_eminence
+	trait=sturdy
+	trait=stubborn
+	trait=schemer
+	trait=fair
+	trait=lustful
+	disallow_random_traits=yes
+	2300.3.4={birth=yes}
+	2388.5.5={death=yes}
+}
+2311116 ={ # Siem Reap 4
+	name="Rithipol"
+	dynasty=2311025
+	father=2311115 #Sathea
+	culture=khmer
+	religion=dharmayuttika
+	trait=misguided_warrior
+	trait=strong
+	trait=stubborn
+	trait=slothful
+	trait=ambitious
+	trait=arbitrary
+	disallow_random_traits=yes
+	2325.3.4={birth=yes}
+	2389.1.1={death={death_reason=death_battle}}
+}
+2311117 ={ # Siem Reap 5
+	name="Nimith"
+	dynasty=2311025
+	father=2311115 #Sathea
+	culture=khmer
+	religion=dharmayuttika
+	trait=martial_cleric
+	trait=craven
+	trait=kind
+	trait=slothful
+	trait=content
+	trait=chaste
+	disallow_random_traits=yes
+	2369.6.7={birth=yes}
+	2420.6.7={death=yes}
+}
+2311118 ={ # Siem Reap 6
+	name="Kosal"
+	dynasty=2311025
+	father=2311117 #Nimith
+	culture=khmer
+	religion=dharmayuttika
+	trait=skilled_tactician
+	trait=brave
+	trait=wroth
+	trait=familyperson
+	trait=content
+	trait=humble
+	disallow_random_traits=yes
+	2415.3.9={birth=yes}
+	2480.6.7={death=yes}
+}
+2311119 ={ # Siem Reap 7 Granddad
+	name="Sereyvuth"
+	dynasty=2311025
+	father=2311118 #Kosal
+	culture=khmer
+	religion=dharmayuttika
+	trait=elusive_shadow
+	trait=kind
+	trait=erudite
+	trait=familyperson
+	trait=distractible
+	trait=humble
+	disallow_random_traits=yes
+	2470.2.5={birth=yes}
+	2540.6.7={death=yes}
+}
+2311120 ={ # Siem Reap 8
+	name="Vicchay"
+	dynasty=2311025
+	father=2311119 #Sereyvuth
+	culture=khmer
+	religion=dharmayuttika
+	trait=intricate_webweaver
+	trait=paranoid
+	trait=authoritative
+	trait=familyperson
+	trait=distractible
+	trait=pious
+	disallow_random_traits=yes
+	2520.2.5={birth=yes}
+	2598.4.13={death=yes}
+}
+#Back to normal Thai
 2311121 ={ # c_buriram
 	name="Champ"
 	dynasty=2311041 #Padungram
