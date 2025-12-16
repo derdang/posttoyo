@@ -708,7 +708,7 @@
         birth = yes
 		culture=thai_central
 		effect = {
-			add_claim=e_thailand
+			add_claim=e_yonok
 		}
     }
     2690.6.20 = { death = yes }
@@ -886,7 +886,7 @@
 	name="Klarharn" # Brave, not-Ram khamhaeng
 	dynasty=2310501
 	culture=thai_sukhothai
-	religion=dharmayuttika
+	religion=weizzane
 	martial=9
 	diplomacy=5
 	stewardship=8
@@ -898,16 +898,13 @@
 	trait=quick
 	2567.4.15={
 		birth=yes
-		effect = {
-			add_claim=e_suvanaphum
-		}
 	}
 }
 2310508 ={
 	name="Thong" # Kraithong
 	dynasty=2310505
 	culture=thai_sukhothai
-	religion=dharmayuttika
+	religion=weizzane
 	martial=9
 	trait=tough_soldier
 	trait=sturdy
@@ -1579,7 +1576,7 @@
 	2543.10.8={birth=yes}
 	2588.4.15={death=yes}
 }
-2312101 ={ # d_chiangmai/lanna
+2312101 ={ # Yonok claiment
 	name="Cherdchu"
 	dynasty=2312002 #Langkapintha
 	culture=thai_mueang
@@ -1593,14 +1590,14 @@
 	trait=ambitious
 	trait=just
 	trait=zealous
-	2583.4.15={birth=yes}
+	2583.4.15={birth=yes effect = {add_claim=e_yonok}}
 	father=2312001
 }
 2312201 ={ # d_phayao
 	name="Saeng-la"
 	dynasty=2312021 #Sritisan
 	culture=thai_mueang
-	religion=maha_nikaya
+	religion=weizzane
 	martial=4
 	diplomacy=7
 	stewardship=8
@@ -1614,7 +1611,7 @@
 	name="Fongkham"
 	dynasty=2312016 #Kaenhom
 	culture=thai_mueang
-	religion=maha_nikaya
+	religion=weizzane
 	martial=4
 	diplomacy=7
 	stewardship=8
@@ -1628,7 +1625,7 @@
 	name="Sa-art"
 	dynasty=2312002 #Langkapintha
 	culture=thai_mueang
-	religion=maha_nikaya
+	religion=weizzane
 	martial=6
 	diplomacy=7
 	stewardship=5

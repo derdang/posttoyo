@@ -40,6 +40,155 @@
 	2571.5.1={birth=yes}
 	2700.1.1={death=yes}
 }
+1181002 ={ #Ancient Regent of Phnom Penh
+	name="Chakrey"
+	dynasty=1181037	#Nhiek
+	culture=khmer
+	religion=maha_nikaya
+	trait=charismatic_negotiator
+	trait=patient
+	trait=administrator
+	trait=just
+	trait=kind
+	trait=authoritative
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	1928.10.23={birth=yes}
+	1999.12.30={death={death_reason=death_vanished}}
+}
+1181003 ={ #Trusted Acolyte of Chakrey ruthlessly usurped by traitor
+	name="Rainsy"
+	dynasty=1181038	#Sam
+	culture=khmer
+	religion=maha_nikaya
+	trait=fortune_builder
+	trait=patient
+	trait=ambitious
+	trait=diligent
+	trait=temperate
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	1950.8.10={birth=yes}
+	2020.12.30={death={death_reason=death_execution_hunt killer=1181004}}
+}
+1181004 ={ #Traitor
+	name="Sangvan"
+	dynasty=1181039	#Tea
+	culture=khmer
+	religion=maha_nikaya
+	trait=misguided_warrior
+	trait=wroth
+	trait=strong
+	trait=deceitful
+	trait=brave
+	trait=arbitrary
+	trait=legendary
+	occluded=yes
+	disallow_random_traits=yes
+	1945.1.1={birth=yes}
+	2045.1.1={death={death_reason=death_reason=death_rabble}} #Justice enforced by the people
+}
+
+1181005 ={ #Governor of Cambodia for Vietnam
+	name="Chan"
+	dynasty=1181034	#San
+	culture=khmer
+	religion=maha_nikaya
+	trait=underhanded_rogue
+	trait=ambitious
+	trait=cynical
+	trait=greedy
+	trait=brave
+	trait=just
+	disallow_random_traits=yes
+	2375.1.1={birth=yes}
+	2430.1.1={death=yes}
+}
+1181006 ={ #Governor of Cambodia for Vietnam
+	name="Sopha"
+	dynasty=1181034	#San
+	father=1181005#Chan
+	culture=khmer
+	religion=maha_nikaya
+	trait=charismatic_negotiator
+	trait=socializer
+	trait=kind
+	trait=honest
+	trait=depressed
+	trait=just
+	female = yes
+	disallow_random_traits=yes
+	2400.1.1={birth=yes}
+	2485.1.1={death={death_reason=death_trait}}
+}
+1181007 ={ #San Patrician
+	name="Rathana"
+	dynasty=1181034	#San
+	father=1181005#Chan
+	culture=khmer
+	religion=maha_nikaya
+	trait=grey_eminence
+	trait=seducer
+	trait=maimed
+	trait=envious
+	trait=kind
+	trait=gregarious
+	disallow_random_traits=yes
+	2425.1.1={birth=yes}
+	2458.1.1={death=yes}
+}
+1181008 ={ #San 2
+	name="Pheakdei"
+	dynasty=1181034	#San
+	father=1181007#Rathana
+	culture=khmer
+	religion=maha_nikaya
+	trait=mastermind_theologian
+	trait=gamer
+	trait=honest
+	trait=just
+	trait=kind
+	trait=gregarious
+	disallow_random_traits=yes
+	2440.1.1={birth=yes}
+	2510.1.1={
+		trait="monk"
+		effect = { set_character_flag = has_monk_name }
+	}
+	2512.1.1={death=yes}
+}
+1181009 ={ #San 3
+	name="Piseth"
+	dynasty=1181034	#San
+	father=1181008#Pheakdei
+	culture=khmer
+	religion=maha_nikaya
+	trait=thrifty_clerk
+	trait=greedy
+	trait=arbitrary
+	trait=authoritative
+	trait=ambitious
+	disallow_random_traits=yes
+	2500.1.1={birth=yes}
+	2569.1.1={death=yes}
+}
+1181010 ={ #San 4
+	name="Vireak"
+	dynasty=1181034	#San
+	father=1181009#Pheakdei
+	culture=khmer
+	religion=dhamsoc
+	trait=underhanded_rogue
+	trait=kind
+	trait=gamer
+	trait=gregarious
+	trait=paranoid
+	disallow_random_traits=yes
+	2540.1.1={birth=yes}
+	2582.1.1={death=yes}
+}
 1181011 ={ #Duke of Siem Reap
 	name="Chhaya"
 	dynasty=1181035 #Chan
@@ -80,11 +229,120 @@
 	name="Kosal"
 	dynasty=1181035 #Chan
 	culture=khmer
-	religion=dharmayuttika
+	religion=akhom
 	trait=tough_soldier
 	trait=brave
+	trait=peasant_leader
 	2555.5.5={birth=yes}
 	2600.1.1={death=yes}
+}
+1181014 ={ #Avatar of Meitraiya on Earth trust
+	name="Narith"
+	dynasty=1181040 #Dap
+	culture=khmer
+	religion=akhom
+	trait=underhanded_rogue
+	trait=kind
+	trait=peasant_leader
+	trait=holy_warrior
+	trait=arbitrary
+	disallow_random_traits=yes
+	2391.1.10={birth=yes}
+	2440.1.1={death={death_reason=death_battle killer=2311118}}
+}
+1181015 ={ #Architect of Akom Faith
+	name="Vivadh"
+	dynasty=1181040 #Dap
+	father=1181014 #Narith
+	culture=khmer
+	religion=akhom
+	trait=mastermind_theologian
+	trait=diligent
+	trait=gregarious
+	trait=holy_warrior
+	trait=authoritative
+	disallow_random_traits=yes
+	2418.1.1={birth=yes}
+	2502.1.1={death=yes}
+}
+1181016 ={ #Herald of New Age
+	name="Phala"
+	dynasty=1181040 #Dap
+	father=1181015 #Vivadh
+	culture=khmer
+	religion=akhom
+	trait=detached_priest
+	trait=dull
+	trait=scholar
+	trait=zealous
+	trait=ambitious
+	trait=proud
+	disallow_random_traits=yes
+	2500.1.1={birth=yes}
+	2530.1.1={death=yes}
+}
+1181017 ={ #Blud think hes god king
+	name="Samay"
+	dynasty=1181040 #Dap
+	father=1181016 #Phala
+	culture=khmer
+	religion=akhom
+	trait=brilliant_strategist
+	trait=impaler
+	trait=cruel
+	trait=trusting
+	trait=familyperson
+	trait=humble
+	disallow_random_traits=yes
+	2520.1.1={birth=yes}
+	2579.1.1={death={
+			death_reason=death_execution_elephants
+			killer=1181013
+		}}
+}
+1181018 ={ #Count of Preah Vihear
+	name="Somethea"
+	dynasty=1181040 #Dap
+	father=1181017 #Samay
+	culture=khmer
+	religion=akhom
+	trait=scholarly_theologian
+	trait=pious
+	trait=trusting
+	trait=kind
+	trait=familyperson
+	trait=humble
+	disallow_random_traits=yes
+	2577.1.1={birth=yes}
+	2700.1.1={death=yes}
+}
+1181019 ={ #Count of Battambang
+	name="Prak"
+	dynasty=1181041 #Hong
+	culture=khmer
+	religion=akhom
+	trait=thrifty_clerk
+	trait=mystic
+	trait=wroth
+	trait=charitable
+	trait=pious
+	disallow_random_traits=yes
+	2569.1.1={birth=yes}
+	2700.1.1={death=yes}
+}
+1181020 ={ #Count of Kampong Thom
+	name="Savang"
+	dynasty=1181042 #Mey
+	culture=khmer
+	religion=kan_imam_san
+	trait=grey_eminence
+	trait=homosexual
+	trait=gregarious
+	trait=erudite
+	trait=diligent
+	disallow_random_traits=yes
+	2585.1.1={birth=yes}
+	2700.1.1={death=yes}
 }
 1181021 ={ #Count of Kratie, Vassal of Loeu lord
 	name="Khem"
@@ -106,6 +364,7 @@
 1181031 ={ #Count of Pray Veng and Svay Rieng
 	name="Arun"
 	dynasty=1181034 #San
+	father=1181010#Vireak
 	culture=khmer
 	religion=akhom
 	martial=3
