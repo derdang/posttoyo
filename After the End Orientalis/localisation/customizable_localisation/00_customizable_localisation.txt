@@ -3598,7 +3598,12 @@ defined_text = {
 
 	text = {
 		localisation_key = GetHouseOfWorship_Christian
-		trigger = { religion_group = christian }
+		trigger = { 
+			OR = {
+				religion_group = christian
+				religion_group = latter_day_saints
+			}
+		}
 	}
 	text = {
 		localisation_key = GetHouseOfWorship_Muslim
@@ -3606,7 +3611,13 @@ defined_text = {
 	}
 	text = {
 		localisation_key = GetHouseOfWorship_Pagan
-		trigger = { religion_group = pagan_group }
+		trigger = {
+			OR = {
+				religion_group = pagan_group
+				religion_group = indian_group
+				religion = oldworld
+			}
+		}
 	}
 	text = {
 		localisation_key = GetHouseOfWorship_Zoroastrian
@@ -3638,7 +3649,12 @@ defined_text = {
 
 	text = {
 		localisation_key = string_Church
-		trigger = { religion_group = christian }
+		trigger = { 
+			OR = {
+				religion_group = christian
+				religion_group = latter_day_saints
+			}
+		}
 	}
 	text = {
 		localisation_key = string_Mosque
@@ -3646,7 +3662,13 @@ defined_text = {
 	}
 	text = {
 		localisation_key = string_Temple
-		trigger = { religion_group = pagan_group }
+		trigger = {
+			OR = {
+				religion_group = pagan_group
+				religion_group = indian_group
+				religion = oldworld
+			}
+		}
 	}
 	text = {
 		localisation_key = string_Temple
