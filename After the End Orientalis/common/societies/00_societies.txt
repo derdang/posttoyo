@@ -6116,18 +6116,24 @@ warrior_lodge_animist = {
 						OR = {
 							religion = animist
 							religion = animist_reformed
+							religion = makasol
+							religion = makasol_reformed
 						}
 					}
 					any_liege = {
 						OR = {
 							religion = animist
 							religion = animist_reformed
+							religion = makasol
+							religion = makasol_reformed
 						}
 					}
 					any_neighbor_independent_ruler = {
 						OR = {
 							religion = animist
 							religion = animist_reformed
+							religion = makasol
+							religion = makasol_reformed
 						}
 					}
 				}
@@ -6136,6 +6142,8 @@ warrior_lodge_animist = {
 				NOR = {
 					religion = animist
 					religion = animist_reformed
+					religion = makasol
+					religion = makasol_reformed
 				}
 				has_religion_matching_available_warrior_lodge_trigger = yes
 			}
