@@ -1623,11 +1623,6 @@ religion_doctrine = {
 			custom_tooltip = { text = tooltip_religion_feature_hard_conversion }
 			custom_tooltip = { text = tooltip_religion_feature_crusade }
 			hidden_tooltip = { 
-				set_unit_modifier = { 
-					land_morale = 0.05
-					key = "ANIMISTIC_RELIGION"
-				}
-				set_raised_vassal_opinion_loss = no
 				set_no_head_of_religion = yes
 				set_religion_head = none
 				set_can_call_crusade = no
@@ -1645,6 +1640,7 @@ religion_doctrine = {
 				set_unit_modifier = {		
 					garrison_size = 0.3
 					levy_size = 0.2
+					land_morale = 0.05
 					
 					key = "DEF_RELIGION"
 				}
@@ -2524,7 +2520,6 @@ religion_leadership = {
 				has_selected_religion_feature = religion_feature_dreamer
 				has_selected_religion_feature = religion_feature_bushranger
 				has_selected_religion_feature = religion_feature_momolian
-				has_selected_religion_feature = religion_feature_bushranger
 			}
 		}
 		effect = {

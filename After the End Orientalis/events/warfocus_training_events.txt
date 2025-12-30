@@ -302,7 +302,7 @@ long_character_event = {
 			limit = { has_dlc = Reapers }
 			random_list = { #Randomize injured body part.
 				10 = { #the eyes
-					trigger = { NOT = { OR = { trait = blinded trait = blind } } }
+					trigger = { NOT = { trait = blinded } }
 					if = { limit = { trait = one_eyed }
 						set_character_flag = injury_both_eyes
 					}
@@ -328,11 +328,13 @@ long_character_event = {
 				}
 				10 = { #Only in case you already have ALL the other maimed traits?
 					trigger = {
-						OR = { trait = blinded trait = blind }
-						trait = one_handed
-						trait = one_legged
-						trait = disfigured
-						trait = mangled
+						OR = {
+							trait = blinded
+							trait = one_handed
+							trait = one_legged
+							trait = disfigured
+							trait = mangled
+						}
 					}
 					set_character_flag = injury_could_be_lethal
 				}

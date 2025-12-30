@@ -136,12 +136,7 @@ bloodthirsty_male_bloodline = {
 	monthly_character_piety = 0.3
 	picture = GFX_bloodlines_symbol_bloodthirsty
 	active = {
-		OR = {
-			has_religion_feature = religion_ritual_sacrifice
-			religion = stalinist
-			religion = trotskyite
-			religion = titoist
-		}
+		has_religion_feature = religion_ritual_sacrifice
 	}
 	flags = { bloodline_created_bloodthirsty bloodline_prestige_sacrifice created_bloodline }
 }
@@ -156,12 +151,7 @@ bloodthirsty_female_bloodline = {
 	monthly_character_piety = 0.3
 	picture = GFX_bloodlines_symbol_bloodthirsty
 	active = {
-		OR = {
-			has_religion_feature = religion_ritual_sacrifice
-			religion = stalinist
-			religion = trotskyite
-			religion = titoist
-		}
+		has_religion_feature = religion_ritual_sacrifice
 	}
 	flags = { bloodline_created_bloodthirsty bloodline_prestige_sacrifice created_bloodline }
 }
