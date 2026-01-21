@@ -201,9 +201,19 @@ is_protestant_christian = {
 		religion = elijahite
 	}
 }
+is_hindu_religion = {
+	OR = {
+		religion = saura
+		religion = mantramarga
+		religion = shaktah
+		religion = vaishnava
+		religion = tirthaist
+	}
+}
 is_salafi_religion = {
 	OR = {
 		religion = salafi
+		religion = deobandi
 	}
 }
 is_sunni = {

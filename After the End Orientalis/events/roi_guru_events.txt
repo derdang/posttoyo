@@ -80,18 +80,10 @@ character_event = {
 					}
 					if = {
 						limit = {
-							OR = {
-								religion = hindu
-								religion = vaishnava
-								religion = tirthaist
-							}
+							is_hindu_religion = yes
 							ROOT = {
 								ai = no
-								OR = {
-									religion = hindu
-									religion = vaishnava
-									religion = tirthaist
-								}
+								is_hindu_religion = yes
 							}
 							year = 1150
 							NOT = { year = 1250 }
@@ -101,17 +93,12 @@ character_event = {
 						set_character_flag = is_basava
 						set_global_flag = basava
 						culture = marathi
-						#add_trait = shaivist_hindu
 						add_trait = brahmin
 						add_trait = brave
 					}
 					if = {
 						limit = {
-							OR = {
-								religion = hindu
-								religion = vaishnava
-								religion = tirthaist
-							}
+							is_hindu_religion = yes
 							NOT = { has_character_flag = basava }
 						}
 						random_list = {
@@ -172,11 +159,7 @@ character_event = {
 					}
 					if = {
 						limit = {
-							OR = {
-								religion = hindu
-								religion = vaishnava
-								religion = tirthaist
-							}
+							is_hindu_religion = yes
 						}
 						random_list = {
 							85 = { add_trait = brahmin }
@@ -1453,11 +1436,7 @@ character_event = {
 
 	trigger = {
 		has_dlc = "Rajas of India"
-		OR = {
-			religion = hindu
-			religion = vaishnava
-			religion = tirthaist
-		}
+		is_hindu_religion = yes
 		any_courtier = {
 			has_minor_title = title_guru
 			trait = genius
@@ -1622,11 +1601,7 @@ narrative_event = {
 	option = {
 		name = EVTOPTA_RoI_3402
 		trigger = {
-			OR = {
-				religion = hindu
-				religion = vaishnava
-				religion = tirthaist
-			}
+			is_hindu_religion = yes
 		}
 		if = {
 			limit = { trait = stressed }

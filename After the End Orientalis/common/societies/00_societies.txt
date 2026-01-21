@@ -1452,7 +1452,7 @@ monastic_order_hindu = {
 			}
 		}
 		age = 16
-		religion_group = indian_group
+		is_hindu_religion = yes
 		custom_tooltip = {
 			text = did_not_betray_society
 			NOT = { has_character_flag = betrayed_monastic_order_hindu }
@@ -1465,12 +1465,12 @@ monastic_order_hindu = {
 
 	show_society = {
 		OR = {
-			religion_group = indian_group
+			is_hindu_religion = yes
 			society_member_of = monastic_order_hindu
 		}
 	}
 
-	potential = { religion_group = indian_group }
+	potential = { is_hindu_religion = yes }
 
 	society_rank = {
 		level = 1
@@ -1656,7 +1656,7 @@ monastic_order_hindu = {
 		trigger = {
 			ai = yes
 			controls_religion = no
-			religion_group = indian_group
+			is_hindu_religion = yes
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -4110,9 +4110,7 @@ the_cult_of_kali = {
 		}
 		age = 16
 		OR = {
-			religion_group = indian_group
-			secret_religion = hindu
-			secret_religion = tirthaist
+			is_hindu_religion = yes
 			society_member_of = the_cult_of_kali
 		}
 	}

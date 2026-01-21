@@ -177,7 +177,7 @@ character_event = {
 				}
 			}
 		}
-		add_trait = shaivist_hindu
+		religion = mantramarga
 	}
 
 	option = {
@@ -201,7 +201,7 @@ character_event = {
 				}
 			}
 		}
-		add_trait = vaishnavist_hindu
+		religion = vaishnava
 	}
 
 	option = {
@@ -225,31 +225,7 @@ character_event = {
 				}
 			}
 		}
-		add_trait = shaktist_hindu
-	}
-
-	option = {
-		name = {
-			text = EVTOPTD_RoI_110
-			trigger = {
-				NOT = {
-					has_alternate_start_parameter = {
-						key = religion_names
-						value = random
-					}
-				}
-			}
-		}
-		name = {
-			text = EVTOPTD_RoI_110_ALT
-			trigger = {
-				has_alternate_start_parameter = {
-					key = religion_names
-					value = random
-				}
-			}
-		}
-		add_trait = smartist_hindu
+		religion = shaktah
 	}
 }
 
@@ -2691,7 +2667,10 @@ character_event = {
 	trigger = {
 		has_dlc = "Rajas of India"
 		in_command = no
-		religion_group = buddhist_group
+		OR = {
+			religion_group = buddhist_group
+			religion = jain
+		}
 	}
 
 	option = {

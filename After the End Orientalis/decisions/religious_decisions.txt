@@ -656,7 +656,10 @@ decisions = {
 				is_republic = yes
 			}
 			prisoner = no
-			religion_group = indian_group
+			AND = {
+				NOT = {religion = shaktah}
+				is_hindu_religion = yes
+			}
 			NOT = { trait = incapable }
 			NOT = { has_character_modifier = patron_kali }
 			NOT = {
@@ -780,7 +783,7 @@ decisions = {
 				is_republic = yes
 			}
 			prisoner = no
-			religion_group = indian_group
+			religion = shaktah
 			NOT = { trait = incapable }
 			has_character_modifier = patron_kali
 			NOT = {
