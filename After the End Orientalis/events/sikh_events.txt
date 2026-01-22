@@ -1,0 +1,223 @@
+namespace = sikh
+
+character_event = { #Joining the Khalsa
+	id = sikh.1
+	desc = EVTDESC_khalsa_amritdhari
+	picture = GFX_evt_society_joining
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { trait = amritdhari }
+		NOT = { has_character_flag = initiated_into_khalsa }
+	}
+
+	immediate = {
+		set_character_flag = initiated_into_khalsa
+	}
+
+	option = {
+		name = EVTOPT_khalsa_initiation
+		add_trait = amritdhari
+	}
+}
+
+narrative_event = {
+	id = sikh.2
+	title = EVTTITLE_SIKH2
+	desc = EVTDESC_SIKH2
+	picture = GFX_evt_indian_pilgrimage
+	border = GFX_event_narrative_frame_religion
+	
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_character_flag = visiting_golden_temple
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_SIKH2
+		clr_character_flag = visiting_golden_temple
+		piety = 15
+		hidden_tooltip = {
+			narrative_event = { id = sikh.3 days = 2 }
+		}		
+	}
+}
+
+narrative_event = {
+	id = sikh.3
+	title = EVTTITLE_SIKH3
+	desc = EVTDESC_SIKH3
+	picture = GFX_evt_golden_temple
+	border = GFX_event_narrative_frame_religion
+	
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		trait = on_yatra
+		religion = sikh
+	}
+	
+	option = {
+		name = EVTOPTA_SIKH3
+		if = {
+			limit = {
+				trait = proud
+			}
+			add_trait = ambitious
+		}
+		random = {
+			chance = 33
+			add_trait = proud
+		}
+		piety = 25
+		hidden_tooltip = {
+			narrative_event = { id = sikh.4 days = 1 }
+		}	
+		
+		
+	}
+	option = {
+		name = EVTOPTB_SIKH3
+		piety = 25
+		add_trait = humble
+		
+		hidden_tooltip = {
+			narrative_event = { id = sikh.4 days = 1 }
+		}	
+	}	
+}
+
+narrative_event = {
+	id = sikh.4
+	title = EVTTITLE_SIKH4
+	desc = EVTDESC_SIKH4
+	picture = GFX_evt_golden_temple
+	border = GFX_event_narrative_frame_religion
+	
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		trait = on_yatra
+		religion = sikh
+	}
+	
+	option = {
+		name = "EVTOPTA_SIKH4"		
+		if = {
+			limit = {
+				NOT = { has_character_flag = gained_takht_health }
+			}
+		health = 1
+		set_character_flag = gained_takht_health
+			hidden_tooltip = {
+				narrative_event = { id = sikh.5 days = 3 }
+			}	
+		break = yes
+		}
+		if = {
+			limit = {
+				has_character_flag = gained_takht_health
+			}
+		piety = 25
+		}
+		hidden_tooltip = {
+			narrative_event = { id = sikh.5 days = 3 }
+		}	
+
+	}
+}
+	
+narrative_event = {
+	id = sikh.5
+	title = EVTTITLE_SIKH5
+	desc = EVTDESC_SIKH5
+	picture = GFX_evt_golden_temple
+	border = GFX_event_narrative_frame_religion
+	
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		trait = on_yatra
+		religion = sikh
+	}
+	
+	option = {
+		name = "EVTOPTA_SIKH5"
+		piety = 100
+		hidden_tooltip = {
+			narrative_event = { id = sikh.6 days = 3 }
+		}	
+	}
+}
+
+narrative_event = {
+	id = sikh.6
+	title = EVTTITLE_SIKH6
+	desc = "EVTDESC_SIKH6"
+	picture = GFX_evt_golden_temple
+	border = GFX_event_narrative_frame_religion
+	
+	prisoner = no
+	
+	is_triggered_only = yes
+
+	trigger = {
+		trait = on_yatra
+		religion = sikh
+	}
+	
+	option = {
+		name = "EVTOPTA_SIKH6"
+		scaled_wealth = -0.1
+		prestige = 25
+		hidden_tooltip = {
+			narrative_event = { id = sikh.7 days = 3 }
+		}		
+	}
+	option = {
+		name = "EVTOPTB_SIKH6"
+		scaled_wealth = -0.05
+		piety = 15
+		hidden_tooltip = {
+			narrative_event = { id = sikh.7 days = 3 }
+		}		
+	}	
+}
+
+narrative_event = {
+	id = sikh.7
+	title = EVTTITLE_SIKH7
+	desc = "EVTDESC_SIKH7"
+	picture = GFX_evt_indian_pilgrimage
+	border = GFX_event_narrative_frame_religion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = do_not_disturb
+	}
+	option = {
+		name = "EVTOPTA_SIKH7"
+		if = {
+			limit = {
+				trait = on_yatra
+			}
+			remove_trait = on_yatra
+			add_trait = yatri
+			piety=250
+		}
+	}
+}

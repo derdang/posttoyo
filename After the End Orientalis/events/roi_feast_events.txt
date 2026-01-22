@@ -1185,19 +1185,19 @@ character_event = {
 		}
 		piety = 30
 	}
-	#option = {
-	#	name = EVTOPTB_RoI_1142
-	#	trigger = {
-	#		religion = jain
-	#	}
-	#	if = {
-	#		limit = { NOT = { trait = lustful }	}
-	#		random = {
-	#			chance = 30
-	#			add_trait = lustful
-	#		}
-	#	}
-	#}
+	option = {
+		name = EVTOPTB_RoI_1142
+		trigger = {
+			religion = jain
+		}
+		if = {
+			limit = { NOT = { trait = lustful }	}
+			random = {
+				chance = 30
+				add_trait = lustful
+			}
+		}
+	}
 }
 
 # Fascinating male singer appears
@@ -1292,30 +1292,30 @@ character_event = {
 		}
 		piety = 30
 	}
-	#option = {
-	#	name = EVTOPTB_RoI_1142
-	#	trigger = {
-	#		religion = jain
-	#	}
-	#	if = {
-	#		limit = { NOT = { trait = lustful }	}
-	#		random = {
-	#			chance = 30
-	#			add_trait = lustful
-	#		}
-	#	}
-	#	if = {
-	#		limit = { 
-	#			is_pregnant = no
-	#			NOT = { age = 45 }
-	#		}
-	#		random = {
-	#			chance = 20
-	#			impregnate = 0
-	#			add_trait = pregnant
-	#		}
-	#	}
-	#}
+	option = {
+		name = EVTOPTB_RoI_1142
+		trigger = {
+			religion = jain
+		}
+		if = {
+			limit = { NOT = { trait = lustful }	}
+			random = {
+				chance = 30
+				add_trait = lustful
+			}
+		}
+		if = {
+			limit = { 
+				is_pregnant = no
+				NOT = { age = 45 }
+			}
+			random = {
+				chance = 20
+				impregnate = 0
+				add_trait = pregnant
+			}
+		}
+	}
 }
 
 ###########################################
@@ -1660,13 +1660,13 @@ character_event = {
 		#	}
 		#	character_event = { id = RoI.1173 } # Buddhist
 		#}
-		#if = {
-		#	limit = {
-		#		has_character_modifier = holding_diwali_feast
-		#		religion = jain
-		#	}
-		#	character_event = { id = RoI.1175 } # Jain
-		#}
+		if = {
+			limit = {
+				has_character_modifier = holding_diwali_feast
+				religion = jain
+			}
+			character_event = { id = RoI.1175 } # Jain
+		}
 		if = {
 			limit = {
 				has_character_modifier = holding_kali_puja_feast
@@ -1715,7 +1715,46 @@ character_event = {
 
 # Buddhist celebration - Moved to Vesak
 
-# Jain celebration - No Jains
+# Jain celebration - host
+character_event = {
+	id = RoI.1175
+	desc = EVTDESC_RoI_1175
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_RoI_1175
+
+		piety = 30
+
+		any_vassal = {
+			limit = {
+				ai = no
+				has_character_flag = attending_diwali_feast
+			}
+
+			character_event = { id = RoI.1176 }
+		}
+	}
+}
+
+# Jain celebration - guests
+character_event = {
+	id = RoI.1176
+	desc = EVTDESC_RoI_1175
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_RoI_1175
+
+		piety = 10
+	}
+}
 
 # Kali Puja Celebration
 character_event = {
