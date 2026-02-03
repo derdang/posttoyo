@@ -842,3 +842,204 @@
     2560.1.1={birth=yes}
     2702.1.1={death=yes}
 }
+#JHARKHAND
+4500000={
+	name="Bakhtar"
+    dynasty=4023046 # Nayak
+    culture=nagpuri
+    religion=sarnaist
+    martial=5
+    diplomacy=6
+    stewardship=4
+    intrigue=5
+    learning=5
+    trait=skilled_tactician
+    trait=duelist
+    trait=strong
+    trait=brave
+    trait=kind
+    trait=diligent
+    2572.1.1={birth=yes}
+    2625.1.1={death=yes}
+}
+4500001={
+	name="Bagun"
+    dynasty=4024000 # Koda
+    culture=ho
+    religion=sarnaist
+    martial=3
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=thrifty_clerk
+    trait=quick
+    trait=diligent
+    2585.1.1={birth=yes}
+    2625.1.1={death=yes}
+}
+4500002={
+	name="Shyamal"
+    dynasty=4000045 # Kumar 
+    culture=rarhi
+    religion=sarnaist
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=shrewd
+    trait=charitable
+    trait=gregarious
+    trait=wroth
+    2565.1.1={birth=yes}
+    2625.1.1={death=yes}
+}
+4500003={
+	name="Shashank"
+    dynasty=4026000 # Kujur
+    culture=kurukh
+    religion=sarnaist
+    female=yes
+    martial=5
+    diplomacy=4
+    stewardship=4
+    intrigue=3
+    learning=6
+    trait=scholarly_theologian
+    trait=fair
+    trait=mystic
+    trait=chaste
+    trait=gregarious
+    trait=diligent
+    trait=proud
+    2585.1.1={birth=yes}
+    2625.1.1={death=yes}
+}
+4500004={
+	name="Raj"
+    dynasty=4025001 # Munda
+    culture=magahi
+    religion=sarnaist
+    martial=6
+    diplomacy=6
+    stewardship=6
+    intrigue=6
+    learning=6
+    trait=brilliant_strategist
+    trait=strong
+    trait=impaler
+    trait=zealous
+    trait=gregarious
+    trait=brave
+    trait=cruel
+    2544.1.1={birth=yes}
+	2600.1.1={add_spouse=4500006}
+    2610.1.1={death=yes}
+}
+4500005={
+	name="Ram"
+    dynasty=4025001 # Munda
+    culture=magahi
+    religion=sarnaist
+    martial=4
+    diplomacy=5
+    stewardship=6
+    intrigue=5
+    learning=4
+    trait=tough_soldier
+    trait=lustful
+    trait=cruel
+    trait=brave
+	father=4500004
+    2579.1.1={birth=yes}
+    2640.1.1={death=yes}
+}
+4500006={
+	name="Chanda"
+    dynasty=4025000 # Lorikayana
+    female=yes
+    culture=magahi
+    religion=sarnaist
+    martial=3
+    diplomacy=7
+    stewardship=3
+    intrigue=5
+    learning=7
+    trait=martial_cleric
+    trait=quick
+    trait=fair
+    trait=scholar
+    trait=cynical
+    trait=kind
+    trait=charitable
+    trait=honest
+    2588.1.1={birth=yes}
+	2600.1.1={effect={add_rival=4500004}}
+    2615.1.1={death=yes}
+}
+4500007={
+	name="Veer"
+    dynasty=4025083 # Shah
+    culture=magahi
+    religion=jain
+    martial=4
+    diplomacy=5
+    stewardship=4
+    intrigue=4
+    learning=8
+    trait=mastermind_theologian
+    trait=genius
+    trait=scholar
+    trait=celibate
+    trait=lunatic
+    trait=diligent
+    trait=shy
+	give_nickname=nick_the_strange
+    2550.1.1={birth=yes}
+    2615.1.1={death=yes}
+}
+4500008={
+	name="Fudan"
+    dynasty=4027083 # Murmu
+    culture=santal
+    religion=sarnaist
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=tough_soldier
+    trait=strong
+    trait=disfigured
+    trait=inspiring_leader
+    trait=ambitious
+    trait=deceitful
+    trait=proud
+    trait=diligent
+    trait=wroth
+	give_nickname=nick_the_bhoota
+    2577.1.1={birth=yes}
+    2610.1.1={death=yes}
+}
+4500009={
+	name="Baha"
+    dynasty=4027000 # Soren
+    culture=santal
+    religion=sarnaist
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=intricate_webweaver
+    trait=shrewd
+    trait=deceitful
+    trait=diligent
+    trait=humble
+    trait=shy
+    trait=frail
+    2580.1.1={birth=yes}
+    2610.1.1={death=yes}
+}
