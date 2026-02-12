@@ -624,6 +624,7 @@ religion_doctrine = {
 			NOR = {
 				has_selected_religion_feature = religion_feature_seirei
 				has_selected_religion_feature = religion_feature_kaharingan
+				has_selected_religion_feature = religion_feature_jagannath
 			}
 		}
 		effect = {
@@ -1005,6 +1006,7 @@ religion_doctrine = {
 				has_selected_religion_feature = religion_feature_makasol
 				has_selected_religion_feature = religion_feature_diwata
 				has_selected_religion_feature = religion_feature_ak_jeng
+				has_selected_religion_feature = religion_feature_jagannath
 			}
 		}
 		effect = {
@@ -2496,6 +2498,62 @@ religion_doctrine = {
 		}
 		ai_will_do = {
 			factor = 50
+		}
+	}
+	religion_feature_jagannath = {
+		picture = GFX_religion_feature_jagannath
+		potential = {
+			has_game_started = yes
+			religion = jagannath_reformed
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		trigger = {
+			religion = jagannath_reformed
+			NOR = { 
+				has_selected_religion_feature = religion_relentless
+				has_selected_religion_feature = religion_monastic
+			}
+		}
+		effect = {
+			custom_tooltip = { text = tooltip_religion_feature_anti_attrition }
+			custom_tooltip = { text = tooltip_religion_feature_offensive }
+			hidden_tooltip = { 
+				set_ignores_defensive_attrition = yes
+				set_unit_modifier = { 
+					light_infantry_offensive = 0.1
+					heavy_infantry_offensive = 0.1
+					light_cavalry_offensive = 0.1 
+					knights_offensive = 0.1 
+					pikemen_offensive = 0.1 
+					archers_offensive = 0.1
+					horse_archers_offensive = 0.1
+					camel_cavalry_offensive = 0.1
+					war_elephants_offensive = 0.1
+					key = "RELENTLESS_RELIGION"
+				}
+			}
+			custom_tooltip = { text = tooltip_religion_feature_monastic }
+			custom_tooltip = { text = tooltip_religion_feature_learning_boost }
+			custom_tooltip = { text = tooltip_religion_feature_celibate_priests }
+			hidden_tooltip = { 
+				set_can_retire_to_monastery = yes
+				set_priests_can_marry = no
+				set_priests_can_inherit = no
+			}
+			set_character_modifier = {
+				learning = 2
+				key = "MONASTIC_ATTR_RELIGION"
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { #Handles feature randomization in AltStart to make unreformed pagans still have "paganish" features.
+				factor = 0
+				has_game_started = no
+				religion_group = indian_group
+			}
 		}
 	}
 	

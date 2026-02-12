@@ -3818,7 +3818,7 @@ indian_group = { #hindu
 		}
 		
 		evil_god_names = {
-			GOD_RAKSHASAS
+			RAKSHASAS
 		}
 		
 		can_grant_divorce = yes
@@ -3893,7 +3893,7 @@ indian_group = { #hindu
 		}
 		
 		evil_god_names = {
-			GOD_RAKSHASAS
+			RAKSHASAS
 		}
 		
 		can_grant_divorce = yes
@@ -4067,6 +4067,131 @@ indian_group = { #hindu
 		piety_name = KARMA
 		
 		intermarry = buddhist_group
+	}
+	jagannath = {
+		graphical_culture = indiangfx
+
+		icon = 152
+		heresy_icon = 154
+		
+		color = { 165 16 16 }
+		
+		high_god_name = GOD_JAGANNATH
+		
+		god_names = {
+			GOD_BALABHADRA GOD_SUBHADRA GOD_SUDARSHANA GOD_MADANMOHANA GOD_BHUDEVI
+		}
+		
+		evil_god_names = {
+			RAKSHASAS
+		}
+		unit_modifier = {		
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.8
+			light_infantry_defensive = 0.8
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.8
+			knights_defensive = 0.8
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.8
+			camel_cavalry_defensive = 0.8
+			war_elephants_defensive = 0.8
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_looting = yes
+		max_consorts = 3
+		defensive_attrition = yes
+		caste_opinions = yes
+		castes = yes
+		
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		dislike_tribal_organization = yes
+		can_demand_religious_conversion = no	
+
+		scripture_name = THE_BHAGAVAD_GITA
+		priest_title = PUJARI
+		piety_name = KARMA
+		reformed = jagannath_reformed
+		
+		intermarry = jain
+		intermarry = zoroastrian
+		
+	}
+	jagannath_reformed = {
+		graphical_culture = indiangfx
+
+		icon = 153
+		heresy_icon = 154
+		
+		color = { 229 22 22 }
+		
+		high_god_name = GOD_JAGANNATH
+		
+		god_names = {
+			GOD_BALABHADRA GOD_SUBHADRA GOD_SUDARSHANA GOD_MADANMOHANA GOD_BHUDEVI
+		}
+		
+		evil_god_names = {
+			RAKSHASAS
+		}
+		unit_modifier = {		
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION"
+		}
+		unit_home_modifier = {
+			land_morale = 0.8
+			light_infantry_defensive = 0.8
+			heavy_infantry_defensive = 0.8
+			pikemen_defensive = 0.8
+			light_cavalry_defensive = 0.8
+			knights_defensive = 0.8
+			archers_defensive = 0.8
+			horse_archers_defensive = 0.8
+			camel_cavalry_defensive = 0.8
+			war_elephants_defensive = 0.8
+			
+			garrison_size = 0.4
+			
+			key = "DEF_RELIGION_HOME_TERRITORY"
+		}
+		
+		can_grant_divorce = yes
+		priests_can_inherit = no
+		priests_can_marry = yes
+		allow_looting = yes
+		max_consorts = 3
+		defensive_attrition = yes
+		caste_opinions = yes
+		castes = yes
+		
+		
+		religious_clothing_head = 8
+		religious_clothing_priest = 8
+
+		scripture_name = THE_BHAGAVAD_GITA
+		priest_title = PUJARI
+		piety_name = KARMA
+		
+		intermarry = jain
+		intermarry = zoroastrian
+
+		allow_in_ruler_designer = no	
 	}
 }
 eastern = {
