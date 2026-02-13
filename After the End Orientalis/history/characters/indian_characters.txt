@@ -1043,3 +1043,361 @@
     2580.1.1={birth=yes}
     2610.1.1={death=yes}
 }
+#Odissa
+4500010={
+	name="Jatin"
+    dynasty=4011021 # Das
+    culture=oriya
+    religion=saura
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=underhanded_rogue
+    trait=gregarious
+    trait=ambitious
+    trait=cynical
+    trait=diligent
+    2572.1.1={birth=yes}
+    2615.1.1={death=yes}
+}
+4500011={
+	name="Raj"
+    dynasty=4011022 # Ray
+    culture=oriya
+    religion=jagannath
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=thrifty_clerk
+    trait=shrewd
+    trait=diligent
+    trait=greedy
+    trait=envious
+    2580.1.1={birth=yes}
+    2651.1.1={death=yes}
+}
+4500012={
+	name="Netaji"
+    dynasty=4011023 # Panigrahi
+    culture=oriya
+    religion=jagannath
+    martial=4
+    diplomacy=3
+    stewardship=6
+    intrigue=4
+    learning=3
+    trait=fortune_builder
+    trait=shrewd
+    trait=content
+    trait=diligent
+    trait=craven
+    trait=proud
+	father=4500015
+    2578.1.1={birth=yes}
+	2600.1.1={add_spouse=4500014}
+    2633.1.1={death=yes}
+}
+4500013={
+	name="Indira"
+    dynasty=4011023 # Panigrahi
+    culture=oriya
+    religion=jagannath
+    trait=fair
+    trait=quick
+	father=4500012
+	mother=4500014
+    2599.1.1={birth=yes}
+    2660.1.1={death=yes}
+}
+4500014={
+	name="Saraswati"
+    dynasty=4011024 # Mishra
+    female=yes
+    culture=oriya
+    religion=jagannath
+    martial=4
+    diplomacy=3
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=charismatic_negotiator
+    trait=quick
+    trait=poet
+    trait=ambitious
+    trait=shy
+    trait=just
+    trait=diligent
+	father=4500018
+    2580.1.1={birth=yes}
+    2625.1.1={death=yes}
+}
+4500015={
+	name="Dipak"
+    dynasty=4011023 # Panigrahi 
+    culture=oriya
+    religion=jagannath
+    trait=tough_soldier
+    trait=gregarious
+    trait=wroth
+    trait=diligent
+    2555.1.1={birth=yes}
+    2595.1.1={death=yes}
+}
+4500016={
+	name="Rajendra"
+    dynasty=4011023 # Panigrahi
+    culture=oriya
+    religion=jagannath
+    martial=3
+    diplomacy=5
+    stewardship=4
+    intrigue=5
+    learning=3
+    trait=tough_soldier
+    trait=slow
+    trait=duelist
+    trait=robust
+    trait=wroth
+    trait=charitable
+    trait=ambitious
+	father=4500015
+    2581.1.1={birth=yes}
+	2600.1.1={effect={add_rival=4500012}}
+    2620.1.1={death=yes}
+}
+4500017={
+	name="Sudarshan"
+    dynasty=4011024 # Mishra
+    culture=oriya
+    religion=jagannath
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=skilled_tactician
+    trait=disfigured
+    trait=strong
+    trait=hunter
+    trait=wroth
+    trait=paranoid
+    trait=chaste
+    trait=arbitrary
+	father=4500018
+    2586.1.1={birth=yes}
+    2650.1.1={death=yes}
+}
+4500018={
+	name="Ramakanta"
+    dynasty=4011024 # Mishra
+    culture=oriya
+    religion=jagannath
+    martial=6
+    diplomacy=6
+    stewardship=2
+    intrigue=3
+    learning=6
+    trait=skilled_tactician
+    trait=fair
+    trait=poet
+    trait=cynical
+    trait=wroth
+    trait=shrewd
+    trait=diligent
+    trait=erudite
+    trait=envious
+	give_nickname=nick_the_modernist
+    2550.1.1={birth=yes}
+    2599.1.1={death=yes}
+}
+4500019={
+	name="Pragyan"
+    dynasty=4011025 # Patnaik
+    culture=oriya
+    religion=jagannath
+    martial=4
+    diplomacy=3
+    stewardship=4
+    intrigue=3
+    learning=4
+    trait=fortune_builder
+    trait=proud
+    trait=diligent
+    trait=honest
+    2570.1.1={birth=yes}
+    2610.1.1={death=yes}
+}
+4500020={
+	name="Pratap"
+    dynasty=4011025 # Patnaik
+    culture=oriya
+    religion=jagannath
+    martial=5
+    diplomacy=4
+    stewardship=5
+    intrigue=4
+    learning=5
+    trait=tough_soldier
+    trait=zealous
+    trait=wroth
+    trait=just
+	father=4500019
+    2588.1.1={birth=yes}
+    2640.1.1={death=yes}
+}
+4500021={
+	name="Baidyanath"
+    dynasty=4011026 # Reddy
+    culture=oriya
+    religion=jagannath
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=martial_cleric
+    trait=peasant_leader
+    trait=ambitious
+    trait=wroth
+    trait=zealous
+    2577.1.1={birth=yes}
+    2611.1.1={death=yes}
+}
+4500022={
+	name="Gangadhar"
+    dynasty=4011024 # Mishra
+    culture=oriya
+    religion=jagannath
+    martial=5
+    diplomacy=3
+    stewardship=2
+    intrigue=5
+    learning=2
+    trait=brilliant_strategist
+    trait=quick
+    trait=shrewd
+    trait=mangled
+    trait=just
+    trait=diligent
+    trait=humble
+    trait=honest
+	father=4500018
+    2581.1.1={birth=yes}
+    2611.1.1={death=yes}
+}
+4500023={
+	name="Janaki"
+    dynasty=4011024 # Mishra
+    culture=oriya
+    religion=jagannath
+    martial=5
+    diplomacy=5
+    stewardship=5
+    intrigue=3
+    learning=5
+    trait=skilled_tactician
+    trait=fair
+    trait=lunatic
+    trait=impaler
+    trait=wroth
+    trait=honest
+    trait=brave
+    trait=lustful
+    trait=cruel
+	father=4500018
+    2576.1.1={birth=yes}
+    2633.1.1={death=yes}
+}
+4500024={
+	name="Biren"
+    dynasty=4011027 # Behera
+    culture=oriya
+    religion=jagannath
+    martial=4
+    diplomacy=4
+    stewardship=4
+    intrigue=4
+    learning=4
+    trait=tough_soldier
+    trait=peasant_leader
+    trait=wroth
+    trait=ambitious
+    trait=honest
+    2580.1.1={birth=yes}
+    2625.1.1={death=yes}
+}
+4500025={
+	name="Pramod"
+    dynasty=4011028 # Pattnaik
+    culture=oriya
+    religion=jagannath
+    martial=5
+    diplomacy=4
+    stewardship=3
+    intrigue=5
+    learning=2
+    trait=tough_soldier
+    trait=paranoid
+    trait=diligent
+    trait=cynical
+    2586.1.1={birth=yes}
+    2641.1.1={death=yes}
+}
+4500026={
+	name="Sadhu"
+    dynasty=4011029 # Surendra
+    culture=oriya
+    religion=jagannath
+    martial=3
+    diplomacy=3
+    stewardship=3
+    intrigue=3
+    learning=3
+    trait=martial_cleric
+    trait=brave
+    trait=diligent
+    trait=honest
+    2579.1.1={birth=yes}
+    2633.1.1={death=yes}
+}
+4500027={
+	name="Kelucharan"
+    dynasty=4011030 # Udgata
+    culture=oriya
+    religion=jagannath
+    martial=4
+    diplomacy=4
+    stewardship=3
+    intrigue=4
+    learning=4
+    trait=intricate_webweaver
+    trait=patient
+    trait=paranoid
+    trait=deceitful
+    2565.1.1={birth=yes}
+    2615.1.1={death=yes}
+}
+4500028={
+	name="Arun"
+    dynasty=4011031 # Jindal
+    culture=oriya
+    religion=jagannath
+    martial=5
+    diplomacy=3
+    stewardship=4
+    intrigue=4
+    learning=5
+    trait=scholarly_theologian
+    trait=quick
+    trait=physician
+    trait=diligent
+    trait=erudite
+    trait=patient
+    trait=charitable
+    2585.1.1={birth=yes}
+    2617.1.1={death=yes}
+}
