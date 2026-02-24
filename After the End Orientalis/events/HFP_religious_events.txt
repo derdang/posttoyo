@@ -698,10 +698,10 @@ character_event = {
 					factor = 1.5
 					FROM = { tier = EMPEROR }
 				}
-				modifier = {
-					factor = 1.75
-					FROM = { has_landed_title = e_hre }
-				}
+				#modifier = {
+				#	factor = 1.75
+				#	FROM = { has_landed_title = e_hre }
+				#}
 				modifier = {
 					factor = 1.5
 					tier = KING
@@ -733,7 +733,7 @@ character_event = {
 								has_law = succ_gavelkind
 								has_law = succ_elective_gavelkind
 								has_law = succ_feudal_elective
-								has_law = succ_hre_elective
+								#has_law = succ_hre_elective
 							} 
 						} 
 					}
@@ -798,10 +798,10 @@ character_event = {
 						modifier = opinion_requested_independence 
 					}
 				}
-				modifier = {
-					factor = 1.5
-					has_landed_title = k_papal_state
-				}
+				#modifier = {
+				#	factor = 1.5
+				#	has_landed_title = k_papal_state
+				#}
 				modifier = {
 					factor = 2
 					NOT = { 

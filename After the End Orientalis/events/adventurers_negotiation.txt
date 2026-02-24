@@ -55,7 +55,6 @@ character_event = {
 			preferred_limit = {
 				event_target:raiding_adventurer = {
 					OR = {
-						religion = norse_pagan
 						has_religion_feature = religion_seafaring
 						is_seafarer = yes
 					}
@@ -120,7 +119,6 @@ character_event = {
 					preferred_limit = {
 						event_target:raiding_adventurer = {
 							OR = {
-								religion = norse_pagan
 								has_religion_feature = religion_seafaring
 								is_seafarer = yes
 							}
@@ -145,7 +143,6 @@ character_event = {
 						preferred_limit = {
 							event_target:raiding_adventurer = {
 								OR = {
-									religion = norse_pagan
 									has_religion_feature = religion_seafaring
 									is_seafarer = yes
 								}
@@ -694,12 +691,8 @@ letter_event = {
 				}
 				else_if = {
 					limit = {
-						culture_group = tibetan_group
-						OR = {
-							religion = bon
-                            religion = bon_reformed
-							religion = buddhist
-						}
+						culture_group = tibetan
+						religion = buddhist
 					}
 					set_government_type = theocratic_feudal_government
 				}
@@ -878,12 +871,8 @@ letter_event = {
 				}
 				else_if = {
 					limit = {
-						culture_group = tibetan_group
-						OR = {
-							religion = bon
-                            religion = bon_reformed
-							religion = buddhist
-						}
+						culture_group = tibetan
+						religion = buddhist
 					}
 					set_government_type = theocratic_feudal_government
 				}
