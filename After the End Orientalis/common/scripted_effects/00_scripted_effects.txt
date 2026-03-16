@@ -3919,14 +3919,6 @@ join_prev_monastic_order_society = {
 		join_society = monastic_order_dominican
 	}
 	if = {
-		limit = { PREV = { society_member_of = monastic_order_nestorian } }
-		join_society = monastic_order_nestorian
-	}
-	if = {
-		limit = { PREV = { society_member_of = monastic_order_monophysite } }
-		join_society = monastic_order_monophysite
-	}
-	if = {
 		limit = { PREV = { society_member_of = monastic_order_hindu } }
 		join_society = monastic_order_hindu
 	}
@@ -19569,7 +19561,12 @@ add_random_commander_trait_effect = {
 				NOT = {
 					trait = logistics_expert
 				}
-				culture_group = chinese_group
+				OR = {
+					culture_group = han
+					culture_group = japonic
+					culture_group = viet
+					culture_group = korean
+				}
 			}
 			add_trait = logistics_expert
 		}
@@ -19578,7 +19575,12 @@ add_random_commander_trait_effect = {
 				NOT = {
 					trait = master_of_flame
 				}
-				culture_group = chinese_group
+				OR = {
+					culture_group = han
+					culture_group = japonic
+					culture_group = viet
+					culture_group = korean
+				}
 			}
 			add_trait = master_of_flame
 		}
@@ -19587,7 +19589,12 @@ add_random_commander_trait_effect = {
 				NOT = {
 					trait = sapper
 				}
-				culture_group = chinese_group
+				OR = {
+					culture_group = han
+					culture_group = japonic
+					culture_group = viet
+					culture_group = korean
+				}
 			}
 			add_trait = sapper
 		}
@@ -19596,7 +19603,12 @@ add_random_commander_trait_effect = {
 				NOT = {
 					trait = levy_coordinator
 				}
-				culture_group = chinese_group
+				OR = {
+					culture_group = han
+					culture_group = japonic
+					culture_group = viet
+					culture_group = korean
+				}
 			}
 			add_trait = levy_coordinator
 		}
@@ -19802,7 +19814,12 @@ add_same_commander_trait_as_FROM = {
 				NOT = {
 					trait = logistics_expert
 				}
-				culture_group = chinese_group
+				OR = {
+					culture_group = han
+					culture_group = japonic
+					culture_group = viet
+					culture_group = korean
+				}
 				FROM = { trait = logistics_expert }
 			}
 			add_trait = logistics_expert
@@ -19812,7 +19829,12 @@ add_same_commander_trait_as_FROM = {
 				NOT = {
 					trait = master_of_flame
 				}
-				culture_group = chinese_group
+				OR = {
+					culture_group = han
+					culture_group = japonic
+					culture_group = viet
+					culture_group = korean
+				}
 				FROM = { trait = master_of_flame }
 			}
 			add_trait = master_of_flame
@@ -19822,7 +19844,12 @@ add_same_commander_trait_as_FROM = {
 				NOT = {
 					trait = sapper
 				}
-				culture_group = chinese_group
+				OR = {
+					culture_group = han
+					culture_group = japonic
+					culture_group = viet
+					culture_group = korean
+				}
 				FROM = { trait = sapper }
 			}
 			add_trait = sapper
@@ -19832,7 +19859,12 @@ add_same_commander_trait_as_FROM = {
 				NOT = {
 					trait = levy_coordinator
 				}
-				culture_group = chinese_group
+				OR = {
+					culture_group = han
+					culture_group = japonic
+					culture_group = viet
+					culture_group = korean
+				}
 				FROM = { trait = levy_coordinator }
 			}
 			add_trait = levy_coordinator

@@ -956,7 +956,6 @@ can_be_chancellor_trigger = {
 					OR = { 
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
-						liege = { has_religion_feature = religion_feature_bon } 
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
@@ -1035,7 +1034,6 @@ can_be_marshal_trigger = {
 					OR = { 
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
-						liege = { has_religion_feature = religion_feature_bon } 
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
@@ -1119,7 +1117,6 @@ can_be_treasurer_trigger = {
 					OR = { 
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
-						liege = { has_religion_feature = religion_feature_bon } 
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
@@ -1199,7 +1196,6 @@ can_be_spymaster_trigger = {
 					OR = { 
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
-						liege = { has_religion_feature = religion_feature_bon } 
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
@@ -1461,7 +1457,6 @@ can_be_councilmember_emperor_trigger = {
 					OR = { 
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
-						liege = { has_religion_feature = religion_feature_bon } 
 					} 
 				}
 				AND = {
@@ -1841,7 +1836,6 @@ gender_equality_trigger = {
 		religion = ngocholugspa
 		religion = dorje_shugden
 		has_religion_feature = religion_equal
-		has_religion_feature = religion_feature_bon
 		AND = {
 			is_landed = yes
 			primary_title = { 
@@ -7376,41 +7370,9 @@ dlc_religion_check_trigger = {
 	}
 }
 
-reconquista_check_trigger = {
-	any_war = {
-		OR = {
-			using_cb = reconquista_leon
-			using_cb = reconquista_castille
-			using_cb = reconquista_aragon
-			using_cb = reconquista_galicia
-			using_cb = reconquista_beja
-			using_cb = reconquista_granada
-			using_cb = reconquista_cordoba
-			using_cb = reconquista_valencia
-			using_cb = reconquista_navarra
-			using_cb = reconquista_balearic
-		}
-	}
-}
+# reconquista_check_trigger = {
 
-not_reconquista_check_trigger = {
-	NOT = {
-		any_war = {
-			OR = {
-				using_cb = reconquista_leon
-				using_cb = reconquista_castille
-				using_cb = reconquista_aragon
-				using_cb = reconquista_galicia
-				using_cb = reconquista_beja
-				using_cb = reconquista_granada
-				using_cb = reconquista_cordoba
-				using_cb = reconquista_valencia
-				using_cb = reconquista_navarra
-				using_cb = reconquista_balearic
-			}
-		}
-	}
-}
+# not_reconquista_check_trigger = {
 
 
 this_has_execution_reason_opinion_trigger = {
@@ -7695,7 +7657,6 @@ can_still_be_marshal_byzantine_trigger = {
 					OR = { 
 						liege = { has_religion_feature = religion_matriarchal } 
 						liege = { has_religion_feature = religion_equal } 
-						liege = { has_religion_feature = religion_feature_bon } 
 					} 
 				}
 				trait = horse # So we can have female glitterhoofs! :D
