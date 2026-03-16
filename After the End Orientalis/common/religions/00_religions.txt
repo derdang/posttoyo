@@ -3591,6 +3591,75 @@ pagan_group = {
 		religious_clothing_priest = 3
 		
 	}
+	koyapunem_reformed = {
+		graphical_culture = indiangfx
+		interface_skin = { zun_interface indian_interface }
+		
+
+		icon = 156
+		heresy_icon = 157
+		
+		color = { 230 130 100 }
+
+		high_god_name = GOD_BARADEO
+
+		god_names = {
+			GOD_BARADEO GOD_KUPAR_LINGO GOD_RAVANA GOD_AKI_PEN GOD_ANWAL
+		}
+		evil_god_names = {
+			THE_DEVIL
+		}
+		
+		scripture_name = AROJ
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		allow_in_ruler_designer = no
+		can_demand_religious_conversion = yes
+		female_temple_holders = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
+	koyapunem = {
+		graphical_culture = indiangfx
+		interface_skin = { zun_interface indian_interface }
+
+		icon = 155
+		heresy_icon = 157
+		
+		color = { 227 168 87 }
+
+		high_god_name = GOD_BARADEO
+
+		god_names = {
+			GOD_BARADEO GOD_KUPAR_LINGO GOD_RAVANA GOD_AKI_PEN GOD_ANWAL
+		}
+		evil_god_names = {
+			THE_DEVIL
+		}
+		
+		scripture_name = AROJ
+		priest_title = SHAMAN
+		priests_can_marry = yes
+		reformed = koyapunem_reformed
+		
+		
+		allow_looting = yes 
+		allow_rivermovement = yes 
+		max_consorts = 3 
+		can_demand_religious_conversion = no
+		female_temple_holders = yes
+		
+		religious_clothing_head = 3
+		religious_clothing_priest = 3
+		
+	}
 }
 
 jewish_group = {
