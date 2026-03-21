@@ -1104,7 +1104,6 @@
 4500013={
 	name="Indira"
     dynasty=4011023 # Panigrahi
-	female=yes
     culture=oriya
     religion=jagannath
     trait=fair
@@ -1401,4 +1400,162 @@
     trait=charitable
     2585.1.1={birth=yes}
     2617.1.1={death=yes}
+}
+4500029={
+	name="Gehana"
+    dynasty=4028000 # Sahu
+    culture=chhattisgarhi
+    religion=jagannath
+    female=yes
+    trait=thrifty_clerk
+    trait=shrewd
+    trait=groomed
+    trait=diligent
+    trait=proud
+    trait=lustful
+    trait=wroth
+    2567.1.1={birth=yes}
+	2600.1.1={effect={add_lover=4500028}}
+    2615.1.1={death=yes}
+}
+4500030={
+	name="Okmar"
+    dynasty=4028001 # Sen
+    culture=chhattisgarhi
+    religion=jagannath
+    trait=tough_soldier
+    trait=gregarious
+    trait=wroth
+    trait=humble
+    trait=ambitious
+    trait=brave
+    2587.1.1={birth=yes}
+    2644.1.1={death=yes}
+}
+4500031={
+	name="Ajit"
+    dynasty=4028002 # Yadav
+    culture=chhattisgarhi
+    religion=sarnaist
+    trait=martial_cleric
+    trait=zealous
+    trait=chaste
+    trait=diligent
+    2579.1.1={birth=yes}
+    2650.1.1={death=yes}
+}
+4500032={
+	name="Pukhraj"
+    dynasty=4029000 # Begum
+    culture=karkh
+    religion=sarnaist
+    trait=scholarly_theologian
+    trait=quick
+    trait=physician
+    trait=kind
+    trait=proud
+    trait=ambitious
+    2585.1.1={birth=yes}
+    2660.1.1={death=yes}
+}
+4500033={
+	name="Kishore"
+    dynasty=4029001 # Sharma
+    culture=karkh
+    religion=sarnaist
+    trait=skilled_tactician
+    trait=duelist
+    trait=brave
+    trait=wroth
+    trait=diligent
+    trait=shrewd
+    2577.1.1={birth=yes}
+    2635.1.1={death=yes}
+}
+4500034={
+	name="Kaushal"
+    dynasty=4028003 # Dayal
+    culture=chhattisgarhi
+    religion=sarnaist
+    trait=charismatic_negotiator
+    trait=diligent
+    trait=arbitrary
+    trait=envious
+    trait=gregarious
+    trait=honest
+    2570.1.1={birth=yes}
+    2633.1.1={death=yes}
+}
+4500035={
+	name="Rajendra"
+    dynasty=4028003 # Dayal
+    culture=chhattisgarhi
+    religion=sarnaist
+    trait=tough_soldier
+    trait=kind
+    trait=ambitious
+    trait=just
+    trait=honest
+    trait=humble
+	father=4500034
+    2589.1.1={birth=yes}
+	2600.1.1={effect={add_rival=4500034}}
+    2655.1.1={death=yes}
+}
+4500036={
+	name="Jagdish"
+    dynasty=4030000 # Kurmi Gond
+    culture=gondi
+    religion=koyapunem
+    trait=flamboyant_schemer
+    trait=greedy
+    trait=paranoid
+    trait=proud
+    trait=deceitful
+    trait=ambitious
+    2581.1.1={birth=yes}
+    2644.1.1={death=yes}
+}
+4500037={
+	name="Rajat"
+    dynasty=4028004 # Karim
+    culture=chhattisgarhi
+    religion=jagannath
+    trait=skilled_tactician
+    trait=strong
+    trait=hedonist
+    trait=dull
+    trait=wroth
+    trait=lustful
+    trait=diligent
+    trait=arbitrary
+    2559.1.1={birth=yes}
+	2600.1.1={add_spouse=4500029}
+    2611.1.1={death=yes}
+}
+4500038={
+	name="Arvind"
+    dynasty=4028005 # Ali
+    culture=chhattisgarhi
+    religion=jagannath
+    trait=midas_touched
+    trait=wroth
+    trait=diligent
+    trait=ambitious
+    2570.1.1={birth=yes}
+    2615.1.1={death=yes}
+}
+4500039={
+	name="Ramesh"
+    dynasty=4030001 # Dhur
+    culture=gondi
+    religion=koyapunem
+    trait=underhanded_rogue
+    trait=mystic
+    trait=gregarious
+    trait=charitable
+    trait=content
+    trait=patient
+    2581.1.1={birth=yes}
+    2621.1.1={death=yes}
 }
