@@ -4235,6 +4235,42 @@
     2564.1.1={birth=yes}
     2700.1.1={death=yes}
 }
+1048702 = { #Captain of the Canal Rebellion HQ
+	name="Benjing"
+    dynasty=9910280 # Ma
+    culture=huizu
+    religion=jibenyuanze
+    martial=6
+    diplomacy=3
+    stewardship=4
+    intrigue=2
+    learning=4
+    trait=skilled_tactician
+    2578.1.1={birth=yes}
+	2599.1.1={
+		employer=2622001
+		effect={give_job_title=job_marshal}
+	}
+    2700.1.1={death=yes}
+}
+1048703 = { #Courtier
+	name="Youjie"
+    dynasty=9910281 # Yang
+    culture=huizu
+    religion=jibenyuanze
+    martial=6
+    diplomacy=3
+    stewardship=4
+    intrigue=2
+    learning=4
+    trait=brilliant_strategist
+    2578.1.1={birth=yes}
+	2599.1.1={
+		employer=1048702
+		effect={give_job_title=job_marshal}
+	}
+    2700.1.1={death=yes}
+}
 
 #Shanghai
 1048800 = { #Count of Fengxian and Jinshan (Head of the House of Duan)

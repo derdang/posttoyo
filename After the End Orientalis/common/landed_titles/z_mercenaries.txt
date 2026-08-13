@@ -1536,3 +1536,28 @@ d_samsung = {
 	
 	mercenary_type = d_samsung_composition
 }
+d_canal_rebellion_hq = {
+	color={ 238 28 37 }
+	color2={ 255 255 255 }
+		
+	capital = 1805 # c_xuzhou_2
+
+	culture = zhongyuan
+	religion = jibenyuanze
+	
+	allow = {
+		culture_group = han
+	}
+		
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+		
+	mercenary = yes
+	short_name = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+	
+	mercenary_type = d_canal_rebellion_hq_composition
+}
