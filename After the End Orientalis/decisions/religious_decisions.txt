@@ -2146,10 +2146,7 @@ decisions = {
 		
 		potential = {
 			OR = {
-				religion = taoist
-				secret_religion = taoist
-				religion = quanzhen
-				secret_religion = quanzhen
+				is_daoist = yes
 				AND = {
 					OR = {religion = hui secret_religion = hui}
 					trait = xidaotang

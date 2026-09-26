@@ -78,12 +78,20 @@ narrative_event = {
 		trigger = {trait = mystic}
 		name = EVT_hui_events3_OPTA
 		piety = 200
+		random_list = {
+			80 = { add_trait = succ_alchemy }
+			20 = { add_trait = fail_alchemy }
+		}
 		remove_trait = in_hiding
 	}
 	option = {
 		trigger = {NOT = {trait = mystic}}
 		name = EVT_hui_events3_OPTB
 		piety = 100
+		random_list = {
+			80 = { add_trait = fail_alchemy }
+			20 = { add_trait = succ_alchemy }
+		}
 		remove_trait = in_hiding
 	}
 }

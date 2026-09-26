@@ -1338,6 +1338,22 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	
+#Daoist Alchemy Traits
+	spriteType = {
+		name = "GFX_trait_succ_alchemy"
+		texturefile = "gfx/traits/succ_alchemy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_fail_alchemy"
+		texturefile = "gfx/traits/fail_alchemy.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
 #Decisions Icons
 	spriteType = {
 		name = "GFX_cd_pilgrimage"

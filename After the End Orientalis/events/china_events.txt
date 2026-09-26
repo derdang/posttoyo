@@ -289,3 +289,41 @@ character_event = {
 		}
 	}
 }
+
+#Conduct Alchemical Transformation
+narrative_event = {
+	id = sino.7
+	title = EVTTITLE_sino7
+	desc = EVTDESC_sino7
+	border = GFX_event_narrative_frame_religion
+	picture = GFX_evt_chinese_thinkers
+	is_daoist = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_alternate_start_parameter = { key = religion_names value = random }
+		}
+	}
+	
+	option = { #Conduct Experiment
+		name = EVTOPTA_sino7
+		
+		random_list = {
+			20 = { add_trait = succ_alchemy }
+			80 = { add_trait = fail_alchemy }
+		}
+		
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = { #Decide to not Conduct Experiment
+		name = EVTOPTB_sino7
+		prestige = -10
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

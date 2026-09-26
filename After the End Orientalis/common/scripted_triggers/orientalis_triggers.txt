@@ -326,6 +326,15 @@ is_bureaucratic_religion = {
 	}
 }
 
+is_daoist = {
+	OR = {
+		religion = taoist
+		secret_religion = taoist
+		religion = quanzhen
+		secret_religion = quanzhen
+	}
+}
+
 is_sea_pagan = {
 	OR = {
 		religion = kaharingan_reformed
